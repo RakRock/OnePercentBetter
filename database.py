@@ -72,6 +72,16 @@ def init_db():
                 log_date DATE NOT NULL,
                 FOREIGN KEY (user_id) REFERENCES users(id)
             );
+
+            CREATE TABLE IF NOT EXISTS gk_daily_questions (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                quiz_date DATE NOT NULL,
+                questions_json TEXT NOT NULL,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (user_id) REFERENCES users(id),
+                UNIQUE(user_id, quiz_date)
+            );
         """)
 
         # Seed default users
@@ -242,3 +252,24 @@ def get_reading_history(user_id: int, days: int = 30) -> list:
             (user_id, start_date),
         ).fetchall()
         return [dict(r) for r in rows]
+
+
+# ── GK daily questions helpers ──
+
+def get_daily_questions(user_id: int, date: str) -> str | None:
+    """Return cached questions JSON for a user+date, or None."""
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT questions_json FROM gk_daily_questions WHERE user_id = ? AND quiz_date = ?",
+            (user_id, date),
+        ).fetchone()
+        return row["questions_json"] if row else None
+
+
+def save_daily_questions(user_id: int, date: str, questions_json: str):
+    """Cache generated questions JSON for a user+date."""
+    with get_connection() as conn:
+        conn.execute(
+            "INSERT OR REPLACE INTO gk_daily_questions (user_id, quiz_date, questions_json) VALUES (?, ?, ?)",
+            (user_id, date, questions_json),
+        )

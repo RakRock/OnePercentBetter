@@ -16,6 +16,13 @@ import math_content as mc
 _HF_TOKEN = os.environ.get("HF_TOKEN")
 _CAN_GENERATE = bool(_HF_TOKEN)
 
+# ── xAI key for GK module (from secrets.toml or env var) ──
+try:
+    _XAI_API_KEY = st.secrets.get("XAI_API_KEY") or os.environ.get("XAI_API_KEY")
+except Exception:
+    _XAI_API_KEY = os.environ.get("XAI_API_KEY")
+_CAN_GK = bool(_XAI_API_KEY)
+
 # ──────────────────────────────────────────────
 # App Configuration
 # ──────────────────────────────────────────────
@@ -235,6 +242,33 @@ st.markdown("""
     .math-level-card:hover {
         transform: scale(1.04);
     }
+
+    /* ─── GK topic badge ─── */
+    .gk-topic-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+    .gk-question-box {
+        background: #fffef5;
+        border: 3px solid #e5e7eb;
+        border-radius: 24px;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        margin: 0.75rem 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .gk-question-text {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #1f2937;
+        line-height: 1.5;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -273,6 +307,17 @@ if "math_answers" not in st.session_state:
     st.session_state.math_answers = []
 if "math_start_time" not in st.session_state:
     st.session_state.math_start_time = None
+# GK module state
+if "gk_questions" not in st.session_state:
+    st.session_state.gk_questions = []
+if "gk_current" not in st.session_state:
+    st.session_state.gk_current = 0
+if "gk_answers" not in st.session_state:
+    st.session_state.gk_answers = []
+if "gk_chat_histories" not in st.session_state:
+    st.session_state.gk_chat_histories = {}
+if "gk_start_time" not in st.session_state:
+    st.session_state.gk_start_time = None
 
 
 # ──────────────────────────────────────────────
@@ -303,6 +348,8 @@ def select_activity(activity):
         st.session_state.current_page = "reading_home"
     elif activity == "Math":
         st.session_state.current_page = "math_home"
+    elif activity == "GK":
+        st.session_state.current_page = "gk_home"
 
 
 def start_story(story_id):
@@ -343,6 +390,27 @@ def back_to_math_home():
     st.session_state.math_problems = []
     st.session_state.math_current = 0
     st.session_state.math_answers = []
+
+
+def go_to_gk_home():
+    st.session_state.current_page = "gk_home"
+
+
+def start_gk_quiz(questions):
+    st.session_state.current_page = "gk_practice"
+    st.session_state.gk_questions = questions
+    st.session_state.gk_current = 0
+    st.session_state.gk_answers = []
+    st.session_state.gk_chat_histories = {}
+    st.session_state.gk_start_time = time.time()
+
+
+def back_to_gk_home():
+    st.session_state.current_page = "gk_home"
+    st.session_state.gk_questions = []
+    st.session_state.gk_current = 0
+    st.session_state.gk_answers = []
+    st.session_state.gk_chat_histories = {}
 
 
 # ──────────────────────────────────────────────
@@ -464,6 +532,60 @@ def render_user_dashboard():
             if st.button("🧮 Start Math", key="btn_math", use_container_width=True, type="primary"):
                 select_activity("Math")
                 st.rerun()
+    elif name == "Arjun":
+        st.markdown("### 📚 Choose Your Activity")
+        st.markdown("")
+
+        act_col1, act_col2 = st.columns(2, gap="large")
+        with act_col1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #f59e0b;">
+                <div style="font-size: 3rem;">🧠</div>
+                <h3 style="margin: 0.5rem 0;">General Knowledge</h3>
+                <p style="color: #6b7280;">Daily quiz on fun topics</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🧠 Start GK", key="btn_gk", use_container_width=True, type="primary"):
+                select_activity("GK")
+                st.rerun()
+
+        with act_col2:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #9ca3af;">
+                <div style="font-size: 3rem;">🔮</div>
+                <h3 style="margin: 0.5rem 0;">More Coming Soon</h3>
+                <p style="color: #6b7280;">Stay tuned for new activities!</p>
+            </div>
+            """, unsafe_allow_html=True)
+
+    elif name == "Sangeetha":
+        st.markdown("### 🌸 Choose Your Activity")
+        st.markdown("")
+
+        act_col1, act_col2 = st.columns(2, gap="large")
+        with act_col1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #f093fb;">
+                <div style="font-size: 3rem;">🧠</div>
+                <h3 style="margin: 0.5rem 0;">General Knowledge</h3>
+                <p style="color: #6b7280;">Daily quiz — learn a little every day</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🧠 Start GK", key="btn_gk_s", use_container_width=True, type="primary"):
+                select_activity("GK")
+                st.rerun()
+
+        with act_col2:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #9ca3af;">
+                <div style="font-size: 3rem;">🔮</div>
+                <h3 style="margin: 0.5rem 0;">More Coming Soon</h3>
+                <p style="color: #6b7280;">Stay tuned for new activities!</p>
+            </div>
+            """, unsafe_allow_html=True)
+
     else:
         st.markdown(f"### 🚧 {name}'s activities are coming soon!")
         st.info(f"We're building personalized activities for {name}. Check back soon!")
@@ -1167,6 +1289,322 @@ def render_generate_story():
 
 
 # ──────────────────────────────────────────────
+# PAGE: GK Home — Today's Progress
+# ──────────────────────────────────────────────
+def render_gk_home():
+    import json as _json
+    import gk_content as gk
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    profile = gk.get_profile(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="gk_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">🧠 {name}'s General Knowledge</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">{profile['subtitle']}</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    today = datetime.now().strftime("%Y-%m-%d")
+    today_gk = db.get_today_scores(user["id"], activity_type="GK") if user else []
+    total_gk = db.get_scores_history(user["id"], activity_type="GK", days=365) if user else []
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(f'<div class="score-card"><div class="score-number">📅 {today}</div><div class="score-label">Today\'s Date</div></div>', unsafe_allow_html=True)
+    with col2:
+        if today_gk:
+            best = max(s["score"] for s in today_gk)
+            st.markdown(f'<div class="score-card"><div class="score-number">🎯 {best}%</div><div class="score-label">Today\'s Best Score</div></div>', unsafe_allow_html=True)
+        else:
+            st.markdown('<div class="score-card"><div class="score-number">🎯 —</div><div class="score-label">Today\'s Score</div></div>', unsafe_allow_html=True)
+    with col3:
+        st.markdown(f'<div class="score-card"><div class="score-number">⭐ {len(total_gk)}</div><div class="score-label">Total Quizzes</div></div>', unsafe_allow_html=True)
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    if not _CAN_GK:
+        st.warning("GK quiz requires an XAI_API_KEY. Please set it in `.streamlit/secrets.toml` or as an environment variable.")
+        return
+
+    # Check for cached questions (last set generated today)
+    cached_json = db.get_daily_questions(user["id"], today) if user else None
+
+    if today_gk:
+        best = max(s["score"] for s in today_gk)
+        st.markdown(f"""
+        <div style="text-align:center; padding:1rem; background:#d1fae5; border-radius:16px; border:2px solid #10b981; margin-bottom:1rem;">
+            <span style="font-size:2rem;">🎉</span>
+            <p style="margin:0.3rem 0; font-size:1.1rem; color:#065f46;">
+                <strong>{len(today_gk)} quiz{'zes' if len(today_gk) > 1 else ''} completed today!</strong>
+                &nbsp; Best score: <strong>{best}%</strong>
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="text-align:center; padding:1.5rem;">
+        <div style="font-size: 4rem;">🧠</div>
+        <h3 style="margin: 0.5rem 0;">{'Ready for another round?' if today_gk else 'Ready for today\\'s quiz?'}</h3>
+        <p style="color: #6b7280;">{profile['quiz_description']}</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    new_quiz = False
+    if today_gk and cached_json:
+        col_new, col_review = st.columns(2, gap="medium")
+        with col_new:
+            new_quiz = st.button("🚀 New Quiz", key="gk_new", use_container_width=True, type="primary")
+        with col_review:
+            if st.button("📝 Review Last Quiz", key="gk_review", use_container_width=True):
+                questions = _json.loads(cached_json)
+                start_gk_quiz(questions)
+                st.rerun()
+    else:
+        _, col_btn, _ = st.columns([1, 2, 1])
+        with col_btn:
+            btn_label = "🚀 New Quiz" if today_gk else "🚀 Start Today's Quiz"
+            new_quiz = st.button(btn_label, key="gk_start", use_container_width=True, type="primary")
+
+    if new_quiz:
+        with st.spinner("Generating fresh questions..."):
+            try:
+                questions = gk.generate_daily_questions(_XAI_API_KEY, user_name=name)
+                db.save_daily_questions(user["id"], today, _json.dumps(questions))
+            except Exception as exc:
+                st.error(f"Could not generate questions: {exc}")
+                return
+        start_gk_quiz(questions)
+        st.rerun()
+
+
+# ──────────────────────────────────────────────
+# PAGE: GK Practice — Question by Question
+# ──────────────────────────────────────────────
+def render_gk_practice():
+    import gk_content as gk
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    profile = gk.get_profile(name)
+    gk_color = profile["color"]
+    questions = st.session_state.gk_questions
+    current = st.session_state.gk_current
+    total = len(questions)
+    is_done = current >= total
+
+    # Nav bar
+    col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
+    with col_nav1:
+        if st.button("← GK Home", key="gk_back_home"):
+            back_to_gk_home()
+            st.rerun()
+    with col_nav_mid:
+        if not is_done:
+            st.markdown(f"""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                Question {current + 1} of {total}
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.markdown("""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                🎉 Quiz Complete!
+            </div>
+            """, unsafe_allow_html=True)
+
+    # Title
+    st.markdown(f"""
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+        <h1 style="color: {gk_color}; margin: 0.3rem 0; font-size: 2.2rem;">🧠 General Knowledge Quiz</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Progress bar
+    progress = (current / total) if total > 0 else 0
+    st.markdown(f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,{gk_color},{gk_color}bb);border-radius:10px;transition:width 0.4s ease;"></div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # ── Active question ──
+    if not is_done:
+        q = questions[current]
+        topic_emoji_map = profile.get("topic_emojis", {})
+        topic_emoji = topic_emoji_map.get(q.get("topic", ""), "📚")
+
+        st.markdown(f"""
+        <div class="gk-question-box">
+            <span class="gk-topic-badge">{topic_emoji} {q.get('topic', 'General')}</span>
+            <div class="gk-question-text" style="margin-top:0.8rem;">{q['question']}</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Check if this question was just answered
+        last_feedback = st.session_state.get("gk_last_feedback")
+
+        if last_feedback and last_feedback["idx"] == current:
+            if last_feedback["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer" style="text-align:center;">
+                    ✅ <strong>Correct!</strong> 🎉
+                    <br><br><em>{q.get('explanation', '')}</em>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer" style="text-align:center;">
+                    Not quite! You picked <strong>{last_feedback['picked']}</strong>.
+                    <br>The answer is <strong>{last_feedback['correct_val']}</strong> 💪
+                    <br><br><em>{q.get('explanation', '')}</em>
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("")
+            _, col_next, _ = st.columns([1, 2, 1])
+            with col_next:
+                if current < total - 1:
+                    if st.button("Next Question ➡️", key="gk_next", use_container_width=True, type="primary"):
+                        st.session_state.gk_current += 1
+                        st.session_state.gk_last_feedback = None
+                        st.rerun()
+                else:
+                    if st.button("🎉 See Results!", key="gk_results", use_container_width=True, type="primary"):
+                        st.session_state.gk_current = total
+                        st.session_state.gk_last_feedback = None
+                        st.rerun()
+        else:
+            # Answer buttons (2x2 grid)
+            ans_col1, ans_col2 = st.columns(2, gap="medium")
+            for i, opt in enumerate(q["options"]):
+                col = ans_col1 if i % 2 == 0 else ans_col2
+                with col:
+                    label = f"{chr(65 + i)}. {opt}"
+                    if st.button(label, key=f"gk_opt_{current}_{i}", use_container_width=True, type="primary"):
+                        is_correct = (i == q["answer"])
+                        st.session_state.gk_answers.append({
+                            "picked": opt,
+                            "correct_val": q["options"][q["answer"]],
+                            "correct": is_correct,
+                        })
+                        st.session_state.gk_last_feedback = {
+                            "idx": current,
+                            "picked": opt,
+                            "correct_val": q["options"][q["answer"]],
+                            "correct": is_correct,
+                        }
+                        st.rerun()
+
+            # ── Chat tutor section ──
+            if _CAN_GK:
+                st.markdown("")
+                with st.expander("💬 Need a hint? Ask me!", expanded=False):
+                    chat_key = f"chat_{current}"
+                    if chat_key not in st.session_state.gk_chat_histories:
+                        st.session_state.gk_chat_histories[chat_key] = []
+
+                    chat_history = st.session_state.gk_chat_histories[chat_key]
+
+                    for msg in chat_history:
+                        if msg["role"] == "user":
+                            st.chat_message("user").write(msg["content"])
+                        else:
+                            st.chat_message("assistant").write(msg["content"])
+
+                    user_input = st.chat_input("Ask for a hint...", key=f"gk_chat_input_{current}")
+                    if user_input:
+                        chat_history.append({"role": "user", "content": user_input})
+                        st.chat_message("user").write(user_input)
+
+                        with st.spinner("Thinking..."):
+                            try:
+                                reply = gk.chat_with_tutor(q, user_input, chat_history[:-1], _XAI_API_KEY, user_name=name)
+                            except Exception as exc:
+                                reply = f"Oops, I had trouble thinking! Try again. ({exc})"
+
+                        chat_history.append({"role": "assistant", "content": reply})
+                        st.chat_message("assistant").write(reply)
+                        st.session_state.gk_chat_histories[chat_key] = chat_history
+
+    # ── Score summary ──
+    else:
+        answers = st.session_state.gk_answers
+        correct = sum(1 for a in answers if a["correct"])
+        score_pct = int((correct / total) * 100) if total > 0 else 0
+        time_spent = int(time.time() - st.session_state.gk_start_time) if st.session_state.gk_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+
+        if user:
+            db.save_activity_score(user["id"], "GK", "Daily Quiz", score_pct, 100, f"{correct}/{total} correct")
+
+        if score_pct == 100:
+            res_emoji, message, res_color = "🏆", "Perfect! You're a GK superstar!", "#10b981"
+        elif score_pct >= 70:
+            res_emoji, message, res_color = "🌟", "Great job! You know a lot!", "#3b82f6"
+        elif score_pct >= 50:
+            res_emoji, message, res_color = "👍", "Good try! You're learning every day!", "#f59e0b"
+        else:
+            res_emoji, message, res_color = "💪", "Keep going! Every day you learn more!", "#ef4444"
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:2rem;background:{res_color}10;border-radius:20px;border:3px solid {res_color};margin-top:1rem;">
+            <div style="font-size:5rem;">{res_emoji}</div>
+            <h2 style="color:{res_color};margin:0.5rem 0;font-size:2rem;">{correct} out of {total} correct!</h2>
+            <p style="font-size:1.2rem;color:#4b5563;">{message}</p>
+            <p style="color:#9ca3af;">⏱️ Time: {minutes}m {seconds}s</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Review answers
+        st.markdown("")
+        st.markdown("### Review")
+        for idx, (q, ans) in enumerate(zip(questions, answers)):
+            topic_label = q.get("topic", "")
+            if ans["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer">
+                    <span class="gk-topic-badge">{topic_label}</span><br>
+                    <strong>Q{idx+1}:</strong> {q['question']}<br>
+                    ✅ <strong>{ans['correct_val']}</strong> — Great job!
+                    <br><em style="color:#6b7280;">{q.get('explanation', '')}</em>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer">
+                    <span class="gk-topic-badge">{topic_label}</span><br>
+                    <strong>Q{idx+1}:</strong> {q['question']}<br>
+                    ❌ You said: <strong>{ans['picked']}</strong> &nbsp; ✅ Answer: <strong>{ans['correct_val']}</strong>
+                    <br><em style="color:#6b7280;">{q.get('explanation', '')}</em>
+                </div>
+                """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_r1, col_r2 = st.columns(2)
+        with col_r1:
+            if st.button("🧠 GK Home", key="gk_home_btn", use_container_width=True, type="primary"):
+                back_to_gk_home()
+                st.rerun()
+        with col_r2:
+            if st.button("🏠 Dashboard", key="gk_dashboard", use_container_width=True):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.gk_questions = []
+                st.session_state.gk_current = 0
+                st.session_state.gk_answers = []
+                st.session_state.gk_chat_histories = {}
+                st.rerun()
+
+
+# ──────────────────────────────────────────────
 # Main Router
 # ──────────────────────────────────────────────
 page = st.session_state.current_page
@@ -1185,5 +1623,9 @@ elif page == "math_home":
     render_math_home()
 elif page == "math_practice":
     render_math_practice()
+elif page == "gk_home":
+    render_gk_home()
+elif page == "gk_practice":
+    render_gk_practice()
 else:
     render_home()
