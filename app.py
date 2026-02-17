@@ -1060,6 +1060,44 @@ def render_math_practice():
 
         if last_feedback and last_feedback["idx"] == current:
             if last_feedback["correct"]:
+                st.markdown("""
+                <style>
+                @keyframes float-up {
+                    0%   { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+                    70%  { transform: translateY(-350px) scale(1.1) rotate(10deg); opacity: 1; }
+                    85%  { transform: translateY(-420px) scale(2.2) rotate(-5deg); opacity: 1; }
+                    100% { transform: translateY(-440px) scale(3.0) rotate(0deg); opacity: 0; }
+                }
+                .celebration-container {
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    z-index: 9999;
+                    overflow: hidden;
+                }
+                .celebration-item {
+                    position: absolute;
+                    bottom: -80px;
+                    font-size: 3.5rem;
+                    animation: float-up 4s ease-out forwards;
+                }
+                </style>
+                <div class="celebration-container">
+                    <span class="celebration-item" style="left:5%;  animation-delay:0s;">🎈</span>
+                    <span class="celebration-item" style="left:15%; animation-delay:0.3s;">🎉</span>
+                    <span class="celebration-item" style="left:25%; animation-delay:0.1s;">🎊</span>
+                    <span class="celebration-item" style="left:35%; animation-delay:0.5s;">🎈</span>
+                    <span class="celebration-item" style="left:45%; animation-delay:0.2s;">🥳</span>
+                    <span class="celebration-item" style="left:55%; animation-delay:0.6s;">🎉</span>
+                    <span class="celebration-item" style="left:65%; animation-delay:0.15s;">🎈</span>
+                    <span class="celebration-item" style="left:75%; animation-delay:0.4s;">🎊</span>
+                    <span class="celebration-item" style="left:85%; animation-delay:0.35s;">🎈</span>
+                    <span class="celebration-item" style="left:95%; animation-delay:0.55s;">🎉</span>
+                </div>
+                """, unsafe_allow_html=True)
                 st.markdown(f"""
                 <div class="correct-answer" style="text-align:center;">
                     ✅ <strong>Correct!</strong> The answer is <strong>{last_feedback['correct_val']}</strong>  🎉
@@ -1350,10 +1388,11 @@ def render_gk_home():
         </div>
         """, unsafe_allow_html=True)
 
+    gk_heading = "Ready for another round?" if today_gk else "Ready for today's quiz?"
     st.markdown(f"""
     <div style="text-align:center; padding:1.5rem;">
         <div style="font-size: 4rem;">🧠</div>
-        <h3 style="margin: 0.5rem 0;">{'Ready for another round?' if today_gk else 'Ready for today\\'s quiz?'}</h3>
+        <h3 style="margin: 0.5rem 0;">{gk_heading}</h3>
         <p style="color: #6b7280;">{profile['quiz_description']}</p>
     </div>
     """, unsafe_allow_html=True)

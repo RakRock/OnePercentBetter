@@ -1,0 +1,86 @@
+{
+  "title": "Bunny's Moon Trip",
+  "cover_emoji": "🌕",
+  "pages": [
+    {
+      "image_prompt": "a cute cartoon bunny in a spaceship looking out the window at the moon",
+      "fallback_emoji": "🐰🚀",
+      "text": "Bunny goes to the moon!"
+    },
+    {
+      "image_prompt": "a cute cartoon bunny stepping out of a spaceship and onto the moon's surface",
+      "fallback_emoji": "🐰🌕",
+      "text": "Bunny sees the moon."
+    },
+    {
+      "image_prompt": "a cute cartoon bunny jumping and playing in the moon's low gravity",
+      "fallback_emoji": "🐰✨",
+      "text": "Bunny jumps on the moon!"
+    },
+    {
+      "image_prompt": "a cute cartoon bunny eating a yummy space snack while sitting in a spaceship",
+      "fallback_emoji": "🐰🍿",
+      "text": "Bunny eats a yummy snack."
+    },
+    {
+      "image_prompt": "a cute cartoon bunny making a footprint in the moon's dust with a big smile on its face",
+      "fallback_emoji": "🐰🌌",
+      "text": "Bunny makes a footprint!"
+    },
+    {
+      "image_prompt": "a cute cartoon bunny taking a selfie with the Earth in the background",
+      "fallback_emoji": "🐰📸",
+      "text": "Bunny takes a picture!"
+    },
+    {
+      "image_prompt": "a cute cartoon bunny returning to its spaceship and saying goodbye to the moon",
+      "fallback_emoji": "🐰🚀👋",
+      "text": "Bunny goes home!"
+    },
+    {
+      "image_prompt": "a cute cartoon bunny safely back on Earth with a happy face",
+      "fallback_emoji": "🐰🌎😊",
+      "text": "Bunny is happy! What a fun trip!"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Where does Bunny go?",
+      "options": [
+        "The park 🏞️",
+        "The beach 🏖️",
+        "The moon 🌕"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Bunny do on the moon?",
+      "options": [
+        "Eat a snack 🍿",
+        "Take a picture 📸",
+        "Jump and play ✨"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Bunny make on the moon?",
+      "options": [
+        "A flower 🌼",
+        "A rock 🌎",
+        "A footprint 👣"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "How does Bunny feel at the end?",
+      "options": [
+        "Sad 😢",
+        "Tired 😴",
+        "Happy 😊"
+      ],
+      "answer": 2
+    }
+  ],
+  "id": "gen_1771341392",
+  "color": "#22c55e"
+}

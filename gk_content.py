@@ -81,55 +81,68 @@ Help the student think through it without giving away the answer.""",
         "color": "#f59e0b",
     },
 
-    # ── Sangeetha: 35-year-old adult, building GK habits ──
+    # ── Sangeetha: 35-year-old adult, building GK habits (India focus) ──
     "Sangeetha": {
         "topics": [
-            "Health & Wellness", "World Cultures", "Famous People",
-            "Everyday Science", "Geography", "History",
-            "Movies & Entertainment", "Nature & Environment",
-            "Food & Cooking", "Books & Literature",
+            "States & Capitals", "Languages of India", "Rivers",
+            "Mountains & Ranges", "Seas & Coasts", "Historical Places",
+            "Famous Landmarks", "Indian Culture & Festivals",
+            "Freedom Struggle", "Important Cities",
         ],
         "topic_emojis": {
-            "Health & Wellness": "💪", "World Cultures": "🌏", "Famous People": "⭐",
-            "Everyday Science": "🔬", "Geography": "🗺️", "History": "📜",
-            "Movies & Entertainment": "🎬", "Nature & Environment": "🌿",
-            "Food & Cooking": "🍳", "Books & Literature": "📖",
+            "States & Capitals": "🏛️", "Languages of India": "🗣️", "Rivers": "🏞️",
+            "Mountains & Ranges": "🏔️", "Seas & Coasts": "🌊", "Historical Places": "🕌",
+            "Famous Landmarks": "🗺️", "Indian Culture & Festivals": "🪔",
+            "Freedom Struggle": "🇮🇳", "Important Cities": "🏙️",
         },
         "question_prompt": """\
-You are a friendly quiz creator for an adult who is building a daily general \
-knowledge habit. Generate exactly 10 multiple-choice questions.
+You are a friendly quiz creator for an Indian adult who is building a daily \
+general knowledge habit. Generate exactly 10 multiple-choice questions — \
+ALL questions must be about INDIA.
 
 RULES:
 - Each question should be from a DIFFERENT topic. Use these topics in order: \
-Health & Wellness, World Cultures, Famous People, Everyday Science, Geography, \
-History, Movies & Entertainment, Nature & Environment, Food & Cooking, Books & Literature.
+States & Capitals, Languages of India, Rivers, Mountains & Ranges, Seas & Coasts, \
+Historical Places, Famous Landmarks, Indian Culture & Festivals, Freedom Struggle, \
+Important Cities.
 - Difficulty: easy to medium — approachable and interesting, NOT intimidating.
-- The goal is to make the quiz feel rewarding and fun, so the person looks \
-forward to it every day. Avoid obscure trivia.
+- The goal is to make the quiz feel rewarding and fun, encouraging daily practice. \
+Avoid obscure trivia. Stick to well-known facts about India.
 - Each question has exactly 4 options.
 - The "answer" field is the 0-based index of the correct option.
-- Include a short "explanation" (1-2 sentences) with a fascinating fact or context.
+- Include a short "explanation" (1-2 sentences) with an interesting fact about India.
 - Questions should be factual and have one clearly correct answer.
+
+EXAMPLE TOPICS:
+- Which state has X as its capital?
+- Which language is the official language of X state?
+- Which river flows through X city?
+- Which mountain range is in X region?
+- Which sea borders X coast of India?
+- Which historical monument is located in X?
+- Which freedom fighter is known for X?
+- Which festival is celebrated for X reason?
 
 Respond with ONLY valid JSON — an array of 10 objects:
 [
   {{
-    "topic": "Health & Wellness",
-    "question": "Which vitamin is produced by your body when exposed to sunlight?",
-    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
-    "answer": 3,
-    "explanation": "Your skin produces Vitamin D when exposed to UV rays from sunlight. It helps keep your bones strong and your immune system healthy."
+    "topic": "States & Capitals",
+    "question": "What is the capital of Karnataka?",
+    "options": ["Chennai", "Bengaluru", "Hyderabad", "Mumbai"],
+    "answer": 1,
+    "explanation": "Bengaluru (formerly Bangalore) is the capital of Karnataka and is known as the Silicon Valley of India."
   }}
 ]
 
 Generate 10 NEW, UNIQUE questions now. Respond with ONLY the JSON array.""",
         "tutor_prompt": """\
-You are a warm, supportive learning companion for an adult who is building \
-their general knowledge. They are working on a daily quiz.
+You are a warm, supportive learning companion for an Indian adult who is \
+building their general knowledge about India. They are working on a daily quiz.
 
 RULES:
 - Give helpful HINTS but NEVER reveal the correct answer directly.
 - Use clear, conversational language — like a knowledgeable friend.
+- You can reference Indian geography, history, and culture to give context.
 - Be encouraging — say things like "Good thinking!" or "You're close!"
 - Keep responses concise (2-4 sentences).
 - If asked for the answer directly, kindly nudge them to think it through and offer a hint.
@@ -140,8 +153,8 @@ Question: {question}
 Options: {options}
 
 Help them reason through it without giving away the answer.""",
-        "subtitle": "A little learning every day goes a long way!",
-        "quiz_description": "10 questions on Health, Culture, History, and more!",
+        "subtitle": "Discover India, one question at a time!",
+        "quiz_description": "10 questions on Indian states, rivers, history, landmarks, and more!",
         "color": "#f093fb",
     },
 }
