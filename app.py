@@ -10,6 +10,7 @@ from datetime import datetime
 import plotly.graph_objects as go
 import time
 import reading_content as rc
+import math_content as mc
 
 # ── Optional imports for story generation (only when HF_TOKEN is set) ──
 _HF_TOKEN = os.environ.get("HF_TOKEN")
@@ -194,6 +195,46 @@ st.markdown("""
         margin: 0.5rem 0;
         font-size: 1.1rem;
     }
+
+    /* ─── Math problem display ─── */
+    .math-problem-box {
+        background: #fffef5;
+        border: 3px solid #e5e7eb;
+        border-radius: 24px;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        margin: 0.75rem 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        font-size: 2.2rem;
+        line-height: 1.8;
+        letter-spacing: 0.15em;
+    }
+    .math-question-text {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1f2937;
+        margin-top: 0.5rem;
+    }
+    .math-option-btn button {
+        font-size: 1.4rem !important;
+        padding: 1rem !important;
+        min-height: 70px !important;
+    }
+    .math-level-card {
+        border-radius: 18px;
+        padding: 1.5rem 1rem;
+        text-align: center;
+        min-height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+        transition: transform 0.2s ease;
+    }
+    .math-level-card:hover {
+        transform: scale(1.04);
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -221,6 +262,17 @@ if "gen_status" not in st.session_state:
     st.session_state.gen_status = None  # None | "generating" | "done" | "error"
 if "gen_error" not in st.session_state:
     st.session_state.gen_error = ""
+# Math module state
+if "math_level" not in st.session_state:
+    st.session_state.math_level = None
+if "math_problems" not in st.session_state:
+    st.session_state.math_problems = []
+if "math_current" not in st.session_state:
+    st.session_state.math_current = 0
+if "math_answers" not in st.session_state:
+    st.session_state.math_answers = []
+if "math_start_time" not in st.session_state:
+    st.session_state.math_start_time = None
 
 
 # ──────────────────────────────────────────────
@@ -274,6 +326,23 @@ def go_to_generate():
     st.session_state.current_page = "generate_story"
     st.session_state.gen_status = None
     st.session_state.gen_error = ""
+
+
+def start_math_level(level_id):
+    st.session_state.current_page = "math_practice"
+    st.session_state.math_level = level_id
+    st.session_state.math_problems = mc.generate_round(level_id, num_problems=5)
+    st.session_state.math_current = 0
+    st.session_state.math_answers = []
+    st.session_state.math_start_time = time.time()
+
+
+def back_to_math_home():
+    st.session_state.current_page = "math_home"
+    st.session_state.math_level = None
+    st.session_state.math_problems = []
+    st.session_state.math_current = 0
+    st.session_state.math_answers = []
 
 
 # ──────────────────────────────────────────────
@@ -393,7 +462,8 @@ def render_user_dashboard():
             """, unsafe_allow_html=True)
             st.markdown("")
             if st.button("🧮 Start Math", key="btn_math", use_container_width=True, type="primary"):
-                st.info("🚧 Math module coming soon! Stay tuned.")
+                select_activity("Math")
+                st.rerun()
     else:
         st.markdown(f"### 🚧 {name}'s activities are coming soon!")
         st.info(f"We're building personalized activities for {name}. Check back soon!")
@@ -731,6 +801,259 @@ def render_reading_story():
 
 
 # ──────────────────────────────────────────────
+# PAGE: Math Home — Level Selection
+# ──────────────────────────────────────────────
+def render_math_home():
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="math_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">🧮 {name}'s Math Practice</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">Pick a level and start practicing!</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Stats
+    today_math = []
+    if user:
+        today_math = db.get_today_scores(user["id"], activity_type="Math")
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(f'<div class="score-card"><div class="score-number">🧮 {len(today_math)}</div><div class="score-label">Rounds Today</div></div>', unsafe_allow_html=True)
+    with col2:
+        if today_math:
+            avg_pct = sum(s["score"] for s in today_math) / len(today_math)
+            avg_display = f"{avg_pct:.0f}%"
+        else:
+            avg_display = "—"
+        st.markdown(f'<div class="score-card"><div class="score-number">🎯 {avg_display}</div><div class="score-label">Avg Score Today</div></div>', unsafe_allow_html=True)
+    with col3:
+        total_math = db.get_scores_history(user["id"], activity_type="Math", days=365) if user else []
+        st.markdown(f'<div class="score-card"><div class="score-number">⭐ {len(total_math)}</div><div class="score-label">Total Rounds</div></div>', unsafe_allow_html=True)
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    # Level cards
+    levels = mc.get_all_levels()
+    cols = st.columns(3, gap="large")
+
+    for i, level in enumerate(levels):
+        with cols[i]:
+            color = level["color"]
+            st.markdown(f"""
+            <div class="math-level-card" style="background: linear-gradient(135deg, {color}, {color}cc);">
+                <div style="font-size: 2.8rem;">{level['emoji']}</div>
+                <div style="font-size: 1.15rem; font-weight: 700; color: white; margin-top: 0.4rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
+                    {level['title']}
+                </div>
+                <div style="font-size: 0.85rem; color: rgba(255,255,255,0.9); margin-top: 0.2rem;">
+                    {level['description']}
+                </div>
+                <div style="font-size: 0.75rem; color: rgba(255,255,255,0.75); margin-top: 0.2rem;">
+                    5 questions per round
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button(f"▶️ Play {level['title']}", key=f"math_{level['id']}", use_container_width=True, type="primary"):
+                start_math_level(level["id"])
+                st.rerun()
+            st.markdown("")
+
+
+# ──────────────────────────────────────────────
+# PAGE: Math Practice — Solve Problems
+# ──────────────────────────────────────────────
+def render_math_practice():
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    level_id = st.session_state.math_level
+    level = mc.get_level(level_id)
+    problems = st.session_state.math_problems
+    current = st.session_state.math_current
+    total = len(problems)
+    color = level["color"] if level else "#667eea"
+    is_done = current >= total
+
+    # Nav bar
+    col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
+    with col_nav1:
+        if st.button("← Levels", key="math_back_levels"):
+            back_to_math_home()
+            st.rerun()
+    with col_nav_mid:
+        if not is_done:
+            st.markdown(f"""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                Question {current + 1} of {total}
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.markdown("""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                🎉 Round Complete!
+            </div>
+            """, unsafe_allow_html=True)
+
+    # Title
+    st.markdown(f"""
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+        <h1 style="color: {color}; margin: 0.3rem 0; font-size: 2.2rem;">{level['emoji']} {level['title']}</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Progress bar
+    progress = (current / total) if total > 0 else 0
+    st.markdown(f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,{color},{color}bb);border-radius:10px;transition:width 0.4s ease;"></div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # ── Active problem ──
+    if not is_done:
+        problem = problems[current]
+
+        # Show the visual emoji display
+        st.markdown(f"""
+        <div class="math-problem-box">
+            {problem['display_html']}
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Question text
+        st.markdown(f'<div class="math-question-text" style="text-align:center;margin:1rem 0;">{problem["question"]}</div>', unsafe_allow_html=True)
+
+        # Check if this question was just answered (for feedback)
+        last_feedback = st.session_state.get("math_last_feedback")
+
+        if last_feedback and last_feedback["idx"] == current:
+            if last_feedback["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer" style="text-align:center;">
+                    ✅ <strong>Correct!</strong> The answer is <strong>{last_feedback['correct_val']}</strong>  🎉
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer" style="text-align:center;">
+                    Not quite! You picked <strong>{last_feedback['picked']}</strong>.
+                    The answer is <strong>{last_feedback['correct_val']}</strong> 💪
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("")
+            _, col_next, _ = st.columns([1, 2, 1])
+            with col_next:
+                if current < total - 1:
+                    if st.button("Next Question ➡️", key="math_next", use_container_width=True, type="primary"):
+                        st.session_state.math_current += 1
+                        st.session_state.math_last_feedback = None
+                        st.rerun()
+                else:
+                    if st.button("🎉 See Results!", key="math_results", use_container_width=True, type="primary"):
+                        st.session_state.math_current = total
+                        st.session_state.math_last_feedback = None
+                        st.rerun()
+        else:
+            # Show answer buttons
+            answer_cols = st.columns(3, gap="medium")
+            for i, opt in enumerate(problem["options"]):
+                with answer_cols[i]:
+                    if st.button(str(opt), key=f"math_opt_{current}_{i}", use_container_width=True, type="primary"):
+                        is_correct = (i == problem["answer"])
+                        st.session_state.math_answers.append({
+                            "picked": opt,
+                            "correct_val": problem["options"][problem["answer"]],
+                            "correct": is_correct,
+                        })
+                        st.session_state.math_last_feedback = {
+                            "idx": current,
+                            "picked": opt,
+                            "correct_val": problem["options"][problem["answer"]],
+                            "correct": is_correct,
+                        }
+                        st.rerun()
+
+    # ── Score summary ──
+    else:
+        answers = st.session_state.math_answers
+        correct = sum(1 for a in answers if a["correct"])
+        score_pct = int((correct / total) * 100) if total > 0 else 0
+        time_spent = int(time.time() - st.session_state.math_start_time) if st.session_state.math_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+
+        # Save score
+        if user and level:
+            db.save_activity_score(user["id"], "Math", level["title"], score_pct, 100, f"{correct}/{total} correct")
+
+        if score_pct == 100:
+            res_emoji, message, res_color = "🏆", "Perfect! You are a math superstar!", "#10b981"
+        elif score_pct >= 80:
+            res_emoji, message, res_color = "🌟", "Great job! Almost perfect!", "#3b82f6"
+        elif score_pct >= 60:
+            res_emoji, message, res_color = "👍", "Good try! Keep practicing!", "#f59e0b"
+        else:
+            res_emoji, message, res_color = "💪", "Let's try again! You can do it!", "#ef4444"
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:2rem;background:{res_color}10;border-radius:20px;border:3px solid {res_color};margin-top:1rem;">
+            <div style="font-size:5rem;">{res_emoji}</div>
+            <h2 style="color:{res_color};margin:0.5rem 0;font-size:2rem;">{correct} out of {total} correct!</h2>
+            <p style="font-size:1.2rem;color:#4b5563;">{message}</p>
+            <p style="color:#9ca3af;">⏱️ Time: {minutes}m {seconds}s</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Review answers
+        st.markdown("")
+        st.markdown("### Review")
+        for idx, (prob, ans) in enumerate(zip(problems, answers)):
+            if ans["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer">
+                    <strong>Q{idx+1}:</strong> {prob['question']}<br>
+                    ✅ <strong>{ans['correct_val']}</strong> — Great job!
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer">
+                    <strong>Q{idx+1}:</strong> {prob['question']}<br>
+                    ❌ You said: <strong>{ans['picked']}</strong> &nbsp; ✅ Answer: <strong>{ans['correct_val']}</strong>
+                </div>
+                """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_r1, col_r2, col_r3 = st.columns(3)
+        with col_r1:
+            if st.button(f"🔄 Play {level['title']} Again", key="math_again", use_container_width=True):
+                start_math_level(level_id)
+                st.rerun()
+        with col_r2:
+            if st.button("🧮 More Levels", key="math_more", use_container_width=True, type="primary"):
+                back_to_math_home()
+                st.rerun()
+        with col_r3:
+            if st.button("🏠 Dashboard", key="math_dashboard", use_container_width=True):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.math_level = None
+                st.session_state.math_problems = []
+                st.session_state.math_current = 0
+                st.session_state.math_answers = []
+                st.rerun()
+
+
+# ──────────────────────────────────────────────
 # PAGE: Generate a New Story with AI
 # ──────────────────────────────────────────────
 def render_generate_story():
@@ -858,5 +1181,9 @@ elif page == "reading_story":
     render_reading_story()
 elif page == "generate_story":
     render_generate_story()
+elif page == "math_home":
+    render_math_home()
+elif page == "math_practice":
+    render_math_practice()
 else:
     render_home()
