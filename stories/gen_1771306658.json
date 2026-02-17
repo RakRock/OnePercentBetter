@@ -1,0 +1,86 @@
+{
+  "title": "Dino's Day Out",
+  "cover_emoji": "🦖",
+  "pages": [
+    {
+      "image_prompt": "a friendly cartoon dinosaur with a smile in a green forest",
+      "fallback_emoji": "🦖🌳",
+      "text": "Dino is happy today."
+    },
+    {
+      "image_prompt": "a friendly cartoon dinosaur holding a big yellow flower in a field",
+      "fallback_emoji": "🦖🌼",
+      "text": "Dino finds a flower."
+    },
+    {
+      "image_prompt": "a friendly cartoon dinosaur meeting a happy little rabbit in the forest",
+      "fallback_emoji": "🦖🐰",
+      "text": "Dino meets a rabbit. Hello!"
+    },
+    {
+      "image_prompt": "a friendly cartoon dinosaur and the rabbit playing together in a sunny meadow",
+      "fallback_emoji": "🦖🐰😊",
+      "text": "Dino and rabbit play."
+    },
+    {
+      "image_prompt": "a friendly cartoon dinosaur and the rabbit eating berries together near a tree",
+      "fallback_emoji": "🦖🐰🍓",
+      "text": "Dino and rabbit eat berries."
+    },
+    {
+      "image_prompt": "a friendly cartoon dinosaur and the rabbit taking a nap together in the sun",
+      "fallback_emoji": "🦖🐰😴",
+      "text": "Dino and rabbit nap."
+    },
+    {
+      "image_prompt": "a happy cartoon dinosaur and rabbit waking up together with big smiles",
+      "fallback_emoji": "🦖🐰😊",
+      "text": "Dino and rabbit wake up."
+    },
+    {
+      "image_prompt": "a friendly cartoon dinosaur and rabbit laughing and hugging near a sunny tree",
+      "fallback_emoji": "🦖🐰🤗",
+      "text": "Dino and rabbit are friends."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is Dino feeling today?",
+      "options": [
+        "Sad 😢",
+        "Happy 😊",
+        "Angry 😠"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Dino find?",
+      "options": [
+        "A rock 🌎",
+        "A flower 🌼",
+        "A leaf 🌱"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Who does Dino meet?",
+      "options": [
+        "A bird 🐦",
+        "A fish 🐟",
+        "A rabbit 🐰"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What are Dino and rabbit?",
+      "options": [
+        "Friends 👫",
+        "Family 👪",
+        "Enemies 👊"
+      ],
+      "answer": 0
+    }
+  ],
+  "id": "gen_1771306658",
+  "color": "#ef4444"
+}

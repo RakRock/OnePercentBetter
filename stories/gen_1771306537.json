@@ -1,0 +1,86 @@
+{
+  "title": "Pip's First Day",
+  "cover_emoji": "🚂",
+  "pages": [
+    {
+      "image_prompt": "a cute cartoon train arriving at a station with Pip looking excited",
+      "fallback_emoji": "🚂👧",
+      "text": "Pip goes to school."
+    },
+    {
+      "image_prompt": "a cute cartoon Pip holding a lunchbox and wearing a backpack",
+      "fallback_emoji": "👧🥪🎒",
+      "text": "Pip brings lunch."
+    },
+    {
+      "image_prompt": "a cute cartoon Pip walking into a colorful classroom with a teacher smiling",
+      "fallback_emoji": "👧🏫👩‍🏫",
+      "text": "Pip meets the teacher."
+    },
+    {
+      "image_prompt": "a cute cartoon Pip playing with blocks on the classroom floor",
+      "fallback_emoji": "👧🏰🎉",
+      "text": "Pip builds a tower."
+    },
+    {
+      "image_prompt": "a cute cartoon Pip singing a song with friends in the classroom",
+      "fallback_emoji": "👧🎤🎶",
+      "text": "Pip sings a song."
+    },
+    {
+      "image_prompt": "a cute cartoon Pip painting a picture with colorful paint",
+      "fallback_emoji": "👧🎨🖌️",
+      "text": "Pip makes art."
+    },
+    {
+      "image_prompt": "a cute cartoon Pip saying goodbye to the teacher and friends at the end of the day",
+      "fallback_emoji": "👧🏫👋",
+      "text": "Pip says goodbye."
+    },
+    {
+      "image_prompt": "a cute cartoon Pip walking home with a smile on her face",
+      "fallback_emoji": "👧😊🏠",
+      "text": "Pip is happy!"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What does Pip go to?",
+      "options": [
+        "The park 🏞️",
+        "The store 🏪",
+        "School 🏫"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "What does Pip bring to school?",
+      "options": [
+        "A toy 🎀",
+        "Lunch 🥪",
+        "A book 📚"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "What does Pip do with blocks?",
+      "options": [
+        "Eats them 🥗",
+        "Builds with them 🏰",
+        "Draws on them 🎨"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "How does Pip feel at the end of the day?",
+      "options": [
+        "Sad 😢",
+        "Tired 😴",
+        "Happy 😊"
+      ],
+      "answer": 2
+    }
+  ],
+  "id": "gen_1771306537",
+  "color": "#3b82f6"
+}
