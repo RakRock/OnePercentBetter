@@ -208,13 +208,14 @@ st.markdown("""
         background: #fffef5;
         border: 3px solid #e5e7eb;
         border-radius: 24px;
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
         text-align: center;
         margin: 0.75rem 0;
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        font-size: 2.2rem;
-        line-height: 1.8;
-        letter-spacing: 0.15em;
+    }
+    .math-problem-box img {
+        border-radius: 8px;
+        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
     }
     .math-question-text {
         font-size: 1.5rem;
@@ -1507,6 +1508,39 @@ def render_gk_practice():
                     <br><br><em>{q.get('explanation', '')}</em>
                 </div>
                 """, unsafe_allow_html=True)
+
+            # Show India map with location marker (for profiles with has_map)
+            # When a state is identified, show India map + enlarged state map side by side
+            if profile.get("has_map") and q.get("location"):
+                import india_map_data as imap
+                import state_map_data as smap
+
+                india_html = imap.render_map_with_marker(q["location"])
+                state_name = q.get("state", "")
+                state_html = smap.render_state_map_with_marker(
+                    state_name, q["location"]
+                ) if state_name else None
+
+                if india_html and state_html:
+                    col_india, col_state = st.columns(2)
+                    with col_india:
+                        st.markdown(
+                            '<p style="text-align:center;font-weight:600;color:#6b7280;'
+                            'margin-bottom:0.3rem;font-size:0.85rem;">🇮🇳 India</p>',
+                            unsafe_allow_html=True,
+                        )
+                        st.markdown(india_html, unsafe_allow_html=True)
+                    with col_state:
+                        st.markdown(
+                            f'<p style="text-align:center;font-weight:600;color:#6b7280;'
+                            f'margin-bottom:0.3rem;font-size:0.85rem;">🔍 {state_name}</p>',
+                            unsafe_allow_html=True,
+                        )
+                        st.markdown(state_html, unsafe_allow_html=True)
+                elif india_html:
+                    st.markdown('<div style="text-align:center;margin:1rem 0;">', unsafe_allow_html=True)
+                    st.markdown(india_html, unsafe_allow_html=True)
+                    st.markdown('</div>', unsafe_allow_html=True)
 
             st.markdown("")
             _, col_next, _ = st.columns([1, 2, 1])

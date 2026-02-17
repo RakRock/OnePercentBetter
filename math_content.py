@@ -1,21 +1,62 @@
 """
 Math content module for Krish's Math App.
-Generates random visual math problems for 4-5 year olds using emoji objects.
+Generates random visual math problems for 4-5 year olds using cute cartoon images.
 
 Three levels:
   - Counting:     "How many ___ do you see?" (1-20 objects)
-  - Addition:     Two groups with +, "How many in all?" (sum up to 20)
+  - Addition:     Two groups with +, "How many in all?" (sum up to 10)
   - Subtraction:  One group with some crossed out, "How many are left?"
 """
 
+import base64
+import os
 import random
 
-# ── Emoji objects used in problems ──
-EMOJI_POOL = [
-    "🍎", "🍌", "🍪", "🍓", "🍊", "🌟", "⭐", "❤️",
-    "🐟", "🐱", "🐶", "🐸", "🦋", "🐝", "🐢", "🐰",
-    "🌸", "🌻", "🎈", "🚗", "⚽", "🧁", "🍩", "🍕",
+# ── Directory where cartoon object images live ──
+_MATH_IMG_DIR = os.path.join(os.path.dirname(__file__), "math_images")
+
+# ── Cache for base64-encoded images (loaded once per object) ──
+_B64_CACHE: dict[str, str] = {}
+
+
+def _get_b64(img_path: str) -> str | None:
+    """Load an image file and return its base64 data URI string, cached."""
+    if img_path in _B64_CACHE:
+        return _B64_CACHE[img_path]
+    if not os.path.exists(img_path):
+        return None
+    with open(img_path, "rb") as f:
+        encoded = base64.b64encode(f.read()).decode()
+    data_uri = f"data:image/png;base64,{encoded}"
+    _B64_CACHE[img_path] = data_uri
+    return data_uri
+
+# ── Object pool: (display_name, image_filename, fallback_emoji) ──
+OBJECT_POOL = [
+    ("apples", "apple.png", "🍎"),
+    ("bananas", "banana.png", "🍌"),
+    ("cookies", "cookie.png", "🍪"),
+    ("strawberries", "strawberry.png", "🍓"),
+    ("oranges", "orange.png", "🍊"),
+    ("stars", "star.png", "🌟"),
+    ("cats", "cat.png", "🐱"),
+    ("dogs", "dog.png", "🐶"),
+    ("frogs", "frog.png", "🐸"),
+    ("butterflies", "butterfly.png", "🦋"),
+    ("bunnies", "bunny.png", "🐰"),
+    ("flowers", "flower.png", "🌸"),
+    ("cars", "car.png", "🚗"),
+    ("cupcakes", "cupcake.png", "🧁"),
+    ("fish", "fish.png", "🐟"),
+    ("balloons", "balloon.png", "🎈"),
 ]
+
+
+def _pick_object():
+    """Pick a random object, returning (name, img_path, fallback_emoji)."""
+    name, filename, emoji = random.choice(OBJECT_POOL)
+    img_path = os.path.join(_MATH_IMG_DIR, filename)
+    return name, img_path, emoji
 
 # ── Level definitions ──
 LEVELS = {
@@ -72,28 +113,59 @@ def _make_options(correct, low=0, high=20):
     return options, correct_idx
 
 
-def _render_emoji_grid(emoji, count, per_row=5):
-    """Build an HTML string showing `count` copies of `emoji` in rows."""
+def _img_tag(img_path, fallback_emoji, size=60):
+    """Return an <img> tag using base64 data URI, or a styled emoji span as fallback."""
+    data_uri = _get_b64(img_path)
+    if data_uri:
+        return (
+            f'<img src="{data_uri}" '
+            f'style="width:{size}px;height:{size}px;object-fit:contain;'
+            f'margin:4px;vertical-align:middle;" />'
+        )
+    return f'<span style="font-size:{int(size * 0.6)}px;margin:4px;vertical-align:middle;">{fallback_emoji}</span>'
+
+
+def _render_image_grid(img_path, fallback_emoji, count, per_row=5, size=60):
+    """Build HTML showing `count` copies of the object image in rows."""
+    tag = _img_tag(img_path, fallback_emoji, size)
     rows = []
     for i in range(0, count, per_row):
         row_count = min(per_row, count - i)
-        row = " ".join([emoji] * row_count)
-        rows.append(row)
-    return "<br>".join(rows)
+        row = "".join([tag] * row_count)
+        rows.append(f'<div style="display:flex;justify-content:center;gap:4px;margin:4px 0;">{row}</div>')
+    return "".join(rows)
+
+
+def _render_crossed_image(img_path, fallback_emoji, size=60):
+    """Return an image with a red X overlay to show it's been taken away."""
+    data_uri = _get_b64(img_path)
+    if data_uri:
+        return (
+            f'<span style="position:relative;display:inline-block;width:{size}px;height:{size}px;margin:4px;">'
+            f'<img src="{data_uri}" '
+            f'style="width:{size}px;height:{size}px;object-fit:contain;opacity:0.35;filter:grayscale(80%);" />'
+            f'<span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);'
+            f'font-size:{int(size*0.7)}px;color:#ef4444;font-weight:bold;">✕</span>'
+            f'</span>'
+        )
+    return f'<span style="font-size:{int(size * 0.6)}px;margin:4px;opacity:0.35;">❌</span>'
 
 
 def generate_counting_problem():
     """Generate a counting problem: show N objects, ask how many."""
-    emoji = random.choice(EMOJI_POOL)
+    obj_name, img_path, emoji = _pick_object()
     count = random.randint(1, 20)
+    size = 50 if count > 10 else 60
     options, answer = _make_options(count, low=1, high=20)
 
     return {
         "type": "counting",
+        "obj_name": obj_name,
+        "img_path": img_path,
         "emoji": emoji,
         "count": count,
-        "display_html": _render_emoji_grid(emoji, count),
-        "question": f"How many {emoji} do you see?",
+        "display_html": _render_image_grid(img_path, emoji, count, size=size),
+        "question": f"How many {obj_name} do you see?",
         "options": options,
         "answer": answer,
     }
@@ -101,28 +173,33 @@ def generate_counting_problem():
 
 def generate_addition_problem():
     """Generate an addition problem: two groups, ask for the sum."""
-    emoji = random.choice(EMOJI_POOL)
+    obj_name, img_path, emoji = _pick_object()
     a = random.randint(1, 5)
     b = random.randint(1, 9 - a)
     total = a + b
     options, answer = _make_options(total, low=2, high=10)
 
-    group_a = " ".join([emoji] * a)
-    group_b = " ".join([emoji] * b)
+    tag = _img_tag(img_path, emoji, size=60)
+    group_a = "".join([tag] * a)
+    group_b = "".join([tag] * b)
     display_html = (
-        f'<span style="display:inline-block">{group_a}</span>'
-        f'<span style="display:inline-block;margin:0 0.8rem;font-size:2rem;vertical-align:middle;">+</span>'
-        f'<span style="display:inline-block">{group_b}</span>'
+        f'<div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px;">'
+        f'<div style="display:flex;align-items:center;gap:4px;background:#e0f2fe;border-radius:16px;padding:8px 12px;">{group_a}</div>'
+        f'<span style="font-size:2.5rem;margin:0 12px;color:#3b82f6;font-weight:800;">+</span>'
+        f'<div style="display:flex;align-items:center;gap:4px;background:#fef3c7;border-radius:16px;padding:8px 12px;">{group_b}</div>'
+        f'</div>'
     )
 
     return {
         "type": "addition",
+        "obj_name": obj_name,
+        "img_path": img_path,
         "emoji": emoji,
         "a": a,
         "b": b,
         "total": total,
         "display_html": display_html,
-        "question": f"{a} {emoji} + {b} {emoji} = ?",
+        "question": f"{a} {obj_name} + {b} {obj_name} = ?",
         "options": options,
         "answer": answer,
     }
@@ -130,31 +207,35 @@ def generate_addition_problem():
 
 def generate_subtraction_problem():
     """Generate a subtraction problem: start with a group, cross some out."""
-    emoji = random.choice(EMOJI_POOL)
+    obj_name, img_path, emoji = _pick_object()
     total = random.randint(3, 9)
     take_away = random.randint(1, total - 1)
     remaining = total - take_away
     options, answer = _make_options(remaining, low=0, high=9)
 
-    kept = " ".join([emoji] * remaining)
-    crossed = " ".join(["❌"] * take_away)
+    tag = _img_tag(img_path, emoji, size=60)
+    crossed_tag = _render_crossed_image(img_path, emoji, size=60)
+
+    kept_items = "".join([tag] * remaining)
+    crossed_items = "".join([crossed_tag] * take_away)
     display_html = (
-        f'<div style="margin-bottom:0.3rem;">'
-        f'{"  ".join([emoji] * total)}'
-        f'</div>'
-        f'<div style="opacity:0.7;">'
-        f'{kept} {crossed}'
+        f'<div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px;">'
+        f'<div style="display:flex;align-items:center;gap:4px;background:#d1fae5;border-radius:16px;padding:8px 12px;">{kept_items}</div>'
+        f'<span style="font-size:2.5rem;margin:0 12px;color:#a855f7;font-weight:800;">−</span>'
+        f'<div style="display:flex;align-items:center;gap:4px;background:#fee2e2;border-radius:16px;padding:8px 12px;">{crossed_items}</div>'
         f'</div>'
     )
 
     return {
         "type": "subtraction",
+        "obj_name": obj_name,
+        "img_path": img_path,
         "emoji": emoji,
         "total": total,
         "take_away": take_away,
         "remaining": remaining,
         "display_html": display_html,
-        "question": f"{total} {emoji} - {take_away} {emoji} = ?",
+        "question": f"{total} {obj_name} − {take_away} {obj_name} = ?",
         "options": options,
         "answer": answer,
     }

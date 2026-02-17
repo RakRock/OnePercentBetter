@@ -84,14 +84,16 @@ Help the student think through it without giving away the answer.""",
     # ── Sangeetha: 35-year-old adult, building GK habits (India focus) ──
     "Sangeetha": {
         "topics": [
-            "States & Capitals", "Languages of India", "Rivers",
-            "Mountains & Ranges", "Seas & Coasts", "Historical Places",
-            "Famous Landmarks", "Indian Culture & Festivals",
-            "Freedom Struggle", "Important Cities",
+            "States & Capitals", "Languages of India", "Rivers of India",
+            "South Indian Rivers", "Mountains & Ranges", "Seas & Coasts",
+            "Historical Places", "National Monuments", "Famous Landmarks",
+            "Indian Culture & Festivals", "Freedom Struggle", "Important Cities",
         ],
         "topic_emojis": {
-            "States & Capitals": "🏛️", "Languages of India": "🗣️", "Rivers": "🏞️",
-            "Mountains & Ranges": "🏔️", "Seas & Coasts": "🌊", "Historical Places": "🕌",
+            "States & Capitals": "🏛️", "Languages of India": "🗣️",
+            "Rivers of India": "🏞️", "South Indian Rivers": "🌊",
+            "Mountains & Ranges": "🏔️", "Seas & Coasts": "🌊",
+            "Historical Places": "🕌", "National Monuments": "🏗️",
             "Famous Landmarks": "🗺️", "Indian Culture & Festivals": "🪔",
             "Freedom Struggle": "🇮🇳", "Important Cities": "🏙️",
         },
@@ -101,10 +103,12 @@ general knowledge habit. Generate exactly 10 multiple-choice questions — \
 ALL questions must be about INDIA.
 
 RULES:
-- Each question should be from a DIFFERENT topic. Use these topics in order: \
-States & Capitals, Languages of India, Rivers, Mountains & Ranges, Seas & Coasts, \
-Historical Places, Famous Landmarks, Indian Culture & Festivals, Freedom Struggle, \
-Important Cities.
+- Each question should be from a DIFFERENT topic. Pick 10 topics from this list: \
+States & Capitals, Languages of India, Rivers of India, South Indian Rivers, \
+Mountains & Ranges, Seas & Coasts, Historical Places, National Monuments, \
+Famous Landmarks, Indian Culture & Festivals, Freedom Struggle, Important Cities.
+- EVERY quiz MUST include at least ONE question on National Monuments and at least \
+ONE question on South Indian Rivers.
 - Difficulty: easy to medium — approachable and interesting, NOT intimidating.
 - The goal is to make the quiz feel rewarding and fun, encouraging daily practice. \
 Avoid obscure trivia. Stick to well-known facts about India.
@@ -113,15 +117,37 @@ Avoid obscure trivia. Stick to well-known facts about India.
 - Include a short "explanation" (1-2 sentences) with an interesting fact about India.
 - Questions should be factual and have one clearly correct answer.
 
+NATIONAL MONUMENTS — use questions about these and similar places:
+India Gate, Qutub Minar, Red Fort, Taj Mahal, Sanchi Stupa, Gateway of India, \
+Charminar, Hawa Mahal, Victoria Memorial, Konark Sun Temple, Brihadeeswarar Temple, \
+Meenakshi Amman Temple, Hampi ruins, Ajanta & Ellora Caves, Khajuraho temples, \
+Fatehpur Sikri, Jantar Mantar, Buland Darwaza, Golconda Fort, Mysore Palace, \
+Rashtrapati Bhavan, Parliament House, Cellular Jail (Andaman).
+
+SOUTH INDIAN RIVERS — use questions about these:
+Kaveri (Cauvery), Tungabhadra, Vaigai, Periyar, Pamba, Bharathappuzha (Nila), \
+Chaliyar, Krishna (in AP/Telangana/Karnataka), Godavari (in Telangana/AP), \
+Pennar, Chitravathi, Hemavathi, Kabini, Arkavathi, Nethravathi, Sharavathi, \
+Moyar, Amaravathi, Tamiraparani, Bhavani.
+Include the state(s) they flow through in the explanation.
+
 EXAMPLE TOPICS:
 - Which state has X as its capital?
 - Which language is the official language of X state?
-- Which river flows through X city?
+- Which river flows through X city / originates in X?
+- Which South Indian river is a tributary of X?
 - Which mountain range is in X region?
 - Which sea borders X coast of India?
-- Which historical monument is located in X?
+- Which national monument was built by X ruler?
+- In which city is the X monument located?
 - Which freedom fighter is known for X?
 - Which festival is celebrated for X reason?
+
+IMPORTANT: Each question MUST include BOTH fields:
+1. "location" — a specific place name in India related to the question \
+(city, monument, river, mountain, etc.). This is used to show the location on a map.
+2. "state" — the Indian state where the location is situated (e.g. "Karnataka", \
+"Tamil Nadu"). For rivers spanning multiple states, use the most relevant state.
 
 Respond with ONLY valid JSON — an array of 10 objects:
 [
@@ -130,7 +156,9 @@ Respond with ONLY valid JSON — an array of 10 objects:
     "question": "What is the capital of Karnataka?",
     "options": ["Chennai", "Bengaluru", "Hyderabad", "Mumbai"],
     "answer": 1,
-    "explanation": "Bengaluru (formerly Bangalore) is the capital of Karnataka and is known as the Silicon Valley of India."
+    "explanation": "Bengaluru (formerly Bangalore) is the capital of Karnataka and is known as the Silicon Valley of India.",
+    "location": "Bengaluru",
+    "state": "Karnataka"
   }}
 ]
 
@@ -154,8 +182,9 @@ Options: {options}
 
 Help them reason through it without giving away the answer.""",
         "subtitle": "Discover India, one question at a time!",
-        "quiz_description": "10 questions on Indian states, rivers, history, landmarks, and more!",
+        "quiz_description": "10 questions — states, monuments, rivers, landmarks & more!",
         "color": "#f093fb",
+        "has_map": True,
     },
 }
 
