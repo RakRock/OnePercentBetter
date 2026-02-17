@@ -4,8 +4,7 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Database
-*.db
+# Database (tracked for persistence across deploys)
 
 # OS
 .DS_Store
