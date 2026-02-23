@@ -587,6 +587,33 @@ def render_user_dashboard():
             </div>
             """, unsafe_allow_html=True)
 
+    elif name == "Rakesh":
+        st.markdown("### ⚡ Choose Your Activity")
+        st.markdown("")
+
+        act_col1, act_col2 = st.columns(2, gap="large")
+        with act_col1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #3b82f6;">
+                <div style="font-size: 3rem;">🧠</div>
+                <h3 style="margin: 0.5rem 0;">General Knowledge</h3>
+                <p style="color: #6b7280;">Explore the United States daily</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🧠 Start GK", key="btn_gk_r", use_container_width=True, type="primary"):
+                select_activity("GK")
+                st.rerun()
+
+        with act_col2:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #9ca3af;">
+                <div style="font-size: 3rem;">🔮</div>
+                <h3 style="margin: 0.5rem 0;">More Coming Soon</h3>
+                <p style="color: #6b7280;">Stay tuned for new activities!</p>
+            </div>
+            """, unsafe_allow_html=True)
+
     else:
         st.markdown(f"### 🚧 {name}'s activities are coming soon!")
         st.info(f"We're building personalized activities for {name}. Check back soon!")
@@ -1509,27 +1536,38 @@ def render_gk_practice():
                 </div>
                 """, unsafe_allow_html=True)
 
-            # Show India map with location marker (for profiles with has_map)
-            # When a state is identified, show India map + enlarged state map side by side
+            # Show map with location marker (for profiles with has_map)
+            # Supports India maps (Sangeetha) and US maps (Rakesh)
             if profile.get("has_map") and q.get("location"):
-                import india_map_data as imap
-                import state_map_data as smap
+                map_country = profile.get("map_country", "india")
 
-                india_html = imap.render_map_with_marker(q["location"])
-                state_name = q.get("state", "")
-                state_html = smap.render_state_map_with_marker(
+                if map_country == "us":
+                    import us_map_data as country_map
+                    import us_state_map_data as country_smap
+                    country_flag = "🇺🇸"
+                    country_label = "United States"
+                else:
+                    import india_map_data as country_map
+                    import state_map_data as country_smap
+                    country_flag = "🇮🇳"
+                    country_label = "India"
+
+                overview_html = country_map.render_map_with_marker(q["location"])
+
+                state_name = country_smap.infer_state(q)
+                state_html = country_smap.render_state_map_with_marker(
                     state_name, q["location"]
                 ) if state_name else None
 
-                if india_html and state_html:
-                    col_india, col_state = st.columns(2)
-                    with col_india:
+                if overview_html and state_html:
+                    col_country, col_state = st.columns(2)
+                    with col_country:
                         st.markdown(
-                            '<p style="text-align:center;font-weight:600;color:#6b7280;'
-                            'margin-bottom:0.3rem;font-size:0.85rem;">🇮🇳 India</p>',
+                            f'<p style="text-align:center;font-weight:600;color:#6b7280;'
+                            f'margin-bottom:0.3rem;font-size:0.85rem;">{country_flag} {country_label}</p>',
                             unsafe_allow_html=True,
                         )
-                        st.markdown(india_html, unsafe_allow_html=True)
+                        st.markdown(overview_html, unsafe_allow_html=True)
                     with col_state:
                         st.markdown(
                             f'<p style="text-align:center;font-weight:600;color:#6b7280;'
@@ -1537,9 +1575,9 @@ def render_gk_practice():
                             unsafe_allow_html=True,
                         )
                         st.markdown(state_html, unsafe_allow_html=True)
-                elif india_html:
+                elif overview_html:
                     st.markdown('<div style="text-align:center;margin:1rem 0;">', unsafe_allow_html=True)
-                    st.markdown(india_html, unsafe_allow_html=True)
+                    st.markdown(overview_html, unsafe_allow_html=True)
                     st.markdown('</div>', unsafe_allow_html=True)
 
             st.markdown("")

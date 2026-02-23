@@ -1,0 +1,366 @@
+{
+  "alabama": {
+    "name": "Alabama",
+    "min_lon": -88.471115,
+    "max_lon": -84.889196,
+    "min_lat": 30.247195,
+    "max_lat": 35.00118
+  },
+  "alaska": {
+    "name": "Alaska",
+    "min_lon": -188.90491,
+    "max_lon": -129.986323,
+    "min_lat": 51.61274,
+    "max_lat": 71.351633
+  },
+  "arizona": {
+    "name": "Arizona",
+    "min_lon": -114.815198,
+    "max_lon": -109.042503,
+    "min_lat": 31.331629,
+    "max_lat": 37.00574
+  },
+  "arkansas": {
+    "name": "Arkansas",
+    "min_lon": -94.616242,
+    "max_lon": -89.730812,
+    "min_lat": 33.002096,
+    "max_lat": 36.501861
+  },
+  "california": {
+    "name": "California",
+    "min_lon": -124.410798,
+    "max_lon": -114.136058,
+    "min_lat": 32.536556,
+    "max_lat": 42.011663
+  },
+  "colorado": {
+    "name": "Colorado",
+    "min_lon": -109.058934,
+    "max_lon": -102.042974,
+    "min_lat": 36.994786,
+    "max_lat": 41.003906
+  },
+  "connecticut": {
+    "name": "Connecticut",
+    "min_lon": -73.727192,
+    "max_lon": -71.799309,
+    "min_lat": 40.987475,
+    "max_lat": 42.050002
+  },
+  "delaware": {
+    "name": "Delaware",
+    "min_lon": -75.786521,
+    "max_lon": -75.047134,
+    "min_lat": 38.451652,
+    "max_lat": 39.831841
+  },
+  "district_of_columbia": {
+    "name": "District of Columbia",
+    "min_lon": -77.117418,
+    "max_lon": -76.909294,
+    "min_lat": 38.791222,
+    "max_lat": 38.993869
+  },
+  "florida": {
+    "name": "Florida",
+    "min_lon": -87.633143,
+    "max_lon": -80.03115,
+    "min_lat": 25.120779,
+    "max_lat": 31.003013
+  },
+  "georgia": {
+    "name": "Georgia",
+    "min_lon": -85.606675,
+    "max_lon": -80.885553,
+    "min_lat": 30.356734,
+    "max_lat": 35.00118
+  },
+  "hawaii": {
+    "name": "Hawaii",
+    "min_lon": -159.764448,
+    "max_lon": -154.807817,
+    "min_lat": 18.948267,
+    "max_lat": 22.228955
+  },
+  "idaho": {
+    "name": "Idaho",
+    "min_lon": -117.241483,
+    "max_lon": -111.047063,
+    "min_lat": 41.995232,
+    "max_lat": 49.000239
+  },
+  "illinois": {
+    "name": "Illinois",
+    "min_lon": -91.50534,
+    "max_lon": -87.49622,
+    "min_lat": 36.983832,
+    "max_lat": 42.510065
+  },
+  "indiana": {
+    "name": "Indiana",
+    "min_lon": -88.060345,
+    "max_lon": -84.801565,
+    "min_lat": 37.788942,
+    "max_lat": 41.759724
+  },
+  "iowa": {
+    "name": "Iowa",
+    "min_lon": -96.631756,
+    "max_lon": -90.141582,
+    "min_lat": 40.379535,
+    "max_lat": 43.501391
+  },
+  "kansas": {
+    "name": "Kansas",
+    "min_lon": -102.053927,
+    "max_lon": -94.610765,
+    "min_lat": 36.994786,
+    "max_lat": 40.001626
+  },
+  "kentucky": {
+    "name": "Kentucky",
+    "min_lon": -89.418626,
+    "max_lon": -81.969987,
+    "min_lat": 36.496384,
+    "max_lat": 39.103408
+  },
+  "louisiana": {
+    "name": "Louisiana",
+    "min_lon": -94.041164,
+    "max_lon": -89.002379,
+    "min_lat": 29.009407,
+    "max_lat": 33.018527
+  },
+  "maine": {
+    "name": "Maine",
+    "min_lon": -71.08183,
+    "max_lon": -66.979601,
+    "min_lat": 43.057759,
+    "max_lat": 47.461219
+  },
+  "maryland": {
+    "name": "Maryland",
+    "min_lon": -79.488933,
+    "max_lon": -75.047134,
+    "min_lat": 37.909435,
+    "max_lat": 39.722302
+  },
+  "massachusetts": {
+    "name": "Massachusetts",
+    "min_lon": -73.508114,
+    "max_lon": -69.937149,
+    "min_lat": 41.496831,
+    "max_lat": 42.887974
+  },
+  "michigan": {
+    "name": "Michigan",
+    "min_lon": -90.415429,
+    "max_lon": -82.413619,
+    "min_lat": 41.694001,
+    "max_lat": 48.173221
+  },
+  "minnesota": {
+    "name": "Minnesota",
+    "min_lon": -97.228743,
+    "max_lon": -89.615796,
+    "min_lat": 43.501391,
+    "max_lat": 49.383625
+  },
+  "mississippi": {
+    "name": "Mississippi",
+    "min_lon": -91.636787,
+    "max_lon": -88.098683,
+    "min_lat": 30.181472,
+    "max_lat": 34.995703
+  },
+  "missouri": {
+    "name": "Missouri",
+    "min_lon": -95.7664,
+    "max_lon": -89.133825,
+    "min_lat": 35.997983,
+    "max_lat": 40.615043
+  },
+  "montana": {
+    "name": "Montana",
+    "min_lon": -116.04751,
+    "max_lon": -104.042057,
+    "min_lat": 44.394132,
+    "max_lat": 49.000239
+  },
+  "nebraska": {
+    "name": "Nebraska",
+    "min_lon": -104.053011,
+    "max_lon": -95.306337,
+    "min_lat": 40.001626,
+    "max_lat": 43.002989
+  },
+  "nevada": {
+    "name": "Nevada",
+    "min_lon": -120.001861,
+    "max_lon": -114.04295,
+    "min_lat": 35.00118,
+    "max_lat": 42.000709
+  },
+  "new_hampshire": {
+    "name": "New Hampshire",
+    "min_lon": -72.544173,
+    "max_lon": -70.703921,
+    "min_lat": 42.696281,
+    "max_lat": 45.303304
+  },
+  "new_jersey": {
+    "name": "New Jersey",
+    "min_lon": -75.561967,
+    "max_lon": -73.902454,
+    "min_lat": 38.993869,
+    "max_lat": 41.359907
+  },
+  "new_mexico": {
+    "name": "New Mexico",
+    "min_lon": -109.04798,
+    "max_lon": -103.001438,
+    "min_lat": 31.331629,
+    "max_lat": 37.000263
+  },
+  "new_york": {
+    "name": "New York",
+    "min_lon": -79.76278,
+    "max_lon": -72.100541,
+    "min_lat": 40.543843,
+    "max_lat": 45.018503
+  },
+  "north_carolina": {
+    "name": "North Carolina",
+    "min_lon": -84.319594,
+    "max_lon": -75.715321,
+    "min_lat": 33.845545,
+    "max_lat": 36.589492
+  },
+  "north_dakota": {
+    "name": "North Dakota",
+    "min_lon": -104.047534,
+    "max_lon": -96.560556,
+    "min_lat": 45.933153,
+    "max_lat": 49.000239
+  },
+  "ohio": {
+    "name": "Ohio",
+    "min_lon": -84.817996,
+    "max_lon": -80.518598,
+    "min_lat": 38.424267,
+    "max_lat": 41.978802
+  },
+  "oklahoma": {
+    "name": "Oklahoma",
+    "min_lon": -103.001438,
+    "max_lon": -94.430026,
+    "min_lat": 33.637421,
+    "max_lat": 37.000263
+  },
+  "oregon": {
+    "name": "Oregon",
+    "min_lon": -124.553198,
+    "max_lon": -116.463758,
+    "min_lat": 41.989755,
+    "max_lat": 46.261769
+  },
+  "pennsylvania": {
+    "name": "Pennsylvania",
+    "min_lon": -80.518598,
+    "max_lon": -74.69661,
+    "min_lat": 39.722302,
+    "max_lat": 42.269079
+  },
+  "puerto_rico": {
+    "name": "Puerto Rico",
+    "min_lon": -67.269879,
+    "max_lon": -65.626797,
+    "min_lat": 17.929556,
+    "max_lat": 18.515589
+  },
+  "rhode_island": {
+    "name": "Rhode Island",
+    "min_lon": -71.859555,
+    "max_lon": -71.120168,
+    "min_lat": 41.321569,
+    "max_lat": 42.01714
+  },
+  "south_carolina": {
+    "name": "South Carolina",
+    "min_lon": -83.339222,
+    "max_lon": -78.541422,
+    "min_lat": 32.032678,
+    "max_lat": 35.198349
+  },
+  "south_dakota": {
+    "name": "South Dakota",
+    "min_lon": -104.058488,
+    "max_lon": -96.434587,
+    "min_lat": 42.488157,
+    "max_lat": 45.944106
+  },
+  "tennessee": {
+    "name": "Tennessee",
+    "min_lon": -90.311367,
+    "max_lon": -81.679709,
+    "min_lat": 34.984749,
+    "max_lat": 36.677123
+  },
+  "texas": {
+    "name": "Texas",
+    "min_lon": -106.643603,
+    "max_lon": -93.526331,
+    "min_lat": 25.887551,
+    "max_lat": 36.501861
+  },
+  "utah": {
+    "name": "Utah",
+    "min_lon": -114.048427,
+    "max_lon": -109.042503,
+    "min_lat": 37.000263,
+    "max_lat": 42.000709
+  },
+  "vermont": {
+    "name": "Vermont",
+    "min_lon": -73.436914,
+    "max_lon": -71.4926,
+    "min_lat": 42.729142,
+    "max_lat": 45.013027
+  },
+  "virginia": {
+    "name": "Virginia",
+    "min_lon": -83.673316,
+    "max_lon": -75.244304,
+    "min_lat": 36.5402,
+    "max_lat": 39.464886
+  },
+  "washington": {
+    "name": "Washington",
+    "min_lon": -124.706553,
+    "max_lon": -116.918344,
+    "min_lat": 45.549767,
+    "max_lat": 49.000239
+  },
+  "west_virginia": {
+    "name": "West Virginia",
+    "min_lon": -82.621743,
+    "max_lon": -77.719881,
+    "min_lat": 37.20291,
+    "max_lat": 40.636951
+  },
+  "wisconsin": {
+    "name": "Wisconsin",
+    "min_lon": -92.885529,
+    "max_lon": -87.03068,
+    "min_lat": 42.493634,
+    "max_lat": 46.95734
+  },
+  "wyoming": {
+    "name": "Wyoming",
+    "min_lon": -111.05254,
+    "max_lon": -104.053011,
+    "min_lat": 40.998429,
+    "max_lat": 45.002073
+  }
+}

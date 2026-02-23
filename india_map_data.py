@@ -1,10 +1,10 @@
 """
 India map data for Sangeetha's GK app.
 
-Provides:
-  - Base64-encoded India map image for HTML embedding.
-  - Coordinate database mapping location names to (x%, y%) positions on the map.
-  - HTML renderer that overlays a pulsing marker on the map at a given location.
+Uses REAL geographic data:
+  - India map image generated from GeoJSON boundaries (matplotlib).
+  - All locations use real latitude/longitude coordinates.
+  - Lat/lon is converted to image (x%, y%) at render time using the map's bounds.
 """
 
 import base64
@@ -12,6 +12,12 @@ import os
 
 _MAP_PATH = os.path.join(os.path.dirname(__file__), "india_map", "india_map.png")
 _MAP_B64: str | None = None
+
+# India map bounds (set in generate_state_maps_geo.py → plot_india)
+_INDIA_LON_MIN = 67
+_INDIA_LON_MAX = 98
+_INDIA_LAT_MIN = 6
+_INDIA_LAT_MAX = 38
 
 
 def _get_map_b64() -> str | None:
@@ -27,251 +33,265 @@ def _get_map_b64() -> str | None:
     return _MAP_B64
 
 
-# ── Location coordinates as (x%, y%) on the 512x640 map image ──
-# These are approximate positions calibrated to the AI-generated map.
-# x% = horizontal (0=left, 100=right), y% = vertical (0=top, 100=bottom)
+def _latlon_to_india_pct(lat: float, lon: float) -> tuple[float, float]:
+    """Convert lat/lon to (x%, y%) on the India map image."""
+    x_pct = ((lon - _INDIA_LON_MIN) / (_INDIA_LON_MAX - _INDIA_LON_MIN)) * 100
+    y_pct = ((_INDIA_LAT_MAX - lat) / (_INDIA_LAT_MAX - _INDIA_LAT_MIN)) * 100
+    x_pct = max(2, min(98, x_pct))
+    y_pct = max(2, min(98, y_pct))
+    return (round(x_pct, 1), round(y_pct, 1))
+
+
+# ══════════════════════════════════════════════════════════════════
+# REAL LAT/LON COORDINATES — (latitude, longitude)
+# All positions are actual geographic coordinates.
+# ══════════════════════════════════════════════════════════════════
 
 LOCATIONS: dict[str, tuple[float, float]] = {
     # ── Major Cities ──
-    "New Delhi":        (38, 28),
-    "Delhi":            (38, 28),
-    "Mumbai":           (22, 52),
-    "Kolkata":          (62, 44),
-    "Chennai":          (50, 70),
-    "Bengaluru":        (42, 70),
-    "Bangalore":        (42, 70),
-    "Hyderabad":        (44, 58),
-    "Ahmedabad":        (22, 40),
-    "Pune":             (26, 55),
-    "Jaipur":           (30, 32),
-    "Lucknow":          (47, 32),
-    "Chandigarh":       (34, 22),
-    "Bhopal":           (36, 42),
-    "Patna":            (55, 34),
-    "Thiruvananthapuram":(38, 82),
-    "Kochi":            (36, 76),
-    "Bhubaneswar":      (56, 50),
-    "Guwahati":         (72, 32),
-    "Srinagar":         (32, 12),
-    "Shimla":           (35, 20),
-    "Dehradun":         (38, 22),
-    "Ranchi":           (56, 42),
-    "Raipur":           (48, 48),
-    "Indore":           (30, 44),
-    "Varanasi":         (50, 36),
-    "Agra":             (40, 32),
-    "Amritsar":         (30, 20),
-    "Coimbatore":       (42, 74),
-    "Visakhapatnam":    (54, 56),
-    "Mysuru":           (40, 72),
-    "Mysore":           (40, 72),
-    "Madurai":          (44, 78),
-    "Nagpur":           (40, 48),
-    "Jodhpur":          (24, 34),
-    "Udaipur":          (25, 38),
-    "Goa":              (26, 62),
-    "Panaji":           (26, 62),
-    "Imphal":           (78, 36),
-    "Gangtok":          (64, 30),
-    "Shillong":         (72, 34),
-    "Itanagar":         (76, 28),
-    "Kohima":           (78, 34),
-    "Aizawl":           (76, 38),
-    "Agartala":         (74, 38),
-    "Port Blair":       (76, 72),
-    "Dispur":           (72, 32),
+    "New Delhi":        (28.61, 77.21),
+    "Delhi":            (28.65, 77.23),
+    "Mumbai":           (19.08, 72.88),
+    "Kolkata":          (22.57, 88.36),
+    "Chennai":          (13.08, 80.27),
+    "Bengaluru":        (12.97, 77.59),
+    "Bangalore":        (12.97, 77.59),
+    "Hyderabad":        (17.38, 78.49),
+    "Ahmedabad":        (23.02, 72.57),
+    "Pune":             (18.52, 73.86),
+    "Jaipur":           (26.91, 75.79),
+    "Lucknow":          (26.85, 80.95),
+    "Chandigarh":       (30.73, 76.78),
+    "Bhopal":           (23.26, 77.41),
+    "Patna":            (25.61, 85.14),
+    "Thiruvananthapuram": (8.52, 76.94),
+    "Kochi":            (9.93, 76.27),
+    "Bhubaneswar":      (20.30, 85.82),
+    "Guwahati":         (26.14, 91.74),
+    "Srinagar":         (34.08, 74.80),
+    "Shimla":           (31.10, 77.17),
+    "Dehradun":         (30.32, 78.03),
+    "Ranchi":           (23.34, 85.31),
+    "Raipur":           (21.25, 81.63),
+    "Indore":           (22.72, 75.86),
+    "Varanasi":         (25.32, 83.01),
+    "Agra":             (27.18, 78.02),
+    "Amritsar":         (31.63, 74.87),
+    "Coimbatore":       (11.00, 76.96),
+    "Visakhapatnam":    (17.69, 83.22),
+    "Mysuru":           (12.30, 76.65),
+    "Mysore":           (12.30, 76.65),
+    "Madurai":          (9.92, 78.12),
+    "Nagpur":           (21.15, 79.09),
+    "Jodhpur":          (26.29, 73.02),
+    "Udaipur":          (24.59, 73.68),
+    "Goa":              (15.50, 73.83),
+    "Panaji":           (15.50, 73.83),
+    "Imphal":           (24.82, 93.95),
+    "Gangtok":          (27.33, 88.61),
+    "Shillong":         (25.57, 91.88),
+    "Itanagar":         (27.10, 93.62),
+    "Kohima":           (25.67, 94.12),
+    "Aizawl":           (23.73, 92.72),
+    "Agartala":         (23.83, 91.28),
+    "Port Blair":       (11.67, 92.73),
+    "Dispur":           (26.14, 91.79),
 
-    # ── States (center-ish positions) ──
-    "Rajasthan":        (24, 34),
-    "Maharashtra":      (28, 54),
-    "Karnataka":        (38, 68),
-    "Tamil Nadu":       (44, 76),
-    "Kerala":           (36, 78),
-    "Gujarat":          (18, 40),
-    "Uttar Pradesh":    (44, 34),
-    "Madhya Pradesh":   (36, 44),
-    "Bihar":            (56, 36),
-    "West Bengal":      (62, 42),
-    "Odisha":           (54, 50),
-    "Andhra Pradesh":   (48, 62),
-    "Telangana":        (44, 58),
-    "Punjab":           (30, 22),
-    "Haryana":          (34, 26),
-    "Uttarakhand":      (38, 22),
-    "Himachal Pradesh": (34, 18),
-    "Jammu and Kashmir":(30, 12),
-    "Jharkhand":        (56, 42),
-    "Chhattisgarh":     (48, 48),
-    "Assam":            (72, 32),
-    "Goa":              (26, 62),
-    "Meghalaya":        (70, 34),
-    "Tripura":          (74, 38),
-    "Manipur":          (78, 36),
-    "Mizoram":          (76, 38),
-    "Nagaland":         (78, 34),
-    "Arunachal Pradesh":(76, 26),
-    "Sikkim":           (64, 30),
-
-    # ── Rivers ──
-    "Ganga":            (50, 34),
-    "Ganges":           (50, 34),
-    "Yamuna":           (40, 30),
-    "Brahmaputra":      (72, 30),
-    "Godavari":         (46, 56),
-    "Krishna":          (42, 62),
-    "Narmada":          (30, 44),
-    "Kaveri":           (42, 72),
-    "Cauvery":          (42, 72),
-    "Tapti":            (28, 48),
-    "Mahanadi":         (52, 48),
-    "Sutlej":           (32, 20),
-    "Indus":            (26, 14),
-    "Chambal":          (32, 38),
-    "Tungabhadra":      (40, 64),
-    "Sabarmati":        (20, 40),
-
-    # ── South Indian Rivers ──
-    "Vaigai":           (46, 78),
-    "Periyar":          (36, 76),
-    "Pamba":            (38, 80),
-    "Bharathappuzha":   (36, 76),
-    "Nila":             (36, 76),
-    "Chaliyar":         (34, 74),
-    "Pennar":           (48, 64),
-    "Chitravathi":      (44, 64),
-    "Hemavathi":        (40, 70),
-    "Kabini":           (40, 72),
-    "Arkavathi":        (42, 70),
-    "Nethravathi":      (36, 72),
-    "Sharavathi":       (34, 68),
-    "Moyar":            (40, 74),
-    "Amaravathi":       (42, 74),
-    "Tamiraparani":     (44, 82),
-    "Bhavani":          (42, 74),
-
-    # ── Mountains & Ranges ──
-    "Himalayas":        (42, 16),
-    "Western Ghats":    (30, 66),
-    "Eastern Ghats":    (50, 64),
-    "Aravalli":         (26, 34),
-    "Vindhya":          (36, 42),
-    "Satpura":          (32, 44),
-    "Nilgiri":          (40, 74),
-    "Mount Everest":    (60, 26),
-    "Kanchenjunga":     (64, 28),
-    "K2":               (28, 8),
-
-    # ── Seas & Coasts ──
-    "Arabian Sea":      (10, 58),
-    "Bay of Bengal":    (68, 58),
-    "Indian Ocean":     (44, 90),
-    "Lakshadweep Sea":  (28, 76),
-    "Andaman Sea":      (80, 66),
-
-    # ── Historical & Famous Places ──
-    "Taj Mahal":        (40, 32),
-    "Red Fort":         (38, 28),
-    "Qutub Minar":      (38, 28),
-    "Gateway of India":  (22, 52),
-    "Hampi":            (38, 64),
-    "Konark":           (56, 50),
-    "Khajuraho":        (42, 40),
-    "Ajanta":           (30, 52),
-    "Ellora":           (30, 52),
-    "Sanchi":           (36, 42),
-    "Meenakshi Temple": (44, 78),
-    "Golden Temple":    (30, 20),
-    "Hawa Mahal":       (30, 32),
-    "Charminar":        (44, 58),
-    "Victoria Memorial":(62, 44),
-    "Jallianwala Bagh": (30, 20),
-    "Sabarmati Ashram": (20, 40),
-    "Dandi":            (18, 46),
+    # ── States (approximate center positions) ──
+    "Rajasthan":        (26.50, 73.80),
+    "Maharashtra":      (19.50, 76.00),
+    "Karnataka":        (15.00, 76.00),
+    "Tamil Nadu":       (11.00, 78.50),
+    "Kerala":           (10.50, 76.20),
+    "Gujarat":          (22.30, 71.80),
+    "Uttar Pradesh":    (27.00, 81.00),
+    "Madhya Pradesh":   (23.50, 78.50),
+    "Bihar":            (25.80, 85.80),
+    "West Bengal":      (24.00, 87.80),
+    "Odisha":           (20.50, 84.50),
+    "Andhra Pradesh":   (16.00, 80.50),
+    "Telangana":        (17.80, 79.30),
+    "Punjab":           (31.00, 75.50),
+    "Haryana":          (29.00, 76.00),
+    "Uttarakhand":      (30.00, 79.30),
+    "Himachal Pradesh": (31.80, 77.30),
+    "Jammu and Kashmir": (33.70, 75.10),
+    "Jharkhand":        (23.60, 85.50),
+    "Chhattisgarh":     (21.50, 82.30),
+    "Assam":            (26.20, 92.90),
+    "Meghalaya":        (25.50, 91.30),
+    "Tripura":          (23.75, 91.75),
+    "Manipur":          (24.80, 93.90),
+    "Mizoram":          (23.30, 92.85),
+    "Nagaland":         (26.00, 94.50),
+    "Arunachal Pradesh": (28.00, 94.50),
+    "Sikkim":           (27.50, 88.50),
 
     # ── Union Territories ──
-    "Andaman and Nicobar Islands": (76, 72),
-    "Andaman and Nicobar": (76, 72),
-    "Chandigarh":       (34, 22),
-    "Dadra and Nagar Haveli and Daman and Diu": (18, 46),
-    "Daman and Diu":    (18, 46),
-    "Dadra and Nagar Haveli": (18, 46),
-    "Delhi":            (38, 28),
-    "NCT of Delhi":     (38, 28),
-    "Ladakh":           (28, 8),
-    "Lakshadweep":      (22, 80),
-    "Puducherry":       (52, 72),
-    "Pondicherry":      (52, 72),
+    "Andaman and Nicobar Islands": (11.67, 92.73),
+    "Andaman and Nicobar": (11.67, 92.73),
+    "Dadra and Nagar Haveli and Daman and Diu": (20.40, 73.00),
+    "Daman and Diu":    (20.40, 73.00),
+    "Dadra and Nagar Haveli": (20.40, 73.00),
+    "NCT of Delhi":     (28.61, 77.21),
+    "Ladakh":           (34.16, 77.58),
+    "Lakshadweep":      (10.57, 72.64),
+    "Puducherry":       (11.93, 79.83),
+    "Pondicherry":      (11.93, 79.83),
+
+    # ── Rivers ──
+    "Ganga":            (25.50, 81.50),
+    "Ganges":           (25.50, 81.50),
+    "Yamuna":           (27.50, 77.70),
+    "Brahmaputra":      (26.50, 93.00),
+    "Godavari":         (17.50, 81.00),
+    "Krishna":          (16.50, 78.50),
+    "Narmada":          (22.50, 76.00),
+    "Kaveri":           (11.50, 77.50),
+    "Cauvery":          (11.50, 77.50),
+    "Tapti":            (21.20, 75.50),
+    "Mahanadi":         (20.50, 84.50),
+    "Sutlej":           (31.00, 76.00),
+    "Indus":            (34.00, 76.00),
+    "Chambal":          (26.00, 76.50),
+    "Tungabhadra":      (15.50, 76.50),
+    "Sabarmati":        (23.06, 72.58),
+
+    # ── South Indian Rivers ──
+    "Vaigai":           (9.90, 78.10),
+    "Periyar":          (9.47, 77.17),
+    "Pamba":            (9.40, 76.70),
+    "Bharathappuzha":   (10.78, 75.95),
+    "Nila":             (10.78, 75.95),
+    "Chaliyar":         (11.17, 75.90),
+    "Pennar":           (14.60, 79.80),
+    "Chitravathi":      (14.50, 77.60),
+    "Hemavathi":        (13.10, 76.05),
+    "Kabini":           (11.95, 76.30),
+    "Arkavathi":        (12.90, 77.50),
+    "Nethravathi":      (12.80, 75.00),
+    "Sharavathi":       (14.10, 74.80),
+    "Moyar":            (11.55, 76.55),
+    "Amaravathi":       (11.00, 78.20),
+    "Tamiraparani":     (8.75, 77.70),
+    "Bhavani":          (11.45, 77.68),
+
+    # ── Mountains & Ranges ──
+    "Himalayas":        (30.50, 79.00),
+    "Western Ghats":    (13.00, 75.50),
+    "Eastern Ghats":    (15.50, 80.00),
+    "Aravalli":         (25.00, 73.50),
+    "Vindhya":          (23.50, 78.00),
+    "Satpura":          (22.50, 77.50),
+    "Nilgiri":          (11.40, 76.70),
+    "Mount Everest":    (27.99, 86.93),
+    "Kanchenjunga":     (27.70, 88.15),
+    "K2":               (35.88, 76.51),
+
+    # ── Seas & Coasts ──
+    "Arabian Sea":      (15.00, 68.50),
+    "Bay of Bengal":    (15.00, 88.00),
+    "Indian Ocean":     (8.00, 78.00),
+    "Lakshadweep Sea":  (10.00, 73.00),
+    "Andaman Sea":      (12.00, 93.50),
+
+    # ── Historical & Famous Places ──
+    "Taj Mahal":        (27.17, 78.04),
+    "Red Fort":         (28.66, 77.24),
+    "Qutub Minar":      (28.52, 77.19),
+    "Gateway of India":  (18.92, 72.83),
+    "Hampi":            (15.33, 76.46),
+    "Konark":           (19.88, 86.09),
+    "Khajuraho":        (24.85, 79.92),
+    "Ajanta":           (20.55, 75.70),
+    "Ellora":           (20.02, 75.18),
+    "Sanchi":           (23.48, 77.74),
+    "Meenakshi Temple": (9.92, 78.12),
+    "Golden Temple":    (31.62, 74.88),
+    "Hawa Mahal":       (26.92, 75.83),
+    "Charminar":        (17.36, 78.47),
+    "Victoria Memorial": (22.54, 88.34),
+    "Jallianwala Bagh": (31.62, 74.88),
+    "Sabarmati Ashram": (23.06, 72.58),
+    "Dandi":            (20.92, 72.83),
 
     # ── National Monuments ──
-    "India Gate":           (38, 28),
-    "Sanchi Stupa":         (36, 42),
-    "Konark Sun Temple":    (56, 50),
-    "Brihadeeswarar Temple":(46, 74),
-    "Meenakshi Amman Temple":(44, 78),
-    "Ajanta Caves":         (30, 52),
-    "Ellora Caves":         (30, 52),
-    "Fatehpur Sikri":       (40, 32),
-    "Jantar Mantar":        (30, 32),
-    "Buland Darwaza":       (40, 32),
-    "Golconda Fort":        (44, 58),
-    "Mysore Palace":        (40, 72),
-    "Rashtrapati Bhavan":   (38, 28),
-    "Parliament House":     (38, 28),
-    "Cellular Jail":        (76, 72),
+    "India Gate":           (28.61, 77.23),
+    "Sanchi Stupa":         (23.48, 77.74),
+    "Konark Sun Temple":    (19.88, 86.09),
+    "Brihadeeswarar Temple": (10.78, 79.13),
+    "Meenakshi Amman Temple": (9.92, 78.12),
+    "Ajanta Caves":         (20.55, 75.70),
+    "Ellora Caves":         (20.02, 75.18),
+    "Fatehpur Sikri":       (27.09, 77.66),
+    "Jantar Mantar":        (26.92, 75.83),
+    "Buland Darwaza":       (27.09, 77.66),
+    "Golconda Fort":        (17.38, 78.40),
+    "Mysore Palace":        (12.30, 76.65),
+    "Rashtrapati Bhavan":   (28.62, 77.20),
+    "Parliament House":     (28.62, 77.21),
+    "Cellular Jail":        (11.69, 92.75),
 }
 
 
 def get_location_coords(location_name: str) -> tuple[float, float] | None:
-    """Look up coordinates for a location name (case-insensitive fuzzy match)."""
+    """Look up (x%, y%) image coordinates for a location on the India map."""
     if not location_name:
         return None
 
+    latlon = None
+
     # Exact match
     if location_name in LOCATIONS:
-        return LOCATIONS[location_name]
+        latlon = LOCATIONS[location_name]
+    else:
+        # Case-insensitive match
+        lower = location_name.lower().strip()
+        for key, coords in LOCATIONS.items():
+            if key.lower() == lower:
+                latlon = coords
+                break
+        if not latlon:
+            # Partial match
+            for key, coords in LOCATIONS.items():
+                if lower in key.lower() or key.lower() in lower:
+                    latlon = coords
+                    break
 
-    # Case-insensitive match
-    lower = location_name.lower().strip()
-    for key, coords in LOCATIONS.items():
-        if key.lower() == lower:
-            return coords
-
-    # Partial match (location name contains or is contained in a key)
-    for key, coords in LOCATIONS.items():
-        if lower in key.lower() or key.lower() in lower:
-            return coords
+    if latlon:
+        return _latlon_to_india_pct(latlon[0], latlon[1])
 
     return None
 
 
 # ── Permanent geographic features shown on every map render ──
-# Each: (label, x%, y%, color, icon)
+# Each: (label, lat, lon, color, icon)
 
 MAP_RIVERS = [
-    ("Ganga",       50, 34, "#2563eb", "〰️"),
-    ("Yamuna",      38, 30, "#2563eb", "〰️"),
-    ("Brahmaputra", 74, 30, "#2563eb", "〰️"),
-    ("Godavari",    46, 57, "#2563eb", "〰️"),
-    ("Krishna",     40, 63, "#2563eb", "〰️"),
-    ("Narmada",     28, 45, "#2563eb", "〰️"),
-    ("Kaveri",      40, 73, "#2563eb", "〰️"),
-    ("Tungabhadra", 38, 65, "#3b82f6", "〰️"),
-    ("Periyar",     34, 77, "#3b82f6", "〰️"),
-    ("Vaigai",      46, 78, "#3b82f6", "〰️"),
-    ("Pennar",      48, 64, "#3b82f6", "〰️"),
+    ("Ganga",       25.50, 81.50, "#2563eb", "〰️"),
+    ("Yamuna",      27.50, 77.70, "#2563eb", "〰️"),
+    ("Brahmaputra", 26.50, 93.00, "#2563eb", "〰️"),
+    ("Godavari",    17.50, 81.00, "#2563eb", "〰️"),
+    ("Krishna",     16.50, 78.50, "#2563eb", "〰️"),
+    ("Narmada",     22.50, 76.00, "#2563eb", "〰️"),
+    ("Kaveri",      11.50, 77.50, "#2563eb", "〰️"),
+    ("Tungabhadra", 15.50, 76.50, "#3b82f6", "〰️"),
+    ("Periyar",     9.47, 77.17, "#3b82f6", "〰️"),
+    ("Vaigai",      9.90, 78.10, "#3b82f6", "〰️"),
+    ("Pennar",      14.60, 79.80, "#3b82f6", "〰️"),
 ]
 
 MAP_MOUNTAINS = [
-    ("Himalayas",     42, 14, "#92400e", "▲"),
-    ("Western Ghats", 24, 67, "#92400e", "▲"),
-    ("Eastern Ghats", 52, 64, "#92400e", "▲"),
-    ("Aravalli",      24, 32, "#92400e", "▲"),
+    ("Himalayas",     30.50, 79.00, "#92400e", "▲"),
+    ("Western Ghats", 13.00, 75.50, "#92400e", "▲"),
+    ("Eastern Ghats", 15.50, 80.00, "#92400e", "▲"),
+    ("Aravalli",      25.00, 73.50, "#92400e", "▲"),
 ]
 
 MAP_SEAS = [
-    ("Arabian Sea",  8,  58, "#0891b2", "🌊"),
-    ("Bay of Bengal", 70, 58, "#0891b2", "🌊"),
-    ("Indian Ocean", 44, 92, "#0891b2", "🌊"),
+    ("Arabian Sea",  15.00, 68.50, "#0891b2", "🌊"),
+    ("Bay of Bengal", 15.00, 88.00, "#0891b2", "🌊"),
+    ("Indian Ocean", 8.00, 78.00, "#0891b2", "🌊"),
 ]
 
 
@@ -279,7 +299,8 @@ def _render_feature_labels() -> str:
     """Build HTML for all permanent geographic feature labels."""
     html_parts = []
 
-    for label, x, y, color, icon in MAP_RIVERS:
+    for label, lat, lon, color, icon in MAP_RIVERS:
+        x, y = _latlon_to_india_pct(lat, lon)
         html_parts.append(
             f'<div style="position:absolute;left:{x}%;top:{y}%;transform:translate(-50%,-50%);z-index:3;'
             f'font-size:0.5rem;font-weight:700;color:{color};white-space:nowrap;'
@@ -288,7 +309,8 @@ def _render_feature_labels() -> str:
             f'{icon} {label}</div>'
         )
 
-    for label, x, y, color, icon in MAP_MOUNTAINS:
+    for label, lat, lon, color, icon in MAP_MOUNTAINS:
+        x, y = _latlon_to_india_pct(lat, lon)
         html_parts.append(
             f'<div style="position:absolute;left:{x}%;top:{y}%;transform:translate(-50%,-50%);z-index:3;'
             f'font-size:0.5rem;font-weight:700;color:{color};white-space:nowrap;'
@@ -297,7 +319,8 @@ def _render_feature_labels() -> str:
             f'{icon} {label}</div>'
         )
 
-    for label, x, y, color, icon in MAP_SEAS:
+    for label, lat, lon, color, icon in MAP_SEAS:
+        x, y = _latlon_to_india_pct(lat, lon)
         html_parts.append(
             f'<div style="position:absolute;left:{x}%;top:{y}%;transform:translate(-50%,-50%);z-index:3;'
             f'font-size:0.55rem;font-weight:700;color:{color};white-space:nowrap;font-style:italic;'
@@ -328,7 +351,7 @@ def render_map_with_marker(location_name: str, label: str = "") -> str | None:
     feature_labels = _render_feature_labels()
 
     return f"""
-    <div style="position:relative;display:inline-block;width:100%;max-width:420px;margin:0.5rem auto;border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.12);">
+    <div style="position:relative;display:inline-block;width:100%;max-width:420px;margin:0.5rem auto;border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.12);background:white;">
         <img src="{map_b64}" style="width:100%;display:block;border-radius:20px;" />
         {feature_labels}
         <div style="position:absolute;left:{x}%;top:{y}%;transform:translate(-50%,-50%);z-index:10;">
