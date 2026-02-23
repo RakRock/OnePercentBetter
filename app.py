@@ -155,6 +155,9 @@ st.markdown("""
         background: #fffef5;
         border: 3px solid #e5e7eb;
         border-radius: 24px;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 2rem 1.5rem;
         text-align: center;
         margin: 0.75rem 0;
@@ -351,6 +354,8 @@ def select_activity(activity):
         st.session_state.current_page = "math_home"
     elif activity == "GK":
         st.session_state.current_page = "gk_home"
+    elif activity == "ArjunStories":
+        st.session_state.current_page = "arjun_stories_home"
 
 
 def start_story(story_id):
@@ -364,6 +369,12 @@ def start_story(story_id):
 
 def back_to_reading_home():
     st.session_state.current_page = "reading_home"
+    st.session_state.reading_state = None
+    st.session_state.quiz_answers = {}
+
+
+def back_to_arjun_stories():
+    st.session_state.current_page = "arjun_stories_home"
     st.session_state.reading_state = None
     st.session_state.quiz_answers = {}
     st.session_state.quiz_submitted = False
@@ -553,12 +564,16 @@ def render_user_dashboard():
 
         with act_col2:
             st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #9ca3af;">
-                <div style="font-size: 3rem;">🔮</div>
-                <h3 style="margin: 0.5rem 0;">More Coming Soon</h3>
-                <p style="color: #6b7280;">Stay tuned for new activities!</p>
+            <div class="score-card" style="border-top: 5px solid #6366f1;">
+                <div style="font-size: 3rem;">📖</div>
+                <h3 style="margin: 0.5rem 0;">Factual Stories</h3>
+                <p style="color: #6b7280;">Real events, real learning!</p>
             </div>
             """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("📖 Start Stories", key="btn_arjun_stories", use_container_width=True, type="primary"):
+                select_activity("ArjunStories")
+                st.rerun()
 
     elif name == "Sangeetha":
         st.markdown("### 🌸 Choose Your Activity")
@@ -752,11 +767,16 @@ def render_reading_story():
     color = story.get("color", "#667eea")
     in_quiz = page_idx >= total_pages
 
+    is_arjun_story = story_id and story_id.startswith("gen_arjun_")
+
     # Navigation bar
     col_nav1, col_nav_mid, col_nav2 = st.columns([1, 4, 1])
     with col_nav1:
         if st.button("← Books", key="back_stories"):
-            back_to_reading_home()
+            if is_arjun_story:
+                back_to_arjun_stories()
+            else:
+                back_to_reading_home()
             st.rerun()
     with col_nav_mid:
         if not in_quiz:
@@ -795,17 +815,38 @@ def render_reading_story():
         pg = pages[page_idx]
         img_path = rc.get_image_path(story_id, page_idx + 1)
 
-        st.markdown('<div class="story-page">', unsafe_allow_html=True)
+        st.markdown('<div class="story-page" style="display:flex;flex-direction:column;align-items:center;">', unsafe_allow_html=True)
 
         if os.path.exists(img_path):
-            st.image(img_path, width=512)
+            import base64 as _b64
+            with open(img_path, "rb") as _imgf:
+                _img_b64 = _b64.b64encode(_imgf.read()).decode()
+            _ext = os.path.splitext(img_path)[1].lstrip(".") or "png"
+            st.markdown(
+                f'<img src="data:image/{_ext};base64,{_img_b64}" '
+                f'style="max-width:512px;width:100%;border-radius:16px;margin:0 auto;display:block;" />',
+                unsafe_allow_html=True,
+            )
         else:
             fallback = pg.get("fallback_emoji", "📖")
             st.markdown(f'<div style="font-size:5rem;text-align:center;">{fallback}</div>', unsafe_allow_html=True)
 
+        is_long_text = len(pg['text']) > 120
+        if is_long_text:
+            text_style = (
+                "font-size:1.1rem;font-weight:400;color:#1f2937;line-height:1.8;"
+                "font-family:'Georgia','Times New Roman',serif;text-align:left;"
+                "max-width:560px;margin:0.8rem auto;padding:0 0.5rem;"
+            )
+        else:
+            text_style = (
+                "font-size:1.6rem;font-weight:600;color:#1f2937;line-height:1.5;"
+                "font-family:'Georgia','Times New Roman',serif;text-align:center;"
+            )
+
         st.markdown(f"""
-            <div class="story-page-text">{pg['text']}</div>
-            <div class="story-page-number">— page {page_idx + 1} —</div>
+            <div style="{text_style}">{pg['text']}</div>
+            <div class="story-page-number" style="text-align:center;">— page {page_idx + 1} —</div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -938,7 +979,10 @@ def render_reading_story():
                     st.rerun()
             with col_r2:
                 if st.button("📚 More Books", key="more_stories", use_container_width=True, type="primary"):
-                    back_to_reading_home()
+                    if is_arjun_story:
+                        back_to_arjun_stories()
+                    else:
+                        back_to_reading_home()
                     st.rerun()
             with col_r3:
                 if st.button("🏠 Dashboard", key="go_dashboard", use_container_width=True):
@@ -1355,6 +1399,211 @@ def render_generate_story():
 
 
 # ──────────────────────────────────────────────
+# PAGE: Arjun's Factual Stories Home
+# ──────────────────────────────────────────────
+def render_arjun_stories_home():
+    import arjun_story_context as asc
+    import reading_content as rc
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="arjun_stories_back"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown("""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">📖 Factual Stories</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">Real events, real learning — pick a topic and dive in!</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    if not _CAN_GK:
+        st.warning("Story generation requires an XAI_API_KEY. Please set it in `.streamlit/secrets.toml` or as an environment variable.")
+        return
+
+    # ── Previously read stories ──
+    generated = rc._load_generated_stories()
+    arjun_stories = {k: v for k, v in generated.items() if k.startswith("gen_arjun_")}
+
+    if arjun_stories:
+        st.markdown("### 📚 Your Stories")
+        story_cols = st.columns(min(len(arjun_stories), 4), gap="medium")
+        for idx, (sid, story) in enumerate(sorted(arjun_stories.items(), reverse=True)):
+            with story_cols[idx % min(len(arjun_stories), 4)]:
+                cat = story.get("topic_category", "General")
+                cat_emoji = asc.TOPIC_EMOJIS.get(cat, "📖")
+                color = story.get("color", "#6366f1")
+                st.markdown(f"""
+                <div class="score-card" style="border-top: 4px solid {color};text-align:center;padding:1rem;">
+                    <div style="font-size:2.5rem;">{story.get('cover_emoji', '📖')}</div>
+                    <h4 style="margin:0.3rem 0;font-size:0.95rem;">{story['title']}</h4>
+                    <p style="color:#9ca3af;font-size:0.75rem;margin:0;">{cat_emoji} {cat}</p>
+                </div>
+                """, unsafe_allow_html=True)
+                if st.button(f"📖 Read", key=f"read_{sid}", use_container_width=True):
+                    start_story(sid)
+                    st.rerun()
+        st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    # ── Topic picker ──
+    st.markdown("### ✨ Generate a New Story")
+    st.markdown('<p style="color:#6b7280;">Choose a category, pick a topic, write your own — or let us surprise you!</p>', unsafe_allow_html=True)
+
+    all_topics = asc.get_all_topics()
+
+    # Top action row: Random + Write Your Own
+    col_random, col_custom = st.columns(2, gap="medium")
+    with col_random:
+        if st.button("🎲 Surprise Me — Random Topic!", key="arjun_random_topic", use_container_width=True, type="primary"):
+            cat, topic = asc.get_random_topic()
+            _generate_and_launch_arjun_story(topic, user)
+            return
+    with col_custom:
+        pass
+
+    st.markdown("")
+
+    # ── Write your own topic ──
+    with st.expander("✏️ Write Your Own Topic", expanded=False):
+        custom_topic = st.text_input(
+            "What real-world topic should the story be about?",
+            placeholder="e.g. Winter Olympics 2026, Mars Rover, The Panama Canal",
+            key="arjun_custom_topic",
+        )
+        col_gen_custom, _ = st.columns([2, 3])
+        with col_gen_custom:
+            if st.button("✨ Generate Story", key="arjun_gen_custom", use_container_width=True, type="primary", disabled=(not custom_topic)):
+                _generate_and_launch_arjun_story(custom_topic, user)
+                return
+
+    st.markdown("")
+
+    # Build tab list: static categories + Current Events
+    tab_labels = [f"{asc.TOPIC_EMOJIS.get(cat, '📖')} {cat}" for cat in all_topics]
+    tab_labels.append(f"{asc.TOPIC_EMOJIS.get('Current Events', '📰')} Current Events")
+
+    tabs = st.tabs(tab_labels)
+
+    # Static category tabs
+    for tab, (category, topics) in zip(tabs[:-1], all_topics.items()):
+        with tab:
+            topic_cols = st.columns(2, gap="medium")
+            for idx, topic in enumerate(topics):
+                with topic_cols[idx % 2]:
+                    short_title = topic.split("—")[0].strip() if "—" in topic else topic
+                    subtitle = topic.split("—")[1].strip() if "—" in topic else ""
+                    st.markdown(f"""
+                    <div style="background:#f8f9ff;border-radius:12px;padding:0.8rem 1rem;
+                                margin-bottom:0.5rem;border-left:4px solid #6366f1;">
+                        <div style="font-weight:600;font-size:0.95rem;color:#1f2937;">{short_title}</div>
+                        {"<div style='color:#6b7280;font-size:0.8rem;'>" + subtitle + "</div>" if subtitle else ""}
+                    </div>
+                    """, unsafe_allow_html=True)
+                    if st.button("📝 Generate", key=f"gen_{category}_{idx}", use_container_width=True):
+                        _generate_and_launch_arjun_story(topic, user)
+                        return
+
+    # Current Events tab (fetched from Grok)
+    with tabs[-1]:
+        if "arjun_current_events" not in st.session_state:
+            st.session_state.arjun_current_events = None
+
+        if st.session_state.arjun_current_events is None:
+            if st.button("🔄 Load Current Events", key="load_current_events", use_container_width=True, type="primary"):
+                with st.spinner("Asking AI for kid-friendly current events..."):
+                    events = asc.fetch_current_events(_XAI_API_KEY)
+                    st.session_state.arjun_current_events = events if events else []
+                    st.rerun()
+            st.markdown("""
+            <div style="text-align:center;padding:2rem;color:#9ca3af;">
+                <div style="font-size:3rem;">📰</div>
+                <p>Click above to load fresh, kid-appropriate current event topics!</p>
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            events = st.session_state.arjun_current_events
+            if events:
+                col_refresh, _ = st.columns([2, 5])
+                with col_refresh:
+                    if st.button("🔄 Refresh", key="refresh_current_events"):
+                        st.session_state.arjun_current_events = None
+                        st.rerun()
+                st.markdown("")
+                topic_cols = st.columns(2, gap="medium")
+                for idx, topic in enumerate(events):
+                    with topic_cols[idx % 2]:
+                        short_title = topic.split("—")[0].strip() if "—" in topic else topic
+                        subtitle = topic.split("—")[1].strip() if "—" in topic else ""
+                        st.markdown(f"""
+                        <div style="background:#fffbeb;border-radius:12px;padding:0.8rem 1rem;
+                                    margin-bottom:0.5rem;border-left:4px solid #f59e0b;">
+                            <div style="font-weight:600;font-size:0.95rem;color:#1f2937;">{short_title}</div>
+                            {"<div style='color:#6b7280;font-size:0.8rem;'>" + subtitle + "</div>" if subtitle else ""}
+                        </div>
+                        """, unsafe_allow_html=True)
+                        if st.button("📝 Generate", key=f"gen_current_{idx}", use_container_width=True):
+                            _generate_and_launch_arjun_story(topic, user)
+                            return
+            else:
+                st.info("No current events found. Try refreshing!")
+                if st.button("🔄 Try Again", key="retry_current_events"):
+                    st.session_state.arjun_current_events = None
+                    st.rerun()
+
+
+def _generate_and_launch_arjun_story(topic: str, user):
+    """Generate a story for Arjun, save it, and navigate to reading it."""
+    import arjun_story_context as asc
+    import reading_content as rc
+
+    with st.status("Creating your story...", expanded=True) as status:
+        st.write(f"📝 Writing a story about: **{topic}**")
+        try:
+            story = asc.generate_arjun_story(_XAI_API_KEY, topic=topic)
+        except Exception as exc:
+            status.update(label="Story generation failed", state="error")
+            st.error(f"Could not generate story: {exc}")
+            return
+
+        st.write(f"📖 **{story['title']}** — {len(story['pages'])} pages, {len(story['questions'])} questions")
+
+        st.write("💾 Saving story...")
+        rc.save_generated_story(story)
+
+        # Generate illustrations if HF token available
+        if _CAN_GENERATE:
+            import generate_images as gen_img
+            st.write("🎨 Drawing illustrations...")
+            progress_bar = st.progress(0)
+
+            def _update_progress(page_num, total, msg):
+                progress_bar.progress(page_num / total, text=msg)
+
+            gen, skip, fail = gen_img.generate_images_for_story(
+                story, _HF_TOKEN, progress_callback=_update_progress
+            )
+            progress_bar.progress(1.0, text="All illustrations done!")
+            st.write(f"✅ Created {gen} illustrations" + (f" ({fail} failed)" if fail else ""))
+        else:
+            st.write("🖼️ Illustrations will use emoji fallbacks (set HF_TOKEN for AI images)")
+
+        status.update(label="Story created!", state="complete")
+
+    # Save the generated story ID so it survives reruns
+    st.session_state.arjun_last_story_id = story["id"]
+    st.session_state.arjun_last_story_title = story["title"]
+
+    # Navigate directly to the story
+    start_story(story["id"])
+    st.rerun()
+
+
+# ──────────────────────────────────────────────
 # PAGE: GK Home — Today's Progress
 # ──────────────────────────────────────────────
 def render_gk_home():
@@ -1734,6 +1983,8 @@ elif page == "math_home":
     render_math_home()
 elif page == "math_practice":
     render_math_practice()
+elif page == "arjun_stories_home":
+    render_arjun_stories_home()
 elif page == "gk_home":
     render_gk_home()
 elif page == "gk_practice":
