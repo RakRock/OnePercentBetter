@@ -356,6 +356,8 @@ def select_activity(activity):
         st.session_state.current_page = "gk_home"
     elif activity == "ArjunStories":
         st.session_state.current_page = "arjun_stories_home"
+    elif activity == "Civics":
+        st.session_state.current_page = "civics_home"
 
 
 def start_story(story_id):
@@ -423,6 +425,23 @@ def back_to_gk_home():
     st.session_state.gk_current = 0
     st.session_state.gk_answers = []
     st.session_state.gk_chat_histories = {}
+
+
+def start_civics_quiz(questions):
+    st.session_state.current_page = "civics_practice"
+    st.session_state.civics_questions = questions
+    st.session_state.civics_current = 0
+    st.session_state.civics_answers = []
+    st.session_state.civics_start_time = time.time()
+    st.session_state.civics_last_feedback = None
+
+
+def back_to_civics_home():
+    st.session_state.current_page = "civics_home"
+    st.session_state.civics_questions = []
+    st.session_state.civics_current = 0
+    st.session_state.civics_answers = []
+    st.session_state.civics_last_feedback = None
 
 
 # ──────────────────────────────────────────────
@@ -622,12 +641,16 @@ def render_user_dashboard():
 
         with act_col2:
             st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #9ca3af;">
-                <div style="font-size: 3rem;">🔮</div>
-                <h3 style="margin: 0.5rem 0;">More Coming Soon</h3>
-                <p style="color: #6b7280;">Stay tuned for new activities!</p>
+            <div class="score-card" style="border-top: 5px solid #dc2626;">
+                <div style="font-size: 3rem;">🏛️</div>
+                <h3 style="margin: 0.5rem 0;">US Civics Test</h3>
+                <p style="color: #6b7280;">Practice for the citizenship exam</p>
             </div>
             """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🏛️ Start Civics", key="btn_civics_r", use_container_width=True, type="primary"):
+                select_activity("Civics")
+                st.rerun()
 
     else:
         st.markdown(f"### 🚧 {name}'s activities are coming soon!")
@@ -1965,6 +1988,344 @@ def render_gk_practice():
 
 
 # ──────────────────────────────────────────────
+# PAGE: Civics Test Home
+# ──────────────────────────────────────────────
+def render_civics_home():
+    import civics_content as civics
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="civics_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">🏛️ {name}'s US Civics Test</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">Practice the official USCIS 100 Civics Questions</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    today = datetime.now().strftime("%Y-%m-%d")
+    today_civics = db.get_today_scores(user["id"], activity_type="Civics") if user else []
+    total_civics = db.get_scores_history(user["id"], activity_type="Civics", days=365) if user else []
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">📅 {today}</div>'
+            f'<div class="score-label">Today\'s Date</div></div>',
+            unsafe_allow_html=True,
+        )
+    with col2:
+        if today_civics:
+            best = max(s["score"] for s in today_civics)
+            st.markdown(
+                f'<div class="score-card"><div class="score-number">🎯 {best}%</div>'
+                f'<div class="score-label">Today\'s Best Score</div></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                '<div class="score-card"><div class="score-number">🎯 —</div>'
+                '<div class="score-label">Today\'s Score</div></div>',
+                unsafe_allow_html=True,
+            )
+    with col3:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">⭐ {len(total_civics)}</div>'
+            f'<div class="score-label">Total Tests</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    if today_civics:
+        best = max(s["score"] for s in today_civics)
+        st.markdown(f"""
+        <div style="text-align:center; padding:1rem; background:#dbeafe; border-radius:16px;
+             border:2px solid #3b82f6; margin-bottom:1rem;">
+            <span style="font-size:2rem;">🎉</span>
+            <p style="margin:0.3rem 0; font-size:1.1rem; color:#1e40af;">
+                <strong>{len(today_civics)} test{'s' if len(today_civics) > 1 else ''} completed today!</strong>
+                &nbsp; Best score: <strong>{best}%</strong>
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="text-align:center; padding:1.5rem;">
+        <div style="font-size: 4rem;">🇺🇸</div>
+        <h3 style="margin: 0.5rem 0;">{"Ready for another practice test?" if today_civics else "Ready to practice?"}</h3>
+        <p style="color: #6b7280;">
+            10 questions from the official USCIS question bank.<br>
+            You need <strong>6 out of 10</strong> correct to pass — just like the real test!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Category filter
+    st.markdown("")
+    category_choice = st.selectbox(
+        "Focus on a category (optional)",
+        ["All Categories"] + [
+            f"{civics.CATEGORIES[k]['emoji']} {civics.CATEGORIES[k]['name']}"
+            for k in civics.CATEGORIES
+        ],
+        key="civics_category_filter",
+    )
+
+    selected_cat = None
+    if category_choice != "All Categories":
+        for k, v in civics.CATEGORIES.items():
+            if v["name"] in category_choice:
+                selected_cat = k
+                break
+
+    _, col_btn, _ = st.columns([1, 2, 1])
+    with col_btn:
+        btn_label = "🚀 New Practice Test" if today_civics else "🚀 Start Practice Test"
+        if st.button(btn_label, key="civics_start", use_container_width=True, type="primary"):
+            questions = civics.generate_quiz(num_questions=10, category=selected_cat)
+            start_civics_quiz(questions)
+            st.rerun()
+
+    # Show category breakdown
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+    st.markdown("### 📖 Question Bank Overview")
+    st.markdown(
+        '<p style="color:#6b7280;margin-bottom:1rem;">'
+        "The official USCIS Civics Test covers 100 questions across 9 categories.</p>",
+        unsafe_allow_html=True,
+    )
+
+    cat_cols = st.columns(3, gap="medium")
+    for idx, (cat_id, cat_info) in enumerate(civics.CATEGORIES.items()):
+        cat_count = len([q for q in civics.QUESTION_BANK if q["category"] == cat_id])
+        cat_color = civics.CATEGORY_COLORS.get(cat_id, "#6b7280")
+        with cat_cols[idx % 3]:
+            st.markdown(f"""
+            <div style="padding:0.8rem;border-radius:12px;border-left:4px solid {cat_color};
+                 background:{cat_color}10;margin-bottom:0.8rem;">
+                <span style="font-size:1.3rem;">{cat_info['emoji']}</span>
+                <strong style="color:{cat_color};"> {cat_info['name']}</strong>
+                <br><span style="color:#6b7280;font-size:0.85rem;">{cat_count} questions (Q{cat_info['questions']})</span>
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown("")
+    st.markdown(
+        '<p style="text-align:center;color:#9ca3af;font-size:0.85rem;">'
+        "⭐ 20 of the 100 questions are designated for the 65/20 special consideration rule.</p>",
+        unsafe_allow_html=True,
+    )
+
+
+# ──────────────────────────────────────────────
+# PAGE: Civics Practice — Question by Question
+# ──────────────────────────────────────────────
+def render_civics_practice():
+    import civics_content as civics
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    questions = st.session_state.civics_questions
+    current = st.session_state.civics_current
+    total = len(questions)
+    is_done = current >= total
+    passing = civics.get_passing_score(total)
+
+    col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
+    with col_nav1:
+        if st.button("← Civics Home", key="civics_back_home"):
+            back_to_civics_home()
+            st.rerun()
+    with col_nav_mid:
+        if not is_done:
+            st.markdown(f"""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                Question {current + 1} of {total}
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.markdown("""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                🎉 Test Complete!
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+        <h1 style="color: #dc2626; margin: 0.3rem 0; font-size: 2.2rem;">🏛️ US Civics Practice Test</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    progress = (current / total) if total > 0 else 0
+    st.markdown(f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,#dc2626,#ef4444);border-radius:10px;transition:width 0.4s ease;"></div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    if not is_done:
+        q = questions[current]
+        cat_info = civics.CATEGORIES.get(q["category"], {})
+        cat_color = civics.CATEGORY_COLORS.get(q["category"], "#6b7280")
+        cat_emoji = cat_info.get("emoji", "📚")
+        cat_name = cat_info.get("name", "General")
+
+        st.markdown(f"""
+        <div class="gk-question-box">
+            <span class="gk-topic-badge" style="background:{cat_color}20;color:{cat_color};">{cat_emoji} {cat_name}</span>
+            <div class="gk-question-text" style="margin-top:0.8rem;">Q{q['id']}. {q['question']}</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        last_feedback = st.session_state.get("civics_last_feedback")
+
+        if last_feedback and last_feedback["idx"] == current:
+            if last_feedback["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer" style="text-align:center;">
+                    ✅ <strong>Correct!</strong> 🎉
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                all_valid = last_feedback.get("all_correct", [])
+                also_accepted = ""
+                if len(all_valid) > 1:
+                    also_accepted = (
+                        "<br><span style='color:#6b7280;font-size:0.85rem;'>"
+                        f"Also accepted: {', '.join(all_valid)}</span>"
+                    )
+                st.markdown(f"""
+                <div class="wrong-answer" style="text-align:center;">
+                    Not quite! You picked <strong>{last_feedback['picked']}</strong>.
+                    <br>The answer is <strong>{last_feedback['correct_val']}</strong> 💪
+                    {also_accepted}
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("")
+            _, col_next, _ = st.columns([1, 2, 1])
+            with col_next:
+                if current < total - 1:
+                    if st.button("Next Question ➡️", key="civics_next", use_container_width=True, type="primary"):
+                        st.session_state.civics_current += 1
+                        st.session_state.civics_last_feedback = None
+                        st.rerun()
+                else:
+                    if st.button("🎉 See Results!", key="civics_results", use_container_width=True, type="primary"):
+                        st.session_state.civics_current = total
+                        st.session_state.civics_last_feedback = None
+                        st.rerun()
+        else:
+            ans_col1, ans_col2 = st.columns(2, gap="medium")
+            for i, opt in enumerate(q["options"]):
+                col = ans_col1 if i % 2 == 0 else ans_col2
+                with col:
+                    label = f"{chr(65 + i)}. {opt}"
+                    if st.button(label, key=f"civics_opt_{current}_{i}", use_container_width=True, type="primary"):
+                        is_correct = (i == q["answer"])
+                        st.session_state.civics_answers.append({
+                            "picked": opt,
+                            "correct_val": q["options"][q["answer"]],
+                            "correct": is_correct,
+                        })
+                        st.session_state.civics_last_feedback = {
+                            "idx": current,
+                            "picked": opt,
+                            "correct_val": q["options"][q["answer"]],
+                            "correct": is_correct,
+                            "all_correct": q.get("all_correct", []),
+                        }
+                        st.rerun()
+
+    else:
+        answers = st.session_state.civics_answers
+        correct_count = sum(1 for a in answers if a["correct"])
+        score_pct = int((correct_count / total) * 100) if total > 0 else 0
+        time_spent = int(time.time() - st.session_state.civics_start_time) if st.session_state.civics_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+        passed = correct_count >= passing
+
+        if user:
+            db.save_activity_score(
+                user["id"], "Civics", "Practice Test",
+                score_pct, 100, f"{correct_count}/{total} correct",
+            )
+
+        if passed:
+            if score_pct == 100:
+                res_emoji, message, res_color = "🏆", "Perfect score! You're ready for the real test!", "#10b981"
+            elif score_pct >= 80:
+                res_emoji, message, res_color = "🌟", "Excellent! You passed with flying colors!", "#3b82f6"
+            else:
+                res_emoji, message, res_color = "✅", f"You passed! {correct_count}/{total} correct (need {passing}).", "#10b981"
+        else:
+            res_emoji, message, res_color = "💪", f"You need {passing} correct to pass. Keep practicing!", "#ef4444"
+
+        pass_text = "PASSED ✅" if passed else "NOT YET ❌"
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:2rem;background:{res_color}10;border-radius:20px;border:3px solid {res_color};margin-top:1rem;">
+            <div style="font-size:5rem;">{res_emoji}</div>
+            <h2 style="color:{res_color};margin:0.5rem 0;font-size:2rem;">{correct_count} out of {total} correct!</h2>
+            <p style="font-size:1.3rem;font-weight:700;color:{res_color};">{pass_text}</p>
+            <p style="font-size:1.1rem;color:#4b5563;">{message}</p>
+            <p style="color:#9ca3af;">⏱️ Time: {minutes}m {seconds}s &nbsp;|&nbsp; Passing: {passing}/{total}</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+        st.markdown("### 📋 Review Answers")
+        for idx, (q, ans) in enumerate(zip(questions, answers)):
+            cat_info = civics.CATEGORIES.get(q["category"], {})
+            cat_emoji = cat_info.get("emoji", "📚")
+            cat_name = cat_info.get("name", "General")
+            all_valid = q.get("all_correct", [])
+            also_line = ""
+            if len(all_valid) > 1 and not ans["correct"]:
+                also_line = f"<br><span style='color:#6b7280;font-size:0.85rem;'>Also accepted: {', '.join(all_valid)}</span>"
+
+            if ans["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer">
+                    <span class="gk-topic-badge">{cat_emoji} {cat_name}</span><br>
+                    <strong>Q{q['id']}:</strong> {q['question']}<br>
+                    ✅ <strong>{ans['correct_val']}</strong>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer">
+                    <span class="gk-topic-badge">{cat_emoji} {cat_name}</span><br>
+                    <strong>Q{q['id']}:</strong> {q['question']}<br>
+                    ❌ You said: <strong>{ans['picked']}</strong> &nbsp; ✅ Answer: <strong>{ans['correct_val']}</strong>
+                    {also_line}
+                </div>
+                """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_r1, col_r2 = st.columns(2)
+        with col_r1:
+            if st.button("🏛️ Civics Home", key="civics_home_btn", use_container_width=True, type="primary"):
+                back_to_civics_home()
+                st.rerun()
+        with col_r2:
+            if st.button("🏠 Dashboard", key="civics_dashboard", use_container_width=True):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.civics_questions = []
+                st.session_state.civics_current = 0
+                st.session_state.civics_answers = []
+                st.rerun()
+
+
+# ──────────────────────────────────────────────
 # Main Router
 # ──────────────────────────────────────────────
 page = st.session_state.current_page
@@ -1989,5 +2350,9 @@ elif page == "gk_home":
     render_gk_home()
 elif page == "gk_practice":
     render_gk_practice()
+elif page == "civics_home":
+    render_civics_home()
+elif page == "civics_practice":
+    render_civics_practice()
 else:
     render_home()
