@@ -358,6 +358,8 @@ def select_activity(activity):
         st.session_state.current_page = "arjun_stories_home"
     elif activity == "Civics":
         st.session_state.current_page = "civics_home"
+    elif activity == "SightWords":
+        st.session_state.current_page = "sight_words_home"
 
 
 def start_story(story_id):
@@ -444,6 +446,22 @@ def back_to_civics_home():
     st.session_state.civics_last_feedback = None
 
 
+def start_sight_words(level_id):
+    import sight_words_content as sw
+    questions = sw.generate_round(level_id)
+    st.session_state.current_page = "sight_words_practice"
+    st.session_state.sw_level = level_id
+    st.session_state.sw_questions = questions
+    st.session_state.sw_current = 0
+    st.session_state.sw_start_time = time.time()
+
+
+def back_to_sight_words_home():
+    st.session_state.current_page = "sight_words_home"
+    st.session_state.sw_questions = []
+    st.session_state.sw_current = 0
+
+
 # ──────────────────────────────────────────────
 # PAGE: Home (User Selection)
 # ──────────────────────────────────────────────
@@ -479,7 +497,7 @@ def render_home():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button(f"Start as {name}", key=f"btn_{name}", use_container_width=True, type="primary"):
+            if st.button(f"Start as {name}", key=f"btn_{name}", width="stretch", type="primary"):
                 select_user(name)
                 st.rerun()
 
@@ -537,7 +555,7 @@ def render_user_dashboard():
         st.markdown("### 📚 Choose Your Activity")
         st.markdown("")
 
-        act_col1, act_col2 = st.columns(2, gap="large")
+        act_col1, act_col2, act_col3 = st.columns(3, gap="large")
         with act_col1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #10b981;">
@@ -547,7 +565,7 @@ def render_user_dashboard():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("📖 Start Reading", key="btn_reading", use_container_width=True, type="primary"):
+            if st.button("📖 Start Reading", key="btn_reading", width="stretch", type="primary"):
                 select_activity("Reading")
                 st.rerun()
 
@@ -560,8 +578,21 @@ def render_user_dashboard():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("🧮 Start Math", key="btn_math", use_container_width=True, type="primary"):
+            if st.button("🧮 Start Math", key="btn_math", width="stretch", type="primary"):
                 select_activity("Math")
+                st.rerun()
+
+        with act_col3:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #f59e0b;">
+                <div style="font-size: 3rem;">👁️</div>
+                <h3 style="margin: 0.5rem 0;">Sight Words</h3>
+                <p style="color: #6b7280;">Learn to read common words</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("👁️ Sight Words", key="btn_sight_words", width="stretch", type="primary"):
+                select_activity("SightWords")
                 st.rerun()
     elif name == "Arjun":
         st.markdown("### 📚 Choose Your Activity")
@@ -577,7 +608,7 @@ def render_user_dashboard():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("🧠 Start GK", key="btn_gk", use_container_width=True, type="primary"):
+            if st.button("🧠 Start GK", key="btn_gk", width="stretch", type="primary"):
                 select_activity("GK")
                 st.rerun()
 
@@ -590,7 +621,7 @@ def render_user_dashboard():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("📖 Start Stories", key="btn_arjun_stories", use_container_width=True, type="primary"):
+            if st.button("📖 Start Stories", key="btn_arjun_stories", width="stretch", type="primary"):
                 select_activity("ArjunStories")
                 st.rerun()
 
@@ -608,7 +639,7 @@ def render_user_dashboard():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("🧠 Start GK", key="btn_gk_s", use_container_width=True, type="primary"):
+            if st.button("🧠 Start GK", key="btn_gk_s", width="stretch", type="primary"):
                 select_activity("GK")
                 st.rerun()
 
@@ -635,7 +666,7 @@ def render_user_dashboard():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("🧠 Start GK", key="btn_gk_r", use_container_width=True, type="primary"):
+            if st.button("🧠 Start GK", key="btn_gk_r", width="stretch", type="primary"):
                 select_activity("GK")
                 st.rerun()
 
@@ -648,7 +679,7 @@ def render_user_dashboard():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("🏛️ Start Civics", key="btn_civics_r", use_container_width=True, type="primary"):
+            if st.button("🏛️ Start Civics", key="btn_civics_r", width="stretch", type="primary"):
                 select_activity("Civics")
                 st.rerun()
 
@@ -748,7 +779,7 @@ def render_reading_home():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button(f"📖 Read: {story['title']}", key=f"story_{story['id']}", use_container_width=True, type="primary"):
+            if st.button(f"📖 Read: {story['title']}", key=f"story_{story['id']}", width="stretch", type="primary"):
                 start_story(story["id"])
                 st.rerun()
             st.markdown("")
@@ -765,7 +796,7 @@ def render_reading_home():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("✨ Create New Story", key="btn_generate", use_container_width=True, type="secondary"):
+            if st.button("✨ Create New Story", key="btn_generate", width="stretch", type="secondary"):
                 go_to_generate()
                 st.rerun()
             st.markdown("")
@@ -879,16 +910,16 @@ def render_reading_story():
         col_prev, col_mid, col_next = st.columns([1, 2, 1])
         with col_prev:
             if page_idx > 0:
-                if st.button("⬅️ Back", key="prev_page", use_container_width=True):
+                if st.button("⬅️ Back", key="prev_page", width="stretch"):
                     st.session_state.story_page_idx -= 1
                     st.rerun()
         with col_next:
             if page_idx < total_pages - 1:
-                if st.button("Next ➡️", key="next_page", use_container_width=True, type="primary"):
+                if st.button("Next ➡️", key="next_page", width="stretch", type="primary"):
                     st.session_state.story_page_idx += 1
                     st.rerun()
             else:
-                if st.button("📝 Take Quiz!", key="go_quiz", use_container_width=True, type="primary"):
+                if st.button("📝 Take Quiz!", key="go_quiz", width="stretch", type="primary"):
                     st.session_state.story_page_idx = total_pages
                     st.rerun()
 
@@ -945,11 +976,11 @@ def render_reading_story():
         if not quiz_submitted:
             col_back, col_submit, _ = st.columns([1, 2, 1])
             with col_back:
-                if st.button("⬅️ Re-read Story", key="back_to_pages", use_container_width=True):
+                if st.button("⬅️ Re-read Story", key="back_to_pages", width="stretch"):
                     st.session_state.story_page_idx = 0
                     st.rerun()
             with col_submit:
-                if st.button("✅ Submit Answers!", key="submit_quiz", use_container_width=True, type="primary"):
+                if st.button("✅ Submit Answers!", key="submit_quiz", width="stretch", type="primary"):
                     st.session_state.quiz_submitted = True
 
                     correct = sum(
@@ -997,18 +1028,18 @@ def render_reading_story():
             st.markdown("")
             col_r1, col_r2, col_r3 = st.columns(3)
             with col_r1:
-                if st.button("📖 Read Again", key="read_again", use_container_width=True):
+                if st.button("📖 Read Again", key="read_again", width="stretch"):
                     start_story(story_id)
                     st.rerun()
             with col_r2:
-                if st.button("📚 More Books", key="more_stories", use_container_width=True, type="primary"):
+                if st.button("📚 More Books", key="more_stories", width="stretch", type="primary"):
                     if is_arjun_story:
                         back_to_arjun_stories()
                     else:
                         back_to_reading_home()
                     st.rerun()
             with col_r3:
-                if st.button("🏠 Dashboard", key="go_dashboard", use_container_width=True):
+                if st.button("🏠 Dashboard", key="go_dashboard", width="stretch"):
                     st.session_state.current_page = "user_dashboard"
                     st.session_state.reading_state = None
                     st.session_state.quiz_answers = {}
@@ -1081,7 +1112,7 @@ def render_math_home():
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button(f"▶️ Play {level['title']}", key=f"math_{level['id']}", use_container_width=True, type="primary"):
+            if st.button(f"▶️ Play {level['title']}", key=f"math_{level['id']}", width="stretch", type="primary"):
                 start_math_level(level["id"])
                 st.rerun()
             st.markdown("")
@@ -1210,12 +1241,12 @@ def render_math_practice():
             _, col_next, _ = st.columns([1, 2, 1])
             with col_next:
                 if current < total - 1:
-                    if st.button("Next Question ➡️", key="math_next", use_container_width=True, type="primary"):
+                    if st.button("Next Question ➡️", key="math_next", width="stretch", type="primary"):
                         st.session_state.math_current += 1
                         st.session_state.math_last_feedback = None
                         st.rerun()
                 else:
-                    if st.button("🎉 See Results!", key="math_results", use_container_width=True, type="primary"):
+                    if st.button("🎉 See Results!", key="math_results", width="stretch", type="primary"):
                         st.session_state.math_current = total
                         st.session_state.math_last_feedback = None
                         st.rerun()
@@ -1224,7 +1255,7 @@ def render_math_practice():
             answer_cols = st.columns(3, gap="medium")
             for i, opt in enumerate(problem["options"]):
                 with answer_cols[i]:
-                    if st.button(str(opt), key=f"math_opt_{current}_{i}", use_container_width=True, type="primary"):
+                    if st.button(str(opt), key=f"math_opt_{current}_{i}", width="stretch", type="primary"):
                         is_correct = (i == problem["answer"])
                         st.session_state.math_answers.append({
                             "picked": opt,
@@ -1291,15 +1322,15 @@ def render_math_practice():
         st.markdown("")
         col_r1, col_r2, col_r3 = st.columns(3)
         with col_r1:
-            if st.button(f"🔄 Play {level['title']} Again", key="math_again", use_container_width=True):
+            if st.button(f"🔄 Play {level['title']} Again", key="math_again", width="stretch"):
                 start_math_level(level_id)
                 st.rerun()
         with col_r2:
-            if st.button("🧮 More Levels", key="math_more", use_container_width=True, type="primary"):
+            if st.button("🧮 More Levels", key="math_more", width="stretch", type="primary"):
                 back_to_math_home()
                 st.rerun()
         with col_r3:
-            if st.button("🏠 Dashboard", key="math_dashboard", use_container_width=True):
+            if st.button("🏠 Dashboard", key="math_dashboard", width="stretch"):
                 st.session_state.current_page = "user_dashboard"
                 st.session_state.math_level = None
                 st.session_state.math_problems = []
@@ -1340,12 +1371,12 @@ def render_generate_story():
         generate_clicked = st.button(
             "✨ Generate Story",
             key="btn_do_generate",
-            use_container_width=True,
+            width="stretch",
             type="primary",
             disabled=(not topic),
         )
     with col2:
-        if st.button("← Cancel", key="btn_cancel_gen", use_container_width=True):
+        if st.button("← Cancel", key="btn_cancel_gen", width="stretch"):
             back_to_reading_home()
             st.rerun()
 
@@ -1390,11 +1421,11 @@ def render_generate_story():
 
         col_r1, col_r2, _ = st.columns([2, 2, 3])
         with col_r1:
-            if st.button(f"📖 Read: {story['title']}", key="read_new_story", use_container_width=True, type="primary"):
+            if st.button(f"📖 Read: {story['title']}", key="read_new_story", width="stretch", type="primary"):
                 start_story(story["id"])
                 st.rerun()
         with col_r2:
-            if st.button("📚 Back to Books", key="back_books_after_gen", use_container_width=True):
+            if st.button("📚 Back to Books", key="back_books_after_gen", width="stretch"):
                 back_to_reading_home()
                 st.rerun()
 
@@ -1468,7 +1499,7 @@ def render_arjun_stories_home():
                     <p style="color:#9ca3af;font-size:0.75rem;margin:0;">{cat_emoji} {cat}</p>
                 </div>
                 """, unsafe_allow_html=True)
-                if st.button(f"📖 Read", key=f"read_{sid}", use_container_width=True):
+                if st.button(f"📖 Read", key=f"read_{sid}", width="stretch"):
                     start_story(sid)
                     st.rerun()
         st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
@@ -1482,7 +1513,7 @@ def render_arjun_stories_home():
     # Top action row: Random + Write Your Own
     col_random, col_custom = st.columns(2, gap="medium")
     with col_random:
-        if st.button("🎲 Surprise Me — Random Topic!", key="arjun_random_topic", use_container_width=True, type="primary"):
+        if st.button("🎲 Surprise Me — Random Topic!", key="arjun_random_topic", width="stretch", type="primary"):
             cat, topic = asc.get_random_topic()
             _generate_and_launch_arjun_story(topic, user)
             return
@@ -1500,7 +1531,7 @@ def render_arjun_stories_home():
         )
         col_gen_custom, _ = st.columns([2, 3])
         with col_gen_custom:
-            if st.button("✨ Generate Story", key="arjun_gen_custom", use_container_width=True, type="primary", disabled=(not custom_topic)):
+            if st.button("✨ Generate Story", key="arjun_gen_custom", width="stretch", type="primary", disabled=(not custom_topic)):
                 _generate_and_launch_arjun_story(custom_topic, user)
                 return
 
@@ -1527,7 +1558,7 @@ def render_arjun_stories_home():
                         {"<div style='color:#6b7280;font-size:0.8rem;'>" + subtitle + "</div>" if subtitle else ""}
                     </div>
                     """, unsafe_allow_html=True)
-                    if st.button("📝 Generate", key=f"gen_{category}_{idx}", use_container_width=True):
+                    if st.button("📝 Generate", key=f"gen_{category}_{idx}", width="stretch"):
                         _generate_and_launch_arjun_story(topic, user)
                         return
 
@@ -1537,7 +1568,7 @@ def render_arjun_stories_home():
             st.session_state.arjun_current_events = None
 
         if st.session_state.arjun_current_events is None:
-            if st.button("🔄 Load Current Events", key="load_current_events", use_container_width=True, type="primary"):
+            if st.button("🔄 Load Current Events", key="load_current_events", width="stretch", type="primary"):
                 with st.spinner("Asking AI for kid-friendly current events..."):
                     events = asc.fetch_current_events(_XAI_API_KEY)
                     st.session_state.arjun_current_events = events if events else []
@@ -1569,7 +1600,7 @@ def render_arjun_stories_home():
                             {"<div style='color:#6b7280;font-size:0.8rem;'>" + subtitle + "</div>" if subtitle else ""}
                         </div>
                         """, unsafe_allow_html=True)
-                        if st.button("📝 Generate", key=f"gen_current_{idx}", use_container_width=True):
+                        if st.button("📝 Generate", key=f"gen_current_{idx}", width="stretch"):
                             _generate_and_launch_arjun_story(topic, user)
                             return
             else:
@@ -1701,9 +1732,9 @@ def render_gk_home():
     if today_gk and cached_json:
         col_new, col_review = st.columns(2, gap="medium")
         with col_new:
-            new_quiz = st.button("🚀 New Quiz", key="gk_new", use_container_width=True, type="primary")
+            new_quiz = st.button("🚀 New Quiz", key="gk_new", width="stretch", type="primary")
         with col_review:
-            if st.button("📝 Review Last Quiz", key="gk_review", use_container_width=True):
+            if st.button("📝 Review Last Quiz", key="gk_review", width="stretch"):
                 questions = _json.loads(cached_json)
                 start_gk_quiz(questions)
                 st.rerun()
@@ -1711,7 +1742,7 @@ def render_gk_home():
         _, col_btn, _ = st.columns([1, 2, 1])
         with col_btn:
             btn_label = "🚀 New Quiz" if today_gk else "🚀 Start Today's Quiz"
-            new_quiz = st.button(btn_label, key="gk_start", use_container_width=True, type="primary")
+            new_quiz = st.button(btn_label, key="gk_start", width="stretch", type="primary")
 
     if new_quiz:
         with st.spinner("Generating fresh questions..."):
@@ -1856,12 +1887,12 @@ def render_gk_practice():
             _, col_next, _ = st.columns([1, 2, 1])
             with col_next:
                 if current < total - 1:
-                    if st.button("Next Question ➡️", key="gk_next", use_container_width=True, type="primary"):
+                    if st.button("Next Question ➡️", key="gk_next", width="stretch", type="primary"):
                         st.session_state.gk_current += 1
                         st.session_state.gk_last_feedback = None
                         st.rerun()
                 else:
-                    if st.button("🎉 See Results!", key="gk_results", use_container_width=True, type="primary"):
+                    if st.button("🎉 See Results!", key="gk_results", width="stretch", type="primary"):
                         st.session_state.gk_current = total
                         st.session_state.gk_last_feedback = None
                         st.rerun()
@@ -1872,7 +1903,7 @@ def render_gk_practice():
                 col = ans_col1 if i % 2 == 0 else ans_col2
                 with col:
                     label = f"{chr(65 + i)}. {opt}"
-                    if st.button(label, key=f"gk_opt_{current}_{i}", use_container_width=True, type="primary"):
+                    if st.button(label, key=f"gk_opt_{current}_{i}", width="stretch", type="primary"):
                         is_correct = (i == q["answer"])
                         st.session_state.gk_answers.append({
                             "picked": opt,
@@ -1974,16 +2005,297 @@ def render_gk_practice():
         st.markdown("")
         col_r1, col_r2 = st.columns(2)
         with col_r1:
-            if st.button("🧠 GK Home", key="gk_home_btn", use_container_width=True, type="primary"):
+            if st.button("🧠 GK Home", key="gk_home_btn", width="stretch", type="primary"):
                 back_to_gk_home()
                 st.rerun()
         with col_r2:
-            if st.button("🏠 Dashboard", key="gk_dashboard", use_container_width=True):
+            if st.button("🏠 Dashboard", key="gk_dashboard", width="stretch"):
                 st.session_state.current_page = "user_dashboard"
                 st.session_state.gk_questions = []
                 st.session_state.gk_current = 0
                 st.session_state.gk_answers = []
                 st.session_state.gk_chat_histories = {}
+                st.rerun()
+
+
+# ──────────────────────────────────────────────
+# PAGE: Sight Words Home — Pick a Level
+# ──────────────────────────────────────────────
+def render_sight_words_home():
+    import sight_words_content as sw
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="sw_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">👁️ {name}'s Sight Words</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">Learn to read words by sight — pick a level!</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    today_sw = db.get_today_scores(user["id"], activity_type="SightWords") if user else []
+    total_sw = db.get_scores_history(user["id"], activity_type="SightWords", days=365) if user else []
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">📅 {len(today_sw)}</div>'
+            f'<div class="score-label">Rounds Today</div></div>',
+            unsafe_allow_html=True,
+        )
+    with col2:
+        if today_sw:
+            avg_pct = sum(s["score"] for s in today_sw) / len(today_sw)
+            st.markdown(
+                f'<div class="score-card"><div class="score-number">🎯 {avg_pct:.0f}%</div>'
+                f'<div class="score-label">Avg Score Today</div></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                '<div class="score-card"><div class="score-number">🎯 —</div>'
+                '<div class="score-label">Avg Score Today</div></div>',
+                unsafe_allow_html=True,
+            )
+    with col3:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">⭐ {len(total_sw)}</div>'
+            f'<div class="score-label">Total Rounds</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    cols = st.columns(3, gap="large")
+    for i, lvl in enumerate(sw.LEVELS):
+        word_count = len(sw.WORD_BANK.get(lvl["id"], []))
+        with cols[i]:
+            st.markdown(f"""
+            <div class="math-level-card" style="background: linear-gradient(135deg, {lvl['color']}, {lvl['color']}cc);">
+                <div style="font-size: 2.8rem;">{lvl['emoji']}</div>
+                <div style="font-size: 1.15rem; font-weight: 700; color: white; margin-top: 0.4rem;
+                     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
+                    {lvl['title']}
+                </div>
+                <div style="font-size: 0.85rem; color: rgba(255,255,255,0.9); margin-top: 0.2rem;">
+                    {lvl['subtitle']}
+                </div>
+                <div style="font-size: 0.75rem; color: rgba(255,255,255,0.75); margin-top: 0.2rem;">
+                    {word_count} words · {lvl['words_per_round']} per round
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button(
+                f"▶️ Play {lvl['title']}", key=f"sw_{lvl['id']}",
+                width="stretch", type="primary",
+            ):
+                start_sight_words(lvl["id"])
+                st.rerun()
+            st.markdown("")
+
+
+# ──────────────────────────────────────────────
+# PAGE: Sight Words Practice — Find the Word
+# ──────────────────────────────────────────────
+def render_sight_words_practice():
+    import sight_words_content as sw
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    level_id = st.session_state.sw_level
+    level = sw.get_level(level_id)
+    questions = st.session_state.sw_questions
+    current = st.session_state.sw_current
+    total = len(questions)
+    color = level["color"] if level else "#f59e0b"
+    is_done = current >= total
+
+    col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
+    with col_nav1:
+        if st.button("← Levels", key="sw_back_levels"):
+            back_to_sight_words_home()
+            st.rerun()
+    with col_nav_mid:
+        if not is_done:
+            st.markdown(f"""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                Word {current + 1} of {total}
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.markdown("""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                🎉 All Done!
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+        <h1 style="color: {color}; margin: 0.3rem 0; font-size: 2.2rem;">
+            {level['emoji']} {level['title']} Sight Words
+        </h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    progress = (current / total) if total > 0 else 0
+    st.markdown(f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,{color},{color}bb);
+             border-radius:10px;transition:width 0.4s ease;"></div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    if not is_done:
+        q = questions[current]
+        word_color = q["color"]
+
+        st.markdown(f"""
+        <div style="text-align:center; padding:2.5rem 1rem; background:linear-gradient(135deg, {word_color}15, {word_color}08);
+             border-radius:28px; border:3px solid {word_color}40; margin-bottom:1.5rem;">
+            <div style="font-size:3rem; margin-bottom:0.5rem;">{q['emoji']}</div>
+            <div style="font-size:1.1rem; color:#6b7280; margin-bottom:0.5rem; font-weight:600;">
+                Read this word:
+            </div>
+            <div style="font-size:5.5rem; font-weight:900; color:{word_color}; font-family:'Comic Sans MS','Chalkboard SE',
+                 'Segoe Print',cursive; letter-spacing:0.15em; text-shadow:3px 3px 6px {word_color}30;
+                 line-height:1.1; padding:0.5rem 0;">
+                {q['word']}
+            </div>
+            <div style="font-size:1.15rem; color:#6b7280; margin-top:1rem; font-style:italic;">
+                "{q['sentence']}"
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+        _, col_next, _ = st.columns([1, 2, 1])
+        with col_next:
+            if current < total - 1:
+                if st.button("Next Word ➡️", key="sw_next", width="stretch", type="primary"):
+                    st.session_state.sw_current += 1
+                    st.rerun()
+            else:
+                if st.button("🎉 All Done!", key="sw_done", width="stretch", type="primary"):
+                    st.session_state.sw_current = total
+                    st.rerun()
+
+    else:
+        time_spent = int(time.time() - st.session_state.sw_start_time) if st.session_state.sw_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+
+        if user:
+            lvl_title = level["title"] if level else "Sight Words"
+            db.save_activity_score(
+                user["id"], "SightWords", lvl_title,
+                100, 100, f"{total} words practiced",
+            )
+
+        _fn_css = (
+            "<style>"
+            "@keyframes fn-launch{"
+            "0%{transform:translateY(0) scale(.6) rotate(0deg);opacity:0}"
+            "10%{opacity:1}"
+            "50%{transform:translateY(-55vh) scale(1.3) rotate(180deg);opacity:1}"
+            "75%{transform:translateY(-70vh) scale(1.6) rotate(270deg);opacity:.9}"
+            "90%{transform:translateY(-80vh) scale(2.2) rotate(340deg);opacity:.5}"
+            "100%{transform:translateY(-90vh) scale(2.5) rotate(360deg);opacity:0}}"
+            "@keyframes fn-rain{"
+            "0%{transform:translateY(-100px) rotate(0deg);opacity:1}"
+            "100%{transform:translateY(110vh) rotate(720deg);opacity:.3}}"
+            ".fn-arena{position:fixed;top:0;left:0;width:100%;height:100%;"
+            "pointer-events:none;z-index:9999;overflow:hidden}"
+            ".fn-item{position:absolute;bottom:-60px;font-size:3.2rem;"
+            "animation:fn-launch 3.5s ease-out forwards}"
+            ".fn-drop{position:absolute;top:-80px;font-size:2.6rem;"
+            "animation:fn-rain 4s linear forwards}"
+            "</style>"
+        )
+        st.markdown(_fn_css, unsafe_allow_html=True)
+
+        _fn_items = [
+            ("fn-item", "3%",  "0s",     "3.5rem", "\U0001f349"),
+            ("fn-item", "10%", "0.15s",  "2.8rem", "\U0001f388"),
+            ("fn-item", "17%", "0.3s",   "3rem",   "\U0001f34e"),
+            ("fn-item", "24%", "0.1s",   "3.5rem", "\U0001f34c"),
+            ("fn-item", "31%", "0.45s",  "2.8rem", "\U0001f388"),
+            ("fn-item", "38%", "0.2s",   "3.2rem", "\U0001f353"),
+            ("fn-item", "45%", "0.5s",   "3.5rem", "\U0001f95d"),
+            ("fn-item", "52%", "0.05s",  "3rem",   "\U0001f34a"),
+            ("fn-item", "59%", "0.35s",  "2.8rem", "\U0001f388"),
+            ("fn-item", "66%", "0.25s",  "3.5rem", "\U0001f347"),
+            ("fn-item", "73%", "0.55s",  "3rem",   "\U0001f351"),
+            ("fn-item", "80%", "0.4s",   "2.8rem", "\U0001f388"),
+            ("fn-item", "87%", "0.12s",  "3.2rem", "\U0001fad0"),
+            ("fn-item", "94%", "0.6s",   "3.5rem", "\U0001f352"),
+            ("fn-drop", "5%",  "1.5s",   "2.5rem", "\U0001f349"),
+            ("fn-drop", "15%", "1.8s",   "2rem",   "\U0001f388"),
+            ("fn-drop", "25%", "2.0s",   "2.5rem", "\U0001f34e"),
+            ("fn-drop", "35%", "1.6s",   "2.2rem", "\U0001f34c"),
+            ("fn-drop", "45%", "2.2s",   "2.5rem", "\U0001f353"),
+            ("fn-drop", "55%", "1.7s",   "2rem",   "\U0001f388"),
+            ("fn-drop", "65%", "2.4s",   "2.5rem", "\U0001f95d"),
+            ("fn-drop", "75%", "1.9s",   "2.2rem", "\U0001f34a"),
+            ("fn-drop", "85%", "2.1s",   "2.5rem", "\U0001f347"),
+            ("fn-drop", "95%", "2.3s",   "2rem",   "\U0001f388"),
+        ]
+        _fn_spans = "".join(
+            f'<span class="{cls}" style="left:{l};animation-delay:{d};font-size:{s};">{e}</span>'
+            for cls, l, d, s, e in _fn_items
+        )
+        st.markdown(f'<div class="fn-arena">{_fn_spans}</div>', unsafe_allow_html=True)
+
+        st.markdown(f"""
+        <div style="text-align:center; padding:2rem; background:#10b98110;
+             border-radius:20px; border:3px solid #10b981; margin-top:1rem;">
+            <div style="font-size:5rem;">🌟</div>
+            <h2 style="color:#10b981; margin:0.5rem 0; font-size:2rem;">
+                Great job, {name}!
+            </h2>
+            <p style="font-size:1.2rem; color:#4b5563;">
+                You practiced <strong>{total} words</strong> today!
+            </p>
+            <p style="color:#9ca3af;">⏱️ Time: {minutes}m {seconds}s</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+        st.markdown("### 📝 Words You Practiced")
+
+        review_cols = st.columns(2, gap="medium")
+        for idx, q in enumerate(questions):
+            with review_cols[idx % 2]:
+                st.markdown(f"""
+                <div style="padding:0.8rem; border-radius:12px; background:#f0fdf4;
+                     border-left:4px solid {q['color']}; margin-bottom:0.6rem;">
+                    <span style="font-size:1.5rem;">{q['emoji']}</span>
+                    <strong style="font-size:1.3rem; color:#065f46; margin-left:0.3rem;">{q['word']}</strong>
+                    <span style="float:right; color:#6b7280; font-size:0.85rem; font-style:italic;">
+                        {q['sentence']}
+                    </span>
+                </div>
+                """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_r1, col_r2 = st.columns(2)
+        with col_r1:
+            if st.button("👁️ Sight Words Home", key="sw_home_btn", width="stretch", type="primary"):
+                back_to_sight_words_home()
+                st.rerun()
+        with col_r2:
+            if st.button("🏠 Dashboard", key="sw_dashboard", width="stretch"):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.sw_questions = []
+                st.session_state.sw_current = 0
+                st.session_state.sw_answers = []
                 st.rerun()
 
 
@@ -2089,7 +2401,7 @@ def render_civics_home():
     _, col_btn, _ = st.columns([1, 2, 1])
     with col_btn:
         btn_label = "🚀 New Practice Test" if today_civics else "🚀 Start Practice Test"
-        if st.button(btn_label, key="civics_start", use_container_width=True, type="primary"):
+        if st.button(btn_label, key="civics_start", width="stretch", type="primary"):
             questions = civics.generate_quiz(num_questions=10, category=selected_cat)
             start_civics_quiz(questions)
             st.rerun()
@@ -2214,12 +2526,12 @@ def render_civics_practice():
             _, col_next, _ = st.columns([1, 2, 1])
             with col_next:
                 if current < total - 1:
-                    if st.button("Next Question ➡️", key="civics_next", use_container_width=True, type="primary"):
+                    if st.button("Next Question ➡️", key="civics_next", width="stretch", type="primary"):
                         st.session_state.civics_current += 1
                         st.session_state.civics_last_feedback = None
                         st.rerun()
                 else:
-                    if st.button("🎉 See Results!", key="civics_results", use_container_width=True, type="primary"):
+                    if st.button("🎉 See Results!", key="civics_results", width="stretch", type="primary"):
                         st.session_state.civics_current = total
                         st.session_state.civics_last_feedback = None
                         st.rerun()
@@ -2229,7 +2541,7 @@ def render_civics_practice():
                 col = ans_col1 if i % 2 == 0 else ans_col2
                 with col:
                     label = f"{chr(65 + i)}. {opt}"
-                    if st.button(label, key=f"civics_opt_{current}_{i}", use_container_width=True, type="primary"):
+                    if st.button(label, key=f"civics_opt_{current}_{i}", width="stretch", type="primary"):
                         is_correct = (i == q["answer"])
                         st.session_state.civics_answers.append({
                             "picked": opt,
@@ -2313,11 +2625,11 @@ def render_civics_practice():
         st.markdown("")
         col_r1, col_r2 = st.columns(2)
         with col_r1:
-            if st.button("🏛️ Civics Home", key="civics_home_btn", use_container_width=True, type="primary"):
+            if st.button("🏛️ Civics Home", key="civics_home_btn", width="stretch", type="primary"):
                 back_to_civics_home()
                 st.rerun()
         with col_r2:
-            if st.button("🏠 Dashboard", key="civics_dashboard", use_container_width=True):
+            if st.button("🏠 Dashboard", key="civics_dashboard", width="stretch"):
                 st.session_state.current_page = "user_dashboard"
                 st.session_state.civics_questions = []
                 st.session_state.civics_current = 0
@@ -2350,6 +2662,10 @@ elif page == "gk_home":
     render_gk_home()
 elif page == "gk_practice":
     render_gk_practice()
+elif page == "sight_words_home":
+    render_sight_words_home()
+elif page == "sight_words_practice":
+    render_sight_words_practice()
 elif page == "civics_home":
     render_civics_home()
 elif page == "civics_practice":
