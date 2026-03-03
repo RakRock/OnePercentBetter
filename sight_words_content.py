@@ -1,11 +1,11 @@
 """
 Sight Words Practice for Krish (ages 4-6)
 
-Based on the Dolch Sight Word lists — the most widely used sight word
-curriculum in early childhood education.  Three progressive levels:
-  Pre-K  (Dolch Pre-Primer)  — 40 words
-  Kindergarten (Dolch Primer) — 52 words
-  First Grade  (Dolch Grade 1) — 41 words
+Based on Dolch and Fry sight word lists — the most widely used sight word
+curricula in early childhood education.  Three progressive levels:
+  Pre-K  (Dolch Pre-Primer + Fry extras) — 75 words
+  Kindergarten (Dolch Primer + Fry extras) — 90 words
+  First Grade  (Dolch Grade 1)            — 41 words
 
 Each word includes a kid-friendly example sentence and a visual emoji cue.
 """
@@ -19,7 +19,7 @@ LEVELS = [
         "subtitle": "First sight words",
         "emoji": "🌟",
         "color": "#10b981",
-        "words_per_round": 8,
+        "words_per_round": 10,
     },
     {
         "id": "kinder",
@@ -27,7 +27,7 @@ LEVELS = [
         "subtitle": "Growing your words",
         "emoji": "🌈",
         "color": "#3b82f6",
-        "words_per_round": 10,
+        "words_per_round": 12,
     },
     {
         "id": "grade1",
@@ -81,6 +81,39 @@ WORD_BANK = {
         {"word": "where", "sentence": "Where is it?", "emoji": "❓"},
         {"word": "yellow", "sentence": "A yellow sun.", "emoji": "🌞"},
         {"word": "you", "sentence": "I like you!", "emoji": "💛"},
+        {"word": "cat", "sentence": "The cat is soft.", "emoji": "🐱"},
+        {"word": "dog", "sentence": "I love my dog.", "emoji": "🐶"},
+        {"word": "yes", "sentence": "Yes, please!", "emoji": "✅"},
+        {"word": "no", "sentence": "No, stop!", "emoji": "🚫"},
+        {"word": "do", "sentence": "I can do it.", "emoji": "✊"},
+        {"word": "like", "sentence": "I like cake.", "emoji": "🎂"},
+        {"word": "am", "sentence": "I am here.", "emoji": "🙋"},
+        {"word": "at", "sentence": "Look at the star.", "emoji": "⭐"},
+        {"word": "eat", "sentence": "Time to eat!", "emoji": "🍽️"},
+        {"word": "get", "sentence": "Get the toy.", "emoji": "🧸"},
+        {"word": "good", "sentence": "Good boy!", "emoji": "👍"},
+        {"word": "on", "sentence": "Jump on the bed.", "emoji": "🛏️"},
+        {"word": "he", "sentence": "He is tall.", "emoji": "🧍"},
+        {"word": "she", "sentence": "She can sing.", "emoji": "🎤"},
+        {"word": "mom", "sentence": "I love Mom.", "emoji": "👩"},
+        {"word": "dad", "sentence": "Dad is funny.", "emoji": "👨"},
+        {"word": "hat", "sentence": "A red hat.", "emoji": "🎩"},
+        {"word": "sun", "sentence": "The sun is hot.", "emoji": "☀️"},
+        {"word": "top", "sentence": "On top of the hill.", "emoji": "⛰️"},
+        {"word": "boy", "sentence": "A happy boy.", "emoji": "👦"},
+        {"word": "girl", "sentence": "A nice girl.", "emoji": "👧"},
+        {"word": "ball", "sentence": "Kick the ball.", "emoji": "⚽"},
+        {"word": "bed", "sentence": "Go to bed.", "emoji": "🛏️"},
+        {"word": "bus", "sentence": "The school bus.", "emoji": "🚌"},
+        {"word": "cup", "sentence": "A cup of water.", "emoji": "🥤"},
+        {"word": "fish", "sentence": "A big fish.", "emoji": "🐟"},
+        {"word": "pig", "sentence": "A pink pig.", "emoji": "🐷"},
+        {"word": "car", "sentence": "A fast car.", "emoji": "🚗"},
+        {"word": "did", "sentence": "I did it!", "emoji": "🏆"},
+        {"word": "sit", "sentence": "Sit down here.", "emoji": "🪑"},
+        {"word": "hot", "sentence": "The soup is hot.", "emoji": "🍜"},
+        {"word": "has", "sentence": "She has a doll.", "emoji": "🪆"},
+        {"word": "his", "sentence": "That is his book.", "emoji": "📘"},
     ],
     "kinder": [
         {"word": "all", "sentence": "We are all here.", "emoji": "👥"},
@@ -135,6 +168,42 @@ WORD_BANK = {
         {"word": "will", "sentence": "I will try.", "emoji": "💪"},
         {"word": "with", "sentence": "Come with me.", "emoji": "🤝"},
         {"word": "yes", "sentence": "Yes, I can!", "emoji": "✅"},
+        {"word": "has", "sentence": "He has a toy.", "emoji": "🧸"},
+        {"word": "his", "sentence": "That is his cup.", "emoji": "🥤"},
+        {"word": "her", "sentence": "This is her bag.", "emoji": "👜"},
+        {"word": "had", "sentence": "We had fun.", "emoji": "🎉"},
+        {"word": "how", "sentence": "How old are you?", "emoji": "🎂"},
+        {"word": "let", "sentence": "Let me help.", "emoji": "✋"},
+        {"word": "just", "sentence": "I just got up.", "emoji": "🌅"},
+        {"word": "know", "sentence": "I know your name.", "emoji": "💡"},
+        {"word": "give", "sentence": "Give me a hug.", "emoji": "🤗"},
+        {"word": "make", "sentence": "Let's make a house.", "emoji": "🏠"},
+        {"word": "take", "sentence": "Take one cookie.", "emoji": "🍪"},
+        {"word": "come", "sentence": "Come and play.", "emoji": "👋"},
+        {"word": "look", "sentence": "Look at the rainbow.", "emoji": "🌈"},
+        {"word": "help", "sentence": "Help me clean.", "emoji": "🧹"},
+        {"word": "jump", "sentence": "Jump so high!", "emoji": "🤸"},
+        {"word": "play", "sentence": "Let's play outside.", "emoji": "🌳"},
+        {"word": "run", "sentence": "Run to the tree.", "emoji": "🌲"},
+        {"word": "stop", "sentence": "Stop right there!", "emoji": "🛑"},
+        {"word": "walk", "sentence": "Walk to school.", "emoji": "🏫"},
+        {"word": "work", "sentence": "Let's work together.", "emoji": "🤝"},
+        {"word": "many", "sentence": "So many stars!", "emoji": "✨"},
+        {"word": "much", "sentence": "Thank you so much.", "emoji": "🙏"},
+        {"word": "very", "sentence": "Very good work!", "emoji": "🌟"},
+        {"word": "than", "sentence": "Bigger than me.", "emoji": "📏"},
+        {"word": "been", "sentence": "I have been there.", "emoji": "📍"},
+        {"word": "back", "sentence": "Come back soon.", "emoji": "🔙"},
+        {"word": "away", "sentence": "Far away.", "emoji": "🏔️"},
+        {"word": "tree", "sentence": "A tall tree.", "emoji": "🌳"},
+        {"word": "book", "sentence": "Read a book.", "emoji": "📖"},
+        {"word": "home", "sentence": "Let's go home.", "emoji": "🏡"},
+        {"word": "name", "sentence": "What is your name?", "emoji": "📛"},
+        {"word": "love", "sentence": "I love you.", "emoji": "❤️"},
+        {"word": "happy", "sentence": "I am so happy!", "emoji": "😊"},
+        {"word": "baby", "sentence": "A cute baby.", "emoji": "👶"},
+        {"word": "water", "sentence": "Drink some water.", "emoji": "💧"},
+        {"word": "sleep", "sentence": "Time to sleep.", "emoji": "😴"},
     ],
     "grade1": [
         {"word": "after", "sentence": "After school, we play.", "emoji": "🏫"},

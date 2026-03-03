@@ -759,8 +759,8 @@ def render_reading_home():
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
 
-    # Book covers grid (newest first)
-    stories = rc.get_all_stories()[::-1]
+    # Book covers grid (newest first) — exclude Arjun's stories from Krish's bookshelf
+    stories = [s for s in rc.get_all_stories() if not s["id"].startswith("gen_arjun_")][::-1]
     cols = st.columns(3, gap="medium")
 
     for j, story in enumerate(stories):
