@@ -23,24 +23,42 @@ XAI_MODEL = "grok-3-mini"
 # ──────────────────────────────────────────────
 
 PROFILES = {
-    # ── Arjun: 10-year-old kid ──
+    # ── Arjun: 11-year-old kid ──
     "Arjun": {
         "topics": [
             "Science", "Nature", "Animals", "Space", "Geography",
             "History", "Sports", "Inventions", "Food", "Culture",
+            "Human Body", "Oceans & Marine Life", "Weather & Climate",
+            "World Records", "Famous People", "Countries & Flags",
+            "Dinosaurs & Fossils", "Music & Instruments", "Math Fun Facts",
+            "Computers & Technology", "Languages of the World", "Mythology",
+            "Olympics", "Wonders of the World", "Volcanoes & Earthquakes",
         ],
         "topic_emojis": {
             "Science": "🔬", "Nature": "🌿", "Animals": "🐾", "Space": "🚀",
             "Geography": "🌍", "History": "📜", "Sports": "⚽", "Inventions": "💡",
-            "Food": "🍕", "Culture": "🎭",
+            "Food": "🍕", "Culture": "🎭", "Human Body": "🫀",
+            "Oceans & Marine Life": "🐳", "Weather & Climate": "🌦️",
+            "World Records": "🏆", "Famous People": "👤",
+            "Countries & Flags": "🏳️", "Dinosaurs & Fossils": "🦕",
+            "Music & Instruments": "🎵", "Math Fun Facts": "🔢",
+            "Computers & Technology": "💻", "Languages of the World": "🗣️",
+            "Mythology": "⚡", "Olympics": "🥇",
+            "Wonders of the World": "🏛️", "Volcanoes & Earthquakes": "🌋",
         },
         "question_prompt": """\
-You are a quiz maker for a 10-year-old student. Generate exactly 10 \
+You are a quiz maker for an 11-year-old student. Generate exactly 10 \
 general knowledge multiple-choice questions.
 
 RULES:
-- Each question should be from a DIFFERENT topic. Use these topics in order: \
-Science, Nature, Animals, Space, Geography, History, Sports, Inventions, Food, Culture.
+- Each question should be from a DIFFERENT topic. Pick 10 topics randomly from \
+this list: Science, Nature, Animals, Space, Geography, History, Sports, Inventions, \
+Food, Culture, Human Body, Oceans & Marine Life, Weather & Climate, World Records, \
+Famous People, Countries & Flags, Dinosaurs & Fossils, Music & Instruments, \
+Math Fun Facts, Computers & Technology, Languages of the World, Mythology, Olympics, \
+Wonders of the World, Volcanoes & Earthquakes.
+- IMPORTANT: Vary the topics every time — do NOT always pick the same 10 topics. \
+Make sure at least 3-4 of the topics are different from the common ones.
 - Difficulty: easy to medium — fun and educational, NOT intimidating.
 - Each question has exactly 4 options.
 - The "answer" field is the 0-based index of the correct option.
@@ -77,7 +95,7 @@ Options: {options}
 
 Help the student think through it without giving away the answer.""",
         "subtitle": "Learn something new every day!",
-        "quiz_description": "10 questions across Science, Nature, Space, and more!",
+        "quiz_description": "10 questions from 25 topics — Science, Space, History, Sports, Dinosaurs, Olympics, and more!",
         "color": "#f59e0b",
     },
 
