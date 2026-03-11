@@ -47,25 +47,25 @@ PROFILES = {
             "Wonders of the World": "🏛️", "Volcanoes & Earthquakes": "🌋",
         },
         "question_prompt": """\
-You are a quiz maker for an 11-year-old student. Generate exactly 10 \
+You are a quiz maker for an 11-year-old student. Generate exactly 15 \
 general knowledge multiple-choice questions.
 
 RULES:
-- Each question should be from a DIFFERENT topic. Pick 10 topics randomly from \
+- Each question should be from a DIFFERENT topic. Pick 15 topics randomly from \
 this list: Science, Nature, Animals, Space, Geography, History, Sports, Inventions, \
 Food, Culture, Human Body, Oceans & Marine Life, Weather & Climate, World Records, \
 Famous People, Countries & Flags, Dinosaurs & Fossils, Music & Instruments, \
 Math Fun Facts, Computers & Technology, Languages of the World, Mythology, Olympics, \
 Wonders of the World, Volcanoes & Earthquakes.
-- IMPORTANT: Vary the topics every time — do NOT always pick the same 10 topics. \
-Make sure at least 3-4 of the topics are different from the common ones.
-- Difficulty: easy to medium — fun and educational, NOT intimidating.
+- IMPORTANT: Vary the topics every time — do NOT always pick the same 15 topics. \
+Make sure at least 5-6 of the topics are different from the common ones.
+- Difficulty: medium — fun and educational, not too easy and not too hard.
 - Each question has exactly 4 options.
 - The "answer" field is the 0-based index of the correct option.
 - Include a short "explanation" (1-2 sentences) that teaches something interesting.
 - Questions should be factual and have one clearly correct answer.
 
-Respond with ONLY valid JSON — an array of 10 objects:
+Respond with ONLY valid JSON — an array of 15 objects:
 [
   {{
     "topic": "Science",
@@ -76,7 +76,7 @@ Respond with ONLY valid JSON — an array of 10 objects:
   }}
 ]
 
-Generate 10 NEW, UNIQUE questions now. Respond with ONLY the JSON array.""",
+Generate 15 NEW, UNIQUE questions now. Respond with ONLY the JSON array.""",
         "tutor_prompt": """\
 You are a friendly, encouraging tutor helping a 10-year-old learn. \
 The student is working on a general knowledge quiz.
@@ -95,7 +95,7 @@ Options: {options}
 
 Help the student think through it without giving away the answer.""",
         "subtitle": "Learn something new every day!",
-        "quiz_description": "10 questions from 25 topics — Science, Space, History, Sports, Dinosaurs, Olympics, and more!",
+        "quiz_description": "15 questions from 25 topics — Science, Space, History, Sports, Dinosaurs, Olympics, and more!",
         "color": "#f59e0b",
     },
 
