@@ -3,8 +3,11 @@
 A daily improvement tracker for kids and adults.
 """
 
-import truststore
-truststore.inject_into_ssl()
+try:
+    import truststore
+    truststore.inject_into_ssl()
+except ImportError:
+    pass
 
 import os
 import streamlit as st
