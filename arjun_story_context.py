@@ -13,7 +13,9 @@ import json
 import random
 import re
 import time
+from datetime import date
 
+import httpx
 from openai import OpenAI
 
 XAI_BASE_URL = "https://api.x.ai/v1"
@@ -90,25 +92,7 @@ TOPIC_EMOJIS = {
     "Current Events": "📰",
 }
 
-# Prompt used to fetch fresh, kid-appropriate current event topics from Grok
-_CURRENT_EVENTS_PROMPT = """\
-Suggest exactly 6 kid-appropriate current event topics (year 2025-2026) that \
-an 11-year-old would find interesting. These should be REAL recent events or \
-developments — things happening in the world right now.
-
-Good categories: space missions, science breakthroughs, sports tournaments, \
-Olympic games, technology milestones, environmental events, world records, \
-new discoveries, cultural events.
-
-BAD topics (avoid): war, violence, politics, crime, disasters with casualties.
-
-Return ONLY a JSON array of 6 strings, each in the format:
-"Short Title — Brief Description"
-
-Example:
-["Winter Olympics 2026 — The Winter Games in Milan-Cortina, Italy", ...]
-
-Return ONLY the JSON array, nothing else."""
+_CURRENT_EVENTS_SEARCH_MODEL = "grok-4-1-fast"
 
 SYSTEM_PROMPT = """\
 You are an educational storyteller who writes engaging, factual stories for \
@@ -181,30 +165,64 @@ def get_all_topics() -> dict[str, list[str]]:
 
 
 def fetch_current_events(xai_api_key: str) -> list[str]:
-    """Ask Grok for 6 kid-appropriate current event topics.
+    """Fetch 6 kid-appropriate current event topics using Grok's live web search.
 
-    Returns a list of topic strings. Falls back to an empty list on failure.
+    Uses the xAI /v1/responses endpoint with the web_search tool so results
+    reflect what is actually happening today, not stale training-data knowledge.
     """
-    try:
-        client = OpenAI(api_key=xai_api_key, base_url=XAI_BASE_URL)
-        response = client.chat.completions.create(
-            model=XAI_MODEL,
-            messages=[
-                {"role": "system", "content": _CURRENT_EVENTS_PROMPT},
-                {"role": "user", "content": "Give me 6 current event topics for kids."},
-            ],
-            max_tokens=800,
-            temperature=0.8,
-        )
-        raw = response.choices[0].message.content.strip()
-        json_match = re.search(r"\[[\s\S]*\]", raw)
-        if json_match:
-            topics = json.loads(json_match.group())
-            if isinstance(topics, list) and len(topics) >= 1:
-                return [str(t) for t in topics[:6]]
-    except Exception:
-        pass
+    today = date.today().isoformat()
+
+    user_prompt = (
+        f"Today is {today}. Search the web for the latest news and find exactly "
+        f"6 kid-appropriate current event topics from the past 7 days that an "
+        f"11-year-old would find interesting and exciting.\n\n"
+        f"Good categories: space missions, science breakthroughs, sports "
+        f"tournaments or results, technology milestones, environmental events, "
+        f"world records, new discoveries, cultural or entertainment events.\n\n"
+        f"BAD topics (AVOID): war, violence, politics, crime, disasters with "
+        f"casualties, anything scary for kids.\n\n"
+        f"Return ONLY a JSON array of 6 strings. Each string should be in the "
+        f'format: "Short Title — One-sentence description"\n\n'
+        f'Example: ["Mars Rover Discovery — NASA\'s Perseverance rover found '
+        f'signs of ancient water on Mars this week"]\n\n'
+        f"Return ONLY the JSON array, nothing else."
+    )
+
+    resp = httpx.post(
+        f"{XAI_BASE_URL.rstrip('/').replace('/v1', '')}/v1/responses",
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {xai_api_key}",
+        },
+        json={
+            "model": _CURRENT_EVENTS_SEARCH_MODEL,
+            "tools": [{"type": "web_search"}],
+            "input": [{"role": "user", "content": user_prompt}],
+        },
+        timeout=60.0,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+
+    text = _extract_response_text(data)
+    json_match = re.search(r"\[[\s\S]*\]", text)
+    if json_match:
+        topics = json.loads(json_match.group())
+        if isinstance(topics, list) and len(topics) >= 1:
+            return [str(t) for t in topics[:6]]
     return []
+
+
+def _extract_response_text(data: dict) -> str:
+    """Pull the assistant's text out of a /v1/responses payload."""
+    for item in data.get("output", []):
+        if item.get("type") == "message":
+            for block in item.get("content", []):
+                if block.get("type") == "output_text":
+                    return block.get("text", "")
+    if "choices" in data:
+        return data["choices"][0]["message"]["content"]
+    return json.dumps(data)
 
 
 def generate_arjun_story(xai_api_key: str, topic: str | None = None) -> dict:

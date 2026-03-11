@@ -3,6 +3,9 @@
 A daily improvement tracker for kids and adults.
 """
 
+import truststore
+truststore.inject_into_ssl()
+
 import os
 import streamlit as st
 import database as db
@@ -344,6 +347,17 @@ if "ps_last_feedback" not in st.session_state:
     st.session_state.ps_last_feedback = None
 if "ps_start_time" not in st.session_state:
     st.session_state.ps_start_time = None
+# Mental Math state
+if "mm_questions" not in st.session_state:
+    st.session_state.mm_questions = []
+if "mm_current" not in st.session_state:
+    st.session_state.mm_current = 0
+if "mm_answers" not in st.session_state:
+    st.session_state.mm_answers = []
+if "mm_last_feedback" not in st.session_state:
+    st.session_state.mm_last_feedback = None
+if "mm_start_time" not in st.session_state:
+    st.session_state.mm_start_time = None
 
 
 # ──────────────────────────────────────────────
@@ -386,6 +400,8 @@ def select_activity(activity):
         st.session_state.current_page = "map_explorer_home"
     elif activity == "ProblemSolver":
         st.session_state.current_page = "problem_solver_home"
+    elif activity == "MentalMath":
+        st.session_state.current_page = "mental_math_home"
 
 
 def start_story(story_id):
@@ -520,6 +536,23 @@ def back_to_problem_solver_home():
     st.session_state.ps_current_step = 0
     st.session_state.ps_answers = []
     st.session_state.ps_last_feedback = None
+
+
+def start_mental_math(questions):
+    st.session_state.current_page = "mental_math_practice"
+    st.session_state.mm_questions = questions
+    st.session_state.mm_current = 0
+    st.session_state.mm_answers = []
+    st.session_state.mm_last_feedback = None
+    st.session_state.mm_start_time = time.time()
+
+
+def back_to_mental_math_home():
+    st.session_state.current_page = "mental_math_home"
+    st.session_state.mm_questions = []
+    st.session_state.mm_current = 0
+    st.session_state.mm_answers = []
+    st.session_state.mm_last_feedback = None
 
 
 # ──────────────────────────────────────────────
@@ -711,6 +744,21 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🧩 Problem Solver", key="btn_problem_solver", width="stretch", type="primary"):
                 select_activity("ProblemSolver")
+                st.rerun()
+
+        st.markdown("")
+        act_row3_c1, act_row3_c2 = st.columns(2, gap="large")
+        with act_row3_c1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #ef4444;">
+                <div style="font-size: 3rem;">⚡</div>
+                <h3 style="margin: 0.5rem 0;">Mental Math Sprint</h3>
+                <p style="color: #6b7280;">Speed + accuracy challenge!</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("⚡ Mental Math", key="btn_mental_math", width="stretch", type="primary"):
+                select_activity("MentalMath")
                 st.rerun()
 
     elif name == "Sangeetha":
@@ -1650,31 +1698,43 @@ def render_arjun_stories_home():
                         _generate_and_launch_arjun_story(topic, user)
                         return
 
-    # Current Events tab (fetched from Grok)
+    # Current Events tab (live web search via Grok)
     with tabs[-1]:
         if "arjun_current_events" not in st.session_state:
             st.session_state.arjun_current_events = None
+        if "arjun_events_fetched_at" not in st.session_state:
+            st.session_state.arjun_events_fetched_at = None
 
         if st.session_state.arjun_current_events is None:
-            if st.button("🔄 Load Current Events", key="load_current_events", width="stretch", type="primary"):
-                with st.spinner("Asking AI for kid-friendly current events..."):
-                    events = asc.fetch_current_events(_XAI_API_KEY)
-                    st.session_state.arjun_current_events = events if events else []
+            if st.button("🔄 Load Today's Current Events", key="load_current_events", width="stretch", type="primary"):
+                with st.spinner("Searching the web for today's kid-friendly news..."):
+                    try:
+                        events = asc.fetch_current_events(_XAI_API_KEY)
+                        st.session_state.arjun_current_events = events if events else []
+                        st.session_state.arjun_events_fetched_at = datetime.now().strftime("%I:%M %p")
+                    except Exception as e:
+                        st.error(f"Could not fetch current events: {e}")
+                        st.session_state.arjun_current_events = []
                     st.rerun()
             st.markdown("""
             <div style="text-align:center;padding:2rem;color:#9ca3af;">
                 <div style="font-size:3rem;">📰</div>
-                <p>Click above to load fresh, kid-appropriate current event topics!</p>
+                <p>Click above to search the web for today's trending kid-friendly news!</p>
             </div>
             """, unsafe_allow_html=True)
         else:
             events = st.session_state.arjun_current_events
             if events:
-                col_refresh, _ = st.columns([2, 5])
+                col_refresh, col_info = st.columns([2, 5])
                 with col_refresh:
                     if st.button("🔄 Refresh", key="refresh_current_events"):
                         st.session_state.arjun_current_events = None
+                        st.session_state.arjun_events_fetched_at = None
                         st.rerun()
+                with col_info:
+                    fetched_at = st.session_state.arjun_events_fetched_at or ""
+                    if fetched_at:
+                        st.caption(f"Fetched at {fetched_at} — live from the web")
                 st.markdown("")
                 topic_cols = st.columns(2, gap="medium")
                 for idx, topic in enumerate(events):
@@ -2715,6 +2775,302 @@ def render_map_explorer_practice():
 
 
 # ──────────────────────────────────────────────
+# PAGE: Mental Math Home
+# ──────────────────────────────────────────────
+def render_mental_math_home():
+    import mental_math_content as mm
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="mm_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">⚡ {name}'s Mental Math Sprint</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">
+            10 questions — think fast, be accurate!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    today_mm = db.get_today_scores(user["id"], activity_type="MentalMath") if user else []
+    total_mm = db.get_scores_history(user["id"], activity_type="MentalMath", days=365) if user else []
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">📅 {len(today_mm)}</div>'
+            f'<div class="score-label">Sprints Today</div></div>',
+            unsafe_allow_html=True,
+        )
+    with col2:
+        if today_mm:
+            best = max(s["score"] for s in today_mm)
+            st.markdown(
+                f'<div class="score-card"><div class="score-number">🎯 {best}%</div>'
+                f'<div class="score-label">Today\'s Best</div></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                '<div class="score-card"><div class="score-number">🎯 —</div>'
+                '<div class="score-label">Today\'s Best</div></div>',
+                unsafe_allow_html=True,
+            )
+    with col3:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">⭐ {len(total_mm)}</div>'
+            f'<div class="score-label">Total Sprints</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    if today_mm:
+        best = max(s["score"] for s in today_mm)
+        st.markdown(f"""
+        <div style="text-align:center; padding:1rem; background:#fef3c7; border-radius:16px;
+             border:2px solid #f59e0b; margin-bottom:1rem;">
+            <span style="font-size:2rem;">🔥</span>
+            <p style="margin:0.3rem 0; font-size:1.1rem; color:#92400e;">
+                <strong>{len(today_mm)} sprint{'s' if len(today_mm) > 1 else ''} today!</strong>
+                &nbsp; Best score: <strong>{best}%</strong>
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="text-align:center; padding:1.5rem;">
+        <div style="font-size: 4rem;">⚡</div>
+        <h3 style="margin: 0.5rem 0;">{"Ready for another sprint?" if today_mm else "Ready to sprint?"}</h3>
+        <p style="color: #6b7280;">
+            10 questions — arithmetic, percentages, fractions, estimation & word problems!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    category_choice = st.selectbox(
+        "Focus on a category (optional)",
+        ["All Categories (Mixed)"] + [
+            f"{mm.CATEGORIES[k]['emoji']} {mm.CATEGORIES[k]['name']}"
+            for k in mm.CATEGORIES
+        ],
+        key="mm_category_filter",
+    )
+
+    selected_cat = None
+    if category_choice != "All Categories (Mixed)":
+        for k, v in mm.CATEGORIES.items():
+            if v["name"] in category_choice:
+                selected_cat = k
+                break
+
+    _, col_btn, _ = st.columns([1, 2, 1])
+    with col_btn:
+        btn_label = "⚡ New Sprint" if today_mm else "⚡ Start Sprint"
+        if st.button(btn_label, key="mm_start", width="stretch", type="primary"):
+            questions = mm.generate_sprint(num_questions=10, category=selected_cat)
+            start_mental_math(questions)
+            st.rerun()
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+    st.markdown("### 📖 Categories")
+
+    cat_cols = st.columns(3, gap="medium")
+    for idx, (cat_id, cat_info) in enumerate(mm.CATEGORIES.items()):
+        with cat_cols[idx % 3]:
+            st.markdown(f"""
+            <div style="padding:0.8rem;border-radius:12px;border-left:4px solid {cat_info['color']};
+                 background:{cat_info['color']}10;margin-bottom:0.8rem;">
+                <span style="font-size:1.3rem;">{cat_info['emoji']}</span>
+                <strong style="color:{cat_info['color']};"> {cat_info['name']}</strong>
+            </div>
+            """, unsafe_allow_html=True)
+
+
+# ──────────────────────────────────────────────
+# PAGE: Mental Math Practice
+# ──────────────────────────────────────────────
+def render_mental_math_practice():
+    import mental_math_content as mm
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    questions = st.session_state.mm_questions
+    current = st.session_state.mm_current
+    total = len(questions)
+    is_done = current >= total
+
+    col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
+    with col_nav1:
+        if st.button("← Math Home", key="mm_back_home"):
+            back_to_mental_math_home()
+            st.rerun()
+    with col_nav_mid:
+        if not is_done:
+            elapsed = int(time.time() - st.session_state.mm_start_time) if st.session_state.mm_start_time else 0
+            st.markdown(f"""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                Question {current + 1} of {total} &nbsp;|&nbsp; ⏱️ {elapsed}s
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+        <h1 style="color: #ef4444; margin: 0.3rem 0; font-size: 2.2rem;">⚡ Mental Math Sprint</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    progress = (current / total) if total > 0 else 0
+    st.markdown(f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,#ef4444,#f59e0b);
+             border-radius:10px;transition:width 0.4s ease;"></div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    if not is_done:
+        q = questions[current]
+        cat_info = mm.CATEGORIES.get(q["category"], {})
+        cat_color = cat_info.get("color", "#ef4444")
+        cat_emoji = cat_info.get("emoji", "⚡")
+        cat_name = cat_info.get("name", "Math")
+
+        st.markdown(f"""
+        <div class="gk-question-box">
+            <span class="gk-topic-badge" style="background:{cat_color}20;color:{cat_color};">
+                {cat_emoji} {cat_name}
+            </span>
+            <div class="gk-question-text" style="margin-top:0.8rem;font-size:1.4rem;">{q['question']}</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        last_feedback = st.session_state.get("mm_last_feedback")
+
+        if last_feedback and last_feedback.get("idx") == current:
+            if last_feedback["correct"]:
+                st.markdown("""
+                <div class="correct-answer" style="text-align:center;">
+                    ✅ <strong>Correct!</strong> 🎉
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer" style="text-align:center;">
+                    Not quite! The answer is <strong>{last_feedback['correct_val']}</strong>
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("")
+            _, col_next, _ = st.columns([1, 2, 1])
+            with col_next:
+                if current < total - 1:
+                    if st.button("Next ➡️", key="mm_next", width="stretch", type="primary"):
+                        st.session_state.mm_current += 1
+                        st.session_state.mm_last_feedback = None
+                        st.rerun()
+                else:
+                    if st.button("🎉 See Results!", key="mm_results", width="stretch", type="primary"):
+                        st.session_state.mm_current = total
+                        st.session_state.mm_last_feedback = None
+                        st.rerun()
+        else:
+            ans_col1, ans_col2 = st.columns(2, gap="medium")
+            for i, opt in enumerate(q["options"]):
+                col = ans_col1 if i % 2 == 0 else ans_col2
+                with col:
+                    label = str(opt)
+                    if st.button(label, key=f"mm_opt_{current}_{i}", width="stretch", type="primary"):
+                        is_correct = (i == q["answer"])
+                        st.session_state.mm_answers.append({
+                            "picked": opt,
+                            "correct_val": q["options"][q["answer"]],
+                            "correct": is_correct,
+                        })
+                        st.session_state.mm_last_feedback = {
+                            "idx": current,
+                            "picked": opt,
+                            "correct_val": q["options"][q["answer"]],
+                            "correct": is_correct,
+                        }
+                        st.rerun()
+
+    else:
+        answers = st.session_state.mm_answers
+        correct_count = sum(1 for a in answers if a["correct"])
+        score_pct = int((correct_count / total) * 100) if total > 0 else 0
+        time_spent = int(time.time() - st.session_state.mm_start_time) if st.session_state.mm_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+
+        if user:
+            db.save_activity_score(
+                user["id"], "MentalMath", "Sprint",
+                score_pct, 100, f"{correct_count}/{total} in {time_spent}s",
+            )
+
+        if score_pct == 100:
+            res_emoji, message, res_color = "🏆", "Perfect score! Lightning fast!", "#10b981"
+        elif score_pct >= 80:
+            res_emoji, message, res_color = "🔥", "On fire! Great speed and accuracy!", "#3b82f6"
+        elif score_pct >= 60:
+            res_emoji, message, res_color = "⚡", "Nice sprint! Keep practicing!", "#f59e0b"
+        else:
+            res_emoji, message, res_color = "💪", "Good effort! Speed comes with practice!", "#ef4444"
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:2rem;background:{res_color}10;border-radius:20px;
+             border:3px solid {res_color};margin-top:1rem;">
+            <div style="font-size:5rem;">{res_emoji}</div>
+            <h2 style="color:{res_color};margin:0.5rem 0;font-size:2rem;">
+                {correct_count} out of {total} correct!
+            </h2>
+            <p style="font-size:1.2rem;color:#4b5563;">{message}</p>
+            <p style="color:#9ca3af;">⏱️ Time: {minutes}m {seconds}s &nbsp;|&nbsp;
+               Avg: {time_spent / total:.1f}s per question</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+        st.markdown("### 📋 Review")
+        for idx, (q, ans) in enumerate(zip(questions, answers)):
+            if ans["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer">
+                    <strong>Q{idx+1}:</strong> {q['question']}
+                    &nbsp; ✅ <strong>{ans['correct_val']}</strong>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer">
+                    <strong>Q{idx+1}:</strong> {q['question']}
+                    &nbsp; ❌ You said: <strong>{ans['picked']}</strong>
+                    &nbsp; ✅ Answer: <strong>{ans['correct_val']}</strong>
+                </div>
+                """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_r1, col_r2 = st.columns(2)
+        with col_r1:
+            if st.button("⚡ Sprint Again", key="mm_home_btn", width="stretch", type="primary"):
+                back_to_mental_math_home()
+                st.rerun()
+        with col_r2:
+            if st.button("🏠 Dashboard", key="mm_dashboard", width="stretch"):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.mm_questions = []
+                st.session_state.mm_current = 0
+                st.session_state.mm_answers = []
+                st.rerun()
+
+
+# ──────────────────────────────────────────────
 # PAGE: Problem Solver Home
 # ──────────────────────────────────────────────
 def render_problem_solver_home():
@@ -3457,6 +3813,10 @@ elif page == "map_explorer_home":
     render_map_explorer_home()
 elif page == "map_explorer_practice":
     render_map_explorer_practice()
+elif page == "mental_math_home":
+    render_mental_math_home()
+elif page == "mental_math_practice":
+    render_mental_math_practice()
 elif page == "problem_solver_home":
     render_problem_solver_home()
 elif page == "problem_solver_practice":
