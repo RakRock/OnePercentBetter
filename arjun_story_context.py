@@ -153,14 +153,78 @@ Respond with ONLY the JSON."""
 
 
 def get_random_topic() -> tuple[str, str]:
-    """Pick a random topic. Returns (category, topic_string)."""
+    """Pick a random topic from the static fallback pool."""
     category = random.choice(list(TOPIC_POOL.keys()))
     topic = random.choice(TOPIC_POOL[category])
     return category, topic
 
 
 def get_all_topics() -> dict[str, list[str]]:
-    """Return the full topic pool (static categories only)."""
+    """Return the static fallback topic pool."""
+    return TOPIC_POOL
+
+
+def fetch_trending_topics(xai_api_key: str) -> dict[str, list[str]]:
+    """Fetch fresh story topics from the web, organised by category.
+
+    Uses Grok's web_search tool to find trending, kid-appropriate topics
+    across Science, Social Science, Places, Sports, and Events.
+    Returns a dict mapping category names to lists of topic strings.
+    """
+    today = date.today().isoformat()
+
+    user_prompt = (
+        f"Today is {today}. Search the web and suggest interesting, kid-appropriate "
+        f"story topics for an 11-year-old. Find topics that are trending, recently "
+        f"in the news, or newly relevant right now.\n\n"
+        f"Return exactly 5 categories with 4 topics each:\n"
+        f'- "Science" — recent discoveries, space missions, technology breakthroughs, '
+        f"inventions, animals, nature\n"
+        f'- "Social Science" — historical events being remembered, cultural milestones, '
+        f"interesting people in the news\n"
+        f'- "Places" — destinations in the news, geographic discoveries, '
+        f"famous landmarks with recent events\n"
+        f'- "Sports" — recent tournaments, records broken, athletes in the news, '
+        f"upcoming sporting events\n"
+        f'- "Events" — recent milestones, anniversaries, interesting things that '
+        f"happened this week or month\n\n"
+        f"AVOID: war, violence, politics, crime, disasters with casualties.\n\n"
+        f"Return ONLY valid JSON in this exact format:\n"
+        f'{{"Science": ["Topic 1 — Brief description", ...], '
+        f'"Social Science": [...], "Places": [...], "Sports": [...], '
+        f'"Events": [...]}}\n\n'
+        f"Each topic string should be: \"Short Title — One-sentence description\"\n"
+        f"Return ONLY the JSON object, nothing else."
+    )
+
+    resp = httpx.post(
+        f"{XAI_BASE_URL.rstrip('/').replace('/v1', '')}/v1/responses",
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {xai_api_key}",
+        },
+        json={
+            "model": _CURRENT_EVENTS_SEARCH_MODEL,
+            "tools": [{"type": "web_search"}],
+            "input": [{"role": "user", "content": user_prompt}],
+        },
+        timeout=90.0,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+
+    text = _extract_response_text(data)
+    json_match = re.search(r"\{[\s\S]*\}", text)
+    if json_match:
+        parsed = json.loads(json_match.group())
+        if isinstance(parsed, dict):
+            result = {}
+            for cat in ("Science", "Social Science", "Places", "Sports", "Events"):
+                topics = parsed.get(cat, [])
+                if isinstance(topics, list) and topics:
+                    result[cat] = [str(t) for t in topics[:4]]
+            if result:
+                return result
     return TOPIC_POOL
 
 

@@ -1645,19 +1645,15 @@ def render_arjun_stories_home():
 
     # ── Topic picker ──
     st.markdown("### ✨ Generate a New Story")
-    st.markdown('<p style="color:#6b7280;">Choose a category, pick a topic, write your own — or let us surprise you!</p>', unsafe_allow_html=True)
+    st.markdown('<p style="color:#6b7280;">Topics are fetched live from the web — always fresh and trending!</p>', unsafe_allow_html=True)
 
-    all_topics = asc.get_all_topics()
-
-    # Top action row: Random + Write Your Own
+    # Top action row
     col_random, col_custom = st.columns(2, gap="medium")
     with col_random:
         if st.button("🎲 Surprise Me — Random Topic!", key="arjun_random_topic", width="stretch", type="primary"):
             cat, topic = asc.get_random_topic()
             _generate_and_launch_arjun_story(topic, user)
             return
-    with col_custom:
-        pass
 
     st.markdown("")
 
@@ -1676,89 +1672,74 @@ def render_arjun_stories_home():
 
     st.markdown("")
 
-    # Build tab list: static categories + Current Events
-    tab_labels = [f"{asc.TOPIC_EMOJIS.get(cat, '📖')} {cat}" for cat in all_topics]
-    tab_labels.append(f"{asc.TOPIC_EMOJIS.get('Current Events', '📰')} Current Events")
+    # ── Trending topics (fetched from the web) ──
+    if "arjun_trending_topics" not in st.session_state:
+        st.session_state.arjun_trending_topics = None
+    if "arjun_topics_fetched_at" not in st.session_state:
+        st.session_state.arjun_topics_fetched_at = None
 
-    tabs = st.tabs(tab_labels)
+    _cat_colors = {
+        "Science": "#6366f1",
+        "Social Science": "#8b5cf6",
+        "Places": "#0ea5e9",
+        "Sports": "#10b981",
+        "Events": "#f59e0b",
+        "Current Events": "#ef4444",
+    }
 
-    # Static category tabs
-    for tab, (category, topics) in zip(tabs[:-1], all_topics.items()):
-        with tab:
-            topic_cols = st.columns(2, gap="medium")
-            for idx, topic in enumerate(topics):
-                with topic_cols[idx % 2]:
-                    short_title = topic.split("—")[0].strip() if "—" in topic else topic
-                    subtitle = topic.split("—")[1].strip() if "—" in topic else ""
-                    st.markdown(f"""
-                    <div style="background:#f8f9ff;border-radius:12px;padding:0.8rem 1rem;
-                                margin-bottom:0.5rem;border-left:4px solid #6366f1;">
-                        <div style="font-weight:600;font-size:0.95rem;color:#1f2937;">{short_title}</div>
-                        {"<div style='color:#6b7280;font-size:0.8rem;'>" + subtitle + "</div>" if subtitle else ""}
-                    </div>
-                    """, unsafe_allow_html=True)
-                    if st.button("📝 Generate", key=f"gen_{category}_{idx}", width="stretch"):
-                        _generate_and_launch_arjun_story(topic, user)
-                        return
+    if st.session_state.arjun_trending_topics is None:
+        if st.button("🌐 Load Trending Story Ideas from the Web", key="load_trending_topics", width="stretch", type="primary"):
+            with st.spinner("Searching the web for trending, kid-friendly story ideas..."):
+                try:
+                    topics = asc.fetch_trending_topics(_XAI_API_KEY)
+                    st.session_state.arjun_trending_topics = topics
+                    st.session_state.arjun_topics_fetched_at = datetime.now().strftime("%I:%M %p")
+                except Exception as e:
+                    st.error(f"Could not fetch trending topics: {e}")
+                    st.session_state.arjun_trending_topics = asc.get_all_topics()
+                    st.session_state.arjun_topics_fetched_at = "fallback"
+                st.rerun()
+        st.markdown("""
+        <div style="text-align:center;padding:2rem;color:#9ca3af;">
+            <div style="font-size:3rem;">🌐</div>
+            <p>Click the button above to search the web for today's trending story topics!</p>
+        </div>
+        """, unsafe_allow_html=True)
+    else:
+        all_topics = st.session_state.arjun_trending_topics
 
-    # Current Events tab (live web search via Grok)
-    with tabs[-1]:
-        if "arjun_current_events" not in st.session_state:
-            st.session_state.arjun_current_events = None
-        if "arjun_events_fetched_at" not in st.session_state:
-            st.session_state.arjun_events_fetched_at = None
+        col_refresh, col_info = st.columns([2, 5])
+        with col_refresh:
+            if st.button("🔄 Refresh Topics", key="refresh_trending"):
+                st.session_state.arjun_trending_topics = None
+                st.session_state.arjun_topics_fetched_at = None
+                st.rerun()
+        with col_info:
+            fetched_at = st.session_state.arjun_topics_fetched_at or ""
+            if fetched_at and fetched_at != "fallback":
+                st.caption(f"Fetched at {fetched_at} — live from the web")
 
-        if st.session_state.arjun_current_events is None:
-            if st.button("🔄 Load Today's Current Events", key="load_current_events", width="stretch", type="primary"):
-                with st.spinner("Searching the web for today's kid-friendly news..."):
-                    try:
-                        events = asc.fetch_current_events(_XAI_API_KEY)
-                        st.session_state.arjun_current_events = events if events else []
-                        st.session_state.arjun_events_fetched_at = datetime.now().strftime("%I:%M %p")
-                    except Exception as e:
-                        st.error(f"Could not fetch current events: {e}")
-                        st.session_state.arjun_current_events = []
-                    st.rerun()
-            st.markdown("""
-            <div style="text-align:center;padding:2rem;color:#9ca3af;">
-                <div style="font-size:3rem;">📰</div>
-                <p>Click above to search the web for today's trending kid-friendly news!</p>
-            </div>
-            """, unsafe_allow_html=True)
-        else:
-            events = st.session_state.arjun_current_events
-            if events:
-                col_refresh, col_info = st.columns([2, 5])
-                with col_refresh:
-                    if st.button("🔄 Refresh", key="refresh_current_events"):
-                        st.session_state.arjun_current_events = None
-                        st.session_state.arjun_events_fetched_at = None
-                        st.rerun()
-                with col_info:
-                    fetched_at = st.session_state.arjun_events_fetched_at or ""
-                    if fetched_at:
-                        st.caption(f"Fetched at {fetched_at} — live from the web")
-                st.markdown("")
+        tab_labels = [f"{asc.TOPIC_EMOJIS.get(cat, '📖')} {cat}" for cat in all_topics]
+        tabs = st.tabs(tab_labels)
+
+        for tab, (category, topics) in zip(tabs, all_topics.items()):
+            with tab:
+                cat_color = _cat_colors.get(category, "#6366f1")
                 topic_cols = st.columns(2, gap="medium")
-                for idx, topic in enumerate(events):
+                for idx, topic in enumerate(topics):
                     with topic_cols[idx % 2]:
                         short_title = topic.split("—")[0].strip() if "—" in topic else topic
                         subtitle = topic.split("—")[1].strip() if "—" in topic else ""
                         st.markdown(f"""
-                        <div style="background:#fffbeb;border-radius:12px;padding:0.8rem 1rem;
-                                    margin-bottom:0.5rem;border-left:4px solid #f59e0b;">
+                        <div style="background:#f8f9ff;border-radius:12px;padding:0.8rem 1rem;
+                                    margin-bottom:0.5rem;border-left:4px solid {cat_color};">
                             <div style="font-weight:600;font-size:0.95rem;color:#1f2937;">{short_title}</div>
                             {"<div style='color:#6b7280;font-size:0.8rem;'>" + subtitle + "</div>" if subtitle else ""}
                         </div>
                         """, unsafe_allow_html=True)
-                        if st.button("📝 Generate", key=f"gen_current_{idx}", width="stretch"):
+                        if st.button("📝 Generate", key=f"gen_{category}_{idx}", width="stretch"):
                             _generate_and_launch_arjun_story(topic, user)
                             return
-            else:
-                st.info("No current events found. Try refreshing!")
-                if st.button("🔄 Try Again", key="retry_current_events"):
-                    st.session_state.arjun_current_events = None
-                    st.rerun()
 
 
 def _generate_and_launch_arjun_story(topic: str, user):
