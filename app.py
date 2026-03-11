@@ -333,6 +333,17 @@ if "me_last_feedback" not in st.session_state:
     st.session_state.me_last_feedback = None
 if "me_start_time" not in st.session_state:
     st.session_state.me_start_time = None
+# Problem Solver state
+if "ps_scenario" not in st.session_state:
+    st.session_state.ps_scenario = None
+if "ps_current_step" not in st.session_state:
+    st.session_state.ps_current_step = 0
+if "ps_answers" not in st.session_state:
+    st.session_state.ps_answers = []
+if "ps_last_feedback" not in st.session_state:
+    st.session_state.ps_last_feedback = None
+if "ps_start_time" not in st.session_state:
+    st.session_state.ps_start_time = None
 
 
 # ──────────────────────────────────────────────
@@ -373,6 +384,8 @@ def select_activity(activity):
         st.session_state.current_page = "sight_words_home"
     elif activity == "MapExplorer":
         st.session_state.current_page = "map_explorer_home"
+    elif activity == "ProblemSolver":
+        st.session_state.current_page = "problem_solver_home"
 
 
 def start_story(story_id):
@@ -490,6 +503,23 @@ def back_to_map_explorer_home():
     st.session_state.me_current = 0
     st.session_state.me_answers = []
     st.session_state.me_last_feedback = None
+
+
+def start_problem_solver(scenario):
+    st.session_state.current_page = "problem_solver_practice"
+    st.session_state.ps_scenario = scenario
+    st.session_state.ps_current_step = 0
+    st.session_state.ps_answers = []
+    st.session_state.ps_last_feedback = None
+    st.session_state.ps_start_time = time.time()
+
+
+def back_to_problem_solver_home():
+    st.session_state.current_page = "problem_solver_home"
+    st.session_state.ps_scenario = None
+    st.session_state.ps_current_step = 0
+    st.session_state.ps_answers = []
+    st.session_state.ps_last_feedback = None
 
 
 # ──────────────────────────────────────────────
@@ -628,8 +658,8 @@ def render_user_dashboard():
         st.markdown("### 📚 Choose Your Activity")
         st.markdown("")
 
-        act_col1, act_col2, act_col3 = st.columns(3, gap="large")
-        with act_col1:
+        act_row1_c1, act_row1_c2 = st.columns(2, gap="large")
+        with act_row1_c1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #f59e0b;">
                 <div style="font-size: 3rem;">🧠</div>
@@ -642,7 +672,7 @@ def render_user_dashboard():
                 select_activity("GK")
                 st.rerun()
 
-        with act_col2:
+        with act_row1_c2:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #6366f1;">
                 <div style="font-size: 3rem;">📖</div>
@@ -655,7 +685,9 @@ def render_user_dashboard():
                 select_activity("ArjunStories")
                 st.rerun()
 
-        with act_col3:
+        st.markdown("")
+        act_row2_c1, act_row2_c2 = st.columns(2, gap="large")
+        with act_row2_c1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #3b82f6;">
                 <div style="font-size: 3rem;">🗺️</div>
@@ -666,6 +698,19 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🗺️ Map Explorer", key="btn_map_explorer", width="stretch", type="primary"):
                 select_activity("MapExplorer")
+                st.rerun()
+
+        with act_row2_c2:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #10b981;">
+                <div style="font-size: 3rem;">🧩</div>
+                <h3 style="margin: 0.5rem 0;">Problem Solver</h3>
+                <p style="color: #6b7280;">Break down real-world problems!</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🧩 Problem Solver", key="btn_problem_solver", width="stretch", type="primary"):
+                select_activity("ProblemSolver")
                 st.rerun()
 
     elif name == "Sangeetha":
@@ -751,7 +796,7 @@ def render_user_dashboard():
             yaxis=dict(range=[0, 105]), template="plotly_white",
             height=350, margin=dict(l=20, r=20, t=20, b=20),
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
     else:
         st.markdown('<div style="text-align:center;padding:2rem;color:#9ca3af;"><div style="font-size:3rem;">📈</div><p>Complete activities to see your progress chart!</p></div>', unsafe_allow_html=True)
 
@@ -2670,6 +2715,378 @@ def render_map_explorer_practice():
 
 
 # ──────────────────────────────────────────────
+# PAGE: Problem Solver Home
+# ──────────────────────────────────────────────
+def render_problem_solver_home():
+    import problem_solver_content as ps
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="ps_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">🧩 {name}'s Problem Solver</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">
+            Learn to break down real-world problems step by step!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    today_ps = db.get_today_scores(user["id"], activity_type="ProblemSolver") if user else []
+    total_ps = db.get_scores_history(user["id"], activity_type="ProblemSolver", days=365) if user else []
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">📅 {len(today_ps)}</div>'
+            f'<div class="score-label">Solved Today</div></div>',
+            unsafe_allow_html=True,
+        )
+    with col2:
+        if today_ps:
+            best = max(s["score"] for s in today_ps)
+            st.markdown(
+                f'<div class="score-card"><div class="score-number">🎯 {best}%</div>'
+                f'<div class="score-label">Today\'s Best</div></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                '<div class="score-card"><div class="score-number">🎯 —</div>'
+                '<div class="score-label">Today\'s Best</div></div>',
+                unsafe_allow_html=True,
+            )
+    with col3:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">⭐ {len(total_ps)}</div>'
+            f'<div class="score-label">Total Solved</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="text-align:center; padding:1rem; background:#f0fdf4; border-radius:16px;
+         border:2px solid #10b981; margin-bottom:1.5rem;">
+        <p style="margin:0; font-size:1rem; color:#065f46;">
+            <strong>How it works:</strong> You'll get a real-world scenario and 6 thinking steps.
+            Each step is a question that teaches you how to break problems into smaller pieces!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    category_choice = st.selectbox(
+        "Pick a category (optional)",
+        ["Any Category"] + [
+            f"{ps.CATEGORIES[k]['emoji']} {ps.CATEGORIES[k]['name']}"
+            for k in ps.CATEGORIES
+        ],
+        key="ps_category_filter",
+    )
+
+    selected_cat = None
+    if category_choice != "Any Category":
+        for k, v in ps.CATEGORIES.items():
+            if v["name"] in category_choice:
+                selected_cat = k
+                break
+
+    _, col_btn, _ = st.columns([1, 2, 1])
+    with col_btn:
+        btn_label = "🧩 New Challenge" if today_ps else "🧩 Start Solving"
+        if st.button(btn_label, key="ps_start", width="stretch", type="primary"):
+            if not _XAI_API_KEY:
+                st.error("xAI API key not found. Please set XAI_API_KEY as an environment variable.")
+            else:
+                with st.status("Creating your scenario...", expanded=True) as status:
+                    st.write("Thinking up a fun problem for you...")
+                    try:
+                        scenario = ps.generate_scenario(_XAI_API_KEY, category=selected_cat)
+                        status.update(label="Ready!", state="complete")
+                        start_problem_solver(scenario)
+                        st.rerun()
+                    except Exception as e:
+                        status.update(label="Error", state="error")
+                        st.error(f"Could not generate scenario: {e}")
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+    st.markdown("### 📂 Scenario Categories")
+
+    cat_cols = st.columns(3, gap="medium")
+    for idx, (cat_id, cat_info) in enumerate(ps.CATEGORIES.items()):
+        with cat_cols[idx % 3]:
+            st.markdown(f"""
+            <div style="padding:0.8rem;border-radius:12px;border-left:4px solid {cat_info['color']};
+                 background:{cat_info['color']}10;margin-bottom:0.8rem;">
+                <span style="font-size:1.3rem;">{cat_info['emoji']}</span>
+                <strong style="color:{cat_info['color']};"> {cat_info['name']}</strong>
+                <br><span style="color:#6b7280;font-size:0.85rem;">e.g. {cat_info['examples']}</span>
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown("")
+    st.markdown("### 🧠 The 6 Thinking Steps")
+    for i, step in enumerate(ps.STEP_FRAMEWORK):
+        st.markdown(f"""
+        <div style="display:flex;align-items:center;gap:0.8rem;padding:0.5rem 0;">
+            <div style="min-width:2.5rem;height:2.5rem;border-radius:50%;background:#10b981;
+                 color:white;display:flex;align-items:center;justify-content:center;
+                 font-weight:700;font-size:1rem;">{i + 1}</div>
+            <div>
+                <strong>{step['icon']} {step['name']}</strong>
+                <span style="color:#6b7280;"> — {step['description']}</span>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+
+# ──────────────────────────────────────────────
+# PAGE: Problem Solver Practice — Step by Step
+# ──────────────────────────────────────────────
+def render_problem_solver_practice():
+    import problem_solver_content as ps
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    scenario = st.session_state.ps_scenario
+    if not scenario:
+        back_to_problem_solver_home()
+        st.rerun()
+        return
+
+    steps = scenario["steps"]
+    total = len(steps)
+    current = st.session_state.ps_current_step
+    is_done = current >= total
+
+    col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
+    with col_nav1:
+        if st.button("← Home", key="ps_back_home"):
+            back_to_problem_solver_home()
+            st.rerun()
+    with col_nav_mid:
+        if not is_done:
+            st.markdown(f"""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                Step {current + 1} of {total}
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="text-align:center;padding:0.5rem 0 0.3rem 0;">
+        <h1 style="color:#10b981;margin:0;font-size:1.8rem;">🧩 Problem Solver</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="background:linear-gradient(135deg, #f0fdf4, #ecfdf5);padding:1.2rem;
+         border-radius:16px;border:2px solid #10b981;margin-bottom:1rem;">
+        <h3 style="margin:0 0 0.5rem 0;color:#065f46;">📝 {scenario['title']}</h3>
+        <p style="margin:0;color:#374151;line-height:1.6;">{scenario['description']}</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    step_indicators = ""
+    for i in range(total):
+        if i < current:
+            ans = st.session_state.ps_answers[i] if i < len(st.session_state.ps_answers) else None
+            if ans and ans.get("correct"):
+                step_indicators += (
+                    f'<div style="width:2rem;height:2rem;border-radius:50%;background:#10b981;'
+                    f'color:white;display:flex;align-items:center;justify-content:center;'
+                    f'font-size:0.8rem;font-weight:700;">✓</div>'
+                )
+            else:
+                step_indicators += (
+                    f'<div style="width:2rem;height:2rem;border-radius:50%;background:#ef4444;'
+                    f'color:white;display:flex;align-items:center;justify-content:center;'
+                    f'font-size:0.8rem;font-weight:700;">✗</div>'
+                )
+        elif i == current and not is_done:
+            step_indicators += (
+                f'<div style="width:2rem;height:2rem;border-radius:50%;background:#3b82f6;'
+                f'color:white;display:flex;align-items:center;justify-content:center;'
+                f'font-size:0.8rem;font-weight:700;">{i + 1}</div>'
+            )
+        else:
+            step_indicators += (
+                f'<div style="width:2rem;height:2rem;border-radius:50%;background:#e5e7eb;'
+                f'color:#9ca3af;display:flex;align-items:center;justify-content:center;'
+                f'font-size:0.8rem;font-weight:700;">{i + 1}</div>'
+            )
+
+    st.markdown(f"""
+    <div style="display:flex;justify-content:center;gap:0.5rem;margin-bottom:1.5rem;">
+        {step_indicators}
+    </div>
+    """, unsafe_allow_html=True)
+
+    if not is_done:
+        step = steps[current]
+        step_name = step.get("step_name", ps.STEP_FRAMEWORK[current]["name"])
+        step_icon = step.get("step_icon", ps.STEP_FRAMEWORK[current]["icon"])
+        step_desc = ps.STEP_FRAMEWORK[current]["description"] if current < len(ps.STEP_FRAMEWORK) else ""
+
+        st.markdown(f"""
+        <div style="background:#eff6ff;padding:1rem;border-radius:12px;border-left:4px solid #3b82f6;
+             margin-bottom:1rem;">
+            <strong style="font-size:1.1rem;color:#1e40af;">
+                {step_icon} Step {current + 1}: {step_name}
+            </strong>
+            <br><span style="color:#6b7280;font-size:0.9rem;">{step_desc}</span>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown(f"""
+        <div class="gk-question-box">
+            <div class="gk-question-text">{step['question']}</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        last_feedback = st.session_state.get("ps_last_feedback")
+
+        if last_feedback and last_feedback.get("step_idx") == current:
+            if last_feedback["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer" style="text-align:center;">
+                    ✅ <strong>Great thinking!</strong> 🎉
+                    <br><br><em>{step.get('explanation', '')}</em>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer" style="text-align:center;">
+                    Not quite! You picked <strong>{last_feedback['picked']}</strong>.
+                    <br>The best approach: <strong>{last_feedback['correct_val']}</strong>
+                    <br><br><em>{step.get('explanation', '')}</em>
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("")
+            _, col_next, _ = st.columns([1, 2, 1])
+            with col_next:
+                if current < total - 1:
+                    if st.button("Next Step ➡️", key="ps_next", width="stretch", type="primary"):
+                        st.session_state.ps_current_step += 1
+                        st.session_state.ps_last_feedback = None
+                        st.rerun()
+                else:
+                    if st.button("🎉 See Results!", key="ps_results", width="stretch", type="primary"):
+                        st.session_state.ps_current_step = total
+                        st.session_state.ps_last_feedback = None
+                        st.rerun()
+        else:
+            ans_col1, ans_col2 = st.columns(2, gap="medium")
+            for i, opt in enumerate(step["options"]):
+                col = ans_col1 if i % 2 == 0 else ans_col2
+                with col:
+                    label = f"{chr(65 + i)}. {opt}"
+                    if st.button(label, key=f"ps_opt_{current}_{i}", width="stretch", type="primary"):
+                        is_correct = (i == step["answer"])
+                        st.session_state.ps_answers.append({
+                            "picked": opt,
+                            "correct_val": step["options"][step["answer"]],
+                            "correct": is_correct,
+                        })
+                        st.session_state.ps_last_feedback = {
+                            "step_idx": current,
+                            "picked": opt,
+                            "correct_val": step["options"][step["answer"]],
+                            "correct": is_correct,
+                        }
+                        st.rerun()
+
+    else:
+        answers = st.session_state.ps_answers
+        correct_count = sum(1 for a in answers if a["correct"])
+        score_pct = int((correct_count / total) * 100) if total > 0 else 0
+        time_spent = int(time.time() - st.session_state.ps_start_time) if st.session_state.ps_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+
+        if user:
+            db.save_activity_score(
+                user["id"], "ProblemSolver", scenario.get("title", "Scenario"),
+                score_pct, 100, f"{correct_count}/{total} steps correct",
+            )
+
+        if score_pct == 100:
+            res_emoji, message, res_color = "🏆", "Perfect! You're a master problem solver!", "#10b981"
+        elif score_pct >= 70:
+            res_emoji, message, res_color = "🌟", "Great thinking! You're learning to break things down!", "#3b82f6"
+        elif score_pct >= 50:
+            res_emoji, message, res_color = "👍", "Good effort! Practice makes you a better thinker!", "#f59e0b"
+        else:
+            res_emoji, message, res_color = "💪", "Keep going! Every challenge teaches you something new!", "#ef4444"
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:2rem;background:{res_color}10;border-radius:20px;
+             border:3px solid {res_color};margin-top:1rem;">
+            <div style="font-size:5rem;">{res_emoji}</div>
+            <h2 style="color:{res_color};margin:0.5rem 0;font-size:2rem;">
+                {correct_count} out of {total} steps correct!
+            </h2>
+            <p style="font-size:1.2rem;color:#4b5563;">{message}</p>
+            <p style="color:#9ca3af;">⏱️ Time: {minutes}m {seconds}s</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+        st.markdown("### 🗺️ Your Problem Breakdown")
+        st.markdown(f"""
+        <div style="background:#f9fafb;padding:1rem;border-radius:12px;border:1px solid #e5e7eb;
+             margin-bottom:1rem;">
+            <strong>📝 {scenario['title']}</strong>
+            <br><span style="color:#6b7280;">{scenario['description'][:150]}...</span>
+        </div>
+        """, unsafe_allow_html=True)
+
+        for idx, (step, ans) in enumerate(zip(steps, answers)):
+            step_name = step.get("step_name", ps.STEP_FRAMEWORK[idx]["name"] if idx < len(ps.STEP_FRAMEWORK) else f"Step {idx+1}")
+            step_icon = step.get("step_icon", ps.STEP_FRAMEWORK[idx]["icon"] if idx < len(ps.STEP_FRAMEWORK) else "📌")
+
+            if ans["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer">
+                    <strong>{step_icon} Step {idx+1}: {step_name}</strong><br>
+                    {step['question']}<br>
+                    ✅ <strong>{ans['correct_val']}</strong>
+                    <br><em style="color:#6b7280;">{step.get('explanation', '')}</em>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer">
+                    <strong>{step_icon} Step {idx+1}: {step_name}</strong><br>
+                    {step['question']}<br>
+                    ❌ You said: <strong>{ans['picked']}</strong>
+                    &nbsp; ✅ Best approach: <strong>{ans['correct_val']}</strong>
+                    <br><em style="color:#6b7280;">{step.get('explanation', '')}</em>
+                </div>
+                """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_r1, col_r2 = st.columns(2)
+        with col_r1:
+            if st.button("🧩 Solve Another", key="ps_home_btn", width="stretch", type="primary"):
+                back_to_problem_solver_home()
+                st.rerun()
+        with col_r2:
+            if st.button("🏠 Dashboard", key="ps_dashboard", width="stretch"):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.ps_scenario = None
+                st.session_state.ps_current_step = 0
+                st.session_state.ps_answers = []
+                st.rerun()
+
+
+# ──────────────────────────────────────────────
 # PAGE: Civics Test Home
 # ──────────────────────────────────────────────
 def render_civics_home():
@@ -3040,6 +3457,10 @@ elif page == "map_explorer_home":
     render_map_explorer_home()
 elif page == "map_explorer_practice":
     render_map_explorer_practice()
+elif page == "problem_solver_home":
+    render_problem_solver_home()
+elif page == "problem_solver_practice":
+    render_problem_solver_practice()
 elif page == "civics_home":
     render_civics_home()
 elif page == "civics_practice":
