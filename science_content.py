@@ -45,6 +45,7 @@ QUESTION_BANK = [
         "options": ["Atom", "Cell", "Tissue", "Organ"],
         "answer": 1,
         "explanation": "Every living thing is made up of cells — they're the smallest unit that can carry out all life functions!",
+        "image": "animal_cell",
     },
     {
         "id": 2, "category": "life_science",
@@ -52,6 +53,7 @@ QUESTION_BANK = [
         "options": ["Nucleus", "Ribosome", "Mitochondria", "Cell membrane"],
         "answer": 2,
         "explanation": "Mitochondria convert food into energy (ATP) that the cell can use — like tiny batteries!",
+        "image": "mitochondria",
     },
     {
         "id": 3, "category": "life_science",
@@ -59,6 +61,7 @@ QUESTION_BANK = [
         "options": ["Makes energy", "Controls the cell", "Digests food", "Stores water"],
         "answer": 1,
         "explanation": "The nucleus contains DNA and acts as the cell's 'brain' — it controls everything the cell does!",
+        "image": "animal_cell",
     },
     {
         "id": 4, "category": "life_science",
@@ -73,6 +76,7 @@ QUESTION_BANK = [
         "options": ["Organ → Tissue → Cell → System", "Cell → Tissue → Organ → System", "Tissue → Cell → System → Organ", "System → Organ → Tissue → Cell"],
         "answer": 1,
         "explanation": "Cells combine to form tissues, tissues form organs, and organs work together in organ systems!",
+        "image": "levels_of_organization",
     },
     {
         "id": 6, "category": "life_science",
@@ -80,6 +84,7 @@ QUESTION_BANK = [
         "options": ["Makes proteins", "Produces energy", "Controls what enters and exits the cell", "Stores DNA"],
         "answer": 2,
         "explanation": "The cell membrane is like a gatekeeper — it decides what goes in and out of the cell!",
+        "image": "cell_membrane",
     },
     {
         "id": 7, "category": "life_science",
@@ -87,6 +92,7 @@ QUESTION_BANK = [
         "options": ["Respiratory system", "Digestive system", "Nervous system", "Skeletal system"],
         "answer": 1,
         "explanation": "The digestive system breaks food into nutrients your body can use — from mouth to stomach to intestines!",
+        "image": "digestive_system",
     },
     {
         "id": 8, "category": "life_science",
@@ -94,6 +100,7 @@ QUESTION_BANK = [
         "options": ["Cell membrane", "Nucleus", "Cell wall", "Mitochondria"],
         "answer": 2,
         "explanation": "Plant cells have a rigid cell wall made of cellulose that gives them their boxy shape!",
+        "image": "plant_cell",
     },
     {
         "id": 9, "category": "life_science",
@@ -101,6 +108,7 @@ QUESTION_BANK = [
         "options": ["Nervous system", "Respiratory system", "Circulatory system", "Muscular system"],
         "answer": 2,
         "explanation": "The circulatory system — your heart, blood vessels, and blood — delivers oxygen and nutrients everywhere!",
+        "image": "circulatory_system",
     },
     {
         "id": 10, "category": "life_science",
@@ -115,6 +123,7 @@ QUESTION_BANK = [
         "options": ["Muscular system", "Skeletal system", "Digestive system", "Endocrine system"],
         "answer": 1,
         "explanation": "Your skeleton has 206 bones that protect your organs and help you stand and move!",
+        "image": "skeletal_system",
     },
     {
         "id": 12, "category": "life_science",
@@ -122,6 +131,7 @@ QUESTION_BANK = [
         "options": ["Organ", "Tissue", "System", "Organism"],
         "answer": 1,
         "explanation": "Tissues are groups of similar cells that work together — like muscle tissue or nerve tissue!",
+        "image": "levels_of_organization",
     },
     {
         "id": 13, "category": "life_science",
@@ -129,6 +139,7 @@ QUESTION_BANK = [
         "options": ["Ribosome", "Mitochondria", "Nucleus", "Vacuole"],
         "answer": 2,
         "explanation": "The nucleus holds DNA — the instructions for building and running the entire organism!",
+        "image": "animal_cell",
     },
     {
         "id": 14, "category": "life_science",
@@ -136,6 +147,7 @@ QUESTION_BANK = [
         "options": ["Digest food", "Exchange gases", "Pump blood", "Send signals"],
         "answer": 1,
         "explanation": "The respiratory system brings oxygen in and pushes carbon dioxide out through breathing!",
+        "image": "respiratory_system",
     },
     {
         "id": 15, "category": "life_science",
@@ -143,6 +155,7 @@ QUESTION_BANK = [
         "options": ["Nucleus", "Mitochondria", "Chloroplast", "Cell wall"],
         "answer": 2,
         "explanation": "Chloroplasts contain chlorophyll (the green pigment) and convert sunlight into food for the plant!",
+        "image": "plant_cell",
     },
     {
         "id": 16, "category": "life_science",
@@ -150,6 +163,7 @@ QUESTION_BANK = [
         "options": ["Breaks down food", "Carries oxygen", "Sends messages through the body", "Makes hormones"],
         "answer": 2,
         "explanation": "The nervous system uses your brain, spinal cord, and nerves to send signals at incredible speed!",
+        "image": "nervous_system",
     },
     {
         "id": 17, "category": "life_science",
@@ -164,6 +178,7 @@ QUESTION_BANK = [
         "options": ["Red blood cells", "Platelets", "White blood cells", "Plasma"],
         "answer": 2,
         "explanation": "White blood cells are like soldiers — they attack bacteria, viruses, and other invaders!",
+        "image": "red_white_blood_cells",
     },
     {
         "id": 19, "category": "life_science",
@@ -178,6 +193,7 @@ QUESTION_BANK = [
         "options": ["Store water", "Make proteins", "Produce energy", "Control the cell"],
         "answer": 1,
         "explanation": "Ribosomes are tiny protein factories — they read instructions from DNA and build the proteins your body needs!",
+        "image": "animal_cell",
     },
     {
         "id": 21, "category": "life_science",
@@ -185,6 +201,7 @@ QUESTION_BANK = [
         "options": ["Heart", "Lungs", "Kidneys", "Stomach"],
         "answer": 2,
         "explanation": "Your kidneys filter about 50 gallons of blood every day and remove waste as urine!",
+        "image": "kidney",
     },
     {
         "id": 22, "category": "life_science",
@@ -192,6 +209,7 @@ QUESTION_BANK = [
         "options": ["White blood cells", "Platelets", "Red blood cells", "Plasma"],
         "answer": 2,
         "explanation": "Red blood cells contain hemoglobin, which grabs oxygen in the lungs and delivers it everywhere!",
+        "image": "red_white_blood_cells",
     },
     {
         "id": 23, "category": "life_science",
@@ -199,6 +217,7 @@ QUESTION_BANK = [
         "options": ["Makes energy", "Stores water and nutrients", "Controls the cell", "Makes proteins"],
         "answer": 1,
         "explanation": "Vacuoles are storage bubbles — plant cells have one big vacuole that helps keep the plant firm!",
+        "image": "plant_cell",
     },
     {
         "id": 24, "category": "life_science",
@@ -206,6 +225,7 @@ QUESTION_BANK = [
         "options": ["Digestive system", "Muscular system", "Respiratory system", "Nervous system"],
         "answer": 1,
         "explanation": "Muscles pull on bones to create movement — they work as a team with your skeleton!",
+        "image": "skeletal_system",
     },
     {
         "id": 25, "category": "life_science",
@@ -220,6 +240,7 @@ QUESTION_BANK = [
         "options": ["Store food", "Absorb nutrients", "Chew food", "Pump blood"],
         "answer": 1,
         "explanation": "The small intestine is about 20 feet long and absorbs most of the nutrients from your food!",
+        "image": "digestive_system",
     },
     {
         "id": 27, "category": "life_science",
@@ -241,6 +262,7 @@ QUESTION_BANK = [
         "options": ["Heart", "Spinal cord", "Brain", "Stomach"],
         "answer": 2,
         "explanation": "Your brain processes billions of signals and controls everything — thoughts, movements, and senses!",
+        "image": "nervous_system",
     },
     {
         "id": 30, "category": "life_science",
@@ -248,6 +270,7 @@ QUESTION_BANK = [
         "options": ["Arteries", "Veins", "Capillaries", "Valves"],
         "answer": 2,
         "explanation": "Capillaries are so tiny that blood cells pass through in single file — that's where gas exchange happens!",
+        "image": "circulatory_system",
     },
     # ========== REPRODUCTION & INHERITANCE (~35 questions) ==========
     {
@@ -256,6 +279,7 @@ QUESTION_BANK = [
         "options": ["RNA", "DNA", "Protein", "Lipid"],
         "answer": 1,
         "explanation": "DNA stands for deoxyribonucleic acid — it's like a long instruction manual for building you!",
+        "image": "dna_double_helix",
     },
     {
         "id": 32, "category": "reproduction",
@@ -263,6 +287,7 @@ QUESTION_BANK = [
         "options": ["Tiny organisms", "Sections of DNA that code for traits", "Types of cells", "Parts of the brain"],
         "answer": 1,
         "explanation": "Genes are segments of DNA that determine specific traits, like eye color or hair type!",
+        "image": "dna_double_helix",
     },
     {
         "id": 33, "category": "reproduction",
@@ -277,6 +302,7 @@ QUESTION_BANK = [
         "options": ["One", "Two", "Three", "Four"],
         "answer": 0,
         "explanation": "Asexual reproduction needs just one parent — the offspring is a genetic copy (clone) of the parent!",
+        "image": "sexual_vs_asexual",
     },
     {
         "id": 35, "category": "reproduction",
@@ -284,6 +310,7 @@ QUESTION_BANK = [
         "options": ["Something you learn at school", "A trait passed from parents through DNA", "A skill you practice", "A disease you catch"],
         "answer": 1,
         "explanation": "Inherited traits come from your parents' DNA — like eye color, hair color, and dimples!",
+        "image": "heredity_traits",
     },
     {
         "id": 36, "category": "reproduction",
@@ -291,6 +318,7 @@ QUESTION_BANK = [
         "options": ["A dog having puppies", "A starfish regrowing an arm", "A bird laying eggs", "A flower being pollinated"],
         "answer": 1,
         "explanation": "Some starfish can regrow into a whole new animal from just one arm — that's asexual reproduction!",
+        "image": "sexual_vs_asexual",
     },
     {
         "id": 37, "category": "reproduction",
@@ -298,6 +326,7 @@ QUESTION_BANK = [
         "options": ["Straight line", "Circle", "Double helix (twisted ladder)", "Triangle"],
         "answer": 2,
         "explanation": "DNA looks like a twisted ladder — scientists call this shape a double helix!",
+        "image": "dna_double_helix",
     },
     {
         "id": 38, "category": "reproduction",
@@ -305,6 +334,7 @@ QUESTION_BANK = [
         "options": ["A trait that always skips a generation", "A trait that shows up even with one copy of the gene", "A trait that's always bad", "A trait only males have"],
         "answer": 1,
         "explanation": "A dominant trait only needs one copy to show up — like brown eyes being dominant over blue!",
+        "image": "heredity_traits",
     },
     {
         "id": 39, "category": "reproduction",
@@ -312,6 +342,7 @@ QUESTION_BANK = [
         "options": ["A trait that shows up only with two copies of the gene", "The strongest trait", "A trait that can't be inherited", "A learned behavior"],
         "answer": 0,
         "explanation": "You need two copies of a recessive gene for it to show — like needing two 'blue eye' genes for blue eyes!",
+        "image": "heredity_traits",
     },
     {
         "id": 40, "category": "reproduction",
@@ -319,6 +350,7 @@ QUESTION_BANK = [
         "options": ["They eat different food", "They get different combinations of genes from parents", "They live in different rooms", "They go to different schools"],
         "answer": 1,
         "explanation": "Each child gets a random mix of mom's and dad's genes — so every combination is unique!",
+        "image": "heredity_traits",
     },
     {
         "id": 41, "category": "reproduction",
@@ -340,6 +372,7 @@ QUESTION_BANK = [
         "options": ["Types of cells", "Structures made of DNA that carry genes", "Parts of the heart", "Types of tissues"],
         "answer": 1,
         "explanation": "Chromosomes are tightly packed bundles of DNA — humans have 46 of them (23 pairs)!",
+        "image": "chromosomes",
     },
     {
         "id": 44, "category": "reproduction",
@@ -347,6 +380,7 @@ QUESTION_BANK = [
         "options": ["23", "46", "12", "100"],
         "answer": 1,
         "explanation": "Human cells have 46 chromosomes — 23 from mom and 23 from dad, making 23 pairs!",
+        "image": "chromosomes",
     },
     {
         "id": 45, "category": "reproduction",
@@ -389,6 +423,7 @@ QUESTION_BANK = [
         "options": ["When roots absorb water", "When pollen moves from one flower to another", "When leaves fall off", "When seeds sprout"],
         "answer": 1,
         "explanation": "Pollination is how flowering plants reproduce — bees, wind, and butterflies help carry pollen!",
+        "image": "pollination",
     },
     {
         "id": 51, "category": "reproduction",
@@ -410,6 +445,7 @@ QUESTION_BANK = [
         "options": ["A cell shrinks", "A cell splits into two new cells", "A cell changes color", "A cell stops working"],
         "answer": 1,
         "explanation": "Cell division creates two new cells from one — it's how organisms grow and repair themselves!",
+        "image": "cell_division",
     },
     {
         "id": 54, "category": "reproduction",
@@ -417,6 +453,7 @@ QUESTION_BANK = [
         "options": ["Asexual reproduction", "Sexual reproduction", "Both equally", "Neither"],
         "answer": 1,
         "explanation": "Sexual reproduction mixes DNA from two parents, creating unique offspring with more variety!",
+        "image": "sexual_vs_asexual",
     },
     {
         "id": 55, "category": "reproduction",
@@ -424,6 +461,7 @@ QUESTION_BANK = [
         "options": ["A normal gene", "A change in the DNA sequence", "A type of cell", "A vitamin"],
         "answer": 1,
         "explanation": "Mutations are random changes in DNA — most are harmless, but some can cause new traits!",
+        "image": "dna_double_helix",
     },
     # ========== ECOSYSTEMS & ENERGY FLOW (~45 questions) ==========
     {
@@ -432,6 +470,7 @@ QUESTION_BANK = [
         "options": ["Just the animals in an area", "A community of living things and their nonliving environment", "Only the plants in a forest", "A type of weather"],
         "answer": 1,
         "explanation": "An ecosystem includes ALL living things (animals, plants, microbes) plus nonliving things (water, soil, sunlight)!",
+        "image": "ecosystem",
     },
     {
         "id": 57, "category": "ecosystems",
@@ -439,6 +478,7 @@ QUESTION_BANK = [
         "options": ["A restaurant menu", "The path of energy from one organism to another", "A type of plant", "A chain made of food"],
         "answer": 1,
         "explanation": "A food chain shows who eats whom — like: grass → grasshopper → frog → snake → hawk!",
+        "image": "food_chain",
     },
     {
         "id": 58, "category": "ecosystems",
@@ -460,6 +500,7 @@ QUESTION_BANK = [
         "options": ["An animal that hunts prey", "An organism that breaks down dead material", "A type of plant", "A rock formation"],
         "answer": 1,
         "explanation": "Decomposers like fungi and bacteria break down dead organisms, recycling nutrients back into the soil!",
+        "image": "decomposer",
     },
     {
         "id": 61, "category": "ecosystems",
@@ -474,6 +515,7 @@ QUESTION_BANK = [
         "options": ["A single food chain", "Multiple interconnected food chains", "A spider's web", "A fishing net"],
         "answer": 1,
         "explanation": "A food web shows how many food chains overlap — most organisms eat more than one thing!",
+        "image": "food_web",
     },
     {
         "id": 63, "category": "ecosystems",
@@ -509,6 +551,7 @@ QUESTION_BANK = [
         "options": ["It increases", "It stays the same", "Most of it is lost as heat", "It turns into water"],
         "answer": 2,
         "explanation": "About 90% of energy is lost as heat at each level — that's why there are fewer top predators!",
+        "image": "energy_pyramid",
     },
     {
         "id": 68, "category": "ecosystems",
@@ -516,6 +559,7 @@ QUESTION_BANK = [
         "options": ["Water flowing in rivers", "The continuous movement of water through the environment", "Rain falling", "Water in a glass"],
         "answer": 1,
         "explanation": "The water cycle moves water through evaporation, condensation, precipitation, and collection — over and over!",
+        "image": "water_cycle",
     },
     {
         "id": 69, "category": "ecosystems",
@@ -523,6 +567,7 @@ QUESTION_BANK = [
         "options": ["Carbon staying in one place", "The movement of carbon through living things and the environment", "Carbon in pencils", "Carbon dioxide only"],
         "answer": 1,
         "explanation": "Carbon moves from the air into plants, then to animals, then back to the air when things decompose or burn!",
+        "image": "carbon_cycle",
     },
     {
         "id": 70, "category": "ecosystems",
@@ -530,6 +575,7 @@ QUESTION_BANK = [
         "options": ["Animals eating food", "Plants converting sunlight into food", "Rocks breaking apart", "Water evaporating"],
         "answer": 1,
         "explanation": "In photosynthesis, plants use sunlight + water + CO₂ to make glucose and release oxygen!",
+        "image": "photosynthesis",
     },
     {
         "id": 71, "category": "ecosystems",
@@ -600,6 +646,7 @@ QUESTION_BANK = [
         "options": ["Nothing", "Dead material would pile up and nutrients wouldn't recycle", "More plants would grow", "Animals would be healthier"],
         "answer": 1,
         "explanation": "Without decomposers, dead organisms would pile up and the soil would run out of nutrients for plants!",
+        "image": "decomposer",
     },
     {
         "id": 81, "category": "ecosystems",
@@ -607,6 +654,7 @@ QUESTION_BANK = [
         "options": ["A pyramid in Egypt", "A diagram showing energy decreasing at each level of a food chain", "A type of solar panel", "A mountain shape"],
         "answer": 1,
         "explanation": "Energy pyramids show that producers have the most energy, and each level above has less!",
+        "image": "energy_pyramid",
     },
     {
         "id": 82, "category": "ecosystems",
@@ -664,6 +712,7 @@ QUESTION_BANK = [
         "options": ["Molecule", "Atom", "Cell", "Tissue"],
         "answer": 1,
         "explanation": "Atoms are the building blocks of all matter — everything around you is made of atoms!",
+        "image": "atom_structure",
     },
     {
         "id": 90, "category": "physical_science",
@@ -671,6 +720,7 @@ QUESTION_BANK = [
         "options": ["Hot, warm, cold", "Solid, liquid, gas", "Big, medium, small", "Fast, slow, still"],
         "answer": 1,
         "explanation": "Water shows all three: ice (solid), water (liquid), and steam (gas)!",
+        "image": "states_of_matter",
     },
     {
         "id": 91, "category": "physical_science",
@@ -685,6 +735,7 @@ QUESTION_BANK = [
         "options": ["Head, body, tail", "Protons, neutrons, electrons", "Solid, liquid, gas", "Red, blue, green"],
         "answer": 1,
         "explanation": "Protons (+) and neutrons (no charge) are in the center, and electrons (-) orbit around them!",
+        "image": "atom_structure",
     },
     {
         "id": 93, "category": "physical_science",
@@ -692,6 +743,7 @@ QUESTION_BANK = [
         "options": ["Electron", "Neutron", "Proton", "Photon"],
         "answer": 2,
         "explanation": "Protons have a positive charge and are found in the nucleus of the atom!",
+        "image": "atom_structure",
     },
     {
         "id": 94, "category": "physical_science",
@@ -699,6 +751,7 @@ QUESTION_BANK = [
         "options": ["Proton", "Neutron", "Electron", "Nucleus"],
         "answer": 2,
         "explanation": "Electrons are tiny particles with a negative charge that zoom around the nucleus!",
+        "image": "atom_structure",
     },
     {
         "id": 95, "category": "physical_science",
@@ -706,6 +759,7 @@ QUESTION_BANK = [
         "options": ["A change that creates a new substance", "A change in appearance without creating a new substance", "Only melting", "Only freezing"],
         "answer": 1,
         "explanation": "Cutting paper, melting ice, and dissolving sugar are physical changes — no new substance is made!",
+        "image": "physical_vs_chemical",
     },
     {
         "id": 96, "category": "physical_science",
@@ -713,6 +767,7 @@ QUESTION_BANK = [
         "options": ["Changing shape", "A change that produces a new substance", "Mixing water and oil", "Cutting wood"],
         "answer": 1,
         "explanation": "Burning wood, rusting iron, and cooking an egg are chemical changes — new substances form!",
+        "image": "physical_vs_chemical",
     },
     {
         "id": 97, "category": "physical_science",
@@ -720,6 +775,7 @@ QUESTION_BANK = [
         "options": ["They slow down", "They move faster and spread apart", "They disappear", "They get heavier"],
         "answer": 1,
         "explanation": "Heat gives molecules more energy, so they vibrate and move faster — that's why solids melt into liquids!",
+        "image": "states_of_matter",
     },
     {
         "id": 98, "category": "physical_science",
@@ -727,6 +783,7 @@ QUESTION_BANK = [
         "options": ["A timetable", "A chart organizing all known elements", "A multiplication table", "A recipe book"],
         "answer": 1,
         "explanation": "The Periodic Table organizes 118 elements by their properties — it's like the alphabet of chemistry!",
+        "image": "periodic_table",
     },
     {
         "id": 99, "category": "physical_science",
@@ -776,6 +833,7 @@ QUESTION_BANK = [
         "options": ["A type of energy", "A force that resists motion between surfaces", "A form of light", "A chemical bond"],
         "answer": 1,
         "explanation": "Friction slows things down — it's why you can walk without slipping and why brakes stop a car!",
+        "image": "friction",
     },
     {
         "id": 106, "category": "physical_science",
@@ -783,6 +841,7 @@ QUESTION_BANK = [
         "options": ["Stored energy", "The energy of motion", "Heat energy only", "Sound energy only"],
         "answer": 1,
         "explanation": "Anything that's moving has kinetic energy — a rolling ball, a running person, a flying bird!",
+        "image": "kinetic_potential_energy",
     },
     {
         "id": 107, "category": "physical_science",
@@ -790,6 +849,7 @@ QUESTION_BANK = [
         "options": ["Energy of motion", "Stored energy that could be released", "Sound energy", "Only electrical energy"],
         "answer": 1,
         "explanation": "A ball at the top of a hill has potential energy — when it rolls down, that energy becomes kinetic!",
+        "image": "kinetic_potential_energy",
     },
     {
         "id": 108, "category": "physical_science",
@@ -797,6 +857,7 @@ QUESTION_BANK = [
         "options": ["Through empty space", "By direct contact between objects", "By moving fluids", "By sound waves"],
         "answer": 1,
         "explanation": "Conduction is heat moving through touch — like a metal spoon getting hot in a pot of soup!",
+        "image": "heat_transfer",
     },
     {
         "id": 109, "category": "physical_science",
@@ -804,6 +865,7 @@ QUESTION_BANK = [
         "options": ["Through direct contact", "Through the movement of fluids (liquids or gases)", "Through empty space", "Through solids only"],
         "answer": 1,
         "explanation": "Convection happens when warm fluids rise and cool fluids sink — like hot air rising from a heater!",
+        "image": "heat_transfer",
     },
     {
         "id": 110, "category": "physical_science",
@@ -811,6 +873,7 @@ QUESTION_BANK = [
         "options": ["Through direct contact", "Through moving fluids", "Through electromagnetic waves (no medium needed)", "Through sound"],
         "answer": 2,
         "explanation": "Radiation is how the Sun's heat reaches Earth — it travels through empty space as waves!",
+        "image": "heat_transfer",
     },
     {
         "id": 111, "category": "physical_science",
@@ -818,6 +881,7 @@ QUESTION_BANK = [
         "options": ["Force equals mass times acceleration", "For every action there's an equal reaction", "An object at rest stays at rest unless acted on by a force", "Energy cannot be created or destroyed"],
         "answer": 2,
         "explanation": "This is also called the law of inertia — objects keep doing what they're doing unless a force changes that!",
+        "image": "friction",
     },
     {
         "id": 112, "category": "physical_science",
@@ -825,6 +889,7 @@ QUESTION_BANK = [
         "options": ["How heavy something is", "Mass divided by volume", "How big something is", "How fast something moves"],
         "answer": 1,
         "explanation": "Density = mass ÷ volume — it's why a small rock sinks but a big piece of wood floats!",
+        "image": "density",
     },
     {
         "id": 113, "category": "physical_science",
@@ -839,6 +904,7 @@ QUESTION_BANK = [
         "options": ["Liquid", "Gas", "Solid", "Plasma"],
         "answer": 2,
         "explanation": "Solids have tightly packed molecules that hold their shape — like a rock or a book!",
+        "image": "states_of_matter",
     },
     {
         "id": 115, "category": "physical_science",
@@ -846,6 +912,7 @@ QUESTION_BANK = [
         "options": ["Solid", "Liquid", "Gas", "Plasma"],
         "answer": 1,
         "explanation": "Liquids take the shape of their container but keep the same volume — pour water into any glass!",
+        "image": "states_of_matter",
     },
     {
         "id": 116, "category": "physical_science",
@@ -853,6 +920,7 @@ QUESTION_BANK = [
         "options": ["Solid", "Liquid", "Gas", "None of these"],
         "answer": 2,
         "explanation": "Gas molecules spread out to fill any container — that's why air fills an entire room!",
+        "image": "states_of_matter",
     },
     {
         "id": 117, "category": "physical_science",
@@ -888,6 +956,7 @@ QUESTION_BANK = [
         "options": ["Changing shape", "Changing size", "Producing gas bubbles or a color change", "Melting"],
         "answer": 2,
         "explanation": "Bubbles, color changes, heat/light production, and new smells are all signs of chemical reactions!",
+        "image": "physical_vs_chemical",
     },
     {
         "id": 122, "category": "physical_science",
@@ -923,6 +992,7 @@ QUESTION_BANK = [
         "options": ["Gas turning to liquid", "Liquid turning to gas", "Solid turning to liquid", "Gas turning to solid"],
         "answer": 1,
         "explanation": "When water evaporates, liquid molecules gain enough energy to escape into the air as gas!",
+        "image": "water_cycle",
     },
     {
         "id": 127, "category": "physical_science",
@@ -930,6 +1000,7 @@ QUESTION_BANK = [
         "options": ["Liquid turning to gas", "Gas turning to liquid", "Solid turning to gas", "Liquid turning to solid"],
         "answer": 1,
         "explanation": "When water vapor cools, it condenses into liquid droplets — that's how clouds form!",
+        "image": "water_cycle",
     },
     {
         "id": 128, "category": "physical_science",
@@ -951,6 +1022,7 @@ QUESTION_BANK = [
         "options": ["Objects at rest stay at rest", "F = ma", "For every action there is an equal and opposite reaction", "Energy is conserved"],
         "answer": 2,
         "explanation": "When you push a wall, the wall pushes back on you with equal force — action and reaction!",
+        "image": "newton_third_law",
     },
 ]
 

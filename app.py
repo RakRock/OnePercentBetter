@@ -3361,14 +3361,32 @@ def render_science_practice():
         cat_emoji = cat_info.get("emoji", "🔬")
         cat_name = cat_info.get("name", "Science")
 
-        st.markdown(f"""
-        <div class="gk-question-box">
-            <span class="gk-topic-badge" style="background:{cat_color}20;color:{cat_color};">
-                {cat_emoji} {cat_name}
-            </span>
-            <div class="gk-question-text" style="margin-top:0.8rem;font-size:1.4rem;">{q['question']}</div>
-        </div>
-        """, unsafe_allow_html=True)
+        sci_img_name = q.get("image")
+        sci_img_path = os.path.join("science_images", f"{sci_img_name}.png") if sci_img_name else None
+        has_sci_img = sci_img_path and os.path.exists(sci_img_path)
+
+        if has_sci_img:
+            q_col, img_col = st.columns([3, 2], gap="medium")
+            with q_col:
+                st.markdown(f"""
+                <div class="gk-question-box">
+                    <span class="gk-topic-badge" style="background:{cat_color}20;color:{cat_color};">
+                        {cat_emoji} {cat_name}
+                    </span>
+                    <div class="gk-question-text" style="margin-top:0.8rem;font-size:1.4rem;">{q['question']}</div>
+                </div>
+                """, unsafe_allow_html=True)
+            with img_col:
+                st.image(sci_img_path, use_container_width=True)
+        else:
+            st.markdown(f"""
+            <div class="gk-question-box">
+                <span class="gk-topic-badge" style="background:{cat_color}20;color:{cat_color};">
+                    {cat_emoji} {cat_name}
+                </span>
+                <div class="gk-question-text" style="margin-top:0.8rem;font-size:1.4rem;">{q['question']}</div>
+            </div>
+            """, unsafe_allow_html=True)
 
         last_feedback = st.session_state.get("sci_last_feedback")
 
@@ -3464,6 +3482,10 @@ def render_science_practice():
         st.markdown("")
         st.markdown("### 📋 Review")
         for idx, (q, ans) in enumerate(zip(questions, answers)):
+            rev_img_name = q.get("image")
+            rev_img_path = os.path.join("science_images", f"{rev_img_name}.png") if rev_img_name else None
+            has_rev_img = rev_img_path and os.path.exists(rev_img_path)
+
             if ans["correct"]:
                 st.markdown(f"""
                 <div class="correct-answer">
@@ -3485,6 +3507,8 @@ def render_science_practice():
                     </p>
                 </div>
                 """, unsafe_allow_html=True)
+            if has_rev_img:
+                st.image(rev_img_path, width=280)
 
         st.markdown("")
         col_r1, col_r2 = st.columns(2)
