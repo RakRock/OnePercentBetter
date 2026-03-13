@@ -83,6 +83,11 @@ def init_db():
                 UNIQUE(user_id, quiz_date)
             );
         """)
+        # Migration: add time_spent_seconds if missing (added after initial schema)
+        try:
+            conn.execute("ALTER TABLE activity_scores ADD COLUMN time_spent_seconds INTEGER DEFAULT 0")
+        except sqlite3.OperationalError:
+            pass
 
         # Seed default users
         default_users = [
@@ -116,7 +121,13 @@ def record_daily_login(user_id: int):
 
 
 def get_login_streak(user_id: int) -> int:
-    """Calculate the current consecutive login streak for a user."""
+    """Calculate the current consecutive login streak for a user.
+
+    The streak counts backwards from the most recent login.  It stays
+    alive as long as the most recent login is today or yesterday (so a
+    user doesn't lose their streak before they've had a chance to open
+    the app today).
+    """
     with get_connection() as conn:
         rows = conn.execute(
             "SELECT DISTINCT log_date FROM daily_logs WHERE user_id = ? ORDER BY log_date DESC",
@@ -126,13 +137,16 @@ def get_login_streak(user_id: int) -> int:
     if not rows:
         return 0
 
-    streak = 0
     today = datetime.now().date()
+    dates = [datetime.strptime(r["log_date"], "%Y-%m-%d").date() for r in rows]
 
-    for row in rows:
-        log_date = datetime.strptime(row["log_date"], "%Y-%m-%d").date()
-        expected_date = today - timedelta(days=streak)
-        if log_date == expected_date:
+    # The streak is only valid if the most recent login is today or yesterday
+    if (today - dates[0]).days > 1:
+        return 0
+
+    streak = 1
+    for i in range(1, len(dates)):
+        if (dates[i - 1] - dates[i]).days == 1:
             streak += 1
         else:
             break
@@ -157,15 +171,16 @@ def save_activity_score(
     score: int,
     max_score: int,
     details: str = "",
+    time_spent_seconds: int = 0,
 ):
     """Save a score for an activity."""
     today = datetime.now().strftime("%Y-%m-%d")
     with get_connection() as conn:
         conn.execute(
             """INSERT INTO activity_scores 
-               (user_id, activity_type, activity_name, score, max_score, log_date, details)
-               VALUES (?, ?, ?, ?, ?, ?, ?)""",
-            (user_id, activity_type, activity_name, score, max_score, today, details),
+               (user_id, activity_type, activity_name, score, max_score, log_date, details, time_spent_seconds)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+            (user_id, activity_type, activity_name, score, max_score, today, details, time_spent_seconds),
         )
 
 
@@ -196,7 +211,8 @@ def get_scores_history(user_id: int, activity_type: str = None, days: int = 30) 
     with get_connection() as conn:
         if activity_type:
             rows = conn.execute(
-                """SELECT log_date, activity_name, score, max_score 
+                """SELECT log_date, activity_name, score, max_score,
+                          COALESCE(time_spent_seconds, 0) as time_spent_seconds
                    FROM activity_scores 
                    WHERE user_id = ? AND log_date >= ? AND activity_type = ?
                    ORDER BY log_date ASC""",
@@ -204,13 +220,57 @@ def get_scores_history(user_id: int, activity_type: str = None, days: int = 30) 
             ).fetchall()
         else:
             rows = conn.execute(
-                """SELECT log_date, activity_type, activity_name, score, max_score 
+                """SELECT log_date, activity_type, activity_name, score, max_score,
+                          COALESCE(time_spent_seconds, 0) as time_spent_seconds
                    FROM activity_scores 
                    WHERE user_id = ? AND log_date >= ?
                    ORDER BY log_date ASC""",
                 (user_id, start_date),
             ).fetchall()
         return [dict(r) for r in rows]
+
+
+def get_daily_time_spent(user_id: int, days: int = 30) -> list[dict]:
+    """Get total time spent per day across all activities.
+
+    Returns a list of dicts with 'log_date', 'total_seconds', and
+    'activity_count'.
+    """
+    start_date = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT log_date,
+                      SUM(COALESCE(time_spent_seconds, 0)) as total_seconds,
+                      COUNT(*) as activity_count
+               FROM activity_scores
+               WHERE user_id = ? AND log_date >= ?
+               GROUP BY log_date
+               ORDER BY log_date ASC""",
+            (user_id, start_date),
+        ).fetchall()
+        return [dict(r) for r in rows]
+
+
+def get_total_time_spent(user_id: int) -> int:
+    """Get the all-time total seconds spent across all activities."""
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT SUM(COALESCE(time_spent_seconds, 0)) as total FROM activity_scores WHERE user_id = ?",
+            (user_id,),
+        ).fetchone()
+        return row["total"] if row and row["total"] else 0
+
+
+def get_today_time_spent(user_id: int) -> int:
+    """Get total seconds spent on activities today."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT SUM(COALESCE(time_spent_seconds, 0)) as total FROM activity_scores "
+            "WHERE user_id = ? AND log_date = ?",
+            (user_id, today),
+        ).fetchone()
+        return row["total"] if row and row["total"] else 0
 
 
 def save_reading_progress(
@@ -257,19 +317,49 @@ def get_reading_history(user_id: int, days: int = 30) -> list:
 # ── GK daily questions helpers ──
 
 def get_daily_questions(user_id: int, date: str) -> str | None:
-    """Return cached questions JSON for a user+date, or None."""
+    """Return the most recent cached questions JSON for a user on a given date."""
     with get_connection() as conn:
         row = conn.execute(
-            "SELECT questions_json FROM gk_daily_questions WHERE user_id = ? AND quiz_date = ?",
+            "SELECT questions_json FROM gk_daily_questions WHERE user_id = ? AND quiz_date = ? "
+            "ORDER BY created_at DESC LIMIT 1",
             (user_id, date),
         ).fetchone()
         return row["questions_json"] if row else None
 
 
 def save_daily_questions(user_id: int, date: str, questions_json: str):
-    """Cache generated questions JSON for a user+date."""
+    """Save generated questions JSON for a user+date (allows multiple per day)."""
     with get_connection() as conn:
         conn.execute(
             "INSERT OR REPLACE INTO gk_daily_questions (user_id, quiz_date, questions_json) VALUES (?, ?, ?)",
             (user_id, date, questions_json),
         )
+
+
+def get_recent_gk_questions(user_id: int, limit: int = 100) -> list[str]:
+    """Return question texts from the user's recent GK quizzes.
+
+    Pulls up to `limit` unique question strings from the last 14 days so the
+    generator can avoid repeating them.
+    """
+    import json as _json
+    cutoff = (datetime.now() - timedelta(days=14)).strftime("%Y-%m-%d")
+    with get_connection() as conn:
+        rows = conn.execute(
+            "SELECT questions_json FROM gk_daily_questions "
+            "WHERE user_id = ? AND quiz_date >= ? ORDER BY created_at DESC",
+            (user_id, cutoff),
+        ).fetchall()
+    seen: list[str] = []
+    for row in rows:
+        try:
+            questions = _json.loads(row["questions_json"])
+            for q in questions:
+                text = q.get("question", "")
+                if text and text not in seen:
+                    seen.append(text)
+                    if len(seen) >= limit:
+                        return seen
+        except (ValueError, TypeError):
+            continue
+    return seen

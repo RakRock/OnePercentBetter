@@ -7,6 +7,7 @@ multiple-choice question.
 """
 
 import json
+import random
 import re
 
 from openai import OpenAI
@@ -175,6 +176,13 @@ def generate_scenario(xai_api_key: str, category: str | None = None) -> dict:
             step["step_name"] = STEP_FRAMEWORK[i]["name"]
         if "step_icon" not in step:
             step["step_icon"] = STEP_FRAMEWORK[i]["icon"]
+
+        # Shuffle options so the correct answer isn't always in the same slot
+        correct_text = step["options"][step["answer"]]
+        indices = list(range(4))
+        random.shuffle(indices)
+        step["options"] = [step["options"][j] for j in indices]
+        step["answer"] = step["options"].index(correct_text)
 
     scenario["steps"] = steps
     if "category" not in scenario:

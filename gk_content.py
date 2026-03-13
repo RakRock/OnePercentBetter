@@ -10,7 +10,9 @@ and knowledge level.
 """
 
 import json
+import random
 import re
+from datetime import date
 
 from openai import OpenAI
 
@@ -323,12 +325,18 @@ def _get_client(xai_api_key: str) -> OpenAI:
     return OpenAI(api_key=xai_api_key, base_url=XAI_BASE_URL)
 
 
-def generate_daily_questions(xai_api_key: str, user_name: str = "Arjun") -> list:
-    """Generate 10 daily GK questions using xAI Grok.
+def generate_daily_questions(
+    xai_api_key: str,
+    user_name: str = "Arjun",
+    past_questions: list[str] | None = None,
+) -> list:
+    """Generate daily GK questions using xAI Grok.
 
     Args:
         xai_api_key: xAI API key.
         user_name: Name of the user (determines profile/topics/tone).
+        past_questions: Optional list of previously asked question strings
+            to exclude from generation.
 
     Returns a list of question dicts, each with:
       topic, question, options (list of 4), answer (int), explanation (str)
@@ -338,14 +346,34 @@ def generate_daily_questions(xai_api_key: str, user_name: str = "Arjun") -> list
     profile = get_profile(user_name)
     client = _get_client(xai_api_key)
 
+    system_prompt = profile["question_prompt"]
+
+    # Build an exclusion block so the model avoids repeating past questions
+    if past_questions:
+        sample = past_questions[:60]
+        exclusion = "\n".join(f"- {q}" for q in sample)
+        system_prompt += (
+            f"\n\nCRITICAL — do NOT repeat or rephrase any of these previously "
+            f"asked questions. Generate completely NEW questions on fresh sub-topics:\n"
+            f"{exclusion}"
+        )
+
+    # Randomise the user message so the model doesn't cache identical outputs
+    today_str = date.today().strftime("%A, %B %d, %Y")
+    seed = random.randint(1000, 9999)
+    user_msg = (
+        f"Generate a fresh set of general knowledge questions for {today_str}. "
+        f"(Session {seed}) Make them creative and different from any previous set!"
+    )
+
     response = client.chat.completions.create(
         model=XAI_MODEL,
         messages=[
-            {"role": "system", "content": profile["question_prompt"]},
-            {"role": "user", "content": "Generate 10 general knowledge questions for today's quiz."},
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_msg},
         ],
         max_tokens=3000,
-        temperature=0.8,
+        temperature=1.0,
     )
 
     raw = response.choices[0].message.content.strip()
@@ -360,7 +388,7 @@ def generate_daily_questions(xai_api_key: str, user_name: str = "Arjun") -> list
     if not isinstance(questions, list) or len(questions) == 0:
         raise ValueError("Expected a non-empty list of questions")
 
-    # Validate each question
+    # Validate each question and shuffle options
     validated = []
     for i, q in enumerate(questions):
         for field in ("topic", "question", "options", "answer"):
@@ -372,6 +400,14 @@ def generate_daily_questions(xai_api_key: str, user_name: str = "Arjun") -> list
             raise ValueError(f"Question {i+1} has invalid answer index")
         if "explanation" not in q:
             q["explanation"] = ""
+
+        # Shuffle so the correct answer isn't always in the same position
+        correct_text = q["options"][q["answer"]]
+        indices = list(range(4))
+        random.shuffle(indices)
+        q["options"] = [q["options"][j] for j in indices]
+        q["answer"] = q["options"].index(correct_text)
+
         validated.append(q)
 
     return validated

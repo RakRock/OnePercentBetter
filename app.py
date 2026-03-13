@@ -634,7 +634,13 @@ def render_user_dashboard():
     </div>
     """, unsafe_allow_html=True)
 
-    col1, col2, col3, col4 = st.columns(4)
+    today_time = db.get_today_time_spent(user["id"])
+    today_min, today_sec = divmod(today_time, 60)
+    today_time_str = f"{today_min}m {today_sec}s" if today_min > 0 else f"{today_sec}s"
+    if today_time == 0:
+        today_time_str = "—"
+
+    col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
         st.markdown(f'<div class="score-card"><div class="score-number">🔥 {streak}</div><div class="score-label">Day Streak</div></div>', unsafe_allow_html=True)
     with col2:
@@ -644,6 +650,8 @@ def render_user_dashboard():
     with col4:
         avg_display = f"{sum(s['score'] for s in today_scores) / len(today_scores):.0f}%" if today_scores else "—"
         st.markdown(f'<div class="score-card"><div class="score-number">⭐ {avg_display}</div><div class="score-label">Avg Score Today</div></div>', unsafe_allow_html=True)
+    with col5:
+        st.markdown(f'<div class="score-card"><div class="score-number">⏱️ {today_time_str}</div><div class="score-label">Time Today</div></div>', unsafe_allow_html=True)
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
 
@@ -826,28 +834,74 @@ def render_user_dashboard():
         st.markdown(f"### 🚧 {name}'s activities are coming soon!")
         st.info(f"We're building personalized activities for {name}. Check back soon!")
 
-    # Progress chart
+    # Progress charts
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
     st.markdown("### 📊 Progress Over Time")
 
     history = db.get_scores_history(user["id"], days=30)
-    if history:
-        fig = go.Figure()
-        fig.add_trace(go.Scatter(
-            x=[h["log_date"] for h in history],
-            y=[h["score"] for h in history],
-            mode="lines+markers",
-            marker=dict(size=10, color="#667eea"),
-            line=dict(color="#667eea", width=3),
-            text=[h["activity_name"] for h in history],
-            hovertemplate="<b>%{text}</b><br>Score: %{y}%<br>Date: %{x}<extra></extra>",
-        ))
-        fig.update_layout(
-            xaxis_title="Date", yaxis_title="Score (%)",
-            yaxis=dict(range=[0, 105]), template="plotly_white",
-            height=350, margin=dict(l=20, r=20, t=20, b=20),
-        )
-        st.plotly_chart(fig, width="stretch")
+    time_history = db.get_daily_time_spent(user["id"], days=30)
+
+    if history or time_history:
+        tab_scores, tab_time = st.tabs(["📈 Scores", "⏱️ Time Spent"])
+
+        with tab_scores:
+            if history:
+                fig = go.Figure()
+                fig.add_trace(go.Scatter(
+                    x=[h["log_date"] for h in history],
+                    y=[h["score"] for h in history],
+                    mode="lines+markers",
+                    marker=dict(size=10, color="#667eea"),
+                    line=dict(color="#667eea", width=3),
+                    text=[h["activity_name"] for h in history],
+                    hovertemplate="<b>%{text}</b><br>Score: %{y}%<br>Date: %{x}<extra></extra>",
+                ))
+                fig.update_layout(
+                    xaxis_title="Date", yaxis_title="Score (%)",
+                    yaxis=dict(range=[0, 105]), template="plotly_white",
+                    height=350, margin=dict(l=20, r=20, t=20, b=20),
+                )
+                st.plotly_chart(fig, width="stretch")
+            else:
+                st.info("Complete activities to see your score chart!")
+
+        with tab_time:
+            if time_history:
+                dates = [t["log_date"] for t in time_history]
+                minutes = [round(t["total_seconds"] / 60, 1) for t in time_history]
+                counts = [t["activity_count"] for t in time_history]
+
+                fig_time = go.Figure()
+                fig_time.add_trace(go.Bar(
+                    x=dates, y=minutes,
+                    marker_color="#10b981",
+                    text=[f"{m:.0f}m" for m in minutes],
+                    textposition="outside",
+                    customdata=counts,
+                    hovertemplate="<b>%{x}</b><br>Time: %{y:.1f} min<br>Activities: %{customdata}<extra></extra>",
+                ))
+                fig_time.update_layout(
+                    xaxis_title="Date", yaxis_title="Minutes",
+                    template="plotly_white",
+                    height=350, margin=dict(l=20, r=20, t=20, b=20),
+                )
+                st.plotly_chart(fig_time, width="stretch")
+
+                total_all_time = db.get_total_time_spent(user["id"])
+                total_hrs, total_rem = divmod(total_all_time, 3600)
+                total_mins = total_rem // 60
+                st.markdown(f"""
+                <div style="text-align:center;padding:0.8rem;background:#ecfdf5;border-radius:12px;
+                     border:2px solid #10b981;margin-top:0.5rem;">
+                    <span style="font-size:1.5rem;">⏱️</span>
+                    <span style="font-size:1.1rem;color:#065f46;">
+                        <strong>Total time on app:</strong>
+                        {f'{total_hrs}h {total_mins}m' if total_hrs > 0 else f'{total_mins}m'}
+                    </span>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.info("Time tracking starts now — complete an activity to see your time chart!")
     else:
         st.markdown('<div style="text-align:center;padding:2rem;color:#9ca3af;"><div style="font-size:3rem;">📈</div><p>Complete activities to see your progress chart!</p></div>', unsafe_allow_html=True)
 
@@ -1132,7 +1186,7 @@ def render_reading_story():
 
                     if user:
                         db.save_reading_progress(user["id"], story_id, story["title"], total, correct, time_spent)
-                        db.save_activity_score(user["id"], "Reading", story["title"], score_pct, 100, f"{correct}/{total} correct")
+                        db.save_activity_score(user["id"], "Reading", story["title"], score_pct, 100, f"{correct}/{total} correct", time_spent)
 
                     st.rerun()
         else:
@@ -1419,7 +1473,7 @@ def render_math_practice():
 
         # Save score
         if user and level:
-            db.save_activity_score(user["id"], "Math", level["title"], score_pct, 100, f"{correct}/{total} correct")
+            db.save_activity_score(user["id"], "Math", level["title"], score_pct, 100, f"{correct}/{total} correct", time_spent)
 
         if score_pct == 100:
             res_emoji, message, res_color = "🏆", "Perfect! You are a math superstar!", "#10b981"
@@ -1879,7 +1933,10 @@ def render_gk_home():
     if new_quiz:
         with st.spinner("Generating fresh questions..."):
             try:
-                questions = gk.generate_daily_questions(_XAI_API_KEY, user_name=name)
+                past_qs = db.get_recent_gk_questions(user["id"], limit=100) if user else []
+                questions = gk.generate_daily_questions(
+                    _XAI_API_KEY, user_name=name, past_questions=past_qs,
+                )
                 db.save_daily_questions(user["id"], today, _json.dumps(questions))
             except Exception as exc:
                 st.error(f"Could not generate questions: {exc}")
@@ -2090,7 +2147,7 @@ def render_gk_practice():
         minutes, seconds = divmod(time_spent, 60)
 
         if user:
-            db.save_activity_score(user["id"], "GK", "Daily Quiz", score_pct, 100, f"{correct}/{total} correct")
+            db.save_activity_score(user["id"], "GK", "Daily Quiz", score_pct, 100, f"{correct}/{total} correct", time_spent)
 
         if score_pct == 100:
             res_emoji, message, res_color = "🏆", "Perfect! You're a GK superstar!", "#10b981"
@@ -2328,7 +2385,7 @@ def render_sight_words_practice():
             lvl_title = level["title"] if level else "Sight Words"
             db.save_activity_score(
                 user["id"], "SightWords", lvl_title,
-                100, 100, f"{total} words practiced",
+                100, 100, f"{total} words practiced", time_spent,
             )
 
         _fn_css = (
@@ -2692,7 +2749,7 @@ def render_map_explorer_practice():
         if user:
             db.save_activity_score(
                 user["id"], "MapExplorer", "World Quiz",
-                score_pct, 100, f"{correct_count}/{total} correct",
+                score_pct, 100, f"{correct_count}/{total} correct", time_spent,
             )
 
         if score_pct == 100:
@@ -2995,7 +3052,7 @@ def render_mental_math_practice():
         if user:
             db.save_activity_score(
                 user["id"], "MentalMath", "Sprint",
-                score_pct, 100, f"{correct_count}/{total} in {time_spent}s",
+                score_pct, 100, f"{correct_count}/{total} in {time_spent}s", time_spent,
             )
 
         if score_pct == 100:
@@ -3353,7 +3410,7 @@ def render_problem_solver_practice():
         if user:
             db.save_activity_score(
                 user["id"], "ProblemSolver", scenario.get("title", "Scenario"),
-                score_pct, 100, f"{correct_count}/{total} steps correct",
+                score_pct, 100, f"{correct_count}/{total} steps correct", time_spent,
             )
 
         if score_pct == 100:
@@ -3695,7 +3752,7 @@ def render_civics_practice():
         if user:
             db.save_activity_score(
                 user["id"], "Civics", "Practice Test",
-                score_pct, 100, f"{correct_count}/{total} correct",
+                score_pct, 100, f"{correct_count}/{total} correct", time_spent,
             )
 
         if passed:
