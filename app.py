@@ -911,20 +911,25 @@ def render_user_dashboard():
         with tab_time:
             if time_history:
                 dates = [t["log_date"] for t in time_history]
-                minutes = [round(t["total_seconds"] / 60, 1) for t in time_history]
-                counts = [t["activity_count"] for t in time_history]
+                daily_mins = [round(t["total_seconds"] / 60, 1) for t in time_history]
+
+                cumulative = []
+                running = 0
+                for m in daily_mins:
+                    running += m
+                    cumulative.append(round(running, 1))
 
                 fig_time = go.Figure()
-                fig_time.add_trace(go.Bar(
-                    x=dates, y=minutes,
-                    marker_color="#10b981",
-                    text=[f"{m:.0f}m" for m in minutes],
-                    textposition="outside",
-                    customdata=counts,
-                    hovertemplate="<b>%{x}</b><br>Time: %{y:.1f} min<br>Activities: %{customdata}<extra></extra>",
+                fig_time.add_trace(go.Scatter(
+                    x=dates, y=cumulative,
+                    mode="lines+markers",
+                    fill="tozeroy",
+                    marker=dict(size=8, color="#10b981"),
+                    line=dict(color="#10b981", width=3),
+                    hovertemplate="<b>%{x}</b><br>Total: %{y:.1f} min<extra></extra>",
                 ))
                 fig_time.update_layout(
-                    xaxis_title="Date", yaxis_title="Minutes",
+                    xaxis_title="Date", yaxis_title="Total Minutes",
                     template="plotly_white",
                     height=350, margin=dict(l=20, r=20, t=20, b=20),
                 )
@@ -3377,7 +3382,7 @@ def render_science_practice():
                 </div>
                 """, unsafe_allow_html=True)
             with img_col:
-                st.image(sci_img_path, use_container_width=True)
+                st.image(sci_img_path, width="stretch")
         else:
             st.markdown(f"""
             <div class="gk-question-box">
