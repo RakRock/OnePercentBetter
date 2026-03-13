@@ -3,7 +3,7 @@ Mental Math Sprint — procedurally generated math questions for Arjun.
 
 Questions are generated randomly each time so every sprint feels fresh.
 Categories: Quick Arithmetic, Percentages, Fractions, Estimation, Word Problems.
-Difficulty is calibrated for an 11-year-old (medium).
+Difficulty is calibrated for an 11-year-old (medium-hard).
 """
 
 import random
@@ -47,8 +47,8 @@ def _make_options(correct, spread=None, force_int=True):
 
 
 def _generate_addition():
-    a = random.randint(10, 99)
-    b = random.randint(10, 99)
+    a = random.randint(20, 99)
+    b = random.randint(20, 99)
     correct = a + b
     q = f"What is {a} + {b}?"
     options, idx = _make_options(correct)
@@ -56,8 +56,8 @@ def _generate_addition():
 
 
 def _generate_subtraction():
-    a = random.randint(30, 150)
-    b = random.randint(5, a - 5)
+    a = random.randint(30, 99)
+    b = random.randint(10, a - 5)
     correct = a - b
     q = f"What is {a} − {b}?"
     options, idx = _make_options(correct)
@@ -65,17 +65,22 @@ def _generate_subtraction():
 
 
 def _generate_multiplication():
-    a = random.randint(2, 15)
-    b = random.randint(2, 15)
+    # Include some trickier combos (single × double-digit)
+    if random.random() < 0.4:
+        a = random.randint(6, 25)
+        b = random.randint(6, 25)
+    else:
+        a = random.randint(3, 12)
+        b = random.randint(12, 30)
     correct = a * b
     q = f"What is {a} × {b}?"
-    options, idx = _make_options(correct, spread=max(5, correct // 5))
+    options, idx = _make_options(correct, spread=max(8, correct // 5))
     return {"question": q, "options": options, "answer": idx, "category": "arithmetic"}
 
 
 def _generate_division():
-    b = random.randint(2, 12)
-    correct = random.randint(2, 15)
+    b = random.randint(3, 15)
+    correct = random.randint(5, 25)
     a = b * correct
     q = f"What is {a} ÷ {b}?"
     options, idx = _make_options(correct)
@@ -84,13 +89,16 @@ def _generate_division():
 
 def _generate_percentage():
     templates = [
-        (10, [100, 200, 300, 400, 500, 150, 250, 350]),
-        (20, [50, 100, 150, 200, 250, 300]),
-        (25, [40, 80, 100, 120, 160, 200, 240]),
-        (50, [20, 40, 60, 80, 100, 120, 150, 200]),
-        (15, [100, 200, 300, 400]),
-        (30, [50, 100, 150, 200]),
-        (75, [20, 40, 80, 100, 200]),
+        (10, [150, 250, 350, 450, 550, 700, 900]),
+        (20, [75, 120, 180, 250, 350, 450]),
+        (25, [60, 120, 160, 240, 320, 480]),
+        (50, [30, 70, 110, 150, 250, 350]),
+        (15, [100, 200, 300, 400, 600, 800]),
+        (30, [50, 100, 150, 200, 300, 500]),
+        (75, [40, 80, 120, 200, 320, 400]),
+        (5, [200, 300, 400, 600, 800, 1000]),
+        (40, [50, 100, 150, 200, 250]),
+        (60, [50, 100, 150, 200, 250]),
     ]
     pct, bases = random.choice(templates)
     base = random.choice(bases)
@@ -102,13 +110,15 @@ def _generate_percentage():
 
 def _generate_percentage_word():
     scenarios = [
-        ("A shirt costs ${base}. It's {pct}% off. How much do you save?", None),
-        ("You scored {pct}% on a test with {base} questions. How many did you get right?", None),
-        ("A pizza has {base} slices. You ate {pct}% of them. How many slices did you eat?", None),
+        "A shirt costs ${base}. It's {pct}% off. How much do you save?",
+        "You scored {pct}% on a test with {base} questions. How many did you get right?",
+        "A pizza has {base} slices. You ate {pct}% of them. How many slices did you eat?",
+        "A school has {base} students. {pct}% are absent today. How many are absent?",
+        "A jar has {base} candies. You gave away {pct}%. How many did you give away?",
     ]
-    pct = random.choice([10, 20, 25, 50, 75])
-    base = random.choice([20, 40, 50, 60, 80, 100])
-    template, _ = random.choice(scenarios)
+    pct = random.choice([5, 10, 15, 20, 25, 30, 40, 50, 75])
+    base = random.choice([40, 60, 80, 100, 120, 150, 200, 250])
+    template = random.choice(scenarios)
     q = template.format(base=base, pct=pct)
     correct = int(base * pct / 100)
     options, idx = _make_options(correct, spread=max(3, correct // 3))
@@ -122,6 +132,10 @@ def _generate_fraction_addition():
         ("2/5", "1/5", "3/5"), ("1/4", "3/4", "1"),
         ("1/6", "1/6", "1/3"), ("3/8", "1/8", "1/2"),
         ("1/2", "1/6", "2/3"), ("2/3", "1/6", "5/6"),
+        ("3/8", "3/8", "3/4"), ("2/5", "2/5", "4/5"),
+        ("3/4", "1/8", "7/8"), ("1/3", "1/6", "1/2"),
+        ("5/8", "1/8", "3/4"), ("2/3", "1/3", "1"),
+        ("3/10", "2/5", "7/10"), ("1/4", "1/8", "3/8"),
     ]
     a, b, correct_str = random.choice(pairs)
     q = f"What is {a} + {b}?"
@@ -140,13 +154,16 @@ def _generate_fraction_addition():
 
 def _generate_fraction_of():
     combos = [
-        ("1/2", 2, [10, 20, 30, 40, 50, 60]),
-        ("1/3", 3, [12, 15, 18, 21, 24, 27, 30]),
-        ("1/4", 4, [8, 12, 16, 20, 24, 28, 32]),
-        ("2/3", 3, [9, 12, 15, 18, 21, 24]),
-        ("3/4", 4, [8, 12, 16, 20, 24, 28]),
-        ("1/5", 5, [10, 15, 20, 25, 30, 35]),
-        ("2/5", 5, [10, 15, 20, 25, 30]),
+        ("1/2", 2, [30, 50, 70, 90, 110, 150]),
+        ("1/3", 3, [21, 33, 42, 54, 66, 90]),
+        ("1/4", 4, [24, 36, 48, 60, 80, 100]),
+        ("2/3", 3, [18, 27, 36, 45, 60, 90]),
+        ("3/4", 4, [20, 32, 44, 60, 80, 120]),
+        ("1/5", 5, [25, 35, 45, 55, 75, 100]),
+        ("2/5", 5, [20, 30, 45, 55, 75, 100]),
+        ("3/5", 5, [25, 35, 50, 75, 100]),
+        ("1/8", 8, [40, 56, 72, 96, 120]),
+        ("3/8", 8, [40, 56, 72, 96, 120]),
     ]
     frac_str, denom, bases = random.choice(combos)
     base = random.choice(bases)
@@ -192,12 +209,11 @@ def _generate_estimation():
 
 
 def _est_product():
-    a = random.choice([49, 51, 99, 101, 198, 202, 301, 499, 501])
-    b = random.randint(2, 9)
+    a = random.choice([49, 51, 99, 101, 198, 202, 301, 499, 501, 748, 997])
+    b = random.randint(3, 12)
     correct = a * b
-    rounded_a = round(a, -1) if a < 100 else round(a, -2)
     q = f"Estimate: {a} × {b} is closest to?"
-    spread = max(50, correct // 5)
+    spread = max(80, correct // 5)
     options, idx = _make_options(correct, spread=spread)
     return {"question": q, "options": options, "answer": idx, "category": "estimation"}
 
@@ -212,6 +228,11 @@ def _est_minutes():
         ("About how many seconds are in 10 minutes?", 600, 100),
         ("About how many weeks are in 1 year?", 52, 8),
         ("About how many months are in 5 years?", 60, 10),
+        ("About how many hours are in a month (30 days)?", 720, 100),
+        ("About how many seconds are in 1 day?", 86400, 10000),
+        ("About how many minutes are in 1 week?", 10080, 1500),
+        ("About how many hours are in 3 days?", 72, 12),
+        ("About how many days are in 10 years?", 3650, 400),
     ]
     q_text, correct, spread = random.choice(questions)
     options, idx = _make_options(correct, spread=spread)
@@ -219,8 +240,8 @@ def _est_minutes():
 
 
 def _est_closest():
-    a = random.randint(100, 900)
-    b = random.randint(100, 900)
+    a = random.randint(200, 1500)
+    b = random.randint(200, 1500)
     correct = a + b
     q = f"Without calculating exactly, {a} + {b} is closest to?"
     rounded = round(correct, -2)
@@ -250,8 +271,8 @@ def _generate_word_problem():
 
 def _wp_shopping():
     item = random.choice(["book", "toy", "game", "backpack", "shirt", "pair of shoes"])
-    price = random.choice([10, 15, 20, 25, 30, 40, 50, 60])
-    qty = random.randint(2, 5)
+    price = random.choice([12, 18, 24, 35, 45, 55, 65, 78, 95])
+    qty = random.randint(3, 7)
     correct = price * qty
     q = f"A {item} costs ${price}. How much do {qty} cost?"
     options, idx = _make_options(correct, spread=max(10, correct // 4))
@@ -262,10 +283,10 @@ def _wp_shopping():
 
 
 def _wp_sharing():
-    total = random.choice([24, 30, 36, 40, 48, 60])
-    people = random.choice([3, 4, 5, 6, 8])
+    total = random.choice([42, 56, 72, 84, 96, 108, 120, 144])
+    people = random.choice([3, 4, 6, 7, 8, 9, 12])
     while total % people != 0:
-        people = random.choice([3, 4, 5, 6, 8])
+        people = random.choice([3, 4, 6, 7, 8, 9, 12])
     correct = total // people
     item = random.choice(["stickers", "cards", "candies", "marbles", "pencils"])
     q = f"You have {total} {item} to share equally among {people} friends. How many does each get?"
@@ -274,8 +295,8 @@ def _wp_sharing():
 
 
 def _wp_speed():
-    speed = random.choice([30, 40, 50, 60])
-    hours = random.choice([2, 3, 4, 5])
+    speed = random.choice([35, 45, 55, 65, 72, 85])
+    hours = random.choice([2, 3, 4, 5, 6])
     correct = speed * hours
     q = f"A car drives at {speed} mph for {hours} hours. How far does it go?"
     options, idx = _make_options(correct, spread=max(20, correct // 4))
@@ -286,9 +307,9 @@ def _wp_speed():
 
 
 def _wp_money_left():
-    start = random.choice([20, 50, 100])
-    items = random.randint(2, 4)
-    costs = [random.randint(3, start // (items + 1)) for _ in range(items)]
+    start = random.choice([50, 100, 150, 200])
+    items = random.randint(3, 5)
+    costs = [random.randint(5, start // (items + 1)) for _ in range(items)]
     spent = sum(costs)
     correct = start - spent
     cost_str = " + ".join(f"${c}" for c in costs)
@@ -301,8 +322,8 @@ def _wp_money_left():
 
 
 def _wp_area():
-    l = random.randint(3, 15)
-    w = random.randint(3, 15)
+    l = random.randint(5, 25)
+    w = random.randint(5, 25)
     correct = l * w
     shape = "rectangle" if l != w else "square"
     q = f"A {shape} is {l} feet long and {w} feet wide. What is its area?"
