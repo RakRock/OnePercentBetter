@@ -361,6 +361,17 @@ if "mm_last_feedback" not in st.session_state:
     st.session_state.mm_last_feedback = None
 if "mm_start_time" not in st.session_state:
     st.session_state.mm_start_time = None
+# Science Corner state
+if "sci_questions" not in st.session_state:
+    st.session_state.sci_questions = []
+if "sci_current" not in st.session_state:
+    st.session_state.sci_current = 0
+if "sci_answers" not in st.session_state:
+    st.session_state.sci_answers = []
+if "sci_last_feedback" not in st.session_state:
+    st.session_state.sci_last_feedback = None
+if "sci_start_time" not in st.session_state:
+    st.session_state.sci_start_time = None
 
 
 # ──────────────────────────────────────────────
@@ -405,6 +416,8 @@ def select_activity(activity):
         st.session_state.current_page = "problem_solver_home"
     elif activity == "MentalMath":
         st.session_state.current_page = "mental_math_home"
+    elif activity == "Science":
+        st.session_state.current_page = "science_home"
 
 
 def start_story(story_id):
@@ -556,6 +569,23 @@ def back_to_mental_math_home():
     st.session_state.mm_current = 0
     st.session_state.mm_answers = []
     st.session_state.mm_last_feedback = None
+
+
+def start_science_quiz(questions):
+    st.session_state.current_page = "science_practice"
+    st.session_state.sci_questions = questions
+    st.session_state.sci_current = 0
+    st.session_state.sci_answers = []
+    st.session_state.sci_last_feedback = None
+    st.session_state.sci_start_time = time.time()
+
+
+def back_to_science_home():
+    st.session_state.current_page = "science_home"
+    st.session_state.sci_questions = []
+    st.session_state.sci_current = 0
+    st.session_state.sci_answers = []
+    st.session_state.sci_last_feedback = None
 
 
 # ──────────────────────────────────────────────
@@ -770,6 +800,19 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("⚡ Mental Math", key="btn_mental_math", width="stretch", type="primary"):
                 select_activity("MentalMath")
+                st.rerun()
+
+        with act_row3_c2:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #06b6d4;">
+                <div style="font-size: 3rem;">🔬</div>
+                <h3 style="margin: 0.5rem 0;">Science Corner</h3>
+                <p style="color: #6b7280;">Grade 6 Inspire Science!</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🔬 Science Corner", key="btn_science", width="stretch", type="primary"):
+                select_activity("Science")
                 st.rerun()
 
     elif name == "Sangeetha":
@@ -3146,6 +3189,319 @@ def render_mental_math_practice():
 
 
 # ──────────────────────────────────────────────
+# PAGE: Science Corner Home
+# ──────────────────────────────────────────────
+def render_science_home():
+    import science_content as sc
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="sci_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">🔬 {name}'s Science Corner</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">
+            Grade 6 Inspire Science — 10 questions per quiz!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    today_sci = db.get_today_scores(user["id"], activity_type="Science") if user else []
+    total_sci = db.get_scores_history(user["id"], activity_type="Science", days=365) if user else []
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">📅 {len(today_sci)}</div>'
+            f'<div class="score-label">Quizzes Today</div></div>',
+            unsafe_allow_html=True,
+        )
+    with col2:
+        if today_sci:
+            best = max(s["score"] for s in today_sci)
+            st.markdown(
+                f'<div class="score-card"><div class="score-number">🎯 {best}%</div>'
+                f'<div class="score-label">Today\'s Best</div></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                '<div class="score-card"><div class="score-number">🎯 —</div>'
+                '<div class="score-label">Today\'s Best</div></div>',
+                unsafe_allow_html=True,
+            )
+    with col3:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">⭐ {len(total_sci)}</div>'
+            f'<div class="score-label">Total Quizzes</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    if today_sci:
+        best = max(s["score"] for s in today_sci)
+        st.markdown(f"""
+        <div style="text-align:center; padding:1rem; background:#ecfdf5; border-radius:16px;
+             border:2px solid #10b981; margin-bottom:1rem;">
+            <span style="font-size:2rem;">🔬</span>
+            <p style="margin:0.3rem 0; font-size:1.1rem; color:#065f46;">
+                <strong>{len(today_sci)} quiz{'zes' if len(today_sci) > 1 else ''} today!</strong>
+                &nbsp; Best score: <strong>{best}%</strong>
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="text-align:center; padding:1.5rem;">
+        <div style="font-size: 4rem;">🔬</div>
+        <h3 style="margin: 0.5rem 0;">{"Ready for another quiz?" if today_sci else "Ready to explore science?"}</h3>
+        <p style="color: #6b7280;">
+            Life Science, Genetics, Ecosystems & Physical Science!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    category_choice = st.selectbox(
+        "Focus on a topic (optional)",
+        ["All Topics (Mixed)"] + [
+            f"{sc.CATEGORIES[k]['emoji']} {sc.CATEGORIES[k]['name']}"
+            for k in sc.CATEGORIES
+        ],
+        key="sci_category_filter",
+    )
+
+    selected_cat = None
+    if category_choice != "All Topics (Mixed)":
+        for k, v in sc.CATEGORIES.items():
+            if v["name"] in category_choice:
+                selected_cat = k
+                break
+
+    _, col_btn, _ = st.columns([1, 2, 1])
+    with col_btn:
+        btn_label = "🔬 New Quiz" if today_sci else "🔬 Start Quiz"
+        if st.button(btn_label, key="sci_start", width="stretch", type="primary"):
+            questions = sc.generate_quiz(num_questions=10, category=selected_cat)
+            start_science_quiz(questions)
+            st.rerun()
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+    st.markdown("### 📖 Topics")
+
+    counts = sc.get_category_counts()
+    cat_cols = st.columns(2, gap="medium")
+    for idx, (cat_id, cat_info) in enumerate(sc.CATEGORIES.items()):
+        with cat_cols[idx % 2]:
+            st.markdown(f"""
+            <div style="padding:1rem;border-radius:12px;border-left:4px solid {cat_info['color']};
+                 background:{cat_info['color']}10;margin-bottom:0.8rem;">
+                <span style="font-size:1.3rem;">{cat_info['emoji']}</span>
+                <strong style="color:{cat_info['color']};"> {cat_info['name']}</strong>
+                <span style="color:#9ca3af;font-size:0.85rem;"> — {counts[cat_id]} questions</span>
+                <p style="color:#6b7280;font-size:0.85rem;margin:0.3rem 0 0 0;">
+                    {cat_info['description']}
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+
+
+# ──────────────────────────────────────────────
+# PAGE: Science Corner Practice
+# ──────────────────────────────────────────────
+def render_science_practice():
+    import science_content as sc
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    questions = st.session_state.sci_questions
+    current = st.session_state.sci_current
+    total = len(questions)
+    is_done = current >= total
+
+    col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
+    with col_nav1:
+        if st.button("← Science Home", key="sci_back_home"):
+            back_to_science_home()
+            st.rerun()
+    with col_nav_mid:
+        if not is_done:
+            elapsed = int(time.time() - st.session_state.sci_start_time) if st.session_state.sci_start_time else 0
+            st.markdown(f"""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                Question {current + 1} of {total} &nbsp;|&nbsp; ⏱️ {elapsed}s
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+        <h1 style="color: #06b6d4; margin: 0.3rem 0; font-size: 2.2rem;">🔬 Science Corner</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    progress = (current / total) if total > 0 else 0
+    st.markdown(f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,#06b6d4,#10b981);
+             border-radius:10px;transition:width 0.4s ease;"></div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    if not is_done:
+        q = questions[current]
+        cat_info = sc.CATEGORIES.get(q["category"], {})
+        cat_color = cat_info.get("color", "#06b6d4")
+        cat_emoji = cat_info.get("emoji", "🔬")
+        cat_name = cat_info.get("name", "Science")
+
+        st.markdown(f"""
+        <div class="gk-question-box">
+            <span class="gk-topic-badge" style="background:{cat_color}20;color:{cat_color};">
+                {cat_emoji} {cat_name}
+            </span>
+            <div class="gk-question-text" style="margin-top:0.8rem;font-size:1.4rem;">{q['question']}</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        last_feedback = st.session_state.get("sci_last_feedback")
+
+        if last_feedback and last_feedback.get("idx") == current:
+            if last_feedback["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer" style="text-align:center;">
+                    ✅ <strong>Correct!</strong> 🎉
+                    <p style="color:#065f46;font-size:0.9rem;margin-top:0.3rem;">
+                        {q.get('explanation', '')}
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer" style="text-align:center;">
+                    Not quite! The answer is <strong>{last_feedback['correct_val']}</strong>
+                    <p style="color:#991b1b;font-size:0.9rem;margin-top:0.3rem;">
+                        {q.get('explanation', '')}
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("")
+            _, col_next, _ = st.columns([1, 2, 1])
+            with col_next:
+                if current < total - 1:
+                    if st.button("Next ➡️", key="sci_next", width="stretch", type="primary"):
+                        st.session_state.sci_current += 1
+                        st.session_state.sci_last_feedback = None
+                        st.rerun()
+                else:
+                    if st.button("🎉 See Results!", key="sci_results", width="stretch", type="primary"):
+                        st.session_state.sci_current = total
+                        st.session_state.sci_last_feedback = None
+                        st.rerun()
+        else:
+            ans_col1, ans_col2 = st.columns(2, gap="medium")
+            for i, opt in enumerate(q["options"]):
+                col = ans_col1 if i % 2 == 0 else ans_col2
+                with col:
+                    label = str(opt)
+                    if st.button(label, key=f"sci_opt_{current}_{i}", width="stretch", type="primary"):
+                        is_correct = (i == q["answer"])
+                        st.session_state.sci_answers.append({
+                            "picked": opt,
+                            "correct_val": q["options"][q["answer"]],
+                            "correct": is_correct,
+                            "explanation": q.get("explanation", ""),
+                        })
+                        st.session_state.sci_last_feedback = {
+                            "idx": current,
+                            "picked": opt,
+                            "correct_val": q["options"][q["answer"]],
+                            "correct": is_correct,
+                        }
+                        st.rerun()
+
+    else:
+        answers = st.session_state.sci_answers
+        correct_count = sum(1 for a in answers if a["correct"])
+        score_pct = int((correct_count / total) * 100) if total > 0 else 0
+        time_spent = int(time.time() - st.session_state.sci_start_time) if st.session_state.sci_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+
+        if user:
+            db.save_activity_score(
+                user["id"], "Science", "Quiz",
+                score_pct, 100, f"{correct_count}/{total} correct", time_spent,
+            )
+
+        if score_pct == 100:
+            res_emoji, message, res_color = "🏆", "Perfect score! You're a science superstar!", "#10b981"
+        elif score_pct >= 80:
+            res_emoji, message, res_color = "🔥", "Excellent! You really know your science!", "#3b82f6"
+        elif score_pct >= 60:
+            res_emoji, message, res_color = "🔬", "Good job! Keep exploring and learning!", "#f59e0b"
+        else:
+            res_emoji, message, res_color = "💪", "Keep it up! Science gets easier with practice!", "#ef4444"
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:2rem;background:{res_color}10;border-radius:20px;
+             border:3px solid {res_color};margin-top:1rem;">
+            <div style="font-size:5rem;">{res_emoji}</div>
+            <h2 style="color:{res_color};margin:0.5rem 0;font-size:2rem;">
+                {correct_count} out of {total} correct!
+            </h2>
+            <p style="font-size:1.2rem;color:#4b5563;">{message}</p>
+            <p style="color:#9ca3af;">⏱️ Time: {minutes}m {seconds}s</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+        st.markdown("### 📋 Review")
+        for idx, (q, ans) in enumerate(zip(questions, answers)):
+            if ans["correct"]:
+                st.markdown(f"""
+                <div class="correct-answer">
+                    <strong>Q{idx+1}:</strong> {q['question']}
+                    &nbsp; ✅ <strong>{ans['correct_val']}</strong>
+                    <p style="color:#065f46;font-size:0.85rem;margin:0.3rem 0 0 0;">
+                        {q.get('explanation', '')}
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer">
+                    <strong>Q{idx+1}:</strong> {q['question']}
+                    &nbsp; ❌ You said: <strong>{ans['picked']}</strong>
+                    &nbsp; ✅ Answer: <strong>{ans['correct_val']}</strong>
+                    <p style="color:#991b1b;font-size:0.85rem;margin:0.3rem 0 0 0;">
+                        {q.get('explanation', '')}
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_r1, col_r2 = st.columns(2)
+        with col_r1:
+            if st.button("🔬 Quiz Again", key="sci_again_btn", width="stretch", type="primary"):
+                back_to_science_home()
+                st.rerun()
+        with col_r2:
+            if st.button("🏠 Dashboard", key="sci_dashboard", width="stretch"):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.sci_questions = []
+                st.session_state.sci_current = 0
+                st.session_state.sci_answers = []
+                st.rerun()
+
+
+# ──────────────────────────────────────────────
 # PAGE: Problem Solver Home
 # ──────────────────────────────────────────────
 def render_problem_solver_home():
@@ -3892,6 +4248,10 @@ elif page == "mental_math_home":
     render_mental_math_home()
 elif page == "mental_math_practice":
     render_mental_math_practice()
+elif page == "science_home":
+    render_science_home()
+elif page == "science_practice":
+    render_science_practice()
 elif page == "problem_solver_home":
     render_problem_solver_home()
 elif page == "problem_solver_practice":
