@@ -8,6 +8,32 @@ continents, capitals, landmarks, nature, flags, and world culture.
 
 import random
 
+# ISO 3166-1 alpha-2 codes for flag images (flagcdn.com)
+COUNTRY_FLAG_CODES = {
+    "Canada": "ca", "Japan": "jp", "United States": "us", "Australia": "au",
+    "India": "in", "France": "fr", "Switzerland": "ch", "China": "cn",
+    "Brazil": "br", "Mexico": "mx", "Turkey": "tr", "United Kingdom": "gb",
+    "Bangladesh": "bd", "Indonesia": "id", "Germany": "de", "Italy": "it",
+    "Vietnam": "vn", "New Zealand": "nz", "South Korea": "kr", "Poland": "pl",
+    "South Africa": "za", "Argentina": "ar", "Spain": "es", "Russia": "ru",
+    "Egypt": "eg", "Peru": "pe", "Ireland": "ie", "Belgium": "be",
+    "Sweden": "se", "Norway": "no", "Denmark": "dk", "Finland": "fi",
+    "Greece": "gr", "Thailand": "th", "Pakistan": "pk", "Nigeria": "ng",
+    "Colombia": "co", "Chile": "cl", "Austria": "at", "Nepal": "np",
+    "Iran": "ir", "Saudi Arabia": "sa", "Malaysia": "my", "Singapore": "sg",
+    "Philippines": "ph", "Taiwan": "tw", "Mongolia": "mn", "North Korea": "kp",
+    "Liberia": "lr",
+}
+
+
+def get_flag_url(country: str) -> str | None:
+    """Return the flagcdn.com URL for a country, or None if unknown."""
+    code = COUNTRY_FLAG_CODES.get(country)
+    if code:
+        return f"https://flagcdn.com/w320/{code}.png"
+    return None
+
+
 CATEGORIES = {
     "continents": {"name": "Continents & Oceans", "emoji": "🌍", "color": "#3b82f6"},
     "capitals": {"name": "Countries & Capitals", "emoji": "🏛️", "color": "#10b981"},

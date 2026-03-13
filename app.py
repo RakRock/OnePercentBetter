@@ -2694,6 +2694,23 @@ def render_map_explorer_practice():
                 </div>
                 """, unsafe_allow_html=True)
 
+            # Show flag image when the answer is a country
+            correct_answer = q["options"][q["answer"]]
+            flag_url = me.get_flag_url(correct_answer)
+            if not flag_url and q.get("country"):
+                flag_url = me.get_flag_url(q["country"])
+                correct_answer = q["country"]
+            if flag_url:
+                st.markdown(f"""
+                <div style="text-align:center;margin:1rem 0;">
+                    <img src="{flag_url}" alt="Flag of {correct_answer}"
+                         style="width:200px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15);"/>
+                    <p style="color:#6b7280;font-size:0.9rem;margin-top:0.3rem;">
+                        🏳️ Flag of {correct_answer}
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
+
             if q.get("lat") is not None and q.get("lon") is not None:
                 map_label = q.get("country") or q["options"][q["answer"]]
                 map_html = wmap.render_map_with_marker(q["lat"], q["lon"], label=map_label)
@@ -2780,6 +2797,21 @@ def render_map_explorer_practice():
             cat_emoji = cat_info.get("emoji", "🌍")
             cat_name = cat_info.get("name", "Geography")
 
+            flag_html = ""
+            correct_country = q["options"][q["answer"]]
+            flag_url = me.get_flag_url(correct_country)
+            if not flag_url and q.get("country"):
+                flag_url = me.get_flag_url(q["country"])
+                correct_country = q["country"]
+            if flag_url:
+                flag_html = (
+                    f'<div style="margin-top:0.5rem;">'
+                    f'<img src="{flag_url}" alt="Flag of {correct_country}" '
+                    f'style="width:120px;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/>'
+                    f'<span style="color:#6b7280;font-size:0.8rem;margin-left:0.5rem;">'
+                    f'🏳️ {correct_country}</span></div>'
+                )
+
             if ans["correct"]:
                 st.markdown(f"""
                 <div class="correct-answer">
@@ -2787,6 +2819,7 @@ def render_map_explorer_practice():
                     <strong>Q{idx+1}:</strong> {q['question']}<br>
                     ✅ <strong>{ans['correct_val']}</strong>
                     <br><em style="color:#6b7280;">{q.get('explanation', '')}</em>
+                    {flag_html}
                 </div>
                 """, unsafe_allow_html=True)
             else:
@@ -2797,6 +2830,7 @@ def render_map_explorer_practice():
                     ❌ You said: <strong>{ans['picked']}</strong>
                     &nbsp; ✅ Answer: <strong>{ans['correct_val']}</strong>
                     <br><em style="color:#6b7280;">{q.get('explanation', '')}</em>
+                    {flag_html}
                 </div>
                 """, unsafe_allow_html=True)
 
