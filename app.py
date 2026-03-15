@@ -361,6 +361,28 @@ if "mm_last_feedback" not in st.session_state:
     st.session_state.mm_last_feedback = None
 if "mm_start_time" not in st.session_state:
     st.session_state.mm_start_time = None
+# Logo Identifier state
+if "logo_questions" not in st.session_state:
+    st.session_state.logo_questions = []
+if "logo_current" not in st.session_state:
+    st.session_state.logo_current = 0
+if "logo_answers" not in st.session_state:
+    st.session_state.logo_answers = []
+if "logo_last_feedback" not in st.session_state:
+    st.session_state.logo_last_feedback = None
+if "logo_start_time" not in st.session_state:
+    st.session_state.logo_start_time = None
+# Movie Buff state
+if "movie_questions" not in st.session_state:
+    st.session_state.movie_questions = []
+if "movie_current" not in st.session_state:
+    st.session_state.movie_current = 0
+if "movie_answers" not in st.session_state:
+    st.session_state.movie_answers = []
+if "movie_last_feedback" not in st.session_state:
+    st.session_state.movie_last_feedback = None
+if "movie_start_time" not in st.session_state:
+    st.session_state.movie_start_time = None
 # Science Corner state
 if "sci_questions" not in st.session_state:
     st.session_state.sci_questions = []
@@ -418,6 +440,10 @@ def select_activity(activity):
         st.session_state.current_page = "mental_math_home"
     elif activity == "Science":
         st.session_state.current_page = "science_home"
+    elif activity == "MovieBuff":
+        st.session_state.current_page = "movie_buff_home"
+    elif activity == "LogoID":
+        st.session_state.current_page = "logo_id_home"
 
 
 def start_story(story_id):
@@ -586,6 +612,40 @@ def back_to_science_home():
     st.session_state.sci_current = 0
     st.session_state.sci_answers = []
     st.session_state.sci_last_feedback = None
+
+
+def start_movie_quiz(questions):
+    st.session_state.current_page = "movie_buff_practice"
+    st.session_state.movie_questions = questions
+    st.session_state.movie_current = 0
+    st.session_state.movie_answers = []
+    st.session_state.movie_last_feedback = None
+    st.session_state.movie_start_time = time.time()
+
+
+def back_to_movie_home():
+    st.session_state.current_page = "movie_buff_home"
+    st.session_state.movie_questions = []
+    st.session_state.movie_current = 0
+    st.session_state.movie_answers = []
+    st.session_state.movie_last_feedback = None
+
+
+def start_logo_quiz(questions):
+    st.session_state.current_page = "logo_id_practice"
+    st.session_state.logo_questions = questions
+    st.session_state.logo_current = 0
+    st.session_state.logo_answers = []
+    st.session_state.logo_last_feedback = None
+    st.session_state.logo_start_time = time.time()
+
+
+def back_to_logo_home():
+    st.session_state.current_page = "logo_id_home"
+    st.session_state.logo_questions = []
+    st.session_state.logo_current = 0
+    st.session_state.logo_answers = []
+    st.session_state.logo_last_feedback = None
 
 
 # ──────────────────────────────────────────────
@@ -813,6 +873,21 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🔬 Science Corner", key="btn_science", width="stretch", type="primary"):
                 select_activity("Science")
+                st.rerun()
+
+        st.markdown("")
+        act_row4_c1, act_row4_c2 = st.columns(2, gap="large")
+        with act_row4_c1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #f59e0b;">
+                <div style="font-size: 3rem;">🏷️</div>
+                <h3 style="margin: 0.5rem 0;">Logo Identifier</h3>
+                <p style="color: #6b7280;">Guess the brand from its logo!</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🏷️ Logo Identifier", key="btn_logo_id", width="stretch", type="primary"):
+                select_activity("LogoID")
                 st.rerun()
 
     elif name == "Sangeetha":
@@ -3531,6 +3606,624 @@ def render_science_practice():
 
 
 # ──────────────────────────────────────────────
+# PAGE: Logo Identifier Home
+# ──────────────────────────────────────────────
+def render_logo_id_home():
+    import logo_identifier_content as li
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="logo_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">🏷️ {name}'s Logo Identifier</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">
+            Can you name the brand from its logo? 10 questions per quiz!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    today_logo = db.get_today_scores(user["id"], activity_type="LogoID") if user else []
+    total_logo = db.get_scores_history(user["id"], activity_type="LogoID", days=365) if user else []
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">📅 {len(today_logo)}</div>'
+            f'<div class="score-label">Quizzes Today</div></div>',
+            unsafe_allow_html=True,
+        )
+    with col2:
+        if today_logo:
+            best = max(s["score"] for s in today_logo)
+            st.markdown(
+                f'<div class="score-card"><div class="score-number">🎯 {best}%</div>'
+                f'<div class="score-label">Today\'s Best</div></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                '<div class="score-card"><div class="score-number">🎯 —</div>'
+                '<div class="score-label">Today\'s Best</div></div>',
+                unsafe_allow_html=True,
+            )
+    with col3:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">⭐ {len(total_logo)}</div>'
+            f'<div class="score-label">Total Quizzes</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    if today_logo:
+        best = max(s["score"] for s in today_logo)
+        st.markdown(f"""
+        <div style="text-align:center; padding:1rem; background:#fffbeb; border-radius:16px;
+             border:2px solid #f59e0b; margin-bottom:1rem;">
+            <span style="font-size:2rem;">🏷️</span>
+            <p style="margin:0.3rem 0; font-size:1.1rem; color:#92400e;">
+                <strong>{len(today_logo)} quiz{'zes' if len(today_logo) > 1 else ''} today!</strong>
+                &nbsp; Best score: <strong>{best}%</strong>
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="text-align:center; padding:1.5rem;">
+        <div style="font-size: 4rem;">🏷️</div>
+        <h3 style="margin: 0.5rem 0;">{"Ready for another round?" if today_logo else "Think you know your logos?"}</h3>
+        <p style="color: #6b7280;">
+            Tech, Food, Sports, Cars, Entertainment & Fashion!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    category_choice = st.selectbox(
+        "Focus on a category (optional)",
+        ["All Categories (Mixed)"] + [
+            f"{li.CATEGORIES[k]['emoji']} {li.CATEGORIES[k]['name']}"
+            for k in li.CATEGORIES
+        ],
+        key="logo_category_filter",
+    )
+
+    selected_cat = None
+    if category_choice != "All Categories (Mixed)":
+        for k, v in li.CATEGORIES.items():
+            if v["name"] in category_choice:
+                selected_cat = k
+                break
+
+    _, col_btn, _ = st.columns([1, 2, 1])
+    with col_btn:
+        btn_label = "🏷️ New Quiz" if today_logo else "🏷️ Start Quiz"
+        if st.button(btn_label, key="logo_start", width="stretch", type="primary"):
+            questions = li.generate_quiz(10, category=selected_cat)
+            start_logo_quiz(questions)
+            st.rerun()
+
+    counts = li.get_category_counts()
+    st.markdown("---")
+    st.markdown("#### 📚 Brand Collection")
+    cols = st.columns(len(li.CATEGORIES))
+    for i, (cat_id, cat_info) in enumerate(li.CATEGORIES.items()):
+        with cols[i]:
+            st.markdown(
+                f'<div style="text-align:center;padding:0.8rem;background:{cat_info["color"]}15;'
+                f'border-radius:12px;border:1px solid {cat_info["color"]}40;">'
+                f'<div style="font-size:1.5rem;">{cat_info["emoji"]}</div>'
+                f'<div style="font-weight:600;font-size:0.85rem;">{cat_info["name"]}</div>'
+                f'<div style="color:#6b7280;font-size:0.8rem;">{counts.get(cat_id, 0)} brands</div>'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+
+
+# ──────────────────────────────────────────────
+# PAGE: Logo Identifier Practice
+# ──────────────────────────────────────────────
+def render_logo_id_practice():
+    import logo_identifier_content as li
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    questions = st.session_state.logo_questions
+    current = st.session_state.logo_current
+
+    if not questions:
+        back_to_logo_home()
+        st.rerun()
+        return
+
+    total = len(questions)
+
+    st.markdown("""
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+        <h1 style="color: #f59e0b; margin: 0.3rem 0; font-size: 2.2rem;">🏷️ Logo Identifier</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    progress = (current / total) if total > 0 else 0
+    st.markdown(f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,#f59e0b,#ef4444);
+             border-radius:10px;transition:width 0.4s ease;"></div>
+    </div>
+    <div style="text-align:center;color:#6b7280;margin-top:-0.8rem;margin-bottom:1rem;font-size:0.9rem;">
+        Question {min(current + 1, total)} of {total}
+    </div>
+    """, unsafe_allow_html=True)
+
+    if current < total:
+        q = questions[current]
+        cat_info = li.CATEGORIES.get(q["category"], {})
+        logo_url = q["_logo_url"]
+        options = q["_shuffled_options"]
+        answer_idx = q["_answer_idx"]
+
+        logo_col, q_col = st.columns([1, 2], gap="medium")
+        with logo_col:
+            st.markdown(f"""
+            <div style="text-align:center;padding:1.5rem;background:white;border-radius:16px;
+                 box-shadow:0 4px 20px rgba(0,0,0,0.08);border:2px solid #e5e7eb;">
+                <img src="{logo_url}" alt="Logo"
+                     style="width:180px;height:180px;object-fit:contain;image-rendering:auto;"
+                     onerror="this.style.display='none';this.parentElement.innerHTML+='<div style=\\'font-size:4rem;\\'>❓</div><p style=\\'color:#9ca3af;\\'>Logo unavailable</p>';">
+                <p style="margin:0.8rem 0 0 0;color:#9ca3af;font-size:0.85rem;">
+                    {cat_info.get('emoji','')} {cat_info.get('name','')}
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+
+        with q_col:
+            st.markdown(f"""
+            <div style="padding:1rem 0;">
+                <h3 style="margin:0 0 0.5rem 0;font-size:1.4rem;color:#1f2937;">
+                    Which company uses this logo?
+                </h3>
+            </div>
+            """, unsafe_allow_html=True)
+
+            hint_text = q.get("hint", "")
+            if hint_text:
+                with st.expander("💡 Need a hint?"):
+                    st.markdown(f"*{hint_text}*")
+
+            feedback = st.session_state.logo_last_feedback
+
+            if feedback and feedback.get("question_id") == q["id"]:
+                for i, opt in enumerate(options):
+                    if i == answer_idx:
+                        st.markdown(
+                            f'<div style="padding:0.8rem 1.2rem;border-radius:12px;margin:0.4rem 0;'
+                            f'background:#dcfce7;border:2px solid #22c55e;font-weight:600;">'
+                            f'✅ {opt}</div>',
+                            unsafe_allow_html=True,
+                        )
+                    elif i == feedback.get("selected") and not feedback.get("correct"):
+                        st.markdown(
+                            f'<div style="padding:0.8rem 1.2rem;border-radius:12px;margin:0.4rem 0;'
+                            f'background:#fee2e2;border:2px solid #ef4444;text-decoration:line-through;">'
+                            f'❌ {opt}</div>',
+                            unsafe_allow_html=True,
+                        )
+                    else:
+                        st.markdown(
+                            f'<div style="padding:0.8rem 1.2rem;border-radius:12px;margin:0.4rem 0;'
+                            f'background:#f9fafb;border:1px solid #e5e7eb;color:#9ca3af;">'
+                            f'{opt}</div>',
+                            unsafe_allow_html=True,
+                        )
+
+                if feedback.get("correct"):
+                    st.success(f"🎉 Correct! {q.get('fun_fact', '')}")
+                else:
+                    st.error(f"Not quite! {q.get('fun_fact', '')}")
+
+                st.markdown("")
+                next_label = "Next Logo ➡️" if current + 1 < total else "See Results 🏆"
+                if st.button(next_label, key=f"logo_next_{current}", width="stretch", type="primary"):
+                    st.session_state.logo_current += 1
+                    st.session_state.logo_last_feedback = None
+                    st.rerun()
+            else:
+                opt_cols = st.columns(2)
+                for i, opt in enumerate(options):
+                    with opt_cols[i % 2]:
+                        if st.button(opt, key=f"logo_opt_{current}_{i}", width="stretch"):
+                            is_correct = i == answer_idx
+                            st.session_state.logo_answers.append({
+                                "company": q["company"],
+                                "domain": q["domain"],
+                                "selected": i,
+                                "selected_text": opt,
+                                "correct": is_correct,
+                                "fun_fact": q.get("fun_fact", ""),
+                                "category": q.get("category", ""),
+                                "logo_url": logo_url,
+                            })
+                            st.session_state.logo_last_feedback = {
+                                "question_id": q["id"],
+                                "selected": i,
+                                "correct": is_correct,
+                            }
+                            st.rerun()
+
+    else:
+        answers = st.session_state.logo_answers
+        correct_count = sum(1 for a in answers if a["correct"])
+        score_pct = int((correct_count / total) * 100) if total > 0 else 0
+        time_spent = int(time.time() - st.session_state.logo_start_time) if st.session_state.logo_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+
+        if user:
+            db.save_activity_score(
+                user["id"], "LogoID", "Quiz",
+                score_pct, 100, f"{correct_count}/{total} correct", time_spent,
+            )
+
+        if score_pct >= 80:
+            emoji, msg = "🏆", "Amazing! You're a brand genius!"
+        elif score_pct >= 60:
+            emoji, msg = "⭐", "Great eye! You know your logos!"
+        elif score_pct >= 40:
+            emoji, msg = "🏷️", "Good start! Keep looking around — logos are everywhere!"
+        else:
+            emoji, msg = "👀", "Time to pay more attention to those logos around you!"
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:2rem;background:linear-gradient(135deg,#fffbeb,#fef2f2);
+             border-radius:20px;margin:1rem 0;">
+            <div style="font-size:4rem;">{emoji}</div>
+            <h2 style="margin:0.5rem 0;">{score_pct}%</h2>
+            <p style="font-size:1.2rem;color:#374151;">{msg}</p>
+            <p style="color:#6b7280;">{correct_count} of {total} correct &nbsp;|&nbsp; ⏱️ {minutes}m {seconds}s</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+        _, c1, c2, _ = st.columns([1, 2, 2, 1])
+        with c1:
+            if st.button("🏷️ New Quiz", key="logo_new_quiz", width="stretch", type="primary"):
+                back_to_logo_home()
+                st.rerun()
+        with c2:
+            if st.button("← Dashboard", key="logo_to_dash", width="stretch"):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.selected_activity = None
+                st.rerun()
+
+        st.markdown("---")
+        st.markdown("### 📋 Review Answers")
+
+        for i, a in enumerate(answers):
+            icon = "✅" if a["correct"] else "❌"
+            with st.expander(f"{icon} Q{i+1}: {a['company']}"):
+                rev_cols = st.columns([1, 3])
+                with rev_cols[0]:
+                    st.markdown(
+                        f'<img src="{a["logo_url"]}" style="width:80px;height:80px;object-fit:contain;">',
+                        unsafe_allow_html=True,
+                    )
+                with rev_cols[1]:
+                    if a["correct"]:
+                        st.markdown(f"**Your answer:** {a['selected_text']} ✅")
+                    else:
+                        st.markdown(f"**Your answer:** {a['selected_text']} ❌")
+                        st.markdown(f"**Correct answer:** {a['company']} ✅")
+                    if a.get("fun_fact"):
+                        st.info(f"💡 {a['fun_fact']}")
+
+
+# ──────────────────────────────────────────────
+# PAGE: Movie Buff Home
+# ──────────────────────────────────────────────
+def render_movie_buff_home():
+    import movie_buff_content as mb
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="movie_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">🎬 {name}'s Movie Buff</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">
+            Kid-friendly movie trivia — 10 questions per quiz!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    today_movie = db.get_today_scores(user["id"], activity_type="MovieBuff") if user else []
+    total_movie = db.get_scores_history(user["id"], activity_type="MovieBuff", days=365) if user else []
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">📅 {len(today_movie)}</div>'
+            f'<div class="score-label">Quizzes Today</div></div>',
+            unsafe_allow_html=True,
+        )
+    with col2:
+        if today_movie:
+            best = max(s["score"] for s in today_movie)
+            st.markdown(
+                f'<div class="score-card"><div class="score-number">🎯 {best}%</div>'
+                f'<div class="score-label">Today\'s Best</div></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                '<div class="score-card"><div class="score-number">🎯 —</div>'
+                '<div class="score-label">Today\'s Best</div></div>',
+                unsafe_allow_html=True,
+            )
+    with col3:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">⭐ {len(total_movie)}</div>'
+            f'<div class="score-label">Total Quizzes</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    if today_movie:
+        best = max(s["score"] for s in today_movie)
+        st.markdown(f"""
+        <div style="text-align:center; padding:1rem; background:#fff1f2; border-radius:16px;
+             border:2px solid #e11d48; margin-bottom:1rem;">
+            <span style="font-size:2rem;">🎬</span>
+            <p style="margin:0.3rem 0; font-size:1.1rem; color:#9f1239;">
+                <strong>{len(today_movie)} quiz{'zes' if len(today_movie) > 1 else ''} today!</strong>
+                &nbsp; Best score: <strong>{best}%</strong>
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="text-align:center; padding:1.5rem;">
+        <div style="font-size: 4rem;">🍿</div>
+        <h3 style="margin: 0.5rem 0;">{"Ready for another round?" if today_movie else "Ready for movie trivia?"}</h3>
+        <p style="color: #6b7280;">
+            Animated, Adventure, Superheroes, Comedy & Fantasy!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    category_choice = st.selectbox(
+        "Focus on a genre (optional)",
+        ["All Genres (Mixed)"] + [
+            f"{mb.CATEGORIES[k]['emoji']} {mb.CATEGORIES[k]['name']}"
+            for k in mb.CATEGORIES
+        ],
+        key="movie_category_filter",
+    )
+
+    selected_cat = None
+    if category_choice != "All Genres (Mixed)":
+        for k, v in mb.CATEGORIES.items():
+            if v["name"] in category_choice:
+                selected_cat = k
+                break
+
+    _, col_btn, _ = st.columns([1, 2, 1])
+    with col_btn:
+        btn_label = "🎬 New Quiz" if today_movie else "🎬 Start Quiz"
+        if st.button(btn_label, key="movie_start", width="stretch", type="primary"):
+            questions = mb.generate_quiz(10, category=selected_cat)
+            start_movie_quiz(questions)
+            st.rerun()
+
+    counts = mb.get_category_counts()
+    st.markdown("---")
+    st.markdown("#### 📚 Question Bank")
+    cols = st.columns(len(mb.CATEGORIES))
+    for i, (cat_id, cat_info) in enumerate(mb.CATEGORIES.items()):
+        with cols[i]:
+            st.markdown(
+                f'<div style="text-align:center;padding:0.8rem;background:{cat_info["color"]}15;'
+                f'border-radius:12px;border:1px solid {cat_info["color"]}40;">'
+                f'<div style="font-size:1.5rem;">{cat_info["emoji"]}</div>'
+                f'<div style="font-weight:600;font-size:0.85rem;">{cat_info["name"]}</div>'
+                f'<div style="color:#6b7280;font-size:0.8rem;">{counts.get(cat_id, 0)} questions</div>'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+
+
+# ──────────────────────────────────────────────
+# PAGE: Movie Buff Practice
+# ──────────────────────────────────────────────
+def render_movie_buff_practice():
+    import movie_buff_content as mb
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    questions = st.session_state.movie_questions
+    current = st.session_state.movie_current
+
+    if not questions:
+        back_to_movie_home()
+        st.rerun()
+        return
+
+    total = len(questions)
+
+    st.markdown("""
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+        <h1 style="color: #e11d48; margin: 0.3rem 0; font-size: 2.2rem;">🎬 Movie Buff</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    progress = (current / total) if total > 0 else 0
+    st.markdown(f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,#e11d48,#f59e0b);
+             border-radius:10px;transition:width 0.4s ease;"></div>
+    </div>
+    <div style="text-align:center;color:#6b7280;margin-top:-0.8rem;margin-bottom:1rem;font-size:0.9rem;">
+        Question {min(current + 1, total)} of {total}
+    </div>
+    """, unsafe_allow_html=True)
+
+    if current < total:
+        q = questions[current]
+        cat_info = mb.CATEGORIES.get(q["category"], {})
+        cat_emoji = cat_info.get("emoji", "🎬")
+        cat_name = cat_info.get("name", "Movies")
+
+        st.markdown(f"""
+        <div style="background:white;border-radius:16px;padding:1.5rem 2rem;
+             box-shadow:0 2px 12px rgba(0,0,0,0.06);border-left:5px solid {cat_info.get('color','#e11d48')};">
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.8rem;">
+                <span style="font-size:1.3rem;">{cat_emoji}</span>
+                <span style="font-size:0.85rem;color:#6b7280;font-weight:600;">{cat_name}</span>
+            </div>
+            <h3 style="margin:0;font-size:1.3rem;color:#1f2937;">{q['question']}</h3>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+
+        feedback = st.session_state.movie_last_feedback
+
+        if feedback and feedback.get("question_id") == q["id"]:
+            for i, opt in enumerate(q["options"]):
+                if i == q["answer"]:
+                    st.markdown(
+                        f'<div style="padding:0.8rem 1.2rem;border-radius:12px;margin:0.4rem 0;'
+                        f'background:#dcfce7;border:2px solid #22c55e;font-weight:600;">'
+                        f'✅ {opt}</div>',
+                        unsafe_allow_html=True,
+                    )
+                elif i == feedback.get("selected") and not feedback.get("correct"):
+                    st.markdown(
+                        f'<div style="padding:0.8rem 1.2rem;border-radius:12px;margin:0.4rem 0;'
+                        f'background:#fee2e2;border:2px solid #ef4444;text-decoration:line-through;">'
+                        f'❌ {opt}</div>',
+                        unsafe_allow_html=True,
+                    )
+                else:
+                    st.markdown(
+                        f'<div style="padding:0.8rem 1.2rem;border-radius:12px;margin:0.4rem 0;'
+                        f'background:#f9fafb;border:1px solid #e5e7eb;color:#9ca3af;">'
+                        f'{opt}</div>',
+                        unsafe_allow_html=True,
+                    )
+
+            if feedback.get("correct"):
+                st.success(f"🎉 Correct! {q.get('explanation', '')}")
+            else:
+                st.error(f"Not quite! {q.get('explanation', '')}")
+
+            st.markdown("")
+            _, btn_col, _ = st.columns([1, 2, 1])
+            with btn_col:
+                next_label = "Next Question ➡️" if current + 1 < total else "See Results 🏆"
+                if st.button(next_label, key=f"movie_next_{current}", width="stretch", type="primary"):
+                    st.session_state.movie_current += 1
+                    st.session_state.movie_last_feedback = None
+                    st.rerun()
+        else:
+            opt_cols = st.columns(2)
+            for i, opt in enumerate(q["options"]):
+                with opt_cols[i % 2]:
+                    if st.button(opt, key=f"movie_opt_{current}_{i}", width="stretch"):
+                        is_correct = i == q["answer"]
+                        st.session_state.movie_answers.append({
+                            "question": q["question"],
+                            "selected": i,
+                            "selected_text": opt,
+                            "correct_answer": q["options"][q["answer"]],
+                            "correct": is_correct,
+                            "explanation": q.get("explanation", ""),
+                            "category": q.get("category", ""),
+                        })
+                        st.session_state.movie_last_feedback = {
+                            "question_id": q["id"],
+                            "selected": i,
+                            "correct": is_correct,
+                        }
+                        st.rerun()
+
+    else:
+        answers = st.session_state.movie_answers
+        correct_count = sum(1 for a in answers if a["correct"])
+        score_pct = int((correct_count / total) * 100) if total > 0 else 0
+        time_spent = int(time.time() - st.session_state.movie_start_time) if st.session_state.movie_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+
+        if user:
+            db.save_activity_score(
+                user["id"], "MovieBuff", "Quiz",
+                score_pct, 100, f"{correct_count}/{total} correct", time_spent,
+            )
+
+        if score_pct >= 80:
+            emoji, msg = "🏆", "Amazing! You're a true Movie Buff!"
+        elif score_pct >= 60:
+            emoji, msg = "⭐", "Great job! Keep watching and learning!"
+        elif score_pct >= 40:
+            emoji, msg = "🎬", "Good effort! Time to watch more movies!"
+        else:
+            emoji, msg = "🍿", "Keep going! Every movie buff starts somewhere!"
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:2rem;background:linear-gradient(135deg,#fff1f2,#fef3c7);
+             border-radius:20px;margin:1rem 0;">
+            <div style="font-size:4rem;">{emoji}</div>
+            <h2 style="margin:0.5rem 0;">{score_pct}%</h2>
+            <p style="font-size:1.2rem;color:#374151;">{msg}</p>
+            <p style="color:#6b7280;">{correct_count} of {total} correct &nbsp;|&nbsp; ⏱️ {minutes}m {seconds}s</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+        _, c1, c2, _ = st.columns([1, 2, 2, 1])
+        with c1:
+            if st.button("🎬 New Quiz", key="movie_new_quiz", width="stretch", type="primary"):
+                back_to_movie_home()
+                st.rerun()
+        with c2:
+            if st.button("← Dashboard", key="movie_to_dash", width="stretch"):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.selected_activity = None
+                st.rerun()
+
+        st.markdown("---")
+        st.markdown("### 📋 Review Answers")
+
+        for i, a in enumerate(answers):
+            cat_info = mb.CATEGORIES.get(a["category"], {})
+            icon = "✅" if a["correct"] else "❌"
+            bg = "#f0fdf4" if a["correct"] else "#fef2f2"
+            border = "#22c55e" if a["correct"] else "#ef4444"
+
+            with st.expander(f"{icon} Q{i+1}: {a['question']}"):
+                if a["correct"]:
+                    st.markdown(f"**Your answer:** {a['selected_text']} ✅")
+                else:
+                    st.markdown(f"**Your answer:** {a['selected_text']} ❌")
+                    st.markdown(f"**Correct answer:** {a['correct_answer']} ✅")
+                if a.get("explanation"):
+                    st.info(f"💡 {a['explanation']}")
+
+
+# ──────────────────────────────────────────────
 # PAGE: Problem Solver Home
 # ──────────────────────────────────────────────
 def render_problem_solver_home():
@@ -4281,6 +4974,14 @@ elif page == "science_home":
     render_science_home()
 elif page == "science_practice":
     render_science_practice()
+elif page == "logo_id_home":
+    render_logo_id_home()
+elif page == "logo_id_practice":
+    render_logo_id_practice()
+elif page == "movie_buff_home":
+    render_movie_buff_home()
+elif page == "movie_buff_practice":
+    render_movie_buff_practice()
 elif page == "problem_solver_home":
     render_problem_solver_home()
 elif page == "problem_solver_practice":
