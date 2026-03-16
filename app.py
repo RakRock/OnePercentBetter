@@ -394,6 +394,17 @@ if "sci_last_feedback" not in st.session_state:
     st.session_state.sci_last_feedback = None
 if "sci_start_time" not in st.session_state:
     st.session_state.sci_start_time = None
+# Cube Addition state
+if "cube_problem" not in st.session_state:
+    st.session_state.cube_problem = None
+if "cube_phase" not in st.session_state:
+    st.session_state.cube_phase = "intro"
+if "cube_score" not in st.session_state:
+    st.session_state.cube_score = 0
+if "cube_total" not in st.session_state:
+    st.session_state.cube_total = 0
+if "cube_streak" not in st.session_state:
+    st.session_state.cube_streak = 0
 
 
 # ──────────────────────────────────────────────
@@ -444,6 +455,13 @@ def select_activity(activity):
         st.session_state.current_page = "movie_buff_home"
     elif activity == "LogoID":
         st.session_state.current_page = "logo_id_home"
+    elif activity == "CubeAddition":
+        st.session_state.current_page = "cube_addition"
+        st.session_state.cube_problem = None
+        st.session_state.cube_phase = "intro"
+        st.session_state.cube_score = 0
+        st.session_state.cube_total = 0
+        st.session_state.cube_streak = 0
 
 
 def start_story(story_id):
@@ -749,7 +767,7 @@ def render_user_dashboard():
         st.markdown("### 📚 Choose Your Activity")
         st.markdown("")
 
-        act_col1, act_col2, act_col3 = st.columns(3, gap="large")
+        act_col1, act_col2, act_col3, act_col4 = st.columns(4, gap="large")
         with act_col1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #10b981;">
@@ -787,6 +805,19 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("👁️ Sight Words", key="btn_sight_words", width="stretch", type="primary"):
                 select_activity("SightWords")
+                st.rerun()
+
+        with act_col4:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #ef4444;">
+                <div style="font-size: 3rem;">🧊</div>
+                <h3 style="margin: 0.5rem 0;">Cube Addition</h3>
+                <p style="color: #6b7280;">Learn adding with cubes!</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🧊 Cube Addition", key="btn_cube_add", width="stretch", type="primary"):
+                select_activity("CubeAddition")
                 st.rerun()
     elif name == "Arjun":
         st.markdown("### 📚 Choose Your Activity")
@@ -2386,10 +2417,11 @@ def render_sight_words_home():
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
 
-    cols = st.columns(3, gap="large")
+    num_levels = len(sw.LEVELS)
+    cols = st.columns(min(num_levels, 4), gap="large")
     for i, lvl in enumerate(sw.LEVELS):
         word_count = len(sw.WORD_BANK.get(lvl["id"], []))
-        with cols[i]:
+        with cols[i % len(cols)]:
             st.markdown(f"""
             <div class="math-level-card" style="background: linear-gradient(135deg, {lvl['color']}, {lvl['color']}cc);">
                 <div style="font-size: 2.8rem;">{lvl['emoji']}</div>
@@ -3765,23 +3797,40 @@ def render_logo_id_practice():
     if current < total:
         q = questions[current]
         cat_info = li.CATEGORIES.get(q["category"], {})
-        logo_url = q["_logo_url"]
         options = q["_shuffled_options"]
         answer_idx = q["_answer_idx"]
 
+        logo_img_name = q.get("_image") or q.get("image")
+        logo_img_path = os.path.join("brand_logos", f"{logo_img_name}.png") if logo_img_name else None
+        has_local_logo = logo_img_path and os.path.exists(logo_img_path)
+
         logo_col, q_col = st.columns([1, 2], gap="medium")
         with logo_col:
-            st.markdown(f"""
-            <div style="text-align:center;padding:1.5rem;background:white;border-radius:16px;
-                 box-shadow:0 4px 20px rgba(0,0,0,0.08);border:2px solid #e5e7eb;">
-                <img src="{logo_url}" alt="Logo"
-                     style="width:180px;height:180px;object-fit:contain;image-rendering:auto;"
-                     onerror="this.style.display='none';this.parentElement.innerHTML+='<div style=\\'font-size:4rem;\\'>❓</div><p style=\\'color:#9ca3af;\\'>Logo unavailable</p>';">
-                <p style="margin:0.8rem 0 0 0;color:#9ca3af;font-size:0.85rem;">
-                    {cat_info.get('emoji','')} {cat_info.get('name','')}
-                </p>
-            </div>
-            """, unsafe_allow_html=True)
+            if has_local_logo:
+                st.markdown(f"""
+                <div style="text-align:center;padding:1rem;background:white;border-radius:16px;
+                     box-shadow:0 4px 20px rgba(0,0,0,0.08);border:2px solid #e5e7eb;">
+                """, unsafe_allow_html=True)
+                st.image(logo_img_path, width=220)
+                st.markdown(f"""
+                    <p style="margin:0.3rem 0 0 0;color:#9ca3af;font-size:0.85rem;text-align:center;">
+                        {cat_info.get('emoji','')} {cat_info.get('name','')}
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                logo_url = q["_logo_url"]
+                st.markdown(f"""
+                <div style="text-align:center;padding:1.5rem;background:white;border-radius:16px;
+                     box-shadow:0 4px 20px rgba(0,0,0,0.08);border:2px solid #e5e7eb;">
+                    <img src="{logo_url}" alt="Logo"
+                         style="width:180px;height:180px;object-fit:contain;image-rendering:auto;"
+                         onerror="this.style.display='none';this.parentElement.innerHTML+='<div style=\\'font-size:4rem;\\'>❓</div><p style=\\'color:#9ca3af;\\'>Logo unavailable</p>';">
+                    <p style="margin:0.8rem 0 0 0;color:#9ca3af;font-size:0.85rem;">
+                        {cat_info.get('emoji','')} {cat_info.get('name','')}
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
 
         with q_col:
             st.markdown(f"""
@@ -3848,7 +3897,8 @@ def render_logo_id_practice():
                                 "correct": is_correct,
                                 "fun_fact": q.get("fun_fact", ""),
                                 "category": q.get("category", ""),
-                                "logo_url": logo_url,
+                                "logo_url": q["_logo_url"],
+                                "image": q.get("_image") or q.get("image"),
                             })
                             st.session_state.logo_last_feedback = {
                                 "question_id": q["id"],
@@ -3909,10 +3959,15 @@ def render_logo_id_practice():
             with st.expander(f"{icon} Q{i+1}: {a['company']}"):
                 rev_cols = st.columns([1, 3])
                 with rev_cols[0]:
-                    st.markdown(
-                        f'<img src="{a["logo_url"]}" style="width:80px;height:80px;object-fit:contain;">',
-                        unsafe_allow_html=True,
-                    )
+                    rev_img_name = a.get("image")
+                    rev_img_path = os.path.join("brand_logos", f"{rev_img_name}.png") if rev_img_name else None
+                    if rev_img_path and os.path.exists(rev_img_path):
+                        st.image(rev_img_path, width=80)
+                    else:
+                        st.markdown(
+                            f'<img src="{a["logo_url"]}" style="width:80px;height:80px;object-fit:contain;">',
+                            unsafe_allow_html=True,
+                        )
                 with rev_cols[1]:
                     if a["correct"]:
                         st.markdown(f"**Your answer:** {a['selected_text']} ✅")
@@ -4934,6 +4989,519 @@ def render_civics_practice():
 
 
 # ──────────────────────────────────────────────
+# PAGE: Cube Addition — Learn Adding with Shapes
+# ──────────────────────────────────────────────
+def render_cube_addition():
+    import random as _rnd
+
+    name = st.session_state.selected_user
+
+    # shape_id → (css_class_extra, border_radius, inner_html_fn, singular, plural, emoji)
+    SHAPE_TYPES = [
+        {
+            "id": "cube", "singular": "cube", "plural": "cubes",
+            "radius": "16px", "emoji": "🧊",
+            "inner": '<div class="shape-shine" style="border-radius:8px;"></div>',
+            "anim_left": "shapeBounceLeft", "anim_right": "shapeBounceRight",
+        },
+        {
+            "id": "star", "singular": "star", "plural": "stars",
+            "radius": "0", "emoji": "⭐",
+            "clip": "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+            "inner": '<div class="shape-shine" style="border-radius:0; top:25%; left:35%; width:20px; height:20px;"></div>',
+            "anim_left": "shapeSpinLeft", "anim_right": "shapeSpinRight",
+        },
+        {
+            "id": "heart", "singular": "heart", "plural": "hearts",
+            "radius": "0", "emoji": "❤️",
+            "clip": "path('M 40 70 Q 0 40 10 20 A 15 15 0 0 1 40 25 A 15 15 0 0 1 70 20 Q 80 40 40 70 Z')",
+            "inner": '<div class="shape-shine" style="border-radius:50%; top:18px; left:18px; width:14px; height:14px;"></div>',
+            "anim_left": "shapePulseLeft", "anim_right": "shapePulseRight",
+        },
+        {
+            "id": "balloon", "singular": "balloon", "plural": "balloons",
+            "radius": "50% 50% 50% 50% / 40% 40% 60% 60%", "emoji": "🎈",
+            "inner": '<div class="shape-shine" style="border-radius:50%; top:12px; left:12px;"></div><div class="balloon-string"></div>',
+            "anim_left": "shapeFloatLeft", "anim_right": "shapeFloatRight",
+        },
+        {
+            "id": "flower", "singular": "flower", "plural": "flowers",
+            "radius": "50%", "emoji": "🌸",
+            "inner": '<div class="flower-center"></div>',
+            "anim_left": "shapeBloomLeft", "anim_right": "shapeBloomRight",
+            "shadow_extra": ", 16px 0 0 -4px currentColor, -16px 0 0 -4px currentColor, 0 16px 0 -4px currentColor, 0 -16px 0 -4px currentColor",
+        },
+        {
+            "id": "diamond", "singular": "diamond", "plural": "diamonds",
+            "radius": "4px", "emoji": "💎",
+            "rotate_base": "rotate(45deg)",
+            "inner": '<div class="shape-shine" style="border-radius:4px; top:10px; left:10px; width:16px; height:16px;"></div>',
+            "anim_left": "shapeTumbleLeft", "anim_right": "shapeTumbleRight",
+        },
+        {
+            "id": "circle", "singular": "ball", "plural": "balls",
+            "radius": "50%", "emoji": "🔵",
+            "inner": '<div class="shape-shine" style="border-radius:50%;"></div>',
+            "anim_left": "shapeRollLeft", "anim_right": "shapeRollRight",
+        },
+    ]
+
+    COLORS = [
+        ("#3b82f6", "Blue"),   ("#ef4444", "Red"),    ("#f59e0b", "Yellow"),
+        ("#10b981", "Green"),  ("#8b5cf6", "Purple"), ("#f97316", "Orange"),
+        ("#ec4899", "Pink"),   ("#14b8a6", "Teal"),
+    ]
+
+    def new_problem():
+        total = _rnd.randint(2, 5)
+        a = _rnd.randint(1, total - 1)
+        b = total - a
+        c1, c2 = _rnd.sample(COLORS, 2)
+        shape = _rnd.choice(SHAPE_TYPES)
+        wrong_opts = [x for x in range(0, 6) if x != total]
+        distractors = _rnd.sample(wrong_opts, min(3, len(wrong_opts)))
+        jumbled = [total] + distractors
+        _rnd.shuffle(jumbled)
+        st.session_state.cube_problem = {
+            "a": a, "b": b, "total": total,
+            "color_a": c1, "color_b": c2,
+            "shape": shape,
+            "options": jumbled,
+        }
+        st.session_state.cube_phase = "show"
+
+    col_nav, _ = st.columns([1, 6])
+    with col_nav:
+        if st.button("← Back", key="cube_back"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="text-align:center; padding:0.5rem 0 0.5rem 0;">
+        <h1 style="font-size:2.5rem;">🧊 {name}'s Fun Addition</h1>
+        <p style="color:#6b7280; font-size:1.1rem;">Watch the shapes appear and count them up!</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    sc1, sc2, sc3 = st.columns(3)
+    with sc1:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">⭐ {st.session_state.cube_score}/{st.session_state.cube_total}</div>'
+            f'<div class="score-label">Score</div></div>', unsafe_allow_html=True)
+    with sc2:
+        pct = int(st.session_state.cube_score / st.session_state.cube_total * 100) if st.session_state.cube_total else 0
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">🎯 {pct}%</div>'
+            f'<div class="score-label">Accuracy</div></div>', unsafe_allow_html=True)
+    with sc3:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">🔥 {st.session_state.cube_streak}</div>'
+            f'<div class="score-label">Streak</div></div>', unsafe_allow_html=True)
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    # ── Intro phase ──
+    if st.session_state.cube_phase == "intro":
+        st.markdown("""
+        <div style="text-align:center; padding:2rem 0;">
+            <div style="font-size:4rem;">🧊 ⭐ ❤️ 🎈 🌸 💎 🔵</div>
+            <h2 style="margin:1rem 0;">Ready to add fun shapes?</h2>
+            <p style="color:#6b7280; font-size:1.15rem;">
+                Cubes, stars, hearts, balloons, flowers, diamonds &amp; balls!<br>
+                All totals are <b>5 or less</b> — you've got this!
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        _, bc, _ = st.columns([2, 1, 2])
+        with bc:
+            if st.button("🚀 Let's Go!", key="cube_start", width="stretch", type="primary"):
+                new_problem()
+                st.rerun()
+        return
+
+    # ── Problem is active ──
+    p = st.session_state.cube_problem
+    if not p:
+        new_problem()
+        st.rerun()
+        return
+
+    a, b, total = p["a"], p["b"], p["total"]
+    hex_a, name_a = p["color_a"]
+    hex_b, name_b = p["color_b"]
+    shape = p["shape"]
+    options = p["options"]
+
+    s_name = shape["singular"]
+    p_name = shape["plural"]
+    s_emoji = shape["emoji"]
+    s_radius = shape["radius"]
+    s_clip = shape.get("clip", "")
+    s_rotate = shape.get("rotate_base", "")
+    s_inner = shape["inner"]
+    anim_l = shape["anim_left"]
+    anim_r = shape["anim_right"]
+    flower_shadow = shape.get("shadow_extra", "")
+
+    sz = 80 if shape["id"] != "diamond" else 60
+    gap = 14
+
+    phase = st.session_state.cube_phase
+
+    clip_css = f"clip-path: {s_clip};" if s_clip else ""
+    rotate_css = f"transform: {s_rotate};" if s_rotate else ""
+
+    st.markdown(f"""
+    <style>
+        .cube-arena {{
+            display: flex; align-items: center; justify-content: center;
+            gap: 24px; padding: 2rem 1rem; min-height: 200px; flex-wrap: wrap;
+        }}
+        .cube-group {{
+            display: flex; gap: {gap}px; align-items: center;
+            flex-wrap: wrap; justify-content: center;
+        }}
+        .shape-block {{
+            width: {sz}px; height: {sz}px;
+            position: relative; opacity: 0;
+            border-radius: {s_radius};
+            {clip_css}
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15), inset 0 -4px 8px rgba(0,0,0,0.1) {flower_shadow};
+        }}
+        .shape-shine {{
+            position: absolute; top: 8px; left: 8px;
+            width: 22px; height: 22px;
+            background: rgba(255,255,255,0.45);
+        }}
+        .balloon-string {{
+            position: absolute; bottom: -18px; left: 50%;
+            width: 2px; height: 18px;
+            background: rgba(0,0,0,0.3); transform: translateX(-50%);
+        }}
+        .flower-center {{
+            position: absolute; top: 50%; left: 50%;
+            width: 22px; height: 22px;
+            background: #fbbf24; border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }}
+
+        /* ── bounce (cubes) ── */
+        @keyframes shapeBounceLeft {{
+            0% {{ opacity:0; transform: scale(0) translateX(-80px) {s_rotate}; }}
+            60% {{ opacity:1; transform: scale(1.2) translateX(0) {s_rotate}; }}
+            80% {{ transform: scale(0.9) {s_rotate}; }}
+            100% {{ opacity:1; transform: scale(1) {s_rotate}; }}
+        }}
+        @keyframes shapeBounceRight {{
+            0% {{ opacity:0; transform: scale(0) translateX(80px) {s_rotate}; }}
+            60% {{ opacity:1; transform: scale(1.2) translateX(0) {s_rotate}; }}
+            80% {{ transform: scale(0.9) {s_rotate}; }}
+            100% {{ opacity:1; transform: scale(1) {s_rotate}; }}
+        }}
+        /* ── spin (stars) ── */
+        @keyframes shapeSpinLeft {{
+            0% {{ opacity:0; transform: scale(0) rotate(-360deg); }}
+            70% {{ opacity:1; transform: scale(1.15) rotate(15deg); }}
+            100% {{ opacity:1; transform: scale(1) rotate(0deg); }}
+        }}
+        @keyframes shapeSpinRight {{
+            0% {{ opacity:0; transform: scale(0) rotate(360deg); }}
+            70% {{ opacity:1; transform: scale(1.15) rotate(-15deg); }}
+            100% {{ opacity:1; transform: scale(1) rotate(0deg); }}
+        }}
+        /* ── pulse (hearts) ── */
+        @keyframes shapePulseLeft {{
+            0% {{ opacity:0; transform: scale(0); }}
+            50% {{ opacity:1; transform: scale(1.35); }}
+            70% {{ transform: scale(0.85); }}
+            85% {{ transform: scale(1.1); }}
+            100% {{ opacity:1; transform: scale(1); }}
+        }}
+        @keyframes shapePulseRight {{
+            0% {{ opacity:0; transform: scale(0); }}
+            50% {{ opacity:1; transform: scale(1.35); }}
+            70% {{ transform: scale(0.85); }}
+            85% {{ transform: scale(1.1); }}
+            100% {{ opacity:1; transform: scale(1); }}
+        }}
+        /* ── float (balloons) ── */
+        @keyframes shapeFloatLeft {{
+            0% {{ opacity:0; transform: translateY(120px) scale(0.5); }}
+            60% {{ opacity:1; transform: translateY(-15px) scale(1.1); }}
+            80% {{ transform: translateY(5px) scale(0.95); }}
+            100% {{ opacity:1; transform: translateY(0) scale(1); }}
+        }}
+        @keyframes shapeFloatRight {{
+            0% {{ opacity:0; transform: translateY(120px) scale(0.5); }}
+            60% {{ opacity:1; transform: translateY(-15px) scale(1.1); }}
+            80% {{ transform: translateY(5px) scale(0.95); }}
+            100% {{ opacity:1; transform: translateY(0) scale(1); }}
+        }}
+        /* ── bloom (flowers) ── */
+        @keyframes shapeBloomLeft {{
+            0% {{ opacity:0; transform: scale(0) rotate(-90deg); }}
+            60% {{ opacity:1; transform: scale(1.2) rotate(10deg); }}
+            100% {{ opacity:1; transform: scale(1) rotate(0deg); }}
+        }}
+        @keyframes shapeBloomRight {{
+            0% {{ opacity:0; transform: scale(0) rotate(90deg); }}
+            60% {{ opacity:1; transform: scale(1.2) rotate(-10deg); }}
+            100% {{ opacity:1; transform: scale(1) rotate(0deg); }}
+        }}
+        /* ── tumble (diamonds) ── */
+        @keyframes shapeTumbleLeft {{
+            0% {{ opacity:0; transform: rotate(45deg) scale(0) translateX(-60px); }}
+            60% {{ opacity:1; transform: rotate(45deg) scale(1.15) translateX(0); }}
+            100% {{ opacity:1; transform: rotate(45deg) scale(1) translateX(0); }}
+        }}
+        @keyframes shapeTumbleRight {{
+            0% {{ opacity:0; transform: rotate(45deg) scale(0) translateX(60px); }}
+            60% {{ opacity:1; transform: rotate(45deg) scale(1.15) translateX(0); }}
+            100% {{ opacity:1; transform: rotate(45deg) scale(1) translateX(0); }}
+        }}
+        /* ── roll (balls) ── */
+        @keyframes shapeRollLeft {{
+            0% {{ opacity:0; transform: translateX(-100px) rotate(-360deg) scale(0.5); }}
+            70% {{ opacity:1; transform: translateX(8px) rotate(10deg) scale(1.05); }}
+            100% {{ opacity:1; transform: translateX(0) rotate(0deg) scale(1); }}
+        }}
+        @keyframes shapeRollRight {{
+            0% {{ opacity:0; transform: translateX(100px) rotate(360deg) scale(0.5); }}
+            70% {{ opacity:1; transform: translateX(-8px) rotate(-10deg) scale(1.05); }}
+            100% {{ opacity:1; transform: translateX(0) rotate(0deg) scale(1); }}
+        }}
+
+        .shape-anim-left {{
+            animation: {anim_l} 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }}
+        .shape-anim-right {{
+            animation: {anim_r} 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }}
+
+        .operator-sign {{
+            font-size: 3.5rem; font-weight: 900; opacity: 0;
+            animation: fadeInBounce 0.5s ease forwards;
+            animation-delay: {a * 0.3 + 0.2:.2f}s;
+        }}
+        .equals-sign {{
+            font-size: 3.5rem; font-weight: 900; opacity: 0;
+            animation: fadeInBounce 0.5s ease forwards;
+            animation-delay: {(a + b) * 0.3 + 0.5:.2f}s;
+        }}
+        @keyframes fadeInBounce {{
+            0% {{ opacity:0; transform: scale(0.3); }}
+            70% {{ opacity:1; transform: scale(1.2); }}
+            100% {{ opacity:1; transform: scale(1); }}
+        }}
+        .question-mark-box {{
+            width: {sz + 10}px; height: {sz + 10}px;
+            border-radius: 18px; border: 4px dashed #9ca3af;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 3rem; font-weight: 900; color: #9ca3af;
+            opacity: 0; animation: fadeInBounce 0.6s ease forwards;
+            animation-delay: {(a + b) * 0.3 + 0.7:.2f}s;
+        }}
+        .answer-reveal {{
+            width: {sz + 10}px; height: {sz + 10}px; border-radius: 18px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 3rem; font-weight: 900;
+            animation: answerPop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }}
+        @keyframes answerPop {{
+            0% {{ transform: scale(0) rotate(-10deg); }}
+            50% {{ transform: scale(1.3) rotate(5deg); }}
+            100% {{ transform: scale(1) rotate(0deg); }}
+        }}
+        .cube-label {{
+            text-align: center; font-size: 1.1rem; font-weight: 700;
+            margin-top: 0.5rem; opacity: 0; animation: fadeInBounce 0.5s ease forwards;
+        }}
+        .cube-label-a {{ animation-delay: {a * 0.3 + 0.1:.2f}s; color: {hex_a}; }}
+        .cube-label-b {{ animation-delay: {(a + b) * 0.3 + 0.1:.2f}s; color: {hex_b}; }}
+        .equation-text {{
+            text-align: center; font-size: 2rem; font-weight: 800; margin: 1rem 0;
+            opacity: 0; animation: fadeInBounce 0.6s ease forwards;
+            animation-delay: {(a + b) * 0.3 + 0.9:.2f}s;
+        }}
+        .celebrate-text {{
+            text-align: center; font-size: 2.5rem; font-weight: 900;
+            animation: celebrateWave 1s ease forwards;
+        }}
+        @keyframes celebrateWave {{
+            0% {{ transform: scale(0); opacity:0; }}
+            50% {{ transform: scale(1.3); opacity:1; }}
+            70% {{ transform: scale(0.9); }}
+            100% {{ transform: scale(1); opacity:1; }}
+        }}
+        @keyframes sparkle {{
+            0%,100% {{ opacity:0; transform:scale(0) rotate(0deg); }}
+            50% {{ opacity:1; transform:scale(1) rotate(180deg); }}
+        }}
+        .sparkle {{
+            position: fixed; font-size: 2rem;
+            animation: sparkle 1.5s ease-in-out infinite;
+            pointer-events: none; z-index: 9999;
+        }}
+        .wrong-shake {{ animation: shakeIt 0.5s ease; }}
+        @keyframes shakeIt {{
+            0%,100% {{ transform: translateX(0); }}
+            20% {{ transform: translateX(-15px); }}
+            40% {{ transform: translateX(15px); }}
+            60% {{ transform: translateX(-10px); }}
+            80% {{ transform: translateX(10px); }}
+        }}
+        .ans-btn {{
+            font-size: 1.8rem !important; font-weight: 800 !important;
+            padding: 0.8rem !important; border-radius: 16px !important;
+        }}
+        /* idle wobble for balloons & flowers */
+        @keyframes gentleFloat {{
+            0%,100% {{ transform: translateY(0); }}
+            50% {{ transform: translateY(-6px); }}
+        }}
+    </style>
+    """, unsafe_allow_html=True)
+
+    def shape_html(color_hex, count, anim_cls, delay_start=0):
+        html = ""
+        for i in range(count):
+            d = delay_start + i * 0.3
+            html += f"""
+            <div class="shape-block {anim_cls}" style="
+                background: linear-gradient(135deg, {color_hex}, {color_hex}cc);
+                animation-delay: {d:.2f}s; color: {color_hex};
+            ">{s_inner}</div>"""
+        return html
+
+    shapes_a = shape_html(hex_a, a, "shape-anim-left", delay_start=0.1)
+    shapes_b = shape_html(hex_b, b, "shape-anim-right", delay_start=a * 0.3 + 0.5)
+
+    if phase in ("show", "answer"):
+        qmark = '<div class="question-mark-box">?</div>'
+    elif phase == "correct":
+        qmark = f'<div class="answer-reveal" style="background:linear-gradient(135deg,#10b981,#059669);color:white;">{total}</div>'
+    elif phase == "wrong":
+        qmark = f'<div class="answer-reveal wrong-shake" style="background:linear-gradient(135deg,#ef4444,#dc2626);color:white;">{total}</div>'
+    else:
+        qmark = '<div class="question-mark-box">?</div>'
+
+    label_a = f"{a} {name_a} {s_name if a == 1 else p_name}"
+    label_b = f"{b} {name_b} {s_name if b == 1 else p_name}"
+
+    st.markdown(f"""
+    <div class="cube-arena">
+        <div>
+            <div class="cube-group">{shapes_a}</div>
+            <div class="cube-label cube-label-a">{label_a}</div>
+        </div>
+        <div class="operator-sign" style="color:#374151;">+</div>
+        <div>
+            <div class="cube-group">{shapes_b}</div>
+            <div class="cube-label cube-label-b">{label_b}</div>
+        </div>
+        <div class="equals-sign" style="color:#374151;">=</div>
+        <div>{qmark}</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    if phase in ("show", "answer"):
+        st.markdown(f"""
+        <div class="equation-text" style="color:#374151;">
+            {s_emoji} {a} + {b} = ❓
+        </div>
+        """, unsafe_allow_html=True)
+
+    # ── Show → ready ──
+    if phase == "show":
+        _, cc, _ = st.columns([2, 1, 2])
+        with cc:
+            if st.button("🤔 I'm Ready to Answer!", key="cube_ready", width="stretch", type="primary"):
+                st.session_state.cube_phase = "answer"
+                st.rerun()
+
+    # ── Answer → pick ──
+    elif phase == "answer":
+        st.markdown(f"""
+        <div style="text-align:center; margin:1rem 0;">
+            <h3 style="color:#374151;">How many {p_name} are there in total?</h3>
+        </div>
+        """, unsafe_allow_html=True)
+
+        n_opts = len(options)
+        btn_cols = st.columns(n_opts)
+        for i, opt in enumerate(options):
+            with btn_cols[i]:
+                if st.button(f"{s_emoji} {opt}", key=f"cube_ans_{i}_{opt}", width="stretch"):
+                    st.session_state.cube_total += 1
+                    if opt == total:
+                        st.session_state.cube_score += 1
+                        st.session_state.cube_streak += 1
+                        st.session_state.cube_phase = "correct"
+                    else:
+                        st.session_state.cube_streak = 0
+                        st.session_state.cube_phase = "wrong"
+                    st.rerun()
+
+    # ── Correct ──
+    elif phase == "correct":
+        sparkles = ""
+        celebration_emojis = ["⭐", "🌟", "✨", "🎉", "🎊", "💫", s_emoji]
+        for i in range(15):
+            x = _rnd.randint(5, 95)
+            y = _rnd.randint(5, 85)
+            delay = _rnd.uniform(0, 1.5)
+            sparkles += f'<div class="sparkle" style="left:{x}%;top:{y}%;animation-delay:{delay:.1f}s;">{_rnd.choice(celebration_emojis)}</div>'
+
+        st.markdown(f"""
+        {sparkles}
+        <div class="celebrate-text" style="color:#10b981;">
+            🎉 Amazing! {a} + {b} = {total}! 🎉
+        </div>
+        <div style="text-align:center; margin-top:0.5rem;">
+            <p style="font-size:1.3rem; color:#374151;">
+                {" ".join([s_emoji] * a)} <b>+</b> {" ".join([s_emoji] * b)} <b>=</b> {" ".join([s_emoji] * total)}
+            </p>
+            <p style="font-size:1.2rem; color:#6b7280; margin-top:0.3rem;">
+                {label_a} and {label_b} make <b>{total}</b> {p_name}!
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        _, nc, _ = st.columns([2, 1, 2])
+        with nc:
+            if st.button("▶️ Next Problem!", key="cube_next_ok", width="stretch", type="primary"):
+                new_problem()
+                st.rerun()
+
+    # ── Wrong ──
+    elif phase == "wrong":
+        st.markdown(f"""
+        <div class="celebrate-text" style="color:#ef4444;">
+            Oops! Let's count again! 🤗
+        </div>
+        <div style="text-align:center; margin-top:0.5rem;">
+            <p style="font-size:1.4rem; color:#374151;">
+                Count them: {" ".join([s_emoji] * a)} <b>+</b> {" ".join([s_emoji] * b)}
+            </p>
+            <p style="font-size:1.6rem; font-weight:800; color:#10b981; margin-top:0.5rem;">
+                {a} + {b} = {total} ✅
+            </p>
+            <p style="font-size:1.1rem; color:#6b7280;">
+                {label_a} and {label_b} make <b>{total}</b> {p_name}!
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        _, nc, _ = st.columns([2, 1, 2])
+        with nc:
+            if st.button("▶️ Try Another!", key="cube_next_wrong", width="stretch", type="primary"):
+                new_problem()
+                st.rerun()
+
+
+# ──────────────────────────────────────────────
 # Main Router
 # ──────────────────────────────────────────────
 page = st.session_state.current_page
@@ -4990,5 +5558,7 @@ elif page == "civics_home":
     render_civics_home()
 elif page == "civics_practice":
     render_civics_practice()
+elif page == "cube_addition":
+    render_cube_addition()
 else:
     render_home()
