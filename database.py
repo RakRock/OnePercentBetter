@@ -251,6 +251,89 @@ def get_daily_time_spent(user_id: int, days: int = 30) -> list[dict]:
         return [dict(r) for r in rows]
 
 
+def get_daily_time_spent_calendar(user_id: int, days: int = 30) -> list[dict]:
+    """Every calendar day in the last `days` days (including today) with time totals.
+
+    Days with no recorded activity have total_seconds=0 and activity_count=0.
+    This fills gaps so charts can show a continuous timeline.
+    """
+    end = datetime.now().date()
+    start = end - timedelta(days=days - 1)
+    start_str = start.strftime("%Y-%m-%d")
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT log_date,
+                      SUM(COALESCE(time_spent_seconds, 0)) as total_seconds,
+                      COUNT(*) as activity_count
+               FROM activity_scores
+               WHERE user_id = ? AND log_date >= ?
+               GROUP BY log_date""",
+            (user_id, start_str),
+        ).fetchall()
+    by_date = {
+        r["log_date"]: {
+            "total_seconds": r["total_seconds"] or 0,
+            "activity_count": r["activity_count"] or 0,
+        }
+        for r in rows
+    }
+    out = []
+    d = start
+    while d <= end:
+        ds = d.strftime("%Y-%m-%d")
+        rec = by_date.get(ds, {"total_seconds": 0, "activity_count": 0})
+        out.append({"log_date": ds, **rec})
+        d += timedelta(days=1)
+    return out
+
+
+def get_daily_score_calendar(user_id: int, days: int = 30) -> list[dict]:
+    """One row per calendar day with aggregated scores (multiple sessions averaged).
+
+    Days with no activity have avg_score=None and activity_count=0.
+    """
+    end = datetime.now().date()
+    start = end - timedelta(days=days - 1)
+    start_str = start.strftime("%Y-%m-%d")
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT log_date,
+                      AVG(score) as avg_score,
+                      MAX(score) as best_score,
+                      COUNT(*) as activity_count
+               FROM activity_scores
+               WHERE user_id = ? AND log_date >= ?
+               GROUP BY log_date""",
+            (user_id, start_str),
+        ).fetchall()
+    by_date = {r["log_date"]: dict(r) for r in rows}
+    out = []
+    d = start
+    while d <= end:
+        ds = d.strftime("%Y-%m-%d")
+        if ds in by_date:
+            r = by_date[ds]
+            out.append(
+                {
+                    "log_date": ds,
+                    "avg_score": round(r["avg_score"], 1) if r["avg_score"] is not None else None,
+                    "best_score": int(r["best_score"]) if r["best_score"] is not None else None,
+                    "activity_count": int(r["activity_count"] or 0),
+                }
+            )
+        else:
+            out.append(
+                {
+                    "log_date": ds,
+                    "avg_score": None,
+                    "best_score": None,
+                    "activity_count": 0,
+                }
+            )
+        d += timedelta(days=1)
+    return out
+
+
 def get_total_time_spent(user_id: int) -> int:
     """Get the all-time total seconds spent across all activities."""
     with get_connection() as conn:
