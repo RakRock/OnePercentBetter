@@ -12,7 +12,8 @@ except ImportError:
 import os
 import streamlit as st
 import database as db
-from datetime import datetime
+from datetime import datetime, timedelta
+from collections import defaultdict
 import plotly.graph_objects as go
 import time
 import reading_content as rc
@@ -41,6 +42,74 @@ st.set_page_config(
 
 # Initialize database
 db.init_db()
+
+
+def _daily_time_calendar_fallback(user_id: int, days: int = 30) -> list:
+    """Fill calendar days when ``database.get_daily_time_spent_calendar`` is missing (older deploys)."""
+    sparse = db.get_daily_time_spent(user_id, days=days)
+    by_date = {r["log_date"]: r for r in sparse}
+    end = datetime.now().date()
+    start = end - timedelta(days=days - 1)
+    out = []
+    d = start
+    while d <= end:
+        ds = d.strftime("%Y-%m-%d")
+        if ds in by_date:
+            out.append(dict(by_date[ds]))
+        else:
+            out.append({"log_date": ds, "total_seconds": 0, "activity_count": 0})
+        d += timedelta(days=1)
+    return out
+
+
+def _daily_score_calendar_fallback(user_id: int, days: int = 30) -> list:
+    """Per-day average scores when ``database.get_daily_score_calendar`` is missing (older deploys)."""
+    hist = db.get_scores_history(user_id, days=days)
+    by_day: dict[str, list] = defaultdict(list)
+    for h in hist:
+        by_day[h["log_date"]].append(h["score"])
+    end = datetime.now().date()
+    start = end - timedelta(days=days - 1)
+    out = []
+    d = start
+    while d <= end:
+        ds = d.strftime("%Y-%m-%d")
+        if ds in by_day:
+            scores = by_day[ds]
+            out.append(
+                {
+                    "log_date": ds,
+                    "avg_score": round(sum(scores) / len(scores), 1),
+                    "best_score": max(scores),
+                    "activity_count": len(scores),
+                }
+            )
+        else:
+            out.append(
+                {
+                    "log_date": ds,
+                    "avg_score": None,
+                    "best_score": None,
+                    "activity_count": 0,
+                }
+            )
+        d += timedelta(days=1)
+    return out
+
+
+def daily_time_calendar_for_dashboard(user_id: int, days: int = 30) -> list:
+    fn = getattr(db, "get_daily_time_spent_calendar", None)
+    if callable(fn):
+        return fn(user_id, days=days)
+    return _daily_time_calendar_fallback(user_id, days=days)
+
+
+def daily_score_calendar_for_dashboard(user_id: int, days: int = 30) -> list:
+    fn = getattr(db, "get_daily_score_calendar", None)
+    if callable(fn):
+        return fn(user_id, days=days)
+    return _daily_score_calendar_fallback(user_id, days=days)
+
 
 # ──────────────────────────────────────────────
 # Custom CSS
@@ -988,8 +1057,8 @@ def render_user_dashboard():
     st.markdown("### 📊 Progress Over Time")
 
     _chart_days = 30
-    score_calendar = db.get_daily_score_calendar(user["id"], days=_chart_days)
-    time_calendar = db.get_daily_time_spent_calendar(user["id"], days=_chart_days)
+    score_calendar = daily_score_calendar_for_dashboard(user["id"], days=_chart_days)
+    time_calendar = daily_time_calendar_for_dashboard(user["id"], days=_chart_days)
     has_progress = any(s["activity_count"] > 0 for s in score_calendar) or any(
         t["total_seconds"] > 0 for t in time_calendar
     )
