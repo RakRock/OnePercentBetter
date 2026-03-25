@@ -3949,7 +3949,7 @@ def render_logo_id_practice():
                 <div style="text-align:center;padding:1rem;background:white;border-radius:16px;
                      box-shadow:0 4px 20px rgba(0,0,0,0.08);border:2px solid #e5e7eb;">
                 """, unsafe_allow_html=True)
-                st.image(logo_img_path, width=220)
+                st.image(logo_img_path, width=280)
                 st.markdown(f"""
                     <p style="margin:0.3rem 0 0 0;color:#9ca3af;font-size:0.85rem;text-align:center;">
                         {cat_info.get('emoji','')} {cat_info.get('name','')}
