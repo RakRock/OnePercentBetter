@@ -1057,126 +1057,145 @@ def render_user_dashboard():
     st.markdown("### 📊 Progress Over Time")
 
     _chart_days = 30
+    _cumulative_chart_days = 60  # longer window for running-total line only
     score_calendar = daily_score_calendar_for_dashboard(user["id"], days=_chart_days)
     time_calendar = daily_time_calendar_for_dashboard(user["id"], days=_chart_days)
-    has_progress = any(s["activity_count"] > 0 for s in score_calendar) or any(
+    time_calendar_cumulative = daily_time_calendar_for_dashboard(
+        user["id"], days=_cumulative_chart_days
+    )
+    # Recent window (charts): any logged scores or time in the last N days
+    has_recent_window = any(s["activity_count"] > 0 for s in score_calendar) or any(
         t["total_seconds"] > 0 for t in time_calendar
     )
+    # Lifetime: catches older activity outside the window (and helps after Cloud DB resets / new deploys)
+    has_lifetime_activity = (
+        db.get_total_time_spent(user["id"]) > 0
+        or len(db.get_scores_history(user["id"], days=365)) > 0
+        or len(db.get_reading_history(user["id"], days=365)) > 0
+    )
 
-    if has_progress:
-        tab_scores, tab_time = st.tabs(["📈 Scores", "⏱️ Time Spent"])
-
-        with tab_scores:
-            dates_s = [s["log_date"] for s in score_calendar]
-            y_avg = [s["avg_score"] if s["activity_count"] else None for s in score_calendar]
-            n_act = [s["activity_count"] for s in score_calendar]
-            fig = go.Figure()
-            fig.add_trace(go.Scatter(
-                x=dates_s,
-                y=y_avg,
-                mode="lines+markers",
-                connectgaps=False,
-                marker=dict(size=8, color="#667eea"),
-                line=dict(color="#667eea", width=3),
-                customdata=n_act,
-                hovertemplate=(
-                    "<b>%{x}</b><br>"
-                    "Avg score: %{y:.1f}%<br>"
-                    "Activities: %{customdata}<extra></extra>"
-                ),
-            ))
-            fig.update_layout(
-                xaxis_title="Date",
-                yaxis_title="Average score that day (%)",
-                yaxis=dict(range=[0, 105]),
-                template="plotly_white",
-                height=350,
-                margin=dict(l=20, r=20, t=20, b=20),
-            )
-            st.plotly_chart(fig, width="stretch")
-            st.caption(
-                "Each point is the **average** of all quiz scores that day. "
-                "Days with no activity show a gap."
-            )
-
-        with tab_time:
-            dates_t = [t["log_date"] for t in time_calendar]
-            daily_mins = [round(t["total_seconds"] / 60, 2) for t in time_calendar]
-            counts_t = [t["activity_count"] for t in time_calendar]
-            bar_colors = ["#10b981" if m > 0 else "#e5e7eb" for m in daily_mins]
-
-            fig_time = go.Figure()
-            fig_time.add_trace(go.Bar(
-                x=dates_t,
-                y=daily_mins,
-                marker_color=bar_colors,
-                customdata=counts_t,
-                hovertemplate=(
-                    "<b>%{x}</b><br>"
-                    "Minutes: %{y:.1f}<br>"
-                    "Sessions: %{customdata}<extra></extra>"
-                ),
-            ))
-            fig_time.update_layout(
-                xaxis_title="Date",
-                yaxis_title="Minutes that day",
-                template="plotly_white",
-                height=350,
-                margin=dict(l=20, r=20, t=20, b=20),
-                bargap=0.25,
-            )
-            st.plotly_chart(fig_time, width="stretch")
-            st.caption(
-                "Shows **every calendar day** in the last 30 days. "
-                "Gray bars are days with no logged activity; green is time spent on quizzes."
-            )
-
-            # Running total over the same window (for context)
-            cum_mins = []
-            run = 0.0
-            for m in daily_mins:
-                run += m
-                cum_mins.append(round(run, 1))
-            fig_cum = go.Figure()
-            fig_cum.add_trace(go.Scatter(
-                x=dates_t,
-                y=cum_mins,
-                mode="lines+markers",
-                fill="tozeroy",
-                marker=dict(size=6, color="#059669"),
-                line=dict(color="#059669", width=2),
-                hovertemplate="<b>%{x}</b><br>Cumulative (30d): %{y:.1f} min<extra></extra>",
-            ))
-            fig_cum.update_layout(
-                title="Cumulative minutes (last 30 days)",
-                xaxis_title="Date",
-                yaxis_title="Total minutes (running)",
-                template="plotly_white",
-                height=280,
-                margin=dict(l=20, r=20, t=40, b=20),
-            )
-            st.plotly_chart(fig_cum, width="stretch")
-
-            total_all_time = db.get_total_time_spent(user["id"])
-            total_hrs, total_rem = divmod(total_all_time, 3600)
-            total_mins = total_rem // 60
-            st.markdown(f"""
-            <div style="text-align:center;padding:0.8rem;background:#ecfdf5;border-radius:12px;
-                 border:2px solid #10b981;margin-top:0.5rem;">
-                <span style="font-size:1.5rem;">⏱️</span>
-                <span style="font-size:1.1rem;color:#065f46;">
-                    <strong>Total time on app (all time):</strong>
-                    {f'{total_hrs}h {total_mins}m' if total_hrs > 0 else f'{total_mins}m'}
-                </span>
-            </div>
-            """, unsafe_allow_html=True)
-    else:
-        st.markdown(
-            '<div style="text-align:center;padding:2rem;color:#9ca3af;">'
-            '<div style="font-size:3rem;">📈</div>'
-            "<p>Complete activities to see your progress chart!</p></div>",
-            unsafe_allow_html=True,
+    # Always show charts so the section is never blank on Streamlit Cloud; empty days render as gaps/zeros
+    if not has_recent_window and not has_lifetime_activity:
+        st.info(
+            "📊 **No activity logged yet.** Complete a quiz, reading, or practice session — "
+            "your charts will fill in automatically. "
+            "(On a fresh app, everyone starts here.)"
         )
+    elif not has_recent_window and has_lifetime_activity:
+        st.caption(
+            "No sessions in the last 30 days — charts below may look quiet; older data may fall outside this window."
+        )
+
+    tab_scores, tab_time = st.tabs(["📈 Scores", "⏱️ Time Spent"])
+
+    with tab_scores:
+        dates_s = [s["log_date"] for s in score_calendar]
+        y_avg = [s["avg_score"] if s["activity_count"] else None for s in score_calendar]
+        n_act = [s["activity_count"] for s in score_calendar]
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(
+            x=dates_s,
+            y=y_avg,
+            mode="lines+markers",
+            connectgaps=False,
+            marker=dict(size=8, color="#667eea"),
+            line=dict(color="#667eea", width=3),
+            customdata=n_act,
+            hovertemplate=(
+                "<b>%{x}</b><br>"
+                "Avg score: %{y:.1f}%<br>"
+                "Activities: %{customdata}<extra></extra>"
+            ),
+        ))
+        fig.update_layout(
+            xaxis_title="Date",
+            yaxis_title="Average score that day (%)",
+            yaxis=dict(range=[0, 105]),
+            template="plotly_white",
+            height=350,
+            margin=dict(l=20, r=20, t=20, b=20),
+        )
+        st.plotly_chart(fig, width="stretch")
+        st.caption(
+            "Each point is the **average** of all quiz scores that day. "
+            "Days with no activity show a gap."
+        )
+
+    with tab_time:
+        dates_t = [t["log_date"] for t in time_calendar]
+        daily_mins = [round(t["total_seconds"] / 60, 2) for t in time_calendar]
+        counts_t = [t["activity_count"] for t in time_calendar]
+        bar_colors = ["#10b981" if m > 0 else "#e5e7eb" for m in daily_mins]
+
+        fig_time = go.Figure()
+        fig_time.add_trace(go.Bar(
+            x=dates_t,
+            y=daily_mins,
+            marker_color=bar_colors,
+            customdata=counts_t,
+            hovertemplate=(
+                "<b>%{x}</b><br>"
+                "Minutes: %{y:.1f}<br>"
+                "Sessions: %{customdata}<extra></extra>"
+            ),
+        ))
+        fig_time.update_layout(
+            xaxis_title="Date",
+            yaxis_title="Minutes that day",
+            template="plotly_white",
+            height=350,
+            margin=dict(l=20, r=20, t=20, b=20),
+            bargap=0.25,
+        )
+        st.plotly_chart(fig_time, width="stretch")
+        st.caption(
+            "Shows **every calendar day** in the last 30 days. "
+            "Gray bars are days with no logged activity; green is time spent on quizzes."
+        )
+
+        # Running total over last 60 days (bars above stay at 30 days)
+        daily_mins_cum = [
+            round(t["total_seconds"] / 60, 2) for t in time_calendar_cumulative
+        ]
+        dates_cum = [t["log_date"] for t in time_calendar_cumulative]
+        cum_mins = []
+        run = 0.0
+        for m in daily_mins_cum:
+            run += m
+            cum_mins.append(round(run, 1))
+        fig_cum = go.Figure()
+        fig_cum.add_trace(go.Scatter(
+            x=dates_cum,
+            y=cum_mins,
+            mode="lines+markers",
+            fill="tozeroy",
+            marker=dict(size=6, color="#059669"),
+            line=dict(color="#059669", width=2),
+            hovertemplate=f"<b>%{{x}}</b><br>Cumulative ({_cumulative_chart_days}d): %{{y:.1f}} min<extra></extra>",
+        ))
+        fig_cum.update_layout(
+            title=f"Cumulative minutes (last {_cumulative_chart_days} days)",
+            xaxis_title="Date",
+            yaxis_title="Total minutes (running)",
+            template="plotly_white",
+            height=280,
+            margin=dict(l=20, r=20, t=40, b=20),
+        )
+        st.plotly_chart(fig_cum, width="stretch")
+
+        total_all_time = db.get_total_time_spent(user["id"])
+        total_hrs, total_rem = divmod(total_all_time, 3600)
+        total_mins = total_rem // 60
+        st.markdown(f"""
+        <div style="text-align:center;padding:0.8rem;background:#ecfdf5;border-radius:12px;
+             border:2px solid #10b981;margin-top:0.5rem;">
+            <span style="font-size:1.5rem;">⏱️</span>
+            <span style="font-size:1.1rem;color:#065f46;">
+                <strong>Total time on app (all time):</strong>
+                {f'{total_hrs}h {total_mins}m' if total_hrs > 0 else f'{total_mins}m'}
+            </span>
+        </div>
+        """, unsafe_allow_html=True)
 
 
 # ──────────────────────────────────────────────
