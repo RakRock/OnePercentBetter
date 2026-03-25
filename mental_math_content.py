@@ -9,13 +9,26 @@ Difficulty is calibrated for an 11-year-old (medium-hard).
 import random
 
 CATEGORIES = {
-    "arithmetic": {"name": "Quick Arithmetic", "emoji": "⚡", "color": "#3b82f6"},
     "percentages": {"name": "Percentages", "emoji": "💯", "color": "#10b981"},
     "fractions": {"name": "Fractions", "emoji": "🍕", "color": "#f59e0b"},
-    "estimation": {"name": "Estimation", "emoji": "🎯", "color": "#8b5cf6"},
     "word_problems": {"name": "Word Problems", "emoji": "📝", "color": "#ef4444"},
     "powers": {"name": "Powers & Exponents", "emoji": "🔢", "color": "#06b6d4"},
     "ratios": {"name": "Ratios & Proportions", "emoji": "⚖️", "color": "#e11d48"},
+    "proportionality": {
+        "name": "Constant of Proportionality",
+        "emoji": "📐",
+        "color": "#0ea5e9",
+    },
+    "distributive": {
+        "name": "Distributive Property",
+        "emoji": "🔀",
+        "color": "#d946ef",
+    },
+    "equations": {
+        "name": "Solving Equations",
+        "emoji": "🔤",
+        "color": "#7c3aed",
+    },
 }
 
 
@@ -566,14 +579,278 @@ def _rpw_map():
     return {"question": q, "options": options, "answer": idx, "category": "ratios"}
 
 
+# --- Constant of proportionality (y = kx, SpringBoard proportional relationships) ---
+
+
+def _generate_k_from_xy():
+    """Find k given one (x, y) pair on y = kx."""
+    k = random.randint(2, 15)
+    x = random.randint(2, 12)
+    y = k * x
+    q = f"In a proportional relationship y = kx, when x = {x}, y = {y}. What is k? (k = y ÷ x)"
+    options, idx = _make_options(k, spread=max(2, k // 3))
+    return {"question": q, "options": options, "answer": idx, "category": "proportionality"}
+
+
+def _generate_y_from_kx():
+    """Find y given k and x."""
+    k = random.randint(2, 12)
+    x = random.randint(3, 16)
+    correct = k * x
+    q = f"If y = kx and k = {k} and x = {x}, what is y?"
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "proportionality"}
+
+
+def _generate_x_from_ky():
+    """Find x given k and y (y = kx)."""
+    k = random.randint(2, 12)
+    x = random.randint(3, 15)
+    y = k * x
+    q = f"If y = kx and k = {k} and y = {y}, what is x?"
+    options, idx = _make_options(x, spread=max(3, x // 3))
+    return {"question": q, "options": options, "answer": idx, "category": "proportionality"}
+
+
+def _generate_k_word():
+    """Constant of proportionality in a short context (unit rate form)."""
+    k = random.randint(3, 12)
+    x = random.randint(2, 8)
+    y = k * x
+    templates = [
+        "You earn ${y} in {x} hours at the same rate each hour. What is k (dollars per hour)?",
+        "A recipe scales: {y} cups of sugar for {x} batches. Sugar is proportional to batches. What is k (cups per batch)?",
+        "A plant grows {y} cm in {x} weeks. Height is proportional to time. What is k (cm per week)?",
+        "You walk {y} miles in {x} hours at a steady pace. What is k (miles per hour)?",
+    ]
+    q = random.choice(templates).format(y=y, x=x)
+    options, idx = _make_options(k, spread=max(2, k // 3))
+    return {"question": q, "options": options, "answer": idx, "category": "proportionality"}
+
+
+def _generate_table_k():
+    """Second row of a simple table: x₁,y₁ and x₂ known, find y₂ using k = y₁/x₁."""
+    k = random.randint(2, 10)
+    x1 = random.randint(2, 6)
+    y1 = k * x1
+    x2 = random.randint(7, 18)
+    correct = k * x2
+    q = (
+        f"x and y are proportional. When x = {x1}, y = {y1}. "
+        f"When x = {x2}, what is y?"
+    )
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "proportionality"}
+
+
+# --- Solving basic one-variable equations ---
+
+
+def _generate_eq_one_step_add():
+    """x + a = b  →  x = b - a"""
+    x = random.randint(2, 50)
+    a = random.randint(2, 30)
+    b = x + a
+    q = f"Solve for x:  x + {a} = {b}"
+    options, idx = _make_options(x, spread=max(3, a // 2))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+def _generate_eq_one_step_sub():
+    """x - a = b  →  x = b + a"""
+    x = random.randint(10, 60)
+    a = random.randint(2, x - 1)
+    b = x - a
+    q = f"Solve for x:  x − {a} = {b}"
+    options, idx = _make_options(x, spread=max(3, a // 2))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+def _generate_eq_one_step_mult():
+    """a · x = b  →  x = b / a"""
+    x = random.randint(2, 20)
+    a = random.randint(2, 12)
+    b = a * x
+    q = f"Solve for x:  {a}x = {b}"
+    options, idx = _make_options(x, spread=max(2, x // 3))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+def _generate_eq_one_step_div():
+    """x / a = b  →  x = a · b"""
+    b = random.randint(2, 15)
+    a = random.randint(2, 10)
+    x = a * b
+    q = f"Solve for x:  x ÷ {a} = {b}"
+    options, idx = _make_options(x, spread=max(3, x // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+def _generate_eq_two_step():
+    """ax + b = c  →  x = (c - b) / a"""
+    x = random.randint(2, 15)
+    a = random.randint(2, 8)
+    b = random.randint(1, 20)
+    c = a * x + b
+    q = f"Solve for x:  {a}x + {b} = {c}"
+    options, idx = _make_options(x, spread=max(2, x // 2))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+def _generate_eq_two_step_sub():
+    """ax - b = c  →  x = (c + b) / a"""
+    x = random.randint(3, 15)
+    a = random.randint(2, 8)
+    b = random.randint(1, 15)
+    c = a * x - b
+    if c < 0:
+        c = a * x + b
+        q = f"Solve for x:  {a}x + {b} = {c + 2 * b}"
+        options, idx = _make_options(x, spread=max(2, x // 2))
+        return {"question": q, "options": options, "answer": idx, "category": "equations"}
+    q = f"Solve for x:  {a}x − {b} = {c}"
+    options, idx = _make_options(x, spread=max(2, x // 2))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+def _generate_eq_word():
+    """Simple equation word problem."""
+    x = random.randint(3, 20)
+    templates = []
+
+    a = random.randint(2, 6)
+    b = random.randint(5, 25)
+    total = a * x + b
+    templates.append(
+        (f"A number is multiplied by {a}, then {b} is added. "
+         f"The result is {total}. What is the number?", x)
+    )
+
+    saved = random.randint(5, 15)
+    weeks = x
+    goal = saved * weeks + random.randint(10, 50)
+    start = goal - saved * weeks
+    templates.append(
+        (f"You save ${saved} each week and already have ${start}. "
+         f"After how many weeks will you have ${goal}?", weeks)
+    )
+
+    q, correct = random.choice(templates)
+    options, idx = _make_options(correct, spread=max(2, correct // 3))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+# --- Distributive property: a(b + c), a(b - c), expand & simplify ---
+
+
+def _generate_dist_expand_add():
+    """a(b + c) = ab + ac"""
+    a = random.randint(2, 12)
+    b = random.randint(1, 15)
+    c = random.randint(1, 15)
+    correct = a * b + a * c
+    q = f"Use the distributive property to expand:  {a}({b} + {c})"
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "distributive"}
+
+
+def _generate_dist_expand_sub():
+    """a(b - c) = ab - ac, ensure b > c so result is positive."""
+    a = random.randint(2, 12)
+    b = random.randint(5, 20)
+    c = random.randint(1, b - 1)
+    correct = a * b - a * c
+    q = f"Use the distributive property to expand:  {a}({b} − {c})"
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "distributive"}
+
+
+def _generate_dist_fill_blank():
+    """a(b + c) = a·b + a·?  →  find the missing piece."""
+    a = random.randint(2, 10)
+    b = random.randint(2, 12)
+    c = random.randint(2, 12)
+    product_ac = a * c
+    q = f"{a}({b} + {c}) = {a}×{b} + {a}×__. What goes in the blank?"
+    options, idx = _make_options(c, spread=max(2, c // 2))
+    return {"question": q, "options": options, "answer": idx, "category": "distributive"}
+
+
+def _generate_dist_reverse():
+    """Given ab + ac, factor out a → a(b + c). Find a."""
+    a = random.randint(2, 10)
+    b = random.randint(2, 12)
+    c = random.randint(2, 12)
+    ab = a * b
+    ac = a * c
+    q = f"Factor:  {ab} + {ac} = __(  {b} + {c}  ). What number goes in the blank?"
+    options, idx = _make_options(a, spread=max(2, a // 2))
+    return {"question": q, "options": options, "answer": idx, "category": "distributive"}
+
+
+def _generate_dist_mental_trick():
+    """Use distributive property as a mental math shortcut, e.g. 7 × 98 = 7(100-2)."""
+    a = random.randint(3, 9)
+    base = random.choice([10, 20, 50, 100])
+    offset = random.randint(1, 3)
+    sign = random.choice([-1, 1])
+    num = base + sign * offset
+    correct = a * num
+    if sign == 1:
+        hint = f"{a} × {num}  (think: {a}×{base} + {a}×{offset})"
+    else:
+        hint = f"{a} × {num}  (think: {a}×{base} − {a}×{offset})"
+    q = f"Use the distributive property to compute:  {hint}"
+    options, idx = _make_options(correct, spread=max(5, correct // 5))
+    return {"question": q, "options": options, "answer": idx, "category": "distributive"}
+
+
+def _generate_dist_word():
+    """Word problem using distributive property."""
+    a = random.randint(3, 8)
+    b = random.randint(5, 15)
+    c = random.randint(2, 10)
+    correct = a * (b + c)
+    templates = [
+        f"You buy {a} packs. Each pack has {b} red and {c} blue marbles. How many marbles total?",
+        f"There are {a} classrooms with {b} boys and {c} girls each. How many students total?",
+        f"A baker makes {a} batches with {b} cookies and {c} brownies per batch. Total treats?",
+    ]
+    q = random.choice(templates)
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "distributive"}
+
+
 _GENERATORS = {
-    "arithmetic": [_generate_addition, _generate_subtraction, _generate_multiplication, _generate_division],
     "percentages": [_generate_percentage, _generate_percentage_word],
     "fractions": [_generate_fraction_addition, _generate_fraction_of, _generate_fraction_remaining],
-    "estimation": [_generate_estimation],
     "word_problems": [_generate_word_problem],
     "powers": [_generate_squares, _generate_cubes, _generate_power_of_two, _generate_power_of_ten, _generate_square_root, _generate_exponent_compare, _generate_power_word],
     "ratios": [_generate_simplify_ratio, _generate_missing_proportion, _generate_ratio_to_fraction, _generate_ratio_share, _generate_unit_rate, _generate_proportion_word],
+    "proportionality": [
+        _generate_k_from_xy,
+        _generate_y_from_kx,
+        _generate_x_from_ky,
+        _generate_k_word,
+        _generate_table_k,
+    ],
+    "distributive": [
+        _generate_dist_expand_add,
+        _generate_dist_expand_sub,
+        _generate_dist_fill_blank,
+        _generate_dist_reverse,
+        _generate_dist_mental_trick,
+        _generate_dist_word,
+    ],
+    "equations": [
+        _generate_eq_one_step_add,
+        _generate_eq_one_step_sub,
+        _generate_eq_one_step_mult,
+        _generate_eq_one_step_div,
+        _generate_eq_two_step,
+        _generate_eq_two_step_sub,
+        _generate_eq_word,
+    ],
 }
 
 
