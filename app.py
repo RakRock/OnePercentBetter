@@ -625,12 +625,67 @@ def start_sight_words(level_id):
     st.session_state.sw_questions = questions
     st.session_state.sw_current = 0
     st.session_state.sw_start_time = time.time()
+    st.session_state.sw_wrong_words = {}
+    st.session_state.sw_wrong_feedback = None
 
 
 def back_to_sight_words_home():
     st.session_state.current_page = "sight_words_home"
     st.session_state.sw_questions = []
     st.session_state.sw_current = 0
+    st.session_state.sw_wrong_words = {}
+    st.session_state.sw_wrong_feedback = None
+
+
+def _get_phonics_tip(word: str) -> str:
+    """Use the HuggingFace LLM to generate a 1-line phonics correction tip."""
+    hf_token = os.environ.get("HF_TOKEN")
+    if not hf_token:
+        return _get_phonics_tip_local(word)
+    try:
+        from huggingface_hub import InferenceClient
+        client = InferenceClient(provider="auto", api_key=hf_token)
+        resp = client.chat_completion(
+            model="meta-llama/Llama-3.1-8B-Instruct",
+            messages=[
+                {"role": "system", "content": (
+                    "You are a kindergarten reading teacher helping a 5-year-old learn to read. "
+                    "Given a CVC or sight word, give ONE short sentence (max 15 words) telling a parent "
+                    "what specific sound to practice. Focus on the exact phonics sound, e.g. "
+                    "'Practice the short /a/ sound like in apple' or 'The /th/ is a tongue-between-teeth sound'. "
+                    "No quotes, no word repetition, just the tip."
+                )},
+                {"role": "user", "content": f"The child read the word '{word}' incorrectly. What phonics tip should I give?"},
+            ],
+            max_tokens=60,
+            temperature=0.3,
+        )
+        tip = resp.choices[0].message.content.strip()
+        return tip if tip else _get_phonics_tip_local(word)
+    except Exception:
+        return _get_phonics_tip_local(word)
+
+
+def _get_phonics_tip_local(word: str) -> str:
+    """Offline fallback: simple rule-based phonics tip."""
+    w = word.lower().strip()
+    vowels = {'a': 'short /a/ as in apple',
+              'e': 'short /e/ as in egg',
+              'i': 'short /i/ as in igloo',
+              'o': 'short /o/ as in octopus',
+              'u': 'short /u/ as in umbrella'}
+    blends = {'th': '/th/ — put tongue between teeth and blow',
+              'sh': '/sh/ — lips rounded, quiet hissing sound',
+              'ch': '/ch/ — tongue touches roof of mouth, quick puff',
+              'wh': '/wh/ — round lips and blow softly',
+              'ck': '/ck/ — back of tongue touches soft palate'}
+    for bl, tip in blends.items():
+        if bl in w:
+            return f"Practice the {tip}."
+    for ch in w:
+        if ch in vowels:
+            return f"Practice the {vowels[ch]}."
+    return f"Sound out each letter slowly: {' - '.join(w)}."
 
 
 def start_map_explorer(questions):
@@ -836,56 +891,30 @@ def render_user_dashboard():
         st.markdown("### 📚 Choose Your Activity")
         st.markdown("")
 
-        act_col1, act_col2, act_col3, act_col4 = st.columns(4, gap="large")
+        act_col1, act_col2 = st.columns(2, gap="large")
         with act_col1:
-            st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #10b981;">
-                <div style="font-size: 3rem;">📖</div>
-                <h3 style="margin: 0.5rem 0;">Reading</h3>
-                <p style="color: #6b7280;">Picture books & fun questions</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("📖 Start Reading", key="btn_reading", width="stretch", type="primary"):
-                select_activity("Reading")
-                st.rerun()
-
-        with act_col2:
-            st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #667eea;">
-                <div style="font-size: 3rem;">🧮</div>
-                <h3 style="margin: 0.5rem 0;">Math</h3>
-                <p style="color: #6b7280;">Math puzzles & practice</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("🧮 Start Math", key="btn_math", width="stretch", type="primary"):
-                select_activity("Math")
-                st.rerun()
-
-        with act_col3:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #f59e0b;">
                 <div style="font-size: 3rem;">👁️</div>
-                <h3 style="margin: 0.5rem 0;">Sight Words</h3>
+                <h3 style="margin: 0.5rem 0;">CVC Words</h3>
                 <p style="color: #6b7280;">Learn to read common words</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("👁️ Sight Words", key="btn_sight_words", width="stretch", type="primary"):
+            if st.button("👁️ CVC Words", key="btn_sight_words", width="stretch", type="primary"):
                 select_activity("SightWords")
                 st.rerun()
 
-        with act_col4:
+        with act_col2:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #ef4444;">
                 <div style="font-size: 3rem;">🧊</div>
-                <h3 style="margin: 0.5rem 0;">Cube Addition</h3>
+                <h3 style="margin: 0.5rem 0;">Addition</h3>
                 <p style="color: #6b7280;">Learn adding with cubes!</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("🧊 Cube Addition", key="btn_cube_add", width="stretch", type="primary"):
+            if st.button("🧊 Addition", key="btn_cube_add", width="stretch", type="primary"):
                 select_activity("CubeAddition")
                 st.rerun()
     elif name == "Arjun":
@@ -2517,8 +2546,8 @@ def render_sight_words_home():
 
     st.markdown(f"""
     <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
-        <h1 style="font-size: 2.5rem;">👁️ {name}'s Sight Words</h1>
-        <p style="color: #6b7280; font-size: 1.1rem;">Learn to read words by sight — pick a level!</p>
+        <h1 style="font-size: 2.5rem;">🔤 {name}'s CVC Words</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">Sound it out — read each word aloud!</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -2555,34 +2584,29 @@ def render_sight_words_home():
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
 
-    num_levels = len(sw.LEVELS)
-    cols = st.columns(min(num_levels, 4), gap="large")
-    for i, lvl in enumerate(sw.LEVELS):
-        word_count = len(sw.WORD_BANK.get(lvl["id"], []))
-        with cols[i % len(cols)]:
-            st.markdown(f"""
-            <div class="math-level-card" style="background: linear-gradient(135deg, {lvl['color']}, {lvl['color']}cc);">
-                <div style="font-size: 2.8rem;">{lvl['emoji']}</div>
-                <div style="font-size: 1.15rem; font-weight: 700; color: white; margin-top: 0.4rem;
-                     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
-                    {lvl['title']}
-                </div>
-                <div style="font-size: 0.85rem; color: rgba(255,255,255,0.9); margin-top: 0.2rem;">
-                    {lvl['subtitle']}
-                </div>
-                <div style="font-size: 0.75rem; color: rgba(255,255,255,0.75); margin-top: 0.2rem;">
-                    {word_count} words · {lvl['words_per_round']} per round
-                </div>
+    lvl = sw.LEVELS[0]
+    word_count = len(sw.WORD_BANK.get(lvl["id"], []))
+    _, col_center, _ = st.columns([1, 2, 1])
+    with col_center:
+        st.markdown(f"""
+        <div class="math-level-card" style="background: linear-gradient(135deg, {lvl['color']}, {lvl['color']}cc);">
+            <div style="font-size: 3rem;">{lvl['emoji']}</div>
+            <div style="font-size: 1.3rem; font-weight: 700; color: white; margin-top: 0.4rem;
+                 text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
+                {lvl['title']}
             </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button(
-                f"▶️ Play {lvl['title']}", key=f"sw_{lvl['id']}",
-                width="stretch", type="primary",
-            ):
-                start_sight_words(lvl["id"])
-                st.rerun()
-            st.markdown("")
+            <div style="font-size: 0.9rem; color: rgba(255,255,255,0.9); margin-top: 0.2rem;">
+                {lvl['subtitle']}
+            </div>
+            <div style="font-size: 0.8rem; color: rgba(255,255,255,0.75); margin-top: 0.2rem;">
+                {word_count} words · {lvl['words_per_round']} per round
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+        st.markdown("")
+        if st.button("▶️ Start CVC Words", key="sw_cvc_start", width="stretch", type="primary"):
+            start_sight_words(lvl["id"])
+            st.rerun()
 
 
 # ──────────────────────────────────────────────
@@ -2658,16 +2682,54 @@ def render_sight_words_practice():
         </div>
         """, unsafe_allow_html=True)
 
+        if not hasattr(st.session_state, "sw_wrong_words"):
+            st.session_state.sw_wrong_words = {}
+        if not hasattr(st.session_state, "sw_wrong_feedback"):
+            st.session_state.sw_wrong_feedback = None
+
+        wrong_words = st.session_state.sw_wrong_words
+        word_key = q["word"]
+        is_marked_wrong = word_key in wrong_words
+
+        if st.session_state.sw_wrong_feedback and st.session_state.sw_wrong_feedback.get("word") == word_key:
+            tip = st.session_state.sw_wrong_feedback["tip"]
+            st.markdown(f"""
+            <div style="padding:1rem 1.2rem;border-radius:14px;background:#fef3c7;border:2px solid #f59e0b;
+                 margin-bottom:1rem;text-align:center;">
+                <span style="font-size:1.5rem;">💡</span>
+                <strong style="color:#92400e;font-size:1.1rem;"> Phonics Tip:</strong>
+                <span style="color:#78350f;font-size:1.05rem;"> {tip}</span>
+            </div>
+            """, unsafe_allow_html=True)
+
         st.markdown("")
-        _, col_next, _ = st.columns([1, 2, 1])
+        col_wrong, col_next = st.columns(2, gap="medium")
+        with col_wrong:
+            if not is_marked_wrong:
+                if st.button("❌ Got it Wrong", key="sw_wrong", width="stretch"):
+                    with st.spinner("Getting phonics tip..."):
+                        tip = _get_phonics_tip(word_key)
+                    wrong_words[word_key] = tip
+                    st.session_state.sw_wrong_words = wrong_words
+                    st.session_state.sw_wrong_feedback = {"word": word_key, "tip": tip}
+                    st.rerun()
+            else:
+                st.markdown(f"""
+                <div style="padding:0.6rem;text-align:center;color:#dc2626;font-weight:600;
+                     border:2px solid #fca5a5;border-radius:10px;background:#fee2e2;">
+                    ❌ Marked for review
+                </div>
+                """, unsafe_allow_html=True)
         with col_next:
             if current < total - 1:
                 if st.button("Next Word ➡️", key="sw_next", width="stretch", type="primary"):
                     st.session_state.sw_current += 1
+                    st.session_state.sw_wrong_feedback = None
                     st.rerun()
             else:
                 if st.button("🎉 All Done!", key="sw_done", width="stretch", type="primary"):
                     st.session_state.sw_current = total
+                    st.session_state.sw_wrong_feedback = None
                     st.rerun()
 
     else:
@@ -2749,22 +2811,45 @@ def render_sight_words_practice():
         </div>
         """, unsafe_allow_html=True)
 
-        st.markdown("")
-        st.markdown("### 📝 Words You Practiced")
+        wrong_words = getattr(st.session_state, "sw_wrong_words", {})
+        wrong_count = len(wrong_words)
 
-        review_cols = st.columns(2, gap="medium")
-        for idx, q in enumerate(questions):
-            with review_cols[idx % 2]:
-                st.markdown(f"""
-                <div style="padding:0.8rem; border-radius:12px; background:#f0fdf4;
-                     border-left:4px solid {q['color']}; margin-bottom:0.6rem;">
-                    <span style="font-size:1.5rem;">{q['emoji']}</span>
-                    <strong style="font-size:1.3rem; color:#065f46; margin-left:0.3rem;">{q['word']}</strong>
-                    <span style="float:right; color:#6b7280; font-size:0.85rem; font-style:italic;">
-                        {q['sentence']}
-                    </span>
-                </div>
-                """, unsafe_allow_html=True)
+        if wrong_words:
+            st.markdown("")
+            st.markdown(f"### ❌ Words to Practice Again ({wrong_count})")
+            for q in questions:
+                if q["word"] in wrong_words:
+                    tip = wrong_words[q["word"]]
+                    st.markdown(f"""
+                    <div style="padding:1rem; border-radius:12px; background:#fef2f2;
+                         border-left:5px solid #ef4444; margin-bottom:0.8rem;">
+                        <div>
+                            <span style="font-size:1.5rem;">{q['emoji']}</span>
+                            <strong style="font-size:1.4rem; color:#991b1b; margin-left:0.3rem;">{q['word']}</strong>
+                        </div>
+                        <div style="margin-top:0.4rem;color:#92400e;font-size:0.95rem;">
+                            💡 {tip}
+                        </div>
+                    </div>
+                    """, unsafe_allow_html=True)
+
+        st.markdown("")
+        correct_words = [q for q in questions if q["word"] not in wrong_words]
+        if correct_words:
+            st.markdown(f"### ✅ Words Read Correctly ({len(correct_words)})")
+            review_cols = st.columns(2, gap="medium")
+            for idx, q in enumerate(correct_words):
+                with review_cols[idx % 2]:
+                    st.markdown(f"""
+                    <div style="padding:0.8rem; border-radius:12px; background:#f0fdf4;
+                         border-left:4px solid {q['color']}; margin-bottom:0.6rem;">
+                        <span style="font-size:1.5rem;">{q['emoji']}</span>
+                        <strong style="font-size:1.3rem; color:#065f46; margin-left:0.3rem;">{q['word']}</strong>
+                        <span style="float:right; color:#6b7280; font-size:0.85rem; font-style:italic;">
+                            {q['sentence']}
+                        </span>
+                    </div>
+                    """, unsafe_allow_html=True)
 
         st.markdown("")
         col_r1, col_r2 = st.columns(2)
