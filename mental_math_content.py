@@ -9,26 +9,29 @@ Difficulty is calibrated for an 11-year-old (medium-hard).
 import random
 
 CATEGORIES = {
-    "percentages": {"name": "Percentages", "emoji": "💯", "color": "#10b981"},
-    "fractions": {"name": "Fractions", "emoji": "🍕", "color": "#f59e0b"},
-    "word_problems": {"name": "Word Problems", "emoji": "📝", "color": "#ef4444"},
-    "powers": {"name": "Powers & Exponents", "emoji": "🔢", "color": "#06b6d4"},
+    "fractions": {"name": "Fractions & Decimals", "emoji": "🍕", "color": "#f59e0b"},
+    "integers": {"name": "Integers", "emoji": "🔢", "color": "#6366f1"},
     "ratios": {"name": "Ratios & Proportions", "emoji": "⚖️", "color": "#e11d48"},
+    "equations": {
+        "name": "Expressions & Equations",
+        "emoji": "🔤",
+        "color": "#7c3aed",
+    },
+    "percentages": {"name": "Percent Problems", "emoji": "💯", "color": "#10b981"},
+    "geometry": {"name": "Geometry Basics", "emoji": "📐", "color": "#0ea5e9"},
+    "graphing": {"name": "Basic Graphing", "emoji": "📊", "color": "#ea580c"},
     "proportionality": {
         "name": "Constant of Proportionality",
-        "emoji": "📐",
-        "color": "#0ea5e9",
+        "emoji": "📏",
+        "color": "#0891b2",
     },
     "distributive": {
         "name": "Distributive Property",
         "emoji": "🔀",
         "color": "#d946ef",
     },
-    "equations": {
-        "name": "Solving Equations",
-        "emoji": "🔤",
-        "color": "#7c3aed",
-    },
+    "word_problems": {"name": "Word Problems", "emoji": "📝", "color": "#ef4444"},
+    "powers": {"name": "Powers & Exponents", "emoji": "⚡", "color": "#06b6d4"},
 }
 
 
@@ -212,6 +215,638 @@ def _generate_fraction_remaining():
     random.shuffle(options)
     idx = options.index(correct_str)
     return {"question": q, "options": options, "answer": idx, "category": "fractions"}
+
+
+def _generate_fraction_subtraction():
+    pairs = [
+        ("3/4", "1/4", "1/2"), ("2/3", "1/3", "1/3"),
+        ("5/6", "1/6", "2/3"), ("7/8", "3/8", "1/2"),
+        ("1", "1/4", "3/4"), ("1", "1/3", "2/3"),
+        ("3/4", "1/2", "1/4"), ("5/6", "1/3", "1/2"),
+        ("4/5", "1/5", "3/5"), ("7/10", "1/5", "1/2"),
+        ("2/3", "1/6", "1/2"), ("1", "3/8", "5/8"),
+        ("3/5", "2/5", "1/5"), ("5/8", "1/4", "3/8"),
+    ]
+    a, b, correct_str = random.choice(pairs)
+    q = f"What is {a} − {b}?"
+    all_fractions = [
+        "1/4", "1/3", "1/2", "2/3", "3/4", "1/5", "2/5", "3/5",
+        "1/6", "5/6", "1/8", "3/8", "5/8", "7/8",
+    ]
+    distractors = [f for f in all_fractions if f != correct_str]
+    random.shuffle(distractors)
+    options = [correct_str] + distractors[:3]
+    random.shuffle(options)
+    idx = options.index(correct_str)
+    return {"question": q, "options": options, "answer": idx, "category": "fractions"}
+
+
+def _generate_fraction_multiply():
+    pairs = [
+        ("1/2", "1/2", "1/4"), ("1/2", "1/3", "1/6"),
+        ("2/3", "3/4", "1/2"), ("1/3", "3/5", "1/5"),
+        ("2/5", "5/6", "1/3"), ("3/4", "2/3", "1/2"),
+        ("1/2", "3/4", "3/8"), ("2/3", "1/4", "1/6"),
+        ("3/5", "1/3", "1/5"), ("1/4", "2/3", "1/6"),
+        ("3/4", "4/5", "3/5"), ("5/6", "3/5", "1/2"),
+    ]
+    a, b, correct_str = random.choice(pairs)
+    q = f"What is {a} × {b}?"
+    all_fractions = [
+        "1/4", "1/3", "1/2", "2/3", "3/4", "1/5", "2/5", "3/5",
+        "1/6", "1/8", "3/8", "5/8",
+    ]
+    distractors = [f for f in all_fractions if f != correct_str]
+    random.shuffle(distractors)
+    options = [correct_str] + distractors[:3]
+    random.shuffle(options)
+    idx = options.index(correct_str)
+    return {"question": q, "options": options, "answer": idx, "category": "fractions"}
+
+
+def _generate_fraction_divide():
+    pairs = [
+        ("1/2", "1/4", "2"), ("3/4", "1/4", "3"),
+        ("1/2", "1/3", "3/2"), ("2/3", "1/3", "2"),
+        ("1", "1/4", "4"), ("1", "1/3", "3"),
+        ("3/4", "3/8", "2"), ("1/2", "1/6", "3"),
+        ("2/5", "1/5", "2"), ("4/5", "2/5", "2"),
+    ]
+    a, b, correct_str = random.choice(pairs)
+    q = f"What is {a} ÷ {b}?"
+    all_answers = ["1", "2", "3", "4", "1/2", "3/2", "2/3", "3/4", "5/2"]
+    distractors = [f for f in all_answers if f != correct_str]
+    random.shuffle(distractors)
+    options = [correct_str] + distractors[:3]
+    random.shuffle(options)
+    idx = options.index(correct_str)
+    return {"question": q, "options": options, "answer": idx, "category": "fractions"}
+
+
+def _generate_fraction_to_decimal():
+    conversions = [
+        ("1/2", "0.5"), ("1/4", "0.25"), ("3/4", "0.75"),
+        ("1/5", "0.2"), ("2/5", "0.4"), ("3/5", "0.6"), ("4/5", "0.8"),
+        ("1/8", "0.125"), ("3/8", "0.375"), ("5/8", "0.625"), ("7/8", "0.875"),
+        ("1/10", "0.1"), ("3/10", "0.3"), ("7/10", "0.7"), ("9/10", "0.9"),
+        ("1/3", "0.333..."), ("2/3", "0.666..."),
+    ]
+    frac, dec = random.choice(conversions)
+    if random.random() < 0.5:
+        q = f"Convert {frac} to a decimal."
+        correct = dec
+        distractors = [d for _, d in conversions if d != dec]
+        random.shuffle(distractors)
+        options = [correct] + distractors[:3]
+    else:
+        q = f"Convert {dec} to a fraction."
+        correct = frac
+        distractors = [f for f, _ in conversions if f != frac]
+        random.shuffle(distractors)
+        options = [correct] + distractors[:3]
+    random.shuffle(options)
+    idx = options.index(correct)
+    return {"question": q, "options": options, "answer": idx, "category": "fractions"}
+
+
+def _generate_decimal_operations():
+    ops = [
+        lambda: _dec_add(),
+        lambda: _dec_subtract(),
+        lambda: _dec_multiply(),
+    ]
+    return random.choice(ops)()
+
+
+def _dec_add():
+    a = random.choice([0.5, 0.75, 1.25, 1.5, 2.25, 2.5, 3.75, 0.8, 1.2, 1.6])
+    b = random.choice([0.25, 0.5, 0.75, 1.25, 1.5, 0.4, 0.6, 0.8, 1.0, 2.0])
+    correct = round(a + b, 2)
+    q = f"What is {a} + {b}?"
+    distractors = set()
+    for offset in [-1.0, -0.75, -0.5, -0.25, 0.25, 0.5, 0.75, 1.0]:
+        d = round(correct + offset, 2)
+        if d > 0 and d != correct:
+            distractors.add(d)
+    distractors = list(distractors)
+    random.shuffle(distractors)
+    options = [correct] + distractors[:3]
+    while len(options) < 4:
+        options.append(round(correct + len(options), 2))
+    random.shuffle(options)
+    idx = options.index(correct)
+    return {"question": q, "options": [str(o) for o in options], "answer": idx, "category": "fractions"}
+
+
+def _dec_subtract():
+    a = random.choice([2.5, 3.0, 3.75, 4.5, 5.0, 5.25, 6.0, 7.5, 8.0, 10.0])
+    b = random.choice([0.25, 0.5, 0.75, 1.25, 1.5, 2.0, 2.25, 2.5, 3.0])
+    while b >= a:
+        b = random.choice([0.25, 0.5, 0.75, 1.25, 1.5])
+    correct = round(a - b, 2)
+    q = f"What is {a} − {b}?"
+    distractors = set()
+    for offset in [-0.75, -0.5, -0.25, 0.25, 0.5, 0.75]:
+        d = round(correct + offset, 2)
+        if d > 0 and d != correct:
+            distractors.add(d)
+    distractors = list(distractors)
+    random.shuffle(distractors)
+    options = [correct] + distractors[:3]
+    while len(options) < 4:
+        options.append(round(correct + len(options) * 0.5, 2))
+    random.shuffle(options)
+    idx = options.index(correct)
+    return {"question": q, "options": [str(o) for o in options], "answer": idx, "category": "fractions"}
+
+
+def _dec_multiply():
+    a = random.choice([0.5, 1.5, 2.5, 0.25, 1.25, 0.4, 0.6, 1.2, 0.8])
+    b = random.choice([2, 3, 4, 5, 6, 8, 0.5, 0.4, 0.2])
+    correct = round(a * b, 2)
+    q = f"What is {a} × {b}?"
+    distractors = set()
+    for offset in [-1.0, -0.5, -0.25, 0.25, 0.5, 1.0]:
+        d = round(correct + offset, 2)
+        if d > 0 and d != correct:
+            distractors.add(d)
+    distractors = list(distractors)
+    random.shuffle(distractors)
+    options = [correct] + distractors[:3]
+    while len(options) < 4:
+        options.append(round(correct + len(options) * 0.3, 2))
+    random.shuffle(options)
+    idx = options.index(correct)
+    return {"question": q, "options": [str(o) for o in options], "answer": idx, "category": "fractions"}
+
+
+def _generate_fraction_word_problem():
+    templates = [
+        lambda: _fwp_recipe(),
+        lambda: _fwp_distance(),
+        lambda: _fwp_sharing(),
+    ]
+    return random.choice(templates)()
+
+
+def _fwp_recipe():
+    fracs = [("2/3", 2, 3), ("3/4", 3, 4), ("1/2", 1, 2), ("1/3", 1, 3)]
+    frac_str, num, den = random.choice(fracs)
+    halves = {("2/3", "1/3"), ("3/4", "3/8"), ("1/2", "1/4"), ("1/3", "1/6")}
+    correct_map = dict(halves)
+    correct = correct_map.get(frac_str, "1/4")
+    q = f"A recipe needs {frac_str} cup of sugar. You make half the recipe. How much sugar?"
+    all_frac = ["1/3", "1/4", "1/6", "3/8", "1/2", "2/3", "3/4", "1/8"]
+    distractors = [f for f in all_frac if f != correct]
+    random.shuffle(distractors)
+    options = [correct] + distractors[:3]
+    random.shuffle(options)
+    idx = options.index(correct)
+    return {"question": q, "options": options, "answer": idx, "category": "fractions"}
+
+
+def _fwp_distance():
+    total = random.choice([12, 15, 18, 20, 24, 30])
+    frac_choices = [("1/3", 3), ("1/4", 4), ("2/3", 1.5), ("3/4", 4/3)]
+    frac_str, denom = random.choice([("1/3", 3), ("1/4", 4), ("1/2", 2)])
+    correct = total // denom
+    q = f"You ran {frac_str} of a {total}-mile trail. How many miles did you run?"
+    options, idx = _make_options(correct, spread=max(2, correct // 2))
+    return {"question": q, "options": options, "answer": idx, "category": "fractions"}
+
+
+def _fwp_sharing():
+    total = random.choice([24, 30, 36, 40, 48, 60])
+    frac_str, denom = random.choice([("1/4", 4), ("1/3", 3), ("2/5", 2.5), ("1/6", 6)])
+    if frac_str == "2/5":
+        correct = int(total * 2 / 5)
+    else:
+        correct = int(total / denom)
+    item = random.choice(["stickers", "cards", "candies", "marbles"])
+    q = f"You have {total} {item}. You give {frac_str} to your friend. How many do you give away?"
+    options, idx = _make_options(correct, spread=max(2, correct // 3))
+    return {"question": q, "options": options, "answer": idx, "category": "fractions"}
+
+
+# --- Integers (add/subtract/multiply/divide, absolute value) ---
+
+
+def _generate_int_add():
+    a = random.randint(-20, 20)
+    b = random.randint(-20, 20)
+    while a == 0 or b == 0:
+        a = random.randint(-20, 20)
+        b = random.randint(-20, 20)
+    correct = a + b
+    sign_b = f"+ {b}" if b > 0 else f"− {abs(b)}"
+    q = f"What is {a} {sign_b}?"
+    options, idx = _make_options(correct, spread=max(3, abs(correct) // 2 + 2), force_int=True)
+    return {"question": q, "options": options, "answer": idx, "category": "integers"}
+
+
+def _generate_int_subtract():
+    a = random.randint(-20, 20)
+    b = random.randint(-20, 20)
+    while a == 0 or b == 0:
+        a = random.randint(-20, 20)
+        b = random.randint(-20, 20)
+    correct = a - b
+    q = f"What is {a} − ({b})?"
+    options, idx = _make_options(correct, spread=max(3, abs(correct) // 2 + 2), force_int=True)
+    return {"question": q, "options": options, "answer": idx, "category": "integers"}
+
+
+def _generate_int_multiply():
+    a = random.choice([-8, -6, -5, -4, -3, -2, 2, 3, 4, 5, 6, 8])
+    b = random.choice([-9, -7, -6, -5, -4, -3, 3, 4, 5, 6, 7, 9])
+    correct = a * b
+    q = f"What is {a} × ({b})?"
+    options, idx = _make_options(correct, spread=max(5, abs(correct) // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "integers"}
+
+
+def _generate_int_divide():
+    b = random.choice([-8, -6, -5, -4, -3, -2, 2, 3, 4, 5, 6, 8])
+    correct = random.choice([-7, -5, -4, -3, -2, 2, 3, 4, 5, 7])
+    a = b * correct
+    q = f"What is {a} ÷ ({b})?"
+    options, idx = _make_options(correct, spread=max(2, abs(correct) // 2 + 1))
+    return {"question": q, "options": options, "answer": idx, "category": "integers"}
+
+
+def _generate_absolute_value():
+    n = random.choice([-15, -12, -9, -7, -5, -3, -1, 0, 3, 5, 8, 12, 15])
+    correct = abs(n)
+    q = f"What is |{n}|?"
+    options, idx = _make_options(correct, spread=max(2, correct // 2 + 1))
+    return {"question": q, "options": options, "answer": idx, "category": "integers"}
+
+
+def _generate_int_mixed_expr():
+    a = random.choice([-3, -4, -5, -6, -2])
+    b = random.choice([-6, -5, -4, -3, -2])
+    c = random.randint(1, 10)
+    correct = a * b + c
+    q = f"What is ({a}) × ({b}) + {c}?"
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "integers"}
+
+
+def _generate_int_word():
+    templates = [
+        lambda: _int_temp(),
+        lambda: _int_elevator(),
+        lambda: _int_money(),
+    ]
+    return random.choice(templates)()
+
+
+def _int_temp():
+    start = random.randint(-10, 5)
+    change = random.randint(3, 15)
+    correct = start + change
+    q = f"The temperature was {start}°C and rose by {change}°C. What is the new temperature?"
+    options, idx = _make_options(correct, spread=max(3, abs(correct) // 2 + 2))
+    options = [f"{o}°C" for o in options]
+    str_correct = f"{correct}°C"
+    idx = options.index(str_correct)
+    return {"question": q, "options": options, "answer": idx, "category": "integers"}
+
+
+def _int_elevator():
+    start = random.randint(-2, 5)
+    down = random.randint(3, 8)
+    correct = start - down
+    q = f"An elevator is on floor {start}. It goes down {down} floors. What floor is it on now?"
+    options, idx = _make_options(correct, spread=3)
+    return {"question": q, "options": options, "answer": idx, "category": "integers"}
+
+
+def _int_money():
+    balance = random.randint(-20, 50)
+    spend = random.randint(10, 40)
+    correct = balance - spend
+    q = f"Your bank balance is ${balance}. You spend ${spend}. What is your new balance?"
+    options, idx = _make_options(correct, spread=max(5, abs(correct) // 3 + 2))
+    options = [f"${o}" for o in options]
+    str_correct = f"${correct}"
+    idx = options.index(str_correct)
+    return {"question": q, "options": options, "answer": idx, "category": "integers"}
+
+
+# --- Expanded Percentage generators ---
+
+
+def _generate_percent_increase():
+    original = random.choice([50, 80, 100, 120, 150, 200, 250])
+    pct = random.choice([10, 15, 20, 25, 30, 50])
+    increase = int(original * pct / 100)
+    correct = original + increase
+    q = f"A population of {original} increased by {pct}%. What is the new population?"
+    options, idx = _make_options(correct, spread=max(5, correct // 5))
+    return {"question": q, "options": options, "answer": idx, "category": "percentages"}
+
+
+def _generate_percent_decrease():
+    original = random.choice([60, 80, 100, 120, 150, 200, 250, 400])
+    pct = random.choice([10, 15, 20, 25, 30, 40, 50])
+    decrease = int(original * pct / 100)
+    correct = original - decrease
+    q = f"A ${original} item is discounted by {pct}%. What is the sale price?"
+    options, idx = _make_options(correct, spread=max(5, correct // 5))
+    options = [f"${o}" if isinstance(o, int) else o for o in options]
+    str_correct = f"${correct}"
+    idx = options.index(str_correct)
+    return {"question": q, "options": options, "answer": idx, "category": "percentages"}
+
+
+def _generate_percent_find_rate():
+    original = random.choice([50, 80, 100, 120, 200, 250])
+    new_val = original + random.choice([10, 20, 25, 30, 40, 50, 60])
+    diff = new_val - original
+    correct = int((diff / original) * 100)
+    q = f"A value changed from {original} to {new_val}. What is the percent increase?"
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    options = [f"{o}%" for o in options]
+    str_correct = f"{correct}%"
+    idx = options.index(str_correct)
+    return {"question": q, "options": options, "answer": idx, "category": "percentages"}
+
+
+def _generate_tip_calculation():
+    bill = random.choice([20, 25, 30, 40, 50, 60, 80, 100])
+    tip_pct = random.choice([10, 15, 20, 25])
+    correct = int(bill * tip_pct / 100)
+    q = f"Your meal costs ${bill}. You leave a {tip_pct}% tip. How much is the tip?"
+    options, idx = _make_options(correct, spread=max(2, correct // 3))
+    options = [f"${o}" if isinstance(o, int) else o for o in options]
+    str_correct = f"${correct}"
+    idx = options.index(str_correct)
+    return {"question": q, "options": options, "answer": idx, "category": "percentages"}
+
+
+# --- Expanded Equations: evaluate expressions ---
+
+
+def _generate_evaluate_expression():
+    templates = [
+        lambda: _eval_linear(),
+        lambda: _eval_two_var(),
+        lambda: _eval_squared(),
+    ]
+    return random.choice(templates)()
+
+
+def _eval_linear():
+    a = random.randint(2, 8)
+    b = random.randint(1, 15)
+    x = random.randint(1, 10)
+    correct = a * x + b
+    q = f"Evaluate {a}x + {b} when x = {x}"
+    options, idx = _make_options(correct, spread=max(3, correct // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+def _eval_two_var():
+    a = random.randint(2, 5)
+    b = random.randint(1, 5)
+    x = random.randint(1, 6)
+    y = random.randint(1, 6)
+    correct = a * x + b * y
+    q = f"Evaluate {a}x + {b}y when x = {x} and y = {y}"
+    options, idx = _make_options(correct, spread=max(3, correct // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+def _eval_squared():
+    x = random.randint(2, 8)
+    b = random.randint(1, 10)
+    correct = x * x + b
+    q = f"Evaluate x² + {b} when x = {x}"
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+def _generate_eq_fraction():
+    """x/a - b = c  →  x = a(c + b)"""
+    a = random.choice([2, 3, 4, 6])
+    quotient = random.randint(3, 12)
+    x_val = a * quotient
+    b = random.randint(1, quotient - 1)
+    c = quotient - b
+    q = f"Solve for x:  x/{a} − {b} = {c}"
+    options, idx = _make_options(x_val, spread=max(3, x_val // 4))
+    return {"question": q, "options": options, "answer": idx, "category": "equations"}
+
+
+# --- Geometry Basics ---
+
+
+def _generate_geo_rect_area():
+    l = random.randint(3, 20)
+    w = random.randint(3, 15)
+    correct = l * w
+    q = f"What is the area of a rectangle with length {l} and width {w}?"
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    options_str = [f"{o} sq units" for o in options]
+    str_correct = f"{correct} sq units"
+    idx = options_str.index(str_correct)
+    return {"question": q, "options": options_str, "answer": idx, "category": "geometry"}
+
+
+def _generate_geo_rect_perimeter():
+    l = random.randint(3, 20)
+    w = random.randint(3, 15)
+    correct = 2 * (l + w)
+    q = f"What is the perimeter of a rectangle with length {l} and width {w}?"
+    options, idx = _make_options(correct, spread=max(4, correct // 5))
+    options_str = [f"{o} units" for o in options]
+    str_correct = f"{correct} units"
+    idx = options_str.index(str_correct)
+    return {"question": q, "options": options_str, "answer": idx, "category": "geometry"}
+
+
+def _generate_geo_triangle_area():
+    base = random.randint(4, 20)
+    height = random.randint(4, 16)
+    while (base * height) % 2 != 0:
+        height = random.randint(4, 16)
+    correct = (base * height) // 2
+    q = f"What is the area of a triangle with base {base} and height {height}?"
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    options_str = [f"{o} sq units" for o in options]
+    str_correct = f"{correct} sq units"
+    idx = options_str.index(str_correct)
+    return {"question": q, "options": options_str, "answer": idx, "category": "geometry"}
+
+
+def _generate_geo_missing_side():
+    perimeter = random.choice([30, 36, 40, 44, 48, 52, 60])
+    l = random.randint(perimeter // 6, perimeter // 3)
+    w = (perimeter // 2) - l
+    q = f"A rectangle has perimeter {perimeter} and length {l}. What is the width?"
+    correct = w
+    options, idx = _make_options(correct, spread=max(2, correct // 3))
+    return {"question": q, "options": options, "answer": idx, "category": "geometry"}
+
+
+def _generate_geo_square_area():
+    side = random.randint(3, 15)
+    correct = side * side
+    q = f"A square has sides of {side} units. What is its area?"
+    options, idx = _make_options(correct, spread=max(5, correct // 4))
+    options_str = [f"{o} sq units" for o in options]
+    str_correct = f"{correct} sq units"
+    idx = options_str.index(str_correct)
+    return {"question": q, "options": options_str, "answer": idx, "category": "geometry"}
+
+
+def _generate_geo_circle_area():
+    r = random.randint(2, 10)
+    correct = round(3.14 * r * r, 2)
+    q = f"Find the area of a circle with radius {r}. (Use π ≈ 3.14)"
+    distractors = set()
+    for offset in [-20, -10, -5, 5, 10, 20, -15, 15]:
+        d = round(correct + offset, 2)
+        if d > 0 and d != correct:
+            distractors.add(d)
+    distractors = list(distractors)
+    random.shuffle(distractors)
+    options = [correct] + distractors[:3]
+    random.shuffle(options)
+    idx = options.index(correct)
+    return {"question": q, "options": [f"{o} sq units" for o in options], "answer": idx, "category": "geometry"}
+
+
+def _generate_geo_word():
+    templates = [
+        lambda: _geo_garden(),
+        lambda: _geo_fence(),
+    ]
+    return random.choice(templates)()
+
+
+def _geo_garden():
+    l = random.randint(8, 25)
+    w = random.randint(5, 15)
+    correct = l * w
+    q = f"A rectangular garden is {l} feet by {w} feet. How many square feet of sod do you need to cover it?"
+    options, idx = _make_options(correct, spread=max(10, correct // 5))
+    return {"question": q, "options": options, "answer": idx, "category": "geometry"}
+
+
+def _geo_fence():
+    l = random.randint(10, 30)
+    w = random.randint(5, 20)
+    correct = 2 * (l + w)
+    q = f"How many feet of fencing do you need for a {l} ft by {w} ft rectangular yard?"
+    options, idx = _make_options(correct, spread=max(5, correct // 5))
+    return {"question": q, "options": options, "answer": idx, "category": "geometry"}
+
+
+# --- Basic Graphing ---
+
+
+def _generate_graph_identify_quadrant():
+    x = random.choice([-8, -5, -3, -1, 1, 3, 5, 8])
+    y = random.choice([-7, -4, -2, -1, 1, 2, 4, 7])
+    if x > 0 and y > 0:
+        correct = "Quadrant I"
+    elif x < 0 and y > 0:
+        correct = "Quadrant II"
+    elif x < 0 and y < 0:
+        correct = "Quadrant III"
+    else:
+        correct = "Quadrant IV"
+    q = f"In which quadrant is the point ({x}, {y})?"
+    options = ["Quadrant I", "Quadrant II", "Quadrant III", "Quadrant IV"]
+    random.shuffle(options)
+    idx = options.index(correct)
+    return {"question": q, "options": options, "answer": idx, "category": "graphing"}
+
+
+def _generate_graph_distance_axis():
+    x = random.choice([-8, -6, -4, -2, 2, 4, 6, 8])
+    y = random.choice([-7, -5, -3, -1, 1, 3, 5, 7])
+    axis = random.choice(["x", "y"])
+    if axis == "x":
+        correct = abs(y)
+        q = f"How far is the point ({x}, {y}) from the x-axis?"
+    else:
+        correct = abs(x)
+        q = f"How far is the point ({x}, {y}) from the y-axis?"
+    options, idx = _make_options(correct, spread=max(2, correct // 2))
+    return {"question": q, "options": options, "answer": idx, "category": "graphing"}
+
+
+def _generate_graph_slope():
+    x1 = random.randint(-3, 3)
+    y1 = random.randint(-3, 3)
+    rise = random.choice([-4, -3, -2, -1, 1, 2, 3, 4])
+    run = random.choice([1, 2, 3, 4])
+    x2 = x1 + run
+    y2 = y1 + rise
+    correct = rise
+    q = f"What is the rise (change in y) from ({x1}, {y1}) to ({x2}, {y2})?"
+    options, idx = _make_options(correct, spread=max(2, abs(correct) + 1))
+    return {"question": q, "options": options, "answer": idx, "category": "graphing"}
+
+
+def _generate_graph_slope_ratio():
+    x1 = random.randint(0, 4)
+    y1 = random.randint(0, 4)
+    m_num = random.choice([1, 2, 3, -1, -2, -3])
+    m_den = random.choice([1, 2])
+    x2 = x1 + m_den * 2
+    y2 = y1 + m_num * 2
+    from math import gcd
+    g = gcd(abs(m_num * 2), abs(m_den * 2))
+    rise = (y2 - y1)
+    run = (x2 - x1)
+    g = gcd(abs(rise), abs(run))
+    simp_rise = rise // g
+    simp_run = run // g
+    if simp_run == 1:
+        correct = str(simp_rise)
+    else:
+        correct = f"{simp_rise}/{simp_run}"
+    q = f"What is the slope between ({x1}, {y1}) and ({x2}, {y2})?"
+    all_slopes = ["-3", "-2", "-1", "0", "1", "2", "3", "1/2", "-1/2", "3/2", "-3/2"]
+    distractors = [s for s in all_slopes if s != correct]
+    random.shuffle(distractors)
+    options = [correct] + distractors[:3]
+    random.shuffle(options)
+    idx = options.index(correct)
+    return {"question": q, "options": options, "answer": idx, "category": "graphing"}
+
+
+def _generate_graph_pattern():
+    m = random.randint(1, 4)
+    b = random.randint(0, 5)
+    points = [(x, m * x + b) for x in range(1, 4)]
+    next_y = m * 4 + b
+    correct = next_y
+    pts_str = ", ".join(f"({x},{y})" for x, y in points)
+    q = f"Look at the pattern: {pts_str}. What is y when x = 4?"
+    options, idx = _make_options(correct, spread=max(2, m + 1))
+    return {"question": q, "options": options, "answer": idx, "category": "graphing"}
+
+
+def _generate_graph_reflect():
+    x = random.randint(1, 8)
+    y = random.randint(1, 8)
+    axis = random.choice(["x-axis", "y-axis"])
+    if axis == "x-axis":
+        correct = f"({x}, {-y})"
+        wrong = [f"({-x}, {y})", f"({-x}, {-y})", f"({y}, {-x})"]
+    else:
+        correct = f"({-x}, {y})"
+        wrong = [f"({x}, {-y})", f"({-x}, {-y})", f"({y}, {x})"]
+    q = f"Reflect the point ({x}, {y}) over the {axis}. What is the new point?"
+    options = [correct] + wrong
+    random.shuffle(options)
+    idx = options.index(correct)
+    return {"question": q, "options": options, "answer": idx, "category": "graphing"}
 
 
 def _generate_estimation():
@@ -822,34 +1457,62 @@ def _generate_dist_word():
 
 
 _GENERATORS = {
-    "percentages": [_generate_percentage, _generate_percentage_word],
-    "fractions": [_generate_fraction_addition, _generate_fraction_of, _generate_fraction_remaining],
-    "word_problems": [_generate_word_problem],
-    "powers": [_generate_squares, _generate_cubes, _generate_power_of_two, _generate_power_of_ten, _generate_square_root, _generate_exponent_compare, _generate_power_word],
-    "ratios": [_generate_simplify_ratio, _generate_missing_proportion, _generate_ratio_to_fraction, _generate_ratio_share, _generate_unit_rate, _generate_proportion_word],
+    "fractions": [
+        _generate_fraction_addition, _generate_fraction_subtraction,
+        _generate_fraction_multiply, _generate_fraction_divide,
+        _generate_fraction_of, _generate_fraction_remaining,
+        _generate_fraction_to_decimal, _generate_decimal_operations,
+        _generate_fraction_word_problem,
+    ],
+    "integers": [
+        _generate_int_add, _generate_int_subtract,
+        _generate_int_multiply, _generate_int_divide,
+        _generate_absolute_value, _generate_int_mixed_expr,
+        _generate_int_word,
+    ],
+    "ratios": [
+        _generate_simplify_ratio, _generate_missing_proportion,
+        _generate_ratio_to_fraction, _generate_ratio_share,
+        _generate_unit_rate, _generate_proportion_word,
+    ],
+    "equations": [
+        _generate_eq_one_step_add, _generate_eq_one_step_sub,
+        _generate_eq_one_step_mult, _generate_eq_one_step_div,
+        _generate_eq_two_step, _generate_eq_two_step_sub,
+        _generate_eq_word, _generate_eq_fraction,
+        _generate_evaluate_expression,
+    ],
+    "percentages": [
+        _generate_percentage, _generate_percentage_word,
+        _generate_percent_increase, _generate_percent_decrease,
+        _generate_percent_find_rate, _generate_tip_calculation,
+    ],
+    "geometry": [
+        _generate_geo_rect_area, _generate_geo_rect_perimeter,
+        _generate_geo_triangle_area, _generate_geo_missing_side,
+        _generate_geo_square_area, _generate_geo_circle_area,
+        _generate_geo_word,
+    ],
+    "graphing": [
+        _generate_graph_identify_quadrant, _generate_graph_distance_axis,
+        _generate_graph_slope, _generate_graph_slope_ratio,
+        _generate_graph_pattern, _generate_graph_reflect,
+    ],
     "proportionality": [
-        _generate_k_from_xy,
-        _generate_y_from_kx,
-        _generate_x_from_ky,
-        _generate_k_word,
+        _generate_k_from_xy, _generate_y_from_kx,
+        _generate_x_from_ky, _generate_k_word,
         _generate_table_k,
     ],
     "distributive": [
-        _generate_dist_expand_add,
-        _generate_dist_expand_sub,
-        _generate_dist_fill_blank,
-        _generate_dist_reverse,
-        _generate_dist_mental_trick,
-        _generate_dist_word,
+        _generate_dist_expand_add, _generate_dist_expand_sub,
+        _generate_dist_fill_blank, _generate_dist_reverse,
+        _generate_dist_mental_trick, _generate_dist_word,
     ],
-    "equations": [
-        _generate_eq_one_step_add,
-        _generate_eq_one_step_sub,
-        _generate_eq_one_step_mult,
-        _generate_eq_one_step_div,
-        _generate_eq_two_step,
-        _generate_eq_two_step_sub,
-        _generate_eq_word,
+    "word_problems": [_generate_word_problem],
+    "powers": [
+        _generate_squares, _generate_cubes, _generate_power_of_two,
+        _generate_power_of_ten, _generate_square_root,
+        _generate_exponent_compare, _generate_power_word,
     ],
 }
 
