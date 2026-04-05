@@ -5300,6 +5300,8 @@ def render_cube_addition():
             st.session_state.selected_activity = None
             st.rerun()
 
+    CUBE_MAX_QUESTIONS = 10
+
     st.markdown(f"""
     <div style="text-align:center; padding:0.5rem 0 0.5rem 0;">
         <h1 style="font-size:2.5rem;">🧊 {name}'s Fun Addition</h1>
@@ -5318,11 +5320,72 @@ def render_cube_addition():
             f'<div class="score-card"><div class="score-number">🎯 {pct}%</div>'
             f'<div class="score-label">Accuracy</div></div>', unsafe_allow_html=True)
     with sc3:
+        remaining = max(0, CUBE_MAX_QUESTIONS - st.session_state.cube_total)
         st.markdown(
-            f'<div class="score-card"><div class="score-number">🔥 {st.session_state.cube_streak}</div>'
-            f'<div class="score-label">Streak</div></div>', unsafe_allow_html=True)
+            f'<div class="score-card"><div class="score-number">📝 {remaining}</div>'
+            f'<div class="score-label">Left</div></div>', unsafe_allow_html=True)
+
+    if st.session_state.cube_total > 0 and st.session_state.cube_total <= CUBE_MAX_QUESTIONS:
+        prog = st.session_state.cube_total / CUBE_MAX_QUESTIONS
+        st.markdown(f"""
+        <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 0.5rem 0;">
+            <div style="width:{prog*100:.0f}%;height:100%;background:linear-gradient(90deg,#3b82f6,#10b981);
+                 border-radius:10px;transition:width 0.4s ease;"></div>
+        </div>
+        """, unsafe_allow_html=True)
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    # ── Summary phase — shown after CUBE_MAX_QUESTIONS ──
+    if st.session_state.cube_total >= CUBE_MAX_QUESTIONS and st.session_state.cube_phase not in ("correct", "wrong"):
+        score = st.session_state.cube_score
+        total_q = st.session_state.cube_total
+        pct = int(score / total_q * 100) if total_q else 0
+
+        user = db.get_user(name)
+        if user:
+            db.save_activity_score(
+                user["id"], "CubeAddition", "Quiz",
+                pct, 100, f"{score}/{total_q} correct", 0,
+            )
+
+        if pct == 100:
+            r_emoji, msg, r_color = "🏆", "Perfect score! You're an addition superstar!", "#10b981"
+        elif pct >= 80:
+            r_emoji, msg, r_color = "🌟", "Excellent job! You really know your addition!", "#3b82f6"
+        elif pct >= 60:
+            r_emoji, msg, r_color = "👍", "Good work! Keep practicing!", "#f59e0b"
+        else:
+            r_emoji, msg, r_color = "💪", "Keep going! You'll get better every time!", "#ef4444"
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:2rem;background:{r_color}10;border-radius:20px;
+             border:3px solid {r_color};margin-top:1rem;">
+            <div style="font-size:5rem;">{r_emoji}</div>
+            <h2 style="color:{r_color};margin:0.5rem 0;font-size:2rem;">
+                {score} out of {total_q} correct!
+            </h2>
+            <p style="font-size:1.4rem;color:#374151;">{msg}</p>
+            <p style="color:#9ca3af;font-size:1.1rem;">Score: {pct}%</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_r1, col_r2 = st.columns(2)
+        with col_r1:
+            if st.button("🧊 Play Again!", key="cube_play_again", width="stretch", type="primary"):
+                st.session_state.cube_problem = None
+                st.session_state.cube_phase = "intro"
+                st.session_state.cube_score = 0
+                st.session_state.cube_total = 0
+                st.session_state.cube_streak = 0
+                st.rerun()
+        with col_r2:
+            if st.button("🏠 Dashboard", key="cube_go_dash", width="stretch"):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.selected_activity = None
+                st.rerun()
+        return
 
     # ── Intro phase ──
     if st.session_state.cube_phase == "intro":
@@ -5694,9 +5757,14 @@ def render_cube_addition():
 
         _, nc, _ = st.columns([2, 1, 2])
         with nc:
-            if st.button("▶️ Next Problem!", key="cube_next_ok", width="stretch", type="primary"):
-                new_problem()
-                st.rerun()
+            if st.session_state.cube_total >= CUBE_MAX_QUESTIONS:
+                if st.button("🎉 See Results!", key="cube_see_results_ok", width="stretch", type="primary"):
+                    st.session_state.cube_phase = "done"
+                    st.rerun()
+            else:
+                if st.button("▶️ Next Problem!", key="cube_next_ok", width="stretch", type="primary"):
+                    new_problem()
+                    st.rerun()
 
     # ── Wrong ──
     elif phase == "wrong":
@@ -5719,9 +5787,14 @@ def render_cube_addition():
 
         _, nc, _ = st.columns([2, 1, 2])
         with nc:
-            if st.button("▶️ Try Another!", key="cube_next_wrong", width="stretch", type="primary"):
-                new_problem()
-                st.rerun()
+            if st.session_state.cube_total >= CUBE_MAX_QUESTIONS:
+                if st.button("🎉 See Results!", key="cube_see_results_wrong", width="stretch", type="primary"):
+                    st.session_state.cube_phase = "done"
+                    st.rerun()
+            else:
+                if st.button("▶️ Try Another!", key="cube_next_wrong", width="stretch", type="primary"):
+                    new_problem()
+                    st.rerun()
 
 
 # ──────────────────────────────────────────────
