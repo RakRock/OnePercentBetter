@@ -2,13 +2,14 @@
 General Knowledge content module.
 
 Uses xAI Grok (OpenAI-compatible API) to:
-  1. Generate 10 daily GK questions across varied topics.
+  1. Generate daily GK questions across varied topics (count depends on profile).
   2. Power a per-question chat tutor that gives hints without answers.
 
 Supports multiple user profiles so questions and tone match each user's age
 and knowledge level.
 """
 
+import difflib
 import json
 import random
 import re
@@ -19,6 +20,13 @@ from openai import OpenAI
 # ── xAI Grok configuration ──
 XAI_BASE_URL = "https://api.x.ai/v1"
 XAI_MODEL = "grok-3-mini"
+
+# Post-generation diversity checks (pairwise question text)
+_DIVERSITY_MAX_PAIR_SIMILARITY = 0.76
+_DIVERSITY_MAX_ADJACENT_SIMILARITY = 0.70
+_DIVERSITY_OPENING_WORDS = 5
+_DIVERSITY_MIN_ANSWER_LEN_FOR_UNIQUENESS = 5
+_DIVERSITY_GENERATION_RETRIES = 3
 
 # ──────────────────────────────────────────────
 # User profiles — each defines topics, prompts, and tone
@@ -52,20 +60,40 @@ PROFILES = {
 You are a quiz maker for an 11-year-old student. Generate exactly 15 \
 general knowledge multiple-choice questions.
 
-RULES:
-- Each question should be from a DIFFERENT topic. Pick 15 topics randomly from \
-this list: Science, Nature, Animals, Space, Geography, History, Sports, Inventions, \
+TOPICS (one question per topic — use 15 DIFFERENT topics, no repeats):
+Pick 15 topics randomly from this list (shuffle order — not alphabetical): \
+Science, Nature, Animals, Space, Geography, History, Sports, Inventions, \
 Food, Culture, Human Body, Oceans & Marine Life, Weather & Climate, World Records, \
 Famous People, Countries & Flags, Dinosaurs & Fossils, Music & Instruments, \
 Math Fun Facts, Computers & Technology, Languages of the World, Mythology, Olympics, \
 Wonders of the World, Volcanoes & Earthquakes.
-- IMPORTANT: Vary the topics every time — do NOT always pick the same 15 topics. \
-Make sure at least 5-6 of the topics are different from the common ones.
-- Difficulty: medium — fun and educational, not too easy and not too hard.
+
+DIFFICULTY: medium — fun and educational, not too easy and not too hard.
+
+UNIQUENESS — this is mandatory for the whole quiz:
+- No two questions may test the same fact, the same answer, the same famous person, \
+the same country/city, the same animal species, or the same invention/device.
+- "Different topic" is NOT enough: two questions must not feel like the same template. \
+Do NOT place similar patterns next to each other (e.g. avoid back-to-back "What is the \
+capital of ___" or back-to-back "Which planet ___"). Mix question shapes across the list.
+- Vary HOW you ask: use a mix of styles such as Which / Who / What does X mean / \
+In which country / Which of these is NOT / What happens when / About how many / \
+Which invention helped — not only "What is...".
+- For broad topics (e.g. Science), use DIFFERENT sub-areas within that one question \
+(life vs physical vs earth vs materials — not two questions about the same sub-area).
+- Avoid stuffing the quiz with the same kind of superlative ("largest", "longest", \
+"highest", "fastest") — at most two such questions in all 15.
+- Skip tired one-line clichés unless the angle is fresh; do not lean on the same \
+small set of "famous quiz answers" repeated across quizzes.
+
+FORMAT:
 - Each question has exactly 4 options.
 - The "answer" field is the 0-based index of the correct option.
 - Include a short "explanation" (1-2 sentences) that teaches something interesting.
 - Questions should be factual and have one clearly correct answer.
+
+Before you output JSON, verify all 15 questions are pairwise distinct in subject matter \
+and in question wording.
 
 Respond with ONLY valid JSON — an array of 15 objects:
 [
@@ -99,6 +127,21 @@ Help the student think through it without giving away the answer.""",
         "subtitle": "Learn something new every day!",
         "quiz_description": "15 questions from 25 topics — Science, Space, History, Sports, Dinosaurs, Olympics, and more!",
         "color": "#f59e0b",
+        "strict_diversity_post_checks": True,
+        "diversity_hint_pool": [
+            "This session: lean toward real-world uses and 'how it works', not just names and dates.",
+            "Include at least one question about a habitat or ecosystem (not just an animal fact).",
+            "Include at least one question where the interesting part is a number, distance, or time span.",
+            "Favor lesser-known but kid-appropriate facts over the same famous examples everyone uses.",
+            "Ensure Geography and History questions refer to different regions/eras — no duplicate area.",
+            "Mix at least one 'Which is NOT true' or 'Which does not belong' style (still one clear answer).",
+            "Include one question inspired by everyday experience (kitchen, weather, sports match, phone/map).",
+            "Avoid repeating the same opening word for more than two questions in a row (e.g. not all 'What...').",
+            "For Space, ask about missions, phases, or distances — not only planet names.",
+            "For Sports/Olympics, vary between rules, venues, symbols, and records — not only medal counts.",
+            "Use diverse countries and continents across Geography / Culture / Flags — not Europe-only.",
+            "Pull one question from a niche angle within a topic (e.g. a festival, a tool, a material).",
+        ],
     },
 
     # ── Sangeetha: 35-year-old adult, building GK habits (India focus) ──
@@ -205,6 +248,7 @@ Help them reason through it without giving away the answer.""",
         "quiz_description": "10 questions — states, monuments, rivers, landmarks & more!",
         "color": "#f093fb",
         "has_map": True,
+        "strict_diversity_post_checks": False,
     },
     # ── Rakesh: 37-year-old adult, building GK habits (United States focus) ──
     "Rakesh": {
@@ -308,6 +352,7 @@ Help them reason through it without giving away the answer.""",
         "color": "#3b82f6",
         "has_map": True,
         "map_country": "us",
+        "strict_diversity_post_checks": False,
     },
 }
 
@@ -325,60 +370,117 @@ def _get_client(xai_api_key: str) -> OpenAI:
     return OpenAI(api_key=xai_api_key, base_url=XAI_BASE_URL)
 
 
-def generate_daily_questions(
-    xai_api_key: str,
-    user_name: str = "Arjun",
-    past_questions: list[str] | None = None,
-) -> list:
-    """Generate daily GK questions using xAI Grok.
+def _normalize_for_compare(text: str) -> str:
+    text = (text or "").lower().strip()
+    text = re.sub(r"[^\w\s]", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
 
-    Args:
-        xai_api_key: xAI API key.
-        user_name: Name of the user (determines profile/topics/tone).
-        past_questions: Optional list of previously asked question strings
-            to exclude from generation.
 
-    Returns a list of question dicts, each with:
-      topic, question, options (list of 4), answer (int), explanation (str)
+def _word_jaccard(a: str, b: str) -> float:
+    wa = set(a.split())
+    wb = set(b.split())
+    if not wa or not wb:
+        return 0.0
+    return len(wa & wb) / len(wa | wb)
 
-    Raises ValueError if generation or parsing fails.
-    """
-    profile = get_profile(user_name)
-    client = _get_client(xai_api_key)
 
-    system_prompt = profile["question_prompt"]
+def _question_similarity(q1: str, q2: str) -> float:
+    """Blend sequence similarity and word overlap (no extra dependencies)."""
+    n1, n2 = _normalize_for_compare(q1), _normalize_for_compare(q2)
+    if not n1 or not n2:
+        return 0.0
+    if n1 == n2:
+        return 1.0
+    seq = difflib.SequenceMatcher(None, n1, n2).ratio()
+    jac = _word_jaccard(n1, n2)
+    return max(seq, jac)
 
-    # Build an exclusion block so the model avoids repeating past questions
-    if past_questions:
-        sample = past_questions[:60]
-        exclusion = "\n".join(f"- {q}" for q in sample)
-        system_prompt += (
-            f"\n\nCRITICAL — do NOT repeat or rephrase any of these previously "
-            f"asked questions. Generate completely NEW questions on fresh sub-topics:\n"
-            f"{exclusion}"
-        )
 
-    # Randomise the user message so the model doesn't cache identical outputs
-    today_str = date.today().strftime("%A, %B %d, %Y")
-    seed = random.randint(1000, 9999)
-    user_msg = (
-        f"Generate a fresh set of general knowledge questions for {today_str}. "
-        f"(Session {seed}) Make them creative and different from any previous set!"
-    )
+def _same_opening_prefix(a: str, b: str, words: int) -> bool:
+    wa = _normalize_for_compare(a).split()
+    wb = _normalize_for_compare(b).split()
+    if len(wa) < words or len(wb) < words:
+        return False
+    return wa[:words] == wb[:words]
 
-    response = client.chat.completions.create(
-        model=XAI_MODEL,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_msg},
-        ],
-        max_tokens=3000,
-        temperature=1.0,
-    )
 
-    raw = response.choices[0].message.content.strip()
+def check_quiz_diversity(
+    questions: list[dict],
+    *,
+    require_unique_topics: bool = True,
+    strict: bool = True,
+) -> tuple[bool, list[str]]:
+    """Return (ok, issues). If strict=False, only topic + duplicate-answer checks."""
+    issues: list[str] = []
+    n = len(questions)
+    texts = [str(q.get("question", "")) for q in questions]
 
-    # Extract JSON array from response
+    if require_unique_topics:
+        topics = [str(q.get("topic", "")).strip().lower() for q in questions]
+        if any(not t for t in topics):
+            issues.append("Every question must have a non-empty topic.")
+        elif len(topics) != len(set(topics)):
+            issues.append(
+                "Duplicate topic labels: each question must use a different topic."
+            )
+
+    # Duplicate correct answers (substantive strings only)
+    seen_ans: dict[str, int] = {}
+    for i, q in enumerate(questions):
+        opts = q.get("options")
+        ans_i = q.get("answer")
+        if not isinstance(opts, list) or ans_i is None:
+            continue
+        if not (0 <= int(ans_i) < len(opts)):
+            continue
+        key = _normalize_for_compare(str(opts[int(ans_i)]))
+        if len(key) >= _DIVERSITY_MIN_ANSWER_LEN_FOR_UNIQUENESS:
+            if key in seen_ans:
+                issues.append(
+                    f"Questions {seen_ans[key] + 1} and {i + 1} share the same correct answer text."
+                )
+            else:
+                seen_ans[key] = i
+
+    if not strict:
+        out_light: list[str] = []
+        for x in issues:
+            if x not in out_light:
+                out_light.append(x)
+        return (len(out_light) == 0, out_light)
+
+    for i in range(n):
+        for j in range(i + 1, n):
+            if _same_opening_prefix(texts[i], texts[j], _DIVERSITY_OPENING_WORDS):
+                issues.append(
+                    f"Questions {i + 1} and {j + 1} use the same first "
+                    f"{_DIVERSITY_OPENING_WORDS} words — rewrite one with a different structure."
+                )
+            sim = _question_similarity(texts[i], texts[j])
+            if sim >= _DIVERSITY_MAX_PAIR_SIMILARITY:
+                issues.append(
+                    f"Questions {i + 1} and {j + 1} are too similar (score {sim:.2f})."
+                )
+
+    for i in range(n - 1):
+        sim = _question_similarity(texts[i], texts[i + 1])
+        if sim >= _DIVERSITY_MAX_ADJACENT_SIMILARITY:
+            issues.append(
+                f"Consecutive questions {i + 1} and {i + 2} are too similar "
+                f"(score {sim:.2f}) — separate their wording more."
+            )
+
+    # Dedupe issue strings while preserving order
+    out: list[str] = []
+    for x in issues:
+        if x not in out:
+            out.append(x)
+    return (len(out) == 0, out)
+
+
+def _parse_validate_shuffle_questions(raw: str) -> list:
+    """Parse model JSON, validate fields, shuffle options. Raises ValueError."""
     json_match = re.search(r"\[[\s\S]*\]", raw)
     if not json_match:
         raise ValueError(f"No JSON array found in response:\n{raw[:500]}")
@@ -388,7 +490,6 @@ def generate_daily_questions(
     if not isinstance(questions, list) or len(questions) == 0:
         raise ValueError("Expected a non-empty list of questions")
 
-    # Validate each question and shuffle options
     validated = []
     for i, q in enumerate(questions):
         for field in ("topic", "question", "options", "answer"):
@@ -401,7 +502,6 @@ def generate_daily_questions(
         if "explanation" not in q:
             q["explanation"] = ""
 
-        # Shuffle so the correct answer isn't always in the same position
         correct_text = q["options"][q["answer"]]
         indices = list(range(4))
         random.shuffle(indices)
@@ -411,6 +511,123 @@ def generate_daily_questions(
         validated.append(q)
 
     return validated
+
+
+def generate_daily_questions(
+    xai_api_key: str,
+    user_name: str = "Arjun",
+    past_questions: list[str] | None = None,
+) -> list:
+    """Generate daily GK questions using xAI Grok.
+
+    After each successful parse, runs ``check_quiz_diversity`` (see profile flag
+    ``strict_diversity_post_checks``). On failure, retries up to
+    ``_DIVERSITY_GENERATION_RETRIES`` with automated feedback to the model.
+
+    Args:
+        xai_api_key: xAI API key.
+        user_name: Name of the user (determines profile/topics/tone).
+        past_questions: Optional list of previously asked question strings
+            to exclude from generation.
+
+    Returns a list of question dicts, each with:
+      topic, question, options (list of 4), answer (int), explanation (str)
+
+    Raises ValueError if generation, parsing, or post-checks fail after retries.
+    """
+    profile = get_profile(user_name)
+    client = _get_client(xai_api_key)
+
+    system_prompt = profile["question_prompt"]
+
+    # Build an exclusion block so the model avoids repeating past questions
+    if past_questions:
+        pq = list(past_questions)
+        random.shuffle(pq)
+        sample = pq[: min(100, len(pq))]
+        exclusion = "\n".join(f"- {q}" for q in sample)
+        system_prompt += (
+            "\n\nCRITICAL — do NOT repeat or closely paraphrase any of these previously "
+            "asked questions. Each new question must target a different fact than all of these. "
+            "If a topic appears here often, choose a different sub-topic or angle for that topic:\n"
+            f"{exclusion}"
+        )
+
+    # Randomise the user message so the model doesn't cache identical outputs
+    today_str = date.today().strftime("%A, %B %d, %Y")
+    seed = random.randint(1000, 9999)
+    user_msg = (
+        f"Generate a fresh set of general knowledge questions for {today_str}. "
+        f"(Session {seed}) Make them creative and different from any previous set!"
+    )
+    hint_pool = profile.get("diversity_hint_pool")
+    if hint_pool:
+        k = min(5, len(hint_pool))
+        picks = random.sample(hint_pool, k=k)
+        user_msg += "\n\nSession-specific diversity requirements (follow all):\n" + "\n".join(
+            f"- {p}" for p in picks
+        )
+
+    require_unique_topics = profile.get("require_unique_topics", True)
+    strict_checks = profile.get("strict_diversity_post_checks", False)
+    retry_feedback: str | None = None
+    last_structural_error: str | None = None
+    last_diversity_issues: list[str] = []
+
+    for attempt in range(_DIVERSITY_GENERATION_RETRIES):
+        user_attempt = user_msg
+        if retry_feedback:
+            user_attempt += "\n\n" + retry_feedback
+        if attempt > 0 and hint_pool:
+            extra = random.sample(hint_pool, k=min(2, len(hint_pool)))
+            user_attempt += "\n\nExtra variety nudges:\n" + "\n".join(f"- {p}" for p in extra)
+
+        response = client.chat.completions.create(
+            model=XAI_MODEL,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_attempt},
+            ],
+            max_tokens=3800,
+            temperature=1.0,
+        )
+
+        raw = response.choices[0].message.content.strip()
+
+        try:
+            validated = _parse_validate_shuffle_questions(raw)
+        except ValueError as exc:
+            last_structural_error = str(exc)
+            if attempt < _DIVERSITY_GENERATION_RETRIES - 1:
+                retry_feedback = (
+                    "Your last reply was not usable. Fix and return ONLY a valid JSON array "
+                    f"of questions. Error: {last_structural_error}"
+                )
+                continue
+            raise
+
+        ok, issues = check_quiz_diversity(
+            validated,
+            require_unique_topics=require_unique_topics,
+            strict=strict_checks,
+        )
+        if ok:
+            return validated
+
+        last_diversity_issues = issues
+        if attempt < _DIVERSITY_GENERATION_RETRIES - 1:
+            shown = issues[:20]
+            retry_feedback = (
+                "AUTOMATED DIVERSITY CHECKS FAILED on your last JSON. "
+                "Regenerate the ENTIRE quiz from scratch. Fix ALL of the following:\n"
+                + "\n".join(f"- {x}" for x in shown)
+            )
+            continue
+
+    detail = "; ".join(last_diversity_issues[:5]) if last_diversity_issues else "unknown"
+    raise ValueError(
+        f"Quiz diversity checks failed after {_DIVERSITY_GENERATION_RETRIES} attempts: {detail}"
+    )
 
 
 def chat_with_tutor(

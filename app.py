@@ -910,7 +910,7 @@ def render_user_dashboard():
             <div class="score-card" style="border-top: 5px solid #ef4444;">
                 <div style="font-size: 3rem;">🧊</div>
                 <h3 style="margin: 0.5rem 0;">Addition</h3>
-                <p style="color: #6b7280;">Learn adding with cubes!</p>
+                <p style="color: #6b7280;">Count shapes — sums up to 10</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
@@ -5276,12 +5276,12 @@ def render_cube_addition():
     ]
 
     def new_problem():
-        total = _rnd.randint(2, 5)
+        total = _rnd.randint(2, 10)
         a = _rnd.randint(1, total - 1)
         b = total - a
         c1, c2 = _rnd.sample(COLORS, 2)
         shape = _rnd.choice(SHAPE_TYPES)
-        wrong_opts = [x for x in range(0, 6) if x != total]
+        wrong_opts = [x for x in range(0, 11) if x != total]
         distractors = _rnd.sample(wrong_opts, min(3, len(wrong_opts)))
         jumbled = [total] + distractors
         _rnd.shuffle(jumbled)
@@ -5395,7 +5395,7 @@ def render_cube_addition():
             <h2 style="margin:1rem 0;">Ready to add fun shapes?</h2>
             <p style="color:#6b7280; font-size:1.15rem;">
                 Cubes, stars, hearts, balloons, flowers, diamonds &amp; balls!<br>
-                All totals are <b>5 or less</b> — you've got this!
+                All totals are <b>10 or less</b> — you've got this!
             </p>
         </div>
         """, unsafe_allow_html=True)
@@ -5430,8 +5430,14 @@ def render_cube_addition():
     anim_r = shape["anim_right"]
     flower_shadow = shape.get("shadow_extra", "")
 
-    sz = 80 if shape["id"] != "diamond" else 60
-    gap = 14
+    _mx = max(a, b)
+    if _mx >= 8:
+        sz = 52 if shape["id"] != "diamond" else 44
+    elif _mx >= 6:
+        sz = 64 if shape["id"] != "diamond" else 52
+    else:
+        sz = 80 if shape["id"] != "diamond" else 60
+    gap = 12 if _mx >= 6 else 14
 
     phase = st.session_state.cube_phase
 

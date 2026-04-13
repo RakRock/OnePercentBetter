@@ -91,6 +91,32 @@ BRANDS = [
     ("target", "target", "CC0000", None),
     ("converse", "converse", "000000", None),
     ("crocs", "crocs", "1BA23C", None),
+
+    # Expanded bank (matches logo_identifier_content.py ids 51–71)
+    ("linkedin", "linkedin", "0A66C2", None),
+    ("paypal", "paypal", "003087", None),
+    ("samsung", "samsung", "1428A0", None),
+    ("uber", "uber", "000000", None),
+    ("airbnb", "airbnb", "FF5A5F", None),
+    ("cocacola", "cocacola", "F40009", None),
+    ("burgerking", "burgerking", "FF8732", None),
+    ("monster", "monster", "58FF14", "000000"),
+    ("heineken", "heineken", "008200", None),
+    ("reebok", "reebok", "E41E26", None),
+    ("newbalance", "newbalance", "000000", None),
+    ("champion", "champion", "002D5D", None),
+    ("honda", "honda", "E40521", None),
+    ("ford", "ford", "003478", None),
+    ("nissan", "nissan", "C3002F", None),
+    ("hyundai", "hyundai", "002C5F", None),
+    ("steam", "steam", "000000", None),
+    ("twitch", "twitch", "9146FF", None),
+    ("hulu", "hulu", "1CE783", "1A1A1A"),
+    ("gucci", "gucci", "000000", None),
+    ("zara", "zara", "000000", None),
+
+    # Existing quiz entries that were missing from this list
+    ("wendys", "wendys", "DE0039", None),
 ]
 
 
