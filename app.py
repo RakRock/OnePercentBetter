@@ -729,6 +729,7 @@ def start_mental_math(questions):
     st.session_state.mm_answers = []
     st.session_state.mm_last_feedback = None
     st.session_state.mm_start_time = time.time()
+    st.session_state.mm_sprint_id = time.time_ns()
 
 
 def back_to_mental_math_home():
@@ -3303,7 +3304,7 @@ def render_mental_math_home():
         <div style="font-size: 4rem;">⚡</div>
         <h3 style="margin: 0.5rem 0;">{"Ready for another sprint?" if today_mm else "Ready to sprint?"}</h3>
         <p style="color: #6b7280;">
-            10 questions — arithmetic, percentages, fractions, estimation & word problems!
+            10 questions — arithmetic, percentages, fractions, number sense & estimation, word problems, and optional diagram hints.
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -3403,6 +3404,35 @@ def render_mental_math_practice():
             <div class="gk-question-text" style="margin-top:0.8rem;font-size:1.4rem;">{q['question']}</div>
         </div>
         """, unsafe_allow_html=True)
+
+        hint_meta = q.get("hint_meta")
+        if hint_meta:
+            import mental_math_hints as mm_hints
+
+            svg_html = mm_hints.hint_svg_html(hint_meta)
+            if svg_html:
+                with st.expander("Visual hint (diagram)", expanded=False):
+                    st.markdown(svg_html, unsafe_allow_html=True)
+                    hf_key = os.environ.get("HF_TOKEN") or ""
+                    if not hf_key:
+                        try:
+                            hf_key = st.secrets.get("HF_TOKEN", "") or ""
+                        except Exception:
+                            hf_key = ""
+                    if hf_key:
+                        sid = st.session_state.get("mm_sprint_id", 0)
+                        cache_key = f"mm_hf_{sid}_{current}"
+                        if cache_key not in st.session_state:
+                            st.session_state[cache_key] = None
+                        if st.button("Generate AI diagram (Hugging Face)", key=f"mm_hf_{current}"):
+                            prompt = mm_hints.hf_prompt_for_diagram(hint_meta)
+                            img_bytes = mm_hints.generate_hf_diagram_image(prompt, api_key=hf_key)
+                            if img_bytes:
+                                st.session_state[cache_key] = img_bytes
+                            else:
+                                st.caption("Could not generate image. Check HF_TOKEN and network.")
+                        if st.session_state.get(cache_key):
+                            st.image(st.session_state[cache_key], caption="AI illustration (optional)")
 
         last_feedback = st.session_state.get("mm_last_feedback")
 

@@ -2,7 +2,10 @@
 Mental Math Sprint — procedurally generated math questions for Arjun.
 
 Questions are generated randomly each time so every sprint feels fresh.
-Categories: Quick Arithmetic, Percentages, Fractions, Estimation, Word Problems.
+Categories include fractions, integers, ratios, equations, percentages, geometry
+(area, perimeter, triangle angles, basic shapes), graphing, proportionality,
+distributive, word problems, powers, and number sense (estimation, which is closer,
+mental rewrites). Optional hint_meta powers SVG / AI diagrams on many items.
 Difficulty is calibrated for an 11-year-old (medium-hard).
 """
 
@@ -32,6 +35,11 @@ CATEGORIES = {
     },
     "word_problems": {"name": "Word Problems", "emoji": "📝", "color": "#ef4444"},
     "powers": {"name": "Powers & Exponents", "emoji": "⚡", "color": "#06b6d4"},
+    "number_sense": {
+        "name": "Number Sense & Estimation",
+        "emoji": "🎯",
+        "color": "#f97316",
+    },
 }
 
 
@@ -123,7 +131,17 @@ def _generate_percentage():
     correct = int(base * pct / 100)
     q = f"What is {pct}% of {base}?"
     options, idx = _make_options(correct, spread=max(5, correct // 3))
-    return {"question": q, "options": options, "answer": idx, "category": "percentages"}
+    return {
+        "question": q,
+        "options": options,
+        "answer": idx,
+        "category": "percentages",
+        "hint_meta": {
+            "kind": "bar_percent",
+            "pct": pct,
+            "caption": f"{pct}% of {base}",
+        },
+    }
 
 
 def _generate_percentage_word():
@@ -189,7 +207,18 @@ def _generate_fraction_of():
     correct = int(base * num / denom)
     q = f"What is {frac_str} of {base}?"
     options, idx = _make_options(correct, spread=max(3, correct // 3))
-    return {"question": q, "options": options, "answer": idx, "category": "fractions"}
+    return {
+        "question": q,
+        "options": options,
+        "answer": idx,
+        "category": "fractions",
+        "hint_meta": {
+            "kind": "bar_fraction",
+            "num": num,
+            "den": denom,
+            "of_total": base,
+        },
+    }
 
 
 def _generate_fraction_remaining():
@@ -651,7 +680,13 @@ def _generate_geo_rect_area():
     options_str = [f"{o} sq units" for o in options]
     str_correct = f"{correct} sq units"
     idx = options_str.index(str_correct)
-    return {"question": q, "options": options_str, "answer": idx, "category": "geometry"}
+    return {
+        "question": q,
+        "options": options_str,
+        "answer": idx,
+        "category": "geometry",
+        "hint_meta": {"kind": "geo_rect_area", "length": l, "width": w},
+    }
 
 
 def _generate_geo_rect_perimeter():
@@ -663,7 +698,13 @@ def _generate_geo_rect_perimeter():
     options_str = [f"{o} units" for o in options]
     str_correct = f"{correct} units"
     idx = options_str.index(str_correct)
-    return {"question": q, "options": options_str, "answer": idx, "category": "geometry"}
+    return {
+        "question": q,
+        "options": options_str,
+        "answer": idx,
+        "category": "geometry",
+        "hint_meta": {"kind": "geo_rect_perimeter", "length": l, "width": w},
+    }
 
 
 def _generate_geo_triangle_area():
@@ -677,17 +718,39 @@ def _generate_geo_triangle_area():
     options_str = [f"{o} sq units" for o in options]
     str_correct = f"{correct} sq units"
     idx = options_str.index(str_correct)
-    return {"question": q, "options": options_str, "answer": idx, "category": "geometry"}
+    return {
+        "question": q,
+        "options": options_str,
+        "answer": idx,
+        "category": "geometry",
+        "hint_meta": {"kind": "geo_triangle_area", "base": base, "height": height},
+    }
 
 
 def _generate_geo_missing_side():
     perimeter = random.choice([30, 36, 40, 44, 48, 52, 60])
-    l = random.randint(perimeter // 6, perimeter // 3)
-    w = (perimeter // 2) - l
-    q = f"A rectangle has perimeter {perimeter} and length {l}. What is the width?"
+    half = perimeter // 2
+    l = random.randint(max(4, half // 4), min(half - 4, half * 3 // 4))
+    w = half - l
+    if w < 2:
+        l, w = half // 2, half - half // 2
+    if random.random() < 0.4:
+        q = f"A rectangular garden has perimeter {perimeter}. If the length is {l}, what is the width?"
+    else:
+        q = f"A rectangle has perimeter {perimeter} and length {l}. What is the width?"
     correct = w
     options, idx = _make_options(correct, spread=max(2, correct // 3))
-    return {"question": q, "options": options, "answer": idx, "category": "geometry"}
+    return {
+        "question": q,
+        "options": options,
+        "answer": idx,
+        "category": "geometry",
+        "hint_meta": {
+            "kind": "geo_find_width",
+            "perimeter": perimeter,
+            "length": l,
+        },
+    }
 
 
 def _generate_geo_square_area():
@@ -698,7 +761,17 @@ def _generate_geo_square_area():
     options_str = [f"{o} sq units" for o in options]
     str_correct = f"{correct} sq units"
     idx = options_str.index(str_correct)
-    return {"question": q, "options": options_str, "answer": idx, "category": "geometry"}
+    return {
+        "question": q,
+        "options": options_str,
+        "answer": idx,
+        "category": "geometry",
+        "hint_meta": {
+            "kind": "geo_square",
+            "side": side,
+            "caption": "Area = side × side",
+        },
+    }
 
 
 def _generate_geo_circle_area():
@@ -715,7 +788,13 @@ def _generate_geo_circle_area():
     options = [correct] + distractors[:3]
     random.shuffle(options)
     idx = options.index(correct)
-    return {"question": q, "options": [f"{o} sq units" for o in options], "answer": idx, "category": "geometry"}
+    return {
+        "question": q,
+        "options": [f"{o} sq units" for o in options],
+        "answer": idx,
+        "category": "geometry",
+        "hint_meta": {"kind": "geo_circle", "radius": r},
+    }
 
 
 def _generate_geo_word():
@@ -732,7 +811,13 @@ def _geo_garden():
     correct = l * w
     q = f"A rectangular garden is {l} feet by {w} feet. How many square feet of sod do you need to cover it?"
     options, idx = _make_options(correct, spread=max(10, correct // 5))
-    return {"question": q, "options": options, "answer": idx, "category": "geometry"}
+    return {
+        "question": q,
+        "options": options,
+        "answer": idx,
+        "category": "geometry",
+        "hint_meta": {"kind": "geo_rect_area", "length": l, "width": w},
+    }
 
 
 def _geo_fence():
@@ -741,7 +826,87 @@ def _geo_fence():
     correct = 2 * (l + w)
     q = f"How many feet of fencing do you need for a {l} ft by {w} ft rectangular yard?"
     options, idx = _make_options(correct, spread=max(5, correct // 5))
-    return {"question": q, "options": options, "answer": idx, "category": "geometry"}
+    return {
+        "question": q,
+        "options": options,
+        "answer": idx,
+        "category": "geometry",
+        "hint_meta": {"kind": "geo_rect_perimeter", "length": l, "width": w},
+    }
+
+
+def _generate_geo_triangle_angles():
+    """Third angle of a triangle given two angles (sum 180°)."""
+    a = b = c = 0
+    for _ in range(80):
+        a = random.randint(25, 78)
+        b = random.randint(25, 78)
+        if a + b >= 165:
+            continue
+        c = 180 - a - b
+        if 15 <= c <= 125:
+            break
+    else:
+        a, b, c = 52, 48, 80
+
+    correct = c
+    q = f"In a triangle, two angles measure {a}° and {b}°. What is the third angle?"
+    options, idx = _make_options(correct, spread=max(10, 18))
+    options_str = [f"{o}°" for o in options]
+    str_correct = f"{correct}°"
+    idx = options_str.index(str_correct)
+    return {
+        "question": q,
+        "options": options_str,
+        "answer": idx,
+        "category": "geometry",
+        "hint_meta": {
+            "kind": "geo_triangle_angles_q",
+            "angle_a": a,
+            "angle_b": b,
+        },
+    }
+
+
+def _generate_geo_square_perimeter():
+    side = random.randint(3, 22)
+    correct = 4 * side
+    q = f"What is the perimeter of a square with side length {side}?"
+    options, idx = _make_options(correct, spread=max(4, correct // 5))
+    options_str = [f"{o} units" for o in options]
+    str_correct = f"{correct} units"
+    idx = options_str.index(str_correct)
+    return {
+        "question": q,
+        "options": options_str,
+        "answer": idx,
+        "category": "geometry",
+        "hint_meta": {
+            "kind": "geo_square",
+            "side": side,
+            "caption": "Perimeter = 4 × side",
+        },
+    }
+
+
+def _generate_geo_polygon_sides():
+    shapes = [
+        ("a triangle", 3),
+        ("a quadrilateral", 4),
+        ("a pentagon", 5),
+        ("a hexagon", 6),
+        ("an octagon", 8),
+    ]
+    name, correct = random.choice(shapes)
+    q = f"How many sides does {name} have?"
+    pool = {3, 4, 5, 6, 7, 8, 9, 10, correct}
+    opts = [correct]
+    rest = [x for x in pool if x != correct]
+    random.shuffle(rest)
+    opts.extend(rest[:3])
+    random.shuffle(opts)
+    idx = opts.index(correct)
+    return {"question": q, "options": opts, "answer": idx, "category": "geometry"}
 
 
 # --- Basic Graphing ---
@@ -1456,6 +1621,130 @@ def _generate_dist_word():
     return {"question": q, "options": options, "answer": idx, "category": "distributive"}
 
 
+def _generate_estimation_sum():
+    """Estimate sum of two 3-digit numbers — pick the option closest to the exact sum."""
+    a = random.randint(140, 390)
+    b = random.randint(140, 390)
+    exact = a + b
+    base = round(exact / 50) * 50
+    pool = sorted(set([p for p in (base - 150, base - 100, base - 50, base, base + 50, base + 100, base + 150) if p > 0]))
+    best = min(pool, key=lambda x: abs(x - exact))
+    others = [p for p in pool if p != best]
+    random.shuffle(others)
+    options = [best] + others[:3]
+    options = list(dict.fromkeys(options))
+    while len(options) < 4 and pool:
+        for p in pool:
+            if p not in options:
+                options.append(p)
+            if len(options) >= 4:
+                break
+    random.shuffle(options)
+    idx = options.index(best)
+    q = f"About how much is {a} + {b}? Pick the estimate closest to the real sum."
+    lo = min(a, b, exact) - 50
+    hi = max(a, b, exact) + 50
+    hint_meta = {
+        "kind": "number_line",
+        "min": lo,
+        "max": hi,
+        "points": [float(a), float(b), float(exact)],
+        "labels": [str(a), str(b), f"{exact}"],
+    }
+    return {
+        "question": q,
+        "options": options,
+        "answer": idx,
+        "category": "number_sense",
+        "hint_meta": hint_meta,
+    }
+
+
+def _generate_which_closer():
+    """Which of two numbers is closer to a target (number-line distances)."""
+    target = random.choice([50, 100, 150, 200, 250, 500])
+    correct = x = y = 0
+    for _ in range(40):
+        x = random.randint(max(1, target - 120), target + 120)
+        y = random.randint(max(1, target - 120), target + 120)
+        if x == y:
+            continue
+        d1, d2 = abs(target - x), abs(target - y)
+        if d1 == d2:
+            continue
+        correct = x if d1 < d2 else y
+        break
+    else:
+        x, y, target = 40, 55, 100
+        correct = x if abs(target - x) < abs(target - y) else y
+
+    options = [x, y]
+    if random.random() < 0.5:
+        options.reverse()
+    idx = options.index(correct)
+    q = f"Which number is closer to {target}: {x} or {y}?"
+    lo = min(x, y, target) - 25
+    hi = max(x, y, target) + 25
+    hint_meta = {
+        "kind": "number_line",
+        "min": lo,
+        "max": hi,
+        "points": [float(x), float(y), float(target)],
+        "labels": [str(x), str(y), f"→{target}"],
+    }
+    return {
+        "question": q,
+        "options": options,
+        "answer": idx,
+        "category": "number_sense",
+        "hint_meta": hint_meta,
+    }
+
+
+def _generate_mental_rewrite_ns():
+    """Mental-friendly rewrites: distributive factoring a×b + a×c or near-multiple of 10/100."""
+    if random.random() < 0.55:
+        a = random.randint(4, 12)
+        b = random.randint(3, 9)
+        c = random.randint(2, 9)
+        correct = a * (b + c)
+        q = f"What is {a} × {b} + {a} × {c}?  (Think: {a} × ({b} + {c}) = ?)"
+        options, idx = _make_options(correct, spread=max(6, correct // 4))
+        hint_meta = {"kind": "area_model", "a": a, "b": b, "c": c}
+        return {
+            "question": q,
+            "options": options,
+            "answer": idx,
+            "category": "number_sense",
+            "hint_meta": hint_meta,
+        }
+    a = random.randint(5, 12)
+    base = random.choice([98, 99, 101, 102, 48, 51, 49])
+    if base in (48, 49, 51):
+        off = base - 50
+        ref = 50
+    else:
+        off = base - 100
+        ref = 100
+    correct = a * base
+    q = f"What is {a} × {base}?  (Hint: {a} × {ref} + {a} × ({off}))"
+    options, idx = _make_options(correct, spread=max(8, correct // 4))
+    hint_meta = {
+        "kind": "number_line",
+        "min": min(0, a * ref - 200),
+        "max": a * ref + 200,
+        "points": [float(a * ref), float(correct)],
+        "labels": [f"{a}×{ref}", f"{a}×{base}"],
+    }
+    return {
+        "question": q,
+        "options": options,
+        "answer": idx,
+        "category": "number_sense",
+        "hint_meta": hint_meta,
+    }
+
+
 _GENERATORS = {
     "fractions": [
         _generate_fraction_addition, _generate_fraction_subtraction,
@@ -1488,9 +1777,15 @@ _GENERATORS = {
         _generate_percent_find_rate, _generate_tip_calculation,
     ],
     "geometry": [
-        _generate_geo_rect_area, _generate_geo_rect_perimeter,
-        _generate_geo_triangle_area, _generate_geo_missing_side,
-        _generate_geo_square_area, _generate_geo_circle_area,
+        _generate_geo_rect_area,
+        _generate_geo_rect_perimeter,
+        _generate_geo_triangle_area,
+        _generate_geo_triangle_angles,
+        _generate_geo_missing_side,
+        _generate_geo_square_area,
+        _generate_geo_square_perimeter,
+        _generate_geo_circle_area,
+        _generate_geo_polygon_sides,
         _generate_geo_word,
     ],
     "graphing": [
@@ -1513,6 +1808,11 @@ _GENERATORS = {
         _generate_squares, _generate_cubes, _generate_power_of_two,
         _generate_power_of_ten, _generate_square_root,
         _generate_exponent_compare, _generate_power_word,
+    ],
+    "number_sense": [
+        _generate_estimation_sum,
+        _generate_which_closer,
+        _generate_mental_rewrite_ns,
     ],
 }
 
