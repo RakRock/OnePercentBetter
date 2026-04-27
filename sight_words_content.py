@@ -1,23 +1,24 @@
 """
-Sight Words Practice for Krish (ages 4-6)
+Sight Words & sentence reading for Krish (ages 4-6)
 
-Based on Dolch and Fry sight word lists — the most widely used sight word
-curricula in early childhood education.  Four progressive levels:
-  Pre-K  (Dolch Pre-Primer + Fry extras + CVC words) — 125 words
-  Kindergarten (Dolch Primer + Fry extras + CVC words) — 140 words
-  First Grade  (Dolch Grade 1 + CVC words)            — 71 words
-  CVC Challenge (advanced CVC / word families)         — 60 words
+- **Sentence reading**: 2–3 word lines using vocabulary from the original CVC
+  set — 10 per exercise.
+- **CVC Words (advanced)**: blends, digraphs, and trickier patterns — 12 words per round.
 
-Each word includes a kid-friendly example sentence and a visual emoji cue.
+The legacy single-word CVC list lives in ``WORD_BANK["cvc"]`` and supplies
+vocabulary for the sentence-reading phrases. Advanced practice uses ``cvc_advanced``.
 """
 
 import random
 
+# One exercise = this many short sentences (2–3 words each)
+READING_PHRASES_PER_EXERCISE = 10
+
 LEVELS = [
     {
-        "id": "cvc",
+        "id": "cvc_advanced",
         "title": "CVC Words",
-        "subtitle": "Sound it out!",
+        "subtitle": "Blends, digraphs & harder words!",
         "emoji": "🔤",
         "color": "#f97316",
         "words_per_round": 12,
@@ -443,7 +444,132 @@ WORD_BANK = {
         {"word": "hill", "sentence": "Run up the hill.", "emoji": "⛰️"},
         {"word": "ball", "sentence": "Kick the ball.", "emoji": "⚽"},
     ],
+    "cvc_advanced": [
+        # Consonant blends & CCVC
+        {"word": "plan", "sentence": "We make a plan.", "emoji": "📝"},
+        {"word": "step", "sentence": "One step at a time.", "emoji": "🪜"},
+        {"word": "stop", "sentence": "Stop at the sign.", "emoji": "🛑"},
+        {"word": "flag", "sentence": "Wave the flag.", "emoji": "🚩"},
+        {"word": "frog", "sentence": "A green frog.", "emoji": "🐸"},
+        {"word": "snug", "sentence": "Snug in a blanket.", "emoji": "🛋️"},
+        {"word": "sled", "sentence": "Ride a sled.", "emoji": "🛷"},
+        {"word": "plum", "sentence": "A sweet plum.", "emoji": "🍑"},
+        {"word": "clap", "sentence": "Clap your hands.", "emoji": "👏"},
+        {"word": "flat", "sentence": "A flat road.", "emoji": "🛣️"},
+        {"word": "grip", "sentence": "Grip the bar.", "emoji": "🎢"},
+        {"word": "drum", "sentence": "Beat the drum.", "emoji": "🥁"},
+        {"word": "swim", "sentence": "Fish can swim.", "emoji": "🏊"},
+        {"word": "skip", "sentence": "Skip and hop.", "emoji": "🤸"},
+        {"word": "spot", "sentence": "A black spot.", "emoji": "🔳"},
+        {"word": "slot", "sentence": "A mail slot.", "emoji": "📫"},
+        {"word": "twig", "sentence": "A tiny twig.", "emoji": "🪵"},
+        {"word": "crib", "sentence": "The baby’s crib.", "emoji": "👶"},
+        {"word": "crab", "sentence": "A little crab.", "emoji": "🦀"},
+        # Digraphs (beginning)
+        {"word": "ship", "sentence": "A big ship.", "emoji": "🚢"},
+        {"word": "shop", "sentence": "Go to the shop.", "emoji": "🛒"},
+        {"word": "shed", "sentence": "Tools in the shed.", "emoji": "🛠️"},
+        {"word": "shell", "sentence": "A shell on the beach.", "emoji": "🐚"},
+        {"word": "chat", "sentence": "We can chat.", "emoji": "💬"},
+        {"word": "chip", "sentence": "A salty chip.", "emoji": "🥔"},
+        {"word": "chop", "sentence": "Chop the carrot.", "emoji": "🥕"},
+        {"word": "math", "sentence": "I like math.", "emoji": "➕"},
+        {"word": "bath", "sentence": "Time for a bath.", "emoji": "🛁"},
+        {"word": "this", "sentence": "I like this.", "emoji": "👍"},
+        {"word": "that", "sentence": "Look at that.", "emoji": "👉"},
+        {"word": "them", "sentence": "Help them out.", "emoji": "🤝"},
+        {"word": "then", "sentence": "First this, then that.", "emoji": "➡️"},
+        {"word": "with", "sentence": "Play with me.", "emoji": "🧸"},
+        {"word": "when", "sentence": "When is lunch?", "emoji": "🕚"},
+        # -ng / -nk
+        {"word": "sing", "sentence": "Birds sing.", "emoji": "🎵"},
+        {"word": "ring", "sentence": "A gold ring.", "emoji": "💍"},
+        {"word": "long", "sentence": "A long snake.", "emoji": "🐍"},
+        {"word": "song", "sentence": "A happy song.", "emoji": "🎶"},
+        {"word": "sank", "sentence": "The boat sank… in a story.", "emoji": "📖"},
+        {"word": "wink", "sentence": "Wink an eye.", "emoji": "😉"},
+        {"word": "pink", "sentence": "A pink rose.", "emoji": "🌷"},
+        {"word": "bank", "sentence": "A piggy bank.", "emoji": "🐷"},
+        # Tricky / longer early words
+        {"word": "nest", "sentence": "A bird’s nest.", "emoji": "🪺"},
+        {"word": "vest", "sentence": "A warm vest.", "emoji": "🧥"},
+        {"word": "mint", "sentence": "Cool mint.", "emoji": "🌿"},
+        {"word": "lend", "sentence": "I will lend a book.", "emoji": "📘"},
+        {"word": "best", "sentence": "You are the best!", "emoji": "⭐"},
+        {"word": "rest", "sentence": "Time to rest.", "emoji": "😴"},
+        {"word": "land", "sentence": "The plane will land.", "emoji": "✈️"},
+        {"word": "self", "sentence": "I did it myself.", "emoji": "🙋"},
+        {"word": "help", "sentence": "Please help me.", "emoji": "🤝"},
+        {"word": "milk", "sentence": "A cold milk.", "emoji": "🥛"},
+        {"word": "silk", "sentence": "Smooth as silk.", "emoji": "🧣"},
+    ],
 }
+
+# Short reading lines (2–3 words) using vocabulary from the original CVC bank.
+# Krish reads each as a full mini-sentence.
+READING_PHRASES = [
+    {"phrase": "The cat", "emoji": "🐱"},
+    {"phrase": "A big dog", "emoji": "🐶"},
+    {"phrase": "I can", "emoji": "💪"},
+    {"phrase": "Sit down", "emoji": "🪑"},
+    {"phrase": "The sun", "emoji": "☀️"},
+    {"phrase": "Run fast", "emoji": "🏃"},
+    {"phrase": "The pig", "emoji": "🐷"},
+    {"phrase": "A red ball", "emoji": "🔴"},
+    {"phrase": "The fog", "emoji": "🌫️"},
+    {"phrase": "On top", "emoji": "⛰️"},
+    {"phrase": "Pop up", "emoji": "🎈"},
+    {"phrase": "A wet dog", "emoji": "💦"},
+    {"phrase": "Hug me", "emoji": "🤗"},
+    {"phrase": "The bug", "emoji": "🐛"},
+    {"phrase": "The tub", "emoji": "🛁"},
+    {"phrase": "A fun day", "emoji": "🎉"},
+    {"phrase": "The bed", "emoji": "🛏️"},
+    {"phrase": "A red bed", "emoji": "🛌"},
+    {"phrase": "The hen", "emoji": "🐔"},
+    {"phrase": "My pet", "emoji": "🐾"},
+    {"phrase": "Zip it", "emoji": "🧥"},
+    {"phrase": "The fin", "emoji": "🐟"},
+    {"phrase": "Dig deep", "emoji": "⛏️"},
+    {"phrase": "A funny wig", "emoji": "💇"},
+    {"phrase": "I win", "emoji": "🏆"},
+    {"phrase": "The log", "emoji": "🪵"},
+    {"phrase": "Hop in", "emoji": "🐰"},
+    {"phrase": "The bell", "emoji": "🔔"},
+    {"phrase": "A cold mug", "emoji": "☕"},
+    {"phrase": "The rug", "emoji": "🟫"},
+    {"phrase": "A soft rug", "emoji": "🧦"},
+    {"phrase": "The van", "emoji": "🚐"},
+    {"phrase": "The pan", "emoji": "🍳"},
+    {"phrase": "A fat rat", "emoji": "🐀"},
+    {"phrase": "The man ran", "emoji": "🧑"},
+    {"phrase": "Turn on", "emoji": "🌀"},
+    {"phrase": "The cap", "emoji": "🧢"},
+    {"phrase": "The map", "emoji": "🗺️"},
+    {"phrase": "Fish swim", "emoji": "🐟"},
+    {"phrase": "A gold fish", "emoji": "🐠"},
+    {"phrase": "The ship", "emoji": "🚢"},
+    {"phrase": "A black sock", "emoji": "🧦"},
+    {"phrase": "The hill", "emoji": "⛰️"},
+    {"phrase": "Kick the ball", "emoji": "⚽"},
+    {"phrase": "The milk", "emoji": "🥛"},
+    {"phrase": "Wash hands", "emoji": "🤲"},
+    {"phrase": "The lamp", "emoji": "💡"},
+    {"phrase": "A green frog", "emoji": "🐸"},
+    {"phrase": "I see it", "emoji": "👀"},
+    {"phrase": "The big bin", "emoji": "🗑️"},
+    {"phrase": "A pink pig", "emoji": "🐷"},
+    {"phrase": "The top", "emoji": "🔝"},
+    {"phrase": "Mop it", "emoji": "🧹"},
+    {"phrase": "The net", "emoji": "🥅"},
+    {"phrase": "It is ten", "emoji": "🔟"},
+    {"phrase": "A small sip", "emoji": "🥤"},
+    {"phrase": "I sit", "emoji": "🪑"},
+    {"phrase": "A cold dip", "emoji": "🧊"},
+    {"phrase": "The cub", "emoji": "🐻"},
+    {"phrase": "Two men", "emoji": "👬"},
+    {"phrase": "Hit the ball", "emoji": "⚾"},
+]
 
 WORD_COLORS = [
     "#ef4444", "#f59e0b", "#10b981", "#3b82f6", "#8b5cf6",
@@ -496,4 +622,27 @@ def generate_round(level_id):
             "color": word_color,
         })
 
+    return questions
+
+
+def generate_reading_phrase_round(count=None):
+    """
+    One exercise: short 2–3 word sentences for fluent reading (10 per session).
+    """
+    n = count or READING_PHRASES_PER_EXERCISE
+    pool = list(READING_PHRASES)
+    if not pool:
+        return []
+    n = min(n, len(pool))
+    selected = random.sample(pool, n)
+    questions = []
+    for entry in selected:
+        word_color = random.choice(WORD_COLORS)
+        phrase = entry["phrase"]
+        questions.append({
+            "phrase": phrase,
+            "sentence": phrase,  # same: UI may show “sentence”
+            "emoji": entry["emoji"],
+            "color": word_color,
+        })
     return questions

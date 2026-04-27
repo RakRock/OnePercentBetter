@@ -474,6 +474,17 @@ if "cube_total" not in st.session_state:
     st.session_state.cube_total = 0
 if "cube_streak" not in st.session_state:
     st.session_state.cube_streak = 0
+# Krish: sentence reading (2–3 words) — 10 per exercise
+if "rp_questions" not in st.session_state:
+    st.session_state.rp_questions = []
+if "rp_current" not in st.session_state:
+    st.session_state.rp_current = 0
+if "rp_start_time" not in st.session_state:
+    st.session_state.rp_start_time = None
+if "rp_wrong_words" not in st.session_state:
+    st.session_state.rp_wrong_words = {}
+if "rp_wrong_feedback" not in st.session_state:
+    st.session_state.rp_wrong_feedback = None
 
 
 # ──────────────────────────────────────────────
@@ -512,6 +523,8 @@ def select_activity(activity):
         st.session_state.current_page = "civics_home"
     elif activity == "SightWords":
         st.session_state.current_page = "sight_words_home"
+    elif activity == "ReadingPhrases":
+        st.session_state.current_page = "reading_phrases_home"
     elif activity == "MapExplorer":
         st.session_state.current_page = "map_explorer_home"
     elif activity == "ProblemSolver":
@@ -637,6 +650,25 @@ def back_to_sight_words_home():
     st.session_state.sw_wrong_feedback = None
 
 
+def start_reading_phrases():
+    import sight_words_content as sw
+    questions = sw.generate_reading_phrase_round()
+    st.session_state.current_page = "reading_phrases_practice"
+    st.session_state.rp_questions = questions
+    st.session_state.rp_current = 0
+    st.session_state.rp_start_time = time.time()
+    st.session_state.rp_wrong_words = {}
+    st.session_state.rp_wrong_feedback = None
+
+
+def back_to_reading_phrases_home():
+    st.session_state.current_page = "reading_phrases_home"
+    st.session_state.rp_questions = []
+    st.session_state.rp_current = 0
+    st.session_state.rp_wrong_words = {}
+    st.session_state.rp_wrong_feedback = None
+
+
 def _get_phonics_tip(word: str) -> str:
     """Use the HuggingFace LLM to generate a 1-line phonics correction tip."""
     hf_token = os.environ.get("HF_TOKEN")
@@ -686,6 +718,37 @@ def _get_phonics_tip_local(word: str) -> str:
         if ch in vowels:
             return f"Practice the {vowels[ch]}."
     return f"Sound out each letter slowly: {' - '.join(w)}."
+
+
+def _get_phonics_tip_phrase(phrase: str) -> str:
+    """Phonics help for a 2–3 word reading line (uses longest word for local tips)."""
+    words = phrase.strip().split()
+    if not words:
+        return _get_phonics_tip_local(phrase)
+    focus = max(words, key=len)
+    hf_token = os.environ.get("HF_TOKEN")
+    if not hf_token:
+        return _get_phonics_tip_local(focus)
+    try:
+        from huggingface_hub import InferenceClient
+        client = InferenceClient(provider="auto", api_key=hf_token)
+        resp = client.chat_completion(
+            model="meta-llama/Llama-3.1-8B-Instruct",
+            messages=[
+                {"role": "system", "content": (
+                    "You are a kindergarten reading teacher. The child is reading a very short phrase "
+                    "(2-3 words) aloud. Give ONE tip (max 18 words) for the parent: smooth blending, "
+                    "a tricky sound, or reading left-to-right. No quotes."
+                )},
+                {"role": "user", "content": f"The phrase is: {phrase!r}. What one tip should I give?"},
+            ],
+            max_tokens=70,
+            temperature=0.3,
+        )
+        tip = resp.choices[0].message.content.strip()
+        return tip if tip else _get_phonics_tip_local(focus)
+    except Exception:
+        return _get_phonics_tip_local(focus)
 
 
 def start_map_explorer(questions):
@@ -892,13 +955,26 @@ def render_user_dashboard():
         st.markdown("### 📚 Choose Your Activity")
         st.markdown("")
 
-        act_col1, act_col2 = st.columns(2, gap="large")
+        act_col1, act_col2, act_col3 = st.columns(3, gap="large")
         with act_col1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #10b981;">
+                <div style="font-size: 3rem;">📖</div>
+                <h3 style="margin: 0.5rem 0;">Sentence reading</h3>
+                <p style="color: #6b7280;">Short sentences — 2 or 3 words</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("📖 Sentence reading", key="btn_reading_phrases", width="stretch", type="primary"):
+                select_activity("ReadingPhrases")
+                st.rerun()
+
+        with act_col2:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #f59e0b;">
                 <div style="font-size: 3rem;">👁️</div>
                 <h3 style="margin: 0.5rem 0;">CVC Words</h3>
-                <p style="color: #6b7280;">Learn to read common words</p>
+                <p style="color: #6b7280;">Blends, digraphs &amp; harder words</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
@@ -906,7 +982,7 @@ def render_user_dashboard():
                 select_activity("SightWords")
                 st.rerun()
 
-        with act_col2:
+        with act_col3:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #ef4444;">
                 <div style="font-size: 3rem;">🧊</div>
@@ -2548,7 +2624,7 @@ def render_sight_words_home():
     st.markdown(f"""
     <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
         <h1 style="font-size: 2.5rem;">🔤 {name}'s CVC Words</h1>
-        <p style="color: #6b7280; font-size: 1.1rem;">Sound it out — read each word aloud!</p>
+        <p style="color: #6b7280; font-size: 1.1rem;">Harder words — blends, digraphs, and new patterns. Sound them out!</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -2608,6 +2684,259 @@ def render_sight_words_home():
         if st.button("▶️ Start CVC Words", key="sw_cvc_start", width="stretch", type="primary"):
             start_sight_words(lvl["id"])
             st.rerun()
+
+
+# ──────────────────────────────────────────────
+# PAGE: Sentence reading (short 2–3 word lines) — Home
+# ──────────────────────────────────────────────
+def render_reading_phrases_home():
+    import sight_words_content as sw
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="rp_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    n_per = sw.READING_PHRASES_PER_EXERCISE
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">📖 {name}'s sentence reading</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">
+            Read each short line out loud — {n_per} per exercise. Use the words you already know!
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    today_rp = db.get_today_scores(user["id"], activity_type="ReadingPhrases") if user else []
+    total_rp = db.get_scores_history(user["id"], activity_type="ReadingPhrases", days=365) if user else []
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">📅 {len(today_rp)}</div>'
+            f'<div class="score-label">Exercises Today</div></div>',
+            unsafe_allow_html=True,
+        )
+    with col2:
+        if today_rp:
+            avg_pct = sum(s["score"] for s in today_rp) / len(today_rp)
+            st.markdown(
+                f'<div class="score-card"><div class="score-number">🎯 {avg_pct:.0f}%</div>'
+                f'<div class="score-label">Avg Score Today</div></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                '<div class="score-card"><div class="score-number">🎯 —</div>'
+                '<div class="score-label">Avg Score Today</div></div>',
+                unsafe_allow_html=True,
+            )
+    with col3:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">⭐ {len(total_rp)}</div>'
+            f'<div class="score-label">Total Exercises</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+    st.markdown("### Start an exercise")
+    st.markdown("Each run gives **10** different short sentences (2 or 3 words) that make sense together as reading practice.")
+    st.markdown("")
+
+    _, col_center, _ = st.columns([1, 2, 1])
+    with col_center:
+        st.markdown(f"""
+        <div class="math-level-card" style="background: linear-gradient(135deg, #10b981, #059669cc);">
+            <div style="font-size: 3rem;">📖</div>
+            <div style="font-size: 1.3rem; font-weight: 700; color: white; margin-top: 0.4rem;
+                 text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
+                Sentence reading
+            </div>
+            <div style="font-size: 0.9rem; color: rgba(255,255,255,0.9); margin-top: 0.2rem;">
+                {n_per} sentences per exercise
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+        st.markdown("")
+        if st.button("▶️ Start sentence reading", key="rp_start", width="stretch", type="primary"):
+            start_reading_phrases()
+            st.rerun()
+
+
+# ──────────────────────────────────────────────
+# PAGE: Sentence reading — Practice
+# ──────────────────────────────────────────────
+def render_reading_phrases_practice():
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    questions = st.session_state.rp_questions
+    current = st.session_state.rp_current
+    total = len(questions)
+    color = "#10b981"
+    is_done = current >= total
+
+    col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
+    with col_nav1:
+        if st.button("← Home", key="rp_back_home"):
+            back_to_reading_phrases_home()
+            st.rerun()
+    with col_nav_mid:
+        if not is_done:
+            st.markdown(f"""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                Sentence {current + 1} of {total}
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.markdown("""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                🎉 All done!
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+        <h1 style="color: {color}; margin: 0.3rem 0; font-size: 2.2rem;">
+            📖 Sentence reading
+        </h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    progress = (current / total) if total > 0 else 0
+    st.markdown(f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,{color},{color}bb);
+             border-radius:10px;transition:width 0.4s ease;"></div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    if not is_done:
+        q = questions[current]
+        text = q.get("phrase") or q.get("sentence", "")
+        word_color = q["color"]
+
+        st.markdown(f"""
+        <div style="text-align:center; padding:2.5rem 1rem; background:linear-gradient(135deg, {word_color}15, {word_color}08);
+             border-radius:28px; border:3px solid {word_color}40; margin-bottom:1.5rem;">
+            <div style="font-size:3rem; margin-bottom:0.5rem;">{q['emoji']}</div>
+            <div style="font-size:1.1rem; color:#6b7280; margin-bottom:0.5rem; font-weight:600;">
+                Read the whole sentence:
+            </div>
+            <div style="font-size:3.2rem; font-weight:800; color:{word_color}; font-family:'Comic Sans MS','Chalkboard SE',
+                 'Segoe Print',cursive; letter-spacing:0.04em; text-shadow:3px 3px 6px {word_color}30;
+                 line-height:1.2; padding:0.5rem 0;">
+                {text}
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        if not hasattr(st.session_state, "rp_wrong_words"):
+            st.session_state.rp_wrong_words = {}
+        if not hasattr(st.session_state, "rp_wrong_feedback"):
+            st.session_state.rp_wrong_feedback = None
+
+        wrong_marked = st.session_state.rp_wrong_words
+        key = text
+        is_marked_wrong = key in wrong_marked
+
+        if st.session_state.rp_wrong_feedback and st.session_state.rp_wrong_feedback.get("key") == key:
+            tip = st.session_state.rp_wrong_feedback["tip"]
+            st.markdown(f"""
+            <div style="padding:1rem 1.2rem;border-radius:14px;background:#fef3c7;border:2px solid #f59e0b;
+                 margin-bottom:1rem;text-align:center;">
+                <span style="font-size:1.5rem;">💡</span>
+                <strong style="color:#92400e;font-size:1.1rem;"> Sentence reading tip:</strong>
+                <span style="color:#78350f;font-size:1.05rem;"> {tip}</span>
+            </div>
+            """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_wrong, col_next = st.columns(2, gap="medium")
+        with col_wrong:
+            if not is_marked_wrong:
+                if st.button("❌ Need a tip", key="rp_wrong", width="stretch"):
+                    with st.spinner("Getting a tip..."):
+                        tip = _get_phonics_tip_phrase(text)
+                    wrong_marked[key] = tip
+                    st.session_state.rp_wrong_words = wrong_marked
+                    st.session_state.rp_wrong_feedback = {"key": key, "tip": tip}
+                    st.rerun()
+            else:
+                st.markdown("""
+                <div style="padding:0.6rem;text-align:center;color:#dc2626;font-weight:600;
+                     border:2px solid #fca5a5;border-radius:10px;background:#fee2e2;">
+                    💡 Tip shown — try again!
+                </div>
+                """, unsafe_allow_html=True)
+        with col_next:
+            if current < total - 1:
+                if st.button("Next ➡️", key="rp_next", width="stretch", type="primary"):
+                    st.session_state.rp_current += 1
+                    st.session_state.rp_wrong_feedback = None
+                    st.rerun()
+            else:
+                if st.button("🎉 Finish!", key="rp_done", width="stretch", type="primary"):
+                    st.session_state.rp_current = total
+                    st.session_state.rp_wrong_feedback = None
+                    st.rerun()
+
+    else:
+        time_spent = int(time.time() - st.session_state.rp_start_time) if st.session_state.rp_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+        if user:
+            db.save_activity_score(
+                user["id"], "ReadingPhrases", "Sentence reading",
+                100, 100, f"{total} sentences read", time_spent,
+            )
+        st.markdown(f"""
+        <div style="text-align:center; padding:2rem; background:#10b98110;
+             border-radius:20px; border:3px solid #10b981; margin-top:1rem;">
+            <div style="font-size:5rem;">🌟</div>
+            <h2 style="color:#10b981; margin:0.5rem 0; font-size:2rem;">
+                Great sentence reading, {name}!
+            </h2>
+            <p style="font-size:1.2rem; color:#4b5563;">
+                You read <strong>{total} short lines</strong>.
+            </p>
+            <p style="color:#9ca3af;">⏱️ Time: {minutes}m {seconds}s</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        wrong_marked = getattr(st.session_state, "rp_wrong_words", {})
+        if wrong_marked:
+            st.markdown("")
+            st.markdown(f"### Sentences to practice again ({len(wrong_marked)})")
+            for q in questions:
+                t = q.get("phrase") or q.get("sentence", "")
+                if t in wrong_marked:
+                    st.markdown(f"""
+                    <div style="padding:1rem; border-radius:12px; background:#fef2f2;
+                         border-left:5px solid #ef4444; margin-bottom:0.8rem;">
+                        <span style="font-size:1.5rem;">{q['emoji']}</span>
+                        <strong style="font-size:1.2rem; color:#991b1b; margin-left:0.3rem;">{t}</strong>
+                        <div style="margin-top:0.4rem;color:#92400e;font-size:0.95rem;">
+                            💡 {wrong_marked[t]}
+                        </div>
+                    </div>
+                    """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_r1, col_r2 = st.columns(2)
+        with col_r1:
+            if st.button("📖 Sentence reading home", key="rp_home_btn", width="stretch", type="primary"):
+                back_to_reading_phrases_home()
+                st.rerun()
+        with col_r2:
+            if st.button("🏠 Dashboard", key="rp_dash", width="stretch"):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.rp_questions = []
+                st.session_state.rp_current = 0
+                st.rerun()
 
 
 # ──────────────────────────────────────────────
@@ -5862,6 +6191,10 @@ elif page == "sight_words_home":
     render_sight_words_home()
 elif page == "sight_words_practice":
     render_sight_words_practice()
+elif page == "reading_phrases_home":
+    render_reading_phrases_home()
+elif page == "reading_phrases_practice":
+    render_reading_phrases_practice()
 elif page == "map_explorer_home":
     render_map_explorer_home()
 elif page == "map_explorer_practice":
