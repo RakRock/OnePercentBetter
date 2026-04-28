@@ -1040,7 +1040,7 @@ def render_user_dashboard():
         st.markdown("### 📚 Choose Your Activity")
         st.markdown("")
 
-        act_row1_c1, act_row1_c2 = st.columns(2, gap="large")
+        act_row1_c1, act_row1_c2, act_row1_c3 = st.columns(3, gap="large")
         with act_row1_c1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #f59e0b;">
@@ -1065,6 +1065,19 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("📖 Start Stories", key="btn_arjun_stories", width="stretch", type="primary"):
                 select_activity("ArjunStories")
+                st.rerun()
+
+        with act_row1_c3:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #8b5cf6;">
+                <div style="font-size: 3rem;">📚</div>
+                <h3 style="margin: 0.5rem 0;">Vocabulary</h3>
+                <p style="color: #6b7280;">Academic words — pick the meaning</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("📚 Vocabulary", key="btn_vocab", width="stretch", type="primary"):
+                select_activity("Vocabulary")
                 st.rerun()
 
         st.markdown("")
@@ -1124,8 +1137,8 @@ def render_user_dashboard():
                 st.rerun()
 
         st.markdown("")
-        act_row4_c1, act_row4_c2 = st.columns(2, gap="large")
-        with act_row4_c1:
+        _, act_row4_mid, _ = st.columns([1, 2, 1])
+        with act_row4_mid:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #f59e0b;">
                 <div style="font-size: 3rem;">🏷️</div>
@@ -1136,19 +1149,6 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🏷️ Logo Identifier", key="btn_logo_id", width="stretch", type="primary"):
                 select_activity("LogoID")
-                st.rerun()
-
-        with act_row4_c2:
-            st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #8b5cf6;">
-                <div style="font-size: 3rem;">📚</div>
-                <h3 style="margin: 0.5rem 0;">Vocabulary</h3>
-                <p style="color: #6b7280;">Academic words — meanings in 4 choices</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("📚 Vocabulary", key="btn_vocab", width="stretch", type="primary"):
-                select_activity("Vocabulary")
                 st.rerun()
 
     elif name == "Sangeetha":
