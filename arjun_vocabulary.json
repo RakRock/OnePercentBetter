@@ -1,0 +1,802 @@
+[
+  {
+    "word": "Analyze",
+    "definition": "To study something by breaking it into smaller parts to see how those parts connect to each other."
+  },
+  {
+    "word": "Assess",
+    "definition": "To judge the quality, importance, or value of a person, situation, or idea."
+  },
+  {
+    "word": "Challenge",
+    "definition": "To question whether a statement, claim, or calculation is true or correct."
+  },
+  {
+    "word": "Cite",
+    "definition": "To refer to a book, article, or source to show where you got your evidence."
+  },
+  {
+    "word": "Compare & contrast",
+    "definition": "Compare means to look at two or more things to find how they are similar; contrast means to look at two or more things to find how they differ."
+  },
+  {
+    "word": "Defend",
+    "definition": "To argue in favor of your position or claim, using strong evidence and clear reasoning."
+  },
+  {
+    "word": "Describe",
+    "definition": "To give a detailed account of something, focusing on its characteristics and features."
+  },
+  {
+    "word": "Effect",
+    "definition": "The outcome or result of an action, event, or cause."
+  },
+  {
+    "word": "Evaluate",
+    "definition": "To judge the quality or worth of an idea, argument, or solution."
+  },
+  {
+    "word": "Explain",
+    "definition": "To make an idea or situation clear by describing it in more detail or revealing relevant facts."
+  },
+  {
+    "word": "Illustrate",
+    "definition": "To clarify an idea by giving a specific example or drawing a picture."
+  },
+  {
+    "word": "Infer",
+    "definition": "To figure out what is meant by using clues from evidence and what you already know."
+  },
+  {
+    "word": "Interpret",
+    "definition": "To explain the meaning of information presented in various forms, such as text, charts, or maps."
+  },
+  {
+    "word": "Justify",
+    "definition": "To prove your answer is correct by giving evidence and clear, logical reasons."
+  },
+  {
+    "word": "Model",
+    "definition": "A system, diagram, or object that represents a real-world concept or structure."
+  },
+  {
+    "word": "Predict",
+    "definition": "To make an educated guess about what will happen next or what the outcome will be, based on evidence."
+  },
+  {
+    "word": "Summarize",
+    "definition": "To restate the main points of a text or event in your own, shorter words."
+  },
+  {
+    "word": "Support",
+    "definition": "To provide facts, details, or reasons that strengthen an argument or claim."
+  },
+  {
+    "word": "Synthesize",
+    "definition": "To take information from different sources and combine it to form a new idea or complete understanding."
+  },
+  {
+    "word": "Thesis statement",
+    "definition": "The main idea or claim of your essay or paper, which you plan to prove, defend, or explain."
+  },
+  {
+    "word": "Trend / pattern",
+    "definition": "A trend is the general way data or events move or change over time; a pattern is a repeated or recognizable design or sequence."
+  },
+  {
+    "word": "Cause",
+    "definition": "The event, condition, or reason that makes something happen."
+  },
+  {
+    "word": "Claim",
+    "definition": "A statement that something is true and that others may agree or disagree with."
+  },
+  {
+    "word": "Evidence",
+    "definition": "Facts, data, or examples used to prove or support a claim."
+  },
+  {
+    "word": "Reasoning",
+    "definition": "The clear thinking process that connects evidence to a claim."
+  },
+  {
+    "word": "Argument",
+    "definition": "A set of claims backed by evidence and reasoning meant to persuade."
+  },
+  {
+    "word": "Hypothesis",
+    "definition": "A testable prediction or educated guess about how something works."
+  },
+  {
+    "word": "Observation",
+    "definition": "Information gathered directly through seeing, hearing, measuring, or noting."
+  },
+  {
+    "word": "Conclusion",
+    "definition": "A final judgment or statement supported by reasoning and evidence."
+  },
+  {
+    "word": "Variable",
+    "definition": "A factor or quantity that can change in an experiment or situation."
+  },
+  {
+    "word": "Control",
+    "definition": "A standard used for comparison or something kept unchanged in a fair test."
+  },
+  {
+    "word": "Data",
+    "definition": "Collected measurements, facts, or observations, often shown in tables or graphs."
+  },
+  {
+    "word": "Source",
+    "definition": "Where information comes from, such as a book, website, interview, or document."
+  },
+  {
+    "word": "Primary source",
+    "definition": "A firsthand record from the time of an event, such as a letter, photo, or diary."
+  },
+  {
+    "word": "Secondary source",
+    "definition": "An account that interprets or summarizes events after they happened."
+  },
+  {
+    "word": "Paraphrase",
+    "definition": "To restate someone else's ideas in your own words while keeping the same meaning."
+  },
+  {
+    "word": "Quote",
+    "definition": "To repeat someone's exact words, usually with citation marks and a source."
+  },
+  {
+    "word": "Plagiarism",
+    "definition": "Using someone else's words or ideas without giving proper credit."
+  },
+  {
+    "word": "Context",
+    "definition": "The surrounding words, situation, or background that helps you understand meaning."
+  },
+  {
+    "word": "Audience",
+    "definition": "The group of people a piece of writing or speech is meant to reach."
+  },
+  {
+    "word": "Purpose",
+    "definition": "The reason something is created, such as to inform, persuade, or entertain."
+  },
+  {
+    "word": "Tone",
+    "definition": "The writer's or speaker's attitude toward the topic, shown through word choice."
+  },
+  {
+    "word": "Theme",
+    "definition": "The central message or big idea that runs through a story or text."
+  },
+  {
+    "word": "Main idea",
+    "definition": "The most important point the author wants readers to understand."
+  },
+  {
+    "word": "Supporting detail",
+    "definition": "Facts, examples, or explanations that back up the main idea."
+  },
+  {
+    "word": "Text evidence",
+    "definition": "Specific words or lines from a reading passage that prove a point."
+  },
+  {
+    "word": "Fact",
+    "definition": "Something that can be proved true or false with reliable evidence."
+  },
+  {
+    "word": "Opinion",
+    "definition": "A personal belief or judgment that may differ from person to person."
+  },
+  {
+    "word": "Bias",
+    "definition": "A leaning toward one side that can unfairly influence how information is presented."
+  },
+  {
+    "word": "Perspective",
+    "definition": "A particular point of view shaped by experience, role, or culture."
+  },
+  {
+    "word": "Point of view",
+    "definition": "The angle from which a story is told or an issue is described."
+  },
+  {
+    "word": "Generalize",
+    "definition": "To make a broad statement based on examples or patterns."
+  },
+  {
+    "word": "Specify",
+    "definition": "To state something clearly and exactly with details."
+  },
+  {
+    "word": "Explicit",
+    "definition": "Clearly stated and directly expressed in the text."
+  },
+  {
+    "word": "Implicit",
+    "definition": "Suggested but not directly stated; you must infer it."
+  },
+  {
+    "word": "Symbol",
+    "definition": "An object, image, or word that stands for a deeper idea."
+  },
+  {
+    "word": "Metaphor",
+    "definition": "A figure of speech that compares two unlike things by saying one is the other."
+  },
+  {
+    "word": "Simile",
+    "definition": "A comparison using \"like\" or \"as\" between two different things."
+  },
+  {
+    "word": "Narrative",
+    "definition": "Writing or speech that tells a story with characters and events."
+  },
+  {
+    "word": "Expository",
+    "definition": "Writing that explains, informs, or clarifies ideas using facts."
+  },
+  {
+    "word": "Persuasive",
+    "definition": "Writing or speech meant to convince others to agree or take action."
+  },
+  {
+    "word": "Annotation",
+    "definition": "Notes or marks added to a text to question, summarize, or react."
+  },
+  {
+    "word": "Outline",
+    "definition": "A plan that lists main ideas and supporting points in order."
+  },
+  {
+    "word": "Draft",
+    "definition": "An early version of writing used for shaping ideas before polishing."
+  },
+  {
+    "word": "Revise",
+    "definition": "To improve content, clarity, and organization in a draft."
+  },
+  {
+    "word": "Edit",
+    "definition": "To fix grammar, spelling, and punctuation in a finished draft."
+  },
+  {
+    "word": "Transition",
+    "definition": "A word or phrase that connects ideas and shows how sentences relate."
+  },
+  {
+    "word": "Coherence",
+    "definition": "When writing flows logically so readers can follow the ideas easily."
+  },
+  {
+    "word": "Syntax",
+    "definition": "The way words are arranged to form sentences."
+  },
+  {
+    "word": "Diction",
+    "definition": "A writer's choice of words for tone and meaning."
+  },
+  {
+    "word": "Figurative language",
+    "definition": "Words used in non-literal ways to create vivid images or emphasis."
+  },
+  {
+    "word": "Chronology",
+    "definition": "The order of events in time from earliest to latest."
+  },
+  {
+    "word": "Sequence",
+    "definition": "The order in which steps or events occur."
+  },
+  {
+    "word": "Prioritize",
+    "definition": "To rank tasks or ideas by importance or urgency."
+  },
+  {
+    "word": "Category",
+    "definition": "A group of items that share common traits."
+  },
+  {
+    "word": "Classify",
+    "definition": "To sort things into groups based on shared characteristics."
+  },
+  {
+    "word": "Organize",
+    "definition": "To arrange information or objects in a sensible structure."
+  },
+  {
+    "word": "Strategy",
+    "definition": "A careful plan or approach for reaching a goal."
+  },
+  {
+    "word": "Procedure",
+    "definition": "A step-by-step method for doing something correctly."
+  },
+  {
+    "word": "Objective",
+    "definition": "A neutral, measurable goal or statement not influenced by feelings."
+  },
+  {
+    "word": "Subjective",
+    "definition": "Based on personal feelings or opinions rather than neutral facts."
+  },
+  {
+    "word": "Relevant",
+    "definition": "Directly connected and useful to the topic or question."
+  },
+  {
+    "word": "Irrelevant",
+    "definition": "Not related to the topic and not helpful for answering the question."
+  },
+  {
+    "word": "Significant",
+    "definition": "Important or large enough to matter in a discussion or result."
+  },
+  {
+    "word": "Trivial",
+    "definition": "Small or unimportant compared to bigger issues."
+  },
+  {
+    "word": "Valid",
+    "definition": "Sound and logical when supported by correct reasoning or evidence."
+  },
+  {
+    "word": "Invalid",
+    "definition": "Not logically supported or not acceptable as proof."
+  },
+  {
+    "word": "Reliable",
+    "definition": "Trustworthy because it is consistent and comes from a dependable source."
+  },
+  {
+    "word": "Credibility",
+    "definition": "How believable and trustworthy a source or argument is."
+  },
+  {
+    "word": "Assume",
+    "definition": "To accept something as true without proof—watch for hidden assumptions."
+  },
+  {
+    "word": "Premise",
+    "definition": "A starting statement or assumption that reasoning builds upon."
+  },
+  {
+    "word": "Prove",
+    "definition": "To show something is true using logical steps or strong evidence."
+  },
+  {
+    "word": "Disprove",
+    "definition": "To show a claim is false using counter-evidence or reasoning."
+  },
+  {
+    "word": "Estimate",
+    "definition": "To find an approximate value or answer using rounding or judgment."
+  },
+  {
+    "word": "Precise",
+    "definition": "Exact and careful with details or measurements."
+  },
+  {
+    "word": "Approximate",
+    "definition": "Close to the exact value but not necessarily exact."
+  },
+  {
+    "word": "Reasonable",
+    "definition": "Sensible and matching what you would expect from the evidence."
+  },
+  {
+    "word": "Correlation",
+    "definition": "A relationship where two things tend to change together."
+  },
+  {
+    "word": "Causation",
+    "definition": "When one thing directly causes another—not just coincidence."
+  },
+  {
+    "word": "Counterclaim",
+    "definition": "An opposing argument that responds to your main claim."
+  },
+  {
+    "word": "Rebuttal",
+    "definition": "A response that answers a counterclaim with evidence or reasoning."
+  },
+  {
+    "word": "Qualifier",
+    "definition": "A word that limits or softens a claim, such as \"often\" or \"sometimes\"."
+  },
+  {
+    "word": "Scope",
+    "definition": "The range or limits of what an argument or study covers."
+  },
+  {
+    "word": "Frame",
+    "definition": "The way a topic is presented that can highlight certain angles."
+  },
+  {
+    "word": "Stakeholder",
+    "definition": "A person or group affected by a decision or issue."
+  },
+  {
+    "word": "Implication",
+    "definition": "A consequence or meaning that follows logically but may not be stated."
+  },
+  {
+    "word": "Nuanced",
+    "definition": "Showing subtle differences instead of treating something as all-or-nothing."
+  },
+  {
+    "word": "Simplify",
+    "definition": "To make complex ideas easier without changing core truth unfairly."
+  },
+  {
+    "word": "Overgeneralize",
+    "definition": "To claim something is always true based on too few examples."
+  },
+  {
+    "word": "Stereotype",
+    "definition": "An oversimplified belief about a group that ignores individual differences."
+  },
+  {
+    "word": "Empirical",
+    "definition": "Based on observation, measurement, or experiment rather than only theory."
+  },
+  {
+    "word": "Theoretical",
+    "definition": "Related to ideas or models that explain how something might work."
+  },
+  {
+    "word": "Abstract",
+    "definition": "Ideas that are general and not tied to one concrete example."
+  },
+  {
+    "word": "Concrete",
+    "definition": "Specific examples or objects you can point to directly."
+  },
+  {
+    "word": "Peer review",
+    "definition": "Having other knowledgeable people check work before publication."
+  },
+  {
+    "word": "Rubric",
+    "definition": "A scoring guide that lists criteria and levels of quality."
+  },
+  {
+    "word": "Criteria",
+    "definition": "Standards used to judge whether something meets expectations."
+  },
+  {
+    "word": "Legend",
+    "definition": "A box that explains symbols on a map, chart, or graph."
+  },
+  {
+    "word": "Axis",
+    "definition": "A reference line on a graph showing scale for variables."
+  },
+  {
+    "word": "Scale",
+    "definition": "The system of marks or units used to measure quantities on a graph."
+  },
+  {
+    "word": "Interval",
+    "definition": "The equal space between numbered marks on a scale."
+  },
+  {
+    "word": "Distribution",
+    "definition": "How values are spread out across a range or population."
+  },
+  {
+    "word": "Outlier",
+    "definition": "A data point far away from most others in a set."
+  },
+  {
+    "word": "Median",
+    "definition": "The middle value when numbers are arranged in order."
+  },
+  {
+    "word": "Mean",
+    "definition": "The average found by adding values and dividing by how many there are."
+  },
+  {
+    "word": "Range",
+    "definition": "The difference between the highest and lowest values in a set."
+  },
+  {
+    "word": "Sample",
+    "definition": "A smaller group chosen to represent a larger population."
+  },
+  {
+    "word": "Population",
+    "definition": "The entire group you want conclusions about."
+  },
+  {
+    "word": "Random sample",
+    "definition": "A selection where every member has an equal chance to be included."
+  },
+  {
+    "word": "Survey",
+    "definition": "A set of questions used to collect opinions or facts from many people."
+  },
+  {
+    "word": "Questionnaire",
+    "definition": "A written list of questions used to gather information."
+  },
+  {
+    "word": "Interview",
+    "definition": "A conversation used to collect detailed answers from a person."
+  },
+  {
+    "word": "Ethics",
+    "definition": "Principles of right and wrong behavior in research and reporting."
+  },
+  {
+    "word": "Consent",
+    "definition": "Permission given freely after understanding what will happen."
+  },
+  {
+    "word": "Privacy",
+    "definition": "Protecting personal information from unnecessary sharing."
+  },
+  {
+    "word": "Copyright",
+    "definition": "Legal rights controlling copying and use of creative works."
+  },
+  {
+    "word": "Public domain",
+    "definition": "Works anyone may use freely because rights expired or were waived."
+  },
+  {
+    "word": "Bibliography",
+    "definition": "A list of sources used for research, usually at the end of a paper."
+  },
+  {
+    "word": "Footnote",
+    "definition": "A note at the bottom of a page that cites or expands on a point."
+  },
+  {
+    "word": "Appendix",
+    "definition": "Extra material at the end of a document with charts or raw data."
+  },
+  {
+    "word": "Index",
+    "definition": "An alphabetical list at the end of a book showing page topics."
+  },
+  {
+    "word": "Glossary",
+    "definition": "A list of key terms and definitions, often at the end of a book."
+  },
+  {
+    "word": "Heading",
+    "definition": "A title that labels a section and shows how ideas are grouped."
+  },
+  {
+    "word": "Subheading",
+    "definition": "A smaller title under a heading that splits a section further."
+  },
+  {
+    "word": "Topic sentence",
+    "definition": "A sentence that states the main idea of a paragraph."
+  },
+  {
+    "word": "Concluding sentence",
+    "definition": "A sentence that wraps up the paragraph and reinforces the idea."
+  },
+  {
+    "word": "Bridge sentence",
+    "definition": "A sentence that links one paragraph smoothly to the next."
+  },
+  {
+    "word": "Refute",
+    "definition": "To disprove or weaken an opposing claim with evidence."
+  },
+  {
+    "word": "Acknowledge",
+    "definition": "To admit a valid point from another side before responding."
+  },
+  {
+    "word": "Concede",
+    "definition": "To agree that part of an opposing claim is reasonable."
+  },
+  {
+    "word": "Trade-off",
+    "definition": "A situation where gaining one benefit means giving up another."
+  },
+  {
+    "word": "Cost-benefit",
+    "definition": "Comparing disadvantages against advantages to decide."
+  },
+  {
+    "word": "Risk",
+    "definition": "The chance that something unwanted could happen."
+  },
+  {
+    "word": "Mitigation",
+    "definition": "Steps taken to reduce harm or likelihood of a bad outcome."
+  },
+  {
+    "word": "Root cause",
+    "definition": "The deepest reason a problem continues to occur."
+  },
+  {
+    "word": "Symptom",
+    "definition": "A visible sign of a problem that may not be the root cause itself."
+  },
+  {
+    "word": "Limitation",
+    "definition": "A weakness or boundary of a study, argument, or model."
+  },
+  {
+    "word": "Replication",
+    "definition": "Repeating a study or test to check whether results hold."
+  },
+  {
+    "word": "Validity",
+    "definition": "Whether a tool truly measures what it claims to measure."
+  },
+  {
+    "word": "Measurement error",
+    "definition": "Difference between a measured value and the true value."
+  },
+  {
+    "word": "Precision",
+    "definition": "How closely repeated measurements agree with each other."
+  },
+  {
+    "word": "Accuracy",
+    "definition": "How close measurements are to the true or accepted value."
+  },
+  {
+    "word": "Uncertainty",
+    "definition": "Honest acknowledgment of doubt within a measurement or prediction."
+  },
+  {
+    "word": "Confounding variable",
+    "definition": "An extra factor that may distort cause-and-effect conclusions."
+  },
+  {
+    "word": "Random assignment",
+    "definition": "Placing participants into groups by chance to reduce bias."
+  },
+  {
+    "word": "Elaborate",
+    "definition": "To add more detail or explanation to develop an idea fully."
+  },
+  {
+    "word": "Articulate",
+    "definition": "To express ideas clearly and effectively in words."
+  },
+  {
+    "word": "Differentiate",
+    "definition": "To explain how two or more things are not the same."
+  },
+  {
+    "word": "Corroborate",
+    "definition": "To confirm or support a claim with additional independent evidence."
+  },
+  {
+    "word": "Substantiate",
+    "definition": "To back up a statement with strong proof or examples."
+  },
+  {
+    "word": "Enumerate",
+    "definition": "To list items one by one in a clear order."
+  },
+  {
+    "word": "Scrutinize",
+    "definition": "To examine closely and critically for flaws or details."
+  },
+  {
+    "word": "Integrate",
+    "definition": "To combine separate parts into a unified whole."
+  },
+  {
+    "word": "Hypothesize",
+    "definition": "To form a hypothesis about what might explain observations."
+  },
+  {
+    "word": "Operational definition",
+    "definition": "A precise description of how a variable is measured or observed."
+  },
+  {
+    "word": "Citation",
+    "definition": "A formal reference that identifies a source for borrowed information."
+  },
+  {
+    "word": "Annotate",
+    "definition": "To add explanatory notes to a text or diagram."
+  },
+  {
+    "word": "Brainstorm",
+    "definition": "To generate many ideas quickly without judging them at first."
+  },
+  {
+    "word": "Prior knowledge",
+    "definition": "What you already know before reading or starting a task."
+  },
+  {
+    "word": "Misconception",
+    "definition": "A mistaken belief that must be corrected with better evidence."
+  },
+  {
+    "word": "Proportion",
+    "definition": "A part compared to a whole, often expressed as a fraction or percent."
+  },
+  {
+    "word": "Ratio",
+    "definition": "A comparison of two quantities, often written with a colon."
+  },
+  {
+    "word": "Percent",
+    "definition": "A rate out of one hundred used to compare parts to wholes."
+  },
+  {
+    "word": "Inference",
+    "definition": "A conclusion reached by reasoning from evidence."
+  },
+  {
+    "word": "Deduction",
+    "definition": "Reasoning from general rules to specific cases."
+  },
+  {
+    "word": "Induction",
+    "definition": "Reasoning from specific observations toward a general rule."
+  },
+  {
+    "word": "Anticipate",
+    "definition": "To expect or predict something based on clues or patterns."
+  },
+  {
+    "word": "Attribute",
+    "definition": "To credit something as the cause or source of an outcome."
+  },
+  {
+    "word": "Clarify",
+    "definition": "To make confusing ideas easier to understand."
+  },
+  {
+    "word": "Compile",
+    "definition": "To gather information from several places into one collection."
+  },
+  {
+    "word": "Comprehend",
+    "definition": "To understand fully what a text or speaker means."
+  },
+  {
+    "word": "Comprise",
+    "definition": "To be made up of several parts or members."
+  },
+  {
+    "word": "Depict",
+    "definition": "To show or describe something using words or images."
+  },
+  {
+    "word": "Derive",
+    "definition": "To obtain a result by reasoning or calculation from something known."
+  },
+  {
+    "word": "Devise",
+    "definition": "To invent or plan something carefully after thinking it through."
+  },
+  {
+    "word": "Discern",
+    "definition": "To recognize something subtle or hard to notice."
+  },
+  {
+    "word": "Discourse",
+    "definition": "Serious speech or writing on a topic, especially in school or formal settings."
+  },
+  {
+    "word": "Disseminate",
+    "definition": "To spread information widely to many people."
+  },
+  {
+    "word": "Document",
+    "definition": "To record evidence or facts in writing, photos, or files."
+  },
+  {
+    "word": "Domain",
+    "definition": "A specific area of knowledge, skill, or study."
+  }
+]

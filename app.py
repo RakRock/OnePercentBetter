@@ -485,6 +485,21 @@ if "rp_wrong_words" not in st.session_state:
     st.session_state.rp_wrong_words = {}
 if "rp_wrong_feedback" not in st.session_state:
     st.session_state.rp_wrong_feedback = None
+# Arjun: academic vocabulary (10-word MC quiz)
+if "vocab_questions" not in st.session_state:
+    st.session_state.vocab_questions = []
+if "vocab_current" not in st.session_state:
+    st.session_state.vocab_current = 0
+if "vocab_answers" not in st.session_state:
+    st.session_state.vocab_answers = []
+if "vocab_last_feedback" not in st.session_state:
+    st.session_state.vocab_last_feedback = None
+if "vocab_start_time" not in st.session_state:
+    st.session_state.vocab_start_time = None
+if "vocab_quiz_start_index" not in st.session_state:
+    st.session_state.vocab_quiz_start_index = 0
+if "vocab_next_index_after" not in st.session_state:
+    st.session_state.vocab_next_index_after = 0
 
 
 # ──────────────────────────────────────────────
@@ -525,6 +540,8 @@ def select_activity(activity):
         st.session_state.current_page = "sight_words_home"
     elif activity == "ReadingPhrases":
         st.session_state.current_page = "reading_phrases_home"
+    elif activity == "Vocabulary":
+        st.session_state.current_page = "vocab_home"
     elif activity == "MapExplorer":
         st.session_state.current_page = "map_explorer_home"
     elif activity == "ProblemSolver":
@@ -667,6 +684,31 @@ def back_to_reading_phrases_home():
     st.session_state.rp_current = 0
     st.session_state.rp_wrong_words = {}
     st.session_state.rp_wrong_feedback = None
+
+
+def start_vocab_quiz():
+    import vocabulary_content as vc
+    user = db.get_user(st.session_state.selected_user)
+    if not user:
+        return
+    start_idx = db.get_arjun_vocab_index(user["id"])
+    questions, next_idx = vc.build_quiz(start_idx)
+    st.session_state.current_page = "vocab_practice"
+    st.session_state.vocab_questions = questions
+    st.session_state.vocab_quiz_start_index = start_idx
+    st.session_state.vocab_next_index_after = next_idx
+    st.session_state.vocab_current = 0
+    st.session_state.vocab_answers = []
+    st.session_state.vocab_last_feedback = None
+    st.session_state.vocab_start_time = time.time()
+
+
+def back_to_vocab_home():
+    st.session_state.current_page = "vocab_home"
+    st.session_state.vocab_questions = []
+    st.session_state.vocab_current = 0
+    st.session_state.vocab_answers = []
+    st.session_state.vocab_last_feedback = None
 
 
 def _get_phonics_tip(word: str) -> str:
@@ -1094,6 +1136,19 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🏷️ Logo Identifier", key="btn_logo_id", width="stretch", type="primary"):
                 select_activity("LogoID")
+                st.rerun()
+
+        with act_row4_c2:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #8b5cf6;">
+                <div style="font-size: 3rem;">📚</div>
+                <h3 style="margin: 0.5rem 0;">Vocabulary</h3>
+                <p style="color: #6b7280;">Academic words — meanings in 4 choices</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("📚 Vocabulary", key="btn_vocab", width="stretch", type="primary"):
+                select_activity("Vocabulary")
                 st.rerun()
 
     elif name == "Sangeetha":
@@ -3193,6 +3248,251 @@ def render_sight_words_practice():
                 st.session_state.sw_questions = []
                 st.session_state.sw_current = 0
                 st.session_state.sw_answers = []
+                st.rerun()
+
+
+# ──────────────────────────────────────────────
+# PAGE: Arjun — Academic Vocabulary Home
+# ──────────────────────────────────────────────
+def render_vocab_home():
+    import vocabulary_content as vc
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Back", key="vocab_back_to_dash"):
+            st.session_state.current_page = "user_dashboard"
+            st.session_state.selected_activity = None
+            st.rerun()
+
+    total = vc.total_words()
+    next_i = db.get_arjun_vocab_index(user["id"]) if user else 0
+
+    st.markdown(f"""
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
+        <h1 style="font-size: 2.5rem;">📚 {name}'s Vocabulary</h1>
+        <p style="color: #6b7280; font-size: 1.1rem;">
+            {total} academic words in skill-building order — each quiz has {vc.WORDS_PER_QUIZ} words with four meanings.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    today_v = db.get_today_scores(user["id"], activity_type="Vocabulary") if user else []
+    total_v = db.get_scores_history(user["id"], activity_type="Vocabulary", days=365) if user else []
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">📍 {next_i + 1}</div>'
+            f'<div class="score-label">Next word #</div></div>',
+            unsafe_allow_html=True,
+        )
+    with col2:
+        if today_v:
+            best = max(s["score"] for s in today_v)
+            st.markdown(
+                f'<div class="score-card"><div class="score-number">🎯 {best}%</div>'
+                f'<div class="score-label">Today\'s best quiz</div></div>',
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                '<div class="score-card"><div class="score-number">🎯 —</div>'
+                '<div class="score-label">Today\'s best quiz</div></div>',
+                unsafe_allow_html=True,
+            )
+    with col3:
+        st.markdown(
+            f'<div class="score-card"><div class="score-number">⭐ {len(total_v)}</div>'
+            f'<div class="score-label">Quizzes completed</div></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+    st.markdown(vc.quiz_position_blurb(next_i))
+    st.markdown("")
+    _, col_c, _ = st.columns([1, 2, 1])
+    with col_c:
+        if st.button("🚀 Start vocabulary quiz", key="vocab_start_quiz", width="stretch", type="primary"):
+            start_vocab_quiz()
+            st.rerun()
+
+
+# ──────────────────────────────────────────────
+# PAGE: Arjun — Vocabulary Quiz
+# ──────────────────────────────────────────────
+def render_vocab_practice():
+    import vocabulary_content as vc
+
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+    questions = st.session_state.vocab_questions
+    current = st.session_state.vocab_current
+    total = len(questions)
+    is_done = current >= total
+    vocab_color = "#8b5cf6"
+
+    col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
+    with col_nav1:
+        if st.button("← Vocabulary home", key="vocab_back_home"):
+            back_to_vocab_home()
+            st.rerun()
+    with col_nav_mid:
+        if not is_done:
+            st.markdown(f"""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                Question {current + 1} of {total}
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.markdown("""
+            <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
+                Quiz complete
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+        <h1 style="color: {vocab_color}; margin: 0.3rem 0; font-size: 2.2rem;">📚 Vocabulary Quiz</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+    progress = (current / total) if total > 0 else 0
+    st.markdown(f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,{vocab_color},{vocab_color}bb);
+             border-radius:10px;"></div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    if not is_done:
+        q = questions[current]
+        st.markdown(f"""
+        <div class="gk-question-box">
+            <div style="font-size:1rem;color:#6b7280;margin-bottom:0.5rem;">What does this word mean?</div>
+            <div class="gk-question-text" style="font-size:2rem;font-weight:800;color:{vocab_color};">
+                {q['word']}
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        for i, opt in enumerate(q["options"]):
+            st.markdown(f"**{i + 1}.** {opt}")
+
+        last_feedback = st.session_state.get("vocab_last_feedback")
+
+        if last_feedback and last_feedback.get("idx") == current:
+            correct_def = q["options"][q["answer"]]
+            if last_feedback["correct"]:
+                st.markdown("""
+                <div class="correct-answer" style="text-align:center;margin-top:1rem;">
+                    ✅ <strong>Correct!</strong>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer" style="text-align:center;margin-top:1rem;">
+                    Not quite. The best choice was:<br><strong>{correct_def}</strong>
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("")
+            _, col_next, _ = st.columns([1, 2, 1])
+            with col_next:
+                if current < total - 1:
+                    if st.button("Next ➡️", key="vocab_next", width="stretch", type="primary"):
+                        st.session_state.vocab_current += 1
+                        st.session_state.vocab_last_feedback = None
+                        st.rerun()
+                else:
+                    if st.button("🎉 See results", key="vocab_see_results", width="stretch", type="primary"):
+                        st.session_state.vocab_current = total
+                        st.session_state.vocab_last_feedback = None
+                        st.rerun()
+        else:
+            st.markdown("")
+            btn_cols = st.columns(4, gap="small")
+            for i in range(4):
+                with btn_cols[i]:
+                    if st.button(f"{i + 1}", key=f"vocab_pick_{current}_{i}", width="stretch", type="primary"):
+                        picked = q["options"][i]
+                        ok = i == q["answer"]
+                        st.session_state.vocab_answers.append({
+                            "picked": picked,
+                            "correct_val": q["options"][q["answer"]],
+                            "correct": ok,
+                        })
+                        st.session_state.vocab_last_feedback = {
+                            "idx": current,
+                            "picked": picked,
+                            "correct_val": q["options"][q["answer"]],
+                            "correct": ok,
+                        }
+                        st.rerun()
+
+    else:
+        answers = st.session_state.vocab_answers
+        correct_count = sum(1 for a in answers if a["correct"])
+        score_pct = int((correct_count / total) * 100) if total > 0 else 0
+        time_spent = int(time.time() - st.session_state.vocab_start_time) if st.session_state.vocab_start_time else 0
+        minutes, seconds = divmod(time_spent, 60)
+
+        if user:
+            db.set_arjun_vocab_index(user["id"], st.session_state.vocab_next_index_after)
+            db.save_activity_score(
+                user["id"], "Vocabulary", "Word meanings quiz",
+                score_pct, 100, f"{correct_count}/{total} correct", time_spent,
+            )
+
+        if score_pct == 100:
+            res_emoji, message, res_color = "🏆", "Perfect — every meaning matched!", "#10b981"
+        elif score_pct >= 70:
+            res_emoji, message, res_color = "🔥", "Strong work — keep building your vocabulary!", "#3b82f6"
+        elif score_pct >= 50:
+            res_emoji, message, res_color = "📚", "Good progress — review the missed words below.", "#f59e0b"
+        else:
+            res_emoji, message, res_color = "💪", "Keep practicing — meanings get easier with repetition!", "#ef4444"
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:2rem;background:{res_color}10;border-radius:20px;
+             border:3px solid {res_color};margin-top:1rem;">
+            <div style="font-size:5rem;">{res_emoji}</div>
+            <h2 style="color:{res_color};margin:0.5rem 0;font-size:2rem;">
+                {correct_count} out of {total} correct ({score_pct}%)
+            </h2>
+            <p style="font-size:1.2rem;color:#4b5563;">{message}</p>
+            <p style="color:#9ca3af;">⏱️ Time: {minutes}m {seconds}s</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("")
+        st.markdown("### Review")
+        for idx, (q, ans) in enumerate(zip(questions, answers)):
+            label = f"**{q['word']}**"
+            if ans["correct"]:
+                st.markdown(f'<div class="correct-answer">{label} — ✅ Correct.</div>', unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="wrong-answer">
+                    {label} — ❌ You chose: {ans['picked'][:120]}{'…' if len(ans['picked']) > 120 else ''}
+                    <br>✅ Correct: {ans['correct_val']}
+                </div>
+                """, unsafe_allow_html=True)
+
+        st.markdown("")
+        col_a, col_b = st.columns(2)
+        with col_a:
+            if st.button("📚 Vocabulary home", key="vocab_finish_home", width="stretch", type="primary"):
+                back_to_vocab_home()
+                st.rerun()
+        with col_b:
+            if st.button("🏠 Dashboard", key="vocab_finish_dash", width="stretch"):
+                st.session_state.current_page = "user_dashboard"
+                st.session_state.vocab_questions = []
+                st.session_state.vocab_current = 0
+                st.session_state.vocab_answers = []
                 st.rerun()
 
 
@@ -6195,6 +6495,10 @@ elif page == "reading_phrases_home":
     render_reading_phrases_home()
 elif page == "reading_phrases_practice":
     render_reading_phrases_practice()
+elif page == "vocab_home":
+    render_vocab_home()
+elif page == "vocab_practice":
+    render_vocab_practice()
 elif page == "map_explorer_home":
     render_map_explorer_home()
 elif page == "map_explorer_practice":

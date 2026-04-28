@@ -82,6 +82,12 @@ def init_db():
                 FOREIGN KEY (user_id) REFERENCES users(id),
                 UNIQUE(user_id, quiz_date)
             );
+
+            CREATE TABLE IF NOT EXISTS arjun_vocab_progress (
+                user_id INTEGER PRIMARY KEY,
+                next_word_index INTEGER NOT NULL DEFAULT 0,
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
         """)
         # Migration: add time_spent_seconds if missing (added after initial schema)
         try:
@@ -446,3 +452,24 @@ def get_recent_gk_questions(user_id: int, limit: int = 100) -> list[str]:
         except (ValueError, TypeError):
             continue
     return seen
+
+
+def get_arjun_vocab_index(user_id: int) -> int:
+    """Next word position (0-based) in the ordered Arjun vocabulary list."""
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT next_word_index FROM arjun_vocab_progress WHERE user_id = ?",
+            (user_id,),
+        ).fetchone()
+        return int(row["next_word_index"]) if row else 0
+
+
+def set_arjun_vocab_index(user_id: int, index: int) -> None:
+    """Persist vocabulary quiz progress (wraps at list length by caller)."""
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO arjun_vocab_progress (user_id, next_word_index)
+               VALUES (?, ?)
+               ON CONFLICT(user_id) DO UPDATE SET next_word_index = excluded.next_word_index""",
+            (user_id, index),
+        )
