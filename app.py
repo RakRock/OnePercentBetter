@@ -30,6 +30,21 @@ except Exception:
     _XAI_API_KEY = os.environ.get("XAI_API_KEY")
 _CAN_GK = bool(_XAI_API_KEY)
 
+# ── Anthropic key for AI Forge mentor (Rakesh) ──
+def _anthropic_api_key() -> str | None:
+    """Read key at call time so zshrc / secrets work after app start."""
+    try:
+        key = st.secrets.get("ANTHROPIC_API_KEY")
+        if key:
+            return key
+    except Exception:
+        pass
+    return os.environ.get("ANTHROPIC_API_KEY") or None
+
+
+def _ai_forge_live() -> bool:
+    return bool(_anthropic_api_key())
+
 # ──────────────────────────────────────────────
 # App Configuration
 # ──────────────────────────────────────────────
@@ -557,6 +572,12 @@ def select_activity(activity):
     elif activity == "CubeAddition":
         st.session_state.current_page = "cube_addition"
         st.session_state.cube_problem = None
+    elif activity == "AIForge":
+        st.session_state.current_page = "ai_forge_home"
+    elif activity == "Course3Math":
+        st.session_state.current_page = "course3_home"
+        st.session_state.c3_unit_id = None
+        st.session_state.c3_activity_slug = None
         st.session_state.cube_phase = "intro"
         st.session_state.cube_score = 0
         st.session_state.cube_total = 0
@@ -1137,8 +1158,20 @@ def render_user_dashboard():
                 st.rerun()
 
         st.markdown("")
-        _, act_row4_mid, _ = st.columns([1, 2, 1])
-        with act_row4_mid:
+        act_row4_c1, act_row4_c2 = st.columns(2, gap="large")
+        with act_row4_c1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #14b8a6;">
+                <div style="font-size: 3rem;">📐</div>
+                <h3 style="margin: 0.5rem 0;">Course 3 Math</h3>
+                <p style="color: #6b7280;">Unit 2 lesson notes & review</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("📐 Course 3 Math", key="btn_course3", width="stretch", type="primary"):
+                select_activity("Course3Math")
+                st.rerun()
+        with act_row4_c2:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #f59e0b;">
                 <div style="font-size: 3rem;">🏷️</div>
@@ -1182,7 +1215,7 @@ def render_user_dashboard():
         st.markdown("### ⚡ Choose Your Activity")
         st.markdown("")
 
-        act_col1, act_col2 = st.columns(2, gap="large")
+        act_col1, act_col2, act_col3 = st.columns(3, gap="large")
         with act_col1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #3b82f6;">
@@ -1207,6 +1240,19 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🏛️ Start Civics", key="btn_civics_r", width="stretch", type="primary"):
                 select_activity("Civics")
+                st.rerun()
+
+        with act_col3:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #8b5cf6;">
+                <div style="font-size: 3rem;">⚒️</div>
+                <h3 style="margin: 0.5rem 0;">AI Forge</h3>
+                <p style="color: #6b7280;">Hands-on AI engineering bootcamp</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("⚒️ Open AI Forge", key="btn_aiforge_r", width="stretch", type="primary"):
+                select_activity("AIForge")
                 st.rerun()
 
     else:
@@ -5533,6 +5579,54 @@ def render_problem_solver_practice():
 
 
 # ──────────────────────────────────────────────
+# PAGE: AI Forge (Rakesh)
+# ──────────────────────────────────────────────
+def render_ai_forge_home():
+    import ai_forge_ui
+
+    ai_forge_ui.render_home(_anthropic_api_key(), _ai_forge_live())
+
+
+def render_ai_forge_mentor():
+    import ai_forge_ui
+
+    ai_forge_ui.render_mentor(_anthropic_api_key())
+
+
+def render_ai_forge_projects():
+    import ai_forge_ui
+
+    ai_forge_ui.render_projects()
+
+
+def render_ai_forge_project():
+    import ai_forge_ui
+
+    ai_forge_ui.render_project()
+
+
+# ──────────────────────────────────────────────
+# PAGE: Arjun — Course 3 Math
+# ──────────────────────────────────────────────
+def render_course3_home():
+    import course3_ui
+
+    course3_ui.render_home()
+
+
+def render_course3_unit():
+    import course3_ui
+
+    course3_ui.render_unit()
+
+
+def render_course3_notes():
+    import course3_ui
+
+    course3_ui.render_notes()
+
+
+# ──────────────────────────────────────────────
 # PAGE: Civics Test Home
 # ──────────────────────────────────────────────
 def render_civics_home():
@@ -6527,6 +6621,20 @@ elif page == "civics_home":
     render_civics_home()
 elif page == "civics_practice":
     render_civics_practice()
+elif page == "ai_forge_home":
+    render_ai_forge_home()
+elif page == "ai_forge_mentor":
+    render_ai_forge_mentor()
+elif page == "ai_forge_projects":
+    render_ai_forge_projects()
+elif page == "ai_forge_project":
+    render_ai_forge_project()
+elif page == "course3_home":
+    render_course3_home()
+elif page == "course3_unit":
+    render_course3_unit()
+elif page == "course3_notes":
+    render_course3_notes()
 elif page == "cube_addition":
     render_cube_addition()
 else:

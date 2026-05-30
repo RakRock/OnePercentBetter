@@ -10,9 +10,20 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# Matplotlib cache (local diagram generation)
+.mplconfig/
+
 # IDE
 .vscode/
 .idea/
 
 # Streamlit secrets (contains API keys)
 .streamlit/secrets.toml
+
+# AI Forge
+ai-forge/.env
+ai-forge/frontend/node_modules/
+ai-forge/frontend/.next/
+ai-forge/backend/.venv/
+ai-forge/**/__pycache__/
+ai-forge/data/

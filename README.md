@@ -26,6 +26,21 @@ streamlit run app.py
 
 The app will open at `http://localhost:8501`.
 
+## Arjun Course 3 Math (Unit 2 lesson notes)
+
+Lesson review notes live in `ArjunCourse3/notes/unit_2/`. In the app: **Arjun → Course 3 Math**.
+
+To generate diagram images with Hugging Face:
+
+```bash
+# Activity 9 — clean inline diagrams (matplotlib, recommended):
+python generate_activity9_diagrams.py
+
+# Other activities (optional, Hugging Face):
+export HF_TOKEN="hf_..."
+python generate_course3_diagrams.py
+```
+
 ## Regenerating Story Images
 
 The `images/` folder contains 48 pre-generated AI cartoon illustrations (one per story page). To regenerate them:
