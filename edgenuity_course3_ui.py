@@ -103,7 +103,13 @@ def _render_session_report(report: dict, unit_id: int, unit: dict):
 
 
 def _start_practice(unit_id: int):
-    questions = ec3p.build_daily_set(count=15, unit_id=unit_id)
+    user = db.get_user(st.session_state.selected_user) if st.session_state.get("selected_user") else None
+    exclude_ids = (
+        db.get_recent_ec3_question_ids(user["id"], unit_id, ec3p.RECENT_SESSIONS_TO_AVOID)
+        if user
+        else set()
+    )
+    questions = ec3p.build_daily_set(count=15, unit_id=unit_id, exclude_ids=exclude_ids)
     st.session_state.ec3_unit_id = unit_id
     st.session_state.ec3_questions = questions
     st.session_state.ec3_current = 0
@@ -112,6 +118,7 @@ def _start_practice(unit_id: int):
     st.session_state.ec3_start_time = time.time()
     st.session_state.ec3_session_id = f"{unit_id}-{time.time()}"
     st.session_state.ec3_email_sent_for = None
+    st.session_state.ec3_history_saved_for = None
     st.session_state.current_page = "edgenuity_course3_practice"
 
 
@@ -319,12 +326,12 @@ def render_practice():
 
     if not is_done:
         q = questions[current]
-        cat_info = ec3p.CATEGORIES.get(q["category"], {})
+        cat_info = ec3p.get_categories(unit_id).get(q["category"], {})
         cat_color = cat_info.get("color", "#6366f1")
         cat_emoji = cat_info.get("emoji", "📐")
         cat_name = cat_info.get("name", "Math")
 
-        img_path = ec3p.practice_image_path(q.get("image"))
+        img_path = ec3p.practice_image_path(q.get("image"), unit_id=unit_id)
         has_img = img_path and os.path.exists(img_path)
 
         if has_img:
@@ -413,7 +420,7 @@ def render_practice():
         score_pct = int((correct_count / total) * 100) if total > 0 else 0
         time_spent = int(time.time() - st.session_state.ec3_start_time) if st.session_state.get("ec3_start_time") else 0
         minutes, seconds = divmod(time_spent, 60)
-        report = ec3p.build_session_report(questions, answers)
+        report = ec3p.build_session_report(questions, answers, unit_id=unit_id)
 
         if user:
             db.save_activity_score(
@@ -425,6 +432,11 @@ def render_practice():
                 ec3p.format_report_details(report),
                 time_spent,
             )
+
+        session_id = st.session_state.get("ec3_session_id")
+        if user and session_id and st.session_state.get("ec3_history_saved_for") != session_id:
+            st.session_state.ec3_history_saved_for = session_id
+            db.save_ec3_practice_session(user["id"], unit_id, [q["id"] for q in questions])
 
         if score_pct == 100:
             res_emoji, message, res_color = "🏆", "Perfect score!", "#10b981"

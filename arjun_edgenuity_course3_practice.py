@@ -1,5 +1,5 @@
 """
-Edgenuity Course 3 Unit 1 — daily practice question bank and generators.
+Edgenuity Course 3 — daily practice question banks and generators (Units 1–2).
 """
 
 from __future__ import annotations
@@ -7,8 +7,19 @@ from __future__ import annotations
 import random
 from pathlib import Path
 
+from arjun_edgenuity_course3_unit2_practice import (
+    UNIT2_CATEGORIES,
+    UNIT2_CATEGORY_ACTIVITY,
+    UNIT2_QUESTION_BANK,
+    UNIT2_REVISION_TIPS,
+)
+
 ROOT = Path(__file__).resolve().parent
-PRACTICE_IMG = ROOT / "ArjunEdgenuityCourse3" / "images" / "unit_1" / "practice"
+PRACTICE_IMG_BY_UNIT = {
+    1: ROOT / "ArjunEdgenuityCourse3" / "images" / "unit_1" / "practice",
+    2: ROOT / "ArjunEdgenuityCourse3" / "images" / "unit_2" / "practice",
+}
+PRACTICE_IMG = PRACTICE_IMG_BY_UNIT[1]
 
 CATEGORIES = {
     "coordinate_plane": {
@@ -899,8 +910,24 @@ QUESTION_BANK: list[dict] = [
     },
 ]
 
-# Minimum graph questions per 15-question daily session (exam is ~60% visual)
 GRAPH_MIN_PER_SESSION = 9
+GRAPH_MIN_BY_UNIT = {1: 9, 2: 9}
+RECENT_SESSIONS_TO_AVOID = 2
+
+QUESTION_BANK_BY_UNIT: dict[int, list[dict]] = {}
+CATEGORIES_BY_UNIT: dict[int, dict] = {}
+CATEGORY_ACTIVITY_BY_UNIT: dict[int, dict[str, str]] = {}
+REVISION_TIPS_BY_UNIT: dict[int, dict[str, str]] = {}
+
+QUESTION_BANK_BY_UNIT[1] = QUESTION_BANK
+CATEGORIES_BY_UNIT[1] = CATEGORIES
+CATEGORY_ACTIVITY_BY_UNIT[1] = CATEGORY_ACTIVITY
+REVISION_TIPS_BY_UNIT[1] = REVISION_TIPS
+
+QUESTION_BANK_BY_UNIT[2] = UNIT2_QUESTION_BANK
+CATEGORIES_BY_UNIT[2] = UNIT2_CATEGORIES
+CATEGORY_ACTIVITY_BY_UNIT[2] = UNIT2_CATEGORY_ACTIVITY
+REVISION_TIPS_BY_UNIT[2] = UNIT2_REVISION_TIPS
 
 
 def _gen_quadrant_question() -> dict:
@@ -1005,74 +1032,157 @@ GENERATORS = [
 ]
 
 
-def practice_image_path(image_key: str | None) -> str | None:
+def get_categories(unit_id: int = 1) -> dict:
+    return CATEGORIES_BY_UNIT.get(unit_id, CATEGORIES)
+
+
+def _unit_practice(unit_id: int) -> dict:
+    return {
+        "bank": QUESTION_BANK_BY_UNIT.get(unit_id, QUESTION_BANK),
+        "categories": CATEGORIES_BY_UNIT.get(unit_id, CATEGORIES),
+        "category_activity": CATEGORY_ACTIVITY_BY_UNIT.get(unit_id, CATEGORY_ACTIVITY),
+        "revision_tips": REVISION_TIPS_BY_UNIT.get(unit_id, REVISION_TIPS),
+        "graph_min": GRAPH_MIN_BY_UNIT.get(unit_id, GRAPH_MIN_PER_SESSION),
+        "generators": GENERATORS if unit_id == 1 else [],
+    }
+
+
+def practice_image_path(image_key: str | None, unit_id: int = 1) -> str | None:
     if not image_key:
         return None
-    path = PRACTICE_IMG / f"{image_key}.png"
+    base = PRACTICE_IMG_BY_UNIT.get(unit_id, PRACTICE_IMG)
+    path = base / f"{image_key}.png"
     return str(path) if path.is_file() else None
 
 
-def _weighted_pool(questions: list[dict]) -> list[dict]:
+def _weighted_pool(questions: list[dict], categories: dict | None = None) -> list[dict]:
+    cats = categories or CATEGORIES
     pool: list[dict] = []
     for q in questions:
-        cat = CATEGORIES.get(q["category"], {})
+        cat = cats.get(q["category"], {})
         w = cat.get("weight", 1)
         pool.extend([q] * w)
     random.shuffle(pool)
     return pool
 
 
-def _pick_unique(pool: list[dict], count: int, used: set[str]) -> list[dict]:
+def _question_available(
+    q: dict,
+    used_ids: set[str],
+    used_images: set[str],
+    avoid_ids: set[str],
+    *,
+    allow_recent: bool,
+) -> bool:
+    if q["id"] in used_ids:
+        return False
+    if not allow_recent and q["id"] in avoid_ids:
+        return False
+    img = q.get("image")
+    if img and img in used_images:
+        return False
+    return True
+
+
+def _pick_unique(
+    pool: list[dict],
+    count: int,
+    used_ids: set[str],
+    used_images: set[str],
+    avoid_ids: set[str] | None = None,
+) -> list[dict]:
+    """Pick up to `count` questions; one diagram per session; prefer fresh IDs."""
+    avoid_ids = avoid_ids or set()
     picked: list[dict] = []
-    for q in pool:
-        if q["id"] in used:
-            continue
-        picked.append(dict(q))
-        used.add(q["id"])
+
+    for allow_recent in (False, True):
         if len(picked) >= count:
             break
+        for q in pool:
+            if len(picked) >= count:
+                break
+            if not _question_available(q, used_ids, used_images, avoid_ids, allow_recent=allow_recent):
+                continue
+            picked.append(dict(q))
+            used_ids.add(q["id"])
+            img = q.get("image")
+            if img:
+                used_images.add(img)
     return picked
 
 
-def build_daily_set(count: int = 15, unit_id: int = 1) -> list[dict]:
-    if unit_id != 1:
-        return random.sample(QUESTION_BANK, min(count, len(QUESTION_BANK)))
+def _top_up(
+    selected: list[dict],
+    count: int,
+    used_ids: set[str],
+    used_images: set[str],
+    avoid_ids: set[str],
+    candidates: list[dict],
+) -> None:
+    random.shuffle(candidates)
+    for allow_recent in (False, True):
+        if len(selected) >= count:
+            break
+        for q in candidates:
+            if len(selected) >= count:
+                break
+            if not _question_available(q, used_ids, used_images, avoid_ids, allow_recent=allow_recent):
+                continue
+            selected.append(dict(q))
+            used_ids.add(q["id"])
+            img = q.get("image")
+            if img:
+                used_images.add(img)
 
-    graph_bank = [q for q in QUESTION_BANK if q.get("image")]
-    text_bank = [q for q in QUESTION_BANK if not q.get("image")]
-    graph_target = min(GRAPH_MIN_PER_SESSION, count, len(graph_bank))
+
+def build_daily_set(
+    count: int = 15,
+    unit_id: int = 1,
+    exclude_ids: set[str] | None = None,
+) -> list[dict]:
+    cfg = _unit_practice(unit_id)
+    bank = cfg["bank"]
+    categories = cfg["categories"]
+    generators = cfg["generators"]
+    graph_min = cfg["graph_min"]
+    avoid_ids = set(exclude_ids or ())
+
+    graph_bank = [q for q in bank if q.get("image")]
+    text_bank = [q for q in bank if not q.get("image")]
+    graph_target = min(graph_min, count, len(graph_bank))
     text_target = count - graph_target
 
     used_ids: set[str] = set()
+    used_images: set[str] = set()
     selected: list[dict] = []
 
-    selected.extend(_pick_unique(_weighted_pool(graph_bank), graph_target, used_ids))
+    selected.extend(
+        _pick_unique(_weighted_pool(graph_bank, categories), graph_target, used_ids, used_images, avoid_ids)
+    )
 
-    # Fill remaining graph slots if weighted pool exhausted early
     if len(selected) < graph_target:
-        extra = _pick_unique(graph_bank, graph_target - len(selected), used_ids)
-        selected.extend(extra)
+        selected.extend(
+            _pick_unique(graph_bank, graph_target - len(selected), used_ids, used_images, avoid_ids)
+        )
 
-    selected.extend(_pick_unique(_weighted_pool(text_bank), text_target, used_ids))
+    selected.extend(
+        _pick_unique(_weighted_pool(text_bank, categories), text_target, used_ids, used_images, avoid_ids)
+    )
 
-    # Top up with any remaining questions
     if len(selected) < count:
-        remainder = [q for q in QUESTION_BANK if q["id"] not in used_ids]
-        random.shuffle(remainder)
-        for q in remainder:
-            selected.append(dict(q))
-            used_ids.add(q["id"])
-            if len(selected) >= count:
-                break
+        remainder = [q for q in bank if q["id"] not in used_ids]
+        _top_up(selected, count, used_ids, used_images, avoid_ids, remainder)
 
-    # Last resort: procedural generators (prefer ones that won't duplicate)
     attempts = 0
-    while len(selected) < count and attempts < 20:
+    while len(selected) < count and generators and attempts < 20:
         attempts += 1
-        gq = random.choice(GENERATORS)()
-        if gq["id"] not in used_ids:
-            selected.append(gq)
-            used_ids.add(gq["id"])
+        gq = random.choice(generators)()
+        if gq["id"] in used_ids:
+            continue
+        if not attempts > 10 and gq["id"] in avoid_ids:
+            continue
+        selected.append(gq)
+        used_ids.add(gq["id"])
 
     random.shuffle(selected)
     return selected[:count]
@@ -1082,8 +1192,17 @@ def graph_question_count(questions: list[dict]) -> int:
     return sum(1 for q in questions if q.get("image"))
 
 
-def build_session_report(questions: list[dict], answers: list[dict]) -> dict:
+def build_session_report(
+    questions: list[dict],
+    answers: list[dict],
+    unit_id: int = 1,
+) -> dict:
     """Summarize a completed practice set by topic — strengths vs areas to revise."""
+    cfg = _unit_practice(unit_id)
+    categories = cfg["categories"]
+    category_activity = cfg["category_activity"]
+    revision_tips = cfg["revision_tips"]
+
     by_cat: dict[str, dict] = {}
     for q, ans in zip(questions, answers):
         cat = q.get("category", "unknown")
@@ -1095,7 +1214,7 @@ def build_session_report(questions: list[dict], answers: list[dict]) -> dict:
     strengths: list[dict] = []
     needs_revision: list[dict] = []
     for cat, stats in by_cat.items():
-        info = CATEGORIES.get(cat, {})
+        info = categories.get(cat, {})
         pct = int(100 * stats["correct"] / stats["total"]) if stats["total"] else 0
         entry = {
             "category": cat,
@@ -1105,8 +1224,8 @@ def build_session_report(questions: list[dict], answers: list[dict]) -> dict:
             "correct": stats["correct"],
             "total": stats["total"],
             "pct": pct,
-            "activity_slug": CATEGORY_ACTIVITY.get(cat),
-            "tip": REVISION_TIPS.get(cat, "Review the matching lesson notes and try again."),
+            "activity_slug": category_activity.get(cat),
+            "tip": revision_tips.get(cat, "Review the matching lesson notes and try again."),
         }
         if pct >= STRENGTH_THRESHOLD_PCT:
             strengths.append(entry)

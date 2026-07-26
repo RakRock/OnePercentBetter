@@ -3,6 +3,7 @@ Database module for the 1% Better Every Day app.
 Uses SQLite for persistent storage of user activity, streaks, and scores.
 """
 
+import json
 import sqlite3
 import os
 from datetime import datetime, timedelta
@@ -86,6 +87,15 @@ def init_db():
             CREATE TABLE IF NOT EXISTS arjun_vocab_progress (
                 user_id INTEGER PRIMARY KEY,
                 next_word_index INTEGER NOT NULL DEFAULT 0,
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
+            CREATE TABLE IF NOT EXISTS ec3_practice_sessions (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                unit_id INTEGER NOT NULL,
+                question_ids TEXT NOT NULL,
+                completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (user_id) REFERENCES users(id)
             );
         """)
@@ -188,6 +198,47 @@ def save_activity_score(
                VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
             (user_id, activity_type, activity_name, score, max_score, today, details, time_spent_seconds),
         )
+
+
+def save_ec3_practice_session(user_id: int, unit_id: int, question_ids: list[str]) -> None:
+    """Record question IDs from a completed Edgenuity practice set (for de-duplication)."""
+    with get_connection() as conn:
+        conn.execute(
+            "INSERT INTO ec3_practice_sessions (user_id, unit_id, question_ids) VALUES (?, ?, ?)",
+            (user_id, unit_id, json.dumps(question_ids)),
+        )
+        stale = conn.execute(
+            """SELECT id FROM ec3_practice_sessions
+               WHERE user_id = ? AND unit_id = ?
+               ORDER BY completed_at DESC
+               LIMIT -1 OFFSET 20""",
+            (user_id, unit_id),
+        ).fetchall()
+        if stale:
+            placeholders = ",".join("?" * len(stale))
+            conn.execute(
+                f"DELETE FROM ec3_practice_sessions WHERE id IN ({placeholders})",
+                [row["id"] for row in stale],
+            )
+
+
+def get_recent_ec3_question_ids(user_id: int, unit_id: int, sessions: int = 2) -> set[str]:
+    """Question IDs from the most recent N practice sessions (avoid repeats)."""
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT question_ids FROM ec3_practice_sessions
+               WHERE user_id = ? AND unit_id = ?
+               ORDER BY completed_at DESC
+               LIMIT ?""",
+            (user_id, unit_id, max(sessions, 0)),
+        ).fetchall()
+    seen: set[str] = set()
+    for row in rows:
+        try:
+            seen.update(json.loads(row["question_ids"]))
+        except (json.JSONDecodeError, TypeError):
+            continue
+    return seen
 
 
 def get_today_scores(user_id: int, activity_type: str = None) -> list:

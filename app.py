@@ -497,6 +497,8 @@ if "ec3_session_id" not in st.session_state:
     st.session_state.ec3_session_id = None
 if "ec3_email_sent_for" not in st.session_state:
     st.session_state.ec3_email_sent_for = None
+if "ec3_history_saved_for" not in st.session_state:
+    st.session_state.ec3_history_saved_for = None
 # Cube Addition state
 if "cube_problem" not in st.session_state:
     st.session_state.cube_problem = None
@@ -613,6 +615,7 @@ def select_activity(activity):
         st.session_state.ec3_last_feedback = None
         st.session_state.ec3_session_id = None
         st.session_state.ec3_email_sent_for = None
+        st.session_state.ec3_history_saved_for = None
 
 
 def start_story(story_id):
@@ -1095,6 +1098,19 @@ def render_user_dashboard():
         act_row1_c1, act_row1_c2, act_row1_c3 = st.columns(3, gap="large")
         with act_row1_c1:
             st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #6366f1;">
+                <div style="font-size: 3rem;">🎓</div>
+                <h3 style="margin: 0.5rem 0;">Edgenuity Course 3</h3>
+                <p style="color: #6b7280;">Grade 8 Math — lesson notes & daily practice</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🎓 Edgenuity Course 3", key="btn_edgenuity_course3", width="stretch", type="primary"):
+                select_activity("EdgenuityCourse3")
+                st.rerun()
+
+        with act_row1_c2:
+            st.markdown("""
             <div class="score-card" style="border-top: 5px solid #f59e0b;">
                 <div style="font-size: 3rem;">🧠</div>
                 <h3 style="margin: 0.5rem 0;">General Knowledge</h3>
@@ -1106,7 +1122,7 @@ def render_user_dashboard():
                 select_activity("GK")
                 st.rerun()
 
-        with act_row1_c2:
+        with act_row1_c3:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #6366f1;">
                 <div style="font-size: 3rem;">📖</div>
@@ -1119,7 +1135,9 @@ def render_user_dashboard():
                 select_activity("ArjunStories")
                 st.rerun()
 
-        with act_row1_c3:
+        st.markdown("")
+        act_row2_c1, act_row2_c2, act_row2_c3 = st.columns(3, gap="large")
+        with act_row2_c1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #8b5cf6;">
                 <div style="font-size: 3rem;">📚</div>
@@ -1132,9 +1150,7 @@ def render_user_dashboard():
                 select_activity("Vocabulary")
                 st.rerun()
 
-        st.markdown("")
-        act_row2_c1, act_row2_c2 = st.columns(2, gap="large")
-        with act_row2_c1:
+        with act_row2_c2:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #3b82f6;">
                 <div style="font-size: 3rem;">🗺️</div>
@@ -1147,7 +1163,7 @@ def render_user_dashboard():
                 select_activity("MapExplorer")
                 st.rerun()
 
-        with act_row2_c2:
+        with act_row2_c3:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #10b981;">
                 <div style="font-size: 3rem;">🧩</div>
@@ -1213,21 +1229,6 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🏷️ Logo Identifier", key="btn_logo_id", width="stretch", type="primary"):
                 select_activity("LogoID")
-                st.rerun()
-
-        st.markdown("")
-        act_row5_c1, _ = st.columns([1, 1], gap="large")
-        with act_row5_c1:
-            st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #6366f1;">
-                <div style="font-size: 3rem;">🎓</div>
-                <h3 style="margin: 0.5rem 0;">Edgenuity Course 3</h3>
-                <p style="color: #6b7280;">Grade 8 Math — lesson notes & daily practice</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("🎓 Edgenuity Course 3", key="btn_edgenuity_course3", width="stretch", type="primary"):
-                select_activity("EdgenuityCourse3")
                 st.rerun()
 
     elif name == "Sangeetha":

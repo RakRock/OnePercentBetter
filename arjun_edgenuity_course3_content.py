@@ -89,9 +89,83 @@ UNIT_1_ACTIVITIES = [
 ]
 
 
+UNIT_2_ACTIVITIES = [
+    {
+        "number": 1,
+        "slug": "activity_1_slope_rate",
+        "title": "Slope & Rate of Change",
+        "file": "activity_1_slope_rate.md",
+        "inline_diagrams": True,
+        "diagrams": _diagrams(1, [
+            ("slope_rise_run", "activity_1_slope_rise_run.png", "Slope = rise ÷ run"),
+            ("wilson_watering", "activity_1_wilson_watering.png", "Wilson's watering can — water vs time"),
+        ]),
+    },
+    {
+        "number": 2,
+        "slug": "activity_2_y_intercept",
+        "title": "Y-Intercept & Initial Value",
+        "file": "activity_2_y_intercept.md",
+        "inline_diagrams": True,
+        "diagrams": _diagrams(2, [
+            ("y_intercept_line", "activity_2_y_intercept_line.png", "Where the graph crosses the y-axis"),
+            ("initial_value_table", "activity_2_initial_value_table.png", "Find the starting value from a table"),
+        ]),
+    },
+    {
+        "number": 3,
+        "slug": "activity_3_direct_variation",
+        "title": "Direct Variation & Proportionality",
+        "file": "activity_3_direct_variation.md",
+        "inline_diagrams": True,
+        "diagrams": _diagrams(3, [
+            ("direct_vs_not", "activity_3_direct_vs_not.png", "Direct variation must pass through the origin"),
+            ("proportional_graph", "activity_3_proportional_graph.png", "Proportional relationship graph"),
+        ]),
+    },
+    {
+        "number": 4,
+        "slug": "activity_4_special_lines",
+        "title": "Horizontal, Vertical & Special Slopes",
+        "file": "activity_4_special_lines.md",
+        "inline_diagrams": True,
+        "diagrams": _diagrams(4, [
+            ("horizontal_vertical", "activity_4_horizontal_vertical.png", "Horizontal vs vertical lines"),
+            ("zero_undefined_slope", "activity_4_zero_undefined_slope.png", "Zero slope vs undefined slope"),
+        ]),
+    },
+    {
+        "number": 5,
+        "slug": "activity_5_writing_equations",
+        "title": "Writing Linear Equations",
+        "file": "activity_5_writing_equations.md",
+        "inline_diagrams": True,
+        "diagrams": _diagrams(5, [
+            ("equation_from_graph", "activity_5_equation_from_graph.png", "Read slope and y-intercept from a graph"),
+            ("point_on_line", "activity_5_point_on_line.png", "Find a missing coordinate on a line"),
+        ]),
+    },
+    {
+        "number": 6,
+        "slug": "activity_6_linear_modeling",
+        "title": "Real-World Linear Models",
+        "file": "activity_6_linear_modeling.md",
+        "inline_diagrams": True,
+        "diagrams": _diagrams(6, [
+            ("shake_shack_model", "activity_6_shake_shack_model.png", "Shake Shack revenue model"),
+            ("brenda_phone_bill", "activity_6_brenda_phone_bill.png", "Cell phone bill vs hours used"),
+        ]),
+    },
+]
+
+
 def _pdf_path(unit_id: int) -> Path:
     if unit_id == 1:
         exam = COURSE_DIR / "course_3_unit_1_exam.pdf"
+        if exam.is_file():
+            return exam
+    if unit_id == 2:
+        exam = COURSE_DIR / "course_3_unit_2_exam.pdf"
         if exam.is_file():
             return exam
     return COURSE_DIR / f"course_3_unit_{unit_id}.pdf"
@@ -128,7 +202,8 @@ UNITS = [
         activities=UNIT_1_ACTIVITIES,
         combined_notes_name="unit_1_input_output_relationships_lesson_notes.md",
     ),
-    _build_unit(2, "Unit 2", "Linear functions & modeling"),
+    _build_unit(2, "Unit 2", "Linear functions & modeling", activities=UNIT_2_ACTIVITIES,
+                combined_notes_name="unit_2_linear_functions_lesson_notes.md"),
     _build_unit(3, "Unit 3", "Solving linear equations"),
     _build_unit(4, "Unit 4", "Systems of linear equations"),
     _build_unit(5, "Unit 5", "Bivariate data & scatter plots"),
