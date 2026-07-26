@@ -1,0 +1,242 @@
+[
+  {
+    "id": "m1-ex-0",
+    "module_id": 1,
+    "domain": "NVIDIA AI Enterprise overview",
+    "prompt": "What is the primary purpose of the NVIDIA AI Enterprise Reference Architecture?",
+    "choices": [
+      "Sell GPU hardware only",
+      "Document a validated software-first blueprint for production AI on Kubernetes",
+      "Replace Kubernetes with a proprietary orchestrator",
+      "Provide gaming driver downloads"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The RA is a validated, software-first blueprint for enterprise AI on K8s."
+  },
+  {
+    "id": "m1-ex-1",
+    "module_id": 1,
+    "domain": "NVIDIA AI Enterprise overview",
+    "prompt": "Who is the primary audience for mastering the RA software/platform view?",
+    "choices": [
+      "Game developers only",
+      "Enterprise platform and cloud architects",
+      "Mobile app designers",
+      "CAD users"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Platform engineers, cloud architects, and AI infra engineers are the target learners."
+  },
+  {
+    "id": "m1-tpl-0",
+    "module_id": 1,
+    "domain": "NVIDIA AI Enterprise overview",
+    "prompt": "Which layer of the RA most directly relates to 'What is NVIDIA AI Enterprise RA?'?",
+    "choices": [
+      "Application layer only",
+      "Infrastructure / platform software layer",
+      "Physical desk furniture",
+      "None \u2014 unrelated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'What is NVIDIA AI Enterprise RA?' maps to the RA software stack documented for enterprise AI platforms."
+  },
+  {
+    "id": "m1-tpl-1",
+    "module_id": 1,
+    "domain": "NVIDIA AI Enterprise overview",
+    "prompt": "For NVIDIA AI Enterprise overview, official guidance should be verified in:",
+    "choices": [
+      "Random forums only",
+      "NVIDIA AI Enterprise RA and operator documentation",
+      "Deprecated README files",
+      "Unverified blogs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Always ground decisions in official NVIDIA docs and support matrices."
+  },
+  {
+    "id": "m1-tpl-2",
+    "module_id": 1,
+    "domain": "NVIDIA AI Enterprise overview",
+    "prompt": "A platform engineer implementing 'What is NVIDIA AI Enterprise RA?' should coordinate with:",
+    "choices": [
+      "Only graphic designers",
+      "Cluster admins, security, networking, and ML app teams",
+      "Nobody",
+      "HR payroll"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RA implementations are cross-functional platform efforts."
+  },
+  {
+    "id": "m1-tpl-3",
+    "module_id": 1,
+    "domain": "NVIDIA AI Enterprise overview",
+    "prompt": "Before production rollout of NVIDIA AI Enterprise overview, you must verify:",
+    "choices": [
+      "Random blog posts",
+      "NVIDIA AI Enterprise support matrix and lifecycle docs",
+      "Nothing",
+      "Social media trends"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Version compatibility must come from official NVIDIA lifecycle documentation."
+  },
+  {
+    "id": "m1-tpl-4",
+    "module_id": 1,
+    "domain": "NVIDIA AI Enterprise overview",
+    "prompt": "Troubleshooting 'What is NVIDIA AI Enterprise RA?' typically starts at which RA layer?",
+    "choices": [
+      "Application or infrastructure layer depending on symptom",
+      "Only physical furniture",
+      "DNS only",
+      "Email server"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Triage whether the issue is app workload vs platform operator/infrastructure."
+  },
+  {
+    "id": "m2-tpl-0",
+    "module_id": 2,
+    "domain": "Application layer vs infrastructure layer",
+    "prompt": "Which layer of the RA most directly relates to 'Application Layer vs Infrastructure Layer'?",
+    "choices": [
+      "Application layer only",
+      "Infrastructure / platform software layer",
+      "Physical desk furniture",
+      "None \u2014 unrelated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'Application Layer vs Infrastructure Layer' maps to the RA software stack documented for enterprise AI platforms."
+  },
+  {
+    "id": "m2-tpl-1",
+    "module_id": 2,
+    "domain": "Application layer vs infrastructure layer",
+    "prompt": "For Application layer vs infrastructure layer, official guidance should be verified in:",
+    "choices": [
+      "Random forums only",
+      "NVIDIA AI Enterprise RA and operator documentation",
+      "Deprecated README files",
+      "Unverified blogs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Always ground decisions in official NVIDIA docs and support matrices."
+  },
+  {
+    "id": "m2-tpl-2",
+    "module_id": 2,
+    "domain": "Application layer vs infrastructure layer",
+    "prompt": "A platform engineer implementing 'Application Layer vs Infrastructure Layer' should coordinate with:",
+    "choices": [
+      "Only graphic designers",
+      "Cluster admins, security, networking, and ML app teams",
+      "Nobody",
+      "HR payroll"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RA implementations are cross-functional platform efforts."
+  },
+  {
+    "id": "m2-tpl-3",
+    "module_id": 2,
+    "domain": "Application layer vs infrastructure layer",
+    "prompt": "Before production rollout of Application layer vs infrastructure layer, you must verify:",
+    "choices": [
+      "Random blog posts",
+      "NVIDIA AI Enterprise support matrix and lifecycle docs",
+      "Nothing",
+      "Social media trends"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Version compatibility must come from official NVIDIA lifecycle documentation."
+  },
+  {
+    "id": "m2-tpl-4",
+    "module_id": 2,
+    "domain": "Application layer vs infrastructure layer",
+    "prompt": "Troubleshooting 'Application Layer vs Infrastructure Layer' typically starts at which RA layer?",
+    "choices": [
+      "Application or infrastructure layer depending on symptom",
+      "Only physical furniture",
+      "DNS only",
+      "Email server"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Triage whether the issue is app workload vs platform operator/infrastructure."
+  },
+  {
+    "id": "m3-tpl-0",
+    "module_id": 3,
+    "domain": "Platform base: Ubuntu, Kubernetes, containerd",
+    "prompt": "Which layer of the RA most directly relates to 'Platform Base: OS, Kubernetes, container runtime'?",
+    "choices": [
+      "Application layer only",
+      "Infrastructure / platform software layer",
+      "Physical desk furniture",
+      "None \u2014 unrelated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'Platform Base: OS, Kubernetes, container runtime' maps to the RA software stack documented for enterprise AI platforms."
+  },
+  {
+    "id": "m3-tpl-1",
+    "module_id": 3,
+    "domain": "Platform base: Ubuntu, Kubernetes, containerd",
+    "prompt": "For Platform base: Ubuntu, Kubernetes, containerd, official guidance should be verified in:",
+    "choices": [
+      "Random forums only",
+      "NVIDIA AI Enterprise RA and operator documentation",
+      "Deprecated README files",
+      "Unverified blogs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Always ground decisions in official NVIDIA docs and support matrices."
+  },
+  {
+    "id": "m3-tpl-2",
+    "module_id": 3,
+    "domain": "Platform base: Ubuntu, Kubernetes, containerd",
+    "prompt": "A platform engineer implementing 'Platform Base: OS, Kubernetes, container runtime' should coordinate with:",
+    "choices": [
+      "Only graphic designers",
+      "Cluster admins, security, networking, and ML app teams",
+      "Nobody",
+      "HR payroll"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RA implementations are cross-functional platform efforts."
+  }
+]

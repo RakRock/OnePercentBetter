@@ -27,3 +27,6 @@ ai-forge/frontend/.next/
 ai-forge/backend/.venv/
 ai-forge/**/__pycache__/
 ai-forge/data/
+
+# NVIDIA RA Learning Studio local DB
+network_architecture/nvidia_ra_studio/data/

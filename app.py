@@ -478,6 +478,25 @@ if "sci_last_feedback" not in st.session_state:
     st.session_state.sci_last_feedback = None
 if "sci_start_time" not in st.session_state:
     st.session_state.sci_start_time = None
+# Edgenuity Course 3 state
+if "ec3_unit_id" not in st.session_state:
+    st.session_state.ec3_unit_id = None
+if "ec3_activity_slug" not in st.session_state:
+    st.session_state.ec3_activity_slug = None
+if "ec3_questions" not in st.session_state:
+    st.session_state.ec3_questions = []
+if "ec3_current" not in st.session_state:
+    st.session_state.ec3_current = 0
+if "ec3_answers" not in st.session_state:
+    st.session_state.ec3_answers = []
+if "ec3_last_feedback" not in st.session_state:
+    st.session_state.ec3_last_feedback = None
+if "ec3_start_time" not in st.session_state:
+    st.session_state.ec3_start_time = None
+if "ec3_session_id" not in st.session_state:
+    st.session_state.ec3_session_id = None
+if "ec3_email_sent_for" not in st.session_state:
+    st.session_state.ec3_email_sent_for = None
 # Cube Addition state
 if "cube_problem" not in st.session_state:
     st.session_state.cube_problem = None
@@ -574,6 +593,8 @@ def select_activity(activity):
         st.session_state.cube_problem = None
     elif activity == "AIForge":
         st.session_state.current_page = "ai_forge_home"
+    elif activity == "NetworkArch":
+        st.session_state.current_page = "network_arch_home"
     elif activity == "Course3Math":
         st.session_state.current_page = "course3_home"
         st.session_state.c3_unit_id = None
@@ -582,6 +603,16 @@ def select_activity(activity):
         st.session_state.cube_score = 0
         st.session_state.cube_total = 0
         st.session_state.cube_streak = 0
+    elif activity == "EdgenuityCourse3":
+        st.session_state.current_page = "edgenuity_course3_home"
+        st.session_state.ec3_unit_id = None
+        st.session_state.ec3_activity_slug = None
+        st.session_state.ec3_questions = []
+        st.session_state.ec3_current = 0
+        st.session_state.ec3_answers = []
+        st.session_state.ec3_last_feedback = None
+        st.session_state.ec3_session_id = None
+        st.session_state.ec3_email_sent_for = None
 
 
 def start_story(story_id):
@@ -1184,6 +1215,21 @@ def render_user_dashboard():
                 select_activity("LogoID")
                 st.rerun()
 
+        st.markdown("")
+        act_row5_c1, _ = st.columns([1, 1], gap="large")
+        with act_row5_c1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #6366f1;">
+                <div style="font-size: 3rem;">🎓</div>
+                <h3 style="margin: 0.5rem 0;">Edgenuity Course 3</h3>
+                <p style="color: #6b7280;">Grade 8 Math — lesson notes & daily practice</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🎓 Edgenuity Course 3", key="btn_edgenuity_course3", width="stretch", type="primary"):
+                select_activity("EdgenuityCourse3")
+                st.rerun()
+
     elif name == "Sangeetha":
         st.markdown("### 🌸 Choose Your Activity")
         st.markdown("")
@@ -1253,6 +1299,21 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("⚒️ Open AI Forge", key="btn_aiforge_r", width="stretch", type="primary"):
                 select_activity("AIForge")
+                st.rerun()
+
+        st.markdown("")
+        act_col4, act_col5, _ = st.columns(3, gap="large")
+        with act_col4:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #76b900;">
+                <div style="font-size: 3rem;">🌐</div>
+                <h3 style="margin: 0.5rem 0;">Network Architecture</h3>
+                <p style="color: #6b7280;">NVIDIA AI Enterprise RA Learning Studio</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🟢 Open Network Architecture", key="btn_netarch_r", width="stretch", type="primary"):
+                select_activity("NetworkArch")
                 st.rerun()
 
     else:
@@ -5627,6 +5688,48 @@ def render_course3_notes():
 
 
 # ──────────────────────────────────────────────
+# PAGE: Arjun — Edgenuity Course 3 Math
+# ──────────────────────────────────────────────
+def render_edgenuity_course3_home():
+    import edgenuity_course3_ui
+
+    edgenuity_course3_ui.render_home()
+
+
+def render_edgenuity_course3_unit():
+    import edgenuity_course3_ui
+
+    edgenuity_course3_ui.render_unit()
+
+
+def render_edgenuity_course3_notes():
+    import edgenuity_course3_ui
+
+    edgenuity_course3_ui.render_notes()
+
+
+def render_edgenuity_course3_practice():
+    import edgenuity_course3_ui
+
+    edgenuity_course3_ui.render_practice()
+
+
+# ──────────────────────────────────────────────
+# PAGE: Network Architecture / NVIDIA RA (Rakesh)
+# ──────────────────────────────────────────────
+def render_network_arch_home():
+    import nvidia_ra_ui
+
+    nvidia_ra_ui.render_network_arch_home()
+
+
+def render_nvidia_ra_studio():
+    import nvidia_ra_ui
+
+    nvidia_ra_ui.render_nvidia_ra_studio(_anthropic_api_key())
+
+
+# ──────────────────────────────────────────────
 # PAGE: Civics Test Home
 # ──────────────────────────────────────────────
 def render_civics_home():
@@ -6629,12 +6732,24 @@ elif page == "ai_forge_projects":
     render_ai_forge_projects()
 elif page == "ai_forge_project":
     render_ai_forge_project()
+elif page == "network_arch_home":
+    render_network_arch_home()
+elif page == "nvidia_ra_studio":
+    render_nvidia_ra_studio()
 elif page == "course3_home":
     render_course3_home()
 elif page == "course3_unit":
     render_course3_unit()
 elif page == "course3_notes":
     render_course3_notes()
+elif page == "edgenuity_course3_home":
+    render_edgenuity_course3_home()
+elif page == "edgenuity_course3_unit":
+    render_edgenuity_course3_unit()
+elif page == "edgenuity_course3_notes":
+    render_edgenuity_course3_notes()
+elif page == "edgenuity_course3_practice":
+    render_edgenuity_course3_practice()
 elif page == "cube_addition":
     render_cube_addition()
 else:
