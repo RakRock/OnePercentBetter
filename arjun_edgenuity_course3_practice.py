@@ -1,5 +1,5 @@
 """
-Edgenuity Course 3 — daily practice question banks and generators (Units 1–2).
+Edgenuity Course 3 — daily practice question banks and generators (Units 1–6).
 """
 
 from __future__ import annotations
@@ -13,11 +13,39 @@ from arjun_edgenuity_course3_unit2_practice import (
     UNIT2_QUESTION_BANK,
     UNIT2_REVISION_TIPS,
 )
+from arjun_edgenuity_course3_unit3_practice import (
+    UNIT3_CATEGORIES,
+    UNIT3_CATEGORY_ACTIVITY,
+    UNIT3_QUESTION_BANK,
+    UNIT3_REVISION_TIPS,
+)
+from arjun_edgenuity_course3_unit4_practice import (
+    UNIT4_CATEGORIES,
+    UNIT4_CATEGORY_ACTIVITY,
+    UNIT4_QUESTION_BANK,
+    UNIT4_REVISION_TIPS,
+)
+from arjun_edgenuity_course3_unit5_practice import (
+    UNIT5_CATEGORIES,
+    UNIT5_CATEGORY_ACTIVITY,
+    UNIT5_QUESTION_BANK,
+    UNIT5_REVISION_TIPS,
+)
+from arjun_edgenuity_course3_unit6_practice import (
+    UNIT6_CATEGORIES,
+    UNIT6_CATEGORY_ACTIVITY,
+    UNIT6_QUESTION_BANK,
+    UNIT6_REVISION_TIPS,
+)
 
 ROOT = Path(__file__).resolve().parent
 PRACTICE_IMG_BY_UNIT = {
     1: ROOT / "ArjunEdgenuityCourse3" / "images" / "unit_1" / "practice",
     2: ROOT / "ArjunEdgenuityCourse3" / "images" / "unit_2" / "practice",
+    3: ROOT / "ArjunEdgenuityCourse3" / "images" / "unit_3" / "practice",
+    4: ROOT / "ArjunEdgenuityCourse3" / "images" / "unit_4" / "practice",
+    5: ROOT / "ArjunEdgenuityCourse3" / "images" / "unit_5" / "practice",
+    6: ROOT / "ArjunEdgenuityCourse3" / "images" / "unit_6" / "practice",
 }
 PRACTICE_IMG = PRACTICE_IMG_BY_UNIT[1]
 
@@ -911,7 +939,7 @@ QUESTION_BANK: list[dict] = [
 ]
 
 GRAPH_MIN_PER_SESSION = 9
-GRAPH_MIN_BY_UNIT = {1: 9, 2: 9}
+GRAPH_MIN_BY_UNIT = {1: 9, 2: 9, 3: 9, 4: 9, 5: 6, 6: 9}
 RECENT_SESSIONS_TO_AVOID = 2
 
 QUESTION_BANK_BY_UNIT: dict[int, list[dict]] = {}
@@ -928,6 +956,26 @@ QUESTION_BANK_BY_UNIT[2] = UNIT2_QUESTION_BANK
 CATEGORIES_BY_UNIT[2] = UNIT2_CATEGORIES
 CATEGORY_ACTIVITY_BY_UNIT[2] = UNIT2_CATEGORY_ACTIVITY
 REVISION_TIPS_BY_UNIT[2] = UNIT2_REVISION_TIPS
+
+QUESTION_BANK_BY_UNIT[3] = UNIT3_QUESTION_BANK
+CATEGORIES_BY_UNIT[3] = UNIT3_CATEGORIES
+CATEGORY_ACTIVITY_BY_UNIT[3] = UNIT3_CATEGORY_ACTIVITY
+REVISION_TIPS_BY_UNIT[3] = UNIT3_REVISION_TIPS
+
+QUESTION_BANK_BY_UNIT[4] = UNIT4_QUESTION_BANK
+CATEGORIES_BY_UNIT[4] = UNIT4_CATEGORIES
+CATEGORY_ACTIVITY_BY_UNIT[4] = UNIT4_CATEGORY_ACTIVITY
+REVISION_TIPS_BY_UNIT[4] = UNIT4_REVISION_TIPS
+
+QUESTION_BANK_BY_UNIT[5] = UNIT5_QUESTION_BANK
+CATEGORIES_BY_UNIT[5] = UNIT5_CATEGORIES
+CATEGORY_ACTIVITY_BY_UNIT[5] = UNIT5_CATEGORY_ACTIVITY
+REVISION_TIPS_BY_UNIT[5] = UNIT5_REVISION_TIPS
+
+QUESTION_BANK_BY_UNIT[6] = UNIT6_QUESTION_BANK
+CATEGORIES_BY_UNIT[6] = UNIT6_CATEGORIES
+CATEGORY_ACTIVITY_BY_UNIT[6] = UNIT6_CATEGORY_ACTIVITY
+REVISION_TIPS_BY_UNIT[6] = UNIT6_REVISION_TIPS
 
 
 def _gen_quadrant_question() -> dict:
