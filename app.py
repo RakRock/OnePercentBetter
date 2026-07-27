@@ -1140,21 +1140,6 @@ def render_user_dashboard():
 
         with act_row1_c3:
             st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #6366f1;">
-                <div style="font-size: 3rem;">📖</div>
-                <h3 style="margin: 0.5rem 0;">Factual Stories</h3>
-                <p style="color: #6b7280;">Real events, real learning!</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("📖 Start Stories", key="btn_arjun_stories", width="stretch", type="primary"):
-                select_activity("ArjunStories")
-                st.rerun()
-
-        st.markdown("")
-        act_row2_c1, act_row2_c2, act_row2_c3 = st.columns(3, gap="large")
-        with act_row2_c1:
-            st.markdown("""
             <div class="score-card" style="border-top: 5px solid #8b5cf6;">
                 <div style="font-size: 3rem;">📚</div>
                 <h3 style="margin: 0.5rem 0;">Vocabulary</h3>
@@ -1166,7 +1151,9 @@ def render_user_dashboard():
                 select_activity("Vocabulary")
                 st.rerun()
 
-        with act_row2_c2:
+        st.markdown("")
+        act_row2_c1, act_row2_c2, act_row2_c3 = st.columns(3, gap="large")
+        with act_row2_c1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #3b82f6;">
                 <div style="font-size: 3rem;">🗺️</div>
@@ -1179,35 +1166,7 @@ def render_user_dashboard():
                 select_activity("MapExplorer")
                 st.rerun()
 
-        with act_row2_c3:
-            st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #10b981;">
-                <div style="font-size: 3rem;">🧩</div>
-                <h3 style="margin: 0.5rem 0;">Problem Solver</h3>
-                <p style="color: #6b7280;">Break down real-world problems!</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("🧩 Problem Solver", key="btn_problem_solver", width="stretch", type="primary"):
-                select_activity("ProblemSolver")
-                st.rerun()
-
-        st.markdown("")
-        act_row3_c1, act_row3_c2 = st.columns(2, gap="large")
-        with act_row3_c1:
-            st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #ef4444;">
-                <div style="font-size: 3rem;">⚡</div>
-                <h3 style="margin: 0.5rem 0;">Mental Math Sprint</h3>
-                <p style="color: #6b7280;">Speed + accuracy challenge!</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("⚡ Mental Math", key="btn_mental_math", width="stretch", type="primary"):
-                select_activity("MentalMath")
-                st.rerun()
-
-        with act_row3_c2:
+        with act_row2_c2:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #06b6d4;">
                 <div style="font-size: 3rem;">🔬</div>
@@ -1220,21 +1179,7 @@ def render_user_dashboard():
                 select_activity("Science")
                 st.rerun()
 
-        st.markdown("")
-        act_row4_c1, act_row4_c2 = st.columns(2, gap="large")
-        with act_row4_c1:
-            st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #14b8a6;">
-                <div style="font-size: 3rem;">📐</div>
-                <h3 style="margin: 0.5rem 0;">Course 3 Math</h3>
-                <p style="color: #6b7280;">Unit 2 lesson notes & review</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("📐 Course 3 Math", key="btn_course3", width="stretch", type="primary"):
-                select_activity("Course3Math")
-                st.rerun()
-        with act_row4_c2:
+        with act_row2_c3:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #f59e0b;">
                 <div style="font-size: 3rem;">🏷️</div>
@@ -1245,6 +1190,21 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🏷️ Logo Identifier", key="btn_logo_id", width="stretch", type="primary"):
                 select_activity("LogoID")
+                st.rerun()
+
+        st.markdown("")
+        _, act_row3_c, _ = st.columns([1, 2, 1], gap="large")
+        with act_row3_c:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #14b8a6;">
+                <div style="font-size: 3rem;">📐</div>
+                <h3 style="margin: 0.5rem 0;">Course 3 Math</h3>
+                <p style="color: #6b7280;">Unit 2 lesson notes & review</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("📐 Course 3 Math", key="btn_course3", width="stretch", type="primary"):
+                select_activity("Course3Math")
                 st.rerun()
 
     elif name == "Sangeetha":

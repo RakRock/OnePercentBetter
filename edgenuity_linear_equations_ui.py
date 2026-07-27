@@ -36,17 +36,18 @@ _LEQ_OPTION_CSS = """
 section.main [data-testid="stVerticalBlockBorderWrapper"] .stButton > button {
     width: 100%;
     min-height: 3.25rem;
-    padding: 0.8rem 1.1rem;
-    text-align: left;
-    justify-content: flex-start;
+    padding: 0.8rem 1.15rem;
+    text-align: center;
+    justify-content: center;
     background: #ffffff !important;
     color: #1f2937 !important;
     border: 2px solid #e5e7eb !important;
     border-radius: 14px !important;
     box-shadow: 0 2px 8px rgba(99, 102, 241, 0.07);
-    font-weight: 600 !important;
-    font-size: 0.98rem !important;
+    font-weight: 700 !important;
+    font-size: 1.08rem !important;
     line-height: 1.35 !important;
+    letter-spacing: 0.02em;
     transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
 section.main [data-testid="stVerticalBlockBorderWrapper"] .stButton > button:hover {
@@ -81,14 +82,31 @@ def _render_question(q: dict) -> None:
     st.markdown(f"### {q['question']}")
 
 
+def _format_option_display(option: str) -> str:
+    """Readable option text — unicode minus and no ambiguous separators."""
+    s = str(option).strip().replace("−", "-")
+    if s.startswith("-"):
+        return "\u2212" + s[1:]
+    return s
+
+
 def _option_button(index: int, option: str, current: int) -> bool:
     letter = chr(65 + index)
-    return st.button(
-        f"{letter} · {option}",
-        key=f"leq_opt_{current}_{index}",
-        use_container_width=True,
-        type="secondary",
-    )
+    display = _format_option_display(option)
+    badge_col, btn_col = st.columns([0.55, 5.45], gap="small")
+    with badge_col:
+        st.markdown(
+            f'<p style="font-weight:800;font-size:1.15rem;color:#6366f1;margin:0;'
+            f'padding-top:0.72rem;text-align:center;line-height:1;">{letter}.</p>',
+            unsafe_allow_html=True,
+        )
+    with btn_col:
+        return st.button(
+            display,
+            key=f"leq_opt_{current}_{index}",
+            use_container_width=True,
+            type="secondary",
+        )
 
 
 def _render_answer_choices(q: dict, current: int) -> int | None:

@@ -331,7 +331,7 @@ def _s1_c() -> dict:
     else:
         a = random.randint(2, 6)
         x = random.randint(-10, -2)
-        b = a * x
+        b = -a * x
         eq = fmt_eq(f"−{a}x", str(b))
         correct = fmt_num(x)
         expl = f"−{a}x = {b} → x = {b} ÷ (−{a}) = {x}."
