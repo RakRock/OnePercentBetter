@@ -85,6 +85,7 @@ def format_practice_report_email(
     report: dict,
     time_spent_seconds: int,
     when: datetime | None = None,
+    session_meta: dict | None = None,
 ) -> tuple[str, str, str]:
     """Return (subject, plain_text, html)."""
     when = when or datetime.now()
@@ -104,6 +105,13 @@ def format_practice_report_email(
     strengths = report.get("strengths") or []
     revision = report.get("needs_revision") or []
     tip = report.get("tip") or ""
+    plan_lines: list[str] = []
+    if session_meta:
+        summary = session_meta.get("plan_summary", "").strip()
+        if summary:
+            plan_lines = ["STRATEGIES & LEVELS THIS SESSION", "--------------------------------"]
+            plan_lines.extend(summary.split("\n"))
+            plan_lines.append("")
 
     plain_parts = [
         f"Date: {date_str} at {time_str}",
@@ -112,9 +120,12 @@ def format_practice_report_email(
         f"Score: {score_line}",
         f"Time: {minutes}m {seconds}s",
         "",
+    ]
+    plain_parts.extend(plan_lines)
+    plain_parts.extend([
         "SUMMARY",
         "-------",
-    ]
+    ])
     if strengths:
         plain_parts.append("Doing well:")
         plain_parts.extend(_lines(strengths))
@@ -140,6 +151,18 @@ def format_practice_report_email(
         )
         return f'<ul style="color:{color};margin:0.4rem 0 0 1rem;">{rows}</ul>'
 
+    plan_html = ""
+    if session_meta and session_meta.get("plan_summary"):
+        plan_items = "".join(
+            f"<li>{line}</li>"
+            for line in session_meta["plan_summary"].split("\n")
+            if line.strip()
+        )
+        plan_html = f"""
+      <h3 style="color:#6366f1;margin:1rem 0 0.3rem 0;">📋 Strategies &amp; Levels</h3>
+      <ul style="margin:0.2rem 0 0 1rem;color:#374151;">{plan_items}</ul>
+      """
+
     html = f"""
     <div style="font-family:sans-serif;max-width:560px;color:#1f2937;">
       <h2 style="color:#6366f1;margin:0 0 0.5rem 0;">Edgenuity Practice Report</h2>
@@ -150,6 +173,7 @@ def format_practice_report_email(
         <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Score</td><td><strong>{score_line}</strong></td></tr>
         <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Time</td><td>{minutes}m {seconds}s</td></tr>
       </table>
+      {plan_html}
       <h3 style="color:#10b981;margin:1rem 0 0.3rem 0;">✅ Doing well</h3>
       {_html_list(strengths, "#047857")}
       <h3 style="color:#f59e0b;margin:1rem 0 0.3rem 0;">📚 Needs revision</h3>
@@ -169,6 +193,7 @@ def send_practice_report_email(
     report: dict,
     time_spent_seconds: int,
     when: datetime | None = None,
+    session_meta: dict | None = None,
 ) -> EmailSendResult:
     cfg = load_email_config()
     if not cfg["enabled"]:
@@ -185,6 +210,7 @@ def send_practice_report_email(
         report=report,
         time_spent_seconds=time_spent_seconds,
         when=when,
+        session_meta=session_meta,
     )
 
     msg = MIMEMultipart("alternative")
@@ -203,3 +229,26 @@ def send_practice_report_email(
         return EmailSendResult(ok=True, recipient=cfg["recipient"])
     except Exception as exc:
         return EmailSendResult(ok=False, error=str(exc), recipient=cfg["recipient"])
+
+
+def send_linear_equation_report_email(
+    *,
+    student_name: str,
+    report: dict,
+    time_spent_seconds: int,
+    session_meta: dict,
+    when: datetime | None = None,
+) -> EmailSendResult:
+    """Email for Solving Linear Equations tab (includes strategy/level plan)."""
+    week = session_meta.get("week_label", "").strip()
+    subtitle = week if week else "Weekly strategy practice"
+    return send_practice_report_email(
+        student_name=student_name,
+        unit_title="Solving Linear Equations",
+        unit_subtitle=subtitle,
+        report=report,
+        time_spent_seconds=time_spent_seconds,
+        when=when,
+        session_meta=session_meta,
+    )
+

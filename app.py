@@ -499,6 +499,22 @@ if "ec3_email_sent_for" not in st.session_state:
     st.session_state.ec3_email_sent_for = None
 if "ec3_history_saved_for" not in st.session_state:
     st.session_state.ec3_history_saved_for = None
+if "leq_questions" not in st.session_state:
+    st.session_state.leq_questions = []
+if "leq_current" not in st.session_state:
+    st.session_state.leq_current = 0
+if "leq_answers" not in st.session_state:
+    st.session_state.leq_answers = []
+if "leq_last_feedback" not in st.session_state:
+    st.session_state.leq_last_feedback = None
+if "leq_start_time" not in st.session_state:
+    st.session_state.leq_start_time = None
+if "leq_session_id" not in st.session_state:
+    st.session_state.leq_session_id = None
+if "leq_email_sent_for" not in st.session_state:
+    st.session_state.leq_email_sent_for = None
+if "leq_config_snapshot" not in st.session_state:
+    st.session_state.leq_config_snapshot = None
 # Cube Addition state
 if "cube_problem" not in st.session_state:
     st.session_state.cube_problem = None
@@ -5715,6 +5731,12 @@ def render_edgenuity_course3_practice():
     edgenuity_course3_ui.render_practice()
 
 
+def render_edgenuity_linear_equations_practice():
+    import edgenuity_linear_equations_ui
+
+    edgenuity_linear_equations_ui.render_practice()
+
+
 # ──────────────────────────────────────────────
 # PAGE: Network Architecture / NVIDIA RA (Rakesh)
 # ──────────────────────────────────────────────
@@ -6751,6 +6773,8 @@ elif page == "edgenuity_course3_notes":
     render_edgenuity_course3_notes()
 elif page == "edgenuity_course3_practice":
     render_edgenuity_course3_practice()
+elif page == "edgenuity_linear_equations_practice":
+    render_edgenuity_linear_equations_practice()
 elif page == "cube_addition":
     render_cube_addition()
 else:

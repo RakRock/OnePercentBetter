@@ -98,6 +98,13 @@ def init_db():
                 completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (user_id) REFERENCES users(id)
             );
+
+            CREATE TABLE IF NOT EXISTS linear_eq_week_config (
+                id INTEGER PRIMARY KEY CHECK (id = 1),
+                week_label TEXT NOT NULL DEFAULT '',
+                config_json TEXT NOT NULL DEFAULT '{}',
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
         """)
         # Migration: add time_spent_seconds if missing (added after initial schema)
         try:
@@ -524,3 +531,48 @@ def set_arjun_vocab_index(user_id: int, index: int) -> None:
                ON CONFLICT(user_id) DO UPDATE SET next_word_index = excluded.next_word_index""",
             (user_id, index),
         )
+
+
+def get_linear_eq_week_config() -> dict:
+    """Active weekly strategy/level plan for linear equation practice."""
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT week_label, config_json FROM linear_eq_week_config WHERE id = 1"
+        ).fetchone()
+    if not row:
+        return {"week_label": "", "strategies": [], "use_llm": False}
+    try:
+        data = json.loads(row["config_json"] or "{}")
+    except json.JSONDecodeError:
+        data = {}
+    if not isinstance(data, dict):
+        data = {}
+    strategies = data.get("strategies")
+    if not isinstance(strategies, list):
+        strategies = []
+    return {
+        "week_label": row["week_label"] or data.get("week_label", ""),
+        "strategies": strategies,
+        "use_llm": bool(data.get("use_llm", False)),
+    }
+
+
+def save_linear_eq_week_config(
+    week_label: str,
+    strategies: list[dict],
+    *,
+    use_llm: bool = False,
+) -> None:
+    """Save weekly strategy/level selections (single active plan, id=1)."""
+    payload = {"week_label": week_label, "strategies": strategies, "use_llm": use_llm}
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO linear_eq_week_config (id, week_label, config_json, updated_at)
+               VALUES (1, ?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(id) DO UPDATE SET
+                 week_label = excluded.week_label,
+                 config_json = excluded.config_json,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (week_label, json.dumps(payload)),
+        )
+

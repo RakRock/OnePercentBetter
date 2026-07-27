@@ -134,12 +134,33 @@ def render_home():
         f"""
     <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
         <h1 style="font-size: 2.5rem;">🎓 {name}'s Edgenuity Course 3</h1>
-        <p style="color: #6b7280; font-size: 1.1rem;">Grade 8 Mathematics — 10 units</p>
+        <p style="color: #6b7280; font-size: 1.1rem;">Grade 8 Mathematics — units & linear equation strategies</p>
     </div>
     """,
         unsafe_allow_html=True,
     )
 
+    tab_units, tab_linear, tab_setup = st.tabs([
+        "📘 Course Units",
+        "⚖️ Solving Linear Equations",
+        "📅 Week Setup",
+    ])
+
+    with tab_units:
+        _render_units_grid()
+
+    with tab_linear:
+        import edgenuity_linear_equations_ui as leq_ui
+
+        leq_ui.render_practice_home()
+
+    with tab_setup:
+        import edgenuity_linear_equations_ui as leq_ui
+
+        leq_ui.render_setup_panel()
+
+
+def _render_units_grid():
     row1 = st.columns(3, gap="large")
     row2 = st.columns(3, gap="large")
     row3 = st.columns(3, gap="large")
