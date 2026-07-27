@@ -31,6 +31,38 @@ def _render_math_text(text: str, tex: str | None = None, *, display: bool = True
         st.markdown(text)
 
 
+_LEQ_OPTION_CSS = """
+<style>
+section.main [data-testid="stVerticalBlockBorderWrapper"] .stButton > button {
+    width: 100%;
+    min-height: 3.25rem;
+    padding: 0.8rem 1.1rem;
+    text-align: left;
+    justify-content: flex-start;
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    border: 2px solid #e5e7eb !important;
+    border-radius: 14px !important;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.07);
+    font-weight: 600 !important;
+    font-size: 0.98rem !important;
+    line-height: 1.35 !important;
+    transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+section.main [data-testid="stVerticalBlockBorderWrapper"] .stButton > button:hover {
+    border-color: #6366f1 !important;
+    background: #f5f3ff !important;
+    color: #4338ca !important;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.16);
+}
+section.main [data-testid="stVerticalBlockBorderWrapper"] .stButton > button:active {
+    border-color: #4f46e5 !important;
+    background: #ede9fe !important;
+}
+</style>
+"""
+
+
 def _render_question(q: dict) -> None:
     """Instruction (markdown), equation (LaTeX), and follow-up (markdown)."""
     instruction = q.get("instruction", "")
@@ -49,15 +81,46 @@ def _render_question(q: dict) -> None:
     st.markdown(f"### {q['question']}")
 
 
-def _render_option_row(index: int, option: str, option_tex: str | None, current: int) -> bool:
-    """Render one answer choice as a full-width button with letter + value together."""
-    label = chr(65 + index)
+def _option_button(index: int, option: str, current: int) -> bool:
+    letter = chr(65 + index)
     return st.button(
-        f"{label}. {option}",
+        f"{letter} · {option}",
         key=f"leq_opt_{current}_{index}",
         use_container_width=True,
-        type="primary",
+        type="secondary",
     )
+
+
+def _render_answer_choices(q: dict, current: int) -> int | None:
+    """Render answer choices in a centered grid; return selected index or None."""
+    opts = q["options"]
+    st.markdown(_LEQ_OPTION_CSS, unsafe_allow_html=True)
+
+    long_text = any(len(str(o)) > 44 for o in opts)
+    _, mid, _ = st.columns([1, 7, 1])
+    with mid:
+        with st.container(border=True):
+            st.markdown(
+                '<p style="color:#6366f1;font-size:0.88rem;font-weight:700;'
+                'margin:0 0 0.75rem 0;text-transform:uppercase;letter-spacing:0.06em;">Choose your answer</p>',
+                unsafe_allow_html=True,
+            )
+            if long_text:
+                for i, opt in enumerate(opts):
+                    if _option_button(i, opt, current):
+                        return i
+            else:
+                for row_start in (0, 2):
+                    if row_start >= len(opts):
+                        break
+                    c1, c2 = st.columns(2, gap="medium")
+                    for col_idx, opt_idx in enumerate((row_start, row_start + 1)):
+                        if opt_idx >= len(opts):
+                            continue
+                        with (c1 if col_idx == 0 else c2):
+                            if _option_button(opt_idx, opts[opt_idx], current):
+                                return opt_idx
+    return None
 
 
 def _back_edgenuity_home():
@@ -262,14 +325,12 @@ def render_practice():
                 st.session_state.leq_last_feedback = None
                 st.rerun()
         else:
-            options_tex = q.get("options_tex") or []
-            for i, opt in enumerate(q["options"]):
-                opt_tex = options_tex[i] if i < len(options_tex) else None
-                if _render_option_row(i, opt, opt_tex, current):
-                    correct = i == q["answer"]
-                    st.session_state.leq_answers.append({"choice": i, "correct": correct})
-                    st.session_state.leq_last_feedback = {"q_index": current, "correct": correct}
-                    st.rerun()
+            picked = _render_answer_choices(q, current)
+            if picked is not None:
+                correct = picked == q["answer"]
+                st.session_state.leq_answers.append({"choice": picked, "correct": correct})
+                st.session_state.leq_last_feedback = {"q_index": current, "correct": correct}
+                st.rerun()
     else:
         answers = st.session_state.get("leq_answers", [])
         time_spent = int(time.time() - st.session_state.leq_start_time) if st.session_state.get("leq_start_time") else 0
