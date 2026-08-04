@@ -12,9 +12,13 @@ Prerequisites:
   2. Create an access token at https://huggingface.co/settings/tokens
      (enable "Make calls to Inference Providers")
   3. Export it:  export HF_TOKEN="hf_..."
+
+Images are generated via the fal-ai Inference Provider (FLUX.1-schnell).
+On macOS, if Python SSL fails, a curl fallback is used automatically.
 """
 
 import os
+import subprocess
 import sys
 import time
 
@@ -25,6 +29,8 @@ import reading_content as rc
 # ── Configuration ──
 OUT_DIR = os.path.join(os.path.dirname(__file__), "images")
 MODEL = "black-forest-labs/FLUX.1-schnell"
+PROVIDER = "fal-ai"
+FAL_MODEL = "fal-ai/flux/schnell"
 WIDTH = 512
 HEIGHT = 384
 DELAY_SECONDS = 1
@@ -33,6 +39,64 @@ STYLE_SUFFIX = (
     ", children's picture book illustration, cute simple cartoon,"
     " soft pastel colors, white background, no text, no words"
 )
+
+_HF_ROUTER_URL = f"https://router.huggingface.co/{PROVIDER}/{FAL_MODEL}"
+
+
+def _generate_via_curl(prompt: str, out_path: str, hf_token: str) -> None:
+    """Fallback image generation when Python SSL verification fails (common on macOS)."""
+    import json
+    import tempfile
+
+    payload = {
+        "prompt": prompt,
+        "image_size": {"width": WIDTH, "height": HEIGHT},
+        "num_inference_steps": 4,
+    }
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tmp:
+        tmp.write(json.dumps(payload).encode("utf-8"))
+        payload_path = tmp.name
+
+    try:
+        result = subprocess.run(
+            [
+                "curl", "-sS", "-X", "POST", _HF_ROUTER_URL,
+                "-H", f"Authorization: Bearer {hf_token}",
+                "-H", "Content-Type: application/json",
+                "-d", f"@{payload_path}",
+                "-w", "\n%{http_code}",
+            ],
+            capture_output=True,
+            text=True,
+            timeout=180,
+            check=False,
+        )
+        body, _, http_code = result.stdout.rpartition("\n")
+        http_code = http_code.strip()
+        if result.returncode != 0 or http_code != "200":
+            err_tail = (result.stderr or body or "")[-300:]
+            raise RuntimeError(f"curl HTTP {http_code or '?'}: {err_tail}")
+
+        data = json.loads(body)
+        image_url = data["images"][0]["url"]
+        dl = subprocess.run(
+            ["curl", "-sS", "-L", image_url, "--output", out_path, "-w", "%{http_code}"],
+            capture_output=True,
+            text=True,
+            timeout=180,
+            check=False,
+        )
+        dl_code = (dl.stdout or "").strip()
+        if dl.returncode != 0 or dl_code != "200":
+            raise RuntimeError(f"image download HTTP {dl_code or '?'}")
+    finally:
+        try:
+            os.remove(payload_path)
+        except OSError:
+            pass
+
+    if not os.path.exists(out_path) or os.path.getsize(out_path) < 1000:
+        raise RuntimeError("curl returned empty or invalid image data")
 
 
 def generate_images_for_story(story, hf_token, progress_callback=None):
@@ -50,7 +114,7 @@ def generate_images_for_story(story, hf_token, progress_callback=None):
         tuple ``(generated, skipped, failed)`` counts.
     """
     os.makedirs(OUT_DIR, exist_ok=True)
-    client = InferenceClient(provider="auto", api_key=hf_token)
+    client = InferenceClient(provider=PROVIDER, api_key=hf_token)
 
     story_id = story["id"]
     pages = story["pages"]
@@ -60,7 +124,7 @@ def generate_images_for_story(story, hf_token, progress_callback=None):
     for i, page in enumerate(pages, start=1):
         out_path = os.path.join(OUT_DIR, f"{story_id}_{i}.png")
 
-        if os.path.exists(out_path):
+        if os.path.exists(out_path) and os.path.getsize(out_path) >= 1000:
             skipped += 1
             if progress_callback:
                 progress_callback(i, total, f"Page {i}/{total}: already exists")
@@ -80,6 +144,18 @@ def generate_images_for_story(story, hf_token, progress_callback=None):
             image.save(out_path)
             generated += 1
         except Exception as exc:
+            err_msg = str(exc)
+            if "CERTIFICATE_VERIFY_FAILED" in err_msg or "SSL" in err_msg:
+                try:
+                    _generate_via_curl(prompt, out_path, hf_token)
+                    generated += 1
+                    continue
+                except Exception as curl_exc:
+                    failed += 1
+                    if progress_callback:
+                        progress_callback(i, total, f"Page {i} failed: {curl_exc}")
+                    time.sleep(DELAY_SECONDS)
+                    continue
             failed += 1
             if progress_callback:
                 progress_callback(i, total, f"Page {i} failed: {exc}")

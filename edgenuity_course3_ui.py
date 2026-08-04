@@ -119,7 +119,134 @@ def _start_practice(unit_id: int):
     st.session_state.ec3_session_id = f"{unit_id}-{time.time()}"
     st.session_state.ec3_email_sent_for = None
     st.session_state.ec3_history_saved_for = None
+    st.session_state.ec3_review_mode = False
+    st.session_state.ec3_review_index = 0
     st.session_state.current_page = "edgenuity_course3_practice"
+
+
+def _render_ec3_review(questions: list, answers: list, unit_id: int, unit: dict):
+    """Walk through graded questions one at a time to see mistakes."""
+    total = len(questions)
+    idx = st.session_state.get("ec3_review_index", 0)
+    idx = max(0, min(idx, total - 1))
+    st.session_state.ec3_review_index = idx
+
+    q = questions[idx]
+    ans = answers[idx] if idx < len(answers) else None
+    cat_info = ec3p.get_categories(unit_id).get(q["category"], {})
+    cat_color = cat_info.get("color", "#6366f1")
+    cat_emoji = cat_info.get("emoji", "📐")
+    cat_name = cat_info.get("name", "Math")
+
+    col_back, col_title, _ = st.columns([1, 4, 1])
+    with col_back:
+        if st.button("← Results", key="ec3_review_back_results", use_container_width=True):
+            st.session_state.ec3_review_mode = False
+            st.rerun()
+    with col_title:
+        status = "✅ Correct" if ans and ans.get("correct") else "❌ Incorrect"
+        st.markdown(
+            f'<div style="text-align:center;color:#6b7280;font-size:0.95rem;padding-top:0.5rem;">'
+            f"Review question {idx + 1} of {total} &nbsp;|&nbsp; {status}</div>",
+            unsafe_allow_html=True,
+        )
+
+    progress = ((idx + 1) / total) if total > 0 else 0
+    st.markdown(
+        f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="width:{progress * 100:.0f}%;height:100%;background:linear-gradient(90deg,#6366f1,#8b5cf6);
+             border-radius:10px;"></div>
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
+
+    img_path = ec3p.practice_image_path(q.get("image"), unit_id=unit_id)
+    has_img = img_path and os.path.exists(img_path)
+    if has_img:
+        q_col, img_col = st.columns([3, 2], gap="medium")
+        with q_col:
+            st.markdown(
+                f"""
+            <div class="gk-question-box">
+                <span class="gk-topic-badge" style="background:{cat_color}20;color:{cat_color};">
+                    {cat_emoji} {cat_name}
+                </span>
+                <div class="gk-question-text" style="margin-top:0.8rem;font-size:1.3rem;">{q['question']}</div>
+            </div>
+            """,
+                unsafe_allow_html=True,
+            )
+        with img_col:
+            st.image(img_path, use_container_width=True)
+    else:
+        st.markdown(
+            f"""
+        <div class="gk-question-box">
+            <span class="gk-topic-badge" style="background:{cat_color}20;color:{cat_color};">
+                {cat_emoji} {cat_name}
+            </span>
+            <div class="gk-question-text" style="margin-top:0.8rem;font-size:1.3rem;">{q['question']}</div>
+        </div>
+        """,
+            unsafe_allow_html=True,
+        )
+
+    correct_idx = q["answer"]
+    picked = ans.get("picked") if ans else None
+    ans_col1, ans_col2 = st.columns(2, gap="medium")
+    for i, opt in enumerate(q["options"]):
+        col = ans_col1 if i % 2 == 0 else ans_col2
+        with col:
+            if i == correct_idx:
+                css = "correct-answer"
+                label = f"✅ {opt} — correct answer"
+            elif picked is not None and str(opt) == str(picked) and i != correct_idx:
+                css = "wrong-answer"
+                label = f"❌ {opt} — your answer"
+            else:
+                css = ""
+                label = str(opt)
+            if css:
+                st.markdown(
+                    f'<div class="{css}" style="padding:0.85rem 1rem;border-radius:12px;margin-bottom:0.5rem;">'
+                    f"<strong>{label}</strong></div>",
+                    unsafe_allow_html=True,
+                )
+            else:
+                st.markdown(
+                    f'<div style="padding:0.85rem 1rem;border-radius:12px;margin-bottom:0.5rem;'
+                    f'background:#f9fafb;border:2px solid #e5e7eb;color:#374151;">{label}</div>',
+                    unsafe_allow_html=True,
+                )
+
+    if q.get("explanation"):
+        st.markdown(
+            f"""
+        <div style="background:#eff6ff;border-left:4px solid #6366f1;padding:0.8rem 1rem;
+             border-radius:8px;margin-top:0.5rem;">
+            <strong>Explanation:</strong> {q['explanation']}
+        </div>
+        """,
+            unsafe_allow_html=True,
+        )
+
+    col_prev, col_mid, col_next = st.columns([1, 2, 1])
+    with col_prev:
+        if idx > 0 and st.button("⬅️ Previous", key="ec3_review_prev", use_container_width=True):
+            st.session_state.ec3_review_index = idx - 1
+            st.rerun()
+    with col_next:
+        if idx < total - 1 and st.button("Next ➡️", key="ec3_review_next", use_container_width=True, type="primary"):
+            st.session_state.ec3_review_index = idx + 1
+            st.rerun()
+    with col_mid:
+        wrong_indices = [i for i, a in enumerate(answers) if not a.get("correct")]
+        if wrong_indices and st.button("Jump to next mistake", key="ec3_review_jump_wrong", use_container_width=True):
+            next_wrong = next((i for i in wrong_indices if i > idx), wrong_indices[0])
+            st.session_state.ec3_review_index = next_wrong
+            st.rerun()
 
 
 def render_home():
@@ -311,6 +438,8 @@ def render_practice():
             st.session_state.ec3_current = 0
             st.session_state.ec3_answers = []
             st.session_state.ec3_last_feedback = None
+            st.session_state.ec3_review_mode = False
+            st.session_state.ec3_review_index = 0
             st.rerun()
     with col_nav_mid:
         if not is_done and total:
@@ -332,6 +461,11 @@ def render_practice():
 
     if not questions:
         st.warning("No questions loaded.")
+        return
+
+    answers = st.session_state.get("ec3_answers", [])
+    if is_done and st.session_state.get("ec3_review_mode"):
+        _render_ec3_review(questions, answers, unit_id, unit)
         return
 
     progress = (current / total) if total > 0 else 0
@@ -515,13 +649,19 @@ def render_practice():
                     unsafe_allow_html=True,
                 )
 
-        col_r1, col_r2 = st.columns(2)
+        col_r1, col_r2, col_r3 = st.columns(3)
         with col_r1:
-            if st.button("🎯 Practice Again", key="ec3_again", use_container_width=True, type="primary"):
-                _start_practice(unit_id)
+            if st.button("🔍 Review Answers", key="ec3_review_start", use_container_width=True, type="primary"):
+                st.session_state.ec3_review_mode = True
+                st.session_state.ec3_review_index = 0
                 st.rerun()
         with col_r2:
+            if st.button("🎯 Practice Again", key="ec3_again", use_container_width=True):
+                _start_practice(unit_id)
+                st.rerun()
+        with col_r3:
             if st.button("📘 Back to Unit", key="ec3_results_unit", use_container_width=True):
                 st.session_state.current_page = "edgenuity_course3_unit"
                 st.session_state.ec3_questions = []
+                st.session_state.ec3_review_mode = False
                 st.rerun()

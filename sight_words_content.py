@@ -3,13 +3,18 @@ Sight Words & sentence reading for Krish (ages 4-6)
 
 - **Sentence reading**: 2–3 word lines using vocabulary from the original CVC
   set — 10 per exercise.
-- **CVC Words (advanced)**: blends, digraphs, and trickier patterns — 12 words per round.
+- **CVC Words (advanced)**: blends, digraphs, and trickier patterns — **10 words per batch**.
 
 The legacy single-word CVC list lives in ``WORD_BANK["cvc"]`` and supplies
 vocabulary for the sentence-reading phrases. Advanced practice uses ``cvc_advanced``.
+
+Words marked wrong are saved to a **review queue** and appear again in future batches
+until Krish reads them correctly (checkbox unchecked on submit).
 """
 
 import random
+
+WORDS_PER_BATCH = 10
 
 # One exercise = this many short sentences (2–3 words each)
 READING_PHRASES_PER_EXERCISE = 10
@@ -21,7 +26,7 @@ LEVELS = [
         "subtitle": "Blends, digraphs & harder words!",
         "emoji": "🔤",
         "color": "#f97316",
-        "words_per_round": 12,
+        "words_per_round": WORDS_PER_BATCH,
     },
 ]
 
@@ -584,12 +589,12 @@ def get_level(level_id):
     return None
 
 
-def generate_round(level_id):
+def generate_round(level_id, review_words=None):
     """
-    Generate a round of sight word practice questions.
+    Build one batch of CVC practice words (10 by default).
 
-    Each question shows a target word and 4 options.  The child must
-    pick the correct word from the choices.
+    Review words (previously missed) are included first so they come back
+    until the child reads them correctly.
     """
     lvl = get_level(level_id)
     if not lvl:
@@ -599,27 +604,33 @@ def generate_round(level_id):
     if not bank:
         return []
 
-    count = min(lvl["words_per_round"], len(bank))
-    selected = random.sample(bank, count)
+    review_words = review_words or []
+    by_word = {entry["word"]: entry for entry in bank}
+    batch_entries = []
+    seen = set()
+
+    for word in review_words:
+        if word in by_word and word not in seen:
+            batch_entries.append(by_word[word])
+            seen.add(word)
+        if len(batch_entries) >= WORDS_PER_BATCH:
+            break
+
+    if len(batch_entries) < WORDS_PER_BATCH:
+        pool = [entry for entry in bank if entry["word"] not in seen]
+        need = WORDS_PER_BATCH - len(batch_entries)
+        if pool:
+            batch_entries.extend(random.sample(pool, min(need, len(pool))))
+
     questions = []
-
-    for entry in selected:
-        correct = entry["word"]
-        distractors_pool = [w["word"] for w in bank if w["word"] != correct]
-        distractors = random.sample(distractors_pool, min(3, len(distractors_pool)))
-
-        options = [correct] + distractors
-        random.shuffle(options)
-        answer_idx = options.index(correct)
+    for entry in batch_entries:
         word_color = random.choice(WORD_COLORS)
-
         questions.append({
-            "word": correct,
+            "word": entry["word"],
             "sentence": entry["sentence"],
             "emoji": entry["emoji"],
-            "options": options,
-            "answer": answer_idx,
             "color": word_color,
+            "is_review": entry["word"] in review_words,
         })
 
     return questions

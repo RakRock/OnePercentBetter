@@ -105,6 +105,17 @@ def init_db():
                 config_json TEXT NOT NULL DEFAULT '{}',
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
+
+            CREATE TABLE IF NOT EXISTS cvc_review_words (
+                user_id INTEGER NOT NULL,
+                level_id TEXT NOT NULL,
+                word TEXT NOT NULL,
+                phonics_tip TEXT DEFAULT '',
+                wrong_count INTEGER DEFAULT 1,
+                last_wrong_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (user_id, level_id, word),
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
         """)
         # Migration: add time_spent_seconds if missing (added after initial schema)
         try:
@@ -574,5 +585,48 @@ def save_linear_eq_week_config(
                  config_json = excluded.config_json,
                  updated_at = CURRENT_TIMESTAMP""",
             (week_label, json.dumps(payload)),
+        )
+
+
+def get_cvc_review_words(user_id: int, level_id: str) -> list[dict]:
+    """Words Krish missed — kept until read correctly in a later batch."""
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT word, phonics_tip, wrong_count, last_wrong_at
+               FROM cvc_review_words
+               WHERE user_id = ? AND level_id = ?
+               ORDER BY last_wrong_at DESC""",
+            (user_id, level_id),
+        ).fetchall()
+    return [dict(r) for r in rows]
+
+
+def get_cvc_review_count(user_id: int, level_id: str) -> int:
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT COUNT(*) AS n FROM cvc_review_words WHERE user_id = ? AND level_id = ?",
+            (user_id, level_id),
+        ).fetchone()
+    return row["n"] if row else 0
+
+
+def mark_cvc_word_wrong(user_id: int, level_id: str, word: str, phonics_tip: str = "") -> None:
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO cvc_review_words (user_id, level_id, word, phonics_tip, wrong_count, last_wrong_at)
+               VALUES (?, ?, ?, ?, 1, CURRENT_TIMESTAMP)
+               ON CONFLICT(user_id, level_id, word) DO UPDATE SET
+                 phonics_tip = CASE WHEN excluded.phonics_tip != '' THEN excluded.phonics_tip ELSE phonics_tip END,
+                 wrong_count = wrong_count + 1,
+                 last_wrong_at = CURRENT_TIMESTAMP""",
+            (user_id, level_id, word, phonics_tip),
+        )
+
+
+def mark_cvc_word_mastered(user_id: int, level_id: str, word: str) -> None:
+    with get_connection() as conn:
+        conn.execute(
+            "DELETE FROM cvc_review_words WHERE user_id = ? AND level_id = ? AND word = ?",
+            (user_id, level_id, word),
         )
 

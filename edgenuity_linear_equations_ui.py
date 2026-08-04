@@ -179,7 +179,120 @@ def _start_linear_practice(*, show_spinner: bool = False):
     st.session_state.leq_start_time = time.time()
     st.session_state.leq_session_id = f"leq-{time.time()}"
     st.session_state.leq_email_sent_for = None
+    st.session_state.leq_review_mode = False
+    st.session_state.leq_review_index = 0
     st.session_state.current_page = "edgenuity_linear_equations_practice"
+
+
+def _render_leq_review_choices(q: dict, ans: dict | None, review_index: int) -> None:
+    """Show answer choices read-only with correct/wrong highlighting."""
+    opts = q["options"]
+    picked_idx = ans.get("choice") if ans else None
+    correct_idx = q["answer"]
+
+    st.markdown(_LEQ_OPTION_CSS, unsafe_allow_html=True)
+    _, mid, _ = st.columns([1, 7, 1])
+    with mid:
+        with st.container(border=True):
+            st.markdown(
+                '<p style="color:#6366f1;font-size:0.88rem;font-weight:700;'
+                'margin:0 0 0.75rem 0;text-transform:uppercase;letter-spacing:0.06em;">Your answers</p>',
+                unsafe_allow_html=True,
+            )
+            for i, opt in enumerate(opts):
+                letter = chr(65 + i)
+                display = _format_option_display(opt)
+                if i == correct_idx:
+                    css = "correct-answer"
+                    suffix = " — correct answer"
+                elif picked_idx is not None and i == picked_idx and i != correct_idx:
+                    css = "wrong-answer"
+                    suffix = " — your answer"
+                else:
+                    css = ""
+                    suffix = ""
+                if css:
+                    st.markdown(
+                        f'<div class="{css}" style="padding:0.85rem 1rem;border-radius:12px;margin-bottom:0.5rem;">'
+                        f"<strong>{letter}. {display}{suffix}</strong></div>",
+                        unsafe_allow_html=True,
+                    )
+                else:
+                    st.markdown(
+                        f'<div style="padding:0.85rem 1rem;border-radius:12px;margin-bottom:0.5rem;'
+                        f'background:#f9fafb;border:2px solid #e5e7eb;color:#374151;">'
+                        f"<strong>{letter}.</strong> {display}</div>",
+                        unsafe_allow_html=True,
+                    )
+
+
+def _render_leq_review(questions: list, answers: list) -> None:
+    """Walk through graded linear-equation questions to review mistakes."""
+    total = len(questions)
+    idx = st.session_state.get("leq_review_index", 0)
+    idx = max(0, min(idx, total - 1))
+    st.session_state.leq_review_index = idx
+
+    q = questions[idx]
+    ans = answers[idx] if idx < len(answers) else None
+
+    col_back, col_title, _ = st.columns([1, 4, 1])
+    with col_back:
+        if st.button("← Results", key="leq_review_back_results", use_container_width=True):
+            st.session_state.leq_review_mode = False
+            st.rerun()
+    with col_title:
+        status = "✅ Correct" if ans and ans.get("correct") else "❌ Incorrect"
+        st.markdown(
+            f'<div style="text-align:center;color:#6b7280;font-size:0.95rem;padding-top:0.5rem;">'
+            f"Review question {idx + 1} of {total} &nbsp;|&nbsp; {status}</div>",
+            unsafe_allow_html=True,
+        )
+
+    progress = ((idx + 1) / total) if total > 0 else 0
+    st.markdown(
+        f"""
+    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
+        <div style="background:linear-gradient(90deg,#6366f1,#8b5cf6);width:{progress*100:.0f}%;height:100%;"></div>
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        f'<p style="color:#6366f1;font-size:0.85rem;margin-bottom:0.25rem;">'
+        f'{q.get("category_label", "")}</p>',
+        unsafe_allow_html=True,
+    )
+    _render_question(q)
+    _render_leq_review_choices(q, ans, idx)
+
+    if q.get("explanation"):
+        st.markdown(
+            f"""
+        <div style="background:#eff6ff;border-left:4px solid #6366f1;padding:0.8rem 1rem;
+             border-radius:8px;margin-top:0.5rem;">
+            <strong>Explanation:</strong> {q['explanation']}
+        </div>
+        """,
+            unsafe_allow_html=True,
+        )
+
+    col_prev, col_mid, col_next = st.columns([1, 2, 1])
+    with col_prev:
+        if idx > 0 and st.button("⬅️ Previous", key="leq_review_prev", use_container_width=True):
+            st.session_state.leq_review_index = idx - 1
+            st.rerun()
+    with col_next:
+        if idx < total - 1 and st.button("Next ➡️", key="leq_review_next", use_container_width=True, type="primary"):
+            st.session_state.leq_review_index = idx + 1
+            st.rerun()
+    with col_mid:
+        wrong_indices = [i for i, a in enumerate(answers) if not a.get("correct")]
+        if wrong_indices and st.button("Jump to next mistake", key="leq_review_jump_wrong", use_container_width=True):
+            next_wrong = next((i for i in wrong_indices if i > idx), wrong_indices[0])
+            st.session_state.leq_review_index = next_wrong
+            st.rerun()
 
 
 def render_setup_panel():
@@ -287,6 +400,8 @@ def render_practice():
             st.session_state.leq_current = 0
             st.session_state.leq_answers = []
             st.session_state.leq_last_feedback = None
+            st.session_state.leq_review_mode = False
+            st.session_state.leq_review_index = 0
             st.rerun()
     with col_nav_mid:
         if not is_done and total:
@@ -311,6 +426,11 @@ def render_practice():
 
     if not questions:
         st.warning("No questions loaded.")
+        return
+
+    answers = st.session_state.get("leq_answers", [])
+    if is_done and st.session_state.get("leq_review_mode"):
+        _render_leq_review(questions, answers)
         return
 
     progress = (current / total) if total > 0 else 0
@@ -387,13 +507,19 @@ def render_practice():
             else:
                 st.caption("Email not configured — practice report saved on screen only.")
 
-        c1, c2 = st.columns(2)
+        c1, c2, c3 = st.columns(3)
         with c1:
-            if st.button("🎯 Practice Again", key="leq_again", use_container_width=True, type="primary"):
-                _start_linear_practice(show_spinner=True)
+            if st.button("🔍 Review Answers", key="leq_review_start", use_container_width=True, type="primary"):
+                st.session_state.leq_review_mode = True
+                st.session_state.leq_review_index = 0
                 st.rerun()
         with c2:
+            if st.button("🎯 Practice Again", key="leq_again", use_container_width=True):
+                _start_linear_practice(show_spinner=True)
+                st.rerun()
+        with c3:
             if st.button("← Back to Linear Equations", key="leq_done_back", use_container_width=True):
                 st.session_state.current_page = "edgenuity_course3_home"
                 st.session_state.leq_questions = []
+                st.session_state.leq_review_mode = False
                 st.rerun()

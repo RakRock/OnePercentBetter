@@ -28,6 +28,20 @@ def get_image_path(story_id: str, page_num: int) -> str:
     return os.path.join(_IMG_DIR, f"{story_id}_{page_num}.png")
 
 
+def page_image_exists(story_id: str, page_num: int) -> bool:
+    """True if a valid illustration file exists for this page."""
+    path = get_image_path(story_id, page_num)
+    return os.path.exists(path) and os.path.getsize(path) >= 1000
+
+
+def count_missing_images(story: dict) -> int:
+    """How many pages in this story still need illustrations."""
+    return sum(
+        1 for i in range(1, len(story.get("pages", [])) + 1)
+        if not page_image_exists(story["id"], i)
+    )
+
+
 STORIES = {
     # ── Story 1: The Big Red Ball ──
     "b1": {
@@ -457,6 +471,234 @@ STORIES = {
                 "q": "Where does the bear sleep?",
                 "options": ["In a bed 🛏️", "In a cave 🕳️", "In a house 🏠"],
                 "answer": 1,
+            },
+        ],
+    },
+
+    # ── Story 7: The Yellow Duck ──
+    "b7": {
+        "id": "b7",
+        "title": "The Yellow Duck",
+        "cover_emoji": "🦆",
+        "color": "#fbbf24",
+        "pages": [
+            {
+                "image_prompt": "a cute cartoon yellow duck standing at the edge of a small blue pond",
+                "fallback_emoji": "🦆💧",
+                "text": "I see a yellow duck.",
+            },
+            {
+                "image_prompt": "a cute cartoon yellow duck jumping into a small blue pond with a splash",
+                "fallback_emoji": "🦆💦",
+                "text": "The duck goes in the pond.",
+            },
+            {
+                "image_prompt": "a cute cartoon yellow duck swimming happily in a blue pond",
+                "fallback_emoji": "🦆🏊",
+                "text": "The duck can swim.",
+            },
+            {
+                "image_prompt": "a cute cartoon yellow duck dipping its orange beak into the pond water",
+                "fallback_emoji": "🦆💧",
+                "text": "The duck drinks the water.",
+            },
+            {
+                "image_prompt": "a cute cartoon yellow duck waddling out of a pond onto green grass",
+                "fallback_emoji": "🦆🌿",
+                "text": "The duck comes out.",
+            },
+            {
+                "image_prompt": "a cute cartoon yellow duck shaking water off its wings on green grass",
+                "fallback_emoji": "🦆✨",
+                "text": "Splash! The duck is dry.",
+            },
+        ],
+        "questions": [
+            {
+                "q": "What color is the duck?",
+                "options": ["Red 🔴", "Yellow 🟡", "Blue 🔵"],
+                "answer": 1,
+            },
+            {
+                "q": "Where does the duck swim?",
+                "options": ["In a pond 💧", "In a tree 🌳", "In a bed 🛏️"],
+                "answer": 0,
+            },
+            {
+                "q": "What does the duck drink?",
+                "options": ["Milk 🥛", "Water 💧", "Juice 🧃"],
+                "answer": 1,
+            },
+        ],
+    },
+
+    # ── Story 8: I See Colors ──
+    "b8": {
+        "id": "b8",
+        "title": "I See Colors",
+        "cover_emoji": "🌈",
+        "color": "#a855f7",
+        "pages": [
+            {
+                "image_prompt": "a cute cartoon girl pointing at a big red apple on a white table",
+                "fallback_emoji": "👧🔴🍎",
+                "text": "I see red. It is an apple.",
+            },
+            {
+                "image_prompt": "a cute cartoon boy holding a bright yellow banana and smiling",
+                "fallback_emoji": "👦🟡🍌",
+                "text": "I see yellow. It is a banana.",
+            },
+            {
+                "image_prompt": "a cute cartoon green frog sitting on a big green leaf",
+                "fallback_emoji": "🐸🟢",
+                "text": "I see green. It is a frog.",
+            },
+            {
+                "image_prompt": "a cute cartoon blue bird flying in a light blue sky",
+                "fallback_emoji": "🐦🔵",
+                "text": "I see blue. It is a bird.",
+            },
+            {
+                "image_prompt": "a cute cartoon orange cat sitting next to a round orange fruit",
+                "fallback_emoji": "🐱🟠",
+                "text": "I see orange. It is a cat.",
+            },
+            {
+                "image_prompt": "a cute cartoon rainbow with red yellow green blue and orange arcs in the sky",
+                "fallback_emoji": "🌈",
+                "text": "I see all the colors!",
+            },
+        ],
+        "questions": [
+            {
+                "q": "What is red?",
+                "options": ["A banana 🍌", "An apple 🍎", "A frog 🐸"],
+                "answer": 1,
+            },
+            {
+                "q": "What is yellow?",
+                "options": ["A banana 🍌", "A bird 🐦", "A cat 🐱"],
+                "answer": 0,
+            },
+            {
+                "q": "What do you see at the end?",
+                "options": ["A rainbow 🌈", "A ball 🔴", "A tree 🌳"],
+                "answer": 0,
+            },
+        ],
+    },
+
+    # ── Story 9: My Pet Dog ──
+    "b9": {
+        "id": "b9",
+        "title": "My Pet Dog",
+        "cover_emoji": "🐕",
+        "color": "#f97316",
+        "pages": [
+            {
+                "image_prompt": "a cute cartoon brown puppy with a wagging tail sitting on a rug",
+                "fallback_emoji": "🐕",
+                "text": "This is my dog.",
+            },
+            {
+                "image_prompt": "a cute cartoon brown puppy eating from a red dog bowl on the floor",
+                "fallback_emoji": "🐕🍽️",
+                "text": "My dog eats food.",
+            },
+            {
+                "image_prompt": "a cute cartoon brown puppy drinking water from a blue bowl",
+                "fallback_emoji": "🐕💧",
+                "text": "My dog drinks water.",
+            },
+            {
+                "image_prompt": "a cute cartoon brown puppy running in a green backyard with a ball",
+                "fallback_emoji": "🐕🏃",
+                "text": "My dog likes to run.",
+            },
+            {
+                "image_prompt": "a cute cartoon boy hugging a happy brown puppy",
+                "fallback_emoji": "👦🐕❤️",
+                "text": "I hug my dog.",
+            },
+            {
+                "image_prompt": "a cute cartoon brown puppy sleeping on a soft dog bed",
+                "fallback_emoji": "🐕😴",
+                "text": "My dog goes to sleep.",
+            },
+        ],
+        "questions": [
+            {
+                "q": "What does the dog eat?",
+                "options": ["Food 🍽️", "Books 📖", "Shoes 👟"],
+                "answer": 0,
+            },
+            {
+                "q": "What does the dog like to do?",
+                "options": ["Fly ✈️", "Run 🏃", "Swim 🏊"],
+                "answer": 1,
+            },
+            {
+                "q": "What do I do to my dog?",
+                "options": ["Hug 🤗", "Hide 🙈", "Throw 🎯"],
+                "answer": 0,
+            },
+        ],
+    },
+
+    # ── Story 10: Up and Down ──
+    "b10": {
+        "id": "b10",
+        "title": "Up and Down",
+        "cover_emoji": "⬆️",
+        "color": "#06b6d4",
+        "pages": [
+            {
+                "image_prompt": "a cute cartoon red kite flying high up in a blue sky with white clouds",
+                "fallback_emoji": "🪁⬆️",
+                "text": "The kite goes up.",
+            },
+            {
+                "image_prompt": "a cute cartoon boy looking up at a red kite in the sky",
+                "fallback_emoji": "👦🪁",
+                "text": "I look up.",
+            },
+            {
+                "image_prompt": "a cute cartoon red kite coming down toward green grass",
+                "fallback_emoji": "🪁⬇️",
+                "text": "The kite comes down.",
+            },
+            {
+                "image_prompt": "a cute cartoon boy catching a red kite on green grass",
+                "fallback_emoji": "👦🪁",
+                "text": "I catch the kite.",
+            },
+            {
+                "image_prompt": "a cute cartoon boy sitting on a green hill looking down at a small town below",
+                "fallback_emoji": "👦⬇️",
+                "text": "I sit on the hill.",
+            },
+            {
+                "image_prompt": "a cute cartoon boy and girl flying a red kite together on a sunny day",
+                "fallback_emoji": "👦👧🪁☀️",
+                "text": "Up and down we go!",
+            },
+        ],
+        "questions": [
+            {
+                "q": "Where does the kite go first?",
+                "options": ["Up ⬆️", "Down ⬇️", "Left ⬅️"],
+                "answer": 0,
+            },
+            {
+                "q": "What do I catch?",
+                "options": ["A ball 🔴", "A kite 🪁", "A bird 🐦"],
+                "answer": 1,
+            },
+            {
+                "q": "Where do I sit?",
+                "options": ["On a hill 🏔️", "In water 💧", "On a roof 🏠"],
+                "answer": 0,
             },
         ],
     },

@@ -10,6 +10,7 @@ except ImportError:
     pass
 
 import os
+import html as html_lib
 import streamlit as st
 import database as db
 from datetime import datetime, timedelta
@@ -499,6 +500,10 @@ if "ec3_email_sent_for" not in st.session_state:
     st.session_state.ec3_email_sent_for = None
 if "ec3_history_saved_for" not in st.session_state:
     st.session_state.ec3_history_saved_for = None
+if "ec3_review_mode" not in st.session_state:
+    st.session_state.ec3_review_mode = False
+if "ec3_review_index" not in st.session_state:
+    st.session_state.ec3_review_index = 0
 if "leq_questions" not in st.session_state:
     st.session_state.leq_questions = []
 if "leq_current" not in st.session_state:
@@ -515,6 +520,10 @@ if "leq_email_sent_for" not in st.session_state:
     st.session_state.leq_email_sent_for = None
 if "leq_config_snapshot" not in st.session_state:
     st.session_state.leq_config_snapshot = None
+if "leq_review_mode" not in st.session_state:
+    st.session_state.leq_review_mode = False
+if "leq_review_index" not in st.session_state:
+    st.session_state.leq_review_index = 0
 # Cube Addition state
 if "cube_problem" not in st.session_state:
     st.session_state.cube_problem = None
@@ -632,6 +641,8 @@ def select_activity(activity):
         st.session_state.ec3_session_id = None
         st.session_state.ec3_email_sent_for = None
         st.session_state.ec3_history_saved_for = None
+        st.session_state.ec3_review_mode = False
+        st.session_state.ec3_review_index = 0
 
 
 def start_story(story_id):
@@ -718,24 +729,69 @@ def back_to_civics_home():
     st.session_state.civics_last_feedback = None
 
 
-def start_sight_words(level_id):
+def _clear_sw_checkbox_state():
+    for key in list(st.session_state.keys()):
+        if key.startswith("sw_wrong_"):
+            del st.session_state[key]
+
+
+def _render_cvc_word_card(q: dict) -> None:
+    """Render one CVC word card (single-line HTML avoids Streamlit markdown code-block bugs)."""
+    review_badge = (
+        '<span style="background:#fef3c7;color:#92400e;font-size:0.7rem;'
+        'padding:0.1rem 0.45rem;border-radius:999px;margin-left:0.35rem;">review</span>'
+        if q.get("is_review")
+        else ""
+    )
+    word = html_lib.escape(q["word"])
+    sentence = html_lib.escape(q["sentence"])
+    color = html_lib.escape(q["color"])
+    emoji = q["emoji"]
+    card_html = (
+        f'<div style="padding:0.85rem 1rem;margin-bottom:0.65rem;'
+        f'background:linear-gradient(135deg,{color}12,{color}06);border-radius:14px;'
+        f'border-left:4px solid {color};">'
+        f'<div style="display:flex;align-items:center;gap:0.4rem;">'
+        f'<span style="font-size:1.6rem;">{emoji}</span>'
+        f'<span style="font-size:2rem;font-weight:900;color:{color};'
+        f'font-family:Comic Sans MS,Chalkboard SE,cursive;">{word}</span>'
+        f"{review_badge}</div>"
+        f'<div style="font-size:0.9rem;color:#6b7280;margin-top:0.25rem;font-style:italic;">'
+        f"{sentence}</div></div>"
+    )
+    st.markdown(card_html, unsafe_allow_html=True)
+
+
+def _load_sight_words_batch(level_id: str) -> list:
     import sight_words_content as sw
-    questions = sw.generate_round(level_id)
+
+    user = db.get_user(st.session_state.selected_user)
+    review = db.get_cvc_review_words(user["id"], level_id) if user else []
+    return sw.generate_round(level_id, review_words=[r["word"] for r in review])
+
+
+def start_sight_words(level_id):
     st.session_state.current_page = "sight_words_practice"
     st.session_state.sw_level = level_id
-    st.session_state.sw_questions = questions
-    st.session_state.sw_current = 0
+    st.session_state.sw_questions = _load_sight_words_batch(level_id)
+    st.session_state.sw_batch_num = 1
+    st.session_state.sw_words_practiced = 0
     st.session_state.sw_start_time = time.time()
-    st.session_state.sw_wrong_words = {}
-    st.session_state.sw_wrong_feedback = None
+    st.session_state.sw_session_done = False
+    st.session_state.sw_show_batch_result = False
+    st.session_state.sw_score_saved = False
+    st.session_state.sw_last_wrong = []
+    st.session_state.sw_last_correct = []
+    _clear_sw_checkbox_state()
 
 
 def back_to_sight_words_home():
     st.session_state.current_page = "sight_words_home"
     st.session_state.sw_questions = []
-    st.session_state.sw_current = 0
-    st.session_state.sw_wrong_words = {}
-    st.session_state.sw_wrong_feedback = None
+    st.session_state.sw_batch_num = 0
+    st.session_state.sw_session_done = False
+    st.session_state.sw_show_batch_result = False
+    st.session_state.sw_score_saved = False
 
 
 def start_reading_phrases():
@@ -1106,6 +1162,21 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🧊 Addition", key="btn_cube_add", width="stretch", type="primary"):
                 select_activity("CubeAddition")
+                st.rerun()
+
+        st.markdown("")
+        act_row2_c1, act_row2_c2, act_row2_c3 = st.columns(3, gap="large")
+        with act_row2_c1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #8b5cf6;">
+                <div style="font-size: 3rem;">📚</div>
+                <h3 style="margin: 0.5rem 0;">Picture Books</h3>
+                <p style="color: #6b7280;">Level 1 stories with pictures</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("📚 Picture Books", key="btn_reading_books", width="stretch", type="primary"):
+                select_activity("Reading")
                 st.rerun()
     elif name == "Arjun":
         st.markdown("### 📚 Choose Your Activity")
@@ -1491,6 +1562,42 @@ def render_reading_home():
 
     # Book covers grid (newest first) — exclude Arjun's stories from Krish's bookshelf
     stories = [s for s in rc.get_all_stories() if not s["id"].startswith("gen_arjun_")][::-1]
+
+    if _CAN_GENERATE:
+        missing_total = sum(rc.count_missing_images(s) for s in stories)
+        if missing_total and st.button(
+            f"🎨 Draw missing pictures ({missing_total})",
+            key="btn_draw_missing_pictures",
+            type="secondary",
+        ):
+            import generate_images as gen_img
+
+            with st.status("Drawing pictures...", expanded=True) as status:
+                progress_bar = st.progress(0)
+                progress_state = {"done": 0}
+
+                def _update_progress(page_num, total, msg):
+                    progress_bar.progress(
+                        progress_state["done"] / max(missing_total, 1),
+                        text=msg,
+                    )
+
+                for story in stories:
+                    if rc.count_missing_images(story) == 0:
+                        continue
+                    st.write(f"📖 **{story['title']}**")
+                    gen, skip, fail = gen_img.generate_images_for_story(
+                        story, _HF_TOKEN, progress_callback=_update_progress
+                    )
+                    progress_state["done"] += gen
+                    progress_bar.progress(progress_state["done"] / max(missing_total, 1))
+                    if fail:
+                        st.warning(f"{story['title']}: {fail} page(s) could not be drawn.")
+
+                progress_bar.progress(1.0, text="Done!")
+                status.update(label="Pictures ready!", state="complete")
+            st.rerun()
+
     cols = st.columns(3, gap="medium")
 
     for j, story in enumerate(stories):
@@ -2802,8 +2909,15 @@ def render_sight_words_home():
 
     lvl = sw.LEVELS[0]
     word_count = len(sw.WORD_BANK.get(lvl["id"], []))
+    review_count = db.get_cvc_review_count(user["id"], lvl["id"]) if user else 0
     _, col_center, _ = st.columns([1, 2, 1])
     with col_center:
+        review_note = (
+            f'<div style="font-size:0.85rem;color:#b45309;margin-top:0.35rem;font-weight:600;">'
+            f'📌 {review_count} word{"s" if review_count != 1 else ""} to review</div>'
+            if review_count
+            else ""
+        )
         st.markdown(f"""
         <div class="math-level-card" style="background: linear-gradient(135deg, {lvl['color']}, {lvl['color']}cc);">
             <div style="font-size: 3rem;">{lvl['emoji']}</div>
@@ -2815,8 +2929,9 @@ def render_sight_words_home():
                 {lvl['subtitle']}
             </div>
             <div style="font-size: 0.8rem; color: rgba(255,255,255,0.75); margin-top: 0.2rem;">
-                {word_count} words · {lvl['words_per_round']} per round
+                {word_count} words · {lvl['words_per_round']} per batch
             </div>
+            {review_note}
         </div>
         """, unsafe_allow_html=True)
         st.markdown("")
@@ -3079,7 +3194,7 @@ def render_reading_phrases_practice():
 
 
 # ──────────────────────────────────────────────
-# PAGE: Sight Words Practice — Find the Word
+# PAGE: Sight Words Practice — 10 words per batch
 # ──────────────────────────────────────────────
 def render_sight_words_practice():
     import sight_words_content as sw
@@ -3089,10 +3204,10 @@ def render_sight_words_practice():
     level_id = st.session_state.sw_level
     level = sw.get_level(level_id)
     questions = st.session_state.sw_questions
-    current = st.session_state.sw_current
-    total = len(questions)
     color = level["color"] if level else "#f59e0b"
-    is_done = current >= total
+    batch_num = st.session_state.get("sw_batch_num", 1)
+    is_done = st.session_state.get("sw_session_done", False)
+    review_count = db.get_cvc_review_count(user["id"], level_id) if user else 0
 
     col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
     with col_nav1:
@@ -3103,114 +3218,41 @@ def render_sight_words_practice():
         if not is_done:
             st.markdown(f"""
             <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
-                Word {current + 1} of {total}
+                Batch {batch_num} · {len(questions)} words
+                {f' · 📌 {review_count} in review queue' if review_count else ''}
             </div>
             """, unsafe_allow_html=True)
         else:
             st.markdown("""
             <div style="text-align:center; color:#6b7280; font-size:0.9rem; padding-top:0.5rem;">
-                🎉 All Done!
+                🎉 Session complete!
             </div>
             """, unsafe_allow_html=True)
 
     st.markdown(f"""
     <div style="text-align: center; margin-bottom: 0.5rem;">
         <h1 style="color: {color}; margin: 0.3rem 0; font-size: 2.2rem;">
-            {level['emoji']} {level['title']} Sight Words
+            {level['emoji']} {level['title']}
         </h1>
     </div>
     """, unsafe_allow_html=True)
 
-    progress = (current / total) if total > 0 else 0
-    st.markdown(f"""
-    <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.5rem 0;">
-        <div style="width:{progress*100:.0f}%;height:100%;background:linear-gradient(90deg,{color},{color}bb);
-             border-radius:10px;transition:width 0.4s ease;"></div>
-    </div>
-    """, unsafe_allow_html=True)
-
-    if not is_done:
-        q = questions[current]
-        word_color = q["color"]
-
-        st.markdown(f"""
-        <div style="text-align:center; padding:2.5rem 1rem; background:linear-gradient(135deg, {word_color}15, {word_color}08);
-             border-radius:28px; border:3px solid {word_color}40; margin-bottom:1.5rem;">
-            <div style="font-size:3rem; margin-bottom:0.5rem;">{q['emoji']}</div>
-            <div style="font-size:1.1rem; color:#6b7280; margin-bottom:0.5rem; font-weight:600;">
-                Read this word:
-            </div>
-            <div style="font-size:5.5rem; font-weight:900; color:{word_color}; font-family:'Comic Sans MS','Chalkboard SE',
-                 'Segoe Print',cursive; letter-spacing:0.15em; text-shadow:3px 3px 6px {word_color}30;
-                 line-height:1.1; padding:0.5rem 0;">
-                {q['word']}
-            </div>
-            <div style="font-size:1.15rem; color:#6b7280; margin-top:1rem; font-style:italic;">
-                "{q['sentence']}"
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-
-        if not hasattr(st.session_state, "sw_wrong_words"):
-            st.session_state.sw_wrong_words = {}
-        if not hasattr(st.session_state, "sw_wrong_feedback"):
-            st.session_state.sw_wrong_feedback = None
-
-        wrong_words = st.session_state.sw_wrong_words
-        word_key = q["word"]
-        is_marked_wrong = word_key in wrong_words
-
-        if st.session_state.sw_wrong_feedback and st.session_state.sw_wrong_feedback.get("word") == word_key:
-            tip = st.session_state.sw_wrong_feedback["tip"]
-            st.markdown(f"""
-            <div style="padding:1rem 1.2rem;border-radius:14px;background:#fef3c7;border:2px solid #f59e0b;
-                 margin-bottom:1rem;text-align:center;">
-                <span style="font-size:1.5rem;">💡</span>
-                <strong style="color:#92400e;font-size:1.1rem;"> Phonics Tip:</strong>
-                <span style="color:#78350f;font-size:1.05rem;"> {tip}</span>
-            </div>
-            """, unsafe_allow_html=True)
-
-        st.markdown("")
-        col_wrong, col_next = st.columns(2, gap="medium")
-        with col_wrong:
-            if not is_marked_wrong:
-                if st.button("❌ Got it Wrong", key="sw_wrong", width="stretch"):
-                    with st.spinner("Getting phonics tip..."):
-                        tip = _get_phonics_tip(word_key)
-                    wrong_words[word_key] = tip
-                    st.session_state.sw_wrong_words = wrong_words
-                    st.session_state.sw_wrong_feedback = {"word": word_key, "tip": tip}
-                    st.rerun()
-            else:
-                st.markdown(f"""
-                <div style="padding:0.6rem;text-align:center;color:#dc2626;font-weight:600;
-                     border:2px solid #fca5a5;border-radius:10px;background:#fee2e2;">
-                    ❌ Marked for review
-                </div>
-                """, unsafe_allow_html=True)
-        with col_next:
-            if current < total - 1:
-                if st.button("Next Word ➡️", key="sw_next", width="stretch", type="primary"):
-                    st.session_state.sw_current += 1
-                    st.session_state.sw_wrong_feedback = None
-                    st.rerun()
-            else:
-                if st.button("🎉 All Done!", key="sw_done", width="stretch", type="primary"):
-                    st.session_state.sw_current = total
-                    st.session_state.sw_wrong_feedback = None
-                    st.rerun()
-
-    else:
-        time_spent = int(time.time() - st.session_state.sw_start_time) if st.session_state.sw_start_time else 0
+    if is_done:
+        total = st.session_state.get("sw_words_practiced", len(questions))
+        time_spent = int(time.time() - st.session_state.sw_start_time) if st.session_state.get("sw_start_time") else 0
         minutes, seconds = divmod(time_spent, 60)
+        review_count = db.get_cvc_review_count(user["id"], level_id) if user else 0
 
-        if user:
+        if user and not st.session_state.get("sw_score_saved"):
             lvl_title = level["title"] if level else "Sight Words"
+            pct = max(0, min(100, int(100 - (review_count / max(total, 1)) * 100)))
             db.save_activity_score(
                 user["id"], "SightWords", lvl_title,
-                100, 100, f"{total} words practiced", time_spent,
+                pct, 100,
+                f"{total} words in {batch_num} batch(es); {review_count} still in review",
+                time_spent,
             )
+            st.session_state.sw_score_saved = True
 
         _fn_css = (
             "<style>"
@@ -3274,65 +3316,133 @@ def render_sight_words_practice():
                 Great job, {name}!
             </h2>
             <p style="font-size:1.2rem; color:#4b5563;">
-                You practiced <strong>{total} words</strong> today!
+                You practiced <strong>{total} words</strong> in <strong>{batch_num} batch(es)</strong>!
             </p>
             <p style="color:#9ca3af;">⏱️ Time: {minutes}m {seconds}s</p>
         </div>
         """, unsafe_allow_html=True)
 
-        wrong_words = getattr(st.session_state, "sw_wrong_words", {})
-        wrong_count = len(wrong_words)
-
-        if wrong_words:
-            st.markdown("")
-            st.markdown(f"### ❌ Words to Practice Again ({wrong_count})")
-            for q in questions:
-                if q["word"] in wrong_words:
-                    tip = wrong_words[q["word"]]
-                    st.markdown(f"""
-                    <div style="padding:1rem; border-radius:12px; background:#fef2f2;
-                         border-left:5px solid #ef4444; margin-bottom:0.8rem;">
-                        <div>
-                            <span style="font-size:1.5rem;">{q['emoji']}</span>
-                            <strong style="font-size:1.4rem; color:#991b1b; margin-left:0.3rem;">{q['word']}</strong>
-                        </div>
-                        <div style="margin-top:0.4rem;color:#92400e;font-size:0.95rem;">
-                            💡 {tip}
-                        </div>
-                    </div>
-                    """, unsafe_allow_html=True)
-
-        st.markdown("")
-        correct_words = [q for q in questions if q["word"] not in wrong_words]
-        if correct_words:
-            st.markdown(f"### ✅ Words Read Correctly ({len(correct_words)})")
-            review_cols = st.columns(2, gap="medium")
-            for idx, q in enumerate(correct_words):
-                with review_cols[idx % 2]:
-                    st.markdown(f"""
-                    <div style="padding:0.8rem; border-radius:12px; background:#f0fdf4;
-                         border-left:4px solid {q['color']}; margin-bottom:0.6rem;">
-                        <span style="font-size:1.5rem;">{q['emoji']}</span>
-                        <strong style="font-size:1.3rem; color:#065f46; margin-left:0.3rem;">{q['word']}</strong>
-                        <span style="float:right; color:#6b7280; font-size:0.85rem; font-style:italic;">
-                            {q['sentence']}
-                        </span>
-                    </div>
-                    """, unsafe_allow_html=True)
+        if review_count:
+            st.markdown(f"""
+            <div style="padding:1rem;border-radius:12px;background:#fef3c7;border:2px solid #f59e0b;
+                 margin-top:1rem;text-align:center;">
+                📌 <strong>{review_count} word{'s' if review_count != 1 else ''}</strong> still to review —
+                they'll show up next time you practice!
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.success("🎉 All words in this session mastered — nothing left in the review queue!")
 
         st.markdown("")
         col_r1, col_r2 = st.columns(2)
         with col_r1:
-            if st.button("👁️ Sight Words Home", key="sw_home_btn", width="stretch", type="primary"):
+            if st.button("👁️ CVC Words Home", key="sw_home_btn", width="stretch", type="primary"):
                 back_to_sight_words_home()
                 st.rerun()
         with col_r2:
             if st.button("🏠 Dashboard", key="sw_dashboard", width="stretch"):
                 st.session_state.current_page = "user_dashboard"
-                st.session_state.sw_questions = []
-                st.session_state.sw_current = 0
-                st.session_state.sw_answers = []
+                back_to_sight_words_home()
                 st.rerun()
+
+    elif st.session_state.get("sw_show_batch_result"):
+        wrong_items = st.session_state.get("sw_last_wrong", [])
+        correct_items = st.session_state.get("sw_last_correct", [])
+        review_count = db.get_cvc_review_count(user["id"], level_id) if user else 0
+
+        st.markdown(f"""
+        <div style="text-align:center;padding:1.25rem;background:#f0fdf4;border-radius:16px;
+             border:2px solid #10b981;margin-bottom:1rem;">
+            <div style="font-size:2rem;">✅</div>
+            <strong style="font-size:1.2rem;color:#065f46;">Batch {batch_num} saved!</strong>
+            <p style="color:#4b5563;margin:0.4rem 0 0 0;">
+                {len(correct_items)} read correctly · {len(wrong_items)} to keep practicing
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        if wrong_items:
+            st.markdown("### ❌ Words to practice again")
+            for q in wrong_items:
+                tip = html_lib.escape(_get_phonics_tip_local(q["word"]))
+                word = html_lib.escape(q["word"])
+                st.markdown(
+                    f'<div style="padding:0.75rem 1rem;border-radius:10px;background:#fef2f2;'
+                    f'border-left:4px solid #ef4444;margin-bottom:0.5rem;">'
+                    f'<strong style="font-size:1.2rem;color:#991b1b;">{q["emoji"]} {word}</strong>'
+                    f'<div style="color:#92400e;font-size:0.9rem;margin-top:0.25rem;">💡 {tip}</div></div>',
+                    unsafe_allow_html=True,
+                )
+
+        if review_count:
+            st.info(f"📌 **{review_count} word{'s' if review_count != 1 else ''}** in Krish's review queue — they'll appear in future batches.")
+
+        st.markdown("")
+        col_next, col_done = st.columns(2)
+        with col_next:
+            if st.button("➡️ Next 10 words", key="sw_next_batch", type="primary", use_container_width=True):
+                st.session_state.sw_questions = _load_sight_words_batch(level_id)
+                st.session_state.sw_batch_num = batch_num + 1
+                st.session_state.sw_show_batch_result = False
+                st.session_state.sw_last_wrong = []
+                st.session_state.sw_last_correct = []
+                _clear_sw_checkbox_state()
+                st.rerun()
+        with col_done:
+            if st.button("🎉 Finish session", key="sw_finish_session", use_container_width=True):
+                st.session_state.sw_session_done = True
+                st.session_state.sw_show_batch_result = False
+                st.rerun()
+
+    elif questions:
+        st.markdown(
+            "Read all **10 words** with Krish. **Check the box** only for words he got **wrong** — "
+            "those will come back in a later batch until he reads them correctly."
+        )
+        st.markdown("")
+
+        left_col, right_col = st.columns(2, gap="medium")
+        half = (len(questions) + 1) // 2
+        for col, chunk in zip((left_col, right_col), (questions[:half], questions[half:])):
+            with col:
+                for q in chunk:
+                    global_i = questions.index(q)
+                    _render_cvc_word_card(q)
+                    st.checkbox(
+                        "Krish got this wrong",
+                        key=f"sw_wrong_{global_i}",
+                        help="Checked = missed — word stays in review until read correctly",
+                    )
+
+        st.markdown("")
+        if st.button("✅ Done with these 10 words", key="sw_submit_batch", type="primary", use_container_width=True):
+            wrong_items = []
+            correct_items = []
+            for i, q in enumerate(questions):
+                if st.session_state.get(f"sw_wrong_{i}", False):
+                    wrong_items.append(q)
+                else:
+                    correct_items.append(q)
+
+            if user:
+                for q in wrong_items:
+                    tip = _get_phonics_tip_local(q["word"])
+                    db.mark_cvc_word_wrong(user["id"], level_id, q["word"], tip)
+                for q in correct_items:
+                    db.mark_cvc_word_mastered(user["id"], level_id, q["word"])
+
+            st.session_state.sw_words_practiced = st.session_state.get("sw_words_practiced", 0) + len(questions)
+            st.session_state.sw_last_wrong = wrong_items
+            st.session_state.sw_last_correct = correct_items
+            st.session_state.sw_show_batch_result = True
+            _clear_sw_checkbox_state()
+            st.rerun()
+
+    else:
+        st.warning("No words available for this level.")
+        if st.button("← Back to levels", key="sw_empty_back"):
+            back_to_sight_words_home()
+            st.rerun()
 
 
 # ──────────────────────────────────────────────
