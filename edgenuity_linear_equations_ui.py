@@ -499,6 +499,8 @@ def render_practice():
                     report=report,
                     time_spent_seconds=time_spent,
                     session_meta=meta,
+                    questions=questions,
+                    answers=answers,
                 )
                 if mail_result.ok:
                     st.success(f"📧 Report emailed to {mail_result.recipient}")

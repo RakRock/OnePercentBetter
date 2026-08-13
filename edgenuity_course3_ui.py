@@ -627,6 +627,8 @@ def render_practice():
                     unit_subtitle=unit.get("subtitle", ""),
                     report=report,
                     time_spent_seconds=time_spent,
+                    questions=questions,
+                    answers=answers,
                 )
                 if mail_result.ok:
                     st.success(f"📧 Report emailed to {mail_result.recipient}")
