@@ -7,7 +7,7 @@ import random
 import re
 from typing import Callable
 
-from openai import OpenAI
+from openai import APIConnectionError, APITimeoutError, OpenAI, OpenAIError
 
 import arjun_linear_equation_strategies as leqs
 
@@ -274,6 +274,9 @@ def generate_session_questions(
                 random.shuffle(questions)
                 return questions[:count]
             raise ValueError("Too many LLM questions failed validation")
+        except (APIConnectionError, APITimeoutError, OpenAIError) as exc:
+            last_error = str(exc)
+            break
         except (ValueError, json.JSONDecodeError, KeyError, IndexError, TypeError) as exc:
             last_error = str(exc)
             user_msg = (

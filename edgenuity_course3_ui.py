@@ -12,6 +12,7 @@ import arjun_edgenuity_course3_practice as ec3p
 import arjun_edgenuity_course3_render as ec3r
 import edgenuity_practice_email as ec3mail
 import database as db
+import google_sheets_sync as gss
 
 
 def _back_dashboard():
@@ -118,7 +119,7 @@ def _start_practice(unit_id: int):
     st.session_state.ec3_start_time = time.time()
     st.session_state.ec3_session_id = f"{unit_id}-{time.time()}"
     st.session_state.ec3_email_sent_for = None
-    st.session_state.ec3_history_saved_for = None
+    st.session_state.ec3_persist_saved_for = None
     st.session_state.ec3_review_mode = False
     st.session_state.ec3_review_index = 0
     st.session_state.current_page = "edgenuity_course3_practice"
@@ -589,9 +590,23 @@ def render_practice():
             )
 
         session_id = st.session_state.get("ec3_session_id")
-        if user and session_id and st.session_state.get("ec3_history_saved_for") != session_id:
-            st.session_state.ec3_history_saved_for = session_id
-            db.save_ec3_practice_session(user["id"], unit_id, [q["id"] for q in questions])
+        if user and session_id and st.session_state.get("ec3_persist_saved_for") != session_id:
+            st.session_state.ec3_persist_saved_for = session_id
+            failed = ec3mail.build_failed_questions(questions, answers)
+            _, sheet_err = gss.persist_edgenuity_practice(
+                user_name=name,
+                user_id=user["id"],
+                session_id=session_id,
+                session_kind="unit",
+                unit_id=unit_id,
+                unit_label=f"Unit {unit_id}: {unit['title']}",
+                report=report,
+                failed_questions=failed,
+                time_spent_seconds=time_spent,
+                question_ids=[q["id"] for q in questions],
+            )
+            if sheet_err:
+                st.warning(f"Google Sheet sync failed (saved locally): {sheet_err}")
 
         if score_pct == 100:
             res_emoji, message, res_color = "🏆", "Perfect score!", "#10b981"
@@ -632,6 +647,8 @@ def render_practice():
                 )
                 if mail_result.ok:
                     st.success(f"📧 Report emailed to {mail_result.recipient}")
+                elif mail_result.pending:
+                    st.info("📧 Email is sending — check your inbox in a minute (retries automatically).")
                 elif not mail_result.skipped:
                     st.warning(f"Could not send email: {mail_result.error}")
 

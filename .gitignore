@@ -20,6 +20,9 @@ Thumbs.db
 # Streamlit secrets (contains API keys)
 .streamlit/secrets.toml
 
+# Queued practice report emails (local retry)
+.email_queue/
+
 # AI Forge
 ai-forge/.env
 ai-forge/frontend/node_modules/

@@ -71,7 +71,7 @@ def build_session_set(
                 count,
                 fallback=_build_procedural_session,
             )
-        except ValueError:
+        except (ValueError, OSError):
             return _build_procedural_session(config, count)
 
     return _build_procedural_session(config, count)

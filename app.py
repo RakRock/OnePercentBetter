@@ -60,6 +60,53 @@ st.set_page_config(
 db.init_db()
 
 
+@st.cache_resource
+def _sync_google_sheets_on_startup() -> int:
+    """Import Edgenuity practice rows from Google Sheets once per app process."""
+    try:
+        import google_sheets_sync as gss
+
+        if gss.is_configured():
+            return gss.sync_from_sheet_to_db()
+    except Exception:
+        return -1
+    return 0
+
+
+_sync_google_sheets_on_startup()
+
+
+@st.cache_resource
+def _sync_sharepoint_on_startup() -> int:
+    """Import daily progress rows from SharePoint once per app process."""
+    try:
+        import sharepoint_sync as sps
+
+        if sps.is_configured():
+            return sps.sync_from_sharepoint_to_db()
+    except Exception:
+        return -1
+    return 0
+
+
+_sync_sharepoint_on_startup()
+
+
+def _flush_pending_emails() -> None:
+    """Retry queued emails on each app interaction (debounced)."""
+    try:
+        last = st.session_state.get("_email_flush_at", 0.0)
+        now = time.time()
+        if now - float(last) < 8:
+            return
+        st.session_state._email_flush_at = now
+        from practice_email.delivery import flush_pending
+
+        flush_pending(max_items=5)
+    except Exception:
+        pass
+
+
 def _daily_time_calendar_fallback(user_id: int, days: int = 30) -> list:
     """Fill calendar days when ``database.get_daily_time_spent_calendar`` is missing (older deploys)."""
     sparse = db.get_daily_time_spent(user_id, days=days)
@@ -561,6 +608,8 @@ if "vocab_quiz_start_index" not in st.session_state:
     st.session_state.vocab_quiz_start_index = 0
 if "vocab_next_index_after" not in st.session_state:
     st.session_state.vocab_next_index_after = 0
+
+_flush_pending_emails()
 
 
 # ──────────────────────────────────────────────

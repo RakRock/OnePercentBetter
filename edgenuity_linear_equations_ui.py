@@ -11,6 +11,7 @@ import arjun_linear_equation_practice as leqp
 import arjun_linear_equation_strategies as leqs
 import database as db
 import edgenuity_practice_email as ec3mail
+import google_sheets_sync as gss
 
 
 def _xai_api_key() -> str | None:
@@ -179,6 +180,7 @@ def _start_linear_practice(*, show_spinner: bool = False):
     st.session_state.leq_start_time = time.time()
     st.session_state.leq_session_id = f"leq-{time.time()}"
     st.session_state.leq_email_sent_for = None
+    st.session_state.leq_persist_saved_for = None
     st.session_state.leq_review_mode = False
     st.session_state.leq_review_index = 0
     st.session_state.current_page = "edgenuity_linear_equations_practice"
@@ -386,6 +388,7 @@ def render_practice_home():
 
 def render_practice():
     name = st.session_state.selected_user
+    user = db.get_user(name) if name else None
     questions = st.session_state.get("leq_questions", [])
     config = st.session_state.get("leq_config_snapshot") or db.get_linear_eq_week_config()
     current = st.session_state.get("leq_current", 0)
@@ -490,6 +493,36 @@ def render_practice():
             for item in report["needs_revision"]:
                 st.markdown(f"- {item['emoji']} {item['name']} — {item['correct']}/{item['total']} ({item['pct']}%)")
 
+        if user:
+            db.save_activity_score(
+                user["id"],
+                "EdgenuityCourse3",
+                "Linear Equations Practice",
+                report["score_pct"],
+                100,
+                leqp.format_report_details(report),
+                time_spent,
+            )
+
+        session_id = st.session_state.get("leq_session_id")
+        if user and session_id and st.session_state.get("leq_persist_saved_for") != session_id:
+            st.session_state.leq_persist_saved_for = session_id
+            week_label = meta.get("week_label") or "Practice"
+            failed = ec3mail.build_failed_questions(questions, answers)
+            _, sheet_err = gss.persist_edgenuity_practice(
+                user_name=name,
+                user_id=user["id"],
+                session_id=session_id,
+                session_kind="linear_equations",
+                unit_id=None,
+                unit_label=f"Linear Equations — {week_label}",
+                report=report,
+                failed_questions=failed,
+                time_spent_seconds=time_spent,
+            )
+            if sheet_err:
+                st.warning(f"Google Sheet sync failed (saved locally): {sheet_err}")
+
         session_id = st.session_state.get("leq_session_id")
         if session_id and st.session_state.get("leq_email_sent_for") != session_id:
             st.session_state.leq_email_sent_for = session_id
@@ -504,6 +537,8 @@ def render_practice():
                 )
                 if mail_result.ok:
                     st.success(f"📧 Report emailed to {mail_result.recipient}")
+                elif mail_result.pending:
+                    st.info("📧 Email is sending — check your inbox in a minute (retries automatically).")
                 elif not mail_result.skipped:
                     st.warning(f"Email failed: {mail_result.error}")
             else:

@@ -99,6 +99,27 @@ def init_db():
                 FOREIGN KEY (user_id) REFERENCES users(id)
             );
 
+            CREATE TABLE IF NOT EXISTS ec3_practice_results (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                session_id TEXT NOT NULL UNIQUE,
+                user_id INTEGER NOT NULL,
+                session_kind TEXT NOT NULL,
+                unit_id INTEGER,
+                unit_label TEXT NOT NULL,
+                score_pct INTEGER NOT NULL,
+                correct_count INTEGER NOT NULL,
+                total_count INTEGER NOT NULL,
+                time_spent_seconds INTEGER DEFAULT 0,
+                report_json TEXT NOT NULL,
+                failed_json TEXT NOT NULL DEFAULT '[]',
+                completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                log_date DATE NOT NULL,
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
+            CREATE INDEX IF NOT EXISTS idx_ec3_results_user_date
+                ON ec3_practice_results(user_id, log_date DESC);
+
             CREATE TABLE IF NOT EXISTS linear_eq_week_config (
                 id INTEGER PRIMARY KEY CHECK (id = 1),
                 week_label TEXT NOT NULL DEFAULT '',
@@ -122,6 +143,16 @@ def init_db():
             conn.execute("ALTER TABLE activity_scores ADD COLUMN time_spent_seconds INTEGER DEFAULT 0")
         except sqlite3.OperationalError:
             pass
+        for stmt in (
+            "ALTER TABLE activity_scores ADD COLUMN sync_id TEXT",
+            "ALTER TABLE reading_progress ADD COLUMN sync_id TEXT",
+            "CREATE UNIQUE INDEX IF NOT EXISTS idx_activity_scores_sync_id ON activity_scores(sync_id)",
+            "CREATE UNIQUE INDEX IF NOT EXISTS idx_reading_progress_sync_id ON reading_progress(sync_id)",
+        ):
+            try:
+                conn.execute(stmt)
+            except sqlite3.OperationalError:
+                pass
 
         # Seed default users
         default_users = [
@@ -144,6 +175,24 @@ def get_user(name: str) -> dict | None:
         return dict(row) if row else None
 
 
+def get_user_by_id(user_id: int) -> dict | None:
+    """Get a user by id."""
+    with get_connection() as conn:
+        row = conn.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
+        return dict(row) if row else None
+
+
+def _sharepoint_push(method_name: str, **kwargs) -> None:
+    """Best-effort SharePoint sync; never raises."""
+    try:
+        import sharepoint_sync as sps
+
+        if sps.is_configured():
+            getattr(sps, method_name)(**kwargs)
+    except Exception:
+        pass
+
+
 def record_daily_login(user_id: int):
     """Record a daily login for the user (once per day)."""
     today = datetime.now().strftime("%Y-%m-%d")
@@ -151,6 +200,14 @@ def record_daily_login(user_id: int):
         conn.execute(
             "INSERT OR IGNORE INTO daily_logs (user_id, log_date) VALUES (?, ?)",
             (user_id, today),
+        )
+    user = get_user_by_id(user_id)
+    if user:
+        _sharepoint_push(
+            "persist_daily_login",
+            user_name=user["name"],
+            user_id=user_id,
+            log_date=today,
         )
 
 
@@ -209,12 +266,49 @@ def save_activity_score(
 ):
     """Save a score for an activity."""
     today = datetime.now().strftime("%Y-%m-%d")
+    completed_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    try:
+        import sharepoint_sync as sps
+
+        sync_id = sps.new_sync_id(f"activity-{user_id}")
+    except Exception:
+        sync_id = f"activity-{user_id}-{datetime.now().timestamp()}"
+
     with get_connection() as conn:
         conn.execute(
             """INSERT INTO activity_scores 
-               (user_id, activity_type, activity_name, score, max_score, log_date, details, time_spent_seconds)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
-            (user_id, activity_type, activity_name, score, max_score, today, details, time_spent_seconds),
+               (user_id, activity_type, activity_name, score, max_score, log_date, details,
+                time_spent_seconds, sync_id, completed_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                user_id,
+                activity_type,
+                activity_name,
+                score,
+                max_score,
+                today,
+                details,
+                time_spent_seconds,
+                sync_id,
+                completed_at,
+            ),
+        )
+
+    user = get_user_by_id(user_id)
+    if user:
+        _sharepoint_push(
+            "persist_activity_score",
+            sync_id=sync_id,
+            user_name=user["name"],
+            user_id=user_id,
+            activity_type=activity_type,
+            activity_name=activity_name,
+            score=score,
+            max_score=max_score,
+            log_date=today,
+            details=details,
+            time_spent_seconds=time_spent_seconds,
+            completed_at=completed_at,
         )
 
 
@@ -441,12 +535,20 @@ def save_reading_progress(
 ):
     """Save reading comprehension progress."""
     today = datetime.now().strftime("%Y-%m-%d")
+    completed_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    try:
+        import sharepoint_sync as sps
+
+        sync_id = sps.new_sync_id(f"reading-{user_id}")
+    except Exception:
+        sync_id = f"reading-{user_id}-{datetime.now().timestamp()}"
+
     with get_connection() as conn:
         conn.execute(
             """INSERT INTO reading_progress 
                (user_id, story_id, story_title, questions_total, questions_correct, 
-                time_spent_seconds, log_date)
-               VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                time_spent_seconds, log_date, sync_id, completed_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
                 user_id,
                 story_id,
@@ -455,7 +557,25 @@ def save_reading_progress(
                 questions_correct,
                 time_spent_seconds,
                 today,
+                sync_id,
+                completed_at,
             ),
+        )
+
+    user = get_user_by_id(user_id)
+    if user:
+        _sharepoint_push(
+            "persist_reading_progress",
+            sync_id=sync_id,
+            user_name=user["name"],
+            user_id=user_id,
+            story_id=story_id,
+            story_title=story_title,
+            questions_total=questions_total,
+            questions_correct=questions_correct,
+            time_spent_seconds=time_spent_seconds,
+            log_date=today,
+            completed_at=completed_at,
         )
 
 
@@ -629,4 +749,222 @@ def mark_cvc_word_mastered(user_id: int, level_id: str, word: str) -> None:
             "DELETE FROM cvc_review_words WHERE user_id = ? AND level_id = ? AND word = ?",
             (user_id, level_id, word),
         )
+
+
+def import_daily_login(user_id: int, log_date: str) -> bool:
+    """Import one login row from SharePoint. Returns True if inserted."""
+    with get_connection() as conn:
+        cur = conn.execute(
+            "INSERT OR IGNORE INTO daily_logs (user_id, log_date) VALUES (?, ?)",
+            (user_id, log_date),
+        )
+        return cur.rowcount > 0
+
+
+def _sync_id_exists(table: str, sync_id: str) -> bool:
+    with get_connection() as conn:
+        row = conn.execute(
+            f"SELECT 1 FROM {table} WHERE sync_id = ? LIMIT 1",
+            (sync_id,),
+        ).fetchone()
+    return row is not None
+
+
+def import_activity_score_row(
+    *,
+    sync_id: str,
+    user_id: int,
+    activity_type: str,
+    activity_name: str,
+    score: int,
+    max_score: int,
+    log_date: str,
+    details: str,
+    time_spent_seconds: int,
+    completed_at: str,
+) -> bool:
+    """Import one activity score from SharePoint. Returns True if inserted."""
+    if _sync_id_exists("activity_scores", sync_id):
+        return False
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO activity_scores
+               (user_id, activity_type, activity_name, score, max_score, log_date, details,
+                time_spent_seconds, sync_id, completed_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                user_id,
+                activity_type,
+                activity_name,
+                score,
+                max_score,
+                log_date,
+                details,
+                time_spent_seconds,
+                sync_id,
+                completed_at,
+            ),
+        )
+    return True
+
+
+def import_reading_progress_row(
+    *,
+    sync_id: str,
+    user_id: int,
+    story_id: str,
+    story_title: str,
+    questions_total: int,
+    questions_correct: int,
+    time_spent_seconds: int,
+    log_date: str,
+    completed_at: str,
+) -> bool:
+    """Import one reading progress row from SharePoint. Returns True if inserted."""
+    if _sync_id_exists("reading_progress", sync_id):
+        return False
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO reading_progress
+               (user_id, story_id, story_title, questions_total, questions_correct,
+                time_spent_seconds, log_date, sync_id, completed_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                user_id,
+                story_id,
+                story_title,
+                questions_total,
+                questions_correct,
+                time_spent_seconds,
+                log_date,
+                sync_id,
+                completed_at,
+            ),
+        )
+    return True
+
+
+def ec3_practice_result_exists(session_id: str) -> bool:
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT 1 FROM ec3_practice_results WHERE session_id = ? LIMIT 1",
+            (session_id,),
+        ).fetchone()
+    return row is not None
+
+
+def save_ec3_practice_result(
+    user_id: int,
+    *,
+    session_id: str,
+    session_kind: str,
+    unit_id: int | None,
+    unit_label: str,
+    report: dict,
+    failed_questions: list[dict],
+    time_spent_seconds: int = 0,
+    completed_at: str | None = None,
+    log_date: str | None = None,
+) -> None:
+    """Persist one completed Edgenuity practice session (idempotent on session_id)."""
+    if ec3_practice_result_exists(session_id):
+        return
+    when = completed_at or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    day = log_date or datetime.now().strftime("%Y-%m-%d")
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO ec3_practice_results
+               (session_id, user_id, session_kind, unit_id, unit_label,
+                score_pct, correct_count, total_count, time_spent_seconds,
+                report_json, failed_json, completed_at, log_date)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                session_id,
+                user_id,
+                session_kind,
+                unit_id,
+                unit_label,
+                int(report.get("score_pct", 0)),
+                int(report.get("correct_count", 0)),
+                int(report.get("total", 0)),
+                time_spent_seconds,
+                json.dumps(report),
+                json.dumps(failed_questions),
+                when,
+                day,
+            ),
+        )
+
+
+def import_ec3_practice_result_row(
+    *,
+    session_id: str,
+    user_id: int,
+    session_kind: str,
+    unit_id: int | None,
+    unit_label: str,
+    score_pct: int,
+    correct_count: int,
+    total_count: int,
+    time_spent_seconds: int,
+    report_json: str,
+    failed_json: str,
+    completed_at: str,
+    log_date: str,
+) -> bool:
+    """Import one row from Google Sheets. Returns True if inserted."""
+    if ec3_practice_result_exists(session_id):
+        return False
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO ec3_practice_results
+               (session_id, user_id, session_kind, unit_id, unit_label,
+                score_pct, correct_count, total_count, time_spent_seconds,
+                report_json, failed_json, completed_at, log_date)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                session_id,
+                user_id,
+                session_kind,
+                unit_id,
+                unit_label,
+                score_pct,
+                correct_count,
+                total_count,
+                time_spent_seconds,
+                report_json,
+                failed_json,
+                completed_at,
+                log_date,
+            ),
+        )
+    return True
+
+
+def get_ec3_practice_results(user_id: int, days: int = 90) -> list[dict]:
+    """Recent Edgenuity practice sessions for analytics."""
+    since = (datetime.now() - timedelta(days=max(days, 1))).strftime("%Y-%m-%d")
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT session_id, session_kind, unit_id, unit_label,
+                      score_pct, correct_count, total_count, time_spent_seconds,
+                      report_json, failed_json, completed_at, log_date
+               FROM ec3_practice_results
+               WHERE user_id = ? AND log_date >= ?
+               ORDER BY completed_at DESC""",
+            (user_id, since),
+        ).fetchall()
+    out = []
+    for row in rows:
+        item = dict(row)
+        try:
+            item["report"] = json.loads(item.pop("report_json") or "{}")
+        except json.JSONDecodeError:
+            item["report"] = {}
+        try:
+            item["failed"] = json.loads(item.pop("failed_json") or "[]")
+        except json.JSONDecodeError:
+            item["failed"] = []
+        out.append(item)
+    return out
 
