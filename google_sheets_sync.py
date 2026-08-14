@@ -30,6 +30,7 @@ from typing import Any
 import database as db
 
 WORKSHEET_NAME = "EdgenuityPractice"
+WEEK_PLAN_WORKSHEET = "LinearEqWeekPlan"
 HEADERS = [
     "session_id",
     "user_name",
@@ -45,6 +46,8 @@ HEADERS = [
     "completed_at",
     "log_date",
 ]
+WEEK_PLAN_HEADERS = ["plan_id", "week_label", "config_json", "updated_at"]
+WEEK_PLAN_ID = "1"
 
 
 def _secret(key: str, default: str = "") -> str:
@@ -113,10 +116,112 @@ def _worksheet():
         return ws
 
 
+def _week_plan_worksheet():
+    import gspread
+
+    spreadsheet = _worksheet().spreadsheet
+    try:
+        return spreadsheet.worksheet(WEEK_PLAN_WORKSHEET)
+    except gspread.WorksheetNotFound:
+        ws = spreadsheet.add_worksheet(title=WEEK_PLAN_WORKSHEET, rows=10, cols=len(WEEK_PLAN_HEADERS))
+        ws.append_row(WEEK_PLAN_HEADERS, value_input_option="USER_ENTERED")
+        return ws
+
+
 def _ensure_headers(ws) -> None:
     first = ws.row_values(1)
     if first != HEADERS:
         ws.update(range_name="A1", values=[HEADERS])
+
+
+def _ensure_week_plan_headers(ws) -> None:
+    first = ws.row_values(1)
+    if first != WEEK_PLAN_HEADERS:
+        ws.update(range_name="A1", values=[WEEK_PLAN_HEADERS])
+
+
+def _week_plan_payload(week_label: str, strategies: list[dict], *, use_llm: bool) -> dict:
+    return {"week_label": week_label, "strategies": strategies, "use_llm": use_llm}
+
+
+def save_week_plan_to_sheet(
+    week_label: str,
+    strategies: list[dict],
+    *,
+    use_llm: bool = False,
+) -> None:
+    """Upsert the active linear-equations weekly plan (single row, plan_id=1)."""
+    when = datetime.now()
+    ws = _week_plan_worksheet()
+    _ensure_week_plan_headers(ws)
+    payload = _week_plan_payload(week_label, strategies, use_llm=use_llm)
+    row = [
+        WEEK_PLAN_ID,
+        week_label,
+        json.dumps(payload, ensure_ascii=False),
+        when.strftime("%Y-%m-%d %H:%M:%S"),
+    ]
+    values = ws.get_all_values()
+    target_row = None
+    for idx, existing in enumerate(values[1:], start=2):
+        if existing and str(existing[0]).strip() == WEEK_PLAN_ID:
+            target_row = idx
+            break
+    if target_row is None:
+        ws.append_row(row, value_input_option="USER_ENTERED")
+    else:
+        ws.update(range_name=f"A{target_row}:D{target_row}", values=[row])
+
+
+def sync_week_plan_from_sheet() -> bool:
+    """Import weekly plan from Google Sheets into SQLite. Returns True if applied."""
+    if not is_configured():
+        return False
+
+    ws = _week_plan_worksheet()
+    _ensure_week_plan_headers(ws)
+    for rec in ws.get_all_records():
+        if str(rec.get("plan_id", "")).strip() != WEEK_PLAN_ID:
+            continue
+        week_label = str(rec.get("week_label", "")).strip()
+        config_json = rec.get("config_json") or "{}"
+        if isinstance(config_json, dict):
+            data = config_json
+        else:
+            try:
+                data = json.loads(str(config_json))
+            except json.JSONDecodeError:
+                continue
+        if not isinstance(data, dict):
+            continue
+        strategies = data.get("strategies")
+        if not isinstance(strategies, list):
+            strategies = []
+        if not week_label and not strategies:
+            continue
+        db.import_linear_eq_week_config(
+            week_label or str(data.get("week_label", "")).strip(),
+            strategies,
+            use_llm=bool(data.get("use_llm", False)),
+        )
+        return True
+    return False
+
+
+def persist_week_plan(
+    week_label: str,
+    strategies: list[dict],
+    *,
+    use_llm: bool = False,
+) -> tuple[bool, str | None]:
+    """Save weekly plan to Google Sheets. Returns (sheet_ok, error_message)."""
+    if not is_configured():
+        return False, None
+    try:
+        save_week_plan_to_sheet(week_label, strategies, use_llm=use_llm)
+        return True, None
+    except Exception as exc:
+        return False, str(exc)
 
 
 def append_practice_result(
@@ -210,6 +315,8 @@ def sync_from_sheet_to_db() -> int:
             log_date=log_date,
         ):
             imported += 1
+
+    sync_week_plan_from_sheet()
 
     return imported
 

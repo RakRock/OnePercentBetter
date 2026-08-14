@@ -187,6 +187,16 @@ def test_google_sheets() -> bool:
         )
         print(f"OK: appended row session_id={session_id}")
         print(f"    worksheet: {gss.WORKSHEET_NAME}")
+
+        test_label = f"Week test {int(time.time())}"
+        test_strategies = [{"id": 1, "levels": ["A"]}]
+        gss.save_week_plan_to_sheet(test_label, test_strategies, use_llm=False)
+        restored = gss.sync_week_plan_from_sheet()
+        config = __import__("database").get_linear_eq_week_config()
+        if restored and config.get("week_label") == test_label:
+            print(f"OK: weekly plan round-trip via {gss.WEEK_PLAN_WORKSHEET}")
+        else:
+            print("WARN: weekly plan sheet sync did not round-trip (check LinearEqWeekPlan tab)")
         return True
     except Exception as exc:
         print(f"FAIL: {type(exc).__name__}: {exc}")

@@ -706,6 +706,43 @@ def save_linear_eq_week_config(
                  updated_at = CURRENT_TIMESTAMP""",
             (week_label, json.dumps(payload)),
         )
+    _google_sheets_push_week_plan(week_label, strategies, use_llm=use_llm)
+
+
+def import_linear_eq_week_config(
+    week_label: str,
+    strategies: list[dict],
+    *,
+    use_llm: bool = False,
+) -> None:
+    """Import weekly plan from cloud sync without re-pushing to Google Sheets."""
+    payload = {"week_label": week_label, "strategies": strategies, "use_llm": use_llm}
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO linear_eq_week_config (id, week_label, config_json, updated_at)
+               VALUES (1, ?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(id) DO UPDATE SET
+                 week_label = excluded.week_label,
+                 config_json = excluded.config_json,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (week_label, json.dumps(payload)),
+        )
+
+
+def _google_sheets_push_week_plan(
+    week_label: str,
+    strategies: list[dict],
+    *,
+    use_llm: bool = False,
+) -> None:
+    """Best-effort Google Sheets sync for weekly linear-equations plan."""
+    try:
+        import google_sheets_sync as gss
+
+        if gss.is_configured():
+            gss.persist_week_plan(week_label, strategies, use_llm=use_llm)
+    except Exception:
+        pass
 
 
 def get_cvc_review_words(user_id: int, level_id: str) -> list[dict]:

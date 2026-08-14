@@ -301,6 +301,15 @@ def render_setup_panel():
     """Parent/admin: pick strategies and levels for the week."""
     st.markdown("### 📅 Weekly Plan Setup")
     st.caption("Choose which strategies and levels Arjun practices this week. Questions are generated from your selections.")
+    try:
+        import google_sheets_sync as gss
+
+        if gss.is_configured():
+            st.caption(
+                f"Plans sync to Google Sheet tab **{gss.WEEK_PLAN_WORKSHEET}** and reload automatically on app start."
+            )
+    except Exception:
+        pass
 
     current = db.get_linear_eq_week_config()
     week_label = st.text_input(
