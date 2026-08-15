@@ -1316,10 +1316,10 @@ def render_user_dashboard():
         _, act_row3_c, _ = st.columns([1, 2, 1], gap="large")
         with act_row3_c:
             st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #14b8a6;">
+            <div class="score-card" style="border-top: 5px solid #6366f1;">
                 <div style="font-size: 3rem;">📐</div>
                 <h3 style="margin: 0.5rem 0;">Course 3 Math</h3>
-                <p style="color: #6b7280;">Unit 2 lesson notes & review</p>
+                <p style="color: #6b7280;">Units 1–5 lesson notes & practice</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
@@ -5823,6 +5823,12 @@ def render_course3_notes():
     course3_ui.render_notes()
 
 
+def render_course3_practice():
+    import course3_ui
+
+    course3_ui.render_practice()
+
+
 # ──────────────────────────────────────────────
 # PAGE: Arjun — Edgenuity Course 3 Math
 # ──────────────────────────────────────────────
@@ -6884,6 +6890,8 @@ elif page == "course3_unit":
     render_course3_unit()
 elif page == "course3_notes":
     render_course3_notes()
+elif page == "course3_practice":
+    render_course3_practice()
 elif page == "edgenuity_course3_home":
     render_edgenuity_course3_home()
 elif page == "edgenuity_course3_unit":

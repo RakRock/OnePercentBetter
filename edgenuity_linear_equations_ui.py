@@ -322,12 +322,18 @@ def render_setup_panel():
     use_llm = st.toggle(
         "Generate questions with AI (xAI Grok)",
         value=bool(current.get("use_llm", False)),
-        help="When enabled, practice sessions call xAI Grok to create fresh questions matching your strategy/level plan.",
+        help=(
+            "When enabled, **Start Practice** and **Start Daily Practice** on every Edgenuity unit "
+            "create fresh multiple-choice questions via xAI Grok instead of the built-in bank."
+        ),
         key="leq_use_llm",
     )
     if use_llm:
         if _xai_api_key():
-            st.caption("✅ XAI_API_KEY found — AI generation will run at practice start.")
+            st.caption(
+                "✅ XAI_API_KEY found — new questions are generated each time you start a practice session "
+                "(all Course 3 units + Solving Linear Equations)."
+            )
         else:
             st.warning(
                 "XAI_API_KEY not set in `.streamlit/secrets.toml` or environment. "

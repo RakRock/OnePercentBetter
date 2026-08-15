@@ -14,6 +14,22 @@ import edgenuity_practice_email as ec3mail
 import database as db
 import google_sheets_sync as gss
 
+try:
+    import edgenuity_unit1_ui as u1ui
+except ImportError:
+    u1ui = None  # type: ignore[assignment]
+
+
+def _xai_api_key() -> str | None:
+    try:
+        return st.secrets.get("XAI_API_KEY") or os.environ.get("XAI_API_KEY")
+    except Exception:
+        return os.environ.get("XAI_API_KEY")
+
+
+def _week_config() -> dict:
+    return db.get_linear_eq_week_config()
+
 
 def _back_dashboard():
     st.session_state.current_page = "user_dashboard"
@@ -103,15 +119,74 @@ def _render_session_report(report: dict, unit_id: int, unit: dict):
                         st.rerun()
 
 
-def _start_practice(unit_id: int):
+def _start_practice(
+    unit_id: int,
+    *,
+    show_spinner: bool = False,
+    focus_category: str | None = None,
+    focus_label: str | None = None,
+    count: int | None = None,
+):
     user = db.get_user(st.session_state.selected_user) if st.session_state.get("selected_user") else None
     exclude_ids = (
         db.get_recent_ec3_question_ids(user["id"], unit_id, ec3p.RECENT_SESSIONS_TO_AVOID)
         if user
         else set()
     )
-    questions = ec3p.build_daily_set(count=15, unit_id=unit_id, exclude_ids=exclude_ids)
+    config = _week_config()
+    api_key = _xai_api_key()
+    use_llm = bool(config.get("use_llm"))
+    question_count = count or (
+        (u1ui.FOCUS_QUESTION_COUNT if u1ui and focus_category else 15)
+    )
+
+    def _build():
+        if focus_category:
+            return ec3p.build_focus_set(
+                unit_id,
+                focus_category,
+                count=question_count,
+                exclude_ids=exclude_ids,
+                use_llm=use_llm,
+                xai_api_key=api_key,
+            )
+        return ec3p.build_daily_set(
+            count=question_count,
+            unit_id=unit_id,
+            exclude_ids=exclude_ids,
+            use_llm=use_llm,
+            xai_api_key=api_key,
+        )
+
+    if show_spinner and use_llm and api_key:
+        with st.spinner("Generating fresh questions with xAI Grok…"):
+            questions = _build()
+    else:
+        questions = _build()
+
+    if not questions:
+        st.session_state.ec3_warn = (
+            f"Not enough questions for {focus_label or 'this unit'} — try full unit practice."
+            if focus_category
+            else "Could not load practice questions."
+        )
+        return
+
+    if use_llm and not api_key:
+        st.session_state.ec3_warn = (
+            "AI generation is enabled in Week Setup but XAI_API_KEY is missing — "
+            "used the built-in question bank instead."
+        )
+    elif use_llm and questions and questions[0].get("source") != "llm":
+        st.session_state.ec3_warn = (
+            "AI generation failed — used the built-in question bank instead."
+        )
+    else:
+        st.session_state.pop("ec3_warn", None)
+
     st.session_state.ec3_unit_id = unit_id
+    st.session_state.ec3_focus_category = focus_category
+    st.session_state.ec3_focus_label = focus_label
     st.session_state.ec3_questions = questions
     st.session_state.ec3_current = 0
     st.session_state.ec3_answers = []
@@ -324,6 +399,39 @@ def render_unit():
         st.error("Unit not found.")
         return
 
+    if unit_id == 1 and u1ui is not None:
+        col_nav1, _ = st.columns([1, 5])
+        with col_nav1:
+            if st.button("← All units", key="ec3_unit_back_home"):
+                st.session_state.current_page = "edgenuity_course3_home"
+                st.rerun()
+
+        if not ec3.unit_notes_ready(unit):
+            st.info("Lesson notes for this unit are coming soon.")
+            return
+
+        def _go_full():
+            _start_practice(unit_id, show_spinner=True)
+            st.rerun()
+
+        def _go_focus(cat: str, label: str):
+            _start_practice(unit_id, show_spinner=True, focus_category=cat, focus_label=label)
+            st.rerun()
+
+        def _open_notes_page(slug):
+            _open_notes(unit_id, slug)
+            st.rerun()
+
+        u1ui.render_unit1_hub(
+            unit,
+            week_cfg=_week_config(),
+            xai_configured=bool(_xai_api_key()),
+            on_open_notes=_open_notes_page,
+            on_start_full_practice=_go_full,
+            on_start_focus_practice=_go_focus,
+        )
+        return
+
     col_nav1, col_nav2, _ = st.columns([1, 1, 5])
     with col_nav1:
         if st.button("← All units", key="ec3_unit_back_home"):
@@ -356,9 +464,24 @@ def render_unit():
             st.rerun()
 
     st.markdown("### 📝 Daily Practice")
-    st.caption("15 questions — at least 9 include graphs/diagrams like the Edgenuity exam.")
+    week_cfg = _week_config()
+    if week_cfg.get("use_llm"):
+        if _xai_api_key():
+            st.caption(
+                "15 **fresh AI-generated** questions (xAI Grok) — new set each time you start. "
+                "Turn off AI in **Week Setup** to use the built-in bank with graphs."
+            )
+        else:
+            st.caption(
+                "AI is enabled in Week Setup but XAI_API_KEY is missing — will use the built-in question bank."
+            )
+    else:
+        st.caption(
+            "15 questions — at least 9 include graphs/diagrams like the Edgenuity exam. "
+            "Enable **Generate with AI** in Week Setup for fresh questions each session."
+        )
     if st.button("🎯 Start Daily Practice", key=f"ec3_practice_{unit_id}", use_container_width=True, type="primary"):
-        _start_practice(unit_id)
+        _start_practice(unit_id, show_spinner=True)
         st.rerun()
 
     st.markdown("---")
@@ -388,6 +511,14 @@ def render_notes():
             st.session_state.ec3_activity_slug = None
             st.rerun()
 
+    if unit_id == 1 and u1ui is not None and slug:
+
+        def _jump_activity(target_slug: str):
+            st.session_state.ec3_activity_slug = target_slug
+            st.rerun()
+
+        u1ui.render_activity_nav(unit_id, slug, _jump_activity)
+
     if slug:
         activity = next((a for a in unit["activities"] if a["slug"] == slug), None)
         if not activity:
@@ -401,6 +532,14 @@ def render_notes():
             for path, cap in ec3.activity_diagrams(unit, activity):
                 st.image(path, caption=cap, use_container_width=True)
             st.markdown(md)
+
+        if unit_id == 1 and u1ui is not None:
+
+            def _quiz_from_notes(cat: str, label: str):
+                _start_practice(unit_id, show_spinner=True, focus_category=cat, focus_label=label)
+                st.rerun()
+
+            u1ui.render_notes_footer(unit_id, slug, _quiz_from_notes)
     else:
         path = unit.get("combined_notes")
         if path and path.is_file():
@@ -441,6 +580,8 @@ def render_practice():
             st.session_state.ec3_last_feedback = None
             st.session_state.ec3_review_mode = False
             st.session_state.ec3_review_index = 0
+            st.session_state.ec3_focus_category = None
+            st.session_state.ec3_focus_label = None
             st.rerun()
     with col_nav_mid:
         if not is_done and total:
@@ -459,6 +600,18 @@ def render_practice():
     """,
         unsafe_allow_html=True,
     )
+
+    focus_label = st.session_state.get("ec3_focus_label")
+    if focus_label:
+        st.caption(f"🎯 **Topic focus:** {focus_label} · {total} questions")
+    elif unit_id == 1:
+        st.caption(f"**Unit 1** mixed review · {total} questions")
+
+    warn = st.session_state.pop("ec3_warn", None)
+    if warn:
+        st.warning(warn)
+    elif questions and questions[0].get("source") == "llm":
+        st.caption("🤖 Fresh questions generated by xAI Grok for this session.")
 
     if not questions:
         st.warning("No questions loaded.")
@@ -486,6 +639,14 @@ def render_practice():
         cat_color = cat_info.get("color", "#6366f1")
         cat_emoji = cat_info.get("emoji", "📐")
         cat_name = cat_info.get("name", "Math")
+
+        lesson_col, review_col = st.columns([3, 1])
+        with review_col:
+            act_slug = ec3p.get_category_activity_slug(unit_id, q.get("category", ""))
+            if act_slug and st.button("📘 Lesson", key=f"ec3_lesson_{current}", use_container_width=True):
+                st.session_state.current_page = "edgenuity_course3_notes"
+                st.session_state.ec3_activity_slug = act_slug
+                st.rerun()
 
         img_path = ec3p.practice_image_path(q.get("image"), unit_id=unit_id)
         has_img = img_path and os.path.exists(img_path)
@@ -676,7 +837,7 @@ def render_practice():
                 st.rerun()
         with col_r2:
             if st.button("🎯 Practice Again", key="ec3_again", use_container_width=True):
-                _start_practice(unit_id)
+                _start_practice(unit_id, show_spinner=True)
                 st.rerun()
         with col_r3:
             if st.button("📘 Back to Unit", key="ec3_results_unit", use_container_width=True):

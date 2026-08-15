@@ -366,3 +366,52 @@ def persist_edgenuity_practice(
         return True, None
     except Exception as exc:
         return False, str(exc)
+
+
+COURSE3_SESSION_UNIT_OFFSET = 100
+
+
+def persist_course3_practice(
+    *,
+    user_name: str,
+    user_id: int,
+    session_id: str,
+    unit_id: int | None,
+    unit_label: str,
+    report: dict,
+    failed_questions: list[dict],
+    time_spent_seconds: int,
+    question_ids: list[str] | None = None,
+) -> tuple[bool, str | None]:
+    """Save Course 3 Math practice locally and append to Google Sheets."""
+    db.save_ec3_practice_result(
+        user_id,
+        session_id=session_id,
+        session_kind="course3",
+        unit_id=unit_id,
+        unit_label=unit_label,
+        report=report,
+        failed_questions=failed_questions,
+        time_spent_seconds=time_spent_seconds,
+    )
+
+    if question_ids is not None and unit_id is not None:
+        db.save_ec3_practice_session(user_id, unit_id + COURSE3_SESSION_UNIT_OFFSET, question_ids)
+
+    if not is_configured():
+        return False, None
+
+    try:
+        append_practice_result(
+            session_id=session_id,
+            user_name=user_name,
+            session_kind="course3",
+            unit_id=unit_id,
+            unit_label=unit_label,
+            report=report,
+            failed_questions=failed_questions,
+            time_spent_seconds=time_spent_seconds,
+        )
+        return True, None
+    except Exception as exc:
+        return False, str(exc)

@@ -1084,6 +1084,11 @@ def get_categories(unit_id: int = 1) -> dict:
     return CATEGORIES_BY_UNIT.get(unit_id, CATEGORIES)
 
 
+def get_category_activity_slug(unit_id: int, category: str) -> str | None:
+    mapping = CATEGORY_ACTIVITY_BY_UNIT.get(unit_id, CATEGORY_ACTIVITY)
+    return mapping.get(category)
+
+
 def _unit_practice(unit_id: int) -> dict:
     return {
         "bank": QUESTION_BANK_BY_UNIT.get(unit_id, QUESTION_BANK),
@@ -1187,6 +1192,44 @@ def build_daily_set(
     count: int = 15,
     unit_id: int = 1,
     exclude_ids: set[str] | None = None,
+    *,
+    use_llm: bool = False,
+    xai_api_key: str | None = None,
+) -> list[dict]:
+    if use_llm and xai_api_key:
+        cfg = _unit_practice(unit_id)
+        unit = None
+        try:
+            import arjun_edgenuity_course3_content as ec3
+            from arjun_edgenuity_course3_llm import generate_session_questions
+
+            unit = ec3.get_unit(unit_id)
+            questions = generate_session_questions(
+                xai_api_key,
+                unit_id,
+                count,
+                categories=cfg["categories"],
+                revision_tips=cfg["revision_tips"],
+                unit_title=unit["title"] if unit else f"Unit {unit_id}",
+                unit_subtitle=unit.get("subtitle", "") if unit else "",
+                fallback=lambda: _build_bank_daily_set(
+                    count=count,
+                    unit_id=unit_id,
+                    exclude_ids=exclude_ids,
+                ),
+            )
+            if questions:
+                return questions
+        except Exception:
+            pass
+
+    return _build_bank_daily_set(count=count, unit_id=unit_id, exclude_ids=exclude_ids)
+
+
+def _build_bank_daily_set(
+    count: int = 15,
+    unit_id: int = 1,
+    exclude_ids: set[str] | None = None,
 ) -> list[dict]:
     cfg = _unit_practice(unit_id)
     bank = cfg["bank"]
@@ -1232,6 +1275,74 @@ def build_daily_set(
         selected.append(gq)
         used_ids.add(gq["id"])
 
+    random.shuffle(selected)
+    return selected[:count]
+
+
+def build_focus_set(
+    unit_id: int,
+    category: str,
+    count: int = 8,
+    exclude_ids: set[str] | None = None,
+    *,
+    use_llm: bool = False,
+    xai_api_key: str | None = None,
+) -> list[dict]:
+    """Build a short quiz focused on one practice category."""
+    cfg = _unit_practice(unit_id)
+    categories = cfg["categories"]
+    if category not in categories:
+        return _build_bank_daily_set(count=count, unit_id=unit_id, exclude_ids=exclude_ids)
+
+    if use_llm and xai_api_key:
+        try:
+            import arjun_edgenuity_course3_content as ec3
+            from arjun_edgenuity_course3_llm import generate_session_questions
+
+            unit = ec3.get_unit(unit_id)
+            questions = generate_session_questions(
+                xai_api_key,
+                unit_id,
+                count,
+                categories=categories,
+                revision_tips=cfg["revision_tips"],
+                unit_title=unit["title"] if unit else f"Unit {unit_id}",
+                unit_subtitle=unit.get("subtitle", "") if unit else "",
+                focus_category=category,
+                fallback=lambda: _build_focus_bank_set(
+                    unit_id=unit_id,
+                    category=category,
+                    count=count,
+                    exclude_ids=exclude_ids,
+                ),
+            )
+            if questions:
+                return questions
+        except Exception:
+            pass
+
+    return _build_focus_bank_set(
+        unit_id=unit_id,
+        category=category,
+        count=count,
+        exclude_ids=exclude_ids,
+    )
+
+
+def _build_focus_bank_set(
+    unit_id: int,
+    category: str,
+    count: int = 8,
+    exclude_ids: set[str] | None = None,
+) -> list[dict]:
+    cfg = _unit_practice(unit_id)
+    bank = [q for q in cfg["bank"] if q.get("category") == category]
+    avoid_ids = set(exclude_ids or ())
+    used_ids: set[str] = set()
+    used_images: set[str] = set()
+    selected = _pick_unique(bank, count, used_ids, used_images, avoid_ids)
+    if len(selected) < count:
+        _top_up(selected, count, used_ids, used_images, avoid_ids, bank)
     random.shuffle(selected)
     return selected[:count]
 

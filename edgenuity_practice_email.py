@@ -62,6 +62,33 @@ def send_linear_equation_report_email(
     )
 
 
+def send_course3_report_email(
+    *,
+    student_name: str,
+    unit_title: str,
+    unit_subtitle: str,
+    report: dict,
+    time_spent_seconds: int,
+    when: datetime | None = None,
+    session_meta: dict | None = None,
+    questions: list[dict] | None = None,
+    answers: list[dict] | None = None,
+) -> EmailSendResult:
+    return send_report(
+        student_name=student_name,
+        unit_title=unit_title,
+        unit_subtitle=unit_subtitle,
+        report=report,
+        time_spent_seconds=time_spent_seconds,
+        when=when,
+        session_meta=session_meta,
+        questions=questions,
+        answers=answers,
+        program_name="Course 3 Math",
+        report_heading="Course 3 Math Practice Report",
+    )
+
+
 __all__ = [
     "EmailSendResult",
     "build_failed_questions",
@@ -69,6 +96,7 @@ __all__ = [
     "flush_pending",
     "format_practice_report_email",
     "load_email_config",
+    "send_course3_report_email",
     "send_linear_equation_report_email",
     "send_practice_report_email",
 ]

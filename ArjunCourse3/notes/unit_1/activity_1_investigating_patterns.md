@@ -95,11 +95,13 @@ Math often starts with **noticing patterns** — in shapes, dots, or numbers. A 
 
 ---
 
-**6. Lesson 1-2 Item 9 — Dots 3, 7, 11, … ninth figure**
+**6. Lesson 1-2 Item 9 — Dot pattern (Figure 9)**
 
-**Solution:** Pattern +4 dots → terms 3, 7, 11, 15, 19, 23, 27, 31, **35**.
+**Problem:** You build a dot pattern. Figure 1 has **3 dots**, Figure 2 has **7 dots**, and Figure 3 has **11 dots**. Each new figure has **4 more dots** than the one before. How many dots are in **Figure 9**?
 
-**Answer:** **35 dots** in the 9th figure
+**Solution:** Start at 3 dots and add 4 eight times (eight steps from Figure 1 to Figure 9): 3, 7, 11, 15, 19, 23, 27, 31, **35**.
+
+**Answer:** **35 dots** in Figure 9
 
 ### Common Mistakes
 - Guessing one term without checking **several** differences.

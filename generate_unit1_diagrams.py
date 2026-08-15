@@ -82,9 +82,9 @@ def activity_2_add_fractions():
     ax.set_xlim(0, 7)
     ax.set_ylim(0, 4)
     ax.text(0.5, 3.2, "3/5 + 4/6", fontsize=12, fontweight="bold")
-    ax.text(0.5, 2.5, "LCD = 6  ->  9/6 + 4/6 = 13/6", fontsize=11, color=TEAL)
-    ax.text(0.5, 1.8, "13/6 = 2 1/6", fontsize=11, color=GREEN, fontweight="bold")
-    for i, (w, c, lab) in enumerate([(0.5, 0.5, "3/5"), (1.2, 0.33, "4/6"), (2.1, 0.83, "13/6")]):
+    ax.text(0.5, 2.5, "LCD = 30  ->  18/30 + 20/30 = 38/30", fontsize=11, color=TEAL)
+    ax.text(0.5, 1.8, "38/30 = 19/15 = 1 4/15", fontsize=11, color=GREEN, fontweight="bold")
+    for i, (w, c, lab) in enumerate([(0.6, 0.6, "3/5"), (0.67, 0.67, "4/6"), (1.27, 1.27, "19/15")]):
         ax.barh(0.6, w, left=2.5 + i * 1.1, height=0.5, color=[BLUE, ORANGE, GREEN][i], alpha=0.6)
         ax.text(2.5 + i * 1.1 + w / 2, 0.35, lab, ha="center", fontsize=9)
     fig.suptitle("Add fractions: common denominator", fontsize=13, fontweight="bold")

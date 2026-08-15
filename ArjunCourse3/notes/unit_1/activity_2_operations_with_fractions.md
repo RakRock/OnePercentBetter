@@ -34,18 +34,20 @@ Fractions describe **parts of a whole**. You add and subtract with a **common de
 **Problem:** `3/5 + 4/6`
 
 **Solution:**
-1. LCD = 6: `3/5 = 18/30`, `4/6 = 20/30` — or `9/6 + 4/6`  
-2. `9/6 + 4/6 = 13/6 = 2 1/6`  
+1. LCD of 5 and 6 is **30** (must work for **both** denominators — 6 alone is not enough for fifths).
+2. `3/5 = 18/30` and `4/6 = 20/30`
+3. `18/30 + 20/30 = 38/30 = 19/15 = 1 4/15`
 
-**Answer:** **`13/6` or `2 1/6`**
+**Answer:** **`19/15` or `1 4/15`**
 
 ### Example 2 — Multiply
 
-**Problem:** `(2/5)(7/12)`
+**Problem:** Multiply **2/5 × 7/12** (multiply the numerators and multiply the denominators).
 
 **Solution:**
-1. `2×7 = 14`, `5×12 = 60` → `14/60`  
-2. Simplify: `7/30`  
+1. Multiply tops: `2 × 7 = 14`  
+2. Multiply bottoms: `5 × 12 = 60` → `14/60`  
+3. Simplify: **`7/30`**  
 
 **Answer:** **`7/30`**
 
@@ -55,9 +57,9 @@ Fractions describe **parts of a whole**. You add and subtract with a **common de
 
 **1. Activity 2 Practice #1 — `3/5 + 4/6`**
 
-**Solution:** LCD 30 or 6 → **`13/6 = 2 1/6`**.
+**Solution:** LCD **30**: `18/30 + 20/30 = 38/30 = 19/15 = 1 4/15`.
 
-**Answer:** **`2 1/6`**
+**Answer:** **`1 4/15`** (or **`19/15`**)
 
 ---
 

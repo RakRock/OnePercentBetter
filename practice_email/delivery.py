@@ -110,6 +110,8 @@ def send_report(
     session_meta: dict | None = None,
     questions: list[dict] | None = None,
     answers: list[dict] | None = None,
+    program_name: str = "Edgenuity Course 3",
+    report_heading: str = "Edgenuity Practice Report",
 ) -> EmailSendResult:
     """Send a practice report email (Gmail API in-process, SMTP via worker fallback)."""
     settings = load_settings()
@@ -127,6 +129,8 @@ def send_report(
         when=when,
         session_meta=session_meta,
         failed_questions=build_failed_questions(questions, answers) if questions and answers else None,
+        program_name=program_name,
+        report_heading=report_heading,
     )
 
     try:

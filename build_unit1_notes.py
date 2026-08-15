@@ -104,11 +104,13 @@ Math often starts with **noticing patterns** — in shapes, dots, or numbers. A 
 
 ---
 
-**6. Lesson 1-2 Item 9 — Dots 3, 7, 11, … ninth figure**
+**6. Lesson 1-2 Item 9 — Dot pattern (Figure 9)**
 
-**Solution:** Pattern +4 dots → terms 3, 7, 11, 15, 19, 23, 27, 31, **35**.
+**Problem:** You build a dot pattern. Figure 1 has **3 dots**, Figure 2 has **7 dots**, and Figure 3 has **11 dots**. Each new figure has **4 more dots** than the one before. How many dots are in **Figure 9**?
 
-**Answer:** **35 dots** in the 9th figure
+**Solution:** Start at 3 dots and add 4 eight times (eight steps from Figure 1 to Figure 9): 3, 7, 11, 15, 19, 23, 27, 31, **35**.
+
+**Answer:** **35 dots** in Figure 9
 
 ### Common Mistakes
 - Guessing one term without checking **several** differences.
@@ -157,18 +159,20 @@ Fractions describe **parts of a whole**. You add and subtract with a **common de
 **Problem:** `3/5 + 4/6`
 
 **Solution:**
-1. LCD = 6: `3/5 = 18/30`, `4/6 = 20/30` — or `9/6 + 4/6`  
-2. `9/6 + 4/6 = 13/6 = 2 1/6`  
+1. LCD of 5 and 6 is **30** (must work for **both** denominators — 6 alone is not enough for fifths).
+2. `3/5 = 18/30` and `4/6 = 20/30`
+3. `18/30 + 20/30 = 38/30 = 19/15 = 1 4/15`
 
-**Answer:** **`13/6` or `2 1/6`**
+**Answer:** **`19/15` or `1 4/15`**
 
 ### Example 2 — Multiply
 
-**Problem:** `(2/5)(7/12)`
+**Problem:** Multiply **2/5 × 7/12** (multiply the numerators and multiply the denominators).
 
 **Solution:**
-1. `2×7 = 14`, `5×12 = 60` → `14/60`  
-2. Simplify: `7/30`  
+1. Multiply tops: `2 × 7 = 14`  
+2. Multiply bottoms: `5 × 12 = 60` → `14/60`  
+3. Simplify: **`7/30`**  
 
 **Answer:** **`7/30`**
 
@@ -178,9 +182,9 @@ Fractions describe **parts of a whole**. You add and subtract with a **common de
 
 **1. Activity 2 Practice #1 — `3/5 + 4/6`**
 
-**Solution:** LCD 30 or 6 → **`13/6 = 2 1/6`**.
+**Solution:** LCD **30**: `18/30 + 20/30 = 38/30 = 19/15 = 1 4/15`.
 
-**Answer:** **`2 1/6`**
+**Answer:** **`1 4/15`** (or **`19/15`**)
 
 ---
 
