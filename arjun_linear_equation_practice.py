@@ -10,6 +10,7 @@ from arjun_linear_equation_strategies import (
     format_week_plan_summary,
     generate_question,
 )
+from arjun_mental_math_drills import build_mental_warmups, get_mental_math_count
 
 STRENGTH_THRESHOLD_PCT = 80
 DEFAULT_QUESTION_COUNT = 15
@@ -61,20 +62,28 @@ def build_session_set(
     xai_api_key: str | None = None,
 ) -> list[dict]:
     """Generate questions across enabled strategy/level slots."""
+    linear_count = count
     if config.get("use_llm") and xai_api_key:
         from arjun_linear_equation_llm import generate_session_questions
 
         try:
-            return generate_session_questions(
+            linear_questions = generate_session_questions(
                 xai_api_key,
                 config,
-                count,
+                linear_count,
                 fallback=_build_procedural_session,
             )
         except (ValueError, OSError):
-            return _build_procedural_session(config, count)
+            linear_questions = _build_procedural_session(config, linear_count)
+    else:
+        linear_questions = _build_procedural_session(config, linear_count)
 
-    return _build_procedural_session(config, count)
+    warmups = build_mental_warmups(config)
+    if warmups and linear_questions:
+        return warmups + linear_questions
+    if warmups:
+        return warmups
+    return linear_questions
 
 
 def build_session_report(questions: list[dict], answers: list[dict]) -> dict:
@@ -91,7 +100,16 @@ def build_session_report(questions: list[dict], answers: list[dict]) -> dict:
     for key, stats in by_key.items():
         pct = int(100 * stats["correct"] / stats["total"]) if stats["total"] else 0
         sid = int(key.split("_")[0][1:]) if key.startswith("s") else 0
-        emoji = "🔍" if sid == 1 else "⚖️" if sid == 2 else "✂️" if sid == 3 else "📦" if sid == 4 else "➗" if sid == 5 else "📐" if sid == 6 else "🔗"
+        emoji = (
+            "⚡" if key.startswith("mm_")
+            else "🔍" if sid == 1
+            else "⚖️" if sid == 2
+            else "✂️" if sid == 3
+            else "📦" if sid == 4
+            else "➗" if sid == 5
+            else "📐" if sid == 6
+            else "🔗"
+        )
         entry = {
             "category": key,
             "name": stats["label"],

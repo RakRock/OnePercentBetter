@@ -9,6 +9,7 @@ import streamlit as st
 
 import arjun_linear_equation_practice as leqp
 import arjun_linear_equation_strategies as leqs
+import arjun_mental_math_drills as mmd
 import database as db
 import edgenuity_practice_email as ec3mail
 import google_sheets_sync as gss
@@ -160,7 +161,9 @@ def _start_linear_practice(*, show_spinner: bool = False):
         questions = _build()
 
     if not questions:
-        st.session_state.leq_error = "Configure at least one strategy and level for this week."
+        st.session_state.leq_error = (
+            "Configure at least one equation strategy/level or mental math drill for this week."
+        )
         return
 
     if config.get("use_llm") and not api_key:
@@ -344,6 +347,66 @@ def render_setup_panel():
     for item in current.get("strategies", []):
         current_levels[int(item["id"])] = list(item.get("levels", []))
 
+    current_mm_levels: dict[str, list[str]] = {}
+    for item in current.get("mental_math", []):
+        current_mm_levels[str(item["id"])] = list(item.get("levels", []))
+
+    st.markdown("---")
+    st.markdown("#### ⚡ Mental Math Muscle Memory")
+    st.caption(
+        "Turn on drills and pick levels — these drive quick warm-up questions at the start of each "
+        "practice session (linear equations and Course 3 units when AI mode is on)."
+    )
+
+    mm_count_default = int(current.get("mental_math_count", mmd.MENTAL_MATH_PER_SESSION))
+    mental_math_count = st.slider(
+        "Mental math questions per session",
+        min_value=0,
+        max_value=mmd.MENTAL_MATH_COUNT_MAX,
+        value=mm_count_default,
+        help="How many warm-up questions to prepend when at least one drill is enabled.",
+        key="leq_mm_count",
+    )
+
+    new_mental: list[dict] = []
+    for group_idx, (group_name, drill_ids) in enumerate(mmd.DRILL_GROUPS.items()):
+        with st.expander(f"**{group_name}**", expanded=(group_idx == 0)):
+            for did in drill_ids:
+                info = mmd.DRILLS[did]
+                level_options = {f"Level {k} — {v}": k for k, v in info["levels"].items()}
+                saved_levels = current_mm_levels.get(did, [])
+                enabled_default = bool(saved_levels)
+                col_on, col_lv = st.columns([1, 4])
+                with col_on:
+                    enabled = st.checkbox(
+                        "On",
+                        value=enabled_default,
+                        key=f"leq_mm_on_{did}",
+                        label_visibility="collapsed",
+                    )
+                with col_lv:
+                    default = [
+                        f"Level {k} — {v}"
+                        for k, v in info["levels"].items()
+                        if k in saved_levels
+                    ]
+                    picked = st.multiselect(
+                        f"{info['emoji']} {info['name']}",
+                        options=list(level_options.keys()),
+                        default=default if enabled_default else [],
+                        disabled=not enabled,
+                        key=f"leq_mm_{did}",
+                    )
+                if enabled:
+                    levels = [level_options[p] for p in picked]
+                    if levels:
+                        new_mental.append({"id": did, "levels": levels})
+                    elif saved_levels:
+                        st.caption("Pick at least one level, or turn this drill off.")
+
+    st.markdown("---")
+    st.markdown("#### ⚖️ Linear Equation Strategies")
+
     new_strategies: list[dict] = []
     for sid in sorted(leqs.STRATEGIES):
         info = leqs.STRATEGIES[sid]
@@ -360,11 +423,17 @@ def render_setup_panel():
             new_strategies.append({"id": sid, "levels": levels})
 
     if st.button("💾 Save weekly plan", type="primary", key="leq_save_plan"):
-        db.save_linear_eq_week_config(week_label.strip(), new_strategies, use_llm=use_llm)
+        db.save_linear_eq_week_config(
+            week_label.strip(),
+            new_strategies,
+            mental_math=new_mental,
+            mental_math_count=mental_math_count,
+            use_llm=use_llm,
+        )
         st.success("Weekly plan saved.")
         st.rerun()
 
-    if current.get("strategies"):
+    if current.get("strategies") or current.get("mental_math"):
         st.markdown("**Current active plan**")
         st.code(leqs.format_week_plan_summary(current), language=None)
 
@@ -379,7 +448,7 @@ def render_practice_home():
     if warn:
         st.warning(warn)
 
-    if not config.get("strategies"):
+    if not config.get("strategies") and not config.get("mental_math"):
         st.info("No weekly plan yet. Use **Week Setup** to choose strategies and levels.")
         return
 
@@ -393,9 +462,15 @@ def render_practice_home():
 
     st.markdown("### 📝 Practice Session")
     source = "xAI Grok" if config.get("use_llm") else "built-in templates"
-    st.caption(
-        f"{leqp.DEFAULT_QUESTION_COUNT} questions from your weekly plan · Source: **{source}**"
-    )
+    mm_count = mmd.get_mental_math_count(config)
+    eq_count = leqp.DEFAULT_QUESTION_COUNT
+    if mm_count and config.get("strategies"):
+        q_desc = f"{mm_count} mental math warm-ups + {eq_count} equation questions"
+    elif mm_count:
+        q_desc = f"{mm_count} mental math questions"
+    else:
+        q_desc = f"{eq_count} questions"
+    st.caption(f"{q_desc} from your weekly plan · Source: **{source}**")
     if st.button("🎯 Start Practice", type="primary", key="leq_start", use_container_width=True):
         _start_linear_practice(show_spinner=True)
         st.rerun()

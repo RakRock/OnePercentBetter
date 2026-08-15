@@ -75,6 +75,9 @@ RULES:
 - Numbers should be reasonable integers or simple fractions/decimals.
 - Wrong options must be plausible common mistakes.
 - Do NOT repeat the same scenario or identical math across questions.
+- Answer choices must be self-contained full phrases — never say "Both A and B", "Option C", or use letter labels.
+- Explain proportional vs linear clearly: proportional means through (0, 0); a starting fee means NOT proportional.
+- Use plain language kids understand (e.g., "the $5 entry fee" instead of "flat fee").
 
 Respond with ONLY a valid JSON array — one object per requested question, in order:
 [

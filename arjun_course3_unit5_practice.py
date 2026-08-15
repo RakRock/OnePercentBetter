@@ -30,7 +30,12 @@ UNIT5_QUESTION_BANK: list[dict] = [
             "Students who watch more TV hours tend to have lower test scores. "
             "What type of association is this?"
         ),
-        "options": ["Positive", "Negative", "None", "Cannot tell"], "answer": 1,
+        "options": [
+            "Positive association",
+            "Negative association",
+            "No association",
+            "Cannot tell from the description",
+        ], "answer": 1,
         "explanation": "As TV hours go up, scores go down → negative association.",
     },
     {
@@ -39,7 +44,12 @@ UNIT5_QUESTION_BANK: list[dict] = [
             "Students who complete a higher percent of homework tend to score higher on tests. "
             "What type of association is this?"
         ),
-        "options": ["Positive", "Negative", "No association", "Nonlinear only"], "answer": 0,
+        "options": [
+            "Positive association",
+            "Negative association",
+            "No association",
+            "Nonlinear only (not linear)",
+        ], "answer": 0,
         "explanation": "Both variables increase together → positive association.",
     },
     {
@@ -48,7 +58,12 @@ UNIT5_QUESTION_BANK: list[dict] = [
             "Students who watch more TV tend to complete less homework. "
             "What type of association is this?"
         ),
-        "options": ["Positive", "Negative", "None", "Linear only"], "answer": 1,
+        "options": [
+            "Positive association",
+            "Negative association",
+            "No association",
+            "Linear only (must be a straight line)",
+        ], "answer": 1,
         "explanation": "TV up, homework down → negative association.",
     },
     {
@@ -66,7 +81,12 @@ UNIT5_QUESTION_BANK: list[dict] = [
             "You plot time spent studying against test score. "
             "What association would you most expect?"
         ),
-        "options": ["Positive", "Negative", "Zero slope only", "No variables"], "answer": 0,
+        "options": [
+            "Positive association",
+            "Negative association",
+            "Zero slope only",
+            "Not enough information",
+        ], "answer": 0,
         "explanation": "More study time usually means higher scores → positive.",
     },
     {
@@ -87,7 +107,12 @@ UNIT5_QUESTION_BANK: list[dict] = [
             "You plot bear height against bear weight. "
             "What association would you expect?"
         ),
-        "options": ["Positive", "Negative", "None", "Always negative"], "answer": 0,
+        "options": [
+            "Positive association",
+            "Negative association",
+            "No association",
+            "Always negative",
+        ], "answer": 0,
         "explanation": "Taller bears usually weigh more → positive association.",
     },
     {
@@ -181,7 +206,12 @@ UNIT5_QUESTION_BANK: list[dict] = [
             "Your scatter plot shows TV hours up to 20 per week. "
             "Predicting a test score at 60 TV hours per week is called:"
         ),
-        "options": ["Interpolation", "Extrapolation — unreliable", "Exact", "Always valid"], "answer": 1,
+        "options": [
+            "Interpolation (inside the data range)",
+            "Extrapolation (outside the data — often unreliable)",
+            "An exact measurement",
+            "Always reliable",
+        ], "answer": 1,
         "explanation": "60 hours is outside the data range → extrapolation, often unreliable.",
     },
 ]

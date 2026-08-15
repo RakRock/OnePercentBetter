@@ -87,7 +87,7 @@ UNIT2_QUESTION_BANK: list[dict] = [
     {
         "id": "u2_eq3", "category": "solving_equations",
         "question": "Solve for x: 2x + 1 = 2x + 5.",
-        "options": ["x = 2", "x = 0", "No solution", "Infinitely many"], "answer": 2,
+        "options": ["x = 2", "x = 0", "No solution", "Infinitely many solutions"], "answer": 2,
         "explanation": "Subtract 2x from both sides: 1 = 5, which is never true → no solution.",
     },
     {
@@ -198,13 +198,23 @@ UNIT2_QUESTION_BANK: list[dict] = [
             "A table shows x: 2, 4, 6 and y: 7, 14, 21. "
             "Is this a proportional relationship (y/x always the same)?"
         ),
-        "options": ["Yes, k=3.5", "No", "Yes, k=7", "Yes, k=2"], "answer": 0,
+        "options": [
+            "Yes — the ratio y/x is always 3.5",
+            "No — the ratios are not equal",
+            "Yes — the ratio is always 7",
+            "Yes — the ratio is always 2",
+        ], "answer": 0,
         "explanation": "7/2 = 14/4 = 21/6 = 3.5 → yes, constant of proportionality k = 3.5.",
     },
     {
         "id": "u2_pr2", "category": "proportional",
         "question": "Is the equation y = 4x + 1 a proportional relationship?",
-        "options": ["Yes", "No — not through origin", "Yes, k=4", "Only for x>0"], "answer": 1,
+        "options": [
+            "Yes",
+            "No — the line does not pass through (0, 0)",
+            "Yes — the rate is 4",
+            "Yes, but only when x > 0",
+        ], "answer": 1,
         "explanation": "Proportional graphs pass through (0, 0). The +1 means this line does not.",
     },
     {
@@ -222,8 +232,16 @@ UNIT2_QUESTION_BANK: list[dict] = [
             "A fair charges $5 entry plus $0.75 per ride. "
             "Is the total cost proportional to the number of rides?"
         ),
-        "options": ["Yes", "No — flat fee", "Yes, k=0.75", "Only after 5 rides"], "answer": 1,
-        "explanation": "The $5 entry fee is not per ride, so total cost is not proportional to rides alone.",
+        "options": [
+            "Yes",
+            "No — the $5 entry fee is not per ride",
+            "Yes — the rate is $0.75 per ride",
+            "Yes, but only after 5 rides",
+        ], "answer": 1,
+        "explanation": (
+            "Proportional relationships must pass through (0, 0). "
+            "With 0 rides you still pay $5, so cost is not proportional to rides alone."
+        ),
     },
     {
         "id": "u2_pr5", "category": "proportional",
@@ -243,7 +261,12 @@ UNIT2_QUESTION_BANK: list[dict] = [
     {
         "id": "u2_sy2", "category": "systems",
         "question": "How many solutions does the system y = 3x + 2 and y = 3x − 1 have?",
-        "options": ["One", "None (parallel)", "Infinitely many", "Two"], "answer": 1,
+        "options": [
+            "Exactly one solution",
+            "No solution — the lines are parallel",
+            "Infinitely many solutions",
+            "Two solutions",
+        ], "answer": 1,
         "explanation": "Same slope (3) but different y-intercepts → parallel lines, no intersection.",
     },
     {

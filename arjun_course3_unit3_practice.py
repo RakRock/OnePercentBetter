@@ -69,7 +69,12 @@ UNIT3_QUESTION_BANK: list[dict] = [
     {
         "id": "u3_ang6", "category": "angles",
         "question": "Can a triangle have angles measuring 100° and 82°?",
-        "options": ["Yes", "No — sum exceeds 180°", "Only if isosceles", "Only if equilateral"], "answer": 1,
+        "options": [
+            "Yes",
+            "No — 100° + 82° is more than 180°",
+            "Only if the triangle is isosceles",
+            "Only if the triangle is equilateral",
+        ], "answer": 1,
         "explanation": "100 + 82 = 182°, which is more than 180°, so no triangle is possible.",
     },
     {
@@ -108,13 +113,26 @@ UNIT3_QUESTION_BANK: list[dict] = [
             "Two triangles each have angles of 50° and 60°. "
             "Are the triangles similar by the AA (angle-angle) rule?"
         ),
-        "options": ["Yes (AA)", "No", "Only if sides match", "Only if congruent"], "answer": 0,
+        "options": [
+            "Yes — they match by the AA rule",
+            "No",
+            "Only if all side lengths match",
+            "Only if the triangles are congruent",
+        ], "answer": 0,
         "explanation": "Both triangles must have a third angle of 70°, so AA proves similarity.",
     },
     {
         "id": "u3_sim2", "category": "similarity",
-        "question": "A triangle has sides 6, 8, and 10. Which set of side lengths could form a similar triangle?",
-        "options": ["3, 4, 5", "6, 8, 9", "12, 16, 20", "Both A and C"], "answer": 3,
+        "question": (
+            "A triangle has sides 6, 8, and 10. "
+            "Which side-length sets could belong to a similar triangle (same shape, different size)?"
+        ),
+        "options": [
+            "3, 4, and 5 only",
+            "6, 8, and 9 only",
+            "12, 16, and 20 only",
+            "Both 3, 4, 5 and 12, 16, 20",
+        ], "answer": 3,
         "explanation": "6-8-10 and 3-4-5 have ratio 2:1; 12-16-20 is also a scale-2 version.",
     },
     {
@@ -158,7 +176,12 @@ UNIT3_QUESTION_BANK: list[dict] = [
     {
         "id": "u3_pyt4", "category": "pythagorean",
         "question": "Do side lengths 9, 12, and 15 form a right triangle?",
-        "options": ["Yes", "No", "Only if acute", "Cannot tell"], "answer": 0,
+        "options": [
+            "Yes — it is a right triangle",
+            "No",
+            "Only if all angles are acute",
+            "Cannot tell from side lengths alone",
+        ], "answer": 0,
         "explanation": "9² + 12² = 81 + 144 = 225 = 15² → yes, it is a right triangle.",
     },
     {

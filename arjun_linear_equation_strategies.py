@@ -750,6 +750,17 @@ def format_week_plan_summary(config: dict) -> str:
         lines.append("Question source: AI (xAI Grok)")
     else:
         lines.append("Question source: Built-in generators")
+    mm_lines = []
+    try:
+        from arjun_mental_math_drills import format_mental_math_summary, get_mental_math_count
+
+        mm_lines = format_mental_math_summary(config)
+        warmup_count = get_mental_math_count(config)
+    except ImportError:
+        warmup_count = 0
+    if mm_lines and warmup_count:
+        lines.append(f"Mental math warm-ups: {warmup_count} per session · {len(mm_lines)} drill level(s)")
+        lines.extend(mm_lines)
     for item in config.get("strategies", []):
         sid = item["id"]
         for lvl in item.get("levels", []):

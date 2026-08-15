@@ -39,7 +39,12 @@ UNIT4_QUESTION_BANK: list[dict] = [
             "A relation lists pairs (−2, 2), (−3, 4), and (−2, 6). "
             "Is this relation a function?"
         ),
-        "options": ["Yes", "No — x=−2 twice", "Yes if x>0", "Cannot tell"], "answer": 1,
+        "options": [
+            "Yes — it is a function",
+            "No — the input −2 is used twice with different outputs",
+            "Yes, but only for positive x-values",
+            "Cannot tell",
+        ], "answer": 1,
         "explanation": "Input −2 has two different outputs (2 and 6), so it is not a function.",
     },
     {
@@ -60,7 +65,12 @@ UNIT4_QUESTION_BANK: list[dict] = [
             "A table shows x-values 5, 6, 7, 8 with y-values 3, 4, 5, 6. "
             "Does this table represent a function?"
         ),
-        "options": ["Yes", "No", "Only linear", "Only if x increases"], "answer": 0,
+        "options": [
+            "Yes — each input has exactly one output",
+            "No — some inputs repeat",
+            "Only if the table is linear",
+            "Only if x-values increase",
+        ], "answer": 0,
         "explanation": "Each x-value appears once with exactly one y-value → it is a function.",
     },
     {
@@ -180,7 +190,12 @@ UNIT4_QUESTION_BANK: list[dict] = [
             "A dog bowl is filled: the water level rises quickly at first, then levels off. "
             "Is this a linear relationship?"
         ),
-        "options": ["Yes", "No — rate changes", "Yes if time short", "Only nonlinear at end"], "answer": 1,
+        "options": [
+            "Yes — the rate stays the same",
+            "No — the rate of change is not constant",
+            "Yes, if you only look at the first few seconds",
+            "No, but only at the very end",
+        ], "answer": 1,
         "explanation": "The rate of change is not constant → not linear.",
     },
     {

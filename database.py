@@ -671,7 +671,13 @@ def get_linear_eq_week_config() -> dict:
             "SELECT week_label, config_json FROM linear_eq_week_config WHERE id = 1"
         ).fetchone()
     if not row:
-        return {"week_label": "", "strategies": [], "use_llm": False}
+        return {
+            "week_label": "",
+            "strategies": [],
+            "mental_math": [],
+            "mental_math_count": 5,
+            "use_llm": False,
+        }
     try:
         data = json.loads(row["config_json"] or "{}")
     except json.JSONDecodeError:
@@ -681,9 +687,19 @@ def get_linear_eq_week_config() -> dict:
     strategies = data.get("strategies")
     if not isinstance(strategies, list):
         strategies = []
+    mental_math = data.get("mental_math")
+    if not isinstance(mental_math, list):
+        mental_math = []
+    raw_mm_count = data.get("mental_math_count", 5)
+    try:
+        mental_math_count = max(0, min(15, int(raw_mm_count)))
+    except (TypeError, ValueError):
+        mental_math_count = 5
     return {
         "week_label": row["week_label"] or data.get("week_label", ""),
         "strategies": strategies,
+        "mental_math": mental_math,
+        "mental_math_count": mental_math_count,
         "use_llm": bool(data.get("use_llm", False)),
     }
 
@@ -692,10 +708,18 @@ def save_linear_eq_week_config(
     week_label: str,
     strategies: list[dict],
     *,
+    mental_math: list[dict] | None = None,
+    mental_math_count: int = 5,
     use_llm: bool = False,
 ) -> None:
     """Save weekly strategy/level selections (single active plan, id=1)."""
-    payload = {"week_label": week_label, "strategies": strategies, "use_llm": use_llm}
+    payload = {
+        "week_label": week_label,
+        "strategies": strategies,
+        "mental_math": mental_math or [],
+        "mental_math_count": max(0, min(15, int(mental_math_count))),
+        "use_llm": use_llm,
+    }
     with get_connection() as conn:
         conn.execute(
             """INSERT INTO linear_eq_week_config (id, week_label, config_json, updated_at)
@@ -706,17 +730,31 @@ def save_linear_eq_week_config(
                  updated_at = CURRENT_TIMESTAMP""",
             (week_label, json.dumps(payload)),
         )
-    _google_sheets_push_week_plan(week_label, strategies, use_llm=use_llm)
+    _google_sheets_push_week_plan(
+        week_label,
+        strategies,
+        mental_math=mental_math or [],
+        mental_math_count=mental_math_count,
+        use_llm=use_llm,
+    )
 
 
 def import_linear_eq_week_config(
     week_label: str,
     strategies: list[dict],
     *,
+    mental_math: list[dict] | None = None,
+    mental_math_count: int = 5,
     use_llm: bool = False,
 ) -> None:
     """Import weekly plan from cloud sync without re-pushing to Google Sheets."""
-    payload = {"week_label": week_label, "strategies": strategies, "use_llm": use_llm}
+    payload = {
+        "week_label": week_label,
+        "strategies": strategies,
+        "mental_math": mental_math or [],
+        "mental_math_count": max(0, min(15, int(mental_math_count))),
+        "use_llm": use_llm,
+    }
     with get_connection() as conn:
         conn.execute(
             """INSERT INTO linear_eq_week_config (id, week_label, config_json, updated_at)
@@ -733,6 +771,8 @@ def _google_sheets_push_week_plan(
     week_label: str,
     strategies: list[dict],
     *,
+    mental_math: list[dict] | None = None,
+    mental_math_count: int = 5,
     use_llm: bool = False,
 ) -> None:
     """Best-effort Google Sheets sync for weekly linear-equations plan."""
@@ -740,7 +780,13 @@ def _google_sheets_push_week_plan(
         import google_sheets_sync as gss
 
         if gss.is_configured():
-            gss.persist_week_plan(week_label, strategies, use_llm=use_llm)
+            gss.persist_week_plan(
+                week_label,
+                strategies,
+                mental_math=mental_math or [],
+                mental_math_count=mental_math_count,
+                use_llm=use_llm,
+            )
     except Exception:
         pass
 

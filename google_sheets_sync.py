@@ -140,21 +140,42 @@ def _ensure_week_plan_headers(ws) -> None:
         ws.update(range_name="A1", values=[WEEK_PLAN_HEADERS])
 
 
-def _week_plan_payload(week_label: str, strategies: list[dict], *, use_llm: bool) -> dict:
-    return {"week_label": week_label, "strategies": strategies, "use_llm": use_llm}
+def _week_plan_payload(
+    week_label: str,
+    strategies: list[dict],
+    *,
+    mental_math: list[dict] | None = None,
+    mental_math_count: int = 5,
+    use_llm: bool,
+) -> dict:
+    return {
+        "week_label": week_label,
+        "strategies": strategies,
+        "mental_math": mental_math or [],
+        "mental_math_count": max(0, min(15, int(mental_math_count))),
+        "use_llm": use_llm,
+    }
 
 
 def save_week_plan_to_sheet(
     week_label: str,
     strategies: list[dict],
     *,
+    mental_math: list[dict] | None = None,
+    mental_math_count: int = 5,
     use_llm: bool = False,
 ) -> None:
     """Upsert the active linear-equations weekly plan (single row, plan_id=1)."""
     when = datetime.now()
     ws = _week_plan_worksheet()
     _ensure_week_plan_headers(ws)
-    payload = _week_plan_payload(week_label, strategies, use_llm=use_llm)
+    payload = _week_plan_payload(
+        week_label,
+        strategies,
+        mental_math=mental_math,
+        mental_math_count=mental_math_count,
+        use_llm=use_llm,
+    )
     row = [
         WEEK_PLAN_ID,
         week_label,
@@ -197,11 +218,21 @@ def sync_week_plan_from_sheet() -> bool:
         strategies = data.get("strategies")
         if not isinstance(strategies, list):
             strategies = []
-        if not week_label and not strategies:
+        mental_math = data.get("mental_math")
+        if not isinstance(mental_math, list):
+            mental_math = []
+        raw_mm_count = data.get("mental_math_count", 5)
+        try:
+            mental_math_count = max(0, min(15, int(raw_mm_count)))
+        except (TypeError, ValueError):
+            mental_math_count = 5
+        if not week_label and not strategies and not mental_math:
             continue
         db.import_linear_eq_week_config(
             week_label or str(data.get("week_label", "")).strip(),
             strategies,
+            mental_math=mental_math,
+            mental_math_count=mental_math_count,
             use_llm=bool(data.get("use_llm", False)),
         )
         return True
@@ -212,13 +243,21 @@ def persist_week_plan(
     week_label: str,
     strategies: list[dict],
     *,
+    mental_math: list[dict] | None = None,
+    mental_math_count: int = 5,
     use_llm: bool = False,
 ) -> tuple[bool, str | None]:
     """Save weekly plan to Google Sheets. Returns (sheet_ok, error_message)."""
     if not is_configured():
         return False, None
     try:
-        save_week_plan_to_sheet(week_label, strategies, use_llm=use_llm)
+        save_week_plan_to_sheet(
+            week_label,
+            strategies,
+            mental_math=mental_math,
+            mental_math_count=mental_math_count,
+            use_llm=use_llm,
+        )
         return True, None
     except Exception as exc:
         return False, str(exc)
