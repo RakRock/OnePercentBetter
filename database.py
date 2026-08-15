@@ -137,6 +137,17 @@ def init_db():
                 PRIMARY KEY (user_id, level_id, word),
                 FOREIGN KEY (user_id) REFERENCES users(id)
             );
+
+            CREATE TABLE IF NOT EXISTS daily_summaries (
+                user_id INTEGER NOT NULL,
+                log_date TEXT NOT NULL,
+                activities_count INTEGER DEFAULT 0,
+                avg_score_pct INTEGER DEFAULT 0,
+                time_spent_seconds INTEGER DEFAULT 0,
+                updated_at TEXT,
+                PRIMARY KEY (user_id, log_date),
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
         """)
         # Migration: add time_spent_seconds if missing (added after initial schema)
         try:
@@ -175,6 +186,23 @@ def get_user(name: str) -> dict | None:
         return dict(row) if row else None
 
 
+def get_all_users() -> list[dict]:
+    """All users ordered by id."""
+    with get_connection() as conn:
+        rows = conn.execute("SELECT * FROM users ORDER BY id").fetchall()
+    return [dict(r) for r in rows]
+
+
+def get_user_log_dates(user_id: int) -> list[str]:
+    """Distinct login dates for a user (YYYY-MM-DD)."""
+    with get_connection() as conn:
+        rows = conn.execute(
+            "SELECT DISTINCT log_date FROM daily_logs WHERE user_id = ? ORDER BY log_date",
+            (user_id,),
+        ).fetchall()
+    return [str(r["log_date"]) for r in rows]
+
+
 def get_user_by_id(user_id: int) -> dict | None:
     """Get a user by id."""
     with get_connection() as conn:
@@ -209,6 +237,29 @@ def record_daily_login(user_id: int):
             user_id=user_id,
             log_date=today,
         )
+        _google_sheets_push_daily_login(user["name"], user_id, today)
+
+
+def _google_sheets_push_daily_login(user_name: str, user_id: int, log_date: str) -> None:
+    """Best-effort Google Sheets sync for daily login streaks."""
+    try:
+        import google_sheets_sync as gss
+
+        if gss.is_configured():
+            gss.persist_daily_login(user_name=user_name, user_id=user_id, log_date=log_date)
+    except Exception:
+        pass
+
+
+def _google_sheets_push_daily_summary(user_id: int, log_date: str) -> None:
+    """Best-effort Google Sheets sync for today's activity summary."""
+    try:
+        import google_sheets_sync as gss
+
+        if gss.is_configured():
+            gss.persist_daily_summary(user_id=user_id, log_date=log_date)
+    except Exception:
+        pass
 
 
 def get_login_streak(user_id: int) -> int:
@@ -310,6 +361,7 @@ def save_activity_score(
             time_spent_seconds=time_spent_seconds,
             completed_at=completed_at,
         )
+        _google_sheets_push_daily_summary(user_id, today)
 
 
 def save_ec3_practice_session(user_id: int, unit_id: int, question_ids: list[str]) -> None:
@@ -523,6 +575,83 @@ def get_today_time_spent(user_id: int) -> int:
             (user_id, today),
         ).fetchone()
         return row["total"] if row and row["total"] else 0
+
+
+def compute_user_daily_summary(user_id: int, log_date: str | None = None) -> dict:
+    """Activities count, average score %, and time spent for one user on one day."""
+    log_date = log_date or datetime.now().strftime("%Y-%m-%d")
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT score, COALESCE(time_spent_seconds, 0) AS time_spent_seconds
+               FROM activity_scores WHERE user_id = ? AND log_date = ?""",
+            (user_id, log_date),
+        ).fetchall()
+    activities_count = len(rows)
+    if activities_count:
+        avg_score_pct = round(sum(r["score"] for r in rows) / activities_count)
+        time_spent_seconds = sum(int(r["time_spent_seconds"] or 0) for r in rows)
+    else:
+        avg_score_pct = 0
+        time_spent_seconds = 0
+    return {
+        "activities_count": activities_count,
+        "avg_score_pct": avg_score_pct,
+        "time_spent_seconds": time_spent_seconds,
+    }
+
+
+def import_daily_summary(
+    user_id: int,
+    log_date: str,
+    *,
+    activities_count: int,
+    avg_score_pct: int,
+    time_spent_seconds: int,
+    updated_at: str = "",
+) -> None:
+    """Upsert a daily summary row imported from Google Sheets."""
+    when = updated_at or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO daily_summaries
+               (user_id, log_date, activities_count, avg_score_pct, time_spent_seconds, updated_at)
+               VALUES (?, ?, ?, ?, ?, ?)
+               ON CONFLICT(user_id, log_date) DO UPDATE SET
+                 activities_count = excluded.activities_count,
+                 avg_score_pct = excluded.avg_score_pct,
+                 time_spent_seconds = excluded.time_spent_seconds,
+                 updated_at = excluded.updated_at""",
+            (
+                user_id,
+                log_date,
+                int(activities_count),
+                int(avg_score_pct),
+                int(time_spent_seconds),
+                when,
+            ),
+        )
+
+
+def get_user_daily_stats(user_id: int, log_date: str | None = None) -> dict:
+    """Dashboard stats for one day — live activity_scores, else sheet cache."""
+    log_date = log_date or datetime.now().strftime("%Y-%m-%d")
+    computed = compute_user_daily_summary(user_id, log_date)
+    if computed["activities_count"] > 0:
+        return computed
+
+    with get_connection() as conn:
+        row = conn.execute(
+            """SELECT activities_count, avg_score_pct, time_spent_seconds
+               FROM daily_summaries WHERE user_id = ? AND log_date = ?""",
+            (user_id, log_date),
+        ).fetchone()
+    if row:
+        return {
+            "activities_count": int(row["activities_count"]),
+            "avg_score_pct": int(row["avg_score_pct"]),
+            "time_spent_seconds": int(row["time_spent_seconds"]),
+        }
+    return computed
 
 
 def save_reading_progress(

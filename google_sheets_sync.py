@@ -48,6 +48,19 @@ HEADERS = [
 ]
 WEEK_PLAN_HEADERS = ["plan_id", "week_label", "config_json", "updated_at"]
 WEEK_PLAN_ID = "1"
+DAILY_LOGINS_WORKSHEET = "DailyLogins"
+USER_STREAKS_WORKSHEET = "UserStreaks"
+DAILY_SUMMARY_WORKSHEET = "UserDailySummary"
+DAILY_LOGINS_HEADERS = ["user_name", "log_date", "logged_at"]
+USER_STREAKS_HEADERS = ["user_name", "streak", "total_days", "updated_at"]
+DAILY_SUMMARY_HEADERS = [
+    "user_name",
+    "log_date",
+    "activities_count",
+    "avg_score_pct",
+    "time_spent_seconds",
+    "updated_at",
+]
 
 
 def _secret(key: str, default: str = "") -> str:
@@ -128,6 +141,52 @@ def _week_plan_worksheet():
         return ws
 
 
+def _spreadsheet():
+    return _worksheet().spreadsheet
+
+
+def _daily_logins_worksheet():
+    import gspread
+
+    spreadsheet = _spreadsheet()
+    try:
+        return spreadsheet.worksheet(DAILY_LOGINS_WORKSHEET)
+    except gspread.WorksheetNotFound:
+        ws = spreadsheet.add_worksheet(
+            title=DAILY_LOGINS_WORKSHEET, rows=500, cols=len(DAILY_LOGINS_HEADERS)
+        )
+        ws.append_row(DAILY_LOGINS_HEADERS, value_input_option="USER_ENTERED")
+        return ws
+
+
+def _user_streaks_worksheet():
+    import gspread
+
+    spreadsheet = _spreadsheet()
+    try:
+        return spreadsheet.worksheet(USER_STREAKS_WORKSHEET)
+    except gspread.WorksheetNotFound:
+        ws = spreadsheet.add_worksheet(
+            title=USER_STREAKS_WORKSHEET, rows=20, cols=len(USER_STREAKS_HEADERS)
+        )
+        ws.append_row(USER_STREAKS_HEADERS, value_input_option="USER_ENTERED")
+        return ws
+
+
+def _daily_summary_worksheet():
+    import gspread
+
+    spreadsheet = _spreadsheet()
+    try:
+        return spreadsheet.worksheet(DAILY_SUMMARY_WORKSHEET)
+    except gspread.WorksheetNotFound:
+        ws = spreadsheet.add_worksheet(
+            title=DAILY_SUMMARY_WORKSHEET, rows=500, cols=len(DAILY_SUMMARY_HEADERS)
+        )
+        ws.append_row(DAILY_SUMMARY_HEADERS, value_input_option="USER_ENTERED")
+        return ws
+
+
 def _ensure_headers(ws) -> None:
     first = ws.row_values(1)
     if first != HEADERS:
@@ -138,6 +197,229 @@ def _ensure_week_plan_headers(ws) -> None:
     first = ws.row_values(1)
     if first != WEEK_PLAN_HEADERS:
         ws.update(range_name="A1", values=[WEEK_PLAN_HEADERS])
+
+
+def _ensure_daily_logins_headers(ws) -> None:
+    first = ws.row_values(1)
+    if first != DAILY_LOGINS_HEADERS:
+        ws.update(range_name="A1", values=[DAILY_LOGINS_HEADERS])
+
+
+def _ensure_user_streaks_headers(ws) -> None:
+    first = ws.row_values(1)
+    if first != USER_STREAKS_HEADERS:
+        ws.update(range_name="A1", values=[USER_STREAKS_HEADERS])
+
+
+def _ensure_daily_summary_headers(ws) -> None:
+    first = ws.row_values(1)
+    if first != DAILY_SUMMARY_HEADERS:
+        ws.update(range_name="A1", values=[DAILY_SUMMARY_HEADERS])
+
+
+def _sheet_has_daily_login(ws, user_name: str, log_date: str) -> bool:
+    for row in ws.get_all_values()[1:]:
+        if len(row) >= 2 and row[0].strip() == user_name and row[1].strip()[:10] == log_date:
+            return True
+    return False
+
+
+def append_daily_login(user_name: str, log_date: str) -> None:
+    """Append one login row if not already present (user + date unique)."""
+    ws = _daily_logins_worksheet()
+    _ensure_daily_logins_headers(ws)
+    if _sheet_has_daily_login(ws, user_name, log_date):
+        return
+    when = datetime.now()
+    ws.append_row(
+        [user_name, log_date, when.strftime("%Y-%m-%d %H:%M:%S")],
+        value_input_option="USER_ENTERED",
+    )
+
+
+def sync_daily_logins_from_sheet() -> int:
+    """Import DailyLogins rows into SQLite. Returns rows inserted."""
+    if not is_configured():
+        return 0
+
+    ws = _daily_logins_worksheet()
+    _ensure_daily_logins_headers(ws)
+    imported = 0
+    for rec in ws.get_all_records():
+        user_name = str(rec.get("user_name", "")).strip()
+        log_date = str(rec.get("log_date", "")).strip()[:10]
+        if not user_name or not log_date:
+            continue
+        user = db.get_user(user_name)
+        if user and db.import_daily_login(user["id"], log_date):
+            imported += 1
+    return imported
+
+
+def push_local_daily_logins_to_sheet() -> int:
+    """Upload local login dates missing from the sheet."""
+    if not is_configured():
+        return 0
+
+    ws = _daily_logins_worksheet()
+    _ensure_daily_logins_headers(ws)
+    pushed = 0
+    for user in db.get_all_users():
+        for log_date in db.get_user_log_dates(user["id"]):
+            if not _sheet_has_daily_login(ws, user["name"], log_date):
+                append_daily_login(user["name"], log_date)
+                pushed += 1
+    return pushed
+
+
+def refresh_user_streaks_sheet() -> None:
+    """Rewrite UserStreaks tab with computed streak and total days per user."""
+    if not is_configured():
+        return
+
+    ws = _user_streaks_worksheet()
+    _ensure_user_streaks_headers(ws)
+    when = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    rows = [USER_STREAKS_HEADERS]
+    for user in db.get_all_users():
+        rows.append(
+            [
+                user["name"],
+                db.get_login_streak(user["id"]),
+                db.get_total_login_days(user["id"]),
+                when,
+            ]
+        )
+    ws.update(range_name="A1", values=rows)
+
+
+def _summary_row_index(ws, user_name: str, log_date: str) -> int | None:
+    """1-based sheet row for user+date, or None."""
+    for idx, row in enumerate(ws.get_all_values()[1:], start=2):
+        if len(row) >= 2 and row[0].strip() == user_name and row[1].strip()[:10] == log_date:
+            return idx
+    return None
+
+
+def upsert_daily_summary_row(
+    user_name: str,
+    log_date: str,
+    *,
+    activities_count: int,
+    avg_score_pct: int,
+    time_spent_seconds: int,
+) -> None:
+    """Upsert one user/day summary row in UserDailySummary."""
+    ws = _daily_summary_worksheet()
+    _ensure_daily_summary_headers(ws)
+    when = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    row = [
+        user_name,
+        log_date,
+        int(activities_count),
+        int(avg_score_pct),
+        int(time_spent_seconds),
+        when,
+    ]
+    target = _summary_row_index(ws, user_name, log_date)
+    if target:
+        ws.update(range_name=f"A{target}:F{target}", values=[row])
+    else:
+        ws.append_row(row, value_input_option="USER_ENTERED")
+
+
+def refresh_user_daily_summary_sheet(log_date: str | None = None) -> None:
+    """Push computed today stats for every user to UserDailySummary."""
+    if not is_configured():
+        return
+
+    log_date = log_date or datetime.now().strftime("%Y-%m-%d")
+    for user in db.get_all_users():
+        stats = db.compute_user_daily_summary(user["id"], log_date)
+        upsert_daily_summary_row(
+            user["name"],
+            log_date,
+            activities_count=stats["activities_count"],
+            avg_score_pct=stats["avg_score_pct"],
+            time_spent_seconds=stats["time_spent_seconds"],
+        )
+
+
+def sync_daily_summaries_from_sheet() -> int:
+    """Import UserDailySummary rows into SQLite daily_summaries cache."""
+    if not is_configured():
+        return 0
+
+    ws = _daily_summary_worksheet()
+    _ensure_daily_summary_headers(ws)
+    imported = 0
+    for rec in ws.get_all_records():
+        user_name = str(rec.get("user_name", "")).strip()
+        log_date = str(rec.get("log_date", "")).strip()[:10]
+        if not user_name or not log_date:
+            continue
+        user = db.get_user(user_name)
+        if not user:
+            continue
+        try:
+            activities_count = int(rec.get("activities_count") or 0)
+            avg_score_pct = int(rec.get("avg_score_pct") or 0)
+            time_spent_seconds = int(rec.get("time_spent_seconds") or 0)
+        except (TypeError, ValueError):
+            continue
+        db.import_daily_summary(
+            user["id"],
+            log_date,
+            activities_count=activities_count,
+            avg_score_pct=avg_score_pct,
+            time_spent_seconds=time_spent_seconds,
+            updated_at=str(rec.get("updated_at") or ""),
+        )
+        imported += 1
+    return imported
+
+
+def persist_daily_summary(*, user_id: int, log_date: str) -> tuple[bool, str | None]:
+    """Upsert today's summary for one user after an activity completes."""
+    if not is_configured():
+        return False, None
+    user = db.get_user_by_id(user_id)
+    if not user:
+        return False, "user not found"
+    try:
+        stats = db.compute_user_daily_summary(user_id, log_date)
+        upsert_daily_summary_row(
+            user["name"],
+            log_date,
+            activities_count=stats["activities_count"],
+            avg_score_pct=stats["avg_score_pct"],
+            time_spent_seconds=stats["time_spent_seconds"],
+        )
+        return True, None
+    except Exception as exc:
+        return False, str(exc)
+
+
+def sync_streaks_and_logins() -> int:
+    """Bidirectional login sync, daily summary sync, and refresh streak tab."""
+    imported = sync_daily_logins_from_sheet()
+    push_local_daily_logins_to_sheet()
+    refresh_user_streaks_sheet()
+    summary_imported = sync_daily_summaries_from_sheet()
+    refresh_user_daily_summary_sheet()
+    return imported + summary_imported
+
+
+def persist_daily_login(*, user_name: str, user_id: int, log_date: str) -> tuple[bool, str | None]:
+    """Append login to Google Sheets and refresh streak summary. Returns (sheet_ok, error)."""
+    if not is_configured():
+        return False, None
+    try:
+        append_daily_login(user_name, log_date)
+        refresh_user_streaks_sheet()
+        return True, None
+    except Exception as exc:
+        return False, str(exc)
 
 
 def _week_plan_payload(
@@ -356,8 +638,9 @@ def sync_from_sheet_to_db() -> int:
             imported += 1
 
     sync_week_plan_from_sheet()
+    login_imported = sync_streaks_and_logins()
 
-    return imported
+    return imported + login_imported
 
 
 def persist_edgenuity_practice(

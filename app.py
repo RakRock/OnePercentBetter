@@ -1132,7 +1132,7 @@ def render_user_dashboard():
 
     streak = db.get_login_streak(user["id"])
     total_days = db.get_total_login_days(user["id"])
-    today_scores = db.get_today_scores(user["id"])
+    daily = db.get_user_daily_stats(user["id"])
 
     col_nav1, _ = st.columns([1, 6])
     with col_nav1:
@@ -1148,7 +1148,7 @@ def render_user_dashboard():
     </div>
     """, unsafe_allow_html=True)
 
-    today_time = db.get_today_time_spent(user["id"])
+    today_time = daily["time_spent_seconds"]
     today_min, today_sec = divmod(today_time, 60)
     today_time_str = f"{today_min}m {today_sec}s" if today_min > 0 else f"{today_sec}s"
     if today_time == 0:
@@ -1160,9 +1160,9 @@ def render_user_dashboard():
     with col2:
         st.markdown(f'<div class="score-card"><div class="score-number">📅 {total_days}</div><div class="score-label">Total Days</div></div>', unsafe_allow_html=True)
     with col3:
-        st.markdown(f'<div class="score-card"><div class="score-number">✅ {len(today_scores)}</div><div class="score-label">Activities Today</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="score-card"><div class="score-number">✅ {daily["activities_count"]}</div><div class="score-label">Activities Today</div></div>', unsafe_allow_html=True)
     with col4:
-        avg_display = f"{sum(s['score'] for s in today_scores) / len(today_scores):.0f}%" if today_scores else "—"
+        avg_display = f'{daily["avg_score_pct"]}%' if daily["activities_count"] else "—"
         st.markdown(f'<div class="score-card"><div class="score-number">⭐ {avg_display}</div><div class="score-label">Avg Score Today</div></div>', unsafe_allow_html=True)
     with col5:
         st.markdown(f'<div class="score-card"><div class="score-number">⏱️ {today_time_str}</div><div class="score-label">Time Today</div></div>', unsafe_allow_html=True)
