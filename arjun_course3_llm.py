@@ -11,6 +11,7 @@ from typing import Callable
 from openai import APIConnectionError, APITimeoutError, OpenAI, OpenAIError
 
 import arjun_course3_content as c3
+from llm_question_format import KID_NUMERIC_FORMAT_RULES, NUMERIC_RETRY_HINT, validate_numerical_format
 
 XAI_BASE_URL = "https://api.x.ai/v1"
 XAI_MODEL = "grok-3-mini"
@@ -78,6 +79,7 @@ RULES:
 - Answer choices must be self-contained full phrases — never say "Both A and B", "Option C", or use letter labels.
 - Explain proportional vs linear clearly: proportional means through (0, 0); a starting fee means NOT proportional.
 - Use plain language kids understand (e.g., "the $5 entry fee" instead of "flat fee").
+{KID_NUMERIC_FORMAT_RULES}
 
 Respond with ONLY a valid JSON array — one object per requested question, in order:
 [
@@ -124,6 +126,8 @@ def _parse_llm_questions(raw: str, expected_categories: list[str], categories: d
         random.shuffle(indices)
         options = [str(q["options"][j]) for j in indices]
         answer = options.index(correct_text)
+
+        validate_numerical_format(str(q["question"]).strip(), options)
 
         validated.append(
             {
@@ -229,7 +233,8 @@ def generate_session_questions(
             user_msg = (
                 _build_user_message(slots, categories, seed)
                 + f"\n\nYour previous response was invalid ({last_error}). "
-                "Return ONLY a valid JSON array with category, question, options (4), answer (0-3), explanation."
+                "Return ONLY a valid JSON array with category, question, options (4), answer (0-3), explanation. "
+                + NUMERIC_RETRY_HINT
             )
 
     if fallback:
