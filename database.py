@@ -148,6 +148,51 @@ def init_db():
                 PRIMARY KEY (user_id, log_date),
                 FOREIGN KEY (user_id) REFERENCES users(id)
             );
+
+            CREATE TABLE IF NOT EXISTS harshit_math_progress (
+                user_id INTEGER NOT NULL,
+                phase_id TEXT NOT NULL DEFAULT 'phase1',
+                day_id INTEGER NOT NULL,
+                problem_id TEXT NOT NULL,
+                current_node TEXT NOT NULL DEFAULT 'start',
+                step_index INTEGER NOT NULL DEFAULT 0,
+                visual_complete INTEGER NOT NULL DEFAULT 0,
+                state_json TEXT NOT NULL DEFAULT '{}',
+                completed_at TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (user_id, phase_id, day_id, problem_id),
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
+            CREATE TABLE IF NOT EXISTS harshit_math_day_status (
+                user_id INTEGER NOT NULL,
+                phase_id TEXT NOT NULL DEFAULT 'phase1',
+                day_id INTEGER NOT NULL,
+                status TEXT NOT NULL DEFAULT 'not_started',
+                problems_completed INTEGER NOT NULL DEFAULT 0,
+                problems_total INTEGER NOT NULL DEFAULT 0,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (user_id, phase_id, day_id),
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
+            CREATE TABLE IF NOT EXISTS harshit_prereq_chapter_status (
+                user_id INTEGER NOT NULL,
+                prereq_id INTEGER NOT NULL,
+                chapter_num INTEGER NOT NULL,
+                status TEXT NOT NULL DEFAULT 'not_started',
+                notes TEXT DEFAULT '',
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (user_id, prereq_id, chapter_num),
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
+            CREATE TABLE IF NOT EXISTS harshit_prereq_week_config (
+                prereq_id INTEGER PRIMARY KEY,
+                week_label TEXT NOT NULL DEFAULT '',
+                config_json TEXT NOT NULL DEFAULT '{}',
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
         """)
         # Migration: add time_spent_seconds if missing (added after initial schema)
         try:
@@ -171,6 +216,7 @@ def init_db():
             ("Krish", "🚀"),
             ("Sangeetha", "🌸"),
             ("Rakesh", "⚡"),
+            ("Harshit Sai", "📐"),
         ]
         for name, emoji in default_users:
             conn.execute(
@@ -1179,4 +1225,225 @@ def get_ec3_practice_results(user_id: int, days: int = 90) -> list[dict]:
             item["failed"] = []
         out.append(item)
     return out
+
+
+# ── Harshit Math intervention progress ──
+
+
+def get_harshit_problem_progress(
+    user_id: int,
+    day_id: int,
+    problem_id: str,
+    phase_id: str = "phase1",
+) -> dict | None:
+    with get_connection() as conn:
+        row = conn.execute(
+            """SELECT current_node, step_index, visual_complete, state_json, completed_at
+               FROM harshit_math_progress
+               WHERE user_id = ? AND phase_id = ? AND day_id = ? AND problem_id = ?""",
+            (user_id, phase_id, day_id, problem_id),
+        ).fetchone()
+    if not row:
+        return None
+    out = dict(row)
+    try:
+        out["state"] = json.loads(out.pop("state_json") or "{}")
+    except json.JSONDecodeError:
+        out["state"] = {}
+    return out
+
+
+def save_harshit_problem_progress(
+    user_id: int,
+    day_id: int,
+    problem_id: str,
+    *,
+    current_node: str,
+    step_index: int,
+    visual_complete: bool,
+    state: dict | None = None,
+    completed: bool = False,
+    phase_id: str = "phase1",
+) -> None:
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    completed_at = now if completed else None
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO harshit_math_progress
+               (user_id, phase_id, day_id, problem_id, current_node, step_index,
+                visual_complete, state_json, completed_at, updated_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+               ON CONFLICT(user_id, phase_id, day_id, problem_id) DO UPDATE SET
+                 current_node = excluded.current_node,
+                 step_index = excluded.step_index,
+                 visual_complete = excluded.visual_complete,
+                 state_json = excluded.state_json,
+                 completed_at = COALESCE(excluded.completed_at, harshit_math_progress.completed_at),
+                 updated_at = excluded.updated_at""",
+            (
+                user_id,
+                phase_id,
+                day_id,
+                problem_id,
+                current_node,
+                step_index,
+                1 if visual_complete else 0,
+                json.dumps(state or {}),
+                completed_at,
+                now,
+            ),
+        )
+
+
+def update_harshit_day_status(
+    user_id: int,
+    day_id: int,
+    *,
+    status: str,
+    problems_completed: int,
+    problems_total: int,
+    phase_id: str = "phase1",
+) -> None:
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO harshit_math_day_status
+               (user_id, phase_id, day_id, status, problems_completed, problems_total, updated_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?)
+               ON CONFLICT(user_id, phase_id, day_id) DO UPDATE SET
+                 status = excluded.status,
+                 problems_completed = excluded.problems_completed,
+                 problems_total = excluded.problems_total,
+                 updated_at = excluded.updated_at""",
+            (user_id, phase_id, day_id, status, problems_completed, problems_total, now),
+        )
+
+
+def get_harshit_day_status(user_id: int, phase_id: str = "phase1") -> dict[int, dict]:
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT day_id, status, problems_completed, problems_total
+               FROM harshit_math_day_status
+               WHERE user_id = ? AND phase_id = ?""",
+            (user_id, phase_id),
+        ).fetchall()
+    return {int(r["day_id"]): dict(r) for r in rows}
+
+
+def get_harshit_prereq_chapter_status(user_id: int, prereq_id: int) -> dict[int, dict]:
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT chapter_num, status, notes, updated_at
+               FROM harshit_prereq_chapter_status
+               WHERE user_id = ? AND prereq_id = ?""",
+            (user_id, prereq_id),
+        ).fetchall()
+    return {int(r["chapter_num"]): dict(r) for r in rows}
+
+
+def save_harshit_prereq_chapter_status(
+    user_id: int,
+    prereq_id: int,
+    chapter_num: int,
+    *,
+    status: str,
+    notes: str = "",
+) -> None:
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO harshit_prereq_chapter_status
+               (user_id, prereq_id, chapter_num, status, notes, updated_at)
+               VALUES (?, ?, ?, ?, ?, ?)
+               ON CONFLICT(user_id, prereq_id, chapter_num) DO UPDATE SET
+                 status = excluded.status,
+                 notes = excluded.notes,
+                 updated_at = excluded.updated_at""",
+            (user_id, prereq_id, chapter_num, status, notes, now),
+        )
+
+
+def get_harshit_prereq_summary(user_id: int) -> dict[int, dict]:
+    """Per-bucket counts of chapter completion."""
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT prereq_id, chapter_num, status
+               FROM harshit_prereq_chapter_status
+               WHERE user_id = ?""",
+            (user_id,),
+        ).fetchall()
+    out: dict[int, dict] = {}
+    for r in rows:
+        pid = int(r["prereq_id"])
+        bucket = out.setdefault(pid, {"complete": 0, "in_progress": 0, "total_marked": 0})
+        bucket["total_marked"] += 1
+        if r["status"] == "complete":
+            bucket["complete"] += 1
+        elif r["status"] == "in_progress":
+            bucket["in_progress"] += 1
+    return out
+
+
+def get_harshit_prereq_week_config(prereq_id: int) -> dict:
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT week_label, config_json FROM harshit_prereq_week_config WHERE prereq_id = ?",
+            (prereq_id,),
+        ).fetchone()
+    if not row:
+        return {"week_label": "", "topics": [], "warmup_count": 2, "use_llm": False}
+    try:
+        data = json.loads(row["config_json"] or "{}")
+    except json.JSONDecodeError:
+        data = {}
+    if not isinstance(data, dict):
+        data = {}
+    topics = data.get("topics")
+    if not isinstance(topics, list):
+        topics = []
+    try:
+        warmup_count = max(0, min(5, int(data.get("warmup_count", 2))))
+    except (TypeError, ValueError):
+        warmup_count = 2
+    return {
+        "week_label": row["week_label"] or data.get("week_label", ""),
+        "topics": topics,
+        "warmup_count": warmup_count,
+        "use_llm": bool(data.get("use_llm", False)),
+        "prereq_id": prereq_id,
+    }
+
+
+def save_harshit_prereq_week_config(
+    prereq_id: int,
+    week_label: str,
+    topics: list[dict],
+    *,
+    warmup_count: int = 2,
+    use_llm: bool = False,
+) -> None:
+    payload = {
+        "week_label": week_label,
+        "topics": topics,
+        "warmup_count": max(0, min(5, int(warmup_count))),
+        "use_llm": use_llm,
+        "prereq_id": prereq_id,
+    }
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO harshit_prereq_week_config (prereq_id, week_label, config_json, updated_at)
+               VALUES (?, ?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(prereq_id) DO UPDATE SET
+                 week_label = excluded.week_label,
+                 config_json = excluded.config_json,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (prereq_id, week_label, json.dumps(payload)),
+        )
+    try:
+        import google_sheets_sync as gss
+
+        if gss.is_configured():
+            gss.save_harshit_prereq_week_plan(prereq_id, week_label, payload)
+    except Exception:
+        pass
 

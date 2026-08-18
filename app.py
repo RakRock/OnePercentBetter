@@ -692,6 +692,11 @@ def select_activity(activity):
         st.session_state.ec3_history_saved_for = None
         st.session_state.ec3_review_mode = False
         st.session_state.ec3_review_index = 0
+    elif activity == "HarshitMath":
+        st.session_state.current_page = "harshit_math_home"
+        st.session_state.hm_day_id = None
+        st.session_state.hm_problem_id = None
+        st.session_state.hm_start_time = time.time()
 
 
 def start_story(story_id):
@@ -1088,9 +1093,10 @@ def render_home():
         ("Krish", "🚀", "#667eea", "Reaching for the stars"),
         ("Sangeetha", "🌸", "#f093fb", "Blooming with knowledge"),
         ("Rakesh", "⚡", "#ffd93d", "Lightning-fast thinker"),
+        ("Harshit Sai", "📐", "#64748b", "Building number sense"),
     ]
 
-    cols = st.columns(4, gap="large")
+    cols = st.columns(5, gap="large")
     for i, (name, emoji, color, tagline) in enumerate(users):
         with cols[i]:
             user_data = db.get_user(name)
@@ -1412,6 +1418,33 @@ def render_user_dashboard():
             if st.button("🟢 Open Network Architecture", key="btn_netarch_r", width="stretch", type="primary"):
                 select_activity("NetworkArch")
                 st.rerun()
+
+    elif name == "Harshit Sai":
+        st.markdown("### 📐 Choose Your Activity")
+        st.markdown("")
+
+        act_col1, act_col2 = st.columns(2, gap="large")
+        with act_col1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #64748b;">
+                <div style="font-size: 3rem;">📚</div>
+                <h3 style="margin: 0.5rem 0;">PreReq</h3>
+                <p style="color: #6b7280;">6 units · NCERT Class 9 foundations</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("📚 PreReq", key="btn_harshit_math", width="stretch", type="primary"):
+                select_activity("HarshitMath")
+                st.rerun()
+
+        with act_col2:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #9ca3af;">
+                <div style="font-size: 3rem;">🔮</div>
+                <h3 style="margin: 0.5rem 0;">More Coming Soon</h3>
+                <p style="color: #6b7280;">Algebra, geometry & 10th grade next</p>
+            </div>
+            """, unsafe_allow_html=True)
 
     else:
         st.markdown(f"### 🚧 {name}'s activities are coming soon!")
@@ -5863,6 +5896,45 @@ def render_edgenuity_linear_equations_practice():
 
 
 # ──────────────────────────────────────────────
+# PAGE: Harshit Sai — NCERT Math Intervention
+# ──────────────────────────────────────────────
+def render_harshit_math_home():
+    import harshit_math_ui
+
+    harshit_math_ui.render_home()
+
+
+def render_harshit_math_day():
+    import harshit_math_ui
+
+    harshit_math_ui.render_day()
+
+
+def render_harshit_math_problem():
+    import harshit_math_ui
+
+    harshit_math_ui.render_problem()
+
+
+def render_harshit_prereq_bucket():
+    import harshit_math_ui
+
+    harshit_math_ui.render_prereq_bucket()
+
+
+def render_harshit_prereq_chapter():
+    import harshit_math_ui
+
+    harshit_math_ui.render_prereq_chapter()
+
+
+def render_harshit_prereq_practice():
+    import harshit_prereq_practice_ui
+
+    harshit_prereq_practice_ui.render_practice()
+
+
+# ──────────────────────────────────────────────
 # PAGE: Network Architecture / NVIDIA RA (Rakesh)
 # ──────────────────────────────────────────────
 def render_network_arch_home():
@@ -6902,6 +6974,18 @@ elif page == "edgenuity_course3_practice":
     render_edgenuity_course3_practice()
 elif page == "edgenuity_linear_equations_practice":
     render_edgenuity_linear_equations_practice()
+elif page == "harshit_math_home":
+    render_harshit_math_home()
+elif page == "harshit_math_day":
+    render_harshit_math_day()
+elif page == "harshit_math_problem":
+    render_harshit_math_problem()
+elif page == "harshit_prereq_bucket":
+    render_harshit_prereq_bucket()
+elif page == "harshit_prereq_chapter":
+    render_harshit_prereq_chapter()
+elif page == "harshit_prereq_practice":
+    render_harshit_prereq_practice()
 elif page == "cube_addition":
     render_cube_addition()
 else:

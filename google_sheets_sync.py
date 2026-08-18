@@ -31,6 +31,7 @@ import database as db
 
 WORKSHEET_NAME = "EdgenuityPractice"
 WEEK_PLAN_WORKSHEET = "LinearEqWeekPlan"
+HARSHIT_PREREQ_PLAN_WORKSHEET = "HarshitPreReqWeekPlan"
 HEADERS = [
     "session_id",
     "user_name",
@@ -47,6 +48,7 @@ HEADERS = [
     "log_date",
 ]
 WEEK_PLAN_HEADERS = ["plan_id", "week_label", "config_json", "updated_at"]
+HARSHIT_PREREQ_PLAN_HEADERS = ["prereq_id", "week_label", "config_json", "updated_at"]
 WEEK_PLAN_ID = "1"
 DAILY_LOGINS_WORKSHEET = "DailyLogins"
 USER_STREAKS_WORKSHEET = "UserStreaks"
@@ -476,6 +478,84 @@ def save_week_plan_to_sheet(
         ws.update(range_name=f"A{target_row}:D{target_row}", values=[row])
 
 
+def _harshit_prereq_plan_worksheet():
+    import gspread
+
+    spreadsheet = _worksheet().spreadsheet
+    try:
+        return spreadsheet.worksheet(HARSHIT_PREREQ_PLAN_WORKSHEET)
+    except gspread.WorksheetNotFound:
+        ws = spreadsheet.add_worksheet(
+            title=HARSHIT_PREREQ_PLAN_WORKSHEET,
+            rows=20,
+            cols=len(HARSHIT_PREREQ_PLAN_HEADERS),
+        )
+        ws.append_row(HARSHIT_PREREQ_PLAN_HEADERS, value_input_option="USER_ENTERED")
+        return ws
+
+
+def save_harshit_prereq_week_plan(prereq_id: int, week_label: str, payload: dict) -> None:
+    """Upsert weekly plan for one Harshit PreReq bucket."""
+    when = datetime.now()
+    ws = _harshit_prereq_plan_worksheet()
+    first = ws.row_values(1)
+    if first != HARSHIT_PREREQ_PLAN_HEADERS:
+        ws.update(range_name="A1", values=[HARSHIT_PREREQ_PLAN_HEADERS])
+    row = [
+        str(prereq_id),
+        week_label,
+        json.dumps(payload, ensure_ascii=False),
+        when.strftime("%Y-%m-%d %H:%M:%S"),
+    ]
+    values = ws.get_all_values()
+    target_row = None
+    pid_str = str(prereq_id)
+    for idx, existing in enumerate(values[1:], start=2):
+        if existing and str(existing[0]).strip() == pid_str:
+            target_row = idx
+            break
+    if target_row is None:
+        ws.append_row(row, value_input_option="USER_ENTERED")
+    else:
+        ws.update(range_name=f"A{target_row}:D{target_row}", values=[row])
+
+
+def sync_harshit_prereq_plans_from_sheet() -> int:
+    """Import Harshit PreReq week plans from Google Sheets. Returns count applied."""
+    if not is_configured():
+        return 0
+    import database as db
+
+    try:
+        ws = _harshit_prereq_plan_worksheet()
+    except Exception:
+        return 0
+    applied = 0
+    for rec in ws.get_all_records():
+        try:
+            prereq_id = int(rec.get("prereq_id", 0))
+        except (TypeError, ValueError):
+            continue
+        if prereq_id < 1 or prereq_id > 6:
+            continue
+        week_label = str(rec.get("week_label", "")).strip()
+        raw = rec.get("config_json") or "{}"
+        try:
+            data = json.loads(raw) if isinstance(raw, str) else dict(raw)
+        except (json.JSONDecodeError, TypeError):
+            continue
+        topics = data.get("topics") if isinstance(data.get("topics"), list) else []
+        db.save_harshit_prereq_week_config(
+            prereq_id,
+            week_label,
+            topics,
+            warmup_count=int(data.get("warmup_count", 2)),
+            use_llm=bool(data.get("use_llm", False)),
+        )
+        applied += 1
+    return applied
+
+
 def sync_week_plan_from_sheet() -> bool:
     """Import weekly plan from Google Sheets into SQLite. Returns True if applied."""
     if not is_configured():
@@ -638,6 +718,7 @@ def sync_from_sheet_to_db() -> int:
             imported += 1
 
     sync_week_plan_from_sheet()
+    sync_harshit_prereq_plans_from_sheet()
     login_imported = sync_streaks_and_logins()
 
     return imported + login_imported

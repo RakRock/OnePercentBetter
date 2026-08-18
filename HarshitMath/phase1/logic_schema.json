@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "grade_target": "Stabilize NCERT Class 9 → bridge to Class 10",
+    "phase": "Phase 1 — Number Sense",
+    "duration_days": 10,
+    "source_textbook": "NCERT Class 9 Mathematics, Chapter 1: Number Systems",
+    "pedagogy": "Number Sense and Fluency — visual manipulatives, decomposition, why-before-how"
+  },
+  "days": [
+    {
+      "day": 1,
+      "title": "Integers on the Number Line",
+      "core_concept": "Directed distance from zero; positive right, negative left",
+      "ncert_reference": "Section 1.1 — Number line representation of integers (foundation for Ex 1.1)",
+      "manipulative": "interactive_number_line",
+      "ncert_problem": {
+        "id": "d1_p1",
+        "statement": "Represent −3 and 2 on the same number line. Which integer is farther from zero?",
+        "steps": [
+          "Drag a marker to −3 on the number line",
+          "Drag a second marker to 2",
+          "Compare distances: |−3| = 3 and |2| = 2"
+        ],
+        "final_answer": "−3 is farther from zero"
+      }
+    },
+    {
+      "day": 2,
+      "title": "Adding and Subtracting Integers",
+      "core_concept": "Subtracting a negative equals adding a positive",
+      "ncert_reference": "Prerequisite arithmetic for Section 1.1 rational operations",
+      "manipulative": "interactive_number_line",
+      "ncert_problem": {
+        "id": "d2_p1",
+        "statement": "Find the value of −5 − (−3).",
+        "steps": [
+          "Place −5 on the number line (starting point)",
+          "Rewrite −5 − (−3) as −5 + 3 before moving",
+          "Move 3 units in the positive direction from −5",
+          "State the landing position"
+        ],
+        "final_answer": "−2"
+      }
+    },
+    {
+      "day": 3,
+      "title": "Rational Numbers on the Number Line",
+      "core_concept": "Fractions as points between integers; sign determines side of zero",
+      "ncert_reference": "NCERT Ex 1.1 Q1 — Locate 5/2 on the number line (Example 1 style)",
+      "manipulative": "interactive_number_line",
+      "ncert_problem": {
+        "id": "d3_p1",
+        "statement": "Locate 5/2 on the number line.",
+        "steps": [
+          "Decompose: 5/2 = 2 + 1/2 (between 2 and 3)",
+          "Mark the halfway point between 2 and 3",
+          "Confirm the coordinate"
+        ],
+        "final_answer": "2.5"
+      }
+    },
+    {
+      "day": 4,
+      "title": "Adding Fractions — Common Denominator",
+      "core_concept": "Equivalent fractions via LCD before adding numerators",
+      "ncert_reference": "NCERT Section 1.1 — addition of rational numbers (7/8 + 5/9 style)",
+      "manipulative": "fraction_block_grid",
+      "ncert_problem": {
+        "id": "d4_p1",
+        "statement": "Find 1/3 + 1/4 using an area model, then compute symbolically.",
+        "steps": [
+          "Shade 1/3 of a unit square in the grid",
+          "Shade 1/4 of the same unit (different color overlay)",
+          "Find LCD: 12",
+          "Rewrite: 4/12 + 3/12",
+          "Add numerators: 7/12"
+        ],
+        "final_answer": "7/12"
+      }
+    },
+    {
+      "day": 5,
+      "title": "Subtracting Fractions",
+      "core_concept": "Subtraction as missing addend; common denominator first",
+      "ncert_reference": "NCERT Section 1.1 — subtraction of rational numbers",
+      "manipulative": "fraction_block_grid",
+      "ncert_problem": {
+        "id": "d5_p1",
+        "statement": "Find 3/4 − 1/6.",
+        "steps": [
+          "LCD of 4 and 6 is 12",
+          "Rewrite: 9/12 − 2/12",
+          "Subtract numerators",
+          "Simplify if needed"
+        ],
+        "final_answer": "7/12"
+      }
+    },
+    {
+      "day": 6,
+      "title": "Multiplying Fractions — Area Model",
+      "core_concept": "Product as overlapping shaded regions",
+      "ncert_reference": "NCERT Section 1.1 — multiplication of rational numbers",
+      "manipulative": "fraction_block_grid",
+      "ncert_problem": {
+        "id": "d6_p1",
+        "statement": "Find 2/3 × 3/5 using a rectangular area model.",
+        "steps": [
+          "Divide grid into 3 rows; shade 2 rows (2/3)",
+          "Divide grid into 5 columns; shade 3 columns (3/5)",
+          "Count overlapping shaded cells out of 15 total",
+          "Express as fraction and simplify"
+        ],
+        "final_answer": "2/5"
+      }
+    },
+    {
+      "day": 7,
+      "title": "Dividing Fractions",
+      "core_concept": "Division as multiply by reciprocal",
+      "ncert_reference": "NCERT Section 1.1 — division of rational numbers",
+      "manipulative": "fraction_block_grid",
+      "ncert_problem": {
+        "id": "d7_p1",
+        "statement": "Find 2/3 ÷ 4/5.",
+        "steps": [
+          "Rewrite division as multiplication: 2/3 × 5/4",
+          "Multiply numerators and denominators",
+          "Simplify the result"
+        ],
+        "final_answer": "5/6"
+      }
+    },
+    {
+      "day": 8,
+      "title": "Decimals and Rational Form",
+      "core_concept": "Terminating decimals are rational; place-value decomposition",
+      "ncert_reference": "NCERT Section 1.1 — decimal representation of rational numbers",
+      "manipulative": "interactive_number_line",
+      "ncert_problem": {
+        "id": "d8_p1",
+        "statement": "Express 0.375 in the form p/q, where p and q are integers and q ≠ 0.",
+        "steps": [
+          "Decompose: 0.375 = 375/1000",
+          "Find HCF of 375 and 1000",
+          "Divide numerator and denominator by HCF",
+          "Locate on number line between 0 and 1"
+        ],
+        "final_answer": "3/8"
+      }
+    },
+    {
+      "day": 9,
+      "title": "Locating Irrational Numbers",
+      "core_concept": "√2 is between 1 and 2; cannot be written as p/q",
+      "ncert_reference": "NCERT Section 1.2 Example 5 — Locate √2 on the number line",
+      "manipulative": "interactive_number_line",
+      "ncert_problem": {
+        "id": "d9_p1",
+        "statement": "Locate √2 on the number line (construct or mark its approximate position).",
+        "steps": [
+          "Identify that 1² = 1 and 2² = 2, so √2 lies between 1 and 2",
+          "Use 1.4 as a reasonable approximation (since 1.4² = 1.96)",
+          "Mark the point on the number line between 1 and 2, closer to 1.4",
+          "Explain why √2 cannot be expressed as p/q"
+        ],
+        "final_answer": "≈1.414 between 1 and 2"
+      }
+    },
+    {
+      "day": 10,
+      "title": "Rational vs Irrational — Classification",
+      "core_concept": "Closure properties; identifying number types",
+      "ncert_reference": "NCERT Ex 1.2 Q1 — True/false about rational and irrational numbers",
+      "manipulative": "interactive_number_line",
+      "ncert_problem": {
+        "id": "d10_p1",
+        "statement": "Classify each number as rational or irrational: √4, √5, 22/7, 0.1010010001…",
+        "steps": [
+          "Simplify √4 = 2 (rational)",
+          "Explain √5 is not a perfect square (irrational)",
+          "22/7 is a ratio of integers (rational)",
+          "0.1010010001… has non-repeating pattern (irrational)"
+        ],
+        "final_answer": "√4 rational; √5 irrational; 22/7 rational; decimal irrational"
+      }
+    }
+  ]
+}
