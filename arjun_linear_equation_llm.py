@@ -56,6 +56,7 @@ OTHER RULES:
 - Strategy 2 Level A/B: options describe operations ("Subtract 6", "Multiply both sides by 5"), NOT numeric x.
 - Strategy 1 and solve-for-x items: correct option is the value of x unless asking for a step.
 - Plausible wrong options; short explanation for each question.
+- For "What is x?" items: substitute your x back into the equation before answering — the correct option MUST satisfy the equation exactly (watch negative signs).
 
 Example (Strategy 2 Level B):
 {{
@@ -161,6 +162,23 @@ def _parse_llm_questions(raw: str, expected_slots: list[tuple[int, str]]) -> lis
             {**q, "options": options, "answer": answer},
             slot,
         )
+        verified_idx = leqs.resolve_x_answer_index(
+            normalized["equation"],
+            normalized["options"],
+            sid=slot[0],
+            lvl=slot[1],
+            instruction=normalized["instruction"],
+            followup=normalized.get("followup", ""),
+        )
+        if verified_idx is not None and verified_idx != normalized["answer"]:
+            normalized["answer"] = verified_idx
+        elif verified_idx is None and leqs.question_asks_for_x_value(
+            slot[0], slot[1], normalized["instruction"], normalized.get("followup", "")
+        ) and leqs.options_look_like_x_values(normalized["options"]):
+            raise ValueError(
+                f"Could not verify x for equation '{normalized['equation']}' "
+                f"(options={normalized['options']})"
+            )
         validated.append(normalized)
 
     if len(validated) < len(expected_slots):

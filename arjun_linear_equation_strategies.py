@@ -224,6 +224,94 @@ def compose_question(instruction: str, equation: str, followup: str = "") -> str
     return f"{inst}. {equation.strip()}."
 
 
+def _parse_x_value(text: str) -> float | None:
+    """Parse a numeric x answer (integer or simple fraction)."""
+    s = _normalize_math_text(str(text).strip())
+    if re.fullmatch(r"-?\d+/\d+", s):
+        num, den = s.split("/", 1)
+        den_i = int(den)
+        if den_i == 0:
+            return None
+        return int(num) / den_i
+    if re.fullmatch(r"-?\d+", s):
+        return float(int(s))
+    return None
+
+
+def _prepare_expr_for_eval(expr: str) -> str:
+    s = _normalize_math_text(expr).replace(" ", "")
+    s = re.sub(r"(\d)\(", r"\1*(", s)
+    s = re.sub(r"\)(\d)", r")*\1", s)
+    s = re.sub(r"(\d)/(\d)([xy])", r"((\1)/(\2)*\3", s)
+    s = re.sub(r"(-?\d+)([xy])", r"\1*\2", s)
+    return s
+
+
+def _eval_expr_at_x(expr: str, x_val: float) -> float:
+    s = _prepare_expr_for_eval(expr)
+    s = re.sub(r"\bx\b", f"({x_val})", s, flags=re.I)
+    if not re.fullmatch(r"[-+*/().0-9]+", s):
+        raise ValueError(f"Unsupported expression: {expr}")
+    return float(eval(s, {"__builtins__": {}}, {}))
+
+
+def equation_holds_for_x(equation: str, x_value: str) -> bool:
+    """True when substituting x_value satisfies the equation."""
+    x_val = _parse_x_value(x_value)
+    if x_val is None:
+        return False
+    eq = _normalize_math_text(equation)
+    if "=" not in eq:
+        return False
+    lhs, rhs = eq.split("=", 1)
+    try:
+        left = _eval_expr_at_x(lhs, x_val)
+        right = _eval_expr_at_x(rhs, x_val)
+    except (ValueError, SyntaxError, ZeroDivisionError, TypeError):
+        return False
+    return abs(left - right) < 1e-6
+
+
+def options_look_like_x_values(options: list[str]) -> bool:
+    return sum(_parse_x_value(o) is not None for o in options) >= 3
+
+
+def question_asks_for_x_value(sid: int, lvl: str, instruction: str, followup: str) -> bool:
+    """True when the MCQ expects a numeric value of x (not a step description)."""
+    if sid == 2 and lvl in ("A", "B"):
+        return False
+    if sid in (5, 6, 7):
+        return False
+    if sid == 4 and lvl in ("B", "E"):
+        return False
+    text = f"{instruction} {followup}".lower()
+    if "what is x" in text or "solve for x" in text or "solve mentally" in text:
+        return True
+    if sid in (1, 2, 3, 4) and lvl in ("A", "B", "C", "D", "E"):
+        return sid != 2 or lvl in ("C", "D", "E")
+    return False
+
+
+def resolve_x_answer_index(
+    equation: str,
+    options: list[str],
+    *,
+    sid: int,
+    lvl: str,
+    instruction: str,
+    followup: str,
+) -> int | None:
+    """Return the option index whose value satisfies the equation, if verifiable."""
+    if not equation or not options_look_like_x_values(options):
+        return None
+    if not question_asks_for_x_value(sid, lvl, instruction, followup):
+        return None
+    matches = [i for i, opt in enumerate(options) if equation_holds_for_x(equation, opt)]
+    if len(matches) == 1:
+        return matches[0]
+    return None
+
+
 def _is_vague_instruction(instruction: str) -> bool:
     text = instruction.strip().lower().rstrip("?").rstrip(":")
     return text in {
