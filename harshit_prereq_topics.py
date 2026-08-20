@@ -602,6 +602,26 @@ def _gen_p1_t5(level: str) -> dict:
 # ── Unit 2 generators ──
 
 
+def _lin_term(coeff: int, var: str) -> str:
+    if coeff == 1:
+        return var
+    if coeff == -1:
+        return f"-{var}"
+    return f"{coeff}{var}"
+
+
+def _lin_eq(a: int, b: int, c: int) -> str:
+    parts: list[str] = []
+    if a != 0:
+        parts.append(_lin_term(a, "x"))
+    if b != 0:
+        if parts:
+            parts.append(f"+ {_lin_term(b, 'y')}" if b > 0 else f"- {_lin_term(-b, 'y')}")
+        else:
+            parts.append(_lin_term(b, "y"))
+    return f"{' '.join(parts)} = {c}"
+
+
 def _gen_p2_t1(level: str) -> dict:
     a, b = random.randint(1, 5), random.randint(1, 5)
     c, d = random.randint(1, 4), random.randint(1, 4)
@@ -635,19 +655,19 @@ def _gen_p2_t4(level: str) -> dict:
         y = (c - a * x) // b if (c - a * x) % b == 0 else (c - a * x) / b
         correct = str(int(y)) if y == int(y) else str(Fraction(y).limit_denominator())
         opts, ans = _shuffle_options(correct, [str(x + b), str(a * x), str(c - a)])
-        return _mcq(2, 4, level, f"For {a}x + {b}y = {c}, find y when x = {x}.", opts, ans)
+        return _mcq(2, 4, level, f"For {_lin_eq(a, b, c)}, find y when x = {x}.", opts, ans)
     if level in ("B", "D"):
         y = random.randint(0, 4)
         x_val = (c - b * y) // a if (c - b * y) % a == 0 else (c - b * y) / a
         correct = str(int(x_val)) if x_val == int(x_val) else str(Fraction(x_val).limit_denominator())
         opts, ans = _shuffle_options(correct, [str(y + a), str(b * y), str(c - b)])
-        return _mcq(2, 4, level, f"For {a}x + {b}y = {c}, find x when y = {y}.", opts, ans)
+        return _mcq(2, 4, level, f"For {_lin_eq(a, b, c)}, find x when y = {y}.", opts, ans)
     a, b, c = 2, 3, 12
     x = random.randint(1, 3)
     y = Fraction(c - a * x, b)
     correct = str(y)
     opts, ans = _shuffle_options(correct, [str(y + 1), str(Fraction(c, b)), str(x)])
-    return _mcq(2, 4, level, f"For {a}x + {b}y = {c}, find y when x = {x}.", opts, ans)
+    return _mcq(2, 4, level, f"For {_lin_eq(a, b, c)}, find y when x = {x}.", opts, ans)
 
 
 def _gen_p2_t5(level: str) -> dict:
@@ -659,14 +679,14 @@ def _gen_p2_t5(level: str) -> dict:
             y = (c - a * 0) // b
         correct = str(y)
         opts, ans = _shuffle_options(correct, [str(y + 1), str(b), str(c // a if a else c)])
-        return _mcq(2, 5, level, f"For {a}x + {b}y = {c}, complete (0, ?).", opts, ans)
+        return _mcq(2, 5, level, f"For {_lin_eq(a, b, c)}, complete (0, ?).", opts, ans)
     if level in ("B", "D"):
         x = c // a if c % a == 0 else random.randint(1, 4)
         correct = str(x)
         opts, ans = _shuffle_options(correct, [str(x + 1), str(a), str(c // b if b else c)])
-        return _mcq(2, 5, level, f"For {a}x + {b}y = {c}, complete (?, 0).", opts, ans)
+        return _mcq(2, 5, level, f"For {_lin_eq(a, b, c)}, complete (?, 0).", opts, ans)
     opts, ans = _shuffle_options("Infinitely many", ["Exactly one", "None", "Two only"])
-    return _mcq(2, 5, level, f"How many solutions does {a}x + {b}y = {c} have?", opts, ans)
+    return _mcq(2, 5, level, f"How many solutions does {_lin_eq(a, b, c)} have?", opts, ans)
 
 
 def _gen_p2_t6(level: str) -> dict:
@@ -679,7 +699,7 @@ def _gen_p2_t6(level: str) -> dict:
         f"({2 - 1}, {2 - 1})",
     ]
     opts, ans = _shuffle_options(good, bad)
-    return _mcq(2, 6, level, f"Which point lies on {a}x + {b}y = {c}?", opts, ans)
+    return _mcq(2, 6, level, f"Which point lies on {_lin_eq(a, b, c)}?", opts, ans)
 
 
 def _gen_p2_t7(level: str) -> dict:
@@ -687,8 +707,8 @@ def _gen_p2_t7(level: str) -> dict:
     total = random.randint(20, 40)
     if level in ("A", "D"):
         opts, ans = _shuffle_options(
-            f"{x_cost}x + {y_cost}y = {total}",
-            [f"x + y = {total}", f"{x_cost}x = {y_cost}y", f"{x_cost}x - {y_cost}y = {total}"],
+            _lin_eq(x_cost, y_cost, total),
+            [f"x + y = {total}", f"{x_cost}x = {y_cost}y", f"{_lin_eq(x_cost, -y_cost, total)}"],
         )
         return _mcq(
             2, 7, level,
@@ -703,7 +723,7 @@ def _gen_p2_t7(level: str) -> dict:
     opts, ans = _shuffle_options(correct, [str(y + 2), str(x), str(c)])
     return _mcq(
         2, 7, level,
-        f"Using {a}x + {b}y = {c}, if x = {x}, what is y?",
+        f"Using {_lin_eq(a, b, c)}, if x = {x}, what is y?",
         opts, ans,
     )
 

@@ -83,7 +83,7 @@
       },
       {
         "id": "p2_t6_D_5eea31aa",
-        "question": "Which point lies on 1x + 3y = 8?",
+        "question": "Which point lies on x + 3y = 8?",
         "options": [
           "(1, 1)",
           "(2, 3)",
@@ -103,7 +103,7 @@
       },
       {
         "id": "p2_t6_D_f861193d",
-        "question": "Which point lies on 3x + 1y = 8?",
+        "question": "Which point lies on 3x + y = 8?",
         "options": [
           "(1, 1)",
           "(3, 2)",
@@ -123,7 +123,7 @@
       },
       {
         "id": "p2_t6_D_28514c2b",
-        "question": "Which point lies on 1x + 2y = 6?",
+        "question": "Which point lies on x + 2y = 6?",
         "options": [
           "(2, 3)",
           "(2, 2)",
@@ -220,12 +220,32 @@
         "source": "chapter_seed",
         "chapter_num": 4,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t6_D_0905f01e",
+        "question": "Which point lies on x + y = 4?",
+        "options": [
+          "(2, 2)",
+          "(1, 1)",
+          "(3, 2)",
+          "(2, 3)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 6,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t6_D",
+        "category_label": "Graph · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "A": [
       {
         "id": "p2_t6_A_81720d3d",
-        "question": "Which point lies on 1x + 3y = 8?",
+        "question": "Which point lies on x + 3y = 8?",
         "options": [
           "(3, 2)",
           "(2, 2)",
@@ -245,7 +265,7 @@
       },
       {
         "id": "p2_t6_A_ac6486fe",
-        "question": "Which point lies on 2x + 1y = 6?",
+        "question": "Which point lies on 2x + y = 6?",
         "options": [
           "(2, 2)",
           "(2, 3)",
@@ -265,7 +285,7 @@
       },
       {
         "id": "p2_t6_A_7c359f04",
-        "question": "Which point lies on 1x + 2y = 6?",
+        "question": "Which point lies on x + 2y = 6?",
         "options": [
           "(3, 2)",
           "(1, 1)",
@@ -305,7 +325,7 @@
       },
       {
         "id": "p2_t6_A_fe463592",
-        "question": "Which point lies on 1x + 1y = 4?",
+        "question": "Which point lies on x + y = 4?",
         "options": [
           "(2, 3)",
           "(3, 2)",
@@ -325,7 +345,7 @@
       },
       {
         "id": "p2_t6_A_c9f9720d",
-        "question": "Which point lies on 3x + 1y = 8?",
+        "question": "Which point lies on 3x + y = 8?",
         "options": [
           "(2, 2)",
           "(3, 2)",
@@ -353,7 +373,7 @@
           "(5, 0)"
         ],
         "answer": 2,
-        "explanation": "The excerpt rewrites x = -5 as 1x + 0y + 5 = 0, so the point with x = -5 and any y works.",
+        "explanation": "The excerpt rewrites x = -5 as x + 0y + 5 = 0, so the point with x = -5 and any y works.",
         "topic": 6,
         "level": "A",
         "prereq_id": 2,
@@ -467,7 +487,7 @@
     "B": [
       {
         "id": "p2_t6_B_cf282cc0",
-        "question": "Which point lies on 1x + 3y = 8?",
+        "question": "Which point lies on x + 3y = 8?",
         "options": [
           "(2, 2)",
           "(1, 1)",
@@ -507,7 +527,7 @@
       },
       {
         "id": "p2_t6_B_a124e81a",
-        "question": "Which point lies on 1x + 2y = 6?",
+        "question": "Which point lies on x + 2y = 6?",
         "options": [
           "(1, 1)",
           "(2, 2)",
@@ -547,7 +567,7 @@
       },
       {
         "id": "p2_t6_B_9067e88e",
-        "question": "Which point lies on 3x + 1y = 8?",
+        "question": "Which point lies on 3x + y = 8?",
         "options": [
           "(2, 3)",
           "(1, 1)",
@@ -587,7 +607,7 @@
       },
       {
         "id": "p2_t6_B_4d167848",
-        "question": "Which point lies on 1x + 1y = 4?",
+        "question": "Which point lies on x + y = 4?",
         "options": [
           "(2, 2)",
           "(3, 2)",
@@ -595,6 +615,26 @@
           "(1, 1)"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 6,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t6_B",
+        "category_label": "Graph · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t6_B_65f0b09a",
+        "question": "Which point lies on 2x + y = 6?",
+        "options": [
+          "(3, 2)",
+          "(2, 3)",
+          "(1, 1)",
+          "(2, 2)"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 6,
         "level": "B",
@@ -649,7 +689,7 @@
       },
       {
         "id": "p2_t6_C_cae513d7",
-        "question": "Which point lies on 1x + 2y = 6?",
+        "question": "Which point lies on x + 2y = 6?",
         "options": [
           "(1, 1)",
           "(2, 2)",
@@ -669,7 +709,7 @@
       },
       {
         "id": "p2_t6_C_e3fe2a9b",
-        "question": "Which point lies on 1x + 3y = 8?",
+        "question": "Which point lies on x + 3y = 8?",
         "options": [
           "(1, 1)",
           "(3, 2)",
@@ -709,7 +749,7 @@
       },
       {
         "id": "p2_t6_C_abbe2b39",
-        "question": "Which point lies on 3x + 1y = 8?",
+        "question": "Which point lies on 3x + y = 8?",
         "options": [
           "(2, 2)",
           "(1, 1)",
@@ -749,7 +789,7 @@
       },
       {
         "id": "p2_t6_C_8cc61ead",
-        "question": "Which point lies on 1x + 1y = 4?",
+        "question": "Which point lies on x + y = 4?",
         "options": [
           "(3, 2)",
           "(1, 1)",
@@ -766,12 +806,32 @@
         "source": "chapter_seed",
         "chapter_num": 4,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t6_C_54f48842",
+        "question": "Which point lies on 2x + y = 6?",
+        "options": [
+          "(2, 3)",
+          "(2, 2)",
+          "(3, 2)",
+          "(1, 1)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 6,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t6_C",
+        "category_label": "Graph · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "E": [
       {
         "id": "p2_t6_E_098f2979",
-        "question": "Which point lies on 1x + 2y = 6?",
+        "question": "Which point lies on x + 2y = 6?",
         "options": [
           "(2, 2)",
           "(3, 2)",
@@ -811,7 +871,7 @@
       },
       {
         "id": "p2_t6_E_56e4e6ab",
-        "question": "Which point lies on 2x + 1y = 6?",
+        "question": "Which point lies on 2x + y = 6?",
         "options": [
           "(1, 1)",
           "(2, 2)",
@@ -851,7 +911,7 @@
       },
       {
         "id": "p2_t6_E_fed341fc",
-        "question": "Which point lies on 1x + 1y = 4?",
+        "question": "Which point lies on x + y = 4?",
         "options": [
           "(2, 2)",
           "(1, 1)",
@@ -871,7 +931,7 @@
       },
       {
         "id": "p2_t6_E_673d4715",
-        "question": "Which point lies on 3x + 1y = 8?",
+        "question": "Which point lies on 3x + y = 8?",
         "options": [
           "(1, 1)",
           "(3, 2)",

@@ -175,8 +175,10 @@ def normalize_question(raw: dict, prereq_id: int, topic_id: int, level: str) -> 
     ch = chapter_for_topic(prereq_id, topic_id)
     return {
         "id": qid,
-        "question": hmr.sanitize_grok_math_text(str(raw.get("question", ""))).strip(),
-        "options": options,
+        "question": hmr.normalize_unit_coefficients(
+            hmr.sanitize_grok_math_text(str(raw.get("question", "")))
+        ).strip(),
+        "options": [hmr.normalize_unit_coefficients(o) for o in options],
         "answer": answer,
         "explanation": hmr.sanitize_grok_math_text(str(raw.get("explanation", ""))).strip(),
         "topic": topic_id,

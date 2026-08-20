@@ -11,7 +11,7 @@
           "2x - y = 0"
         ],
         "answer": 1,
-        "explanation": "The statement gives x = 2y, rewritten as x - 2y = 0 in the form ax + by + c = 0 as shown in Exercise 4.1 Q1.",
+        "explanation": "The statement gives x = 2y, rewritten as x - 2y = 0 in the form ax + by + c = 0 as shown in Exercise 4.1 Q^1.",
         "topic": 7,
         "level": "E",
         "prereq_id": 2,
@@ -51,7 +51,7 @@
           "-x + 0y - 5 = 0"
         ],
         "answer": 2,
-        "explanation": "As in Example 2(i), x = -5 becomes 1x + 0y + 5 = 0.",
+        "explanation": "As in Example 2(i), x = -5 becomes x + 0y + 5 = 0.",
         "topic": 7,
         "level": "E",
         "prereq_id": 2,
@@ -369,6 +369,86 @@
           "1",
           "22",
           "2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 7,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t7_E",
+        "category_label": "Word Prob · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_E_890d3867",
+        "question": "Using 5x + 4y = 26, if x = 3, what is y?",
+        "options": [
+          "2",
+          "26",
+          "3",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 7,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t7_E",
+        "category_label": "Word Prob · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_E_c691cfa9",
+        "question": "Using 5x + 7y = 40, if x = 3, what is y?",
+        "options": [
+          "3",
+          "1",
+          "40",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 7,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t7_E",
+        "category_label": "Word Prob · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_E_8747d13b",
+        "question": "Using 2x + 5y = 24, if x = 2, what is y?",
+        "options": [
+          "6",
+          "24",
+          "4",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 7,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t7_E",
+        "category_label": "Word Prob · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_E_f01b5839",
+        "question": "Using 4x + 4y = 22, if x = 3, what is y?",
+        "options": [
+          "22",
+          "1",
+          "2",
+          "3"
         ],
         "answer": 1,
         "explanation": "",
@@ -762,6 +842,86 @@
         "source": "chapter_seed",
         "chapter_num": 4,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_A_e7cced14",
+        "question": "A shop sells items at ₹4 and ₹5. Total spent is ₹31. Which equation models x items at ₹4 and y items at ₹5?",
+        "options": [
+          "4x - 5y = 31",
+          "4x + 5y = 31",
+          "x + y = 31",
+          "4x = 5y"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 7,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t7_A",
+        "category_label": "Word Prob · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_A_d5c5232f",
+        "question": "A shop sells items at ₹5 and ₹5. Total spent is ₹28. Which equation models x items at ₹5 and y items at ₹5?",
+        "options": [
+          "5x + 5y = 28",
+          "x + y = 28",
+          "5x - 5y = 28",
+          "5x = 5y"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 7,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t7_A",
+        "category_label": "Word Prob · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_A_4f2fefda",
+        "question": "A shop sells items at ₹2 and ₹5. Total spent is ₹38. Which equation models x items at ₹2 and y items at ₹5?",
+        "options": [
+          "2x = 5y",
+          "x + y = 38",
+          "2x + 5y = 38",
+          "2x - 5y = 38"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 7,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t7_A",
+        "category_label": "Word Prob · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_A_2166186b",
+        "question": "A shop sells items at ₹2 and ₹3. Total spent is ₹33. Which equation models x items at ₹2 and y items at ₹3?",
+        "options": [
+          "x + y = 33",
+          "2x = 3y",
+          "2x - 3y = 33",
+          "2x + 3y = 33"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 7,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t7_A",
+        "category_label": "Word Prob · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -1055,6 +1215,86 @@
           "1"
         ],
         "answer": 3,
+        "explanation": "",
+        "topic": 7,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t7_B",
+        "category_label": "Word Prob · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_B_bc3865da",
+        "question": "Using 2x + 6y = 32, if x = 4, what is y?",
+        "options": [
+          "32",
+          "5",
+          "4",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 7,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t7_B",
+        "category_label": "Word Prob · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_B_0d884327",
+        "question": "Using 5x + 5y = 37, if x = 4, what is y?",
+        "options": [
+          "3",
+          "1",
+          "37",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 7,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t7_B",
+        "category_label": "Word Prob · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_B_e8e2d774",
+        "question": "Using 2x + 4y = 22, if x = 1, what is y?",
+        "options": [
+          "1",
+          "5",
+          "22",
+          "7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 7,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t7_B",
+        "category_label": "Word Prob · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_B_31e8245c",
+        "question": "Using 2x + 3y = 24, if x = 3, what is y?",
+        "options": [
+          "6",
+          "8",
+          "24",
+          "3"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 7,
         "level": "B",
@@ -1366,6 +1606,66 @@
         "source": "chapter_seed",
         "chapter_num": 4,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_C_e6771524",
+        "question": "Using 3x + 3y = 29, if x = 3, what is y?",
+        "options": [
+          "3",
+          "29",
+          "2",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 7,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t7_C",
+        "category_label": "Word Prob · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_C_d736de83",
+        "question": "Using 2x + 4y = 29, if x = 4, what is y?",
+        "options": [
+          "1",
+          "4",
+          "29",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 7,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t7_C",
+        "category_label": "Word Prob · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_C_33eb023c",
+        "question": "Using 5x + 4y = 30, if x = 2, what is y?",
+        "options": [
+          "2",
+          "7",
+          "30",
+          "5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 7,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t7_C",
+        "category_label": "Word Prob · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -1657,6 +1957,86 @@
           "5x + 3y = 32",
           "5x = 3y",
           "x + y = 32"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 7,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t7_D",
+        "category_label": "Word Prob · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_D_e03c06ce",
+        "question": "A shop sells items at ₹2 and ₹3. Total spent is ₹28. Which equation models x items at ₹2 and y items at ₹3?",
+        "options": [
+          "x + y = 28",
+          "2x - 3y = 28",
+          "2x + 3y = 28",
+          "2x = 3y"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 7,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t7_D",
+        "category_label": "Word Prob · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_D_080a8113",
+        "question": "A shop sells items at ₹5 and ₹4. Total spent is ₹28. Which equation models x items at ₹5 and y items at ₹4?",
+        "options": [
+          "5x = 4y",
+          "5x + 4y = 28",
+          "5x - 4y = 28",
+          "x + y = 28"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 7,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t7_D",
+        "category_label": "Word Prob · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_D_184bc931",
+        "question": "A shop sells items at ₹4 and ₹4. Total spent is ₹38. Which equation models x items at ₹4 and y items at ₹4?",
+        "options": [
+          "x + y = 38",
+          "4x - 4y = 38",
+          "4x = 4y",
+          "4x + 4y = 38"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 7,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t7_D",
+        "category_label": "Word Prob · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t7_D_1a7b7db0",
+        "question": "A shop sells items at ₹2 and ₹3. Total spent is ₹20. Which equation models x items at ₹2 and y items at ₹3?",
+        "options": [
+          "x + y = 20",
+          "2x + 3y = 20",
+          "2x - 3y = 20",
+          "2x = 3y"
         ],
         "answer": 1,
         "explanation": "",

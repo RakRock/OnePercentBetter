@@ -86,7 +86,7 @@
         "question": "Factor: 6x + 6",
         "options": [
           "6x",
-          "6(1x + 1)",
+          "6(x + 1)",
           "6x + 1",
           "(7)x + 1"
         ],
@@ -148,7 +148,7 @@
           "(6)x + 1",
           "5x + 1",
           "5x",
-          "5(1x + 1)"
+          "5(x + 1)"
         ],
         "answer": 3,
         "explanation": "",
@@ -208,7 +208,7 @@
           "(4)x + 1",
           "3x",
           "3x + 1",
-          "3(1x + 1)"
+          "3(x + 1)"
         ],
         "answer": 3,
         "explanation": "",
@@ -243,7 +243,7 @@
       },
       {
         "id": "p2_t3_A_22bc4851",
-        "question": "How many variables are in the polynomial p2 + q10 + r?",
+        "question": "How many variables are in the polynomial p^2 + q^10 + r?",
         "options": [
           "2",
           "1",
@@ -251,7 +251,7 @@
           "3"
         ],
         "answer": 3,
-        "explanation": "The excerpt lists p2 + q10 + r as a polynomial in the three variables p, q and r.",
+        "explanation": "The excerpt lists p^2 + q^10 + r as a polynomial in the three variables p, q and r.",
         "topic": 3,
         "level": "A",
         "prereq_id": 2,
@@ -263,7 +263,7 @@
       },
       {
         "id": "p2_t3_A_291821a4",
-        "question": "How many variables are in the polynomial u3 + v2?",
+        "question": "How many variables are in the polynomial u^3 + v^2?",
         "options": [
           "3",
           "4",
@@ -271,7 +271,7 @@
           "2"
         ],
         "answer": 3,
-        "explanation": "The excerpt gives u3 + v2 as a polynomial in the two variables u and v.",
+        "explanation": "The excerpt gives u^3 + v^2 as a polynomial in the two variables u and v.",
         "topic": 3,
         "level": "A",
         "prereq_id": 2,
@@ -440,6 +440,26 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_A_a47954c3",
+        "question": "Factor: 25x + 5",
+        "options": [
+          "5(5x + 1)",
+          "25x",
+          "(10)x + 1",
+          "5x + 5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -465,7 +485,7 @@
       },
       {
         "id": "p2_t3_B_6fd2c07d",
-        "question": "What is p(1) for p(x) = 5x^3 – 2x^2 + 3x – 2?",
+        "question": "What is p(1) for p(x) = 5x^3 - 2x^2 + 3x - 2?",
         "options": [
           "3",
           "4",
@@ -473,7 +493,7 @@
           "5"
         ],
         "answer": 1,
-        "explanation": "Substitute x = 1 to obtain 5(1)^3 – 2(1)^2 + 3(1) – 2 = 4, matching the evaluation method in the chapter.",
+        "explanation": "Substitute x = 1 to obtain 5(1)^3 - 2(1)^2 + 3(1) - 2 = 4, matching the evaluation method in the chapter.",
         "topic": 3,
         "level": "B",
         "prereq_id": 2,
@@ -485,7 +505,7 @@
       },
       {
         "id": "p2_t3_B_fdce5d55",
-        "question": "Which value is a zero of p(x) = x^2 – 2x?",
+        "question": "Which value is a zero of p(x) = x^2 - 2x?",
         "options": [
           "2",
           "3",
@@ -493,7 +513,7 @@
           "-1"
         ],
         "answer": 0,
-        "explanation": "p(2) = 4 – 4 = 0, confirming 2 is a zero as verified in the chapter examples.",
+        "explanation": "p(2) = 4 - 4 = 0, confirming 2 is a zero as verified in the chapter examples.",
         "topic": 3,
         "level": "B",
         "prereq_id": 2,
@@ -630,7 +650,7 @@
           "4x",
           "4x + 1",
           "(5)x + 1",
-          "4(1x + 1)"
+          "4(x + 1)"
         ],
         "answer": 3,
         "explanation": "",
@@ -742,6 +762,66 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_B_83faaa00",
+        "question": "Factor: 6x + 6",
+        "options": [
+          "6(x + 1)",
+          "6x",
+          "(7)x + 1",
+          "6x + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_B_74e89421",
+        "question": "Factor: 6x + 3",
+        "options": [
+          "3x + 2",
+          "(5)x + 1",
+          "3(2x + 1)",
+          "6x"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_B_280ebbb2",
+        "question": "Factor: 20x + 5",
+        "options": [
+          "(9)x + 1",
+          "20x",
+          "5(4x + 1)",
+          "5x + 4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "C": [
@@ -767,7 +847,7 @@
       },
       {
         "id": "p2_t3_C_28a70885",
-        "question": "Find p(1) for p(x) = 5x³ – 2x² + 3x – 2.",
+        "question": "Find p(1) for p(x) = 5x³ - 2x² + 3x - 2.",
         "options": [
           "4",
           "5",
@@ -775,7 +855,7 @@
           "3"
         ],
         "answer": 0,
-        "explanation": "Substituting x=1 gives 5(1)³ – 2(1)² + 3(1) – 2 = 5 – 2 + 3 – 2 = 4, as shown in the example.",
+        "explanation": "Substituting x=1 gives 5(1)³ - 2(1)² + 3(1) - 2 = 5 - 2 + 3 - 2 = 4, as shown in the example.",
         "topic": 3,
         "level": "C",
         "prereq_id": 2,
@@ -790,12 +870,12 @@
         "question": "Which number is a zero of the polynomial x + 2?",
         "options": [
           "2",
-          "–2",
+          "-2",
           "1",
           "0"
         ],
         "answer": 1,
-        "explanation": "p(–2) = –2 + 2 = 0, so –2 is a zero while p(2) = 4 ≠ 0.",
+        "explanation": "p(-2) = -2 + 2 = 0, so -2 is a zero while p(2) = 4 ≠ 0.",
         "topic": 3,
         "level": "C",
         "prereq_id": 2,
@@ -815,7 +895,7 @@
           "One and only one"
         ],
         "answer": 3,
-        "explanation": "A linear polynomial ax + b (a ≠ 0) has exactly one zero given by x = –b/a.",
+        "explanation": "A linear polynomial ax + b (a ≠ 0) has exactly one zero given by x = -b/a.",
         "topic": 3,
         "level": "C",
         "prereq_id": 2,
@@ -952,7 +1032,7 @@
           "4x",
           "4x + 1",
           "(5)x + 1",
-          "4(1x + 1)"
+          "4(x + 1)"
         ],
         "answer": 3,
         "explanation": "",
@@ -1044,6 +1124,66 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_C_d978e261",
+        "question": "Factor: 3x + 3",
+        "options": [
+          "3x",
+          "3(x + 1)",
+          "(4)x + 1",
+          "3x + 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_C_d5513b53",
+        "question": "Factor: 6x + 3",
+        "options": [
+          "3x + 2",
+          "3(2x + 1)",
+          "(5)x + 1",
+          "6x"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_C_3c2e3c04",
+        "question": "Factor: 5x + 5",
+        "options": [
+          "5(x + 1)",
+          "(6)x + 1",
+          "5x + 1",
+          "5x"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -1057,7 +1197,7 @@
           "(x-1)²"
         ],
         "answer": 2,
-        "explanation": "x² - 1 uses difference of squares as (x-1)(x+1), matching the form in Exercise 2.2 Q4(iv).",
+        "explanation": "x² - 1 uses difference of squares as (x-1)(x+1), matching the form in Exercise 2.2 Q^4(iv).",
         "topic": 3,
         "level": "D",
         "prereq_id": 2,
@@ -1192,7 +1332,7 @@
         "question": "Factor: 5x + 5",
         "options": [
           "5x",
-          "5(1x + 1)",
+          "5(x + 1)",
           "5x + 1",
           "(6)x + 1"
         ],
@@ -1214,7 +1354,7 @@
           "3x + 1",
           "3x",
           "(4)x + 1",
-          "3(1x + 1)"
+          "3(x + 1)"
         ],
         "answer": 3,
         "explanation": "",
@@ -1326,6 +1466,66 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_D_ef4a136e",
+        "question": "Factor: 18x + 6",
+        "options": [
+          "(9)x + 1",
+          "18x",
+          "6x + 3",
+          "6(3x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_D_966c8f26",
+        "question": "Factor: 20x + 4",
+        "options": [
+          "4x + 5",
+          "20x",
+          "(9)x + 1",
+          "4(5x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_D_189425f2",
+        "question": "Factor: 8x + 2",
+        "options": [
+          "8x",
+          "2x + 4",
+          "2(4x + 1)",
+          "(6)x + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -1351,7 +1551,7 @@
       },
       {
         "id": "p2_t3_E_6237b5e7",
-        "question": "Find p(1) for p(x) = 5x² – 3x + 7.",
+        "question": "Find p(1) for p(x) = 5x² - 3x + 7.",
         "options": [
           "9",
           "4",
@@ -1359,7 +1559,7 @@
           "5"
         ],
         "answer": 0,
-        "explanation": "Substitute x=1: 5(1)² – 3(1) + 7 = 5 – 3 + 7 = 9, as in Example 2.",
+        "explanation": "Substitute x=1: 5(1)² - 3(1) + 7 = 5 - 3 + 7 = 9, as in Example 2.",
         "topic": 3,
         "level": "E",
         "prereq_id": 2,
@@ -1376,10 +1576,10 @@
           "2",
           "0",
           "1",
-          "–2"
+          "-2"
         ],
         "answer": 3,
-        "explanation": "p(–2) = –2 + 2 = 0, so –2 is a zero as shown in Example 3.",
+        "explanation": "p(-2) = -2 + 2 = 0, so -2 is a zero as shown in Example 3.",
         "topic": 3,
         "level": "E",
         "prereq_id": 2,
@@ -1435,7 +1635,7 @@
         "options": [
           "2x + 1",
           "2x",
-          "2(1x + 1)",
+          "2(x + 1)",
           "(3)x + 1"
         ],
         "answer": 2,
@@ -1476,7 +1676,7 @@
           "6x + 1",
           "(7)x + 1",
           "6x",
-          "6(1x + 1)"
+          "6(x + 1)"
         ],
         "answer": 3,
         "explanation": "",
@@ -1635,10 +1835,50 @@
         "options": [
           "5x + 1",
           "5x",
-          "5(1x + 1)",
+          "5(x + 1)",
           "(6)x + 1"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_E_7b13b176",
+        "question": "Factor: 12x + 3",
+        "options": [
+          "(7)x + 1",
+          "12x",
+          "3(4x + 1)",
+          "3x + 4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_E_dc7cf44e",
+        "question": "Factor: 10x + 2",
+        "options": [
+          "2(5x + 1)",
+          "10x",
+          "(7)x + 1",
+          "2x + 5"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 3,
         "level": "E",

@@ -3,7 +3,7 @@
     "A": [
       {
         "id": "p2_t1_A_d8ceaba8",
-        "question": "Combine like terms: 5x − 2x + 3x from the expression 5x³ − 2x² + 3x − 2.",
+        "question": "Combine like terms: 5x - 2x + 3x from the expression 5x³ - 2x² + 3x - 2.",
         "options": [
           "6x",
           "4x",
@@ -11,7 +11,7 @@
           "5x"
         ],
         "answer": 0,
-        "explanation": "Like terms with the same variable x are added by combining coefficients: 5 − 2 + 3 = 6, giving 6x as in the polynomial evaluation style of Example 2.",
+        "explanation": "Like terms with the same variable x are added by combining coefficients: 5 - 2 + 3 = 6, giving 6x as in the polynomial evaluation style of Example 2.",
         "topic": 1,
         "level": "A",
         "prereq_id": 2,
@@ -23,7 +23,7 @@
       },
       {
         "id": "p2_t1_A_153df13b",
-        "question": "Subtract like terms: 4x² − x² from the terms in 5x³ + 4x² + 7x.",
+        "question": "Subtract like terms: 4x² - x² from the terms in 5x³ + 4x² + 7x.",
         "options": [
           "5x²",
           "3x²",
@@ -31,7 +31,7 @@
           "4x²"
         ],
         "answer": 1,
-        "explanation": "Subtract coefficients of like terms x²: 4 − 1 = 3, yielding 3x² following the coefficient identification in Exercise 2.1 Q2.",
+        "explanation": "Subtract coefficients of like terms x²: 4 - 1 = 3, yielding 3x² following the coefficient identification in Exercise 2.1 Q^2.",
         "topic": 1,
         "level": "A",
         "prereq_id": 2,
@@ -43,15 +43,15 @@
       },
       {
         "id": "p2_t1_A_6afe22bb",
-        "question": "Add the constant terms −2 and −2 from p(x) = 5x³ − 2x² + 3x − 2.",
+        "question": "Add the constant terms -2 and -2 from p(x) = 5x³ - 2x² + 3x - 2.",
         "options": [
-          "−4",
+          "-4",
           "0",
-          "−2",
+          "-2",
           "4"
         ],
         "answer": 0,
-        "explanation": "Constants are like terms; −2 + (−2) = −4, matching the constant polynomial handling and p(1) calculation in the chapter.",
+        "explanation": "Constants are like terms; -2 + (-2) = -4, matching the constant polynomial handling and p(1) calculation in the chapter.",
         "topic": 1,
         "level": "A",
         "prereq_id": 2,
@@ -63,15 +63,15 @@
       },
       {
         "id": "p2_t1_A_6ef6f4b2",
-        "question": "Combine like terms: −2x² + x² in the polynomial 5x³ − 2x² + 3x − 2.",
+        "question": "Combine like terms: -2x² + x² in the polynomial 5x³ - 2x² + 3x - 2.",
         "options": [
-          "−3x²",
-          "−2x²",
+          "-3x²",
+          "-2x²",
           "x²",
-          "−x²"
+          "-x²"
         ],
         "answer": 3,
-        "explanation": "Add coefficients of x² terms: −2 + 1 = −1, resulting in −x² as done when evaluating polynomials at specific values.",
+        "explanation": "Add coefficients of x² terms: -2 + 1 = -1, resulting in -x² as done when evaluating polynomials at specific values.",
         "topic": 1,
         "level": "A",
         "prereq_id": 2,
@@ -123,9 +123,9 @@
       },
       {
         "id": "p2_t1_A_d1ee09a1",
-        "question": "Simplify: (1x + 5) + (1x + 4)",
+        "question": "Simplify: (x + 5) + (x + 4)",
         "options": [
-          "1x + 6",
+          "x + 6",
           "2x + 9",
           "3x + 9",
           "2x + 10"
@@ -183,9 +183,9 @@
       },
       {
         "id": "p2_t1_A_f516434f",
-        "question": "Simplify: (1x + 2) + (3x + 4)",
+        "question": "Simplify: (x + 2) + (3x + 4)",
         "options": [
-          "1x + 5",
+          "x + 5",
           "4x + 6",
           "4x + 7",
           "5x + 6"
@@ -203,7 +203,7 @@
       },
       {
         "id": "p2_t1_A_430cbcf6",
-        "question": "Simplify: (5x + 2) + (1x + 4)",
+        "question": "Simplify: (5x + 2) + (x + 4)",
         "options": [
           "6x + 7",
           "6x + 6",
@@ -223,9 +223,9 @@
       },
       {
         "id": "p2_t1_A_85532370",
-        "question": "Simplify: (1x + 3) + (4x + 3)",
+        "question": "Simplify: (x + 3) + (4x + 3)",
         "options": [
-          "1x + 7",
+          "x + 7",
           "5x + 7",
           "6x + 6",
           "5x + 6"
@@ -303,7 +303,7 @@
       },
       {
         "id": "p2_t1_A_c6bcd167",
-        "question": "Simplify: (2x + 2) + (1x + 1)",
+        "question": "Simplify: (2x + 2) + (x + 1)",
         "options": [
           "2x + 3",
           "3x + 4",
@@ -323,9 +323,9 @@
       },
       {
         "id": "p2_t1_A_189d7c12",
-        "question": "Simplify: (1x + 1) + (4x + 1)",
+        "question": "Simplify: (x + 1) + (4x + 1)",
         "options": [
-          "1x + 5",
+          "x + 5",
           "5x + 3",
           "5x + 2",
           "6x + 2"
@@ -343,7 +343,7 @@
       },
       {
         "id": "p2_t1_A_5a3af79d",
-        "question": "Simplify: (2x + 3) + (1x + 1)",
+        "question": "Simplify: (2x + 3) + (x + 1)",
         "options": [
           "3x + 5",
           "3x + 4",
@@ -363,10 +363,10 @@
       },
       {
         "id": "p2_t1_A_e5dc8879",
-        "question": "Simplify: (1x + 3) + (3x + 4)",
+        "question": "Simplify: (x + 3) + (3x + 4)",
         "options": [
           "4x + 7",
-          "1x + 6",
+          "x + 6",
           "5x + 7",
           "4x + 8"
         ],
@@ -420,6 +420,66 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_64ae58c0",
+        "question": "Simplify: (2x + 2) + (x + 4)",
+        "options": [
+          "3x + 6",
+          "2x + 3",
+          "4x + 6",
+          "3x + 7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_5fab3ea0",
+        "question": "Simplify: (x + 3) + (2x + 4)",
+        "options": [
+          "4x + 7",
+          "3x + 8",
+          "3x + 7",
+          "x + 5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_73af5860",
+        "question": "Simplify: (x + 2) + (4x + 1)",
+        "options": [
+          "x + 6",
+          "5x + 3",
+          "6x + 3",
+          "5x + 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -445,12 +505,12 @@
       },
       {
         "id": "p2_t1_B_4a462130",
-        "question": "Subtract: (x¹⁰ + y³ + t⁵⁰) − (y³ + 2).",
+        "question": "Subtract: (x¹⁰ + y³ + t⁵⁰) - (y³ + 2).",
         "options": [
-          "x¹⁰ + 2y³ + t⁵⁰ − 2",
-          "x¹⁰ + y³ + t⁵⁰ − 2",
-          "x¹⁰ + t⁵⁰ − 2",
-          "x¹⁰ − y³ + t⁵⁰ − 2"
+          "x¹⁰ + 2y³ + t⁵⁰ - 2",
+          "x¹⁰ + y³ + t⁵⁰ - 2",
+          "x¹⁰ + t⁵⁰ - 2",
+          "x¹⁰ - y³ + t⁵⁰ - 2"
         ],
         "answer": 2,
         "explanation": "Subtract by changing signs of unlike terms; y³ terms cancel leaving only unlike terms x¹⁰, t⁵⁰ and constant.",
@@ -465,12 +525,12 @@
       },
       {
         "id": "p2_t1_B_2798c964",
-        "question": "Find the result of 5x³ + 4x² + 7x + (4 − y²).",
+        "question": "Find the result of 5x³ + 4x² + 7x + (4 - y²).",
         "options": [
-          "5x³ + 4x² + 7x + 4 − y²",
-          "5x³ + 4x² − y² + 11",
-          "5x³ − y² + 11x + 4",
-          "9x³ + 4 − y²"
+          "5x³ + 4x² + 7x + 4 - y²",
+          "5x³ + 4x² - y² + 11",
+          "5x³ - y² + 11x + 4",
+          "9x³ + 4 - y²"
         ],
         "answer": 0,
         "explanation": "All terms are unlike except the constant 4; add them directly without combining different variables.",
@@ -485,15 +545,15 @@
       },
       {
         "id": "p2_t1_B_706298d9",
-        "question": "What is (3t − 7) − (5t − 7)?",
+        "question": "What is (3t - 7) - (5t - 7)?",
         "options": [
-          "−2t + 0",
-          "−2t",
-          "−2t − 14",
+          "-2t + 0",
+          "-2t",
+          "-2t - 14",
           "2t"
         ],
         "answer": 1,
-        "explanation": "Subtract by changing signs; constants cancel and like t terms give −2t, an unlike-term result after simplification.",
+        "explanation": "Subtract by changing signs; constants cancel and like t terms give -2t, an unlike-term result after simplification.",
         "topic": 1,
         "level": "B",
         "prereq_id": 2,
@@ -505,12 +565,12 @@
       },
       {
         "id": "p2_t1_B_34eacbb9",
-        "question": "Simplify: (1x + 4) + (2x + 3)",
+        "question": "Simplify: (x + 4) + (2x + 3)",
         "options": [
           "4x + 7",
           "3x + 8",
           "3x + 7",
-          "1x + 6"
+          "x + 6"
         ],
         "answer": 2,
         "explanation": "",
@@ -545,7 +605,7 @@
       },
       {
         "id": "p2_t1_B_4c3c52a5",
-        "question": "Simplify: (5x + 1) + (1x + 3)",
+        "question": "Simplify: (5x + 1) + (x + 3)",
         "options": [
           "6x + 4",
           "5x + 2",
@@ -565,10 +625,10 @@
       },
       {
         "id": "p2_t1_B_9d730216",
-        "question": "Simplify: (1x + 2) + (3x + 4)",
+        "question": "Simplify: (x + 2) + (3x + 4)",
         "options": [
           "5x + 6",
-          "1x + 5",
+          "x + 5",
           "4x + 7",
           "4x + 6"
         ],
@@ -605,7 +665,7 @@
       },
       {
         "id": "p2_t1_B_1fdd0969",
-        "question": "Simplify: (4x + 3) + (1x + 2)",
+        "question": "Simplify: (4x + 3) + (x + 2)",
         "options": [
           "5x + 6",
           "4x + 4",
@@ -745,10 +805,10 @@
       },
       {
         "id": "p2_t1_B_bf426027",
-        "question": "Simplify: (1x + 1) + (1x + 3)",
+        "question": "Simplify: (x + 1) + (x + 3)",
         "options": [
           "2x + 5",
-          "1x + 2",
+          "x + 2",
           "2x + 4",
           "3x + 4"
         ],
@@ -785,7 +845,7 @@
       },
       {
         "id": "p2_t1_B_5016d041",
-        "question": "Simplify: (4x + 4) + (1x + 3)",
+        "question": "Simplify: (4x + 4) + (x + 3)",
         "options": [
           "5x + 8",
           "4x + 5",
@@ -862,17 +922,97 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_8770f9ee",
+        "question": "Simplify: (5x + 5) + (x + 4)",
+        "options": [
+          "7x + 9",
+          "6x + 10",
+          "6x + 9",
+          "5x + 6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_7a4049dc",
+        "question": "Simplify: (x + 1) + (x + 4)",
+        "options": [
+          "x + 2",
+          "3x + 5",
+          "2x + 5",
+          "2x + 6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_1de43e06",
+        "question": "Simplify: (x + 2) + (4x + 3)",
+        "options": [
+          "6x + 5",
+          "x + 6",
+          "5x + 6",
+          "5x + 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_0c746a17",
+        "question": "Simplify: (x + 3) + (x + 2)",
+        "options": [
+          "3x + 5",
+          "x + 4",
+          "2x + 6",
+          "2x + 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "C": [
       {
         "id": "p2_t1_C_53b7e770",
-        "question": "Simplify: (5x³ – 2x² + 3x – 2) − (x – 1)",
+        "question": "Simplify: (5x³ - 2x² + 3x - 2) - (x - 1)",
         "options": [
-          "5x³ – 3x² + 2x – 1",
-          "5x³ – 2x² + 4x – 3",
-          "5x³ – 2x² + 2x – 1",
-          "4x³ – 2x² + 3x – 3"
+          "5x³ - 3x² + 2x - 1",
+          "5x³ - 2x² + 4x - 3",
+          "5x³ - 2x² + 2x - 1",
+          "4x³ - 2x² + 3x - 3"
         ],
         "answer": 2,
         "explanation": "Subtract term by term after distributing the negative sign over the parentheses, as shown in evaluating polynomials like p(x) in the chapter.",
@@ -887,15 +1027,15 @@
       },
       {
         "id": "p2_t1_C_5d4fd785",
-        "question": "Simplify: (x² – 2x) − (x + 2)",
+        "question": "Simplify: (x² - 2x) - (x + 2)",
         "options": [
-          "x² – 3x + 2",
-          "x² – 3x – 2",
-          "x² – x – 2",
-          "x² – x + 2"
+          "x² - 3x + 2",
+          "x² - 3x - 2",
+          "x² - x - 2",
+          "x² - x + 2"
         ],
         "answer": 1,
-        "explanation": "Distribute the negative sign and combine like terms, matching the subtraction pattern used when finding p(2) and p(–2) for x + 2.",
+        "explanation": "Distribute the negative sign and combine like terms, matching the subtraction pattern used when finding p(2) and p(-2) for x + 2.",
         "topic": 1,
         "level": "C",
         "prereq_id": 2,
@@ -907,12 +1047,12 @@
       },
       {
         "id": "p2_t1_C_47573d43",
-        "question": "Simplify: (3y³ – 4y + 11) − (y² – y + 1)",
+        "question": "Simplify: (3y³ - 4y + 11) - (y² - y + 1)",
         "options": [
-          "3y³ – y² – 3y + 10",
-          "3y³ – y² – 3y + 12",
-          "3y³ – y² – 5y + 10",
-          "2y³ – y² – 3y + 10"
+          "3y³ - y² - 3y + 10",
+          "3y³ - y² - 3y + 12",
+          "3y³ - y² - 5y + 10",
+          "2y³ - y² - 3y + 10"
         ],
         "answer": 0,
         "explanation": "Remove parentheses by changing signs of the subtracted polynomial and combine like terms, following the evaluation steps for q(y) at given values.",
@@ -927,12 +1067,12 @@
       },
       {
         "id": "p2_t1_C_ed3f87da",
-        "question": "Simplify: (4t⁴ + 5t³ – t² + 6) − (2t³ – t² + 3)",
+        "question": "Simplify: (4t⁴ + 5t³ - t² + 6) - (2t³ - t² + 3)",
         "options": [
-          "4t⁴ + 3t³ – 2t² + 3",
+          "4t⁴ + 3t³ - 2t² + 3",
           "4t⁴ + 3t³ + 3",
-          "4t⁴ + 5t³ – 2t² + 3",
-          "4t⁴ + 3t³ – 2t² + 9"
+          "4t⁴ + 5t³ - 2t² + 3",
+          "4t⁴ + 3t³ - 2t² + 9"
         ],
         "answer": 0,
         "explanation": "Distribute the negative over parentheses then combine like terms, consistent with computing p(t) at t = a in the chapter.",
@@ -1047,12 +1187,12 @@
       },
       {
         "id": "p2_t1_C_299ce21b",
-        "question": "Simplify: (1x + 4) + (3x + 3)",
+        "question": "Simplify: (x + 4) + (3x + 3)",
         "options": [
           "5x + 7",
           "4x + 7",
           "4x + 8",
-          "1x + 7"
+          "x + 7"
         ],
         "answer": 1,
         "explanation": "",
@@ -1087,7 +1227,7 @@
       },
       {
         "id": "p2_t1_C_22fff63f",
-        "question": "Simplify: (5x + 2) + (1x + 4)",
+        "question": "Simplify: (5x + 2) + (x + 4)",
         "options": [
           "6x + 7",
           "6x + 6",
@@ -1227,12 +1367,12 @@
       },
       {
         "id": "p2_t1_C_df32224b",
-        "question": "Simplify: (1x + 4) + (4x + 4)",
+        "question": "Simplify: (x + 4) + (4x + 4)",
         "options": [
           "5x + 9",
           "6x + 8",
           "5x + 8",
-          "1x + 8"
+          "x + 8"
         ],
         "answer": 2,
         "explanation": "",
@@ -1247,7 +1387,7 @@
       },
       {
         "id": "p2_t1_C_52dddd7a",
-        "question": "Simplify: (2x + 2) + (1x + 1)",
+        "question": "Simplify: (2x + 2) + (x + 1)",
         "options": [
           "3x + 4",
           "4x + 3",
@@ -1287,10 +1427,10 @@
       },
       {
         "id": "p2_t1_C_caaf8a06",
-        "question": "Simplify: (1x + 1) + (4x + 2)",
+        "question": "Simplify: (x + 1) + (4x + 2)",
         "options": [
           "6x + 3",
-          "1x + 5",
+          "x + 5",
           "5x + 4",
           "5x + 3"
         ],
@@ -1307,14 +1447,94 @@
       },
       {
         "id": "p2_t1_C_8a6cbe94",
-        "question": "Simplify: (1x + 1) + (1x + 4)",
+        "question": "Simplify: (x + 1) + (x + 4)",
         "options": [
           "2x + 6",
           "2x + 5",
-          "1x + 2",
+          "x + 2",
           "3x + 5"
         ],
         "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_436717ba",
+        "question": "Simplify: (4x + 1) + (3x + 3)",
+        "options": [
+          "8x + 4",
+          "7x + 5",
+          "4x + 4",
+          "7x + 4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_a57988d8",
+        "question": "Simplify: (4x + 1) + (2x + 1)",
+        "options": [
+          "7x + 2",
+          "4x + 3",
+          "6x + 2",
+          "6x + 3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_19032385",
+        "question": "Simplify: (x + 5) + (4x + 3)",
+        "options": [
+          "5x + 8",
+          "x + 9",
+          "6x + 8",
+          "5x + 9"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_7a51c877",
+        "question": "Simplify: (2x + 5) + (2x + 4)",
+        "options": [
+          "4x + 9",
+          "4x + 10",
+          "5x + 9",
+          "2x + 7"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "C",
@@ -1349,7 +1569,7 @@
       },
       {
         "id": "p2_t1_D_afa3572e",
-        "question": "Subtract: (p² + q¹⁰ + r) − (p² + r)",
+        "question": "Subtract: (p² + q¹⁰ + r) - (p² + r)",
         "options": [
           "p² + q¹⁰",
           "p² + q¹⁰ + 2r",
@@ -1389,7 +1609,7 @@
       },
       {
         "id": "p2_t1_D_681f8ba5",
-        "question": "Subtract: (x² + y² + xyz) − xyz",
+        "question": "Subtract: (x² + y² + xyz) - xyz",
         "options": [
           "x² + y² + 2xyz",
           "y² + xyz",
@@ -1409,9 +1629,9 @@
       },
       {
         "id": "p2_t1_D_97247dec",
-        "question": "Simplify: (1x + 4) + (3x + 1)",
+        "question": "Simplify: (x + 4) + (3x + 1)",
         "options": [
-          "1x + 7",
+          "x + 7",
           "4x + 6",
           "4x + 5",
           "5x + 5"
@@ -1429,9 +1649,9 @@
       },
       {
         "id": "p2_t1_D_8fbfcaf1",
-        "question": "Simplify: (1x + 1) + (3x + 1)",
+        "question": "Simplify: (x + 1) + (3x + 1)",
         "options": [
-          "1x + 4",
+          "x + 4",
           "4x + 2",
           "4x + 3",
           "5x + 2"
@@ -1549,7 +1769,7 @@
       },
       {
         "id": "p2_t1_D_ca7105ec",
-        "question": "Simplify: (3x + 1) + (1x + 2)",
+        "question": "Simplify: (3x + 1) + (x + 2)",
         "options": [
           "3x + 2",
           "5x + 3",
@@ -1569,7 +1789,7 @@
       },
       {
         "id": "p2_t1_D_24eec821",
-        "question": "How many variables are in the polynomial x2 + y2 + xyz?",
+        "question": "How many variables are in the polynomial x^2 + y^2 + xyz?",
         "options": [
           "1",
           "4",
@@ -1577,7 +1797,7 @@
           "2"
         ],
         "answer": 2,
-        "explanation": "The excerpt gives x2 + y2 + xyz as an example of a polynomial in three variables.",
+        "explanation": "The excerpt gives x^2 + y^2 + xyz as an example of a polynomial in three variables.",
         "topic": 1,
         "level": "D",
         "prereq_id": 2,
@@ -1749,12 +1969,12 @@
       },
       {
         "id": "p2_t1_D_d0d948a3",
-        "question": "Simplify: (1x + 3) + (3x + 4)",
+        "question": "Simplify: (x + 3) + (3x + 4)",
         "options": [
           "4x + 7",
           "4x + 8",
           "5x + 7",
-          "1x + 6"
+          "x + 6"
         ],
         "answer": 0,
         "explanation": "",
@@ -1806,12 +2026,92 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_766eebf4",
+        "question": "Simplify: (2x + 1) + (3x + 4)",
+        "options": [
+          "5x + 5",
+          "6x + 5",
+          "2x + 4",
+          "5x + 6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_0a15151d",
+        "question": "Simplify: (x + 4) + (4x + 3)",
+        "options": [
+          "6x + 7",
+          "x + 8",
+          "5x + 8",
+          "5x + 7"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_1d672064",
+        "question": "Simplify: (4x + 2) + (4x + 4)",
+        "options": [
+          "8x + 7",
+          "8x + 6",
+          "4x + 6",
+          "9x + 6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_be7f476a",
+        "question": "Simplify: (x + 4) + (x + 4)",
+        "options": [
+          "3x + 8",
+          "2x + 8",
+          "x + 5",
+          "2x + 9"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "E": [
       {
         "id": "p2_t1_E_4fe432c0",
-        "question": "Find the value of p(x) = 5x³ − 2x² + 3x − 2 at x = 1.",
+        "question": "Find the value of p(x) = 5x³ - 2x² + 3x - 2 at x = 1.",
         "options": [
           "0",
           "4",
@@ -1819,7 +2119,7 @@
           "5"
         ],
         "answer": 1,
-        "explanation": "Substitute x = 1 to get 5(1)³ − 2(1)² + 3(1) − 2, then simplify the expression 5 − 2 + 3 − 2 by addition and subtraction to obtain 4.",
+        "explanation": "Substitute x = 1 to get 5(1)³ - 2(1)² + 3(1) - 2, then simplify the expression 5 - 2 + 3 - 2 by addition and subtraction to obtain 4.",
         "topic": 1,
         "level": "E",
         "prereq_id": 2,
@@ -1831,7 +2131,7 @@
       },
       {
         "id": "p2_t1_E_ab102b7c",
-        "question": "Evaluate p(x) = 5x² − 3x + 7 at x = 1.",
+        "question": "Evaluate p(x) = 5x² - 3x + 7 at x = 1.",
         "options": [
           "5",
           "10",
@@ -1839,7 +2139,7 @@
           "8"
         ],
         "answer": 2,
-        "explanation": "Replace x with 1 to obtain 5(1)² − 3(1) + 7, then add and subtract the resulting numbers 5 − 3 + 7 to reach 9.",
+        "explanation": "Replace x with 1 to obtain 5(1)² - 3(1) + 7, then add and subtract the resulting numbers 5 - 3 + 7 to reach 9.",
         "topic": 1,
         "level": "E",
         "prereq_id": 2,
@@ -1851,15 +2151,15 @@
       },
       {
         "id": "p2_t1_E_34b09215",
-        "question": "What is the value of 5x − 4x² + 3 when x = 2?",
+        "question": "What is the value of 5x - 4x² + 3 when x = 2?",
         "options": [
-          "−5",
-          "−3",
+          "-5",
+          "-3",
           "1",
-          "−7"
+          "-7"
         ],
         "answer": 0,
-        "explanation": "Substitute x = 2 to get 5(2) − 4(2)² + 3 = 10 − 16 + 3, then simplify by addition and subtraction to obtain −5.",
+        "explanation": "Substitute x = 2 to get 5(2) - 4(2)² + 3 = 10 - 16 + 3, then simplify by addition and subtraction to obtain -5.",
         "topic": 1,
         "level": "E",
         "prereq_id": 2,
@@ -1871,15 +2171,15 @@
       },
       {
         "id": "p2_t1_E_b97036e2",
-        "question": "Find p(0) for the polynomial p(y) = y² − y + 1.",
+        "question": "Find p(0) for the polynomial p(y) = y² - y + 1.",
         "options": [
           "1",
-          "−1",
+          "-1",
           "0",
           "2"
         ],
         "answer": 0,
-        "explanation": "Replace y with 0 to obtain 0 − 0 + 1, then evaluate the addition to reach 1.",
+        "explanation": "Replace y with 0 to obtain 0 - 0 + 1, then evaluate the addition to reach 1.",
         "topic": 1,
         "level": "E",
         "prereq_id": 2,
@@ -1891,9 +2191,9 @@
       },
       {
         "id": "p2_t1_E_020f1549",
-        "question": "Simplify: (1x + 5) + (1x + 4)",
+        "question": "Simplify: (x + 5) + (x + 4)",
         "options": [
-          "1x + 6",
+          "x + 6",
           "2x + 9",
           "2x + 10",
           "3x + 9"
@@ -1951,12 +2251,12 @@
       },
       {
         "id": "p2_t1_E_6e042268",
-        "question": "Simplify: (1x + 1) + (1x + 3)",
+        "question": "Simplify: (x + 1) + (x + 3)",
         "options": [
           "3x + 4",
           "2x + 5",
           "2x + 4",
-          "1x + 2"
+          "x + 2"
         ],
         "answer": 2,
         "explanation": "",
@@ -1991,7 +2291,7 @@
       },
       {
         "id": "p2_t1_E_b536091e",
-        "question": "Simplify: (3x + 3) + (1x + 4)",
+        "question": "Simplify: (3x + 3) + (x + 4)",
         "options": [
           "4x + 7",
           "3x + 4",
@@ -2011,11 +2311,11 @@
       },
       {
         "id": "p2_t1_E_2e5e29af",
-        "question": "Simplify: (1x + 5) + (4x + 4)",
+        "question": "Simplify: (x + 5) + (4x + 4)",
         "options": [
           "5x + 9",
           "6x + 9",
-          "1x + 9",
+          "x + 9",
           "5x + 10"
         ],
         "answer": 0,
@@ -2091,9 +2391,9 @@
       },
       {
         "id": "p2_t1_E_129767b0",
-        "question": "Simplify: (1x + 1) + (2x + 2)",
+        "question": "Simplify: (x + 1) + (2x + 2)",
         "options": [
-          "1x + 3",
+          "x + 3",
           "4x + 3",
           "3x + 4",
           "3x + 3"
@@ -2219,6 +2519,86 @@
           "5x + 6"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_cdfddcf6",
+        "question": "Simplify: (4x + 2) + (4x + 2)",
+        "options": [
+          "8x + 5",
+          "9x + 4",
+          "4x + 6",
+          "8x + 4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_cf3c93b2",
+        "question": "Simplify: (x + 3) + (2x + 2)",
+        "options": [
+          "3x + 6",
+          "x + 5",
+          "4x + 5",
+          "3x + 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_8657fa49",
+        "question": "Simplify: (5x + 2) + (4x + 4)",
+        "options": [
+          "10x + 6",
+          "5x + 6",
+          "9x + 6",
+          "9x + 7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_1b9b6532",
+        "question": "Simplify: (5x + 1) + (4x + 2)",
+        "options": [
+          "10x + 3",
+          "9x + 4",
+          "5x + 5",
+          "9x + 3"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 1,
         "level": "E",

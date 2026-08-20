@@ -37,7 +37,7 @@ _PROSE_QUESTION_RE = re.compile(
     re.I,
 )
 
-_SUP_STYLE = "font-size:0.72em;vertical-align:super;line-height:0;"
+_SUP_STYLE = "font-size:0.82em;vertical-align:super;line-height:0;font-weight:700;"
 
 _POWER_RE = re.compile(
     r"(\d+)\^\(([^)]+)\)|(\d+)\^\{(-?\d+)\}|(\d+)\^(-?\d+)"
@@ -46,6 +46,16 @@ _POWER_RE = re.compile(
 _VAR_POWER_RE = re.compile(
     r"(\d*)([a-zA-Z])\^\(([^)]+)\)|(\d*)([a-zA-Z])\^(-?\d+)"
 )
+
+# Drop explicit unit coefficients in linear-style terms: 1x → x, -1y → -y.
+_UNIT_COEFF_RE = re.compile(r"(^|[\s=+\-(])-1([xy])(?=[\s+\-=]|$|\)|,)")
+_UNIT_COEFF_POS_RE = re.compile(r"(^|[\s=+\-(])1([xy])(?=[\s+\-=]|$|\)|,)")
+
+
+def normalize_unit_coefficients(text: str) -> str:
+    s = normalize_math_text(text)
+    s = _UNIT_COEFF_RE.sub(r"\1-\2", s)
+    return _UNIT_COEFF_POS_RE.sub(r"\1\2", s)
 
 # NCERT-style implicit exponents: u3 → u^3, 3x2 → 3x^2 (not plain numbers like 12).
 _IMPLICIT_POLY_EXP_RE = re.compile(
@@ -201,6 +211,7 @@ def sanitize_grok_math_text(text: str) -> str:
     s = re.sub(r"^Evaluate\s*\(", "Evaluate: (", s, flags=re.I)
     s = re.sub(r"^Compute\s*\(", "Compute: (", s, flags=re.I)
     s = _normalize_implicit_poly_exponents(s)
+    s = normalize_unit_coefficients(s)
     return s
 
 
@@ -284,7 +295,9 @@ def has_math_markup(text: str) -> bool:
 
 
 def _prepare_for_display(text: str) -> str:
-    return _normalize_compound_powers(_normalize_paren_powers(sanitize_grok_math_text(text)))
+    raw = sanitize_grok_math_text(text)
+    raw = normalize_unit_coefficients(raw)
+    return _normalize_compound_powers(_normalize_paren_powers(raw))
 
 
 def _needs_latex_fraction(text: str) -> bool:
@@ -300,6 +313,9 @@ def _split_verb_prompt(text: str) -> tuple[str | None, str]:
     extended = re.match(r"^(Simplify using [^:]+):", normalized, re.I)
     if extended:
         return extended.group(1), normalized[extended.end() :].strip()
+    colon = re.match(r"^(.{8,120}?):\s*(.+)$", normalized)
+    if colon and (has_math_markup(colon.group(2)) or re.search(r"\^", colon.group(2))):
+        return colon.group(1).strip(), colon.group(2).strip()
     for verb in _VERBS:
         prefix = f"{verb}:"
         if normalized.lower().startswith(prefix.lower()):
@@ -509,8 +525,22 @@ def render_question(text: str) -> None:
         _render_html_question(format_math_display(body))
         return
 
-    if has_math_markup(text) or _is_wordy_math_question(text) or contains_raw_latex(text):
-        _render_html_question(format_math_display(text))
+    # Any caret / root / fraction / polynomial power → HTML superscripts (email-quality).
+    if (
+        has_math_markup(text)
+        or has_math_markup(body)
+        or _is_wordy_math_question(text)
+        or contains_raw_latex(text)
+        or re.search(r"\^", text)
+    ):
+        if verb and body and body != text:
+            st.markdown(
+                f'<p style="font-size:1.05rem;color:#4b5563;text-align:center;margin:0 0 0.35rem 0;">{html.escape(verb)}</p>',
+                unsafe_allow_html=True,
+            )
+            _render_html_question(format_math_display(body))
+        else:
+            _render_html_question(format_math_display(text))
         return
 
     st.markdown(

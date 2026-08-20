@@ -23,15 +23,15 @@
       },
       {
         "id": "p2_t2_A_25642eda",
-        "question": "Multiply: 5 × (2x² – 3x + 7) = ?",
+        "question": "Multiply: 5 × (2x² - 3x + 7) = ?",
         "options": [
-          "10x² – 15x + 35",
-          "10x² – 3x + 7",
-          "5x² – 15x + 35",
-          "10x² – 15x + 7"
+          "10x² - 15x + 35",
+          "10x² - 3x + 7",
+          "5x² - 15x + 35",
+          "10x² - 15x + 7"
         ],
         "answer": 0,
-        "explanation": "Multiply the constant monomial by each term of the polynomial as shown in examples like p(x) = 5x³ – 2x² + 3x – 2.",
+        "explanation": "Multiply the constant monomial by each term of the polynomial as shown in examples like p(x) = 5x³ - 2x² + 3x - 2.",
         "topic": 2,
         "level": "A",
         "prereq_id": 2,
@@ -43,15 +43,15 @@
       },
       {
         "id": "p2_t2_A_4e2a3b2e",
-        "question": "Multiply: –x × (x – 1) = ?",
+        "question": "Multiply: -x × (x - 1) = ?",
         "options": [
-          "–x² + x",
-          "–x + 1",
-          "–x² – x",
-          "x² – x"
+          "-x² + x",
+          "-x + 1",
+          "-x² - x",
+          "x² - x"
         ],
         "answer": 0,
-        "explanation": "Apply the monomial to each term of the linear polynomial x – 1, matching the form used to find zeroes.",
+        "explanation": "Apply the monomial to each term of the linear polynomial x - 1, matching the form used to find zeroes.",
         "topic": 2,
         "level": "A",
         "prereq_id": 2,
@@ -63,15 +63,15 @@
       },
       {
         "id": "p2_t2_A_1798a9c2",
-        "question": "Multiply: 4t × (t² + 5t – 1) = ?",
+        "question": "Multiply: 4t × (t² + 5t - 1) = ?",
         "options": [
-          "t³ + 20t² – t",
-          "4t³ + 20t² – 4t",
-          "4t³ + 5t² – 4t",
-          "4t³ + 20t² – t"
+          "t³ + 20t² - t",
+          "4t³ + 20t² - 4t",
+          "4t³ + 5t² - 4t",
+          "4t³ + 20t² - t"
         ],
         "answer": 1,
-        "explanation": "Distribute 4t over the cubic polynomial terms following the structure of p(t) = 4t⁴ + 5t³ – t² + 6.",
+        "explanation": "Distribute 4t over the cubic polynomial terms following the structure of p(t) = 4t⁴ + 5t³ - t² + 6.",
         "topic": 2,
         "level": "A",
         "prereq_id": 2,
@@ -145,7 +145,7 @@
         "id": "p2_t2_A_5ab70d36",
         "question": "Expand: 1x(x + 4)",
         "options": [
-          "1x + 4",
+          "x + 4",
           "2x²",
           "1x² + 4x",
           "1x² + 4"
@@ -206,8 +206,8 @@
         "question": "Expand: 1x(x + 1)",
         "options": [
           "2x²",
-          "1x + 1",
-          "1x² + 1x",
+          "x + 1",
+          "1x² + x",
           "1x² + 1"
         ],
         "answer": 2,
@@ -430,7 +430,7 @@
           "2x²",
           "1x² + 4x",
           "1x² + 4",
-          "1x + 4"
+          "x + 4"
         ],
         "answer": 1,
         "explanation": "",
@@ -550,7 +550,7 @@
           "2x²",
           "1x² + 2",
           "1x² + 2x",
-          "1x + 2"
+          "x + 2"
         ],
         "answer": 2,
         "explanation": "",
@@ -590,7 +590,7 @@
           "1x² + 3",
           "2x²",
           "1x² + 3x",
-          "1x + 3"
+          "x + 3"
         ],
         "answer": 2,
         "explanation": "",
@@ -662,12 +662,32 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_c2399686",
+        "question": "Expand: 4x(x + 2)",
+        "options": [
+          "4x² + 8x",
+          "4x + 2",
+          "4x² + 2",
+          "8x²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "C": [
       {
         "id": "p2_t2_C_3c4a96ef",
-        "question": "What is the value of p(x) = 5x² – 3x + 7 at x = 1?",
+        "question": "What is the value of p(x) = 5x² - 3x + 7 at x = 1?",
         "options": [
           "9",
           "15",
@@ -675,7 +695,7 @@
           "5"
         ],
         "answer": 0,
-        "explanation": "Substitute x=1 into the polynomial: 5(1)² – 3(1) + 7 = 5 – 3 + 7 = 9, as shown in the chapter example for evaluating polynomials.",
+        "explanation": "Substitute x=1 into the polynomial: 5(1)² - 3(1) + 7 = 5 - 3 + 7 = 9, as shown in the chapter example for evaluating polynomials.",
         "topic": 2,
         "level": "C",
         "prereq_id": 2,
@@ -687,15 +707,15 @@
       },
       {
         "id": "p2_t2_C_643d05c1",
-        "question": "What is a zero of the polynomial p(x) = x – 1?",
+        "question": "What is a zero of the polynomial p(x) = x - 1?",
         "options": [
           "2",
-          "–1",
+          "-1",
           "1",
           "0"
         ],
         "answer": 2,
-        "explanation": "p(1) = 1 – 1 = 0, so 1 is a zero as defined in the section on zeroes of a polynomial.",
+        "explanation": "p(1) = 1 - 1 = 0, so 1 is a zero as defined in the section on zeroes of a polynomial.",
         "topic": 2,
         "level": "C",
         "prereq_id": 2,
@@ -727,15 +747,15 @@
       },
       {
         "id": "p2_t2_C_7cb65aad",
-        "question": "What is p(2) for the polynomial p(x) = x² – 2x?",
+        "question": "What is p(2) for the polynomial p(x) = x² - 2x?",
         "options": [
           "0",
           "2",
           "4",
-          "–2"
+          "-2"
         ],
         "answer": 0,
-        "explanation": "p(2) = (2)² – 2(2) = 4 – 4 = 0, verifying 2 is a zero as in the chapter example.",
+        "explanation": "p(2) = (2)² - 2(2) = 4 - 4 = 0, verifying 2 is a zero as in the chapter example.",
         "topic": 2,
         "level": "C",
         "prereq_id": 2,
@@ -771,8 +791,8 @@
         "options": [
           "1x² + 1",
           "2x²",
-          "1x + 1",
-          "1x² + 1x"
+          "x + 1",
+          "1x² + x"
         ],
         "answer": 3,
         "explanation": "",
@@ -829,7 +849,7 @@
         "id": "p2_t2_C_24dee798",
         "question": "Expand: 1x(x + 3)",
         "options": [
-          "1x + 3",
+          "x + 3",
           "1x² + 3",
           "2x²",
           "1x² + 3x"
@@ -849,7 +869,7 @@
         "id": "p2_t2_C_12e08b4a",
         "question": "Expand: 1x(x + 4)",
         "options": [
-          "1x + 4",
+          "x + 4",
           "1x² + 4x",
           "1x² + 4",
           "2x²"
@@ -912,7 +932,7 @@
           "1x² + 2",
           "2x²",
           "1x² + 2x",
-          "1x + 2"
+          "x + 2"
         ],
         "answer": 2,
         "explanation": "",
@@ -984,12 +1004,52 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_bc8753fa",
+        "question": "Expand: 3x(x + 2)",
+        "options": [
+          "6x²",
+          "3x + 2",
+          "3x² + 2",
+          "3x² + 6x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_12a7835b",
+        "question": "Expand: 2x(x + 2)",
+        "options": [
+          "2x² + 2",
+          "2x² + 4x",
+          "4x²",
+          "2x + 2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "D": [
       {
         "id": "p2_t2_D_2fd51198",
-        "question": "What is the value of p(x) = 5x² – 3x + 7 at x = 1?",
+        "question": "What is the value of p(x) = 5x² - 3x + 7 at x = 1?",
         "options": [
           "5",
           "7",
@@ -997,7 +1057,7 @@
           "9"
         ],
         "answer": 3,
-        "explanation": "Substitute x = 1 into 5x² – 3x + 7 to get 5(1)² – 3(1) + 7 = 5 – 3 + 7 = 9, as shown for this three-term polynomial.",
+        "explanation": "Substitute x = 1 into 5x² - 3x + 7 to get 5(1)² - 3(1) + 7 = 5 - 3 + 7 = 9, as shown for this three-term polynomial.",
         "topic": 2,
         "level": "D",
         "prereq_id": 2,
@@ -1009,7 +1069,7 @@
       },
       {
         "id": "p2_t2_D_9961ea33",
-        "question": "What is the value of q(y) = 3y³ – 4y + 11 at y = 2?",
+        "question": "What is the value of q(y) = 3y³ - 4y + 11 at y = 2?",
         "options": [
           "27",
           "24",
@@ -1017,7 +1077,7 @@
           "11"
         ],
         "answer": 0,
-        "explanation": "Substitute y = 2 into 3y³ – 4y + 11 to get 3(2)³ – 4(2) + 11 = 24 – 8 + 11 = 27.",
+        "explanation": "Substitute y = 2 into 3y³ - 4y + 11 to get 3(2)³ - 4(2) + 11 = 24 - 8 + 11 = 27.",
         "topic": 2,
         "level": "D",
         "prereq_id": 2,
@@ -1029,15 +1089,15 @@
       },
       {
         "id": "p2_t2_D_0c364368",
-        "question": "Find p(0) for the polynomial p(y) = y² – y + 1.",
+        "question": "Find p(0) for the polynomial p(y) = y² - y + 1.",
         "options": [
           "2",
           "0",
           "1",
-          "–1"
+          "-1"
         ],
         "answer": 2,
-        "explanation": "Substitute y = 0 into y² – y + 1 to obtain 0 – 0 + 1 = 1.",
+        "explanation": "Substitute y = 0 into y² - y + 1 to obtain 0 - 0 + 1 = 1.",
         "topic": 2,
         "level": "D",
         "prereq_id": 2,
@@ -1049,7 +1109,7 @@
       },
       {
         "id": "p2_t2_D_9c1b761f",
-        "question": "Find p(2) for the polynomial p(y) = y² – y + 1.",
+        "question": "Find p(2) for the polynomial p(y) = y² - y + 1.",
         "options": [
           "3",
           "0",
@@ -1057,7 +1117,7 @@
           "2"
         ],
         "answer": 0,
-        "explanation": "Substitute y = 2 into y² – y + 1 to obtain 4 – 2 + 1 = 3.",
+        "explanation": "Substitute y = 2 into y² - y + 1 to obtain 4 - 2 + 1 = 3.",
         "topic": 2,
         "level": "D",
         "prereq_id": 2,
@@ -1151,7 +1211,7 @@
         "id": "p2_t2_D_4a638155",
         "question": "Expand: 1x(x + 3)",
         "options": [
-          "1x + 3",
+          "x + 3",
           "1x² + 3",
           "2x²",
           "1x² + 3x"
@@ -1193,7 +1253,7 @@
         "options": [
           "1x² + 2x",
           "2x²",
-          "1x + 2",
+          "x + 2",
           "1x² + 2"
         ],
         "answer": 0,
@@ -1213,8 +1273,8 @@
         "options": [
           "1x² + 1",
           "2x²",
-          "1x² + 1x",
-          "1x + 1"
+          "1x² + x",
+          "x + 1"
         ],
         "answer": 2,
         "explanation": "",
@@ -1306,12 +1366,32 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_9891928b",
+        "question": "Expand: 1x(x + 4)",
+        "options": [
+          "1x² + 4x",
+          "x + 4",
+          "2x²",
+          "1x² + 4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "E": [
       {
         "id": "p2_t2_E_e55c43e5",
-        "question": "Find the value of p(x) = 5x² – 3x + 7 at x = 1.",
+        "question": "Find the value of p(x) = 5x² - 3x + 7 at x = 1.",
         "options": [
           "4",
           "5",
@@ -1319,7 +1399,7 @@
           "9"
         ],
         "answer": 3,
-        "explanation": "Substitute x=1 into the polynomial and compute 5(1)² – 3(1) + 7 = 9, as shown in the evaluation examples of section 2.3.",
+        "explanation": "Substitute x=1 into the polynomial and compute 5(1)² - 3(1) + 7 = 9, as shown in the evaluation examples of section 2.3.",
         "topic": 2,
         "level": "E",
         "prereq_id": 2,
@@ -1331,7 +1411,7 @@
       },
       {
         "id": "p2_t2_E_c26c8467",
-        "question": "What is q(2) for q(y) = 3y³ – 4y + 11?",
+        "question": "What is q(2) for q(y) = 3y³ - 4y + 11?",
         "options": [
           "11",
           "27",
@@ -1339,7 +1419,7 @@
           "24"
         ],
         "answer": 1,
-        "explanation": "Replace y with 2 to get 3(8) – 4(2) + 11 = 24 – 8 + 11 = 27, following the polynomial evaluation method.",
+        "explanation": "Replace y with 2 to get 3(8) - 4(2) + 11 = 24 - 8 + 11 = 27, following the polynomial evaluation method.",
         "topic": 2,
         "level": "E",
         "prereq_id": 2,
@@ -1371,7 +1451,7 @@
       },
       {
         "id": "p2_t2_E_97abdc06",
-        "question": "Verify the zeroes of p(x) = x² – 2x at the points 2 and 0.",
+        "question": "Verify the zeroes of p(x) = x² - 2x at the points 2 and 0.",
         "options": [
           "both 2 and 0",
           "only 2",
@@ -1379,7 +1459,7 @@
           "only 0"
         ],
         "answer": 0,
-        "explanation": "p(2) = 4 – 4 = 0 and p(0) = 0 – 0 = 0, confirming both are zeroes as in the verification examples.",
+        "explanation": "p(2) = 4 - 4 = 0 and p(0) = 0 - 0 = 0, confirming both are zeroes as in the verification examples.",
         "topic": 2,
         "level": "E",
         "prereq_id": 2,
@@ -1493,7 +1573,7 @@
         "id": "p2_t2_E_609dc201",
         "question": "Expand: 1x(x + 3)",
         "options": [
-          "1x + 3",
+          "x + 3",
           "1x² + 3x",
           "2x²",
           "1x² + 3"
@@ -1533,10 +1613,10 @@
         "id": "p2_t2_E_1ad003a8",
         "question": "Expand: 1x(x + 1)",
         "options": [
-          "1x + 1",
+          "x + 1",
           "1x² + 1",
           "2x²",
-          "1x² + 1x"
+          "1x² + x"
         ],
         "answer": 3,
         "explanation": "",
@@ -1599,6 +1679,26 @@
           "4x² + 2"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_63483d67",
+        "question": "Expand: 2x(x + 3)",
+        "options": [
+          "2x + 3",
+          "2x² + 6x",
+          "2x² + 3",
+          "4x²"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "E",
