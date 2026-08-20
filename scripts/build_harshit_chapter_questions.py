@@ -45,7 +45,7 @@ def seed_prereq_bank(prereq_id: int, per_level: int) -> int:
         print(f"  topic {topic_id}: {info['name']} ← seed Ch {ch or '?'}")
         for level in info.get("levels", {}):
             qs: list[dict] = []
-            used_text: set[str] = set()
+            used_keys: set[str] = set()
             attempts = 0
             while len(qs) < per_level and attempts < per_level * 16:
                 attempts += 1
@@ -53,15 +53,15 @@ def seed_prereq_bank(prereq_id: int, per_level: int) -> int:
                     prereq_id,
                     topic_id,
                     level,
-                    exclude_text=used_text,
+                    exclude_text=used_keys,
                     templates_only=True,
                 )
                 if not q:
                     break
-                text = str(q.get("question", "")).strip()
-                if text in used_text:
+                key = hcq.question_dedup_key(str(q.get("question", "")))
+                if key in used_keys:
                     continue
-                used_text.add(text)
+                used_keys.add(key)
                 item = dict(q)
                 item["source"] = "chapter_seed"
                 item["chapter_num"] = ch

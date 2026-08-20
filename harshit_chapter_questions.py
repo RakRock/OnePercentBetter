@@ -118,19 +118,49 @@ def add_questions(
     )
     bucket = bank.setdefault("questions", {}).setdefault(level, [])
     existing_ids = {q.get("id") for q in bucket if isinstance(q, dict)}
-    existing_text = {str(q.get("question", "")).strip() for q in bucket if isinstance(q, dict)}
+    existing_keys = {
+        question_dedup_key(str(q.get("question", "")))
+        for q in bucket
+        if isinstance(q, dict)
+    }
     added = 0
     for raw in questions:
         q = normalize_question(raw, prereq_id, topic_id, level)
-        text = str(q.get("question", "")).strip()
-        if q["id"] in existing_ids or text in existing_text:
+        key = question_dedup_key(str(q.get("question", "")))
+        if q["id"] in existing_ids or key in existing_keys:
             continue
         bucket.append(q)
         existing_ids.add(q["id"])
-        existing_text.add(text)
+        existing_keys.add(key)
         added += 1
     save_bank(prereq_id, topic_id, bank)
     return added
+
+
+def question_dedup_key(text: str) -> str:
+    """Normalize question text for repeat detection across levels and sessions."""
+    t = str(text or "").strip().lower()
+    t = re.sub(r"\s+", " ", t)
+    return t.rstrip(".?!").strip()
+
+
+def is_question_excluded(
+    q: dict,
+    *,
+    exclude_ids: set[str] | None = None,
+    exclude_text: set[str] | None = None,
+) -> bool:
+    """True if question id or normalized text was already used."""
+    exclude_ids = exclude_ids or set()
+    exclude_text = exclude_text or set()
+    qid = str(q.get("id") or "")
+    if qid and qid in exclude_ids:
+        return True
+    raw = str(q.get("question", "")).strip()
+    if raw in exclude_text:
+        return True
+    key = question_dedup_key(raw)
+    return key in exclude_text or any(question_dedup_key(t) == key for t in exclude_text)
 
 
 def normalize_question(raw: dict, prereq_id: int, topic_id: int, level: str) -> dict:
@@ -183,19 +213,18 @@ def pick_question(
     exclude_ids = exclude_ids or set()
     exclude_text = exclude_text or set()
 
-    def _usable(q: dict) -> bool:
-        if q.get("id") in exclude_ids:
-            return False
-        if str(q.get("question", "")).strip() in exclude_text:
-            return False
+    def _excluded(q: dict) -> bool:
+        return is_question_excluded(q, exclude_ids=exclude_ids, exclude_text=exclude_text)
+
+    def _quality_ok(q: dict) -> bool:
         if not quality_only:
             return True
         opts = q.get("options") or []
         return is_quality_practice_question(str(q.get("question", "")), [str(o) for o in opts])
 
-    candidates = [q for q in pool if _usable(q)]
+    candidates = [q for q in pool if not _excluded(q) and _quality_ok(q)]
     if not candidates and quality_only:
-        candidates = [q for q in pool if q.get("id") not in exclude_ids] or []
+        candidates = [q for q in pool if not _excluded(q)]
     if not candidates:
         return None
     raw = random.choice(candidates)

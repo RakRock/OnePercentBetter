@@ -430,12 +430,11 @@ def generate_session_questions(
             break
 
         for q in batch:
-            text = str(q.get("question", "")).strip()
-            if q.get("id") in used or text in used_text:
+            if hcq.is_question_excluded(q, exclude_ids=used, exclude_text=used_text):
                 continue
             questions.append(q)
-            used.add(q["id"])
-            used_text.add(text)
+            used.add(str(q.get("id", "")))
+            used_text.add(hcq.question_dedup_key(str(q.get("question", ""))))
             if len(questions) >= count:
                 break
 
@@ -443,15 +442,14 @@ def generate_session_questions(
         _cache_generated_to_bank(prereq_id, questions)
 
     if len(questions) < count and fallback:
-        fb_config = {**config, "_exclude_ids": used, "_exclude_text": used_text}
+        fb_config = {**config, "_exclude_ids": used, "_exclude_keys": used_text}
         extra = fallback(fb_config, count - len(questions))
         for q in extra:
-            text = str(q.get("question", "")).strip()
-            if q.get("id") in used or text in used_text:
+            if hcq.is_question_excluded(q, exclude_ids=used, exclude_text=used_text):
                 continue
             questions.append(q)
-            used.add(q["id"])
-            used_text.add(text)
+            used.add(str(q.get("id", "")))
+            used_text.add(hcq.question_dedup_key(str(q.get("question", ""))))
 
     if not questions and fallback is None:
         raise ValueError(last_error or "Grok returned no valid questions")

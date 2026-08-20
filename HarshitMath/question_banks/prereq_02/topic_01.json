@@ -240,6 +240,186 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_b785241f",
+        "question": "What is the degree of the zero polynomial?",
+        "options": [
+          "0",
+          "Not defined",
+          "Infinite",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "When all coefficients a₀ through aₙ are zero, the resulting zero polynomial has degree not defined.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_A_a4c1c83d",
+        "question": "Add the like terms: 5x^2 + 3x^2",
+        "options": [
+          "8x^2",
+          "15x^2",
+          "8x",
+          "2x^2"
+        ],
+        "answer": 0,
+        "explanation": "The polynomial form anx^n + ... allows combining coefficients of like terms sharing the same power of x.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2 definition"
+      },
+      {
+        "id": "p2_t1_A_1e27ca1d",
+        "question": "Add 4x and 3x. What is the resulting expression after combining like terms?",
+        "options": [
+          "7x",
+          "4x + 3",
+          "12x",
+          "x"
+        ],
+        "answer": 0,
+        "explanation": "Like terms are added by combining coefficients to give a single term polynomial as per the one-variable form in the excerpt.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_A_c6bcd167",
+        "question": "Simplify: (2x + 2) + (1x + 1)",
+        "options": [
+          "2x + 3",
+          "3x + 4",
+          "3x + 3",
+          "4x + 3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_189d7c12",
+        "question": "Simplify: (1x + 1) + (4x + 1)",
+        "options": [
+          "1x + 5",
+          "5x + 3",
+          "5x + 2",
+          "6x + 2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_5a3af79d",
+        "question": "Simplify: (2x + 3) + (1x + 1)",
+        "options": [
+          "3x + 5",
+          "3x + 4",
+          "2x + 4",
+          "4x + 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_e5dc8879",
+        "question": "Simplify: (1x + 3) + (3x + 4)",
+        "options": [
+          "4x + 7",
+          "1x + 6",
+          "5x + 7",
+          "4x + 8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_1a1d88e4",
+        "question": "Simplify: (4x + 2) + (3x + 2)",
+        "options": [
+          "4x + 5",
+          "7x + 5",
+          "7x + 4",
+          "8x + 4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_5ae9b03f",
+        "question": "Simplify: (4x + 5) + (3x + 1)",
+        "options": [
+          "7x + 7",
+          "4x + 8",
+          "7x + 6",
+          "8x + 6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -471,6 +651,206 @@
           "8x + 6",
           "9x + 6",
           "8x + 7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_91c15ca4",
+        "question": "Add: 4x^2 + 2y",
+        "options": [
+          "6x^2 y",
+          "4x^2 + 2",
+          "6x^2",
+          "4x^2 + 2y"
+        ],
+        "answer": 3,
+        "explanation": "Terms with different variables are unlike and remain separate in the polynomial expression.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_B_d3a3a436",
+        "question": "Add the unlike terms: 5x + 3y",
+        "options": [
+          "15xy",
+          "8y",
+          "8x",
+          "5x + 3y"
+        ],
+        "answer": 3,
+        "explanation": "Unlike terms with different variables stay as separate parts of the polynomial.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_B_3def476e",
+        "question": "Which expression is a polynomial in three variables?",
+        "options": [
+          "5y + 2",
+          "x^2 + y^2 + xyz",
+          "x^2 + 3x + 2",
+          "u^3 + v^2"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt gives x^2 + y^2 + xyz as an example of a polynomial where the variables are x, y and z.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2 after zero polynomial"
+      },
+      {
+        "id": "p2_t1_B_1a563b5d",
+        "question": "Add the polynomials x² + y² and xyz. What is the resulting expression?",
+        "options": [
+          "x² + y²xyz",
+          "x²y² + xyz",
+          "x² + y² + xyz",
+          "x³ + y³ + xyz"
+        ],
+        "answer": 2,
+        "explanation": "Terms are unlike so they combine directly to form a polynomial in three variables as shown in the chapter definition.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_B_bf426027",
+        "question": "Simplify: (1x + 1) + (1x + 3)",
+        "options": [
+          "2x + 5",
+          "1x + 2",
+          "2x + 4",
+          "3x + 4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_f49dc7a6",
+        "question": "Simplify: (4x + 2) + (3x + 2)",
+        "options": [
+          "4x + 5",
+          "7x + 4",
+          "7x + 5",
+          "8x + 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_5016d041",
+        "question": "Simplify: (4x + 4) + (1x + 3)",
+        "options": [
+          "5x + 8",
+          "4x + 5",
+          "6x + 7",
+          "5x + 7"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_3a25ed9f",
+        "question": "Simplify: (2x + 1) + (4x + 1)",
+        "options": [
+          "2x + 5",
+          "6x + 3",
+          "6x + 2",
+          "7x + 2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_d7424ee7",
+        "question": "Simplify: (5x + 5) + (2x + 2)",
+        "options": [
+          "7x + 8",
+          "5x + 7",
+          "8x + 7",
+          "7x + 7"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_da047dbe",
+        "question": "Simplify: (3x + 2) + (4x + 1)",
+        "options": [
+          "7x + 4",
+          "7x + 3",
+          "3x + 6",
+          "8x + 3"
         ],
         "answer": 1,
         "explanation": "",
@@ -724,6 +1104,226 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_34f6ffcc",
+        "question": "Subtract (x^2 + 2) from (3x^2 + 5)",
+        "options": [
+          "2x^2 + 7",
+          "2x^2 + 3",
+          "3x^2 + 3",
+          "4x^2 + 7"
+        ],
+        "answer": 1,
+        "explanation": "Remove the parentheses and combine the remaining like terms from the polynomial form.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_C_6e3e299b",
+        "question": "Simplify: (x^2 + 3x + 5) - (x^2 + 2x + 1) by subtracting like terms.",
+        "options": [
+          "3x + 4",
+          "5x + 4",
+          "x + 4",
+          "x + 6"
+        ],
+        "answer": 2,
+        "explanation": "Subtracting polynomials from the excerpt form cancels x^2 terms leaving x + 4 after combining remaining coefficients.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2 polynomial form"
+      },
+      {
+        "id": "p2_t1_C_a13b2421",
+        "question": "Subtract: (x^2 + 3x + 2) - (x + 1) = ?",
+        "options": [
+          "x^2 + 4x +3",
+          "x^2 + 2x +1",
+          "x^2 + 3x +1",
+          "x^2 + 2x +3"
+        ],
+        "answer": 1,
+        "explanation": "Remove parentheses and combine like terms using the polynomial form from the chapter.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ch 2 poly definition"
+      },
+      {
+        "id": "p2_t1_C_b99c399e",
+        "question": "Subtract: (2x^2 + 5x) - (x^2 + 3x + 1) = ?",
+        "options": [
+          "3x^2 + 2x -1",
+          "x^2 + 2x -1",
+          "x^2 + 8x -1",
+          "x^2 + 2x +1"
+        ],
+        "answer": 1,
+        "explanation": "Combine like terms after removing parentheses from the given polynomial expressions.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ch 2 poly form"
+      },
+      {
+        "id": "p2_t1_C_02ae25be",
+        "question": "Simplify: (5x + 1) + (3x + 4)",
+        "options": [
+          "8x + 5",
+          "8x + 6",
+          "9x + 5",
+          "5x + 4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_bbfc7cfc",
+        "question": "Simplify: (3x + 3) + (3x + 1)",
+        "options": [
+          "6x + 4",
+          "7x + 4",
+          "3x + 6",
+          "6x + 5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_df32224b",
+        "question": "Simplify: (1x + 4) + (4x + 4)",
+        "options": [
+          "5x + 9",
+          "6x + 8",
+          "5x + 8",
+          "1x + 8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_52dddd7a",
+        "question": "Simplify: (2x + 2) + (1x + 1)",
+        "options": [
+          "3x + 4",
+          "4x + 3",
+          "3x + 3",
+          "2x + 3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_91c1c22a",
+        "question": "Simplify: (5x + 2) + (2x + 2)",
+        "options": [
+          "7x + 5",
+          "5x + 4",
+          "8x + 4",
+          "7x + 4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_caaf8a06",
+        "question": "Simplify: (1x + 1) + (4x + 2)",
+        "options": [
+          "6x + 3",
+          "1x + 5",
+          "5x + 4",
+          "5x + 3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_8a6cbe94",
+        "question": "Simplify: (1x + 1) + (1x + 4)",
+        "options": [
+          "2x + 6",
+          "2x + 5",
+          "1x + 2",
+          "3x + 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -966,6 +1566,246 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_24eec821",
+        "question": "How many variables are in the polynomial x2 + y2 + xyz?",
+        "options": [
+          "1",
+          "4",
+          "3",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt gives x2 + y2 + xyz as an example of a polynomial in three variables.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_D_8a510a2e",
+        "question": "Simplify x^2 + y^2 + x^2 + y^2 for this polynomial in two variables",
+        "options": [
+          "2x^2 + 2y^2",
+          "4x^2 + 4y^2",
+          "x^2 + 2y^2",
+          "2x^2 + y^2"
+        ],
+        "answer": 0,
+        "explanation": "Combine like terms separately for each variable in the multivariable polynomial.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_D_1e0af502",
+        "question": "How many variables are in the polynomial p^2 + q^10 + r?",
+        "options": [
+          "4",
+          "2",
+          "1",
+          "3"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt lists p^2 + q^10 + r as a polynomial in the three variables p, q and r.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_D_13017bea",
+        "question": "Which polynomial in the excerpt has exactly two variables?",
+        "options": [
+          "x + 1",
+          "u^3 + v^2",
+          "p^2 + q^10 + r",
+          "x^2 + y^2 + xyz"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt explicitly states u^3 + v^2 is a polynomial in two variables u and v.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_D_eb966a51",
+        "question": "Is x^2 + y^2 + xyz a polynomial in three variables?",
+        "options": [
+          "Yes",
+          "Only in one variable",
+          "No",
+          "Zero polynomial"
+        ],
+        "answer": 0,
+        "explanation": "The expression matches the chapter example of a polynomial with variables x, y and z.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ch 2 multi-variable"
+      },
+      {
+        "id": "p2_t1_D_e28e2629",
+        "question": "Simplify: (5x + 5) + (3x + 1)",
+        "options": [
+          "8x + 6",
+          "8x + 7",
+          "9x + 6",
+          "5x + 8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_afed68f8",
+        "question": "Simplify: (2x + 3) + (4x + 2)",
+        "options": [
+          "6x + 5",
+          "7x + 5",
+          "2x + 7",
+          "6x + 6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_fc683d54",
+        "question": "Simplify: (2x + 2) + (2x + 1)",
+        "options": [
+          "4x + 3",
+          "5x + 3",
+          "2x + 4",
+          "4x + 4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_8d2ab1ae",
+        "question": "Simplify: (3x + 4) + (3x + 3)",
+        "options": [
+          "6x + 7",
+          "3x + 7",
+          "7x + 7",
+          "6x + 8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_d0d948a3",
+        "question": "Simplify: (1x + 3) + (3x + 4)",
+        "options": [
+          "4x + 7",
+          "4x + 8",
+          "5x + 7",
+          "1x + 6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_afef0696",
+        "question": "Simplify: (5x + 3) + (4x + 3)",
+        "options": [
+          "9x + 6",
+          "9x + 7",
+          "5x + 7",
+          "10x + 6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_a6b6ea83",
+        "question": "Simplify: (3x + 3) + (4x + 1)",
+        "options": [
+          "7x + 5",
+          "7x + 4",
+          "8x + 4",
+          "3x + 7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -1199,6 +2039,186 @@
           "7x + 4"
         ],
         "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_f1428cc4",
+        "question": "What is the degree of the zero polynomial?",
+        "options": [
+          "1",
+          "-1",
+          "0",
+          "Not defined"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states that when all coefficients a₀ through aₙ are zero, the degree of the zero polynomial is not defined.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2 definition"
+      },
+      {
+        "id": "p2_t1_E_bb31620a",
+        "question": "Evaluate the zero polynomial at x = 5.",
+        "options": [
+          "0",
+          "10",
+          "Not defined",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt identifies the zero polynomial as the constant 0 obtained when every coefficient is zero.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t1_E_129767b0",
+        "question": "Simplify: (1x + 1) + (2x + 2)",
+        "options": [
+          "1x + 3",
+          "4x + 3",
+          "3x + 4",
+          "3x + 3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_c9e8cc33",
+        "question": "Simplify: (5x + 2) + (3x + 4)",
+        "options": [
+          "8x + 6",
+          "5x + 5",
+          "9x + 6",
+          "8x + 7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_4da00ef4",
+        "question": "Simplify: (4x + 2) + (3x + 3)",
+        "options": [
+          "7x + 6",
+          "7x + 5",
+          "8x + 5",
+          "4x + 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_2981de24",
+        "question": "Simplify: (5x + 4) + (3x + 4)",
+        "options": [
+          "5x + 7",
+          "8x + 9",
+          "9x + 8",
+          "8x + 8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_0c362a60",
+        "question": "Simplify: (5x + 1) + (4x + 3)",
+        "options": [
+          "10x + 4",
+          "5x + 5",
+          "9x + 4",
+          "9x + 5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_a8f45b55",
+        "question": "Simplify: (5x + 5) + (3x + 2)",
+        "options": [
+          "8x + 7",
+          "9x + 7",
+          "5x + 8",
+          "8x + 8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_d98ba6ed",
+        "question": "Simplify: (2x + 4) + (3x + 1)",
+        "options": [
+          "5x + 5",
+          "6x + 5",
+          "2x + 7",
+          "5x + 6"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "E",

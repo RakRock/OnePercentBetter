@@ -433,12 +433,15 @@ def render_practice():
 
         fb = st.session_state.get(_ss_key(prereq_id, "feedback"))
         if fb and fb.get("q_index") == current:
+            picked_disp = hmr.format_math_display(str(fb["picked"]))
+            correct_disp = hmr.format_math_display(str(fb["correct_val"]))
+            expl_disp = hmr.format_math_display(str(q.get("explanation", "")))
             if fb["correct"]:
                 st.markdown(
                     f"""
                 <div class="correct-answer" style="text-align:center;">
-                    ✅ <strong>Correct!</strong> The answer is <strong>{fb["correct_val"]}</strong> 🎉
-                    <p style="color:#065f46;font-size:0.9rem;margin-top:0.3rem;">{q.get("explanation", "")}</p>
+                    ✅ <strong>Correct!</strong> The answer is <strong>{correct_disp}</strong> 🎉
+                    <p style="color:#065f46;font-size:0.9rem;margin-top:0.3rem;">{expl_disp}</p>
                 </div>
                 """,
                     unsafe_allow_html=True,
@@ -447,9 +450,9 @@ def render_practice():
                 st.markdown(
                     f"""
                 <div class="wrong-answer" style="text-align:center;">
-                    Not quite! You picked <strong>{fb["picked"]}</strong>.
-                    The answer is <strong>{fb["correct_val"]}</strong> 💪
-                    <p style="color:#991b1b;font-size:0.9rem;margin-top:0.3rem;">{q.get("explanation", "")}</p>
+                    Not quite! You picked <strong>{picked_disp}</strong>.
+                    The answer is <strong>{correct_disp}</strong> 💪
+                    <p style="color:#991b1b;font-size:0.9rem;margin-top:0.3rem;">{expl_disp}</p>
                 </div>
                 """,
                     unsafe_allow_html=True,
@@ -527,17 +530,19 @@ def render_practice():
         with st.expander("📋 Question-by-question review", expanded=False):
             for idx, (q_item, ans) in enumerate(zip(questions, answers)):
                 css = "correct-answer" if ans.get("correct") else "wrong-answer"
+                q_disp = hmr.format_math_display(str(q_item["question"]))
+                expl_disp = hmr.format_math_display(str(q_item.get("explanation", "")))
                 if ans.get("correct"):
                     mark = "✅"
                 else:
-                    picked = ans.get("picked", "?")
-                    correct_val = ans.get("correct_val", "?")
+                    picked = hmr.format_math_plain(str(ans.get("picked", "?")))
+                    correct_val = hmr.format_math_plain(str(ans.get("correct_val", "?")))
                     mark = f"❌ You: {picked} — ✅ {correct_val}"
                 st.markdown(
                     f"""
                 <div class="{css}">
-                    <strong>Q{idx + 1}</strong> · {q_item.get("category_label", "")}: {q_item["question"]} &nbsp; {mark}
-                    <p style="font-size:0.85rem;margin:0.3rem 0 0 0;">{q_item.get("explanation", "")}</p>
+                    <strong>Q{idx + 1}</strong> · {q_item.get("category_label", "")}: {q_disp} &nbsp; {mark}
+                    <p style="font-size:0.85rem;margin:0.3rem 0 0 0;">{expl_disp}</p>
                 </div>
                 """,
                     unsafe_allow_html=True,
@@ -609,15 +614,55 @@ def render_practice():
 
 def _render_choices(q: dict, current: int, prereq_id: int) -> int | None:
     opts = q["options"]
-    ans_col1, ans_col2 = st.columns(2, gap="medium")
-    for i, opt in enumerate(opts):
-        col = ans_col1 if i % 2 == 0 else ans_col2
-        with col:
+    st.markdown(
+        """
+<style>
+section.main [data-testid="stVerticalBlockBorderWrapper"] .stButton > button[kind="secondary"] {
+    width: 100% !important;
+    min-height: 3.25rem;
+    padding: 0.75rem 1rem !important;
+    text-align: center !important;
+    justify-content: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    line-height: 1.35 !important;
+    font-weight: 600 !important;
+    font-size: 1.05rem !important;
+    letter-spacing: normal !important;
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    border: 2px solid #e5e7eb !important;
+    border-radius: 14px !important;
+}
+section.main [data-testid="stVerticalBlockBorderWrapper"] .stButton > button[kind="secondary"]:hover {
+    border-color: #6366f1 !important;
+    background: #f5f3ff !important;
+    color: #4338ca !important;
+}
+</style>
+""",
+        unsafe_allow_html=True,
+    )
+    long_text = any(len(str(o)) > 15 for o in opts)
+    if long_text:
+        for i, opt in enumerate(opts):
             if st.button(
                 hmr.format_option_label(str(opt)),
                 key=f"hm_pr_opt_{prereq_id}_{current}_{i}",
                 use_container_width=True,
-                type="primary",
+                type="secondary",
             ):
                 return i
+    else:
+        ans_col1, ans_col2 = st.columns(2, gap="medium")
+        for i, opt in enumerate(opts):
+            col = ans_col1 if i % 2 == 0 else ans_col2
+            with col:
+                if st.button(
+                    hmr.format_option_label(str(opt)),
+                    key=f"hm_pr_opt_{prereq_id}_{current}_{i}",
+                    use_container_width=True,
+                    type="secondary",
+                ):
+                    return i
     return None

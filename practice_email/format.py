@@ -6,6 +6,24 @@ import html as html_lib
 from datetime import datetime
 
 
+def _format_math_for_email_html(text: str) -> str:
+    try:
+        import harshit_math_render as hmr
+
+        return hmr.format_math_display(text)
+    except Exception:
+        return html_lib.escape(str(text))
+
+
+def _format_math_for_email_plain(text: str) -> str:
+    try:
+        import harshit_math_render as hmr
+
+        return hmr.format_math_plain(text)
+    except Exception:
+        return str(text).strip()
+
+
 def _question_text(q: dict) -> str:
     if q.get("equation"):
         try:
@@ -118,11 +136,11 @@ def format_practice_report_email(
         plain_parts.extend(["", "MISSED QUESTIONS", "----------------"])
         for item in missed:
             topic = f" ({item['topic']})" if item.get("topic") else ""
-            plain_parts.append(f"Q{item['number']}{topic}: {item['question']}")
-            plain_parts.append(f"  Your answer: {item['picked']}")
-            plain_parts.append(f"  Correct answer: {item['correct']}")
+            plain_parts.append(f"Q{item['number']}{topic}: {_format_math_for_email_plain(item['question'])}")
+            plain_parts.append(f"  Your answer: {_format_math_for_email_plain(item['picked'])}")
+            plain_parts.append(f"  Correct answer: {_format_math_for_email_plain(item['correct'])}")
             if item.get("explanation"):
-                plain_parts.append(f"  Why: {item['explanation']}")
+                plain_parts.append(f"  Why: {_format_math_for_email_plain(item['explanation'])}")
             plain_parts.append("")
     plain_parts.extend(["", f"— OnePercent {program_name}"])
     plain = "\n".join(plain_parts)
@@ -148,7 +166,7 @@ def format_practice_report_email(
             )
             expl = (
                 f'<p style="margin:0.35rem 0 0 0;color:#374151;font-size:0.9rem;">'
-                f'<strong>Why:</strong> {html_lib.escape(item["explanation"])}</p>'
+                f'<strong>Why:</strong> {_format_math_for_email_html(item["explanation"])}</p>'
                 if item.get("explanation")
                 else ""
             )
@@ -157,9 +175,9 @@ def format_practice_report_email(
                 <div style="background:#fef2f2;border-left:4px solid #ef4444;padding:0.75rem 0.9rem;
                      border-radius:8px;margin-bottom:0.65rem;">
                   <p style="margin:0;font-weight:700;color:#991b1b;">Q{item["number"]}{topic}</p>
-                  <p style="margin:0.35rem 0 0 0;color:#1f2937;">{html_lib.escape(item["question"])}</p>
-                  <p style="margin:0.35rem 0 0 0;color:#991b1b;"><strong>Your answer:</strong> {html_lib.escape(item["picked"])}</p>
-                  <p style="margin:0.15rem 0 0 0;color:#047857;"><strong>Correct answer:</strong> {html_lib.escape(item["correct"])}</p>
+                  <p style="margin:0.35rem 0 0 0;color:#1f2937;">{_format_math_for_email_html(item["question"])}</p>
+                  <p style="margin:0.35rem 0 0 0;color:#991b1b;"><strong>Your answer:</strong> {_format_math_for_email_html(item["picked"])}</p>
+                  <p style="margin:0.15rem 0 0 0;color:#047857;"><strong>Correct answer:</strong> {_format_math_for_email_html(item["correct"])}</p>
                   {expl}
                 </div>
                 """

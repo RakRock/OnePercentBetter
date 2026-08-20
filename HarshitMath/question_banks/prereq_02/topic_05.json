@@ -240,6 +240,146 @@
         "source": "chapter_seed",
         "chapter_num": 4,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_C_da5ca882",
+        "question": "For 3x + 3y = 13, complete (0, ?).",
+        "options": [
+          "3",
+          "6",
+          "5",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t5_C",
+        "category_label": "Tables · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_C_b1f5d19f",
+        "question": "For 1x + 1y = 10, complete (0, ?).",
+        "options": [
+          "10",
+          "9",
+          "11",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t5_C",
+        "category_label": "Tables · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_C_cf15403f",
+        "question": "For 4x + 1y = 7, complete (0, ?).",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t5_C",
+        "category_label": "Tables · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_C_4a4546e5",
+        "question": "For 2x + 3y = 6, complete (0, ?).",
+        "options": [
+          "2",
+          "4",
+          "1",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t5_C",
+        "category_label": "Tables · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_C_7451ad4f",
+        "question": "For 1x + 3y = 6, complete (0, ?).",
+        "options": [
+          "1",
+          "3",
+          "2",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t5_C",
+        "category_label": "Tables · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_C_e26d9956",
+        "question": "For 3x + 2y = 6, complete (0, ?).",
+        "options": [
+          "4",
+          "2",
+          "5",
+          "3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t5_C",
+        "category_label": "Tables · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_C_2926d1f2",
+        "question": "For 1x + 2y = 8, complete (0, ?).",
+        "options": [
+          "5",
+          "8",
+          "4",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t5_C",
+        "category_label": "Tables · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "A": [
@@ -393,6 +533,186 @@
           "3"
         ],
         "answer": 3,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t5_A",
+        "category_label": "Tables · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_A_22a06066",
+        "question": "For the equation 0.x + 1.y - 2 = 0, what is the value of y?",
+        "options": [
+          "-2",
+          "2",
+          "0",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt writes y = 2 as 0.x + 1.y - 2 = 0, so y equals 2.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t5_A",
+        "category_label": "Tables · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Ex 4.1"
+      },
+      {
+        "id": "p2_t5_A_5852c9f3",
+        "question": "For the equation y = 2 written as 0x + y - 2 = 0, find x when y = 5.",
+        "options": [
+          "any real number",
+          "2",
+          "5",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "The coefficient of x is zero so x can take any value while y remains fixed, matching the excerpt example.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t5_A",
+        "category_label": "Tables · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Chapter 4"
+      },
+      {
+        "id": "p2_t5_A_364344b2",
+        "question": "For 2x + 4y = 7, complete (0, ?).",
+        "options": [
+          "2",
+          "1",
+          "3",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t5_A",
+        "category_label": "Tables · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_A_0d78e581",
+        "question": "For 3x + 1y = 15, complete (0, ?).",
+        "options": [
+          "16",
+          "1",
+          "15",
+          "5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t5_A",
+        "category_label": "Tables · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_A_e9567986",
+        "question": "For 3x + 3y = 11, complete (0, ?).",
+        "options": [
+          "3",
+          "5",
+          "2",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t5_A",
+        "category_label": "Tables · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_A_7d3e7c89",
+        "question": "For 4x + 3y = 6, complete (0, ?).",
+        "options": [
+          "1",
+          "3",
+          "2",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t5_A",
+        "category_label": "Tables · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_A_580474d4",
+        "question": "For 2x + 4y = 6, complete (0, ?).",
+        "options": [
+          "1",
+          "4",
+          "2",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t5_A",
+        "category_label": "Tables · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_A_519470e8",
+        "question": "For 1x + 1y = 12, complete (0, ?).",
+        "options": [
+          "11",
+          "12",
+          "13",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t5_A",
+        "category_label": "Tables · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_A_30be0e4d",
+        "question": "For 4x + 2y = 10, complete (0, ?).",
+        "options": [
+          "4",
+          "5",
+          "2",
+          "6"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 5,
         "level": "A",
@@ -564,6 +884,146 @@
         "source": "chapter_seed",
         "chapter_num": 4,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_B_f3f61e4e",
+        "question": "For 3x + 3y = 10, complete (?, 0).",
+        "options": [
+          "5",
+          "3",
+          "4",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t5_B",
+        "category_label": "Tables · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_B_1396fff6",
+        "question": "For 1x + 2y = 14, complete (?, 0).",
+        "options": [
+          "15",
+          "14",
+          "1",
+          "7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t5_B",
+        "category_label": "Tables · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_B_ef6924f1",
+        "question": "For 2x + 4y = 16, complete (?, 0).",
+        "options": [
+          "2",
+          "4",
+          "8",
+          "9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t5_B",
+        "category_label": "Tables · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_B_b919b749",
+        "question": "For 2x + 2y = 8, complete (?, 0).",
+        "options": [
+          "4",
+          "3",
+          "5",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t5_B",
+        "category_label": "Tables · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_B_0bc2f3db",
+        "question": "For 1x + 1y = 10, complete (?, 0).",
+        "options": [
+          "11",
+          "1",
+          "10",
+          "9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t5_B",
+        "category_label": "Tables · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_B_bcb151ea",
+        "question": "For 3x + 3y = 12, complete (?, 0).",
+        "options": [
+          "3",
+          "5",
+          "4",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t5_B",
+        "category_label": "Tables · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_B_f81bdd64",
+        "question": "For 3x + 3y = 14, complete (?, 0).",
+        "options": [
+          "6",
+          "5",
+          "3",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t5_B",
+        "category_label": "Tables · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -726,6 +1186,126 @@
         "source": "chapter_seed",
         "chapter_num": 4,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_D_91984974",
+        "question": "For 3x + 2y = 7, complete (?, 0).",
+        "options": [
+          "1",
+          "3",
+          "4",
+          "2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t5_D",
+        "category_label": "Tables · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_D_a5fb954e",
+        "question": "For 1x + 3y = 8, complete (?, 0).",
+        "options": [
+          "8",
+          "1",
+          "9",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t5_D",
+        "category_label": "Tables · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_D_21c04726",
+        "question": "For 2x + 3y = 7, complete (?, 0).",
+        "options": [
+          "3",
+          "2",
+          "5",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t5_D",
+        "category_label": "Tables · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_D_33f42ead",
+        "question": "For 3x + 2y = 14, complete (?, 0).",
+        "options": [
+          "5",
+          "3",
+          "4",
+          "7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t5_D",
+        "category_label": "Tables · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_D_82678794",
+        "question": "For 4x + 4y = 11, complete (?, 0).",
+        "options": [
+          "4",
+          "3",
+          "2",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t5_D",
+        "category_label": "Tables · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_D_08bfdeeb",
+        "question": "For 4x + 1y = 8, complete (?, 0).",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t5_D",
+        "category_label": "Tables · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -875,6 +1455,146 @@
         "options": [
           "None",
           "Exactly one",
+          "Infinitely many",
+          "Two only"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t5_E",
+        "category_label": "Tables · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_E_2f72f2eb",
+        "question": "How many solutions does 4x + 2y = 7 have?",
+        "options": [
+          "Infinitely many",
+          "Two only",
+          "None",
+          "Exactly one"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t5_E",
+        "category_label": "Tables · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_E_11f39b15",
+        "question": "How many solutions does 3x + 3y = 9 have?",
+        "options": [
+          "None",
+          "Exactly one",
+          "Infinitely many",
+          "Two only"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t5_E",
+        "category_label": "Tables · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_E_fa9baa37",
+        "question": "How many solutions does 1x + 2y = 13 have?",
+        "options": [
+          "Exactly one",
+          "Two only",
+          "None",
+          "Infinitely many"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t5_E",
+        "category_label": "Tables · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_E_3c64cfd7",
+        "question": "How many solutions does 1x + 1y = 13 have?",
+        "options": [
+          "Exactly one",
+          "Infinitely many",
+          "Two only",
+          "None"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t5_E",
+        "category_label": "Tables · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_E_1f903f03",
+        "question": "How many solutions does 3x + 1y = 12 have?",
+        "options": [
+          "Infinitely many",
+          "None",
+          "Exactly one",
+          "Two only"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t5_E",
+        "category_label": "Tables · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_E_1cd07e96",
+        "question": "How many solutions does 1x + 2y = 9 have?",
+        "options": [
+          "Infinitely many",
+          "Two only",
+          "None",
+          "Exactly one"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t5_E",
+        "category_label": "Tables · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t5_E_0063af30",
+        "question": "How many solutions does 1x + 1y = 10 have?",
+        "options": [
+          "Exactly one",
+          "None",
           "Infinitely many",
           "Two only"
         ],

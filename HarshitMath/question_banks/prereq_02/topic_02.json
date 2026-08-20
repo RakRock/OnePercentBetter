@@ -220,6 +220,126 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_A_1a6b8d31",
+        "question": "Multiply the monomial 3x by the polynomial x + 4",
+        "options": [
+          "x^2 + 4x",
+          "3x + 12",
+          "3x^2 + 12x",
+          "3x^2 + 4"
+        ],
+        "answer": 2,
+        "explanation": "Distribute the monomial factor across each term using the polynomial definition.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t2_A_79bce5a7",
+        "question": "Multiply the monomial 3x by the polynomial x^2 + 2x + 1.",
+        "options": [
+          "3x^2 + 6x + 3",
+          "x^3 + 2x^2 + x",
+          "3x^3 + 6x^2 + 3x",
+          "3x^3 + 2x + 1"
+        ],
+        "answer": 2,
+        "explanation": "Distribute the monomial over each term of the polynomial form given in the excerpt to obtain 3x^3 + 6x^2 + 3x.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2 polynomial expression"
+      },
+      {
+        "id": "p2_t2_A_612ac5ed",
+        "question": "Expand: 4x(x + 3)",
+        "options": [
+          "4x² + 3",
+          "4x² + 12x",
+          "4x + 3",
+          "8x²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_A_f9b20c56",
+        "question": "Expand: 3x(x + 1)",
+        "options": [
+          "3x² + 3x",
+          "3x² + 1",
+          "6x²",
+          "3x + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_A_fddf9c90",
+        "question": "Expand: 3x(x + 4)",
+        "options": [
+          "3x² + 12x",
+          "3x + 4",
+          "6x²",
+          "3x² + 4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_A_91dcd625",
+        "question": "Expand: 4x(x + 1)",
+        "options": [
+          "4x + 1",
+          "8x²",
+          "4x² + 4x",
+          "4x² + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -433,6 +553,106 @@
           "1x + 2"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_c5d7f9ef",
+        "question": "Multiply the binomials (x + y) and (x - y). What product is obtained?",
+        "options": [
+          "x² - y²",
+          "x² + y²",
+          "x² + 2xy - y²",
+          "2x"
+        ],
+        "answer": 0,
+        "explanation": "Polynomial multiplication of these binomials yields the difference of squares while staying in the polynomial form of the chapter.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t2_B_72d07989",
+        "question": "Expand: 1x(x + 3)",
+        "options": [
+          "1x² + 3",
+          "2x²",
+          "1x² + 3x",
+          "1x + 3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_e5275915",
+        "question": "Expand: 2x(x + 3)",
+        "options": [
+          "2x + 3",
+          "4x²",
+          "2x² + 3",
+          "2x² + 6x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_43a64526",
+        "question": "Expand: 3x(x + 4)",
+        "options": [
+          "3x² + 4",
+          "3x + 4",
+          "3x² + 12x",
+          "6x²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_1ef8bfab",
+        "question": "Expand: 2x(x + 2)",
+        "options": [
+          "2x² + 4x",
+          "2x² + 2",
+          "2x + 2",
+          "4x²"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -664,6 +884,106 @@
         "source": "chapter_seed",
         "chapter_num": 2,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_02f7bf2f",
+        "question": "What is the degree of the zero polynomial obtained when all coefficients a^0 to an are set to zero?",
+        "options": [
+          "n",
+          "0",
+          "undefined",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt states that the degree of the zero polynomial is not defined.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2"
+      },
+      {
+        "id": "p2_t2_C_0e1b4971",
+        "question": "Expand: 1x(x + 2)",
+        "options": [
+          "1x² + 2",
+          "2x²",
+          "1x² + 2x",
+          "1x + 2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_12723c28",
+        "question": "Expand: 2x(x + 1)",
+        "options": [
+          "4x²",
+          "2x² + 1",
+          "2x + 1",
+          "2x² + 2x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_a1003fcc",
+        "question": "Expand: 3x(x + 4)",
+        "options": [
+          "3x² + 12x",
+          "3x + 4",
+          "6x²",
+          "3x² + 4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_bc5a272c",
+        "question": "Expand: 4x(x + 3)",
+        "options": [
+          "4x² + 12x",
+          "4x + 3",
+          "8x²",
+          "4x² + 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -875,6 +1195,106 @@
           "2x²",
           "1x + 2",
           "1x² + 2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_8ad11ca4",
+        "question": "Expand: 1x(x + 1)",
+        "options": [
+          "1x² + 1",
+          "2x²",
+          "1x² + 1x",
+          "1x + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_721eb6fd",
+        "question": "Expand: 4x(x + 4)",
+        "options": [
+          "8x²",
+          "4x² + 16x",
+          "4x + 4",
+          "4x² + 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_a91387f5",
+        "question": "Expand: 2x(x + 3)",
+        "options": [
+          "2x² + 6x",
+          "4x²",
+          "2x + 3",
+          "2x² + 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_96d8fdfd",
+        "question": "Expand: 2x(x + 2)",
+        "options": [
+          "2x² + 2",
+          "4x²",
+          "2x + 2",
+          "2x² + 4x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_532b1b32",
+        "question": "Expand: 3x(x + 3)",
+        "options": [
+          "3x² + 9x",
+          "3x² + 3",
+          "6x²",
+          "3x + 3"
         ],
         "answer": 0,
         "explanation": "",
@@ -1099,6 +1519,86 @@
           "4x² + 1"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_1ad003a8",
+        "question": "Expand: 1x(x + 1)",
+        "options": [
+          "1x + 1",
+          "1x² + 1",
+          "2x²",
+          "1x² + 1x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_32b5a446",
+        "question": "Expand: 2x(x + 4)",
+        "options": [
+          "2x² + 4",
+          "2x² + 8x",
+          "2x + 4",
+          "4x²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_7a754368",
+        "question": "Expand: 3x(x + 2)",
+        "options": [
+          "6x²",
+          "3x² + 2",
+          "3x² + 6x",
+          "3x + 2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_252a9a40",
+        "question": "Expand: 4x(x + 2)",
+        "options": [
+          "4x + 2",
+          "8x²",
+          "4x² + 8x",
+          "4x² + 2"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "E",

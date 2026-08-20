@@ -200,6 +200,26 @@
         "source": "chapter_seed",
         "chapter_num": 4,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t6_D_bd240340",
+        "question": "Which point lies on 3x + 3y = 12?",
+        "options": [
+          "(3, 2)",
+          "(2, 2)",
+          "(2, 3)",
+          "(1, 1)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 6,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t6_D",
+        "category_label": "Graph · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "A": [
@@ -322,6 +342,126 @@
         "source": "chapter_seed",
         "chapter_num": 4,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t6_A_0ab5fc44",
+        "question": "Which point satisfies the equation x + 0y + 5 = 0?",
+        "options": [
+          "(0, -5)",
+          "(0, 5)",
+          "(-5, 0)",
+          "(5, 0)"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt rewrites x = -5 as 1x + 0y + 5 = 0, so the point with x = -5 and any y works.",
+        "topic": 6,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t6_A",
+        "category_label": "Graph · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 2 (i)"
+      },
+      {
+        "id": "p2_t6_A_db236416",
+        "question": "For 0x + 5y - 2 = 0, which point lies on the line?",
+        "options": [
+          "(2, 0)",
+          "(5, 2)",
+          "(0, 2/5)",
+          "(0, 2)"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt writes 5y = 2 as 0x + 5y - 2 = 0, satisfied when y = 2/5 and x = 0.",
+        "topic": 6,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t6_A",
+        "category_label": "Graph · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 2 (iv)"
+      },
+      {
+        "id": "p2_t6_A_7ea9c8ea",
+        "question": "Which point satisfies the equation 2x - y = 0?",
+        "options": [
+          "(2,1)",
+          "(0,2)",
+          "(1,2)",
+          "(3,5)"
+        ],
+        "answer": 2,
+        "explanation": "Substitute x=1 and y=2 into 2x - y to get zero, matching the linear form.",
+        "topic": 6,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t6_A",
+        "category_label": "Graph · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Ch 4 example"
+      },
+      {
+        "id": "p2_t6_A_0ffefa68",
+        "question": "Which point satisfies the equation x + 0.y + 5 = 0?",
+        "options": [
+          "(5,0)",
+          "(-5,0)",
+          "(0,-5)",
+          "(0,5)"
+        ],
+        "answer": 1,
+        "explanation": "The equation x = -5 holds at the point (-5,0) as shown in the two-variable rewrite.",
+        "topic": 6,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t6_A",
+        "category_label": "Graph · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 2 (i)"
+      },
+      {
+        "id": "p2_t6_A_9e199b41",
+        "question": "Which point lies on 3x + 2y = 10?",
+        "options": [
+          "(2, 2)",
+          "(3, 2)",
+          "(1, 1)",
+          "(2, 3)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 6,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t6_A",
+        "category_label": "Graph · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t6_A_b62a7010",
+        "question": "Which point lies on 2x + 2y = 8?",
+        "options": [
+          "(1, 1)",
+          "(2, 2)",
+          "(3, 2)",
+          "(2, 3)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 6,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t6_A",
+        "category_label": "Graph · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -435,6 +575,26 @@
           "(3, 2)"
         ],
         "answer": 1,
+        "explanation": "",
+        "topic": 6,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t6_B",
+        "category_label": "Graph · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t6_B_4d167848",
+        "question": "Which point lies on 1x + 1y = 4?",
+        "options": [
+          "(2, 2)",
+          "(3, 2)",
+          "(2, 3)",
+          "(1, 1)"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 6,
         "level": "B",
@@ -586,6 +746,26 @@
         "source": "chapter_seed",
         "chapter_num": 4,
         "chapter_ref": ""
+      },
+      {
+        "id": "p2_t6_C_8cc61ead",
+        "question": "Which point lies on 1x + 1y = 4?",
+        "options": [
+          "(3, 2)",
+          "(1, 1)",
+          "(2, 2)",
+          "(2, 3)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 6,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t6_C",
+        "category_label": "Graph · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -699,6 +879,46 @@
           "(2, 2)"
         ],
         "answer": 3,
+        "explanation": "",
+        "topic": 6,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t6_E",
+        "category_label": "Graph · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t6_E_7ef6cc1d",
+        "question": "Which point lies on 3x + 3y = 12?",
+        "options": [
+          "(1, 1)",
+          "(2, 2)",
+          "(2, 3)",
+          "(3, 2)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 6,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t6_E",
+        "category_label": "Graph · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t6_E_653db50b",
+        "question": "Which point lies on 3x + 2y = 10?",
+        "options": [
+          "(2, 3)",
+          "(3, 2)",
+          "(2, 2)",
+          "(1, 1)"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 6,
         "level": "E",

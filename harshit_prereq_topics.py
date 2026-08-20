@@ -845,7 +845,7 @@ def generate_question(
         if not q:
             continue
         text = str(q.get("question", "")).strip()
-        if q.get("id") in exclude_ids or text in exclude_text:
+        if hcq.is_question_excluded(q, exclude_ids=exclude_ids, exclude_text=exclude_text):
             continue
         return q
     return None

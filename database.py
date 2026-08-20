@@ -492,7 +492,7 @@ def get_recent_harshit_practice_exclusions(
     user_id: int,
     prereq_id: int,
     *,
-    sessions: int = 4,
+    sessions: int = 8,
 ) -> tuple[set[str], set[str]]:
     """Question ids and exact question text from recent sessions (avoid repeats)."""
     with get_connection() as conn:

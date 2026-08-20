@@ -26,20 +26,32 @@ def _active_slots(prereq_id: int, config: dict) -> list[tuple[int, str]]:
     return slots
 
 
+def _question_key(q: dict) -> str:
+    return hcq.question_dedup_key(str(q.get("question", "")))
+
+
+def _is_fresh(q: dict | None, used_ids: set[str], used_keys: set[str]) -> bool:
+    if not q:
+        return False
+    if q.get("id") in used_ids:
+        return False
+    return _question_key(q) not in used_keys
+
+
+def _track_question(q: dict, used_ids: set[str], used_keys: set[str]) -> None:
+    used_ids.add(str(q["id"]))
+    used_keys.add(_question_key(q))
+
+
 def _generate_one(
     prereq_id: int,
     topic_id: int,
     level: str,
     used_ids: set[str],
-    used_text: set[str],
+    used_keys: set[str],
 ) -> dict | None:
     def _fresh(q: dict | None) -> dict | None:
-        if not q:
-            return None
-        text = str(q.get("question", "")).strip()
-        if q.get("id") in used_ids or text in used_text:
-            return None
-        return q
+        return q if _is_fresh(q, used_ids, used_keys) else None
 
     q = _fresh(
         hcq.pick_question(
@@ -47,7 +59,7 @@ def _generate_one(
             topic_id,
             level,
             exclude_ids=used_ids,
-            exclude_text=used_text,
+            exclude_text=used_keys,
             quality_only=True,
         )
     )
@@ -60,7 +72,7 @@ def _generate_one(
             topic_id,
             level,
             exclude_ids=used_ids,
-            exclude_text=used_text,
+            exclude_text=used_keys,
             templates_only=True,
         )
     )
@@ -72,14 +84,14 @@ def _fill_from_bank_and_templates(
     count: int,
     *,
     used_ids: set[str] | None = None,
-    used_text: set[str] | None = None,
+    used_keys: set[str] | None = None,
 ) -> list[dict]:
     slots = _active_slots(prereq_id, config)
     if not slots or count <= 0:
         return []
 
     used_ids = used_ids or set()
-    used_text = used_text or set()
+    used_keys = used_keys or set()
     selected: list[dict] = []
     cycle = slots * ((count // len(slots)) + 1)
     random.shuffle(cycle)
@@ -88,12 +100,10 @@ def _fill_from_bank_and_templates(
         if len(selected) >= count:
             break
         for _ in range(16):
-            q = _generate_one(prereq_id, tid, lvl, used_ids, used_text)
+            q = _generate_one(prereq_id, tid, lvl, used_ids, used_keys)
             if q:
-                text = str(q.get("question", "")).strip()
                 selected.append(q)
-                used_ids.add(q["id"])
-                used_text.add(text)
+                _track_question(q, used_ids, used_keys)
                 break
 
     if len(selected) < count:
@@ -105,15 +115,12 @@ def _fill_from_bank_and_templates(
                 tid,
                 lvl,
                 exclude_ids=used_ids,
-                exclude_text=used_text,
+                exclude_text=used_keys,
                 templates_only=True,
             )
-            if q:
-                text = str(q.get("question", "")).strip()
-                if q["id"] not in used_ids and text not in used_text:
-                    selected.append(q)
-                    used_ids.add(q["id"])
-                    used_text.add(text)
+            if _is_fresh(q, used_ids, used_keys):
+                selected.append(q)
+                _track_question(q, used_ids, used_keys)
 
     random.shuffle(selected)
     return selected[:count]
@@ -124,6 +131,8 @@ def _build_warmups(
     config: dict,
     *,
     xai_api_key: str | None = None,
+    used_ids: set[str] | None = None,
+    used_keys: set[str] | None = None,
 ) -> list[dict]:
     count = max(0, min(MAX_WARMUP, int(config.get("warmup_count", 0))))
     if count == 0:
@@ -133,8 +142,8 @@ def _build_warmups(
         return []
 
     warm: list[dict] = []
-    used: set[str] = set()
-    used_text: set[str] = set()
+    used = set(used_ids or ())
+    used_keys = set(used_keys or ())
     easy = [(tid, "A") for tid, lvl in slots if lvl == "A"] or slots[:1]
     prefer_llm = bool(config.get("use_chapter_llm", True))
 
@@ -146,16 +155,14 @@ def _build_warmups(
             batch = hllm.generate_for_slot(xai_api_key, prereq_id, tid, lvl, count=count)
             added: list[dict] = []
             for q in batch:
-                text = str(q.get("question", "")).strip()
-                if q.get("id") in used or text in used_text:
+                if not _is_fresh(q, used, used_keys):
                     continue
                 q = dict(q)
                 q["category_label"] = f"Warm-up · {q['category_label']}"
                 q["is_warmup"] = True
                 warm.append(q)
                 added.append(q)
-                used.add(q["id"])
-                used_text.add(text)
+                _track_question(q, used, used_keys)
                 if len(warm) >= count:
                     break
             if added:
@@ -172,23 +179,22 @@ def _build_warmups(
     for tid, lvl in cycle:
         if len(warm) >= count:
             break
-        q = _generate_one(prereq_id, tid, lvl, used, used_text)
+        q = _generate_one(prereq_id, tid, lvl, used, used_keys)
         if q:
             q = dict(q)
             q["category_label"] = f"Warm-up · {q['category_label']}"
             q["is_warmup"] = True
             warm.append(q)
-            used.add(q["id"])
-            used_text.add(str(q.get("question", "")).strip())
+            _track_question(q, used, used_keys)
     return warm
 
 
 def _template_session(config: dict, count: int) -> list[dict]:
     prereq_id = int(config.get("prereq_id", 0))
     used_ids = set(config.get("_exclude_ids") or [])
-    used_text = set(config.get("_exclude_text") or [])
+    used_keys = set(config.get("_exclude_keys") or config.get("_exclude_text") or ())
     return _fill_from_bank_and_templates(
-        prereq_id, config, count, used_ids=used_ids, used_text=used_text
+        prereq_id, config, count, used_ids=used_ids, used_keys=used_keys
     )
 
 
@@ -212,12 +218,12 @@ def build_session_set(
 
     selected: list[dict] = []
     used_ids: set[str] = set()
-    used_text: set[str] = set()
+    used_keys: set[str] = set()
     grok_error = ""
     if user_id:
         recent_ids, recent_text = db.get_recent_harshit_practice_exclusions(user_id, prereq_id)
         used_ids.update(recent_ids)
-        used_text.update(recent_text)
+        used_keys.update(hcq.question_dedup_key(t) for t in recent_text)
 
     if prefer_llm and api_key:
         import harshit_prereq_llm as hllm
@@ -225,7 +231,7 @@ def build_session_set(
         fresh_only = bool(config.get("grok_fresh_only", False))
         fallback = None if fresh_only else _template_session
         for attempt, exclusions in enumerate(
-            ((set(used_ids), set(used_text)), (set(), set())) if fresh_only else ((set(used_ids), set(used_text)),)
+            ((set(used_ids), set(used_keys)), (set(), set())) if fresh_only else ((set(used_ids), set(used_keys)),)
         ):
             try:
                 llm_qs = hllm.generate_session_questions(
@@ -239,11 +245,9 @@ def build_session_set(
                     max_rounds=1,
                 )
                 for q in llm_qs:
-                    text = str(q.get("question", "")).strip()
-                    if q.get("id") not in used_ids and text not in used_text:
+                    if _is_fresh(q, used_ids, used_keys):
                         selected.append(q)
-                        used_ids.add(q["id"])
-                        used_text.add(text)
+                        _track_question(q, used_ids, used_keys)
                 if len(selected) >= count or not fresh_only:
                     break
             except ValueError as exc:
@@ -258,7 +262,7 @@ def build_session_set(
                 config,
                 count - len(selected),
                 used_ids=used_ids,
-                used_text=used_text,
+                used_keys=used_keys,
             )
             selected.extend(extra)
     else:
@@ -267,12 +271,18 @@ def build_session_set(
             config,
             count,
             used_ids=used_ids,
-            used_text=used_text,
+            used_keys=used_keys,
         )
 
     random.shuffle(selected)
     main = [_enrich_question(q) for q in selected[:count]]
-    warmups = _build_warmups(prereq_id, config, xai_api_key=api_key if prefer_llm else None)
+    warmups = _build_warmups(
+        prereq_id,
+        config,
+        xai_api_key=api_key if prefer_llm else None,
+        used_ids=used_ids,
+        used_keys=used_keys,
+    )
     warmups = [_enrich_question(q) for q in warmups]
     questions = warmups + main if warmups else main
     if prefer_llm and api_key and not main and grok_error:
