@@ -80,6 +80,146 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Example 2 style"
+      },
+      {
+        "id": "p2_t2_A_6208c0d2",
+        "question": "Expand: 3x(x + 2)",
+        "options": [
+          "3x² + 6x",
+          "6x²",
+          "3x + 2",
+          "3x² + 2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_A_c0a58776",
+        "question": "Expand: 4x(x + 2)",
+        "options": [
+          "4x² + 2",
+          "4x + 2",
+          "8x²",
+          "4x² + 8x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_A_daf95320",
+        "question": "Expand: 2x(x + 1)",
+        "options": [
+          "2x² + 2x",
+          "2x² + 1",
+          "2x + 1",
+          "4x²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_A_5ab70d36",
+        "question": "Expand: 1x(x + 4)",
+        "options": [
+          "1x + 4",
+          "2x²",
+          "1x² + 4x",
+          "1x² + 4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_A_1266ac75",
+        "question": "Expand: 2x(x + 3)",
+        "options": [
+          "2x² + 3",
+          "4x²",
+          "2x + 3",
+          "2x² + 6x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_A_33e1cef4",
+        "question": "Expand: 4x(x + 4)",
+        "options": [
+          "4x + 4",
+          "4x² + 16x",
+          "4x² + 4",
+          "8x²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_A_64f7e60b",
+        "question": "Expand: 1x(x + 1)",
+        "options": [
+          "2x²",
+          "1x + 1",
+          "1x² + 1x",
+          "1x² + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -162,6 +302,146 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Ex 2.1 Q4(iii)"
+      },
+      {
+        "id": "p2_t2_B_f319db63",
+        "question": "Expand: 1x(x + 4)",
+        "options": [
+          "2x²",
+          "1x² + 4x",
+          "1x² + 4",
+          "1x + 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_4ff7a6ef",
+        "question": "Expand: 3x(x + 1)",
+        "options": [
+          "3x² + 1",
+          "3x + 1",
+          "3x² + 3x",
+          "6x²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_e40da9f2",
+        "question": "Expand: 4x(x + 4)",
+        "options": [
+          "4x² + 4",
+          "8x²",
+          "4x² + 16x",
+          "4x + 4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_650a67fb",
+        "question": "Expand: 2x(x + 4)",
+        "options": [
+          "4x²",
+          "2x + 4",
+          "2x² + 4",
+          "2x² + 8x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_c2d0a577",
+        "question": "Expand: 3x(x + 3)",
+        "options": [
+          "3x² + 3",
+          "3x² + 9x",
+          "6x²",
+          "3x + 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_dab13667",
+        "question": "Expand: 4x(x + 3)",
+        "options": [
+          "8x²",
+          "4x² + 12x",
+          "4x² + 3",
+          "4x + 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_B_e7d177de",
+        "question": "Expand: 1x(x + 2)",
+        "options": [
+          "2x²",
+          "1x² + 2",
+          "1x² + 2x",
+          "1x + 2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "C": [
@@ -244,6 +524,146 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Section 2.3 Example 5"
+      },
+      {
+        "id": "p2_t2_C_bb600dcb",
+        "question": "Expand: 4x(x + 1)",
+        "options": [
+          "4x² + 1",
+          "4x + 1",
+          "4x² + 4x",
+          "8x²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_d693f119",
+        "question": "Expand: 1x(x + 1)",
+        "options": [
+          "1x² + 1",
+          "2x²",
+          "1x + 1",
+          "1x² + 1x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_4937a2c5",
+        "question": "Expand: 4x(x + 2)",
+        "options": [
+          "8x²",
+          "4x + 2",
+          "4x² + 2",
+          "4x² + 8x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_9b31a118",
+        "question": "Expand: 3x(x + 1)",
+        "options": [
+          "3x² + 1",
+          "3x² + 3x",
+          "6x²",
+          "3x + 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_24dee798",
+        "question": "Expand: 1x(x + 3)",
+        "options": [
+          "1x + 3",
+          "1x² + 3",
+          "2x²",
+          "1x² + 3x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_12e08b4a",
+        "question": "Expand: 1x(x + 4)",
+        "options": [
+          "1x + 4",
+          "1x² + 4x",
+          "1x² + 4",
+          "2x²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_C_43c8df80",
+        "question": "Expand: 3x(x + 3)",
+        "options": [
+          "3x² + 3",
+          "3x² + 9x",
+          "3x + 3",
+          "6x²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -326,6 +746,146 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Exercise 2.2 Q2 (i)"
+      },
+      {
+        "id": "p2_t2_D_10cee879",
+        "question": "Expand: 3x(x + 1)",
+        "options": [
+          "6x²",
+          "3x + 1",
+          "3x² + 3x",
+          "3x² + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_11048a46",
+        "question": "Expand: 4x(x + 1)",
+        "options": [
+          "8x²",
+          "4x² + 4x",
+          "4x + 1",
+          "4x² + 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_16db27c5",
+        "question": "Expand: 2x(x + 4)",
+        "options": [
+          "4x²",
+          "2x² + 8x",
+          "2x² + 4",
+          "2x + 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_26c08456",
+        "question": "Expand: 4x(x + 3)",
+        "options": [
+          "4x² + 12x",
+          "4x + 3",
+          "8x²",
+          "4x² + 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_4a638155",
+        "question": "Expand: 1x(x + 3)",
+        "options": [
+          "1x + 3",
+          "1x² + 3",
+          "2x²",
+          "1x² + 3x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_3857e846",
+        "question": "Expand: 4x(x + 2)",
+        "options": [
+          "4x² + 8x",
+          "8x²",
+          "4x + 2",
+          "4x² + 2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_D_35699f0b",
+        "question": "Expand: 1x(x + 2)",
+        "options": [
+          "1x² + 2x",
+          "2x²",
+          "1x + 2",
+          "1x² + 2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -408,6 +968,146 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Example 5"
+      },
+      {
+        "id": "p2_t2_E_c3fe1ebf",
+        "question": "Expand: 2x(x + 2)",
+        "options": [
+          "2x + 2",
+          "2x² + 2",
+          "4x²",
+          "2x² + 4x"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_db521c65",
+        "question": "Expand: 4x(x + 3)",
+        "options": [
+          "4x + 3",
+          "4x² + 12x",
+          "4x² + 3",
+          "8x²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_f1a2b5e5",
+        "question": "Expand: 3x(x + 4)",
+        "options": [
+          "6x²",
+          "3x² + 12x",
+          "3x² + 4",
+          "3x + 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_3dfcd364",
+        "question": "Expand: 4x(x + 4)",
+        "options": [
+          "4x² + 4",
+          "4x + 4",
+          "4x² + 16x",
+          "8x²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_d38f5414",
+        "question": "Expand: 3x(x + 3)",
+        "options": [
+          "3x² + 3",
+          "3x² + 9x",
+          "3x + 3",
+          "6x²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_609dc201",
+        "question": "Expand: 1x(x + 3)",
+        "options": [
+          "1x + 3",
+          "1x² + 3x",
+          "2x²",
+          "1x² + 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t2_E_0c889bb6",
+        "question": "Expand: 4x(x + 1)",
+        "options": [
+          "4x² + 4x",
+          "4x + 1",
+          "8x²",
+          "4x² + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ]
   },

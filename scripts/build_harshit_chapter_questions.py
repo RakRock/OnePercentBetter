@@ -96,7 +96,7 @@ def build_prereq(prereq_id: int, per_level: int, api_key: str, *, max_workers: i
 
     workers = max_workers or hllm.DEFAULT_PARALLEL
     print(f"  generating {len(tasks)} slot(s) in parallel (workers={workers})…")
-    results = hllm.generate_for_slots_parallel(
+    results, errors = hllm.generate_for_slots_parallel(
         api_key, prereq_id, tasks, max_workers=workers
     )
 
@@ -116,6 +116,11 @@ def build_prereq(prereq_id: int, per_level: int, api_key: str, *, max_workers: i
         print(f"    topic {topic_id} Level {level}: +{added} question(s)")
 
     failed = len(tasks) - len(results)
+    if errors:
+        for err in errors[:5]:
+            print(f"  error: {err}")
+        if len(errors) > 5:
+            print(f"  … and {len(errors) - 5} more error(s)")
     if failed:
         print(f"  {failed} slot(s) failed — check API key / rate limits")
 

@@ -17,6 +17,7 @@ import harshit_math_answers as hma
 import harshit_math_diagrams as hmd
 import harshit_math_prereqs as hmp
 import harshit_math_render as hmr
+import harshit_prereq_coverage as hpc
 import harshit_prereq_practice as hpp
 import harshit_prereq_topics as hpt
 
@@ -35,6 +36,19 @@ def _ss_key(prereq_id: int, name: str) -> str:
 def ensure_week_config(prereq_id: int) -> dict:
     """Return saved weekly plan, or seed a Level-A starter plan on first visit."""
     config = db.get_harshit_prereq_week_config(prereq_id)
+    if prereq_id == hpc.PREREQ2_ID and config.get("topics"):
+        migrated = hpc.migrate_prereq2_config(config)
+        if migrated.get("topics") != config.get("topics"):
+            db.save_harshit_prereq_week_config(
+                prereq_id,
+                migrated.get("week_label", ""),
+                migrated["topics"],
+                warmup_count=int(migrated.get("warmup_count", 0)),
+                use_llm=bool(migrated.get("use_llm", True)),
+                use_chapter_llm=bool(migrated.get("use_chapter_llm", True)),
+                grok_fresh_only=bool(migrated.get("grok_fresh_only", False)),
+            )
+            config = migrated
     if config.get("topics"):
         return config
     starter = hpt.default_week_config(prereq_id)
@@ -123,6 +137,8 @@ def render_setup_panel(prereq_id: int):
         pass
 
     current = db.get_harshit_prereq_week_config(prereq_id)
+    if prereq_id == hpc.PREREQ2_ID and current.get("topics"):
+        current = hpc.migrate_prereq2_config(current)
     bank = hcq.bank_stats(prereq_id)
     if bank["total"]:
         st.caption(f"Chapter question bank: {bank['total']} cached question(s) from NCERT PDFs.")
@@ -182,12 +198,51 @@ def render_setup_panel(prereq_id: int):
         else:
             st.warning(f"📧 {ec3mail.email_status_message()}")
 
+    if prereq_id == hpc.PREREQ2_ID:
+        st.markdown("---")
+        st.markdown("#### NCERT requirements (PreReq 2)")
+        for chapter, detail in hpc.PREREQ2_REQUIREMENTS:
+            st.caption(f"**{chapter}** — {detail}")
+
+        st.markdown("#### Week presets")
+        st.caption(
+            "Like Arjun's 7 linear-equation strategies — pick a preset to cover all PreReq 2 "
+            "requirements progressively, then fine-tune below."
+        )
+        preset_cols = st.columns(2)
+        preset_keys = list(hpc.PREREQ2_WEEK_PRESETS.keys())
+        for idx, key in enumerate(preset_keys):
+            preset = hpc.PREREQ2_WEEK_PRESETS[key]
+            with preset_cols[idx % 2]:
+                if st.button(preset["label"], key=f"hm_p2_preset_{key}", use_container_width=True):
+                    applied = hpc.apply_preset(key)
+                    db.save_harshit_prereq_week_config(
+                        prereq_id,
+                        applied["week_label"],
+                        applied["topics"],
+                        warmup_count=0,
+                        use_llm=use_xai_live,
+                        use_chapter_llm=use_xai_live,
+                        grok_fresh_only=grok_fresh_only,
+                    )
+                    st.success(f"Applied preset: {preset['label']}")
+                    st.rerun()
+
+        stats = hpc.coverage_stats(prereq_id, current)
+        st.progress(stats["pct"] / 100 if stats["total"] else 0.0)
+        st.caption(hpc.format_coverage_line(prereq_id, current))
+
     current_levels: dict[int, list[str]] = {}
     for item in current.get("topics", []):
         current_levels[int(item["id"])] = list(item.get("levels", []))
 
     st.markdown("---")
-    st.markdown("#### Topics & difficulty levels")
+    section_title = (
+        "#### Algebra strategies (7 total)"
+        if prereq_id == hpc.PREREQ2_ID
+        else "#### Topics & difficulty levels"
+    )
+    st.markdown(section_title)
 
     new_topics: list[dict] = []
     topics = hpt.topics_for_prereq(prereq_id)
@@ -199,8 +254,9 @@ def render_setup_panel(prereq_id: int):
             for k, v in info["levels"].items()
             if k in current_levels.get(tid, [])
         ]
+        prefix = hpc.strategy_label(prereq_id, tid)
         picked = st.multiselect(
-            f"{info.get('emoji', '')} **{info['name']}**",
+            f"{info.get('emoji', '')} **{prefix}: {info['name']}**",
             options=list(level_options.keys()),
             default=default,
             key=f"hm_setup_topic_{prereq_id}_{tid}",
@@ -225,6 +281,15 @@ def render_setup_panel(prereq_id: int):
     if current.get("topics"):
         st.markdown("**Current active plan**")
         st.code(hpt.format_week_plan_summary(prereq_id, current), language=None)
+        if prereq_id == hpc.PREREQ2_ID:
+            stats = hpc.coverage_stats(prereq_id, current)
+            rows = []
+            for tid in sorted(topics):
+                info = topics[tid]
+                active = set(stats["by_topic"].get(tid, []))
+                cells = " ".join("✅" if lvl in active else "⬜" for lvl in hpt.LEVEL_ORDER)
+                rows.append(f"S{tid} {info['short']:10} {cells}")
+            st.caption("Coverage grid (A→E): " + " · ".join(rows))
 
 
 def render_practice_home(prereq_id: int):
@@ -250,6 +315,9 @@ def render_practice_home(prereq_id: int):
 
     if config.get("week_label"):
         st.markdown(f"**{config['week_label']}**")
+
+    if prereq_id == hpc.PREREQ2_ID:
+        st.caption(hpc.format_coverage_line(prereq_id, config))
 
     st.markdown("**This week's focus**")
     for line in hpt.format_week_plan_summary(prereq_id, config).split("\n"):

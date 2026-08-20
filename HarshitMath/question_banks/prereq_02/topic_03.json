@@ -80,6 +80,166 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Section 2.3"
+      },
+      {
+        "id": "p2_t3_A_aff1006c",
+        "question": "Factor: 6x + 6",
+        "options": [
+          "6x",
+          "6(1x + 1)",
+          "6x + 1",
+          "(7)x + 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_A_19ea8e7b",
+        "question": "Factor: 12x + 4",
+        "options": [
+          "4(3x + 1)",
+          "4x + 3",
+          "12x",
+          "(7)x + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_A_394db1ba",
+        "question": "Factor: 9x + 3",
+        "options": [
+          "3(3x + 1)",
+          "9x",
+          "3x + 3",
+          "(6)x + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_A_dce8d081",
+        "question": "Factor: 5x + 5",
+        "options": [
+          "(6)x + 1",
+          "5x + 1",
+          "5x",
+          "5(1x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_A_d9d14134",
+        "question": "Factor: 18x + 6",
+        "options": [
+          "6(3x + 1)",
+          "18x",
+          "6x + 3",
+          "(9)x + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_A_774aebf8",
+        "question": "Factor: 30x + 6",
+        "options": [
+          "6x + 5",
+          "(11)x + 1",
+          "6(5x + 1)",
+          "30x"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_A_0b7ede96",
+        "question": "Factor: 3x + 3",
+        "options": [
+          "(4)x + 1",
+          "3x",
+          "3x + 1",
+          "3(1x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_A_bb6975d9",
+        "question": "Factor: 20x + 4",
+        "options": [
+          "4(5x + 1)",
+          "(9)x + 1",
+          "4x + 5",
+          "20x"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -162,6 +322,146 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Section 2.3"
+      },
+      {
+        "id": "p2_t3_B_21e0cb66",
+        "question": "Factor: 6x + 2",
+        "options": [
+          "2(3x + 1)",
+          "(5)x + 1",
+          "6x",
+          "2x + 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_B_287e4554",
+        "question": "Factor: 9x + 3",
+        "options": [
+          "3(3x + 1)",
+          "9x",
+          "3x + 3",
+          "(6)x + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_B_26ef32a3",
+        "question": "Factor: 15x + 3",
+        "options": [
+          "(8)x + 1",
+          "3(5x + 1)",
+          "15x",
+          "3x + 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_B_63d4afc4",
+        "question": "Factor: 15x + 5",
+        "options": [
+          "5(3x + 1)",
+          "5x + 3",
+          "15x",
+          "(8)x + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_B_d83b1466",
+        "question": "Factor: 24x + 6",
+        "options": [
+          "6(4x + 1)",
+          "(10)x + 1",
+          "6x + 4",
+          "24x"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_B_95f7d74f",
+        "question": "Factor: 4x + 4",
+        "options": [
+          "4x",
+          "4x + 1",
+          "(5)x + 1",
+          "4(1x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_B_fb3e925b",
+        "question": "Factor: 12x + 6",
+        "options": [
+          "(8)x + 1",
+          "12x",
+          "6x + 2",
+          "6(2x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "C": [
@@ -244,6 +544,146 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Section 2.3"
+      },
+      {
+        "id": "p2_t3_C_0630e06a",
+        "question": "Factor: 6x + 2",
+        "options": [
+          "2(3x + 1)",
+          "(5)x + 1",
+          "6x",
+          "2x + 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_C_847a7d04",
+        "question": "Factor: 30x + 6",
+        "options": [
+          "6(5x + 1)",
+          "6x + 5",
+          "(11)x + 1",
+          "30x"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_C_09aa782c",
+        "question": "Factor: 9x + 3",
+        "options": [
+          "3x + 3",
+          "9x",
+          "3(3x + 1)",
+          "(6)x + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_C_afe98977",
+        "question": "Factor: 12x + 6",
+        "options": [
+          "6x + 2",
+          "6(2x + 1)",
+          "12x",
+          "(8)x + 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_C_ae6b8c25",
+        "question": "Factor: 10x + 5",
+        "options": [
+          "5(2x + 1)",
+          "(7)x + 1",
+          "5x + 2",
+          "10x"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_C_d4f11c37",
+        "question": "Factor: 18x + 6",
+        "options": [
+          "6(3x + 1)",
+          "6x + 3",
+          "(9)x + 1",
+          "18x"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_C_9f988134",
+        "question": "Factor: 4x + 4",
+        "options": [
+          "4x",
+          "4x + 1",
+          "(5)x + 1",
+          "4(1x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -326,6 +766,166 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Ex 2.1 style"
+      },
+      {
+        "id": "p2_t3_D_25ff3bae",
+        "question": "Factor: 15x + 3",
+        "options": [
+          "15x",
+          "(8)x + 1",
+          "3x + 5",
+          "3(5x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_D_67edcbdf",
+        "question": "Factor: 12x + 6",
+        "options": [
+          "12x",
+          "6(2x + 1)",
+          "6x + 2",
+          "(8)x + 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_D_54b14036",
+        "question": "Factor: 15x + 5",
+        "options": [
+          "15x",
+          "5x + 3",
+          "(8)x + 1",
+          "5(3x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_D_9732b4ea",
+        "question": "Factor: 5x + 5",
+        "options": [
+          "5x",
+          "5(1x + 1)",
+          "5x + 1",
+          "(6)x + 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_D_ef741bfa",
+        "question": "Factor: 3x + 3",
+        "options": [
+          "3x + 1",
+          "3x",
+          "(4)x + 1",
+          "3(1x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_D_271b4418",
+        "question": "Factor: 6x + 3",
+        "options": [
+          "3(2x + 1)",
+          "3x + 2",
+          "6x",
+          "(5)x + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_D_276ceb03",
+        "question": "Factor: 9x + 3",
+        "options": [
+          "3(3x + 1)",
+          "3x + 3",
+          "(6)x + 1",
+          "9x"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_D_8f93fc34",
+        "question": "Factor: 4x + 2",
+        "options": [
+          "2x + 2",
+          "2(2x + 1)",
+          "(4)x + 1",
+          "4x"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -408,6 +1008,146 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Section 2.3"
+      },
+      {
+        "id": "p2_t3_E_4c8f54a0",
+        "question": "Factor: 20x + 5",
+        "options": [
+          "20x",
+          "(9)x + 1",
+          "5(4x + 1)",
+          "5x + 4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_E_39dd1769",
+        "question": "Factor: 2x + 2",
+        "options": [
+          "2x + 1",
+          "2x",
+          "2(1x + 1)",
+          "(3)x + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_E_490cb46e",
+        "question": "Factor: 4x + 2",
+        "options": [
+          "2x + 2",
+          "4x",
+          "2(2x + 1)",
+          "(4)x + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_E_df5a0e9a",
+        "question": "Factor: 6x + 6",
+        "options": [
+          "6x + 1",
+          "(7)x + 1",
+          "6x",
+          "6(1x + 1)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_E_4d20e780",
+        "question": "Factor: 24x + 6",
+        "options": [
+          "6(4x + 1)",
+          "24x",
+          "(10)x + 1",
+          "6x + 4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_E_88a33585",
+        "question": "Factor: 6x + 2",
+        "options": [
+          "6x",
+          "2(3x + 1)",
+          "(5)x + 1",
+          "2x + 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t3_E_d3771b79",
+        "question": "Factor: 12x + 6",
+        "options": [
+          "12x",
+          "6(2x + 1)",
+          "(8)x + 1",
+          "6x + 2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ]
   },

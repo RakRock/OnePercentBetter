@@ -80,6 +80,166 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Example 2"
+      },
+      {
+        "id": "p2_t1_A_60ec54c0",
+        "question": "Simplify: (2x + 2) + (2x + 4)",
+        "options": [
+          "4x + 7",
+          "2x + 4",
+          "5x + 6",
+          "4x + 6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_cb8d6a4e",
+        "question": "Simplify: (2x + 4) + (4x + 3)",
+        "options": [
+          "7x + 7",
+          "2x + 8",
+          "6x + 7",
+          "6x + 8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_d1ee09a1",
+        "question": "Simplify: (1x + 5) + (1x + 4)",
+        "options": [
+          "1x + 6",
+          "2x + 9",
+          "3x + 9",
+          "2x + 10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_7d2bb93c",
+        "question": "Simplify: (2x + 4) + (3x + 4)",
+        "options": [
+          "6x + 8",
+          "5x + 9",
+          "2x + 7",
+          "5x + 8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_5240e892",
+        "question": "Simplify: (5x + 5) + (2x + 1)",
+        "options": [
+          "5x + 7",
+          "7x + 6",
+          "8x + 6",
+          "7x + 7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_f516434f",
+        "question": "Simplify: (1x + 2) + (3x + 4)",
+        "options": [
+          "1x + 5",
+          "4x + 6",
+          "4x + 7",
+          "5x + 6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_430cbcf6",
+        "question": "Simplify: (5x + 2) + (1x + 4)",
+        "options": [
+          "6x + 7",
+          "6x + 6",
+          "7x + 6",
+          "5x + 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_A_85532370",
+        "question": "Simplify: (1x + 3) + (4x + 3)",
+        "options": [
+          "1x + 7",
+          "5x + 7",
+          "6x + 6",
+          "5x + 6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -162,6 +322,166 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Ex 2.1 Q5 style"
+      },
+      {
+        "id": "p2_t1_B_34eacbb9",
+        "question": "Simplify: (1x + 4) + (2x + 3)",
+        "options": [
+          "4x + 7",
+          "3x + 8",
+          "3x + 7",
+          "1x + 6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_fd101d2d",
+        "question": "Simplify: (3x + 2) + (3x + 3)",
+        "options": [
+          "3x + 5",
+          "6x + 5",
+          "7x + 5",
+          "6x + 6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_4c3c52a5",
+        "question": "Simplify: (5x + 1) + (1x + 3)",
+        "options": [
+          "6x + 4",
+          "5x + 2",
+          "7x + 4",
+          "6x + 5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_9d730216",
+        "question": "Simplify: (1x + 2) + (3x + 4)",
+        "options": [
+          "5x + 6",
+          "1x + 5",
+          "4x + 7",
+          "4x + 6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_32a87927",
+        "question": "Simplify: (3x + 4) + (3x + 2)",
+        "options": [
+          "6x + 6",
+          "3x + 7",
+          "7x + 6",
+          "6x + 7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_1fdd0969",
+        "question": "Simplify: (4x + 3) + (1x + 2)",
+        "options": [
+          "5x + 6",
+          "4x + 4",
+          "6x + 5",
+          "5x + 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_82076125",
+        "question": "Simplify: (2x + 5) + (4x + 2)",
+        "options": [
+          "6x + 8",
+          "7x + 7",
+          "6x + 7",
+          "2x + 9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_B_cd5259ec",
+        "question": "Simplify: (4x + 4) + (4x + 2)",
+        "options": [
+          "4x + 8",
+          "8x + 6",
+          "9x + 6",
+          "8x + 7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "C": [
@@ -244,6 +564,166 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Example 2 style"
+      },
+      {
+        "id": "p2_t1_C_299c08da",
+        "question": "Simplify: (4x + 1) + (2x + 3)",
+        "options": [
+          "4x + 3",
+          "6x + 4",
+          "6x + 5",
+          "7x + 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_868a7f05",
+        "question": "Simplify: (5x + 5) + (3x + 3)",
+        "options": [
+          "9x + 8",
+          "5x + 8",
+          "8x + 9",
+          "8x + 8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_c6631837",
+        "question": "Simplify: (5x + 4) + (3x + 2)",
+        "options": [
+          "5x + 7",
+          "9x + 6",
+          "8x + 6",
+          "8x + 7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_d73d40d4",
+        "question": "Simplify: (3x + 5) + (2x + 2)",
+        "options": [
+          "5x + 8",
+          "3x + 7",
+          "5x + 7",
+          "6x + 7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_fe87b29a",
+        "question": "Simplify: (3x + 4) + (3x + 1)",
+        "options": [
+          "7x + 5",
+          "6x + 5",
+          "3x + 7",
+          "6x + 6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_299ce21b",
+        "question": "Simplify: (1x + 4) + (3x + 3)",
+        "options": [
+          "5x + 7",
+          "4x + 7",
+          "4x + 8",
+          "1x + 7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_b97a0333",
+        "question": "Simplify: (3x + 2) + (3x + 3)",
+        "options": [
+          "6x + 6",
+          "6x + 5",
+          "7x + 5",
+          "3x + 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_C_22fff63f",
+        "question": "Simplify: (5x + 2) + (1x + 4)",
+        "options": [
+          "6x + 7",
+          "6x + 6",
+          "5x + 3",
+          "7x + 6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -326,6 +806,166 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Section on polynomials in more than one variable"
+      },
+      {
+        "id": "p2_t1_D_97247dec",
+        "question": "Simplify: (1x + 4) + (3x + 1)",
+        "options": [
+          "1x + 7",
+          "4x + 6",
+          "4x + 5",
+          "5x + 5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_8fbfcaf1",
+        "question": "Simplify: (1x + 1) + (3x + 1)",
+        "options": [
+          "1x + 4",
+          "4x + 2",
+          "4x + 3",
+          "5x + 2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_5956b996",
+        "question": "Simplify: (3x + 4) + (4x + 3)",
+        "options": [
+          "3x + 8",
+          "7x + 7",
+          "8x + 7",
+          "7x + 8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_ec31ca5f",
+        "question": "Simplify: (3x + 3) + (4x + 3)",
+        "options": [
+          "7x + 6",
+          "3x + 7",
+          "8x + 6",
+          "7x + 7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_0cc91cfe",
+        "question": "Simplify: (4x + 3) + (2x + 3)",
+        "options": [
+          "7x + 6",
+          "6x + 7",
+          "4x + 5",
+          "6x + 6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_db74968d",
+        "question": "Simplify: (3x + 3) + (3x + 3)",
+        "options": [
+          "6x + 6",
+          "6x + 7",
+          "3x + 6",
+          "7x + 6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_7b4017ef",
+        "question": "Simplify: (4x + 2) + (3x + 1)",
+        "options": [
+          "8x + 3",
+          "7x + 3",
+          "4x + 5",
+          "7x + 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_D_ca7105ec",
+        "question": "Simplify: (3x + 1) + (1x + 2)",
+        "options": [
+          "3x + 2",
+          "5x + 3",
+          "4x + 4",
+          "4x + 3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -408,6 +1048,166 @@
         "source": "chapter_llm",
         "chapter_num": 2,
         "chapter_ref": "Ex 2.2 Q2(i) style"
+      },
+      {
+        "id": "p2_t1_E_020f1549",
+        "question": "Simplify: (1x + 5) + (1x + 4)",
+        "options": [
+          "1x + 6",
+          "2x + 9",
+          "2x + 10",
+          "3x + 9"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_49f82ac9",
+        "question": "Simplify: (5x + 3) + (3x + 4)",
+        "options": [
+          "8x + 7",
+          "5x + 6",
+          "8x + 8",
+          "9x + 7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_0aa6a76c",
+        "question": "Simplify: (4x + 5) + (3x + 1)",
+        "options": [
+          "7x + 7",
+          "7x + 6",
+          "8x + 6",
+          "4x + 8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_6e042268",
+        "question": "Simplify: (1x + 1) + (1x + 3)",
+        "options": [
+          "3x + 4",
+          "2x + 5",
+          "2x + 4",
+          "1x + 2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_6b75673b",
+        "question": "Simplify: (4x + 4) + (4x + 2)",
+        "options": [
+          "4x + 8",
+          "8x + 6",
+          "8x + 7",
+          "9x + 6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_b536091e",
+        "question": "Simplify: (3x + 3) + (1x + 4)",
+        "options": [
+          "4x + 7",
+          "3x + 4",
+          "5x + 7",
+          "4x + 8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_2e5e29af",
+        "question": "Simplify: (1x + 5) + (4x + 4)",
+        "options": [
+          "5x + 9",
+          "6x + 9",
+          "1x + 9",
+          "5x + 10"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t1_E_56843723",
+        "question": "Simplify: (5x + 1) + (2x + 3)",
+        "options": [
+          "8x + 4",
+          "5x + 3",
+          "7x + 5",
+          "7x + 4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 2,
+        "chapter_ref": ""
       }
     ]
   },

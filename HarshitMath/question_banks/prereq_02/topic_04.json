@@ -16,7 +16,7 @@
         "level": "A",
         "prereq_id": 2,
         "category": "p2_t4_A",
-        "category_label": "Linear 2-var · Level A",
+        "category_label": "Substitute · Level A",
         "source": "chapter_llm",
         "chapter_num": 4,
         "chapter_ref": "Example 3 style"
@@ -36,7 +36,7 @@
         "level": "A",
         "prereq_id": 2,
         "category": "p2_t4_A",
-        "category_label": "Linear 2-var · Level A",
+        "category_label": "Substitute · Level A",
         "source": "chapter_llm",
         "chapter_num": 4,
         "chapter_ref": "Example 3"
@@ -56,7 +56,7 @@
         "level": "A",
         "prereq_id": 2,
         "category": "p2_t4_A",
-        "category_label": "Linear 2-var · Level A",
+        "category_label": "Substitute · Level A",
         "source": "chapter_llm",
         "chapter_num": 4,
         "chapter_ref": "Section 4.3"
@@ -76,10 +76,170 @@
         "level": "A",
         "prereq_id": 2,
         "category": "p2_t4_A",
-        "category_label": "Linear 2-var · Level A",
+        "category_label": "Substitute · Level A",
         "source": "chapter_llm",
         "chapter_num": 4,
         "chapter_ref": "Example 4"
+      },
+      {
+        "id": "p2_t4_A_0ff8d963",
+        "question": "For 3x + 1y = 13, find y when x = 3.",
+        "options": [
+          "4",
+          "10",
+          "9",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Substitute · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_A_35b8aeaa",
+        "question": "For 4x + 3y = 12, find y when x = 3.",
+        "options": [
+          "0",
+          "8",
+          "12",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Substitute · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_A_a2ca4dc7",
+        "question": "For 3x + 1y = 10, find y when x = 3.",
+        "options": [
+          "7",
+          "1",
+          "9",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Substitute · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_A_b8407070",
+        "question": "For 4x + 1y = 18, find y when x = 0.",
+        "options": [
+          "0",
+          "1",
+          "14",
+          "18"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Substitute · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_A_5d25c86c",
+        "question": "For 4x + 4y = 10, find y when x = 0.",
+        "options": [
+          "6",
+          "5/2",
+          "0",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Substitute · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_A_b3dc24b7",
+        "question": "For 3x + 2y = 15, find y when x = 0.",
+        "options": [
+          "0",
+          "15/2",
+          "2",
+          "12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Substitute · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_A_1fd07f25",
+        "question": "For 1x + 2y = 17, find y when x = 0.",
+        "options": [
+          "16",
+          "0",
+          "17/2",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Substitute · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_A_d52feb00",
+        "question": "For 3x + 2y = 12, find y when x = 2.",
+        "options": [
+          "9",
+          "4",
+          "6",
+          "3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Substitute · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -98,7 +258,7 @@
         "level": "B",
         "prereq_id": 2,
         "category": "p2_t4_B",
-        "category_label": "Linear 2-var · Level B",
+        "category_label": "Substitute · Level B",
         "source": "chapter_llm",
         "chapter_num": 4,
         "chapter_ref": "Example 3"
@@ -118,7 +278,7 @@
         "level": "B",
         "prereq_id": 2,
         "category": "p2_t4_B",
-        "category_label": "Linear 2-var · Level B",
+        "category_label": "Substitute · Level B",
         "source": "chapter_llm",
         "chapter_num": 4,
         "chapter_ref": "Example 4(i)"
@@ -138,7 +298,7 @@
         "level": "B",
         "prereq_id": 2,
         "category": "p2_t4_B",
-        "category_label": "Linear 2-var · Level B",
+        "category_label": "Substitute · Level B",
         "source": "chapter_llm",
         "chapter_num": 4,
         "chapter_ref": "Example 4(ii)"
@@ -158,256 +318,556 @@
         "level": "B",
         "prereq_id": 2,
         "category": "p2_t4_B",
-        "category_label": "Linear 2-var · Level B",
+        "category_label": "Substitute · Level B",
         "source": "chapter_llm",
         "chapter_num": 4,
         "chapter_ref": "Example 4(iii)"
+      },
+      {
+        "id": "p2_t4_B_2ee83a59",
+        "question": "For 4x + 2y = 6, find x when y = 1.",
+        "options": [
+          "5",
+          "2",
+          "1",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Substitute · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_B_91a4ce7b",
+        "question": "For 1x + 4y = 16, find x when y = 0.",
+        "options": [
+          "12",
+          "1",
+          "0",
+          "16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Substitute · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_B_ed0b4ecb",
+        "question": "For 1x + 2y = 7, find x when y = 4.",
+        "options": [
+          "5",
+          "8",
+          "-1",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Substitute · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_B_ccaedfee",
+        "question": "For 1x + 3y = 6, find x when y = 0.",
+        "options": [
+          "1",
+          "3",
+          "6",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Substitute · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_B_de454ab9",
+        "question": "For 1x + 2y = 14, find x when y = 3.",
+        "options": [
+          "4",
+          "12",
+          "6",
+          "8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Substitute · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_B_d78de0dd",
+        "question": "For 3x + 3y = 10, find x when y = 4.",
+        "options": [
+          "7",
+          "1/3",
+          "-2/3",
+          "12"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Substitute · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_B_48c1be21",
+        "question": "For 4x + 4y = 15, find x when y = 0.",
+        "options": [
+          "11",
+          "4",
+          "0",
+          "15/4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Substitute · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_B_c55fcf61",
+        "question": "For 2x + 2y = 12, find x when y = 2.",
+        "options": [
+          "10",
+          "5",
+          "3",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Substitute · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "C": [
       {
-        "id": "p2_t4_C_40b9debd",
-        "question": "For equation 2x + 3y = 12, complete the solution pair with x = 0: (0, ?)",
+        "id": "p2_t4_C_a4236c84",
+        "question": "For 4x + 2y = 17, find y when x = 0.",
         "options": [
+          "17/2",
+          "0",
           "2",
-          "3",
-          "4",
+          "13"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t4_C",
+        "category_label": "Substitute · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_C_7d640713",
+        "question": "For 3x + 1y = 8, find y when x = 0.",
+        "options": [
+          "1",
+          "5",
+          "8",
           "0"
         ],
         "answer": 2,
-        "explanation": "Substitute x = 0 to get 3y = 12 so y = 4, matching the infinitely many solutions shown in section 4.3.",
+        "explanation": "",
         "topic": 4,
         "level": "C",
         "prereq_id": 2,
         "category": "p2_t4_C",
-        "category_label": "Linear 2-var · Level C",
-        "source": "chapter_llm",
+        "category_label": "Substitute · Level C",
+        "source": "chapter_seed",
         "chapter_num": 4,
-        "chapter_ref": "Ex 4.2 style, section 4.3"
+        "chapter_ref": ""
       },
       {
-        "id": "p2_t4_C_562112b0",
-        "question": "Complete the solution pair for x + 2y = 6 with y = 0: (?, 0)",
+        "id": "p2_t4_C_b6b3f23e",
+        "question": "For 4x + 4y = 6, find y when x = 2.",
         "options": [
           "2",
           "6",
-          "3",
-          "0"
+          "-1/2",
+          "8"
         ],
-        "answer": 1,
-        "explanation": "Set y = 0 to reduce to x = 6, as done in Example 3 for finding solutions.",
+        "answer": 2,
+        "explanation": "",
         "topic": 4,
         "level": "C",
         "prereq_id": 2,
         "category": "p2_t4_C",
-        "category_label": "Linear 2-var · Level C",
-        "source": "chapter_llm",
+        "category_label": "Substitute · Level C",
+        "source": "chapter_seed",
         "chapter_num": 4,
-        "chapter_ref": "Example 3"
+        "chapter_ref": ""
       },
       {
-        "id": "p2_t4_C_9909377d",
-        "question": "Write x = 3y in form ax + by + c = 0 and find value of b.",
+        "id": "p2_t4_C_40651c48",
+        "question": "For 1x + 3y = 12, find y when x = 3.",
         "options": [
-          "-3",
+          "3",
+          "4",
+          "6",
+          "11"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t4_C",
+        "category_label": "Substitute · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_C_f7f3053a",
+        "question": "For 3x + 3y = 14, find y when x = 0.",
+        "options": [
           "3",
           "0",
-          "1"
+          "11",
+          "14/3"
         ],
-        "answer": 0,
-        "explanation": "Rewrite as x - 3y = 0 so a = 1, b = -3, c = 0, following Exercise 4.1 Q2 style.",
+        "answer": 3,
+        "explanation": "",
         "topic": 4,
         "level": "C",
         "prereq_id": 2,
         "category": "p2_t4_C",
-        "category_label": "Linear 2-var · Level C",
-        "source": "chapter_llm",
+        "category_label": "Substitute · Level C",
+        "source": "chapter_seed",
         "chapter_num": 4,
-        "chapter_ref": "Exercise 4.1 Q2"
+        "chapter_ref": ""
       },
       {
-        "id": "p2_t4_C_f26da33d",
-        "question": "For 4x + 3y = 12, complete the solution pair with x = 0: (0, ?)",
+        "id": "p2_t4_C_f1e652ae",
+        "question": "For 2x + 4y = 7, find y when x = 0.",
         "options": [
+          "0",
           "4",
-          "3",
-          "-4",
-          "0"
+          "7/4",
+          "5"
         ],
-        "answer": 0,
-        "explanation": "Set x = 0 to get 3y = 12 so y = 4, as shown in Example 4 for obtaining ordered pairs.",
+        "answer": 2,
+        "explanation": "",
         "topic": 4,
         "level": "C",
         "prereq_id": 2,
         "category": "p2_t4_C",
-        "category_label": "Linear 2-var · Level C",
-        "source": "chapter_llm",
+        "category_label": "Substitute · Level C",
+        "source": "chapter_seed",
         "chapter_num": 4,
-        "chapter_ref": "Example 4"
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_C_2f8d369a",
+        "question": "For 3x + 1y = 10, find y when x = 4.",
+        "options": [
+          "-2",
+          "5",
+          "7",
+          "12"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t4_C",
+        "category_label": "Substitute · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_C_6b2ee49f",
+        "question": "For 1x + 3y = 17, find y when x = 0.",
+        "options": [
+          "0",
+          "17/3",
+          "16",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t4_C",
+        "category_label": "Substitute · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "D": [
       {
-        "id": "p2_t4_D_22cc9238",
-        "question": "For the equation x + 2y = 6, which ordered pair is a solution?",
+        "id": "p2_t4_D_3132af5a",
+        "question": "For 2x + 4y = 10, find x when y = 1.",
         "options": [
-          "(2, 1)",
-          "(0, 3)",
-          "(1, 2)",
-          "(3, 0)"
-        ],
-        "answer": 1,
-        "explanation": "Substituting x=0 gives 2y=6 so y=3, matching the method of setting x=0 to find a point on the line.",
-        "topic": 4,
-        "level": "D",
-        "prereq_id": 2,
-        "category": "p2_t4_D",
-        "category_label": "Linear 2-var · Level D",
-        "source": "chapter_llm",
-        "chapter_num": 4,
-        "chapter_ref": "Example 3"
-      },
-      {
-        "id": "p2_t4_D_fd9a8e12",
-        "question": "Which point satisfies the equation 2x + y = 7?",
-        "options": [
-          "(0, 7)",
-          "(2, 3)",
-          "(1, 5)",
-          "(3, 1)"
-        ],
-        "answer": 1,
-        "explanation": "Plug x=2 and y=3: 2(2) + 3 = 7, confirming it lies on the graph of the line.",
-        "topic": 4,
-        "level": "D",
-        "prereq_id": 2,
-        "category": "p2_t4_D",
-        "category_label": "Linear 2-var · Level D",
-        "source": "chapter_llm",
-        "chapter_num": 4,
-        "chapter_ref": "Ex 4.2 Q2 style"
-      },
-      {
-        "id": "p2_t4_D_0a3e9cf8",
-        "question": "For 3y + 4 = 0 written as 0x + 3y + 4 = 0, what is one solution pair?",
-        "options": [
-          "(1, -4/3)",
-          "(4/3, 0)",
-          "(0, -4/3)",
-          "(-1, -1)"
+          "6",
+          "2",
+          "3",
+          "4"
         ],
         "answer": 2,
-        "explanation": "With x any value the equation gives y = -4/3, so (0, -4/3) is a point satisfying the equation.",
+        "explanation": "",
         "topic": 4,
         "level": "D",
         "prereq_id": 2,
         "category": "p2_t4_D",
-        "category_label": "Linear 2-var · Level D",
-        "source": "chapter_llm",
+        "category_label": "Substitute · Level D",
+        "source": "chapter_seed",
         "chapter_num": 4,
-        "chapter_ref": "Example 4 (iii)"
+        "chapter_ref": ""
       },
       {
-        "id": "p2_t4_D_65a1cd45",
-        "question": "Which point is a solution of 4x + 3y = 12?",
+        "id": "p2_t4_D_47dabce2",
+        "question": "For 2x + 2y = 8, find x when y = 1.",
         "options": [
-          "(4, 0)",
-          "(1, 3)",
-          "(3, 0)",
-          "(0, 4)"
+          "2",
+          "6",
+          "4",
+          "3"
         ],
         "answer": 3,
-        "explanation": "Setting x=0 yields 3y=12 so y=4, giving the ordered pair that can be plotted on the line.",
+        "explanation": "",
         "topic": 4,
         "level": "D",
         "prereq_id": 2,
         "category": "p2_t4_D",
-        "category_label": "Linear 2-var · Level D",
-        "source": "chapter_llm",
+        "category_label": "Substitute · Level D",
+        "source": "chapter_seed",
         "chapter_num": 4,
-        "chapter_ref": "Example 4 (i)"
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_D_e6b6cff1",
+        "question": "For 1x + 2y = 12, find x when y = 0.",
+        "options": [
+          "12",
+          "0",
+          "1",
+          "10"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t4_D",
+        "category_label": "Substitute · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_D_b815e391",
+        "question": "For 3x + 1y = 7, find x when y = 1.",
+        "options": [
+          "6",
+          "4",
+          "2",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t4_D",
+        "category_label": "Substitute · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_D_e80a950f",
+        "question": "For 2x + 1y = 13, find x when y = 2.",
+        "options": [
+          "12",
+          "2",
+          "11/2",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t4_D",
+        "category_label": "Substitute · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_D_9e097c24",
+        "question": "For 4x + 3y = 9, find x when y = 0.",
+        "options": [
+          "4",
+          "0",
+          "9/4",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t4_D",
+        "category_label": "Substitute · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_D_99d707c3",
+        "question": "For 4x + 3y = 9, find x when y = 2.",
+        "options": [
+          "7/4",
+          "-1/4",
+          "3/4",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t4_D",
+        "category_label": "Substitute · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p2_t4_D_6ae97003",
+        "question": "For 1x + 4y = 7, find x when y = 2.",
+        "options": [
+          "8",
+          "-1",
+          "3",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t4_D",
+        "category_label": "Substitute · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 4,
+        "chapter_ref": ""
       }
     ],
     "E": [
       {
-        "id": "p2_t4_E_b660ff17",
-        "question": "The cost of a notebook is twice the cost of a pen. Let the cost of the notebook be x and the pen be y. Which equation represents this statement?",
+        "id": "p2_t4_E_fcc9b4b4",
+        "question": "For 2x + 3y = 12, find y when x = 3.",
         "options": [
-          "x - y = 2",
-          "x - 2y = 0",
-          "x + 2y = 0",
-          "2x - y = 0"
-        ],
-        "answer": 1,
-        "explanation": "The statement gives x = 2y, rewritten as x - 2y = 0 in the form ax + by + c = 0 as shown in Exercise 4.1 Q1.",
-        "topic": 4,
-        "level": "E",
-        "prereq_id": 2,
-        "category": "p2_t4_E",
-        "category_label": "Linear 2-var · Level E",
-        "source": "chapter_llm",
-        "chapter_num": 4,
-        "chapter_ref": "Ex 4.1 Q1"
-      },
-      {
-        "id": "p2_t4_E_764ab543",
-        "question": "For the equation 2x + 3y = 12, which ordered pair is a solution?",
-        "options": [
-          "(4,0)",
-          "(0,3)",
-          "(1,4)",
-          "(3,2)"
+          "3",
+          "4",
+          "1",
+          "2"
         ],
         "answer": 3,
-        "explanation": "Substituting x=3, y=2 gives 2(3) + 3(2) = 12, matching the example in section 4.3.",
+        "explanation": "",
         "topic": 4,
         "level": "E",
         "prereq_id": 2,
         "category": "p2_t4_E",
-        "category_label": "Linear 2-var · Level E",
-        "source": "chapter_llm",
+        "category_label": "Substitute · Level E",
+        "source": "chapter_seed",
         "chapter_num": 4,
-        "chapter_ref": "Section 4.3"
+        "chapter_ref": ""
       },
       {
-        "id": "p2_t4_E_e2f759d3",
-        "question": "Write x = -5 as a linear equation in two variables in the form ax + by + c = 0.",
+        "id": "p2_t4_E_04bd97b0",
+        "question": "For 2x + 3y = 12, find y when x = 2.",
         "options": [
-          "x + 5 = 0",
-          "0x - 5y = 0",
-          "x + 0y + 5 = 0",
-          "-x + 0y - 5 = 0"
+          "11/3",
+          "4",
+          "8/3",
+          "2"
         ],
         "answer": 2,
-        "explanation": "As in Example 2(i), x = -5 becomes 1x + 0y + 5 = 0.",
+        "explanation": "",
         "topic": 4,
         "level": "E",
         "prereq_id": 2,
         "category": "p2_t4_E",
-        "category_label": "Linear 2-var · Level E",
-        "source": "chapter_llm",
+        "category_label": "Substitute · Level E",
+        "source": "chapter_seed",
         "chapter_num": 4,
-        "chapter_ref": "Example 2"
+        "chapter_ref": ""
       },
       {
-        "id": "p2_t4_E_25f1e3b7",
-        "question": "For the equation x + 2y = 6, which pair is a solution obtained by setting y = 0?",
+        "id": "p2_t4_E_93ebe337",
+        "question": "For 2x + 3y = 12, find y when x = 1.",
         "options": [
-          "(0,3)",
-          "(4,1)",
-          "(2,2)",
-          "(6,0)"
+          "1",
+          "13/3",
+          "10/3",
+          "4"
         ],
-        "answer": 3,
-        "explanation": "Setting y=0 reduces to x=6, giving the solution (6,0) as shown in Example 3.",
+        "answer": 2,
+        "explanation": "",
         "topic": 4,
         "level": "E",
         "prereq_id": 2,
         "category": "p2_t4_E",
-        "category_label": "Linear 2-var · Level E",
-        "source": "chapter_llm",
+        "category_label": "Substitute · Level E",
+        "source": "chapter_seed",
         "chapter_num": 4,
-        "chapter_ref": "Example 3"
+        "chapter_ref": ""
       }
     ]
   },
@@ -415,6 +875,6 @@
     "prereq_id": 2,
     "topic_id": 4,
     "chapter_num": 4,
-    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_04/Chapter_04_Linear_Equations_in_Two_Variables.pdf"
+    "source_pdf": ""
   }
 }

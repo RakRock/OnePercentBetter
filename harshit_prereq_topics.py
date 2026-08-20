@@ -110,15 +110,51 @@ TOPICS: dict[int, dict[int, dict]] = {
             },
         },
         4: {
-            "name": "Linear Equations (Two Variables)",
-            "short": "Linear 2-var",
-            "emoji": "📈",
+            "name": "Substitution in Linear Equations",
+            "short": "Substitute",
+            "emoji": "🔢",
             "levels": {
                 "A": "Find y given x",
                 "B": "Find x given y",
-                "C": "Table completion",
-                "D": "Graph from equation",
-                "E": "Word problems",
+                "C": "Two-step substitution",
+                "D": "Negative coefficients",
+                "E": "Fraction coefficients",
+            },
+        },
+        5: {
+            "name": "Solution Tables & Ordered Pairs",
+            "short": "Tables",
+            "emoji": "📋",
+            "levels": {
+                "A": "Complete (x, ?) when y is given",
+                "B": "Complete (?, y) when x is given",
+                "C": "Build a small solution table",
+                "D": "Standard form ax + by + c = 0",
+                "E": "Infinitely many solutions concept",
+            },
+        },
+        6: {
+            "name": "Graphing & Point Verification",
+            "short": "Graph",
+            "emoji": "📈",
+            "levels": {
+                "A": "Which point satisfies the equation?",
+                "B": "Is a point on the line? (yes/no style)",
+                "C": "Read y from graph at given x",
+                "D": "Match equation to graph description",
+                "E": "Intercept-style reasoning",
+            },
+        },
+        7: {
+            "name": "Linear Word Problems & Applications",
+            "short": "Word Prob",
+            "emoji": "📝",
+            "levels": {
+                "A": "Form ax + by = c from context",
+                "B": "Find one unknown from a story",
+                "C": "Two-variable cost / quantity setups",
+                "D": "Convert to standard form",
+                "E": "Multi-step application problems",
             },
         },
     },
@@ -282,10 +318,19 @@ def topics_for_prereq(prereq_id: int) -> dict[int, dict]:
 
 
 def default_week_config(prereq_id: int) -> dict:
-    """Starter plan — Levels A & B on every topic for enough variety in a 15-Q session."""
+    """Starter plan — Level A on every strategy/topic (PreReq 2 uses 7 Arjun-style strategies)."""
     topics = topics_for_prereq(prereq_id)
     meta = {1: "Number Systems", 2: "Algebra", 3: "Coordinate", 4: "Geometry", 5: "Mensuration", 6: "Data"}
     label = meta.get(prereq_id, f"PreReq {prereq_id}")
+    if prereq_id == 2:
+        return {
+            "week_label": "Algebra — Week 1 (Foundation)",
+            "topics": [{"id": tid, "levels": ["A"]} for tid in sorted(topics)],
+            "warmup_count": 0,
+            "use_llm": True,
+            "use_chapter_llm": True,
+            "prereq_id": prereq_id,
+        }
     return {
         "week_label": f"{label} — Week 1",
         "topics": [{"id": tid, "levels": ["A", "B"]} for tid in sorted(topics)],
@@ -583,11 +628,84 @@ def _gen_p2_t3(level: str) -> dict:
 
 
 def _gen_p2_t4(level: str) -> dict:
-    m, c = random.randint(1, 5), random.randint(-3, 3)
+    a, b = random.randint(1, 4), random.randint(1, 4)
+    c = random.randint(6, 18)
+    if level in ("A", "C"):
+        x = random.randint(0, 4)
+        y = (c - a * x) // b if (c - a * x) % b == 0 else (c - a * x) / b
+        correct = str(int(y)) if y == int(y) else str(Fraction(y).limit_denominator())
+        opts, ans = _shuffle_options(correct, [str(x + b), str(a * x), str(c - a)])
+        return _mcq(2, 4, level, f"For {a}x + {b}y = {c}, find y when x = {x}.", opts, ans)
+    if level in ("B", "D"):
+        y = random.randint(0, 4)
+        x_val = (c - b * y) // a if (c - b * y) % a == 0 else (c - b * y) / a
+        correct = str(int(x_val)) if x_val == int(x_val) else str(Fraction(x_val).limit_denominator())
+        opts, ans = _shuffle_options(correct, [str(y + a), str(b * y), str(c - b)])
+        return _mcq(2, 4, level, f"For {a}x + {b}y = {c}, find x when y = {y}.", opts, ans)
+    a, b, c = 2, 3, 12
+    x = random.randint(1, 3)
+    y = Fraction(c - a * x, b)
+    correct = str(y)
+    opts, ans = _shuffle_options(correct, [str(y + 1), str(Fraction(c, b)), str(x)])
+    return _mcq(2, 4, level, f"For {a}x + {b}y = {c}, find y when x = {x}.", opts, ans)
+
+
+def _gen_p2_t5(level: str) -> dict:
+    a, b = random.randint(1, 4), random.randint(1, 4)
+    c = random.randint(6, 16)
+    if level in ("A", "C"):
+        y = c // b if c % b == 0 else random.randint(1, 4)
+        if a * 0 + b * y != c:
+            y = (c - a * 0) // b
+        correct = str(y)
+        opts, ans = _shuffle_options(correct, [str(y + 1), str(b), str(c // a if a else c)])
+        return _mcq(2, 5, level, f"For {a}x + {b}y = {c}, complete (0, ?).", opts, ans)
+    if level in ("B", "D"):
+        x = c // a if c % a == 0 else random.randint(1, 4)
+        correct = str(x)
+        opts, ans = _shuffle_options(correct, [str(x + 1), str(a), str(c // b if b else c)])
+        return _mcq(2, 5, level, f"For {a}x + {b}y = {c}, complete (?, 0).", opts, ans)
+    opts, ans = _shuffle_options("Infinitely many", ["Exactly one", "None", "Two only"])
+    return _mcq(2, 5, level, f"How many solutions does {a}x + {b}y = {c} have?", opts, ans)
+
+
+def _gen_p2_t6(level: str) -> dict:
+    a, b = random.randint(1, 3), random.randint(1, 3)
+    c = a * 2 + b * 2
+    good = f"(2, 2)"
+    bad = [
+        f"({2 + 1}, {2})",
+        f"({2}, {2 + 1})",
+        f"({2 - 1}, {2 - 1})",
+    ]
+    opts, ans = _shuffle_options(good, bad)
+    return _mcq(2, 6, level, f"Which point lies on {a}x + {b}y = {c}?", opts, ans)
+
+
+def _gen_p2_t7(level: str) -> dict:
+    x_cost, y_cost = random.randint(2, 5), random.randint(3, 7)
+    total = random.randint(20, 40)
+    if level in ("A", "D"):
+        opts, ans = _shuffle_options(
+            f"{x_cost}x + {y_cost}y = {total}",
+            [f"x + y = {total}", f"{x_cost}x = {y_cost}y", f"{x_cost}x - {y_cost}y = {total}"],
+        )
+        return _mcq(
+            2, 7, level,
+            f"A shop sells items at ₹{x_cost} and ₹{y_cost}. Total spent is ₹{total}. "
+            f"Which equation models x items at ₹{x_cost} and y items at ₹{y_cost}?",
+            opts, ans,
+        )
+    a, b, c = x_cost, y_cost, total
     x = random.randint(1, 4)
-    y = m * x + c
-    opts, ans = _shuffle_options(str(y), [str(m * x), str(x + c), str(y + 1)])
-    return _mcq(2, 4, level, f"If y = {m}x + {c}, find y when x = {x}.", opts, ans)
+    y = (c - a * x) // b if (c - a * x) % b == 0 else 1
+    correct = str(y)
+    opts, ans = _shuffle_options(correct, [str(y + 2), str(x), str(c)])
+    return _mcq(
+        2, 7, level,
+        f"Using {a}x + {b}y = {c}, if x = {x}, what is y?",
+        opts, ans,
+    )
 
 
 # ── Unit 3 generators ──
@@ -682,6 +800,7 @@ def _gen_p6_t3(level: str) -> dict:
 GENERATORS: dict[tuple[int, int], callable] = {
     (1, 1): _gen_p1_t1, (1, 2): _gen_p1_t2, (1, 3): _gen_p1_t3, (1, 4): _gen_p1_t4, (1, 5): _gen_p1_t5,
     (2, 1): _gen_p2_t1, (2, 2): _gen_p2_t2, (2, 3): _gen_p2_t3, (2, 4): _gen_p2_t4,
+    (2, 5): _gen_p2_t5, (2, 6): _gen_p2_t6, (2, 7): _gen_p2_t7,
     (3, 1): _gen_p3_t1, (3, 2): _gen_p3_t2,
     (4, 1): _gen_p4_t1, (4, 2): _gen_p4_t2, (4, 3): _gen_p4_t3, (4, 4): _gen_p4_t4,
     (5, 1): _gen_p5_t1, (5, 2): _gen_p5_t2, (5, 3): _gen_p5_t3,
