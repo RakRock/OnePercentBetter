@@ -20,6 +20,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / "HarshitMath" / "class9_chapters"
 DEFAULT_SRC = Path.home() / "Downloads" / "Harshit-Math" / "Class9-Chapter"
+REPO_SRC = ROOT / "Harshit-Math" / "Class9-Chapter"
+REPO_CHAPTERS = ROOT / "HarshitMath" / "class9_chapters"
 
 CHAPTER_NUMS = {1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 13, 14, 15}
 DOC_EXTS = {".pdf", ".md", ".markdown", ".txt", ".docx"}
@@ -84,12 +86,28 @@ def import_from_path(src: Path) -> list[Path]:
 
 
 def main() -> None:
-    src = Path(os.environ.get("HARSHIT_CLASS9_CHAPTERS", str(DEFAULT_SRC)))
-    print(f"Importing from: {src}")
-    print(f"Destination:    {DEST}\n")
-    copied = import_from_path(src)
-    print(f"\nDone — {len(copied)} file(s) copied.")
-    if not copied:
+    sources = [
+        Path(os.environ.get("HARSHIT_CLASS9_CHAPTERS", "")),
+        REPO_SRC,
+        DEFAULT_SRC,
+        REPO_CHAPTERS,
+    ]
+    total = 0
+    for src in sources:
+        if not str(src) or not src.exists():
+            continue
+        try:
+            with os.scandir(src):
+                pass
+        except (PermissionError, OSError):
+            continue
+        print(f"Importing from: {src}")
+        print(f"Destination:    {DEST}\n")
+        total += len(import_from_path(src))
+        if total:
+            break
+    print(f"\nDone — {total} file(s) copied.")
+    if not total:
         print("No matching chapter files found. Check folder layout and file extensions.")
 
 

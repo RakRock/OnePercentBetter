@@ -1,0 +1,1484 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p1_t4_A_9c848db7",
+        "question": "Rationalize: 1/√7 = ?",
+        "options": [
+          "7/√7",
+          "2/√7",
+          "1/2",
+          "√7/7"
+        ],
+        "answer": 3,
+        "explanation": "Multiply top and bottom by √7 to get √7/7.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_A_cde7a3b7",
+        "question": "Rationalize: 1/√5 = ?",
+        "options": [
+          "5/√5",
+          "2/√5",
+          "1/2",
+          "√5/5"
+        ],
+        "answer": 3,
+        "explanation": "Multiply top and bottom by √5 to get √5/5.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_A_aa69dca4",
+        "question": "Rationalize: 1/√11 = ?",
+        "options": [
+          "11/√11",
+          "2/√11",
+          "1/2",
+          "√11/11"
+        ],
+        "answer": 3,
+        "explanation": "Multiply top and bottom by √11 to get √11/11.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_A_58d6f246",
+        "question": "Rationalize: 1/√6 = ?",
+        "options": [
+          "6/√6",
+          "2/√6",
+          "1/2",
+          "√6/6"
+        ],
+        "answer": 3,
+        "explanation": "Multiply top and bottom by √6 to get √6/6.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_A_96a48ddf",
+        "question": "Rationalize the denominator: 1/√2 = ?",
+        "options": [
+          "1/2",
+          "√2",
+          "1/3",
+          "√2/2"
+        ],
+        "answer": 3,
+        "explanation": "Multiply numerator and denominator by √2 to remove the irrational from the denominator, as √2 is irrational per the chapter.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2"
+      },
+      {
+        "id": "p1_t4_A_950af988",
+        "question": "Rationalize the denominator: 3/√3 = ?",
+        "options": [
+          "√3",
+          "3√3/3",
+          "3√3",
+          "√3/3"
+        ],
+        "answer": 2,
+        "explanation": "Multiply numerator and denominator by √3 to make the denominator rational, using the definition of irrationals.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2"
+      },
+      {
+        "id": "p1_t4_A_5c6941e7",
+        "question": "Rationalize the denominator: 5/√5 = ?",
+        "options": [
+          "5/5",
+          "5√5",
+          "5√5/5",
+          "√5"
+        ],
+        "answer": 1,
+        "explanation": "Multiply top and bottom by √5 so the denominator becomes 5, which is rational.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2"
+      },
+      {
+        "id": "p1_t4_A_ebaa45df",
+        "question": "Rationalize the denominator: 1/√7 = ?",
+        "options": [
+          "√7/7",
+          "1/7",
+          "√7",
+          "1/2"
+        ],
+        "answer": 0,
+        "explanation": "Multiply numerator and denominator by √7 to rationalize, matching the chapter's treatment of irrationals like √7.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2"
+      },
+      {
+        "id": "p1_t4_A_f2adb28d",
+        "question": "According to the definition in the chapter, √2 cannot be expressed in which form?",
+        "options": [
+          "A square root",
+          "p/q where p and q are integers, q ≠ 0",
+          "A real number",
+          "An integer multiple of 2"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt defines an irrational number like √2 as one that cannot be written as p/q with integers p, q and q ≠ 0.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_A_43fb8843",
+        "question": "The chapter states that √3 belongs to which category of numbers?",
+        "options": [
+          "Rational",
+          "Natural number",
+          "Integer",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt lists √3 among the irrational numbers shown by Theodorus of Cyrene.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_A_fa83bc6d",
+        "question": "How many irrational numbers lie between any two rational numbers on the number line?",
+        "options": [
+          "Two",
+          "Zero",
+          "Infinitely many",
+          "One"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt notes there are infinitely many irrationals in the gaps between rationals, just as there are infinitely many rationals between any two rationals.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_A_7fb59881",
+        "question": "The collection of all rational and irrational numbers together is called what?",
+        "options": [
+          "Whole numbers",
+          "Natural numbers",
+          "Real numbers",
+          "Integers"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt defines the real numbers R as the union of all rationals and all irrationals.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t4_A",
+        "category_label": "Rationalize · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      }
+    ],
+    "B": [
+      {
+        "id": "p1_t4_B_6f96c4d5",
+        "question": "Rationalize: 1/√13 = ?",
+        "options": [
+          "13/√13",
+          "2/√13",
+          "1/2",
+          "√13/13"
+        ],
+        "answer": 3,
+        "explanation": "Multiply top and bottom by √13 to get √13/13.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_B_ac4c2356",
+        "question": "Rationalize: 1/√5 = ?",
+        "options": [
+          "5/√5",
+          "2/√5",
+          "1/2",
+          "√5/5"
+        ],
+        "answer": 3,
+        "explanation": "Multiply top and bottom by √5 to get √5/5.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_B_812050b0",
+        "question": "Rationalize: 1/√6 = ?",
+        "options": [
+          "6/√6",
+          "2/√6",
+          "1/2",
+          "√6/6"
+        ],
+        "answer": 3,
+        "explanation": "Multiply top and bottom by √6 to get √6/6.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_B_03c8fec0",
+        "question": "Rationalize: 1/√11 = ?",
+        "options": [
+          "11/√11",
+          "2/√11",
+          "1/2",
+          "√11/11"
+        ],
+        "answer": 3,
+        "explanation": "Multiply top and bottom by √11 to get √11/11.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_B_33c6e19a",
+        "question": "Rationalize the denominator: 1/(√2 + √3) = ?",
+        "options": [
+          "√2 - √3",
+          "√6 - √2",
+          "√3 - √2",
+          "√3 + √2"
+        ],
+        "answer": 2,
+        "explanation": "Multiply numerator and denominator by the conjugate √3 - √2 to remove the irrational binomial denominator, as done with irrationals like √2 and √3 in the chapter.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 style"
+      },
+      {
+        "id": "p1_t4_B_d60ae63f",
+        "question": "Which number from the list is irrational as per the definition in the chapter?",
+        "options": [
+          "5/1",
+          "2/3",
+          "√2",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "The chapter defines an irrational number as one that cannot be written in the form p/q where p and q are integers and q ≠ 0, and states √2 is irrational.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_B_8b62f382",
+        "question": "According to the excerpt, how many irrational numbers exist between any two gaps on the number line?",
+        "options": [
+          "Five",
+          "Infinitely many",
+          "One",
+          "Zero"
+        ],
+        "answer": 1,
+        "explanation": "The text states there are infinitely many numbers (including irrationals) lying between any two gaps on the number line.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_B_915b1ee7",
+        "question": "Which of these is listed in the excerpt as an example of an irrational number?",
+        "options": [
+          "0.5",
+          "√3",
+          "4/1",
+          "1/2"
+        ],
+        "answer": 1,
+        "explanation": "The chapter explicitly lists √3 among examples of irrational numbers such as √2, √3, √5.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_B_fd05ffd5",
+        "question": "Look at the diagram. Square OABC has sides of length 1. What is the length of diagonal OB?",
+        "options": [
+          "√3",
+          "1",
+          "2",
+          "√2"
+        ],
+        "answer": 3,
+        "explanation": "The solution shows OB = √(1² + 1²) = √2, matching the chapter's method to locate the irrational √2 on the number line.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Example 3",
+        "diagram": {
+          "type": "unit_square",
+          "target": 2
+        }
+      },
+      {
+        "id": "p1_t4_B_4640c400",
+        "question": "Is 3 + √2 rational or irrational?",
+        "options": [
+          "Integer",
+          "Rational",
+          "Whole number",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "Chapter defines irrational numbers as those not expressible as p/q; 3 + √2 cannot be written in that form.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Sec 1.2"
+      },
+      {
+        "id": "p1_t4_B_95ab973d",
+        "question": "Which number is irrational: 5/7, -2, √3 + √5, 0?",
+        "options": [
+          "√3 + √5",
+          "5/7",
+          "-2",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "The chapter states irrationals like √3 and √5 cannot be expressed as ratio of integers, so their sum is irrational.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Sec 1.2"
+      },
+      {
+        "id": "p1_t4_B_96477c1b",
+        "question": "Simplify the expression to check if rational: (√2 + 1) − √2.",
+        "options": [
+          "√2",
+          "Irrational",
+          "1",
+          "2√2"
+        ],
+        "answer": 2,
+        "explanation": "Subtracting like terms yields 1, which is rational as per the definition in the chapter.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Sec 1.2"
+      },
+      {
+        "id": "p1_t4_B_7a78ba94",
+        "question": "Is √2 × √8 rational?",
+        "options": [
+          "Equals 4 only",
+          "Equals √16 only",
+          "Yes",
+          "No"
+        ],
+        "answer": 2,
+        "explanation": "√2 × √8 = √16 = 4, a rational number, consistent with examples of square roots in the chapter.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Sec 1.2"
+      },
+      {
+        "id": "p1_t4_B_0e747e9a",
+        "question": "Rationalize 1/(2 + √3) by multiplying by its conjugate.",
+        "options": [
+          "√3 - 2",
+          "2 - √3",
+          "2 + √3",
+          "1 - √3"
+        ],
+        "answer": 1,
+        "explanation": "To distinguish and express numbers from the gaps, multiply by the conjugate to remove the irrational from the denominator.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 rationalization"
+      },
+      {
+        "id": "p1_t4_B_fce1d685",
+        "question": "How do we distinguish the numbers left in the gaps from rationals?",
+        "options": [
+          "They cannot be written as p/q",
+          "They equal integers only",
+          "They are all positive",
+          "They lie only between 0 and 1"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt asks how to recognise and distinguish the remaining numbers from rationals.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t4_B_794daea3",
+        "question": "What is the result of multiplying (3 + √2) by (3 - √2)?",
+        "options": [
+          "7 - √2",
+          "6 + √2",
+          "9 - 2",
+          "9 + 2"
+        ],
+        "answer": 2,
+        "explanation": "Rationalizing uses the difference of squares on binomial expressions with square roots as shown in number systems examples.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t4_B_45fe117b",
+        "question": "Simplify: (√2 + 1)(√2 - 1) to check a number on the line.",
+        "options": [
+          "0",
+          "3",
+          "1",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "The product equals 2 - 1 = 1 leaving gaps filled by irrationals like √2 on the number line.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t4_B_73950a66",
+        "question": "Rationalize 1/(2 + √3) by multiplying by conjugate.",
+        "options": [
+          "1 - √3",
+          "4 - 3",
+          "2 - √3",
+          "2 + √3"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt introduces irrationals like √3 that require rationalization to remove from denominators.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t4_B_1247ada0",
+        "question": "What operation on √3 + 1 would help place it exactly using the number line gaps described?",
+        "options": [
+          "Multiply by conjugate",
+          "Add 1",
+          "Subtract √3",
+          "Divide by 2"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt highlights gaps holding non-rational numbers like those involving roots, which can be positioned by relating to their conjugates on the line.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t4_B",
+        "category_label": "Rationalize · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "C": [
+      {
+        "id": "p1_t4_C_dc95187f",
+        "question": "Simplify: (√1 + √2)(√1 − √2) = ?",
+        "options": [
+          "√1 + √2",
+          "3",
+          "√1 − √2",
+          "-1"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². With x = √1 and y = √2, you get 1 − 2 = -1.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_C_ac30a350",
+        "question": "Simplify: (√1 + √5)(√1 − √5) = ?",
+        "options": [
+          "√1 + √5",
+          "6",
+          "√1 − √5",
+          "-4"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². With x = √1 and y = √5, you get 1 − 5 = -4.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_C_4586efa0",
+        "question": "Simplify: (√4 + √2)(√4 − √2) = ?",
+        "options": [
+          "√4 + √2",
+          "6",
+          "√4 − √2",
+          "2"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². With x = √4 and y = √2, you get 4 − 2 = 2.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_C_763fa341",
+        "question": "Simplify: (√3 + √3)(√3 − √3) = ?",
+        "options": [
+          "√3 + √3",
+          "6",
+          "1",
+          "0"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². Here both parts use √3, so you get 3 − 3 = 0.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_C_1180c81e",
+        "question": "What is the conjugate of √5 + √2?",
+        "options": [
+          "-√5 - √2",
+          "√2 - √5",
+          "√5 + √2",
+          "√5 - √2"
+        ],
+        "answer": 3,
+        "explanation": "Conjugate pairs differ only in the sign between terms, as used to rationalize denominators like those with √2 + √3 from operations on irrationals.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.5 style"
+      },
+      {
+        "id": "p1_t4_C_2398735e",
+        "question": "Multiply 1/(√3 + √2) by its conjugate to begin rationalizing. Which expression results in the denominator?",
+        "options": [
+          "3 - 2",
+          "√6",
+          "3 + 2",
+          "√3 - √2"
+        ],
+        "answer": 0,
+        "explanation": "(√3 + √2)(√3 - √2) = 3 - 2 gives a rational denominator.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.5 style"
+      },
+      {
+        "id": "p1_t4_C_26bf412a",
+        "question": "Which pair of expressions are conjugates?",
+        "options": [
+          "√7 + 4 and 4 + √7",
+          "√7 + 4 and √4 - √7",
+          "√7 + 4 and √7 - 4",
+          "√7 + 4 and -√7 + 4"
+        ],
+        "answer": 2,
+        "explanation": "Conjugates like a + b and a - b allow the product to eliminate the irrational parts in the denominator.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.5 style"
+      },
+      {
+        "id": "p1_t4_C_d28a138d",
+        "question": "After multiplying 3/(√5 - √3) by conjugate √5 + √3, the new denominator is?",
+        "options": [
+          "5 + 3",
+          "5 - 3",
+          "√5 - √3",
+          "√15"
+        ],
+        "answer": 1,
+        "explanation": "Using the conjugate pair yields the rational value 5 - 3.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.5 style"
+      },
+      {
+        "id": "p1_t4_C_b7a577bf",
+        "question": "What is the conjugate pair used to rationalize the denominator of 1/(√2 + √3)?",
+        "options": [
+          "√2 - √3",
+          "2 - 3",
+          "√3 - √2",
+          "√2 + √3"
+        ],
+        "answer": 0,
+        "explanation": "The conjugate of a + b is a - b, so for √2 + √3 the pair is √2 - √3 as introduced with irrationals like √2 in the chapter.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 style"
+      },
+      {
+        "id": "p1_t4_C_1f479fc0",
+        "question": "Multiply (√5 + √2) by its conjugate to rationalize.",
+        "options": [
+          "√10",
+          "√5 - √2",
+          "5 - 2",
+          "5 + 2"
+        ],
+        "answer": 2,
+        "explanation": "Using the conjugate √5 - √2 gives (√5)^2 - (√2)^2 = 5 - 2, matching the chapter's focus on expressions with irrationals like √2.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_C_e16c3f0c",
+        "question": "Which expression is the conjugate of √7 - √11?",
+        "options": [
+          "√7 + √11",
+          "7 + 11",
+          "-√7 + √11",
+          "√7 - √11"
+        ],
+        "answer": 0,
+        "explanation": "The conjugate changes the sign between the terms, so √7 - √11 pairs with √7 + √11 for rationalization.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Q3 style"
+      },
+      {
+        "id": "p1_t4_C_975d0e4c",
+        "question": "To rationalize 3/(√6 + 2), multiply numerator and denominator by which conjugate?",
+        "options": [
+          "6 - 4",
+          "√6 + 2",
+          "2 - √6",
+          "√6 - 2"
+        ],
+        "answer": 3,
+        "explanation": "The conjugate of √6 + 2 is √6 - 2, allowing the denominator to become 6 - 4 as per handling irrational denominators in the chapter.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_C_db7a11f1",
+        "question": "Which pair helps rationalize 1/(√7 - 2) using the number line gaps?",
+        "options": [
+          "7 + 2",
+          "√7 + 2",
+          "2 - √7",
+          "√7 - 2"
+        ],
+        "answer": 1,
+        "explanation": "Conjugates produce rational results that fit the rational positions on the number line while irrationals fill the gaps.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t4_C_10abecf3",
+        "question": "Simplify: (√5 - 2)(√5 + 2) using conjugate pairs.",
+        "options": [
+          "3",
+          "5 - 4",
+          "5 + 4",
+          "√5 - 4"
+        ],
+        "answer": 1,
+        "explanation": "Conjugate multiplication yields a rational result, separating the irrational parts as described in the gaps on the line.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 conjugate method"
+      },
+      {
+        "id": "p1_t4_C_4da84bb3",
+        "question": "How many rational numbers lie between any two given rational numbers?",
+        "options": [
+          "Infinitely many",
+          "Exactly 10",
+          "None",
+          "Only one"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt states there are infinitely many rational numbers between any two given rational numbers.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Introduction"
+      },
+      {
+        "id": "p1_t4_C_79aa1b78",
+        "question": "To rationalize 1/(√3 + √2) multiply numerator and denominator by which conjugate?",
+        "options": [
+          "√3 × √2",
+          "√3 + √2",
+          "√2 - √3",
+          "√3 - √2"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt notes infinitely many irrationals; conjugates remove the irrational from the denominator.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t4_C",
+        "category_label": "Rationalize · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      }
+    ],
+    "D": [
+      {
+        "id": "p1_t4_D_3ddb3214",
+        "question": "Simplify: (√3 + √3)(√3 − √3) = ?",
+        "options": [
+          "√3 + √3",
+          "6",
+          "1",
+          "0"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². Here both parts use √3, so you get 3 − 3 = 0.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_D_c4f6025b",
+        "question": "Simplify: (√1 + √5)(√1 − √5) = ?",
+        "options": [
+          "√1 + √5",
+          "6",
+          "√1 − √5",
+          "-4"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². With x = √1 and y = √5, you get 1 − 5 = -4.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_D_8b213e2d",
+        "question": "Simplify: (√2 + √5)(√2 − √5) = ?",
+        "options": [
+          "√2 + √5",
+          "7",
+          "√2 − √5",
+          "-3"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². With x = √2 and y = √5, you get 2 − 5 = -3.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_D_e812fe64",
+        "question": "Simplify: (√3 + √2)(√3 − √2) = ?",
+        "options": [
+          "√3 + √2",
+          "5",
+          "√3 − √2",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². With x = √3 and y = √2, you get 3 − 2 = 1.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_D_53b7378d",
+        "question": "Rationalize the denominator: 1/(√2 + √3) = ?",
+        "options": [
+          "√3 - √2",
+          "√2 - √3",
+          "√3 + √2",
+          "(√3 + √2)/(5)"
+        ],
+        "answer": 0,
+        "explanation": "Multiply numerator and denominator by the conjugate √3 - √2 to get (√3 - √2)/(3 - 2) = √3 - √2, using the idea that √2 and √3 are irrationals from the chapter.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 style"
+      },
+      {
+        "id": "p1_t4_D_13cd9acd",
+        "question": "Rationalize the denominator: 1/(√5 - √2) = ?",
+        "options": [
+          "(√5 - √2)/3",
+          "√5 + √2",
+          "(√5 + √2)/3",
+          "√5 - √2"
+        ],
+        "answer": 2,
+        "explanation": "Multiply by conjugate √5 + √2 to obtain (√5 + √2)/(5 - 2) = (√5 + √2)/3, extending the irrational forms shown in the chapter.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 style"
+      },
+      {
+        "id": "p1_t4_D_e791319d",
+        "question": "Simplify after rationalizing: (√7 + √3)/(√7 - √3) = ?",
+        "options": [
+          "(10 - 2√21)/4",
+          "(7 + 3 + 2√21)/4",
+          "(10 + 2√21)/4",
+          "(7 + 3)/(7 - 3)"
+        ],
+        "answer": 1,
+        "explanation": "Multiply numerator and denominator by √7 + √3 to yield (7 + 3 + 2√21)/(7 - 3) = (10 + 2√21)/4, based on properties of irrational square roots.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 style"
+      },
+      {
+        "id": "p1_t4_D_885a3745",
+        "question": "Rationalize: √5/(√5 + √2) = ?",
+        "options": [
+          "5 - √10",
+          "5 + √10",
+          "(5 + √10)/3",
+          "(5 - √10)/3"
+        ],
+        "answer": 3,
+        "explanation": "Multiply by conjugate √5 - √2 to get (5 - √10)/(5 - 2) = (5 - √10)/3, following the chapter's treatment of irrationals like √2 and √5.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 style"
+      },
+      {
+        "id": "p1_t4_D_af0dc526",
+        "question": "Rationalize the denominator: 1/(√2 + √3) = ?",
+        "options": [
+          "√3 - √2",
+          "√2 - √3",
+          "(√3 - √2)/5",
+          "√3 + √2"
+        ],
+        "answer": 0,
+        "explanation": "Multiply numerator and denominator by the conjugate √3 - √2 using the identity from irrational surds like √2 and √3 in section 1.2.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 Irrational Numbers"
+      },
+      {
+        "id": "p1_t4_D_b5f9a6d7",
+        "question": "Rationalize the denominator: 1/(√5 - √3) = ?",
+        "options": [
+          "√5 - √3",
+          "1/2",
+          "(√3 + √5)/8",
+          "(√5 + √3)/(5-3)"
+        ],
+        "answer": 3,
+        "explanation": "Use conjugate √5 + √3 to get numerator √5 + √3 over 5 - 3, based on irrational numbers √5 and √3 from the chapter.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 Irrational Numbers"
+      },
+      {
+        "id": "p1_t4_D_33319c08",
+        "question": "Simplify after rationalizing: √2/(√2 + √8) = ?",
+        "options": [
+          "(√2 - 2)/6",
+          "1/(√2 + 2)",
+          "√2 - 2",
+          "(2 - √2)/3"
+        ],
+        "answer": 3,
+        "explanation": "First simplify √8 = 2√2 then multiply by conjugate, following forms of irrationals like √2 shown in the excerpt.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 Irrational Numbers"
+      },
+      {
+        "id": "p1_t4_D_25a7ab57",
+        "question": "Rationalize: 3/(√7 - √2) = ?",
+        "options": [
+          "3(√7 - √2)",
+          "3(√7 + √2)/5",
+          "(√7 + √2)/5",
+          "3(√2 - √7)/5"
+        ],
+        "answer": 1,
+        "explanation": "Multiply by conjugate √7 + √2 using the difference of squares for irrationals √7 and √2 listed in the chapter.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 Irrational Numbers"
+      },
+      {
+        "id": "p1_t4_D_da929c2f",
+        "question": "What remains after picking rationals between 1 and 2 on the number line?",
+        "options": [
+          "Infinitely many other numbers",
+          "Finite rationals",
+          "No gaps",
+          "Only zero"
+        ],
+        "answer": 0,
+        "explanation": "Gaps remain with infinitely many numbers left after selecting rationals.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Introduction"
+      },
+      {
+        "id": "p1_t4_D_b5904f2b",
+        "question": "Rationalize the mixed surd 3/(2√5 - √3) by multiplying by which expression?",
+        "options": [
+          "2√5 - √3",
+          "2√5 + √3",
+          "√5 + √3",
+          "2 + √3"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt highlights irrationals in gaps; conjugates clear the denominator while preserving the value.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t4_D",
+        "category_label": "Rationalize · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      }
+    ],
+    "E": [
+      {
+        "id": "p1_t4_E_c0b0418b",
+        "question": "Simplify: (√3 + √5)(√3 − √5) = ?",
+        "options": [
+          "√3 + √5",
+          "8",
+          "√3 − √5",
+          "-2"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². With x = √3 and y = √5, you get 3 − 5 = -2.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_E_5cca41d0",
+        "question": "Simplify: (√1 + √5)(√1 − √5) = ?",
+        "options": [
+          "√1 + √5",
+          "6",
+          "√1 − √5",
+          "-4"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². With x = √1 and y = √5, you get 1 − 5 = -4.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_E_11aa6387",
+        "question": "Simplify: (√3 + √3)(√3 − √3) = ?",
+        "options": [
+          "√3 + √3",
+          "6",
+          "1",
+          "0"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². Here both parts use √3, so you get 3 − 3 = 0.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_E_e47748ca",
+        "question": "Simplify: (√1 + √3)(√1 − √3) = ?",
+        "options": [
+          "√1 + √3",
+          "4",
+          "√1 − √3",
+          "-2"
+        ],
+        "answer": 3,
+        "explanation": "Use (x + y)(x − y) = x² − y². With x = √1 and y = √3, you get 1 − 3 = -2.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t4_E_53d8edc6",
+        "question": "Simplify: 1/√2 by rationalizing the denominator.",
+        "options": [
+          "√2",
+          "1/2",
+          "1/3",
+          "√2/2"
+        ],
+        "answer": 3,
+        "explanation": "Multiply numerator and denominator by √2 to remove the irrational from the denominator, as introduced with √2 in the chapter.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 style"
+      },
+      {
+        "id": "p1_t4_E_29e37c71",
+        "question": "Rationalize the denominator of 3/√5.",
+        "options": [
+          "3√5/5",
+          "√5/3",
+          "3/5",
+          "15/√5"
+        ],
+        "answer": 0,
+        "explanation": "Multiply top and bottom by √5 using the property that irrational numbers like √5 cannot be expressed as p/q.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_E_4a5cd4ee",
+        "question": "What is (√3 + 1)/√3 after rationalizing?",
+        "options": [
+          "√3",
+          "3 + √3",
+          "1 + √3/3",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "Distribute to separate terms and rationalize each denominator involving irrationals such as √3.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Q3 style"
+      },
+      {
+        "id": "p1_t4_E_56d10a1a",
+        "question": "Simplify 5/(√2 - 1) after rationalizing the denominator.",
+        "options": [
+          "√2 + 1",
+          "5/(√2 + 1)",
+          "5(√2 + 1)",
+          "5√2 - 5"
+        ],
+        "answer": 2,
+        "explanation": "Multiply by the conjugate √2 + 1 to eliminate the irrational denominator, consistent with locating and using numbers like √2.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_E_fc8479b9",
+        "question": "Simplify: √2 × √2",
+        "options": [
+          "4",
+          "√2",
+          "2",
+          "3"
+        ],
+        "answer": 2,
+        "explanation": "√2 is irrational as it cannot be written as p/q, and multiplying gives the rational number 2.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_E_a2a100c1",
+        "question": "What is the simplified form of 3 + √2 + 3 − √2?",
+        "options": [
+          "6",
+          "2√2",
+          "3 + √2",
+          "6 + √2"
+        ],
+        "answer": 0,
+        "explanation": "The irrational parts cancel, leaving the rational number 6, consistent with combining real numbers.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_E_24022644",
+        "question": "Simplify the expression √3 × √3.",
+        "options": [
+          "4",
+          "√3",
+          "3",
+          "9"
+        ],
+        "answer": 2,
+        "explanation": "√3 is irrational (cannot be p/q), and the product is the rational 3 as shown for similar roots.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t4_E_f5dd2c25",
+        "question": "What results from (√2 + √3) − √2?",
+        "options": [
+          "√5",
+          "√2",
+          "√3",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "Subtracting cancels the √2 term leaving the irrational √3, as both are distinct irrationals on the number line.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t4_E",
+        "category_label": "Rationalize · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 1,
+    "topic_id": 4,
+    "chapter_num": 1,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_01/top_level.txt"
+  }
+}

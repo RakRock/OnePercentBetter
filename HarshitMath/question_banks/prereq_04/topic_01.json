@@ -1,0 +1,420 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p4_t1_A_41761c51",
+        "question": "According to the axiom used in Theorem 5.1, how many lines can pass through two distinct points P and Q?",
+        "options": [
+          "Infinite",
+          "Three",
+          "One",
+          "Two"
+        ],
+        "answer": 2,
+        "explanation": "The proof of Theorem 5.1 relies on the axiom that only one line can pass through two distinct points.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Theorem 5.1"
+      },
+      {
+        "id": "p4_t1_A_e96e226a",
+        "question": "If AC = BC and C lies between A and B, what is AC in terms of AB?",
+        "options": [
+          "2 AB",
+          "1/3 AB",
+          "AB",
+          "1/2 AB"
+        ],
+        "answer": 3,
+        "explanation": "Exercise 5.1 Q4 states that if C is between A and B with AC = BC then AC = 1/2 AB.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Ex 5.1 Q4"
+      },
+      {
+        "id": "p4_t1_A_33a1535e",
+        "question": "What does the proof conclude about two distinct lines l and m?",
+        "options": [
+          "They never intersect",
+          "They cannot have more than one point in common",
+          "They have infinite points in common",
+          "They must intersect at two points"
+        ],
+        "answer": 1,
+        "explanation": "Theorem 5.1 proves that two distinct lines cannot have more than one point in common.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Theorem 5.1"
+      },
+      {
+        "id": "p4_t1_A_06a2d689",
+        "question": "In the given postulates, how many points exist that are not on the same line?",
+        "options": [
+          "One",
+          "At least three",
+          "None",
+          "Exactly two"
+        ],
+        "answer": 1,
+        "explanation": "Postulate (ii) states there exist at least three points that are not on the same line.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Ex 5.1 Q3"
+      }
+    ],
+    "B": [
+      {
+        "id": "p4_t1_B_5bb3a8bf",
+        "question": "According to Theorem 5.1, two distinct lines intersect at most at how many points?",
+        "options": [
+          "3",
+          "infinite",
+          "2",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "Theorem 5.1 states two distinct lines cannot have more than one point in common.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Theorem 5.1"
+      },
+      {
+        "id": "p4_t1_B_d56444b1",
+        "question": "If point C lies between A and B with AC = BC, then AC equals what fraction of AB?",
+        "options": [
+          "1/2",
+          "1/4",
+          "2/3",
+          "1/3"
+        ],
+        "answer": 0,
+        "explanation": "Exercise 5.1 Q4 proves AC = (1/2) AB when C is the midpoint.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Ex 5.1 Q4"
+      },
+      {
+        "id": "p4_t1_B_f4a7d561",
+        "question": "How many mid-points does every line segment have?",
+        "options": [
+          "two",
+          "infinite",
+          "none",
+          "exactly one"
+        ],
+        "answer": 3,
+        "explanation": "Exercise 5.1 Q5 proves every line segment has one and only one mid-point.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Ex 5.1 Q5"
+      },
+      {
+        "id": "p4_t1_B_6daa23fb",
+        "question": "If AC = BD in the figure with points A, C, B, D on a line, then which equality holds?",
+        "options": [
+          "AC = BD",
+          "AB = AC",
+          "AD = BC",
+          "AB = CD"
+        ],
+        "answer": 3,
+        "explanation": "Exercise 5.1 Q6 requires proving AB = CD when AC = BD.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Ex 5.1 Q6"
+      }
+    ],
+    "C": [
+      {
+        "id": "p4_t1_C_97963269",
+        "question": "If a transversal falls on two lines such that the sum of interior angles on the same side is 180°, the lines are",
+        "options": [
+          "parallel",
+          "intersecting",
+          "coincident",
+          "perpendicular"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt states no intersection occurs when co-interior angles on the same side of the falling line sum to 180°.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Section 5.3"
+      },
+      {
+        "id": "p4_t1_C_be28d1db",
+        "question": "Playfair’s axiom guarantees how many unique lines through a point P not on line l that are parallel to l?",
+        "options": [
+          "1",
+          "2",
+          "infinite",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt gives Playfair’s axiom: for every line l and point P not on l, there exists a unique line m through P parallel to l.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Section 5.3"
+      },
+      {
+        "id": "p4_t1_C_0a587d43",
+        "question": "Two distinct lines that intersect cannot both be parallel to the same third line. This follows from which statement in the excerpt?",
+        "options": [
+          "Axiom on points",
+          "Theorem 5.1",
+          "Postulate on circles",
+          "Playfair’s axiom"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states this result directly as an equivalent form of Playfair’s axiom on parallel lines.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Section 5.3"
+      },
+      {
+        "id": "p4_t1_C_a7a76f9b",
+        "question": "According to the excerpt, when do two lines cut by a transversal have no point in common?",
+        "options": [
+          "they have one common point",
+          "they pass through two points",
+          "sum of angles is 90°",
+          "co-interior angles sum to 180°"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt links the 180° co-interior sum to the lines having no intersection, i.e., being parallel.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Section 5.3"
+      }
+    ],
+    "D": [
+      {
+        "id": "p4_t1_D_e90fd034",
+        "question": "If the sum of the measures of the interior angles on the same side of a transversal is exactly 180°, what follows for the two lines?",
+        "options": [
+          "270°",
+          "90°",
+          "360°",
+          "180°"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states that no intersection occurs precisely when this sum equals 180°.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Section 5.3"
+      },
+      {
+        "id": "p4_t1_D_f4302c1e",
+        "question": "Two distinct lines l and m intersect at points P and Q. Which axiom is contradicted?",
+        "options": [
+          "A terminated line extends indefinitely",
+          "Only one line through two distinct points",
+          "Radii of equal circles are equal",
+          "Infinite lines through one point"
+        ],
+        "answer": 1,
+        "explanation": "Theorem 5.1 proof shows the assumption of two common points violates the axiom that only one line passes through two distinct points.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Theorem 5.1"
+      },
+      {
+        "id": "p4_t1_D_180b0f58",
+        "question": "Point C lies between A and B with AC = BC. What is the relation between AC and AB?",
+        "options": [
+          "AC = 2 AB",
+          "AC = (1/2) AB",
+          "AC = AB",
+          "AC = 3 AB"
+        ],
+        "answer": 1,
+        "explanation": "Exercise 5.1 Q4 requires proving AC = (1/2) AB when C is the midpoint.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Exercise 5.1 Q4"
+      },
+      {
+        "id": "p4_t1_D_35642613",
+        "question": "Playfair’s Axiom states that for a line l and point P not on l, how many lines through P are parallel to l?",
+        "options": [
+          "None",
+          "Two",
+          "Infinitely many",
+          "Exactly one"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt gives Playfair’s form: there exists a unique line m through P parallel to l.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Section 5.3"
+      }
+    ],
+    "E": [
+      {
+        "id": "p4_t1_E_db335aea",
+        "question": "According to the proof of Theorem 5.1, if two distinct lines l and m are assumed to intersect at points P and Q, which axiom is contradicted?",
+        "options": [
+          "A terminated line can be produced indefinitely",
+          "Things which are equal to the same thing are equal to one another",
+          "Only one line can pass through two distinct points",
+          "All right angles are equal to one another"
+        ],
+        "answer": 2,
+        "explanation": "The proof shows the assumption of two intersection points violates the axiom that only one line passes through two distinct points.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Theorem 5.1"
+      },
+      {
+        "id": "p4_t1_E_c58318c2",
+        "question": "If AC = BD and C lies between A and B with D between B and C on the line, what equality must be proved using the given figure?",
+        "options": [
+          "AC = AB",
+          "BD = BC",
+          "AB = CD",
+          "AD = BC"
+        ],
+        "answer": 2,
+        "explanation": "From the segment equality AC = BD the chapter exercise requires proving AB = CD by subtracting common parts.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Ex 5.1 Q6"
+      },
+      {
+        "id": "p4_t1_E_a51e3454",
+        "question": "What is the maximum number of points that two distinct lines can have in common, as concluded from Theorem 5.1?",
+        "options": [
+          "3",
+          "2",
+          "0",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "The theorem states two distinct lines cannot have more than one point in common, so the maximum is one.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Theorem 5.1"
+      },
+      {
+        "id": "p4_t1_E_9835d10c",
+        "question": "Playfair’s Axiom states that for a line l and a point P not on l there exists how many lines through P parallel to l?",
+        "options": [
+          "Zero",
+          "Infinitely many",
+          "Exactly two",
+          "Exactly one"
+        ],
+        "answer": 3,
+        "explanation": "The equivalent form of Euclid’s fifth postulate given in the chapter asserts a unique parallel line through P.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 5,
+        "chapter_ref": "Section 5.3"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 4,
+    "topic_id": 1,
+    "chapter_num": 5,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_05/Chapter_05_Introduction_to_Euclids_Geometry.pdf"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p6_t2_A_35ea79fd",
+        "question": "Best graph for grouped continuous data?",
+        "options": [
+          "Line graph",
+          "Pie chart only",
+          "Histogram",
+          "Scatter plot"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t2_A",
+        "category_label": "Graphs · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      }
+    ],
+    "B": [
+      {
+        "id": "p6_t2_B_a3a276b6",
+        "question": "Best graph for grouped continuous data?",
+        "options": [
+          "Line graph",
+          "Scatter plot",
+          "Pie chart only",
+          "Histogram"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t2_B",
+        "category_label": "Graphs · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      }
+    ],
+    "C": [
+      {
+        "id": "p6_t2_C_217ae578",
+        "question": "Best graph for grouped continuous data?",
+        "options": [
+          "Pie chart only",
+          "Histogram",
+          "Scatter plot",
+          "Line graph"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t2_C",
+        "category_label": "Graphs · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      }
+    ],
+    "D": [
+      {
+        "id": "p6_t2_D_5e3a663b",
+        "question": "Best graph for grouped continuous data?",
+        "options": [
+          "Pie chart only",
+          "Histogram",
+          "Scatter plot",
+          "Line graph"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t2_D",
+        "category_label": "Graphs · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      }
+    ],
+    "E": [
+      {
+        "id": "p6_t2_E_086e1769",
+        "question": "Best graph for grouped continuous data?",
+        "options": [
+          "Pie chart only",
+          "Histogram",
+          "Line graph",
+          "Scatter plot"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 6,
+        "category": "p6_t2_E",
+        "category_label": "Graphs · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 6,
+    "topic_id": 2,
+    "chapter_num": 14,
+    "source_pdf": ""
+  }
+}

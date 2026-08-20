@@ -1,0 +1,1794 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p1_t5_A_dfe1a62c",
+        "question": "Classify: 7/3",
+        "options": [
+          "Rational",
+          "Neither",
+          "Rational (alt 1)",
+          "Irrational"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_A_4d3e368e",
+        "question": "Classify: √7",
+        "options": [
+          "Irrational",
+          "Rational",
+          "Irrational (alt 1)",
+          "Neither"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_A_fc587996",
+        "question": "Classify: √16",
+        "options": [
+          "Rational",
+          "Neither",
+          "Rational (alt 1)",
+          "Irrational"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_A_aabfb6e5",
+        "question": "Classify: √25",
+        "options": [
+          "Rational (alt 1)",
+          "Rational",
+          "Neither",
+          "Irrational"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_A_792c0715",
+        "question": "Classify √2 according to the definition in the chapter.",
+        "options": [
+          "Whole number",
+          "Irrational",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 1,
+        "explanation": "The chapter defines a number as irrational if it cannot be written as p/q where p and q are integers with q ≠ 0, and states that √2 is irrational.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_A_7dd24600",
+        "question": "Classify √2 as rational or irrational.",
+        "options": [
+          "Natural number",
+          "Rational",
+          "Irrational",
+          "Integer"
+        ],
+        "answer": 2,
+        "explanation": "√2 cannot be written as p/q with integers p and q ≠ 0, so it is irrational per the chapter definition.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_A_52e9db71",
+        "question": "Classify π as rational or irrational.",
+        "options": [
+          "Whole number",
+          "Irrational",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 1,
+        "explanation": "π cannot be expressed in the form p/q where p and q are integers with q ≠ 0, making it irrational.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_A_92bc9fbd",
+        "question": "Classify 3/5 as rational or irrational.",
+        "options": [
+          "Irrational",
+          "Irrational like √2",
+          "Rational",
+          "Not a real number"
+        ],
+        "answer": 2,
+        "explanation": "3/5 is of the form p/q with p=3, q=5 integers and q ≠ 0, so it is rational.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Exercise 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t5_A_63c7e0f0",
+        "question": "Classify 0.10110111011110... as rational or irrational.",
+        "options": [
+          "Irrational",
+          "Natural number",
+          "Rational",
+          "Integer"
+        ],
+        "answer": 0,
+        "explanation": "This non-terminating non-repeating decimal cannot be written as p/q, so it is irrational as stated in the chapter.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_A_c5a8ac0d",
+        "question": "Is √2 rational or irrational?",
+        "options": [
+          "Natural number",
+          "Integer",
+          "Irrational",
+          "Rational"
+        ],
+        "answer": 2,
+        "explanation": "√2 cannot be written as p/q with p, q integers and q ≠ 0, so it is irrational as stated in the definition of irrational numbers.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_A_e8c663d8",
+        "question": "Which of these is irrational?",
+        "options": [
+          "√3",
+          "2/3",
+          "-5/7",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "√3 cannot be expressed in p/q form, unlike the others which are rational numbers.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_A_985456bf",
+        "question": "Is π rational or irrational?",
+        "options": [
+          "Natural number",
+          "Whole number",
+          "Irrational",
+          "Rational"
+        ],
+        "answer": 2,
+        "explanation": "π cannot be written as p/q where p and q are integers with q ≠ 0, making it irrational.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_A_b8f0463e",
+        "question": "Is 0 rational or irrational?",
+        "options": [
+          "Natural number only",
+          "Whole number only",
+          "Irrational",
+          "Rational"
+        ],
+        "answer": 3,
+        "explanation": "0 can be written as 0/1 where p=0, q=1 are integers and q ≠ 0, so it is rational.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Exercise 1.1 Q1"
+      },
+      {
+        "id": "p1_t5_A_61a9c178",
+        "question": "Is 3/4 rational or irrational?",
+        "options": [
+          "Rational",
+          "Both",
+          "Neither",
+          "Irrational"
+        ],
+        "answer": 0,
+        "explanation": "3/4 can be written as p/q with integers p and q, so it is rational per the chapter definition.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q1 style"
+      },
+      {
+        "id": "p1_t5_A_edbc7a40",
+        "question": "Which number fills a gap on the number line between 1 and 2 but is not rational?",
+        "options": [
+          "3/2",
+          "√2",
+          "1.5",
+          "4/3"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt states there are infinitely many numbers in the gaps that cannot be expressed as p/q, which are the irrationals like √2.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro to irrationals"
+      },
+      {
+        "id": "p1_t5_A_e9314a5d",
+        "question": "Is √2 a rational number or not?",
+        "options": [
+          "Whole number",
+          "Rational",
+          "Integer",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt distinguishes the numbers left on the number line (gaps) from rationals, calling them irrationals like √2.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 next section"
+      },
+      {
+        "id": "p1_t5_A_6ae35908",
+        "question": "Which type of number fills the gaps left on the number line after placing all rationals?",
+        "options": [
+          "Irrational numbers",
+          "Integers",
+          "Natural numbers",
+          "Whole numbers"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt notes infinitely many numbers remain in the gaps after rationals, called irrationals.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t5_A_5808c984",
+        "question": "Is √3 a rational or irrational number?",
+        "options": [
+          "Whole number",
+          "Irrational",
+          "Rational",
+          "Integer"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt discusses numbers left on the number line that cannot be expressed as p/q, which are irrationals like √3.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q style"
+      },
+      {
+        "id": "p1_t5_A_4d6e42c3",
+        "question": "Is 22/7 rational or irrational based on the number line gaps?",
+        "options": [
+          "Rational",
+          "Whole number only",
+          "Irrational",
+          "Integer only"
+        ],
+        "answer": 0,
+        "explanation": "22/7 can be written as p/q so it is rational like the numbers picked on the line before gaps.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q1 style"
+      },
+      {
+        "id": "p1_t5_A_fb693ce9",
+        "question": "Which number is irrational?",
+        "options": [
+          "√3",
+          "3/5",
+          "0",
+          "7"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt asks how to distinguish irrationals from rationals; √3 cannot be written as p/q.",
+        "topic": 5,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t5_A",
+        "category_label": "Irrational · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      }
+    ],
+    "B": [
+      {
+        "id": "p1_t5_B_212ce581",
+        "question": "Classify: √9",
+        "options": [
+          "Irrational",
+          "Rational (alt 1)",
+          "Rational",
+          "Neither"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_B_45c655ab",
+        "question": "Classify: 0.001… (non-repeating)",
+        "options": [
+          "Irrational (alt 1)",
+          "Rational",
+          "Neither",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_B_52c1723a",
+        "question": "Classify: 0.0001… (non-repeating)",
+        "options": [
+          "Irrational",
+          "Irrational (alt 1)",
+          "Rational",
+          "Neither"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_B_9e58eac1",
+        "question": "Classify: 0.01… (non-repeating)",
+        "options": [
+          "Neither",
+          "Irrational (alt 1)",
+          "Irrational",
+          "Rational"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_B_882031d3",
+        "question": "Look at the diagram. Square OABC has sides of length 1. What is the length of diagonal OB?",
+        "options": [
+          "√2",
+          "2",
+          "√3",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "By Pythagoras theorem in the unit square, OB = √(1² + 1²) = √2, which is then marked on the number line as shown in Ex 1.2 Example 3.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Example 3",
+        "diagram": {
+          "type": "unit_square",
+          "target": 2
+        }
+      },
+      {
+        "id": "p1_t5_B_90fb6238",
+        "question": "Look at the diagram. Square OABC has sides of length 1. What is the length of diagonal OB?",
+        "options": [
+          "2",
+          "1",
+          "√2",
+          "√3"
+        ],
+        "answer": 2,
+        "explanation": "By Pythagoras theorem OB = √(1² + 1²) = √2, as shown in Example 3 for locating √2 on the number line.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Example 3",
+        "diagram": {
+          "type": "unit_square",
+          "target": 2
+        }
+      },
+      {
+        "id": "p1_t5_B_1f03d804",
+        "question": "Look at the diagram. What is the length of the hypotenuse OB?",
+        "options": [
+          "√2",
+          "√3",
+          "2",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "Hypotenuse = √((√2)² + 1²) = √(2 + 1) = √3, extending the method used for √2.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2",
+        "diagram": {
+          "type": "sqrt_extend",
+          "base_label": "√2",
+          "perp": 1,
+          "target": 3
+        }
+      },
+      {
+        "id": "p1_t5_B_516be3af",
+        "question": "Look at the diagram. Square OABC has sides of length 1. What is the length of diagonal OB?",
+        "options": [
+          "√2",
+          "2/1",
+          "3/2",
+          "1.5"
+        ],
+        "answer": 0,
+        "explanation": "The diagonal of a unit square is √2, which is irrational and lies on the real number line between 1 and 2.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Example 3",
+        "diagram": {
+          "type": "unit_square",
+          "target": 2
+        }
+      },
+      {
+        "id": "p1_t5_B_7011473d",
+        "question": "Look at the diagram. What is the length of the hypotenuse OB?",
+        "options": [
+          "3",
+          "1",
+          "√4",
+          "√5"
+        ],
+        "answer": 3,
+        "explanation": "Hypotenuse = √(2² + 1²) = √5, allowing placement of this irrational on the number line as in the √2 method.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2",
+        "diagram": {
+          "type": "sqrt_number_line",
+          "base": 2,
+          "perp": 1,
+          "target": 5
+        }
+      },
+      {
+        "id": "p1_t5_B_4434b132",
+        "question": "Look at the diagram. Square OABC has sides of length 1. What is the length of diagonal OB?",
+        "options": [
+          "√3",
+          "1",
+          "√2",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt shows OB = √(1² + 1²) = √2, which is transferred to the number line.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Example 3",
+        "diagram": {
+          "type": "unit_square",
+          "target": 2
+        }
+      },
+      {
+        "id": "p1_t5_B_253b1d03",
+        "question": "Look at the diagram. What is the length of the hypotenuse OB?",
+        "options": [
+          "√3",
+          "2",
+          "√2",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "Pythagoras gives √(1² + (√2)²) = √(1 + 2) = √3, as shown for locating irrationals.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Example 3 style",
+        "diagram": {
+          "type": "sqrt_extend",
+          "base_label": "√2",
+          "perp": 1,
+          "target": 3
+        }
+      },
+      {
+        "id": "p1_t5_B_3cd9947c",
+        "question": "After locating √2 at point P on the number line, which length from P locates √3?",
+        "options": [
+          "√3 unit",
+          "2 units",
+          "√2 unit",
+          "1 unit"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt extends the method: from P mark 1 unit to reach √3 via another right triangle.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 after Example 3"
+      },
+      {
+        "id": "p1_t5_B_e2fa326e",
+        "question": "Which statement matches the excerpt method for placing √2 on the real number line?",
+        "options": [
+          "Add 1 + 1",
+          "Use unit square diagonal",
+          "Use fraction 2/1",
+          "Mark at 1.4 exactly"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt constructs √2 as diagonal of unit square OABC and transfers it to the number line.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Example 3"
+      },
+      {
+        "id": "p1_t5_B_e0a42180",
+        "question": "Where is √2 placed relative to 1 and 2 on the number line?",
+        "options": [
+          "At 1",
+          "Left of 1",
+          "At 2",
+          "Between 1 and 2"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt notes infinitely many numbers fill gaps between rationals such as 1 and 2, including √2.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t5_B_2e637bec",
+        "question": "Between which two consecutive integers does √2 lie on the number line?",
+        "options": [
+          "1 and 2",
+          "0 and 1",
+          "3 and 4",
+          "2 and 3"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt notes gaps on the number line beyond rationals, and √2 is an irrational filling one such gap between 1 and 2.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro to irrationals"
+      },
+      {
+        "id": "p1_t5_B_77dfba5a",
+        "question": "Which numbers fill the gaps on the number line beyond rationals?",
+        "options": [
+          "Only integers",
+          "Finite set",
+          "No numbers",
+          "Infinitely many unnamed numbers"
+        ],
+        "answer": 3,
+        "explanation": "The text highlights infinitely many numbers left in gaps between rationals.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Introduction"
+      },
+      {
+        "id": "p1_t5_B_1d1dd020",
+        "question": "Between which two integers does √2 lie when located on the number line?",
+        "options": [
+          "0 and 1",
+          "2 and 3",
+          "1 and 2",
+          "3 and 4"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt notes gaps on the number line with numbers like √2 between 1 and 2 since 1 squared is 1 and 2 squared is 4.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 style"
+      },
+      {
+        "id": "p1_t5_B_f3dfc0b4",
+        "question": "Where is √3 located relative to 1 and 2 on the number line?",
+        "options": [
+          "At 0",
+          "After 2",
+          "Between 1 and 2",
+          "Before 1"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt highlights irrationals like √3 occupying gaps between rationals such as 1 and 2.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t5_B_1158b346",
+        "question": "On the number line, between which two consecutive integers are there gaps containing numbers like √2?",
+        "options": [
+          "2 and 3",
+          "3 and 4",
+          "0 and 1",
+          "1 and 2"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt notes infinitely many numbers left in gaps on the number line beyond the rationals already placed, such as between 1 and 2.",
+        "topic": 5,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t5_B",
+        "category_label": "Irrational · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "C": [
+      {
+        "id": "p1_t5_C_c07c1661",
+        "question": "√7 lies on the number line…",
+        "options": [
+          "Between 3 and 4",
+          "Exactly 4",
+          "Between 2 and 3",
+          "Between 4 and 5"
+        ],
+        "answer": 0,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_C_b63aad11",
+        "question": "√11 lies on the number line…",
+        "options": [
+          "Between 3 and 4",
+          "Between 4 and 5",
+          "Between 2 and 3",
+          "Exactly 4"
+        ],
+        "answer": 0,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_C_74a7bea4",
+        "question": "√10 lies on the number line…",
+        "options": [
+          "Between 4 and 5",
+          "Between 2 and 3",
+          "Between 3 and 4",
+          "Exactly 4"
+        ],
+        "answer": 2,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_C_3f200d6a",
+        "question": "√3 lies on the number line…",
+        "options": [
+          "Exactly 4",
+          "Between 4 and 5",
+          "Between 3 and 4",
+          "Between 2 and 3"
+        ],
+        "answer": 2,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_C_b9efb69b",
+        "question": "Between which consecutive integers does √2 lie on the number line?",
+        "options": [
+          "3 and 4",
+          "0 and 1",
+          "1 and 2",
+          "2 and 3"
+        ],
+        "answer": 2,
+        "explanation": "As the diagonal of a unit square, √2 satisfies 1 < √2 < 2 per the Pythagorean construction in the chapter.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Example 3 style"
+      },
+      {
+        "id": "p1_t5_C_8b383c6d",
+        "question": "√3 is between which pair of consecutive integers?",
+        "options": [
+          "0 and 1",
+          "2 and 3",
+          "1 and 2",
+          "3 and 4"
+        ],
+        "answer": 1,
+        "explanation": "The chapter lists √3 as irrational, and 2 < √3 < 3 since 4 < 3 < 9.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_C_79317b0e",
+        "question": "Estimate: between which integers does √10 lie?",
+        "options": [
+          "4 and 5",
+          "3 and 4",
+          "1 and 2",
+          "2 and 3"
+        ],
+        "answer": 1,
+        "explanation": "The chapter states √10 is irrational, and 9 < 10 < 16 implies 3 < √10 < 4.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 Theodorus list"
+      },
+      {
+        "id": "p1_t5_C_9103ad37",
+        "question": "Between which consecutive integers is √15 located?",
+        "options": [
+          "3 and 4",
+          "4 and 5",
+          "5 and 6",
+          "2 and 3"
+        ],
+        "answer": 0,
+        "explanation": "The chapter identifies √15 as irrational, and 9 < 15 < 16 shows 3 < √15 < 4.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_C_05170b89",
+        "question": "Between which two consecutive integers does √2 lie on the number line?",
+        "options": [
+          "0 and 1",
+          "2 and 3",
+          "3 and 4",
+          "1 and 2"
+        ],
+        "answer": 3,
+        "explanation": "As shown using the Pythagorean theorem on a unit square in the chapter, √2 is greater than 1 but less than 2.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Example 3"
+      },
+      {
+        "id": "p1_t5_C_077ffda2",
+        "question": "A reasonable estimate for √3 on the number line is which value?",
+        "options": [
+          "1.7",
+          "1.5",
+          "1.4",
+          "2.0"
+        ],
+        "answer": 0,
+        "explanation": "The chapter lists √3 as irrational and between 1 and 2, with 1.7² = 2.89 close to 3.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_C_1ec0f679",
+        "question": "Which estimate is closest to √5?",
+        "options": [
+          "2.2",
+          "2.1",
+          "2.0",
+          "2.5"
+        ],
+        "answer": 0,
+        "explanation": "√5 is shown irrational in the chapter; 2.2² = 4.84 is nearest to 5 among the choices.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_C_e6404c19",
+        "question": "Estimate √7: it lies between which pair?",
+        "options": [
+          "2 and 3",
+          "3 and 4",
+          "1 and 2",
+          "4 and 5"
+        ],
+        "answer": 0,
+        "explanation": "The chapter states √7 is irrational; since 2² = 4 and 3² = 9, √7 lies between 2 and 3.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_C_87f279df",
+        "question": "Estimate √2 between which two numbers on the number line?",
+        "options": [
+          "1 and 1.5",
+          "0.5 and 1",
+          "1.5 and 2",
+          "2 and 2.5"
+        ],
+        "answer": 0,
+        "explanation": "√2 is irrational and lies in a gap, between 1 and 2 as described for numbers not yet picked up.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section on gaps"
+      },
+      {
+        "id": "p1_t5_C_8f6d9463",
+        "question": "Between which two numbers does √2 lie on the number line?",
+        "options": [
+          "2 and 3",
+          "3 and 4",
+          "0 and 1",
+          "1 and 2"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states there are gaps between rationals such as 1 and 2 filled by irrationals like √2.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t5_C_0d80fa1a",
+        "question": "Estimate √3 on the number line between which pair of consecutive integers?",
+        "options": [
+          "1 and 2",
+          "2 and 3",
+          "3 and 4",
+          "0 and 1"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt describes infinitely many numbers in gaps; 1 squared is 1 and 2 squared is 4 so √3 lies between 1 and 2.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 Q3 style"
+      },
+      {
+        "id": "p1_t5_C_59010ae7",
+        "question": "Estimate √2 between which two consecutive integers.",
+        "options": [
+          "2 and 3",
+          "0 and 1",
+          "3 and 4",
+          "1 and 2"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt discusses numbers like √2 that lie in gaps on the number line between rationals.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t5_C_813770fe",
+        "question": "Estimate which value is closest to √2 using positions between 1 and 2.",
+        "options": [
+          "1.8",
+          "1.2",
+          "1.4",
+          "1.6"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt highlights gaps between 1 and 2 filled by non-rationals like √2 near 1.4.",
+        "topic": 5,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t5_C",
+        "category_label": "Irrational · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "D": [
+      {
+        "id": "p1_t5_D_89f06e9a",
+        "question": "√3 lies on the number line…",
+        "options": [
+          "Between 3 and 4",
+          "Between 4 and 5",
+          "Between 2 and 3",
+          "Exactly 4"
+        ],
+        "answer": 0,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_D_db7529d1",
+        "question": "√6 lies on the number line…",
+        "options": [
+          "Between 4 and 5",
+          "Between 2 and 3",
+          "Exactly 4",
+          "Between 3 and 4"
+        ],
+        "answer": 3,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_D_e2399c4e",
+        "question": "√10 lies on the number line…",
+        "options": [
+          "Between 3 and 4",
+          "Between 2 and 3",
+          "Between 4 and 5",
+          "Exactly 4"
+        ],
+        "answer": 0,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_D_11d92f2f",
+        "question": "√11 lies on the number line…",
+        "options": [
+          "Exactly 4",
+          "Between 4 and 5",
+          "Between 3 and 4",
+          "Between 2 and 3"
+        ],
+        "answer": 2,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_D_17402f9a",
+        "question": "What is √2 × √2?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "Irrational"
+        ],
+        "answer": 0,
+        "explanation": "√2 is irrational as shown in the chapter, but √2 × √2 equals 2 which is rational.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_D_0401b3ae",
+        "question": "Simplify: √2 + (−√2) = ?",
+        "options": [
+          "2√2",
+          "Irrational",
+          "1",
+          "0"
+        ],
+        "answer": 3,
+        "explanation": "The chapter defines irrationals like √2; adding its negative yields the rational number 0.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_D_18730588",
+        "question": "What is  √4  × √9 ?",
+        "options": [
+          "6",
+          "Irrational",
+          "7",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "√4 = 2 and √9 = 3 are both rational per the chapter remark on positive roots, so their product is 6.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Remark in Section 1.2"
+      },
+      {
+        "id": "p1_t5_D_0a8cf675",
+        "question": "Is the number √2 + √3 rational or irrational?",
+        "options": [
+          "Integer",
+          "0",
+          "Rational",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "Both √2 and √3 are listed as irrationals in the chapter; their sum cannot be written as p/q.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 examples"
+      },
+      {
+        "id": "p1_t5_D_3edd43bc",
+        "question": "What is √2 × √2?",
+        "options": [
+          "2",
+          "4",
+          "√2",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "By definition in the chapter, √ denotes the positive square root, so √2 × √2 equals 2.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Remark after irrational examples"
+      },
+      {
+        "id": "p1_t5_D_08c3bd13",
+        "question": "Simplify: √2 + √2",
+        "options": [
+          "√4",
+          "2√2",
+          "1/2",
+          "4√2"
+        ],
+        "answer": 1,
+        "explanation": "Adding identical irrationals like √2 + √2 gives 2√2, which cannot be written as p/q.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Definition of irrational numbers"
+      },
+      {
+        "id": "p1_t5_D_acaac04e",
+        "question": "What is the value of (√2)²?",
+        "options": [
+          "3",
+          "4",
+          "2",
+          "√2"
+        ],
+        "answer": 2,
+        "explanation": "Squaring the irrational √2 yields the rational number 2, consistent with its definition as positive square root.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Remark on square root symbol"
+      },
+      {
+        "id": "p1_t5_D_ec4ad760",
+        "question": "Is √2 × √3 an irrational number?",
+        "options": [
+          "Integer",
+          "Irrational",
+          "Rational",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "The product of two distinct irrationals like √2 and √3 cannot be expressed as p/q and remains irrational per the chapter definition.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Irrational numbers section"
+      },
+      {
+        "id": "p1_t5_D_98a5ea1c",
+        "question": "Simplify: √12 + √3 = ?",
+        "options": [
+          "2√3",
+          "3√4",
+          "3√3",
+          "√15"
+        ],
+        "answer": 2,
+        "explanation": "Operations with irrationals from chapter ideas show √12 = 2√3, so adding √3 gives 3√3, but adjusted here to match common simplification.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.3 style"
+      },
+      {
+        "id": "p1_t5_D_731dc485",
+        "question": "What is stated about rational numbers between 3/5 and 4/5?",
+        "options": [
+          "Only one",
+          "Infinitely many",
+          "Exactly five",
+          "None exist"
+        ],
+        "answer": 1,
+        "explanation": "In general the excerpt affirms infinitely many rationals exist between any two rationals.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Introduction"
+      },
+      {
+        "id": "p1_t5_D_114cff84",
+        "question": "If you add √2 and √2 what do you get?",
+        "options": [
+          "4",
+          "2√2",
+          "2",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt shows gaps on the number line filled by irrationals that remain irrational under addition.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t5_D_8d7b428f",
+        "question": "What is √2 + √2?",
+        "options": [
+          "2√2",
+          "2",
+          "√2",
+          "1/2"
+        ],
+        "answer": 0,
+        "explanation": "Operations on irrationals like adding like terms follow from distinguishing them from rationals in the excerpt.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 discussion"
+      },
+      {
+        "id": "p1_t5_D_2d0fdcc2",
+        "question": "What result comes from √3 + √3 on the number line?",
+        "options": [
+          "√6",
+          "2√3",
+          "3",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "Adding identical irrationals gives 2√3 which is another irrational filling a gap between rationals.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t5_D_f080525f",
+        "question": "What is the result of adding √2 and 3√2?",
+        "options": [
+          "3√2",
+          "5√2",
+          "4√2",
+          "2√2"
+        ],
+        "answer": 2,
+        "explanation": "Irrational numbers like √2 can be added by combining like terms while keeping the irrational part.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t5_D_d03d4f0d",
+        "question": "What is √2 × √8?",
+        "options": [
+          "5",
+          "√4",
+          "2√2",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "Multiplying irrationals from gaps yields √16 = 4, showing distinction from rationals in the text.",
+        "topic": 5,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t5_D",
+        "category_label": "Irrational · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "E": [
+      {
+        "id": "p1_t5_E_1c92174f",
+        "question": "√3 lies on the number line…",
+        "options": [
+          "Exactly 4",
+          "Between 3 and 4",
+          "Between 4 and 5",
+          "Between 2 and 3"
+        ],
+        "answer": 1,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_E_2fa1c2af",
+        "question": "√5 lies on the number line…",
+        "options": [
+          "Between 4 and 5",
+          "Between 3 and 4",
+          "Exactly 4",
+          "Between 2 and 3"
+        ],
+        "answer": 1,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_E_0386e394",
+        "question": "√8 lies on the number line…",
+        "options": [
+          "Exactly 4",
+          "Between 2 and 3",
+          "Between 4 and 5",
+          "Between 3 and 4"
+        ],
+        "answer": 3,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_E_7ec00a73",
+        "question": "√4 lies on the number line…",
+        "options": [
+          "Between 2 and 3",
+          "Between 3 and 4",
+          "Exactly 4",
+          "Between 4 and 5"
+        ],
+        "answer": 1,
+        "explanation": "√9=3 and √16=4 bracket most values.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t5_E_d32c15b9",
+        "question": "Which decimal expansion shows the pattern of an irrational number like 0.10110111011110...?",
+        "options": [
+          "0.333...",
+          "0.10110111011110...",
+          "0.75",
+          "1.414"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt gives 0.10110111011110... as an example of an irrational number whose decimal does not repeat in a fixed pattern.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_E_5387558c",
+        "question": "The decimal for π is non-terminating and non-repeating. Which option matches this pattern for an irrational?",
+        "options": [
+          "22/7",
+          "3.14",
+          "3.1415926535...",
+          "3.0"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt states π is irrational and its decimal continues without a repeating block, unlike rational numbers.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_E_b4bba41e",
+        "question": "Which number has a decimal expansion that never repeats or terminates, matching the excerpt's irrational examples?",
+        "options": [
+          "2/3",
+          "√2",
+          "1/2",
+          "0.5"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt lists √2 as irrational; its decimal is non-terminating and non-repeating, unlike fractions p/q.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_E_1cdfb916",
+        "question": "Identify the decimal that continues infinitely without a repeating block, as shown for irrationals in the excerpt.",
+        "options": [
+          "0.10110111011110...",
+          "1/4 = 0.25",
+          "0.25",
+          "0.142857 repeating"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt explicitly uses 0.10110111011110... to illustrate an irrational decimal that does not repeat.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_E_85ad63f1",
+        "question": "Which decimal is an example of an irrational number?",
+        "options": [
+          "1.5",
+          "0.10110111011110...",
+          "0.333...",
+          "0.25"
+        ],
+        "answer": 1,
+        "explanation": "The chapter shows 0.10110111011110... as irrational because its decimal does not repeat or terminate.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_E_b17a4d7d",
+        "question": "A decimal that terminates after 3 places belongs to which set?",
+        "options": [
+          "Neither rational nor irrational",
+          "Whole numbers only",
+          "Rational",
+          "Irrational only"
+        ],
+        "answer": 2,
+        "explanation": "Terminating decimals can be written as p/q so they are rational, matching the chapter definition.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_E_97c125e9",
+        "question": "The decimal 0.10110111011110... has what pattern?",
+        "options": [
+          "Non-repeating non-terminating",
+          "Terminating",
+          "Repeating blocks of fixed length",
+          "Finite digits"
+        ],
+        "answer": 0,
+        "explanation": "The given example increases the number of 1s between 0s, so it neither terminates nor repeats, making it irrational.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t5_E_7c64e3f3",
+        "question": "Which expansion shows a rational number?",
+        "options": [
+          "3.1415926535...",
+          "0.142857142857...",
+          "0.10110111011110...",
+          "√2 decimal"
+        ],
+        "answer": 1,
+        "explanation": "Repeating decimals like 0.142857142857... equal fractions p/q and are therefore rational.",
+        "topic": 5,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t5_E",
+        "category_label": "Irrational · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 1,
+    "topic_id": 5,
+    "chapter_num": 1,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_01/top_level.txt"
+  }
+}

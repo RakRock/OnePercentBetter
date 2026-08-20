@@ -9,7 +9,13 @@ import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-from practice_email.settings import EmailSettings
+from practice_email.settings import (
+    EmailSettings,
+    EmailConfigError,
+    assert_smtp_ready,
+    format_delivery_error,
+    validate_smtp_host,
+)
 
 _RETRIES = 3
 _RETRY_DELAY = 1.5
@@ -27,8 +33,11 @@ def build_message(settings: EmailSettings, subject: str, plain: str, html: str) 
 
 def send_smtp(settings: EmailSettings, subject: str, plain: str, html: str) -> None:
     """Send one report email. Raises on failure."""
-    if not settings.smtp_host or not settings.smtp_user or not settings.smtp_password:
-        raise RuntimeError("SMTP not configured")
+    assert_smtp_ready(settings)
+    host_ok, host_msg = validate_smtp_host(settings.smtp_host)
+    if not host_ok:
+        raise EmailConfigError(host_msg)
+
     msg = build_message(settings, subject, plain, html)
     host = settings.smtp_host
     port = settings.smtp_port
@@ -62,4 +71,4 @@ def send_smtp(settings: EmailSettings, subject: str, plain: str, html: str) -> N
             last_error = exc
 
     assert last_error is not None
-    raise last_error
+    raise RuntimeError(format_delivery_error(last_error, settings)) from last_error

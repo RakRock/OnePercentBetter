@@ -1,0 +1,2128 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p1_t3_A_107a81a9",
+        "question": "Evaluate: 3^4",
+        "options": [
+          "12",
+          "81",
+          "84",
+          "7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_A_dfb4106c",
+        "question": "Evaluate: 2^2",
+        "options": [
+          "4",
+          "3",
+          "6",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_A_f77981f6",
+        "question": "Evaluate: 2^4",
+        "options": [
+          "18",
+          "6",
+          "8",
+          "16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_A_f37fbbee",
+        "question": "Evaluate: 5^2",
+        "options": [
+          "30",
+          "7",
+          "10",
+          "25"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_A_1cc84f05",
+        "question": "What is the value of (√2)²?",
+        "options": [
+          "4",
+          "3",
+          "Irrational",
+          "2"
+        ],
+        "answer": 3,
+        "explanation": "By definition of the positive square root, (√2)² equals 2, as recalled in the remark on square roots in section 1.2.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_A_496a2e9d",
+        "question": "What is the positive square root of 4?",
+        "options": [
+          "-2",
+          "1",
+          "2",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "The remark states we take the positive square root, so √4 = 2.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_A_d3da5f03",
+        "question": "Is √2 a rational number?",
+        "options": [
+          "Rational",
+          "Integer",
+          "Whole number",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "Pythagoreans proved √2 cannot be written as p/q with q ≠ 0, so it is irrational.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_A_991f0884",
+        "question": "What is the value of √9?",
+        "options": [
+          "9",
+          "3",
+          "-3",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "The positive square root of 9 is 3 as defined for the symbol √.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_A_c5b6bc04",
+        "question": "Which number is irrational: √4 or √3?",
+        "options": [
+          "Neither",
+          "Both",
+          "√4",
+          "√3"
+        ],
+        "answer": 3,
+        "explanation": "√4 = 2 is rational while Theodorus showed √3 is irrational.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_A_110413d0",
+        "question": "What is the positive square root of 4?",
+        "options": [
+          "1",
+          "2",
+          "-2",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "The remark states we assume √ denotes the positive square root, so √4 = 2.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_A_f7beebd0",
+        "question": "Which number from the examples is irrational?",
+        "options": [
+          "-12",
+          "√2",
+          "0",
+          "3/5"
+        ],
+        "answer": 1,
+        "explanation": "The text lists √2 as an irrational number that cannot be written as p/q.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 examples"
+      },
+      {
+        "id": "p1_t3_A_84337145",
+        "question": "What is √9 equal to, using the positive root definition?",
+        "options": [
+          "9",
+          "1",
+          "3",
+          "-3"
+        ],
+        "answer": 2,
+        "explanation": "By the same positive square root convention, √9 equals 3.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_A_e4757178",
+        "question": "Which of these is listed as irrational in the chapter?",
+        "options": [
+          "√3",
+          "5/7",
+          "-8",
+          "27"
+        ],
+        "answer": 0,
+        "explanation": "The text explicitly includes √3 among the irrational numbers.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 examples"
+      },
+      {
+        "id": "p1_t3_A_88682a36",
+        "question": "What is the value of 5^2 shown as a point on the number line?",
+        "options": [
+          "7",
+          "10",
+          "25",
+          "52"
+        ],
+        "answer": 2,
+        "explanation": "Positive integer powers produce rationals that can be located on the number line described in the excerpt.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t3_A",
+        "category_label": "Exponents · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "B": [
+      {
+        "id": "p1_t3_B_f06085bc",
+        "question": "Evaluate: 2^2",
+        "options": [
+          "4",
+          "5",
+          "3",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_B_4554a140",
+        "question": "Evaluate: 3^4",
+        "options": [
+          "81",
+          "84",
+          "12",
+          "7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_B_3a94d0a3",
+        "question": "Evaluate: 4^3",
+        "options": [
+          "64",
+          "68",
+          "12",
+          "7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_B_2241cebe",
+        "question": "Evaluate: 2^3",
+        "options": [
+          "10",
+          "5",
+          "6",
+          "8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_B_5a855c19",
+        "question": "Simplify: (√2)^{-2} = ?",
+        "options": [
+          "1/4",
+          "1/2",
+          "-2",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "By definition of negative exponents, (√2)^{-2} = 1/(√2)^2 = 1/2, using the fact from the chapter that (√2)^2 = 2.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 style"
+      },
+      {
+        "id": "p1_t3_B_9adefabc",
+        "question": "Simplify: (√3)^{-1} = ?",
+        "options": [
+          "-√3",
+          "3",
+          "1/√3",
+          "√3"
+        ],
+        "answer": 2,
+        "explanation": "A negative exponent means the reciprocal, so (√3)^{-1} = 1/√3, consistent with the chapter's treatment of √3 as irrational.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_B_77a383b2",
+        "question": "What is the value of 5 × (√5)^{-2}?",
+        "options": [
+          "1/5",
+          "1",
+          "√5",
+          "5"
+        ],
+        "answer": 1,
+        "explanation": "(√5)^{-2} = 1/5, so 5 × (1/5) = 1, building on the chapter examples of square roots like √5.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2"
+      },
+      {
+        "id": "p1_t3_B_810d984f",
+        "question": "Simplify: (√15)^{-2} = ?",
+        "options": [
+          "15",
+          "√15",
+          "1/√15",
+          "1/15"
+        ],
+        "answer": 3,
+        "explanation": "(√15)^{-2} = 1/(√15)^2 = 1/15, following the chapter's definition and examples of irrational square roots.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_B_5475f40a",
+        "question": "Which statement is true about √2?",
+        "options": [
+          "An integer",
+          "Rational",
+          "Equals 1.414 exactly",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states that √2 cannot be written as p/q where p and q are integers with q ≠ 0, making it irrational.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_B_3323396f",
+        "question": "Which number cannot be written in the form p/q where p and q are integers and q ≠ 0?",
+        "options": [
+          "√2",
+          "0",
+          "3/5",
+          "-4/7"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt defines irrational numbers as those that cannot be expressed as p/q, with √2 given as an example.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_B_bf98b165",
+        "question": "What is √4 equal to, using the positive square root as defined in the chapter?",
+        "options": [
+          "1/2",
+          "-2",
+          "4",
+          "2"
+        ],
+        "answer": 3,
+        "explanation": "The remark states that √4 = 2, taking the positive root.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 Remark"
+      },
+      {
+        "id": "p1_t3_B_dc9f0eb3",
+        "question": "Which of these is listed as an irrational number in the excerpt?",
+        "options": [
+          "√3",
+          "2/3",
+          "5/7",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt explicitly lists √3 among examples of irrational numbers like √2, √3, √5.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_B_e13dfc8c",
+        "question": "How many irrational numbers lie between any two rational numbers on the number line?",
+        "options": [
+          "Exactly one",
+          "Two",
+          "None",
+          "Infinitely many"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states there are infinitely many irrationals, with gaps between rationals also containing infinitely many such numbers.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_B_934cb93e",
+        "question": "According to the excerpt, what is the positive square root of 4?",
+        "options": [
+          "-2",
+          "2",
+          "1/2",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "The remark states that when using the symbol √ we assume the positive square root, so √4 = 2.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_B_b257a5ec",
+        "question": "Which number is listed as irrational in the excerpt?",
+        "options": [
+          "0",
+          "√2",
+          "2/3",
+          "-5"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt states √2 is irrational because it cannot be written as p/q with integers p, q and q ≠ 0.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_B_d89fa59b",
+        "question": "The excerpt notes both 2 and –2 are square roots of which number?",
+        "options": [
+          "2",
+          "9",
+          "√2",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "The remark recalls that both positive and negative roots satisfy the square, using 4 as the example.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_B_6c8ceb8a",
+        "question": "How many irrational numbers like √2, √3, √5 exist according to the excerpt?",
+        "options": [
+          "Infinitely many",
+          "None",
+          "Ten",
+          "Five"
+        ],
+        "answer": 0,
+        "explanation": "The text states there are infinitely many irrational numbers, listing several square roots as examples.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_B_d221fd21",
+        "question": "If a number has a negative exponent like 2^(-1), how is it expressed as a rational?",
+        "options": [
+          "2",
+          "3",
+          "1/2",
+          "-2"
+        ],
+        "answer": 2,
+        "explanation": "Chapter ideas on distinguishing rationals from other numbers on the line extend to writing numbers in p/q form including negative exponents.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q1 style"
+      },
+      {
+        "id": "p1_t3_B_f88804b0",
+        "question": "What is the value of 2^-3?",
+        "options": [
+          "1/-8",
+          "1/8",
+          "8",
+          "-8"
+        ],
+        "answer": 1,
+        "explanation": "Negative exponents follow laws for real numbers including irrationals introduced in the chapter gaps discussion.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 exponents section"
+      },
+      {
+        "id": "p1_t3_B_b2414b3a",
+        "question": "If a number is not in p/q form with integers p and q, what is it?",
+        "options": [
+          "Irrational",
+          "Whole number",
+          "Rational only",
+          "Always integer"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt asks how to distinguish the remaining numbers on the line from rationals, identifying them as irrationals.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 questions"
+      },
+      {
+        "id": "p1_t3_B_ab737d36",
+        "question": "Between 3/5 and 4/5, how many rational numbers exist according to the excerpt?",
+        "options": [
+          "None",
+          "Exactly three",
+          "Infinitely many",
+          "Exactly one"
+        ],
+        "answer": 2,
+        "explanation": "The chapter states there are infinitely many rationals between any two given rationals.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t3_B_b46969e5",
+        "question": "Simplify: 5 × (2/5)^-2",
+        "options": [
+          "4/25",
+          "2/25",
+          "125/4",
+          "25/2"
+        ],
+        "answer": 2,
+        "explanation": "Negative exponents convert to reciprocals and powers follow the rules introduced for number expressions.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t3_B_d5162ab5",
+        "question": "Evaluate: (1/2)^(-1) to place the result between 1 and 2.",
+        "options": [
+          "1",
+          "2",
+          "1/2",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "Negative exponent gives 2 which lies after the interval showing more numbers beyond rationals.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t3_B_747e3578",
+        "question": "Simplify 2^(-3) and relate to positions on the number line.",
+        "options": [
+          "1/8",
+          "-8",
+          "-1/8",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "Negative exponent gives 1/8, a rational fitting between 0 and 1 with infinitely many others nearby.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t3_B",
+        "category_label": "Exponents · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "C": [
+      {
+        "id": "p1_t3_C_b8677f30",
+        "question": "Evaluate: 4^{-2}",
+        "options": [
+          "1/2",
+          "4",
+          "1/4",
+          "1/16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_C_73e9fdf9",
+        "question": "Evaluate: 5^{-2}",
+        "options": [
+          "1/5",
+          "5",
+          "2/5",
+          "1/25"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_C_f54daf7c",
+        "question": "Evaluate: 3^{-2}",
+        "options": [
+          "2/3",
+          "1/3",
+          "3",
+          "1/9"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_C_b402b13a",
+        "question": "Evaluate: 2^{-2}",
+        "options": [
+          "2",
+          "1",
+          "1/4",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_C_e4549f72",
+        "question": "What does the chapter remark say √4 equals?",
+        "options": [
+          "2",
+          "Both 2 and -2",
+          "-2",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "The remark states that √4 = 2, taking the positive square root.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_C_16c93129",
+        "question": "Which number is listed as irrational in the chapter?",
+        "options": [
+          "-8",
+          "0",
+          "√2",
+          "3/5"
+        ],
+        "answer": 2,
+        "explanation": "The chapter gives √2, √3 and √15 as examples of irrationals that cannot be written as p/q.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_C_46c17d18",
+        "question": "According to the definition in the excerpt, a number s is irrational if it cannot be written in what form?",
+        "options": [
+          "p × q",
+          "p/q with q ≠ 0",
+          "p + q",
+          "p - q"
+        ],
+        "answer": 1,
+        "explanation": "The formal definition states an irrational cannot be expressed as p/q where p, q are integers and q ≠ 0.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_C_4405ebb1",
+        "question": "How many irrational numbers does the chapter say exist?",
+        "options": [
+          "Only √2",
+          "Exactly 10",
+          "Infinitely many",
+          "None"
+        ],
+        "answer": 2,
+        "explanation": "The text states there are infinitely many irrational numbers, just as there are infinitely many rationals.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_C_b4d3dd8d",
+        "question": "What type of number is √2?",
+        "options": [
+          "Natural number",
+          "Irrational",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt states that the Pythagoreans proved √2 is irrational as it cannot be written as p/q.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_C_91b3e333",
+        "question": "According to the remark, what is √4?",
+        "options": [
+          "4",
+          "Both 2 and -2",
+          "2",
+          "-2"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt notes that √ denotes the positive square root, so √4 = 2 even though -2 is also a square root.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 Remark"
+      },
+      {
+        "id": "p1_t3_C_d722e5e3",
+        "question": "Which of these is listed as an irrational number in the excerpt?",
+        "options": [
+          "0",
+          "17/1",
+          "3/5",
+          "√3"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt explicitly lists √3 among the irrational numbers such as √2, √3, √5.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_C_61307ed5",
+        "question": "How many irrational numbers lie between any two real numbers?",
+        "options": [
+          "None",
+          "Infinitely many",
+          "Exactly one",
+          "Only rationals"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt explains there are infinitely many irrationals, just as there are infinitely many rationals between any two numbers.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_C_dbcbdeb8",
+        "question": "What is the value of 4^{1/2}?",
+        "options": [
+          "4",
+          "2",
+          "1",
+          "-2"
+        ],
+        "answer": 1,
+        "explanation": "The remark states the positive square root of 4 is 2, and 4^{1/2} denotes this positive root.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_C_f04c7a58",
+        "question": "What is √9 expressed using a fractional exponent?",
+        "options": [
+          "9^{1/3}",
+          "9^{2}",
+          "9^{1/2}",
+          "9^{3/2}"
+        ],
+        "answer": 2,
+        "explanation": "Square root is the 1/2 power, matching the definition of √ as positive root in the chapter.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_C_f3ac7209",
+        "question": "Evaluate 16^{1/2}.",
+        "options": [
+          "-4",
+          "2",
+          "4",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "Positive square root of 16 is 4, following the chapter's convention for √ symbol.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_C_9a471483",
+        "question": "What is the positive square root of 25 written as exponent?",
+        "options": [
+          "25^{1/3}",
+          "25^{1/2}",
+          "25^{2/1}",
+          "25^{3/2}"
+        ],
+        "answer": 1,
+        "explanation": "√25 equals 5 and is expressed as the fractional exponent 1/2 per the root definition.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_C_59e9fae8",
+        "question": "What does (9)^(1/2) represent on the number line?",
+        "options": [
+          "Position between 1 and 2",
+          "Position of 3",
+          "Position of 1/2",
+          "Position of 9"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt's number line gaps include roots as points that fill spaces beyond rationals.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t3_C_f368d59d",
+        "question": "What does 8^(1/3) equal?",
+        "options": [
+          "3",
+          "4",
+          "2",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "Fractional exponents introduce roots as irrationals or reals filling number line gaps per the excerpt.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 real numbers"
+      },
+      {
+        "id": "p1_t3_C_94913f2d",
+        "question": "How many rational numbers lie between 1 and 2?",
+        "options": [
+          "Infinitely many",
+          "None",
+          "Two",
+          "One"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt states there are infinitely many rational numbers between any two given rational numbers.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t3_C_0c3d6424",
+        "question": "What is (√2)^2 equal to?",
+        "options": [
+          "2",
+          "1/2",
+          "√2",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt introduces numbers filling gaps on the number line beyond rationals, and (√2)^2 simplifies using root properties in the chapter.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t3_C_b654cf97",
+        "question": "What does (√4)^(1/2) simplify to using root properties on the number line?",
+        "options": [
+          "√2",
+          "4",
+          "2",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "The number line includes roots; √4 is 2 so raising to 1/2 returns 2.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "NUMBER SYSTEMS 5"
+      },
+      {
+        "id": "p1_t3_C_461ba056",
+        "question": "How does the excerpt suggest we begin to recognise the extra numbers in the gaps using powers?",
+        "options": [
+          "As numbers like (√2)^2 that are not rational",
+          "As whole numbers",
+          "As terminating decimals",
+          "As fractions only"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt points to numbers left after rationals, recognised by their non-rational nature such as those satisfying x^2 = 2.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t3_C",
+        "category_label": "Exponents · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "D": [
+      {
+        "id": "p1_t3_D_fa94bb73",
+        "question": "Evaluate: 5^{-2}",
+        "options": [
+          "5",
+          "1/5",
+          "2/5",
+          "1/25"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_D_a175ea18",
+        "question": "Evaluate: 4^{-2}",
+        "options": [
+          "4",
+          "1/4",
+          "1/16",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_D_84e5747e",
+        "question": "Evaluate: 2^{-2}",
+        "options": [
+          "2",
+          "1/4",
+          "1",
+          "1/2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_D_d7945ead",
+        "question": "Evaluate: 3^{-2}",
+        "options": [
+          "1/3",
+          "1/9",
+          "3",
+          "2/3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_D_bf578604",
+        "question": "What is the positive square root of 4?",
+        "options": [
+          "-2",
+          "4",
+          "1",
+          "2"
+        ],
+        "answer": 3,
+        "explanation": "The remark states that √4 = 2, the positive square root.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_D_9baa4360",
+        "question": "Which statement is true about √2?",
+        "options": [
+          "An integer",
+          "Equals 1.414 exactly",
+          "Rational",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "The chapter states that √2 is irrational and cannot be written as p/q.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_D_31ee638a",
+        "question": "Which of these is irrational?",
+        "options": [
+          "√3",
+          "√16",
+          "√4",
+          "√9"
+        ],
+        "answer": 0,
+        "explanation": "The chapter lists √3 as irrational while √4, √9 and √16 are perfect squares equal to integers.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_D_2744a4da",
+        "question": "Look at the diagram. Square OABC has sides of length 1. What is the length of diagonal OB?",
+        "options": [
+          "√2",
+          "2",
+          "√3",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "The example shows OB = √(1² + 1²) = √2 on the number line.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Example 3",
+        "diagram": {
+          "type": "unit_square",
+          "target": 2
+        }
+      },
+      {
+        "id": "p1_t3_D_be9e3d93",
+        "question": "What is the positive square root of 4?",
+        "options": [
+          "-2",
+          "1",
+          "2",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "The remark states that the symbol √ denotes the positive square root, so √4 = 2.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_D_9c9b69e2",
+        "question": "√2 cannot be written in the form p/q where p and q are integers and q ≠ 0, so √2 is?",
+        "options": [
+          "Irrational",
+          "Rational",
+          "Whole number",
+          "Integer"
+        ],
+        "answer": 0,
+        "explanation": "The chapter defines an irrational number as one that cannot be expressed as p/q.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 definition"
+      },
+      {
+        "id": "p1_t3_D_b0780431",
+        "question": "A square has sides of length 1; its diagonal length by Pythagoras theorem is?",
+        "options": [
+          "√3",
+          "1",
+          "√2",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "The example shows OB = √(1² + 1²) = √2.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Example 3"
+      },
+      {
+        "id": "p1_t3_D_81b83c51",
+        "question": "What is the positive square root of 9?",
+        "options": [
+          "1",
+          "3",
+          "-3",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "Following the chapter remark on positive square roots, √9 = 3.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_D_efd4cd1f",
+        "question": "What is the positive square root of 4 according to the symbol convention?",
+        "options": [
+          "2",
+          "1/2",
+          "-2",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "The chapter remark states that √ denotes the positive square root, so √4 = 2.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 remark"
+      },
+      {
+        "id": "p1_t3_D_fc20899f",
+        "question": "Which of these square roots is irrational?",
+        "options": [
+          "√4",
+          "√2",
+          "√9",
+          "√16"
+        ],
+        "answer": 1,
+        "explanation": "The chapter states √2 is irrational as it cannot be written as p/q with integers p, q ≠ 0.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_D_fab057e3",
+        "question": "Look at the diagram. Square OABC has sides of length 1. What is the length of diagonal OB?",
+        "options": [
+          "√2",
+          "1",
+          "2",
+          "√3"
+        ],
+        "answer": 0,
+        "explanation": "Example 3 shows OB = √(1² + 1²) = √2, the diagonal of the unit square.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Example 3",
+        "diagram": {
+          "type": "unit_square",
+          "target": 2
+        }
+      },
+      {
+        "id": "p1_t3_D_b55672d5",
+        "question": "Which number is a perfect square whose positive square root is an integer?",
+        "options": [
+          "3",
+          "5",
+          "4",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "4 is 2² so √4 = 2, an integer, unlike the irrationals √2, √3, √5 listed in the chapter.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_D_e5c44be8",
+        "question": "What does the excerpt say about numbers on the number line besides rationals?",
+        "options": [
+          "Only integers",
+          "No numbers left",
+          "Finite count",
+          "Infinitely many gaps with more numbers"
+        ],
+        "answer": 3,
+        "explanation": "It notes infinitely many numbers left in gaps between rationals on the number line.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Introduction"
+      },
+      {
+        "id": "p1_t3_D_820025f2",
+        "question": "Is zero a rational number that can be written as p/q?",
+        "options": [
+          "No, it is irrational",
+          "Only as a negative",
+          "Yes, as 0/1",
+          "No, because q cannot be zero"
+        ],
+        "answer": 2,
+        "explanation": "Zero fits the rational form p/q as shown in Exercise 1.1 style from the chapter.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q1"
+      },
+      {
+        "id": "p1_t3_D_4b9d37dc",
+        "question": "Which of these is a perfect square: 2, 3, 4, 5?",
+        "options": [
+          "3",
+          "4",
+          "2",
+          "5"
+        ],
+        "answer": 1,
+        "explanation": "Square roots of perfect squares like 4 are rational and appear on the number line without gaps.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t3_D_b03b508e",
+        "question": "Which number is a perfect square with root exactly 3 on the number line?",
+        "options": [
+          "15",
+          "9",
+          "12",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt highlights gaps filled by roots; 3 squared equals 9, placing it exactly at an integer point.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t3_D_5418043d",
+        "question": "Which of these is a perfect square?",
+        "options": [
+          "3",
+          "2",
+          "4",
+          "5"
+        ],
+        "answer": 2,
+        "explanation": "The chapter shows some numbers like 4 are rational squares while others like √2 fill the gaps as irrationals.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t3_D_acf4d6eb",
+        "question": "Which of these is a perfect square that can be exactly marked without leaving a gap on the number line?",
+        "options": [
+          "4",
+          "3",
+          "5",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt implies whole numbers and their squares fit exactly, while non-perfect squares leave gaps as irrationals.",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t3_D",
+        "category_label": "Exponents · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "E": [
+      {
+        "id": "p1_t3_E_222a143d",
+        "question": "Evaluate: 2^{-2}",
+        "options": [
+          "1",
+          "2",
+          "1/4",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_E_d61873ae",
+        "question": "Evaluate: 3^{-2}",
+        "options": [
+          "2/3",
+          "3",
+          "1/9",
+          "1/3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_E_9d71b642",
+        "question": "Evaluate: 4^{-2}",
+        "options": [
+          "1/4",
+          "1/2",
+          "4",
+          "1/16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_E_8fceb95f",
+        "question": "Evaluate: 5^{-2}",
+        "options": [
+          "2/5",
+          "5",
+          "1/5",
+          "1/25"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t3_E_18f742be",
+        "question": "What is √2 × √2?",
+        "options": [
+          "2",
+          "4",
+          "Irrational",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "By definition in the chapter, √ denotes the positive square root, so √2 × √2 equals 2.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 Remark"
+      },
+      {
+        "id": "p1_t3_E_0a504744",
+        "question": "Simplify (√3)^2.",
+        "options": [
+          "3",
+          "Irrational",
+          "9",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "The chapter states √3 is the positive square root of 3, so squaring it yields 3.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_E_86ebdd79",
+        "question": "What is the value of √2 raised to the power 2?",
+        "options": [
+          "Irrational",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "From the definition of square root in the excerpt, (√2)^2 equals the number under the root, which is 2.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_E_e3270261",
+        "question": "Evaluate √4 using the positive square root rule from the chapter.",
+        "options": [
+          "4",
+          "-2",
+          "2",
+          "Irrational"
+        ],
+        "answer": 2,
+        "explanation": "The remark specifies that √ assumes the positive square root, so √4 = 2.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 Remark"
+      },
+      {
+        "id": "p1_t3_E_90b84fd2",
+        "question": "What is √2 × √2?",
+        "options": [
+          "4",
+          "1",
+          "2",
+          "3"
+        ],
+        "answer": 2,
+        "explanation": "By definition of square root in section 1.2, √2 multiplied by itself equals 2.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_E_643d971a",
+        "question": "What is √3 × √3?",
+        "options": [
+          "6",
+          "3",
+          "4",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "Square root of a number multiplied by itself returns the number, as shown for √2 in the excerpt.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_E_b69133c3",
+        "question": "√2 × √3 is which of these?",
+        "options": [
+          "Irrational",
+          "Natural number",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 0,
+        "explanation": "Product of two distinct irrationals like those listed in section 1.2 remains irrational.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_E_c20d0511",
+        "question": "What is √2 × √8 simplified using root laws?",
+        "options": [
+          "4",
+          "√10",
+          "5",
+          "2√2"
+        ],
+        "answer": 0,
+        "explanation": "Combine as √(2×8) = √16 = 4, extending the square root examples from the chapter.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_E_b21993ff",
+        "question": "Evaluate: √2 × √2",
+        "options": [
+          "3",
+          "2",
+          "√2",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "√a × √a = a follows from the definition of the positive square root shown for √2 in the chapter.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 example"
+      },
+      {
+        "id": "p1_t3_E_c0974fe2",
+        "question": "Simplify: √3 × √3",
+        "options": [
+          "4",
+          "9",
+          "√3",
+          "3"
+        ],
+        "answer": 3,
+        "explanation": "The chapter lists √3 as irrational but its product with itself yields the integer 3.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_E_6b66a565",
+        "question": "What is (√2)^2?",
+        "options": [
+          "√2",
+          "Irrational",
+          "2",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "Squaring the irrational √2 recovers the rational number 2 as shown by Pythagoras construction in the text.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Example 3"
+      },
+      {
+        "id": "p1_t3_E_e09ed6b0",
+        "question": "Evaluate: √5 × √5",
+        "options": [
+          "6",
+          "√5",
+          "5",
+          "25"
+        ],
+        "answer": 2,
+        "explanation": "The chapter states √5 is irrational yet multiplying identical roots gives the integer 5.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t3_E_c2bb19d2",
+        "question": "Simplify: (√3)^2 × (√3)^0 = ?",
+        "options": [
+          "3",
+          "0",
+          "1",
+          "√3"
+        ],
+        "answer": 0,
+        "explanation": "Using exponent rules on irrationals fills gaps on the number line as noted in the excerpt.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Intro to irrationals"
+      },
+      {
+        "id": "p1_t3_E_ce94a5cb",
+        "question": "Simplify using exponent laws: (3^2)^(-1) × 3^3 = ?",
+        "options": [
+          "3^4",
+          "3^0",
+          "3^-1",
+          "3^1"
+        ],
+        "answer": 3,
+        "explanation": "Combining laws for real numbers extends the chapter's real number system including irrationals.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 laws of exponents"
+      },
+      {
+        "id": "p1_t3_E_794deac1",
+        "question": "Between any two gaps on the number line, how many numbers lie?",
+        "options": [
+          "One",
+          "Two",
+          "Infinitely many",
+          "Finite count"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt says the amazing thing is infinitely many numbers lie between any two of these gaps too.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t3_E_3b1ff6ab",
+        "question": "Simplify: (√5)^2 × (√5)^3 using exponent rules.",
+        "options": [
+          "(√5)^5",
+          "5√5",
+          "5^2",
+          "5^5"
+        ],
+        "answer": 0,
+        "explanation": "Same base (√5): add exponents 2 + 3 = 5, so (√5)^5. This equals 5^(5/2) since (√5)^5 = (5^(1/2))^5.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t3_E_8a502d9f",
+        "question": "Simplify: (3^2)^(1/2) = ?",
+        "options": [
+          "1/3",
+          "√3",
+          "3",
+          "9"
+        ],
+        "answer": 2,
+        "explanation": "Combining exponent laws with roots connects to the chapter's extension from rationals to real numbers.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Chapter 1 laws"
+      },
+      {
+        "id": "p1_t3_E_0ef33f5d",
+        "question": "Simplify: (√2)^3 × (√2)^-1.",
+        "options": [
+          "1/2",
+          "4",
+          "2",
+          "√2"
+        ],
+        "answer": 2,
+        "explanation": "Laws of exponents apply to roots mentioned as irrationals filling gaps in the excerpt.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t3_E_37b94353",
+        "question": "What remains in the gaps on the number line after placing all rationals?",
+        "options": [
+          "No numbers",
+          "Only integers",
+          "Only zero",
+          "Infinitely many irrationals"
+        ],
+        "answer": 3,
+        "explanation": "The text notes gaps between rationals contain infinitely many more numbers, later identified as irrationals.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t3_E",
+        "category_label": "Exponents · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 1,
+    "topic_id": 3,
+    "chapter_num": 1,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_01/top_level.txt"
+  }
+}

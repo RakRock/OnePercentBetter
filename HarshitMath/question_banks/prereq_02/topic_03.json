@@ -1,0 +1,420 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p2_t3_A_11718e07",
+        "question": "What is the common factor of x² - 2x?",
+        "options": [
+          "1",
+          "2",
+          "x",
+          "x-2"
+        ],
+        "answer": 2,
+        "explanation": "From Example 5 in the chapter, x² - 2x can be factored by taking out the common term x.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 style"
+      },
+      {
+        "id": "p2_t3_A_0f367d6b",
+        "question": "Factor out the common factor from 2x + 1.",
+        "options": [
+          "2",
+          "2x + 1",
+          "1",
+          "x"
+        ],
+        "answer": 1,
+        "explanation": "The terms 2x and 1 have no common factor other than 1, as shown when solving 2x + 1 = 0 in Example 4.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 style"
+      },
+      {
+        "id": "p2_t3_A_788c330e",
+        "question": "What common factor can be taken from 5x³ - 2x² + 3x - 2?",
+        "options": [
+          "5",
+          "x",
+          "x²",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "The coefficients 5, -2, 3, -2 share no common factor other than 1, matching the polynomial in section 2.3.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3"
+      },
+      {
+        "id": "p2_t3_A_a67272a4",
+        "question": "Identify the common factor in x - 1.",
+        "options": [
+          "x-1",
+          "-1",
+          "1",
+          "x"
+        ],
+        "answer": 0,
+        "explanation": "The linear polynomial x - 1 has no common numerical factor other than 1, as its zero is found by solving x - 1 = 0.",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t3_A",
+        "category_label": "Factor · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3"
+      }
+    ],
+    "B": [
+      {
+        "id": "p2_t3_B_a57333b0",
+        "question": "Find a zero of the polynomial p(x) = 2x + 1.",
+        "options": [
+          "1/2",
+          "-2",
+          "2",
+          "-1/2"
+        ],
+        "answer": 3,
+        "explanation": "Set p(x) = 0 and solve 2x + 1 = 0 to get x = -1/2, as shown for linear polynomials in the chapter.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 4"
+      },
+      {
+        "id": "p2_t3_B_6fd2c07d",
+        "question": "What is p(1) for p(x) = 5x^3 – 2x^2 + 3x – 2?",
+        "options": [
+          "3",
+          "4",
+          "0",
+          "5"
+        ],
+        "answer": 1,
+        "explanation": "Substitute x = 1 to obtain 5(1)^3 – 2(1)^2 + 3(1) – 2 = 4, matching the evaluation method in the chapter.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3"
+      },
+      {
+        "id": "p2_t3_B_fdce5d55",
+        "question": "Which value is a zero of p(x) = x^2 – 2x?",
+        "options": [
+          "2",
+          "3",
+          "1",
+          "-1"
+        ],
+        "answer": 0,
+        "explanation": "p(2) = 4 – 4 = 0, confirming 2 is a zero as verified in the chapter examples.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 5"
+      },
+      {
+        "id": "p2_t3_B_95e613d8",
+        "question": "How many zeroes does the linear polynomial ax + b (a ≠ 0) have?",
+        "options": [
+          "3",
+          "1",
+          "0",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "A linear polynomial has exactly one zero obtained by solving ax + b = 0, as stated in the chapter.",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t3_B",
+        "category_label": "Factor · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3"
+      }
+    ],
+    "C": [
+      {
+        "id": "p2_t3_C_986abc37",
+        "question": "What is the degree of the zero polynomial?",
+        "options": [
+          "0",
+          "Infinite",
+          "1",
+          "Not defined"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states that the degree of the zero polynomial is not defined.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Chapter 2 intro"
+      },
+      {
+        "id": "p2_t3_C_28a70885",
+        "question": "Find p(1) for p(x) = 5x³ – 2x² + 3x – 2.",
+        "options": [
+          "4",
+          "5",
+          "0",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "Substituting x=1 gives 5(1)³ – 2(1)² + 3(1) – 2 = 5 – 2 + 3 – 2 = 4, as shown in the example.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3"
+      },
+      {
+        "id": "p2_t3_C_49dbf0f1",
+        "question": "Which number is a zero of the polynomial x + 2?",
+        "options": [
+          "2",
+          "–2",
+          "1",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "p(–2) = –2 + 2 = 0, so –2 is a zero while p(2) = 4 ≠ 0.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 3"
+      },
+      {
+        "id": "p2_t3_C_2cf7546e",
+        "question": "How many zeroes does a linear polynomial have?",
+        "options": [
+          "Two",
+          "More than two",
+          "None",
+          "One and only one"
+        ],
+        "answer": 3,
+        "explanation": "A linear polynomial ax + b (a ≠ 0) has exactly one zero given by x = –b/a.",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t3_C",
+        "category_label": "Factor · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3"
+      }
+    ],
+    "D": [
+      {
+        "id": "p2_t3_D_6d7d9706",
+        "question": "Factor: x² - 1",
+        "options": [
+          "(x+1)²",
+          "x(x-1)",
+          "(x-1)(x+1)",
+          "(x-1)²"
+        ],
+        "answer": 2,
+        "explanation": "x² - 1 uses difference of squares as (x-1)(x+1), matching the form in Exercise 2.2 Q4(iv).",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 Q4"
+      },
+      {
+        "id": "p2_t3_D_5966c119",
+        "question": "Factor: x² - 4",
+        "options": [
+          "x(x-4)",
+          "(x-2)(x+2)",
+          "(x+2)²",
+          "(x-2)²"
+        ],
+        "answer": 1,
+        "explanation": "x² - 4 factors as difference of squares (x-2)(x+2).",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 style"
+      },
+      {
+        "id": "p2_t3_D_006dfbaf",
+        "question": "Factor: y² - 9",
+        "options": [
+          "y(y-9)",
+          "(y-3)(y+3)",
+          "(y-3)²",
+          "(y+3)²"
+        ],
+        "answer": 1,
+        "explanation": "y² - 9 factors using difference of squares as (y-3)(y+3).",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 style"
+      },
+      {
+        "id": "p2_t3_D_949b65d6",
+        "question": "Factor: t² - 25",
+        "options": [
+          "t(t-25)",
+          "(t-5)²",
+          "(t+5)²",
+          "(t-5)(t+5)"
+        ],
+        "answer": 3,
+        "explanation": "t² - 25 factors as difference of squares (t-5)(t+5).",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t3_D",
+        "category_label": "Factor · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 style"
+      }
+    ],
+    "E": [
+      {
+        "id": "p2_t3_E_6849b629",
+        "question": "What is the degree of the zero polynomial?",
+        "options": [
+          "Not defined",
+          "Infinite",
+          "1",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt states that the degree of the zero polynomial is not defined.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.1"
+      },
+      {
+        "id": "p2_t3_E_6237b5e7",
+        "question": "Find p(1) for p(x) = 5x² – 3x + 7.",
+        "options": [
+          "9",
+          "4",
+          "7",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "Substitute x=1: 5(1)² – 3(1) + 7 = 5 – 3 + 7 = 9, as in Example 2.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 2"
+      },
+      {
+        "id": "p2_t3_E_9c08e73a",
+        "question": "Which value is a zero of p(x) = x + 2?",
+        "options": [
+          "2",
+          "0",
+          "1",
+          "–2"
+        ],
+        "answer": 3,
+        "explanation": "p(–2) = –2 + 2 = 0, so –2 is a zero as shown in Example 3.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 3"
+      },
+      {
+        "id": "p2_t3_E_799a149d",
+        "question": "How many zeroes does a linear polynomial have?",
+        "options": [
+          "Zero",
+          "One",
+          "Three",
+          "Two"
+        ],
+        "answer": 1,
+        "explanation": "A linear polynomial ax + b (a ≠ 0) has exactly one zero, found by solving ax + b = 0.",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t3_E",
+        "category_label": "Factor · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 2,
+    "topic_id": 3,
+    "chapter_num": 2,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_02/Chapter_02_Polynomials.pdf"
+  }
+}

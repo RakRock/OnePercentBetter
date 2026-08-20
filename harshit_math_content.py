@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parent
 PHASE1_DIR = ROOT / "HarshitMath" / "phase1"
 
 PHASE_ID = "phase1"
-PHASE_TITLE = "Phase 1 — Number Sense"
+PHASE_TITLE = "Number Sense"
 STUDENT_NAME = "Harshit Sai"
 SESSION_UNIT_OFFSET = 200  # Google Sheets / ec3 session id offset
 

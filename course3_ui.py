@@ -575,6 +575,7 @@ def render_practice():
                 100,
                 c3p.format_report_details(report),
                 time_spent,
+                flush_sheets=False,
             )
 
         session_id = st.session_state.get("c3_session_id")
@@ -621,7 +622,7 @@ def render_practice():
 
         if session_id and st.session_state.get("c3_email_sent_for") != session_id:
             st.session_state.c3_email_sent_for = session_id
-            if ec3mail.email_configured():
+            if ec3mail.practice_email_enabled():
                 mail_result = ec3mail.send_course3_report_email(
                     student_name=name,
                     unit_title=unit["title"],
@@ -631,12 +632,7 @@ def render_practice():
                     questions=questions,
                     answers=answers,
                 )
-                if mail_result.ok:
-                    st.success(f"📧 Report emailed to {mail_result.recipient}")
-                elif mail_result.pending:
-                    st.info("📧 Email is sending — check your inbox in a minute (retries automatically).")
-                elif not mail_result.skipped:
-                    st.warning(f"Could not send email: {mail_result.error}")
+                ec3mail.render_practice_email_result(mail_result)
 
         with st.expander("📋 Question-by-question review", expanded=False):
             categories = c3p.get_categories(unit_id)

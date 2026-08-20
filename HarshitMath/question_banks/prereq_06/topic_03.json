@@ -1,0 +1,120 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p6_t3_A_6a73e0e2",
+        "question": "Fair coin: P(heads)?",
+        "options": [
+          "1/6",
+          "1/4",
+          "1/2",
+          "2/3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t3_A",
+        "category_label": "Probability · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 15,
+        "chapter_ref": ""
+      }
+    ],
+    "B": [
+      {
+        "id": "p6_t3_B_51af90e6",
+        "question": "Fair coin: P(heads)?",
+        "options": [
+          "1/6",
+          "1/4",
+          "2/3",
+          "1/2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t3_B",
+        "category_label": "Probability · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 15,
+        "chapter_ref": ""
+      }
+    ],
+    "C": [
+      {
+        "id": "p6_t3_C_fd0d26df",
+        "question": "Fair coin: P(heads)?",
+        "options": [
+          "1/2",
+          "1/4",
+          "1/6",
+          "2/3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t3_C",
+        "category_label": "Probability · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 15,
+        "chapter_ref": ""
+      }
+    ],
+    "D": [
+      {
+        "id": "p6_t3_D_612469d4",
+        "question": "Fair coin: P(heads)?",
+        "options": [
+          "2/3",
+          "1/4",
+          "1/2",
+          "1/6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t3_D",
+        "category_label": "Probability · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 15,
+        "chapter_ref": ""
+      }
+    ],
+    "E": [
+      {
+        "id": "p6_t3_E_d23aff9f",
+        "question": "Fair coin: P(heads)?",
+        "options": [
+          "1/6",
+          "1/4",
+          "2/3",
+          "1/2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 6,
+        "category": "p6_t3_E",
+        "category_label": "Probability · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 15,
+        "chapter_ref": ""
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 6,
+    "topic_id": 3,
+    "chapter_num": 15,
+    "source_pdf": ""
+  }
+}

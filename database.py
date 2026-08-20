@@ -193,6 +193,19 @@ def init_db():
                 config_json TEXT NOT NULL DEFAULT '{}',
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
+
+            CREATE TABLE IF NOT EXISTS harshit_practice_sessions (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                prereq_id INTEGER NOT NULL,
+                question_ids TEXT NOT NULL,
+                question_texts TEXT NOT NULL,
+                completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
+            CREATE INDEX IF NOT EXISTS idx_harshit_practice_user_prereq
+                ON harshit_practice_sessions(user_id, prereq_id, completed_at DESC);
         """)
         # Migration: add time_spent_seconds if missing (added after initial schema)
         try:
@@ -259,6 +272,10 @@ def get_user_by_id(user_id: int) -> dict | None:
 def _sharepoint_push(method_name: str, **kwargs) -> None:
     """Best-effort SharePoint sync; never raises."""
     try:
+        import google_sheets_sync as gss
+
+        if gss.skip_cloud_sync():
+            return
         import sharepoint_sync as sps
 
         if sps.is_configured():
@@ -283,29 +300,6 @@ def record_daily_login(user_id: int):
             user_id=user_id,
             log_date=today,
         )
-        _google_sheets_push_daily_login(user["name"], user_id, today)
-
-
-def _google_sheets_push_daily_login(user_name: str, user_id: int, log_date: str) -> None:
-    """Best-effort Google Sheets sync for daily login streaks."""
-    try:
-        import google_sheets_sync as gss
-
-        if gss.is_configured():
-            gss.persist_daily_login(user_name=user_name, user_id=user_id, log_date=log_date)
-    except Exception:
-        pass
-
-
-def _google_sheets_push_daily_summary(user_id: int, log_date: str) -> None:
-    """Best-effort Google Sheets sync for today's activity summary."""
-    try:
-        import google_sheets_sync as gss
-
-        if gss.is_configured():
-            gss.persist_daily_summary(user_id=user_id, log_date=log_date)
-    except Exception:
-        pass
 
 
 def get_login_streak(user_id: int) -> int:
@@ -360,6 +354,8 @@ def save_activity_score(
     max_score: int,
     details: str = "",
     time_spent_seconds: int = 0,
+    *,
+    flush_sheets: bool = True,
 ):
     """Save a score for an activity."""
     today = datetime.now().strftime("%Y-%m-%d")
@@ -407,7 +403,19 @@ def save_activity_score(
             time_spent_seconds=time_spent_seconds,
             completed_at=completed_at,
         )
-        _google_sheets_push_daily_summary(user_id, today)
+        if flush_sheets:
+            _google_sheets_flush_user_session(user_id, today)
+
+
+def _google_sheets_flush_user_session(user_id: int, log_date: str) -> None:
+    """Best-effort Google Sheets sync once after a session completes."""
+    try:
+        import google_sheets_sync as gss
+
+        if gss.cloud_sync_enabled():
+            gss.flush_user_session_to_sheets(user_id, log_date)
+    except Exception:
+        pass
 
 
 def save_ec3_practice_session(user_id: int, unit_id: int, question_ids: list[str]) -> None:
@@ -449,6 +457,64 @@ def get_recent_ec3_question_ids(user_id: int, unit_id: int, sessions: int = 2) -
         except (json.JSONDecodeError, TypeError):
             continue
     return seen
+
+
+def save_harshit_practice_session(
+    user_id: int,
+    prereq_id: int,
+    question_ids: list[str],
+    question_texts: list[str],
+) -> None:
+    """Remember recent Harshit PreReq questions so the next session avoids repeats."""
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO harshit_practice_sessions
+               (user_id, prereq_id, question_ids, question_texts)
+               VALUES (?, ?, ?, ?)""",
+            (user_id, prereq_id, json.dumps(question_ids), json.dumps(question_texts)),
+        )
+        stale = conn.execute(
+            """SELECT id FROM harshit_practice_sessions
+               WHERE user_id = ? AND prereq_id = ?
+               ORDER BY completed_at DESC
+               LIMIT -1 OFFSET 24""",
+            (user_id, prereq_id),
+        ).fetchall()
+        if stale:
+            placeholders = ",".join("?" * len(stale))
+            conn.execute(
+                f"DELETE FROM harshit_practice_sessions WHERE id IN ({placeholders})",
+                [row["id"] for row in stale],
+            )
+
+
+def get_recent_harshit_practice_exclusions(
+    user_id: int,
+    prereq_id: int,
+    *,
+    sessions: int = 4,
+) -> tuple[set[str], set[str]]:
+    """Question ids and exact question text from recent sessions (avoid repeats)."""
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT question_ids, question_texts FROM harshit_practice_sessions
+               WHERE user_id = ? AND prereq_id = ?
+               ORDER BY completed_at DESC
+               LIMIT ?""",
+            (user_id, prereq_id, max(sessions, 0)),
+        ).fetchall()
+    ids: set[str] = set()
+    texts: set[str] = set()
+    for row in rows:
+        try:
+            ids.update(json.loads(row["question_ids"]))
+        except (json.JSONDecodeError, TypeError):
+            pass
+        try:
+            texts.update(json.loads(row["question_texts"]))
+        except (json.JSONDecodeError, TypeError):
+            pass
+    return ids, texts
 
 
 def get_today_scores(user_id: int, activity_type: str = None) -> list:
@@ -954,7 +1020,7 @@ def _google_sheets_push_week_plan(
     try:
         import google_sheets_sync as gss
 
-        if gss.is_configured():
+        if gss.cloud_sync_enabled():
             gss.persist_week_plan(
                 week_label,
                 strategies,
@@ -1391,7 +1457,7 @@ def get_harshit_prereq_week_config(prereq_id: int) -> dict:
             (prereq_id,),
         ).fetchone()
     if not row:
-        return {"week_label": "", "topics": [], "warmup_count": 2, "use_llm": False}
+        return {"week_label": "", "topics": [], "warmup_count": 0, "use_llm": False, "use_chapter_llm": True, "grok_fresh_only": False}
     try:
         data = json.loads(row["config_json"] or "{}")
     except json.JSONDecodeError:
@@ -1410,6 +1476,8 @@ def get_harshit_prereq_week_config(prereq_id: int) -> dict:
         "topics": topics,
         "warmup_count": warmup_count,
         "use_llm": bool(data.get("use_llm", False)),
+        "use_chapter_llm": bool(data.get("use_chapter_llm", True)),
+        "grok_fresh_only": bool(data.get("grok_fresh_only", False)),
         "prereq_id": prereq_id,
     }
 
@@ -1421,12 +1489,16 @@ def save_harshit_prereq_week_config(
     *,
     warmup_count: int = 2,
     use_llm: bool = False,
+    use_chapter_llm: bool = True,
+    grok_fresh_only: bool = False,
 ) -> None:
     payload = {
         "week_label": week_label,
         "topics": topics,
         "warmup_count": max(0, min(5, int(warmup_count))),
         "use_llm": use_llm,
+        "use_chapter_llm": use_chapter_llm,
+        "grok_fresh_only": grok_fresh_only,
         "prereq_id": prereq_id,
     }
     with get_connection() as conn:
@@ -1442,7 +1514,7 @@ def save_harshit_prereq_week_config(
     try:
         import google_sheets_sync as gss
 
-        if gss.is_configured():
+        if gss.cloud_sync_enabled():
             gss.save_harshit_prereq_week_plan(prereq_id, week_label, payload)
     except Exception:
         pass

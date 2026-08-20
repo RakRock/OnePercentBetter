@@ -1,0 +1,2300 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p1_t2_A_fb26e020",
+        "question": "Compute: 1/5 + 3/6",
+        "options": [
+          "1/2",
+          "-3/10",
+          "7/10",
+          "-13/10"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_A_b9fa0c99",
+        "question": "Compute: 5/3 + 4/5",
+        "options": [
+          "52/15",
+          "1/2",
+          "22/15",
+          "37/15"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_A_e2c4a710",
+        "question": "Compute: 1/4 + 3/3",
+        "options": [
+          "-7/4",
+          "1/4",
+          "5/4",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_A_0751ad59",
+        "question": "Compute: 2/3 + 3/6",
+        "options": [
+          "1/2",
+          "1/6",
+          "-5/6",
+          "7/6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_A_a8f3789b",
+        "question": "Add: 3/5 + 4/5 = ?",
+        "options": [
+          "7/5",
+          "12/25",
+          "2",
+          "1/5"
+        ],
+        "answer": 0,
+        "explanation": "Both are positive rationals, so their sum is obtained by adding numerators over common denominator as shown in the chapter's rational number examples.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_A_e21a3d9a",
+        "question": "Add: 3 + 4 = ?",
+        "options": [
+          "12",
+          "7",
+          "1",
+          "-1"
+        ],
+        "answer": 1,
+        "explanation": "Adding two positive rationals (integers) follows the same-sign addition rule on the number line.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q2 style"
+      },
+      {
+        "id": "p1_t2_A_007567f6",
+        "question": "Subtract: 4/5 - 3/5 = ?",
+        "options": [
+          "7/5",
+          "1/5",
+          "2/5",
+          "12/25"
+        ],
+        "answer": 1,
+        "explanation": "Subtracting same-sign positives yields a smaller positive rational by subtracting numerators over common denominator.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_A_6ac37cfa",
+        "question": "Add: (-3) + (-4) = ?",
+        "options": [
+          "-7",
+          "-1",
+          "1",
+          "7"
+        ],
+        "answer": 0,
+        "explanation": "Both negative rationals (same sign) add to a more negative result by adding their absolute values and retaining the sign.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Number line discussion"
+      },
+      {
+        "id": "p1_t2_A_f6820664",
+        "question": "Add: -3/5 + (-1/5) = ?",
+        "options": [
+          "-3/5",
+          "-4/5",
+          "4/5",
+          "-2/5"
+        ],
+        "answer": 1,
+        "explanation": "Both numbers have the same sign and are in p/q form, so add their numerators to get -4/5 as in the rational numbers shown on the number line.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_A_d27c3772",
+        "question": "What is 3/5 + 4/5?",
+        "options": [
+          "7/5",
+          "12/25",
+          "2/5",
+          "1/5"
+        ],
+        "answer": 0,
+        "explanation": "Adding two positive rationals with the same sign gives 7/5, following the rule for same-sign addition of fractions with common denominator.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_A_9e4336b5",
+        "question": "What is 4/5 − 3/5?",
+        "options": [
+          "1/5",
+          "12/25",
+          "2/5",
+          "7/5"
+        ],
+        "answer": 0,
+        "explanation": "Subtracting two positive rationals with the same sign keeps the sign positive and yields 1/5.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_A_0b099181",
+        "question": "What is −5 + (−8)?",
+        "options": [
+          "−13",
+          "3",
+          "−3",
+          "13"
+        ],
+        "answer": 0,
+        "explanation": "Adding two negative rationals with the same sign adds their absolute values and keeps the negative sign, giving −13.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t2_A_8ddd1d81",
+        "question": "What is −3/5 + (−4/5)?",
+        "options": [
+          "−1/5",
+          "−7/5",
+          "1/5",
+          "7/5"
+        ],
+        "answer": 1,
+        "explanation": "Adding two negative rationals with the same sign adds the numerators and retains the negative sign, resulting in −7/5.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_A_30f98254",
+        "question": "Add: 3/5 + 4/5 = ?",
+        "options": [
+          "2",
+          "12/25",
+          "7/5",
+          "1/5"
+        ],
+        "answer": 2,
+        "explanation": "Both are positive rationals (same sign), so their sum is found by adding numerators over common denominator as shown on the number line in the chapter.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_A_865162f2",
+        "question": "Subtract: 4/5 - 3/5 = ?",
+        "options": [
+          "1/5",
+          "7/5",
+          "2/5",
+          "-1/5"
+        ],
+        "answer": 0,
+        "explanation": "Both positive with same sign; subtracting yields the smaller positive rational between them on the number line.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_A_53a59e30",
+        "question": "Add: (-3/5) + (-4/5) = ?",
+        "options": [
+          "7/5",
+          "-1/5",
+          "-7/5",
+          "-2/5"
+        ],
+        "answer": 2,
+        "explanation": "Both negative rationals (same sign) so add their absolute values and keep the negative sign, consistent with positions left of zero on the number line.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_A_5c971680",
+        "question": "Subtract: (-3/5) - (-4/5) = ?",
+        "options": [
+          "-1/5",
+          "1/5",
+          "-7/5",
+          "7/5"
+        ],
+        "answer": 1,
+        "explanation": "Subtracting a negative is adding its positive counterpart; same-sign negatives yield a positive result between the given rationals.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t2_A",
+        "category_label": "Rational Ops · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      }
+    ],
+    "B": [
+      {
+        "id": "p1_t2_B_c609460a",
+        "question": "Compute: 5/4 + 2/3",
+        "options": [
+          "19/12",
+          "23/12",
+          "1/2",
+          "-5/12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_B_842b0cab",
+        "question": "Compute: 5/1 + 5/6",
+        "options": [
+          "35/6",
+          "29/6",
+          "1/2",
+          "41/6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_B_48ccc277",
+        "question": "Compute: 1/1 + 3/3",
+        "options": [
+          "2",
+          "1/2",
+          "1",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_B_d2539c58",
+        "question": "Compute: 3/2 + 6/5",
+        "options": [
+          "1/2",
+          "17/10",
+          "27/10",
+          "37/10"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_B_eb07d9ee",
+        "question": "Find a rational number between 1/2 and 3/4.",
+        "options": [
+          "1/4",
+          "3/5",
+          "4/5",
+          "2/5"
+        ],
+        "answer": 1,
+        "explanation": "Between any two rationals there are infinitely many others; 3/5 lies between 1/2=0.5 and 3/4=0.75 after writing with common denominator.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_82b67648",
+        "question": "Which rational number is between 2/5 and 3/4?",
+        "options": [
+          "1/3",
+          "5/8",
+          "4/5",
+          "7/12"
+        ],
+        "answer": 3,
+        "explanation": "2/5=0.4 and 3/4=0.75; 7/12≈0.583 lies between them using equivalent fractions with different denominators.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_b16ed623",
+        "question": "Find one rational number between 1/3 and 1/2.",
+        "options": [
+          "2/5",
+          "3/7",
+          "5/12",
+          "1/4"
+        ],
+        "answer": 2,
+        "explanation": "1/3≈0.333 and 1/2=0.5; 5/12≈0.417 is obtained by averaging after common denominator 12.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q2 style"
+      },
+      {
+        "id": "p1_t2_B_dd188a71",
+        "question": "Which number lies between 3/8 and 5/6?",
+        "options": [
+          "19/24",
+          "2/3",
+          "1/2",
+          "7/8"
+        ],
+        "answer": 0,
+        "explanation": "3/8=0.375 and 5/6≈0.833; 19/24≈0.792 lies between them after converting to common denominator.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_2a838fbc",
+        "question": "Which rational number lies between 3/5 and 4/5?",
+        "options": [
+          "2/5",
+          "5/10",
+          "9/10",
+          "7/10"
+        ],
+        "answer": 3,
+        "explanation": "Expressing 3/5 and 4/5 with common denominator 10 gives 6/10 and 8/10, so 7/10 lies between them as shown when finding rationals between two given rationals.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_11104404",
+        "question": "Find a rational number between 1/2 and 1/3.",
+        "options": [
+          "5/6",
+          "2/5",
+          "3/4",
+          "1/4"
+        ],
+        "answer": 1,
+        "explanation": "A rational between two given rationals can be found by (1+1)/(2+3) = 2/5, as there are infinitely many rationals between any two (Ch 1).",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_4116b1e2",
+        "question": "What rational lies between 2/5 and 3/4?",
+        "options": [
+          "5/9",
+          "1/2",
+          "11/20",
+          "4/5"
+        ],
+        "answer": 2,
+        "explanation": "Using (2+3)/(5+4) = 5/9 is one; 11/20 works as it lies strictly between after converting to common denominator.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_20193412",
+        "question": "Find one rational number between 3/7 and 2/5.",
+        "options": [
+          "29/70",
+          "4/7",
+          "1/2",
+          "3/8"
+        ],
+        "answer": 0,
+        "explanation": "Average after common denominator 35 gives values like 29/70 between 15/35 and 14/35.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_1d9b5aac",
+        "question": "Which rational is between 1/4 and 2/3?",
+        "options": [
+          "1/3",
+          "1/5",
+          "3/4",
+          "7/12"
+        ],
+        "answer": 3,
+        "explanation": "(1+2)/(4+3) = 3/7, but 7/12 obtained via 21/84 and 56/84 midpoint lies between.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_9f9461c4",
+        "question": "Find a rational number between 2/3 and 3/4.",
+        "options": [
+          "17/24",
+          "7/12",
+          "3/5",
+          "5/6"
+        ],
+        "answer": 0,
+        "explanation": "The average (2/3 + 3/4)/2 uses different denominators and yields 17/24, a rational between them as shown in Ex 1.1 Q3 style.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_e71bf20e",
+        "question": "What rational lies between 1/2 and 3/5?",
+        "options": [
+          "11/20",
+          "4/7",
+          "3/4",
+          "7/10"
+        ],
+        "answer": 0,
+        "explanation": "Averaging 1/2 and 3/5 requires common denominator 10, giving 11/20 as the value between them per the chapter's method for rationals between any two.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_de3c0fa5",
+        "question": "Which number is between 3/4 and 5/6?",
+        "options": [
+          "19/24",
+          "7/8",
+          "17/20",
+          "4/5"
+        ],
+        "answer": 0,
+        "explanation": "(3/4 + 5/6)/2 with different denominators simplifies to 19/24, fitting the infinitely many rationals between any two as in Chapter 1.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q2 style"
+      },
+      {
+        "id": "p1_t2_B_394f9c9a",
+        "question": "Find a rational between 1/3 and 1/2.",
+        "options": [
+          "3/8",
+          "2/5",
+          "3/7",
+          "5/12"
+        ],
+        "answer": 3,
+        "explanation": "Using different denominators, the midpoint (1/3 + 1/2)/2 equals 5/12, a rational lying between them following the exercise approach.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_B_8502cef1",
+        "question": "Add: 1/3 + 1/2 = ?",
+        "options": [
+          "5/6",
+          "1/6",
+          "3/5",
+          "2/5"
+        ],
+        "answer": 0,
+        "explanation": "Adding fractions with different denominators produces 5/6, a rational between 0 and 1 as per the chapter.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t2_B_b0298f4d",
+        "question": "Add: 5/6 + 1/4 = ?",
+        "options": [
+          "13/12",
+          "9/10",
+          "11/12",
+          "7/12"
+        ],
+        "answer": 0,
+        "explanation": "Different denominators for rationals, building on the excerpt's discussion of infinitely many rationals between any two.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t2_B_641b0cfe",
+        "question": "How many rational numbers exist between 1/2 and 3/2?",
+        "options": [
+          "Exactly three",
+          "Only two",
+          "Infinitely many",
+          "None"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt directly states infinitely many rationals lie between any two given rationals.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Introduction"
+      },
+      {
+        "id": "p1_t2_B_8e3dd3ae",
+        "question": "Add 3/5 and 7/9. What is the sum?",
+        "options": [
+          "52/45",
+          "10/14",
+          "62/45",
+          "3/9"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt reminds us there are infinitely many rationals between any two given rationals.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t2_B_d58dc353",
+        "question": "Add: 2/5 + 1/3",
+        "options": [
+          "7/15",
+          "2/15",
+          "11/15",
+          "3/8"
+        ],
+        "answer": 2,
+        "explanation": "Rational addition with different denominators uses the common denominator 15 as practiced with fractions on the number line.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t2_B_180a3827",
+        "question": "Add 1/3 + 1/2 and locate the sum between two rationals.",
+        "options": [
+          "3/5",
+          "5/6",
+          "1/6",
+          "2/5"
+        ],
+        "answer": 1,
+        "explanation": "Different denominators give 5/6 which is a rational between 1/2 and 1 with infinitely many others around it.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t2_B_a9edde14",
+        "question": "Add 3/5 + 1/5 with common denominator.",
+        "options": [
+          "2/5",
+          "4/5",
+          "5/5",
+          "3/10"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt builds on rational numbers like fractions, which can be added directly when denominators match.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t2_B_b73205b7",
+        "question": "Add 1/4 and 3/8 using different denominators and place the sum on the number line.",
+        "options": [
+          "7/8",
+          "1",
+          "5/8",
+          "3/8"
+        ],
+        "answer": 2,
+        "explanation": "Common denominator 8 gives 2/8 + 3/8 = 5/8, a rational between 0 and 1 as described.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t2_B",
+        "category_label": "Rational Ops · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      }
+    ],
+    "C": [
+      {
+        "id": "p1_t2_C_4e4924e6",
+        "question": "Multiply: 3/5 × 1/5",
+        "options": [
+          "1/2",
+          "28/25",
+          "4/5",
+          "3/25"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_C_297f669e",
+        "question": "Multiply: 1/3 × 1/3",
+        "options": [
+          "2/3",
+          "10/9",
+          "1/9",
+          "1/4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_C_d5d987d8",
+        "question": "Multiply: 1/5 × 4/5",
+        "options": [
+          "1/9",
+          "1",
+          "29/25",
+          "4/25"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_C_34412f21",
+        "question": "Multiply: 2/5 × 3/5",
+        "options": [
+          "6/25",
+          "1/4",
+          "1",
+          "31/25"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_C_256349f9",
+        "question": "Multiply: 3/5 × 4/5 = ?",
+        "options": [
+          "7/5",
+          "12/10",
+          "12/25",
+          "15/25"
+        ],
+        "answer": 2,
+        "explanation": "The product of two rational numbers in p/q form is always rational, matching the definition in the chapter.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_C_d6b9b72f",
+        "question": "Divide: 4/5 ÷ 3/5 = ?",
+        "options": [
+          "12/25",
+          "5/3",
+          "4/3",
+          "3/4"
+        ],
+        "answer": 2,
+        "explanation": "Division of rationals is multiplication by the reciprocal, yielding another rational in p/q form.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_C_1195ac8f",
+        "question": "Multiply: 2/3 × 5/7 = ?",
+        "options": [
+          "15/21",
+          "7/10",
+          "10/21",
+          "10/10"
+        ],
+        "answer": 2,
+        "explanation": "Multiplying numerators and denominators gives a rational number, consistent with the chapter's p/q definition.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q2 style"
+      },
+      {
+        "id": "p1_t2_C_377d91bb",
+        "question": "Divide: 5/6 ÷ 2/3 = ?",
+        "options": [
+          "5/4",
+          "10/18",
+          "9/4",
+          "13/4"
+        ],
+        "answer": 0,
+        "explanation": "Dividing by a rational is the same as multiplying by its reciprocal to obtain another rational.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_C_328f0072",
+        "question": "Multiply: 3/5 × 4/5 = ?",
+        "options": [
+          "3/25",
+          "12/25",
+          "7/5",
+          "12/10"
+        ],
+        "answer": 1,
+        "explanation": "Multiplying numerators and denominators of the given fractions from Ex 1.1 Q3 yields 12/25, a rational number between 0 and 1.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_C_2193bbaa",
+        "question": "Divide: 4/5 ÷ 3/5 = ?",
+        "options": [
+          "1/5",
+          "12/25",
+          "3/4",
+          "4/3"
+        ],
+        "answer": 3,
+        "explanation": "Dividing by a fraction is multiplication by its reciprocal, so 4/5 × 5/3 = 4/3, matching the p/q form of rationals in the chapter.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_C_7b5d8a47",
+        "question": "Multiply: 3/5 × 1/2 = ?",
+        "options": [
+          "4/7",
+          "3/10",
+          "1/10",
+          "3/7"
+        ],
+        "answer": 1,
+        "explanation": "The product 3/10 is obtained directly by multiplying numerators and denominators, confirming it is rational as per the p/q definition.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_C_6b4dace5",
+        "question": "Divide: 3/5 ÷ 4/5 = ?",
+        "options": [
+          "15/4",
+          "12/25",
+          "4/3",
+          "3/4"
+        ],
+        "answer": 3,
+        "explanation": "3/5 × 5/4 simplifies to 3/4, a rational expressed in p/q form with q ≠ 0 as required in the chapter definition.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_C_cbb61e09",
+        "question": "Multiply: 3/5 × 4/5 = ?",
+        "options": [
+          "7/5",
+          "12/25",
+          "3/4",
+          "12/10"
+        ],
+        "answer": 1,
+        "explanation": "The product of two rationals in p/q form is found by multiplying numerators and denominators, matching the definition of rational numbers in Chapter 1.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_C_525d4b06",
+        "question": "Divide: 4/5 ÷ 3/5 = ?",
+        "options": [
+          "5/3",
+          "12/25",
+          "4/3",
+          "3/4"
+        ],
+        "answer": 2,
+        "explanation": "Division of rationals is multiplication by the reciprocal, preserving the p/q form discussed in the chapter.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_C_b17810b6",
+        "question": "Multiply: 3/5 × 2/1 = ?",
+        "options": [
+          "6/1",
+          "3/10",
+          "5/6",
+          "6/5"
+        ],
+        "answer": 3,
+        "explanation": "Any integer is a rational  p/1, so multiplying keeps the result rational as defined in the section on rational numbers.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q2 style"
+      },
+      {
+        "id": "p1_t2_C_e3b82413",
+        "question": "Divide: 4/5 ÷ 2/1 = ?",
+        "options": [
+          "4/2",
+          "8/5",
+          "5/2",
+          "2/5"
+        ],
+        "answer": 3,
+        "explanation": "Dividing a rational by an integer yields another rational in p/q form, consistent with the infinite rationals between numbers in the chapter.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_C_e64d6cea",
+        "question": "Multiply: 3/2 × 4/3 = ?",
+        "options": [
+          "12/5",
+          "3",
+          "2",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "Multiplying these rationals gives 2, showing how operations produce more rationals between given numbers as in the chapter.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t2_C_b03a2f0f",
+        "question": "Divide: 3/5 ÷ 2/7 = ?",
+        "options": [
+          "6/35",
+          "21/10",
+          "21/14",
+          "15/14"
+        ],
+        "answer": 1,
+        "explanation": "Multiply and divide fractions to get 21/10, extending rational operations before introducing irrationals on the line.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.2 style"
+      },
+      {
+        "id": "p1_t2_C_e59688de",
+        "question": "Multiply 3/4 and 5/6. What is the product?",
+        "options": [
+          "1/2",
+          "3/5",
+          "8/10",
+          "15/24"
+        ],
+        "answer": 3,
+        "explanation": "Rational operations follow the excerpt's focus on forms p/q to identify and work with rationals.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t2_C_5d692c43",
+        "question": "What operation on 1/2 and 3/4 shows another rational between them?",
+        "options": [
+          "1/2 - 3/4",
+          "Average of 1/2 and 3/4",
+          "1/2 × 3/4",
+          "1/2 + 3/4"
+        ],
+        "answer": 1,
+        "explanation": "Averaging two rationals produces another rational between them, matching the infinite rationals idea.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t2_C_aab4240a",
+        "question": "Multiply: 3/4 × 2/5 = ?",
+        "options": [
+          "6/20",
+          "13/10",
+          "1/2",
+          "5/9"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt starts with writing numbers as p/q and shows operations with rationals between 1 and 2.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q1 style"
+      },
+      {
+        "id": "p1_t2_C_cb81a81d",
+        "question": "How many rational numbers lie between 1/2 and 3/2 on the number line?",
+        "options": [
+          "infinitely many",
+          "1",
+          "none",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt states there are infinitely many rational numbers between any two given rational numbers.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "NUMBER SYSTEMS 5"
+      },
+      {
+        "id": "p1_t2_C_1ce20d3e",
+        "question": "Multiply 2/3 × 3/4.",
+        "options": [
+          "1/2",
+          "3/3",
+          "3/2",
+          "5/2"
+        ],
+        "answer": 0,
+        "explanation": "Rational operations follow from the dense set of rationals described in the excerpt.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t2_C_306897c7",
+        "question": "Multiply 2/3 × 3/4 and locate the product between 0 and 1.",
+        "options": [
+          "1/4",
+          "1/2",
+          "1/3",
+          "2/3"
+        ],
+        "answer": 1,
+        "explanation": "The product simplifies to 1/2, one of the infinitely many rationals between any two as per the excerpt.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t2_C",
+        "category_label": "Rational Ops · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      }
+    ],
+    "D": [
+      {
+        "id": "p1_t2_D_877b7dfe",
+        "question": "Multiply: 3/2 × 2/2",
+        "options": [
+          "3/4",
+          "5/2",
+          "3/2",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_D_9a781d51",
+        "question": "Multiply: 4/2 × 1/2",
+        "options": [
+          "5/2",
+          "2",
+          "1",
+          "4/3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_D_c67e0177",
+        "question": "Multiply: 3/3 × 4/3",
+        "options": [
+          "3/7",
+          "4/3",
+          "1/3",
+          "7/3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_D_3ca197f5",
+        "question": "Multiply: 1/4 × 3/4",
+        "options": [
+          "1/7",
+          "19/16",
+          "1",
+          "3/16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_D_6db25c51",
+        "question": "What is 3/5 + 1/5?",
+        "options": [
+          "3/10",
+          "2/5",
+          "5/5",
+          "4/5"
+        ],
+        "answer": 3,
+        "explanation": "Adding fractions with common denominators follows the form p/q as shown for rationals between 3/5 and 4/5 in Ex 1.1 Q3.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3"
+      },
+      {
+        "id": "p1_t2_D_739ba927",
+        "question": "What rational number lies between 3/5 and 4/5 obtained by averaging them?",
+        "options": [
+          "2/5",
+          "7/10",
+          "1/2",
+          "3/4"
+        ],
+        "answer": 1,
+        "explanation": "The average (3/5 + 4/5)/2 yields a rational between them, consistent with infinitely many rationals between any two given rationals.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3"
+      },
+      {
+        "id": "p1_t2_D_22ea50d1",
+        "question": "Simplify: 3/5 − 1/5 + 2/5.",
+        "options": [
+          "4/5",
+          "3/5",
+          "2/5",
+          "1/5"
+        ],
+        "answer": 0,
+        "explanation": "Mixed addition and subtraction of fractions with denominator 5 produces another rational of form p/q.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_D_c4f8e751",
+        "question": "Which result equals 3/5 + 4/5 − 2/5?",
+        "options": [
+          "6/5",
+          "1",
+          "4/5",
+          "3/5"
+        ],
+        "answer": 1,
+        "explanation": "Performing the operations gives 5/5 which simplifies to the rational number 1.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_D_7d3d4cc5",
+        "question": "Compute (3/5 + 4/5) ÷ 2 to find a rational between 3/5 and 4/5.",
+        "options": [
+          "7/10",
+          "1",
+          "3/5",
+          "4/5"
+        ],
+        "answer": 0,
+        "explanation": "Adding 3/5 and 4/5 then dividing by 2 follows the method of locating a rational between two given rationals as shown in Exercise 1.1.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_D_e605335b",
+        "question": "What is (3 + 4) ÷ 2, a rational number between 3 and 4?",
+        "options": [
+          "1/2",
+          "4",
+          "3",
+          "7/2"
+        ],
+        "answer": 3,
+        "explanation": "The average of 3 and 4 gives a rational between them, matching the approach for finding rationals between any two rationals in the chapter.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q2 style"
+      },
+      {
+        "id": "p1_t2_D_fea63884",
+        "question": "Simplify 3/5 + (4/5 - 1/5) to verify the result is rational.",
+        "options": [
+          "4/5",
+          "1",
+          "6/5",
+          "3/5"
+        ],
+        "answer": 2,
+        "explanation": "Operations on fractions in p/q form always yield another rational, per the definition of rational numbers in Section 1.1.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_D_de505054",
+        "question": "Evaluate ( -5/16 + 60/999 ) and confirm it remains in p/q form.",
+        "options": [
+          "Irrational",
+          "Zero",
+          "Rational",
+          "Integer only"
+        ],
+        "answer": 2,
+        "explanation": "Sum of two numbers in p/q form (q ≠ 0) is again rational, consistent with the chapter's definition and examples of rationals.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_D_85b19e0f",
+        "question": "Find a rational number between 3/5 and 4/5.",
+        "options": [
+          "7/10",
+          "9/10",
+          "1",
+          "5/6"
+        ],
+        "answer": 0,
+        "explanation": "There are infinitely many rational numbers between any two given rationals, as shown in Exercise 1.1 Q3 by inserting fractions like averages.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_D_4d523267",
+        "question": "Which number can be written in the form p/q where p and q are integers, q ≠ 0?",
+        "options": [
+          "√2",
+          "0",
+          "π",
+          "√3"
+        ],
+        "answer": 1,
+        "explanation": "Zero is rational because it equals 0/1, fitting the definition of rational numbers in the chapter.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q1"
+      },
+      {
+        "id": "p1_t2_D_29fadf47",
+        "question": "How many rational numbers lie between 3 and 4?",
+        "options": [
+          "5",
+          "infinitely many",
+          "none",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "The chapter states there are infinitely many rational numbers between any two given rational numbers.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section before Ex 1.1"
+      },
+      {
+        "id": "p1_t2_D_2c179a5f",
+        "question": "Is every rational number a whole number?",
+        "options": [
+          "No, only integers ≥0 that are rational",
+          "Only fractions",
+          "Only negatives",
+          "Yes, always"
+        ],
+        "answer": 0,
+        "explanation": "Exercise 1.1 Q4(iii) shows not every rational is a whole number, as fractions like 3/5 are rational but not whole.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q4 style"
+      },
+      {
+        "id": "p1_t2_D_1ca7bb07",
+        "question": "What is 2/3 + 1/4 - 1/6?",
+        "options": [
+          "3/4",
+          "1/2",
+          "1/3",
+          "5/12"
+        ],
+        "answer": 1,
+        "explanation": "Operations on rationals with different denominators yield another rational between given numbers.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t2_D_93891931",
+        "question": "Add the rationals 1/2 and 3/4. What is the result?",
+        "options": [
+          "4/6",
+          "5/4",
+          "3/2",
+          "7/6"
+        ],
+        "answer": 1,
+        "explanation": "Rationals are closed under addition as shown by writing numbers in p/q form between any two points on the line.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t2_D_08a6ecb6",
+        "question": "What is (2/3 + 1/3) × 4/5?",
+        "options": [
+          "1",
+          "3/4",
+          "2/5",
+          "4/5"
+        ],
+        "answer": 3,
+        "explanation": "Mixed rational expressions use the excerpt's p/q form to perform operations on rationals.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t2_D_09c81706",
+        "question": "If p and q are integers with q ≠ 0, then p/q represents which kind of number?",
+        "options": [
+          "Irrational",
+          "Negative only",
+          "Rational",
+          "Natural only"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt defines rational numbers in the form p/q where p and q are integers.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q1 style"
+      },
+      {
+        "id": "p1_t2_D_aab3b556",
+        "question": "Simplify: (2/3 ÷ 4/9) × 3/2 = ?",
+        "options": [
+          "2/3",
+          "3/2",
+          "9/4",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "Mixed operations on rationals build on the excerpt's examples of p/q forms and density of rationals.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t2_D_a6ac00c0",
+        "question": "Find 1/2 + 3/4 using numbers between 1 and 2 on the number line.",
+        "options": [
+          "1",
+          "7/4",
+          "5/4",
+          "3/4"
+        ],
+        "answer": 2,
+        "explanation": "Adding rationals like 1/2 and 3/4 gives 5/4 which lies between 1 and 2 as there are infinitely many rationals between any two.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t2_D_4fe2e592",
+        "question": "Simplify: 2/5 + 1/3 - 1/15.",
+        "options": [
+          "11/15",
+          "2/3",
+          "1/3",
+          "3/5"
+        ],
+        "answer": 1,
+        "explanation": "Use denominator 15: 2/5 = 6/15, 1/3 = 5/15, so 6/15 + 5/15 − 1/15 = 10/15 = 2/3. (11/15 is 2/5 + 1/3 only — the −1/15 was left out.)",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t2_D_7cf0f30c",
+        "question": "If you take two rationals like 3/2 and 5/2, how many more rationals exist between them per the excerpt?",
+        "options": [
+          "Infinitely many",
+          "Two",
+          "None",
+          "One"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt directly states there are infinitely many rational numbers between any two given rational numbers.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t2_D",
+        "category_label": "Rational Ops · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "E": [
+      {
+        "id": "p1_t2_E_705c8ceb",
+        "question": "Multiply: 1/2 × 1/2",
+        "options": [
+          "5/4",
+          "1",
+          "1/3",
+          "1/4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_E_4353befa",
+        "question": "Multiply: 1/2 × 3/2",
+        "options": [
+          "1/5",
+          "2",
+          "7/4",
+          "3/4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_E_d660c9e6",
+        "question": "Multiply: 2/5 × 2/5",
+        "options": [
+          "4/5",
+          "29/25",
+          "4/25",
+          "2/7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_E_438a32ed",
+        "question": "Multiply: 3/2 × 1/2",
+        "options": [
+          "7/4",
+          "1",
+          "3/4",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t2_E_cf008b2c",
+        "question": "Find one rational number between 3/5 and 4/5.",
+        "options": [
+          "7/10",
+          "5/6",
+          "1/2",
+          "9/10"
+        ],
+        "answer": 0,
+        "explanation": "There are infinitely many rationals between any two rationals as stated in the chapter; 7/10 lies between 0.6 and 0.8.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3"
+      },
+      {
+        "id": "p1_t2_E_06a4ceb8",
+        "question": "Which rational number lies between 3 and 4?",
+        "options": [
+          "7/2",
+          "9/2",
+          "11/2",
+          "5/2"
+        ],
+        "answer": 0,
+        "explanation": "Infinitely many rationals exist between 3 and 4; 7/2 = 3.5 satisfies 3 < 3.5 < 4.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q2"
+      },
+      {
+        "id": "p1_t2_E_2e41981f",
+        "question": "What is a rational number between 1/2 and 3/4?",
+        "options": [
+          "7/8",
+          "2/3",
+          "1/3",
+          "5/8"
+        ],
+        "answer": 3,
+        "explanation": "The chapter shows infinitely many rationals between any two; 5/8 = 0.625 is between 0.5 and 0.75.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_E_cd14fcf1",
+        "question": "Choose a rational number lying between 5/7 and 6/7.",
+        "options": [
+          "4/7",
+          "3/7",
+          "11/14",
+          "13/14"
+        ],
+        "answer": 2,
+        "explanation": "Between any two rationals lie infinitely many others; 11/14 lies between approx. 0.714 and 0.857.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_E_d558e177",
+        "question": "To find a rational between 3/5 and 4/5, compute their average: (3/5 + 4/5) ÷ 2 = ?",
+        "options": [
+          "3/5",
+          "4/5",
+          "7/10",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "Averaging two rationals produces another rational between them, as shown when locating numbers between fractions in Ex 1.1 Q3.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_E_012420e6",
+        "question": "Find a rational between 3 and 4 by adding 1/2 to 3: 3 + 1/2 = ?",
+        "options": [
+          "3",
+          "5/2",
+          "7/2",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "Adding a positive rational to an integer yields another rational lying between them, matching the idea of infinitely many rationals between any two.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q2 style"
+      },
+      {
+        "id": "p1_t2_E_d73ae4be",
+        "question": "What rational is obtained by subtracting 1/6 from 4: 4 − 1/6 = ?",
+        "options": [
+          "23/6",
+          "3",
+          "4",
+          "25/6"
+        ],
+        "answer": 0,
+        "explanation": "Subtracting a positive rational from an integer produces a rational between them, consistent with placing rationals on the number line.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_E_6625055d",
+        "question": "Multiply 2/3 by 3/2 to check if the result is rational and lies between 1 and 2: (2/3) × (3/2) = ?",
+        "options": [
+          "3/2",
+          "2",
+          "1",
+          "2/3"
+        ],
+        "answer": 0,
+        "explanation": "The product of two rationals is rational, and here it equals 3/2 which lies between 1 and 2.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_E_43522148",
+        "question": "Which of the following is a rational number between 3/5 and 4/5?",
+        "options": [
+          "7/10",
+          "4/5",
+          "1/5",
+          "6/5"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt states there are infinitely many rationals between any two rationals, and 7/10 lies between 3/5=0.6 and 4/5=0.8.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q3 style"
+      },
+      {
+        "id": "p1_t2_E_11d14b64",
+        "question": "Which number can be written in the form p/q with q ≠ 0 to show it is rational?",
+        "options": [
+          "0/1",
+          "2/0",
+          "1/0",
+          "0/0"
+        ],
+        "answer": 0,
+        "explanation": "Exercise 1.1 Q1 asks if zero is rational and can be written as p/q with q ≠ 0; 0/1 satisfies this while the others do not.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q1"
+      },
+      {
+        "id": "p1_t2_E_5d049dcf",
+        "question": "How many rational numbers lie between 3 and 4?",
+        "options": [
+          "10",
+          "infinitely many",
+          "1",
+          "5"
+        ],
+        "answer": 1,
+        "explanation": "The text states there are infinitely many rational numbers between any two given rational numbers.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t2_E_8f338288",
+        "question": "Which of the following is a rational number between 3 and 4?",
+        "options": [
+          "7/2",
+          "2",
+          "9/2",
+          "5/2"
+        ],
+        "answer": 0,
+        "explanation": "7/2 = 3.5 lies between 3 and 4, consistent with finding rationals between given numbers in the exercises.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q2 style"
+      },
+      {
+        "id": "p1_t2_E_eb3c4246",
+        "question": "A number line shows points at 1 and 2. If you multiply 5/4 by 3/2, where does the result lie?",
+        "options": [
+          "Less than 1",
+          "Between 1 and 2",
+          "Greater than 2",
+          "At 1"
+        ],
+        "answer": 1,
+        "explanation": "5/4 × 3/2 = 15/8 which is between 1 and 2, illustrating infinitely many rationals there.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Number line gaps"
+      },
+      {
+        "id": "p1_t2_E_90d29b0f",
+        "question": "Between 0 and 1 there are infinitely many rationals; which of these is one such number?",
+        "options": [
+          "3/2",
+          "1/3",
+          "√2",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt explains there are infinitely many rationals between any two given rationals, such as 1/3 between 0 and 1.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q2 style"
+      },
+      {
+        "id": "p1_t2_E_0d60cd7c",
+        "question": "Can we find all numbers on the number line by listing only rationals?",
+        "options": [
+          "Yes, all covered",
+          "Only integers needed",
+          "Only between 1 and 2",
+          "No, gaps remain"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt shows gaps persist with infinitely many numbers beyond listed rationals.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Introduction"
+      },
+      {
+        "id": "p1_t2_E_3b3278f9",
+        "question": "A rope of length √7 m is cut into two equal parts; what is each part's length?",
+        "options": [
+          "√7",
+          "2√7",
+          "7/2",
+          "√7 / 2"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt shows irrationals fill all gaps so halving an irrational length stays irrational.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t2_E_7bae8b4c",
+        "question": "How many rational numbers lie between the rationals 1/2 and 3/4?",
+        "options": [
+          "Five",
+          "Two",
+          "One",
+          "Infinitely many"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states there are infinitely many rational numbers between any two given rational numbers.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t2_E_8cfd6695",
+        "question": "A number line has space for how many rationals between 3/2 and 5/2?",
+        "options": [
+          "one",
+          "two",
+          "none",
+          "infinitely many"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states there are infinitely many rational numbers between any two given rational numbers.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t2_E_d80ad31e",
+        "question": "A rope of length 3/4 m is cut into two parts of 1/4 m and 2/4 m. What does this show about rationals?",
+        "options": [
+          "They can be split into more rationals",
+          "They have gaps",
+          "They are finite between points",
+          "They equal irrationals"
+        ],
+        "answer": 0,
+        "explanation": "Any two rationals like 1/4 and 2/4 have infinitely many rationals between them as per the chapter.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q1 style"
+      },
+      {
+        "id": "p1_t2_E_ca341606",
+        "question": "Find the result: -3/5 + 3/5 on the number line.",
+        "options": [
+          "3/5",
+          "0",
+          "-6/5",
+          "6/5"
+        ],
+        "answer": 1,
+        "explanation": "Adding opposites like -3/5 and 3/5 returns to zero, consistent with rational positions on the line.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t2_E",
+        "category_label": "Rational Ops · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 1,
+    "topic_id": 2,
+    "chapter_num": 1,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_01/top_level.txt"
+  }
+}

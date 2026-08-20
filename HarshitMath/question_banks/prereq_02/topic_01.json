@@ -1,0 +1,420 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p2_t1_A_d8ceaba8",
+        "question": "Combine like terms: 5x − 2x + 3x from the expression 5x³ − 2x² + 3x − 2.",
+        "options": [
+          "6x",
+          "4x",
+          "8x",
+          "5x"
+        ],
+        "answer": 0,
+        "explanation": "Like terms with the same variable x are added by combining coefficients: 5 − 2 + 3 = 6, giving 6x as in the polynomial evaluation style of Example 2.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 Q1 style"
+      },
+      {
+        "id": "p2_t1_A_153df13b",
+        "question": "Subtract like terms: 4x² − x² from the terms in 5x³ + 4x² + 7x.",
+        "options": [
+          "5x²",
+          "3x²",
+          "2x²",
+          "4x²"
+        ],
+        "answer": 1,
+        "explanation": "Subtract coefficients of like terms x²: 4 − 1 = 3, yielding 3x² following the coefficient identification in Exercise 2.1 Q2.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 Q2 style"
+      },
+      {
+        "id": "p2_t1_A_6afe22bb",
+        "question": "Add the constant terms −2 and −2 from p(x) = 5x³ − 2x² + 3x − 2.",
+        "options": [
+          "−4",
+          "0",
+          "−2",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "Constants are like terms; −2 + (−2) = −4, matching the constant polynomial handling and p(1) calculation in the chapter.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3"
+      },
+      {
+        "id": "p2_t1_A_6ef6f4b2",
+        "question": "Combine like terms: −2x² + x² in the polynomial 5x³ − 2x² + 3x − 2.",
+        "options": [
+          "−3x²",
+          "−2x²",
+          "x²",
+          "−x²"
+        ],
+        "answer": 3,
+        "explanation": "Add coefficients of x² terms: −2 + 1 = −1, resulting in −x² as done when evaluating polynomials at specific values.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t1_A",
+        "category_label": "Poly +/- · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 2"
+      }
+    ],
+    "B": [
+      {
+        "id": "p2_t1_B_5e530b74",
+        "question": "Add the polynomials 2 + x² + x and y² + 2.",
+        "options": [
+          "x² + y² + 2",
+          "3x² + y² + 4",
+          "x² + x + y² + 4",
+          "x² + x + 2y²"
+        ],
+        "answer": 2,
+        "explanation": "Unlike terms with different variables cannot be combined, so add constants and keep each term separate as per the form of a polynomial.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 Q2 style"
+      },
+      {
+        "id": "p2_t1_B_4a462130",
+        "question": "Subtract: (x¹⁰ + y³ + t⁵⁰) − (y³ + 2).",
+        "options": [
+          "x¹⁰ + 2y³ + t⁵⁰ − 2",
+          "x¹⁰ + y³ + t⁵⁰ − 2",
+          "x¹⁰ + t⁵⁰ − 2",
+          "x¹⁰ − y³ + t⁵⁰ − 2"
+        ],
+        "answer": 2,
+        "explanation": "Subtract by changing signs of unlike terms; y³ terms cancel leaving only unlike terms x¹⁰, t⁵⁰ and constant.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.1"
+      },
+      {
+        "id": "p2_t1_B_2798c964",
+        "question": "Find the result of 5x³ + 4x² + 7x + (4 − y²).",
+        "options": [
+          "5x³ + 4x² + 7x + 4 − y²",
+          "5x³ + 4x² − y² + 11",
+          "5x³ − y² + 11x + 4",
+          "9x³ + 4 − y²"
+        ],
+        "answer": 0,
+        "explanation": "All terms are unlike except the constant 4; add them directly without combining different variables.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 Q4 style"
+      },
+      {
+        "id": "p2_t1_B_706298d9",
+        "question": "What is (3t − 7) − (5t − 7)?",
+        "options": [
+          "−2t + 0",
+          "−2t",
+          "−2t − 14",
+          "2t"
+        ],
+        "answer": 1,
+        "explanation": "Subtract by changing signs; constants cancel and like t terms give −2t, an unlike-term result after simplification.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t1_B",
+        "category_label": "Poly +/- · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 Q5 style"
+      }
+    ],
+    "C": [
+      {
+        "id": "p2_t1_C_53b7e770",
+        "question": "Simplify: (5x³ – 2x² + 3x – 2) − (x – 1)",
+        "options": [
+          "5x³ – 3x² + 2x – 1",
+          "5x³ – 2x² + 4x – 3",
+          "5x³ – 2x² + 2x – 1",
+          "4x³ – 2x² + 3x – 3"
+        ],
+        "answer": 2,
+        "explanation": "Subtract term by term after distributing the negative sign over the parentheses, as shown in evaluating polynomials like p(x) in the chapter.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 style"
+      },
+      {
+        "id": "p2_t1_C_5d4fd785",
+        "question": "Simplify: (x² – 2x) − (x + 2)",
+        "options": [
+          "x² – 3x + 2",
+          "x² – 3x – 2",
+          "x² – x – 2",
+          "x² – x + 2"
+        ],
+        "answer": 1,
+        "explanation": "Distribute the negative sign and combine like terms, matching the subtraction pattern used when finding p(2) and p(–2) for x + 2.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 style"
+      },
+      {
+        "id": "p2_t1_C_47573d43",
+        "question": "Simplify: (3y³ – 4y + 11) − (y² – y + 1)",
+        "options": [
+          "3y³ – y² – 3y + 10",
+          "3y³ – y² – 3y + 12",
+          "3y³ – y² – 5y + 10",
+          "2y³ – y² – 3y + 10"
+        ],
+        "answer": 0,
+        "explanation": "Remove parentheses by changing signs of the subtracted polynomial and combine like terms, following the evaluation steps for q(y) at given values.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 2 style"
+      },
+      {
+        "id": "p2_t1_C_ed3f87da",
+        "question": "Simplify: (4t⁴ + 5t³ – t² + 6) − (2t³ – t² + 3)",
+        "options": [
+          "4t⁴ + 3t³ – 2t² + 3",
+          "4t⁴ + 3t³ + 3",
+          "4t⁴ + 5t³ – 2t² + 3",
+          "4t⁴ + 3t³ – 2t² + 9"
+        ],
+        "answer": 0,
+        "explanation": "Distribute the negative over parentheses then combine like terms, consistent with computing p(t) at t = a in the chapter.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t1_C",
+        "category_label": "Poly +/- · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 2 style"
+      }
+    ],
+    "D": [
+      {
+        "id": "p2_t1_D_5bfcb0e2",
+        "question": "Add: (x² + y² + xyz) + (x² + y²)",
+        "options": [
+          "2x² + 2y² + xyz",
+          "x² + 2y² + xyz",
+          "2x² + 2y²",
+          "2x² + y² + xyz"
+        ],
+        "answer": 0,
+        "explanation": "Combine like terms from the given multi-variable polynomial examples in the chapter.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section on polynomials in more than one variable"
+      },
+      {
+        "id": "p2_t1_D_afa3572e",
+        "question": "Subtract: (p² + q¹⁰ + r) − (p² + r)",
+        "options": [
+          "p² + q¹⁰",
+          "p² + q¹⁰ + 2r",
+          "q¹⁰",
+          "q¹⁰ + r"
+        ],
+        "answer": 2,
+        "explanation": "Subtract corresponding terms using the three-variable polynomial example from the chapter.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section on polynomials in more than one variable"
+      },
+      {
+        "id": "p2_t1_D_325b75a5",
+        "question": "Add: (u³ + v²) + (u³ + v²)",
+        "options": [
+          "2u³ + 2v²",
+          "u³ + v²",
+          "u³ + 2v²",
+          "2u³ + v²"
+        ],
+        "answer": 0,
+        "explanation": "Add like terms of the two-variable polynomial shown in the excerpt.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section on polynomials in more than one variable"
+      },
+      {
+        "id": "p2_t1_D_681f8ba5",
+        "question": "Subtract: (x² + y² + xyz) − xyz",
+        "options": [
+          "x² + y² + 2xyz",
+          "y² + xyz",
+          "x² + xyz",
+          "x² + y²"
+        ],
+        "answer": 3,
+        "explanation": "Remove the common xyz term from the three-variable polynomial example.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t1_D",
+        "category_label": "Poly +/- · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section on polynomials in more than one variable"
+      }
+    ],
+    "E": [
+      {
+        "id": "p2_t1_E_4fe432c0",
+        "question": "Find the value of p(x) = 5x³ − 2x² + 3x − 2 at x = 1.",
+        "options": [
+          "0",
+          "4",
+          "3",
+          "5"
+        ],
+        "answer": 1,
+        "explanation": "Substitute x = 1 to get 5(1)³ − 2(1)² + 3(1) − 2, then simplify the expression 5 − 2 + 3 − 2 by addition and subtraction to obtain 4.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 Q2 style"
+      },
+      {
+        "id": "p2_t1_E_ab102b7c",
+        "question": "Evaluate p(x) = 5x² − 3x + 7 at x = 1.",
+        "options": [
+          "5",
+          "10",
+          "9",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "Replace x with 1 to obtain 5(1)² − 3(1) + 7, then add and subtract the resulting numbers 5 − 3 + 7 to reach 9.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 2(i)"
+      },
+      {
+        "id": "p2_t1_E_34b09215",
+        "question": "What is the value of 5x − 4x² + 3 when x = 2?",
+        "options": [
+          "−5",
+          "−3",
+          "1",
+          "−7"
+        ],
+        "answer": 0,
+        "explanation": "Substitute x = 2 to get 5(2) − 4(2)² + 3 = 10 − 16 + 3, then simplify by addition and subtraction to obtain −5.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 Q1(iii) style"
+      },
+      {
+        "id": "p2_t1_E_b97036e2",
+        "question": "Find p(0) for the polynomial p(y) = y² − y + 1.",
+        "options": [
+          "1",
+          "−1",
+          "0",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "Replace y with 0 to obtain 0 − 0 + 1, then evaluate the addition to reach 1.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t1_E",
+        "category_label": "Poly +/- · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 Q2(i) style"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 2,
+    "topic_id": 1,
+    "chapter_num": 2,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_02/Chapter_02_Polynomials.pdf"
+  }
+}

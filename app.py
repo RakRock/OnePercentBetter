@@ -66,7 +66,7 @@ def _sync_google_sheets_on_startup() -> int:
     try:
         import google_sheets_sync as gss
 
-        if gss.is_configured():
+        if gss.cloud_sync_enabled():
             return gss.sync_from_sheet_to_db()
     except Exception:
         return -1
@@ -80,6 +80,10 @@ _sync_google_sheets_on_startup()
 def _sync_sharepoint_on_startup() -> int:
     """Import daily progress rows from SharePoint once per app process."""
     try:
+        import google_sheets_sync as gss
+
+        if gss.skip_cloud_sync():
+            return 0
         import sharepoint_sync as sps
 
         if sps.is_configured():
@@ -93,16 +97,25 @@ _sync_sharepoint_on_startup()
 
 
 def _flush_pending_emails() -> None:
-    """Retry queued emails on each app interaction (debounced)."""
+    """Retry queued emails in a background thread (never block UI reruns)."""
     try:
         last = st.session_state.get("_email_flush_at", 0.0)
         now = time.time()
-        if now - float(last) < 8:
+        if now - float(last) < 60:
             return
         st.session_state._email_flush_at = now
-        from practice_email.delivery import flush_pending
 
-        flush_pending(max_items=5)
+        def _bg_flush() -> None:
+            try:
+                from practice_email.delivery import flush_pending
+
+                flush_pending(max_items=2, blocking=True)
+            except Exception:
+                pass
+
+        import threading
+
+        threading.Thread(target=_bg_flush, daemon=True).start()
     except Exception:
         pass
 

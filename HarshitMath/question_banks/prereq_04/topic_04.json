@@ -1,0 +1,420 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p4_t4_A_816c0e02",
+        "question": "What is the longest chord of a circle?",
+        "options": [
+          "diameter",
+          "radius",
+          "sector",
+          "arc"
+        ],
+        "answer": 0,
+        "explanation": "The longest chord passes through the centre and equals twice the radius, making it the diameter.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Ex 10.1 Q1(iii)"
+      },
+      {
+        "id": "p4_t4_A_0b514973",
+        "question": "A chord of a circle that is twice as long as its radius is called what?",
+        "options": [
+          "radius",
+          "arc",
+          "diameter",
+          "segment"
+        ],
+        "answer": 2,
+        "explanation": "A chord twice the radius passes through the centre, so it is the diameter.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Ex 10.1 Q2(iv)"
+      },
+      {
+        "id": "p4_t4_A_e2f0cc44",
+        "question": "The line segment joining the centre of a circle to any point on the circle is called what?",
+        "options": [
+          "diameter",
+          "arc",
+          "chord",
+          "radius"
+        ],
+        "answer": 3,
+        "explanation": "By definition, this segment is a radius of the circle.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Ex 10.1 Q2(i)"
+      },
+      {
+        "id": "p4_t4_A_122c8c12",
+        "question": "A circle divides the plane on which it lies into how many parts?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "The circle separates the plane into the interior region and the exterior region.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Ex 10.1 Q1(vi)"
+      }
+    ],
+    "B": [
+      {
+        "id": "p4_t4_B_48ede3d2",
+        "question": "If chords AB and CD of a circle with centre O are equal, then ∠AOB and ∠COD are",
+        "options": [
+          "complementary",
+          "supplementary",
+          "unequal",
+          "equal"
+        ],
+        "answer": 3,
+        "explanation": "Theorem 10.1 states equal chords subtend equal angles at the centre, proved by SSS congruence of triangles AOB and COD.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Theorem 10.1"
+      },
+      {
+        "id": "p4_t4_B_fd1fa206",
+        "question": "If ∠AOB = ∠COD at the centre O of a circle, then chords AB and CD are",
+        "options": [
+          "equal",
+          "parallel",
+          "perpendicular",
+          "unequal"
+        ],
+        "answer": 0,
+        "explanation": "Theorem 10.2 (converse) states that equal angles at the centre imply equal chords.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Theorem 10.2"
+      },
+      {
+        "id": "p4_t4_B_40561b78",
+        "question": "In the proof that equal chords subtend equal angles, triangles AOB and COD are congruent by which rule?",
+        "options": [
+          "SSS",
+          "ASA",
+          "RHS",
+          "SAS"
+        ],
+        "answer": 0,
+        "explanation": "OA = OC (radii), OB = OD (radii), AB = CD (given), so SSS congruence gives ∠AOB = ∠COD.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Theorem 10.1"
+      },
+      {
+        "id": "p4_t4_B_55002b18",
+        "question": "If two equal chords subtend angles at the centre, the angles are",
+        "options": [
+          "twice each other",
+          "half each other",
+          "right angles",
+          "equal"
+        ],
+        "answer": 3,
+        "explanation": "Equal chords of a circle subtend equal angles at the centre as shown by drawing and measuring or by Theorem 10.1.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Theorem 10.1"
+      }
+    ],
+    "C": [
+      {
+        "id": "p4_t4_C_a83c28ea",
+        "question": "If two equal chords AB and CD of a circle with centre O subtend angles at O, then ∠AOB equals",
+        "options": [
+          "∠COD",
+          "2∠COD",
+          "180°",
+          "90°"
+        ],
+        "answer": 0,
+        "explanation": "Theorem 10.1 states equal chords subtend equal angles at the centre, proved by SSS congruence of triangles AOB and COD.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t4_C",
+        "category_label": "Circles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Theorem 10.1"
+      },
+      {
+        "id": "p4_t4_C_338ecba9",
+        "question": "If angles subtended by chords PQ and RS at the centre are equal, then the chords are",
+        "options": [
+          "parallel",
+          "unequal",
+          "perpendicular",
+          "equal"
+        ],
+        "answer": 3,
+        "explanation": "Theorem 10.2 states that chords subtending equal angles at the centre are equal, the converse of Theorem 10.1.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t4_C",
+        "category_label": "Circles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Theorem 10.2"
+      },
+      {
+        "id": "p4_t4_C_d841740d",
+        "question": "The region between a chord and the corresponding arc is called a",
+        "options": [
+          "sector",
+          "segment",
+          "radius",
+          "diameter"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt defines the segment as the region between an arc and the chord of the circle.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t4_C",
+        "category_label": "Circles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Section on segments"
+      },
+      {
+        "id": "p4_t4_C_f7b74eee",
+        "question": "When two arcs of a circle are equal, each being a semicircle, the segments are",
+        "options": [
+          "sectors only",
+          "major segments only",
+          "minor segments only",
+          "semicircular regions"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states that equal semicircular arcs make both segments the same semicircular region.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t4_C",
+        "category_label": "Circles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Section on segments and sectors"
+      }
+    ],
+    "D": [
+      {
+        "id": "p4_t4_D_c0c7399c",
+        "question": "The region between an arc and the two radii joining the centre to the endpoints of the arc is called what?",
+        "options": [
+          "Chord",
+          "Segment",
+          "Sector",
+          "Diameter"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt defines the region between an arc and the two radii as a sector.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Ch 10 para on sector"
+      },
+      {
+        "id": "p4_t4_D_a1b73a7c",
+        "question": "A minor arc corresponds to which type of sector?",
+        "options": [
+          "Segment only",
+          "Minor sector",
+          "Major sector",
+          "Semicircular region"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt states that the minor arc corresponds to the minor sector.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Ch 10 para on minor/major sector"
+      },
+      {
+        "id": "p4_t4_D_764df2a9",
+        "question": "When two arcs are equal and each is a semicircle, what do the sectors become?",
+        "options": [
+          "Segments only",
+          "Semicircular regions",
+          "Major sectors",
+          "Minor sectors"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt notes that equal semicircular arcs make both sectors semicircular regions.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Ch 10 para on semicircular region"
+      },
+      {
+        "id": "p4_t4_D_1c2246bd",
+        "question": "The region between a chord and an arc of a circle is called what?",
+        "options": [
+          "Radius",
+          "Sector",
+          "Centre",
+          "Segment"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt defines the region between an arc and the chord as a segment of the circle.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Ch 10 para on segment"
+      }
+    ],
+    "E": [
+      {
+        "id": "p4_t4_E_e3f020e8",
+        "question": "In a circle with centre O, equal chords AB and CD subtend angles at O. What is ∠AOB in terms of ∠COD?",
+        "options": [
+          "Twice ∠COD",
+          "Supplementary to ∠COD",
+          "Equal to ∠COD",
+          "Half of ∠COD"
+        ],
+        "answer": 2,
+        "explanation": "Theorem 10.1 states equal chords subtend equal angles at the centre, proved by SSS congruence of triangles AOB and COD.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Theorem 10.1"
+      },
+      {
+        "id": "p4_t4_E_1e546f38",
+        "question": "If ∠AOB = ∠COD at the centre of a circle, which conclusion follows for chords AB and CD?",
+        "options": [
+          "AB is a diameter",
+          "AB and CD are parallel",
+          "AB = 2 × CD",
+          "AB = CD"
+        ],
+        "answer": 3,
+        "explanation": "Theorem 10.2 is the converse: equal angles at the centre imply equal chords, shown by congruent triangles.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Theorem 10.2"
+      },
+      {
+        "id": "p4_t4_E_57e8a7ea",
+        "question": "The region bounded by a minor arc and the chord joining its endpoints is called which part of the circle?",
+        "options": [
+          "Semicircle",
+          "Minor segment",
+          "Major segment",
+          "Minor sector"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt defines the segment as the region between an arc and its chord, with minor segment for the minor arc.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Section on segments"
+      },
+      {
+        "id": "p4_t4_E_e464736e",
+        "question": "The region between a minor arc and the two radii to its endpoints is which part of the circle?",
+        "options": [
+          "Diameter region",
+          "Minor segment",
+          "Major sector",
+          "Minor sector"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt defines the sector as the region between an arc and the two radii, minor sector corresponding to the minor arc.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 10,
+        "chapter_ref": "Section on sectors"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 4,
+    "topic_id": 4,
+    "chapter_num": 10,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_10/Chapter_10_Circles.pdf"
+  }
+}

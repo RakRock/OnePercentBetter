@@ -1,0 +1,420 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p3_t2_A_c1ec8a82",
+        "question": "A line through the origin satisfies y = 3x. What is the y-coordinate when x = 2?",
+        "options": [
+          "6",
+          "3",
+          "5",
+          "9"
+        ],
+        "answer": 0,
+        "explanation": "The Cartesian system from the chapter places points satisfying y = mx (c = 0) on a straight line through the origin.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Sec 3.2"
+      },
+      {
+        "id": "p3_t2_A_dcf7c481",
+        "question": "Which point lies on the line y = 4x passing through the origin?",
+        "options": [
+          "(2,6)",
+          "(0,1)",
+          "(1,4)",
+          "(3,10)"
+        ],
+        "answer": 2,
+        "explanation": "Points on y = mx obey the relation with c = 0, as introduced via perpendicular distances in the coordinate plane.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Fig 3.10"
+      },
+      {
+        "id": "p3_t2_A_3a940ddf",
+        "question": "For the line y = (1/2)x with c = 0, find y when x = 6.",
+        "options": [
+          "3",
+          "6",
+          "2",
+          "12"
+        ],
+        "answer": 0,
+        "explanation": "Using the equation form y = mx when the line passes through the origin in the Cartesian plane.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 style"
+      },
+      {
+        "id": "p3_t2_A_359fa4d6",
+        "question": "The point (0,0) satisfies which equation with c = 0?",
+        "options": [
+          "x + y = 1",
+          "y = x + 1",
+          "y = x - 2",
+          "y = 5x"
+        ],
+        "answer": 3,
+        "explanation": "The origin is the intersection of axes; any y = mx passes through (0,0) as shown in the coordinate system setup.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Fig 3.8"
+      }
+    ],
+    "B": [
+      {
+        "id": "p3_t2_B_ca529d6c",
+        "question": "Using the cross-street convention where the 4th street North-South and 3rd street East-West meet, how many cross-streets are referred to as (4, 3)?",
+        "options": [
+          "2",
+          "0",
+          "1",
+          "5"
+        ],
+        "answer": 2,
+        "explanation": "Each pair of one North-South and one East-West street meets at exactly one unique crossing, as described in Exercise 3.1.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 Q2"
+      },
+      {
+        "id": "p3_t2_B_e609e559",
+        "question": "In the Cartesian system, the horizontal line is called the x-axis and the vertical line is called the y-axis. Where do they cross?",
+        "options": [
+          "At (1,0)",
+          "At (0,1)",
+          "At (1,1)",
+          "At the origin O"
+        ],
+        "answer": 3,
+        "explanation": "The two number lines cross at their zeroes, called the origin O, as shown in Fig. 3.8.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t2_B_2e71330f",
+        "question": "The axes divide the plane into four parts called quadrants. Which direction numbers the quadrants anticlockwise starting from OX?",
+        "options": [
+          "I, IV, III, II",
+          "IV, III, II, I",
+          "II, I, IV, III",
+          "I, II, III, IV"
+        ],
+        "answer": 3,
+        "explanation": "Quadrants are numbered I, II, III and IV anticlockwise from OX as stated after Fig. 3.9.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t2_B_668dc6f4",
+        "question": "For point P, the perpendicular distance from the y-axis along the positive x-axis is 4 units. What is the x-coordinate of P?",
+        "options": [
+          "0",
+          "-4",
+          "3",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "The perpendicular distance PN = OM = 4 units gives the x-coordinate directly from the positive x-axis.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Fig. 3.10"
+      }
+    ],
+    "C": [
+      {
+        "id": "p3_t2_C_4e9988cc",
+        "question": "In the Cartesian plane, a vertical line through the point with x-coordinate 4 has which equation?",
+        "options": [
+          "x-y=4",
+          "x+y=4",
+          "y=4",
+          "x=4"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt shows the x-axis as horizontal; any line parallel to the vertical y-axis keeps x fixed at a constant value.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t2_C_91a71db9",
+        "question": "A horizontal line 3 units above the origin has which equation?",
+        "options": [
+          "y=3",
+          "y=-3",
+          "x=3",
+          "x+y=3"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt places the y-axis vertically; a horizontal line parallel to the x-axis keeps y fixed at a constant value.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t2_C_d4a6db47",
+        "question": "The cross-street referred to as (2,5) in the city plan lies on which vertical street?",
+        "options": [
+          "The origin",
+          "The 5th East-West street",
+          "Quadrant II",
+          "The 2nd North-South street"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt defines (2,5) as the intersection of the 2nd North-South (vertical) street with the 5th East-West street.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Exercise 3.1 Q2"
+      },
+      {
+        "id": "p3_t2_C_3876ba78",
+        "question": "Which line is parallel to the x-axis in the coordinate plane described?",
+        "options": [
+          "x=0",
+          "x=−2",
+          "y=x",
+          "y=−2"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt states the x-axis is horizontal, so any line with constant y is horizontal and parallel to it.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      }
+    ],
+    "D": [
+      {
+        "id": "p3_t2_D_3e38f50a",
+        "question": "What is the slope of the line joining points (2, 5) and (4, 3)?",
+        "options": [
+          "-2",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "Using the formula from Cartesian coordinates in section 3.2, slope = (3-5)/(4-2) = -1.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 Q2 style"
+      },
+      {
+        "id": "p3_t2_D_71fabd64",
+        "question": "Find the slope between points (3, 4) and (5, 8).",
+        "options": [
+          "-2",
+          "2",
+          "1",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "Slope = (8-4)/(5-3) = 4/2 = 2, based on perpendicular distances in the coordinate plane.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t2_D_336a4302",
+        "question": "What is the slope of the line through (2, 5) and (3, 4)?",
+        "options": [
+          "1",
+          "2",
+          "-1",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "Slope = (4-5)/(3-2) = -1/1 = -1 using points located on the x-axis and y-axis.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 Q2"
+      },
+      {
+        "id": "p3_t2_D_e7761053",
+        "question": "Calculate the slope joining (4, 3) and (1, 6).",
+        "options": [
+          "-3",
+          "3",
+          "-1",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "Slope = (6-3)/(1-4) = 3/(-3) = -1 from the Cartesian system described.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      }
+    ],
+    "E": [
+      {
+        "id": "p3_t2_E_ed62cfb1",
+        "question": "In the street plan with roads 200 m apart and 5 streets each way, how many cross-streets are referred to as (4, 3)?",
+        "options": [
+          "4",
+          "1",
+          "5",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "Each ordered pair like (4, 3) identifies exactly one crossing of the 4th North-South street and 3rd East-West street, as defined in the Cartesian convention.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 Q2"
+      },
+      {
+        "id": "p3_t2_E_07fcf556",
+        "question": "In the street plan, how many cross-streets are referred to as (3, 4)?",
+        "options": [
+          "4",
+          "5",
+          "3",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "The convention assigns each unique pair (North-South street, East-West street) to one crossing, so (3, 4) names exactly one location.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 Q2"
+      },
+      {
+        "id": "p3_t2_E_8da3def0",
+        "question": "On the Cartesian plane, the x-axis and y-axis cross at which point called the origin?",
+        "options": [
+          "(0, 1)",
+          "(0, 0)",
+          "(1, 0)",
+          "(1, 1)"
+        ],
+        "answer": 1,
+        "explanation": "The two number lines intersect at their zeroes, forming the origin O with coordinates (0, 0) as described in the setup of axes.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t2_E_564e26df",
+        "question": "The axes divide the plane into how many quadrants numbered anticlockwise from OX?",
+        "options": [
+          "3",
+          "5",
+          "2",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "The x-axis and y-axis create four quadrants labeled I, II, III and IV starting anticlockwise from the positive x-axis.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 3,
+    "topic_id": 2,
+    "chapter_num": 3,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_03/Chapter_03_Coordinate_Geometry.pdf"
+  }
+}

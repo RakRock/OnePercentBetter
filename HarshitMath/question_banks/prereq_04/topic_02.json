@@ -1,0 +1,420 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p4_t2_A_e1fc587f",
+        "question": "In ∆ABC, ∠B = ∠C = 50°. Find ∠A.",
+        "options": [
+          "80°",
+          "100°",
+          "90°",
+          "60°"
+        ],
+        "answer": 0,
+        "explanation": "Angle sum property states that sum of angles in a triangle is 180°; so ∠A = 180° − 50° − 50°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Ex 7.1 style activity"
+      },
+      {
+        "id": "p4_t2_A_66d8f168",
+        "question": "In isosceles ∆ABC with AB = AC, ∠B = 65°. Find ∠A.",
+        "options": [
+          "50°",
+          "130°",
+          "65°",
+          "115°"
+        ],
+        "answer": 0,
+        "explanation": "By Theorem 7.2 angles opposite equal sides are equal so ∠C = 65°; thus ∠A = 180° − 65° − 65°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.2"
+      },
+      {
+        "id": "p4_t2_A_8cb88c6c",
+        "question": "In ∆ABC, ∠A = 40° and ∠B = 60°. Find ∠C.",
+        "options": [
+          "80°",
+          "100°",
+          "70°",
+          "90°"
+        ],
+        "answer": 0,
+        "explanation": "Angle sum property gives ∠C = 180° − 40° − 60°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Fig. 7.27 style"
+      },
+      {
+        "id": "p4_t2_A_b2466b73",
+        "question": "In ∆ABC with ∠B = ∠C, if ∠A = 80° find ∠B.",
+        "options": [
+          "80°",
+          "50°",
+          "40°",
+          "100°"
+        ],
+        "answer": 1,
+        "explanation": "By converse of Theorem 7.2 sides opposite equal angles are equal; angles sum to 180° so each base angle is 50°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.3"
+      }
+    ],
+    "B": [
+      {
+        "id": "p4_t2_B_2e6b3138",
+        "question": "In Example 3, ∠ABO = ∠DCO because they are alternate angles with AB || CD. Which congruence rule proves ∆AOB ≅ ∆DOC?",
+        "options": [
+          "SAS",
+          "RHS",
+          "SSS",
+          "AAS"
+        ],
+        "answer": 3,
+        "explanation": "The proof uses alternate angles, vertically opposite angles and OA = OD to apply the AAS rule as stated in the example.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Example 3"
+      },
+      {
+        "id": "p4_t2_B_f139d839",
+        "question": "In the proof of Theorem 7.2, AB = AC, ∠BAD = ∠CAD and AD common. Which rule shows ∆BAD ≅ ∆CAD?",
+        "options": [
+          "AAS",
+          "SSS",
+          "SAS",
+          "ASA"
+        ],
+        "answer": 2,
+        "explanation": "The three parts satisfy SAS, so the triangles are congruent and corresponding angles ∠B = ∠C follow.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.2 proof"
+      },
+      {
+        "id": "p4_t2_B_67ba6dde",
+        "question": "In Example 4, ∠BAD = ∠CAD, AD common and ∠ADB = ∠ADC = 90°. Which rule shows ∆ABD ≅ ∆ACD?",
+        "options": [
+          "AAS",
+          "ASA",
+          "SSS",
+          "SAS"
+        ],
+        "answer": 1,
+        "explanation": "The given angles and common side satisfy ASA, yielding AB = AC by CPCT.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Example 4"
+      },
+      {
+        "id": "p4_t2_B_748004cc",
+        "question": "Theorem 7.3 states that sides opposite equal angles are equal; it is the converse of which earlier theorem?",
+        "options": [
+          "SAS rule",
+          "Theorem 7.2",
+          "Theorem 7.1",
+          "AAS rule"
+        ],
+        "answer": 1,
+        "explanation": "The text explicitly calls Theorem 7.3 the converse of Theorem 7.2 about angles opposite equal sides.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.3"
+      }
+    ],
+    "C": [
+      {
+        "id": "p4_t2_C_85c782b3",
+        "question": "In ∆BAD and ∆CAD, AB = AC, ∠BAD = ∠CAD and AD = AD. Which rule shows ∆BAD ≅ ∆CAD?",
+        "options": [
+          "AAS",
+          "SAS",
+          "SSS",
+          "ASA"
+        ],
+        "answer": 1,
+        "explanation": "The equal parts are two sides and the included angle, matching the SAS congruence rule from the chapter.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t2_C",
+        "category_label": "Triangles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.2 proof"
+      },
+      {
+        "id": "p4_t2_C_918b199d",
+        "question": "In ∆ABD and ∆BAC, AD = BC and ∠DAB = ∠CBA. What additional part is needed for SAS congruence?",
+        "options": [
+          "BD = AC",
+          "∠ADB = ∠ACB",
+          "AB common",
+          "∠ABD = ∠BAC"
+        ],
+        "answer": 2,
+        "explanation": "AB is the included side between the given angle and side in each triangle, satisfying SAS.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t2_C",
+        "category_label": "Triangles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Ex 7.1 Q2 style"
+      },
+      {
+        "id": "p4_t2_C_c440853b",
+        "question": "Given AB = AD, AC = AE and ∠BAD = ∠EAC, which triangles are congruent by SAS?",
+        "options": [
+          "∆ABD ≅ ∆AEC",
+          "∆BAD ≅ ∆EAC",
+          "∆BAC ≅ ∆DAE",
+          "∆ABC ≅ ∆ADE"
+        ],
+        "answer": 1,
+        "explanation": "AB = AD (sides), ∠BAD = ∠EAC (included angles) and AC = AE (sides) meet SAS criteria.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t2_C",
+        "category_label": "Triangles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Ex 7.1 Q6"
+      },
+      {
+        "id": "p4_t2_C_26c55b42",
+        "question": "In ∆APB and ∆AQB, AP = AQ, ∠PAB = ∠QAB and AB common. By which rule are the triangles congruent?",
+        "options": [
+          "SSS",
+          "RHS",
+          "AAA",
+          "SAS"
+        ],
+        "answer": 3,
+        "explanation": "Two sides and the included angle are equal, so SAS applies directly as shown in the chapter examples.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t2_C",
+        "category_label": "Triangles · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Ex 7.1 Q5 style"
+      }
+    ],
+    "D": [
+      {
+        "id": "p4_t2_D_ffc19913",
+        "question": "In △ABC, AB = AC. By Theorem 7.2, which angles are equal?",
+        "options": [
+          "∠A = ∠B",
+          "∠A = ∠B = ∠C",
+          "∠B = ∠C",
+          "∠A = ∠C"
+        ],
+        "answer": 2,
+        "explanation": "Theorem 7.2 states that angles opposite equal sides of an isosceles triangle are equal, so ∠B = ∠C.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.2"
+      },
+      {
+        "id": "p4_t2_D_2536b5f7",
+        "question": "In △ABC, ∠B = ∠C. By Theorem 7.3, which sides are equal?",
+        "options": [
+          "BC = AB",
+          "AB = BC",
+          "AB = AC",
+          "AC = BC"
+        ],
+        "answer": 2,
+        "explanation": "Theorem 7.3 (converse) states that sides opposite equal angles are equal, so AB = AC.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.3"
+      },
+      {
+        "id": "p4_t2_D_908de380",
+        "question": "△ABC has AB = AC and AD bisects ∠A meeting BC at D. Which congruence shows ∠B = ∠C?",
+        "options": [
+          "△BAD ≅ △CAD by ASA",
+          "△ABD ≅ △ACD by AAS",
+          "△BAD ≅ △CAD by SAS",
+          "△ABC ≅ △ACD by SSS"
+        ],
+        "answer": 2,
+        "explanation": "Proof of Theorem 7.2 uses SAS on △BAD and △CAD with AB = AC, ∠BAD = ∠CAD, AD common.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.2 proof"
+      },
+      {
+        "id": "p4_t2_D_b3f4f3b2",
+        "question": "In △ABC, AD ⊥ BC and bisects ∠A. Which result follows from ASA congruence?",
+        "options": [
+          "AB = BC",
+          "BC = AC",
+          "∠B = ∠A",
+          "AB = AC"
+        ],
+        "answer": 3,
+        "explanation": "Example 4 applies ASA to △ABD and △ACD, giving AB = AC by CPCT so △ABC is isosceles.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Example 4"
+      }
+    ],
+    "E": [
+      {
+        "id": "p4_t2_E_ba1c6620",
+        "question": "In △ABC, AB = AC. By Theorem 7.2, which angles are equal?",
+        "options": [
+          "∠B = ∠A",
+          "∠B = ∠C",
+          "∠A = ∠C",
+          "∠A = ∠B"
+        ],
+        "answer": 1,
+        "explanation": "Theorem 7.2 states angles opposite equal sides of an isosceles triangle are equal.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t2_E",
+        "category_label": "Triangles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.2"
+      },
+      {
+        "id": "p4_t2_E_39db0743",
+        "question": "In △ABC, ∠B = ∠C. By Theorem 7.3, which sides are equal?",
+        "options": [
+          "BC = AB",
+          "AB = BC",
+          "AC = BC",
+          "AB = AC"
+        ],
+        "answer": 3,
+        "explanation": "Theorem 7.3 states sides opposite equal angles of a triangle are equal.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t2_E",
+        "category_label": "Triangles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.3"
+      },
+      {
+        "id": "p4_t2_E_3f1b5a76",
+        "question": "In △ABC, AB = AC and ∠BAD = ∠CAD. If AD is common, which congruence rule shows △BAD ≅ △CAD?",
+        "options": [
+          "ASA",
+          "SAS",
+          "AAS",
+          "SSS"
+        ],
+        "answer": 1,
+        "explanation": "AB = AC (given), ∠BAD = ∠CAD (given), AD = AD (common) gives SAS congruence as in the proof of Theorem 7.2.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t2_E",
+        "category_label": "Triangles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.2 proof"
+      },
+      {
+        "id": "p4_t2_E_2c487242",
+        "question": "In △ABC with AB = AC, if ∠A = 80°, what is ∠B?",
+        "options": [
+          "80°",
+          "40°",
+          "50°",
+          "100°"
+        ],
+        "answer": 2,
+        "explanation": "By Theorem 7.2, ∠B = ∠C and sum of angles is 180°, so each base angle is (180° - 80°)/2 = 50°.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t2_E",
+        "category_label": "Triangles · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 7,
+        "chapter_ref": "Theorem 7.2"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 4,
+    "topic_id": 2,
+    "chapter_num": 7,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_07/Chapter_07_Triangles.pdf"
+  }
+}

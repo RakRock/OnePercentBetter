@@ -1,0 +1,420 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p2_t2_A_cb6c6f6e",
+        "question": "Multiply: 3x × (x + 2) = ?",
+        "options": [
+          "3x² + 6x",
+          "3x² + 2x",
+          "x² + 6x",
+          "3x² + 6"
+        ],
+        "answer": 0,
+        "explanation": "Distribute the monomial 3x over each term of the polynomial using the definition of polynomials in one variable.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 style"
+      },
+      {
+        "id": "p2_t2_A_25642eda",
+        "question": "Multiply: 5 × (2x² – 3x + 7) = ?",
+        "options": [
+          "10x² – 15x + 35",
+          "10x² – 3x + 7",
+          "5x² – 15x + 35",
+          "10x² – 15x + 7"
+        ],
+        "answer": 0,
+        "explanation": "Multiply the constant monomial by each term of the polynomial as shown in examples like p(x) = 5x³ – 2x² + 3x – 2.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3"
+      },
+      {
+        "id": "p2_t2_A_4e2a3b2e",
+        "question": "Multiply: –x × (x – 1) = ?",
+        "options": [
+          "–x² + x",
+          "–x + 1",
+          "–x² – x",
+          "x² – x"
+        ],
+        "answer": 0,
+        "explanation": "Apply the monomial to each term of the linear polynomial x – 1, matching the form used to find zeroes.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 Q4 style"
+      },
+      {
+        "id": "p2_t2_A_1798a9c2",
+        "question": "Multiply: 4t × (t² + 5t – 1) = ?",
+        "options": [
+          "t³ + 20t² – t",
+          "4t³ + 20t² – 4t",
+          "4t³ + 5t² – 4t",
+          "4t³ + 20t² – t"
+        ],
+        "answer": 1,
+        "explanation": "Distribute 4t over the cubic polynomial terms following the structure of p(t) = 4t⁴ + 5t³ – t² + 6.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t2_A",
+        "category_label": "Poly × · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 2 style"
+      }
+    ],
+    "B": [
+      {
+        "id": "p2_t2_B_e2af581a",
+        "question": "What is (x - 1) × (x + 1)?",
+        "options": [
+          "x² - 1",
+          "x² + 1",
+          "x² + 2x + 1",
+          "x² - 2x + 1"
+        ],
+        "answer": 0,
+        "explanation": "The product expands directly as shown in the exercise example p(x) = (x - 1)(x + 1).",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 Q2(iv)"
+      },
+      {
+        "id": "p2_t2_B_8f053ce5",
+        "question": "Multiply the binomials (2x + 3) and (x - 1).",
+        "options": [
+          "2x² + x - 3",
+          "2x² - 3x - 3",
+          "2x² - x - 3",
+          "2x² + x + 3"
+        ],
+        "answer": 0,
+        "explanation": "Apply the distributive law to each term of the first binomial with the second, matching the polynomial form in the chapter.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 Q1 style"
+      },
+      {
+        "id": "p2_t2_B_d0e5b104",
+        "question": "What is the result of (y + 2) × (y - 2)?",
+        "options": [
+          "y² + 2y - 4",
+          "y² - 4",
+          "y² + 4",
+          "y² - 2y + 4"
+        ],
+        "answer": 1,
+        "explanation": "Difference of squares follows from binomial multiplication as seen with linear polynomials in section 2.3.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3 examples"
+      },
+      {
+        "id": "p2_t2_B_674df133",
+        "question": "Find (3t - 7) × (t + 1).",
+        "options": [
+          "3t² - 4t + 7",
+          "3t² - 4t - 7",
+          "3t² + 4t - 7",
+          "3t² - 7t - 7"
+        ],
+        "answer": 1,
+        "explanation": "Each term of the first binomial multiplies the second, consistent with evaluating and forming polynomials like 5t - 7 in the exercises.",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t2_B",
+        "category_label": "Poly × · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 Q4(iii)"
+      }
+    ],
+    "C": [
+      {
+        "id": "p2_t2_C_3c4a96ef",
+        "question": "What is the value of p(x) = 5x² – 3x + 7 at x = 1?",
+        "options": [
+          "9",
+          "15",
+          "8",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "Substitute x=1 into the polynomial: 5(1)² – 3(1) + 7 = 5 – 3 + 7 = 9, as shown in the chapter example for evaluating polynomials.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.1 style / Section 2.3"
+      },
+      {
+        "id": "p2_t2_C_643d05c1",
+        "question": "What is a zero of the polynomial p(x) = x – 1?",
+        "options": [
+          "2",
+          "–1",
+          "1",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "p(1) = 1 – 1 = 0, so 1 is a zero as defined in the section on zeroes of a polynomial.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3 Example 3"
+      },
+      {
+        "id": "p2_t2_C_d326fd22",
+        "question": "How many zeroes does every linear polynomial have?",
+        "options": [
+          "Two",
+          "One and only one",
+          "None",
+          "Three"
+        ],
+        "answer": 1,
+        "explanation": "A linear polynomial ax + b (a ≠ 0) has exactly one zero obtained by solving ax + b = 0, per the chapter observations.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3"
+      },
+      {
+        "id": "p2_t2_C_7cb65aad",
+        "question": "What is p(2) for the polynomial p(x) = x² – 2x?",
+        "options": [
+          "0",
+          "2",
+          "4",
+          "–2"
+        ],
+        "answer": 0,
+        "explanation": "p(2) = (2)² – 2(2) = 4 – 4 = 0, verifying 2 is a zero as in the chapter example.",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t2_C",
+        "category_label": "Poly × · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Section 2.3 Example 5"
+      }
+    ],
+    "D": [
+      {
+        "id": "p2_t2_D_2fd51198",
+        "question": "What is the value of p(x) = 5x² – 3x + 7 at x = 1?",
+        "options": [
+          "5",
+          "7",
+          "4",
+          "9"
+        ],
+        "answer": 3,
+        "explanation": "Substitute x = 1 into 5x² – 3x + 7 to get 5(1)² – 3(1) + 7 = 5 – 3 + 7 = 9, as shown for this three-term polynomial.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 2 (i)"
+      },
+      {
+        "id": "p2_t2_D_9961ea33",
+        "question": "What is the value of q(y) = 3y³ – 4y + 11 at y = 2?",
+        "options": [
+          "27",
+          "24",
+          "16",
+          "11"
+        ],
+        "answer": 0,
+        "explanation": "Substitute y = 2 into 3y³ – 4y + 11 to get 3(2)³ – 4(2) + 11 = 24 – 8 + 11 = 27.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 2 (ii)"
+      },
+      {
+        "id": "p2_t2_D_0c364368",
+        "question": "Find p(0) for the polynomial p(y) = y² – y + 1.",
+        "options": [
+          "2",
+          "0",
+          "1",
+          "–1"
+        ],
+        "answer": 2,
+        "explanation": "Substitute y = 0 into y² – y + 1 to obtain 0 – 0 + 1 = 1.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Exercise 2.2 Q2 (i)"
+      },
+      {
+        "id": "p2_t2_D_9c1b761f",
+        "question": "Find p(2) for the polynomial p(y) = y² – y + 1.",
+        "options": [
+          "3",
+          "0",
+          "1",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "Substitute y = 2 into y² – y + 1 to obtain 4 – 2 + 1 = 3.",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t2_D",
+        "category_label": "Poly × · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Exercise 2.2 Q2 (i)"
+      }
+    ],
+    "E": [
+      {
+        "id": "p2_t2_E_e55c43e5",
+        "question": "Find the value of p(x) = 5x² – 3x + 7 at x = 1.",
+        "options": [
+          "4",
+          "5",
+          "7",
+          "9"
+        ],
+        "answer": 3,
+        "explanation": "Substitute x=1 into the polynomial and compute 5(1)² – 3(1) + 7 = 9, as shown in the evaluation examples of section 2.3.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Ex 2.2 Q1 style"
+      },
+      {
+        "id": "p2_t2_E_c26c8467",
+        "question": "What is q(2) for q(y) = 3y³ – 4y + 11?",
+        "options": [
+          "11",
+          "27",
+          "16",
+          "24"
+        ],
+        "answer": 1,
+        "explanation": "Replace y with 2 to get 3(8) – 4(2) + 11 = 24 – 8 + 11 = 27, following the polynomial evaluation method.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 2 (ii)"
+      },
+      {
+        "id": "p2_t2_E_56d5b143",
+        "question": "Find a zero of the polynomial p(x) = 2x + 1.",
+        "options": [
+          "-2",
+          "-1/2",
+          "2",
+          "1/2"
+        ],
+        "answer": 1,
+        "explanation": "Solve 2x + 1 = 0 to obtain x = -1/2, which is the unique zero of this linear polynomial.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 4"
+      },
+      {
+        "id": "p2_t2_E_97abdc06",
+        "question": "Verify the zeroes of p(x) = x² – 2x at the points 2 and 0.",
+        "options": [
+          "both 2 and 0",
+          "only 2",
+          "neither",
+          "only 0"
+        ],
+        "answer": 0,
+        "explanation": "p(2) = 4 – 4 = 0 and p(0) = 0 – 0 = 0, confirming both are zeroes as in the verification examples.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t2_E",
+        "category_label": "Poly × · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 2,
+        "chapter_ref": "Example 5"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 2,
+    "topic_id": 2,
+    "chapter_num": 2,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_02/Chapter_02_Polynomials.pdf"
+  }
+}

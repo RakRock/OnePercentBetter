@@ -107,14 +107,40 @@ def is_configured() -> bool:
     return bool(_service_account_info() and _secret("GOOGLE_SHEET_ID"))
 
 
-def _worksheet():
+def cloud_sync_enabled() -> bool:
+    """False when local dev opts out of blocking Google Sheets I/O."""
+    if skip_cloud_sync():
+        return False
+    return is_configured()
+
+
+def skip_cloud_sync() -> bool:
+    """Skip Google Sheets / SharePoint sync (set SKIP_CLOUD_SYNC=true for fast local dev)."""
+    if _secret_bool("SKIP_CLOUD_SYNC", False):
+        return True
+    if os.environ.get("SKIP_CLOUD_SYNC", "").strip().lower() in ("1", "true", "yes", "on"):
+        return True
+    return False
+
+
+_spreadsheet_cache: dict[str, object] = {}
+
+
+def _spreadsheet():
+    """Reuse one gspread client + spreadsheet handle (avoids ~3s auth per call)."""
+    sheet_id = _secret("GOOGLE_SHEET_ID")
+    if not sheet_id:
+        raise RuntimeError("GOOGLE_SHEET_ID not configured")
+    cached = _spreadsheet_cache.get(sheet_id)
+    if cached is not None:
+        return cached
+
     import gspread
     from google.oauth2.service_account import Credentials
 
     info = _service_account_info()
-    sheet_id = _secret("GOOGLE_SHEET_ID")
-    if not info or not sheet_id:
-        raise RuntimeError("Google Sheets credentials or GOOGLE_SHEET_ID not configured")
+    if not info:
+        raise RuntimeError("Google Sheets service account not configured")
 
     scopes = [
         "https://www.googleapis.com/auth/spreadsheets",
@@ -122,7 +148,14 @@ def _worksheet():
     ]
     creds = Credentials.from_service_account_info(info, scopes=scopes)
     client = gspread.authorize(creds)
-    spreadsheet = client.open_by_key(sheet_id)
+    _spreadsheet_cache[sheet_id] = client.open_by_key(sheet_id)
+    return _spreadsheet_cache[sheet_id]
+
+
+def _worksheet():
+    import gspread
+
+    spreadsheet = _spreadsheet()
     try:
         return spreadsheet.worksheet(WORKSHEET_NAME)
     except gspread.WorksheetNotFound:
@@ -383,12 +416,40 @@ def sync_daily_summaries_from_sheet() -> int:
 
 def persist_daily_summary(*, user_id: int, log_date: str) -> tuple[bool, str | None]:
     """Upsert today's summary for one user after an activity completes."""
-    if not is_configured():
+    return flush_user_session_to_sheets(user_id, log_date)
+
+
+def upsert_user_streak_row(user_name: str, user_id: int) -> None:
+    """Update one user's streak row without rewriting the whole tab."""
+    ws = _user_streaks_worksheet()
+    _ensure_user_streaks_headers(ws)
+    when = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    row = [
+        user_name,
+        db.get_login_streak(user_id),
+        db.get_total_login_days(user_id),
+        when,
+    ]
+    for idx, existing in enumerate(ws.get_all_values()[1:], start=2):
+        if existing and str(existing[0]).strip() == user_name:
+            ws.update(range_name=f"A{idx}:D{idx}", values=[row])
+            return
+    ws.append_row(row, value_input_option="USER_ENTERED")
+
+
+def flush_user_session_to_sheets(
+    user_id: int,
+    log_date: str | None = None,
+) -> tuple[bool, str | None]:
+    """One batched Google Sheets push after a practice/activity session completes."""
+    if not cloud_sync_enabled():
         return False, None
     user = db.get_user_by_id(user_id)
     if not user:
         return False, "user not found"
+    log_date = log_date or datetime.now().strftime("%Y-%m-%d")
     try:
+        append_daily_login(user["name"], log_date)
         stats = db.compute_user_daily_summary(user_id, log_date)
         upsert_daily_summary_row(
             user["name"],
@@ -397,6 +458,7 @@ def persist_daily_summary(*, user_id: int, log_date: str) -> tuple[bool, str | N
             avg_score_pct=stats["avg_score_pct"],
             time_spent_seconds=stats["time_spent_seconds"],
         )
+        upsert_user_streak_row(user["name"], user_id)
         return True, None
     except Exception as exc:
         return False, str(exc)
@@ -413,15 +475,8 @@ def sync_streaks_and_logins() -> int:
 
 
 def persist_daily_login(*, user_name: str, user_id: int, log_date: str) -> tuple[bool, str | None]:
-    """Append login to Google Sheets and refresh streak summary. Returns (sheet_ok, error)."""
-    if not is_configured():
-        return False, None
-    try:
-        append_daily_login(user_name, log_date)
-        refresh_user_streaks_sheet()
-        return True, None
-    except Exception as exc:
-        return False, str(exc)
+    """Append login + streak for one user (prefer flush_user_session_to_sheets)."""
+    return flush_user_session_to_sheets(user_id, log_date)
 
 
 def _week_plan_payload(
@@ -549,8 +604,9 @@ def sync_harshit_prereq_plans_from_sheet() -> int:
             prereq_id,
             week_label,
             topics,
-            warmup_count=int(data.get("warmup_count", 2)),
+            warmup_count=int(data.get("warmup_count", 0)),
             use_llm=bool(data.get("use_llm", False)),
+            use_chapter_llm=bool(data.get("use_chapter_llm", True)),
         )
         applied += 1
     return applied
@@ -766,6 +822,7 @@ def persist_edgenuity_practice(
             failed_questions=failed_questions,
             time_spent_seconds=time_spent_seconds,
         )
+        flush_user_session_to_sheets(user_id)
         return True, None
     except Exception as exc:
         return False, str(exc)
@@ -815,6 +872,7 @@ def persist_course3_practice(
             failed_questions=failed_questions,
             time_spent_seconds=time_spent_seconds,
         )
+        flush_user_session_to_sheets(user_id)
         return True, None
     except Exception as exc:
         return False, str(exc)

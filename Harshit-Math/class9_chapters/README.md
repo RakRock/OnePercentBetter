@@ -11,6 +11,21 @@ export HARSHIT_CLASS9_CHAPTERS="/path/to/your/chapters"
 The app uses **only** this repo folder by default (safe for Streamlit Cloud).
 Do not rely on `~/Downloads` unless you explicitly set the env var.
 
+## Question banks (from chapter PDFs)
+
+After adding PDFs, build cached MCQs derived from the book:
+
+```bash
+export XAI_API_KEY=your_key
+python3 scripts/import_harshit_class9_chapters.py
+python3 scripts/build_harshit_chapter_questions.py --prereq 1 --per-level 4
+python3 scripts/build_harshit_chapter_questions.py --all --per-level 3
+```
+
+Banks are saved under `HarshitMath/question_banks/`. Practice prefers these over generic templates.
+
+With `XAI_API_KEY` set, the app can also generate live from PDF excerpts when the bank is empty (Week Setup → *Generate from chapter PDFs*).
+
 ## Supported formats
 
 - Markdown / text: `.md`, `.markdown`, `.txt`

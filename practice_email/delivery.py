@@ -11,7 +11,13 @@ from datetime import datetime
 from pathlib import Path
 
 from practice_email.format import build_failed_questions, format_practice_report_email
-from practice_email.settings import email_configured, load_settings
+from practice_email.settings import (
+    EmailConfigError,
+    delivery_ready,
+    format_config_error,
+    format_delivery_error,
+    load_settings,
+)
 from practice_email.transport import deliver_now
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -81,20 +87,32 @@ def _run_worker(path: Path, *, wait: bool) -> tuple[bool, str]:
         return False, str(exc)
 
 
-def flush_pending(*, max_items: int = 10) -> tuple[int, int]:
+def _is_retryable(exc: Exception) -> bool:
+    """Config and DNS/host errors should not spawn background SMTP retries."""
+    if isinstance(exc, EmailConfigError):
+        return False
+    msg = str(exc).lower()
+    if "not configured" in msg or "secrets.toml" in msg:
+        return False
+    if "errno 8" in msg or "nodename nor servname" in msg or "name or service not known" in msg:
+        return False
+    if "smtp_host" in msg and ("missing" in msg or "valid hostname" in msg):
+        return False
+    return True
+
+
+def flush_pending(*, max_items: int = 10, blocking: bool = True) -> tuple[int, int]:
     """Try to send queued emails. Returns (sent_count, remaining_count)."""
     _ensure_queue()
     sent = 0
     for path in sorted(QUEUE_DIR.glob("*.json"))[:max_items]:
-        ok, _ = _run_worker(path, wait=True)
-        if ok and not path.exists():
-            sent += 1
-        elif ok and path.exists():
-            try:
-                path.unlink(missing_ok=True)
+        if not path.is_file():
+            continue
+        ok, _ = _run_worker(path, wait=blocking)
+        if blocking:
+            if ok and not path.exists():
                 sent += 1
-            except OSError:
-                pass
+        # Non-blocking: spawn worker only; worker deletes the file on success.
     remaining = len(list(QUEUE_DIR.glob("*.json")))
     return sent, remaining
 
@@ -117,8 +135,16 @@ def send_report(
     settings = load_settings()
     if not settings.enabled:
         return EmailSendResult(ok=False, skipped=True, error="Email disabled")
-    if not email_configured():
-        return EmailSendResult(ok=False, skipped=True, error="Email not configured")
+    if not settings.recipient:
+        return EmailSendResult(ok=False, skipped=True, error="PRACTICE_REPORT_EMAIL_TO is not set")
+
+    ready, _transport, config_err = delivery_ready(settings)
+    if not ready:
+        return EmailSendResult(
+            ok=False,
+            skipped=True,
+            error=config_err or format_config_error(settings),
+        )
 
     subject, plain, html = format_practice_report_email(
         student_name=student_name,
@@ -137,18 +163,30 @@ def send_report(
         transport = deliver_now(settings, subject, plain, html)
         return EmailSendResult(ok=True, recipient=settings.recipient, transport=transport)
     except Exception as exc:
+        user_err = format_delivery_error(exc, settings)
+        if isinstance(exc, EmailConfigError) or not _is_retryable(exc):
+            return EmailSendResult(
+                ok=False,
+                skipped=True,
+                pending=False,
+                recipient=settings.recipient,
+                error=user_err,
+            )
+
         path = _write_payload(subject=subject, plain=plain, html=html)
         ok, worker_err = _run_worker(path, wait=True)
-        if ok or not path.exists():
+        if ok and not path.exists():
             return EmailSendResult(ok=True, recipient=settings.recipient, transport="worker")
-        _run_worker(path, wait=False)
-        flush_pending(max_items=3)
-        if not path.exists():
+        sent, _remaining = flush_pending(max_items=3, blocking=True)
+        if sent and not path.exists():
             return EmailSendResult(ok=True, recipient=settings.recipient, transport="worker")
-        err = str(exc) or worker_err or "Send failed"
+        err = format_delivery_error(
+            RuntimeError(worker_err or user_err or "Send failed"),
+            settings,
+        )
         return EmailSendResult(
             ok=False,
-            pending=True,
+            pending=path.exists(),
             recipient=settings.recipient,
             error=err,
         )

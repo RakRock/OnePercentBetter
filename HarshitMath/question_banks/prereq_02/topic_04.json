@@ -1,0 +1,420 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p2_t4_A_e2fcfed3",
+        "question": "For the equation 2x + 3y = 12, find y when x = 3.",
+        "options": [
+          "0",
+          "3",
+          "2",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "Substitute x = 3 into 2x + 3y = 12 to get 6 + 3y = 12, so y = 2, as shown in the chapter for finding solutions of linear equations in two variables.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Linear 2-var · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 3 style"
+      },
+      {
+        "id": "p2_t4_A_c4e1da54",
+        "question": "For the equation x + 2y = 6, find y when x = 0.",
+        "options": [
+          "6",
+          "2",
+          "0",
+          "3"
+        ],
+        "answer": 3,
+        "explanation": "Substitute x = 0 into x + 2y = 6 to get 2y = 6, so y = 3, matching the method of choosing x = 0 to find y.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Linear 2-var · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 3"
+      },
+      {
+        "id": "p2_t4_A_130ca30a",
+        "question": "For the equation 2x + 3y = 12, find y when x = 2.",
+        "options": [
+          "4",
+          "8/3",
+          "2",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "Substitute x = 2 into 2x + 3y = 12 to get 4 + 3y = 12, so y = 8/3, as in the chapter example of generating solutions.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Linear 2-var · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Section 4.3"
+      },
+      {
+        "id": "p2_t4_A_d1a33ab4",
+        "question": "For the equation 4x + 3y = 12, find y when x = 0.",
+        "options": [
+          "3",
+          "0",
+          "4",
+          "12"
+        ],
+        "answer": 2,
+        "explanation": "Substitute x = 0 into 4x + 3y = 12 to get 3y = 12, so y = 4, following the remark on taking x = 0 to find y.",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 2,
+        "category": "p2_t4_A",
+        "category_label": "Linear 2-var · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 4"
+      }
+    ],
+    "B": [
+      {
+        "id": "p2_t4_B_289d0fdd",
+        "question": "For the equation x + 2y = 6, if y = 1, what is the value of x?",
+        "options": [
+          "0",
+          "4",
+          "2",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "Substitute y = 1 into x + 2y = 6 to get x + 2 = 6, so x = 4, as shown in Example 3.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Linear 2-var · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 3"
+      },
+      {
+        "id": "p2_t4_B_25c8f819",
+        "question": "For the equation 4x + 3y = 12, if y = 4, what is the value of x?",
+        "options": [
+          "4",
+          "0",
+          "3",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "Substitute y = 4 into 4x + 3y = 12 to get 4x + 12 = 12, so x = 0, matching the method in Example 4(i).",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Linear 2-var · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 4(i)"
+      },
+      {
+        "id": "p2_t4_B_50226f99",
+        "question": "For the equation 2x + 5y = 0, if y = -2/5, what is the value of x?",
+        "options": [
+          "0",
+          "-1",
+          "1",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "Substitute y = -2/5 into 2x + 5y = 0 to get 2x - 2 = 0, so x = 1, as found in Example 4(ii).",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Linear 2-var · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 4(ii)"
+      },
+      {
+        "id": "p2_t4_B_358d13e5",
+        "question": "For the equation 3y + 4 = 0 written as 0x + 3y + 4 = 0, if y = -4/3, what is the value of x?",
+        "options": [
+          "-1",
+          "0",
+          "1",
+          "any number"
+        ],
+        "answer": 3,
+        "explanation": "The equation reduces to 3y + 4 = 0 for any x, so when y = -4/3 any value of x works, as in Example 4(iii).",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 2,
+        "category": "p2_t4_B",
+        "category_label": "Linear 2-var · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 4(iii)"
+      }
+    ],
+    "C": [
+      {
+        "id": "p2_t4_C_40b9debd",
+        "question": "For equation 2x + 3y = 12, complete the solution pair with x = 0: (0, ?)",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "Substitute x = 0 to get 3y = 12 so y = 4, matching the infinitely many solutions shown in section 4.3.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t4_C",
+        "category_label": "Linear 2-var · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Ex 4.2 style, section 4.3"
+      },
+      {
+        "id": "p2_t4_C_562112b0",
+        "question": "Complete the solution pair for x + 2y = 6 with y = 0: (?, 0)",
+        "options": [
+          "2",
+          "6",
+          "3",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "Set y = 0 to reduce to x = 6, as done in Example 3 for finding solutions.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t4_C",
+        "category_label": "Linear 2-var · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 3"
+      },
+      {
+        "id": "p2_t4_C_9909377d",
+        "question": "Write x = 3y in form ax + by + c = 0 and find value of b.",
+        "options": [
+          "-3",
+          "3",
+          "0",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "Rewrite as x - 3y = 0 so a = 1, b = -3, c = 0, following Exercise 4.1 Q2 style.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t4_C",
+        "category_label": "Linear 2-var · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Exercise 4.1 Q2"
+      },
+      {
+        "id": "p2_t4_C_f26da33d",
+        "question": "For 4x + 3y = 12, complete the solution pair with x = 0: (0, ?)",
+        "options": [
+          "4",
+          "3",
+          "-4",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "Set x = 0 to get 3y = 12 so y = 4, as shown in Example 4 for obtaining ordered pairs.",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 2,
+        "category": "p2_t4_C",
+        "category_label": "Linear 2-var · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 4"
+      }
+    ],
+    "D": [
+      {
+        "id": "p2_t4_D_22cc9238",
+        "question": "For the equation x + 2y = 6, which ordered pair is a solution?",
+        "options": [
+          "(2, 1)",
+          "(0, 3)",
+          "(1, 2)",
+          "(3, 0)"
+        ],
+        "answer": 1,
+        "explanation": "Substituting x=0 gives 2y=6 so y=3, matching the method of setting x=0 to find a point on the line.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t4_D",
+        "category_label": "Linear 2-var · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 3"
+      },
+      {
+        "id": "p2_t4_D_fd9a8e12",
+        "question": "Which point satisfies the equation 2x + y = 7?",
+        "options": [
+          "(0, 7)",
+          "(2, 3)",
+          "(1, 5)",
+          "(3, 1)"
+        ],
+        "answer": 1,
+        "explanation": "Plug x=2 and y=3: 2(2) + 3 = 7, confirming it lies on the graph of the line.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t4_D",
+        "category_label": "Linear 2-var · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Ex 4.2 Q2 style"
+      },
+      {
+        "id": "p2_t4_D_0a3e9cf8",
+        "question": "For 3y + 4 = 0 written as 0x + 3y + 4 = 0, what is one solution pair?",
+        "options": [
+          "(1, -4/3)",
+          "(4/3, 0)",
+          "(0, -4/3)",
+          "(-1, -1)"
+        ],
+        "answer": 2,
+        "explanation": "With x any value the equation gives y = -4/3, so (0, -4/3) is a point satisfying the equation.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t4_D",
+        "category_label": "Linear 2-var · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 4 (iii)"
+      },
+      {
+        "id": "p2_t4_D_65a1cd45",
+        "question": "Which point is a solution of 4x + 3y = 12?",
+        "options": [
+          "(4, 0)",
+          "(1, 3)",
+          "(3, 0)",
+          "(0, 4)"
+        ],
+        "answer": 3,
+        "explanation": "Setting x=0 yields 3y=12 so y=4, giving the ordered pair that can be plotted on the line.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 2,
+        "category": "p2_t4_D",
+        "category_label": "Linear 2-var · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 4 (i)"
+      }
+    ],
+    "E": [
+      {
+        "id": "p2_t4_E_b660ff17",
+        "question": "The cost of a notebook is twice the cost of a pen. Let the cost of the notebook be x and the pen be y. Which equation represents this statement?",
+        "options": [
+          "x - y = 2",
+          "x - 2y = 0",
+          "x + 2y = 0",
+          "2x - y = 0"
+        ],
+        "answer": 1,
+        "explanation": "The statement gives x = 2y, rewritten as x - 2y = 0 in the form ax + by + c = 0 as shown in Exercise 4.1 Q1.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t4_E",
+        "category_label": "Linear 2-var · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Ex 4.1 Q1"
+      },
+      {
+        "id": "p2_t4_E_764ab543",
+        "question": "For the equation 2x + 3y = 12, which ordered pair is a solution?",
+        "options": [
+          "(4,0)",
+          "(0,3)",
+          "(1,4)",
+          "(3,2)"
+        ],
+        "answer": 3,
+        "explanation": "Substituting x=3, y=2 gives 2(3) + 3(2) = 12, matching the example in section 4.3.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t4_E",
+        "category_label": "Linear 2-var · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Section 4.3"
+      },
+      {
+        "id": "p2_t4_E_e2f759d3",
+        "question": "Write x = -5 as a linear equation in two variables in the form ax + by + c = 0.",
+        "options": [
+          "x + 5 = 0",
+          "0x - 5y = 0",
+          "x + 0y + 5 = 0",
+          "-x + 0y - 5 = 0"
+        ],
+        "answer": 2,
+        "explanation": "As in Example 2(i), x = -5 becomes 1x + 0y + 5 = 0.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t4_E",
+        "category_label": "Linear 2-var · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 2"
+      },
+      {
+        "id": "p2_t4_E_25f1e3b7",
+        "question": "For the equation x + 2y = 6, which pair is a solution obtained by setting y = 0?",
+        "options": [
+          "(0,3)",
+          "(4,1)",
+          "(2,2)",
+          "(6,0)"
+        ],
+        "answer": 3,
+        "explanation": "Setting y=0 reduces to x=6, giving the solution (6,0) as shown in Example 3.",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 2,
+        "category": "p2_t4_E",
+        "category_label": "Linear 2-var · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 4,
+        "chapter_ref": "Example 3"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 2,
+    "topic_id": 4,
+    "chapter_num": 4,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_04/Chapter_04_Linear_Equations_in_Two_Variables.pdf"
+  }
+}

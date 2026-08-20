@@ -82,6 +82,12 @@ def _apply_secrets(secrets: dict) -> None:
     if isinstance(gcp, dict) and gcp:
         os.environ.setdefault("GOOGLE_SERVICE_ACCOUNT_JSON", json.dumps(gcp))
 
+    gmail = secrets.get("gmail_oauth")
+    if isinstance(gmail, dict) and gmail:
+        os.environ.setdefault("GMAIL_CLIENT_ID", str(gmail.get("client_id", "")))
+        os.environ.setdefault("GMAIL_CLIENT_SECRET", str(gmail.get("client_secret", "")))
+        os.environ.setdefault("GMAIL_REFRESH_TOKEN", str(gmail.get("refresh_token", "")))
+
     azure = secrets.get("azure_app")
     if isinstance(azure, dict) and azure:
         os.environ.setdefault("AZURE_TENANT_ID", str(azure.get("tenant_id", "")))

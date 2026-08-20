@@ -281,6 +281,21 @@ def topics_for_prereq(prereq_id: int) -> dict[int, dict]:
     return TOPICS.get(prereq_id, {})
 
 
+def default_week_config(prereq_id: int) -> dict:
+    """Starter plan — Levels A & B on every topic for enough variety in a 15-Q session."""
+    topics = topics_for_prereq(prereq_id)
+    meta = {1: "Number Systems", 2: "Algebra", 3: "Coordinate", 4: "Geometry", 5: "Mensuration", 6: "Data"}
+    label = meta.get(prereq_id, f"PreReq {prereq_id}")
+    return {
+        "week_label": f"{label} — Week 1",
+        "topics": [{"id": tid, "levels": ["A", "B"]} for tid in sorted(topics)],
+        "warmup_count": 0,
+        "use_llm": False,
+        "use_chapter_llm": True,
+        "prereq_id": prereq_id,
+    }
+
+
 def format_topic_level_label(prereq_id: int, topic_id: int, level: str) -> str:
     info = TOPICS.get(prereq_id, {}).get(topic_id, {})
     return f"{info.get('short', topic_id)} · Level {level}"
@@ -298,8 +313,10 @@ def format_week_plan_summary(prereq_id: int, config: dict) -> str:
     wc = config.get("warmup_count", 0)
     if wc:
         lines.append(f"  • Warm-ups: {wc} quick checks")
-    if config.get("use_llm"):
-        lines.append("  • AI generation: on")
+    if config.get("use_chapter_llm") or config.get("use_llm"):
+        lines.append("  • xAI (Grok) live generation: on")
+    else:
+        lines.append("  • xAI (Grok) live generation: off")
     return "\n".join(lines) if lines else "No topics selected."
 
 
@@ -311,8 +328,10 @@ def _mcq(
     options: list[str],
     answer: int,
     explanation: str = "",
+    *,
+    diagram: dict | None = None,
 ) -> dict:
-    return {
+    item = {
         "id": f"p{prereq_id}_t{topic_id}_{level}_{uuid.uuid4().hex[:8]}",
         "question": question,
         "options": options,
@@ -325,10 +344,62 @@ def _mcq(
         "explanation": explanation,
         "source": "template",
     }
+    if diagram:
+        item["diagram"] = diagram
+    return item
+
+
+def _pad_distinct_distractors(correct: str, seen: set[str], needed: int) -> list[str]:
+    """Fill missing wrong options with values distinct from `correct` and `seen`."""
+    padded: list[str] = []
+    try:
+        val = int(correct)
+        for delta in range(1, 50):
+            for offset in (delta, -delta):
+                candidate = str(val + offset)
+                if candidate not in seen:
+                    seen.add(candidate)
+                    padded.append(candidate)
+                    if len(padded) >= needed:
+                        return padded
+    except ValueError:
+        pass
+    try:
+        if "/" in correct:
+            base = Fraction(correct)
+            for delta in range(1, 20):
+                for offset in (Fraction(delta), Fraction(-delta)):
+                    candidate = str(base + offset)
+                    if candidate not in seen:
+                        seen.add(candidate)
+                        padded.append(candidate)
+                        if len(padded) >= needed:
+                            return padded
+    except (ValueError, ZeroDivisionError):
+        pass
+    suffix = 1
+    while len(padded) < needed:
+        candidate = f"{correct} (alt {suffix})"
+        suffix += 1
+        if candidate not in seen:
+            seen.add(candidate)
+            padded.append(candidate)
+    return padded
 
 
 def _shuffle_options(correct: str, wrong: list[str]) -> tuple[list[str], int]:
-    opts = [correct] + wrong[:3]
+    correct = str(correct)
+    seen = {correct}
+    unique_wrong: list[str] = []
+    for item in wrong:
+        candidate = str(item)
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        unique_wrong.append(candidate)
+    if len(unique_wrong) < 3:
+        unique_wrong.extend(_pad_distinct_distractors(correct, seen, 3 - len(unique_wrong)))
+    opts = [correct, *unique_wrong[:3]]
     random.shuffle(opts)
     return opts, opts.index(correct)
 
@@ -337,16 +408,35 @@ def _shuffle_options(correct: str, wrong: list[str]) -> tuple[list[str], int]:
 
 
 def _gen_p1_t1(level: str) -> dict:
-    if level in ("A", "B"):
+    if level == "A":
         a, b = random.randint(-9, 9), random.randint(-9, 9)
         while a == b:
             b = random.randint(-9, 9)
         farther = a if abs(a) > abs(b) else b
         opts, ans = _shuffle_options(str(farther), [str(a), str(b), str(-farther)])
         return _mcq(1, 1, level, f"Which is farther from zero: {a} or {b}?", opts, ans, f"|{farther}| is larger.")
-    x, y = random.randint(1, 8), random.randint(1, 8)
-    opts, ans = _shuffle_options(str(x - y), [str(x + y), str(-x - y), str(y - x)])
-    return _mcq(1, 1, level, f"Compute: {x} − ({y})", opts, ans)
+    if level == "B":
+        a, b = random.randint(-12, 12), random.randint(-12, 12)
+        opts, ans = _shuffle_options(str(a + b), [str(a - b), str(a * b), str(b - a)])
+        return _mcq(1, 1, level, f"Compute: ({a}) + ({b})", opts, ans, "Add integers carefully, including signs.")
+    if level in ("C", "D"):
+        a, b = random.randint(-9, 9), random.randint(1, 8)
+        val = a - b
+        opts, ans = _shuffle_options(str(val), [str(a + b), str(-val), str(b - a)])
+        return _mcq(1, 1, level, f"Compute: {a} − {b}", opts, ans)
+    a, b, c = random.randint(-5, 5), random.randint(-5, 5), random.randint(1, 4)
+    pattern = random.choice(["nested_sub", "group_add", "mixed_signs"])
+    if pattern == "group_add":
+        val = (a + b) - c
+        opts, ans = _shuffle_options(str(val), [str(a + b + c), str(a - b + c), str(c - a - b)])
+        return _mcq(1, 1, level, f"Compute: ({a} + {b}) − {c}", opts, ans)
+    if pattern == "mixed_signs":
+        val = a - b - c
+        opts, ans = _shuffle_options(str(val), [str(a + b + c), str(b + c - a), str(a - b + c)])
+        return _mcq(1, 1, level, f"Compute: {a} − {b} − {c}", opts, ans)
+    val = a - (b + c)
+    opts, ans = _shuffle_options(str(val), [str(a + b + c), str(b + c - a), str(a - b + c)])
+    return _mcq(1, 1, level, f"Compute: {a} − ({b} + {c})", opts, ans)
 
 
 def _gen_p1_t2(level: str) -> dict:
@@ -373,21 +463,95 @@ def _gen_p1_t3(level: str) -> dict:
     n = random.randint(2, 5)
     val = Fraction(1, n ** 2)
     opts, ans = _shuffle_options(str(val), [str(Fraction(1, n)), str(Fraction(2, n)), str(n)])
-    return _mcq(1, 3, level, f"Evaluate: {n}^{{-2}}", opts, ans)
+    return _mcq(1, 3, level, f"Evaluate: {n}^-2", opts, ans)
+
+
+def _conjugate_product_mcq(prereq_id: int, topic_id: int, level: str, a: int, b: int) -> dict:
+    """(√a + √b)(√a − √b) = a − b — kid-friendly wording and numeric options."""
+    result = a - b
+    correct = str(result)
+    wrong = [str(a + b), f"√{a} + √{b}", f"√{a} − √{b}"]
+    opts, ans = _shuffle_options(correct, wrong)
+    question = f"Simplify: (√{a} + √{b})(√{a} − √{b}) = ?"
+    if result == 0:
+        explanation = (
+            f"Use (x + y)(x − y) = x² − y². Here both parts use √{a}, so you get {a} − {b} = 0."
+        )
+    else:
+        explanation = (
+            f"Use (x + y)(x − y) = x² − y². With x = √{a} and y = √{b}, you get {a} − {b} = {result}."
+        )
+    return _mcq(prereq_id, topic_id, level, question, opts, ans, explanation)
 
 
 def _gen_p1_t4(level: str) -> dict:
-    n = random.choice([2, 3, 5])
-    opts, ans = _shuffle_options(f"√{n}/n", [f"1/√{n}", f"{n}/√{n}", f"√{n}"])
-    return _mcq(1, 4, level, f"Rationalize: 1/√{n} = ?", opts, ans, "Multiply numerator and denominator by √{n}.")
+    if level in ("A", "B"):
+        n = random.choice([2, 3, 5, 6, 7, 10, 11, 13])
+        opts, ans = _shuffle_options(f"√{n}/{n}", [f"1/√{n}", f"{n}/√{n}", f"√{n}"])
+        return _mcq(
+            1, 4, level,
+            f"Rationalize: 1/√{n} = ?",
+            opts, ans,
+            f"Multiply top and bottom by √{n} to get √{n}/{n}.",
+        )
+    a, b = random.randint(1, 4), random.choice([2, 3, 5])
+    return _conjugate_product_mcq(1, 4, level, a, b)
+
+
+def _construction_mcq(prereq_id: int, topic_id: int, level: str, spec: dict) -> dict:
+    """Number-line / unit-square construction with diagram."""
+    import harshit_math_diagrams as hmd
+
+    kind = spec["type"]
+    if kind == "unit_square":
+        opts, ans = _shuffle_options("√2", ["1", "2", "√3"])
+        expl = "By Pythagoras: OB = √(1² + 1²) = √2. Transfer OB to the number line with a compass."
+        diagram = {"type": "unit_square", "target": 2}
+        question = hmd.kid_friendly_prompt({"diagram": diagram}, diagram) or "What is diagonal OB?"
+    elif kind == "sqrt_number_line":
+        base, perp = int(spec["base"]), int(spec["perp"])
+        target = base * base + perp * perp
+        correct = f"√{target}"
+        opts, ans = _shuffle_options(correct, [str(base + perp), f"√{base * base}", f"√{perp * perp}"])
+        expl = f"By Pythagoras: OB = √({base}² + {perp}²) = √{target}."
+        diagram = {"type": "sqrt_number_line", "base": base, "perp": perp, "target": target}
+        question = hmd.kid_friendly_prompt({"diagram": diagram}, diagram) or "What is hypotenuse OB?"
+    else:  # sqrt_extend
+        perp = int(spec.get("perp", 1))
+        target = int(spec.get("target", 3))
+        correct = f"√{target}"
+        opts, ans = _shuffle_options(correct, ["√2", "2", "√4"])
+        expl = f"By Pythagoras: OB = √((√2)² + {perp}²) = √{target}."
+        diagram = {"type": "sqrt_extend", "base_label": spec.get("base_label", "√2"), "perp": perp, "target": target}
+        question = hmd.kid_friendly_prompt({"diagram": diagram}, diagram) or "What is hypotenuse OB?"
+    return _mcq(prereq_id, topic_id, level, question, opts, ans, expl, diagram=diagram)
 
 
 def _gen_p1_t5(level: str) -> dict:
-    choices = [("√4", "Rational"), ("√2", "Irrational"), ("22/7", "Rational"), ("0.1010010001…", "Irrational")]
-    q, correct = random.choice(choices)
-    wrong = [c for _, c in choices if c != correct]
-    opts, ans = _shuffle_options(correct, wrong)
-    return _mcq(1, 5, level, f"Classify: {q}", opts, ans)
+    if level in ("A", "B"):
+        kind = random.choice(["sqrt_int", "sqrt_prime", "decimal", "frac"])
+        if kind == "sqrt_int":
+            q, correct = f"√{random.choice([4, 9, 16, 25])}", "Rational"
+        elif kind == "sqrt_prime":
+            q, correct = f"√{random.choice([2, 3, 5, 7])}", "Irrational"
+        elif kind == "decimal":
+            q, correct = f"0.{'0' * random.randint(1, 3)}1… (non-repeating)", "Irrational"
+        else:
+            q, correct = f"{random.randint(1, 9)}/3", "Rational"
+        wrong = [x for x in ("Rational", "Irrational") if x != correct]
+        opts, ans = _shuffle_options(correct, wrong + ["Neither"])
+        return _mcq(1, 5, level, f"Classify: {q}", opts, ans)
+    if level in ("C", "D"):
+        spec = random.choice([
+            {"type": "unit_square"},
+            {"type": "sqrt_number_line", "base": 2, "perp": 1},
+            {"type": "sqrt_number_line", "base": 3, "perp": 1},
+            {"type": "sqrt_extend", "base_label": "√2", "perp": 1, "target": 3},
+        ])
+        return _construction_mcq(1, 5, level, spec)
+    n = random.randint(2, 12)
+    opts, ans = _shuffle_options("Between 3 and 4", ["Between 2 and 3", "Between 4 and 5", "Exactly 4"])
+    return _mcq(1, 5, level, f"√{n} lies on the number line…", opts, ans, "√9=3 and √16=4 bracket most values.")
 
 
 # ── Unit 2 generators ──
@@ -525,13 +689,44 @@ GENERATORS: dict[tuple[int, int], callable] = {
 }
 
 
-def generate_question(prereq_id: int, topic_id: int, level: str) -> dict | None:
+def generate_question(
+    prereq_id: int,
+    topic_id: int,
+    level: str,
+    *,
+    exclude_ids: set[str] | None = None,
+    exclude_text: set[str] | None = None,
+    templates_only: bool = False,
+) -> dict | None:
+    import harshit_chapter_questions as hcq
+
+    if not templates_only:
+        q = hcq.pick_question(
+            prereq_id,
+            topic_id,
+            level,
+            exclude_ids=exclude_ids,
+            exclude_text=exclude_text,
+        )
+        if q:
+            return q
+
     fn = GENERATORS.get((prereq_id, topic_id))
     if not fn:
         return None
     if level not in TOPICS.get(prereq_id, {}).get(topic_id, {}).get("levels", {}):
         return None
-    try:
-        return fn(level)
-    except Exception:
-        return None
+    exclude_ids = exclude_ids or set()
+    exclude_text = exclude_text or set()
+    for _ in range(16):
+        try:
+            q = fn(level)
+        except Exception:
+            return None
+        if not q:
+            continue
+        text = str(q.get("question", "")).strip()
+        if q.get("id") in exclude_ids or text in exclude_text:
+            continue
+        return q
+    return None

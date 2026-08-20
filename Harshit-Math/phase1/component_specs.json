@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "design_system": "Harshit Math — low-sensory, anti-gamified",
+    "one_problem_per_screen": true,
+    "no_timers": true,
+    "no_gamification": true
+  },
+  "css_variables": {
+    "--hm-bg-page": "#F7F8FA",
+    "--hm-bg-surface": "#FFFFFF",
+    "--hm-bg-muted": "#EEF1F5",
+    "--hm-bg-accent-soft": "#E8EEF4",
+    "--hm-text-primary": "#1E293B",
+    "--hm-text-secondary": "#64748B",
+    "--hm-text-equation": "#0F172A",
+    "--hm-border-subtle": "#D8DEE6",
+    "--hm-border-focus": "#94A3B8",
+    "--hm-feedback-amber": "#F5DEB3",
+    "--hm-feedback-amber-text": "#92400E",
+    "--hm-success-soft": "#E2E8F0",
+    "--hm-success-text": "#334155",
+    "--hm-number-line-track": "#CBD5E1",
+    "--hm-number-line-tick": "#94A3B8",
+    "--hm-number-line-marker": "#1E3A5F",
+    "--hm-fraction-shade-a": "#B8C9D9",
+    "--hm-fraction-shade-b": "#94A3B8",
+    "--hm-fraction-grid-line": "#D8DEE6",
+    "--hm-spacing-screen": "2.5rem",
+    "--hm-spacing-block": "1.75rem",
+    "--hm-font-body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+    "--hm-font-math": "'Georgia', 'Times New Roman', serif",
+    "--hm-radius": "8px",
+    "--hm-transition": "180ms ease"
+  },
+  "components": {
+    "InteractiveNumberLine": {
+      "description": "Draggable marker(s) or interval selection on a horizontal number line. Required before abstract input.",
+      "props": {
+        "min": { "type": "number", "required": true, "description": "Left bound of the line" },
+        "max": { "type": "number", "required": true, "description": "Right bound of the line" },
+        "step": { "type": "number", "default": 1, "description": "Tick spacing" },
+        "mode": {
+          "type": "enum",
+          "values": ["single_marker", "dual_marker", "interval_select"],
+          "default": "single_marker"
+        },
+        "target": { "type": "number", "required": false, "description": "Expected marker position (single_marker)" },
+        "targets": { "type": "number[]", "required": false, "description": "Expected positions (dual_marker)" },
+        "interval": { "type": "[number, number]", "required": false, "description": "Expected interval (interval_select)" },
+        "tolerance": { "type": "number", "default": 0.25, "description": "Acceptable distance from target" },
+        "showLabels": { "type": "boolean", "default": true },
+        "disabled": { "type": "boolean", "default": false },
+        "onVisualComplete": { "type": "callback", "description": "Fires when placement passes tolerance check" },
+        "ariaLabel": { "type": "string", "default": "Interactive number line" }
+      },
+      "behavior": {
+        "layout": "Full-width track centered on screen with generous vertical padding (--hm-spacing-screen)",
+        "interaction": "Drag marker handle or use keyboard arrows (±step). No snap animation beyond gentle CSS transition.",
+        "validation": "Client validates placement; emits visual_correct or specific error key to state machine",
+        "feedback": "Errors render in soft amber panel below line — no red X icons, no shake animation",
+        "streamlit_bridge": "Returns selected value via st.session_state.hm_nl_value or components iframe postMessage"
+      },
+      "accessibility": {
+        "min_touch_target": "44px",
+        "focus_ring": "2px solid var(--hm-border-focus)",
+        "live_region": "aria-live polite for feedback text"
+      }
+    },
+    "FractionBlockGrid": {
+      "description": "Unit square divided into rows×cols. Student shades regions to build area models before symbolic steps.",
+      "props": {
+        "rows": { "type": "integer", "required": true, "min": 2, "max": 12 },
+        "cols": { "type": "integer", "required": true, "min": 2, "max": 12 },
+        "phase": {
+          "type": "enum",
+          "values": ["shade_rows", "shade_cols", "overlay", "count_overlap"],
+          "default": "shade_rows"
+        },
+        "expectedRowShade": { "type": "integer", "description": "Number of rows to shade (numerator of row fraction)" },
+        "expectedColShade": { "type": "integer", "description": "Number of columns to shade" },
+        "allowToggle": { "type": "boolean", "default": true },
+        "colors": {
+          "type": "object",
+          "default": {
+            "shadeA": "var(--hm-fraction-shade-a)",
+            "shadeB": "var(--hm-fraction-shade-b)",
+            "gridLine": "var(--hm-fraction-grid-line)"
+          }
+        },
+        "disabled": { "type": "boolean", "default": false },
+        "onVisualComplete": { "type": "callback" },
+        "ariaLabel": { "type": "string", "default": "Fraction area model grid" }
+      },
+      "behavior": {
+        "layout": "Single centered square, max-width 320px, surrounded by whitespace",
+        "interaction": "Click/tap cells to toggle shade in active phase. Phases gate progression (rows before cols).",
+        "validation": "Compare shaded row/col counts to expected; overlap phase counts double-shaded cells",
+        "feedback": "Neutral amber hints: 'Shade 2 of the 3 equal rows' — never punitive language",
+        "streamlit_bridge": "Returns { rows_shaded, cols_shaded, overlap_count } in session state"
+      },
+      "accessibility": {
+        "grid_role": "grid with row/column headers announced",
+        "selected_state": "aria-selected on shaded cells"
+      }
+    }
+  },
+  "screen_template": {
+    "structure": [
+      "Back link (muted, top-left)",
+      "Day label + concept title (single line, no badges)",
+      "Problem statement (--hm-font-math, --hm-text-equation)",
+      "Visual manipulative (required first)",
+      "Step input(s) — one visible at a time",
+      "Soft amber feedback panel (conditional)",
+      "Continue button (neutral outline, no primary color pop)"
+    ],
+    "forbidden": [
+      "Countdown timers",
+      "Streak flames / points / levels",
+      "Bright red error states",
+      "Multiple problems visible at once",
+      "Leaderboards or celebratory confetti"
+    ]
+  }
+}

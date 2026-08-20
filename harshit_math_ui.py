@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import time
-import uuid
 
 import streamlit as st
 
@@ -29,6 +28,7 @@ def _open_day(day_id: int):
 
 def _open_prereq_bucket(prereq_id: int):
     st.session_state.hm_prereq_id = prereq_id
+    st.session_state[f"hm_bucket_section_{prereq_id}"] = "🎯 Practice"
     st.session_state.current_page = "harshit_prereq_bucket"
 
 
@@ -187,6 +187,13 @@ def _render_phase1_tab(user: dict | None):
                 st.rerun()
 
 
+def _apply_pending_nav(target_key: str, pending_key: str) -> None:
+    """Apply a pending section change before the matching widget is drawn."""
+    pending = st.session_state.pop(pending_key, None)
+    if pending is not None:
+        st.session_state[target_key] = pending
+
+
 def render_home():
     hmc_ui.inject_harshit_styles()
     name = st.session_state.selected_user
@@ -212,23 +219,35 @@ def render_home():
         unsafe_allow_html=True,
     )
 
-    tab_prereqs, tab_phase1 = st.tabs(["📚 PreReq Units", "🔢 Phase 1 — Number Sense"])
-    with tab_prereqs:
+    _apply_pending_nav("hm_home_section", "hm_home_nav")
+
+    section = st.radio(
+        "Section",
+        ["📚 PreReq Units", "🔢 Number Sense"],
+        horizontal=True,
+        key="hm_home_section",
+        label_visibility="collapsed",
+    )
+
+    st.markdown("---")
+
+    if section == "📚 PreReq Units":
         _render_prereqs_tab(user)
-    with tab_phase1:
+    else:
         _render_phase1_tab(user)
 
 
 def render_prereq_bucket():
     hmc_ui.inject_harshit_styles()
+    import harshit_prereq_practice_ui as hppui
+
     prereq_id = st.session_state.get("hm_prereq_id", 1)
     prereq = hmp.get_prereq(prereq_id)
     if not prereq:
         st.error("PreReq not found.")
         return
 
-    user = db.get_user(st.session_state.selected_user)
-    chapter_status = db.get_harshit_prereq_chapter_status(user["id"], prereq_id) if user else {}
+    hppui.ensure_week_config(prereq_id)
 
     col_nav1, _ = st.columns([1, 6])
     with col_nav1:
@@ -242,72 +261,27 @@ def render_prereq_bucket():
     )
     st.markdown(f'<p style="color:var(--hm-text-secondary);">{prereq.get("summary","")}</p>', unsafe_allow_html=True)
 
-    tab_overview, tab_practice, tab_setup = st.tabs(["📘 Chapters", "🎯 Practice", "📅 Week Setup"])
+    section_key = f"hm_bucket_section_{prereq_id}"
+    _apply_pending_nav(section_key, f"hm_bucket_nav_{prereq_id}")
+    if st.session_state.get(section_key) == "📘 Chapters":
+        st.session_state[section_key] = "🎯 Practice"
+    if section_key not in st.session_state:
+        st.session_state[section_key] = "🎯 Practice"
 
-    with tab_overview:
-        _render_prereq_overview(prereq, prereq_id, chapter_status)
-
-    with tab_practice:
-        import harshit_prereq_practice_ui as hppui
-
-        hppui.render_practice_home(prereq_id)
-
-    with tab_setup:
-        import harshit_prereq_practice_ui as hppui
-
-        hppui.render_setup_panel(prereq_id)
-
-
-def _render_prereq_overview(prereq: dict, prereq_id: int, chapter_status: dict):
-    st.markdown("**Focus areas**")
-    for item in prereq.get("focus", []):
-        st.markdown(f"- {item}")
-
-    g10 = prereq.get("feeds_into_grade10", {})
-    if g10.get("chapters"):
-        st.markdown("**Feeds into Grade 10**")
-        for ch in g10["chapters"]:
-            st.markdown(f"- Chapter {ch['number']}: {ch['title']}")
-        for topic in g10.get("topics", []):
-            st.caption(f"→ {topic}")
-
-    if prereq.get("phase1_link"):
-        st.markdown("---")
-        st.markdown("**Phase 1 bootcamp** — interactive Number Sense for Chapter 1.")
-        if st.button("Open Phase 1 (Days 1–10)", key="hm_goto_phase1", type="secondary"):
-            st.session_state.current_page = "harshit_math_home"
-            st.rerun()
+    section = st.radio(
+        "Section",
+        ["🎯 Practice", "📅 Week Setup"],
+        horizontal=True,
+        key=section_key,
+        label_visibility="collapsed",
+    )
 
     st.markdown("---")
-    st.markdown("**Class 9 chapters**")
-    for ch in prereq.get("class9_chapters", []):
-        num = ch["number"]
-        assets = hmp.resolve_chapter_assets(num, ch.get("folder_aliases"))
-        st_label = chapter_status.get(num, {}).get("status", "not_started")
-        status_label = {
-            "not_started": "Not started",
-            "in_progress": "In progress",
-            "complete": "Complete",
-        }.get(st_label, st_label)
-        content_label = hmp.chapter_status_label(assets)
 
-        st.markdown(
-            f"""
-<div style="background:var(--hm-bg-surface,#fff);border:1px solid var(--hm-border-subtle,#D8DEE6);
-     border-radius:8px;padding:1rem 1.15rem;margin-bottom:0.65rem;">
-  <div style="font-weight:600;color:var(--hm-text-primary);">
-    Chapter {num}: {ch['title']}
-  </div>
-  <div style="color:var(--hm-text-secondary);font-size:0.88rem;margin-top:0.35rem;">
-    {content_label} · {status_label}
-  </div>
-</div>
-""",
-            unsafe_allow_html=True,
-        )
-        if st.button(f"Open Chapter {num}", key=f"hm_ch_{prereq_id}_{num}", use_container_width=True):
-            _open_prereq_chapter(prereq_id, num)
-            st.rerun()
+    if section == "🎯 Practice":
+        hppui.render_practice_home(prereq_id)
+    else:
+        hppui.render_setup_panel(prereq_id)
 
 
 def render_prereq_chapter():
@@ -364,8 +338,8 @@ def render_prereq_chapter():
     st.markdown("---")
 
     if prereq_id == 1 and chapter_num == 1:
-        st.markdown("**Interactive practice** — Phase 1 Number Sense bootcamp for this chapter.")
-        if st.button("Start Phase 1 Day 1", key="hm_ch1_phase1", type="secondary"):
+        st.markdown("**Interactive practice** — Number Sense bootcamp for this chapter.")
+        if st.button("Start Day 1", key="hm_ch1_phase1", type="secondary"):
             _open_day(1)
             st.rerun()
 
@@ -403,7 +377,7 @@ def render_day():
 
     col_nav1, _ = st.columns([1, 6])
     with col_nav1:
-        if st.button("← Phase 1", key="hm_back_home"):
+        if st.button("← Number Sense", key="hm_back_home"):
             st.session_state.current_page = "harshit_math_home"
             st.rerun()
 
@@ -524,9 +498,17 @@ def render_problem():
             _save_sm(sm)
             if ok and sm.is_complete() and user:
                 elapsed = int(time.time() - st.session_state.get("hm_start_time", time.time()))
-                report = {"score_pct": 100, "strengths": [{"name": day.get("title", ""), "pct": 100}]}
-                try:
-                    ec3mail.send_practice_report_email(
+                report = {
+                    "correct_count": 1,
+                    "total": 1,
+                    "score_pct": 100,
+                    "strengths": [{"emoji": "✅", "name": day.get("title", ""), "correct": 1, "total": 1, "pct": 100}],
+                    "needs_revision": [],
+                }
+                email_key = f"hm_day_email_sent_{problem_id}"
+                if st.session_state.get(email_key) != problem_id and ec3mail.practice_email_enabled():
+                    st.session_state[email_key] = problem_id
+                    mail_result = ec3mail.send_harshit_report_email(
                         student_name=st.session_state.selected_user,
                         unit_title=f"Harshit Day {day_id}",
                         unit_subtitle=hmc.PHASE_TITLE,
@@ -534,34 +516,36 @@ def render_problem():
                         time_spent_seconds=elapsed,
                         session_meta={"problem_id": problem_id},
                     )
-                except Exception:
-                    pass
-                try:
-                    gss.persist_ec3_practice_result(
-                        user_name=st.session_state.selected_user,
-                        user_id=user["id"],
-                        session_id=str(uuid.uuid4()),
-                        session_kind="harshit_phase1",
-                        unit_id=day_id + hmc.SESSION_UNIT_OFFSET,
-                        unit_label=f"Day {day_id}: {day.get('title', '')}",
-                        score_pct=100,
-                        correct_count=1,
-                        total_count=1,
-                        time_spent_seconds=elapsed,
-                        report=report,
-                        failed=[],
-                        question_ids=[problem_id],
+                    ec3mail.render_practice_email_result(mail_result)
+                persist_key = f"hm_day_persist_{problem_id}"
+                if st.session_state.get(persist_key) != problem_id:
+                    st.session_state[persist_key] = problem_id
+                    session_id = f"hm-day{day_id}-{problem_id}"
+                    try:
+                        gss.persist_edgenuity_practice(
+                            user_name=st.session_state.selected_user,
+                            user_id=user["id"],
+                            session_id=session_id,
+                            session_kind="harshit_phase1",
+                            unit_id=day_id + hmc.SESSION_UNIT_OFFSET,
+                            unit_label=f"Day {day_id}: {day.get('title', '')}",
+                            report=report,
+                            failed_questions=[],
+                            time_spent_seconds=elapsed,
+                            question_ids=[problem_id],
+                        )
+                    except Exception:
+                        pass
+                    db.save_activity_score(
+                        user["id"],
+                        "HarshitMath",
+                        f"Day {day_id}",
+                        100,
+                        100,
+                        f"Completed {day.get('title', problem_id)}",
+                        elapsed,
+                        flush_sheets=False,
                     )
-                except Exception:
-                    pass
-                db.save_activity_score(
-                    user["id"],
-                    "HarshitMath",
-                    f"Day {day_id}",
-                    score=100,
-                    max_score=100,
-                    time_spent_seconds=elapsed,
-                )
             st.rerun()
 
     _render_feedback(st.session_state.get(feedback_key))

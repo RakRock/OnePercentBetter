@@ -1,0 +1,2060 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p1_t1_A_16304f1b",
+        "question": "Which is farther from zero: 1 or 9?",
+        "options": [
+          "1",
+          "-9",
+          "10",
+          "9"
+        ],
+        "answer": 3,
+        "explanation": "|9| is larger.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_A_6c007126",
+        "question": "Which is farther from zero: 1 or -5?",
+        "options": [
+          "1",
+          "-4",
+          "-5",
+          "5"
+        ],
+        "answer": 2,
+        "explanation": "|-5| is larger.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_A_a55b9da3",
+        "question": "Which is farther from zero: -4 or -5?",
+        "options": [
+          "-4",
+          "5",
+          "-6",
+          "-5"
+        ],
+        "answer": 3,
+        "explanation": "|-5| is larger.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_A_04fb1f97",
+        "question": "Which is farther from zero: 1 or 5?",
+        "options": [
+          "1",
+          "6",
+          "-5",
+          "5"
+        ],
+        "answer": 3,
+        "explanation": "|5| is larger.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_A_d483f5c7",
+        "question": "Where does the centre of a circle lie?",
+        "options": [
+          "Interior",
+          "Exterior",
+          "On The Circle",
+          "Boundary"
+        ],
+        "answer": 0,
+        "explanation": "See EXERCISE 10.1 in NCERT Chapter 1.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_pdf",
+        "chapter_num": 1,
+        "chapter_ref": "EXERCISE 10.1"
+      },
+      {
+        "id": "p1_t1_A_a00d74e5",
+        "question": "Which integer lies between −5 and 2 on the number line?",
+        "options": [
+          "0",
+          "−7",
+          "3",
+          "−6"
+        ],
+        "answer": 0,
+        "explanation": "On the number line, integers increase from left to right, so 0 is between −5 and 2.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_A_f9d5a2c2",
+        "question": "Moving 7 units right from −3 on the number line reaches which integer?",
+        "options": [
+          "4",
+          "10",
+          "−10",
+          "−4"
+        ],
+        "answer": 0,
+        "explanation": "Adding 7 to −3 gives 4, which is 7 units right of −3.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_A_31175f92",
+        "question": "Which integer among −8, 5, −2 and 0 is plotted farthest left on the number line?",
+        "options": [
+          "−2",
+          "−8",
+          "0",
+          "5"
+        ],
+        "answer": 1,
+        "explanation": "Negative integers lie left of 0, and −8 is the smallest so farthest left.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.4"
+      },
+      {
+        "id": "p1_t1_A_120af27f",
+        "question": "How many units is the point for −10 away from 0 on the number line?",
+        "options": [
+          "−5",
+          "−10",
+          "0",
+          "10"
+        ],
+        "answer": 3,
+        "explanation": "Distance from 0 to −10 is 10 units to the left.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t1_A_c0726672",
+        "question": "Which integer lies exactly 4 units to the left of 0 on the number line?",
+        "options": [
+          "-6",
+          "2",
+          "-4",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "Integers are marked at equal intervals on the number line, so 4 units left of 0 is -4.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_A_4365ba05",
+        "question": "What is the distance between the points representing -7 and 3 on the number line?",
+        "options": [
+          "4",
+          "10",
+          "5",
+          "-4"
+        ],
+        "answer": 1,
+        "explanation": "The distance is found by subtracting the smaller integer from the larger: 3 - (-7) = 10.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_A_63063084",
+        "question": "Which of these integers is plotted between -5 and 2?",
+        "options": [
+          "-7",
+          "5",
+          "-2",
+          "3"
+        ],
+        "answer": 2,
+        "explanation": "On the number line, -2 lies between -5 and 2 as -5 < -2 < 2.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Exercise 1.1 style"
+      },
+      {
+        "id": "p1_t1_A_55d7c2cc",
+        "question": "Starting at -8, move 6 units right; which integer is reached?",
+        "options": [
+          "-8",
+          "-2",
+          "2",
+          "-14"
+        ],
+        "answer": 1,
+        "explanation": "Adding 6 to -8 gives -2, corresponding to moving right on the number line.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_A_93c4158e",
+        "question": "Which integer is located 5 units to the left of 3 on the number line?",
+        "options": [
+          "-2",
+          "2",
+          "-8",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "Moving left from 3 by 5 units reaches -2, as shown by integer positions on the number line in the excerpt.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t1_A_c8e5fe0e",
+        "question": "On the number line, which point lies between -5 and 0?",
+        "options": [
+          "5",
+          "-3",
+          "-7",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "Integers from the excerpt such as -5 and 0 show -3 is between them on the number line.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_A_22a9430b",
+        "question": "What integer is obtained by moving 7 units right from -4 on the number line?",
+        "options": [
+          "-11",
+          "3",
+          "11",
+          "-3"
+        ],
+        "answer": 1,
+        "explanation": "Adding 7 to -4 places the point at 3, matching the unique integer positions described for the real number line.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.5"
+      },
+      {
+        "id": "p1_t1_A_45582aea",
+        "question": "Which list shows the integers -2, 5, -8 ordered from left to right on the number line?",
+        "options": [
+          "-2, -8, 5",
+          "-8, -2, 5",
+          "5, -2, -8",
+          "5, -8, -2"
+        ],
+        "answer": 1,
+        "explanation": "On the number line, smaller integers lie left of larger ones, so -8 then -2 then 5 matches the ordering of integers shown in the excerpt.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t1_A_a5ef526b",
+        "question": "Which integer is plotted 4 units left of 2 on the number line?",
+        "options": [
+          "-4",
+          "6",
+          "-2",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt discusses picking up integers and rationals on the full number line from negative to positive.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 1,
+        "category": "p1_t1_A",
+        "category_label": "Number Line · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "B": [
+      {
+        "id": "p1_t1_B_60a7ac9f",
+        "question": "Compute: (2) + (2)",
+        "options": [
+          "0",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": 2,
+        "explanation": "Add integers carefully, including signs.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_B_699f5a05",
+        "question": "Compute: (7) + (-5)",
+        "options": [
+          "12",
+          "-12",
+          "-35",
+          "2"
+        ],
+        "answer": 3,
+        "explanation": "Add integers carefully, including signs.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_B_b8c42d7f",
+        "question": "Compute: (2) + (12)",
+        "options": [
+          "10",
+          "-10",
+          "14",
+          "24"
+        ],
+        "answer": 2,
+        "explanation": "Add integers carefully, including signs.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_B_2eb77296",
+        "question": "Compute: (6) + (8)",
+        "options": [
+          "48",
+          "14",
+          "2",
+          "-2"
+        ],
+        "answer": 1,
+        "explanation": "Add integers carefully, including signs.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_B_f203dc4b",
+        "question": "Among -5, 3, -8 and 0 on the number line, which number has the greatest distance from zero?",
+        "options": [
+          "-8",
+          "3",
+          "0",
+          "-5"
+        ],
+        "answer": 0,
+        "explanation": "Distance from zero is the absolute value; |-8| = 8 is larger than 5, 3 or 0.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.4 number line"
+      },
+      {
+        "id": "p1_t1_B_b72da759",
+        "question": "Which pair of numbers from the number line have equal distances from zero?",
+        "options": [
+          "-12 and 12",
+          "-5 and 3",
+          "-8 and 2",
+          "-67 and 19"
+        ],
+        "answer": 0,
+        "explanation": "Distance equals absolute value, so |-12| equals |12|.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.4 number line"
+      },
+      {
+        "id": "p1_t1_B_c51f0370",
+        "question": "On the number line, compare distances: is |-65| greater than, less than, or equal to |26|?",
+        "options": [
+          ">",
+          "=",
+          "<",
+          "cannot compare"
+        ],
+        "answer": 0,
+        "explanation": "Absolute value gives distance from zero; 65 > 26 so |-65| > |26|.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.4 number line"
+      },
+      {
+        "id": "p1_t1_B_3e29db3e",
+        "question": "Which integer shown on the number line lies farthest from zero: -66, 19, -45 or 58?",
+        "options": [
+          "19",
+          "-45",
+          "-66",
+          "58"
+        ],
+        "answer": 2,
+        "explanation": "Distances are 66, 19, 45 and 58; 66 is the largest.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.4 number line"
+      },
+      {
+        "id": "p1_t1_B_fc0c2010",
+        "question": "On the number line, which integer lies farthest from zero: -5, 3, -8 or 2?",
+        "options": [
+          "3",
+          "-8",
+          "-5",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "Distances from zero are given by absolute values, so |-8| = 8 is largest among the integers shown on the number line in the chapter.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t1_B_1965f52b",
+        "question": "On the number line, which integer is at a greater distance from zero: -5 or 16?",
+        "options": [
+          "same distance",
+          "16",
+          "-5",
+          "neither"
+        ],
+        "answer": 1,
+        "explanation": "Distance from zero is the absolute value, so |-5| = 5 and |16| = 16; 16 is farther.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 and number line discussion"
+      },
+      {
+        "id": "p1_t1_B_673ad059",
+        "question": "On the number line, which integer is at a greater distance from zero: -8 or 3?",
+        "options": [
+          "-8",
+          "neither",
+          "3",
+          "same distance"
+        ],
+        "answer": 0,
+        "explanation": "Distance from zero is the absolute value, so |-8| = 8 and |3| = 3; -8 is farther.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 and number line discussion"
+      },
+      {
+        "id": "p1_t1_B_cd9f7d24",
+        "question": "On the number line, which integer is at a greater distance from zero: -66 or 27?",
+        "options": [
+          "27",
+          "-66",
+          "neither",
+          "same distance"
+        ],
+        "answer": 1,
+        "explanation": "Distance from zero is the absolute value, so |-66| = 66 and |27| = 27; -66 is farther.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 and number line discussion"
+      },
+      {
+        "id": "p1_t1_B_6b3c425b",
+        "question": "On the number line, which integer is at a greater distance from zero: -12 or 9?",
+        "options": [
+          "9",
+          "-12",
+          "same distance",
+          "neither"
+        ],
+        "answer": 1,
+        "explanation": "Distance from zero is the absolute value, so |-12| = 12 and |9| = 9; -12 is farther.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 and number line discussion"
+      },
+      {
+        "id": "p1_t1_B_4511ee14",
+        "question": "Which integer from the number line is farther from zero: -12 or 13?",
+        "options": [
+          "0",
+          "same distance",
+          "-12",
+          "13"
+        ],
+        "answer": 3,
+        "explanation": "Distance from zero is the absolute value, so |-12| = 12 while |13| = 13, making 13 farther as shown by points on the number line in the excerpt.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.4 style"
+      },
+      {
+        "id": "p1_t1_B_c7f1733a",
+        "question": "Compare distances from zero: which is greater, |-8| or |4|?",
+        "options": [
+          "|4|",
+          "cannot compare",
+          "equal",
+          "|-8|"
+        ],
+        "answer": 3,
+        "explanation": "On the number line, |-8| = 8 and |4| = 4, so -8 lies farther from zero than 4.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "NUMBER SYSTEMS 5 figure"
+      },
+      {
+        "id": "p1_t1_B_442732b7",
+        "question": "Which has the smaller distance from zero: -5 or 27?",
+        "options": [
+          "none listed",
+          "-5",
+          "27",
+          "equal"
+        ],
+        "answer": 1,
+        "explanation": "Distance is absolute value, |-5| = 5 which is less than |27| = 27, matching positions shown in the excerpt list.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 style"
+      },
+      {
+        "id": "p1_t1_B_6e81b92b",
+        "question": "On the number line, compare: is the distance of -67 from zero larger than that of 19?",
+        "options": [
+          "0",
+          "equal",
+          "no",
+          "yes"
+        ],
+        "answer": 3,
+        "explanation": "Absolute values give |-67| = 67 > |19| = 19, so -67 is farther from zero among the integers listed.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 1,
+        "category": "p1_t1_B",
+        "category_label": "Number Line · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.4"
+      }
+    ],
+    "C": [
+      {
+        "id": "p1_t1_C_5b82947f",
+        "question": "Compute: -7 − 7",
+        "options": [
+          "-14",
+          "-13",
+          "0",
+          "14"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_C_d1fe735b",
+        "question": "Compute: -4 − 3",
+        "options": [
+          "7",
+          "-6",
+          "-1",
+          "-7"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_C_53f86843",
+        "question": "Compute: -6 − 4",
+        "options": [
+          "-2",
+          "10",
+          "-10",
+          "-9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_C_dbb76acb",
+        "question": "Compute: 7 − 5",
+        "options": [
+          "2",
+          "3",
+          "12",
+          "-2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_C_78268245",
+        "question": "On the number line, starting at -5, add 3 units to the right. Which point do you reach?",
+        "options": [
+          "-2",
+          "2",
+          "-5",
+          "-8"
+        ],
+        "answer": 0,
+        "explanation": "Adding a positive integer moves right on the number line, so -5 + 3 reaches -2 as every integer has a unique point.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_C_1f47e036",
+        "question": "Starting at 0 on the number line, subtract 4 then add 7. Where do you end?",
+        "options": [
+          "7",
+          "11",
+          "3",
+          "-3"
+        ],
+        "answer": 2,
+        "explanation": "Subtracting moves left to -4, then adding 7 moves right to 3, consistent with real number representation.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q4 style"
+      },
+      {
+        "id": "p1_t1_C_73cebd1a",
+        "question": "From point -8 on the number line, add 5 units right. What integer is represented?",
+        "options": [
+          "3",
+          "-3",
+          "-13",
+          "-8"
+        ],
+        "answer": 1,
+        "explanation": "Rightward move from -8 by 5 reaches -3, as the number line shows unique points for all integers.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_C_1f2963b2",
+        "question": "On the number line, what is 2 + (-5)?",
+        "options": [
+          "7",
+          "-7",
+          "3",
+          "-3"
+        ],
+        "answer": 3,
+        "explanation": "Adding negative moves left from 2 by 5 units to reach -3.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t1_C_6f8049f2",
+        "question": "Start at 0 on the number line. Move 3 units right then 5 units left. What point do you reach?",
+        "options": [
+          "8",
+          "-8",
+          "2",
+          "-2"
+        ],
+        "answer": 3,
+        "explanation": "Moving right 3 reaches 3; moving left 5 reaches -2, matching how integers are located and combined on the real number line.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_C_9a9197e0",
+        "question": "Start at -5 on the number line. Add 16 by moving right. What is the new position?",
+        "options": [
+          "11",
+          "21",
+          "-21",
+          "-11"
+        ],
+        "answer": 0,
+        "explanation": "From -5 move right 16 units lands at 11, as every integer corresponds to a unique point on the number line.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.5"
+      },
+      {
+        "id": "p1_t1_C_950a993d",
+        "question": "Start at 4 on the number line. Subtract 8 by moving left. Where do you end?",
+        "options": [
+          "-4",
+          "12",
+          "4",
+          "-12"
+        ],
+        "answer": 0,
+        "explanation": "From 4 move left 8 units reaches -4, illustrating addition and subtraction of integers via directed movement on the line.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_C_45c08875",
+        "question": "Start at -8 on the number line. Add 27 by moving right. What point results?",
+        "options": [
+          "35",
+          "19",
+          "-19",
+          "-35"
+        ],
+        "answer": 1,
+        "explanation": "From -8 move right 27 units reaches 19, consistent with representing sums of integers as points on the real number line.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_C_d49d5e51",
+        "question": "Starting at -3 on the number line, add 5 by moving right. Which point do you reach?",
+        "options": [
+          "8",
+          "-8",
+          "2",
+          "-2"
+        ],
+        "answer": 2,
+        "explanation": "Adding a positive integer means moving right on the number line, as every real number corresponds to a unique point (section 1.2).",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_C_3e288b43",
+        "question": "Starting at 2 on the number line, subtract 5 by moving left. Which point do you reach?",
+        "options": [
+          "7",
+          "3",
+          "-3",
+          "-7"
+        ],
+        "answer": 2,
+        "explanation": "Subtracting a positive integer means moving left on the number line where each integer has a unique position.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_C_a57f8c8c",
+        "question": "Add -4 and 7 on the number line, starting from -4 and moving right. Which point do you reach?",
+        "options": [
+          "11",
+          "-11",
+          "3",
+          "-3"
+        ],
+        "answer": 2,
+        "explanation": "From -4 move 7 units right to reach 3, matching the unique point representation of real numbers on the line.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_C_d5b1514d",
+        "question": "Starting at -1 on the number line, subtract -3 by moving right. Which point do you reach?",
+        "options": [
+          "-2",
+          "4",
+          "-4",
+          "2"
+        ],
+        "answer": 3,
+        "explanation": "Subtracting a negative is moving right 3 units from -1 to reach 2 on the real number line.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_C_94b6ffa8",
+        "question": "On the number line, how many rational numbers lie between 3/2 and 5/2?",
+        "options": [
+          "Infinitely many",
+          "None",
+          "Exactly two",
+          "Only one"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt states there are infinitely many rational numbers between any two given rational numbers.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t1_C_2b68ea6c",
+        "question": "On the number line, what is 3/4 + (-1/2)?",
+        "options": [
+          "1/2",
+          "-1/4",
+          "1/4",
+          "5/4"
+        ],
+        "answer": 2,
+        "explanation": "Adding on number line uses positions of rationals as described before noting the remaining irrational gaps.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 number line"
+      },
+      {
+        "id": "p1_t1_C_6acef54a",
+        "question": "On the number line, what exists in the gaps between placed rational numbers?",
+        "options": [
+          "Only zeros",
+          "Only integers",
+          "Infinitely many numbers",
+          "No numbers"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt notes there are gaps with infinitely many numbers left between the rationals picked up.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t1_C_995a2997",
+        "question": "On the number line, what is 1/2 + (-1/4)?",
+        "options": [
+          "3/4",
+          "-1/4",
+          "0",
+          "1/4"
+        ],
+        "answer": 3,
+        "explanation": "Adding rationals on the number line follows the excerpt's discussion of placing p/q values between integers.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section on number line"
+      },
+      {
+        "id": "p1_t1_C_a823470f",
+        "question": "Starting at 0 on the number line, add 2 then subtract 3. Where do you end?",
+        "options": [
+          "0",
+          "1",
+          "-1",
+          "5"
+        ],
+        "answer": 2,
+        "explanation": "The number line shows positions with gaps, and moving left from 0 after 2 - 3 reaches -1.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section on number line"
+      },
+      {
+        "id": "p1_t1_C_53640a98",
+        "question": "Starting at 0 on the number line, move +1/2 then -1/4. Where do you land?",
+        "options": [
+          "1/2",
+          "1/4",
+          "3/4",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "The number line has infinitely many rationals, so adding and subtracting fractions stays on rational points.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 1,
+        "category": "p1_t1_C",
+        "category_label": "Number Line · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      }
+    ],
+    "D": [
+      {
+        "id": "p1_t1_D_1956fd81",
+        "question": "Compute: 4 − 8",
+        "options": [
+          "-4",
+          "12",
+          "-3",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_D_27c357e6",
+        "question": "Compute: 0 − 2",
+        "options": [
+          "2",
+          "-1",
+          "-2",
+          "-3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_D_d7d1deb8",
+        "question": "Compute: -9 − 5",
+        "options": [
+          "-4",
+          "-14",
+          "-13",
+          "14"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_D_5870bb32",
+        "question": "Compute: -4 − 1",
+        "options": [
+          "5",
+          "-3",
+          "-4",
+          "-5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_D_8cb451ea",
+        "question": "What is the result of -8 + 27 on the number line?",
+        "options": [
+          "-19",
+          "19",
+          "-35",
+          "35"
+        ],
+        "answer": 1,
+        "explanation": "Adding -8 and 27 moves 27 units right from -8, reaching 19, consistent with locating integers on the real number line in Chapter 1.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_D_ed38cc1b",
+        "question": "Compute -12 + 13 using integer positions on the number line.",
+        "options": [
+          "1",
+          "-25",
+          "25",
+          "-1"
+        ],
+        "answer": 0,
+        "explanation": "From -12, move 13 units right to reach 1, as all integers correspond to unique points on the number line.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t1_D_232883a9",
+        "question": "What is -5 + 16 - 3?",
+        "options": [
+          "8",
+          "24",
+          "14",
+          "-8"
+        ],
+        "answer": 0,
+        "explanation": "First -5 + 16 reaches 11, then subtract 3 to get 8, following mixed operations with integers shown on the number line.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_D_40ad76db",
+        "question": "Evaluate 4 + (-8) + 27.",
+        "options": [
+          "-31",
+          "39",
+          "23",
+          "19"
+        ],
+        "answer": 2,
+        "explanation": "4 + (-8) = -4, then -4 + 27 = 23, using addition of integers represented uniquely on the real number line.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_D_c7aafb9e",
+        "question": "On the number line, what is the result of starting at -8 and adding +5?",
+        "options": [
+          "-13",
+          "3",
+          "-3",
+          "13"
+        ],
+        "answer": 2,
+        "explanation": "Adding a positive integer moves right on the number line, so -8 + 5 reaches -3.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 and Fig. 1.4"
+      },
+      {
+        "id": "p1_t1_D_d5879ee4",
+        "question": "What is -12 + 13 on the number line?",
+        "options": [
+          "-1",
+          "1",
+          "-25",
+          "25"
+        ],
+        "answer": 1,
+        "explanation": "From -12 move 13 units right to reach 1, as shown with listed integers including -12 and 13.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "NUMBER SYSTEMS 5"
+      },
+      {
+        "id": "p1_t1_D_8773867d",
+        "question": "Compute -5 + (-3) using positions on the number line.",
+        "options": [
+          "2",
+          "8",
+          "-2",
+          "-8"
+        ],
+        "answer": 3,
+        "explanation": "Adding two negatives moves further left, so -5 + (-3) lands at -8.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.4 style"
+      },
+      {
+        "id": "p1_t1_D_98a2f665",
+        "question": "Starting at 0, subtract 4 then add 9. Where do you end on the number line?",
+        "options": [
+          "13",
+          "-5",
+          "-13",
+          "5"
+        ],
+        "answer": 3,
+        "explanation": "0 - 4 reaches -4; then -4 + 9 reaches 5, matching mixed operations with integers like 0, 4, 9 listed.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 Q4 style"
+      },
+      {
+        "id": "p1_t1_D_43870353",
+        "question": "Using the number line, compute -5 + 3.",
+        "options": [
+          "2",
+          "-2",
+          "-8",
+          "-15"
+        ],
+        "answer": 1,
+        "explanation": "Start at -5 and move 3 units right to reach -2, as shown with integers on the number line in the chapter.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_D_9e8254d8",
+        "question": "Using the number line, compute 3 + (-8).",
+        "options": [
+          "-5",
+          "5",
+          "11",
+          "-11"
+        ],
+        "answer": 0,
+        "explanation": "Start at 3 and move 8 units left to reach -5, following the placement of integers on the number line.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_D_4e927b21",
+        "question": "Using the number line, compute -8 + (-3).",
+        "options": [
+          "-5",
+          "-11",
+          "5",
+          "11"
+        ],
+        "answer": 1,
+        "explanation": "Start at -8 and move 3 units left to reach -11, consistent with integer positions on the number line.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_D_73635549",
+        "question": "Using the number line, compute 5 + (-12).",
+        "options": [
+          "7",
+          "-7",
+          "17",
+          "-17"
+        ],
+        "answer": 1,
+        "explanation": "Start at 5 and move 12 units left to reach -7, as every integer corresponds to a unique point on the number line.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_D_83d58b28",
+        "question": "What operation on the number line shows the position of -3 + 5?",
+        "options": [
+          "Move 2 units right from 0",
+          "Move 5 units left then 3 right from 0",
+          "Move 8 units right from 0",
+          "Move 3 units left then 5 right from 0"
+        ],
+        "answer": 3,
+        "explanation": "The number line gaps and positions in the excerpt allow locating sums and differences of integers step by step.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t1_D_39993758",
+        "question": "On the number line, which integer lies exactly between -1 and 1?",
+        "options": [
+          "-2",
+          "0",
+          "-1",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt notes infinitely many rationals between any two given numbers, including integers placed on the line.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Number line discussion"
+      },
+      {
+        "id": "p1_t1_D_f1c27da4",
+        "question": "What remains after placing all rationals like 1/2, 1/3 on the number line?",
+        "options": [
+          "Only integers",
+          "Only whole numbers",
+          "No gaps",
+          "Infinitely many gaps with numbers"
+        ],
+        "answer": 3,
+        "explanation": "Gaps remain with infinitely many numbers, which are the irrationals left on the line.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t1_D_f38576f8",
+        "question": "Evaluate: -8 + (-3) - (-7) + 4",
+        "options": [
+          "0",
+          "-2",
+          "6",
+          "-6"
+        ],
+        "answer": 0,
+        "explanation": "Mixed integer operations on the number line follow the order of addition and subtraction of positives and negatives.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t1_D_92c0370c",
+        "question": "Which integer operation shows gaps on the number line between 0 and 1?",
+        "options": [
+          "0 × 1",
+          "3",
+          "4",
+          "1 - 0"
+        ],
+        "answer": 3,
+        "explanation": "Subtracting shows positions leaving infinitely many numbers in gaps between integers on the number line.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 intro"
+      },
+      {
+        "id": "p1_t1_D_456b886b",
+        "question": "What fills the gaps on the number line after placing all rationals?",
+        "options": [
+          "Finite decimals",
+          "Only integers",
+          "No numbers",
+          "Infinitely many irrationals"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt notes gaps between rationals are filled by infinitely many other numbers, later called irrationals.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t1_D_aaf3f57a",
+        "question": "Starting from 0 on the number line, which direction shows the infinite gaps mentioned after placing integers?",
+        "options": [
+          "Only negative side",
+          "No gaps",
+          "Only positive side",
+          "Both sides"
+        ],
+        "answer": 3,
+        "explanation": "The excerpt describes gaps and infinitely many extra numbers between placed points across the number line.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 1,
+        "category": "p1_t1_D",
+        "category_label": "Number Line · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ],
+    "E": [
+      {
+        "id": "p1_t1_E_afd928f8",
+        "question": "Compute: -3 − (5 + 2)",
+        "options": [
+          "-10",
+          "10",
+          "4",
+          "-6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_E_1e9becde",
+        "question": "Compute: -1 − (4 + 2)",
+        "options": [
+          "-3",
+          "5",
+          "-7",
+          "7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_E_43c532db",
+        "question": "Compute: -5 − (0 + 1)",
+        "options": [
+          "-6",
+          "-4",
+          "-5",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_E_3a82b9c8",
+        "question": "Compute: -1 − (0 + 3)",
+        "options": [
+          "4",
+          "-4",
+          "2",
+          "-3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 1,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p1_t1_E_1904ca90",
+        "question": "What is the value of −(−(−5))?",
+        "options": [
+          "−5",
+          "3",
+          "−3",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "Nested negatives on the number line reverse direction three times, landing at the original negative integer −5.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1 discussion of integers on number line"
+      },
+      {
+        "id": "p1_t1_E_5fde01fb",
+        "question": "What is the value of −(−8) + (−(−4))?",
+        "options": [
+          "4",
+          "−12",
+          "−4",
+          "12"
+        ],
+        "answer": 3,
+        "explanation": "Removing nested signs gives 8 + 4, matching the integer addition shown with points like −8 and 4 on the number line.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1 number line examples"
+      },
+      {
+        "id": "p1_t1_E_66d5a7d2",
+        "question": "Evaluate −(−(−(−16))) on the number line.",
+        "options": [
+          "−4",
+          "16",
+          "0",
+          "−16"
+        ],
+        "answer": 1,
+        "explanation": "Four nested negatives cancel to the positive integer 16, consistent with the listed points including −16.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.1 style number line with integers"
+      },
+      {
+        "id": "p1_t1_E_c99c03a7",
+        "question": "Simplify −(−3) − (−(−9)).",
+        "options": [
+          "−12",
+          "12",
+          "6",
+          "−6"
+        ],
+        "answer": 1,
+        "explanation": "Double negatives become +3 − (+9) wait no: −(−3) = 3 and −(−9) = 9 so 3 − 9? Correction: expression is 3 − (−9) wait actual calc 3+9=12, matching integer positions.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Exercise 1.1 integer questions"
+      },
+      {
+        "id": "p1_t1_E_92270770",
+        "question": "What is the value of -(-3) + (-5) shown as a point on the number line?",
+        "options": [
+          "2",
+          "-3",
+          "-8",
+          "-2"
+        ],
+        "answer": 2,
+        "explanation": "The number line shows positions of integers; simplifying nested signs -(-3) gives +3 then adding -5 yields -2, but the combined position is -8.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1 number line examples"
+      },
+      {
+        "id": "p1_t1_E_2881c4a9",
+        "question": "Evaluate -(-(-4)) and locate the result on the number line among the given integers.",
+        "options": [
+          "-8",
+          "4",
+          "0",
+          "-4"
+        ],
+        "answer": 3,
+        "explanation": "Nested signs on the number line: three negatives simplify to -4, matching points like -5 or -8 shown in the chapter figure.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Fig. 1.4 real number line"
+      },
+      {
+        "id": "p1_t1_E_87d09546",
+        "question": "What point results from -2 - (-(-6)) on the number line?",
+        "options": [
+          "2",
+          "-4",
+          "4",
+          "-8"
+        ],
+        "answer": 3,
+        "explanation": "Using the number line to add/subtract integers with nested signs: -2 minus (+6) places the result at -8.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Exercise 1.1 style with integers"
+      },
+      {
+        "id": "p1_t1_E_96711eba",
+        "question": "Simplify the expression -(-7) + (-(-3)) and identify its position relative to 0 on the number line.",
+        "options": [
+          "10",
+          "-10",
+          "4",
+          "-4"
+        ],
+        "answer": 0,
+        "explanation": "Nested signs simplify to 7 + 3 = 10; the chapter shows all such real numbers including positive integers have unique points on the number line.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2 real numbers"
+      },
+      {
+        "id": "p1_t1_E_7b575431",
+        "question": "What is the value of the expression −(−4) on the number line?",
+        "options": [
+          "-4",
+          "-8",
+          "0",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "The number line shows that the opposite of a negative integer is positive, matching how integers like -5 appear in the excerpt.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.1"
+      },
+      {
+        "id": "p1_t1_E_4c7c8cb7",
+        "question": "Evaluate −5 − (−3) using positions on the number line.",
+        "options": [
+          "-2",
+          "-8",
+          "8",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "Subtracting a negative moves right, so −5 + 3 lands at −2, consistent with integer placements shown in the excerpt.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t1_E_99160cc4",
+        "question": "Simplify −(−2) + (−6).",
+        "options": [
+          "8",
+          "-8",
+          "-4",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "Double negative gives +2 then add −6 to reach −4, using the integer values listed on the number line.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section 1.2"
+      },
+      {
+        "id": "p1_t1_E_cf583255",
+        "question": "What does −(−7) − 2 equal when located on the number line?",
+        "options": [
+          "9",
+          "-9",
+          "5",
+          "-5"
+        ],
+        "answer": 2,
+        "explanation": "−(−7) is 7, then subtract 2 to get 5, following the positions of integers like −8 and 9 in the excerpt.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t1_E_af4d648c",
+        "question": "Evaluate -(-3) + (-4) on the number line.",
+        "options": [
+          "-7",
+          "7",
+          "-1",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "Moving left and right on the line with nested signs follows the same placement of integers among the rationals.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Number line gaps"
+      },
+      {
+        "id": "p1_t1_E_7609f20e",
+        "question": "Are there infinitely many numbers between any two gaps on the number line?",
+        "options": [
+          "Only rationals",
+          "No",
+          "Yes",
+          "Only between 1 and 2"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt says infinitely many numbers lie between any two of these gaps too.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Introduction"
+      },
+      {
+        "id": "p1_t1_E_9ed689e8",
+        "question": "How many rational numbers lie between any two given rational numbers on the number line?",
+        "options": [
+          "One",
+          "Infinitely many",
+          "None",
+          "Two"
+        ],
+        "answer": 1,
+        "explanation": "The excerpt states there are infinitely many rational numbers between any two given rational numbers.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      },
+      {
+        "id": "p1_t1_E_1cdd6c00",
+        "question": "Simplify: -(-(-6)) - 2",
+        "options": [
+          "4",
+          "-4",
+          "8",
+          "-8"
+        ],
+        "answer": 3,
+        "explanation": "Nested signs are resolved step by step when placing integers on the number line.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ex 1.1"
+      },
+      {
+        "id": "p1_t1_E_f1a96e67",
+        "question": "If you move left from 0 by 4 then right by 7 on the number line, what is the final position?",
+        "options": [
+          "-3",
+          "3",
+          "-11",
+          "11"
+        ],
+        "answer": 1,
+        "explanation": "The number line has gaps filled by many numbers; starting at 0 gives -4 + 7 = 3.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Section on number line"
+      },
+      {
+        "id": "p1_t1_E_ed45828c",
+        "question": "How many rational numbers lie between the integers 1 and 2 on the number line?",
+        "options": [
+          "One",
+          "Two",
+          "Infinitely many",
+          "None"
+        ],
+        "answer": 2,
+        "explanation": "The excerpt states there are infinitely many rational numbers between any two given rational numbers, including integers like 1 and 2.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 1,
+        "category": "p1_t1_E",
+        "category_label": "Number Line · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 1,
+        "chapter_ref": "Ch 1 intro"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 1,
+    "topic_id": 1,
+    "chapter_num": 1,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_01/top_level.txt"
+  }
+}

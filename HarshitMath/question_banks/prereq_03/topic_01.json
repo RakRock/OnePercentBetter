@@ -1,0 +1,420 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "p3_t1_A_bb44c50d",
+        "question": "In which quadrant does a point with positive x-coordinate and positive y-coordinate lie?",
+        "options": [
+          "Quadrant IV",
+          "Quadrant I",
+          "Quadrant II",
+          "Quadrant III"
+        ],
+        "answer": 1,
+        "explanation": "The axes divide the plane into four quadrants numbered I to IV anticlockwise from the positive x-axis, so (+, +) lies in Quadrant I as per the Cartesian system in the chapter.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t1_A_7df66af6",
+        "question": "In which quadrant does a point with negative x-coordinate and positive y-coordinate lie?",
+        "options": [
+          "Quadrant II",
+          "Quadrant III",
+          "Quadrant I",
+          "Quadrant IV"
+        ],
+        "answer": 0,
+        "explanation": "Points with negative x and positive y are located in Quadrant II, following the anticlockwise numbering from OX as described.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t1_A_7254afba",
+        "question": "The point (-3, -4) lies in which quadrant?",
+        "options": [
+          "Quadrant III",
+          "Quadrant IV",
+          "Quadrant II",
+          "Quadrant I"
+        ],
+        "answer": 0,
+        "explanation": "Both coordinates negative places the point in Quadrant III, consistent with the quadrant definitions in the Cartesian plane.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t1_A_cf9847d6",
+        "question": "In which quadrant does a point with positive x-coordinate and negative y-coordinate lie?",
+        "options": [
+          "Quadrant I",
+          "Quadrant II",
+          "Quadrant IV",
+          "Quadrant III"
+        ],
+        "answer": 2,
+        "explanation": "Positive x and negative y correspond to Quadrant IV, as the axes divide the plane anticlockwise from the positive x-axis.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      }
+    ],
+    "B": [
+      {
+        "id": "p3_t1_B_9aeab292",
+        "question": "In the city street plan, the 3rd street North-South meets the 4th street East-West at which cross-street?",
+        "options": [
+          "(3,4)",
+          "(3,3)",
+          "(4,4)",
+          "(4,3)"
+        ],
+        "answer": 0,
+        "explanation": "The convention names the cross-street as (North-South number, East-West number), so (3,4) directly gives the position from the axes origin.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 Q2"
+      },
+      {
+        "id": "p3_t1_B_9b6ba840",
+        "question": "Using the Cartesian convention, the point where the 5th North-South street and 2nd East-West street cross is labeled as:",
+        "options": [
+          "(5,5)",
+          "(2,2)",
+          "(5,2)",
+          "(2,5)"
+        ],
+        "answer": 2,
+        "explanation": "First coordinate is the North-South street count and second is the East-West street count, matching the (NS, EW) order introduced for plotting points.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 Q2"
+      },
+      {
+        "id": "p3_t1_B_d56efd9c",
+        "question": "On the coordinate plane, the perpendicular distance of point P from the y-axis along the positive x-axis is 4 units; its x-coordinate is therefore:",
+        "options": [
+          "0",
+          "4",
+          "-4",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "The x-coordinate equals the distance from the y-axis measured along the positive x-direction, as shown when locating P by dropping a perpendicular to the x-axis.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t1_B_94703dcf",
+        "question": "In the Cartesian system, the point with coordinates (0,0) is called the:",
+        "options": [
+          "quadrant I",
+          "origin",
+          "y-axis",
+          "x-axis"
+        ],
+        "answer": 1,
+        "explanation": "The two axes intersect at their zero points, and this common point is defined as the origin O from which all distances are measured.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      }
+    ],
+    "C": [
+      {
+        "id": "p3_t1_C_9e280445",
+        "question": "In the street plan, the 3rd street North-South meets the 4th street East-West. What are the coordinates of this cross-street?",
+        "options": [
+          "(3,4)",
+          "(-3,4)",
+          "(4,3)",
+          "(3,-4)"
+        ],
+        "answer": 0,
+        "explanation": "The excerpt defines the cross-street as (North-South number, East-West number), so (3,4) directly gives the ordered pair.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t1_C",
+        "category_label": "Plot Points · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 Q2"
+      },
+      {
+        "id": "p3_t1_C_395c85d0",
+        "question": "A point P has perpendicular distance 4 units from the y-axis along positive x and 3 units from the x-axis along positive y. What are its coordinates?",
+        "options": [
+          "(4,3)",
+          "(-4,3)",
+          "(4,-3)",
+          "(3,4)"
+        ],
+        "answer": 0,
+        "explanation": "The Cartesian system locates a point by its distances from the axes, giving the ordered pair (x,y) as described in Fig. 3.10.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t1_C",
+        "category_label": "Plot Points · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t1_C_fa9fd60f",
+        "question": "Which point lies on the positive x-axis at a distance of 5 units from the origin?",
+        "options": [
+          "(5,5)",
+          "(0,5)",
+          "(5,0)",
+          "(-5,0)"
+        ],
+        "answer": 2,
+        "explanation": "On the x-axis y=0, so the point 5 units in the positive x-direction is (5,0).",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t1_C",
+        "category_label": "Plot Points · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Fig. 3.8"
+      },
+      {
+        "id": "p3_t1_C_24dbb311",
+        "question": "What are the coordinates of a point 2 units left of the origin and 4 units above the x-axis?",
+        "options": [
+          "(-2,-4)",
+          "(2,-4)",
+          "(2,4)",
+          "(-2,4)"
+        ],
+        "answer": 3,
+        "explanation": "Negative x-direction gives x=-2 and positive y-direction gives y=4, matching the Cartesian axes directions.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t1_C",
+        "category_label": "Plot Points · Level C",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      }
+    ],
+    "D": [
+      {
+        "id": "p3_t1_D_fadf5796",
+        "question": "On the Cartesian plane, point A is at (2, 4) and point B at (6, 4). What is the x-coordinate of the midpoint?",
+        "options": [
+          "4",
+          "3",
+          "8",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "The x-axis is a number line, so the midpoint x-value is the average (2 + 6)/2 = 4, matching the equal-distance marking idea in the chapter.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t1_D",
+        "category_label": "Plot Points · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Cartesian System"
+      },
+      {
+        "id": "p3_t1_D_5c6a8c86",
+        "question": "Point P lies at (3, 1) and point Q at (3, 7) on the coordinate plane. What is the y-coordinate of their midpoint?",
+        "options": [
+          "4",
+          "3",
+          "5",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "The y-axis acts as a vertical number line; the midpoint y-value is (1 + 7)/2 = 4.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t1_D",
+        "category_label": "Plot Points · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Fig. 3.8"
+      },
+      {
+        "id": "p3_t1_D_986c06f0",
+        "question": "Using the street plan convention, cross-street (2, 3) and cross-street (6, 3) meet the same East-West street. What is the North-South street number at their midpoint?",
+        "options": [
+          "3",
+          "8",
+          "4",
+          "5"
+        ],
+        "answer": 2,
+        "explanation": "Along the fixed East-West line, the midpoint North-South value is the average (2 + 6)/2 = 4.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t1_D",
+        "category_label": "Plot Points · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 Q2"
+      },
+      {
+        "id": "p3_t1_D_47d631ad",
+        "question": "Points M(0, 2) and N(4, 2) are plotted on the xy-plane. What coordinates represent their midpoint?",
+        "options": [
+          "(4, 2)",
+          "(2, 2)",
+          "(0, 2)",
+          "(2, 4)"
+        ],
+        "answer": 1,
+        "explanation": "Midpoint is ((0+4)/2, (2+2)/2) = (2, 2), using the perpendicular axes to locate the average position.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t1_D",
+        "category_label": "Plot Points · Level D",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Fig. 3.10"
+      }
+    ],
+    "E": [
+      {
+        "id": "p3_t1_E_bfcd8866",
+        "question": "What is the perpendicular distance of point P(4, 3) from the y-axis?",
+        "options": [
+          "7 units",
+          "3 units",
+          "4 units",
+          "1 unit"
+        ],
+        "answer": 2,
+        "explanation": "The distance from the y-axis equals the x-coordinate, as shown in Fig. 3.10 where PN = OM = 4 units.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t1_E",
+        "category_label": "Plot Points · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Fig. 3.10"
+      },
+      {
+        "id": "p3_t1_E_fe4ee6ab",
+        "question": "What is the perpendicular distance of point P(4, 3) from the x-axis?",
+        "options": [
+          "0 units",
+          "7 units",
+          "4 units",
+          "3 units"
+        ],
+        "answer": 3,
+        "explanation": "The distance from the x-axis equals the y-coordinate, measured along the positive y-direction.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t1_E",
+        "category_label": "Plot Points · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t1_E_e6498552",
+        "question": "For the point Q(2, 5) in the Cartesian plane, the distance from the x-axis is?",
+        "options": [
+          "2 units",
+          "5 units",
+          "7 units",
+          "3 units"
+        ],
+        "answer": 1,
+        "explanation": "Distance from x-axis is the y-coordinate value, following the perpendicular from the point to the axis.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t1_E",
+        "category_label": "Plot Points · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Fig. 3.10"
+      },
+      {
+        "id": "p3_t1_E_3d56c8b7",
+        "question": "The distance of point (3, 4) from the y-axis measured along the x-axis is?",
+        "options": [
+          "3 units",
+          "1 unit",
+          "4 units",
+          "7 units"
+        ],
+        "answer": 0,
+        "explanation": "Perpendicular distance from y-axis equals the x-coordinate, as defined in the Cartesian system.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t1_E",
+        "category_label": "Plot Points · Level E",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Section 3.2"
+      }
+    ]
+  },
+  "meta": {
+    "prereq_id": 3,
+    "topic_id": 1,
+    "chapter_num": 3,
+    "source_pdf": "/Users/rmudisoo/Documents/AWS/Arjun/OnePercent/HarshitMath/class9_chapters/chapter_03/Chapter_03_Coordinate_Geometry.pdf"
+  }
+}
