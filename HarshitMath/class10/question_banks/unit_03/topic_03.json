@@ -1,0 +1,1861 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u3_t3_A_3ade57e5",
+        "question": "First step in elimination method:",
+        "options": [
+          "Divide both equations",
+          "Add or subtract equations to eliminate one variable",
+          "Graph the lines only",
+          "Substitute x = 0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t3_A",
+        "category_label": "Elim · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_A_0f09907b",
+        "question": "First step in elimination method:",
+        "options": [
+          "Eliminate either x or y using suitable multipliers",
+          "Always divide by a",
+          "Ignore second equation",
+          "Use quadratic formula"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t3_A",
+        "category_label": "Elim · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_A_57f7402e",
+        "question": "First step in elimination method:",
+        "options": [
+          "Swap x and y",
+          "Set y = 0 only",
+          "Multiply equations to equalise coefficients, then add/subtract",
+          "Add constants term-wise only"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t3_A",
+        "category_label": "Elim · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      }
+    ],
+    "B": [
+      {
+        "id": "u3_t3_B_0558b9d3",
+        "question": "To eliminate y when coefficients differ, you should:",
+        "options": [
+          "Swap x and y",
+          "Multiply one or both equations to equalise a coefficient",
+          "Add constants only",
+          "Set x = 0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t3_B",
+        "category_label": "Elim · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_B_aa103017",
+        "question": "To eliminate a variable when coefficients differ:",
+        "options": [
+          "Swap x and y",
+          "Multiply one or both equations to equalise a coefficient",
+          "Set x = 0",
+          "Add constants only"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t3_B",
+        "category_label": "Elim · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_B_37d0f704",
+        "question": "To eliminate a variable when coefficients differ:",
+        "options": [
+          "Graph both lines",
+          "Use cross-multiplication only",
+          "Eliminate constants first",
+          "Make coefficients of x or y equal in magnitude"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t3_B",
+        "category_label": "Elim · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_B_3104c462",
+        "question": "To eliminate a variable when coefficients differ:",
+        "options": [
+          "Scale an equation so one variable cancels on adding",
+          "Divide both by c",
+          "Ignore coefficients",
+          "Substitute y = x"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t3_B",
+        "category_label": "Elim · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      }
+    ],
+    "C": [
+      {
+        "id": "u3_t3_C_69f38535",
+        "question": "Elimination on 4x + 3y = 9 and 6x - 5y = 23 gives x = ?",
+        "options": [
+          "-1",
+          "4",
+          "3",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_bb17060f",
+        "question": "Elimination on 2x + 5y = 49 and 5x - 5y = -35 gives x = ?",
+        "options": [
+          "3",
+          "9",
+          "10",
+          "2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_8289782a",
+        "question": "Elimination on 2x + 5y = 43 and 4x + y = 41 gives x = ?",
+        "options": [
+          "9",
+          "6",
+          "5",
+          "10"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_931fef97",
+        "question": "Elimination on x + 6y = -3 and 3x - y = 29 gives x = ?",
+        "options": [
+          "-2",
+          "10",
+          "9",
+          "-1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_005d6b00",
+        "question": "Elimination on x + 4y = -12 and 6x + 5y = 23 gives x = ?",
+        "options": [
+          "8",
+          "-4",
+          "-5",
+          "9"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_b04d59df",
+        "question": "Elimination on 5x + 3y = -7 and 2x - 2y = 10 gives x = ?",
+        "options": [
+          "1",
+          "-3",
+          "2",
+          "-4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_fe941f16",
+        "question": "Elimination on 5x + y = 22 and 6x + 4y = 18 gives x = ?",
+        "options": [
+          "-3",
+          "6",
+          "5",
+          "-2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_746748b6",
+        "question": "Elimination on 3x + y = 14 and 5x - 6y = -15 gives x = ?",
+        "options": [
+          "5",
+          "6",
+          "4",
+          "3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_fd6bbefb",
+        "question": "Elimination on 4x + y = 17 and 6x - y = 23 gives x = ?",
+        "options": [
+          "5",
+          "1",
+          "4",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_5b11c1c5",
+        "question": "Elimination on 4x + 4y = 0 and 3x + 6y = -9 gives x = ?",
+        "options": [
+          "3",
+          "-3",
+          "4",
+          "-2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_78980fc2",
+        "question": "Elimination on x + 3y = 3 and 5x + 2y = -11 gives x = ?",
+        "options": [
+          "3",
+          "-3",
+          "-2",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_1d2b6158",
+        "question": "Elimination on x + y = 1 and 3x - y = -21 gives x = ?",
+        "options": [
+          "-4",
+          "-5",
+          "6",
+          "7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_1d9cb7f3",
+        "question": "Elimination on 3x + 3y = 3 and 4x - y = 34 gives x = ?",
+        "options": [
+          "7",
+          "-6",
+          "8",
+          "-5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_68bbaa89",
+        "question": "Elimination on x + 2y = 16 and x + 6y = 48 gives x = ?",
+        "options": [
+          "9",
+          "0",
+          "1",
+          "8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_3471bd90",
+        "question": "Elimination on 6x + y = 10 and 2x - 4y = -14 gives x = ?",
+        "options": [
+          "2",
+          "4",
+          "5",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_d19b79d5",
+        "question": "Elimination on 2x + 4y = 26 and 5x - 2y = -19 gives x = ?",
+        "options": [
+          "8",
+          "-1",
+          "0",
+          "7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_34556ee6",
+        "question": "Elimination on 3x + 2y = 28 and x - 4y = -14 gives x = ?",
+        "options": [
+          "6",
+          "6 (alt)",
+          "7",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_519d89af",
+        "question": "Elimination on 2x + 2y = -8 and 3x = -15 gives x = ?",
+        "options": [
+          "-4",
+          "2",
+          "-5",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_237432b9",
+        "question": "Elimination on 6x + 5y = 3 and x - 2y = -8 gives x = ?",
+        "options": [
+          "4",
+          "-1",
+          "-2",
+          "3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_cc07f0c9",
+        "question": "Elimination on 4x + 5y = 52 and 3x + 2y = 32 gives x = ?",
+        "options": [
+          "9",
+          "5",
+          "4",
+          "8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_004c4e46",
+        "question": "Elimination on 3x + 3y = -9 and 4x - 4y = -4 gives x = ?",
+        "options": [
+          "-2",
+          "-2 (alt)",
+          "-1",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_473ec52f",
+        "question": "Elimination on 4x + y = 14 and 2x + 4y = 14 gives x = ?",
+        "options": [
+          "3",
+          "4",
+          "2",
+          "3 (alt)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_64fc90a5",
+        "question": "Elimination on 6x + 2y = 28 and 6x + 3y = 33 gives x = ?",
+        "options": [
+          "3",
+          "6",
+          "5",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_9988b784",
+        "question": "Elimination on 6x + 3y = -39 and 6x + 6y = -42 gives x = ?",
+        "options": [
+          "-1",
+          "0",
+          "-6",
+          "-5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_065fca0b",
+        "question": "Elimination on 6x + 4y = -22 and 6x + 3y = -18 gives x = ?",
+        "options": [
+          "-4",
+          "0",
+          "-1",
+          "-3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_3b647731",
+        "question": "Elimination on x + 4y = 17 and 3x - 5y = 17 gives x = ?",
+        "options": [
+          "10",
+          "9",
+          "2",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_7a38ed25",
+        "question": "Elimination on x + y = -3 and 2x + y = -2 gives x = ?",
+        "options": [
+          "1",
+          "2",
+          "-3",
+          "-4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_57bf3ed2",
+        "question": "Elimination on 5x + 6y = 11 and 2x + 6y = 8 gives x = ?",
+        "options": [
+          "1 (alt)",
+          "1",
+          "2",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_5e9710cf",
+        "question": "Elimination on 4x + y = -2 and 4x + 4y = 4 gives x = ?",
+        "options": [
+          "-1",
+          "0",
+          "2",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_f40c5a74",
+        "question": "Elimination on x + 3y = -7 and 6x - y = -4 gives x = ?",
+        "options": [
+          "-2",
+          "0",
+          "-1 (alt)",
+          "-1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      }
+    ],
+    "D": [
+      {
+        "id": "u3_t3_D_4850ede5",
+        "question": "Elimination on 5x + y = 11 and 6x + y = 12 gives y = ?",
+        "options": [
+          "7",
+          "6",
+          "2",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_a099e977",
+        "question": "Elimination on 5x + 3y = -1 and 2x - 3y = 8 gives y = ?",
+        "options": [
+          "-1",
+          "2",
+          "1",
+          "-2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_79ec4b9c",
+        "question": "Elimination on 2x + 4y = -18 and 3x - 4y = 3 gives y = ?",
+        "options": [
+          "-3",
+          "-3 (alt)",
+          "None of these",
+          "-2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_e32315dc",
+        "question": "Elimination on 4x + 3y = 13 and 4x + 4y = 8 gives y = ?",
+        "options": [
+          "-4",
+          "7",
+          "-5",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_27df2bf4",
+        "question": "Elimination on 4x + 2y = -4 and 2x + 5y = -18 gives y = ?",
+        "options": [
+          "-3",
+          "1",
+          "2",
+          "-4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_17463b22",
+        "question": "Elimination on x + 5y = 7 and 4x = 8 gives y = ?",
+        "options": [
+          "1",
+          "3",
+          "2",
+          "1 (alt)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_8082426f",
+        "question": "Elimination on 6x + 4y = -8 and x + y = -1 gives y = ?",
+        "options": [
+          "-2",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_5607bba8",
+        "question": "Elimination on 3x + y = 25 and 2x - 2y = 6 gives y = ?",
+        "options": [
+          "7",
+          "5",
+          "4",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_60bde62b",
+        "question": "Elimination on 6x + y = -8 and 3x + 5y = -13 gives y = ?",
+        "options": [
+          "-2 (alt)",
+          "-1",
+          "-2",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_7960c509",
+        "question": "Elimination on 6x + 6y = -42 and 3x + 2y = -19 gives y = ?",
+        "options": [
+          "-2",
+          "-1",
+          "-4",
+          "-5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_f0f65339",
+        "question": "Elimination on 2x + 3y = -12 and 2x + y = -4 gives y = ?",
+        "options": [
+          "0",
+          "1",
+          "-4",
+          "-3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_a55363d0",
+        "question": "Elimination on x + 4y = -4 and 4x + 4y = -4 gives y = ?",
+        "options": [
+          "1",
+          "-1 (alt)",
+          "0",
+          "-1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_15d01186",
+        "question": "Elimination on 4x + 5y = -30 and 4x - 6y = -8 gives y = ?",
+        "options": [
+          "-5",
+          "-1",
+          "-2",
+          "-4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_9f505937",
+        "question": "Elimination on x + 3y = 21 and 2x - 6y = -42 gives y = ?",
+        "options": [
+          "8",
+          "1",
+          "7",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_caa2e4d2",
+        "question": "Elimination on 2x + y = 3 and 6x - 6y = -18 gives y = ?",
+        "options": [
+          "4",
+          "0",
+          "3",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_6b0f85aa",
+        "question": "Elimination on 2x + 2y = -22 and x - 3y = 9 gives y = ?",
+        "options": [
+          "-4",
+          "-5 (alt)",
+          "-5",
+          "-6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_a83691bb",
+        "question": "Elimination on x + y = 13 and 5x - 5y = -15 gives y = ?",
+        "options": [
+          "9",
+          "8",
+          "5",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_ac565673",
+        "question": "Elimination on x + y = 15 and 6x + 5y = 83 gives y = ?",
+        "options": [
+          "7",
+          "9",
+          "8",
+          "7 (alt)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_90fb767c",
+        "question": "Elimination on 3x + 5y = 24 and 4x - 2y = 32 gives y = ?",
+        "options": [
+          "8",
+          "1",
+          "0",
+          "9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_0571e7cc",
+        "question": "Elimination on x + 4y = 1 and 6x + y = 52 gives y = ?",
+        "options": [
+          "-1",
+          "-2",
+          "10",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_4cef558e",
+        "question": "Elimination on 2x + 6y = 12 and 5x - 2y = -4 gives y = ?",
+        "options": [
+          "2",
+          "3",
+          "0",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_4e8ebd42",
+        "question": "Elimination on 2x + 2y = 14 and 2x - 3y = -26 gives y = ?",
+        "options": [
+          "0",
+          "8",
+          "9",
+          "-1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_58bf1f10",
+        "question": "Elimination on 6x + 6y = 42 and 3x - 2y = -24 gives y = ?",
+        "options": [
+          "-1",
+          "10",
+          "9",
+          "-2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_4bb5d2c0",
+        "question": "Elimination on x + 6y = -17 and x - 2y = -1 gives y = ?",
+        "options": [
+          "-5",
+          "-1",
+          "-4",
+          "-2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_bc5f66bd",
+        "question": "Elimination on 2x + 3y = -16 and 6x + 2y = -20 gives y = ?",
+        "options": [
+          "-2",
+          "-1",
+          "-3",
+          "-4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_f0aed9ce",
+        "question": "Elimination on x + 4y = -3 and 4x + 6y = 8 gives y = ?",
+        "options": [
+          "-2",
+          "6",
+          "-1",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_7c79b572",
+        "question": "Elimination on 4x + 3y = 19 and 4x - y = -1 gives y = ?",
+        "options": [
+          "5",
+          "1",
+          "6",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_7b8b0ee7",
+        "question": "Elimination on 3x + 5y = -19 and 4x - y = -10 gives y = ?",
+        "options": [
+          "-1",
+          "-3",
+          "-2 (alt)",
+          "-2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_68e3480b",
+        "question": "Elimination on 6x + 2y = 38 and 4x + 2y = 30 gives y = ?",
+        "options": [
+          "4",
+          "8",
+          "5",
+          "7"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_cb505f12",
+        "question": "Elimination on 6x + 6y = 36 and 4x + 2y = 12 gives y = ?",
+        "options": [
+          "0",
+          "7",
+          "6",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      }
+    ],
+    "E": [
+      {
+        "id": "u3_t3_E_8737d96f",
+        "question": "Solve by elimination: 5x + 6y = -27 and 3x + y = -11.",
+        "options": [
+          "x = 0, y = -1",
+          "x = 1, y = -1",
+          "x = -1, y = 0",
+          "x = 0, y = 0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_4fcace51",
+        "question": "Solve by elimination: 4x + 2y = -4 and 4x + 3y = -6.",
+        "options": [
+          "x = 2, y = -2",
+          "x = -2, y = 1",
+          "x = 1, y = -1",
+          "x = 1, y = -2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_4bc3dfd9",
+        "question": "Solve by elimination: 4x + 4y = 52 and 3x + 4y = 48.",
+        "options": [
+          "x = -3, y = -4",
+          "x = -4, y = -3",
+          "x = -4, y = -4",
+          "x = -4, y = -4 (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_30b68d15",
+        "question": "Solve by elimination: 2x + 6y = -14 and 4x + 4y = 12.",
+        "options": [
+          "x = -1, y = 7",
+          "x = -1, y = 8",
+          "x = 0, y = 7",
+          "x = 7, y = -1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_c9b955f7",
+        "question": "Solve by elimination: 4x + 6y = 22 and 6x + 5y = 21.",
+        "options": [
+          "x = -5, y = 0",
+          "x = -1, y = -5",
+          "x = -5, y = -1",
+          "x = -4, y = -1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_0b1b42e4",
+        "question": "Solve by elimination: 4x + 6y = -12 and 6x - 5y = 66.",
+        "options": [
+          "x = -3, y = 3",
+          "x = -2, y = 3",
+          "x = 3, y = -3",
+          "x = -3, y = 4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_8b5a142c",
+        "question": "Solve by elimination: 2x + 3y = 35 and 2x = 8.",
+        "options": [
+          "x = 9, y = -6",
+          "x = -5, y = 9",
+          "x = -6, y = 10",
+          "x = -6, y = 9"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_fdac21d5",
+        "question": "Solve by elimination: 5x + 5y = 15 and 4x - 2y = 18.",
+        "options": [
+          "x = 9, y = -6",
+          "x = 8, y = -5",
+          "x = -6, y = 8",
+          "x = 8, y = -6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_9886dbe3",
+        "question": "Solve by elimination: 4x + 4y = 36 and 4x + 2y = 18.",
+        "options": [
+          "x = 2, y = -4",
+          "x = 2, y = -5",
+          "x = -5, y = 2",
+          "x = 3, y = -5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_5484c316",
+        "question": "Solve by elimination: 6x + 4y = 72 and x + y = 14.",
+        "options": [
+          "x = -4, y = 7",
+          "x = 8, y = -4",
+          "x = 7, y = -3",
+          "x = 7, y = -4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_598617f5",
+        "question": "Solve by elimination: x + 3y = 29 and 5x - 5y = 5.",
+        "options": [
+          "x = 3, y = 2",
+          "x = 2, y = 3",
+          "x = 3, y = 3",
+          "x = 4, y = 2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_c7f997ad",
+        "question": "Solve by elimination: 5x + y = 15 and 2x + y = 9.",
+        "options": [
+          "x = 4, y = -5",
+          "x = 5, y = -5",
+          "x = -5, y = 4",
+          "x = 4, y = -4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_ea19bf75",
+        "question": "Solve by elimination: 3x + 2y = 17 and 2x + 4y = 30.",
+        "options": [
+          "x = 5, y = -5",
+          "x = -5, y = 5",
+          "x = 6, y = -5",
+          "x = 5, y = -4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_a9137543",
+        "question": "Solve by elimination: x + 4y = 19 and 3x + 6y = 27.",
+        "options": [
+          "x = -1, y = 6",
+          "x = 6, y = -1",
+          "x = 6, y = 0",
+          "x = 7, y = -1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_b45c341f",
+        "question": "Solve by elimination: 6x + 4y = 24 and 3x + 6y = 24.",
+        "options": [
+          "x = 3, y = -1",
+          "x = 4, y = -2",
+          "x = 3, y = -2",
+          "x = -2, y = 3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_7a5d3fe4",
+        "question": "Solve by elimination: 3x + y = -18 and 5x + 4y = -37.",
+        "options": [
+          "x = 7, y = 3",
+          "x = 7, y = 4",
+          "x = 8, y = 3",
+          "x = 3, y = 7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_9e832bda",
+        "question": "Solve by elimination: 6x + 6y = 96 and x - 6y = -47.",
+        "options": [
+          "x = -4, y = 9",
+          "x = -5, y = 9",
+          "x = -5, y = 10",
+          "x = 9, y = -5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_0933e6da",
+        "question": "Solve by elimination: 6x + 2y = 58 and 3x + 4y = 53.",
+        "options": [
+          "x = 2, y = 6",
+          "x = 1, y = 7",
+          "x = 1, y = 6",
+          "x = 6, y = 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_9a596771",
+        "question": "Solve by elimination: 2x + 3y = -9 and 6x + 5y = -31.",
+        "options": [
+          "x = 2, y = 6",
+          "x = 7, y = 2",
+          "x = 6, y = 2",
+          "x = 6, y = 3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_380092a5",
+        "question": "Solve by elimination: 4x + 3y = 39 and 3x + 6y = 63.",
+        "options": [
+          "x = -3, y = -3",
+          "x = -3, y = -2",
+          "x = -3, y = -3 (alt)",
+          "x = -2, y = -3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_1f308f25",
+        "question": "Solve by elimination: 3x + 3y = 18 and 6x - 4y = -34.",
+        "options": [
+          "x = -5, y = 8",
+          "x = -6, y = 9",
+          "x = 8, y = -6",
+          "x = -6, y = 8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_2175d364",
+        "question": "Solve by elimination: 4x + 4y = 44 and 2x - 4y = 10.",
+        "options": [
+          "x = 4, y = -3",
+          "x = 4, y = -2",
+          "x = 5, y = -3",
+          "x = -3, y = 4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_785a23fb",
+        "question": "Solve by elimination: 4x + 6y = 18 and 3x + 3y = 3.",
+        "options": [
+          "x = 7, y = -4",
+          "x = 6, y = -4",
+          "x = 6, y = -3",
+          "x = -4, y = 6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_9492a210",
+        "question": "Solve by elimination: 5x + y = 45 and 3x - 3y = 9.",
+        "options": [
+          "x = 7, y = -5",
+          "x = -6, y = 7",
+          "x = 8, y = -6",
+          "x = 7, y = -6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_87da6e1d",
+        "question": "Solve by elimination: x + 3y = 5 and 6x - 4y = 8.",
+        "options": [
+          "x = -5, y = 8",
+          "x = 8, y = -6",
+          "x = -6, y = 8",
+          "x = -6, y = 9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_9c7ca618",
+        "question": "Solve by elimination: 5x + 3y = 48 and x - 5y = -24.",
+        "options": [
+          "x = 1, y = 0",
+          "x = 1, y = 1",
+          "x = 0, y = 1",
+          "x = 0, y = 2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_5d660533",
+        "question": "Solve by elimination: 4x + 6y = -52 and x + 5y = -34.",
+        "options": [
+          "x = 7, y = 2",
+          "x = 8, y = 2",
+          "x = 7, y = 3",
+          "x = 2, y = 7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_cfca6196",
+        "question": "Solve by elimination: 2x + 3y = 17 and 2x + 5y = 23.",
+        "options": [
+          "x = -5, y = 4",
+          "x = -4, y = 3",
+          "x = 3, y = -5",
+          "x = -5, y = 3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_31def67b",
+        "question": "Solve by elimination: 2x + 3y = 12 and 3x + 2y = 13.",
+        "options": [
+          "x = -6, y = 0",
+          "x = 0, y = -6",
+          "x = 0, y = -5",
+          "x = 1, y = -6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_E_3d861782",
+        "question": "Solve by elimination: 6x + 3y = 42 and 4x - 4y = 52.",
+        "options": [
+          "x = 2, y = 3",
+          "x = 4, y = 2",
+          "x = 3, y = 2",
+          "x = 3, y = 3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t3_E",
+        "category_label": "Elim · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 3,
+    "topic_id": 3
+  }
+}

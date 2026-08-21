@@ -1440,13 +1440,13 @@ def render_user_dashboard():
         with act_col1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #64748b;">
-                <div style="font-size: 3rem;">📚</div>
-                <h3 style="margin: 0.5rem 0;">PreReq</h3>
-                <p style="color: #6b7280;">6 units · NCERT Class 9 foundations</p>
+                <div style="font-size: 3rem;">📐</div>
+                <h3 style="margin: 0.5rem 0;">Math</h3>
+                <p style="color: #6b7280;">PreReq · Class IX & Class X · Number Sense</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
-            if st.button("📚 PreReq", key="btn_harshit_math", width="stretch", type="primary"):
+            if st.button("📐 Math", key="btn_harshit_math", width="stretch", type="primary"):
                 select_activity("HarshitMath")
                 st.rerun()
 
@@ -5917,6 +5917,30 @@ def render_harshit_math_home():
     harshit_math_ui.render_home()
 
 
+def render_harshit_prereq_home():
+    import harshit_math_ui
+
+    harshit_math_ui.render_prereq_home()
+
+
+def render_harshit_class9_home():
+    import harshit_math_ui
+
+    harshit_math_ui.render_class9_home()
+
+
+def render_harshit_class10_home():
+    import harshit_math_ui
+
+    harshit_math_ui.render_class10_home()
+
+
+def render_harshit_number_sense_home():
+    import harshit_math_ui
+
+    harshit_math_ui.render_number_sense_home()
+
+
 def render_harshit_math_day():
     import harshit_math_ui
 
@@ -5945,6 +5969,18 @@ def render_harshit_prereq_practice():
     import harshit_prereq_practice_ui
 
     harshit_prereq_practice_ui.render_practice()
+
+
+def render_harshit_class10_unit():
+    import harshit_math_ui
+
+    harshit_math_ui.render_class10_unit()
+
+
+def render_harshit_class10_practice():
+    import harshit_class10_practice_ui
+
+    harshit_class10_practice_ui.render_practice()
 
 
 # ──────────────────────────────────────────────
@@ -6989,6 +7025,14 @@ elif page == "edgenuity_linear_equations_practice":
     render_edgenuity_linear_equations_practice()
 elif page == "harshit_math_home":
     render_harshit_math_home()
+elif page == "harshit_prereq_home":
+    render_harshit_prereq_home()
+elif page == "harshit_class9_home":
+    render_harshit_class9_home()
+elif page == "harshit_class10_home":
+    render_harshit_class10_home()
+elif page == "harshit_number_sense_home":
+    render_harshit_number_sense_home()
 elif page == "harshit_math_day":
     render_harshit_math_day()
 elif page == "harshit_math_problem":
@@ -6999,6 +7043,10 @@ elif page == "harshit_prereq_chapter":
     render_harshit_prereq_chapter()
 elif page == "harshit_prereq_practice":
     render_harshit_prereq_practice()
+elif page == "harshit_class10_unit":
+    render_harshit_class10_unit()
+elif page == "harshit_class10_practice":
+    render_harshit_class10_practice()
 elif page == "cube_addition":
     render_cube_addition()
 else:

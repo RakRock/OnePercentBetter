@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "curriculum": "NCERT Class 10 Mathematics",
+    "description": "Fifteen Class 10 units — same practice format as PreReq (15 questions, difficulty control)."
+  },
+  "units": [
+    { "id": 1, "slug": "real_numbers", "title": "Real Numbers", "emoji": "🔢", "pdf": "jemh101.pdf", "active": true },
+    { "id": 2, "slug": "polynomials", "title": "Polynomials", "emoji": "📐", "pdf": "jemh102.pdf", "active": true },
+    { "id": 3, "slug": "linear_equations_pair", "title": "Pair of Linear Equations in Two Variables", "emoji": "📊", "pdf": "jemh103.pdf", "active": true },
+    { "id": 4, "slug": "quadratic_equations", "title": "Quadratic Equations", "emoji": "🎯", "pdf": "jemh104.pdf", "active": true },
+    { "id": 5, "slug": "arithmetic_progressions", "title": "Arithmetic Progressions", "emoji": "📈", "active": false },
+    { "id": 6, "slug": "triangles", "title": "Triangles", "emoji": "🔺", "active": false },
+    { "id": 7, "slug": "coordinate_geometry", "title": "Coordinate Geometry", "emoji": "📍", "active": false },
+    { "id": 8, "slug": "introduction_trigonometry", "title": "Introduction to Trigonometry", "emoji": "📐", "active": false },
+    { "id": 9, "slug": "trigonometry_applications", "title": "Some Applications of Trigonometry", "emoji": "🏔️", "active": false },
+    { "id": 10, "slug": "circles", "title": "Circles", "emoji": "⭕", "active": false },
+    { "id": 11, "slug": "areas_circles", "title": "Areas Related to Circles", "emoji": "🥧", "active": false },
+    { "id": 12, "slug": "surface_areas_volumes", "title": "Surface Areas and Volumes", "emoji": "📦", "active": false },
+    { "id": 13, "slug": "statistics", "title": "Statistics", "emoji": "📊", "active": false },
+    { "id": 14, "slug": "probability", "title": "Probability", "emoji": "🎲", "active": false },
+    { "id": 15, "slug": "mixed_revision", "title": "Mixed Revision & Exam Prep", "emoji": "🏁", "active": false }
+  ]
+}

@@ -38,6 +38,42 @@ def _open_prereq_chapter(prereq_id: int, chapter_num: int):
     st.session_state.current_page = "harshit_prereq_chapter"
 
 
+def _open_class10_unit(unit_id: int):
+    st.session_state.hm10_unit_id = unit_id
+    st.session_state.current_page = "harshit_class10_unit"
+
+
+def _open_math_home():
+    st.session_state.current_page = "harshit_math_home"
+
+
+def _open_prereq_home():
+    st.session_state.current_page = "harshit_prereq_home"
+
+
+def _open_class9_home():
+    st.session_state.current_page = "harshit_class9_home"
+
+
+def _open_class10_home():
+    st.session_state.current_page = "harshit_class10_home"
+
+
+def _class10_ready_caption() -> str:
+    import harshit_class10_units as h10u
+
+    active = [u["title"] for u in h10u.list_units() if u.get("active")]
+    if not active:
+        return "15 NCERT units · coming soon"
+    if len(active) <= 2:
+        return "15 NCERT units · " + " & ".join(active) + " ready"
+    return f"15 NCERT units · {len(active)} ready"
+
+
+def _open_number_sense_home():
+    st.session_state.current_page = "harshit_number_sense_home"
+
+
 def _open_problem(day_id: int, problem_id: str):
     st.session_state.hm_day_id = day_id
     st.session_state.hm_problem_id = problem_id
@@ -76,6 +112,54 @@ def _prereq_progress_label(prereq: dict, summary: dict) -> str:
     if bucket.get("in_progress") or done:
         return f"In progress · {done}/{total} chapters"
     return f"{total} chapter{'s' if total != 1 else ''}"
+
+
+def _render_class10_tab():
+    import harshit_class10_units as h10u
+
+    active_units = [u["title"] for u in h10u.list_units() if u.get("active")]
+    ready_label = ", ".join(active_units[:2]) + (" ready" if active_units else "coming soon")
+    if len(active_units) > 2:
+        ready_label = f"{len(active_units)} units ready"
+
+    st.markdown(
+        '<p style="color:var(--hm-text-secondary);margin-bottom:1.5rem;">'
+        "Fifteen NCERT Class X units — <strong>15 questions</strong> per session with "
+        "<strong>Week Setup</strong> (topics, levels, Grok). "
+        f"Active: {ready_label}.</p>",
+        unsafe_allow_html=True,
+    )
+
+    cols = st.columns(2, gap="large")
+    for i, unit in enumerate(h10u.list_units()):
+        active = unit.get("active", False)
+        pdf_name = unit.get("pdf", "")
+        status = (
+            f"Ready · {unit['title']} ({pdf_name})"
+            if active and pdf_name
+            else ("Ready" if active else "Coming soon")
+        )
+        with cols[i % 2]:
+            st.markdown(
+                f"""
+<div style="background:var(--hm-bg-surface,#fff);border:1px solid var(--hm-border-subtle,#D8DEE6);
+     border-radius:8px;padding:1.35rem;margin-bottom:0.75rem;min-height:9rem;
+     opacity:{'1' if active else '0.55'};">
+  <div style="font-size:1.75rem;margin-bottom:0.35rem;">{unit.get('emoji','📘')}</div>
+  <div style="font-weight:600;color:var(--hm-text-primary);">Unit {unit['id']}: {unit['title']}</div>
+  <div style="color:var(--hm-text-secondary);font-size:0.88rem;margin-top:0.35rem;">
+    {status}
+  </div>
+</div>
+""",
+                unsafe_allow_html=True,
+            )
+            if active:
+                if st.button(f"Open Unit {unit['id']}", key=f"hm10_unit_{unit['id']}", use_container_width=True):
+                    _open_class10_unit(unit["id"])
+                    st.rerun()
+            else:
+                st.button(f"Unit {unit['id']} — soon", key=f"hm10_unit_{unit['id']}_off", disabled=True, use_container_width=True)
 
 
 def _render_prereqs_tab(user: dict | None):
@@ -195,9 +279,9 @@ def _apply_pending_nav(target_key: str, pending_key: str) -> None:
 
 
 def render_home():
+    """Math landing — PreReq (Class IX), Class X, and Number Sense."""
     hmc_ui.inject_harshit_styles()
     name = st.session_state.selected_user
-    user = db.get_user(name)
 
     col_nav1, _ = st.columns([1, 6])
     with col_nav1:
@@ -209,32 +293,197 @@ def render_home():
         f"""
 <div style="text-align:center;padding:1.5rem 0 1.25rem;">
   <h1 style="font-size:2rem;color:var(--hm-text-primary,#1E293B);font-weight:600;">
-    {name} — PreReq
+    {name} — Math
   </h1>
   <p style="color:var(--hm-text-secondary,#64748B);max-width:40rem;margin:0.5rem auto;">
-    NCERT Class 9 foundations — six units before 10th grade.
+    PreReq foundations and Class X NCERT units.
   </p>
 </div>
 """,
         unsafe_allow_html=True,
     )
 
-    _apply_pending_nav("hm_home_section", "hm_home_nav")
+    st.markdown("### Choose a track")
+    col1, col2, col3 = st.columns(3, gap="large")
+    with col1:
+        st.markdown(
+            """
+<div style="background:var(--hm-bg-surface,#fff);border:1px solid var(--hm-border-subtle,#D8DEE6);
+     border-radius:8px;padding:1.35rem;margin-bottom:0.75rem;min-height:9rem;border-top:4px solid #6366f1;">
+  <div style="font-size:1.75rem;margin-bottom:0.35rem;">📚</div>
+  <div style="font-weight:600;color:var(--hm-text-primary);">PreReq</div>
+  <div style="color:var(--hm-text-secondary);font-size:0.88rem;margin-top:0.35rem;">
+    Class IX · 6 buckets · week setup & practice
+  </div>
+</div>
+""",
+            unsafe_allow_html=True,
+        )
+        if st.button("Open PreReq", key="hm_open_prereq", use_container_width=True, type="primary"):
+            _open_class9_home()
+            st.rerun()
 
-    section = st.radio(
-        "Section",
-        ["📚 PreReq Units", "🔢 Number Sense"],
-        horizontal=True,
-        key="hm_home_section",
-        label_visibility="collapsed",
+    with col2:
+        st.markdown(
+            f"""
+<div style="background:var(--hm-bg-surface,#fff);border:1px solid var(--hm-border-subtle,#D8DEE6);
+     border-radius:8px;padding:1.35rem;margin-bottom:0.75rem;min-height:9rem;border-top:4px solid #8b5cf6;">
+  <div style="font-size:1.75rem;margin-bottom:0.35rem;">🔟</div>
+  <div style="font-weight:600;color:var(--hm-text-primary);">Class X</div>
+  <div style="color:var(--hm-text-secondary);font-size:0.88rem;margin-top:0.35rem;">
+    {_class10_ready_caption()}
+  </div>
+</div>
+""",
+            unsafe_allow_html=True,
+        )
+        if st.button("Open Class X", key="hm_open_class10", use_container_width=True, type="primary"):
+            _open_class10_home()
+            st.rerun()
+
+    with col3:
+        st.markdown(
+            """
+<div style="background:var(--hm-bg-surface,#fff);border:1px solid var(--hm-border-subtle,#D8DEE6);
+     border-radius:8px;padding:1.35rem;margin-bottom:0.75rem;min-height:9rem;border-top:4px solid #94a3b8;">
+  <div style="font-size:1.75rem;margin-bottom:0.35rem;">🔢</div>
+  <div style="font-weight:600;color:var(--hm-text-primary);">Number Sense</div>
+  <div style="color:var(--hm-text-secondary);font-size:0.88rem;margin-top:0.35rem;">
+    10-day visual bootcamp
+  </div>
+</div>
+""",
+            unsafe_allow_html=True,
+        )
+        if st.button("Open Number Sense", key="hm_open_ns", use_container_width=True):
+            _open_number_sense_home()
+            st.rerun()
+
+
+def render_prereq_home():
+    """PreReq hub — Class IX or Class X."""
+    hmc_ui.inject_harshit_styles()
+    name = st.session_state.selected_user
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Math", key="hm_back_math"):
+            _open_math_home()
+            st.rerun()
+
+    st.markdown(
+        f"""
+<div style="text-align:center;padding:1rem 0 1.25rem;">
+  <h1 style="font-size:1.85rem;color:var(--hm-text-primary,#1E293B);font-weight:600;">
+    {name} — PreReq
+  </h1>
+  <p style="color:var(--hm-text-secondary,#64748B);">Class IX foundations and Class X NCERT units.</p>
+</div>
+""",
+        unsafe_allow_html=True,
     )
 
-    st.markdown("---")
+    col1, col2 = st.columns(2, gap="large")
+    with col1:
+        st.markdown(
+            """
+<div style="background:var(--hm-bg-surface,#fff);border:1px solid var(--hm-border-subtle,#D8DEE6);
+     border-radius:8px;padding:1.35rem;margin-bottom:0.75rem;min-height:9rem;">
+  <div style="font-size:1.75rem;margin-bottom:0.35rem;">9️⃣</div>
+  <div style="font-weight:600;">Class IX</div>
+  <div style="color:var(--hm-text-secondary);font-size:0.88rem;margin-top:0.35rem;">
+    6 PreReq buckets · week setup & practice
+  </div>
+</div>
+""",
+            unsafe_allow_html=True,
+        )
+        if st.button("Open Class IX", key="hm_open_class9", use_container_width=True, type="primary"):
+            _open_class9_home()
+            st.rerun()
 
-    if section == "📚 PreReq Units":
-        _render_prereqs_tab(user)
-    else:
-        _render_phase1_tab(user)
+    with col2:
+        st.markdown(
+            f"""
+<div style="background:var(--hm-bg-surface,#fff);border:1px solid var(--hm-border-subtle,#D8DEE6);
+     border-radius:8px;padding:1.35rem;margin-bottom:0.75rem;min-height:9rem;">
+  <div style="font-size:1.75rem;margin-bottom:0.35rem;">🔟</div>
+  <div style="font-weight:600;">Class X</div>
+  <div style="color:var(--hm-text-secondary);font-size:0.88rem;margin-top:0.35rem;">
+    {_class10_ready_caption()}
+  </div>
+</div>
+""",
+            unsafe_allow_html=True,
+        )
+        if st.button("Open Class X", key="hm_open_class10", use_container_width=True, type="primary"):
+            _open_class10_home()
+            st.rerun()
+
+
+def render_class9_home():
+    """Class IX — six PreReq unit buckets."""
+    hmc_ui.inject_harshit_styles()
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Math", key="hm_back_prereq_hub"):
+            _open_math_home()
+            st.rerun()
+
+    st.markdown(
+        f'<p class="hm-prompt">{name} — Class IX PreReq</p>',
+        unsafe_allow_html=True,
+    )
+    st.markdown("---")
+    _render_prereqs_tab(user)
+
+
+def render_class10_home():
+    """Class X — fifteen unit buckets."""
+    hmc_ui.inject_harshit_styles()
+    name = st.session_state.selected_user
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Math", key="hm_back_prereq_from_c10"):
+            _open_math_home()
+            st.rerun()
+
+    st.markdown(
+        f'<p class="hm-prompt">{name} — Class X</p>',
+        unsafe_allow_html=True,
+    )
+    st.markdown("---")
+    _render_class10_tab()
+
+
+def render_number_sense_home():
+    """Number Sense bootcamp days."""
+    hmc_ui.inject_harshit_styles()
+    name = st.session_state.selected_user
+    user = db.get_user(name)
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Math", key="hm_back_math_from_ns"):
+            _open_math_home()
+            st.rerun()
+
+    st.markdown(
+        f'<p class="hm-prompt">{name} — Number Sense</p>',
+        unsafe_allow_html=True,
+    )
+    st.markdown("---")
+    _render_phase1_tab(user)
+
+
+def render_class10_unit():
+    import harshit_class10_practice_ui as h10ui
+
+    h10ui.render_unit_home(st.session_state.get("hm10_unit_id", 1))
 
 
 def render_prereq_bucket():
@@ -252,7 +501,7 @@ def render_prereq_bucket():
     col_nav1, _ = st.columns([1, 6])
     with col_nav1:
         if st.button("← PreReqs", key="hm_back_prereqs"):
-            st.session_state.current_page = "harshit_math_home"
+            st.session_state.current_page = "harshit_class9_home"
             st.rerun()
 
     st.markdown(
@@ -378,7 +627,7 @@ def render_day():
     col_nav1, _ = st.columns([1, 6])
     with col_nav1:
         if st.button("← Number Sense", key="hm_back_home"):
-            st.session_state.current_page = "harshit_math_home"
+            st.session_state.current_page = "harshit_number_sense_home"
             st.rerun()
 
     st.markdown(

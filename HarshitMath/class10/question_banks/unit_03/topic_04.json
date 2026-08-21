@@ -1,0 +1,1120 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u3_t4_A_bc2fabc0",
+        "question": "Cross-multiplication formula for a₁x + b₁y = c₁:",
+        "options": [
+          "x = (c₁b₂ - c₂b₁)/(a₁b₂ - a₂b₁), y = (a₁c₂ - a₂c₁)/(a₁b₂ - a₂b₁)",
+          "x = (a₁c₂ - a₂c₁)/(b₁c₂ - b₂c₁)",
+          "x = y = c₁ + c₂",
+          "x = c₁/a₁, y = c₂/a₂"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t4_A",
+        "category_label": "Cross · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      }
+    ],
+    "B": [
+      {
+        "id": "u3_t4_B_a1a3f373",
+        "question": "Cross-multiplication on 6x + 5y = 82 and 2x + 5y = 54:",
+        "options": [
+          "x = 7, y = 8",
+          "x = 7, y = 9",
+          "x = 8, y = 7",
+          "x = 8, y = 8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_8ec4462c",
+        "question": "Cross-multiplication on 2x + 2y = 6 and 3x - 5y = -63:",
+        "options": [
+          "x = -5, y = 9",
+          "x = -6, y = 10",
+          "x = -6, y = 9",
+          "x = 9, y = -6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_30e1a085",
+        "question": "Cross-multiplication on 3x + 4y = -12 and x = 4:",
+        "options": [
+          "x = 5, y = -6",
+          "x = 4, y = -5",
+          "x = -6, y = 4",
+          "x = 4, y = -6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_82cc2d3f",
+        "question": "Cross-multiplication on 6x + 2y = 26 and 3x - 5y = 25:",
+        "options": [
+          "x = -2, y = 5",
+          "x = 6, y = -2",
+          "x = 5, y = -2",
+          "x = 5, y = -1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_0b51106d",
+        "question": "Cross-multiplication on 6x + 5y = 45 and 4x + 6y = 54:",
+        "options": [
+          "x = 0, y = 9",
+          "x = 9, y = 0",
+          "x = 1, y = 9",
+          "x = 0, y = 10"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_f43b51f6",
+        "question": "Cross-multiplication on 5x + 5y = 65 and 4x - 2y = 22:",
+        "options": [
+          "x = 8, y = 5",
+          "x = 5, y = 8",
+          "x = 8, y = 6",
+          "x = 9, y = 5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_2a1f74d2",
+        "question": "Cross-multiplication on 2x + 4y = 6 and 5x + 4y = 3:",
+        "options": [
+          "x = 2, y = -1",
+          "x = 0, y = 2",
+          "x = -1, y = 3",
+          "x = -1, y = 2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_8f9205c6",
+        "question": "Cross-multiplication on x + 5y = -10 and 3x + 2y = 9:",
+        "options": [
+          "x = -3, y = 5",
+          "x = 5, y = -2",
+          "x = 6, y = -3",
+          "x = 5, y = -3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_7eb3c626",
+        "question": "Cross-multiplication on 2x + 5y = 3 and 3x + 5y = 12:",
+        "options": [
+          "x = 9, y = -3",
+          "x = 10, y = -3",
+          "x = -3, y = 9",
+          "x = 9, y = -2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_75591a64",
+        "question": "Cross-multiplication on 5x + 5y = -10 and x - 2y = 13:",
+        "options": [
+          "x = 3, y = -4",
+          "x = 4, y = -5",
+          "x = -5, y = 3",
+          "x = 3, y = -5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_d9080e84",
+        "question": "Cross-multiplication on 3x + 4y = -17 and 6x - 4y = 26:",
+        "options": [
+          "x = 1, y = -5",
+          "x = -5, y = 1",
+          "x = 1, y = -4",
+          "x = 2, y = -5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_889ce469",
+        "question": "Cross-multiplication on x + y = 11 and 6x = 36:",
+        "options": [
+          "x = 6, y = 5",
+          "x = 7, y = 5",
+          "x = 5, y = 6",
+          "x = 6, y = 6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_19ce0b07",
+        "question": "Cross-multiplication on x + y = 3 and 4x - 4y = 12:",
+        "options": [
+          "x = 3, y = 1",
+          "x = 3, y = 0",
+          "x = 0, y = 3",
+          "x = 4, y = 0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_8b02f160",
+        "question": "Cross-multiplication on 3x + 6y = -6 and 5x - 6y = 54:",
+        "options": [
+          "x = 6, y = -3",
+          "x = 6, y = -4",
+          "x = -4, y = 6",
+          "x = 7, y = -4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_d00bab12",
+        "question": "Cross-multiplication on 5x + 3y = -1 and x - 2y = 5:",
+        "options": [
+          "x = 2, y = -2",
+          "x = 1, y = -2",
+          "x = 1, y = -1",
+          "x = -2, y = 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_aea998e8",
+        "question": "Cross-multiplication on 6x + 3y = -12 and 6x + 5y = 0:",
+        "options": [
+          "x = -5, y = 7",
+          "x = 6, y = -5",
+          "x = -5, y = 6",
+          "x = -4, y = 6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_81d30bd3",
+        "question": "Cross-multiplication on 2x + y = 9 and 5x + 5y = 10:",
+        "options": [
+          "x = 7, y = -4",
+          "x = 8, y = -5",
+          "x = 7, y = -5",
+          "x = -5, y = 7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_63e77c59",
+        "question": "Cross-multiplication on 4x + y = -4 and x + 2y = 6:",
+        "options": [
+          "x = 4, y = -2",
+          "x = -2, y = 5",
+          "x = -1, y = 4",
+          "x = -2, y = 4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_e0bfb594",
+        "question": "Cross-multiplication on 5x + 5y = 10 and 4x - 4y = 32:",
+        "options": [
+          "x = 6, y = -3",
+          "x = 5, y = -2",
+          "x = 5, y = -3",
+          "x = -3, y = 5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_6792d76f",
+        "question": "Cross-multiplication on x + 2y = 5 and 3x - 4y = 5:",
+        "options": [
+          "x = 3, y = 2",
+          "x = 4, y = 1",
+          "x = 1, y = 3",
+          "x = 3, y = 1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_79d4751b",
+        "question": "Cross-multiplication on 6x + 3y = 21 and 2x - 5y = -23:",
+        "options": [
+          "x = 5, y = 1",
+          "x = 1, y = 5",
+          "x = 2, y = 5",
+          "x = 1, y = 6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_5084f4db",
+        "question": "Cross-multiplication on 4x + 4y = 52 and 5x + 4y = 58:",
+        "options": [
+          "x = 6, y = 7",
+          "x = 7, y = 6",
+          "x = 6, y = 8",
+          "x = 7, y = 7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_66bba87c",
+        "question": "Cross-multiplication on 2x + 5y = -9 and 4x - 5y = 27:",
+        "options": [
+          "x = 4, y = -3",
+          "x = -3, y = 3",
+          "x = 3, y = -3",
+          "x = 3, y = -2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_2824aa81",
+        "question": "Cross-multiplication on 2x + 6y = -8 and x - 2y = 16:",
+        "options": [
+          "x = 8, y = -4",
+          "x = 8, y = -3",
+          "x = -4, y = 8",
+          "x = 9, y = -4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_8d678769",
+        "question": "Cross-multiplication on 5x + 4y = -25 and 4x - 2y = -20:",
+        "options": [
+          "x = -5, y = 1",
+          "x = 0, y = -5",
+          "x = -4, y = 0",
+          "x = -5, y = 0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_ce855939",
+        "question": "Cross-multiplication on x + 6y = -19 and 3x - 4y = 9:",
+        "options": [
+          "x = -1, y = -2",
+          "x = 0, y = -3",
+          "x = -1, y = -3",
+          "x = -3, y = -1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_f2e1442c",
+        "question": "Cross-multiplication on 2x + 2y = -4 and 2x + 6y = -4:",
+        "options": [
+          "x = 0, y = -2",
+          "x = -1, y = 0",
+          "x = -2, y = 1",
+          "x = -2, y = 0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_9a3a4f9a",
+        "question": "Cross-multiplication on 2x + y = 23 and x = 7:",
+        "options": [
+          "x = 8, y = 9",
+          "x = 7, y = 9",
+          "x = 7, y = 10",
+          "x = 9, y = 7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_56e3248d",
+        "question": "Cross-multiplication on x + 5y = -25 and x - 4y = 20:",
+        "options": [
+          "x = 0, y = -5",
+          "x = -5, y = 0",
+          "x = 1, y = -5",
+          "x = 0, y = -4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_a1688ca3",
+        "question": "Cross-multiplication on x + 2y = 17 and 2x - 2y = -2:",
+        "options": [
+          "x = 6, y = 5",
+          "x = 6, y = 6",
+          "x = 5, y = 6",
+          "x = 5, y = 7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      }
+    ],
+    "C": [
+      {
+        "id": "u3_t4_C_92ac0817",
+        "question": "Father is 3× son's age; in 12 years he will be 2× son's age. Age difference now?",
+        "options": [
+          "12 years",
+          "36 years",
+          "24 years",
+          "18 years"
+        ],
+        "answer": 2,
+        "explanation": "Set son = x, father = 3x; solve 3x + 12 = 2(x + 12) → x = 12, difference = 24.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t4_C",
+        "category_label": "Cross · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      }
+    ],
+    "D": [
+      {
+        "id": "u3_t4_D_269971fc",
+        "question": "A two-digit number has tens digit 6 and units 2. Difference between the number and its reverse?",
+        "options": [
+          "36",
+          "35",
+          "45",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_f6ddd8c5",
+        "question": "A two-digit number has tens digit 5 and units 3. Difference between the number and its reverse?",
+        "options": [
+          "27",
+          "17",
+          "8",
+          "18"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_35ae5bbb",
+        "question": "A two-digit number has tens digit 3 and units 6. Difference between the number and its reverse?",
+        "options": [
+          "26",
+          "27",
+          "36",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_771eeaf7",
+        "question": "A two-digit number has tens digit 4 and units 2. Difference between the number and its reverse?",
+        "options": [
+          "17",
+          "6",
+          "27",
+          "18"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_c74bff3a",
+        "question": "A two-digit number has tens digit 7 and units 8. Difference between the number and its reverse?",
+        "options": [
+          "9",
+          "18",
+          "15",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_7ea24bbb",
+        "question": "A two-digit number has tens digit 3 and units 2. Difference between the number and its reverse?",
+        "options": [
+          "5",
+          "18",
+          "8",
+          "9"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_16de3e40",
+        "question": "A two-digit number has tens digit 5 and units 5. Difference between the number and its reverse?",
+        "options": [
+          "10",
+          "0",
+          "9",
+          "-1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_6f3fad3e",
+        "question": "A two-digit number has tens digit 2 and units 3. Difference between the number and its reverse?",
+        "options": [
+          "8",
+          "18",
+          "9",
+          "5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_d854456b",
+        "question": "A two-digit number has tens digit 7 and units 2. Difference between the number and its reverse?",
+        "options": [
+          "44",
+          "45",
+          "9",
+          "54"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_9506c5a8",
+        "question": "A two-digit number has tens digit 7 and units 1. Difference between the number and its reverse?",
+        "options": [
+          "54",
+          "53",
+          "63",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_58a96508",
+        "question": "A two-digit number has tens digit 7 and units 3. Difference between the number and its reverse?",
+        "options": [
+          "35",
+          "36",
+          "45",
+          "10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_e098b277",
+        "question": "A two-digit number has tens digit 4 and units 5. Difference between the number and its reverse?",
+        "options": [
+          "9",
+          "18",
+          "9 (alt)",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_e5eff819",
+        "question": "A two-digit number has tens digit 6 and units 9. Difference between the number and its reverse?",
+        "options": [
+          "36",
+          "27",
+          "26",
+          "15"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_1f736b73",
+        "question": "A two-digit number has tens digit 4 and units 8. Difference between the number and its reverse?",
+        "options": [
+          "12",
+          "35",
+          "45",
+          "36"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_b0d7eebb",
+        "question": "A two-digit number has tens digit 7 and units 4. Difference between the number and its reverse?",
+        "options": [
+          "11",
+          "27",
+          "26",
+          "36"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_4179d47d",
+        "question": "A two-digit number has tens digit 4 and units 3. Difference between the number and its reverse?",
+        "options": [
+          "8",
+          "18",
+          "7",
+          "9"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_d31a3fe6",
+        "question": "A two-digit number has tens digit 3 and units 9. Difference between the number and its reverse?",
+        "options": [
+          "63",
+          "53",
+          "54",
+          "12"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_1caaa2fb",
+        "question": "A two-digit number has tens digit 3 and units 4. Difference between the number and its reverse?",
+        "options": [
+          "8",
+          "18",
+          "9",
+          "7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_bb450e7d",
+        "question": "A two-digit number has tens digit 6 and units 6. Difference between the number and its reverse?",
+        "options": [
+          "12",
+          "9",
+          "0",
+          "-1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_c281799e",
+        "question": "A two-digit number has tens digit 4 and units 9. Difference between the number and its reverse?",
+        "options": [
+          "54",
+          "44",
+          "13",
+          "45"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_79986c6c",
+        "question": "A two-digit number has tens digit 6 and units 5. Difference between the number and its reverse?",
+        "options": [
+          "9",
+          "18",
+          "11",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_4402db58",
+        "question": "A two-digit number has tens digit 5 and units 1. Difference between the number and its reverse?",
+        "options": [
+          "35",
+          "6",
+          "36",
+          "45"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_00672886",
+        "question": "A two-digit number has tens digit 4 and units 6. Difference between the number and its reverse?",
+        "options": [
+          "10",
+          "18",
+          "27",
+          "17"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_bef25eff",
+        "question": "A two-digit number has tens digit 6 and units 4. Difference between the number and its reverse?",
+        "options": [
+          "17",
+          "10",
+          "27",
+          "18"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_3b749dcc",
+        "question": "A two-digit number has tens digit 5 and units 6. Difference between the number and its reverse?",
+        "options": [
+          "9",
+          "18",
+          "8",
+          "11"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      }
+    ],
+    "E": [
+      {
+        "id": "u3_t4_E_ad7b2072",
+        "question": "A shop sells two types of pens at different prices. Given counts and total cost, the NCERT approach is to:",
+        "options": [
+          "One variable only",
+          "Form two linear equations in two unknowns",
+          "Single quadratic",
+          "No variables needed"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 3,
+    "topic_id": 4
+  }
+}

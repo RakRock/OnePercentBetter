@@ -1,0 +1,1177 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u1_t4_A_5b0567ec",
+        "question": "Rational ÷ (non-zero irrational) is always:",
+        "options": [
+          "Natural",
+          "Irrational",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t4_A",
+        "category_label": "Combine · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_A_3f862fb2",
+        "question": "Non-zero rational + irrational is always:",
+        "options": [
+          "Rational",
+          "Irrational",
+          "Integer",
+          "Natural"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t4_A",
+        "category_label": "Combine · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_A_895e3584",
+        "question": "Non-zero rational × irrational is always:",
+        "options": [
+          "Natural",
+          "Irrational",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t4_A",
+        "category_label": "Combine · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_A_b47a317c",
+        "question": "Rational + (non-zero irrational) is always:",
+        "options": [
+          "Natural",
+          "Rational",
+          "Integer",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "Sum of rational and non-zero irrational is irrational.",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t4_A",
+        "category_label": "Combine · Level A",
+        "source": "chapter_llm",
+        "chapter_ref": "1.2 The Fundamental Theorem of Arithmetic"
+      },
+      {
+        "id": "u1_t4_A_f034f8f4",
+        "question": "Non-zero rational ÷ irrational is always:",
+        "options": [
+          "Integer",
+          "Natural",
+          "Irrational",
+          "Rational"
+        ],
+        "answer": 2,
+        "explanation": "Division of non-zero rational by irrational yields a number that cannot be p/q.",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t4_A",
+        "category_label": "Combine · Level A",
+        "source": "chapter_llm",
+        "chapter_ref": "1.1 Introduction"
+      },
+      {
+        "id": "u1_t4_A_10c51b55",
+        "question": "Rational × (non-zero irrational) is always:",
+        "options": [
+          "Integer",
+          "Rational",
+          "Natural",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "Product cannot be expressed as a ratio of integers.",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t4_A",
+        "category_label": "Combine · Level A",
+        "source": "chapter_llm",
+        "chapter_ref": "1.1 Introduction"
+      }
+    ],
+    "B": [
+      {
+        "id": "u1_t4_B_3b7d729e",
+        "question": "13 × 5 × 7 + 13 is:",
+        "options": [
+          "Perfect square",
+          "Prime",
+          "Irrational",
+          "Composite"
+        ],
+        "answer": 3,
+        "explanation": "Factor: 13(5×7 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_f89fb482",
+        "question": "11 × 3 × 7 + 11 is:",
+        "options": [
+          "Perfect square",
+          "Composite",
+          "Prime",
+          "Irrational"
+        ],
+        "answer": 1,
+        "explanation": "Factor: 11(3×7 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_fb0dc162",
+        "question": "6 × 13 × 11 + 11 is:",
+        "options": [
+          "Irrational",
+          "Prime",
+          "Perfect square",
+          "Composite"
+        ],
+        "answer": 3,
+        "explanation": "Factor: 11(6×13 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_2075e61e",
+        "question": "5 × 7 × 11 + 5 is:",
+        "options": [
+          "Prime",
+          "Irrational",
+          "Composite",
+          "Perfect square"
+        ],
+        "answer": 2,
+        "explanation": "Factor: 5(7×11 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_6d2609f3",
+        "question": "9 × 3 × 5 + 5 is:",
+        "options": [
+          "Composite",
+          "Prime",
+          "Irrational",
+          "Perfect square"
+        ],
+        "answer": 0,
+        "explanation": "Factor: 5(9×3 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_413aea74",
+        "question": "5 × 7 × 11 + 11 is:",
+        "options": [
+          "Composite",
+          "Prime",
+          "Perfect square",
+          "Irrational"
+        ],
+        "answer": 0,
+        "explanation": "Factor: 11(5×7 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_718e9bff",
+        "question": "11 × 13 × 7 + 7 is:",
+        "options": [
+          "Irrational",
+          "Perfect square",
+          "Composite",
+          "Prime"
+        ],
+        "answer": 2,
+        "explanation": "Factor: 7(11×13 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_ff2f943e",
+        "question": "7 × 11 × 13 + 13 is:",
+        "options": [
+          "Irrational",
+          "Perfect square",
+          "Prime",
+          "Composite"
+        ],
+        "answer": 3,
+        "explanation": "Factor: 13(7×11 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_ff5a5147",
+        "question": "13 × 7 × 3 + 13 is:",
+        "options": [
+          "Prime",
+          "Perfect square",
+          "Composite",
+          "Irrational"
+        ],
+        "answer": 2,
+        "explanation": "Factor: 13(7×3 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_3e501a23",
+        "question": "11 × 13 × 7 + 11 is:",
+        "options": [
+          "Composite",
+          "Prime",
+          "Irrational",
+          "Perfect square"
+        ],
+        "answer": 0,
+        "explanation": "Factor: 11(13×7 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_88da8496",
+        "question": "13 × 5 × 7 + 7 is:",
+        "options": [
+          "Irrational",
+          "Composite",
+          "Perfect square",
+          "Prime"
+        ],
+        "answer": 1,
+        "explanation": "Factor: 7(13×5 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_d1792f01",
+        "question": "3 × 13 × 5 + 3 is:",
+        "options": [
+          "Irrational",
+          "Composite",
+          "Prime",
+          "Perfect square"
+        ],
+        "answer": 1,
+        "explanation": "Factor: 3(13×5 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_0a7c87f6",
+        "question": "5 × 13 × 11 + 5 is:",
+        "options": [
+          "Prime",
+          "Composite",
+          "Perfect square",
+          "Irrational"
+        ],
+        "answer": 1,
+        "explanation": "Factor: 5(13×11 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_3dca997e",
+        "question": "11 × 5 × 3 + 3 is:",
+        "options": [
+          "Composite",
+          "Perfect square",
+          "Prime",
+          "Irrational"
+        ],
+        "answer": 0,
+        "explanation": "Factor: 3(11×5 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_B_703bd73a",
+        "question": "5 × 13 × 3 + 5 is:",
+        "options": [
+          "Irrational",
+          "Composite",
+          "Perfect square",
+          "Prime"
+        ],
+        "answer": 1,
+        "explanation": "Factor: 5(13×3 + 1).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t4_B",
+        "category_label": "Combine · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      }
+    ],
+    "C": [
+      {
+        "id": "u1_t4_C_bd61169a",
+        "question": "11√2 is:",
+        "options": [
+          "Rational",
+          "Integer",
+          "Irrational",
+          "Zero"
+        ],
+        "answer": 2,
+        "explanation": "If 11√2 were rational, √2 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_50af6fd1",
+        "question": "6√7 is:",
+        "options": [
+          "Zero",
+          "Irrational",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 1,
+        "explanation": "If 6√7 were rational, √7 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_260d2409",
+        "question": "4√2 is:",
+        "options": [
+          "Irrational",
+          "Zero",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 0,
+        "explanation": "If 4√2 were rational, √2 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_50977828",
+        "question": "2√2 is:",
+        "options": [
+          "Zero",
+          "Irrational",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 1,
+        "explanation": "If 2√2 were rational, √2 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_529b5e9b",
+        "question": "5√2 is:",
+        "options": [
+          "Irrational",
+          "Integer",
+          "Rational",
+          "Zero"
+        ],
+        "answer": 0,
+        "explanation": "If 5√2 were rational, √2 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_50d66b6b",
+        "question": "12√2 is:",
+        "options": [
+          "Integer",
+          "Zero",
+          "Rational",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "If 12√2 were rational, √2 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_ac6109af",
+        "question": "11√7 is:",
+        "options": [
+          "Irrational",
+          "Zero",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 0,
+        "explanation": "If 11√7 were rational, √7 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_e9eec777",
+        "question": "10√7 is:",
+        "options": [
+          "Zero",
+          "Irrational",
+          "Integer",
+          "Rational"
+        ],
+        "answer": 1,
+        "explanation": "If 10√7 were rational, √7 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_723cf922",
+        "question": "8√7 is:",
+        "options": [
+          "Rational",
+          "Zero",
+          "Irrational",
+          "Integer"
+        ],
+        "answer": 2,
+        "explanation": "If 8√7 were rational, √7 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_4fa647be",
+        "question": "10√3 is:",
+        "options": [
+          "Integer",
+          "Zero",
+          "Irrational",
+          "Rational"
+        ],
+        "answer": 2,
+        "explanation": "If 10√3 were rational, √3 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_593a4c4a",
+        "question": "3√5 is:",
+        "options": [
+          "Integer",
+          "Rational",
+          "Irrational",
+          "Zero"
+        ],
+        "answer": 2,
+        "explanation": "If 3√5 were rational, √5 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_f918ad66",
+        "question": "5√7 is:",
+        "options": [
+          "Irrational",
+          "Integer",
+          "Zero",
+          "Rational"
+        ],
+        "answer": 0,
+        "explanation": "If 5√7 were rational, √7 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_8e0127fd",
+        "question": "2√7 is:",
+        "options": [
+          "Irrational",
+          "Rational",
+          "Zero",
+          "Integer"
+        ],
+        "answer": 0,
+        "explanation": "If 2√7 were rational, √7 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_5f64cc40",
+        "question": "12√7 is:",
+        "options": [
+          "Irrational",
+          "Rational",
+          "Integer",
+          "Zero"
+        ],
+        "answer": 0,
+        "explanation": "If 12√7 were rational, √7 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_C_c3780a00",
+        "question": "7√2 is:",
+        "options": [
+          "Rational",
+          "Integer",
+          "Zero",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "If 7√2 were rational, √2 would be rational.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t4_C",
+        "category_label": "Combine · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      }
+    ],
+    "D": [
+      {
+        "id": "u1_t4_D_2992ba91",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "2 + 2√7 is rational",
+          "2√7 is rational",
+          "√7 is rational",
+          "2 + 2√7 is irrational"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_1d38149b",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "√2 is rational",
+          "3√2 is rational",
+          "3 + 4√2 is irrational",
+          "3 + 4√2 is rational"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_9da01c70",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "√2 is rational",
+          "1√2 is rational",
+          "1 + 3√2 is rational",
+          "1 + 3√2 is irrational"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_49fba1fd",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "3√3 is rational",
+          "3 + 1√3 is irrational",
+          "3 + 1√3 is rational",
+          "√3 is rational"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_1920edb0",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "2√5 is rational",
+          "2 + 1√5 is irrational",
+          "√5 is rational",
+          "2 + 1√5 is rational"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_b9f66d6b",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "4 + 2√3 is irrational",
+          "4 + 2√3 is rational",
+          "4√3 is rational",
+          "√3 is rational"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_8cec1a4f",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "√3 is rational",
+          "1√3 is rational",
+          "1 + 4√3 is irrational",
+          "1 + 4√3 is rational"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_294f1aa3",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "4 + 4√5 is rational",
+          "4√5 is rational",
+          "√5 is rational",
+          "4 + 4√5 is irrational"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_bb356a3f",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "2 + 2√5 is irrational",
+          "2 + 2√5 is rational",
+          "√5 is rational",
+          "2√5 is rational"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_558a4761",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "3 + 2√2 is irrational",
+          "3√2 is rational",
+          "√2 is rational",
+          "3 + 2√2 is rational"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_6e88158c",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "4√7 is rational",
+          "4 + 3√7 is irrational",
+          "4 + 3√7 is rational",
+          "√7 is rational"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_b4d1f3b8",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "√3 is rational",
+          "2 + 2√3 is rational",
+          "2 + 2√3 is irrational",
+          "2√3 is rational"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_f16e3cd6",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "5√2 is rational",
+          "√2 is rational",
+          "5 + 4√2 is rational",
+          "5 + 4√2 is irrational"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_b2d83c78",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "√2 is rational",
+          "1 + 1√2 is rational",
+          "1 + 1√2 is irrational",
+          "1√2 is rational"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_d55eb95c",
+        "question": "Which follows from NCERT Ex 1.2 style proofs?",
+        "options": [
+          "3 + 4√3 is rational",
+          "3√3 is rational",
+          "√3 is rational",
+          "3 + 4√3 is irrational"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      }
+    ],
+    "E": [
+      {
+        "id": "u1_t4_E_8aaa1eae",
+        "question": "(√2)² is:",
+        "options": [
+          "Irrational",
+          "Rational",
+          "Integer",
+          "Prime"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t4_E",
+        "category_label": "Combine · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_E_74d5b1f8",
+        "question": "√2 is:",
+        "options": [
+          "Integer",
+          "Prime",
+          "Irrational",
+          "Rational"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t4_E",
+        "category_label": "Combine · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_E_b317b1c8",
+        "question": "√10 is:",
+        "options": [
+          "Rational",
+          "Irrational",
+          "Prime",
+          "Integer"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t4_E",
+        "category_label": "Combine · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_E_4e754e7e",
+        "question": "√6 is:",
+        "options": [
+          "Integer",
+          "Irrational",
+          "Prime",
+          "Rational"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t4_E",
+        "category_label": "Combine · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_E_c2a0ab0e",
+        "question": "√75 is:",
+        "options": [
+          "Integer",
+          "Rational",
+          "Prime",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t4_E",
+        "category_label": "Combine · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_E_0ab5337c",
+        "question": "√7 is:",
+        "options": [
+          "Rational",
+          "Prime",
+          "Irrational",
+          "Integer"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t4_E",
+        "category_label": "Combine · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_E_6317d435",
+        "question": "√3 is:",
+        "options": [
+          "Integer",
+          "Prime",
+          "Rational",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t4_E",
+        "category_label": "Combine · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_E_de700e7c",
+        "question": "√5 is:",
+        "options": [
+          "Prime",
+          "Integer",
+          "Rational",
+          "Irrational"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t4_E",
+        "category_label": "Combine · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_E_de3846b4",
+        "question": "√9 is:",
+        "options": [
+          "Rational",
+          "Prime",
+          "Irrational",
+          "Integer"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t4_E",
+        "category_label": "Combine · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_E_3964716f",
+        "question": "√15 is:",
+        "options": [
+          "Irrational",
+          "Integer",
+          "Prime",
+          "Rational"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t4_E",
+        "category_label": "Combine · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 1,
+    "topic_id": 4
+  }
+}

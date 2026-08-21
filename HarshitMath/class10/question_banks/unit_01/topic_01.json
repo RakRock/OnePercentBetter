@@ -1,0 +1,1329 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u1_t1_A_7f38d7e0",
+        "question": "Is 42 a prime number?",
+        "options": [
+          "Neither",
+          "Odd only",
+          "Composite",
+          "Prime"
+        ],
+        "answer": 2,
+        "explanation": "42 has more than two positive divisors.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_ee6f9223",
+        "question": "Is 71 a prime number?",
+        "options": [
+          "Even only",
+          "Composite",
+          "Prime",
+          "Neither"
+        ],
+        "answer": 2,
+        "explanation": "71 has no divisors other than 1 and itself.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_9d34236e",
+        "question": "Is 59 a prime number?",
+        "options": [
+          "Neither",
+          "Prime",
+          "Composite",
+          "Even only"
+        ],
+        "answer": 1,
+        "explanation": "59 has no divisors other than 1 and itself.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_6605ae44",
+        "question": "Is 86 a prime number?",
+        "options": [
+          "Neither",
+          "Composite",
+          "Prime",
+          "Odd only"
+        ],
+        "answer": 1,
+        "explanation": "86 has more than two positive divisors.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_fb2b9483",
+        "question": "Is 60 a prime number?",
+        "options": [
+          "Odd only",
+          "Composite",
+          "Prime",
+          "Neither"
+        ],
+        "answer": 1,
+        "explanation": "60 has more than two positive divisors.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_8b1bd001",
+        "question": "Is 40 a prime number?",
+        "options": [
+          "Prime",
+          "Odd only",
+          "Composite",
+          "Neither"
+        ],
+        "answer": 2,
+        "explanation": "40 has more than two positive divisors.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_8348ce37",
+        "question": "Is 91 a prime number?",
+        "options": [
+          "Composite",
+          "Prime",
+          "Neither",
+          "Odd only"
+        ],
+        "answer": 0,
+        "explanation": "91 has more than two positive divisors.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_ee0cc185",
+        "question": "Is 75 a prime number?",
+        "options": [
+          "Composite",
+          "Neither",
+          "Odd only",
+          "Prime"
+        ],
+        "answer": 0,
+        "explanation": "75 has more than two positive divisors.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_ea222716",
+        "question": "Is 69 a prime number?",
+        "options": [
+          "Prime",
+          "Odd only",
+          "Neither",
+          "Composite"
+        ],
+        "answer": 3,
+        "explanation": "69 has more than two positive divisors.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_ff4867f5",
+        "question": "Is 53 a prime number?",
+        "options": [
+          "Prime",
+          "Even only",
+          "Neither",
+          "Composite"
+        ],
+        "answer": 0,
+        "explanation": "53 has no divisors other than 1 and itself.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_86801960",
+        "question": "Is 20 a prime number?",
+        "options": [
+          "Odd only",
+          "Composite",
+          "Neither",
+          "Prime"
+        ],
+        "answer": 1,
+        "explanation": "20 has more than two positive divisors.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_48280dab",
+        "question": "Is 19 a prime number?",
+        "options": [
+          "Prime",
+          "Neither",
+          "Even only",
+          "Composite"
+        ],
+        "answer": 0,
+        "explanation": "19 has no divisors other than 1 and itself.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_b31cd8f7",
+        "question": "Is 12 a prime number?",
+        "options": [
+          "Prime",
+          "Neither",
+          "Odd only",
+          "Composite"
+        ],
+        "answer": 3,
+        "explanation": "12 has more than two positive divisors.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_456bb082",
+        "question": "Is 56 a prime number?",
+        "options": [
+          "Prime",
+          "Composite",
+          "Odd only",
+          "Neither"
+        ],
+        "answer": 1,
+        "explanation": "56 has more than two positive divisors.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_791ba2a1",
+        "question": "Is 37 a prime number?",
+        "options": [
+          "Even only",
+          "Prime",
+          "Composite",
+          "Neither"
+        ],
+        "answer": 1,
+        "explanation": "37 has no divisors other than 1 and itself.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_A_56ee5ca1",
+        "question": "Is 87 a prime number?",
+        "options": [
+          "Neither",
+          "Prime",
+          "Even only",
+          "Composite"
+        ],
+        "answer": 3,
+        "explanation": "87 = 3 × 29, so it is composite.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "chapter_llm",
+        "chapter_ref": "1.2 The Fundamental Theorem of Arithmetic"
+      },
+      {
+        "id": "u1_t1_A_b98e1f5b",
+        "question": "Is 97 a prime number?",
+        "options": [
+          "Composite",
+          "Neither",
+          "Prime",
+          "Odd only"
+        ],
+        "answer": 2,
+        "explanation": "97 has no divisors other than 1 and itself.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "chapter_llm",
+        "chapter_ref": "1.2 The Fundamental Theorem of Arithmetic"
+      },
+      {
+        "id": "u1_t1_A_5ced86f8",
+        "question": "Is 81 a prime number?",
+        "options": [
+          "Neither",
+          "Composite",
+          "Prime",
+          "Even only"
+        ],
+        "answer": 1,
+        "explanation": "81 = 3^4, so it is composite.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "chapter_llm",
+        "chapter_ref": "1.2 The Fundamental Theorem of Arithmetic"
+      },
+      {
+        "id": "u1_t1_A_85e38cea",
+        "question": "Is 47 a prime number?",
+        "options": [
+          "Composite",
+          "Neither",
+          "Prime",
+          "Even only"
+        ],
+        "answer": 2,
+        "explanation": "47 has no divisors other than 1 and itself, so it is prime.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "chapter_llm",
+        "chapter_ref": "1.2 The Fundamental Theorem of Arithmetic"
+      },
+      {
+        "id": "u1_t1_A_2179afe0",
+        "question": "Is 91 a prime number?",
+        "options": [
+          "Composite",
+          "Prime",
+          "Even only",
+          "Neither"
+        ],
+        "answer": 0,
+        "explanation": "91 = 7 × 13, so it is composite.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "chapter_llm",
+        "chapter_ref": "1.2 The Fundamental Theorem of Arithmetic"
+      },
+      {
+        "id": "u1_t1_A_97d76e53",
+        "question": "Is 83 a prime number?",
+        "options": [
+          "Even only",
+          "Prime",
+          "Neither",
+          "Composite"
+        ],
+        "answer": 1,
+        "explanation": "83 has no divisors other than 1 and itself, so it is prime.",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 1,
+        "category": "u1_t1_A",
+        "category_label": "FTA · Level A",
+        "source": "chapter_llm",
+        "chapter_ref": "1.2 The Fundamental Theorem of Arithmetic"
+      }
+    ],
+    "B": [
+      {
+        "id": "u1_t1_B_42c8e2b9",
+        "question": "Prime factorisation of 82?",
+        "options": [
+          "2 × 41",
+          "83",
+          "3^4",
+          "82"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_73f9af3b",
+        "question": "Prime factorisation of 78?",
+        "options": [
+          "79",
+          "78",
+          "7 × 11",
+          "2 × 3 × 13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_22f0f7d4",
+        "question": "Prime factorisation of 62?",
+        "options": [
+          "61",
+          "3^2 × 7",
+          "2 × 31",
+          "62"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_827b595e",
+        "question": "Prime factorisation of 63?",
+        "options": [
+          "63",
+          "2^6",
+          "2 × 31",
+          "3^2 × 7"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_8575f1fd",
+        "question": "Prime factorisation of 52?",
+        "options": [
+          "53",
+          "3 × 17",
+          "52",
+          "2^2 × 13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_73e03151",
+        "question": "Prime factorisation of 86?",
+        "options": [
+          "5 × 17",
+          "3 × 29",
+          "2 × 43",
+          "86"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_219d08fe",
+        "question": "Prime factorisation of 75?",
+        "options": [
+          "2 × 37",
+          "75",
+          "2^2 × 19",
+          "3 × 5^2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_9a1b94ca",
+        "question": "Prime factorisation of 55?",
+        "options": [
+          "2^3 × 7",
+          "55",
+          "2 × 3^3",
+          "5 × 11"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_07a85d2e",
+        "question": "Prime factorisation of 93?",
+        "options": [
+          "2^2 × 23",
+          "2 × 47",
+          "93",
+          "3 × 31"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_d3270b29",
+        "question": "Prime factorisation of 94?",
+        "options": [
+          "3 × 31",
+          "2 × 47",
+          "5 × 19",
+          "94"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_2058c6c5",
+        "question": "Prime factorisation of 80?",
+        "options": [
+          "80",
+          "2^4 × 5",
+          "3^4",
+          "79"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_1109e3ba",
+        "question": "Prime factorisation of 30?",
+        "options": [
+          "29",
+          "31",
+          "2 × 3 × 5",
+          "30"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_80d6a777",
+        "question": "Prime factorisation of 77?",
+        "options": [
+          "77",
+          "2 × 3 × 13",
+          "7 × 11",
+          "2^2 × 19"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_a0602732",
+        "question": "Prime factorisation of 36?",
+        "options": [
+          "37",
+          "36",
+          "5 × 7",
+          "2^2 × 3^2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_B_346a0020",
+        "question": "Prime factorisation of 57?",
+        "options": [
+          "3 × 19",
+          "57",
+          "2 × 29",
+          "2^3 × 7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 1,
+        "category": "u1_t1_B",
+        "category_label": "FTA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      }
+    ],
+    "C": [
+      {
+        "id": "u1_t1_C_f9866425",
+        "question": "Write 156 as a product of powers of primes.",
+        "options": [
+          "13^2",
+          "2^2 × 3 × 13",
+          "2 × 3 × 5",
+          "2 × 3 × 13"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_69855c08",
+        "question": "Write 630 as a product of powers of primes.",
+        "options": [
+          "2 × 3^2 × 5 × 7",
+          "3^2 × 5 × 7",
+          "2 × 3 × 5",
+          "643"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_55cfb27e",
+        "question": "Write 7429 as a product of powers of primes.",
+        "options": [
+          "2 × 3 × 5",
+          "2^4 × 3 × 5 × 31",
+          "17 × 19 × 23",
+          "2 × 61^2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_392cd993",
+        "question": "Write 504 as a product of powers of primes.",
+        "options": [
+          "2^2 × 3^2 × 7",
+          "2^3 × 3^2 × 7",
+          "11 × 47",
+          "2 × 3 × 5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_54cf00fd",
+        "question": "Write 5005 as a product of powers of primes.",
+        "options": [
+          "2^3 × 3 × 11 × 19",
+          "2 × 3 × 5",
+          "5 × 7 × 11 × 13",
+          "2 × 13 × 193"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_3692045a",
+        "question": "Write 140 as a product of powers of primes.",
+        "options": [
+          "2^2 × 5 × 7",
+          "2 × 5 × 7",
+          "2 × 3 × 5",
+          "3^2 × 17"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_6751d4d4",
+        "question": "Write 32760 as a product of powers of primes.",
+        "options": [
+          "2^2 × 3^2 × 5 × 7 × 13",
+          "13 × 2521",
+          "2 × 3 × 5",
+          "2^3 × 3^2 × 5 × 7 × 13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_a57456ba",
+        "question": "Write 180 as a product of powers of primes.",
+        "options": [
+          "2 × 3 × 5",
+          "2 × 3^2 × 5",
+          "193",
+          "2^2 × 3^2 × 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_f34a0fe4",
+        "question": "Write 3825 as a product of powers of primes.",
+        "options": [
+          "2 × 19 × 101",
+          "2 × 3 × 5",
+          "3^2 × 5^2 × 17",
+          "2^2 × 7 × 137"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_2503ef67",
+        "question": "Write 225 as a product of powers of primes.",
+        "options": [
+          "2^2 × 59",
+          "2 × 7 × 17",
+          "3^2 × 5^2",
+          "2 × 3 × 5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_27490b51",
+        "question": "Write 420 as a product of powers of primes.",
+        "options": [
+          "433",
+          "2 × 3 × 5",
+          "2^2 × 3 × 5 × 7",
+          "2 × 3 × 5 × 7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_C_0f6eb95b",
+        "question": "Write 360 as a product of powers of primes.",
+        "options": [
+          "373",
+          "2 × 3 × 5",
+          "2^2 × 3^2 × 5",
+          "2^3 × 3^2 × 5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 1,
+        "category": "u1_t1_C",
+        "category_label": "FTA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      }
+    ],
+    "D": [
+      {
+        "id": "u1_t1_D_20848efa",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 381 have?",
+        "options": [
+          "Infinitely many",
+          "Two only",
+          "None",
+          "Exactly one (apart from order)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_87c6c7c2",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 144 have?",
+        "options": [
+          "Exactly one (apart from order)",
+          "Infinitely many",
+          "Two only",
+          "None"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_f7fc4e1f",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 62 have?",
+        "options": [
+          "Infinitely many",
+          "None",
+          "Exactly one (apart from order)",
+          "Two only"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_0d096622",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 282 have?",
+        "options": [
+          "Infinitely many",
+          "Two only",
+          "None",
+          "Exactly one (apart from order)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_5b58e617",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 206 have?",
+        "options": [
+          "Two only",
+          "None",
+          "Exactly one (apart from order)",
+          "Infinitely many"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_6a9ba720",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 562 have?",
+        "options": [
+          "Two only",
+          "None",
+          "Exactly one (apart from order)",
+          "Infinitely many"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_f8b4c87f",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 160 have?",
+        "options": [
+          "Infinitely many",
+          "Exactly one (apart from order)",
+          "None",
+          "Two only"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_5547c1c9",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 576 have?",
+        "options": [
+          "None",
+          "Infinitely many",
+          "Two only",
+          "Exactly one (apart from order)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_4f824656",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 352 have?",
+        "options": [
+          "Infinitely many",
+          "None",
+          "Two only",
+          "Exactly one (apart from order)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_901fed22",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 392 have?",
+        "options": [
+          "Infinitely many",
+          "Two only",
+          "Exactly one (apart from order)",
+          "None"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_a807e6a4",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 436 have?",
+        "options": [
+          "Two only",
+          "Exactly one (apart from order)",
+          "None",
+          "Infinitely many"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_5d863aae",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 410 have?",
+        "options": [
+          "Infinitely many",
+          "None",
+          "Two only",
+          "Exactly one (apart from order)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_3e15c755",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 308 have?",
+        "options": [
+          "Two only",
+          "Infinitely many",
+          "Exactly one (apart from order)",
+          "None"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_53405d88",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 178 have?",
+        "options": [
+          "None",
+          "Infinitely many",
+          "Exactly one (apart from order)",
+          "Two only"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_D_7d243233",
+        "question": "By the Fundamental Theorem of Arithmetic, how many prime factorisations does 200 have?",
+        "options": [
+          "Exactly one (apart from order)",
+          "Infinitely many",
+          "Two only",
+          "None"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t1_D",
+        "category_label": "FTA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      }
+    ],
+    "E": [
+      {
+        "id": "u1_t1_E_ec80a296",
+        "question": "Can 6^n end with the digit 0 for any natural number n?",
+        "options": [
+          "Only when n is even",
+          "Yes",
+          "No",
+          "Only when n is a multiple of 5"
+        ],
+        "answer": 2,
+        "explanation": "6^n needs prime factor 5 in its factorisation to end in 0.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t1_E",
+        "category_label": "FTA · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_E_a5158394",
+        "question": "Can 8^n end with the digit 0 for any natural number n?",
+        "options": [
+          "Yes",
+          "No",
+          "Only when n is a multiple of 5",
+          "Only when n is even"
+        ],
+        "answer": 1,
+        "explanation": "8^n needs prime factor 5 in its factorisation to end in 0.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t1_E",
+        "category_label": "FTA · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_E_1302eeeb",
+        "question": "Can 16^n end with the digit 0 for any natural number n?",
+        "options": [
+          "Yes",
+          "No",
+          "Only when n is a multiple of 5",
+          "Only when n is even"
+        ],
+        "answer": 1,
+        "explanation": "16^n needs prime factor 5 in its factorisation to end in 0.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t1_E",
+        "category_label": "FTA · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_E_f6b1a19f",
+        "question": "Can 9^n end with the digit 0 for any natural number n?",
+        "options": [
+          "Only when n is a multiple of 5",
+          "No",
+          "Only when n is even",
+          "Yes"
+        ],
+        "answer": 1,
+        "explanation": "9^n needs prime factor 5 in its factorisation to end in 0.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t1_E",
+        "category_label": "FTA · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_E_d8595101",
+        "question": "Can 12^n end with the digit 0 for any natural number n?",
+        "options": [
+          "Only when n is a multiple of 5",
+          "No",
+          "Yes",
+          "Only when n is even"
+        ],
+        "answer": 1,
+        "explanation": "12^n needs prime factor 5 in its factorisation to end in 0.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t1_E",
+        "category_label": "FTA · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t1_E_0f67333c",
+        "question": "Can 4^n end with the digit 0 for any natural number n?",
+        "options": [
+          "No",
+          "Only when n is a multiple of 5",
+          "Only when n is even",
+          "Yes"
+        ],
+        "answer": 0,
+        "explanation": "4^n needs prime factor 5 in its factorisation to end in 0.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 1,
+        "category": "u1_t1_E",
+        "category_label": "FTA · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 1,
+    "topic_id": 1
+  }
+}

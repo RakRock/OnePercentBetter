@@ -1,0 +1,911 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u4_t3_A_36407509",
+        "question": "Quadratic formula for ax² + bx + c = 0:",
+        "options": [
+          "x = (-b ± √(b² + 4ac)) / 2a",
+          "x = (-b ± √(b² - 4ac)) / 2a",
+          "x = b ± √c",
+          "x = -c/b"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 4,
+        "category": "u4_t3_A",
+        "category_label": "Formula · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      }
+    ],
+    "B": [
+      {
+        "id": "u4_t3_B_957090c7",
+        "question": "Discriminant of x² + 4x + 3 = 0:",
+        "options": [
+          "8",
+          "4",
+          "3",
+          "4 (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_927c5b1f",
+        "question": "Discriminant of x² + 3x - 4 = 0:",
+        "options": [
+          "-4",
+          "3",
+          "29",
+          "25"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_969c436d",
+        "question": "Discriminant of x² + 7x + 12 = 0:",
+        "options": [
+          "7",
+          "12",
+          "5",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_0707c190",
+        "question": "Discriminant of x² - 4x + 3 = 0:",
+        "options": [
+          "-4",
+          "8",
+          "3",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_f4a775ae",
+        "question": "Discriminant of x² + 10x + 16 = 0:",
+        "options": [
+          "16",
+          "40",
+          "10",
+          "36"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_93ce81dd",
+        "question": "Discriminant of x² + 10x + 21 = 0:",
+        "options": [
+          "16",
+          "20",
+          "21",
+          "10"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_2cfa4eeb",
+        "question": "Discriminant of x² + 3x + 2 = 0:",
+        "options": [
+          "3",
+          "1",
+          "5",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_8d7eb260",
+        "question": "Discriminant of x² - 11x + 24 = 0:",
+        "options": [
+          "24",
+          "-11",
+          "29",
+          "25"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_7b175ecd",
+        "question": "Discriminant of x² - 7x + 6 = 0:",
+        "options": [
+          "29",
+          "-7",
+          "25",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_fce06f92",
+        "question": "Discriminant of x² + 10x + 24 = 0:",
+        "options": [
+          "8",
+          "4",
+          "24",
+          "10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_bafe9fd4",
+        "question": "Discriminant of x² - 2x - 35 = 0:",
+        "options": [
+          "-35",
+          "148",
+          "144",
+          "-2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_33613331",
+        "question": "Discriminant of x² + 9x + 14 = 0:",
+        "options": [
+          "29",
+          "25",
+          "14",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_676bf6a6",
+        "question": "Discriminant of x² + x - 12 = 0:",
+        "options": [
+          "53",
+          "1",
+          "49",
+          "-12"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_aea8401c",
+        "question": "Discriminant of x² - 14x + 49 = 0:",
+        "options": [
+          "-14",
+          "49",
+          "0",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_7a63ef4f",
+        "question": "Discriminant of x² - 10x + 24 = 0:",
+        "options": [
+          "4",
+          "8",
+          "-10",
+          "24"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      }
+    ],
+    "C": [
+      {
+        "id": "u4_t3_C_882a7f6e",
+        "question": "Roots of x² + 12x + 36 = 0 by formula:",
+        "options": [
+          "-6 (twice)",
+          "6 and 6",
+          "36",
+          "-12"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_0e75d76c",
+        "question": "Roots of x² + 10x + 21 = 0 by formula:",
+        "options": [
+          "-10",
+          "7 and 3",
+          "-7 and -3",
+          "21"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_7d8828cb",
+        "question": "Roots of x² - 2x - 48 = 0 by formula:",
+        "options": [
+          "2",
+          "6 and -8",
+          "-6 and 8",
+          "-48"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_144f0eaa",
+        "question": "Roots of x² - 10x + 16 = 0 by formula:",
+        "options": [
+          "-2 and -8",
+          "10",
+          "16",
+          "2 and 8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_673908a3",
+        "question": "Roots of x² - 7x = 0 by formula:",
+        "options": [
+          "0",
+          "0 and 7",
+          "0 and -7",
+          "7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_07b4bde2",
+        "question": "Roots of x² + x - 12 = 0 by formula:",
+        "options": [
+          "-4 and 3",
+          "4 and -3",
+          "-1",
+          "-12"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_c89005d1",
+        "question": "Roots of x² - 36 = 0 by formula:",
+        "options": [
+          "-6 and 6",
+          "-36",
+          "6 and -6",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_0139d502",
+        "question": "Roots of x² + 9x + 20 = 0 by formula:",
+        "options": [
+          "-9",
+          "20",
+          "-5 and -4",
+          "5 and 4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_5e7a5864",
+        "question": "Roots of x² = 0 by formula:",
+        "options": [
+          "0 (twice)",
+          "0 (twice) (alt)",
+          "0",
+          "0 and 0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_d805e9f4",
+        "question": "Roots of x² + 7x + 10 = 0 by formula:",
+        "options": [
+          "-7",
+          "5 and 2",
+          "-5 and -2",
+          "10"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_e3f0823e",
+        "question": "Roots of x² + 2x = 0 by formula:",
+        "options": [
+          "-2",
+          "0 and 2",
+          "0",
+          "0 and -2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_8023f9be",
+        "question": "Roots of x² - x - 42 = 0 by formula:",
+        "options": [
+          "-42",
+          "1",
+          "-6 and 7",
+          "6 and -7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_9a072ccf",
+        "question": "Roots of x² + x - 20 = 0 by formula:",
+        "options": [
+          "-20",
+          "-4 and 5",
+          "-1",
+          "4 and -5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_89d93378",
+        "question": "Roots of x² - 4x - 21 = 0 by formula:",
+        "options": [
+          "3 and -7",
+          "-21",
+          "-3 and 7",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_8a106401",
+        "question": "Roots of x² - 7x + 10 = 0 by formula:",
+        "options": [
+          "2 and 5",
+          "7",
+          "-2 and -5",
+          "10"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      }
+    ],
+    "D": [
+      {
+        "id": "u4_t3_D_97b8e269",
+        "question": "Nature of roots of 3x² - 9x - 24 = 0 (use Δ first):",
+        "options": [
+          "Equal roots",
+          "Two distinct real roots",
+          "Two distinct real roots (alt)",
+          "No real roots"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_7d325409",
+        "question": "Nature of roots of 3x² - 9x - 12 = 0 (use Δ first):",
+        "options": [
+          "No real roots",
+          "Equal roots",
+          "Two distinct real roots",
+          "Two distinct real roots (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_ef489617",
+        "question": "Nature of roots of 2x² - 2x + 4 = 0 (use Δ first):",
+        "options": [
+          "Equal roots",
+          "No real roots",
+          "Two distinct real roots",
+          "No real roots (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_fbb2122d",
+        "question": "Nature of roots of 3x² - 9x + 15 = 0 (use Δ first):",
+        "options": [
+          "No real roots (alt)",
+          "No real roots",
+          "Two distinct real roots",
+          "Equal roots"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_98c83d6f",
+        "question": "Nature of roots of 2x² - 4x - 4 = 0 (use Δ first):",
+        "options": [
+          "No real roots",
+          "Two distinct real roots (alt)",
+          "Two distinct real roots",
+          "Equal roots"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_04f426df",
+        "question": "Nature of roots of 2x² + 10x - 12 = 0 (use Δ first):",
+        "options": [
+          "Two distinct real roots (alt)",
+          "Equal roots",
+          "Two distinct real roots",
+          "No real roots"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_76a03385",
+        "question": "Nature of roots of 2x² + 6x + 8 = 0 (use Δ first):",
+        "options": [
+          "Equal roots",
+          "No real roots (alt)",
+          "No real roots",
+          "Two distinct real roots"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_c42050c7",
+        "question": "Nature of roots of 3x² - 15x + 3 = 0 (use Δ first):",
+        "options": [
+          "Equal roots",
+          "Two distinct real roots (alt)",
+          "Two distinct real roots",
+          "No real roots"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_c9a40e74",
+        "question": "Nature of roots of 3x² + 18x + 9 = 0 (use Δ first):",
+        "options": [
+          "Two distinct real roots",
+          "No real roots",
+          "Equal roots",
+          "Two distinct real roots (alt)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_04907165",
+        "question": "Nature of roots of 3x² + 3x + 15 = 0 (use Δ first):",
+        "options": [
+          "Two distinct real roots",
+          "No real roots",
+          "No real roots (alt)",
+          "Equal roots"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_2a124b27",
+        "question": "Nature of roots of 3x² - 18x = 0 (use Δ first):",
+        "options": [
+          "Two distinct real roots",
+          "Two distinct real roots (alt)",
+          "Equal roots",
+          "No real roots"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_17ced6fa",
+        "question": "Nature of roots of 3x² + 6x - 3 = 0 (use Δ first):",
+        "options": [
+          "Equal roots",
+          "Two distinct real roots",
+          "No real roots",
+          "Two distinct real roots (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_8b8ded98",
+        "question": "Nature of roots of 2x² - 6x + 16 = 0 (use Δ first):",
+        "options": [
+          "Two distinct real roots",
+          "No real roots",
+          "No real roots (alt)",
+          "Equal roots"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_f49ae203",
+        "question": "Nature of roots of 3x² + 12x - 27 = 0 (use Δ first):",
+        "options": [
+          "No real roots",
+          "Two distinct real roots (alt)",
+          "Equal roots",
+          "Two distinct real roots"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_D_b2888d60",
+        "question": "Nature of roots of 2x² - 6x - 10 = 0 (use Δ first):",
+        "options": [
+          "Two distinct real roots",
+          "No real roots",
+          "Equal roots",
+          "Two distinct real roots (alt)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t3_D",
+        "category_label": "Formula · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      }
+    ],
+    "E": [
+      {
+        "id": "u4_t3_E_c36495bd",
+        "question": "Best NCERT method when factorisation is not obvious:",
+        "options": [
+          "Only completing the square",
+          "Always cross-multiply",
+          "Always graph",
+          "Factorisation if easy; else quadratic formula"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 4,
+        "category": "u4_t3_E",
+        "category_label": "Formula · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 4,
+    "topic_id": 3
+  }
+}
