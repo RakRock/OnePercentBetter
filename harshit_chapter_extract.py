@@ -30,6 +30,28 @@ EXERCISE_TOPIC_MAP: dict[int, dict[str, tuple[int, int, list[str]]]] = {
     },
     4: {"4.1": (2, 4, ["A", "B"]), "4.2": (2, 4, ["B", "C"]), "4.3": (2, 4, ["C", "D"])},
     3: {"3.1": (3, 1, ["A", "B"]), "3.2": (3, 1, ["B", "C"]), "3.3": (3, 2, ["A", "B"])},
+    13: {
+        "13.1": (5, 2, ["A", "B"]),
+        "13.2": (5, 2, ["B", "C"]),
+        "13.3": (5, 2, ["C", "D"]),
+        "13.4": (5, 3, ["A", "B"]),
+        "13.5": (5, 3, ["B", "C"]),
+        "13.6": (5, 3, ["C", "D"]),
+        "13.7": (5, 3, ["D", "E"]),
+        "13.8": (5, 3, ["C", "E"]),
+        "13.9": (5, 3, ["D", "E"]),
+    },
+    14: {
+        "14.1": (6, 1, ["A", "B"]),
+        "14.2": (6, 1, ["B", "C"]),
+        "14.3": (6, 1, ["C", "D"]),
+        "14.4": (6, 2, ["A", "B"]),
+        "14.5": (6, 2, ["B", "C"]),
+    },
+    15: {
+        "15.1": (6, 3, ["A", "B"]),
+        "15.2": (6, 3, ["B", "C"]),
+    },
 }
 
 
@@ -78,6 +100,15 @@ CHAPTER_TOPIC_HINTS: dict[int, list[tuple[int, int, tuple[str, ...]]]] = {
     8: [(4, 3, ("quadrilateral", "parallelogram", "rectangle"))],
     10: [(4, 4, ("circle", "chord", "arc", "diameter"))],
     12: [(5, 1, ("heron", "area", "triangle", "semiperimeter"))],
+    13: [
+        (5, 2, ("surface area", "lateral", "cuboid", "cube", "cylinder", "cone", "sphere")),
+        (5, 3, ("volume", "capacity", "litre", "hemisphere")),
+    ],
+    14: [
+        (6, 1, ("mean", "median", "mode", "frequency", "data")),
+        (6, 2, ("histogram", "bar graph", "frequency polygon", "graph")),
+    ],
+    15: [(6, 3, ("probability", "coin", "die", "dice", "event", "outcome"))],
 }
 
 

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 import random
 import uuid
 from fractions import Fraction
@@ -329,14 +330,16 @@ def default_week_config(prereq_id: int) -> dict:
             "warmup_count": 0,
             "use_llm": True,
             "use_chapter_llm": True,
+            "grok_fresh_only": False,
             "prereq_id": prereq_id,
         }
     return {
         "week_label": f"{label} — Week 1",
         "topics": [{"id": tid, "levels": ["A", "B"]} for tid in sorted(topics)],
         "warmup_count": 0,
-        "use_llm": False,
+        "use_llm": True,
         "use_chapter_llm": True,
+        "grok_fresh_only": False,
         "prereq_id": prereq_id,
     }
 
@@ -731,90 +734,324 @@ def _gen_p2_t7(level: str) -> dict:
 # ── Unit 3 generators ──
 
 
+def _quadrant_label(x: int, y: int) -> str:
+    if x > 0 and y > 0:
+        return "I"
+    if x < 0 and y > 0:
+        return "II"
+    if x < 0 and y < 0:
+        return "III"
+    return "IV"
+
+
 def _gen_p3_t1(level: str) -> dict:
-    pts = [(3, 4), (-2, 5), (-4, -1), (2, -3)]
-    x, y = random.choice(pts)
-    quad = "I" if x > 0 and y > 0 else "II" if x < 0 and y > 0 else "III" if x < 0 and y < 0 else "IV"
-    opts, ans = _shuffle_options(quad, ["I", "II", "III", "IV"])
-    return _mcq(3, 1, level, f"Point ({x}, {y}) lies in Quadrant?", opts, ans)
+    if level in ("A", "B"):
+        x, y = random.randint(-8, 8), random.randint(-8, 8)
+        while x == 0 or y == 0:
+            x, y = random.randint(-8, 8), random.randint(-8, 8)
+        quad = _quadrant_label(x, y)
+        opts, ans = _shuffle_options(quad, ["I", "II", "III", "IV"])
+        return _mcq(3, 1, level, f"Point ({x}, {y}) lies in Quadrant?", opts, ans, f"({x}, {y}) is in Quadrant {quad}.")
+    if level == "C":
+        x, y = random.randint(-6, 6), random.randint(-6, 6)
+        while x == 0 or y == 0:
+            x, y = random.randint(-6, 6), random.randint(-6, 6)
+        correct = f"({x}, {y})"
+        opts, ans = _shuffle_options(correct, [f"({y}, {x})", f"({-x}, {y})", f"({x}, {-y})"])
+        return _mcq(3, 1, level, f"A point is {abs(x)} units from the y-axis and {abs(y)} units from the x-axis, on the same side of both axes as ({x}, {y}). What are its coordinates?", opts, ans)
+    if level == "D":
+        x1, y1 = random.randint(-5, 5), random.randint(-5, 5)
+        x2, y2 = random.randint(-5, 5), random.randint(-5, 5)
+        mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+        correct = f"({mx:g}, {my:g})"
+        opts, ans = _shuffle_options(correct, [f"({x1 + x2}, {y1})", f"({x1}, {y2})", f"({x2 - x1}, {y2 - y1})"])
+        return _mcq(3, 1, level, f"Midpoint of ({x1}, {y1}) and ({x2}, {y2})?", opts, ans, "Average the x- and y-coordinates.")
+    x, y = random.randint(1, 9), random.randint(1, 9)
+    dist = min(abs(x), abs(y))
+    opts, ans = _shuffle_options(f"{dist}", [f"{x + y}", f"{max(abs(x), abs(y))}", f"{x * y}"])
+    return _mcq(3, 1, level, f"Point ({x}, {y}) is in Quadrant I. Its distance from the nearer axis is?", opts, ans, "Use the smaller of |x| and |y|.")
 
 
 def _gen_p3_t2(level: str) -> dict:
-    m, c = random.randint(1, 4), random.randint(-2, 3)
-    opts, ans = _shuffle_options(f"y = {m}x + {c}", [f"y = {c}x + {m}", f"x = {m}y + {c}", f"y = {m}x − {c}"])
-    return _mcq(3, 2, level, f"Which equation has slope {m} and y-intercept {c}?", opts, ans)
+    if level == "A":
+        m = random.randint(1, 5)
+        opts, ans = _shuffle_options(f"y = {m}x", [f"y = {m}x + 1", f"x = {m}y", f"y = {m + 1}x"])
+        return _mcq(3, 2, level, f"Which line passes through the origin with slope {m}?", opts, ans)
+    if level == "B":
+        m, c = random.randint(1, 4), random.randint(-3, 4)
+        opts, ans = _shuffle_options(f"y = {m}x + {c}", [f"y = {c}x + {m}", f"x = {m}y + {c}", f"y = {m}x − {c}"])
+        return _mcq(3, 2, level, f"Which equation has slope {m} and y-intercept {c}?", opts, ans)
+    if level == "C":
+        k = random.randint(-5, 5)
+        if random.choice([True, False]):
+            opts, ans = _shuffle_options(f"x = {k}", [f"y = {k}", f"y = x + {k}", f"x = y + {k}"])
+            return _mcq(3, 2, level, f"Which equation represents a vertical line through x = {k}?", opts, ans)
+        opts, ans = _shuffle_options(f"y = {k}", [f"x = {k}", f"y = x + {k}", f"x = y + {k}"])
+        return _mcq(3, 2, level, f"Which equation represents a horizontal line through y = {k}?", opts, ans)
+    if level == "D":
+        x1, y1 = random.randint(-3, 3), random.randint(-3, 3)
+        x2, y2 = x1 + random.randint(1, 4), y1 + random.randint(1, 4)
+        slope = Fraction(y2 - y1, x2 - x1)
+        correct = str(slope) if slope.denominator != 1 else str(slope.numerator)
+        opts, ans = _shuffle_options(correct, [str(slope + 1), str(-slope), str(slope + 2)])
+        return _mcq(3, 2, level, f"Slope of the line through ({x1}, {y1}) and ({x2}, {y2})?", opts, ans, "Slope = (y₂ − y₁)/(x₂ − x₁).")
+    m = random.randint(1, 4)
+    opts, ans = _shuffle_options("Distance increases by 3 km per hour", [f"Fixed cost of {m} km", "No change over time", "Distance decreases"])
+    return _mcq(3, 2, level, f"A taxi charges a fixed fee plus {m}×(km). Which describes the slope in a distance-vs-time graph if speed is constant?", opts, ans, "Slope is rate of change.")
 
 
 # ── Unit 4 generators ──
 
 
 def _gen_p4_t1(level: str) -> dict:
-    angle = random.randint(20, 70)
-    sup = 180 - angle
-    opts, ans = _shuffle_options(f"{sup}°", [f"{angle}°", f"{90-angle}°", f"{angle+90}°"])
-    return _mcq(4, 1, level, f"An angle measures {angle}°. Its supplement is?", opts, ans)
+    if level in ("A", "B"):
+        angle = random.randint(15, 75)
+        if random.choice([True, False]):
+            sup = 180 - angle
+            opts, ans = _shuffle_options(f"{sup}°", [f"{angle}°", f"{90 - angle}°", f"{angle + 90}°"])
+            return _mcq(4, 1, level, f"An angle measures {angle}°. Its supplement is?", opts, ans)
+        comp = 90 - angle
+        opts, ans = _shuffle_options(f"{comp}°", [f"{angle}°", f"{180 - angle}°", f"{angle + 90}°"])
+        return _mcq(4, 1, level, f"An acute angle measures {angle}°. Its complement is?", opts, ans)
+    if level == "C":
+        angle = random.randint(40, 70)
+        alt = angle
+        corr = 180 - angle
+        opts, ans = _shuffle_options(f"{corr}°", [f"{alt}°", f"{90 - angle}°", f"{angle + 90}°"])
+        return _mcq(4, 1, level, f"Two parallel lines are cut by a transversal. One interior angle is {angle}°. A co-interior angle on the same side is?", opts, ans, "Co-interior angles are supplementary.")
+    a, b = random.randint(20, 50), random.randint(20, 50)
+    vert = b
+    opts, ans = _shuffle_options(f"{vert}°", [f"{180 - b}°", f"{90 - b}°", f"{a + b}°"])
+    return _mcq(4, 1, level, f"Two lines intersect. One angle is {a}° and its adjacent angle is {b}°. A vertically opposite angle to {b}° is?", opts, ans, "Vertically opposite angles are equal.")
 
 
 def _gen_p4_t2(level: str) -> dict:
-    opts, ans = _shuffle_options("180°", ["90°", "360°", "270°"])
-    return _mcq(4, 2, level, "Sum of angles in a triangle is?", opts, ans)
+    if level == "A":
+        a, b = random.randint(30, 70), random.randint(30, 70)
+        while a + b >= 170:
+            b = random.randint(20, 60)
+        third = 180 - a - b
+        opts, ans = _shuffle_options(f"{third}°", [f"{a + b}°", f"{180 - a}°", f"{90}°"])
+        return _mcq(4, 2, level, f"In a triangle, two angles are {a}° and {b}°. The third angle is?", opts, ans, "Angles in a triangle sum to 180°.")
+    if level == "B":
+        interior = random.randint(40, 100)
+        exterior = 180 - interior
+        opts, ans = _shuffle_options(f"{exterior}°", [f"{interior}°", f"{180 + interior}°", f"{90}°"])
+        return _mcq(4, 2, level, f"An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is {interior}° and the other is 35°, the exterior angle is?", opts, ans)
+    if level == "C":
+        rule = random.choice(["SSS", "SAS", "ASA"])
+        wrong = [r for r in ["SSS", "SAS", "ASA", "AAA"] if r != rule]
+        opts, ans = _shuffle_options(rule, wrong[:3])
+        return _mcq(4, 2, level, f"Which congruence rule is listed: {rule}?", opts, ans)
+    if level == "D":
+        base = random.randint(4, 12)
+        opts, ans = _shuffle_options(f"{180 - 2 * base}°", [f"{base}°", f"{2 * base}°", f"{90 - base}°"])
+        return _mcq(4, 2, level, f"In an isosceles triangle, each base angle is {base}°. The vertex angle is?", opts, ans)
+    a, b, c = 5, 7, 10
+    opts, ans = _shuffle_options("No", ["Yes", "Maybe", "Only if right-angled"])
+    return _mcq(4, 2, level, f"Can a triangle have sides {a}, {b}, and {c}?", opts, ans, "Check triangle inequality: 5 + 7 > 10 fails.")
 
 
 def _gen_p4_t3(level: str) -> dict:
-    opts, ans = _shuffle_options("Opposite sides parallel", ["All sides equal", "Diagonals perpendicular", "One pair parallel"])
-    return _mcq(4, 3, level, "A parallelogram always has:", opts, ans)
+    if level == "A":
+        prop = random.choice([
+            ("A parallelogram always has:", "Opposite sides parallel", ["All sides equal", "Diagonals always equal", "All angles 90°"]),
+            ("Opposite sides of a parallelogram are:", "Equal and parallel", ["Perpendicular", "Unequal", "Only parallel"]),
+            ("Adjacent angles in a parallelogram are:", "Supplementary", ["Equal", "Complementary", "Right angles"]),
+        ])
+        opts, ans = _shuffle_options(prop[1], list(prop[2]))
+        return _mcq(4, 3, level, prop[0], opts, ans)
+    if level == "B":
+        shape = random.choice(["rectangle", "rhombus"])
+        if shape == "rectangle":
+            opts, ans = _shuffle_options("All angles 90°", ["All sides equal", "Diagonals perpendicular", "One pair of parallel sides"])
+            return _mcq(4, 3, level, "A rectangle always has:", opts, ans)
+        opts, ans = _shuffle_options("All sides equal", ["All angles 90°", "Diagonals equal", "Opposite sides not parallel"])
+        return _mcq(4, 3, level, "A rhombus always has:", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("Exactly one pair of parallel sides", ["Two pairs of parallel sides", "All sides equal", "All angles equal"])
+        return _mcq(4, 3, level, "A trapezium has:", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options("Joining midpoints of two sides", ["Drawing a diagonal", "Extending a side", "Bisecting an angle"])
+        return _mcq(4, 3, level, "The mid-point theorem is about:", opts, ans)
+    opts, ans = _shuffle_options("Diagonals bisect each other", ["All sides equal", "All angles 90°", "One axis of symmetry only"])
+    return _mcq(4, 3, level, "Which property is true for every parallelogram?", opts, ans)
 
 
 def _gen_p4_t4(level: str) -> dict:
-    opts, ans = _shuffle_options("Equal chords subtend equal angles at centre", ["Chord = radius", "Tangent ⊥ radius", "Angle in semicircle = 90°"])
-    return _mcq(4, 4, level, "Which is true for a circle?", opts, ans)
+    if level == "A":
+        r = random.randint(3, 12)
+        d = 2 * r
+        opts, ans = _shuffle_options(f"{d}", [f"{r}", f"{r + d}", f"{d + 2}"])
+        return _mcq(4, 4, level, f"A circle has radius {r} cm. Its diameter is?", opts, ans)
+    if level == "B":
+        angle = random.randint(30, 120)
+        opts, ans = _shuffle_options(f"{angle}°", [f"{180 - angle}°", f"{angle / 2}°", f"{360 - angle}°"])
+        return _mcq(4, 4, level, f"An angle of {angle}° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?", opts, ans, "Angle at circumference is half the angle at centre.")
+    if level == "C":
+        opts, ans = _shuffle_options("Opposite angles sum to 180°", ["All angles equal", "Adjacent angles equal", "Diagonals equal"])
+        return _mcq(4, 4, level, "In a cyclic quadrilateral:", opts, ans)
+    if level == "D":
+        r = random.randint(2, 7)
+        length = round(2 * math.pi * r, 1)
+        opts, ans = _shuffle_options(f"{length}", [f"{math.pi * r}", f"{r ** 2}", f"{length + 2}"])
+        return _mcq(4, 4, level, f"Circumference of a circle with radius {r} (use π ≈ 3.14)?", opts, ans, "C = 2πr.")
+    r = random.randint(3, 8)
+    opts, ans = _shuffle_options("Equal chords subtend equal angles at the centre", ["Chord equals radius", "Tangent is parallel to radius", "Diameter equals circumference"])
+    return _mcq(4, 4, level, f"In a circle of radius {r}, which statement is always true?", opts, ans)
 
 
 # ── Unit 5 generators ──
 
 
-def _gen_p5_t1(level: str) -> dict:
-    a, b, c = 3, 4, 5
+def _heron_area(a: int, b: int, c: int) -> float:
     s = (a + b + c) / 2
-    import math
-    area = math.sqrt(s * (s - a) * (s - b) * (s - c))
-    opts, ans = _shuffle_options("6", ["12", "7.5", "10"])
-    return _mcq(5, 1, level, f"Area of triangle with sides 3, 4, 5 (Heron)?", opts, ans)
+    return math.sqrt(s * (s - a) * (s - b) * (s - c))
+
+
+def _gen_p5_t1(level: str) -> dict:
+    triples = [(3, 4, 5), (5, 5, 6), (6, 8, 10), (7, 8, 9), (5, 12, 13)]
+    a, b, c = random.choice(triples)
+    area = _heron_area(a, b, c)
+    correct = str(int(area)) if area == int(area) else f"{area:.1f}"
+    s = (a + b + c) / 2
+    if level == "A":
+        opts, ans = _shuffle_options(f"{s:g}", [f"{a + b}", f"{c}", f"{s + 1:g}"])
+        return _mcq(5, 1, level, f"Triangle sides {a}, {b}, {c}. Semi-perimeter s = ?", opts, ans, "s = (a + b + c)/2.")
+    opts, ans = _shuffle_options(correct, [str(int(area) + 2), str(int(area) + 5), f"{a * b / 2:g}"])
+    unit = " sq units" if level == "C" else ""
+    return _mcq(5, 1, level, f"Area of triangle with sides {a}, {b}, {c} (Heron's formula)?{unit}", opts, ans)
 
 
 def _gen_p5_t2(level: str) -> dict:
+    if level == "A":
+        side = random.randint(2, 8)
+        sa = 6 * side ** 2
+        opts, ans = _shuffle_options(f"{sa}", [f"{side ** 3}", f"{4 * side ** 2}", f"{sa + 6}"])
+        return _mcq(5, 2, level, f"Total surface area of a cube of edge {side}?", opts, ans, "TSA = 6a².")
+    if level in ("B", "C"):
+        r, h = random.randint(2, 6), random.randint(3, 10)
+        if level == "B":
+            la = 2 * math.pi * r * h
+            val = round(la, 1)
+            opts, ans = _shuffle_options(f"{val:g}", [f"{math.pi * r * h:g}", f"{2 * r * h}", f"{val + 5:g}"])
+            return _mcq(5, 2, level, f"Lateral surface area of cylinder r={r}, h={h} (π ≈ 3.14)?", opts, ans)
+        tsa = 2 * math.pi * r * (r + h)
+        val = round(tsa, 1)
+        opts, ans = _shuffle_options(f"{val:g}", [f"{2 * math.pi * r * h:g}", f"{math.pi * r ** 2:g}", f"{val + 10:g}"])
+        return _mcq(5, 2, level, f"Total surface area of cylinder r={r}, h={h} (π ≈ 3.14)?", opts, ans)
+    if level == "D":
+        r = random.randint(2, 5)
+        sa = round(4 * math.pi * r ** 2, 1)
+        opts, ans = _shuffle_options(f"{sa:g}", [f"{2 * math.pi * r:g}", f"{math.pi * r ** 2:g}", f"{sa + 4:g}"])
+        return _mcq(5, 2, level, f"Surface area of a sphere of radius {r} (π ≈ 3.14)?", opts, ans)
     l, w, h = random.randint(2, 5), random.randint(2, 5), random.randint(2, 5)
-    sa = 2 * (l * w + w * h + h * l)
-    opts, ans = _shuffle_options(f"{sa}", [f"{l*w*h}", f"{l+w+h}", f"{sa+2}"])
-    return _mcq(5, 2, level, f"Total surface area of cuboid {l}×{w}×{h}?", opts, ans)
+    cube_sa = 6 * l ** 2
+    cuboid_sa = 2 * (l * w + w * h + h * l)
+    opts, ans = _shuffle_options(f"{cube_sa + cuboid_sa}", [f"{cube_sa}", f"{cuboid_sa}", f"{l * w * h}"])
+    return _mcq(5, 2, level, f"Cube edge {l} and cuboid {l}×{w}×{h}: sum of their total surface areas?", opts, ans)
 
 
 def _gen_p5_t3(level: str) -> dict:
-    l, w, h = random.randint(2, 4), random.randint(2, 4), random.randint(2, 4)
-    vol = l * w * h
-    opts, ans = _shuffle_options(f"{vol}", [f"{l+w+h}", f"{2*(l*w)}", f"{vol+1}"])
-    return _mcq(5, 3, level, f"Volume of cuboid {l}×{w}×{h}?", opts, ans)
+    if level == "A":
+        l, w, h = random.randint(2, 6), random.randint(2, 6), random.randint(2, 6)
+        vol = l * w * h
+        opts, ans = _shuffle_options(f"{vol}", [f"{l + w + h}", f"{2 * (l * w)}", f"{vol + 1}"])
+        return _mcq(5, 3, level, f"Volume of cuboid {l}×{w}×{h}?", opts, ans)
+    if level == "B":
+        r, h = random.randint(2, 6), random.randint(3, 9)
+        vol = round(math.pi * r ** 2 * h, 1)
+        opts, ans = _shuffle_options(f"{vol:g}", [f"{math.pi * r * h:g}", f"{r ** 2 * h}", f"{vol + 5:g}"])
+        return _mcq(5, 3, level, f"Volume of cylinder r={r}, h={h} (π ≈ 3.14)?", opts, ans)
+    if level == "C":
+        r, h = random.randint(2, 5), random.randint(4, 9)
+        vol = round(math.pi * r ** 2 * h / 3, 1)
+        opts, ans = _shuffle_options(f"{vol:g}", [f"{math.pi * r ** 2 * h:g}", f"{2 * vol:g}", f"{vol + 3:g}"])
+        return _mcq(5, 3, level, f"Volume of cone r={r}, h={h} (π ≈ 3.14)?", opts, ans)
+    if level == "D":
+        r = random.randint(2, 6)
+        vol = round(4 * math.pi * r ** 3 / 3, 1)
+        opts, ans = _shuffle_options(f"{vol:g}", [f"{4 * math.pi * r ** 2:g}", f"{math.pi * r ** 3:g}", f"{vol + 6:g}"])
+        return _mcq(5, 3, level, f"Volume of sphere r={r} (π ≈ 3.14)?", opts, ans)
+    litres = random.randint(2, 8)
+    cm3 = litres * 1000
+    opts, ans = _shuffle_options(f"{cm3} cm³", [f"{litres} cm³", f"{litres * 100} cm³", f"{cm3 // 10} cm³"])
+    return _mcq(5, 3, level, f"A tank holds {litres} L. How many cm³ is that?", opts, ans, "1 L = 1000 cm³.")
 
 
 # ── Unit 6 generators ──
 
 
 def _gen_p6_t1(level: str) -> dict:
-    data = [random.randint(1, 9) for _ in range(5)]
-    mean = sum(data) / len(data)
-    correct = str(mean) if mean == int(mean) else f"{mean:.1f}"
-    opts, ans = _shuffle_options(correct, [str(int(mean) + 1), str(max(data)), str(min(data))])
-    return _mcq(6, 1, level, f"Mean of {data}?", opts, ans)
+    if level in ("A", "B", "C"):
+        n = 5 if level == "A" else (6 if level == "B" else 6)
+        data = sorted(random.randint(1, 12) for _ in range(n))
+        if level == "A":
+            mean = sum(data) / len(data)
+            correct = str(mean) if mean == int(mean) else f"{mean:.1f}"
+            opts, ans = _shuffle_options(correct, [str(int(mean) + 1), str(max(data)), str(min(data))])
+            return _mcq(6, 1, level, f"Mean of {data}?", opts, ans)
+        mid = (data[len(data) // 2 - 1] + data[len(data) // 2]) / 2 if len(data) % 2 == 0 else data[len(data) // 2]
+        correct = str(mid) if mid == int(mid) else f"{mid:.1f}"
+        opts, ans = _shuffle_options(correct, [str(data[0]), str(data[-1]), str(int(mid) + 2)])
+        return _mcq(6, 1, level, f"Median of {data}?", opts, ans)
+    if level == "D":
+        val = random.randint(2, 9)
+        data = [val] * 3 + [val + 2, val + 4, val - 1, val + 1]
+        random.shuffle(data)
+        opts, ans = _shuffle_options(str(val), [str(val + 1), str(val - 1), str(val + 2)])
+        return _mcq(6, 1, level, f"Mode of {data}?", opts, ans)
+    data = [10, 12, 14, 100]
+    opts, ans = _shuffle_options("Median", ["Mean", "Mode", "Range"])
+    return _mcq(6, 1, level, f"Data {data} has an outlier. Which measure of centre is least affected?", opts, ans)
 
 
 def _gen_p6_t2(level: str) -> dict:
-    opts, ans = _shuffle_options("Histogram", ["Pie chart only", "Line graph", "Scatter plot"])
-    return _mcq(6, 2, level, "Best graph for grouped continuous data?", opts, ans)
+    if level == "A":
+        cats = ["Mon", "Tue", "Wed", "Thu"]
+        vals = [random.randint(2, 9) for _ in cats]
+        total = sum(vals)
+        opts, ans = _shuffle_options(f"{total}", [f"{total + 3}", f"{max(vals)}", f"{total - 2}"])
+        return _mcq(6, 2, level, f"Bar graph counts {list(zip(cats, vals))}. Total count?", opts, ans)
+    if level == "B":
+        kind = random.choice(["histogram", "bar", "frequency"])
+        if kind == "histogram":
+            opts, ans = _shuffle_options("Histogram", ["Pie chart only", "Line graph only", "Scatter plot"])
+            return _mcq(6, 2, level, "Best graph for grouped continuous data?", opts, ans)
+        if kind == "bar":
+            opts, ans = _shuffle_options("Bar graph", ["Histogram", "Frequency polygon", "Scatter plot"])
+            return _mcq(6, 2, level, "Best graph for comparing discrete categories?", opts, ans)
+        opts, ans = _shuffle_options("Frequency table", ["Pie chart only", "Line graph only", "Venn diagram"])
+        return _mcq(6, 2, level, "Before drawing a graph, data is often organized in a:", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("Frequency polygon", ["Bar graph only", "Pie chart", "Stem-and-leaf only"])
+        return _mcq(6, 2, level, "A graph formed by joining midpoints of histogram bars is a:", opts, ans)
+    opts, ans = _shuffle_options("The distribution with the higher peak", ["Always the one with larger range", "Always the leftmost graph", "They must be identical"])
+    return _mcq(6, 2, level, "When comparing two histograms, which is easiest to compare visually?", opts, ans)
 
 
 def _gen_p6_t3(level: str) -> dict:
-    opts, ans = _shuffle_options("1/2", ["1/4", "1/6", "2/3"])
-    return _mcq(6, 3, level, "Fair coin: P(heads)?", opts, ans)
+    if level == "A":
+        fav = random.randint(1, 5)
+        total = random.randint(fav + 2, fav + 8)
+        prob = Fraction(fav, total)
+        opts, ans = _shuffle_options(str(prob), [str(Fraction(1, total)), str(Fraction(fav, total + 1)), str(Fraction(total - fav, total))])
+        return _mcq(6, 3, level, f"A bag has {total} balls, {fav} red. P(red) = ?", opts, ans)
+    if level == "B":
+        p = random.randint(1, 4)
+        q = 6 - p
+        opts, ans = _shuffle_options(f"{q}/6", [f"{p}/6", "1", "0"])
+        return _mcq(6, 3, level, f"Fair die: P(not rolling a {p}) = ?", opts, ans, "Use complementary probability.")
+    if level == "C":
+        opts, ans = _shuffle_options("1/36", ["1/6", "1/12", "2/6"])
+        return _mcq(6, 3, level, "Two fair dice: P(double six) = ?", opts, ans)
+    if level == "D":
+        red, blue = random.randint(2, 5), random.randint(2, 5)
+        total = red + blue
+        opts, ans = _shuffle_options(f"{blue}/{total}", [f"{red}/{total}", f"1/{total}", f"{blue}/{red}"])
+        return _mcq(6, 3, level, f"A box has {red} red and {blue} blue marbles. One is picked at random. P(blue) = ?", opts, ans)
+    opts, ans = _shuffle_options("Experimental may differ from 1/2", ["Experimental must equal 1/2", "Theoretical is always 0", "They are unrelated"])
+    return _mcq(6, 3, level, "After 20 coin tosses you get 9 heads. Compared to theoretical P(heads):", opts, ans)
 
 
 GENERATORS: dict[tuple[int, int], callable] = {

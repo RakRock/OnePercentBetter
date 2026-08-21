@@ -80,6 +80,66 @@
         "source": "chapter_llm",
         "chapter_num": 8,
         "chapter_ref": "Example 6 (ii)"
+      },
+      {
+        "id": "p4_t3_A_7ccd3a02",
+        "question": "A parallelogram always has:",
+        "options": [
+          "One pair parallel",
+          "Opposite sides parallel",
+          "Diagonals perpendicular",
+          "All sides equal"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t3_A",
+        "category_label": "Quads · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t3_A_7ed33d6a",
+        "question": "Opposite sides of a parallelogram are:",
+        "options": [
+          "Perpendicular",
+          "Equal and parallel",
+          "Only parallel",
+          "Unequal"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t3_A",
+        "category_label": "Quads · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t3_A_4a6511bd",
+        "question": "Adjacent angles in a parallelogram are:",
+        "options": [
+          "Supplementary",
+          "Complementary",
+          "Equal",
+          "Right angles"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t3_A",
+        "category_label": "Quads · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -162,6 +222,66 @@
         "source": "chapter_llm",
         "chapter_num": 8,
         "chapter_ref": "Ex 8.2 Q7"
+      },
+      {
+        "id": "p4_t3_B_637b43bd",
+        "question": "A parallelogram always has:",
+        "options": [
+          "Diagonals perpendicular",
+          "Opposite sides parallel",
+          "All sides equal",
+          "One pair parallel"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t3_B",
+        "category_label": "Quads · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t3_B_8e00a5f1",
+        "question": "A rhombus always has:",
+        "options": [
+          "Diagonals equal",
+          "Opposite sides not parallel",
+          "All sides equal",
+          "All angles 90°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t3_B",
+        "category_label": "Quads · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t3_B_33d6ace9",
+        "question": "A rectangle always has:",
+        "options": [
+          "One pair of parallel sides",
+          "Diagonals perpendicular",
+          "All sides equal",
+          "All angles 90°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t3_B",
+        "category_label": "Quads · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
       }
     ],
     "C": [
@@ -244,6 +364,46 @@
         "source": "chapter_llm",
         "chapter_num": 8,
         "chapter_ref": "Ex 8.1 Q12"
+      },
+      {
+        "id": "p4_t3_C_56db1c3c",
+        "question": "A parallelogram always has:",
+        "options": [
+          "Diagonals perpendicular",
+          "One pair parallel",
+          "Opposite sides parallel",
+          "All sides equal"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t3_C",
+        "category_label": "Quads · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t3_C_e7205af6",
+        "question": "A trapezium has:",
+        "options": [
+          "All angles equal",
+          "Two pairs of parallel sides",
+          "Exactly one pair of parallel sides",
+          "All sides equal"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t3_C",
+        "category_label": "Quads · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -326,6 +486,46 @@
         "source": "chapter_llm",
         "chapter_num": 8,
         "chapter_ref": "Theorem 8.9"
+      },
+      {
+        "id": "p4_t3_D_47241635",
+        "question": "A parallelogram always has:",
+        "options": [
+          "Opposite sides parallel",
+          "All sides equal",
+          "One pair parallel",
+          "Diagonals perpendicular"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t3_D",
+        "category_label": "Quads · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t3_D_9e245fef",
+        "question": "The mid-point theorem is about:",
+        "options": [
+          "Drawing a diagonal",
+          "Extending a side",
+          "Joining midpoints of two sides",
+          "Bisecting an angle"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t3_D",
+        "category_label": "Quads · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -408,6 +608,46 @@
         "source": "chapter_llm",
         "chapter_num": 8,
         "chapter_ref": "Theorem 8.9"
+      },
+      {
+        "id": "p4_t3_E_13cb67e8",
+        "question": "A parallelogram always has:",
+        "options": [
+          "Diagonals perpendicular",
+          "All sides equal",
+          "Opposite sides parallel",
+          "One pair parallel"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t3_E",
+        "category_label": "Quads · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t3_E_ede814c2",
+        "question": "Which property is true for every parallelogram?",
+        "options": [
+          "All angles 90°",
+          "Diagonals bisect each other",
+          "All sides equal",
+          "One axis of symmetry only"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t3_E",
+        "category_label": "Quads · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 8,
+        "chapter_ref": ""
       }
     ]
   },

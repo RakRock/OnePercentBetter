@@ -80,6 +80,426 @@
         "source": "chapter_llm",
         "chapter_num": 3,
         "chapter_ref": "Fig 3.8"
+      },
+      {
+        "id": "p3_t2_A_fe5fa3e6",
+        "question": "Which equation has slope 2 and y-intercept -2?",
+        "options": [
+          "y = 2x + -2",
+          "x = 2y + -2",
+          "y = -2x + 2",
+          "y = 2x - -2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_01f37e7f",
+        "question": "Which equation has slope 3 and y-intercept -2?",
+        "options": [
+          "x = 3y + -2",
+          "y = 3x + -2",
+          "y = -2x + 3",
+          "y = 3x - -2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_94ff4d5a",
+        "question": "Which equation has slope 4 and y-intercept 1?",
+        "options": [
+          "y = 4x + 1",
+          "y = x + 4",
+          "x = 4y + 1",
+          "y = 4x - 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_9fa9a783",
+        "question": "Which equation has slope 4 and y-intercept 0?",
+        "options": [
+          "y = 0x + 4",
+          "x = 4y + 0",
+          "y = 4x + 0",
+          "y = 4x - 0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_e10a1a7c",
+        "question": "Which equation has slope 1 and y-intercept 2?",
+        "options": [
+          "y = x - 2",
+          "y = 2x + 1",
+          "x = y + 2",
+          "y = x + 2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_489515a2",
+        "question": "Which equation has slope 2 and y-intercept 2?",
+        "options": [
+          "y = 2x + 2",
+          "x = 2y + 2",
+          "y = 2x + 2 (alt 1)",
+          "y = 2x - 2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_929d40ed",
+        "question": "Which equation has slope 4 and y-intercept 2?",
+        "options": [
+          "y = 4x - 2",
+          "y = 2x + 4",
+          "x = 4y + 2",
+          "y = 4x + 2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_158dc36c",
+        "question": "Which equation has slope 1 and y-intercept -2?",
+        "options": [
+          "x = y + -2",
+          "y = x - -2",
+          "y = x + -2",
+          "y = -2x + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_ae8c3b7d",
+        "question": "Which equation has slope 1 and y-intercept 1?",
+        "options": [
+          "x = y + 1",
+          "y = x + 1 (alt 1)",
+          "y = x - 1",
+          "y = x + 1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_aa76fd4b",
+        "question": "Which equation has slope 4 and y-intercept -1?",
+        "options": [
+          "y = -x + 4",
+          "x = 4y + -1",
+          "y = 4x - -1",
+          "y = 4x + -1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_d91f4852",
+        "question": "Which equation has slope 4 and y-intercept -2?",
+        "options": [
+          "y = -2x + 4",
+          "y = 4x + -2",
+          "y = 4x - -2",
+          "x = 4y + -2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_98a9ad06",
+        "question": "Which equation has slope 1 and y-intercept -1?",
+        "options": [
+          "y = x - -1",
+          "y = x + -1",
+          "x = y + -1",
+          "y = -x + 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_64a45ec9",
+        "question": "Which equation has slope 2 and y-intercept 3?",
+        "options": [
+          "y = 2x + 3",
+          "y = 3x + 2",
+          "y = 2x - 3",
+          "x = 2y + 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_c45eb6fe",
+        "question": "Which equation has slope 2 and y-intercept -1?",
+        "options": [
+          "x = 2y + -1",
+          "y = -x + 2",
+          "y = 2x - -1",
+          "y = 2x + -1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_c4c85d62",
+        "question": "Which equation has slope 4 and y-intercept 3?",
+        "options": [
+          "y = 3x + 4",
+          "y = 4x + 3",
+          "x = 4y + 3",
+          "y = 4x - 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_a5000c3c",
+        "question": "Which equation has slope 3 and y-intercept 0?",
+        "options": [
+          "y = 3x + 0",
+          "x = 3y + 0",
+          "y = 3x - 0",
+          "y = 0x + 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_65476257",
+        "question": "Which line passes through the origin with slope 1?",
+        "options": [
+          "x = y",
+          "y = x + 1",
+          "y = x",
+          "y = 2x"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_2793dade",
+        "question": "Which line passes through the origin with slope 3?",
+        "options": [
+          "y = 3x",
+          "y = 4x",
+          "y = 3x + 1",
+          "x = 3y"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_b8e88589",
+        "question": "Which line passes through the origin with slope 2?",
+        "options": [
+          "y = 2x",
+          "y = 3x",
+          "y = 2x + 1",
+          "x = 2y"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_e6d0dbcc",
+        "question": "Which line passes through the origin with slope 5?",
+        "options": [
+          "y = 5x + 1",
+          "y = 5x",
+          "x = 5y",
+          "y = 6x"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_A_ac1c0b1c",
+        "question": "Which line passes through the origin with slope 4?",
+        "options": [
+          "y = 4x + 1",
+          "y = 5x",
+          "y = 4x",
+          "x = 4y"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t2_A",
+        "category_label": "Line Equations · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -162,6 +582,366 @@
         "source": "chapter_llm",
         "chapter_num": 3,
         "chapter_ref": "Fig. 3.10"
+      },
+      {
+        "id": "p3_t2_B_72fa45cb",
+        "question": "Which equation has slope 4 and y-intercept 3?",
+        "options": [
+          "y = 4x + 3",
+          "y = 3x + 4",
+          "x = 4y + 3",
+          "y = 4x - 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_55c95781",
+        "question": "Which equation has slope 1 and y-intercept 0?",
+        "options": [
+          "x = y + 0",
+          "y = x - 0",
+          "y = x + 0",
+          "y = 0x + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_2fe3b17f",
+        "question": "Which equation has slope 4 and y-intercept -2?",
+        "options": [
+          "y = 4x + -2",
+          "y = -2x + 4",
+          "x = 4y + -2",
+          "y = 4x - -2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_0966e4c3",
+        "question": "Which equation has slope 4 and y-intercept 0?",
+        "options": [
+          "x = 4y + 0",
+          "y = 4x + 0",
+          "y = 0x + 4",
+          "y = 4x - 0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_e2f917d5",
+        "question": "Which equation has slope 2 and y-intercept -2?",
+        "options": [
+          "y = -2x + 2",
+          "y = 2x - -2",
+          "y = 2x + -2",
+          "x = 2y + -2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_a85e9415",
+        "question": "Which equation has slope 1 and y-intercept -2?",
+        "options": [
+          "y = x - -2",
+          "x = y + -2",
+          "y = -2x + 1",
+          "y = x + -2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_272074cd",
+        "question": "Which equation has slope 3 and y-intercept -2?",
+        "options": [
+          "y = -2x + 3",
+          "y = 3x + -2",
+          "x = 3y + -2",
+          "y = 3x - -2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_fee059ed",
+        "question": "Which equation has slope 2 and y-intercept 1?",
+        "options": [
+          "x = 2y + 1",
+          "y = 2x + 1",
+          "y = x + 2",
+          "y = 2x - 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_ea650ddc",
+        "question": "Which equation has slope 2 and y-intercept 3?",
+        "options": [
+          "y = 3x + 2",
+          "y = 2x + 3",
+          "y = 2x - 3",
+          "x = 2y + 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_dbe5edf0",
+        "question": "Which equation has slope 3 and y-intercept -1?",
+        "options": [
+          "y = -x + 3",
+          "y = 3x - -1",
+          "y = 3x + -1",
+          "x = 3y + -1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_54a8ca5e",
+        "question": "Which equation has slope 1 and y-intercept 1?",
+        "options": [
+          "y = x - 1",
+          "y = x + 1 (alt 1)",
+          "y = x + 1",
+          "x = y + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_61659585",
+        "question": "Which equation has slope 2 and y-intercept -1?",
+        "options": [
+          "x = 2y + -1",
+          "y = 2x + -1",
+          "y = -x + 2",
+          "y = 2x - -1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_4c094121",
+        "question": "Which equation has slope 4 and y-intercept 1?",
+        "options": [
+          "y = 4x - 1",
+          "y = x + 4",
+          "y = 4x + 1",
+          "x = 4y + 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_23a274da",
+        "question": "Which equation has slope 3 and y-intercept 4?",
+        "options": [
+          "x = 3y + 4",
+          "y = 3x + 4",
+          "y = 3x - 4",
+          "y = 4x + 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_060fddad",
+        "question": "Which equation has slope 1 and y-intercept -3?",
+        "options": [
+          "y = x + -3",
+          "y = x - -3",
+          "y = -3x + 1",
+          "x = y + -3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_efe6e200",
+        "question": "Which equation has slope 2 and y-intercept 4?",
+        "options": [
+          "y = 4x + 2",
+          "y = 2x - 4",
+          "x = 2y + 4",
+          "y = 2x + 4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_fe9ad57c",
+        "question": "Which equation has slope 2 and y-intercept 2?",
+        "options": [
+          "y = 2x + 2 (alt 1)",
+          "y = 2x + 2",
+          "x = 2y + 2",
+          "y = 2x - 2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_B_5c9fce72",
+        "question": "Which equation has slope 3 and y-intercept 1?",
+        "options": [
+          "x = 3y + 1",
+          "y = x + 3",
+          "y = 3x - 1",
+          "y = 3x + 1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t2_B",
+        "category_label": "Line Equations · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
       }
     ],
     "C": [
@@ -244,6 +1024,506 @@
         "source": "chapter_llm",
         "chapter_num": 3,
         "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t2_C_b25674c6",
+        "question": "Which equation has slope 3 and y-intercept 3?",
+        "options": [
+          "y = 3x + 3 (alt 1)",
+          "y = 3x + 3",
+          "y = 3x - 3",
+          "x = 3y + 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_b2fff3d1",
+        "question": "Which equation has slope 1 and y-intercept 3?",
+        "options": [
+          "y = x + 3",
+          "x = y + 3",
+          "y = x - 3",
+          "y = 3x + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_5c55498b",
+        "question": "Which equation has slope 1 and y-intercept 0?",
+        "options": [
+          "y = 0x + 1",
+          "x = y + 0",
+          "y = x - 0",
+          "y = x + 0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_9dc7d2fb",
+        "question": "Which equation has slope 3 and y-intercept 0?",
+        "options": [
+          "y = 3x + 0",
+          "y = 3x - 0",
+          "y = 0x + 3",
+          "x = 3y + 0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_1b0d397e",
+        "question": "Which equation has slope 4 and y-intercept 2?",
+        "options": [
+          "y = 2x + 4",
+          "x = 4y + 2",
+          "y = 4x - 2",
+          "y = 4x + 2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_fbb0b28c",
+        "question": "Which equation has slope 2 and y-intercept -2?",
+        "options": [
+          "y = -2x + 2",
+          "y = 2x - -2",
+          "y = 2x + -2",
+          "x = 2y + -2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_1a8d2332",
+        "question": "Which equation has slope 2 and y-intercept -1?",
+        "options": [
+          "x = 2y + -1",
+          "y = -x + 2",
+          "y = 2x - -1",
+          "y = 2x + -1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_1dedad4a",
+        "question": "Which equation has slope 4 and y-intercept 0?",
+        "options": [
+          "y = 4x - 0",
+          "y = 4x + 0",
+          "x = 4y + 0",
+          "y = 0x + 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_f6792745",
+        "question": "Which equation has slope 2 and y-intercept 1?",
+        "options": [
+          "x = 2y + 1",
+          "y = 2x - 1",
+          "y = 2x + 1",
+          "y = x + 2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_687e253f",
+        "question": "Which equation has slope 3 and y-intercept -1?",
+        "options": [
+          "y = 3x - -1",
+          "y = -x + 3",
+          "y = 3x + -1",
+          "x = 3y + -1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_24da66e5",
+        "question": "Which equation has slope 2 and y-intercept 3?",
+        "options": [
+          "y = 3x + 2",
+          "y = 2x + 3",
+          "x = 2y + 3",
+          "y = 2x - 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_09e57667",
+        "question": "Which equation has slope 1 and y-intercept -2?",
+        "options": [
+          "y = -2x + 1",
+          "y = x - -2",
+          "y = x + -2",
+          "x = y + -2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_2e14a892",
+        "question": "Which equation has slope 3 and y-intercept 2?",
+        "options": [
+          "x = 3y + 2",
+          "y = 2x + 3",
+          "y = 3x - 2",
+          "y = 3x + 2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_117d83e6",
+        "question": "Which equation represents a horizontal line through y = 5?",
+        "options": [
+          "x = y + 5",
+          "y = x + 5",
+          "y = 5",
+          "x = 5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_cbabee0a",
+        "question": "Which equation represents a horizontal line through y = -4?",
+        "options": [
+          "y = -4",
+          "y = x + -4",
+          "x = y + -4",
+          "x = -4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_ea8a7b15",
+        "question": "Which equation represents a vertical line through x = -4?",
+        "options": [
+          "x = -4",
+          "y = -4",
+          "x = y + -4",
+          "y = x + -4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_23a8b363",
+        "question": "Which equation represents a vertical line through x = -1?",
+        "options": [
+          "y = -1",
+          "x = -1",
+          "x = y + -1",
+          "y = x + -1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_5ae5df7f",
+        "question": "Which equation represents a horizontal line through y = 4?",
+        "options": [
+          "x = y + 4",
+          "x = 4",
+          "y = 4",
+          "y = x + 4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_fafde393",
+        "question": "Which equation represents a horizontal line through y = -2?",
+        "options": [
+          "x = -2",
+          "y = x + -2",
+          "y = -2",
+          "x = y + -2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_6036c84f",
+        "question": "Which equation represents a vertical line through x = -5?",
+        "options": [
+          "x = -5",
+          "y = -5",
+          "x = y + -5",
+          "y = x + -5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_8980a387",
+        "question": "Which equation represents a vertical line through x = -2?",
+        "options": [
+          "x = -2",
+          "x = y + -2",
+          "y = -2",
+          "y = x + -2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_0922fd53",
+        "question": "Which equation represents a horizontal line through y = -1?",
+        "options": [
+          "x = y + -1",
+          "y = -1",
+          "x = -1",
+          "y = x + -1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_7f830ebd",
+        "question": "Which equation represents a horizontal line through y = 2?",
+        "options": [
+          "x = y + 2",
+          "y = x + 2",
+          "x = 2",
+          "y = 2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_634c6e8d",
+        "question": "Which equation represents a horizontal line through y = 3?",
+        "options": [
+          "x = y + 3",
+          "x = 3",
+          "y = x + 3",
+          "y = 3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_C_24200ad7",
+        "question": "Which equation represents a vertical line through x = 4?",
+        "options": [
+          "y = x + 4",
+          "x = 4",
+          "x = y + 4",
+          "y = 4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 3,
+        "category": "p3_t2_C",
+        "category_label": "Line Equations · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -326,6 +1606,526 @@
         "source": "chapter_llm",
         "chapter_num": 3,
         "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t2_D_ccbb31e7",
+        "question": "Which equation has slope 2 and y-intercept 0?",
+        "options": [
+          "x = 2y + 0",
+          "y = 0x + 2",
+          "y = 2x - 0",
+          "y = 2x + 0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_086d3494",
+        "question": "Which equation has slope 2 and y-intercept 3?",
+        "options": [
+          "y = 2x - 3",
+          "y = 2x + 3",
+          "y = 3x + 2",
+          "x = 2y + 3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_b93e10f9",
+        "question": "Which equation has slope 2 and y-intercept -1?",
+        "options": [
+          "y = 2x + -1",
+          "y = -x + 2",
+          "x = 2y + -1",
+          "y = 2x - -1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_ef14efb3",
+        "question": "Which equation has slope 4 and y-intercept 1?",
+        "options": [
+          "y = 4x + 1",
+          "y = 4x - 1",
+          "y = x + 4",
+          "x = 4y + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_39691a39",
+        "question": "Which equation has slope 3 and y-intercept 2?",
+        "options": [
+          "y = 3x - 2",
+          "y = 3x + 2",
+          "y = 2x + 3",
+          "x = 3y + 2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_d1321459",
+        "question": "Which equation has slope 1 and y-intercept -2?",
+        "options": [
+          "y = x + -2",
+          "y = x - -2",
+          "y = -2x + 1",
+          "x = y + -2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_a1abde5f",
+        "question": "Which equation has slope 4 and y-intercept -2?",
+        "options": [
+          "y = 4x + -2",
+          "y = 4x - -2",
+          "y = -2x + 4",
+          "x = 4y + -2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_36080c54",
+        "question": "Which equation has slope 3 and y-intercept -2?",
+        "options": [
+          "y = -2x + 3",
+          "y = 3x + -2",
+          "y = 3x - -2",
+          "x = 3y + -2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_045823ed",
+        "question": "Which equation has slope 2 and y-intercept -2?",
+        "options": [
+          "y = 2x + -2",
+          "y = 2x - -2",
+          "y = -2x + 2",
+          "x = 2y + -2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_639f2f47",
+        "question": "Which equation has slope 3 and y-intercept 1?",
+        "options": [
+          "y = 3x + 1",
+          "y = 3x - 1",
+          "y = x + 3",
+          "x = 3y + 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_330042cb",
+        "question": "Which equation has slope 2 and y-intercept 2?",
+        "options": [
+          "y = 2x + 2",
+          "y = 2x - 2",
+          "x = 2y + 2",
+          "y = 2x + 2 (alt 1)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_557d7c37",
+        "question": "Which equation has slope 1 and y-intercept -1?",
+        "options": [
+          "y = -x + 1",
+          "y = x + -1",
+          "y = x - -1",
+          "x = y + -1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_8f4f0abb",
+        "question": "Which equation has slope 1 and y-intercept 3?",
+        "options": [
+          "x = y + 3",
+          "y = x - 3",
+          "y = 3x + 1",
+          "y = x + 3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_b02ced30",
+        "question": "Which equation has slope 1 and y-intercept 1?",
+        "options": [
+          "x = y + 1",
+          "y = x + 1",
+          "y = x + 1 (alt 1)",
+          "y = x - 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_4c51a924",
+        "question": "Slope of the line through (2, 3) and (3, 6)?",
+        "options": [
+          "3",
+          "5",
+          "-3",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_110e806e",
+        "question": "Slope of the line through (3, 3) and (4, 6)?",
+        "options": [
+          "5",
+          "4",
+          "-3",
+          "3"
+        ],
+        "answer": 3,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_ff5da26c",
+        "question": "Slope of the line through (2, 2) and (3, 6)?",
+        "options": [
+          "4",
+          "6",
+          "-4",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_0d1010ac",
+        "question": "Slope of the line through (-3, 3) and (1, 6)?",
+        "options": [
+          "3/4",
+          "11/4",
+          "7/4",
+          "-3/4"
+        ],
+        "answer": 0,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_e2db56c0",
+        "question": "Slope of the line through (2, -1) and (3, 2)?",
+        "options": [
+          "-3",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": 1,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_d3b3cf22",
+        "question": "Slope of the line through (-1, -2) and (1, 2)?",
+        "options": [
+          "-2",
+          "2",
+          "4",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_5cb3d9fc",
+        "question": "Slope of the line through (2, -1) and (3, 3)?",
+        "options": [
+          "6",
+          "5",
+          "4",
+          "-4"
+        ],
+        "answer": 2,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_d8a41090",
+        "question": "Slope of the line through (2, 1) and (4, 5)?",
+        "options": [
+          "2",
+          "4",
+          "3",
+          "-2"
+        ],
+        "answer": 0,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_b7710275",
+        "question": "Slope of the line through (2, 0) and (4, 1)?",
+        "options": [
+          "-1/2",
+          "3/2",
+          "5/2",
+          "1/2"
+        ],
+        "answer": 3,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_64d938be",
+        "question": "Slope of the line through (-2, 0) and (1, 2)?",
+        "options": [
+          "8/3",
+          "2/3",
+          "5/3",
+          "-2/3"
+        ],
+        "answer": 1,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_d6b39eb0",
+        "question": "Slope of the line through (-1, 1) and (2, 2)?",
+        "options": [
+          "-1/3",
+          "1/3",
+          "7/3",
+          "4/3"
+        ],
+        "answer": 1,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_D_2e080b3e",
+        "question": "Slope of the line through (3, 3) and (5, 7)?",
+        "options": [
+          "4",
+          "2",
+          "-2",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁).",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 3,
+        "category": "p3_t2_D",
+        "category_label": "Line Equations · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -408,6 +2208,346 @@
         "source": "chapter_llm",
         "chapter_num": 3,
         "chapter_ref": "Section 3.2"
+      },
+      {
+        "id": "p3_t2_E_5ce675ee",
+        "question": "Which equation has slope 2 and y-intercept -2?",
+        "options": [
+          "y = -2x + 2",
+          "y = 2x - -2",
+          "y = 2x + -2",
+          "x = 2y + -2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_c5b8c042",
+        "question": "Which equation has slope 3 and y-intercept -1?",
+        "options": [
+          "x = 3y + -1",
+          "y = -x + 3",
+          "y = 3x - -1",
+          "y = 3x + -1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_38bcc8e3",
+        "question": "Which equation has slope 2 and y-intercept 1?",
+        "options": [
+          "y = 2x - 1",
+          "x = 2y + 1",
+          "y = x + 2",
+          "y = 2x + 1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_5407f286",
+        "question": "Which equation has slope 4 and y-intercept 1?",
+        "options": [
+          "y = 4x + 1",
+          "y = x + 4",
+          "x = 4y + 1",
+          "y = 4x - 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_f889d468",
+        "question": "Which equation has slope 2 and y-intercept 3?",
+        "options": [
+          "y = 2x + 3",
+          "y = 3x + 2",
+          "y = 2x - 3",
+          "x = 2y + 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_1225304b",
+        "question": "Which equation has slope 1 and y-intercept 2?",
+        "options": [
+          "y = 2x + 1",
+          "x = y + 2",
+          "y = x + 2",
+          "y = x - 2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_2b08f028",
+        "question": "Which equation has slope 3 and y-intercept 3?",
+        "options": [
+          "y = 3x + 3",
+          "y = 3x + 3 (alt 1)",
+          "y = 3x - 3",
+          "x = 3y + 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_5e0b1372",
+        "question": "Which equation has slope 4 and y-intercept 0?",
+        "options": [
+          "x = 4y + 0",
+          "y = 4x + 0",
+          "y = 0x + 4",
+          "y = 4x - 0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_ec23f47f",
+        "question": "Which equation has slope 1 and y-intercept -2?",
+        "options": [
+          "y = x + -2",
+          "y = -2x + 1",
+          "y = x - -2",
+          "x = y + -2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_a2e34b06",
+        "question": "Which equation has slope 4 and y-intercept -1?",
+        "options": [
+          "y = 4x - -1",
+          "x = 4y + -1",
+          "y = -x + 4",
+          "y = 4x + -1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_4485737e",
+        "question": "Which equation has slope 1 and y-intercept 0?",
+        "options": [
+          "y = x + 0",
+          "y = 0x + 1",
+          "x = y + 0",
+          "y = x - 0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_52e7fd78",
+        "question": "Which equation has slope 2 and y-intercept 2?",
+        "options": [
+          "y = 2x + 2",
+          "x = 2y + 2",
+          "y = 2x + 2 (alt 1)",
+          "y = 2x - 2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_64aba18c",
+        "question": "Which equation has slope 3 and y-intercept 1?",
+        "options": [
+          "x = 3y + 1",
+          "y = 3x - 1",
+          "y = 3x + 1",
+          "y = x + 3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_951ae1c2",
+        "question": "A taxi charges a fixed fee plus 3×(km). Which describes the slope in a distance-vs-time graph if speed is constant?",
+        "options": [
+          "Distance increases by 3 km per hour",
+          "Distance decreases",
+          "No change over time",
+          "Fixed cost of 3 km"
+        ],
+        "answer": 0,
+        "explanation": "Slope is rate of change.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_8915cece",
+        "question": "A taxi charges a fixed fee plus 2×(km). Which describes the slope in a distance-vs-time graph if speed is constant?",
+        "options": [
+          "Distance decreases",
+          "Distance increases by 3 km per hour",
+          "No change over time",
+          "Fixed cost of 2 km"
+        ],
+        "answer": 1,
+        "explanation": "Slope is rate of change.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_4425dbb8",
+        "question": "A taxi charges a fixed fee plus 1×(km). Which describes the slope in a distance-vs-time graph if speed is constant?",
+        "options": [
+          "No change over time",
+          "Fixed cost of 1 km",
+          "Distance decreases",
+          "Distance increases by 3 km per hour"
+        ],
+        "answer": 3,
+        "explanation": "Slope is rate of change.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p3_t2_E_867d4124",
+        "question": "A taxi charges a fixed fee plus 4×(km). Which describes the slope in a distance-vs-time graph if speed is constant?",
+        "options": [
+          "Fixed cost of 4 km",
+          "Distance increases by 3 km per hour",
+          "No change over time",
+          "Distance decreases"
+        ],
+        "answer": 1,
+        "explanation": "Slope is rate of change.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 3,
+        "category": "p3_t2_E",
+        "category_label": "Line Equations · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 3,
+        "chapter_ref": ""
       }
     ]
   },

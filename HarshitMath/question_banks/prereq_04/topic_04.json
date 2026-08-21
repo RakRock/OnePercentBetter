@@ -80,6 +80,226 @@
         "source": "chapter_llm",
         "chapter_num": 10,
         "chapter_ref": "Ex 10.1 Q1(vi)"
+      },
+      {
+        "id": "p4_t4_A_aa4bfb88",
+        "question": "Which is true for a circle?",
+        "options": [
+          "Angle in semicircle = 90°",
+          "Chord = radius",
+          "Equal chords subtend equal angles at centre",
+          "Tangent ⊥ radius"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_A_bba96bef",
+        "question": "A circle has radius 5 cm. Its diameter is?",
+        "options": [
+          "10",
+          "5",
+          "12",
+          "15"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_A_3063a419",
+        "question": "A circle has radius 3 cm. Its diameter is?",
+        "options": [
+          "9",
+          "8",
+          "3",
+          "6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_A_504751c4",
+        "question": "A circle has radius 8 cm. Its diameter is?",
+        "options": [
+          "18",
+          "16",
+          "24",
+          "8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_A_ebd36461",
+        "question": "A circle has radius 12 cm. Its diameter is?",
+        "options": [
+          "24",
+          "36",
+          "26",
+          "12"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_A_e7bcb0c7",
+        "question": "A circle has radius 4 cm. Its diameter is?",
+        "options": [
+          "4",
+          "12",
+          "8",
+          "10"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_A_e31e37a7",
+        "question": "A circle has radius 7 cm. Its diameter is?",
+        "options": [
+          "16",
+          "14",
+          "7",
+          "21"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_A_297952ed",
+        "question": "A circle has radius 10 cm. Its diameter is?",
+        "options": [
+          "10",
+          "22",
+          "20",
+          "30"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_A_93296c6b",
+        "question": "A circle has radius 6 cm. Its diameter is?",
+        "options": [
+          "14",
+          "18",
+          "6",
+          "12"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_A_b8fb9ec9",
+        "question": "A circle has radius 9 cm. Its diameter is?",
+        "options": [
+          "27",
+          "20",
+          "18",
+          "9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_A_8548a90e",
+        "question": "A circle has radius 11 cm. Its diameter is?",
+        "options": [
+          "11",
+          "24",
+          "22",
+          "33"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t4_A",
+        "category_label": "Circles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -162,6 +382,426 @@
         "source": "chapter_llm",
         "chapter_num": 10,
         "chapter_ref": "Theorem 10.1"
+      },
+      {
+        "id": "p4_t4_B_161032ed",
+        "question": "Which is true for a circle?",
+        "options": [
+          "Angle in semicircle = 90°",
+          "Chord = radius",
+          "Equal chords subtend equal angles at centre",
+          "Tangent ⊥ radius"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_b7800a09",
+        "question": "An angle of 47° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "47°",
+          "133°",
+          "23.5°",
+          "313°"
+        ],
+        "answer": 0,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_f21be75f",
+        "question": "An angle of 114° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "246°",
+          "66°",
+          "57.0°",
+          "114°"
+        ],
+        "answer": 3,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_72a92638",
+        "question": "An angle of 48° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "132°",
+          "48°",
+          "24.0°",
+          "312°"
+        ],
+        "answer": 1,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_670dc991",
+        "question": "An angle of 99° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "81°",
+          "261°",
+          "49.5°",
+          "99°"
+        ],
+        "answer": 3,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_51e554ed",
+        "question": "An angle of 34° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "17.0°",
+          "146°",
+          "326°",
+          "34°"
+        ],
+        "answer": 3,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_3d45bebe",
+        "question": "An angle of 63° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "31.5°",
+          "297°",
+          "63°",
+          "117°"
+        ],
+        "answer": 2,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_80fadfc6",
+        "question": "An angle of 89° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "44.5°",
+          "271°",
+          "91°",
+          "89°"
+        ],
+        "answer": 3,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_3172c126",
+        "question": "An angle of 83° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "97°",
+          "83°",
+          "277°",
+          "41.5°"
+        ],
+        "answer": 1,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_36149157",
+        "question": "An angle of 55° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "125°",
+          "55°",
+          "305°",
+          "27.5°"
+        ],
+        "answer": 1,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_0e8d5190",
+        "question": "An angle of 44° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "136°",
+          "316°",
+          "44°",
+          "22.0°"
+        ],
+        "answer": 2,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_5023365c",
+        "question": "An angle of 103° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "51.5°",
+          "103°",
+          "257°",
+          "77°"
+        ],
+        "answer": 1,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_532f29bd",
+        "question": "An angle of 91° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "45.5°",
+          "269°",
+          "89°",
+          "91°"
+        ],
+        "answer": 3,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_48815e0d",
+        "question": "An angle of 94° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "94°",
+          "86°",
+          "47.0°",
+          "266°"
+        ],
+        "answer": 0,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_00c9cad9",
+        "question": "An angle of 46° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "134°",
+          "314°",
+          "46°",
+          "23.0°"
+        ],
+        "answer": 2,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_d21bf6d8",
+        "question": "An angle of 54° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "306°",
+          "27.0°",
+          "54°",
+          "126°"
+        ],
+        "answer": 2,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_33dc59d8",
+        "question": "An angle of 111° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "69°",
+          "111°",
+          "55.5°",
+          "249°"
+        ],
+        "answer": 1,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_a8e85dee",
+        "question": "An angle of 79° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "39.5°",
+          "101°",
+          "281°",
+          "79°"
+        ],
+        "answer": 3,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_7fe1eabe",
+        "question": "An angle of 68° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "292°",
+          "112°",
+          "34.0°",
+          "68°"
+        ],
+        "answer": 3,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_76a72381",
+        "question": "An angle of 36° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "144°",
+          "36°",
+          "324°",
+          "18.0°"
+        ],
+        "answer": 1,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_B_e9d285b1",
+        "question": "An angle of 112° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+        "options": [
+          "56.0°",
+          "68°",
+          "248°",
+          "112°"
+        ],
+        "answer": 3,
+        "explanation": "Angle at circumference is half the angle at centre.",
+        "topic": 4,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t4_B",
+        "category_label": "Circles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
       }
     ],
     "C": [
@@ -244,6 +884,46 @@
         "source": "chapter_llm",
         "chapter_num": 10,
         "chapter_ref": "Section on segments and sectors"
+      },
+      {
+        "id": "p4_t4_C_47098d3a",
+        "question": "Which is true for a circle?",
+        "options": [
+          "Equal chords subtend equal angles at centre",
+          "Chord = radius",
+          "Tangent ⊥ radius",
+          "Angle in semicircle = 90°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t4_C",
+        "category_label": "Circles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_C_bf318d91",
+        "question": "In a cyclic quadrilateral:",
+        "options": [
+          "Adjacent angles equal",
+          "Opposite angles sum to 180°",
+          "Diagonals equal",
+          "All angles equal"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t4_C",
+        "category_label": "Circles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -326,6 +1006,146 @@
         "source": "chapter_llm",
         "chapter_num": 10,
         "chapter_ref": "Ch 10 para on segment"
+      },
+      {
+        "id": "p4_t4_D_1dc5ea42",
+        "question": "Which is true for a circle?",
+        "options": [
+          "Angle in semicircle = 90°",
+          "Tangent ⊥ radius",
+          "Equal chords subtend equal angles at centre",
+          "Chord = radius"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_D_1b61836f",
+        "question": "Circumference of a circle with radius 3 (use π ≈ 3.14)?",
+        "options": [
+          "18.8",
+          "20.8",
+          "9",
+          "9.42477796076938"
+        ],
+        "answer": 0,
+        "explanation": "C = 2πr.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_D_8cc17319",
+        "question": "Circumference of a circle with radius 5 (use π ≈ 3.14)?",
+        "options": [
+          "31.4",
+          "33.4",
+          "15.707963267948966",
+          "25"
+        ],
+        "answer": 0,
+        "explanation": "C = 2πr.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_D_8fbb7c47",
+        "question": "Circumference of a circle with radius 2 (use π ≈ 3.14)?",
+        "options": [
+          "6.283185307179586",
+          "14.6",
+          "4",
+          "12.6"
+        ],
+        "answer": 3,
+        "explanation": "C = 2πr.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_D_7251659c",
+        "question": "Circumference of a circle with radius 4 (use π ≈ 3.14)?",
+        "options": [
+          "12.566370614359172",
+          "25.1",
+          "16",
+          "27.1"
+        ],
+        "answer": 1,
+        "explanation": "C = 2πr.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_D_9f7b6bee",
+        "question": "Circumference of a circle with radius 6 (use π ≈ 3.14)?",
+        "options": [
+          "39.7",
+          "37.7",
+          "18.84955592153876",
+          "36"
+        ],
+        "answer": 1,
+        "explanation": "C = 2πr.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_D_df3cbb72",
+        "question": "Circumference of a circle with radius 7 (use π ≈ 3.14)?",
+        "options": [
+          "44.0",
+          "46.0",
+          "49",
+          "21.991148575128552"
+        ],
+        "answer": 0,
+        "explanation": "C = 2πr.",
+        "topic": 4,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t4_D",
+        "category_label": "Circles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -408,6 +1228,146 @@
         "source": "chapter_llm",
         "chapter_num": 10,
         "chapter_ref": "Section on sectors"
+      },
+      {
+        "id": "p4_t4_E_d2cd6b0d",
+        "question": "Which is true for a circle?",
+        "options": [
+          "Equal chords subtend equal angles at centre",
+          "Chord = radius",
+          "Angle in semicircle = 90°",
+          "Tangent ⊥ radius"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_E_22eb4d1f",
+        "question": "In a circle of radius 5, which statement is always true?",
+        "options": [
+          "Chord equals radius",
+          "Equal chords subtend equal angles at the centre",
+          "Tangent is parallel to radius",
+          "Diameter equals circumference"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_E_43c56c8d",
+        "question": "In a circle of radius 3, which statement is always true?",
+        "options": [
+          "Chord equals radius",
+          "Diameter equals circumference",
+          "Equal chords subtend equal angles at the centre",
+          "Tangent is parallel to radius"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_E_60beb89e",
+        "question": "In a circle of radius 6, which statement is always true?",
+        "options": [
+          "Diameter equals circumference",
+          "Chord equals radius",
+          "Equal chords subtend equal angles at the centre",
+          "Tangent is parallel to radius"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_E_0621de5b",
+        "question": "In a circle of radius 8, which statement is always true?",
+        "options": [
+          "Tangent is parallel to radius",
+          "Equal chords subtend equal angles at the centre",
+          "Chord equals radius",
+          "Diameter equals circumference"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_E_88de6a0f",
+        "question": "In a circle of radius 4, which statement is always true?",
+        "options": [
+          "Tangent is parallel to radius",
+          "Diameter equals circumference",
+          "Chord equals radius",
+          "Equal chords subtend equal angles at the centre"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t4_E_1d4938d6",
+        "question": "In a circle of radius 7, which statement is always true?",
+        "options": [
+          "Chord equals radius",
+          "Equal chords subtend equal angles at the centre",
+          "Diameter equals circumference",
+          "Tangent is parallel to radius"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t4_E",
+        "category_label": "Circles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 10,
+        "chapter_ref": ""
       }
     ]
   },

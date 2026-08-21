@@ -68,6 +68,43 @@ PREREQ2_REQUIREMENTS: list[tuple[str, str]] = [
     ("Ch 4 · Word problems", "Translate context into ax + by + c = 0 and solve"),
 ]
 
+_PREREQ_LABELS = {
+    1: "Number Systems",
+    2: "Algebra",
+    3: "Coordinate",
+    4: "Geometry",
+    5: "Mensuration",
+    6: "Data",
+}
+
+GENERIC_WEEK_PRESETS: dict[str, dict] = {
+    "week1_foundation": {
+        "label": "Week 1 — Foundation (Level A on all topics)",
+        "week_suffix": "Week 1 (Foundation)",
+        "levels": ["A"],
+    },
+    "week2_build": {
+        "label": "Week 2 — Build (Levels A + B)",
+        "week_suffix": "Week 2 (A + B)",
+        "levels": ["A", "B"],
+    },
+    "week3_stretch": {
+        "label": "Week 3 — Stretch (Levels A–C)",
+        "week_suffix": "Week 3 (A–C)",
+        "levels": ["A", "B", "C"],
+    },
+    "week4_advanced": {
+        "label": "Week 4 — Advanced (Levels A–D)",
+        "week_suffix": "Week 4 (A–D)",
+        "levels": ["A", "B", "C", "D"],
+    },
+    "full_coverage": {
+        "label": "Full coverage — all topics, Levels A–E",
+        "week_suffix": "Full coverage (A–E)",
+        "levels": list(hpt.LEVEL_ORDER),
+    },
+}
+
 
 def migrate_prereq2_config(config: dict) -> dict:
     """Expand legacy 4-topic PreReq 2 plans into 7-strategy plans."""
@@ -114,8 +151,54 @@ def apply_preset(preset_key: str) -> dict:
         "warmup_count": 0,
         "use_llm": True,
         "use_chapter_llm": True,
+        "grok_fresh_only": False,
         "prereq_id": PREREQ2_ID,
     }
+
+
+def apply_generic_preset(prereq_id: int, preset_key: str) -> dict:
+    """Week presets for PreReqs 1 and 3–6 (all topics in the unit)."""
+    preset = GENERIC_WEEK_PRESETS[preset_key]
+    catalog = hpt.topics_for_prereq(prereq_id)
+    label_base = _PREREQ_LABELS.get(prereq_id, f"PreReq {prereq_id}")
+    topics: list[dict] = []
+    for tid in sorted(catalog):
+        levels = [lvl for lvl in preset["levels"] if lvl in catalog[tid]["levels"]]
+        if levels:
+            topics.append({"id": tid, "levels": levels})
+    return {
+        "week_label": f"{label_base} — {preset['week_suffix']}",
+        "topics": topics,
+        "warmup_count": 0,
+        "use_llm": True,
+        "use_chapter_llm": True,
+        "grok_fresh_only": False,
+        "prereq_id": prereq_id,
+    }
+
+
+def merge_missing_topics(prereq_id: int, config: dict) -> dict:
+    """Add catalog topics missing from a saved plan (default Levels A + B)."""
+    if not config.get("topics"):
+        return config
+    catalog = hpt.topics_for_prereq(prereq_id)
+    present = {int(item["id"]) for item in config.get("topics", [])}
+    missing = [tid for tid in sorted(catalog) if tid not in present]
+    if not missing:
+        return config
+    topics = list(config.get("topics", []))
+    for tid in missing:
+        topics.append({"id": tid, "levels": ["A", "B"]})
+    out = dict(config)
+    out["topics"] = sorted(topics, key=lambda item: int(item["id"]))
+    return out
+
+
+def migrate_week_config(prereq_id: int, config: dict) -> dict:
+    """Normalize saved weekly plans (PreReq 2 split + newly added topics)."""
+    if prereq_id == PREREQ2_ID:
+        config = migrate_prereq2_config(config)
+    return merge_missing_topics(prereq_id, config)
 
 
 def coverage_stats(prereq_id: int, config: dict) -> dict:
@@ -142,9 +225,10 @@ def coverage_stats(prereq_id: int, config: dict) -> dict:
 def format_coverage_line(prereq_id: int, config: dict) -> str:
     stats = coverage_stats(prereq_id, config)
     if not stats["total"]:
-        return "No strategies defined."
+        return "No topics defined."
+    unit = "strategy×level" if prereq_id == PREREQ2_ID else "topic×level"
     return (
-        f"Coverage: {stats['configured']}/{stats['total']} strategy×level cells "
+        f"Coverage: {stats['configured']}/{stats['total']} {unit} cells "
         f"({stats['pct']}%)"
     )
 

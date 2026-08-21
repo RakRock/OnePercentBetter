@@ -80,6 +80,586 @@
         "source": "chapter_llm",
         "chapter_num": 5,
         "chapter_ref": "Ex 5.1 Q3"
+      },
+      {
+        "id": "p4_t1_A_91d1634e",
+        "question": "An angle measures 70°. Its supplement is?",
+        "options": [
+          "110°",
+          "160°",
+          "20°",
+          "70°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_f9f5edd6",
+        "question": "An angle measures 42°. Its supplement is?",
+        "options": [
+          "42°",
+          "132°",
+          "48°",
+          "138°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_efd266e7",
+        "question": "An angle measures 53°. Its supplement is?",
+        "options": [
+          "143°",
+          "53°",
+          "127°",
+          "37°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_69f79968",
+        "question": "An angle measures 64°. Its supplement is?",
+        "options": [
+          "116°",
+          "154°",
+          "26°",
+          "64°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_d2a40d8d",
+        "question": "An angle measures 26°. Its supplement is?",
+        "options": [
+          "26°",
+          "154°",
+          "116°",
+          "64°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_ed042ba0",
+        "question": "An angle measures 35°. Its supplement is?",
+        "options": [
+          "35°",
+          "55°",
+          "125°",
+          "145°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_aeabb0a7",
+        "question": "An angle measures 37°. Its supplement is?",
+        "options": [
+          "53°",
+          "143°",
+          "37°",
+          "127°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_caa8d24e",
+        "question": "An angle measures 57°. Its supplement is?",
+        "options": [
+          "57°",
+          "33°",
+          "123°",
+          "147°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_00a7178d",
+        "question": "An acute angle measures 29°. Its complement is?",
+        "options": [
+          "119°",
+          "61°",
+          "151°",
+          "29°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_2f103235",
+        "question": "An acute angle measures 60°. Its complement is?",
+        "options": [
+          "60°",
+          "150°",
+          "120°",
+          "30°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_a0e4da8e",
+        "question": "An acute angle measures 23°. Its complement is?",
+        "options": [
+          "23°",
+          "157°",
+          "67°",
+          "113°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_36399f28",
+        "question": "An angle measures 59°. Its supplement is?",
+        "options": [
+          "121°",
+          "31°",
+          "59°",
+          "149°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_ed9604e8",
+        "question": "An acute angle measures 19°. Its complement is?",
+        "options": [
+          "109°",
+          "19°",
+          "71°",
+          "161°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_e117ba65",
+        "question": "An acute angle measures 22°. Its complement is?",
+        "options": [
+          "68°",
+          "112°",
+          "22°",
+          "158°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_7d05d0e2",
+        "question": "An acute angle measures 74°. Its complement is?",
+        "options": [
+          "164°",
+          "74°",
+          "106°",
+          "16°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_f30fee21",
+        "question": "An acute angle measures 65°. Its complement is?",
+        "options": [
+          "115°",
+          "65°",
+          "155°",
+          "25°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_68514175",
+        "question": "An acute angle measures 48°. Its complement is?",
+        "options": [
+          "138°",
+          "48°",
+          "132°",
+          "42°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_b28f4c4d",
+        "question": "An acute angle measures 44°. Its complement is?",
+        "options": [
+          "46°",
+          "136°",
+          "44°",
+          "134°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_21741b79",
+        "question": "An angle measures 17°. Its supplement is?",
+        "options": [
+          "73°",
+          "17°",
+          "163°",
+          "107°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_2963870e",
+        "question": "An angle measures 38°. Its supplement is?",
+        "options": [
+          "142°",
+          "128°",
+          "38°",
+          "52°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_3c952ddb",
+        "question": "An acute angle measures 68°. Its complement is?",
+        "options": [
+          "158°",
+          "112°",
+          "22°",
+          "68°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_7e8d0823",
+        "question": "An acute angle measures 24°. Its complement is?",
+        "options": [
+          "24°",
+          "156°",
+          "66°",
+          "114°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_f66f6936",
+        "question": "An acute angle measures 75°. Its complement is?",
+        "options": [
+          "165°",
+          "75°",
+          "105°",
+          "15°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_2b54eecf",
+        "question": "An acute angle measures 35°. Its complement is?",
+        "options": [
+          "55°",
+          "35°",
+          "125°",
+          "145°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_a17c5f8e",
+        "question": "An angle measures 29°. Its supplement is?",
+        "options": [
+          "61°",
+          "119°",
+          "151°",
+          "29°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_4735e1ef",
+        "question": "An acute angle measures 71°. Its complement is?",
+        "options": [
+          "109°",
+          "71°",
+          "161°",
+          "19°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_a3436242",
+        "question": "An acute angle measures 16°. Its complement is?",
+        "options": [
+          "74°",
+          "106°",
+          "164°",
+          "16°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_76e44b9a",
+        "question": "An acute angle measures 31°. Its complement is?",
+        "options": [
+          "31°",
+          "149°",
+          "121°",
+          "59°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_A_4bcc028d",
+        "question": "An angle measures 21°. Its supplement is?",
+        "options": [
+          "159°",
+          "21°",
+          "69°",
+          "111°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -162,6 +742,566 @@
         "source": "chapter_llm",
         "chapter_num": 5,
         "chapter_ref": "Ex 5.1 Q6"
+      },
+      {
+        "id": "p4_t1_B_22a52f5c",
+        "question": "An angle measures 23°. Its supplement is?",
+        "options": [
+          "23°",
+          "157°",
+          "67°",
+          "113°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_6299fc5a",
+        "question": "An angle measures 58°. Its supplement is?",
+        "options": [
+          "32°",
+          "58°",
+          "122°",
+          "148°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_f3fa2a6c",
+        "question": "An angle measures 36°. Its supplement is?",
+        "options": [
+          "54°",
+          "126°",
+          "144°",
+          "36°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_b7d65ee1",
+        "question": "An angle measures 49°. Its supplement is?",
+        "options": [
+          "41°",
+          "131°",
+          "49°",
+          "139°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_6df7c739",
+        "question": "An angle measures 27°. Its supplement is?",
+        "options": [
+          "153°",
+          "63°",
+          "27°",
+          "117°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_c0a4476a",
+        "question": "An angle measures 42°. Its supplement is?",
+        "options": [
+          "42°",
+          "138°",
+          "48°",
+          "132°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_137cb421",
+        "question": "An angle measures 28°. Its supplement is?",
+        "options": [
+          "152°",
+          "28°",
+          "118°",
+          "62°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_edaa5c1b",
+        "question": "An angle measures 33°. Its supplement is?",
+        "options": [
+          "123°",
+          "57°",
+          "147°",
+          "33°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_1cad5cb2",
+        "question": "An angle measures 37°. Its supplement is?",
+        "options": [
+          "143°",
+          "127°",
+          "37°",
+          "53°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_9d159ab0",
+        "question": "An angle measures 35°. Its supplement is?",
+        "options": [
+          "145°",
+          "125°",
+          "55°",
+          "35°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_0e8e1c4b",
+        "question": "An angle measures 68°. Its supplement is?",
+        "options": [
+          "68°",
+          "158°",
+          "112°",
+          "22°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_f2031af3",
+        "question": "An angle measures 56°. Its supplement is?",
+        "options": [
+          "34°",
+          "146°",
+          "56°",
+          "124°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_0dca9a7e",
+        "question": "An acute angle measures 64°. Its complement is?",
+        "options": [
+          "154°",
+          "64°",
+          "26°",
+          "116°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_3bb5990d",
+        "question": "An acute angle measures 39°. Its complement is?",
+        "options": [
+          "129°",
+          "51°",
+          "141°",
+          "39°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_4491ba30",
+        "question": "An angle measures 74°. Its supplement is?",
+        "options": [
+          "106°",
+          "16°",
+          "164°",
+          "74°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_cd228d18",
+        "question": "An angle measures 50°. Its supplement is?",
+        "options": [
+          "50°",
+          "130°",
+          "40°",
+          "140°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_656ef023",
+        "question": "An angle measures 55°. Its supplement is?",
+        "options": [
+          "55°",
+          "35°",
+          "145°",
+          "125°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_fa37c88a",
+        "question": "An angle measures 54°. Its supplement is?",
+        "options": [
+          "126°",
+          "54°",
+          "144°",
+          "36°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_36800692",
+        "question": "An acute angle measures 42°. Its complement is?",
+        "options": [
+          "132°",
+          "42°",
+          "48°",
+          "138°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_0759027b",
+        "question": "An acute angle measures 55°. Its complement is?",
+        "options": [
+          "145°",
+          "125°",
+          "55°",
+          "35°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_7448caee",
+        "question": "An acute angle measures 41°. Its complement is?",
+        "options": [
+          "49°",
+          "41°",
+          "131°",
+          "139°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_e112dca9",
+        "question": "An acute angle measures 70°. Its complement is?",
+        "options": [
+          "160°",
+          "110°",
+          "20°",
+          "70°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_cb6dba40",
+        "question": "An angle measures 21°. Its supplement is?",
+        "options": [
+          "69°",
+          "159°",
+          "111°",
+          "21°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_56cf4c36",
+        "question": "An acute angle measures 26°. Its complement is?",
+        "options": [
+          "64°",
+          "154°",
+          "26°",
+          "116°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_9b3a0d75",
+        "question": "An angle measures 29°. Its supplement is?",
+        "options": [
+          "29°",
+          "61°",
+          "119°",
+          "151°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_a2b0a686",
+        "question": "An angle measures 30°. Its supplement is?",
+        "options": [
+          "120°",
+          "30°",
+          "60°",
+          "150°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_79890cff",
+        "question": "An angle measures 52°. Its supplement is?",
+        "options": [
+          "142°",
+          "38°",
+          "52°",
+          "128°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_B_29e615da",
+        "question": "An acute angle measures 20°. Its complement is?",
+        "options": [
+          "70°",
+          "160°",
+          "110°",
+          "20°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
       }
     ],
     "C": [
@@ -244,6 +1384,606 @@
         "source": "chapter_llm",
         "chapter_num": 5,
         "chapter_ref": "Section 5.3"
+      },
+      {
+        "id": "p4_t1_C_f01a63f1",
+        "question": "An angle measures 25°. Its supplement is?",
+        "options": [
+          "155°",
+          "65°",
+          "115°",
+          "25°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_d5e24850",
+        "question": "An angle measures 21°. Its supplement is?",
+        "options": [
+          "69°",
+          "111°",
+          "21°",
+          "159°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_faf3d791",
+        "question": "An angle measures 33°. Its supplement is?",
+        "options": [
+          "147°",
+          "57°",
+          "33°",
+          "123°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_41e59523",
+        "question": "An angle measures 42°. Its supplement is?",
+        "options": [
+          "48°",
+          "132°",
+          "138°",
+          "42°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_c472b558",
+        "question": "An angle measures 46°. Its supplement is?",
+        "options": [
+          "44°",
+          "136°",
+          "46°",
+          "134°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_2d6f6749",
+        "question": "An angle measures 58°. Its supplement is?",
+        "options": [
+          "122°",
+          "32°",
+          "58°",
+          "148°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_6425b051",
+        "question": "An angle measures 36°. Its supplement is?",
+        "options": [
+          "144°",
+          "126°",
+          "36°",
+          "54°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_779195ae",
+        "question": "An angle measures 38°. Its supplement is?",
+        "options": [
+          "142°",
+          "38°",
+          "52°",
+          "128°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_2b02fc7e",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 49°. A co-interior angle on the same side is?",
+        "options": [
+          "139°",
+          "41°",
+          "131°",
+          "49°"
+        ],
+        "answer": 2,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_2e0ae739",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 61°. A co-interior angle on the same side is?",
+        "options": [
+          "29°",
+          "61°",
+          "119°",
+          "151°"
+        ],
+        "answer": 2,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_d345bda8",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 42°. A co-interior angle on the same side is?",
+        "options": [
+          "132°",
+          "138°",
+          "42°",
+          "48°"
+        ],
+        "answer": 1,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_80237d23",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 65°. A co-interior angle on the same side is?",
+        "options": [
+          "65°",
+          "155°",
+          "25°",
+          "115°"
+        ],
+        "answer": 3,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_0b067a38",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 50°. A co-interior angle on the same side is?",
+        "options": [
+          "40°",
+          "50°",
+          "140°",
+          "130°"
+        ],
+        "answer": 3,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_fb3c6da3",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 70°. A co-interior angle on the same side is?",
+        "options": [
+          "160°",
+          "110°",
+          "70°",
+          "20°"
+        ],
+        "answer": 1,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_e4c8eadc",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 68°. A co-interior angle on the same side is?",
+        "options": [
+          "112°",
+          "68°",
+          "22°",
+          "158°"
+        ],
+        "answer": 0,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_97777108",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 51°. A co-interior angle on the same side is?",
+        "options": [
+          "39°",
+          "141°",
+          "51°",
+          "129°"
+        ],
+        "answer": 3,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_2b241733",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 55°. A co-interior angle on the same side is?",
+        "options": [
+          "145°",
+          "35°",
+          "125°",
+          "55°"
+        ],
+        "answer": 2,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_69000a73",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 54°. A co-interior angle on the same side is?",
+        "options": [
+          "54°",
+          "36°",
+          "126°",
+          "144°"
+        ],
+        "answer": 2,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_e9a70eae",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 60°. A co-interior angle on the same side is?",
+        "options": [
+          "30°",
+          "60°",
+          "120°",
+          "150°"
+        ],
+        "answer": 2,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_f3c5886a",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 45°. A co-interior angle on the same side is?",
+        "options": [
+          "135° (alt 1)",
+          "135° (alt 2)",
+          "45°",
+          "135°"
+        ],
+        "answer": 3,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_0842d756",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 59°. A co-interior angle on the same side is?",
+        "options": [
+          "149°",
+          "31°",
+          "59°",
+          "121°"
+        ],
+        "answer": 3,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_945dd1f9",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 66°. A co-interior angle on the same side is?",
+        "options": [
+          "114°",
+          "66°",
+          "156°",
+          "24°"
+        ],
+        "answer": 0,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_a099b28f",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 57°. A co-interior angle on the same side is?",
+        "options": [
+          "33°",
+          "57°",
+          "147°",
+          "123°"
+        ],
+        "answer": 3,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_da4fd7a6",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 62°. A co-interior angle on the same side is?",
+        "options": [
+          "62°",
+          "28°",
+          "118°",
+          "152°"
+        ],
+        "answer": 2,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_65aaac3e",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 44°. A co-interior angle on the same side is?",
+        "options": [
+          "136°",
+          "44°",
+          "134°",
+          "46°"
+        ],
+        "answer": 0,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_c4c4aaf1",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 46°. A co-interior angle on the same side is?",
+        "options": [
+          "44°",
+          "136°",
+          "134°",
+          "46°"
+        ],
+        "answer": 2,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_0ad66faf",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 69°. A co-interior angle on the same side is?",
+        "options": [
+          "69°",
+          "111°",
+          "21°",
+          "159°"
+        ],
+        "answer": 1,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_df49379d",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 41°. A co-interior angle on the same side is?",
+        "options": [
+          "49°",
+          "41°",
+          "139°",
+          "131°"
+        ],
+        "answer": 2,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_cb4d6459",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 53°. A co-interior angle on the same side is?",
+        "options": [
+          "143°",
+          "53°",
+          "37°",
+          "127°"
+        ],
+        "answer": 3,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_C_0309a97a",
+        "question": "Two parallel lines are cut by a transversal. One interior angle is 64°. A co-interior angle on the same side is?",
+        "options": [
+          "116°",
+          "154°",
+          "64°",
+          "26°"
+        ],
+        "answer": 0,
+        "explanation": "Co-interior angles are supplementary.",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -326,6 +2066,606 @@
         "source": "chapter_llm",
         "chapter_num": 5,
         "chapter_ref": "Section 5.3"
+      },
+      {
+        "id": "p4_t1_D_6e1f9829",
+        "question": "An angle measures 47°. Its supplement is?",
+        "options": [
+          "43°",
+          "133°",
+          "47°",
+          "137°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_c7cf908b",
+        "question": "An angle measures 57°. Its supplement is?",
+        "options": [
+          "33°",
+          "147°",
+          "123°",
+          "57°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_25b1cbd5",
+        "question": "An angle measures 59°. Its supplement is?",
+        "options": [
+          "59°",
+          "121°",
+          "149°",
+          "31°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_d56e1039",
+        "question": "An angle measures 64°. Its supplement is?",
+        "options": [
+          "26°",
+          "64°",
+          "116°",
+          "154°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_60bd6e66",
+        "question": "An angle measures 28°. Its supplement is?",
+        "options": [
+          "152°",
+          "62°",
+          "118°",
+          "28°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_83871ef8",
+        "question": "An angle measures 44°. Its supplement is?",
+        "options": [
+          "134°",
+          "44°",
+          "136°",
+          "46°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_7e203272",
+        "question": "An angle measures 69°. Its supplement is?",
+        "options": [
+          "69°",
+          "21°",
+          "159°",
+          "111°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_35e62231",
+        "question": "An angle measures 63°. Its supplement is?",
+        "options": [
+          "153°",
+          "117°",
+          "63°",
+          "27°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_146512e2",
+        "question": "Two lines intersect. One angle is 26° and its adjacent angle is 34°. A vertically opposite angle to 34° is?",
+        "options": [
+          "34°",
+          "56°",
+          "60°",
+          "146°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_7a357873",
+        "question": "Two lines intersect. One angle is 24° and its adjacent angle is 22°. A vertically opposite angle to 22° is?",
+        "options": [
+          "46°",
+          "22°",
+          "158°",
+          "68°"
+        ],
+        "answer": 1,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_fecb4a1f",
+        "question": "Two lines intersect. One angle is 25° and its adjacent angle is 47°. A vertically opposite angle to 47° is?",
+        "options": [
+          "72°",
+          "43°",
+          "47°",
+          "133°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_a59dfff9",
+        "question": "Two lines intersect. One angle is 24° and its adjacent angle is 28°. A vertically opposite angle to 28° is?",
+        "options": [
+          "52°",
+          "28°",
+          "62°",
+          "152°"
+        ],
+        "answer": 1,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_12b5c64a",
+        "question": "Two lines intersect. One angle is 48° and its adjacent angle is 49°. A vertically opposite angle to 49° is?",
+        "options": [
+          "131°",
+          "97°",
+          "49°",
+          "41°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_f1df3941",
+        "question": "Two lines intersect. One angle is 20° and its adjacent angle is 46°. A vertically opposite angle to 46° is?",
+        "options": [
+          "46°",
+          "66°",
+          "44°",
+          "134°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_f8ef5a31",
+        "question": "Two lines intersect. One angle is 40° and its adjacent angle is 46°. A vertically opposite angle to 46° is?",
+        "options": [
+          "44°",
+          "134°",
+          "46°",
+          "86°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_c1bac5c3",
+        "question": "Two lines intersect. One angle is 34° and its adjacent angle is 29°. A vertically opposite angle to 29° is?",
+        "options": [
+          "63°",
+          "151°",
+          "61°",
+          "29°"
+        ],
+        "answer": 3,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_3da54ee6",
+        "question": "Two lines intersect. One angle is 46° and its adjacent angle is 35°. A vertically opposite angle to 35° is?",
+        "options": [
+          "35°",
+          "55°",
+          "81°",
+          "145°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_09362302",
+        "question": "Two lines intersect. One angle is 45° and its adjacent angle is 41°. A vertically opposite angle to 41° is?",
+        "options": [
+          "86°",
+          "139°",
+          "41°",
+          "49°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_e547b7cc",
+        "question": "Two lines intersect. One angle is 42° and its adjacent angle is 39°. A vertically opposite angle to 39° is?",
+        "options": [
+          "81°",
+          "141°",
+          "39°",
+          "51°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_265d2040",
+        "question": "Two lines intersect. One angle is 36° and its adjacent angle is 28°. A vertically opposite angle to 28° is?",
+        "options": [
+          "28°",
+          "62°",
+          "64°",
+          "152°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_b9b60b47",
+        "question": "Two lines intersect. One angle is 44° and its adjacent angle is 50°. A vertically opposite angle to 50° is?",
+        "options": [
+          "130°",
+          "94°",
+          "50°",
+          "40°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_b1aadc3e",
+        "question": "Two lines intersect. One angle is 26° and its adjacent angle is 49°. A vertically opposite angle to 49° is?",
+        "options": [
+          "75°",
+          "41°",
+          "49°",
+          "131°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_7fad4677",
+        "question": "Two lines intersect. One angle is 29° and its adjacent angle is 25°. A vertically opposite angle to 25° is?",
+        "options": [
+          "65°",
+          "25°",
+          "155°",
+          "54°"
+        ],
+        "answer": 1,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_a477662b",
+        "question": "Two lines intersect. One angle is 25° and its adjacent angle is 36°. A vertically opposite angle to 36° is?",
+        "options": [
+          "61°",
+          "144°",
+          "54°",
+          "36°"
+        ],
+        "answer": 3,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_b7f9927d",
+        "question": "Two lines intersect. One angle is 30° and its adjacent angle is 34°. A vertically opposite angle to 34° is?",
+        "options": [
+          "146°",
+          "34°",
+          "56°",
+          "64°"
+        ],
+        "answer": 1,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_dedb0613",
+        "question": "Two lines intersect. One angle is 30° and its adjacent angle is 27°. A vertically opposite angle to 27° is?",
+        "options": [
+          "27°",
+          "153°",
+          "63°",
+          "57°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_c92c7004",
+        "question": "Two lines intersect. One angle is 36° and its adjacent angle is 22°. A vertically opposite angle to 22° is?",
+        "options": [
+          "58°",
+          "158°",
+          "22°",
+          "68°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_6932c64d",
+        "question": "Two lines intersect. One angle is 20° and its adjacent angle is 40°. A vertically opposite angle to 40° is?",
+        "options": [
+          "140°",
+          "50°",
+          "40°",
+          "60°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_a8aebae3",
+        "question": "Two lines intersect. One angle is 49° and its adjacent angle is 29°. A vertically opposite angle to 29° is?",
+        "options": [
+          "29°",
+          "151°",
+          "61°",
+          "78°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_D_ea78b178",
+        "question": "Two lines intersect. One angle is 24° and its adjacent angle is 24°. A vertically opposite angle to 24° is?",
+        "options": [
+          "48°",
+          "66°",
+          "156°",
+          "24°"
+        ],
+        "answer": 3,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -408,6 +2748,566 @@
         "source": "chapter_llm",
         "chapter_num": 5,
         "chapter_ref": "Section 5.3"
+      },
+      {
+        "id": "p4_t1_E_26bf4659",
+        "question": "An angle measures 68°. Its supplement is?",
+        "options": [
+          "68°",
+          "112°",
+          "158°",
+          "22°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_92345ef1",
+        "question": "An angle measures 28°. Its supplement is?",
+        "options": [
+          "118°",
+          "152°",
+          "28°",
+          "62°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_f19f4845",
+        "question": "An angle measures 60°. Its supplement is?",
+        "options": [
+          "60°",
+          "120°",
+          "30°",
+          "150°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_e164dcff",
+        "question": "An angle measures 57°. Its supplement is?",
+        "options": [
+          "147°",
+          "33°",
+          "57°",
+          "123°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_161dec00",
+        "question": "An angle measures 59°. Its supplement is?",
+        "options": [
+          "59°",
+          "121°",
+          "31°",
+          "149°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_a2603463",
+        "question": "An angle measures 24°. Its supplement is?",
+        "options": [
+          "24°",
+          "66°",
+          "156°",
+          "114°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_9b9cccef",
+        "question": "An angle measures 65°. Its supplement is?",
+        "options": [
+          "25°",
+          "155°",
+          "65°",
+          "115°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_45c3e352",
+        "question": "An angle measures 69°. Its supplement is?",
+        "options": [
+          "111°",
+          "159°",
+          "69°",
+          "21°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_4674b4a5",
+        "question": "Two lines intersect. One angle is 32° and its adjacent angle is 43°. A vertically opposite angle to 43° is?",
+        "options": [
+          "75°",
+          "47°",
+          "137°",
+          "43°"
+        ],
+        "answer": 3,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_73f083f1",
+        "question": "Two lines intersect. One angle is 37° and its adjacent angle is 24°. A vertically opposite angle to 24° is?",
+        "options": [
+          "61°",
+          "156°",
+          "66°",
+          "24°"
+        ],
+        "answer": 3,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_52a9d884",
+        "question": "Two lines intersect. One angle is 23° and its adjacent angle is 46°. A vertically opposite angle to 46° is?",
+        "options": [
+          "46°",
+          "134°",
+          "69°",
+          "44°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_e52bfbdf",
+        "question": "Two lines intersect. One angle is 37° and its adjacent angle is 40°. A vertically opposite angle to 40° is?",
+        "options": [
+          "140°",
+          "77°",
+          "50°",
+          "40°"
+        ],
+        "answer": 3,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_c50758b6",
+        "question": "Two lines intersect. One angle is 34° and its adjacent angle is 31°. A vertically opposite angle to 31° is?",
+        "options": [
+          "149°",
+          "65°",
+          "31°",
+          "59°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_5b33333e",
+        "question": "Two lines intersect. One angle is 45° and its adjacent angle is 21°. A vertically opposite angle to 21° is?",
+        "options": [
+          "66°",
+          "69°",
+          "21°",
+          "159°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_4069109a",
+        "question": "Two lines intersect. One angle is 44° and its adjacent angle is 32°. A vertically opposite angle to 32° is?",
+        "options": [
+          "76°",
+          "58°",
+          "148°",
+          "32°"
+        ],
+        "answer": 3,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_501de046",
+        "question": "Two lines intersect. One angle is 48° and its adjacent angle is 30°. A vertically opposite angle to 30° is?",
+        "options": [
+          "78°",
+          "150°",
+          "60°",
+          "30°"
+        ],
+        "answer": 3,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_68a42a0a",
+        "question": "Two lines intersect. One angle is 48° and its adjacent angle is 43°. A vertically opposite angle to 43° is?",
+        "options": [
+          "43°",
+          "91°",
+          "47°",
+          "137°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_514b29d1",
+        "question": "Two lines intersect. One angle is 38° and its adjacent angle is 42°. A vertically opposite angle to 42° is?",
+        "options": [
+          "80°",
+          "42°",
+          "138°",
+          "48°"
+        ],
+        "answer": 1,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_029f1d79",
+        "question": "Two lines intersect. One angle is 36° and its adjacent angle is 33°. A vertically opposite angle to 33° is?",
+        "options": [
+          "33°",
+          "69°",
+          "57°",
+          "147°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_84641f03",
+        "question": "Two lines intersect. One angle is 42° and its adjacent angle is 42°. A vertically opposite angle to 42° is?",
+        "options": [
+          "42°",
+          "84°",
+          "48°",
+          "138°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_56aeb7a3",
+        "question": "Two lines intersect. One angle is 23° and its adjacent angle is 40°. A vertically opposite angle to 40° is?",
+        "options": [
+          "140°",
+          "40°",
+          "50°",
+          "63°"
+        ],
+        "answer": 1,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_9a5ae41a",
+        "question": "Two lines intersect. One angle is 32° and its adjacent angle is 29°. A vertically opposite angle to 29° is?",
+        "options": [
+          "61°",
+          "29° (alt 1)",
+          "29°",
+          "151°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_f3a9a434",
+        "question": "Two lines intersect. One angle is 24° and its adjacent angle is 36°. A vertically opposite angle to 36° is?",
+        "options": [
+          "144°",
+          "54°",
+          "60°",
+          "36°"
+        ],
+        "answer": 3,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_f7e28ac1",
+        "question": "Two lines intersect. One angle is 32° and its adjacent angle is 40°. A vertically opposite angle to 40° is?",
+        "options": [
+          "140°",
+          "40°",
+          "72°",
+          "50°"
+        ],
+        "answer": 1,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_864aa07c",
+        "question": "Two lines intersect. One angle is 47° and its adjacent angle is 45°. A vertically opposite angle to 45° is?",
+        "options": [
+          "45° (alt 1)",
+          "45°",
+          "92°",
+          "135°"
+        ],
+        "answer": 1,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_bc9943f6",
+        "question": "Two lines intersect. One angle is 29° and its adjacent angle is 43°. A vertically opposite angle to 43° is?",
+        "options": [
+          "137°",
+          "72°",
+          "43°",
+          "47°"
+        ],
+        "answer": 2,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_7f801958",
+        "question": "Two lines intersect. One angle is 45° and its adjacent angle is 27°. A vertically opposite angle to 27° is?",
+        "options": [
+          "27°",
+          "153°",
+          "72°",
+          "63°"
+        ],
+        "answer": 0,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t1_E_6122abdd",
+        "question": "Two lines intersect. One angle is 27° and its adjacent angle is 39°. A vertically opposite angle to 39° is?",
+        "options": [
+          "141°",
+          "39°",
+          "66°",
+          "51°"
+        ],
+        "answer": 1,
+        "explanation": "Vertically opposite angles are equal.",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 5,
+        "chapter_ref": ""
       }
     ]
   },

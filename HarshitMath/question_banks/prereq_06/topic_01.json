@@ -80,6 +80,766 @@
         "source": "chapter_seed",
         "chapter_num": 14,
         "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_3371bbaa",
+        "question": "Mean of [3, 4, 5, 5, 12]?",
+        "options": [
+          "5.8",
+          "12",
+          "3",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_e41d47d0",
+        "question": "Mean of [4, 5, 6, 9, 11]?",
+        "options": [
+          "4",
+          "8",
+          "7.0",
+          "11"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_734644f2",
+        "question": "Mean of [2, 4, 7, 10, 10]?",
+        "options": [
+          "10",
+          "6.6",
+          "7",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_2ff43763",
+        "question": "Mean of [3, 5, 12, 12, 12]?",
+        "options": [
+          "9",
+          "3",
+          "12",
+          "8.8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_2041e60b",
+        "question": "Mean of [2, 5, 6, 11, 11]?",
+        "options": [
+          "8",
+          "7.0",
+          "2",
+          "11"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_02b04b3e",
+        "question": "Mean of [4, 5, 6, 7, 12]?",
+        "options": [
+          "12",
+          "7",
+          "6.8",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_f4d9adaf",
+        "question": "Mean of [3, 5, 6, 12, 12]?",
+        "options": [
+          "7.6",
+          "12",
+          "3",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_25733df1",
+        "question": "Mean of [3, 3, 3, 6, 8]?",
+        "options": [
+          "5",
+          "4.6",
+          "3",
+          "8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_b775d078",
+        "question": "Mean of [1, 2, 5, 5, 8]?",
+        "options": [
+          "5",
+          "1",
+          "8",
+          "4.2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_e8212fce",
+        "question": "Mean of [1, 2, 2, 12, 12]?",
+        "options": [
+          "1",
+          "12",
+          "5.8",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_ab27f042",
+        "question": "Mean of [1, 1, 1, 3, 12]?",
+        "options": [
+          "4",
+          "3.6",
+          "1",
+          "12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_ad360a31",
+        "question": "Mean of [4, 7, 7, 8, 10]?",
+        "options": [
+          "10",
+          "8",
+          "7.2",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_5547d161",
+        "question": "Mean of [4, 6, 8, 10, 10]?",
+        "options": [
+          "10",
+          "4",
+          "7.6",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_8362e50d",
+        "question": "Mean of [2, 6, 6, 7, 7]?",
+        "options": [
+          "5.6",
+          "2",
+          "7",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_4f5ef98e",
+        "question": "Mean of [2, 5, 8, 9, 11]?",
+        "options": [
+          "8",
+          "2",
+          "11",
+          "7.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_bde9d3d8",
+        "question": "Mean of [1, 2, 3, 7, 11]?",
+        "options": [
+          "5",
+          "4.8",
+          "1",
+          "11"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_705f85ef",
+        "question": "Mean of [2, 3, 5, 11, 11]?",
+        "options": [
+          "7",
+          "2",
+          "11",
+          "6.4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_edac3c5d",
+        "question": "Mean of [2, 3, 3, 7, 9]?",
+        "options": [
+          "4.8",
+          "9",
+          "2",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_59144fe0",
+        "question": "Mean of [1, 4, 5, 5, 11]?",
+        "options": [
+          "11",
+          "6",
+          "5.2",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_17835d7f",
+        "question": "Mean of [1, 3, 4, 6, 9]?",
+        "options": [
+          "9",
+          "5",
+          "1",
+          "4.6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_e2b71e8b",
+        "question": "Mean of [5, 6, 6, 7, 12]?",
+        "options": [
+          "12",
+          "5",
+          "7.2",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_d8267305",
+        "question": "Mean of [1, 4, 5, 10, 11]?",
+        "options": [
+          "7",
+          "11",
+          "6.2",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_fa3e21d2",
+        "question": "Mean of [1, 5, 7, 8, 10]?",
+        "options": [
+          "1",
+          "6.2",
+          "10",
+          "7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_4aca3628",
+        "question": "Mean of [9, 9, 10, 10, 11]?",
+        "options": [
+          "10",
+          "11",
+          "9.8",
+          "9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_a1c1751f",
+        "question": "Mean of [2, 7, 8, 8, 9]?",
+        "options": [
+          "9",
+          "6.8",
+          "7",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_ce540263",
+        "question": "Mean of [6, 8, 10, 11, 12]?",
+        "options": [
+          "6",
+          "10",
+          "9.4",
+          "12"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_b22b3f5e",
+        "question": "Mean of [6, 8, 8, 11, 11]?",
+        "options": [
+          "9",
+          "8.8",
+          "11",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_b41f83f5",
+        "question": "Mean of [1, 4, 4, 6, 7]?",
+        "options": [
+          "7",
+          "5",
+          "1",
+          "4.4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_a3a01ed8",
+        "question": "Mean of [2, 2, 6, 10, 10]?",
+        "options": [
+          "10",
+          "7",
+          "2",
+          "6.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_162a46cf",
+        "question": "Mean of [4, 5, 6, 9, 9]?",
+        "options": [
+          "9",
+          "6.6",
+          "7",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_17e1d9b8",
+        "question": "Mean of [4, 8, 9, 10, 10]?",
+        "options": [
+          "4",
+          "9",
+          "10",
+          "8.2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_ba7fe0dd",
+        "question": "Mean of [6, 9, 10, 12, 12]?",
+        "options": [
+          "10",
+          "12",
+          "9.8",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_f4f7d4db",
+        "question": "Mean of [1, 9, 10, 10, 12]?",
+        "options": [
+          "12",
+          "1",
+          "8.4",
+          "9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_ef41983e",
+        "question": "Mean of [1, 5, 6, 12, 12]?",
+        "options": [
+          "12",
+          "7.2",
+          "8",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_2f21aa66",
+        "question": "Mean of [1, 1, 7, 7, 12]?",
+        "options": [
+          "1",
+          "12",
+          "5.6",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_f12edb82",
+        "question": "Mean of [1, 6, 8, 11, 12]?",
+        "options": [
+          "12",
+          "1",
+          "8",
+          "7.6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_126ed88e",
+        "question": "Mean of [4, 4, 5, 7, 11]?",
+        "options": [
+          "6.2",
+          "7",
+          "11",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_A_963c3dbf",
+        "question": "Mean of [8, 9, 9, 11, 12]?",
+        "options": [
+          "8",
+          "10",
+          "9.8",
+          "12"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 6,
+        "category": "p6_t1_A",
+        "category_label": "Central Tendency · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -153,6 +913,766 @@
           "6"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_499fc369",
+        "question": "Median of [4, 5, 5, 8, 8, 10]?",
+        "options": [
+          "10",
+          "4",
+          "6.5",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_5eb484b3",
+        "question": "Median of [3, 7, 8, 10, 10, 11]?",
+        "options": [
+          "9.0",
+          "3",
+          "11",
+          "9.0 (alt 1)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_92394519",
+        "question": "Median of [3, 4, 10, 10, 12, 12]?",
+        "options": [
+          "10.0 (alt 1)",
+          "10.0",
+          "12",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_c77b0959",
+        "question": "Median of [2, 3, 6, 6, 9, 11]?",
+        "options": [
+          "2",
+          "6.0",
+          "11",
+          "8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_99e09a39",
+        "question": "Median of [4, 4, 6, 10, 11, 11]?",
+        "options": [
+          "8.0",
+          "11",
+          "4",
+          "10"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_0d203a19",
+        "question": "Median of [4, 6, 6, 7, 8, 11]?",
+        "options": [
+          "4",
+          "6.5",
+          "11",
+          "8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_e5ad4451",
+        "question": "Median of [4, 5, 6, 7, 9, 9]?",
+        "options": [
+          "4",
+          "9",
+          "6.5",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_fb19bc62",
+        "question": "Median of [1, 3, 7, 7, 10, 11]?",
+        "options": [
+          "11",
+          "9",
+          "7.0",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_71e563b5",
+        "question": "Median of [1, 4, 6, 8, 10, 10]?",
+        "options": [
+          "10",
+          "9",
+          "1",
+          "7.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_871d193c",
+        "question": "Median of [4, 5, 6, 8, 11, 12]?",
+        "options": [
+          "7.0",
+          "4",
+          "12",
+          "9"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_4e3f4b1c",
+        "question": "Median of [1, 5, 8, 9, 9, 12]?",
+        "options": [
+          "8.5",
+          "12",
+          "1",
+          "10"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_86fde344",
+        "question": "Median of [3, 5, 5, 7, 10, 11]?",
+        "options": [
+          "3",
+          "8",
+          "11",
+          "6.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_1c830a2f",
+        "question": "Median of [1, 4, 5, 5, 5, 11]?",
+        "options": [
+          "11",
+          "1",
+          "5.0",
+          "7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_2a0d6517",
+        "question": "Median of [3, 6, 6, 12, 12, 12]?",
+        "options": [
+          "9.0",
+          "11",
+          "12",
+          "3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_cbab4c6e",
+        "question": "Median of [1, 3, 3, 5, 8, 8]?",
+        "options": [
+          "4.0",
+          "8",
+          "1",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_67204567",
+        "question": "Median of [5, 7, 8, 10, 10, 10]?",
+        "options": [
+          "10",
+          "5",
+          "11",
+          "9.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_0cb92454",
+        "question": "Median of [4, 5, 6, 8, 9, 9]?",
+        "options": [
+          "9",
+          "4",
+          "7.0",
+          "7.0 (alt 1)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_e98db207",
+        "question": "Median of [1, 4, 5, 7, 12, 12]?",
+        "options": [
+          "6.0",
+          "1",
+          "8",
+          "12"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_d4c16d45",
+        "question": "Median of [1, 1, 7, 7, 12, 12]?",
+        "options": [
+          "1",
+          "7.0",
+          "9",
+          "12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_304af450",
+        "question": "Median of [3, 4, 5, 6, 7, 7]?",
+        "options": [
+          "5.5",
+          "5.5 (alt 1)",
+          "3",
+          "7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_db8c2316",
+        "question": "Median of [3, 5, 5, 5, 8, 10]?",
+        "options": [
+          "10",
+          "5.0",
+          "3",
+          "7"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_63bcf0fa",
+        "question": "Median of [1, 4, 5, 5, 8, 9]?",
+        "options": [
+          "7",
+          "9",
+          "1",
+          "5.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_7fa19d1e",
+        "question": "Median of [3, 5, 10, 11, 11, 11]?",
+        "options": [
+          "3",
+          "11",
+          "12",
+          "10.5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_91087a0d",
+        "question": "Median of [1, 2, 6, 6, 10, 12]?",
+        "options": [
+          "6.0",
+          "12",
+          "8",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_1ac0407b",
+        "question": "Median of [1, 2, 3, 5, 9, 10]?",
+        "options": [
+          "10",
+          "4.0",
+          "6",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_d7366b83",
+        "question": "Median of [2, 2, 3, 4, 4, 12]?",
+        "options": [
+          "12",
+          "3.5",
+          "5",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_a574b27f",
+        "question": "Median of [1, 1, 2, 3, 5, 11]?",
+        "options": [
+          "1",
+          "2.5",
+          "11",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_84a21294",
+        "question": "Median of [3, 4, 6, 8, 9, 10]?",
+        "options": [
+          "10",
+          "7.0",
+          "9",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_5f35db2e",
+        "question": "Median of [6, 8, 8, 10, 11, 11]?",
+        "options": [
+          "6",
+          "9.0 (alt 1)",
+          "9.0",
+          "11"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_e7423802",
+        "question": "Median of [2, 6, 6, 6, 7, 10]?",
+        "options": [
+          "2",
+          "10",
+          "8",
+          "6.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_02eddcff",
+        "question": "Median of [2, 5, 8, 8, 10, 12]?",
+        "options": [
+          "2",
+          "10",
+          "12",
+          "8.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_b69c9a15",
+        "question": "Median of [1, 3, 4, 8, 9, 12]?",
+        "options": [
+          "12",
+          "1",
+          "8",
+          "6.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_7d6a21a4",
+        "question": "Median of [4, 4, 5, 5, 6, 8]?",
+        "options": [
+          "8",
+          "7",
+          "5.0",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_abfbe390",
+        "question": "Median of [2, 5, 9, 10, 12, 12]?",
+        "options": [
+          "2",
+          "9.5",
+          "11",
+          "12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_e2a9a856",
+        "question": "Median of [1, 3, 5, 7, 10, 12]?",
+        "options": [
+          "12",
+          "8",
+          "1",
+          "6.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_dee3ba49",
+        "question": "Median of [4, 5, 6, 7, 8, 11]?",
+        "options": [
+          "11",
+          "6.5",
+          "8",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_efc8d37c",
+        "question": "Median of [3, 6, 10, 10, 11, 11]?",
+        "options": [
+          "3",
+          "12",
+          "10.0",
+          "11"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 6,
+        "category": "p6_t1_B",
+        "category_label": "Central Tendency · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_B_566c5907",
+        "question": "Median of [1, 4, 5, 9, 10, 10]?",
+        "options": [
+          "7.0",
+          "1",
+          "10",
+          "9"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "B",
@@ -244,6 +1764,766 @@
         "source": "chapter_seed",
         "chapter_num": 14,
         "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_d84b0b0e",
+        "question": "Median of [1, 2, 5, 6, 9, 10]?",
+        "options": [
+          "10",
+          "7",
+          "1",
+          "5.5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_0ac969aa",
+        "question": "Median of [1, 2, 6, 9, 9, 10]?",
+        "options": [
+          "10",
+          "9",
+          "7.5",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_382a3ff9",
+        "question": "Median of [7, 7, 8, 8, 8, 11]?",
+        "options": [
+          "7",
+          "10",
+          "8.0",
+          "11"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_f688cbbc",
+        "question": "Median of [1, 3, 4, 6, 6, 11]?",
+        "options": [
+          "7",
+          "5.0",
+          "11",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_bb4f2fbe",
+        "question": "Median of [2, 4, 12, 12, 12, 12]?",
+        "options": [
+          "14",
+          "12.0",
+          "2",
+          "12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_70349ac5",
+        "question": "Median of [4, 5, 6, 8, 10, 10]?",
+        "options": [
+          "9",
+          "7.0",
+          "4",
+          "10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_7285be18",
+        "question": "Median of [1, 4, 5, 6, 7, 10]?",
+        "options": [
+          "5.5",
+          "1",
+          "10",
+          "7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_0bb1b245",
+        "question": "Median of [1, 4, 6, 7, 9, 11]?",
+        "options": [
+          "6.5",
+          "11",
+          "1",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_691d5a99",
+        "question": "Median of [2, 7, 8, 9, 10, 11]?",
+        "options": [
+          "10",
+          "8.5",
+          "11",
+          "2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_09b1e9e0",
+        "question": "Median of [2, 4, 5, 7, 7, 10]?",
+        "options": [
+          "8",
+          "10",
+          "2",
+          "6.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_5513ee56",
+        "question": "Median of [2, 3, 5, 6, 7, 8]?",
+        "options": [
+          "2",
+          "5.5",
+          "7",
+          "8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_903c5063",
+        "question": "Median of [7, 7, 7, 8, 11, 11]?",
+        "options": [
+          "7.5",
+          "7",
+          "9",
+          "11"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_05aff1f9",
+        "question": "Median of [1, 2, 8, 8, 8, 12]?",
+        "options": [
+          "10",
+          "8.0",
+          "1",
+          "12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_3fb7ed57",
+        "question": "Median of [4, 5, 5, 8, 9, 9]?",
+        "options": [
+          "8",
+          "9",
+          "6.5",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_8a048e07",
+        "question": "Median of [4, 5, 6, 9, 10, 11]?",
+        "options": [
+          "11",
+          "4",
+          "9",
+          "7.5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_7c791038",
+        "question": "Median of [7, 7, 9, 10, 11, 12]?",
+        "options": [
+          "12",
+          "7",
+          "11",
+          "9.5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_7dd0efbd",
+        "question": "Median of [3, 6, 7, 7, 10, 11]?",
+        "options": [
+          "9",
+          "7.0",
+          "3",
+          "11"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_cca10b72",
+        "question": "Median of [3, 3, 4, 8, 9, 12]?",
+        "options": [
+          "8",
+          "3",
+          "12",
+          "6.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_6ee5e59f",
+        "question": "Median of [1, 1, 2, 6, 7, 8]?",
+        "options": [
+          "6",
+          "8",
+          "4.0",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_d7ac0603",
+        "question": "Median of [3, 7, 8, 8, 9, 12]?",
+        "options": [
+          "3",
+          "10",
+          "8.0",
+          "12"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_e9411c6b",
+        "question": "Median of [1, 2, 4, 9, 10, 11]?",
+        "options": [
+          "11",
+          "8",
+          "1",
+          "6.5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_b0c99d78",
+        "question": "Median of [2, 3, 7, 8, 8, 12]?",
+        "options": [
+          "7.5",
+          "2",
+          "12",
+          "9"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_e6be877c",
+        "question": "Median of [4, 5, 5, 7, 8, 11]?",
+        "options": [
+          "4",
+          "11",
+          "8",
+          "6.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_5636d500",
+        "question": "Median of [1, 3, 4, 8, 9, 12]?",
+        "options": [
+          "1",
+          "6.0",
+          "8",
+          "12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_c1a6f675",
+        "question": "Median of [2, 5, 6, 8, 9, 10]?",
+        "options": [
+          "9",
+          "2",
+          "7.0",
+          "10"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_1868fc5a",
+        "question": "Median of [2, 6, 6, 8, 8, 10]?",
+        "options": [
+          "10",
+          "9",
+          "2",
+          "7.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_bca07c0d",
+        "question": "Median of [3, 4, 9, 9, 10, 11]?",
+        "options": [
+          "9.0 (alt 1)",
+          "3",
+          "11",
+          "9.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_871d82b3",
+        "question": "Median of [4, 5, 6, 6, 8, 12]?",
+        "options": [
+          "12",
+          "4",
+          "8",
+          "6.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_71119995",
+        "question": "Median of [4, 4, 6, 6, 10, 12]?",
+        "options": [
+          "4",
+          "12",
+          "8",
+          "6.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_c005bc7d",
+        "question": "Median of [1, 2, 2, 6, 7, 12]?",
+        "options": [
+          "1",
+          "12",
+          "6",
+          "4.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_79fe2203",
+        "question": "Median of [1, 2, 5, 9, 9, 12]?",
+        "options": [
+          "7.0",
+          "1",
+          "12",
+          "9"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_fc42ed17",
+        "question": "Median of [2, 6, 8, 8, 10, 10]?",
+        "options": [
+          "8.0 (alt 1)",
+          "10",
+          "8.0",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_bd599a3f",
+        "question": "Median of [5, 6, 10, 10, 11, 12]?",
+        "options": [
+          "5",
+          "10.0 (alt 1)",
+          "12",
+          "10.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_0864eeef",
+        "question": "Median of [1, 3, 4, 8, 9, 10]?",
+        "options": [
+          "10",
+          "1",
+          "6.0",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_7c84dd95",
+        "question": "Median of [1, 2, 2, 7, 7, 9]?",
+        "options": [
+          "1",
+          "6",
+          "4.5",
+          "9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_53fcacf5",
+        "question": "Median of [1, 2, 3, 5, 8, 10]?",
+        "options": [
+          "4.0",
+          "10",
+          "1",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_7d3d9965",
+        "question": "Median of [1, 3, 4, 4, 10, 11]?",
+        "options": [
+          "4.0",
+          "6",
+          "11",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_C_00ef88db",
+        "question": "Median of [2, 2, 4, 5, 8, 10]?",
+        "options": [
+          "10",
+          "2",
+          "4.5",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 6,
+        "category": "p6_t1_C",
+        "category_label": "Central Tendency · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -326,6 +2606,546 @@
         "source": "chapter_seed",
         "chapter_num": 14,
         "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_20b2e559",
+        "question": "Mode of [2, 3, 3, 5, 5, 5, 7]?",
+        "options": [
+          "5",
+          "7",
+          "3",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_d3cd3b2f",
+        "question": "Mode of [11, 8, 6, 9, 7, 7, 7]?",
+        "options": [
+          "9",
+          "7",
+          "6",
+          "8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_b544c7b6",
+        "question": "Mode of [3, 2, 6, 4, 1, 2, 2]?",
+        "options": [
+          "1",
+          "2",
+          "4",
+          "3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_e77bb14c",
+        "question": "Mode of [3, 2, 7, 3, 5, 4, 3]?",
+        "options": [
+          "5",
+          "3",
+          "2",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_7b7c19e5",
+        "question": "Mode of [10, 9, 9, 11, 8, 9, 13]?",
+        "options": [
+          "11",
+          "8",
+          "9",
+          "10"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_e2340c34",
+        "question": "Mode of [10, 7, 6, 6, 5, 6, 8]?",
+        "options": [
+          "6",
+          "5",
+          "7",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_1481f26c",
+        "question": "Mode of [5, 9, 7, 5, 6, 4, 5]?",
+        "options": [
+          "7",
+          "4",
+          "6",
+          "5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_a5f5185d",
+        "question": "Mode of [3, 4, 5, 2, 3, 3, 7]?",
+        "options": [
+          "2",
+          "5",
+          "3",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_06c43ffd",
+        "question": "Mode of [8, 8, 8, 9, 12, 7, 10]?",
+        "options": [
+          "10",
+          "7",
+          "9",
+          "8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_efd8709a",
+        "question": "Mode of [3, 3, 7, 2, 3, 5, 4]?",
+        "options": [
+          "3",
+          "5",
+          "4",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_1030ddff",
+        "question": "Mode of [8, 9, 11, 13, 9, 10, 9]?",
+        "options": [
+          "8",
+          "9",
+          "11",
+          "10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_1ea386fb",
+        "question": "Mode of [5, 7, 6, 5, 5, 4, 9]?",
+        "options": [
+          "5",
+          "7",
+          "6",
+          "4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_2adb3f55",
+        "question": "Mode of [8, 8, 8, 9, 7, 10, 12]?",
+        "options": [
+          "8",
+          "10",
+          "7",
+          "9"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_7856474e",
+        "question": "Mode of [4, 3, 7, 3, 3, 2, 5]?",
+        "options": [
+          "4",
+          "5",
+          "3",
+          "2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_c15b0d44",
+        "question": "Mode of [8, 7, 12, 8, 9, 8, 10]?",
+        "options": [
+          "7",
+          "9",
+          "10",
+          "8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_216ffb0f",
+        "question": "Mode of [8, 6, 6, 7, 5, 6, 10]?",
+        "options": [
+          "6",
+          "8",
+          "5",
+          "7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_e9f5d19b",
+        "question": "Mode of [5, 4, 4, 6, 8, 4, 3]?",
+        "options": [
+          "5",
+          "3",
+          "4",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_ffff172f",
+        "question": "Mode of [9, 8, 10, 8, 12, 8, 7]?",
+        "options": [
+          "9",
+          "8",
+          "7",
+          "10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_0b757a2b",
+        "question": "Mode of [8, 12, 10, 8, 8, 7, 9]?",
+        "options": [
+          "9",
+          "10",
+          "7",
+          "8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_810c7b2e",
+        "question": "Mode of [4, 3, 4, 5, 6, 4, 8]?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_bc8f6ced",
+        "question": "Mode of [7, 4, 9, 5, 5, 5, 6]?",
+        "options": [
+          "7",
+          "5",
+          "4",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_f3eb627a",
+        "question": "Mode of [6, 7, 10, 6, 8, 5, 6]?",
+        "options": [
+          "8",
+          "7",
+          "6",
+          "5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_92a32c37",
+        "question": "Mode of [8, 6, 9, 7, 11, 7, 7]?",
+        "options": [
+          "8",
+          "7",
+          "9",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_29688c1d",
+        "question": "Mode of [8, 9, 7, 8, 12, 10, 8]?",
+        "options": [
+          "10",
+          "7",
+          "9",
+          "8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_14af40f1",
+        "question": "Mode of [3, 7, 4, 3, 3, 5, 2]?",
+        "options": [
+          "2",
+          "3",
+          "5",
+          "4"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_af3ce49d",
+        "question": "Mode of [8, 10, 8, 7, 8, 9, 12]?",
+        "options": [
+          "10",
+          "8",
+          "7",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_D_6045a4d7",
+        "question": "Mode of [4, 5, 9, 5, 7, 6, 5]?",
+        "options": [
+          "7",
+          "4",
+          "5",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 6,
+        "category": "p6_t1_D",
+        "category_label": "Central Tendency · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -399,6 +3219,26 @@
           "4"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 6,
+        "category": "p6_t1_E",
+        "category_label": "Central Tendency · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 14,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p6_t1_E_832ed55c",
+        "question": "Data [10, 12, 14, 100] has an outlier. Which measure of centre is least affected?",
+        "options": [
+          "Range",
+          "Median",
+          "Mean",
+          "Mode"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "E",

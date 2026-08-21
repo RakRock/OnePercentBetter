@@ -80,6 +80,466 @@
         "source": "chapter_llm",
         "chapter_num": 7,
         "chapter_ref": "Theorem 7.3"
+      },
+      {
+        "id": "p4_t2_A_8e4ff69f",
+        "question": "Sum of angles in a triangle is?",
+        "options": [
+          "270°",
+          "90°",
+          "180°",
+          "360°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_1107fe7c",
+        "question": "In a triangle, two angles are 43° and 40°. The third angle is?",
+        "options": [
+          "97°",
+          "83°",
+          "137°",
+          "90°"
+        ],
+        "answer": 0,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_199f943d",
+        "question": "In a triangle, two angles are 50° and 46°. The third angle is?",
+        "options": [
+          "96°",
+          "90°",
+          "84°",
+          "130°"
+        ],
+        "answer": 2,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_5e2a4f8e",
+        "question": "In a triangle, two angles are 51° and 44°. The third angle is?",
+        "options": [
+          "85°",
+          "129°",
+          "90°",
+          "95°"
+        ],
+        "answer": 0,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_1ff76e8d",
+        "question": "In a triangle, two angles are 60° and 67°. The third angle is?",
+        "options": [
+          "53°",
+          "90°",
+          "127°",
+          "120°"
+        ],
+        "answer": 0,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_a69ac9dd",
+        "question": "In a triangle, two angles are 66° and 33°. The third angle is?",
+        "options": [
+          "114°",
+          "81°",
+          "90°",
+          "99°"
+        ],
+        "answer": 1,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_8706dda3",
+        "question": "In a triangle, two angles are 63° and 50°. The third angle is?",
+        "options": [
+          "117°",
+          "90°",
+          "113°",
+          "67°"
+        ],
+        "answer": 3,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_13efbb04",
+        "question": "In a triangle, two angles are 61° and 48°. The third angle is?",
+        "options": [
+          "90°",
+          "119°",
+          "109°",
+          "71°"
+        ],
+        "answer": 3,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_635510b2",
+        "question": "In a triangle, two angles are 37° and 51°. The third angle is?",
+        "options": [
+          "143°",
+          "88°",
+          "92°",
+          "90°"
+        ],
+        "answer": 2,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_6d0855c9",
+        "question": "In a triangle, two angles are 31° and 41°. The third angle is?",
+        "options": [
+          "108°",
+          "90°",
+          "72°",
+          "149°"
+        ],
+        "answer": 0,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_727f2313",
+        "question": "In a triangle, two angles are 43° and 42°. The third angle is?",
+        "options": [
+          "95°",
+          "137°",
+          "90°",
+          "85°"
+        ],
+        "answer": 0,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_51cfd903",
+        "question": "In a triangle, two angles are 47° and 38°. The third angle is?",
+        "options": [
+          "133°",
+          "85°",
+          "90°",
+          "95°"
+        ],
+        "answer": 3,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_5ae10af4",
+        "question": "In a triangle, two angles are 30° and 70°. The third angle is?",
+        "options": [
+          "80°",
+          "150°",
+          "90°",
+          "100°"
+        ],
+        "answer": 0,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_b647dda7",
+        "question": "In a triangle, two angles are 56° and 63°. The third angle is?",
+        "options": [
+          "119°",
+          "124°",
+          "61°",
+          "90°"
+        ],
+        "answer": 2,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_133f1131",
+        "question": "In a triangle, two angles are 70° and 47°. The third angle is?",
+        "options": [
+          "63°",
+          "110°",
+          "117°",
+          "90°"
+        ],
+        "answer": 0,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_20f54b4b",
+        "question": "In a triangle, two angles are 60° and 34°. The third angle is?",
+        "options": [
+          "90°",
+          "86°",
+          "120°",
+          "94°"
+        ],
+        "answer": 1,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_af6baba1",
+        "question": "In a triangle, two angles are 46° and 60°. The third angle is?",
+        "options": [
+          "90°",
+          "74°",
+          "106°",
+          "134°"
+        ],
+        "answer": 1,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_507aca90",
+        "question": "In a triangle, two angles are 37° and 47°. The third angle is?",
+        "options": [
+          "96°",
+          "90°",
+          "84°",
+          "143°"
+        ],
+        "answer": 0,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_3ad67ce8",
+        "question": "In a triangle, two angles are 41° and 58°. The third angle is?",
+        "options": [
+          "90°",
+          "139°",
+          "99°",
+          "81°"
+        ],
+        "answer": 3,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_22e30700",
+        "question": "In a triangle, two angles are 34° and 54°. The third angle is?",
+        "options": [
+          "90°",
+          "88°",
+          "92°",
+          "146°"
+        ],
+        "answer": 2,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_f83dc59b",
+        "question": "In a triangle, two angles are 69° and 54°. The third angle is?",
+        "options": [
+          "57°",
+          "123°",
+          "111°",
+          "90°"
+        ],
+        "answer": 0,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_d6251340",
+        "question": "In a triangle, two angles are 57° and 53°. The third angle is?",
+        "options": [
+          "123°",
+          "90°",
+          "110°",
+          "70°"
+        ],
+        "answer": 3,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_A_ff2b6036",
+        "question": "In a triangle, two angles are 58° and 60°. The third angle is?",
+        "options": [
+          "118°",
+          "90°",
+          "62°",
+          "122°"
+        ],
+        "answer": 2,
+        "explanation": "Angles in a triangle sum to 180°.",
+        "topic": 2,
+        "level": "A",
+        "prereq_id": 4,
+        "category": "p4_t2_A",
+        "category_label": "Triangles · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -162,6 +622,406 @@
         "source": "chapter_llm",
         "chapter_num": 7,
         "chapter_ref": "Theorem 7.3"
+      },
+      {
+        "id": "p4_t2_B_aee9deff",
+        "question": "Sum of angles in a triangle is?",
+        "options": [
+          "270°",
+          "360°",
+          "90°",
+          "180°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_a0e2a0d2",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 49° and the other is 35°, the exterior angle is?",
+        "options": [
+          "90°",
+          "229°",
+          "131°",
+          "49°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_a221c054",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 77° and the other is 35°, the exterior angle is?",
+        "options": [
+          "77°",
+          "90°",
+          "103°",
+          "257°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_2ef9c5ec",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 80° and the other is 35°, the exterior angle is?",
+        "options": [
+          "260°",
+          "80°",
+          "90°",
+          "100°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_4b2191ef",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 40° and the other is 35°, the exterior angle is?",
+        "options": [
+          "220°",
+          "140°",
+          "40°",
+          "90°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_900a2e3b",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 73° and the other is 35°, the exterior angle is?",
+        "options": [
+          "73°",
+          "253°",
+          "90°",
+          "107°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_017e131e",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 78° and the other is 35°, the exterior angle is?",
+        "options": [
+          "258°",
+          "102°",
+          "90°",
+          "78°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_5249be29",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 63° and the other is 35°, the exterior angle is?",
+        "options": [
+          "90°",
+          "117°",
+          "243°",
+          "63°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_a1b6b13f",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 97° and the other is 35°, the exterior angle is?",
+        "options": [
+          "97°",
+          "83°",
+          "277°",
+          "90°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_781bc974",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 85° and the other is 35°, the exterior angle is?",
+        "options": [
+          "85°",
+          "90°",
+          "95°",
+          "265°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_271f99fa",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 98° and the other is 35°, the exterior angle is?",
+        "options": [
+          "278°",
+          "98°",
+          "90°",
+          "82°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_dbbd5a9b",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 89° and the other is 35°, the exterior angle is?",
+        "options": [
+          "90°",
+          "91°",
+          "89°",
+          "269°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_2c4356be",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 65° and the other is 35°, the exterior angle is?",
+        "options": [
+          "245°",
+          "90°",
+          "115°",
+          "65°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_5e29218f",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 51° and the other is 35°, the exterior angle is?",
+        "options": [
+          "231°",
+          "51°",
+          "129°",
+          "90°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_c6fa065c",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 56° and the other is 35°, the exterior angle is?",
+        "options": [
+          "124°",
+          "56°",
+          "90°",
+          "236°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_c7b653cf",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 71° and the other is 35°, the exterior angle is?",
+        "options": [
+          "109°",
+          "90°",
+          "71°",
+          "251°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_55cc4e0e",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 52° and the other is 35°, the exterior angle is?",
+        "options": [
+          "232°",
+          "52°",
+          "90°",
+          "128°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_b23760af",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 54° and the other is 35°, the exterior angle is?",
+        "options": [
+          "54°",
+          "126°",
+          "234°",
+          "90°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_e39fc525",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 88° and the other is 35°, the exterior angle is?",
+        "options": [
+          "92°",
+          "268°",
+          "88°",
+          "90°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_B_3d03766c",
+        "question": "An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is 93° and the other is 35°, the exterior angle is?",
+        "options": [
+          "93°",
+          "87°",
+          "273°",
+          "90°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "prereq_id": 4,
+        "category": "p4_t2_B",
+        "category_label": "Triangles · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
       }
     ],
     "C": [
@@ -244,6 +1104,106 @@
         "source": "chapter_llm",
         "chapter_num": 7,
         "chapter_ref": "Ex 7.1 Q5 style"
+      },
+      {
+        "id": "p4_t2_C_c53956d1",
+        "question": "Sum of angles in a triangle is?",
+        "options": [
+          "180°",
+          "90°",
+          "270°",
+          "360°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t2_C",
+        "category_label": "Triangles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_C_29cd06d7",
+        "question": "Which congruence rule uses three pairs of equal sides?",
+        "options": [
+          "AAA",
+          "ASS",
+          "SSS",
+          "SSA"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t2_C",
+        "category_label": "Triangles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_C_192354f3",
+        "question": "Which congruence rule is listed: ASA?",
+        "options": [
+          "SSS",
+          "AAA",
+          "SAS",
+          "ASA"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t2_C",
+        "category_label": "Triangles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_C_9e72541a",
+        "question": "Which congruence rule is listed: SSS?",
+        "options": [
+          "AAA",
+          "SAS",
+          "ASA",
+          "SSS"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t2_C",
+        "category_label": "Triangles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_C_f12f3999",
+        "question": "Which congruence rule is listed: SAS?",
+        "options": [
+          "SSS",
+          "ASA",
+          "SAS",
+          "AAA"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "prereq_id": 4,
+        "category": "p4_t2_C",
+        "category_label": "Triangles · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -326,6 +1286,206 @@
         "source": "chapter_llm",
         "chapter_num": 7,
         "chapter_ref": "Example 4"
+      },
+      {
+        "id": "p4_t2_D_11498ca5",
+        "question": "Sum of angles in a triangle is?",
+        "options": [
+          "270°",
+          "90°",
+          "360°",
+          "180°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_D_3c701008",
+        "question": "In an isosceles triangle, each base angle is 7°. The vertex angle is?",
+        "options": [
+          "83°",
+          "14°",
+          "7°",
+          "166°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_D_be379dc4",
+        "question": "In an isosceles triangle, each base angle is 11°. The vertex angle is?",
+        "options": [
+          "79°",
+          "22°",
+          "11°",
+          "158°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_D_50621e76",
+        "question": "In an isosceles triangle, each base angle is 5°. The vertex angle is?",
+        "options": [
+          "170°",
+          "10°",
+          "85°",
+          "5°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_D_35bede37",
+        "question": "In an isosceles triangle, each base angle is 9°. The vertex angle is?",
+        "options": [
+          "18°",
+          "9°",
+          "162°",
+          "81°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_D_3e585a94",
+        "question": "In an isosceles triangle, each base angle is 4°. The vertex angle is?",
+        "options": [
+          "172°",
+          "86°",
+          "4°",
+          "8°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_D_5e0c045a",
+        "question": "In an isosceles triangle, each base angle is 8°. The vertex angle is?",
+        "options": [
+          "164°",
+          "16°",
+          "82°",
+          "8°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_D_c168dc7c",
+        "question": "In an isosceles triangle, each base angle is 12°. The vertex angle is?",
+        "options": [
+          "24°",
+          "156°",
+          "78°",
+          "12°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_D_777959ab",
+        "question": "In an isosceles triangle, each base angle is 10°. The vertex angle is?",
+        "options": [
+          "10°",
+          "80°",
+          "20°",
+          "160°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_D_3ddda288",
+        "question": "In an isosceles triangle, each base angle is 6°. The vertex angle is?",
+        "options": [
+          "84°",
+          "6°",
+          "168°",
+          "12°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "prereq_id": 4,
+        "category": "p4_t2_D",
+        "category_label": "Triangles · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -408,6 +1568,46 @@
         "source": "chapter_llm",
         "chapter_num": 7,
         "chapter_ref": "Theorem 7.2"
+      },
+      {
+        "id": "p4_t2_E_f227c461",
+        "question": "Sum of angles in a triangle is?",
+        "options": [
+          "180°",
+          "270°",
+          "360°",
+          "90°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t2_E",
+        "category_label": "Triangles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p4_t2_E_12f2e5c1",
+        "question": "Can a triangle have sides 5, 7, and 10?",
+        "options": [
+          "Yes",
+          "No",
+          "Maybe",
+          "Only if right-angled"
+        ],
+        "answer": 1,
+        "explanation": "Check triangle inequality: 5 + 7 > 10 fails.",
+        "topic": 2,
+        "level": "E",
+        "prereq_id": 4,
+        "category": "p4_t2_E",
+        "category_label": "Triangles · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 7,
+        "chapter_ref": ""
       }
     ]
   },

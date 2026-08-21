@@ -80,6 +80,106 @@
         "source": "chapter_llm",
         "chapter_num": 12,
         "chapter_ref": "Ex 12.1 Q5"
+      },
+      {
+        "id": "p5_t1_A_7c91a33b",
+        "question": "Triangle sides 3, 4, 5. Semi-perimeter s = ?",
+        "options": [
+          "5",
+          "7",
+          "6",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "s = (a + b + c)/2.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 5,
+        "category": "p5_t1_A",
+        "category_label": "Heron · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_A_f99b2f54",
+        "question": "Triangle sides 5, 5, 6. Semi-perimeter s = ?",
+        "options": [
+          "8",
+          "9",
+          "10",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "s = (a + b + c)/2.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 5,
+        "category": "p5_t1_A",
+        "category_label": "Heron · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_A_afa9b0e4",
+        "question": "Triangle sides 7, 8, 9. Semi-perimeter s = ?",
+        "options": [
+          "9",
+          "13",
+          "15",
+          "12"
+        ],
+        "answer": 3,
+        "explanation": "s = (a + b + c)/2.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 5,
+        "category": "p5_t1_A",
+        "category_label": "Heron · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_A_47b7a416",
+        "question": "Triangle sides 6, 8, 10. Semi-perimeter s = ?",
+        "options": [
+          "14",
+          "12",
+          "13",
+          "10"
+        ],
+        "answer": 1,
+        "explanation": "s = (a + b + c)/2.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 5,
+        "category": "p5_t1_A",
+        "category_label": "Heron · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_A_944a0a8e",
+        "question": "Triangle sides 5, 12, 13. Semi-perimeter s = ?",
+        "options": [
+          "13",
+          "15",
+          "17",
+          "16"
+        ],
+        "answer": 1,
+        "explanation": "s = (a + b + c)/2.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 5,
+        "category": "p5_t1_A",
+        "category_label": "Heron · Level A",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
       }
     ],
     "B": [
@@ -162,6 +262,106 @@
         "source": "chapter_llm",
         "chapter_num": 12,
         "chapter_ref": "Ex 12.1 Q4"
+      },
+      {
+        "id": "p5_t1_B_55a6a7cb",
+        "question": "Area of triangle with sides 6, 8, 10 (Heron's formula)?",
+        "options": [
+          "25",
+          "26",
+          "24",
+          "29"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 5,
+        "category": "p5_t1_B",
+        "category_label": "Heron · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_B_ad552627",
+        "question": "Area of triangle with sides 7, 8, 9 (Heron's formula)?",
+        "options": [
+          "26.8 (alt 1)",
+          "31",
+          "26.8",
+          "28"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 5,
+        "category": "p5_t1_B",
+        "category_label": "Heron · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_B_8846e01e",
+        "question": "Area of triangle with sides 5, 12, 13 (Heron's formula)?",
+        "options": [
+          "30",
+          "32",
+          "35",
+          "31"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 5,
+        "category": "p5_t1_B",
+        "category_label": "Heron · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_B_627712b0",
+        "question": "Area of triangle with sides 3, 4, 5 (Heron's formula)?",
+        "options": [
+          "11",
+          "7",
+          "8",
+          "6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 5,
+        "category": "p5_t1_B",
+        "category_label": "Heron · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_B_2461d5d4",
+        "question": "Area of triangle with sides 5, 5, 6 (Heron's formula)?",
+        "options": [
+          "12.5",
+          "14",
+          "17",
+          "12"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 5,
+        "category": "p5_t1_B",
+        "category_label": "Heron · Level B",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
       }
     ],
     "C": [
@@ -244,6 +444,106 @@
         "source": "chapter_llm",
         "chapter_num": 12,
         "chapter_ref": "Exercise 12.1 Q5"
+      },
+      {
+        "id": "p5_t1_C_b1e6bf5b",
+        "question": "Area of triangle with sides 3, 4, 5 (Heron's formula)? sq units",
+        "options": [
+          "8",
+          "6",
+          "7",
+          "11"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 5,
+        "category": "p5_t1_C",
+        "category_label": "Heron · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_C_f885666b",
+        "question": "Area of triangle with sides 6, 8, 10 (Heron's formula)? sq units",
+        "options": [
+          "24",
+          "26",
+          "25",
+          "29"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 5,
+        "category": "p5_t1_C",
+        "category_label": "Heron · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_C_e7084e17",
+        "question": "Area of triangle with sides 7, 8, 9 (Heron's formula)? sq units",
+        "options": [
+          "31",
+          "26.8",
+          "26.8 (alt 1)",
+          "28"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 5,
+        "category": "p5_t1_C",
+        "category_label": "Heron · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_C_63efecd7",
+        "question": "Area of triangle with sides 5, 5, 6 (Heron's formula)? sq units",
+        "options": [
+          "14",
+          "12",
+          "17",
+          "12.5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 5,
+        "category": "p5_t1_C",
+        "category_label": "Heron · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_C_d9065148",
+        "question": "Area of triangle with sides 5, 12, 13 (Heron's formula)? sq units",
+        "options": [
+          "35",
+          "30",
+          "31",
+          "32"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "prereq_id": 5,
+        "category": "p5_t1_C",
+        "category_label": "Heron · Level C",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
       }
     ],
     "D": [
@@ -326,6 +626,106 @@
         "source": "chapter_llm",
         "chapter_num": 12,
         "chapter_ref": "Ex 12.1 Q5 style"
+      },
+      {
+        "id": "p5_t1_D_dd46523b",
+        "question": "Area of triangle with sides 3, 4, 5 (Heron's formula)?",
+        "options": [
+          "8",
+          "6",
+          "7",
+          "11"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 5,
+        "category": "p5_t1_D",
+        "category_label": "Heron · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_D_15e2d0bf",
+        "question": "Area of triangle with sides 6, 8, 10 (Heron's formula)?",
+        "options": [
+          "29",
+          "25",
+          "24",
+          "26"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 5,
+        "category": "p5_t1_D",
+        "category_label": "Heron · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_D_af4bc579",
+        "question": "Area of triangle with sides 5, 12, 13 (Heron's formula)?",
+        "options": [
+          "31",
+          "32",
+          "35",
+          "30"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 5,
+        "category": "p5_t1_D",
+        "category_label": "Heron · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_D_d93e4fc7",
+        "question": "Area of triangle with sides 5, 5, 6 (Heron's formula)?",
+        "options": [
+          "17",
+          "14",
+          "12.5",
+          "12"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 5,
+        "category": "p5_t1_D",
+        "category_label": "Heron · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_D_caf02fd8",
+        "question": "Area of triangle with sides 7, 8, 9 (Heron's formula)?",
+        "options": [
+          "26.8",
+          "31",
+          "26.8 (alt 1)",
+          "28"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "prereq_id": 5,
+        "category": "p5_t1_D",
+        "category_label": "Heron · Level D",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
       }
     ],
     "E": [
@@ -408,6 +808,106 @@
         "source": "chapter_llm",
         "chapter_num": 12,
         "chapter_ref": "Example 5"
+      },
+      {
+        "id": "p5_t1_E_9f205878",
+        "question": "Area of triangle with sides 7, 8, 9 (Heron's formula)?",
+        "options": [
+          "28",
+          "31",
+          "26.8",
+          "26.8 (alt 1)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 5,
+        "category": "p5_t1_E",
+        "category_label": "Heron · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_E_a215ca82",
+        "question": "Area of triangle with sides 5, 12, 13 (Heron's formula)?",
+        "options": [
+          "30",
+          "31",
+          "35",
+          "32"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 5,
+        "category": "p5_t1_E",
+        "category_label": "Heron · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_E_341bf77e",
+        "question": "Area of triangle with sides 3, 4, 5 (Heron's formula)?",
+        "options": [
+          "7",
+          "8",
+          "11",
+          "6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 5,
+        "category": "p5_t1_E",
+        "category_label": "Heron · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_E_54f194bf",
+        "question": "Area of triangle with sides 5, 5, 6 (Heron's formula)?",
+        "options": [
+          "17",
+          "12",
+          "12.5",
+          "14"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 5,
+        "category": "p5_t1_E",
+        "category_label": "Heron · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
+      },
+      {
+        "id": "p5_t1_E_1ea0b126",
+        "question": "Area of triangle with sides 6, 8, 10 (Heron's formula)?",
+        "options": [
+          "29",
+          "26",
+          "24",
+          "25"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "prereq_id": 5,
+        "category": "p5_t1_E",
+        "category_label": "Heron · Level E",
+        "source": "chapter_seed",
+        "chapter_num": 12,
+        "chapter_ref": ""
       }
     ]
   },
