@@ -924,13 +924,14 @@ def _gen_p4_t4(level: str) -> dict:
             diagram={"type": "circle", "variant": "basic"},
         )
     if level == "B":
-        angle = random.randint(30, 120)
-        opts, ans = _shuffle_options(f"{angle}°", [f"{180 - angle}°", f"{angle / 2}°", f"{360 - angle}°"])
+        angle = random.randrange(40, 122, 2)
+        half = angle // 2
+        opts, ans = _shuffle_options(f"{half}°", [f"{angle}°", f"{180 - angle}°", f"{half + angle}°"])
         return _mcq(
             4, 4, level,
             f"An angle of {angle}° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
             opts, ans, "Angle at circumference is half the angle at centre.",
-            diagram={"type": "circle", "variant": "center_angle", "angle": angle},
+            diagram={"type": "circle", "variant": "center_angle", "angle": angle, "hide_center_label": True},
         )
     if level == "C":
         opts, ans = _shuffle_options("Opposite angles sum to 180°", ["All angles equal", "Adjacent angles equal", "Diagonals equal"])

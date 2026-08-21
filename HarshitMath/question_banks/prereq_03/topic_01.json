@@ -1005,15 +1005,15 @@
       },
       {
         "id": "p3_t1_B_5a0ab7a9",
-        "question": "Which point lies at (4, -2) on the coordinate plane?",
+        "question": "Point P is marked on the coordinate plane. What are its coordinates?",
         "options": [
           "(4, -2)",
           "(2, 4)",
-          "( -2, 4)",
+          "(-2, 4)",
           "(4, 2)"
         ],
         "answer": 0,
-        "explanation": "The Cartesian system from Descartes allows locating any point using its coordinates as shown in the chapter.",
+        "explanation": "Read the x-coordinate (4 units right) and y-coordinate (2 units down) from the graph.",
         "topic": 1,
         "level": "B",
         "prereq_id": 3,
@@ -1021,7 +1021,8 @@
         "category_label": "Plot Points · Level B",
         "source": "chapter_llm",
         "chapter_num": 3,
-        "chapter_ref": "Ch 3 intro"
+        "chapter_ref": "Ch 3 intro",
+        "diagram": {"type": "coordinate_plane", "x": 4, "y": -2, "mode": "read_coords"}
       },
       {
         "id": "p3_t1_B_a1b8cef6",

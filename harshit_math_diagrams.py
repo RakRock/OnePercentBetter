@@ -499,4 +499,4 @@ def enrich_question(question: dict, *, rewrite_prompt: bool = True) -> dict:
         if spec.get("type") in ("unit_square", "sqrt_number_line", "sqrt_extend"):
             if _needs_option_fix(out, spec):
                 _fix_options_for_diagram(out, spec)
-    return fix_quadrant_question(out)
+    return hgd.fix_circle_center_angle_question(fix_quadrant_question(out))

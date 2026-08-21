@@ -119,27 +119,56 @@ def svg_triangle(
     return _svg_wrap(parts)
 
 
-def svg_circle(*, variant: str = "basic", angle: int | None = None) -> str:
+def svg_circle(*, variant: str = "basic", angle: int | None = None, hide_center_label: bool = False) -> str:
     cx, cy, r = 200, 135, 78
+
+    def _pt(deg: float) -> tuple[float, float]:
+        rad = math.radians(deg)
+        return cx + r * math.cos(rad), cy - r * math.sin(rad)
+
+    if variant == "center_angle":
+        central = int(angle or 90)
+        a_deg = 215.0
+        b_deg = a_deg + central
+        ax, ay = _pt(a_deg)
+        bx, by = _pt(b_deg)
+        p_deg = a_deg + central / 2 + 180
+        px, py = _pt(p_deg)
+        parts = [
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>',
+            _segment((cx, cy), (ax, ay), stroke="#2563eb"),
+            _segment((cx, cy), (bx, by), stroke="#2563eb"),
+            _segment((ax, ay), (bx, by), stroke="#7c3aed", dash="5 3"),
+            _segment((px, py), (ax, ay), stroke="#94a3b8"),
+            _segment((px, py), (bx, by), stroke="#94a3b8"),
+            _label(cx - 10, cy + 6, "O"),
+            _label(ax - 12, ay + 4, "A"),
+            _label(bx + 10, by + 4, "B"),
+            _label(px + 10, py - 6, "P", color="#dc2626"),
+            _label(px - 8, py + 14, "?", color="#dc2626", size=17),
+        ]
+        if not hide_center_label and angle is not None:
+            parts.append(_label(cx - 28, cy - 36, f"{central}°", color="#2563eb", size=13))
+        parts.append(_label(200, 24, "Find ∠APB — P is on the major arc", size=12, color="#64748b"))
+        return _svg_wrap(parts)
+
     parts = [
         f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>',
         _segment((cx, cy), (cx + r, cy), stroke="#dc2626"),
         _label(cx + r / 2, cy + 18, "r", color="#dc2626"),
         _label(cx - 6, cy + 6, "O"),
     ]
-    if variant in ("chord", "center_angle", "cyclic"):
-        ax, ay = cx + r * math.cos(math.radians(-35)), cy + r * math.sin(math.radians(-35))
-        bx, by = cx + r * math.cos(math.radians(145)), cy + r * math.sin(math.radians(145))
+    if variant in ("chord", "cyclic"):
+        ax, ay = _pt(-35)
+        bx, by = _pt(145)
         parts.append(_segment((ax, ay), (bx, by), stroke="#7c3aed", dash="5 3"))
         parts.append(_label(ax + 8, ay, "A"))
         parts.append(_label(bx - 8, by, "B"))
-    if variant == "center_angle" and angle is not None:
-        parts.append(_label(cx, cy - r - 8, f"∠AOB = {angle}°", color="#dc2626"))
     if variant == "cyclic":
-        qx, qy = cx + r * math.cos(math.radians(60)), cy + r * math.sin(math.radians(60))
-        px, py = cx + r * math.cos(math.radians(200)), cy + r * math.sin(math.radians(200))
-        rx, ry = cx + r * math.cos(math.radians(300)), cy + r * math.sin(math.radians(300))
-        sx, sy = cx + r * math.cos(math.radians(120)), cy + r * math.sin(math.radians(120))
+        qx, qy = _pt(60)
+        px, py = _pt(200)
+        rx, ry = _pt(300)
+        sx, sy = _pt(120)
         parts.append(_polygon([(px, py), (qx, qy), (rx, ry), (sx, sy)], fill="none", stroke="#059669"))
         parts.append(_label(200, 24, "Cyclic quadrilateral", size=12, color="#64748b"))
     else:
@@ -211,6 +240,40 @@ def _parse_one_angle(text: str) -> int | None:
     return int(m.group(1)) if m else None
 
 
+def _angle_option_value(opt: str) -> float | None:
+    m = re.search(r"(-?\d+(?:\.\d+)?)\s*°", str(opt))
+    return float(m.group(1)) if m else None
+
+
+def _half_angle_answer_index(options: list[str], center: int | float) -> int | None:
+    target = float(center) / 2
+    for i, opt in enumerate(options):
+        val = _angle_option_value(opt)
+        if val is not None and abs(val - target) < 0.01:
+            return i
+    return None
+
+
+def fix_circle_center_angle_question(question: dict) -> dict:
+    """Fix wrong answer keys and diagram labels for angle-at-centre vs circumference MCQs."""
+    text = str(question.get("question", ""))
+    lower = text.lower()
+    if "subtended at the centre" not in lower or "half of this" not in lower:
+        return question
+    center = _parse_one_angle(text)
+    if center is None:
+        return question
+    out = dict(question)
+    opts = [str(o).strip() for o in out.get("options", [])]
+    idx = _half_angle_answer_index(opts, center)
+    if idx is not None:
+        out["answer"] = idx
+    spec = out.get("diagram")
+    if isinstance(spec, dict) and spec.get("variant") == "center_angle":
+        out["diagram"] = {**spec, "hide_center_label": True}
+    return out
+
+
 def infer_geometry_diagram(question: dict) -> dict | None:
     """Attach a geometry diagram to PreReq 4 questions from wording or topic."""
     if int(question.get("prereq_id", 0)) != 4:
@@ -246,7 +309,13 @@ def infer_geometry_diagram(question: dict) -> dict | None:
         elif "chord" in lower or "subtend" in lower:
             variant = "center_angle" if "centre" in lower or "center" in lower else "chord"
         angle = _parse_one_angle(text)
-        return {"type": "circle", "variant": variant, "angle": angle}
+        hide_label = variant == "center_angle" and angle is not None and "half of this" in lower
+        return {
+            "type": "circle",
+            "variant": variant,
+            "angle": angle,
+            "hide_center_label": hide_label,
+        }
 
     if "parallel" in lower and ("transversal" in lower or "co-interior" in lower):
         return {"type": "parallel_transversal", "angle": _parse_one_angle(text)}
@@ -295,7 +364,11 @@ def render_geometry_svg(spec: dict) -> str | None:
             exterior=bool(spec.get("exterior")),
         )
     if kind == "circle":
-        return svg_circle(variant=str(spec.get("variant", "basic")), angle=spec.get("angle"))
+        return svg_circle(
+            variant=str(spec.get("variant", "basic")),
+            angle=spec.get("angle"),
+            hide_center_label=bool(spec.get("hide_center_label")),
+        )
     if kind == "parallel_transversal":
         return svg_parallel_transversal(angle=spec.get("angle"))
     if kind == "intersecting_lines":
