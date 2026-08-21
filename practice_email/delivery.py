@@ -146,6 +146,10 @@ def send_report(
             error=config_err or format_config_error(settings),
         )
 
+    failed = report.get("failed_questions")
+    if failed is None and questions and answers:
+        failed = build_failed_questions(questions, answers)
+
     subject, plain, html = format_practice_report_email(
         student_name=student_name,
         unit_title=unit_title,
@@ -154,7 +158,7 @@ def send_report(
         time_spent_seconds=time_spent_seconds,
         when=when,
         session_meta=session_meta,
-        failed_questions=build_failed_questions(questions, answers) if questions and answers else None,
+        failed_questions=failed,
         program_name=program_name,
         report_heading=report_heading,
     )

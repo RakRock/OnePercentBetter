@@ -456,3 +456,20 @@ def generate_session_questions(
 
     random.shuffle(questions)
     return questions[:count]
+
+
+def generate_session_questions_raw(
+    xai_api_key: str,
+    prereq_id: int,
+    config: dict,
+    count: int,
+) -> list[dict]:
+    """LLM batch in slot order — validation/dedup handled by practice_quality assembler."""
+    config = {**config, "prereq_id": prereq_id}
+    slots = _slot_plan(config, count)
+    if not slots:
+        return []
+    batch = _generate_batch_call(xai_api_key, prereq_id, slots)
+    if batch:
+        _cache_generated_to_bank(prereq_id, batch)
+    return batch[:count]

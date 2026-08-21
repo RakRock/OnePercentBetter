@@ -307,3 +307,59 @@ def generate_session_questions(
         return fallback(config, count)
 
     raise ValueError(last_error or "LLM question generation failed")
+
+
+def generate_session_questions_raw(
+    xai_api_key: str,
+    config: dict,
+    count: int,
+) -> list[dict]:
+    """
+    LLM generation only — returns slot-ordered questions without dedup/QA.
+    Caller (practice_quality.assembler) validates and replaces duplicates.
+    """
+    slots = _slot_plan(config, count)
+    if not slots:
+        return []
+
+    client = _get_client(xai_api_key)
+    seed = random.randint(1000, 9999)
+    user_msg = _build_user_message(slots, seed)
+    last_error: str | None = None
+
+    for attempt in range(_MAX_RETRIES):
+        try:
+            response = client.chat.completions.create(
+                model=XAI_MODEL,
+                messages=[
+                    {"role": "system", "content": _system_prompt()},
+                    {"role": "user", "content": user_msg},
+                ],
+                max_tokens=4500,
+                temperature=0.85,
+            )
+            raw = response.choices[0].message.content.strip()
+            parsed = _parse_llm_questions(raw, slots)
+            questions: list[dict] = []
+            for i, slot in enumerate(slots):
+                try:
+                    questions.append(_to_session_question(parsed[i], slot))
+                except (ValueError, KeyError):
+                    fallback_q = _procedural_for_slot(slot)
+                    if fallback_q:
+                        questions.append(fallback_q)
+            if len(questions) >= count:
+                return questions[:count]
+            raise ValueError("Too many LLM questions failed parsing")
+        except (APIConnectionError, APITimeoutError, OpenAIError) as exc:
+            last_error = str(exc)
+            break
+        except (ValueError, json.JSONDecodeError, KeyError, IndexError, TypeError) as exc:
+            last_error = str(exc)
+            user_msg = (
+                _build_user_message(slots, seed)
+                + f"\n\nYour previous response was invalid ({last_error}). "
+                "Use separate instruction and equation fields. Return ONLY a valid JSON array."
+            )
+
+    raise ValueError(last_error or "LLM question generation failed")

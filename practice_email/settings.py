@@ -121,7 +121,10 @@ def _first_real_value(*candidates: object, default: str = "") -> str:
 def _get(toml: dict, key: str, default: str = "") -> str:
     """Merge st.secrets, secrets.toml, and env — skip empty/placeholder overrides."""
     file_val = toml.get(key) if key in toml else None
-    return _first_real_value(_streamlit_secret(key), file_val, os.environ.get(key), default=default)
+    st_val = _streamlit_secret(key)
+    if _is_placeholder(st_val):
+        st_val = None
+    return _first_real_value(st_val, file_val, os.environ.get(key), default=default)
 
 
 def in_streamlit_runtime() -> bool:
@@ -307,7 +310,8 @@ def format_config_error(settings: EmailSettings | None = None, mode: str | None 
     if transport == "auto" and not lines:
         lines.append(
             "Email transport is set to auto but neither Gmail API nor SMTP is fully configured. "
-            "Recommended: add [gmail_oauth] and keep PRACTICE_EMAIL_TRANSPORT = \"auto\"."
+            "Recommended: add [gmail_oauth] or set SMTP_USER + SMTP_PASSWORD in "
+            "`.streamlit/secrets.toml`, then restart the app."
         )
 
     return " ".join(lines) if lines else "Email is not configured."

@@ -565,7 +565,7 @@ def render_practice():
     else:
         answers = st.session_state.get("leq_answers", [])
         time_spent = int(time.time() - st.session_state.leq_start_time) if st.session_state.get("leq_start_time") else 0
-        report = leqp.build_session_report(questions, answers)
+        report = leqp.build_session_report(questions, answers, student_name=name or "Student")
         meta = leqp.session_meta_from_config(config)
 
         st.balloons()

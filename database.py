@@ -149,6 +149,12 @@ def init_db():
                 FOREIGN KEY (user_id) REFERENCES users(id)
             );
 
+            CREATE TABLE IF NOT EXISTS gss_push_state (
+                state_key TEXT PRIMARY KEY,
+                state_value TEXT NOT NULL,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+
             CREATE TABLE IF NOT EXISTS harshit_math_progress (
                 user_id INTEGER NOT NULL,
                 phase_id TEXT NOT NULL DEFAULT 'phase1',
@@ -1083,6 +1089,29 @@ def import_daily_login(user_id: int, log_date: str) -> bool:
             (user_id, log_date),
         )
         return cur.rowcount > 0
+
+
+def gss_push_state_get(key: str) -> str | None:
+    """Return cached Google Sheets row pointer / push marker, if any."""
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT state_value FROM gss_push_state WHERE state_key = ?",
+            (key,),
+        ).fetchone()
+    return str(row["state_value"]) if row else None
+
+
+def gss_push_state_set(key: str, value: str) -> None:
+    """Remember a Google Sheets push marker or row index locally."""
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO gss_push_state (state_key, state_value, updated_at)
+               VALUES (?, ?, ?)
+               ON CONFLICT(state_key) DO UPDATE SET
+                 state_value = excluded.state_value,
+                 updated_at = excluded.updated_at""",
+            (key, value, datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
+        )
 
 
 def _sync_id_exists(table: str, sync_id: str) -> bool:

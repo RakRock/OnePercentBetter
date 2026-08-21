@@ -9,6 +9,8 @@ import database as db
 import harshit_chapter_questions as hcq
 import harshit_math_diagrams as hmd
 import harshit_prereq_topics as hpt
+from practice_quality.assembler import qa_and_assemble
+from practice_quality.report import build_learning_report
 
 STRENGTH_THRESHOLD_PCT = 80
 DEFAULT_QUESTION_COUNT = 15
@@ -26,6 +28,26 @@ def _active_slots(prereq_id: int, config: dict) -> list[tuple[int, str]]:
     return slots
 
 
+def _slot_plan(prereq_id: int, config: dict, count: int) -> list[tuple[int, str]]:
+    slots = _active_slots(prereq_id, config)
+    if not slots:
+        return []
+    cycle = slots * ((count // len(slots)) + 1)
+    random.shuffle(cycle)
+    return cycle[:count]
+
+
+def _slot_dict(prereq_id: int, topic_id: int, level: str) -> dict:
+    return {
+        "prereq_id": prereq_id,
+        "topic": topic_id,
+        "level": level,
+        "category": f"p{prereq_id}_t{topic_id}_{level}",
+        "category_label": hpt.format_topic_level_label(prereq_id, topic_id, level),
+        "question_type": "mcq",
+    }
+
+
 def _question_key(q: dict) -> str:
     return hcq.question_dedup_key(str(q.get("question", "")))
 
@@ -36,6 +58,19 @@ def _is_fresh(q: dict | None, used_ids: set[str], used_keys: set[str]) -> bool:
     if q.get("id") in used_ids:
         return False
     return _question_key(q) not in used_keys
+
+
+def _generate_for_slot(slot: dict, used_ids: set[str], seen_fps: set[str]) -> dict | None:
+    prereq_id = int(slot["prereq_id"])
+    topic_id = int(slot["topic"])
+    level = str(slot["level"])
+    used_keys = seen_fps  # assembler tracks fingerprints; bank uses text keys too
+    q = _generate_one(prereq_id, topic_id, level, used_ids, used_keys)
+    if q:
+        q = dict(q)
+        q.setdefault("category", slot["category"])
+        q.setdefault("category_label", slot["category_label"])
+    return q
 
 
 def _track_question(q: dict, used_ids: set[str], used_keys: set[str]) -> None:
@@ -207,8 +242,7 @@ def build_session_set(
     user_id: int | None = None,
 ) -> tuple[list[dict], str]:
     config = {**config, "prereq_id": prereq_id}
-    slots = _active_slots(prereq_id, config)
-    if not slots:
+    if not _active_slots(prereq_id, config):
         warmups = _build_warmups(prereq_id, config, xai_api_key=xai_api_key)
         warmups = [_enrich_question(q) for q in warmups]
         return warmups, ""
@@ -216,72 +250,56 @@ def build_session_set(
     prefer_llm = bool(config.get("use_chapter_llm", True))
     api_key = xai_api_key or os.environ.get("XAI_API_KEY", "").strip() or None
 
-    selected: list[dict] = []
     used_ids: set[str] = set()
-    used_keys: set[str] = set()
+    seen_fps: set[str] = set()
     grok_error = ""
     if user_id:
         recent_ids, recent_text = db.get_recent_harshit_practice_exclusions(user_id, prereq_id)
         used_ids.update(recent_ids)
-        used_keys.update(hcq.question_dedup_key(t) for t in recent_text)
+        for t in recent_text:
+            seen_fps.add(hcq.question_dedup_key(t))
+
+    plan = _slot_plan(prereq_id, config, count)
+    slot_dicts = [_slot_dict(prereq_id, tid, lvl) for tid, lvl in plan]
+    initial: list[dict | None] = [None] * len(slot_dicts)
 
     if prefer_llm and api_key:
         import harshit_prereq_llm as hllm
 
-        fresh_only = bool(config.get("grok_fresh_only", False))
-        fallback = None if fresh_only else _template_session
-        for attempt, exclusions in enumerate(
-            ((set(used_ids), set(used_keys)), (set(), set())) if fresh_only else ((set(used_ids), set(used_keys)),)
-        ):
-            try:
-                llm_qs = hllm.generate_session_questions(
-                    api_key,
-                    prereq_id,
-                    config,
-                    count,
-                    fallback=fallback,
-                    exclude_ids=exclusions[0],
-                    exclude_text=exclusions[1],
-                    max_rounds=1,
-                )
-                for q in llm_qs:
-                    if _is_fresh(q, used_ids, used_keys):
-                        selected.append(q)
-                        _track_question(q, used_ids, used_keys)
-                if len(selected) >= count or not fresh_only:
-                    break
-            except ValueError as exc:
-                grok_error = str(exc)
-                if fresh_only and attempt == 0 and exclusions[0]:
-                    continue
-                break
-
-        if not fresh_only and len(selected) < count:
-            extra = _fill_from_bank_and_templates(
+        try:
+            batch = hllm.generate_session_questions_raw(
+                api_key,
                 prereq_id,
                 config,
-                count - len(selected),
-                used_ids=used_ids,
-                used_keys=used_keys,
+                count,
             )
-            selected.extend(extra)
-    else:
-        selected = _fill_from_bank_and_templates(
-            prereq_id,
-            config,
-            count,
-            used_ids=used_ids,
-            used_keys=used_keys,
-        )
+            for i, q in enumerate(batch[: len(slot_dicts)]):
+                initial[i] = q
+        except ValueError as exc:
+            grok_error = str(exc)
 
-    random.shuffle(selected)
-    main = [_enrich_question(q) for q in selected[:count]]
+    try:
+        main = qa_and_assemble(
+            slot_dicts,
+            _generate_for_slot,
+            initial=initial,
+            exclude_ids=used_ids,
+            exclude_keys=seen_fps,
+            program="harshit",
+        )
+    except ValueError as exc:
+        grok_error = grok_error or str(exc)
+        main = _fill_from_bank_and_templates(
+            prereq_id, config, count, used_ids=used_ids, used_keys=seen_fps
+        )[:count]
+
+    main = [_enrich_question(q) for q in main[:count]]
     warmups = _build_warmups(
         prereq_id,
         config,
         xai_api_key=api_key if prefer_llm else None,
         used_ids=used_ids,
-        used_keys=used_keys,
+        used_keys=seen_fps,
     )
     warmups = [_enrich_question(q) for q in warmups]
     questions = warmups + main if warmups else main
@@ -297,51 +315,13 @@ def _enrich_question(q: dict) -> dict:
         return q
 
 
-def build_session_report(questions: list[dict], answers: list[dict]) -> dict:
-    by_key: dict[str, dict] = {}
-    for q, ans in zip(questions, answers):
-        key = q.get("category") or "unknown"
-        bucket = by_key.setdefault(
-            key,
-            {"correct": 0, "total": 0, "label": q.get("category_label", key)},
-        )
-        bucket["total"] += 1
-        if ans.get("correct"):
-            bucket["correct"] += 1
-
-    strengths: list[dict] = []
-    needs_revision: list[dict] = []
-    for key, stats in by_key.items():
-        pct = int(100 * stats["correct"] / stats["total"]) if stats["total"] else 0
-        emoji = "⚡" if "Warm-up" in stats["label"] else "📘"
-        entry = {
-            "category": key,
-            "name": stats["label"],
-            "emoji": emoji,
-            "correct": stats["correct"],
-            "total": stats["total"],
-            "pct": pct,
-            "tip": f"Review {stats['label']} in your NCERT notes.",
-        }
-        if pct >= STRENGTH_THRESHOLD_PCT:
-            strengths.append(entry)
-        else:
-            needs_revision.append(entry)
-
-    strengths.sort(key=lambda x: (-x["pct"], x["name"]))
-    needs_revision.sort(key=lambda x: (x["pct"], x["name"]))
-    correct_count = sum(1 for a in answers if a.get("correct"))
-    total = len(answers)
-    score_pct = int(100 * correct_count / total) if total else 0
-
-    return {
-        "correct_count": correct_count,
-        "total": total,
-        "score_pct": score_pct,
-        "strengths": strengths,
-        "needs_revision": needs_revision,
-        "tip": needs_revision[0]["tip"] if needs_revision else "",
-    }
+def build_session_report(
+    questions: list[dict],
+    answers: list[dict],
+    *,
+    student_name: str = "Student",
+) -> dict:
+    return build_learning_report(questions, answers, student_name=student_name, program="harshit")
 
 
 def session_meta_from_config(prereq_id: int, config: dict) -> dict:

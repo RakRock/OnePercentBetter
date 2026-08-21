@@ -53,7 +53,7 @@ def _picked_and_correct(q: dict, ans: dict) -> tuple[str, str]:
 def build_failed_questions(questions: list[dict], answers: list[dict]) -> list[dict]:
     failed: list[dict] = []
     for idx, (q, ans) in enumerate(zip(questions, answers)):
-        if ans.get("correct"):
+        if q.get("is_warmup") or ans.get("correct"):
             continue
         topic = q.get("category_label") or q.get("category", "")
         if topic and not q.get("category_label"):
@@ -68,6 +68,14 @@ def build_failed_questions(questions: list[dict], answers: list[dict]) -> list[d
             "explanation": str(q.get("explanation", "")).strip(),
         })
     return failed
+
+
+def _failed_from_report(report: dict, questions: list[dict] | None, answers: list[dict] | None) -> list[dict]:
+    if report.get("failed_questions"):
+        return report["failed_questions"]
+    if questions and answers:
+        return build_failed_questions(questions, answers)
+    return []
 
 
 def format_practice_report_email(
@@ -88,71 +96,168 @@ def format_practice_report_email(
     time_str = when.strftime("%I:%M %p").lstrip("0")
     minutes, seconds = divmod(max(time_spent_seconds, 0), 60)
     score_line = f"{report['correct_count']}/{report['total']} ({report['score_pct']}%)"
+    first_name = student_name.split()[0] if student_name.strip() else "Student"
+    overall_status = report.get("overall_status", "Developing")
+    narrative = report.get("summary_narrative") or (
+        f"{first_name} completed {report['total']} questions and scored {score_line}."
+    )
 
     subject = (
-        f"{student_name} — {program_name} {unit_title} Practice "
+        f"{student_name} — {program_name} {unit_title} "
         f"({report['correct_count']}/{report['total']}, {report['score_pct']}%)"
     )
 
-    def _lines(items: list[dict]) -> list[str]:
-        return [f"  • {i['emoji']} {i['name']} — {i['correct']}/{i['total']} ({i['pct']}%)" for i in items]
+    missed = failed_questions if failed_questions is not None else _failed_from_report(report, None, None)
+    mastery = report.get("mastery") or {}
+    patterns = report.get("mistake_patterns") or report.get("error_analysis", {}).get("patterns", [])
+    coaching = report.get("coaching_concepts") or []
+    rec = report.get("recommendations") or {}
+
+    def _category_lines(items: list[dict]) -> list[str]:
+        return [f"  • {i.get('emoji', '')} {i['name']} — {i['correct']}/{i['total']} ({i['pct']}%)" for i in items]
 
     strengths = report.get("strengths") or []
     revision = report.get("needs_revision") or []
-    tip = report.get("tip") or ""
-    missed = failed_questions or []
-    plan_lines: list[str] = []
-    if session_meta:
-        summary = session_meta.get("plan_summary", "").strip()
-        if summary:
-            plan_lines = ["STRATEGIES & LEVELS THIS SESSION", "--------------------------------"]
-            plan_lines.extend(summary.split("\n"))
-            plan_lines.append("")
+    skills_mastered = report.get("skills_mastered") or mastery.get("mastered_strategies", [])
+    skills_needing = report.get("skills_needing_practice") or []
 
     plain_parts = [
-        f"Date: {date_str} at {time_str}",
-        f"Student: {student_name}",
-        f"Unit: {unit_title}" + (f" — {unit_subtitle}" if unit_subtitle else ""),
+        narrative,
+        "",
+        "OVERALL PERFORMANCE",
+        "-------------------",
         f"Score: {score_line}",
         f"Time: {minutes}m {seconds}s",
+        f"Status: {overall_status}",
         "",
     ]
-    plain_parts.extend(plan_lines)
-    plain_parts.extend(["SUMMARY", "-------"])
+
+    if skills_mastered:
+        plain_parts.append("SKILLS MASTERED")
+        for s in skills_mastered:
+            plain_parts.append(f"  • {s.get('name', s)} — {s.get('pct', 100)}%")
+        plain_parts.append("")
+
+    if skills_needing:
+        plain_parts.append("SKILLS NEEDING PRACTICE")
+        for s in skills_needing:
+            plain_parts.append(f"  • {s.get('name', s.get('key', s))} — {s.get('pct', 0)}%")
+        plain_parts.append("")
+    elif revision:
+        plain_parts.append("SKILLS NEEDING PRACTICE")
+        plain_parts.extend(_category_lines(revision))
+        plain_parts.append("")
+
+    if patterns:
+        plain_parts.append("WHAT WE LEARNED FROM THE MISTAKES")
+        for p in patterns:
+            plain_parts.append(f"  • {p.get('label', p.get('pattern', ''))} ({p.get('count', 1)}×)")
+            if p.get("narrative"):
+                plain_parts.append(f"    {p['narrative']}")
+        plain_parts.append("")
+
+    coaching = report.get("coaching_concepts") or []
+    if coaching:
+        plain_parts.append("GO OVER TOGETHER — KEY CONCEPTS TO REVIEW")
+        plain_parts.append("-------------------------------------------")
+        if coaching[0].get("intro"):
+            plain_parts.append(coaching[0]["intro"])
+            plain_parts.append("")
+        for i, c in enumerate(coaching, start=1):
+            plain_parts.append(f"{i}. {c['title']} ({c.get('mistake_count', 0)} missed question(s))")
+            plain_parts.append(f"   Idea: {c['idea']}")
+            plain_parts.append(f"   Rule: {c['rule']}")
+            plain_parts.append(f"   Example: {_format_math_for_email_plain(c['example'])}")
+            plain_parts.append(f"   Walk through: {c['walkthrough']}")
+            plain_parts.append("")
+
+    if rec.get("summary"):
+        plain_parts.append("RECOMMENDED NEXT STEP")
+        plain_parts.append(f"  {rec['summary']}")
+        plain_parts.append("")
+
     if strengths:
-        plain_parts.append("Doing well:")
-        plain_parts.extend(_lines(strengths))
-    else:
-        plain_parts.append("Doing well: (no topic reached 80% this session)")
-    plain_parts.append("")
-    if revision:
-        plain_parts.append("Needs revision:")
-        plain_parts.extend(_lines(revision))
-    else:
-        plain_parts.append("Needs revision: none — great session!")
-    if tip:
-        plain_parts.extend(["", f"Focus next: {tip}"])
+        plain_parts.append("Topic breakdown — doing well:")
+        plain_parts.extend(_category_lines(strengths))
+        plain_parts.append("")
+
     if missed:
-        plain_parts.extend(["", "MISSED QUESTIONS", "----------------"])
+        plain_parts.append("DETAILED QUESTION REVIEW")
+        plain_parts.append("-----------------------")
         for item in missed:
             topic = f" ({item['topic']})" if item.get("topic") else ""
             plain_parts.append(f"Q{item['number']}{topic}: {_format_math_for_email_plain(item['question'])}")
             plain_parts.append(f"  Your answer: {_format_math_for_email_plain(item['picked'])}")
-            plain_parts.append(f"  Correct answer: {_format_math_for_email_plain(item['correct'])}")
+            plain_parts.append(f"  Correct: {_format_math_for_email_plain(item['correct'])}")
             if item.get("explanation"):
                 plain_parts.append(f"  Why: {_format_math_for_email_plain(item['explanation'])}")
             plain_parts.append("")
-    plain_parts.extend(["", f"— OnePercent {program_name}"])
+
+    plain_parts.append(f"— OnePercent {program_name}")
     plain = "\n".join(plain_parts)
 
     def _html_list(items: list[dict], color: str) -> str:
         if not items:
             return "<p><em>None this session.</em></p>"
         rows = "".join(
-            f"<li><strong>{i['name']}</strong> — {i['correct']}/{i['total']} ({i['pct']}%)</li>"
+            f"<li><strong>{html_lib.escape(str(i.get('name', i.get('key', ''))))}</strong>"
+            f" — {i.get('correct', '')}/{i.get('total', '')} ({i.get('pct', '')}%)</li>"
             for i in items
         )
         return f'<ul style="color:{color};margin:0.4rem 0 0 1rem;">{rows}</ul>'
+
+    def _html_patterns(items: list[dict]) -> str:
+        if not items:
+            return ""
+        blocks = []
+        for p in items:
+            nar = (
+                f'<p style="margin:0.2rem 0 0 0;color:#4b5563;font-size:0.9rem;">{html_lib.escape(p.get("narrative", ""))}</p>'
+                if p.get("narrative")
+                else ""
+            )
+            blocks.append(
+                f"<li><strong>{html_lib.escape(p.get('label', ''))}</strong> "
+                f"({p.get('count', 1)} question{'s' if p.get('count', 1) != 1 else ''}){nar}</li>"
+            )
+        return (
+            '<h3 style="color:#7c3aed;margin:1.1rem 0 0.3rem 0;">🔍 What we learned from the mistakes</h3>'
+            f'<ul style="margin:0.2rem 0 0 1rem;color:#374151;">{"".join(blocks)}</ul>'
+        )
+
+    def _html_coaching(items: list[dict]) -> str:
+        if not items:
+            return ""
+        intro = ""
+        if items[0].get("intro"):
+            intro = f'<p style="margin:0 0 0.75rem 0;color:#374151;line-height:1.5;">{html_lib.escape(items[0]["intro"])}</p>'
+        blocks = []
+        for i, c in enumerate(items, start=1):
+            session_note = (
+                ' <span style="color:#6b7280;font-size:0.85rem;">(from this session)</span>'
+                if c.get("from_session")
+                else ""
+            )
+            blocks.append(
+                f"""
+                <div style="background:#f5f3ff;border-left:4px solid #8b5cf6;padding:0.85rem 1rem;
+                     border-radius:8px;margin-bottom:0.75rem;">
+                  <p style="margin:0;font-weight:700;color:#5b21b6;">
+                    {i}. {html_lib.escape(c["title"])}
+                    <span style="font-weight:500;color:#7c3aed;">({c.get("mistake_count", 0)} missed)</span>
+                  </p>
+                  <p style="margin:0.4rem 0 0 0;color:#374151;"><strong>Idea:</strong> {html_lib.escape(c["idea"])}</p>
+                  <p style="margin:0.25rem 0 0 0;color:#374151;"><strong>Rule:</strong> {html_lib.escape(c["rule"])}</p>
+                  <p style="margin:0.35rem 0 0 0;color:#1f2937;"><strong>Example:</strong> {_format_math_for_email_html(c["example"])}{session_note}</p>
+                  <p style="margin:0.35rem 0 0 0;color:#4b5563;font-size:0.92rem;"><strong>Walk through:</strong> {html_lib.escape(c["walkthrough"])}</p>
+                </div>
+                """
+            )
+        return (
+            '<h3 style="color:#5b21b6;margin:1.1rem 0 0.3rem 0;">👨‍👩‍👧 Go over together — key concepts to review</h3>'
+            + intro
+            + "".join(blocks)
+        )
 
     def _html_failed(items: list[dict]) -> str:
         if not items:
@@ -183,37 +288,38 @@ def format_practice_report_email(
                 """
             )
         return (
-            '<h3 style="color:#ef4444;margin:1.25rem 0 0.3rem 0;">❌ Missed questions</h3>'
+            '<h3 style="color:#ef4444;margin:1.25rem 0 0.3rem 0;">📋 Detailed question review</h3>'
             + "".join(blocks)
         )
 
-    plan_html = ""
-    if session_meta and session_meta.get("plan_summary"):
-        plan_items = "".join(
-            f"<li>{line}</li>" for line in session_meta["plan_summary"].split("\n") if line.strip()
-        )
-        plan_html = f"""
-      <h3 style="color:#6366f1;margin:1rem 0 0.3rem 0;">📋 Strategies &amp; Levels</h3>
-      <ul style="margin:0.2rem 0 0 1rem;color:#374151;">{plan_items}</ul>
+    rec_html = ""
+    if rec.get("summary"):
+        rec_html = f"""
+      <div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:0.85rem 1rem;margin-top:1rem;border-radius:8px;">
+        <strong>Recommended next step:</strong> {html_lib.escape(rec["summary"])}
+      </div>
       """
 
     html_body = f"""
     <div style="font-family:sans-serif;max-width:560px;color:#1f2937;">
       <h2 style="color:#6366f1;margin:0 0 0.5rem 0;">{html_lib.escape(report_heading)}</h2>
-      <table style="border-collapse:collapse;margin-bottom:1rem;">
+      <p style="font-size:1.05rem;line-height:1.5;margin:0 0 1rem 0;">{html_lib.escape(narrative)}</p>
+      <table style="border-collapse:collapse;margin-bottom:0.75rem;">
         <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Date</td><td><strong>{date_str}</strong> at {time_str}</td></tr>
-        <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Student</td><td><strong>{student_name}</strong></td></tr>
-        <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Unit</td><td><strong>{unit_title}</strong>{f" — {unit_subtitle}" if unit_subtitle else ""}</td></tr>
+        <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Student</td><td><strong>{html_lib.escape(student_name)}</strong></td></tr>
+        <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Unit</td><td><strong>{html_lib.escape(unit_title)}</strong>{f" — {html_lib.escape(unit_subtitle)}" if unit_subtitle else ""}</td></tr>
         <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Score</td><td><strong>{score_line}</strong></td></tr>
         <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Time</td><td>{minutes}m {seconds}s</td></tr>
+        <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Status</td><td><strong>{html_lib.escape(overall_status)}</strong></td></tr>
       </table>
-      {plan_html}
-      <h3 style="color:#10b981;margin:1rem 0 0.3rem 0;">✅ Doing well</h3>
-      {_html_list(strengths, "#047857")}
-      <h3 style="color:#f59e0b;margin:1rem 0 0.3rem 0;">📚 Needs revision</h3>
-      {_html_list(revision, "#b45309")}
+      <h3 style="color:#10b981;margin:1rem 0 0.3rem 0;">✅ Skills mastered</h3>
+      {_html_list(skills_mastered or strengths, "#047857")}
+      <h3 style="color:#f59e0b;margin:1rem 0 0.3rem 0;">📚 Skills needing practice</h3>
+      {_html_list(skills_needing or revision, "#b45309")}
+      {_html_patterns(patterns)}
+      {_html_coaching(coaching)}
+      {rec_html}
       {_html_failed(missed)}
-      {f'<p style="background:#eff6ff;border-left:4px solid #3b82f6;padding:0.75rem;margin-top:1rem;"><strong>Focus next:</strong> {html_lib.escape(tip)}</p>' if tip else ""}
       <p style="color:#9ca3af;font-size:0.85rem;margin-top:1.5rem;">OnePercent {html_lib.escape(program_name)}</p>
     </div>
     """

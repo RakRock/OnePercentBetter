@@ -24,10 +24,13 @@ from __future__ import annotations
 
 import json
 import os
+import re
+import time
 from datetime import datetime
-from typing import Any
+from typing import Any, Callable, TypeVar
 
 import database as db
+from practice_quality.serialize import sanitize_report_for_storage
 
 WORKSHEET_NAME = "EdgenuityPractice"
 WEEK_PLAN_WORKSHEET = "LinearEqWeekPlan"
@@ -124,6 +127,55 @@ def skip_cloud_sync() -> bool:
 
 
 _spreadsheet_cache: dict[str, object] = {}
+_HEADERS_VERIFIED: set[int] = set()
+
+T = TypeVar("T")
+
+
+def _retry_sheets_api(action: Callable[[], T], *, attempts: int = 4) -> T:
+    """Retry Google Sheets calls when the per-minute read/write quota is hit."""
+    delays = (1.0, 2.5, 6.0, 12.0)
+    last_exc: Exception | None = None
+    for attempt in range(min(attempts, len(delays))):
+        try:
+            return action()
+        except Exception as exc:
+            last_exc = exc
+            msg = str(exc).lower()
+            if "429" not in msg and "quota" not in msg:
+                raise
+            if attempt < min(attempts, len(delays)) - 1:
+                time.sleep(delays[attempt])
+    assert last_exc is not None
+    raise last_exc
+
+
+def _appended_row_index(resp: object, ws) -> int:
+    """Parse the 1-based row number from an append_row response."""
+    updated = ""
+    if isinstance(resp, dict):
+        updates = resp.get("updates") or {}
+        updated = str(updates.get("updatedRange") or resp.get("updatedRange") or "")
+    else:
+        updated = str(getattr(resp, "updatedRange", "") or "")
+    match = re.search(r"!A(\d+):", updated)
+    if match:
+        return int(match.group(1))
+    return int(getattr(ws, "row_count", 1) or 1)
+
+
+def _ensure_header_row(ws, headers: list[str], verified: set[int]) -> None:
+    ws_id = int(getattr(ws, "id", id(ws)))
+    if ws_id in verified:
+        return
+
+    def _check_and_fix() -> None:
+        first = ws.row_values(1)
+        if first != headers:
+            ws.update(range_name="A1", values=[headers])
+
+    _retry_sheets_api(_check_and_fix)
+    verified.add(ws_id)
 
 
 def _spreadsheet():
@@ -167,17 +219,13 @@ def _worksheet():
 def _week_plan_worksheet():
     import gspread
 
-    spreadsheet = _worksheet().spreadsheet
+    spreadsheet = _spreadsheet()
     try:
         return spreadsheet.worksheet(WEEK_PLAN_WORKSHEET)
     except gspread.WorksheetNotFound:
         ws = spreadsheet.add_worksheet(title=WEEK_PLAN_WORKSHEET, rows=10, cols=len(WEEK_PLAN_HEADERS))
         ws.append_row(WEEK_PLAN_HEADERS, value_input_option="USER_ENTERED")
         return ws
-
-
-def _spreadsheet():
-    return _worksheet().spreadsheet
 
 
 def _daily_logins_worksheet():
@@ -223,33 +271,35 @@ def _daily_summary_worksheet():
 
 
 def _ensure_headers(ws) -> None:
-    first = ws.row_values(1)
-    if first != HEADERS:
-        ws.update(range_name="A1", values=[HEADERS])
+    _ensure_header_row(ws, HEADERS, _HEADERS_VERIFIED)
 
 
 def _ensure_week_plan_headers(ws) -> None:
-    first = ws.row_values(1)
-    if first != WEEK_PLAN_HEADERS:
-        ws.update(range_name="A1", values=[WEEK_PLAN_HEADERS])
+    _ensure_header_row(ws, WEEK_PLAN_HEADERS, _HEADERS_VERIFIED)
 
 
 def _ensure_daily_logins_headers(ws) -> None:
-    first = ws.row_values(1)
-    if first != DAILY_LOGINS_HEADERS:
-        ws.update(range_name="A1", values=[DAILY_LOGINS_HEADERS])
+    _ensure_header_row(ws, DAILY_LOGINS_HEADERS, _HEADERS_VERIFIED)
 
 
 def _ensure_user_streaks_headers(ws) -> None:
-    first = ws.row_values(1)
-    if first != USER_STREAKS_HEADERS:
-        ws.update(range_name="A1", values=[USER_STREAKS_HEADERS])
+    _ensure_header_row(ws, USER_STREAKS_HEADERS, _HEADERS_VERIFIED)
 
 
 def _ensure_daily_summary_headers(ws) -> None:
-    first = ws.row_values(1)
-    if first != DAILY_SUMMARY_HEADERS:
-        ws.update(range_name="A1", values=[DAILY_SUMMARY_HEADERS])
+    _ensure_header_row(ws, DAILY_SUMMARY_HEADERS, _HEADERS_VERIFIED)
+
+
+def _login_push_key(user_id: int, log_date: str) -> str:
+    return f"login:{user_id}:{log_date}"
+
+
+def _summary_row_key(user_id: int, log_date: str) -> str:
+    return f"summary_row:{user_id}:{log_date}"
+
+
+def _streak_row_key(user_id: int) -> str:
+    return f"streak_row:{user_id}"
 
 
 def _sheet_has_daily_login(ws, user_name: str, log_date: str) -> bool:
@@ -259,17 +309,25 @@ def _sheet_has_daily_login(ws, user_name: str, log_date: str) -> bool:
     return False
 
 
-def append_daily_login(user_name: str, log_date: str) -> None:
+def append_daily_login(user_name: str, log_date: str, *, user_id: int | None = None) -> None:
     """Append one login row if not already present (user + date unique)."""
+    if user_id is None:
+        user = db.get_user(user_name)
+        user_id = user["id"] if user else None
+    if user_id and db.gss_push_state_get(_login_push_key(user_id, log_date)):
+        return
+
     ws = _daily_logins_worksheet()
     _ensure_daily_logins_headers(ws)
-    if _sheet_has_daily_login(ws, user_name, log_date):
-        return
     when = datetime.now()
-    ws.append_row(
-        [user_name, log_date, when.strftime("%Y-%m-%d %H:%M:%S")],
-        value_input_option="USER_ENTERED",
-    )
+    row = [user_name, log_date, when.strftime("%Y-%m-%d %H:%M:%S")]
+
+    def _append() -> None:
+        ws.append_row(row, value_input_option="USER_ENTERED")
+
+    _retry_sheets_api(_append)
+    if user_id:
+        db.gss_push_state_set(_login_push_key(user_id, log_date), "1")
 
 
 def sync_daily_logins_from_sheet() -> int:
@@ -296,14 +354,13 @@ def push_local_daily_logins_to_sheet() -> int:
     if not is_configured():
         return 0
 
-    ws = _daily_logins_worksheet()
-    _ensure_daily_logins_headers(ws)
     pushed = 0
     for user in db.get_all_users():
         for log_date in db.get_user_log_dates(user["id"]):
-            if not _sheet_has_daily_login(ws, user["name"], log_date):
-                append_daily_login(user["name"], log_date)
-                pushed += 1
+            if db.gss_push_state_get(_login_push_key(user["id"], log_date)):
+                continue
+            append_daily_login(user["name"], log_date, user_id=user["id"])
+            pushed += 1
     return pushed
 
 
@@ -343,8 +400,13 @@ def upsert_daily_summary_row(
     activities_count: int,
     avg_score_pct: int,
     time_spent_seconds: int,
+    user_id: int | None = None,
 ) -> None:
     """Upsert one user/day summary row in UserDailySummary."""
+    if user_id is None:
+        user = db.get_user(user_name)
+        user_id = user["id"] if user else None
+
     ws = _daily_summary_worksheet()
     _ensure_daily_summary_headers(ws)
     when = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -356,11 +418,21 @@ def upsert_daily_summary_row(
         int(time_spent_seconds),
         when,
     ]
-    target = _summary_row_index(ws, user_name, log_date)
-    if target:
-        ws.update(range_name=f"A{target}:F{target}", values=[row])
-    else:
-        ws.append_row(row, value_input_option="USER_ENTERED")
+    row_key = _summary_row_key(user_id, log_date) if user_id else None
+    stored = db.gss_push_state_get(row_key) if row_key else None
+    target = int(stored) if stored else None
+
+    def _write() -> None:
+        nonlocal target
+        if target:
+            ws.update(range_name=f"A{target}:F{target}", values=[row])
+            return
+        resp = ws.append_row(row, value_input_option="USER_ENTERED")
+        if row_key:
+            target = _appended_row_index(resp, ws)
+            db.gss_push_state_set(row_key, str(target))
+
+    _retry_sheets_api(_write)
 
 
 def refresh_user_daily_summary_sheet(log_date: str | None = None) -> None:
@@ -430,11 +502,20 @@ def upsert_user_streak_row(user_name: str, user_id: int) -> None:
         db.get_total_login_days(user_id),
         when,
     ]
-    for idx, existing in enumerate(ws.get_all_values()[1:], start=2):
-        if existing and str(existing[0]).strip() == user_name:
-            ws.update(range_name=f"A{idx}:D{idx}", values=[row])
+    row_key = _streak_row_key(user_id)
+    target = db.gss_push_state_get(row_key)
+    target_idx = int(target) if target else None
+
+    def _write() -> None:
+        nonlocal target_idx
+        if target_idx:
+            ws.update(range_name=f"A{target_idx}:D{target_idx}", values=[row])
             return
-    ws.append_row(row, value_input_option="USER_ENTERED")
+        resp = ws.append_row(row, value_input_option="USER_ENTERED")
+        target_idx = _appended_row_index(resp, ws)
+        db.gss_push_state_set(row_key, str(target_idx))
+
+    _retry_sheets_api(_write)
 
 
 def flush_user_session_to_sheets(
@@ -449,7 +530,7 @@ def flush_user_session_to_sheets(
         return False, "user not found"
     log_date = log_date or datetime.now().strftime("%Y-%m-%d")
     try:
-        append_daily_login(user["name"], log_date)
+        append_daily_login(user["name"], log_date, user_id=user_id)
         stats = db.compute_user_daily_summary(user_id, log_date)
         upsert_daily_summary_row(
             user["name"],
@@ -457,6 +538,7 @@ def flush_user_session_to_sheets(
             activities_count=stats["activities_count"],
             avg_score_pct=stats["avg_score_pct"],
             time_spent_seconds=stats["time_spent_seconds"],
+            user_id=user_id,
         )
         upsert_user_streak_row(user["name"], user_id)
         return True, None
@@ -536,7 +618,7 @@ def save_week_plan_to_sheet(
 def _harshit_prereq_plan_worksheet():
     import gspread
 
-    spreadsheet = _worksheet().spreadsheet
+    spreadsheet = _spreadsheet()
     try:
         return spreadsheet.worksheet(HARSHIT_PREREQ_PLAN_WORKSHEET)
     except gspread.WorksheetNotFound:
@@ -713,7 +795,11 @@ def append_practice_result(
         when.strftime("%Y-%m-%d %H:%M:%S"),
         when.strftime("%Y-%m-%d"),
     ]
-    ws.append_row(row, value_input_option="USER_ENTERED")
+
+    def _append() -> None:
+        ws.append_row(row, value_input_option="USER_ENTERED")
+
+    _retry_sheets_api(_append)
 
 
 def sync_from_sheet_to_db() -> int:
@@ -775,9 +861,7 @@ def sync_from_sheet_to_db() -> int:
 
     sync_week_plan_from_sheet()
     sync_harshit_prereq_plans_from_sheet()
-    login_imported = sync_streaks_and_logins()
-
-    return imported + login_imported
+    return imported
 
 
 def persist_edgenuity_practice(
@@ -794,6 +878,7 @@ def persist_edgenuity_practice(
     question_ids: list[str] | None = None,
 ) -> tuple[bool, str | None]:
     """Save locally and append to Google Sheets. Returns (sheet_ok, error_message)."""
+    report = sanitize_report_for_storage(report)
     db.save_ec3_practice_result(
         user_id,
         session_id=session_id,
@@ -812,17 +897,25 @@ def persist_edgenuity_practice(
         return False, None
 
     try:
-        append_practice_result(
-            session_id=session_id,
-            user_name=user_name,
-            session_kind=session_kind,
-            unit_id=unit_id,
-            unit_label=unit_label,
-            report=report,
-            failed_questions=failed_questions,
-            time_spent_seconds=time_spent_seconds,
+        _retry_sheets_api(
+            lambda: append_practice_result(
+                session_id=session_id,
+                user_name=user_name,
+                session_kind=session_kind,
+                unit_id=unit_id,
+                unit_label=unit_label,
+                report=report,
+                failed_questions=failed_questions,
+                time_spent_seconds=time_spent_seconds,
+            )
         )
-        flush_user_session_to_sheets(user_id)
+        flush_err: str | None = None
+        try:
+            _, flush_err = flush_user_session_to_sheets(user_id)
+        except Exception as exc:
+            flush_err = str(exc)
+        if flush_err:
+            return True, f"Practice saved to sheet; daily sync deferred: {flush_err}"
         return True, None
     except Exception as exc:
         return False, str(exc)
@@ -844,6 +937,7 @@ def persist_course3_practice(
     question_ids: list[str] | None = None,
 ) -> tuple[bool, str | None]:
     """Save Course 3 Math practice locally and append to Google Sheets."""
+    report = sanitize_report_for_storage(report)
     db.save_ec3_practice_result(
         user_id,
         session_id=session_id,
@@ -862,17 +956,25 @@ def persist_course3_practice(
         return False, None
 
     try:
-        append_practice_result(
-            session_id=session_id,
-            user_name=user_name,
-            session_kind="course3",
-            unit_id=unit_id,
-            unit_label=unit_label,
-            report=report,
-            failed_questions=failed_questions,
-            time_spent_seconds=time_spent_seconds,
+        _retry_sheets_api(
+            lambda: append_practice_result(
+                session_id=session_id,
+                user_name=user_name,
+                session_kind="course3",
+                unit_id=unit_id,
+                unit_label=unit_label,
+                report=report,
+                failed_questions=failed_questions,
+                time_spent_seconds=time_spent_seconds,
+            )
         )
-        flush_user_session_to_sheets(user_id)
+        flush_err: str | None = None
+        try:
+            _, flush_err = flush_user_session_to_sheets(user_id)
+        except Exception as exc:
+            flush_err = str(exc)
+        if flush_err:
+            return True, f"Practice saved to sheet; daily sync deferred: {flush_err}"
         return True, None
     except Exception as exc:
         return False, str(exc)

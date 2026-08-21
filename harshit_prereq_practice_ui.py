@@ -490,7 +490,7 @@ def render_practice():
         time_spent = int(
             time.time() - st.session_state.get(_ss_key(prereq_id, "start_time"), time.time())
         )
-        report = hpp.build_session_report(questions, answers)
+        report = hpp.build_session_report(questions, answers, student_name=name or "Student")
         meta = hpp.session_meta_from_config(prereq_id, config)
         score_pct = report["score_pct"]
         correct_count = report["correct_count"]

@@ -5,6 +5,7 @@ from __future__ import annotations
 import random
 import re
 from fractions import Fraction
+from math import gcd
 from typing import Callable
 
 LEVEL_ORDER = ["A", "B", "C", "D", "E"]
@@ -242,7 +243,7 @@ def _prepare_expr_for_eval(expr: str) -> str:
     s = _normalize_math_text(expr).replace(" ", "")
     s = re.sub(r"(\d)\(", r"\1*(", s)
     s = re.sub(r"\)(\d)", r")*\1", s)
-    s = re.sub(r"(\d)/(\d)([xy])", r"((\1)/(\2)*\3", s)
+    s = re.sub(r"(\d)/(\d)([xy])", r"((\1)/(\2)*\3)", s)
     s = re.sub(r"(-?\d+)([xy])", r"\1*\2", s)
     return s
 
@@ -351,7 +352,29 @@ def attach_question_parts(q: dict) -> dict:
 
 
 def _mcq(question: str, correct: str, wrong: list[str], sid: int, level: str, explanation: str) -> dict:
-    opts = [correct] + wrong[:3]
+    correct = str(correct).strip()
+    opts = [correct]
+    for w in wrong:
+        w = str(w).strip()
+        if w and w not in opts:
+            opts.append(w)
+    n = 1
+    while len(opts) < 4:
+        try:
+            base = int(Fraction(correct))
+            for delta in (n, -n, n + 1, -n - 1):
+                alt = fmt_num(base + delta)
+                if alt not in opts:
+                    opts.append(alt)
+                    break
+            else:
+                n += 1
+                continue
+        except (ValueError, TypeError):
+            alt = f"Option {len(opts) + 1}"
+            if alt not in opts:
+                opts.append(alt)
+        n += 1
     random.shuffle(opts)
     item = {
         "id": f"leq_s{sid}_{level}_{random.randint(1000, 9999)}",
@@ -368,9 +391,44 @@ def _mcq(question: str, correct: str, wrong: list[str], sid: int, level: str, ex
 
 
 def _pick_wrong(correct: str, candidates: list[str], n: int = 3) -> list[str]:
-    pool = [c for c in candidates if c != correct]
+    correct = str(correct).strip()
+    pool = [str(c).strip() for c in candidates if str(c).strip() and str(c).strip() != correct]
     random.shuffle(pool)
-    return pool[:n]
+    seen = {correct}
+    out: list[str] = []
+    for item in pool:
+        if item not in seen:
+            seen.add(item)
+            out.append(item)
+        if len(out) >= n:
+            break
+    return out
+
+
+def _four_options(correct: str, candidates: list[str]) -> tuple[list[str], int]:
+    """Build four distinct MCQ options and return (options, answer_index)."""
+    correct = str(correct).strip()
+    opts = [correct, *_pick_wrong(correct, candidates, n=6)]
+    n = 1
+    while len(opts) < 4:
+        try:
+            base = int(Fraction(correct))
+            for delta in (n, -n, n + 2, -n - 2, n + 3, -n - 3):
+                alt = fmt_num(base + delta)
+                if alt not in opts:
+                    opts.append(alt)
+                    break
+            else:
+                n += 1
+                continue
+        except (ValueError, TypeError):
+            alt = f"Option {len(opts) + 1}"
+            if alt not in opts:
+                opts.append(alt)
+        n += 1
+    opts = opts[:4]
+    random.shuffle(opts)
+    return opts, opts.index(correct)
 
 
 # ── Strategy 1: Inspection ──
@@ -424,7 +482,7 @@ def _s1_c() -> dict:
         correct = fmt_num(x)
         expl = f"−{a}x = {b} → x = {b} ÷ (−{a}) = {x}."
     return _mcq(f"Solve mentally: {eq}. What is x?", correct,
-                _pick_wrong(correct, [fmt_num(-int(correct) if correct.lstrip('-').isdigit() else 0), "0", "1"]), 1, "C", expl)
+                _pick_wrong(correct, [fmt_num(-x), fmt_num(x + 1), fmt_num(x - 1), "0", "1"]), 1, "C", expl)
 
 
 def _s1_d() -> dict:
@@ -545,39 +603,125 @@ def _s3_a() -> dict:
 
 
 def _s3_b() -> dict:
-    x = -5
-    eq = "3x − 8 = 7x + 12"
+    a = random.randint(3, 7)
+    b = random.randint(1, a - 1)
+    x = random.randint(-12, -2)
+    c = random.randint(2, 12)
+    rhs = (a - b) * x - c
+    rhs_side = f"{b}x"
+    if rhs >= 0:
+        rhs_side += f" + {rhs}"
+    else:
+        rhs_side += f" − {abs(rhs)}"
+    eq = fmt_eq(f"{a}x − {c}", rhs_side)
     correct = fmt_num(x)
-    return _mcq(f"Solve: {eq}. What is x?", correct,
-                _pick_wrong(correct, ["5", "−4", "4"]), 3, "B",
-                "Subtract 7x: −4x − 8 = 12 → −4x = 20 → x = −5.")
+    opts, ans = _four_options(correct, [fmt_num(-x), fmt_num(x + 2), fmt_num(x - 2), "0", "1"])
+    return attach_question_parts(
+        {
+            "id": f"leq_s3_B_{random.randint(1000, 9999)}",
+            "strategy": 3,
+            "level": "B",
+            "instruction": "Solve for x.",
+            "equation": eq,
+            "followup": "What is x?",
+            "question": compose_question("Solve for x.", eq, "What is x?"),
+            "question_tex": text_to_latex(eq),
+            "options": opts,
+            "options_tex": [text_to_latex(o) for o in opts],
+            "answer": ans,
+            "explanation": f"Move x terms and constants → x = {x}.",
+        }
+    )
 
 
 def _s3_c() -> dict:
-    x = -5
-    eq = "−4x + 10 = −9x − 15"
+    a = random.randint(2, 5)
+    b = random.randint(a + 2, a + 6)
+    x = random.randint(-12, -2)
+    c = random.randint(2, 15)
+    d = (a - b) * x - c
+    eq = fmt_eq(f"−{a}x + {c}", f"−{b}x − {d}")
     correct = fmt_num(x)
-    return _mcq(f"Solve: {eq}. What is x?", correct,
-                _pick_wrong(correct, ["5", "−4", "4"]), 3, "C",
-                "Add 9x: 5x + 10 = −15 → 5x = −25 → x = −5.")
+    opts, ans = _four_options(correct, [fmt_num(-x), fmt_num(x + 2), fmt_num(x - 2), "0", "1"])
+    return attach_question_parts(
+        {
+            "id": f"leq_s3_C_{random.randint(1000, 9999)}",
+            "strategy": 3,
+            "level": "C",
+            "instruction": "Solve for x.",
+            "equation": eq,
+            "followup": "What is x?",
+            "question": compose_question("Solve for x.", eq, "What is x?"),
+            "question_tex": text_to_latex(eq),
+            "options": opts,
+            "options_tex": [text_to_latex(o) for o in opts],
+            "answer": ans,
+            "explanation": f"Add {b}x and subtract {c} → x = {x}.",
+        }
+    )
 
 
 def _s3_d() -> dict:
-    x = 24
-    eq = "1/2 x + 4 = 3/4 x − 2"
+    a_num, a_den = random.choice([(1, 2), (1, 3), (2, 3), (3, 4)])
+    c_num, c_den = random.choice([(1, 4), (1, 2), (3, 4), (2, 5)])
+    while Fraction(c_num, c_den) == Fraction(a_num, a_den):
+        c_num, c_den = random.choice([(1, 4), (1, 2), (3, 4), (2, 5)])
+    b = random.randint(1, 8)
+    x = random.randint(4, 36)
+    d = int(Fraction(a_num, a_den) * x + b - Fraction(c_num, c_den) * x)
+    eq = f"{a_num}/{a_den} x + {b} = {c_num}/{c_den} x + {d}"
     correct = fmt_num(x)
-    return _mcq(f"Solve: {eq}. What is x?", correct,
-                _pick_wrong(correct, ["12", "−24", "6"]), 3, "D",
-                "Subtract 1/2 x and add 2 → 1/4 x = 6 → x = 24.")
+    wrong = _pick_wrong(correct, [fmt_num(x + 2), fmt_num(-x), fmt_num(max(1, x // 2))])
+    opts = [correct] + wrong
+    random.shuffle(opts)
+    return attach_question_parts(
+        {
+            "id": f"leq_s3_D_{random.randint(1000, 9999)}",
+            "strategy": 3,
+            "level": "D",
+            "instruction": "Solve for x.",
+            "equation": eq,
+            "followup": "What is x?",
+            "question": compose_question("Solve for x.", eq, "What is x?"),
+            "question_tex": text_to_latex(eq),
+            "options": opts,
+            "options_tex": [text_to_latex(o) for o in opts],
+            "answer": opts.index(correct),
+            "explanation": "Move x terms to one side and constants to the other, then divide by the x-coefficient.",
+        }
+    )
 
 
 def _s3_e() -> dict:
-    x = -4
-    eq = "−2/3 x − 1 = 1/6 x + 3"
+    a_num, a_den = random.choice([(2, 3), (1, 2), (3, 4)])
+    b_num, b_den = random.choice([(1, 6), (1, 4), (1, 3)])
+    x = random.randint(-10, -2)
+    c = random.randint(1, 6)
+    d_val = int(Fraction(-a_num, a_den) * x - c - Fraction(b_num, b_den) * x)
+    rhs_side = f"{b_num}/{b_den} x"
+    if d_val >= 0:
+        rhs_side += f" + {d_val}"
+    else:
+        rhs_side += f" − {abs(d_val)}"
+    eq = f"−{a_num}/{a_den} x − {c} = {rhs_side}"
     correct = fmt_num(x)
-    return _mcq(f"Solve: {eq}. What is x?", correct,
-                _pick_wrong(correct, ["4", "−2", "2"]), 3, "E",
-                "Combine x terms → −5/6 x = 4 → x = −4.")
+    opts, ans = _four_options(correct, [fmt_num(-x), fmt_num(x + 2), fmt_num(x - 2), "0", "1"])
+    return attach_question_parts(
+        {
+            "id": f"leq_s3_E_{random.randint(1000, 9999)}",
+            "strategy": 3,
+            "level": "E",
+            "instruction": "Solve for x.",
+            "equation": eq,
+            "followup": "What is x?",
+            "question": compose_question("Solve for x.", eq, "What is x?"),
+            "question_tex": text_to_latex(eq),
+            "options": opts,
+            "options_tex": [text_to_latex(o) for o in opts],
+            "answer": ans,
+            "explanation": "Combine x terms, then divide by the x-coefficient.",
+        }
+    )
 
 
 # ── Strategy 4: Distributive Property ──
@@ -596,43 +740,89 @@ def _s4_a() -> dict:
 
 
 def _s4_b() -> dict:
-    x = 2
-    correct = "8 − 6x + 15 = 11"
+    left = random.randint(4, 12)
+    outer = random.randint(2, 5)
+    inner_a = random.randint(2, 4)
+    inner_b = random.randint(1, 7)
+    rhs = random.randint(5, 24)
+    distributed_rhs = outer * inner_b
+    distributed_x = outer * inner_a
+    correct = f"{left} − {distributed_x}x + {distributed_rhs} = {rhs}"
+    eq = f"{left} − {outer}({inner_a}x − {inner_b}) = {rhs}"
+    prompt = f"After distributing, which equation matches {eq}?"
     return _mcq(
-        "After distributing, which equation matches 8 − 3(2x − 5) = 11?",
+        prompt,
         correct,
-        _pick_wrong(correct, ["8 − 6x − 15 = 11", "8 + 6x − 15 = 11", "8 − 6x + 5 = 11"]),
-        4, "B",
-        "−3(2x − 5) = −6x + 15.",
+        _pick_wrong(
+            correct,
+            [
+                f"{left} − {distributed_x}x − {distributed_rhs} = {rhs}",
+                f"{left} + {distributed_x}x − {distributed_rhs} = {rhs}",
+                f"{left} − {distributed_x}x + {inner_b} = {rhs}",
+            ],
+        ),
+        4,
+        "B",
+        f"−{outer}({inner_a}x − {inner_b}) = −{distributed_x}x + {distributed_rhs}.",
     )
 
 
 def _s4_c() -> dict:
-    x = -2
-    eq = "2(x − 3) − 4(2x + 1) = 10"
+    x = random.randint(-8, -1)
+    a = random.randint(2, 4)
+    shift = random.randint(2, 5)
+    d = random.randint(2, 5)
+    rhs = a * (x - shift) - d * (2 * x + 1)
+    eq = f"{a}(x − {shift}) − {d}(2x + 1) = {rhs}"
     correct = fmt_num(x)
-    return _mcq(f"Solve: {eq}. What is x?", correct,
-                _pick_wrong(correct, ["2", "−1", "1"]), 4, "C",
-                "Expand → 2x − 6 − 8x − 4 = 10 → −6x = 20 → x = −2.")
+    return _mcq(
+        f"Solve: {eq}. What is x?",
+        correct,
+        _pick_wrong(correct, [fmt_num(-x), fmt_num(x + 1), fmt_num(x - 1), "0"]),
+        4,
+        "C",
+        "Expand both groups, combine like terms, then isolate x.",
+    )
 
 
 def _s4_d() -> dict:
-    x = 4
-    eq = "1/3(6x − 9) = 10"
+    num, den = random.choice([(1, 3), (1, 2), (2, 5)])
+    x = random.randint(2, 12)
+    inner_a = random.randint(2, 6)
+    inner_b = random.randint(1, 9)
+    rhs = int(Fraction(num, den) * (inner_a * x - inner_b))
+    eq = f"{num}/{den}({inner_a}x − {inner_b}) = {rhs}"
     correct = fmt_num(x)
-    return _mcq(f"Solve: {eq}. What is x?", correct,
-                _pick_wrong(correct, ["2", "6", "−4"]), 4, "D",
-                "Distribute → 2x − 3 = 10 → x = 4.")
+    return _mcq(
+        f"Solve: {eq}. What is x?",
+        correct,
+        _pick_wrong(correct, [fmt_num(x + 2), fmt_num(x - 2), fmt_num(-x), "0"]),
+        4,
+        "D",
+        "Distribute the fraction, then isolate x.",
+    )
 
 
 def _s4_e() -> dict:
-    correct = "−6/5 x + 8/5"
+    num, den = random.choice([(2, 5), (3, 4), (1, 3)])
+    a = random.randint(2, 5)
+    b = random.randint(2, 8)
+    correct = f"−{num * a}/{den} x + {num * b}/{den}"
+    eq = f"−{num}/{den}({a}x − {b}) = ?"
     return _mcq(
-        "Expand the left side: −2/5(3x − 4) = ?",
+        eq,
         correct,
-        _pick_wrong(correct, ["−6/5 x − 8/5", "6/5 x + 8/5", "−6/5 x + 4"]),
-        4, "E",
-        "Distribute −2/5 through (3x − 4).",
+        _pick_wrong(
+            correct,
+            [
+                f"{num * a}/{den} x + {num * b}/{den}",
+                f"−{num * a}/{den} x − {num * b}/{den}",
+                f"{num * a}/{den} x − {num * b}/{den}",
+            ],
+        ),
+        4,
+        "E",
+        f"Distribute −{num}/{den} through ({a}x − {b}).",
     )
 
 
@@ -651,35 +841,52 @@ def _s5_a() -> dict:
 
 
 def _s5_b() -> dict:
-    correct = "Multiply every term by 5"
+    d = random.choice([4, 5, 6, 8, 10])
+    num = random.randint(1, d - 1)
+    const = random.randint(1, d - 1)
+    rhs = random.randint(1, d - 1)
+    eq = f"{num}/{d} x + {const}/{d} = {rhs}/{d}"
+    correct = f"Multiply every term by {d}"
     return _mcq(
-        "Best first step for 2/5 x + 1/5 = 4/5?",
+        f"Best first step for {eq}?",
         correct,
-        _pick_wrong(correct, ["Multiply by 2", "Add 1/5", "Divide by 5"]),
-        5, "B",
-        "LCD is 5 — one multiplication clears all denominators.",
+        _pick_wrong(correct, [f"Multiply by {num}", f"Add {const}/{d}", f"Divide by {d}"]),
+        5,
+        "B",
+        f"LCD is {d} — one multiplication clears all denominators.",
     )
 
 
 def _s5_c() -> dict:
-    correct = "Multiply every term by 6"
+    denoms = random.choice([(2, 3, 6), (2, 3, 4), (3, 4, 12)])
+    lcd = denoms[0] * denoms[1] // gcd(denoms[0], denoms[1])
+    lcd = lcd * denoms[2] // gcd(lcd, denoms[2])
+    eq = f"1/{denoms[0]} x + 2/{denoms[1]} = 5/{denoms[2]}"
+    correct = f"Multiply every term by {lcd}"
     return _mcq(
-        "LCD to clear fractions in 1/2 x + 2/3 = 5/6?",
+        f"LCD to clear fractions in {eq}?",
         correct,
-        _pick_wrong(correct, ["Multiply by 2", "Multiply by 3", "Multiply by 12"]),
-        5, "C",
-        "LCD(2, 3, 6) = 6.",
+        _pick_wrong(correct, [f"Multiply by {denoms[0]}", f"Multiply by {denoms[1]}", f"Multiply by {lcd * 2}"]),
+        5,
+        "C",
+        f"LCD({', '.join(map(str, denoms))}) = {lcd}.",
     )
 
 
 def _s5_d() -> dict:
-    correct = "Multiply every term by 8"
+    den = random.choice([4, 8, 6])
+    num = random.randint(2, den - 1)
+    const = random.randint(1, den // 2)
+    rhs = random.randint(1, den - 1)
+    eq = f"−{num}/{den} x − {const}/{den} = {rhs}/{den}"
+    correct = f"Multiply every term by {den}"
     return _mcq(
-        "Best first step for −3/4 x − 1/2 = 5/8?",
+        f"Best first step for {eq}?",
         correct,
-        _pick_wrong(correct, ["Multiply by 4", "Multiply by 2", "Add 1/2"]),
-        5, "D",
-        "LCD(4, 2, 8) = 8; watch negative signs on every term.",
+        _pick_wrong(correct, [f"Multiply by {num}", f"Multiply by 2", f"Add {const}/{den}"]),
+        5,
+        "D",
+        f"LCD = {den}; watch negative signs on every term.",
     )
 
 
@@ -706,24 +913,38 @@ def _s6_a() -> dict:
 
 
 def _s6_b() -> dict:
-    correct = "y = −3/2 x + 4"
+    x_coef = random.randint(2, 5)
+    y_coef = random.randint(2, 4)
+    rhs = random.randint(6, 20)
+    correct = f"y = −{x_coef}/{y_coef} x + {int(Fraction(rhs, y_coef))}"
     return _mcq(
-        "3x + 2y = 8 solved for y gives —",
+        f"{x_coef}x + {y_coef}y = {rhs} solved for y gives —",
         correct,
-        _pick_wrong(correct, ["y = 3/2 x + 4", "y = −3x + 8", "y = 3x + 4"]),
-        6, "B",
-        "2y = −3x + 8 → divide by 2.",
+        _pick_wrong(
+            correct,
+            [f"y = {x_coef}/{y_coef} x + {int(Fraction(rhs, y_coef))}", f"y = −{x_coef}x + {rhs}", f"y = {x_coef}x + {rhs}"],
+        ),
+        6,
+        "B",
+        f"{y_coef}y = −{x_coef}x + {rhs} → divide by {y_coef}.",
     )
 
 
 def _s6_c() -> dict:
-    correct = "y = 4/3 x − 4"
+    x_coef = random.randint(2, 6)
+    y_coef = random.randint(2, 5)
+    rhs = random.randint(6, 24)
+    correct = f"y = {x_coef}/{y_coef} x − {int(Fraction(rhs, y_coef))}"
     return _mcq(
-        "4x − 3y = 12 solved for y gives —",
+        f"{x_coef}x − {y_coef}y = {rhs} solved for y gives —",
         correct,
-        _pick_wrong(correct, ["y = −4/3 x + 4", "y = 4/3 x + 4", "y = 4x − 4"]),
-        6, "C",
-        "−3y = −4x + 12 → divide by −3 (signs flip).",
+        _pick_wrong(
+            correct,
+            [f"y = −{x_coef}/{y_coef} x + {int(Fraction(rhs, y_coef))}", f"y = {x_coef}/{y_coef} x + {rhs}", f"y = {x_coef}x − {rhs}"],
+        ),
+        6,
+        "C",
+        f"−{y_coef}y = −{x_coef}x + {rhs} → divide by −{y_coef} (signs flip).",
     )
 
 
@@ -752,56 +973,74 @@ def _s6_e() -> dict:
 # ── Strategy 7: Systems ──
 
 def _s7_a() -> dict:
-    correct = "(7, 3)"
+    x = random.randint(3, 12)
+    y = random.randint(2, 10)
+    s = x + y
+    d = x - y
+    correct = f"({x}, {y})"
     return _mcq(
-        "Solve by adding equations: x + y = 10 and x − y = 4.",
+        f"Solve by adding equations: x + y = {s} and x − y = {d}.",
         correct,
-        _pick_wrong(correct, ["(3, 7)", "(6, 4)", "(5, 5)"]),
-        7, "A",
-        "Add → 2x = 14 → x = 7, y = 3.",
+        _pick_wrong(correct, [f"({y}, {x})", f"({x + 1}, {y})", f"({x}, {y + 1})"]),
+        7,
+        "A",
+        f"Add → 2x = {s + d} → x = {x}, y = {y}.",
     )
 
 
 def _s7_b() -> dict:
-    correct = "Multiply the second equation by 3"
+    a = random.randint(2, 4)
+    b = random.randint(2, 5)
+    correct = f"Multiply the second equation by {b}"
     return _mcq(
-        "To eliminate y in {2x + 3y = 12, x − y = 1}, best first step?",
+        f"To eliminate y in {{{a}x + {b}y = {a * 3 + b * 2}, x − y = 1}}, best first step?",
         correct,
-        _pick_wrong(correct, ["Multiply first by 2", "Add the equations", "Subtract equations"]),
-        7, "B",
-        "x − y = 1 → 3x − 3y = 3, then add to first equation.",
+        _pick_wrong(correct, [f"Multiply first by {a}", "Add the equations", "Subtract equations"]),
+        7,
+        "B",
+        f"x − y = 1 → {b}x − {b}y = {b}, then add to the first equation.",
     )
 
 
 def _s7_c() -> dict:
-    correct = "Multiply eq. 1 by 2 and eq. 2 by −3"
+    mult1 = random.randint(2, 3)
+    mult2 = random.randint(2, 4)
+    correct = f"Multiply eq. 1 by {mult1} and eq. 2 by −{mult2}"
     return _mcq(
-        "To eliminate x in {3x + 4y = 10, 2x + 5y = 9}, one valid step is —",
+        f"To eliminate x in {{3x + 4y = 10, 2x + 5y = 9}}, one valid step is —",
         correct,
-        _pick_wrong(correct, ["Add equations directly", "Multiply eq. 1 by −2 only", "Divide eq. 2 by 2"]),
-        7, "C",
+        _pick_wrong(correct, ["Add equations directly", f"Multiply eq. 1 by −{mult1} only", "Divide eq. 2 by 2"]),
+        7,
+        "C",
         "Oppositely scaled x-coefficients allow elimination.",
     )
 
 
 def _s7_d() -> dict:
-    correct = "Substitute y = 2/3 x − 4 into the other equation"
+    num = random.choice([2, 3, 4])
+    den = random.choice([3, 4, 5])
+    intercept = random.randint(2, 8)
+    correct = f"Substitute y = {num}/{den} x − {intercept} into the other equation"
     return _mcq(
-        "System includes y = 2/3 x − 4. Best next move?",
+        f"System includes y = {num}/{den} x − {intercept}. Best next move?",
         correct,
-        _pick_wrong(correct, ["Add both equations", "Multiply by 3 only", "Graph and guess"]),
-        7, "D",
+        _pick_wrong(correct, ["Add both equations", f"Multiply by {den} only", "Graph and guess"]),
+        7,
+        "D",
         "Substitution replaces y with an expression in x.",
     )
 
 
 def _s7_e() -> dict:
     correct = "Multiply each equation by its LCD to clear fractions, then eliminate"
+    eq1 = random.choice(["−1/2 x + 1/3 y = −2", "1/4 x + 1/2 y = 3", "2/3 x − 1/5 y = 1"])
+    eq2 = random.choice(["2/5 x − 3/4 y = 1", "1/3 x + 1/6 y = 2", "3/4 x − 1/2 y = −1"])
     return _mcq(
-        "System: −1/2 x + 1/3 y = −2 and 2/5 x − 3/4 y = 1. Best start?",
+        f"System: {eq1} and {eq2}. Best start?",
         correct,
         _pick_wrong(correct, ["Add equations immediately", "Solve for x first", "Skip clearing fractions"]),
-        7, "E",
+        7,
+        "E",
         "Clear fractions in both equations before elimination.",
     )
 
