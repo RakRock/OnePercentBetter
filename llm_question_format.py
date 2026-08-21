@@ -134,6 +134,9 @@ def is_quality_practice_question(question: str, options: list[str]) -> bool:
         return False
     if any(o == "i can solve this using the chapter method" for o in opts):
         return False
+    if "quadrant" in q_lower and not re.search(r"\(\s*-?\d+\s*,\s*-?\d+\s*\)", q):
+        if "point p" in q_lower or "marked on the coordinate" in q_lower:
+            return False
     return True
 
 

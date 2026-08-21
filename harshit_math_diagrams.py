@@ -6,6 +6,8 @@ import math
 import re
 from typing import Any
 
+import harshit_geometry_diagrams as hgd
+
 
 def _esc(text: Any) -> str:
     return str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -138,6 +140,123 @@ def svg_sqrt_extend(base_label: str, perp: int) -> str:
     return "\n".join(parts)
 
 
+def svg_coordinate_plane(x: int, y: int) -> str:
+    """Coordinate plane with a marked point P — read coordinates or quadrant from the graph."""
+    x, y = int(x), int(y)
+    max_abs = min(10, max(5, abs(x) + 1, abs(y) + 1))
+    w, h = 400, 400
+    pad = 36
+    cx = cy = w // 2
+    scale = (w - 2 * pad) / (2 * max_abs)
+
+    def gx(val: float) -> float:
+        return cx + val * scale
+
+    def gy(val: float) -> float:
+        return cy - val * scale
+
+    px, py = gx(x), gy(y)
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
+        f'viewBox="0 0 {w} {h}" style="max-width:100%;height:auto;display:block;margin:0 auto;">',
+        '<rect x="0" y="0" width="400" height="400" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>',
+    ]
+    for i in range(-max_abs, max_abs + 1):
+        if i == 0:
+            continue
+        parts.append(
+            f'<line x1="{gx(i):.1f}" y1="{pad}" x2="{gx(i):.1f}" y2="{h - pad}" '
+            f'stroke="#e2e8f0" stroke-width="1"/>'
+        )
+        parts.append(
+            f'<line x1="{pad}" y1="{gy(i):.1f}" x2="{w - pad}" y2="{gy(i):.1f}" '
+            f'stroke="#e2e8f0" stroke-width="1"/>'
+        )
+    parts.extend([
+        f'<line x1="{pad}" y1="{cy:.1f}" x2="{w - pad}" y2="{cy:.1f}" stroke="#374151" stroke-width="2.5"/>',
+        f'<line x1="{cx:.1f}" y1="{h - pad}" x2="{cx:.1f}" y2="{pad}" stroke="#374151" stroke-width="2.5"/>',
+        f'<polygon points="{w - pad},{cy:.1f} {w - pad - 8},{cy - 4} {w - pad - 8},{cy + 4}" fill="#374151"/>',
+        f'<polygon points="{cx:.1f},{pad} {cx - 4},{pad + 8} {cx + 4},{pad + 8}" fill="#374151"/>',
+        f'<text x="{w - pad + 4}" y="{cy + 5:.0f}" font-size="14" fill="#374151" font-weight="600">x</text>',
+        f'<text x="{cx + 8}" y="{pad - 6}" font-size="14" fill="#374151" font-weight="600">y</text>',
+        f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="4" fill="#2563eb"/>',
+        f'<text x="{cx + 8}" y="{cy + 5:.0f}" font-size="12" fill="#2563eb">O</text>',
+    ])
+    for tick in range(-max_abs, max_abs + 1):
+        if tick == 0:
+            continue
+        parts.append(
+            f'<text x="{gx(tick):.0f}" y="{cy + 18:.0f}" text-anchor="middle" font-size="11" fill="#64748b">{tick}</text>'
+        )
+        parts.append(
+            f'<text x="{cx - 14:.0f}" y="{gy(tick) + 4:.0f}" text-anchor="middle" font-size="11" fill="#64748b">{tick}</text>'
+        )
+    parts.extend([
+        f'<circle cx="{px:.1f}" cy="{py:.1f}" r="7" fill="#dc2626" stroke="#fff" stroke-width="2"/>',
+        f'<text x="{px + 12:.0f}" y="{py - 10:.0f}" font-size="15" fill="#dc2626" font-weight="700">P</text>',
+        f'<text x="200" y="24" text-anchor="middle" font-size="12" fill="#64748b">Use the graph to answer — point P is marked in red</text>',
+        "</svg>",
+    ])
+    return "\n".join(parts)
+
+
+def _parse_coord_pair(text: str) -> tuple[int, int] | None:
+    m = re.search(r"\(\s*(-?\d+)\s*,\s*(-?\d+)\s*\)", text)
+    if not m:
+        return None
+    return int(m.group(1)), int(m.group(2))
+
+
+def _quadrant_prompt(x: int, y: int) -> str:
+    return f"Point ({x}, {y}) lies in which quadrant?"
+
+
+def fix_quadrant_question(question: dict) -> dict:
+    """Ensure quadrant questions state coordinates — never orphan 'Point P on the graph' text."""
+    out = dict(question)
+    text = str(out.get("question", ""))
+    lower = text.lower()
+    if "quadrant" not in lower:
+        return out
+
+    pt = _parse_coord_pair(text)
+    if pt:
+        x, y = pt
+        if re.search(r"lies in quadrant\?", text, re.I) or "point p" in lower:
+            out["question"] = _quadrant_prompt(x, y)
+        return out
+
+    raw = _normalize_diagram(out.get("diagram"))
+    if raw and raw.get("type") == "coordinate_plane":
+        x, y = int(raw["x"]), int(raw["y"])
+        out.pop("diagram", None)
+        out["question"] = _quadrant_prompt(x, y)
+    return out
+
+
+def infer_coordinate_diagram(question: dict) -> dict | None:
+    """Detect read-coordinates questions that need a graph (not quadrant questions)."""
+    text = str(question.get("question", ""))
+    lower = text.lower()
+    if "quadrant" in lower:
+        return None
+    pt = _parse_coord_pair(text)
+    if not pt:
+        return None
+    x, y = pt
+    if x == 0 or y == 0:
+        return None
+    if re.search(r"which point lies at|what point is at|point shown at|located at", lower):
+        return {"type": "coordinate_plane", "x": x, "y": y, "mode": "read_coords"}
+    opts = [str(o).strip() for o in question.get("options", [])]
+    correct = opts[int(question.get("answer", 0))] if opts else ""
+    coord_opts = sum(1 for o in opts if re.fullmatch(r"\(\s*-?\d+\s*,\s*-?\d+\s*\)", o.replace(" ", "")))
+    if coord_opts >= 3 and re.fullmatch(r"\(\s*-?\d+\s*,\s*-?\d+\s*\)", correct.replace(" ", "")):
+        if re.search(r"coordinate|point|plane|graph|plot", lower):
+            return {"type": "coordinate_plane", "x": x, "y": y, "mode": "read_coords"}
+    return None
+
+
 def _normalize_diagram(spec: Any) -> dict | None:
     if spec is None:
         return None
@@ -164,6 +283,31 @@ def _normalize_diagram(spec: Any) -> dict | None:
                 "perp": int(parts[1]),
                 "target": int(parts[2]) if len(parts) >= 3 else None,
             }
+        if kind == "coordinate_plane" and len(parts) >= 2:
+            return {
+                "type": "coordinate_plane",
+                "x": int(parts[0]),
+                "y": int(parts[1]),
+                "mode": parts[2] if len(parts) >= 3 else "read_coords",
+            }
+        geo_types = (
+            "parallelogram", "rectangle", "rhombus", "trapezium", "triangle",
+            "circle", "parallel_transversal", "intersecting_lines", "angle_arc",
+        )
+        if kind in geo_types:
+            d: dict[str, Any] = {"type": kind}
+            for p in parts:
+                if "=" in p:
+                    k, v = p.split("=", 1)
+                    k = k.strip()
+                    v = v.strip()
+                    if v.lower() in ("true", "false"):
+                        d[k] = v.lower() == "true"
+                    elif v.isdigit() or (v.startswith("-") and v[1:].isdigit()):
+                        d[k] = int(v)
+                    else:
+                        d[k] = v
+            return d
     return None
 
 
@@ -198,8 +342,16 @@ def infer_diagram(question: dict) -> dict | None:
 
 def diagram_spec(question: dict) -> dict | None:
     spec = _normalize_diagram(question.get("diagram"))
+    if spec and spec.get("type") == "coordinate_plane" and spec.get("mode") == "quadrant":
+        spec = None
     if spec:
         return spec
+    coord = infer_coordinate_diagram(question)
+    if coord:
+        return coord
+    geo = hgd.infer_geometry_diagram(question)
+    if geo:
+        return geo
     return infer_diagram(question)
 
 
@@ -214,6 +366,13 @@ def render_svg(question: dict) -> str | None:
         return svg_sqrt_number_line(int(spec.get("base", 1)), int(spec.get("perp", 1)))
     if kind == "sqrt_extend":
         return svg_sqrt_extend(str(spec.get("base_label", "√2")), int(spec.get("perp", 1)))
+    if kind == "coordinate_plane":
+        if spec.get("mode") == "quadrant":
+            return None
+        return svg_coordinate_plane(int(spec.get("x", 0)), int(spec.get("y", 0)))
+    geo = hgd.render_geometry_svg(spec)
+    if geo:
+        return geo
     return None
 
 
@@ -233,6 +392,10 @@ def kid_friendly_prompt(question: dict, spec: dict | None = None) -> str | None:
         return "Look at the diagram. What is the length of the hypotenuse OB?"
     if kind == "sqrt_extend":
         return "Look at the diagram. What is the length of the hypotenuse OB?"
+    if kind == "coordinate_plane":
+        if spec.get("mode") == "quadrant":
+            return None
+        return "Point P is marked on the coordinate plane. What are its coordinates?"
     return None
 
 
@@ -317,16 +480,23 @@ def _fix_options_for_diagram(question: dict, spec: dict) -> None:
 
 def enrich_question(question: dict, *, rewrite_prompt: bool = True) -> dict:
     """Attach diagram metadata and optional kid-friendly prompt to a question dict."""
-    spec = diagram_spec(question)
-    if not spec:
-        return question
     out = dict(question)
-    out["diagram"] = spec
-    if rewrite_prompt:
-        short = kid_friendly_prompt(out, spec)
-        if short:
-            out["question"] = short
-    if spec.get("type") in ("unit_square", "sqrt_number_line", "sqrt_extend"):
-        if _needs_option_fix(out, spec):
-            _fix_options_for_diagram(out, spec)
-    return out
+    raw = _normalize_diagram(question.get("diagram"))
+    if raw and raw.get("type") == "coordinate_plane" and raw.get("mode") == "quadrant":
+        x, y = int(raw["x"]), int(raw["y"])
+        out.pop("diagram", None)
+        if rewrite_prompt:
+            out["question"] = _quadrant_prompt(x, y)
+        return out
+
+    spec = diagram_spec(question)
+    if spec:
+        out["diagram"] = spec
+        if rewrite_prompt:
+            short = kid_friendly_prompt(out, spec)
+            if short:
+                out["question"] = short
+        if spec.get("type") in ("unit_square", "sqrt_number_line", "sqrt_extend"):
+            if _needs_option_fix(out, spec):
+                _fix_options_for_diagram(out, spec)
+    return fix_quadrant_question(out)

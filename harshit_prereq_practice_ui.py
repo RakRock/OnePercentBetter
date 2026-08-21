@@ -427,7 +427,7 @@ def render_practice():
     )
 
     if not is_done:
-        q = questions[current]
+        q = hmd.fix_quadrant_question(questions[current])
         src = q.get("source", "template")
         src_label = {
             "chapter_pdf": "NCERT chapter bank",
@@ -438,7 +438,7 @@ def render_practice():
         st.markdown(
             f'<p style="color:#6b7280;font-size:0.88rem;text-align:center;">'
             f"Question {current + 1} of {total} · {q.get('category_label', '')} · "
-            f"Level {q.get('level', '')} · {src_label}</p>",
+            f"{src_label}</p>",
             unsafe_allow_html=True,
         )
         svg = hmd.render_svg(q)
@@ -628,65 +628,28 @@ def render_practice():
 
 
 def _render_choices(q: dict, current: int, prereq_id: int) -> int | None:
-    opts = q["options"]
-    st.markdown(
-        """
-<style>
-.hm-opt-card {
-  text-align: center;
-  font-size: 1.28rem;
-  font-weight: 650;
-  line-height: 1.45;
-  padding: 0.15rem 0.35rem 0.35rem;
-  color: #1f2937;
-}
-.hm-opt-card sup {
-  font-size: 0.82em !important;
-  font-weight: 700 !important;
-}
-section.main .hm-opt-row .stButton > button[kind="secondary"] {
-    width: 100% !important;
-    min-height: 2.4rem;
-    margin-top: 0.15rem;
-    padding: 0.45rem 0.75rem !important;
-    font-size: 0.92rem !important;
-    font-weight: 600 !important;
-    background: #ffffff !important;
-    color: #4338ca !important;
-    border: 2px solid #e5e7eb !important;
-    border-radius: 12px !important;
-}
-section.main .hm-opt-row .stButton > button[kind="secondary"]:hover {
-    border-color: #6366f1 !important;
-    background: #f5f3ff !important;
-}
-</style>
-""",
-        unsafe_allow_html=True,
-    )
-
-    visible = [(i, str(o).strip()) for i, o in enumerate(opts) if str(o).strip()]
+    visible = [(i, str(o).strip()) for i, o in enumerate(q["options"]) if str(o).strip()]
     math_opts = any("^" in o or "²" in o or "³" in o or "×" in o or "√" in o for _, o in visible)
-    use_single_col = math_opts or any(len(o) > 12 for _, o in visible)
+    use_single_col = math_opts or any(len(o) > 24 for _, o in visible)
 
-    for pos, (i, opt) in enumerate(visible):
-        letter = chr(65 + pos)
-        if use_single_col:
-            col = st.container()
-        else:
-            if pos % 2 == 0:
-                ans_col1, ans_col2 = st.columns(2, gap="medium")
-            col = ans_col1 if pos % 2 == 0 else ans_col2
-        with col:
-            st.markdown(
-                f'<div class="hm-opt-row"><div class="hm-opt-card">{hmr.format_math_display(opt)}</div></div>',
-                unsafe_allow_html=True,
-            )
+    if use_single_col:
+        for i, opt in visible:
             if st.button(
-                f"Choose {letter}",
+                hmr.format_math_plain(opt),
                 key=f"hm_pr_opt_{prereq_id}_{current}_{i}",
                 use_container_width=True,
                 type="secondary",
             ):
                 return i
+    else:
+        cols = st.columns(2, gap="medium")
+        for pos, (i, opt) in enumerate(visible):
+            with cols[pos % 2]:
+                if st.button(
+                    hmr.format_math_plain(opt),
+                    key=f"hm_pr_opt_{prereq_id}_{current}_{i}",
+                    use_container_width=True,
+                    type="secondary",
+                ):
+                    return i
     return None

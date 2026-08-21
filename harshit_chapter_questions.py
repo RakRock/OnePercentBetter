@@ -173,7 +173,7 @@ def normalize_question(raw: dict, prereq_id: int, topic_id: int, level: str) -> 
 
     qid = str(raw.get("id") or f"p{prereq_id}_t{topic_id}_{level}_{uuid.uuid4().hex[:8]}")
     ch = chapter_for_topic(prereq_id, topic_id)
-    return {
+    out = {
         "id": qid,
         "question": hmr.normalize_unit_coefficients(
             hmr.sanitize_grok_math_text(str(raw.get("question", "")))
@@ -190,6 +190,9 @@ def normalize_question(raw: dict, prereq_id: int, topic_id: int, level: str) -> 
         "chapter_num": raw.get("chapter_num", ch),
         "chapter_ref": raw.get("chapter_ref", ""),
     }
+    if isinstance(raw.get("diagram"), dict):
+        out["diagram"] = raw["diagram"]
+    return out
 
 
 def pick_question(

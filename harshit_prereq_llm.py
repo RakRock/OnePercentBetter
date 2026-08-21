@@ -65,6 +65,16 @@ RULES:
 - Optional "chapter_ref" field: section or example reference (e.g. "Ex 1.2 Q3 style").
 - Vary wording and structure — do NOT repeat the same template across questions.
 
+COORDINATE PLANE (Plot Points / Ch 3):
+- NEVER ask "Which point lies at (a, b)?" with the coordinates in the question — that gives away the answer.
+- For reading coordinates from a graph: "Point P is marked on the coordinate plane. What are its coordinates?" and include "diagram": {{"type": "coordinate_plane", "x": <int>, "y": <int>, "mode": "read_coords"}}.
+- For quadrant questions: always include the coordinates in the question (e.g. "Point (-5, 3) lies in which quadrant?") — no graph and never "Point P is marked on the graph".
+
+EUCLIDEAN GEOMETRY (PreReq 4 — angles, triangles, quadrilaterals, circles):
+- Every geometry question should reference a labelled figure (ABCD, △ABC, circle O, etc.).
+- Include optional "diagram" object matching the shape, e.g. {{"type": "rhombus", "show_diagonals": true}}, {{"type": "triangle", "angle_a": 50, "angle_b": 60}}, {{"type": "circle", "variant": "chord"}}.
+- Types: parallelogram, rectangle, rhombus, trapezium, triangle, circle, parallel_transversal, intersecting_lines, angle_arc.
+
 FORBIDDEN:
 - Meta/categorization questions ("Which best describes this chapter example?").
 - True/false or yes/no questions.

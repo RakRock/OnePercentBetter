@@ -751,7 +751,12 @@ def _gen_p3_t1(level: str) -> dict:
             x, y = random.randint(-8, 8), random.randint(-8, 8)
         quad = _quadrant_label(x, y)
         opts, ans = _shuffle_options(quad, ["I", "II", "III", "IV"])
-        return _mcq(3, 1, level, f"Point ({x}, {y}) lies in Quadrant?", opts, ans, f"({x}, {y}) is in Quadrant {quad}.")
+        return _mcq(
+            3, 1, level,
+            f"Point ({x}, {y}) lies in which quadrant?",
+            opts, ans,
+            f"({x}, {y}) is in Quadrant {quad}.",
+        )
     if level == "C":
         x, y = random.randint(-6, 6), random.randint(-6, 6)
         while x == 0 or y == 0:
@@ -809,20 +814,36 @@ def _gen_p4_t1(level: str) -> dict:
         if random.choice([True, False]):
             sup = 180 - angle
             opts, ans = _shuffle_options(f"{sup}°", [f"{angle}°", f"{90 - angle}°", f"{angle + 90}°"])
-            return _mcq(4, 1, level, f"An angle measures {angle}°. Its supplement is?", opts, ans)
+            return _mcq(
+                4, 1, level, f"An angle measures {angle}°. Its supplement is?", opts, ans,
+                diagram={"type": "angle_arc", "degrees": angle},
+            )
         comp = 90 - angle
         opts, ans = _shuffle_options(f"{comp}°", [f"{angle}°", f"{180 - angle}°", f"{angle + 90}°"])
-        return _mcq(4, 1, level, f"An acute angle measures {angle}°. Its complement is?", opts, ans)
+        return _mcq(
+            4, 1, level, f"An acute angle measures {angle}°. Its complement is?", opts, ans,
+            diagram={"type": "angle_arc", "degrees": angle},
+        )
     if level == "C":
         angle = random.randint(40, 70)
         alt = angle
         corr = 180 - angle
         opts, ans = _shuffle_options(f"{corr}°", [f"{alt}°", f"{90 - angle}°", f"{angle + 90}°"])
-        return _mcq(4, 1, level, f"Two parallel lines are cut by a transversal. One interior angle is {angle}°. A co-interior angle on the same side is?", opts, ans, "Co-interior angles are supplementary.")
+        return _mcq(
+            4, 1, level,
+            f"Two parallel lines are cut by a transversal. One interior angle is {angle}°. A co-interior angle on the same side is?",
+            opts, ans, "Co-interior angles are supplementary.",
+            diagram={"type": "parallel_transversal", "angle": angle},
+        )
     a, b = random.randint(20, 50), random.randint(20, 50)
     vert = b
     opts, ans = _shuffle_options(f"{vert}°", [f"{180 - b}°", f"{90 - b}°", f"{a + b}°"])
-    return _mcq(4, 1, level, f"Two lines intersect. One angle is {a}° and its adjacent angle is {b}°. A vertically opposite angle to {b}° is?", opts, ans, "Vertically opposite angles are equal.")
+    return _mcq(
+        4, 1, level,
+        f"Two lines intersect. One angle is {a}° and its adjacent angle is {b}°. A vertically opposite angle to {b}° is?",
+        opts, ans, "Vertically opposite angles are equal.",
+        diagram={"type": "intersecting_lines", "angle_a": a, "angle_b": b},
+    )
 
 
 def _gen_p4_t2(level: str) -> dict:
@@ -832,50 +853,65 @@ def _gen_p4_t2(level: str) -> dict:
             b = random.randint(20, 60)
         third = 180 - a - b
         opts, ans = _shuffle_options(f"{third}°", [f"{a + b}°", f"{180 - a}°", f"{90}°"])
-        return _mcq(4, 2, level, f"In a triangle, two angles are {a}° and {b}°. The third angle is?", opts, ans, "Angles in a triangle sum to 180°.")
+        return _mcq(
+            4, 2, level, f"In a triangle, two angles are {a}° and {b}°. The third angle is?", opts, ans,
+            "Angles in a triangle sum to 180°.",
+            diagram={"type": "triangle", "angle_a": a, "angle_b": b},
+        )
     if level == "B":
         interior = random.randint(40, 100)
         exterior = 180 - interior
         opts, ans = _shuffle_options(f"{exterior}°", [f"{interior}°", f"{180 + interior}°", f"{90}°"])
-        return _mcq(4, 2, level, f"An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is {interior}° and the other is 35°, the exterior angle is?", opts, ans)
+        return _mcq(
+            4, 2, level,
+            f"An exterior angle of a triangle equals the sum of the two remote interior angles. If one remote interior angle is {interior}° and the other is 35°, the exterior angle is?",
+            opts, ans,
+            diagram={"type": "triangle", "angle_a": interior, "angle_b": 35, "exterior": True},
+        )
     if level == "C":
         rule = random.choice(["SSS", "SAS", "ASA"])
         wrong = [r for r in ["SSS", "SAS", "ASA", "AAA"] if r != rule]
         opts, ans = _shuffle_options(rule, wrong[:3])
-        return _mcq(4, 2, level, f"Which congruence rule is listed: {rule}?", opts, ans)
+        return _mcq(4, 2, level, f"Which congruence rule is listed: {rule}?", opts, ans, diagram={"type": "triangle"})
     if level == "D":
         base = random.randint(4, 12)
         opts, ans = _shuffle_options(f"{180 - 2 * base}°", [f"{base}°", f"{2 * base}°", f"{90 - base}°"])
-        return _mcq(4, 2, level, f"In an isosceles triangle, each base angle is {base}°. The vertex angle is?", opts, ans)
+        return _mcq(
+            4, 2, level, f"In an isosceles triangle, each base angle is {base}°. The vertex angle is?", opts, ans,
+            diagram={"type": "triangle", "angle_a": base, "angle_b": base},
+        )
     a, b, c = 5, 7, 10
     opts, ans = _shuffle_options("No", ["Yes", "Maybe", "Only if right-angled"])
-    return _mcq(4, 2, level, f"Can a triangle have sides {a}, {b}, and {c}?", opts, ans, "Check triangle inequality: 5 + 7 > 10 fails.")
+    return _mcq(4, 2, level, f"Can a triangle have sides {a}, {b}, and {c}?", opts, ans, "Check triangle inequality: 5 + 7 > 10 fails.", diagram={"type": "triangle"})
 
 
 def _gen_p4_t3(level: str) -> dict:
     if level == "A":
         prop = random.choice([
-            ("A parallelogram always has:", "Opposite sides parallel", ["All sides equal", "Diagonals always equal", "All angles 90°"]),
-            ("Opposite sides of a parallelogram are:", "Equal and parallel", ["Perpendicular", "Unequal", "Only parallel"]),
-            ("Adjacent angles in a parallelogram are:", "Supplementary", ["Equal", "Complementary", "Right angles"]),
+            ("A parallelogram always has:", "Opposite sides parallel", ["All sides equal", "Diagonals always equal", "All angles 90°"], {"type": "parallelogram"}),
+            ("Opposite sides of a parallelogram are:", "Equal and parallel", ["Perpendicular", "Unequal", "Only parallel"], {"type": "parallelogram"}),
+            ("Adjacent angles in a parallelogram are:", "Supplementary", ["Equal", "Complementary", "Right angles"], {"type": "parallelogram", "show_diagonals": True}),
         ])
         opts, ans = _shuffle_options(prop[1], list(prop[2]))
-        return _mcq(4, 3, level, prop[0], opts, ans)
+        return _mcq(4, 3, level, prop[0], opts, ans, diagram=prop[3])
     if level == "B":
         shape = random.choice(["rectangle", "rhombus"])
         if shape == "rectangle":
             opts, ans = _shuffle_options("All angles 90°", ["All sides equal", "Diagonals perpendicular", "One pair of parallel sides"])
-            return _mcq(4, 3, level, "A rectangle always has:", opts, ans)
+            return _mcq(4, 3, level, "A rectangle always has:", opts, ans, diagram={"type": "rectangle", "show_diagonals": True})
         opts, ans = _shuffle_options("All sides equal", ["All angles 90°", "Diagonals equal", "Opposite sides not parallel"])
-        return _mcq(4, 3, level, "A rhombus always has:", opts, ans)
+        return _mcq(4, 3, level, "A rhombus always has:", opts, ans, diagram={"type": "rhombus", "show_diagonals": True})
     if level == "C":
         opts, ans = _shuffle_options("Exactly one pair of parallel sides", ["Two pairs of parallel sides", "All sides equal", "All angles equal"])
-        return _mcq(4, 3, level, "A trapezium has:", opts, ans)
+        return _mcq(4, 3, level, "A trapezium has:", opts, ans, diagram={"type": "trapezium"})
     if level == "D":
         opts, ans = _shuffle_options("Joining midpoints of two sides", ["Drawing a diagonal", "Extending a side", "Bisecting an angle"])
-        return _mcq(4, 3, level, "The mid-point theorem is about:", opts, ans)
+        return _mcq(4, 3, level, "The mid-point theorem is about:", opts, ans, diagram={"type": "triangle", "midpoints": True})
     opts, ans = _shuffle_options("Diagonals bisect each other", ["All sides equal", "All angles 90°", "One axis of symmetry only"])
-    return _mcq(4, 3, level, "Which property is true for every parallelogram?", opts, ans)
+    return _mcq(
+        4, 3, level, "Which property is true for every parallelogram?", opts, ans,
+        diagram={"type": "parallelogram", "show_diagonals": True},
+    )
 
 
 def _gen_p4_t4(level: str) -> dict:
@@ -883,22 +919,36 @@ def _gen_p4_t4(level: str) -> dict:
         r = random.randint(3, 12)
         d = 2 * r
         opts, ans = _shuffle_options(f"{d}", [f"{r}", f"{r + d}", f"{d + 2}"])
-        return _mcq(4, 4, level, f"A circle has radius {r} cm. Its diameter is?", opts, ans)
+        return _mcq(
+            4, 4, level, f"A circle has radius {r} cm. Its diameter is?", opts, ans,
+            diagram={"type": "circle", "variant": "basic"},
+        )
     if level == "B":
         angle = random.randint(30, 120)
         opts, ans = _shuffle_options(f"{angle}°", [f"{180 - angle}°", f"{angle / 2}°", f"{360 - angle}°"])
-        return _mcq(4, 4, level, f"An angle of {angle}° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?", opts, ans, "Angle at circumference is half the angle at centre.")
+        return _mcq(
+            4, 4, level,
+            f"An angle of {angle}° is subtended at the centre by a chord. The angle subtended by the same chord at any point on the major arc is half of this. That angle is?",
+            opts, ans, "Angle at circumference is half the angle at centre.",
+            diagram={"type": "circle", "variant": "center_angle", "angle": angle},
+        )
     if level == "C":
         opts, ans = _shuffle_options("Opposite angles sum to 180°", ["All angles equal", "Adjacent angles equal", "Diagonals equal"])
-        return _mcq(4, 4, level, "In a cyclic quadrilateral:", opts, ans)
+        return _mcq(4, 4, level, "In a cyclic quadrilateral:", opts, ans, diagram={"type": "circle", "variant": "cyclic"})
     if level == "D":
         r = random.randint(2, 7)
         length = round(2 * math.pi * r, 1)
         opts, ans = _shuffle_options(f"{length}", [f"{math.pi * r}", f"{r ** 2}", f"{length + 2}"])
-        return _mcq(4, 4, level, f"Circumference of a circle with radius {r} (use π ≈ 3.14)?", opts, ans, "C = 2πr.")
+        return _mcq(
+            4, 4, level, f"Circumference of a circle with radius {r} (use π ≈ 3.14)?", opts, ans, "C = 2πr.",
+            diagram={"type": "circle", "variant": "basic"},
+        )
     r = random.randint(3, 8)
     opts, ans = _shuffle_options("Equal chords subtend equal angles at the centre", ["Chord equals radius", "Tangent is parallel to radius", "Diameter equals circumference"])
-    return _mcq(4, 4, level, f"In a circle of radius {r}, which statement is always true?", opts, ans)
+    return _mcq(
+        4, 4, level, f"In a circle of radius {r}, which statement is always true?", opts, ans,
+        diagram={"type": "circle", "variant": "chord"},
+    )
 
 
 # ── Unit 5 generators ──

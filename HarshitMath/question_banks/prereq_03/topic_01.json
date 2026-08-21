@@ -400,6 +400,166 @@
         "source": "chapter_seed",
         "chapter_num": 3,
         "chapter_ref": ""
+      },
+      {
+        "id": "p3_t1_A_f440812d",
+        "question": "The point (0,-4) lies on which axis?",
+        "options": [
+          "origin",
+          "x-axis",
+          "y-axis",
+          "no axis"
+        ],
+        "answer": 2,
+        "explanation": "Points with x = 0 lie on the vertical axis in the system developed by Descartes for plane positions.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 intro"
+      },
+      {
+        "id": "p3_t1_A_bc46b0ec",
+        "question": "Point (-5, 3) belongs to which quadrant?",
+        "options": [
+          "Third",
+          "First",
+          "Fourth",
+          "Second"
+        ],
+        "answer": 3,
+        "explanation": "The Cartesian plane divides into quadrants based on signs of coordinates as introduced in the chapter.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ch 3 intro"
+      },
+      {
+        "id": "p3_t1_A_1bdd4e8b",
+        "question": "The point (1, -6) is located in which quadrant?",
+        "options": [
+          "Third",
+          "First",
+          "Second",
+          "Fourth"
+        ],
+        "answer": 3,
+        "explanation": "Signs of x and y coordinates determine the quadrant in the Cartesian system described in the chapter.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ch 3 intro"
+      },
+      {
+        "id": "p3_t1_A_3f063afb",
+        "question": "In which quadrant does (-3, -4) lie?",
+        "options": [
+          "Second",
+          "Third",
+          "Fourth",
+          "First"
+        ],
+        "answer": 1,
+        "explanation": "Negative values for both coordinates place the point in the third quadrant of the Cartesian plane.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ch 3 intro"
+      },
+      {
+        "id": "p3_t1_A_de90d604",
+        "question": "Point (-4, 5) lies in which quadrant?",
+        "options": [
+          "IV",
+          "II",
+          "I",
+          "III"
+        ],
+        "answer": 1,
+        "explanation": "The Cartesian system places a point with negative x-coordinate and positive y-coordinate in quadrant II.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1"
+      },
+      {
+        "id": "p3_t1_A_93d8f9cb",
+        "question": "Point (5, -2) lies in which quadrant?",
+        "options": [
+          "IV",
+          "I",
+          "III",
+          "II"
+        ],
+        "answer": 0,
+        "explanation": "Positive x and negative y places the point in quadrant IV of the Cartesian plane.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1"
+      },
+      {
+        "id": "p3_t1_A_7ac6faa4",
+        "question": "Point (-5, 3) lies in which quadrant?",
+        "options": [
+          "Second",
+          "Fourth",
+          "Third",
+          "First"
+        ],
+        "answer": 0,
+        "explanation": "In the Cartesian plane, a negative x-coordinate and positive y-coordinate place the point in the second quadrant.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 style"
+      },
+      {
+        "id": "p3_t1_A_106fe2e6",
+        "question": "Point (2, -4) lies in which quadrant?",
+        "options": [
+          "Fourth",
+          "Third",
+          "First",
+          "Second"
+        ],
+        "answer": 0,
+        "explanation": "Positive x and negative y place the point in the fourth quadrant of the Cartesian plane.",
+        "topic": 1,
+        "level": "A",
+        "prereq_id": 3,
+        "category": "p3_t1_A",
+        "category_label": "Plot Points · Level A",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 style"
       }
     ],
     "B": [
@@ -782,6 +942,166 @@
         "source": "chapter_seed",
         "chapter_num": 3,
         "chapter_ref": ""
+      },
+      {
+        "id": "p3_t1_B_7f45339b",
+        "question": "What are the coordinates of a point plotted 4 units to the right of origin and 5 units up?",
+        "options": [
+          "(4,5)",
+          "(4,-5)",
+          "(-4,5)",
+          "(5,4)"
+        ],
+        "answer": 0,
+        "explanation": "The Cartesian system describes any point's position from the origin using ordered pairs (x,y) as introduced in the chapter.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 intro"
+      },
+      {
+        "id": "p3_t1_B_7ead5a15",
+        "question": "Plot the point (-3,2). How many units left and up from the origin?",
+        "options": [
+          "3 left and 2 up",
+          "3 left and 2 down",
+          "2 left and 3 up",
+          "3 right and 2 up"
+        ],
+        "answer": 0,
+        "explanation": "Negative x shows left of origin while positive y shows above, following the plane position method in the chapter.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 intro"
+      },
+      {
+        "id": "p3_t1_B_1cce7155",
+        "question": "Plot (1,1) and (3,3). These points lie on which line through the origin?",
+        "options": [
+          "y = x",
+          "y = -x",
+          "x = y + 1",
+          "y = 2x"
+        ],
+        "answer": 0,
+        "explanation": "Points with equal x and y coordinates lie on the line y = x in the Cartesian plane.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 intro"
+      },
+      {
+        "id": "p3_t1_B_5a0ab7a9",
+        "question": "Which point lies at (4, -2) on the coordinate plane?",
+        "options": [
+          "(4, -2)",
+          "(2, 4)",
+          "( -2, 4)",
+          "(4, 2)"
+        ],
+        "answer": 0,
+        "explanation": "The Cartesian system from Descartes allows locating any point using its coordinates as shown in the chapter.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ch 3 intro"
+      },
+      {
+        "id": "p3_t1_B_a1b8cef6",
+        "question": "To locate point (2, -3) on the plane, how many units along the x-axis?",
+        "options": [
+          "3 units left",
+          "3 units right",
+          "2 units right",
+          "2 units left"
+        ],
+        "answer": 2,
+        "explanation": "The Cartesian system requires moving 2 units in the positive x direction from the origin.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1"
+      },
+      {
+        "id": "p3_t1_B_bb6e7475",
+        "question": "What movement reaches point (-1, 4) from the origin?",
+        "options": [
+          "1 unit left and 4 up",
+          "1 unit left and 4 down",
+          "4 units left and 1 up",
+          "1 unit right and 4 up"
+        ],
+        "answer": 0,
+        "explanation": "Negative x needs leftward movement while positive y needs upward movement in the Cartesian plane.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ch 3 Cartesian system"
+      },
+      {
+        "id": "p3_t1_B_bf46a659",
+        "question": "A point is located by moving 4 units right from the origin and then 7 units up. What are its coordinates?",
+        "options": [
+          "(4,7)",
+          "(-4,7)",
+          "(4,-7)",
+          "(7,4)"
+        ],
+        "answer": 0,
+        "explanation": "The Cartesian system assigns the horizontal distance as the x-coordinate and vertical as the y-coordinate, as introduced for describing a point in the plane.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 style"
+      },
+      {
+        "id": "p3_t1_B_f7ec34e6",
+        "question": "To mark the point (6, 1), move how many units right from the origin along the x-axis?",
+        "options": [
+          "1",
+          "0",
+          "6",
+          "-6"
+        ],
+        "answer": 2,
+        "explanation": "The first number in (x, y) is the x-coordinate showing horizontal movement right from origin in the Cartesian system.",
+        "topic": 1,
+        "level": "B",
+        "prereq_id": 3,
+        "category": "p3_t1_B",
+        "category_label": "Plot Points · Level B",
+        "source": "chapter_llm",
+        "chapter_num": 3,
+        "chapter_ref": "Ex 3.1 style"
       }
     ],
     "C": [
