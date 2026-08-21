@@ -4,7 +4,8 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Database (tracked for persistence across deploys)
+# Database (local runtime — do not commit)
+onepercent.db
 
 # OS
 .DS_Store
