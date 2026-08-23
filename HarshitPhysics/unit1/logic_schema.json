@@ -1,0 +1,2837 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 1,
+    "unit_title": "Light – Reflection and Refraction",
+    "ncert": "Class 10 Science, Chapter 9",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_physics_unit1_concepts",
+    "session_kind_mcq": "harshit_physics_unit1_mcq"
+  },
+  "glossary": [
+    {
+      "term": "luminous object",
+      "definition": "An object that produces its own light."
+    },
+    {
+      "term": "non-luminous",
+      "definition": "An object seen by reflected light, not by its own emission."
+    },
+    {
+      "term": "ray of light",
+      "definition": "A straight line showing direction of light travel."
+    },
+    {
+      "term": "normal",
+      "definition": "A line perpendicular to a surface at the point of incidence."
+    },
+    {
+      "term": "angle of incidence",
+      "definition": "Angle between incident ray and normal."
+    },
+    {
+      "term": "angle of reflection",
+      "definition": "Angle between reflected ray and normal."
+    },
+    {
+      "term": "virtual image",
+      "definition": "An image from which rays appear to come; rays do not actually meet there."
+    },
+    {
+      "term": "concave mirror",
+      "definition": "Spherical mirror with inward-curving reflecting surface."
+    },
+    {
+      "term": "convex mirror",
+      "definition": "Spherical mirror with outward-bulging reflecting surface."
+    },
+    {
+      "term": "pole (P)",
+      "definition": "Centre point of the mirror surface."
+    },
+    {
+      "term": "centre of curvature (C)",
+      "definition": "Centre of the sphere; lies on principal axis."
+    },
+    {
+      "term": "principal focus (F)",
+      "definition": "Point where parallel rays converge or appear to diverge from."
+    },
+    {
+      "term": "focal length (f)",
+      "definition": "Distance from pole P to principal focus F."
+    },
+    {
+      "term": "radius of curvature (R)",
+      "definition": "Radius of the sphere; PC = R; often R = 2f."
+    },
+    {
+      "term": "real image",
+      "definition": "Formed where light rays actually meet; can appear on a screen."
+    },
+    {
+      "term": "refraction",
+      "definition": "Bending of light when it passes between two media."
+    },
+    {
+      "term": "refractive index (n)",
+      "definition": "Ratio c/v; no unit; higher n means slower light."
+    },
+    {
+      "term": "convex lens",
+      "definition": "Thicker at middle; converges light; f positive."
+    },
+    {
+      "term": "concave lens",
+      "definition": "Thinner at middle; diverges light; f negative."
+    },
+    {
+      "term": "power of lens (P)",
+      "definition": "P = 1/f with f in metres; unit dioptre (D)."
+    },
+    {
+      "term": "magnification (m)",
+      "definition": "Ratio of image size to object size; sign shows orientation."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "How We See and Represent Light",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d1_c01",
+          "name": "Luminous objects",
+          "simple_answer": "A luminous object produces its own light. You see it because light travels from the object to your eyes.",
+          "visual": {
+            "type": "light_source_model",
+            "highlight": "source"
+          },
+          "why": "Light must be emitted before anything can be seen in darkness.",
+          "example": "The Sun, a burning candle, and a glowing bulb are luminous.",
+          "remember": "Luminous means the object is the light source — not just bright-looking.",
+          "common_confusion": "A white wall in daylight is not luminous; it reflects sunlight.",
+          "optional_detail": "Luminous objects are primary sources of light in a scene.",
+          "glossary_terms": [
+            "luminous object",
+            "light source"
+          ]
+        },
+        {
+          "id": "u1_d1_c02",
+          "name": "Non-luminous objects",
+          "simple_answer": "Non-luminous objects do not make their own light. We see them when light from another source reflects off them.",
+          "visual": {
+            "type": "light_source_model",
+            "highlight": "reflector"
+          },
+          "why": "Most things around you — books, walls, the Moon — are seen by reflected light.",
+          "example": "The Moon looks bright at night but shines by reflected sunlight.",
+          "remember": "Non-luminous ≠ invisible. Reflection makes them visible.",
+          "common_confusion": "The Moon is not a light source; it reflects the Sun's light.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "non-luminous",
+            "reflected light"
+          ]
+        },
+        {
+          "id": "u1_d1_c03",
+          "name": "Light source",
+          "simple_answer": "A light source is where light begins in a situation. It may be natural (Sun) or artificial (torch).",
+          "visual": {
+            "type": "light_source_model",
+            "highlight": "arrow_from_source"
+          },
+          "why": "Tracing from source → object → eye helps explain any seeing situation.",
+          "example": "In a room, the bulb is usually the main light source.",
+          "remember": "Always ask: where did the light start?",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "light source"
+          ]
+        },
+        {
+          "id": "u1_d1_c04",
+          "name": "Reflected light",
+          "simple_answer": "When light hits a surface and bounces back, that bounced light is reflected light.",
+          "visual": {
+            "type": "straight_ray",
+            "mode": "reflect",
+            "highlight": "reflected_ray"
+          },
+          "why": "Reflected light from non-luminous objects enters your eye so you can see them.",
+          "example": "You see your face in a mirror because of reflected light.",
+          "remember": "Reflection sends light back; it does not create new light.",
+          "common_confusion": "Reflection is not the same as refraction (bending through a medium).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reflected light",
+            "reflection"
+          ]
+        },
+        {
+          "id": "u1_d1_c05",
+          "name": "Light entering the eye",
+          "simple_answer": "Vision happens when light from an object enters your eye and forms a signal for your brain.",
+          "visual": {
+            "type": "eye_light_path",
+            "highlight": "eye"
+          },
+          "why": "No light entering the eye means no image — even if the object is there.",
+          "example": "Light from a page reflects into your eyes when you read.",
+          "remember": "See the path: source → object → eye.",
+          "common_confusion": "The eye detects light; it does not send light out to see (unlike a common cartoon idea).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "vision"
+          ]
+        },
+        {
+          "id": "u1_d1_c06",
+          "name": "Seeing in darkness",
+          "simple_answer": "In complete darkness there is no light to enter your eye, so objects cannot be seen — even if they are present.",
+          "visual": {
+            "type": "eye_light_path",
+            "mode": "dark"
+          },
+          "why": "Light is necessary for sight in the usual way we describe Class 10 optics.",
+          "example": "In a closed dark room, a book on the table is invisible until you switch on a lamp.",
+          "remember": "Darkness means insufficient light reaching the eye.",
+          "common_confusion": "Some animals see with very little light, but you still need some light to enter the eye.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "darkness"
+          ]
+        },
+        {
+          "id": "u1_d1_c07",
+          "name": "Straight-line propagation",
+          "simple_answer": "In a uniform medium, light travels in straight lines. This is called rectilinear propagation.",
+          "visual": {
+            "type": "straight_ray",
+            "mode": "straight",
+            "highlight": "ray"
+          },
+          "why": "Straight paths explain sharp shadows and why rays are drawn as straight lines.",
+          "example": "Sunlight through a small window makes a sharp bright patch on the floor.",
+          "remember": "Light rays are drawn straight until reflection or refraction changes direction.",
+          "common_confusion": "Diffraction (bending around tiny openings) is a higher-class topic — not used in basic ray diagrams.",
+          "optional_detail": "At very small scales light behaves as a wave; in Class 10 we use the ray model.",
+          "glossary_terms": [
+            "rectilinear propagation",
+            "ray"
+          ]
+        },
+        {
+          "id": "u1_d1_c08",
+          "name": "Ray of light",
+          "simple_answer": "A ray is a straight line with an arrow showing the direction light travels. It is a useful model, not a thin physical beam.",
+          "visual": {
+            "type": "straight_ray",
+            "mode": "single_ray",
+            "highlight": "arrow"
+          },
+          "why": "Rays help us predict reflection and refraction without drawing every wave.",
+          "example": "An arrow from a bulb to a book shows light travelling toward the book.",
+          "remember": "One arrow = one direction of light travel.",
+          "common_confusion": "A ray is a diagram tool; a real torch sends a wide beam of many rays.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ray of light"
+          ]
+        },
+        {
+          "id": "u1_d1_c09",
+          "name": "Beam of light",
+          "simple_answer": "A beam is a collection of many rays travelling together, often from a torch or sunlight through clouds.",
+          "visual": {
+            "type": "straight_ray",
+            "mode": "beam",
+            "highlight": "multiple_rays"
+          },
+          "why": "Beams become easier to understand when you imagine many parallel rays side by side.",
+          "example": "A laser pointer in fog shows a visible beam because dust scatters light.",
+          "remember": "A beam = many rays; a ray diagram often shows one representative ray.",
+          "common_confusion": "Do not look directly at the Sun or aim lasers at eyes — safety first.",
+          "optional_detail": "Laser demos should be teacher-supervised only.",
+          "glossary_terms": [
+            "beam of light"
+          ]
+        },
+        {
+          "id": "u1_d1_c10",
+          "name": "Source → object → eye",
+          "simple_answer": "To explain seeing: light leaves a source, hits an object (often by reflection), then enters your eye.",
+          "visual": {
+            "type": "eye_light_path",
+            "mode": "full_path",
+            "highlight": "path"
+          },
+          "why": "This three-step model works for most everyday and NCERT situations.",
+          "example": "Sun → Moon (reflect) → your eye: you see the Moon.",
+          "remember": "Draw the full path before deciding where an image forms.",
+          "common_confusion": "For a luminous object you may skip reflection off the object itself.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "light path"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Reflection and Plane Mirrors",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d2_c01",
+          "name": "Reflecting surface",
+          "simple_answer": "A reflecting surface sends light back instead of absorbing it. Polished mirrors reflect strongly; rough surfaces scatter light.",
+          "visual": {
+            "type": "plane_mirror_reflection",
+            "highlight": "surface"
+          },
+          "why": "Only the reflecting side of a mirror matters for ray diagrams.",
+          "example": "A calm pond reflects trees; a rough wall scatters light in many directions.",
+          "remember": "Shiny and smooth surfaces give clearer reflections.",
+          "common_confusion": "All surfaces reflect some light — even dull ones (otherwise we could not see them).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reflecting surface"
+          ]
+        },
+        {
+          "id": "u1_d2_c02",
+          "name": "Incident ray",
+          "simple_answer": "The incident ray is the incoming light ray that strikes a surface. The arrow points toward the surface.",
+          "visual": {
+            "type": "plane_mirror_reflection",
+            "highlight": "incident"
+          },
+          "why": "Every reflection story starts with identifying the incident ray.",
+          "example": "Light from a torch hitting a mirror is drawn as the incident ray.",
+          "remember": "Incident = incoming; arrow points to the surface.",
+          "common_confusion": "Do not confuse incident with reflected — direction of arrow matters.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "incident ray"
+          ]
+        },
+        {
+          "id": "u1_d2_c03",
+          "name": "Reflected ray",
+          "simple_answer": "The reflected ray leaves the surface after reflection. Its arrow points away from the surface.",
+          "visual": {
+            "type": "plane_mirror_reflection",
+            "highlight": "reflected"
+          },
+          "why": "The reflected ray shows where light goes after bouncing.",
+          "example": "In a mirror you see objects because reflected rays enter your eye.",
+          "remember": "Reflected ray arrow points away from the mirror.",
+          "common_confusion": "The reflected ray is not the same as the incident ray continued through the mirror.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reflected ray"
+          ]
+        },
+        {
+          "id": "u1_d2_c04",
+          "name": "Point of incidence",
+          "simple_answer": "The point of incidence is the exact spot on the surface where the incident ray meets it.",
+          "visual": {
+            "type": "plane_mirror_reflection",
+            "highlight": "incidence_point"
+          },
+          "why": "Angles and the normal are always drawn at this point.",
+          "example": "Where a laser dot hits a mirror is the point of incidence.",
+          "remember": "Mark this point before drawing the normal.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "point of incidence"
+          ]
+        },
+        {
+          "id": "u1_d2_c05",
+          "name": "The normal",
+          "simple_answer": "The normal is an imaginary line perpendicular to the surface at the point of incidence.",
+          "visual": {
+            "type": "normal_angle",
+            "highlight": "normal"
+          },
+          "why": "Angles of incidence and reflection are measured from the normal, not from the surface.",
+          "example": "At the spot where a ray hits a mirror, draw a dashed line at 90° to the mirror.",
+          "remember": "Measure reflection angles from the normal, not from the mirror.",
+          "common_confusion": "The normal and the reflecting surface are different lines.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "normal"
+          ]
+        },
+        {
+          "id": "u1_d2_c06",
+          "name": "Angle of incidence",
+          "simple_answer": "The angle of incidence is measured between the incident ray and the normal at the point of incidence.",
+          "visual": {
+            "type": "normal_angle",
+            "highlight": "angle_i"
+          },
+          "why": "It tells how steeply light arrives compared to the normal.",
+          "example": "A ray hitting head-on (along the normal) has zero angle of incidence.",
+          "remember": "Use the arc between incident ray and normal — not the surface.",
+          "common_confusion": "Measuring from the mirror surface gives the wrong angle (common error).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "angle of incidence"
+          ]
+        },
+        {
+          "id": "u1_d2_c07",
+          "name": "Angle of reflection",
+          "simple_answer": "The angle of reflection is measured between the reflected ray and the normal at the point of incidence.",
+          "visual": {
+            "type": "normal_angle",
+            "highlight": "angle_r"
+          },
+          "why": "It describes how steeply light leaves after reflection.",
+          "example": "If incidence is 30° from the normal, reflection is also 30° on the other side.",
+          "remember": "Same side rule: both angles are measured from the normal on opposite sides of it.",
+          "common_confusion": "Do not measure reflection angle from the mirror surface.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "angle of reflection"
+          ]
+        },
+        {
+          "id": "u1_d2_c08",
+          "name": "First law of reflection",
+          "simple_answer": "The angle of incidence equals the angle of reflection, when both are measured from the normal.",
+          "visual": {
+            "type": "normal_angle",
+            "highlight": "equal_angles",
+            "show_labels": true
+          },
+          "why": "This law lets you predict the direction of the reflected ray.",
+          "example": "A ray at 40° to the normal reflects at 40° on the other side of the normal.",
+          "remember": "i = r (both measured from the normal).",
+          "common_confusion": "Equal angles refer to incidence and reflection — not incident and refracted rays.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "first law of reflection"
+          ]
+        },
+        {
+          "id": "u1_d2_c09",
+          "name": "Second law of reflection",
+          "simple_answer": "The incident ray, the normal at the point of incidence, and the reflected ray all lie in the same plane.",
+          "visual": {
+            "type": "plane_mirror_reflection",
+            "highlight": "same_plane",
+            "mode": "3d_hint"
+          },
+          "why": "All three belong to one flat sheet — you draw them on one diagram plane.",
+          "example": "When you tilt the mirror, the whole ray diagram plane tilts with it.",
+          "remember": "Same plane means one 2D diagram is enough for plane mirrors.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "second law of reflection"
+          ]
+        },
+        {
+          "id": "u1_d2_c10",
+          "name": "Plane-mirror image properties",
+          "simple_answer": "A plane mirror gives a virtual, erect image the same size as the object, as far behind the mirror as the object is in front.",
+          "visual": {
+            "type": "plane_mirror_reflection",
+            "mode": "image_properties",
+            "highlight": "virtual_image"
+          },
+          "why": "These properties explain why your mirror reflection looks life-sized and upright.",
+          "example": "You appear to stand as far behind the mirror as you stand in front of it.",
+          "remember": "Virtual + erect + same size + laterally inverted.",
+          "common_confusion": "Virtual does not mean invisible — you see it, but light does not actually come from behind the mirror.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "virtual image",
+            "plane mirror"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Spherical Mirrors",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d3_c01",
+          "name": "Spherical reflecting surface",
+          "simple_answer": "A spherical mirror is part of a sphere's surface. Its curve affects how parallel rays converge or spread.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "mirror_type": "concave",
+            "highlight": "curved_surface"
+          },
+          "why": "Curvature determines whether rays come together or spread apart.",
+          "example": "A shiny inside of a spoon is roughly a concave spherical surface.",
+          "remember": "Spherical = part of a sphere; not flat like a plane mirror.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "spherical mirror"
+          ]
+        },
+        {
+          "id": "u1_d3_c02",
+          "name": "Concave mirror",
+          "simple_answer": "A concave mirror curves inward (reflecting surface faces the centre of the sphere). It tends to converge parallel rays.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "mirror_type": "concave",
+            "highlight": "reflecting_inward"
+          },
+          "why": "Converging mirrors can form real images on a screen.",
+          "example": "The inner surface of a spoon facing you acts like a concave mirror.",
+          "remember": "Concave = cave-like = curves in.",
+          "common_confusion": "Do not look at the Sun with a concave mirror — concentrated light can harm eyes.",
+          "optional_detail": "NCERT paper-burning demo: teacher demonstration only, never unsupervised.",
+          "glossary_terms": [
+            "concave mirror"
+          ]
+        },
+        {
+          "id": "u1_d3_c03",
+          "name": "Convex mirror",
+          "simple_answer": "A convex mirror curves outward. Parallel rays reflect as if coming from a point behind the mirror — they diverge.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "mirror_type": "convex",
+            "highlight": "reflecting_outward"
+          },
+          "why": "Diverging mirrors give wide views — useful for safety mirrors.",
+          "example": "The outer bulge of a spoon is like a convex mirror.",
+          "remember": "Convex = bulges out toward the object.",
+          "common_confusion": "Convex mirrors always give virtual, erect, diminished images for real objects.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "convex mirror"
+          ]
+        },
+        {
+          "id": "u1_d3_c04",
+          "name": "Reflecting side",
+          "simple_answer": "Only the shiny, inner or outer curved face reflects strongly. The back of a mirror is usually painted and non-reflecting.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "highlight": "reflecting_side"
+          },
+          "why": "Ray diagrams always use the reflecting side of the mirror arc.",
+          "example": "In NCERT diagrams the shaded side is non-reflecting.",
+          "remember": "Draw rays hitting the polished arc, not the back.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reflecting surface"
+          ]
+        },
+        {
+          "id": "u1_d3_c05",
+          "name": "Pole (P)",
+          "simple_answer": "The pole P is the centre point of the mirror's reflecting surface. It lies on the mirror itself.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "highlight": "P"
+          },
+          "why": "P is often chosen as the origin in sign conventions.",
+          "example": "The middle of a spherical mirror strip is the pole.",
+          "remember": "P is on the mirror; C is not on the mirror.",
+          "common_confusion": "Do not confuse P with F or C.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "pole",
+            "P"
+          ]
+        },
+        {
+          "id": "u1_d3_c06",
+          "name": "Centre of curvature (C)",
+          "simple_answer": "C is the centre of the sphere of which the mirror forms a part. It lies on the principal axis, not on the mirror.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "highlight": "C"
+          },
+          "why": "Distance PC equals the radius of curvature R.",
+          "example": "For a concave mirror, C is in front of the reflecting surface.",
+          "remember": "C is outside the mirror surface.",
+          "common_confusion": "For convex mirrors, C is behind the mirror.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "centre of curvature",
+            "C"
+          ]
+        },
+        {
+          "id": "u1_d3_c07",
+          "name": "Radius of curvature (R)",
+          "simple_answer": "R is the radius of the sphere. For the mirror, PC = R.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "highlight": "R",
+            "show_R_segment": true
+          },
+          "why": "R links the mirror's size to its focusing strength.",
+          "example": "If PC is 12 cm, then R = 12 cm.",
+          "remember": "R = 2f for small-aperture spherical mirrors.",
+          "common_confusion": "Do not use R and f as the same number without checking R = 2f.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "radius of curvature",
+            "R"
+          ]
+        },
+        {
+          "id": "u1_d3_c08",
+          "name": "Principal axis",
+          "simple_answer": "The principal axis is the straight line through P and C, perpendicular to the mirror at P.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "highlight": "principal_axis"
+          },
+          "why": "Most standard rays are drawn parallel to or through points on this axis.",
+          "example": "Imagine a line through the middle of a spherical mirror strip.",
+          "remember": "Principal axis passes through P and C.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "principal axis"
+          ]
+        },
+        {
+          "id": "u1_d3_c09",
+          "name": "Aperture",
+          "simple_answer": "The aperture is the diameter of the reflecting surface. NCERT often uses small-aperture mirrors where R = 2f holds well.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "highlight": "aperture"
+          },
+          "why": "Small aperture keeps the spherical mirror formula simple in Class 10.",
+          "example": "The width MN of the mirror opening is the aperture in diagrams.",
+          "remember": "Large mirrors break the small-angle approximation used in school formulas.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "aperture"
+          ]
+        },
+        {
+          "id": "u1_d3_c10",
+          "name": "Mirror-type identification",
+          "simple_answer": "Concave: reflecting surface faces inward. Convex: reflecting surface bulges outward. Compare which side is shiny.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "mode": "compare",
+            "highlight": "both_types"
+          },
+          "why": "Correct identification picks the right ray rules and image properties.",
+          "example": "Shiny inside of spoon ≈ concave; shiny outside bulge ≈ convex.",
+          "remember": "Ask: does the mirror surface hug the centre or push away from it?",
+          "common_confusion": "Students often swap concave and convex — check the reflecting side.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "concave mirror",
+            "convex mirror"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Focus and Mirror Ray Behaviour",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d4_c01",
+          "name": "Principal focus (F)",
+          "simple_answer": "F is the point on the principal axis where rays parallel to the axis converge (concave) or appear to diverge from (convex).",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "mirror_type": "concave",
+            "highlight": "F"
+          },
+          "why": "F is where parallel beams are focused or seem to spread from.",
+          "example": "Sunlight parallel to the axis meets near F for a concave mirror.",
+          "remember": "Label F on the principal axis between P and C for concave mirrors.",
+          "common_confusion": "F is not the same as C — F is midway between P and C when R = 2f.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "principal focus",
+            "F"
+          ]
+        },
+        {
+          "id": "u1_d4_c02",
+          "name": "Focal length (f)",
+          "simple_answer": "Focal length f is the distance from pole P to principal focus F along the principal axis.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "highlight": "f_segment"
+          },
+          "why": "f measures how strongly a mirror converges or diverges light.",
+          "example": "If PF = 6 cm, then f = 6 cm (for that mirror).",
+          "remember": "f is measured from P to F — not from C to F unless you know R = 2f.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "focal length",
+            "f"
+          ]
+        },
+        {
+          "id": "u1_d4_c03",
+          "name": "Real focus",
+          "simple_answer": "For a concave mirror, parallel rays actually meet at F after reflection. The focus is real — light converges there.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "mirror_type": "concave",
+            "highlight": "real_focus"
+          },
+          "why": "Real focus allows a hot spot on paper — teacher demo only, never at the Sun unsupervised.",
+          "example": "Sharp bright spot on paper when sunlight is parallel to the axis.",
+          "remember": "Real focus = rays actually cross.",
+          "common_confusion": "Real focus does not mean the image is always erect.",
+          "optional_detail": "Sun-concentration activities require adult supervision; use simulations when possible.",
+          "glossary_terms": [
+            "real focus"
+          ]
+        },
+        {
+          "id": "u1_d4_c04",
+          "name": "Virtual focus",
+          "simple_answer": "For a convex mirror, reflected rays do not actually meet; they appear to come from F behind the mirror.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "mirror_type": "convex",
+            "highlight": "virtual_focus"
+          },
+          "why": "Virtual focus is found by extending reflected rays backward as dotted lines.",
+          "example": "Convex rear-view mirrors seem to have a focus behind the glass.",
+          "remember": "Virtual focus — extend rays backward to locate F.",
+          "common_confusion": "Virtual focus is still a useful diagram point even though light does not cross there.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "virtual focus"
+          ]
+        },
+        {
+          "id": "u1_d4_c05",
+          "name": "Converging mirror",
+          "simple_answer": "A converging mirror brings parallel rays closer together. Concave mirrors are converging mirrors.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "mirror_type": "concave",
+            "highlight": "converging"
+          },
+          "why": "Converging mirrors can project real images onto screens.",
+          "example": "Parallel rays from a distant object meet near F of a concave mirror.",
+          "remember": "Concave = converging.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "converging mirror"
+          ]
+        },
+        {
+          "id": "u1_d4_c06",
+          "name": "Diverging mirror",
+          "simple_answer": "A diverging mirror spreads parallel rays apart. Convex mirrors are diverging mirrors.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "mirror_type": "convex",
+            "highlight": "diverging"
+          },
+          "why": "Diverging mirrors give wider fields of view with smaller images.",
+          "example": "Parallel rays reflect as if coming from F behind a convex mirror.",
+          "remember": "Convex = diverging.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "diverging mirror"
+          ]
+        },
+        {
+          "id": "u1_d4_c07",
+          "name": "Parallel incident rays",
+          "simple_answer": "Rays from a very distant object are nearly parallel to the principal axis when they reach the mirror.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "highlight": "parallel_incident"
+          },
+          "why": "Parallel rays are the standard starting ray in mirror diagrams.",
+          "example": "Sunlight on a mirror is often drawn as parallel rays.",
+          "remember": "Parallel to axis → reflects through F (concave) or appears from F (convex).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "parallel rays"
+          ]
+        },
+        {
+          "id": "u1_d4_c08",
+          "name": "Reflected-ray behaviour",
+          "simple_answer": "After reflection, concave rays converge toward F; convex rays spread so backward extensions meet at F behind the mirror.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "mode": "both",
+            "highlight": "reflected"
+          },
+          "why": "Knowing the pattern lets you sketch images quickly.",
+          "example": "Compare concave and convex diagrams side by side.",
+          "remember": "Draw reflected arrows away from mirror; extend backward for convex.",
+          "common_confusion": "Do not bend rays toward the wrong focus type.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reflected ray"
+          ]
+        },
+        {
+          "id": "u1_d4_c09",
+          "name": "Relationship R = 2f",
+          "simple_answer": "For spherical mirrors of small aperture, radius of curvature R equals twice the focal length: R = 2f.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "highlight": "R_2f",
+            "show_segments": true
+          },
+          "why": "Links measurable R to the useful quantity f in problems.",
+          "example": "If f = 5 cm, then R = 10 cm and PC = 10 cm.",
+          "remember": "R = 2f → F lies midway between P and C.",
+          "common_confusion": "Using f when you mean R (or vice versa) is a common numerical error.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "R = 2f"
+          ]
+        },
+        {
+          "id": "u1_d4_c10",
+          "name": "Position of F between P and C",
+          "simple_answer": "For a concave mirror, F lies on the principal axis between pole P and centre C — closer to P.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "mirror_type": "concave",
+            "highlight": "P_F_C"
+          },
+          "why": "Order on axis: P — F — C for concave mirrors.",
+          "example": "When marking a mirror setup, place F halfway between P and C if R = 2f.",
+          "remember": "P–F–C order on the same side as the object for concave mirrors.",
+          "common_confusion": "F is not at C unless f = R/2 still places F between them when R = 2f.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "principal axis"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Concave Mirror Images: Object at a Distance",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d5_c01",
+          "name": "Object at infinity",
+          "simple_answer": "When the object is very far away, its rays reaching the mirror are nearly parallel to the principal axis.",
+          "visual": {
+            "type": "concave_image",
+            "position": "infinity"
+          },
+          "why": "This is the starting case for many concave-mirror ray diagrams.",
+          "example": "A distant tree or the Sun acts like an object at infinity.",
+          "remember": "Parallel rays → image forms at focus F.",
+          "common_confusion": "Infinity here means very far, not literally endless in problems.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "object at infinity"
+          ]
+        },
+        {
+          "id": "u1_d5_c02",
+          "name": "Object beyond C",
+          "simple_answer": "The object lies outside the centre of curvature — farther from the mirror than point C.",
+          "visual": {
+            "type": "concave_image",
+            "position": "beyond_C"
+          },
+          "why": "Image location and size change predictably as the object moves along the axis.",
+          "example": "Place a candle beyond C on your marked principal axis.",
+          "remember": "Object beyond C → real, inverted, diminished image between F and C.",
+          "common_confusion": "Beyond C means object distance > R = 2f.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "centre of curvature"
+          ]
+        },
+        {
+          "id": "u1_d5_c03",
+          "name": "Object at C",
+          "simple_answer": "The object is placed exactly at the centre of curvature C on the principal axis.",
+          "visual": {
+            "type": "concave_image",
+            "position": "at_C"
+          },
+          "why": "A special symmetric case: object and image distances are equal.",
+          "example": "Object at C gives image also at C.",
+          "remember": "Object at C → image at C, same size, inverted, real.",
+          "common_confusion": "At C is not the same as at F.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "object distance"
+          ]
+        },
+        {
+          "id": "u1_d5_c04",
+          "name": "Image position",
+          "simple_answer": "Image position tells where rays actually meet (real) or appear to meet (virtual) after reflection.",
+          "visual": {
+            "type": "concave_image",
+            "highlight": "image_point"
+          },
+          "why": "You locate it on a ray diagram where reflected rays cross.",
+          "example": "Mark where two reflected rays intersect — that is the image point.",
+          "remember": "Real image: rays cross; virtual: extend rays backward.",
+          "common_confusion": "Position is measured from pole P along the axis.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "image distance"
+          ]
+        },
+        {
+          "id": "u1_d5_c05",
+          "name": "Image size",
+          "simple_answer": "Image size compares how tall the image is relative to the object — enlarged, same, or diminished.",
+          "visual": {
+            "type": "concave_image",
+            "highlight": "size_compare"
+          },
+          "why": "Size helps classify the image without doing calculations first.",
+          "example": "A small distant image on a screen is diminished.",
+          "remember": "Compare heights along a vertical line through the axis.",
+          "common_confusion": "Size is not the same as magnification sign.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "magnification"
+          ]
+        },
+        {
+          "id": "u1_d5_c06",
+          "name": "Image orientation",
+          "simple_answer": "Orientation means whether the image is erect (same way up) or inverted (upside down).",
+          "visual": {
+            "type": "concave_image",
+            "highlight": "inverted"
+          },
+          "why": "Real images from concave mirrors are usually inverted.",
+          "example": "A candle flame inverted on a screen is upside down.",
+          "remember": "Inverted ≠ reversed left-right only — top becomes bottom.",
+          "common_confusion": "Virtual images in concave mirrors can be erect.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "inverted image"
+          ]
+        },
+        {
+          "id": "u1_d5_c07",
+          "name": "Real image",
+          "simple_answer": "A real image forms where reflected light rays actually meet. It can be projected onto a screen.",
+          "visual": {
+            "type": "concave_image",
+            "highlight": "real_screen"
+          },
+          "why": "Real images carry light energy to a screen.",
+          "example": "Activity 9.3: candle image on paper is a real image.",
+          "remember": "Real image = rays actually intersect.",
+          "common_confusion": "Real does not mean erect.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "real image"
+          ]
+        },
+        {
+          "id": "u1_d5_c08",
+          "name": "Screen formation",
+          "simple_answer": "If a screen is placed at the image position, a sharp real image can be seen on the screen.",
+          "visual": {
+            "type": "concave_image",
+            "highlight": "screen"
+          },
+          "why": "Screens catch light — only real images can be captured this way.",
+          "example": "Move a paper screen until the candle image is sharpest.",
+          "remember": "Only real images form on a screen.",
+          "common_confusion": "Virtual images cannot be obtained on a screen.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "screen"
+          ]
+        },
+        {
+          "id": "u1_d5_c09",
+          "name": "Diminished image",
+          "simple_answer": "A diminished image is smaller than the object in height.",
+          "visual": {
+            "type": "concave_image",
+            "position": "beyond_C",
+            "highlight": "diminished"
+          },
+          "why": "Common when the object is far from a concave mirror.",
+          "example": "Distant object beyond C → small inverted image.",
+          "remember": "Diminished means shorter arrow, not farther away.",
+          "common_confusion": "Diminished refers to height, not distance.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "diminished image"
+          ]
+        },
+        {
+          "id": "u1_d5_c10",
+          "name": "Same-sized image",
+          "simple_answer": "When the object is at C, the concave mirror gives a real, inverted image the same size as the object.",
+          "visual": {
+            "type": "concave_image",
+            "position": "at_C",
+            "highlight": "same_size"
+          },
+          "why": "The equal-distance case at C is worth remembering before moving the object closer.",
+          "example": "Object height equals image height when object is at C.",
+          "remember": "Same size at C only (for standard cases).",
+          "common_confusion": "Same size does not mean erect.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "same-sized image"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Concave Mirror Images: Object Near the Focus",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d6_c01",
+          "name": "Object between C and F",
+          "simple_answer": "The object sits between centre C and focus F — closer to the mirror than C but beyond F.",
+          "visual": {
+            "type": "concave_image",
+            "position": "between_C_F"
+          },
+          "why": "Image moves beyond C and grows as the object approaches F.",
+          "example": "Candle between C and F → large real image beyond C.",
+          "remember": "Between C and F → real, inverted, enlarged, beyond C.",
+          "common_confusion": "This region is not the same as inside F.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c02",
+          "name": "Object at F",
+          "simple_answer": "The object is placed exactly at the principal focus F of the concave mirror.",
+          "visual": {
+            "type": "concave_image",
+            "position": "at_F"
+          },
+          "why": "Reflected rays become parallel — image forms at infinity.",
+          "example": "Object at F → parallel reflected rays, no sharp screen image.",
+          "remember": "At F → image at infinity (theoretically).",
+          "common_confusion": "At F is a limiting case, not a sharp image position.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c03",
+          "name": "Object between F and P",
+          "simple_answer": "The object is between focus F and pole P — very close to the mirror.",
+          "visual": {
+            "type": "concave_image",
+            "position": "between_F_P"
+          },
+          "why": "Only here does a concave mirror give a virtual, erect, enlarged image.",
+          "example": "Face close to a shaving mirror — enlarged erect view.",
+          "remember": "Inside F → virtual, erect, enlarged, behind mirror.",
+          "common_confusion": "Do not confuse with object beyond C.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c04",
+          "name": "Enlarged image",
+          "simple_answer": "An enlarged image is taller than the object.",
+          "visual": {
+            "type": "concave_image",
+            "highlight": "enlarged"
+          },
+          "why": "Magnification magnitude greater than 1 in size comparison.",
+          "example": "Make-up mirror shows an enlarged face.",
+          "remember": "Enlarged = bigger height, not necessarily real.",
+          "common_confusion": "Enlarged virtual images are possible inside F.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c05",
+          "name": "Image beyond C",
+          "simple_answer": "For an object between C and F, the real image forms beyond centre C.",
+          "visual": {
+            "type": "concave_image",
+            "position": "between_C_F",
+            "highlight": "image_beyond_C"
+          },
+          "why": "Image distance increases as object nears F.",
+          "example": "Object slides toward F → image slides farther past C.",
+          "remember": "Object between C and F → image beyond C.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c06",
+          "name": "Image at infinity",
+          "simple_answer": "When the object is at F, reflected rays are parallel and the image is said to be at infinity.",
+          "visual": {
+            "type": "concave_image",
+            "position": "at_F",
+            "highlight": "infinity"
+          },
+          "why": "No single meeting point on the screen in the ideal case.",
+          "example": "Sharp spot fails when object sits at F.",
+          "remember": "Parallel reflected rays → image at infinity.",
+          "common_confusion": "Infinity in diagrams means rays do not meet in finite space.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c07",
+          "name": "Image behind the mirror",
+          "simple_answer": "For a virtual image, rays appear to come from a point behind the reflecting surface.",
+          "visual": {
+            "type": "concave_image",
+            "position": "between_F_P",
+            "highlight": "behind"
+          },
+          "why": "Draw dotted backward extensions to locate it.",
+          "example": "Shaving mirror image seems behind the glass.",
+          "remember": "Virtual image location is behind the mirror.",
+          "common_confusion": "Behind the mirror does not mean inside the glass physically.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c08",
+          "name": "Virtual image",
+          "simple_answer": "Light does not actually meet at a virtual image; the eye traces rays backward to see it.",
+          "visual": {
+            "type": "concave_image",
+            "highlight": "virtual"
+          },
+          "why": "You can see it but cannot capture it on a screen.",
+          "example": "Mirror face view is a virtual image.",
+          "remember": "Virtual = apparent meeting point only.",
+          "common_confusion": "Virtual is visible — not invisible.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "virtual image"
+          ]
+        },
+        {
+          "id": "u1_d6_c09",
+          "name": "Erect image",
+          "simple_answer": "An erect image has the same vertical orientation as the object.",
+          "visual": {
+            "type": "concave_image",
+            "highlight": "erect"
+          },
+          "why": "Virtual images from concave mirrors (object inside F) are erect.",
+          "example": "Your upright face in a close concave mirror.",
+          "remember": "Erect = same way up as object.",
+          "common_confusion": "Real images from concave mirrors are usually inverted.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c10",
+          "name": "Changing image properties",
+          "simple_answer": "As the object moves from infinity toward P, image size, position, and nature change step by step.",
+          "visual": {
+            "type": "concave_image",
+            "mode": "sequence"
+          },
+          "why": "Build the full table from observations, not memorisation alone.",
+          "example": "Slide a candle along the axis and note each change.",
+          "remember": "Track: position → size → nature (real/virtual) → orientation.",
+          "common_confusion": "Do not jump to formulas before understanding the motion picture.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Convex Mirrors and Mirror Comparisons",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d7_c01",
+          "name": "Convex-mirror focus",
+          "simple_answer": "For a convex mirror, the focus F lies behind the mirror — a virtual focus.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "mirror_type": "convex",
+            "highlight": "F"
+          },
+          "why": "Parallel rays diverge as if from F behind the mirror.",
+          "example": "Rear-view mirror geometry uses virtual F.",
+          "remember": "Convex F is always behind the reflecting surface.",
+          "common_confusion": "Do not place F in front of a convex mirror.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c02",
+          "name": "Image behind a convex mirror",
+          "simple_answer": "Convex mirrors always form images behind the mirror for real objects in front.",
+          "visual": {
+            "type": "concave_image",
+            "mirror_type": "convex",
+            "highlight": "behind"
+          },
+          "why": "Consistent virtual image location simplifies safety mirrors.",
+          "example": "Shop security mirror image appears inside the mirror.",
+          "remember": "Convex → image behind mirror.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c03",
+          "name": "Virtual convex-mirror image",
+          "simple_answer": "The convex-mirror image is always virtual — rays only appear to diverge from behind.",
+          "visual": {
+            "type": "mirror_focus_ray",
+            "mirror_type": "convex",
+            "highlight": "virtual_focus"
+          },
+          "why": "No screen image is possible for ordinary objects.",
+          "example": "You cannot project a convex-mirror image on paper.",
+          "remember": "Convex mirror → always virtual (for real objects).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c04",
+          "name": "Erect convex-mirror image",
+          "simple_answer": "Convex mirrors always give erect images for objects in front of them.",
+          "visual": {
+            "type": "concave_image",
+            "mirror_type": "convex",
+            "highlight": "erect"
+          },
+          "why": "Important for driving — up is still up.",
+          "example": "Rear-view car mirror keeps orientation readable.",
+          "remember": "Convex image is erect.",
+          "common_confusion": "Erect here still means virtual.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c05",
+          "name": "Diminished convex-mirror image",
+          "simple_answer": "Convex mirrors always produce diminished images — objects look smaller.",
+          "visual": {
+            "type": "concave_image",
+            "mirror_type": "convex",
+            "highlight": "diminished"
+          },
+          "why": "Smaller image allows a wider scene in the same mirror area.",
+          "example": "Parking lot convex mirror shows many cars smaller.",
+          "remember": "Convex → diminished.",
+          "common_confusion": "Diminished helps wide field of view.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c06",
+          "name": "Wide field of view",
+          "simple_answer": "A convex mirror curves outward so light from a large area reflects into your eye.",
+          "visual": {
+            "type": "concave_image",
+            "mirror_type": "convex",
+            "mode": "wide_view"
+          },
+          "why": "Used where seeing more area matters more than size.",
+          "example": "Road junction mirror shows traffic from two directions.",
+          "remember": "More area, smaller objects — trade-off by design.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c07",
+          "name": "Changing object position",
+          "simple_answer": "For convex mirrors, image stays virtual, erect, and diminished — only position shifts slightly.",
+          "visual": {
+            "type": "concave_image",
+            "mirror_type": "convex",
+            "mode": "object_move"
+          },
+          "why": "Less dramatic changes than concave mirrors.",
+          "example": "Moving closer to a convex mirror — image still upright and small.",
+          "remember": "Nature stays the same; position varies mildly.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c08",
+          "name": "Concave vs convex",
+          "simple_answer": "Concave converges light; convex diverges. Image rules differ completely.",
+          "visual": {
+            "type": "spherical_mirror_labels",
+            "mode": "compare"
+          },
+          "why": "Pick mirror type before drawing any ray diagram.",
+          "example": "Spoon inside vs outside surfaces.",
+          "remember": "Concave: varied images; convex: always virtual, erect, diminished.",
+          "common_confusion": "Do not apply concave ray rules to convex mirrors.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c09",
+          "name": "Plane vs convex",
+          "simple_answer": "Plane mirrors give same-size virtual images; convex mirrors give diminished virtual images with wider view.",
+          "visual": {
+            "type": "plane_mirror_reflection",
+            "mode": "image_properties"
+          },
+          "why": "Choose mirror shape for the job: flat view vs wide view.",
+          "example": "Bathroom flat mirror vs curved shop mirror.",
+          "remember": "Plane: same size; convex: smaller but wider.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c10",
+          "name": "Rear-view mirror reasoning",
+          "simple_answer": "Vehicles use convex rear-view mirrors because a wider, erect, diminished view improves safety.",
+          "visual": {
+            "type": "concave_image",
+            "mirror_type": "convex",
+            "mode": "wide_view"
+          },
+          "why": "You see more traffic even though cars look smaller.",
+          "example": "Cars appear farther — compensate mentally when judging distance.",
+          "remember": "Convex rear mirror: wide + erect + diminished.",
+          "common_confusion": "Objects in mirror are closer than they appear — diminished effect.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Mirror Ray Diagrams and Applications",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d8_c01",
+          "name": "Ray parallel to axis",
+          "simple_answer": "A ray parallel to the principal axis reflects through F (concave) or appears from F (convex).",
+          "visual": {
+            "type": "mirror_ray_rules",
+            "rule": "parallel"
+          },
+          "why": "First standard ray for locating images.",
+          "example": "Draw incoming ray horizontal to axis.",
+          "remember": "Parallel in → through F out (concave).",
+          "common_confusion": "Parallel means parallel to principal axis, not to mirror surface.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c02",
+          "name": "Ray through F",
+          "simple_answer": "A ray through focus F reflects parallel to the principal axis.",
+          "visual": {
+            "type": "mirror_ray_rules",
+            "rule": "through_F"
+          },
+          "why": "Pairs with the parallel ray to locate images.",
+          "example": "Ray from F hits mirror, leaves parallel to axis.",
+          "remember": "Through F → reflects parallel to axis.",
+          "common_confusion": "Reverse of the parallel-ray rule.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c03",
+          "name": "Ray through C",
+          "simple_answer": "A ray through centre C reflects back along the same path (normal to surface at C).",
+          "visual": {
+            "type": "mirror_ray_rules",
+            "rule": "through_C"
+          },
+          "why": "Useful third ray when C is marked.",
+          "example": "Ray aimed at C returns on itself.",
+          "remember": "Through C → reflects back on same line.",
+          "common_confusion": "C must lie on the path of the ray.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c04",
+          "name": "Ray at pole",
+          "simple_answer": "A ray striking the pole P reflects symmetrically about the principal axis.",
+          "visual": {
+            "type": "mirror_ray_rules",
+            "rule": "pole"
+          },
+          "why": "Optional fourth ray when image is near P.",
+          "example": "Light hitting P reflects with equal angles to axis.",
+          "remember": "At P, use reflection symmetry.",
+          "common_confusion": "Not every diagram needs the pole ray.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c05",
+          "name": "Using two rays",
+          "simple_answer": "Any two standard rays whose intersection locates the image are enough for a complete diagram.",
+          "visual": {
+            "type": "mirror_ray_rules",
+            "rule": "two_rays"
+          },
+          "why": "More rays check your work; two are sufficient.",
+          "example": "Parallel + through-F rays often meet at the image.",
+          "remember": "Two correct rays → image point.",
+          "common_confusion": "Do not draw random rays without rules.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c06",
+          "name": "Reflected-ray intersection",
+          "simple_answer": "For a real image, draw reflected rays forward until they cross.",
+          "visual": {
+            "type": "mirror_ray_rules",
+            "highlight": "intersect"
+          },
+          "why": "Crossing point is the top of the image.",
+          "example": "Solid lines after mirror; meet at image.",
+          "remember": "Real image = forward intersection.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c07",
+          "name": "Backward extensions",
+          "simple_answer": "For virtual images, extend reflected rays backward (dotted) to find where they appear to meet.",
+          "visual": {
+            "type": "mirror_ray_rules",
+            "highlight": "backward"
+          },
+          "why": "Dotted lines mean virtual construction.",
+          "example": "Convex mirror: extend rays behind mirror.",
+          "remember": "Virtual image = backward extension meet.",
+          "common_confusion": "Do not use dotted lines for real image formation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c08",
+          "name": "Locating an image",
+          "simple_answer": "Mark object tip, draw two standard rays, find intersection (or backward meet) — that is the image tip.",
+          "visual": {
+            "type": "mirror_ray_rules",
+            "highlight": "locate"
+          },
+          "why": "Repeat for base on axis to get full image arrow.",
+          "example": "Image arrow perpendicular to axis from intersection.",
+          "remember": "Tip-to-tip mapping: object tip → image tip.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c09",
+          "name": "Common ray-diagram errors",
+          "simple_answer": "Typical mistakes: measuring angles from mirror, swapping F and C, wrong ray after parallel incidence.",
+          "visual": {
+            "type": "mirror_ray_rules",
+            "highlight": "errors"
+          },
+          "why": "Checklist prevents most exam losses.",
+          "example": "If image looks wrong, redo rays from F and parallel rule.",
+          "remember": "Verify: normal, F, C, arrow directions.",
+          "common_confusion": "Reflected ray is not the incident ray continued.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c10",
+          "name": "Mirror applications",
+          "simple_answer": "Concave: torches, dentists' mirrors, solar devices. Convex: rear-view and security mirrors.",
+          "visual": {
+            "type": "mirror_ray_rules",
+            "mode": "applications"
+          },
+          "why": "Design follows image properties.",
+          "example": "Headlight reflector is concave to parallelize bulb rays.",
+          "remember": "Match mirror type to needed image.",
+          "common_confusion": "Never aim concave mirrors at the Sun unsupervised.",
+          "optional_detail": "Teacher demo or simulation only for concentration.",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "Mirror Sign Convention",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d9_c01",
+          "name": "Pole as origin",
+          "simple_answer": "In the mirror formula sign convention, pole P is taken as the origin (0) for distances.",
+          "visual": {
+            "type": "sign_axis",
+            "highlight": "P"
+          },
+          "why": "All u, v, f are measured from P.",
+          "example": "Distances start counting at the mirror surface.",
+          "remember": "P = 0 on the axis.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c02",
+          "name": "Direction of incident light",
+          "simple_answer": "Incident light is treated as travelling from left to right in standard NCERT diagrams.",
+          "visual": {
+            "type": "sign_axis",
+            "highlight": "light_direction"
+          },
+          "why": "Sets which side is positive for horizontal measurements.",
+          "example": "Object usually placed to the left of mirror.",
+          "remember": "Light goes left → right.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c03",
+          "name": "Positive horizontal",
+          "simple_answer": "Distances measured along incident light (to the right of P in standard diagrams) are positive.",
+          "visual": {
+            "type": "sign_axis",
+            "highlight": "positive_x"
+          },
+          "why": "Object distance u is usually positive for real objects in front.",
+          "example": "Real object in front → u positive.",
+          "remember": "With the light: positive.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c04",
+          "name": "Negative horizontal",
+          "simple_answer": "Distances measured against incident light (behind the mirror) are negative.",
+          "visual": {
+            "type": "sign_axis",
+            "highlight": "negative_x"
+          },
+          "why": "Virtual image distances are negative.",
+          "example": "Image behind mirror → v negative.",
+          "remember": "Against the light: negative.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c05",
+          "name": "Positive height",
+          "simple_answer": "Heights measured upward from the principal axis are positive.",
+          "visual": {
+            "type": "sign_axis",
+            "highlight": "positive_h"
+          },
+          "why": "Erect object or image arrows above axis are positive.",
+          "example": "Object above axis → positive height.",
+          "remember": "Up from axis = +.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c06",
+          "name": "Negative height",
+          "simple_answer": "Heights below the principal axis are negative — common for inverted images.",
+          "visual": {
+            "type": "sign_axis",
+            "highlight": "negative_h"
+          },
+          "why": "Magnification sign relates to orientation.",
+          "example": "Inverted image arrow below axis → negative h′.",
+          "remember": "Down from axis = −.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c07",
+          "name": "Sign of object distance u",
+          "simple_answer": "For a real object in front of the mirror, u is taken positive in the NCERT convention.",
+          "visual": {
+            "type": "sign_axis",
+            "highlight": "u"
+          },
+          "why": "Always check object placement before substituting.",
+          "example": "Candle in front → u > 0.",
+          "remember": "Real object in front → u positive.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c08",
+          "name": "Sign of image distance v",
+          "simple_answer": "Real image in front: v positive. Virtual image behind mirror: v negative.",
+          "visual": {
+            "type": "sign_axis",
+            "highlight": "v"
+          },
+          "why": "Sign of v tells real vs virtual quickly.",
+          "example": "Screen image → v positive; mirror face image → v negative.",
+          "remember": "Real v +, virtual v −.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c09",
+          "name": "Sign of concave-mirror focal length",
+          "simple_answer": "For a concave mirror, focal length f is negative in the NCERT sign convention.",
+          "visual": {
+            "type": "sign_axis",
+            "mirror_type": "concave",
+            "highlight": "f"
+          },
+          "why": "Same side as incident light for F but f carries a sign by convention.",
+          "example": "Concave f = −|f| in formula work.",
+          "remember": "Concave: f negative.",
+          "common_confusion": "Do not drop the minus in 1/f.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c10",
+          "name": "Sign of convex-mirror focal length",
+          "simple_answer": "For a convex mirror, f is positive — focus lies behind the mirror.",
+          "visual": {
+            "type": "sign_axis",
+            "mirror_type": "convex",
+            "highlight": "f"
+          },
+          "why": "Opposite sign to concave for f.",
+          "example": "Convex rear-view mirror: f positive.",
+          "remember": "Convex: f positive.",
+          "common_confusion": "Mixing concave and convex signs is a common error.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "Mirror Formula and Magnification",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d10_c01",
+          "name": "Object distance u",
+          "simple_answer": "u is the distance of the object from pole P along the principal axis.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "u",
+            "topic": "mirror"
+          },
+          "why": "One of three key quantities in mirror numericals.",
+          "example": "Object 20 cm in front → u = +20 cm.",
+          "remember": "Measure u from P to object.",
+          "common_confusion": "Use cm consistently until final step if needed.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c02",
+          "name": "Image distance v",
+          "simple_answer": "v is the distance of the image from pole P along the principal axis.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "v",
+            "topic": "mirror"
+          },
+          "why": "Solve mirror formula for v after substituting u and f with signs.",
+          "example": "Find v when u and f are known.",
+          "remember": "v sign tells real vs virtual.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c03",
+          "name": "Focal length f",
+          "simple_answer": "f links the mirror's curvature to focusing strength; insert with correct sign.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "f",
+            "topic": "mirror"
+          },
+          "why": "Concave f negative; convex f positive.",
+          "example": "f = −15 cm for concave means |f| = 15 cm.",
+          "remember": "Always include sign of f in 1/f.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c04",
+          "name": "Mirror formula",
+          "simple_answer": "1/v + 1/u = 1/f relates object distance, image distance, and focal length.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "mirror_formula",
+            "topic": "mirror"
+          },
+          "why": "Use after sign convention is clear.",
+          "example": "NCERT mirror numericals use this relation.",
+          "remember": "Reciprocal form — not v = f + u.",
+          "common_confusion": "This is not the lens formula.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c05",
+          "name": "Reciprocal quantities",
+          "simple_answer": "The mirror formula uses reciprocals — compute 1/u, 1/v, 1/f separately with signs, then combine.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "reciprocals",
+            "topic": "mirror"
+          },
+          "why": "Avoid algebra mistakes by writing each term clearly.",
+          "example": "1/20 + 1/v = 1/(−10) style layout.",
+          "remember": "Add reciprocals, not distances directly.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c06",
+          "name": "Substitution with signs",
+          "simple_answer": "Substitute signed u, v, f before solving — signs are part of the physics.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "substitute",
+            "topic": "mirror"
+          },
+          "why": "Wrong sign → wrong nature of image.",
+          "example": "Concave: f negative; real object: u positive.",
+          "remember": "Signs first, numbers second.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c07",
+          "name": "Magnification m",
+          "simple_answer": "Magnification compares image size to object size and can indicate orientation.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "m",
+            "topic": "mirror"
+          },
+          "why": "Connects heights and distances.",
+          "example": "m = −2 means inverted and twice as tall.",
+          "remember": "m negative → inverted; |m| > 1 → enlarged.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c08",
+          "name": "m = h′/h",
+          "simple_answer": "Magnification equals image height divided by object height (with signs for orientation).",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "m_h",
+            "topic": "mirror"
+          },
+          "why": "Use when heights are given directly.",
+          "example": "h = +2 cm, h′ = −4 cm → m = −2.",
+          "remember": "Negative m → inverted image.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c09",
+          "name": "m = −v/u",
+          "simple_answer": "Magnification also equals minus image distance over object distance.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "m_vu",
+            "topic": "mirror"
+          },
+          "why": "Useful when u and v are known from the mirror formula.",
+          "example": "v = −30 cm, u = +15 cm → m = −(−30)/15 = +2 check signs carefully.",
+          "remember": "m = −v/u with signed v and u.",
+          "common_confusion": "Do not forget the minus in −v/u.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c10",
+          "name": "Interpreting m",
+          "simple_answer": "After calculating m, state: inverted/erect, enlarged/diminished/same, using sign and |m|.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "interpret_m",
+            "topic": "mirror"
+          },
+          "why": "Numbers must become a physical sentence.",
+          "example": "m = −0.5 → inverted, diminished to half.",
+          "remember": "|m| size; sign orientation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "Introduction to Refraction",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d11_c01",
+          "name": "Transparent medium",
+          "simple_answer": "Light can pass through a transparent medium — air, water, glass — with changed speed.",
+          "visual": {
+            "type": "refraction",
+            "mode": "transparent"
+          },
+          "why": "Refraction happens at boundaries between such media.",
+          "example": "Glass window lets light through but bends it.",
+          "remember": "Transparent ≠ no refraction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c02",
+          "name": "Boundary between media",
+          "simple_answer": "Refraction chiefly occurs when light crosses a boundary between two different media.",
+          "visual": {
+            "type": "refraction",
+            "mode": "boundary"
+          },
+          "why": "The surface is where speed changes.",
+          "example": "Air–glass surface in a window pane.",
+          "remember": "Boundary = interface between media.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c03",
+          "name": "Incident ray at boundary",
+          "simple_answer": "The incident ray approaches the boundary; angle measured from the normal.",
+          "visual": {
+            "type": "refraction",
+            "highlight": "incident"
+          },
+          "why": "Same normal rules as reflection.",
+          "example": "Ray from air into glass — incident in air.",
+          "remember": "Incident ray in first medium.",
+          "common_confusion": "Do not confuse with refracted ray.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c04",
+          "name": "Refracted ray",
+          "simple_answer": "The refracted ray enters the second medium, bent at the boundary.",
+          "visual": {
+            "type": "refraction",
+            "highlight": "refracted"
+          },
+          "why": "Direction of bend depends on speed change.",
+          "example": "Pencil in water looks bent at surface.",
+          "remember": "Refracted ray is in second medium.",
+          "common_confusion": "Not the reflected ray.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c05",
+          "name": "Normal at boundary",
+          "simple_answer": "Draw the normal perpendicular to the boundary at the point of refraction.",
+          "visual": {
+            "type": "refraction",
+            "highlight": "normal"
+          },
+          "why": "Angles of incidence and refraction are from this normal.",
+          "example": "Same dashed normal idea as mirrors.",
+          "remember": "Measure refraction angles from normal.",
+          "common_confusion": "Normal is to the surface, not the mirror axis only.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c06",
+          "name": "Speed change",
+          "simple_answer": "Light slows down or speeds up when entering a new medium — causing bending.",
+          "visual": {
+            "type": "refraction",
+            "highlight": "speed"
+          },
+          "why": "Root cause of refraction.",
+          "example": "Light slower in glass than air → bends toward normal entering glass.",
+          "remember": "Speed change → bending.",
+          "common_confusion": "Higher optical density usually means lower speed.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c07",
+          "name": "Bending toward normal",
+          "simple_answer": "When light enters a denser (slower) medium, it bends toward the normal.",
+          "visual": {
+            "type": "refraction",
+            "mode": "toward"
+          },
+          "why": "Air to glass: ray moves closer to normal inside glass.",
+          "example": "Straw in water appears broken at surface.",
+          "remember": "Into denser medium → toward normal.",
+          "common_confusion": "Toward normal ≠ along normal.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c08",
+          "name": "Bending away from normal",
+          "simple_answer": "When light enters a rarer (faster) medium, it bends away from the normal.",
+          "visual": {
+            "type": "refraction",
+            "mode": "away"
+          },
+          "why": "Glass to air: ray moves farther from normal in air.",
+          "example": "Ray leaving glass slab spreads from normal.",
+          "remember": "Into rarer medium → away from normal.",
+          "common_confusion": "Reverse of entering denser medium.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c09",
+          "name": "Optically rarer medium",
+          "simple_answer": "The medium where light travels faster is optically rarer (e.g. air compared to glass).",
+          "visual": {
+            "type": "refraction",
+            "mode": "rarer"
+          },
+          "why": "Optical density is about light speed, not mass density alone.",
+          "example": "Air is rarer than glass for light.",
+          "remember": "Rarer = faster light.",
+          "common_confusion": "Rare medium is not necessarily thin air only.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c10",
+          "name": "Optically denser medium",
+          "simple_answer": "The medium where light travels slower is optically denser (e.g. glass compared to air).",
+          "visual": {
+            "type": "refraction",
+            "mode": "denser"
+          },
+          "why": "Explains direction of bending at a boundary.",
+          "example": "Glass is denser than air optically.",
+          "remember": "Denser = slower light.",
+          "common_confusion": "Do not equate to physical heaviness alone.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Glass Slab and Laws of Refraction",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d12_c01",
+          "name": "Air to glass",
+          "simple_answer": "At an air–glass boundary, light slows and bends toward the normal on entering glass.",
+          "visual": {
+            "type": "refraction",
+            "mode": "air_glass"
+          },
+          "why": "First step through a glass slab.",
+          "example": "Ray from air strikes glass at an angle to normal.",
+          "remember": "Air → glass: toward normal.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c02",
+          "name": "Glass to air",
+          "simple_answer": "Leaving glass into air, light speeds up and bends away from the normal.",
+          "visual": {
+            "type": "refraction",
+            "mode": "glass_air"
+          },
+          "why": "Second bend inside a slab.",
+          "example": "Emerging ray in air bends away from normal.",
+          "remember": "Glass → air: away from normal.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c03",
+          "name": "Rectangular glass slab",
+          "simple_answer": "A rectangular glass slab has two parallel faces — two refractions occur.",
+          "visual": {
+            "type": "glass_slab",
+            "mode": "slab"
+          },
+          "why": "Classic NCERT diagram.",
+          "example": "Glass plate in optics kit.",
+          "remember": "Two surfaces: enter and leave.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c04",
+          "name": "Emergent ray",
+          "simple_answer": "The ray leaving the slab into the original medium is the emergent ray.",
+          "visual": {
+            "type": "glass_slab",
+            "highlight": "emergent"
+          },
+          "why": "Compare direction to incident ray.",
+          "example": "Light exits bottom of slab back into air.",
+          "remember": "Emergent ray is after second refraction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c05",
+          "name": "Parallel incident and emergent",
+          "simple_answer": "For a parallel-sided slab, emergent ray is parallel to incident ray (laterally shifted).",
+          "visual": {
+            "type": "glass_slab",
+            "highlight": "parallel"
+          },
+          "why": "Direction unchanged; position shifted.",
+          "example": "Look through window — scene not rotated.",
+          "remember": "Parallel in and out for rectangular slab.",
+          "common_confusion": "Parallel does not mean same path line.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c06",
+          "name": "Lateral displacement",
+          "simple_answer": "The emergent ray is shifted sideways relative to the incident path.",
+          "visual": {
+            "type": "glass_slab",
+            "highlight": "shift"
+          },
+          "why": "Offset depends on thickness and angle.",
+          "example": "Thick glass shifts the view more.",
+          "remember": "Shift sideways, same direction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c07",
+          "name": "Angle of incidence",
+          "simple_answer": "In refraction, angle of incidence i is between incident ray and normal at the boundary.",
+          "visual": {
+            "type": "refraction",
+            "highlight": "angle_i"
+          },
+          "why": "Same definition style as reflection.",
+          "example": "Measure from normal in air before glass.",
+          "remember": "i from normal, not from surface.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c08",
+          "name": "Angle of refraction",
+          "simple_answer": "Angle of refraction r is between refracted ray and normal inside the second medium.",
+          "visual": {
+            "type": "refraction",
+            "highlight": "angle_r"
+          },
+          "why": "Pair with i for Snell's law at Class 10 level.",
+          "example": "Smaller r than i entering denser medium.",
+          "remember": "r in second medium, from normal.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c09",
+          "name": "First law of refraction",
+          "simple_answer": "Incident ray, refracted ray, and normal lie in the same plane.",
+          "visual": {
+            "type": "refraction",
+            "mode": "coplanar"
+          },
+          "why": "Same plane rule as reflection.",
+          "example": "Draw all three in one 2D diagram.",
+          "remember": "All three coplanar.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c10",
+          "name": "Snell's law (Class 10)",
+          "simple_answer": "n₁ sin i = n₂ sin r relates refractive indices and angles at a boundary.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "snell",
+            "topic": "refraction"
+          },
+          "why": "Use with angles from normal.",
+          "example": "Higher n side: smaller angle when entering denser medium.",
+          "remember": "sin i / sin r = n₂/n₁.",
+          "common_confusion": "Use degrees in calculator carefully.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Refractive Index",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d13_c01",
+          "name": "Speed in vacuum c",
+          "simple_answer": "c is the speed of light in vacuum, approximately 3 × 10⁸ m/s.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "c",
+            "topic": "refraction"
+          },
+          "why": "Fastest possible speed for light.",
+          "example": "Used as reference in n = c/v.",
+          "remember": "c ≈ 3 × 10⁸ m/s.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c02",
+          "name": "Speed in medium v",
+          "simple_answer": "v is the speed of light in a material medium — always less than c.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "v",
+            "topic": "refraction"
+          },
+          "why": "Appears in refractive index definition.",
+          "example": "Light slower in water than vacuum.",
+          "remember": "v < c in any medium.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c03",
+          "name": "Absolute refractive index",
+          "simple_answer": "Absolute refractive index compares light speed in vacuum to speed in the medium.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "n",
+            "topic": "refraction"
+          },
+          "why": "Material property for optics.",
+          "example": "Glass has n around 1.5.",
+          "remember": "n = c/v (absolute).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c04",
+          "name": "n = c/v",
+          "simple_answer": "Refractive index n equals speed of light in vacuum divided by speed in the medium.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "n_cv",
+            "topic": "refraction"
+          },
+          "why": "Main formula for Class 10 numericals.",
+          "example": "If v = c/1.5, then n = 1.5.",
+          "remember": "Bigger n → smaller v.",
+          "common_confusion": "n has no unit.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c05",
+          "name": "Meaning of c",
+          "simple_answer": "c is constant in vacuum — the upper limit for light speed used in the formula.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "c_meaning",
+            "topic": "refraction"
+          },
+          "why": "Numerator in n = c/v.",
+          "example": "Same c for all materials in numerator.",
+          "remember": "c is vacuum speed.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c06",
+          "name": "Meaning of v",
+          "simple_answer": "v depends on the medium — water, glass, diamond each have different v.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "v_meaning",
+            "topic": "refraction"
+          },
+          "why": "Denominator sets n for each material.",
+          "example": "Light slowest in diamond among common examples.",
+          "remember": "Different media → different v.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c07",
+          "name": "Refractive index unitless",
+          "simple_answer": "n is a ratio of speeds — it has no unit.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "n_unit",
+            "topic": "refraction"
+          },
+          "why": "Do not write cm or m/s as unit of n.",
+          "example": "n = 1.33 for water — just a number.",
+          "remember": "Refractive index: no unit.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c08",
+          "name": "Higher n → lower speed",
+          "simple_answer": "Larger refractive index means light travels slower in that medium.",
+          "visual": {
+            "type": "refraction",
+            "mode": "n_speed"
+          },
+          "why": "Links table values to bending behaviour.",
+          "example": "Diamond n high → light very slow.",
+          "remember": "High n = optically dense = slower.",
+          "common_confusion": "Higher n does not mean light travels faster.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c09",
+          "name": "Comparing media",
+          "simple_answer": "Compare n values to see which medium is optically denser and how much light slows.",
+          "visual": {
+            "type": "refraction",
+            "mode": "compare_n"
+          },
+          "why": "Used in refraction direction questions.",
+          "example": "n_glass > n_air → glass denser.",
+          "remember": "Compare n, then predict bending.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c10",
+          "name": "Physical vs optical density",
+          "simple_answer": "A physically dense material is not always optically denser — optical density is about light speed.",
+          "visual": {
+            "type": "refraction",
+            "mode": "optical_vs_physical"
+          },
+          "why": "Avoid everyday word confusion.",
+          "example": "Kerosene may float on water yet have higher n.",
+          "remember": "Optical density ≠ mass density.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "Spherical Lenses",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d14_c01",
+          "name": "Spherical lens",
+          "simple_answer": "A lens is made of two refracting spherical surfaces — converging or diverging.",
+          "visual": {
+            "type": "lens_labels",
+            "mode": "intro"
+          },
+          "why": "Base object for lens ray diagrams.",
+          "example": "Magnifying glass is a convex lens.",
+          "remember": "Two curved surfaces.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c02",
+          "name": "Convex lens",
+          "simple_answer": "A convex (converging) lens is thicker at the middle than at the edges.",
+          "visual": {
+            "type": "lens_labels",
+            "lens_type": "convex"
+          },
+          "why": "Parallel rays converge toward a real focus.",
+          "example": "Magnifying glass converges sunlight — teacher demo only.",
+          "remember": "Convex = thicker middle.",
+          "common_confusion": "Never focus Sun on paper unsupervised.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c03",
+          "name": "Concave lens",
+          "simple_answer": "A concave (diverging) lens is thinner at the middle than at the edges.",
+          "visual": {
+            "type": "lens_labels",
+            "lens_type": "concave"
+          },
+          "why": "Parallel rays diverge as if from virtual focus.",
+          "example": "Spectacle lens for some vision corrections.",
+          "remember": "Concave = thinner middle.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c04",
+          "name": "Optical centre O",
+          "simple_answer": "O is the central point of the lens through which rays pass without deviation.",
+          "visual": {
+            "type": "lens_labels",
+            "highlight": "O"
+          },
+          "why": "Key point for one standard lens ray.",
+          "example": "Ray through O continues straight.",
+          "remember": "Through O → no bend.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c05",
+          "name": "Principal axis",
+          "simple_answer": "Straight line through O perpendicular to the lens — symmetry line for diagrams.",
+          "visual": {
+            "type": "lens_labels",
+            "highlight": "axis"
+          },
+          "why": "Reference for foci and object placement.",
+          "example": "Horizontal line through lens centre.",
+          "remember": "Same role as mirror principal axis.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c06",
+          "name": "Two principal foci",
+          "simple_answer": "A lens has two foci: F₁ on the incident side and F₂ on the other side.",
+          "visual": {
+            "type": "lens_labels",
+            "highlight": "F1_F2"
+          },
+          "why": "Symmetric for thin lenses in air.",
+          "example": "Mark F and 2F on both sides for convex lens.",
+          "remember": "Two foci for thin lens in air.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c07",
+          "name": "Focal length",
+          "simple_answer": "Focal length f is distance from optical centre O to principal focus F.",
+          "visual": {
+            "type": "lens_labels",
+            "highlight": "f"
+          },
+          "why": "Use metres for power calculations.",
+          "example": "f = 20 cm convex lens.",
+          "remember": "Measure f from O to F.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c08",
+          "name": "Converging lens",
+          "simple_answer": "Convex lens converges parallel rays — real focus on far side.",
+          "visual": {
+            "type": "lens_ray",
+            "lens_type": "convex",
+            "rule": "parallel"
+          },
+          "why": "Used for real image formation.",
+          "example": "Sunlight through convex lens — supervised demo only.",
+          "remember": "Convex = converging.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c09",
+          "name": "Diverging lens",
+          "simple_answer": "Concave lens spreads parallel rays — virtual focus on incident side.",
+          "visual": {
+            "type": "lens_ray",
+            "lens_type": "concave",
+            "rule": "parallel"
+          },
+          "why": "Always virtual diminished images for real objects.",
+          "example": "Concave lens in peepholes.",
+          "remember": "Concave = diverging.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c10",
+          "name": "Thin-lens representation",
+          "simple_answer": "Draw a convex or concave lens as a thin vertical line with outward/inward arrow symbols.",
+          "visual": {
+            "type": "lens_labels",
+            "mode": "thin_symbol"
+          },
+          "why": "Standard NCERT shorthand.",
+          "example": "Double-arrow line for convex; inward for concave.",
+          "remember": "Thin lens: single vertical line symbol.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Lens Rays and Image Formation",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d15_c01",
+          "name": "Ray parallel to lens axis",
+          "simple_answer": "Ray parallel to axis refracts through F₂ (convex) or appears from F₁ (concave).",
+          "visual": {
+            "type": "lens_ray",
+            "lens_type": "convex",
+            "rule": "parallel"
+          },
+          "why": "First standard lens ray.",
+          "example": "Horizontal incoming ray bends through focus.",
+          "remember": "Parallel → through F on far side (convex).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c02",
+          "name": "Ray through principal focus",
+          "simple_answer": "Ray through F₁ (before lens) emerges parallel to axis after convex lens.",
+          "visual": {
+            "type": "lens_ray",
+            "lens_type": "convex",
+            "rule": "through_F"
+          },
+          "why": "Pairs with parallel ray rule.",
+          "example": "Through F in → parallel out.",
+          "remember": "Reverse of parallel-ray rule.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c03",
+          "name": "Ray through optical centre",
+          "simple_answer": "Ray through O continues undeviated.",
+          "visual": {
+            "type": "lens_ray",
+            "lens_type": "convex",
+            "rule": "through_O"
+          },
+          "why": "Simplest third ray.",
+          "example": "Straight line through middle of lens.",
+          "remember": "O ray: no bend.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c04",
+          "name": "Convex-lens real images",
+          "simple_answer": "Object beyond F → real, inverted image on opposite side (can screen).",
+          "visual": {
+            "type": "lens_image",
+            "lens_type": "convex",
+            "position": "beyond_F"
+          },
+          "why": "Camera and projector principle simplified.",
+          "example": "Object outside F forms screen image.",
+          "remember": "Real when object beyond F.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c05",
+          "name": "Convex-lens virtual image",
+          "simple_answer": "Object inside F → virtual, erect, enlarged image on same side as object.",
+          "visual": {
+            "type": "lens_image",
+            "lens_type": "convex",
+            "position": "inside_F"
+          },
+          "why": "Magnifying glass use.",
+          "example": "Hold lens close to book — upright big view.",
+          "remember": "Inside F → virtual erect enlarged.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c06",
+          "name": "Object at 2F",
+          "simple_answer": "Object at 2F gives real, inverted, same-size image at 2F on other side.",
+          "visual": {
+            "type": "lens_image",
+            "lens_type": "convex",
+            "position": "at_2F"
+          },
+          "why": "Special symmetric case.",
+          "example": "Mark 2F on both sides of convex lens.",
+          "remember": "2F object → 2F image, same size.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c07",
+          "name": "Object between F and 2F",
+          "simple_answer": "Real, inverted, enlarged image beyond 2F.",
+          "visual": {
+            "type": "lens_image",
+            "lens_type": "convex",
+            "position": "F_to_2F"
+          },
+          "why": "Projector-like situation.",
+          "example": "Slide projector object near F region.",
+          "remember": "Between F and 2F → enlarged real image.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c08",
+          "name": "Object inside F",
+          "simple_answer": "Virtual, erect, enlarged — magnifying glass mode.",
+          "visual": {
+            "type": "lens_image",
+            "lens_type": "convex",
+            "position": "inside_F"
+          },
+          "why": "Same as virtual image card — applied.",
+          "example": "Reading fine print with magnifier.",
+          "remember": "Inside F: magnifier.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c09",
+          "name": "Concave-lens image properties",
+          "simple_answer": "Concave lens always gives virtual, erect, diminished image for a real object.",
+          "visual": {
+            "type": "lens_image",
+            "lens_type": "concave"
+          },
+          "why": "Only one nature — simpler than convex.",
+          "example": "Peephole always small upright view.",
+          "remember": "Concave: always virtual, erect, diminished.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c10",
+          "name": "Lens ray diagram",
+          "simple_answer": "Use any two of: parallel→F, through F→parallel, through O straight to locate image.",
+          "visual": {
+            "type": "lens_ray",
+            "lens_type": "convex",
+            "rule": "two_rays"
+          },
+          "why": "Same strategy as mirrors.",
+          "example": "Draw carefully to scale on axis.",
+          "remember": "Two good rays enough.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "Lens Formula, Magnification and Power",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d16_c01",
+          "name": "Lens sign convention",
+          "simple_answer": "Light travels left to right; distances against light are negative; f positive for convex, negative for concave (NCERT).",
+          "visual": {
+            "type": "sign_axis",
+            "topic": "lens",
+            "highlight": "convention"
+          },
+          "why": "Mirror and lens signs differ — learn separately.",
+          "example": "Convex converging lens: f positive.",
+          "remember": "Lens signs ≠ mirror signs.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c02",
+          "name": "Convex-lens focal-length sign",
+          "simple_answer": "Convex lens: f is positive in lens formula work.",
+          "visual": {
+            "type": "sign_axis",
+            "topic": "lens",
+            "mirror_type": "convex",
+            "highlight": "f"
+          },
+          "why": "Matches converging behaviour.",
+          "example": "f = +20 cm for convex.",
+          "remember": "Convex f positive.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c03",
+          "name": "Concave-lens focal-length sign",
+          "simple_answer": "Concave lens: f is negative.",
+          "visual": {
+            "type": "sign_axis",
+            "topic": "lens",
+            "mirror_type": "concave",
+            "highlight": "f"
+          },
+          "why": "Opposite to convex.",
+          "example": "f = −15 cm for concave.",
+          "remember": "Concave f negative.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c04",
+          "name": "Lens formula",
+          "simple_answer": "1/v − 1/u = 1/f for thin lenses — note minus on 1/u term (different from mirror formula).",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "lens_formula",
+            "topic": "lens"
+          },
+          "why": "Most common mix-up with mirror formula.",
+          "example": "Check NCERT lens numericals.",
+          "remember": "Lens: 1/v − 1/u = 1/f.",
+          "common_confusion": "Mirror uses plus between 1/v and 1/u.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c05",
+          "name": "Mirror vs lens formula",
+          "simple_answer": "Mirror: 1/v + 1/u = 1/f. Lens: 1/v − 1/u = 1/f. Learn both with correct signs.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "compare_formulas",
+            "topic": "lens"
+          },
+          "why": "Write which formula before substituting.",
+          "example": "Label problem as mirror or lens first.",
+          "remember": "Plus vs minus on 1/u term.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c06",
+          "name": "Lens magnification",
+          "simple_answer": "m = h′/h = v/u for lenses (NCERT lens convention).",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "m_lens",
+            "topic": "lens"
+          },
+          "why": "Sign of m gives orientation.",
+          "example": "Compare to mirror m = −v/u.",
+          "remember": "Lens: m = v/u.",
+          "common_confusion": "Do not use −v/u for lens unless your text specifies mirror.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c07",
+          "name": "Interpreting lens m",
+          "simple_answer": "State erect/inverted and size from sign and |m| after lens calculations.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "interpret_m_lens",
+            "topic": "lens"
+          },
+          "why": "Finish with words, not only numbers.",
+          "example": "m = +2 erect enlarged (virtual case).",
+          "remember": "Interpret |m| and sign separately.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c08",
+          "name": "Power of a lens",
+          "simple_answer": "Power P measures converging/diverging strength: P = 1/f when f is in metres.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "P",
+            "topic": "lens"
+          },
+          "why": "Used for spectacles and combinations.",
+          "example": "f = 0.5 m → P = +2 D convex.",
+          "remember": "P = 1/f (f in metres).",
+          "common_confusion": "f must be in metres.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c09",
+          "name": "Dioptre",
+          "simple_answer": "One dioptre (1 D) is the power of a lens with focal length 1 m.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "dioptre",
+            "topic": "lens"
+          },
+          "why": "Unit of lens power.",
+          "example": "P = +1 D means f = 1 m convex.",
+          "remember": "Unit: dioptre (D).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c10",
+          "name": "Focal length in metres",
+          "simple_answer": "Convert cm to m before using P = 1/f — divide cm by 100.",
+          "visual": {
+            "type": "formula_panel",
+            "symbol": "metres",
+            "topic": "lens"
+          },
+          "why": "Most common lens power mistake.",
+          "example": "f = 25 cm = 0.25 m → P = 4 D.",
+          "remember": "Metres in power formula.",
+          "common_confusion": "cm without conversion gives wrong P by 10⁴.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

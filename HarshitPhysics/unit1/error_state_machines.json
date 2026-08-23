@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "unit_id": 1,
+    "description": "Misconception remediation paths for Stage 2 MCQs"
+  },
+  "misconception_categories": [
+    "angle_from_surface",
+    "incident_reflected_swap",
+    "concave_convex_confusion",
+    "F_C_confusion",
+    "R_2f_misuse",
+    "real_means_erect",
+    "virtual_means_invisible",
+    "wrong_ray_rule",
+    "reflection_refraction_swap",
+    "bending_direction_reversed",
+    "refractive_index_speed",
+    "mirror_lens_formula_swap",
+    "focal_length_sign",
+    "object_distance_sign",
+    "magnification_sign_confusion",
+    "sign_not_interpreted",
+    "cm_to_m_conversion",
+    "lens_power_sign"
+  ],
+  "machines": {
+    "angle_from_surface": {
+      "feedback": "This answer suggests the angle may have been measured from the mirror surface instead of the normal.",
+      "concept_ids": ["u1_d2_c05", "u1_d2_c06", "u1_d2_c07"],
+      "calm_prompt": "Let's revisit the normal — angles are measured from that dashed perpendicular line."
+    },
+    "incident_reflected_swap": {
+      "feedback": "This answer suggests that the incident and reflected rays may have been interchanged.",
+      "concept_ids": ["u1_d2_c02", "u1_d2_c03"],
+      "calm_prompt": "Check the arrow direction: incident ray points toward the surface."
+    },
+    "concave_convex_confusion": {
+      "feedback": "This answer suggests concave and convex mirrors may have been mixed up.",
+      "concept_ids": ["u1_d3_c02", "u1_d3_c03", "u1_d3_c10"],
+      "calm_prompt": "Here is another way to see this: check which side is the reflecting surface."
+    },
+    "F_C_confusion": {
+      "feedback": "This answer suggests F and C may have been confused on the principal axis.",
+      "concept_ids": ["u1_d3_c05", "u1_d3_c06", "u1_d4_c01"],
+      "calm_prompt": "P is on the mirror; C is the centre of the sphere; F lies between P and C."
+    },
+    "R_2f_misuse": {
+      "feedback": "This answer suggests R = 2f may not have been applied correctly.",
+      "concept_ids": ["u1_d3_c07", "u1_d4_c09"],
+      "calm_prompt": "F is midway between P and C when R = 2f."
+    },
+    "real_means_erect": {
+      "feedback": "This answer suggests that a real image was assumed to be erect.",
+      "concept_ids": ["u1_d2_c10"],
+      "calm_prompt": "Real images from single mirrors are often inverted; virtual images are erect."
+    },
+    "virtual_means_invisible": {
+      "feedback": "This answer suggests a virtual image was treated as invisible.",
+      "concept_ids": ["u1_d2_c10", "u1_d4_c04"],
+      "calm_prompt": "Virtual means light does not actually meet there — you can still see the image."
+    }
+  }
+}

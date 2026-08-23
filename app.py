@@ -710,6 +710,11 @@ def select_activity(activity):
         st.session_state.hm_day_id = None
         st.session_state.hm_problem_id = None
         st.session_state.hm_start_time = time.time()
+    elif activity == "HarshitPhysics":
+        st.session_state.current_page = "harshit_physics_home"
+        st.session_state.hp_day_id = None
+        st.session_state.hp_mode = "concept"
+        st.session_state.hp_start_time = time.time()
 
 
 def start_story(story_id):
@@ -1452,12 +1457,16 @@ def render_user_dashboard():
 
         with act_col2:
             st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #9ca3af;">
-                <div style="font-size: 3rem;">🔮</div>
-                <h3 style="margin: 0.5rem 0;">More Coming Soon</h3>
-                <p style="color: #6b7280;">Algebra, geometry & 10th grade next</p>
+            <div class="score-card" style="border-top: 5px solid #6366f1;">
+                <div style="font-size: 3rem;">⚛️</div>
+                <h3 style="margin: 0.5rem 0;">Physics Confidence</h3>
+                <p style="color: #6b7280;">Unit 1 — Light, reflection & refraction</p>
             </div>
             """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("⚛️ Physics", key="btn_harshit_physics", width="stretch", type="primary"):
+                select_activity("HarshitPhysics")
+                st.rerun()
 
     else:
         st.markdown(f"### 🚧 {name}'s activities are coming soon!")
@@ -5983,6 +5992,30 @@ def render_harshit_class10_practice():
     harshit_class10_practice_ui.render_practice()
 
 
+def render_harshit_physics_home():
+    import harshit_physics_ui
+
+    harshit_physics_ui.render_home()
+
+
+def render_harshit_physics_unit1():
+    import harshit_physics_ui
+
+    harshit_physics_ui.render_unit1_home()
+
+
+def render_harshit_physics_concept():
+    import harshit_physics_ui
+
+    harshit_physics_ui.render_concept_card()
+
+
+def render_harshit_physics_practice():
+    import harshit_physics_practice_ui
+
+    harshit_physics_practice_ui.render_practice()
+
+
 # ──────────────────────────────────────────────
 # PAGE: Network Architecture / NVIDIA RA (Rakesh)
 # ──────────────────────────────────────────────
@@ -7047,6 +7080,14 @@ elif page == "harshit_class10_unit":
     render_harshit_class10_unit()
 elif page == "harshit_class10_practice":
     render_harshit_class10_practice()
+elif page == "harshit_physics_home":
+    render_harshit_physics_home()
+elif page == "harshit_physics_unit1":
+    render_harshit_physics_unit1()
+elif page == "harshit_physics_concept":
+    render_harshit_physics_concept()
+elif page == "harshit_physics_practice":
+    render_harshit_physics_practice()
 elif page == "cube_addition":
     render_cube_addition()
 else:

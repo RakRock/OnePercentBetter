@@ -219,6 +219,63 @@ def init_db():
 
             CREATE INDEX IF NOT EXISTS idx_harshit_practice_user_prereq
                 ON harshit_practice_sessions(user_id, prereq_id, completed_at DESC);
+
+            CREATE TABLE IF NOT EXISTS harshit_physics_concept_status (
+                user_id INTEGER NOT NULL,
+                unit_id INTEGER NOT NULL,
+                concept_id TEXT NOT NULL,
+                viewed INTEGER NOT NULL DEFAULT 0,
+                marked_review INTEGER NOT NULL DEFAULT 0,
+                simpler_requests INTEGER NOT NULL DEFAULT 0,
+                example_requests INTEGER NOT NULL DEFAULT 0,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (user_id, unit_id, concept_id),
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
+            CREATE TABLE IF NOT EXISTS harshit_physics_day_status (
+                user_id INTEGER NOT NULL,
+                unit_id INTEGER NOT NULL,
+                day_id INTEGER NOT NULL,
+                status TEXT NOT NULL DEFAULT 'not_started',
+                concepts_viewed INTEGER NOT NULL DEFAULT 0,
+                concepts_total INTEGER NOT NULL DEFAULT 0,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (user_id, unit_id, day_id),
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
+            CREATE TABLE IF NOT EXISTS harshit_physics_mcq_attempts (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                unit_id INTEGER NOT NULL,
+                day_id INTEGER NOT NULL,
+                question_id TEXT NOT NULL,
+                selected TEXT,
+                correct INTEGER NOT NULL DEFAULT 0,
+                misconception TEXT DEFAULT '',
+                concept_reviewed TEXT DEFAULT '',
+                retry_correct INTEGER,
+                completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
+            CREATE TABLE IF NOT EXISTS harshit_physics_misconceptions (
+                user_id INTEGER NOT NULL,
+                unit_id INTEGER NOT NULL,
+                category TEXT NOT NULL,
+                count INTEGER NOT NULL DEFAULT 0,
+                last_seen TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (user_id, unit_id, category),
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
+            CREATE TABLE IF NOT EXISTS harshit_physics_week_config (
+                unit_id INTEGER PRIMARY KEY,
+                week_label TEXT NOT NULL DEFAULT '',
+                config_json TEXT NOT NULL DEFAULT '{}',
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
         """)
         # Migration: add time_spent_seconds if missing (added after initial schema)
         try:
@@ -1621,4 +1678,195 @@ def save_harshit_class10_week_config(
                  updated_at = CURRENT_TIMESTAMP""",
             (unit_id, week_label, json.dumps(payload)),
         )
+
+
+def save_harshit_physics_concept_status(
+    user_id: int,
+    *,
+    unit_id: int,
+    concept_id: str,
+    viewed: bool = False,
+    marked_review: bool = False,
+    simpler_request: bool = False,
+    example_request: bool = False,
+) -> None:
+    with get_connection() as conn:
+        row = conn.execute(
+            """SELECT simpler_requests, example_requests, viewed, marked_review
+               FROM harshit_physics_concept_status
+               WHERE user_id = ? AND unit_id = ? AND concept_id = ?""",
+            (user_id, unit_id, concept_id),
+        ).fetchone()
+        simpler = int(row["simpler_requests"]) if row else 0
+        examples = int(row["example_requests"]) if row else 0
+        if simpler_request:
+            simpler += 1
+        if example_request:
+            examples += 1
+        viewed_val = 1 if viewed or (row and row["viewed"]) else 0
+        review_val = 1 if marked_review else (int(row["marked_review"]) if row else 0)
+        conn.execute(
+            """INSERT INTO harshit_physics_concept_status
+               (user_id, unit_id, concept_id, viewed, marked_review, simpler_requests,
+                example_requests, updated_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(user_id, unit_id, concept_id) DO UPDATE SET
+                 viewed = MAX(harshit_physics_concept_status.viewed, excluded.viewed),
+                 marked_review = excluded.marked_review,
+                 simpler_requests = excluded.simpler_requests,
+                 example_requests = excluded.example_requests,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (user_id, unit_id, concept_id, viewed_val, review_val, simpler, examples),
+        )
+
+
+def get_harshit_physics_viewed_concepts(user_id: int, *, unit_id: int) -> list[str]:
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT concept_id FROM harshit_physics_concept_status
+               WHERE user_id = ? AND unit_id = ? AND viewed = 1""",
+            (user_id, unit_id),
+        ).fetchall()
+    return [r["concept_id"] for r in rows]
+
+
+def get_harshit_physics_review_concepts(user_id: int, *, unit_id: int) -> list[str]:
+    with get_connection() as conn:
+        rows = conn.execute(
+            """SELECT concept_id FROM harshit_physics_concept_status
+               WHERE user_id = ? AND unit_id = ? AND marked_review = 1""",
+            (user_id, unit_id),
+        ).fetchall()
+    return [r["concept_id"] for r in rows]
+
+
+def update_harshit_physics_day_status(
+    user_id: int,
+    *,
+    unit_id: int,
+    day_id: int,
+    status: str,
+    concepts_viewed: int,
+    concepts_total: int,
+) -> None:
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO harshit_physics_day_status
+               (user_id, unit_id, day_id, status, concepts_viewed, concepts_total, updated_at)
+               VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(user_id, unit_id, day_id) DO UPDATE SET
+                 status = excluded.status,
+                 concepts_viewed = excluded.concepts_viewed,
+                 concepts_total = excluded.concepts_total,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (user_id, unit_id, day_id, status, concepts_viewed, concepts_total),
+        )
+
+
+def get_harshit_physics_week_config(unit_id: int) -> dict:
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT week_label, config_json FROM harshit_physics_week_config WHERE unit_id = ?",
+            (unit_id,),
+        ).fetchone()
+    if not row:
+        return {
+            "week_label": "",
+            "topics": [],
+            "practice_difficulty": 3,
+            "use_chapter_llm": False,
+            "grok_fresh_only": False,
+            "unit_id": unit_id,
+        }
+    try:
+        data = json.loads(row["config_json"] or "{}")
+    except json.JSONDecodeError:
+        data = {}
+    if not isinstance(data, dict):
+        data = {}
+    topics = data.get("topics")
+    if not isinstance(topics, list):
+        topics = []
+    try:
+        practice_difficulty = max(1, min(5, int(data.get("practice_difficulty", 3))))
+    except (TypeError, ValueError):
+        practice_difficulty = 3
+    return {
+        "week_label": row["week_label"] or data.get("week_label", ""),
+        "topics": topics,
+        "practice_difficulty": practice_difficulty,
+        "use_chapter_llm": bool(data.get("use_chapter_llm", False)),
+        "grok_fresh_only": bool(data.get("grok_fresh_only", False)),
+        "unit_id": unit_id,
+    }
+
+
+def save_harshit_physics_week_config(
+    unit_id: int,
+    week_label: str,
+    topics: list[dict],
+    *,
+    practice_difficulty: int = 3,
+    use_chapter_llm: bool = False,
+    grok_fresh_only: bool = False,
+) -> None:
+    payload = {
+        "week_label": week_label,
+        "topics": topics,
+        "practice_difficulty": max(1, min(5, int(practice_difficulty))),
+        "use_chapter_llm": use_chapter_llm,
+        "grok_fresh_only": grok_fresh_only,
+        "unit_id": unit_id,
+    }
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO harshit_physics_week_config (unit_id, week_label, config_json, updated_at)
+               VALUES (?, ?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(unit_id) DO UPDATE SET
+                 week_label = excluded.week_label,
+                 config_json = excluded.config_json,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (unit_id, week_label, json.dumps(payload)),
+        )
+
+
+def save_harshit_physics_mcq_attempt(
+    user_id: int,
+    *,
+    unit_id: int,
+    day_id: int,
+    question_id: str,
+    selected: str,
+    correct: bool,
+    misconception: str = "",
+    concept_reviewed: str = "",
+    retry_correct: bool | None = None,
+) -> None:
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO harshit_physics_mcq_attempts
+               (user_id, unit_id, day_id, question_id, selected, correct,
+                misconception, concept_reviewed, retry_correct)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                user_id,
+                unit_id,
+                day_id,
+                question_id,
+                selected,
+                1 if correct else 0,
+                misconception,
+                concept_reviewed,
+                None if retry_correct is None else (1 if retry_correct else 0),
+            ),
+        )
+        if misconception and not correct:
+            conn.execute(
+                """INSERT INTO harshit_physics_misconceptions (user_id, unit_id, category, count, last_seen)
+                   VALUES (?, ?, ?, 1, CURRENT_TIMESTAMP)
+                   ON CONFLICT(user_id, unit_id, category) DO UPDATE SET
+                     count = count + 1,
+                     last_seen = CURRENT_TIMESTAMP""",
+                (user_id, unit_id, misconception),
+            )
 
