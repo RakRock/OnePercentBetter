@@ -60,6 +60,23 @@ st.set_page_config(
 db.init_db()
 
 
+def _ensure_harshit_db_api():
+    """Reload or patch ``database`` when Streamlit keeps a stale module after deploy."""
+    global db
+    if hasattr(db, "get_harshit_physics_viewed_concepts"):
+        return
+    try:
+        from harshit.db_compat import ensure_harshit_db_api
+
+        db = ensure_harshit_db_api(db)
+        db.init_db()
+    except Exception:
+        pass
+
+
+_ensure_harshit_db_api()
+
+
 @st.cache_resource
 def _sync_google_sheets_on_startup() -> int:
     """Import Edgenuity practice rows from Google Sheets once per app process."""
