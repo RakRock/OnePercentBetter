@@ -1,4 +1,4 @@
-"""Practice topic catalog for Harshit Physics Unit 1."""
+"""Practice topic catalog for Harshit Physics."""
 
 from __future__ import annotations
 
@@ -13,10 +13,10 @@ LEVELS = {
 
 def topics_for_unit(unit_id: int = 1) -> dict[int, dict]:
     """Day number → topic metadata (mirrors Class 10 topic map)."""
-    if unit_id != hpc.UNIT_ID:
+    if unit_id not in hpc.UNITS:
         return {}
     out: dict[int, dict] = {}
-    for day in hpc.list_days(stage=1):
+    for day in hpc.list_days(stage=1, unit_id=unit_id):
         if not day.get("active"):
             continue
         did = int(day["day"])
@@ -39,9 +39,10 @@ def format_topic_level_label(unit_id: int, day_id: int, level: str) -> str:
 
 def default_week_config(unit_id: int = 1) -> dict:
     topics = topics_for_unit(unit_id)
+    umeta = hpc.unit_meta(unit_id)
     return {
         "unit_id": unit_id,
-        "week_label": "Unit 1 — Light (all topics)",
+        "week_label": f"Unit {unit_id} — {umeta['title']} (all topics)",
         "topics": [{"id": did, "levels": ["A", "B", "C"]} for did in sorted(topics)],
         "practice_difficulty": 3,
         "use_chapter_llm": False,

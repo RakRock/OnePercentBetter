@@ -6004,6 +6004,24 @@ def render_harshit_physics_unit1():
     harshit_physics_ui.render_unit1_home()
 
 
+def render_harshit_physics_unit2():
+    import harshit_physics_ui
+
+    harshit_physics_ui.render_unit2_home()
+
+
+def render_harshit_physics_unit3():
+    import harshit_physics_ui
+
+    harshit_physics_ui.render_unit3_home()
+
+
+def render_harshit_physics_unit4():
+    import harshit_physics_ui
+
+    harshit_physics_ui.render_unit4_home()
+
+
 def render_harshit_physics_concept():
     import harshit_physics_ui
 
@@ -7084,6 +7102,12 @@ elif page == "harshit_physics_home":
     render_harshit_physics_home()
 elif page == "harshit_physics_unit1":
     render_harshit_physics_unit1()
+elif page == "harshit_physics_unit2":
+    render_harshit_physics_unit2()
+elif page == "harshit_physics_unit3":
+    render_harshit_physics_unit3()
+elif page == "harshit_physics_unit4":
+    render_harshit_physics_unit4()
 elif page == "harshit_physics_concept":
     render_harshit_physics_concept()
 elif page == "harshit_physics_practice":

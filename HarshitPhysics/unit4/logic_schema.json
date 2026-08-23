@@ -1,0 +1,2642 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 4,
+    "unit_title": "Magnetic Effects of Electric Current",
+    "ncert": "Class 10 Science, Chapter 12",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_physics_unit4_concepts",
+    "session_kind_mcq": "harshit_physics_unit4_mcq"
+  },
+  "glossary": [
+    {
+      "term": "magnetic field",
+      "definition": "Region around a magnet where magnetic force on a pole can be detected."
+    },
+    {
+      "term": "magnetic field lines",
+      "definition": "Curves showing direction and strength of magnetic field; emerge from N, enter S."
+    },
+    {
+      "term": "right-hand thumb rule",
+      "definition": "Thumb along current; curled fingers give field direction around straight conductor."
+    },
+    {
+      "term": "solenoid",
+      "definition": "Cylinder-shaped coil of many closely wound turns of insulated copper wire."
+    },
+    {
+      "term": "electromagnet",
+      "definition": "Magnet formed by magnetising soft iron core inside current-carrying solenoid."
+    },
+    {
+      "term": "Fleming's left-hand rule",
+      "definition": "First finger B, second I, thumb F — mutually perpendicular."
+    },
+    {
+      "term": "live wire",
+      "definition": "Red-insulated mains wire at high potential (~220 V w.r.t. neutral)."
+    },
+    {
+      "term": "neutral wire",
+      "definition": "Black-insulated return wire at ~0 V reference."
+    },
+    {
+      "term": "earth wire",
+      "definition": "Green-insulated wire connected to ground for appliance safety."
+    },
+    {
+      "term": "short circuit",
+      "definition": "Direct contact of live and neutral causing abrupt high current."
+    },
+    {
+      "term": "overloading",
+      "definition": "Drawing current beyond safe limit due to too many appliances or voltage surge."
+    },
+    {
+      "term": "fuse",
+      "definition": "Safety device that melts to break circuit on overcurrent."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "Magnetism and Electric Current",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d1_c01",
+          "name": "Electricity and magnetism linked",
+          "simple_answer": "A current-carrying wire behaves like a magnet — electricity and magnetism are related.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "highlight": "overview"
+          },
+          "why": "Ch 12 builds on Ch 11 heating effect.",
+          "example": "Activity 12.1 compass deflects near wire.",
+          "remember": "Current produces magnetic effect.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c02",
+          "name": "Oersted's discovery",
+          "simple_answer": "In 1820 Oersted found a compass needle deflected when current passed through a nearby wire.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "highlight": "oersted"
+          },
+          "why": "First link between electricity and magnetism.",
+          "example": "Accidental lab observation changed physics.",
+          "remember": "Oersted: current → magnetism.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c03",
+          "name": "Activity 12.1 setup",
+          "simple_answer": "Thick copper wire between X and Y; compass nearby; key closed → needle deflects.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "activity_12_1"
+          },
+          "why": "Standard intro demo Fig 12.1.",
+          "example": "Wire perpendicular to paper plane.",
+          "remember": "Deflection proves magnetic effect of current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c04",
+          "name": "Compass as small magnet",
+          "simple_answer": "A compass needle is a small bar magnet — free to rotate horizontally.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "highlight": "compass"
+          },
+          "why": "Used to detect magnetic fields.",
+          "example": "Needle points roughly north-south.",
+          "remember": "Compass needle = tiny magnet.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c05",
+          "name": "Magnetic effect vs heating",
+          "simple_answer": "Ch 11: heating effect of current. Ch 12: magnetic effect and electromagnetic devices.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "compare_ch11"
+          },
+          "why": "Two major effects of current.",
+          "example": "Heater hot; wire near compass deflects.",
+          "remember": "Same current, different effects.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c06",
+          "name": "Reverse possibility",
+          "simple_answer": "If current makes magnetism, moving magnets can produce electricity — studied later as electromagnetic induction.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "reverse"
+          },
+          "why": "Foreshadows generator idea.",
+          "example": "Dynamic microphones use related physics.",
+          "remember": "Magnetism ↔ electricity both ways.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c07",
+          "name": "Electromagnets preview",
+          "simple_answer": "This chapter includes electromagnets — magnetism from electric current in coils.",
+          "visual": {
+            "type": "solenoid_field",
+            "highlight": "electromagnet"
+          },
+          "why": "Practical application thread.",
+          "example": "Crane lifting scrap iron.",
+          "remember": "Coil + iron core = electromagnet.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c08",
+          "name": "Unit of field strength",
+          "simple_answer": "Magnetic field strength unit oersted named after Hans Christian Oersted.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "oersted (Oe)",
+            "label": "Honour"
+          },
+          "why": "Historical note in NCERT.",
+          "example": "Field strength has magnitude.",
+          "remember": "Oersted unit for field strength.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c09",
+          "name": "Deflection meaning",
+          "simple_answer": "Compass deflection means the wire's current produced a magnetic field that acted on the needle.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "highlight": "deflection"
+          },
+          "why": "Interpretation of Activity 12.1.",
+          "example": "Needle moves from north alignment.",
+          "remember": "Deflection = magnetic force on needle.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c10",
+          "name": "Metallic conductor required",
+          "simple_answer": "Magnetic effect shown with metallic conductor carrying current — standard lab copper wire.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "conductor"
+          },
+          "why": "Current must flow in conductor.",
+          "example": "Thick copper wire in activities.",
+          "remember": "Metallic wire + current → field.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Magnetic Field and Field Lines",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d2_c01",
+          "name": "Magnetic field definition",
+          "simple_answer": "Region around a magnet where magnetic force can be detected is called magnetic field.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "highlight": "definition"
+          },
+          "why": "Field exists even without iron filings.",
+          "example": "Iron filings experience force in region.",
+          "remember": "Magnetic field = region of magnetic force.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "magnetic field"
+          ]
+        },
+        {
+          "id": "u4_d2_c02",
+          "name": "Bar magnet poles",
+          "simple_answer": "Ends of bar magnet: north-seeking (north) pole and south-seeking (south) pole.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "highlight": "poles"
+          },
+          "why": "Compass points align with Earth's field.",
+          "example": "Mark N and S on bar magnet diagram.",
+          "remember": "N pole and S pole.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c03",
+          "name": "Like poles repel",
+          "simple_answer": "Like magnetic poles repel each other.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "repel"
+          },
+          "why": "Fundamental magnet rule.",
+          "example": "Two north poles push apart.",
+          "remember": "N–N or S–S → repulsion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c04",
+          "name": "Unlike poles attract",
+          "simple_answer": "Unlike magnetic poles attract each other.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "attract"
+          },
+          "why": "Pair with repulsion rule.",
+          "example": "N near S pulls together.",
+          "remember": "N–S → attraction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c05",
+          "name": "Iron filings pattern",
+          "simple_answer": "Iron filings around bar magnet align along field lines (Activity 12.2).",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "iron_filings"
+          },
+          "why": "Fig 12.2 salt-sprinkler demo.",
+          "example": "Tap board gently to see pattern.",
+          "remember": "Filings show field direction/ strength.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c06",
+          "name": "Field has direction and magnitude",
+          "simple_answer": "Magnetic field is a vector quantity — both direction and strength matter.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "highlight": "vector"
+          },
+          "why": "NCERT explicit statement.",
+          "example": "Stronger field stronger force on pole.",
+          "remember": "Field = direction + magnitude.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c07",
+          "name": "Field line direction convention",
+          "simple_answer": "Direction of field = direction a free north pole would move. Lines emerge from N, enter S.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "highlight": "direction"
+          },
+          "why": "Arrows on Fig 12.4.",
+          "example": "North pole of compass moves along field.",
+          "remember": "Lines out of N, into S (outside magnet).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c08",
+          "name": "Field lines inside magnet",
+          "simple_answer": "Inside bar magnet, field lines go from south pole to north pole — closed curves.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "highlight": "inside"
+          },
+          "why": "Completes closed loop picture.",
+          "example": "Continue lines inside magnet body.",
+          "remember": "Inside: S → N.",
+          "common_confusion": "Do not stop lines at surface only.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c09",
+          "name": "Closer lines stronger field",
+          "simple_answer": "Crowded field lines mean stronger magnetic field; spread lines mean weaker field.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "highlight": "strength"
+          },
+          "why": "Visual density = strength.",
+          "example": "Near poles lines crowded.",
+          "remember": "Close lines = strong field.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c10",
+          "name": "Field lines never cross",
+          "simple_answer": "Two field lines never intersect — otherwise compass would show two directions at one point.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "highlight": "no_cross"
+          },
+          "why": "NCERT Q3 property.",
+          "example": "Impossible for needle at intersection.",
+          "remember": "No two lines cross.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Mapping and Properties of Field Lines",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d3_c01",
+          "name": "Drawing field lines with compass",
+          "simple_answer": "Activity 12.3: move compass step by step from N to S pole, mark points, join smooth curve.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "activity_12_3"
+          },
+          "why": "Fig 12.3 method.",
+          "example": "Each step south pole follows previous north position.",
+          "remember": "Compass maps one field line.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c02",
+          "name": "Multiple field lines",
+          "simple_answer": "Repeat compass procedure to draw many lines — pattern like Fig 12.4.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "pattern"
+          },
+          "why": "Full field map around magnet.",
+          "example": "Many curves from N to S.",
+          "remember": "Family of lines shows full field.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c03",
+          "name": "Deflection increases near poles",
+          "simple_answer": "Compass deflection greater when moved toward magnet poles.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "near_poles"
+          },
+          "why": "Qualitative strength check.",
+          "example": "Feel stronger pull near poles.",
+          "remember": "Stronger field near poles.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c04",
+          "name": "Properties list for exams",
+          "simple_answer": "List: direction N→S outside; closed curves; no crossing; density shows strength.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "properties"
+          },
+          "why": "NCERT Q2 answer template.",
+          "example": "Four bullet properties.",
+          "remember": "Memorise four properties.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c05",
+          "name": "Why compass deflects near magnet",
+          "simple_answer": "Magnet exerts force on magnetic poles of compass needle — torque rotates it.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "why_deflect"
+          },
+          "why": "NCERT Q Ch 12.1.",
+          "example": "Needle aligns with local field direction.",
+          "remember": "Force on poles rotates needle.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c06",
+          "name": "Hypothetical north pole on line",
+          "simple_answer": "Field line path = path free north pole would tend to move.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "highlight": "definition"
+          },
+          "why": "Definition of line direction.",
+          "example": "Think of tiny test north pole.",
+          "remember": "Field line = north pole path.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c07",
+          "name": "Magnetic field lines vs electric",
+          "simple_answer": "Magnetic lines are closed curves; electric field lines start on + and end on − (Ch 12 contrast).",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "compare_electric"
+          },
+          "why": "Conceptual distinction.",
+          "example": "Magnet field loops closed.",
+          "remember": "Magnetic lines always closed.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c08",
+          "name": "Uniform field representation",
+          "simple_answer": "Parallel equally-spaced straight lines represent uniform magnetic field.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "uniform"
+          },
+          "why": "Inside solenoid approximates this.",
+          "example": "Draw parallel arrows same spacing.",
+          "remember": "Uniform = parallel equal spacing.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c09",
+          "name": "Field line diagram exam skill",
+          "simple_answer": "Draw bar magnet field: curves from N to S outside, continue inside S to N.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "exam_draw"
+          },
+          "why": "Diagram question practice.",
+          "example": "Label N and S; arrow on lines.",
+          "remember": "Closed curves with arrows.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c10",
+          "name": "Salt sprinkler tip",
+          "simple_answer": "Iron filings sprinkled uniformly then board tapped gently to reveal pattern.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "technique"
+          },
+          "why": "Activity 12.2 practical tip.",
+          "example": "Even sprinkling before tap.",
+          "remember": "Tap gently for clear pattern.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Magnetic Field due to Straight Conductor",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d4_c01",
+          "name": "Current produces magnetic field",
+          "simple_answer": "Electric current through metallic conductor produces magnetic field around it — Activity 12.1 & 12.4.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "highlight": "produce"
+          },
+          "why": "Core Ch 12.2 idea.",
+          "example": "Wire over compass deflects needle.",
+          "remember": "Current → magnetic field.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c02",
+          "name": "Activity 12.4 direction change",
+          "simple_answer": "Reverse cell connections → current direction reverses → compass deflection reverses.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "activity_12_4"
+          },
+          "why": "Fig 12.5 (a) and (b).",
+          "example": "East deflection one way, west when reversed.",
+          "remember": "Field direction follows current direction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c03",
+          "name": "Straight conductor field pattern",
+          "simple_answer": "Magnetic field around straight current-carrying wire = concentric circles (Activity 12.5).",
+          "visual": {
+            "type": "current_magnetic_field",
+            "highlight": "concentric"
+          },
+          "why": "Fig 12.6 iron filings circles.",
+          "example": "Circles centered on wire.",
+          "remember": "Concentric circles around wire.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c04",
+          "name": "Field direction at a point",
+          "simple_answer": "Place compass on a circle — north pole direction gives field direction at that point.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "find_direction"
+          },
+          "why": "Arrow on circle tangent.",
+          "example": "Compass at point P on circle.",
+          "remember": "Compass shows field direction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c05",
+          "name": "Current magnitude effect",
+          "simple_answer": "Increase current → greater compass deflection → stronger magnetic field.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "highlight": "current"
+          },
+          "why": "Use rheostat in Activity 12.5.",
+          "example": "Higher ammeter reading → bigger deflection.",
+          "remember": "B increases with current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c06",
+          "name": "Distance effect",
+          "simple_answer": "Move compass farther from wire — deflection decreases — field weaker with distance.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "highlight": "distance"
+          },
+          "why": "Compare points P and Q.",
+          "example": "Circles grow larger farther out.",
+          "remember": "Field weaker farther from wire.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c07",
+          "name": "Larger circles farther out",
+          "simple_answer": "Concentric circles representing field become larger as distance from wire increases.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "circles_size"
+          },
+          "why": "Fig 12.6 visual.",
+          "example": "Outer circles wider radius.",
+          "remember": "Distance ↑ → circle radius ↑.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c08",
+          "name": "Wire vertical in cardboard",
+          "simple_answer": "Activity 12.5: wire through cardboard center normal to plane — circles in plane.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "setup"
+          },
+          "why": "3D setup simplified to 2D diagram.",
+          "example": "Wire perpendicular to paper.",
+          "remember": "Field circles lie in cardboard plane.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c09",
+          "name": "Pattern depends on shape",
+          "simple_answer": "Magnetic field pattern depends on shape of conductor — straight, loop, solenoid differ.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "shape"
+          },
+          "why": "Leads to sections 12.2.3–12.2.4.",
+          "example": "Bend wire into loop pattern changes.",
+          "remember": "Shape of conductor sets pattern.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c10",
+          "name": "Field reverses with current",
+          "simple_answer": "Reversing current through straight wire reverses direction of magnetic field at every point.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "reverse"
+          },
+          "why": "Check in Activity 12.5.",
+          "example": "Swap battery terminals.",
+          "remember": "Opposite current → opposite field.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Right-Hand Rule, Loop and Solenoid",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d5_c01",
+          "name": "Right-hand thumb rule",
+          "simple_answer": "Hold current-carrying straight conductor in right hand: thumb = current direction, curled fingers = field line direction.",
+          "visual": {
+            "type": "right_hand_rule",
+            "highlight": "rule"
+          },
+          "why": "Fig 12.7 — essential rule.",
+          "example": "Thumb along wire current, fingers curl around.",
+          "remember": "Thumb → I; fingers → B.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "right-hand thumb rule"
+          ]
+        },
+        {
+          "id": "u4_d5_c02",
+          "name": "Maxwell's corkscrew rule",
+          "simple_answer": "Same rule as corkscrew: turning screw in current direction gives rotation of field.",
+          "visual": {
+            "type": "right_hand_rule",
+            "mode": "corkscrew"
+          },
+          "why": "NCERT footnote alternative name.",
+          "example": "Corkscrew rotation = field direction.",
+          "remember": "Equivalent to right-hand thumb rule.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c03",
+          "name": "Example 12.1 east-west wire",
+          "simple_answer": "Current east to west: field below/above wire clockwise from east end, anticlockwise from west.",
+          "visual": {
+            "type": "right_hand_rule",
+            "mode": "example_12_1"
+          },
+          "why": "Apply rule in horizontal plane.",
+          "example": "Power line overhead field direction.",
+          "remember": "Practice with horizontal wires.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c04",
+          "name": "Circular loop field",
+          "simple_answer": "Current through circular loop: concentric circles merge; at centre field lines appear straight.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "circular_loop"
+          },
+          "why": "Fig 12.8.",
+          "example": "Arcs become straight at loop centre.",
+          "remember": "Loop centre: straight field lines.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c05",
+          "name": "All loop sections same direction at centre",
+          "simple_answer": "Right-hand rule on each segment — contributions add same direction inside loop.",
+          "visual": {
+            "type": "right_hand_rule",
+            "mode": "loop_centre"
+          },
+          "why": "Why centre field is uniform-ish.",
+          "example": "Every part of loop helps same way.",
+          "remember": "Inside loop field lines same sense.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c06",
+          "name": "n turns multiply field",
+          "simple_answer": "Coil with n turns: field n times single turn — same current direction in each turn adds.",
+          "visual": {
+            "type": "solenoid_field",
+            "highlight": "n_turns"
+          },
+          "why": "Quantitative loop coil idea.",
+          "example": "More turns stronger electromagnet.",
+          "remember": "n turns → n × field of one turn.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c07",
+          "name": "Activity 12.6 circular coil",
+          "simple_answer": "Many-turn coil through cardboard; iron filings show field pattern when current flows.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "activity_12_6"
+          },
+          "why": "Fig 12.9.",
+          "example": "Rectangular cardboard two holes.",
+          "remember": "Multi-turn coil filing pattern.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c08",
+          "name": "Clockwise current loop — inside field",
+          "simple_answer": "Clockwise current in loop in table plane — apply RH rule: field inside points into table (standard convention).",
+          "visual": {
+            "type": "right_hand_rule",
+            "mode": "clockwise_loop"
+          },
+          "why": "NCERT Q solenoid section Q1.",
+          "example": "Practice inside vs outside loop.",
+          "remember": "Inside/outside opposite by rule.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c09",
+          "name": "Solenoid definition",
+          "simple_answer": "Solenoid = many circular turns of insulated copper wire wrapped closely in cylinder shape.",
+          "visual": {
+            "type": "solenoid_field",
+            "highlight": "definition"
+          },
+          "why": "Fig 12.10.",
+          "example": "Coil looks like cylinder of wire.",
+          "remember": "Tight cylindrical coil = solenoid.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "solenoid"
+          ]
+        },
+        {
+          "id": "u4_d5_c10",
+          "name": "Solenoid like bar magnet",
+          "simple_answer": "Field outside solenoid resembles bar magnet — one end N-like, other S-like.",
+          "visual": {
+            "type": "solenoid_field",
+            "highlight": "bar_magnet"
+          },
+          "why": "Compare Fig 12.10 with 12.4.",
+          "example": "Iron filings similar patterns.",
+          "remember": "Solenoid mimics bar magnet externally.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Electromagnets and Force on a Conductor",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d6_c01",
+          "name": "Uniform field inside solenoid",
+          "simple_answer": "Inside solenoid field lines parallel straight lines — field same at all inside points (uniform).",
+          "visual": {
+            "type": "solenoid_field",
+            "highlight": "uniform"
+          },
+          "why": "NCERT MCQ answer (d).",
+          "example": "Parallel lines equal spacing inside.",
+          "remember": "Inside solenoid: uniform B.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c02",
+          "name": "Electromagnet formation",
+          "simple_answer": "Strong solenoid field magnetises soft iron core placed inside — electromagnet.",
+          "visual": {
+            "type": "solenoid_field",
+            "mode": "electromagnet"
+          },
+          "why": "Fig 12.11 steel rod in coil.",
+          "example": "Switch on current → magnetise iron.",
+          "remember": "Solenoid + soft iron = electromagnet.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "electromagnet"
+          ]
+        },
+        {
+          "id": "u4_d6_c03",
+          "name": "Soft iron core",
+          "simple_answer": "Soft iron easily magnetised and demagnetised — ideal for temporary electromagnets.",
+          "visual": {
+            "type": "solenoid_field",
+            "highlight": "soft_iron"
+          },
+          "why": "Core material choice.",
+          "example": "Crane electromagnet drops load when off.",
+          "remember": "Soft iron core for electromagnets.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c04",
+          "name": "Force on current in magnetic field",
+          "simple_answer": "Magnet exerts force on current-carrying conductor placed in magnetic field.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "highlight": "force"
+          },
+          "why": "Section 12.3 Ampere idea.",
+          "example": "Activity 12.7 aluminium rod moves.",
+          "remember": "Current in B field → force.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c05",
+          "name": "Activity 12.7 setup",
+          "simple_answer": "Aluminium rod between horseshoe magnet poles; current B to A; rod displaces left.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "activity_12_7"
+          },
+          "why": "Fig 12.12.",
+          "example": "Rod suspended horizontally.",
+          "remember": "Rod jumps when current + field.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c06",
+          "name": "Reverse current reverses force",
+          "simple_answer": "Reverse rod current direction → displacement direction reverses (right instead of left).",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "reverse_current"
+          },
+          "why": "Shows force ∝ current direction.",
+          "example": "Swap battery on rod.",
+          "remember": "Flip current → flip force.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c07",
+          "name": "Reverse field reverses force",
+          "simple_answer": "Swap magnet poles (field down instead of up) → force direction reverses again.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "reverse_field"
+          },
+          "why": "Third variable in Activity 12.7.",
+          "example": "Turn magnet over.",
+          "remember": "Flip B → flip force.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c08",
+          "name": "Maximum force when perpendicular",
+          "simple_answer": "Force largest when current and magnetic field are perpendicular.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "highlight": "perpendicular"
+          },
+          "why": "Optimal geometry for motor force.",
+          "example": "Rod between poles field ⊥ rod.",
+          "remember": "I ⊥ B → maximum force.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c09",
+          "name": "Fleming's left-hand rule",
+          "simple_answer": "Stretch thumb, forefinger, middle finger mutually ⊥: forefinger = B, middle = I, thumb = force/motion.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "highlight": "rule"
+          },
+          "why": "Fig 12.13.",
+          "example": "FBI mnemonic order for left hand.",
+          "remember": "First=B, second=I, thumb=F.",
+          "common_confusion": "Use left hand not right.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "Fleming's left-hand rule"
+          ]
+        },
+        {
+          "id": "u4_d6_c10",
+          "name": "Force perpendicular to both",
+          "simple_answer": "Force direction perpendicular to both current and magnetic field.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "perpendicular_force"
+          },
+          "why": "3D geometry of motor force.",
+          "example": "Thumb out when B and I in plane.",
+          "remember": "F ⊥ I and F ⊥ B.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Fleming's Left-Hand Rule and Applications",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d7_c01",
+          "name": "Devices using motor effect",
+          "simple_answer": "Electric motor, generator, loudspeaker, microphone, measuring instruments use conductor in magnetic field.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "devices"
+          },
+          "why": "NCERT device list.",
+          "example": "Motor turns electrical to mechanical.",
+          "remember": "Left-hand rule devices list.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c02",
+          "name": "Example 12.2 electron",
+          "simple_answer": "Electron at right angles to field — conventional current opposite to motion → force into page (d).",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "electron"
+          },
+          "why": "Reverse current for electrons.",
+          "example": "Current direction opposite electron velocity.",
+          "remember": "Electrons: reverse current direction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c03",
+          "name": "Velocity can change in B field",
+          "simple_answer": "Proton in magnetic field: velocity and momentum direction change; speed may stay same.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "proton_q"
+          },
+          "why": "NCERT Q velocity/momentum.",
+          "example": "Magnetic force can turn path.",
+          "remember": "Direction changes in uniform B.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c04",
+          "name": "Increase current increases displacement",
+          "simple_answer": "Activity 12.7: larger current → larger rod displacement (stronger force).",
+          "visual": {
+            "type": "flemings_left_hand",
+            "highlight": "current"
+          },
+          "why": "Qualitative prediction.",
+          "example": "Rheostat up → bigger kick.",
+          "remember": "More I → more force.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c05",
+          "name": "Stronger magnet more displacement",
+          "simple_answer": "Stronger horseshoe magnet → greater displacement of rod.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "highlight": "magnet"
+          },
+          "why": "Field strength effect.",
+          "example": "Replace with stronger magnet.",
+          "remember": "Stronger B → more force.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c06",
+          "name": "Longer rod more force",
+          "simple_answer": "Longer conductor in field experiences greater force (more length in B).",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "length"
+          },
+          "why": "Activity 12.7 extension question.",
+          "example": "More wire in magnetic gap.",
+          "remember": "Longer rod → larger force.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c07",
+          "name": "Alpha particle deflection",
+          "simple_answer": "Positive charge projected west, deflected north → magnetic field upward (More to Know Q3 d).",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "alpha"
+          },
+          "why": "Apply left-hand rule carefully.",
+          "example": "Force direction from FBI rule.",
+          "remember": "Use charge sign for current direction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c08",
+          "name": "MRI connection",
+          "simple_answer": "Weak nerve currents produce tiny magnetic fields — MRI uses body magnetism in medicine.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "MRI uses body fields",
+            "label": "More to Know"
+          },
+          "why": "NCERT medicine box.",
+          "example": "Heart and brain fields imaged.",
+          "remember": "Magnetism used in medical imaging.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c09",
+          "name": "Earth's field comparison",
+          "simple_answer": "Body fields ~ one-billionth of Earth's field — extremely weak.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "mri_weak"
+          },
+          "why": "Scale appreciation.",
+          "example": "Need sensitive instruments for MRI.",
+          "remember": "Biofields very weak.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c10",
+          "name": "Ampere's suggestion",
+          "simple_answer": "Ampere: magnet must exert equal and opposite force on current-carrying conductor.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "ampere"
+          },
+          "why": "Newton's third law spirit.",
+          "example": "Action on magnet and conductor.",
+          "remember": "Mutual force between magnet and wire.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Domestic Electric Circuits — Basics",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d8_c01",
+          "name": "Domestic mains supply",
+          "simple_answer": "Home electric power from mains via overhead lines or underground cables.",
+          "visual": {
+            "type": "domestic_circuit",
+            "highlight": "mains"
+          },
+          "why": "Section 12.4.",
+          "example": "220 V supply in India.",
+          "remember": "Mains brings power to meter board.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c02",
+          "name": "Live wire",
+          "simple_answer": "Live wire (red insulation) — positive side of 220 V supply.",
+          "visual": {
+            "type": "domestic_circuit",
+            "highlight": "live"
+          },
+          "why": "Dangerous to touch bare live.",
+          "example": "Red wire in domestic circuit.",
+          "remember": "Live = red, high potential.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "live wire"
+          ]
+        },
+        {
+          "id": "u4_d8_c03",
+          "name": "Neutral wire",
+          "simple_answer": "Neutral wire (black insulation) — negative return at ~0 V reference.",
+          "visual": {
+            "type": "domestic_circuit",
+            "highlight": "neutral"
+          },
+          "why": "Completes circuit with live.",
+          "example": "Black wire returns current.",
+          "remember": "Neutral = black.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "neutral wire"
+          ]
+        },
+        {
+          "id": "u4_d8_c04",
+          "name": "220 V in India",
+          "simple_answer": "Potential difference between live and neutral is 220 V in our country.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "220 V mains",
+            "label": "Domestic PD"
+          },
+          "why": "Standard supply voltage.",
+          "example": "Appliances rated 220 V.",
+          "remember": "Live–neutral = 220 V.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c05",
+          "name": "Earth wire",
+          "simple_answer": "Earth wire (green insulation) connected to metal plate buried deep in ground.",
+          "visual": {
+            "type": "domestic_circuit",
+            "highlight": "earth"
+          },
+          "why": "Safety for metal-bodied appliances.",
+          "example": "Green wire to ground plate.",
+          "remember": "Earth = green, safety.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "earth wire"
+          ]
+        },
+        {
+          "id": "u4_d8_c06",
+          "name": "Earth wire purpose",
+          "simple_answer": "Provides low-resistance path for leakage current — keeps appliance body at earth potential.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "earth_why"
+          },
+          "why": "Prevents severe shock.",
+          "example": "Refrigerator metal body earthed.",
+          "remember": "Earth prevents shock from leakage.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c07",
+          "name": "Meter board and main fuse",
+          "simple_answer": "Live and neutral enter electricity meter through main fuse, then main switch to house circuits.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "meter"
+          },
+          "why": "Fig 12.15 schematic.",
+          "example": "Meter measures consumption.",
+          "remember": "Fuse at meter protects installation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c08",
+          "name": "Two circuit ratings",
+          "simple_answer": "Often 15 A circuit for high-power devices (geyser, cooler) and 5 A for bulbs, fans.",
+          "visual": {
+            "type": "domestic_circuit",
+            "highlight": "ratings"
+          },
+          "why": "Separate circuit capacity.",
+          "example": "Heavy appliances on 15 A line.",
+          "remember": "15 A high power; 5 A lights/fans.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c09",
+          "name": "Appliances in parallel",
+          "simple_answer": "Each appliance connected parallel across live and neutral — same 220 V each.",
+          "visual": {
+            "type": "domestic_circuit",
+            "highlight": "parallel"
+          },
+          "why": "Fig 12.15 each branch parallel.",
+          "example": "Fan and bulb same voltage.",
+          "remember": "Domestic = parallel branches.",
+          "common_confusion": "Series would divide voltage wrongly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c10",
+          "name": "Separate appliance switches",
+          "simple_answer": "Each appliance has its own ON/OFF switch on live side branch.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "switches"
+          },
+          "why": "Independent control.",
+          "example": "Switch off fan, light stays on.",
+          "remember": "One switch per appliance.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "Fuse, Short Circuit and Overloading",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d9_c01",
+          "name": "Electric fuse in domestic circuit",
+          "simple_answer": "Fuse prevents damage from overloading and short circuit — studied in Ch 11, applied here.",
+          "visual": {
+            "type": "domestic_circuit",
+            "highlight": "fuse"
+          },
+          "why": "Links Ch 11 and 12.",
+          "example": "Joule heat melts fuse wire.",
+          "remember": "Fuse = essential safety device.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "fuse"
+          ]
+        },
+        {
+          "id": "u4_d9_c02",
+          "name": "Short circuit",
+          "simple_answer": "Live and neutral directly contact — resistance drops — current abruptly increases.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "short"
+          },
+          "why": "Damaged insulation cause.",
+          "example": "Spark and huge current flow.",
+          "remember": "Short circuit = sudden high I.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "short circuit"
+          ]
+        },
+        {
+          "id": "u4_d9_c03",
+          "name": "Overloading",
+          "simple_answer": "Too many appliances or voltage surge draws current beyond safe limit.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "overload"
+          },
+          "why": "Too many on one socket.",
+          "example": "Multiple heaters one socket dangerous.",
+          "remember": "Overload = excessive current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "overloading"
+          ]
+        },
+        {
+          "id": "u4_d9_c04",
+          "name": "Fuse melts to break circuit",
+          "simple_answer": "High current heats fuse wire (Joule heating) until it melts and breaks circuit.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "fuse_action"
+          },
+          "why": "Ch 11 H=I²Rt applied.",
+          "example": "Thin fuse wire designed to melt first.",
+          "remember": "Fuse melts → circuit open.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c05",
+          "name": "Safety measures two",
+          "simple_answer": "Earth wire and electric fuse — two common safety measures (NCERT Q1).",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "safety_two"
+          },
+          "why": "Exam short answer.",
+          "example": "Green earth + fuse at meter.",
+          "remember": "Earth wire + fuse.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c06",
+          "name": "2 kW oven on 5 A circuit",
+          "simple_answer": "2 kW at 220 V needs ~9 A — exceeds 5 A rating → overload, fuse should blow.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "oven_example"
+          },
+          "why": "NCERT Q2 calculation.",
+          "example": "P=VI → I=P/V ≈ 9.1 A.",
+          "remember": "Check I against circuit rating.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c07",
+          "name": "Avoid overloading precautions",
+          "simple_answer": "Not too many appliances on one socket; proper insulation; correct fuse rating.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "precautions"
+          },
+          "why": "NCERT Q3 prevention.",
+          "example": "Spread high-power devices.",
+          "remember": "Avoid many high-P devices together.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c08",
+          "name": "Metallic body appliances",
+          "simple_answer": "Press, toaster, fan, fridge — metal body should be earthed.",
+          "visual": {
+            "type": "domestic_circuit",
+            "highlight": "metallic"
+          },
+          "why": "Leakage to body without earth is dangerous.",
+          "example": "Three-pin plug with earth pin.",
+          "remember": "Earth metallic appliances.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c09",
+          "name": "AC mains frequency",
+          "simple_answer": "Domestic AC supply 220 V, 50 Hz in India (NCERT summary).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "220 V, 50 Hz AC",
+            "label": "Mains"
+          },
+          "why": "What you have learnt box.",
+          "example": "Alternating current from grid.",
+          "remember": "220 V, 50 Hz standard.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c10",
+          "name": "Schematic Fig 12.15",
+          "simple_answer": "Read domestic circuit diagram: meter, fuse, main switch, parallel branches, earth.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "fig_12_15"
+          },
+          "why": "Diagram interpretation skill.",
+          "example": "Trace live from meter to loads.",
+          "remember": "Know Fig 12.15 layout.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "Exam Diagrams and MCQ Anchors",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d10_c01",
+          "name": "Long straight wire field MCQ",
+          "simple_answer": "Field = concentric circles around wire — not radial, not parallel to wire.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "mcq_wire"
+          },
+          "why": "Exercise Q1 answer (d) pattern.",
+          "example": "Circles centered on conductor.",
+          "remember": "Concentric circles — correct option.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c02",
+          "name": "Solenoid interior MCQ",
+          "simple_answer": "Inside long solenoid carrying current field is same at all points — uniform.",
+          "visual": {
+            "type": "solenoid_field",
+            "mode": "mcq_solenoid"
+          },
+          "why": "Section Q3 (d).",
+          "example": "Parallel field lines inside.",
+          "remember": "Uniform inside solenoid.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c03",
+          "name": "Draw field around bar magnet",
+          "simple_answer": "Exam task: N→S outside, closed curves, arrows, no crossing.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "exam"
+          },
+          "why": "NCERT Q12.2.1.",
+          "example": "Include inside magnet direction.",
+          "remember": "Standard bar magnet diagram.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c04",
+          "name": "Draw field around straight wire",
+          "simple_answer": "Circles around wire; arrow direction from right-hand rule.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "exam"
+          },
+          "why": "Combine with RH rule.",
+          "example": "Mark current direction on wire.",
+          "remember": "Concentric circles + RH rule.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c05",
+          "name": "Compare solenoid and magnet",
+          "simple_answer": "External field similar; solenoid field can switch off with current.",
+          "visual": {
+            "type": "solenoid_field",
+            "mode": "compare"
+          },
+          "why": "Electromagnet advantage.",
+          "example": "Bar magnet permanent; solenoid temporary.",
+          "remember": "Solenoid controllable magnet.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c06",
+          "name": "Motor effect summary",
+          "simple_answer": "Current perpendicular to B experiences force given by Fleming's left-hand rule.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "summary"
+          },
+          "why": "One-line motor principle.",
+          "example": "Thumb = motion in motor context.",
+          "remember": "Left hand FBI for force.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c07",
+          "name": "Generator vs motor preview",
+          "simple_answer": "Motor: electrical → mechanical (force on current). Generator: opposite (induction later).",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "motor_gen"
+          },
+          "why": "Direction of energy conversion.",
+          "example": "Motor uses left-hand rule force.",
+          "remember": "Motor converts electric to motion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c08",
+          "name": "Domestic parallel why",
+          "simple_answer": "Equal 220 V to each appliance; independent operation.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "why_parallel"
+          },
+          "why": "Conceptual domestic wiring.",
+          "example": "Unlike series dimming problem.",
+          "remember": "Parallel for equal voltage.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c09",
+          "name": "Colour coding wires",
+          "simple_answer": "Red live, black neutral, green earth — know insulation colours.",
+          "visual": {
+            "type": "domestic_circuit",
+            "highlight": "colours"
+          },
+          "why": "Exam identification.",
+          "example": "Three-colour wire system.",
+          "remember": "Red-black-green coding.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c10",
+          "name": "Ch 11 fuse link",
+          "simple_answer": "Fuse principle from Ch 11 heating effect — melt on excess current.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "ch11_link"
+          },
+          "why": "Cross-chapter connection.",
+          "example": "I²R heat in fuse wire.",
+          "remember": "Same fuse physics as Ch 11.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "Mixed Review and Safety",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d11_c01",
+          "name": "Field line density quiz",
+          "simple_answer": "Where lines crowded → stronger field; near poles and near wire with high I.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "quiz"
+          },
+          "why": "Revision.",
+          "example": "Compare two points on diagram.",
+          "remember": "Density ∝ strength.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c02",
+          "name": "RH rule practice horizontal",
+          "simple_answer": "Practice east-west, north-south wire field directions below and above wire.",
+          "visual": {
+            "type": "right_hand_rule",
+            "mode": "practice"
+          },
+          "why": "Example 12.1 variants.",
+          "example": "Horizontal power lines.",
+          "remember": "Draw circular field in plane ⊥ wire.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c03",
+          "name": "Loop vs straight field",
+          "simple_answer": "Straight: circles; loop: straight at centre; solenoid: uniform inside.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "compare_shapes"
+          },
+          "why": "Three shapes summary.",
+          "example": "Shape changes field map.",
+          "remember": "Three conductor shapes three patterns.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c04",
+          "name": "Turns and current both matter",
+          "simple_answer": "Stronger electromagnet: more turns AND larger current.",
+          "visual": {
+            "type": "solenoid_field",
+            "mode": "stronger"
+          },
+          "why": "Design electromagnets.",
+          "example": "More coils + higher I.",
+          "remember": "n and I both increase B.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c05",
+          "name": "Left-hand rule vs thumb rule",
+          "simple_answer": "Thumb rule finds B from I; left-hand rule finds F on conductor in B.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "two_rules"
+          },
+          "why": "Do not confuse rules.",
+          "example": "Different questions different rule.",
+          "remember": "RH thumb = B; Left hand = F.",
+          "common_confusion": "Right hand for B, left for F.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c06",
+          "name": "Perpendicular requirement",
+          "simple_answer": "Left-hand rule simplest when I ⊥ B; force still defined generally.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "highlight": "perpendicular"
+          },
+          "why": "Activity 12.7 geometry.",
+          "example": "Rod between pole faces.",
+          "remember": "⊥ case for exam Fleming rule.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c07",
+          "name": "Magnetic field unit tesla note",
+          "simple_answer": "Class 10 uses concept; oersted named; SI field unit tesla (extension).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Field strength units",
+            "label": "Extension"
+          },
+          "why": "Optional enrichment.",
+          "example": "Oersted honours Oersted.",
+          "remember": "Field has SI units.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c08",
+          "name": "Insulation damage hazard",
+          "simple_answer": "Damaged wire insulation can cause short circuit and fire risk.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "insulation"
+          },
+          "why": "Safety awareness.",
+          "example": "Frayed cord danger.",
+          "remember": "Damaged insulation → short.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c09",
+          "name": "Main switch role",
+          "simple_answer": "Main switch disconnects entire house from live supply during repair.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "main_switch"
+          },
+          "why": "Safety procedure.",
+          "example": "Turn off before wiring work.",
+          "remember": "Main switch isolates house.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c10",
+          "name": "Energy meter",
+          "simple_answer": "Electricity meter measures kWh consumption for billing.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "meter"
+          },
+          "why": "Link Ch 11 kWh.",
+          "example": "Meter board first device.",
+          "remember": "Meter records energy used.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Long-answer Preparation",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d12_c01",
+          "name": "Activity sequence review",
+          "simple_answer": "12.1 compass near wire; 12.2 filings bar magnet; 12.5 circles; 12.7 force on rod.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "activities"
+          },
+          "why": "Lab sequence recall.",
+          "example": "Match activity to observation.",
+          "remember": "Know key activities.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c02",
+          "name": "Properties long answer",
+          "simple_answer": "Write four magnetic field line properties with explanation.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "long_answer"
+          },
+          "why": "3-mark question.",
+          "example": "Closed, no cross, N→S, density.",
+          "remember": "Four properties paragraph.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c03",
+          "name": "RH rule long answer",
+          "simple_answer": "Explain rule with diagram; apply to straight wire.",
+          "visual": {
+            "type": "right_hand_rule",
+            "mode": "long_answer"
+          },
+          "why": "Rule explanation question.",
+          "example": "Thumb I, fingers B.",
+          "remember": "Statement + diagram + example.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c04",
+          "name": "Electromagnet long answer",
+          "simple_answer": "Solenoid + soft iron; current magnetises; uses in cranes, separators.",
+          "visual": {
+            "type": "solenoid_field",
+            "mode": "long_answer"
+          },
+          "why": "Application essay.",
+          "example": "Switch off demagnetises soft iron.",
+          "remember": "Coil + core + uses.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c05",
+          "name": "Fleming rule long answer",
+          "simple_answer": "State rule; diagram three fingers; motor example.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "long_answer"
+          },
+          "why": "Motor effect essay.",
+          "example": "B, I, F mutually perpendicular.",
+          "remember": "Rule + diagram + device.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c06",
+          "name": "Domestic circuit long answer",
+          "simple_answer": "Describe live, neutral, earth, fuse, parallel appliances Fig 12.15.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "long_answer"
+          },
+          "why": "Domestic essay template.",
+          "example": "220 V, 15 A and 5 A circuits.",
+          "remember": "Full domestic circuit description.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c07",
+          "name": "Short circuit vs overload",
+          "simple_answer": "Short: live-neutral touch; overload: too much load or voltage hike.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "compare_hazards"
+          },
+          "why": "Distinguish exam answers.",
+          "example": "Different causes same fuse action.",
+          "remember": "Short ≠ overload cause but both high I.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c08",
+          "name": "Why two field lines never cross",
+          "simple_answer": "Compass would show two directions — impossible — so lines don't intersect.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "exam_why"
+          },
+          "why": "NCERT explain Q.",
+          "example": "Unique field direction at point.",
+          "remember": "One direction per point.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c09",
+          "name": "Compass near bar magnet why",
+          "simple_answer": "Magnet field exerts torque on compass poles — needle aligns.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "exam_why"
+          },
+          "why": "Section 12.1 Q.",
+          "example": "Unlike poles attract alignment.",
+          "remember": "Torque rotates needle.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c10",
+          "name": "Electron current convention",
+          "simple_answer": "Electron motion opposite to conventional current — reverse when using Fleming rule.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "convention"
+          },
+          "why": "Example 12.2 key.",
+          "example": "Current opposite electron velocity.",
+          "remember": "Flip direction for electrons.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Definitions and Numericals",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d13_c01",
+          "name": "Define magnetic field",
+          "simple_answer": "Region where magnetic force on a pole can be detected.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "definition"
+          },
+          "why": "1-mark.",
+          "example": "Around magnet or current wire.",
+          "remember": "Region of magnetic force.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c02",
+          "name": "Define solenoid",
+          "simple_answer": "Cylinder-shaped coil of many closely wound turns of insulated copper wire.",
+          "visual": {
+            "type": "solenoid_field",
+            "mode": "definition"
+          },
+          "why": "1-mark.",
+          "example": "Looks like spring of wire.",
+          "remember": "Many turns cylindrical coil.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c03",
+          "name": "Define electromagnet",
+          "simple_answer": "Magnet formed by magnetising soft iron core inside current-carrying solenoid.",
+          "visual": {
+            "type": "solenoid_field",
+            "mode": "definition_em"
+          },
+          "why": "1-mark.",
+          "example": "Temporary magnet.",
+          "remember": "Solenoid + soft iron core.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c04",
+          "name": "State Fleming's left-hand rule",
+          "simple_answer": "B = first finger, I = second finger, F = thumb, mutually perpendicular.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "definition"
+          },
+          "why": "Must state fingers.",
+          "example": "Left hand only.",
+          "remember": "Three fingers FBI.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c05",
+          "name": "State right-hand thumb rule",
+          "simple_answer": "Thumb along current, fingers curl in field direction around straight conductor.",
+          "visual": {
+            "type": "right_hand_rule",
+            "mode": "definition"
+          },
+          "why": "Pair with Fleming.",
+          "example": "Right hand for field from I.",
+          "remember": "Thumb I, curl B.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c06",
+          "name": "Domestic wire colours exam",
+          "simple_answer": "Live red, neutral black, earth green.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "exam_colours"
+          },
+          "why": "Quick recall.",
+          "example": "Three wires three colours.",
+          "remember": "Red-black-green.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c07",
+          "name": "220 V appliance design",
+          "simple_answer": "Appliances rated 220 V for Indian mains parallel connection.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "rating"
+          },
+          "why": "Match supply to device.",
+          "example": "Label on back of appliance.",
+          "remember": "Design for 220 V mains.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c08",
+          "name": "15 A vs 5 A usage",
+          "simple_answer": "15 A: geyser, cooler; 5 A: bulbs, fans — match load to circuit.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "rating_use"
+          },
+          "why": "Prevent overload.",
+          "example": "Check nameplate power.",
+          "remember": "High P needs 15 A circuit.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c09",
+          "name": "Calculate oven current",
+          "simple_answer": "I = P/V = 2000/220 ≈ 9.1 A > 5 A → overload on 5 A circuit.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "I = P/V",
+            "label": "Oven check"
+          },
+          "why": "NCERT Q2 domestic.",
+          "example": "Compare to circuit rating.",
+          "remember": "P/V then compare A rating.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c10",
+          "name": "Field uniform diagram",
+          "simple_answer": "Draw parallel equally spaced lines with arrows — uniform magnetic field.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "uniform_draw"
+          },
+          "why": "Solenoid interior Q2.",
+          "example": "Straight parallel arrows.",
+          "remember": "Uniform field diagram.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "Cross-links and Real-world Uses",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d14_c01",
+          "name": "Chapter map",
+          "simple_answer": "Ch 12: field lines → current makes B → RH rule → loop/solenoid → force → Fleming → domestic.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "map"
+          },
+          "why": "Revision overview.",
+          "example": "Six blocks in order.",
+          "remember": "Follow NCERT section flow.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c02",
+          "name": "Link to Unit 3 electricity",
+          "simple_answer": "Domestic circuits use Ch 11 fuse, power, overloading with Ch 12 wiring layout.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "unit3_link"
+          },
+          "why": "Cross-unit revision.",
+          "example": "P=VI for oven check.",
+          "remember": "Ch 11 + Ch 12 together for mains.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c03",
+          "name": "Oersted historical",
+          "simple_answer": "First showed electricity causes magnetism — start of electromagnetism technology.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "history"
+          },
+          "why": "Context for chapter.",
+          "example": "Radio, TV, fiber optics legacy.",
+          "remember": "Oersted 1820 discovery.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c04",
+          "name": "Ampere and force",
+          "simple_answer": "Ampere recognised mutual force between magnet and current-carrying conductor.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "history"
+          },
+          "why": "Section 12.3 intro.",
+          "example": "Foundation of electrodynamics.",
+          "remember": "Ampere + force on wire.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c05",
+          "name": "MRI More to Know",
+          "simple_answer": "Nerve impulses create weak magnetic fields; MRI images body using magnetism.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "MRI imaging",
+            "label": "Medicine"
+          },
+          "why": "Real-world magnetism.",
+          "example": "Non-invasive body imaging.",
+          "remember": "Magnetism in medicine.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c06",
+          "name": "Loudspeaker brief",
+          "simple_answer": "Uses motor effect — current in magnetic field moves coil/cone to produce sound.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "loudspeaker"
+          },
+          "why": "Device application.",
+          "example": "Reverse also works as microphone.",
+          "remember": "Force on current → vibration → sound.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c07",
+          "name": "Electric motor brief",
+          "simple_answer": "Coil in magnetic field experiences torque from force — rotates (motor effect).",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "motor"
+          },
+          "why": "Qualitative only in Class 10.",
+          "example": "Split-ring commutator (extension).",
+          "remember": "Force on coil → rotation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c08",
+          "name": "Permanent vs electromagnet",
+          "simple_answer": "Bar magnet permanent; electromagnet only when current flows — controllable.",
+          "visual": {
+            "type": "solenoid_field",
+            "mode": "permanent_vs"
+          },
+          "why": "Compare advantages.",
+          "example": "Electromagnet can switch off.",
+          "remember": "Electromagnet temporary.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c09",
+          "name": "Three-pin plug earth",
+          "simple_answer": "Third pin connects appliance metal body to earth wire for safety.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "three_pin"
+          },
+          "why": "Practical home safety.",
+          "example": "Top pin earth in many plugs.",
+          "remember": "Earth pin protects user.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c10",
+          "name": "MCQ trap: field lines parallel to wire",
+          "simple_answer": "Wrong — field circles are perpendicular plane to wire, not parallel to wire.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "trap"
+          },
+          "why": "Exercise distractor.",
+          "example": "Circles not lines along wire.",
+          "remember": "Field ⊥ wire axis in plane.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Mastery Checklist",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d15_c01",
+          "name": "Mastery: field line rules",
+          "simple_answer": "Closed curves; N out S in; no crossing; density = strength; direction = N pole motion.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "checklist"
+          },
+          "why": "Self-test.",
+          "example": "Recite four properties.",
+          "remember": "Four rules memorised.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c02",
+          "name": "Mastery: two hand rules",
+          "simple_answer": "Right thumb: B from I in straight wire. Left hand: F on wire in B.",
+          "visual": {
+            "type": "right_hand_rule",
+            "mode": "checklist"
+          },
+          "why": "Hand rule quiz.",
+          "example": "Which hand which purpose.",
+          "remember": "RH=B, LH=F.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c03",
+          "name": "Mastery: three field patterns",
+          "simple_answer": "Straight wire circles; loop straight at centre; solenoid uniform inside.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "checklist"
+          },
+          "why": "Draw all three.",
+          "example": "Sketch from memory.",
+          "remember": "Three patterns known.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c04",
+          "name": "Mastery: domestic safety",
+          "simple_answer": "Live red, neutral black, earth green; fuse; no overload; earth metal bodies.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "checklist"
+          },
+          "why": "Safety checklist.",
+          "example": "Oven on 5 A fails.",
+          "remember": "Safety six points.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c05",
+          "name": "Mastery: activities",
+          "simple_answer": "Match 12.1 deflection, 12.2 filings, 12.5 circles, 12.7 rod force.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "checklist"
+          },
+          "why": "Activity recall.",
+          "example": "One sentence each activity.",
+          "remember": "Four key activities.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c06",
+          "name": "Mastery: devices list",
+          "simple_answer": "Motor, generator, speaker, microphone, measuring instruments — motor effect.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "checklist"
+          },
+          "why": "Device recall.",
+          "example": "Left-hand rule applications.",
+          "remember": "Five device types.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c07",
+          "name": "Common pitfalls",
+          "simple_answer": "Confuse two hand rules; forget electron current reverse; mix series domestic wiring.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Pitfalls",
+            "label": "Exam"
+          },
+          "why": "Error avoidance.",
+          "example": "Read question: B or F?",
+          "remember": "Three common traps.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c08",
+          "name": "Numerical oven fuse",
+          "simple_answer": "Always I=P/V then compare fuse and circuit A rating.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "numerical"
+          },
+          "why": "Repeated exam style.",
+          "example": "2 kW example template.",
+          "remember": "P/V vs rating.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c09",
+          "name": "Diagram exam pack",
+          "simple_answer": "Prepare bar magnet, straight wire circles, solenoid, Fleming hand, domestic schematic.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "diagram_pack"
+          },
+          "why": "Five diagrams practice.",
+          "example": "Timed drawing drill.",
+          "remember": "Five standard diagrams.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c10",
+          "name": "Ready for practice",
+          "simple_answer": "160 concept cards on Magnetic Effects — Practice tab uses 200-question bank.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "complete"
+          },
+          "why": "Bridge to Stage 2.",
+          "example": "15 Q per session + Grok.",
+          "remember": "Concepts done → practice.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "NCERT Summary and Unit Complete",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d16_c01",
+          "name": "What you have learnt — poles",
+          "simple_answer": "Compass needle small magnet; north and south poles defined.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "ncert"
+          },
+          "why": "Official summary 1.",
+          "example": "Align with textbook box.",
+          "remember": "NCERT summary point.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c02",
+          "name": "What you have learnt — field lines",
+          "simple_answer": "Field lines show direction and strength; closer lines stronger field.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "mode": "ncert"
+          },
+          "why": "Summary 2–4.",
+          "example": "Closed curves.",
+          "remember": "Summary alignment.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c03",
+          "name": "What you have learnt — current B",
+          "simple_answer": "Current in wire has circular field lines; direction by right-hand rule.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "ncert"
+          },
+          "why": "Summary 5–6.",
+          "example": "Shape affects pattern.",
+          "remember": "RH rule in summary.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c04",
+          "name": "What you have learnt — solenoid",
+          "simple_answer": "Solenoid field like bar magnet; electromagnet = soft iron in solenoid.",
+          "visual": {
+            "type": "solenoid_field",
+            "mode": "ncert"
+          },
+          "why": "Summary 7–8.",
+          "example": "Uniform inside.",
+          "remember": "Electromagnet summary.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c05",
+          "name": "What you have learnt — force",
+          "simple_answer": "Force on current in B; perpendicular case uses Fleming left-hand rule.",
+          "visual": {
+            "type": "flemings_left_hand",
+            "mode": "ncert"
+          },
+          "why": "Summary 9.",
+          "example": "Mutually perpendicular.",
+          "remember": "Fleming in summary.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c06",
+          "name": "What you have learnt — domestic",
+          "simple_answer": "220 V AC; live red, neutral black, earth green; fuse safety.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "ncert"
+          },
+          "why": "Summary 10–11.",
+          "example": "50 Hz mentioned.",
+          "remember": "Domestic summary bullets.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c07",
+          "name": "Exercise Q1 wire field",
+          "simple_answer": "Correct: concentric circles about straight wire.",
+          "visual": {
+            "type": "current_magnetic_field",
+            "mode": "exercise"
+          },
+          "why": "End chapter Q1.",
+          "example": "Eliminate radial/parallel options.",
+          "remember": "(d) style concentric.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c08",
+          "name": "Exercise solenoid uniform",
+          "simple_answer": "Inside long solenoid field same at all points.",
+          "visual": {
+            "type": "solenoid_field",
+            "mode": "exercise"
+          },
+          "why": "Section MCQ.",
+          "example": "Option (d) uniform.",
+          "remember": "Uniform interior.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c09",
+          "name": "Safety first culture",
+          "simple_answer": "Turn off mains before work; never bypass fuse; use earth for metal cases.",
+          "visual": {
+            "type": "domestic_circuit",
+            "mode": "safety"
+          },
+          "why": "Life skills.",
+          "example": "Qualified electrician for wiring.",
+          "remember": "Safe home electricity habits.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c10",
+          "name": "Unit 4 complete",
+          "simple_answer": "Unit 4 Magnetic Effects complete — all 160 cards; proceed to Practice when unlocked.",
+          "visual": {
+            "type": "magnetic_field_lines",
+            "highlight": "overview",
+            "mode": "complete"
+          },
+          "why": "Completion card.",
+          "example": "200 MCQs in bank.",
+          "remember": "Unit 4 mastery path done.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

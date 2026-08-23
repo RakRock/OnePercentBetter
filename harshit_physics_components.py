@@ -10,15 +10,19 @@ import harshit_physics_content as hpc
 import harshit_physics_diagrams as hpd
 
 ROOT = Path(__file__).resolve().parent
-DIAGRAMS_DIR = ROOT / "HarshitPhysics" / "unit1" / "diagrams"
-_CSS = hpc.css_variables_block()
 
 
-def inject_physics_styles() -> None:
+def _diagrams_dir(unit_id: int | None = None) -> Path:
+    uid = unit_id if unit_id is not None else hpc.active_unit_id()
+    return hpc.unit_dir(uid) / "diagrams"
+
+
+def inject_physics_styles(unit_id: int | None = None) -> None:
+    css = hpc.css_variables_block(unit_id)
     st.markdown(
         f"""
 <style>
-{_CSS}
+{css}
 .hp-screen {{ padding: var(--hp-spacing-screen) 0; }}
 .hp-concept-name {{
   font-size: 1.45rem; color: var(--hp-text-primary); font-weight: 600; margin-bottom: 0.75rem;
@@ -57,16 +61,18 @@ def inject_physics_styles() -> None:
     )
 
 
-def _cached_hf_image(concept_id: str) -> Path | None:
-    path = DIAGRAMS_DIR / f"{concept_id}.png"
+def _cached_hf_image(concept_id: str, unit_id: int | None = None) -> Path | None:
+    path = _diagrams_dir(unit_id) / f"{concept_id}.png"
     return path if path.is_file() else None
 
 
-def render_concept_visual(visual: dict, *, concept_id: str = "", concept_name: str = "") -> None:
+def render_concept_visual(
+    visual: dict, *, concept_id: str = "", concept_name: str = "", unit_id: int | None = None
+) -> None:
     """Prefer accurate labeled SVG; show HF illustration underneath when pre-generated."""
     st.markdown(hpd.render_diagram_html(visual), unsafe_allow_html=True)
 
-    cached = _cached_hf_image(concept_id) if concept_id else None
+    cached = _cached_hf_image(concept_id, unit_id) if concept_id else None
     if cached:
         with st.expander("Everyday picture (optional)", expanded=False):
             st.image(str(cached), use_container_width=True)

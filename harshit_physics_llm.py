@@ -27,11 +27,24 @@ def _get_client(xai_api_key: str) -> OpenAI:
     return OpenAI(api_key=xai_api_key, base_url=XAI_BASE_URL, timeout=BATCH_TIMEOUT_SEC)
 
 
-def _batch_system_prompt() -> str:
-    return """You are an NCERT Class 10 Science (Physics) tutor creating multiple-choice practice
-for Harshit Sai — Unit 1: Light — Reflection and Refraction (Chapter 9).
+def _batch_system_prompt(unit_id: int) -> str:
+    umeta = hpc.unit_meta(unit_id)
+    if unit_id == 2:
+        topics = """SOURCE: Questions MUST align with NCERT Class 10 Ch 10 — human eye, defects of vision,
+prism refraction, dispersion, rainbow, atmospheric refraction, scattering."""
+    elif unit_id == 3:
+        topics = """SOURCE: Questions MUST align with NCERT Class 10 Ch 11 — electric current, potential difference,
+Ohm's law, resistance, resistivity, series and parallel circuits, heating effect, electric power."""
+    elif unit_id == 4:
+        topics = """SOURCE: Questions MUST align with NCERT Class 10 Ch 12 — magnetic fields, field lines,
+current through conductor, right-hand thumb rule, solenoid, electromagnet, Fleming's left-hand rule,
+domestic electric circuits, fuse, earth wire."""
+    else:
+        topics = """SOURCE: Questions MUST align with NCERT Class 10 optics — mirrors, lenses, refraction, sign conventions."""
+    return f"""You are an NCERT Class 10 Science (Physics) tutor creating multiple-choice practice
+for Harshit Sai — Unit {unit_id}: {umeta['title']}.
 
-SOURCE: Questions MUST align with NCERT Class 10 optics — mirrors, lenses, refraction, sign conventions.
+{topics}
 
 RULES:
 - Solvable at Class 10 level; one clear concept per question.
@@ -80,12 +93,12 @@ def _parse_items(raw: str, count: int) -> list[dict]:
     return validated
 
 
-def _day_concept_excerpt(day_id: int) -> str:
-    day = hpc.get_day(day_id)
+def _day_concept_excerpt(day_id: int, unit_id: int) -> str:
+    day = hpc.get_day(day_id, unit_id=unit_id)
     if not day:
         return ""
     lines = [f"Day {day_id}: {day.get('title', '')}"]
-    for c in hpc.concepts_for_day(day_id):
+    for c in hpc.concepts_for_day(day_id, unit_id=unit_id):
         name = c.get("name", "")
         simple = str(c.get("simple_answer", ""))[:220]
         remember = str(c.get("remember", ""))[:120]
@@ -96,11 +109,11 @@ def _day_concept_excerpt(day_id: int) -> str:
     return text[:MAX_CONCEPT_EXCERPT_CHARS]
 
 
-def _seed_examples(day_id: int, level: str, n: int = MAX_SEED_EXAMPLES) -> list[dict]:
-    pool = list(hpq.pool_for(day_id, level))
+def _seed_examples(day_id: int, level: str, unit_id: int, n: int = MAX_SEED_EXAMPLES) -> list[dict]:
+    pool = list(hpq.pool_for(day_id, level, unit_id))
     if not pool:
         for lvl in ("A", "B", "C"):
-            pool.extend(hpq.pool_for(day_id, lvl))
+            pool.extend(hpq.pool_for(day_id, lvl, unit_id))
     if not pool:
         return []
     picks = random.sample(pool, min(n, len(pool)))
@@ -133,19 +146,19 @@ def _build_batch_message(
     for did, _ in slots:
         if did not in seen_days:
             seen_days.add(did)
-            block = _day_concept_excerpt(did)
+            block = _day_concept_excerpt(did, unit_id)
             if block:
                 excerpt_parts.append(block)
     excerpt = "\n\n".join(excerpt_parts)[:MAX_CONCEPT_EXCERPT_CHARS]
 
     lines = [
         f"Generate exactly {len(slots)} NEW multiple-choice questions (same order as below).",
-        f"\nNCERT UNIT 1 CONCEPT SUMMARY:\n{excerpt}\n",
+        f"\nNCERT UNIT {unit_id} CONCEPT SUMMARY:\n{excerpt}\n",
     ]
     for i, (did, lvl) in enumerate(slots, start=1):
         info = topics.get(did, {})
         level_desc = info.get("levels", {}).get(lvl, lvl)
-        seeds = _seed_examples(did, lvl)
+        seeds = _seed_examples(did, lvl, unit_id)
         seed_block = ""
         if seeds:
             seed_lines = [f"Q: {s.get('question')} | opts: {s.get('options')}" for s in seeds]
@@ -175,7 +188,7 @@ def generate_session_questions_raw(
             response = client.chat.completions.create(
                 model=XAI_MODEL,
                 messages=[
-                    {"role": "system", "content": _batch_system_prompt()},
+                    {"role": "system", "content": _batch_system_prompt(unit_id)},
                     {"role": "user", "content": user_msg},
                 ],
                 max_tokens=BATCH_MAX_TOKENS,
@@ -189,9 +202,9 @@ def generate_session_questions_raw(
                 item["day_id"] = did
                 item["level"] = lvl
                 item["concept_id"] = item.get("concept_id", "")
-                item["id"] = f"u1_d{did}_{lvl.lower()}_grok_{uuid.uuid4().hex[:8]}"
+                item["id"] = f"u{unit_id}_d{did}_{lvl.lower()}_grok_{uuid.uuid4().hex[:8]}"
                 out.append(hpq.normalize_question(item, unit_id))
-            hpq.add_questions(out)
+            hpq.add_questions(out, unit_id)
             return out
         except (APIConnectionError, APITimeoutError, OpenAIError) as exc:
             last_error = str(exc) or "Connection error"

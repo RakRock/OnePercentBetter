@@ -563,6 +563,488 @@ def svg_placeholder(cfg: dict) -> str:
     return _svg_wrap(parts, h=240)
 
 
+def svg_eye_structure(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    mode = cfg.get("mode", "")
+    parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"))]
+    # Simplified NCERT Fig 10.1 side view
+    parts.append('<ellipse cx="240" cy="130" rx="90" ry="55" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>')
+    parts.append('<path d="M150,130 Q240,75 330,130 Q240,185 150,130" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>')
+    parts.append('<ellipse cx="240" cy="130" rx="28" ry="20" fill="#1e293b" opacity="0.15"/>')
+    parts.append('<ellipse cx="240" cy="130" rx="14" ry="14" fill="none" stroke="#6366f1" stroke-width="2.5"/>')
+    labels = [
+        (175, 95, "Cornea", hl == "cornea"),
+        (210, 118, "Iris", hl == "iris_pupil"),
+        (240, 108, "Pupil", hl == "iris_pupil"),
+        (268, 130, "Lens", hl == "lens"),
+        (305, 140, "Retina", hl == "retina"),
+        (340, 115, "Optic nerve", hl == "optic_nerve"),
+    ]
+    for x, y, text, bold in labels:
+        parts.append(_label(x, y, text, size=10, bold=bold, color="#6366f1" if bold else "#334155"))
+    if hl == "inverted_image":
+        parts.append(_label(300, 165, "Inverted image", size=10, color="#dc2626", bold=True))
+    if mode == "camera_analogy":
+        parts.append(_label(240, 210, "Camera: lens + retina screen", size=11, bold=True))
+    elif mode == "checklist" or mode == "map":
+        parts.append(_label(240, 210, cfg.get("mode", "").replace("_", " ").title(), size=11))
+    elif hl == "overview":
+        parts.append(_label(240, 210, "Human eye (NCERT Fig 10.1 style)", size=11))
+    parts.append(_book(70, 130))
+    parts.append(_arrow(95, 130, 145, 130, color="#2563eb"))
+    parts.append(_label(115, 118, "Light in", size=10, color="#2563eb"))
+    return _svg_wrap(parts, h=260, title="The human eye")
+
+
+def svg_eye_accommodation(cfg: dict) -> str:
+    mode = cfg.get("mode", "")
+    hl = cfg.get("highlight", "")
+    parts = [_defs()]
+    parts.append('<ellipse cx="240" cy="130" rx="85" ry="50" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>')
+    thick = mode in ("near",) or hl == "ciliary"
+    ry = 22 if thick else 14
+    parts.append(f'<ellipse cx="240" cy="130" rx="18" ry="{ry}" fill="#c7d2fe" stroke="#6366f1" stroke-width="2.5"/>')
+    parts.append(_label(200, 100, "Ciliary muscles", size=10, bold=hl == "ciliary"))
+    if mode == "distant" or hl == "far_point":
+        parts.append(_label(240, 175, "Relaxed → thin lens → far objects clear", size=11, bold=True))
+    elif mode == "near":
+        parts.append(_label(240, 175, "Contracted → thick lens → near objects clear", size=11, bold=True))
+    elif mode == "range":
+        parts.append(_label(240, 175, "Clear vision: 25 cm to ∞", size=11, bold=True))
+    else:
+        parts.append(_label(240, 175, "Accommodation adjusts focal length", size=11, bold=True))
+    return _svg_wrap(parts, h=240, title="Power of accommodation")
+
+
+def svg_vision_defect(cfg: dict) -> str:
+    defect = cfg.get("defect", "overview")
+    hl = cfg.get("highlight", "")
+    parts = [_defs(("arr", "#2563eb"), ("arrR", "#dc2626"))]
+    parts.append('<ellipse cx="240" cy="130" rx="85" ry="50" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>')
+    parts.append('<line x1="305" y1="130" x2="305" y2="100" stroke="#64748b" stroke-width="2" stroke-dasharray="3,2"/>')
+    parts.append(_label(315, 95, "Retina", size=10))
+    if defect == "myopia" or hl == "image_front":
+        parts.append(_arrow(60, 120, 270, 125, color="#2563eb"))
+        parts.append('<circle cx="285" cy="127" r="4" fill="#dc2626"/>')
+        parts.append(_label(285, 145, "Image before retina", size=10, color="#dc2626", bold=True))
+        if hl == "correction":
+            parts.append('<path d="M120,120 L120,140 L140,130 Z" fill="none" stroke="#7c3aed" stroke-width="2"/>')
+            parts.append(_label(95, 155, "Concave lens", size=10, color="#7c3aed"))
+    elif defect == "hypermetropia" or hl == "image_behind":
+        parts.append(_arrow(60, 140, 270, 135, color="#2563eb"))
+        parts.append('<circle cx="318" cy="133" r="4" fill="#dc2626"/>')
+        parts.append(_label(318, 150, "Image behind retina", size=10, color="#dc2626", bold=True))
+        if hl == "correction":
+            parts.append('<ellipse cx="130" cy="135" rx="8" ry="22" fill="none" stroke="#7c3aed" stroke-width="2"/>')
+            parts.append(_label(95, 160, "Convex lens", size=10, color="#7c3aed"))
+    elif defect == "bifocal":
+        parts.append(_label(240, 175, "Bifocal: top concave (far), bottom convex (near)", size=10, bold=True))
+    elif defect == "presbyopia":
+        parts.append(_label(240, 175, "Age → weaker accommodation", size=11, bold=True))
+    else:
+        parts.append(_label(240, 175, "Myopia · Hypermetropia · Presbyopia", size=11, bold=True))
+    return _svg_wrap(parts, h=240, title="Defects of vision")
+
+
+def svg_prism_refraction(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"))]
+    # Triangle prism
+    parts.append('<polygon points="200,180 280,70 360,180" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>')
+    parts.append(_label(280, 55, "A", size=12, bold=hl == "angle_A"))
+    parts.append(_arrow(80, 150, 198, 155, color="#2563eb"))
+    parts.append(_label(130, 138, "PE incident", size=10, color="#2563eb", bold=hl == "incident"))
+    parts.append(_arrow(250, 130, 310, 165, color="#7c3aed"))
+    parts.append(_label(270, 125, "EF refracted", size=10, color="#7c3aed", bold=hl == "refracted"))
+    parts.append(_arrow(340, 172, 420, 120, color="#059669", marker="arrG"))
+    parts.append(_label(400, 108, "FS emergent", size=10, color="#059669", bold=hl == "emergent"))
+    if hl == "deviation":
+        parts.append(_label(280, 210, "∠D angle of deviation", size=11, bold=True, color="#dc2626"))
+    elif hl == "angles":
+        parts.append(_label(280, 210, "∠i  ∠r  ∠e measured from normals", size=10))
+    else:
+        parts.append(_label(280, 210, "Refraction through a prism (Fig 10.4)", size=10))
+    return _svg_wrap(parts, h=260, title="Prism refraction")
+
+
+def svg_dispersion_spectrum(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    colors = ["#7c3aed", "#4f46e5", "#2563eb", "#059669", "#eab308", "#f97316", "#dc2626"]
+    parts = [_defs(("arr", "#2563eb"))]
+    parts.append('<polygon points="180,170 230,90 280,170" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>')
+    parts.append(_arrow(60, 140, 178, 145, color="#2563eb"))
+    x = 300
+    for i, c in enumerate(colors):
+        parts.append(_arrow(282, 140 + i * 2, x + i * 18, 200 - i * 8, color=c, width=2))
+    parts.append('<rect x="295" y="115" width="130" height="18" rx="4" fill="#e2e8f0"/>')
+    parts.append(_label(360, 128, "VIBGYOR spectrum", size=10, bold=hl == "vibgyor"))
+    if hl == "bending":
+        parts.append(_label(360, 210, "Red bends least · Violet bends most", size=11, bold=True))
+    elif hl == "dispersion":
+        parts.append(_label(360, 210, "Dispersion splits white light", size=11, bold=True))
+    else:
+        parts.append(_label(360, 210, "White light → colour band", size=11))
+    return _svg_wrap(parts, h=260, title="Dispersion")
+
+
+def svg_rainbow(cfg: dict) -> str:
+    parts = [_defs(("arr", "#f59e0b"))]
+    parts.append(_sun(70, 200, highlight=False))
+    parts.append(_label(70, 235, "Sun", size=10))
+    parts.append(_eye(400, 200, highlight=True))
+    parts.append(_label(400, 235, "Observer", size=10))
+    # Rainbow arc
+    parts.append('<path d="M120,200 A120,120 0 0 1 360,200" fill="none" stroke="#dc2626" stroke-width="4"/>')
+    parts.append('<path d="M130,200 A110,110 0 0 1 350,200" fill="none" stroke="#f97316" stroke-width="3"/>')
+    parts.append('<path d="M140,200 A100,100 0 0 1 340,200" fill="none" stroke="#2563eb" stroke-width="3"/>')
+    parts.append('<circle cx="280" cy="120" r="12" fill="#bae6fd" stroke="#0284c7"/>')
+    parts.append(_label(280, 145, "Raindrop", size=10, bold=cfg.get("highlight") == "droplet"))
+    parts.append(_arrow(95, 195, 268, 125, color="#fcd34d"))
+    parts.append(_label(240, 215, "Rainbow opposite the Sun", size=11, bold=True))
+    return _svg_wrap(parts, h=260, title="Rainbow formation")
+
+
+def svg_atmospheric_refraction(cfg: dict) -> str:
+    mode = cfg.get("mode", "")
+    parts = [_defs(("arr", "#2563eb"))]
+    if mode == "twinkle" or mode == "brightness":
+        parts.append(_label(240, 50, "★", size=28, color="#fcd34d"))
+        parts.append(_label(240, 80, "Star light bends in moving air layers", size=11, bold=True))
+        for y in (120, 150, 180):
+            parts.append(f'<line x1="100" y1="{y}" x2="380" y2="{y}" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,3"/>')
+        parts.append(_label(240, 210, "Apparent position keeps shifting → twinkle", size=10))
+    elif mode in ("sunrise", "sunset", "sunrise_exam"):
+        parts.append('<line x1="40" y1="170" x2="440" y2="170" stroke="#64748b" stroke-width="2"/>')
+        parts.append(_label(450, 174, "Horizon", size=10))
+        parts.append(_sun(280, 170, highlight=True))
+        parts.append(_sun(280, 200, highlight=False))
+        parts.append(_label(320, 155, "Apparent", size=10, color="#f59e0b"))
+        parts.append(_label(320, 220, "Actual", size=10, color="#64748b"))
+        parts.append(_label(240, 230, "≈2 min advance / delay", size=11, bold=True))
+    elif mode == "planets" or mode == "planets_detail":
+        parts.append(_label(240, 90, "Planet = many points", size=12, bold=True))
+        parts.append('<circle cx="240" cy="150" r="35" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>')
+        parts.append(_label(240, 210, "Variations average out → no twinkle", size=11))
+    else:
+        parts.append(_label(240, 130, "Earth's atmosphere bends light", size=12, bold=True))
+        parts.append(_label(240, 160, "Density changes → refractive index changes", size=10))
+    return _svg_wrap(parts, h=260, title="Atmospheric refraction")
+
+
+def svg_scattering_sky(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    mode = cfg.get("mode", "")
+    parts = []
+    if mode == "red_sun" or mode == "exam_red":
+        parts.append('<rect x="0" y="0" width="480" height="280" fill="#fb923c" opacity="0.25"/>')
+        parts.append(_sun(240, 200, highlight=True))
+        parts.append(_label(240, 240, "Long path → blue scattered away → red Sun", size=11, bold=True))
+    elif hl == "red_signal":
+        parts.append('<rect x="160" y="100" width="50" height="50" rx="6" fill="#dc2626" stroke="#991b1b" stroke-width="2"/>')
+        parts.append(_label(240, 175, "Red least scattered → visible in fog", size=11, bold=True))
+    else:
+        parts.append('<rect x="0" y="0" width="480" height="200" fill="#93c5fd" opacity="0.5"/>')
+        parts.append(_sun(80, 80))
+        parts.append(_arrow(110, 85, 200, 120, color="#2563eb"))
+        parts.append(_arrow(110, 85, 320, 100, color="#2563eb"))
+        parts.append(_arrow(110, 85, 400, 140, color="#2563eb"))
+        parts.append(_label(240, 220, "Blue scattered strongly → sky looks blue", size=11, bold=True))
+    return _svg_wrap(parts, h=260, title="Scattering of light")
+
+
+def svg_tyndall_effect(cfg: dict) -> str:
+    parts = [_defs(("arr", "#fcd34d"))]
+    parts.append('<rect x="0" y="0" width="480" height="280" fill="#1e293b" opacity="0.85"/>')
+    parts.append(_arrow(40, 140, 440, 140, color="#fcd34d", width=3))
+    parts.append(_label(240, 120, "Visible sunbeam through smoke/mist", size=11, bold=True, color="#fcd34d"))
+    parts.append(_label(240, 200, "Tyndall effect — scattering by colloidal particles", size=10, color="#94a3b8"))
+    return _svg_wrap(parts, h=240, title="Tyndall effect")
+
+
+def svg_electric_circuit(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    mode = cfg.get("mode", "")
+    parts = [_defs(("arr", "#2563eb"))]
+    # Simple rectangular circuit: cell bottom, bulb top, ammeter right
+    parts.append('<rect x="100" y="70" width="280" height="160" rx="8" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,3"/>')
+    # Cell
+    parts.append('<line x1="140" y1="230" x2="140" y2="210" stroke="#334155" stroke-width="3"/>')
+    parts.append('<line x1="150" y1="230" x2="150" y2="215" stroke="#334155" stroke-width="5"/>')
+    parts.append(_label(120, 245, "Cell", size=10, bold=hl == "cell"))
+    # Bulb
+    parts.append('<circle cx="240" cy="80" r="18" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>')
+    parts.append('<line x1="228" y1="68" x2="252" y2="92" stroke="#f59e0b" stroke-width="2"/>')
+    parts.append('<line x1="252" y1="68" x2="228" y2="92" stroke="#f59e0b" stroke-width="2"/>')
+    parts.append(_label(240, 55, "Bulb", size=10, bold=hl == "overview"))
+    # Ammeter
+    parts.append('<circle cx="360" cy="150" r="16" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>')
+    parts.append(_label(360, 154, "A", size=12, bold=hl == "ammeter", color="#6366f1"))
+    # Wires with current arrow
+    parts.append(_arrow(150, 230, 150, 150, color="#2563eb"))
+    parts.append(_arrow(150, 150, 360, 150, color="#2563eb"))
+    parts.append(_arrow(360, 150, 360, 98, color="#2563eb"))
+    parts.append(_arrow(258, 80, 150, 80, color="#2563eb"))
+    parts.append(_arrow(150, 80, 150, 210, color="#2563eb"))
+    if mode == "open_circuit":
+        parts.append(_label(240, 130, "Open switch → no current", size=11, bold=True, color="#dc2626"))
+    elif hl == "conventional":
+        parts.append(_label(240, 130, "Conventional current: + → −", size=11, bold=True))
+    else:
+        parts.append(_label(240, 130, "Closed circuit (Fig 11.1 style)", size=10))
+    return _svg_wrap(parts, h=280, title="Electric circuit")
+
+
+def svg_circuit_symbols(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    parts = []
+    items = [
+        (70, 70, "Cell", "cell"),
+        (170, 70, "Battery", "battery"),
+        (270, 70, "Switch", "switch"),
+        (370, 70, "Bulb", "bulb_resistor"),
+        (70, 170, "R", "bulb_resistor"),
+        (170, 170, "Rheostat", "rheostat"),
+        (270, 170, "A", "meters"),
+        (370, 170, "V", "meters"),
+    ]
+    for x, y, label, key in items:
+        bold = hl == key
+        parts.append(f'<rect x="{x-25}" y="{y-20}" width="50" height="40" rx="6" fill="#f8fafc" stroke="#6366f1" stroke-width="2" opacity="{1 if bold else 0.6}"/>')
+        parts.append(_label(x, y + 5, label, size=10, bold=bold))
+    parts.append(_label(240, 230, "NCERT Table 11.1 — circuit symbols", size=11, bold=True))
+    return _svg_wrap(parts, h=260, title="Circuit symbols")
+
+
+def svg_ohms_law_graph(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    mode = cfg.get("mode", "")
+    parts = [_defs(("arr", "#2563eb"))]
+    parts.append('<line x1="80" y1="200" x2="400" y2="200" stroke="#64748b" stroke-width="1.5"/>')
+    parts.append('<line x1="80" y1="200" x2="80" y2="60" stroke="#64748b" stroke-width="1.5"/>')
+    parts.append(_label(410, 205, "I (A)", size=11))
+    parts.append(_label(65, 55, "V (V)", size=11))
+    parts.append('<line x1="80" y1="200" x2="360" y2="80" stroke="#2563eb" stroke-width="3"/>')
+    parts.append(_label(300, 100, "slope = R", size=10, color="#2563eb", bold=True))
+    if hl == "statement" or mode == "definition":
+        parts.append(_label(240, 230, "V ∝ I → straight line through origin", size=11, bold=True))
+    else:
+        parts.append(_label(240, 230, "Ohm's law: V = I R", size=11, bold=True))
+    return _svg_wrap(parts, h=260, title="Ohm's law graph")
+
+
+def svg_resistance_wire(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    mode = cfg.get("mode", "")
+    parts = [_defs()]
+    parts.append('<rect x="120" y="120" width="240" height="24" rx="4" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>')
+    if hl == "length":
+        parts.append(_label(240, 105, "Longer wire → higher R", size=11, bold=True))
+    elif hl == "area":
+        parts.append('<rect x="120" y="110" width="240" height="44" rx="4" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>')
+        parts.append(_label(240, 175, "Thicker wire → lower R", size=11, bold=True))
+    elif mode == "compare" or hl == "material":
+        parts.append(_label(240, 175, "Material sets resistivity ρ", size=11, bold=True))
+    else:
+        parts.append(_label(240, 175, "R = ρ l / A", size=12, bold=True))
+    return _svg_wrap(parts, h=220, title="Resistance of a wire")
+
+
+def svg_resistors_series(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    parts = [_defs(("arr", "#2563eb"))]
+    xs = [140, 210, 280]
+    for i, x in enumerate(xs):
+        parts.append(f'<rect x="{x}" y="120" width="50" height="24" rx="3" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>')
+        parts.append(_label(x + 25, 135, f"R{i+1}", size=10, bold=True))
+        if i < 2:
+            parts.append(f'<line x1="{x+50}" y1="132" x2="{xs[i+1]}" y2="132" stroke="#64748b" stroke-width="2"/>')
+    parts.append(_arrow(80, 132, 135, 132, color="#2563eb"))
+    parts.append(_arrow(335, 132, 400, 132, color="#2563eb"))
+    if hl == "current":
+        parts.append(_label(240, 165, "Same current I through each resistor", size=11, bold=True))
+    elif hl == "voltage":
+        parts.append(_label(240, 165, "V = V1 + V2 + V3", size=11, bold=True))
+    else:
+        parts.append(_label(240, 165, "R_s = R1 + R2 + R3", size=11, bold=True))
+    return _svg_wrap(parts, h=220, title="Resistors in series")
+
+
+def svg_resistors_parallel(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    parts = [_defs(("arr", "#2563eb"))]
+    parts.append('<line x1="80" y1="80" x2="80" y2="200" stroke="#64748b" stroke-width="2"/>')
+    parts.append('<line x1="400" y1="80" x2="400" y2="200" stroke="#64748b" stroke-width="2"/>')
+    for y, label in [(100, "R1"), (140, "R2"), (180, "R3")]:
+        parts.append(f'<line x1="80" y1="{y}" x2="130" y2="{y}" stroke="#64748b" stroke-width="2"/>')
+        parts.append(f'<rect x="130" y="{y-12}" width="60" height="24" rx="3" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>')
+        parts.append(_label(160, y + 4, label, size=10, bold=True))
+        parts.append(f'<line x1="190" y1="{y}" x2="400" y2="{y}" stroke="#64748b" stroke-width="2"/>')
+    parts.append(_arrow(40, 140, 78, 140, color="#2563eb"))
+    parts.append(_arrow(402, 140, 440, 140, color="#2563eb"))
+    if hl == "current":
+        parts.append(_label(240, 220, "I = I1 + I2 + I3", size=11, bold=True))
+    elif hl == "voltage":
+        parts.append(_label(240, 220, "Same V across each branch", size=11, bold=True))
+    else:
+        parts.append(_label(240, 220, "1/R_p = 1/R1 + 1/R2 + 1/R3", size=10, bold=True))
+    return _svg_wrap(parts, h=260, title="Resistors in parallel")
+
+
+def svg_heating_element(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    parts = [_defs()]
+    parts.append('<path d="M140,150 Q160,110 180,150 T220,150 T260,150 T300,150" fill="none" stroke="#dc2626" stroke-width="4"/>')
+    parts.append(_label(220, 100, "Heating coil (high R)", size=11, bold=True, color="#dc2626"))
+    parts.append('<line x1="80" y1="150" x2="135" y2="150" stroke="#64748b" stroke-width="3"/>')
+    parts.append('<line x1="305" y1="150" x2="360" y2="150" stroke="#64748b" stroke-width="3"/>')
+    parts.append(_label(220, 185, "H = I² R t", size=12, bold=True))
+    if hl == "fuse":
+        parts.append(_label(220, 210, "Fuse melts if I too high", size=10, color="#b45309"))
+    return _svg_wrap(parts, h=240, title="Heating effect")
+
+
+def svg_electric_power(cfg: dict) -> str:
+    mode = cfg.get("mode", "")
+    parts = [_defs()]
+    parts.append(_label(240, 90, "P = V I", size=16, bold=True, color="#6366f1"))
+    parts.append(_label(240, 120, "P = I² R = V² / R", size=11))
+    if mode == "billing":
+        parts.append(_label(240, 160, "Energy (kWh) = Power (kW) × time (h)", size=11, bold=True))
+    else:
+        parts.append(_label(240, 160, "1 W = 1 V × 1 A", size=11, bold=True))
+    parts.append(_label(240, 200, "Unit on bill: kilowatt-hour (kWh)", size=10, color="#64748b"))
+    return _svg_wrap(parts, h=240, title="Electric power")
+
+
+def svg_magnetic_field_lines(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    mode = cfg.get("mode", "")
+    parts = [_defs(("arr", "#6366f1"))]
+    # Bar magnet
+    parts.append('<rect x="200" y="115" width="80" height="30" rx="4" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>')
+    parts.append(_label(215, 135, "N", size=12, bold=True, color="#dc2626"))
+    parts.append(_label(255, 135, "S", size=12, bold=True, color="#2563eb"))
+    # Field curves
+    for i, (x1, y1, x2, y2) in enumerate([
+        (180, 80, 300, 80), (160, 100, 320, 100), (150, 130, 330, 130),
+        (160, 160, 320, 160), (180, 180, 300, 180),
+    ]):
+        parts.append(f'<path d="M{x1},{y1} Q240,60 {x2},{y2}" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr)"/>')
+    if hl == "no_cross" or mode == "properties":
+        parts.append(_label(240, 220, "Closed curves; no crossing; density = strength", size=10, bold=True))
+    elif hl == "poles":
+        parts.append(_label(240, 220, "N pole and S pole", size=11, bold=True))
+    else:
+        parts.append(_label(240, 220, "Magnetic field lines around bar magnet", size=10))
+    return _svg_wrap(parts, h=260, title="Magnetic field lines")
+
+
+def svg_current_magnetic_field(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    mode = cfg.get("mode", "")
+    parts = [_defs(("arr", "#2563eb"))]
+    # Vertical wire through center
+    parts.append('<line x1="240" y1="50" x2="240" y2="230" stroke="#334155" stroke-width="4"/>')
+    parts.append(_arrow(240, 60, 240, 90, color="#dc2626"))
+    parts.append(_label(260, 75, "I", size=12, bold=True, color="#dc2626"))
+    # Concentric circles
+    for r in [35, 55, 75, 95]:
+        parts.append(f'<circle cx="240" cy="140" r="{r}" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4,2"/>')
+    parts.append('<polygon points="275,140 265,135 265,145" fill="#2563eb"/>')
+    if hl == "concentric" or mode == "exam":
+        parts.append(_label(240, 250, "Concentric circles around straight wire", size=11, bold=True))
+    elif hl == "oersted" or mode == "activity_12_1":
+        parts.append('<circle cx="120" cy="140" r="12" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>')
+        parts.append(_label(120, 144, "N", size=9, bold=True))
+        parts.append(_label(120, 165, "Compass deflects", size=10, bold=True))
+    else:
+        parts.append(_label(240, 250, "Magnetic field due to current", size=10))
+    return _svg_wrap(parts, h=280, title="Field due to current")
+
+
+def svg_right_hand_rule(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    parts = [_defs()]
+    parts.append(_label(240, 70, "Right-hand thumb rule", size=13, bold=True, color="#6366f1"))
+    parts.append('<line x1="240" y1="100" x2="240" y2="200" stroke="#334155" stroke-width="4"/>')
+    parts.append(_label(260, 150, "Thumb → current (I)", size=11, bold=hl == "rule", color="#dc2626"))
+    parts.append('<path d="M180,150 A60,60 0 1,1 300,150" fill="none" stroke="#2563eb" stroke-width="2"/>')
+    parts.append(_label(240, 220, "Curled fingers → field direction (B)", size=11, bold=True, color="#2563eb"))
+    return _svg_wrap(parts, h=260, title="Right-hand thumb rule")
+
+
+def svg_solenoid_field(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    mode = cfg.get("mode", "")
+    parts = [_defs(("arr", "#6366f1"))]
+    # Coil
+    for x in range(130, 350, 22):
+        parts.append(f'<ellipse cx="{x}" cy="140" rx="10" ry="28" fill="none" stroke="#6366f1" stroke-width="2"/>')
+    if mode == "electromagnet" or hl == "soft_iron":
+        parts.append('<rect x="170" y="125" width="140" height="30" rx="4" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>')
+        parts.append(_label(240, 145, "Soft iron core", size=10, bold=True))
+    # Uniform field inside
+    for y in [130, 140, 150]:
+        parts.append(f'<line x1="170" y1="{y}" x2="310" y2="{y}" stroke="#059669" stroke-width="1.5" marker-end="url(#arr)"/>')
+    if hl == "uniform":
+        parts.append(_label(240, 200, "Uniform field inside solenoid", size=11, bold=True))
+    elif hl == "bar_magnet":
+        parts.append(_label(240, 200, "External field like bar magnet", size=11, bold=True))
+    else:
+        parts.append(_label(240, 200, "Solenoid magnetic field", size=10))
+    return _svg_wrap(parts, h=260, title="Solenoid")
+
+
+def svg_flemings_left_hand(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    mode = cfg.get("mode", "")
+    parts = [_defs()]
+    parts.append(_label(240, 55, "Fleming's left-hand rule", size=13, bold=True, color="#6366f1"))
+    parts.append(_label(120, 100, "First finger → B (field)", size=10, bold=hl == "rule", color="#2563eb"))
+    parts.append(_label(120, 130, "Second finger → I (current)", size=10, bold=True, color="#dc2626"))
+    parts.append(_label(120, 160, "Thumb → F (force/motion)", size=10, bold=True, color="#059669"))
+    # Wire between magnet poles
+    parts.append('<rect x="160" y="180" width="160" height="8" rx="2" fill="#64748b"/>')
+    parts.append('<rect x="150" y="160" width="20" height="60" fill="#cbd5e1" stroke="#64748b"/>')
+    parts.append(_label(160, 195, "N", size=10, bold=True))
+    parts.append('<rect x="310" y="160" width="20" height="60" fill="#cbd5e1" stroke="#64748b"/>')
+    parts.append(_label(320, 195, "S", size=10, bold=True))
+    parts.append(_arrow(240, 220, 240, 195, color="#059669"))
+    parts.append(_label(255, 215, "F", size=11, bold=True, color="#059669"))
+    if mode == "activity_12_7":
+        parts.append(_label(240, 245, "Rod displaces when current flows in field", size=10, bold=True))
+    return _svg_wrap(parts, h=280, title="Fleming's left-hand rule")
+
+
+def svg_domestic_circuit(cfg: dict) -> str:
+    hl = cfg.get("highlight", "")
+    mode = cfg.get("mode", "")
+    parts = [_defs(("arr", "#2563eb"))]
+    # Live (red) and neutral (black) rails
+    parts.append('<line x1="80" y1="80" x2="400" y2="80" stroke="#dc2626" stroke-width="3"/>')
+    parts.append('<line x1="80" y1="200" x2="400" y2="200" stroke="#334155" stroke-width="3"/>')
+    parts.append(_label(60, 85, "Live", size=10, bold=hl == "live", color="#dc2626"))
+    parts.append(_label(55, 205, "Neutral", size=10, bold=hl == "neutral", color="#334155"))
+    # Earth wire
+    parts.append('<line x1="80" y1="240" x2="400" y2="240" stroke="#059669" stroke-width="2" stroke-dasharray="6,3"/>')
+    parts.append(_label(55, 245, "Earth", size=10, bold=hl == "earth", color="#059669"))
+    # Parallel branches
+    for x, label in [(140, "Bulb"), (240, "Fan"), (340, "Geyser")]:
+        parts.append(f'<line x1="{x}" y1="80" x2="{x}" y2="120" stroke="#64748b" stroke-width="2"/>')
+        parts.append(f'<rect x="{x-20}" y="120" width="40" height="30" rx="4" fill="#f8fafc" stroke="#6366f1" stroke-width="2"/>')
+        parts.append(_label(x, 138, label, size=9, bold=True))
+        parts.append(f'<line x1="{x}" y1="150" x2="{x}" y2="200" stroke="#64748b" stroke-width="2"/>')
+    if hl == "parallel" or mode == "fig_12_15":
+        parts.append(_label(240, 265, "Appliances in parallel — 220 V each", size=10, bold=True))
+    elif hl == "colours":
+        parts.append(_label(240, 265, "Red live · Black neutral · Green earth", size=10, bold=True))
+    elif hl == "fuse":
+        parts.append(_label(100, 65, "Fuse", size=10, bold=True, color="#b45309"))
+    else:
+        parts.append(_label(240, 265, "Domestic electric circuit (Fig 12.15)", size=10))
+    return _svg_wrap(parts, h=290, title="Domestic circuit")
+
+
 _RENDERERS = {
     "light_source_model": svg_light_source_model,
     "eye_light_path": svg_eye_light_path,
@@ -580,6 +1062,29 @@ _RENDERERS = {
     "lens_labels": svg_lens_labels,
     "lens_ray": svg_lens_ray,
     "lens_image": svg_lens_image,
+    "eye_structure": svg_eye_structure,
+    "eye_accommodation": svg_eye_accommodation,
+    "vision_defect": svg_vision_defect,
+    "prism_refraction": svg_prism_refraction,
+    "dispersion_spectrum": svg_dispersion_spectrum,
+    "rainbow": svg_rainbow,
+    "atmospheric_refraction": svg_atmospheric_refraction,
+    "scattering_sky": svg_scattering_sky,
+    "tyndall_effect": svg_tyndall_effect,
+    "electric_circuit": svg_electric_circuit,
+    "circuit_symbols": svg_circuit_symbols,
+    "ohms_law_graph": svg_ohms_law_graph,
+    "resistance_wire": svg_resistance_wire,
+    "resistors_series": svg_resistors_series,
+    "resistors_parallel": svg_resistors_parallel,
+    "heating_element": svg_heating_element,
+    "electric_power": svg_electric_power,
+    "magnetic_field_lines": svg_magnetic_field_lines,
+    "current_magnetic_field": svg_current_magnetic_field,
+    "right_hand_rule": svg_right_hand_rule,
+    "solenoid_field": svg_solenoid_field,
+    "flemings_left_hand": svg_flemings_left_hand,
+    "domestic_circuit": svg_domestic_circuit,
     "placeholder": svg_placeholder,
 }
 

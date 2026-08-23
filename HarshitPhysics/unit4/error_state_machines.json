@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "unit_id": 4,
+    "description": "Misconception remediation paths for Unit 4 practice MCQs"
+  },
+  "misconception_categories": [
+    "right_left_hand_rule_swap",
+    "field_lines_cross_or_open",
+    "domestic_series_wiring_error",
+    "solenoid_uniform_field_confusion",
+    "electron_current_direction",
+    "short_circuit_overload_confusion",
+    "earth_wire_purpose_error",
+    "straight_wire_field_pattern_error"
+  ],
+  "machines": {
+    "right_left_hand_rule_swap": {
+      "feedback": "Right-hand thumb rule finds B from current. Fleming's left-hand rule finds force on a conductor in B.",
+      "concept_ids": ["u4_d5_c07", "u4_d6_c09", "u4_d11_c05"],
+      "calm_prompt": "RH thumb = B; left hand = F."
+    },
+    "field_lines_cross_or_open": {
+      "feedback": "Magnetic field lines are closed curves and never cross. Direction = motion of a free north pole.",
+      "concept_ids": ["u4_d2_c10", "u4_d3_c04"],
+      "calm_prompt": "Closed curves; no crossing."
+    },
+    "domestic_series_wiring_error": {
+      "feedback": "Home appliances are in parallel across live and neutral so each gets 220 V and works independently.",
+      "concept_ids": ["u4_d8_c09", "u4_d10_c08"],
+      "calm_prompt": "Domestic = parallel branches."
+    },
+    "straight_wire_field_pattern_error": {
+      "feedback": "Field around a straight current-carrying wire forms concentric circles, not radial or parallel lines.",
+      "concept_ids": ["u4_d4_c03", "u4_d10_c01", "u4_d14_c10"],
+      "calm_prompt": "Circles around the wire."
+    },
+    "short_circuit_overload_confusion": {
+      "feedback": "Short circuit: live touches neutral. Overload: too much load or voltage surge. Both raise current; fuse melts.",
+      "concept_ids": ["u4_d9_c01", "u4_d9_c02", "u4_d12_c07"],
+      "calm_prompt": "Short ≠ overload cause."
+    }
+  }
+}

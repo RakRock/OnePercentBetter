@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "design_system": "Harshit Physics — low-sensory, anti-gamified",
+    "one_card_per_screen": true,
+    "no_timers": true,
+    "no_gamification": true,
+    "safety": [
+      "No direct Sun viewing",
+      "No unsupervised laser use",
+      "Paper-burning demo: teacher only or simulation"
+    ]
+  },
+  "css_variables": {
+    "--hp-bg-page": "#F7F8FA",
+    "--hp-bg-surface": "#FFFFFF",
+    "--hp-bg-muted": "#EEF1F5",
+    "--hp-text-primary": "#1E293B",
+    "--hp-text-secondary": "#64748B",
+    "--hp-border-subtle": "#D8DEE6",
+    "--hp-feedback-amber": "#F5DEB3",
+    "--hp-feedback-amber-text": "#92400E",
+    "--hp-accent-indigo": "#6366F1",
+    "--hp-ray-incident": "#2563EB",
+    "--hp-ray-reflected": "#059669",
+    "--hp-ray-refracted": "#7C3AED",
+    "--hp-normal": "#64748B",
+    "--hp-mirror-fill": "#E2E8F0",
+    "--hp-spacing-screen": "2rem",
+    "--hp-radius": "8px"
+  },
+  "components": {
+    "RayBoard": {
+      "description": "Principal axis with incident/reflected/refracted rays; angles measured from normal.",
+      "visual_types": ["straight_ray", "plane_mirror_reflection", "normal_angle", "mirror_focus_ray"]
+    },
+    "MirrorLensDiagram": {
+      "description": "Spherical mirror or lens with P, F, C, O labels.",
+      "visual_types": ["spherical_mirror_labels", "lens_labels"]
+    },
+    "LightPathModel": {
+      "description": "Source → object → eye path for seeing.",
+      "visual_types": ["light_source_model", "eye_light_path"]
+    },
+    "SignConventionAxis": {
+      "description": "Horizontal axis with pole at origin and sign directions.",
+      "visual_types": ["sign_axis"]
+    },
+    "GlossaryPanel": {
+      "description": "Persistent optional glossary sidebar.",
+      "props": { "collapsible": true }
+    }
+  }
+}

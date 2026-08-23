@@ -1,4 +1,4 @@
-"""Question bank loader for Harshit Physics Unit 1 practice."""
+"""Question bank loader for Harshit Physics practice."""
 
 from __future__ import annotations
 
@@ -7,11 +7,13 @@ import random
 import re
 from pathlib import Path
 
+import harshit_physics_content as hpc
 import harshit_physics_topics as hpt
 from llm_question_format import is_quality_practice_question
 
-ROOT = Path(__file__).resolve().parent
-BANK_PATH = ROOT / "HarshitPhysics" / "unit1" / "question_bank.json"
+
+def bank_path(unit_id: int) -> Path:
+    return hpc.unit_dir(unit_id) / "question_bank.json"
 
 
 def question_dedup_key(text: str, options: list[str] | None = None) -> str:
@@ -24,11 +26,13 @@ def question_dedup_key(text: str, options: list[str] | None = None) -> str:
     return t
 
 
-def load_bank() -> dict:
-    if not BANK_PATH.is_file():
+def load_bank(unit_id: int | None = None) -> dict:
+    uid = unit_id if unit_id is not None else hpc.active_unit_id()
+    path = bank_path(uid)
+    if not path.is_file():
         return {"questions": [], "questions_by_day": {}}
     try:
-        data = json.loads(BANK_PATH.read_text(encoding="utf-8"))
+        data = json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         return {"questions": [], "questions_by_day": {}}
     data.setdefault("questions", [])
@@ -36,7 +40,9 @@ def load_bank() -> dict:
     return data
 
 
-def normalize_question(raw: dict, unit_id: int = 1) -> dict:
+def normalize_question(raw: dict, unit_id: int | None = None) -> dict:
+    uid = unit_id if unit_id is not None else int(raw.get("unit_id", hpc.active_unit_id()))
+    umeta = hpc.unit_meta(uid)
     options = [str(o) for o in raw.get("options", [])]
     answer = int(raw.get("answer", 0))
     if len(options) != 4 or answer not in range(4):
@@ -46,7 +52,8 @@ def normalize_question(raw: dict, unit_id: int = 1) -> dict:
 
     day_id = int(raw.get("day_id", raw.get("topic", 1)))
     level = str(raw.get("level", "A"))
-    qid = str(raw.get("id") or f"u1_d{day_id}_{level}_{random.randint(1000,9999)}")
+    prefix = f"u{uid}"
+    qid = str(raw.get("id") or f"{prefix}_d{day_id}_{level}_{random.randint(1000, 9999)}")
 
     return {
         "id": qid,
@@ -57,18 +64,19 @@ def normalize_question(raw: dict, unit_id: int = 1) -> dict:
         "day_id": day_id,
         "topic": day_id,
         "level": level,
-        "unit_id": unit_id,
+        "unit_id": uid,
         "concept_id": raw.get("concept_id", ""),
-        "category": raw.get("category") or f"u1_d{day_id}_{level}",
+        "category": raw.get("category") or f"{prefix}_d{day_id}_{level}",
         "category_label": raw.get("category_label")
-        or hpt.format_topic_level_label(unit_id, day_id, level),
+        or hpt.format_topic_level_label(uid, day_id, level),
         "source": raw.get("source", "bank"),
-        "chapter_ref": raw.get("chapter_ref", "NCERT Class 10 Ch 9 — Light"),
+        "chapter_ref": raw.get("chapter_ref", umeta.get("chapter_ref", "")),
     }
 
 
-def pool_for(day_id: int, level: str) -> list[dict]:
-    bank = load_bank()
+def pool_for(day_id: int, level: str, unit_id: int | None = None) -> list[dict]:
+    uid = unit_id if unit_id is not None else hpc.active_unit_id()
+    bank = load_bank(uid)
     by_day = bank.get("questions_by_day") or {}
     day_pool = list(by_day.get(str(day_id), []))
     if not day_pool:
@@ -87,7 +95,7 @@ def pick_question(
     exclude_ids = exclude_ids or set()
     exclude_text = exclude_text or set()
     candidates: list[dict] = []
-    for raw in pool_for(day_id, level):
+    for raw in pool_for(day_id, level, unit_id):
         qid = str(raw.get("id") or "")
         if qid and qid in exclude_ids:
             continue
@@ -106,8 +114,9 @@ def pick_question(
     return random.choice(candidates)
 
 
-def bank_stats(unit_id: int = 1) -> dict:
-    bank = load_bank()
+def bank_stats(unit_id: int | None = None) -> dict:
+    uid = unit_id if unit_id is not None else hpc.active_unit_id()
+    bank = load_bank(uid)
     questions = bank.get("questions") or []
     by_level: dict[str, int] = {}
     by_day: dict[int, int] = {}
@@ -124,27 +133,31 @@ def bank_stats(unit_id: int = 1) -> dict:
     }
 
 
-def bank_status_message(unit_id: int = 1) -> str:
-    stats = bank_stats(unit_id)
+def bank_status_message(unit_id: int | None = None) -> str:
+    uid = unit_id if unit_id is not None else hpc.active_unit_id()
+    stats = bank_stats(uid)
     if stats["total"]:
         return f"{stats['total']} questions in bank across {stats['days']} topic days."
-    return "Question bank empty — run scripts/build_physics_unit1_question_bank.py"
+    return f"Question bank empty — run scripts/build_physics_unit{uid}_question_bank.py"
 
 
-def seed_examples(day_id: int, level: str, n: int = 3) -> list[dict]:
+def seed_examples(day_id: int, level: str, n: int = 3, unit_id: int | None = None) -> list[dict]:
     """Return up to n bank questions as Grok style seeds."""
-    pool = list(pool_for(day_id, level))
+    uid = unit_id if unit_id is not None else hpc.active_unit_id()
+    pool = list(pool_for(day_id, level, uid))
     if not pool:
         for lvl in ("A", "B", "C"):
-            pool.extend(pool_for(day_id, lvl))
+            pool.extend(pool_for(day_id, lvl, uid))
     if not pool:
         return []
     return random.sample(pool, min(n, len(pool)))
 
 
-def add_questions(questions: list[dict]) -> int:
+def add_questions(questions: list[dict], unit_id: int | None = None) -> int:
     """Append validated questions to the bank file (deduped)."""
-    bank = load_bank()
+    uid = unit_id if unit_id is not None else hpc.active_unit_id()
+    path = bank_path(uid)
+    bank = load_bank(uid)
     all_q = list(bank.get("questions") or [])
     by_day: dict[str, list] = {str(k): list(v) for k, v in (bank.get("questions_by_day") or {}).items()}
     existing_ids = {str(q.get("id")) for q in all_q if q.get("id")}
@@ -159,7 +172,7 @@ def add_questions(questions: list[dict]) -> int:
             q = raw
         else:
             try:
-                q = normalize_question(raw if isinstance(raw, dict) else {})
+                q = normalize_question(raw if isinstance(raw, dict) else {}, uid)
             except ValueError:
                 continue
         key = question_dedup_key(q["question"], q["options"])
@@ -174,6 +187,6 @@ def add_questions(questions: list[dict]) -> int:
     bank["questions"] = all_q
     bank["questions_by_day"] = by_day
     bank.setdefault("meta", {})["total"] = len(all_q)
-    BANK_PATH.parent.mkdir(parents=True, exist_ok=True)
-    BANK_PATH.write_text(json.dumps(bank, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(bank, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return added

@@ -19,15 +19,43 @@ def _open_physics_home():
     st.session_state.current_page = "harshit_physics_home"
 
 
+def _unit_id() -> int:
+    return int(st.session_state.get("hp_unit_id", hpc.UNIT_ID))
+
+
+def _open_unit_home(unit_id: int) -> None:
+    st.session_state.hp_unit_id = unit_id
+    st.session_state.current_page = f"harshit_physics_unit{unit_id}"
+
+
 def _open_unit1_home():
-    st.session_state.current_page = "harshit_physics_unit1"
+    _open_unit_home(1)
 
 
-def _open_concept_day(day_id: int, *, show_menu: bool = True) -> None:
+def _open_unit2_home():
+    _open_unit_home(2)
+
+
+def _open_unit3_home():
+    _open_unit_home(3)
+
+
+def _open_unit4_home():
+    _open_unit_home(4)
+
+
+def _concept_state_key(day_id: int, unit_id: int | None = None) -> str:
+    uid = unit_id if unit_id is not None else _unit_id()
+    return f"hp_concept_{uid}_{day_id}"
+
+
+def _open_concept_day(day_id: int, *, show_menu: bool = True, unit_id: int | None = None) -> None:
+    uid = unit_id if unit_id is not None else _unit_id()
+    st.session_state.hp_unit_id = uid
     st.session_state.hp_day_id = day_id
     st.session_state.hp_mode = "concept"
     st.session_state.current_page = "harshit_physics_concept"
-    key = f"hp_concept_{day_id}"
+    key = _concept_state_key(day_id, uid)
     if key not in st.session_state:
         st.session_state[key] = hps.ConceptSessionState(day_id=day_id).to_dict()
     if show_menu:
@@ -36,35 +64,40 @@ def _open_concept_day(day_id: int, *, show_menu: bool = True) -> None:
         st.session_state.pop("hp_show_day_menu", None)
 
 
-def _concepts_viewed_for_day(day_id: int) -> int:
-    viewed = _all_viewed_ids()
-    return sum(1 for c in hpc.concepts_for_day(day_id) if c["id"] in viewed)
+def _concepts_viewed_for_day(day_id: int, unit_id: int | None = None) -> int:
+    uid = unit_id if unit_id is not None else _unit_id()
+    viewed = _all_viewed_ids(uid)
+    return sum(1 for c in hpc.concepts_for_day(day_id, unit_id=uid) if c["id"] in viewed)
 
 
-def _is_first_visit(day_id: int) -> bool:
-    state = _get_concept_state(day_id)
+def _is_first_visit(day_id: int, unit_id: int | None = None) -> bool:
+    uid = unit_id if unit_id is not None else _unit_id()
+    state = _get_concept_state(day_id, uid)
     if state.concept_index > 0 or state.viewed:
         return False
-    return _concepts_viewed_for_day(day_id) == 0
+    return _concepts_viewed_for_day(day_id, uid) == 0
 
 
-def _reset_concept_day(day_id: int, *, concept_index: int = 0) -> None:
-    state = _get_concept_state(day_id)
+def _reset_concept_day(day_id: int, *, concept_index: int = 0, unit_id: int | None = None) -> None:
+    uid = unit_id if unit_id is not None else _unit_id()
+    state = _get_concept_state(day_id, uid)
     state.concept_index = concept_index
     state.show_simpler = False
     state.show_example = False
     state.show_visual_again = False
-    _save_concept_state(state)
+    _save_concept_state(state, uid)
     st.session_state.pop("hp_show_day_menu", None)
 
 
-def _get_concept_state(day_id: int) -> hps.ConceptSessionState:
-    key = f"hp_concept_{day_id}"
+def _get_concept_state(day_id: int, unit_id: int | None = None) -> hps.ConceptSessionState:
+    uid = unit_id if unit_id is not None else _unit_id()
+    key = _concept_state_key(day_id, uid)
     return hps.ConceptSessionState.from_dict(st.session_state.get(key, {"day_id": day_id}))
 
 
-def _save_concept_state(state: hps.ConceptSessionState) -> None:
-    st.session_state[f"hp_concept_{state.day_id}"] = state.to_dict()
+def _save_concept_state(state: hps.ConceptSessionState, unit_id: int | None = None) -> None:
+    uid = unit_id if unit_id is not None else _unit_id()
+    st.session_state[_concept_state_key(state.day_id, uid)] = state.to_dict()
 
 
 def _user_id() -> int | None:
@@ -72,20 +105,22 @@ def _user_id() -> int | None:
     return user["id"] if user else None
 
 
-def _all_viewed_ids() -> set[str]:
-    uid = _user_id()
-    if not uid:
+def _all_viewed_ids(unit_id: int | None = None) -> set[str]:
+    uid = unit_id if unit_id is not None else _unit_id()
+    user = db.get_user("Harshit Sai")
+    if not user:
         return set()
-    return set(db.get_harshit_physics_viewed_concepts(uid, unit_id=hpc.UNIT_ID))
+    return set(db.get_harshit_physics_viewed_concepts(user["id"], unit_id=uid))
 
 
-def _persist_concept_view(concept_id: str, *, marked_review: bool) -> None:
-    uid = _user_id()
-    if not uid:
+def _persist_concept_view(concept_id: str, *, marked_review: bool, unit_id: int | None = None) -> None:
+    uid = unit_id if unit_id is not None else _unit_id()
+    user = db.get_user("Harshit Sai")
+    if not user:
         return
     db.save_harshit_physics_concept_status(
-        uid,
-        unit_id=hpc.UNIT_ID,
+        user["id"],
+        unit_id=uid,
         concept_id=concept_id,
         viewed=True,
         marked_review=marked_review,
@@ -117,33 +152,54 @@ def render_home() -> None:
         _open_unit1_home()
         st.rerun()
 
+    if st.button("Unit 2 — The Human Eye and the Colourful World", use_container_width=True):
+        _open_unit2_home()
+        st.rerun()
 
-def render_unit1_home() -> None:
-    hpco.inject_physics_styles()
+    if st.button("Unit 3 — Electricity", use_container_width=True):
+        _open_unit3_home()
+        st.rerun()
+
+    if st.button("Unit 4 — Magnetic Effects of Electric Current", use_container_width=True):
+        _open_unit4_home()
+        st.rerun()
+
+
+def render_unit_home(unit_id: int) -> None:
+    umeta = hpc.unit_meta(unit_id)
+    meta = hpc.meta(unit_id)
+    hpco.inject_physics_styles(unit_id)
     col_back, _ = st.columns([1, 4])
     with col_back:
         if st.button("← Physics"):
             _open_physics_home()
             st.rerun()
 
-    st.markdown("## Unit 1 — Light: Reflection and Refraction")
-    st.caption("NCERT Class 10 Science, Chapter 9 · 16 concept days + practice")
+    st.markdown(f"## Unit {unit_id} — {umeta['title']}")
+    st.caption(f"{meta.get('ncert', umeta['ncert'])} · 16 concept days + practice")
     st.markdown("")
 
-    viewed = _all_viewed_ids()
-    total_active = hpc.total_concept_cards(active_only=True)
-    stage1_done = hpc.practice_unlocked(viewed)
-    review_ids = db.get_harshit_physics_review_concepts(_user_id() or 0, unit_id=hpc.UNIT_ID) if _user_id() else []
+    viewed = _all_viewed_ids(unit_id)
+    total_active = hpc.total_concept_cards(active_only=True, unit_id=unit_id)
+    stage1_done = hpc.practice_unlocked(viewed, unit_id=unit_id)
+    user = db.get_user("Harshit Sai")
+    review_ids = db.get_harshit_physics_review_concepts(user["id"], unit_id=unit_id) if user else []
 
     c1, c2, c3 = st.columns(3)
     with c1:
-        st.metric("Concepts viewed", f"{len(viewed & {c['id'] for d in hpc.list_days(stage=1) if d.get('active') for c in d.get('concepts', [])})}/{total_active}")
+        all_ids = {
+            c["id"]
+            for d in hpc.list_days(stage=1, unit_id=unit_id)
+            if d.get("active")
+            for c in d.get("concepts", [])
+        }
+        st.metric("Concepts viewed", f"{len(viewed & all_ids)}/{total_active}")
     with c2:
         st.metric("Marked for review", len(review_ids))
     with c3:
         st.metric("Practice", "Ready" if stage1_done else "Locked")
 
-    section_key = "hp_unit1_section"
+    section_key = f"hp_unit{unit_id}_section"
     if section_key not in st.session_state:
         st.session_state[section_key] = "📚 Learn"
 
@@ -160,7 +216,7 @@ def render_unit1_home() -> None:
     if section == "🎯 Practice":
         import harshit_physics_practice_ui as hppui
 
-        hppui.render_practice_home(stage1_done=stage1_done)
+        hppui.render_practice_home(stage1_done=stage1_done, unit_id=unit_id)
         return
 
     if section == "⚙️ Practice Setup":
@@ -169,17 +225,33 @@ def render_unit1_home() -> None:
         if not stage1_done:
             st.info("Complete Stage 1 concept days to unlock practice.")
         else:
-            hppui.render_setup_panel()
+            hppui.render_setup_panel(unit_id=unit_id)
         return
 
-    _render_unit1_learn(viewed, review_ids)
+    _render_unit_learn(viewed, review_ids, unit_id=unit_id)
 
 
-def _render_unit1_learn(viewed: set[str], review_ids: list[str]) -> None:
+def render_unit1_home() -> None:
+    render_unit_home(1)
+
+
+def render_unit2_home() -> None:
+    render_unit_home(2)
+
+
+def render_unit3_home() -> None:
+    render_unit_home(3)
+
+
+def render_unit4_home() -> None:
+    render_unit_home(4)
+
+
+def _render_unit_learn(viewed: set[str], review_ids: list[str], *, unit_id: int) -> None:
     st.markdown("### Stage 1 — Learn concepts")
     st.caption("Exposure and familiarization — not reported as mastery.")
 
-    for day in hpc.list_days(stage=1):
+    for day in hpc.list_days(stage=1, unit_id=unit_id):
         day_id = day["day"]
         concepts = day.get("concepts") or []
         active = day.get("active", False)
@@ -195,44 +267,50 @@ def _render_unit1_learn(viewed: set[str], review_ids: list[str]) -> None:
             st.markdown(f"**{label}**")
             st.caption(progress)
         with cols[1]:
-            if active and st.button("Open", key=f"hp_open_day_{day_id}"):
-                _open_concept_day(day_id)
+            if active and st.button("Open", key=f"hp_open_u{unit_id}_day_{day_id}"):
+                _open_concept_day(day_id, unit_id=unit_id)
                 st.rerun()
 
     if review_ids:
         st.markdown("---")
         with st.expander("Cards marked for review"):
             for cid in review_ids:
-                concept = hpc.get_concept(cid)
-                if concept and st.button(f"Review: {concept['name']}", key=f"hp_rev_{cid}"):
-                    day = next(d for d in hpc.list_days() if any(c["id"] == cid for c in d.get("concepts", [])))
-                    _open_concept_day(day["day"], show_menu=False)
-                    _reset_concept_day(day["day"], concept_index=next(
-                        i for i, c in enumerate(day["concepts"]) if c["id"] == cid
-                    ))
+                concept = hpc.get_concept(cid, unit_id=unit_id)
+                if concept and st.button(f"Review: {concept['name']}", key=f"hp_rev_u{unit_id}_{cid}"):
+                    day = next(
+                        d
+                        for d in hpc.list_days(unit_id=unit_id)
+                        if any(c["id"] == cid for c in d.get("concepts", []))
+                    )
+                    _open_concept_day(day["day"], show_menu=False, unit_id=unit_id)
+                    _reset_concept_day(
+                        day["day"],
+                        concept_index=next(i for i, c in enumerate(day["concepts"]) if c["id"] == cid),
+                        unit_id=unit_id,
+                    )
                     st.rerun()
 
 
-def _render_day_menu(day_id: int, day: dict) -> None:
+def _render_day_menu(day_id: int, day: dict, *, unit_id: int) -> None:
     """Let Harshit start from the beginning, continue, or pick a concept."""
     concepts = day.get("concepts") or []
-    state = _get_concept_state(day_id)
+    state = _get_concept_state(day_id, unit_id)
     total = len(concepts)
-    viewed_count = _concepts_viewed_for_day(day_id)
+    viewed_count = _concepts_viewed_for_day(day_id, unit_id)
     idx = min(state.concept_index, total)
     at_end = state.concept_index >= total
 
     st.markdown(f"### Day {day_id} — {day['title']}")
     st.caption(f"{viewed_count}/{total} concepts viewed · exposure only, not mastery")
 
-    if st.button("← Unit 1"):
+    if st.button(f"← Unit {unit_id}"):
         st.session_state.pop("hp_show_day_menu", None)
-        _open_unit1_home()
+        _open_unit_home(unit_id)
         st.rerun()
 
     st.markdown("")
     if st.button("Start from concept 1", type="primary", use_container_width=True):
-        _reset_concept_day(day_id, concept_index=0)
+        _reset_concept_day(day_id, concept_index=0, unit_id=unit_id)
         st.rerun()
 
     if not at_end and idx > 0:
@@ -246,10 +324,10 @@ def _render_day_menu(day_id: int, day: dict) -> None:
 
     st.markdown("**Jump to a concept**")
     options = [f"{i + 1}. {c['name']}" for i, c in enumerate(concepts)]
-    pick = st.selectbox("Choose a concept", options, label_visibility="collapsed", key=f"hp_pick_{day_id}")
+    pick = st.selectbox("Choose a concept", options, label_visibility="collapsed", key=f"hp_pick_u{unit_id}_{day_id}")
     if st.button("Open selected concept", use_container_width=True):
         pick_idx = options.index(pick)
-        _reset_concept_day(day_id, concept_index=pick_idx)
+        _reset_concept_day(day_id, concept_index=pick_idx, unit_id=unit_id)
         st.rerun()
 
 
@@ -260,24 +338,26 @@ def _simpler_text(concept: dict) -> str:
 
 
 def render_concept_card() -> None:
-    hpco.inject_physics_styles()
+    unit_id = _unit_id()
+    umeta = hpc.unit_meta(unit_id)
+    hpco.inject_physics_styles(unit_id)
     day_id = st.session_state.get("hp_day_id", 1)
-    day = hpc.get_day(day_id)
+    day = hpc.get_day(day_id, unit_id=unit_id)
     if not day or not day.get("active"):
         st.warning("This day is not available yet.")
-        if st.button("← Unit 1"):
-            _open_unit1_home()
+        if st.button(f"← Unit {unit_id}"):
+            _open_unit_home(unit_id)
             st.rerun()
         return
 
     show_menu = st.session_state.get("hp_show_day_menu") == day_id
-    if show_menu and not _is_first_visit(day_id):
-        _render_day_menu(day_id, day)
+    if show_menu and not _is_first_visit(day_id, unit_id):
+        _render_day_menu(day_id, day, unit_id=unit_id)
         return
-    if show_menu and _is_first_visit(day_id):
+    if show_menu and _is_first_visit(day_id, unit_id):
         st.session_state.pop("hp_show_day_menu", None)
 
-    state = _get_concept_state(day_id)
+    state = _get_concept_state(day_id, unit_id)
     concepts = day.get("concepts") or []
     concept = state.current_concept()
     if not concept:
@@ -286,19 +366,19 @@ def render_concept_card() -> None:
         if st.button("Choose where to start", type="primary"):
             st.session_state.hp_show_day_menu = day_id
             st.rerun()
-        if st.button("← Unit 1 home"):
-            _open_unit1_home()
+        if st.button(f"← Unit {unit_id} home"):
+            _open_unit_home(unit_id)
             st.rerun()
         return
 
     idx = state.concept_index
-    st.caption(f"Day {day_id} · {day['title']} · Concept {idx + 1} of {len(concepts)}")
+    st.caption(f"Unit {unit_id} · Day {day_id} · {day['title']} · Concept {idx + 1} of {len(concepts)}")
 
-    if st.button("← Unit 1"):
-        _open_unit1_home()
+    if st.button(f"← Unit {unit_id}"):
+        _open_unit_home(unit_id)
         st.rerun()
 
-    hpco.render_glossary_sidebar(hpc.glossary())
+    hpco.render_glossary_sidebar(hpc.glossary(unit_id))
 
     st.markdown(f'<div class="hp-concept-name">{concept["name"]}</div>', unsafe_allow_html=True)
 
@@ -307,6 +387,7 @@ def render_concept_card() -> None:
             concept.get("visual") or {},
             concept_id=concept.get("id", ""),
             concept_name=concept.get("name", ""),
+            unit_id=unit_id,
         )
 
     st.markdown('<div class="hp-section-label">Simple answer</div>', unsafe_allow_html=True)
@@ -342,24 +423,24 @@ def render_concept_card() -> None:
     with b1:
         if st.button("Show me an example"):
             state.show_example = True
-            _save_concept_state(state)
+            _save_concept_state(state, unit_id)
             st.rerun()
     with b2:
         if st.button("Explain more simply"):
             state.show_simpler = True
-            _save_concept_state(state)
+            _save_concept_state(state, unit_id)
             st.rerun()
     with b3:
         if st.button("Show the visual again"):
             state.show_visual_again = True
-            _save_concept_state(state)
+            _save_concept_state(state, unit_id)
             st.rerun()
 
     marked = concept["id"] in state.marked_review
     if st.button("★ Mark for review" if not marked else "✓ Marked for review"):
         state.toggle_review(concept["id"])
-        _save_concept_state(state)
-        _persist_concept_view(concept["id"], marked_review=concept["id"] in state.marked_review)
+        _save_concept_state(state, uid)
+        _persist_concept_view(concept["id"], marked_review=concept["id"] in state.marked_review, unit_id=unit_id)
         st.rerun()
 
     st.markdown("")
@@ -367,17 +448,19 @@ def render_concept_card() -> None:
     btn_label = "Done" if is_last else "Next concept →"
     if st.button(btn_label, type="primary", use_container_width=True):
         cid = concept["id"]
-        _persist_concept_view(cid, marked_review=cid in state.marked_review)
+        _persist_concept_view(cid, marked_review=cid in state.marked_review, unit_id=unit_id)
         state.advance()
-        _save_concept_state(state)
+        _save_concept_state(state, unit_id)
         if is_last:
-            db.update_harshit_physics_day_status(
-                _user_id() or 0,
-                unit_id=hpc.UNIT_ID,
-                day_id=day_id,
-                status="complete",
-                concepts_viewed=len(concepts),
-                concepts_total=len(concepts),
-            )
-            _open_unit1_home()
+            user = db.get_user("Harshit Sai")
+            if user:
+                db.update_harshit_physics_day_status(
+                    user["id"],
+                    unit_id=unit_id,
+                    day_id=day_id,
+                    status="complete",
+                    concepts_viewed=len(concepts),
+                    concepts_total=len(concepts),
+                )
+            _open_unit_home(unit_id)
         st.rerun()

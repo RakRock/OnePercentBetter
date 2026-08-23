@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "unit_id": 3,
+    "description": "Misconception remediation paths for Unit 3 practice MCQs"
+  },
+  "misconception_categories": [
+    "ammeter_parallel_error",
+    "voltmeter_series_error",
+    "series_parallel_resistance_swap",
+    "ohm_law_temperature_ignored",
+    "power_energy_confusion",
+    "conventional_electron_direction",
+    "fuse_parallel_error",
+    "resistivity_resistance_confusion"
+  ],
+  "machines": {
+    "ammeter_parallel_error": {
+      "feedback": "An ammeter must be in series so the full circuit current passes through it.",
+      "concept_ids": ["u3_d2_c05", "u3_d12_c02"],
+      "calm_prompt": "Ammeter → series only."
+    },
+    "series_parallel_resistance_swap": {
+      "feedback": "Series: resistances add (R1+R2). Parallel: add reciprocals (1/Rp = 1/R1+1/R2).",
+      "concept_ids": ["u3_d7_c04", "u3_d7_c09"],
+      "calm_prompt": "Series adds R; parallel adds 1/R."
+    },
+    "power_energy_confusion": {
+      "feedback": "Power (W) is rate; energy (J or kWh) is power × time.",
+      "concept_ids": ["u3_d9_c02", "u3_d9_c03"],
+      "calm_prompt": "W vs kWh — rate vs total."
+    }
+  }
+}

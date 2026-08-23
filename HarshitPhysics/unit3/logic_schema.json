@@ -1,0 +1,2736 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 3,
+    "unit_title": "Electricity",
+    "ncert": "Class 10 Science, Chapter 11",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_physics_unit3_concepts",
+    "session_kind_mcq": "harshit_physics_unit3_mcq"
+  },
+  "glossary": [
+    {
+      "term": "electric current",
+      "definition": "Rate of flow of electric charge; I = Q/t; unit ampere (A)."
+    },
+    {
+      "term": "coulomb",
+      "definition": "SI unit of charge (C)."
+    },
+    {
+      "term": "ampere",
+      "definition": "SI unit of current; 1 A = 1 C/s."
+    },
+    {
+      "term": "potential difference",
+      "definition": "Work done per unit charge; V = W/Q; unit volt (V)."
+    },
+    {
+      "term": "volt",
+      "definition": "SI unit of potential difference; 1 V = 1 J/C."
+    },
+    {
+      "term": "Ohm's law",
+      "definition": "V = IR for metallic conductor at constant temperature."
+    },
+    {
+      "term": "resistance",
+      "definition": "Opposition to current; R = V/I; unit ohm (Ω)."
+    },
+    {
+      "term": "ohm",
+      "definition": "SI unit of resistance."
+    },
+    {
+      "term": "resistivity",
+      "definition": "Material property ρ; R = ρl/A; unit Ω m."
+    },
+    {
+      "term": "rheostat",
+      "definition": "Variable resistor used to control current."
+    },
+    {
+      "term": "series",
+      "definition": "Components end to end; same current; R adds."
+    },
+    {
+      "term": "parallel",
+      "definition": "Components across same two points; same V; reciprocals add."
+    },
+    {
+      "term": "heating effect",
+      "definition": "Heat produced when current flows through resistor."
+    },
+    {
+      "term": "Joule's law",
+      "definition": "H = I²Rt."
+    },
+    {
+      "term": "electric power",
+      "definition": "P = VI = I²R = V²/R; unit watt (W)."
+    },
+    {
+      "term": "watt",
+      "definition": "SI unit of power; 1 W = 1 V·A."
+    },
+    {
+      "term": "kilowatt-hour",
+      "definition": "Commercial energy unit; 1 kWh = 3.6×10⁶ J."
+    },
+    {
+      "term": "ammeter",
+      "definition": "Measures current; connected in series."
+    },
+    {
+      "term": "voltmeter",
+      "definition": "Measures potential difference; connected in parallel."
+    },
+    {
+      "term": "fuse",
+      "definition": "Safety device that melts to break circuit on overcurrent."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "Electric Current and Circuit",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d1_c01",
+          "name": "Electricity in daily life",
+          "simple_answer": "Electricity is a controllable, convenient form of energy used in homes, schools, hospitals and industries.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "overview"
+          },
+          "why": "Most modern devices depend on electric circuits.",
+          "example": "Lights, fans and phones all need electricity.",
+          "remember": "Electricity = controlled energy via circuits.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c02",
+          "name": "What is electric current?",
+          "simple_answer": "When electric charge flows through a conductor (like a metallic wire), we say there is an electric current in it.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "current_flow"
+          },
+          "why": "Current is moving charge — like water current in a river.",
+          "example": "Torch bulb glows when charges flow through it.",
+          "remember": "Flow of charge in conductor = current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "electric current"
+          ]
+        },
+        {
+          "id": "u3_d1_c03",
+          "name": "Electrons carry current in wires",
+          "simple_answer": "In metallic wires, electrons constitute the flow of charges that make up electric current.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "electrons"
+          },
+          "why": "Electrons are mobile in metals.",
+          "example": "Copper wires in home circuits carry electron drift.",
+          "remember": "Metallic current = electron flow.",
+          "common_confusion": "Current is not always positive charges in reality.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c04",
+          "name": "Conventional current direction",
+          "simple_answer": "Conventionally, current direction is taken as opposite to electron flow — as if positive charges move from cell + to −.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "conventional"
+          },
+          "why": "Historical convention before electrons were known.",
+          "example": "Arrow on circuit diagrams shows conventional current.",
+          "remember": "Conventional current: + terminal to − terminal.",
+          "common_confusion": "Do not draw electrons moving the same way as conventional arrow.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c05",
+          "name": "Electric circuit",
+          "simple_answer": "A continuous and closed path for electric current is called an electric circuit.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "closed_path"
+          },
+          "why": "Break anywhere stops the current.",
+          "example": "Open switch → torch off; closed switch → bulb on.",
+          "remember": "Closed loop needed for steady current.",
+          "common_confusion": "Open circuit ≠ zero voltage always.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "electric circuit"
+          ]
+        },
+        {
+          "id": "u3_d1_c06",
+          "name": "Role of a switch",
+          "simple_answer": "A switch makes or breaks the conducting link between the cell and the bulb (or other component).",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "switch"
+          },
+          "why": "Controls current without removing the cell.",
+          "example": "Wall switch completes room light circuit.",
+          "remember": "Switch ON = closed path; OFF = break.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c07",
+          "name": "Cell and battery in a torch",
+          "simple_answer": "Cells (or a battery in proper order) provide flow of charges — current — through the torch bulb.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "cell"
+          },
+          "why": "The source drives charge around the loop.",
+          "example": "Two AA cells in series in a torch.",
+          "remember": "Cell/battery pushes charges in circuit.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "cell"
+          ]
+        },
+        {
+          "id": "u3_d1_c08",
+          "name": "Circuit must be closed",
+          "simple_answer": "If the circuit is broken anywhere, current stops and the bulb does not glow.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "open_circuit"
+          },
+          "why": "Explains why loose connections fail.",
+          "example": "Unplugged wire → no current.",
+          "remember": "Open circuit → no current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c09",
+          "name": "Rate of flow of charge",
+          "simple_answer": "Electric current is the rate of flow of electric charges through a cross-section: amount of charge per unit time.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "I = Q / t",
+            "label": "Electric current"
+          },
+          "why": "Links measurable Q and t to current.",
+          "example": "More charge passing per second = larger current.",
+          "remember": "Current = charge flowing per second.",
+          "common_confusion": "I is not the same as total charge Q.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ampere"
+          ]
+        },
+        {
+          "id": "u3_d1_c10",
+          "name": "Water current analogy",
+          "simple_answer": "Just as flowing water is water current, flowing electric charge is electric current.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "analogy"
+          },
+          "why": "Analogy helps before formulas.",
+          "example": "River current vs wire current.",
+          "remember": "Moving charges ↔ moving water.",
+          "common_confusion": "Water and charge analogies break at atomic scale.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Charge, Ampere and Ammeter",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d2_c01",
+          "name": "Current formula I = Q/t",
+          "simple_answer": "If net charge Q flows across a cross-section in time t, current I = Q/t.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "I = Q / t",
+            "label": "Eq. 11.1"
+          },
+          "why": "Central numerical formula for current.",
+          "example": "0.5 A for 600 s → Q = 300 C (Example 11.1).",
+          "remember": "I = Q/t; rearrange for Q = It.",
+          "common_confusion": "Use t in seconds for SI.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c02",
+          "name": "Coulomb — unit of charge",
+          "simple_answer": "SI unit of charge is coulomb (C). One coulomb equals charge of about 6 × 10¹⁸ electrons.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "1 C ≈ 6×10¹⁸ electrons",
+            "label": "Coulomb"
+          },
+          "why": "Connects electron charge to macroscopic Q.",
+          "example": "Electron charge = 1.6 × 10⁻¹⁹ C each.",
+          "remember": "Charge unit: coulomb (C).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "coulomb"
+          ]
+        },
+        {
+          "id": "u3_d2_c03",
+          "name": "Ampere — unit of current",
+          "simple_answer": "One ampere (A) is flow of one coulomb of charge per second: 1 A = 1 C/s.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "1 A = 1 C / 1 s",
+            "label": "Ampere"
+          },
+          "why": "Named after André-Marie Ampère.",
+          "example": "2 A means 2 coulombs pass each second.",
+          "remember": "1 A = 1 C per second.",
+          "common_confusion": "Do not write A as coulomb alone.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ampere"
+          ]
+        },
+        {
+          "id": "u3_d2_c04",
+          "name": "Milliampere and microampere",
+          "simple_answer": "Small currents: 1 mA = 10⁻³ A; 1 µA = 10⁻⁶ A.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "mA, µA prefixes",
+            "label": "Small currents"
+          },
+          "why": "Electronic devices often use mA.",
+          "example": "LED might draw a few mA.",
+          "remember": "mA and µA for tiny currents.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c05",
+          "name": "Ammeter",
+          "simple_answer": "An ammeter measures electric current. It is always connected in series in the circuit.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "ammeter"
+          },
+          "why": "Must carry the current you measure.",
+          "example": "Ammeter in series with bulb in Fig 11.1.",
+          "remember": "Ammeter in series only.",
+          "common_confusion": "Never connect ammeter in parallel across battery.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ammeter"
+          ]
+        },
+        {
+          "id": "u3_d2_c06",
+          "name": "Schematic diagram Fig 11.1",
+          "simple_answer": "NCERT Fig 11.1: cell, bulb, ammeter and plug key in one closed loop.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "fig_11_1"
+          },
+          "why": "Standard diagram to copy in exams.",
+          "example": "Draw and label all four parts.",
+          "remember": "Cell → bulb → ammeter → key → back to cell.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c07",
+          "name": "Current direction in diagram",
+          "simple_answer": "In the diagram, conventional current flows from positive terminal of cell, through bulb and ammeter, back to negative terminal.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "direction"
+          },
+          "why": "Matches conventional current rule.",
+          "example": "Arrow from + of cell through external circuit.",
+          "remember": "+ to − through external path.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c08",
+          "name": "Example 11.1 idea",
+          "simple_answer": "I = 0.5 A for t = 10 min = 600 s → Q = It = 300 C flows through the bulb.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Q = I × t",
+            "label": "Charge calculation"
+          },
+          "why": "Typical NCERT numerical.",
+          "example": "Convert minutes to seconds first.",
+          "remember": "Q = It; watch time units.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c09",
+          "name": "Electrons vs convention revisited",
+          "simple_answer": "Electrons move from − to + inside external wire, but we draw current from + to −.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "electron_vs_conventional"
+          },
+          "why": "Both descriptions coexist in Class 10.",
+          "example": "Exam diagrams use conventional arrows.",
+          "remember": "Convention opposite to electron drift.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c10",
+          "name": "What an electric circuit means",
+          "simple_answer": "A circuit means a closed conducting path connecting source, switch, load and meters as needed.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "definition"
+          },
+          "why": "NCERT Q1 answer anchor.",
+          "example": "Torch wiring is a simple circuit.",
+          "remember": "Closed path + source + components.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Potential Difference and Volt",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d3_c01",
+          "name": "Potential difference drives current",
+          "simple_answer": "Charges flow in a wire only if there is electric potential difference (electric pressure) along the conductor.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "pd_drive"
+          },
+          "why": "Like water flowing due to height difference.",
+          "example": "Battery creates pressure difference for electrons.",
+          "remember": "No PD → no sustained current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "potential difference"
+          ]
+        },
+        {
+          "id": "u3_d3_c02",
+          "name": "Water pressure analogy",
+          "simple_answer": "Water does not flow in a horizontal tube unless one end is at higher pressure — same idea for charge.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "water_analogy"
+          },
+          "why": "Explains need for a source.",
+          "example": "Tank at height pushes water through pipe.",
+          "remember": "PD is electrical 'pressure difference'.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c03",
+          "name": "Cell maintains PD",
+          "simple_answer": "Chemical action in a cell generates potential difference across terminals even when no current is drawn.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "cell"
+          },
+          "why": "Battery stores chemical energy.",
+          "example": "Multimeter reads ~1.5 V on new dry cell.",
+          "remember": "Cell creates PD across terminals.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c04",
+          "name": "Potential difference definition",
+          "simple_answer": "PD between two points = work done per unit charge moved between them: V = W/Q.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "V = W / Q",
+            "label": "Eq. 11.2"
+          },
+          "why": "Links energy and charge.",
+          "example": "Moving 2 C with 12 J work → V = 6 V.",
+          "remember": "V = W/Q.",
+          "common_confusion": "W is work in joules, Q in coulombs.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "volt"
+          ]
+        },
+        {
+          "id": "u3_d3_c05",
+          "name": "Volt — unit of PD",
+          "simple_answer": "One volt: 1 joule of work per coulomb — 1 V = 1 J/C.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "1 V = 1 J / 1 C",
+            "label": "Volt"
+          },
+          "why": "Named after Alessandro Volta.",
+          "example": "1 V between points means 1 J/C work.",
+          "remember": "1 V = 1 J per coulomb.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "volt"
+          ]
+        },
+        {
+          "id": "u3_d3_c06",
+          "name": "Voltmeter",
+          "simple_answer": "Potential difference is measured with a voltmeter connected in parallel across the two points.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "voltmeter"
+          },
+          "why": "Parallel so it doesn't redirect all current.",
+          "example": "Voltmeter across bulb measures bulb PD.",
+          "remember": "Voltmeter in parallel.",
+          "common_confusion": "Do not put voltmeter in series.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "voltmeter"
+          ]
+        },
+        {
+          "id": "u3_d3_c07",
+          "name": "Work and charge Example 11.2",
+          "simple_answer": "Q = 2 C across 12 V → W = VQ = 24 J of work done on the charge.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "W = VQ",
+            "label": "Work on charge"
+          },
+          "why": "Reverse of V = W/Q.",
+          "example": "6 V battery moving 1 C does 6 J work.",
+          "remember": "W = V × Q.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c08",
+          "name": "Battery expends energy",
+          "simple_answer": "To maintain current, the cell keeps converting stored chemical energy — expending it in the circuit.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "energy"
+          },
+          "why": "Source energy becomes heat/light/motion in load.",
+          "example": "Battery runs down after long use.",
+          "remember": "Cell supplies energy continuously while current flows.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c09",
+          "name": "Saying '1 V between points'",
+          "simple_answer": "1 V between two points means 1 J of work is done to move 1 C from one point to the other.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "1 V meaning",
+            "label": "Definition"
+          },
+          "why": "NCERT conceptual question.",
+          "example": "Every coulomb gains 1 J energy across 1 V.",
+          "remember": "1 V = 1 J per coulomb moved.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c10",
+          "name": "Device maintaining PD",
+          "simple_answer": "A cell or battery maintains potential difference across a conductor in a circuit.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "cell"
+          },
+          "why": "NCERT short answer.",
+          "example": "Generator or cell in mains/torch.",
+          "remember": "Battery maintains PD.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Circuit Diagrams and Symbols",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d4_c01",
+          "name": "Circuit diagram purpose",
+          "simple_answer": "Schematic diagrams use standard symbols instead of realistic pictures — easier to draw and read.",
+          "visual": {
+            "type": "circuit_symbols",
+            "highlight": "overview"
+          },
+          "why": "Universal language for circuits.",
+          "example": "Exam answers use symbols not sketches of bulbs.",
+          "remember": "Schematic = symbol diagram.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "circuit diagram"
+          ]
+        },
+        {
+          "id": "u3_d4_c02",
+          "name": "Electric cell symbol",
+          "simple_answer": "One cell: long line (+) and short thick line (−).",
+          "visual": {
+            "type": "circuit_symbols",
+            "highlight": "cell"
+          },
+          "why": "Table 11.1 symbol 1.",
+          "example": "Single 1.5 V cell in diagrams.",
+          "remember": "Long line = +, short thick = −.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c03",
+          "name": "Battery symbol",
+          "simple_answer": "Battery = combination of cells: multiple cell symbols in series.",
+          "visual": {
+            "type": "circuit_symbols",
+            "highlight": "battery"
+          },
+          "why": "Higher voltage than single cell.",
+          "example": "Four 1.5 V cells → 6 V battery.",
+          "remember": "Battery = cells in series symbol.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c04",
+          "name": "Open and closed switch",
+          "simple_answer": "Open key: gap in line. Closed key: filled dot or bridge showing connection.",
+          "visual": {
+            "type": "circuit_symbols",
+            "highlight": "switch"
+          },
+          "why": "Switch state changes circuit continuity.",
+          "example": "Open plug key stops Ohm's law activity.",
+          "remember": "Open = broken; closed = connected.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c05",
+          "name": "Wire, joint, crossing",
+          "simple_answer": "Straight lines for wires; dot at junction; crossing without dot means no connection.",
+          "visual": {
+            "type": "circuit_symbols",
+            "highlight": "wires"
+          },
+          "why": "Avoid fake connections in diagrams.",
+          "example": "Crossing lines without dot don't connect.",
+          "remember": "Dot = joined; crossing alone = not joined.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c06",
+          "name": "Bulb and resistor symbols",
+          "simple_answer": "Bulb: circle with cross or filament symbol. Resistor: zig-zag or rectangle labelled R.",
+          "visual": {
+            "type": "circuit_symbols",
+            "highlight": "bulb_resistor"
+          },
+          "why": "Load and fixed resistance symbols.",
+          "example": "R marks nichrome wire in Ohm's law exp.",
+          "remember": "Bulb = load; rectangle = resistor.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c07",
+          "name": "Rheostat symbol",
+          "simple_answer": "Variable resistance / rheostat: resistor arrow through rectangle.",
+          "visual": {
+            "type": "circuit_symbols",
+            "highlight": "rheostat"
+          },
+          "why": "Used to change current without changing voltage source.",
+          "example": "Dimmer and lab rheostats.",
+          "remember": "Rheostat = variable R symbol.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "rheostat"
+          ]
+        },
+        {
+          "id": "u3_d4_c08",
+          "name": "Ammeter and voltmeter symbols",
+          "simple_answer": "Ammeter: A in circle, series. Voltmeter: V in circle, parallel.",
+          "visual": {
+            "type": "circuit_symbols",
+            "highlight": "meters"
+          },
+          "why": "Placement matters as much as symbol.",
+          "example": "Redraw Q2 circuit with meters correctly.",
+          "remember": "A in series; V in parallel.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c09",
+          "name": "Reading a full schematic",
+          "simple_answer": "Trace closed path: source → switch → loads → back to source; add meters correctly.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "read_schematic"
+          },
+          "why": "Skill for exam circuit questions.",
+          "example": "Follow arrow from + terminal.",
+          "remember": "Trace loop; check switch and meters.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c10",
+          "name": "Drawing exam circuits",
+          "simple_answer": "Use ruler, label components, show switch state and meter placement clearly.",
+          "visual": {
+            "type": "circuit_symbols",
+            "mode": "exam"
+          },
+          "why": "Series resistors Q1 style diagrams.",
+          "example": "3 cells of 2 V, resistors 5 Ω, 8 Ω, 12 Ω in series.",
+          "remember": "Neat symbols + labels + correct series/parallel.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Ohm's Law",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d5_c01",
+          "name": "Ohm's law statement",
+          "simple_answer": "Potential difference V across a metallic conductor is directly proportional to current I through it, at constant temperature.",
+          "visual": {
+            "type": "ohms_law_graph",
+            "highlight": "statement"
+          },
+          "why": "Core law of Ch 11.",
+          "example": "Double V → double I for ohmic conductor.",
+          "remember": "V ∝ I at constant temperature.",
+          "common_confusion": "Ohm's law fails if temperature changes much.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "Ohm's law"
+          ]
+        },
+        {
+          "id": "u3_d5_c02",
+          "name": "V = IR form",
+          "simple_answer": "From Ohm's law: V/I = constant = R, so V = IR.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "V = I R",
+            "label": "Ohm's law"
+          },
+          "why": "Most used form in numericals.",
+          "example": "12 V across 4 Ω → I = 3 A.",
+          "remember": "V = IR.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c03",
+          "name": "Resistance R",
+          "simple_answer": "R = V/I is resistance — property of conductor to resist charge flow. SI unit: ohm (Ω).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "R = V / I",
+            "label": "Resistance"
+          },
+          "why": "Higher R → less current for same V.",
+          "example": "1 V and 1 A → R = 1 Ω.",
+          "remember": "R = V/I; unit ohm Ω.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "resistance",
+            "ohm"
+          ]
+        },
+        {
+          "id": "u3_d5_c04",
+          "name": "One ohm defined",
+          "simple_answer": "1 Ω: when V = 1 V produces I = 1 A through conductor.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "1 Ω = 1 V / 1 A",
+            "label": "Definition of ohm"
+          },
+          "why": "Links volt and ampere.",
+          "example": "Household small resistor values in ohms to kilohms.",
+          "remember": "1 Ω = 1 volt per ampere.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c05",
+          "name": "V–I graph",
+          "simple_answer": "Plot of V vs I for ohmic wire is straight line through origin — slope gives R.",
+          "visual": {
+            "type": "ohms_law_graph",
+            "highlight": "graph"
+          },
+          "why": "Fig 11.3 straight line = Ohm's law verified.",
+          "example": "V/I same for each row in Activity 11.1 table.",
+          "remember": "Linear V–I graph → constant R.",
+          "common_confusion": "Line not through origin → check zero error.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c06",
+          "name": "Activity 11.1 pattern",
+          "simple_answer": "Increase cells → both V and I increase; ratio V/I stays approximately constant.",
+          "visual": {
+            "type": "ohms_law_graph",
+            "mode": "activity"
+          },
+          "why": "Lab evidence for constant R.",
+          "example": "Nichrome wire XY in circuit Fig 11.2.",
+          "remember": "V/I constant for same wire at same temperature.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c07",
+          "name": "I = V/R",
+          "simple_answer": "Current I = V/R — current inversely proportional to resistance for fixed voltage.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "I = V / R",
+            "label": "Current form"
+          },
+          "why": "Thicker/shorter wire → lower R → higher I.",
+          "example": "Same 6 V: 20 Ω lamp vs 4 Ω conductor different current.",
+          "remember": "Double R → half I (same V).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c08",
+          "name": "Good conductor vs resistor",
+          "simple_answer": "Same-size good conductor: low R; resistor: appreciable R; insulator: very high R.",
+          "visual": {
+            "type": "resistance_wire",
+            "mode": "compare"
+          },
+          "why": "Activity 11.2 different ammeter readings.",
+          "example": "Nichrome vs copper same size — different I.",
+          "remember": "Insulator >> resistor >> good conductor.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c09",
+          "name": "Why components differ in current",
+          "simple_answer": "Different components offer different resistance — electrons retarded differently.",
+          "visual": {
+            "type": "resistance_wire",
+            "highlight": "cause"
+          },
+          "why": "Microscopic explanation in NCERT.",
+          "example": "Torch bulb vs 10 W bulb same voltage different I.",
+          "remember": "More R → less current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c10",
+          "name": "Temperature condition",
+          "simple_answer": "Ohm's law holds provided temperature of conductor remains the same.",
+          "visual": {
+            "type": "ohms_law_graph",
+            "highlight": "temperature"
+          },
+          "why": "Filament heats up — R changes when glowing.",
+          "example": "Cold vs hot bulb filament resistance differs.",
+          "remember": "Constant temperature assumption for ideal Ohm's law.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Resistance and Resistivity",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d6_c01",
+          "name": "Rheostat / variable resistance",
+          "simple_answer": "Device to regulate current without changing voltage source — changes R in circuit.",
+          "visual": {
+            "type": "circuit_symbols",
+            "highlight": "rheostat"
+          },
+          "why": "Used in labs and dimmers.",
+          "example": "Slide rheostat in Ohm's law experiment.",
+          "remember": "Variable R controls current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "rheostat"
+          ]
+        },
+        {
+          "id": "u3_d6_c02",
+          "name": "Length and resistance",
+          "simple_answer": "For uniform wire, R ∝ l — double length doubles resistance (same material, same area).",
+          "visual": {
+            "type": "resistance_wire",
+            "highlight": "length"
+          },
+          "why": "Activity 11.3: ammeter halves when length doubles.",
+          "example": "2l nichrome → half the current.",
+          "remember": "Longer wire → more R.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c03",
+          "name": "Area and resistance",
+          "simple_answer": "R ∝ 1/A — thicker wire (larger cross-section) has lower resistance.",
+          "visual": {
+            "type": "resistance_wire",
+            "highlight": "area"
+          },
+          "why": "Thick wires used for high current.",
+          "example": "Thicker nichrome → higher ammeter reading.",
+          "remember": "Thicker wire → less R.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c04",
+          "name": "Material affects resistance",
+          "simple_answer": "Same length and area, different materials give different R — depends on resistivity ρ.",
+          "visual": {
+            "type": "resistance_wire",
+            "highlight": "material"
+          },
+          "why": "Copper vs nichrome comparison in activity.",
+          "example": "Copper wire vs nichrome same dimensions.",
+          "remember": "Nature of material matters.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c05",
+          "name": "Combined proportionality",
+          "simple_answer": "R ∝ l and R ∝ 1/A combined: R = ρ l / A.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "R = ρ l / A",
+            "label": "Eq. 11.10"
+          },
+          "why": "Central formula for wire resistance.",
+          "example": "Double length and halve area → R × 4.",
+          "remember": "R = ρl/A.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "resistivity"
+          ]
+        },
+        {
+          "id": "u3_d6_c06",
+          "name": "Resistivity ρ",
+          "simple_answer": "ρ (rho) is constant for material; SI unit Ω m. Characteristic property.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "ρ = R A / l",
+            "label": "Resistivity"
+          },
+          "why": "Depends on material not shape.",
+          "example": "Silver low ρ; rubber very high ρ.",
+          "remember": "ρ in Ω m; material property.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "resistivity"
+          ]
+        },
+        {
+          "id": "u3_d6_c07",
+          "name": "Conductors vs insulators",
+          "simple_answer": "Metals/alloys: ρ ~ 10⁻⁸–10⁻⁶ Ω m (conductors). Rubber/glass: ~10¹²–10¹⁷ Ω m (insulators).",
+          "visual": {
+            "type": "resistance_wire",
+            "mode": "table"
+          },
+          "why": "Table 11.2 orders of magnitude.",
+          "example": "Copper for wires; rubber for insulation.",
+          "remember": "Low ρ = conductor; high ρ = insulator.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c08",
+          "name": "Alloys vs pure metals",
+          "simple_answer": "Alloys usually higher ρ than constituent metals; resist oxidation at high temperature.",
+          "visual": {
+            "type": "heating_element",
+            "highlight": "alloy"
+          },
+          "why": "Used in heating elements and nichrome.",
+          "example": "Nichrome in heater; tungsten in bulb.",
+          "remember": "Alloys for heating devices.",
+          "common_confusion": "Alloy ρ higher but stable at heat.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c09",
+          "name": "Example 11.5 scaling",
+          "simple_answer": "Same material: l halved and A doubled → R becomes 1/4 of original (4 Ω → 1 Ω).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "R scales with l/A",
+            "label": "Example 11.5"
+          },
+          "why": "Common exam ratio question.",
+          "example": "Track l and A factors separately.",
+          "remember": "R × (l ratio)/(A ratio).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c10",
+          "name": "Thick vs thin wire question",
+          "simple_answer": "Thick wire of same material conducts more easily — lower R, more current from same source.",
+          "visual": {
+            "type": "resistance_wire",
+            "mode": "thick_thin"
+          },
+          "why": "NCERT Q2 style.",
+          "example": "Power cables are thick copper.",
+          "remember": "Thick = low R = easier current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Series and Parallel Resistors",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d7_c01",
+          "name": "Resistors in series — layout",
+          "simple_answer": "Resistors connected end to end between same path — same current through each.",
+          "visual": {
+            "type": "resistors_series",
+            "highlight": "layout"
+          },
+          "why": "Fig 11.6 three resistors in one loop.",
+          "example": "Christmas old lights sometimes series.",
+          "remember": "Series = one after another.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "series"
+          ]
+        },
+        {
+          "id": "u3_d7_c02",
+          "name": "Same current in series",
+          "simple_answer": "In series combination, current is same through every resistor and every part of circuit.",
+          "visual": {
+            "type": "resistors_series",
+            "highlight": "current"
+          },
+          "why": "Activity 11.4 ammeter same anywhere.",
+          "example": "Ammeter before or after R₂ same reading.",
+          "remember": "I same everywhere in series.",
+          "common_confusion": "Current is NOT shared in series.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c03",
+          "name": "PD adds in series",
+          "simple_answer": "Total PD across series combination equals sum of PDs across individual resistors: V = V₁ + V₂ + V₃.",
+          "visual": {
+            "type": "resistors_series",
+            "highlight": "voltage"
+          },
+          "why": "Activity 11.5 voltmeter readings.",
+          "example": "6 V battery split across lamp and resistor.",
+          "remember": "V_total = V₁ + V₂ + V₃.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c04",
+          "name": "Equivalent series resistance",
+          "simple_answer": "Rₛ = R₁ + R₂ + R₃ — series equivalent greater than any single resistor.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "R_s = R1 + R2 + R3",
+            "label": "Series resistance"
+          },
+          "why": "Eq. 11.14.",
+          "example": "20 Ω lamp + 4 Ω resistor → 24 Ω total.",
+          "remember": "Series R adds directly.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c05",
+          "name": "Example 11.7 outline",
+          "simple_answer": "Lamp 20 Ω + conductor 4 Ω on 6 V: R=24 Ω, I=0.25 A, V₁=5 V, V₂=1 V.",
+          "visual": {
+            "type": "resistors_series",
+            "mode": "example"
+          },
+          "why": "Full NCERT worked example.",
+          "example": "Total R first, then I = V/R, then each V=IR.",
+          "remember": "Series numerical: add R, find I, split V.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c06",
+          "name": "Resistors in parallel — layout",
+          "simple_answer": "Resistors connected between same two points X and Y — same PD across each branch.",
+          "visual": {
+            "type": "resistors_parallel",
+            "highlight": "layout"
+          },
+          "why": "Fig 11.7 household branches.",
+          "example": "Home lights in parallel across mains.",
+          "remember": "Parallel = same two nodes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "parallel"
+          ]
+        },
+        {
+          "id": "u3_d7_c07",
+          "name": "Current splits in parallel",
+          "simple_answer": "Total current equals sum of branch currents: I = I₁ + I₂ + I₃.",
+          "visual": {
+            "type": "resistors_parallel",
+            "highlight": "current"
+          },
+          "why": "Activity 11.6.",
+          "example": "More branches → more total current.",
+          "remember": "I splits among branches.",
+          "common_confusion": "Current is NOT same in parallel branches.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c08",
+          "name": "Same PD in parallel",
+          "simple_answer": "Potential difference across each parallel resistor equals PD across the combination.",
+          "visual": {
+            "type": "resistors_parallel",
+            "highlight": "voltage"
+          },
+          "why": "Each appliance gets full mains PD (ideal).",
+          "example": "12 V across each of R₁, R₂, R₃ in Ex 11.8.",
+          "remember": "Same V on each parallel branch.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c09",
+          "name": "Parallel equivalent formula",
+          "simple_answer": "1/Rₚ = 1/R₁ + 1/R₂ + 1/R₃ — equivalent R less than smallest individual.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "1/Rp = 1/R1 + 1/R2 + 1/R3",
+            "label": "Parallel resistance"
+          },
+          "why": "Eq. 11.18.",
+          "example": "Two 10 Ω parallel → 5 Ω.",
+          "remember": "Reciprocals add for parallel.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c10",
+          "name": "Example 11.8 idea",
+          "simple_answer": "5 Ω, 10 Ω, 30 Ω parallel on 12 V: each branch I = V/R; total I = sum; Rₚ = 3 Ω.",
+          "visual": {
+            "type": "resistors_parallel",
+            "mode": "example"
+          },
+          "why": "Standard three-resistor parallel problem.",
+          "example": "I₁=2.4 A, I₂=1.2 A, I₃=0.4 A, total 4 A.",
+          "remember": "Each V/R then add I; then find Rₚ.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Heating Effect and Power Intro",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d8_c01",
+          "name": "Series R greater than parts",
+          "simple_answer": "Series equivalent resistance is greater than any individual resistance.",
+          "visual": {
+            "type": "resistors_series",
+            "mode": "compare"
+          },
+          "why": "More resistors in series → harder for current.",
+          "example": "Adding 4 Ω to lamp increases total R.",
+          "remember": "R_s > each R_i.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c02",
+          "name": "Parallel R less than smallest",
+          "simple_answer": "Parallel equivalent is less than the smallest individual resistance.",
+          "visual": {
+            "type": "resistors_parallel",
+            "mode": "compare"
+          },
+          "why": "More parallel paths → easier overall flow.",
+          "example": "Two equal resistors parallel → half each value.",
+          "remember": "R_p < smallest R_i.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c03",
+          "name": "Series impractical at home",
+          "simple_answer": "Series circuit: same current everywhere — one failure breaks all; not used for household appliances.",
+          "visual": {
+            "type": "resistors_series",
+            "mode": "domestic"
+          },
+          "why": "NCERT explains why homes use parallel.",
+          "example": "Old series fairy lights all off if one bulb fails.",
+          "remember": "Domestic circuits mainly parallel.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c04",
+          "name": "Parallel domestic advantage",
+          "simple_answer": "Each appliance gets full PD; independent switching; one branch off doesn't stop others.",
+          "visual": {
+            "type": "resistors_parallel",
+            "mode": "domestic"
+          },
+          "why": "Why fridge and TV work independently.",
+          "example": "Turn off kitchen light — TV still on.",
+          "remember": "Parallel for household wiring.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c05",
+          "name": "Mixed circuits strategy",
+          "simple_answer": "Replace parallel groups by equivalent R, then add series parts (Example 11.9 method).",
+          "visual": {
+            "type": "resistors_parallel",
+            "mode": "mixed"
+          },
+          "why": "Step-by-step reduction.",
+          "example": "R′ for parallel pair, R″ for triple, then add.",
+          "remember": "Simplify parallel blocks first.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c06",
+          "name": "Heating effect intro",
+          "simple_answer": "When current flows through resistor, source energy dissipated as heat — heating effect of current.",
+          "visual": {
+            "type": "heating_element",
+            "highlight": "overview"
+          },
+          "why": "Fan warm, heater hot — same physics.",
+          "example": "Electric iron gets hot on current.",
+          "remember": "Current through R produces heat.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "heating effect"
+          ]
+        },
+        {
+          "id": "u3_d8_c07",
+          "name": "Power P = VI",
+          "simple_answer": "Rate of energy: P = VI — electric power in watts.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "P = V I",
+            "label": "Electric power"
+          },
+          "why": "Eq. 11.19/11.22.",
+          "example": "110 W bulb at 220 V, 0.5 A.",
+          "remember": "P = VI.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "electric power"
+          ]
+        },
+        {
+          "id": "u3_d8_c08",
+          "name": "Heat H = VIt",
+          "simple_answer": "Energy (heat) in time t: H = VIt.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H = V I t",
+            "label": "Heat energy"
+          },
+          "why": "Eq. 11.20.",
+          "example": "Energy supplier = VI × time.",
+          "remember": "H = VIt joules.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c09",
+          "name": "Joule's law H = I²Rt",
+          "simple_answer": "Heat produced H = I²Rt — directly ∝ I², R, and t.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H = I² R t",
+            "label": "Joule's law"
+          },
+          "why": "Eq. 11.21 — most used for heat.",
+          "example": "Double current → 4× heat (same R,t).",
+          "remember": "H ∝ I², R, t.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "Joule's law"
+          ]
+        },
+        {
+          "id": "u3_d8_c10",
+          "name": "P = I²R and P = V²/R",
+          "simple_answer": "Equivalent power forms: P = I²R = V²/R.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "P = I²R = V²/R",
+            "label": "Power forms"
+          },
+          "why": "Pick form matching known quantities.",
+          "example": "Known V and R → P = V²/R.",
+          "remember": "Three power formulas equivalent.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "Electric Power and Applications",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d9_c01",
+          "name": "Watt unit",
+          "simple_answer": "1 watt = 1 joule per second = power when 1 A flows at 1 V.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "1 W = 1 V × 1 A",
+            "label": "Watt"
+          },
+          "why": "SI power unit.",
+          "example": "60 W bulb vs 100 W brighter.",
+          "remember": "1 W = 1 VA.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "watt"
+          ]
+        },
+        {
+          "id": "u3_d9_c02",
+          "name": "Kilowatt and kWh",
+          "simple_answer": "1 kW = 1000 W. Commercial energy unit: kilowatt-hour (kWh) — 'unit' on electricity bill.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "1 kWh = 3.6×10⁶ J",
+            "label": "Energy billing"
+          },
+          "why": "Energy = power × time.",
+          "example": "400 W fridge 8 h/day × 30 days = 96 kWh.",
+          "remember": "kWh = kW × hours.",
+          "common_confusion": "kWh is energy not power.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c03",
+          "name": "We pay for energy not electrons",
+          "simple_answer": "Electricity bill charges for energy to move electrons through devices — not for consuming electrons.",
+          "visual": {
+            "type": "electric_power",
+            "mode": "billing"
+          },
+          "why": "NCERT 'More to Know' box.",
+          "example": "Electrons circulate; energy is converted at load.",
+          "remember": "Billed for energy (kWh).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c04",
+          "name": "Electric iron power Example",
+          "simple_answer": "840 W max and 360 W min at 220 V → different I and R settings.",
+          "visual": {
+            "type": "electric_power",
+            "mode": "example_11_10"
+          },
+          "why": "Example 11.10.",
+          "example": "Higher power → higher current.",
+          "remember": "P = VI gives I; R = V/I.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c05",
+          "name": "Heating element glows",
+          "simple_answer": "Heating element high R, high heat; connecting cord low R — cord doesn't glow.",
+          "visual": {
+            "type": "heating_element",
+            "highlight": "cord_vs_element"
+          },
+          "why": "NCERT Q1 heating section.",
+          "example": "Nichrome coil hot; copper wire cool.",
+          "remember": "Heat ∝ R; element designed for heat.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c06",
+          "name": "Bulb filament",
+          "simple_answer": "Tungsten filament high melting point (3380°C), thermally isolated, in inactive gas.",
+          "visual": {
+            "type": "heating_element",
+            "highlight": "bulb"
+          },
+          "why": "Most power becomes heat; small part light.",
+          "example": "Filament white-hot at operating current.",
+          "remember": "Tungsten + gas fill for bulb life.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c07",
+          "name": "Fuse protection",
+          "simple_answer": "Fuse wire in series melts when current too high — breaks circuit, protects appliances.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "fuse"
+          },
+          "why": "Rated 1 A, 5 A, etc. for domestic use.",
+          "example": "1 kW iron at 220 V needs ~5 A fuse.",
+          "remember": "Fuse = series safety device.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "fuse"
+          ]
+        },
+        {
+          "id": "u3_d9_c08",
+          "name": "Choosing fuse rating",
+          "simple_answer": "Fuse slightly above normal operating current — e.g. 5 A fuse for ~4.5 A appliance.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "fuse_rating"
+          },
+          "why": "Example 11.7.1 calculation.",
+          "example": "I = P/V for rated power.",
+          "remember": "Fuse rating > normal I but < dangerous I.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c09",
+          "name": "Heating applications",
+          "simple_answer": "Electric iron, toaster, oven, kettle, heater use Joule heating deliberately.",
+          "visual": {
+            "type": "heating_element",
+            "mode": "applications"
+          },
+          "why": "Useful conversion of electrical to thermal energy.",
+          "example": "Toaster coils red hot.",
+          "remember": "Joule heat for cooking and warmth.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c10",
+          "name": "Undesirable heating",
+          "simple_answer": "Unwanted heat in motors/wires wastes energy and can damage components.",
+          "visual": {
+            "type": "heating_element",
+            "mode": "undesirable"
+          },
+          "why": "Design ventilation for gadgets.",
+          "example": "Laptop fan removes waste heat.",
+          "remember": "Not all heating is useful.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "Numericals — Ohm's Law and R",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d10_c01",
+          "name": "Ohm's law numerical pattern",
+          "simple_answer": "Given any two of V, I, R find the third using V=IR or R=V/I.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "V = I R",
+            "label": "Numerical triad"
+          },
+          "why": "Universal solve strategy.",
+          "example": "220 V, 1200 Ω → I = 0.18 A.",
+          "remember": "Identify known pair → use V=IR.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c02",
+          "name": "Example 11.3 bulbs vs heater",
+          "simple_answer": "Same 220 V: 1200 Ω bulb draws 0.18 A; 100 Ω heater draws 2.2 A.",
+          "visual": {
+            "type": "electric_power",
+            "mode": "compare_current"
+          },
+          "why": "Lower R → higher I at same V.",
+          "example": "Heater warms faster — more current.",
+          "remember": "Same V: small R → large I.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c03",
+          "name": "Example 11.4 doubling V",
+          "simple_answer": "If R fixed, doubling V doubles I (60 V,4 A → 120 V,8 A when R=15 Ω).",
+          "visual": {
+            "type": "ohms_law_graph",
+            "mode": "double_v"
+          },
+          "why": "Linear Ohm's law scaling.",
+          "example": "Heater on higher setting if R unchanged.",
+          "remember": "V ∝ I when R constant.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c04",
+          "name": "Resistivity numerical",
+          "simple_answer": "ρ = RA/l; use consistent metres for l and A (A = πd²/4).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "ρ = R A / l",
+            "label": "Example 11.5"
+          },
+          "why": "Identify material from Table 11.2.",
+          "example": "R=26 Ω, l=1 m, d=0.3 mm → manganese.",
+          "remember": "Convert mm² to m² for A.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c05",
+          "name": "Half PD half current",
+          "simple_answer": "If R constant and V halved, I halves (NCERT Q3 resistors section).",
+          "visual": {
+            "type": "ohms_law_graph",
+            "mode": "half_v"
+          },
+          "why": "Direct Ohm proportion.",
+          "example": "Dimmer reduces effective voltage.",
+          "remember": "V halved → I halved if R fixed.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c06",
+          "name": "Series voltmeter reading Q",
+          "simple_answer": "V across 12 Ω in series with 5 Ω and 8 Ω on 6 V three-cell: find I then V=IR.",
+          "visual": {
+            "type": "resistors_series",
+            "mode": "exam"
+          },
+          "why": "Redraw Q2 style.",
+          "example": "Total R=25 Ω, I=6/25 A, V₁₂=IR.",
+          "remember": "Series: total R, then split V.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c07",
+          "name": "Parallel branch currents",
+          "simple_answer": "Each parallel I = V/R_branch; total I sum.",
+          "visual": {
+            "type": "resistors_parallel",
+            "mode": "exam"
+          },
+          "why": "Example 11.8 template.",
+          "example": "12 V on 5,10,30 Ω parallel.",
+          "remember": "Same V each branch.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c08",
+          "name": "Heat from charge",
+          "simple_answer": "Q through PD: H = VQ; 96000 C through 50 V in 1 h gives energy.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H = V Q",
+            "label": "Charge heat"
+          },
+          "why": "NCERT heating Q2.",
+          "example": "Energy = charge × voltage.",
+          "remember": "H = VQ when all charge moved.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c09",
+          "name": "Heat in 30 s",
+          "simple_answer": "H = I²Rt: 5 A through 20 Ω for 30 s → H = 15000 J.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H = I² R t",
+            "label": "Example style"
+          },
+          "why": "Substitute SI units.",
+          "example": "Iron Example Q3.",
+          "remember": "t in seconds.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c10",
+          "name": "Motor power Q",
+          "simple_answer": "P = VI; energy = P × t. 5 A at 220 V → P = 1100 W.",
+          "visual": {
+            "type": "electric_power",
+            "mode": "motor"
+          },
+          "why": "End-of-chapter Q2.",
+          "example": "2 h energy = 1100 W × 7200 s or kWh method.",
+          "remember": "P then E = Pt.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "Materials and Activities Review",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d11_c01",
+          "name": "Tungsten for filament",
+          "simple_answer": "High melting point prevents melt at glowing temperature.",
+          "visual": {
+            "type": "heating_element",
+            "highlight": "tungsten"
+          },
+          "why": "Material choice for bulbs.",
+          "example": "3380°C melting point.",
+          "remember": "Tungsten filament in bulbs.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c02",
+          "name": "Nichrome in heaters",
+          "simple_answer": "Nichrome alloy high ρ, resists oxidation at red heat.",
+          "visual": {
+            "type": "heating_element",
+            "highlight": "nichrome"
+          },
+          "why": "Heating coils material.",
+          "example": "Electric iron nichrome wire.",
+          "remember": "Nichrome for heating elements.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c03",
+          "name": "Copper for transmission",
+          "simple_answer": "Low ρ copper/aluminium for power lines — minimal energy loss as heat.",
+          "visual": {
+            "type": "resistance_wire",
+            "highlight": "copper"
+          },
+          "why": "Table 11.2 conductors.",
+          "example": "Thick copper wires from pole to home.",
+          "remember": "Copper: low ρ conductor.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c04",
+          "name": "Insulator role",
+          "simple_answer": "Rubber/plastic insulation prevents accidental contact — very high ρ.",
+          "visual": {
+            "type": "resistance_wire",
+            "mode": "insulator"
+          },
+          "why": "Safety around conductors.",
+          "example": "Cord plastic cover.",
+          "remember": "Insulators block current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c05",
+          "name": "Temperature and ρ",
+          "simple_answer": "Both R and ρ vary with temperature — mention when filament heats.",
+          "visual": {
+            "type": "resistance_wire",
+            "mode": "temperature"
+          },
+          "why": "Cold resistance lower than hot.",
+          "example": "Bulb inrush current when switched on.",
+          "remember": "R changes if temperature changes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c06",
+          "name": "Activity 11.2 summary",
+          "simple_answer": "Same voltage, different components → different I because R differs.",
+          "visual": {
+            "type": "resistance_wire",
+            "mode": "activity"
+          },
+          "why": "Qualitative before formula.",
+          "example": "Swap nichrome, torch bulb, 10 W bulb.",
+          "remember": "Component R sets current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c07",
+          "name": "Activity 11.3 summary",
+          "simple_answer": "Vary l, A, material separately — observe ammeter change.",
+          "visual": {
+            "type": "resistance_wire",
+            "mode": "activity_11_3"
+          },
+          "why": "Empirical R factors.",
+          "example": "Four wire configurations Fig 11.5.",
+          "remember": "l up → I down; A up → I up.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c08",
+          "name": "Series same I proof idea",
+          "simple_answer": "Charge conservation: same current through series elements each second.",
+          "visual": {
+            "type": "resistors_series",
+            "mode": "why"
+          },
+          "why": "Conceptual why for Activity 11.4.",
+          "example": "One path → one flow rate.",
+          "remember": "Single loop → same I.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c09",
+          "name": "Parallel same V idea",
+          "simple_answer": "Wires connect same two points → same potential difference.",
+          "visual": {
+            "type": "resistors_parallel",
+            "mode": "why"
+          },
+          "why": "Conceptual for Activity 11.6.",
+          "example": "Both ends of each R at X and Y.",
+          "remember": "Parallel branches same V.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c10",
+          "name": "Equivalent resistor concept",
+          "simple_answer": "Single R that replaces network giving same V and I from source.",
+          "visual": {
+            "type": "resistors_series",
+            "mode": "equivalent"
+          },
+          "why": "Used in all combination problems.",
+          "example": "24 Ω replaces lamp+resistor series.",
+          "remember": "Equivalent R simplifies circuit.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Exam Diagrams and Combinations",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d12_c01",
+          "name": "Draw series circuit exam",
+          "simple_answer": "Battery + key + ammeter + resistors in one loop; voltmeter across one resistor.",
+          "visual": {
+            "type": "circuit_symbols",
+            "mode": "exam_series"
+          },
+          "why": "NCERT Q1 series.",
+          "example": "Label each R and cell emf.",
+          "remember": "Series exam diagram checklist.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c02",
+          "name": "Ammeter placement",
+          "simple_answer": "Always series — carries full circuit current.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "ammeter"
+          },
+          "why": "Wrong placement gives wrong/fault reading.",
+          "example": "Never parallel ammeter with load.",
+          "remember": "Ammeter in series only.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c03",
+          "name": "Voltmeter placement",
+          "simple_answer": "Always parallel across component whose PD you need.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "voltmeter"
+          },
+          "why": "High resistance avoids draining circuit.",
+          "example": "Across 12 Ω resistor in Q2.",
+          "remember": "Voltmeter parallel only.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c04",
+          "name": "Three resistors 6 Ω each",
+          "simple_answer": "Can make 9 Ω series, 2 Ω parallel, or mixed — NCERT exercise Q11.",
+          "visual": {
+            "type": "resistors_parallel",
+            "mode": "six_ohm_three"
+          },
+          "why": "Creative combination question.",
+          "example": "Series: 18 Ω; parallel: 2 Ω.",
+          "remember": "Same R different connections → different R_eq.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c05",
+          "name": "Series PD division",
+          "simple_answer": "V_i = I R_i; larger R gets larger share of voltage in series.",
+          "visual": {
+            "type": "resistors_series",
+            "highlight": "division"
+          },
+          "why": "Lamp 20 Ω gets more V than 4 Ω on same I.",
+          "example": "V split proportional to R.",
+          "remember": "Big R → big V drop in series.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c06",
+          "name": "Parallel current division",
+          "simple_answer": "I_i = V/R_i; smaller R branch takes more current.",
+          "visual": {
+            "type": "resistors_parallel",
+            "highlight": "division"
+          },
+          "why": "5 Ω branch takes more I than 30 Ω at same V.",
+          "example": "Low R path draws more I.",
+          "remember": "Small R → large branch I.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c07",
+          "name": "Two resistors parallel shortcut",
+          "simple_answer": "R_eq = R₁R₂/(R₁+R₂) for two in parallel only.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "R_eq = R1 R2 / (R1+R2)",
+            "label": "Two parallel"
+          },
+          "why": "Faster than reciprocals.",
+          "example": "Two 10 Ω → 5 Ω.",
+          "remember": "Product over sum for two.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c08",
+          "name": "Energy unit conversion",
+          "simple_answer": "1 kWh = 3.6 × 10⁶ J — use for cost problems.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "1 kWh = 3.6×10⁶ J",
+            "label": "Billing"
+          },
+          "why": "Example 11.13 refrigerator cost.",
+          "example": "96 kWh × Rs 3 = Rs 288.",
+          "remember": "Convert W and hours to kWh.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c09",
+          "name": "Example 11.12 bulb power",
+          "simple_answer": "P = VI = 220 × 0.5 = 110 W.",
+          "visual": {
+            "type": "electric_power",
+            "mode": "bulb"
+          },
+          "why": "Simple power calc.",
+          "example": "Power in joules per second.",
+          "remember": "P = VI directly.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c10",
+          "name": "Purely resistive circuit",
+          "simple_answer": "If only resistors connected to battery, source energy all dissipated as heat.",
+          "visual": {
+            "type": "heating_element",
+            "mode": "pure_resistive"
+          },
+          "why": "Fig 11.13.",
+          "example": "Theoretical 100% heat in ideal R circuit.",
+          "remember": "Resistive load → heating effect.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Definitions and Table Questions",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d13_c01",
+          "name": "Define electric current exam",
+          "simple_answer": "Rate of flow of electric charge through a cross-section.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "I = Q/t",
+            "label": "Definition"
+          },
+          "why": "1-mark definition.",
+          "example": "State SI unit ampere.",
+          "remember": "Current = charge rate.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c02",
+          "name": "Define potential difference exam",
+          "simple_answer": "Work done per unit charge moved between two points.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "V = W/Q",
+            "label": "Definition"
+          },
+          "why": "1-mark definition.",
+          "example": "Unit volt.",
+          "remember": "PD = work per charge.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c03",
+          "name": "State Ohm's law exam",
+          "simple_answer": "V ∝ I for metallic conductor at constant temperature; V = IR.",
+          "visual": {
+            "type": "ohms_law_graph",
+            "mode": "definition"
+          },
+          "why": "Must mention temperature.",
+          "example": "Include R definition.",
+          "remember": "Temperature condition essential.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c04",
+          "name": "State Joule's law exam",
+          "simple_answer": "H = I²Rt; heat ∝ I², R, and t.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H = I² R t",
+            "label": "Joule's law"
+          },
+          "why": "Heating numerical base.",
+          "example": "Three proportionalities.",
+          "remember": "All three factors matter.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c05",
+          "name": "Series vs parallel summary table",
+          "simple_answer": "Series: same I, V adds, R adds. Parallel: same V, I adds, 1/R adds.",
+          "visual": {
+            "type": "resistors_series",
+            "mode": "summary_table"
+          },
+          "why": "Revision before practice.",
+          "example": "Draw comparison table from memory.",
+          "remember": "Four rows: I, V, R, domestic use.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c06",
+          "name": "Why alloy in toaster",
+          "simple_answer": "Higher ρ than pure metal; does not oxidise quickly at high temperature.",
+          "visual": {
+            "type": "heating_element",
+            "mode": "alloy_why"
+          },
+          "why": "NCERT Q4 resistors section.",
+          "example": "Nichrome coils stay stable when hot.",
+          "remember": "Alloy: heat + durability.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c07",
+          "name": "Better conductor iron or mercury",
+          "simple_answer": "Iron (lower ρ than mercury in Table 11.2).",
+          "visual": {
+            "type": "resistance_wire",
+            "mode": "table_q"
+          },
+          "why": "Table lookup skill.",
+          "example": "Compare ρ values.",
+          "remember": "Lower ρ = better conductor.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c08",
+          "name": "Best conductor in table",
+          "simple_answer": "Silver lowest ρ (~1.60×10⁻⁸ Ω m) — best conductor listed.",
+          "visual": {
+            "type": "resistance_wire",
+            "mode": "silver"
+          },
+          "why": "Theoretical best; copper used practically.",
+          "example": "Silver costly for wiring.",
+          "remember": "Silver best; copper common.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c09",
+          "name": "Electrons per coulomb",
+          "simple_answer": "1 C ≈ 6×10¹⁸ electrons (each 1.6×10⁻¹⁹ C).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "n = Q / e",
+            "label": "Electron count"
+          },
+          "why": "NCERT Q3 Ch 11.1.",
+          "example": "Divide total charge by e.",
+          "remember": "Use e = 1.6×10⁻¹⁹ C.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c10",
+          "name": "Circuit broken at switch",
+          "simple_answer": "Open switch → open circuit → no continuous path → I = 0.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "open"
+          },
+          "why": "Concept link torch switch.",
+          "example": "Gap stops charge flow.",
+          "remember": "Open circuit: no current.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "Long-answer Preparation",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d14_c01",
+          "name": "Long answer: Ohm's law experiment",
+          "simple_answer": "Describe Activity 11.1: vary cells, measure V and I, plot straight line, R = V/I constant.",
+          "visual": {
+            "type": "ohms_law_graph",
+            "mode": "long_answer"
+          },
+          "why": "3-mark lab question.",
+          "example": "Include nichrome wire XY.",
+          "remember": "Method + graph + conclusion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c02",
+          "name": "Long answer: factors affecting R",
+          "simple_answer": "State l, A, material; R = ρl/A; describe Activity 11.3 observations.",
+          "visual": {
+            "type": "resistance_wire",
+            "mode": "long_answer"
+          },
+          "why": "Factors question.",
+          "example": "Thick/long/material changes.",
+          "remember": "Three factors with formula.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c03",
+          "name": "Long answer: series combination",
+          "simple_answer": "Derive R_s = R₁+R₂, same I, V = V₁+V₂ with diagram Fig 11.6.",
+          "visual": {
+            "type": "resistors_series",
+            "mode": "long_answer"
+          },
+          "why": "Derivation question.",
+          "example": "Activities 11.4 and 11.5.",
+          "remember": "State laws then formula.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c04",
+          "name": "Long answer: parallel combination",
+          "simple_answer": "Derive 1/R_p = sum of reciprocals; same V; I = I₁+I₂.",
+          "visual": {
+            "type": "resistors_parallel",
+            "mode": "long_answer"
+          },
+          "why": "Parallel derivation.",
+          "example": "Activity 11.6.",
+          "remember": "Current split + voltage same.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c05",
+          "name": "Long answer: heating effect",
+          "simple_answer": "Explain H = I²Rt, energy source to heat, examples iron/bulb/fuse.",
+          "visual": {
+            "type": "heating_element",
+            "mode": "long_answer"
+          },
+          "why": "Heating section essay.",
+          "example": "Include Joule's law.",
+          "remember": "Energy conversion to heat.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c06",
+          "name": "Long answer: electric power",
+          "simple_answer": "Define P = VI, watt, kWh, billing example.",
+          "visual": {
+            "type": "electric_power",
+            "mode": "long_answer"
+          },
+          "why": "Power + energy unit.",
+          "example": "Example 11.13 cost.",
+          "remember": "Power vs energy distinction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c07",
+          "name": "MCQ: maintains PD",
+          "simple_answer": "Cell/battery maintains potential difference — not ammeter or resistor alone.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "mcq"
+          },
+          "why": "Ch 11.2 Q1.",
+          "example": "Chemical energy in cell.",
+          "remember": "Battery maintains PD.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c08",
+          "name": "MCQ: image at retina wrong unit",
+          "simple_answer": "Trap from other chapter — eye forms image at retina; electricity Q: image not here.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "mcq_trap"
+          },
+          "why": "Cross-unit confusion.",
+          "example": "Electricity MCQs about R,I,V.",
+          "remember": "Stay in Ch 11 context.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c09",
+          "name": "MCQ: ciliary muscles wrong chapter",
+          "simple_answer": "Lens focal change is eye unit — electricity uses rheostat for variable R.",
+          "visual": {
+            "type": "circuit_symbols",
+            "mode": "mcq_trap"
+          },
+          "why": "Avoid unit mix-ups.",
+          "example": "Rheostat changes R.",
+          "remember": "Variable R = rheostat not ciliary.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c10",
+          "name": "Safety: fuse and overload",
+          "simple_answer": "Too high current melts fuse, stops fire risk from overheated wires.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "fuse"
+          },
+          "why": "Domestic safety.",
+          "example": "Never replace fuse with higher rating wire.",
+          "remember": "Fuse protects from overcurrent.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Cross-links and Concept Maps",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d15_c01",
+          "name": "Chapter map",
+          "simple_answer": "Ch 11: current → PD → symbols → Ohm → R factors → series/parallel → heat → power.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "map"
+          },
+          "why": "Big picture revision.",
+          "example": "Follow section numbers 11.1–11.8.",
+          "remember": "Six main blocks in order.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c02",
+          "name": "Link to prior physics",
+          "simple_answer": "Energy W = VQ connects to work and power from earlier classes.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "W = VQ, P = W/t",
+            "label": "Cross-link"
+          },
+          "why": "Unified energy story.",
+          "example": "Mechanical power analog.",
+          "remember": "Electric energy follows same power idea.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c03",
+          "name": "Graph skills V–I",
+          "simple_answer": "Slope ΔV/ΔI = R for ohmic conductor; intercept should be zero.",
+          "visual": {
+            "type": "ohms_law_graph",
+            "mode": "graph_skills"
+          },
+          "why": "Graphical determination of R.",
+          "example": "Use two points on line.",
+          "remember": "Slope = R.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c04",
+          "name": "Unit analysis check",
+          "simple_answer": "Verify formulas dimensionally: V/I → Ω; VI → W.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Unit check",
+            "label": "Exam tip"
+          },
+          "why": "Catch formula errors.",
+          "example": "Wrong unit in answer flags mistake.",
+          "remember": "Check units in numericals.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c05",
+          "name": "Series lamp dimmer",
+          "simple_answer": "More resistors in series → higher R → lower I → lamp dimmer.",
+          "visual": {
+            "type": "resistors_series",
+            "mode": "conceptual"
+          },
+          "why": "Qualitative prediction.",
+          "example": "Extra resistor in torch line.",
+          "remember": "Series R up → brightness down.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c06",
+          "name": "Parallel lamp independence",
+          "simple_answer": "Parallel branch off → others unchanged brightness.",
+          "visual": {
+            "type": "resistors_parallel",
+            "mode": "conceptual"
+          },
+          "why": "Home lighting logic.",
+          "example": "One bulb removed others stay on.",
+          "remember": "Parallel branches independent.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c07",
+          "name": "High power low resistance heater",
+          "simple_answer": "Heater low R (100 Ω) draws large I at 220 V → high P = VI.",
+          "visual": {
+            "type": "electric_power",
+            "mode": "heater_vs_bulb"
+          },
+          "why": "Example 11.3 contrast.",
+          "example": "P = V²/R shows low R → high P.",
+          "remember": "Heater: low R, high power.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c08",
+          "name": "Low power high resistance bulb",
+          "simple_answer": "Bulb filament high R limits current → moderate power for light.",
+          "visual": {
+            "type": "electric_power",
+            "mode": "bulb_vs_heater"
+          },
+          "why": "Designed for light not max heat.",
+          "example": "1200 Ω filament Example 11.3.",
+          "remember": "Bulb: higher R, lower I.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c09",
+          "name": "Resistivity does not depend on shape",
+          "simple_answer": "ρ is material property; R depends on l and A.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "ρ vs R",
+            "label": "Concept"
+          },
+          "why": "Common conceptual error.",
+          "example": "Thicker wire same material same ρ.",
+          "remember": "Shape changes R not ρ.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c10",
+          "name": "Ready for practice",
+          "simple_answer": "160 concept cards on Electricity — use Practice tab for 15-question sessions from 200-question bank.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "complete"
+          },
+          "why": "Bridge to Stage 2.",
+          "example": "Grok toggle in Practice Setup.",
+          "remember": "Concepts first, then 200 MCQ bank.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "Unit 3 Mastery Checklist",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d16_c01",
+          "name": "Mastery: formulas list",
+          "simple_answer": "I=Q/t, V=W/Q, V=IR, R=ρl/A, R_s sum, 1/R_p sum, H=I²Rt, P=VI.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Formula sheet",
+            "label": "Mastery"
+          },
+          "why": "Self-test all equations.",
+          "example": "Write from memory.",
+          "remember": "Eight core equations.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c02",
+          "name": "Mastery: units list",
+          "simple_answer": "C, A, V, Ω, Ω m, W, kWh, J.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Units",
+            "label": "Mastery"
+          },
+          "why": "Unit quiz.",
+          "example": "Match quantity to unit.",
+          "remember": "No mixing V and W.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c03",
+          "name": "Mastery: meter rules",
+          "simple_answer": "Ammeter series; voltmeter parallel; fuse series.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "checklist"
+          },
+          "why": "Three wiring rules.",
+          "example": "Draw each correctly.",
+          "remember": "A series, V parallel, fuse series.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c04",
+          "name": "Mastery: series vs parallel",
+          "simple_answer": "Recite differences for I, V, R and home wiring reason.",
+          "visual": {
+            "type": "resistors_parallel",
+            "mode": "checklist"
+          },
+          "why": "Oral exam prep.",
+          "example": "30-second summary each.",
+          "remember": "Parallel for homes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c05",
+          "name": "Mastery: heating devices",
+          "simple_answer": "Name iron, toaster, fuse, bulb — each uses I²Rt differently.",
+          "visual": {
+            "type": "heating_element",
+            "mode": "checklist"
+          },
+          "why": "Application recall.",
+          "example": "Use vs protect vs light.",
+          "remember": "Four device roles.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c06",
+          "name": "Mastery: numerical types",
+          "simple_answer": "Ohm's law, ρ, series/parallel R, H, P, kWh cost — six problem types.",
+          "visual": {
+            "type": "electric_power",
+            "mode": "checklist"
+          },
+          "why": "Practice plan.",
+          "example": "One example each type.",
+          "remember": "Cover all six templates.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c07",
+          "name": "Common pitfalls",
+          "simple_answer": "Time in seconds; mm to m for diameter; parallel reciprocal not sum; open ammeter.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Pitfalls",
+            "label": "Exam"
+          },
+          "why": "Last-minute errors.",
+          "example": "Read question units.",
+          "remember": "Four classic mistakes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c08",
+          "name": "Safety reminders",
+          "simple_answer": "Never connect ammeter in parallel; use correct fuse rating; wet hands and electricity.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "safety"
+          },
+          "why": "Lab and home safety.",
+          "example": "Teacher supervision for high V.",
+          "remember": "Respect mains voltage.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c09",
+          "name": "What you have learnt recap",
+          "simple_answer": "NCERT summary: current, PD, R, Ohm's law, series/parallel, heat, power.",
+          "visual": {
+            "type": "electric_circuit",
+            "mode": "ncert_summary"
+          },
+          "why": "End of chapter bullets.",
+          "example": "Match textbook 'What you have learnt'.",
+          "remember": "Official summary alignment.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c10",
+          "name": "Unit 3 complete",
+          "simple_answer": "You finished Unit 3 Electricity — open Practice when Stage 1 is complete.",
+          "visual": {
+            "type": "electric_circuit",
+            "highlight": "overview",
+            "mode": "complete"
+          },
+          "why": "Celebrate progress.",
+          "example": "200 MCQs waiting in bank.",
+          "remember": "Unit 3 ready for practice.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-"""Harshit Physics — Unit 1 content loader (NCERT Ch 9, Light)."""
+"""Harshit Physics — multi-unit content loader (NCERT Class 10)."""
 
 from __future__ import annotations
 
@@ -6,105 +6,167 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-UNIT1_DIR = ROOT / "HarshitPhysics" / "unit1"
 
-UNIT_ID = 1
-UNIT_TITLE = "Light – Reflection and Refraction"
+UNITS: dict[int, dict] = {
+    1: {
+        "dir": "unit1",
+        "title": "Light – Reflection and Refraction",
+        "ncert": "Class 10 Science, Chapter 9",
+        "session_kind_concepts": "harshit_physics_unit1_concepts",
+        "session_kind_mcq": "harshit_physics_unit1_mcq",
+        "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+    },
+    2: {
+        "dir": "unit2",
+        "title": "The Human Eye and the Colourful World",
+        "ncert": "Class 10 Science, Chapter 10",
+        "session_kind_concepts": "harshit_physics_unit2_concepts",
+        "session_kind_mcq": "harshit_physics_unit2_mcq",
+        "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+    },
+    3: {
+        "dir": "unit3",
+        "title": "Electricity",
+        "ncert": "Class 10 Science, Chapter 11",
+        "session_kind_concepts": "harshit_physics_unit3_concepts",
+        "session_kind_mcq": "harshit_physics_unit3_mcq",
+        "chapter_ref": "NCERT Class 10 Ch 11 — Electricity",
+    },
+    4: {
+        "dir": "unit4",
+        "title": "Magnetic Effects of Electric Current",
+        "ncert": "Class 10 Science, Chapter 12",
+        "session_kind_concepts": "harshit_physics_unit4_concepts",
+        "session_kind_mcq": "harshit_physics_unit4_mcq",
+        "chapter_ref": "NCERT Class 10 Ch 12 — Magnetism",
+    },
+}
+
 STUDENT_NAME = "Harshit Sai"
-SESSION_KIND_CONCEPTS = "harshit_physics_unit1_concepts"
-SESSION_KIND_MCQ = "harshit_physics_unit1_mcq"
 SESSION_UNIT_OFFSET = 300
 
+# Backward-compatible defaults (Unit 1)
+UNIT_ID = 1
+UNIT_TITLE = UNITS[1]["title"]
+UNIT1_DIR = ROOT / "HarshitPhysics" / "unit1"
+SESSION_KIND_CONCEPTS = UNITS[1]["session_kind_concepts"]
+SESSION_KIND_MCQ = UNITS[1]["session_kind_mcq"]
 
-def _load_json(name: str) -> dict:
-    path = UNIT1_DIR / name
+
+def unit_dir(unit_id: int) -> Path:
+    if unit_id not in UNITS:
+        raise ValueError(f"Unknown physics unit_id: {unit_id}")
+    return ROOT / "HarshitPhysics" / UNITS[unit_id]["dir"]
+
+
+def active_unit_id() -> int:
+    try:
+        import streamlit as st
+
+        return int(st.session_state.get("hp_unit_id", UNIT_ID))
+    except Exception:
+        return UNIT_ID
+
+
+def unit_meta(unit_id: int | None = None) -> dict:
+    uid = unit_id if unit_id is not None else active_unit_id()
+    return dict(UNITS[uid])
+
+
+def session_kinds(unit_id: int) -> tuple[str, str]:
+    u = UNITS[unit_id]
+    return u["session_kind_concepts"], u["session_kind_mcq"]
+
+
+def _load_json(unit_id: int, name: str) -> dict:
+    path = unit_dir(unit_id) / name
     with path.open(encoding="utf-8") as f:
         return json.load(f)
 
 
-def logic_schema() -> dict:
-    return _load_json("logic_schema.json")
+def logic_schema(unit_id: int | None = None) -> dict:
+    return _load_json(unit_id or active_unit_id(), "logic_schema.json")
 
 
-def error_state_machines() -> dict:
-    return _load_json("error_state_machines.json")
+def error_state_machines(unit_id: int | None = None) -> dict:
+    return _load_json(unit_id or active_unit_id(), "error_state_machines.json")
 
 
-def component_specs() -> dict:
-    return _load_json("component_specs.json")
+def component_specs(unit_id: int | None = None) -> dict:
+    return _load_json(unit_id or active_unit_id(), "component_specs.json")
 
 
-def mcq_bank() -> dict:
-    return _load_json("mcq_bank.json")
+def mcq_bank(unit_id: int | None = None) -> dict:
+    return _load_json(unit_id or active_unit_id(), "mcq_bank.json")
 
 
-def meta() -> dict:
-    return logic_schema().get("meta", {})
+def meta(unit_id: int | None = None) -> dict:
+    return logic_schema(unit_id).get("meta", {})
 
 
-def glossary() -> list[dict]:
-    return logic_schema().get("glossary", [])
+def glossary(unit_id: int | None = None) -> list[dict]:
+    return logic_schema(unit_id).get("glossary", [])
 
 
-def list_days(*, stage: int | None = None) -> list[dict]:
-    days = logic_schema().get("days", [])
+def list_days(*, stage: int | None = None, unit_id: int | None = None) -> list[dict]:
+    days = logic_schema(unit_id).get("days", [])
     if stage is not None:
         days = [d for d in days if d.get("stage") == stage]
     return days
 
 
-def get_day(day_id: int) -> dict | None:
-    return next((d for d in list_days() if d["day"] == day_id), None)
+def get_day(day_id: int, unit_id: int | None = None) -> dict | None:
+    return next((d for d in list_days(unit_id=unit_id) if d["day"] == day_id), None)
 
 
-def concepts_for_day(day_id: int) -> list[dict]:
-    day = get_day(day_id)
+def concepts_for_day(day_id: int, unit_id: int | None = None) -> list[dict]:
+    day = get_day(day_id, unit_id=unit_id)
     return list(day.get("concepts") or []) if day else []
 
 
-def get_concept(concept_id: str) -> dict | None:
-    for day in list_days():
+def get_concept(concept_id: str, unit_id: int | None = None) -> dict | None:
+    for day in list_days(unit_id=unit_id):
         for c in day.get("concepts") or []:
             if c.get("id") == concept_id:
                 return c
     return None
 
 
-def concept_count_for_day(day_id: int) -> int:
-    return len(concepts_for_day(day_id))
+def concept_count_for_day(day_id: int, unit_id: int | None = None) -> int:
+    return len(concepts_for_day(day_id, unit_id=unit_id))
 
 
-def total_concept_cards(*, active_only: bool = False) -> int:
+def total_concept_cards(*, active_only: bool = False, unit_id: int | None = None) -> int:
     total = 0
-    for day in list_days(stage=1):
+    for day in list_days(stage=1, unit_id=unit_id):
         if active_only and not day.get("active"):
             continue
         total += len(day.get("concepts") or [])
     return total
 
 
-def list_mcq_sessions() -> list[dict]:
-    return mcq_bank().get("sessions", [])
+def list_mcq_sessions(unit_id: int | None = None) -> list[dict]:
+    return mcq_bank(unit_id).get("sessions", [])
 
 
-def get_mcq_session(day_id: int) -> dict | None:
-    return next((s for s in list_mcq_sessions() if s["day"] == day_id), None)
+def get_mcq_session(day_id: int, unit_id: int | None = None) -> dict | None:
+    return next((s for s in list_mcq_sessions(unit_id) if s["day"] == day_id), None)
 
 
-def misconception_machine(category: str) -> dict | None:
-    return error_state_machines().get("machines", {}).get(category)
+def misconception_machine(category: str, unit_id: int | None = None) -> dict | None:
+    return error_state_machines(unit_id).get("machines", {}).get(category)
 
 
-def css_variables_block() -> str:
-    specs = component_specs()
+def css_variables_block(unit_id: int | None = None) -> str:
+    specs = component_specs(unit_id)
     vars_dict = specs.get("css_variables", {})
     lines = [f"  {k}: {v};" for k, v in vars_dict.items()]
     return ":root {\n" + "\n".join(lines) + "\n}"
 
 
-def stage1_complete(viewed_ids: set[str]) -> bool:
+def stage1_complete(viewed_ids: set[str], unit_id: int | None = None) -> bool:
     """True when all non-stub concept cards have been viewed."""
-    for day in list_days(stage=1):
+    for day in list_days(stage=1, unit_id=unit_id):
         for c in day.get("concepts") or []:
             if c.get("stub"):
                 continue
@@ -128,10 +190,10 @@ def _testing_practice_unlock_enabled() -> bool:
         return False
 
 
-def practice_unlocked(viewed_ids: set[str]) -> bool:
+def practice_unlocked(viewed_ids: set[str], unit_id: int | None = None) -> bool:
     """Stage 1 complete, or testing bypass via HARSHIT_PHYSICS_UNLOCK_PRACTICE."""
-    return stage1_complete(viewed_ids) or _testing_practice_unlock_enabled()
+    return stage1_complete(viewed_ids, unit_id=unit_id) or _testing_practice_unlock_enabled()
 
 
-def stage2_unlocked(viewed_ids: set[str]) -> bool:
-    return practice_unlocked(viewed_ids)
+def stage2_unlocked(viewed_ids: set[str], unit_id: int | None = None) -> bool:
+    return practice_unlocked(viewed_ids, unit_id=unit_id)

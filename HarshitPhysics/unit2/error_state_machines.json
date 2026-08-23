@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "unit_id": 2,
+    "description": "Misconception remediation paths for Unit 2 practice MCQs"
+  },
+  "misconception_categories": [
+    "myopia_hypermetropia_swap",
+    "concave_convex_correction_swap",
+    "near_far_point_swap",
+    "accommodation_presbyopia_swap",
+    "dispersion_scattering_swap",
+    "prism_slab_confusion",
+    "vibgyor_order_error",
+    "red_violet_bending_swap",
+    "twinkle_planet_confusion",
+    "atmospheric_refraction_scattering_swap"
+  ],
+  "machines": {
+    "myopia_hypermetropia_swap": {
+      "feedback": "Check whether distant or nearby objects are blurred — that identifies myopia vs hypermetropia.",
+      "concept_ids": ["u2_d3_c03", "u2_d3_c07"],
+      "calm_prompt": "Myopia: far blur. Hypermetropia: near blur."
+    },
+    "concave_convex_correction_swap": {
+      "feedback": "Myopia needs a diverging (concave) lens; hypermetropia needs a converging (convex) lens.",
+      "concept_ids": ["u2_d3_c06", "u2_d3_c10"],
+      "calm_prompt": "Concave for myopia, convex for hypermetropia."
+    },
+    "dispersion_scattering_swap": {
+      "feedback": "Dispersion splits white light in a prism; scattering redirects light off particles in air.",
+      "concept_ids": ["u2_d6_c01", "u2_d8_c07"],
+      "calm_prompt": "Prism splits; particles scatter."
+    }
+  }
+}
