@@ -1,0 +1,522 @@
+{
+  "meta": {
+    "active": true,
+    "stage": 3,
+    "range": "Exercises Q4–Q20",
+    "note": "Exam-style written questions. Chapter 1 has 3 MCQs (Stage 2) and 17 long-form exercises here.",
+    "chapter": "NCERT Class 10 Science Ch 1",
+    "pdf": "jesc101.pdf",
+    "unit_id": 1
+  },
+  "questions": [
+    {
+      "id": "u1_ex_q04",
+      "num": 4,
+      "type": "explain",
+      "marks": 3,
+      "question": "What is a balanced chemical equation? Why should chemical equations be balanced?",
+      "hints": [
+        "Count atoms of each element on LHS and RHS.",
+        "Balancing follows the law of conservation of mass.",
+        "Coefficients change; subscripts in formulae do not."
+      ],
+      "model_answer": "A **balanced chemical equation** has an equal number of atoms of each element on both sides of the arrow.\n\nEquations must be balanced because of the **law of conservation of mass** — mass is neither created nor destroyed in a chemical reaction. Atoms are only rearranged, so the total number of atoms of each element must remain the same before and after the reaction.",
+      "marking_points": [
+        "Definition of balanced equation (equal atoms each side)",
+        "Law of conservation of mass stated",
+        "Link: balancing ensures mass/atoms conserved"
+      ],
+      "common_mistakes": [
+        "Saying balancing changes subscripts inside formulae",
+        "Giving examples without defining balanced equation"
+      ],
+      "concept_ids": [
+        "u1_d5_c01",
+        "u1_d5_c02",
+        "u1_d5_c04"
+      ],
+      "misconception": "unbalanced_equation_accepted",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q4"
+    },
+    {
+      "id": "u1_ex_q05",
+      "num": 5,
+      "type": "write_equations",
+      "marks": 5,
+      "question": "Translate the following statements into chemical equations and then balance them.\n(a) Hydrogen gas combines with nitrogen to form ammonia.\n(b) Hydrogen sulphide gas burns in air to give water and sulphur dioxide.\n(c) Barium chloride reacts with aluminium sulphate to give aluminium chloride and a precipitate of barium sulphate.\n(d) Potassium metal reacts with water to give potassium hydroxide and hydrogen gas.",
+      "hints": [
+        "Write reactants on LHS and products on RHS.",
+        "Use correct formulae: N₂, H₂, NH₃, H₂S, O₂, BaCl₂, Al₂(SO₄)₃, K, KOH.",
+        "Balance by hit-and-trial; check each element."
+      ],
+      "model_answer": "(a) **N₂(g) + 3H₂(g) → 2NH₃(g)**\n\n(b) **2H₂S(g) + 3O₂(g) → 2H₂O(l) + 2SO₂(g)**\n\n(c) **3BaCl₂(aq) + Al₂(SO₄)₃(aq) → 2AlCl₃(aq) + 3BaSO₄(s)↓**\n\n(d) **2K(s) + 2H₂O(l) → 2KOH(aq) + H₂(g)↑**",
+      "marking_points": [
+        "All four equations with correct formulae",
+        "All four equations balanced",
+        "Precipitate/state for BaSO₄ where appropriate"
+      ],
+      "common_mistakes": [
+        "Unbalanced equations",
+        "Wrong formulae (e.g. Al₂(SO₄)₃ written incorrectly)"
+      ],
+      "concept_ids": [
+        "u1_d4_c01",
+        "u1_d4_c02",
+        "u1_d6_c01"
+      ],
+      "misconception": "coefficient_subscript_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q5"
+    },
+    {
+      "id": "u1_ex_q06",
+      "num": 6,
+      "type": "balance",
+      "marks": 4,
+      "question": "Balance the following chemical equations.\n(a) HNO₃ + Ca(OH)₂ → Ca(NO₃)₂ + H₂O\n(b) NaOH + H₂SO₄ → Na₂SO₄ + H₂O\n(c) NaCl + AgNO₃ → AgCl + NaNO₃\n(d) BaCl₂ + H₂SO₄ → BaSO₄ + HCl",
+      "hints": [
+        "Neutralisation type: adjust coefficients on water/salt.",
+        "Count N, O, H separately.",
+        "Verify atom count after balancing."
+      ],
+      "model_answer": "(a) **2HNO₃ + Ca(OH)₂ → Ca(NO₃)₂ + 2H₂O**\n\n(b) **2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O**\n\n(c) **NaCl + AgNO₃ → AgCl + NaNO₃** (already balanced)\n\n(d) **BaCl₂ + H₂SO₄ → BaSO₄ + 2HCl**",
+      "marking_points": [
+        "(a) 2,1,1,2",
+        "(b) 2,1,1,2",
+        "(c) already balanced",
+        "(d) 1,1,1,2"
+      ],
+      "common_mistakes": [
+        "Changing subscripts in formulae",
+        "Forgetting to balance H and O"
+      ],
+      "concept_ids": [
+        "u1_d6_c01",
+        "u1_d6_c05",
+        "u1_d6_c09"
+      ],
+      "misconception": "coefficient_subscript_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q6"
+    },
+    {
+      "id": "u1_ex_q07",
+      "num": 7,
+      "type": "write_equations",
+      "marks": 4,
+      "question": "Write the balanced chemical equations for the following reactions.\n(a) Calcium hydroxide + Carbon dioxide → Calcium carbonate + Water\n(b) Zinc + Silver nitrate → Zinc nitrate + Silver\n(c) Aluminium + Copper chloride → Aluminium chloride + Copper\n(d) Barium chloride + Potassium sulphate → Barium sulphate + Potassium chloride",
+      "hints": [
+        "Convert names to formulae first.",
+        "Displacement: more reactive metal displaces less reactive.",
+        "Double displacement: exchange of ions."
+      ],
+      "model_answer": "(a) **Ca(OH)₂(aq) + CO₂(g) → CaCO₃(s) + H₂O(l)**\n\n(b) **Zn(s) + 2AgNO₃(aq) → Zn(NO₃)₂(aq) + 2Ag(s)**\n\n(c) **2Al(s) + 3CuCl₂(aq) → 2AlCl₃(aq) + 3Cu(s)**\n\n(d) **BaCl₂(aq) + K₂SO₄(aq) → BaSO₄(s) + 2KCl(aq)**",
+      "marking_points": [
+        "Four correct balanced equations",
+        "Correct products for each reaction type"
+      ],
+      "common_mistakes": [
+        "Wrong valency in formulae",
+        "Unbalanced equations"
+      ],
+      "concept_ids": [
+        "u1_d9_c04",
+        "u1_d10_c04",
+        "u1_d7_c03"
+      ],
+      "misconception": "displacement_reactivity_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q7"
+    },
+    {
+      "id": "u1_ex_q08",
+      "num": 8,
+      "type": "write_classify",
+      "marks": 5,
+      "question": "Write the balanced chemical equation for the following and identify the type of reaction in each case.\n(a) Potassium bromide(aq) + Barium iodide(aq) → Potassium iodide(aq) + Barium bromide(s)\n(b) Zinc carbonate(s) → Zinc oxide(s) + Carbon dioxide(g)\n(c) Hydrogen(g) + Chlorine(g) → Hydrogen chloride(g)\n(d) Magnesium(s) + Hydrochloric acid(aq) → Magnesium chloride(aq) + Hydrogen(g)",
+      "hints": [
+        "(a) ion exchange → double displacement/precipitation.",
+        "(b) one reactant → many products: decomposition.",
+        "(c) two → one: combination.",
+        "(d) metal displaces H: displacement."
+      ],
+      "model_answer": "(a) **2KBr(aq) + BaI₂(aq) → 2KI(aq) + BaBr₂(s)** — **double displacement / precipitation** reaction.\n\n(b) **ZnCO₃(s) → ZnO(s) + CO₂(g)** — **thermal decomposition** reaction.\n\n(c) **H₂(g) + Cl₂(g) → 2HCl(g)** — **combination** reaction.\n\n(d) **Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)** — **displacement** reaction.",
+      "marking_points": [
+        "Four balanced equations",
+        "Correct reaction type named for each"
+      ],
+      "common_mistakes": [
+        "Naming combination as decomposition",
+        "Missing precipitate in (a)"
+      ],
+      "concept_ids": [
+        "u1_d7_c01",
+        "u1_d8_c01",
+        "u1_d9_c01",
+        "u1_d10_c01"
+      ],
+      "misconception": "physical_vs_chemical_change",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q8"
+    },
+    {
+      "id": "u1_ex_q09",
+      "num": 9,
+      "type": "explain",
+      "marks": 3,
+      "question": "What does one mean by exothermic and endothermic reactions? Give examples.",
+      "hints": [
+        "Exothermic: heat released to surroundings.",
+        "Endothermic: heat absorbed from surroundings.",
+        "Give one example of each with observation."
+      ],
+      "model_answer": "**Exothermic reactions** release heat energy to the surroundings (temperature rises). Example: **CaO + H₂O → Ca(OH)₂ + heat** or burning of natural gas.\n\n**Endothermic reactions** absorb heat energy from the surroundings (temperature falls). Example: **2AgCl(s) → 2Ag(s) + Cl₂(g)** in sunlight.",
+      "marking_points": [
+        "Exothermic defined with heat release",
+        "Endothermic defined with heat absorption",
+        "One valid example of each"
+      ],
+      "common_mistakes": [
+        "Swapping definitions",
+        "Examples without stating heat flow direction"
+      ],
+      "concept_ids": [
+        "u1_d1_c09",
+        "u1_d7_c08",
+        "u1_d8_c09"
+      ],
+      "misconception": "physical_vs_chemical_change",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q9"
+    },
+    {
+      "id": "u1_ex_q10",
+      "num": 10,
+      "type": "explain",
+      "marks": 2,
+      "question": "Why is respiration considered an exothermic reaction? Explain.",
+      "hints": [
+        "Respiration breaks down glucose in cells.",
+        "Energy is released for body activities.",
+        "Write the overall equation if helpful."
+      ],
+      "model_answer": "During **respiration**, glucose combines with oxygen in the cells and **releases energy** needed for life processes.\n\n**C₆H₁₂O₆(aq) + 6O₂(aq) → 6CO₂(aq) + 6H₂O(l) + energy**\n\nSince energy is **released**, respiration is an **exothermic** reaction.",
+      "marking_points": [
+        "Glucose + oxygen in cells",
+        "Energy released for life processes",
+        "Conclusion: exothermic"
+      ],
+      "common_mistakes": [
+        "Calling it endothermic",
+        "No mention of energy release"
+      ],
+      "concept_ids": [
+        "u1_d7_c08",
+        "u1_d7_c02",
+        "u1_d1_c09"
+      ],
+      "misconception": "physical_vs_chemical_change",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q10"
+    },
+    {
+      "id": "u1_ex_q11",
+      "num": 11,
+      "type": "explain",
+      "marks": 3,
+      "question": "Why are decomposition reactions called the opposite of combination reactions? Write equations for these reactions.",
+      "hints": [
+        "Combination: many → one.",
+        "Decomposition: one → many.",
+        "Give one equation for each type."
+      ],
+      "model_answer": "**Combination reactions** form a **single product** from two or more reactants (A + B → AB).\n**Decomposition reactions** break **one reactant** into two or more products (AB → A + B).\n\nCombination example: **2Mg + O₂ → 2MgO**\n\nDecomposition example: **CaCO₃ → CaO + CO₂** (on heating).",
+      "marking_points": [
+        "Combination defined (many → one)",
+        "Decomposition defined (one → many)",
+        "One balanced equation for each"
+      ],
+      "common_mistakes": [
+        "Only definitions without equations",
+        "Reversed examples"
+      ],
+      "concept_ids": [
+        "u1_d7_c09",
+        "u1_d8_c01",
+        "u1_d8_c02"
+      ],
+      "misconception": "physical_vs_chemical_change",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q11"
+    },
+    {
+      "id": "u1_ex_q12",
+      "num": 12,
+      "type": "write_equations",
+      "marks": 3,
+      "question": "Write one equation each for decomposition reactions where energy is supplied in the form of heat, light or electricity.",
+      "hints": [
+        "Heat: thermal decomposition (Δ).",
+        "Light: photolytic (sunlight).",
+        "Electricity: electrolysis of water."
+      ],
+      "model_answer": "**Heat:** **CaCO₃(s) → CaO(s) + CO₂(g)**\n\n**Light:** **2AgCl(s) → 2Ag(s) + Cl₂(g)** (sunlight)\n\n**Electricity:** **2H₂O(l) → 2H₂(g) + O₂(g)** (electrolysis)",
+      "marking_points": [
+        "One valid heat decomposition",
+        "One valid light decomposition",
+        "One valid electrolytic decomposition"
+      ],
+      "common_mistakes": [
+        "Using combination reactions",
+        "Not specifying energy form"
+      ],
+      "concept_ids": [
+        "u1_d8_c02",
+        "u1_d8_c05",
+        "u1_d8_c04"
+      ],
+      "misconception": "physical_vs_chemical_change",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q12"
+    },
+    {
+      "id": "u1_ex_q13",
+      "num": 13,
+      "type": "explain",
+      "marks": 4,
+      "question": "What is the difference between displacement and double displacement reactions? Write equations for these reactions.",
+      "hints": [
+        "Single displacement: one element replaces another.",
+        "Double displacement: exchange of ions between two compounds.",
+        "Give one balanced equation for each."
+      ],
+      "model_answer": "**Displacement:** A **more reactive element** displaces a **less reactive element** from its compound.\nExample: **Fe(s) + CuSO₄(aq) → FeSO₄(aq) + Cu(s)**\n\n**Double displacement:** **Exchange of ions** between two compounds.\nExample: **Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s) + 2KNO₃(aq)**",
+      "marking_points": [
+        "Displacement defined with reactivity",
+        "Double displacement defined with ion exchange",
+        "One correct equation for each"
+      ],
+      "common_mistakes": [
+        "Confusing the two types",
+        "Using same example for both"
+      ],
+      "concept_ids": [
+        "u1_d9_c01",
+        "u1_d10_c01",
+        "u1_d10_c02"
+      ],
+      "misconception": "displacement_reactivity_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q13"
+    },
+    {
+      "id": "u1_ex_q14",
+      "num": 14,
+      "type": "write_equations",
+      "marks": 2,
+      "question": "In the refining of silver, the recovery of silver from silver nitrate solution involved displacement by copper metal. Write down the reaction involved.",
+      "hints": [
+        "Copper is more reactive than silver.",
+        "Copper displaces silver from AgNO₃ solution.",
+        "Balance the equation."
+      ],
+      "model_answer": "**2AgNO₃(aq) + Cu(s) → Cu(NO₃)₂(aq) + 2Ag(s)**\n\nCopper displaces silver from silver nitrate; silver is deposited and copper nitrate forms in solution.",
+      "marking_points": [
+        "Balanced equation",
+        "Copper displaces silver (reactivity)"
+      ],
+      "common_mistakes": [
+        "Reverse reaction suggested",
+        "Unbalanced equation"
+      ],
+      "concept_ids": [
+        "u1_d9_c06",
+        "u1_d9_c02",
+        "u1_d9_c04"
+      ],
+      "misconception": "displacement_reactivity_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q14"
+    },
+    {
+      "id": "u1_ex_q15",
+      "num": 15,
+      "type": "explain",
+      "marks": 3,
+      "question": "What do you mean by a precipitation reaction? Explain by giving examples.",
+      "hints": [
+        "Precipitate = insoluble solid from solution.",
+        "Often a double displacement reaction.",
+        "Give at least one balanced example."
+      ],
+      "model_answer": "A **precipitation reaction** forms an **insoluble solid (precipitate)** when two solutions are mixed.\n\nExample 1: **Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s)↓ + 2KNO₃(aq)**\n\nExample 2: **BaCl₂(aq) + Na₂SO₄(aq) → BaSO₄(s)↓ + 2NaCl(aq)**",
+      "marking_points": [
+        "Precipitate defined",
+        "Insoluble product forms",
+        "At least one balanced example"
+      ],
+      "common_mistakes": [
+        "Calling all double displacement precipitation",
+        "No example given"
+      ],
+      "concept_ids": [
+        "u1_d10_c02",
+        "u1_d10_c03",
+        "u1_d10_c05"
+      ],
+      "misconception": "displacement_reactivity_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q15"
+    },
+    {
+      "id": "u1_ex_q16",
+      "num": 16,
+      "type": "explain",
+      "marks": 4,
+      "question": "Explain the following in terms of gain or loss of oxygen with two examples each.\n(a) Oxidation\n(b) Reduction",
+      "hints": [
+        "Oxidation = gain of oxygen (or loss of hydrogen).",
+        "Reduction = loss of oxygen (or gain of hydrogen).",
+        "Two examples each."
+      ],
+      "model_answer": "(a) **Oxidation** — **gain of oxygen** by a substance.\nExamples: **2Mg + O₂ → 2MgO**; **2Cu + O₂ → 2CuO**.\n\n(b) **Reduction** — **loss of oxygen** by a substance.\nExamples: **CuO + H₂ → Cu + H₂O**; **ZnO + C → Zn + CO**.",
+      "marking_points": [
+        "Oxidation defined",
+        "Two oxidation examples",
+        "Reduction defined",
+        "Two reduction examples"
+      ],
+      "common_mistakes": [
+        "Swapping oxidation and reduction",
+        "Only one example for each"
+      ],
+      "concept_ids": [
+        "u1_d11_c01",
+        "u1_d11_c03",
+        "u1_d11_c06"
+      ],
+      "misconception": "oxidation_reduction_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q16"
+    },
+    {
+      "id": "u1_ex_q17",
+      "num": 17,
+      "type": "identify",
+      "marks": 2,
+      "question": "A shiny brown coloured element 'X' on heating in air becomes black in colour. Name the element 'X' and the black coloured compound formed.",
+      "hints": [
+        "Brown metal that tarnishes black on heating: copper.",
+        "Copper reacts with oxygen to form copper(II) oxide.",
+        "Write name and formula."
+      ],
+      "model_answer": "Element **X** is **copper (Cu)**.\n\nThe black compound is **copper(II) oxide (CuO)**.\n\n**2Cu(s) + O₂(g) → 2CuO(s)**",
+      "marking_points": [
+        "X identified as copper",
+        "Black compound identified as CuO"
+      ],
+      "common_mistakes": [
+        "Naming wrong metal",
+        "CuO not identified"
+      ],
+      "concept_ids": [
+        "u1_d11_c01",
+        "u1_d12_c02",
+        "u1_d12_c03"
+      ],
+      "misconception": "oxidation_reduction_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q17"
+    },
+    {
+      "id": "u1_ex_q18",
+      "num": 18,
+      "type": "explain",
+      "marks": 2,
+      "question": "Why do we apply paint on iron articles?",
+      "hints": [
+        "Iron rusts in moist air.",
+        "Paint blocks air and moisture.",
+        "Prevents corrosion."
+      ],
+      "model_answer": "Paint on iron articles **prevents rusting (corrosion)** by forming a **protective coating** that keeps **air and moisture** away from the metal surface.",
+      "marking_points": [
+        "Prevents rusting/corrosion",
+        "Blocks air and moisture",
+        "Protective coating"
+      ],
+      "common_mistakes": [
+        "Saying paint makes iron stronger",
+        "Only cosmetic reason"
+      ],
+      "concept_ids": [
+        "u1_d13_c01",
+        "u1_d13_c03",
+        "u1_d13_c05"
+      ],
+      "misconception": "physical_vs_chemical_change",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q18"
+    },
+    {
+      "id": "u1_ex_q19",
+      "num": 19,
+      "type": "explain",
+      "marks": 2,
+      "question": "Oil and fat containing food items are flushed with nitrogen. Why?",
+      "hints": [
+        "Fats oxidise in air → rancidity.",
+        "Nitrogen is inert — excludes oxygen.",
+        "Extends shelf life."
+      ],
+      "model_answer": "Foods are flushed with **nitrogen** to **prevent oxidation** of fats and oils. Nitrogen is **inert** and **displaces oxygen**, slowing **rancidity** and increasing **shelf life**.",
+      "marking_points": [
+        "Prevents oxidation of fats",
+        "Nitrogen inert / excludes oxygen",
+        "Prevents rancidity"
+      ],
+      "common_mistakes": [
+        "Saying nitrogen reacts with food",
+        "Confusing with refrigeration only"
+      ],
+      "concept_ids": [
+        "u1_d14_c01",
+        "u1_d14_c03",
+        "u1_d14_c05"
+      ],
+      "misconception": "oxidation_reduction_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q19"
+    },
+    {
+      "id": "u1_ex_q20",
+      "num": 20,
+      "type": "explain",
+      "marks": 4,
+      "question": "Explain the following terms with one example each.\n(a) Corrosion\n(b) Rancidity",
+      "hints": [
+        "Corrosion: gradual destruction of metals.",
+        "Rancidity: oxidation of fats/oils in food.",
+        "One everyday example each."
+      ],
+      "model_answer": "(a) **Corrosion** — gradual **destruction of metals** by reaction with environment.\nExample: **Rusting of iron** to brown flaky hydrated iron(III) oxide.\n\n(b) **Rancidity** — **oxidation** of oils/fats causing unpleasant smell and taste.\nExample: **Butter or fried food** exposed to air becomes rancid; antioxidants or airtight packing prevent it.",
+      "marking_points": [
+        "Corrosion defined with example",
+        "Rancidity defined with example"
+      ],
+      "common_mistakes": [
+        "Swapping the two terms",
+        "No examples"
+      ],
+      "concept_ids": [
+        "u1_d13_c01",
+        "u1_d14_c01",
+        "u1_d14_c02"
+      ],
+      "misconception": "oxidation_reduction_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 1 Exercises Q20"
+    }
+  ]
+}

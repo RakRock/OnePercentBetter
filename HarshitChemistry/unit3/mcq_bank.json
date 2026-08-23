@@ -2,9 +2,896 @@
   "meta": {
     "unit_id": 3,
     "stage": 2,
-    "active": false,
-    "total_mcqs": 0,
-    "description": "Stage 2 structured MCQ sessions \u2014 coming after Stage 1 concept completion"
+    "active": true,
+    "release": 5,
+    "total_mcqs": 40,
+    "pdf": "jesc103.pdf",
+    "note": "Stage 2: NCERT Exercises Q1–4 + Intext + concept bank. Activities 3.1–3.13 linked per day."
   },
-  "sessions": []
+  "sessions": [
+    {
+      "day": 17,
+      "title": "Physical Properties of Metals",
+      "active": true,
+      "activity_refs": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4"
+      ],
+      "questions": [
+        {
+          "id": "u3_d17_ncert_01",
+          "question": "Which of the following pairs will give displacement reactions?",
+          "options": [
+            "NaCl solution and copper metal",
+            "MgCl₂ solution and aluminium metal",
+            "FeSO₄ solution and silver metal",
+            "AgNO₃ solution and copper metal"
+          ],
+          "answer": 3,
+          "explanation": "Cu is more reactive than Ag; Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag.",
+          "misconception": "displacement_reactivity_error",
+          "concept_id": "",
+          "source": "NCERT Ch 3 Exercises Q1",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "ncert_ref": "NCERT Ch 3 Exercises Q1"
+        },
+        {
+          "id": "u3_d17_ncert_02",
+          "question": "Which of the following methods is suitable for preventing an iron frying pan from rusting?",
+          "options": [
+            "Applying grease",
+            "Applying paint",
+            "Applying a coating of zinc",
+            "All of the above"
+          ],
+          "answer": 3,
+          "explanation": "Grease, paint, and galvanisation (zinc coating) all prevent rust by blocking air and moisture.",
+          "misconception": "corrosion_prevention_wrong",
+          "concept_id": "",
+          "source": "NCERT Ch 3 Exercises Q2",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "ncert_ref": "NCERT Ch 3 Exercises Q2"
+        },
+        {
+          "id": "u3_d17_intext_03",
+          "question": "Metals in their pure state have a shining surface. This property is called",
+          "options": [
+            "ductility",
+            "metallic lustre",
+            "sonority",
+            "malleability"
+          ],
+          "answer": 1,
+          "explanation": "The shining surface of pure metals is called metallic lustre.",
+          "misconception": "metal_nonmetal_property_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 3 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "ncert_ref": "NCERT Ch 3 Intext"
+        },
+        {
+          "id": "u3_d17_intext_04",
+          "question": "Metals that can be beaten into thin sheets are called",
+          "options": [
+            "ductile",
+            "brittle",
+            "malleable",
+            "sonorous"
+          ],
+          "answer": 2,
+          "explanation": "Malleability is the property of being beaten into thin sheets.",
+          "misconception": "metal_nonmetal_property_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 3 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "ncert_ref": "NCERT Ch 3 Intext"
+        },
+        {
+          "id": "u3_d17_intext_05",
+          "question": "Ionic compounds are formed by",
+          "options": [
+            "sharing of electrons",
+            "transfer of electrons from metal to non-metal",
+            "transfer of protons",
+            "metallic bonding only"
+          ],
+          "answer": 1,
+          "explanation": "Metal atoms lose electrons; non-metals gain them — ionic bond forms.",
+          "misconception": "ionic_bond_covalent_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 3 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "ncert_ref": "NCERT Ch 3 Intext"
+        },
+        {
+          "id": "u3_d17_intext_06",
+          "question": "Which metal can displace copper from CuSO₄ solution?",
+          "options": [
+            "Ag",
+            "Au",
+            "Zn",
+            "Cu"
+          ],
+          "answer": 2,
+          "explanation": "Zinc is above copper in the reactivity series and displaces Cu from CuSO₄.",
+          "misconception": "displacement_reactivity_error",
+          "concept_id": "",
+          "source": "NCERT Ch 3 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "ncert_ref": "NCERT Ch 3 Intext"
+        },
+        {
+          "id": "u3_d17_intext_07",
+          "question": "Galvanisation protects iron because zinc",
+          "options": [
+            "is prettier than iron",
+            "forms a barrier and sacrificial coating",
+            "makes iron heavier",
+            "reacts with iron to form alloy"
+          ],
+          "answer": 1,
+          "explanation": "Zinc coats iron and corrodes preferentially, protecting the iron underneath.",
+          "misconception": "corrosion_prevention_wrong",
+          "concept_id": "",
+          "source": "NCERT Ch 3 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "ncert_ref": "NCERT Ch 3 Intext"
+        },
+        {
+          "id": "u3_s2_d1_bank_08",
+          "question": "What is the key takeaway about **What are non-metals?**?",
+          "options": [
+            "Observe before you react — physical properties first.",
+            "Memorise the common metal list for equations.",
+            "Dull + brittle + poor conductor = non-metal clues",
+            "Physical = no new substance; chemical = reaction."
+          ],
+          "answer": 2,
+          "explanation": "Dull + brittle + poor conductor = non-metal clues.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d1_c02",
+          "category": "u3_d1_B",
+          "category_label": "Day 1 — Metals and Non-metals — Introduction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d1_bank_09",
+          "question": "What is the key takeaway about **Elements classified as metals or non-metals**?",
+          "options": [
+            "Non-metals in air, food, and industry.",
+            "Metals dominate the periodic table",
+            "S, C, I, O, Cl appear throughout chapter.",
+            "Properties → reactions → ions → extraction → corrosion."
+          ],
+          "answer": 1,
+          "explanation": "Metals dominate the periodic table.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 3,
+          "concept_id": "u3_d1_c03",
+          "category": "u3_d1_C",
+          "category_label": "Day 1 — Metals and Non-metals — Introduction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d1_bank_10",
+          "question": "Which statement best describes **What are metals?**?",
+          "options": [
+            "Non-metals essential for life — oxygen for breathing, nitrogen in fertilisers, carbon in all living matter.",
+            "NCERT Activity 3.",
+            "Metals used in utensils, wires, construction, jewellery, and vehicles because of strength and conductivity.",
+            "Metals are elements that are generally lustrous, malleable, ductile, and good conductors of heat and electricity."
+          ],
+          "answer": 3,
+          "explanation": "Lustre + malleability + conductivity = metal clues.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "A",
+          "unit_id": 3,
+          "concept_id": "u3_d1_c01",
+          "category": "u3_d1_A",
+          "category_label": "Day 1 — Metals and Non-metals — Introduction · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "metal_nonmetal_property_swap"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "title": "Chemical Properties and Reactivity",
+      "active": true,
+      "activity_refs": [
+        "3.5",
+        "3.6",
+        "3.7"
+      ],
+      "questions": [
+        {
+          "id": "u3_d18_ncert_01",
+          "question": "An element reacts with oxygen to give a compound with a high melting point. This compound is also soluble in water. The element is likely to be",
+          "options": [
+            "calcium",
+            "carbon",
+            "silicon",
+            "iron"
+          ],
+          "answer": 0,
+          "explanation": "Calcium forms basic oxide CaO (high mp) which gives soluble Ca(OH)₂ with water.",
+          "misconception": "metal_nonmetal_property_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 3 Exercises Q3",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "ncert_ref": "NCERT Ch 3 Exercises Q3"
+        },
+        {
+          "id": "u3_d18_ncert_02",
+          "question": "Food cans are coated with tin and not with zinc because",
+          "options": [
+            "zinc is costlier than tin",
+            "zinc has a higher melting point than tin",
+            "zinc is more reactive than tin",
+            "zinc is less reactive than tin"
+          ],
+          "answer": 2,
+          "explanation": "Zinc is more reactive than tin; it could react with food acids — tin is less reactive and safer as coating.",
+          "misconception": "reactivity_series_order_error",
+          "concept_id": "",
+          "source": "NCERT Ch 3 Exercises Q4",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "ncert_ref": "NCERT Ch 3 Exercises Q4"
+        },
+        {
+          "id": "u3_s2_d5_bank_03",
+          "question": "What is the key takeaway about **Non-metals are dull (non-lustrous)**?",
+          "options": [
+            "No free electrons → no current flow.",
+            "Graphite is non-metal that conducts.",
+            "No metallic lustre on most non-metals",
+            "All four properties tested on non-metals."
+          ],
+          "answer": 2,
+          "explanation": "No metallic lustre on most non-metals.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d5_c02",
+          "category": "u3_d5_B",
+          "category_label": "Day 5 — Physical Properties of Non-metals · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "metal_nonmetal_property_swap"
+        },
+        {
+          "id": "u3_s2_d5_bank_04",
+          "question": "What is the key takeaway about **Non-metals are brittle**?",
+          "options": [
+            "No free electrons → no current flow.",
+            "Opposite of typical metal properties.",
+            "Brittle = breaks, not bends",
+            "No metallic lustre on most non-metals."
+          ],
+          "answer": 2,
+          "explanation": "Brittle = breaks, not bends.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "C",
+          "unit_id": 3,
+          "concept_id": "u3_d5_c03",
+          "category": "u3_d5_C",
+          "category_label": "Day 5 — Physical Properties of Non-metals · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d5_bank_05",
+          "question": "Which statement best describes **Physical properties of non-metals — overview**?",
+          "options": [
+            "List dull, brittle, non-sonorous, poor conductor → Activity 3.",
+            "Most non-metals do not conduct electricity — used as insulators in cables and equipment.",
+            "Carbon exists as diamond (hard, insulator) and graphite (soft, conductor) — same element, different properties.",
+            "Non-metals are generally dull, brittle, non-sonorous, and poor conductors of heat and electricity."
+          ],
+          "answer": 3,
+          "explanation": "Opposite of typical metal properties.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "A",
+          "unit_id": 3,
+          "concept_id": "u3_d5_c01",
+          "category": "u3_d5_A",
+          "category_label": "Day 5 — Physical Properties of Non-metals · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d6_bank_06",
+          "question": "What is the key takeaway about **Activity 3.5 — burning magnesium**?",
+          "options": [
+            "Equation + observation + oxide nature.",
+            "Never leave Na/K exposed to air.",
+            "White ash = magnesium oxide",
+            "Non-metal oxides often acidic."
+          ],
+          "answer": 2,
+          "explanation": "White ash = magnesium oxide.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d6_c02",
+          "category": "u3_d6_B",
+          "category_label": "Day 6 — Metals Burned in Air — Metal Oxides · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d6_bank_07",
+          "question": "What is the key takeaway about **Activity 3.5 — burning copper**?",
+          "options": [
+            "Basic vs acidic oxides — opposite nature.",
+            "Iron rusts slowly at room temperature.",
+            "Black coating = CuO",
+            "Non-metal oxides often acidic."
+          ],
+          "answer": 2,
+          "explanation": "Black coating = CuO.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "C",
+          "unit_id": 3,
+          "concept_id": "u3_d6_c03",
+          "category": "u3_d6_C",
+          "category_label": "Day 6 — Metals Burned in Air — Metal Oxides · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d6_bank_08",
+          "question": "Which statement best describes **Metals react with oxygen in air**?",
+          "options": [
+            "Most metals combine with oxygen when heated or burned to form metal oxides.",
+            "Heat copper wire in flame — black copper(II) oxide CuO forms on surface.",
+            "NCERT Activity 3.",
+            "Non-metals combine with oxygen to form non-metal oxides — often acidic or neutral."
+          ],
+          "answer": 0,
+          "explanation": "Burning metal → metal oxide.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "A",
+          "unit_id": 3,
+          "concept_id": "u3_d6_c01",
+          "category": "u3_d6_A",
+          "category_label": "Day 6 — Metals Burned in Air — Metal Oxides · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d7_bank_09",
+          "question": "What is the key takeaway about **Sodium with cold water**?",
+          "options": [
+            "Na + cold water → NaOH + H₂",
+            "Conditions matter — cold vs hot vs steam.",
+            "Fe does not react with cold water.",
+            "Mg needs hot water — not cold."
+          ],
+          "answer": 0,
+          "explanation": "Na + cold water → NaOH + H₂.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d7_c02",
+          "category": "u3_d7_B",
+          "category_label": "Day 7 — Metals React with Water · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d7_bank_10",
+          "question": "What is the key takeaway about **Potassium with cold water**?",
+          "options": [
+            "Pop test = hydrogen.",
+            "K faster than Na — lower in series but same group",
+            "Reactivity decreases down practical list.",
+            "Na + cold water → NaOH + H₂."
+          ],
+          "answer": 1,
+          "explanation": "K faster than Na — lower in series but same group.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "C",
+          "unit_id": 3,
+          "concept_id": "u3_d7_c03",
+          "category": "u3_d7_C",
+          "category_label": "Day 7 — Metals React with Water · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "reactivity_series_order_error"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "title": "Ionic Compounds and Extraction",
+      "active": true,
+      "activity_refs": [
+        "3.8",
+        "3.9",
+        "3.10"
+      ],
+      "questions": [
+        {
+          "id": "u3_s2_d10_bank_01",
+          "question": "What is the key takeaway about **Full NCERT reactivity series**?",
+          "options": [
+            "Below H — no H₂ from dilute acid.",
+            "Top three react with cold water.",
+            "Higher in list = more reactive.",
+            "Hydrogen position between Pb and Cu"
+          ],
+          "answer": 3,
+          "explanation": "Hydrogen position between Pb and Cu.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d10_c02",
+          "category": "u3_d10_B",
+          "category_label": "Day 10 — The Reactivity Series · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "reactivity_series_order_error"
+        },
+        {
+          "id": "u3_s2_d10_bank_02",
+          "question": "What is the key takeaway about **Most reactive metals — K, Na, Ca**?",
+          "options": [
+            "Low reactivity → occur native/free.",
+            "React with dilute acids — above hydrogen.",
+            "Top three react with cold water",
+            "Top = most reactive; bottom = least."
+          ],
+          "answer": 2,
+          "explanation": "Top three react with cold water.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "C",
+          "unit_id": 3,
+          "concept_id": "u3_d10_c03",
+          "category": "u3_d10_C",
+          "category_label": "Day 10 — The Reactivity Series · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "reactivity_series_order_error"
+        },
+        {
+          "id": "u3_s2_d10_bank_03",
+          "question": "Which statement best describes **Reactivity series definition**?",
+          "options": [
+            "Hydrogen placed between lead and copper — metals above H displace H from dilute acids.",
+            "Reactivity series arranges metals in order of decreasing reactivity — most reactive at top.",
+            "Write full series → explain one reaction prediction (water/acid/displacement) → compare two metals → mnemonic.",
+            "Magnesium, aluminium, zinc, and iron react with acids; Al needs oxide removed; Fe rusts."
+          ],
+          "answer": 1,
+          "explanation": "Top = most reactive; bottom = least.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "A",
+          "unit_id": 3,
+          "concept_id": "u3_d10_c01",
+          "category": "u3_d10_A",
+          "category_label": "Day 10 — The Reactivity Series · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "reactivity_series_order_error"
+        },
+        {
+          "id": "u3_s2_d11_bank_04",
+          "question": "What is the key takeaway about **Metal atoms lose electrons**?",
+          "options": [
+            "Dot structure shows electron transfer.",
+            "Draw dot structure for marks.",
+            "Electron transfer = ionic bond formation.",
+            "Metal → positive ion (cation)"
+          ],
+          "answer": 3,
+          "explanation": "Metal → positive ion (cation).",
+          "day_id": 11,
+          "topic": 11,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d11_c02",
+          "category": "u3_d11_B",
+          "category_label": "Day 11 — How Metals and Non-metals React — Ions · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d11_bank_05",
+          "question": "What is the key takeaway about **Non-metal atoms gain electrons**?",
+          "options": [
+            "Dot structure shows electron transfer.",
+            "Non-metal → negative ion (anion)",
+            "Electron transfer = ionic bond formation.",
+            "Opposite behaviour enables ionic bond."
+          ],
+          "answer": 1,
+          "explanation": "Non-metal → negative ion (anion).",
+          "day_id": 11,
+          "topic": 11,
+          "level": "C",
+          "unit_id": 3,
+          "concept_id": "u3_d11_c03",
+          "category": "u3_d11_C",
+          "category_label": "Day 11 — How Metals and Non-metals React — Ions · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d11_bank_06",
+          "question": "Which statement best describes **How metals and non-metals react**?",
+          "options": [
+            "Electrovalency is the number of electrons lost or gained — equals charge on ion.",
+            "Metals: lose e⁻, form cations, low ionisation energy.",
+            "Explain electron transfer → NaCl formation with equations → dot structure → define ionic compound.",
+            "Metals and non-metals react by transfer of electrons — metal loses electrons, non-metal gains."
+          ],
+          "answer": 3,
+          "explanation": "Electron transfer = ionic bond formation.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "A",
+          "unit_id": 3,
+          "concept_id": "u3_d11_c01",
+          "category": "u3_d11_A",
+          "category_label": "Day 11 — How Metals and Non-metals React — Ions · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "ionic_bond_covalent_confusion"
+        },
+        {
+          "id": "u3_s2_d12_bank_07",
+          "question": "What is the key takeaway about **High melting and boiling points**?",
+          "options": [
+            "Same charge ions align and repel — crack.",
+            "No mobile ions = no current.",
+            "Strong ionic bonds need much heat to break",
+            "Conductivity condition is most tested."
+          ],
+          "answer": 2,
+          "explanation": "Strong ionic bonds need much heat to break.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d12_c02",
+          "category": "u3_d12_B",
+          "category_label": "Day 12 — Properties of Ionic Compounds · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "ionic_bond_covalent_confusion"
+        },
+        {
+          "id": "u3_s2_d12_bank_08",
+          "question": "What is the key takeaway about **Solubility in water**?",
+          "options": [
+            "Same charge ions align and repel — crack.",
+            "Molten = liquid ions = conductor.",
+            "Polar water dissolves ionic compounds",
+            "Dissolved ions carry current."
+          ],
+          "answer": 2,
+          "explanation": "Polar water dissolves ionic compounds.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "C",
+          "unit_id": 3,
+          "concept_id": "u3_d12_c03",
+          "category": "u3_d12_C",
+          "category_label": "Day 12 — Properties of Ionic Compounds · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "ionic_bond_covalent_confusion"
+        },
+        {
+          "id": "u3_s2_d12_bank_09",
+          "question": "Which statement best describes **Physical state of ionic compounds**?",
+          "options": [
+            "Water dissolves ionic compound — ions surrounded by water molecules and free to move.",
+            "Ionic compounds have high melting and boiling points — strong electrostatic forces between ions.",
+            "Ionic compounds are generally solid at room temperature — hard crystalline solids.",
+            "List five properties → explain conductivity solid vs molten vs aqueous → NaCl example for each."
+          ],
+          "answer": 2,
+          "explanation": "Solid at room temperature.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "A",
+          "unit_id": 3,
+          "concept_id": "u3_d12_c01",
+          "category": "u3_d12_A",
+          "category_label": "Day 12 — Properties of Ionic Compounds · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "ionic_bond_covalent_confusion"
+        },
+        {
+          "id": "u3_s2_d13_bank_10",
+          "question": "What is the key takeaway about **Minerals and ores**?",
+          "options": [
+            "Cu and Zn from sulphide ores.",
+            "Ore = economically extractable mineral",
+            "Reactive metals never found free.",
+            "Calcination vs roasting distinction key."
+          ],
+          "answer": 1,
+          "explanation": "Ore = economically extractable mineral.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d13_c02",
+          "category": "u3_d13_B",
+          "category_label": "Day 13 — Occurrence of Metals — Ores and Enrichment · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "title": "Corrosion Prevention and Alloys",
+      "active": true,
+      "activity_refs": [
+        "3.11",
+        "3.12",
+        "3.13"
+      ],
+      "questions": [
+        {
+          "id": "u3_s2_d14_bank_01",
+          "question": "What is the key takeaway about **Reduction of metal oxides**?",
+          "options": [
+            "HgO unstable on heating — releases Hg.",
+            "ZnO reduced by C at high temperature.",
+            "Electrolysis for K, Na, Ca, Mg, Al.",
+            "Remove oxygen from ore = reduction"
+          ],
+          "answer": 3,
+          "explanation": "Remove oxygen from ore = reduction.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d14_c02",
+          "category": "u3_d14_B",
+          "category_label": "Day 14 — Extracting Metals — Activity Series Methods · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d14_bank_02",
+          "question": "What is the key takeaway about **Iron extraction — blast furnace**?",
+          "options": [
+            "Al more reactive than Fe — reduces Fe₂O₃.",
+            "Blast furnace: coke + limestone + ore",
+            "More reactive = electrolysis.",
+            "Cu extracted by heating sulphide ore."
+          ],
+          "answer": 1,
+          "explanation": "Blast furnace: coke + limestone + ore.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "C",
+          "unit_id": 3,
+          "concept_id": "u3_d14_c03",
+          "category": "u3_d14_C",
+          "category_label": "Day 14 — Extracting Metals — Activity Series Methods · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d14_bank_03",
+          "question": "Which statement best describes **Extracting metals — overview**?",
+          "options": [
+            "Link reactivity to method → blast furnace equation → electrolysis for Al/Na → calcination/roasting before reduction.",
+            "Na, Ca, Mg, and Al extracted by electrolysis of molten chloride or oxide — too reactive for C reduction.",
+            "Method of extraction depends on reactivity — highly reactive need electrolysis; moderate use C/CO reduction.",
+            "Haematite reduced by CO in blast furnace at high temperature — molten iron collected."
+          ],
+          "answer": 2,
+          "explanation": "More reactive = electrolysis.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "A",
+          "unit_id": 3,
+          "concept_id": "u3_d14_c01",
+          "category": "u3_d14_A",
+          "category_label": "Day 14 — Extracting Metals — Activity Series Methods · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "reactivity_series_order_error"
+        },
+        {
+          "id": "u3_s2_d15_bank_04",
+          "question": "What is the key takeaway about **Electrolytic refining of copper**?",
+          "options": [
+            "Pure copper 99",
+            "Al self-protects; iron does not.",
+            "Needs both O₂ and H₂O for rust.",
+            "Anode dissolves; cathode gains pure metal."
+          ],
+          "answer": 0,
+          "explanation": "Pure copper 99.9% by this method.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d15_c02",
+          "category": "u3_d15_B",
+          "category_label": "Day 15 — Electrolytic Refining and Corrosion · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d15_bank_05",
+          "question": "What is the key takeaway about **Anode mud**?",
+          "options": [
+            "Pure copper 99.",
+            "Metal + environment → corroded product.",
+            "Less reactive impurities do not dissolve",
+            "Refining diagram + rust equation + conditions."
+          ],
+          "answer": 2,
+          "explanation": "Less reactive impurities do not dissolve.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "C",
+          "unit_id": 3,
+          "concept_id": "u3_d15_c03",
+          "category": "u3_d15_C",
+          "category_label": "Day 15 — Electrolytic Refining and Corrosion · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "reactivity_series_order_error"
+        },
+        {
+          "id": "u3_s2_d15_bank_06",
+          "question": "Which statement best describes **Electrolytic refining definition**?",
+          "options": [
+            "Iron rusts when both oxygen and water present — dry air or pure water alone insufficient.",
+            "Insoluble impurities (gold, silver) settle below anode during electrolytic refining — called anode mud.",
+            "Explain electrolytic refining of Cu → rusting equation and conditions → economic impact of corrosion.",
+            "Electrolytic refining purifies impure metal using electrolysis — pure metal deposited at cathode."
+          ],
+          "answer": 3,
+          "explanation": "Anode dissolves; cathode gains pure metal.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "A",
+          "unit_id": 3,
+          "concept_id": "u3_d15_c01",
+          "category": "u3_d15_A",
+          "category_label": "Day 15 — Electrolytic Refining and Corrosion · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u3_s2_d16_bank_07",
+          "question": "What is the key takeaway about **Painting and oiling**?",
+          "options": [
+            "Physical barrier prevents O₂ and H₂O contact",
+            "Chromium forms protective oxide layer.",
+            "Zn more reactive — sacrifices itself.",
+            "Reactivity series predicts all four."
+          ],
+          "answer": 0,
+          "explanation": "Physical barrier prevents O₂ and H₂O contact.",
+          "day_id": 16,
+          "topic": 16,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d16_c02",
+          "category": "u3_d16_B",
+          "category_label": "Day 16 — Prevention of Corrosion and Exam Review · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "corrosion_prevention_wrong"
+        },
+        {
+          "id": "u3_s2_d16_bank_08",
+          "question": "What is the key takeaway about **Alloying to prevent corrosion**?",
+          "options": [
+            "Chromium forms protective oxide layer",
+            "Zn more reactive — sacrifices itself.",
+            "Solid ionic does NOT conduct.",
+            "Know all activities and exceptions."
+          ],
+          "answer": 0,
+          "explanation": "Chromium forms protective oxide layer.",
+          "day_id": 16,
+          "topic": 16,
+          "level": "C",
+          "unit_id": 3,
+          "concept_id": "u3_d16_c03",
+          "category": "u3_d16_C",
+          "category_label": "Day 16 — Prevention of Corrosion and Exam Review · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "corrosion_prevention_wrong"
+        },
+        {
+          "id": "u3_s2_d16_bank_09",
+          "question": "Which statement best describes **Galvanisation**?",
+          "options": [
+            "Metals: lustrous, malleable, ductile, sonorous, good conductors.",
+            "Galvanisation coats iron with thin layer of zinc — Zn corrodes instead of Fe (sacrificial protection).",
+            "Unit 3 Metals and Non-metals complete — all 160 cards; proceed to Practice when unlocked.",
+            "More reactive metal (Zn, Mg) connected to iron — corrodes preferentially protecting iron."
+          ],
+          "answer": 1,
+          "explanation": "Zn more reactive — sacrifices itself.",
+          "day_id": 16,
+          "topic": 16,
+          "level": "A",
+          "unit_id": 3,
+          "concept_id": "u3_d16_c01",
+          "category": "u3_d16_A",
+          "category_label": "Day 16 — Prevention of Corrosion and Exam Review · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "reactivity_series_order_error"
+        },
+        {
+          "id": "u3_s2_d1_bank_10",
+          "question": "What is the key takeaway about **Activity 3.1 preview — appearance and hardness**?",
+          "options": [
+            "Dull + brittle + poor conductor = non-metal clues.",
+            "Lustre + malleability + conductivity = metal clues.",
+            "Physical = no new substance; chemical = reaction.",
+            "Observe before you react — physical properties first"
+          ],
+          "answer": 3,
+          "explanation": "Observe before you react — physical properties first.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 3,
+          "concept_id": "u3_d1_c05",
+          "category": "u3_d1_B",
+          "category_label": "Day 1 — Metals and Non-metals — Introduction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 3 — Metals and Non-metals",
+          "misconception": "displacement_reactivity_error"
+        }
+      ]
+    }
+  ]
 }

@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "unit_id": 1,
+    "chapter": 1,
+    "pdf": "jesc101.pdf",
+    "title": "Chemical Reactions and Equations"
+  },
+  "activities": [
+    {
+      "id": "1.1",
+      "title": "Burning magnesium ribbon",
+      "summary": "Clean Mg ribbon with sandpaper; burn in air; collect white magnesium oxide ash.",
+      "concept_ids": [
+        "u1_d1_c05",
+        "u1_d1_c06",
+        "u1_d5_c06"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "1.2",
+      "title": "Lead nitrate and potassium iodide",
+      "summary": "Mix Pb(NO₃)₂ and KI solutions; observe yellow precipitate of lead iodide.",
+      "concept_ids": [
+        "u1_d2_c07",
+        "u1_d10_c02",
+        "u1_d10_c03"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "1.3",
+      "title": "Zinc with dilute acid",
+      "summary": "Add dilute HCl or H₂SO₄ to zinc granules; test hydrogen gas with burning splint.",
+      "concept_ids": [
+        "u1_d2_c09",
+        "u1_d9_c04",
+        "u1_d2_c10"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "1.4",
+      "title": "Quick lime with water",
+      "summary": "Add water to calcium oxide; feel temperature rise as slaked lime forms.",
+      "concept_ids": [
+        "u1_d7_c03",
+        "u1_d7_c04",
+        "u1_d7_c08"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "1.5",
+      "title": "Heating ferrous sulphate",
+      "summary": "Heat green FeSO₄·7H₂O crystals; observe colour change and SO₂/SO₃ gases.",
+      "concept_ids": [
+        "u1_d8_c04",
+        "u1_d8_c01",
+        "u1_d8_c02"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "1.6",
+      "title": "Heating lead nitrate",
+      "summary": "Heat lead nitrate powder; observe brown NO₂ fumes and residue.",
+      "concept_ids": [
+        "u1_d8_c02",
+        "u1_d8_c01",
+        "u1_d11_c01"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "1.7",
+      "title": "Electrolysis of water",
+      "summary": "Pass current through acidified water; collect H₂ and O₂ in inverted tubes.",
+      "concept_ids": [
+        "u1_d8_c05",
+        "u1_d8_c06",
+        "u1_d8_c07"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "1.8",
+      "title": "Silver chloride in sunlight",
+      "summary": "Expose white AgCl to sunlight; it turns grey as silver and chlorine form.",
+      "concept_ids": [
+        "u1_d8_c06",
+        "u1_d8_c07",
+        "u1_d8_c08"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "1.9",
+      "title": "Iron nails in copper sulphate",
+      "summary": "Immerse iron in CuSO₄; blue colour fades and brown copper deposits on iron.",
+      "concept_ids": [
+        "u1_d9_c04",
+        "u1_d9_c05",
+        "u1_d9_c06"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "1.10",
+      "title": "Barium chloride and sodium sulphate",
+      "summary": "Mix solutions; white BaSO₄ precipitate forms.",
+      "concept_ids": [
+        "u1_d10_c02",
+        "u1_d10_c03",
+        "u1_d10_c04"
+      ],
+      "stage2_day": 20
+    },
+    {
+      "id": "1.11",
+      "title": "Heating copper powder",
+      "summary": "Heat copper in air; black CuO forms; reduction with hydrogen gives copper back.",
+      "concept_ids": [
+        "u1_d11_c01",
+        "u1_d11_c03",
+        "u1_d11_c06"
+      ],
+      "stage2_day": 20
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "Which of the statements about the reaction below are incorrect?\n2PbO(s) + C(s) → 2Pb(s) + CO₂(g)\n(a) Lead is getting reduced.\n(b) Carbon dioxide is getting oxidised.\n(c) Carbon is getting oxidised.\n(d) Lead oxide is getting reduced.",
+      "options": [
+        "(i) (a) and (b)",
+        "(ii) (a) and (c)",
+        "(iii) (a), (b) and (c)",
+        "(iv) all"
+      ],
+      "answer": 0,
+      "explanation": "PbO loses oxygen (reduced); C gains oxygen (oxidised to CO₂). Statements (a) and (b) are incorrect.",
+      "misconception": "oxidation_reduction_swap",
+      "source": "NCERT Ch 1 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "Fe₂O₃ + 2Al → Al₂O₃ + 2Fe\nThe above reaction is an example of a",
+      "options": [
+        "combination reaction",
+        "double displacement reaction",
+        "decomposition reaction",
+        "displacement reaction"
+      ],
+      "answer": 3,
+      "explanation": "Aluminium displaces iron from iron(III) oxide — a displacement (thermit-type) reaction.",
+      "misconception": "displacement_reactivity_error",
+      "source": "NCERT Ch 1 Exercises Q2"
+    },
+    {
+      "num": 3,
+      "question": "What happens when dilute hydrochloric acid is added to iron filings? Tick the correct answer.",
+      "options": [
+        "Hydrogen gas and iron chloride are produced.",
+        "Chlorine gas and iron hydroxide are produced.",
+        "No reaction takes place.",
+        "Iron salt and water are produced."
+      ],
+      "answer": 0,
+      "explanation": "Fe + 2HCl → FeCl₂ + H₂ — hydrogen gas evolves and iron(II) chloride forms.",
+      "misconception": "displacement_reactivity_error",
+      "source": "NCERT Ch 1 Exercises Q3"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Section 1.1 — Activity 1.1",
+      "question": "Why should a magnesium ribbon be cleaned before burning in air?",
+      "options": [
+        "To increase its weight before burning",
+        "To remove the oxide layer so it burns readily",
+        "To make it shine for observation only",
+        "To convert it to magnesium oxide first"
+      ],
+      "answer": 1,
+      "explanation": "Magnesium ribbon is cleaned with sandpaper to remove the oxide coating that would otherwise slow reaction with oxygen.",
+      "misconception": "physical_vs_chemical_change",
+      "source": "NCERT Ch 1 Intext Q1"
+    },
+    {
+      "ref": "Section 1.1.2 — balancing",
+      "question": "Is Mg + O₂ → MgO a balanced chemical equation?",
+      "options": [
+        "Yes, atoms are equal on both sides",
+        "No, oxygen atoms are not equal",
+        "No, magnesium atoms are not equal",
+        "It is a physical change equation"
+      ],
+      "answer": 1,
+      "explanation": "Left side has 2 O atoms in O₂ but only 1 O in MgO — the equation is unbalanced until written as 2Mg + O₂ → 2MgO.",
+      "misconception": "unbalanced_equation_accepted",
+      "source": "NCERT Ch 1 Intext"
+    },
+    {
+      "ref": "Section 1.2.1 — combination",
+      "question": "CaO + H₂O → Ca(OH)₂ releases heat. This reaction is best described as",
+      "options": [
+        "endothermic combination",
+        "exothermic combination",
+        "decomposition",
+        "double displacement"
+      ],
+      "answer": 1,
+      "explanation": "Calcium oxide and water combine to form a single product (slaked lime) with release of heat — exothermic combination.",
+      "misconception": "physical_vs_chemical_change",
+      "source": "NCERT Ch 1 Intext"
+    },
+    {
+      "ref": "Section 1.2.3 — displacement",
+      "question": "When an iron nail is dipped in blue copper sulphate solution, the solution turns pale green because",
+      "options": [
+        "iron dissolves without reaction",
+        "Fe²⁺ ions replace Cu²⁺ in solution",
+        "copper oxidises iron to rust",
+        "water evaporates from the solution"
+      ],
+      "answer": 1,
+      "explanation": "Fe displaces Cu from CuSO₄ forming FeSO₄ (pale green); copper metal deposits on the nail.",
+      "misconception": "displacement_reactivity_error",
+      "source": "NCERT Ch 1 Intext"
+    },
+    {
+      "ref": "Section 1.2.5 — redox",
+      "question": "In CuO + H₂ → Cu + H₂O, which substance is reduced?",
+      "options": [
+        "H₂",
+        "CuO",
+        "H₂O",
+        "Cu"
+      ],
+      "answer": 1,
+      "explanation": "CuO loses oxygen and is reduced to Cu; H₂ is oxidised to H₂O.",
+      "misconception": "oxidation_reduction_swap",
+      "source": "NCERT Ch 1 Intext"
+    }
+  ]
+}

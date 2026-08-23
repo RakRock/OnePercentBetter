@@ -2,9 +2,893 @@
   "meta": {
     "unit_id": 2,
     "stage": 2,
-    "active": false,
-    "total_mcqs": 0,
-    "description": "Stage 2 structured MCQ sessions \u2014 coming after Stage 1 concept completion"
+    "active": true,
+    "release": 5,
+    "total_mcqs": 40,
+    "pdf": "jesc102.pdf",
+    "note": "Stage 2: NCERT Exercises Q1–4 + Intext + concept bank. Activities 2.1–2.15 linked per day."
   },
-  "sessions": []
+  "sessions": [
+    {
+      "day": 17,
+      "title": "Acids, Bases and Indicators",
+      "active": true,
+      "activity_refs": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4"
+      ],
+      "questions": [
+        {
+          "id": "u2_d17_ncert_01",
+          "question": "A solution turns red litmus blue, its pH is likely to be",
+          "options": [
+            "1",
+            "4",
+            "5",
+            "10"
+          ],
+          "answer": 3,
+          "explanation": "Basic solutions turn red litmus blue; pH > 7 — here pH 10.",
+          "misconception": "ph_scale_reversed",
+          "concept_id": "",
+          "source": "NCERT Ch 2 Exercises Q1",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "ncert_ref": "NCERT Ch 2 Exercises Q1"
+        },
+        {
+          "id": "u2_d17_ncert_02",
+          "question": "A solution reacts with crushed egg-shells to give a gas that turns lime-water milky. The solution contains",
+          "options": [
+            "NaCl",
+            "HCl",
+            "LiCl",
+            "KCl"
+          ],
+          "answer": 1,
+          "explanation": "Egg shells contain CaCO₃; acids release CO₂ that turns lime water milky — HCl is an acid.",
+          "misconception": "litmus_colour_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 2 Exercises Q2",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "ncert_ref": "NCERT Ch 2 Exercises Q2"
+        },
+        {
+          "id": "u2_d17_intext_03",
+          "question": "Why should curd and sour substances not be kept in brass and copper vessels?",
+          "options": [
+            "They improve taste",
+            "Acids react with metal to form toxic compounds",
+            "They cool faster",
+            "They become alkaline"
+          ],
+          "answer": 1,
+          "explanation": "Acids in curd react with copper/brass (Cu/Zn) forming salts that can be harmful.",
+          "misconception": "litmus_colour_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 2 Intext Q1",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "ncert_ref": "NCERT Ch 2 Intext Q1"
+        },
+        {
+          "id": "u2_d17_intext_04",
+          "question": "Which gas is usually liberated when an acid reacts with a metal?",
+          "options": [
+            "Oxygen",
+            "Nitrogen",
+            "Hydrogen",
+            "Carbon dioxide"
+          ],
+          "answer": 2,
+          "explanation": "Acid + metal → salt + hydrogen gas (e.g. Zn + HCl → ZnCl₂ + H₂).",
+          "misconception": "neutralisation_products_error",
+          "concept_id": "",
+          "source": "NCERT Ch 2 Intext Q2",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "ncert_ref": "NCERT Ch 2 Intext Q2"
+        },
+        {
+          "id": "u2_d17_intext_05",
+          "question": "Why does an aqueous solution of an acid conduct electricity?",
+          "options": [
+            "Due to water only",
+            "Due to H⁺ (hydronium) ions in solution",
+            "Due to undissociated acid molecules",
+            "Acids are always metals"
+          ],
+          "answer": 1,
+          "explanation": "Acids produce H⁺(aq) ions in water which carry current.",
+          "misconception": "indicator_in_acid_base_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 2 Intext Q2.2",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "ncert_ref": "NCERT Ch 2 Intext Q2.2"
+        },
+        {
+          "id": "u2_d17_intext_06",
+          "question": "While diluting an acid, why is it recommended that the acid should be added to water and not water to the acid?",
+          "options": [
+            "Water is heavier",
+            "Adding water to acid can cause splashing due to large heat release",
+            "Acid evaporates in water",
+            "Water neutralises acid instantly"
+          ],
+          "answer": 1,
+          "explanation": "Dilution is highly exothermic; adding water to concentrated acid can splash hot acid — add acid to water slowly.",
+          "misconception": "dilution_order_wrong",
+          "concept_id": "",
+          "source": "NCERT Ch 2 Intext Q4",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "ncert_ref": "NCERT Ch 2 Intext Q4"
+        },
+        {
+          "id": "u2_d17_intext_07",
+          "question": "A neutral solution has a pH of",
+          "options": [
+            "0",
+            "7",
+            "14",
+            "1"
+          ],
+          "answer": 1,
+          "explanation": "pH 7 is neutral; below 7 acidic, above 7 basic.",
+          "misconception": "ph_scale_reversed",
+          "concept_id": "",
+          "source": "NCERT Ch 2 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "ncert_ref": "NCERT Ch 2 Intext"
+        },
+        {
+          "id": "u2_d17_intext_08",
+          "question": "An aqueous solution of sodium carbonate turns red litmus blue. It is",
+          "options": [
+            "acidic",
+            "basic",
+            "neutral",
+            "amphoteric"
+          ],
+          "answer": 1,
+          "explanation": "Na₂CO₃ is a salt of strong base and weak acid — its solution is basic.",
+          "misconception": "ph_scale_reversed",
+          "concept_id": "",
+          "source": "NCERT Ch 2 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "ncert_ref": "NCERT Ch 2 Intext"
+        },
+        {
+          "id": "u2_s2_d1_bank_09",
+          "question": "What is the key takeaway about **What are bases?**?",
+          "options": [
+            "Lime, antacids, and soap are common bases.",
+            "Mineral = inorganic; organic = carbon-containing acid.",
+            "Bitter + soapy feel + red litmus → blue = base",
+            "Many foods are naturally acidic."
+          ],
+          "answer": 2,
+          "explanation": "Bitter + soapy feel + red litmus → blue = base.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d1_c02",
+          "category": "u2_d1_B",
+          "category_label": "Day 1 — Acids, Bases and Salts — Introduction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "litmus_colour_confusion"
+        },
+        {
+          "id": "u2_s2_d1_bank_10",
+          "question": "What is the key takeaway about **What are salts?**?",
+          "options": [
+            "Indicators detect acid/base without tasting.",
+            "Salt = product of acid-base reaction (usually)",
+            "Strong = full ionisation; weak = partial.",
+            "Acids/bases → reactions → pH → salts → industry."
+          ],
+          "answer": 1,
+          "explanation": "Salt = product of acid-base reaction (usually).",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d1_c03",
+          "category": "u2_d1_C",
+          "category_label": "Day 1 — Acids, Bases and Salts — Introduction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "title": "Acid-Base Reactions and Neutralisation",
+      "active": true,
+      "activity_refs": [
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8"
+      ],
+      "questions": [
+        {
+          "id": "u2_d18_ncert_01",
+          "question": "10 mL of a solution of NaOH is found to be completely neutralised by 8 mL of a given solution of HCl. If we take 20 mL of the same solution of NaOH, the amount HCl solution (the same solution as before) required to neutralise it will be",
+          "options": [
+            "4 mL",
+            "8 mL",
+            "12 mL",
+            "16 mL"
+          ],
+          "answer": 3,
+          "explanation": "Double the NaOH volume requires double the HCl: 2 × 8 mL = 16 mL.",
+          "misconception": "neutralisation_products_error",
+          "concept_id": "",
+          "source": "NCERT Ch 2 Exercises Q3",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "ncert_ref": "NCERT Ch 2 Exercises Q3"
+        },
+        {
+          "id": "u2_d18_ncert_02",
+          "question": "Which one of the following types of medicines is used for treating indigestion?",
+          "options": [
+            "Antibiotic",
+            "Analgesic",
+            "Antacid",
+            "Antiseptic"
+          ],
+          "answer": 2,
+          "explanation": "Antacids neutralise excess stomach acid to relieve indigestion.",
+          "misconception": "neutralisation_products_error",
+          "concept_id": "",
+          "source": "NCERT Ch 2 Exercises Q4",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "ncert_ref": "NCERT Ch 2 Exercises Q4"
+        },
+        {
+          "id": "u2_s2_d4_bank_03",
+          "question": "What is the key takeaway about **Zinc and dilute HCl**?",
+          "options": [
+            "Zinc chloride + hydrogen gas",
+            "Same pattern: salt + H₂.",
+            "Pop sound = hydrogen confirmed.",
+            "Dilute acid + small pieces + splint test."
+          ],
+          "answer": 0,
+          "explanation": "Zinc chloride + hydrogen gas.",
+          "day_id": 4,
+          "topic": 4,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d4_c02",
+          "category": "u2_d4_B",
+          "category_label": "Day 4 — Acids React with Metals · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "dilution_order_wrong"
+        },
+        {
+          "id": "u2_s2_d4_bank_04",
+          "question": "What is the key takeaway about **Magnesium and dilute H₂SO₄**?",
+          "options": [
+            "Metal + H⁺ → salt + H₂.",
+            "Same pattern: salt + H₂",
+            "Equation + salt name + H₂ test.",
+            "Metal displaces hydrogen from acid."
+          ],
+          "answer": 1,
+          "explanation": "Same pattern: salt + H₂.",
+          "day_id": 4,
+          "topic": 4,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d4_c03",
+          "category": "u2_d4_C",
+          "category_label": "Day 4 — Acids React with Metals · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "dilution_order_wrong"
+        },
+        {
+          "id": "u2_s2_d4_bank_05",
+          "question": "Which statement best describes **Acid + metal reaction (general)**?",
+          "options": [
+            "Typical question: write equation, name salt, describe H₂ test with pop sound.",
+            "Zn + 2HCl → ZnCl₂ + H₂ — bubbles of hydrogen, zinc dissolves.",
+            "Only metals above hydrogen in reactivity series react with dilute acids to give H₂.",
+            "Acid reacts with metal to give salt and hydrogen gas."
+          ],
+          "answer": 3,
+          "explanation": "Metal displaces hydrogen from acid.",
+          "day_id": 4,
+          "topic": 4,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d4_c01",
+          "category": "u2_d4_A",
+          "category_label": "Day 4 — Acids React with Metals · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d5_bank_06",
+          "question": "What is the key takeaway about **Acid + hydrogencarbonate**?",
+          "options": [
+            "Milky = CO₂ confirmed.",
+            "Carbonate ion breaks down to CO₂ in acid.",
+            "Baking soda fizzes with vinegar",
+            "Sodium chloride + water + CO₂."
+          ],
+          "answer": 2,
+          "explanation": "Baking soda fizzes with vinegar.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c02",
+          "category": "u2_d5_B",
+          "category_label": "Day 5 — Acids with Carbonates and Hydrogencarbonates · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d5_bank_07",
+          "question": "What is the key takeaway about **Marble and dilute HCl**?",
+          "options": [
+            "Milky = CO₂ confirmed.",
+            "CO₂ gas evolves as bubbles.",
+            "Brisk bubbling = CO₂ evolution",
+            "Baking soda fizzes with vinegar."
+          ],
+          "answer": 2,
+          "explanation": "Brisk bubbling = CO₂ evolution.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c03",
+          "category": "u2_d5_C",
+          "category_label": "Day 5 — Acids with Carbonates and Hydrogencarbonates · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "dilution_order_wrong"
+        },
+        {
+          "id": "u2_s2_d5_bank_08",
+          "question": "Which statement best describes **Acid + carbonate (general)**?",
+          "options": [
+            "Write balanced equation + state CO₂ test (lime water turns milky) + name all products.",
+            "Pass CO₂ through lime water Ca(OH)₂ — turns milky due to CaCO₃ precipitate.",
+            "NCERT Activity 2.",
+            "Acid reacts with metal carbonate to give salt, water, and carbon dioxide."
+          ],
+          "answer": 3,
+          "explanation": "CO₂ gas evolves as bubbles.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c01",
+          "category": "u2_d5_A",
+          "category_label": "Day 5 — Acids with Carbonates and Hydrogencarbonates · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d6_bank_09",
+          "question": "What is the key takeaway about **NaOH and HCl**?",
+          "options": [
+            "Four-part answer scores well.",
+            "Heat released = exothermic.",
+            "Salt + water only in products",
+            "Base added to excess acid (or vice versa)."
+          ],
+          "answer": 2,
+          "explanation": "Salt + water only in products.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d6_c02",
+          "category": "u2_d6_B",
+          "category_label": "Day 6 — Neutralisation Reactions · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "neutralisation_products_error"
+        },
+        {
+          "id": "u2_s2_d6_bank_10",
+          "question": "What is the key takeaway about **H₂SO₄ and KOH**?",
+          "options": [
+            "Record temperature rise.",
+            "Same neutralisation pattern.",
+            "Balance OH⁻ with H⁺ count",
+            "Base added to excess acid (or vice versa)."
+          ],
+          "answer": 2,
+          "explanation": "Balance OH⁻ with H⁺ count.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d6_c03",
+          "category": "u2_d6_C",
+          "category_label": "Day 6 — Neutralisation Reactions · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "title": "pH Scale and Everyday Acids/Bases",
+      "active": true,
+      "activity_refs": [
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12"
+      ],
+      "questions": [
+        {
+          "id": "u2_s2_d8_bank_01",
+          "question": "What is the key takeaway about **Carbon dioxide and lime water**?",
+          "options": [
+            "Acidic oxide + Ca(OH)₂ pattern.",
+            "Acidic oxide + strong base.",
+            "Acidic oxide reacts with base",
+            "Basic vs acidic oxides — opposite partners."
+          ],
+          "answer": 2,
+          "explanation": "Acidic oxide reacts with base.",
+          "day_id": 8,
+          "topic": 8,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d8_c02",
+          "category": "u2_d8_B",
+          "category_label": "Day 8 — Non-metallic Oxides and Bases · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d8_bank_02",
+          "question": "What is the key takeaway about **Carbon dioxide and sodium hydroxide**?",
+          "options": [
+            "Non-metal oxides → acids in atmosphere.",
+            "Acidic oxide + strong base",
+            "Basic vs acidic oxides — opposite partners.",
+            "Highly acidic oxide in water."
+          ],
+          "answer": 1,
+          "explanation": "Acidic oxide + strong base.",
+          "day_id": 8,
+          "topic": 8,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d8_c03",
+          "category": "u2_d8_C",
+          "category_label": "Day 8 — Non-metallic Oxides and Bases · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d8_bank_03",
+          "question": "Which statement best describes **Non-metallic oxides are acidic**?",
+          "options": [
+            "SO₂ + 2NaOH → Na₂SO₃ + H₂O — sulphur dioxide is acidic oxide.",
+            "SO₂ and NO₂ (non-metal oxides) dissolve in rain forming acids — acid rain damages buildings and plants.",
+            "Oxides of non-metals are generally acidic — dissolve in water to form acids; react with bases.",
+            "SO₃ + H₂O → H₂SO₄ — sulphur trioxide forms sulphuric acid in water."
+          ],
+          "answer": 2,
+          "explanation": "Non-metal oxides = acidic oxides.",
+          "day_id": 8,
+          "topic": 8,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d8_c01",
+          "category": "u2_d8_A",
+          "category_label": "Day 8 — Non-metallic Oxides and Bases · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d9_bank_04",
+          "question": "What is the key takeaway about **Common feature — OH⁻ in bases**?",
+          "options": [
+            "More H⁺ = stronger conductivity.",
+            "Bases characterised by OH⁻ in water",
+            "H₃O⁺ is H⁺ in aqueous acid.",
+            "More OH⁻ = stronger base in water."
+          ],
+          "answer": 1,
+          "explanation": "Bases characterised by OH⁻ in water.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d9_c02",
+          "category": "u2_d9_B",
+          "category_label": "Day 9 — What Acids and Bases Have in Common · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d9_bank_05",
+          "question": "What is the key takeaway about **Acids need water to show acidity**?",
+          "options": [
+            "More H⁺ = stronger conductivity.",
+            "Ions carry charge → conductivity.",
+            "Ions in water explain all Ch 2 behaviour.",
+            "No water → no H⁺ → no acid behaviour"
+          ],
+          "answer": 3,
+          "explanation": "No water → no H⁺ → no acid behaviour.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d9_c03",
+          "category": "u2_d9_C",
+          "category_label": "Day 9 — What Acids and Bases Have in Common · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d9_bank_06",
+          "question": "Which statement best describes **Common feature — H⁺ in acids**?",
+          "options": [
+            "NaOH solid must dissolve in water to produce OH⁻ and show basic properties.",
+            "All acids produce hydrogen ions H⁺ (or hydronium H₃O⁺) in aqueous solution.",
+            "Strong bases (NaOH, KOH) ionise completely; weak bases (NH₄OH) partially.",
+            "All bases produce hydroxide ions OH⁻ in aqueous solution (or accept H⁺)."
+          ],
+          "answer": 1,
+          "explanation": "Acids characterised by H⁺ in water.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d9_c01",
+          "category": "u2_d9_A",
+          "category_label": "Day 9 — What Acids and Bases Have in Common · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d10_bank_07",
+          "question": "What is the key takeaway about **Bases in water — OH⁻ formation**?",
+          "options": [
+            "More water → fewer H⁺ per mL.",
+            "Acid to water — with stirring.",
+            "Any H⁺ present → acidic to indicator.",
+            "OH⁻ causes red litmus → blue"
+          ],
+          "answer": 3,
+          "explanation": "OH⁻ causes red litmus → blue.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d10_c02",
+          "category": "u2_d10_B",
+          "category_label": "Day 10 — Acids and Bases in Water — Ions and Dilution · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "litmus_colour_confusion"
+        },
+        {
+          "id": "u2_s2_d10_bank_08",
+          "question": "What is the key takeaway about **Dilution of acids**?",
+          "options": [
+            "Concentration ≠ strength.",
+            "Large water volume spreads heat.",
+            "Acid to water — with stirring",
+            "Water enables acid ionisation."
+          ],
+          "answer": 2,
+          "explanation": "Acid to water — with stirring.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d10_c03",
+          "category": "u2_d10_C",
+          "category_label": "Day 10 — Acids and Bases in Water — Ions and Dilution · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "dilution_order_wrong"
+        },
+        {
+          "id": "u2_s2_d10_bank_09",
+          "question": "Which statement best describes **Acids in water — ion formation**?",
+          "options": [
+            "Diluting acid reduces H⁺ concentration per unit volume — less corrosive but still acidic.",
+            "When acid dissolves in water, it releases H⁺ ions — responsible for all acidic properties.",
+            "Explain H⁺/OH⁻ in water; dilution definition; acid-to-water rule; distinguish concentration from strength.",
+            "Dilution is exothermic; adding acid to large volume of water absorbs heat safely."
+          ],
+          "answer": 1,
+          "explanation": "Water enables acid ionisation.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d10_c01",
+          "category": "u2_d10_A",
+          "category_label": "Day 10 — Acids and Bases in Water — Ions and Dilution · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d11_bank_10",
+          "question": "What is the key takeaway about **pH of acids**?",
+          "options": [
+            "More H⁺ ionisation → lower pH.",
+            "Definition + scale + indicator + example.",
+            "Lower pH = more acidic; higher = more basic.",
+            "pH 0–6 = acidic range"
+          ],
+          "answer": 3,
+          "explanation": "pH 0–6 = acidic range.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d11_c02",
+          "category": "u2_d11_B",
+          "category_label": "Day 11 — pH Scale and Strength of Acids/Bases · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "title": "Salts and Chemicals from Common Salt",
+      "active": true,
+      "activity_refs": [
+        "2.13",
+        "2.14",
+        "2.15"
+      ],
+      "questions": [
+        {
+          "id": "u2_s2_d12_bank_01",
+          "question": "What is the key takeaway about **pH in stomach**?",
+          "options": [
+            "pH affects plant pigment availability.",
+            "Know sting type → choose acid or base remedy.",
+            "Mild base antacid relieves pain",
+            "Simple indicators for everyday checks."
+          ],
+          "answer": 2,
+          "explanation": "Mild base antacid relieves pain.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d12_c02",
+          "category": "u2_d12_B",
+          "category_label": "Day 12 — Importance of pH in Everyday Life · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d12_bank_02",
+          "question": "What is the key takeaway about **pH in mouth**?",
+          "options": [
+            "pH affects plant pigment availability.",
+            "Monitor pH to protect aquatic life.",
+            "Keep mouth pH above 5",
+            "Low pH inhibits bacterial growth."
+          ],
+          "answer": 2,
+          "explanation": "Keep mouth pH above 5.5.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d12_c03",
+          "category": "u2_d12_C",
+          "category_label": "Day 12 — Importance of pH in Everyday Life · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d12_bank_03",
+          "question": "Which statement best describes **pH in soil**?",
+          "options": [
+            "pH affects bacteria growth; acidic foods (pickles, citrus) preserve better.",
+            "Stomach produces HCl pH ~1–2 for digestion; excess acid causes indigestion — treated with antacids.",
+            "Plants need specific soil pH; acidic soil treated with lime Ca(OH)₂; basic soil with organic matter.",
+            "Give three examples: soil pH + lime, stomach + antacid, bee/wasp sting + treatment; explain each."
+          ],
+          "answer": 2,
+          "explanation": "Farmer adjusts soil pH for crop.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d12_c01",
+          "category": "u2_d12_A",
+          "category_label": "Day 12 — Importance of pH in Everyday Life · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d13_bank_04",
+          "question": "What is the key takeaway about **Family of salts — NaCl**?",
+          "options": [
+            "Nitrate from nitric acid.",
+            "Chloride from HCl; sodium from NaOH",
+            "Positive + negative ion combined.",
+            "Definition + formation + examples."
+          ],
+          "answer": 1,
+          "explanation": "Chloride from HCl; sodium from NaOH.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d13_c02",
+          "category": "u2_d13_B",
+          "category_label": "Day 13 — Salts — Introduction and Family of Salts · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d13_bank_05",
+          "question": "What is the key takeaway about **Zinc sulphate ZnSO₄**?",
+          "options": [
+            "Chloride from hydrochloric acid.",
+            "Copper sulphate — sulphate family.",
+            "Sulphate from sulphuric acid.",
+            "Sulphate from H₂SO₄"
+          ],
+          "answer": 3,
+          "explanation": "Sulphate from H₂SO₄.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d13_c03",
+          "category": "u2_d13_C",
+          "category_label": "Day 13 — Salts — Introduction and Family of Salts · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d13_bank_06",
+          "question": "Which statement best describes **What is a salt?**?",
+          "options": [
+            "ZnSO₄ from H₂SO₄ + Zn or ZnO + H₂SO₄ — white crystals used in medicine and agriculture.",
+            "CaCl₂ from HCl + CaCO₃ or CaO + HCl — de-icing roads, drying agent.",
+            "Salt is ionic compound formed from acid-base reaction, named by cation + anion — NaCl, ZnSO₄, CuSO₄.",
+            "Define salt → formation from neutralisation → name three salts with equations → family from HCl, H₂SO₄, HNO₃."
+          ],
+          "answer": 2,
+          "explanation": "Positive + negative ion combined.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d13_c01",
+          "category": "u2_d13_A",
+          "category_label": "Day 13 — Salts — Introduction and Family of Salts · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d14_bank_07",
+          "question": "What is the key takeaway about **Strong acid + strong base salt**?",
+          "options": [
+            "Indicator shows acidic/basic/neutral salt.",
+            "CH₃COO⁻ ion causes basicity in water.",
+            "Gold standard neutral salt.",
+            "Neither ion hydrolyses significantly"
+          ],
+          "answer": 3,
+          "explanation": "Neither ion hydrolyses significantly.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d14_c02",
+          "category": "u2_d14_B",
+          "category_label": "Day 14 — pH of Salts · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d14_bank_08",
+          "question": "What is the key takeaway about **Strong acid + weak base salt**?",
+          "options": [
+            "Carbonate ion CO₃²⁻ makes solution basic.",
+            "NH₄⁺ ion causes acidity in water",
+            "Parent acid and base strength matters.",
+            "Both ions hydrolyse — pH near 7."
+          ],
+          "answer": 1,
+          "explanation": "NH₄⁺ ion causes acidity in water.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d14_c03",
+          "category": "u2_d14_C",
+          "category_label": "Day 14 — pH of Salts · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "neutralisation_products_error"
+        },
+        {
+          "id": "u2_s2_d14_bank_09",
+          "question": "Which statement best describes **pH of salt solutions — overview**?",
+          "options": [
+            "Four combinations table: strong+strong neutral, strong acid+weak base acidic, weak acid+strong base basic; give examples.",
+            "NaCl from HCl + NaOH — strong acid + strong base — aqueous solution pH 7.",
+            "Salt solutions can be neutral, acidic, or basic depending on strength of acid and base that formed them.",
+            "Salts from strong acid and weak base are acidic — pH below 7 — e."
+          ],
+          "answer": 2,
+          "explanation": "Parent acid and base strength matters.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d14_c01",
+          "category": "u2_d14_A",
+          "category_label": "Day 14 — pH of Salts · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        },
+        {
+          "id": "u2_s2_d15_bank_10",
+          "question": "What is the key takeaway about **Sodium hydroxide from chlor-alkali**?",
+          "options": [
+            "Major industrial alkali",
+            "Basic salt — pH > 7 in solution.",
+            "Chlorine content gives bleaching power.",
+            "Salt + water → three valuable products."
+          ],
+          "answer": 0,
+          "explanation": "Major industrial alkali.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d15_c02",
+          "category": "u2_d15_B",
+          "category_label": "Day 15 — Chemicals from Common Salt · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 2 — Acids, Bases and Salts",
+          "misconception": "ph_scale_reversed"
+        }
+      ]
+    }
+  ]
 }

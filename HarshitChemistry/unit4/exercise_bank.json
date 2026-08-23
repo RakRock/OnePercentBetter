@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "active": true,
+    "stage": 3,
+    "range": "Exercises Q4–Q15",
+    "note": "Exam-style written questions. Chapter 4 has 3 MCQs (Stage 2) and 12 long-form exercises here.",
+    "chapter": "NCERT Class 10 Science Ch 4",
+    "pdf": "jesc104.pdf",
+    "unit_id": 4
+  },
+  "questions": [
+    {
+      "id": "u4_ex_q04",
+      "num": 4,
+      "type": "explain",
+      "marks": 3,
+      "question": "Explain the nature of the covalent bond using the bond formation in CH₃Cl.",
+      "hints": [
+        "C and H/Cl share electrons.",
+        "Single shared pairs.",
+        "Complete outer shells."
+      ],
+      "model_answer": "A **covalent bond** is formed by **sharing of electron pairs** between atoms so each achieves a **stable outer shell**.\n\nIn **CH₃Cl**: carbon shares **3 electrons** with three H atoms and **1 electron** with Cl — **four single covalent bonds**; each atom gets a noble-gas-like outer configuration.",
+      "marking_points": [
+        "Covalent bond = shared electron pair",
+        "CH₃Cl has 4 single bonds",
+        "Atoms achieve stable outer shell"
+      ],
+      "common_mistakes": [
+        "Describing ionic transfer for CH₃Cl",
+        "Wrong bond count"
+      ],
+      "concept_ids": [
+        "u4_d2_c01",
+        "u4_d2_c04",
+        "u4_d2_c06"
+      ],
+      "misconception": "ionic_covalent_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q4"
+    },
+    {
+      "id": "u4_ex_q05",
+      "num": 5,
+      "type": "diagram",
+      "marks": 4,
+      "question": "Draw the electron dot structures for\n(a) ethanoic acid.\n(b) H₂S.\n(c) propanone.\n(d) F₂.",
+      "hints": [
+        "Show shared pairs as dots/crosses.",
+        "Ethanoic acid: COOH group.",
+        "Propanone: C=O between carbons."
+      ],
+      "model_answer": "(a) **Ethanoic acid (CH₃COOH):** methyl group bonded to carboxyl — C=O and O–H on same carbon.\n\n(b) **H₂S:** H–S–H with two lone pairs on S.\n\n(c) **Propanone (CH₃COCH₃):** central C=O with CH₃ groups on both sides.\n\n(d) **F₂:** F–F single bond with three lone pairs on each F.",
+      "marking_points": [
+        "Four correct electron dot structures",
+        "Correct number of bonds in each"
+      ],
+      "common_mistakes": [
+        "Ionic structure shown",
+        "Missing lone pairs on heteroatoms"
+      ],
+      "concept_ids": [
+        "u4_d2_c04",
+        "u4_d6_c04",
+        "u4_d7_c02"
+      ],
+      "misconception": "ionic_covalent_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q5"
+    },
+    {
+      "id": "u4_ex_q06",
+      "num": 6,
+      "type": "explain",
+      "marks": 3,
+      "question": "What is an homologous series? Explain with an example.",
+      "hints": [
+        "Same functional group.",
+        "Successive members differ by CH₂.",
+        "Gradation in physical properties."
+      ],
+      "model_answer": "A **homologous series** is a family of compounds with the **same functional group** and **similar chemical properties**, successive members differing by a **–CH₂–** unit.\n\nExample: **Alcohols** — CH₃OH (methanol), C₂H₅OH (ethanol), C₃H₇OH (propanol) … differ by CH₂; boiling points increase with chain length.",
+      "marking_points": [
+        "Definition with functional group + CH₂ difference",
+        "Example series named",
+        "Similar chemical properties mentioned"
+      ],
+      "common_mistakes": [
+        "No CH₂ difference stated",
+        "Wrong example (not a series)"
+      ],
+      "concept_ids": [
+        "u4_d5_c01",
+        "u4_d5_c03",
+        "u4_d5_c05"
+      ],
+      "misconception": "functional_group_naming_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q6"
+    },
+    {
+      "id": "u4_ex_q07",
+      "num": 7,
+      "type": "differentiate",
+      "marks": 4,
+      "question": "How can ethanol and ethanoic acid be differentiated on the basis of their physical and chemical properties?",
+      "hints": [
+        "Smell, pH, reaction with Na₂CO₃.",
+        "Ethanoic acid is sour / turns blue litmus red.",
+        "Ethanol neutral — no reaction with carbonates."
+      ],
+      "model_answer": "**Physical:** Ethanol has **pleasant alcoholic odour**; ethanoic acid has **pungent vinegar smell**. Ethanoic acid **turns blue litmus red** (acidic); ethanol is **neutral**.\n\n**Chemical:** Ethanoic acid reacts with **Na₂CO₃/NaHCO₃** to evolve **CO₂**; ethanol does **not**. Ethanoic acid **esterifies** with alcohol in presence of acid catalyst; ethanol alone does not show this as acid.",
+      "marking_points": [
+        "At least one physical difference",
+        "At least one chemical test (e.g. carbonate reaction)",
+        "Correct observation for each"
+      ],
+      "common_mistakes": [
+        "Only physical or only chemical",
+        "Swapping properties"
+      ],
+      "concept_ids": [
+        "u4_d11_c01",
+        "u4_d12_c01",
+        "u4_d12_c03"
+      ],
+      "misconception": "functional_group_naming_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q7"
+    },
+    {
+      "id": "u4_ex_q08",
+      "num": 8,
+      "type": "explain",
+      "marks": 3,
+      "question": "Why does micelle formation take place when soap is added to water? Will a micelle be formed in other solvents such as ethanol also?",
+      "hints": [
+        "Soap has hydrophobic tail and hydrophilic head.",
+        "Micelles trap oily dirt.",
+        "Ethanol dissolves both — no micelles."
+      ],
+      "model_answer": "Soap molecules have a **hydrophobic hydrocarbon tail** and **hydrophilic ionic head**. In water, tails cluster inward away from water while heads face outward → **micelle**.\n\nIn **ethanol**, soap **dissolves** uniformly — **micelles do not form** because ethanol solubilises both polar and non-polar parts.",
+      "marking_points": [
+        "Hydrophobic/hydrophilic parts described",
+        "Micelle structure in water",
+        "No micelles in ethanol — reason given"
+      ],
+      "common_mistakes": [
+        "No mention of dual nature of soap",
+        "Saying micelles form in ethanol"
+      ],
+      "concept_ids": [
+        "u4_d13_c07",
+        "u4_d13_c09",
+        "u4_d13_c10"
+      ],
+      "misconception": "soap_detergent_hard_water_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q8"
+    },
+    {
+      "id": "u4_ex_q09",
+      "num": 9,
+      "type": "explain",
+      "marks": 2,
+      "question": "Why are carbon and its compounds used as fuels for most applications?",
+      "hints": [
+        "Burn in oxygen releasing large energy.",
+        "Hydrocarbons combust to CO₂ and H₂O.",
+        "Readily available (coal, petroleum, natural gas)."
+      ],
+      "model_answer": "Carbon compounds (hydrocarbons) **burn in oxygen** releasing **large amounts of heat energy** with **controlled flame**.\n\nThey are **abundant** (coal, petroleum, natural gas, LPG) and **easy to store/transport**, making them ideal **fuels** for homes, industry, and vehicles.",
+      "marking_points": [
+        "Exothermic combustion",
+        "Hydrocarbons as energy source",
+        "Availability/practical use"
+      ],
+      "common_mistakes": [
+        "Saying they are nuclear fuels",
+        "No energy release mentioned"
+      ],
+      "concept_ids": [
+        "u4_d4_c01",
+        "u4_d10_c01",
+        "u4_d10_c03"
+      ],
+      "misconception": "addition_substitution_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q9"
+    },
+    {
+      "id": "u4_ex_q10",
+      "num": 10,
+      "type": "explain",
+      "marks": 3,
+      "question": "Explain the formation of scum when hard water is treated with soap.",
+      "hints": [
+        "Hard water has Ca²⁺ and Mg²⁺.",
+        "Soap is sodium/potassium salt of fatty acids.",
+        "Insoluble Ca/Mg salts = scum."
+      ],
+      "model_answer": "**Hard water** contains **Ca²⁺ and Mg²⁺ ions**. Soap (sodium stearate etc.) reacts with these ions to form **insoluble calcium/magnesium salts** of fatty acids — **scum** — instead of lather.\n\n2C₁₇H₃₅COONa + Ca²⁺ → (C₁₇H₃₅COO)₂Ca ↓ + 2Na⁺",
+      "marking_points": [
+        "Ca²⁺/Mg²⁺ in hard water",
+        "Insoluble salt formed with soap",
+        "Scum reduces lather"
+      ],
+      "common_mistakes": [
+        "Scum is soap itself",
+        "No mention of calcium/magnesium ions"
+      ],
+      "concept_ids": [
+        "u4_d13_c04",
+        "u4_d13_c06",
+        "u4_d13_c08"
+      ],
+      "misconception": "soap_detergent_hard_water_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q10"
+    },
+    {
+      "id": "u4_ex_q11",
+      "num": 11,
+      "type": "explain",
+      "marks": 2,
+      "question": "What change will you observe if you test soap with litmus paper (red and blue)?",
+      "hints": [
+        "Soap is basic salt of strong base + weak acid.",
+        "Turns red litmus blue.",
+        "Blue litmus unchanged."
+      ],
+      "model_answer": "Soap solution is **basic** (salt of strong base NaOH/KOH and weak fatty acid).\n\n**Red litmus turns blue**; **blue litmus stays blue** (no change).",
+      "marking_points": [
+        "Soap is basic",
+        "Red litmus → blue",
+        "Blue litmus unchanged"
+      ],
+      "common_mistakes": [
+        "Saying soap is acidic",
+        "Both litmus papers turn red"
+      ],
+      "concept_ids": [
+        "u4_d13_c02",
+        "u4_d13_c04",
+        "u4_d13_c06"
+      ],
+      "misconception": "soap_detergent_hard_water_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q11"
+    },
+    {
+      "id": "u4_ex_q12",
+      "num": 12,
+      "type": "explain",
+      "marks": 3,
+      "question": "What is hydrogenation? What is its industrial application?",
+      "hints": [
+        "Addition of H₂ to unsaturated compounds.",
+        "Nickel catalyst.",
+        "Vanaspati ghee from vegetable oils."
+      ],
+      "model_answer": "**Hydrogenation** is the **addition of hydrogen** to an **unsaturated compound** (alkene/vegetable oil) in presence of a **catalyst** (Ni/Pd/Pt).\n\n**Industrial use:** Manufacture of **vanaspati ghee** by hydrogenating **vegetable oils** (liquid) to **saturated fats** (semi-solid).",
+      "marking_points": [
+        "Hydrogenation defined as H₂ addition",
+        "Catalyst mentioned",
+        "Vanaspati / vegetable oil example"
+      ],
+      "common_mistakes": [
+        "Calling it substitution",
+        "No industrial application"
+      ],
+      "concept_ids": [
+        "u4_d9_c01",
+        "u4_d9_c03",
+        "u4_d9_c05"
+      ],
+      "misconception": "addition_substitution_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q12"
+    },
+    {
+      "id": "u4_ex_q13",
+      "num": 13,
+      "type": "identify",
+      "marks": 2,
+      "question": "Which of the following hydrocarbons undergo addition reactions: C₂H₆, C₃H₈, C₃H₆, C₂H₂ and CH₄.",
+      "hints": [
+        "Addition in unsaturated (double/triple bond).",
+        "Alkenes and alkynes.",
+        "Alkanes undergo substitution."
+      ],
+      "model_answer": "Hydrocarbons that undergo **addition reactions** are **unsaturated** ones: **C₃H₆ (propene)** and **C₂H₂ (ethyne)**.\n\n**C₂H₆, C₃H₈, CH₄** are **saturated alkanes** — undergo **substitution**, not addition.",
+      "marking_points": [
+        "C₃H₆ and C₂H₂ identified",
+        "Reason: unsaturated / double or triple bond"
+      ],
+      "common_mistakes": [
+        "Including alkanes",
+        "All five listed"
+      ],
+      "concept_ids": [
+        "u4_d4_c01",
+        "u4_d4_c03",
+        "u4_d9_c01"
+      ],
+      "misconception": "addition_substitution_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q13"
+    },
+    {
+      "id": "u4_ex_q14",
+      "num": 14,
+      "type": "explain",
+      "marks": 2,
+      "question": "Give a test that can be used to differentiate between saturated and unsaturated hydrocarbons.",
+      "hints": [
+        "Bromine water test.",
+        "Unsaturated decolourises.",
+        "Saturated — no change."
+      ],
+      "model_answer": "Add **bromine water** (reddish-brown) to the hydrocarbon.\n\n**Unsaturated** hydrocarbon **decolourises** bromine water (addition reaction).\n\n**Saturated** hydrocarbon **does not decolourise** bromine water.",
+      "marking_points": [
+        "Bromine water test described",
+        "Different observation for saturated vs unsaturated"
+      ],
+      "common_mistakes": [
+        "Using litmus test",
+        "Wrong reagent"
+      ],
+      "concept_ids": [
+        "u4_d4_c04",
+        "u4_d4_c07",
+        "u4_d4_c08"
+      ],
+      "misconception": "saturated_unsaturated_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q14"
+    },
+    {
+      "id": "u4_ex_q15",
+      "num": 15,
+      "type": "explain",
+      "marks": 4,
+      "question": "Explain the mechanism of the cleaning action of soaps.",
+      "hints": [
+        "Hydrophobic tail dissolves in oil.",
+        "Hydrophilic head in water.",
+        "Micelles washed away."
+      ],
+      "model_answer": "Soap **cleans** by **emulsifying oily dirt**:\n1. Soap molecules have **hydrophobic tail** (dissolves in oil/grease) and **hydrophilic head** (in water).\n2. In water, molecules form **micelles** — tails inward trapping oil, heads outward.\n3. **Agitation** breaks grease into droplets surrounded by soap.\n4. Micelles stay **dispersed** in water and are **rinsed away**, removing dirt.",
+      "marking_points": [
+        "Dual nature of soap molecule",
+        "Micelle formation",
+        "Oil trapped inside micelle",
+        "Rinsing removes dirt"
+      ],
+      "common_mistakes": [
+        "Only saying soap is basic",
+        "No micelle/emulsification"
+      ],
+      "concept_ids": [
+        "u4_d13_c07",
+        "u4_d13_c09",
+        "u4_d13_c10"
+      ],
+      "misconception": "soap_detergent_hard_water_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 4 Exercises Q15"
+    }
+  ]
+}

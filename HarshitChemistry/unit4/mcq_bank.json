@@ -2,9 +2,895 @@
   "meta": {
     "unit_id": 4,
     "stage": 2,
-    "active": false,
-    "total_mcqs": 0,
-    "description": "Stage 2 structured MCQ sessions \u2014 coming after Stage 1 concept completion"
+    "active": true,
+    "release": 5,
+    "total_mcqs": 40,
+    "pdf": "jesc104.pdf",
+    "note": "Stage 2: NCERT Exercises Q1–3 + Intext + concept bank. Activities 4.1–4.12 linked per day."
   },
-  "sessions": []
+  "sessions": [
+    {
+      "day": 17,
+      "title": "Covalent Bonding and Homologous Series",
+      "active": true,
+      "activity_refs": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "questions": [
+        {
+          "id": "u4_d17_ncert_01",
+          "question": "Ethane, with the molecular formula C₂H₆ has",
+          "options": [
+            "6 covalent bonds",
+            "7 covalent bonds",
+            "8 covalent bonds",
+            "9 covalent bonds"
+          ],
+          "answer": 1,
+          "explanation": "C₂H₆ has 1 C–C + 6 C–H = 7 single covalent bonds.",
+          "misconception": "saturated_unsaturated_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 4 Exercises Q1",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "ncert_ref": "NCERT Ch 4 Exercises Q1"
+        },
+        {
+          "id": "u4_d17_ncert_02",
+          "question": "Butanone is a four-carbon compound with the functional group",
+          "options": [
+            "carboxylic acid",
+            "aldehyde",
+            "ketone",
+            "alcohol"
+          ],
+          "answer": 2,
+          "explanation": "Butanone (CH₃COC₂H₅) contains the ketone (–CO–) functional group.",
+          "misconception": "functional_group_naming_error",
+          "concept_id": "",
+          "source": "NCERT Ch 4 Exercises Q2",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "ncert_ref": "NCERT Ch 4 Exercises Q2"
+        },
+        {
+          "id": "u4_d17_intext_03",
+          "question": "Carbon compounds are generally poor conductors because they have",
+          "options": [
+            "ionic bonds",
+            "covalent bonds with shared electrons",
+            "free electrons like metals",
+            "metallic bonds"
+          ],
+          "answer": 1,
+          "explanation": "Carbon compounds form covalent bonds — no free ions/electrons in solid state.",
+          "misconception": "ionic_covalent_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 4 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "ncert_ref": "NCERT Ch 4 Intext"
+        },
+        {
+          "id": "u4_d17_intext_04",
+          "question": "Carbon forms a large number of compounds mainly due to",
+          "options": [
+            "ionic bonding",
+            "catenation and tetravalency",
+            "metallic nature",
+            "high melting point"
+          ],
+          "answer": 1,
+          "explanation": "Catenation (self-linking) and tetravalency give carbon its versatility.",
+          "misconception": "ionic_covalent_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 4 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "ncert_ref": "NCERT Ch 4 Intext"
+        },
+        {
+          "id": "u4_d17_intext_05",
+          "question": "The general formula of alkanes is",
+          "options": [
+            "CₙH₂ₙ",
+            "CₙH₂ₙ₊₂",
+            "CₙH₂ₙ₋₂",
+            "CₙHₙ"
+          ],
+          "answer": 1,
+          "explanation": "Alkanes are saturated with formula CₙH₂ₙ₊₂.",
+          "misconception": "saturated_unsaturated_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 4 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "ncert_ref": "NCERT Ch 4 Intext"
+        },
+        {
+          "id": "u4_d17_intext_06",
+          "question": "Bromine water decolourises when added to",
+          "options": [
+            "ethane",
+            "propane",
+            "ethene",
+            "butane"
+          ],
+          "answer": 2,
+          "explanation": "Ethene (unsaturated) undergoes addition with bromine; alkanes do not decolourise bromine water.",
+          "misconception": "addition_substitution_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 4 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "ncert_ref": "NCERT Ch 4 Intext"
+        },
+        {
+          "id": "u4_d17_intext_07",
+          "question": "On adding alkaline KMnO₄ to ethanol and warming, ethanol is oxidised to",
+          "options": [
+            "ethene",
+            "ethanoic acid",
+            "ethanal",
+            "methane"
+          ],
+          "answer": 1,
+          "explanation": "Alkaline KMnO₄ oxidises ethanol (primary alcohol) to ethanoic acid.",
+          "misconception": "functional_group_naming_error",
+          "concept_id": "",
+          "source": "NCERT Ch 4 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "ncert_ref": "NCERT Ch 4 Intext"
+        },
+        {
+          "id": "u4_d17_intext_08",
+          "question": "Soap does not work well in hard water because it forms",
+          "options": [
+            "micelles",
+            "scum with Ca²⁺/Mg²⁺ ions",
+            "more lather",
+            "detergent"
+          ],
+          "answer": 1,
+          "explanation": "Soap reacts with Ca²⁺ and Mg²⁺ in hard water forming insoluble scum.",
+          "misconception": "soap_detergent_hard_water_error",
+          "concept_id": "",
+          "source": "NCERT Ch 4 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "ncert_ref": "NCERT Ch 4 Intext"
+        },
+        {
+          "id": "u4_s2_d1_bank_09",
+          "question": "What is the key takeaway about **Why study carbon compounds?**?",
+          "options": [
+            "Carbon shares electrons — does not form ions easily.",
+            "Three sources: biosphere, fossils, synthesis.",
+            "Carbon compounds touch every part of daily life",
+            "4 bonds + self-linking = huge variety."
+          ],
+          "answer": 2,
+          "explanation": "Carbon compounds touch every part of daily life.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d1_c02",
+          "category": "u4_d1_B",
+          "category_label": "Day 1 — Carbon and its Compounds — Introduction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d1_bank_10",
+          "question": "What is the key takeaway about **Organic vs inorganic compounds**?",
+          "options": [
+            "Bonding → structures → reactions → everyday chemistry.",
+            "Organic = carbon compounds; exceptions like CO₂ noted later",
+            "Life = carbon chemistry.",
+            "Start with why carbon is special."
+          ],
+          "answer": 1,
+          "explanation": "Organic = carbon compounds; exceptions like CO₂ noted later.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 4,
+          "concept_id": "u4_d1_c03",
+          "category": "u4_d1_C",
+          "category_label": "Day 1 — Carbon and its Compounds — Introduction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "title": "Saturated/Unsaturated and Nomenclature",
+      "active": true,
+      "activity_refs": [
+        "4.4",
+        "4.5",
+        "4.6"
+      ],
+      "questions": [
+        {
+          "id": "u4_d18_ncert_01",
+          "question": "While cooking, if the bottom of the vessel is getting blackened on the outside, it means that",
+          "options": [
+            "the food is not cooked completely",
+            "the fuel is not burning completely",
+            "the fuel is wet",
+            "the fuel is burning completely"
+          ],
+          "answer": 1,
+          "explanation": "Black soot from incomplete combustion deposits on the vessel bottom.",
+          "misconception": "addition_substitution_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 4 Exercises Q3",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "ncert_ref": "NCERT Ch 4 Exercises Q3"
+        },
+        {
+          "id": "u4_s2_d4_bank_02",
+          "question": "What is the key takeaway about **Saturated hydrocarbons — alkanes**?",
+          "options": [
+            "Single bonds only = saturated",
+            "n carbons → 2n+2 hydrogens.",
+            "One double bond; 2n hydrogens.",
+            "Single bonds vs double/triple."
+          ],
+          "answer": 0,
+          "explanation": "Single bonds only = saturated.",
+          "day_id": 4,
+          "topic": 4,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d4_c02",
+          "category": "u4_d4_B",
+          "category_label": "Day 4 — Saturated and Unsaturated Hydrocarbons · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "saturated_unsaturated_swap"
+        },
+        {
+          "id": "u4_s2_d4_bank_03",
+          "question": "What is the key takeaway about **General formula of alkanes**?",
+          "options": [
+            "One triple bond; 2n−2 hydrogens.",
+            "n carbons → 2n+2 hydrogens",
+            "Three families + general formulas + examples.",
+            "Only C and H atoms."
+          ],
+          "answer": 1,
+          "explanation": "n carbons → 2n+2 hydrogens.",
+          "day_id": 4,
+          "topic": 4,
+          "level": "C",
+          "unit_id": 4,
+          "concept_id": "u4_d4_c03",
+          "category": "u4_d4_C",
+          "category_label": "Day 4 — Saturated and Unsaturated Hydrocarbons · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d4_bank_04",
+          "question": "Which statement best describes **What are hydrocarbons?**?",
+          "options": [
+            "Define hydrocarbon → saturated (alkanes CₙH₂ₙ₊₂) → unsaturated (alkenes CₙH₂ₙ, alkynes CₙH₂ₙ₋₂) → examples.",
+            "Saturated hydrocarbons have only single C–C and C–H bonds — all carbons bonded to maximum H; called alkanes.",
+            "Methane CH₄ (alkane), ethene C₂H₄ (alkene), ethyne C₂H₂ (alkyne) — three families with two carbons.",
+            "Hydrocarbons are compounds containing only carbon and hydrogen — the simplest organic compounds."
+          ],
+          "answer": 3,
+          "explanation": "Only C and H atoms.",
+          "day_id": 4,
+          "topic": 4,
+          "level": "A",
+          "unit_id": 4,
+          "concept_id": "u4_d4_c01",
+          "category": "u4_d4_A",
+          "category_label": "Day 4 — Saturated and Unsaturated Hydrocarbons · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d5_bank_05",
+          "question": "What is the key takeaway about **Branched chain carbon compounds**?",
+          "options": [
+            "Three ways to arrange 5 carbons.",
+            "Ring = cyclic saturated hydrocarbon.",
+            "Side chain branches off main chain",
+            "Same atoms, different connectivity."
+          ],
+          "answer": 2,
+          "explanation": "Side chain branches off main chain.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d5_c02",
+          "category": "u4_d5_B",
+          "category_label": "Day 5 — Chains, Branches and Rings in Carbon Compounds · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d5_bank_06",
+          "question": "What is the key takeaway about **Ring (cyclic) carbon compounds**?",
+          "options": [
+            "Three ways to arrange 5 carbons.",
+            "Carbons in one continuous line.",
+            "Carbons form closed loop",
+            "Side chain branches off main chain."
+          ],
+          "answer": 2,
+          "explanation": "Carbons form closed loop.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "C",
+          "unit_id": 4,
+          "concept_id": "u4_d5_c03",
+          "category": "u4_d5_C",
+          "category_label": "Day 5 — Chains, Branches and Rings in Carbon Compounds · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d5_bank_07",
+          "question": "Which statement best describes **Straight chain carbon compounds**?",
+          "options": [
+            "Draw straight chain → branched isomer → state same molecular formula → cyclohexane ring example.",
+            "Pentane C₅H₁₂ has three structural isomers: n-pentane, isopentane, and neopentane.",
+            "Carbon compounds can combine straight chains, branches, and rings — adding enormous structural diversity.",
+            "Straight chain compounds have carbon atoms linked in a continuous unbranched row — e."
+          ],
+          "answer": 3,
+          "explanation": "Carbons in one continuous line.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "A",
+          "unit_id": 4,
+          "concept_id": "u4_d5_c01",
+          "category": "u4_d5_A",
+          "category_label": "Day 5 — Chains, Branches and Rings in Carbon Compounds · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d6_bank_08",
+          "question": "What is the key takeaway about **Successive members differ by CH₂**?",
+          "options": [
+            "Group formula + name + example.",
+            "–CHO at chain end = aldehyde.",
+            "Add CH₂ → next homologue",
+            "–COOH = carboxylic acid."
+          ],
+          "answer": 2,
+          "explanation": "Add CH₂ → next homologue.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d6_c02",
+          "category": "u4_d6_B",
+          "category_label": "Day 6 — Homologous Series and Functional Groups · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d6_bank_09",
+          "question": "What is the key takeaway about **Similar chemical properties in a series**?",
+          "options": [
+            "Halogen replaces H on carbon.",
+            "–OH on carbon = alcohol.",
+            "Same functional group = same chemistry",
+            "–COOH = carboxylic acid."
+          ],
+          "answer": 2,
+          "explanation": "Same functional group = same chemistry.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "C",
+          "unit_id": 4,
+          "concept_id": "u4_d6_c03",
+          "category": "u4_d6_C",
+          "category_label": "Day 6 — Homologous Series and Functional Groups · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "functional_group_naming_error"
+        },
+        {
+          "id": "u4_s2_d6_bank_10",
+          "question": "Which statement best describes **Homologous series definition**?",
+          "options": [
+            "A homologous series is a family of compounds with same functional group and similar chemical properties; successive members differ by CH₂.",
+            "All members of a homologous series react similarly because they have the same functional group.",
+            "Each next member in a homologous series has one more CH₂ group — molecular mass increases by 14 u.",
+            "Carboxylic acids contain –COOH (carboxyl) group — e."
+          ],
+          "answer": 0,
+          "explanation": "Same group; differ by CH₂ unit.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "A",
+          "unit_id": 4,
+          "concept_id": "u4_d6_c01",
+          "category": "u4_d6_A",
+          "category_label": "Day 6 — Homologous Series and Functional Groups · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "title": "Chemical Properties and Functional Groups",
+      "active": true,
+      "activity_refs": [
+        "4.7",
+        "4.8",
+        "4.9"
+      ],
+      "questions": [
+        {
+          "id": "u4_s2_d9_bank_01",
+          "question": "What is the key takeaway about **Unsaturated compounds undergo addition**?",
+          "options": [
+            "Addition uses up coloured Br₂.",
+            "Multiple bond = site of addition",
+            "Orange → colourless = unsaturated.",
+            "Addition of H₂ across C=C in oils."
+          ],
+          "answer": 1,
+          "explanation": "Multiple bond = site of addition.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d9_c02",
+          "category": "u4_d9_B",
+          "category_label": "Day 9 — Addition Reactions — Unsaturated Compounds · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "saturated_unsaturated_swap"
+        },
+        {
+          "id": "u4_s2_d9_bank_02",
+          "question": "What is the key takeaway about **Ethene + H₂ → ethane (hydrogenation)**?",
+          "options": [
+            "Addition uses up coloured Br₂.",
+            "Single bonds already saturated with H.",
+            "Unsaturation → addition; saturation → substitution.",
+            "Double bond removed; alkene → alkane"
+          ],
+          "answer": 3,
+          "explanation": "Double bond removed; alkene → alkane.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "C",
+          "unit_id": 4,
+          "concept_id": "u4_d9_c03",
+          "category": "u4_d9_C",
+          "category_label": "Day 9 — Addition Reactions — Unsaturated Compounds · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "saturated_unsaturated_swap"
+        },
+        {
+          "id": "u4_s2_d9_bank_03",
+          "question": "Which statement best describes **Addition reaction definition**?",
+          "options": [
+            "Ethene adds bromine: C₂H₄ + Br₂ → C₂H₄Br₂ (1,2-dibromoethane) — bromine adds across double bond.",
+            "Addition reaction: atoms add across a double or triple bond — unsaturated compound becomes saturated.",
+            "Unsaturated vegetable oils hydrogenated to saturated fats using H₂ and Ni catalyst — margarine production.",
+            "Compounds with C=C or C≡C bonds open the multiple bond to add atoms — saturated compounds do not."
+          ],
+          "answer": 1,
+          "explanation": "Atoms add across C=C or C≡C.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "A",
+          "unit_id": 4,
+          "concept_id": "u4_d9_c01",
+          "category": "u4_d9_A",
+          "category_label": "Day 9 — Addition Reactions — Unsaturated Compounds · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "addition_substitution_confusion"
+        },
+        {
+          "id": "u4_s2_d10_bank_04",
+          "question": "What is the key takeaway about **Saturated compounds undergo substitution**?",
+          "options": [
+            "Know first product CH₃Cl for exam.",
+            "Cl replaces one H; HCl by-product.",
+            "Same pattern with Br₂.",
+            "Replace H on saturated C"
+          ],
+          "answer": 3,
+          "explanation": "Replace H on saturated C.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d10_c02",
+          "category": "u4_d10_B",
+          "category_label": "Day 10 — Substitution Reactions — Saturated Compounds · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "saturated_unsaturated_swap"
+        },
+        {
+          "id": "u4_s2_d10_bank_05",
+          "question": "What is the key takeaway about **CH₄ + Cl₂ → CH₃Cl + HCl (UV light)**?",
+          "options": [
+            "Each step replaces one more H.",
+            "Light initiates substitution.",
+            "Cl replaces one H; HCl by-product",
+            "One atom replaces another."
+          ],
+          "answer": 2,
+          "explanation": "Cl replaces one H; HCl by-product.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "C",
+          "unit_id": 4,
+          "concept_id": "u4_d10_c03",
+          "category": "u4_d10_C",
+          "category_label": "Day 10 — Substitution Reactions — Saturated Compounds · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d10_bank_06",
+          "question": "Which statement best describes **Substitution reaction definition**?",
+          "options": [
+            "Chloromethane CH₃Cl (methyl chloride), dichloromethane CH₂Cl₂, chloroform CHCl₃, carbon tetrachloride CCl₄.",
+            "Substitution: one atom or group replaces another in a saturated compound — no change in saturation.",
+            "Define substitution → CH₄ + Cl₂ → CH₃Cl + HCl (sunlight) → multiple products → contrast with addition.",
+            "Chlorination of methane needs sunlight or UV — light energy breaks Cl–Cl bond to start free radical chain reaction."
+          ],
+          "answer": 1,
+          "explanation": "One atom replaces another.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "A",
+          "unit_id": 4,
+          "concept_id": "u4_d10_c01",
+          "category": "u4_d10_A",
+          "category_label": "Day 10 — Substitution Reactions — Saturated Compounds · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "addition_substitution_confusion"
+        },
+        {
+          "id": "u4_s2_d11_bank_07",
+          "question": "What is the key takeaway about **Uses of ethanol**?",
+          "options": [
+            "Acid + alcohol → ester (sweet smell).",
+            "Formula + use + esterification link.",
+            "C₂H₅–OH structure.",
+            "Solvent + antiseptic + fuel"
+          ],
+          "answer": 3,
+          "explanation": "Solvent + antiseptic + fuel.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d11_c02",
+          "category": "u4_d11_B",
+          "category_label": "Day 11 — Important Carbon Compounds — Ethanol and Ethanoic Acid · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d11_bank_08",
+          "question": "What is the key takeaway about **Denatured alcohol**?",
+          "options": [
+            "Acid + alcohol → ester (sweet smell).",
+            "Poison added to prevent misuse",
+            "C₂H₅–OH structure.",
+            "Oxidise ethanol → ethanoic acid."
+          ],
+          "answer": 1,
+          "explanation": "Poison added to prevent misuse.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "C",
+          "unit_id": 4,
+          "concept_id": "u4_d11_c03",
+          "category": "u4_d11_C",
+          "category_label": "Day 11 — Important Carbon Compounds — Ethanol and Ethanoic Acid · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d11_bank_09",
+          "question": "Which statement best describes **Ethanol — structure C₂H₅OH**?",
+          "options": [
+            "Ethanol produced by fermentation of sugars by yeast (anaerobic) and by hydration of ethene industrially.",
+            "Ethanoic acid obtained by oxidation of ethanol or from bacterial fermentation of cider/vinegar.",
+            "Give formulas C₂H₅OH and CH₃COOH → uses → denatured alcohol → esterification overview → vinegar.",
+            "Ethanol (ethyl alcohol) has formula C₂H₅OH — two-carbon alcohol with –OH functional group."
+          ],
+          "answer": 3,
+          "explanation": "C₂H₅–OH structure.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "A",
+          "unit_id": 4,
+          "concept_id": "u4_d11_c01",
+          "category": "u4_d11_A",
+          "category_label": "Day 11 — Important Carbon Compounds — Ethanol and Ethanoic Acid · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d12_bank_10",
+          "question": "What is the key takeaway about **Ethanol reacts with sodium**?",
+          "options": [
+            "Catalyst + removes H₂O product.",
+            "Weak acid — partially ionises.",
+            "–OH H is slightly acidic — Na displaces H",
+            "Name: ethyl (from ethanol) ethanoate (from ethanoic acid)."
+          ],
+          "answer": 2,
+          "explanation": "–OH H is slightly acidic — Na displaces H.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d12_c02",
+          "category": "u4_d12_B",
+          "category_label": "Day 12 — Properties of Ethanol and Ethanoic Acid · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "title": "Soaps, Detergents and Fuels",
+      "active": true,
+      "activity_refs": [
+        "4.10",
+        "4.11",
+        "4.12"
+      ],
+      "questions": [
+        {
+          "id": "u4_s2_d13_bank_01",
+          "question": "What is the key takeaway about **Saponification — making soap**?",
+          "options": [
+            "Sulphonate head instead of carboxylate.",
+            "Alkaline hydrolysis of ester in fat",
+            "Hydrophobic tail + hydrophilic –COO⁻ head.",
+            "Structure + micelle + hard water + detergent."
+          ],
+          "answer": 1,
+          "explanation": "Alkaline hydrolysis of ester in fat.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d13_c02",
+          "category": "u4_d13_B",
+          "category_label": "Day 13 — Soaps and Detergents — Micelles and Cleansing Action · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "soap_detergent_hard_water_error"
+        },
+        {
+          "id": "u4_s2_d13_bank_02",
+          "question": "What is the key takeaway about **Micelle formation**?",
+          "options": [
+            "Soap wasted forming scum first.",
+            "Emulsifies oil in water via micelles.",
+            "Ca/Mg ions precipitate soap.",
+            "Tails hide inside; heads on surface"
+          ],
+          "answer": 3,
+          "explanation": "Tails hide inside; heads on surface.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "C",
+          "unit_id": 4,
+          "concept_id": "u4_d13_c03",
+          "category": "u4_d13_C",
+          "category_label": "Day 13 — Soaps and Detergents — Micelles and Cleansing Action · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "soap_detergent_hard_water_error"
+        },
+        {
+          "id": "u4_s2_d13_bank_03",
+          "question": "Which statement best describes **Soap structure — RCOO⁻Na⁺**?",
+          "options": [
+            "In water, soap molecules form micelles — hydrophobic tails inward, hydrophilic heads outward facing water.",
+            "Ca²⁺ and Mg²⁺ replace Na⁺ in soap forming insoluble precipitate — less soap available for cleaning.",
+            "Soap is sodium or potassium salt of long-chain carboxylic acid (fatty acid) — RCOO⁻Na⁺.",
+            "Describe soap structure → micelle formation → hydrophobic tail dissolves grease → hard water scum → detergent advantage."
+          ],
+          "answer": 2,
+          "explanation": "Hydrophobic tail + hydrophilic –COO⁻ head.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "A",
+          "unit_id": 4,
+          "concept_id": "u4_d13_c01",
+          "category": "u4_d13_A",
+          "category_label": "Day 13 — Soaps and Detergents — Micelles and Cleansing Action · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "soap_detergent_hard_water_error"
+        },
+        {
+          "id": "u4_s2_d14_bank_04",
+          "question": "What is the key takeaway about **Tetravalency enables versatility**?",
+          "options": [
+            "Same formula possible with different groups.",
+            "Strong C–C bonds hold chains together.",
+            "Isomerism multiplies possible compounds.",
+            "Four bonds in many combinations"
+          ],
+          "answer": 3,
+          "explanation": "Four bonds in many combinations.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d14_c02",
+          "category": "u4_d14_B",
+          "category_label": "Day 14 — Versatile Nature of Carbon — Catenation and Tetravalency · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d14_bank_05",
+          "question": "What is the key takeaway about **Millions of carbon compounds**?",
+          "options": [
+            "Carbon compounds = organic chemistry.",
+            "Carbon chemistry dominates compound count",
+            "Self-linking of carbon atoms.",
+            "Three bond types × long chains = huge variety."
+          ],
+          "answer": 1,
+          "explanation": "Carbon chemistry dominates compound count.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "C",
+          "unit_id": 4,
+          "concept_id": "u4_d14_c03",
+          "category": "u4_d14_C",
+          "category_label": "Day 14 — Versatile Nature of Carbon — Catenation and Tetravalency · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d14_bank_06",
+          "question": "Which statement best describes **Catenation definition**?",
+          "options": [
+            "State tetravalency + catenation → chains/branches/rings → functional groups → isomerism → millions of compounds + life.",
+            "Same molecular formula, different structures (isomers) — butane/isobutane, functional group isomers.",
+            "Catenation is the ability of carbon atoms to link to each other in long chains, branches, and rings.",
+            "Over 5 million carbon compounds known — more than all other elements combined — due to catenation and tetravalency."
+          ],
+          "answer": 2,
+          "explanation": "Self-linking of carbon atoms.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "A",
+          "unit_id": 4,
+          "concept_id": "u4_d14_c01",
+          "category": "u4_d14_A",
+          "category_label": "Day 14 — Versatile Nature of Carbon — Catenation and Tetravalency · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d15_bank_07",
+          "question": "What is the key takeaway about **Review — functional groups**?",
+          "options": [
+            "Five groups with examples",
+            "Formulas + one reaction each.",
+            "Two types + equation + CO danger.",
+            "Formulas + reactions + bromine test."
+          ],
+          "answer": 0,
+          "explanation": "Five groups with examples.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d15_c02",
+          "category": "u4_d15_B",
+          "category_label": "Day 15 — Mixed Review — Hydrocarbons and Functional Groups · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "functional_group_naming_error"
+        },
+        {
+          "id": "u4_s2_d15_bank_08",
+          "question": "What is the key takeaway about **Review — allotropes of carbon**?",
+          "options": [
+            "Five groups with examples.",
+            "CH₂ difference + similar chemistry.",
+            "Three allotropes + key properties",
+            "Roots 1–6 + suffix rules."
+          ],
+          "answer": 2,
+          "explanation": "Three allotropes + key properties.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "C",
+          "unit_id": 4,
+          "concept_id": "u4_d15_c03",
+          "category": "u4_d15_C",
+          "category_label": "Day 15 — Mixed Review — Hydrocarbons and Functional Groups · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        },
+        {
+          "id": "u4_s2_d15_bank_09",
+          "question": "Which statement best describes **Review — saturated vs unsaturated**?",
+          "options": [
+            "Addition: unsaturated (C₂H₄ + Br₂).",
+            "Diamond: hard, insulator, 4 bonds.",
+            "Roots meth– to hex–; suffixes -ane, -ene, -yne, -ol, -oic acid; examples ethanol, ethanoic acid.",
+            "Saturated: CₙH₂ₙ₊₂, single bonds, substitution."
+          ],
+          "answer": 3,
+          "explanation": "Formulas + reactions + bromine test.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "A",
+          "unit_id": 4,
+          "concept_id": "u4_d15_c01",
+          "category": "u4_d15_A",
+          "category_label": "Day 15 — Mixed Review — Hydrocarbons and Functional Groups · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "saturated_unsaturated_swap"
+        },
+        {
+          "id": "u4_s2_d16_bank_10",
+          "question": "What is the key takeaway about **Exam — hydrocarbon formulas**?",
+          "options": [
+            "Memorise all three general formulas",
+            "Four reaction types with conditions.",
+            "Six structures from NCERT Ch 4.",
+            "Two products sets + CO hazard."
+          ],
+          "answer": 0,
+          "explanation": "Memorise all three general formulas.",
+          "day_id": 16,
+          "topic": 16,
+          "level": "B",
+          "unit_id": 4,
+          "concept_id": "u4_d16_c02",
+          "category": "u4_d16_B",
+          "category_label": "Day 16 — Exam Prep — Reactions, Nomenclature and Everyday Chemistry · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 4 — Carbon and its Compounds",
+          "misconception": "ionic_covalent_confusion"
+        }
+      ]
+    }
+  ]
 }

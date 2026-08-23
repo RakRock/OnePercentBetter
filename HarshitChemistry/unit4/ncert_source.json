@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "unit_id": 4,
+    "chapter": 4,
+    "pdf": "jesc104.pdf",
+    "title": "Carbon and its Compounds"
+  },
+  "activities": [
+    {
+      "id": "4.1",
+      "title": "Carbon in daily objects",
+      "summary": "List items used since morning; sort into metal, glass/clay, carbon-compound columns.",
+      "concept_ids": [
+        "u4_d1_c01",
+        "u4_d1_c03",
+        "u4_d1_c05"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "4.2",
+      "title": "Homologous series of alcohols",
+      "summary": "Compare formulae and masses of CH₃OH, C₂H₅OH, C₃H₇OH, C₄H₉OH; identify homologous pattern.",
+      "concept_ids": [
+        "u4_d5_c01",
+        "u4_d5_c03",
+        "u4_d5_c05"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "4.3",
+      "title": "Models of carbon compounds",
+      "summary": "Use molecular model kits to build methane, ethane, ethene, ethyne structures.",
+      "concept_ids": [
+        "u4_d2_c01",
+        "u4_d2_c04",
+        "u4_d2_c06"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "4.4",
+      "title": "Burning carbon compounds",
+      "summary": "Burn small samples; test flame and residue; relate to saturated/unsaturated nature.",
+      "concept_ids": [
+        "u4_d4_c01",
+        "u4_d4_c03",
+        "u4_d4_c06"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "4.5",
+      "title": "Bromine water test",
+      "summary": "Add bromine water to hydrocarbon samples; note decolourisation with unsaturated compounds.",
+      "concept_ids": [
+        "u4_d4_c04",
+        "u4_d4_c07",
+        "u4_d4_c08"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "4.6",
+      "title": "Functional group identification",
+      "summary": "Build and name alcohols, aldehydes, ketones, carboxylic acids from model kits.",
+      "concept_ids": [
+        "u4_d6_c04",
+        "u4_d7_c02",
+        "u4_d7_c05"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "4.7",
+      "title": "Esterification",
+      "summary": "Warm ethanol and acetic acid with conc. H₂SO₄; smell fruity ester formed.",
+      "concept_ids": [
+        "u4_d8_c01",
+        "u4_d8_c03",
+        "u4_d8_c05"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "4.8",
+      "title": "Saponification",
+      "summary": "Heat vegetable oil with NaOH; add salt to precipitate soap.",
+      "concept_ids": [
+        "u4_d13_c01",
+        "u4_d13_c03",
+        "u4_d13_c05"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "4.9",
+      "title": "Hydrogenation of oil",
+      "summary": "Discuss nickel-catalysed addition of H₂ to vegetable oil forming vanaspati ghee.",
+      "concept_ids": [
+        "u4_d9_c01",
+        "u4_d9_c03",
+        "u4_d9_c05"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "4.10",
+      "title": "Ethanol reactions",
+      "summary": "Study reactions of ethanol — combustion, oxidation to ethanoic acid, esterification.",
+      "concept_ids": [
+        "u4_d11_c01",
+        "u4_d11_c03",
+        "u4_d11_c05"
+      ],
+      "stage2_day": 20
+    },
+    {
+      "id": "4.11",
+      "title": "Soap vs detergent in hard water",
+      "summary": "Shake soap and detergent solutions separately in hard water; compare foam and scum.",
+      "concept_ids": [
+        "u4_d13_c04",
+        "u4_d13_c06",
+        "u4_d13_c08"
+      ],
+      "stage2_day": 20
+    },
+    {
+      "id": "4.12",
+      "title": "Micelle demonstration",
+      "summary": "Discuss how soap forms micelles around oily dirt in water.",
+      "concept_ids": [
+        "u4_d13_c07",
+        "u4_d13_c09",
+        "u4_d13_c10"
+      ],
+      "stage2_day": 20
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "Ethane, with the molecular formula C₂H₆ has",
+      "options": [
+        "6 covalent bonds",
+        "7 covalent bonds",
+        "8 covalent bonds",
+        "9 covalent bonds"
+      ],
+      "answer": 1,
+      "explanation": "C₂H₆ has 1 C–C + 6 C–H = 7 single covalent bonds.",
+      "misconception": "saturated_unsaturated_swap",
+      "source": "NCERT Ch 4 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "Butanone is a four-carbon compound with the functional group",
+      "options": [
+        "carboxylic acid",
+        "aldehyde",
+        "ketone",
+        "alcohol"
+      ],
+      "answer": 2,
+      "explanation": "Butanone (CH₃COC₂H₅) contains the ketone (–CO–) functional group.",
+      "misconception": "functional_group_naming_error",
+      "source": "NCERT Ch 4 Exercises Q2"
+    },
+    {
+      "num": 3,
+      "question": "While cooking, if the bottom of the vessel is getting blackened on the outside, it means that",
+      "options": [
+        "the food is not cooked completely",
+        "the fuel is not burning completely",
+        "the fuel is wet",
+        "the fuel is burning completely"
+      ],
+      "answer": 1,
+      "explanation": "Black soot from incomplete combustion deposits on the vessel bottom.",
+      "misconception": "addition_substitution_confusion",
+      "source": "NCERT Ch 4 Exercises Q3"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Section 4.1 — covalent bond",
+      "question": "Carbon compounds are generally poor conductors because they have",
+      "options": [
+        "ionic bonds",
+        "covalent bonds with shared electrons",
+        "free electrons like metals",
+        "metallic bonds"
+      ],
+      "answer": 1,
+      "explanation": "Carbon compounds form covalent bonds — no free ions/electrons in solid state.",
+      "misconception": "ionic_covalent_confusion",
+      "source": "NCERT Ch 4 Intext"
+    },
+    {
+      "ref": "Section 4.2 — catenation",
+      "question": "Carbon forms a large number of compounds mainly due to",
+      "options": [
+        "ionic bonding",
+        "catenation and tetravalency",
+        "metallic nature",
+        "high melting point"
+      ],
+      "answer": 1,
+      "explanation": "Catenation (self-linking) and tetravalency give carbon its versatility.",
+      "misconception": "ionic_covalent_confusion",
+      "source": "NCERT Ch 4 Intext"
+    },
+    {
+      "ref": "Section 4.3 — saturated hydrocarbons",
+      "question": "The general formula of alkanes is",
+      "options": [
+        "CₙH₂ₙ",
+        "CₙH₂ₙ₊₂",
+        "CₙH₂ₙ₋₂",
+        "CₙHₙ"
+      ],
+      "answer": 1,
+      "explanation": "Alkanes are saturated with formula CₙH₂ₙ₊₂.",
+      "misconception": "saturated_unsaturated_swap",
+      "source": "NCERT Ch 4 Intext"
+    },
+    {
+      "ref": "Section 4.4 — bromine test",
+      "question": "Bromine water decolourises when added to",
+      "options": [
+        "ethane",
+        "propane",
+        "ethene",
+        "butane"
+      ],
+      "answer": 2,
+      "explanation": "Ethene (unsaturated) undergoes addition with bromine; alkanes do not decolourise bromine water.",
+      "misconception": "addition_substitution_confusion",
+      "source": "NCERT Ch 4 Intext"
+    },
+    {
+      "ref": "Section 4.5 — ethanol",
+      "question": "On adding alkaline KMnO₄ to ethanol and warming, ethanol is oxidised to",
+      "options": [
+        "ethene",
+        "ethanoic acid",
+        "ethanal",
+        "methane"
+      ],
+      "answer": 1,
+      "explanation": "Alkaline KMnO₄ oxidises ethanol (primary alcohol) to ethanoic acid.",
+      "misconception": "functional_group_naming_error",
+      "source": "NCERT Ch 4 Intext"
+    },
+    {
+      "ref": "Section 4.6 — soaps",
+      "question": "Soap does not work well in hard water because it forms",
+      "options": [
+        "micelles",
+        "scum with Ca²⁺/Mg²⁺ ions",
+        "more lather",
+        "detergent"
+      ],
+      "answer": 1,
+      "explanation": "Soap reacts with Ca²⁺ and Mg²⁺ in hard water forming insoluble scum.",
+      "misconception": "soap_detergent_hard_water_error",
+      "source": "NCERT Ch 4 Intext"
+    }
+  ]
+}

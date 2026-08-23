@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "active": true,
+    "stage": 3,
+    "range": "Exercises Q5–Q16",
+    "note": "Exam-style written questions. Chapter 3 has 4 MCQs (Stage 2) and 12 long-form exercises here.",
+    "chapter": "NCERT Class 10 Science Ch 3",
+    "pdf": "jesc103.pdf",
+    "unit_id": 3
+  },
+  "questions": [
+    {
+      "id": "u3_ex_q05",
+      "num": 5,
+      "type": "explain",
+      "marks": 4,
+      "question": "You are given a hammer, a battery, a bulb, wires and a switch.\n(a) How could you use them to distinguish between samples of metals and non-metals?\n(b) Assess the usefulness of these tests in distinguishing between metals and non-metals.",
+      "hints": [
+        "Metals: malleable, conduct electricity.",
+        "Non-metals: brittle, poor conductors (except graphite).",
+        "Some exceptions exist — tests not 100% definitive."
+      ],
+      "model_answer": "(a) **Hammer test:** Beat sample — if it flattens into a sheet without breaking, it is **malleable (metal)**; if it breaks into pieces, likely **non-metal**.\n\n**Circuit test:** Complete circuit with sample between terminals — if **bulb glows**, sample **conducts** like a **metal**; if not, likely **non-metal** (graphite is an exception).\n\n(b) These tests are **useful but not always conclusive** — some metals are brittle (e.g. zinc at room temp), and graphite conducts though a non-metal.",
+      "marking_points": [
+        "(a) malleability test described",
+        "(a) conductivity test described",
+        "(b) usefulness assessed with limitation"
+      ],
+      "common_mistakes": [
+        "Only one test described",
+        "Saying tests work for all elements without exception"
+      ],
+      "concept_ids": [
+        "u3_d2_c01",
+        "u3_d3_c01",
+        "u3_d4_c01"
+      ],
+      "misconception": "metal_nonmetal_property_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q5"
+    },
+    {
+      "id": "u3_ex_q06",
+      "num": 6,
+      "type": "explain",
+      "marks": 3,
+      "question": "What are amphoteric oxides? Give two examples of amphoteric oxides.",
+      "hints": [
+        "React with both acids and bases.",
+        "Al₂O₃ and ZnO are NCERT examples.",
+        "Give balanced reaction idea."
+      ],
+      "model_answer": "**Amphoteric oxides** react with **both acids and bases** to form salt and water.\n\nExamples: **Aluminium oxide (Al₂O₃)** and **Zinc oxide (ZnO)**.\n\nE.g. **Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O** and **Al₂O₃ + 2NaOH → 2NaAlO₂ + H₂O**.",
+      "marking_points": [
+        "Definition: reacts with acid and base",
+        "Two examples (Al₂O₃, ZnO)"
+      ],
+      "common_mistakes": [
+        "Calling basic oxides amphoteric",
+        "Only one example"
+      ],
+      "concept_ids": [
+        "u3_d6_c06",
+        "u3_d6_c07",
+        "u3_d6_c08"
+      ],
+      "misconception": "metal_nonmetal_property_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q6"
+    },
+    {
+      "id": "u3_ex_q07",
+      "num": 7,
+      "type": "recall",
+      "marks": 2,
+      "question": "Name two metals which will displace hydrogen from dilute acids, and two metals which will not.",
+      "hints": [
+        "Above hydrogen in reactivity series displace H.",
+        "Cu, Ag, Au below hydrogen do not.",
+        "Examples: Zn, Mg vs Cu, Ag."
+      ],
+      "model_answer": "**Displace hydrogen:** e.g. **Zinc (Zn)** and **Magnesium (Mg)** — react with dilute acids giving H₂.\n\n**Do not displace hydrogen:** e.g. **Copper (Cu)** and **Silver (Ag)** — below hydrogen in activity series.",
+      "marking_points": [
+        "Two metals that displace H",
+        "Two metals that do not"
+      ],
+      "common_mistakes": [
+        "Including metals below hydrogen in first list",
+        "Wrong examples"
+      ],
+      "concept_ids": [
+        "u3_d9_c04",
+        "u3_d10_c02",
+        "u3_d10_c06"
+      ],
+      "misconception": "reactivity_series_order_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q7"
+    },
+    {
+      "id": "u3_ex_q08",
+      "num": 8,
+      "type": "explain",
+      "marks": 3,
+      "question": "In the electrolytic refining of a metal M, what would you take as the anode, the cathode and the electrolyte?",
+      "hints": [
+        "Impure metal = anode (dissolves).",
+        "Pure metal strip = cathode (deposited).",
+        "Salt solution of metal = electrolyte."
+      ],
+      "model_answer": "**Anode:** **Impure metal M** (thick block)\n**Cathode:** **Thin strip of pure metal M**\n**Electrolyte:** **Acidified aqueous solution of a salt of M** (e.g. for copper: acidified CuSO₄)\n\nPure metal deposits on cathode; soluble impurities go to solution; insoluble impurities form anode mud.",
+      "marking_points": [
+        "Anode = impure metal",
+        "Cathode = pure metal strip",
+        "Electrolyte = salt solution of the metal"
+      ],
+      "common_mistakes": [
+        "Swapping anode and cathode",
+        "Wrong electrolyte"
+      ],
+      "concept_ids": [
+        "u3_d14_c01",
+        "u3_d14_c03",
+        "u3_d14_c05"
+      ],
+      "misconception": "ionic_bond_covalent_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q8"
+    },
+    {
+      "id": "u3_ex_q09",
+      "num": 9,
+      "type": "explain_diagram",
+      "marks": 4,
+      "question": "Pratyush took sulphur powder on a spatula and heated it. He collected the gas evolved by inverting a test tube over it, as shown in figure below.\n(a) What will be the action of gas on\n(i) dry litmus paper?\n(ii) moist litmus paper?\n(b) Write a balanced chemical equation for the reaction taking place.",
+      "hints": [
+        "Sulphur burns to SO₂.",
+        "SO₂ forms acid with water → affects moist litmus.",
+        "Dry litmus unchanged."
+      ],
+      "model_answer": "(a) Gas is **sulphur dioxide (SO₂)**.\n(i) **Dry litmus:** **no change** (no acid without water).\n(ii) **Moist litmus:** **turns red** (SO₂ + H₂O → H₂SO₃, acidic).\n\n(b) **S(s) + O₂(g) → SO₂(g)**",
+      "marking_points": [
+        "SO₂ identified",
+        "(i) no effect on dry litmus",
+        "(ii) moist litmus turns red",
+        "Balanced equation S + O₂ → SO₂"
+      ],
+      "common_mistakes": [
+        "Saying SO₂ is basic",
+        "Wrong gas identified as H₂"
+      ],
+      "concept_ids": [
+        "u3_d8_c01",
+        "u3_d8_c03",
+        "u3_d8_c05"
+      ],
+      "misconception": "metal_nonmetal_property_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q9"
+    },
+    {
+      "id": "u3_ex_q10",
+      "num": 10,
+      "type": "explain",
+      "marks": 2,
+      "question": "State two ways to prevent the rusting of iron.",
+      "hints": [
+        "Barrier methods block air/water.",
+        "Galvanisation, painting, oiling, alloying."
+      ],
+      "model_answer": "Two ways to prevent rusting of iron:\n1. **Painting / oiling / greasing** — forms a **protective coating** preventing contact with air and moisture.\n2. **Galvanisation** — coating iron with **zinc** which prevents rust even if coating is scratched (sacrificial protection).",
+      "marking_points": [
+        "Two distinct valid methods",
+        "Explanation of how each prevents rust"
+      ],
+      "common_mistakes": [
+        "Only one method",
+        "Methods that do not stop air/moisture contact"
+      ],
+      "concept_ids": [
+        "u3_d16_c02",
+        "u3_d16_c04",
+        "u3_d16_c06"
+      ],
+      "misconception": "corrosion_prevention_wrong",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q10"
+    },
+    {
+      "id": "u3_ex_q11",
+      "num": 11,
+      "type": "recall",
+      "marks": 1,
+      "question": "What type of oxides are formed when non-metals combine with oxygen?",
+      "hints": [
+        "Non-metal oxides are acidic or neutral.",
+        "Examples: SO₂ acidic, CO neutral.",
+        "Contrast with basic metal oxides."
+      ],
+      "model_answer": "When **non-metals** combine with oxygen, **acidic oxides** or **neutral oxides** are formed (e.g. **SO₂, CO₂** are acidic; **CO, H₂O** are neutral).",
+      "marking_points": [
+        "Acidic or neutral oxides stated",
+        "Contrast with basic metal oxides optional"
+      ],
+      "common_mistakes": [
+        "Saying basic oxides",
+        "No type named"
+      ],
+      "concept_ids": [
+        "u3_d8_c04",
+        "u3_d8_c06",
+        "u3_d8_c08"
+      ],
+      "misconception": "metal_nonmetal_property_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q11"
+    },
+    {
+      "id": "u3_ex_q12",
+      "num": 12,
+      "type": "explain",
+      "marks": 5,
+      "question": "Give reasons\n(a) Platinum, gold and silver are used to make jewellery.\n(b) Sodium, potassium and lithium are stored under oil.\n(c) Aluminium is a highly reactive metal, yet it is used to make utensils for cooking.\n(d) Carbonate and sulphide ores are usually converted into oxides during the process of extraction.",
+      "hints": [
+        "(a) lustre, low reactivity.",
+        "(b) react violently with air/water.",
+        "(c) protective Al₂O₃ layer.",
+        "(d) oxides easier to reduce."
+      ],
+      "model_answer": "(a) **Pt, Au, Ag** are **lustrous** and **least reactive** — do not tarnish easily → suitable for jewellery.\n\n(b) **Na, K, Li** are **highly reactive** — react with **moist air/water**; stored under **oil** to exclude air and moisture.\n\n(c) **Al** forms a **stable oxide layer (Al₂O₃)** that prevents further corrosion — safe and durable for utensils despite reactivity.\n\n(d) **Carbonate/sulphide ores** are converted to **oxides** (calcination/roasting) because **oxides are easier to reduce** to metal than carbonates or sulphides.",
+      "marking_points": [
+        "(a) lustrous + low reactivity",
+        "(b) highly reactive — kept from air/water",
+        "(c) protective Al₂O₃ layer",
+        "(d) oxides easier to reduce"
+      ],
+      "common_mistakes": [
+        "Incomplete reasons",
+        "Swapping (b) and (c) explanations"
+      ],
+      "concept_ids": [
+        "u3_d1_c03",
+        "u3_d7_c01",
+        "u3_d13_c01"
+      ],
+      "misconception": "reactivity_series_order_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q12"
+    },
+    {
+      "id": "u3_ex_q13",
+      "num": 13,
+      "type": "explain",
+      "marks": 2,
+      "question": "You must have seen tarnished copper vessels being cleaned with lemon or tamarind juice. Explain why these sour substances are effective in cleaning the vessels.",
+      "hints": [
+        "Tarnish = basic copper carbonate.",
+        "Acids in lemon/tamarind react with it.",
+        "Product washes away."
+      ],
+      "model_answer": "Tarnished copper has a **green coating of basic copper carbonate** (CuCO₃·Cu(OH)₂) formed by reaction with moist CO₂.\n\n**Lemon/tamarind juice** contains **acids** that **react with the basic tarnish**, dissolving it and restoring the shiny copper surface.",
+      "marking_points": [
+        "Tarnish is basic copper carbonate",
+        "Acids in juice react with basic coating",
+        "Coating removed — copper shines"
+      ],
+      "common_mistakes": [
+        "Saying tarnish is acidic",
+        "No mention of acid-base reaction"
+      ],
+      "concept_ids": [
+        "u3_d16_c01",
+        "u3_d6_c05",
+        "u3_d8_c04"
+      ],
+      "misconception": "corrosion_prevention_wrong",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q13"
+    },
+    {
+      "id": "u3_ex_q14",
+      "num": 14,
+      "type": "differentiate",
+      "marks": 4,
+      "question": "Differentiate between metal and non-metal on the basis of their chemical properties.",
+      "hints": [
+        "Ion formation, oxides, reaction with water/acids.",
+        "At least 3–4 contrast points.",
+        "Examples help."
+      ],
+      "model_answer": "| Property | Metals | Non-metals |\n|---|---|---|\n| **Valence electrons** | Lose e⁻ → **cations** | Gain e⁻ → **anions** |\n| **Oxides** | **Basic** (some amphoteric) | **Acidic/neutral** |\n| **With water** | Some react (Na, Ca) | Generally do not |\n| **With dilute acids** | Above H in series give H₂ | Do **not** displace H from dilute acids |\n| **Nature of bonds** | Metallic / ionic in compounds | Covalent in compounds |",
+      "marking_points": [
+        "At least 3 valid chemical contrasts",
+        "Examples for metal and non-metal"
+      ],
+      "common_mistakes": [
+        "Listing only physical properties",
+        "Fewer than 3 differences"
+      ],
+      "concept_ids": [
+        "u3_d6_c01",
+        "u3_d8_c04",
+        "u3_d9_c04"
+      ],
+      "misconception": "metal_nonmetal_property_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q14"
+    },
+    {
+      "id": "u3_ex_q15",
+      "num": 15,
+      "type": "reasoning",
+      "marks": 3,
+      "question": "A man went door to door posing as a goldsmith. He promised to bring back the glitter of old and dull gold ornaments. An unsuspecting lady gave a set of gold bangles to him which he dipped in a particular solution. The bangles sparkled like new but their weight was reduced drastically. The lady was upset but after a futile argument the man beat a hasty retreat. Can you play the detective to find out the nature of the solution he had used?",
+      "hints": [
+        "Gold unreactive to simple acids.",
+        "Aqua regia dissolves gold.",
+        "Weight loss = gold removed."
+      ],
+      "model_answer": "The solution was likely **aqua regia** — a **3:1 mixture of concentrated HCl and HNO₃**.\n\n**Aqua regia** can **dissolve gold** (even though gold does not react with individual acids). Some gold dissolved during 'cleaning', reducing weight while surface looked shiny initially.",
+      "marking_points": [
+        "Aqua regia identified or HCl + HNO₃ mixture",
+        "Dissolves gold",
+        "Explains weight loss"
+      ],
+      "common_mistakes": [
+        "Saying dilute HCl alone",
+        "No link to weight loss"
+      ],
+      "concept_ids": [
+        "u3_d10_c08",
+        "u3_d10_c09",
+        "u3_d1_c03"
+      ],
+      "misconception": "reactivity_series_order_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q15"
+    },
+    {
+      "id": "u3_ex_q16",
+      "num": 16,
+      "type": "explain",
+      "marks": 2,
+      "question": "Give reasons why copper is used to make hot water tanks and not steel (an alloy of iron).",
+      "hints": [
+        "Copper resists corrosion in hot water.",
+        "Steel/iron rusts.",
+        "Copper good conductor — not main reason here."
+      ],
+      "model_answer": "**Copper** does **not react** with **hot water or steam** easily and is **corrosion-resistant** in hot water systems.\n\n**Steel (iron)** would **rust** when constantly in contact with hot water and air, making it unsuitable for hot water tanks.",
+      "marking_points": [
+        "Copper unreactive / corrosion resistant in hot water",
+        "Steel/iron rusts"
+      ],
+      "common_mistakes": [
+        "Saying copper is cheaper",
+        "Only mentioning conductivity"
+      ],
+      "concept_ids": [
+        "u3_d16_c02",
+        "u3_d3_c01",
+        "u3_d7_c05"
+      ],
+      "misconception": "corrosion_prevention_wrong",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 3 Exercises Q16"
+    }
+  ]
+}

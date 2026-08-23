@@ -1,0 +1,344 @@
+{
+  "meta": {
+    "active": true,
+    "stage": 3,
+    "range": "Exercises Q5–Q15",
+    "note": "Exam-style written questions. Chapter 2 has 4 MCQs (Stage 2) and 11 long-form exercises here.",
+    "chapter": "NCERT Class 10 Science Ch 2",
+    "pdf": "jesc102.pdf",
+    "unit_id": 2
+  },
+  "questions": [
+    {
+      "id": "u2_ex_q05",
+      "num": 5,
+      "type": "write_equations",
+      "marks": 4,
+      "question": "Write word equations and then balanced equations for the reaction taking place when –\n(a) dilute sulphuric acid reacts with zinc granules.\n(b) dilute hydrochloric acid reacts with magnesium ribbon.\n(c) dilute sulphuric acid reacts with aluminium powder.\n(d) dilute hydrochloric acid reacts with iron filings.",
+      "hints": [
+        "Acid + metal → salt + hydrogen.",
+        "Use correct formulae and balance.",
+        "Include state symbols where appropriate."
+      ],
+      "model_answer": "(a) Zinc + Sulphuric acid → Zinc sulphate + Hydrogen\n**Zn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂(g)**\n\n(b) Magnesium + Hydrochloric acid → Magnesium chloride + Hydrogen\n**Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)**\n\n(c) Aluminium + Sulphuric acid → Aluminium sulphate + Hydrogen\n**2Al(s) + 3H₂SO₄(aq) → Al₂(SO₄)₃(aq) + 3H₂(g)**\n\n(d) Iron + Hydrochloric acid → Iron(II) chloride + Hydrogen\n**Fe(s) + 2HCl(aq) → FeCl₂(aq) + H₂(g)**",
+      "marking_points": [
+        "Four word equations",
+        "Four balanced symbol equations",
+        "Hydrogen as product in each"
+      ],
+      "common_mistakes": [
+        "Writing water instead of hydrogen",
+        "Unbalanced equations"
+      ],
+      "concept_ids": [
+        "u2_d3_c01",
+        "u2_d3_c03",
+        "u2_d3_c05"
+      ],
+      "misconception": "neutralisation_products_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q5"
+    },
+    {
+      "id": "u2_ex_q06",
+      "num": 6,
+      "type": "activity",
+      "marks": 3,
+      "question": "Compounds such as alcohols and glucose also contain hydrogen but are not categorised as acids. Describe an Activity to prove it.",
+      "hints": [
+        "Set up bulb circuit with dilute HCl and with glucose/ethanol solutions.",
+        "Acids ionise in water to give H⁺; glucose/ethanol do not.",
+        "Compare bulb glow."
+      ],
+      "model_answer": "**Activity:** Connect a bulb circuit with dilute **HCl**, **glucose solution**, and **ethanol solution** separately.\n\nThe bulb **glows brightly** with dilute HCl (H⁺ ions conduct electricity) but **does not glow** (or glows very dimly) with glucose or ethanol solutions because they **do not produce H⁺ ions** in water despite containing hydrogen.\n\nHence they are **not acids**.",
+      "marking_points": [
+        "Circuit test described",
+        "HCl conducts / bulb glows",
+        "Glucose or ethanol does not ionise to H⁺",
+        "Conclusion: not acids"
+      ],
+      "common_mistakes": [
+        "Saying all hydrogen-containing compounds are acids",
+        "No experimental description"
+      ],
+      "concept_ids": [
+        "u2_d8_c01",
+        "u2_d8_c03",
+        "u2_d8_c04"
+      ],
+      "misconception": "indicator_in_acid_base_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q6"
+    },
+    {
+      "id": "u2_ex_q07",
+      "num": 7,
+      "type": "explain",
+      "marks": 2,
+      "question": "Why does distilled water not conduct electricity, whereas rain water does?",
+      "hints": [
+        "Distilled water has almost no ions.",
+        "Rain water dissolves CO₂ and other gases forming acids.",
+        "More ions → conducts."
+      ],
+      "model_answer": "**Distilled water** is almost pure H₂O with **very few ions**, so it is a **poor conductor**.\n\n**Rain water** dissolves **CO₂** and other gases from the atmosphere forming **carbonic acid** and other electrolytes, producing **ions** that make it conduct electricity.",
+      "marking_points": [
+        "Distilled water — few/no ions",
+        "Rain water — acidic gases dissolve",
+        "Ions enable conduction"
+      ],
+      "common_mistakes": [
+        "Saying pure water always conducts",
+        "No mention of dissolved gases in rain water"
+      ],
+      "concept_ids": [
+        "u2_d8_c05",
+        "u2_d8_c06",
+        "u2_d8_c07"
+      ],
+      "misconception": "indicator_in_acid_base_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q7"
+    },
+    {
+      "id": "u2_ex_q08",
+      "num": 8,
+      "type": "explain",
+      "marks": 2,
+      "question": "Why does dry HCl gas not show acidic behaviour in the absence of water?",
+      "hints": [
+        "Acidic character needs H⁺ ions.",
+        "HCl ionises only in presence of water.",
+        "Dry gas has no free ions."
+      ],
+      "model_answer": "**Dry HCl gas** does not show acidic behaviour because **acids produce H⁺ (hydronium) ions in aqueous solution**. Without water, HCl molecules do **not ionise**, so no H⁺ ions are available to show acidic properties (no effect on dry litmus, no conductivity).",
+      "marking_points": [
+        "H⁺ ions needed for acidic behaviour",
+        "Water required for ionisation of HCl",
+        "Dry HCl has no free H⁺"
+      ],
+      "common_mistakes": [
+        "Saying HCl is never acidic",
+        "Confusing with dry litmus test only"
+      ],
+      "concept_ids": [
+        "u2_d8_c02",
+        "u2_d8_c03",
+        "u2_d8_c04"
+      ],
+      "misconception": "indicator_in_acid_base_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q8"
+    },
+    {
+      "id": "u2_ex_q09",
+      "num": 9,
+      "type": "analyse",
+      "marks": 4,
+      "question": "Five solutions A, B, C, D and E when tested with universal indicator showed pH as 4, 1, 11, 7 and 9, respectively. Which solution is\n(a) neutral?\n(b) strongly alkaline?\n(c) strongly acidic?\n(d) weakly acidic?\n(e) weakly alkaline?\nArrange the pH in increasing order of hydrogen-ion concentration.",
+      "hints": [
+        "pH 7 = neutral.",
+        "Lower pH = more H⁺ = more acidic.",
+        "Higher pH = less H⁺ = more basic."
+      ],
+      "model_answer": "(a) **Neutral:** D (pH 7)\n(b) **Strongly alkaline:** C (pH 11)\n(c) **Strongly acidic:** B (pH 1)\n(d) **Weakly acidic:** A (pH 4)\n(e) **Weakly alkaline:** E (pH 9)\n\n**Increasing H⁺ concentration** (decreasing pH): **C(11) < E(9) < D(7) < A(4) < B(1)** i.e. **11, 9, 7, 4, 1** for pH values from least to most H⁺.",
+      "marking_points": [
+        "(a) D",
+        "(b) C",
+        "(c) B",
+        "(d) A",
+        "(e) E",
+        "Correct pH order for H⁺ concentration"
+      ],
+      "common_mistakes": [
+        "Reversing pH scale",
+        "Wrong neutral identification"
+      ],
+      "concept_ids": [
+        "u2_d11_c02",
+        "u2_d11_c04",
+        "u2_d11_c06"
+      ],
+      "misconception": "ph_scale_reversed",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q9"
+    },
+    {
+      "id": "u2_ex_q10",
+      "num": 10,
+      "type": "explain",
+      "marks": 3,
+      "question": "Equal lengths of magnesium ribbons are taken in test tubes A and B. Hydrochloric acid (HCl) is added to test tube A, while acetic acid (CH₃COOH) is added to test tube B. Amount and concentration taken for both the acids are same. In which test tube will the fizzing occur more vigorously and why?",
+      "hints": [
+        "Strong acid vs weak acid.",
+        "HCl fully ionises; acetic acid partially.",
+        "More H⁺ → faster reaction."
+      ],
+      "model_answer": "Fizzing occurs more vigorously in **test tube A (HCl)**.\n\n**HCl** is a **strong acid** — it produces **more H⁺ ions** at the same concentration.\n\n**Acetic acid** is a **weak acid** — it ionises only partially, so fewer H⁺ ions are available; reaction with Mg is **slower** and fizzing is less vigorous.",
+      "marking_points": [
+        "Test tube A (HCl) identified",
+        "HCl is strong acid / more H⁺",
+        "Acetic acid is weak / partial ionisation"
+      ],
+      "common_mistakes": [
+        "Choosing test tube B",
+        "Saying both react equally always"
+      ],
+      "concept_ids": [
+        "u2_d3_c04",
+        "u2_d8_c08",
+        "u2_d11_c03"
+      ],
+      "misconception": "ph_scale_reversed",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q10"
+    },
+    {
+      "id": "u2_ex_q11",
+      "num": 11,
+      "type": "explain",
+      "marks": 2,
+      "question": "Fresh milk has a pH of 6. How do you think the pH will change as it turns into curd? Explain your answer.",
+      "hints": [
+        "Curd formation involves lactic acid bacteria.",
+        "Acids lower pH.",
+        "pH below 6 → more acidic."
+      ],
+      "model_answer": "As milk turns into **curd**, its **pH decreases** (becomes **less than 6**, more acidic).\n\nLactic acid bacteria convert lactose to **lactic acid**, increasing H⁺ concentration and lowering pH.",
+      "marking_points": [
+        "pH decreases / becomes more acidic",
+        "Lactic acid formed during curdling",
+        "pH falls below 6"
+      ],
+      "common_mistakes": [
+        "Saying pH increases",
+        "No explanation of lactic acid"
+      ],
+      "concept_ids": [
+        "u2_d11_c05",
+        "u2_d11_c07",
+        "u2_d11_c08"
+      ],
+      "misconception": "ph_scale_reversed",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q11"
+    },
+    {
+      "id": "u2_ex_q12",
+      "num": 12,
+      "type": "explain",
+      "marks": 3,
+      "question": "A milkman adds a very small amount of baking soda to fresh milk.\n(a) Why does he shift the pH of the fresh milk from 6 to slightly alkaline?\n(b) Why does this milk take a long time to set as curd?",
+      "hints": [
+        "Baking soda is NaHCO₃ — basic salt.",
+        "Higher pH slows bacterial acid production.",
+        "Link to curd setting time."
+      ],
+      "model_answer": "(a) **Baking soda (sodium hydrogencarbonate)** is mildly **basic**; it **neutralises** slight acidity and shifts pH from 6 to **slightly alkaline**.\n\n(b) Curd forms when lactic acid bacteria produce acid, lowering pH. **Alkaline milk** retards this process, so the milk **takes longer to set** as curd.",
+      "marking_points": [
+        "(a) baking soda is basic / raises pH",
+        "(b) alkaline medium slows curdling / acid production"
+      ],
+      "common_mistakes": [
+        "Saying baking soda makes milk acidic",
+        "No link to bacterial action"
+      ],
+      "concept_ids": [
+        "u2_d13_c04",
+        "u2_d13_c06",
+        "u2_d11_c05"
+      ],
+      "misconception": "ph_scale_reversed",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q12"
+    },
+    {
+      "id": "u2_ex_q13",
+      "num": 13,
+      "type": "explain",
+      "marks": 2,
+      "question": "Plaster of Paris should be stored in a moisture-proof container. Explain why?",
+      "hints": [
+        "Plaster of Paris is CaSO₄·½H₂O.",
+        "Reacts with water to form gypsum.",
+        "Moisture causes setting/hardening."
+      ],
+      "model_answer": "**Plaster of Paris** (calcium sulphate hemihydrate) **reacts with moisture/water** to form **gypsum (CaSO₄·2H₂O)**, a hard mass that **cannot be used** for moulding.\n\nHence it must be stored in a **moisture-proof container**.",
+      "marking_points": [
+        "Reacts with moisture/water",
+        "Forms gypsum / hard mass",
+        "Must stay dry for use"
+      ],
+      "common_mistakes": [
+        "Saying it dissolves only",
+        "No equation or product named"
+      ],
+      "concept_ids": [
+        "u2_d15_c06",
+        "u2_d15_c07",
+        "u2_d15_c08"
+      ],
+      "misconception": "neutralisation_products_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q13"
+    },
+    {
+      "id": "u2_ex_q14",
+      "num": 14,
+      "type": "explain",
+      "marks": 3,
+      "question": "What is a neutralisation reaction? Give two examples.",
+      "hints": [
+        "Acid + base → salt + water.",
+        "H⁺ + OH⁻ → H₂O.",
+        "Give two balanced examples."
+      ],
+      "model_answer": "A **neutralisation reaction** is the reaction between an **acid and a base** to form **salt and water**.\n\n**H⁺(aq) + OH⁻(aq) → H₂O(l)**\n\nExamples:\n1. **NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)**\n2. **Ca(OH)₂(aq) + H₂SO₄(aq) → CaSO₄(aq) + 2H₂O(l)**",
+      "marking_points": [
+        "Definition: acid + base → salt + water",
+        "Two correct examples"
+      ],
+      "common_mistakes": [
+        "Products as hydrogen and oxygen gas",
+        "Only one example"
+      ],
+      "concept_ids": [
+        "u2_d6_c01",
+        "u2_d6_c04",
+        "u2_d6_c07"
+      ],
+      "misconception": "neutralisation_products_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q14"
+    },
+    {
+      "id": "u2_ex_q15",
+      "num": 15,
+      "type": "explain",
+      "marks": 3,
+      "question": "Give two important uses of washing soda and baking soda.",
+      "hints": [
+        "Washing soda = Na₂CO₃·10H₂O.",
+        "Baking soda = NaHCO₃.",
+        "One use each minimum."
+      ],
+      "model_answer": "**Washing soda (Na₂CO₃·10H₂O):**\n• Used in **glass, soap, and paper industries**.\n• Used for **cleaning** and **removing permanent hardness** of water.\n\n**Baking soda (NaHCO₃):**\n• Used as **antacid** (neutralises stomach acid).\n• Used in **baking** (releases CO₂ with mild acid) and **fire extinguishers**.",
+      "marking_points": [
+        "At least two uses of washing soda",
+        "At least two uses of baking soda"
+      ],
+      "common_mistakes": [
+        "Swapping the two compounds",
+        "Vague uses without naming compound"
+      ],
+      "concept_ids": [
+        "u2_d14_c03",
+        "u2_d14_c05",
+        "u2_d15_c01"
+      ],
+      "misconception": "neutralisation_products_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 2 Exercises Q15"
+    }
+  ]
+}

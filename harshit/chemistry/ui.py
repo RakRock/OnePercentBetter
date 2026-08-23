@@ -229,15 +229,34 @@ def render_unit_home(unit_id: int) -> None:
     if section_key not in st.session_state:
         st.session_state[section_key] = "📚 Learn"
 
+    sections = ["📚 Learn", "🎯 Practice", "⚙️ Practice Setup"]
+    if hpc.stage2_available(unit_id):
+        sections.insert(2, "📋 Stage 2")
+    if hpc.stage3_available(unit_id):
+        insert_at = sections.index("⚙️ Practice Setup")
+        sections.insert(insert_at, "📝 Stage 3")
+
     section = st.radio(
         "Section",
-        ["📚 Learn", "🎯 Practice", "⚙️ Practice Setup"],
+        sections,
         horizontal=True,
         key=section_key,
         label_visibility="collapsed",
     )
 
     st.markdown("---")
+
+    if section == "📋 Stage 2":
+        from . import mcq_ui as hcmcq
+
+        hcmcq.render_stage2_home(stage1_done=stage1_done, unit_id=unit_id)
+        return
+
+    if section == "📝 Stage 3":
+        from . import exercise_ui as hcex
+
+        hcex.render_stage3_home(stage1_done=stage1_done, unit_id=unit_id)
+        return
 
     if section == "🎯 Practice":
         from . import practice_ui as hppui

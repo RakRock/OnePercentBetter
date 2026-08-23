@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "unit_id": 2,
+    "chapter": 2,
+    "pdf": "jesc102.pdf",
+    "title": "Acids, Bases and Salts"
+  },
+  "activities": [
+    {
+      "id": "2.1",
+      "title": "Acids and bases in the laboratory",
+      "summary": "Test HCl, H₂SO₄, HNO₃, CH₃COOH, NaOH, Ca(OH)₂, KOH, Mg(OH)₂, NH₄OH with indicators; record colours in Table 2.1.",
+      "concept_ids": [
+        "u2_d2_c01",
+        "u2_d2_c03",
+        "u2_d2_c06"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "2.2",
+      "title": "Olfactory indicators",
+      "summary": "Prepare onion cloth strips; test with dilute HCl and NaOH; try vanilla essence and clove oil.",
+      "concept_ids": [
+        "u2_d2_c04",
+        "u2_d2_c05",
+        "u2_d2_c07"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "2.3",
+      "title": "Zinc with dilute sulphuric acid",
+      "summary": "React zinc with dilute H₂SO₄; collect and test hydrogen gas by burning.",
+      "concept_ids": [
+        "u2_d3_c01",
+        "u2_d3_c03",
+        "u2_d3_c05"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "2.4",
+      "title": "Zinc with sodium hydroxide",
+      "summary": "Warm zinc granules with NaOH solution; collect and test hydrogen gas evolved.",
+      "concept_ids": [
+        "u2_d3_c06",
+        "u2_d3_c07",
+        "u2_d3_c08"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "2.5",
+      "title": "Metal carbonates with acid",
+      "summary": "React Na₂CO₃ and NaHCO₃ with dilute HCl; pass CO₂ through lime water.",
+      "concept_ids": [
+        "u2_d4_c01",
+        "u2_d4_c03",
+        "u2_d4_c05"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "2.6",
+      "title": "Acid–base neutralisation",
+      "summary": "Add HCl to phenolphthalein–NaOH; observe colour change; add NaOH again.",
+      "concept_ids": [
+        "u2_d6_c01",
+        "u2_d6_c04",
+        "u2_d6_c07"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "2.7",
+      "title": "Copper oxide with acid",
+      "summary": "Add dilute HCl to copper oxide; observe blue-green solution of copper(II) chloride.",
+      "concept_ids": [
+        "u2_d7_c01",
+        "u2_d7_c03",
+        "u2_d7_c05"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "2.8",
+      "title": "Non-metallic oxide with base",
+      "summary": "Observe CO₂ from Activity 2.5 reacting with calcium hydroxide (lime water).",
+      "concept_ids": [
+        "u2_d7_c06",
+        "u2_d7_c07",
+        "u2_d7_c08"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "2.9",
+      "title": "Acid/base conductivity",
+      "summary": "Test conductivity of dilute HCl, glucose, alcohol, and dilute NaOH with a bulb circuit.",
+      "concept_ids": [
+        "u2_d8_c01",
+        "u2_d8_c03",
+        "u2_d8_c05"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "2.10",
+      "title": "Dilution of acid and base",
+      "summary": "Add concentrated H₂SO₄ to water and NaOH pellets to water; note temperature change.",
+      "concept_ids": [
+        "u2_d10_c08",
+        "u2_d10_c09",
+        "u2_d10_c10"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "2.11",
+      "title": "pH paper on solutions",
+      "summary": "Test dilute HCl, NaOH, lemon juice, vinegar, soap solution, and milk with pH paper.",
+      "concept_ids": [
+        "u2_d11_c02",
+        "u2_d11_c04",
+        "u2_d11_c06"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "2.12",
+      "title": "Soil pH testing",
+      "summary": "Collect soil samples; shake with water; filter; test filtrate with pH paper.",
+      "concept_ids": [
+        "u2_d12_c01",
+        "u2_d12_c03",
+        "u2_d12_c05"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "2.13",
+      "title": "Plants and soil pH",
+      "summary": "Grow Hydrangea, Clematis, or other plants; relate growth to soil acidity/alkalinity.",
+      "concept_ids": [
+        "u2_d12_c06",
+        "u2_d12_c07",
+        "u2_d12_c08"
+      ],
+      "stage2_day": 20
+    },
+    {
+      "id": "2.14",
+      "title": "Family of salts",
+      "summary": "Test pH of salts NaCl, Na₂CO₃, NaHCO₃, KNO₃, NH₄Cl with pH paper or universal indicator.",
+      "concept_ids": [
+        "u2_d13_c01",
+        "u2_d13_c03",
+        "u2_d13_c05"
+      ],
+      "stage2_day": 20
+    },
+    {
+      "id": "2.15",
+      "title": "Water of crystallisation",
+      "summary": "Heat hydrated copper sulphate; add water to white anhydrous sample; observe colour return.",
+      "concept_ids": [
+        "u2_d15_c06",
+        "u2_d15_c07",
+        "u2_d15_c08"
+      ],
+      "stage2_day": 20
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "A solution turns red litmus blue, its pH is likely to be",
+      "options": [
+        "1",
+        "4",
+        "5",
+        "10"
+      ],
+      "answer": 3,
+      "explanation": "Basic solutions turn red litmus blue; pH > 7 — here pH 10.",
+      "misconception": "ph_scale_reversed",
+      "source": "NCERT Ch 2 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "A solution reacts with crushed egg-shells to give a gas that turns lime-water milky. The solution contains",
+      "options": [
+        "NaCl",
+        "HCl",
+        "LiCl",
+        "KCl"
+      ],
+      "answer": 1,
+      "explanation": "Egg shells contain CaCO₃; acids release CO₂ that turns lime water milky — HCl is an acid.",
+      "misconception": "litmus_colour_confusion",
+      "source": "NCERT Ch 2 Exercises Q2"
+    },
+    {
+      "num": 3,
+      "question": "10 mL of a solution of NaOH is found to be completely neutralised by 8 mL of a given solution of HCl. If we take 20 mL of the same solution of NaOH, the amount HCl solution (the same solution as before) required to neutralise it will be",
+      "options": [
+        "4 mL",
+        "8 mL",
+        "12 mL",
+        "16 mL"
+      ],
+      "answer": 3,
+      "explanation": "Double the NaOH volume requires double the HCl: 2 × 8 mL = 16 mL.",
+      "misconception": "neutralisation_products_error",
+      "source": "NCERT Ch 2 Exercises Q3"
+    },
+    {
+      "num": 4,
+      "question": "Which one of the following types of medicines is used for treating indigestion?",
+      "options": [
+        "Antibiotic",
+        "Analgesic",
+        "Antacid",
+        "Antiseptic"
+      ],
+      "answer": 2,
+      "explanation": "Antacids neutralise excess stomach acid to relieve indigestion.",
+      "misconception": "neutralisation_products_error",
+      "source": "NCERT Ch 2 Exercises Q4"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Section 2.1 — brass vessels",
+      "question": "Why should curd and sour substances not be kept in brass and copper vessels?",
+      "options": [
+        "They improve taste",
+        "Acids react with metal to form toxic compounds",
+        "They cool faster",
+        "They become alkaline"
+      ],
+      "answer": 1,
+      "explanation": "Acids in curd react with copper/brass (Cu/Zn) forming salts that can be harmful.",
+      "misconception": "litmus_colour_confusion",
+      "source": "NCERT Ch 2 Intext Q1"
+    },
+    {
+      "ref": "Section 2.1.2 — metal + acid",
+      "question": "Which gas is usually liberated when an acid reacts with a metal?",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Hydrogen",
+        "Carbon dioxide"
+      ],
+      "answer": 2,
+      "explanation": "Acid + metal → salt + hydrogen gas (e.g. Zn + HCl → ZnCl₂ + H₂).",
+      "misconception": "neutralisation_products_error",
+      "source": "NCERT Ch 2 Intext Q2"
+    },
+    {
+      "ref": "Section 2.2.1 — ions in water",
+      "question": "Why does an aqueous solution of an acid conduct electricity?",
+      "options": [
+        "Due to water only",
+        "Due to H⁺ (hydronium) ions in solution",
+        "Due to undissociated acid molecules",
+        "Acids are always metals"
+      ],
+      "answer": 1,
+      "explanation": "Acids produce H⁺(aq) ions in water which carry current.",
+      "misconception": "indicator_in_acid_base_confusion",
+      "source": "NCERT Ch 2 Intext Q2.2"
+    },
+    {
+      "ref": "Section 2.2.1 — dilution",
+      "question": "While diluting an acid, why is it recommended that the acid should be added to water and not water to the acid?",
+      "options": [
+        "Water is heavier",
+        "Adding water to acid can cause splashing due to large heat release",
+        "Acid evaporates in water",
+        "Water neutralises acid instantly"
+      ],
+      "answer": 1,
+      "explanation": "Dilution is highly exothermic; adding water to concentrated acid can splash hot acid — add acid to water slowly.",
+      "misconception": "dilution_order_wrong",
+      "source": "NCERT Ch 2 Intext Q4"
+    },
+    {
+      "ref": "Section 2.3 — pH scale",
+      "question": "A neutral solution has a pH of",
+      "options": [
+        "0",
+        "7",
+        "14",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "pH 7 is neutral; below 7 acidic, above 7 basic.",
+      "misconception": "ph_scale_reversed",
+      "source": "NCERT Ch 2 Intext"
+    },
+    {
+      "ref": "Section 2.4.2 — salt pH",
+      "question": "An aqueous solution of sodium carbonate turns red litmus blue. It is",
+      "options": [
+        "acidic",
+        "basic",
+        "neutral",
+        "amphoteric"
+      ],
+      "answer": 1,
+      "explanation": "Na₂CO₃ is a salt of strong base and weak acid — its solution is basic.",
+      "misconception": "ph_scale_reversed",
+      "source": "NCERT Ch 2 Intext"
+    }
+  ]
+}

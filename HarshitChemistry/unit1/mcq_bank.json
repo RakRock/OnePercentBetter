@@ -2,9 +2,899 @@
   "meta": {
     "unit_id": 1,
     "stage": 2,
-    "active": false,
-    "total_mcqs": 0,
-    "description": "Stage 2 structured MCQ sessions — coming after Stage 1 concept completion"
+    "active": true,
+    "release": 5,
+    "total_mcqs": 40,
+    "pdf": "jesc101.pdf",
+    "note": "Stage 2: NCERT Exercises Q1–3 + Intext + concept bank. Activities 1.1–1.11 linked per day."
   },
-  "sessions": []
+  "sessions": [
+    {
+      "day": 17,
+      "title": "Signs of Reaction and Equations",
+      "active": true,
+      "activity_refs": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "questions": [
+        {
+          "id": "u1_d17_ncert_01",
+          "question": "Which of the statements about the reaction below are incorrect?\n2PbO(s) + C(s) → 2Pb(s) + CO₂(g)\n(a) Lead is getting reduced.\n(b) Carbon dioxide is getting oxidised.\n(c) Carbon is getting oxidised.\n(d) Lead oxide is getting reduced.",
+          "options": [
+            "(i) (a) and (b)",
+            "(ii) (a) and (c)",
+            "(iii) (a), (b) and (c)",
+            "(iv) all"
+          ],
+          "answer": 0,
+          "explanation": "PbO loses oxygen (reduced); C gains oxygen (oxidised to CO₂). Statements (a) and (b) are incorrect.",
+          "misconception": "oxidation_reduction_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 1 Exercises Q1",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions and Equations",
+          "ncert_ref": "NCERT Ch 1 Exercises Q1"
+        },
+        {
+          "id": "u1_d17_ncert_02",
+          "question": "Fe₂O₃ + 2Al → Al₂O₃ + 2Fe\nThe above reaction is an example of a",
+          "options": [
+            "combination reaction",
+            "double displacement reaction",
+            "decomposition reaction",
+            "displacement reaction"
+          ],
+          "answer": 3,
+          "explanation": "Aluminium displaces iron from iron(III) oxide — a displacement (thermit-type) reaction.",
+          "misconception": "displacement_reactivity_error",
+          "concept_id": "",
+          "source": "NCERT Ch 1 Exercises Q2",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions and Equations",
+          "ncert_ref": "NCERT Ch 1 Exercises Q2"
+        },
+        {
+          "id": "u1_d17_intext_03",
+          "question": "Why should a magnesium ribbon be cleaned before burning in air?",
+          "options": [
+            "To increase its weight before burning",
+            "To remove the oxide layer so it burns readily",
+            "To make it shine for observation only",
+            "To convert it to magnesium oxide first"
+          ],
+          "answer": 1,
+          "explanation": "Magnesium ribbon is cleaned with sandpaper to remove the oxide coating that would otherwise slow reaction with oxygen.",
+          "misconception": "physical_vs_chemical_change",
+          "concept_id": "",
+          "source": "NCERT Ch 1 Intext Q1",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions and Equations",
+          "ncert_ref": "NCERT Ch 1 Intext Q1"
+        },
+        {
+          "id": "u1_d17_intext_04",
+          "question": "Is Mg + O₂ → MgO a balanced chemical equation?",
+          "options": [
+            "Yes, atoms are equal on both sides",
+            "No, oxygen atoms are not equal",
+            "No, magnesium atoms are not equal",
+            "It is a physical change equation"
+          ],
+          "answer": 1,
+          "explanation": "Left side has 2 O atoms in O₂ but only 1 O in MgO — the equation is unbalanced until written as 2Mg + O₂ → 2MgO.",
+          "misconception": "unbalanced_equation_accepted",
+          "concept_id": "",
+          "source": "NCERT Ch 1 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions and Equations",
+          "ncert_ref": "NCERT Ch 1 Intext"
+        },
+        {
+          "id": "u1_d17_intext_05",
+          "question": "CaO + H₂O → Ca(OH)₂ releases heat. This reaction is best described as",
+          "options": [
+            "endothermic combination",
+            "exothermic combination",
+            "decomposition",
+            "double displacement"
+          ],
+          "answer": 1,
+          "explanation": "Calcium oxide and water combine to form a single product (slaked lime) with release of heat — exothermic combination.",
+          "misconception": "physical_vs_chemical_change",
+          "concept_id": "",
+          "source": "NCERT Ch 1 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions and Equations",
+          "ncert_ref": "NCERT Ch 1 Intext"
+        },
+        {
+          "id": "u1_d17_intext_06",
+          "question": "When an iron nail is dipped in blue copper sulphate solution, the solution turns pale green because",
+          "options": [
+            "iron dissolves without reaction",
+            "Fe²⁺ ions replace Cu²⁺ in solution",
+            "copper oxidises iron to rust",
+            "water evaporates from the solution"
+          ],
+          "answer": 1,
+          "explanation": "Fe displaces Cu from CuSO₄ forming FeSO₄ (pale green); copper metal deposits on the nail.",
+          "misconception": "displacement_reactivity_error",
+          "concept_id": "",
+          "source": "NCERT Ch 1 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions and Equations",
+          "ncert_ref": "NCERT Ch 1 Intext"
+        },
+        {
+          "id": "u1_d17_intext_07",
+          "question": "In CuO + H₂ → Cu + H₂O, which substance is reduced?",
+          "options": [
+            "H₂",
+            "CuO",
+            "H₂O",
+            "Cu"
+          ],
+          "answer": 1,
+          "explanation": "CuO loses oxygen and is reduced to Cu; H₂ is oxidised to H₂O.",
+          "misconception": "oxidation_reduction_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 1 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions and Equations",
+          "ncert_ref": "NCERT Ch 1 Intext"
+        },
+        {
+          "id": "u1_s2_d1_bank_08",
+          "question": "What is the key takeaway about **Reactants and products**?",
+          "options": [
+            "Mg + O₂ → MgO (combination reaction).",
+            "Burning Mg gives magnesium oxide.",
+            "Left side = reactants; right side = products",
+            "New substance + new properties → chemical change."
+          ],
+          "answer": 2,
+          "explanation": "Left side = reactants; right side = products.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c02",
+          "category": "u1_d1_B",
+          "category_label": "Day 1 — Chemical Reactions Around Us · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d1_bank_09",
+          "question": "What is the key takeaway about **Chemical reactions everywhere**?",
+          "options": [
+            "Heat change often accompanies chemical reactions.",
+            "Chemistry is not only in the lab",
+            "Remove surface oxide before heating.",
+            "Signs → equations → types → redox → corrosion/rancidity."
+          ],
+          "answer": 1,
+          "explanation": "Chemistry is not only in the lab.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c03",
+          "category": "u1_d1_C",
+          "category_label": "Day 1 — Chemical Reactions Around Us · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d1_bank_10",
+          "question": "Which statement best describes **What is a chemical reaction?**?",
+          "options": [
+            "Many reactions release heat (exothermic); some absorb heat (endothermic).",
+            "Clean Mg ribbon burns with dazzling white flame; white powdery ash (MgO) forms.",
+            "Record what you see: flame colour, smoke, residue colour, temperature change.",
+            "A chemical reaction is a process in which one or more substances change into new substances with different properties."
+          ],
+          "answer": 3,
+          "explanation": "New substances form in a chemical reaction.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c01",
+          "category": "u1_d1_A",
+          "category_label": "Day 1 — Chemical Reactions Around Us · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "title": "Balancing and Reaction Types",
+      "active": true,
+      "activity_refs": [
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "questions": [
+        {
+          "id": "u1_d18_ncert_01",
+          "question": "What happens when dilute hydrochloric acid is added to iron filings? Tick the correct answer.",
+          "options": [
+            "Hydrogen gas and iron chloride are produced.",
+            "Chlorine gas and iron hydroxide are produced.",
+            "No reaction takes place.",
+            "Iron salt and water are produced."
+          ],
+          "answer": 0,
+          "explanation": "Fe + 2HCl → FeCl₂ + H₂ — hydrogen gas evolves and iron(II) chloride forms.",
+          "misconception": "displacement_reactivity_error",
+          "concept_id": "",
+          "source": "NCERT Ch 1 Exercises Q3",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions and Equations",
+          "ncert_ref": "NCERT Ch 1 Exercises Q3"
+        },
+        {
+          "id": "u1_s2_d5_bank_02",
+          "question": "What is the key takeaway about **Law of conservation of mass**?",
+          "options": [
+            "Exam full marks: balanced + states.",
+            "Trial coefficients systematically.",
+            "Atoms rearrange; total mass stays same",
+            "Only coefficients change; formulae stay fixed."
+          ],
+          "answer": 2,
+          "explanation": "Atoms rearrange; total mass stays same.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d5_c02",
+          "category": "u1_d5_B",
+          "category_label": "Day 5 — Balanced Equations & Conservation of Mass · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "unbalanced_equation_accepted"
+        },
+        {
+          "id": "u1_s2_d5_bank_03",
+          "question": "What is the key takeaway about **Lavoisier's contribution**?",
+          "options": [
+            "Exam full marks: balanced + states.",
+            "Same atoms each side — nothing created or destroyed.",
+            "Conservation of mass → must balance equations",
+            "Atoms rearrange; total mass stays same."
+          ],
+          "answer": 2,
+          "explanation": "Conservation of mass → must balance equations.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d5_c03",
+          "category": "u1_d5_C",
+          "category_label": "Day 5 — Balanced Equations & Conservation of Mass · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d5_bank_04",
+          "question": "Which statement best describes **Balanced chemical equation**?",
+          "options": [
+            "Unbalanced equation violates conservation of mass; exam answers must be balanced unless asked otherwise.",
+            "2Mg(s) + O₂(g) → 2MgO(s) — two Mg and two O on each side.",
+            "If gas escapes (CO₂, H₂), mass of open system appears to decrease — still conserved in universe.",
+            "Balanced equation has equal number of atoms of each element on both sides."
+          ],
+          "answer": 3,
+          "explanation": "Same atoms each side — nothing created or destroyed.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d5_c01",
+          "category": "u1_d5_A",
+          "category_label": "Day 5 — Balanced Equations & Conservation of Mass · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d6_bank_05",
+          "question": "What is the key takeaway about **Start with complex molecule**?",
+          "options": [
+            "Show balanced equation clearly.",
+            "Often already balanced — still verify.",
+            "Fix big molecule coefficient first",
+            "Clear fractions in final answer."
+          ],
+          "answer": 2,
+          "explanation": "Fix big molecule coefficient first.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d6_c02",
+          "category": "u1_d6_B",
+          "category_label": "Day 6 — Balancing Chemical Equations · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d6_bank_06",
+          "question": "What is the key takeaway about **Balance hydrogen and oxygen last**?",
+          "options": [
+            "30 seconds verification saves marks.",
+            "LCM trick for O atoms: 6 each side.",
+            "Save O₂ coefficient for the end",
+            "Clear fractions in final answer."
+          ],
+          "answer": 2,
+          "explanation": "Save O₂ coefficient for the end.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d6_c03",
+          "category": "u1_d6_C",
+          "category_label": "Day 6 — Balancing Chemical Equations · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d6_bank_07",
+          "question": "Which statement best describes **Hit-and-trial balancing — steps**?",
+          "options": [
+            "Write formulae → count atoms → change coefficients → recount until balanced.",
+            "H and O often appear in multiple products — balance other elements first.",
+            "Begin balancing with the compound containing most atoms (often largest formula).",
+            "If stuck, use fractional coefficients temporarily, then multiply all by denominator."
+          ],
+          "answer": 0,
+          "explanation": "Repeat until every element matches.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d6_c01",
+          "category": "u1_d6_A",
+          "category_label": "Day 6 — Balancing Chemical Equations · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d7_bank_08",
+          "question": "What is the key takeaway about **Combination — carbon and oxygen**?",
+          "options": [
+            "CO₂ is single product",
+            "Count products: exactly one main product.",
+            "Two elements → one compound.",
+            "Combustion = combination with O₂."
+          ],
+          "answer": 0,
+          "explanation": "CO₂ is single product.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d7_c02",
+          "category": "u1_d7_B",
+          "category_label": "Day 7 — Combination Reactions · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d7_bank_09",
+          "question": "What is the key takeaway about **Quick lime and water**?",
+          "options": [
+            "Combination often exothermic, not always.",
+            "CaO (quick lime) + water → slaked lime",
+            "Rusting is oxidation + combination over time.",
+            "CO₂ is single product."
+          ],
+          "answer": 1,
+          "explanation": "CaO (quick lime) + water → slaked lime.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d7_c03",
+          "category": "u1_d7_C",
+          "category_label": "Day 7 — Combination Reactions · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d7_bank_10",
+          "question": "Which statement best describes **Combination reaction definition**?",
+          "options": [
+            "Calcium oxide reacts with water to form calcium hydroxide (slaked lime) — exothermic.",
+            "Many combination reactions release heat — CaO + H₂O, burning Mg.",
+            "Two or more substances combine to form a single product — A + B → AB.",
+            "Carbon burns in oxygen to form carbon dioxide: C + O₂ → CO₂."
+          ],
+          "answer": 2,
+          "explanation": "Many reactants → one product.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d7_c01",
+          "category": "u1_d7_A",
+          "category_label": "Day 7 — Combination Reactions · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "title": "Displacement and Double Displacement",
+      "active": true,
+      "activity_refs": [
+        "1.7",
+        "1.8",
+        "1.9"
+      ],
+      "questions": [
+        {
+          "id": "u1_s2_d9_bank_01",
+          "question": "What is the key takeaway about **Reactivity series role**?",
+          "options": [
+            "Cu more reactive than Ag.",
+            "Higher metal kicks out lower metal",
+            "Acid reaction is displacement of hydrogen.",
+            "Lower metal cannot displace higher."
+          ],
+          "answer": 1,
+          "explanation": "Higher metal kicks out lower metal.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d9_c02",
+          "category": "u1_d9_B",
+          "category_label": "Day 9 — Displacement Reactions · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u1_s2_d9_bank_02",
+          "question": "What is the key takeaway about **Iron and copper sulphate**?",
+          "options": [
+            "Cu more reactive than Ag.",
+            "Ion colour change indicates displacement.",
+            "One element replaced vs ion exchange.",
+            "More reactive Fe displaces Cu"
+          ],
+          "answer": 3,
+          "explanation": "More reactive Fe displaces Cu.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d9_c03",
+          "category": "u1_d9_C",
+          "category_label": "Day 9 — Displacement Reactions · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u1_s2_d9_bank_03",
+          "question": "Which statement best describes **Displacement reaction definition**?",
+          "options": [
+            "Zn + CuSO₄ → ZnSO₄ + Cu — zinc is more reactive than copper.",
+            "More reactive element displaces less reactive element from its compound.",
+            "Cu + ZnSO₄ → no reaction — copper less reactive than zinc.",
+            "Metal higher in reactivity series displaces metal lower from salt solution."
+          ],
+          "answer": 1,
+          "explanation": "Reactivity series decides if displacement occurs.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d9_c01",
+          "category": "u1_d9_A",
+          "category_label": "Day 9 — Displacement Reactions · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u1_s2_d10_bank_04",
+          "question": "What is the key takeaway about **Precipitation reactions**?",
+          "options": [
+            "Double displacement with precipitate.",
+            "BaSO₄ white precipitate.",
+            "Check valency after swap.",
+            "Insoluble product = precipitate reaction"
+          ],
+          "answer": 3,
+          "explanation": "Insoluble product = precipitate reaction.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d10_c02",
+          "category": "u1_d10_B",
+          "category_label": "Day 10 — Double Displacement Reactions · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d10_bank_05",
+          "question": "What is the key takeaway about **Barium sulphate test**?",
+          "options": [
+            "Exchange: Pb pairs with I, K stays with NO₃.",
+            "Acid + base = salt + water.",
+            "BaSO₄ white precipitate",
+            "Two compounds swap partners."
+          ],
+          "answer": 2,
+          "explanation": "BaSO₄ white precipitate.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d10_c03",
+          "category": "u1_d10_C",
+          "category_label": "Day 10 — Double Displacement Reactions · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d10_bank_06",
+          "question": "Which statement best describes **Double displacement definition**?",
+          "options": [
+            "Na₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2NaCl(aq) — ion exchange.",
+            "Exchange of ions between two compounds — AB + CD → AD + CB.",
+            "Two compounds react, two products, no single element displacing another → likely double displacement.",
+            "Acid + base → salt + water — special double displacement."
+          ],
+          "answer": 1,
+          "explanation": "Two compounds swap partners.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d10_c01",
+          "category": "u1_d10_A",
+          "category_label": "Day 10 — Double Displacement Reactions · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "displacement_reactivity_error"
+        },
+        {
+          "id": "u1_s2_d11_bank_07",
+          "question": "What is the key takeaway about **Oxidation definition (hydrogen)**?",
+          "options": [
+            "Reducing agent gets oxidised.",
+            "Apply four definitions systematically.",
+            "Gain of oxygen = oxidation.",
+            "Loss of H counts as oxidation"
+          ],
+          "answer": 3,
+          "explanation": "Loss of H counts as oxidation.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c02",
+          "category": "u1_d11_B",
+          "category_label": "Day 11 — Oxidation and Reduction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "oxidation_reduction_swap"
+        },
+        {
+          "id": "u1_s2_d11_bank_08",
+          "question": "What is the key takeaway about **Reduction definition (oxygen)**?",
+          "options": [
+            "Reducing agent gets oxidised.",
+            "Loss of oxygen = reduction",
+            "Gain of oxygen = oxidation.",
+            "Zn is reducing agent; CuO is oxidising agent."
+          ],
+          "answer": 1,
+          "explanation": "Loss of oxygen = reduction.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c03",
+          "category": "u1_d11_C",
+          "category_label": "Day 11 — Oxidation and Reduction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "oxidation_reduction_swap"
+        },
+        {
+          "id": "u1_s2_d11_bank_09",
+          "question": "Which statement best describes **Oxidation definition (oxygen)**?",
+          "options": [
+            "CuO + H₂ → Cu + H₂O: CuO reduced (loses O); H₂ oxidised (gains O as H₂O).",
+            "Zn + CuO → ZnO + Cu — Zn oxidised; CuO reduced.",
+            "Ask: who gained O or lost H? (oxidised).",
+            "Oxidation is gain of oxygen by a substance."
+          ],
+          "answer": 3,
+          "explanation": "Gain of oxygen = oxidation.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c01",
+          "category": "u1_d11_A",
+          "category_label": "Day 11 — Oxidation and Reduction · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "oxidation_reduction_swap"
+        },
+        {
+          "id": "u1_s2_d12_bank_10",
+          "question": "What is the key takeaway about **Rancidity introduction**?",
+          "options": [
+            "Sacrificial protection by zinc.",
+            "Antioxidants reduce O₂ attack on fats.",
+            "Oxidation of unsaturated fats",
+            "Physical barrier stops O₂ and H₂O."
+          ],
+          "answer": 2,
+          "explanation": "Oxidation of unsaturated fats.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d12_c02",
+          "category": "u1_d12_B",
+          "category_label": "Day 12 — Oxidation in Everyday Life · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "oxidation_reduction_swap"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "title": "Redox, Corrosion and Rancidity",
+      "active": true,
+      "activity_refs": [
+        "1.10",
+        "1.11"
+      ],
+      "questions": [
+        {
+          "id": "u1_s2_d11_bank_01",
+          "question": "What is the key takeaway about **Oxidising agent**?",
+          "options": [
+            "Reducing agent gets oxidised.",
+            "Oxidising agent gets reduced",
+            "Track O: moves from CuO to H₂.",
+            "Loss of oxygen = reduction."
+          ],
+          "answer": 1,
+          "explanation": "Oxidising agent gets reduced.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c05",
+          "category": "u1_d11_B",
+          "category_label": "Day 11 — Oxidation and Reduction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "oxidation_reduction_swap"
+        },
+        {
+          "id": "u1_s2_d11_bank_02",
+          "question": "What is the key takeaway about **Reducing agent**?",
+          "options": [
+            "Track O: moves from CuO to H₂.",
+            "Oxidising agent gets reduced.",
+            "Reducing agent gets oxidised",
+            "Zn is reducing agent; CuO is oxidising agent."
+          ],
+          "answer": 2,
+          "explanation": "Reducing agent gets oxidised.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c06",
+          "category": "u1_d11_C",
+          "category_label": "Day 11 — Oxidation and Reduction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "oxidation_reduction_swap"
+        },
+        {
+          "id": "u1_s2_d11_bank_03",
+          "question": "Which statement best describes **Reduction definition (hydrogen)**?",
+          "options": [
+            "Reduction is gain of hydrogen by a substance.",
+            "Substance that removes oxygen or gives hydrogen — itself gets oxidised.",
+            "Substance that gives oxygen or removes hydrogen — itself gets reduced.",
+            "Zn + CuO → ZnO + Cu — Zn oxidised; CuO reduced."
+          ],
+          "answer": 0,
+          "explanation": "Gain of H counts as reduction.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c04",
+          "category": "u1_d11_A",
+          "category_label": "Day 11 — Oxidation and Reduction · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "oxidation_reduction_swap"
+        },
+        {
+          "id": "u1_s2_d12_bank_04",
+          "question": "What is the key takeaway about **Antioxidants in food**?",
+          "options": [
+            "Physical barrier stops O₂ and H₂O.",
+            "Antioxidants reduce O₂ attack on fats",
+            "Many daily changes involve oxidation.",
+            "Less O₂ and lower temperature slow rancidity."
+          ],
+          "answer": 1,
+          "explanation": "Antioxidants reduce O₂ attack on fats.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d12_c05",
+          "category": "u1_d12_B",
+          "category_label": "Day 12 — Oxidation in Everyday Life · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "oxidation_reduction_swap"
+        },
+        {
+          "id": "u1_s2_d12_bank_05",
+          "question": "What is the key takeaway about **Corrosion introduction**?",
+          "options": [
+            "Sacrificial protection by zinc.",
+            "Exclude O₂ to slow oxidation.",
+            "Metal + environment → damage",
+            "Less O₂ and lower temperature slow rancidity."
+          ],
+          "answer": 2,
+          "explanation": "Metal + environment → damage.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d12_c03",
+          "category": "u1_d12_C",
+          "category_label": "Day 12 — Oxidation in Everyday Life · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d12_bank_06",
+          "question": "Which statement best describes **Oxidation in everyday life**?",
+          "options": [
+            "Cold and sealed containers slow oxidation of food fats.",
+            "Fats and oils oxidise on exposure to air — smell and taste turn unpleasant.",
+            "NCERT section 1.",
+            "Food oxidised in body releases energy — slow controlled oxidation."
+          ],
+          "answer": 2,
+          "explanation": "Many daily changes involve oxidation.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d12_c01",
+          "category": "u1_d12_A",
+          "category_label": "Day 12 — Oxidation in Everyday Life · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "oxidation_reduction_swap"
+        },
+        {
+          "id": "u1_s2_d13_bank_07",
+          "question": "What is the key takeaway about **Rusting of iron**?",
+          "options": [
+            "Barrier method blocks contact.",
+            "Needs both O₂ and H₂O",
+            "Corrosion weakens structures.",
+            "Four-part answer scores well."
+          ],
+          "answer": 1,
+          "explanation": "Needs both O₂ and H₂O.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d13_c02",
+          "category": "u1_d13_B",
+          "category_label": "Day 13 — Corrosion · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d13_bank_08",
+          "question": "What is the key takeaway about **Conditions for rusting**?",
+          "options": [
+            "Zinc protects even if scratched (partially).",
+            "Al oxide layer protects inner metal.",
+            "Prevention cheaper than replacement.",
+            "Remove O₂ or H₂O to prevent rust"
+          ],
+          "answer": 3,
+          "explanation": "Remove O₂ or H₂O to prevent rust.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d13_c03",
+          "category": "u1_d13_C",
+          "category_label": "Day 13 — Corrosion · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d13_bank_09",
+          "question": "Which statement best describes **Corrosion definition**?",
+          "options": [
+            "Iron rusts when both oxygen and water (or water vapour) are present.",
+            "Coating iron with thin layer of zinc — zinc corrodes first (sacrificial protection).",
+            "Corrosion is oxidation of metals by moisture, air, acids, and gases in environment.",
+            "Define corrosion → give rust equation → state conditions → list prevention (galvanisation, paint, alloying)."
+          ],
+          "answer": 2,
+          "explanation": "Corrosion weakens structures.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d13_c01",
+          "category": "u1_d13_A",
+          "category_label": "Day 13 — Corrosion · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "coefficient_subscript_confusion"
+        },
+        {
+          "id": "u1_s2_d14_bank_10",
+          "question": "What is the key takeaway about **Foods prone to rancidity**?",
+          "options": [
+            "Inert gas reduces oxidation rate.",
+            "Limit O₂ exposure to prevent.",
+            "Cold slows chemical reaction rate.",
+            "Unsaturated fats oxidise faster"
+          ],
+          "answer": 3,
+          "explanation": "Unsaturated fats oxidise faster.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d14_c02",
+          "category": "u1_d14_B",
+          "category_label": "Day 14 — Rancidity · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 1 — Chemical Reactions",
+          "misconception": "oxidation_reduction_swap"
+        }
+      ]
+    }
+  ]
 }

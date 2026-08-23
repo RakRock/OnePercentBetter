@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "unit_id": 3,
+    "chapter": 3,
+    "pdf": "jesc103.pdf",
+    "title": "Metals and Non-metals"
+  },
+  "activities": [
+    {
+      "id": "3.1",
+      "title": "Appearance and hardness of metals",
+      "summary": "Observe iron, copper, aluminium, magnesium; clean with sandpaper; compare lustre and cut with knife.",
+      "concept_ids": [
+        "u3_d1_c03",
+        "u3_d1_c05",
+        "u3_d1_c07"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "3.2",
+      "title": "Malleability, ductility, sonority",
+      "summary": "Beat metals with hammer; draw wires; tap metals — note malleability, ductility, and sonorous sound.",
+      "concept_ids": [
+        "u3_d2_c01",
+        "u3_d2_c03",
+        "u3_d2_c05"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "3.3",
+      "title": "Heat and electrical conductivity",
+      "summary": "Heat metal wire with pin in wax; test metals in electric circuit with bulb.",
+      "concept_ids": [
+        "u3_d3_c01",
+        "u3_d3_c03",
+        "u3_d3_c05"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "3.4",
+      "title": "Non-metal properties",
+      "summary": "Test carbon (coal), sulphur, iodine for lustre, malleability, conductivity — compare with metals.",
+      "concept_ids": [
+        "u3_d4_c01",
+        "u3_d4_c03",
+        "u3_d4_c05"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "3.5",
+      "title": "Burning metals",
+      "summary": "Burn magnesium ribbon, copper wire, and aluminium foil in air; observe flame and residue.",
+      "concept_ids": [
+        "u3_d6_c01",
+        "u3_d6_c03",
+        "u3_d6_c05"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "3.6",
+      "title": "Metals with water",
+      "summary": "Add Na, Ca, Mg, Al, Fe, Cu, to cold/hot water or steam; compare reactions.",
+      "concept_ids": [
+        "u3_d7_c01",
+        "u3_d7_c03",
+        "u3_d7_c05"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "3.7",
+      "title": "Displacement reactions",
+      "summary": "Place metal strips in salt solutions (CuSO₄, ZnSO₄, FeSO₄, AgNO₃); observe colour changes and deposits.",
+      "concept_ids": [
+        "u3_d9_c01",
+        "u3_d9_c03",
+        "u3_d9_c05"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "3.8",
+      "title": "Burning sulphur",
+      "summary": "Burn sulphur powder; test gas with litmus paper; note acidic oxide formation.",
+      "concept_ids": [
+        "u3_d8_c01",
+        "u3_d8_c03",
+        "u3_d8_c05"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "3.9",
+      "title": "Reactions with oxygen",
+      "summary": "Burn samples of metals and non-metals in air; classify oxides as basic/acidic/neutral.",
+      "concept_ids": [
+        "u3_d6_c04",
+        "u3_d8_c04",
+        "u3_d8_c06"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "3.10",
+      "title": "Ionic compound properties",
+      "summary": "Test NaCl, MgCl₂, etc. for melting point, solubility, and conductivity solid vs solution.",
+      "concept_ids": [
+        "u3_d11_c03",
+        "u3_d11_c06",
+        "u3_d12_c02"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "3.11",
+      "title": "Extraction of metals",
+      "summary": "Discuss reduction of metal oxides with carbon; electrolytic reduction for high-reactivity metals.",
+      "concept_ids": [
+        "u3_d13_c01",
+        "u3_d13_c03",
+        "u3_d13_c05"
+      ],
+      "stage2_day": 20
+    },
+    {
+      "id": "3.12",
+      "title": "Electrolytic refining",
+      "summary": "Study diagram of electrolytic refining of copper — anode, cathode, electrolyte.",
+      "concept_ids": [
+        "u3_d14_c01",
+        "u3_d14_c03",
+        "u3_d14_c05"
+      ],
+      "stage2_day": 20
+    },
+    {
+      "id": "3.13",
+      "title": "Corrosion conditions",
+      "summary": "Iron nails in test tubes A (air+water), B (boiled water+oil), C (dry air/CaCl₂); compare rusting.",
+      "concept_ids": [
+        "u3_d16_c02",
+        "u3_d16_c04",
+        "u3_d16_c06"
+      ],
+      "stage2_day": 20
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "Which of the following pairs will give displacement reactions?",
+      "options": [
+        "NaCl solution and copper metal",
+        "MgCl₂ solution and aluminium metal",
+        "FeSO₄ solution and silver metal",
+        "AgNO₃ solution and copper metal"
+      ],
+      "answer": 3,
+      "explanation": "Cu is more reactive than Ag; Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag.",
+      "misconception": "displacement_reactivity_error",
+      "source": "NCERT Ch 3 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "Which of the following methods is suitable for preventing an iron frying pan from rusting?",
+      "options": [
+        "Applying grease",
+        "Applying paint",
+        "Applying a coating of zinc",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Grease, paint, and galvanisation (zinc coating) all prevent rust by blocking air and moisture.",
+      "misconception": "corrosion_prevention_wrong",
+      "source": "NCERT Ch 3 Exercises Q2"
+    },
+    {
+      "num": 3,
+      "question": "An element reacts with oxygen to give a compound with a high melting point. This compound is also soluble in water. The element is likely to be",
+      "options": [
+        "calcium",
+        "carbon",
+        "silicon",
+        "iron"
+      ],
+      "answer": 0,
+      "explanation": "Calcium forms basic oxide CaO (high mp) which gives soluble Ca(OH)₂ with water.",
+      "misconception": "metal_nonmetal_property_swap",
+      "source": "NCERT Ch 3 Exercises Q3"
+    },
+    {
+      "num": 4,
+      "question": "Food cans are coated with tin and not with zinc because",
+      "options": [
+        "zinc is costlier than tin",
+        "zinc has a higher melting point than tin",
+        "zinc is more reactive than tin",
+        "zinc is less reactive than tin"
+      ],
+      "answer": 2,
+      "explanation": "Zinc is more reactive than tin; it could react with food acids — tin is less reactive and safer as coating.",
+      "misconception": "reactivity_series_order_error",
+      "source": "NCERT Ch 3 Exercises Q4"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Section 3.1 — lustre",
+      "question": "Metals in their pure state have a shining surface. This property is called",
+      "options": [
+        "ductility",
+        "metallic lustre",
+        "sonority",
+        "malleability"
+      ],
+      "answer": 1,
+      "explanation": "The shining surface of pure metals is called metallic lustre.",
+      "misconception": "metal_nonmetal_property_swap",
+      "source": "NCERT Ch 3 Intext"
+    },
+    {
+      "ref": "Section 3.2 — malleability",
+      "question": "Metals that can be beaten into thin sheets are called",
+      "options": [
+        "ductile",
+        "brittle",
+        "malleable",
+        "sonorous"
+      ],
+      "answer": 2,
+      "explanation": "Malleability is the property of being beaten into thin sheets.",
+      "misconception": "metal_nonmetal_property_swap",
+      "source": "NCERT Ch 3 Intext"
+    },
+    {
+      "ref": "Section 3.3 — ionic bond",
+      "question": "Ionic compounds are formed by",
+      "options": [
+        "sharing of electrons",
+        "transfer of electrons from metal to non-metal",
+        "transfer of protons",
+        "metallic bonding only"
+      ],
+      "answer": 1,
+      "explanation": "Metal atoms lose electrons; non-metals gain them — ionic bond forms.",
+      "misconception": "ionic_bond_covalent_confusion",
+      "source": "NCERT Ch 3 Intext"
+    },
+    {
+      "ref": "Section 3.4 — reactivity",
+      "question": "Which metal can displace copper from CuSO₄ solution?",
+      "options": [
+        "Ag",
+        "Au",
+        "Zn",
+        "Cu"
+      ],
+      "answer": 2,
+      "explanation": "Zinc is above copper in the reactivity series and displaces Cu from CuSO₄.",
+      "misconception": "displacement_reactivity_error",
+      "source": "NCERT Ch 3 Intext"
+    },
+    {
+      "ref": "Section 3.5 — corrosion",
+      "question": "Galvanisation protects iron because zinc",
+      "options": [
+        "is prettier than iron",
+        "forms a barrier and sacrificial coating",
+        "makes iron heavier",
+        "reacts with iron to form alloy"
+      ],
+      "answer": 1,
+      "explanation": "Zinc coats iron and corrodes preferentially, protecting the iron underneath.",
+      "misconception": "corrosion_prevention_wrong",
+      "source": "NCERT Ch 3 Intext"
+    }
+  ]
+}

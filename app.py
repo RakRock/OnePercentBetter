@@ -6123,6 +6123,18 @@ def render_harshit_chemistry_practice():
     harshit_chemistry_practice_ui.render_practice()
 
 
+def render_harshit_chemistry_mcq():
+    import harshit_chemistry_mcq_ui
+
+    harshit_chemistry_mcq_ui.render_mcq_session()
+
+
+def render_harshit_chemistry_exercise():
+    import harshit_chemistry_exercise_ui
+
+    harshit_chemistry_exercise_ui.render_exercise_question()
+
+
 # ──────────────────────────────────────────────
 # PAGE: Network Architecture / NVIDIA RA (Rakesh)
 # ──────────────────────────────────────────────
@@ -7219,6 +7231,10 @@ elif page == "harshit_chemistry_concept":
     render_harshit_chemistry_concept()
 elif page == "harshit_chemistry_practice":
     render_harshit_chemistry_practice()
+elif page == "harshit_chemistry_mcq":
+    render_harshit_chemistry_mcq()
+elif page == "harshit_chemistry_exercise":
+    render_harshit_chemistry_exercise()
 elif page == "cube_addition":
     render_cube_addition()
 else:
