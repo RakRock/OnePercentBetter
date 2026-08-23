@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "design_system": "Harshit Chemistry — low-sensory, anti-gamified",
+    "one_card_per_screen": true,
+    "no_timers": true,
+    "no_gamification": true,
+    "safety": [
+      "Chemical demos: teacher supervision only",
+      "Acids and flames: simulation preferred in self-study"
+    ]
+  },
+  "css_variables": {
+    "--hc-bg-page": "#F7F8FA",
+    "--hc-bg-surface": "#FFFFFF",
+    "--hc-bg-muted": "#EEF1F5",
+    "--hc-text-primary": "#1E293B",
+    "--hc-text-secondary": "#64748B",
+    "--hc-border-subtle": "#D8DEE6",
+    "--hc-feedback-amber": "#F5DEB3",
+    "--hc-feedback-amber-text": "#92400E",
+    "--hc-accent-teal": "#0D9488",
+    "--hc-reactant": "#2563EB",
+    "--hc-product": "#059669",
+    "--hc-spark": "#F59E0B",
+    "--hc-spacing-screen": "2rem",
+    "--hc-radius": "8px"
+  },
+  "components": {
+    "EquationPanel": {
+      "description": "Chemical equations and balancing steps.",
+      "visual_types": ["formula_panel", "placeholder"]
+    },
+    "ReactionTypePanel": {
+      "description": "Combination, decomposition, displacement diagrams.",
+      "visual_types": ["placeholder"]
+    },
+    "GlossaryPanel": {
+      "description": "Optional glossary sidebar.",
+      "props": { "collapsible": true }
+    }
+  }
+}

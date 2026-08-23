@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "unit_id": 2,
+    "description": "Common NCERT Ch 2 misconceptions"
+  },
+  "misconception_categories": [
+    "litmus_colour_confusion",
+    "neutralisation_products_error",
+    "dilution_order_wrong",
+    "ph_scale_reversed",
+    "indicator_in_acid_base_confusion"
+  ],
+  "machines": {
+    "litmus_colour_confusion": {
+      "feedback": "Acids turn blue litmus red; bases turn red litmus blue.",
+      "concept_ids": ["u2_d2_c01", "u2_d2_c03", "u2_d2_c06"],
+      "calm_prompt": "Remember: acid = red litmus; base = blue litmus."
+    },
+    "neutralisation_products_error": {
+      "feedback": "Neutralisation always produces salt and water: acid + base → salt + H₂O.",
+      "concept_ids": ["u2_d6_c01", "u2_d6_c04", "u2_d6_c07"],
+      "calm_prompt": "Both H⁺ and OH⁻ combine to form water."
+    },
+    "dilution_order_wrong": {
+      "feedback": "When diluting acid, add acid slowly to water with stirring — never water to acid.",
+      "concept_ids": ["u2_d10_c08", "u2_d10_c09", "u2_d10_c10"],
+      "calm_prompt": "Add A to W — Acid to Water."
+    },
+    "ph_scale_reversed": {
+      "feedback": "Lower pH means more acidic; higher pH means more basic. pH 7 is neutral.",
+      "concept_ids": ["u2_d11_c02", "u2_d11_c04", "u2_d11_c06"],
+      "calm_prompt": "pH 0–6 acidic, 7 neutral, 8–14 basic."
+    },
+    "indicator_in_acid_base_confusion": {
+      "feedback": "Phenolphthalein is colourless in acid and pink in base; methyl orange is red in acid, yellow in base.",
+      "concept_ids": ["u2_d2_c05", "u2_d2_c07", "u2_d3_c06"],
+      "calm_prompt": "Check Table 2.1 colours for each indicator."
+    }
+  }
+}

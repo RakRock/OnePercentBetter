@@ -715,6 +715,11 @@ def select_activity(activity):
         st.session_state.hp_day_id = None
         st.session_state.hp_mode = "concept"
         st.session_state.hp_start_time = time.time()
+    elif activity == "HarshitChemistry":
+        st.session_state.current_page = "harshit_chemistry_home"
+        st.session_state.hc_day_id = None
+        st.session_state.hc_mode = "concept"
+        st.session_state.hc_start_time = time.time()
 
 
 def start_story(story_id):
@@ -1441,7 +1446,7 @@ def render_user_dashboard():
         st.markdown("### 📐 Choose Your Activity")
         st.markdown("")
 
-        act_col1, act_col2 = st.columns(2, gap="large")
+        act_col1, act_col2, act_col3 = st.columns(3, gap="large")
         with act_col1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #64748b;">
@@ -1460,12 +1465,25 @@ def render_user_dashboard():
             <div class="score-card" style="border-top: 5px solid #6366f1;">
                 <div style="font-size: 3rem;">⚛️</div>
                 <h3 style="margin: 0.5rem 0;">Physics Confidence</h3>
-                <p style="color: #6b7280;">Unit 1 — Light, reflection & refraction</p>
+                <p style="color: #6b7280;">NCERT Class 10 Science · Physics units</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
             if st.button("⚛️ Physics", key="btn_harshit_physics", width="stretch", type="primary"):
                 select_activity("HarshitPhysics")
+                st.rerun()
+
+        with act_col3:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #0d9488;">
+                <div style="font-size: 3rem;">🧪</div>
+                <h3 style="margin: 0.5rem 0;">Chemistry Confidence</h3>
+                <p style="color: #6b7280;">Units 1–4 — Full Class 10 Chemistry</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🧪 Chemistry", key="btn_harshit_chemistry", width="stretch", type="primary"):
+                select_activity("HarshitChemistry")
                 st.rerun()
 
     else:
@@ -6034,6 +6052,48 @@ def render_harshit_physics_practice():
     harshit_physics_practice_ui.render_practice()
 
 
+def render_harshit_chemistry_home():
+    import harshit_chemistry_ui
+
+    harshit_chemistry_ui.render_home()
+
+
+def render_harshit_chemistry_unit1():
+    import harshit_chemistry_ui
+
+    harshit_chemistry_ui.render_unit1_home()
+
+
+def render_harshit_chemistry_unit2():
+    import harshit_chemistry_ui
+
+    harshit_chemistry_ui.render_unit2_home()
+
+
+def render_harshit_chemistry_unit3():
+    import harshit_chemistry_ui
+
+    harshit_chemistry_ui.render_unit3_home()
+
+
+def render_harshit_chemistry_unit4():
+    import harshit_chemistry_ui
+
+    harshit_chemistry_ui.render_unit4_home()
+
+
+def render_harshit_chemistry_concept():
+    import harshit_chemistry_ui
+
+    harshit_chemistry_ui.render_concept_card()
+
+
+def render_harshit_chemistry_practice():
+    import harshit_chemistry_practice_ui
+
+    harshit_chemistry_practice_ui.render_practice()
+
+
 # ──────────────────────────────────────────────
 # PAGE: Network Architecture / NVIDIA RA (Rakesh)
 # ──────────────────────────────────────────────
@@ -7112,6 +7172,20 @@ elif page == "harshit_physics_concept":
     render_harshit_physics_concept()
 elif page == "harshit_physics_practice":
     render_harshit_physics_practice()
+elif page == "harshit_chemistry_home":
+    render_harshit_chemistry_home()
+elif page == "harshit_chemistry_unit1":
+    render_harshit_chemistry_unit1()
+elif page == "harshit_chemistry_unit2":
+    render_harshit_chemistry_unit2()
+elif page == "harshit_chemistry_unit3":
+    render_harshit_chemistry_unit3()
+elif page == "harshit_chemistry_unit4":
+    render_harshit_chemistry_unit4()
+elif page == "harshit_chemistry_concept":
+    render_harshit_chemistry_concept()
+elif page == "harshit_chemistry_practice":
+    render_harshit_chemistry_practice()
 elif page == "cube_addition":
     render_cube_addition()
 else:

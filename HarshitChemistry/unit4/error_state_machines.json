@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "unit_id": 4,
+    "description": "Common NCERT Ch 4 misconceptions"
+  },
+  "misconception_categories": [
+    "ionic_covalent_confusion",
+    "saturated_unsaturated_swap",
+    "addition_substitution_confusion",
+    "functional_group_naming_error",
+    "soap_detergent_hard_water_error"
+  ],
+  "machines": {
+    "ionic_covalent_confusion": {
+      "feedback": "Carbon compounds are covalent — they share electrons; most are poor conductors.",
+      "concept_ids": ["u4_d2_c01", "u4_d2_c04", "u4_d2_c06"],
+      "calm_prompt": "Carbon shares electrons; it does not form ionic bonds with itself."
+    },
+    "saturated_unsaturated_swap": {
+      "feedback": "Saturated = single C–C bonds (alkanes); unsaturated = double/triple bonds (alkenes/alkynes).",
+      "concept_ids": ["u4_d4_c01", "u4_d4_c03", "u4_d4_c06"],
+      "calm_prompt": "Unsaturated decolourises bromine water; saturated does not."
+    },
+    "addition_substitution_confusion": {
+      "feedback": "Addition: unsaturated compounds gain atoms (e.g. ethene + H₂). Substitution: saturated compounds swap H for another group.",
+      "concept_ids": ["u4_d9_c01", "u4_d10_c01", "u4_d10_c04"],
+      "calm_prompt": "Unsaturated → addition; saturated → substitution."
+    },
+    "functional_group_naming_error": {
+      "feedback": "Name the longest carbon chain and identify the functional group (-OH alcohol, -COOH carboxylic acid).",
+      "concept_ids": ["u4_d6_c04", "u4_d7_c02", "u4_d7_c05"],
+      "calm_prompt": "Functional group decides the suffix (-ol, -al, -oic acid)."
+    },
+    "soap_detergent_hard_water_error": {
+      "feedback": "Soap forms scum with hard water; detergents work in hard water too.",
+      "concept_ids": ["u4_d13_c04", "u4_d13_c06", "u4_d13_c08"],
+      "calm_prompt": "Micelles trap oily dirt; hard water blocks soap with Ca/Mg salts."
+    }
+  }
+}

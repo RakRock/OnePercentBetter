@@ -1,0 +1,2712 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 3,
+    "unit_title": "Metals and Non-metals",
+    "ncert": "Class 10 Science, Chapter 3 (Chemistry)",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_chemistry_unit3_concepts",
+    "session_kind_mcq": "harshit_chemistry_unit3_mcq"
+  },
+  "glossary": [
+    {
+      "term": "metal",
+      "definition": "Element that is lustrous, malleable, ductile, and generally good conductor of heat and electricity."
+    },
+    {
+      "term": "non-metal",
+      "definition": "Element that is generally dull, brittle, and poor conductor (with exceptions like graphite)."
+    },
+    {
+      "term": "malleability",
+      "definition": "Property of metals to be beaten into thin sheets."
+    },
+    {
+      "term": "ductility",
+      "definition": "Property of metals to be drawn into thin wires."
+    },
+    {
+      "term": "reactivity series",
+      "definition": "Arrangement of metals in order of decreasing reactivity."
+    },
+    {
+      "term": "ionic compound",
+      "definition": "Compound formed by transfer of electrons between metal and non-metal ions."
+    },
+    {
+      "term": "ore",
+      "definition": "Mineral from which a metal can be extracted profitably."
+    },
+    {
+      "term": "corrosion",
+      "definition": "Gradual destruction of metals by reaction with environment (e.g. rusting of iron)."
+    },
+    {
+      "term": "galvanisation",
+      "definition": "Coating iron/steel with zinc to prevent rusting."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "Metals and Non-metals — Introduction",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d1_c01",
+          "name": "What are metals?",
+          "simple_answer": "Metals are elements that are generally lustrous, malleable, ductile, and good conductors of heat and electricity.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Metals — lustrous, malleable, conductive"
+          },
+          "why": "Foundation of Ch 3 — metals introduced first.",
+          "example": "Iron, copper, aluminium, gold, and silver are familiar metals.",
+          "remember": "Lustre + malleability + conductivity = metal clues.",
+          "common_confusion": "Not every metal shows all properties — mercury is liquid at room temperature.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "metal"
+          ]
+        },
+        {
+          "id": "u3_d1_c02",
+          "name": "What are non-metals?",
+          "simple_answer": "Non-metals are elements that are generally dull, brittle, and poor conductors — with exceptions like graphite and iodine.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Non-metals — dull, brittle, poor conductors"
+          },
+          "why": "Pair concept with metals.",
+          "example": "Carbon, sulphur, oxygen, and chlorine are non-metals.",
+          "remember": "Dull + brittle + poor conductor = non-metal clues.",
+          "common_confusion": "Graphite conducts electricity — important exception.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "non-metal"
+          ]
+        },
+        {
+          "id": "u3_d1_c03",
+          "name": "Elements classified as metals or non-metals",
+          "simple_answer": "About 80% of known elements are metals; rest are non-metals or metalloids on the zig-zag line of the periodic table.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Periodic table — metals vs non-metals"
+          },
+          "why": "NCERT classification overview.",
+          "example": "Left and centre of periodic table = mostly metals.",
+          "remember": "Metals dominate the periodic table.",
+          "common_confusion": "Metalloids (Si, Ge) show properties of both.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c04",
+          "name": "Physical vs chemical properties",
+          "simple_answer": "Physical properties (lustre, hardness) can be observed without changing substance; chemical properties (reactivity) need a reaction.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Physical vs chemical properties"
+          },
+          "why": "Framework for Days 2–12.",
+          "example": "Shining copper is physical; copper turning green is chemical.",
+          "remember": "Physical = no new substance; chemical = reaction.",
+          "common_confusion": "Both types matter in Ch 3 exams.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c05",
+          "name": "Activity 3.1 preview — appearance and hardness",
+          "simple_answer": "NCERT Activity 3.1: collect samples of metals and non-metals; observe lustre, hardness, and surface.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.1 — appearance and hardness"
+          },
+          "why": "First lab activity anchor.",
+          "example": "Compare iron nail, copper wire, sulphur lump, and carbon.",
+          "remember": "Observe before you react — physical properties first.",
+          "common_confusion": "Handle samples safely — some are powders or brittle.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c06",
+          "name": "Common metal samples in Ch 3",
+          "simple_answer": "NCERT uses iron, copper, aluminium, magnesium, zinc, lead, and sodium/potassium for reactions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 3 metal samples"
+          },
+          "why": "Know the substances used in activities.",
+          "example": "Magnesium ribbon burns with dazzling white flame.",
+          "remember": "Memorise the common metal list for equations.",
+          "common_confusion": "Sodium and potassium stored under kerosene — very reactive.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c07",
+          "name": "Common non-metal samples in Ch 3",
+          "simple_answer": "NCERT uses sulphur, carbon (graphite/diamond), iodine, oxygen, and chlorine in examples.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 3 non-metal samples"
+          },
+          "why": "Know non-metal examples.",
+          "example": "Sulphur is yellow solid; iodine is grey-black solid.",
+          "remember": "S, C, I, O, Cl appear throughout chapter.",
+          "common_confusion": "Iodine sublimes — solid to vapour directly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c08",
+          "name": "Uses of metals in daily life",
+          "simple_answer": "Metals used in utensils, wires, construction, jewellery, and vehicles because of strength and conductivity.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Metals in daily life"
+          },
+          "why": "Motivation for studying metals.",
+          "example": "Copper wires carry electricity; aluminium foils wrap food.",
+          "remember": "Properties explain everyday uses.",
+          "common_confusion": "Alloys (steel, brass) often used instead of pure metals.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c09",
+          "name": "Uses of non-metals in daily life",
+          "simple_answer": "Non-metals essential for life — oxygen for breathing, nitrogen in fertilisers, carbon in all living matter.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Non-metals in daily life"
+          },
+          "why": "Non-metals equally important.",
+          "example": "Graphite in pencil lead; sulphur in matches.",
+          "remember": "Non-metals in air, food, and industry.",
+          "common_confusion": "Chlorine disinfects drinking water.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c10",
+          "name": "Chapter 3 roadmap",
+          "simple_answer": "Ch 3 covers physical properties, reactions with air/water/acids, reactivity series, ionic bonding, extraction, and corrosion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 3 roadmap — 16 days"
+          },
+          "why": "Orient learner to unit plan.",
+          "example": "Activities 3.1–3.6 in lab sections.",
+          "remember": "Properties → reactions → ions → extraction → corrosion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Physical Properties of Metals — Lustre and Hardness",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d2_c01",
+          "name": "Metallic lustre",
+          "simple_answer": "Metals have a shining surface called metallic lustre when freshly cut or polished.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Metallic lustre — shining surface"
+          },
+          "why": "Core Day 2 property.",
+          "example": "Freshly cut copper looks reddish-brown and shiny.",
+          "remember": "Shiny surface = metallic lustre.",
+          "common_confusion": "Tarnished metals lose lustre due to surface oxide layer.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "lustre"
+          ]
+        },
+        {
+          "id": "u3_d2_c02",
+          "name": "Why metals appear lustrous",
+          "simple_answer": "Metals reflect light strongly from their surface because of free electrons in the metal lattice.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Free electrons reflect light"
+          },
+          "why": "Conceptual reason for lustre.",
+          "example": "Gold jewellery shines because of metallic bonding.",
+          "remember": "Free electrons → light reflection → lustre.",
+          "common_confusion": "Non-metals generally do not reflect light this way.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c03",
+          "name": "Activity 3.1 — testing lustre",
+          "simple_answer": "NCERT Activity 3.1: observe iron, copper, aluminium, magnesium, and zinc for lustre; compare with sulphur and carbon.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.1 — lustre test"
+          },
+          "why": "Lab observation anchor.",
+          "example": "Iron nail shiny when new; sulphur dull yellow.",
+          "remember": "Metals lustrous; non-metals dull.",
+          "common_confusion": "Clean surface with sandpaper before observing lustre.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c04",
+          "name": "Hardness of metals",
+          "simple_answer": "Most metals are hard — cannot be cut with a knife; exceptions: sodium and potassium are soft enough to cut.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Metals generally hard"
+          },
+          "why": "Second Day 2 property.",
+          "example": "Iron and copper are hard; sodium cuts with knife.",
+          "remember": "Hardness varies — alkali metals are soft.",
+          "common_confusion": "Hardness is not the same as strength.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "hardness"
+          ]
+        },
+        {
+          "id": "u3_d2_c05",
+          "name": "Hardness of non-metals",
+          "simple_answer": "Non-metals are generally soft (sulphur, iodine) or very hard (diamond — allotrope of carbon).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Non-metals — soft or very hard"
+          },
+          "why": "Contrast with metals.",
+          "example": "Diamond is hardest natural substance — carbon non-metal.",
+          "remember": "Non-metal hardness varies widely.",
+          "common_confusion": "Diamond hardness is exception — most non-metals brittle.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c06",
+          "name": "Activity 3.1 — hardness comparison",
+          "simple_answer": "Try cutting samples with knife — sodium/potassium cut easily; iron, copper, and zinc do not.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.1 — hardness test"
+          },
+          "why": "Hands-on NCERT observation.",
+          "example": "Only alkali metals among samples cut with knife.",
+          "remember": "Soft metals = Group 1 (Na, K).",
+          "common_confusion": "Never cut sodium without teacher supervision — reacts with moisture.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c07",
+          "name": "State of metals at room temperature",
+          "simple_answer": "Most metals are solid at room temperature; mercury (Hg) is the only liquid metal.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Most metals: solid | Hg: liquid",
+            "note": "State at room temperature"
+          },
+          "why": "Physical property for classification.",
+          "example": "Mercury used in thermometers (being phased out).",
+          "remember": "Hg is liquid metal — unique exception.",
+          "common_confusion": "Gallium melts in hand — slightly above room temp.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c08",
+          "name": "State of non-metals at room temperature",
+          "simple_answer": "Non-metals exist as solids (S, C, I), liquids (bromine), or gases (O₂, N₂, Cl₂) at room temperature.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Non-metals: solid, liquid (Br), or gas",
+            "note": "More varied states than metals"
+          },
+          "why": "Broader state range for non-metals.",
+          "example": "Bromine is red-brown liquid non-metal.",
+          "remember": "Non-metals show all three states.",
+          "common_confusion": "Bromine fumes are toxic — avoid inhalation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c09",
+          "name": "Compare lustre — metal vs non-metal",
+          "simple_answer": "Metals: lustrous (shiny). Non-metals: generally non-lustrous (dull) — iodine has slight lustre.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal: lustrous | Non-metal: dull",
+            "note": "Iodine exception — lustrous"
+          },
+          "why": "Exam comparison table entry.",
+          "example": "Compare polished copper with sulphur lump.",
+          "remember": "Lustre is quick visual test for classification.",
+          "common_confusion": "Iodine crystals show metallic lustre — rare for non-metals.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c10",
+          "name": "Exam — lustre and hardness",
+          "simple_answer": "Define lustre → give metal example → define hardness → compare Na (soft) with Fe (hard) → Activity 3.1 observations.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: lustre and hardness template"
+          },
+          "why": "Structured answer.",
+          "example": "Fresh iron shiny; sulphur dull and soft.",
+          "remember": "Two properties + activity reference + examples.",
+          "common_confusion": "Always mention mercury as liquid metal if asked about state.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Malleability, Ductility and Sonority",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d3_c01",
+          "name": "Malleability definition",
+          "simple_answer": "Malleability is the property of metals to be beaten into thin sheets without breaking.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Malleability — beaten into sheets"
+          },
+          "why": "Core Day 3 concept.",
+          "example": "Gold beaten into gold leaf for decoration.",
+          "remember": "Hammer metal → thin sheet = malleable.",
+          "common_confusion": "Non-metals are not malleable — they crumble.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "malleability"
+          ]
+        },
+        {
+          "id": "u3_d3_c02",
+          "name": "Activity 3.2 — malleability test",
+          "simple_answer": "NCERT Activity 3.2: beat iron, copper, aluminium, and zinc with hammer — form thin sheets.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.2 — malleability"
+          },
+          "why": "Lab activity anchor.",
+          "example": "Aluminium foil is malleable aluminium sheet.",
+          "remember": "Metals form sheets; non-metals powder or break.",
+          "common_confusion": "Do not hammer sodium — dangerous reaction with moisture.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c03",
+          "name": "Gold and silver malleability",
+          "simple_answer": "Gold is most malleable — beaten into extremely thin sheets; silver also highly malleable.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gold — most malleable metal"
+          },
+          "why": "NCERT memorable example.",
+          "example": "Gold leaf on temple domes and picture frames.",
+          "remember": "Au and Ag most malleable metals.",
+          "common_confusion": "Malleability explains use in jewellery and leaf.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c04",
+          "name": "Ductility definition",
+          "simple_answer": "Ductility is the property of metals to be drawn into thin wires without breaking.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ductility — drawn into wires"
+          },
+          "why": "Second Day 3 concept.",
+          "example": "Copper and aluminium wires in electrical cables.",
+          "remember": "Pull metal → thin wire = ductile.",
+          "common_confusion": "Non-metals cannot be drawn into wires.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ductility"
+          ]
+        },
+        {
+          "id": "u3_d3_c05",
+          "name": "Activity 3.2 — ductility test",
+          "simple_answer": "NCERT Activity 3.2: try drawing copper and aluminium into wires — metals extend without snapping.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.2 — ductility"
+          },
+          "why": "Lab observation link.",
+          "example": "Copper wire in motor winding.",
+          "remember": "Metals form wires; sulphur breaks if pulled.",
+          "common_confusion": "Gold wire used in micro-electronics — very ductile.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c06",
+          "name": "Copper and aluminium wires",
+          "simple_answer": "Copper is excellent electrical conductor — used in household wiring; aluminium in overhead power lines.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Cu and Al wires — daily use"
+          },
+          "why": "Application of ductility + conductivity.",
+          "example": "Overhead cables on streets are aluminium.",
+          "remember": "Ductility + conductivity → wire use.",
+          "common_confusion": "Al lighter than Cu — preferred for long spans.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c07",
+          "name": "Sonority definition",
+          "simple_answer": "Sonority is the property of metals to produce a ringing sound when struck hard.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sonority — ringing sound"
+          },
+          "why": "Third Day 3 concept.",
+          "example": "School bell and temple bell are metal — sonorous.",
+          "remember": "Strike metal → ringing sound = sonorous.",
+          "common_confusion": "Non-metals do not ring — dull thud.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "sonority"
+          ]
+        },
+        {
+          "id": "u3_d3_c08",
+          "name": "Activity 3.2 — sonority test",
+          "simple_answer": "NCERT Activity 3.2: strike iron, copper, and aluminium — hear ringing; strike sulphur or carbon — dull sound.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.2 — sonority test"
+          },
+          "why": "Lab observation anchor.",
+          "example": "Bell metal (bronze alloy) rings clearly.",
+          "remember": "Metals ring; non-metals do not.",
+          "common_confusion": "Sonority explains use of metals in bells and gongs.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c09",
+          "name": "Malleability vs ductility",
+          "simple_answer": "Malleability = beaten into sheets (hammer). Ductility = drawn into wires (pulling). Both show metal plasticity.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Malleability: sheets | Ductility: wires",
+            "note": "Both are metal properties"
+          },
+          "why": "Exam distinction.",
+          "example": "Al foil = malleable; copper wire = ductile.",
+          "remember": "Hammer vs pull — different tests.",
+          "common_confusion": "Gold is both most malleable and very ductile.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c10",
+          "name": "Exam — malleability, ductility, sonority",
+          "simple_answer": "Define all three → Activity 3.2 for each → examples: gold leaf (malleable), copper wire (ductile), bell (sonorous).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: malleability ductility sonority"
+          },
+          "why": "Three-part answer template.",
+          "example": "Non-metals fail all three tests — contrast.",
+          "remember": "Definition + activity + example for each.",
+          "common_confusion": "Do not confuse malleability with ductility.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Heat and Electrical Conductivity of Metals",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d4_c01",
+          "name": "Heat conductivity of metals",
+          "simple_answer": "Metals are good conductors of heat — heat passes quickly through metal.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Metals conduct heat well"
+          },
+          "why": "Core Day 4 concept.",
+          "example": "Metal spoon in hot tea gets hot quickly.",
+          "remember": "Heat flows fast through metals.",
+          "common_confusion": "Used in cooking pans and radiators.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c02",
+          "name": "Activity 3.3 — heat conductivity",
+          "simple_answer": "NCERT Activity 3.3: hold metal rod in flame — heat reaches far end quickly; compare with non-metal rod.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.3 — heat conduction"
+          },
+          "why": "Lab activity anchor.",
+          "example": "Iron rod end gets hot when one end is heated.",
+          "remember": "Metal rod conducts heat along length.",
+          "common_confusion": "Use tongs — metal gets very hot.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c03",
+          "name": "Electrical conductivity of metals",
+          "simple_answer": "Metals are good conductors of electricity — allow electric current to pass through easily.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Metals conduct electricity"
+          },
+          "why": "Second Day 4 concept.",
+          "example": "Copper wires in household electrical circuits.",
+          "remember": "Free electrons carry current in metals.",
+          "common_confusion": "Basis for all electrical wiring.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c04",
+          "name": "Activity 3.3 — electrical conductivity",
+          "simple_answer": "NCERT Activity 3.3: connect iron, copper, and aluminium in circuit with bulb — bulb glows; try sulphur or carbon — no glow.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.3 — electrical test"
+          },
+          "why": "Lab circuit test.",
+          "example": "Bulb glows with metal in circuit.",
+          "remember": "Metals complete circuit; most non-metals do not.",
+          "common_confusion": "Use low voltage battery for safety.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c05",
+          "name": "Why metals conduct electricity",
+          "simple_answer": "Metal atoms have loosely held valence electrons (free electrons) that move and carry electric charge.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Free electrons → current flow",
+            "note": "Metallic bonding explanation"
+          },
+          "why": "Mechanism for conductivity.",
+          "example": "Same free electrons explain heat conduction.",
+          "remember": "Mobile electrons = good conductor.",
+          "common_confusion": "Insulators lack free electrons.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c06",
+          "name": "Uses of heat conductivity",
+          "simple_answer": "Metal cooking pans, radiators, and heat sinks use high thermal conductivity.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Heat conductivity — daily uses"
+          },
+          "why": "Application card.",
+          "example": "Copper bottom pans heat food evenly.",
+          "remember": "Good heat conductor → cooking utensils.",
+          "common_confusion": "Handles often plastic or wood — insulators.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c07",
+          "name": "Uses of electrical conductivity",
+          "simple_answer": "Copper and aluminium wires, electrical contacts, and circuit boards use metal conductors.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Electrical conductivity — daily uses"
+          },
+          "why": "Application card.",
+          "example": "Every electrical appliance has metal wires.",
+          "remember": "Conductors carry current in all circuits.",
+          "common_confusion": "Gold plating on connectors — resists corrosion.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c08",
+          "name": "Compare conductivity — metals vs non-metals",
+          "simple_answer": "Metals: good conductors of heat and electricity. Non-metals: generally poor conductors (insulators).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal: good conductor | Non-metal: poor conductor",
+            "note": "General rule with exceptions"
+          },
+          "why": "Key Ch 3 comparison.",
+          "example": "Iron conducts; sulphur does not.",
+          "remember": "Conductivity distinguishes metals from non-metals.",
+          "common_confusion": "Graphite and iodine are exceptions — see Day 5.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c09",
+          "name": "Activity 3.3 summary",
+          "simple_answer": "Activity 3.3 confirms metals conduct heat and electricity; non-metals (except graphite) do not.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.3 — summary"
+          },
+          "why": "Synthesis of Day 4.",
+          "example": "Three tests: heat rod, electric circuit, compare.",
+          "remember": "Both heat and electrical tests on same metals.",
+          "common_confusion": "Graphite exception tested separately in Activity 3.4.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c10",
+          "name": "Exam — conductivity of metals",
+          "simple_answer": "State metals are good conductors → explain free electrons → Activity 3.3 → uses (wires, pans) → contrast non-metals.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: metal conductivity template"
+          },
+          "why": "Structured answer.",
+          "example": "Cu wires + metal pan as two examples.",
+          "remember": "Free electrons link heat and electrical conduction.",
+          "common_confusion": "Mention graphite exception briefly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Physical Properties of Non-metals",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d5_c01",
+          "name": "Physical properties of non-metals — overview",
+          "simple_answer": "Non-metals are generally dull, brittle, non-sonorous, and poor conductors of heat and electricity.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Non-metal physical properties"
+          },
+          "why": "Day 5 theme — contrast with metals.",
+          "example": "Sulphur is dull, brittle, and insulator.",
+          "remember": "Opposite of typical metal properties.",
+          "common_confusion": "Exceptions exist — always note graphite and iodine.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c02",
+          "name": "Non-metals are dull (non-lustrous)",
+          "simple_answer": "Most non-metals have dull surfaces without metallic shine — sulphur is yellow but not lustrous.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Non-metals — dull surface"
+          },
+          "why": "First non-metal property.",
+          "example": "Compare shiny copper with dull sulphur lump.",
+          "remember": "No metallic lustre on most non-metals.",
+          "common_confusion": "Iodine crystals show slight lustre — exception.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c03",
+          "name": "Non-metals are brittle",
+          "simple_answer": "Non-metals break into pieces when hammered — not malleable or ductile.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Non-metals — brittle"
+          },
+          "why": "Second non-metal property.",
+          "example": "Sulphur crumbles when hammered.",
+          "remember": "Brittle = breaks, not bends.",
+          "common_confusion": "Diamond is hard but still brittle — shatters.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c04",
+          "name": "Activity 3.4 — non-metal properties",
+          "simple_answer": "NCERT Activity 3.4: test sulphur and carbon — dull, brittle, non-sonorous, do not conduct (except graphite).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.4 — non-metal tests"
+          },
+          "why": "Lab activity anchor.",
+          "example": "Sulphur powder after hammering.",
+          "remember": "All four properties tested on non-metals.",
+          "common_confusion": "Graphite tested separately for conductivity.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c05",
+          "name": "Non-metals poor heat conductors",
+          "simple_answer": "Non-metals are bad conductors of heat — insulators; wood and plastic handles stay cool.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Non-metals — poor heat conductors"
+          },
+          "why": "Thermal insulator property.",
+          "example": "Wooden spoon stays cool in hot soup.",
+          "remember": "Heat does not pass easily through non-metals.",
+          "common_confusion": "Air (mixture) is also poor conductor — wool traps air.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c06",
+          "name": "Non-metals poor electrical conductors",
+          "simple_answer": "Most non-metals do not conduct electricity — used as insulators in cables and equipment.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Non-metals — electrical insulators"
+          },
+          "why": "Electrical insulator property.",
+          "example": "Rubber and plastic coating on wires.",
+          "remember": "No free electrons → no current flow.",
+          "common_confusion": "Insulators protect from electric shock.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c07",
+          "name": "Exception — graphite conducts electricity",
+          "simple_answer": "Graphite (allotrope of carbon) conducts electricity — used in pencil lead and electrodes.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Graphite (C) — conducts electricity",
+            "note": "Exception among non-metals"
+          },
+          "why": "Critical NCERT exception.",
+          "example": "Dry cell electrode contains graphite.",
+          "remember": "Graphite is non-metal that conducts.",
+          "common_confusion": "Graphite conducts but sulphur and diamond do not.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c08",
+          "name": "Exception — iodine lustre",
+          "simple_answer": "Iodine is a non-metal with lustrous grey-black crystals — sublimes on heating.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Iodine — lustrous non-metal"
+          },
+          "why": "Second NCERT exception.",
+          "example": "Iodine tincture used as antiseptic.",
+          "remember": "Iodine has metallic appearance but is non-metal.",
+          "common_confusion": "Iodine sublimes — solid to vapour without melting.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c09",
+          "name": "Allotropes of carbon",
+          "simple_answer": "Carbon exists as diamond (hard, insulator) and graphite (soft, conductor) — same element, different properties.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Diamond: hard, insulator | Graphite: soft, conductor",
+            "note": "Allotropes of carbon"
+          },
+          "why": "Important NCERT comparison.",
+          "example": "Pencil lead is graphite; diamond in jewellery.",
+          "remember": "Same element — different arrangement.",
+          "common_confusion": "Fullerene and graphene beyond Class 10 scope.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c10",
+          "name": "Exam — non-metal physical properties",
+          "simple_answer": "List dull, brittle, non-sonorous, poor conductor → Activity 3.4 → exceptions: graphite (conducts), iodine (lustrous).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: non-metal properties template"
+          },
+          "why": "Structured answer with exceptions.",
+          "example": "Always mention graphite and iodine exceptions.",
+          "remember": "Four properties + two exceptions = full marks.",
+          "common_confusion": "Do not say all non-metals are gases — many are solids.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Metals Burned in Air — Metal Oxides",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d6_c01",
+          "name": "Metals react with oxygen in air",
+          "simple_answer": "Most metals combine with oxygen when heated or burned to form metal oxides.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal + O₂ → Metal oxide",
+            "note": "General reaction with air"
+          },
+          "why": "Core Day 6 pattern.",
+          "example": "Magnesium burns with dazzling white flame.",
+          "remember": "Burning metal → metal oxide.",
+          "common_confusion": "Some oxides protective; others flaky.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c02",
+          "name": "Activity 3.5 — burning magnesium",
+          "simple_answer": "NCERT Activity 3.5: burn magnesium ribbon in air — dazzling white flame; white ash MgO forms.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2Mg + O₂ → 2MgO",
+            "note": "Magnesium oxide — white ash"
+          },
+          "why": "Classic NCERT burning demo.",
+          "example": "Mg ribbon cleaned with sandpaper before burning.",
+          "remember": "White ash = magnesium oxide.",
+          "common_confusion": "Never look directly at burning Mg — very bright.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c03",
+          "name": "Activity 3.5 — burning copper",
+          "simple_answer": "Heat copper wire in flame — black copper(II) oxide CuO forms on surface.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2Cu + O₂ → 2CuO",
+            "note": "Black copper oxide layer"
+          },
+          "why": "Second Activity 3.5 example.",
+          "example": "Copper vessel bottom turns black on heating.",
+          "remember": "Black coating = CuO.",
+          "common_confusion": "Green patina on old copper is basic carbonate — not Day 6 focus.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c04",
+          "name": "Activity 3.5 — burning aluminium",
+          "simple_answer": "Aluminium forms white aluminium oxide Al₂O₃ layer — protects metal from further corrosion.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "4Al + 3O₂ → 2Al₂O₃",
+            "note": "Protective oxide layer"
+          },
+          "why": "Protective oxide example.",
+          "example": "Aluminium utensils resist rust due to Al₂O₃ layer.",
+          "remember": "Al₂O₃ layer prevents further reaction.",
+          "common_confusion": "Anodised aluminium has thicker oxide layer.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c05",
+          "name": "Iron burns in air",
+          "simple_answer": "Iron does not burn easily in air at room temperature but forms rust slowly; iron filings burn in flame.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Iron + O₂ → Fe₂O₃ / Fe₃O₄",
+            "note": "Rust and oxides"
+          },
+          "why": "Iron oxidation link to corrosion.",
+          "example": "Iron filings spark in Bunsen flame.",
+          "remember": "Iron rusts slowly at room temperature.",
+          "common_confusion": "Rust is hydrated iron oxide — Day 15 detail.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c06",
+          "name": "Sodium and potassium in air",
+          "simple_answer": "Sodium and potassium react vigorously with oxygen at room temperature — stored under kerosene.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "4Na + O₂ → 2Na₂O",
+            "note": "Stored under kerosene"
+          },
+          "why": "Highly reactive metals.",
+          "example": "Na cut surface tarnishes instantly in air.",
+          "remember": "Never leave Na/K exposed to air.",
+          "common_confusion": "K reacts even faster than Na with oxygen.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c07",
+          "name": "Metal oxides are generally basic",
+          "simple_answer": "Metal oxides are basic in nature — turn red litmus blue; react with acids (links Ch 2).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal oxide + Acid → Salt + Water",
+            "note": "Basic oxide — Ch 2 link"
+          },
+          "why": "Cross-chapter link.",
+          "example": "MgO reacts with HCl — neutralisation type.",
+          "remember": "Metal oxide = basic oxide.",
+          "common_confusion": "Amphoteric oxides (Al₂O₃, ZnO) are exceptions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c08",
+          "name": "Non-metals burn in air",
+          "simple_answer": "Non-metals combine with oxygen to form non-metal oxides — often acidic or neutral.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Non-metal + O₂ → Non-metal oxide",
+            "note": "Often acidic oxide"
+          },
+          "why": "Contrast with metal oxides.",
+          "example": "S + O₂ → SO₂; C + O₂ → CO₂.",
+          "remember": "Non-metal oxides often acidic.",
+          "common_confusion": "SO₂ and CO₂ dissolve in water forming acids.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c09",
+          "name": "Compare metal vs non-metal oxides",
+          "simple_answer": "Metal oxides: basic (MgO, CuO). Non-metal oxides: acidic (CO₂, SO₂).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal oxide: basic | Non-metal oxide: acidic",
+            "note": "Ch 2 and Ch 3 link"
+          },
+          "why": "Key exam comparison.",
+          "example": "MgO basic; CO₂ forms carbonic acid in water.",
+          "remember": "Basic vs acidic oxides — opposite nature.",
+          "common_confusion": "CO and N₂O are neutral oxides — exceptions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c10",
+          "name": "Exam — metals burned in air",
+          "simple_answer": "General equation → Mg, Cu, Al examples with balanced equations → Activity 3.5 → basic nature of metal oxides.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: metal + oxygen template"
+          },
+          "why": "Structured answer.",
+          "example": "2Mg + O₂ → 2MgO with white flame observation.",
+          "remember": "Equation + observation + oxide nature.",
+          "common_confusion": "Balance all equations for full marks.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Metals React with Water",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d7_c01",
+          "name": "Metals react with water — overview",
+          "simple_answer": "Some metals react with water to form metal hydroxide and hydrogen gas; reactivity varies greatly.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal + Water → Metal hydroxide + H₂",
+            "note": "General pattern (where reaction occurs)"
+          },
+          "why": "Day 7 core theme.",
+          "example": "Sodium reacts violently with cold water.",
+          "remember": "Not all metals react with water.",
+          "common_confusion": "Product depends on metal reactivity.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c02",
+          "name": "Sodium with cold water",
+          "simple_answer": "Sodium reacts vigorously with cold water — moves on surface, melts, H₂ gas evolved, solution alkaline.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2Na + 2H₂O → 2NaOH + H₂",
+            "note": "Violent reaction — cold water"
+          },
+          "why": "Most dramatic NCERT example.",
+          "example": "Na piece fizzes and may catch fire.",
+          "remember": "Na + cold water → NaOH + H₂.",
+          "common_confusion": "Never add large Na piece to water unsupervised.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c03",
+          "name": "Potassium with cold water",
+          "simple_answer": "Potassium reacts even more vigorously than sodium — catches fire with lilac flame.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2K + 2H₂O → 2KOH + H₂",
+            "note": "More violent than sodium"
+          },
+          "why": "More reactive alkali metal.",
+          "example": "K explodes on water surface.",
+          "remember": "K faster than Na — lower in series but same group.",
+          "common_confusion": "Lilac flame colour characteristic of potassium.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c04",
+          "name": "Calcium with cold water",
+          "simple_answer": "Calcium reacts with cold water moderately — bubbles of H₂, milky Ca(OH)₂ solution.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Ca + 2H₂O → Ca(OH)₂ + H₂",
+            "note": "Limewater formed — milky"
+          },
+          "why": "Moderate reactivity example.",
+          "example": "Ca(OH)₂ is limewater — turns milky with CO₂.",
+          "remember": "Ca less violent than Na/K.",
+          "common_confusion": "Milky suspension — Ca(OH)₂ slightly soluble.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c05",
+          "name": "Magnesium with hot water",
+          "simple_answer": "Magnesium reacts slowly with hot water or steam — Mg(OH)₂ and H₂ formed.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mg + 2H₂O → Mg(OH)₂ + H₂",
+            "note": "Hot water or steam needed"
+          },
+          "why": "Less reactive than Ca.",
+          "example": "Mg ribbon in boiling water reacts slowly.",
+          "remember": "Mg needs hot water — not cold.",
+          "common_confusion": "Mg(OH)₂ is milk of magnesia — antacid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c06",
+          "name": "Iron with steam",
+          "simple_answer": "Iron reacts with steam at high temperature to form iron(II,III) oxide and hydrogen.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "3Fe + 4H₂O → Fe₃O₄ + 4H₂",
+            "note": "Steam — not cold water"
+          },
+          "why": "NCERT steam reaction.",
+          "example": "Iron glows red hot in steam — H₂ collected.",
+          "remember": "Fe does not react with cold water.",
+          "common_confusion": "Fe₃O₄ is magnetic iron oxide.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c07",
+          "name": "Less reactive metals and water",
+          "simple_answer": "Aluminium, zinc, and lead do not react with cold or hot water; aluminium reacts with steam.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2Al + 3H₂O → Al₂O₃ + 3H₂",
+            "note": "Steam only for Al"
+          },
+          "why": "Lower reactivity group.",
+          "example": "Al foil does not react with water at room temp.",
+          "remember": "Reactivity decreases down practical list.",
+          "common_confusion": "Copper, silver, gold — no reaction with water.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c08",
+          "name": "Testing hydrogen from metal + water",
+          "simple_answer": "Bring burning splint to gas — hydrogen burns with pop sound.",
+          "visual": {
+            "type": "placeholder",
+            "label": "H₂ test — pop sound"
+          },
+          "why": "Same test as Ch 2 acid + metal.",
+          "example": "Pop sound confirms H₂ from Na + water.",
+          "remember": "Pop test = hydrogen.",
+          "common_confusion": "Do not confuse with oxygen — relights splint.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c09",
+          "name": "Activity 3.6 — metals and water",
+          "simple_answer": "NCERT Activity 3.6: add Na, Ca, Mg, Fe, Cu to water — observe which react and how vigorously.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.6 — metal + water"
+          },
+          "why": "Lab activity anchor.",
+          "example": "Only Na, K, Ca react with cold water visibly.",
+          "remember": "Compare vigour: K > Na > Ca > Mg (hot) > Fe (steam).",
+          "common_confusion": "Cu placed in water — no reaction.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c10",
+          "name": "Exam — metals and water",
+          "simple_answer": "General equation → Na, Ca, Mg, Fe examples with conditions (cold/hot/steam) → H₂ pop test → reactivity trend.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: metal + water template"
+          },
+          "why": "Structured answer.",
+          "example": "State water temperature needed for each metal.",
+          "remember": "Conditions matter — cold vs hot vs steam.",
+          "common_confusion": "Cu, Ag, Au — no reaction with water.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Metals React with Acids",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d8_c01",
+          "name": "Metal + acid — general reaction",
+          "simple_answer": "Acid reacts with reactive metal to give salt and hydrogen gas.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal + Acid → Salt + H₂ ↑",
+            "note": "Same as Ch 2 pattern"
+          },
+          "why": "Day 8 core — links Ch 2.",
+          "example": "Zn + HCl → ZnCl₂ + H₂.",
+          "remember": "Metal displaces H from acid.",
+          "common_confusion": "Only metals above H in reactivity series.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c02",
+          "name": "Zinc and dilute HCl",
+          "simple_answer": "Zn + 2HCl → ZnCl₂ + H₂ — bubbles of hydrogen, zinc dissolves.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn + 2HCl → ZnCl₂ + H₂",
+            "note": "Zinc chloride + hydrogen"
+          },
+          "why": "Classic NCERT example.",
+          "example": "Activity in Ch 2 and Ch 3 context.",
+          "remember": "Zinc above hydrogen — reacts.",
+          "common_confusion": "Copper below hydrogen — no reaction with dilute HCl.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c03",
+          "name": "Iron and dilute H₂SO₄",
+          "simple_answer": "Fe + H₂SO₄ → FeSO₄ + H₂ — iron nails produce hydrogen slowly.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fe + H₂SO₄ → FeSO₄ + H₂",
+            "note": "Ferrous sulphate + H₂"
+          },
+          "why": "Second metal-acid example.",
+          "example": "Pale green FeSO₄ solution forms.",
+          "remember": "Iron reacts with dilute acids.",
+          "common_confusion": "Conc. HNO₃ may not give H₂ — oxidising acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c04",
+          "name": "Magnesium and dilute acid",
+          "simple_answer": "Mg + 2HCl → MgCl₂ + H₂ — vigorous reaction, hydrogen evolved rapidly.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mg + 2HCl → MgCl₂ + H₂",
+            "note": "Vigorous — Mg highly reactive"
+          },
+          "why": "More reactive than Zn and Fe.",
+          "example": "Mg ribbon reacts faster than Zn.",
+          "remember": "Same pattern: salt + H₂.",
+          "common_confusion": "Reaction exothermic — test tube warms.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c05",
+          "name": "Aluminium and dilute acid",
+          "simple_answer": "2Al + 6HCl → 2AlCl₃ + 3H₂ — aluminium reacts after oxide layer removed.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2Al + 6HCl → 2AlCl₃ + 3H₂",
+            "note": "Remove Al₂O₃ layer first"
+          },
+          "why": "Protective oxide must be removed.",
+          "example": "Sandpaper Al before acid test.",
+          "remember": "Al₂O₃ layer initially prevents reaction.",
+          "common_confusion": "AlCl₃ dissolved in water — aluminium chloride.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c06",
+          "name": "Copper and dilute acid — no reaction",
+          "simple_answer": "Copper does not react with dilute HCl or H₂SO₄ — below hydrogen in reactivity series.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Cu + HCl → No reaction",
+            "note": "Cu below H in series"
+          },
+          "why": "Important negative example.",
+          "example": "Cu metal placed in HCl — no bubbles.",
+          "remember": "Cu cannot displace H from dilute acid.",
+          "common_confusion": "Hot conc. HNO₃ reacts with Cu — different reaction.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c07",
+          "name": "Testing hydrogen gas",
+          "simple_answer": "Bring burning splint to mouth of tube — hydrogen burns with characteristic pop sound.",
+          "visual": {
+            "type": "placeholder",
+            "label": "H₂ test — pop sound"
+          },
+          "why": "Confirmatory test from Ch 2.",
+          "example": "Pop sound = H₂ confirmed.",
+          "remember": "Same test for acid + metal and water + metal.",
+          "common_confusion": "Oxygen relights glowing splint — different test.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c08",
+          "name": "Salt name from acid",
+          "simple_answer": "HCl → chloride; H₂SO₄ → sulphate; HNO₃ → nitrate — acid determines salt anion.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HCl → chloride | H₂SO₄ → sulphate",
+            "note": "Acid anion names salt"
+          },
+          "why": "Naming products.",
+          "example": "Zn + HCl → zinc chloride.",
+          "remember": "Anion from acid names the salt.",
+          "common_confusion": "Same naming as Ch 2.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c09",
+          "name": "Reactivity and acid reaction",
+          "simple_answer": "More reactive metals react faster and more vigorously with dilute acids.",
+          "visual": {
+            "type": "placeholder",
+            "label": "More reactive → faster reaction"
+          },
+          "why": "Trend within acid reactions.",
+          "example": "Mg reacts faster than Zn; Zn faster than Fe.",
+          "remember": "Reactivity series predicts acid reaction.",
+          "common_confusion": "Ag and Au do not react with dilute acids.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c10",
+          "name": "Exam — metal + acid",
+          "simple_answer": "General equation → Zn/Fe/Mg examples → H₂ pop test → explain why Cu does not react → reactivity series link.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: metal + acid template"
+          },
+          "why": "Structured answer.",
+          "example": "Three-part: equation + salt name + H₂ test.",
+          "remember": "Cu no reaction — below hydrogen — key point.",
+          "common_confusion": "Balance equations for full marks.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "Displacement Reactions and Metal Salt Solutions",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d9_c01",
+          "name": "Displacement reaction definition",
+          "simple_answer": "A more reactive metal displaces a less reactive metal from its salt solution.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "More reactive metal + Salt of less reactive metal → Displacement",
+            "note": "Reactivity drives reaction"
+          },
+          "why": "Core Day 9 concept.",
+          "example": "Zinc displaces copper from CuSO₄ solution.",
+          "remember": "Higher in series displaces lower.",
+          "common_confusion": "No reaction if metal is less reactive than salt metal.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "displacement reaction"
+          ]
+        },
+        {
+          "id": "u3_d9_c02",
+          "name": "Zinc and copper sulphate",
+          "simple_answer": "Zn + CuSO₄ → ZnSO₄ + Cu — iron grey zinc displaces red-brown copper.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn + CuSO₄ → ZnSO₄ + Cu",
+            "note": "Blue solution fades; copper deposited"
+          },
+          "why": "Most important NCERT displacement example.",
+          "example": "Blue CuSO₄ solution becomes colourless ZnSO₄.",
+          "remember": "Zn more reactive than Cu — displacement occurs.",
+          "common_confusion": "Copper deposits as red-brown solid on zinc.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c03",
+          "name": "Iron and copper sulphate",
+          "simple_answer": "Fe + CuSO₄ → FeSO₄ + Cu — iron displaces copper from blue solution.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fe + CuSO₄ → FeSO₄ + Cu",
+            "note": "Iron displaces copper"
+          },
+          "why": "Second displacement example.",
+          "example": "Iron nail in CuSO₄ gets copper coating.",
+          "remember": "Fe above Cu in reactivity series.",
+          "common_confusion": "Pale green FeSO₄ solution forms.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c04",
+          "name": "Copper and zinc sulphate — no reaction",
+          "simple_answer": "Copper cannot displace zinc from ZnSO₄ — Cu less reactive than Zn.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Cu + ZnSO₄ → No reaction",
+            "note": "Cu below Zn in series"
+          },
+          "why": "Important negative example.",
+          "example": "Cu metal in ZnSO₄ — no change.",
+          "remember": "Less reactive cannot displace more reactive.",
+          "common_confusion": "Predicting no reaction is exam skill.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c05",
+          "name": "Silver and copper sulphate — no reaction",
+          "simple_answer": "Silver does not displace copper from CuSO₄ — Ag less reactive than Cu.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Ag + CuSO₄ → No reaction",
+            "note": "Ag below Cu in series"
+          },
+          "why": "Second negative example.",
+          "example": "Ag coin in CuSO₄ — no reaction.",
+          "remember": "Ag near bottom of reactivity series.",
+          "common_confusion": "Gold also does not displace copper.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c06",
+          "name": "Observations in displacement",
+          "simple_answer": "Colour change in solution, metal deposit on strip, original metal dissolves or reacts.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Displacement observations"
+          },
+          "why": "What to record in lab.",
+          "example": "Blue → colourless + red-brown Cu on Zn.",
+          "remember": "Watch solution colour and metal coating.",
+          "common_confusion": "Write observations before equation in exam.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c07",
+          "name": "Activity 3.7 — displacement reactions",
+          "simple_answer": "NCERT Activity 3.7: place Zn, Fe, Cu, Ag in various salt solutions — observe displacement.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 3.7 — displacement"
+          },
+          "why": "Lab activity anchor.",
+          "example": "Test Zn in CuSO₄, Cu in ZnSO₄, Fe in CuSO₄.",
+          "remember": "More reactive metal in less reactive salt.",
+          "common_confusion": "Systematic table of metal vs salt results.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c08",
+          "name": "Displacement and reactivity series",
+          "simple_answer": "Displacement reactions prove and use the reactivity series — higher displaces lower.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "If Metal A > Metal B → A displaces B from B's salt",
+            "note": "Reactivity series rule"
+          },
+          "why": "Link to Day 10.",
+          "example": "Zn > Fe > Cu > Ag order confirmed by displacement.",
+          "remember": "Series predicts displacement outcome.",
+          "common_confusion": "Single displacement — one metal swaps.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c09",
+          "name": "Double displacement vs single displacement",
+          "simple_answer": "Ch 3 displacement is single — one element replaces another. Ch 1 double displacement swaps ions.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Single: Zn + CuSO₄ | Double: AB + CD → AD + CB",
+            "note": "Different reaction types"
+          },
+          "why": "Avoid confusion with Ch 1.",
+          "example": "Zn + CuSO₄ is single displacement.",
+          "remember": "One metal replaces another metal ion.",
+          "common_confusion": "Precipitation reactions are double displacement.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c10",
+          "name": "Exam — displacement reactions",
+          "simple_answer": "Define displacement → Zn + CuSO₄ equation and observations → explain why Cu + ZnSO₄ no reaction → Activity 3.7.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: displacement template"
+          },
+          "why": "Structured answer.",
+          "example": "Blue fades, red-brown Cu, Zn dissolves.",
+          "remember": "Equation + observation + reactivity reason.",
+          "common_confusion": "Always state which metal is more reactive.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "The Reactivity Series",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d10_c01",
+          "name": "Reactivity series definition",
+          "simple_answer": "Reactivity series arranges metals in order of decreasing reactivity — most reactive at top.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "K > Na > Ca > Mg > Al > Zn > Fe > Pb > Cu > Hg > Ag",
+            "note": "NCERT reactivity series"
+          },
+          "why": "Central Day 10 concept.",
+          "example": "K and Na most reactive; Ag least reactive common metal.",
+          "remember": "Top = most reactive; bottom = least.",
+          "common_confusion": "Hydrogen included as reference point.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reactivity series"
+          ]
+        },
+        {
+          "id": "u3_d10_c02",
+          "name": "Full NCERT reactivity series",
+          "simple_answer": "K, Na, Ca, Mg, Al, Zn, Fe, Pb, (H), Cu, Hg, Ag — memorise this order.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "K Na Ca Mg Al Zn Fe Pb Cu Hg Ag",
+            "note": "Mnemonic: Please send charlie's monkeys and zebras..."
+          },
+          "why": "Must-memorise for exams.",
+          "example": "Mnemonic helps recall order.",
+          "remember": "Hydrogen position between Pb and Cu.",
+          "common_confusion": "Au and Pt even less reactive than Ag.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c03",
+          "name": "Most reactive metals — K, Na, Ca",
+          "simple_answer": "Potassium, sodium, and calcium react vigorously with cold water and air.",
+          "visual": {
+            "type": "placeholder",
+            "label": "K, Na, Ca — most reactive"
+          },
+          "why": "Top of series behaviour.",
+          "example": "Na stored under kerosene.",
+          "remember": "Top three react with cold water.",
+          "common_confusion": "Never handle Na/K without proper supervision.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c04",
+          "name": "Middle reactivity — Mg, Al, Zn, Fe",
+          "simple_answer": "Magnesium, aluminium, zinc, and iron react with acids; Al needs oxide removed; Fe rusts.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mg, Al, Zn, Fe — middle reactivity"
+          },
+          "why": "Middle of series behaviour.",
+          "example": "Zn and Fe common in displacement examples.",
+          "remember": "React with dilute acids — above hydrogen.",
+          "common_confusion": "Al protected by Al₂O₃ layer.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c05",
+          "name": "Least reactive — Cu, Hg, Ag",
+          "simple_answer": "Copper, mercury, and silver do not react with dilute acids or cold water; found free in nature.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Cu, Hg, Ag — least reactive"
+          },
+          "why": "Bottom of series behaviour.",
+          "example": "Silver and gold jewellery — unreacted metal.",
+          "remember": "Low reactivity → occur native/free.",
+          "common_confusion": "Cu reacts slowly with moist air — green patina.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c06",
+          "name": "Hydrogen in reactivity series",
+          "simple_answer": "Hydrogen placed between lead and copper — metals above H displace H from dilute acids.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal above H → reacts with dilute acid → H₂",
+            "note": "H as reference in series"
+          },
+          "why": "Explains acid reactions.",
+          "example": "Zn above H — gives H₂ with HCl.",
+          "remember": "Below H — no H₂ from dilute acid.",
+          "common_confusion": "H not a metal but used as benchmark.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c07",
+          "name": "Reactivity series predicts reactions",
+          "simple_answer": "Series predicts: water reactions, acid reactions, displacement, and extraction method.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Series predicts all Ch 3 reactions"
+          },
+          "why": "Unifying exam concept.",
+          "example": "K reacts with cold water; Cu does not.",
+          "remember": "One series — many predictions.",
+          "common_confusion": "Higher metal reduces lower metal oxide.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c08",
+          "name": "Relative reactivity comparisons",
+          "simple_answer": "Exam asks: 'Which is more reactive, Zn or Fe?' — Zn is higher in series.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn > Fe > Cu",
+            "note": "Common comparison triple"
+          },
+          "why": "Quick comparison skill.",
+          "example": "Zn displaces Fe? No — both react with acid but Zn displaces Cu.",
+          "remember": "Higher in list = more reactive.",
+          "common_confusion": "Compare positions, not properties alone.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c09",
+          "name": "Reactivity and extraction link",
+          "simple_answer": "Highly reactive metals (Na, Ca, Al) extracted by electrolysis; less reactive by reduction with C.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reactivity → extraction method"
+          },
+          "why": "Preview Day 13–14.",
+          "example": "Al from bauxite by electrolysis.",
+          "remember": "More reactive = harder to extract = electrolysis.",
+          "common_confusion": "Cu and Hg extracted by heating sulphide ore.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c10",
+          "name": "Exam — reactivity series",
+          "simple_answer": "Write full series → explain one reaction prediction (water/acid/displacement) → compare two metals → mnemonic.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: reactivity series template"
+          },
+          "why": "Structured answer.",
+          "example": "K Na Ca Mg Al Zn Fe Pb Cu Hg Ag — write completely.",
+          "remember": "One application example mandatory.",
+          "common_confusion": "Include H position between Pb and Cu.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "How Metals and Non-metals React — Ions",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d11_c01",
+          "name": "How metals and non-metals react",
+          "simple_answer": "Metals and non-metals react by transfer of electrons — metal loses electrons, non-metal gains.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal → loses e⁻ | Non-metal → gains e⁻",
+            "note": "Electron transfer reaction"
+          },
+          "why": "Core Day 11 concept.",
+          "example": "Na gives electron to Cl forming NaCl.",
+          "remember": "Electron transfer = ionic bond formation.",
+          "common_confusion": "Not sharing — transfer (ionic compounds).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ionic bond"
+          ]
+        },
+        {
+          "id": "u3_d11_c02",
+          "name": "Metal atoms lose electrons",
+          "simple_answer": "Metal atoms have 1–3 valence electrons — easily lost to form positive ions (cations).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Na → Na⁺ + e⁻",
+            "note": "Metal forms cation"
+          },
+          "why": "First half of electron transfer.",
+          "example": "Sodium loses 1 electron → Na⁺.",
+          "remember": "Metal → positive ion (cation).",
+          "common_confusion": "More reactive metals lose electrons more easily.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c03",
+          "name": "Non-metal atoms gain electrons",
+          "simple_answer": "Non-metal atoms have 5–7 valence electrons — gain electrons to complete octet, form negative ions (anions).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Cl + e⁻ → Cl⁻",
+            "note": "Non-metal forms anion"
+          },
+          "why": "Second half of electron transfer.",
+          "example": "Chlorine gains 1 electron → Cl⁻.",
+          "remember": "Non-metal → negative ion (anion).",
+          "common_confusion": "Gaining electrons completes outer shell.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c04",
+          "name": "Formation of sodium chloride NaCl",
+          "simple_answer": "Sodium donates 1 e⁻ to chlorine — Na⁺ and Cl⁻ attract electrostatically forming NaCl.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Na + Cl → Na⁺Cl⁻ (NaCl)",
+            "note": "Ionic compound — electron transfer"
+          },
+          "why": "Classic NCERT ionic example.",
+          "example": "Table salt — ionic crystal lattice.",
+          "remember": "Na⁺ + Cl⁻ held by electrostatic force.",
+          "common_confusion": "NaCl solid — ions packed in crystal.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c05",
+          "name": "Formation of magnesium chloride MgCl₂",
+          "simple_answer": "Magnesium loses 2 electrons; two chlorine atoms each gain 1 — Mg²⁺ and 2Cl⁻ form MgCl₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mg + 2Cl → Mg²⁺(Cl⁻)₂",
+            "note": "Mg loses 2 e⁻"
+          },
+          "why": "Divalent metal example.",
+          "example": "MgCl₂ used in tofu and road de-icing.",
+          "remember": "Balance electrons: Mg gives 2, each Cl takes 1.",
+          "common_confusion": "Mg²⁺ needs two Cl⁻ for neutral compound.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c06",
+          "name": "Electron dot structure — NaCl",
+          "simple_answer": "Show Na with 1 dot (valence e⁻) transferring to Cl (7 dots → 8) — Na⁺ and Cl⁻ formed.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Electron dot — NaCl formation"
+          },
+          "why": "NCERT diagram skill.",
+          "example": "Draw Na atom, Cl atom, then ions.",
+          "remember": "Dot structure shows electron transfer.",
+          "common_confusion": "Cl⁻ has 8 outer electrons after gaining.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c07",
+          "name": "Ionic compounds definition",
+          "simple_answer": "Compounds formed by transfer of electrons between metal and non-metal — contain ions.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Ionic compound = Cation + Anion",
+            "note": "Held by electrostatic attraction"
+          },
+          "why": "Definition for exams.",
+          "example": "NaCl, MgO, CaCl₂ are ionic.",
+          "remember": "Metal + non-metal → usually ionic.",
+          "common_confusion": "Not all metal-non-metal compounds ionic — SnCl₄ covalent (advanced).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ionic compound"
+          ]
+        },
+        {
+          "id": "u3_d11_c08",
+          "name": "Electrovalency",
+          "simple_answer": "Electrovalency is the number of electrons lost or gained — equals charge on ion.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Na⁺: electrovalency 1 | Mg²⁺: electrovalency 2",
+            "note": "Charge = valency in ionic compounds"
+          },
+          "why": "NCERT term.",
+          "example": "Cl⁻ has electrovalency 1.",
+          "remember": "Electrovalency = electrons transferred.",
+          "common_confusion": "Same as valency for main group elements.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c09",
+          "name": "Compare metal vs non-metal electron behaviour",
+          "simple_answer": "Metals: lose e⁻, form cations, low ionisation energy. Non-metals: gain e⁻, form anions, high electron affinity.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal: cation (+) | Non-metal: anion (−)",
+            "note": "Opposite electron behaviour"
+          },
+          "why": "Exam comparison.",
+          "example": "Na loses; Cl gains — opposite tendencies.",
+          "remember": "Opposite behaviour enables ionic bond.",
+          "common_confusion": "Metalloids can do both — borderline.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c10",
+          "name": "Exam — electron transfer and ions",
+          "simple_answer": "Explain electron transfer → NaCl formation with equations → dot structure → define ionic compound.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: ion formation template"
+          },
+          "why": "Structured answer.",
+          "example": "Na → Na⁺ + e⁻; Cl + e⁻ → Cl⁻; Na⁺ + Cl⁻ → NaCl.",
+          "remember": "Draw dot structure for marks.",
+          "common_confusion": "State cation and anion clearly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Properties of Ionic Compounds",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d12_c01",
+          "name": "Physical state of ionic compounds",
+          "simple_answer": "Ionic compounds are generally solid at room temperature — hard crystalline solids.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ionic compounds — solid crystals"
+          },
+          "why": "First property of ionic compounds.",
+          "example": "NaCl, MgO, CaCl₂ are white crystalline solids.",
+          "remember": "Solid at room temperature.",
+          "common_confusion": "Crystal lattice of alternating ions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c02",
+          "name": "High melting and boiling points",
+          "simple_answer": "Ionic compounds have high melting and boiling points — strong electrostatic forces between ions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ionic — high mp and bp"
+          },
+          "why": "Second property.",
+          "example": "NaCl melts at 801°C — very high.",
+          "remember": "Strong ionic bonds need much heat to break.",
+          "common_confusion": "High mp distinguishes ionic from covalent.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c03",
+          "name": "Solubility in water",
+          "simple_answer": "Most ionic compounds dissolve in water — water molecules surround ions (hydration).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ionic compounds soluble in water"
+          },
+          "why": "Third property.",
+          "example": "NaCl dissolves readily in water.",
+          "remember": "Polar water dissolves ionic compounds.",
+          "common_confusion": "Some insoluble: AgCl, BaSO₄ — exceptions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c04",
+          "name": "Electrical conductivity — solid vs molten",
+          "simple_answer": "Ionic compounds do NOT conduct electricity in solid state; DO conduct when molten or dissolved in water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Solid: no conduction | Molten/aqueous: conducts",
+            "note": "Ions must be free to move"
+          },
+          "why": "Critical exam distinction.",
+          "example": "NaCl solid — bulb off; NaCl solution — bulb glows.",
+          "remember": "Ions fixed in solid; mobile when molten/dissolved.",
+          "common_confusion": "Most common exam trap in Ch 3.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c05",
+          "name": "Why solid ionic compounds do not conduct",
+          "simple_answer": "In solid ionic crystal, ions are fixed in lattice positions — cannot move to carry charge.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Solid — ions cannot move"
+          },
+          "why": "Mechanism explanation.",
+          "example": "NaCl crystal — Na⁺ and Cl⁻ locked in place.",
+          "remember": "No mobile ions = no current.",
+          "common_confusion": "Metallic solids conduct — different mechanism.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c06",
+          "name": "Why molten ionic compounds conduct",
+          "simple_answer": "When melted, ionic lattice breaks — ions free to move toward electrodes carrying charge.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Molten — ions move freely"
+          },
+          "why": "Mechanism for molten state.",
+          "example": "Electrolysis of molten NaCl gives Na and Cl₂.",
+          "remember": "Molten = liquid ions = conductor.",
+          "common_confusion": "Basis for electrolytic extraction.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c07",
+          "name": "Why aqueous ionic solutions conduct",
+          "simple_answer": "Water dissolves ionic compound — ions surrounded by water molecules and free to move.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Aqueous — dissolved ions conduct"
+          },
+          "why": "Mechanism for aqueous state.",
+          "example": "Salt water conducts — ions in solution.",
+          "remember": "Dissolved ions carry current.",
+          "common_confusion": "Pure water alone conducts poorly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c08",
+          "name": "Brittleness of ionic crystals",
+          "simple_answer": "Ionic crystals are brittle — shatter when struck because ion layers shift and repel.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ionic crystals — brittle"
+          },
+          "why": "Additional property.",
+          "example": "NaCl crystal shatters if hammered.",
+          "remember": "Same charge ions align and repel — crack.",
+          "common_confusion": "Contrast with malleable metals.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c09",
+          "name": "Properties summary table",
+          "simple_answer": "Solid, high mp, soluble, conduct when molten/dissolved, brittle — five key ionic properties.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Solid | High mp | Soluble | Conduct (molten/aq) | Brittle",
+            "note": "Five ionic compound properties"
+          },
+          "why": "Exam revision card.",
+          "example": "Memorise all five for long answer.",
+          "remember": "Conductivity condition is most tested.",
+          "common_confusion": "Graphite conducts in solid — not ionic.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c10",
+          "name": "Exam — properties of ionic compounds",
+          "simple_answer": "List five properties → explain conductivity solid vs molten vs aqueous → NaCl example for each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: ionic properties template"
+          },
+          "why": "Structured answer.",
+          "example": "Solid NaCl insulator; NaCl(aq) conductor.",
+          "remember": "Five properties with explanation.",
+          "common_confusion": "Conductivity trap — solid does NOT conduct.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Occurrence of Metals — Ores and Enrichment",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d13_c01",
+          "name": "Occurrence of metals in nature",
+          "simple_answer": "Most metals found as compounds in earth's crust; only less reactive metals found free.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Metals in crust — mostly compounds"
+          },
+          "why": "Day 13 introduction.",
+          "example": "Al and Fe abundant as oxides; Au, Ag rare as free metal.",
+          "remember": "Reactive metals never found free.",
+          "common_confusion": "Abundance: Al > Fe > Ca in crust.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c02",
+          "name": "Minerals and ores",
+          "simple_answer": "Mineral is natural compound of metal; ore is mineral from which metal extracted profitably.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mineral → may be ore if economical",
+            "note": "All ores are minerals; not all minerals are ores"
+          },
+          "why": "Key definitions.",
+          "example": "Bauxite is ore of aluminium.",
+          "remember": "Ore = economically extractable mineral.",
+          "common_confusion": "Haematite is ore; other iron minerals may not be.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ore",
+            "mineral"
+          ]
+        },
+        {
+          "id": "u3_d13_c03",
+          "name": "Gangue definition",
+          "simple_answer": "Gangue is unwanted earthy material (sand, rocky impurities) mixed with ore.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gangue — unwanted impurities"
+          },
+          "why": "Important extraction term.",
+          "example": "Sand and clay in iron ore.",
+          "remember": "Remove gangue before extraction.",
+          "common_confusion": "Also called matrix or impurities.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "gangue"
+          ]
+        },
+        {
+          "id": "u3_d13_c04",
+          "name": "Enrichment of ores",
+          "simple_answer": "Ores concentrated by removing gangue — methods: hydraulic washing, magnetic separation, froth flotation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Enrichment — remove gangue"
+          },
+          "why": "First step in extraction.",
+          "example": "Magnetic separation for magnetic ores like magnetite.",
+          "remember": "Concentrate ore before chemical extraction.",
+          "common_confusion": "Froth flotation for sulphide ores.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c05",
+          "name": "Important ores — aluminium",
+          "simple_answer": "Bauxite (Al₂O₃·2H₂O) is main ore of aluminium — most abundant metal in crust.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Bauxite: Al₂O₃·2H₂O",
+            "note": "Ore of aluminium"
+          },
+          "why": "First ore to memorise.",
+          "example": "Aluminium from bauxite by electrolysis.",
+          "remember": "Bauxite enriched then processed.",
+          "common_confusion": "Al most abundant metal — from bauxite.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c06",
+          "name": "Important ores — iron",
+          "simple_answer": "Haematite (Fe₂O₃) and magnetite (Fe₃O₄) are main ores of iron.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Haematite: Fe₂O₃ | Magnetite: Fe₃O₄",
+            "note": "Iron ores"
+          },
+          "why": "Second ore pair.",
+          "example": "Blast furnace uses haematite.",
+          "remember": "Iron most used structural metal.",
+          "common_confusion": "Magnetite magnetic — separated magnetically.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c07",
+          "name": "Important ores — copper and zinc",
+          "simple_answer": "Copper from copper pyrites (CuFeS₂); zinc from zinc blende (ZnS).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Copper pyrites: CuFeS₂ | Zinc blende: ZnS",
+            "note": "Sulphide ores"
+          },
+          "why": "Third ore pair.",
+          "example": "Sulphide ores roasted before reduction.",
+          "remember": "Cu and Zn from sulphide ores.",
+          "common_confusion": "Roasting converts sulphide to oxide.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c08",
+          "name": "Calcination definition",
+          "simple_answer": "Calcination heats ore in absence or limited air — carbonate/hydroxide ore decomposes to oxide.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "ZnCO₃ → ZnO + CO₂",
+            "note": "Calcination — limited air"
+          },
+          "why": "Thermal treatment term.",
+          "example": "Carbonate ores calcined before reduction.",
+          "remember": "Heat without sufficient oxygen.",
+          "common_confusion": "Opposite of roasting — no air.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "calcination"
+          ]
+        },
+        {
+          "id": "u3_d13_c09",
+          "name": "Roasting definition",
+          "simple_answer": "Roasting heats sulphide ore in presence of air — sulphide converts to oxide.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2ZnS + 3O₂ → 2ZnO + 2SO₂",
+            "note": "Roasting — in air"
+          },
+          "why": "Second thermal treatment.",
+          "example": "Sulphide ores roasted to oxide.",
+          "remember": "Air supplied — SO₂ produced.",
+          "common_confusion": "Roasting for sulphides; calcination for carbonates.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "roasting"
+          ]
+        },
+        {
+          "id": "u3_d13_c10",
+          "name": "Exam — ores and enrichment",
+          "simple_answer": "Define ore and gangue → name three ores with formulae → enrichment methods → calcination vs roasting.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: ores and enrichment template"
+          },
+          "why": "Structured answer.",
+          "example": "Bauxite, haematite, zinc blende examples.",
+          "remember": "Calcination vs roasting distinction key.",
+          "common_confusion": "Gangue removal before extraction.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "Extracting Metals — Activity Series Methods",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d14_c01",
+          "name": "Extracting metals — overview",
+          "simple_answer": "Method of extraction depends on reactivity — highly reactive need electrolysis; moderate use C/CO reduction.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Extraction depends on reactivity"
+          },
+          "why": "Day 14 theme.",
+          "example": "K, Na, Ca, Mg, Al — electrolysis.",
+          "remember": "More reactive = electrolysis.",
+          "common_confusion": "Less reactive = reduction with carbon.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c02",
+          "name": "Reduction of metal oxides",
+          "simple_answer": "Metal oxide reduced to free metal by heating with carbon, carbon monoxide, or more reactive metal.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal oxide + Reducing agent → Metal + Oxide of reducer",
+            "note": "Reduction = loss of oxygen from metal compound"
+          },
+          "why": "Core extraction reaction.",
+          "example": "Fe₂O₃ + 3CO → 2Fe + 3CO₂ in blast furnace.",
+          "remember": "Remove oxygen from ore = reduction.",
+          "common_confusion": "C and CO common reducing agents.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c03",
+          "name": "Iron extraction — blast furnace",
+          "simple_answer": "Haematite reduced by CO in blast furnace at high temperature — molten iron collected.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fe₂O₃ + 3CO → 2Fe + 3CO₂",
+            "note": "Blast furnace — ~1500°C"
+          },
+          "why": "Major industrial process.",
+          "example": "Coke produces CO which reduces iron ore.",
+          "remember": "Blast furnace: coke + limestone + ore.",
+          "common_confusion": "Limestone removes silica as slag.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c04",
+          "name": "Zinc extraction — reduction",
+          "simple_answer": "Zinc oxide from roasted zinc blende reduced by heating with carbon.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "ZnO + C → Zn + CO",
+            "note": "Reduction with carbon"
+          },
+          "why": "Moderate reactivity extraction.",
+          "example": "Zn distils off and collected.",
+          "remember": "ZnO reduced by C at high temperature.",
+          "common_confusion": "Zn boils below reduction temperature — distillation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c05",
+          "name": "Copper extraction — sulphide route",
+          "simple_answer": "Copper sulphide ore roasted to oxide, then reduced; low reactivity allows heating alone.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2Cu₂S + 3O₂ → 2Cu₂O + 2SO₂",
+            "note": "Roast then reduce Cu₂O"
+          },
+          "why": "Less reactive metal extraction.",
+          "example": "Cu₂O + Cu₂S → 6Cu + SO₂ (self-reduction).",
+          "remember": "Cu extracted by heating sulphide ore.",
+          "common_confusion": "Some Cu found native — low reactivity.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c06",
+          "name": "Mercury extraction",
+          "simple_answer": "Cinnabar (HgS) roasted to HgO, then HgO decomposes to Hg on heating.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2HgO → 2Hg + O₂",
+            "note": "Low reactivity — heat alone"
+          },
+          "why": "Simplest extraction example.",
+          "example": "Mercury liquid at room temperature.",
+          "remember": "HgO unstable on heating — releases Hg.",
+          "common_confusion": "Hg toxic — historical thermometers.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c07",
+          "name": "Electrolysis for highly reactive metals",
+          "simple_answer": "Na, Ca, Mg, and Al extracted by electrolysis of molten chloride or oxide — too reactive for C reduction.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Al₂O₃ (molten) → Al + O₂ (electrolysis)",
+            "note": "Hall-Heroult process for Al"
+          },
+          "why": "Top of series extraction.",
+          "example": "Al from bauxite via electrolysis in cryolite.",
+          "remember": "Electrolysis for K, Na, Ca, Mg, Al.",
+          "common_confusion": "Large electricity consumption — expensive.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c08",
+          "name": "Sodium extraction — electrolysis",
+          "simple_answer": "Molten NaCl electrolysed — sodium at cathode, chlorine at anode.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2NaCl (l) → 2Na + Cl₂",
+            "note": "Downs cell — electrolysis"
+          },
+          "why": "Electrolysis example for Na.",
+          "example": "Same brine electrolysis as chlor-alkali (Ch 2).",
+          "remember": "Molten NaCl — not aqueous for Na metal.",
+          "common_confusion": "Na collects at cathode — very reactive.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c09",
+          "name": "Activity series and reducing agent strength",
+          "simple_answer": "More reactive metal can reduce less reactive metal oxide — thermite: Al reduces Fe₂O₃.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fe₂O₃ + 2Al → 2Fe + Al₂O₃",
+            "note": "Thermite reaction — Al displaces Fe"
+          },
+          "why": "Displacement in extraction.",
+          "example": "Thermite weld railway tracks.",
+          "remember": "Al more reactive than Fe — reduces Fe₂O₃.",
+          "common_confusion": "Very exothermic — molten iron produced.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c10",
+          "name": "Exam — extracting metals",
+          "simple_answer": "Link reactivity to method → blast furnace equation → electrolysis for Al/Na → calcination/roasting before reduction.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: metal extraction template"
+          },
+          "why": "Structured answer.",
+          "example": "Fe: blast furnace; Al: electrolysis.",
+          "remember": "Three methods: electrolysis, C reduction, heating.",
+          "common_confusion": "Always name ore and write key equation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Electrolytic Refining and Corrosion",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d15_c01",
+          "name": "Electrolytic refining definition",
+          "simple_answer": "Electrolytic refining purifies impure metal using electrolysis — pure metal deposited at cathode.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Impure metal anode → Pure metal cathode",
+            "note": "Electrolytic refining"
+          },
+          "why": "Day 15 first topic.",
+          "example": "Pure Cu deposited from CuSO₄ solution.",
+          "remember": "Anode dissolves; cathode gains pure metal.",
+          "common_confusion": "Used for Cu, Zn, Ag, Au refining.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c02",
+          "name": "Electrolytic refining of copper",
+          "simple_answer": "Impure Cu anode, pure Cu cathode, CuSO₄ electrolyte — pure Cu plates on cathode.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Anode: impure Cu → Cathode: pure Cu",
+            "note": "CuSO₄(aq) electrolyte"
+          },
+          "why": "NCERT refining example.",
+          "example": "Insoluble impurities fall as anode mud.",
+          "remember": "Pure copper 99.9% by this method.",
+          "common_confusion": "Anode mud contains Ag and Au — valuable.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c03",
+          "name": "Anode mud",
+          "simple_answer": "Insoluble impurities (gold, silver) settle below anode during electrolytic refining — called anode mud.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Anode mud — precious impurities"
+          },
+          "why": "By-product of refining.",
+          "example": "Gold and silver recovered from anode mud.",
+          "remember": "Less reactive impurities do not dissolve.",
+          "common_confusion": "Anode mud economically valuable.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c04",
+          "name": "Corrosion definition",
+          "simple_answer": "Corrosion is gradual destruction of metals by chemical reaction with environment — moisture and air.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Corrosion — metal deterioration"
+          },
+          "why": "Second Day 15 topic.",
+          "example": "Iron rusts; silver tarnishes; copper patina.",
+          "remember": "Metal + environment → corroded product.",
+          "common_confusion": "Corrosion is electrochemical process.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "corrosion"
+          ]
+        },
+        {
+          "id": "u3_d15_c05",
+          "name": "Rusting of iron",
+          "simple_answer": "Rusting is corrosion of iron — forms hydrated iron(III) oxide (rust) in presence of oxygen and water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "4Fe + 3O₂ + 2xH₂O → 2Fe₂O₃·xH₂O",
+            "note": "Rust — hydrated iron oxide"
+          },
+          "why": "Most important corrosion example.",
+          "example": "Brown flaky rust on iron gates and nails.",
+          "remember": "Needs both O₂ and H₂O for rust.",
+          "common_confusion": "Rust is porous — corrosion continues underneath.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "rust"
+          ]
+        },
+        {
+          "id": "u3_d15_c06",
+          "name": "Conditions for rusting",
+          "simple_answer": "Iron rusts when both oxygen and water present — dry air or pure water alone insufficient.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fe + O₂ + H₂O → Rust",
+            "note": "Both O₂ and H₂O required"
+          },
+          "why": "Exam conditions question.",
+          "example": "Nail in dry air — no rust; in boiled water + oil — no rust.",
+          "remember": "Both moisture AND air needed.",
+          "common_confusion": "Salt water accelerates rusting.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c07",
+          "name": "Other metal corrosion",
+          "simple_answer": "Silver tarnishes (Ag₂S from H₂S); copper green patina (basic copper carbonate); aluminium protected by Al₂O₃.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ag, Cu, Al corrosion"
+          },
+          "why": "Compare corrosion types.",
+          "example": "Silver blackens with sulphur compounds.",
+          "remember": "Al self-protects; iron does not.",
+          "common_confusion": "Green on copper = CuCO₃·Cu(OH)₂ patina.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c08",
+          "name": "Economic cost of corrosion",
+          "simple_answer": "Corrosion damages bridges, cars, pipelines — billions spent on replacement and repair worldwide.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Corrosion — economic impact"
+          },
+          "why": "Motivation for prevention.",
+          "example": "Rusted bridge structures need replacement.",
+          "remember": "Prevention cheaper than replacement.",
+          "common_confusion": "Galvanisation and painting save money.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c09",
+          "name": "Compare refining and corrosion",
+          "simple_answer": "Refining purifies metal intentionally; corrosion destroys metal unintentionally — both involve electrochemistry.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Refining vs corrosion"
+          },
+          "why": "Conceptual contrast.",
+          "example": "Electrolysis controls deposition in refining.",
+          "remember": "Refining useful; corrosion harmful.",
+          "common_confusion": "Both involve ion movement and redox.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c10",
+          "name": "Exam — refining and corrosion",
+          "simple_answer": "Explain electrolytic refining of Cu → rusting equation and conditions → economic impact of corrosion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: refining and corrosion template"
+          },
+          "why": "Structured answer.",
+          "example": "4Fe + 3O₂ + 2xH₂O → 2Fe₂O₃·xH₂O must-know.",
+          "remember": "Refining diagram + rust equation + conditions.",
+          "common_confusion": "State both O₂ and H₂O needed for rust.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "Prevention of Corrosion and Exam Review",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d16_c01",
+          "name": "Galvanisation",
+          "simple_answer": "Galvanisation coats iron with thin layer of zinc — Zn corrodes instead of Fe (sacrificial protection).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Iron + Zinc coating → Galvanised iron",
+            "note": "Zinc protects iron"
+          },
+          "why": "Primary prevention method.",
+          "example": "Galvanised buckets and roof sheets.",
+          "remember": "Zn more reactive — sacrifices itself.",
+          "common_confusion": "Scratch exposes Fe — Zn still protects nearby.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "galvanisation"
+          ]
+        },
+        {
+          "id": "u3_d16_c02",
+          "name": "Painting and oiling",
+          "simple_answer": "Paint, grease, or oil layer blocks air and moisture from reaching metal surface.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Paint/oil — barrier protection"
+          },
+          "why": "Barrier method.",
+          "example": "Painted iron gates resist rust longer.",
+          "remember": "Physical barrier prevents O₂ and H₂O contact.",
+          "common_confusion": "Must renew paint when chipped.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c03",
+          "name": "Alloying to prevent corrosion",
+          "simple_answer": "Alloying makes metal resistant to corrosion — stainless steel (Fe + Cr + Ni) resists rust.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Stainless steel: Fe + Cr + Ni",
+            "note": "Alloy resists corrosion"
+          },
+          "why": "Structural prevention.",
+          "example": "Stainless steel utensils do not rust.",
+          "remember": "Chromium forms protective oxide layer.",
+          "common_confusion": "Alloying changes properties — also increases hardness.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c04",
+          "name": "Chromium plating",
+          "simple_answer": "Thin chromium layer on iron/nickel — shiny, hard, corrosion-resistant surface.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Chromium plating — protection"
+          },
+          "why": "Electroplating prevention.",
+          "example": "Chrome-plated bathroom fittings.",
+          "remember": "Cr layer prevents rust and looks polished.",
+          "common_confusion": "Different from galvanisation — Cr not sacrificial.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c05",
+          "name": "Sacrificial protection",
+          "simple_answer": "More reactive metal (Zn, Mg) connected to iron — corrodes preferentially protecting iron.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn (sacrificial anode) protects Fe",
+            "note": "Ship hulls use Mg blocks"
+          },
+          "why": "Electrochemical prevention.",
+          "example": "Magnesium blocks on ship hulls.",
+          "remember": "Reactive metal sacrificed — cathodic protection.",
+          "common_confusion": "Used on pipelines and ships.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c06",
+          "name": "Storing reactive metals",
+          "simple_answer": "Na and K stored under kerosene; phosphorus under water — prevents reaction with air.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Storage prevents corrosion/reaction"
+          },
+          "why": "Prevention by isolation.",
+          "example": "Na cuts stored in kerosene bottle.",
+          "remember": "Exclude air and moisture.",
+          "common_confusion": "Same principle as painting — block environment.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c07",
+          "name": "Unit 3 exam — physical properties summary",
+          "simple_answer": "Metals: lustrous, malleable, ductile, sonorous, good conductors. Non-metals: opposite + graphite/iodine exceptions.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metals vs non-metals — 5+5 properties",
+            "note": "Activities 3.1–3.4"
+          },
+          "why": "Revision card 1.",
+          "example": "Activity 3.1–3.4 cover all physical tests.",
+          "remember": "Know all activities and exceptions.",
+          "common_confusion": "Graphite conducts; iodine lustrous.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c08",
+          "name": "Unit 3 exam — reactions summary",
+          "simple_answer": "Air: metal + O₂ → oxide. Water: Na/K/Ca cold; Fe steam. Acid: salt + H₂. Displacement: more reactive wins.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "O₂ | H₂O | Acid | Displacement",
+            "note": "Four reaction types"
+          },
+          "why": "Revision card 2.",
+          "example": "Zn + CuSO₄ displacement classic.",
+          "remember": "Reactivity series predicts all four.",
+          "common_confusion": "Cu no reaction with dilute acid or ZnSO₄.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c09",
+          "name": "Unit 3 exam — ions and extraction summary",
+          "simple_answer": "Electron transfer → ionic compounds. Properties: solid, high mp, conduct molten/aq. Extraction by reactivity.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Ionic | Extraction | Corrosion",
+            "note": "Revision card 3"
+          },
+          "why": "Revision card 3.",
+          "example": "Al electrolysis; Fe blast furnace.",
+          "remember": "Solid ionic does NOT conduct.",
+          "common_confusion": "4Fe + 3O₂ + 2xH₂O → rust equation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c10",
+          "name": "Unit 3 complete",
+          "simple_answer": "Unit 3 Metals and Non-metals complete — all 160 cards; proceed to Practice when unlocked.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Unit 3 complete — 160 cards"
+          },
+          "why": "Completion card.",
+          "example": "200 MCQs in bank when available.",
+          "remember": "Concepts done → practice.",
+          "common_confusion": "Review reactivity series, ionic properties, and rust prevention.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

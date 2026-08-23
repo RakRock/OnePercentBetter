@@ -1,0 +1,2774 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 4,
+    "unit_title": "Carbon and its Compounds",
+    "ncert": "Class 10 Science, Chapter 4 (Chemistry)",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_chemistry_unit4_concepts",
+    "session_kind_mcq": "harshit_chemistry_unit4_mcq"
+  },
+  "glossary": [
+    {
+      "term": "covalent bond",
+      "definition": "Bond formed by sharing of electron pairs between atoms."
+    },
+    {
+      "term": "catenation",
+      "definition": "Property of carbon to form long chains and rings by bonding to other carbon atoms."
+    },
+    {
+      "term": "tetravalency",
+      "definition": "Carbon has valency four — forms four covalent bonds."
+    },
+    {
+      "term": "hydrocarbon",
+      "definition": "Compound containing only carbon and hydrogen."
+    },
+    {
+      "term": "homologous series",
+      "definition": "Family of compounds with same functional group, differing by CH₂."
+    },
+    {
+      "term": "functional group",
+      "definition": "Specific atom/group that determines chemical properties of an organic compound."
+    },
+    {
+      "term": "saturated compound",
+      "definition": "Contains only single C–C bonds (e.g. alkanes)."
+    },
+    {
+      "term": "unsaturated compound",
+      "definition": "Contains double or triple C–C bonds (e.g. alkenes, alkynes)."
+    },
+    {
+      "term": "micelle",
+      "definition": "Cluster of soap/detergent molecules that traps oily dirt in water."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "Carbon and its Compounds — Introduction",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d1_c01",
+          "name": "What is carbon?",
+          "simple_answer": "Carbon is a non-metal element (atomic number 6) that forms the backbone of millions of organic compounds in living and non-living matter.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Carbon — basis of organic chemistry"
+          },
+          "why": "Foundation of Ch 4 — carbon introduced first.",
+          "example": "Coal, diamond, graphite, and all living tissues contain carbon.",
+          "remember": "C = element 6; organic chemistry is chemistry of carbon compounds.",
+          "common_confusion": "Not every compound with carbon is organic — CO₂ and carbonates are exceptions.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "carbon"
+          ]
+        },
+        {
+          "id": "u4_d1_c02",
+          "name": "Why study carbon compounds?",
+          "simple_answer": "Carbon compounds are essential for food, fuel, medicines, plastics, and all life — making this chapter central to science and daily life.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Carbon compounds in daily life"
+          },
+          "why": "Motivation for Ch 4.",
+          "example": "Petrol, proteins, sugar, and cotton are carbon-based.",
+          "remember": "Carbon compounds touch every part of daily life.",
+          "common_confusion": "Organic chemistry studies carbon compounds; inorganic includes others.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c03",
+          "name": "Organic vs inorganic compounds",
+          "simple_answer": "Organic compounds contain carbon (usually C–H bonds); inorganic compounds include water, salts, and minerals — NCERT focuses on key organic families.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Organic: C–H bonds (generally) | Inorganic: salts, minerals",
+            "note": "Classification overview"
+          },
+          "why": "Classification framework for Ch 4.",
+          "example": "Methane CH₄ is organic; NaCl is inorganic.",
+          "remember": "Organic = carbon compounds; exceptions like CO₂ noted later.",
+          "common_confusion": "Urea and CO are borderline cases — NCERT treats most C-compounds as organic.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c04",
+          "name": "Unique nature of carbon — preview",
+          "simple_answer": "Carbon is tetravalent (4 valence electrons) and shows catenation (self-linking) — together these explain millions of compounds.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Tetravalency + Catenation → millions of compounds",
+            "note": "Two key properties"
+          },
+          "why": "Preview of Day 14 deep dive.",
+          "example": "Carbon chains in proteins and petrol molecules.",
+          "remember": "4 bonds + self-linking = huge variety.",
+          "common_confusion": "Silicon also catenates but less than carbon.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "tetravalency",
+            "catenation"
+          ]
+        },
+        {
+          "id": "u4_d1_c05",
+          "name": "Covalent bonding in carbon — preview",
+          "simple_answer": "Carbon shares electrons to complete its octet — forms covalent bonds with other carbon atoms and with H, O, N, halogens.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Carbon forms covalent bonds"
+          },
+          "why": "Leads to Day 2 electron dot structures.",
+          "example": "In methane CH₄, carbon shares 4 electron pairs.",
+          "remember": "Carbon shares electrons — does not form ions easily.",
+          "common_confusion": "Ionic bonding is rare for carbon — covalent dominates.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "covalent bond"
+          ]
+        },
+        {
+          "id": "u4_d1_c06",
+          "name": "Sources of carbon compounds",
+          "simple_answer": "Carbon compounds come from living sources (plants, animals), fossil fuels (coal, petroleum), and laboratory synthesis.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sources — living, fossil, lab"
+          },
+          "why": "NCERT context for organic compounds.",
+          "example": "Petroleum distillation gives petrol, diesel, kerosene.",
+          "remember": "Three sources: biosphere, fossils, synthesis.",
+          "common_confusion": "Fossil fuels are ancient carbon compounds.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c07",
+          "name": "Carbon in living organisms",
+          "simple_answer": "All living things are built from carbon compounds — carbohydrates, proteins, fats, and nucleic acids all contain carbon chains.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Carbon in all life forms"
+          },
+          "why": "Biological importance.",
+          "example": "Glucose C₆H₁₂O₆ and amino acids are carbon compounds.",
+          "remember": "Life = carbon chemistry.",
+          "common_confusion": "Carbon cycle links living and non-living carbon.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c08",
+          "name": "Fossil fuels and carbon",
+          "simple_answer": "Coal and petroleum are complex mixtures of carbon and hydrogen compounds formed over millions of years from ancient life.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Fossil fuels — carbon + hydrogen"
+          },
+          "why": "Energy link to Ch 4.",
+          "example": "Burning petrol releases CO₂ and H₂O.",
+          "remember": "Fossil fuels = stored carbon energy.",
+          "common_confusion": "Incomplete combustion of fuels produces CO and soot.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c09",
+          "name": "NCERT Chapter 4 scope",
+          "simple_answer": "Ch 4 covers bonding, allotropes, hydrocarbons, functional groups, reactions, ethanol, ethanoic acid, and soaps.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 4 roadmap — 16 days"
+          },
+          "why": "Orient learner to unit plan.",
+          "example": "Activities on burning, bromine water, and soap micelles.",
+          "remember": "Bonding → structures → reactions → everyday chemistry.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c10",
+          "name": "Chapter 4 opening — jesc104",
+          "simple_answer": "NCERT Class 10 Science Chapter 4 (jesc104.pdf) introduces carbon's versatility before detailed bonding and reactions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "jesc104 — Carbon and its Compounds"
+          },
+          "why": "PDF anchor for unit.",
+          "example": "Refer to NCERT for electron dot diagrams.",
+          "remember": "Start with why carbon is special.",
+          "common_confusion": "Chapter builds from structure to applications.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Bonding in Carbon — Covalency and Electron Dot Structures",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d2_c01",
+          "name": "Covalent bond definition",
+          "simple_answer": "A covalent bond forms when two atoms share one or more pairs of electrons to achieve stable electron configuration.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Covalent bond — shared electron pairs"
+          },
+          "why": "Core Day 2 concept.",
+          "example": "H–H in H₂ molecule shares one electron pair.",
+          "remember": "Shared electrons = covalent bond.",
+          "common_confusion": "Sharing completes octet (or duplet for H).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "covalent bond"
+          ]
+        },
+        {
+          "id": "u4_d2_c02",
+          "name": "Why carbon forms covalent bonds",
+          "simple_answer": "Carbon has 4 valence electrons — it shares electrons rather than losing or gaining four, forming strong covalent bonds.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C: 2,4 → shares 4 electrons",
+            "note": "Tetravalency drives covalency"
+          },
+          "why": "Mechanism for carbon bonding.",
+          "example": "Carbon never forms C⁴⁺ or C⁴⁻ in normal compounds.",
+          "remember": "4 valence e⁻ → 4 covalent bonds.",
+          "common_confusion": "Carbon can form single, double, and triple bonds.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c03",
+          "name": "Tetravalency of carbon",
+          "simple_answer": "Tetravalency means carbon has a valency of four — it forms four covalent bonds in most compounds.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Carbon valency = 4",
+            "note": "Tetravalency"
+          },
+          "why": "Key property repeated in Ch 4.",
+          "example": "In CH₄, carbon bonds to four hydrogen atoms.",
+          "remember": "4 bonds around carbon in methane.",
+          "common_confusion": "Tetravalency + catenation = versatility.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "tetravalency"
+          ]
+        },
+        {
+          "id": "u4_d2_c04",
+          "name": "Electron dot structure of CH₄",
+          "simple_answer": "Methane CH₄: carbon shares one electron pair with each of four H atoms — four single covalent bonds.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₄ — 4 C–H single bonds",
+            "note": "Lewis structure of methane"
+          },
+          "why": "First NCERT Lewis structure.",
+          "example": "Main component of natural gas.",
+          "remember": "C in centre; 4 H around; 4 shared pairs.",
+          "common_confusion": "Each bond is one shared pair (single bond).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "methane"
+          ]
+        },
+        {
+          "id": "u4_d2_c05",
+          "name": "Electron dot structure of C₂H₆",
+          "simple_answer": "Ethane C₂H₆: two carbon atoms joined by a C–C single bond; each C also bonded to three H atoms.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₂H₆ — C–C + 6 C–H bonds",
+            "note": "Lewis structure of ethane"
+          },
+          "why": "Catenation example in Lewis form.",
+          "example": "Ethane is second member of alkane series.",
+          "remember": "Two C atoms single-bonded; 6 H total.",
+          "common_confusion": "C–C single bond = one shared pair.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ethane"
+          ]
+        },
+        {
+          "id": "u4_d2_c06",
+          "name": "Electron dot structure of O₂",
+          "simple_answer": "Oxygen O₂: each O atom shares two electron pairs with the other — a double bond (O=O).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "O₂ — O=O double bond",
+            "note": "Lewis structure of oxygen"
+          },
+          "why": "NCERT diatomic molecule example.",
+          "example": "O₂ needed for combustion and respiration.",
+          "remember": "Double bond = two shared pairs.",
+          "common_confusion": "O₂ has 6 valence electrons per atom.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c07",
+          "name": "Electron dot structure of N₂",
+          "simple_answer": "Nitrogen N₂: two N atoms share three electron pairs — a triple bond (N≡N), very stable molecule.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "N₂ — N≡N triple bond",
+            "note": "Lewis structure of nitrogen"
+          },
+          "why": "Triple bond example from NCERT.",
+          "example": "N₂ makes up 78% of air.",
+          "remember": "Triple bond = three shared pairs.",
+          "common_confusion": "N≡N is very strong — explains N₂ inertness.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c08",
+          "name": "Electron dot structure of CO₂",
+          "simple_answer": "Carbon dioxide CO₂: carbon forms double bonds with two oxygen atoms — O=C=O (linear molecule).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CO₂ — O=C=O two double bonds",
+            "note": "Lewis structure of carbon dioxide"
+          },
+          "why": "Carbon double bond example.",
+          "example": "Product of complete combustion of carbon compounds.",
+          "remember": "C forms 2 double bonds; linear shape.",
+          "common_confusion": "CO₂ is inorganic — exception to organic rule.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c09",
+          "name": "Electron dot structure of H₂O",
+          "simple_answer": "Water H₂O: oxygen shares one electron pair with each of two H atoms — two O–H single bonds; two lone pairs on O.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H₂O — 2 O–H bonds + 2 lone pairs",
+            "note": "Lewis structure of water"
+          },
+          "why": "Common covalent compound.",
+          "example": "Product of complete combustion of hydrogen-containing fuels.",
+          "remember": "O has 2 bonds + 2 lone pairs.",
+          "common_confusion": "Bent shape due to lone pairs — beyond dot structure scope.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c10",
+          "name": "Exam — drawing Lewis structures",
+          "simple_answer": "Count valence e⁻ → place least electronegative atom central → share pairs to complete octets → show lone pairs.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: Lewis structure steps"
+          },
+          "why": "Structured answer template.",
+          "example": "Draw CH₄, H₂O, CO₂ for practice.",
+          "remember": "Share electrons until octet (duplet for H).",
+          "common_confusion": "Do not forget lone pairs on O and N.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Allotropes of Carbon — Diamond, Graphite, Fullerene",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d3_c01",
+          "name": "What are allotropes?",
+          "simple_answer": "Allotropes are different physical forms of the same element — same atoms, different arrangement and bonding.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Allotropes — same element, different form"
+          },
+          "why": "Core Day 3 concept.",
+          "example": "Diamond and graphite are both pure carbon.",
+          "remember": "Same element, different structure = allotropes.",
+          "common_confusion": "Allotropes differ in physical properties.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "allotrope"
+          ]
+        },
+        {
+          "id": "u4_d3_c02",
+          "name": "Diamond — structure and properties",
+          "simple_answer": "Diamond: each carbon bonded to four others in a rigid 3D network — hardest natural substance, poor conductor, transparent.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Diamond: tetrahedral C–C network",
+            "note": "Hard, insulator, high melting point"
+          },
+          "why": "First carbon allotrope.",
+          "example": "Used in cutting tools and jewellery.",
+          "remember": "4 bonds per C; no free electrons.",
+          "common_confusion": "Hardest natural material.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "diamond"
+          ]
+        },
+        {
+          "id": "u4_d3_c03",
+          "name": "Graphite — structure and properties",
+          "simple_answer": "Graphite: carbon atoms in hexagonal layers held by weak forces — soft, slippery, good conductor (free electrons in layers).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Graphite: layered hexagonal sheets",
+            "note": "Soft, conductor, lubricant"
+          },
+          "why": "Second carbon allotrope.",
+          "example": "Pencil lead and dry cell electrodes.",
+          "remember": "3 bonds per C; 1 free e⁻ per atom.",
+          "common_confusion": "Layers slide — soft and lubricating.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "graphite"
+          ]
+        },
+        {
+          "id": "u4_d3_c04",
+          "name": "Diamond vs graphite comparison",
+          "simple_answer": "Diamond: hard, insulator, 4 bonds per C. Graphite: soft, conductor, 3 bonds per C + free electron.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Diamond: hard, insulator | Graphite: soft, conductor",
+            "note": "Same C — different properties"
+          },
+          "why": "Key NCERT exam comparison.",
+          "example": "Same element — opposite electrical behaviour.",
+          "remember": "Structure determines properties.",
+          "common_confusion": "Both are pure carbon — different bonding arrangement.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c05",
+          "name": "Uses of diamond",
+          "simple_answer": "Diamond used in jewellery (hardness, lustre) and industrial cutting/drilling due to extreme hardness.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Diamond — jewellery and cutting tools"
+          },
+          "why": "Application card.",
+          "example": "Diamond-tipped glass cutters.",
+          "remember": "Hardness → cutting and decoration.",
+          "common_confusion": "Synthetic diamonds made for industry.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c06",
+          "name": "Uses of graphite",
+          "simple_answer": "Graphite used in pencil leads, lubricants, electrodes (dry cells), and as moderator in nuclear reactors.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Graphite — pencils, electrodes, lubricant"
+          },
+          "why": "Application card.",
+          "example": "Pencil 'lead' is actually graphite.",
+          "remember": "Conductivity + softness → electrodes and pencils.",
+          "common_confusion": "Graphite is non-metal that conducts — Ch 3 link.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c07",
+          "name": "Fullerene C₆₀",
+          "simple_answer": "Fullerene is an allotrope of carbon — cage-like molecule of 60 carbon atoms arranged like a football (soccer ball).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₆₀ — buckminsterfullerene",
+            "note": "Third allotrope mentioned in NCERT"
+          },
+          "why": "Modern allotrope in syllabus.",
+          "example": "Discovered in 1985 — Nobel Prize 1996.",
+          "remember": "60 C atoms in closed cage.",
+          "common_confusion": "Also called buckminsterfullerene.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "fullerene"
+          ]
+        },
+        {
+          "id": "u4_d3_c08",
+          "name": "Why allotropes have different properties",
+          "simple_answer": "Different arrangement of atoms and different bonding (sp³ in diamond vs sp² in graphite) cause different physical properties.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Structure → different properties"
+          },
+          "why": "Conceptual understanding.",
+          "example": "Diamond's 3D network vs graphite's layers.",
+          "remember": "Bonding pattern determines hardness and conductivity.",
+          "common_confusion": "Chemical formula same (C) — structure differs.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c09",
+          "name": "Allotropes vs compounds",
+          "simple_answer": "Allotropes are forms of one element; compounds contain two or more different elements chemically combined.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Allotrope: one element | Compound: two+ elements",
+            "note": "Do not confuse"
+          },
+          "why": "Classification distinction.",
+          "example": "Diamond (allotrope) vs CO₂ (compound).",
+          "remember": "Allotropes = same element only.",
+          "common_confusion": "O₂ and O₃ are allotropes of oxygen.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c10",
+          "name": "Exam — allotropes of carbon",
+          "simple_answer": "Define allotrope → diamond (hard, insulator, 4 bonds) → graphite (soft, conductor, layers) → C₆₀ fullerene → compare uses.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: carbon allotropes template"
+          },
+          "why": "Structured answer.",
+          "example": "Pencil lead = graphite; diamond ring = diamond.",
+          "remember": "Three allotropes + properties + uses.",
+          "common_confusion": "Graphite conducts — important exception among non-metals.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Saturated and Unsaturated Hydrocarbons",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d4_c01",
+          "name": "What are hydrocarbons?",
+          "simple_answer": "Hydrocarbons are compounds containing only carbon and hydrogen — the simplest organic compounds.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Hydrocarbon = C + H only",
+            "note": "Simplest organic compounds"
+          },
+          "why": "Core Day 4 concept.",
+          "example": "Methane CH₄ and ethene C₂H₄ are hydrocarbons.",
+          "remember": "Only C and H atoms.",
+          "common_confusion": "All fossil fuels are mainly hydrocarbons.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "hydrocarbon"
+          ]
+        },
+        {
+          "id": "u4_d4_c02",
+          "name": "Saturated hydrocarbons — alkanes",
+          "simple_answer": "Saturated hydrocarbons have only single C–C and C–H bonds — all carbons bonded to maximum H; called alkanes.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Saturated = all single bonds",
+            "note": "Alkanes — saturated hydrocarbons"
+          },
+          "why": "First hydrocarbon family.",
+          "example": "Methane, ethane, propane are saturated.",
+          "remember": "Single bonds only = saturated.",
+          "common_confusion": "Saturated compounds are less reactive.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "alkane",
+            "saturated"
+          ]
+        },
+        {
+          "id": "u4_d4_c03",
+          "name": "General formula of alkanes",
+          "simple_answer": "Alkanes follow CₙH₂ₙ₊₂ — for n carbons, hydrogens = 2n + 2.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CₙH₂ₙ₊₂",
+            "note": "General formula — alkanes"
+          },
+          "why": "NCERT formula to memorise.",
+          "example": "Methane C₁H₄, ethane C₂H₆, propane C₃H₈.",
+          "remember": "n carbons → 2n+2 hydrogens.",
+          "common_confusion": "C₁ = methane CH₄; C₂ = ethane C₂H₆.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c04",
+          "name": "Unsaturated hydrocarbons — introduction",
+          "simple_answer": "Unsaturated hydrocarbons contain double or triple C–C bonds — not all carbons have maximum hydrogen.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Unsaturated = double or triple C–C bond",
+            "note": "Alkenes and alkynes"
+          },
+          "why": "Contrast with saturated.",
+          "example": "Ethene has C=C double bond.",
+          "remember": "Double/triple bond = unsaturated.",
+          "common_confusion": "Unsaturated compounds are more reactive.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "unsaturated"
+          ]
+        },
+        {
+          "id": "u4_d4_c05",
+          "name": "Alkenes — general formula CₙH₂ₙ",
+          "simple_answer": "Alkenes are unsaturated hydrocarbons with one C=C double bond — general formula CₙH₂ₙ.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CₙH₂ₙ",
+            "note": "Alkenes — one double bond"
+          },
+          "why": "Second hydrocarbon family.",
+          "example": "Ethene C₂H₄ (ethylene) and propene C₃H₆.",
+          "remember": "One double bond; 2n hydrogens.",
+          "common_confusion": "Ethene is simplest alkene.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "alkene"
+          ]
+        },
+        {
+          "id": "u4_d4_c06",
+          "name": "Alkynes — general formula CₙH₂ₙ₋₂",
+          "simple_answer": "Alkynes are unsaturated hydrocarbons with one C≡C triple bond — general formula CₙH₂ₙ₋₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CₙH₂ₙ₋₂",
+            "note": "Alkynes — one triple bond"
+          },
+          "why": "Third hydrocarbon family.",
+          "example": "Ethyne C₂H₂ (acetylene) used in welding.",
+          "remember": "One triple bond; 2n−2 hydrogens.",
+          "common_confusion": "Ethyne is simplest alkyne.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "alkyne"
+          ]
+        },
+        {
+          "id": "u4_d4_c07",
+          "name": "Examples — methane to ethyne",
+          "simple_answer": "Methane CH₄ (alkane), ethene C₂H₄ (alkene), ethyne C₂H₂ (alkyne) — three families with two carbons.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₄ | C₂H₄ | C₂H₂",
+            "note": "Alkane, alkene, alkyne examples"
+          },
+          "why": "Side-by-side comparison.",
+          "example": "Natural gas, fruit ripening, welding torch.",
+          "remember": "Same C count — different saturation.",
+          "common_confusion": "Suffix: -ane, -ene, -yne.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c08",
+          "name": "Single, double, and triple bonds",
+          "simple_answer": "Single bond (C–C): one shared pair. Double (C=C): two shared pairs. Triple (C≡C): three shared pairs.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Single: 1 pair | Double: 2 pairs | Triple: 3 pairs",
+            "note": "Bond types in hydrocarbons"
+          },
+          "why": "Bond type foundation.",
+          "example": "Ethane single; ethene double; ethyne triple.",
+          "remember": "More shared pairs = shorter, stronger bond.",
+          "common_confusion": "Double/triple bonds cause unsaturation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c09",
+          "name": "Compare saturated vs unsaturated",
+          "simple_answer": "Saturated: single bonds, CₙH₂ₙ₊₂, less reactive. Unsaturated: double/triple bonds, more reactive, decolourise bromine water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Saturated: CₙH₂ₙ₊₂ | Unsaturated: CₙH₂ₙ or CₙH₂ₙ₋₂",
+            "note": "Key comparison"
+          },
+          "why": "Exam comparison table.",
+          "example": "Hexane saturated; hexene unsaturated.",
+          "remember": "Single bonds vs double/triple.",
+          "common_confusion": "Bromine water test distinguishes unsaturated.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c10",
+          "name": "Exam — hydrocarbon classification",
+          "simple_answer": "Define hydrocarbon → saturated (alkanes CₙH₂ₙ₊₂) → unsaturated (alkenes CₙH₂ₙ, alkynes CₙH₂ₙ₋₂) → examples.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: hydrocarbon types template"
+          },
+          "why": "Structured answer.",
+          "example": "Give CH₄, C₂H₄, C₂H₂ as examples.",
+          "remember": "Three families + general formulas + examples.",
+          "common_confusion": "Do not confuse alkene and alkyne formulas.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Chains, Branches and Rings in Carbon Compounds",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d5_c01",
+          "name": "Straight chain carbon compounds",
+          "simple_answer": "Straight chain compounds have carbon atoms linked in a continuous unbranched row — e.g. n-butane.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Straight chain — unbranched C chain"
+          },
+          "why": "Core Day 5 concept.",
+          "example": "Pentane CH₃–CH₂–CH₂–CH₂–CH₃ is straight chain.",
+          "remember": "Carbons in one continuous line.",
+          "common_confusion": "n- prefix means normal (straight) chain.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c02",
+          "name": "Branched chain carbon compounds",
+          "simple_answer": "Branched chains have a main chain with side groups (branches) attached — same formula, different structure.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Branched chain — side groups"
+          },
+          "why": "Second structural type.",
+          "example": "Isobutane has a Y-shaped branch.",
+          "remember": "Side chain branches off main chain.",
+          "common_confusion": "Branching changes physical properties slightly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c03",
+          "name": "Ring (cyclic) carbon compounds",
+          "simple_answer": "Cyclic compounds have carbon atoms joined in a closed ring — e.g. cyclohexane C₆H₁₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Cyclohexane C₆H₁₂ — 6-membered ring",
+            "note": "Ring structure"
+          },
+          "why": "Third structural type.",
+          "example": "Benzene ring (introductory mention in NCERT).",
+          "remember": "Carbons form closed loop.",
+          "common_confusion": "Ring compounds have different properties from chains.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c04",
+          "name": "Structural isomers — introduction",
+          "simple_answer": "Compounds with same molecular formula but different structural arrangement are structural isomers.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Same formula, different structure",
+            "note": "Structural isomerism"
+          },
+          "why": "NCERT isomerism concept.",
+          "example": "Butane and isobutane both C₄H₁₀.",
+          "remember": "Same atoms, different connectivity.",
+          "common_confusion": "Isomerism adds to carbon's compound count.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "isomer"
+          ]
+        },
+        {
+          "id": "u4_d5_c05",
+          "name": "Butane vs isobutane",
+          "simple_answer": "n-Butane: straight chain C₄H₁₀. Isobutane: branched C₄H₁₀ — same formula, different boiling points.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₄H₁₀ — butane and isobutane",
+            "note": "Classic isomer pair"
+          },
+          "why": "NCERT memorable example.",
+          "example": "Lighter fluid may contain isobutane.",
+          "remember": "Both C₄H₁₀; structure differs.",
+          "common_confusion": "Iso- prefix indicates branched isomer.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c06",
+          "name": "Pentane isomers",
+          "simple_answer": "Pentane C₅H₁₂ has three structural isomers: n-pentane, isopentane, and neopentane.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₅H₁₂ — 3 isomers",
+            "note": "Pentane isomer count"
+          },
+          "why": "Extension of isomer concept.",
+          "example": "More carbons → more possible isomers.",
+          "remember": "Three ways to arrange 5 carbons.",
+          "common_confusion": "Isomer count grows rapidly with carbon number.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c07",
+          "name": "Cyclohexane — ring example",
+          "simple_answer": "Cyclohexane C₆H₁₂ is a saturated ring of six carbon atoms — each C bonded to two C and two H.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₆H₁₂ — hexagonal ring",
+            "note": "Cyclic saturated hydrocarbon"
+          },
+          "why": "Ring structure example.",
+          "example": "Six carbons in a ring — not straight chain.",
+          "remember": "Ring = cyclic saturated hydrocarbon.",
+          "common_confusion": "Cyclo- prefix means ring.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c08",
+          "name": "Why carbon forms long chains",
+          "simple_answer": "Catenation — carbon atoms link to each other strongly and repeatedly, forming chains of any length.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Catenation — C–C chain building"
+          },
+          "why": "Links to Day 14.",
+          "example": "Paraffin wax has very long carbon chains.",
+          "remember": "C bonds to C repeatedly = chains.",
+          "common_confusion": "Carbon–carbon bonds are strong and stable.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "catenation"
+          ]
+        },
+        {
+          "id": "u4_d5_c09",
+          "name": "Chains, branches, and rings together",
+          "simple_answer": "Carbon compounds can combine straight chains, branches, and rings — adding enormous structural diversity.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Chains + branches + rings"
+          },
+          "why": "Synthesis of Day 5.",
+          "example": "Complex molecules like cholesterol have rings and branches.",
+          "remember": "Three structural types multiply possibilities.",
+          "common_confusion": "Functional groups attach to any of these skeletons.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c10",
+          "name": "Exam — structural formulas",
+          "simple_answer": "Draw straight chain → branched isomer → state same molecular formula → cyclohexane ring example.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: chain and isomer template"
+          },
+          "why": "Structured answer.",
+          "example": "Butane vs isobutane C₄H₁₀ comparison.",
+          "remember": "Structure diagram + formula + isomer name.",
+          "common_confusion": "Same formula does not mean same compound.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Homologous Series and Functional Groups",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d6_c01",
+          "name": "Homologous series definition",
+          "simple_answer": "A homologous series is a family of compounds with same functional group and similar chemical properties; successive members differ by CH₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Each member differs by –CH₂–",
+            "note": "Homologous series"
+          },
+          "why": "Core Day 6 concept.",
+          "example": "Alkane series: CH₄, C₂H₆, C₃H₈, C₄H₁₀.",
+          "remember": "Same group; differ by CH₂ unit.",
+          "common_confusion": "Members show gradual physical property change.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "homologous series"
+          ]
+        },
+        {
+          "id": "u4_d6_c02",
+          "name": "Successive members differ by CH₂",
+          "simple_answer": "Each next member in a homologous series has one more CH₂ group — molecular mass increases by 14 u.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Difference = CH₂ (14 u)",
+            "note": "Between consecutive members"
+          },
+          "why": "Numerical pattern in series.",
+          "example": "Ethane C₂H₆ to propane C₃H₈ adds CH₂.",
+          "remember": "Add CH₂ → next homologue.",
+          "common_confusion": "14 u mass difference between neighbours.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c03",
+          "name": "Similar chemical properties in a series",
+          "simple_answer": "All members of a homologous series react similarly because they have the same functional group.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Same functional group → same reactions"
+          },
+          "why": "Chemical property pattern.",
+          "example": "All alkanes burn; all alcohols react with Na.",
+          "remember": "Same functional group = same chemistry.",
+          "common_confusion": "Physical properties change gradually.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c04",
+          "name": "Gradual change in physical properties",
+          "simple_answer": "Boiling point and melting point increase gradually down a homologous series as molecular size increases.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Boiling point increases down series"
+          },
+          "why": "Physical property trend.",
+          "example": "Methane gas; pentane liquid at room temp.",
+          "remember": "Larger molecule → higher boiling point.",
+          "common_confusion": "First four alkanes: gas → liquid trend.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c05",
+          "name": "Alcohol functional group — OH",
+          "simple_answer": "Alcohols contain the hydroxyl functional group –OH attached to a carbon atom — e.g. ethanol C₂H₅OH.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "–OH (hydroxyl group)",
+            "note": "Alcohol functional group"
+          },
+          "why": "First functional group.",
+          "example": "Ethanol in drinks; methanol in industrial use.",
+          "remember": "–OH on carbon = alcohol.",
+          "common_confusion": "Do not confuse with hydroxide ion OH⁻.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "alcohol"
+          ]
+        },
+        {
+          "id": "u4_d6_c06",
+          "name": "Aldehyde functional group — CHO",
+          "simple_answer": "Aldehydes contain the –CHO (formyl) group — carbonyl at end of chain — e.g. methanal HCHO.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "–CHO (aldehyde group)",
+            "note": "Terminal carbonyl"
+          },
+          "why": "Second functional group.",
+          "example": "Formaldehyde HCHO preserves biological specimens.",
+          "remember": "–CHO at chain end = aldehyde.",
+          "common_confusion": "Aldehyde vs ketone — position of C=O matters.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "aldehyde"
+          ]
+        },
+        {
+          "id": "u4_d6_c07",
+          "name": "Ketone functional group — C=O",
+          "simple_answer": "Ketones contain C=O (carbonyl) group between two carbon atoms — not at chain end — e.g. propanone.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C=O between two C atoms",
+            "note": "Ketone — internal carbonyl"
+          },
+          "why": "Third functional group.",
+          "example": "Acetone (propanone) is a common solvent.",
+          "remember": "C=O in middle of chain = ketone.",
+          "common_confusion": "Aldehyde: C=O at end; ketone: C=O in middle.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ketone"
+          ]
+        },
+        {
+          "id": "u4_d6_c08",
+          "name": "Carboxylic acid functional group — COOH",
+          "simple_answer": "Carboxylic acids contain –COOH (carboxyl) group — e.g. ethanoic acid CH₃COOH (acetic acid).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "–COOH (carboxyl group)",
+            "note": "Carboxylic acid"
+          },
+          "why": "Fourth functional group.",
+          "example": "Vinegar contains ethanoic acid.",
+          "remember": "–COOH = carboxylic acid.",
+          "common_confusion": "Acids turn blue litmus red — Ch 2 link.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "carboxylic acid"
+          ]
+        },
+        {
+          "id": "u4_d6_c09",
+          "name": "Haloalkane functional group — X",
+          "simple_answer": "Haloalkanes (alkyl halides) have a halogen (F, Cl, Br, I) attached to carbon — e.g. CH₃Cl chloromethane.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "–Cl, –Br, –I on carbon",
+            "note": "Haloalkane (halo group)"
+          },
+          "why": "Fifth functional group.",
+          "example": "CH₃Cl formed in methane + Cl₂ substitution.",
+          "remember": "Halogen replaces H on carbon.",
+          "common_confusion": "Also called alkyl halides.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "haloalkane"
+          ]
+        },
+        {
+          "id": "u4_d6_c10",
+          "name": "Exam — functional groups table",
+          "simple_answer": "List –OH (alcohol), –CHO (aldehyde), C=O (ketone), –COOH (carboxylic acid), –X (halo) with one example each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: functional groups table"
+          },
+          "why": "Structured answer.",
+          "example": "Ethanol, ethanoic acid, CH₃Cl as examples.",
+          "remember": "Group formula + name + example.",
+          "common_confusion": "Functional group determines chemical properties.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Nomenclature of Carbon Compounds",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d7_c01",
+          "name": "IUPAC naming basics",
+          "simple_answer": "IUPAC system gives systematic names based on number of carbons (root) and functional group (suffix/prefix).",
+          "visual": {
+            "type": "placeholder",
+            "label": "IUPAC — systematic naming"
+          },
+          "why": "Core Day 7 concept.",
+          "example": "Ethanol = eth + an + ol (2C + alkane + alcohol).",
+          "remember": "Root + suffix = IUPAC name.",
+          "common_confusion": "Common names also used in NCERT.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "IUPAC"
+          ]
+        },
+        {
+          "id": "u4_d7_c02",
+          "name": "Root word from carbon count",
+          "simple_answer": "Root tells carbon count: meth- (1), eth- (2), prop- (3), but- (4), pent- (5), hex- (6).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "meth=1, eth=2, prop=3, but=4, pent=5, hex=6",
+            "note": "Carbon root words"
+          },
+          "why": "Foundation of naming.",
+          "example": "Eth- in ethanol means 2 carbons.",
+          "remember": "Root = longest carbon chain count.",
+          "common_confusion": "Memorise roots 1–6 for Class 10.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c03",
+          "name": "Suffix -ane for alkanes",
+          "simple_answer": "Saturated hydrocarbons use suffix -ane: methane, ethane, propane, butane.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Suffix: -ane (saturated)",
+            "note": "Alkane naming"
+          },
+          "why": "Alkane suffix rule.",
+          "example": "Propane C₃H₈ — prop + ane.",
+          "remember": "-ane = all single bonds.",
+          "common_confusion": "n-butane vs isobutane — same suffix.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c04",
+          "name": "Suffix -ene for alkenes",
+          "simple_answer": "Alkenes use suffix -ene for C=C double bond: ethene, propene, butene.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Suffix: -ene (one double bond)",
+            "note": "Alkene naming"
+          },
+          "why": "Alkene suffix rule.",
+          "example": "Ethene C₂H₄ — eth + ene.",
+          "remember": "-ene = one double bond.",
+          "common_confusion": "Ethene also called ethylene (common name).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c05",
+          "name": "Suffix -yne for alkynes",
+          "simple_answer": "Alkynes use suffix -yne for C≡C triple bond: ethyne, propyne.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Suffix: -yne (one triple bond)",
+            "note": "Alkyne naming"
+          },
+          "why": "Alkyne suffix rule.",
+          "example": "Ethyne C₂H₂ — eth + yne.",
+          "remember": "-yne = one triple bond.",
+          "common_confusion": "Ethyne also called acetylene (common name).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c06",
+          "name": "Naming with functional groups",
+          "simple_answer": "Functional group suffix replaces -ane: -ol (alcohol), -oic acid (carboxylic), -al (aldehyde), -one (ketone).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "-ol | -oic acid | -al | -one",
+            "note": "Functional group suffixes"
+          },
+          "why": "Combined naming rule.",
+          "example": "Ethanol = eth + an + ol; ethanoic acid = eth + an + oic acid.",
+          "remember": "Suffix shows functional group.",
+          "common_confusion": "Longest chain including functional group carbon.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c07",
+          "name": "Examples — methanol, ethanol, ethanoic acid",
+          "simple_answer": "Methanol CH₃OH (1C alcohol); ethanol C₂H₅OH (2C alcohol); ethanoic acid CH₃COOH (2C acid).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₃OH | C₂H₅OH | CH₃COOH",
+            "note": "Named examples"
+          },
+          "why": "NCERT key named compounds.",
+          "example": "Methanol toxic; ethanol in beverages; vinegar = ethanoic acid.",
+          "remember": "Count carbons in longest chain.",
+          "common_confusion": "Ethanoic acid also called acetic acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c08",
+          "name": "Common names vs IUPAC names",
+          "simple_answer": "NCERT uses both: ethene/ethylene, ethyne/acetylene, ethanoic acid/acetic acid.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "IUPAC and common names both valid",
+            "note": "Know both in NCERT"
+          },
+          "why": "Exam naming flexibility.",
+          "example": "Write either name unless IUPAC specified.",
+          "remember": "Learn pairs of common and IUPAC names.",
+          "common_confusion": "Exam may use either — know both.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c09",
+          "name": "Position of functional group",
+          "simple_answer": "When functional group can be at different positions, number the carbon chain to give lowest number to the group.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Number chain — lowest locant"
+          },
+          "why": "Advanced naming rule.",
+          "example": "Propan-1-ol vs propan-2-ol — position matters.",
+          "remember": "Number from end nearest functional group.",
+          "common_confusion": "Class 10 focuses on simple names.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c10",
+          "name": "Exam — nomenclature practice",
+          "simple_answer": "Identify root (C count) → identify functional group → add suffix → write full name with formula.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: IUPAC naming steps"
+          },
+          "why": "Structured answer template.",
+          "example": "Name C₃H₇OH as propanol.",
+          "remember": "Root + suffix + functional group position.",
+          "common_confusion": "Check saturation: -ane, -ene, or -yne first.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Chemical Properties — Combustion and Oxidation",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d8_c01",
+          "name": "Combustion of carbon compounds",
+          "simple_answer": "Combustion is reaction with oxygen releasing heat and light — carbon compounds burn to give CO₂ and H₂O on complete combustion.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Compound + O₂ → CO₂ + H₂O + heat",
+            "note": "Complete combustion"
+          },
+          "why": "Core Day 8 concept.",
+          "example": "Burning candle, petrol in engine.",
+          "remember": "Burn in O₂ → oxides + energy.",
+          "common_confusion": "Combustion is oxidation — adds oxygen.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "combustion"
+          ]
+        },
+        {
+          "id": "u4_d8_c02",
+          "name": "Complete combustion",
+          "simple_answer": "Complete combustion in sufficient O₂ gives CO₂ and H₂O — clean blue flame, no soot.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Complete: CO₂ + H₂O",
+            "note": "Sufficient oxygen"
+          },
+          "why": "Ideal combustion outcome.",
+          "example": "Bunsen burner with air hole open — blue flame.",
+          "remember": "Enough O₂ → CO₂ + H₂O only.",
+          "common_confusion": "Blue flame indicates complete combustion.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c03",
+          "name": "Incomplete combustion",
+          "simple_answer": "Incomplete combustion in limited O₂ gives carbon (soot), CO, and water — yellow smoky flame.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Incomplete: C (soot) + CO + H₂O",
+            "note": "Limited oxygen"
+          },
+          "why": "Second combustion outcome.",
+          "example": "Yellow candle flame has soot at top.",
+          "remember": "Limited O₂ → soot and CO.",
+          "common_confusion": "CO is poisonous — see card below.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c04",
+          "name": "Combustion of methane",
+          "simple_answer": "Methane burns completely: CH₄ + 2O₂ → CO₂ + 2H₂O + heat and light.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₄ + 2O₂ → CO₂ + 2H₂O",
+            "note": "Methane combustion"
+          },
+          "why": "Key balanced equation.",
+          "example": "Natural gas stove burns methane.",
+          "remember": "Balance C, H, O for full marks.",
+          "common_confusion": "Main component of LPG/natural gas.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c05",
+          "name": "Combustion of ethanol",
+          "simple_answer": "Ethanol burns with clean blue flame: C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O + heat.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O",
+            "note": "Ethanol combustion"
+          },
+          "why": "Alcohol combustion example.",
+          "example": "Spirit lamp burns ethanol.",
+          "remember": "Ethanol burns cleanly — used as fuel.",
+          "common_confusion": "Count O from –OH in ethanol.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c06",
+          "name": "Oxidation of alcohol to carboxylic acid",
+          "simple_answer": "Alcohols oxidise to carboxylic acids using oxidising agents like alkaline KMnO₄ or acidified K₂Cr₂O₇.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Alcohol →[oxidation]→ Carboxylic acid",
+            "note": "KMnO₄ or K₂Cr₂O₇"
+          },
+          "why": "Oxidation reaction in Ch 4.",
+          "example": "Ethanol oxidises to ethanoic acid.",
+          "remember": "Add O → alcohol becomes acid.",
+          "common_confusion": "Oxidising agents are coloured — purple KMnO₄ decolourises.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c07",
+          "name": "Oxidising agents — KMnO₄ and K₂Cr₂O₇",
+          "simple_answer": "Potassium permanganate (KMnO₄) and potassium dichromate (K₂Cr₂O₇) are common oxidising agents in NCERT.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "KMnO₄ | K₂Cr₂O₇ — oxidising agents",
+            "note": "Test for alcohol oxidation"
+          },
+          "why": "Reagents to know.",
+          "example": "Purple KMnO₄ decolourises when oxidising ethanol.",
+          "remember": "These add oxygen to alcohols.",
+          "common_confusion": "Also test for unsaturation in some contexts.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c08",
+          "name": "Dangers of carbon monoxide",
+          "simple_answer": "CO from incomplete combustion is colourless, odourless, poisonous — binds to haemoglobin blocking O₂ transport.",
+          "visual": {
+            "type": "placeholder",
+            "label": "CO — poisonous gas"
+          },
+          "why": "Safety awareness.",
+          "example": "Faulty gas heaters can produce CO.",
+          "remember": "Incomplete combustion → deadly CO.",
+          "common_confusion": "Ensure good ventilation when burning fuels.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c09",
+          "name": "Soot from incomplete combustion",
+          "simple_answer": "Soot is unburnt carbon particles from incomplete combustion — deposits on surfaces, causes air pollution.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Soot — unburnt carbon particles"
+          },
+          "why": "Pollution link.",
+          "example": "Black deposit on bottom of cooking vessels.",
+          "remember": "Yellow smoky flame → soot.",
+          "common_confusion": "Complete combustion prevents soot.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c10",
+          "name": "Exam — combustion equations",
+          "simple_answer": "Write complete combustion equation → balance → state products CO₂ + H₂O → contrast incomplete (soot, CO).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: combustion template"
+          },
+          "why": "Structured answer.",
+          "example": "CH₄ + 2O₂ → CO₂ + 2H₂O as model.",
+          "remember": "Balanced equation + complete vs incomplete.",
+          "common_confusion": "Always balance and state conditions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "Addition Reactions — Unsaturated Compounds",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d9_c01",
+          "name": "Addition reaction definition",
+          "simple_answer": "Addition reaction: atoms add across a double or triple bond — unsaturated compound becomes saturated.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Unsaturated + X–Y → saturated product",
+            "note": "Addition reaction"
+          },
+          "why": "Core Day 9 concept.",
+          "example": "Ethene + H₂ → ethane is addition.",
+          "remember": "Atoms add across C=C or C≡C.",
+          "common_confusion": "Product has more H attached to carbons.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "addition reaction"
+          ]
+        },
+        {
+          "id": "u4_d9_c02",
+          "name": "Unsaturated compounds undergo addition",
+          "simple_answer": "Compounds with C=C or C≡C bonds open the multiple bond to add atoms — saturated compounds do not.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Double/triple bond opens for addition"
+          },
+          "why": "Reactivity pattern.",
+          "example": "Ethene reacts; ethane does not (with H₂).",
+          "remember": "Multiple bond = site of addition.",
+          "common_confusion": "Saturation increases after addition.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c03",
+          "name": "Ethene + H₂ → ethane (hydrogenation)",
+          "simple_answer": "Ethene reacts with hydrogen in presence of Ni/Pt catalyst: C₂H₄ + H₂ → C₂H₆ (hydrogenation).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₂H₄ + H₂ → C₂H₆",
+            "note": "Hydrogenation — Ni/Pt catalyst"
+          },
+          "why": "Classic NCERT addition.",
+          "example": "Used to convert vegetable oils to fats.",
+          "remember": "Double bond removed; alkene → alkane.",
+          "common_confusion": "Ni or Pt catalyst needed for H₂ addition.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c04",
+          "name": "Ethene + Br₂ → dibromoethane",
+          "simple_answer": "Ethene adds bromine: C₂H₄ + Br₂ → C₂H₄Br₂ (1,2-dibromoethane) — bromine adds across double bond.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₂H₄ + Br₂ → C₂H₄Br₂",
+            "note": "Bromine addition to ethene"
+          },
+          "why": "Halogen addition example.",
+          "example": "Orange bromine decolourises when ethene added.",
+          "remember": "Br₂ adds across C=C.",
+          "common_confusion": "Product is saturated — no double bond left.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c05",
+          "name": "Bromine water test for unsaturation",
+          "simple_answer": "Bromine water (orange) decolourises with unsaturated compounds — test for C=C double bond.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Br₂ water + alkene → colourless",
+            "note": "Test for unsaturation"
+          },
+          "why": "Key NCERT test.",
+          "example": "Ethene decolourises bromine water; ethane does not.",
+          "remember": "Orange → colourless = unsaturated.",
+          "common_confusion": "Bromine water is Br₂ dissolved in water.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c06",
+          "name": "Why bromine water decolourises",
+          "simple_answer": "Bromine adds across the double bond in an addition reaction — orange Br₂ consumed, solution becomes colourless.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Br₂ consumed in addition"
+          },
+          "why": "Mechanism explanation.",
+          "example": "Shake ethene with bromine water — instant decolourisation.",
+          "remember": "Addition uses up coloured Br₂.",
+          "common_confusion": "No decolourisation with saturated alkanes.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c07",
+          "name": "Hydrogenation of vegetable oils",
+          "simple_answer": "Unsaturated vegetable oils hydrogenated to saturated fats using H₂ and Ni catalyst — margarine production.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Oil + H₂ →[Ni] Fat (saturated)",
+            "note": "Industrial hydrogenation"
+          },
+          "why": "Industrial application.",
+          "example": "Margarine from hydrogenated oils.",
+          "remember": "Addition of H₂ across C=C in oils.",
+          "common_confusion": "Saturated fats have higher melting points.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c08",
+          "name": "Why saturated compounds do not undergo addition",
+          "simple_answer": "Saturated compounds have only single bonds — no double/triple bond to open, so addition cannot occur.",
+          "visual": {
+            "type": "placeholder",
+            "label": "No multiple bond — no addition"
+          },
+          "why": "Contrast with unsaturated.",
+          "example": "Ethane does not decolourise bromine water.",
+          "remember": "Single bonds already saturated with H.",
+          "common_confusion": "Saturated compounds undergo substitution instead.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c09",
+          "name": "Addition vs substitution",
+          "simple_answer": "Addition: unsaturated + atoms across double bond. Substitution: saturated — one atom replaces another.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Addition: unsaturated | Substitution: saturated",
+            "note": "Two reaction types"
+          },
+          "why": "Key Ch 4 distinction.",
+          "example": "Ethene + Br₂ (addition); CH₄ + Cl₂ (substitution).",
+          "remember": "Unsaturation → addition; saturation → substitution.",
+          "common_confusion": "Do not mix up reaction types in exams.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c10",
+          "name": "Exam — addition reactions",
+          "simple_answer": "Define addition → ethene + H₂ → ethane → ethene + Br₂ → bromine water test → hydrogenation of oils.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: addition reaction template"
+          },
+          "why": "Structured answer.",
+          "example": "Write C₂H₄ + Br₂ → C₂H₄Br₂ with decolourisation.",
+          "remember": "Definition + two equations + bromine test.",
+          "common_confusion": "State catalyst for hydrogenation (Ni/Pt).",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "Substitution Reactions — Saturated Compounds",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d10_c01",
+          "name": "Substitution reaction definition",
+          "simple_answer": "Substitution: one atom or group replaces another in a saturated compound — no change in saturation.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Saturated + reagent → substituted product",
+            "note": "Substitution reaction"
+          },
+          "why": "Core Day 10 concept.",
+          "example": "CH₄ + Cl₂ → CH₃Cl + HCl.",
+          "remember": "One atom replaces another.",
+          "common_confusion": "Saturation level unchanged.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "substitution reaction"
+          ]
+        },
+        {
+          "id": "u4_d10_c02",
+          "name": "Saturated compounds undergo substitution",
+          "simple_answer": "Alkanes and other saturated compounds react by substitution — H replaced by halogen or other group.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Saturated → substitution"
+          },
+          "why": "Reactivity pattern.",
+          "example": "Methane chlorination is classic example.",
+          "remember": "Replace H on saturated C.",
+          "common_confusion": "Multiple substitutions can occur.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c03",
+          "name": "CH₄ + Cl₂ → CH₃Cl + HCl (UV light)",
+          "simple_answer": "Methane reacts with chlorine in sunlight/UV: CH₄ + Cl₂ → CH₃Cl + HCl — H replaced by Cl.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₄ + Cl₂ → CH₃Cl + HCl",
+            "note": "Sunlight or UV required"
+          },
+          "why": "Classic NCERT substitution.",
+          "example": "Chloromethane formed in photochemical reaction.",
+          "remember": "Cl replaces one H; HCl by-product.",
+          "common_confusion": "Sunlight/UV provides activation energy.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c04",
+          "name": "Role of sunlight or UV light",
+          "simple_answer": "Chlorination of methane needs sunlight or UV — light energy breaks Cl–Cl bond to start free radical chain reaction.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sunlight/UV activates Cl₂"
+          },
+          "why": "Condition for reaction.",
+          "example": "No reaction in dark; rapid in sunlight.",
+          "remember": "Light initiates substitution.",
+          "common_confusion": "Without light, methane and Cl₂ do not react at room temp.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c05",
+          "name": "Multiple substitution possible",
+          "simple_answer": "Further substitution gives CH₂Cl₂, CHCl₃, CCl₄ if excess Cl₂ and light — H replaced one by one.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₄ → CH₃Cl → CH₂Cl₂ → CHCl₃ → CCl₄",
+            "note": "Progressive chlorination"
+          },
+          "why": "Extended substitution series.",
+          "example": "Carbon tetrachloride CCl₄ is final chlorination product.",
+          "remember": "Each step replaces one more H.",
+          "common_confusion": "Products depend on Cl₂ amount and conditions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c06",
+          "name": "Products of methane chlorination",
+          "simple_answer": "Chloromethane CH₃Cl (methyl chloride), dichloromethane CH₂Cl₂, chloroform CHCl₃, carbon tetrachloride CCl₄.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₃Cl | CH₂Cl₂ | CHCl₃ | CCl₄",
+            "note": "Chlorination products"
+          },
+          "why": "Named products list.",
+          "example": "Chloroform CHCl₃ was anaesthetic — now restricted.",
+          "remember": "Know first product CH₃Cl for exam.",
+          "common_confusion": "Common names: chloroform, carbon tetrachloride.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c07",
+          "name": "Why alkanes undergo substitution",
+          "simple_answer": "Alkanes have strong C–H and C–C single bonds — they do not add across bonds; instead H is replaced.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Alkanes — replace H, not add"
+          },
+          "why": "Mechanism overview.",
+          "example": "Methane saturated — substitution only.",
+          "remember": "No double bond to add across.",
+          "common_confusion": "Substitution preserves saturation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c08",
+          "name": "Chlorination vs bromination",
+          "simple_answer": "Similar substitution with Br₂: CH₄ + Br₂ → CH₃Br + HBr — also needs light; bromination similar to chlorination.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₄ + Br₂ → CH₃Br + HBr",
+            "note": "Bromination — also needs light"
+          },
+          "why": "Parallel halogen substitution.",
+          "example": "Bromomethane CH₃Br formed similarly.",
+          "remember": "Same pattern with Br₂.",
+          "common_confusion": "Bromination slower than chlorination.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c09",
+          "name": "Substitution vs addition — summary",
+          "simple_answer": "Substitution: saturated, one atom replaced (CH₄ + Cl₂). Addition: unsaturated, atoms add across double bond (C₂H₄ + Br₂).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Substitution: saturated | Addition: unsaturated",
+            "note": "Ch 4 reaction summary"
+          },
+          "why": "Compare two reaction types.",
+          "example": "Know which compound undergoes which.",
+          "remember": "Saturation determines reaction type.",
+          "common_confusion": "Most common exam mistake — mixing types.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c10",
+          "name": "Exam — substitution reactions",
+          "simple_answer": "Define substitution → CH₄ + Cl₂ → CH₃Cl + HCl (sunlight) → multiple products → contrast with addition.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: substitution template"
+          },
+          "why": "Structured answer.",
+          "example": "Write balanced equation with light condition.",
+          "remember": "Definition + equation + condition + contrast.",
+          "common_confusion": "Always mention sunlight/UV for halogenation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "Important Carbon Compounds — Ethanol and Ethanoic Acid",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d11_c01",
+          "name": "Ethanol — structure C₂H₅OH",
+          "simple_answer": "Ethanol (ethyl alcohol) has formula C₂H₅OH — two-carbon alcohol with –OH functional group.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₂H₅OH — ethyl alcohol",
+            "note": "2-carbon alcohol"
+          },
+          "why": "Core Day 11 compound.",
+          "example": "Present in alcoholic beverages (dilute).",
+          "remember": "C₂H₅–OH structure.",
+          "common_confusion": "Also written as CH₃CH₂OH.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ethanol"
+          ]
+        },
+        {
+          "id": "u4_d11_c02",
+          "name": "Uses of ethanol",
+          "simple_answer": "Ethanol used as solvent, in medicines (tinctures), as fuel, and in beverages — versatile alcohol.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ethanol — solvent, fuel, medicine"
+          },
+          "why": "Application card.",
+          "example": "Iodine tincture is ethanol + iodine.",
+          "remember": "Solvent + antiseptic + fuel.",
+          "common_confusion": "Industrial ethanol from fermentation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c03",
+          "name": "Denatured alcohol",
+          "simple_answer": "Ethanol mixed with poisonous substances (methanol, pyridine) to make denatured alcohol — unfit for drinking, avoids tax.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Denatured alcohol — poison added"
+          },
+          "why": "NCERT safety concept.",
+          "example": "Industrial ethanol sold as denatured spirit.",
+          "remember": "Poison added to prevent misuse.",
+          "common_confusion": "Denatured alcohol still flammable — handle carefully.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c04",
+          "name": "Ethanoic acid — structure CH₃COOH",
+          "simple_answer": "Ethanoic acid (acetic acid) has formula CH₃COOH — two-carbon carboxylic acid, weak acid.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₃COOH — acetic acid",
+            "note": "2-carbon carboxylic acid"
+          },
+          "why": "Second key compound.",
+          "example": "5–8% solution in vinegar.",
+          "remember": "CH₃–COOH; –COOH is carboxyl group.",
+          "common_confusion": "Also called acetic acid (common name).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ethanoic acid"
+          ]
+        },
+        {
+          "id": "u4_d11_c05",
+          "name": "Acetic acid in vinegar",
+          "simple_answer": "Vinegar is 5–8% ethanoic acid in water — sour taste and smell characteristic of carboxylic acids.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Vinegar — dilute ethanoic acid"
+          },
+          "why": "Everyday connection.",
+          "example": "Salad dressing and pickling use vinegar.",
+          "remember": "Sour taste = carboxylic acid.",
+          "common_confusion": "Glacial acetic acid is nearly pure — corrosive.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c06",
+          "name": "Esterification — overview",
+          "simple_answer": "Esterification: carboxylic acid reacts with alcohol in presence of conc. H₂SO₄ to form ester + water — sweet smell.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid + Alcohol → Ester + H₂O",
+            "note": "Esterification reaction"
+          },
+          "why": "Key reaction linking both compounds.",
+          "example": "Ethanoic acid + ethanol → ethyl ethanoate.",
+          "remember": "Acid + alcohol → ester (sweet smell).",
+          "common_confusion": "Conc. H₂SO₄ is catalyst.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "esterification"
+          ]
+        },
+        {
+          "id": "u4_d11_c07",
+          "name": "Sweet smell of esters",
+          "simple_answer": "Esters have pleasant fruity smell — used in perfumes and flavourings; formed in esterification.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Esters — fruity sweet smell"
+          },
+          "why": "Sensory identification.",
+          "example": "Banana and apple flavours often esters.",
+          "remember": "Sweet smell confirms ester formation.",
+          "common_confusion": "Ester name: alkyl alkanoate.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c08",
+          "name": "Sources of ethanol",
+          "simple_answer": "Ethanol produced by fermentation of sugars by yeast (anaerobic) and by hydration of ethene industrially.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Glucose →[yeast] Ethanol + CO₂",
+            "note": "Fermentation source"
+          },
+          "why": "Production methods.",
+          "example": "Beer and wine production uses fermentation.",
+          "remember": "Fermentation: sugar → ethanol + CO₂.",
+          "common_confusion": "Industrial route: ethene + H₂O → ethanol.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c09",
+          "name": "Sources of ethanoic acid",
+          "simple_answer": "Ethanoic acid obtained by oxidation of ethanol or from bacterial fermentation of cider/vinegar.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Ethanol →[oxidation] Ethanoic acid",
+            "note": "Oxidation of ethanol"
+          },
+          "why": "Production link.",
+          "example": "Vinegar forms when wine exposed to air.",
+          "remember": "Oxidise ethanol → ethanoic acid.",
+          "common_confusion": "Bacteria Acetobacter oxidises ethanol in vinegar production.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c10",
+          "name": "Exam — ethanol and ethanoic acid",
+          "simple_answer": "Give formulas C₂H₅OH and CH₃COOH → uses → denatured alcohol → esterification overview → vinegar.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: key carbon compounds template"
+          },
+          "why": "Structured answer.",
+          "example": "Both compounds with structure and one use each.",
+          "remember": "Formula + use + esterification link.",
+          "common_confusion": "Know common and IUPAC names.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Properties of Ethanol and Ethanoic Acid",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d12_c01",
+          "name": "Physical properties of ethanol",
+          "simple_answer": "Ethanol is colourless liquid, miscible with water, volatile, burns with blue flame — good solvent.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ethanol — liquid, soluble, volatile"
+          },
+          "why": "Day 12 properties.",
+          "example": "Medical spirit is ethanol + water.",
+          "remember": "Liquid alcohol at room temperature.",
+          "common_confusion": "Low boiling point — evaporates easily.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c02",
+          "name": "Ethanol reacts with sodium",
+          "simple_answer": "Sodium reacts with ethanol to give sodium ethoxide and hydrogen: 2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂",
+            "note": "Ethanol + sodium — pop test H₂"
+          },
+          "why": "Reaction with reactive metal.",
+          "example": "Sodium fizzes in ethanol — H₂ evolved.",
+          "remember": "–OH H is slightly acidic — Na displaces H.",
+          "common_confusion": "Less vigorous than Na + water.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c03",
+          "name": "Dehydration of ethanol",
+          "simple_answer": "Ethanol dehydrates to ethene on heating with conc. H₂SO₄ at 443 K: C₂H₅OH → C₂H₄ + H₂O.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₂H₅OH →[443K, conc. H₂SO₄] C₂H₄ + H₂O",
+            "note": "Dehydration — removes water"
+          },
+          "why": "Reverse of hydration.",
+          "example": "Remove H₂O from ethanol → ethene.",
+          "remember": "Conc. H₂SO₄ absorbs water — catalyst.",
+          "common_confusion": "443 K (170°C) temperature required.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c04",
+          "name": "Ethanol burns cleanly",
+          "simple_answer": "Ethanol combustion: C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O — clean blue flame, used as eco-friendly fuel.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O",
+            "note": "Clean combustion"
+          },
+          "why": "Fuel property.",
+          "example": "Bioethanol mixed with petrol (gasohol).",
+          "remember": "Complete combustion — blue flame.",
+          "common_confusion": "Renewable fuel from fermentation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c05",
+          "name": "Properties of ethanoic acid",
+          "simple_answer": "Ethanoic acid is colourless liquid with pungent smell, sour taste, turns blue litmus red — weak acid.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ethanoic acid — sour, weak acid"
+          },
+          "why": "Physical and chemical properties.",
+          "example": "Vinegar smell is ethanoic acid.",
+          "remember": "Weak acid — partially ionises.",
+          "common_confusion": "Glacial = 99%+ pure — freezes in cold.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c06",
+          "name": "Ethanoic acid as weak acid",
+          "simple_answer": "Ethanoic acid ionises partially in water: CH₃COOH ⇌ CH₃COO⁻ + H⁺ — weak acid, pH around 3 for vinegar.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₃COOH ⇌ CH₃COO⁻ + H⁺",
+            "note": "Weak acid — partial ionisation"
+          },
+          "why": "Acid strength concept.",
+          "example": "Does not dissociate fully like HCl.",
+          "remember": "Weak acid — reversible ionisation.",
+          "common_confusion": "Turns blue litmus red — Ch 2 link.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c07",
+          "name": "Esterification equation — ethanoic acid + ethanol",
+          "simple_answer": "Ethanoic acid + ethanol → ethyl ethanoate + water (conc. H₂SO₄ catalyst, heat).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₃COOH + C₂H₅OH → CH₃COOC₂H₅ + H₂O",
+            "note": "Ethyl ethanoate — sweet smell"
+          },
+          "why": "Full NCERT esterification equation.",
+          "example": "Fruity smell confirms ester formed.",
+          "remember": "Product: ethyl ethanoate (ester).",
+          "common_confusion": "Heat and conc. H₂SO₄ required.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c08",
+          "name": "Role of conc. H₂SO₄ in esterification",
+          "simple_answer": "Conc. H₂SO₄ acts as catalyst and dehydrating agent — speeds reaction and removes water to shift equilibrium.",
+          "visual": {
+            "type": "placeholder",
+            "label": "H₂SO₄ — catalyst + dehydrating agent"
+          },
+          "why": "Mechanism role.",
+          "example": "Few drops of conc. H₂SO₄ added.",
+          "remember": "Catalyst + removes H₂O product.",
+          "common_confusion": "Do not confuse with dilute H₂SO₄ in other reactions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c09",
+          "name": "Ethyl ethanoate — the ester product",
+          "simple_answer": "Ethyl ethanoate CH₃COOC₂H₅ is the ester — pleasant smell used in nail polish remover and flavourings.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₃COOC₂H₅ — ethyl ethanoate",
+            "note": "Ester product name"
+          },
+          "why": "Named ester product.",
+          "example": "Sweet fruity smell in lab esterification.",
+          "remember": "Name: ethyl (from ethanol) ethanoate (from ethanoic acid).",
+          "common_confusion": "Ester naming: alkyl + alkanoate.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c10",
+          "name": "Exam — properties and reactions",
+          "simple_answer": "Ethanol: Na reaction, dehydration, combustion. Ethanoic acid: weak acid, esterification equation with sweet smell.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: ethanol and acid properties"
+          },
+          "why": "Structured answer.",
+          "example": "Write esterification as key reaction.",
+          "remember": "Two compounds + two reactions each.",
+          "common_confusion": "Include conditions (443 K, conc. H₂SO₄).",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Soaps and Detergents — Micelles and Cleansing Action",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d13_c01",
+          "name": "Soap structure — RCOO⁻Na⁺",
+          "simple_answer": "Soap is sodium or potassium salt of long-chain carboxylic acid (fatty acid) — RCOO⁻Na⁺.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "RCOO⁻Na⁺ — soap molecule",
+            "note": "Long hydrocarbon tail + ionic head"
+          },
+          "why": "Core Day 13 concept.",
+          "example": "Sodium stearate is common soap component.",
+          "remember": "Hydrophobic tail + hydrophilic –COO⁻ head.",
+          "common_confusion": "R = long carbon chain (15–17 carbons).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "soap"
+          ]
+        },
+        {
+          "id": "u4_d13_c02",
+          "name": "Saponification — making soap",
+          "simple_answer": "Soap made by heating fat/oil with NaOH: fat + NaOH → soap + glycerol (saponification).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fat + NaOH → Soap + Glycerol",
+            "note": "Saponification reaction"
+          },
+          "why": "Soap production reaction.",
+          "example": "Traditional soap making from animal fat.",
+          "remember": "Alkaline hydrolysis of ester in fat.",
+          "common_confusion": "Glycerol is useful by-product.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "saponification"
+          ]
+        },
+        {
+          "id": "u4_d13_c03",
+          "name": "Micelle formation",
+          "simple_answer": "In water, soap molecules form micelles — hydrophobic tails inward, hydrophilic heads outward facing water.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Micelle — tails in, heads out"
+          },
+          "why": "Key cleansing mechanism.",
+          "example": "Spherical cluster of soap molecules in water.",
+          "remember": "Tails hide inside; heads on surface.",
+          "common_confusion": "Micelle forms above critical concentration.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "micelle"
+          ]
+        },
+        {
+          "id": "u4_d13_c04",
+          "name": "Cleansing action of soap",
+          "simple_answer": "Soap micelles surround oily dirt — hydrophobic tails dissolve grease inside micelle; rinsed away by water.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Soap micelle traps oil/grease"
+          },
+          "why": "How soap cleans.",
+          "example": "Oil on clothes removed by soap micelles.",
+          "remember": "Emulsifies oil in water via micelles.",
+          "common_confusion": "Hydrophobic tail dissolves non-polar dirt.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c05",
+          "name": "Hard water and soap scum",
+          "simple_answer": "Hard water contains Ca²⁺ and Mg²⁺ ions — react with soap to form insoluble scum (curd), wasting soap.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Soap + Ca²⁺/Mg²⁺ → Insoluble scum",
+            "note": "Hard water problem"
+          },
+          "why": "Hard water issue.",
+          "example": "White curd in bath with hard water + soap.",
+          "remember": "Ca/Mg ions precipitate soap.",
+          "common_confusion": "Scum is calcium/magnesium salt of fatty acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c06",
+          "name": "Why soap fails in hard water",
+          "simple_answer": "Ca²⁺ and Mg²⁺ replace Na⁺ in soap forming insoluble precipitate — less soap available for cleaning.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ions precipitate soap as scum"
+          },
+          "why": "Mechanism explanation.",
+          "example": "Boiling hard water — scale on kettle.",
+          "remember": "Soap wasted forming scum first.",
+          "common_confusion": "Soft water (rainwater) lathers well with soap.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c07",
+          "name": "Detergent structure",
+          "simple_answer": "Detergents are sodium salts of long-chain sulphonic acids or ammonium salts — similar tail, different head group.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "RSO₃⁻Na⁺ — detergent (sulphonate)",
+            "note": "Similar to soap, different head"
+          },
+          "why": "Contrast with soap.",
+          "example": "Washing powder contains synthetic detergents.",
+          "remember": "Sulphonate head instead of carboxylate.",
+          "common_confusion": "Tail still long hydrocarbon chain.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "detergent"
+          ]
+        },
+        {
+          "id": "u4_d13_c08",
+          "name": "Detergents work in hard water",
+          "simple_answer": "Detergents do not form scum with Ca²⁺/Mg²⁺ — soluble salts remain, effective in hard water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Detergent + hard water → no scum",
+            "note": "Advantage over soap"
+          },
+          "why": "Key detergent advantage.",
+          "example": "Washing powder works in hard water areas.",
+          "remember": "Ca/Mg salts of detergents stay soluble.",
+          "common_confusion": "Main reason detergents replaced soap for laundry.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c09",
+          "name": "Soap vs detergent comparison",
+          "simple_answer": "Soap: biodegradable, scum in hard water. Detergent: works in hard water, may persist in environment.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Soap: scum in hard water | Detergent: no scum",
+            "note": "Comparison table"
+          },
+          "why": "Exam comparison.",
+          "example": "Soap better for environment; detergent better in hard water.",
+          "remember": "Know both advantages and disadvantages.",
+          "common_confusion": "Some detergents are non-biodegradable — pollution concern.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c10",
+          "name": "Exam — micelle and cleansing action",
+          "simple_answer": "Describe soap structure → micelle formation → hydrophobic tail dissolves grease → hard water scum → detergent advantage.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: soap micelle template"
+          },
+          "why": "Structured answer.",
+          "example": "Draw micelle with tails inward.",
+          "remember": "Structure + micelle + hard water + detergent.",
+          "common_confusion": "Include saponification equation if asked.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "Versatile Nature of Carbon — Catenation and Tetravalency",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d14_c01",
+          "name": "Catenation definition",
+          "simple_answer": "Catenation is the ability of carbon atoms to link to each other in long chains, branches, and rings.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Catenation — C links to C"
+          },
+          "why": "Core Day 14 concept.",
+          "example": "Carbon chains in petrol, proteins, DNA.",
+          "remember": "Self-linking of carbon atoms.",
+          "common_confusion": "Carbon catenates more than any other element.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "catenation"
+          ]
+        },
+        {
+          "id": "u4_d14_c02",
+          "name": "Tetravalency enables versatility",
+          "simple_answer": "Carbon's four valence electrons allow four covalent bonds — single, double, triple, and bonds to many elements.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "4 valence e⁻ → 4 bonds → huge variety",
+            "note": "Tetravalency"
+          },
+          "why": "Second key property.",
+          "example": "C can bond to C, H, O, N, S, halogens.",
+          "remember": "Four bonds in many combinations.",
+          "common_confusion": "Tetravalency + catenation = millions of compounds.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "tetravalency"
+          ]
+        },
+        {
+          "id": "u4_d14_c03",
+          "name": "Millions of carbon compounds",
+          "simple_answer": "Over 5 million carbon compounds known — more than all other elements combined — due to catenation and tetravalency.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5+ million carbon compounds"
+          },
+          "why": "Scale of organic chemistry.",
+          "example": "Plastics, drugs, dyes, fuels — all carbon-based.",
+          "remember": "Carbon chemistry dominates compound count.",
+          "common_confusion": "New compounds synthesised daily.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c04",
+          "name": "Self-linking of carbon atoms",
+          "simple_answer": "Carbon–carbon bonds are strong and stable — carbon chains can be very long without breaking.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C–C bond — strong, stable chains",
+            "note": "Basis of catenation"
+          },
+          "why": "Bond strength explanation.",
+          "example": "Polyethylene has thousands of linked carbons.",
+          "remember": "Strong C–C bonds hold chains together.",
+          "common_confusion": "Silicon catenates but Si–Si weaker than C–C.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c05",
+          "name": "Single, double, triple bond variety",
+          "simple_answer": "Carbon forms single (C–C), double (C=C), and triple (C≡C) bonds — multiplying possible structures.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Single | Double | Triple C–C bonds",
+            "note": "Bond variety adds diversity"
+          },
+          "why": "Structural diversity source.",
+          "example": "Alkanes, alkenes, alkynes from bond types.",
+          "remember": "Three bond types × long chains = huge variety.",
+          "common_confusion": "Double bonds enable addition reactions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c06",
+          "name": "Functional groups add diversity",
+          "simple_answer": "Same carbon skeleton with different functional groups (–OH, –COOH, –CHO) gives entirely different compounds.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Functional groups multiply compounds"
+          },
+          "why": "Chemical diversity source.",
+          "example": "Ethanol and dimethyl ether both C₂H₆O — different groups.",
+          "remember": "Same formula possible with different groups.",
+          "common_confusion": "Functional group determines properties.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c07",
+          "name": "Isomerism adds more compounds",
+          "simple_answer": "Same molecular formula, different structures (isomers) — butane/isobutane, functional group isomers.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Same formula, different structure = isomer",
+            "note": "Isomerism increases compound count"
+          },
+          "why": "Structural diversity.",
+          "example": "C₄H₁₀ has two structural isomers.",
+          "remember": "Isomerism multiplies possible compounds.",
+          "common_confusion": "Millions of compounds include all isomers.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c08",
+          "name": "Role of carbon in living organisms",
+          "simple_answer": "All biomolecules — carbohydrates, proteins, lipids, nucleic acids — are carbon compounds with complex chains and rings.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Carbon — basis of all life"
+          },
+          "why": "Biological importance.",
+          "example": "DNA double helix is carbon backbone.",
+          "remember": "Life chemistry = carbon chemistry.",
+          "common_confusion": "No life without carbon compounds.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c09",
+          "name": "Scope of organic chemistry",
+          "simple_answer": "Organic chemistry studies carbon compounds — synthesis, reactions, and applications in medicine, industry, and life.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Organic chemistry scope"
+          },
+          "why": "Field overview.",
+          "example": "Pharmaceuticals, polymers, food additives.",
+          "remember": "Carbon compounds = organic chemistry.",
+          "common_confusion": "Class 10 Ch 4 is introduction to organic chemistry.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c10",
+          "name": "Exam — why carbon is unique",
+          "simple_answer": "State tetravalency + catenation → chains/branches/rings → functional groups → isomerism → millions of compounds + life.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: carbon versatility template"
+          },
+          "why": "Structured answer.",
+          "example": "Link both properties to compound count.",
+          "remember": "Two properties + three diversity sources + example.",
+          "common_confusion": "Do not forget catenation AND tetravalency together.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Mixed Review — Hydrocarbons and Functional Groups",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d15_c01",
+          "name": "Review — saturated vs unsaturated",
+          "simple_answer": "Saturated: CₙH₂ₙ₊₂, single bonds, substitution. Unsaturated: CₙH₂ₙ or CₙH₂ₙ₋₂, addition, bromine test.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Saturated: CₙH₂ₙ₊₂ | Unsaturated: CₙH₂ₙ, CₙH₂ₙ₋₂",
+            "note": "Review card 1"
+          },
+          "why": "Mixed review Day 15.",
+          "example": "Methane vs ethene comparison.",
+          "remember": "Formulas + reactions + bromine test.",
+          "common_confusion": "Bromine water distinguishes unsaturated.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c02",
+          "name": "Review — functional groups",
+          "simple_answer": "–OH alcohol, –CHO aldehyde, C=O ketone, –COOH carboxylic acid, –X haloalkane — determine chemical properties.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "-OH | -CHO | C=O | -COOH | -X",
+            "note": "Review card 2"
+          },
+          "why": "Functional group revision.",
+          "example": "Ethanol, ethanoic acid, CH₃Cl examples.",
+          "remember": "Five groups with examples.",
+          "common_confusion": "Group determines homologous series.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c03",
+          "name": "Review — allotropes of carbon",
+          "simple_answer": "Diamond: hard, insulator, 4 bonds. Graphite: soft, conductor, layers. Fullerene C₆₀: cage structure.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Diamond | Graphite | C₆₀",
+            "note": "Review card 3"
+          },
+          "why": "Allotrope revision.",
+          "example": "Pencil lead = graphite; diamond ring.",
+          "remember": "Three allotropes + key properties.",
+          "common_confusion": "Same element — different arrangement.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c04",
+          "name": "Review — homologous series",
+          "simple_answer": "Same functional group, differ by CH₂, similar chemical properties, gradual physical property change.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Difference = CH₂ (14 u)",
+            "note": "Review card 4"
+          },
+          "why": "Homologous series revision.",
+          "example": "Alkane series CH₄ to C₄H₁₀.",
+          "remember": "CH₂ difference + similar chemistry.",
+          "common_confusion": "Boiling point increases down series.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c05",
+          "name": "Review — combustion",
+          "simple_answer": "Complete: CO₂ + H₂O (blue flame). Incomplete: soot + CO (yellow flame). CH₄ + 2O₂ → CO₂ + 2H₂O.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Complete: CO₂ + H₂O | Incomplete: C + CO",
+            "note": "Review card 5"
+          },
+          "why": "Combustion revision.",
+          "example": "Balanced methane combustion equation.",
+          "remember": "Two types + equation + CO danger.",
+          "common_confusion": "Oxidation of alcohol also revision.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c06",
+          "name": "Review — addition vs substitution",
+          "simple_answer": "Addition: unsaturated (C₂H₄ + Br₂). Substitution: saturated (CH₄ + Cl₂, UV). Know conditions.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Addition: C₂H₄ + Br₂ | Substitution: CH₄ + Cl₂",
+            "note": "Review card 6"
+          },
+          "why": "Reaction type revision.",
+          "example": "Bromine water test for addition.",
+          "remember": "Two equations + conditions.",
+          "common_confusion": "Sunlight needed for substitution.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c07",
+          "name": "Review — ethanol and ethanoic acid",
+          "simple_answer": "C₂H₅OH (solvent, fuel) and CH₃COOH (vinegar, weak acid) — esterification links them.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₂H₅OH + CH₃COOH → Ester + H₂O",
+            "note": "Review card 7"
+          },
+          "why": "Key compounds revision.",
+          "example": "Esterification sweet smell test.",
+          "remember": "Formulas + one reaction each.",
+          "common_confusion": "Denatured alcohol — poison added.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c08",
+          "name": "Review — soaps and detergents",
+          "simple_answer": "Soap RCOO⁻Na⁺, micelle cleans, scum in hard water. Detergent works in hard water — no scum.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Soap: scum | Detergent: no scum",
+            "note": "Review card 8"
+          },
+          "why": "Soap revision.",
+          "example": "Micelle: tails in, heads out.",
+          "remember": "Structure + micelle + hard water.",
+          "common_confusion": "Saponification: fat + NaOH → soap.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c09",
+          "name": "Review — Lewis structures",
+          "simple_answer": "CH₄ (4 single), C₂H₆ (C–C + 6 C–H), O₂ (double), N₂ (triple), CO₂ (2 double), H₂O (2 single + lone pairs).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₄ | C₂H₆ | O₂ | N₂ | CO₂ | H₂O",
+            "note": "Review card 9"
+          },
+          "why": "Lewis structure revision.",
+          "example": "Draw all six for exam practice.",
+          "remember": "Six key Lewis structures from NCERT.",
+          "common_confusion": "Show lone pairs on O and N.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c10",
+          "name": "Review — nomenclature",
+          "simple_answer": "Roots meth– to hex–; suffixes -ane, -ene, -yne, -ol, -oic acid; examples ethanol, ethanoic acid.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Root + suffix = IUPAC name",
+            "note": "Review card 10"
+          },
+          "why": "Nomenclature revision.",
+          "example": "Propene C₃H₆; propanol C₃H₇OH.",
+          "remember": "Roots 1–6 + suffix rules.",
+          "common_confusion": "Common names also accepted.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "Exam Prep — Reactions, Nomenclature and Everyday Chemistry",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d16_c01",
+          "name": "Exam — Lewis structures template",
+          "simple_answer": "Count valence e⁻ → central atom → share to complete octets → CH₄, H₂O, CO₂, O₂, N₂, C₂H₆.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: Lewis structures checklist"
+          },
+          "why": "Exam prep card 1.",
+          "example": "Practice drawing all six structures.",
+          "remember": "Six structures from NCERT Ch 4.",
+          "common_confusion": "Duplet for H; octet for C, O, N.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c02",
+          "name": "Exam — hydrocarbon formulas",
+          "simple_answer": "Alkanes CₙH₂ₙ₊₂, alkenes CₙH₂ₙ, alkynes CₙH₂ₙ₋₂ — give examples CH₄, C₂H₄, C₂H₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CₙH₂ₙ₊₂ | CₙH₂ₙ | CₙH₂ₙ₋₂",
+            "note": "Exam prep card 2"
+          },
+          "why": "Formula revision.",
+          "example": "Three formulas with two-carbon examples.",
+          "remember": "Memorise all three general formulas.",
+          "common_confusion": "Saturation indicated by H count.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c03",
+          "name": "Exam — reaction types summary",
+          "simple_answer": "Combustion (CO₂ + H₂O), addition (unsaturated + Br₂), substitution (CH₄ + Cl₂, UV), esterification (acid + alcohol).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Combustion | Addition | Substitution | Esterification",
+            "note": "Exam prep card 3"
+          },
+          "why": "Reaction summary.",
+          "example": "One equation per reaction type.",
+          "remember": "Four reaction types with conditions.",
+          "common_confusion": "Match reaction to compound type.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c04",
+          "name": "Exam — functional groups table",
+          "simple_answer": "Tabulate –OH, –CHO, C=O, –COOH, –X with name, example, and one property each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: functional groups revision"
+          },
+          "why": "Exam prep card 4.",
+          "example": "Ethanol, ethanoic acid, CH₃Cl as examples.",
+          "remember": "Five-row table for full marks.",
+          "common_confusion": "Functional group = homologous series marker.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c05",
+          "name": "Exam — bromine water test",
+          "simple_answer": "Unsaturated compound + bromine water → decolourisation (addition). Saturated → no change.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₂H₄ + Br₂ → C₂H₄Br₂ (decolourises)",
+            "note": "Exam prep card 5"
+          },
+          "why": "Test revision.",
+          "example": "Ethene positive; ethane negative.",
+          "remember": "Orange → colourless = unsaturated.",
+          "common_confusion": "State addition reaction mechanism briefly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c06",
+          "name": "Exam — esterification",
+          "simple_answer": "Acid + alcohol → ester + water; conc. H₂SO₄ catalyst; sweet smell confirms product.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₃COOH + C₂H₅OH → CH₃COOC₂H₅ + H₂O",
+            "note": "Exam prep card 6"
+          },
+          "why": "Esterification revision.",
+          "example": "Ethyl ethanoate — fruity smell.",
+          "remember": "Full equation + conditions + smell test.",
+          "common_confusion": "Name ester product correctly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c07",
+          "name": "Exam — soap micelle description",
+          "simple_answer": "Soap RCOO⁻Na⁺ → micelle in water → hydrophobic tail dissolves grease → hard water scum → detergent alternative.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: soap cleansing template"
+          },
+          "why": "Exam prep card 7.",
+          "example": "Describe micelle structure in words.",
+          "remember": "Structure + mechanism + hard water.",
+          "common_confusion": "Include saponification if asked for preparation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c08",
+          "name": "Exam — incomplete combustion",
+          "simple_answer": "Limited O₂ → soot (C) + CO + H₂O; CO poisonous; complete combustion gives CO₂ + H₂O only.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Incomplete: C + CO | Complete: CO₂",
+            "note": "Exam prep card 8"
+          },
+          "why": "Combustion exam point.",
+          "example": "Yellow flame = incomplete.",
+          "remember": "Two products sets + CO hazard.",
+          "common_confusion": "Ventilation prevents CO poisoning.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c09",
+          "name": "Unit 4 exam — full revision summary",
+          "simple_answer": "Bonding → allotropes → hydrocarbons → functional groups → reactions → ethanol/acid → soaps → catenation/tetravalency.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Structure → Reactions → Applications",
+            "note": "Unit 4 revision map"
+          },
+          "why": "Revision card 9.",
+          "example": "160 concept cards cover all topics.",
+          "remember": "Three pillars: structure, reactions, daily life.",
+          "common_confusion": "Link structure to reactivity in answers.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c10",
+          "name": "Unit 4 complete",
+          "simple_answer": "Unit 4 Carbon and its Compounds complete — all 160 cards; proceed to Practice when unlocked.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Unit 4 complete — 160 cards"
+          },
+          "why": "Completion card.",
+          "example": "200 MCQs in bank when available.",
+          "remember": "Concepts done → practice.",
+          "common_confusion": "Review Lewis structures, bromine test, and esterification for exams.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

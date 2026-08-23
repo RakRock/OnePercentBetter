@@ -1,0 +1,2726 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 2,
+    "unit_title": "Acids, Bases and Salts",
+    "ncert": "Class 10 Science, Chapter 2 (Chemistry)",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_chemistry_unit2_concepts",
+    "session_kind_mcq": "harshit_chemistry_unit2_mcq"
+  },
+  "glossary": [
+    {
+      "term": "acid",
+      "definition": "Substance that turns blue litmus red; produces H⁺ ions in aqueous solution."
+    },
+    {
+      "term": "base",
+      "definition": "Substance that turns red litmus blue; produces OH⁻ ions in aqueous solution."
+    },
+    {
+      "term": "indicator",
+      "definition": "Substance that changes colour in acidic or basic medium (e.g. litmus)."
+    },
+    {
+      "term": "neutralisation",
+      "definition": "Reaction of acid and base to form salt and water."
+    },
+    {
+      "term": "pH",
+      "definition": "Measure of hydrogen ion concentration; 7 is neutral, below 7 acidic, above 7 basic."
+    },
+    {
+      "term": "salt",
+      "definition": "Ionic compound formed from acid-base reaction (or other neutralisation)."
+    },
+    {
+      "term": "water of crystallisation",
+      "definition": "Fixed number of water molecules in one formula unit of a crystal."
+    },
+    {
+      "term": "dilution",
+      "definition": "Adding water to lower concentration; always add acid to water, slowly with stirring."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "Acids, Bases and Salts — Introduction",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u2_d1_c01",
+          "name": "What are acids?",
+          "simple_answer": "Acids are substances that taste sour, turn blue litmus red, and contain replaceable hydrogen.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Acids — sour, litmus red"
+          },
+          "why": "Foundation of Ch 2 — acids introduced first.",
+          "example": "Lemon juice and vinegar taste sour because of acids.",
+          "remember": "Sour taste + blue litmus → red = acid clues.",
+          "common_confusion": "Not all acids are safe to taste — lab acids are corrosive.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "acid"
+          ]
+        },
+        {
+          "id": "u2_d1_c02",
+          "name": "What are bases?",
+          "simple_answer": "Bases are bitter, soapy to touch, turn red litmus blue, and include metal oxides/hydroxides.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Bases — bitter, litmus blue"
+          },
+          "why": "Pair concept with acids.",
+          "example": "Soap solution feels slippery — basic.",
+          "remember": "Bitter + soapy feel + red litmus → blue = base.",
+          "common_confusion": "Bases are not always solids — NaOH is aqueous base.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "base"
+          ]
+        },
+        {
+          "id": "u2_d1_c03",
+          "name": "What are salts?",
+          "simple_answer": "Salts are ionic compounds formed when acid reacts with base — e.g. NaCl, CuSO₄, Na₂CO₃.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid + Base → Salt + Water",
+            "note": "Neutralisation product"
+          },
+          "why": "Third pillar of chapter title.",
+          "example": "Table salt NaCl from HCl + NaOH.",
+          "remember": "Salt = product of acid-base reaction (usually).",
+          "common_confusion": "Not every salt comes from neutralisation — but most in Ch 2 do.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "salt"
+          ]
+        },
+        {
+          "id": "u2_d1_c04",
+          "name": "Natural sources of acids",
+          "simple_answer": "Acids occur in fruits (citric), vinegar (acetic), curd (lactic), and stomach (HCl).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Acids in nature and food"
+          },
+          "why": "NCERT everyday examples.",
+          "example": "Tamarind and orange contain acids.",
+          "remember": "Many foods are naturally acidic.",
+          "common_confusion": "Natural acids are dilute; lab acids like conc. H₂SO₄ are dangerous.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d1_c05",
+          "name": "Natural sources of bases",
+          "simple_answer": "Bases include lime water Ca(OH)₂, baking soda NaHCO₃, and antacids like milk of magnesia Mg(OH)₂.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Bases in daily life"
+          },
+          "why": "Connect to later sections.",
+          "example": "Whitewash uses slaked lime — basic.",
+          "remember": "Lime, antacids, and soap are common bases.",
+          "common_confusion": "Baking soda is hydrogencarbonate — amphoteric behaviour later.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d1_c06",
+          "name": "Mineral acids vs organic acids",
+          "simple_answer": "Mineral acids (HCl, H₂SO₄, HNO₃) from minerals; organic acids (CH₃COOH, HCOOH) from living sources.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mineral: HCl, H₂SO₄, HNO₃ | Organic: CH₃COOH",
+            "note": "Two acid families"
+          },
+          "why": "Classification in NCERT.",
+          "example": "Vinegar contains acetic acid CH₃COOH.",
+          "remember": "Mineral = inorganic; organic = carbon-containing acid.",
+          "common_confusion": "Organic acids are generally weaker than mineral acids.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d1_c07",
+          "name": "Strong vs weak acids (intro)",
+          "simple_answer": "Strong acids ionise completely in water (HCl, H₂SO₄, HNO₃); weak acids partially (CH₃COOH).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Strong acid → H⁺ completely",
+            "note": "Weak acid → partial H⁺"
+          },
+          "why": "Preview for pH section.",
+          "example": "Dilute HCl conducts well — many ions.",
+          "remember": "Strong = full ionisation; weak = partial.",
+          "common_confusion": "Strength is not the same as concentration.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d1_c08",
+          "name": "Alkalis",
+          "simple_answer": "Water-soluble bases are called alkalis — NaOH, KOH, Ca(OH)₂, NH₄OH dissolve to give OH⁻.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Alkali = soluble base",
+            "note": "NaOH, KOH, Ca(OH)₂"
+          },
+          "why": "NCERT term for soluble bases.",
+          "example": "NaOH pellets dissolve in water — alkali.",
+          "remember": "All alkalis are bases; not all bases are alkalis.",
+          "common_confusion": "Mg(OH)₂ is a base but insoluble — not an alkali.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "alkali"
+          ]
+        },
+        {
+          "id": "u2_d1_c09",
+          "name": "Indicators preview",
+          "simple_answer": "Substances that change colour in acid or base — litmus, turmeric, methyl orange, phenolphthalein.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Indicators change colour"
+          },
+          "why": "Leads to Day 2 detail.",
+          "example": "Blue litmus turns red in acid.",
+          "remember": "Indicators detect acid/base without tasting.",
+          "common_confusion": "Universal indicator shows full pH range — Day 11.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "indicator"
+          ]
+        },
+        {
+          "id": "u2_d1_c10",
+          "name": "Chapter 2 roadmap",
+          "simple_answer": "Ch 2 covers acids, bases, salts, indicators, reactions, pH, everyday uses, and chemicals from common salt.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 2 roadmap — 16 days"
+          },
+          "why": "Orient learner to unit plan.",
+          "example": "Activity 2.1–2.4 in lab sections.",
+          "remember": "Acids/bases → reactions → pH → salts → industry.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Indicators — Litmus, Turmeric and Synthetic",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u2_d2_c01",
+          "name": "What is an indicator?",
+          "simple_answer": "An indicator is a substance that shows different colours in acidic and basic media.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Indicator — colour in acid/base"
+          },
+          "why": "Core Day 2 concept.",
+          "example": "Litmus paper distinguishes acid from base.",
+          "remember": "One colour in acid, different in base.",
+          "common_confusion": "Indicator does not measure exact pH unless universal indicator.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "indicator"
+          ]
+        },
+        {
+          "id": "u2_d2_c02",
+          "name": "Litmus — source and colours",
+          "simple_answer": "Litmus is a natural dye from lichen; turns red in acid, blue in base.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid: blue → red | Base: red → blue",
+            "note": "Litmus colour change"
+          },
+          "why": "Most common school indicator.",
+          "example": "Blue litmus paper dipped in HCl turns red.",
+          "remember": "Blue litmus + acid → red; red litmus + base → blue.",
+          "common_confusion": "Purple/neutral litmus in distilled water.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "litmus"
+          ]
+        },
+        {
+          "id": "u2_d2_c03",
+          "name": "Red litmus in base",
+          "simple_answer": "Red litmus paper turns blue in basic solution — confirms base.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Red litmus → blue (base)"
+          },
+          "why": "Second half of litmus test.",
+          "example": "NaOH solution turns red litmus blue.",
+          "remember": "Red → blue means basic.",
+          "common_confusion": "Red litmus stays red in acid — no change.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d2_c04",
+          "name": "Blue litmus in acid",
+          "simple_answer": "Blue litmus paper turns red in acidic solution — confirms acid.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Blue litmus → red (acid)"
+          },
+          "why": "First half of litmus test.",
+          "example": "Dilute HCl turns blue litmus red.",
+          "remember": "Blue → red means acidic.",
+          "common_confusion": "Blue litmus stays blue in base.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d2_c05",
+          "name": "Turmeric as indicator",
+          "simple_answer": "Turmeric (haldi) is natural indicator — yellow in neutral/acid, reddish-brown in base.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Turmeric: yellow (acid) → red-brown (base)",
+            "note": "Natural indicator"
+          },
+          "why": "NCERT home indicator example.",
+          "example": "Soap on turmeric stain turns red-brown.",
+          "remember": "Turmeric paper detects base at home.",
+          "common_confusion": "Turmeric does not change in acid — stays yellow.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d2_c06",
+          "name": "China rose (Gudhal) indicator",
+          "simple_answer": "China rose petal extract: dark pink in acid, green in base.",
+          "visual": {
+            "type": "placeholder",
+            "label": "China rose — pink/green"
+          },
+          "why": "Another NCERT natural indicator.",
+          "example": "Petals soaked in hot water give extract.",
+          "remember": "Pink = acid; green = base.",
+          "common_confusion": "Not as common as litmus in exams.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d2_c07",
+          "name": "Methyl orange",
+          "simple_answer": "Synthetic indicator methyl orange: red in strong acid, yellow in strong base, orange in neutral.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Methyl orange: red (acid) → yellow (base)",
+            "note": "Synthetic indicator"
+          },
+          "why": "NCERT synthetic indicator list.",
+          "example": "Used in titration to mark end point.",
+          "remember": "Red in acid; yellow in base.",
+          "common_confusion": "Orange in near-neutral pH.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "methyl orange"
+          ]
+        },
+        {
+          "id": "u2_d2_c08",
+          "name": "Phenolphthalein",
+          "simple_answer": "Phenolphthalein is colourless in acid, pink/fuchsia in base.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Phenolphthalein: colourless (acid) → pink (base)",
+            "note": "Synthetic indicator"
+          },
+          "why": "Standard titration indicator.",
+          "example": "NaOH turns phenolphthalein pink.",
+          "remember": "Colourless in acid; pink in base.",
+          "common_confusion": "Very faint pink near pH 8 — endpoint in titration.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "phenolphthalein"
+          ]
+        },
+        {
+          "id": "u2_d2_c09",
+          "name": "Natural vs synthetic indicators",
+          "simple_answer": "Natural: litmus, turmeric, china rose. Synthetic: methyl orange, phenolphthalein.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Natural vs synthetic indicators"
+          },
+          "why": "Classification for exams.",
+          "example": "Litmus from lichen — natural.",
+          "remember": "Natural from plants; synthetic made in lab.",
+          "common_confusion": "Both work on same principle — colour change.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d2_c10",
+          "name": "Choosing an indicator",
+          "simple_answer": "Pick indicator whose colour change matches expected pH range of titration or test.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Match indicator to pH range"
+          },
+          "why": "Practical exam skill.",
+          "example": "Phenolphthalein for strong acid–strong base titration.",
+          "remember": "Indicator must change in range of reaction.",
+          "common_confusion": "Wrong indicator may miss endpoint.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Acids and Bases in the Laboratory (Activity 2.1)",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u2_d3_c01",
+          "name": "Activity 2.1 — acids in lab",
+          "simple_answer": "NCERT Activity 2.1: collect samples of HCl, H₂SO₄, HNO₃, CH₃COOH, NaOH, Ca(OH)₂, KOH, Mg(OH)₂, NH₄OH.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 2.1 — lab samples"
+          },
+          "why": "Central lab activity for Ch 2.",
+          "example": "Test each with litmus and indicators.",
+          "remember": "Know the nine NCERT substances.",
+          "common_confusion": "Handle acids and bases with care — corrosive.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c02",
+          "name": "Hydrochloric acid HCl",
+          "simple_answer": "HCl is a strong mineral acid — colourless, pungent, turns blue litmus red.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HCl → H⁺ + Cl⁻",
+            "note": "Strong mineral acid"
+          },
+          "why": "First acid in Activity 2.1.",
+          "example": "Present in stomach for digestion.",
+          "remember": "Strong acid; fully ionises in water.",
+          "common_confusion": "Never called hydrochloric acid(HCl) without 'acid'.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c03",
+          "name": "Sulphuric acid H₂SO₄",
+          "simple_answer": "H₂SO₄ is strong mineral acid — dense, oily, dibasic acid used in industry.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H₂SO₄ → 2H⁺ + SO₄²⁻",
+            "note": "Strong dibasic acid"
+          },
+          "why": "Second mineral acid in list.",
+          "example": "Car batteries contain dilute H₂SO₄.",
+          "remember": "Two replaceable H⁺ per molecule.",
+          "common_confusion": "Concentrated H₂SO₄ is highly corrosive — add to water only.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c04",
+          "name": "Nitric acid HNO₃",
+          "simple_answer": "HNO₃ is strong mineral acid — used in fertilisers and explosives manufacture.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HNO₃ → H⁺ + NO₃⁻",
+            "note": "Strong mineral acid"
+          },
+          "why": "Third mineral acid.",
+          "example": "Reacts with metals; often gives NO₂ with copper.",
+          "remember": "Strong acid; oxidising nature with metals.",
+          "common_confusion": "Not all metal + HNO₃ give H₂ — oxidising acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c05",
+          "name": "Acetic acid CH₃COOH",
+          "simple_answer": "CH₃COOH (ethanoic acid) is weak organic acid in vinegar (~4–5%).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₃COOH ⇌ H⁺ + CH₃COO⁻",
+            "note": "Weak organic acid"
+          },
+          "why": "Organic acid in Activity 2.1.",
+          "example": "Vinegar for cooking and pickling.",
+          "remember": "Weak acid — partial ionisation.",
+          "common_confusion": "Vinegar is dilute acetic acid, not HCl.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c06",
+          "name": "Sodium hydroxide NaOH",
+          "simple_answer": "NaOH (caustic soda) is strong alkali — white pellets, corrosive, turns red litmus blue.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NaOH → Na⁺ + OH⁻",
+            "note": "Strong alkali"
+          },
+          "why": "First base in Activity 2.1.",
+          "example": "Used in soap and paper industry.",
+          "remember": "Strong base; fully ionises.",
+          "common_confusion": "Caustic — never touch with wet hands.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c07",
+          "name": "Calcium hydroxide Ca(OH)₂",
+          "simple_answer": "Ca(OH)₂ (slaked lime) is alkali — used in whitewash and water treatment.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Ca(OH)₂ → Ca²⁺ + 2OH⁻",
+            "note": "Slaked lime — alkali"
+          },
+          "why": "Limewater is saturated Ca(OH)₂ solution.",
+          "example": "Turns milky with CO₂ — test for carbon dioxide.",
+          "remember": "Less soluble than NaOH but still alkali.",
+          "common_confusion": "Limewater = Ca(OH)₂ aqueous, not CaO.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c08",
+          "name": "Potassium hydroxide KOH",
+          "simple_answer": "KOH (caustic potash) is strong alkali — similar to NaOH, used in soft soaps.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "KOH → K⁺ + OH⁻",
+            "note": "Strong alkali"
+          },
+          "why": "Third alkali in list.",
+          "example": "Soft soap from KOH + fat.",
+          "remember": "Strong soluble base.",
+          "common_confusion": "KOH and NaOH both strong — do not taste either.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c09",
+          "name": "Magnesium hydroxide Mg(OH)₂",
+          "simple_answer": "Mg(OH)₂ (milk of magnesia) is weakly soluble base — antacid for indigestion.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mg(OH)₂ ⇌ Mg²⁺ + 2OH⁻",
+            "note": "Insoluble base — antacid"
+          },
+          "why": "Base but not alkali — insoluble.",
+          "example": "Neutralises excess stomach HCl.",
+          "remember": "Base that is not alkali (insoluble).",
+          "common_confusion": "Milk of magnesia is suspension, not clear solution.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c10",
+          "name": "Ammonium hydroxide NH₄OH",
+          "simple_answer": "NH₄OH (ammonia solution) is weak alkali — pungent smell, cleaning agent.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NH₄OH ⇌ NH₄⁺ + OH⁻",
+            "note": "Weak alkali"
+          },
+          "why": "Last sample in Activity 2.1.",
+          "example": "Window cleaner contains ammonia.",
+          "remember": "Weak base; pungent NH₃ smell.",
+          "common_confusion": "Formula NH₄OH represents aqueous ammonia.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Acids React with Metals",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u2_d4_c01",
+          "name": "Acid + metal reaction (general)",
+          "simple_answer": "Acid reacts with metal to give salt and hydrogen gas.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid + Metal → Salt + H₂ ↑",
+            "note": "General reaction"
+          },
+          "why": "Core Day 4 pattern.",
+          "example": "Zn + HCl → ZnCl₂ + H₂.",
+          "remember": "Metal displaces hydrogen from acid.",
+          "common_confusion": "Only metals above H in reactivity series with dilute acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c02",
+          "name": "Zinc and dilute HCl",
+          "simple_answer": "Zn + 2HCl → ZnCl₂ + H₂ — bubbles of hydrogen, zinc dissolves.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn + 2HCl → ZnCl₂ + H₂",
+            "note": "Salt + hydrogen"
+          },
+          "why": "Classic NCERT example.",
+          "example": "Activity from Ch 1 revisited in Ch 2 context.",
+          "remember": "Zinc chloride + hydrogen gas.",
+          "common_confusion": "Copper does not react with dilute HCl.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c03",
+          "name": "Magnesium and dilute H₂SO₄",
+          "simple_answer": "Mg + H₂SO₄ → MgSO₄ + H₂ — vigorous reaction, hydrogen evolved.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mg + H₂SO₄ → MgSO₄ + H₂",
+            "note": "Magnesium sulphate + H₂"
+          },
+          "why": "Second metal-acid example.",
+          "example": "Mg ribbon reacts faster than Zn.",
+          "remember": "Same pattern: salt + H₂.",
+          "common_confusion": "Hot and fast — handle with tongs.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c04",
+          "name": "Iron and dilute acid",
+          "simple_answer": "Fe + 2HCl → FeCl₂ + H₂ — iron nails produce hydrogen slowly.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fe + 2HCl → FeCl₂ + H₂",
+            "note": "Ferrous chloride + H₂"
+          },
+          "why": "Shows Fe above hydrogen.",
+          "example": "Pale green FeCl₂ solution forms.",
+          "remember": "Iron displaces H from dilute acid.",
+          "common_confusion": "Fe with conc. HNO₃ may not give H₂ — passivation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c05",
+          "name": "Testing for hydrogen gas",
+          "simple_answer": "Bring burning splint to mouth of tube — hydrogen burns with pop sound.",
+          "visual": {
+            "type": "placeholder",
+            "label": "H₂ test — pop sound"
+          },
+          "why": "Standard NCERT confirmatory test.",
+          "example": "Activity 2.2 hydrogen test.",
+          "remember": "Pop sound = hydrogen confirmed.",
+          "common_confusion": "Oxygen relights splint — do not confuse.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c06",
+          "name": "Why hydrogen forms",
+          "simple_answer": "Acids contain replaceable H⁺; reactive metal displaces H as H₂ gas.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2H⁺ + 2e⁻ → H₂",
+            "note": "Metal supplies electrons"
+          },
+          "why": "Mechanism view.",
+          "example": "Zn loses electrons; H⁺ gains to form H₂.",
+          "remember": "Metal + H⁺ → salt + H₂.",
+          "common_confusion": "Unreactive metals (Cu, Ag, Au) no reaction.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c07",
+          "name": "Reactivity series restriction",
+          "simple_answer": "Only metals above hydrogen in reactivity series react with dilute acids to give H₂.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Metal must be above H"
+          },
+          "why": "Predicting reaction feasibility.",
+          "example": "Mg, Zn, Fe react; Cu does not.",
+          "remember": "Cu + HCl → no reaction.",
+          "common_confusion": "Series order: Mg > Zn > Fe > H > Cu.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c08",
+          "name": "Salt name from acid",
+          "simple_answer": "From HCl → chloride salt; H₂SO₄ → sulphate; HNO₃ → nitrate; CH₃COOH → acetate.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HCl → chloride | H₂SO₄ → sulphate",
+            "note": "Acid determines salt name"
+          },
+          "why": "Naming products.",
+          "example": "Zn + HCl → zinc chloride.",
+          "remember": "Anion from acid names the salt.",
+          "common_confusion": "Sulphuric acid always gives sulphate salts.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c09",
+          "name": "Safety with acid-metal reactions",
+          "simple_answer": "Use dilute acid, small metal pieces, test tube tilted, never add water to acid.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Lab safety — acid + metal"
+          },
+          "why": "Practical safety card.",
+          "example": "Wear goggles; hydrogen is flammable.",
+          "remember": "Dilute acid + small pieces + splint test.",
+          "common_confusion": "Never look directly into mouth of tube when testing gas.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c10",
+          "name": "Exam pattern — acid and metal",
+          "simple_answer": "Typical question: write equation, name salt, describe H₂ test with pop sound.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: acid + metal template"
+          },
+          "why": "Three-part answer structure.",
+          "example": "Zn + 2HCl → ZnCl₂ + H₂; pop with splint.",
+          "remember": "Equation + salt name + H₂ test.",
+          "common_confusion": "Balance equation for full marks.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Acids with Carbonates and Hydrogencarbonates",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u2_d5_c01",
+          "name": "Acid + carbonate (general)",
+          "simple_answer": "Acid reacts with metal carbonate to give salt, water, and carbon dioxide.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid + Carbonate → Salt + H₂O + CO₂ ↑",
+            "note": "General reaction"
+          },
+          "why": "Day 5 core pattern.",
+          "example": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂.",
+          "remember": "CO₂ gas evolves as bubbles.",
+          "common_confusion": "Three products — not same as acid + metal.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c02",
+          "name": "Acid + hydrogencarbonate",
+          "simple_answer": "Acid reacts with hydrogencarbonate (bicarbonate) to give salt, water, and CO₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid + Hydrogencarbonate → Salt + H₂O + CO₂",
+            "note": "Same products as carbonate"
+          },
+          "why": "Second Day 5 pattern.",
+          "example": "NaHCO₃ + HCl → NaCl + H₂O + CO₂.",
+          "remember": "Baking soda fizzes with vinegar.",
+          "common_confusion": "Hydrogencarbonate also releases CO₂.",
+          "optional_detail": "NaHCO₃ is baking soda — Ch 2 later section.",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c03",
+          "name": "Marble and dilute HCl",
+          "simple_answer": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂ — marble effervesces.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂",
+            "note": "Marble chips + acid"
+          },
+          "why": "NCERT classic demo.",
+          "example": "Chalk and marble both contain CaCO₃.",
+          "remember": "Brisk bubbling = CO₂ evolution.",
+          "common_confusion": "Marble is CaCO₃ — same as limestone.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c04",
+          "name": "Sodium carbonate and acid",
+          "simple_answer": "Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂ — washing soda reacts with acid.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂",
+            "note": "Carbonate + acid"
+          },
+          "why": "Links to salts section later.",
+          "example": "CO₂ turns lime water milky.",
+          "remember": "Sodium chloride + water + CO₂.",
+          "common_confusion": "Na₂CO₃ is washing soda (anhydrous form later).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c05",
+          "name": "Baking soda and vinegar",
+          "simple_answer": "NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂ — kitchen reaction.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂",
+            "note": "Baking soda + vinegar"
+          },
+          "why": "Everyday NCERT example.",
+          "example": "Cake rises from CO₂ in batter.",
+          "remember": "Hydrogencarbonate + acid → CO₂.",
+          "common_confusion": "This CO₂ leavens bread and cakes.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c06",
+          "name": "Testing for carbon dioxide",
+          "simple_answer": "Pass CO₂ through lime water Ca(OH)₂ — turns milky due to CaCO₃ precipitate.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CO₂ + Ca(OH)₂ → CaCO₃ + H₂O",
+            "note": "Milky lime water = CO₂"
+          },
+          "why": "Standard NCERT confirmatory test.",
+          "example": "Activity 2.2 CO₂ test.",
+          "remember": "Milky = CO₂ confirmed.",
+          "common_confusion": "Excess CO₂ clears milkiness — Ca(HCO₃)₂ forms.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c07",
+          "name": "Why CO₂ forms with carbonate",
+          "simple_answer": "H⁺ from acid reacts with CO₃²⁻ or HCO₃⁻ to release H₂CO₃ which decomposes to H₂O + CO₂.",
+          "visual": {
+            "type": "placeholder",
+            "label": "H⁺ + carbonate → CO₂"
+          },
+          "why": "Mechanism simplified.",
+          "example": "Effervescence is CO₂ escaping.",
+          "remember": "Carbonate ion breaks down to CO₂ in acid.",
+          "common_confusion": "Same test (milky lime water) for all carbonate/acid reactions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c08",
+          "name": "Compare acid+metal vs acid+carbonate",
+          "simple_answer": "Acid + metal → salt + H₂. Acid + carbonate → salt + H₂O + CO₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal → H₂ | Carbonate → H₂O + CO₂",
+            "note": "Different gases — different tests"
+          },
+          "why": "Exam distinction.",
+          "example": "Pop test for H₂; milky lime water for CO₂.",
+          "remember": "Products differ — test accordingly.",
+          "common_confusion": "Do not confuse H₂ pop with CO₂ milky test.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c09",
+          "name": "Activity 2.2 context",
+          "simple_answer": "NCERT Activity 2.2: react acids with metal carbonates/hydrogencarbonates; test CO₂ with lime water.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 2.2 — CO₂ test"
+          },
+          "why": "Lab activity anchor.",
+          "example": "NaHCO₃ + HCl in test tube → bubble through limewater.",
+          "remember": "Observe bubbles + milky limewater.",
+          "common_confusion": "Activity also includes acid + metal for H₂.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c10",
+          "name": "Exam template — acid and carbonate",
+          "simple_answer": "Write balanced equation + state CO₂ test (lime water turns milky) + name all products.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: acid + carbonate"
+          },
+          "why": "Structured answer.",
+          "example": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂; milky limewater.",
+          "remember": "Equation + CO₂ test + products.",
+          "common_confusion": "Include H₂O as product — often forgotten.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Neutralisation Reactions",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u2_d6_c01",
+          "name": "Neutralisation definition",
+          "simple_answer": "Neutralisation is reaction between acid and base to form salt and water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid + Base → Salt + Water",
+            "note": "Neutralisation reaction"
+          },
+          "why": "Central Day 6 concept.",
+          "example": "HCl + NaOH → NaCl + H₂O.",
+          "remember": "Acid + base cancel each other's effects.",
+          "common_confusion": "Also a double displacement reaction.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "neutralisation"
+          ]
+        },
+        {
+          "id": "u2_d6_c02",
+          "name": "NaOH and HCl",
+          "simple_answer": "NaOH + HCl → NaCl + H₂O — classic strong acid–strong base neutralisation.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NaOH + HCl → NaCl + H₂O",
+            "note": "Sodium chloride + water"
+          },
+          "why": "Most common NCERT example.",
+          "example": "Antacid neutralises stomach acid similarly.",
+          "remember": "Salt + water only in products.",
+          "common_confusion": "Needs balancing: coefficients are 1:1:1:1.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c03",
+          "name": "H₂SO₄ and KOH",
+          "simple_answer": "H₂SO₄ + 2KOH → K₂SO₄ + 2H₂O — dibasic acid needs two moles of base.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H₂SO₄ + 2KOH → K₂SO₄ + 2H₂O",
+            "note": "Potassium sulphate + water"
+          },
+          "why": "Shows stoichiometry with dibasic acid.",
+          "example": "Two OH⁻ needed per H₂SO₄.",
+          "remember": "Balance OH⁻ with H⁺ count.",
+          "common_confusion": "H₂SO₄ has two replaceable H.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c04",
+          "name": "Ca(OH)₂ and HCl",
+          "simple_answer": "Ca(OH)₂ + 2HCl → CaCl₂ + 2H₂O — lime neutralises acid.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Ca(OH)₂ + 2HCl → CaCl₂ + 2H₂O",
+            "note": "Calcium chloride + water"
+          },
+          "why": "Slaked lime as base.",
+          "example": "Farmers add lime to neutralise acidic soil.",
+          "remember": "Two HCl per Ca(OH)₂ — two OH⁻.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c05",
+          "name": "NH₄OH and HNO₃",
+          "simple_answer": "NH₄OH + HNO₃ → NH₄NO₃ + H₂O — ammonium nitrate salt formed.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NH₄OH + HNO₃ → NH₄NO₃ + H₂O",
+            "note": "Ammonium nitrate + water"
+          },
+          "why": "Weak base + strong acid.",
+          "example": "Fertiliser ammonium nitrate from this salt.",
+          "remember": "Same neutralisation pattern.",
+          "common_confusion": "NH₄NO₃ is important fertiliser salt.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c06",
+          "name": "Neutralisation is exothermic",
+          "simple_answer": "Neutralisation releases heat — test tube feels warm when acid and base mix.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid + Base → Salt + Water + Heat",
+            "note": "Exothermic reaction"
+          },
+          "why": "NCERT energy note.",
+          "example": "Hand on mixed NaOH + HCl feels warm.",
+          "remember": "Heat released = exothermic.",
+          "common_confusion": "Not all students feel heat with dilute solutions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c07",
+          "name": "H⁺ + OH⁻ → H₂O",
+          "simple_answer": "At ionic level: hydrogen ion from acid combines with hydroxide from base to form water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H⁺ + OH⁻ → H₂O",
+            "note": "Ionic neutralisation"
+          },
+          "why": "Mechanism behind salt + water.",
+          "example": "Net ionic equation for all strong acid–strong base.",
+          "remember": "Real neutralisation is H⁺ + OH⁻.",
+          "common_confusion": "Salt ions remain in solution (spectator ions).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c08",
+          "name": "Uses of neutralisation",
+          "simple_answer": "Antacids for indigestion, treating acidic soil with lime, factory waste treatment.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Neutralisation in daily life"
+          },
+          "why": "Application card.",
+          "example": "Mg(OH)₂ neutralises excess HCl in stomach.",
+          "remember": "Base added to excess acid (or vice versa).",
+          "common_confusion": "Wasps sting basic — vinegar (acid) relieves.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c09",
+          "name": "Activity 2.3 — neutralisation",
+          "simple_answer": "NCERT Activity 2.3: warm test tube when acid and base mixed — exothermic neutralisation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 2.3 — warm tube"
+          },
+          "why": "Lab observation link.",
+          "example": "NaOH + HCl in test tube — feel warmth.",
+          "remember": "Record temperature rise.",
+          "common_confusion": "Compare before mixing vs after.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c10",
+          "name": "Exam template — neutralisation",
+          "simple_answer": "Define neutralisation → general equation → specific example → note exothermic + H⁺ + OH⁻ → H₂O.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: neutralisation template"
+          },
+          "why": "Long-answer structure.",
+          "example": "5-mark: definition + equation + application + exothermic.",
+          "remember": "Four-part answer scores well.",
+          "common_confusion": "Always balance the equation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Metallic Oxides and Acids",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u2_d7_c01",
+          "name": "Metallic oxides are basic",
+          "simple_answer": "Oxides of metals are generally basic — turn red litmus blue, react with acids.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal oxide + Acid → Salt + Water",
+            "note": "Basic oxide"
+          },
+          "why": "Day 7 theme.",
+          "example": "CuO + H₂SO₄ → CuSO₄ + H₂O.",
+          "remember": "Metal oxides = basic oxides.",
+          "common_confusion": "Basic oxide reacts like a base with acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c02",
+          "name": "Copper oxide and sulphuric acid",
+          "simple_answer": "CuO + H₂SO₄ → CuSO₄ + H₂O — black CuO dissolves, blue solution forms.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CuO + H₂SO₄ → CuSO₄ + H₂O",
+            "note": "Copper sulphate + water"
+          },
+          "why": "NCERT Activity 2.4 example.",
+          "example": "Blue CuSO₄ solution after reaction.",
+          "remember": "Basic oxide + acid → salt + water.",
+          "common_confusion": "Same pattern as neutralisation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c03",
+          "name": "Calcium oxide and HCl",
+          "simple_answer": "CaO + 2HCl → CaCl₂ + H₂O — quick lime reacts with acid.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CaO + 2HCl → CaCl₂ + H₂O",
+            "note": "Calcium chloride + water"
+          },
+          "why": "Quick lime is basic oxide.",
+          "example": "Neutralises acid in industrial waste.",
+          "remember": "CaO is basic — not amphoteric.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c04",
+          "name": "Magnesium oxide and acid",
+          "simple_answer": "MgO + 2HCl → MgCl₂ + H₂O — magnesium oxide neutralises acid.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "MgO + 2HCl → MgCl₂ + H₂O",
+            "note": "From burning Mg — basic ash"
+          },
+          "why": "Links Ch 1 MgO to Ch 2.",
+          "example": "White MgO ash from Activity 1.1 is basic.",
+          "remember": "Metal oxide from burning Mg reacts with acid.",
+          "common_confusion": "MgO dissolves in acid — ash is not inert.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c05",
+          "name": "Iron(III) oxide and acid",
+          "simple_answer": "Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O — rust component reacts with acid.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O",
+            "note": "Ferric chloride + water"
+          },
+          "why": "Rust is basic oxide mixture.",
+          "example": "Acid removes rust from iron — but also attacks iron.",
+          "remember": "Metal oxide + acid pattern again.",
+          "common_confusion": "Fe₂O₃ is basic oxide of iron.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c06",
+          "name": "Why metal oxides are basic",
+          "simple_answer": "Metal oxides contain O²⁻ that accepts H⁺ from acid — behave like bases.",
+          "visual": {
+            "type": "placeholder",
+            "label": "O²⁻ accepts H⁺ from acid"
+          },
+          "why": "Conceptual reason.",
+          "example": "Na₂O, CaO, CuO all react with acids.",
+          "remember": "Basic nature from oxide ion.",
+          "common_confusion": "Not all metal oxides — Al₂O₃ is amphoteric (advanced).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c07",
+          "name": "Basic oxide + acid = neutralisation",
+          "simple_answer": "Reaction of basic metal oxide with acid is a type of neutralisation — salt and water formed.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Basic oxide + Acid → Salt + H₂O",
+            "note": "Same as acid + base"
+          },
+          "why": "Unify Ch 2 reactions.",
+          "example": "CuO + H₂SO₄ same product pattern as Cu(OH)₂ + H₂SO₄.",
+          "remember": "Oxide acts as base.",
+          "common_confusion": "No H₂ or CO₂ from oxide + acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c08",
+          "name": "Activity 2.4 — metal oxides",
+          "simple_answer": "NCERT Activity 2.4: react copper oxide with dilute H₂SO₄ — blue solution proves basic oxide.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 2.4 — CuO + acid"
+          },
+          "why": "Lab anchor.",
+          "example": "Black solid dissolves → blue CuSO₄.",
+          "remember": "Observe colour change of solution.",
+          "common_confusion": "Heat may be needed to start CuO reaction.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c09",
+          "name": "Compare metal oxide vs metal with acid",
+          "simple_answer": "Metal + acid → salt + H₂. Metal oxide + acid → salt + H₂O (no gas).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal → H₂ | Metal oxide → H₂O",
+            "note": "Different products"
+          },
+          "why": "Exam distinction.",
+          "example": "CuO + H₂SO₄ gives no gas; Zn + H₂SO₄ gives H₂.",
+          "remember": "Oxide already combined with oxygen.",
+          "common_confusion": "No pop test for oxide + acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c10",
+          "name": "Exam — metallic oxides and acids",
+          "simple_answer": "State metal oxides are basic → give general equation → CuO + H₂SO₄ example → link to neutralisation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: metal oxide + acid"
+          },
+          "why": "Answer template.",
+          "example": "Basic oxide + acid → salt + water.",
+          "remember": "Three-step structured answer.",
+          "common_confusion": "Name salt correctly: CuSO₄ = copper sulphate.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Non-metallic Oxides and Bases",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u2_d8_c01",
+          "name": "Non-metallic oxides are acidic",
+          "simple_answer": "Oxides of non-metals are generally acidic — dissolve in water to form acids; react with bases.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Non-metal oxide + Base → Salt + Water",
+            "note": "Acidic oxide"
+          },
+          "why": "Day 8 theme — mirror of Day 7.",
+          "example": "CO₂ + Ca(OH)₂ → CaCO₃ + H₂O.",
+          "remember": "Non-metal oxides = acidic oxides.",
+          "common_confusion": "Opposite of basic metal oxides.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c02",
+          "name": "Carbon dioxide and lime water",
+          "simple_answer": "CO₂ + Ca(OH)₂ → CaCO₃ + H₂O — lime water turns milky (also CO₂ test).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CO₂ + Ca(OH)₂ → CaCO₃ + H₂O",
+            "note": "Milky precipitate"
+          },
+          "why": "Most important NCERT example.",
+          "example": "Used to test CO₂ from carbonate + acid.",
+          "remember": "Acidic oxide reacts with base.",
+          "common_confusion": "Same equation as CO₂ test — dual purpose.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c03",
+          "name": "Carbon dioxide and sodium hydroxide",
+          "simple_answer": "CO₂ + 2NaOH → Na₂CO₃ + H₂O — CO₂ absorbed by caustic soda.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CO₂ + 2NaOH → Na₂CO₃ + H₂O",
+            "note": "Sodium carbonate + water"
+          },
+          "why": "Industrial gas scrubbing.",
+          "example": "NaOH absorbs CO₂ in labs.",
+          "remember": "Acidic oxide + strong base.",
+          "common_confusion": "Na₂CO₃ is washing soda family.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c04",
+          "name": "Sulphur dioxide and NaOH",
+          "simple_answer": "SO₂ + 2NaOH → Na₂SO₃ + H₂O — sulphur dioxide is acidic oxide.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "SO₂ + 2NaOH → Na₂SO₃ + H₂O",
+            "note": "Sodium sulphite + water"
+          },
+          "why": "Air pollution chemistry link.",
+          "example": "SO₂ from burning sulphur-containing fuel.",
+          "remember": "Non-metal oxide + base → salt + water.",
+          "common_confusion": "SO₂ causes acid rain when dissolved in rain.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c05",
+          "name": "SO₂ and lime water",
+          "simple_answer": "SO₂ + Ca(OH)₂ → CaSO₃ + H₂O — similar to CO₂ but different salt.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "SO₂ + Ca(OH)₂ → CaSO₃ + H₂O",
+            "note": "Calcium sulphite"
+          },
+          "why": "Parallel to CO₂ reaction.",
+          "example": "Acid rain neutralised by limestone.",
+          "remember": "Acidic oxide + Ca(OH)₂ pattern.",
+          "common_confusion": "CaSO₃ not milky like CaCO₃ — different test.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c06",
+          "name": "Acidic oxide + water",
+          "simple_answer": "Many non-metal oxides form acids in water: CO₂ → carbonic acid; SO₂ → sulphurous acid.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CO₂ + H₂O → H₂CO₃",
+            "note": "Acidic oxide forms acid in water"
+          },
+          "why": "Why they are called acidic oxides.",
+          "example": "Rain dissolves CO₂ — slightly acidic rain.",
+          "remember": "Dissolve in water → acid.",
+          "common_confusion": "H₂CO₃ is weak acid — carbonated water.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c07",
+          "name": "Compare metal vs non-metal oxides",
+          "simple_answer": "Metal oxides basic (react with acid); non-metal oxides acidic (react with base).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal oxide + Acid | Non-metal oxide + Base",
+            "note": "Opposite behaviour"
+          },
+          "why": "Key Ch 2 comparison.",
+          "example": "CuO + H₂SO₄ vs CO₂ + Ca(OH)₂.",
+          "remember": "Basic vs acidic oxides — opposite partners.",
+          "common_confusion": "Amphoteric oxides (Al₂O₃) are exception.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c08",
+          "name": "Acid rain connection",
+          "simple_answer": "SO₂ and NO₂ (non-metal oxides) dissolve in rain forming acids — acid rain damages buildings and plants.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Acid rain — non-metal oxides"
+          },
+          "why": "Environmental application.",
+          "example": "Taj Mahal affected by acid rain.",
+          "remember": "Non-metal oxides → acids in atmosphere.",
+          "common_confusion": "Limestone neutralises acid rain on statues.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c09",
+          "name": "Sulphur trioxide and water",
+          "simple_answer": "SO₃ + H₂O → H₂SO₄ — sulphur trioxide forms sulphuric acid in water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "SO₃ + H₂O → H₂SO₄",
+            "note": "Forms sulphuric acid"
+          },
+          "why": "Strong acid formation from oxide.",
+          "example": "Industrial contact process step.",
+          "remember": "Highly acidic oxide in water.",
+          "common_confusion": "SO₃ is dangerous — reacts violently with water.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c10",
+          "name": "Exam — non-metallic oxides and bases",
+          "simple_answer": "State non-metal oxides are acidic → CO₂ + Ca(OH)₂ equation → milky test → compare with basic metal oxides.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: non-metal oxide + base"
+          },
+          "why": "Structured answer.",
+          "example": "Mirror answer to Day 7 metal oxides.",
+          "remember": "CO₂ + Ca(OH)₂ is must-know equation.",
+          "common_confusion": "Identify acidic vs basic oxide from metal/non-metal.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "What Acids and Bases Have in Common",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u2_d9_c01",
+          "name": "Common feature — H⁺ in acids",
+          "simple_answer": "All acids produce hydrogen ions H⁺ (or hydronium H₃O⁺) in aqueous solution.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid → H⁺ + anion",
+            "note": "H⁺ is common to all acids"
+          },
+          "why": "Day 9 unifying idea.",
+          "example": "HCl → H⁺ + Cl⁻ in water.",
+          "remember": "Acids characterised by H⁺ in water.",
+          "common_confusion": "Dry acids (no water) do not show acidic properties.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d9_c02",
+          "name": "Common feature — OH⁻ in bases",
+          "simple_answer": "All bases produce hydroxide ions OH⁻ in aqueous solution (or accept H⁺).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Base → OH⁻ + cation",
+            "note": "OH⁻ is common to all bases"
+          },
+          "why": "Pair with H⁺ in acids.",
+          "example": "NaOH → Na⁺ + OH⁻ in water.",
+          "remember": "Bases characterised by OH⁻ in water.",
+          "common_confusion": "NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ — ammonia accepts H⁺ from water.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d9_c03",
+          "name": "Acids need water to show acidity",
+          "simple_answer": "Dry HCl gas does not turn blue litmus red — water needed to ionise and produce H⁺.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Water needed for acid properties"
+          },
+          "why": "Critical NCERT point.",
+          "example": "HCl gas over dry litmus — no change.",
+          "remember": "No water → no H⁺ → no acid behaviour.",
+          "common_confusion": "Acidic properties in aqueous solution only.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d9_c04",
+          "name": "Bases need water for alkalinity",
+          "simple_answer": "NaOH solid must dissolve in water to produce OH⁻ and show basic properties.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Water needed for base properties"
+          },
+          "why": "Symmetric to acids.",
+          "example": "NaOH pellets in water → red litmus blue.",
+          "remember": "Dissolve in water → OH⁻ ions.",
+          "common_confusion": "Dry base may not affect dry litmus.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d9_c05",
+          "name": "Hydronium ion H₃O⁺",
+          "simple_answer": "In water, H⁺ attaches to H₂O forming hydronium ion H₃O⁺ — actual species in solution.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H⁺ + H₂O → H₃O⁺",
+            "note": "Hydronium ion"
+          },
+          "why": "More accurate than free H⁺.",
+          "example": "HCl + H₂O → H₃O⁺ + Cl⁻.",
+          "remember": "H₃O⁺ is H⁺ in aqueous acid.",
+          "common_confusion": "Textbook often writes H⁺ for simplicity.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d9_c06",
+          "name": "Ionisation of acids",
+          "simple_answer": "Strong acids ionise completely; weak acids partially in water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HCl → H⁺ + Cl⁻ (complete)",
+            "note": "CH₃COOH ⇌ H⁺ + CH₃COO⁻ (partial)"
+          },
+          "why": "Strength vs ionisation.",
+          "example": "Conductivity test: strong acid conducts better.",
+          "remember": "More H⁺ = stronger conductivity.",
+          "common_confusion": "Ionisation degree differs; both produce H⁺.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d9_c07",
+          "name": "Ionisation of bases",
+          "simple_answer": "Strong bases (NaOH, KOH) ionise completely; weak bases (NH₄OH) partially.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NaOH → Na⁺ + OH⁻ (complete)",
+            "note": "NH₄OH ⇌ NH₄⁺ + OH⁻ (partial)"
+          },
+          "why": "Parallel to acids.",
+          "example": "Ca(OH)₂ sparingly soluble — limited OH⁻.",
+          "remember": "More OH⁻ = stronger base in water.",
+          "common_confusion": "Insoluble bases release few OH⁻ ions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d9_c08",
+          "name": "Electrical conductivity",
+          "simple_answer": "Acid and base solutions conduct electricity due to ions H⁺/OH⁻ — electrolytes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ions conduct electricity"
+          },
+          "why": "Lab observation link.",
+          "example": "Bulb glows in HCl and NaOH solutions.",
+          "remember": "Ions carry charge → conductivity.",
+          "common_confusion": "Pure water has very few ions — poor conductor.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d9_c09",
+          "name": "What acids and bases have in common — summary",
+          "simple_answer": "Both are electrolytes in water; acids give H⁺, bases give OH⁻; both react to neutralise each other.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid: H⁺ | Base: OH⁻ | Together: H₂O",
+            "note": "Unifying Ch 2 idea"
+          },
+          "why": "Day 9 synthesis.",
+          "example": "H⁺ + OH⁻ → H₂O in every neutralisation.",
+          "remember": "Ions in water explain all Ch 2 behaviour.",
+          "common_confusion": "Dry state ≠ aqueous behaviour.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d9_c10",
+          "name": "Exam — common features",
+          "simple_answer": "Explain acids produce H⁺ and bases OH⁻ in water; water required; give HCl and NaOH examples.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: H⁺ and OH⁻ common features"
+          },
+          "why": "Answer template.",
+          "example": "Dry HCl no effect on litmus — key point.",
+          "remember": "State need for water + ion equations.",
+          "common_confusion": "Distinguish strength from presence of H⁺.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "Acids and Bases in Water — Ions and Dilution",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u2_d10_c01",
+          "name": "Acids in water — ion formation",
+          "simple_answer": "When acid dissolves in water, it releases H⁺ ions — responsible for all acidic properties.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HA + H₂O → H₃O⁺ + A⁻",
+            "note": "Acid ionisation in water"
+          },
+          "why": "Day 10 focus.",
+          "example": "H₂SO₄ → 2H⁺ + SO₄²⁻ in water.",
+          "remember": "Water enables acid ionisation.",
+          "common_confusion": "Without water, no ionisation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c02",
+          "name": "Bases in water — OH⁻ formation",
+          "simple_answer": "When base dissolves in water, it releases OH⁻ ions — responsible for basic properties.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "BOH → B⁺ + OH⁻",
+            "note": "Base ionisation in water"
+          },
+          "why": "Pair concept.",
+          "example": "KOH → K⁺ + OH⁻.",
+          "remember": "OH⁻ causes red litmus → blue.",
+          "common_confusion": "NH₃ uses water to produce OH⁻ indirectly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c03",
+          "name": "Dilution of acids",
+          "simple_answer": "Dilution means adding water to make acid less concentrated — always add acid to water, never reverse.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Add acid to water slowly",
+            "note": "Never water to conc. acid"
+          },
+          "why": "Critical safety rule.",
+          "example": "Conc. H₂SO₄ + water safely: acid poured into water.",
+          "remember": "Acid to water — with stirring.",
+          "common_confusion": "Water to conc. acid causes violent splashing — burns.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c04",
+          "name": "Why add acid to water",
+          "simple_answer": "Dilution is exothermic; adding acid to large volume of water absorbs heat safely.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Heat released on dilution"
+          },
+          "why": "Safety explanation.",
+          "example": "Conc. H₂SO₄ dilution can boil and spatter.",
+          "remember": "Large water volume spreads heat.",
+          "common_confusion": "Always use glass rod stirring while adding acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c05",
+          "name": "Concentrated vs dilute acid",
+          "simple_answer": "Concentrated = more acid particles per volume; dilute = more water — both can be strong acids.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Concentrated ≠ Strong",
+            "note": "Two different ideas"
+          },
+          "why": "Common confusion resolved.",
+          "example": "Conc. HCl and dilute HCl both strong — differ in concentration.",
+          "remember": "Concentration ≠ strength.",
+          "common_confusion": "Strength = ionisation; concentration = amount dissolved.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c06",
+          "name": "Dilution and ion concentration",
+          "simple_answer": "Diluting acid reduces H⁺ concentration per unit volume — less corrosive but still acidic.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Dilution lowers H⁺ concentration"
+          },
+          "why": "Quantitative idea without formulae.",
+          "example": "Dilute HCl safer for lab metal reactions.",
+          "remember": "More water → fewer H⁺ per mL.",
+          "common_confusion": "Dilute acid still turns blue litmus red.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c07",
+          "name": "Strong acid dilution",
+          "simple_answer": "Even dilute strong acid fully ionised — every molecule gives H⁺, just fewer molecules present.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Dilute HCl: still H⁺ + Cl⁻ fully",
+            "note": "Strength unchanged by dilution"
+          },
+          "why": "Clarify strength vs dilution.",
+          "example": "0.1 M HCl still strong acid.",
+          "remember": "Dilution changes concentration not strength.",
+          "common_confusion": "Weak acid stays weak when diluted.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c08",
+          "name": "Indicators and dilution",
+          "simple_answer": "Dilute acid still turns blue litmus red — indicator detects H⁺ presence not concentration alone.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Dilute acid still acidic"
+          },
+          "why": "Observation link.",
+          "example": "Very dilute HCl still red litmus.",
+          "remember": "Any H⁺ present → acidic to indicator.",
+          "common_confusion": "Universal indicator colour may shift with concentration.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c09",
+          "name": "Preparing dilute HCl in lab",
+          "simple_answer": "Add concentrated HCl slowly to water in beaker, stir with glass rod, wear goggles and lab coat.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Lab: prepare dilute acid"
+          },
+          "why": "Practical procedure.",
+          "example": "Small volume acid into large volume water.",
+          "remember": "Follow acid-to-water rule always.",
+          "common_confusion": "Work in fume cupboard for volatile acids.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c10",
+          "name": "Exam — dilution and ions",
+          "simple_answer": "Explain H⁺/OH⁻ in water; dilution definition; acid-to-water rule; distinguish concentration from strength.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: dilution and ions"
+          },
+          "why": "Combined Day 9–10 answer.",
+          "example": "Never add water to conc. H₂SO₄ — safety mark.",
+          "remember": "Four concepts in one long answer.",
+          "common_confusion": "Include exothermic dilution note.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "pH Scale and Strength of Acids/Bases",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u2_d11_c01",
+          "name": "pH scale definition",
+          "simple_answer": "pH scale measures acidity or alkalinity from 0 to 14 — pH 7 neutral, below 7 acid, above 7 base.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "pH 0–14 | 7 = neutral",
+            "note": "pH scale"
+          },
+          "why": "Central Day 11 concept.",
+          "example": "Pure water pH 7 at 25°C.",
+          "remember": "Lower pH = more acidic; higher = more basic.",
+          "common_confusion": "pH is logarithmic scale — each unit is 10× change.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "pH"
+          ]
+        },
+        {
+          "id": "u2_d11_c02",
+          "name": "pH of acids",
+          "simple_answer": "Acids have pH less than 7 — stronger acids have lower pH (closer to 0).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Acid: pH < 7",
+            "note": "Stronger acid → lower pH"
+          },
+          "why": "Apply scale to acids.",
+          "example": "Stomach acid pH ~1–2.",
+          "remember": "pH 0–6 = acidic range.",
+          "common_confusion": "Do not say pH 0 for all strong acids in school lab.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d11_c03",
+          "name": "pH of bases",
+          "simple_answer": "Bases have pH greater than 7 — stronger bases have higher pH (closer to 14).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Base: pH > 7",
+            "note": "Stronger base → higher pH"
+          },
+          "why": "Apply scale to bases.",
+          "example": "NaOH solution pH ~14.",
+          "remember": "pH 8–14 = basic range.",
+          "common_confusion": "Mild bases pH 8–10; strong bases 12–14.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d11_c04",
+          "name": "Universal indicator",
+          "simple_answer": "Universal indicator is mixture showing different colours across pH 0–14 — full spectrum.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Universal indicator — full pH"
+          },
+          "why": "NCERT pH measurement tool.",
+          "example": "Green at pH 7; red in strong acid; purple in strong base.",
+          "remember": "One indicator for entire pH range.",
+          "common_confusion": "Different from litmus which is red/blue only.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "universal indicator"
+          ]
+        },
+        {
+          "id": "u2_d11_c05",
+          "name": "pH paper",
+          "simple_answer": "pH paper dipped in solution gives colour matched to chart for approximate pH value.",
+          "visual": {
+            "type": "placeholder",
+            "label": "pH paper and colour chart"
+          },
+          "why": "Practical measurement.",
+          "example": "Compare wet paper colour to standard chart.",
+          "remember": "Quick field pH test.",
+          "common_confusion": "Less precise than pH meter.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d11_c06",
+          "name": "Strength vs pH",
+          "simple_answer": "Stronger acid has lower pH at same concentration; stronger base has higher pH.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Strong HCl pH < weak CH₃COOH pH",
+            "note": "Same concentration compared"
+          },
+          "why": "Link strength to pH.",
+          "example": "0.1 M HCl pH ~1; 0.1 M CH₃COOH pH ~3.",
+          "remember": "More H⁺ ionisation → lower pH.",
+          "common_confusion": "Concentration also affects pH — control variables.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d11_c07",
+          "name": "Neutral pH 7",
+          "simple_answer": "pH 7 is neutral — equal H⁺ and OH⁻; pure water and salt solutions may be neutral.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "pH 7 = [H⁺] = [OH⁻]",
+            "note": "Neutral solution"
+          },
+          "why": "Reference point on scale.",
+          "example": "Distilled water pH 7 (at 25°C).",
+          "remember": "Not acidic, not basic.",
+          "common_confusion": "Rain water pH slightly below 7 due to dissolved CO₂.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d11_c08",
+          "name": "pH and H⁺ concentration",
+          "simple_answer": "Lower pH means higher H⁺ concentration — pH measures hydrogen ion concentration.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "More H⁺ → lower pH",
+            "note": "Inverse relationship"
+          },
+          "why": "Conceptual link.",
+          "example": "pH 3 has more H⁺ than pH 5.",
+          "remember": "pH tells how acidic quantitatively.",
+          "common_confusion": "Formula pH = -log[H⁺] — beyond Class 10 scope.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d11_c09",
+          "name": "Mixing acid and base — pH change",
+          "simple_answer": "Adding base to acid raises pH toward 7; adding acid to base lowers pH toward 7.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Neutralisation shifts pH to 7"
+          },
+          "why": "Titration pH idea.",
+          "example": "Excess NaOH added to HCl → pH rises above 7.",
+          "remember": "Neutralisation moves pH toward 7.",
+          "common_confusion": "At exact equivalence, strong acid + strong base → pH 7.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d11_c10",
+          "name": "Exam — pH scale",
+          "simple_answer": "Define pH scale 0–14; pH 7 neutral; universal indicator; compare strong vs weak acid pH.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: pH scale template"
+          },
+          "why": "Answer structure.",
+          "example": "Include stomach pH ~2 as example.",
+          "remember": "Definition + scale + indicator + example.",
+          "common_confusion": "State acid < 7, base > 7 clearly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Importance of pH in Everyday Life",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u2_d12_c01",
+          "name": "pH in soil",
+          "simple_answer": "Plants need specific soil pH; acidic soil treated with lime Ca(OH)₂; basic soil with organic matter.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Soil pH for crops"
+          },
+          "why": "NCERT everyday application.",
+          "example": "Tea coffee grow in acidic soil; cabbage in neutral.",
+          "remember": "Farmer adjusts soil pH for crop.",
+          "common_confusion": "Litmus can test soil solution pH roughly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c02",
+          "name": "pH in stomach",
+          "simple_answer": "Stomach produces HCl pH ~1–2 for digestion; excess acid causes indigestion — treated with antacids.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Stomach pH ~1–2 (HCl)",
+            "note": "Antacid raises pH"
+          },
+          "why": "Health application.",
+          "example": "Mg(OH)₂ or NaHCO₃ neutralises excess acid.",
+          "remember": "Mild base antacid relieves pain.",
+          "common_confusion": "Antacid does not stop normal digestion permanently.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c03",
+          "name": "pH in mouth",
+          "simple_answer": "Tooth decay starts when mouth pH drops below 5.5 — bacteria produce acids from food.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Tooth enamel decays below pH 5.5",
+            "note": "Brush to neutralise acids"
+          },
+          "why": "Dental health link.",
+          "example": "Sugary food → acid → cavity.",
+          "remember": "Keep mouth pH above 5.5.",
+          "common_confusion": "Toothpaste is basic — neutralises mouth acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c04",
+          "name": "Bee sting vs wasp sting",
+          "simple_answer": "Bee sting acidic (formic acid) — treat with baking soda (base); wasp sting basic — treat with vinegar (acid).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Bee: acid → base | Wasp: base → acid",
+            "note": "Opposite treatments"
+          },
+          "why": "Classic NCERT comparison.",
+          "example": "Baking soda paste on bee sting.",
+          "remember": "Neutralise opposite to sting type.",
+          "common_confusion": "Both stings painful — wrong treatment won't help.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c05",
+          "name": "Self-defence by animals",
+          "simple_answer": "Ants and bees inject acid; stingray and many insects inject base — neutralisation explains treatment.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Animal stings — acid or base"
+          },
+          "why": "Biology-chemistry link.",
+          "example": "Nettle hair injects methanoic acid — dock leaf base relieves.",
+          "remember": "Know sting type → choose acid or base remedy.",
+          "common_confusion": "Not all insect bites are acid — identify first.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c06",
+          "name": "pH of river water",
+          "simple_answer": "Living organisms sensitive to pH; factory waste can change river pH and kill fish.",
+          "visual": {
+            "type": "placeholder",
+            "label": "River pH and pollution"
+          },
+          "why": "Environmental application.",
+          "example": "Acidic factory effluent lowers river pH.",
+          "remember": "Monitor pH to protect aquatic life.",
+          "common_confusion": "Neutralise waste before discharge.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c07",
+          "name": "pH in food preservation",
+          "simple_answer": "pH affects bacteria growth; acidic foods (pickles, citrus) preserve better.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Acidic pH preserves food"
+          },
+          "why": "Food science link.",
+          "example": "Pickle in vinegar — low pH prevents spoilage.",
+          "remember": "Low pH inhibits bacterial growth.",
+          "common_confusion": "Not all preservation is pH alone — also salt and sugar.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c08",
+          "name": "Hydrangea flower colour",
+          "simple_answer": "NCERT mentions soil pH affects flower colour — acidic soil blue flowers, basic soil pink.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Soil pH changes flower colour"
+          },
+          "why": "Interesting NCERT example.",
+          "example": "Gardeners adjust soil pH for colour.",
+          "remember": "pH affects plant pigment availability.",
+          "common_confusion": "Memorable exam example.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c09",
+          "name": "Measuring pH at home",
+          "simple_answer": "Litmus, turmeric, universal indicator paper can estimate pH of soil, water, and food samples.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Home pH testing"
+          },
+          "why": "Practical citizen science.",
+          "example": "Turmeric on soap — red-brown confirms base.",
+          "remember": "Simple indicators for everyday checks.",
+          "common_confusion": "pH meter most accurate — not home usual.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c10",
+          "name": "Exam — pH in everyday life",
+          "simple_answer": "Give three examples: soil pH + lime, stomach + antacid, bee/wasp sting + treatment; explain each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: everyday pH examples"
+          },
+          "why": "5-mark application question.",
+          "example": "Three NCERT examples minimum for full marks.",
+          "remember": "Each example: situation + pH + remedy.",
+          "common_confusion": "Bee vs wasp opposite treatment — favourite exam trap.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Salts — Introduction and Family of Salts",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u2_d13_c01",
+          "name": "What is a salt?",
+          "simple_answer": "Salt is ionic compound formed from acid-base reaction, named by cation + anion — NaCl, ZnSO₄, CuSO₄.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Salt = Cation + Anion",
+            "note": "e.g. Na⁺Cl⁻"
+          },
+          "why": "Day 13 introduction.",
+          "example": "NaCl from HCl + NaOH.",
+          "remember": "Positive + negative ion combined.",
+          "common_confusion": "Salts can be acidic, basic, or neutral — Day 14.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "salt"
+          ]
+        },
+        {
+          "id": "u2_d13_c02",
+          "name": "Family of salts — NaCl",
+          "simple_answer": "Sodium chloride NaCl from HCl + NaOH — table salt, essential for life and industry.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HCl + NaOH → NaCl + H₂O",
+            "note": "Common salt"
+          },
+          "why": "Start of salt family.",
+          "example": "Preservation and seasoning.",
+          "remember": "Chloride from HCl; sodium from NaOH.",
+          "common_confusion": "NaCl source for chlor-alkali industry — Day 15.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c03",
+          "name": "Zinc sulphate ZnSO₄",
+          "simple_answer": "ZnSO₄ from H₂SO₄ + Zn or ZnO + H₂SO₄ — white crystals used in medicine and agriculture.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn + H₂SO₄ → ZnSO₄ + H₂",
+            "note": "Or ZnO + H₂SO₄ → ZnSO₄ + H₂O"
+          },
+          "why": "Salt from sulphuric acid family.",
+          "example": "Zinc sulphate eye drops.",
+          "remember": "Sulphate from H₂SO₄.",
+          "common_confusion": "Same salt from metal or basic oxide route.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c04",
+          "name": "Copper sulphate CuSO₄",
+          "simple_answer": "CuSO₄·5H₂O is blue vitriol — from CuO + H₂SO₄; used in agriculture and electroplating.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CuO + H₂SO₄ → CuSO₄ + H₂O",
+            "note": "Blue crystals"
+          },
+          "why": "Distinctive blue salt.",
+          "example": "Fungicide in farming.",
+          "remember": "Copper sulphate — sulphate family.",
+          "common_confusion": "Water of crystallisation — Day 16.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c05",
+          "name": "Sodium sulphate Na₂SO₄",
+          "simple_answer": "Na₂SO₄ from H₂SO₄ + Na₂CO₃ or NaOH — white solid, detergent industry.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H₂SO₄ + Na₂CO₃ → Na₂SO₄ + H₂O + CO₂",
+            "note": "Sodium sulphate"
+          },
+          "why": "Sulphate salt example.",
+          "example": "By-product of chemical industry.",
+          "remember": "Sulphate from sulphuric acid.",
+          "common_confusion": "Different from sodium sulphite Na₂SO₃.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c06",
+          "name": "Calcium chloride CaCl₂",
+          "simple_answer": "CaCl₂ from HCl + CaCO₃ or CaO + HCl — de-icing roads, drying agent.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂",
+            "note": "Calcium chloride"
+          },
+          "why": "Chloride family salt.",
+          "example": "Hygroscopic — absorbs moisture.",
+          "remember": "Chloride from hydrochloric acid.",
+          "common_confusion": "Used to melt ice on roads.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c07",
+          "name": "Potassium nitrate KNO₃",
+          "simple_answer": "KNO₃ from HNO₃ + KOH — fertiliser and gunpowder component.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HNO₃ + KOH → KNO₃ + H₂O",
+            "note": "Potassium nitrate"
+          },
+          "why": "Nitrate family salt.",
+          "example": "Nitrate fertiliser for plants.",
+          "remember": "Nitrate from nitric acid.",
+          "common_confusion": "Also called saltpetre historically.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c08",
+          "name": "Naming salts",
+          "simple_answer": "Salt name: metal/non-metal cation + acid radical — chloride, sulphate, nitrate, acetate.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HCl → chloride | H₂SO₄ → sulphate | HNO₃ → nitrate",
+            "note": "Acid determines anion name"
+          },
+          "why": "Naming rule.",
+          "example": "CuSO₄ = copper sulphate.",
+          "remember": "Cation first, then anion.",
+          "common_confusion": "Use -ate for acids with -ic (sulphuric → sulphate).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c09",
+          "name": "Salts from different acids",
+          "simple_answer": "Same metal gives different salts with different acids: Zn + HCl → ZnCl₂; Zn + H₂SO₄ → ZnSO₄.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Same metal, different salts"
+          },
+          "why": "Compare salt family.",
+          "example": "Acid anion determines salt type.",
+          "remember": "Metal cation same; anion changes.",
+          "common_confusion": "Exam: write two salts of zinc with two acids.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c10",
+          "name": "Exam — salts introduction",
+          "simple_answer": "Define salt → formation from neutralisation → name three salts with equations → family from HCl, H₂SO₄, HNO₃.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: salts introduction"
+          },
+          "why": "Long-answer template.",
+          "example": "NaCl, ZnSO₄, CuSO₄ as examples.",
+          "remember": "Definition + formation + examples.",
+          "common_confusion": "Include balanced equations.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "pH of Salts",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u2_d14_c01",
+          "name": "pH of salt solutions — overview",
+          "simple_answer": "Salt solutions can be neutral, acidic, or basic depending on strength of acid and base that formed them.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Strong acid + Strong base → Neutral salt",
+            "note": "pH ≈ 7"
+          },
+          "why": "Day 14 core idea.",
+          "example": "NaCl solution pH 7.",
+          "remember": "Parent acid and base strength matters.",
+          "common_confusion": "Not all salts are neutral.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c02",
+          "name": "Strong acid + strong base salt",
+          "simple_answer": "Salts from strong acid and strong base are neutral — pH 7 — e.g. NaCl, KNO₃.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HCl + NaOH → NaCl (pH 7)",
+            "note": "Neutral salt solution"
+          },
+          "why": "First combination.",
+          "example": "NaCl aqueous — no excess H⁺ or OH⁻.",
+          "remember": "Neither ion hydrolyses significantly.",
+          "common_confusion": "K₂SO₄ from H₂SO₄ + KOH also neutral.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c03",
+          "name": "Strong acid + weak base salt",
+          "simple_answer": "Salts from strong acid and weak base are acidic — pH below 7 — e.g. NH₄Cl.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HCl + NH₄OH → NH₄Cl (pH < 7)",
+            "note": "Acidic salt solution"
+          },
+          "why": "Second combination.",
+          "example": "NH₄Cl solution turns blue litmus red slightly.",
+          "remember": "NH₄⁺ ion causes acidity in water.",
+          "common_confusion": "Ammonium salts are acidic.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c04",
+          "name": "Weak acid + strong base salt",
+          "simple_answer": "Salts from weak acid and strong base are basic — pH above 7 — e.g. CH₃COONa.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₃COOH + NaOH → CH₃COONa (pH > 7)",
+            "note": "Basic salt solution"
+          },
+          "why": "Third combination.",
+          "example": "Sodium acetate — basic solution.",
+          "remember": "CH₃COO⁻ ion causes basicity in water.",
+          "common_confusion": "Acetate salts are basic.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c05",
+          "name": "Weak acid + weak base salt",
+          "simple_answer": "Salts from weak acid and weak base — pH depends on relative strength — near 7 often.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CH₃COOH + NH₄OH → CH₃COONH₄",
+            "note": "pH near 7 (both weak)"
+          },
+          "why": "Fourth combination.",
+          "example": "Ammonium acetate — approximately neutral.",
+          "remember": "Both ions hydrolyse — pH near 7.",
+          "common_confusion": "Less emphasis in Class 10 exams.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c06",
+          "name": "Testing salt solution pH",
+          "simple_answer": "Use universal indicator or pH paper on salt solution — compare to pH 7 reference.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Test salt with pH paper"
+          },
+          "why": "Practical verification.",
+          "example": "NaCl green (7); NH₄Cl orange-red (<7).",
+          "remember": "Indicator shows acidic/basic/neutral salt.",
+          "common_confusion": "Must dissolve salt in water first.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c07",
+          "name": "Sodium chloride — neutral",
+          "simple_answer": "NaCl from HCl + NaOH — strong acid + strong base — aqueous solution pH 7.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NaCl(aq) pH = 7",
+            "note": "Neutral salt"
+          },
+          "why": "Most common neutral example.",
+          "example": "Table salt solution neither acidic nor basic.",
+          "remember": "Gold standard neutral salt.",
+          "common_confusion": "Ions Na⁺ and Cl⁻ do not affect pH.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c08",
+          "name": "Ammonium chloride — acidic",
+          "simple_answer": "NH₄Cl from HCl + NH₄OH — strong acid + weak base — solution pH below 7.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NH₄Cl(aq) pH < 7",
+            "note": "Acidic salt"
+          },
+          "why": "Most common acidic salt example.",
+          "example": "Used in cough medicine and batteries.",
+          "remember": "NH₄⁺ from weak base parent causes acidity.",
+          "common_confusion": "Do not confuse with NH₄OH which is base.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c09",
+          "name": "Sodium carbonate — basic",
+          "simple_answer": "Na₂CO₃ (washing soda) — basic salt — pH above 7; used for cleaning.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Na₂CO₃(aq) pH > 7",
+            "note": "Basic salt"
+          },
+          "why": "Common basic salt — from weak acid CO₂/H₂CO₃.",
+          "example": "Washing soda cleans grease in basic medium.",
+          "remember": "Carbonate ion CO₃²⁻ makes solution basic.",
+          "common_confusion": "Na₂CO₃ not from single neutralisation — from NaOH + CO₂.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c10",
+          "name": "Exam — pH of salts",
+          "simple_answer": "Four combinations table: strong+strong neutral, strong acid+weak base acidic, weak acid+strong base basic; give examples.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: salt pH table"
+          },
+          "why": "Table-format answer scores well.",
+          "example": "NaCl, NH₄Cl, CH₃COONa as three examples.",
+          "remember": "Memorise four combinations + one example each.",
+          "common_confusion": "Parent weakness determines salt pH.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Chemicals from Common Salt",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u2_d15_c01",
+          "name": "Common salt NaCl — industry source",
+          "simple_answer": "NaCl (common salt) is raw material for chlor-alkali industry — produces NaOH, Cl₂, H₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2NaCl + 2H₂O → 2NaOH + Cl₂ + H₂",
+            "note": "Chlor-alkali process (electrolysis)"
+          },
+          "why": "Day 15 industrial theme.",
+          "example": "Brine electrolysis in factories.",
+          "remember": "Salt + water → three valuable products.",
+          "common_confusion": "Electrolysis of aqueous NaCl (brine).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c02",
+          "name": "Sodium hydroxide from chlor-alkali",
+          "simple_answer": "NaOH (caustic soda) from chlor-alkali — used in soap, paper, textiles, and drain cleaners.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NaOH — caustic soda",
+            "note": "From NaCl electrolysis"
+          },
+          "why": "First chlor-alkali product.",
+          "example": "White pellets absorb moisture from air.",
+          "remember": "Major industrial alkali.",
+          "common_confusion": "Handle with care — corrosive.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c03",
+          "name": "Chlorine from chlor-alkali",
+          "simple_answer": "Cl₂ from chlor-alkali — used in water purification, PVC, bleaches, and disinfectants.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Cl₂ — greenish gas",
+            "note": "Water treatment"
+          },
+          "why": "Second product.",
+          "example": "Municipal water chlorination kills bacteria.",
+          "remember": "Greenish-yellow gas — poisonous.",
+          "common_confusion": "Never mix bleach with acid — toxic Cl₂.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c04",
+          "name": "Hydrogen from chlor-alkali",
+          "simple_answer": "H₂ from chlor-alkali — used as fuel, in margarine hardening, and ammonia manufacture.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H₂ — by-product of brine electrolysis",
+            "note": "Clean fuel potential"
+          },
+          "why": "Third product.",
+          "example": "H₂ collected at cathode during electrolysis.",
+          "remember": "Valuable fuel gas.",
+          "common_confusion": "Pop test applies to this H₂ too.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c05",
+          "name": "Bleaching powder Ca(OCl)₂",
+          "simple_answer": "Bleaching powder calcium oxychloride Ca(OCl)₂ — from Cl₂ + slaked lime; bleaches cotton and disinfects water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Ca(OCl)₂ — bleaching powder",
+            "note": "Cl₂ + Ca(OH)₂ → bleaching powder"
+          },
+          "why": "NCERT must-know chemical.",
+          "example": "Used to bleach cotton in textile industry.",
+          "remember": "Chlorine content gives bleaching power.",
+          "common_confusion": "Store away from acids — releases Cl₂.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c06",
+          "name": "Baking soda NaHCO₃",
+          "simple_answer": "Sodium hydrogencarbonate NaHCO₃ — baking soda; reacts with acid to release CO₂; antacid; fire extinguisher.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NaHCO₃ + H⁺ → Na⁺ + H₂O + CO₂",
+            "note": "Baking soda"
+          },
+          "why": "Everyday chemical from salt industry.",
+          "example": "Cakes rise from CO₂ in oven heat + acid.",
+          "remember": "Mild base — neutralises stomach acid.",
+          "common_confusion": "Heating alone also decomposes: NaHCO₃ → Na₂CO₃ + H₂O + CO₂.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c07",
+          "name": "Washing soda Na₂CO₃·10H₂O",
+          "simple_answer": "Sodium carbonate decahydrate Na₂CO₃·10H₂O — washing soda; cleaning agent; removes hardness.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Na₂CO₃·10H₂O — washing soda",
+            "note": "10 water molecules of crystallisation"
+          },
+          "why": "Links to Day 16 water of crystallisation.",
+          "example": "Cleans greasy clothes in basic solution.",
+          "remember": "Basic salt — pH > 7 in solution.",
+          "common_confusion": "Anhydrous Na₂CO₃ vs decahydrate — 10 H₂O.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c08",
+          "name": "Plaster of Paris CaSO₄·½H₂O",
+          "simple_answer": "Calcium sulphate hemihydrate CaSO₄·½H₂O — plaster of Paris; sets with water to gypsum.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CaSO₄·½H₂O + 1½H₂O → CaSO₄·2H₂O",
+            "note": "Plaster of Paris → gypsum"
+          },
+          "why": "Medical casts and construction.",
+          "example": "Broken bone cast hardens as gypsum.",
+          "remember": "Heat gypsum to get plaster of Paris.",
+          "common_confusion": "Setting is hydration back to gypsum.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c09",
+          "name": "Gypsum CaSO₄·2H₂O",
+          "simple_answer": "Gypsum CaSO₄·2H₂O — calcium sulphate dihydrate; heated to make plaster of Paris.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CaSO₄·2H₂O — gypsum",
+            "note": "Heat → CaSO₄·½H₂O (POP)"
+          },
+          "why": "Pair with plaster of Paris.",
+          "example": "Gypsum board in buildings.",
+          "remember": "Dihydrate form stable at room temperature.",
+          "common_confusion": "POP + water → gypsum (setting reaction).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c10",
+          "name": "Exam — chemicals from common salt",
+          "simple_answer": "Chlor-alkali products (NaOH, Cl₂, H₂) + bleaching powder + baking soda + washing soda + gypsum/POP with uses.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam: chemicals from NaCl"
+          },
+          "why": "5-mark industrial chemistry question.",
+          "example": "List each chemical + one use minimum.",
+          "remember": "Start from NaCl brine electrolysis.",
+          "common_confusion": "Include equations where asked.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "Water of Crystallisation and Dry Crystals",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u2_d16_c01",
+          "name": "Water of crystallisation definition",
+          "simple_answer": "Fixed number of water molecules attached in crystal structure of some salts — e.g. CuSO₄·5H₂O.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CuSO₄·5H₂O",
+            "note": "5 H₂O per formula unit"
+          },
+          "why": "Day 16 core concept.",
+          "example": "Water part of crystal lattice.",
+          "remember": "Dot formula shows water of crystallisation.",
+          "common_confusion": "Different from wet salt — water is chemically bound.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "water of crystallisation"
+          ]
+        },
+        {
+          "id": "u2_d16_c02",
+          "name": "Copper sulphate pentahydrate",
+          "simple_answer": "CuSO₄·5H₂O — blue vitriol — blue crystals due to water of crystallisation.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CuSO₄·5H₂O — blue",
+            "note": "5 water molecules"
+          },
+          "why": "Classic NCERT example.",
+          "example": "Blue crystals in lab reagent bottle.",
+          "remember": "Five H₂O per CuSO₄ unit.",
+          "common_confusion": "Anhydrous CuSO₄ is white — not blue.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c03",
+          "name": "Heating blue copper sulphate",
+          "simple_answer": "Heat CuSO₄·5H₂O → white anhydrous CuSO₄ + water droplets on cool tube wall.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CuSO₄·5H₂O → CuSO₄ + 5H₂O",
+            "note": "Heat removes water"
+          },
+          "why": "NCERT Activity — test for water.",
+          "example": "Colour change blue → white on heating.",
+          "remember": "Water driven off by heat.",
+          "common_confusion": "Reversible — add water, turns blue again.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c04",
+          "name": "Anhydrous copper sulphate test for water",
+          "simple_answer": "White anhydrous CuSO₄ turns blue on adding water — used to test for presence of water.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Anhydrous CuSO₄ — water test"
+          },
+          "why": "Qualitative test for water.",
+          "example": "Drop water on white powder — turns blue.",
+          "remember": "Blue again = water present.",
+          "common_confusion": "Used as desiccant to absorb water vapour.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c05",
+          "name": "Dry crystals vs hydrated crystals",
+          "simple_answer": "Dry crystals may still contain water of crystallisation — 'dry' means no free liquid water on surface.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Dry ≠ anhydrous"
+          },
+          "why": "Common confusion resolved.",
+          "example": "Blue CuSO₄ crystals feel dry but contain 5H₂O.",
+          "remember": "Water of crystallisation is inside crystal.",
+          "common_confusion": "Anhydrous = no water in formula at all.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c06",
+          "name": "Glauber's salt Na₂SO₄·10H₂O",
+          "simple_answer": "Sodium sulphate decahydrate Na₂SO₄·10H₂O — loses water on heating; used in medicine historically.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Na₂SO₄·10H₂O",
+            "note": "10 H₂O — Glauber's salt"
+          },
+          "why": "Second NCERT hydrated salt.",
+          "example": "Large transparent crystals.",
+          "remember": "Ten water molecules per unit.",
+          "common_confusion": "Related to washing soda hydrate.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c07",
+          "name": "Washing soda and water of crystallisation",
+          "simple_answer": "Na₂CO₃·10H₂O — washing soda — 10 water molecules; effloresces in dry air.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Na₂CO₃·10H₂O",
+            "note": "Washing soda decahydrate"
+          },
+          "why": "Links Day 15 and Day 16.",
+          "example": "Powdery white when water lost to air.",
+          "remember": "Efflorescence = losing surface water.",
+          "common_confusion": "Anhydrous Na₂CO₃ more soluble handling in industry.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c08",
+          "name": "Efflorescence",
+          "simple_answer": "Some hydrated salts lose water of crystallisation on exposure to dry air — powdery surface forms.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Efflorescence — loses water to air"
+          },
+          "why": "Property of hydrated salts.",
+          "example": "Washing soda left open becomes powdery.",
+          "remember": "Water escapes to atmosphere.",
+          "common_confusion": "Opposite of hygroscopic (absorbs water).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c09",
+          "name": "Gypsum and plaster water of crystallisation",
+          "simple_answer": "Gypsum CaSO₄·2H₂O has 2 H₂O; plaster CaSO₄·½H₂O has half H₂O — interconvert on heat/hydrate.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Gypsum: 2H₂O | POP: ½H₂O",
+            "note": "Heat and hydrate cycle"
+          },
+          "why": "Industrial crystallisation example.",
+          "example": "POP sets by rejoining water as gypsum.",
+          "remember": "Different hydration levels same salt.",
+          "common_confusion": "Heating gypsum drives off 1.5 H₂O to make POP.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c10",
+          "name": "Unit 2 complete",
+          "simple_answer": "Unit 2 Acids, Bases and Salts complete — all 160 cards; proceed to Practice when unlocked.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Unit 2 complete — 160 cards"
+          },
+          "why": "Completion card.",
+          "example": "200 MCQs in bank when available.",
+          "remember": "Concepts done → practice.",
+          "common_confusion": "Review pH, neutralisation, and industrial chemicals.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

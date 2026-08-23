@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "unit_id": 1,
+    "description": "Common NCERT Ch 1 chemistry misconceptions"
+  },
+  "misconception_categories": [
+    "coefficient_subscript_confusion",
+    "unbalanced_equation_accepted",
+    "oxidation_reduction_swap",
+    "displacement_reactivity_error",
+    "physical_vs_chemical_change"
+  ],
+  "machines": {
+    "coefficient_subscript_confusion": {
+      "feedback": "Coefficients multiply whole formulae; subscripts are part of the formula and must not be changed when balancing.",
+      "concept_ids": ["u1_d5_c03", "u1_d6_c02", "u1_d6_c05"],
+      "calm_prompt": "Count atoms on each side before changing any numbers."
+    },
+    "unbalanced_equation_accepted": {
+      "feedback": "A chemical equation must be balanced — same number of each type of atom on both sides.",
+      "concept_ids": ["u1_d5_c01", "u1_d5_c04", "u1_d6_c01"],
+      "calm_prompt": "Use the hit-and-trial method: start with the most complex molecule."
+    },
+    "oxidation_reduction_swap": {
+      "feedback": "Oxidation is gain of oxygen (or loss of hydrogen); reduction is loss of oxygen (or gain of hydrogen).",
+      "concept_ids": ["u1_d11_c01", "u1_d11_c03", "u1_d11_c06"],
+      "calm_prompt": "OIL RIG can help: Oxidation Is Loss (of electrons), Reduction Is Gain."
+    },
+    "displacement_reactivity_error": {
+      "feedback": "A more reactive metal displaces a less reactive metal from its salt solution.",
+      "concept_ids": ["u1_d9_c02", "u1_d9_c04", "u1_d9_c07"],
+      "calm_prompt": "Compare reactivity series: Zn > Fe > Cu."
+    },
+    "physical_vs_chemical_change": {
+      "feedback": "A chemical change forms new substances with different properties; physical change does not.",
+      "concept_ids": ["u1_d1_c02", "u1_d2_c01", "u1_d2_c05"],
+      "calm_prompt": "Ask: can I get the original substance back easily?"
+    }
+  }
+}

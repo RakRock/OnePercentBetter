@@ -1,0 +1,2712 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 1,
+    "unit_title": "Chemical Reactions and Equations",
+    "ncert": "Class 10 Science, Chapter 1 (Chemistry)",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_chemistry_unit1_concepts",
+    "session_kind_mcq": "harshit_chemistry_unit1_mcq"
+  },
+  "glossary": [
+    {
+      "term": "chemical reaction",
+      "definition": "Process where reactants change into new products with different properties."
+    },
+    {
+      "term": "chemical equation",
+      "definition": "Symbolic representation of a reaction using formulae and state symbols."
+    },
+    {
+      "term": "balanced equation",
+      "definition": "Equation with equal numbers of each atom on both sides (conservation of mass)."
+    },
+    {
+      "term": "combination reaction",
+      "definition": "Two or more substances combine to form a single product."
+    },
+    {
+      "term": "decomposition reaction",
+      "definition": "Single compound breaks into two or more simpler substances."
+    },
+    {
+      "term": "displacement reaction",
+      "definition": "More reactive element displaces less reactive element from its compound."
+    },
+    {
+      "term": "double displacement",
+      "definition": "Exchange of ions between two compounds, often forming a precipitate."
+    },
+    {
+      "term": "oxidation",
+      "definition": "Gain of oxygen or loss of hydrogen (or loss of electrons)."
+    },
+    {
+      "term": "reduction",
+      "definition": "Loss of oxygen or gain of hydrogen (or gain of electrons)."
+    },
+    {
+      "term": "corrosion",
+      "definition": "Gradual destruction of metals by chemical reaction with environment (e.g. rusting)."
+    },
+    {
+      "term": "rancidity",
+      "definition": "Oxidation of fats and oils causing unpleasant smell and taste in food."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "Chemical Reactions Around Us",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d1_c01",
+          "name": "What is a chemical reaction?",
+          "simple_answer": "A chemical reaction is a process in which one or more substances change into new substances with different properties.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reactants → Products"
+          },
+          "why": "Foundation of Ch 1 — everything else builds on this.",
+          "example": "Burning magnesium ribbon gives white ash (magnesium oxide).",
+          "remember": "New substances form in a chemical reaction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "chemical reaction"
+          ]
+        },
+        {
+          "id": "u1_d1_c02",
+          "name": "Reactants and products",
+          "simple_answer": "Substances that take part in a reaction are reactants; new substances formed are products.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Reactants → Products",
+            "note": "Arrow shows direction of change"
+          },
+          "why": "Standard vocabulary for all equations.",
+          "example": "In Mg + O₂ → MgO, Mg and O₂ are reactants; MgO is product.",
+          "remember": "Left side = reactants; right side = products.",
+          "common_confusion": "Products are not always fewer in number than reactants.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reactant",
+            "product"
+          ]
+        },
+        {
+          "id": "u1_d1_c03",
+          "name": "Chemical reactions everywhere",
+          "simple_answer": "Cooking, rusting, digestion, respiration, and burning are everyday chemical reactions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Everyday chemical change"
+          },
+          "why": "NCERT opens with familiar examples.",
+          "example": "Curd forms from milk; iron gate rusts in rain.",
+          "remember": "Chemistry is not only in the lab.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c04",
+          "name": "Physical vs chemical change",
+          "simple_answer": "Physical change: same substance, altered form (melting ice). Chemical change: new substance with new properties.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Physical vs chemical change"
+          },
+          "why": "Students must distinguish before writing equations.",
+          "example": "Breaking a chalk is physical; burning it is chemical.",
+          "remember": "New substance + new properties → chemical change.",
+          "common_confusion": "Dissolving salt in water is physical, not chemical.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c05",
+          "name": "Activity 1.1 — magnesium ribbon",
+          "simple_answer": "Clean Mg ribbon burns with dazzling white flame; white powdery ash (MgO) forms.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 1.1 — Mg burning"
+          },
+          "why": "First NCERT lab activity in Ch 1.",
+          "example": "Hold ribbon with tongs; flame is very bright.",
+          "remember": "Mg + O₂ → MgO (combination reaction).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c06",
+          "name": "Magnesium oxide ash",
+          "simple_answer": "White ash from burning magnesium is magnesium oxide (MgO) — a new compound, not leftover Mg.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2Mg + O₂ → 2MgO",
+            "note": "Combination reaction"
+          },
+          "why": "Links Activity 1.1 to products.",
+          "example": "Ash is basic oxide; dissolves in water to form Mg(OH)₂.",
+          "remember": "Burning Mg gives magnesium oxide.",
+          "common_confusion": "Ash is not 'burnt metal dust' — it is a compound.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c07",
+          "name": "Why clean the Mg ribbon?",
+          "simple_answer": "Magnesium ribbon is cleaned with sandpaper to remove oxide layer so it burns readily.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Clean ribbon before burning"
+          },
+          "why": "Practical step in Activity 1.1.",
+          "example": "Oxide coating slows reaction with air.",
+          "remember": "Remove surface oxide before heating.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c08",
+          "name": "Observation skills in lab",
+          "simple_answer": "Record what you see: flame colour, smoke, residue colour, temperature change.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Observe and record"
+          },
+          "why": "Scientific method in school activities.",
+          "example": "Dazzling white flame + white ash + heat released.",
+          "remember": "Good notes mention colour, state, and heat.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c09",
+          "name": "Energy in chemical reactions",
+          "simple_answer": "Many reactions release heat (exothermic); some absorb heat (endothermic).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Exothermic: releases heat",
+            "note": "Endothermic: absorbs heat"
+          },
+          "why": "Temperature change is one sign of reaction.",
+          "example": "Burning Mg feels hot — exothermic.",
+          "remember": "Heat change often accompanies chemical reactions.",
+          "common_confusion": "Not all reactions feel hot to touch immediately.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c10",
+          "name": "Chapter 1 roadmap",
+          "simple_answer": "Ch 1 covers signs of reactions, equations, balancing, reaction types, and redox in daily life.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 1 roadmap"
+          },
+          "why": "Orient learner to 16-day plan.",
+          "example": "Activities 1.1–1.3 introduce signs; later sections classify reactions.",
+          "remember": "Signs → equations → types → redox → corrosion/rancidity.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Signs of a Chemical Reaction",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d2_c01",
+          "name": "Signs of a chemical reaction",
+          "simple_answer": "A chemical reaction may show change in state, colour, gas evolution, or temperature change.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Four signs of reaction"
+          },
+          "why": "NCERT lists four observable clues.",
+          "example": "Any one sign may appear — not all four every time.",
+          "remember": "Four signs: state, colour, gas, temperature.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c02",
+          "name": "Change in state",
+          "simple_answer": "Reactants and products may differ in physical state — solid, liquid, or gas.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Change in state"
+          },
+          "why": "First sign in NCERT list.",
+          "example": "Zn (solid) + HCl (liquid) → H₂ (gas) + solution.",
+          "remember": "Watch for new solid, liquid, or gas forming.",
+          "common_confusion": "State change alone does not prove chemical change (melting).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c03",
+          "name": "Change in colour",
+          "simple_answer": "A visible colour change often indicates a new substance has formed.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Change in colour"
+          },
+          "why": "Second sign; Activity 1.2 is classic.",
+          "example": "Colourless solutions → bright yellow precipitate.",
+          "remember": "New colour usually means new substance.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c04",
+          "name": "Evolution of a gas",
+          "simple_answer": "Bubbles or gas given off (often with sound or smell) suggest a chemical reaction.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gas evolution"
+          },
+          "why": "Third sign; Activity 1.3.",
+          "example": "Zn + dil HCl → hydrogen bubbles at surface.",
+          "remember": "Bubbles in acid + metal often mean H₂.",
+          "common_confusion": "Carbonated drink fizz is physical release of dissolved CO₂.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c05",
+          "name": "Change in temperature",
+          "simple_answer": "Reaction vessel feels hotter (exothermic) or colder (endothermic) than before.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Temperature change"
+          },
+          "why": "Fourth sign.",
+          "example": "Hand near test tube of burning Mg feels warmth.",
+          "remember": "Hot or cold test tube → likely chemical change.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c06",
+          "name": "Activity 1.2 — lead nitrate + KI",
+          "simple_answer": "Mix Pb(NO₃)₂ and KI solutions → yellow precipitate of lead iodide (PbI₂).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Pb(NO₃)₂ + 2KI → PbI₂ ↓ + 2KNO₃",
+            "note": "Yellow precipitate"
+          },
+          "why": "Double displacement producing insoluble salt.",
+          "example": "Instant yellow solid in colourless mix.",
+          "remember": "Two solutions → yellow solid = PbI₂.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c07",
+          "name": "Precipitate meaning",
+          "simple_answer": "Precipitate is an insoluble solid that separates from a solution during a reaction.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Precipitate (insoluble solid)"
+          },
+          "why": "Key term for Activity 1.2 and BaSO₄ reactions.",
+          "example": "Yellow PbI₂ settles in test tube.",
+          "remember": "Solid forming from solution = precipitate.",
+          "common_confusion": "Precipitate is not always coloured.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c08",
+          "name": "Activity 1.3 — zinc and HCl",
+          "simple_answer": "Zn granules in dilute HCl produce hydrogen gas bubbles; zinc dissolves.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn + 2HCl → ZnCl₂ + H₂ ↑",
+            "note": "Gas evolution sign"
+          },
+          "why": "Displacement reaction + gas evolution.",
+          "example": "Pop sound when lighted splint brought near mouth of tube.",
+          "remember": "Metal + acid → salt + hydrogen gas.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c09",
+          "name": "Testing hydrogen gas",
+          "simple_answer": "Hydrogen burns with a pop sound when a burning splint is held at the tube mouth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "H₂ — pop test"
+          },
+          "why": "Standard school test for H₂.",
+          "example": "Activity 1.3 confirmation step.",
+          "remember": "Pop sound → likely hydrogen.",
+          "common_confusion": "Do not confuse with oxygen (relights splint).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c10",
+          "name": "Signs are clues not proof alone",
+          "simple_answer": "One sign suggests a reaction; combine observations and equation writing for certainty.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Signs are clues"
+          },
+          "why": "Avoid over-claiming from single observation.",
+          "example": "Dissolving sugar looks like change but is physical.",
+          "remember": "Use signs together with new substance evidence.",
+          "common_confusion": "Boiling water shows bubbles but is physical change.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Chemical Equations — Introduction",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d3_c01",
+          "name": "Why write chemical equations?",
+          "simple_answer": "Equations summarise a reaction briefly using symbols — easier than long sentences.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Equations summarise reactions"
+          },
+          "why": "Motivation before word/symbol forms.",
+          "example": "One line replaces a paragraph of description.",
+          "remember": "Equations are shorthand for reactions.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c02",
+          "name": "Word equation",
+          "simple_answer": "A word equation names reactants and products in words, separated by plus and arrow.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Magnesium + Oxygen → Magnesium oxide",
+            "note": "Word equation"
+          },
+          "why": "First step before symbols.",
+          "example": "From Activity 1.1: magnesium + oxygen → magnesium oxide.",
+          "remember": "Words + arrow; no symbols yet.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "word equation"
+          ]
+        },
+        {
+          "id": "u1_d3_c03",
+          "name": "Arrow meaning in equations",
+          "simple_answer": "Arrow (→) means 'yields' or 'forms' — separates reactants (left) from products (right).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Reactants → Products",
+            "note": "Arrow = yields"
+          },
+          "why": "Never use equals sign for chemical equations.",
+          "example": "Plus (+) separates multiple reactants or products.",
+          "remember": "→ means produces; not the same as =.",
+          "common_confusion": "Equals sign wrongly suggests reversible balance.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c04",
+          "name": "Symbol equation intro",
+          "simple_answer": "Symbol equation uses chemical formulae and state symbols instead of names.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mg + O₂ → MgO",
+            "note": "Symbol equation (unbalanced)"
+          },
+          "why": "Bridge from words to formulae.",
+          "example": "Same reaction as word form, more compact.",
+          "remember": "Use correct chemical formulae.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "symbol equation"
+          ]
+        },
+        {
+          "id": "u1_d3_c05",
+          "name": "Chemical formula reminder",
+          "simple_answer": "Formula shows elements and their ratio in a compound — e.g. H₂O, CO₂, NaCl.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Chemical formulae"
+          },
+          "why": "Prerequisite for symbol equations.",
+          "example": "O₂ is diatomic oxygen; never write O alone for gas.",
+          "remember": "Subscripts count atoms; coefficients count molecules.",
+          "common_confusion": "Coefficient vs subscript is a common exam trap.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c06",
+          "name": "State symbols — (s)",
+          "simple_answer": "(s) means solid — e.g. Zn(s), CaCO₃(s).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "(s) = solid",
+            "note": "State symbol"
+          },
+          "why": "NCERT uses (s), (l), (g), (aq).",
+          "example": "Mg ribbon before burning: Mg(s).",
+          "remember": "(s) after formula = solid state.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c07",
+          "name": "State symbols — (l), (g), (aq)",
+          "simple_answer": "(l) = liquid, (g) = gas, (aq) = aqueous (dissolved in water).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "(l) (g) (aq)",
+            "note": "Liquid, gas, aqueous"
+          },
+          "why": "Complete set of state symbols.",
+          "example": "H₂O(l) water; H₂(g) hydrogen; NaCl(aq) salt solution.",
+          "remember": "Four states: s, l, g, aq.",
+          "common_confusion": "(l) is pure liquid; dissolved ions use (aq).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c08",
+          "name": "Conditions above arrow",
+          "simple_answer": "Heat (Δ), sunlight, or catalyst written above arrow when needed.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Conditions: Δ, sunlight, catalyst"
+          },
+          "why": "Shows how reaction is carried out.",
+          "example": "CaCO₃ → CaO + CO₂ often needs heat (Δ).",
+          "remember": "Δ or 'heat' above arrow for thermal decomposition.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c09",
+          "name": "Reversible arrow (intro)",
+          "simple_answer": "Some equations use ⇌ for reversible reactions — both directions possible.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "A + B ⇌ C + D",
+            "note": "Reversible reaction"
+          },
+          "why": "Mentioned in NCERT context.",
+          "example": "N₂ + 3H₂ ⇌ 2NH₃ (Haber process idea).",
+          "remember": "⇌ = forward and backward both occur.",
+          "common_confusion": "Ch 1 mainly uses single arrow →.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c10",
+          "name": "From observation to equation",
+          "simple_answer": "Activity observation → word equation → symbol equation → balance (later days).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Observation → equation"
+          },
+          "why": "Process skill for exams.",
+          "example": "Yellow precipitate → lead nitrate + potassium iodide → lead iodide + potassium nitrate.",
+          "remember": "Follow the four-step writing path.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Writing Chemical Equations",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d4_c01",
+          "name": "Writing a word equation — steps",
+          "simple_answer": "Identify reactants and products from experiment; write names left and right of arrow.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Write word equation first"
+          },
+          "why": "Exam short-answer skill.",
+          "example": "Zinc + hydrochloric acid → zinc chloride + hydrogen.",
+          "remember": "Names only; check spelling of compound names.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c02",
+          "name": "Convert words to symbols",
+          "simple_answer": "Replace each name with correct formula; keep + and → unchanged.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zinc + Hydrochloric acid → Zinc chloride + Hydrogen",
+            "note": "Then replace with symbols"
+          },
+          "why": "Second step in equation writing.",
+          "example": "Zn + HCl → ZnCl₂ + H₂ (then balance).",
+          "remember": "Check valency before writing formulae.",
+          "common_confusion": "HCl not HCl₂; acid formula must be correct.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c03",
+          "name": "Diatomic elements",
+          "simple_answer": "Seven elements exist as diatomic molecules in equations: H₂, N₂, O₂, F₂, Cl₂, Br₂, I₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "H₂ N₂ O₂ F₂ Cl₂ Br₂ I₂",
+            "note": "Always diatomic as elements"
+          },
+          "why": "Critical for correct symbol equations.",
+          "example": "Write O₂ not O when oxygen gas reacts.",
+          "remember": "Never write single O or H for gases.",
+          "common_confusion": "Carbon and metals are written as atoms (C, Fe, Zn).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c04",
+          "name": "Ionic compounds in equations",
+          "simple_answer": "Write formula as in textbook: NaCl, CaCO₃, Pb(NO₃)₂, KI, BaSO₄.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ionic formulae in equations"
+          },
+          "why": "Uses formulae from earlier classes.",
+          "example": "Lead nitrate Pb(NO₃)₂ — two nitrate ions per lead.",
+          "remember": "Brackets group polyatomic ions: (NO₃)₂.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c05",
+          "name": "Example — burning magnesium",
+          "simple_answer": "Word: Magnesium + Oxygen → Magnesium oxide. Symbol: Mg + O₂ → MgO.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mg + O₂ → MgO",
+            "note": "Unbalanced symbol equation"
+          },
+          "why": "Classic Ch 1 example.",
+          "example": "From Activity 1.1.",
+          "remember": "Two O on left, one on right — needs balancing.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c06",
+          "name": "Example — zinc and HCl",
+          "simple_answer": "Zn(s) + 2HCl(aq) → ZnCl₂(aq) + H₂(g) — displacement + acid reaction.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn + 2HCl → ZnCl₂ + H₂",
+            "note": "Balanced form"
+          },
+          "why": "Activity 1.3 full equation.",
+          "example": "State symbols optional in early steps.",
+          "remember": "One Zn displaces H from acid.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c07",
+          "name": "Example — lead nitrate + KI",
+          "simple_answer": "Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s) + 2KNO₃(aq).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Pb(NO₃)₂ + 2KI → PbI₂ + 2KNO₃",
+            "note": "Double displacement"
+          },
+          "why": "Activity 1.2 balanced form.",
+          "example": "PbI₂ is insoluble yellow precipitate.",
+          "remember": "Exchange of ions between two compounds.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c08",
+          "name": "Adding state symbols",
+          "simple_answer": "After balancing, add (s), (l), (g), (aq) from observation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Add state symbols last"
+          },
+          "why": "Polishes exam answers.",
+          "example": "H₂(g) for bubbles; PbI₂(s) for precipitate.",
+          "remember": "State symbols match what you see in lab.",
+          "common_confusion": "Do not guess (aq) if unsure — ask or infer from context.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c09",
+          "name": "Common writing errors",
+          "simple_answer": "Wrong formulae, missing diatomic O₂/H₂, unbalanced atoms, using = instead of →.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Common equation errors"
+          },
+          "why": "Prevention checklist.",
+          "example": "Mg + O → MgO is wrong (need O₂).",
+          "remember": "Check diatomics and balance before submitting.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c10",
+          "name": "Practice pattern for exams",
+          "simple_answer": "Read question → word equation → symbol equation → balance → state symbols.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam writing pattern"
+          },
+          "why": "Five-step habit.",
+          "example": "3-mark question often wants balanced equation with states.",
+          "remember": "Memorise the sequence.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Balanced Equations & Conservation of Mass",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d5_c01",
+          "name": "Balanced chemical equation",
+          "simple_answer": "Balanced equation has equal number of atoms of each element on both sides.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Atoms: reactants = products",
+            "note": "Balanced equation"
+          },
+          "why": "Central idea of section 1.1.2.",
+          "example": "2Mg + O₂ → 2MgO balances Mg and O.",
+          "remember": "Same atoms each side — nothing created or destroyed.",
+          "common_confusion": "Balancing changes coefficients only, not subscripts.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c02",
+          "name": "Law of conservation of mass",
+          "simple_answer": "Mass is neither created nor destroyed in a chemical reaction — total mass of reactants equals total mass of products.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mass of reactants = Mass of products",
+            "note": "Lavoisier (1774)"
+          },
+          "why": "Why we must balance equations.",
+          "example": "Closed flask experiment: mass unchanged after reaction.",
+          "remember": "Atoms rearrange; total mass stays same.",
+          "common_confusion": "Mass may seem to change if gas escapes open container.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c03",
+          "name": "Lavoisier's contribution",
+          "simple_answer": "Antoine Lavoisier (1774) established conservation of mass by careful weighing.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Lavoisier — conservation of mass"
+          },
+          "why": "Historical note in NCERT.",
+          "example": "Revolutionised chemistry with the balance.",
+          "remember": "Conservation of mass → must balance equations.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c04",
+          "name": "Coefficients vs subscripts",
+          "simple_answer": "Coefficients (front numbers) may change when balancing; subscripts inside formulae must never change.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2H₂O not H₄O₂",
+            "note": "Never change subscripts"
+          },
+          "why": "Most important balancing rule.",
+          "example": "To balance H in H₂ + O₂ → H₂O, use 2H₂O not H₂O₂.",
+          "remember": "Only coefficients change; formulae stay fixed.",
+          "common_confusion": "Changing subscripts creates wrong compounds.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c05",
+          "name": "Why Mg + O₂ → MgO is unbalanced",
+          "simple_answer": "One O on product side but two O atoms in O₂ reactant — oxygen not conserved.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Mg + O₂ → MgO",
+            "note": "Unbalanced — 2 O left, 1 O right"
+          },
+          "why": "Diagnostic example.",
+          "example": "Fix: 2Mg + O₂ → 2MgO.",
+          "remember": "Count each element before declaring balanced.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c06",
+          "name": "Balanced magnesium burning",
+          "simple_answer": "2Mg(s) + O₂(g) → 2MgO(s) — two Mg and two O on each side.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2Mg + O₂ → 2MgO",
+            "note": "Balanced"
+          },
+          "why": "Standard balanced answer for Activity 1.1.",
+          "example": "Coefficients 2, 1, 2 balance atoms.",
+          "remember": "Exam full marks: balanced + states.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c07",
+          "name": "Hit-and-trial method preview",
+          "simple_answer": "NCERT balances by hit-and-trial: adjust coefficients until all elements match.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Hit-and-trial balancing"
+          },
+          "why": "Leads to Day 6 detail.",
+          "example": "Start with most complex molecule or an element appearing once.",
+          "remember": "Trial coefficients systematically.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c08",
+          "name": "Atom counting checklist",
+          "simple_answer": "List each element; count atoms on left and right; adjust coefficients until equal.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Count atoms each side"
+          },
+          "why": "Universal balancing algorithm.",
+          "example": "Fe + O₂ → Fe₂O₃ needs 4Fe + 3O₂ → 2Fe₂O₃.",
+          "remember": "Element-by-element count.",
+          "common_confusion": "Polyatomic ions unchanged: count (SO₄) as unit if same both sides.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c09",
+          "name": "Mass conservation in open systems",
+          "simple_answer": "If gas escapes (CO₂, H₂), mass of open system appears to decrease — still conserved in universe.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Closed system: Δm = 0",
+            "note": "Open system may lose gas mass"
+          },
+          "why": "Explains apparent mass loss demos.",
+          "example": "CaCO₃ heated in open tube — CO₂ leaves.",
+          "remember": "Weigh in closed container to verify conservation.",
+          "common_confusion": "Burning candle mass loss is CO₂ and H₂O leaving.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c10",
+          "name": "Balanced vs unbalanced",
+          "simple_answer": "Unbalanced equation violates conservation of mass; exam answers must be balanced unless asked otherwise.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Always balance for full marks"
+          },
+          "why": "Exam discipline.",
+          "example": "Zn + HCl → ZnCl₂ + H₂ needs coefficient 2 on HCl.",
+          "remember": "Final answer = balanced symbol equation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Balancing Chemical Equations",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d6_c01",
+          "name": "Hit-and-trial balancing — steps",
+          "simple_answer": "Write formulae → count atoms → change coefficients → recount until balanced.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Hit-and-trial steps"
+          },
+          "why": "NCERT prescribed method for Class 10.",
+          "example": "Balance Fe₂O₃ formation from Fe + O₂ last.",
+          "remember": "Repeat until every element matches.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c02",
+          "name": "Start with complex molecule",
+          "simple_answer": "Begin balancing with the compound containing most atoms (often largest formula).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Start with complex formula"
+          },
+          "why": "Practical tip reduces trial error.",
+          "example": "For Ca(OH)₂ + CO₂ type, start with Ca(OH)₂.",
+          "remember": "Fix big molecule coefficient first.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c03",
+          "name": "Balance hydrogen and oxygen last",
+          "simple_answer": "H and O often appear in multiple products — balance other elements first.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Balance H and O last"
+          },
+          "why": "Common balancing strategy.",
+          "example": "Combustion equations: balance C, then H, then O.",
+          "remember": "Save O₂ coefficient for the end.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c04",
+          "name": "Example — Fe + H₂O",
+          "simple_answer": "3Fe + 4H₂O → Fe₃O₄ + 4H₂ — steam over red-hot iron.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "3Fe + 4H₂O → Fe₃O₄ + 4H₂",
+            "note": "Balanced"
+          },
+          "why": "NCERT combination/displacement context.",
+          "example": "Fe₃O₄ is iron(II,III) oxide.",
+          "remember": "Coefficients 3, 4, 1, 4.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c05",
+          "name": "Example — aluminium + oxygen",
+          "simple_answer": "4Al + 3O₂ → 2Al₂O₃ — aluminium oxide formation.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "4Al + 3O₂ → 2Al₂O₃",
+            "note": "Balanced"
+          },
+          "why": "Protective oxide on aluminium utensils.",
+          "example": "Al₂O₃ layer prevents further corrosion.",
+          "remember": "LCM trick for O atoms: 6 each side.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c06",
+          "name": "Example — C + O₂",
+          "simple_answer": "C + O₂ → CO₂ — complete combustion of carbon.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C + O₂ → CO₂",
+            "note": "Already balanced"
+          },
+          "why": "Simple combination — one of each.",
+          "example": "Burning coal in plenty of air.",
+          "remember": "Often already balanced — still verify.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c07",
+          "name": "Polyatomic ion as unit",
+          "simple_answer": "If ion unchanged both sides (e.g. SO₄²⁻), balance (SO₄) as a group.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Count (NO₃) as one unit",
+            "note": "Polyatomic ion trick"
+          },
+          "why": "Speeds balancing double displacement.",
+          "example": "Pb(NO₃)₂ + 2KI → PbI₂ + 2KNO₃.",
+          "remember": "Do not split NO₃ into N and O separately if ion intact.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c08",
+          "name": "Fractional coefficients trick",
+          "simple_answer": "If stuck, use fractional coefficients temporarily, then multiply all by denominator.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Fractional coefficient trick"
+          },
+          "why": "Advanced balancing aid.",
+          "example": "C₄H₁₀ + O₂: use 13/2 O₂ then double all.",
+          "remember": "Clear fractions in final answer.",
+          "common_confusion": "Exam answer must have whole-number coefficients.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c09",
+          "name": "Verify your balance",
+          "simple_answer": "Recheck every element count after balancing — one error invalidates equation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Verify atom counts"
+          },
+          "why": "Self-check habit.",
+          "example": "2H₂ + O₂ → 2H₂O: H=4, O=2 each side.",
+          "remember": "30 seconds verification saves marks.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c10",
+          "name": "Balancing exam questions",
+          "simple_answer": "Typical 2–3 mark: balance given skeleton equation or write full balanced equation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Balancing exam practice"
+          },
+          "why": "Day 6 skill consolidation.",
+          "example": "Practice Fe + CuSO₄, CaCO₃ decomposition, NaOH + HCl.",
+          "remember": "Show balanced equation clearly.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Combination Reactions",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d7_c01",
+          "name": "Combination reaction definition",
+          "simple_answer": "Two or more substances combine to form a single product — A + B → AB.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "A + B → AB",
+            "note": "Combination reaction"
+          },
+          "why": "First reaction type in NCERT.",
+          "example": "2Mg + O₂ → 2MgO.",
+          "remember": "Many reactants → one product.",
+          "common_confusion": "Combination is not the same as decomposition reverse only in name — check direction.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c02",
+          "name": "Combination — carbon and oxygen",
+          "simple_answer": "Carbon burns in oxygen to form carbon dioxide: C + O₂ → CO₂.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C + O₂ → CO₂",
+            "note": "Combustion combination"
+          },
+          "why": "Exothermic combination.",
+          "example": "Complete combustion in sufficient O₂.",
+          "remember": "CO₂ is single product.",
+          "common_confusion": "Insufficient O₂ gives CO — still combination but different product.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c03",
+          "name": "Quick lime and water",
+          "simple_answer": "Calcium oxide reacts with water to form calcium hydroxide (slaked lime) — exothermic.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CaO + H₂O → Ca(OH)₂",
+            "note": "Slaking of lime"
+          },
+          "why": "NCERT daily-life combination.",
+          "example": "Heat released; used in whitewashing.",
+          "remember": "CaO (quick lime) + water → slaked lime.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c04",
+          "name": "Calcium hydroxide in whitewash",
+          "simple_answer": "Ca(OH)₂ applied on walls reacts slowly with CO₂ to form CaCO₃ (whitewash hardens).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Ca(OH)₂ + CO₂ → CaCO₃ + H₂O",
+            "note": "Whitewash setting"
+          },
+          "why": "Follow-up to slaking reaction.",
+          "example": "White coating on walls over days.",
+          "remember": "Not all combination — this is also double displacement with CO₂.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c05",
+          "name": "Burning coal and coke",
+          "simple_answer": "Combustion of carbon-containing fuels is combination with oxygen.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Fuel + O₂ → oxides"
+          },
+          "why": "Energy applications.",
+          "example": "C + O₂ → CO₂ releases heat for industry.",
+          "remember": "Combustion = combination with O₂.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c06",
+          "name": "Formation of water",
+          "simple_answer": "2H₂ + O₂ → 2H₂O — combination of hydrogen and oxygen.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2H₂ + O₂ → 2H₂O",
+            "note": "Combination"
+          },
+          "why": "Classic simple combination.",
+          "example": "Explosive mixture — used in fuel cells idea.",
+          "remember": "Two elements → one compound.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c07",
+          "name": "Rusting as combination (preview)",
+          "simple_answer": "Iron combines with oxygen and water vapour to form rust — combination with multiple reactants.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fe + O₂ + H₂O → rust",
+            "note": "Slow combination"
+          },
+          "why": "Links to Day 13 corrosion.",
+          "example": "Brown flaky coating on iron.",
+          "remember": "Rusting is oxidation + combination over time.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c08",
+          "name": "Exothermic combination",
+          "simple_answer": "Many combination reactions release heat — CaO + H₂O, burning Mg.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Heat released in combination"
+          },
+          "why": "Energy aspect of type.",
+          "example": "Touching slaked lime paste feels hot.",
+          "remember": "Combination often exothermic, not always.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c09",
+          "name": "Combination vs decomposition",
+          "simple_answer": "Combination: many → one. Decomposition: one → many. Opposite direction.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Combination: A+B→AB | Decomposition: AB→A+B",
+            "note": "Opposite types"
+          },
+          "why": "Compare reaction types.",
+          "example": "Mg + O₂ vs heating MgO (hard to reverse).",
+          "remember": "Arrow direction and product count distinguish types.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c10",
+          "name": "Identify combination in equation",
+          "simple_answer": "Single product on right with two or more reactants → combination.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Spot combination type"
+          },
+          "why": "Exam classification skill.",
+          "example": "4Fe + 3O₂ → 2Fe₂O₃ is combination (also redox).",
+          "remember": "Count products: exactly one main product.",
+          "common_confusion": "One product can be a compound with multiple elements.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Decomposition Reactions",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d8_c01",
+          "name": "Decomposition reaction definition",
+          "simple_answer": "Single reactant breaks into two or more simpler products — AB → A + B.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "AB → A + B",
+            "note": "Decomposition reaction"
+          },
+          "why": "Second reaction type.",
+          "example": "2HgO → 2Hg + O₂ on heating.",
+          "remember": "One reactant → multiple products.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "decomposition reaction"
+          ]
+        },
+        {
+          "id": "u1_d8_c02",
+          "name": "Thermal decomposition",
+          "simple_answer": "Decomposition by heat — write Δ or 'Heat' above arrow.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CaCO₃ → CaO + CO₂",
+            "note": "Δ above arrow"
+          },
+          "why": "Most common subtype in NCERT.",
+          "example": "Limestone heated in kiln.",
+          "remember": "Heat breaks bonds in compound.",
+          "common_confusion": "Thermal decomposition needs continuous heat supply.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c03",
+          "name": "Calcium carbonate decomposition",
+          "simple_answer": "CaCO₃(s) → CaO(s) + CO₂(g) — basis of lime industry.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CaCO₃ → CaO + CO₂",
+            "note": "Balanced"
+          },
+          "why": "Major NCERT example.",
+          "example": "CO₂ turns lime water milky if tested.",
+          "remember": "Limestone → quick lime + carbon dioxide.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c04",
+          "name": "Ferrous sulphate decomposition",
+          "simple_answer": "Green crystals of FeSO₄·7H₂O heat to brown residue; SO₂ and SO₃ gases evolve.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2FeSO₄ → Fe₂O₃ + SO₂ + SO₃",
+            "note": "Thermal decomposition"
+          },
+          "why": "NCERT lab observation — colour change + gas.",
+          "example": "Green → brown; smell of burning sulphur.",
+          "remember": "Heat breaks ferrous sulphate.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c05",
+          "name": "Electrolytic decomposition",
+          "simple_answer": "Decomposition by passing electric current — electrolysis of water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2H₂O → 2H₂ + O₂",
+            "note": "Electrolysis"
+          },
+          "why": "Second subtype.",
+          "example": "Electrolysis of water gives H₂ at cathode, O₂ at anode.",
+          "remember": "Electricity splits compound.",
+          "common_confusion": "Needs electrolyte/acid for water demo in lab.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c06",
+          "name": "Photolytic decomposition",
+          "simple_answer": "Decomposition using sunlight — photodecomposition.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2AgCl → 2Ag + Cl₂",
+            "note": "Sunlight"
+          },
+          "why": "Third subtype; silver chloride in sunlight.",
+          "example": "White AgCl turns grey in sunlight.",
+          "remember": "Light energy breaks AgCl.",
+          "common_confusion": "Photography used AgCl light sensitivity.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c07",
+          "name": "Silver bromide in sunlight",
+          "simple_answer": "2AgBr → 2Ag + Br₂ — similar to AgCl; used in photographic films.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2AgBr → 2Ag + Br₂",
+            "note": "Sunlight"
+          },
+          "why": "NCERT photography connection.",
+          "example": "Film darkens on exposure to light.",
+          "remember": "Light decomposes silver halides.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c08",
+          "name": "Decomposition of mercury oxide",
+          "simple_answer": "2HgO → 2Hg + O₂ — historical preparation of oxygen.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "2HgO → 2Hg + O₂",
+            "note": "Heat"
+          },
+          "why": "Classic red oxide decomposition.",
+          "example": "Red HgO yields silvery mercury + O₂.",
+          "remember": "Lab O₂ source in old methods.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c09",
+          "name": "Energy for decomposition",
+          "simple_answer": "Decomposition usually needs energy input (heat, light, or electricity) — endothermic overall.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Decomposition needs energy"
+          },
+          "why": "Opposite of many combinations.",
+          "example": "Keep burner on for CaCO₃ decomposition.",
+          "remember": "Break bonds → absorb energy.",
+          "common_confusion": "Not all decomposition is endothermic step-by-step but input is required to start.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c10",
+          "name": "Classify decomposition subtype",
+          "simple_answer": "Look at condition above arrow: Δ = thermal, sunlight = photolytic, electricity = electrolytic.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Classify decomposition type"
+          },
+          "why": "Exam classification.",
+          "example": "FeSO₄ heated → thermal. AgCl in sun → photolytic.",
+          "remember": "Condition tells the subtype.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "Displacement Reactions",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d9_c01",
+          "name": "Displacement reaction definition",
+          "simple_answer": "More reactive element displaces less reactive element from its compound.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "A + BC → AC + B",
+            "note": "A displaces B"
+          },
+          "why": "Third reaction type.",
+          "example": "Zn + CuSO₄ → ZnSO₄ + Cu.",
+          "remember": "Reactivity series decides if displacement occurs.",
+          "common_confusion": "Both metals must be involved for metal displacement.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c02",
+          "name": "Reactivity series role",
+          "simple_answer": "Metal higher in reactivity series displaces metal lower from salt solution.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reactivity series"
+          },
+          "why": "Predicts displacement feasibility.",
+          "example": "Zn above Cu — displaces Cu from CuSO₄.",
+          "remember": "Higher metal kicks out lower metal.",
+          "common_confusion": "Hydrogen also has place in series vs metals.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c03",
+          "name": "Iron and copper sulphate",
+          "simple_answer": "Fe + CuSO₄ → FeSO₄ + Cu — iron displaces copper; blue fades, brown Cu deposits.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fe + CuSO₄ → FeSO₄ + Cu",
+            "note": "Blue → green + brown Cu"
+          },
+          "why": "Classic NCERT displacement demo.",
+          "example": "Copper coats iron nail.",
+          "remember": "More reactive Fe displaces Cu.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c04",
+          "name": "Zinc and copper sulphate",
+          "simple_answer": "Zn + CuSO₄ → ZnSO₄ + Cu — zinc is more reactive than copper.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn + CuSO₄ → ZnSO₄ + Cu",
+            "note": "Displacement"
+          },
+          "why": "Same pattern as iron example.",
+          "example": "Zn granules in blue solution → red-brown deposit.",
+          "remember": "Zn above Cu in series.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c05",
+          "name": "Zinc and dilute HCl",
+          "simple_answer": "Zn + 2HCl → ZnCl₂ + H₂ — zinc displaces hydrogen from acid.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn + 2HCl → ZnCl₂ + H₂",
+            "note": "Displacement from acid"
+          },
+          "why": "Activity 1.3 classified as displacement.",
+          "example": "Metal displaces H from dilute acid.",
+          "remember": "Acid reaction is displacement of hydrogen.",
+          "common_confusion": "Not all metals react with dilute HCl — check reactivity.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c06",
+          "name": "Copper and silver nitrate",
+          "simple_answer": "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag — copper displaces silver.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag",
+            "note": "Silver mirror on copper"
+          },
+          "why": "NCERT example for displacement.",
+          "example": "Silver crystals on copper wire.",
+          "remember": "Cu more reactive than Ag.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c07",
+          "name": "No reaction — copper and zinc sulphate",
+          "simple_answer": "Cu + ZnSO₄ → no reaction — copper less reactive than zinc.",
+          "visual": {
+            "type": "placeholder",
+            "label": "No displacement — lower metal"
+          },
+          "why": "Negative prediction important.",
+          "example": "Copper wire in ZnSO₄ stays unchanged.",
+          "remember": "Lower metal cannot displace higher.",
+          "common_confusion": "Exam trick: predict 'no reaction'.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c08",
+          "name": "Displacement and colour change",
+          "simple_answer": "Solution colour may change as different metal ion forms (blue Cu²⁺ → pale green Fe²⁺).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Colour change in displacement"
+          },
+          "why": "Observable sign.",
+          "example": "CuSO₄ blue to FeSO₄ pale green.",
+          "remember": "Ion colour change indicates displacement.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c09",
+          "name": "Single displacement vs double",
+          "simple_answer": "Single displacement: one element swaps. Double displacement: ions exchange between compounds.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Single: A+BC→AC+B | Double: AB+CD→AD+CB",
+            "note": "Compare types"
+          },
+          "why": "Preview Day 10 contrast.",
+          "example": "Fe + CuSO₄ is single displacement.",
+          "remember": "One element replaced vs ion exchange.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c10",
+          "name": "Exam tip — predict products",
+          "simple_answer": "Use reactivity series: if metal A above B, A + salt of B → salt of A + B.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Predict displacement products"
+          },
+          "why": "Problem-solving template.",
+          "example": "Mg + CuSO₄ → MgSO₄ + Cu (Mg above Cu).",
+          "remember": "Series above → displaces; below → no reaction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "Double Displacement Reactions",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d10_c01",
+          "name": "Double displacement definition",
+          "simple_answer": "Exchange of ions between two compounds — AB + CD → AD + CB.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "AB + CD → AD + CB",
+            "note": "Double displacement"
+          },
+          "why": "Fourth reaction type.",
+          "example": "Na₂SO₄ + BaCl₂ → BaSO₄ + 2NaCl.",
+          "remember": "Two compounds swap partners.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "double displacement reaction"
+          ]
+        },
+        {
+          "id": "u1_d10_c02",
+          "name": "Precipitation reactions",
+          "simple_answer": "Double displacement often forms insoluble precipitate when product is insoluble.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Pb(NO₃)₂ + 2KI → PbI₂ ↓ + 2KNO₃",
+            "note": "Precipitate formation"
+          },
+          "why": "Activity 1.2 model.",
+          "example": "Yellow PbI₂ precipitates.",
+          "remember": "Insoluble product = precipitate reaction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c03",
+          "name": "Barium sulphate test",
+          "simple_answer": "BaCl₂ + Na₂SO₄ → BaSO₄ (white precipitate) + 2NaCl — test for sulphate.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "BaCl₂ + Na₂SO₄ → BaSO₄ + 2NaCl",
+            "note": "White precipitate"
+          },
+          "why": "Standard qualitative test.",
+          "example": "White ppt insoluble in dil HCl.",
+          "remember": "BaSO₄ white precipitate.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c04",
+          "name": "Neutralisation reaction",
+          "simple_answer": "Acid + base → salt + water — special double displacement.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "NaOH + HCl → NaCl + H₂O",
+            "note": "Neutralisation"
+          },
+          "why": "Links acids-bases chapter.",
+          "example": "H⁺ from acid + OH⁻ from base → H₂O.",
+          "remember": "Acid + base = salt + water.",
+          "common_confusion": "Neutralisation is exothermic.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c05",
+          "name": "Activity 1.2 revisited",
+          "simple_answer": "Lead nitrate + potassium iodide — ions Pb²⁺ and I⁻ meet to form insoluble PbI₂.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ion exchange — PbI₂"
+          },
+          "why": "Mechanism view.",
+          "example": "Pb²⁺(aq) + 2I⁻(aq) → PbI₂(s).",
+          "remember": "Exchange: Pb pairs with I, K stays with NO₃.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c06",
+          "name": "Sodium sulphate + barium chloride",
+          "simple_answer": "Na₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2NaCl(aq) — ion exchange.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Na₂SO₄ + BaCl₂ → BaSO₄ + 2NaCl",
+            "note": "Balanced"
+          },
+          "why": "NCERT textbook example.",
+          "example": "Ba²⁺ + SO₄²⁻ → BaSO₄ white solid.",
+          "remember": "Double displacement with precipitate.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c07",
+          "name": "Soluble vs insoluble products",
+          "simple_answer": "Reaction goes to completion when one product is insoluble (precipitate) or gas escapes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Insoluble product drives reaction"
+          },
+          "why": "Why precipitate forms.",
+          "example": "BaSO₄ insoluble — leaves solution.",
+          "remember": "Insoluble or gaseous product favours forward reaction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c08",
+          "name": "Writing double displacement",
+          "simple_answer": "Split reactants into ions mentally; swap partners; write products with correct formulae.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Swap ion partners"
+          },
+          "why": "Writing skill.",
+          "example": "AB + CD: A goes with D, C goes with B.",
+          "remember": "Check valency after swap.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c09",
+          "name": "Double displacement without precipitate",
+          "simple_answer": "If all products soluble, reaction may still occur (neutralisation) — not always visible precipitate.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "HCl + NaOH → NaCl + H₂O",
+            "note": "No precipitate — still double displacement"
+          },
+          "why": "Avoid equating type with precipitate only.",
+          "example": "Clear solution before and after.",
+          "remember": "Double displacement includes neutralisation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c10",
+          "name": "Identify reaction type quickly",
+          "simple_answer": "Two compounds react, two products, no single element displacing another → likely double displacement.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Spot double displacement"
+          },
+          "why": "Exam speed skill.",
+          "example": "BaCl₂ + Na₂SO₄ pattern.",
+          "remember": "Two ionic compounds exchanging ions.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "Oxidation and Reduction",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d11_c01",
+          "name": "Oxidation definition (oxygen)",
+          "simple_answer": "Oxidation is gain of oxygen by a substance.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Oxidation = gain of O",
+            "note": "NCERT definition 1"
+          },
+          "why": "First redox definition in Ch 1.",
+          "example": "2Mg + O₂ → 2MgO: Mg gains O — oxidised.",
+          "remember": "Gain of oxygen = oxidation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "oxidation"
+          ]
+        },
+        {
+          "id": "u1_d11_c02",
+          "name": "Oxidation definition (hydrogen)",
+          "simple_answer": "Oxidation is also loss of hydrogen by a substance.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Oxidation = loss of H",
+            "note": "NCERT definition 2"
+          },
+          "why": "Second definition — broader.",
+          "example": "H₂S → S: H₂S loses H — oxidised.",
+          "remember": "Loss of H counts as oxidation.",
+          "common_confusion": "Use both O and H rules in organic context later.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c03",
+          "name": "Reduction definition (oxygen)",
+          "simple_answer": "Reduction is loss of oxygen by a substance.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Reduction = loss of O",
+            "note": "NCERT definition 1"
+          },
+          "why": "Pair with oxidation.",
+          "example": "CuO + H₂ → Cu + H₂O: CuO loses O — reduced.",
+          "remember": "Loss of oxygen = reduction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reduction"
+          ]
+        },
+        {
+          "id": "u1_d11_c04",
+          "name": "Reduction definition (hydrogen)",
+          "simple_answer": "Reduction is gain of hydrogen by a substance.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Reduction = gain of H",
+            "note": "NCERT definition 2"
+          },
+          "why": "Fourth definition.",
+          "example": "Cl₂ + H₂ → 2HCl: Cl₂ gains H — reduced.",
+          "remember": "Gain of H counts as reduction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c05",
+          "name": "Oxidising agent",
+          "simple_answer": "Substance that gives oxygen or removes hydrogen — itself gets reduced.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Oxidising agent → reduced",
+            "note": "O₂, Cl₂ common examples"
+          },
+          "why": "Agent does opposite to itself.",
+          "example": "O₂ oxidises Mg; O₂ is reduced to O²⁻ in MgO.",
+          "remember": "Oxidising agent gets reduced.",
+          "common_confusion": "Agent name describes what it does to others.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c06",
+          "name": "Reducing agent",
+          "simple_answer": "Substance that removes oxygen or gives hydrogen — itself gets oxidised.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Reducing agent → oxidised",
+            "note": "C, H₂, CO common"
+          },
+          "why": "Pair concept.",
+          "example": "Carbon reduces CuO to Cu; C is oxidised to CO₂.",
+          "remember": "Reducing agent gets oxidised.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reducing agent"
+          ]
+        },
+        {
+          "id": "u1_d11_c07",
+          "name": "Redox reaction",
+          "simple_answer": "Reaction where oxidation and reduction occur together — one species loses O while another gains O.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Redox = Oxidation + Reduction",
+            "note": "Always paired"
+          },
+          "why": "Central Ch 1 redox idea.",
+          "example": "Zn + CuO → ZnO + Cu.",
+          "remember": "Oxidation and reduction simultaneous.",
+          "common_confusion": "Cannot have one without the other in same reaction.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c08",
+          "name": "Example — copper oxide + hydrogen",
+          "simple_answer": "CuO + H₂ → Cu + H₂O: CuO reduced (loses O); H₂ oxidised (gains O as H₂O).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CuO + H₂ → Cu + H₂O",
+            "note": "CuO reduced, H₂ oxidised"
+          },
+          "why": "Classic redox identification.",
+          "example": "Black CuO turns brown Cu.",
+          "remember": "Track O: moves from CuO to H₂.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c09",
+          "name": "Example — zinc + copper oxide",
+          "simple_answer": "Zn + CuO → ZnO + Cu — Zn oxidised; CuO reduced.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn + CuO → ZnO + Cu",
+            "note": "Redox + displacement"
+          },
+          "why": "NCERT redox example.",
+          "example": "ZnO forms; copper metal appears.",
+          "remember": "Zn is reducing agent; CuO is oxidising agent.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c10",
+          "name": "Identify oxidised and reduced species",
+          "simple_answer": "Ask: who gained O or lost H? (oxidised). Who lost O or gained H? (reduced).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Identify oxidised / reduced"
+          },
+          "why": "Exam redox skill.",
+          "example": "In 2Mg + O₂ → 2MgO: Mg oxidised, O₂ reduced.",
+          "remember": "Apply four definitions systematically.",
+          "common_confusion": "O₂ is often reduced in combustion.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Oxidation in Everyday Life",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d12_c01",
+          "name": "Oxidation in everyday life",
+          "simple_answer": "NCERT section 1.3 — rusting, rancidity, and combustion are oxidation in daily life.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Oxidation around us"
+          },
+          "why": "Connects redox to real world.",
+          "example": "Food spoils; iron rusts; fuels burn.",
+          "remember": "Many daily changes involve oxidation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c02",
+          "name": "Rancidity introduction",
+          "simple_answer": "Fats and oils oxidise on exposure to air — smell and taste turn unpleasant.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Rancidity — fat oxidation"
+          },
+          "why": "Leads to Day 14 detail.",
+          "example": "Stale chips smell off.",
+          "remember": "Oxidation of unsaturated fats.",
+          "common_confusion": "Rancidity is not bacterial spoilage alone.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c03",
+          "name": "Corrosion introduction",
+          "simple_answer": "Corrosion is gradual destruction of metals by moisture, air, and chemicals.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Corrosion of metals"
+          },
+          "why": "Leads to Day 13 detail.",
+          "example": "Iron gate rusts in humid weather.",
+          "remember": "Metal + environment → damage.",
+          "common_confusion": "All corrosion involves oxidation of metal.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c04",
+          "name": "Combustion as rapid oxidation",
+          "simple_answer": "Burning fuels is fast oxidation — substance reacts with O₂ releasing heat and light.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fuel + O₂ → oxides + heat",
+            "note": "Rapid oxidation"
+          },
+          "why": "Energy in daily life.",
+          "example": "LPG burns to CO₂ and H₂O.",
+          "remember": "Combustion = fast oxidation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c05",
+          "name": "Antioxidants in food",
+          "simple_answer": "Antioxidants added to oily foods slow oxidation — prevent rancidity.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Antioxidants prevent rancidity"
+          },
+          "why": "Prevention strategy.",
+          "example": "BHA, BHT in packaged snacks.",
+          "remember": "Antioxidants reduce O₂ attack on fats.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c06",
+          "name": "Nitrogen flushing packaging",
+          "simple_answer": "Chips packed in nitrogen gas — reduces O₂ contact, delays rancidity.",
+          "visual": {
+            "type": "placeholder",
+            "label": "N₂ flushing in food packs"
+          },
+          "why": "NCERT prevention method.",
+          "example": "Bag feels puffed with N₂.",
+          "remember": "Exclude O₂ to slow oxidation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c07",
+          "name": "Refrigeration and airtight storage",
+          "simple_answer": "Cold and sealed containers slow oxidation of food fats.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Cold + airtight storage"
+          },
+          "why": "Household prevention.",
+          "example": "Oil in fridge lasts longer.",
+          "remember": "Less O₂ and lower temperature slow rancidity.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c08",
+          "name": "Galvanisation preview",
+          "simple_answer": "Iron coated with zinc prevents rust — zinc oxidises preferentially.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Zinc coating on iron"
+          },
+          "why": "Links corrosion prevention.",
+          "example": "Galvanised buckets and pipes.",
+          "remember": "Sacrificial protection by zinc.",
+          "common_confusion": "Detailed in Day 13.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c09",
+          "name": "Painting and greasing iron",
+          "simple_answer": "Paint or grease layer blocks air and moisture from iron surface.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Paint / grease barrier"
+          },
+          "why": "Barrier protection method.",
+          "example": "Ship hulls painted; tools oiled.",
+          "remember": "Physical barrier stops O₂ and H₂O.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c10",
+          "name": "Redox in respiration (idea)",
+          "simple_answer": "Food oxidised in body releases energy — slow controlled oxidation.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Glucose + O₂ → CO₂ + H₂O + energy",
+            "note": "Cellular respiration"
+          },
+          "why": "Biology-chemistry link.",
+          "example": "Breathing supplies O₂ for oxidation of food.",
+          "remember": "Life processes use controlled redox.",
+          "common_confusion": "Simplified — full path is multi-step.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Corrosion",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d13_c01",
+          "name": "Corrosion definition",
+          "simple_answer": "Corrosion is oxidation of metals by moisture, air, acids, and gases in environment.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Metal + O₂ + H₂O → oxide/hydroxide",
+            "note": "Slow oxidation"
+          },
+          "why": "Section 1.3.1 focus.",
+          "example": "Iron rust is most familiar example.",
+          "remember": "Corrosion weakens structures.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "corrosion"
+          ]
+        },
+        {
+          "id": "u1_d13_c02",
+          "name": "Rusting of iron",
+          "simple_answer": "Iron reacts with oxygen and water vapour to form hydrated iron(III) oxide — rust.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "4Fe + 3O₂ + xH₂O → 2Fe₂O₃·xH₂O",
+            "note": "Rust formula (approx.)"
+          },
+          "why": "NCERT rust equation.",
+          "example": "Brown flaky deposit on iron.",
+          "remember": "Needs both O₂ and H₂O.",
+          "common_confusion": "Rust is hydrated oxide, not pure Fe₂O₃ only.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c03",
+          "name": "Conditions for rusting",
+          "simple_answer": "Iron rusts when both oxygen and water (or water vapour) are present.",
+          "visual": {
+            "type": "placeholder",
+            "label": "O₂ + H₂O needed for rust"
+          },
+          "why": "Prevention targets these.",
+          "example": "Dry oxygen alone rusts slowly; wet air fast.",
+          "remember": "Remove O₂ or H₂O to prevent rust.",
+          "common_confusion": "Paint stops both; silica gel reduces moisture.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c04",
+          "name": "Corrosion of other metals",
+          "simple_answer": "Silver tarnishes (Ag₂S); copper green carbonate; aluminium forms protective Al₂O₃ layer.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Silver, copper, aluminium corrosion"
+          },
+          "why": "Beyond iron.",
+          "example": "Silver blackens in sulphur-containing air.",
+          "remember": "Al oxide layer protects inner metal.",
+          "common_confusion": "Green patina on copper statues.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c05",
+          "name": "Economic cost of corrosion",
+          "simple_answer": "Replacing rusted bridges, pipes, and vehicles costs huge money annually.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Cost of corrosion"
+          },
+          "why": "Why prevention matters.",
+          "example": "Rusted car body needs repair.",
+          "remember": "Prevention cheaper than replacement.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c06",
+          "name": "Galvanisation",
+          "simple_answer": "Coating iron with thin layer of zinc — zinc corrodes first (sacrificial protection).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Galvanisation — Zn coat"
+          },
+          "why": "NCERT prevention method.",
+          "example": "Galvanised iron sheets (GI sheets).",
+          "remember": "Zinc protects even if scratched (partially).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "galvanisation"
+          ]
+        },
+        {
+          "id": "u1_d13_c07",
+          "name": "Painting and greasing",
+          "simple_answer": "Paint, grease, or oil forms barrier — keeps O₂ and moisture away from metal.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Barrier coating"
+          },
+          "why": "Simple home method.",
+          "example": "Gate painted every few years.",
+          "remember": "Barrier method blocks contact.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c08",
+          "name": "Alloying against corrosion",
+          "simple_answer": "Stainless steel (Fe + Cr + Ni) resists rust better than pure iron.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Stainless steel alloy"
+          },
+          "why": "Structural prevention.",
+          "example": "Kitchen sinks and surgical tools.",
+          "remember": "Chromium forms protective oxide.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c09",
+          "name": "Sacrificial protection",
+          "simple_answer": "More reactive metal (zinc, magnesium) connected to iron corrodes instead of iron.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Zn → Zn²⁺ + 2e⁻",
+            "note": "Zinc oxidises first"
+          },
+          "why": "Ship hulls use zinc blocks.",
+          "example": "Zinc blocks on ships.",
+          "remember": "Reactive metal sacrifices itself.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c10",
+          "name": "Exam answers on corrosion",
+          "simple_answer": "Define corrosion → give rust equation → state conditions → list prevention (galvanisation, paint, alloying).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Corrosion exam template"
+          },
+          "why": "Structured long answer.",
+          "example": "3–5 mark corrosion question pattern.",
+          "remember": "Four-part answer scores well.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "Rancidity",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d14_c01",
+          "name": "Rancidity definition",
+          "simple_answer": "Rancidity is oxidation of fats and oils in food, causing bad smell and taste.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Fat + O₂ → oxidised products (off smell)",
+            "note": "Slow oxidation of food"
+          },
+          "why": "Section 1.3.2.",
+          "example": "Stale oil in open bottle.",
+          "remember": "O₂ attacks double bonds in fats.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "rancidity"
+          ]
+        },
+        {
+          "id": "u1_d14_c02",
+          "name": "Foods prone to rancidity",
+          "simple_answer": "Oily and fatty foods — chips, butter, nuts, fried snacks, ghee.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Oily / fatty foods"
+          },
+          "why": "Identify at-risk items.",
+          "example": "Packaged namkeen goes stale in humid air.",
+          "remember": "Unsaturated fats oxidise faster.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c03",
+          "name": "Signs of rancidity",
+          "simple_answer": "Sharp unpleasant smell, stale taste, sometimes yellowish discolouration.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Smell and taste change"
+          },
+          "why": "Consumer detection.",
+          "example": "Old peanuts taste bitter.",
+          "remember": "If it smells off, likely rancid.",
+          "common_confusion": "Not all discolouration is rancidity.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c04",
+          "name": "Role of oxygen in rancidity",
+          "simple_answer": "Oxygen from air oxidises unsaturated fatty acids in oils.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Unsaturated fat + O₂ → peroxides → off odours",
+            "note": "Oxidation chain"
+          },
+          "why": "Mechanism simplified.",
+          "example": "Open jar of oil oxidises over weeks.",
+          "remember": "Limit O₂ exposure to prevent.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c05",
+          "name": "Antioxidants",
+          "simple_answer": "Chemicals added to food that prevent oxidation — BHT, BHA, vitamin E.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Antioxidants in food industry"
+          },
+          "why": "NCERT prevention list.",
+          "example": "Listed on chip packet ingredients.",
+          "remember": "Antioxidants donate electrons to block O₂ damage.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "antioxidant"
+          ]
+        },
+        {
+          "id": "u1_d14_c06",
+          "name": "Nitrogen gas packaging",
+          "simple_answer": "Flush bags with N₂ — displaces O₂, slows rancidity of fried snacks.",
+          "visual": {
+            "type": "placeholder",
+            "label": "N₂ packaging for chips"
+          },
+          "why": "Common industry practice.",
+          "example": "Puffed sealed chip bags.",
+          "remember": "Inert gas reduces oxidation rate.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c07",
+          "name": "Refrigeration",
+          "simple_answer": "Lower temperature slows oxidation reactions — store butter and oils in fridge.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Refrigerate fats and oils"
+          },
+          "why": "Home prevention.",
+          "example": "Ghee solidifies in fridge; lasts longer.",
+          "remember": "Cold slows chemical reaction rate.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c08",
+          "name": "Airtight containers",
+          "simple_answer": "Reduce O₂ contact — store nuts and oils in sealed jars.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Airtight storage"
+          },
+          "why": "Simple household habit.",
+          "example": "Tight lid on pickle oil.",
+          "remember": "Less air → less oxidation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c09",
+          "name": "Rancidity vs corrosion comparison",
+          "simple_answer": "Both are oxidation: rancidity affects organic fats; corrosion affects metals.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Both = oxidation by O₂",
+            "note": "Rancidity (food) | Corrosion (metal)"
+          },
+          "why": "Compare Ch 1 end topics.",
+          "example": "Rust on iron; stale smell in oil.",
+          "remember": "Same chemistry idea, different materials.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c10",
+          "name": "Exam answer on rancidity",
+          "simple_answer": "Define rancidity → cause (O₂ oxidation of fats) → prevention (antioxidants, N₂, fridge, airtight).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Rancidity exam template"
+          },
+          "why": "Parallel to corrosion answer.",
+          "example": "List three prevention methods for marks.",
+          "remember": "Structured answer like corrosion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Reaction Types — Mixed Review",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d15_c01",
+          "name": "Four reaction types summary",
+          "simple_answer": "Combination, decomposition, displacement, double displacement — classify every NCERT example.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "4 types: Combo | Decomp | Displace | Double displace",
+            "note": "Ch 1 reaction types"
+          },
+          "why": "Mixed review anchor.",
+          "example": "CaCO₃ → thermal decomposition.",
+          "remember": "Memorise one exemplar per type.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c02",
+          "name": "Combination exemplars",
+          "simple_answer": "C + O₂ → CO₂; CaO + H₂O → Ca(OH)₂; 2Mg + O₂ → 2MgO.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "A + B → AB",
+            "note": "Three NCERT examples"
+          },
+          "why": "Quick recall set.",
+          "example": "Single product on right.",
+          "remember": "Many → one.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c03",
+          "name": "Decomposition exemplars",
+          "simple_answer": "CaCO₃ → CaO + CO₂ (Δ); 2AgCl → 2Ag + Cl₂ (sunlight); 2H₂O → 2H₂ + O₂ (electricity).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "AB → A + B",
+            "note": "Thermal | Photo | Electrolytic"
+          },
+          "why": "Three subtypes with examples.",
+          "example": "Condition above arrow identifies subtype.",
+          "remember": "One → many.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c04",
+          "name": "Displacement exemplars",
+          "simple_answer": "Fe + CuSO₄ → FeSO₄ + Cu; Zn + 2HCl → ZnCl₂ + H₂; Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "A + BC → AC + B",
+            "note": "Check reactivity series"
+          },
+          "why": "Metal displacement set.",
+          "example": "More reactive displaces less reactive.",
+          "remember": "Use series to predict.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c05",
+          "name": "Double displacement exemplars",
+          "simple_answer": "Pb(NO₃)₂ + 2KI → PbI₂ + 2KNO₃; BaCl₂ + Na₂SO₄ → BaSO₄ + 2NaCl; NaOH + HCl → NaCl + H₂O.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "AB + CD → AD + CB",
+            "note": "Precipitate or neutralisation"
+          },
+          "why": "Three classic equations.",
+          "example": "Ion exchange between compounds.",
+          "remember": "Two compound reactants.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c06",
+          "name": "Redox quick check",
+          "simple_answer": "Who gained O or lost H? Oxidised. Who lost O or gained H? Reduced.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Redox identification drill"
+          },
+          "why": "Cross-cutting skill.",
+          "example": "Zn + CuO → Zn oxidised, CuO reduced.",
+          "remember": "Four definition checklist.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c07",
+          "name": "Signs of reaction recap",
+          "simple_answer": "State, colour, gas, temperature — link each Activity 1.1–1.3 to signs.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activities 1.1–1.3 signs"
+          },
+          "why": "Tie intro to labs.",
+          "example": "1.1 heat+light; 1.2 colour; 1.3 gas.",
+          "remember": "Match activity to sign observed.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c08",
+          "name": "Balancing mixed drill",
+          "simple_answer": "Balance: Fe + H₂O → Fe₃O₄ + H₂; Al + O₂ → Al₂O₃; FeSO₄ → Fe₂O₃ + SO₂ + SO₃.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mixed balancing practice"
+          },
+          "why": "Skills integration.",
+          "example": "Coefficients 3-4-1-4 for steam-iron.",
+          "remember": "Verify all atoms after each.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c09",
+          "name": "Common exam mistakes",
+          "simple_answer": "Unbalanced equations, wrong diatomics, misclassified reaction type, confusing agent with process.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Avoid common mistakes"
+          },
+          "why": "Error prevention review.",
+          "example": "O₂ not O; check type before naming redox.",
+          "remember": "Read question twice.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c10",
+          "name": "Mixed review complete",
+          "simple_answer": "You can now classify, balance, and explain redox for all major Ch 1 reactions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mixed review complete"
+          },
+          "why": "Bridge to Day 16 exam prep.",
+          "example": "Practice past NCERT intext questions.",
+          "remember": "Types + equations + redox together.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "Equations, Redox & Exam Prep",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d16_c01",
+          "name": "NCERT summary — chemical reactions",
+          "simple_answer": "Chemical reactions change reactants to products; observed by state, colour, gas, temperature.",
+          "visual": {
+            "type": "placeholder",
+            "label": "NCERT summary — reactions"
+          },
+          "why": "Official 'What you have learnt' alignment.",
+          "example": "Four signs from section 1.1.",
+          "remember": "Match textbook summary bullets.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c02",
+          "name": "NCERT summary — equations",
+          "simple_answer": "Word and balanced symbol equations represent reactions; mass conserved.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Reactants → Products (balanced)",
+            "note": "Conservation of mass"
+          },
+          "why": "Summary equation points.",
+          "example": "Lavoisier conservation law.",
+          "remember": "Balanced equations mandatory.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c03",
+          "name": "NCERT summary — reaction types",
+          "simple_answer": "Combination, decomposition, displacement, double displacement with NCERT examples each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Four reaction types summary"
+          },
+          "why": "Summary classification.",
+          "example": "One example each for 4-mark question.",
+          "remember": "Name type + give equation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c04",
+          "name": "NCERT summary — redox",
+          "simple_answer": "Oxidation: gain O or loss H. Reduction: loss O or gain H. Occur together in redox.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Oxidation ↔ Reduction",
+            "note": "Redox paired"
+          },
+          "why": "Summary redox definitions.",
+          "example": "CuO + H₂ example.",
+          "remember": "Four definitions verbatim for exams.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c05",
+          "name": "NCERT summary — daily life",
+          "simple_answer": "Corrosion (rusting) and rancidity are oxidation; prevented by barriers, galvanisation, antioxidants, N₂.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Corrosion & rancidity summary"
+          },
+          "why": "Application summary.",
+          "example": "List prevention for each.",
+          "remember": "Link to section 1.3.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c06",
+          "name": "Must-know balanced equations",
+          "simple_answer": "2Mg + O₂ → 2MgO; CaCO₃ → CaO + CO₂; Zn + 2HCl → ZnCl₂ + H₂; Pb(NO₃)₂ + 2KI → PbI₂ + 2KNO₃.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Top 4 Ch 1 equations",
+            "note": "Memorise balanced"
+          },
+          "why": "Exam high-frequency set.",
+          "example": "Write with state symbols when asked.",
+          "remember": "Drill until automatic.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c07",
+          "name": "Activity equations for exams",
+          "simple_answer": "Activity 1.1 MgO; 1.2 PbI₂ precipitate; 1.3 H₂ evolution — know all three balanced.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activities 1.1–1.3 equations"
+          },
+          "why": "Lab-based questions.",
+          "example": "Describe observation + equation.",
+          "remember": "Observation + balanced equation = full marks.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c08",
+          "name": "Long answer template — reaction type",
+          "simple_answer": "Define type → give general form → write NCERT example → state observation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Long answer template"
+          },
+          "why": "3–5 mark structure.",
+          "example": "Displacement: define, A+BC→AC+B, Fe+CuSO₄.",
+          "remember": "Four-step template.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c09",
+          "name": "MCQ anchors",
+          "simple_answer": "Conservation of mass → balance; reactivity series → displacement; precipitate → double displacement.",
+          "visual": {
+            "type": "placeholder",
+            "label": "MCQ quick anchors"
+          },
+          "why": "Practice tab preview.",
+          "example": "Unbalanced equation always wrong choice.",
+          "remember": "Use rules to eliminate options.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c10",
+          "name": "Unit 1 complete",
+          "simple_answer": "Unit 1 Chemical Reactions and Equations complete — all 160 cards; proceed to Practice when unlocked.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Unit 1 complete — 160 cards"
+          },
+          "why": "Completion card.",
+          "example": "200 MCQs in bank when available.",
+          "remember": "Concepts done → practice.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

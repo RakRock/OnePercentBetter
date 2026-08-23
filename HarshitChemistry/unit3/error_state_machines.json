@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "unit_id": 3,
+    "description": "Common NCERT Ch 3 misconceptions"
+  },
+  "misconception_categories": [
+    "metal_nonmetal_property_swap",
+    "reactivity_series_order_error",
+    "ionic_bond_covalent_confusion",
+    "displacement_reactivity_error",
+    "corrosion_prevention_wrong"
+  ],
+  "machines": {
+    "metal_nonmetal_property_swap": {
+      "feedback": "Metals are lustrous, malleable, ductile, and good conductors; most non-metals are dull and brittle.",
+      "concept_ids": ["u3_d1_c03", "u3_d5_c01", "u3_d5_c04"],
+      "calm_prompt": "Compare physical properties side by side."
+    },
+    "reactivity_series_order_error": {
+      "feedback": "More reactive metals displace less reactive metals from salt solutions; order matters.",
+      "concept_ids": ["u3_d9_c04", "u3_d10_c02", "u3_d10_c06"],
+      "calm_prompt": "Use the series: K Na Ca Mg Al Zn Fe Pb Cu Hg Ag."
+    },
+    "ionic_bond_covalent_confusion": {
+      "feedback": "Ionic compounds form by electron transfer (e.g. Na⁺ and Cl⁻), not by sharing electrons.",
+      "concept_ids": ["u3_d11_c03", "u3_d11_c06", "u3_d12_c02"],
+      "calm_prompt": "Metal loses electrons; non-metal gains them."
+    },
+    "displacement_reactivity_error": {
+      "feedback": "Zinc displaces copper from CuSO₄ because Zn is more reactive than Cu.",
+      "concept_ids": ["u3_d9_c01", "u3_d9_c03", "u3_d8_c06"],
+      "calm_prompt": "Check if the free metal is above the metal in the compound."
+    },
+    "corrosion_prevention_wrong": {
+      "feedback": "Galvanisation coats iron with zinc; painting and oiling block air and moisture.",
+      "concept_ids": ["u3_d16_c02", "u3_d16_c04", "u3_d16_c06"],
+      "calm_prompt": "Prevention = barrier or sacrificial coating."
+    }
+  }
+}
