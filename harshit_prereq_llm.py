@@ -149,7 +149,7 @@ def _parse_items(raw: str, count: int) -> list[dict]:
         question = hmr.sanitize_grok_math_text(str(q["question"]))
         options = [hmr.sanitize_grok_math_text(str(o)) for o in q["options"]]
         explanation = hmr.sanitize_grok_math_text(str(q.get("explanation", "")))
-        validate_practice_question(question, options)
+        validate_practice_question(question, options, answer=answer)
 
         correct = options[answer]
         order = list(range(4))

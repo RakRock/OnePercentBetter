@@ -647,13 +647,13 @@
         "id": "p2_t5_A_5852c9f3",
         "question": "For the equation y = 2 written as 0x + y - 2 = 0, find x when y = 5.",
         "options": [
-          "any real number",
-          "2",
+          "No solution",
+          "Any real number",
           "5",
-          "0"
+          "2"
         ],
         "answer": 0,
-        "explanation": "The coefficient of x is zero so x can take any value while y remains fixed, matching the excerpt example.",
+        "explanation": "When y = 5, the equation gives 5 - 2 = 3 ≠ 0, so no value of x works. Only y = 2 satisfies this line.",
         "topic": 5,
         "level": "A",
         "prereq_id": 2,
