@@ -102,3 +102,53 @@ def test_coaching_concepts_in_report_and_email():
     )
     assert "GO OVER TOGETHER" in plain
     assert "Go over together" in html
+
+
+def test_harshit_student_review_email_from_failures():
+    from practice_email.format import format_harshit_student_review_email
+
+    report = {
+        "correct_count": 3,
+        "total": 5,
+        "score_pct": 60,
+        "needs_revision": [
+            {
+                "name": "Quadrants",
+                "correct": 1,
+                "total": 2,
+                "tip": "Review Quadrants and try similar problems.",
+            }
+        ],
+        "failed_questions": [
+            {
+                "number": 2,
+                "topic": "Quadrants",
+                "question": "Point (-3, 4) lies in which quadrant?",
+                "picked": "II",
+                "correct": "III",
+                "explanation": "x is negative and y is positive → Quadrant II.",
+            },
+            {
+                "number": 4,
+                "topic": "Reading coordinates",
+                "question": "What are the coordinates of P?",
+                "picked": "(2, -1)",
+                "correct": "(2, 1)",
+                "explanation": "Count right 2, up 1 from the origin.",
+            },
+        ],
+    }
+    subject, plain, html = format_harshit_student_review_email(
+        student_name="Harshit Sai",
+        unit_title="PreReq 3",
+        unit_subtitle="Topic 1",
+        report=report,
+        time_spent_seconds=420,
+    )
+    assert "Harshit" in subject
+    assert "CONCEPTS TO REVIEW" in plain
+    assert "Quadrants" in plain
+    assert "Reading coordinates" in plain
+    assert "Concepts to review" in html
+    assert "Count right 2" in plain
+

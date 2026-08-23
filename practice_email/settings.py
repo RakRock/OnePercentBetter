@@ -21,10 +21,14 @@ class EmailConfigError(RuntimeError):
     """Non-retryable misconfiguration — fix secrets.toml before retrying."""
 
 
+DEFAULT_HARSHIT_STUDENT_EMAIL = "harshitsai.rv@gmail.com"
+
+
 @dataclass(frozen=True)
 class EmailSettings:
     enabled: bool
     recipient: str
+    harshit_student_email: str
     transport: str
     smtp_host: str
     smtp_port: int
@@ -190,6 +194,7 @@ def validate_smtp_host(host: str) -> tuple[bool, str]:
 def load_settings() -> EmailSettings:
     toml = _load_toml()
     recipient = _get(toml, "PRACTICE_REPORT_EMAIL_TO")
+    harshit_student = _get(toml, "HARSHIT_STUDENT_EMAIL", DEFAULT_HARSHIT_STUDENT_EMAIL)
     enabled = _bool_val(_get(toml, "PRACTICE_REPORT_EMAIL_ENABLED"), bool(recipient))
     smtp_user = _get(toml, "SMTP_USER")
     password = (_get(toml, "SMTP_PASSWORD") or _get(toml, "SMTP_PASS")).replace(" ", "")
@@ -198,6 +203,7 @@ def load_settings() -> EmailSettings:
     return EmailSettings(
         enabled=enabled,
         recipient=recipient,
+        harshit_student_email=harshit_student,
         transport=transport,
         smtp_host=smtp_host,
         smtp_port=int(_get(toml, "SMTP_PORT", "587") or "587"),

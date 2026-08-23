@@ -21,24 +21,39 @@ _RETRIES = 3
 _RETRY_DELAY = 1.5
 
 
-def build_message(settings: EmailSettings, subject: str, plain: str, html: str) -> MIMEMultipart:
+def build_message(
+    settings: EmailSettings,
+    subject: str,
+    plain: str,
+    html: str,
+    *,
+    recipient: str | None = None,
+) -> MIMEMultipart:
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = settings.smtp_from
-    msg["To"] = settings.recipient
+    msg["To"] = recipient or settings.recipient
     msg.attach(MIMEText(plain, "plain", "utf-8"))
     msg.attach(MIMEText(html, "html", "utf-8"))
     return msg
 
 
-def send_smtp(settings: EmailSettings, subject: str, plain: str, html: str) -> None:
+def send_smtp(
+    settings: EmailSettings,
+    subject: str,
+    plain: str,
+    html: str,
+    *,
+    recipient: str | None = None,
+) -> None:
     """Send one report email. Raises on failure."""
     assert_smtp_ready(settings)
     host_ok, host_msg = validate_smtp_host(settings.smtp_host)
     if not host_ok:
         raise EmailConfigError(host_msg)
 
-    msg = build_message(settings, subject, plain, html)
+    to_addr = recipient or settings.recipient
+    msg = build_message(settings, subject, plain, html, recipient=to_addr)
     host = settings.smtp_host
     port = settings.smtp_port
     ctx = ssl.create_default_context()
@@ -54,7 +69,7 @@ def send_smtp(settings: EmailSettings, subject: str, plain: str, html: str) -> N
                 if settings.use_tls:
                     server.starttls(context=ctx)
                 server.login(settings.smtp_user, settings.smtp_password)
-                server.sendmail(settings.smtp_from, [settings.recipient], msg.as_string())
+                server.sendmail(settings.smtp_from, [to_addr], msg.as_string())
             return
         except OSError as exc:
             last_error = exc
@@ -65,7 +80,7 @@ def send_smtp(settings: EmailSettings, subject: str, plain: str, html: str) -> N
         try:
             with smtplib.SMTP_SSL(host, 465, context=ctx, timeout=30) as server:
                 server.login(settings.smtp_user, settings.smtp_password)
-                server.sendmail(settings.smtp_from, [settings.recipient], msg.as_string())
+                server.sendmail(settings.smtp_from, [to_addr], msg.as_string())
             return
         except OSError as exc:
             last_error = exc

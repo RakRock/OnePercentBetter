@@ -324,3 +324,151 @@ def format_practice_report_email(
     </div>
     """
     return subject, plain, html_body
+
+
+def build_review_concepts_from_failures(
+    failed: list[dict],
+    *,
+    needs_revision: list[dict] | None = None,
+) -> list[dict]:
+    """Group missed questions into student-facing topics with review tips."""
+    by_topic: dict[str, dict] = {}
+    for item in failed:
+        topic = (item.get("topic") or "Practice").strip()
+        bucket = by_topic.setdefault(
+            topic,
+            {"topic": topic, "count": 0, "tips": [], "examples": []},
+        )
+        bucket["count"] += 1
+        expl = (item.get("explanation") or "").strip()
+        if expl and expl not in bucket["tips"]:
+            bucket["tips"].append(expl)
+        q = (item.get("question") or "").strip()
+        if q and len(bucket["examples"]) < 2:
+            bucket["examples"].append(q)
+
+    for rev in needs_revision or []:
+        name = (rev.get("name") or "").strip()
+        if not name or name in by_topic:
+            continue
+        missed_count = int(rev.get("total", 0)) - int(rev.get("correct", 0))
+        if missed_count <= 0:
+            continue
+        by_topic[name] = {
+            "topic": name,
+            "count": missed_count,
+            "tips": [rev.get("tip") or f"Review {name} and try similar problems."],
+            "examples": [],
+        }
+
+    return sorted(by_topic.values(), key=lambda x: (-x["count"], x["topic"]))
+
+
+def format_harshit_student_review_email(
+    *,
+    student_name: str,
+    unit_title: str,
+    unit_subtitle: str,
+    report: dict,
+    time_spent_seconds: int,
+    when: datetime | None = None,
+    failed_questions: list[dict] | None = None,
+) -> tuple[str, str, str]:
+    """Student-facing email: score plus concepts to review from missed questions."""
+    when = when or datetime.now()
+    date_str = when.strftime("%A, %B %d, %Y")
+    minutes, seconds = divmod(max(time_spent_seconds, 0), 60)
+    score_line = f"{report['correct_count']}/{report['total']} ({report['score_pct']}%)"
+    first_name = student_name.split()[0] if student_name.strip() else "Student"
+
+    missed = failed_questions if failed_questions is not None else _failed_from_report(report, None, None)
+    concepts = build_review_concepts_from_failures(
+        missed,
+        needs_revision=report.get("needs_revision") or [],
+    )
+
+    subject = f"{first_name} — review from {unit_title} ({report['score_pct']}%)"
+
+    plain_parts = [
+        f"Hi {first_name},",
+        "",
+        f"You finished {unit_title}" + (f" ({unit_subtitle})" if unit_subtitle else "") + f" on {date_str}.",
+        f"Score: {score_line} · Time: {minutes}m {seconds}s",
+        "",
+    ]
+
+    if concepts:
+        plain_parts.append("CONCEPTS TO REVIEW (from questions you missed)")
+        plain_parts.append("----------------------------------------------")
+        for i, c in enumerate(concepts, start=1):
+            plain_parts.append(f"{i}. {c['topic']} — {c['count']} question(s) to revisit")
+            for tip in c.get("tips") or []:
+                plain_parts.append(f"   • {_format_math_for_email_plain(tip)}")
+            for ex in c.get("examples") or []:
+                plain_parts.append(f"   Example: {_format_math_for_email_plain(ex)}")
+            plain_parts.append("")
+        plain_parts.append("Try one similar problem for each topic, then explain your steps out loud.")
+    else:
+        plain_parts.append("Great session — no missed questions this time. Keep it up!")
+
+    plain_parts.append("")
+    plain_parts.append("— OnePercent Harshit Math")
+    plain = "\n".join(plain_parts)
+
+    if concepts:
+        concept_blocks = []
+        for i, c in enumerate(concepts, start=1):
+            tips_html = "".join(
+                f'<li style="margin:0.2rem 0;">{_format_math_for_email_html(t)}</li>'
+                for t in (c.get("tips") or [])
+            )
+            examples_html = "".join(
+                f'<p style="margin:0.25rem 0 0 0;color:#4b5563;font-size:0.9rem;">'
+                f'<strong>Example:</strong> {_format_math_for_email_html(ex)}</p>'
+                for ex in (c.get("examples") or [])
+            )
+            concept_blocks.append(
+                f"""
+                <div style="background:#fffbeb;border-left:4px solid #f59e0b;padding:0.85rem 1rem;
+                     border-radius:8px;margin-bottom:0.75rem;">
+                  <p style="margin:0;font-weight:700;color:#b45309;">
+                    {i}. {html_lib.escape(c["topic"])}
+                    <span style="font-weight:500;">({c["count"]} missed)</span>
+                  </p>
+                  <ul style="margin:0.35rem 0 0 1rem;color:#374151;padding:0;">{tips_html}</ul>
+                  {examples_html}
+                </div>
+                """
+            )
+        review_section = (
+            '<h3 style="color:#b45309;margin:1rem 0 0.3rem 0;">📚 Concepts to review</h3>'
+            + "".join(concept_blocks)
+            + '<p style="color:#374151;margin:0.75rem 0 0 0;">Try one similar problem for each topic, '
+            "then explain your steps out loud.</p>"
+        )
+    else:
+        review_section = (
+            '<p style="background:#ecfdf5;border-left:4px solid #10b981;padding:0.85rem 1rem;'
+            'border-radius:8px;color:#047857;margin:1rem 0 0 0;">'
+            "Great session — no missed questions this time. Keep it up!</p>"
+        )
+
+    unit_line = html_lib.escape(unit_title)
+    if unit_subtitle:
+        unit_line += f" — {html_lib.escape(unit_subtitle)}"
+
+    html_body = f"""
+    <div style="font-family:sans-serif;max-width:560px;color:#1f2937;">
+      <h2 style="color:#6366f1;margin:0 0 0.5rem 0;">Hi {html_lib.escape(first_name)} 👋</h2>
+      <p style="line-height:1.5;margin:0 0 1rem 0;">
+        You finished <strong>{unit_line}</strong> on {date_str}.
+      </p>
+      <table style="border-collapse:collapse;margin-bottom:0.5rem;">
+        <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Score</td><td><strong>{score_line}</strong></td></tr>
+        <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Time</td><td>{minutes}m {seconds}s</td></tr>
+      </table>
+      {review_section}
+      <p style="color:#9ca3af;font-size:0.85rem;margin-top:1.5rem;">OnePercent Harshit Math</p>
+    </div>
+    """
+    return subject, plain, html_body

@@ -20,7 +20,13 @@ def main() -> int:
     from practice_email.transport import deliver_now
 
     settings = load_settings()
-    deliver_now(settings, payload["subject"], payload["plain"], payload["html"])
+    deliver_now(
+        settings,
+        payload["subject"],
+        payload["plain"],
+        payload["html"],
+        recipient=payload.get("recipient") or None,
+    )
     path.unlink(missing_ok=True)
     return 0
 

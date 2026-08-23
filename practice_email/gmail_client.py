@@ -32,22 +32,36 @@ def _refresh_access_token(settings: EmailSettings) -> str:
     return str(token)
 
 
-def _build_raw_message(settings: EmailSettings, subject: str, plain: str, html: str) -> str:
+def _build_raw_message(
+    settings: EmailSettings,
+    subject: str,
+    plain: str,
+    html: str,
+    *,
+    recipient: str | None = None,
+) -> str:
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = settings.smtp_from or settings.smtp_user
-    msg["To"] = settings.recipient
+    msg["To"] = recipient or settings.recipient
     msg.attach(MIMEText(plain, "plain", "utf-8"))
     msg.attach(MIMEText(html, "html", "utf-8"))
     return base64.urlsafe_b64encode(msg.as_bytes()).decode("ascii")
 
 
-def send_gmail(settings: EmailSettings, subject: str, plain: str, html: str) -> None:
+def send_gmail(
+    settings: EmailSettings,
+    subject: str,
+    plain: str,
+    html: str,
+    *,
+    recipient: str | None = None,
+) -> None:
     """Send one report via Gmail API. Raises on failure."""
     if not settings.gmail_client_id or not settings.gmail_client_secret or not settings.gmail_refresh_token:
         raise RuntimeError("Gmail API OAuth not configured")
     token = _refresh_access_token(settings)
-    raw = _build_raw_message(settings, subject, plain, html)
+    raw = _build_raw_message(settings, subject, plain, html, recipient=recipient)
     resp = httpx.post(
         _SEND_URL,
         headers={"Authorization": f"Bearer {token}"},

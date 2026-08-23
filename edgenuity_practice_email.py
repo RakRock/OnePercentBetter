@@ -6,7 +6,7 @@ from datetime import datetime
 
 import streamlit as st
 
-from practice_email.delivery import EmailSendResult, flush_pending, send_report
+from practice_email.delivery import EmailSendResult, flush_pending, send_harshit_session_emails, send_report
 from practice_email.format import build_failed_questions, format_practice_report_email
 from practice_email.settings import (
     delivery_ready,
@@ -36,6 +36,8 @@ def render_practice_email_result(result: EmailSendResult) -> None:
     """Shared UI feedback — same for Arjun Course 3, Edgenuity, Linear Eq, and Harshit."""
     if result.ok:
         st.success(f"📧 Report emailed to {result.recipient}")
+        if result.error:
+            st.warning(result.error)
         return
     if result.pending:
         st.warning(
@@ -112,7 +114,7 @@ def send_harshit_report_email(
     questions: list[dict] | None = None,
     answers: list[dict] | None = None,
 ) -> EmailSendResult:
-    return send_report(
+    return send_harshit_session_emails(
         student_name=student_name,
         unit_title=unit_title,
         unit_subtitle=unit_subtitle,
@@ -122,8 +124,6 @@ def send_harshit_report_email(
         session_meta=session_meta,
         questions=questions,
         answers=answers,
-        program_name="Harshit Math",
-        report_heading="Harshit Math Practice Report",
     )
 
 
