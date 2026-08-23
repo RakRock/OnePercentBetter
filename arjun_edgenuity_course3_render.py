@@ -81,7 +81,7 @@ def _render_text_block(unit: dict, activity: dict, markdown: str) -> None:
                 st.caption(cap)
         else:
             st.caption(
-                f"_(Run `python generate_edgenuity_unit1_diagrams.py` to create diagram: {key})_"
+                f"_(Run `python scripts/edgenuity/generate_edgenuity_unit1_diagrams.py` to create diagram: {key})_"
             )
         pos = m.end()
     tail = markdown[pos:]

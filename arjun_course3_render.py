@@ -59,7 +59,7 @@ def render_markdown_with_diagrams(unit: dict, activity: dict, markdown: str) -> 
             if cap:
                 st.caption(cap)
         else:
-            st.caption(f"_(Run `python generate_unit2_diagrams.py --activity {activity.get('number', '')}` to create diagram: {key})_")
+            st.caption(f"_(Run `python scripts/arjun/generate_unit2_diagrams.py --activity {activity.get('number', '')}` to create diagram: {key})_")
         pos = m.end()
     tail = markdown[pos:]
     if tail.strip():

@@ -34,11 +34,11 @@ To generate diagram images with Hugging Face:
 
 ```bash
 # Activity 9 — clean inline diagrams (matplotlib, recommended):
-python generate_activity9_diagrams.py
+python scripts/arjun/generate_activity9_diagrams.py
 
 # Other activities (optional, Hugging Face):
 export HF_TOKEN="hf_..."
-python generate_course3_diagrams.py
+python scripts/arjun/generate_course3_diagrams.py
 ```
 
 ## Regenerating Story Images
@@ -71,7 +71,15 @@ OnePercent/
 ├── app.py                 # Main Streamlit application
 ├── database.py            # SQLite database module
 ├── reading_content.py     # Story library with comprehension questions
-├── generate_images.py     # AI image generation script (run once)
+├── generate_images.py     # AI image generation (runtime + CLI)
+├── harshit/               # Harshit learning modules (Python packages)
+│   └── physics/           # NCERT Class 10 Physics app code
+├── harshit_physics_*.py   # Backward-compatible shims → harshit.physics.*
+├── scripts/               # One-off builders and generators
+│   ├── arjun/             # Course 3 notes & diagram builders
+│   ├── edgenuity/         # Edgenuity notes & diagram builders
+│   ├── harshit/           # Physics schema/question bank builders
+│   └── maps/              # Map and logo image generators
 ├── images/                # Pre-generated story illustrations (48 PNGs)
 ├── requirements.txt       # Python runtime dependencies
 ├── render.yaml            # Render deployment config
