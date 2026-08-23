@@ -5,7 +5,11 @@ from __future__ import annotations
 import streamlit as st
 
 import database as db
-from harshit.ui_utils import render_scroll_to_top_if_requested, request_scroll_to_top
+from harshit.ui_utils import (
+    render_concept_top_anchor,
+    render_scroll_to_top_if_requested,
+    request_scroll_to_top,
+)
 from . import components as hpco
 from . import content as hpc
 from . import state as hps
@@ -379,8 +383,6 @@ def render_concept_card() -> None:
     if show_menu and _is_first_visit(day_id, unit_id):
         st.session_state.pop("hc_show_day_menu", None)
 
-    render_scroll_to_top_if_requested()
-
     state = _get_concept_state(day_id, unit_id)
     concepts = day.get("concepts") or []
     concept = state.current_concept()
@@ -396,6 +398,7 @@ def render_concept_card() -> None:
         return
 
     idx = state.concept_index
+    render_concept_top_anchor()
     st.caption(f"Unit {unit_id} · Day {day_id} · {day['title']} · Concept {idx + 1} of {len(concepts)}")
 
     if st.button(f"← Unit {unit_id}"):
@@ -490,3 +493,5 @@ def render_concept_card() -> None:
         else:
             request_scroll_to_top()
         st.rerun()
+
+    render_scroll_to_top_if_requested()
