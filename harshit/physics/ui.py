@@ -182,6 +182,15 @@ def render_unit_home(unit_id: int) -> None:
 
     st.markdown(f"## Unit {unit_id} — {umeta['title']}")
     st.caption(f"{meta.get('ncert', umeta['ncert'])} · 16 concept days + practice")
+    pdf_name = umeta.get("pdf") or hpc.ncert_source(unit_id).get("meta", {}).get("pdf")
+    if pdf_name:
+        pdf_path = hpc.unit_dir(unit_id) / pdf_name
+        if pdf_path.is_file():
+            with st.expander("📄 NCERT chapter (PDF)", expanded=False):
+                try:
+                    st.pdf(pdf_path)
+                except Exception:
+                    st.caption(str(pdf_path))
     st.markdown("")
 
     viewed = _all_viewed_ids(unit_id)
@@ -208,15 +217,34 @@ def render_unit_home(unit_id: int) -> None:
     if section_key not in st.session_state:
         st.session_state[section_key] = "📚 Learn"
 
+    sections = ["📚 Learn", "🎯 Practice", "⚙️ Practice Setup"]
+    if hpc.stage2_available(unit_id):
+        sections.insert(2, "📋 Stage 2")
+    if hpc.stage3_available(unit_id):
+        insert_at = sections.index("⚙️ Practice Setup")
+        sections.insert(insert_at, "📝 Stage 3")
+
     section = st.radio(
         "Section",
-        ["📚 Learn", "🎯 Practice", "⚙️ Practice Setup"],
+        sections,
         horizontal=True,
         key=section_key,
         label_visibility="collapsed",
     )
 
     st.markdown("---")
+
+    if section == "📋 Stage 2":
+        from . import mcq_ui as hpmcq
+
+        hpmcq.render_stage2_home(stage1_done=stage1_done, unit_id=unit_id)
+        return
+
+    if section == "📝 Stage 3":
+        from . import exercise_ui as hpex
+
+        hpex.render_stage3_home(stage1_done=stage1_done, unit_id=unit_id)
+        return
 
     if section == "🎯 Practice":
         from . import practice_ui as hppui

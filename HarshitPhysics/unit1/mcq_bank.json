@@ -2,35 +2,901 @@
   "meta": {
     "unit_id": 1,
     "stage": 2,
-    "active": false,
+    "active": true,
     "release": 5,
     "total_mcqs": 40,
-    "note": "Days 17–20 MCQs unlock after Stage 1 concept cards are viewed."
+    "pdf": "jesc109.pdf",
+    "note": "Stage 2: NCERT Exercises + Intext + concept bank. Activities 9.1–9.13 linked per day."
   },
   "sessions": [
     {
       "day": 17,
       "title": "Reflection and Spherical Mirrors",
-      "active": false,
-      "questions": []
+      "active": true,
+      "activity_refs": [
+        "9.1",
+        "9.3",
+        "9.4"
+      ],
+      "questions": [
+        {
+          "id": "u1_d17_ncert_01",
+          "question": "Which one of the following materials cannot be used to make a lens?",
+          "options": [
+            "Water",
+            "Glass",
+            "Plastic",
+            "Clay"
+          ],
+          "answer": 3,
+          "explanation": "Clay is opaque and cannot form a transparent lens.",
+          "misconception": "reflection_refraction_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 9 Exercises Q1",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "ncert_ref": "NCERT Ch 9 Exercises Q1"
+        },
+        {
+          "id": "u1_d17_ncert_02",
+          "question": "The image formed by a concave mirror is observed to be virtual, erect and larger than the object. Where should be the position of the object?",
+          "options": [
+            "Between the principal focus and the centre of curvature",
+            "At the centre of curvature",
+            "Beyond the centre of curvature",
+            "Between the pole of the mirror and its principal focus"
+          ],
+          "answer": 3,
+          "explanation": "Virtual, erect, enlarged images from a concave mirror occur when the object is between P and F.",
+          "misconception": "concave_convex_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 9 Exercises Q2",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "ncert_ref": "NCERT Ch 9 Exercises Q2"
+        },
+        {
+          "id": "u1_d17_intext_03",
+          "question": "In the mirror formula 1/v + 1/u = 1/f, which sign convention is used for distances measured against the direction of incident light?",
+          "options": [
+            "They are taken as positive",
+            "They are taken as negative",
+            "Sign does not matter",
+            "Only u is negative"
+          ],
+          "answer": 1,
+          "explanation": "Distances measured against the direction of incident light are negative in the NCERT sign convention.",
+          "misconception": "object_distance_sign",
+          "concept_id": "",
+          "source": "NCERT Ch 9 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "ncert_ref": "NCERT Ch 9 Intext"
+        },
+        {
+          "id": "u1_d17_intext_04",
+          "question": "Refractive index n = c/v compares the speed of light in vacuum to that in the medium. If light slows down in glass, n is",
+          "options": [
+            "less than 1",
+            "equal to 1",
+            "greater than 1",
+            "zero"
+          ],
+          "answer": 2,
+          "explanation": "When v < c, the ratio c/v exceeds 1.",
+          "misconception": "refractive_index_speed",
+          "concept_id": "",
+          "source": "NCERT Ch 9 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "ncert_ref": "NCERT Ch 9 Intext"
+        },
+        {
+          "id": "u1_s2_d1_bank_05",
+          "question": "What is the key takeaway about **Non-luminous objects**?",
+          "options": [
+            "See the path: source → object → eye.",
+            "Darkness means insufficient light reaching the eye.",
+            "Non-luminous ≠ invisible",
+            "Reflection sends light back; it does not create new light."
+          ],
+          "answer": 2,
+          "explanation": "Non-luminous ≠ invisible. Reflection makes them visible.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c02",
+          "category": "u1_d1_B",
+          "category_label": "Day 1 — How We See and Represent Light · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d1_bank_06",
+          "question": "What is the key takeaway about **Light source**?",
+          "options": [
+            "A beam = many rays; a ray diagram often shows one representative ray.",
+            "Always ask: where did the light start?.",
+            "Light rays are drawn straight until reflection or refraction changes direction.",
+            "Draw the full path before deciding where an image forms."
+          ],
+          "answer": 1,
+          "explanation": "Always ask: where did the light start?",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c03",
+          "category": "u1_d1_C",
+          "category_label": "Day 1 — How We See and Represent Light · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d1_bank_07",
+          "question": "Which statement best describes **Luminous objects**?",
+          "options": [
+            "A beam is a collection of many rays travelling together, often from a torch or sunlight through clouds.",
+            "Vision happens when light from an object enters your eye and forms a signal for your brain.",
+            "A ray is a straight line with an arrow showing the direction light travels.",
+            "A luminous object produces its own light."
+          ],
+          "answer": 3,
+          "explanation": "Luminous means the object is the light source — not just bright-looking.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c01",
+          "category": "u1_d1_A",
+          "category_label": "Day 1 — How We See and Represent Light · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d2_bank_08",
+          "question": "What is the key takeaway about **Incident ray**?",
+          "options": [
+            "Mark this point before drawing the normal.",
+            "Measure reflection angles from the normal, not from the mirror.",
+            "Same plane means one 2D diagram is enough for plane mirrors.",
+            "Incident = incoming; arrow points to the surface"
+          ],
+          "answer": 3,
+          "explanation": "Incident = incoming; arrow points to the surface.",
+          "day_id": 2,
+          "topic": 2,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d2_c02",
+          "category": "u1_d2_B",
+          "category_label": "Day 2 — Reflection and Plane Mirrors · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d2_bank_09",
+          "question": "What is the key takeaway about **Reflected ray**?",
+          "options": [
+            "Reflected ray arrow points away from the mirror",
+            "Shiny and smooth surfaces give clearer reflections.",
+            "Same side rule: both angles are measured from the normal on opposite sides of it.",
+            "i = r (both measured from the normal)."
+          ],
+          "answer": 0,
+          "explanation": "Reflected ray arrow points away from the mirror.",
+          "day_id": 2,
+          "topic": 2,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d2_c03",
+          "category": "u1_d2_C",
+          "category_label": "Day 2 — Reflection and Plane Mirrors · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d2_bank_10",
+          "question": "Which statement best describes **Reflecting surface**?",
+          "options": [
+            "The normal is an imaginary line perpendicular to the surface at the point of incidence.",
+            "The incident ray, the normal at the point of incidence, and the reflected ray all lie in the same plane.",
+            "A reflecting surface sends light back instead of absorbing it.",
+            "A plane mirror gives a virtual, erect image the same size as the object, as far behind the mirror as the object is in front."
+          ],
+          "answer": 2,
+          "explanation": "Shiny and smooth surfaces give clearer reflections.",
+          "day_id": 2,
+          "topic": 2,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d2_c01",
+          "category": "u1_d2_A",
+          "category_label": "Day 2 — Reflection and Plane Mirrors · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        }
+      ]
     },
     {
       "day": 18,
       "title": "Mirror Signs and Numericals",
-      "active": false,
-      "questions": []
+      "active": true,
+      "activity_refs": [
+        "9.5",
+        "9.6"
+      ],
+      "questions": [
+        {
+          "id": "u1_d18_ncert_01",
+          "question": "A spherical mirror and a thin spherical lens have each a focal length of –15 cm. The mirror and the lens are likely to be",
+          "options": [
+            "both concave",
+            "both convex",
+            "the mirror is concave and the lens is convex",
+            "the mirror is convex, but the lens is concave"
+          ],
+          "answer": 0,
+          "explanation": "Negative focal length (New Cartesian sign convention) indicates a concave mirror and a concave (diverging) lens.",
+          "misconception": "focal_length_sign",
+          "concept_id": "",
+          "source": "NCERT Ch 9 Exercises Q4",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "ncert_ref": "NCERT Ch 9 Exercises Q4"
+        },
+        {
+          "id": "u1_d18_ncert_02",
+          "question": "No matter how far you stand from a mirror, your image appears erect. The mirror is likely to be",
+          "options": [
+            "only plane",
+            "only concave",
+            "only convex",
+            "either plane or convex"
+          ],
+          "answer": 3,
+          "explanation": "Plane and convex mirrors always give erect images; concave mirrors can give inverted real images.",
+          "misconception": "real_means_erect",
+          "concept_id": "",
+          "source": "NCERT Ch 9 Exercises Q5",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "ncert_ref": "NCERT Ch 9 Exercises Q5"
+        },
+        {
+          "id": "u1_s2_d1_bank_03",
+          "question": "What is the key takeaway about **Light entering the eye**?",
+          "options": [
+            "Non-luminous ≠ invisible.",
+            "Luminous means the object is the light source — not just bright-looking.",
+            "Reflection sends light back; it does not create new light.",
+            "See the path: source → object → eye"
+          ],
+          "answer": 3,
+          "explanation": "See the path: source → object → eye.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c05",
+          "category": "u1_d1_B",
+          "category_label": "Day 1 — How We See and Represent Light · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d1_bank_04",
+          "question": "What is the key takeaway about **Seeing in darkness**?",
+          "options": [
+            "Light rays are drawn straight until reflection or refraction changes direction.",
+            "Draw the full path before deciding where an image forms.",
+            "Darkness means insufficient light reaching the eye",
+            "Always ask: where did the light start?."
+          ],
+          "answer": 2,
+          "explanation": "Darkness means insufficient light reaching the eye.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c06",
+          "category": "u1_d1_C",
+          "category_label": "Day 1 — How We See and Represent Light · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d1_bank_05",
+          "question": "Which statement best describes **Reflected light**?",
+          "options": [
+            "To explain seeing: light leaves a source, hits an object (often by reflection), then enters your eye.",
+            "A beam is a collection of many rays travelling together, often from a torch or sunlight through clouds.",
+            "Vision happens when light from an object enters your eye and forms a signal for your brain.",
+            "When light hits a surface and bounces back, that bounced light is reflected light."
+          ],
+          "answer": 3,
+          "explanation": "Reflection sends light back; it does not create new light.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c04",
+          "category": "u1_d1_A",
+          "category_label": "Day 1 — How We See and Represent Light · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d2_bank_06",
+          "question": "What is the key takeaway about **The normal**?",
+          "options": [
+            "Mark this point before drawing the normal.",
+            "Use the arc between incident ray and normal — not the surface.",
+            "Measure reflection angles from the normal, not from the mirror",
+            "Reflected ray arrow points away from the mirror."
+          ],
+          "answer": 2,
+          "explanation": "Measure reflection angles from the normal, not from the mirror.",
+          "day_id": 2,
+          "topic": 2,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d2_c05",
+          "category": "u1_d2_B",
+          "category_label": "Day 2 — Reflection and Plane Mirrors · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "bending_direction_reversed"
+        },
+        {
+          "id": "u1_s2_d2_bank_07",
+          "question": "What is the key takeaway about **Angle of incidence**?",
+          "options": [
+            "Reflected ray arrow points away from the mirror.",
+            "Same side rule: both angles are measured from the normal on opposite sides of it.",
+            "Use the arc between incident ray and normal — not the surface",
+            "Shiny and smooth surfaces give clearer reflections."
+          ],
+          "answer": 2,
+          "explanation": "Use the arc between incident ray and normal — not the surface.",
+          "day_id": 2,
+          "topic": 2,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d2_c06",
+          "category": "u1_d2_C",
+          "category_label": "Day 2 — Reflection and Plane Mirrors · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "bending_direction_reversed"
+        },
+        {
+          "id": "u1_s2_d2_bank_08",
+          "question": "Which statement best describes **Point of incidence**?",
+          "options": [
+            "The angle of incidence is measured between the incident ray and the normal at the point of incidence.",
+            "The point of incidence is the exact spot on the surface where the incident ray meets it.",
+            "The normal is an imaginary line perpendicular to the surface at the point of incidence.",
+            "The reflected ray leaves the surface after reflection."
+          ],
+          "answer": 1,
+          "explanation": "Mark this point before drawing the normal.",
+          "day_id": 2,
+          "topic": 2,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d2_c04",
+          "category": "u1_d2_A",
+          "category_label": "Day 2 — Reflection and Plane Mirrors · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "bending_direction_reversed"
+        },
+        {
+          "id": "u1_s2_d3_bank_09",
+          "question": "What is the key takeaway about **Concave mirror**?",
+          "options": [
+            "Convex = bulges out toward the object.",
+            "Draw rays hitting the polished arc, not the back.",
+            "C is outside the mirror surface.",
+            "Concave = cave-like = curves in"
+          ],
+          "answer": 3,
+          "explanation": "Concave = cave-like = curves in.",
+          "day_id": 3,
+          "topic": 3,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d3_c02",
+          "category": "u1_d3_B",
+          "category_label": "Day 3 — Spherical Mirrors · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d3_bank_10",
+          "question": "What is the key takeaway about **Convex mirror**?",
+          "options": [
+            "Convex = bulges out toward the object",
+            "R = 2f for small-aperture spherical mirrors.",
+            "P is on the mirror; C is not on the mirror.",
+            "Large mirrors break the small-angle approximation used in school formulas."
+          ],
+          "answer": 0,
+          "explanation": "Convex = bulges out toward the object.",
+          "day_id": 3,
+          "topic": 3,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d3_c03",
+          "category": "u1_d3_C",
+          "category_label": "Day 3 — Spherical Mirrors · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        }
+      ]
     },
     {
       "day": 19,
       "title": "Refraction and Lenses",
-      "active": false,
-      "questions": []
+      "active": true,
+      "activity_refs": [
+        "9.2",
+        "9.7",
+        "9.8",
+        "9.9",
+        "9.10"
+      ],
+      "questions": [
+        {
+          "id": "u1_d19_ncert_01",
+          "question": "Where should an object be placed in front of a convex lens to get a real image of the size of the object?",
+          "options": [
+            "At the principal focus of the lens",
+            "At twice the focal length",
+            "At infinity",
+            "Between the optical centre of the lens and its principal focus"
+          ],
+          "answer": 1,
+          "explanation": "At u = 2f, a convex lens forms a real image of the same size at v = 2f.",
+          "misconception": "mirror_lens_formula_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 9 Exercises Q3",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "ncert_ref": "NCERT Ch 9 Exercises Q3"
+        },
+        {
+          "id": "u1_d19_ncert_02",
+          "question": "Which of the following lenses would you prefer to use while reading small letters found in a dictionary?",
+          "options": [
+            "A convex lens of focal length 50 cm",
+            "A concave lens of focal length 50 cm",
+            "A convex lens of focal length 5 cm",
+            "A concave lens of focal length 5 cm"
+          ],
+          "answer": 2,
+          "explanation": "A convex lens is a magnifier; shorter focal length gives greater magnification for nearby objects.",
+          "misconception": "lens_power_sign",
+          "concept_id": "",
+          "source": "NCERT Ch 9 Exercises Q6",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "ncert_ref": "NCERT Ch 9 Exercises Q6"
+        },
+        {
+          "id": "u1_s2_d9_bank_03",
+          "question": "What is the key takeaway about **Direction of incident light**?",
+          "options": [
+            "Down from axis = −.",
+            "Light goes left → right",
+            "Up from axis = +.",
+            "Real object in front → u positive."
+          ],
+          "answer": 1,
+          "explanation": "Light goes left → right.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d9_c02",
+          "category": "u1_d9_B",
+          "category_label": "Day 9 — Mirror Sign Convention · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d9_bank_04",
+          "question": "What is the key takeaway about **Positive horizontal**?",
+          "options": [
+            "Down from axis = −.",
+            "Real v +, virtual v −.",
+            "Concave: f negative.",
+            "With the light: positive"
+          ],
+          "answer": 3,
+          "explanation": "With the light: positive.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d9_c03",
+          "category": "u1_d9_C",
+          "category_label": "Day 9 — Mirror Sign Convention · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d9_bank_05",
+          "question": "Which statement best describes **Pole as origin**?",
+          "options": [
+            "Distances measured against incident light (behind the mirror) are negative.",
+            "In the mirror formula sign convention, pole P is taken as the origin (0) for distances.",
+            "For a real object in front of the mirror, u is taken positive in the NCERT convention.",
+            "Incident light is treated as travelling from left to right in standard NCERT diagrams."
+          ],
+          "answer": 1,
+          "explanation": "P = 0 on the axis.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d9_c01",
+          "category": "u1_d9_A",
+          "category_label": "Day 9 — Mirror Sign Convention · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d10_bank_06",
+          "question": "What is the key takeaway about **Image distance v**?",
+          "options": [
+            "Signs first, numbers second.",
+            "Always include sign of f in 1/f.",
+            "Negative m → inverted image.",
+            "v sign tells real vs virtual"
+          ],
+          "answer": 3,
+          "explanation": "v sign tells real vs virtual.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d10_c02",
+          "category": "u1_d10_B",
+          "category_label": "Day 10 — Mirror Formula and Magnification · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "virtual_means_invisible"
+        },
+        {
+          "id": "u1_s2_d10_bank_07",
+          "question": "What is the key takeaway about **Focal length f**?",
+          "options": [
+            "Add reciprocals, not distances directly.",
+            "Reciprocal form — not v = f + u.",
+            "Always include sign of f in 1/f",
+            "Measure u from P to object."
+          ],
+          "answer": 2,
+          "explanation": "Always include sign of f in 1/f.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d10_c03",
+          "category": "u1_d10_C",
+          "category_label": "Day 10 — Mirror Formula and Magnification · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "focal_length_sign"
+        },
+        {
+          "id": "u1_s2_d10_bank_08",
+          "question": "Which statement best describes **Object distance u**?",
+          "options": [
+            "Substitute signed u, v, f before solving — signs are part of the physics.",
+            "u is the distance of the object from pole P along the principal axis.",
+            "After calculating m, state: inverted/erect, enlarged/diminished/same, using sign and |m|.",
+            "1/v + 1/u = 1/f relates object distance, image distance, and focal length."
+          ],
+          "answer": 1,
+          "explanation": "Measure u from P to object.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d10_c01",
+          "category": "u1_d10_A",
+          "category_label": "Day 10 — Mirror Formula and Magnification · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d11_bank_09",
+          "question": "What is the key takeaway about **Boundary between media**?",
+          "options": [
+            "Speed change → bending.",
+            "Denser = slower light.",
+            "Transparent ≠ no refraction.",
+            "Boundary = interface between media"
+          ],
+          "answer": 3,
+          "explanation": "Boundary = interface between media.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c02",
+          "category": "u1_d11_B",
+          "category_label": "Day 11 — Introduction to Refraction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d11_bank_10",
+          "question": "What is the key takeaway about **Incident ray at boundary**?",
+          "options": [
+            "Speed change → bending.",
+            "Incident ray in first medium",
+            "Transparent ≠ no refraction.",
+            "Rarer = faster light."
+          ],
+          "answer": 1,
+          "explanation": "Incident ray in first medium.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c03",
+          "category": "u1_d11_C",
+          "category_label": "Day 11 — Introduction to Refraction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        }
+      ]
     },
     {
       "day": 20,
       "title": "Lens Numericals and Mixed Unit Review",
-      "active": false,
-      "questions": []
+      "active": true,
+      "activity_refs": [
+        "9.11",
+        "9.12",
+        "9.13"
+      ],
+      "questions": [
+        {
+          "id": "u1_s2_d1_bank_01",
+          "question": "What is the key takeaway about **Ray of light**?",
+          "options": [
+            "A beam = many rays; a ray diagram often shows one representative ray.",
+            "One arrow = one direction of light travel",
+            "Light rays are drawn straight until reflection or refraction changes direction.",
+            "Draw the full path before deciding where an image forms."
+          ],
+          "answer": 1,
+          "explanation": "One arrow = one direction of light travel.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c08",
+          "category": "u1_d1_B",
+          "category_label": "Day 1 — How We See and Represent Light · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d1_bank_02",
+          "question": "What is the key takeaway about **Beam of light**?",
+          "options": [
+            "Light rays are drawn straight until reflection or refraction changes direction.",
+            "A beam = many rays; a ray diagram often shows one representative ray",
+            "Always ask: where did the light start?.",
+            "Luminous means the object is the light source — not just bright-looking."
+          ],
+          "answer": 1,
+          "explanation": "A beam = many rays; a ray diagram often shows one representative ray.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c09",
+          "category": "u1_d1_C",
+          "category_label": "Day 1 — How We See and Represent Light · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d1_bank_03",
+          "question": "Which statement best describes **Straight-line propagation**?",
+          "options": [
+            "In a uniform medium, light travels in straight lines.",
+            "Vision happens when light from an object enters your eye and forms a signal for your brain.",
+            "A ray is a straight line with an arrow showing the direction light travels.",
+            "A beam is a collection of many rays travelling together, often from a torch or sunlight through clouds."
+          ],
+          "answer": 0,
+          "explanation": "Light rays are drawn straight until reflection or refraction changes direction.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c07",
+          "category": "u1_d1_A",
+          "category_label": "Day 1 — How We See and Represent Light · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "bending_direction_reversed"
+        },
+        {
+          "id": "u1_s2_d2_bank_04",
+          "question": "What is the key takeaway about **First law of reflection**?",
+          "options": [
+            "i = r (both measured from the normal)",
+            "Measure reflection angles from the normal, not from the mirror.",
+            "Shiny and smooth surfaces give clearer reflections.",
+            "Reflected ray arrow points away from the mirror."
+          ],
+          "answer": 0,
+          "explanation": "i = r (both measured from the normal).",
+          "day_id": 2,
+          "topic": 2,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d2_c08",
+          "category": "u1_d2_B",
+          "category_label": "Day 2 — Reflection and Plane Mirrors · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "bending_direction_reversed"
+        },
+        {
+          "id": "u1_s2_d2_bank_05",
+          "question": "What is the key takeaway about **Second law of reflection**?",
+          "options": [
+            "i = r (both measured from the normal).",
+            "Same side rule: both angles are measured from the normal on opposite sides of it.",
+            "Reflected ray arrow points away from the mirror.",
+            "Same plane means one 2D diagram is enough for plane mirrors"
+          ],
+          "answer": 3,
+          "explanation": "Same plane means one 2D diagram is enough for plane mirrors.",
+          "day_id": 2,
+          "topic": 2,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d2_c09",
+          "category": "u1_d2_C",
+          "category_label": "Day 2 — Reflection and Plane Mirrors · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d2_bank_06",
+          "question": "Which statement best describes **Angle of reflection**?",
+          "options": [
+            "A reflecting surface sends light back instead of absorbing it.",
+            "A plane mirror gives a virtual, erect image the same size as the object, as far behind the mirror as the object is in front.",
+            "The incident ray, the normal at the point of incidence, and the reflected ray all lie in the same plane.",
+            "The angle of reflection is measured between the reflected ray and the normal at the point of incidence."
+          ],
+          "answer": 3,
+          "explanation": "Same side rule: both angles are measured from the normal on opposite sides of it.",
+          "day_id": 2,
+          "topic": 2,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d2_c07",
+          "category": "u1_d2_A",
+          "category_label": "Day 2 — Reflection and Plane Mirrors · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "bending_direction_reversed"
+        },
+        {
+          "id": "u1_s2_d3_bank_07",
+          "question": "What is the key takeaway about **Pole (P)**?",
+          "options": [
+            "Draw rays hitting the polished arc, not the back.",
+            "P is on the mirror; C is not on the mirror",
+            "Spherical = part of a sphere; not flat like a plane mirror.",
+            "Principal axis passes through P and C."
+          ],
+          "answer": 1,
+          "explanation": "P is on the mirror; C is not on the mirror.",
+          "day_id": 3,
+          "topic": 3,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d3_c05",
+          "category": "u1_d3_B",
+          "category_label": "Day 3 — Spherical Mirrors · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d3_bank_08",
+          "question": "What is the key takeaway about **Centre of curvature (C)**?",
+          "options": [
+            "Ask: does the mirror surface hug the centre or push away from it?.",
+            "R = 2f for small-aperture spherical mirrors.",
+            "C is outside the mirror surface",
+            "Draw rays hitting the polished arc, not the back."
+          ],
+          "answer": 2,
+          "explanation": "C is outside the mirror surface.",
+          "day_id": 3,
+          "topic": 3,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d3_c06",
+          "category": "u1_d3_C",
+          "category_label": "Day 3 — Spherical Mirrors · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d3_bank_09",
+          "question": "Which statement best describes **Spherical reflecting surface**?",
+          "options": [
+            "A spherical mirror is part of a sphere's surface.",
+            "The pole P is the centre point of the mirror's reflecting surface.",
+            "C is the centre of the sphere of which the mirror forms a part.",
+            "A concave mirror curves inward (reflecting surface faces the centre of the sphere)."
+          ],
+          "answer": 0,
+          "explanation": "Spherical = part of a sphere; not flat like a plane mirror.",
+          "day_id": 3,
+          "topic": 3,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d3_c01",
+          "category": "u1_d3_A",
+          "category_label": "Day 3 — Spherical Mirrors · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "wrong_ray_rule"
+        },
+        {
+          "id": "u1_s2_d4_bank_10",
+          "question": "What is the key takeaway about **Focal length (f)**?",
+          "options": [
+            "f is measured from P to F — not from C to F unless you know R = 2f",
+            "Real focus = rays actually cross.",
+            "Concave = converging.",
+            "R = 2f → F lies midway between P and C."
+          ],
+          "answer": 0,
+          "explanation": "f is measured from P to F — not from C to F unless you know R = 2f.",
+          "day_id": 4,
+          "topic": 4,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d4_c02",
+          "category": "u1_d4_B",
+          "category_label": "Day 4 — Focus and Mirror Ray Behaviour · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 9 — Light",
+          "misconception": "focal_length_sign"
+        }
+      ]
     }
   ]
 }

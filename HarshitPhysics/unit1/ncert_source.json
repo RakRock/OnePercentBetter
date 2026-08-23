@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "unit_id": 1,
+    "chapter": 9,
+    "pdf": "jesc109.pdf",
+    "title": "Light – Reflection and Refraction"
+  },
+  "activities": [
+    {
+      "id": "9.1",
+      "title": "Image in a shining spoon",
+      "summary": "View your face in the curved inner and outer surfaces of a spoon. Compare whether the image is smaller or larger and how it changes as you move the spoon.",
+      "concept_ids": ["u1_d3_c02", "u1_d3_c03", "u1_d3_c10"],
+      "stage2_day": 17
+    },
+    {
+      "id": "9.2",
+      "title": "Sunlight focused by a convex lens",
+      "summary": "Hold a convex lens in sunlight and focus light on a sheet of paper. The bright spot is a real image of the Sun; concentrated heat can burn the paper.",
+      "concept_ids": ["u1_d14_c01", "u1_d14_c05"],
+      "stage2_day": 19
+    },
+    {
+      "id": "9.3",
+      "title": "Real image of a candle on a screen",
+      "summary": "Use a concave mirror to form a sharp image of a candle flame on a screen. A screen is needed because the image is real.",
+      "concept_ids": ["u1_d2_c10", "u1_d5_c01"],
+      "stage2_day": 17
+    },
+    {
+      "id": "9.4",
+      "title": "Tracing reflected rays from a plane mirror",
+      "summary": "Use pins and paper to locate incident and reflected rays for a plane mirror and verify the laws of reflection.",
+      "concept_ids": ["u1_d2_c02", "u1_d2_c03", "u1_d2_c04"],
+      "stage2_day": 17
+    },
+    {
+      "id": "9.5",
+      "title": "Image formation by a concave mirror",
+      "summary": "Observe how object position affects image size and nature for a concave mirror (near F, at C, beyond C).",
+      "concept_ids": ["u1_d5_c01", "u1_d5_c04", "u1_d6_c02"],
+      "stage2_day": 18
+    },
+    {
+      "id": "9.6",
+      "title": "Image formation by a convex mirror",
+      "summary": "Form always erect, diminished, virtual images with a convex mirror regardless of object distance.",
+      "concept_ids": ["u1_d3_c10", "u1_d16_c03"],
+      "stage2_day": 18
+    },
+    {
+      "id": "9.7",
+      "title": "Refraction through a rectangular glass slab",
+      "summary": "Trace light through a glass slab; emergent ray is parallel to the incident ray but laterally displaced.",
+      "concept_ids": ["u1_d11_c01", "u1_d11_c04", "u1_d11_c05"],
+      "stage2_day": 19
+    },
+    {
+      "id": "9.8",
+      "title": "Refraction through water in a beaker",
+      "summary": "A coin at the bottom of a beaker appears raised because light bends away from the normal on leaving water.",
+      "concept_ids": ["u1_d10_c03", "u1_d10_c06"],
+      "stage2_day": 19
+    },
+    {
+      "id": "9.9",
+      "title": "Bending of a pencil in water",
+      "summary": "Part of a pencil in water looks displaced at the surface due to refraction at the air–water boundary.",
+      "concept_ids": ["u1_d10_c03", "u1_d10_c05"],
+      "stage2_day": 19
+    },
+    {
+      "id": "9.10",
+      "title": "Image by a convex lens on a screen",
+      "summary": "Focus sunlight or a distant object with a convex lens to obtain a real, inverted image on a screen.",
+      "concept_ids": ["u1_d14_c03", "u1_d14_c06"],
+      "stage2_day": 19
+    },
+    {
+      "id": "9.11",
+      "title": "Lens lines and focal points on a table",
+      "summary": "Mark F and 2F on a table; place object beyond 2F and locate the real image formed by a convex lens.",
+      "concept_ids": ["u1_d14_c02", "u1_d15_c01", "u1_d15_c03"],
+      "stage2_day": 20
+    },
+    {
+      "id": "9.12",
+      "title": "Virtual image with a concave lens",
+      "summary": "View an object through a concave (diverging) lens — image is erect, virtual, and diminished.",
+      "concept_ids": ["u1_d16_c01", "u1_d16_c04"],
+      "stage2_day": 20
+    },
+    {
+      "id": "9.13",
+      "title": "Power of a lens",
+      "summary": "Compare lenses of different focal lengths; shorter focal length means greater converging power (higher dioptre).",
+      "concept_ids": ["u1_d16_c08", "u1_d16_c09"],
+      "stage2_day": 20
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "Which one of the following materials cannot be used to make a lens?",
+      "options": ["Water", "Glass", "Plastic", "Clay"],
+      "answer": 3,
+      "explanation": "Clay is opaque and cannot form a transparent lens.",
+      "misconception": "reflection_refraction_swap",
+      "source": "NCERT Ch 9 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "The image formed by a concave mirror is observed to be virtual, erect and larger than the object. Where should be the position of the object?",
+      "options": [
+        "Between the principal focus and the centre of curvature",
+        "At the centre of curvature",
+        "Beyond the centre of curvature",
+        "Between the pole of the mirror and its principal focus"
+      ],
+      "answer": 3,
+      "explanation": "Virtual, erect, enlarged images from a concave mirror occur when the object is between P and F.",
+      "misconception": "concave_convex_confusion",
+      "source": "NCERT Ch 9 Exercises Q2"
+    },
+    {
+      "num": 3,
+      "question": "Where should an object be placed in front of a convex lens to get a real image of the size of the object?",
+      "options": [
+        "At the principal focus of the lens",
+        "At twice the focal length",
+        "At infinity",
+        "Between the optical centre of the lens and its principal focus"
+      ],
+      "answer": 1,
+      "explanation": "At u = 2f, a convex lens forms a real image of the same size at v = 2f.",
+      "misconception": "mirror_lens_formula_swap",
+      "source": "NCERT Ch 9 Exercises Q3"
+    },
+    {
+      "num": 4,
+      "question": "A spherical mirror and a thin spherical lens have each a focal length of –15 cm. The mirror and the lens are likely to be",
+      "options": [
+        "both concave",
+        "both convex",
+        "the mirror is concave and the lens is convex",
+        "the mirror is convex, but the lens is concave"
+      ],
+      "answer": 0,
+      "explanation": "Negative focal length (New Cartesian sign convention) indicates a concave mirror and a concave (diverging) lens.",
+      "misconception": "focal_length_sign",
+      "source": "NCERT Ch 9 Exercises Q4"
+    },
+    {
+      "num": 5,
+      "question": "No matter how far you stand from a mirror, your image appears erect. The mirror is likely to be",
+      "options": [
+        "only plane",
+        "only concave",
+        "only convex",
+        "either plane or convex"
+      ],
+      "answer": 3,
+      "explanation": "Plane and convex mirrors always give erect images; concave mirrors can give inverted real images.",
+      "misconception": "real_means_erect",
+      "source": "NCERT Ch 9 Exercises Q5"
+    },
+    {
+      "num": 6,
+      "question": "Which of the following lenses would you prefer to use while reading small letters found in a dictionary?",
+      "options": [
+        "A convex lens of focal length 50 cm",
+        "A concave lens of focal length 50 cm",
+        "A convex lens of focal length 5 cm",
+        "A concave lens of focal length 5 cm"
+      ],
+      "answer": 2,
+      "explanation": "A convex lens is a magnifier; shorter focal length gives greater magnification for nearby objects.",
+      "misconception": "lens_power_sign",
+      "source": "NCERT Ch 9 Exercises Q6"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Page 161 — mirror formula",
+      "question": "In the mirror formula 1/v + 1/u = 1/f, which sign convention is used for distances measured against the direction of incident light?",
+      "options": [
+        "They are taken as positive",
+        "They are taken as negative",
+        "Sign does not matter",
+        "Only u is negative"
+      ],
+      "answer": 1,
+      "explanation": "Distances measured against the direction of incident light are negative in the NCERT sign convention.",
+      "misconception": "object_distance_sign",
+      "source": "NCERT Ch 9 Intext"
+    },
+    {
+      "ref": "Page 168 — refractive index",
+      "question": "Refractive index n = c/v compares the speed of light in vacuum to that in the medium. If light slows down in glass, n is",
+      "options": ["less than 1", "equal to 1", "greater than 1", "zero"],
+      "answer": 2,
+      "explanation": "When v < c, the ratio c/v exceeds 1.",
+      "misconception": "refractive_index_speed",
+      "source": "NCERT Ch 9 Intext"
+    }
+  ]
+}

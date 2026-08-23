@@ -12,6 +12,7 @@ UNITS: dict[int, dict] = {
         "dir": "unit1",
         "title": "Light – Reflection and Refraction",
         "ncert": "Class 10 Science, Chapter 9",
+        "pdf": "jesc109.pdf",
         "session_kind_concepts": "harshit_physics_unit1_concepts",
         "session_kind_mcq": "harshit_physics_unit1_mcq",
         "chapter_ref": "NCERT Class 10 Ch 9 — Light",
@@ -98,6 +99,83 @@ def component_specs(unit_id: int | None = None) -> dict:
 
 def mcq_bank(unit_id: int | None = None) -> dict:
     return _load_json(unit_id or active_unit_id(), "mcq_bank.json")
+
+
+def exercise_bank(unit_id: int | None = None) -> dict:
+    path = unit_dir(unit_id or active_unit_id()) / "exercise_bank.json"
+    if not path.is_file():
+        return {"questions": [], "meta": {}}
+    try:
+        with path.open(encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return {"questions": [], "meta": {}}
+
+
+def list_exercise_questions(unit_id: int | None = None) -> list[dict]:
+    return list(exercise_bank(unit_id).get("questions") or [])
+
+
+def get_exercise_question(question_id: str, unit_id: int | None = None) -> dict | None:
+    return next(
+        (q for q in list_exercise_questions(unit_id) if q.get("id") == question_id),
+        None,
+    )
+
+
+def get_exercise_question_by_num(num: int, unit_id: int | None = None) -> dict | None:
+    return next(
+        (q for q in list_exercise_questions(unit_id) if int(q.get("num", 0)) == num),
+        None,
+    )
+
+
+def stage3_available(unit_id: int | None = None) -> bool:
+    bank = exercise_bank(unit_id)
+    if not bank.get("meta", {}).get("active"):
+        return False
+    return bool(list_exercise_questions(unit_id))
+
+
+def stage3_unlocked(viewed_ids: set[str], unit_id: int | None = None) -> bool:
+    return practice_unlocked(viewed_ids, unit_id=unit_id)
+
+
+def ncert_source(unit_id: int | None = None) -> dict:
+    path = unit_dir(unit_id or active_unit_id()) / "ncert_source.json"
+    if not path.is_file():
+        return {"activities": [], "exercise_mcqs": []}
+    try:
+        with path.open(encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return {"activities": [], "exercise_mcqs": []}
+
+
+def list_ncert_activities(unit_id: int | None = None) -> list[dict]:
+    return list(ncert_source(unit_id).get("activities") or [])
+
+
+def ncert_activities_for_stage2_day(stage2_day: int, unit_id: int | None = None) -> list[dict]:
+    return [
+        a
+        for a in list_ncert_activities(unit_id)
+        if int(a.get("stage2_day", 0)) == stage2_day
+    ]
+
+
+def stage2_available(unit_id: int | None = None) -> bool:
+    bank = mcq_bank(unit_id)
+    if not bank.get("meta", {}).get("active"):
+        return False
+    return any((s.get("questions") or []) for s in bank.get("sessions") or [])
+
+
+def questions_for_mcq_day(day_id: int, unit_id: int | None = None) -> list[dict]:
+    session = get_mcq_session(day_id, unit_id)
+    if not session:
+        return []
+    return list(session.get("questions") or [])
 
 
 def meta(unit_id: int | None = None) -> dict:

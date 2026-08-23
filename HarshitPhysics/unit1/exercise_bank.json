@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "unit_id": 1,
+    "stage": 3,
+    "active": true,
+    "chapter": "NCERT Class 10 Science Ch 9",
+    "pdf": "jesc109.pdf",
+    "range": "Exercises Q7–Q17",
+    "note": "Exam-style written questions with model answers, hints, and guided numericals where applicable."
+  },
+  "questions": [
+    {
+      "id": "u1_ex_q07",
+      "num": 7,
+      "type": "explain_diagram",
+      "marks": 3,
+      "question": "We wish to obtain an erect image of an object, using a concave mirror of focal length 15 cm. What should be the range of distance of the object from the mirror? What is the nature of the image? Is the image larger or smaller than the object? Draw a ray diagram to show the image formation in this case.",
+      "hints": [
+        "For a concave mirror, an erect image is always virtual.",
+        "Virtual, erect, enlarged images form when the object lies between the pole P and the principal focus F.",
+        "With f = 15 cm, F is 15 cm from the pole. Object distance must be less than 15 cm (between P and F)."
+      ],
+      "model_answer": "Object distance range: between 0 cm and 15 cm from the mirror (between pole P and focus F).\n\nNature of image: Virtual and erect.\n\nSize: Larger than the object (enlarged).\n\nRay diagram: Draw a concave mirror with F at 15 cm. Place object between P and F. Rays diverge after reflection; their backward extensions meet behind the mirror to form a virtual, erect, enlarged image.",
+      "marking_points": [
+        "States object must be between P and F (u < 15 cm)",
+        "Image is virtual and erect",
+        "Image is enlarged / larger than object",
+        "Correct ray diagram with virtual image behind mirror"
+      ],
+      "common_mistakes": [
+        "Saying the image is real or inverted",
+        "Giving object distance beyond 15 cm",
+        "Confusing concave with convex mirror rules"
+      ],
+      "concept_ids": ["u1_d5_c04", "u1_d6_c02", "u1_d3_c02"],
+      "misconception": "concave_convex_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 9 Exercises Q7"
+    },
+    {
+      "id": "u1_ex_q08",
+      "num": 8,
+      "type": "explain",
+      "marks": 3,
+      "question": "Name the type of mirror used in the following situations:\n(a) Headlights of a car\n(b) Side/rear-view mirror of a vehicle\n(c) Solar furnace\n\nSupport your answer with reason.",
+      "hints": [
+        "(a) Headlights need a strong parallel beam — which mirror converges rays from the bulb to parallel light?",
+        "(b) Drivers need a wide field of view with an always-erect, diminished image.",
+        "(c) Solar furnaces need sunlight concentrated at a point."
+      ],
+      "model_answer": "(a) Concave mirror — the bulb is placed near the focus so reflected rays emerge as an intense, nearly parallel beam.\n\n(b) Convex mirror — it always forms erect, virtual, diminished images and provides a wider field of view.\n\n(c) Concave mirror — parallel rays from the Sun are converged to a sharp focus, producing high temperature at that point.",
+      "marking_points": [
+        "(a) Concave + parallel beam reason",
+        "(b) Convex + wide field / erect diminished image",
+        "(c) Concave + concentration of sunlight at focus"
+      ],
+      "common_mistakes": [
+        "Using plane mirror for headlights or rear-view",
+        "Giving reason without naming mirror type"
+      ],
+      "concept_ids": ["u1_d3_c10", "u1_d16_c03", "u1_d5_c01"],
+      "misconception": "concave_convex_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 9 Exercises Q8"
+    },
+    {
+      "id": "u1_ex_q09",
+      "num": 9,
+      "type": "explain",
+      "marks": 3,
+      "question": "One-half of a convex lens is covered with a black paper. Will this lens produce a complete image of the object? Verify your answer experimentally. Explain your observations.",
+      "hints": [
+        "Each small part of a lens can still refract light from the object.",
+        "Covering half reduces the amount of light, not the completeness of the image.",
+        "Think Activity 9.10 — image on a screen with full vs covered lens."
+      ],
+      "model_answer": "Yes, the lens will still produce a complete image of the object.\n\nExplanation: Every portion of a lens bends light. Even with half covered, the uncovered half forms the full image — only brightness (intensity) decreases because less light enters the lens.\n\nExperimental verification: Form a real image on a screen with a convex lens. Cover half the lens with black paper — the image remains complete but becomes dimmer.",
+      "marking_points": [
+        "Answers Yes — complete image still formed",
+        "Explains reduced brightness, not missing parts",
+        "Mentions experimental verification / Activity 9.10 idea"
+      ],
+      "common_mistakes": [
+        "Saying half the image disappears",
+        "Confusing with pinhole camera or shadow"
+      ],
+      "concept_ids": ["u1_d14_c03", "u1_d14_c06"],
+      "misconception": "reflection_refraction_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 9 Exercises Q9"
+    },
+    {
+      "id": "u1_ex_q10",
+      "num": 10,
+      "type": "numerical_diagram",
+      "marks": 5,
+      "question": "An object 5 cm in length is held 25 cm away from a converging lens of focal length 10 cm. Draw the ray diagram and find the position, size and the nature of the image formed.",
+      "hints": [
+        "Converging lens: f = +10 cm. Object in front: u = −25 cm (NCERT sign convention).",
+        "Use lens formula: 1/v − 1/u = 1/f.",
+        "Magnification m = v/u (or h'/h = v/u). Negative m → inverted image."
+      ],
+      "model_answer": "Given: h = +5 cm, u = −25 cm, f = +10 cm.\n\n1/v − 1/u = 1/f  →  1/v = 1/f + 1/u = 1/10 + 1/(−25) = (5−2)/50 = 3/50\n\nv = 50/3 cm ≈ +16.7 cm (real image on opposite side).\n\nm = v/u = (50/3)/(−25) = −2/3\n\nh' = m × h = (−2/3) × 5 = −10/3 cm ≈ −3.3 cm (inverted, 3.3 cm tall).\n\nNature: Real, inverted, diminished (|m| < 1).\n\nRay diagram: Object beyond 2F; rays converge to form real inverted image between F and 2F on the other side.",
+      "marking_points": [
+        "Correct sign convention for u and f",
+        "v ≈ +16.7 cm (50/3 cm)",
+        "Image height ≈ 3.3 cm, inverted",
+        "States real, inverted, diminished",
+        "Ray diagram consistent with object beyond 2F"
+      ],
+      "common_mistakes": [
+        "Using mirror formula instead of lens formula",
+        "Wrong sign on u or v",
+        "Forgetting to state nature of image"
+      ],
+      "concept_ids": ["u1_d14_c03", "u1_d15_c01", "u1_d15_c03"],
+      "misconception": "mirror_lens_formula_swap",
+      "guided_tool": {
+        "type": "lens",
+        "defaults": {"f_cm": 10, "u_cm": -25, "h_cm": 5, "label": "Q10 — convex lens"}
+      },
+      "ncert_ref": "NCERT Ch 9 Exercises Q10"
+    },
+    {
+      "id": "u1_ex_q11",
+      "num": 11,
+      "type": "numerical_diagram",
+      "marks": 5,
+      "question": "A concave lens of focal length 15 cm forms an image 10 cm from the lens. How far is the object placed from the lens? Draw the ray diagram.",
+      "hints": [
+        "Concave (diverging) lens: f = −15 cm.",
+        "Virtual image on same side as object: v = −10 cm.",
+        "Rearrange lens formula to find u."
+      ],
+      "model_answer": "Given: f = −15 cm, v = −10 cm (virtual image, same side as object).\n\n1/v − 1/u = 1/f\n\n1/u = 1/v − 1/f = 1/(−10) − 1/(−15) = −1/10 + 1/15 = (−3+2)/30 = −1/30\n\nu = −30 cm → object is 30 cm in front of the lens.\n\nNature: Virtual image at 10 cm on same side; object at 30 cm.\n\nRay diagram: Diverging lens; refracted rays appear to come from virtual image closer to lens than object.",
+      "marking_points": [
+        "f = −15 cm and v = −10 cm with correct signs",
+        "u = −30 cm (30 cm in front of lens)",
+        "Ray diagram for concave lens with virtual image"
+      ],
+      "common_mistakes": [
+        "Taking f positive for concave lens",
+        "Taking v positive for virtual image on object side"
+      ],
+      "concept_ids": ["u1_d16_c01", "u1_d16_c04"],
+      "misconception": "focal_length_sign",
+      "guided_tool": {
+        "type": "lens",
+        "defaults": {"f_cm": -15, "v_cm": -10, "label": "Q11 — find object distance"}
+      },
+      "ncert_ref": "NCERT Ch 9 Exercises Q11"
+    },
+    {
+      "id": "u1_ex_q12",
+      "num": 12,
+      "type": "numerical",
+      "marks": 3,
+      "question": "An object is placed at a distance of 10 cm from a convex mirror of focal length 15 cm. Find the position and nature of the image.",
+      "hints": [
+        "Convex mirror: f = +15 cm. Object in front: u = −10 cm.",
+        "Mirror formula: 1/v + 1/u = 1/f.",
+        "Positive v for convex mirror usually means virtual image behind mirror."
+      ],
+      "model_answer": "Given: u = −10 cm, f = +15 cm.\n\n1/v = 1/f − 1/u = 1/15 − 1/(−10) = 1/15 + 1/10 = (2+3)/30 = 5/30 = 1/6\n\nv = +6 cm (behind the mirror).\n\nImage is virtual, erect, and diminished (object closer than f for convex mirror).",
+      "marking_points": [
+        "Correct signs: u = −10 cm, f = +15 cm",
+        "v = +6 cm behind mirror",
+        "Virtual, erect, diminished"
+      ],
+      "common_mistakes": [
+        "Using lens formula",
+        "Negative v for virtual image behind convex mirror in NCERT convention"
+      ],
+      "concept_ids": ["u1_d3_c10", "u1_d7_c01"],
+      "misconception": "concave_convex_confusion",
+      "guided_tool": {
+        "type": "mirror",
+        "defaults": {"mirror": "convex", "f_cm": 15, "u_cm": -10, "label": "Q12 — convex mirror"}
+      },
+      "ncert_ref": "NCERT Ch 9 Exercises Q12"
+    },
+    {
+      "id": "u1_ex_q13",
+      "num": 13,
+      "type": "explain",
+      "marks": 2,
+      "question": "The magnification produced by a plane mirror is +1. What does this mean?",
+      "hints": [
+        "m = h'/h = −v/u for mirrors. Positive m means image is erect.",
+        "|m| = 1 means same size as object.",
+        "Plane mirror: image distance equals object distance."
+      ],
+      "model_answer": "m = +1 means:\n\n1. Image height equals object height (same size).\n2. Positive sign → image is erect (not inverted).\n3. For a plane mirror, the image is virtual and as far behind the mirror as the object is in front.",
+      "marking_points": [
+        "Same size as object (|m| = 1)",
+        "Erect image (positive m)",
+        "Virtual image / equal object–image distance (any one)"
+      ],
+      "common_mistakes": [
+        "Saying image is real",
+        "Saying image is inverted"
+      ],
+      "concept_ids": ["u1_d2_c10", "u1_d8_c01"],
+      "misconception": "real_means_erect",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 9 Exercises Q13"
+    },
+    {
+      "id": "u1_ex_q14",
+      "num": 14,
+      "type": "numerical",
+      "marks": 5,
+      "question": "An object 5.0 cm in length is placed at a distance of 20 cm in front of a convex mirror of radius of curvature 30 cm. Find the position, nature and size of the image.",
+      "hints": [
+        "Radius R = +30 cm → focal length f = R/2 = +15 cm for convex mirror.",
+        "u = −20 cm. Use mirror formula, then m = −v/u for size."
+      ],
+      "model_answer": "R = +30 cm  →  f = +15 cm.  u = −20 cm, h = +5 cm.\n\n1/v = 1/f − 1/u = 1/15 − 1/(−20) = 1/15 + 1/20 = 7/60\n\nv = 60/7 cm ≈ +8.6 cm (behind mirror).\n\nm = −v/u = −(60/7)/(−20) = 3/7\n\nh' = m × h = (3/7) × 5 = 15/7 cm ≈ 2.1 cm.\n\nImage: virtual, erect, diminished, ~8.6 cm behind mirror, ~2.1 cm tall.",
+      "marking_points": [
+        "f = +15 cm from R = 30 cm",
+        "v = 60/7 cm ≈ 8.6 cm",
+        "h' ≈ 2.1 cm",
+        "Virtual, erect, diminished"
+      ],
+      "common_mistakes": [
+        "Using R instead of f in formula",
+        "Wrong sign on u"
+      ],
+      "concept_ids": ["u1_d3_c10", "u1_d7_c01", "u1_d8_c02"],
+      "misconception": "focal_length_sign",
+      "guided_tool": {
+        "type": "mirror",
+        "defaults": {"mirror": "convex", "f_cm": 15, "u_cm": -20, "h_cm": 5, "label": "Q14 — convex mirror with size"}
+      },
+      "ncert_ref": "NCERT Ch 9 Exercises Q14"
+    },
+    {
+      "id": "u1_ex_q15",
+      "num": 15,
+      "type": "numerical",
+      "marks": 5,
+      "question": "An object of size 7.0 cm is placed at 27 cm in front of a concave mirror of focal length 18 cm. At what distance from the mirror should a screen be placed, so that a sharply focused image can be obtained? Find the size and the nature of the image.",
+      "hints": [
+        "Concave mirror: f = −18 cm, u = −27 cm.",
+        "Real focused image → screen at |v| in front of mirror when v is negative.",
+        "Use m = −v/u for image height."
+      ],
+      "model_answer": "Given: h = +7 cm, u = −27 cm, f = −18 cm.\n\n1/v = 1/f − 1/u = 1/(−18) − 1/(−27) = −1/18 + 1/27 = (−3+2)/54 = −1/54\n\nv = −54 cm → screen at 54 cm in front of the mirror.\n\nm = −v/u = −(−54)/(−27) = −2\n\nh' = m × h = (−2) × 7 = −14 cm.\n\nImage: real, inverted, enlarged (14 cm tall), formed 54 cm from mirror — place screen there.",
+      "marking_points": [
+        "v = −54 cm → screen 54 cm in front",
+        "Image height 14 cm (inverted)",
+        "Real, inverted, enlarged"
+      ],
+      "common_mistakes": [
+        "Placing screen behind mirror",
+        "Positive f for concave mirror"
+      ],
+      "concept_ids": ["u1_d5_c01", "u1_d7_c02", "u1_d8_c02"],
+      "misconception": "object_distance_sign",
+      "guided_tool": {
+        "type": "mirror",
+        "defaults": {"mirror": "concave", "f_cm": -18, "u_cm": -27, "h_cm": 7, "label": "Q15 — concave mirror + screen"}
+      },
+      "ncert_ref": "NCERT Ch 9 Exercises Q15"
+    },
+    {
+      "id": "u1_ex_q16",
+      "num": 16,
+      "type": "numerical",
+      "marks": 3,
+      "question": "Find the focal length of a lens of power −2.0 D. What type of lens is this?",
+      "hints": [
+        "Power P = 1/f (f in metres).",
+        "Negative power → concave (diverging) lens."
+      ],
+      "model_answer": "P = −2.0 D.\n\nf = 1/P = 1/(−2.0) = −0.5 m = −50 cm.\n\nNegative focal length → concave (diverging) lens.",
+      "marking_points": [
+        "f = −0.5 m or −50 cm",
+        "Concave / diverging lens identified"
+      ],
+      "common_mistakes": [
+        "Using f in cm directly without converting",
+        "Calling it convex"
+      ],
+      "concept_ids": ["u1_d16_c08", "u1_d16_c09"],
+      "misconception": "lens_power_sign",
+      "guided_tool": {
+        "type": "power",
+        "defaults": {"power_d": -2.0, "label": "Q16 — power to focal length"}
+      },
+      "ncert_ref": "NCERT Ch 9 Exercises Q16"
+    },
+    {
+      "id": "u1_ex_q17",
+      "num": 17,
+      "type": "numerical",
+      "marks": 3,
+      "question": "A doctor has prescribed a corrective lens of power +1.5 D. Find the focal length of the lens. Is the prescribed lens diverging or converging?",
+      "hints": [
+        "f (metres) = 1/P.",
+        "Positive power → convex (converging) lens — used for hypermetropia (far-sightedness)."
+      ],
+      "model_answer": "P = +1.5 D.\n\nf = 1/P = 1/1.5 = 2/3 m ≈ +0.67 m ≈ +66.7 cm.\n\nPositive power → converging (convex) lens.",
+      "marking_points": [
+        "f ≈ +0.67 m or +66.7 cm",
+        "Converging / convex lens"
+      ],
+      "common_mistakes": [
+        "Saying diverging for positive power",
+        "Arithmetic error on 1/1.5"
+      ],
+      "concept_ids": ["u1_d16_c08", "u1_d16_c09"],
+      "misconception": "lens_power_sign",
+      "guided_tool": {
+        "type": "power",
+        "defaults": {"power_d": 1.5, "label": "Q17 — corrective lens"}
+      },
+      "ncert_ref": "NCERT Ch 9 Exercises Q17"
+    }
+  ]
+}

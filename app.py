@@ -6069,6 +6069,18 @@ def render_harshit_physics_practice():
     harshit_physics_practice_ui.render_practice()
 
 
+def render_harshit_physics_mcq():
+    import harshit_physics_mcq_ui
+
+    harshit_physics_mcq_ui.render_mcq_session()
+
+
+def render_harshit_physics_exercise():
+    import harshit_physics_exercise_ui
+
+    harshit_physics_exercise_ui.render_exercise_question()
+
+
 def render_harshit_chemistry_home():
     import harshit_chemistry_ui
 
@@ -7189,6 +7201,10 @@ elif page == "harshit_physics_concept":
     render_harshit_physics_concept()
 elif page == "harshit_physics_practice":
     render_harshit_physics_practice()
+elif page == "harshit_physics_mcq":
+    render_harshit_physics_mcq()
+elif page == "harshit_physics_exercise":
+    render_harshit_physics_exercise()
 elif page == "harshit_chemistry_home":
     render_harshit_chemistry_home()
 elif page == "harshit_chemistry_unit1":
