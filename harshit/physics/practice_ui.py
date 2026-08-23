@@ -39,8 +39,19 @@ def ensure_week_config(unit_id: int = 1) -> dict:
         starter["week_label"],
         starter["topics"],
         practice_difficulty=int(starter.get("practice_difficulty", 3)),
+        use_chapter_llm=bool(starter.get("use_chapter_llm", False)),
+        grok_fresh_only=bool(starter.get("grok_fresh_only", False)),
     )
     return db.get_harshit_physics_week_config(unit_id)
+
+
+def _clear_setup_widget_state(unit_id: int) -> None:
+    """Drop Practice Setup widget keys so the next render loads values from the DB."""
+    st.session_state.pop(f"hp_setup_label_{unit_id}", None)
+    st.session_state.pop(f"hp_setup_grok_{unit_id}", None)
+    st.session_state.pop(f"hp_setup_grok_mode_{unit_id}", None)
+    for did in hpt.topics_for_unit(unit_id):
+        st.session_state.pop(f"hp_setup_day_{unit_id}_{did}", None)
 
 
 def _questions() -> list[dict]:
@@ -148,7 +159,7 @@ def render_setup_panel(unit_id: int = 1) -> None:
         "Session label (optional)",
         value=current.get("week_label", ""),
         placeholder="e.g. Mirrors & lenses review",
-        key="hp_setup_label",
+        key=f"hp_setup_label_{unit_id}",
     )
 
     st.markdown("#### Question generation")
@@ -162,7 +173,7 @@ def render_setup_panel(unit_id: int = 1) -> None:
         "Generate questions with xAI (Grok)",
         value=bool(current.get("use_chapter_llm", False)),
         help="Uses seed examples from the 200-question bank plus NCERT concept summaries to create fresh MCQs.",
-        key="hp_setup_grok",
+        key=f"hp_setup_grok_{unit_id}",
     )
     grok_fresh_only = False
     if use_grok:
@@ -175,7 +186,7 @@ def render_setup_panel(unit_id: int = 1) -> None:
                 if x == "fast"
                 else "All fresh — every question from Grok only"
             ),
-            key="hp_setup_grok_mode",
+            key=f"hp_setup_grok_mode_{unit_id}",
         ) == "fresh"
 
     topics_meta = hpt.topics_for_unit(unit_id)
@@ -197,13 +208,13 @@ def render_setup_panel(unit_id: int = 1) -> None:
             f"**Day {did}: {info['name']}**",
             options=list(level_options.keys()),
             default=default,
-            key=f"hp_setup_day_{did}",
+            key=f"hp_setup_day_{unit_id}_{did}",
         )
         levels = [level_options[p] for p in picked]
         if levels:
             new_topics.append({"id": did, "levels": levels})
 
-    if st.button("Save practice focus", type="primary", key="hp_setup_save"):
+    if st.button("Save practice focus", type="primary", key=f"hp_setup_save_{unit_id}"):
         db.save_harshit_physics_week_config(
             unit_id,
             week_label.strip(),
@@ -212,6 +223,7 @@ def render_setup_panel(unit_id: int = 1) -> None:
             use_chapter_llm=use_grok,
             grok_fresh_only=grok_fresh_only,
         )
+        _clear_setup_widget_state(unit_id)
         st.success("Practice focus saved.")
         st.rerun()
 

@@ -33,6 +33,15 @@ def _ss_key(prereq_id: int, name: str) -> str:
     return f"hm_pr{prereq_id}_{name}"
 
 
+def _clear_setup_widget_state(prereq_id: int) -> None:
+    """Drop Week Setup widget keys so the next render loads values from the DB."""
+    st.session_state.pop(f"hm_setup_label_{prereq_id}", None)
+    st.session_state.pop(f"hm_setup_xai_live_{prereq_id}", None)
+    st.session_state.pop(f"hm_setup_grok_mode_{prereq_id}", None)
+    for tid in hpt.topics_for_prereq(prereq_id):
+        st.session_state.pop(f"hm_setup_topic_{prereq_id}_{tid}", None)
+
+
 def ensure_week_config(prereq_id: int) -> dict:
     """Return saved weekly plan, or seed a starter plan on first visit."""
     config = db.get_harshit_prereq_week_config(prereq_id)
@@ -240,6 +249,7 @@ def render_setup_panel(prereq_id: int):
                     use_chapter_llm=use_xai_live,
                     grok_fresh_only=grok_fresh_only,
                 )
+                _clear_setup_widget_state(prereq_id)
                 st.success(f"Applied preset: {preset_label}")
                 st.rerun()
 
@@ -290,6 +300,7 @@ def render_setup_panel(prereq_id: int):
             use_chapter_llm=use_xai_live,
             grok_fresh_only=grok_fresh_only,
         )
+        _clear_setup_widget_state(prereq_id)
         st.success("Weekly plan saved.")
         st.rerun()
 

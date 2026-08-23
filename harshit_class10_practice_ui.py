@@ -30,6 +30,15 @@ def _ss_key(unit_id: int, name: str) -> str:
     return f"hm10_u{unit_id}_{name}"
 
 
+def _clear_setup_widget_state(unit_id: int) -> None:
+    """Drop Week Setup widget keys so the next render loads values from the DB."""
+    st.session_state.pop(f"hm10_setup_label_{unit_id}", None)
+    st.session_state.pop(f"hm10_setup_xai_{unit_id}", None)
+    st.session_state.pop(f"hm10_setup_grok_mode_{unit_id}", None)
+    for tid in h10t.topics_for_unit(unit_id):
+        st.session_state.pop(f"hm10_setup_topic_{unit_id}_{tid}", None)
+
+
 def ensure_week_config(unit_id: int) -> dict:
     config = db.get_harshit_class10_week_config(unit_id)
     if config.get("topics"):
@@ -300,6 +309,7 @@ def render_setup_panel(unit_id: int) -> None:
             use_chapter_llm=use_xai_live,
             grok_fresh_only=grok_fresh_only,
         )
+        _clear_setup_widget_state(unit_id)
         st.success("Weekly plan saved.")
         st.rerun()
 
