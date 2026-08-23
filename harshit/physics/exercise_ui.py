@@ -1,4 +1,4 @@
-"""Harshit Physics — Stage 3 NCERT written exercises (Q7–Q17)."""
+"""Harshit Physics — Stage 3 NCERT written exercises."""
 
 from __future__ import annotations
 
@@ -14,6 +14,7 @@ from . import numerical_ui as hpnum
 _TYPE_LABELS = {
     "numerical": "Numerical",
     "numerical_diagram": "Numerical + diagram",
+    "numerical_graph": "Graph + numerical",
     "explain": "Explain",
     "explain_diagram": "Explain + diagram",
 }
@@ -61,14 +62,16 @@ def render_stage3_home(*, stage1_done: bool, unit_id: int = 1) -> None:
     if not hpc.stage3_available(unit_id):
         st.info("Stage 3 written exercises are not available for this unit yet.")
         return
+
+    bank = hpc.exercise_bank(unit_id)
+    ex_range = bank.get("meta", {}).get("range", "written exercises")
     if not stage1_done:
         st.info(
             "Complete all Stage 1 concept days to unlock Stage 3 written practice. "
-            "These are the long-form NCERT exercise questions (Q7–Q17) used in board exams."
+            f"These are the long-form NCERT exercise questions ({ex_range}) used in board exams."
         )
         return
 
-    bank = hpc.exercise_bank(unit_id)
     questions = hpc.list_exercise_questions(unit_id)
     st.markdown("### Stage 3 — NCERT written (exam-style)")
     st.caption(

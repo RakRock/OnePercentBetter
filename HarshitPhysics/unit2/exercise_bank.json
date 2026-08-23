@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "unit_id": 2,
+    "stage": 3,
+    "active": true,
+    "chapter": "NCERT Class 10 Science Ch 10",
+    "pdf": "jesc110.pdf",
+    "range": "Exercises Q5–Q12",
+    "note": "Exam-style written questions. Chapter 10 has 4 MCQs (Stage 2) and 8 long-form exercises here."
+  },
+  "questions": [
+    {
+      "id": "u2_ex_q05",
+      "num": 5,
+      "type": "numerical",
+      "marks": 3,
+      "question": "A person needs a lens of power −5.5 dioptres for correcting his distant vision. For correcting his near vision he needs a lens of power +1.5 dioptre. What is the focal length of the lens required for correcting (i) distant vision, and (ii) near vision?",
+      "hints": [
+        "Use P = 1/f with f in metres (1 D = 1 m⁻¹).",
+        "Negative power → concave (diverging) lens for distant vision.",
+        "Positive power → convex (converging) lens for near vision."
+      ],
+      "model_answer": "(i) Distant vision: P = −5.5 D\nf = 1/P = 1/(−5.5) ≈ −0.182 m ≈ **−18.2 cm** (concave lens).\n\n(ii) Near vision: P = +1.5 D\nf = 1/1.5 ≈ **+0.667 m ≈ +66.7 cm** (convex lens).\n\nThis person likely uses a **bifocal** lens — upper part concave for distance, lower convex for reading.",
+      "marking_points": [
+        "(i) f ≈ −18 cm (or −0.18 m) with concave lens stated",
+        "(ii) f ≈ +67 cm (or +0.67 m) with convex lens stated",
+        "Correct use of P = 1/f in metres"
+      ],
+      "common_mistakes": [
+        "Using f in cm directly in P = 1/f without converting",
+        "Swapping signs for myopia vs hypermetropia correction"
+      ],
+      "concept_ids": ["u2_d3_c06", "u2_d3_c10", "u2_d4_c05"],
+      "misconception": "concave_convex_correction_swap",
+      "guided_tool": {
+        "type": "power",
+        "defaults": {"power_d": -5.5, "label": "Q5(i) — distant vision −5.5 D"}
+      },
+      "ncert_ref": "NCERT Ch 10 Exercises Q5"
+    },
+    {
+      "id": "u2_ex_q06",
+      "num": 6,
+      "type": "numerical",
+      "marks": 3,
+      "question": "The far point of a myopic person is 80 cm in front of the eye. What is the nature and power of the lens required to correct the problem?",
+      "hints": [
+        "A concave (diverging) lens is used for myopia.",
+        "The lens should form an image at the far point (80 cm) for an object at infinity.",
+        "For distant objects, f ≈ −(far point distance) in cm; P = 100/f(cm)."
+      ],
+      "model_answer": "Defect: **myopia** (distant objects blurred).\n\nCorrective lens: **concave (diverging)**.\n\nFor object at infinity, image must form at far point v = −80 cm.\nSo focal length f = **−80 cm = −0.8 m**.\n\nPower P = 1/f = 1/(−0.8) = **−1.25 D**.",
+      "marking_points": [
+        "Concave / diverging lens identified",
+        "f = −80 cm (or −0.8 m)",
+        "P = −1.25 D"
+      ],
+      "common_mistakes": [
+        "Using convex lens",
+        "Positive power or wrong sign on focal length"
+      ],
+      "concept_ids": ["u2_d3_c03", "u2_d3_c06", "u2_d3_c08"],
+      "misconception": "concave_convex_correction_swap",
+      "guided_tool": {
+        "type": "myopia_correction",
+        "defaults": {"far_point_cm": 80, "label": "Q6 — myopia lens power"}
+      },
+      "ncert_ref": "NCERT Ch 10 Exercises Q6"
+    },
+    {
+      "id": "u2_ex_q07",
+      "num": 7,
+      "type": "numerical_diagram",
+      "marks": 5,
+      "question": "Make a diagram to show how hypermetropia is corrected. The near point of a hypermetropic eye is 1 m. What is the power of the lens required to correct this defect? Assume that the near point of the normal eye is 25 cm.",
+      "hints": [
+        "Draw hypermetropic eye with image behind retina for a near object; then add convex corrective lens.",
+        "Use lens formula with object at normal near point u = −25 cm and virtual image at eye's near point v = −100 cm.",
+        "1/f = 1/v − 1/u (f in metres for power in dioptres)."
+      ],
+      "model_answer": "**Diagram:** Hypermetropic eye (near image behind retina) + convex lens in front producing virtual image at retina / at eye's near point.\n\nGiven: hypermetropic near point = 100 cm; normal near point = 25 cm.\n\nObject at u = −25 cm should appear at v = −100 cm (virtual).\n\n1/f = 1/(−100) − 1/(−25) = −0.01 + 0.04 = 0.03 m⁻¹\n\nf = 1/0.03 ≈ **+0.333 m ≈ +33.3 cm**\n\nP = **+3.0 D** (convex / converging lens).",
+      "marking_points": [
+        "Ray diagram showing convex lens correction",
+        "Correct lens formula setup with u = −25 cm, v = −100 cm",
+        "f ≈ +33 cm and P ≈ +3 D",
+        "Convex / converging lens identified"
+      ],
+      "common_mistakes": [
+        "Using concave lens",
+        "Wrong near point distance (1 m vs 100 cm)",
+        "Sign errors on u or v"
+      ],
+      "concept_ids": ["u2_d3_c07", "u2_d3_c10", "u2_d4_c02"],
+      "misconception": "myopia_hypermetropia_swap",
+      "guided_tool": {
+        "type": "hypermetropia_correction",
+        "defaults": {"near_point_cm": 100, "normal_near_cm": 25, "label": "Q7 — hypermetropia power"}
+      },
+      "ncert_ref": "NCERT Ch 10 Exercises Q7"
+    },
+    {
+      "id": "u2_ex_q08",
+      "num": 8,
+      "type": "explain",
+      "marks": 3,
+      "question": "Why is a normal eye not able to see clearly the objects placed closer than 25 cm?",
+      "hints": [
+        "25 cm is the least distance of distinct vision (near point) for a normal eye.",
+        "Below this distance, the eye lens cannot increase curvature enough (accommodation limit).",
+        "Image forms behind the retina — blurred."
+      ],
+      "model_answer": "The **near point** of a normal eye is about **25 cm** (least distance of distinct vision).\n\nFor objects closer than 25 cm, the ciliary muscles cannot increase the curvature of the eye lens enough to decrease focal length further.\n\nThe eye cannot accommodate sufficiently, so the image forms **behind the retina** and appears **blurred**.",
+      "marking_points": [
+        "Near point / 25 cm least distance of distinct vision",
+        "Limit of accommodation / ciliary muscles cannot increase curvature further",
+        "Image behind retina → blurred"
+      ],
+      "common_mistakes": [
+        "Confusing with hypermetropia only (this is normal eye limit)",
+        "Not mentioning accommodation"
+      ],
+      "concept_ids": ["u2_d2_c03", "u2_d2_c06", "u2_d2_c07"],
+      "misconception": "accommodation_presbyopia_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 10 Exercises Q8"
+    },
+    {
+      "id": "u2_ex_q09",
+      "num": 9,
+      "type": "explain",
+      "marks": 2,
+      "question": "What happens to the image distance in the eye when we increase the distance of an object from the eye?",
+      "hints": [
+        "The retina location is fixed — image distance in the eye stays nearly constant.",
+        "The eye accommodates by changing focal length of the lens, not by moving the retina."
+      ],
+      "model_answer": "The **retina is at a fixed distance** from the eye lens.\n\nAs object distance increases, the eye **does not change image distance** significantly; instead, the **focal length of the eye lens increases** (ciliary muscles relax) so that a clear image still forms on the retina.",
+      "marking_points": [
+        "Image distance / retina position remains essentially fixed",
+        "Eye adjusts focal length (accommodation), not image distance"
+      ],
+      "common_mistakes": [
+        "Saying image distance increases with object distance",
+        "Treating the eye like a simple camera with variable image distance"
+      ],
+      "concept_ids": ["u2_d2_c01", "u2_d2_c06", "u2_d1_c06"],
+      "misconception": "accommodation_presbyopia_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 10 Exercises Q9"
+    },
+    {
+      "id": "u2_ex_q10",
+      "num": 10,
+      "type": "explain",
+      "marks": 3,
+      "question": "Why do stars twinkle?",
+      "hints": [
+        "Starlight passes through Earth's atmosphere with changing density.",
+        "Atmospheric refraction shifts the apparent position slightly and continuously.",
+        "Stars are point sources — flicker is visible."
+      ],
+      "model_answer": "Stars are very distant **point sources**. Starlight enters the **Earth's atmosphere** and is **refracted** continuously by layers of air with changing temperature and density.\n\nThe **apparent position** and amount of light reaching the eye **fluctuate**, so the star appears to **twinkle** (brightness and position change slightly).",
+      "marking_points": [
+        "Atmospheric refraction (not scattering alone)",
+        "Changing refractive index / turbulent air",
+        "Point source → twinkling visible"
+      ],
+      "common_mistakes": [
+        "Attributing twinkling only to scattering",
+        "Ignoring atmospheric refraction"
+      ],
+      "concept_ids": ["u2_d9_c01", "u2_d9_c03", "u2_d9_c05"],
+      "misconception": "twinkle_planet_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 10 Exercises Q10"
+    },
+    {
+      "id": "u2_ex_q11",
+      "num": 11,
+      "type": "explain",
+      "marks": 3,
+      "question": "Explain why the planets do not twinkle.",
+      "hints": [
+        "Planets are much closer — seen as extended sources, not point dots.",
+        "Variations from different points on the planet average out."
+      ],
+      "model_answer": "Planets are **much closer** to Earth than stars and appear as **extended sources** (collection of many point sources), not ideal point sources.\n\nAtmospheric refraction affects different parts slightly differently, but these variations **average out**, so the net light entering the eye is **steady** — **no twinkling**.",
+      "marking_points": [
+        "Planets are extended / closer sources",
+        "Multiple point sources — fluctuations average out",
+        "Conclusion: no twinkling"
+      ],
+      "common_mistakes": [
+        "Saying planets are above the atmosphere",
+        "Only stating 'planets are closer' without extended source idea"
+      ],
+      "concept_ids": ["u2_d9_c06", "u2_d9_c07"],
+      "misconception": "twinkle_planet_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 10 Exercises Q11"
+    },
+    {
+      "id": "u2_ex_q12",
+      "num": 12,
+      "type": "explain",
+      "marks": 3,
+      "question": "Why does the sky appear dark instead of blue to an astronaut?",
+      "hints": [
+        "Blue sky on Earth is due to scattering of sunlight by air molecules.",
+        "At high altitude there is very little air above to scatter light."
+      ],
+      "model_answer": "On Earth, the **sky looks blue** because **air molecules scatter** shorter-wavelength (blue) sunlight into our eyes (Tyndall / selective scattering).\n\nIn **space** or at **very high altitude**, there is **negligible atmosphere** above the astronaut — **no significant scattering** of sunlight. With no scattered light entering the eye, the sky appears **dark** (black) instead of blue.",
+      "marking_points": [
+        "Blue sky on Earth due to scattering of sunlight",
+        "Little/no atmosphere at astronaut altitude",
+        "Without scattering, sky appears dark"
+      ],
+      "common_mistakes": [
+        "Confusing with dispersion in a prism",
+        "Saying there is no sunlight in space"
+      ],
+      "concept_ids": ["u2_d10_c03", "u2_d10_c05", "u2_d10_c07"],
+      "misconception": "atmospheric_refraction_scattering_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 10 Exercises Q12"
+    }
+  ]
+}

@@ -59,21 +59,33 @@ def _render_activities(stage2_day: int, unit_id: int) -> None:
             st.caption(act.get("summary", ""))
 
 
+def _activity_label(unit_id: int) -> str:
+    acts = hpc.list_ncert_activities(unit_id)
+    if not acts:
+        return "NCERT Activities"
+    ids = [a["id"] for a in acts]
+    if len(ids) == 1:
+        return f"Activity {ids[0]}"
+    return f"Activities {ids[0]}–{ids[-1]}"
+
+
 def render_stage2_home(*, stage1_done: bool, unit_id: int = 1) -> None:
     """List Stage 2 MCQ days (17–20) on the unit home."""
     if not hpc.stage2_available(unit_id):
         st.info("Stage 2 structured MCQs are not available for this unit yet.")
         return
     if not stage1_done:
+        act_label = _activity_label(unit_id)
         st.info(
             "Complete all Stage 1 concept days to unlock Stage 2. "
-            "Stage 2 uses NCERT Activities 9.1–9.13 and textbook exercise questions."
+            f"Stage 2 uses {act_label} and textbook exercise questions."
         )
         return
 
     st.markdown("### Stage 2 — NCERT check (Activities & exercises)")
+    act_label = _activity_label(unit_id)
     st.caption(
-        "10 questions per session · includes NCERT Exercise MCQs and Activities 9.1–9.13 · "
+        f"10 questions per session · includes NCERT Exercise MCQs and {act_label} · "
         "wrong answers show remediation hints"
     )
     ncert = hpc.ncert_source(unit_id)

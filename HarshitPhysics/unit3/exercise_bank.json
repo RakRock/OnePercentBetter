@@ -1,0 +1,405 @@
+{
+  "meta": {
+    "unit_id": 3,
+    "stage": 3,
+    "active": true,
+    "chapter": "NCERT Class 10 Science Ch 11",
+    "pdf": "jesc111.pdf",
+    "range": "Exercises Q5–Q18",
+    "note": "Exam-style written questions. Chapter 11 has 4 MCQs (Stage 2) and 14 long-form exercises here."
+  },
+  "questions": [
+    {
+      "id": "u3_ex_q05",
+      "num": 5,
+      "type": "explain",
+      "marks": 2,
+      "question": "How is a voltmeter connected in the circuit to measure the potential difference between two points?",
+      "hints": [
+        "A voltmeter measures potential difference between two points.",
+        "It must not draw large current from the circuit."
+      ],
+      "model_answer": "A voltmeter is connected **in parallel** across the two points between which the potential difference is to be measured.\n\nIt has very high resistance so that it takes negligible current from the branch.",
+      "marking_points": [
+        "Connected in parallel",
+        "Across the two points / high resistance so negligible current"
+      ],
+      "common_mistakes": [
+        "Connecting voltmeter in series (confusing with ammeter)",
+        "Not stating parallel explicitly"
+      ],
+      "concept_ids": ["u3_d2_c07", "u3_d2_c08"],
+      "misconception": "voltmeter_series_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 11 Exercises Q5"
+    },
+    {
+      "id": "u3_ex_q06",
+      "num": 6,
+      "type": "numerical",
+      "marks": 5,
+      "question": "A copper wire has diameter 0.5 mm and resistivity of 1.6 × 10⁻⁸ Ω m. What will be the length of this wire to make its resistance 10 Ω? How much does the resistance change if the diameter is doubled?",
+      "hints": [
+        "Use R = ρL/A with A = πr² and r = diameter/2 (in metres).",
+        "Rearrange: L = RA/ρ.",
+        "If diameter doubles, area becomes 4× larger, so R becomes 1/4 for the same length."
+      ],
+      "model_answer": "ρ = 1.6 × 10⁻⁸ Ω·m, d = 0.5 mm = 5 × 10⁻⁴ m, r = 2.5 × 10⁻⁴ m\n\nA = πr² ≈ 1.96 × 10⁻⁷ m²\n\nL = RA/ρ = (10 × 1.96 × 10⁻⁷) / (1.6 × 10⁻⁸) ≈ **122.5 m**\n\nIf diameter is doubled, area × 4, so for same length **R_new = 10/4 = 2.5 Ω**.",
+      "marking_points": [
+        "Correct formula R = ρL/A",
+        "Length ≈ 122 m (accept 120–125 m)",
+        "New R = 2.5 Ω when diameter doubled"
+      ],
+      "common_mistakes": [
+        "Using diameter instead of radius",
+        "Forgetting π in area",
+        "Saying R doubles when diameter doubles"
+      ],
+      "concept_ids": ["u3_d4_c01", "u3_d4_c04", "u3_d4_c06"],
+      "misconception": "resistivity_resistance_confusion",
+      "guided_tool": {
+        "type": "resistivity_wire",
+        "defaults": {
+          "resistivity": 1.6e-8,
+          "diameter_mm": 0.5,
+          "resistance_ohm": 10,
+          "label": "Q6 — copper wire length"
+        }
+      },
+      "ncert_ref": "NCERT Ch 11 Exercises Q6"
+    },
+    {
+      "id": "u3_ex_q07",
+      "num": 7,
+      "type": "numerical_graph",
+      "marks": 5,
+      "question": "The values of current I flowing in a given resistor for the corresponding values of potential difference V across the resistor are given below:\n\nI (A): 0.5, 1.0, 2.0, 3.0, 4.0\nV (V): 1.6, 3.4, 6.7, 10.2, 13.2\n\nPlot a graph between V and I and calculate the resistance of that resistor.",
+      "hints": [
+        "Plot V on y-axis and I on x-axis (or as directed — slope gives R).",
+        "Resistance R = V/I from Ohm's law.",
+        "Use a pair of well-separated points or slope of best line."
+      ],
+      "model_answer": "Plot **V vs I** — straight line through origin (Ohmic conductor).\n\nR = V/I using any row, e.g. R = 13.2/4.0 = **3.3 Ω** (or 6.7/2.0 = 3.35 Ω).\n\nAccept **R ≈ 3.2–3.4 Ω** from graph slope.",
+      "marking_points": [
+        "Correct graph (V vs I, linear)",
+        "Uses Ohm's law R = V/I",
+        "R ≈ 3.3 Ω"
+      ],
+      "common_mistakes": [
+        "Plotting I on y-axis without adjusting slope interpretation",
+        "Using only one inaccurate point"
+      ],
+      "concept_ids": ["u3_d3_c02", "u3_d3_c06", "u3_d3_c07"],
+      "misconception": "ohm_law_temperature_ignored",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 11 Exercises Q7"
+    },
+    {
+      "id": "u3_ex_q08",
+      "num": 8,
+      "type": "numerical",
+      "marks": 3,
+      "question": "When a 12 V battery is connected across an unknown resistor, there is a current of 2.5 mA in the circuit. Find the value of the resistance of the resistor.",
+      "hints": [
+        "Convert mA to A: 2.5 mA = 2.5 × 10⁻³ A.",
+        "Use R = V/I."
+      ],
+      "model_answer": "V = 12 V, I = 2.5 mA = 2.5 × 10⁻³ A\n\nR = V/I = 12 / (2.5 × 10⁻³) = **4800 Ω**",
+      "marking_points": [
+        "Current converted to amperes",
+        "R = 4800 Ω"
+      ],
+      "common_mistakes": [
+        "Not converting mA to A",
+        "Using I = V × R instead of R = V/I"
+      ],
+      "concept_ids": ["u3_d3_c02", "u3_d3_c06"],
+      "misconception": "ohm_law_temperature_ignored",
+      "guided_tool": {
+        "type": "ohms_law",
+        "defaults": {"voltage_v": 12, "current_a": 0.0025, "label": "Q8 — find resistance"}
+      },
+      "ncert_ref": "NCERT Ch 11 Exercises Q8"
+    },
+    {
+      "id": "u3_ex_q09",
+      "num": 9,
+      "type": "numerical",
+      "marks": 3,
+      "question": "A battery of 9 V is connected in series with resistors of 0.2 Ω, 0.3 Ω, 0.4 Ω, 0.5 Ω and 12 Ω, respectively. How much current would flow through the 12 Ω resistor?",
+      "hints": [
+        "In series, the same current flows through every resistor.",
+        "Add all resistances, then I = V/R_total."
+      ],
+      "model_answer": "R_total = 0.2 + 0.3 + 0.4 + 0.5 + 12 = **13.4 Ω**\n\nI = V/R_total = 9/13.4 ≈ **0.67 A**\n\nSame current **0.67 A** flows through the 12 Ω resistor (series circuit).",
+      "marking_points": [
+        "R_total = 13.4 Ω",
+        "I ≈ 0.67 A",
+        "States same current in series"
+      ],
+      "common_mistakes": [
+        "Calculating current only through 12 Ω using 9 V/12 Ω",
+        "Using parallel formula"
+      ],
+      "concept_ids": ["u3_d7_c04", "u3_d7_c05"],
+      "misconception": "series_parallel_resistance_swap",
+      "guided_tool": {
+        "type": "series_circuit",
+        "defaults": {
+          "voltage_v": 9,
+          "resistors": [0.2, 0.3, 0.4, 0.5, 12],
+          "label": "Q9 — series current"
+        }
+      },
+      "ncert_ref": "NCERT Ch 11 Exercises Q9"
+    },
+    {
+      "id": "u3_ex_q10",
+      "num": 10,
+      "type": "numerical",
+      "marks": 3,
+      "question": "How many 176 Ω resistors (in parallel) are required to carry 5 A on a 220 V line?",
+      "hints": [
+        "Find total resistance R_total = V/I.",
+        "For n equal resistors in parallel: R_total = R/n."
+      ],
+      "model_answer": "R_total = V/I = 220/5 = **44 Ω**\n\nFor n resistors of 176 Ω in parallel: 44 = 176/n\n\nn = 176/44 = **4 resistors**",
+      "marking_points": [
+        "R_total = 44 Ω",
+        "n = 4 resistors"
+      ],
+      "common_mistakes": [
+        "Using series formula",
+        "Dividing V by 176 directly"
+      ],
+      "concept_ids": ["u3_d7_c09", "u3_d7_c10"],
+      "misconception": "series_parallel_resistance_swap",
+      "guided_tool": {
+        "type": "parallel_count",
+        "defaults": {
+          "voltage_v": 220,
+          "current_a": 5,
+          "resistor_ohm": 176,
+          "label": "Q10 — parallel resistors count"
+        }
+      },
+      "ncert_ref": "NCERT Ch 11 Exercises Q10"
+    },
+    {
+      "id": "u3_ex_q11",
+      "num": 11,
+      "type": "numerical_diagram",
+      "marks": 5,
+      "question": "Show how you would connect three resistors, each of resistance 6 Ω, so that the combination has a resistance of (i) 9 Ω, (ii) 4 Ω.",
+      "hints": [
+        "(i) 6 + 3 = 9: two 6 Ω in parallel give 3 Ω; add one 6 Ω in series.",
+        "(ii) 4 Ω: two 6 Ω in series (12 Ω) in parallel with third 6 Ω → 4 Ω."
+      ],
+      "model_answer": "(i) **9 Ω:** Two 6 Ω resistors in **parallel** (3 Ω) connected in **series** with a third 6 Ω resistor → 3 + 6 = **9 Ω**.\n\n(ii) **4 Ω:** Two 6 Ω resistors in **series** (12 Ω) connected in **parallel** with the third 6 Ω resistor:\n1/R = 1/12 + 1/6 = 1/4 → **R = 4 Ω**.",
+      "marking_points": [
+        "(i) Correct combination for 9 Ω with diagram/description",
+        "(ii) Correct combination for 4 Ω",
+        "Uses series and parallel rules correctly"
+      ],
+      "common_mistakes": [
+        "All three in series or parallel only",
+        "Arithmetic errors on 1/R for parallel"
+      ],
+      "concept_ids": ["u3_d7_c04", "u3_d7_c09"],
+      "misconception": "series_parallel_resistance_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 11 Exercises Q11"
+    },
+    {
+      "id": "u3_ex_q12",
+      "num": 12,
+      "type": "numerical",
+      "marks": 3,
+      "question": "Several electric bulbs designed to be used on a 220 V electric supply line, are rated 10 W. How many lamps can be connected in parallel with each other across the two wires of 220 V line if the maximum allowable current is 5 A?",
+      "hints": [
+        "Maximum power P_max = V × I_max.",
+        "Each lamp takes 10 W; number = P_max / 10."
+      ],
+      "model_answer": "P_max = V × I = 220 × 5 = **1100 W**\n\nNumber of 10 W lamps in parallel = 1100/10 = **110 lamps**",
+      "marking_points": [
+        "P_max = 1100 W",
+        "110 lamps"
+      ],
+      "common_mistakes": [
+        "Dividing 5 A by current of one bulb without finding bulb current first",
+        "Using series connection"
+      ],
+      "concept_ids": ["u3_d9_c02", "u3_d9_c04"],
+      "misconception": "power_energy_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 11 Exercises Q12"
+    },
+    {
+      "id": "u3_ex_q13",
+      "num": 13,
+      "type": "numerical",
+      "marks": 5,
+      "question": "A hot plate of an electric oven connected to a 220 V line has two resistance coils A and B, each of 24 Ω resistance, which may be used separately, in series, or in parallel. What are the currents in the three cases?",
+      "hints": [
+        "Separately: I = V/R = 220/24.",
+        "Series: R = 48 Ω; Parallel: R = 12 Ω.",
+        "I = V/R_total for each case."
+      ],
+      "model_answer": "V = 220 V, each coil R = 24 Ω.\n\n**(i) One coil only:** I = 220/24 ≈ **9.17 A**\n\n**(ii) Series (A and B):** R = 48 Ω, I = 220/48 ≈ **4.58 A**\n\n**(iii) Parallel (A and B):** R = 12 Ω, I = 220/12 ≈ **18.33 A**",
+      "marking_points": [
+        "Separate ≈ 9.2 A",
+        "Series ≈ 4.6 A",
+        "Parallel ≈ 18.3 A"
+      ],
+      "common_mistakes": [
+        "Same current in parallel branches",
+        "Adding currents incorrectly in series"
+      ],
+      "concept_ids": ["u3_d7_c09", "u3_d9_c01"],
+      "misconception": "series_parallel_resistance_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 11 Exercises Q13"
+    },
+    {
+      "id": "u3_ex_q14",
+      "num": 14,
+      "type": "numerical",
+      "marks": 5,
+      "question": "Compare the power used in the 2 Ω resistor in each of the following circuits:\n(i) a 6 V battery in series with 1 Ω and 2 Ω resistors, and\n(ii) a 4 V battery in parallel with 12 Ω and 2 Ω resistors.",
+      "hints": [
+        "(i) Series: I = 6/(1+2) = 2 A; P on 2 Ω = I²R.",
+        "(ii) Parallel across 4 V: V across 2 Ω = 4 V; P = V²/R."
+      ],
+      "model_answer": "(i) **Series:** R_total = 3 Ω, I = 6/3 = 2 A\nP_2Ω = I²R = 4 × 2 = **8 W**\n\n(ii) **Parallel:** 2 Ω and 12 Ω in parallel across 4 V\nP_2Ω = V²/R = 16/2 = **8 W**\n\n**Same power (8 W)** in the 2 Ω resistor in both cases.",
+      "marking_points": [
+        "(i) P = 8 W with series working",
+        "(ii) P = 8 W with parallel working",
+        "Comparison stated"
+      ],
+      "common_mistakes": [
+        "Using wrong total resistance in parallel case",
+        "Forgetting P = V²/R when V is known across resistor"
+      ],
+      "concept_ids": ["u3_d7_c04", "u3_d7_c09", "u3_d9_c02"],
+      "misconception": "power_energy_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 11 Exercises Q14"
+    },
+    {
+      "id": "u3_ex_q15",
+      "num": 15,
+      "type": "numerical",
+      "marks": 3,
+      "question": "Two lamps, one rated 100 W at 220 V, and the other 60 W at 220 V, are connected in parallel to electric mains supply. What current is drawn from the line if the supply voltage is 220 V?",
+      "hints": [
+        "In parallel at 220 V, each lamp takes I = P/V.",
+        "Total current is sum of branch currents."
+      ],
+      "model_answer": "I₁ = P₁/V = 100/220 ≈ 0.455 A\n\nI₂ = P₂/V = 60/220 ≈ 0.273 A\n\nTotal I = I₁ + I₂ ≈ **0.73 A** (or 160/220 = **0.727 A**)",
+      "marking_points": [
+        "Uses I = P/V for each lamp",
+        "Total I ≈ 0.73 A"
+      ],
+      "common_mistakes": [
+        "Adding powers then dividing by V (actually same here: 160/220)",
+        "Using series formula"
+      ],
+      "concept_ids": ["u3_d9_c02", "u3_d9_c03"],
+      "misconception": "power_energy_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 11 Exercises Q15"
+    },
+    {
+      "id": "u3_ex_q16",
+      "num": 16,
+      "type": "numerical",
+      "marks": 3,
+      "question": "Which uses more energy, a 250 W TV set in 1 hr, or a 1200 W toaster in 10 minutes?",
+      "hints": [
+        "Energy E = P × t (use same units, e.g. watt-hours).",
+        "Convert 10 minutes to hours: 10/60 h."
+      ],
+      "model_answer": "TV: E = 250 W × 1 h = **250 Wh**\n\nToaster: E = 1200 W × (10/60) h = **200 Wh**\n\n**250 W TV for 1 hour** uses more energy.",
+      "marking_points": [
+        "E_TV = 250 Wh",
+        "E_toaster = 200 Wh",
+        "TV uses more energy"
+      ],
+      "common_mistakes": [
+        "Comparing power only without time",
+        "Not converting minutes to hours"
+      ],
+      "concept_ids": ["u3_d9_c03", "u3_d9_c04"],
+      "misconception": "power_energy_confusion",
+      "guided_tool": {
+        "type": "energy_compare",
+        "defaults": {
+          "power1_w": 250,
+          "hours1": 1,
+          "power2_w": 1200,
+          "minutes2": 10,
+          "label": "Q16 — energy comparison"
+        }
+      },
+      "ncert_ref": "NCERT Ch 11 Exercises Q16"
+    },
+    {
+      "id": "u3_ex_q17",
+      "num": 17,
+      "type": "numerical",
+      "marks": 3,
+      "question": "An electric heater of resistance 44 Ω draws 5 A from the service mains for 2 hours. Calculate the rate at which heat is developed in the heater.",
+      "hints": [
+        "Rate of heat = electric power P.",
+        "P = I²R (time is extra info for energy, not rate)."
+      ],
+      "model_answer": "Rate of heat developed = Power P = I²R = 5² × 44 = **1100 W**\n\n(Also P = VI if V is known. Energy in 2 h = 1100 W × 2 h = 2.2 kWh — but question asks for **rate**.)",
+      "marking_points": [
+        "Identifies rate = power",
+        "P = 1100 W"
+      ],
+      "common_mistakes": [
+        "Multiplying by 2 hours for the rate",
+        "Using P = V/I incorrectly"
+      ],
+      "concept_ids": ["u3_d8_c02", "u3_d9_c02"],
+      "misconception": "power_energy_confusion",
+      "guided_tool": {
+        "type": "heating_power",
+        "defaults": {"current_a": 5, "resistance_ohm": 44, "label": "Q17 — heating power"}
+      },
+      "ncert_ref": "NCERT Ch 11 Exercises Q17"
+    },
+    {
+      "id": "u3_ex_q18",
+      "num": 18,
+      "type": "explain",
+      "marks": 5,
+      "question": "Explain the following.\n(a) Why is the tungsten used almost exclusively for filament of electric lamps?\n(b) Why are the conductors of electric heating devices, such as bread-toasters and electric irons, made of an alloy rather than a pure metal?\n(c) Why is the series arrangement not used for domestic circuits?\n(d) How does the resistance of a wire vary with its area of cross-section?\n(e) Why are copper and aluminium wires usually employed for electricity transmission?",
+      "hints": [
+        "(a) High melting point; emits light at high temperature without melting.",
+        "(b) Alloys have higher resistivity and do not oxidise easily at high temperature.",
+        "(c) Series: one failure/open circuit stops all appliances; same current; unequal V division.",
+        "(d) R ∝ 1/A — thicker wire, lower R.",
+        "(e) Low resistivity → low energy loss; good conductors."
+      ],
+      "model_answer": "(a) **Tungsten** has a very **high melting point** (~3400°C) so it glows at high temperature without melting, producing light efficiently.\n\n(b) **Alloys** have **higher resistivity** than pure metals and **resist oxidation** at red heat, producing stable heating without melting quickly.\n\n(c) **Domestic circuits use parallel** so each appliance gets full mains voltage and works independently. In **series**, one fault breaks the whole circuit and voltage is shared unequally.\n\n(d) Resistance is **inversely proportional to area of cross-section** (R ∝ 1/A) — thicker wire → lower resistance.\n\n(e) **Copper and aluminium** have **low resistivity**, are ductile, and minimise **heat loss (I²R)** in transmission lines.",
+      "marking_points": [
+        "(a) High melting point of tungsten",
+        "(b) Alloy: higher resistivity, resists oxidation",
+        "(c) Series unsuitable — independent operation and equal voltage need parallel",
+        "(d) R ∝ 1/A",
+        "(e) Low resistivity, less energy loss in transmission"
+      ],
+      "common_mistakes": [
+        "Missing any sub-part",
+        "Saying alloys have lower resistivity",
+        "Confusing series/parallel advantages"
+      ],
+      "concept_ids": ["u3_d8_c01", "u3_d4_c06", "u3_d12_c01", "u3_d4_c04"],
+      "misconception": "series_parallel_resistance_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 11 Exercises Q18"
+    }
+  ]
+}

@@ -1,36 +1,888 @@
 {
-    "meta": {
+  "meta": {
     "unit_id": 2,
     "stage": 2,
-    "active": false,
+    "active": true,
     "release": 5,
     "total_mcqs": 40,
-    "note": "Days 17–20 MCQs unlock after Stage 1 concept cards are viewed."
+    "pdf": "jesc110.pdf",
+    "note": "Stage 2: NCERT Exercises Q1–4 + Intext + concept bank. Activities 10.1–10.2 linked per day."
   },
   "sessions": [
     {
       "day": 17,
-      "title": "Reflection and Spherical Mirrors",
-      "active": false,
-      "questions": []
+      "title": "Human Eye and Accommodation",
+      "active": true,
+      "activity_refs": [],
+      "questions": [
+        {
+          "id": "u2_d17_ncert_01",
+          "question": "The human eye can focus on objects at different distances by adjusting the focal length of the eye lens. This is due to",
+          "options": [
+            "presbyopia",
+            "accommodation",
+            "near-sightedness",
+            "far-sightedness"
+          ],
+          "answer": 1,
+          "explanation": "Accommodation is the eye lens adjusting its focal length via ciliary muscles.",
+          "misconception": "accommodation_presbyopia_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 10 Exercises Q1",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "ncert_ref": "NCERT Ch 10 Exercises Q1"
+        },
+        {
+          "id": "u2_d17_ncert_02",
+          "question": "The human eye forms the image of an object at its",
+          "options": [
+            "cornea",
+            "iris",
+            "pupil",
+            "retina"
+          ],
+          "answer": 3,
+          "explanation": "The eye lens focuses an inverted real image on the light-sensitive retina.",
+          "misconception": "near_far_point_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 10 Exercises Q2",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "ncert_ref": "NCERT Ch 10 Exercises Q2"
+        },
+        {
+          "id": "u2_d17_intext_03",
+          "question": "A person with a myopic eye cannot see objects beyond 1.2 m distinctly. The corrective lens should be",
+          "options": [
+            "convex, to converge rays",
+            "concave, to diverge rays",
+            "plane glass",
+            "bifocal only"
+          ],
+          "answer": 1,
+          "explanation": "Myopia is corrected with a concave (diverging) lens that shifts the image back onto the retina.",
+          "misconception": "concave_convex_correction_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 10 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "ncert_ref": "NCERT Ch 10 Intext"
+        },
+        {
+          "id": "u2_d17_intext_04",
+          "question": "Fine particles in the atmosphere scatter shorter wavelengths more strongly. Which colour is scattered most, making the clear sky appear that colour?",
+          "options": [
+            "Red",
+            "Yellow",
+            "Blue",
+            "Green"
+          ],
+          "answer": 2,
+          "explanation": "Air molecules scatter blue light (shorter λ) more than red, so the sky looks blue.",
+          "misconception": "dispersion_scattering_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 10 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "ncert_ref": "NCERT Ch 10 Intext"
+        },
+        {
+          "id": "u2_d17_intext_05",
+          "question": "Stars twinkle mainly because of",
+          "options": [
+            "scattering of starlight in vacuum",
+            "atmospheric refraction of starlight",
+            "dispersion in the eye lens",
+            "reflection from the Moon"
+          ],
+          "answer": 1,
+          "explanation": "Changing refractive index of the atmosphere bends starlight slightly — the twinkling effect.",
+          "misconception": "twinkle_planet_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 10 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "ncert_ref": "NCERT Ch 10 Intext"
+        },
+        {
+          "id": "u2_d17_intext_06",
+          "question": "In a glass prism spectrum, the colour that deviates least is",
+          "options": [
+            "Violet",
+            "Blue",
+            "Yellow",
+            "Red"
+          ],
+          "answer": 3,
+          "explanation": "Red light bends the least; violet bends the most in dispersion.",
+          "misconception": "red_violet_bending_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 10 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "ncert_ref": "NCERT Ch 10 Intext"
+        },
+        {
+          "id": "u2_s2_d1_bank_07",
+          "question": "What is the key takeaway about **Eye like a camera**?",
+          "options": [
+            "Iris controls pupil size → controls light amount.",
+            "Eye lens = fine focus adjustment.",
+            "Lens + light-sensitive screen = basic eye model",
+            "Eyeball ≈ 2."
+          ],
+          "answer": 2,
+          "explanation": "Lens + light-sensitive screen = basic eye model.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d1_c02",
+          "category": "u2_d1_B",
+          "category_label": "Day 1 — The Human Eye — Introduction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d1_bank_08",
+          "question": "What is the key takeaway about **Cornea — front window**?",
+          "options": [
+            "Eye collects light; brain creates perception.",
+            "Cornea = first refracting surface; most bending happens here",
+            "Retinal image is inverted; brain uprights it.",
+            "Colour vision requires light on the retina."
+          ],
+          "answer": 1,
+          "explanation": "Cornea = first refracting surface; most bending happens here.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d1_c03",
+          "category": "u2_d1_C",
+          "category_label": "Day 1 — The Human Eye — Introduction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d1_bank_09",
+          "question": "Which statement best describes **Human eye as a sense organ**?",
+          "options": [
+            "Activated retinal cells generate electrical signals sent to the brain via the optic nerve.",
+            "Behind the cornea lies the iris — a dark muscular diaphragm that controls pupil size and regulates light entering the eye.",
+            "The retina is a delicate membrane with enormous numbers of light-sensitive cells that activate when illuminated.",
+            "The human eye is one of the most valuable sense organs."
+          ],
+          "answer": 3,
+          "explanation": "The eye needs light to see colours and shapes.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d1_c01",
+          "category": "u2_d1_A",
+          "category_label": "Day 1 — The Human Eye — Introduction · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d2_bank_10",
+          "question": "What is the key takeaway about **Ciliary muscles**?",
+          "options": [
+            "Contracted muscles → thick lens → near objects clear.",
+            "There is a closest distance the eye can focus comfortably.",
+            "Cataract = cloudy lens; surgery can restore vision.",
+            "Ciliary muscles → lens curvature changes"
+          ],
+          "answer": 3,
+          "explanation": "Ciliary muscles → lens curvature changes.",
+          "day_id": 2,
+          "topic": 2,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d2_c02",
+          "category": "u2_d2_B",
+          "category_label": "Day 2 — Power of Accommodation · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "accommodation_presbyopia_swap"
+        }
+      ]
     },
     {
       "day": 18,
-      "title": "Mirror Signs and Numericals",
-      "active": false,
-      "questions": []
+      "title": "Defects of Vision and Correction",
+      "active": true,
+      "activity_refs": [],
+      "questions": [
+        {
+          "id": "u2_d18_ncert_01",
+          "question": "The least distance of distinct vision for a young adult with normal vision is about",
+          "options": [
+            "25 m",
+            "2.5 cm",
+            "25 cm",
+            "2.5 m"
+          ],
+          "answer": 2,
+          "explanation": "The near point for a normal young adult is about 25 cm.",
+          "misconception": "near_far_point_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 10 Exercises Q3",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "ncert_ref": "NCERT Ch 10 Exercises Q3"
+        },
+        {
+          "id": "u2_d18_ncert_02",
+          "question": "The change in focal length of an eye lens is caused by the action of the",
+          "options": [
+            "pupil",
+            "retina",
+            "ciliary muscles",
+            "iris"
+          ],
+          "answer": 2,
+          "explanation": "Ciliary muscles change the curvature of the eye lens for accommodation.",
+          "misconception": "accommodation_presbyopia_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 10 Exercises Q4",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "ncert_ref": "NCERT Ch 10 Exercises Q4"
+        },
+        {
+          "id": "u2_s2_d3_bank_03",
+          "question": "What is the key takeaway about **Three common defects**?",
+          "options": [
+            "Myopia = clear near, blurred far.",
+            "Distant object image → in front of retina.",
+            "Myopia → concave lens.",
+            "Myopia, hypermetropia, presbyopia — know each pattern"
+          ],
+          "answer": 3,
+          "explanation": "Myopia, hypermetropia, presbyopia — know each pattern.",
+          "day_id": 3,
+          "topic": 3,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d3_c02",
+          "category": "u2_d3_B",
+          "category_label": "Day 3 — Defects of Vision — Myopia and Hypermetropia · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "myopia_hypermetropia_swap"
+        },
+        {
+          "id": "u2_s2_d3_bank_04",
+          "question": "What is the key takeaway about **Myopia — near-sightedness**?",
+          "options": [
+            "Myopia = clear near, blurred far",
+            "Hypermetropia = clear far, blurred near.",
+            "Too strong convergence → myopia.",
+            "Too little convergence → hypermetropia."
+          ],
+          "answer": 0,
+          "explanation": "Myopia = clear near, blurred far.",
+          "day_id": 3,
+          "topic": 3,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d3_c03",
+          "category": "u2_d3_C",
+          "category_label": "Day 3 — Defects of Vision — Myopia and Hypermetropia · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "myopia_hypermetropia_swap"
+        },
+        {
+          "id": "u2_s2_d3_bank_05",
+          "question": "Which statement best describes **Refractive defects of vision**?",
+          "options": [
+            "Sometimes the eye loses its power of accommodation or has shape/lens issues.",
+            "Myopia may arise from excessive curvature of the eye lens or elongation of the eyeball.",
+            "Myopia is corrected with a concave (diverging) lens of suitable power that spreads rays so the image lands on the retina.",
+            "The three main refractive defects in NCERT are myopia (near-sightedness), hypermetropia (far-sightedness), and presbyopia."
+          ],
+          "answer": 0,
+          "explanation": "Refractive defects = focus problem, often fixable with lenses.",
+          "day_id": 3,
+          "topic": 3,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d3_c01",
+          "category": "u2_d3_A",
+          "category_label": "Day 3 — Defects of Vision — Myopia and Hypermetropia · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d4_bank_06",
+          "question": "What is the key takeaway about **Cause of presbyopia**?",
+          "options": [
+            "Weaker ciliary muscles + stiff lens → presbyopia",
+            "Both defects → bifocal spectacles possible.",
+            "Spectacles are not the only correction method.",
+            "Eye donation can cure corneal blindness."
+          ],
+          "answer": 0,
+          "explanation": "Weaker ciliary muscles + stiff lens → presbyopia.",
+          "day_id": 4,
+          "topic": 4,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d4_c02",
+          "category": "u2_d4_B",
+          "category_label": "Day 4 — Presbyopia, Lenses and Eye Donation · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "accommodation_presbyopia_swap"
+        },
+        {
+          "id": "u2_s2_d4_bank_07",
+          "question": "What is the key takeaway about **Combined myopia and hypermetropia**?",
+          "options": [
+            "Power in dioptres = reciprocal of f in metres.",
+            "Both defects → bifocal spectacles possible",
+            "4–6 hour window; simple 10–15 minute removal.",
+            "Presbyopia = age-related near vision loss."
+          ],
+          "answer": 1,
+          "explanation": "Both defects → bifocal spectacles possible.",
+          "day_id": 4,
+          "topic": 4,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d4_c03",
+          "category": "u2_d4_C",
+          "category_label": "Day 4 — Presbyopia, Lenses and Eye Donation · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "myopia_hypermetropia_swap"
+        },
+        {
+          "id": "u2_s2_d4_bank_08",
+          "question": "Which statement best describes **Presbyopia**?",
+          "options": [
+            "Spectacle wearers and cataract-operated people can still donate.",
+            "Presbyopia arises from weakening ciliary muscles and reduced flexibility of the eye lens with age.",
+            "If far point is at distance x, a concave lens should make parallel rays appear to come from x so retina receives a clear image.",
+            "Presbyopia is the gradual loss of accommodation with age — the near point recedes and nearby objects are hard to see clearly."
+          ],
+          "answer": 3,
+          "explanation": "Presbyopia = age-related near vision loss.",
+          "day_id": 4,
+          "topic": 4,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d4_c01",
+          "category": "u2_d4_A",
+          "category_label": "Day 4 — Presbyopia, Lenses and Eye Donation · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d5_bank_09",
+          "question": "What is the key takeaway about **Angle of the prism**?",
+          "options": [
+            "Measure angles from normal, not from surface.",
+            "∠D = angle of deviation.",
+            "Angle of prism = ∠A at apex",
+            "Air to glass → bend toward normal."
+          ],
+          "answer": 2,
+          "explanation": "Angle of prism = ∠A at apex.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c02",
+          "category": "u2_d5_B",
+          "category_label": "Day 5 — Refraction Through a Prism · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "prism_slab_confusion"
+        },
+        {
+          "id": "u2_s2_d5_bank_10",
+          "question": "What is the key takeaway about **Incident ray PE**?",
+          "options": [
+            "Measure angles from normal, not from surface.",
+            "Prism = inclined refracting surfaces.",
+            "PE = incident ray",
+            "Angle of prism = ∠A at apex."
+          ],
+          "answer": 2,
+          "explanation": "PE = incident ray.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c03",
+          "category": "u2_d5_C",
+          "category_label": "Day 5 — Refraction Through a Prism · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        }
+      ]
     },
     {
       "day": 19,
-      "title": "Refraction and Lenses",
-      "active": false,
-      "questions": []
+      "title": "Prism Refraction and Dispersion",
+      "active": true,
+      "activity_refs": [
+        "10.1",
+        "10.2"
+      ],
+      "questions": [
+        {
+          "id": "u2_s2_d5_bank_01",
+          "question": "What is the key takeaway about **Emergent ray FS**?",
+          "options": [
+            "Measure angles from normal, not from surface.",
+            "Parallel faces → no net deviation; prism → deviation D.",
+            "Glass to air → bend away from normal",
+            "Pin alignment locates real ray path."
+          ],
+          "answer": 2,
+          "explanation": "Glass to air → bend away from normal.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c05",
+          "category": "u2_d5_B",
+          "category_label": "Day 5 — Refraction Through a Prism · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d5_bank_02",
+          "question": "What is the key takeaway about **Angles i, r, e**?",
+          "options": [
+            "∠D = angle of deviation.",
+            "Measure angles from normal, not from surface",
+            "Angle of prism = ∠A at apex.",
+            "Air to glass → bend toward normal."
+          ],
+          "answer": 1,
+          "explanation": "Measure angles from normal, not from surface.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c06",
+          "category": "u2_d5_C",
+          "category_label": "Day 5 — Refraction Through a Prism · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d5_bank_03",
+          "question": "Which statement best describes **Triangular glass prism**?",
+          "options": [
+            "Light refracts twice — entering and leaving the prism.",
+            "∠i is angle of incidence, ∠r angle of refraction at first face, ∠e angle of emergence at second face — all measured from normals.",
+            "Fix pins P,Q on incident line; look through second face and align pins R,S with images of P,Q to trace the ray path.",
+            "A prism has two triangular bases and three rectangular lateral faces inclined to each other."
+          ],
+          "answer": 3,
+          "explanation": "Prism = inclined refracting surfaces.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c01",
+          "category": "u2_d5_A",
+          "category_label": "Day 5 — Refraction Through a Prism · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "prism_slab_confusion"
+        },
+        {
+          "id": "u2_s2_d6_bank_04",
+          "question": "What is the key takeaway about **Spectrum**?",
+          "options": [
+            "White light contains all visible colours.",
+            "Narrow white beam → prism → spectrum on screen.",
+            "Spectrum = ordered colour band",
+            "Single spectrum colour does not split again."
+          ],
+          "answer": 2,
+          "explanation": "Spectrum = ordered colour band.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d6_c02",
+          "category": "u2_d6_B",
+          "category_label": "Day 6 — Dispersion of White Light · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "dispersion_scattering_swap"
+        },
+        {
+          "id": "u2_s2_d6_bank_05",
+          "question": "What is the key takeaway about **VIBGYOR order**?",
+          "options": [
+            "Inverted second prism recombines colours → white.",
+            "Different angles → separate colours.",
+            "VIBGYOR — violet to red",
+            "Single spectrum colour does not split again."
+          ],
+          "answer": 2,
+          "explanation": "VIBGYOR — violet to red.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d6_c03",
+          "category": "u2_d6_C",
+          "category_label": "Day 6 — Dispersion of White Light · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "dispersion_scattering_swap"
+        },
+        {
+          "id": "u2_s2_d6_bank_06",
+          "question": "Which statement best describes **Dispersion**?",
+          "options": [
+            "Dispersion is the splitting of white light into its component colours.",
+            "The sequence of colours in the visible spectrum is Violet, Indigo, Blue, Green, Yellow, Orange, Red — VIBGYOR.",
+            "The band of coloured components of a light beam is called its spectrum.",
+            "Newton could not split a single spectrum colour further with another similar prism — each colour is pure in that sense."
+          ],
+          "answer": 0,
+          "explanation": "Dispersion = split white light into colours.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d6_c01",
+          "category": "u2_d6_A",
+          "category_label": "Day 6 — Dispersion of White Light · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "dispersion_scattering_swap"
+        },
+        {
+          "id": "u2_s2_d7_bank_07",
+          "question": "What is the key takeaway about **Rainbow direction**?",
+          "options": [
+            "Rainbow opposite the Sun",
+            "Apparent position above actual near horizon.",
+            "Spray + Sun behind → rainbow.",
+            "Exit refraction sends colours to observer."
+          ],
+          "answer": 0,
+          "explanation": "Rainbow opposite the Sun.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d7_c02",
+          "category": "u2_d7_B",
+          "category_label": "Day 7 — Rainbow and Atmospheric Refraction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d7_bank_08",
+          "question": "What is the key takeaway about **Water droplet as prism**?",
+          "options": [
+            "Hot rising air bends light unpredictably.",
+            "Droplets refract + disperse sunlight",
+            "Changing air density → refraction.",
+            "Rainbow opposite the Sun."
+          ],
+          "answer": 1,
+          "explanation": "Droplets refract + disperse sunlight.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d7_c03",
+          "category": "u2_d7_C",
+          "category_label": "Day 7 — Rainbow and Atmospheric Refraction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "dispersion_scattering_swap"
+        },
+        {
+          "id": "u2_s2_d7_bank_09",
+          "question": "Which statement best describes **Rainbow as natural spectrum**?",
+          "options": [
+            "Tiny water droplets act like small prisms — they refract and disperse incident sunlight.",
+            "Hot air above a fire is less dense with slightly lower refractive index; apparent object position wavers — local atmospheric refraction.",
+            "A rainbow is a natural spectrum in the sky after rain, caused by dispersion of sunlight by water droplets.",
+            "A rainbow is always formed in a direction opposite to the Sun."
+          ],
+          "answer": 2,
+          "explanation": "Rainbow = dispersion + droplet optics.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d7_c01",
+          "category": "u2_d7_A",
+          "category_label": "Day 7 — Rainbow and Atmospheric Refraction · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "dispersion_scattering_swap"
+        },
+        {
+          "id": "u2_s2_d8_bank_10",
+          "question": "What is the key takeaway about **Stars as point sources**?",
+          "options": [
+            "Delayed sunset ≈ 2 minutes.",
+            "Extended source → twinkling cancels out.",
+            "Point source → visible twinkle",
+            "Scattering redirects light by particles."
+          ],
+          "answer": 2,
+          "explanation": "Point source → visible twinkle.",
+          "day_id": 8,
+          "topic": 8,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d8_c02",
+          "category": "u2_d8_B",
+          "category_label": "Day 8 — Scattering and the Colourful Sky · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "twinkle_planet_confusion"
+        }
+      ]
     },
     {
       "day": 20,
-      "title": "Lens Numericals and Mixed Unit Review",
-      "active": false,
-      "questions": []
+      "title": "Atmospheric Refraction and Scattering",
+      "active": true,
+      "activity_refs": [],
+      "questions": [
+        {
+          "id": "u2_s2_d11_bank_01",
+          "question": "What is the key takeaway about **Emergent ray not parallel**?",
+          "options": [
+            "White = sum of spectrum colours.",
+            "Gradual index change → bending.",
+            "∠A at apex; ∠D between incident and emergent directions.",
+            "Prism turns light overall"
+          ],
+          "answer": 3,
+          "explanation": "Prism turns light overall.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d11_c02",
+          "category": "u2_d11_B",
+          "category_label": "Day 11 — Spectrum and Rainbow — Deep Dive · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "prism_slab_confusion"
+        },
+        {
+          "id": "u2_s2_d11_bank_02",
+          "question": "What is the key takeaway about **Violet at one end of spectrum**?",
+          "options": [
+            "White = sum of spectrum colours.",
+            "Violet = most bent",
+            "∠A at apex; ∠D between incident and emergent directions.",
+            "Sun at your back for rainbow."
+          ],
+          "answer": 1,
+          "explanation": "Violet = most bent.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d11_c03",
+          "category": "u2_d11_C",
+          "category_label": "Day 11 — Spectrum and Rainbow — Deep Dive · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "dispersion_scattering_swap"
+        },
+        {
+          "id": "u2_s2_d11_bank_03",
+          "question": "Which statement best describes **Angle of prism vs deviation**?",
+          "options": [
+            "NCERT describes one internal reflection in droplet for rainbow — simplifies full optics.",
+            "For rainbow, sunlight must strike droplets with observer facing away from Sun.",
+            "Starlight passes through layers of changing density — refraction is continuous, not at one surface.",
+            "Larger prism angle generally increases deviation for the same material — linked but not identical quantities."
+          ],
+          "answer": 3,
+          "explanation": "∠A at apex; ∠D between incident and emergent directions.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d11_c01",
+          "category": "u2_d11_A",
+          "category_label": "Day 11 — Spectrum and Rainbow — Deep Dive · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "prism_slab_confusion"
+        },
+        {
+          "id": "u2_s2_d12_bank_04",
+          "question": "What is the key takeaway about **Actual vs apparent sunrise diagram**?",
+          "options": [
+            "Scattering makes beam visible.",
+            "Hot air → lower n.",
+            "Apparent Sun lifted by refraction",
+            "Large particles → white scatter."
+          ],
+          "answer": 2,
+          "explanation": "Apparent Sun lifted by refraction.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d12_c02",
+          "category": "u2_d12_B",
+          "category_label": "Day 12 — Atmosphere and Scattering — Deep Dive · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d12_bank_05",
+          "question": "What is the key takeaway about **2-minute time difference**?",
+          "options": [
+            "Scattering makes beam visible.",
+            "Air molecules scatter short λ more.",
+            "≈2 min early and ≈2 min late",
+            "Mist droplets scatter sunlight."
+          ],
+          "answer": 2,
+          "explanation": "≈2 min early and ≈2 min late.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d12_c03",
+          "category": "u2_d12_C",
+          "category_label": "Day 12 — Atmosphere and Scattering — Deep Dive · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d12_bank_06",
+          "question": "Which statement best describes **Twinkling more at horizon**?",
+          "options": [
+            "Sunbeams through misty forest canopy show Tyndall scattering by tiny water droplets.",
+            "Fig 10.",
+            "Stars near horizon twinkle more because light path through atmosphere is longer and less stable.",
+            "Fine particles → blue sky; long path removes blue from Sun → red Sun; red used in danger lights."
+          ],
+          "answer": 2,
+          "explanation": "Longer air path → more twinkle.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d12_c01",
+          "category": "u2_d12_A",
+          "category_label": "Day 12 — Atmosphere and Scattering — Deep Dive · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "twinkle_planet_confusion"
+        },
+        {
+          "id": "u2_s2_d13_bank_07",
+          "question": "What is the key takeaway about **Near point exam value**?",
+          "options": [
+            "Dispersion = colour split.",
+            "25 cm near, ∞ far",
+            "Accommodation = focal length adjustment.",
+            "Unstable refraction + point source."
+          ],
+          "answer": 1,
+          "explanation": "25 cm near, ∞ far.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d13_c02",
+          "category": "u2_d13_B",
+          "category_label": "Day 13 — Exam-style Diagrams and Definitions · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "near_far_point_swap"
+        },
+        {
+          "id": "u2_s2_d13_bank_08",
+          "question": "What is the key takeaway about **Myopia far point question type**?",
+          "options": [
+            "All symbols from Fig 10.",
+            "Convex adds convergence.",
+            "Two corrections one lens.",
+            "Concave lens; watch cm→m"
+          ],
+          "answer": 3,
+          "explanation": "Concave lens; watch cm→m.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d13_c03",
+          "category": "u2_d13_C",
+          "category_label": "Day 13 — Exam-style Diagrams and Definitions · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "myopia_hypermetropia_swap"
+        },
+        {
+          "id": "u2_s2_d13_bank_09",
+          "question": "Which statement best describes **Accommodation exam definition**?",
+          "options": [
+            "Given far point distance, identify concave lens and compute power using P=1/f with proper signs.",
+            "Label PE, EF, FS, ∠i, ∠r, ∠e, ∠A, ∠D on prism diagram.",
+            "Define accommodation as eye lens adjusting focal length via ciliary muscles for near and far objects.",
+            "Explain twinkling: atmospheric refraction in turbulent air, point source stars, changing path and brightness."
+          ],
+          "answer": 2,
+          "explanation": "Accommodation = focal length adjustment.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d13_c01",
+          "category": "u2_d13_A",
+          "category_label": "Day 13 — Exam-style Diagrams and Definitions · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "accommodation_presbyopia_swap"
+        },
+        {
+          "id": "u2_s2_d14_bank_10",
+          "question": "What is the key takeaway about **Blue sky explanation**?",
+          "options": [
+            "Least scatter → red signals.",
+            "Visible path = Tyndall.",
+            "Insufficient air to scatter blue.",
+            "Selective scatter of short wavelengths"
+          ],
+          "answer": 3,
+          "explanation": "Selective scatter of short wavelengths.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d14_c02",
+          "category": "u2_d14_B",
+          "category_label": "Day 14 — Long-answer Preparation · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 10 — Human Eye",
+          "misconception": "atmospheric_refraction_scattering_swap"
+        }
+      ]
     }
   ]
 }

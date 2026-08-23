@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "unit_id": 4,
+    "stage": 3,
+    "active": true,
+    "chapter": "NCERT Class 10 Science Ch 12",
+    "pdf": "jesc112.pdf",
+    "range": "Exercises Q4–Q9",
+    "note": "Exam-style written questions. Chapter 12 has 2 MCQs + Q3 T/F (Stage 2 intext) and 6 long-form exercises here."
+  },
+  "questions": [
+    {
+      "id": "u4_ex_q04",
+      "num": 4,
+      "type": "explain",
+      "marks": 2,
+      "question": "List two methods of producing magnetic fields.",
+      "hints": [
+        "Think Oersted's discovery — current produces magnetism.",
+        "Permanent magnets also produce magnetic fields without current."
+      ],
+      "model_answer": "Two methods of producing magnetic fields:\n\n1. **Using a permanent magnet** (e.g. bar magnet).\n2. **Passing electric current** through a conductor — such as a straight wire, circular coil, or **solenoid** (electromagnet).",
+      "marking_points": [
+        "Permanent magnet mentioned",
+        "Current through conductor / solenoid / electromagnet mentioned"
+      ],
+      "common_mistakes": [
+        "Listing only one method",
+        "Saying 'moving charge' without linking to current in conductor"
+      ],
+      "concept_ids": ["u4_d1_c02", "u4_d5_c01", "u4_d5_c05"],
+      "misconception": "straight_wire_field_pattern_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 12 Exercises Q4"
+    },
+    {
+      "id": "u4_ex_q05",
+      "num": 5,
+      "type": "explain",
+      "marks": 2,
+      "question": "When is the force experienced by a current–carrying conductor placed in a magnetic field largest?",
+      "hints": [
+        "Force depends on angle between current direction and magnetic field.",
+        "F = BIL sin θ — when is sin θ maximum?"
+      ],
+      "model_answer": "The force is **largest when the conductor is perpendicular to the magnetic field** (current direction ⊥ B).\n\nThen θ = 90° and sin θ = 1, giving maximum F = BIL.\n\nWhen the conductor is parallel to the field (θ = 0°), force is zero.",
+      "marking_points": [
+        "When conductor/current is perpendicular to magnetic field",
+        "Reference to maximum sin θ or F = BIL"
+      ],
+      "common_mistakes": [
+        "Saying parallel gives maximum force",
+        "Not mentioning perpendicular"
+      ],
+      "concept_ids": ["u4_d6_c01", "u4_d6_c09", "u4_d11_c05"],
+      "misconception": "right_left_hand_rule_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 12 Exercises Q5"
+    },
+    {
+      "id": "u4_ex_q06",
+      "num": 6,
+      "type": "explain",
+      "marks": 3,
+      "question": "Imagine that you are sitting in a chamber with your back to one wall. An electron beam, moving horizontally from back wall towards the front wall, is deflected by a strong magnetic field to your right side. What is the direction of magnetic field?",
+      "hints": [
+        "Electron motion is opposite to conventional current direction.",
+        "Use Fleming's left-hand rule: thumb = force (deflection), forefinger = B, middle finger = current."
+      ],
+      "model_answer": "Electron beam moves from **back → front** (towards you). **Conventional current** is opposite → from front to back.\n\nDeflection is to **your right** (force on positive charge).\n\nBy **Fleming's left-hand rule**, magnetic field is **vertically downward** (into the floor / ground).",
+      "marking_points": [
+        "Notes electron current is opposite to electron motion",
+        "Uses Fleming's left-hand rule",
+        "Magnetic field vertically downward"
+      ],
+      "common_mistakes": [
+        "Using right-hand thumb rule instead of left-hand for force",
+        "Ignoring sign of electron charge",
+        "Wrong vertical direction (up instead of down)"
+      ],
+      "concept_ids": ["u4_d6_c09", "u4_d11_c05", "u4_d11_c06"],
+      "misconception": "electron_current_direction",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 12 Exercises Q6"
+    },
+    {
+      "id": "u4_ex_q07",
+      "num": 7,
+      "type": "explain",
+      "marks": 5,
+      "question": "State the rule to determine the direction of a (i) magnetic field produced around a straight conductor-carrying current, (ii) force experienced by a current-carrying straight conductor placed in a magnetic field which is perpendicular to it, and (iii) current induced in a coil due to its rotation in a magnetic field.",
+      "hints": [
+        "(i) Right-hand thumb rule — thumb = current, curled fingers = B.",
+        "(ii) Fleming's left-hand rule — forefinger B, middle finger I, thumb F.",
+        "(iii) Fleming's right-hand rule — generator rule."
+      ],
+      "model_answer": "(i) **Magnetic field around straight conductor:** **Right-hand thumb rule** — if the thumb points in the direction of current, the curled fingers show the direction of magnetic field lines around the wire.\n\n(ii) **Force on conductor in ⊥ magnetic field:** **Fleming's left-hand rule** — stretch forefinger (field B), middle finger (current I), thumb gives force F on the conductor.\n\n(iii) **Induced current in rotating coil:** **Fleming's right-hand rule** — forefinger = field, thumb = motion of conductor, middle finger = induced current.",
+      "marking_points": [
+        "(i) Right-hand thumb rule stated correctly",
+        "(ii) Fleming's left-hand rule for force",
+        "(iii) Fleming's right-hand rule for induced current"
+      ],
+      "common_mistakes": [
+        "Swapping left and right Fleming rules",
+        "Using thumb rule for force on conductor"
+      ],
+      "concept_ids": ["u4_d5_c07", "u4_d6_c09", "u4_d11_c05"],
+      "misconception": "right_left_hand_rule_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 12 Exercises Q7"
+    },
+    {
+      "id": "u4_ex_q08",
+      "num": 8,
+      "type": "explain",
+      "marks": 3,
+      "question": "When does an electric short circuit occur?",
+      "hints": [
+        "Short circuit = very low resistance path.",
+        "Live wire touching neutral directly?"
+      ],
+      "model_answer": "A **short circuit** occurs when the **live wire and neutral wire come into direct contact** with each other **without passing through an appliance/load** (often due to damaged insulation or faulty wiring).\n\nResistance of the circuit becomes very small, so current **increases heavily**, overheating wires and tripping fuses/MCBs.",
+      "marking_points": [
+        "Live and neutral in direct contact / bypassing load",
+        "Low resistance → high current",
+        "Mention of insulation fault or faulty connection (optional)"
+      ],
+      "common_mistakes": [
+        "Confusing with overload only",
+        "Not mentioning bypass of appliance"
+      ],
+      "concept_ids": ["u4_d9_c01", "u4_d9_c02", "u4_d12_c07"],
+      "misconception": "short_circuit_overload_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 12 Exercises Q8"
+    },
+    {
+      "id": "u4_ex_q09",
+      "num": 9,
+      "type": "explain",
+      "marks": 3,
+      "question": "What is the function of an earth wire? Why is it necessary to earth metallic appliances?",
+      "hints": [
+        "Earth wire is green; connected to metal body and ground.",
+        "If live wire touches casing, current goes to earth instead of through user."
+      ],
+      "model_answer": "**Function of earth wire:** The **green earth wire** connects the **metallic body** of an appliance to the **ground** (deep inside Earth).\n\n**Why necessary:** If the **live wire** accidentally touches the metal casing due to insulation failure, the large current flows to **earth** through the low-resistance earth path. The **fuse blows** and the user is protected from **severe electric shock**.",
+      "marking_points": [
+        "Earth wire connects metallic body to ground",
+        "Prevents shock if live touches casing",
+        "Fuse blows / current diverted to earth"
+      ],
+      "common_mistakes": [
+        "Saying earth wire carries normal operating current",
+        "Confusing earth with neutral"
+      ],
+      "concept_ids": ["u4_d8_c05", "u4_d8_c07", "u4_d12_c04"],
+      "misconception": "earth_wire_purpose_error",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 12 Exercises Q9"
+    }
+  ]
+}

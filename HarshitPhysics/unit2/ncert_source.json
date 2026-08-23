@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "unit_id": 2,
+    "chapter": 10,
+    "pdf": "jesc110.pdf",
+    "title": "The Human Eye and the Colourful World"
+  },
+  "activities": [
+    {
+      "id": "10.1",
+      "title": "Refraction through a triangular glass prism",
+      "summary": "Trace light through a prism; mark angle of incidence, refraction, emergence, and angle of deviation.",
+      "concept_ids": ["u2_d5_c01", "u2_d5_c04", "u2_d5_c06"],
+      "stage2_day": 19
+    },
+    {
+      "id": "10.2",
+      "title": "Dispersion of white light by a prism",
+      "summary": "Pass narrow white light through a prism onto a screen; observe the VIBGYOR spectrum band.",
+      "concept_ids": ["u2_d6_c01", "u2_d6_c03", "u2_d6_c05"],
+      "stage2_day": 19
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "The human eye can focus on objects at different distances by adjusting the focal length of the eye lens. This is due to",
+      "options": ["presbyopia", "accommodation", "near-sightedness", "far-sightedness"],
+      "answer": 1,
+      "explanation": "Accommodation is the eye lens adjusting its focal length via ciliary muscles.",
+      "misconception": "accommodation_presbyopia_swap",
+      "source": "NCERT Ch 10 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "The human eye forms the image of an object at its",
+      "options": ["cornea", "iris", "pupil", "retina"],
+      "answer": 3,
+      "explanation": "The eye lens focuses an inverted real image on the light-sensitive retina.",
+      "misconception": "near_far_point_swap",
+      "source": "NCERT Ch 10 Exercises Q2"
+    },
+    {
+      "num": 3,
+      "question": "The least distance of distinct vision for a young adult with normal vision is about",
+      "options": ["25 m", "2.5 cm", "25 cm", "2.5 m"],
+      "answer": 2,
+      "explanation": "The near point for a normal young adult is about 25 cm.",
+      "misconception": "near_far_point_swap",
+      "source": "NCERT Ch 10 Exercises Q3"
+    },
+    {
+      "num": 4,
+      "question": "The change in focal length of an eye lens is caused by the action of the",
+      "options": ["pupil", "retina", "ciliary muscles", "iris"],
+      "answer": 2,
+      "explanation": "Ciliary muscles change the curvature of the eye lens for accommodation.",
+      "misconception": "accommodation_presbyopia_swap",
+      "source": "NCERT Ch 10 Exercises Q4"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Section 10.2 — myopia correction",
+      "question": "A person with a myopic eye cannot see objects beyond 1.2 m distinctly. The corrective lens should be",
+      "options": ["convex, to converge rays", "concave, to diverge rays", "plane glass", "bifocal only"],
+      "answer": 1,
+      "explanation": "Myopia is corrected with a concave (diverging) lens that shifts the image back onto the retina.",
+      "misconception": "concave_convex_correction_swap",
+      "source": "NCERT Ch 10 Intext"
+    },
+    {
+      "ref": "Section 10.6 — sky colour",
+      "question": "Fine particles in the atmosphere scatter shorter wavelengths more strongly. Which colour is scattered most, making the clear sky appear that colour?",
+      "options": ["Red", "Yellow", "Blue", "Green"],
+      "answer": 2,
+      "explanation": "Air molecules scatter blue light (shorter λ) more than red, so the sky looks blue.",
+      "misconception": "dispersion_scattering_swap",
+      "source": "NCERT Ch 10 Intext"
+    },
+    {
+      "ref": "Section 10.5 — twinkling",
+      "question": "Stars twinkle mainly because of",
+      "options": [
+        "scattering of starlight in vacuum",
+        "atmospheric refraction of starlight",
+        "dispersion in the eye lens",
+        "reflection from the Moon"
+      ],
+      "answer": 1,
+      "explanation": "Changing refractive index of the atmosphere bends starlight slightly — the twinkling effect.",
+      "misconception": "twinkle_planet_confusion",
+      "source": "NCERT Ch 10 Intext"
+    },
+    {
+      "ref": "Section 10.4 — dispersion",
+      "question": "In a glass prism spectrum, the colour that deviates least is",
+      "options": ["Violet", "Blue", "Yellow", "Red"],
+      "answer": 3,
+      "explanation": "Red light bends the least; violet bends the most in dispersion.",
+      "misconception": "red_violet_bending_swap",
+      "source": "NCERT Ch 10 Intext"
+    }
+  ]
+}

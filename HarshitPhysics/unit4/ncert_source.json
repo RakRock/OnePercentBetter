@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "unit_id": 4,
+    "chapter": 12,
+    "pdf": "jesc112.pdf",
+    "title": "Magnetic Effects of Electric Current"
+  },
+  "activities": [
+    {
+      "id": "12.1",
+      "title": "Compass deflection near current-carrying wire",
+      "summary": "Pass current through a thick copper wire near a compass; the needle deflects — current produces a magnetic effect.",
+      "concept_ids": ["u4_d1_c01", "u4_d1_c02", "u4_d4_c01"],
+      "stage2_day": 17
+    },
+    {
+      "id": "12.2",
+      "title": "Iron filings pattern around a bar magnet",
+      "summary": "Sprinkle iron filings near a bar magnet; they align along magnetic field lines.",
+      "concept_ids": ["u4_d2_c01", "u4_d2_c04", "u4_d2_c10"],
+      "stage2_day": 17
+    },
+    {
+      "id": "12.3",
+      "title": "Drawing magnetic field lines with a compass",
+      "summary": "Move a small compass around a bar magnet and mark points to draw field lines.",
+      "concept_ids": ["u4_d2_c05", "u4_d2_c06"],
+      "stage2_day": 17
+    },
+    {
+      "id": "12.4",
+      "title": "Direction of field around a straight conductor",
+      "summary": "Reverse current direction in a wire over a compass; deflection reverses — field direction follows current.",
+      "concept_ids": ["u4_d4_c03", "u4_d5_c07"],
+      "stage2_day": 18
+    },
+    {
+      "id": "12.5",
+      "title": "Magnetic field pattern around straight conductor",
+      "summary": "Pass wire through cardboard with iron filings; concentric circles show field pattern.",
+      "concept_ids": ["u4_d4_c03", "u4_d4_c04"],
+      "stage2_day": 18
+    },
+    {
+      "id": "12.6",
+      "title": "Field due to a circular coil",
+      "summary": "Iron filings around a current-carrying circular coil show field pattern; n turns multiply field strength.",
+      "concept_ids": ["u4_d5_c01", "u4_d5_c04"],
+      "stage2_day": 19
+    },
+    {
+      "id": "12.7",
+      "title": "Force on a current-carrying rod in a magnetic field",
+      "summary": "Aluminium rod between magnet poles displaces when current flows; direction reverses with current or field.",
+      "concept_ids": ["u4_d6_c01", "u4_d6_c09", "u4_d11_c05"],
+      "stage2_day": 19
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "Which of the following correctly describes the magnetic field near a long straight wire?",
+      "options": [
+        "The field consists of straight lines perpendicular to the wire.",
+        "The field consists of straight lines parallel to the wire.",
+        "The field consists of radial lines originating from the wire.",
+        "The field consists of concentric circles centred on the wire."
+      ],
+      "answer": 3,
+      "explanation": "Magnetic field lines around a straight current-carrying wire form concentric circles in a plane perpendicular to the wire.",
+      "misconception": "straight_wire_field_pattern_error",
+      "source": "NCERT Ch 12 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "At the time of short circuit, the current in the circuit",
+      "options": [
+        "reduces substantially.",
+        "does not change.",
+        "increases heavily.",
+        "vary continuously."
+      ],
+      "answer": 2,
+      "explanation": "A short circuit offers very low resistance, so current increases dangerously.",
+      "misconception": "short_circuit_overload_confusion",
+      "source": "NCERT Ch 12 Exercises Q2"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Exercises Q3(a)",
+      "question": "The field at the centre of a long circular coil carrying current will be parallel straight lines.",
+      "options": ["True", "False", "Circular only", "Zero"],
+      "answer": 0,
+      "explanation": "Inside a long solenoid/circular coil the field lines are parallel straight lines.",
+      "misconception": "solenoid_uniform_field_confusion",
+      "source": "NCERT Ch 12 Exercises Q3(a)"
+    },
+    {
+      "ref": "Exercises Q3(b)",
+      "question": "A wire with a green insulation is usually the live wire of an electric supply.",
+      "options": ["True", "False", "Green is neutral", "Green is earth only"],
+      "answer": 1,
+      "explanation": "Live wire is red, neutral is black, earth wire is green.",
+      "misconception": "earth_wire_purpose_error",
+      "source": "NCERT Ch 12 Exercises Q3(b)"
+    },
+    {
+      "ref": "Section 12.2 — field lines",
+      "question": "Magnetic field lines around a bar magnet",
+      "options": [
+        "cross each other at the poles",
+        "emerge from N and merge at S outside the magnet",
+        "start and end at infinity only",
+        "are straight lines only"
+      ],
+      "answer": 1,
+      "explanation": "Field lines emerge from north pole and enter south pole outside the magnet; they form closed curves.",
+      "misconception": "field_lines_cross_or_open",
+      "source": "NCERT Ch 12 Intext"
+    },
+    {
+      "ref": "Section 12.6 — domestic supply",
+      "question": "In domestic circuits, appliances are connected in parallel so that",
+      "options": [
+        "same current flows through each appliance",
+        "each appliance gets the same potential difference and works independently",
+        "resistance adds up",
+        "only one appliance can work at a time"
+      ],
+      "answer": 1,
+      "explanation": "Parallel connection gives 220 V across each branch and independent operation.",
+      "misconception": "domestic_series_wiring_error",
+      "source": "NCERT Ch 12 Intext"
+    }
+  ]
+}

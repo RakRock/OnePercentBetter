@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "unit_id": 3,
+    "chapter": 11,
+    "pdf": "jesc111.pdf",
+    "title": "Electricity"
+  },
+  "activities": [
+    {
+      "id": "11.1",
+      "title": "Ohm's law — V–I graph with nichrome wire",
+      "summary": "Use 1–4 cells with ammeter and voltmeter across nichrome wire; tabulate V and I and verify V/I is constant.",
+      "concept_ids": ["u3_d3_c01", "u3_d3_c02", "u3_d3_c06"],
+      "stage2_day": 17
+    },
+    {
+      "id": "11.2",
+      "title": "Current through different components",
+      "summary": "Compare ammeter readings for nichrome wire, torch bulb, and 10 W bulb — different resistance, different current.",
+      "concept_ids": ["u3_d3_c03", "u3_d3_c04"],
+      "stage2_day": 17
+    },
+    {
+      "id": "11.3",
+      "title": "Factors affecting resistance of a wire",
+      "summary": "Change length, thickness, and material of wire; observe how ammeter reading (resistance) changes.",
+      "concept_ids": ["u3_d4_c01", "u3_d4_c04", "u3_d4_c06"],
+      "stage2_day": 18
+    },
+    {
+      "id": "11.4",
+      "title": "Resistors in series — same current",
+      "summary": "Join three resistors in series; current is the same at every point in the circuit.",
+      "concept_ids": ["u3_d7_c01", "u3_d7_c04"],
+      "stage2_day": 19
+    },
+    {
+      "id": "11.5",
+      "title": "Potential difference in series combination",
+      "summary": "Measure total V across series resistors and V across each resistor; voltages add.",
+      "concept_ids": ["u3_d7_c05", "u3_d7_c06"],
+      "stage2_day": 19
+    },
+    {
+      "id": "11.6",
+      "title": "Resistors in parallel — same potential difference",
+      "summary": "Parallel combination: same V across each branch; total current is sum of branch currents.",
+      "concept_ids": ["u3_d7_c09", "u3_d7_c10"],
+      "stage2_day": 19
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "A piece of wire of resistance R is cut into five equal parts. These parts are then connected in parallel. If the equivalent resistance of this combination is R′, then the ratio R/R′ is –",
+      "options": ["1/25", "1/5", "5", "25"],
+      "answer": 3,
+      "explanation": "Each part has resistance R/5; five in parallel give R′ = R/25, so R/R′ = 25.",
+      "misconception": "series_parallel_resistance_swap",
+      "source": "NCERT Ch 11 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "Which of the following terms does not represent electrical power in a circuit?",
+      "options": ["I²R", "IR²", "VI", "V²/R"],
+      "answer": 1,
+      "explanation": "Power P = VI = I²R = V²/R. IR² is not a valid power formula.",
+      "misconception": "power_energy_confusion",
+      "source": "NCERT Ch 11 Exercises Q2"
+    },
+    {
+      "num": 3,
+      "question": "An electric bulb is rated 220 V and 100 W. When it is operated on 110 V, the power consumed will be –",
+      "options": ["100 W", "75 W", "50 W", "25 W"],
+      "answer": 3,
+      "explanation": "For a fixed R, P ∝ V². Halving voltage gives (1/2)² = 1/4 power → 25 W.",
+      "misconception": "power_energy_confusion",
+      "source": "NCERT Ch 11 Exercises Q3"
+    },
+    {
+      "num": 4,
+      "question": "Two conducting wires of the same material and of equal lengths and equal diameters are first connected in series and then parallel in a circuit across the same potential difference. The ratio of heat produced in series and parallel combinations would be –",
+      "options": ["1:2", "2:1", "1:4", "4:1"],
+      "answer": 2,
+      "explanation": "H = V²t/R. Series R=2R₀, parallel R=R₀/2; H_series/H_parallel = (R₀/2)/(2R₀) = 1/4.",
+      "misconception": "series_parallel_resistance_swap",
+      "source": "NCERT Ch 11 Exercises Q4"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Section 11.2 — electric current",
+      "question": "How much work is done in moving a charge of 2 C across two points having a potential difference of 12 V?",
+      "options": ["6 J", "12 J", "24 J", "0.17 J"],
+      "answer": 2,
+      "explanation": "W = QV = 2 × 12 = 24 J.",
+      "misconception": "power_energy_confusion",
+      "source": "NCERT Ch 11 Intext"
+    },
+    {
+      "ref": "Section 11.4 — Ohm's law",
+      "question": "If potential difference across a resistor is halved and resistance stays constant, the current becomes",
+      "options": ["doubled", "halved", "unchanged", "zero"],
+      "answer": 1,
+      "explanation": "From Ohm's law I = V/R; halving V halves I.",
+      "misconception": "ohm_law_temperature_ignored",
+      "source": "NCERT Ch 11 Intext"
+    },
+    {
+      "ref": "Section 11.7 — series circuit",
+      "question": "Three resistors 2 Ω, 3 Ω and 5 Ω are connected in series to a 10 V battery. The total current is",
+      "options": ["0.5 A", "1 A", "2 A", "10 A"],
+      "answer": 1,
+      "explanation": "R_total = 10 Ω; I = 10 V / 10 Ω = 1 A.",
+      "misconception": "series_parallel_resistance_swap",
+      "source": "NCERT Ch 11 Intext"
+    },
+    {
+      "ref": "Section 11.7 — parallel circuit",
+      "question": "Two resistors 4 Ω and 12 Ω in parallel have equivalent resistance",
+      "options": ["16 Ω", "8 Ω", "3 Ω", "48 Ω"],
+      "answer": 2,
+      "explanation": "1/Rp = 1/4 + 1/12 = 1/3 → Rp = 3 Ω.",
+      "misconception": "series_parallel_resistance_swap",
+      "source": "NCERT Ch 11 Intext"
+    }
+  ]
+}
