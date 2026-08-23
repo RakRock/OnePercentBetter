@@ -1235,6 +1235,163 @@ def gss_push_state_set(key: str, value: str) -> None:
         )
 
 
+def merge_harshit_concept_progress_from_sheet(
+    user_id: int,
+    *,
+    module: str,
+    unit_id: int,
+    concept_id: str,
+    viewed: int,
+    marked_review: int,
+    simpler_requests: int,
+    example_requests: int,
+) -> None:
+    """Merge one Harshit concept row imported from Google Sheets (no sheet push)."""
+    if module not in ("physics", "chemistry"):
+        return
+    table = f"harshit_{module}_concept_status"
+    with get_connection() as conn:
+        conn.execute(
+            f"""INSERT INTO {table}
+                (user_id, unit_id, concept_id, viewed, marked_review,
+                 simpler_requests, example_requests, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+                ON CONFLICT(user_id, unit_id, concept_id) DO UPDATE SET
+                  viewed = MAX({table}.viewed, excluded.viewed),
+                  marked_review = MAX({table}.marked_review, excluded.marked_review),
+                  simpler_requests = MAX({table}.simpler_requests, excluded.simpler_requests),
+                  example_requests = MAX({table}.example_requests, excluded.example_requests),
+                  updated_at = CURRENT_TIMESTAMP""",
+            (
+                user_id,
+                unit_id,
+                concept_id,
+                int(viewed),
+                int(marked_review),
+                int(simpler_requests),
+                int(example_requests),
+            ),
+        )
+
+
+def merge_harshit_day_progress_from_sheet(
+    user_id: int,
+    *,
+    module: str,
+    unit_id: int,
+    day_id: int,
+    status: str,
+    concepts_viewed: int,
+    concepts_total: int,
+) -> None:
+    """Merge one Harshit day row imported from Google Sheets (no sheet push)."""
+    if module not in ("physics", "chemistry"):
+        return
+    table = f"harshit_{module}_day_status"
+    with get_connection() as conn:
+        conn.execute(
+            f"""INSERT INTO {table}
+                (user_id, unit_id, day_id, status, concepts_viewed, concepts_total, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+                ON CONFLICT(user_id, unit_id, day_id) DO UPDATE SET
+                  concepts_viewed = MAX({table}.concepts_viewed, excluded.concepts_viewed),
+                  concepts_total = excluded.concepts_total,
+                  status = CASE
+                    WHEN {table}.status = 'complete' OR excluded.status = 'complete' THEN 'complete'
+                    ELSE excluded.status
+                  END,
+                  updated_at = CURRENT_TIMESTAMP""",
+            (user_id, unit_id, day_id, status, int(concepts_viewed), int(concepts_total)),
+        )
+
+
+def _push_harshit_concept_progress(
+    user_id: int,
+    *,
+    module: str,
+    unit_id: int,
+    concept_id: str,
+) -> None:
+    """Best-effort Google Sheets backup for Harshit concept progress."""
+    if module not in ("physics", "chemistry"):
+        return
+    try:
+        import google_sheets_sync as gss
+
+        if not gss.cloud_sync_enabled():
+            return
+        user = get_user_by_id(user_id)
+        if not user:
+            return
+        table = f"harshit_{module}_concept_status"
+        with get_connection() as conn:
+            row = conn.execute(
+                f"""SELECT viewed, marked_review, simpler_requests, example_requests, updated_at
+                    FROM {table}
+                    WHERE user_id = ? AND unit_id = ? AND concept_id = ?""",
+                (user_id, unit_id, concept_id),
+            ).fetchone()
+        if not row:
+            return
+        gss.upsert_harshit_concept_progress(
+            user["name"],
+            user_id,
+            module,
+            unit_id,
+            concept_id,
+            viewed=int(row["viewed"]),
+            marked_review=int(row["marked_review"]),
+            simpler_requests=int(row["simpler_requests"]),
+            example_requests=int(row["example_requests"]),
+            updated_at=str(row["updated_at"] or ""),
+        )
+    except Exception:
+        pass
+
+
+def _push_harshit_day_progress(
+    user_id: int,
+    *,
+    module: str,
+    unit_id: int,
+    day_id: int,
+) -> None:
+    """Best-effort Google Sheets backup for Harshit day progress."""
+    if module not in ("physics", "chemistry"):
+        return
+    try:
+        import google_sheets_sync as gss
+
+        if not gss.cloud_sync_enabled():
+            return
+        user = get_user_by_id(user_id)
+        if not user:
+            return
+        table = f"harshit_{module}_day_status"
+        with get_connection() as conn:
+            row = conn.execute(
+                f"""SELECT status, concepts_viewed, concepts_total, updated_at
+                    FROM {table}
+                    WHERE user_id = ? AND unit_id = ? AND day_id = ?""",
+                (user_id, unit_id, day_id),
+            ).fetchone()
+        if not row:
+            return
+        gss.upsert_harshit_day_progress(
+            user["name"],
+            user_id,
+            module,
+            unit_id,
+            day_id,
+            status=str(row["status"]),
+            concepts_viewed=int(row["concepts_viewed"]),
+            concepts_total=int(row["concepts_total"]),
+            updated_at=str(row["updated_at"] or ""),
+        )
+    except Exception:
+        pass
+
+
 def _sync_id_exists(table: str, sync_id: str) -> bool:
     with get_connection() as conn:
         row = conn.execute(
@@ -1775,6 +1932,9 @@ def save_harshit_physics_concept_status(
                  updated_at = CURRENT_TIMESTAMP""",
             (user_id, unit_id, concept_id, viewed_val, review_val, simpler, examples),
         )
+    _push_harshit_concept_progress(
+        user_id, module="physics", unit_id=unit_id, concept_id=concept_id
+    )
 
 
 def get_harshit_physics_viewed_concepts(user_id: int, *, unit_id: int) -> list[str]:
@@ -1818,6 +1978,7 @@ def update_harshit_physics_day_status(
                  updated_at = CURRENT_TIMESTAMP""",
             (user_id, unit_id, day_id, status, concepts_viewed, concepts_total),
         )
+    _push_harshit_day_progress(user_id, module="physics", unit_id=unit_id, day_id=day_id)
 
 
 def get_harshit_physics_week_config(unit_id: int) -> dict:
@@ -1967,6 +2128,9 @@ def save_harshit_chemistry_concept_status(
                  updated_at = CURRENT_TIMESTAMP""",
             (user_id, unit_id, concept_id, viewed_val, review_val, simpler, examples),
         )
+    _push_harshit_concept_progress(
+        user_id, module="chemistry", unit_id=unit_id, concept_id=concept_id
+    )
 
 
 def get_harshit_chemistry_viewed_concepts(user_id: int, *, unit_id: int) -> list[str]:
@@ -2010,6 +2174,7 @@ def update_harshit_chemistry_day_status(
                  updated_at = CURRENT_TIMESTAMP""",
             (user_id, unit_id, day_id, status, concepts_viewed, concepts_total),
         )
+    _push_harshit_day_progress(user_id, module="chemistry", unit_id=unit_id, day_id=day_id)
 
 
 def get_harshit_chemistry_week_config(unit_id: int) -> dict:

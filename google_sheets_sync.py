@@ -35,6 +35,8 @@ from practice_quality.serialize import sanitize_report_for_storage
 WORKSHEET_NAME = "EdgenuityPractice"
 WEEK_PLAN_WORKSHEET = "LinearEqWeekPlan"
 HARSHIT_PREREQ_PLAN_WORKSHEET = "HarshitPreReqWeekPlan"
+HARSHIT_CONCEPT_PROGRESS_WORKSHEET = "HarshitConceptProgress"
+HARSHIT_DAY_PROGRESS_WORKSHEET = "HarshitDayProgress"
 HEADERS = [
     "session_id",
     "user_name",
@@ -52,6 +54,27 @@ HEADERS = [
 ]
 WEEK_PLAN_HEADERS = ["plan_id", "week_label", "config_json", "updated_at"]
 HARSHIT_PREREQ_PLAN_HEADERS = ["prereq_id", "week_label", "config_json", "updated_at"]
+HARSHIT_CONCEPT_PROGRESS_HEADERS = [
+    "user_name",
+    "module",
+    "unit_id",
+    "concept_id",
+    "viewed",
+    "marked_review",
+    "simpler_requests",
+    "example_requests",
+    "updated_at",
+]
+HARSHIT_DAY_PROGRESS_HEADERS = [
+    "user_name",
+    "module",
+    "unit_id",
+    "day_id",
+    "status",
+    "concepts_viewed",
+    "concepts_total",
+    "updated_at",
+]
 WEEK_PLAN_ID = "1"
 DAILY_LOGINS_WORKSHEET = "DailyLogins"
 USER_STREAKS_WORKSHEET = "UserStreaks"
@@ -694,6 +717,265 @@ def sync_harshit_prereq_plans_from_sheet() -> int:
     return applied
 
 
+def _harshit_concept_progress_worksheet():
+    import gspread
+
+    spreadsheet = _spreadsheet()
+    try:
+        return spreadsheet.worksheet(HARSHIT_CONCEPT_PROGRESS_WORKSHEET)
+    except gspread.WorksheetNotFound:
+        ws = spreadsheet.add_worksheet(
+            title=HARSHIT_CONCEPT_PROGRESS_WORKSHEET,
+            rows=2000,
+            cols=len(HARSHIT_CONCEPT_PROGRESS_HEADERS),
+        )
+        ws.append_row(HARSHIT_CONCEPT_PROGRESS_HEADERS, value_input_option="USER_ENTERED")
+        return ws
+
+
+def _harshit_day_progress_worksheet():
+    import gspread
+
+    spreadsheet = _spreadsheet()
+    try:
+        return spreadsheet.worksheet(HARSHIT_DAY_PROGRESS_WORKSHEET)
+    except gspread.WorksheetNotFound:
+        ws = spreadsheet.add_worksheet(
+            title=HARSHIT_DAY_PROGRESS_WORKSHEET,
+            rows=500,
+            cols=len(HARSHIT_DAY_PROGRESS_HEADERS),
+        )
+        ws.append_row(HARSHIT_DAY_PROGRESS_HEADERS, value_input_option="USER_ENTERED")
+        return ws
+
+
+def _harshit_concept_row_key(user_id: int, module: str, unit_id: int, concept_id: str) -> str:
+    return f"harshit_concept:{user_id}:{module}:{unit_id}:{concept_id}"
+
+
+def _harshit_day_row_key(user_id: int, module: str, unit_id: int, day_id: int) -> str:
+    return f"harshit_day:{user_id}:{module}:{unit_id}:{day_id}"
+
+
+def _find_harshit_sheet_row(
+    ws,
+    *,
+    user_name: str,
+    module: str,
+    unit_id: int,
+    key_val: str,
+) -> int | None:
+    """Return 1-based row index matching user/module/unit/key, or None."""
+    values = ws.get_all_values()
+    module = module.strip().lower()
+    unit_str = str(unit_id)
+    for idx, row in enumerate(values[1:], start=2):
+        if len(row) < 4:
+            continue
+        if (
+            row[0].strip() == user_name
+            and row[1].strip().lower() == module
+            and str(row[2]).strip() == unit_str
+            and str(row[3]).strip() == key_val
+        ):
+            return idx
+    return None
+
+
+def upsert_harshit_concept_progress(
+    user_name: str,
+    user_id: int,
+    module: str,
+    unit_id: int,
+    concept_id: str,
+    *,
+    viewed: int,
+    marked_review: int,
+    simpler_requests: int,
+    example_requests: int,
+    updated_at: str = "",
+) -> None:
+    """Upsert one Harshit concept progress row to Google Sheets."""
+    if not cloud_sync_enabled():
+        return
+    when = updated_at.strip() or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    ws = _harshit_concept_progress_worksheet()
+    _ensure_header_row(ws, HARSHIT_CONCEPT_PROGRESS_HEADERS, _HEADERS_VERIFIED)
+    row = [
+        user_name,
+        module,
+        str(unit_id),
+        concept_id,
+        str(int(viewed)),
+        str(int(marked_review)),
+        str(int(simpler_requests)),
+        str(int(example_requests)),
+        when,
+    ]
+    row_key = _harshit_concept_row_key(user_id, module, unit_id, concept_id)
+    target_idx = db.gss_push_state_get(row_key)
+    target_row = int(target_idx) if target_idx and target_idx.isdigit() else None
+    if target_row is None:
+        target_row = _find_harshit_sheet_row(
+            ws,
+            user_name=user_name,
+            module=module,
+            unit_id=unit_id,
+            key_val=concept_id,
+        )
+
+    def _write() -> None:
+        nonlocal target_row
+        ncols = len(HARSHIT_CONCEPT_PROGRESS_HEADERS)
+        col_end = chr(ord("A") + ncols - 1)
+        if target_row:
+            ws.update(range_name=f"A{target_row}:{col_end}{target_row}", values=[row])
+        else:
+            resp = ws.append_row(row, value_input_option="USER_ENTERED")
+            target_row = _appended_row_index(resp, ws)
+        db.gss_push_state_set(row_key, str(target_row))
+
+    _retry_sheets_api(_write)
+
+
+def upsert_harshit_day_progress(
+    user_name: str,
+    user_id: int,
+    module: str,
+    unit_id: int,
+    day_id: int,
+    *,
+    status: str,
+    concepts_viewed: int,
+    concepts_total: int,
+    updated_at: str = "",
+) -> None:
+    """Upsert one Harshit day progress row to Google Sheets."""
+    if not cloud_sync_enabled():
+        return
+    when = updated_at.strip() or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    ws = _harshit_day_progress_worksheet()
+    _ensure_header_row(ws, HARSHIT_DAY_PROGRESS_HEADERS, _HEADERS_VERIFIED)
+    row = [
+        user_name,
+        module,
+        str(unit_id),
+        str(day_id),
+        status,
+        str(int(concepts_viewed)),
+        str(int(concepts_total)),
+        when,
+    ]
+    row_key = _harshit_day_row_key(user_id, module, unit_id, day_id)
+    target_idx = db.gss_push_state_get(row_key)
+    target_row = int(target_idx) if target_idx and target_idx.isdigit() else None
+    if target_row is None:
+        target_row = _find_harshit_sheet_row(
+            ws,
+            user_name=user_name,
+            module=module,
+            unit_id=unit_id,
+            key_val=str(day_id),
+        )
+
+    def _write() -> None:
+        nonlocal target_row
+        ncols = len(HARSHIT_DAY_PROGRESS_HEADERS)
+        col_end = chr(ord("A") + ncols - 1)
+        if target_row:
+            ws.update(range_name=f"A{target_row}:{col_end}{target_row}", values=[row])
+        else:
+            resp = ws.append_row(row, value_input_option="USER_ENTERED")
+            target_row = _appended_row_index(resp, ws)
+        db.gss_push_state_set(row_key, str(target_row))
+
+    _retry_sheets_api(_write)
+
+
+def sync_harshit_concept_progress_from_sheet() -> int:
+    """Import Harshit Physics/Chemistry concept progress from Google Sheets."""
+    if not is_configured():
+        return 0
+    try:
+        ws = _harshit_concept_progress_worksheet()
+    except Exception:
+        return 0
+    applied = 0
+    for rec in ws.get_all_records():
+        user_name = str(rec.get("user_name", "")).strip()
+        module = str(rec.get("module", "")).strip().lower()
+        if module not in ("physics", "chemistry"):
+            continue
+        user = db.get_user(user_name) if user_name else None
+        if not user:
+            continue
+        concept_id = str(rec.get("concept_id", "")).strip()
+        if not concept_id:
+            continue
+        try:
+            unit_id = int(rec.get("unit_id", 0))
+            viewed = int(rec.get("viewed", 0) or 0)
+            marked_review = int(rec.get("marked_review", 0) or 0)
+            simpler_requests = int(rec.get("simpler_requests", 0) or 0)
+            example_requests = int(rec.get("example_requests", 0) or 0)
+        except (TypeError, ValueError):
+            continue
+        if unit_id < 1:
+            continue
+        db.merge_harshit_concept_progress_from_sheet(
+            user["id"],
+            module=module,
+            unit_id=unit_id,
+            concept_id=concept_id,
+            viewed=viewed,
+            marked_review=marked_review,
+            simpler_requests=simpler_requests,
+            example_requests=example_requests,
+        )
+        applied += 1
+    return applied
+
+
+def sync_harshit_day_progress_from_sheet() -> int:
+    """Import Harshit Physics/Chemistry day progress from Google Sheets."""
+    if not is_configured():
+        return 0
+    try:
+        ws = _harshit_day_progress_worksheet()
+    except Exception:
+        return 0
+    applied = 0
+    for rec in ws.get_all_records():
+        user_name = str(rec.get("user_name", "")).strip()
+        module = str(rec.get("module", "")).strip().lower()
+        if module not in ("physics", "chemistry"):
+            continue
+        user = db.get_user(user_name) if user_name else None
+        if not user:
+            continue
+        try:
+            unit_id = int(rec.get("unit_id", 0))
+            day_id = int(rec.get("day_id", 0))
+            concepts_viewed = int(rec.get("concepts_viewed", 0) or 0)
+            concepts_total = int(rec.get("concepts_total", 0) or 0)
+        except (TypeError, ValueError):
+            continue
+        if unit_id < 1 or day_id < 1:
+            continue
+        status = str(rec.get("status", "not_started") or "not_started").strip()
+        db.merge_harshit_day_progress_from_sheet(
+            user["id"],
+            module=module,
+            unit_id=unit_id,
+            day_id=day_id,
+            status=status,
+            concepts_viewed=concepts_viewed,
+            concepts_total=concepts_total,
+        )
+        applied += 1
+    return applied
+
+
 def sync_week_plan_from_sheet() -> bool:
     """Import weekly plan from Google Sheets into SQLite. Returns True if applied."""
     if not is_configured():
@@ -861,7 +1143,9 @@ def sync_from_sheet_to_db() -> int:
 
     sync_week_plan_from_sheet()
     sync_harshit_prereq_plans_from_sheet()
-    return imported
+    concept_rows = sync_harshit_concept_progress_from_sheet()
+    day_rows = sync_harshit_day_progress_from_sheet()
+    return imported + concept_rows + day_rows
 
 
 def persist_edgenuity_practice(

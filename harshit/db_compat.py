@@ -246,6 +246,14 @@ def _patch_subject(
                           updated_at = CURRENT_TIMESTAMP""",
                     (user_id, unit_id, concept_id, viewed_val, review_val, simpler, examples),
                 )
+            try:
+                import database as _db
+
+                _db._push_harshit_concept_progress(
+                    user_id, module=prefix, unit_id=unit_id, concept_id=concept_id
+                )
+            except Exception:
+                pass
 
         setattr(db_module, save_concept_name, save_concept_status)
 
@@ -273,6 +281,14 @@ def _patch_subject(
                           updated_at = CURRENT_TIMESTAMP""",
                     (user_id, unit_id, day_id, status, concepts_viewed, concepts_total),
                 )
+            try:
+                import database as _db
+
+                _db._push_harshit_day_progress(
+                    user_id, module=prefix, unit_id=unit_id, day_id=day_id
+                )
+            except Exception:
+                pass
 
         setattr(db_module, update_day_name, update_day_status)
 
