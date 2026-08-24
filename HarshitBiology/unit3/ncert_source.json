@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "unit_id": 3,
+    "chapter": 7,
+    "pdf": "jesc107.pdf",
+    "title": "How do Organisms Reproduce?"
+  },
+  "activities": [
+    {
+      "id": "7.1",
+      "title": "Yeast budding in sugar solution",
+      "summary": "Yeast in glucose solution produces buds visible under microscope — asexual reproduction by budding.",
+      "concept_ids": [
+        "u3_d4_c04",
+        "u3_d3_c05",
+        "u3_d3_c02"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "7.2",
+      "title": "Bread mould on wet bread",
+      "summary": "Wet bread grows mould (hyphae and spores) — compare yeast budding vs mould spore formation.",
+      "concept_ids": [
+        "u3_d4_c06",
+        "u3_d5_c03",
+        "u3_d4_c04"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "7.3",
+      "title": "Binary fission in Amoeba",
+      "summary": "Observe permanent slides of Amoeba and binary fission — unicellular asexual reproduction.",
+      "concept_ids": [
+        "u3_d3_c02",
+        "u3_d3_c03",
+        "u3_d3_c01"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "7.4",
+      "title": "Fragmentation in Spirogyra",
+      "summary": "Filamentous Spirogyra breaks into fragments that grow into new individuals.",
+      "concept_ids": [
+        "u3_d4_c01",
+        "u3_d4_c02",
+        "u3_d3_c01"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "7.5",
+      "title": "Spore formation in Rhizopus",
+      "summary": "Observe bread mould spores in sporangia — asexual reproduction by spores.",
+      "concept_ids": [
+        "u3_d5_c01",
+        "u3_d5_c02",
+        "u3_d5_c03"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "7.6",
+      "title": "Vegetative propagation in Bryophyllum",
+      "summary": "Bryophyllum plantlets on leaf margins grow into new plants — vegetative propagation.",
+      "concept_ids": [
+        "u3_d5_c04",
+        "u3_d5_c05",
+        "u3_d4_c03"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "7.7",
+      "title": "Germination of pollen on stigma",
+      "summary": "Pollen grains germinate on stigma; pollen tubes grow toward ovules.",
+      "concept_ids": [
+        "u3_d7_c05",
+        "u3_d7_c06",
+        "u3_d8_c02"
+      ],
+      "stage2_day": 20
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "Asexual reproduction takes place through budding in",
+      "options": [
+        "Amoeba",
+        "Yeast",
+        "Plasmodium",
+        "Leishmania"
+      ],
+      "answer": 1,
+      "explanation": "Yeast reproduces asexually by budding — a small outgrowth forms and separates. Amoeba uses binary fission.",
+      "misconception": "binary_budding_swap",
+      "source": "NCERT Ch 7 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "Which of the following is not a part of the female reproductive system in human beings?",
+      "options": [
+        "Ovary",
+        "Uterus",
+        "Vas deferens",
+        "Fallopian tube"
+      ],
+      "answer": 2,
+      "explanation": "Vas deferens is part of the male reproductive system — it carries sperm. Ovary, uterus, and fallopian tube are female parts.",
+      "misconception": "male_female_organ_swap",
+      "source": "NCERT Ch 7 Exercises Q2"
+    },
+    {
+      "num": 3,
+      "question": "The anther contains",
+      "options": [
+        "sepal",
+        "ovules",
+        "carpel",
+        "pollen grains"
+      ],
+      "answer": 3,
+      "explanation": "Anther is the part of stamen (male) that produces pollen grains containing male gametes.",
+      "misconception": "pollination_fertilisation_swap",
+      "source": "NCERT Ch 7 Exercises Q3"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Section 7.1 — DNA copying",
+      "question": "What is the importance of DNA copying in reproduction?",
+      "options": [
+        "DNA copying is not needed for reproduction",
+        "DNA copying ensures offspring receive complete genetic information for body design",
+        "DNA copying only happens in sexual reproduction",
+        "DNA copying prevents all variation"
+      ],
+      "answer": 1,
+      "explanation": "DNA must be copied and passed to new cells so offspring inherit instructions for body design and survival.",
+      "misconception": "dna_copying_confusion",
+      "source": "NCERT Ch 7 Intext"
+    },
+    {
+      "ref": "Section 7.1 — variation",
+      "question": "Why is variation beneficial to the species but not necessarily for the individual?",
+      "options": [
+        "Variation harms all organisms equally",
+        "Variation helps species survive environmental changes even if some individuals suffer",
+        "Variation only benefits the individual",
+        "Variation prevents reproduction"
+      ],
+      "answer": 1,
+      "explanation": "Variations create diversity so some individuals may survive if conditions change — benefits species survival.",
+      "misconception": "dna_copying_confusion",
+      "source": "NCERT Ch 7 Intext"
+    },
+    {
+      "ref": "Section 7.2 — fission",
+      "question": "How does binary fission differ from multiple fission?",
+      "options": [
+        "Binary fission produces many cells; multiple fission produces two",
+        "Binary fission splits into two; multiple fission produces many daughter cells at once",
+        "Both are sexual reproduction methods",
+        "Multiple fission occurs only in plants"
+      ],
+      "answer": 1,
+      "explanation": "Binary fission: one cell → two (Amoeba). Multiple fission: one cell → many (Plasmodium).",
+      "misconception": "binary_budding_swap",
+      "source": "NCERT Ch 7 Intext"
+    },
+    {
+      "ref": "Section 7.3 — pollination",
+      "question": "How is the process of pollination different from fertilisation?",
+      "options": [
+        "They are the same process",
+        "Pollination is transfer of pollen to stigma; fertilisation is fusion of gametes",
+        "Fertilisation happens before pollination always",
+        "Pollination occurs only in animals"
+      ],
+      "answer": 1,
+      "explanation": "Pollination moves pollen to stigma; fertilisation fuses male and female gametes inside the ovule.",
+      "misconception": "pollination_fertilisation_swap",
+      "source": "NCERT Ch 7 Intext"
+    },
+    {
+      "ref": "Section 7.3 — puberty",
+      "question": "What are the changes seen in girls at the time of puberty?",
+      "options": [
+        "No visible changes occur",
+        "Breast development, menstruation begins, wider hips",
+        "Only height increases with no other changes",
+        "Voice becomes deeper like boys"
+      ],
+      "answer": 1,
+      "explanation": "Puberty in girls includes breast development, onset of menstrual cycle, and wider hips — driven by oestrogen.",
+      "misconception": "male_female_organ_swap",
+      "source": "NCERT Ch 7 Intext"
+    },
+    {
+      "ref": "Section 7.2 — spores",
+      "question": "How will an organism be benefited if it reproduces through spores?",
+      "options": [
+        "Spores require two parents",
+        "Spores are lightweight, easily dispersed, and survive harsh conditions",
+        "Spores cannot survive without water",
+        "Spores always produce identical offspring with no variation"
+      ],
+      "answer": 1,
+      "explanation": "Spores have thick walls, are light and easily spread by air/water, and survive unfavourable conditions.",
+      "misconception": "asexual_sexual_swap",
+      "source": "NCERT Ch 7 Intext"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "unit_id": 4,
+    "chapter": 8,
+    "pdf": "jesc108.pdf",
+    "title": "Heredity"
+  },
+  "activities": [
+    {
+      "id": "8.1",
+      "title": "Variation in asexual population",
+      "summary": "Compare trait frequency in asexual population — trait present in 60% likely arose earlier than trait in 10%.",
+      "concept_ids": [
+        "u4_d2_c01",
+        "u4_d2_c02",
+        "u4_d1_c03"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "8.2",
+      "title": "Mendel's monohybrid cross",
+      "summary": "Cross tall and short pea plants — F1 all tall, F2 shows 3:1 ratio proving dominant and recessive traits.",
+      "concept_ids": [
+        "u4_d4_c02",
+        "u4_d5_c01",
+        "u4_d5_c03"
+      ],
+      "stage2_day": 18
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "A Mendelian experiment consisted of breeding tall pea plants bearing violet flowers with short pea plants bearing white flowers. The progeny all bore violet flowers, but almost half of them were short. This suggests that the genetic make-up of the tall parent can be depicted as",
+      "options": [
+        "TTWW",
+        "TTww",
+        "TtWW",
+        "TtWw"
+      ],
+      "answer": 2,
+      "explanation": "All flowers violet → at least one W allele from tall parent. Half progeny short → tall parent is Tt (heterozygous). Tall parent genotype: TtWW.",
+      "misconception": "dominant_recessive_swap",
+      "source": "NCERT Ch 8 Exercises Q1"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Section 8.1 — variation in asexual species",
+      "question": "If a trait A exists in 10% of a population of an asexually reproducing species and a trait B exists in 60% of the same population, which trait is likely to have arisen earlier?",
+      "options": [
+        "Trait A, because it is rarer",
+        "Trait B, because higher frequency suggests it arose earlier and spread",
+        "Both arose at the same time",
+        "Cannot be determined without DNA testing"
+      ],
+      "answer": 1,
+      "explanation": "In asexual reproduction, fewer variations arise. A trait present in more individuals (60%) likely appeared earlier and has been copied more times.",
+      "misconception": "variation_inheritance_swap",
+      "source": "NCERT Ch 8 Intext"
+    },
+    {
+      "ref": "Section 8.1 — variation and survival",
+      "question": "How does the creation of variations in a species promote survival?",
+      "options": [
+        "Variations make all individuals identical",
+        "Variations ensure some individuals may survive if environment changes",
+        "Variations prevent reproduction",
+        "Variations only harm the species"
+      ],
+      "answer": 1,
+      "explanation": "Variation creates diversity so if conditions change, some variants may survive while others may not — species continues.",
+      "misconception": "variation_inheritance_swap",
+      "source": "NCERT Ch 8 Intext"
+    },
+    {
+      "ref": "Section 8.2 — dominant and recessive",
+      "question": "How do Mendel's experiments show that traits may be dominant or recessive?",
+      "options": [
+        "F1 showed both traits equally",
+        "F1 showed only dominant trait; recessive reappeared in F2 in 3:1 ratio",
+        "Recessive trait always appears in F1",
+        "Dominant and recessive traits blend in F1"
+      ],
+      "answer": 1,
+      "explanation": "Mendel crossed pure tall (TT) with pure short (tt) — F1 all tall (dominant). F2 had 3 tall : 1 short — recessive reappeared.",
+      "misconception": "dominant_recessive_swap",
+      "source": "NCERT Ch 8 Intext"
+    },
+    {
+      "ref": "Section 8.2 — independent inheritance",
+      "question": "How do Mendel's experiments show that traits are inherited independently?",
+      "options": [
+        "All traits are always linked together",
+        "Dihybrid cross produced new combinations (tall-wrinkled, short-round) in 9:3:3:1 ratio",
+        "Only one trait can be inherited at a time",
+        "F1 always matches one parent exactly"
+      ],
+      "answer": 1,
+      "explanation": "Dihybrid cross of seed shape and colour produced four phenotypes including new combinations — traits assort independently.",
+      "misconception": "monohybrid_dihybrid_swap",
+      "source": "NCERT Ch 8 Intext"
+    },
+    {
+      "ref": "Section 8.2 — sex determination",
+      "question": "How is the sex of the child determined in human beings?",
+      "options": [
+        "Mother decides sex by producing X or Y eggs",
+        "Father determines sex — X sperm → girl (XX), Y sperm → boy (XY)",
+        "Sex is determined by diet during pregnancy",
+        "Both parents contribute Y chromosome equally"
+      ],
+      "answer": 1,
+      "explanation": "Mother always gives X chromosome. Father gives X (girl) or Y (boy). Sex determined by father's sperm.",
+      "misconception": "sex_determination_confusion",
+      "source": "NCERT Ch 8 Intext"
+    },
+    {
+      "ref": "Section 8.2 — blood groups",
+      "question": "A man with blood group A marries a woman with blood group O and their daughter has blood group O. Can we determine which blood group is dominant?",
+      "options": [
+        "Yes, O is definitely dominant",
+        "Yes, A is definitely dominant",
+        "No — father could be AO heterozygote, so data is insufficient",
+        "Yes, AB is dominant over both"
+      ],
+      "answer": 2,
+      "explanation": "A can be AA or AO. If father is AO and mother OO, child can be O. Need more data to determine dominance.",
+      "misconception": "dominant_recessive_swap",
+      "source": "NCERT Ch 8 Intext"
+    },
+    {
+      "ref": "Section 8.2 — genotype vs phenotype",
+      "question": "A tall pea plant could have genotype TT or Tt. What term describes this visible tallness?",
+      "options": [
+        "Genotype",
+        "Phenotype",
+        "Variation",
+        "Mutation"
+      ],
+      "answer": 1,
+      "explanation": "Phenotype is the observable trait (tall). Genotype is the genetic makeup (TT or Tt).",
+      "misconception": "genotype_phenotype_swap",
+      "source": "NCERT Ch 8 Intext"
+    }
+  ]
+}

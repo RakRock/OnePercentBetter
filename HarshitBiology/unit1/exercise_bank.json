@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "active": true,
+    "stage": 3,
+    "range": "Exercises Q5–Q13",
+    "note": "Exam-style written questions. Chapter 5 has 4 MCQs (Stage 2) and 9 long-form exercises here.",
+    "chapter": "NCERT Class 10 Science Ch 5",
+    "pdf": "jesc105.pdf",
+    "unit_id": 1
+  },
+  "questions": [
+    {
+      "id": "u1_ex_q05",
+      "num": 5,
+      "type": "explain",
+      "marks": 3,
+      "question": "How are fats digested in our bodies? Where does this process take place?",
+      "hints": [
+        "Bile emulsifies fats — no enzyme in bile.",
+        "Lipase breaks emulsified fats into fatty acids and glycerol.",
+        "Main site: small intestine with pancreatic and intestinal juices."
+      ],
+      "model_answer": "Fats are **emulsified** by bile from the liver (stored in gall bladder), breaking large fat globules into smaller droplets.\n\n**Lipase** from pancreatic juice and intestinal juice then digests fats into **fatty acids and glycerol** in the **small intestine**, where absorption also occurs via lacteals in villi.",
+      "marking_points": [
+        "Bile emulsifies fats (not enzymatic)",
+        "Lipase digests to fatty acids and glycerol",
+        "Process occurs in small intestine"
+      ],
+      "common_mistakes": [
+        "Saying bile digests fats enzymatically",
+        "Locating fat digestion only in stomach"
+      ],
+      "concept_ids": [
+        "u1_d6_c09",
+        "u1_d7_c01",
+        "u1_d7_c03"
+      ],
+      "misconception": "autotroph_heterotroph_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 5 Exercises Q5"
+    },
+    {
+      "id": "u1_ex_q06",
+      "num": 6,
+      "type": "explain",
+      "marks": 3,
+      "question": "What is the role of saliva in the digestion of food?",
+      "hints": [
+        "Saliva moistens food for swallowing.",
+        "Contains salivary amylase (ptyalin).",
+        "Starch → maltose in mouth."
+      ],
+      "model_answer": "Saliva **moistens** food and helps form a bolus for swallowing.\n\nIt contains **salivary amylase (ptyalin)** which begins **chemical digestion of starch into maltose** in the mouth. Saliva also lubricates food and contains lysozyme that kills some bacteria.",
+      "marking_points": [
+        "Moistens and lubricates food",
+        "Salivary amylase digests starch to maltose",
+        "Occurs in buccal cavity"
+      ],
+      "common_mistakes": [
+        "Saying complete starch digestion occurs in mouth",
+        "Omitting mechanical role of moistening"
+      ],
+      "concept_ids": [
+        "u1_d6_c03",
+        "u1_d6_c02",
+        "u1_d5_c04"
+      ],
+      "misconception": "autotroph_heterotroph_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 5 Exercises Q6"
+    },
+    {
+      "id": "u1_ex_q07",
+      "num": 7,
+      "type": "compare",
+      "marks": 4,
+      "question": "What are the necessary conditions for autotrophic nutrition and what are its byproducts?",
+      "hints": [
+        "Raw materials: CO₂, water, sunlight, chlorophyll.",
+        "Products: glucose (stored as starch) and O₂.",
+        "Occurs in chloroplasts of green parts."
+      ],
+      "model_answer": "**Conditions:** sunlight, chlorophyll, carbon dioxide, water, and suitable temperature.\n\n**Process:** photosynthesis in chloroplasts.\n\n**Products:** glucose (food; excess stored as starch) and **oxygen** released as byproduct.\n\nOverall: **6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂** (in presence of light and chlorophyll).",
+      "marking_points": [
+        "Lists conditions (light, chlorophyll, CO₂, water)",
+        "States glucose/starch as food product",
+        "States O₂ as byproduct",
+        "Mentions chloroplast/green parts as site"
+      ],
+      "common_mistakes": [
+        "Listing only CO₂ and water without light/chlorophyll",
+        "Confusing products with reactants"
+      ],
+      "concept_ids": [
+        "u1_d3_c01",
+        "u1_d3_c02",
+        "u1_d3_c07"
+      ],
+      "misconception": "photosynthesis_respiration_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 5 Exercises Q7"
+    },
+    {
+      "id": "u1_ex_q08",
+      "num": 8,
+      "type": "explain",
+      "marks": 3,
+      "question": "What are the differences between aerobic and anaerobic respiration? Name some organisms that use the anaerobic mode of respiration.",
+      "hints": [
+        "Compare O₂ requirement, products, ATP yield, location.",
+        "Yeast, some bacteria, muscle cells during sprint.",
+        "Aerobic: mitochondria; anaerobic: cytoplasm."
+      ],
+      "model_answer": "**Aerobic respiration:** uses oxygen; complete breakdown of glucose to CO₂ and H₂O; more ATP; occurs in **mitochondria**.\n\n**Anaerobic respiration:** no oxygen; partial breakdown; less ATP; in **cytoplasm** (e.g. yeast → ethanol + CO₂; muscles → lactic acid).\n\n**Organisms:** yeast, certain bacteria, and human muscle cells during intense exercise.",
+      "marking_points": [
+        "At least two valid differences (O₂, products, ATP, location)",
+        "Names anaerobic organisms/examples",
+        "Correct products for yeast and muscle"
+      ],
+      "common_mistakes": [
+        "Saying anaerobic respiration produces CO₂ and H₂O in muscles",
+        "Swapping aerobic and anaerobic locations"
+      ],
+      "concept_ids": [
+        "u1_d10_c04",
+        "u1_d9_c03",
+        "u1_d10_c01"
+      ],
+      "misconception": "aerobic_anaerobic_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 5 Exercises Q8"
+    },
+    {
+      "id": "u1_ex_q09",
+      "num": 9,
+      "type": "diagram_explain",
+      "marks": 5,
+      "question": "How are the alveoli designed to maximise the exchange of gases?",
+      "hints": [
+        "Millions of alveoli = huge surface area.",
+        "Walls are one cell thick (thin).",
+        "Moist lining; dense capillary network."
+      ],
+      "model_answer": "Alveoli maximise gas exchange by:\n\n1. **Enormous surface area** — millions of tiny sacs in each lung.\n2. **Thin walls** (single layer of epithelial cells) so diffusion distance is minimal.\n3. **Moist surface** so gases dissolve before diffusing.\n4. **Rich blood capillary network** maintaining steep concentration gradient for O₂ and CO₂.",
+      "marking_points": [
+        "Large surface area from numerous alveoli",
+        "Thin alveolar and capillary walls",
+        "Moist lining for gas dissolution",
+        "Dense capillaries maintain gradient"
+      ],
+      "common_mistakes": [
+        "Confusing alveoli with nephron structure",
+        "Saying active transport moves O₂ in alveoli"
+      ],
+      "concept_ids": [
+        "u1_d9_c06",
+        "u1_d9_c07",
+        "u1_d9_c05"
+      ],
+      "misconception": "alveoli_nephron_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 5 Exercises Q9"
+    },
+    {
+      "id": "u1_ex_q10",
+      "num": 10,
+      "type": "compare",
+      "marks": 4,
+      "question": "What would be the consequences of a deficiency of haemoglobin in our bodies?",
+      "hints": [
+        "Haemoglobin carries O₂ in RBCs.",
+        "Less O₂ delivery → less aerobic respiration.",
+        "Symptoms: fatigue, anaemia."
+      ],
+      "model_answer": "Haemoglobin in red blood cells binds and transports oxygen.\n\n**Deficiency** means less oxygen carried to tissues → reduced **aerobic respiration** and ATP production → **fatigue**, weakness, shortness of breath (**anaemia**).\n\nCells cannot meet energy demands for growth, repair, and muscle activity efficiently.",
+      "marking_points": [
+        "States haemoglobin role in O₂ transport",
+        "Links to reduced aerobic respiration/ATP",
+        "Mentions fatigue/anaemia or similar consequences"
+      ],
+      "common_mistakes": [
+        "Confusing haemoglobin with plasma function",
+        "Saying CO₂ cannot be transported"
+      ],
+      "concept_ids": [
+        "u1_d9_c08",
+        "u1_d13_c04",
+        "u1_d13_c03"
+      ],
+      "misconception": "aerobic_anaerobic_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 5 Exercises Q10"
+    },
+    {
+      "id": "u1_ex_q11",
+      "num": 11,
+      "type": "describe",
+      "marks": 5,
+      "question": "Describe double circulation in human beings. Why is it necessary?",
+      "hints": [
+        "Blood passes through heart twice per circuit.",
+        "Pulmonary: heart → lungs → heart. Systemic: heart → body → heart.",
+        "Separates low-pressure lung circuit from high-pressure body circuit."
+      ],
+      "model_answer": "**Double circulation:** blood passes through the heart **twice** for one complete trip around the body.\n\n1. **Pulmonary circulation:** right ventricle → lungs (gas exchange) → left atrium.\n2. **Systemic circulation:** left ventricle → body tissues → right atrium.\n\n**Necessary** because it keeps oxygenated and deoxygenated blood largely separate and allows **high pressure** delivery to body while protecting delicate lung capillaries from high pressure.",
+      "marking_points": [
+        "Defines double circulation (heart twice)",
+        "Describes pulmonary and systemic loops",
+        "Explains why necessary (pressure/separation)"
+      ],
+      "common_mistakes": [
+        "Mixing up which ventricle pumps to lungs vs body",
+        "Saying single circulation is enough for humans"
+      ],
+      "concept_ids": [
+        "u1_d14_c02",
+        "u1_d14_c03",
+        "u1_d13_c10"
+      ],
+      "misconception": "alveoli_nephron_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 5 Exercises Q11"
+    },
+    {
+      "id": "u1_ex_q12",
+      "num": 12,
+      "type": "diagram_explain",
+      "marks": 5,
+      "question": "What are the methods adopted by the plants to get rid of excretory products?",
+      "hints": [
+        "Gaseous wastes via stomata.",
+        "Stored in vacuoles, bark, fallen leaves.",
+        "Resins, gums, tannins as waste products."
+      ],
+      "model_answer": "Plants remove excretory products by:\n\n1. **Gaseous wastes** — O₂ (photosynthesis), CO₂ (respiration), water vapour via **stomata**.\n2. **Stored wastes** in **cell vacuoles** or dead tissues (bark, old xylem).\n3. **Shedding leaves** containing waste materials.\n4. **Secretion** of wastes as resins, gums, latex, or tannins.",
+      "marking_points": [
+        "Gaseous removal through stomata",
+        "Storage in vacuoles/bark/leaves",
+        "Shedding leaves or secreting resins/gums"
+      ],
+      "common_mistakes": [
+        "Saying plants excrete urea like kidneys",
+        "Omitting storage and leaf fall"
+      ],
+      "concept_ids": [
+        "u1_d15_c03",
+        "u1_d15_c04",
+        "u1_d15_c02"
+      ],
+      "misconception": "alveoli_nephron_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 5 Exercises Q12"
+    },
+    {
+      "id": "u1_ex_q13",
+      "num": 13,
+      "type": "diagram_explain",
+      "marks": 5,
+      "question": "Describe the structure and functioning of nephrons.",
+      "hints": [
+        "Parts: glomerulus, Bowman's capsule, tubule, collecting duct.",
+        "Filtration in glomerulus; reabsorption in tubule.",
+        "Urine to collecting duct → ureter."
+      ],
+      "model_answer": "**Structure:** Each nephron has **Bowman's capsule** enclosing **glomerulus** (capillary knot), followed by proximal tubule, loop of Henle, distal tubule, and **collecting duct**.\n\n**Function:** Blood is **filtered** under pressure in glomerulus into capsule. Useful substances (glucose, water, salts) are **reabsorbed** into blood from tubule. Remaining fluid is **urine** passed to collecting duct and ureter.",
+      "marking_points": [
+        "Names key nephron parts",
+        "Filtration in glomerulus described",
+        "Reabsorption and urine formation explained"
+      ],
+      "common_mistakes": [
+        "Confusing nephron with alveolus",
+        "Saying proteins are filtered into urine normally"
+      ],
+      "concept_ids": [
+        "u1_d16_c01",
+        "u1_d16_c03",
+        "u1_d16_c05"
+      ],
+      "misconception": "alveoli_nephron_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 5 Exercises Q13"
+    }
+  ]
+}

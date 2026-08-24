@@ -1,0 +1,2674 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 1,
+    "unit_title": "Life Processes",
+    "ncert": "Class 10 Science, Chapter 5 (Biology)",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_biology_unit1_concepts",
+    "session_kind_mcq": "harshit_biology_unit1_mcq"
+  },
+  "glossary": [
+    {
+      "term": "life processes",
+      "definition": "Basic functions like nutrition, respiration, transport, and excretion that maintain life."
+    },
+    {
+      "term": "nutrition",
+      "definition": "Process of obtaining and using food for growth, repair, and energy."
+    },
+    {
+      "term": "photosynthesis",
+      "definition": "Synthesis of food in green plants using CO₂, water, and sunlight."
+    },
+    {
+      "term": "autotrophic nutrition",
+      "definition": "Organism makes its own food from inorganic substances."
+    },
+    {
+      "term": "heterotrophic nutrition",
+      "definition": "Organism depends on ready-made organic food from other organisms."
+    },
+    {
+      "term": "respiration",
+      "definition": "Release of energy from food inside cells, often using oxygen."
+    },
+    {
+      "term": "aerobic respiration",
+      "definition": "Respiration using oxygen; complete breakdown of glucose in mitochondria."
+    },
+    {
+      "term": "anaerobic respiration",
+      "definition": "Respiration without oxygen; partial breakdown with less ATP."
+    },
+    {
+      "term": "xylem",
+      "definition": "Vascular tissue transporting water and minerals upward in plants."
+    },
+    {
+      "term": "phloem",
+      "definition": "Vascular tissue transporting food (sucrose) in plants."
+    },
+    {
+      "term": "excretion",
+      "definition": "Removal of harmful metabolic wastes from the body."
+    },
+    {
+      "term": "nephron",
+      "definition": "Structural and functional unit of the kidney that filters blood and forms urine."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "Life Processes — Introduction",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d1_c01",
+          "name": "What are life processes?",
+          "simple_answer": "Life processes are the basic functions performed by living organisms to maintain life — nutrition, respiration, transport, excretion, and more.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Life processes overview"
+          },
+          "why": "NCERT Ch 5 opens with maintenance of life.",
+          "example": "Even when not growing, your body still needs energy and repair.",
+          "remember": "Living things must carry out life processes continuously.",
+          "common_confusion": "Being alive is not just about moving — plants also perform life processes.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "life processes"
+          ]
+        },
+        {
+          "id": "u1_d1_c02",
+          "name": "Why maintenance is needed",
+          "simple_answer": "Living organisms need maintenance even when not growing because body cells are constantly being damaged and need repair.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Maintenance of living structures"
+          },
+          "why": "Explains why life processes never stop.",
+          "example": "Skin cells replace themselves; muscles need ATP daily.",
+          "remember": "Maintenance needs energy from outside or from food.",
+          "common_confusion": "Sleeping does not mean life processes stop.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c03",
+          "name": "Molecular movement and life",
+          "simple_answer": "All living organisms need to move molecules across their body for life processes — even plants without visible movement.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Molecular movement"
+          },
+          "why": "Bridge from diffusion to transport systems.",
+          "example": "O₂ must reach every cell; CO₂ must leave.",
+          "remember": "Life needs controlled movement of substances.",
+          "common_confusion": "Plants don't move but still transport water and food.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c04",
+          "name": "Diffusion — definition",
+          "simple_answer": "Diffusion is the movement of molecules from a region of higher concentration to lower concentration until evenly spread.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "High concentration → Low concentration",
+            "note": "Passive movement"
+          },
+          "why": "Simplest transport mechanism in Ch 5.",
+          "example": "Perfume spreading in a room.",
+          "remember": "No energy needed for simple diffusion.",
+          "common_confusion": "Diffusion works only over very short distances.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "diffusion"
+          ]
+        },
+        {
+          "id": "u1_d1_c05",
+          "name": "Diffusion in unicellular organisms",
+          "simple_answer": "In unicellular organisms, the entire surface is in direct contact with the environment — diffusion alone is enough.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Unicellular — diffusion enough"
+          },
+          "why": "Contrast with multicellular need for transport.",
+          "example": "Amoeba absorbs food and O₂ by diffusion through cell surface.",
+          "remember": "Small size + large surface area → diffusion works.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c06",
+          "name": "Diffusion insufficient in multicellular organisms",
+          "simple_answer": "In large multicellular organisms most cells are not in direct contact with the environment — diffusion alone is too slow.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Multicellular — diffusion not enough"
+          },
+          "why": "NCERT exercise Q5 theme.",
+          "example": "Your innermost cells cannot get O₂ by diffusion from skin.",
+          "remember": "Special transport systems are needed in large bodies.",
+          "common_confusion": "Diffusion still works at cell level after delivery.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c07",
+          "name": "What makes something alive?",
+          "simple_answer": "We decide something is alive if it shows molecular movement needed for repair and maintenance — not just visible movement.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Criteria for being alive"
+          },
+          "why": "NCERT criteria discussion.",
+          "example": "A seed is alive though it looks inactive; it respires slowly.",
+          "remember": "Visible movement alone is not enough to prove life.",
+          "common_confusion": "Viruses are debated — they need a host to reproduce.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c08",
+          "name": "Outside raw materials",
+          "simple_answer": "Living organisms take in raw materials from outside: carbon-based food/CO₂, water, and inorganic salts.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Outside raw materials"
+          },
+          "why": "NCERT lists three categories.",
+          "example": "Plants: CO₂ + water + minerals. Animals: food + water + salts.",
+          "remember": "Carbon sources, water, and minerals from environment.",
+          "common_confusion": "Autotrophs build food; heterotrophs eat ready-made food.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c09",
+          "name": "Energy for life processes",
+          "simple_answer": "Outside materials are used to build body structure and to provide energy for life processes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Energy for maintenance"
+          },
+          "why": "Links nutrition to all other processes.",
+          "example": "Glucose from food powers muscle contraction and nerve signals.",
+          "remember": "Food → energy + building blocks.",
+          "common_confusion": "Energy is stored in chemical bonds of food molecules.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d1_c10",
+          "name": "Chapter 5 roadmap",
+          "simple_answer": "Ch 5 covers nutrition, respiration, transport, and excretion in plants and humans.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 5 roadmap — 16 days"
+          },
+          "why": "Orient learner to unit plan.",
+          "example": "Activities 5.1–5.8 support each section.",
+          "remember": "Nutrition → respiration → transport → excretion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Nutrition — Modes and Overview",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d2_c01",
+          "name": "Nutrition — definition",
+          "simple_answer": "Nutrition is the process of obtaining and using food for growth, repair, and energy.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Nutrition defined"
+          },
+          "why": "First major life process in Ch 5.",
+          "example": "Eating breakfast provides glucose for the school day.",
+          "remember": "Nutrition = taking in + using food.",
+          "common_confusion": "Nutrition is not the same as digestion alone.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "nutrition"
+          ]
+        },
+        {
+          "id": "u1_d2_c02",
+          "name": "Autotrophic nutrition",
+          "simple_answer": "Autotrophic nutrition: organism makes its own food from simple inorganic substances like CO₂ and water.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "CO₂ + H₂O → food (glucose) + O₂",
+            "note": "Autotrophs — self-feeders"
+          },
+          "why": "Green plants are autotrophs.",
+          "example": "Plants use sunlight to build starch.",
+          "remember": "Make food from inorganic raw materials.",
+          "common_confusion": "Autotrophs are producers in food chains.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "autotrophic nutrition"
+          ]
+        },
+        {
+          "id": "u1_d2_c03",
+          "name": "Heterotrophic nutrition",
+          "simple_answer": "Heterotrophic nutrition: organism depends on ready-made organic food from other organisms.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Heterotrophs — other-feeders"
+          },
+          "why": "Animals, fungi, most bacteria.",
+          "example": "Humans eat plants and animals; cannot make glucose from CO₂.",
+          "remember": "Obtain food made by others.",
+          "common_confusion": "All animals are heterotrophs.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "heterotrophic nutrition"
+          ]
+        },
+        {
+          "id": "u1_d2_c04",
+          "name": "Saprotrophic nutrition",
+          "simple_answer": "Saprotrophic nutrition: organisms feed on dead and decaying organic matter (e.g. fungi).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Saprotrophs — decomposers"
+          },
+          "why": "Subtype of heterotrophic.",
+          "example": "Mushrooms on rotting logs.",
+          "remember": "Decompose dead material; recycle nutrients.",
+          "common_confusion": "Saprotrophs secrete enzymes outside then absorb.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c05",
+          "name": "Parasitic nutrition",
+          "simple_answer": "Parasitic nutrition: organism lives on or in a host and derives food at host's expense.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Parasites"
+          },
+          "why": "Another heterotrophic mode.",
+          "example": "Tapeworm in intestine absorbs digested food.",
+          "remember": "Parasite benefits; host is harmed.",
+          "common_confusion": "Not all parasites kill the host immediately.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c06",
+          "name": "Holozoic nutrition",
+          "simple_answer": "Holozoic nutrition: complex food is ingested and then digested inside the body.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Holozoic — ingest then digest"
+          },
+          "why": "Human mode of nutrition.",
+          "example": "Amoeba engulfs food; humans chew and swallow.",
+          "remember": "Ingest → digest → absorb → egest.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c07",
+          "name": "Modes of nutrition summary",
+          "simple_answer": "Main modes: autotrophic (plants) and heterotrophic (animals, fungi) with subtypes saprotrophic, parasitic, holozoic.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Nutrition modes summary"
+          },
+          "why": "Classification for exams.",
+          "example": "Compare amoeba (holozoic) vs mushroom (saprotrophic).",
+          "remember": "Know definition + one example each.",
+          "common_confusion": "Autotrophic vs heterotrophic is the primary split.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c08",
+          "name": "Enzymes in nutrition",
+          "simple_answer": "Enzymes are biological catalysts that speed up breakdown of complex food into absorbable simple molecules.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Enzymes — biological catalysts"
+          },
+          "why": "Links to digestion section.",
+          "example": "Amylase breaks starch to sugar in saliva.",
+          "remember": "Enzymes work at body temperature; are specific.",
+          "common_confusion": "Enzymes are not used up in the reaction.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "enzyme"
+          ]
+        },
+        {
+          "id": "u1_d2_c09",
+          "name": "Nutrition in green plants — overview",
+          "simple_answer": "Green plants are autotrophs: leaves trap light; roots absorb water and minerals.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plant nutrition overview"
+          },
+          "why": "Leads to photosynthesis days.",
+          "example": "Leaf = food factory; root = water and mineral uptake.",
+          "remember": "Photosynthesis in leaves; absorption by roots.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d2_c10",
+          "name": "Nutrition in animals — overview",
+          "simple_answer": "Animals are heterotrophs: ingest food, digest it, absorb nutrients, and remove undigested waste.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Animal nutrition overview"
+          },
+          "why": "Leads to human digestive system.",
+          "example": "Human alimentary canal is about 9 metres long.",
+          "remember": "Ingestion → digestion → absorption → egestion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Autotrophic Nutrition and Photosynthesis",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d3_c01",
+          "name": "Photosynthesis — definition",
+          "simple_answer": "Photosynthesis is the process by which green plants synthesise food (glucose) using CO₂, water, and sunlight.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂",
+            "note": "Chlorophyll + sunlight"
+          },
+          "why": "Core autotrophic process.",
+          "example": "Leaves produce O₂ we breathe.",
+          "remember": "Plants make food; release oxygen.",
+          "common_confusion": "Photosynthesis occurs only in green parts with chlorophyll.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "photosynthesis"
+          ]
+        },
+        {
+          "id": "u1_d3_c02",
+          "name": "Raw materials for photosynthesis",
+          "simple_answer": "Plants need CO₂ from air (through stomata), water from soil (through roots), and sunlight.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Photosynthesis raw materials"
+          },
+          "why": "Three inputs for the equation.",
+          "example": "Stomata take in CO₂; xylem brings water to leaf.",
+          "remember": "CO₂ + H₂O + light → glucose + O₂.",
+          "common_confusion": "Minerals from soil are needed for chlorophyll but not in the main equation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c03",
+          "name": "Chlorophyll role",
+          "simple_answer": "Chlorophyll in chloroplasts traps solar energy needed to convert CO₂ and water into glucose.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Chlorophyll traps light"
+          },
+          "why": "Why leaves are green.",
+          "example": "Without chlorophyll, photosynthesis cannot occur.",
+          "remember": "Green pigment in chloroplasts absorbs light.",
+          "common_confusion": "Other pigments exist but chlorophyll is primary.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "chlorophyll"
+          ]
+        },
+        {
+          "id": "u1_d3_c04",
+          "name": "Chloroplast location",
+          "simple_answer": "Photosynthesis occurs mainly in mesophyll cells of leaves where chloroplasts are abundant.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Chloroplasts in leaf cells"
+          },
+          "why": "Anatomy link.",
+          "example": "Upper and lower mesophyll packed with chloroplasts.",
+          "remember": "Leaf is the main photosynthetic organ.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c05",
+          "name": "Stomata and gas exchange",
+          "simple_answer": "Stomata are tiny pores on leaf surface; they allow CO₂ intake and O₂ release during photosynthesis.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Stomata — gas exchange"
+          },
+          "why": "Leads to Activity 5.3.",
+          "example": "Guard cells control stomatal opening.",
+          "remember": "CO₂ in for photosynthesis; O₂ out.",
+          "common_confusion": "Stomata also lose water vapour (transpiration).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "stomata"
+          ]
+        },
+        {
+          "id": "u1_d3_c06",
+          "name": "Guard cells",
+          "simple_answer": "Two kidney-shaped guard cells surround each stoma and control its opening and closing.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Guard cells control stomata"
+          },
+          "why": "Mechanism for gas/water balance.",
+          "example": "Stomata open in light; often close in drought.",
+          "remember": "Guard cells swell to open stomata.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c07",
+          "name": "Products of photosynthesis",
+          "simple_answer": "Glucose is produced first; excess is stored as starch in leaves, stems, and roots.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Glucose → starch storage"
+          },
+          "why": "Links to Activity 5.2 starch test.",
+          "example": "Potato stores starch in underground stem.",
+          "remember": "Immediate product: glucose; storage form: starch.",
+          "common_confusion": "Starch test uses iodine — blue-black colour.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c08",
+          "name": "Activity 5.2 — starch test in leaf",
+          "simple_answer": "Boil leaf in water, then alcohol, add iodine — green leaf turns blue-black showing starch from photosynthesis.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 5.2 — starch test"
+          },
+          "why": "NCERT lab proof of photosynthesis.",
+          "example": "Variegated leaf: only green parts turn blue-black.",
+          "remember": "Starch present where chlorophyll and light were available.",
+          "common_confusion": "Heat leaf in water first to kill cells and soften.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c09",
+          "name": "Conditions for photosynthesis",
+          "simple_answer": "Photosynthesis needs light, chlorophyll, CO₂, and suitable temperature.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Conditions for photosynthesis"
+          },
+          "why": "Experiment design skill.",
+          "example": "Plant in dark fails starch test — no photosynthesis.",
+          "remember": "Remove any one factor → rate drops or stops.",
+          "common_confusion": "Light-dependent and light-independent stages (detail optional).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d3_c10",
+          "name": "Significance of photosynthesis",
+          "simple_answer": "Photosynthesis provides food for nearly all life and releases O₂ into the atmosphere.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Why photosynthesis matters"
+          },
+          "why": "Big-picture importance.",
+          "example": "All food chains start with autotrophs.",
+          "remember": "Ultimate source of energy for most ecosystems.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Photosynthesis — Details and Stomata",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u1_d4_c01",
+          "name": "Site of photosynthesis",
+          "simple_answer": "Photosynthesis occurs in the green parts of plants, especially leaves.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Site — green parts of plant"
+          },
+          "why": "Exam favourite.",
+          "example": "Non-green stems with chlorophyll also photosynthesise.",
+          "remember": "Leaves are primary site.",
+          "common_confusion": "Roots do not photosynthesise — no chlorophyll, no light.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c02",
+          "name": "Light reaction (overview)",
+          "simple_answer": "Light energy splits water; O₂ is released; energy stored temporarily in molecules.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Light-dependent stage"
+          },
+          "why": "Simplified NCERT level.",
+          "example": "O₂ bubbles from aquatic plants in bright light.",
+          "remember": "Needs light; happens in grana of chloroplast.",
+          "common_confusion": "Detailed biochemistry beyond Class 10 scope.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c03",
+          "name": "Dark reaction (overview)",
+          "simple_answer": "CO₂ is fixed into glucose using energy from light reaction — does not require light directly.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Light-independent stage"
+          },
+          "why": "Completes photosynthesis picture.",
+          "example": "Calvin cycle idea at textbook level.",
+          "remember": "Can proceed in dark if products of light stage available.",
+          "common_confusion": "Called 'dark' because it doesn't need light directly.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c04",
+          "name": "Factors affecting photosynthesis",
+          "simple_answer": "Rate depends on light intensity, CO₂ concentration, temperature, and chlorophyll amount.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Factors affecting rate"
+          },
+          "why": "Graph interpretation skill.",
+          "example": "Greenhouse farmers enrich CO₂ to boost yield.",
+          "remember": "Limiting factor: the factor in shortest supply caps rate.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c05",
+          "name": "Nutrition in non-green plants",
+          "simple_answer": "Some plants lack chlorophyll (e.g. Cuscuta) and are parasitic — heterotrophic nutrition.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Parasitic plants — Cuscuta"
+          },
+          "why": "Exception to autotrophic rule.",
+          "example": "Amarbel (Cuscuta) wraps around host plant.",
+          "remember": "Not all plants are autotrophs.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c06",
+          "name": "Insectivorous plants",
+          "simple_answer": "Plants like pitcher plant supplement minerals by trapping insects — still autotrophic for energy.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Insectivorous plants"
+          },
+          "why": "NCERT example.",
+          "example": "Pitcher plant digests insect for nitrogen.",
+          "remember": "Photosynthesise but catch insects for soil-poor habitats.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c07",
+          "name": "Activity 5.3 — stomata observation",
+          "simple_answer": "Peel lower epidermis of leaf, stain with safranin, observe stomata under microscope.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 5.3 — stomata peel"
+          },
+          "why": "Microscopy skill.",
+          "example": "See guard cells and stomatal pore.",
+          "remember": "Lower epidermis peel shows stomata clearly.",
+          "common_confusion": "Safranin stains nuclei pink.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c08",
+          "name": "Gas exchange day and night",
+          "simple_answer": "Day: photosynthesis dominates — CO₂ in, O₂ out. Night: only respiration — O₂ in, CO₂ out.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day vs night gas exchange"
+          },
+          "why": "Common exam comparison.",
+          "example": "Net O₂ release only when photosynthesis > respiration.",
+          "remember": "Both processes occur in plants; balance shifts.",
+          "common_confusion": "Do not say plants don't respire.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c09",
+          "name": "Replenish atmosphere O₂",
+          "simple_answer": "Photosynthesis by green plants continuously replenishes atmospheric oxygen.",
+          "visual": {
+            "type": "placeholder",
+            "label": "O₂ replenishment"
+          },
+          "why": "Environmental significance.",
+          "example": "Amazon and all forests contribute O₂ globally.",
+          "remember": "Photosynthesis counterbalances respiration and combustion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d4_c10",
+          "name": "Photosynthesis vs nutrition",
+          "simple_answer": "Photosynthesis is the specific autotrophic process; nutrition is the broader obtaining and use of food.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Photosynthesis within nutrition"
+          },
+          "why": "Terminology precision.",
+          "example": "Photosynthesis makes food; nutrition includes using it.",
+          "remember": "Photosynthesis ⊂ autotrophic nutrition.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Heterotrophic Nutrition",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d5_c01",
+          "name": "Heterotrophic nutrition — recap",
+          "simple_answer": "Organisms that cannot make their own food ingest complex organic matter and break it down.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Heterotrophic recap"
+          },
+          "why": "Start animal nutrition section.",
+          "example": "Cow (herbivore), lion (carnivore), human (omnivore).",
+          "remember": "All depend on autotrophs directly or indirectly.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c02",
+          "name": "Steps in holozoic nutrition",
+          "simple_answer": "Ingestion → digestion → absorption → assimilation → egestion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Five steps — holozoic"
+          },
+          "why": "Process sequence for exams.",
+          "example": "Undigested food leaves as faeces (egestion).",
+          "remember": "Memorise order of five steps.",
+          "common_confusion": "Absorption is into blood; assimilation is use by cells.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c03",
+          "name": "Ingestion",
+          "simple_answer": "Ingestion is taking food into the body through the mouth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ingestion — taking food in"
+          },
+          "why": "First step in humans.",
+          "example": "Biting and chewing apple pieces.",
+          "remember": "Mouth is start of alimentary canal.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c04",
+          "name": "Digestion — definition",
+          "simple_answer": "Digestion breaks complex insoluble food into simple soluble molecules using enzymes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Digestion defined"
+          },
+          "why": "Core process before absorption.",
+          "example": "Starch → maltose → glucose.",
+          "remember": "Large molecules → small absorbable units.",
+          "common_confusion": "Physical digestion (chewing) + chemical (enzymes).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "digestion"
+          ]
+        },
+        {
+          "id": "u1_d5_c05",
+          "name": "Absorption",
+          "simple_answer": "Absorption is uptake of digested food from intestine into blood.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Absorption into blood"
+          },
+          "why": "After digestion in gut.",
+          "example": "Glucose and amino acids enter blood capillaries.",
+          "remember": "Mainly in small intestine.",
+          "common_confusion": "Villi increase surface area for absorption.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c06",
+          "name": "Assimilation",
+          "simple_answer": "Assimilation is using absorbed nutrients for energy, growth, and repair.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Assimilation — using food"
+          },
+          "why": "After absorption.",
+          "example": "Glucose oxidised in cells for ATP.",
+          "remember": "Food becomes part of body or fuel.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c07",
+          "name": "Egestion",
+          "simple_answer": "Egestion removes undigested food as faeces — not the same as excretion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Egestion vs excretion"
+          },
+          "why": "Important distinction.",
+          "example": "Fibre leaves body via anus.",
+          "remember": "Egestion = undigested food out; excretion = metabolic waste.",
+          "common_confusion": "Faeces are not metabolic wastes.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c08",
+          "name": "Single-chambered vs multi-chambered stomach",
+          "simple_answer": "Ruminants (cow) have four-chambered stomach; humans have one stomach.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ruminant digestion"
+          },
+          "why": "NCERT comparison.",
+          "example": "Cow regurgitates cud for re-chewing.",
+          "remember": "Cellulose digestion needs symbiotic bacteria in ruminants.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c09",
+          "name": "Amoeba nutrition",
+          "simple_answer": "Amoeba extends pseudopodia around food, forms food vacuole, digests with enzymes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Amoeba — holozoic in water"
+          },
+          "why": "Unicellular heterotroph example.",
+          "example": "Food vacuole fuses with lysosomes.",
+          "remember": "No alimentary canal — intracellular digestion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d5_c10",
+          "name": "Paramoecium nutrition",
+          "simple_answer": "Paramoecium has oral groove and gullet leading to food vacuole for digestion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Paramoecium feeding"
+          },
+          "why": "Second unicellular example.",
+          "example": "Cilia sweep food into oral groove.",
+          "remember": "Specialised structures for feeding in one cell.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Human Digestion — Upper Tract",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d6_c01",
+          "name": "Human digestive system overview",
+          "simple_answer": "Alimentary canal plus associated glands form the human digestive system.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Alimentary canal overview"
+          },
+          "why": "Map for Days 6–7.",
+          "example": "Mouth → oesophagus → stomach → intestine → anus.",
+          "remember": "Also: salivary glands, liver, pancreas.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c02",
+          "name": "Mouth and buccal cavity",
+          "simple_answer": "Teeth mechanically break food; tongue mixes and tastes; saliva begins chemical digestion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mouth — mechanical + chemical start"
+          },
+          "why": "First organ.",
+          "example": "Chewing increases surface area for enzymes.",
+          "remember": "Incisors cut, canines tear, molars grind.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c03",
+          "name": "Saliva and salivary amylase",
+          "simple_answer": "Saliva moistens food and contains amylase (ptyalin) that starts starch digestion to maltose.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Starch → Maltose",
+            "note": "Salivary amylase — pH ~ neutral"
+          },
+          "why": "Enzyme in mouth.",
+          "example": "Bread tastes sweet if chewed long — maltose forms.",
+          "remember": "Starch digestion begins in mouth.",
+          "common_confusion": "Amylase inactive in strong acid of stomach.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c04",
+          "name": "Oesophagus (food pipe)",
+          "simple_answer": "Peristaltic movements push food from mouth to stomach through the oesophagus.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Oesophagus — peristalsis"
+          },
+          "why": "No digestion in oesophagus.",
+          "example": "You can swallow upside down — peristalsis works.",
+          "remember": "Muscular wave moves bolus downward.",
+          "common_confusion": "Peristalsis is involuntary muscle contraction.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "peristalsis"
+          ]
+        },
+        {
+          "id": "u1_d6_c05",
+          "name": "Stomach structure",
+          "simple_answer": "Stomach is a muscular bag; gastric glands secrete HCl, mucus, and pepsin.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Stomach — gastric juices"
+          },
+          "why": "Protein digestion starts here.",
+          "example": "HCl kills bacteria and gives acid pH for pepsin.",
+          "remember": "Churning mixes food with gastric juice.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c06",
+          "name": "Pepsin action",
+          "simple_answer": "Pepsin breaks proteins into peptides in acidic medium of stomach.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Proteins → Peptides",
+            "note": "Pepsin — acidic pH"
+          },
+          "why": "First protein-digesting enzyme.",
+          "example": "Inactive pepsinogen activated by HCl.",
+          "remember": "Protein digestion begins in stomach.",
+          "common_confusion": "Pepsin works only in acid — not in mouth.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c07",
+          "name": "Mucus in stomach",
+          "simple_answer": "Mucus protects stomach lining from being digested by its own acid and pepsin.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mucus protects stomach wall"
+          },
+          "why": "Why stomach doesn't self-digest.",
+          "example": "Ulcers may occur if mucus layer damaged.",
+          "remember": "Self-protection is essential.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c08",
+          "name": "Small intestine — main digestion site",
+          "simple_answer": "Complete digestion of carbohydrates, proteins, and fats occurs in small intestine.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Small intestine — main digestion"
+          },
+          "why": "Longest part of canal (~7.5 m).",
+          "example": "Receives bile and pancreatic juice.",
+          "remember": "Most absorption also happens here.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c09",
+          "name": "Liver and bile",
+          "simple_answer": "Liver makes bile stored in gall bladder; bile emulsifies fats (no enzyme).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Bile emulsifies fats"
+          },
+          "why": "Fat digestion aid.",
+          "example": "Bile breaks large fat globules into smaller droplets.",
+          "remember": "Emulsification increases lipase efficiency.",
+          "common_confusion": "Bile is alkaline — neutralises stomach acid.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d6_c10",
+          "name": "Pancreatic juice",
+          "simple_answer": "Pancreas secretes trypsin (proteins), lipase (fats), and pancreatic amylase (starch).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Trypsin | Lipase | Amylase",
+            "note": "Pancreatic enzymes"
+          },
+          "why": "Major enzyme source.",
+          "example": "Juice released into duodenum.",
+          "remember": "Completes digestion started elsewhere.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Human Digestion — Absorption",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d7_c01",
+          "name": "Intestinal juice (succus entericus)",
+          "simple_answer": "Intestinal glands secrete enzymes completing digestion of all major food types.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Intestinal juice"
+          },
+          "why": "Final chemical digestion.",
+          "example": "Maltase converts maltose to glucose.",
+          "remember": "Carbohydrates → glucose; proteins → amino acids; fats → fatty acids + glycerol.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c02",
+          "name": "Villi and microvilli",
+          "simple_answer": "Inner wall of small intestine has finger-like villi with microvilli to absorb digested food.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Villi increase surface area"
+          },
+          "why": "Adaptation for absorption.",
+          "example": "Each villus has blood capillaries and lacteal.",
+          "remember": "Huge surface area in folded wall.",
+          "common_confusion": "Lacteal absorbs fatty acids and glycerol.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "villi"
+          ]
+        },
+        {
+          "id": "u1_d7_c03",
+          "name": "Absorption in small intestine",
+          "simple_answer": "Glucose and amino acids enter blood; fatty acids enter lacteals of lymph system.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Absorption routes"
+          },
+          "why": "Transport after digestion.",
+          "example": "Blood carries sugars and amino acids to liver.",
+          "remember": "Villi → capillaries → hepatic portal vein.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c04",
+          "name": "Large intestine role",
+          "simple_answer": "Large intestine absorbs water and minerals; forms and stores faeces.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Large intestine — water absorption"
+          },
+          "why": "Last part of canal.",
+          "example": "Diarrhoea if water not reabsorbed properly.",
+          "remember": "Colon hosts helpful bacteria.",
+          "common_confusion": "No significant digestion in large intestine.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c05",
+          "name": "Rectum and anus",
+          "simple_answer": "Faeces stored in rectum and eliminated through anus — egestion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Egestion pathway"
+          },
+          "why": "End of alimentary canal.",
+          "example": "Defecation is egestion, not excretion.",
+          "remember": "Anus is exit for undigested residue.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c06",
+          "name": "Digestive enzymes summary",
+          "simple_answer": "Amylase (starch), pepsin/trypsin (proteins), lipase (fats) — know source and product.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Amylase | Pepsin | Trypsin | Lipase",
+            "note": "Match enzyme to substrate"
+          },
+          "why": "Exam table question.",
+          "example": "Draw table: enzyme, source, substrate, product.",
+          "remember": "Memorise four key enzymes.",
+          "common_confusion": "One enzyme generally acts on one substrate type.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c07",
+          "name": "pH and enzyme action",
+          "simple_answer": "Salivary amylase needs neutral pH; pepsin needs acid; intestinal enzymes need alkaline pH.",
+          "visual": {
+            "type": "placeholder",
+            "label": "pH matches enzyme site"
+          },
+          "why": "Why digestion is sequential.",
+          "example": "Bicarbonate in pancreatic juice neutralises acid.",
+          "remember": "Each enzyme works best at specific pH.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c08",
+          "name": "Dental hygiene",
+          "simple_answer": "Brushing removes food particles; prevents acid from bacteria decaying teeth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Dental care"
+          },
+          "why": "Health link in NCERT.",
+          "example": "Saliva washes teeth; bacteria cause cavities.",
+          "remember": "Prevention is part of nutrition health.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c09",
+          "name": "Disorders — indigestion",
+          "simple_answer": "Indigestion from inadequate enzyme action or overeating; antacids neutralise excess acid.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Indigestion and antacids"
+          },
+          "why": "Everyday application.",
+          "example": "Antacids raise pH in stomach.",
+          "remember": "Lifestyle affects digestion efficiency.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d7_c10",
+          "name": "Human digestion summary",
+          "simple_answer": "Mouth (starch start) → stomach (protein start) → small intestine (complete digestion + absorption).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Digestion pathway summary"
+          },
+          "why": "Day 6–7 consolidation.",
+          "example": "Trace one bite of bread to glucose in blood.",
+          "remember": "Know organ order and main function each.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Respiration — Introduction",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u1_d8_c01",
+          "name": "Respiration — definition",
+          "simple_answer": "Respiration is the process of releasing energy from food (glucose) inside cells.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Food + O₂ → Energy + CO₂ + H₂O",
+            "note": "Cellular respiration"
+          },
+          "why": "Second major life process.",
+          "example": "ATP powers muscle contraction.",
+          "remember": "Not the same as breathing — breathing is ventilation.",
+          "common_confusion": "Breathing ≠ respiration.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "respiration"
+          ]
+        },
+        {
+          "id": "u1_d8_c02",
+          "name": "Why respiration is essential",
+          "simple_answer": "Energy from respiration drives synthesis, transport, movement, and maintenance.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Energy for all life processes"
+          },
+          "why": "Links to Day 1 maintenance.",
+          "example": "Nerve impulses need ATP constantly.",
+          "remember": "Without respiration, cells cannot function.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c03",
+          "name": "Breathing vs respiration",
+          "simple_answer": "Breathing ( ventilation) is inhaling/exhaling air; respiration is biochemical breakdown of glucose in cells.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Breathing vs respiration"
+          },
+          "why": "Critical distinction.",
+          "example": "Lungs move air; mitochondria release energy.",
+          "remember": "Breathing provides O₂ for cellular respiration.",
+          "common_confusion": "Students often conflate the two terms.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c04",
+          "name": "Glucose as fuel",
+          "simple_answer": "Glucose (C₆H₁₂O₆) is the common substrate broken down in respiration to release energy.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP",
+            "note": "Aerobic summary"
+          },
+          "why": "Central molecule.",
+          "example": "From digested carbohydrates.",
+          "remember": "Fats and proteins can also be respired.",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c05",
+          "name": "ATP — energy currency",
+          "simple_answer": "ATP (adenosine triphosphate) stores and transfers energy for cellular work.",
+          "visual": {
+            "type": "placeholder",
+            "label": "ATP — energy currency"
+          },
+          "why": "Product used by cell.",
+          "example": "Muscle uses ATP for contraction.",
+          "remember": "Energy released when ATP → ADP + Pi.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": [
+            "ATP"
+          ]
+        },
+        {
+          "id": "u1_d8_c06",
+          "name": "Aerobic respiration — definition",
+          "simple_answer": "Aerobic respiration uses oxygen and completely breaks glucose into CO₂, water, and much ATP.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Aerobic — with oxygen"
+          },
+          "why": "Most efficient pathway.",
+          "example": "Occurs in mitochondria of cells.",
+          "remember": "Maximum energy from one glucose molecule.",
+          "common_confusion": "Needs continuous O₂ supply.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "aerobic respiration"
+          ]
+        },
+        {
+          "id": "u1_d8_c07",
+          "name": "Anaerobic respiration — definition",
+          "simple_answer": "Anaerobic respiration breaks glucose without oxygen, producing less energy and different products.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Anaerobic — without oxygen"
+          },
+          "why": "Used when O₂ limited.",
+          "example": "Yeast: ethanol + CO₂. Muscles: lactic acid.",
+          "remember": "Less ATP than aerobic pathway.",
+          "common_confusion": "Also called fermentation in yeast.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "anaerobic respiration"
+          ]
+        },
+        {
+          "id": "u1_d8_c08",
+          "name": "Respiration in plants",
+          "simple_answer": "Plant cells respire all the time in mitochondria — roots, stems, leaves, flowers.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plants respire too"
+          },
+          "why": "Correct plant misconception.",
+          "example": "Germinating seeds respire vigorously.",
+          "remember": "Photosynthesis and respiration both occur in plants.",
+          "common_confusion": "Plants do not 'only photosynthesise'.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c09",
+          "name": "Gas exchange in plants",
+          "simple_answer": "Plants exchange O₂ and CO₂ through stomata and lenticels; roots also need O₂ in soil air spaces.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plant gas exchange"
+          },
+          "why": "Transport link preview.",
+          "example": "Waterlogged soil kills roots — no O₂ for respiration.",
+          "remember": "Stomata for leaves; lenticels for woody stems.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d8_c10",
+          "name": "Respiration chapter map",
+          "simple_answer": "Aerobic in mitochondria; anaerobic in cytoplasm (and yeast); compare energy yield next days.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Respiration roadmap"
+          },
+          "why": "Days 8–10 structure.",
+          "example": "Activity 5.1 demonstrates yeast anaerobic respiration.",
+          "remember": "Cytoplasm → partial breakdown; mitochondria → complete.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "Aerobic Respiration and Gas Exchange",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d9_c01",
+          "name": "Aerobic respiration steps (overview)",
+          "simple_answer": "Glycolysis in cytoplasm → pyruvate enters mitochondria → complete oxidation to CO₂ and H₂O.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Aerobic pathway overview"
+          },
+          "why": "Simplified NCERT pathway.",
+          "example": "Pyruvate breakdown needs O₂ in mitochondria.",
+          "remember": "Two stages: cytoplasm then mitochondria.",
+          "common_confusion": "Krebs cycle detail optional for Class 10.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c02",
+          "name": "Glycolysis",
+          "simple_answer": "One glucose molecule splits into two pyruvate molecules in cytoplasm, releasing small amount of ATP.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Glucose → 2 Pyruvate + ATP",
+            "note": "Glycolysis in cytoplasm"
+          },
+          "why": "First step all respiration types.",
+          "example": "Does not require oxygen directly.",
+          "remember": "Common to aerobic and anaerobic paths.",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c03",
+          "name": "Mitochondria — powerhouse",
+          "simple_answer": "Mitochondria are organelles where pyruvate is fully oxidised in presence of O₂ to release maximum ATP.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mitochondria — aerobic site"
+          },
+          "why": "NCERT exercise Q4 answer.",
+          "example": "Muscle cells have many mitochondria.",
+          "remember": "Pyruvate + O₂ → CO₂ + H₂O + ATP in mitochondria.",
+          "common_confusion": "More mitochondria = more aerobic capacity.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "mitochondria"
+          ]
+        },
+        {
+          "id": "u1_d9_c04",
+          "name": "Products of aerobic respiration",
+          "simple_answer": "CO₂, water, and about 38 ATP molecules (theoretical max) per glucose.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP",
+            "note": "Complete oxidation"
+          },
+          "why": "Compare with anaerobic later.",
+          "example": "CO₂ leaves body via lungs.",
+          "remember": "Most efficient energy release.",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c05",
+          "name": "Respiration in humans — overview",
+          "simple_answer": "O₂ inhaled → diffuses into blood → carried to cells → used in mitochondria; CO₂ reverse path.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Human respiration gas route"
+          },
+          "why": "Links breathing to cellular level.",
+          "example": "Haemoglobin carries O₂ in RBCs.",
+          "remember": "Lungs exchange gases; cells respire.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c06",
+          "name": "Alveoli structure",
+          "simple_answer": "Alveoli are tiny air sacs in lungs with thin moist walls and rich blood capillaries for gas exchange.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Alveoli — gas exchange"
+          },
+          "why": "NCERT exercise Q11 theme.",
+          "example": "Millions of alveoli = huge surface area.",
+          "remember": "Thin wall + moisture + capillaries = efficient diffusion.",
+          "common_confusion": "Do not confuse alveoli with nephron.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "alveoli"
+          ]
+        },
+        {
+          "id": "u1_d9_c07",
+          "name": "Diffusion in alveoli",
+          "simple_answer": "O₂ diffuses from alveolar air into blood; CO₂ diffuses from blood into alveoli to be exhaled.",
+          "visual": {
+            "type": "placeholder",
+            "label": "O₂ in, CO₂ out at alveoli"
+          },
+          "why": "Gas exchange mechanism.",
+          "example": "Steep concentration gradient maintained by blood flow.",
+          "remember": "Passive diffusion across thin epithelium.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c08",
+          "name": "Haemoglobin and O₂ transport",
+          "simple_answer": "Haemoglobin in red blood cells binds O₂ in lungs and releases it in tissues.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Haemoglobin carries O₂"
+          },
+          "why": "Blood transport role.",
+          "example": "Oxyhaemoglobin forms in lungs.",
+          "remember": "Iron in haemoglobin binds O₂ reversibly.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c09",
+          "name": "Activity 5.1 — yeast and sugar",
+          "simple_answer": "Yeast in sugar solution produces CO₂ bubbles — anaerobic respiration (fermentation).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 5.1 — yeast fermentation"
+          },
+          "why": "Lab evidence for anaerobic path.",
+          "example": "Balloon on flask inflates with CO₂.",
+          "remember": "Yeast: glucose → ethanol + CO₂ + energy.",
+          "common_confusion": "Same activity shows gas evolution sign of life.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d9_c10",
+          "name": "Comparing energy yield",
+          "simple_answer": "Aerobic respiration releases far more ATP per glucose than anaerobic fermentation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Aerobic vs anaerobic energy"
+          },
+          "why": "Why O₂ is vital for active animals.",
+          "example": "Sprinters feel burn — temporary anaerobic in muscles.",
+          "remember": "Aerobic is preferred when O₂ available.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "Anaerobic Respiration",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d10_c01",
+          "name": "Anaerobic in yeast",
+          "simple_answer": "Yeast ferments glucose to ethanol, CO₂, and limited ATP — used in bread and brewing.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Glucose → Ethanol + CO₂ + ATP",
+            "note": "Alcoholic fermentation"
+          },
+          "why": "Activity 5.1 equation.",
+          "example": "Bread rises from CO₂ bubbles in dough.",
+          "remember": "Anaerobic in yeast — industry application.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c02",
+          "name": "Anaerobic in muscle cells",
+          "simple_answer": "During intense exercise, muscles respire anaerobically producing lactic acid and less ATP.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Glucose → Lactic acid + ATP",
+            "note": "Muscle fatigue"
+          },
+          "why": "Sports physiology link.",
+          "example": "Cramp and fatigue from lactic acid accumulation.",
+          "remember": "Temporary when O₂ delivery lags demand.",
+          "common_confusion": "Oxygen debt repaid after exercise.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c03",
+          "name": "Oxygen debt",
+          "simple_answer": "After vigorous exercise, extra O₂ needed to oxidise accumulated lactic acid — breathing stays heavy.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Oxygen debt / recovery"
+          },
+          "why": "Post-exercise panting explained.",
+          "example": "Deep breathing clears lactic acid.",
+          "remember": "Repaying oxygen debt restores pH.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c04",
+          "name": "Aerobic vs anaerobic — table",
+          "simple_answer": "Aerobic: needs O₂, CO₂ + H₂O products, more ATP, in mitochondria. Anaerobic: no O₂, partial products, less ATP, cytoplasm.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Aerobic vs anaerobic table"
+          },
+          "why": "NCERT exercise Q10 style.",
+          "example": "Fill table for location, O₂, products, ATP.",
+          "remember": "Know at least two differences each.",
+          "common_confusion": "Photosynthesis is not respiration reversed in location.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c05",
+          "name": "When anaerobic is used",
+          "simple_answer": "Anaerobic pathways when O₂ supply insufficient — yeast in sealed flask, sprinting muscles.",
+          "visual": {
+            "type": "placeholder",
+            "label": "When anaerobic occurs"
+          },
+          "why": "Context for each example.",
+          "example": "Root cells in waterlogged soil may switch.",
+          "remember": "Survival pathway, not primary for humans.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c06",
+          "name": "Respiration vs photosynthesis",
+          "simple_answer": "Respiration breaks glucose for energy in all living cells; photosynthesis makes glucose in green plants using light.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Respiration vs photosynthesis"
+          },
+          "why": "Major swap misconception.",
+          "example": "Both involve gas exchange but opposite roles overall in plants.",
+          "remember": "Respiration: all cells. Photosynthesis: chloroplasts only.",
+          "common_confusion": "Do not swap equations or locations.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c07",
+          "name": "Balancing photosynthesis and respiration",
+          "simple_answer": "Plants produce O₂ by photosynthesis and use O₂ in respiration — net gas exchange varies.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Net gas exchange in plants"
+          },
+          "why": "Day vs night balance.",
+          "example": "Young plant in light releases net O₂.",
+          "remember": "Both processes run in green plants.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c08",
+          "name": "Respiration in germinating seeds",
+          "simple_answer": "Seeds respire actively during germination even before green shoots appear.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Germinating seeds respire"
+          },
+          "why": "Proof seeds are alive.",
+          "example": "Warm flask with seeds — heat from respiration.",
+          "remember": "No photosynthesis until chlorophyll forms.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c09",
+          "name": "Commercial fermentation",
+          "simple_answer": "Anaerobic yeast respiration used for bread, beer, wine, and bioethanol production.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Fermentation industry"
+          },
+          "why": "Application section.",
+          "example": "CO₂ raises dough; ethanol in beverages.",
+          "remember": "Biotechnology uses controlled fermentation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d10_c10",
+          "name": "Respiration summary",
+          "simple_answer": "All living cells respire; aerobic in mitochondria is main path; anaerobic when O₂ limited.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Respiration unit summary"
+          },
+          "why": "End of respiration block.",
+          "example": "Link breathing → blood → cell → mitochondria.",
+          "remember": "Draw full pathway for exam revision.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "Transport in Plants — Xylem",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d11_c01",
+          "name": "Transport in plants — why needed",
+          "simple_answer": "Plants need transport to move water, minerals, and food between roots, stem, and leaves.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Why plants need transport"
+          },
+          "why": "Third life process block.",
+          "example": "Tall trees move water 50+ metres up.",
+          "remember": "Roots absorb; leaves photosynthesise — connection needed.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c02",
+          "name": "Xylem — definition",
+          "simple_answer": "Xylem transports water and dissolved minerals from roots upward to all plant parts.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Xylem — water and minerals"
+          },
+          "why": "NCERT exercise Q2 theme.",
+          "example": "Dead hollow cells form continuous tubes.",
+          "remember": "One-way upward flow mainly.",
+          "common_confusion": "Xylem carries water — not food.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "xylem"
+          ]
+        },
+        {
+          "id": "u1_d11_c03",
+          "name": "Phloem — definition",
+          "simple_answer": "Phloem transports food (sucrose) from leaves to storage organs and growing parts.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Phloem — food transport"
+          },
+          "why": "Pair with xylem.",
+          "example": "Bark contains phloem; peeling ring kills tree.",
+          "remember": "Bidirectional food movement.",
+          "common_confusion": "Do not swap xylem and phloem functions.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "phloem"
+          ]
+        },
+        {
+          "id": "u1_d11_c04",
+          "name": "Root hair cells",
+          "simple_answer": "Root hairs increase surface area to absorb water and minerals from soil by osmosis and active uptake.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Root hairs — absorption"
+          },
+          "why": "Start of xylem pathway.",
+          "example": "Millions of root hairs near tip.",
+          "remember": "Large surface area in small zone.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c05",
+          "name": "Path of water in plant",
+          "simple_answer": "Soil water → root hair → xylem → stem → leaves → evaporates from stomata.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Water pathway in plant"
+          },
+          "why": "Continuous column idea.",
+          "example": "Activity 5.4 shows coloured water in xylem.",
+          "remember": "Transpiration pull draws water up.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c06",
+          "name": "Transpiration",
+          "simple_answer": "Transpiration is loss of water vapour from aerial parts of plant, mainly through stomata.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Transpiration — water loss"
+          },
+          "why": "Drives xylem flow.",
+          "example": "Wilting on hot dry day.",
+          "remember": "Creates suction pulling water upward.",
+          "common_confusion": "Transpiration cools leaf surface.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "transpiration"
+          ]
+        },
+        {
+          "id": "u1_d11_c07",
+          "name": "Transpiration pull",
+          "simple_answer": "Evaporation from leaves creates tension that pulls water column up through xylem.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Transpiration pull mechanism"
+          },
+          "why": "Cohesion-tension at NCERT level.",
+          "example": "Like sucking drink through straw.",
+          "remember": "No energy spent by plant to lift water — passive pull.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c08",
+          "name": "Activity 5.4 — xylem dye experiment",
+          "simple_answer": "Place plant stem in eosin/coloured water; cut sections show dye in xylem vessels.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 5.4 — xylem staining"
+          },
+          "why": "Visual proof of xylem path.",
+          "example": "Red streaks in stem cross-section.",
+          "remember": "Dye follows water pathway in xylem.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c09",
+          "name": "Activity 5.5 — transpiration bag",
+          "simple_answer": "Plastic bag on leaf shows water droplets inside — proof of transpiration.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 5.5 — transpiration proof"
+          },
+          "why": "Simple school experiment.",
+          "example": "Bag mists up over hours in sun.",
+          "remember": "Water vapour from leaf condenses.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d11_c10",
+          "name": "Xylem tissue structure",
+          "simple_answer": "Xylem has vessels and tracheids — thick lignified walls, no cytoplasm in mature cells.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Xylem vessel structure"
+          },
+          "why": "Adaptation for water pipe.",
+          "example": "Lignin strengthens against suction.",
+          "remember": "Dead cells form hollow tubes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Transport in Plants — Phloem",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u1_d12_c01",
+          "name": "Phloem tissue structure",
+          "simple_answer": "Phloem has sieve tubes and companion cells; living cells transport dissolved sugars.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Phloem sieve tubes"
+          },
+          "why": "Contrast dead xylem.",
+          "example": "Companion cells help load sugar.",
+          "remember": "Sieve plates allow flow between cells.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c02",
+          "name": "Translocation",
+          "simple_answer": "Translocation is movement of food (sucrose) through phloem from source to sink.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Translocation in phloem"
+          },
+          "why": "Official term for food transport.",
+          "example": "Leaves (source) → roots/t fruits (sink).",
+          "remember": "Uses ATP at source loading.",
+          "common_confusion": "Bidirectional — up or down as needed.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "translocation"
+          ]
+        },
+        {
+          "id": "u1_d12_c03",
+          "name": "Source and sink",
+          "simple_answer": "Source is where food is made/stored for export; sink is where food is used or stored.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Source → sink"
+          },
+          "why": "Phloem direction logic.",
+          "example": "Leaf in summer = source; growing root = sink.",
+          "remember": "Direction reverses seasonally in some plants.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c04",
+          "name": "Ringing experiment",
+          "simple_answer": "Removing phloem ring around trunk causes swelling above cut — food cannot pass down.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ringing experiment"
+          },
+          "why": "Classic phloem proof.",
+          "example": "Tree may die if bark ring removed completely.",
+          "remember": "Proves phloem is in bark.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c05",
+          "name": "Xylem vs phloem summary",
+          "simple_answer": "Xylem: water + minerals, upward, dead cells. Phloem: food, bidirectional, living sieve tubes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Xylem vs phloem table"
+          },
+          "why": "High-frequency exam table.",
+          "example": "Never swap contents or direction.",
+          "remember": "Both are vascular tissues in plants.",
+          "common_confusion": "Xylem/phloem swap is top misconception.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c06",
+          "name": "Transport in aquatic plants",
+          "simple_answer": "Some aquatic plants have reduced xylem support; still need gas and nutrient transport.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Aquatic plant transport"
+          },
+          "why": "Variation note.",
+          "example": "Hydrilla releases O₂ bubbles in water.",
+          "remember": "Adaptations match habitat.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c07",
+          "name": "Mineral uptake",
+          "simple_answer": "Minerals enter root hairs by active transport against concentration gradient — needs energy.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Active mineral uptake"
+          },
+          "why": "Not passive like some water entry.",
+          "example": "Nitrates for proteins; magnesium for chlorophyll.",
+          "remember": "Active transport uses ATP from respiration.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c08",
+          "name": "Wilting and recovery",
+          "simple_answer": "Excess transpiration without water uptake causes wilting; watering restores turgor.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Wilting explained"
+          },
+          "why": "Everyday plant observation.",
+          "example": "Hot afternoon wilting; evening recovery.",
+          "remember": "Turgor pressure supports herbaceous plants.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c09",
+          "name": "Guard cells and transpiration",
+          "simple_answer": "Open stomata allow CO₂ for photosynthesis but increase transpiration water loss.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Stomata trade-off"
+          },
+          "why": "Balance gas gain vs water loss.",
+          "example": "Desert plants have sunken stomata.",
+          "remember": "Plants regulate stomatal opening.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d12_c10",
+          "name": "Plant transport summary",
+          "simple_answer": "Xylem + transpiration pull for water up; phloem + translocation for food to all parts.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plant transport summary"
+          },
+          "why": "Days 11–12 consolidation.",
+          "example": "Draw whole plant with both pathways labelled.",
+          "remember": "Activities 5.4 and 5.5 support xylem/transpiration.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Transport in Animals — Blood",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d13_c01",
+          "name": "Transport in animals — need",
+          "simple_answer": "Animals need circulatory system to deliver O₂, food, hormones and remove wastes from all cells.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Why animals need blood"
+          },
+          "why": "Fourth process subsection.",
+          "example": "Human has ~5 litres blood circulating.",
+          "remember": "Diffusion alone fails beyond tiny thickness.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c02",
+          "name": "Blood — components",
+          "simple_answer": "Blood has plasma (liquid) and formed elements: RBCs, WBCs, and platelets.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Blood components"
+          },
+          "why": "Composition question.",
+          "example": "Plasma is straw-coloured, mostly water.",
+          "remember": "RBCs carry O₂; WBCs fight infection; platelets clot.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c03",
+          "name": "Plasma function",
+          "simple_answer": "Plasma transports digested food, CO₂, hormones, and waste products dissolved in water.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plasma — transport medium"
+          },
+          "why": "Liquid part of blood.",
+          "example": "Urea carried in plasma to kidney.",
+          "remember": "About 55% of blood volume.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c04",
+          "name": "Red blood cells",
+          "simple_answer": "RBCs contain haemoglobin; biconcave shape increases surface area; no nucleus in mature human RBC.",
+          "visual": {
+            "type": "placeholder",
+            "label": "RBC — oxygen carriers"
+          },
+          "why": "Adaptation for O₂.",
+          "example": "Millions per drop of blood.",
+          "remember": "Haemoglobin binds O₂ in lungs.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c05",
+          "name": "White blood cells",
+          "simple_answer": "WBCs defend against pathogens; larger, have nucleus, can leave blood vessels.",
+          "visual": {
+            "type": "placeholder",
+            "label": "WBC — immunity"
+          },
+          "why": "Defence role.",
+          "example": "Phagocytes engulf bacteria.",
+          "remember": "Part of immune system.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c06",
+          "name": "Platelets",
+          "simple_answer": "Platelets are cell fragments that help blood clot at injury sites.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Platelets — clotting"
+          },
+          "why": "Prevent blood loss.",
+          "example": "Cut finger stops bleeding from clot.",
+          "remember": "Too few platelets → bleeding risk.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c07",
+          "name": "Blood vessels — three types",
+          "simple_answer": "Arteries carry blood away from heart; veins return blood to heart; capillaries exchange with tissues.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Artery | Vein | Capillary"
+          },
+          "why": "Structural comparison.",
+          "example": "Arteries thick-walled; veins have valves.",
+          "remember": "Capillaries are one cell thick.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c08",
+          "name": "Arteries vs veins",
+          "simple_answer": "Arteries: thick elastic walls, high pressure, no valves. Veins: thinner walls, valves prevent backflow.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Artery vs vein"
+          },
+          "why": "Exam diagram labels.",
+          "example": "Aorta is largest artery.",
+          "remember": "Pulmonary artery carries deoxygenated blood — exception.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c09",
+          "name": "Capillaries",
+          "simple_answer": "Capillaries connect arteries to veins; thin walls allow exchange of gases, nutrients, and wastes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Capillaries — exchange"
+          },
+          "why": "Site of tissue exchange.",
+          "example": "Blood slows in capillary beds.",
+          "remember": "Single-cell thick endothelium.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d13_c10",
+          "name": "Double circulation preview",
+          "simple_answer": "Human heart drives double circulation — pulmonary and systemic circuits.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Double circulation intro"
+          },
+          "why": "Leads to Day 14 heart.",
+          "example": "Blood passes heart twice per full body circuit.",
+          "remember": "Separates low-pressure lung circuit from high-pressure body.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "Heart and Circulation",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d14_c01",
+          "name": "Human heart — chambers",
+          "simple_answer": "Heart has four chambers: two atria (receive blood) and two ventricles (pump blood out).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Four-chambered heart"
+          },
+          "why": "Core heart anatomy.",
+          "example": "Left side pumps to body; right to lungs.",
+          "remember": "Atria on top; ventricles below.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c02",
+          "name": "Pulmonary circulation",
+          "simple_answer": "Right ventricle pumps deoxygenated blood to lungs; returns oxygenated to left atrium.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pulmonary circuit"
+          },
+          "why": "Lung loop.",
+          "example": "Pulmonary artery → lungs → pulmonary vein.",
+          "remember": "Gas exchange in alveoli.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c03",
+          "name": "Systemic circulation",
+          "simple_answer": "Left ventricle pumps oxygenated blood to entire body; returns deoxygenated to right atrium.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Systemic circuit"
+          },
+          "why": "Body loop.",
+          "example": "Aorta branches to all organs.",
+          "remember": "Left ventricle wall is thickest — high pressure.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c04",
+          "name": "Heart valves",
+          "simple_answer": "Valves prevent backflow — tricuspid, bicuspid (mitral), pulmonary and aortic semilunar valves.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Heart valves — one-way flow"
+          },
+          "why": "Lub-dub sounds from valves.",
+          "example": "Valves snap shut after ventricle contraction.",
+          "remember": "Faulty valves cause murmurs.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c05",
+          "name": "Heartbeat mechanism",
+          "simple_answer": "SA node triggers rhythmic contraction — atria contract then ventricles ( lub-dub ).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Cardiac cycle overview"
+          },
+          "why": "Pacemaker concept.",
+          "example": "Activity 5.6 — stethoscope on chest.",
+          "remember": "Electrical signal coordinates chambers.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c06",
+          "name": "Activity 5.6 — heartbeat sound",
+          "simple_answer": "Stethoscope on chest hears lub-dub of valves closing during cardiac cycle.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 5.6 — stethoscope"
+          },
+          "why": "NCERT practical.",
+          "example": "Lub = AV valves close; dub = semilunar close.",
+          "remember": "Count beats per minute at rest.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c07",
+          "name": "Pulse rate",
+          "simple_answer": "Pulse is wave of arterial expansion felt at wrist; equals heart rate at rest.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pulse measurement"
+          },
+          "why": "Links to Activity 5.7.",
+          "example": "Normal resting pulse ~70–80 bpm in adults.",
+          "remember": "Pulse points: wrist, neck.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c08",
+          "name": "Activity 5.7 — pulse after exercise",
+          "simple_answer": "Pulse rate increases after exercise because muscles need more O₂ and glucose faster.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 5.7 — exercise pulse"
+          },
+          "why": "Physiology experiment.",
+          "example": "Compare resting vs after running.",
+          "remember": "Heart pumps faster to meet demand.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c09",
+          "name": "Lymphatic system (brief)",
+          "simple_answer": "Lymph carries absorbed fats from intestine and returns tissue fluid to blood.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Lymph — fat transport"
+          },
+          "why": "Links villi lacteals.",
+          "example": "Lymph nodes filter pathogens.",
+          "remember": "Complements blood circulation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d14_c10",
+          "name": "Circulation summary",
+          "simple_answer": "Heart → arteries → capillaries → veins → heart; O₂ and food delivered, CO₂ and wastes collected.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Circulation summary"
+          },
+          "why": "Day 13–14 consolidation.",
+          "example": "Trace one red blood cell through full circuit.",
+          "remember": "Double circulation in humans and birds.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Excretion — Plants and Kidneys",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d15_c01",
+          "name": "Excretion — definition",
+          "simple_answer": "Excretion is removal of harmful metabolic wastes produced in the body.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Excretion defined"
+          },
+          "why": "Fourth life process.",
+          "example": "Urea from protein metabolism.",
+          "remember": "Not the same as egestion or sweating alone.",
+          "common_confusion": "Excretion removes metabolic wastes.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "excretion"
+          ]
+        },
+        {
+          "id": "u1_d15_c02",
+          "name": "Egestion vs excretion vs secretion",
+          "simple_answer": "Egestion: undigested food out. Excretion: metabolic waste out. Secretion: useful substances released.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Three terms compared"
+          },
+          "why": "Terminology precision.",
+          "example": "Faeces = egestion; urine = excretion.",
+          "remember": "Do not call urination egestion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c03",
+          "name": "Excretion in plants",
+          "simple_answer": "Plants excrete O₂ (photosynthesis), CO₂ (respiration), water vapour, and store or drop wastes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plant excretion"
+          },
+          "why": "NCERT exercise Q13 theme.",
+          "example": "Plants store waste in vacuoles or bark.",
+          "remember": "Resins and gums are waste products.",
+          "common_confusion": "Plants don't have kidneys.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c04",
+          "name": "Plant waste removal methods",
+          "simple_answer": "Plants lose gaseous wastes through stomata; shed leaves; store wastes in cellular vacuoles and old xylem.",
+          "visual": {
+            "type": "placeholder",
+            "label": "How plants remove wastes"
+          },
+          "why": "List for exam.",
+          "example": "Tamarind stores tartaric acid in fruits.",
+          "remember": "Guttation exudes liquid water with salts.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c05",
+          "name": "Excretion in humans — organs",
+          "simple_answer": "Main excretory organs: kidneys (urine), lungs (CO₂), skin (sweat — some urea/salts).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Human excretory organs"
+          },
+          "why": "Multi-organ excretion.",
+          "example": "Kidneys primary for nitrogenous waste.",
+          "remember": "Lungs excrete CO₂ every breath.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c06",
+          "name": "Kidney location and role",
+          "simple_answer": "Pair of kidneys filter blood to remove urea, excess water, and salts as urine.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Kidneys filter blood"
+          },
+          "why": "NCERT exercise Q1 theme.",
+          "example": "Kidneys maintain water-salt balance (osmoregulation).",
+          "remember": "Bean-shaped organs in abdomen.",
+          "common_confusion": "Kidneys → excretion, not digestion.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "kidney"
+          ]
+        },
+        {
+          "id": "u1_d15_c07",
+          "name": "Urine pathway",
+          "simple_answer": "Kidney → ureter → urinary bladder → urethra.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Urinary pathway"
+          },
+          "why": "Anatomy sequence.",
+          "example": "Bladder stores urine temporarily.",
+          "remember": "Ureter connects kidney to bladder.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c08",
+          "name": "Structure of kidney (overview)",
+          "simple_answer": "Kidney has outer cortex and inner medulla containing millions of nephrons.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Kidney structure overview"
+          },
+          "why": "Leads to nephron Day 16.",
+          "example": "Renal artery brings blood; renal vein takes filtered blood.",
+          "remember": "Each nephron is filtering unit.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c09",
+          "name": "Why excretion matters",
+          "simple_answer": "Accumulated wastes poison cells — urea must be removed to maintain homeostasis.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Homeostasis and excretion"
+          },
+          "why": "Health importance.",
+          "example": "Kidney failure raises blood urea dangerously.",
+          "remember": "Excretion maintains internal environment.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d15_c10",
+          "name": "Excretion block preview",
+          "simple_answer": "Day 16 covers nephron structure, filtration, and Activity 5.8 dialysis model.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Excretion roadmap"
+          },
+          "why": "Bridge to final day.",
+          "example": "Do not confuse alveoli (gas) with nephron (filter).",
+          "remember": "Nephron is functional unit of kidney.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "Nephron, Dialysis and Exam Prep",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u1_d16_c01",
+          "name": "Nephron — functional unit",
+          "simple_answer": "Nephron is the structural and functional unit of kidney — filters blood and forms urine.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Nephron — kidney unit"
+          },
+          "why": "NCERT exercise Q12 core.",
+          "example": "Each kidney has about 1 million nephrons.",
+          "remember": "Damage to nephrons impairs filtration.",
+          "common_confusion": "Alveoli vs nephron is common confusion.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "nephron"
+          ]
+        },
+        {
+          "id": "u1_d16_c02",
+          "name": "Nephron parts",
+          "simple_answer": "Nephron: Bowman's capsule + glomerulus, proximal tubule, loop of Henle, distal tubule, collecting duct.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Nephron labelled diagram"
+          },
+          "why": "Diagram question.",
+          "example": "Glomerulus is capillary knot for filtration.",
+          "remember": "Know at least four parts for exam.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c03",
+          "name": "Ultrafiltration in glomerulus",
+          "simple_answer": "Blood pressure forces water, urea, glucose, salts into Bowman's capsule; large proteins stay in blood.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Filtration in glomerulus"
+          },
+          "why": "First nephron step.",
+          "example": "Filterate enters tubule.",
+          "remember": "Proteins and RBCs not filtered.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c04",
+          "name": "Reabsorption in tubule",
+          "simple_answer": "Useful substances (glucose, most water, salts) reabsorbed into blood; waste stays in tubule.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Selective reabsorption"
+          },
+          "why": "Second nephron step.",
+          "example": "All glucose normally reabsorbed.",
+          "remember": "Saves body resources.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c05",
+          "name": "Urine formation",
+          "simple_answer": "Remaining fluid in collecting duct is urine — concentrated urea, excess water and salts.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Urine composition"
+          },
+          "why": "Final product.",
+          "example": "Urine ~95% water.",
+          "remember": "Volume varies with hydration.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c06",
+          "name": "Activity 5.8 — dialysis model",
+          "simple_answer": "Visking tubing in water bath models selective permeability like dialysis in kidney failure treatment.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 5.8 — dialysis tubing"
+          },
+          "why": "NCERT activity.",
+          "example": "Small molecules pass through membrane; starch/protein retained.",
+          "remember": "Real dialysis filters blood artificially.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c07",
+          "name": "Kidney failure and dialysis",
+          "simple_answer": "When kidneys fail, dialysis machine removes urea from blood using semi-permeable membrane.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Clinical dialysis"
+          },
+          "why": "Application of excretion concept.",
+          "example": "Regular dialysis replaces kidney function.",
+          "remember": "Transplant is long-term alternative.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c08",
+          "name": "NCERT summary — life processes",
+          "simple_answer": "Nutrition, respiration, transport, and excretion maintain life in plants and animals.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 5 summary — four processes"
+          },
+          "why": "Unit completion.",
+          "example": "Match process to organ system.",
+          "remember": "All four needed continuously.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c09",
+          "name": "Must-know comparisons",
+          "simple_answer": "Autotroph vs heterotroph; aerobic vs anaerobic; xylem vs phloem; breathing vs respiration; egestion vs excretion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam comparison checklist"
+          },
+          "why": "Revision list.",
+          "example": "One table each for top five pairs.",
+          "remember": "Comparison questions are common.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u1_d16_c10",
+          "name": "Unit 1 complete",
+          "simple_answer": "Unit 1 Life Processes complete — 160 concept cards; proceed to Practice when unlocked.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Unit 1 complete — 160 cards"
+          },
+          "why": "Completion card.",
+          "example": "200 MCQs in bank; Stage 2 days 17–20 follow.",
+          "remember": "Concepts done → practice → NCERT MCQs.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

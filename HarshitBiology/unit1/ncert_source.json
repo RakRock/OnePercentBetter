@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "unit_id": 1,
+    "chapter": 5,
+    "pdf": "jesc105.pdf",
+    "title": "Life Processes"
+  },
+  "activities": [
+    {
+      "id": "5.1",
+      "title": "Yeast fermentation in sugar solution",
+      "summary": "Yeast in glucose solution produces CO₂ bubbles — demonstrates anaerobic respiration (fermentation).",
+      "concept_ids": [
+        "u1_d9_c09",
+        "u1_d10_c01",
+        "u1_d8_c07"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "5.2",
+      "title": "Starch test in leaf",
+      "summary": "Iodine test on boiled leaf — green parts turn blue-black showing starch formed by photosynthesis.",
+      "concept_ids": [
+        "u1_d3_c08",
+        "u1_d3_c07",
+        "u1_d4_c01"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "5.3",
+      "title": "Observation of stomata",
+      "summary": "Peel lower epidermis of leaf, stain with safranin, observe stomata and guard cells under microscope.",
+      "concept_ids": [
+        "u1_d3_c05",
+        "u1_d3_c06",
+        "u1_d4_c07"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "5.4",
+      "title": "Water rise through xylem",
+      "summary": "Plant stem in coloured water — dye rises through xylem vessels visible in cross-section.",
+      "concept_ids": [
+        "u1_d11_c02",
+        "u1_d11_c05",
+        "u1_d11_c09"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "5.5",
+      "title": "Transpiration in plants",
+      "summary": "Plastic bag tied around leaf shows water droplets inside — proof of transpiration.",
+      "concept_ids": [
+        "u1_d11_c06",
+        "u1_d11_c07",
+        "u1_d12_c09"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "5.6",
+      "title": "Heartbeat with stethoscope",
+      "summary": "Listen to lub-dub sounds of heart valves closing during cardiac cycle.",
+      "concept_ids": [
+        "u1_d14_c05",
+        "u1_d14_c06",
+        "u1_d13_c10"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "5.7",
+      "title": "Pulse rate after exercise",
+      "summary": "Compare pulse rate at rest and after exercise — heart pumps faster to meet O₂ demand.",
+      "concept_ids": [
+        "u1_d14_c07",
+        "u1_d14_c08",
+        "u1_d10_c02"
+      ],
+      "stage2_day": 20
+    },
+    {
+      "id": "5.8",
+      "title": "Dialysis tubing model",
+      "summary": "Visking tubing in water models selective permeability like kidney dialysis membrane.",
+      "concept_ids": [
+        "u1_d16_c06",
+        "u1_d16_c07",
+        "u1_d16_c02"
+      ],
+      "stage2_day": 20
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "The kidneys in human beings are a part of the system for",
+      "options": [
+        "nutrition",
+        "respiration",
+        "excretion",
+        "transportation"
+      ],
+      "answer": 2,
+      "explanation": "Kidneys filter blood and remove nitrogenous wastes (urea) as urine — part of the excretory system.",
+      "misconception": "alveoli_nephron_confusion",
+      "source": "NCERT Ch 5 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "The xylem in plants are responsible for",
+      "options": [
+        "transport of water",
+        "transport of food",
+        "transport of amino acids",
+        "transport of oxygen"
+      ],
+      "answer": 0,
+      "explanation": "Xylem vessels transport water and dissolved minerals from roots upward to leaves and other parts.",
+      "misconception": "xylem_phloem_swap",
+      "source": "NCERT Ch 5 Exercises Q2"
+    },
+    {
+      "num": 3,
+      "question": "The autotrophic mode of nutrition requires",
+      "options": [
+        "carbon dioxide and water",
+        "chlorophyll",
+        "sunlight",
+        "all of the above"
+      ],
+      "answer": 3,
+      "explanation": "Autotrophic nutrition (photosynthesis) needs CO₂, water, chlorophyll to trap light, and sunlight as energy source.",
+      "misconception": "autotroph_heterotroph_confusion",
+      "source": "NCERT Ch 5 Exercises Q3"
+    },
+    {
+      "num": 4,
+      "question": "The breakdown of pyruvate to give carbon dioxide, water and energy takes place in",
+      "options": [
+        "cytoplasm",
+        "mitochondria",
+        "chloroplast",
+        "nucleus"
+      ],
+      "answer": 1,
+      "explanation": "After glycolysis in cytoplasm, pyruvate enters mitochondria where it is completely oxidised aerobically to CO₂, H₂O, and ATP.",
+      "misconception": "aerobic_anaerobic_confusion",
+      "source": "NCERT Ch 5 Exercises Q4"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Section 5.1 — life processes",
+      "question": "Why is diffusion insufficient to meet the oxygen requirements of multicellular organisms like humans?",
+      "options": [
+        "Multicellular organisms do not need oxygen",
+        "Most cells are not in direct contact with the environment",
+        "Diffusion is too fast for large bodies",
+        "Oxygen cannot diffuse through cell membranes"
+      ],
+      "answer": 1,
+      "explanation": "In large organisms most cells are deep inside the body and too far from the surface for diffusion alone to supply O₂ quickly enough.",
+      "misconception": "photosynthesis_respiration_swap",
+      "source": "NCERT Ch 5 Intext"
+    },
+    {
+      "ref": "Section 5.2 — autotrophic nutrition",
+      "question": "Where does photosynthesis primarily occur in a green plant?",
+      "options": [
+        "Roots",
+        "Green parts of the plant, especially leaves",
+        "Flowers only",
+        "Stem bark"
+      ],
+      "answer": 1,
+      "explanation": "Chloroplasts in green parts (mainly mesophyll of leaves) carry out photosynthesis using chlorophyll.",
+      "misconception": "autotroph_heterotroph_confusion",
+      "source": "NCERT Ch 5 Intext"
+    },
+    {
+      "ref": "Section 5.3 — human digestion",
+      "question": "Which enzyme begins starch digestion in the human mouth?",
+      "options": [
+        "Pepsin",
+        "Salivary amylase",
+        "Trypsin",
+        "Lipase"
+      ],
+      "answer": 1,
+      "explanation": "Salivary amylase (ptyalin) in saliva converts starch to maltose in the buccal cavity.",
+      "misconception": "autotroph_heterotroph_confusion",
+      "source": "NCERT Ch 5 Intext"
+    },
+    {
+      "ref": "Section 5.4 — respiration",
+      "question": "Breathing and respiration are not the same because",
+      "options": [
+        "Breathing is biochemical breakdown of glucose",
+        "Respiration is only inhaling and exhaling air",
+        "Breathing is ventilation; respiration releases energy from food in cells",
+        "They occur in different organisms"
+      ],
+      "answer": 2,
+      "explanation": "Breathing moves air in and out of lungs; cellular respiration is the enzyme-controlled release of energy from glucose inside cells.",
+      "misconception": "photosynthesis_respiration_swap",
+      "source": "NCERT Ch 5 Intext"
+    },
+    {
+      "ref": "Section 5.5 — transport in plants",
+      "question": "Food synthesised in leaves is transported to other parts of the plant through",
+      "options": [
+        "xylem",
+        "phloem",
+        "stomata",
+        "root hairs"
+      ],
+      "answer": 1,
+      "explanation": "Phloem translocates sucrose and other food materials from source (leaves) to sink organs.",
+      "misconception": "xylem_phloem_swap",
+      "source": "NCERT Ch 5 Intext"
+    },
+    {
+      "ref": "Section 5.6 — excretion",
+      "question": "The functional unit of the kidney that filters blood is the",
+      "options": [
+        "alveolus",
+        "nephron",
+        "villus",
+        "stomata"
+      ],
+      "answer": 1,
+      "explanation": "Each nephron consists of glomerulus, Bowman's capsule, tubules, and collecting duct — filters blood and forms urine.",
+      "misconception": "alveoli_nephron_confusion",
+      "source": "NCERT Ch 5 Intext"
+    }
+  ]
+}

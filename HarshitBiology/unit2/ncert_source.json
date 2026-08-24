@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "unit_id": 2,
+    "chapter": 6,
+    "pdf": "jesc106.pdf",
+    "title": "Control and Coordination"
+  },
+  "activities": [
+    {
+      "id": "6.1",
+      "title": "Taste with blocked nose",
+      "summary": "Block nose while eating sugar — taste is reduced, showing smell contributes to flavour perception.",
+      "concept_ids": [
+        "u2_d2_c03",
+        "u2_d2_c04",
+        "u2_d2_c05"
+      ],
+      "stage2_day": 17
+    },
+    {
+      "id": "6.2",
+      "title": "Phototropism in bean seedlings",
+      "summary": "Bean seeds in flask bend toward light; turning flask shows new growth follows light direction.",
+      "concept_ids": [
+        "u2_d8_c02",
+        "u2_d8_c03",
+        "u2_d7_c06"
+      ],
+      "stage2_day": 18
+    },
+    {
+      "id": "6.3",
+      "title": "Identify endocrine glands",
+      "summary": "Locate pituitary, thyroid, adrenal, pancreas, and gonads on Fig 6.7 diagrams.",
+      "concept_ids": [
+        "u2_d9_c05",
+        "u2_d10_c05",
+        "u2_d10_c10"
+      ],
+      "stage2_day": 19
+    },
+    {
+      "id": "6.4",
+      "title": "Complete hormone Table 6.1",
+      "summary": "Match hormones to endocrine glands and functions — growth hormone, thyroxin, insulin, etc.",
+      "concept_ids": [
+        "u2_d10_c05",
+        "u2_d10_c06",
+        "u2_d10_c10"
+      ],
+      "stage2_day": 20
+    }
+  ],
+  "exercise_mcqs": [
+    {
+      "num": 1,
+      "question": "Which of the following is a plant hormone?",
+      "options": [
+        "Insulin",
+        "Thyroxin",
+        "Oestrogen",
+        "Cytokinin"
+      ],
+      "answer": 3,
+      "explanation": "Cytokinin promotes cell division in plants. Insulin, thyroxin, and oestrogen are animal hormones.",
+      "misconception": "plant_animal_hormone_swap",
+      "source": "NCERT Ch 6 Exercises Q1"
+    },
+    {
+      "num": 2,
+      "question": "The gap between two neurons is called a",
+      "options": [
+        "dendrite",
+        "synapse",
+        "axon",
+        "impulse"
+      ],
+      "answer": 1,
+      "explanation": "The synapse is the junction between two neurons where chemical neurotransmitters cross the gap.",
+      "misconception": "synapse_axon_confusion",
+      "source": "NCERT Ch 6 Exercises Q2"
+    },
+    {
+      "num": 3,
+      "question": "The brain is responsible for",
+      "options": [
+        "thinking",
+        "regulating the heart beat",
+        "balancing the body",
+        "all of the above"
+      ],
+      "answer": 3,
+      "explanation": "Fore-brain handles thinking; medulla regulates heartbeat; cerebellum maintains balance — all are brain functions.",
+      "misconception": "cerebellum_cerebrum_swap",
+      "source": "NCERT Ch 6 Exercises Q3"
+    }
+  ],
+  "intext_samples": [
+    {
+      "ref": "Section 6.1 — reflex action",
+      "question": "What is the difference between a reflex action and walking?",
+      "options": [
+        "Reflex is voluntary; walking is involuntary",
+        "Reflex is automatic without thinking; walking is a voluntary action",
+        "Both are controlled only by the spinal cord",
+        "Walking is faster than a reflex action"
+      ],
+      "answer": 1,
+      "explanation": "Reflex actions are sudden and automatic; walking involves conscious decision by the brain.",
+      "misconception": "reflex_brain_confusion",
+      "source": "NCERT Ch 6 Intext"
+    },
+    {
+      "ref": "Section 6.1 — synapse",
+      "question": "What happens at the synapse between two neurons?",
+      "options": [
+        "Electrical impulse jumps directly across the gap",
+        "Chemicals cross the gap and trigger impulse in the next neuron",
+        "The axon splits into two dendrites",
+        "The impulse is stored permanently in the gap"
+      ],
+      "answer": 1,
+      "explanation": "At the synapse, electrical impulse triggers release of chemicals that diffuse across and start an impulse in the next neuron.",
+      "misconception": "synapse_axon_confusion",
+      "source": "NCERT Ch 6 Intext"
+    },
+    {
+      "ref": "Section 6.1 — cerebellum",
+      "question": "Which part of the brain maintains posture and equilibrium of the body?",
+      "options": [
+        "Cerebrum",
+        "Cerebellum",
+        "Medulla",
+        "Hypothalamus"
+      ],
+      "answer": 1,
+      "explanation": "The cerebellum in the hind-brain controls posture, balance, and precision of voluntary actions.",
+      "misconception": "cerebellum_cerebrum_swap",
+      "source": "NCERT Ch 6 Intext"
+    },
+    {
+      "ref": "Section 6.2 — plant hormones",
+      "question": "Give an example of a plant hormone that promotes growth.",
+      "options": [
+        "Insulin",
+        "Auxin",
+        "Adrenaline",
+        "Thyroxin"
+      ],
+      "answer": 1,
+      "explanation": "Auxin promotes cell elongation and is involved in phototropism. Insulin and adrenaline are animal hormones.",
+      "misconception": "plant_animal_hormone_swap",
+      "source": "NCERT Ch 6 Intext"
+    },
+    {
+      "ref": "Section 6.3 — adrenaline",
+      "question": "How does our body respond when adrenaline is secreted into the blood?",
+      "options": [
+        "Heart rate slows and digestion speeds up",
+        "Heart beats faster, breathing increases, blood diverted to muscles",
+        "Blood sugar drops immediately",
+        "All voluntary muscles relax completely"
+      ],
+      "answer": 1,
+      "explanation": "Adrenaline prepares for fight-or-flight: faster heartbeat, increased breathing, blood to skeletal muscles.",
+      "misconception": "nervous_hormonal_speed_swap",
+      "source": "NCERT Ch 6 Intext"
+    },
+    {
+      "ref": "Section 6.3 — iodised salt",
+      "question": "Why is the use of iodised salt advisable?",
+      "options": [
+        "Iodine makes food taste better",
+        "Iodine is needed for thyroxin synthesis; deficiency causes goitre",
+        "Iodine kills bacteria in food",
+        "Iodine increases height in adults"
+      ],
+      "answer": 1,
+      "explanation": "Thyroid gland needs iodine to make thyroxin; iodine deficiency leads to goitre (swollen neck).",
+      "misconception": "plant_animal_hormone_swap",
+      "source": "NCERT Ch 6 Intext"
+    }
+  ]
+}

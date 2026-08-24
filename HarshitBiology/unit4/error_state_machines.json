@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "unit_id": 4,
+    "description": "Common NCERT Ch 8 Heredity misconceptions"
+  },
+  "misconception_categories": [
+    "dominant_recessive_swap",
+    "genotype_phenotype_swap",
+    "monohybrid_dihybrid_swap",
+    "sex_determination_confusion",
+    "variation_inheritance_swap"
+  ],
+  "machines": {
+    "dominant_recessive_swap": {
+      "feedback": "Dominant traits appear in F1 even with one copy (Tt looks tall); recessive traits appear only when both alleles are recessive (tt is short).",
+      "concept_ids": ["u4_d5_c01", "u4_d5_c03", "u4_d4_c04"],
+      "calm_prompt": "Which trait shows up in F1 — dominant or recessive?"
+    },
+    "genotype_phenotype_swap": {
+      "feedback": "Genotype is the genetic makeup (TT, Tt, tt); phenotype is the visible expression (tall or short).",
+      "concept_ids": ["u4_d12_c01", "u4_d12_c02", "u4_d5_c02"],
+      "calm_prompt": "Letters (Tt) or appearance (tall)?"
+    },
+    "monohybrid_dihybrid_swap": {
+      "feedback": "Monohybrid cross tracks one trait pair (tall/short); dihybrid cross tracks two trait pairs (seed shape and colour) showing independent assortment.",
+      "concept_ids": ["u4_d4_c01", "u4_d6_c01", "u4_d6_c03"],
+      "calm_prompt": "One trait or two traits in this cross?"
+    },
+    "sex_determination_confusion": {
+      "feedback": "In humans, the father determines sex — X sperm → female (XX), Y sperm → male (XY). The mother always contributes an X chromosome.",
+      "concept_ids": ["u4_d7_c01", "u4_d7_c03", "u4_d7_c04"],
+      "calm_prompt": "Which parent's gamete carries X or Y?"
+    },
+    "variation_inheritance_swap": {
+      "feedback": "Variation within a species helps survival when conditions change; heredity transmits traits while variation creates differences among offspring.",
+      "concept_ids": ["u4_d2_c01", "u4_d2_c02", "u4_d1_c03"],
+      "calm_prompt": "Same traits from parents, or differences among siblings?"
+    }
+  }
+}

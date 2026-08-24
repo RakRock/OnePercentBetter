@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "unit_id": 2,
+    "description": "Common NCERT Ch 6 Control and Coordination misconceptions"
+  },
+  "misconception_categories": [
+    "reflex_brain_confusion",
+    "synapse_axon_confusion",
+    "plant_animal_hormone_swap",
+    "cerebellum_cerebrum_swap",
+    "nervous_hormonal_speed_swap"
+  ],
+  "machines": {
+    "reflex_brain_confusion": {
+      "feedback": "Reflex actions are processed in the spinal cord for speed; the brain learns about the stimulus afterwards but does not control the immediate reflex.",
+      "concept_ids": ["u2_d4_c04", "u2_d4_c06", "u2_d5_c07"],
+      "calm_prompt": "Ask: does the hand move before or after you think about the pain?"
+    },
+    "synapse_axon_confusion": {
+      "feedback": "The synapse is the gap between two neurons where chemicals cross; the axon is the fibre that carries impulses away from the cell body.",
+      "concept_ids": ["u2_d3_c03", "u2_d3_c04", "u2_d3_c08"],
+      "calm_prompt": "Synapse = gap. Axon = cable. Which one is the junction?"
+    },
+    "plant_animal_hormone_swap": {
+      "feedback": "Cytokinin, auxin, and gibberellin are plant hormones; insulin, adrenaline, and thyroxin are animal hormones.",
+      "concept_ids": ["u2_d8_c05", "u2_d9_c01", "u2_d15_c01"],
+      "calm_prompt": "Check: is this hormone from a plant or an endocrine gland?"
+    },
+    "cerebellum_cerebrum_swap": {
+      "feedback": "Cerebellum controls balance, posture, and precision; cerebrum (fore-brain) is the main thinking and sensory processing centre.",
+      "concept_ids": ["u2_d5_c07", "u2_d5_c04", "u2_d15_c05"],
+      "calm_prompt": "Balance and bicycle riding — which brain region?"
+    },
+    "nervous_hormonal_speed_swap": {
+      "feedback": "Nervous control uses fast electrical impulses through nerves; hormonal control uses slower chemical signals through the blood to reach all cells.",
+      "concept_ids": ["u2_d3_c06", "u2_d10_c08", "u2_d11_c02"],
+      "calm_prompt": "Fast local signal or slow whole-body signal?"
+    }
+  }
+}

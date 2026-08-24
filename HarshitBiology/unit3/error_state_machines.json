@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "unit_id": 3,
+    "description": "Common NCERT Ch 7 How do Organisms Reproduce? misconceptions"
+  },
+  "misconception_categories": [
+    "asexual_sexual_swap",
+    "pollination_fertilisation_swap",
+    "male_female_organ_swap",
+    "binary_budding_swap",
+    "dna_copying_confusion"
+  ],
+  "machines": {
+    "asexual_sexual_swap": {
+      "feedback": "Asexual reproduction uses one parent with no gamete fusion; sexual reproduction involves two parents and fusion of male and female gametes.",
+      "concept_ids": ["u3_d1_c03", "u3_d6_c01", "u3_d3_c01"],
+      "calm_prompt": "One parent or two? Gametes involved or not?"
+    },
+    "pollination_fertilisation_swap": {
+      "feedback": "Pollination is transfer of pollen to stigma; fertilisation is fusion of male and female gametes inside the ovule.",
+      "concept_ids": ["u3_d7_c04", "u3_d7_c06", "u3_d8_c02"],
+      "calm_prompt": "Pollen reaching stigma, or gametes fusing?"
+    },
+    "male_female_organ_swap": {
+      "feedback": "Vas deferens, testes, and epididymis are male reproductive parts; ovary, uterus, and fallopian tube are female parts.",
+      "concept_ids": ["u3_d9_c02", "u3_d10_c02", "u3_d10_c01"],
+      "calm_prompt": "Trace the organ — sperm path or egg path?"
+    },
+    "binary_budding_swap": {
+      "feedback": "Binary fission splits one cell into two equal parts (Amoeba); budding produces a small outgrowth that separates (yeast, Hydra).",
+      "concept_ids": ["u3_d3_c02", "u3_d4_c04", "u3_d3_c05"],
+      "calm_prompt": "Equal split or outgrowth bud?"
+    },
+    "dna_copying_confusion": {
+      "feedback": "DNA copying during reproduction ensures the offspring gets a complete set of genetic instructions; variations arise from slight inaccuracies in copying.",
+      "concept_ids": ["u3_d1_c01", "u3_d2_c02", "u3_d2_c03"],
+      "calm_prompt": "Why must DNA be copied faithfully before cell division?"
+    }
+  }
+}

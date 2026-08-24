@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "active": true,
+    "stage": 3,
+    "range": "Exercises Q4–Q12",
+    "note": "Exam-style written questions. Chapter 6 has 3 MCQs (Stage 2) and 9 long-form exercises here.",
+    "chapter": "NCERT Class 10 Science Ch 6",
+    "pdf": "jesc106.pdf",
+    "unit_id": 2
+  },
+  "questions": [
+    {
+      "id": "u2_ex_q04",
+      "num": 4,
+      "type": "explain",
+      "marks": 3,
+      "question": "What is the function of receptors in our body? Think of situations where receptors do not work properly. What problems are likely to arise?",
+      "hints": [
+        "Receptors detect stimuli at dendritic tips in sense organs.",
+        "Examples: gustatory (taste), olfactory (smell), photoreceptors (light).",
+        "If receptors fail: blindness, deafness, loss of taste."
+      ],
+      "model_answer": "**Function:** Receptors are specialised tips of nerve cells in sense organs that **detect environmental stimuli** and trigger nerve impulses.\n\n**Examples:** Gustatory receptors (taste), olfactory receptors (smell), receptors in eye and ear.\n\n**If receptors fail:** Cannot detect changes — **blindness** (no light detection), **deafness** (no sound), **loss of taste/smell** — so the body cannot respond appropriately.",
+      "marking_points": [
+        "States receptors detect stimuli",
+        "Gives examples of receptors or sense organs",
+        "Explains consequences of receptor failure"
+      ],
+      "common_mistakes": [
+        "Confusing receptors with effectors (muscles/glands)",
+        "Not giving examples of receptor failure"
+      ],
+      "concept_ids": [
+        "u2_d2_c01",
+        "u2_d2_c02",
+        "u2_d1_c07"
+      ],
+      "misconception": "reflex_brain_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 6 Exercises Q4"
+    },
+    {
+      "id": "u2_ex_q05",
+      "num": 5,
+      "type": "diagram_explain",
+      "marks": 5,
+      "question": "Draw the structure of a neuron and explain its function.",
+      "hints": [
+        "Label dendrites, cell body, axon, axon terminals.",
+        "Dendrites receive; axon transmits impulse.",
+        "Synapse at end connects to next neuron or effector."
+      ],
+      "model_answer": "**Structure:** Dendrites (receive signals) → cell body (contains nucleus) → axon (long fibre) → axon terminals (synapse with next cell).\n\n**Function:** Neuron **acquires information** at dendrites, creates **electrical impulse** that travels along axon, and passes signal via **synapse** to next neuron, muscle, or gland.",
+      "marking_points": [
+        "Correct diagram with dendrites, cell body, axon labelled",
+        "Explains reception at dendrites",
+        "Explains transmission along axon and synapse"
+      ],
+      "common_mistakes": [
+        "Labelling synapse as part of the neuron itself",
+        "Reversing direction of impulse"
+      ],
+      "concept_ids": [
+        "u2_d2_c06",
+        "u2_d2_c07",
+        "u2_d3_c01"
+      ],
+      "misconception": "synapse_axon_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 6 Exercises Q5"
+    },
+    {
+      "id": "u2_ex_q06",
+      "num": 6,
+      "type": "explain",
+      "marks": 3,
+      "question": "How does phototropism occur in plants?",
+      "hints": [
+        "Auxin synthesised at shoot tip.",
+        "Light from one side → auxin diffuses to shady side.",
+        "Shady side cells elongate more → shoot bends toward light."
+      ],
+      "model_answer": "When light comes from one direction, **auxin** (plant hormone) at the shoot tip **diffuses to the shady side**. Higher auxin concentration on the shady side causes those cells to **grow longer**, making the shoot **bend toward light** — this is positive phototropism.",
+      "marking_points": [
+        "Mentions auxin at shoot tip",
+        "Uneven auxin distribution toward shady side",
+        "Differential cell elongation causes bending"
+      ],
+      "common_mistakes": [
+        "Saying plants move like animals using muscles",
+        "Omitting role of auxin"
+      ],
+      "concept_ids": [
+        "u2_d8_c02",
+        "u2_d8_c01",
+        "u2_d7_c06"
+      ],
+      "misconception": "plant_animal_hormone_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 6 Exercises Q6"
+    },
+    {
+      "id": "u2_ex_q07",
+      "num": 7,
+      "type": "explain",
+      "marks": 3,
+      "question": "Which signals will get disrupted in case of a spinal cord injury?",
+      "hints": [
+        "Spinal cord connects brain to rest of body.",
+        "Carries sensory signals up and motor signals down.",
+        "Reflex arcs also processed in spinal cord."
+      ],
+      "model_answer": "Spinal cord injury disrupts **communication between brain and body parts below the injury**. **Sensory signals** from body to brain and **motor signals** from brain to muscles are blocked. **Reflex actions** below the injury site may also be lost.",
+      "marking_points": [
+        "Brain-body communication disrupted",
+        "Sensory and/or motor signals affected",
+        "Mentions loss of sensation or paralysis below injury"
+      ],
+      "common_mistakes": [
+        "Saying only reflexes are affected",
+        "Confusing spinal cord with vertebral column only"
+      ],
+      "concept_ids": [
+        "u2_d6_c07",
+        "u2_d4_c04",
+        "u2_d5_c01"
+      ],
+      "misconception": "reflex_brain_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 6 Exercises Q7"
+    },
+    {
+      "id": "u2_ex_q08",
+      "num": 8,
+      "type": "explain",
+      "marks": 3,
+      "question": "How does chemical coordination occur in plants?",
+      "hints": [
+        "Plants use hormones (phytohormones).",
+        "Synthesised in one part, diffuse to action site.",
+        "Examples: auxin, gibberellin, cytokinin, abscisic acid."
+      ],
+      "model_answer": "Plants use **plant hormones** (e.g. auxin, gibberellin, cytokinin) that are **produced in one part** and **diffuse** to cells where they act. They regulate **growth, cell division, and responses** to light, gravity, and water — without a nervous system.",
+      "marking_points": [
+        "Plant hormones as chemical messengers",
+        "Produced at one site, act elsewhere",
+        "Names at least one hormone with function"
+      ],
+      "common_mistakes": [
+        "Describing animal endocrine system instead",
+        "Saying plants have nerves"
+      ],
+      "concept_ids": [
+        "u2_d8_c01",
+        "u2_d8_c02",
+        "u2_d8_c05"
+      ],
+      "misconception": "plant_animal_hormone_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 6 Exercises Q8"
+    },
+    {
+      "id": "u2_ex_q09",
+      "num": 9,
+      "type": "explain",
+      "marks": 3,
+      "question": "What is the need for a system of control and coordination in an organism?",
+      "hints": [
+        "Organisms face changing environments.",
+        "Must detect stimuli and respond appropriately.",
+        "Multicellular bodies need communication between parts."
+      ],
+      "model_answer": "Organisms constantly face **changes in their environment**. They must **detect stimuli** and produce **appropriate, timely responses** for survival. In multicellular organisms, different parts must **work together** — control and coordination systems (nervous and hormonal) ensure the correct response reaches the right body part.",
+      "marking_points": [
+        "Detect stimuli and respond appropriately",
+        "Survival depends on correct responses",
+        "Multicellular organisms need communication systems"
+      ],
+      "common_mistakes": [
+        "Only mentioning movement without detection",
+        "Ignoring multicellular coordination need"
+      ],
+      "concept_ids": [
+        "u2_d1_c02",
+        "u2_d1_c03",
+        "u2_d11_c03"
+      ],
+      "misconception": "nervous_hormonal_speed_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 6 Exercises Q9"
+    },
+    {
+      "id": "u2_ex_q10",
+      "num": 10,
+      "type": "compare",
+      "marks": 4,
+      "question": "How are involuntary actions and reflex actions different from each other?",
+      "hints": [
+        "Reflex: sudden, specific stimulus, via reflex arc.",
+        "Involuntary: continuous, no specific trigger (heartbeat).",
+        "Both lack conscious control."
+      ],
+      "model_answer": "**Reflex actions:** sudden, in response to a **specific stimulus**, via **reflex arc** in spinal cord (e.g. hand withdrawal from flame).\n\n**Involuntary actions:** **no specific stimulus** needed, controlled by mid-brain/hind-brain, run continuously (e.g. heartbeat, digestion, salivation).\n\nBoth lack conscious control, but reflex needs a trigger; involuntary does not.",
+      "marking_points": [
+        "Reflex is stimulus-triggered and rapid",
+        "Involuntary runs without specific stimulus",
+        "One example of each"
+      ],
+      "common_mistakes": [
+        "Saying all involuntary actions are reflexes",
+        "Claiming reflex actions involve conscious thought"
+      ],
+      "concept_ids": [
+        "u2_d4_c08",
+        "u2_d5_c10",
+        "u2_d5_c09"
+      ],
+      "misconception": "reflex_brain_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 6 Exercises Q10"
+    },
+    {
+      "id": "u2_ex_q11",
+      "num": 11,
+      "type": "compare",
+      "marks": 4,
+      "question": "Compare and contrast nervous and hormonal mechanisms for control and coordination in animals.",
+      "hints": [
+        "Nervous: electrical impulses, fast, through nerves.",
+        "Hormonal: chemicals in blood, slow, widespread.",
+        "Give at least three differences."
+      ],
+      "model_answer": "| Feature | Nervous | Hormonal |\n|---|---|---|\n| Signal | Electrical impulse | Chemical hormone |\n| Speed | Very fast (ms) | Slower (minutes) |\n| Pathway | Nerve fibres | Bloodstream |\n| Duration | Short-lived | Longer lasting |\n| Reach | Connected cells only | All cells with receptors |",
+      "marking_points": [
+        "At least three valid differences",
+        "Correct transmission medium for each",
+        "Examples (reflex vs growth/adrenaline)"
+      ],
+      "common_mistakes": [
+        "Saying hormones use nerves to travel",
+        "Swapping speed characteristics"
+      ],
+      "concept_ids": [
+        "u2_d10_c08",
+        "u2_d11_c02",
+        "u2_d3_c06"
+      ],
+      "misconception": "nervous_hormonal_speed_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 6 Exercises Q11"
+    },
+    {
+      "id": "u2_ex_q12",
+      "num": 12,
+      "type": "compare",
+      "marks": 4,
+      "question": "What is the difference between the manner in which movement takes place in a sensitive plant and the movement in our legs?",
+      "hints": [
+        "Mimosa: turgor change, fast, no growth, no muscles.",
+        "Legs: muscle contraction, nervous control, voluntary.",
+        "Compare mechanism, speed, and tissues involved."
+      ],
+      "model_answer": "**Sensitive plant (Mimosa):** movement by **change in water content** (turgor) in cells — **no muscles, no nerves**, very **fast**, **no growth** involved.\n\n**Leg movement:** **muscle contraction** controlled by **nervous system** — can be **voluntary** (walking) or involuntary; uses specialised muscle proteins.",
+      "marking_points": [
+        "Mimosa: turgor-based, no muscle/nervous tissue",
+        "Legs: muscle contraction with nervous control",
+        "Compares speed or voluntary nature"
+      ],
+      "common_mistakes": [
+        "Saying Mimosa uses auxin for folding",
+        "Claiming plants have muscle tissue"
+      ],
+      "concept_ids": [
+        "u2_d7_c03",
+        "u2_d7_c04",
+        "u2_d6_c04"
+      ],
+      "misconception": "plant_animal_hormone_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 6 Exercises Q12"
+    }
+  ]
+}

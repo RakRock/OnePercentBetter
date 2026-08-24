@@ -1,0 +1,2700 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 2,
+    "unit_title": "Control and Coordination",
+    "ncert": "Class 10 Science, Chapter 6 (Biology)",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_biology_unit2_concepts",
+    "session_kind_mcq": "harshit_biology_unit2_mcq"
+  },
+  "glossary": [
+    {
+      "term": "neuron",
+      "definition": "Nerve cell that transmits electrical impulses for control and coordination."
+    },
+    {
+      "term": "synapse",
+      "definition": "Gap between two neurons where chemical neurotransmitters pass the signal."
+    },
+    {
+      "term": "reflex arc",
+      "definition": "Neural pathway for quick automatic responses without conscious thought."
+    },
+    {
+      "term": "hormone",
+      "definition": "Chemical messenger secreted by endocrine glands that regulates body functions."
+    },
+    {
+      "term": "tropism",
+      "definition": "Directional growth movement of a plant in response to a stimulus."
+    },
+    {
+      "term": "auxin",
+      "definition": "Plant hormone that promotes cell elongation and phototropism."
+    },
+    {
+      "term": "adrenaline",
+      "definition": "Fight-or-flight hormone from adrenal glands that prepares body for emergency."
+    },
+    {
+      "term": "cerebellum",
+      "definition": "Hind-brain region controlling posture, balance, and precision of voluntary actions."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "Control and Coordination — Introduction",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u2_d1_c01",
+          "name": "What is control and coordination?",
+          "simple_answer": "Control and coordination are processes that help an organism respond to changes in its internal and external environment in a proper and timely manner.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Control and coordination overview"
+          },
+          "why": "NCERT Ch 6 opens with how organisms respond to stimuli.",
+          "example": "Pulling hand away from a hot object shows quick coordination.",
+          "remember": "All living organisms need to respond to survive.",
+          "common_confusion": "Control is not the same as movement alone — plants also coordinate.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "control",
+            "coordination"
+          ]
+        },
+        {
+          "id": "u2_d1_c02",
+          "name": "Why organisms need coordination",
+          "simple_answer": "Organisms must detect changes (stimuli) and produce appropriate responses so body parts work together efficiently.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Stimulus → response"
+          },
+          "why": "Links detection to survival.",
+          "example": "A deer runs when it hears a predator — coordinated response.",
+          "remember": "Stimulus detected → message carried → response produced.",
+          "common_confusion": "Every cell cannot sense every change — specialised systems help.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d1_c03",
+          "name": "Stimulus and response",
+          "simple_answer": "A stimulus is a detectable change in the environment; a response is the reaction of the organism to that stimulus.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Stimulus → response pair"
+          },
+          "why": "Foundation terms for Ch 6.",
+          "example": "Bright light (stimulus) makes pupil constrict (response).",
+          "remember": "Define both terms clearly in exams.",
+          "common_confusion": "Stimulus can be internal (hunger) or external (heat).",
+          "optional_detail": "",
+          "glossary_terms": [
+            "stimulus",
+            "response"
+          ]
+        },
+        {
+          "id": "u2_d1_c04",
+          "name": "Types of coordination in animals",
+          "simple_answer": "Animals coordinate through the nervous system (fast, electrical) and endocrine system (slower, chemical hormones).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Nervous + endocrine coordination"
+          },
+          "why": "Two-system overview.",
+          "example": "Reflex is nervous; growth spurt at puberty is hormonal.",
+          "remember": "Nervous = fast; endocrine = widespread and sustained.",
+          "common_confusion": "Do not say only nerves coordinate animals.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d1_c05",
+          "name": "Nervous vs hormonal coordination",
+          "simple_answer": "Nervous messages travel as electrical impulses along nerves; hormonal messages travel in blood as chemical messengers.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Nerve: electrical impulse | Hormone: blood chemical",
+            "note": "Speed and mode differ"
+          },
+          "why": "Core comparison in Ch 6.",
+          "example": "Adrenaline rush is fast (nerve + hormone); height growth is slow (hormone).",
+          "remember": "Nerves act in seconds; hormones may act over hours or years.",
+          "common_confusion": "Both systems often work together — integration day later.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d1_c06",
+          "name": "Receptors in animals",
+          "simple_answer": "Receptors are specialised cells or organs that detect stimuli such as heat, light, sound, taste, and smell.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Receptors detect stimuli"
+          },
+          "why": "Input side of nervous system.",
+          "example": "Photoreceptors in eye detect light; taste buds detect chemicals.",
+          "remember": "Receptors convert stimulus into nerve message.",
+          "common_confusion": "Effectors produce response — do not confuse with receptors.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "receptor"
+          ]
+        },
+        {
+          "id": "u2_d1_c07",
+          "name": "Effectors in animals",
+          "simple_answer": "Effectors are muscles or glands that produce the response after receiving a nerve signal or hormone.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Effectors — muscles and glands"
+          },
+          "why": "Output side of coordination.",
+          "example": "Biceps contracts to lift arm; salivary gland secretes saliva.",
+          "remember": "Muscle contraction or gland secretion = response.",
+          "common_confusion": "All responses involve effectors, not just muscles.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "effector"
+          ]
+        },
+        {
+          "id": "u2_d1_c08",
+          "name": "Coordination in plants — overview",
+          "simple_answer": "Plants also respond to stimuli but lack a nervous system; they use hormones and growth-based movements.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plant coordination without nerves"
+          },
+          "why": "Plant section preview.",
+          "example": "Touch-me-not leaf folds on touch; roots grow toward water.",
+          "remember": "Plant responses are usually slower than animal reflexes.",
+          "common_confusion": "Plants do coordinate — they just use different mechanisms.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d1_c09",
+          "name": "Immediate vs growth responses in plants",
+          "simple_answer": "Plants show immediate responses (e.g. leaf folding) and growth-dependent responses (tropisms over hours/days).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Immediate vs growth responses"
+          },
+          "why": "Two plant response types.",
+          "example": "Mimosa pudica folds leaves in seconds; shoot bends toward light over days.",
+          "remember": "Immediate = turgor change; growth = differential cell elongation.",
+          "common_confusion": "Tropisms are growth responses, not reflex arcs.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d1_c10",
+          "name": "Chapter 6 roadmap",
+          "simple_answer": "Ch 6 covers nervous system, reflex arc, brain, plant movements, hormones, and Activities 6.1–6.4.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 6 roadmap — 16 days"
+          },
+          "why": "Orient learner to unit plan.",
+          "example": "Activities include nerve tissue, reflex, and hormone demos.",
+          "remember": "Animals: nerves + hormones. Plants: hormones + tropisms.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Nervous System — Overview",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u2_d2_c01",
+          "name": "Nervous system — definition",
+          "simple_answer": "The nervous system is the system of nerves, brain, and spinal cord that receives information, integrates it, and sends instructions for response.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Nervous system defined"
+          },
+          "why": "Main animal coordination system.",
+          "example": "Brain decides to speak; nerves carry commands to speech muscles.",
+          "remember": "Central + peripheral nervous system work together.",
+          "common_confusion": "Nervous system does not make hormones — endocrine system does.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "nervous system"
+          ]
+        },
+        {
+          "id": "u2_d2_c02",
+          "name": "Central nervous system (CNS)",
+          "simple_answer": "CNS consists of the brain and spinal cord — the command and integration centre.",
+          "visual": {
+            "type": "placeholder",
+            "label": "CNS — brain and spinal cord"
+          },
+          "why": "Protected inside skull and vertebral column.",
+          "example": "Spinal cord relays messages between brain and body.",
+          "remember": "CNS processes information; PNS carries messages to/from CNS.",
+          "common_confusion": "Peripheral nerves are not part of CNS.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "CNS"
+          ]
+        },
+        {
+          "id": "u2_d2_c03",
+          "name": "Peripheral nervous system (PNS)",
+          "simple_answer": "PNS is all nerves outside the brain and spinal cord that connect the CNS to the rest of the body.",
+          "visual": {
+            "type": "placeholder",
+            "label": "PNS — nerves to body"
+          },
+          "why": "Links CNS to receptors and effectors.",
+          "example": "Sciatic nerve carries signals to leg muscles.",
+          "remember": "PNS includes cranial and spinal nerves.",
+          "common_confusion": "PNS alone cannot think — integration is in CNS.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "PNS"
+          ]
+        },
+        {
+          "id": "u2_d2_c04",
+          "name": "Neuron — basic unit",
+          "simple_answer": "The neuron (nerve cell) is the functional unit of the nervous system that transmits electrical impulses.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Neuron — nerve cell"
+          },
+          "why": "Leads to Day 3 detail.",
+          "example": "One long nerve cell can run from spine to toe.",
+          "remember": "Neurons are specialised for rapid message transfer.",
+          "common_confusion": "Nerve ≠ neuron — a nerve is a bundle of many neurons.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "neuron"
+          ]
+        },
+        {
+          "id": "u2_d2_c05",
+          "name": "Nerve vs neuron",
+          "simple_answer": "A neuron is a single nerve cell; a nerve is a bundle of many nerve fibres (axons) wrapped together.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Neuron vs nerve bundle"
+          },
+          "why": "Common terminology fix.",
+          "example": "Optic nerve contains thousands of neuron axons.",
+          "remember": "One neuron; many neurons form a nerve.",
+          "common_confusion": "Students often use 'nerve cell' and 'nerve' interchangeably — wrong.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d2_c06",
+          "name": "Three types of neurons",
+          "simple_answer": "Sensory neurons carry impulses from receptors to CNS; motor neurons from CNS to effectors; relay neurons connect within CNS.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sensory | relay | motor neurons"
+          },
+          "why": "Classification for exams.",
+          "example": "Touch receptor → sensory neuron → spinal cord → motor neuron → hand muscle.",
+          "remember": "Sensory in; motor out; relay inside CNS.",
+          "common_confusion": "Interneurons = relay neurons in spinal cord and brain.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d2_c07",
+          "name": "Electrical impulse in nerves",
+          "simple_answer": "Information in neurons travels as an electrical impulse (nerve impulse) along the nerve fibre.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Receptor → impulse → CNS → impulse → effector",
+            "note": "Electrical signal path"
+          },
+          "why": "Signal nature in nervous system.",
+          "example": "Impulse jumps from node to node in myelinated axon.",
+          "remember": "Impulses are fast but need intact neuron pathway.",
+          "common_confusion": "Impulse is not blood flow — it is electrical event in cell membrane.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "nerve impulse"
+          ]
+        },
+        {
+          "id": "u2_d2_c08",
+          "name": "Voluntary vs involuntary actions",
+          "simple_answer": "Voluntary actions are under conscious control (writing); involuntary actions are automatic (heartbeat, digestion).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Voluntary vs involuntary"
+          },
+          "why": "Action classification.",
+          "example": "Choosing to walk is voluntary; pupil size change is involuntary.",
+          "remember": "Brain can override some involuntary actions with practice.",
+          "common_confusion": "Reflexes are involuntary but use nervous system.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d2_c09",
+          "name": "Reflex action preview",
+          "simple_answer": "A reflex is a rapid, involuntary response to a stimulus without conscious thought — handled often by spinal cord.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reflex — quick automatic response"
+          },
+          "why": "Detailed on Day 5.",
+          "example": "Knee-jerk when doctor taps patellar tendon.",
+          "remember": "Reflex protects body from harm quickly.",
+          "common_confusion": "Reflex is not 'no brain involved ever' — brain may perceive later.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reflex"
+          ]
+        },
+        {
+          "id": "u2_d2_c10",
+          "name": "Nervous system summary",
+          "simple_answer": "Nervous system: receptors → sensory nerves → CNS → motor nerves → effectors; fast electrical coordination.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Nervous pathway summary"
+          },
+          "why": "Day 2 consolidation.",
+          "example": "Trace path for touching a hot pan.",
+          "remember": "Draw labelled flowchart for exams.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Neurons — Structure and Function",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u2_d3_c01",
+          "name": "Neuron structure overview",
+          "simple_answer": "A typical neuron has cell body (cyton), dendrites (receive signals), and axon (conducts impulse away).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Neuron — dendrite, cell body, axon"
+          },
+          "why": "Core diagram labels.",
+          "example": "Cell body in brain; axon may extend a metre.",
+          "remember": "Dendrites in; axon out.",
+          "common_confusion": "Axon and dendrite roles must not be swapped.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "neuron"
+          ]
+        },
+        {
+          "id": "u2_d3_c02",
+          "name": "Dendrites function",
+          "simple_answer": "Dendrites are branched extensions that receive impulses from other neurons or receptors and carry them toward cell body.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Dendrites receive signals"
+          },
+          "why": "Input branches of neuron.",
+          "example": "Many dendrites increase connections with other neurons.",
+          "remember": "Short, branched, receive side.",
+          "common_confusion": "Dendrites do not send impulse away from cell body.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "dendrite"
+          ]
+        },
+        {
+          "id": "u2_d3_c03",
+          "name": "Axon function",
+          "simple_answer": "Axon is a long fibre that conducts nerve impulses away from cell body toward another neuron or effector.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Axon conducts impulse out"
+          },
+          "why": "Output fibre of neuron.",
+          "example": "Motor neuron axon reaches muscle fibre.",
+          "remember": "One axon per neuron typically; can be very long.",
+          "common_confusion": "Myelin on axon speeds impulse — not on dendrites usually.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "axon"
+          ]
+        },
+        {
+          "id": "u2_d3_c04",
+          "name": "Cell body (cyton)",
+          "simple_answer": "Cell body contains nucleus and cytoplasm; it integrates incoming signals and maintains the neuron.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Cell body with nucleus"
+          },
+          "why": "Metabolic centre of neuron.",
+          "example": "If cell body damaged, neuron may not survive.",
+          "remember": "Nucleus in cell body controls protein synthesis for repair.",
+          "common_confusion": "Impulse is regenerated along axon, not in cell body alone.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c05",
+          "name": "Myelin sheath",
+          "simple_answer": "Myelin is a fatty insulating layer on some axons that speeds up nerve impulse transmission.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Myelin speeds impulse"
+          },
+          "why": "Adaptation for fast conduction.",
+          "example": "Impulse appears to jump between nodes of Ranvier.",
+          "remember": "More myelin = faster signal in long nerves.",
+          "common_confusion": "Myelin damage (e.g. disease) slows or blocks impulses.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "myelin sheath"
+          ]
+        },
+        {
+          "id": "u2_d3_c06",
+          "name": "Synapse preview",
+          "simple_answer": "Axon ends at synapse — junction with next neuron or effector where impulse crosses by chemicals.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Synapse at axon end"
+          },
+          "why": "Leads to Day 4.",
+          "example": "Gap between two neurons is synaptic cleft.",
+          "remember": "Electrical signal becomes chemical then electrical again.",
+          "common_confusion": "Synapse is not a physical fusion of cells.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "synapse"
+          ]
+        },
+        {
+          "id": "u2_d3_c07",
+          "name": "One-way transmission in neuron",
+          "simple_answer": "Impulse travels one way: dendrite/cell body → axon → synapse. Prevents signal chaos.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Dendrite → cell body → axon → synapse",
+            "note": "One direction"
+          },
+          "why": "Direction rule for diagrams.",
+          "example": "Impulse does not reverse in same neuron during normal function.",
+          "remember": "Memorise direction for arrow labels.",
+          "common_confusion": "Some axons carry signals toward CNS — still dendrite side receives.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c08",
+          "name": "Activity 6.1 — nerve tissue",
+          "simple_answer": "Activity 6.1: observe permanent slide of nerve tissue — see bundles of nerve fibres and cell bodies.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 6.1 — nerve slide"
+          },
+          "why": "NCERT microscopy activity.",
+          "example": "Under microscope, neurons look like thread bundles with dots.",
+          "remember": "Identify axons as long fibres; cell bodies as swollen regions.",
+          "common_confusion": "Nerve tissue slide shows many neurons together.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c09",
+          "name": "Motor neuron pathway",
+          "simple_answer": "Motor neuron cell body in CNS; axon extends to muscle or gland effector.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Motor neuron path"
+          },
+          "why": "Exam favourite diagram.",
+          "example": "Spinal motor neuron synapses on muscle fibre.",
+          "remember": "CNS location of cell body is key label.",
+          "common_confusion": "Sensory neuron has receptor end, not muscle end.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d3_c10",
+          "name": "Sensory neuron pathway",
+          "simple_answer": "Sensory neuron dendrite/receptor end detects stimulus; axon carries impulse to CNS.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sensory neuron path"
+          },
+          "why": "Pair with motor neuron.",
+          "example": "Pain receptor in skin → sensory neuron → spinal cord.",
+          "remember": "Receptor at dendrite end near stimulus.",
+          "common_confusion": "Sensory cell body may lie in ganglion outside CNS.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Synapse — Nerve to Nerve Junction",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u2_d4_c01",
+          "name": "Synapse — definition",
+          "simple_answer": "A synapse is the junction between two neurons (or neuron and effector) where nerve impulse is transmitted across a gap.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Synapse defined"
+          },
+          "why": "Key Ch 6 structure.",
+          "example": "Gap between two brain neurons is a synapse.",
+          "remember": "Impulse crosses gap chemically at synapse.",
+          "common_confusion": "Synapse is not continuous cytoplasm between cells.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "synapse"
+          ]
+        },
+        {
+          "id": "u2_d4_c02",
+          "name": "Synaptic cleft",
+          "simple_answer": "Synaptic cleft is the tiny gap between axon terminal of one neuron and dendrite of the next.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Synaptic cleft gap"
+          },
+          "why": "Physical gap in diagram.",
+          "example": "Gap is about 20–40 nanometres — invisible without EM.",
+          "remember": "Impulse cannot jump electrically across cleft alone.",
+          "common_confusion": "Cleft separates pre-synaptic and post-synaptic neurons.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c03",
+          "name": "Neurotransmitters",
+          "simple_answer": "Neurotransmitters are chemical messengers released at synapse that diffuse across cleft and trigger impulse in next neuron.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Neurotransmitters cross cleft"
+          },
+          "why": "Chemical phase of synaptic transmission.",
+          "example": "Acetylcholine at many synapses; many types exist.",
+          "remember": "Electrical → chemical → electrical again.",
+          "common_confusion": "Neurotransmitters are not hormones — act locally at synapse.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "neurotransmitter"
+          ]
+        },
+        {
+          "id": "u2_d4_c04",
+          "name": "Synaptic transmission steps",
+          "simple_answer": "Impulse reaches axon end → vesicles release neurotransmitter → crosses cleft → binds receptors on next neuron → new impulse starts.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Impulse → chemical → impulse",
+            "note": "Synaptic transmission"
+          },
+          "why": "Sequence for written answers.",
+          "example": "One-way crossing prevents backward random firing.",
+          "remember": "Know five-step outline for 3-mark questions.",
+          "common_confusion": "Reuptake of neurotransmitter ends signal — detail optional.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c05",
+          "name": "Neuromuscular junction",
+          "simple_answer": "Neuromuscular junction is synapse between motor neuron and muscle fibre where impulse triggers contraction.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Neuron-muscle synapse"
+          },
+          "why": "Synapse with effector.",
+          "example": "Motor nerve ending on biceps triggers movement.",
+          "remember": "Same chemical mechanism as neuron-neuron synapse.",
+          "common_confusion": "Muscle fibre is not a neuron — still has specialised junction.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c06",
+          "name": "Why synapses matter",
+          "simple_answer": "Synapses allow integration, one-way flow, and adjustment of signals — brain processing depends on synaptic networks.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Why synapses are important"
+          },
+          "why": "Functional significance.",
+          "example": "Learning may involve strengthening certain synapses.",
+          "remember": "Brain has trillions of synapses.",
+          "common_confusion": "Without synapses, nerves would be simple wires — no processing.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c07",
+          "name": "Speed at synapse",
+          "simple_answer": "Chemical crossing at synapse is slower than electrical flow along axon — but still very fast.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Synapse adds slight delay"
+          },
+          "why": "Timing concept.",
+          "example": "Many synapses in path add small delays.",
+          "remember": "Overall reflex still feels instant.",
+          "common_confusion": "Synaptic delay is milliseconds per synapse.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c08",
+          "name": "Excitatory vs inhibitory synapses",
+          "simple_answer": "Some synapses excite next neuron (start impulse); others inhibit (reduce firing) — brain balances both.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Excite or inhibit next neuron"
+          },
+          "why": "Integration concept preview.",
+          "example": "Too much inhibition → drowsiness; some drugs affect balance.",
+          "remember": "Not every synapse passes signal forward equally.",
+          "common_confusion": "Class 10 needs concept, not detailed pharmacology.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c09",
+          "name": "Synapse diagram labels",
+          "simple_answer": "Label: axon terminal, vesicles, synaptic cleft, receptors, dendrite of next neuron.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Synapse diagram checklist"
+          },
+          "why": "Exam diagram skill.",
+          "example": "Draw two neurons with gap and arrows for neurotransmitter.",
+          "remember": "Practice NCERT-style synapse figure.",
+          "common_confusion": "Pre-synaptic = sender; post-synaptic = receiver.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d4_c10",
+          "name": "Synapse summary",
+          "simple_answer": "Synapse converts electrical impulse to chemical neurotransmitter and back — enables controlled nervous communication.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Synapse day summary"
+          },
+          "why": "Day 4 consolidation.",
+          "example": "Explain why impulse is not purely electrical end-to-end.",
+          "remember": "Synapse + neuron structure = core nervous system biology.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Reflex Arc and Reflex Actions",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u2_d5_c01",
+          "name": "Reflex action — definition",
+          "simple_answer": "A reflex action is a sudden, involuntary motor response to a stimulus without conscious involvement of the brain.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reflex action defined"
+          },
+          "why": "NCERT core concept.",
+          "example": "Blinking when object approaches eye.",
+          "remember": "Fast, automatic, protective.",
+          "common_confusion": "Brain may know after reflex already happened.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reflex action"
+          ]
+        },
+        {
+          "id": "u2_d5_c02",
+          "name": "Reflex arc — definition",
+          "simple_answer": "Reflex arc is the nerve pathway taken by impulse during a reflex: receptor → sensory → relay → motor → effector.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Receptor → sensory → relay → motor → effector",
+            "note": "Reflex arc path"
+          },
+          "why": "Must-draw pathway.",
+          "example": "Hand withdrawal from pin prick follows reflex arc.",
+          "remember": "Minimum five components in order.",
+          "common_confusion": "Reflex arc may bypass brain for speed.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reflex arc"
+          ]
+        },
+        {
+          "id": "u2_d5_c03",
+          "name": "Spinal cord in reflex",
+          "simple_answer": "Many reflexes are processed in spinal cord — impulse reaches cord, relay neuron connects, motor response goes out before brain interprets.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Spinal cord reflex centre"
+          },
+          "why": "Why reflex is fast.",
+          "example": "Knee jerk: stimulus at knee, integration in spinal cord.",
+          "remember": "Spinal reflex does not mean brain is inactive forever.",
+          "common_confusion": "Brain receives message shortly after response.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c04",
+          "name": "Example — withdrawal reflex",
+          "simple_answer": "Sharp object touches hand → pain receptor → sensory neuron → spinal cord → motor neuron → arm muscles contract — hand pulls away.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Hand withdrawal reflex"
+          },
+          "why": "Classic NCERT example.",
+          "example": "Happens before you consciously feel full pain.",
+          "remember": "Protects body from continuing harm.",
+          "common_confusion": "Both arms can reflex — path is specific to stimulus side.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c05",
+          "name": "Example — knee-jerk reflex",
+          "simple_answer": "Tap on patellar tendon stretches muscle → stretch receptors → sensory to spinal cord → motor to thigh muscle → leg kicks.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Knee-jerk (patellar) reflex"
+          },
+          "why": "Doctor examination reflex.",
+          "example": "Tests spinal cord and nerve integrity.",
+          "remember": "Involuntary — cannot stop mid-kick easily.",
+          "common_confusion": "Different from voluntary kicking a ball.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c06",
+          "name": "Blink reflex",
+          "simple_answer": "Object near eye → stimulus detected → rapid reflex closes eyelid to protect cornea.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Blink reflex protects eye"
+          },
+          "why": "Protective reflex example.",
+          "example": "Wind or flying insect triggers blink.",
+          "remember": "Cornea protection is critical.",
+          "common_confusion": "Some blinks are voluntary too — distinguish context.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c07",
+          "name": "Advantage of reflexes",
+          "simple_answer": "Reflexes minimise delay and prevent injury by responding before slow conscious thought completes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Why reflexes are useful"
+          },
+          "why": "Evolutionary advantage.",
+          "example": "Touching hot stove — reflex saves skin.",
+          "remember": "Speed over conscious decision.",
+          "common_confusion": "Not all situations need reflex — some need thinking.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c08",
+          "name": "Activity 6.2 — reflex testing",
+          "simple_answer": "Activity 6.2: partner drops ruler; catch measures reaction time — voluntary vs reflex comparison.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 6.2 — reaction time"
+          },
+          "why": "NCERT practical.",
+          "example": "Shorter distance fallen = faster reaction.",
+          "remember": "Reflex arc is faster than voluntary catch in some tests.",
+          "common_confusion": "Voluntary reaction involves brain processing — slower.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c09",
+          "name": "Reflex vs voluntary action",
+          "simple_answer": "Reflex: no conscious thought, spinal cord often, very fast. Voluntary: brain decides, slower, learned skill possible.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reflex vs voluntary table"
+          },
+          "why": "Comparison question.",
+          "example": "Writing name = voluntary; sneeze reflex = involuntary.",
+          "remember": "Fill comparison table for exams.",
+          "common_confusion": "Sneezing is reflex; holding breath is voluntary override.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d5_c10",
+          "name": "Reflex arc diagram",
+          "simple_answer": "Draw and label: receptor, sensory neuron, relay neuron in spinal cord (cross-section), motor neuron, effector muscle.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reflex arc diagram exam prep"
+          },
+          "why": "High-yield diagram.",
+          "example": "Show spinal cord in cross-section with nerve paths.",
+          "remember": "Practice until labels are automatic.",
+          "common_confusion": "Arrow direction shows impulse flow only one way.",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Brain — Structure and Functions",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u2_d6_c01",
+          "name": "Human brain — overview",
+          "simple_answer": "Brain is the main coordinating centre of body enclosed in skull; integrates information and controls voluntary and involuntary actions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Brain — command centre"
+          },
+          "why": "CNS supreme integrator.",
+          "example": "Brain interprets vision, sound, memory, emotion.",
+          "remember": "Soft, highly protected organ.",
+          "common_confusion": "Brain is part of CNS with spinal cord.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "brain"
+          ]
+        },
+        {
+          "id": "u2_d6_c02",
+          "name": "Forebrain — cerebrum",
+          "simple_answer": "Cerebrum is largest part of forebrain; controls thinking, memory, reasoning, voluntary actions, and sensory interpretation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Cerebrum — thinking and senses"
+          },
+          "why": "Higher functions.",
+          "example": "Reading this card uses cerebrum.",
+          "remember": "Two hemispheres with many folds (gyri).",
+          "common_confusion": "Cerebrum is not the whole brain — also midbrain, hindbrain.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "cerebrum"
+          ]
+        },
+        {
+          "id": "u2_d6_c03",
+          "name": "Forebrain — sensory areas",
+          "simple_answer": "Different regions of cerebrum receive and interpret impulses from eyes, ears, nose, tongue, and skin.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sensory areas in cerebrum"
+          },
+          "why": "Functional localisation.",
+          "example": "Visual area at back; touch area in side regions.",
+          "remember": "Damage to area may impair specific sense interpretation.",
+          "common_confusion": "Sensory organ vs sensory area in brain — different.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c04",
+          "name": "Forebrain — motor areas",
+          "simple_answer": "Motor areas of cerebrum send impulses to voluntary muscles for coordinated movement.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Motor areas send commands"
+          },
+          "why": "Voluntary movement control.",
+          "example": "Deciding to pick up pen activates motor area.",
+          "remember": "Opposite side often controls opposite body limb.",
+          "common_confusion": "Reflex motor output can bypass cerebrum.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c05",
+          "name": "Midbrain",
+          "simple_answer": "Midbrain connects forebrain and hindbrain; controls some reflexes connected with vision and hearing.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Midbrain — vision/hearing reflexes"
+          },
+          "why": "Middle section role.",
+          "example": "Pupil reflex and some eye movement involve midbrain.",
+          "remember": "Smaller region between fore and hindbrain.",
+          "common_confusion": "Not the main thinking centre.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "midbrain"
+          ]
+        },
+        {
+          "id": "u2_d6_c06",
+          "name": "Hindbrain — cerebellum",
+          "simple_answer": "Cerebellum coordinates precision of voluntary movements, posture, and balance.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Cerebellum — balance and precision"
+          },
+          "why": "Motor fine-tuning.",
+          "example": "Cyclist maintains balance using cerebellum.",
+          "remember": "Damage causes shaky, uncoordinated movement.",
+          "common_confusion": "Cerebellum does not initiate movement — cerebrum does.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "cerebellum"
+          ]
+        },
+        {
+          "id": "u2_d6_c07",
+          "name": "Hindbrain — medulla",
+          "simple_answer": "Medulla oblongata controls involuntary actions: breathing, heartbeat, blood pressure, swallowing, vomiting.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Medulla — vital involuntary control"
+          },
+          "why": "Life-sustaining centres.",
+          "example": "Breathing continues during sleep thanks to medulla.",
+          "remember": "Never damage medulla — fatal functions.",
+          "common_confusion": "Medulla is hindbrain, not midbrain.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "medulla"
+          ]
+        },
+        {
+          "id": "u2_d6_c08",
+          "name": "Hindbrain — pons",
+          "simple_answer": "Pons connects different regions of brain and helps relay signals between cerebellum and other parts.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pons — relay in hindbrain"
+          },
+          "why": "Bridge region.",
+          "example": "Works with medulla for some respiratory rhythm.",
+          "remember": "Part of brainstem with medulla.",
+          "common_confusion": "Less detail required than cerebrum/medulla.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c09",
+          "name": "Brain diagram practice",
+          "simple_answer": "Label cerebrum, cerebellum, medulla, spinal cord on NCERT brain figure; state one function each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Brain diagram labels"
+          },
+          "why": "Exam preparation.",
+          "example": "Side view and top view both appear in textbooks.",
+          "remember": "Function match is common 5-mark question.",
+          "common_confusion": "Spinal cord continues from medulla downward.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d6_c10",
+          "name": "Brain structure summary",
+          "simple_answer": "Forebrain: thinking and senses. Midbrain: some reflexes. Hindbrain: cerebellum (balance), medulla (vital functions).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Brain regions summary"
+          },
+          "why": "Day 6 consolidation.",
+          "example": "Make flashcard: region → function.",
+          "remember": "Three main parts with sub-parts.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Brain Protection and Spinal Cord",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u2_d7_c01",
+          "name": "Skull protects brain",
+          "simple_answer": "Brain is protected by hard skull (cranium) that shields against mechanical injury.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Skull — bony protection"
+          },
+          "why": "First protection layer.",
+          "example": "Helmet protects skull which protects brain.",
+          "remember": "Bone casing absorbs some impact.",
+          "common_confusion": "Skull protects but concussion still possible.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c02",
+          "name": "Meninges",
+          "simple_answer": "Brain and spinal cord are wrapped in three membranes called meninges that provide support and protection.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Three meninges layers"
+          },
+          "why": "Membrane protection.",
+          "example": "Dura, arachnoid, pia — names optional at basic level.",
+          "remember": "Meninges hold CSF and blood vessels.",
+          "common_confusion": "Meningitis is infection of meninges.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "meninges"
+          ]
+        },
+        {
+          "id": "u2_d7_c03",
+          "name": "Cerebrospinal fluid (CSF)",
+          "simple_answer": "CSF fills space around brain and spinal cord; acts as shock absorber and supports brain weight.",
+          "visual": {
+            "type": "placeholder",
+            "label": "CSF shock absorption"
+          },
+          "why": "Fluid cushion.",
+          "example": "Brain floats in CSF inside skull.",
+          "remember": "Reduces impact damage from jolts.",
+          "common_confusion": "CSF is not the same as blood.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c04",
+          "name": "Vertebral column protects spinal cord",
+          "simple_answer": "Spinal cord runs through vertebral column (backbone) which protects it from injury.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Vertebrae protect spinal cord"
+          },
+          "why": "Spinal cord safety.",
+          "example": "Spinal injury may cause paralysis if cord damaged.",
+          "remember": "Vertebrae are individual bones in column.",
+          "common_confusion": "Spinal nerves exit between vertebrae.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c05",
+          "name": "Spinal cord — function",
+          "simple_answer": "Spinal cord relays messages between brain and body and acts as reflex centre for many reflex actions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Spinal cord dual role"
+          },
+          "why": "Link brain to periphery.",
+          "example": "Reflex and conscious messages both use cord.",
+          "remember": "Damage disrupts both reflex and voluntary paths.",
+          "common_confusion": "Spinal cord is not just a passive cable — integrates reflexes.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "spinal cord"
+          ]
+        },
+        {
+          "id": "u2_d7_c06",
+          "name": "Peripheral nerves from cord",
+          "simple_answer": "Pairs of spinal nerves branch from spinal cord to trunk and limbs carrying sensory and motor fibres.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Spinal nerves branch out"
+          },
+          "why": "PNS connection point.",
+          "example": "Arm sensation and movement use spinal nerves.",
+          "remember": "31 pairs of spinal nerves in humans.",
+          "common_confusion": "Cranial nerves come from brain, not cord.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c07",
+          "name": "Why brain protection matters",
+          "simple_answer": "Brain tissue cannot regenerate easily; protection prevents permanent loss of coordination, memory, or vital control.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Why protect CNS"
+          },
+          "why": "Health relevance.",
+          "example": "Wear helmet, avoid diving into shallow water.",
+          "remember": "Prevention better than cure for brain injury.",
+          "common_confusion": "Spinal cord injury is often permanent.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c08",
+          "name": "Concussion awareness",
+          "simple_answer": "Sudden blow to head can disturb brain function temporarily (concussion) — rest and medical check needed.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Concussion — brain injury"
+          },
+          "why": "Sports safety link.",
+          "example": "Headache, dizziness after head hit — tell adult.",
+          "remember": "Protection reduces but does not eliminate risk.",
+          "common_confusion": "Not a detailed medical topic — awareness only.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c09",
+          "name": "Activity 6.3 — brain model / discussion",
+          "simple_answer": "Activity 6.3 explores brain structure and function — identify regions and relate to daily activities.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 6.3 — brain study"
+          },
+          "why": "NCERT activity reference.",
+          "example": "Discuss which part helps in sport vs study.",
+          "remember": "Relate structure to function in activity.",
+          "common_confusion": "Use NCERT diagram while discussing.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d7_c10",
+          "name": "CNS protection summary",
+          "simple_answer": "Skull + meninges + CSF protect brain; vertebral column protects spinal cord — essential for safe nervous function.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Brain protection summary"
+          },
+          "why": "Day 7 consolidation.",
+          "example": "List four protection features in order.",
+          "remember": "Protection theme pairs with brain structure day.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Plant Immediate Responses",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u2_d8_c01",
+          "name": "Plants respond to stimuli",
+          "simple_answer": "Plants respond to environmental stimuli such as light, gravity, water, touch, and chemicals — without nervous system.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plants detect and respond"
+          },
+          "why": "Start plant coordination block.",
+          "example": "Roots grow toward moist soil.",
+          "remember": "Responses use hormones and turgor changes.",
+          "common_confusion": "Plant response ≠ no response — they are not inactive.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c02",
+          "name": "Mimosa pudica — touch response",
+          "simple_answer": "Mimosa (touch-me-not) leaves fold and droop when touched — immediate response due to loss of turgor in pulvinus cells.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mimosa leaf folding"
+          },
+          "why": "NCERT immediate response example.",
+          "example": "Touch leaf → folds within seconds.",
+          "remember": "Turgor change, not growth, causes movement.",
+          "common_confusion": "Different from tropism which is growth-based.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c03",
+          "name": "Turgor and plant movement",
+          "simple_answer": "Turgor pressure in plant cells can change quickly, causing reversible movement in some plants.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Turgor-driven movement"
+          },
+          "why": "Mechanism for immediate response.",
+          "example": "Wilting is loss of turgor; Mimosa pulvinus loses turgor on touch.",
+          "remember": "Water movement between cells changes shape.",
+          "common_confusion": "Growth movements are slower and permanent in direction.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "turgor"
+          ]
+        },
+        {
+          "id": "u2_d8_c04",
+          "name": "Sensitive plant pulvinus",
+          "simple_answer": "Pulvinus is swollen base of leaf stalk in Mimosa; cells lose turgor on stimulus spreading folding to whole leaf.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pulvinus at leaf base"
+          },
+          "why": "Structure behind folding.",
+          "example": "Stimulus spreads from touched leaflet to others.",
+          "remember": "Localized motor-like tissue in plant.",
+          "common_confusion": "Not found in all plants.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c05",
+          "name": "Venus flytrap (optional example)",
+          "simple_answer": "Some insectivorous plants snap shut quickly when trigger hairs touched — rapid turgor/movement response.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Fast trap closure"
+          },
+          "why": "Extension example beyond NCERT.",
+          "example": "Shows plants can have very fast responses.",
+          "remember": "Still not a nervous system — localized mechanism.",
+          "common_confusion": "Optional enrichment, not core exam.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c06",
+          "name": "Immediate vs tropism again",
+          "simple_answer": "Immediate: reversible, seconds (Mimosa). Tropism: growth response over hours/days toward/away from stimulus.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Immediate vs tropism contrast"
+          },
+          "why": "Critical distinction.",
+          "example": "Phototropism of shoot takes days to bend clearly.",
+          "remember": "Exam asks difference — know both.",
+          "common_confusion": "Hormones mediate tropisms; turgor often mediates immediate.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c07",
+          "name": "No nervous system in plants",
+          "simple_answer": "Plants lack neurons and brain; coordination is by hormones diffusing through tissues and local cell changes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plants use hormones not nerves"
+          },
+          "why": "Fundamental plant-animal difference.",
+          "example": "Auxin redistribution bends shoot — no nerve needed.",
+          "remember": "Do not draw reflex arc for plants.",
+          "common_confusion": "Plant 'signals' are chemical and slow compared to nerves.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c08",
+          "name": "Environmental stimuli for plants",
+          "simple_answer": "Light, gravity, water, touch, and day length all act as stimuli for plant responses and growth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plant stimuli list"
+          },
+          "why": "Stimulus breadth.",
+          "example": "Seed germination responds to water and temperature.",
+          "remember": "Same stimulus word as in animals — different mechanism.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c09",
+          "name": "Adaptive value of plant responses",
+          "simple_answer": "Plant responses improve photosynthesis, anchorage, and reproduction — tropisms and touch responses aid survival.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Why plants respond"
+          },
+          "why": "Functional reasoning.",
+          "example": "Roots toward water prevent drought death.",
+          "remember": "Link response to survival advantage.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d8_c10",
+          "name": "Immediate response summary",
+          "simple_answer": "Mimosa folding is classic immediate plant response via turgor; plants coordinate without nerves using hormones and cell mechanics.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plant immediate response summary"
+          },
+          "why": "Day 8 consolidation.",
+          "example": "Contrast Mimosa with sunflower following sun (growth).",
+          "remember": "Two plant response types mastered.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "Plant Hormones and Tropisms",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u2_d9_c01",
+          "name": "Plant hormones — definition",
+          "simple_answer": "Plant hormones (phytohormones) are chemical compounds produced in plants that control growth and responses at low concentration.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Phytohormones defined"
+          },
+          "why": "Plant chemical coordination.",
+          "example": "Auxin made in shoot tip controls bending.",
+          "remember": "Hormones move by diffusion or transport.",
+          "common_confusion": "Plant hormones ≠ animal hormones but similar idea.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "phytohormone"
+          ]
+        },
+        {
+          "id": "u2_d9_c02",
+          "name": "Auxin",
+          "simple_answer": "Auxin promotes cell elongation in shoots; uneven distribution causes bending toward or away from light.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Auxin — growth hormone"
+          },
+          "why": "Main NCERT plant hormone.",
+          "example": "Shoot tip cut → plant stops growing upward properly.",
+          "remember": "Made mainly in apical meristem.",
+          "common_confusion": "Auxin in roots inhibits elongation — opposite effect.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "auxin"
+          ]
+        },
+        {
+          "id": "u2_d9_c03",
+          "name": "Phototropism",
+          "simple_answer": "Phototropism is growth movement of plant part toward (positive) or away from (negative) light.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Phototropism — response to light"
+          },
+          "why": "Classic tropism.",
+          "example": "Shoot bends toward window light — positive phototropism.",
+          "remember": "Auxin accumulates on shaded side → more elongation → bend.",
+          "common_confusion": "Roots show negative phototropism.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "phototropism"
+          ]
+        },
+        {
+          "id": "u2_d9_c04",
+          "name": "Geotropism (gravitropism)",
+          "simple_answer": "Geotropism is growth response to gravity — roots grow down (positive), shoots grow up (negative).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Geotropism — gravity response"
+          },
+          "why": "Second major tropism.",
+          "example": "Place seedling horizontally — root bends down, shoot up.",
+          "remember": "Gravity affects auxin distribution.",
+          "common_confusion": "Also called gravitropism.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "geotropism"
+          ]
+        },
+        {
+          "id": "u2_d9_c05",
+          "name": "Hydrotropism",
+          "simple_answer": "Hydrotropism is growth of roots toward water — may override geotropism slightly when water is sideways.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Hydrotropism — toward water"
+          },
+          "why": "NCERT root behaviour.",
+          "example": "Roots bend toward wet soil in uneven moisture setup.",
+          "remember": "Important for drought survival.",
+          "common_confusion": "Demonstrates roots sense moisture gradient.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "hydrotropism"
+          ]
+        },
+        {
+          "id": "u2_d9_c06",
+          "name": "Chemotropism",
+          "simple_answer": "Chemotropism is growth toward a chemical — pollen tube grows toward ovule guided by chemical signals.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Chemotropism — pollen tube"
+          },
+          "why": "Reproduction link preview.",
+          "example": "Pollen tube grows down style toward egg.",
+          "remember": "Chemical gradient directs growth.",
+          "common_confusion": "Connects Ch 6 plant hormones to Ch 7.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d9_c07",
+          "name": "Gibberellins",
+          "simple_answer": "Gibberellins promote stem elongation, seed germination, and fruit growth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gibberellins — stem growth"
+          },
+          "why": "Additional phytohormone.",
+          "example": "Gibberellin spray can increase grape bunch size.",
+          "remember": "Work with auxin in growth control.",
+          "common_confusion": "Less detail than auxin in Class 10.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "gibberellin"
+          ]
+        },
+        {
+          "id": "u2_d9_c08",
+          "name": "Cytokinins",
+          "simple_answer": "Cytokinins promote cell division and delay leaf ageing (senescence).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Cytokinins — cell division"
+          },
+          "why": "Growth coordination hormone.",
+          "example": "Balance with auxin controls root vs shoot development.",
+          "remember": "Found in growing fruits and seeds.",
+          "common_confusion": "Class 10 — name and general role enough.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "cytokinin"
+          ]
+        },
+        {
+          "id": "u2_d9_c09",
+          "name": "Abscisic acid (ABA)",
+          "simple_answer": "Abscisic acid inhibits growth and promotes dormancy and stomatal closure in stress (e.g. drought).",
+          "visual": {
+            "type": "placeholder",
+            "label": "ABA — stress hormone"
+          },
+          "why": "Growth inhibitor role.",
+          "example": "Closing stomata reduces water loss in drought.",
+          "remember": "Opposite effect to gibberellins in germination.",
+          "common_confusion": "Stress hormone concept for plants.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "abscisic acid"
+          ]
+        },
+        {
+          "id": "u2_d9_c10",
+          "name": "Tropisms summary",
+          "simple_answer": "Tropisms are directed growth responses: phototropism (light), geotropism (gravity), hydrotropism (water) — controlled by hormones like auxin.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Tropisms and hormones summary"
+          },
+          "why": "Day 9 consolidation.",
+          "example": "Draw auxin uneven distribution diagram for phototropism.",
+          "remember": "Positive = toward stimulus; negative = away.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "Endocrine System — Overview",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u2_d10_c01",
+          "name": "Endocrine system — definition",
+          "simple_answer": "Endocrine system is a collection of ductless glands that secrete hormones directly into blood to regulate body functions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Endocrine system defined"
+          },
+          "why": "Chemical coordination in animals.",
+          "example": "Pituitary, thyroid, adrenal among key glands.",
+          "remember": "Hormones travel in blood to target organs.",
+          "common_confusion": "Endocrine glands have no ducts — exocrine have ducts.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "endocrine system"
+          ]
+        },
+        {
+          "id": "u2_d10_c02",
+          "name": "Hormone — definition",
+          "simple_answer": "A hormone is a chemical messenger produced by endocrine gland, carried by blood, acting on specific target cells.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Hormone defined"
+          },
+          "why": "Core term Ch 6.",
+          "example": "Insulin from pancreas lowers blood sugar in liver and muscles.",
+          "remember": "Low concentration, high effect; specific target.",
+          "common_confusion": "Hormones are not enzymes — different roles.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "hormone"
+          ]
+        },
+        {
+          "id": "u2_d10_c03",
+          "name": "Ductless glands",
+          "simple_answer": "Endocrine glands release hormones directly into bloodstream; unlike salivary gland which uses duct.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ductless vs duct glands"
+          },
+          "why": "Structural distinction.",
+          "example": "Thyroid secretes thyroxine into blood.",
+          "remember": "No tube leading to target — blood carries hormone.",
+          "common_confusion": "Salivary = exocrine with duct to mouth.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c04",
+          "name": "Target organs",
+          "simple_answer": "Target organs or cells have specific receptors that respond to particular hormones.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Hormone target specificity"
+          },
+          "why": "Why hormones don't affect all cells equally.",
+          "example": "Adrenaline acts on heart and liver during stress.",
+          "remember": "One hormone, specific targets with receptors.",
+          "common_confusion": "All cells are not targets for every hormone.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c05",
+          "name": "Pituitary gland",
+          "simple_answer": "Pituitary is master endocrine gland at base of brain; secretes hormones controlling other glands and growth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pituitary — master gland"
+          },
+          "why": "Key gland list start.",
+          "example": "Growth hormone from pituitary affects height.",
+          "remember": "Called master gland — controls thyroid, adrenals etc.",
+          "common_confusion": "Tiny but controls many body functions.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "pituitary gland"
+          ]
+        },
+        {
+          "id": "u2_d10_c06",
+          "name": "Thyroid gland",
+          "simple_answer": "Thyroid in neck secretes thyroxine regulating carbohydrate, protein, and fat metabolism and growth rate.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Thyroid — thyroxine"
+          },
+          "why": "Metabolism hormone.",
+          "example": "Iodine needed for thyroxine — goitre if iodine deficient.",
+          "remember": "Over/under secretion affects body weight and energy.",
+          "common_confusion": "Goitre = enlarged thyroid from iodine lack.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "thyroid"
+          ]
+        },
+        {
+          "id": "u2_d10_c07",
+          "name": "Adrenal glands",
+          "simple_answer": "Adrenal glands atop kidneys secrete adrenaline (epinephrine) for fight-or-flight response.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Adrenal — adrenaline"
+          },
+          "why": "Emergency hormone.",
+          "example": "Fear increases heart rate via adrenaline.",
+          "remember": "Prepares body for sudden action.",
+          "common_confusion": "Adrenal cortex and medulla differ — Class 10 focuses on adrenaline.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "adrenal gland"
+          ]
+        },
+        {
+          "id": "u2_d10_c08",
+          "name": "Pancreas — dual role",
+          "simple_answer": "Pancreas acts as endocrine gland (insulin, glucagon) and exocrine gland (digestive enzymes).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pancreas endocrine + exocrine"
+          },
+          "why": "Unique dual gland.",
+          "example": "Insulin controls blood glucose; pancreatic juice digests food.",
+          "remember": "Islets of Langerhans = endocrine part.",
+          "common_confusion": "Diabetes linked to insulin problem.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "pancreas"
+          ]
+        },
+        {
+          "id": "u2_d10_c09",
+          "name": "Endocrine system summary table",
+          "simple_answer": "Know gland → hormone → function: pituitary (GH), thyroid (thyroxine), adrenal (adrenaline), pancreas (insulin).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gland-hormone-function table"
+          },
+          "why": "Exam table preparation.",
+          "example": "Fill blank table from memory.",
+          "remember": "Iodised salt prevents thyroid problems.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d10_c10",
+          "name": "Endocrine vs nervous",
+          "simple_answer": "Endocrine: slow, long-lasting, blood transport. Nervous: fast, short-lived, nerve fibres.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Endocrine: blood, slow | Nervous: impulse, fast",
+            "note": "Compare coordination modes"
+          },
+          "why": "Day 10 opening comparison.",
+          "example": "Adrenaline is fast for hormone but still uses blood.",
+          "remember": "Both coordinate; often work together.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "Hormones, Feedback and Disorders",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u2_d11_c01",
+          "name": "Insulin — function",
+          "simple_answer": "Insulin secreted by pancreas lowers blood glucose by promoting uptake and storage as glycogen in liver and muscles.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Insulin lowers blood sugar"
+          },
+          "why": "Critical hormone for exams.",
+          "example": "After meal, insulin rises to store excess glucose.",
+          "remember": "Deficiency causes diabetes mellitus.",
+          "common_confusion": "Insulin does not raise blood sugar — glucagon does.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "insulin"
+          ]
+        },
+        {
+          "id": "u2_d11_c02",
+          "name": "Glucagon — function",
+          "simple_answer": "Glucagon from pancreas raises blood glucose by breaking down glycogen in liver when sugar level falls.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Glucagon raises blood sugar"
+          },
+          "why": "Pair with insulin.",
+          "example": "Between meals glucagon maintains blood glucose.",
+          "remember": "Insulin and glucagon oppose each other.",
+          "common_confusion": "Both from pancreas — balance blood sugar.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "glucagon"
+          ]
+        },
+        {
+          "id": "u2_d11_c03",
+          "name": "Feedback mechanism",
+          "simple_answer": "Feedback control: if a level rises, hormone reduces it; if it falls, opposite hormone raises it — maintains balance (homeostasis).",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "High glucose → insulin ↑ | Low glucose → glucagon ↑",
+            "note": "Negative feedback"
+          },
+          "why": "Homeostasis concept.",
+          "example": "Thermostat analogy — sense change, reverse it.",
+          "remember": "Negative feedback stabilises internal conditions.",
+          "common_confusion": "Positive feedback is rare (childbirth) — not core Class 10.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "feedback mechanism"
+          ]
+        },
+        {
+          "id": "u2_d11_c04",
+          "name": "Adrenaline — fight or flight",
+          "simple_answer": "Adrenaline increases heart rate, breathing, blood flow to muscles, and glucose release for emergency response.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Adrenaline emergency response"
+          },
+          "why": "Stress hormone effects.",
+          "example": "Exam fear: sweaty palms, fast heartbeat.",
+          "remember": "Body prepared for intense action quickly.",
+          "common_confusion": "Adrenaline works with sympathetic nervous system.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "adrenaline"
+          ]
+        },
+        {
+          "id": "u2_d11_c05",
+          "name": "Growth hormone",
+          "simple_answer": "Growth hormone from pituitary stimulates growth of bones and muscles; deficiency causes dwarfism, excess gigantism in youth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Growth hormone (GH)"
+          },
+          "why": "Pituitary hormone effect.",
+          "example": "Childhood height depends on adequate GH.",
+          "remember": "Secreted throughout life but peaks in growth years.",
+          "common_confusion": "Dwarfism/gigantism are pituitary GH disorders.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "growth hormone"
+          ]
+        },
+        {
+          "id": "u2_d11_c06",
+          "name": "Thyroxine and iodine",
+          "simple_answer": "Thyroxine requires iodine; deficiency causes goitre and can reduce metabolic rate and mental development in children.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Iodine for thyroxine"
+          },
+          "why": "Nutrition-endocrine link.",
+          "example": "Iodised salt prevents goitre in population.",
+          "remember": "Hormone needs mineral for its synthesis.",
+          "common_confusion": "Goitre is visible neck swelling — preventable.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d11_c07",
+          "name": "Diabetes mellitus",
+          "simple_answer": "Diabetes: blood glucose stays high — Type 1 (little insulin) or Type 2 (cells resist insulin); treated with diet, insulin injection, exercise.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Diabetes — high blood sugar"
+          },
+          "why": "Common disorder application.",
+          "example": "Frequent urination and thirst are symptoms.",
+          "remember": "Insulin injection replaces missing hormone in Type 1.",
+          "common_confusion": "Diabetes is not contagious.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "diabetes"
+          ]
+        },
+        {
+          "id": "u2_d11_c08",
+          "name": "Activity 6.4 — iodine and starch / hormone demos",
+          "simple_answer": "Activity 6.4 and related demos show role of iodine and hormone effects — link to thyroid and plant growth experiments.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 6.4 — iodine/hormones"
+          },
+          "why": "NCERT lab connection.",
+          "example": "Compare plant growth with and without tip.",
+          "remember": "Activities support hormone concept.",
+          "common_confusion": "Relate activity observations to auxin or iodine.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d11_c09",
+          "name": "Sex hormones preview",
+          "simple_answer": "Testosterone and estrogen control secondary sexual characters at puberty — detailed in reproductive health units.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sex hormones at puberty"
+          },
+          "why": "Bridge to Ch 7/8.",
+          "example": "Voice deepens in males due to testosterone.",
+          "remember": "Pituitary hormones trigger sex hormone release.",
+          "common_confusion": "Full detail in adolescence/reproduction chapters.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d11_c10",
+          "name": "Hormone summary",
+          "simple_answer": "Hormones maintain homeostasis via feedback: insulin/glucagon (sugar), thyroxine (metabolism), adrenaline (stress), GH (growth).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Hormones day summary"
+          },
+          "why": "Day 11 consolidation.",
+          "example": "Draw feedback loop for blood glucose.",
+          "remember": "Disorder name linked to gland/hormone.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Integration — Nervous and Endocrine Systems",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u2_d12_c01",
+          "name": "Integration of systems",
+          "simple_answer": "Nervous and endocrine systems work together — nerves can trigger hormone release and hormones affect nerve activity.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Nervous + endocrine integration"
+          },
+          "why": "Day 12 theme.",
+          "example": "Fear: brain senses → adrenal medulla stimulated → adrenaline released.",
+          "remember": "One stimulus, both systems respond.",
+          "common_confusion": "Integration gives flexible, adaptive responses.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c02",
+          "name": "Adrenaline and nerves together",
+          "simple_answer": "Sympathetic nervous system stimulates adrenal gland to release adrenaline during stress — dual coordination.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Nerve triggers adrenaline"
+          },
+          "why": "Classic integration example.",
+          "example": "Stage fright: brain interprets → physical symptoms via adrenaline.",
+          "remember": "Fast nerve signal + sustained hormone effect.",
+          "common_confusion": "Adrenaline is hormone, not neurotransmitter at synapse.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c03",
+          "name": "Reflex plus hormone",
+          "simple_answer": "Some responses start as reflex then hormones prolong effect — e.g. injury pain reflex then adrenaline maintains alertness.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reflex then hormone"
+          },
+          "why": "Layered response.",
+          "example": "Hand pulls from flame (reflex) then shaking continues (adrenaline).",
+          "remember": "Short reflex + longer hormonal state.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c04",
+          "name": "Growth coordination",
+          "simple_answer": "Growth hormone and thyroxine both affect body growth; pituitary and thyroid coordinated by feedback and hypothalamus.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Hormones in growth"
+          },
+          "why": "Long-term integration.",
+          "example": "Child needs adequate nutrition + hormones for growth.",
+          "remember": "Multiple hormones affect same process.",
+          "common_confusion": "Iodine deficiency affects brain development via thyroxine.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c05",
+          "name": "Plant-animal coordination contrast",
+          "simple_answer": "Animals: nerves + endocrine glands. Plants: hormones only, growth and turgor responses, no reflex arc.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plant vs animal coordination"
+          },
+          "why": "Whole chapter comparison.",
+          "example": "Same word 'hormone' — different systems in plant vs animal.",
+          "remember": "Table compare speed, mechanism, examples.",
+          "common_confusion": "Do not attribute brain to plants.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c06",
+          "name": "Homeostasis",
+          "simple_answer": "Homeostasis is maintaining stable internal conditions (temperature, glucose, water) despite external changes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Homeostasis defined"
+          },
+          "why": "Unifying concept.",
+          "example": "Sweating cools body; insulin lowers sugar — both homeostasis.",
+          "remember": "Nervous + endocrine + organs cooperate.",
+          "common_confusion": "Failure of homeostasis → illness.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "homeostasis"
+          ]
+        },
+        {
+          "id": "u2_d12_c07",
+          "name": "Temperature regulation (brief)",
+          "simple_answer": "Skin blood flow and sweating help maintain body temperature — nervous and hormonal inputs involved.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Temperature homeostasis"
+          },
+          "why": "Applied integration.",
+          "example": "Shivering generates heat when cold.",
+          "remember": "Hypothalamus acts as thermostat — detail optional.",
+          "common_confusion": "Not full physiology — overview only.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c08",
+          "name": "Coordination in daily life",
+          "simple_answer": "Walking, speaking, fighting infection, digesting food, and puberty all need coordinated nervous and hormonal control.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Coordination in daily activities"
+          },
+          "why": "Relatable synthesis.",
+          "example": "Running: brain, nerves, adrenaline, breathing, heart.",
+          "remember": "Every complex action uses both systems.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c09",
+          "name": "Common exam integration questions",
+          "simple_answer": "Explain how body responds to danger using nervous system AND adrenaline; compare plant tropism with animal reflex.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Integration exam questions"
+          },
+          "why": "Practice prompts.",
+          "example": "Write dual-system answer for full marks.",
+          "remember": "Always give both systems when asked 'how body coordinates'.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d12_c10",
+          "name": "Integration summary",
+          "simple_answer": "Effective coordination = receptors + nerves + brain/spinal cord + hormones + effectors working as one integrated system.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Integration day summary"
+          },
+          "why": "Day 12 consolidation.",
+          "example": "Draw concept map linking all Ch 6 parts.",
+          "remember": "Prepare for activities review next day.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Activities 6.1–6.4 Review",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u2_d13_c01",
+          "name": "Activity 6.1 review — nerve tissue slide",
+          "simple_answer": "Observe nerve tissue: identify long fibres (axons) and cell bodies; nerves are bundles of neurons.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 6.1 recap"
+          },
+          "why": "Microscopy skill check.",
+          "example": "Describe what you see in one paragraph.",
+          "remember": "Link slide to neuron structure day.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c02",
+          "name": "Activity 6.2 review — reflex and reaction",
+          "simple_answer": "Compare reflex speed vs voluntary reaction using ruler drop test; reflex arc bypasses conscious brain path.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 6.2 recap"
+          },
+          "why": "Data interpretation.",
+          "example": "Record multiple trials; calculate average catch distance.",
+          "remember": "Reflex is faster when pathway is shorter.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c03",
+          "name": "Activity 6.3 review — brain regions",
+          "simple_answer": "Identify cerebrum, cerebellum, medulla on diagram; assign one function to each region studied.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 6.3 recap"
+          },
+          "why": "Brain lab/discussion.",
+          "example": "Explain which part helps balance on one leg.",
+          "remember": "Medulla controls breathing — never voluntary stop permanently.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c04",
+          "name": "Activity 6.4 review — iodine and growth",
+          "simple_answer": "Relate iodine importance to thyroxine; plant tip removal experiment shows auxin role in growth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 6.4 recap"
+          },
+          "why": "Chemistry-biology link.",
+          "example": "Decolourised leaf with alcohol — safety in lab.",
+          "remember": "Iodine test and hormone growth demo combined in chapter activities.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c05",
+          "name": "Reflex arc written practice",
+          "simple_answer": "Write full reflex arc for hand withdrawal with five labelled components in correct order.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reflex arc writing practice"
+          },
+          "why": "Written exam drill.",
+          "example": "Marking scheme: labels + sequence + spinal cord.",
+          "remember": "Sensory neuron afferent; motor efferent.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c06",
+          "name": "Gland and hormone matching",
+          "simple_answer": "Practice matching: pituitary-GH, thyroid-thyroxine, adrenal-adrenaline, pancreas-insulin.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gland-hormone drill"
+          },
+          "why": "Table recall.",
+          "example": "Add function column without looking.",
+          "remember": "Iodine deficiency → thyroid → goitre chain.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c07",
+          "name": "Tropism experiment design",
+          "simple_answer": "Describe experiment showing phototropism: germinating seed in box with side hole — shoot bends toward light.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Phototropism experiment"
+          },
+          "why": "NCERT-style design question.",
+          "example": "Control: same setup in open light.",
+          "remember": "Independent variable: light direction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c08",
+          "name": "Compare coordination modes",
+          "simple_answer": "Fill table: nervous vs hormonal vs plant hormone — speed, pathway, example.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Three-way comparison table"
+          },
+          "why": "Synthesis exercise.",
+          "example": "Reflex vs adrenaline vs phototropism as examples.",
+          "remember": "One row per coordination type.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c09",
+          "name": "NCERT intext questions Ch 6",
+          "simple_answer": "Review NCERT intext questions on reflex, brain parts, auxin, and insulin.",
+          "visual": {
+            "type": "placeholder",
+            "label": "NCERT intext review"
+          },
+          "why": "Textbook checkpoint.",
+          "example": "Answer in notebook without notes first.",
+          "remember": "Intext Q often reappear in board exams.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d13_c10",
+          "name": "Activities block summary",
+          "simple_answer": "Activities 6.1–6.4 cover nerve observation, reflex timing, brain function, iodine/hormones — master observations and conclusions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activities 6.1–6.4 summary"
+          },
+          "why": "Day 13 consolidation.",
+          "example": "Write 'aim, procedure, observation, conclusion' for each.",
+          "remember": "Activities support diagram and long answers.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "Exam Diagrams — Control and Coordination",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u2_d14_c01",
+          "name": "Neuron diagram — exam standard",
+          "simple_answer": "Draw neuron with dendrites, cell body, nucleus, axon, myelin sheath, axon terminals — label all.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Neuron exam diagram"
+          },
+          "why": "Diagram day focus.",
+          "example": "Use pencil; arrows show impulse direction.",
+          "remember": "Cell body must show nucleus.",
+          "common_confusion": "Do not confuse with nerve cross-section.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c02",
+          "name": "Synapse diagram — exam standard",
+          "simple_answer": "Draw two neurons with synaptic cleft, vesicles, neurotransmitter dots, receptors on post-synaptic dendrite.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Synapse exam diagram"
+          },
+          "why": "High-frequency figure.",
+          "example": "Label pre- and post-synaptic neurons.",
+          "remember": "Show chemical crossing with arrows.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c03",
+          "name": "Reflex arc diagram — exam standard",
+          "simple_answer": "Full reflex arc with spinal cord cross-section, dorsal sensory root, ventral motor root, effector muscle.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reflex arc exam diagram"
+          },
+          "why": "Most asked Ch 6 diagram.",
+          "example": "Relay neuron inside grey matter of cord.",
+          "remember": "Receptor at skin clearly shown.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c04",
+          "name": "Brain diagram — exam standard",
+          "simple_answer": "Side view: cerebrum (large), cerebellum (behind, lower), medulla (joins spinal cord), label functions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Brain exam diagram"
+          },
+          "why": "Second most asked figure.",
+          "example": "Spinal cord continues downward.",
+          "remember": "Cerebellum looks like smaller lobe at back.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c05",
+          "name": "Phototropism auxin diagram",
+          "simple_answer": "Show shoot tip, light from one side, auxin more on shaded side, faster elongation, bend toward light.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Phototropism auxin diagram"
+          },
+          "why": "Plant diagram favourite.",
+          "example": "Arrow for light direction required.",
+          "remember": "Explain in caption below figure.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c06",
+          "name": "Endocrine glands location map",
+          "simple_answer": "Sketch body outline; mark pituitary, thyroid, adrenal, pancreas, testes/ovaries at correct positions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gland location map"
+          },
+          "why": "Anatomy recall.",
+          "example": "Adrenal on top of kidney shape.",
+          "remember": "Pituitary at base of brain.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c07",
+          "name": "Diagram marking tips",
+          "simple_answer": "Use clear labels with leader lines; title each diagram; scale not needed but proportions should be recognisable.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Diagram scoring tips"
+          },
+          "why": "Exam technique.",
+          "example": "Neatness earns partial credit.",
+          "remember": "Practice timed 5-minute sketches.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c08",
+          "name": "Common diagram errors",
+          "simple_answer": "Swapping dendrite/axon; missing relay neuron in reflex arc; labelling cerebellum as cerebrum.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Avoid diagram mistakes"
+          },
+          "why": "Error prevention.",
+          "example": "Check list before submitting paper.",
+          "remember": "Peer review each other's diagrams.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c09",
+          "name": "Label spelling list",
+          "simple_answer": "Cerebellum, medulla, synapse, dendrite, axon, phototropism, insulin, adrenaline — spell correctly.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Spelling checklist"
+          },
+          "why": "Written exam hygiene.",
+          "example": "Wrong spelling may lose mark in strict boards.",
+          "remember": "Write glossary on revision card.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d14_c10",
+          "name": "Diagram day summary",
+          "simple_answer": "Master five figures: neuron, synapse, reflex arc, brain, phototropism — draw daily until automatic.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Diagram day summary"
+          },
+          "why": "Day 14 consolidation.",
+          "example": "Time yourself: five diagrams in 25 minutes.",
+          "remember": "Diagrams carry 3–5 marks each in boards.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Written Questions — Control and Coordination",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u2_d15_c01",
+          "name": "3-mark: Define reflex action",
+          "simple_answer": "Reflex: sudden involuntary response to stimulus; example knee jerk or hand withdrawal; via reflex arc.",
+          "visual": {
+            "type": "placeholder",
+            "label": "3-mark reflex definition"
+          },
+          "why": "Short answer template.",
+          "example": "Definition + example + pathway mention.",
+          "remember": "One paragraph, under 80 words.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c02",
+          "name": "3-mark: Plant vs animal coordination",
+          "simple_answer": "Animals use nervous and endocrine systems; plants use hormones; plants show tropisms, animals show reflexes and voluntary actions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "3-mark plant vs animal"
+          },
+          "why": "Comparison short answer.",
+          "example": "Give one example each side.",
+          "remember": "Mention speed difference.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c03",
+          "name": "5-mark: Reflex arc explanation",
+          "simple_answer": "Define reflex arc; draw diagram; explain stimulus to response; state role of spinal cord; give example.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5-mark reflex arc"
+          },
+          "why": "Long answer structure.",
+          "example": "Introduction → diagram → stepwise → conclusion.",
+          "remember": "Allocate 2 marks to diagram.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c04",
+          "name": "5-mark: Hormonal regulation of glucose",
+          "simple_answer": "Explain insulin and glucagon; feedback mechanism; diagram optional; mention diabetes if insulin fails.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5-mark glucose regulation"
+          },
+          "why": "Endocrine long answer.",
+          "example": "Start with normal meal cycle.",
+          "remember": "Negative feedback keyword earns credit.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c05",
+          "name": "5-mark: Brain parts and functions",
+          "simple_answer": "Describe forebrain, midbrain, hindbrain with cerebrum, cerebellum, medulla functions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5-mark brain functions"
+          },
+          "why": "Structure-function answer.",
+          "example": "One function per region minimum.",
+          "remember": "Use subheadings in answer.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c06",
+          "name": "NCERT exercise Q — tropism",
+          "simple_answer": "Explain phototropism and role of auxin with experiment outline — common textbook question.",
+          "visual": {
+            "type": "placeholder",
+            "label": "NCERT tropism long Q"
+          },
+          "why": "Textbook aligned.",
+          "example": "Refer to shoot tip hormone production.",
+          "remember": "Control experiment description adds marks.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c07",
+          "name": "Value-based / application question",
+          "simple_answer": "Why iodised salt? Link iodine → thyroxine → metabolism → prevention of goitre and mental retardation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Application — iodised salt"
+          },
+          "why": "Public health angle.",
+          "example": "Government fortification programme.",
+          "remember": "Connect biology to daily nutrition.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c08",
+          "name": "Assertion-reason practice",
+          "simple_answer": "Practice AR questions: e.g. 'Assertion: Plants have no coordination. Reason: ...' — identify false assertion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Assertion-reason Ch 6"
+          },
+          "why": "Objective-style written prep.",
+          "example": "Plants do coordinate via hormones.",
+          "remember": "Read reason carefully — may be true alone.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c09",
+          "name": "Previous year themes",
+          "simple_answer": "Recurring topics: reflex arc diagram, insulin function, difference nervous/hormonal, phototropism.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Board exam themes Ch 6"
+          },
+          "why": "Strategic revision.",
+          "example": "Collect 5 past questions and answer timed.",
+          "remember": "Themes repeat across years.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d15_c10",
+          "name": "Written prep summary",
+          "simple_answer": "Prepare 3 short + 3 long answers covering reflex, brain, hormones, tropisms, integration.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Written prep summary"
+          },
+          "why": "Day 15 consolidation.",
+          "example": "Self-mark using NCERT key points.",
+          "remember": "Full answers under exam time limit.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "Revision and Unit 2 Complete",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u2_d16_c01",
+          "name": "Ch 6 key terms flashcard 1",
+          "simple_answer": "Stimulus, response, receptor, effector, neuron, nerve impulse, synapse, neurotransmitter.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Key terms set 1"
+          },
+          "why": "Term drill.",
+          "example": "Define each in one line.",
+          "remember": "Cover and recall daily.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c02",
+          "name": "Ch 6 key terms flashcard 2",
+          "simple_answer": "Reflex arc, spinal cord, cerebrum, cerebellum, medulla, auxin, phototropism, geotropism.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Key terms set 2"
+          },
+          "why": "Term drill continued.",
+          "example": "Match term to example.",
+          "remember": "Second set of eight terms.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c03",
+          "name": "Ch 6 key terms flashcard 3",
+          "simple_answer": "Hormone, endocrine gland, insulin, glucagon, adrenaline, thyroxine, feedback, homeostasis.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Key terms set 3"
+          },
+          "why": "Endocrine term drill.",
+          "example": "Gland-hormone-function triangle.",
+          "remember": "Third set completes chapter vocabulary.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c04",
+          "name": "Top five comparisons",
+          "simple_answer": "Nervous vs hormonal; reflex vs voluntary; dendrite vs axon; immediate vs tropism plant response; insulin vs glucagon.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Top five comparison pairs"
+          },
+          "why": "Revision checklist.",
+          "example": "One table per pair.",
+          "remember": "Comparison questions are predictable.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c05",
+          "name": "Must-draw diagrams list",
+          "simple_answer": "Neuron, synapse, reflex arc, brain side view, phototropism — redraw from memory.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Must-draw five diagrams"
+          },
+          "why": "Final diagram check.",
+          "example": "No notes — pure recall.",
+          "remember": "Done? Unit diagram ready.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c06",
+          "name": "Must-know activities",
+          "simple_answer": "6.1 nerve slide; 6.2 reflex; 6.3 brain; 6.4 iodine/growth — aim and conclusion each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Four activities recall"
+          },
+          "why": "Activity summary.",
+          "example": "One sentence conclusion per activity.",
+          "remember": "Activities link to long answers.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c07",
+          "name": "Common mistakes to avoid",
+          "simple_answer": "Saying plants don't respond; swapping xylem-style transport into nerves; calling insulin a digestive enzyme.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Avoid common mistakes"
+          },
+          "why": "Error correction.",
+          "example": "Review wrong answers from practice.",
+          "remember": "Fix one misconception per revision pass.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c08",
+          "name": "15-minute mixed quiz prep",
+          "simple_answer": "Mix MCQ themes: gland locations, reflex path order, tropism types, hormone functions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mixed quiz prep"
+          },
+          "why": "Pre-practice stage.",
+          "example": "Use before Stage 2 MCQ days.",
+          "remember": "Timed 15 minutes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c09",
+          "name": "NCERT chapter summary read",
+          "simple_answer": "Re-read NCERT Ch 6 summary points; tick each concept card topic as covered.",
+          "visual": {
+            "type": "placeholder",
+            "label": "NCERT summary review"
+          },
+          "why": "Textbook closure.",
+          "example": "Summary at chapter end is exam blueprint.",
+          "remember": "Every summary point has a card.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u2_d16_c10",
+          "name": "Unit 2 complete",
+          "simple_answer": "Unit 2 Control and Coordination complete — 160 concept cards; proceed to Practice when unlocked.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Unit 2 complete — 160 cards"
+          },
+          "why": "Completion card.",
+          "example": "Next: reproduction and heredity units.",
+          "remember": "Concepts done → practice → NCERT MCQs.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

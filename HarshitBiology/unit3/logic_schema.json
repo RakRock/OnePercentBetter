@@ -1,0 +1,2656 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 3,
+    "unit_title": "How do Organisms Reproduce?",
+    "ncert": "Class 10 Science, Chapter 7 (Biology)",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_biology_unit3_concepts",
+    "session_kind_mcq": "harshit_biology_unit3_mcq"
+  },
+  "glossary": [
+    {
+      "term": "asexual reproduction",
+      "definition": "Reproduction involving a single parent without gamete fusion."
+    },
+    {
+      "term": "sexual reproduction",
+      "definition": "Reproduction involving fusion of male and female gametes with variation."
+    },
+    {
+      "term": "binary fission",
+      "definition": "Asexual division of a unicellular organism into two equal parts."
+    },
+    {
+      "term": "pollination",
+      "definition": "Transfer of pollen from anther to stigma in flowering plants."
+    },
+    {
+      "term": "fertilisation",
+      "definition": "Fusion of male and female gametes to form a zygote."
+    },
+    {
+      "term": "menstruation",
+      "definition": "Monthly shedding of uterine lining when fertilisation does not occur."
+    },
+    {
+      "term": "contraception",
+      "definition": "Methods to prevent pregnancy by blocking fertilisation or implantation."
+    },
+    {
+      "term": "DNA copying",
+      "definition": "Replication of genetic material essential for faithful inheritance in reproduction."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "Why Reproduce and DNA Copying",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d1_c01",
+          "name": "Why organisms reproduce",
+          "simple_answer": "Organisms reproduce to create new individuals of their species so life continues generation after generation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Purpose of reproduction"
+          },
+          "why": "NCERT Ch 7 opening theme.",
+          "example": "Humans have children; mango trees produce seeds.",
+          "remember": "Reproduction is not for individual survival — it is for species continuity.",
+          "common_confusion": "Reproduction is different from growth or repair.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reproduction"
+          ]
+        },
+        {
+          "id": "u3_d1_c02",
+          "name": "DNA as genetic material",
+          "simple_answer": "DNA in the nucleus carries instructions that determine body design and inherited traits of an organism.",
+          "visual": {
+            "type": "placeholder",
+            "label": "DNA — blueprint of life"
+          },
+          "why": "Foundation for heredity link.",
+          "example": "Eye colour and blood group information is in DNA.",
+          "remember": "Every cell has DNA; gametes carry half in sexual reproduction.",
+          "common_confusion": "DNA copying must occur before cell division.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "DNA"
+          ]
+        },
+        {
+          "id": "u3_d1_c03",
+          "name": "Why DNA copying is needed",
+          "simple_answer": "New organism must get DNA from parents so it has complete instructions to build and run its body.",
+          "visual": {
+            "type": "placeholder",
+            "label": "DNA passed to offspring"
+          },
+          "why": "Links reproduction to heredity.",
+          "example": "Offspring resembles parents because DNA is copied and inherited.",
+          "remember": "Without DNA transfer, offspring would lack design information.",
+          "common_confusion": "Copying is not perfect — leads to variation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c04",
+          "name": "DNA copying and cell apparatus",
+          "simple_answer": "When cell divides, DNA copies and each new cell gets one copy plus existing cellular apparatus.",
+          "visual": {
+            "type": "placeholder",
+            "label": "DNA copy per daughter cell"
+          },
+          "why": "NCERT cell division discussion.",
+          "example": "Skin cell division replaces dead cells with same DNA.",
+          "remember": "Each daughter cell needs full DNA set.",
+          "common_confusion": "Cell apparatus also divides — not DNA alone.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c05",
+          "name": "Accuracy of DNA copying",
+          "simple_answer": "DNA copying is remarkably accurate but not absolutely perfect — small errors create variations.",
+          "visual": {
+            "type": "placeholder",
+            "label": "DNA copying accuracy"
+          },
+          "why": "Bridge to variation day.",
+          "example": "Most copies identical; rare changes alter traits.",
+          "remember": "High accuracy keeps species stable.",
+          "common_confusion": "Errors in body cells vs gametes differ in impact.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c06",
+          "name": "Variations from copying errors",
+          "simple_answer": "Variations are differences among individuals caused by inaccuracies in DNA copying or recombination.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Variations arise"
+          },
+          "why": "Survival advantage theme.",
+          "example": "Some bacteria resist antibiotic due to variation.",
+          "remember": "Variation is raw material for evolution.",
+          "common_confusion": "Not all variations are harmful or helpful.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "variation"
+          ]
+        },
+        {
+          "id": "u3_d1_c07",
+          "name": "Species-level importance",
+          "simple_answer": "Reproduction at species level maintains population size and passes DNA to next generation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Species continuity"
+          },
+          "why": "Big picture.",
+          "example": "Endangered species decline when reproduction fails.",
+          "remember": "Individual dies; species continues via offspring.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c08",
+          "name": "Reproduction vs other life processes",
+          "simple_answer": "Nutrition, respiration, transport support individual life; reproduction creates new individuals.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reproduction among life processes"
+          },
+          "why": "Ch 5–7 connection.",
+          "example": "A plant photosynthesises and also flowers to reproduce.",
+          "remember": "All life processes support reproduction indirectly.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c09",
+          "name": "Types of reproduction preview",
+          "simple_answer": "Organisms reproduce asexually (one parent) or sexually (two parents) — different DNA mixing outcomes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Asexual vs sexual preview"
+          },
+          "why": "Roadmap for unit.",
+          "example": "Amoeba binary fission vs human baby from parents.",
+          "remember": "Sexual reproduction increases variation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d1_c10",
+          "name": "Chapter 7 roadmap",
+          "simple_answer": "Ch 7 covers asexual modes, sexual reproduction in plants and humans, health, and Activities 7.1–7.7.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 7 roadmap — 16 days"
+          },
+          "why": "Unit orientation.",
+          "example": "Activities include yeast, hydra, bread mould, flower parts.",
+          "remember": "Plant and human reproduction both exam-heavy.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Variation and Its Significance",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d2_c01",
+          "name": "What is variation?",
+          "simple_answer": "Variation means differences in traits among individuals of the same species — height, colour, resistance, etc.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Variation defined"
+          },
+          "why": "Key Ch 7–8 concept.",
+          "example": "Human height and fingerprint patterns vary.",
+          "remember": "No two individuals identical except clones.",
+          "common_confusion": "Variation is not same as mutation only.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "variation"
+          ]
+        },
+        {
+          "id": "u3_d2_c02",
+          "name": "Sources of variation",
+          "simple_answer": "Variations arise from DNA copying errors, sexual recombination, and environmental effects on expression.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sources of variation"
+          },
+          "why": "Multi-cause understanding.",
+          "example": "Sibling differences from new gene combinations.",
+          "remember": "Sexual reproduction shuffles genes strongly.",
+          "common_confusion": "Environment affects phenotype not always genotype.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c03",
+          "name": "Variation in asexual reproduction",
+          "simple_answer": "Asexual offspring are mostly genetically identical to parent — variation is limited unless DNA copy error occurs.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Low variation asexual"
+          },
+          "why": "Contrast with sexual.",
+          "example": "Banana plants from suckers are clones.",
+          "remember": "Limited variation can be disadvantage in changing environment.",
+          "common_confusion": "Sudden useful mutation rare but possible.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c04",
+          "name": "Variation in sexual reproduction",
+          "simple_answer": "Sexual reproduction combines DNA from two parents producing new gene combinations and more variation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "High variation sexual"
+          },
+          "why": "NCERT emphasis.",
+          "example": "Brothers look similar but not identical.",
+          "remember": "Meiosis and fertilisation create diversity.",
+          "common_confusion": "Variation helps species adapt over time.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c05",
+          "name": "Advantage of variation",
+          "simple_answer": "Beneficial variations may help some individuals survive environmental changes when others cannot.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Variation and survival"
+          },
+          "why": "Natural selection preview.",
+          "example": "Bacteria variant resists new antibiotic.",
+          "remember": "Population with variation survives change better.",
+          "common_confusion": "Harmful variation may reduce survival.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c06",
+          "name": "Disadvantage of too little variation",
+          "simple_answer": "Population with very little variation may all die if environment changes — all lack suitable trait.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Risk of uniformity"
+          },
+          "why": "Clone vulnerability.",
+          "example": "Monoculture crops can be wiped by one disease.",
+          "remember": "Asexual clones uniform — fast spread of weakness too.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c07",
+          "name": "Inherited vs acquired traits",
+          "simple_answer": "Inherited traits come from DNA (eye colour); acquired traits develop in life (learned skill, scar) — usually not inherited.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Inherited vs acquired"
+          },
+          "why": "Ch 8 preview.",
+          "example": "Cutting tail of mice does not pass to babies — NCERT example.",
+          "remember": "Only DNA-based traits pass to offspring.",
+          "common_confusion": "Lamarck wrong; acquired not inherited.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c08",
+          "name": "Population variation",
+          "simple_answer": "Variation exists at population level — medicine and agriculture use this (crop breeding, antibiotic resistance).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Variation in populations"
+          },
+          "why": "Applied biology.",
+          "example": "Farmers select high-yield wheat variants.",
+          "remember": "Variation is practical not just theoretical.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c09",
+          "name": "Variation and evolution link",
+          "simple_answer": "Accumulated variations over generations, with selection, lead to evolution — Ch 9 preview.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Variation → evolution"
+          },
+          "why": "Forward link.",
+          "example": "Finch beak sizes varied on Galapagos.",
+          "remember": "Reproduction + variation + selection = evolution.",
+          "common_confusion": "Class 10 needs link statement only.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d2_c10",
+          "name": "Variation day summary",
+          "simple_answer": "DNA copying errors and sexual recombination create variation; variation helps species adapt and survive change.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Variation day summary"
+          },
+          "why": "Day 2 consolidation.",
+          "example": "Compare variation level asexual vs sexual.",
+          "remember": "Three sources: error, recombination, environment.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Asexual Reproduction — Binary Fission",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d3_c01",
+          "name": "Asexual reproduction — definition",
+          "simple_answer": "Asexual reproduction involves a single parent producing offspring genetically similar to itself without gametes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Asexual reproduction defined"
+          },
+          "why": "First reproduction mode.",
+          "example": "Amoeba divides into two daughter amoebae.",
+          "remember": "One parent; no fusion of gametes.",
+          "common_confusion": "Offspring are clones unless DNA error.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "asexual reproduction"
+          ]
+        },
+        {
+          "id": "u3_d3_c02",
+          "name": "Binary fission in Amoeba",
+          "simple_answer": "Amoeba reproduces by binary fission — nucleus divides then cytoplasm splits into two equal daughter cells.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Amoeba binary fission"
+          },
+          "why": "Classic NCERT example.",
+          "example": "Pseudopodia withdraw; cell pinches in middle.",
+          "remember": "Unicellular simple division.",
+          "common_confusion": "Not same as budding — equal halves.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "binary fission"
+          ]
+        },
+        {
+          "id": "u3_d3_c03",
+          "name": "Binary fission in Leishmania",
+          "simple_answer": "Leishmania (kala-azar parasite) binary fissions oriented along whip-like flagellum axis.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Leishmania fission"
+          },
+          "why": "NCERT specific organism.",
+          "example": "Transmitted by sandfly; affects internal organs.",
+          "remember": "Know organism name for exam.",
+          "common_confusion": "Orientation differs from Amoeba.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c04",
+          "name": "Binary fission in Plasmodium",
+          "simple_answer": "Plasmodium (malaria parasite) reproduces asexually in human liver and RBCs by multiple fission stages too.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Plasmodium asexual stages"
+          },
+          "why": "Disease link.",
+          "example": "Malaria cycles include asexual multiplication in host.",
+          "remember": "Complex life cycle — asexual and sexual in mosquito.",
+          "common_confusion": "Exam may ask organism-mode match.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c05",
+          "name": "Activity 7.1 — yeast budding observation",
+          "simple_answer": "Activity 7.1 also compares yeast; today focus fission organisms under microscope or diagrams.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.1 link"
+          },
+          "why": "Lab connection.",
+          "example": "Yeast shows budding not fission.",
+          "remember": "Distinguish yeast from Amoeba mode.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c06",
+          "name": "Advantages of binary fission",
+          "simple_answer": "Fast, energy-efficient, works well in stable environment when parent well adapted.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Fission advantages"
+          },
+          "why": "Why unicellular use it.",
+          "example": "Amoeba doubles population quickly in pond.",
+          "remember": "No need to find mate.",
+          "common_confusion": "Rapid colonisation of favourable habitat.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c07",
+          "name": "Limitations of asexual reproduction",
+          "simple_answer": "Limited variation; population vulnerable to same disease or environmental shift.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Asexual limitations"
+          },
+          "why": "Balanced view.",
+          "example": "All identical potato plants share same blight risk.",
+          "remember": "Trade speed for diversity.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c08",
+          "name": "Multiple fission",
+          "simple_answer": "Some protozoans divide into many daughter cells at once — multiple fission (e.g. Plasmodium schizont).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Multiple fission"
+          },
+          "why": "Extension of asexual.",
+          "example": "One cell → many daughter cells simultaneously.",
+          "remember": "Different from binary — many at once.",
+          "common_confusion": "Still asexual — no gametes.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c09",
+          "name": "Asexual in unicellular vs multicellular",
+          "simple_answer": "Unicellular: fission common. Multicellular: budding, fragmentation etc. — next days.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Asexual scope"
+          },
+          "why": "Organisation level.",
+          "example": "Amoeba one cell becomes two.",
+          "remember": "Multicellular needs different body division.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d3_c10",
+          "name": "Binary fission summary",
+          "simple_answer": "Amoeba and Leishmania: binary fission; fast clone production; limited variation; know diagrams and steps.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Binary fission summary"
+          },
+          "why": "Day 3 consolidation.",
+          "example": "Draw Amoeba dividing with nucleus split.",
+          "remember": "Name organism + mode for exam.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Fragmentation, Regeneration and Budding",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u3_d4_c01",
+          "name": "Fragmentation",
+          "simple_answer": "Fragmentation: organism breaks into pieces and each piece grows into a new individual (e.g. Spirogyra).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Fragmentation — Spirogyra"
+          },
+          "why": "Asexual mode.",
+          "example": "Algae filaments break and each grows.",
+          "remember": "Needs ability of each fragment to regenerate full body.",
+          "common_confusion": "Not same as regeneration after injury only.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "fragmentation"
+          ]
+        },
+        {
+          "id": "u3_d4_c02",
+          "name": "Spirogyra reproduction",
+          "simple_answer": "Spirogyra alga reproduces by fragmentation when filaments break into pieces that grow into new filaments.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Spirogyra example"
+          },
+          "why": "NCERT named example.",
+          "example": "Thread-like green alga in ponds.",
+          "remember": "Simple multicellular asexual.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c03",
+          "name": "Regeneration",
+          "simple_answer": "Regeneration is ability to regrow lost or damaged parts; in some organisms regrown part becomes new individual.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Regeneration defined"
+          },
+          "why": "Planaria classic example.",
+          "example": "Planaria cut into pieces — each regenerates whole worm.",
+          "remember": "Common in lower organisms; limited in humans.",
+          "common_confusion": "Human liver regrows partly — not full body regeneration.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "regeneration"
+          ]
+        },
+        {
+          "id": "u3_d4_c04",
+          "name": "Planaria regeneration",
+          "simple_answer": "Planaria (flatworm) shows high regeneration — even small body piece can form complete organism.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Planaria example"
+          },
+          "why": "Exam favourite.",
+          "example": "Cut head or tail piece regenerates missing parts.",
+          "remember": "Specialised cells proliferate at cut site.",
+          "common_confusion": "Regeneration used for asexual in some species.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c05",
+          "name": "Budding — definition",
+          "simple_answer": "Budding: small outgrowth (bud) forms on parent, develops organs, detaches to live independently.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Budding defined"
+          },
+          "why": "Yeast and Hydra mode.",
+          "example": "Yeast cell forms tiny bud that grows and separates.",
+          "remember": "Parent retains identity; bud becomes offspring.",
+          "common_confusion": "Bud may stay attached forming colony.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "budding"
+          ]
+        },
+        {
+          "id": "u3_d4_c06",
+          "name": "Hydra budding",
+          "simple_answer": "Hydra grows bud on side; bud develops tentacles and mouth then separates as new Hydra.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Hydra budding"
+          },
+          "why": "NCERT diagram organism.",
+          "example": "Freshwater polyp on pond weeds.",
+          "remember": "Bud visible externally before detachment.",
+          "common_confusion": "Activity 7.1 may observe Hydra buds.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c07",
+          "name": "Yeast budding",
+          "simple_answer": "Yeast (unicellular fungus) forms bud on parent cell; nucleus divides and bud gets nucleus then pinches off.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Yeast budding"
+          },
+          "why": "Activity 7.1 focus.",
+          "example": "Bread and beer fermentation uses yeast.",
+          "remember": "Asymmetric division — bud smaller than parent.",
+          "common_confusion": "Yeast shows budding not binary fission.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c08",
+          "name": "Compare fission, fragmentation, budding",
+          "simple_answer": "Fission: equal split one cell. Fragmentation: pieces of body. Budding: outgrowth from parent.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Three asexual modes compared"
+          },
+          "why": "Table question.",
+          "example": "Amoeba fission; Spirogyra fragmentation; Hydra budding.",
+          "remember": "Match organism to mode.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c09",
+          "name": "Activity 7.1 review",
+          "simple_answer": "Activity 7.1: yeast in sugar water — observe budding under microscope; CO₂ from respiration.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.1 — yeast"
+          },
+          "why": "Practical recall.",
+          "example": "Bud scar visible on yeast cells.",
+          "remember": "Link budding to reproduction not just fermentation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d4_c10",
+          "name": "Day 4 summary",
+          "simple_answer": "Fragmentation (Spirogyra), regeneration (Planaria), budding (Hydra, Yeast) — three distinct asexual strategies.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Fragmentation/budding summary"
+          },
+          "why": "Day 4 consolidation.",
+          "example": "Draw Hydra with bud labelled.",
+          "remember": "Regeneration ≠ fragmentation always.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Vegetative Propagation and Spores",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d5_c01",
+          "name": "Vegetative propagation",
+          "simple_answer": "Vegetative propagation is asexual reproduction in plants using vegetative parts — root, stem, leaf — not seeds.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Vegetative propagation"
+          },
+          "why": "Plant asexual agriculture.",
+          "example": "Potato tuber, ginger rhizome, Bryophyllum leaf.",
+          "remember": "Clone plants with desired traits fast.",
+          "common_confusion": "Farmers use for identical crop quality.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "vegetative propagation"
+          ]
+        },
+        {
+          "id": "u3_d5_c02",
+          "name": "Potato tuber",
+          "simple_answer": "Potato reproduces from tuber bearing buds (eyes) that grow into new plants genetically same as parent.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Potato — tuber buds"
+          },
+          "why": "Common crop example.",
+          "example": "Cut tuber with eye planted in soil.",
+          "remember": "Tuber is modified stem not root.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c03",
+          "name": "Ginger rhizome",
+          "simple_answer": "Ginger spreads underground via rhizome — horizontal stem with nodes that sprout shoots and roots.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ginger — rhizome"
+          },
+          "why": "Stem modification.",
+          "example": "Rhizome piece planted grows new plant.",
+          "remember": "Underground stem storage and reproduction.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c04",
+          "name": "Bryophyllum leaf buds",
+          "simple_answer": "Bryophyllum leaf margins produce adventitious buds that fall and grow into new plants.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Bryophyllum — leaf buds"
+          },
+          "why": "Leaf propagation.",
+          "example": "Notches on leaf edge sprout plantlets.",
+          "remember": "Vegetative from leaf — NCERT example.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c05",
+          "name": "Sugarcane and rose cutting",
+          "simple_answer": "Stem cuttings placed in soil develop roots and shoots — artificial vegetative propagation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Stem cuttings"
+          },
+          "why": "Horticulture practice.",
+          "example": "Gardeners root rose cuttings in moist soil.",
+          "remember": "Artificial method uses same natural principle.",
+          "common_confusion": "Hormone rooting powder helps cuttings.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c06",
+          "name": "Advantages for farmers",
+          "simple_answer": "Vegetative propagation is fast, uniform quality, flowers/fruits earlier than seed-grown plants.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Farmer advantages"
+          },
+          "why": "Applied question.",
+          "example": "Mango grafting preserves sweet variety.",
+          "remember": "No waiting for seed germination and long juvenile phase.",
+          "common_confusion": "Disease in one clone affects all — risk too.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c07",
+          "name": "Spore formation",
+          "simple_answer": "Some organisms reproduce by spores — tiny cells in protective coat that germinate in suitable conditions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Spore formation"
+          },
+          "why": "Rhizopus and ferns.",
+          "example": "Bread mould Rhizopus releases spores in air.",
+          "remember": "Spores lightweight, spread widely.",
+          "common_confusion": "Spores are reproductive cells not seeds.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "spore"
+          ]
+        },
+        {
+          "id": "u3_d5_c08",
+          "name": "Rhizopus (bread mould)",
+          "simple_answer": "Rhizopus fungus on bread produces sporangia full of spores dispersed by air.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Rhizopus sporangia"
+          },
+          "why": "Activity 7.2 link.",
+          "example": "White thread-like hyphae with black sporangia dots.",
+          "remember": "Spores land on new bread start growth.",
+          "common_confusion": "Activity 7.2 observes bread mould.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c09",
+          "name": "Spores vs seeds",
+          "simple_answer": "Spores: usually single cell, no embryo food store. Seeds: multicellular embryo with stored food — flowering plants.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Spore vs seed"
+          },
+          "why": "Comparison.",
+          "example": "Fern spores on underside of leaf.",
+          "remember": "Seeds are more complex reproductive structure.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d5_c10",
+          "name": "Vegetative and spores summary",
+          "simple_answer": "Plants: vegetative parts (tuber, rhizome, leaf, cutting) and spores (Rhizopus) — know examples and advantages.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 5 summary"
+          },
+          "why": "Consolidation.",
+          "example": "List five plant asexual examples.",
+          "remember": "Match structure to plant name.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Sexual Reproduction — Introduction",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d6_c01",
+          "name": "Sexual reproduction — definition",
+          "simple_answer": "Sexual reproduction involves fusion of male and female gametes from two parents to form a new individual.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sexual reproduction defined"
+          },
+          "why": "Major mode shift in Ch 7.",
+          "example": "Human baby from egg and sperm fusion.",
+          "remember": "Two parents; gamete formation and fusion.",
+          "common_confusion": "Offspring has mixed genetic information.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "sexual reproduction"
+          ]
+        },
+        {
+          "id": "u3_d6_c02",
+          "name": "Gametes",
+          "simple_answer": "Gametes are specialised reproductive cells — sperm (male) and egg/ovum (female) — usually haploid.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gametes — sperm and egg"
+          },
+          "why": "Core vocabulary.",
+          "example": "Pollen and egg in plants; sperm and ovum in humans.",
+          "remember": "Haploid: half chromosome set.",
+          "common_confusion": "Gametes fuse to restore diploid zygote.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "gamete"
+          ]
+        },
+        {
+          "id": "u3_d6_c03",
+          "name": "Fertilisation",
+          "simple_answer": "Fertilisation is fusion of male and female gametes to form zygote — first cell of new organism.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Male gamete + Female gamete → Zygote",
+            "note": "Fertilisation"
+          },
+          "why": "Central event.",
+          "example": "Zygote divides by mitosis to form embryo.",
+          "remember": "Internal or external fertilisation.",
+          "common_confusion": "Fertilisation ≠ pollination in plants.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "fertilisation"
+          ]
+        },
+        {
+          "id": "u3_d6_c04",
+          "name": "Why sexual reproduction creates variation",
+          "simple_answer": "Gametes from each parent carry different gene combinations; fusion creates unique offspring genotype.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sexual → variation"
+          },
+          "why": "Link Day 2 variation.",
+          "example": "Siblings share parents but differ in many traits.",
+          "remember": "Meiosis shuffles genes before gamete formation.",
+          "common_confusion": "More variation than asexual modes.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c05",
+          "name": "Male and female reproductive parts",
+          "simple_answer": "Flowers have stamen (male) and pistil (female); animals have separate reproductive systems.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reproductive parts overview"
+          },
+          "why": "Plant and animal parallel.",
+          "example": "Stamen makes pollen; ovary makes egg cell.",
+          "remember": "Specialised organs for gamete production.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c06",
+          "name": "Internal vs external fertilisation",
+          "simple_answer": "Internal: fusion inside female body (humans, birds). External: fusion in water (many fish, frogs).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Internal vs external fertilisation"
+          },
+          "why": "Environment comparison.",
+          "example": "Humans: sperm meets egg in oviduct.",
+          "remember": "External needs water medium for gametes.",
+          "common_confusion": "Plants: pollination then internal fertilisation in ovule.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c07",
+          "name": "Embryo development preview",
+          "simple_answer": "Zygote divides repeatedly forming embryo that develops into foetus/baby or seedling.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Zygote → embryo"
+          },
+          "why": "Development arc.",
+          "example": "Human embryo implants in uterus.",
+          "remember": "Mitosis builds body from single zygote.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c08",
+          "name": "Asexual vs sexual summary table",
+          "simple_answer": "Asexual: one parent, fast, low variation. Sexual: two parents, slower, high variation, gametes involved.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Asexual vs sexual table"
+          },
+          "why": "Exam comparison.",
+          "example": "Fill table with at least four rows.",
+          "remember": "Both are reproduction modes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c09",
+          "name": "When sexual reproduction is advantageous",
+          "simple_answer": "Changing or challenging environments favour varied offspring — some may survive new conditions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "When sexual wins"
+          },
+          "why": "Evolutionary reasoning.",
+          "example": "Pathogens evolve; variation helps host resistance.",
+          "remember": "Cost of finding mate offset by adaptability.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d6_c10",
+          "name": "Sexual reproduction intro summary",
+          "simple_answer": "Sexual reproduction: gametes from two parents fuse to zygote; creates variation; leads to flower and human systems.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 6 summary"
+          },
+          "why": "Consolidation.",
+          "example": "Define gamete, fertilisation, zygote.",
+          "remember": "Preview plant flower structure next.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Flower Structure and Pollination",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d7_c01",
+          "name": "Flower — reproductive organ",
+          "simple_answer": "Flower is the reproductive organ of angiosperms (flowering plants) producing male and female gametes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Flower — plant reproduction"
+          },
+          "why": "Plant sexual reproduction start.",
+          "example": "Mustard or hibiscus flower dissection in lab.",
+          "remember": "Modified shoot for reproduction.",
+          "common_confusion": "Not all plants have flowers — ferns use spores.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "flower"
+          ]
+        },
+        {
+          "id": "u3_d7_c02",
+          "name": "Stamen — male part",
+          "simple_answer": "Stamen consists of anther (pollen grains) and filament; produces male gametes in pollen.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Stamen — anther and filament"
+          },
+          "why": "Male flower part.",
+          "example": "Yellow anthers dust pollen on finger.",
+          "remember": "Pollen carries male gamete to egg.",
+          "common_confusion": "Filament holds anther up.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "stamen"
+          ]
+        },
+        {
+          "id": "u3_d7_c03",
+          "name": "Pistil (carpel) — female part",
+          "simple_answer": "Pistil has stigma, style, and ovary; ovule inside ovary contains female gamete (egg cell).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pistil — stigma, style, ovary"
+          },
+          "why": "Female flower part.",
+          "example": "Ovary becomes fruit after fertilisation.",
+          "remember": "Stigma receives pollen; style is tube path.",
+          "common_confusion": "Egg is inside ovule not directly in ovary wall.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "pistil"
+          ]
+        },
+        {
+          "id": "u3_d7_c04",
+          "name": "Pollen grain",
+          "simple_answer": "Pollen grain is male gametophyte containing male gamete; formed in anther.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pollen grain"
+          },
+          "why": "Male gamete carrier.",
+          "example": "Pollen allergy from inhaling pollen.",
+          "remember": "Light pollen wind-dispersed; sticky for insects.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c05",
+          "name": "Pollination — definition",
+          "simple_answer": "Pollination is transfer of pollen from anther to stigma of same or another flower.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pollination defined"
+          },
+          "why": "Must occur before fertilisation.",
+          "example": "Bees carry pollen flower to flower.",
+          "remember": "Pollination ≠ fertilisation.",
+          "common_confusion": "Can be self or cross pollination.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "pollination"
+          ]
+        },
+        {
+          "id": "u3_d7_c06",
+          "name": "Self-pollination",
+          "simple_answer": "Pollen transferred to stigma of same flower or another flower on same plant.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Self-pollination"
+          },
+          "why": "Less variation than cross.",
+          "example": "Peas often self-pollinate.",
+          "remember": "Faster but less genetic mixing.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c07",
+          "name": "Cross-pollination",
+          "simple_answer": "Pollen transferred to stigma of flower on different plant of same species — more variation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Cross-pollination"
+          },
+          "why": "Agents needed.",
+          "example": "Mango often cross-pollinated by insects.",
+          "remember": "Wind, water, insects, animals as agents.",
+          "common_confusion": "Preferred in breeding for new combinations.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c08",
+          "name": "Pollinating agents",
+          "simple_answer": "Wind (grasses), water (hydrilla), insects (bees, butterflies), birds, bats carry pollen.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pollination agents"
+          },
+          "why": "Adaptation match.",
+          "example": "Wind pollination: light dry pollen, feathery stigma.",
+          "remember": "Flower colour and nectar attract insects.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c09",
+          "name": "Activity 7.3 — flower parts",
+          "simple_answer": "Activity 7.3: dissect flower, identify sepals, petals, stamen, pistil; locate anther and ovary.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.3 — flower dissection"
+          },
+          "why": "Hands-on NCERT.",
+          "example": "Draw labelled diagram from dissection.",
+          "remember": "Sepals protect bud; petals attract pollinators.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d7_c10",
+          "name": "Pollination day summary",
+          "simple_answer": "Know flower parts; pollen to stigma = pollination; agents include wind and insects; then fertilisation in ovule.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 7 summary"
+          },
+          "why": "Consolidation.",
+          "example": "Draw longitudinal flower section.",
+          "remember": "Pollination before fertilisation always.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Fertilisation and Seed Formation in Plants",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u3_d8_c01",
+          "name": "Pollen tube growth",
+          "simple_answer": "After pollen lands on stigma, pollen tube grows down style carrying male gametes to ovule.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pollen tube in style"
+          },
+          "why": "Path to egg.",
+          "example": "Chemotropism guides pollen tube to ovule.",
+          "remember": "Tube nucleus leads path through style tissues.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c02",
+          "name": "Fertilisation in plants",
+          "simple_answer": "Male gamete fuses with egg cell in ovule forming zygote; second male gamete may fuse with polar nuclei (triple fusion).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Fertilisation in ovule"
+          },
+          "why": "Double fertilisation in angiosperms.",
+          "example": "Zygote becomes embryo; endosperm food tissue forms.",
+          "remember": "Unique to flowering plants — detail as NCERT.",
+          "common_confusion": "Fertilisation occurs inside ovule.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c03",
+          "name": "Ovule to seed",
+          "simple_answer": "After fertilisation ovule develops into seed containing embryo and stored food (cotyledons/endosperm).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ovule → seed"
+          },
+          "why": "Seed formation.",
+          "example": "Bean seed has two cotyledons with stored food.",
+          "remember": "Seed protects embryo in dormant state.",
+          "common_confusion": "Ovule wall becomes seed coat.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c04",
+          "name": "Ovary to fruit",
+          "simple_answer": "Ovary wall develops into fruit after fertilisation; protects seeds and aids dispersal.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ovary → fruit"
+          },
+          "why": "Fruit role.",
+          "example": "Apple flesh is swollen ovary tissue.",
+          "remember": "Fruit formation signals successful reproduction.",
+          "common_confusion": "Fruit not always sweet — dry fruits too.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c05",
+          "name": "Seed dispersal",
+          "simple_answer": "Seeds spread by wind, water, animals, explosion — reduces competition with parent plant.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Seed dispersal methods"
+          },
+          "why": "Population spread.",
+          "example": "Maple winged seeds float on wind.",
+          "remember": "Dispersal increases survival chance.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c06",
+          "name": "Germination",
+          "simple_answer": "Seed absorbs water, embryo resumes growth, radicle emerges as root, plumule as shoot.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Seed germination"
+          },
+          "why": "New plant start.",
+          "example": "Bean seed splits; root goes down first.",
+          "remember": "Needs water, air, suitable temperature.",
+          "common_confusion": "Germination is not fertilisation.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "germination"
+          ]
+        },
+        {
+          "id": "u3_d8_c07",
+          "name": "Activity 7.4 — germination conditions",
+          "simple_answer": "Activity 7.4 tests seeds with/without water, air, warmth — identify conditions needed for germination.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.4 — germination"
+          },
+          "why": "Experimental design.",
+          "example": "Boiled seed control — dead embryo won't grow.",
+          "remember": "Oxygen needed for respiration in germination.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c08",
+          "name": "Reproduction in plants summary diagram",
+          "simple_answer": "Pollination → pollen tube → fertilisation in ovule → seed + fruit → dispersal → germination.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Pollination → Fertilisation → Seed → Fruit → Germination",
+            "note": "Plant sexual cycle"
+          },
+          "why": "Flow chart for exams.",
+          "example": "Draw linear sequence with labels.",
+          "remember": "Include agents at pollination step.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c09",
+          "name": "Hybridisation (brief)",
+          "simple_answer": "Farmers cross pollinate selected plants to combine desirable traits — uses cross-pollination principle.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Hybridisation in agriculture"
+          },
+          "why": "Application.",
+          "example": "High-yield hybrid maize.",
+          "remember": "Human use of plant reproduction biology.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d8_c10",
+          "name": "Plant fertilisation summary",
+          "simple_answer": "Fertilisation in ovule forms embryo; ovule→seed, ovary→fruit; germination needs water, air, warmth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 8 summary"
+          },
+          "why": "Consolidation.",
+          "example": "Contrast pollination vs fertilisation.",
+          "remember": "Double fertilisation keyword for angiosperms.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "Male Reproductive System",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d9_c01",
+          "name": "Human male system overview",
+          "simple_answer": "Male reproductive system produces sperm in testes and delivers them through penis.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Male system overview"
+          },
+          "why": "Human reproduction block.",
+          "example": "Testes in scrotum outside body cavity.",
+          "remember": "Produces sperm and testosterone.",
+          "common_confusion": "Know main organs and functions.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c02",
+          "name": "Testes — sperm and hormone",
+          "simple_answer": "Testes produce male gametes (sperm) and male sex hormone testosterone.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Testes — sperm + testosterone"
+          },
+          "why": "Primary male gonads.",
+          "example": "Sperm formed in seminiferous tubules.",
+          "remember": "Lower temperature in scrotum aids sperm formation.",
+          "common_confusion": "Testosterone controls secondary sexual characters.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "testes"
+          ]
+        },
+        {
+          "id": "u3_d9_c03",
+          "name": "Scrotum location",
+          "simple_answer": "Testes lie in scrotum outside abdomen — cooler than body core for viable sperm production.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Scrotum — temperature"
+          },
+          "why": "Adaptation reason.",
+          "example": "Tight clothing excess heat may reduce sperm count temporarily.",
+          "remember": "Sperm production needs ~2–3°C below body.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c04",
+          "name": "Vas deferens and path",
+          "simple_answer": "Sperm pass from testes through vas deferens to urethra; seminal vesicles and prostate add fluid.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sperm delivery pathway"
+          },
+          "why": "Anatomy sequence.",
+          "example": "Semen = sperm + gland secretions.",
+          "remember": "Vas deferens stores and transports sperm.",
+          "common_confusion": "Urethra carries urine and semen (not together).",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c05",
+          "name": "Semen composition",
+          "simple_answer": "Semen nourishes and transports sperm; fluid from seminal vesicles, prostate, and other glands.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Semen — fluid + sperm"
+          },
+          "why": "Function not just transport.",
+          "example": "Provides alkaline medium neutralising vaginal acidity.",
+          "remember": "Sperm are minority volume of semen.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c06",
+          "name": "Penis — delivery",
+          "simple_answer": "Penis delivers semen into female reproductive tract during mating (copulation).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Penis — copulation"
+          },
+          "why": "External organ role.",
+          "example": "Urethra runs through penis.",
+          "remember": "Delivery organ not gamete producer.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c07",
+          "name": "Puberty in males",
+          "simple_answer": "Puberty: voice deepens, facial hair, broader shoulders — driven by testosterone from testes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Male puberty changes"
+          },
+          "why": "Secondary sexual characters.",
+          "example": "Adam's apple growth from larynx enlargement.",
+          "remember": "Puberty marks reproductive maturity.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c08",
+          "name": "Sperm structure (basic)",
+          "simple_answer": "Sperm has head (nucleus), middle piece (energy), tail (motility) — adapted for reaching egg.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sperm structure"
+          },
+          "why": "Cell specialisation.",
+          "example": "Millions in one ejaculation; one fertilises egg.",
+          "remember": "Haploid nucleus in head.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c09",
+          "name": "Male hygiene and health",
+          "simple_answer": "Keep reproductive organs clean; seek medical help for pain, swelling, or irregular discharge.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Male reproductive health"
+          },
+          "why": "Health awareness.",
+          "example": "Regular check-ups if problems.",
+          "remember": "Early treatment prevents complications.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d9_c10",
+          "name": "Male system summary",
+          "simple_answer": "Testes → sperm + testosterone; vas deferens, glands, urethra, penis — label diagram and state functions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 9 summary"
+          },
+          "why": "Consolidation.",
+          "example": "Draw and label male system.",
+          "remember": "Scrotum temperature point is exam favourite.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "Female Reproductive System and Menstruation",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d10_c01",
+          "name": "Female system overview",
+          "simple_answer": "Female system produces eggs in ovaries, nurtures embryo in uterus, and has birth canal (vagina).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Female system overview"
+          },
+          "why": "Parallel to male day.",
+          "example": "Ovaries alternate egg release roughly monthly.",
+          "remember": "Also produces estrogen and progesterone.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c02",
+          "name": "Ovaries — egg production",
+          "simple_answer": "Ovaries produce female gametes (ova/eggs) and hormones estrogen and progesterone.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ovaries — eggs + hormones"
+          },
+          "why": "Female gonads.",
+          "example": "One mature egg released per cycle typically.",
+          "remember": "Girl born with all egg precursors — maturation later.",
+          "common_confusion": "",
+          "optional_detail": [
+            "ovary"
+          ],
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c03",
+          "name": "Oviduct (Fallopian tube)",
+          "simple_answer": "Oviduct carries egg from ovary to uterus; usual site of fertilisation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Oviduct — fertilisation site"
+          },
+          "why": "Critical location.",
+          "example": "Cilia line tube moving egg toward uterus.",
+          "remember": "Blockage can cause infertility.",
+          "common_confusion": "Also called fallopian tube.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "oviduct"
+          ]
+        },
+        {
+          "id": "u3_d10_c04",
+          "name": "Uterus — womb",
+          "simple_answer": "Uterus is muscular chamber where embryo implants and grows during pregnancy.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Uterus — embryo development"
+          },
+          "why": "Pregnancy organ.",
+          "example": "Thick lining (endometrium) each cycle.",
+          "remember": "Strong muscle wall for labour contractions.",
+          "common_confusion": "",
+          "optional_detail": [
+            "uterus"
+          ],
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c05",
+          "name": "Vagina — birth canal",
+          "simple_answer": "Vagina receives sperm during copulation and serves as birth canal during delivery.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Vagina — copulation and birth"
+          },
+          "why": "External connection.",
+          "example": "Elastic muscular tube.",
+          "remember": "Part of female external/internal anatomy set.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c06",
+          "name": "Menstrual cycle overview",
+          "simple_answer": "Roughly 28-day cycle: egg matures, uterus lining thickens, if no fertilisation lining breaks down — menstruation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Menstrual cycle"
+          },
+          "why": "NCERT core process.",
+          "example": "Period bleeding is lining shedding not egg loss mainly.",
+          "remember": "Cycle regulated by hormones.",
+          "common_confusion": "Menarche starts cycle; menopause ends.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "menstruation"
+          ]
+        },
+        {
+          "id": "u3_d10_c07",
+          "name": "Menstruation",
+          "simple_answer": "Menstruation is monthly shedding of uterine lining through vagina when fertilisation does not occur.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Menstruation defined"
+          },
+          "why": "Normal healthy process.",
+          "example": "Typically 3–7 days bleeding.",
+          "remember": "Not a disease — sign of reproductive maturity.",
+          "common_confusion": "Hygiene and rest during period important.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c08",
+          "name": "Puberty in females",
+          "simple_answer": "Breast development, wider hips, menstruation begins — estrogen and progesterone driven.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Female puberty"
+          },
+          "why": "Secondary characters.",
+          "example": "Menarche marks start of menstrual cycles.",
+          "remember": "Timing varies individually — normal range wide.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c09",
+          "name": "Female system diagram",
+          "simple_answer": "Label ovary, oviduct, uterus, cervix, vagina on NCERT diagram; state one function each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Female diagram practice"
+          },
+          "why": "Exam figure.",
+          "example": "Side view cut-section common in papers.",
+          "remember": "Cervix is uterus opening to vagina.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d10_c10",
+          "name": "Female system summary",
+          "simple_answer": "Ovaries release egg; fertilisation in oviduct; uterus nurtures embryo; menstruation if no pregnancy.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 10 summary"
+          },
+          "why": "Consolidation.",
+          "example": "Draw cycle timeline with hormone roles brief.",
+          "remember": "Fertilisation site ≠ uterus initially.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "Pregnancy and Development",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d11_c01",
+          "name": "Fertilisation in humans",
+          "simple_answer": "Sperm fuses with egg in oviduct forming zygote which begins dividing while moving to uterus.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Human fertilisation"
+          },
+          "why": "Start of pregnancy path.",
+          "example": "Millions sperm; one reaches egg.",
+          "remember": "Zygote is diploid — 46 chromosomes human.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c02",
+          "name": "Implantation",
+          "simple_answer": "Blastocyst embeds in thickened uterine lining (endometrium) — implantation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Implantation in uterus"
+          },
+          "why": "Pregnancy establishment.",
+          "example": "Occurs about week after fertilisation.",
+          "remember": "Without implantation pregnancy cannot continue.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c03",
+          "name": "Embryo and foetus",
+          "simple_answer": "Embryo term early development; foetus after major organs formed — grows in uterus until birth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Embryo → foetus"
+          },
+          "why": "Development stages.",
+          "example": "Heartbeat detectable early in pregnancy.",
+          "remember": "Placenta connects mother and embryo.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c04",
+          "name": "Placenta function",
+          "simple_answer": "Placenta provides oxygen, nutrients from mother to embryo and removes wastes; barrier to some not all substances.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Placenta — exchange organ"
+          },
+          "why": "Critical structure.",
+          "example": "Umbilical cord links embryo to placenta.",
+          "remember": "No direct blood mixing — exchange across membranes.",
+          "common_confusion": "Alcohol and drugs can cross — harm baby.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "placenta"
+          ]
+        },
+        {
+          "id": "u3_d11_c05",
+          "name": "Umbilical cord",
+          "simple_answer": "Umbilical cord connects foetus to placenta carrying blood vessels for nutrient and gas exchange.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Umbilical cord"
+          },
+          "why": "Physical link.",
+          "example": "Cut at birth; scar becomes navel.",
+          "remember": "Two arteries one vein in cord typically.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c06",
+          "name": "Gestation period",
+          "simple_answer": "Human gestation about 9 months (280 days) — full development before birth.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gestation ~9 months"
+          },
+          "why": "Timeline fact.",
+          "example": "Trimesters divide pregnancy care stages.",
+          "remember": "Varies slightly individual to individual.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c07",
+          "name": "Birth (parturition)",
+          "simple_answer": "Strong uterine contractions and cervical dilation expel baby; followed by placenta delivery.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Birth process"
+          },
+          "why": "Basic overview.",
+          "example": "Labour contractions rhythmically increase.",
+          "remember": "Medical assistance reduces risk.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c08",
+          "name": "Mother's health during pregnancy",
+          "simple_answer": "Balanced diet, folic acid, iron, check-ups, avoid alcohol/tobacco/drugs — essential for healthy baby.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pregnancy health"
+          },
+          "why": "NCERT health emphasis.",
+          "example": "Mother's nutrition affects foetal development.",
+          "remember": "Rubella vaccination before pregnancy ideal.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c09",
+          "name": "Lactation (brief)",
+          "simple_answer": "After birth, mammary glands produce milk — nutrition and immunity for newborn.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Breastfeeding benefits"
+          },
+          "why": "Post-birth care.",
+          "example": "Colostrum rich in antibodies.",
+          "remember": "Breastfeeding supports infant health.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d11_c10",
+          "name": "Pregnancy summary",
+          "simple_answer": "Fertilisation in oviduct → implantation → placenta exchange → birth; maternal health critical throughout.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 11 summary"
+          },
+          "why": "Consolidation.",
+          "example": "Draw placenta exchange diagram.",
+          "remember": "Placenta is temporary organ.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Reproductive Health and Contraception",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u3_d12_c01",
+          "name": "Reproductive health — definition",
+          "simple_answer": "Reproductive health means physical, emotional, and social well-being in all matters related to reproductive system.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reproductive health defined"
+          },
+          "why": "WHO-aligned NCERT theme.",
+          "example": "Access to safe care and information.",
+          "remember": "Not merely absence of disease.",
+          "common_confusion": "Includes informed choice and hygiene.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "reproductive health"
+          ]
+        },
+        {
+          "id": "u3_d12_c02",
+          "name": "Adolescence and puberty care",
+          "simple_answer": "Adolescents need balanced diet, exercise, hygiene, and accurate information during puberty changes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Adolescent care"
+          },
+          "why": "Age-appropriate guidance.",
+          "example": "Myths about puberty cause anxiety.",
+          "remember": "Talk to trusted adults or doctors.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c03",
+          "name": "Population and family planning",
+          "simple_answer": "Responsible parenthood and family planning help healthy spacing of children and resource planning.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Family planning"
+          },
+          "why": "Social biology angle.",
+          "example": "Government awareness programmes.",
+          "remember": "Voluntary informed decisions.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c04",
+          "name": "Contraception — purpose",
+          "simple_answer": "Contraception prevents unwanted pregnancy; some methods also reduce STD risk.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Contraception purpose"
+          },
+          "why": "Methods overview day.",
+          "example": "Couples choose method with medical advice.",
+          "remember": "Does not replace reproductive health education.",
+          "common_confusion": "",
+          "optional_detail": [
+            "contraception"
+          ],
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c05",
+          "name": "Barrier methods",
+          "simple_answer": "Condoms (male/female) block sperm entry and reduce STD transmission.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Barrier — condoms"
+          },
+          "why": "Dual protection.",
+          "example": "Only method that greatly reduces many STDs.",
+          "remember": "Must be used correctly each time.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c06",
+          "name": "Chemical methods",
+          "simple_answer": "Oral pills change hormone levels preventing ovulation — prescription and monitoring needed.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Oral contraceptive pills"
+          },
+          "why": "Hormonal method.",
+          "example": "Doctor advises suitable pill.",
+          "remember": "Does not protect against STDs alone.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c07",
+          "name": "Intrauterine devices (IUD)",
+          "simple_answer": "Copper-T placed in uterus prevents implantation — long-term reversible method with medical insertion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Copper-T IUD"
+          },
+          "why": "NCERT named device.",
+          "example": "Inserted by trained health worker.",
+          "remember": "Check-ups ensure proper placement.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c08",
+          "name": "Surgical methods",
+          "simple_answer": "Vasectomy (male) and tubectomy (female) block gamete transport — permanent sterilisation option.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Surgical contraception"
+          },
+          "why": "Permanent choice.",
+          "example": "Should be voluntary informed adult decision.",
+          "remember": "Difficult to reverse — consider carefully.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c09",
+          "name": "Emergency and myths",
+          "simple_answer": "Avoid unscientific methods; emergency contraception exists but is not regular method; myths cause harm.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Avoid myths"
+          },
+          "why": "Critical thinking.",
+          "example": "Safe abortion only at licensed medical facilities where legal.",
+          "remember": "Peer misinformation common — verify medically.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d12_c10",
+          "name": "Contraception summary",
+          "simple_answer": "Know barrier, hormonal, IUD, surgical methods; condoms also reduce STD risk; choose with medical guidance.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 12 summary"
+          },
+          "why": "Consolidation.",
+          "example": "Table: method, mechanism, STD protection.",
+          "remember": "No single method suits everyone.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Sexually Transmitted Diseases (STDs)",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d13_c01",
+          "name": "STDs — definition",
+          "simple_answer": "Sexually transmitted diseases spread mainly through sexual contact — bacterial or viral infections.",
+          "visual": {
+            "type": "placeholder",
+            "label": "STDs defined"
+          },
+          "why": "Health education section.",
+          "example": "HIV/AIDS most discussed in NCERT.",
+          "remember": "Prevention better than cure.",
+          "common_confusion": "",
+          "optional_detail": [
+            "STD"
+          ],
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c02",
+          "name": "Common STD examples",
+          "simple_answer": "Examples: gonorrhoea, syphilis (bacterial); warts, HIV (viral) — NCERT list.",
+          "visual": {
+            "type": "placeholder",
+            "label": "STD examples"
+          },
+          "why": "Name recognition.",
+          "example": "Symptoms vary; some silent initially.",
+          "remember": "Early medical treatment essential.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c03",
+          "name": "HIV and AIDS",
+          "simple_answer": "HIV attacks immune system; AIDS is advanced stage with opportunistic infections; no complete cure yet.",
+          "visual": {
+            "type": "placeholder",
+            "label": "HIV → AIDS"
+          },
+          "why": "Major public health topic.",
+          "example": "Antiretroviral therapy controls HIV.",
+          "remember": "HIV is virus; AIDS is syndrome.",
+          "common_confusion": "Not spread by casual touch or sharing meals.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "HIV",
+            "AIDS"
+          ]
+        },
+        {
+          "id": "u3_d13_c04",
+          "name": "Modes of HIV transmission",
+          "simple_answer": "HIV spreads through infected blood, sexual contact, and mother-to-child (birth/breastfeeding) — not casual contact.",
+          "visual": {
+            "type": "placeholder",
+            "label": "HIV transmission modes"
+          },
+          "why": "Myth busting.",
+          "example": "Shared needles high risk.",
+          "remember": "Know factual modes for exam.",
+          "common_confusion": "Shaking hands does not transmit HIV.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c05",
+          "name": "Prevention of STDs",
+          "simple_answer": "Use condoms, limit partners, avoid shared needles, screening, and timely treatment of infections.",
+          "visual": {
+            "type": "placeholder",
+            "label": "STD prevention"
+          },
+          "why": "Action list.",
+          "example": "Abstinence or safe practices.",
+          "remember": "Vaccination available for some (e.g. HPV) — beyond core NCERT.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c06",
+          "name": "Stigma and testing",
+          "simple_answer": "STD/HIV stigma prevents testing; confidential counselling and testing save lives.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Reduce stigma"
+          },
+          "why": "Social awareness.",
+          "example": "Support affected individuals.",
+          "remember": "Medical confidentiality important.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c07",
+          "name": "Mother-to-child prevention",
+          "simple_answer": "Medical interventions during pregnancy and delivery reduce HIV transmission from mother to child.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Prevent vertical transmission"
+          },
+          "why": "Applied health.",
+          "example": "Antiretroviral drugs to mother and baby.",
+          "remember": "Public health programmes exist.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c08",
+          "name": "Adolescent responsibility",
+          "simple_answer": "Delay sexual activity, seek scientific information, respect consent, and protect self and partner health.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Responsible behaviour"
+          },
+          "why": "Values-linked science.",
+          "example": "Peer pressure vs informed choice.",
+          "remember": "School health programmes help.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c09",
+          "name": "Government programmes",
+          "simple_answer": "Awareness campaigns, free condoms, HIV testing centres, and adolescent health clinics.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Public health programmes"
+          },
+          "why": "Civic link.",
+          "example": "NACO and related initiatives in India.",
+          "remember": "Know prevention is collective effort.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d13_c10",
+          "name": "STD day summary",
+          "simple_answer": "STDs preventable; HIV factual modes; condoms help; no stigma; seek medical help early.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 13 summary"
+          },
+          "why": "Consolidation.",
+          "example": "List prevention methods without myths.",
+          "remember": "HIV vs AIDS distinction required.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "Activities 7.1–7.4 Review",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d14_c01",
+          "name": "Activity 7.1 — yeast budding recap",
+          "simple_answer": "Observe yeast budding; sugar provides energy; reproduction via bud formation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.1 recap"
+          },
+          "why": "Asexual lab.",
+          "example": "Write aim, material, observation, conclusion.",
+          "remember": "Distinguish budding from fission.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c02",
+          "name": "Activity 7.2 — Rhizopus spores recap",
+          "simple_answer": "Bread mould shows hyphae and sporangia; spores airborne; asexual reproduction.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.2 recap"
+          },
+          "why": "Fungal spores.",
+          "example": "Black dots are sporangia on hyphae.",
+          "remember": "Keep bread moist covered for growth.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c03",
+          "name": "Activity 7.3 — flower dissection recap",
+          "simple_answer": "Identify stamen, pistil, anther, ovary; relate to pollination and fertilisation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.3 recap"
+          },
+          "why": "Plant structure lab.",
+          "example": "Longitudinal section diagram from dissection.",
+          "remember": "Link parts to gamete location.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c04",
+          "name": "Activity 7.4 — germination recap",
+          "simple_answer": "Seeds need water, oxygen, suitable temperature; boiled seed control fails to germinate.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.4 recap"
+          },
+          "why": "Conditions experiment.",
+          "example": "Variable one factor at a time.",
+          "remember": "Germination vs growth later in soil.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c05",
+          "name": "Match organism to reproduction mode",
+          "simple_answer": "Drill: Amoeba-fission, Hydra-budding, Spirogyra-fragmentation, Rhizopus-spores, Yeast-budding.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Organism-mode matching"
+          },
+          "why": "Exam drill.",
+          "example": "Flashcards both directions.",
+          "remember": "NCERT named organisms only.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c06",
+          "name": "Pollination vs fertilisation written",
+          "simple_answer": "Practice distinguishing: pollen to stigma vs gamete fusion in ovule.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pollination vs fertilisation"
+          },
+          "why": "Common confusion fix.",
+          "example": "Two sentences each with example.",
+          "remember": "Order: pollination first.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c07",
+          "name": "Human reproductive pathway",
+          "simple_answer": "Trace sperm path and egg path; mark fertilisation site and implantation site.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Human pathway trace"
+          },
+          "why": "Integration exercise.",
+          "example": "Label diagram without textbook.",
+          "remember": "Urethra vs oviduct — different systems.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c08",
+          "name": "NCERT intext Ch 7 review",
+          "simple_answer": "Answer intext questions on DNA copying, modes of reproduction, placenta, contraception.",
+          "visual": {
+            "type": "placeholder",
+            "label": "NCERT intext Ch 7"
+          },
+          "why": "Textbook checkpoint.",
+          "example": "Self-test closed book.",
+          "remember": "Intext mirrors board style.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c09",
+          "name": "Comparison table practice",
+          "simple_answer": "Asexual vs sexual; self vs cross pollination; internal vs external fertilisation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Comparison tables Ch 7"
+          },
+          "why": "Written prep.",
+          "example": "Three tables from memory.",
+          "remember": "At least three differences each.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d14_c10",
+          "name": "Activities 7.1–7.4 summary",
+          "simple_answer": "Four activities cover asexual observation, spores, flower anatomy, germination — know conclusions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activities block summary"
+          },
+          "why": "Day 14 consolidation.",
+          "example": "One paragraph per activity.",
+          "remember": "Activities support diagram questions.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Activities 7.5–7.7 and Extended Review",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d15_c01",
+          "name": "Activity 7.5 — reproduction health discussion",
+          "simple_answer": "Discuss adolescent changes, hygiene, and myths; link to NCERT reproductive health section.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.5 recap"
+          },
+          "why": "Discussion activity.",
+          "example": "Scientific attitude toward puberty.",
+          "remember": "Counselor or teacher guided.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c02",
+          "name": "Activity 7.6 — contraceptive awareness",
+          "simple_answer": "Collect information on contraceptive methods from reliable health sources — compare mechanisms.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.6 recap"
+          },
+          "why": "Research activity.",
+          "example": "Poster or table presentation.",
+          "remember": "Emphasise medical reliability of sources.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c03",
+          "name": "Activity 7.7 — STD awareness",
+          "simple_answer": "Prepare awareness material on STD/HIV prevention — factual modes of transmission.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 7.7 recap"
+          },
+          "why": "Health campaign style.",
+          "example": "Correct myths in community.",
+          "remember": "Confidential testing information.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c04",
+          "name": "5-mark: Asexual modes with examples",
+          "simple_answer": "Describe fission, budding, fragmentation, regeneration, spore formation with NCERT organism each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5-mark asexual modes"
+          },
+          "why": "Long answer practice.",
+          "example": "Intro + five modes + examples + conclusion.",
+          "remember": "Diagram optional per mode.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c05",
+          "name": "5-mark: Human female system",
+          "simple_answer": "Draw diagram; explain menstruation cycle; role of ovary and uterus.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5-mark female system"
+          },
+          "why": "Long answer.",
+          "example": "Hormone names add credit.",
+          "remember": "Menstruation not shameful — health view.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c06",
+          "name": "5-mark: Plant reproduction sequence",
+          "simple_answer": "Explain pollination, fertilisation, seed and fruit formation with diagram.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5-mark plant reproduction"
+          },
+          "why": "Plant long Q.",
+          "example": "Label anther, stigma, ovule.",
+          "remember": "Agents of pollination included.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c07",
+          "name": "Diagram: flower L.S. and germination",
+          "simple_answer": "Practice flower longitudinal section and seed germination sequence diagrams.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Diagram drill Ch 7"
+          },
+          "why": "Visual exam prep.",
+          "example": "Timed 10 minutes both.",
+          "remember": "Neat labels with leader lines.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c08",
+          "name": "Previous year Ch 7 themes",
+          "simple_answer": "Recurring: reproduction modes table, placenta function, contraceptive methods, HIV prevention.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Board themes Ch 7"
+          },
+          "why": "Strategic review.",
+          "example": "Solve 5 PYQs timed.",
+          "remember": "Health questions increasing in boards.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c09",
+          "name": "Ethical and social dimensions",
+          "simple_answer": "Write short notes on responsible parenthood, gender respect, and access to health services.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Social-ethical notes"
+          },
+          "why": "Holistic NCERT.",
+          "example": "Science plus social responsibility.",
+          "remember": "Value-based questions use this.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d15_c10",
+          "name": "Extended review summary",
+          "simple_answer": "Activities 7.5–7.7 plus long answers and diagrams — complete Ch 7 written preparation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 15 summary"
+          },
+          "why": "Consolidation.",
+          "example": "Checklist tick all activities.",
+          "remember": "Ready for exam complete day.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "Exam Complete — Unit 3",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u3_d16_c01",
+          "name": "Ch 7 key terms set 1",
+          "simple_answer": "Reproduction, DNA copying, variation, gamete, zygote, fertilisation, embryo, asexual, sexual.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Key terms Ch 7 set 1"
+          },
+          "why": "Flashcard drill.",
+          "example": "Define in one line each.",
+          "remember": "Cover and recall.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c02",
+          "name": "Ch 7 key terms set 2",
+          "simple_answer": "Binary fission, budding, fragmentation, regeneration, spore, pollination, stigma, anther, ovule, seed.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Key terms set 2"
+          },
+          "why": "Continued drill.",
+          "example": "Match term to example organism/structure.",
+          "remember": "Second set of ten.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c03",
+          "name": "Ch 7 key terms set 3",
+          "simple_answer": "Testes, ovary, oviduct, uterus, placenta, menstruation, contraception, STD, HIV, vasectomy.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Key terms set 3"
+          },
+          "why": "Human health terms.",
+          "example": "Spelling matters in boards.",
+          "remember": "Third set completes unit vocabulary.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c04",
+          "name": "Top comparisons Ch 7",
+          "simple_answer": "Asexual vs sexual; self vs cross pollination; pollination vs fertilisation; embryo vs foetus; HIV vs AIDS.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Top comparisons unit 3"
+          },
+          "why": "Revision tables.",
+          "example": "One table per pair.",
+          "remember": "High-frequency compare questions.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c05",
+          "name": "Must-draw diagrams Ch 7",
+          "simple_answer": "Flower L.S., human male, human female, Rhizopus, yeast budding, germination stages.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Must-draw six diagrams"
+          },
+          "why": "Final visual check.",
+          "example": "Redraw without notes.",
+          "remember": "Allocate practice time per figure.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c06",
+          "name": "Must-know activities 7.1–7.7",
+          "simple_answer": "List aim and conclusion for all seven activities — NCERT box questions often activity-based.",
+          "visual": {
+            "type": "placeholder",
+            "label": "All activities recall"
+          },
+          "why": "Activity master list.",
+          "example": "7.1 yeast; 7.2 mould; 7.3 flower; 7.4 germination; 7.5–7.7 health.",
+          "remember": "Conclusion one sentence each.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c07",
+          "name": "Common mistakes Ch 7",
+          "simple_answer": "Calling pollination fertilisation; saying HIV spreads by touch; forgetting placenta exchange role.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Avoid mistakes Ch 7"
+          },
+          "why": "Error correction.",
+          "example": "Review your wrong MCQs.",
+          "remember": "Fix before practice stage.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c08",
+          "name": "15-minute mixed quiz Ch 7",
+          "simple_answer": "Mix modes, flower parts, human organs, health methods — timed recall.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mixed quiz unit 3"
+          },
+          "why": "Pre-MCQ stage.",
+          "example": "Use before Stage 2 days.",
+          "remember": "Identify weak day topic.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c09",
+          "name": "NCERT Ch 7 summary review",
+          "simple_answer": "Re-read chapter summary; verify every bullet has corresponding concept card.",
+          "visual": {
+            "type": "placeholder",
+            "label": "NCERT summary Ch 7"
+          },
+          "why": "Textbook closure.",
+          "example": "Summary bullets = exam blueprint.",
+          "remember": "Tick 160/160 cards covered.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u3_d16_c10",
+          "name": "Unit 3 complete",
+          "simple_answer": "Unit 3 How do Organisms Reproduce complete — 160 concept cards; proceed to Practice when unlocked.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Unit 3 complete — 160 cards"
+          },
+          "why": "Completion card.",
+          "example": "Next unit: Heredity Ch 8.",
+          "remember": "Concepts done → practice → NCERT MCQs.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

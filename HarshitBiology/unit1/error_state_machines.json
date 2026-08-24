@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "unit_id": 1,
+    "description": "Common NCERT Ch 5 Life Processes misconceptions"
+  },
+  "misconception_categories": [
+    "xylem_phloem_swap",
+    "aerobic_anaerobic_confusion",
+    "photosynthesis_respiration_swap",
+    "autotroph_heterotroph_confusion",
+    "alveoli_nephron_confusion"
+  ],
+  "machines": {
+    "xylem_phloem_swap": {
+      "feedback": "Xylem transports water and minerals upward; phloem transports food (sucrose) to all parts of the plant.",
+      "concept_ids": ["u1_d11_c02", "u1_d11_c03", "u1_d12_c05"],
+      "calm_prompt": "Ask: is this tube carrying water up or food to storage?"
+    },
+    "aerobic_anaerobic_confusion": {
+      "feedback": "Aerobic respiration uses oxygen in mitochondria and releases more ATP; anaerobic respiration works without oxygen and gives less energy.",
+      "concept_ids": ["u1_d8_c06", "u1_d9_c03", "u1_d10_c04"],
+      "calm_prompt": "Check: does this process need oxygen, and where does it happen?"
+    },
+    "photosynthesis_respiration_swap": {
+      "feedback": "Photosynthesis makes glucose in chloroplasts using light; respiration breaks glucose for energy in all living cells.",
+      "concept_ids": ["u1_d3_c01", "u1_d8_c01", "u1_d10_c06"],
+      "calm_prompt": "Plants do both — but making food and releasing energy are different processes."
+    },
+    "autotroph_heterotroph_confusion": {
+      "feedback": "Autotrophs make their own food from CO₂ and water; heterotrophs depend on ready-made organic food from other organisms.",
+      "concept_ids": ["u1_d2_c02", "u1_d2_c03", "u1_d5_c01"],
+      "calm_prompt": "Who makes the food, and who eats it?"
+    },
+    "alveoli_nephron_confusion": {
+      "feedback": "Alveoli are air sacs in lungs for gas exchange; nephrons are filtering units in kidneys that form urine.",
+      "concept_ids": ["u1_d9_c06", "u1_d15_c07", "u1_d16_c01"],
+      "calm_prompt": "Lungs exchange gases; kidneys filter blood — different organs, different jobs."
+    }
+  }
+}

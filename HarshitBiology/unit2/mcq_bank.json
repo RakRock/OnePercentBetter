@@ -1,0 +1,888 @@
+{
+  "meta": {
+    "unit_id": 2,
+    "stage": 2,
+    "active": true,
+    "release": 5,
+    "total_mcqs": 40,
+    "pdf": "jesc106.pdf",
+    "note": "Stage 2: NCERT Exercises Q1–3 + Intext + concept bank. Activities 6.1–6.4 linked per day."
+  },
+  "sessions": [
+    {
+      "day": 17,
+      "title": "Nervous System and Receptors",
+      "active": true,
+      "activity_refs": [
+        "6.1"
+      ],
+      "questions": [
+        {
+          "id": "u2_d17_ncert_01",
+          "question": "Which of the following is a plant hormone?",
+          "options": [
+            "Insulin",
+            "Thyroxin",
+            "Oestrogen",
+            "Cytokinin"
+          ],
+          "answer": 3,
+          "explanation": "Cytokinin promotes cell division in plants. Insulin, thyroxin, and oestrogen are animal hormones.",
+          "misconception": "plant_animal_hormone_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 6 Exercises Q1",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "ncert_ref": "NCERT Ch 6 Exercises Q1"
+        },
+        {
+          "id": "u2_d17_intext_02",
+          "question": "What is the difference between a reflex action and walking?",
+          "options": [
+            "Reflex is voluntary; walking is involuntary",
+            "Reflex is automatic without thinking; walking is a voluntary action",
+            "Both are controlled only by the spinal cord",
+            "Walking is faster than a reflex action"
+          ],
+          "answer": 1,
+          "explanation": "Reflex actions are sudden and automatic; walking involves conscious decision by the brain.",
+          "misconception": "reflex_brain_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 6 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "ncert_ref": "NCERT Ch 6 Intext"
+        },
+        {
+          "id": "u2_d17_intext_03",
+          "question": "What happens at the synapse between two neurons?",
+          "options": [
+            "Electrical impulse jumps directly across the gap",
+            "Chemicals cross the gap and trigger impulse in the next neuron",
+            "The axon splits into two dendrites",
+            "The impulse is stored permanently in the gap"
+          ],
+          "answer": 1,
+          "explanation": "At the synapse, electrical impulse triggers release of chemicals that diffuse across and start an impulse in the next neuron.",
+          "misconception": "synapse_axon_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 6 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "ncert_ref": "NCERT Ch 6 Intext"
+        },
+        {
+          "id": "u2_d17_intext_04",
+          "question": "Which part of the brain maintains posture and equilibrium of the body?",
+          "options": [
+            "Cerebrum",
+            "Cerebellum",
+            "Medulla",
+            "Hypothalamus"
+          ],
+          "answer": 1,
+          "explanation": "The cerebellum in the hind-brain controls posture, balance, and precision of voluntary actions.",
+          "misconception": "cerebellum_cerebrum_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 6 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "ncert_ref": "NCERT Ch 6 Intext"
+        },
+        {
+          "id": "u2_d17_intext_05",
+          "question": "Give an example of a plant hormone that promotes growth.",
+          "options": [
+            "Insulin",
+            "Auxin",
+            "Adrenaline",
+            "Thyroxin"
+          ],
+          "answer": 1,
+          "explanation": "Auxin promotes cell elongation and is involved in phototropism. Insulin and adrenaline are animal hormones.",
+          "misconception": "plant_animal_hormone_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 6 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "ncert_ref": "NCERT Ch 6 Intext"
+        },
+        {
+          "id": "u2_d17_intext_06",
+          "question": "How does our body respond when adrenaline is secreted into the blood?",
+          "options": [
+            "Heart rate slows and digestion speeds up",
+            "Heart beats faster, breathing increases, blood diverted to muscles",
+            "Blood sugar drops immediately",
+            "All voluntary muscles relax completely"
+          ],
+          "answer": 1,
+          "explanation": "Adrenaline prepares for fight-or-flight: faster heartbeat, increased breathing, blood to skeletal muscles.",
+          "misconception": "nervous_hormonal_speed_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 6 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "ncert_ref": "NCERT Ch 6 Intext"
+        },
+        {
+          "id": "u2_d17_intext_07",
+          "question": "Why is the use of iodised salt advisable?",
+          "options": [
+            "Iodine makes food taste better",
+            "Iodine is needed for thyroxin synthesis; deficiency causes goitre",
+            "Iodine kills bacteria in food",
+            "Iodine increases height in adults"
+          ],
+          "answer": 1,
+          "explanation": "Thyroid gland needs iodine to make thyroxin; iodine deficiency leads to goitre (swollen neck).",
+          "misconception": "plant_animal_hormone_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 6 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "ncert_ref": "NCERT Ch 6 Intext"
+        },
+        {
+          "id": "u2_s2_d1_bank_08",
+          "question": "What is the key takeaway about **Why organisms need coordination**?",
+          "options": [
+            "Nerves act in seconds; hormones may act over hours or years.",
+            "Receptors convert stimulus into nerve message.",
+            "Stimulus detected → message carried → response produced",
+            "Nervous = fast; endocrine = widespread and sustained."
+          ],
+          "answer": 2,
+          "explanation": "Stimulus detected → message carried → response produced.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d1_c02",
+          "category": "u2_d1_B",
+          "category_label": "Day 1 — Control and Coordination — Introduction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d1_bank_09",
+          "question": "What is the key takeaway about **Stimulus and response**?",
+          "options": [
+            "Immediate = turgor change; growth = differential cell elongation.",
+            "Define both terms clearly in exams",
+            "Muscle contraction or gland secretion = response.",
+            "Animals: nerves + hormones."
+          ],
+          "answer": 1,
+          "explanation": "Define both terms clearly in exams.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d1_c03",
+          "category": "u2_d1_C",
+          "category_label": "Day 1 — Control and Coordination — Introduction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d1_bank_10",
+          "question": "Which statement best describes **What is control and coordination?**?",
+          "options": [
+            "Plants show immediate responses (e.",
+            "Nervous messages travel as electrical impulses along nerves; hormonal messages travel in blood as chemical messengers.",
+            "Plants also respond to stimuli but lack a nervous system; they use hormones and growth-based movements.",
+            "Control and coordination are processes that help an organism respond to changes in its internal and external environment in a proper and timely manner."
+          ],
+          "answer": 3,
+          "explanation": "All living organisms need to respond to survive.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d1_c01",
+          "category": "u2_d1_A",
+          "category_label": "Day 1 — Control and Coordination — Introduction · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "title": "Reflex Arc and Brain",
+      "active": true,
+      "activity_refs": [
+        "6.2"
+      ],
+      "questions": [
+        {
+          "id": "u2_d18_ncert_01",
+          "question": "The gap between two neurons is called a",
+          "options": [
+            "dendrite",
+            "synapse",
+            "axon",
+            "impulse"
+          ],
+          "answer": 1,
+          "explanation": "The synapse is the junction between two neurons where chemical neurotransmitters cross the gap.",
+          "misconception": "synapse_axon_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 6 Exercises Q2",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "ncert_ref": "NCERT Ch 6 Exercises Q2"
+        },
+        {
+          "id": "u2_s2_d5_bank_02",
+          "question": "What is the key takeaway about **Reflex arc — definition**?",
+          "options": [
+            "Cornea protection is critical.",
+            "Speed over conscious decision.",
+            "Minimum five components in order",
+            "Protects body from continuing harm."
+          ],
+          "answer": 2,
+          "explanation": "Minimum five components in order.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c02",
+          "category": "u2_d5_B",
+          "category_label": "Day 5 — Reflex Arc and Reflex Actions · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d5_bank_03",
+          "question": "What is the key takeaway about **Spinal cord in reflex**?",
+          "options": [
+            "Cornea protection is critical.",
+            "Fast, automatic, protective.",
+            "Spinal reflex does not mean brain is inactive forever",
+            "Minimum five components in order."
+          ],
+          "answer": 2,
+          "explanation": "Spinal reflex does not mean brain is inactive forever.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c03",
+          "category": "u2_d5_C",
+          "category_label": "Day 5 — Reflex Arc and Reflex Actions · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d5_bank_04",
+          "question": "Which statement best describes **Reflex action — definition**?",
+          "options": [
+            "Draw and label: receptor, sensory neuron, relay neuron in spinal cord (cross-section), motor neuron, effector muscle.",
+            "Object near eye → stimulus detected → rapid reflex closes eyelid to protect cornea.",
+            "Reflex: no conscious thought, spinal cord often, very fast.",
+            "A reflex action is a sudden, involuntary motor response to a stimulus without conscious involvement of the brain."
+          ],
+          "answer": 3,
+          "explanation": "Fast, automatic, protective.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d5_c01",
+          "category": "u2_d5_A",
+          "category_label": "Day 5 — Reflex Arc and Reflex Actions · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d6_bank_05",
+          "question": "What is the key takeaway about **Forebrain — cerebrum**?",
+          "options": [
+            "Three main parts with sub-parts.",
+            "Damage causes shaky, uncoordinated movement.",
+            "Two hemispheres with many folds (gyri)",
+            "Part of brainstem with medulla."
+          ],
+          "answer": 2,
+          "explanation": "Two hemispheres with many folds (gyri).",
+          "day_id": 6,
+          "topic": 6,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d6_c02",
+          "category": "u2_d6_B",
+          "category_label": "Day 6 — Brain — Structure and Functions · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "cerebellum_cerebrum_swap"
+        },
+        {
+          "id": "u2_s2_d6_bank_06",
+          "question": "What is the key takeaway about **Forebrain — sensory areas**?",
+          "options": [
+            "Function match is common 5-mark question.",
+            "Smaller region between fore and hindbrain.",
+            "Damage to area may impair specific sense interpretation",
+            "Part of brainstem with medulla."
+          ],
+          "answer": 2,
+          "explanation": "Damage to area may impair specific sense interpretation.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d6_c03",
+          "category": "u2_d6_C",
+          "category_label": "Day 6 — Brain — Structure and Functions · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d6_bank_07",
+          "question": "Which statement best describes **Human brain — overview**?",
+          "options": [
+            "Brain is the main coordinating centre of body enclosed in skull; integrates information and controls voluntary and involuntary actions.",
+            "Different regions of cerebrum receive and interpret impulses from eyes, ears, nose, tongue, and skin.",
+            "Cerebrum is largest part of forebrain; controls thinking, memory, reasoning, voluntary actions, and sensory interpretation.",
+            "Pons connects different regions of brain and helps relay signals between cerebellum and other parts."
+          ],
+          "answer": 0,
+          "explanation": "Soft, highly protected organ.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d6_c01",
+          "category": "u2_d6_A",
+          "category_label": "Day 6 — Brain — Structure and Functions · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d7_bank_08",
+          "question": "What is the key takeaway about **Meninges**?",
+          "options": [
+            "Meninges hold CSF and blood vessels",
+            "Protection theme pairs with brain structure day.",
+            "31 pairs of spinal nerves in humans.",
+            "Damage disrupts both reflex and voluntary paths."
+          ],
+          "answer": 0,
+          "explanation": "Meninges hold CSF and blood vessels.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d7_c02",
+          "category": "u2_d7_B",
+          "category_label": "Day 7 — Brain Protection and Spinal Cord · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d7_bank_09",
+          "question": "What is the key takeaway about **Cerebrospinal fluid (CSF)**?",
+          "options": [
+            "Protection reduces but does not eliminate risk.",
+            "Reduces impact damage from jolts",
+            "Prevention better than cure for brain injury.",
+            "Meninges hold CSF and blood vessels."
+          ],
+          "answer": 1,
+          "explanation": "Reduces impact damage from jolts.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d7_c03",
+          "category": "u2_d7_C",
+          "category_label": "Day 7 — Brain Protection and Spinal Cord · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d7_bank_10",
+          "question": "Which statement best describes **Skull protects brain**?",
+          "options": [
+            "CSF fills space around brain and spinal cord; acts as shock absorber and supports brain weight.",
+            "Sudden blow to head can disturb brain function temporarily (concussion) — rest and medical check needed.",
+            "Brain is protected by hard skull (cranium) that shields against mechanical injury.",
+            "Brain and spinal cord are wrapped in three membranes called meninges that provide support and protection."
+          ],
+          "answer": 2,
+          "explanation": "Bone casing absorbs some impact.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d7_c01",
+          "category": "u2_d7_A",
+          "category_label": "Day 7 — Brain Protection and Spinal Cord · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "title": "Plant Coordination and Hormones",
+      "active": true,
+      "activity_refs": [
+        "6.3"
+      ],
+      "questions": [
+        {
+          "id": "u2_d19_ncert_01",
+          "question": "The brain is responsible for",
+          "options": [
+            "thinking",
+            "regulating the heart beat",
+            "balancing the body",
+            "all of the above"
+          ],
+          "answer": 3,
+          "explanation": "Fore-brain handles thinking; medulla regulates heartbeat; cerebellum maintains balance — all are brain functions.",
+          "misconception": "cerebellum_cerebrum_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 6 Exercises Q3",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "ncert_ref": "NCERT Ch 6 Exercises Q3"
+        },
+        {
+          "id": "u2_s2_d9_bank_02",
+          "question": "What is the key takeaway about **Auxin**?",
+          "options": [
+            "Chemical gradient directs growth.",
+            "Made mainly in apical meristem",
+            "Important for drought survival.",
+            "Work with auxin in growth control."
+          ],
+          "answer": 1,
+          "explanation": "Made mainly in apical meristem.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d9_c02",
+          "category": "u2_d9_B",
+          "category_label": "Day 9 — Plant Hormones and Tropisms · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "plant_animal_hormone_swap"
+        },
+        {
+          "id": "u2_s2_d9_bank_03",
+          "question": "What is the key takeaway about **Phototropism**?",
+          "options": [
+            "Chemical gradient directs growth.",
+            "Found in growing fruits and seeds.",
+            "Opposite effect to gibberellins in germination.",
+            "Auxin accumulates on shaded side → more elongation → bend"
+          ],
+          "answer": 3,
+          "explanation": "Auxin accumulates on shaded side → more elongation → bend.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d9_c03",
+          "category": "u2_d9_C",
+          "category_label": "Day 9 — Plant Hormones and Tropisms · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "plant_animal_hormone_swap"
+        },
+        {
+          "id": "u2_s2_d9_bank_04",
+          "question": "Which statement best describes **Plant hormones — definition**?",
+          "options": [
+            "Geotropism is growth response to gravity — roots grow down (positive), shoots grow up (negative).",
+            "Plant hormones (phytohormones) are chemical compounds produced in plants that control growth and responses at low concentration.",
+            "Gibberellins promote stem elongation, seed germination, and fruit growth.",
+            "Auxin promotes cell elongation in shoots; uneven distribution causes bending toward or away from light."
+          ],
+          "answer": 1,
+          "explanation": "Hormones move by diffusion or transport.",
+          "day_id": 9,
+          "topic": 9,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d9_c01",
+          "category": "u2_d9_A",
+          "category_label": "Day 9 — Plant Hormones and Tropisms · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "plant_animal_hormone_swap"
+        },
+        {
+          "id": "u2_s2_d10_bank_05",
+          "question": "What is the key takeaway about **Hormone — definition**?",
+          "options": [
+            "Over/under secretion affects body weight and energy.",
+            "No tube leading to target — blood carries hormone.",
+            "Islets of Langerhans = endocrine part.",
+            "Low concentration, high effect; specific target"
+          ],
+          "answer": 3,
+          "explanation": "Low concentration, high effect; specific target.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d10_c02",
+          "category": "u2_d10_B",
+          "category_label": "Day 10 — Endocrine System — Overview · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "nervous_hormonal_speed_swap"
+        },
+        {
+          "id": "u2_s2_d10_bank_06",
+          "question": "What is the key takeaway about **Ductless glands**?",
+          "options": [
+            "Called master gland — controls thyroid, adrenals etc.",
+            "One hormone, specific targets with receptors.",
+            "No tube leading to target — blood carries hormone",
+            "Hormones travel in blood to target organs."
+          ],
+          "answer": 2,
+          "explanation": "No tube leading to target — blood carries hormone.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d10_c03",
+          "category": "u2_d10_C",
+          "category_label": "Day 10 — Endocrine System — Overview · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "nervous_hormonal_speed_swap"
+        },
+        {
+          "id": "u2_s2_d10_bank_07",
+          "question": "Which statement best describes **Endocrine system — definition**?",
+          "options": [
+            "Thyroid in neck secretes thyroxine regulating carbohydrate, protein, and fat metabolism and growth rate.",
+            "Endocrine system is a collection of ductless glands that secrete hormones directly into blood to regulate body functions.",
+            "Endocrine: slow, long-lasting, blood transport.",
+            "Target organs or cells have specific receptors that respond to particular hormones."
+          ],
+          "answer": 1,
+          "explanation": "Hormones travel in blood to target organs.",
+          "day_id": 10,
+          "topic": 10,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d10_c01",
+          "category": "u2_d10_A",
+          "category_label": "Day 10 — Endocrine System — Overview · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "nervous_hormonal_speed_swap"
+        },
+        {
+          "id": "u2_s2_d11_bank_08",
+          "question": "What is the key takeaway about **Glucagon — function**?",
+          "options": [
+            "Hormone needs mineral for its synthesis.",
+            "Disorder name linked to gland/hormone.",
+            "Deficiency causes diabetes mellitus.",
+            "Insulin and glucagon oppose each other"
+          ],
+          "answer": 3,
+          "explanation": "Insulin and glucagon oppose each other.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d11_c02",
+          "category": "u2_d11_B",
+          "category_label": "Day 11 — Hormones, Feedback and Disorders · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d11_bank_09",
+          "question": "What is the key takeaway about **Feedback mechanism**?",
+          "options": [
+            "Hormone needs mineral for its synthesis.",
+            "Negative feedback stabilises internal conditions",
+            "Deficiency causes diabetes mellitus.",
+            "Pituitary hormones trigger sex hormone release."
+          ],
+          "answer": 1,
+          "explanation": "Negative feedback stabilises internal conditions.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d11_c03",
+          "category": "u2_d11_C",
+          "category_label": "Day 11 — Hormones, Feedback and Disorders · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d11_bank_10",
+          "question": "Which statement best describes **Insulin — function**?",
+          "options": [
+            "Activity 6.",
+            "Testosterone and estrogen control secondary sexual characters at puberty — detailed in reproductive health units.",
+            "Hormones maintain homeostasis via feedback: insulin/glucagon (sugar), thyroxine (metabolism), adrenaline (stress), GH (growth).",
+            "Insulin secreted by pancreas lowers blood glucose by promoting uptake and storage as glycogen in liver and muscles."
+          ],
+          "answer": 3,
+          "explanation": "Deficiency causes diabetes mellitus.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d11_c01",
+          "category": "u2_d11_A",
+          "category_label": "Day 11 — Hormones, Feedback and Disorders · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "title": "Endocrine System and Review",
+      "active": true,
+      "activity_refs": [
+        "6.4"
+      ],
+      "questions": [
+        {
+          "id": "u2_s2_d13_bank_01",
+          "question": "What is the key takeaway about **Activity 6.2 review — reflex and reaction**?",
+          "options": [
+            "Independent variable: light direction.",
+            "Reflex is faster when pathway is shorter",
+            "Link slide to neuron structure day.",
+            "Activities support diagram and long answers."
+          ],
+          "answer": 1,
+          "explanation": "Reflex is faster when pathway is shorter.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d13_c02",
+          "category": "u2_d13_B",
+          "category_label": "Day 13 — Activities 6.1–6.4 Review · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d13_bank_02",
+          "question": "What is the key takeaway about **Activity 6.3 review — brain regions**?",
+          "options": [
+            "Iodine deficiency → thyroid → goitre chain.",
+            "Iodine test and hormone growth demo combined in chapter activities.",
+            "Sensory neuron afferent; motor efferent.",
+            "Medulla controls breathing — never voluntary stop permanently"
+          ],
+          "answer": 3,
+          "explanation": "Medulla controls breathing — never voluntary stop permanently.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d13_c03",
+          "category": "u2_d13_C",
+          "category_label": "Day 13 — Activities 6.1–6.4 Review · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d13_bank_03",
+          "question": "Which statement best describes **Activity 6.1 review — nerve tissue slide**?",
+          "options": [
+            "Identify cerebrum, cerebellum, medulla on diagram; assign one function to each region studied.",
+            "Practice matching: pituitary-GH, thyroid-thyroxine, adrenal-adrenaline, pancreas-insulin.",
+            "Observe nerve tissue: identify long fibres (axons) and cell bodies; nerves are bundles of neurons.",
+            "Activities 6."
+          ],
+          "answer": 2,
+          "explanation": "Link slide to neuron structure day.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d13_c01",
+          "category": "u2_d13_A",
+          "category_label": "Day 13 — Activities 6.1–6.4 Review · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d14_bank_04",
+          "question": "What is the key takeaway about **Synapse diagram — exam standard**?",
+          "options": [
+            "Pituitary at base of brain.",
+            "Cerebellum looks like smaller lobe at back.",
+            "Practice timed 5-minute sketches.",
+            "Show chemical crossing with arrows"
+          ],
+          "answer": 3,
+          "explanation": "Show chemical crossing with arrows.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d14_c02",
+          "category": "u2_d14_B",
+          "category_label": "Day 14 — Exam Diagrams — Control and Coordination · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "synapse_axon_confusion"
+        },
+        {
+          "id": "u2_s2_d14_bank_05",
+          "question": "What is the key takeaway about **Reflex arc diagram — exam standard**?",
+          "options": [
+            "Write glossary on revision card.",
+            "Receptor at skin clearly shown",
+            "Cell body must show nucleus.",
+            "Explain in caption below figure."
+          ],
+          "answer": 1,
+          "explanation": "Receptor at skin clearly shown.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d14_c03",
+          "category": "u2_d14_C",
+          "category_label": "Day 14 — Exam Diagrams — Control and Coordination · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d14_bank_06",
+          "question": "Which statement best describes **Neuron diagram — exam standard**?",
+          "options": [
+            "Master five figures: neuron, synapse, reflex arc, brain, phototropism — draw daily until automatic.",
+            "Use clear labels with leader lines; title each diagram; scale not needed but proportions should be recognisable.",
+            "Draw neuron with dendrites, cell body, nucleus, axon, myelin sheath, axon terminals — label all.",
+            "Full reflex arc with spinal cord cross-section, dorsal sensory root, ventral motor root, effector muscle."
+          ],
+          "answer": 2,
+          "explanation": "Cell body must show nucleus.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d14_c01",
+          "category": "u2_d14_A",
+          "category_label": "Day 14 — Exam Diagrams — Control and Coordination · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d15_bank_07",
+          "question": "What is the key takeaway about **3-mark: Plant vs animal coordination**?",
+          "options": [
+            "Mention speed difference",
+            "Connect biology to daily nutrition.",
+            "Use subheadings in answer.",
+            "One paragraph, under 80 words."
+          ],
+          "answer": 0,
+          "explanation": "Mention speed difference.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d15_c02",
+          "category": "u2_d15_B",
+          "category_label": "Day 15 — Written Questions — Control and Coordination · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d15_bank_08",
+          "question": "What is the key takeaway about **5-mark: Reflex arc explanation**?",
+          "options": [
+            "Mention speed difference.",
+            "Negative feedback keyword earns credit.",
+            "Allocate 2 marks to diagram",
+            "Full answers under exam time limit."
+          ],
+          "answer": 2,
+          "explanation": "Allocate 2 marks to diagram.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "C",
+          "unit_id": 2,
+          "concept_id": "u2_d15_c03",
+          "category": "u2_d15_C",
+          "category_label": "Day 15 — Written Questions — Control and Coordination · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d15_bank_09",
+          "question": "Which statement best describes **3-mark: Define reflex action**?",
+          "options": [
+            "Explain phototropism and role of auxin with experiment outline — common textbook question.",
+            "Define reflex arc; draw diagram; explain stimulus to response; state role of spinal cord; give example.",
+            "Prepare 3 short + 3 long answers covering reflex, brain, hormones, tropisms, integration.",
+            "Reflex: sudden involuntary response to stimulus; example knee jerk or hand withdrawal; via reflex arc."
+          ],
+          "answer": 3,
+          "explanation": "One paragraph, under 80 words.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "A",
+          "unit_id": 2,
+          "concept_id": "u2_d15_c01",
+          "category": "u2_d15_A",
+          "category_label": "Day 15 — Written Questions — Control and Coordination · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        },
+        {
+          "id": "u2_s2_d16_bank_10",
+          "question": "What is the key takeaway about **Ch 6 key terms flashcard 2**?",
+          "options": [
+            "Second set of eight terms",
+            "Third set completes chapter vocabulary.",
+            "Cover and recall daily.",
+            "Timed 15 minutes."
+          ],
+          "answer": 0,
+          "explanation": "Second set of eight terms.",
+          "day_id": 16,
+          "topic": 16,
+          "level": "B",
+          "unit_id": 2,
+          "concept_id": "u2_d16_c02",
+          "category": "u2_d16_B",
+          "category_label": "Day 16 — Revision and Unit 2 Complete · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 6 — Control and Coordination",
+          "misconception": "reflex_brain_confusion"
+        }
+      ]
+    }
+  ]
+}

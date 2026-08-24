@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "design_system": "Harshit Biology — low-sensory, anti-gamified",
+    "one_card_per_screen": true,
+    "no_timers": true,
+    "no_gamification": true,
+    "safety": [
+      "Biology labs: teacher supervision for microscopes and stains",
+      "Exercise pulse activities: stop if dizzy; hydrate after activity"
+    ]
+  },
+  "css_variables": {
+    "--hb-bg-page": "#F5F9F6",
+    "--hb-bg-surface": "#FFFFFF",
+    "--hb-bg-muted": "#E8F0EA",
+    "--hb-text-primary": "#1A2E1F",
+    "--hb-text-secondary": "#5A6F5E",
+    "--hb-border-subtle": "#C8D9CC",
+    "--hb-feedback-amber": "#F5DEB3",
+    "--hb-feedback-amber-text": "#92400E",
+    "--hb-accent-green": "#059669",
+    "--hb-accent-teal": "#0D9488",
+    "--hb-xylem": "#2563EB",
+    "--hb-phloem": "#D97706",
+    "--hb-oxygen": "#0284C7",
+    "--hb-spark": "#10B981",
+    "--hb-spacing-screen": "2rem",
+    "--hb-radius": "8px"
+  },
+  "components": {
+    "ProcessPanel": {
+      "description": "Life process pathways — nutrition, respiration, transport, excretion.",
+      "visual_types": ["formula_panel", "placeholder"]
+    },
+    "OrganSystemPanel": {
+      "description": "Digestive, circulatory, and excretory system diagrams.",
+      "visual_types": ["placeholder"]
+    },
+    "GlossaryPanel": {
+      "description": "Optional glossary sidebar.",
+      "props": { "collapsible": true }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "active": true,
+    "stage": 3,
+    "range": "Exercises Q2–Q4",
+    "note": "Exam-style written questions. Chapter 8 has 1 MCQ (Stage 2) and 3 long-form exercises here.",
+    "chapter": "NCERT Class 10 Science Ch 8",
+    "pdf": "jesc108.pdf",
+    "unit_id": 4
+  },
+  "questions": [
+    {
+      "id": "u4_ex_q02",
+      "num": 2,
+      "type": "explain",
+      "marks": 3,
+      "question": "A study found that children with light-coloured eyes are likely to have parents with light-coloured eyes. On this basis, can we say anything about whether the light eye colour trait is dominant or recessive? Why or why not?",
+      "hints": [
+        "Like parents like children suggests inheritance.",
+        "But need F1/F2 cross data like Mendel.",
+        "Single family study is insufficient."
+      ],
+      "model_answer": "**No**, we cannot definitively say whether light eye colour is dominant or recessive from this study alone.\n\nWhile children resembling parents suggests **inheritance**, determining dominance requires **controlled crosses** (like Mendel's F1 and F2 ratios). This observation could fit **either** dominant or recessive patterns depending on genotypes in the population.",
+      "marking_points": [
+        "Answer: No, not enough evidence",
+        "Explains why (need controlled crosses / F2 ratios)",
+        "Mentions observation suggests heredity but not dominance"
+      ],
+      "common_mistakes": [
+        "Definitively stating light eyes are dominant",
+        "Not explaining what evidence would be needed"
+      ],
+      "concept_ids": [
+        "u4_d5_c01",
+        "u4_d5_c03",
+        "u4_d7_c02"
+      ],
+      "misconception": "dominant_recessive_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 8 Exercises Q2"
+    },
+    {
+      "id": "u4_ex_q03",
+      "num": 3,
+      "type": "project",
+      "marks": 5,
+      "question": "Outline a project which aims to find the dominant coat colour in dogs.",
+      "hints": [
+        "Observe coat colours in many dog families.",
+        "Record parent and puppy colours across generations.",
+        "Look for patterns like Mendel — which colour appears when two different colours mate."
+      ],
+      "model_answer": "**Project outline:**\n\n1. **Survey** 30–50 dog families — record coat colours of **both parents and all puppies**.\n2. **Cross analysis:** When two different coloured parents produce puppies, note which colour appears in **all F1** puppies (dominant candidate).\n3. **F2 check:** If F1 dogs are bred, check if recessive colour **reappears** in F2.\n4. **Conclusion:** Colour always present in F1 is likely **dominant**; reappearing in F2 is **recessive**.",
+      "marking_points": [
+        "Data collection method (families/generations)",
+        "Compare parent and offspring colours",
+        "Mendelian logic applied to determine dominant colour"
+      ],
+      "common_mistakes": [
+        "No systematic data collection plan",
+        "Concluding from single family only"
+      ],
+      "concept_ids": [
+        "u4_d4_c02",
+        "u4_d5_c01",
+        "u4_d10_c02"
+      ],
+      "misconception": "dominant_recessive_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 8 Exercises Q3"
+    },
+    {
+      "id": "u4_ex_q04",
+      "num": 4,
+      "type": "explain",
+      "marks": 3,
+      "question": "How is the equal genetic contribution of male and female parents ensured in the progeny?",
+      "hints": [
+        "Humans have 23 pairs of chromosomes.",
+        "Gametes are haploid (23 chromosomes each).",
+        "Fertilisation restores diploid (46) with half from each parent."
+      ],
+      "model_answer": "Each parent produces **gametes with half the normal chromosome number** (23 in humans) through **meiosis**. During **fertilisation**, the **male gamete (sperm)** fuses with the **female gamete (egg)** to form a zygote with the **full chromosome number (46)** — **equal contribution** of 23 from each parent.",
+      "marking_points": [
+        "Gametes are haploid (half chromosomes)",
+        "Fertilisation combines two gametes",
+        "Equal 23 + 23 = 46 in zygote"
+      ],
+      "common_mistakes": [
+        "Saying parents contribute unequal DNA",
+        "Confusing mitosis with meiosis"
+      ],
+      "concept_ids": [
+        "u4_d1_c04",
+        "u4_d7_c04",
+        "u4_d7_c05"
+      ],
+      "misconception": "sex_determination_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 8 Exercises Q4"
+    }
+  ]
+}

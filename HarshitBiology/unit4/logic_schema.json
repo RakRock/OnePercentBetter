@@ -1,0 +1,2639 @@
+{
+  "meta": {
+    "student": "Harshit Sai",
+    "unit_id": 4,
+    "unit_title": "Heredity",
+    "ncert": "Class 10 Science, Chapter 8 (Biology)",
+    "stage1_days": 16,
+    "stage2_days": 4,
+    "concept_cards_total": 160,
+    "mcq_total": 40,
+    "release_active": 4,
+    "session_kind_concepts": "harshit_biology_unit4_concepts",
+    "session_kind_mcq": "harshit_biology_unit4_mcq"
+  },
+  "glossary": [
+    {
+      "term": "heredity",
+      "definition": "Transmission of traits from parents to offspring through genes."
+    },
+    {
+      "term": "variation",
+      "definition": "Differences among individuals of a species in inherited characteristics."
+    },
+    {
+      "term": "dominant trait",
+      "definition": "Trait expressed even when only one copy of the allele is present."
+    },
+    {
+      "term": "recessive trait",
+      "definition": "Trait expressed only when two copies of the allele are present."
+    },
+    {
+      "term": "monohybrid cross",
+      "definition": "Mendelian cross involving one pair of contrasting traits."
+    },
+    {
+      "term": "dihybrid cross",
+      "definition": "Cross involving two pairs of contrasting traits studied by Mendel."
+    },
+    {
+      "term": "genotype",
+      "definition": "Genetic makeup of an organism (e.g. Tt, TT, tt)."
+    },
+    {
+      "term": "phenotype",
+      "definition": "Observable physical expression of traits (e.g. tall, violet flowers)."
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "stage": 1,
+      "title": "Heredity — Introduction",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d1_c01",
+          "name": "What is heredity?",
+          "simple_answer": "Heredity is the transmission of traits from parents to offspring through genetic information in DNA.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Heredity defined"
+          },
+          "why": "NCERT Ch 8 opening.",
+          "example": "Children resemble parents in eye colour and blood group.",
+          "remember": "Offspring inherit instructions from both parents in sexual reproduction.",
+          "common_confusion": "Heredity is not same as growth alone.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "heredity"
+          ]
+        },
+        {
+          "id": "u4_d1_c02",
+          "name": "Inherited traits examples",
+          "simple_answer": "Traits like eye colour, hair texture, earlobe attachment, and blood group pass from parents to children.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Inherited trait examples"
+          },
+          "why": "Relatable instances.",
+          "example": "Free vs attached earlobe varies in family.",
+          "remember": "Observable traits have genetic basis.",
+          "common_confusion": "Not all resemblance is genetic — learned behaviour differs.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c03",
+          "name": "Acquired vs inherited (recap)",
+          "simple_answer": "Inherited traits are in DNA at birth; acquired traits develop during life and are not passed genetically.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Inherited vs acquired recap"
+          },
+          "why": "Ch 7–8 bridge.",
+          "example": "NCERT mice tail-cutting experiment shows acquired not inherited.",
+          "remember": "Only germ cell DNA changes affect offspring.",
+          "common_confusion": "Weight from overeating is not inherited trait.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c04",
+          "name": "Rules of heredity — historical question",
+          "simple_answer": "For centuries people wondered if traits blend in offspring or pass as discrete units — Mendel answered with experiments.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Historical heredity question"
+          },
+          "why": "Mendel intro context.",
+          "example": "Children are not exact average of parents.",
+          "remember": "Discrete traits follow patterns Mendel found.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c05",
+          "name": "Gregor Mendel",
+          "simple_answer": "Gregor Mendel, Austrian monk, used pea plants in garden experiments to discover laws of inheritance.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gregor Mendel"
+          },
+          "why": "Founder of genetics.",
+          "example": "Pea plants easy to grow; many visible traits.",
+          "remember": "1860s work rediscovered later.",
+          "common_confusion": "Called father of genetics.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "Gregor Mendel"
+          ]
+        },
+        {
+          "id": "u4_d1_c06",
+          "name": "Why pea plants?",
+          "simple_answer": "Pea plants self-pollinate, grow fast, have contrasting traits (tall/dwarf, green/yellow seeds) easy to count.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Why Mendel chose peas"
+          },
+          "why": "Experimental design.",
+          "example": "Pure breeding lines available.",
+          "remember": "Short generation time.",
+          "common_confusion": "Many offspring per cross.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c07",
+          "name": "Contrasting characters in pea",
+          "simple_answer": "Mendel studied seven pairs: tall/dwarf, round/wrinkled seed, yellow/green seed, etc.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Seven pea character pairs"
+          },
+          "why": "Vocabulary for crosses.",
+          "example": "Round yellow seeds vs wrinkled green.",
+          "remember": "Each trait had two clear forms.",
+          "common_confusion": "Know at least four pairs for exam.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c08",
+          "name": "Gene and allele preview",
+          "simple_answer": "Gene controls a trait; alleles are different forms of a gene (e.g. tall allele vs dwarf allele).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gene and allele intro"
+          },
+          "why": "Terminology for crosses.",
+          "example": "T and t represent tall and dwarf alleles.",
+          "remember": "Offspring gets one allele from each parent.",
+          "common_confusion": "Uppercase often dominant — formal day later.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "gene",
+            "allele"
+          ]
+        },
+        {
+          "id": "u4_d1_c09",
+          "name": "Sexual reproduction and heredity",
+          "simple_answer": "Two parents each contribute one allele per gene — offspring has new combination.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Two parents → combination"
+          },
+          "why": "Mechanism link Ch 7.",
+          "example": "Human has 23 chromosome pairs — one set from each parent.",
+          "remember": "Meiosis halves chromosome number in gametes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d1_c10",
+          "name": "Chapter 8 roadmap",
+          "simple_answer": "Ch 8 covers Mendel's experiments, monohybrid and dihybrid crosses, sex determination, blood groups, and Activities 8.1–8.2.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 8 roadmap — 16 days"
+          },
+          "why": "Unit orientation.",
+          "example": "Punnett squares feature heavily.",
+          "remember": "Connect to variation from Ch 7.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "title": "Variation Accumulation",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d2_c01",
+          "name": "Accumulation of variations",
+          "simple_answer": "Variations accumulate over generations through sexual reproduction and occasional DNA changes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Variation accumulation"
+          },
+          "why": "NCERT Ch 8 theme.",
+          "example": "Populations show range of heights, not one value.",
+          "remember": "Sexual shuffling adds new combos each generation.",
+          "common_confusion": "Evolution acts on accumulated variation.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c02",
+          "name": "Importance for species survival",
+          "simple_answer": "Species with accumulated variation has better chance some individuals survive environmental change.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Variation aids survival"
+          },
+          "why": "Selection logic.",
+          "example": "Disease-resistant crop variant saved harvest.",
+          "remember": "Without variation, one stress kills all.",
+          "common_confusion": "Links Ch 7 variation to Ch 8 heredity.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c03",
+          "name": "Sexual reproduction and new combinations",
+          "simple_answer": "Each generation gets new allele combinations unlike either parent exactly — except identical twins.",
+          "visual": {
+            "type": "placeholder",
+            "label": "New gene combinations"
+          },
+          "why": "Mechanism.",
+          "example": "Sibling differences illustrate recombination.",
+          "remember": "Independent assortment increases diversity.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c04",
+          "name": "Population vs individual",
+          "simple_answer": "Heredity studied at individual level (parent-offspring); variation important at population level.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Individual heredity vs population variation"
+          },
+          "why": "Scale distinction.",
+          "example": "Breeding programmes select from population variation.",
+          "remember": "Both levels needed for full picture.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c05",
+          "name": "Stable vs changing environment",
+          "simple_answer": "Stable environment favours current traits; changing environment favours previously rare beneficial variants.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Environment selects variants"
+          },
+          "why": "Evolution preview.",
+          "example": "Antibiotic resistance rises when antibiotics used.",
+          "remember": "Variation alone insufficient — selection acts.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c06",
+          "name": "DNA copying errors in inheritance",
+          "simple_answer": "Rare copying errors in gamete formation create new alleles passed to offspring if fertilisation occurs.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mutation in gametes"
+          },
+          "why": "Source of new variation.",
+          "example": "Most mutations neutral or harmful; few beneficial.",
+          "remember": "Somatic mutations not inherited.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c07",
+          "name": "Breeding and artificial selection",
+          "simple_answer": "Humans select plants/animals with desired variants to breed — uses heredity and variation principles.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Artificial selection"
+          },
+          "why": "Applied genetics.",
+          "example": "High-yield wheat from selected grains.",
+          "remember": "Same logic as natural selection but human directed.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c08",
+          "name": "Limitations of inherited information",
+          "simple_answer": "Environment also affects expression — same genotype can differ in phenotype (nutrition affects height).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Genotype + environment"
+          },
+          "why": "Nature and nurture.",
+          "example": "Identical twins may differ slightly in weight.",
+          "remember": "Heredity sets potential; environment affects outcome.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c09",
+          "name": "NCERT exercise link — variation",
+          "simple_answer": "Review NCERT questions linking variation in reproduction to survival of species.",
+          "visual": {
+            "type": "placeholder",
+            "label": "NCERT variation questions"
+          },
+          "why": "Textbook alignment.",
+          "example": "Answer why variation is beneficial.",
+          "remember": "Short 3-mark style practice.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d2_c10",
+          "name": "Variation accumulation summary",
+          "simple_answer": "Sexual reproduction shuffles and accumulates variations; populations with diversity survive change better.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 2 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Link Ch 7 DNA copying to Ch 8 patterns.",
+          "remember": "Variation + heredity = evolution foundation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "title": "Mendel's Rules of Inheritance",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d3_c01",
+          "name": "Mendel's monohybrid experiment",
+          "simple_answer": "Mendel crossed pea plants differing in one trait (e.g. tall × dwarf) and tracked offspring traits.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Monohybrid cross experiment"
+          },
+          "why": "Experimental method.",
+          "example": "P generation pure lines; F1 all tall in classic cross.",
+          "remember": "Counted thousands of plants for ratios.",
+          "common_confusion": "One trait at a time — monohybrid.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "monohybrid cross"
+          ]
+        },
+        {
+          "id": "u4_d3_c02",
+          "name": "P generation",
+          "simple_answer": "P (parental) generation uses pure breeding homozygous plants — tall × tall always tall before cross.",
+          "visual": {
+            "type": "placeholder",
+            "label": "P generation pure lines"
+          },
+          "why": "Starting lines.",
+          "example": "True-breeding tall and dwarf peas.",
+          "remember": "Homozygous: same alleles for trait.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c03",
+          "name": "F1 generation result",
+          "simple_answer": "F1 offspring of tall × dwarf cross were all tall — dwarf seemed to disappear.",
+          "visual": {
+            "type": "placeholder",
+            "label": "F1 all tall"
+          },
+          "why": "First surprise result.",
+          "example": "F1 uniformly showed dominant trait.",
+          "remember": "Dwarf trait not lost — hidden.",
+          "common_confusion": "Cross between contrasting P parents.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "F1 generation"
+          ]
+        },
+        {
+          "id": "u4_d3_c04",
+          "name": "F2 generation result",
+          "simple_answer": "F1 self-pollinated → F2 showed both tall and dwarf in approximately 3:1 ratio.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "F2 ratio ≈ 3 tall : 1 dwarf",
+            "note": "Monohybrid F2"
+          },
+          "why": "Mendel's key numerical finding.",
+          "example": "Counted 787 tall : 277 dwarf ≈ 3:1.",
+          "remember": "Hidden dwarf reappeared in F2.",
+          "common_confusion": "Large sample gave statistical ratio.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "F2 generation"
+          ]
+        },
+        {
+          "id": "u4_d3_c05",
+          "name": "Law of Dominance",
+          "simple_answer": "When two contrasting alleles combine, one (dominant) expresses in F1; other (recessive) hidden but can return in F2.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Law of Dominance"
+          },
+          "why": "First Mendel law.",
+          "example": "Tall allele T dominant over t.",
+          "remember": "Dominant not 'stronger' — expression pattern.",
+          "common_confusion": "Recessive needs two copies to show.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "dominant",
+            "recessive"
+          ]
+        },
+        {
+          "id": "u4_d3_c06",
+          "name": "Law of Segregation",
+          "simple_answer": "Alleles separate during gamete formation so each gamete carries only one allele per gene.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Law of Segregation"
+          },
+          "why": "Second Mendel law.",
+          "example": "Tt plant makes T and t gametes in equal proportion.",
+          "remember": "Also called purity of gametes.",
+          "common_confusion": "Segregation happens in meiosis.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "segregation"
+          ]
+        },
+        {
+          "id": "u4_d3_c07",
+          "name": "Activity 8.1 — monohybrid cross simulation",
+          "simple_answer": "Activity 8.1 uses beads/cards to simulate allele combinations showing 3:1 F2 ratio.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 8.1 — monohybrid sim"
+          },
+          "why": "Hands-on ratio proof.",
+          "example": "Random pick two alleles mimics fertilisation.",
+          "remember": "Repeat many trials — ratio approaches 3:1.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c08",
+          "name": "Mendel's method strength",
+          "simple_answer": "Large sample size, one variable at a time, mathematical counting, pure lines — scientific rigour.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mendel's scientific method"
+          },
+          "why": "Why his work succeeded.",
+          "example": "Statistics revealed patterns others missed.",
+          "remember": "Controlled crosses in monastery garden.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c09",
+          "name": "Terminology checkpoint",
+          "simple_answer": "Define: allele, dominant, recessive, homozygous, heterozygous, genotype, phenotype — formal day next.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Terminology preview"
+          },
+          "why": "Prep for Day 5.",
+          "example": "Tt is heterozygous tall phenotype.",
+          "remember": "TT and Tt both tall phenotype.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d3_c10",
+          "name": "Mendel rules summary",
+          "simple_answer": "Dominance explains F1 uniformity; segregation explains F2 3:1 ratio; gametes carry one allele each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 3 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "State both laws with pea example.",
+          "remember": "Activity 8.1 reinforces ratios.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "title": "Monohybrid Cross and Punnett Square",
+      "active": true,
+      "release": 1,
+      "concepts": [
+        {
+          "id": "u4_d4_c01",
+          "name": "Punnett square — purpose",
+          "simple_answer": "Punnett square diagram predicts offspring genotypes and phenotypes from parent gametes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Punnett square tool"
+          },
+          "why": "Problem-solving skill.",
+          "example": "2×2 grid for monohybrid cross.",
+          "remember": "Combine gametes systematically.",
+          "common_confusion": "Named after Reginald Punnett.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "Punnett square"
+          ]
+        },
+        {
+          "id": "u4_d4_c02",
+          "name": "Gamete formation for Tt",
+          "simple_answer": "Heterozygous Tt produces 50% T gametes and 50% t gametes — segregation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Gametes from Tt"
+          },
+          "why": "Half-half rule.",
+          "example": "Write T and t on one parent side of square.",
+          "remember": "Each gamete one allele only.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c03",
+          "name": "Cross Tt × Tt",
+          "simple_answer": "Both parents heterozygous tall: gametes T and t each; offspring TT, Tt, tT, tt.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Tt × Tt → TT : Tt : tt = 1 : 2 : 1",
+            "note": "Genotype ratio"
+          },
+          "why": "Standard cross.",
+          "example": "Phenotype 3 tall : 1 dwarf.",
+          "remember": "Genotype ratio differs from phenotype ratio.",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c04",
+          "name": "Genotype vs phenotype",
+          "simple_answer": "Genotype is genetic makeup (TT, Tt, tt); phenotype is observable trait (tall or dwarf).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Genotype vs phenotype"
+          },
+          "why": "Essential distinction.",
+          "example": "Tt and TT both tall phenotype.",
+          "remember": "Same phenotype can differ genotype.",
+          "common_confusion": "Blood group phenotype from genotype.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "genotype",
+            "phenotype"
+          ]
+        },
+        {
+          "id": "u4_d4_c05",
+          "name": "Homozygous vs heterozygous",
+          "simple_answer": "Homozygous: same alleles (TT or tt). Heterozygous: different alleles (Tt).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Homozygous vs heterozygous"
+          },
+          "why": "Genotype classes.",
+          "example": "TT homozygous dominant; tt homozygous recessive.",
+          "remember": "Tt heterozygous carries recessive hidden.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c06",
+          "name": "Test cross (brief)",
+          "simple_answer": "Cross unknown dominant with homozygous recessive — if any recessive offspring, unknown was heterozygous.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Test cross idea"
+          },
+          "why": "Breeding diagnostic.",
+          "example": "T? × tt — dwarf offspring means Tt parent.",
+          "remember": "Used to find hidden genotype.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c07",
+          "name": "Probability interpretation",
+          "simple_answer": "3:1 ratio is probabilistic — small families may not match exactly; large numbers approach ratio.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ratio as probability"
+          },
+          "why": "Statistics concept.",
+          "example": "Coin toss analogy — fair expectation.",
+          "remember": "Each offspring independent event.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c08",
+          "name": "Monohybrid cross problems",
+          "simple_answer": "Practice: cross TT×tt, Tt×tt, tt×tt — write genotype and phenotype ratios each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Monohybrid problem drill"
+          },
+          "why": "Exam skill.",
+          "example": "Show Punnett square in answer.",
+          "remember": "Label parent genotypes and gametes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c09",
+          "name": "Human monohybrid examples",
+          "simple_answer": "Some traits simplified as monohybrid for teaching — earlobe attachment, widow's peak (simplified models).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Human trait examples"
+          },
+          "why": "Application note.",
+          "example": "Real human genetics often more complex.",
+          "remember": "Use for Punnett practice only.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d4_c10",
+          "name": "Monohybrid summary",
+          "simple_answer": "Draw Punnett square; gametes on axes; read off 1:2:1 genotype and 3:1 phenotype for Tt×Tt.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 4 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Ten practice crosses without notes.",
+          "remember": "Dominant allele capital letter convention.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "title": "Dominant, Recessive, F1 and F2",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d5_c01",
+          "name": "Dominant allele expression",
+          "simple_answer": "Dominant allele expresses its trait in phenotype when at least one copy present (TT or Tt).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Dominant expression rule"
+          },
+          "why": "Formal dominance.",
+          "example": "Tall T dominates dwarf t.",
+          "remember": "Capital letter denotes dominant convention.",
+          "common_confusion": "Dominant does not mean more common in population.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "dominant"
+          ]
+        },
+        {
+          "id": "u4_d5_c02",
+          "name": "Recessive allele expression",
+          "simple_answer": "Recessive allele shows phenotype only when two copies present (homozygous recessive tt).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Recessive needs two copies"
+          },
+          "why": "Hidden in heterozygote.",
+          "example": "Dwarf pea needs tt genotype.",
+          "remember": "Carrier heterozygote Tt looks tall.",
+          "common_confusion": "Recessive traits can skip generations.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "recessive"
+          ]
+        },
+        {
+          "id": "u4_d5_c03",
+          "name": "F1 uniform phenotype explained",
+          "simple_answer": "F1 all tall because T from one parent dominates t from other — every F1 is Tt.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Why F1 all same"
+          },
+          "why": "Dominance application.",
+          "example": "TT × tt → all Tt tall.",
+          "remember": "Recessive phenotype absent in F1.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c04",
+          "name": "F2 separation explained",
+          "simple_answer": "F1 Tt self-cross: gametes combine giving TT, Tt, tt in 1:2:1 — tt shows dwarf again.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Why F2 shows 3:1"
+          },
+          "why": "Segregation application.",
+          "example": "Recessive reappears when two t gametes meet.",
+          "remember": "Mathematical Mendel discovery.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c05",
+          "name": "Carrier concept",
+          "simple_answer": "Heterozygous individual carries recessive allele without showing trait — called carrier.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Carrier heterozygote"
+          },
+          "why": "Human genetics relevance.",
+          "example": "Carrier of recessive disease allele healthy but can pass allele.",
+          "remember": "Important in genetic counselling.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c06",
+          "name": "Pure vs hybrid (Mendel terms)",
+          "simple_answer": "Pure breeding = homozygous; hybrid = heterozygous F1 from contrasting parents.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pure vs hybrid"
+          },
+          "why": "Historical terms.",
+          "example": "Hybrid vigour different concept — optional.",
+          "remember": "Mendel's 'hybrid' means heterozygous.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c07",
+          "name": "Pedigree preview",
+          "simple_answer": "Family tree diagrams track traits across generations — recessive can appear from carrier parents.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pedigree intro"
+          },
+          "why": "Visual tool.",
+          "example": "Squares male, circles female in standard pedigree.",
+          "remember": "Filled symbol means affected phenotype.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c08",
+          "name": "Why ratios matter",
+          "simple_answer": "Predicting ratios helps plant breeding and understanding genetic disease inheritance patterns.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Practical ratio use"
+          },
+          "why": "Application.",
+          "example": "Expect 25% homozygous recessive from carrier × carrier.",
+          "remember": "Medical genetics uses same logic.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c09",
+          "name": "Common dominance misconceptions",
+          "simple_answer": "Dominant ≠ better or more common; recessive ≠ absent from population; one allele from each parent always.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Fix dominance myths"
+          },
+          "why": "Error prevention.",
+          "example": "Recessive traits persist in carriers.",
+          "remember": "Two dominant alleles possible (TT).",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d5_c10",
+          "name": "F1 F2 summary",
+          "simple_answer": "F1 heterozygous shows dominant; F2 self-cross restores recessive in 1/4 — dominance + segregation together.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 5 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Explain F1 and F2 without memorising only ratio.",
+          "remember": "Write paragraph answer for board.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "title": "Dihybrid Cross",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d6_c01",
+          "name": "Dihybrid cross — definition",
+          "simple_answer": "Dihybrid cross tracks inheritance of two traits simultaneously (e.g. seed shape and colour).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Dihybrid cross defined"
+          },
+          "why": "Two genes at once.",
+          "example": "Round yellow × wrinkled green peas.",
+          "remember": "Each trait has own allele pair.",
+          "common_confusion": "",
+          "optional_detail": [
+            "dihybrid cross"
+          ],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c02",
+          "name": "Mendel dihybrid experiment",
+          "simple_answer": "Mendel crossed round yellow (RRYY) with wrinkled green (rryy); F1 all round yellow.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mendel dihybrid P and F1"
+          },
+          "why": "Classic starting cross.",
+          "example": "F1 RrYy heterozygous both traits.",
+          "remember": "Both dominant traits in F1.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c03",
+          "name": "F2 dihybrid ratio",
+          "simple_answer": "F2 showed 9:3:3:1 phenotype ratio — round-yellow, round-green, wrinkled-yellow, wrinkled-green.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "F2 phenotypes = 9 : 3 : 3 : 1",
+            "note": "Dihybrid classic ratio"
+          },
+          "why": "Second Mendel numerical law.",
+          "example": "9/16 round yellow dominant both.",
+          "remember": "New combinations 3+3 in middle terms.",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c04",
+          "name": "Law of Independent Assortment",
+          "simple_answer": "Genes for different traits assort independently during gamete formation if on different chromosome pairs.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Independent Assortment"
+          },
+          "why": "Third Mendel law.",
+          "example": "R/r assortment independent of Y/y.",
+          "remember": "Produces new trait combinations in F2.",
+          "common_confusion": "Exception: linked genes on same chromosome — beyond basic.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "independent assortment"
+          ]
+        },
+        {
+          "id": "u4_d6_c05",
+          "name": "Dihybrid Punnett square",
+          "simple_answer": "16-box Punnett square for RrYy × RrYy — track both allele pairs together.",
+          "visual": {
+            "type": "placeholder",
+            "label": "4×4 Punnett square"
+          },
+          "why": "Exam skill advanced.",
+          "example": "Gametes: RY, Ry, rY, ry from each parent.",
+          "remember": "Systematic filling avoids errors.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c06",
+          "name": "Gamete types from RrYy",
+          "simple_answer": "Heterozygous dihybrid produces four gamete types in equal proportion: RY, Ry, rY, ry.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Four gamete types"
+          },
+          "why": "Independent assortment result.",
+          "example": "Each gamete one allele per gene.",
+          "remember": "2^n gamete types for n heterozygous gene pairs.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c07",
+          "name": "Why 9:3:3:1",
+          "simple_answer": "9 = both dominant; 3 = one dominant one recessive each way; 1 = both recessive.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ratio breakdown"
+          },
+          "why": "Interpretation skill.",
+          "example": "(3:1) × (3:1) = 9:3:3:1 mathematically.",
+          "remember": "Product of two monohybrid ratios.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c08",
+          "name": "Activity 8.2 — dihybrid simulation",
+          "simple_answer": "Activity 8.2 simulates dihybrid cross with beads showing approach to 9:3:3:1.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 8.2 — dihybrid sim"
+          },
+          "why": "NCERT activity.",
+          "example": "More trials → closer to expected ratio.",
+          "remember": "Pair with Activity 8.1 monohybrid.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c09",
+          "name": "Dihybrid problem strategy",
+          "simple_answer": "Step 1: identify parent genotypes. Step 2: list gametes. Step 3: Punnett square. Step 4: count phenotypes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Dihybrid problem steps"
+          },
+          "why": "Exam method.",
+          "example": "Show work for partial credit.",
+          "remember": "Check arithmetic twice.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d6_c10",
+          "name": "Dihybrid summary",
+          "simple_answer": "Independent assortment gives F2 9:3:3:1; four gamete types from RrYy; practice 16-box square.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 6 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "One full dihybrid problem timed.",
+          "remember": "Three Mendel laws complete set.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "title": "Sex Determination",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d7_c01",
+          "name": "Sex determination — need",
+          "simple_answer": "Mechanism decides whether offspring develops as male or female — species-specific.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sex determination defined"
+          },
+          "why": "NCERT human focus.",
+          "example": "Humans XY system.",
+          "remember": "Not same in all organisms.",
+          "common_confusion": "Separate from general body traits inheritance.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "sex determination"
+          ]
+        },
+        {
+          "id": "u4_d7_c02",
+          "name": "Human chromosomes",
+          "simple_answer": "Humans have 23 pairs chromosomes — 22 autosome pairs + 1 sex chromosome pair.",
+          "visual": {
+            "type": "placeholder",
+            "label": "23 pairs chromosomes"
+          },
+          "why": "Chromosome set fact.",
+          "example": "Karyotype shows 46 chromosomes.",
+          "remember": "Sex chromosomes are pair 23.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c03",
+          "name": "XX female, XY male",
+          "simple_answer": "Females have XX sex chromosomes; males have XY — male determines sex of child via gamete.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Female XX | Male XY",
+            "note": "Human sex chromosomes"
+          },
+          "why": "Core human pattern.",
+          "example": "Mother always contributes X.",
+          "remember": "Father contributes X or Y.",
+          "common_confusion": "Sex of baby depends on father's sperm.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c04",
+          "name": "Gametes and sex chromosomes",
+          "simple_answer": "All egg cells have X chromosome; sperm half carry X and half carry Y.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Eggs X; sperm X or Y"
+          },
+          "why": "50-50 mechanism.",
+          "example": "XX egg + X sperm → girl; XX egg + Y sperm → boy.",
+          "remember": "Roughly 50:50 sex ratio in population.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c05",
+          "name": "Sex determination is not 'blame'",
+          "simple_answer": "Biology shows sex determined at fertilisation by chromosome combination — avoid social misconceptions.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Scientific view sex determination"
+          },
+          "why": "NCERT social note.",
+          "example": "Only one parent contributes Y for male offspring.",
+          "remember": "Educational campaigns use chromosome facts.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c06",
+          "name": "Other species examples",
+          "simple_answer": "Birds often ZW female ZZ male; some reptiles temperature-dependent — contrast with humans.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Other sex systems brief"
+          },
+          "why": "Breadth note.",
+          "example": "Human XY is one system among many.",
+          "remember": "Exam usually human XY only.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c07",
+          "name": "Sex linked preview",
+          "simple_answer": "Genes on X chromosome (e.g. colour blindness) show different inheritance patterns — related topic.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sex-linked preview"
+          },
+          "why": "Extension.",
+          "example": "Males XY have one X — express X recessive more.",
+          "remember": "Colour blindness more common males.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c08",
+          "name": "Punnett for sex determination",
+          "simple_answer": "Cross XX × XY on Punnett square gives 50% XX and 50% XY offspring.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sex Punnett square"
+          },
+          "why": "Simple grid.",
+          "example": "Not using T/t — use X and Y symbols.",
+          "remember": "No YY viable human — not standard cross.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c09",
+          "name": "Misconceptions",
+          "simple_answer": "Mother does not 'decide' baby sex in XY system; Y chromosome from father makes male development pathway.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sex determination myths"
+          },
+          "why": "Myth busting.",
+          "example": "Equal probability each pregnancy.",
+          "remember": "Old folk beliefs lack chromosome basis.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d7_c10",
+          "name": "Sex determination summary",
+          "simple_answer": "Human female XX, male XY; sperm X or Y decides; Punnett shows 1:1; know chromosome pair count.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 7 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Draw karyotype sketch XX and XY.",
+          "remember": "Autosomes vs sex chromosomes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "stage": 1,
+      "title": "Blood Groups — Inherited Traits",
+      "active": true,
+      "release": 2,
+      "concepts": [
+        {
+          "id": "u4_d8_c01",
+          "name": "ABO blood groups",
+          "simple_answer": "Human ABO blood group controlled by gene with alleles Iᴬ, Iᴮ, and i — inherited trait.",
+          "visual": {
+            "type": "placeholder",
+            "label": "ABO blood groups"
+          },
+          "why": "Applied heredity.",
+          "example": "Type A, B, AB, O phenotypes.",
+          "remember": "Multiple alleles for one gene.",
+          "common_confusion": "Not simple single dominant only.",
+          "optional_detail": "",
+          "glossary_terms": [
+            "blood group"
+          ]
+        },
+        {
+          "id": "u4_d8_c02",
+          "name": "Multiple alleles",
+          "simple_answer": "More than two alleles exist for a gene in population though individual has only two.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Multiple alleles"
+          },
+          "why": "ABO illustration.",
+          "example": "Iᴬ and Iᴮ codominant; i recessive.",
+          "remember": "You inherit one allele from each parent.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c03",
+          "name": "Codominance in AB",
+          "simple_answer": "Blood group AB shows both A and B antigens — codominance of Iᴬ and Iᴮ.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Codominance AB group"
+          },
+          "why": "Not same as blending.",
+          "example": "AB has neither A nor B dominant over other.",
+          "remember": "Both expressed on RBC surface.",
+          "common_confusion": "",
+          "optional_detail": [
+            "codominance"
+          ],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c04",
+          "name": "Genotype to phenotype ABO",
+          "simple_answer": "IᴬIᴬ or Iᴬi → type A; IᴮIᴮ or Iᴮi → type B; IᴬIᴮ → AB; ii → type O.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Iᴬ, Iᴮ dominant over i",
+            "note": "ABO genotypes"
+          },
+          "why": "Table to memorise.",
+          "example": "Type O is universal donor (RBC) simplified teaching.",
+          "remember": "Know parent cross predicts child possibilities.",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c05",
+          "name": "Blood transfusion compatibility",
+          "simple_answer": "Transfusion needs compatible blood groups to avoid clumping — ABO antigen-antibody reaction.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Transfusion compatibility"
+          },
+          "why": "Health application.",
+          "example": "Wrong group transfusion dangerous.",
+          "remember": "O donors often universal; AB receivers often universal.",
+          "common_confusion": "Rh factor adds another layer.",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c06",
+          "name": "Rh factor (brief)",
+          "simple_answer": "Rh protein on RBC — Rh+ or Rh− inherited separately from ABO.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Rh factor intro"
+          },
+          "why": "Second blood system.",
+          "example": "Rh incompatibility in pregnancy managed medically.",
+          "remember": "Positive has Rh protein; negative lacks.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c07",
+          "name": "Blood group inheritance problems",
+          "simple_answer": "Practice cross: Iᴬi × Iᴮi — possible offspring genotypes and phenotypes with Punnett square.",
+          "visual": {
+            "type": "placeholder",
+            "label": "ABO Punnett practice"
+          },
+          "why": "Exam application.",
+          "example": "Child type O from two type A possible if both Iᴬi.",
+          "remember": "Show working for medical genetics style Q.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c08",
+          "name": "Ethical note — blood donation",
+          "simple_answer": "Voluntary blood donation saves lives; know your group; science enables safe matching.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Blood donation awareness"
+          },
+          "why": "Civic science.",
+          "example": "Blood camps in schools and communities.",
+          "remember": "Inherited trait has social use.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c09",
+          "name": "Blood group vs Mendel pea",
+          "simple_answer": "ABO shows codominance and multiple alleles — extends basic dominant/recessive pea model.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Beyond simple dominance"
+          },
+          "why": "Conceptual stretch.",
+          "example": "Not all traits follow single T/t pattern.",
+          "remember": "Peas teach foundation; blood groups add complexity.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d8_c10",
+          "name": "Blood groups summary",
+          "simple_answer": "ABO: Iᴬ, Iᴮ, i alleles; codominance AB; practice inheritance problems; transfusion compatibility.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 8 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Fill ABO genotype-phenotype table.",
+          "remember": "Rh mentioned for completeness.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "stage": 1,
+      "title": "Inherited Traits in Humans",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d9_c01",
+          "name": "Family resemblance",
+          "simple_answer": "Children inherit combination of traits from both parents — explains resemblance and differences among siblings.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Family resemblance"
+          },
+          "why": "Everyday heredity.",
+          "example": "Nose shape may resemble one parent; hair another.",
+          "remember": "Unique combo except identical twins.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c02",
+          "name": "Single gene traits (teaching examples)",
+          "simple_answer": "Earlobe attachment, rolling tongue, widow's peak taught as simplified inherited examples.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Teaching trait examples"
+          },
+          "why": "School lab surveys.",
+          "example": "Class phenotype tally shows variation.",
+          "remember": "Real genetics may involve multiple genes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c03",
+          "name": "Hidden recessive traits",
+          "simple_answer": "Recessive traits skip generations when carriers marry carriers — appears in quarter of children on average.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Recessive skips generations"
+          },
+          "why": "Pedigree logic.",
+          "example": "Rare genetic conditions often recessive.",
+          "remember": "Carrier frequency matters in population.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c04",
+          "name": "Dominant traits in pedigree",
+          "simple_answer": "Dominant traits appear every generation if allele present — unless new mutation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Dominant in pedigree"
+          },
+          "why": "Pattern recognition.",
+          "example": "Affected child usually has affected parent for dominant.",
+          "remember": "Exceptions: new mutation or non-paternity rare.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c05",
+          "name": "Identical vs fraternal twins",
+          "simple_answer": "Identical (monozygotic) same genotype; fraternal (dizygotic) like siblings born together.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Twin types"
+          },
+          "why": "Variation illustration.",
+          "example": "Identical twin nature-nurture studies famous.",
+          "remember": "Fraternal twins can be opposite sex.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c06",
+          "name": "Sex-linked colour blindness",
+          "simple_answer": "Red-green colour blindness often X-linked recessive — more common in males with one X.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Colour blindness inheritance"
+          },
+          "why": "Sex-linked example.",
+          "example": "Carrier mother can pass to son.",
+          "remember": "Males XY express X recessive directly.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c07",
+          "name": "Genetic counselling (brief)",
+          "simple_answer": "Couples with family history of genetic disorder may seek counselling to understand risks.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Genetic counselling"
+          },
+          "why": "Health application.",
+          "example": "Informed family planning.",
+          "remember": "Science supports medical advice not stigma.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c08",
+          "name": "Heredity not determinism",
+          "simple_answer": "Genes influence traits but environment, nutrition, and choice also matter especially for complex traits.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Genes not sole fate"
+          },
+          "why": "Balanced view.",
+          "example": "Height potential from genes; nutrition affects achieved height.",
+          "remember": "Avoid genetic determinism socially.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c09",
+          "name": "Class survey activity idea",
+          "simple_answer": "Tally inherited traits in class (attached earlobe etc.) — discuss ratios not exact Mendelian in small sample.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Class trait survey"
+          },
+          "why": "Active learning.",
+          "example": "Small N won't match 3:1 exactly.",
+          "remember": "Introduces population variation.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d9_c10",
+          "name": "Inherited traits summary",
+          "simple_answer": "Human traits follow Mendelian principles often simplified; pedigrees, carriers, sex-linked examples extend basics.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 9 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Draw sample pedigree with legend.",
+          "remember": "Link to blood groups day before.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "stage": 1,
+      "title": "Mendel Experiments Review",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d10_c01",
+          "name": "Mendel experiment timeline",
+          "simple_answer": "P pure lines → F1 cross → F1 self → F2 count — repeat for seven traits and dihybrid.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Experiment sequence"
+          },
+          "why": "Review structure.",
+          "example": "Monohybrid first then dihybrid.",
+          "remember": "Same methodical approach each trait.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c02",
+          "name": "Seven traits list recall",
+          "simple_answer": "Recall pea pairs: stem length, flower colour, pod shape, pod colour, seed shape, seed colour, flower position.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Seven trait pairs recall"
+          },
+          "why": "Memory drill.",
+          "example": "At least four enough for short answers.",
+          "remember": "Round/wrinkled and yellow/green seeds common in questions.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c03",
+          "name": "Three laws restated",
+          "simple_answer": "Dominance; Segregation; Independent Assortment — each with one-sentence meaning and pea evidence.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Three laws restated"
+          },
+          "why": "Exam long answer core.",
+          "example": "F2 ratios support laws 2 and 3.",
+          "remember": "Write laws in Mendel's terms.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c04",
+          "name": "Why Mendel succeeded — review",
+          "simple_answer": "Math, large samples, pure lines, one/two traits isolated, careful record keeping.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mendel success factors"
+          },
+          "why": "Science history question.",
+          "example": "Contrast with earlier blending theories.",
+          "remember": "Rediscovery 1900 with chromosomes.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c05",
+          "name": "Monohybrid ratio recap",
+          "simple_answer": "F2 3:1 phenotype; 1:2:1 genotype for single trait heterozygous cross.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Phenotype 3:1 | Genotype 1:2:1",
+            "note": "Monohybrid F2"
+          },
+          "why": "Numbers memorised with meaning.",
+          "example": "Derive from Punnett not rote only.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c06",
+          "name": "Dihybrid ratio recap",
+          "simple_answer": "F2 9:3:3:1 phenotypes from independently assorting two genes.",
+          "visual": {
+            "type": "formula_panel",
+            "formula": "Dihybrid F2 = 9 : 3 : 3 : 1",
+            "note": "Phenotype ratio"
+          },
+          "why": "Second ratio set.",
+          "example": "Product rule (3:1)².",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c07",
+          "name": "Compare monohybrid vs dihybrid",
+          "simple_answer": "Monohybrid: one trait, 4 Punnett boxes. Dihybrid: two traits, 16 boxes, independent assortment.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mono vs dihybrid compare"
+          },
+          "why": "Table revision.",
+          "example": "F1 all dominant for both in standard dihybrid start.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c08",
+          "name": "NCERT in-text Mendel questions",
+          "simple_answer": "Review NCERT questions on Mendel's conclusions and ratio explanations.",
+          "visual": {
+            "type": "placeholder",
+            "label": "NCERT Mendel intext"
+          },
+          "why": "Textbook checkpoint.",
+          "example": "Explain why F2 has 3:1 without just stating.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c09",
+          "name": "Historical context",
+          "simple_answer": "Mendel presented 1865; work ignored then rediscovered — foundation of modern genetics.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mendel historical note"
+          },
+          "why": "Appreciation.",
+          "example": "Chromosomes and meiosis later explained mechanism.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d10_c10",
+          "name": "Mendel review summary",
+          "simple_answer": "Pea experiments → three laws → monohybrid 3:1 → dihybrid 9:3:3:1 — full story for board exam.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 10 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "10-minute essay outline Mendel's work.",
+          "remember": "Activities 8.1–8.2 simulate ratios.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "stage": 1,
+      "title": "Activities 8.1–8.2 Review",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d11_c01",
+          "name": "Activity 8.1 — detailed recap",
+          "simple_answer": "Monohybrid simulation with beads/cards: parent alleles in bags, random draw pairs, tally F2 phenotypes over 20+ trials.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 8.1 full recap"
+          },
+          "why": "Procedure recall.",
+          "example": "Aim: demonstrate 3:1 ratio experimentally.",
+          "remember": "Conclusion: random fusion produces Mendelian ratio approximately.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c02",
+          "name": "Activity 8.2 — detailed recap",
+          "simple_answer": "Dihybrid simulation: two gene bead sets; combine draws; tally four phenotype classes approaching 9:3:3:1.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity 8.2 full recap"
+          },
+          "why": "Procedure recall.",
+          "example": "More classes than monohybrid — need more trials.",
+          "remember": "Independent assortment demonstrated.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c03",
+          "name": "Writing activity conclusions",
+          "simple_answer": "Format: Aim, Materials, Procedure, Observation table, Conclusion linking to Mendel laws.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity write-up format"
+          },
+          "why": "Lab exam skill.",
+          "example": "Conclusion must mention ratio and law.",
+          "remember": "Observation table with totals and percentages.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c04",
+          "name": "Simulation to Punnett link",
+          "simple_answer": "Bead draw equals random fertilisation; Punnett square lists all equally likely outcomes theoretically.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Simulation ↔ Punnett link"
+          },
+          "why": "Conceptual bridge.",
+          "example": "Both predict 3:1 for monohybrid.",
+          "remember": "Simulation adds experimental flavour.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c05",
+          "name": "Sources of experimental error",
+          "simple_answer": "Small trial number deviates from ratio; recording errors; unequal gamete representation if bags wrong.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Experimental error sources"
+          },
+          "why": "Critical analysis.",
+          "example": "Increase trials improves match.",
+          "remember": "Good science discusses error.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c06",
+          "name": "Class data pooling",
+          "simple_answer": "Combine whole class F2 counts — pooled data closer to expected ratio — law of large numbers.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pool class data"
+          },
+          "why": "Statistics insight.",
+          "example": "One group's 8:4 may differ; 200 pairs stabilise.",
+          "remember": "Collaborative data strengthens conclusion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c07",
+          "name": "Viva questions for activities",
+          "simple_answer": "Prepare: Why 3:1? What is segregation? Why repeat trials? What represents gamete?",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity viva prep"
+          },
+          "why": "Oral exam readiness.",
+          "example": "Bead colour = allele version.",
+          "remember": "Teacher may ask predict before trial.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c08",
+          "name": "Diagram for activity setup",
+          "simple_answer": "Sketch bead bags, parent labels Tt, drawing grid for recording offspring genotypes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Activity setup diagram"
+          },
+          "why": "Visual record.",
+          "example": "Neat labelled figure in notebook.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c09",
+          "name": "Extend activity thinking",
+          "simple_answer": "Ask: What if parents TT × tt? Predict F2 if F1 selfed — connect to different starting crosses.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Extend activity questions"
+          },
+          "why": "Higher order.",
+          "example": "Not all crosses start Tt × Tt.",
+          "remember": "Predict then simulate verify.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d11_c10",
+          "name": "Activities 8.1–8.2 summary",
+          "simple_answer": "Simulations validate Mendel ratios; write full report; link to laws; pool data for accuracy.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 11 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Redo simulation at home with coins.",
+          "remember": "Activities support ratio long answers.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "stage": 1,
+      "title": "Genotype and Phenotype Practice",
+      "active": true,
+      "release": 3,
+      "concepts": [
+        {
+          "id": "u4_d12_c01",
+          "name": "Genotype notation practice",
+          "simple_answer": "Write genotypes for homozygous dominant, heterozygous, homozygous recessive using gene symbols T/t, R/r.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Genotype notation drill"
+          },
+          "why": "Symbol discipline.",
+          "example": "Consistent letters per gene.",
+          "remember": "Same letter upper/lower for alleles.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c02",
+          "name": "Phenotype from genotype rule",
+          "simple_answer": "Read phenotype from genotype using dominance rules — TT Tt tall; tt dwarf.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Genotype → phenotype"
+          },
+          "why": "Forward problem.",
+          "example": "ABO uses special I notation.",
+          "remember": "Write phenotype words not just letters.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c03",
+          "name": "Reverse problem — infer genotype",
+          "simple_answer": "Given phenotype and parent info infer possible genotypes (carrier detection).",
+          "visual": {
+            "type": "placeholder",
+            "label": "Infer genotype"
+          },
+          "why": "Reverse skill.",
+          "example": "Tall plant could TT or Tt — test cross distinguishes.",
+          "remember": "Multiple genotypes same phenotype possible.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c04",
+          "name": "Monohybrid mixed problems set",
+          "simple_answer": "Solve five crosses: state gametes, Punnett, genotype and phenotype ratios each.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Five monohybrid problems"
+          },
+          "why": "Timed drill.",
+          "example": "10 minutes total.",
+          "remember": "Check ratios sum to 4 or 16.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c05",
+          "name": "Dihybrid mixed problems set",
+          "simple_answer": "Solve two dihybrid crosses fully — 16-box squares.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Two dihybrid problems"
+          },
+          "why": "Advanced drill.",
+          "example": "20 minutes.",
+          "remember": "Label gametes RY Ry rY ry.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c06",
+          "name": "ABO inheritance problem",
+          "simple_answer": "Cross type A (Iᴬi) × type B (Iᴮi) — list all child blood groups possible with probabilities.",
+          "visual": {
+            "type": "placeholder",
+            "label": "ABO problem practice"
+          },
+          "why": "Applied genetics.",
+          "example": "Four phenotypes possible: A, B, AB, O.",
+          "remember": "Each 25% in this cross.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c07",
+          "name": "Sex determination problem",
+          "simple_answer": "Cross XX × XY — fraction male vs female; explain chromosome contribution.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sex cross problem"
+          },
+          "why": "Simple probability.",
+          "example": "50% each.",
+          "remember": "Father's sperm determines.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c08",
+          "name": "Word problems",
+          "simple_answer": "Parents both heterozygous for unattached earlobe dominant E — fraction homozygous recessive children?",
+          "visual": {
+            "type": "placeholder",
+            "label": "Word problem Ee × Ee"
+          },
+          "why": "Story to square.",
+          "example": "Answer 25% ee if simple dominance.",
+          "remember": "Translate words to genotypes first.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c09",
+          "name": "Error checking checklist",
+          "simple_answer": "Gametes one allele each; square size correct; ratios count all boxes; phenotype matches dominance.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Problem checklist"
+          },
+          "why": "Avoid lost marks.",
+          "example": "Underline final ratios in answer.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d12_c10",
+          "name": "Genotype/phenotype day summary",
+          "simple_answer": "Fluent in Punnett squares mono and dihybrid, ABO, sex crosses — timed practice builds exam speed.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 12 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Redo wrong problems next day.",
+          "remember": "Genotype/phenotype language automatic.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "stage": 1,
+      "title": "Exam Diagrams — Heredity",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d13_c01",
+          "name": "Pea plant trait diagram",
+          "simple_answer": "Sketch tall vs dwarf pea, round vs wrinkled seed — label for Mendel experiment context.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pea trait sketches"
+          },
+          "why": "Visual Mendel context.",
+          "example": "Simple side-by-side drawings.",
+          "remember": "Used in long answer introductions.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c02",
+          "name": "Punnett square neat drawing",
+          "simple_answer": "Draw 2×2 and 4×4 squares with labelled parent genotypes and gametes on axes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Punnett square exam standard"
+          },
+          "why": "Must-have figure skill.",
+          "example": "Use ruler for clarity.",
+          "remember": "Shade or circle genotype classes for counting.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c03",
+          "name": "Monohybrid cross figure",
+          "simple_answer": "Show P → F1 → F2 generations with genotypes and phenotypes labelled in diagram flow.",
+          "visual": {
+            "type": "placeholder",
+            "label": "P-F1-F2 flow diagram"
+          },
+          "why": "Generation diagram.",
+          "example": "Arrows between generations.",
+          "remember": "Include ratios on F2.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c04",
+          "name": "Dihybrid cross figure",
+          "simple_answer": "Four seed types in F2 grid picture: round-yellow, round-green, wrinkled-yellow, wrinkled-green.",
+          "visual": {
+            "type": "placeholder",
+            "label": "F2 seed types diagram"
+          },
+          "why": "Classic illustration.",
+          "example": "9:3:3:1 under each class count.",
+          "remember": "NCERT textbook figure style.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c05",
+          "name": "Human sex chromosome diagram",
+          "simple_answer": "Draw XX female and XY male karyotype sketch; show egg X and sperm X or Y.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Sex chromosome diagram"
+          },
+          "why": "Sex determination figure.",
+          "example": "23rd pair enlarged.",
+          "remember": "Autosomes shown as grouped.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c06",
+          "name": "Pedigree chart symbols",
+          "simple_answer": "Square male, circle female, filled affected, horizontal mating line, vertical offspring line.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Pedigree symbols"
+          },
+          "why": "Standard notation.",
+          "example": "Draw three-generation sample.",
+          "remember": "Legend box on diagram.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c07",
+          "name": "ABO table diagram",
+          "simple_answer": "Table: genotype IᴬIᴬ, Iᴬi, etc. mapped to phenotype A, B, AB, O.",
+          "visual": {
+            "type": "placeholder",
+            "label": "ABO table figure"
+          },
+          "why": "Quick reference chart.",
+          "example": "Neat table in exam answer.",
+          "remember": "Include in long blood group answer.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c08",
+          "name": "Diagram timing practice",
+          "simple_answer": "Complete Punnett + sex chromosome + pedigree in 15 minutes total.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Timed diagram set"
+          },
+          "why": "Exam simulation.",
+          "example": "Practice weekly.",
+          "remember": "Neatness counts.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c09",
+          "name": "Label spelling genetics",
+          "simple_answer": "Homozygous, heterozygous, phenotype, genotype, allele, gamete — spell correctly.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Genetics spelling list"
+          },
+          "why": "Language accuracy.",
+          "example": "Lose marks on repeated misspellings.",
+          "remember": "Write glossary card.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d13_c10",
+          "name": "Diagram day summary unit 4",
+          "simple_answer": "Master Punnett squares, P-F1-F2 flow, sex chromosomes, pedigree — draw without textbook.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 13 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Peer exchange and mark diagrams.",
+          "remember": "Diagrams carry 3–5 marks each.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "stage": 1,
+      "title": "Written Questions — Heredity",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d14_c01",
+          "name": "3-mark: Mendel's contribution",
+          "simple_answer": "Mendel used pea plants, counted offspring, proposed laws of dominance and segregation explaining F2 3:1 ratio.",
+          "visual": {
+            "type": "placeholder",
+            "label": "3-mark Mendel contribution"
+          },
+          "why": "Short answer template.",
+          "example": "Experiment + ratio + law.",
+          "remember": "Under 100 words.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c02",
+          "name": "3-mark: Dominant vs recessive",
+          "simple_answer": "Define with example; dominant expresses in heterozygote; recessive needs homozygous; pea tall/dwarf.",
+          "visual": {
+            "type": "placeholder",
+            "label": "3-mark dominance definitions"
+          },
+          "why": "Definition pair.",
+          "example": "Example mandatory.",
+          "remember": "Carrier mention adds value.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c03",
+          "name": "5-mark: Monohybrid cross explanation",
+          "simple_answer": "Describe Mendel monohybrid experiment P F1 F2 with diagram Punnett and 3:1 ratio explanation via segregation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5-mark monohybrid essay"
+          },
+          "why": "Long answer structure.",
+          "example": "Intro experiment → results → law → diagram.",
+          "remember": "Allocate marks: diagram 2, text 3.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c04",
+          "name": "5-mark: Dihybrid and independent assortment",
+          "simple_answer": "Explain dihybrid cross, F2 9:3:3:1, state law of independent assortment with gamete types.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5-mark dihybrid essay"
+          },
+          "why": "Second long answer type.",
+          "example": "16-box square in answer.",
+          "remember": "Link to Activity 8.2.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c05",
+          "name": "5-mark: Sex determination humans",
+          "simple_answer": "Explain XX XY system, role of father sperm, Punnett square, dispel myths.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5-mark sex determination"
+          },
+          "why": "Human genetics long Q.",
+          "example": "Include chromosome diagram.",
+          "remember": "Social awareness sentence acceptable.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c06",
+          "name": "5-mark: Blood group inheritance",
+          "simple_answer": "Explain multiple alleles, codominance AB, sample cross predicting offspring groups.",
+          "visual": {
+            "type": "placeholder",
+            "label": "5-mark ABO inheritance"
+          },
+          "why": "Applied long answer.",
+          "example": "Table genotypes to phenotypes.",
+          "remember": "Transfusion one line application.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c07",
+          "name": "NCERT exercise long questions",
+          "simple_answer": "Practice textbook end questions on Mendel laws, variation accumulation, and sex determination.",
+          "visual": {
+            "type": "placeholder",
+            "label": "NCERT exercise Ch 8"
+          },
+          "why": "Textbook aligned.",
+          "example": "Answer without notes first.",
+          "remember": "Compare with marking points after.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c08",
+          "name": "Assertion-reason heredity",
+          "simple_answer": "Practice AR: e.g. assertion F1 all dominant phenotype — reason segregation of alleles in gametes.",
+          "visual": {
+            "type": "placeholder",
+            "label": "AR practice Ch 8"
+          },
+          "why": "Objective written style.",
+          "example": "Both statements may be true independently.",
+          "remember": "Reason must explain assertion.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c09",
+          "name": "Previous year themes Ch 8",
+          "simple_answer": "Recurring: 3:1 and 9:3:3:1 ratios, sex determination, ABO cross, Mendel's laws list.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Board themes unit 4"
+          },
+          "why": "Strategic revision.",
+          "example": "Solve 5 PYQs.",
+          "remember": "Ratio questions almost certain.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d14_c10",
+          "name": "Written prep summary unit 4",
+          "simple_answer": "Prepare 3 short + 4 long templates covering Mendel, crosses, sex, blood groups.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 14 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Timed writing under exam conditions.",
+          "remember": "Self-mark with NCERT key points.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "stage": 1,
+      "title": "Revision — Unit 4",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d15_c01",
+          "name": "Ch 8 key terms set 1",
+          "simple_answer": "Heredity, variation, gene, allele, dominant, recessive, genotype, phenotype, homozygous, heterozygous.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Key terms set 1 unit 4"
+          },
+          "why": "Flashcard drill.",
+          "example": "One-line definition each.",
+          "remember": "Cover and recall.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c02",
+          "name": "Ch 8 key terms set 2",
+          "simple_answer": "Monohybrid, dihybrid, F1, F2, segregation, independent assortment, Punnett square, gamete, zygote, carrier.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Key terms set 2 unit 4"
+          },
+          "why": "Second flashcard set.",
+          "example": "Link term to pea example.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c03",
+          "name": "Ch 8 key terms set 3",
+          "simple_answer": "Sex chromosome, autosome, XX, XY, codominance, multiple alleles, blood group, pedigree, Mendel, inheritance.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Key terms set 3 unit 4"
+          },
+          "why": "Third flashcard set.",
+          "example": "Spell homozygous correctly.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c04",
+          "name": "Ratio memory with meaning",
+          "simple_answer": "3:1 phenotype mono F2; 1:2:1 genotype mono; 9:3:3:1 dihybrid — derive don't rote.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ratios with meaning"
+          },
+          "why": "Number drill.",
+          "example": "Explain from Punnett each time.",
+          "remember": "Product rule for dihybrid.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c05",
+          "name": "Three laws one sentence each",
+          "simple_answer": "Dominance, Segregation, Independent Assortment — write from memory.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Three laws recall"
+          },
+          "why": "Core Mendel output.",
+          "example": "Pea evidence each.",
+          "remember": "Activities simulate laws 2 and 3.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c06",
+          "name": "Top comparisons unit 4",
+          "simple_answer": "Genotype vs phenotype; dominant vs recessive; monohybrid vs dihybrid; XX vs XY; codominance vs dominance.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Comparison tables unit 4"
+          },
+          "why": "Revision tables.",
+          "example": "Five tables from memory.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c07",
+          "name": "Must-do problems checklist",
+          "simple_answer": "Ten monohybrid, three dihybrid, two ABO, one sex cross — all correct before exam.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Problem checklist"
+          },
+          "why": "Skills gate.",
+          "example": "Tick when 100% right.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c08",
+          "name": "Common mistakes unit 4",
+          "simple_answer": "Confusing genotype/phenotype ratios; forgetting gamete one allele; mother blamed for baby sex.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Avoid mistakes unit 4"
+          },
+          "why": "Error list.",
+          "example": "Review wrong answers.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c09",
+          "name": "NCERT Ch 8 summary review",
+          "simple_answer": "Re-read summary; every point mapped to a concept card.",
+          "visual": {
+            "type": "placeholder",
+            "label": "NCERT summary Ch 8"
+          },
+          "why": "Textbook closure.",
+          "example": "Summary = exam blueprint.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d15_c10",
+          "name": "Revision day summary",
+          "simple_answer": "Terms, laws, ratios, problems, diagrams — full Ch 8 revision before unit completion.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Day 15 summary unit 4"
+          },
+          "why": "Consolidation.",
+          "example": "Identify weakest day topic; redo cards.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "stage": 1,
+      "title": "Unit 4 Complete",
+      "active": true,
+      "release": 4,
+      "concepts": [
+        {
+          "id": "u4_d16_c01",
+          "name": "Cross-unit link Ch 7–8",
+          "simple_answer": "Reproduction creates variation; heredity transmits DNA; together they explain similarity and difference in families.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 7–8 synthesis"
+          },
+          "why": "Big picture.",
+          "example": "DNA copying errors + sexual shuffle + Mendelian patterns.",
+          "remember": "Variation raw material; heredity rules.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c02",
+          "name": "Evolution preview Ch 9",
+          "simple_answer": "Accumulated variation + selection leads to evolution — heredity chapter sets foundation.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Link to evolution Ch 9"
+          },
+          "why": "Forward connection.",
+          "example": "Mendel + Darwin ideas combine in modern biology.",
+          "remember": "Not exam depth now — awareness.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c03",
+          "name": "15-minute mixed quiz unit 4",
+          "simple_answer": "Mix laws, ratios, Punnett, sex chromosomes, ABO — timed.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Mixed quiz unit 4"
+          },
+          "why": "Final skills check.",
+          "example": "Score and review errors.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c04",
+          "name": "Full Mendel essay timed",
+          "simple_answer": "Write complete Mendel monohybrid account in 8 minutes from memory.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Timed Mendel essay"
+          },
+          "why": "Exam simulation.",
+          "example": "Include ratio and law.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c05",
+          "name": "Full dihybrid problem timed",
+          "simple_answer": "One RrYy × RrYy square in 5 minutes with ratios.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Timed dihybrid problem"
+          },
+          "why": "Speed drill.",
+          "example": "No notes.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c06",
+          "name": "Concept map Ch 8",
+          "simple_answer": "Draw map: Mendel → laws → mono/dihybrid → sex → blood groups → human traits.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Ch 8 concept map"
+          },
+          "why": "Visual synthesis.",
+          "example": "One page revision poster.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c07",
+          "name": "Peer teaching test",
+          "simple_answer": "Explain F2 3:1 to classmate without notes — teaching tests understanding.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Peer teach heredity"
+          },
+          "why": "Active recall.",
+          "example": "Fix gaps where explanation breaks.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c08",
+          "name": "Board exam readiness checklist",
+          "simple_answer": "Laws ✓ Ratios ✓ Punnett ✓ Sex ✓ ABO ✓ Activities ✓ Diagrams ✓",
+          "visual": {
+            "type": "placeholder",
+            "label": "Exam readiness checklist"
+          },
+          "why": "Self audit.",
+          "example": "All ticked before MCQ stage.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c09",
+          "name": "Congratulations message",
+          "simple_answer": "160 concept cards master NCERT Class 10 Heredity — strong foundation for boards and Ch 9.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Completion encouragement"
+          },
+          "why": "Motivation card.",
+          "example": "Consistency beats cramming.",
+          "remember": "",
+          "common_confusion": "",
+          "optional_detail": [],
+          "glossary_terms": []
+        },
+        {
+          "id": "u4_d16_c10",
+          "name": "Unit 4 complete",
+          "simple_answer": "Unit 4 Heredity complete — 160 concept cards; proceed to Practice when unlocked.",
+          "visual": {
+            "type": "placeholder",
+            "label": "Unit 4 complete — 160 cards"
+          },
+          "why": "Completion card.",
+          "example": "Biology Units 2–4 concept stage done.",
+          "remember": "Concepts done → practice → NCERT MCQs.",
+          "common_confusion": "",
+          "optional_detail": "",
+          "glossary_terms": []
+        }
+      ]
+    }
+  ]
+}

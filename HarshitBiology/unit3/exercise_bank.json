@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "active": true,
+    "stage": 3,
+    "range": "Exercises Q4–Q11",
+    "note": "Exam-style written questions. Chapter 7 has 3 MCQs (Stage 2) and 8 long-form exercises here.",
+    "chapter": "NCERT Class 10 Science Ch 7",
+    "pdf": "jesc107.pdf",
+    "unit_id": 3
+  },
+  "questions": [
+    {
+      "id": "u3_ex_q04",
+      "num": 4,
+      "type": "explain",
+      "marks": 3,
+      "question": "What are the advantages of sexual reproduction over asexual reproduction?",
+      "hints": [
+        "Sexual involves two parents and gamete fusion.",
+        "Creates more variation in offspring.",
+        "Variation helps species adapt to changing environments."
+      ],
+      "model_answer": "Sexual reproduction creates **more variations** because offspring inherit traits from **two parents** with **new combinations** of genes. This **genetic diversity** helps the **species survive** changing environments — some variants may be better suited than others.",
+      "marking_points": [
+        "Two parents / gamete fusion mentioned",
+        "More variation created",
+        "Variation benefits species survival/adaptation"
+      ],
+      "common_mistakes": [
+        "Saying sexual reproduction is always faster",
+        "Not linking variation to survival"
+      ],
+      "concept_ids": [
+        "u3_d6_c02",
+        "u3_d2_c02",
+        "u3_d1_c04"
+      ],
+      "misconception": "asexual_sexual_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 7 Exercises Q4"
+    },
+    {
+      "id": "u3_ex_q05",
+      "num": 5,
+      "type": "explain",
+      "marks": 3,
+      "question": "What are the functions performed by the testis in human beings?",
+      "hints": [
+        "Testis produces male gametes (sperm).",
+        "Also secretes testosterone at puberty.",
+        "Located in scrotum outside body for lower temperature."
+      ],
+      "model_answer": "Testis performs two functions:\n\n1. **Produces sperm** (male gametes) by meiosis.\n2. **Secretes testosterone** — the male sex hormone that develops secondary sexual characters at puberty (deep voice, facial hair, etc.).",
+      "marking_points": [
+        "Produces sperm/male gametes",
+        "Secretes testosterone",
+        "Optional: scrotum location for sperm production temperature"
+      ],
+      "common_mistakes": [
+        "Confusing testis with vas deferens function",
+        "Omitting hormone secretion role"
+      ],
+      "concept_ids": [
+        "u3_d9_c01",
+        "u3_d9_c03",
+        "u3_d9_c04"
+      ],
+      "misconception": "male_female_organ_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 7 Exercises Q5"
+    },
+    {
+      "id": "u3_ex_q06",
+      "num": 6,
+      "type": "explain",
+      "marks": 3,
+      "question": "Why does menstruation occur?",
+      "hints": [
+        "Uterus prepares lining each month for possible pregnancy.",
+        "If egg not fertilised, lining breaks down.",
+        "Menstrual blood is blood and uterine lining tissue."
+      ],
+      "model_answer": "Each month the **uterus prepares its lining** (endometrium) to receive a fertilised egg. If **fertilisation does not occur**, the thickened lining is **not needed** and **breaks down** — this is shed as **menstrual blood** through the vagina (menstruation).",
+      "marking_points": [
+        "Uterus lining prepared for pregnancy",
+        "No fertilisation → lining breaks down",
+        "Shed as menstrual flow"
+      ],
+      "common_mistakes": [
+        "Saying menstruation is excretion of eggs",
+        "Confusing menstruation with fertilisation"
+      ],
+      "concept_ids": [
+        "u3_d10_c05",
+        "u3_d10_c06",
+        "u3_d10_c04"
+      ],
+      "misconception": "male_female_organ_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 7 Exercises Q6"
+    },
+    {
+      "id": "u3_ex_q07",
+      "num": 7,
+      "type": "diagram_explain",
+      "marks": 5,
+      "question": "Draw a labelled diagram of the longitudinal section of a flower.",
+      "hints": [
+        "Show sepals, petals, stamen (anther + filament), pistil (stigma, style, ovary).",
+        "Label anther, pollen, ovary, ovule.",
+        "Longitudinal section shows internal structure."
+      ],
+      "model_answer": "Diagram should show:\n\n**Stamen (male):** anther (pollen grains) + filament.\n**Pistil/carpel (female):** stigma → style → ovary (containing ovules).\n**Accessories:** sepals, petals.\n\nPollen from anther reaches stigma (pollination); male gamete fuses with egg in ovule (fertilisation).",
+      "marking_points": [
+        "Stamen and pistil correctly drawn and labelled",
+        "Anther and ovary/ovule labelled",
+        "Sepals/petals shown"
+      ],
+      "common_mistakes": [
+        "Labelling ovules in anther",
+        "Confusing stamen with pistil"
+      ],
+      "concept_ids": [
+        "u3_d7_c01",
+        "u3_d7_c02",
+        "u3_d7_c03"
+      ],
+      "misconception": "pollination_fertilisation_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 7 Exercises Q7"
+    },
+    {
+      "id": "u3_ex_q08",
+      "num": 8,
+      "type": "describe",
+      "marks": 5,
+      "question": "What are the different methods of contraception?",
+      "hints": [
+        "Barrier methods: condom, diaphragm.",
+        "Chemical: oral pills (hormonal).",
+        "Surgical: vasectomy, tubectomy. IUD, etc."
+      ],
+      "model_answer": "Methods of contraception:\n\n1. **Barrier:** condoms, diaphragms — prevent sperm reaching egg.\n2. **Hormonal:** oral pills — prevent ovulation.\n3. **Intrauterine devices (IUDs):** prevent implantation.\n4. **Surgical:** vasectomy (males), tubectomy (females) — block gamete passage.\n5. **Natural/withdrawal** (less reliable).",
+      "marking_points": [
+        "At least three methods named",
+        "Brief mechanism for each",
+        "Barrier and hormonal methods included"
+      ],
+      "common_mistakes": [
+        "Confusing vasectomy with tubectomy",
+        "Saying contraception prevents all STDs (barrier helps but not all methods)"
+      ],
+      "concept_ids": [
+        "u3_d12_c01",
+        "u3_d12_c02",
+        "u3_d12_c03"
+      ],
+      "misconception": "male_female_organ_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 7 Exercises Q8"
+    },
+    {
+      "id": "u3_ex_q09",
+      "num": 9,
+      "type": "compare",
+      "marks": 4,
+      "question": "How are the modes for reproduction different in unicellular and multicellular organisms?",
+      "hints": [
+        "Unicellular: fission, budding, simple body design.",
+        "Multicellular: specialised reproductive organs, complex modes.",
+        "Cell-by-cell division impractical for complex bodies."
+      ],
+      "model_answer": "**Unicellular:** simple modes — **binary fission**, **budding**, **multiple fission** — entire cell divides.\n\n**Multicellular:** need **specialised reproductive organs/tissues** because body has many cell types in fixed positions. Modes include **fragmentation, regeneration, spores, vegetative propagation**, and **sexual reproduction** with gametes.",
+      "marking_points": [
+        "Unicellular modes named (fission/budding)",
+        "Multicellular needs specialised structures",
+        "Explains why simple division doesn't work for complex bodies"
+      ],
+      "common_mistakes": [
+        "Saying multicellular organisms only reproduce sexually",
+        "Omitting asexual modes in multicellular organisms"
+      ],
+      "concept_ids": [
+        "u3_d3_c01",
+        "u3_d4_c02",
+        "u3_d6_c01"
+      ],
+      "misconception": "asexual_sexual_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 7 Exercises Q9"
+    },
+    {
+      "id": "u3_ex_q10",
+      "num": 10,
+      "type": "explain",
+      "marks": 3,
+      "question": "How does reproduction help in providing stability to populations of species?",
+      "hints": [
+        "Reproduction maintains population numbers.",
+        "DNA copying preserves species characteristics.",
+        "Variation allows adaptation over generations."
+      ],
+      "model_answer": "Reproduction **maintains population size** by replacing individuals that die. **DNA copying** ensures offspring inherit species characteristics, providing **stability** of basic body design. **Variation** from slight copying inaccuracies allows gradual adaptation without losing species identity.",
+      "marking_points": [
+        "Maintains population numbers",
+        "Preserves species characteristics via DNA",
+        "Links to stability of species over time"
+      ],
+      "common_mistakes": [
+        "Confusing individual stability with population stability",
+        "Saying reproduction eliminates all variation"
+      ],
+      "concept_ids": [
+        "u3_d1_c01",
+        "u3_d2_c01",
+        "u3_d1_c05"
+      ],
+      "misconception": "dna_copying_confusion",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 7 Exercises Q10"
+    },
+    {
+      "id": "u3_ex_q11",
+      "num": 11,
+      "type": "explain",
+      "marks": 3,
+      "question": "What could be the reasons for adopting contraceptive methods?",
+      "hints": [
+        "Prevent unwanted pregnancies.",
+        "Population control / family planning.",
+        "Health of mother; spacing of children."
+      ],
+      "model_answer": "Reasons for contraception:\n\n1. **Prevent unwanted pregnancy** and allow **family planning**.\n2. **Population control** — limit family size.\n3. **Protect mother's health** — avoid frequent pregnancies.\n4. **Economic/social reasons** — spacing children for better care and education.",
+      "marking_points": [
+        "Prevent unwanted pregnancy",
+        "Family planning or population control",
+        "Health or economic reason"
+      ],
+      "common_mistakes": [
+        "Only mentioning one reason",
+        "Confusing contraception with STD prevention alone"
+      ],
+      "concept_ids": [
+        "u3_d12_c04",
+        "u3_d12_c05",
+        "u3_d12_c01"
+      ],
+      "misconception": "male_female_organ_swap",
+      "guided_tool": null,
+      "ncert_ref": "NCERT Ch 7 Exercises Q11"
+    }
+  ]
+}

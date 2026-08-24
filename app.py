@@ -737,6 +737,11 @@ def select_activity(activity):
         st.session_state.hc_day_id = None
         st.session_state.hc_mode = "concept"
         st.session_state.hc_start_time = time.time()
+    elif activity == "HarshitBiology":
+        st.session_state.current_page = "harshit_biology_home"
+        st.session_state.hb_day_id = None
+        st.session_state.hb_mode = "concept"
+        st.session_state.hb_start_time = time.time()
 
 
 def start_story(story_id):
@@ -1463,7 +1468,7 @@ def render_user_dashboard():
         st.markdown("### 📐 Choose Your Activity")
         st.markdown("")
 
-        act_col1, act_col2, act_col3 = st.columns(3, gap="large")
+        act_col1, act_col2, act_col3, act_col4 = st.columns(4, gap="large")
         with act_col1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #64748b;">
@@ -1501,6 +1506,19 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🧪 Chemistry", key="btn_harshit_chemistry", width="stretch", type="primary"):
                 select_activity("HarshitChemistry")
+                st.rerun()
+
+        with act_col4:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #16a34a;">
+                <div style="font-size: 3rem;">🌱</div>
+                <h3 style="margin: 0.5rem 0;">Biology Confidence</h3>
+                <p style="color: #6b7280;">Units 1–4 — Class 10 Biology</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🌱 Biology", key="btn_harshit_biology", width="stretch", type="primary"):
+                select_activity("HarshitBiology")
                 st.rerun()
 
     else:
@@ -6135,6 +6153,60 @@ def render_harshit_chemistry_exercise():
     harshit_chemistry_exercise_ui.render_exercise_question()
 
 
+def render_harshit_biology_home():
+    import harshit_biology_ui
+
+    harshit_biology_ui.render_home()
+
+
+def render_harshit_biology_unit1():
+    import harshit_biology_ui
+
+    harshit_biology_ui.render_unit1_home()
+
+
+def render_harshit_biology_unit2():
+    import harshit_biology_ui
+
+    harshit_biology_ui.render_unit2_home()
+
+
+def render_harshit_biology_unit3():
+    import harshit_biology_ui
+
+    harshit_biology_ui.render_unit3_home()
+
+
+def render_harshit_biology_unit4():
+    import harshit_biology_ui
+
+    harshit_biology_ui.render_unit4_home()
+
+
+def render_harshit_biology_concept():
+    import harshit_biology_ui
+
+    harshit_biology_ui.render_concept_card()
+
+
+def render_harshit_biology_practice():
+    import harshit_biology_practice_ui
+
+    harshit_biology_practice_ui.render_practice()
+
+
+def render_harshit_biology_mcq():
+    import harshit_biology_mcq_ui
+
+    harshit_biology_mcq_ui.render_mcq_session()
+
+
+def render_harshit_biology_exercise():
+    import harshit_biology_exercise_ui
+
+    harshit_biology_exercise_ui.render_exercise_question()
+
+
 # ──────────────────────────────────────────────
 # PAGE: Network Architecture / NVIDIA RA (Rakesh)
 # ──────────────────────────────────────────────
@@ -7235,6 +7307,24 @@ elif page == "harshit_chemistry_mcq":
     render_harshit_chemistry_mcq()
 elif page == "harshit_chemistry_exercise":
     render_harshit_chemistry_exercise()
+elif page == "harshit_biology_home":
+    render_harshit_biology_home()
+elif page == "harshit_biology_unit1":
+    render_harshit_biology_unit1()
+elif page == "harshit_biology_unit2":
+    render_harshit_biology_unit2()
+elif page == "harshit_biology_unit3":
+    render_harshit_biology_unit3()
+elif page == "harshit_biology_unit4":
+    render_harshit_biology_unit4()
+elif page == "harshit_biology_concept":
+    render_harshit_biology_concept()
+elif page == "harshit_biology_practice":
+    render_harshit_biology_practice()
+elif page == "harshit_biology_mcq":
+    render_harshit_biology_mcq()
+elif page == "harshit_biology_exercise":
+    render_harshit_biology_exercise()
 elif page == "cube_addition":
     render_cube_addition()
 else:

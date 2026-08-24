@@ -1,0 +1,887 @@
+{
+  "meta": {
+    "unit_id": 1,
+    "stage": 2,
+    "active": true,
+    "release": 5,
+    "total_mcqs": 40,
+    "pdf": "jesc105.pdf",
+    "note": "Stage 2: NCERT Exercises Q1–4 + Intext + concept bank. Activities 5.1–5.8 linked per day."
+  },
+  "sessions": [
+    {
+      "day": 17,
+      "title": "Nutrition and Photosynthesis",
+      "active": true,
+      "activity_refs": [
+        "5.1",
+        "5.2"
+      ],
+      "questions": [
+        {
+          "id": "u1_d17_ncert_01",
+          "question": "The kidneys in human beings are a part of the system for",
+          "options": [
+            "nutrition",
+            "respiration",
+            "excretion",
+            "transportation"
+          ],
+          "answer": 2,
+          "explanation": "Kidneys filter blood and remove nitrogenous wastes (urea) as urine — part of the excretory system.",
+          "misconception": "alveoli_nephron_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 5 Exercises Q1",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "ncert_ref": "NCERT Ch 5 Exercises Q1"
+        },
+        {
+          "id": "u1_d17_ncert_02",
+          "question": "The xylem in plants are responsible for",
+          "options": [
+            "transport of water",
+            "transport of food",
+            "transport of amino acids",
+            "transport of oxygen"
+          ],
+          "answer": 0,
+          "explanation": "Xylem vessels transport water and dissolved minerals from roots upward to leaves and other parts.",
+          "misconception": "xylem_phloem_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 5 Exercises Q2",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "ncert_ref": "NCERT Ch 5 Exercises Q2"
+        },
+        {
+          "id": "u1_d17_intext_03",
+          "question": "Why is diffusion insufficient to meet the oxygen requirements of multicellular organisms like humans?",
+          "options": [
+            "Multicellular organisms do not need oxygen",
+            "Most cells are not in direct contact with the environment",
+            "Diffusion is too fast for large bodies",
+            "Oxygen cannot diffuse through cell membranes"
+          ],
+          "answer": 1,
+          "explanation": "In large organisms most cells are deep inside the body and too far from the surface for diffusion alone to supply O₂ quickly enough.",
+          "misconception": "photosynthesis_respiration_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 5 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "ncert_ref": "NCERT Ch 5 Intext"
+        },
+        {
+          "id": "u1_d17_intext_04",
+          "question": "Where does photosynthesis primarily occur in a green plant?",
+          "options": [
+            "Roots",
+            "Green parts of the plant, especially leaves",
+            "Flowers only",
+            "Stem bark"
+          ],
+          "answer": 1,
+          "explanation": "Chloroplasts in green parts (mainly mesophyll of leaves) carry out photosynthesis using chlorophyll.",
+          "misconception": "autotroph_heterotroph_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 5 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "ncert_ref": "NCERT Ch 5 Intext"
+        },
+        {
+          "id": "u1_d17_intext_05",
+          "question": "Which enzyme begins starch digestion in the human mouth?",
+          "options": [
+            "Pepsin",
+            "Salivary amylase",
+            "Trypsin",
+            "Lipase"
+          ],
+          "answer": 1,
+          "explanation": "Salivary amylase (ptyalin) in saliva converts starch to maltose in the buccal cavity.",
+          "misconception": "autotroph_heterotroph_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 5 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "ncert_ref": "NCERT Ch 5 Intext"
+        },
+        {
+          "id": "u1_d17_intext_06",
+          "question": "Breathing and respiration are not the same because",
+          "options": [
+            "Breathing is biochemical breakdown of glucose",
+            "Respiration is only inhaling and exhaling air",
+            "Breathing is ventilation; respiration releases energy from food in cells",
+            "They occur in different organisms"
+          ],
+          "answer": 2,
+          "explanation": "Breathing moves air in and out of lungs; cellular respiration is the enzyme-controlled release of energy from glucose inside cells.",
+          "misconception": "photosynthesis_respiration_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 5 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "ncert_ref": "NCERT Ch 5 Intext"
+        },
+        {
+          "id": "u1_d17_intext_07",
+          "question": "Food synthesised in leaves is transported to other parts of the plant through",
+          "options": [
+            "xylem",
+            "phloem",
+            "stomata",
+            "root hairs"
+          ],
+          "answer": 1,
+          "explanation": "Phloem translocates sucrose and other food materials from source (leaves) to sink organs.",
+          "misconception": "xylem_phloem_swap",
+          "concept_id": "",
+          "source": "NCERT Ch 5 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "ncert_ref": "NCERT Ch 5 Intext"
+        },
+        {
+          "id": "u1_d17_intext_08",
+          "question": "The functional unit of the kidney that filters blood is the",
+          "options": [
+            "alveolus",
+            "nephron",
+            "villus",
+            "stomata"
+          ],
+          "answer": 1,
+          "explanation": "Each nephron consists of glomerulus, Bowman's capsule, tubules, and collecting duct — filters blood and forms urine.",
+          "misconception": "alveoli_nephron_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 5 Intext",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "ncert_ref": "NCERT Ch 5 Intext"
+        },
+        {
+          "id": "u1_s2_d1_bank_09",
+          "question": "What is the key takeaway about **Why maintenance is needed**?",
+          "options": [
+            "Small size + large surface area → diffusion works.",
+            "Special transport systems are needed in large bodies.",
+            "Maintenance needs energy from outside or from food",
+            "No energy needed for simple diffusion."
+          ],
+          "answer": 2,
+          "explanation": "Maintenance needs energy from outside or from food.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c02",
+          "category": "u1_d1_B",
+          "category_label": "Day 1 — Life Processes — Introduction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d1_bank_10",
+          "question": "What is the key takeaway about **Molecular movement and life**?",
+          "options": [
+            "Food → energy + building blocks.",
+            "Life needs controlled movement of substances",
+            "Visible movement alone is not enough to prove life.",
+            "Nutrition → respiration → transport → excretion."
+          ],
+          "answer": 1,
+          "explanation": "Life needs controlled movement of substances.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c03",
+          "category": "u1_d1_C",
+          "category_label": "Day 1 — Life Processes — Introduction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "title": "Digestion and Respiration",
+      "active": true,
+      "activity_refs": [
+        "5.3",
+        "5.4"
+      ],
+      "questions": [
+        {
+          "id": "u1_d18_ncert_01",
+          "question": "The autotrophic mode of nutrition requires",
+          "options": [
+            "carbon dioxide and water",
+            "chlorophyll",
+            "sunlight",
+            "all of the above"
+          ],
+          "answer": 3,
+          "explanation": "Autotrophic nutrition (photosynthesis) needs CO₂, water, chlorophyll to trap light, and sunlight as energy source.",
+          "misconception": "autotroph_heterotroph_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 5 Exercises Q3",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "ncert_ref": "NCERT Ch 5 Exercises Q3"
+        },
+        {
+          "id": "u1_d18_ncert_02",
+          "question": "The breakdown of pyruvate to give carbon dioxide, water and energy takes place in",
+          "options": [
+            "cytoplasm",
+            "mitochondria",
+            "chloroplast",
+            "nucleus"
+          ],
+          "answer": 1,
+          "explanation": "After glycolysis in cytoplasm, pyruvate enters mitochondria where it is completely oxidised aerobically to CO₂, H₂O, and ATP.",
+          "misconception": "aerobic_anaerobic_confusion",
+          "concept_id": "",
+          "source": "NCERT Ch 5 Exercises Q4",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "ncert_ref": "NCERT Ch 5 Exercises Q4"
+        },
+        {
+          "id": "u1_s2_d5_bank_03",
+          "question": "What is the key takeaway about **Steps in holozoic nutrition**?",
+          "options": [
+            "Food becomes part of body or fuel.",
+            "Egestion = undigested food out; excretion = metabolic waste.",
+            "Memorise order of five steps",
+            "Large molecules → small absorbable units."
+          ],
+          "answer": 2,
+          "explanation": "Memorise order of five steps.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d5_c02",
+          "category": "u1_d5_B",
+          "category_label": "Day 5 — Heterotrophic Nutrition · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d5_bank_04",
+          "question": "What is the key takeaway about **Ingestion**?",
+          "options": [
+            "Food becomes part of body or fuel.",
+            "All depend on autotrophs directly or indirectly.",
+            "Mouth is start of alimentary canal",
+            "Memorise order of five steps."
+          ],
+          "answer": 2,
+          "explanation": "Mouth is start of alimentary canal.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d5_c03",
+          "category": "u1_d5_C",
+          "category_label": "Day 5 — Heterotrophic Nutrition · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d5_bank_05",
+          "question": "Which statement best describes **Heterotrophic nutrition — recap**?",
+          "options": [
+            "Paramoecium has oral groove and gullet leading to food vacuole for digestion.",
+            "Assimilation is using absorbed nutrients for energy, growth, and repair.",
+            "Amoeba extends pseudopodia around food, forms food vacuole, digests with enzymes.",
+            "Organisms that cannot make their own food ingest complex organic matter and break it down."
+          ],
+          "answer": 3,
+          "explanation": "All depend on autotrophs directly or indirectly.",
+          "day_id": 5,
+          "topic": 5,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d5_c01",
+          "category": "u1_d5_A",
+          "category_label": "Day 5 — Heterotrophic Nutrition · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "autotroph_heterotroph_confusion"
+        },
+        {
+          "id": "u1_s2_d6_bank_06",
+          "question": "What is the key takeaway about **Mouth and buccal cavity**?",
+          "options": [
+            "Completes digestion started elsewhere.",
+            "Protein digestion begins in stomach.",
+            "Incisors cut, canines tear, molars grind",
+            "Most absorption also happens here."
+          ],
+          "answer": 2,
+          "explanation": "Incisors cut, canines tear, molars grind.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d6_c02",
+          "category": "u1_d6_B",
+          "category_label": "Day 6 — Human Digestion — Upper Tract · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d6_bank_07",
+          "question": "What is the key takeaway about **Saliva and salivary amylase**?",
+          "options": [
+            "Emulsification increases lipase efficiency.",
+            "Churning mixes food with gastric juice.",
+            "Starch digestion begins in mouth",
+            "Most absorption also happens here."
+          ],
+          "answer": 2,
+          "explanation": "Starch digestion begins in mouth.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d6_c03",
+          "category": "u1_d6_C",
+          "category_label": "Day 6 — Human Digestion — Upper Tract · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d6_bank_08",
+          "question": "Which statement best describes **Human digestive system overview**?",
+          "options": [
+            "Alimentary canal plus associated glands form the human digestive system.",
+            "Saliva moistens food and contains amylase (ptyalin) that starts starch digestion to maltose.",
+            "Teeth mechanically break food; tongue mixes and tastes; saliva begins chemical digestion.",
+            "Complete digestion of carbohydrates, proteins, and fats occurs in small intestine."
+          ],
+          "answer": 0,
+          "explanation": "Also: salivary glands, liver, pancreas.",
+          "day_id": 6,
+          "topic": 6,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d6_c01",
+          "category": "u1_d6_A",
+          "category_label": "Day 6 — Human Digestion — Upper Tract · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d7_bank_09",
+          "question": "What is the key takeaway about **Villi and microvilli**?",
+          "options": [
+            "Huge surface area in folded wall",
+            "Know organ order and main function each.",
+            "Memorise four key enzymes.",
+            "Anus is exit for undigested residue."
+          ],
+          "answer": 0,
+          "explanation": "Huge surface area in folded wall.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d7_c02",
+          "category": "u1_d7_B",
+          "category_label": "Day 7 — Human Digestion — Absorption · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d7_bank_10",
+          "question": "What is the key takeaway about **Absorption in small intestine**?",
+          "options": [
+            "Prevention is part of nutrition health.",
+            "Villi → capillaries → hepatic portal vein",
+            "Each enzyme works best at specific pH.",
+            "Huge surface area in folded wall."
+          ],
+          "answer": 1,
+          "explanation": "Villi → capillaries → hepatic portal vein.",
+          "day_id": 7,
+          "topic": 7,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d7_c03",
+          "category": "u1_d7_C",
+          "category_label": "Day 7 — Human Digestion — Absorption · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "title": "Transport in Plants and Animals",
+      "active": true,
+      "activity_refs": [
+        "5.5",
+        "5.6"
+      ],
+      "questions": [
+        {
+          "id": "u1_s2_d11_bank_01",
+          "question": "What is the key takeaway about **Xylem — definition**?",
+          "options": [
+            "Creates suction pulling water upward.",
+            "Dead cells form hollow tubes.",
+            "Roots absorb; leaves photosynthesise — connection needed.",
+            "One-way upward flow mainly"
+          ],
+          "answer": 3,
+          "explanation": "One-way upward flow mainly.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c02",
+          "category": "u1_d11_B",
+          "category_label": "Day 11 — Transport in Plants — Xylem · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "xylem_phloem_swap"
+        },
+        {
+          "id": "u1_s2_d11_bank_02",
+          "question": "What is the key takeaway about **Phloem — definition**?",
+          "options": [
+            "Creates suction pulling water upward.",
+            "Bidirectional food movement",
+            "Roots absorb; leaves photosynthesise — connection needed.",
+            "Water vapour from leaf condenses."
+          ],
+          "answer": 1,
+          "explanation": "Bidirectional food movement.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c03",
+          "category": "u1_d11_C",
+          "category_label": "Day 11 — Transport in Plants — Xylem · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "xylem_phloem_swap"
+        },
+        {
+          "id": "u1_s2_d11_bank_03",
+          "question": "Which statement best describes **Transport in plants — why needed**?",
+          "options": [
+            "Place plant stem in eosin/coloured water; cut sections show dye in xylem vessels.",
+            "Plastic bag on leaf shows water droplets inside — proof of transpiration.",
+            "Xylem has vessels and tracheids — thick lignified walls, no cytoplasm in mature cells.",
+            "Plants need transport to move water, minerals, and food between roots, stem, and leaves."
+          ],
+          "answer": 3,
+          "explanation": "Roots absorb; leaves photosynthesise — connection needed.",
+          "day_id": 11,
+          "topic": 11,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d11_c01",
+          "category": "u1_d11_A",
+          "category_label": "Day 11 — Transport in Plants — Xylem · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "photosynthesis_respiration_swap"
+        },
+        {
+          "id": "u1_s2_d12_bank_04",
+          "question": "What is the key takeaway about **Translocation**?",
+          "options": [
+            "Turgor pressure supports herbaceous plants.",
+            "Both are vascular tissues in plants.",
+            "Uses ATP at source loading",
+            "Plants regulate stomatal opening."
+          ],
+          "answer": 2,
+          "explanation": "Uses ATP at source loading.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d12_c02",
+          "category": "u1_d12_B",
+          "category_label": "Day 12 — Transport in Plants — Phloem · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "xylem_phloem_swap"
+        },
+        {
+          "id": "u1_s2_d12_bank_05",
+          "question": "What is the key takeaway about **Source and sink**?",
+          "options": [
+            "Turgor pressure supports herbaceous plants.",
+            "Adaptations match habitat.",
+            "Direction reverses seasonally in some plants",
+            "Active transport uses ATP from respiration."
+          ],
+          "answer": 2,
+          "explanation": "Direction reverses seasonally in some plants.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d12_c03",
+          "category": "u1_d12_C",
+          "category_label": "Day 12 — Transport in Plants — Phloem · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d12_bank_06",
+          "question": "Which statement best describes **Phloem tissue structure**?",
+          "options": [
+            "Minerals enter root hairs by active transport against concentration gradient — needs energy.",
+            "Translocation is movement of food (sucrose) through phloem from source to sink.",
+            "Phloem has sieve tubes and companion cells; living cells transport dissolved sugars.",
+            "Xylem + transpiration pull for water up; phloem + translocation for food to all parts."
+          ],
+          "answer": 2,
+          "explanation": "Sieve plates allow flow between cells.",
+          "day_id": 12,
+          "topic": 12,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d12_c01",
+          "category": "u1_d12_A",
+          "category_label": "Day 12 — Transport in Plants — Phloem · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "xylem_phloem_swap"
+        },
+        {
+          "id": "u1_s2_d13_bank_07",
+          "question": "What is the key takeaway about **Blood — components**?",
+          "options": [
+            "Capillaries are one cell thick.",
+            "RBCs carry O₂; WBCs fight infection; platelets clot",
+            "Diffusion alone fails beyond tiny thickness.",
+            "Separates low-pressure lung circuit from high-pressure body."
+          ],
+          "answer": 1,
+          "explanation": "RBCs carry O₂; WBCs fight infection; platelets clot.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d13_c02",
+          "category": "u1_d13_B",
+          "category_label": "Day 13 — Transport in Animals — Blood · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d13_bank_08",
+          "question": "What is the key takeaway about **Plasma function**?",
+          "options": [
+            "Too few platelets → bleeding risk.",
+            "Haemoglobin binds O₂ in lungs.",
+            "Part of immune system.",
+            "About 55% of blood volume"
+          ],
+          "answer": 3,
+          "explanation": "About 55% of blood volume.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d13_c03",
+          "category": "u1_d13_C",
+          "category_label": "Day 13 — Transport in Animals — Blood · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d13_bank_09",
+          "question": "Which statement best describes **Transport in animals — need**?",
+          "options": [
+            "Plasma transports digested food, CO₂, hormones, and waste products dissolved in water.",
+            "Platelets are cell fragments that help blood clot at injury sites.",
+            "Animals need circulatory system to deliver O₂, food, hormones and remove wastes from all cells.",
+            "Human heart drives double circulation — pulmonary and systemic circuits."
+          ],
+          "answer": 2,
+          "explanation": "Diffusion alone fails beyond tiny thickness.",
+          "day_id": 13,
+          "topic": 13,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d13_c01",
+          "category": "u1_d13_A",
+          "category_label": "Day 13 — Transport in Animals — Blood · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d14_bank_10",
+          "question": "What is the key takeaway about **Pulmonary circulation**?",
+          "options": [
+            "Count beats per minute at rest.",
+            "Faulty valves cause murmurs.",
+            "Pulse points: wrist, neck.",
+            "Gas exchange in alveoli"
+          ],
+          "answer": 3,
+          "explanation": "Gas exchange in alveoli.",
+          "day_id": 14,
+          "topic": 14,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d14_c02",
+          "category": "u1_d14_B",
+          "category_label": "Day 14 — Heart and Circulation · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "alveoli_nephron_confusion"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "title": "Excretion and Life Processes Review",
+      "active": true,
+      "activity_refs": [
+        "5.7",
+        "5.8"
+      ],
+      "questions": [
+        {
+          "id": "u1_s2_d15_bank_01",
+          "question": "What is the key takeaway about **Egestion vs excretion vs secretion**?",
+          "options": [
+            "Do not call urination egestion",
+            "Ureter connects kidney to bladder.",
+            "Lungs excrete CO₂ every breath.",
+            "Not the same as egestion or sweating alone."
+          ],
+          "answer": 0,
+          "explanation": "Do not call urination egestion.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d15_c02",
+          "category": "u1_d15_B",
+          "category_label": "Day 15 — Excretion — Plants and Kidneys · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d15_bank_02",
+          "question": "What is the key takeaway about **Excretion in plants**?",
+          "options": [
+            "Do not call urination egestion.",
+            "Guttation exudes liquid water with salts.",
+            "Resins and gums are waste products",
+            "Nephron is functional unit of kidney."
+          ],
+          "answer": 2,
+          "explanation": "Resins and gums are waste products.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d15_c03",
+          "category": "u1_d15_C",
+          "category_label": "Day 15 — Excretion — Plants and Kidneys · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d15_bank_03",
+          "question": "Which statement best describes **Excretion — definition**?",
+          "options": [
+            "Pair of kidneys filter blood to remove urea, excess water, and salts as urine.",
+            "Plants excrete O₂ (photosynthesis), CO₂ (respiration), water vapour, and store or drop wastes.",
+            "Day 16 covers nephron structure, filtration, and Activity 5.",
+            "Excretion is removal of harmful metabolic wastes produced in the body."
+          ],
+          "answer": 3,
+          "explanation": "Not the same as egestion or sweating alone.",
+          "day_id": 15,
+          "topic": 15,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d15_c01",
+          "category": "u1_d15_A",
+          "category_label": "Day 15 — Excretion — Plants and Kidneys · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d16_bank_04",
+          "question": "What is the key takeaway about **Nephron parts**?",
+          "options": [
+            "Know at least four parts for exam",
+            "Proteins and RBCs not filtered.",
+            "Damage to nephrons impairs filtration.",
+            "All four needed continuously."
+          ],
+          "answer": 0,
+          "explanation": "Know at least four parts for exam.",
+          "day_id": 16,
+          "topic": 16,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d16_c02",
+          "category": "u1_d16_B",
+          "category_label": "Day 16 — Nephron, Dialysis and Exam Prep · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "alveoli_nephron_confusion"
+        },
+        {
+          "id": "u1_s2_d16_bank_05",
+          "question": "What is the key takeaway about **Ultrafiltration in glomerulus**?",
+          "options": [
+            "Proteins and RBCs not filtered",
+            "Damage to nephrons impairs filtration.",
+            "Comparison questions are common.",
+            "Transplant is long-term alternative."
+          ],
+          "answer": 0,
+          "explanation": "Proteins and RBCs not filtered.",
+          "day_id": 16,
+          "topic": 16,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d16_c03",
+          "category": "u1_d16_C",
+          "category_label": "Day 16 — Nephron, Dialysis and Exam Prep · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d16_bank_06",
+          "question": "Which statement best describes **Nephron — functional unit**?",
+          "options": [
+            "When kidneys fail, dialysis machine removes urea from blood using semi-permeable membrane.",
+            "Nephron is the structural and functional unit of kidney — filters blood and forms urine.",
+            "Unit 1 Life Processes complete — 160 concept cards; proceed to Practice when unlocked.",
+            "Remaining fluid in collecting duct is urine — concentrated urea, excess water and salts."
+          ],
+          "answer": 1,
+          "explanation": "Damage to nephrons impairs filtration.",
+          "day_id": 16,
+          "topic": 16,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d16_c01",
+          "category": "u1_d16_A",
+          "category_label": "Day 16 — Nephron, Dialysis and Exam Prep · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "alveoli_nephron_confusion"
+        },
+        {
+          "id": "u1_s2_d1_bank_07",
+          "question": "What is the key takeaway about **Diffusion in unicellular organisms**?",
+          "options": [
+            "Maintenance needs energy from outside or from food.",
+            "Living things must carry out life processes continuously.",
+            "No energy needed for simple diffusion.",
+            "Small size + large surface area → diffusion works"
+          ],
+          "answer": 3,
+          "explanation": "Small size + large surface area → diffusion works.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c05",
+          "category": "u1_d1_B",
+          "category_label": "Day 1 — Life Processes — Introduction · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d1_bank_08",
+          "question": "What is the key takeaway about **Diffusion insufficient in multicellular organisms**?",
+          "options": [
+            "Visible movement alone is not enough to prove life.",
+            "Nutrition → respiration → transport → excretion.",
+            "Special transport systems are needed in large bodies",
+            "Life needs controlled movement of substances."
+          ],
+          "answer": 2,
+          "explanation": "Special transport systems are needed in large bodies.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "C",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c06",
+          "category": "u1_d1_C",
+          "category_label": "Day 1 — Life Processes — Introduction · Avoid mistakes — common confusions",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d1_bank_09",
+          "question": "Which statement best describes **What are life processes?**?",
+          "options": [
+            "Outside materials are used to build body structure and to provide energy for life processes.",
+            "In unicellular organisms, the entire surface is in direct contact with the environment — diffusion alone is enough.",
+            "Living organisms take in raw materials from outside: carbon-based food/CO₂, water, and inorganic salts.",
+            "Life processes are the basic functions performed by living organisms to maintain life — nutrition, respiration, transport, excretion, and more."
+          ],
+          "answer": 3,
+          "explanation": "Living things must carry out life processes continuously.",
+          "day_id": 1,
+          "topic": 1,
+          "level": "A",
+          "unit_id": 1,
+          "concept_id": "u1_d1_c01",
+          "category": "u1_d1_A",
+          "category_label": "Day 1 — Life Processes — Introduction · Recall — definitions and key facts",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "aerobic_anaerobic_confusion"
+        },
+        {
+          "id": "u1_s2_d2_bank_10",
+          "question": "What is the key takeaway about **Autotrophic nutrition**?",
+          "options": [
+            "Decompose dead material; recycle nutrients.",
+            "Parasite benefits; host is harmed.",
+            "Photosynthesis in leaves; absorption by roots.",
+            "Make food from inorganic raw materials"
+          ],
+          "answer": 3,
+          "explanation": "Make food from inorganic raw materials.",
+          "day_id": 2,
+          "topic": 2,
+          "level": "B",
+          "unit_id": 1,
+          "concept_id": "u1_d2_c02",
+          "category": "u1_d2_B",
+          "category_label": "Day 2 — Nutrition — Modes and Overview · Apply — examples and reasoning",
+          "source": "concept_bank",
+          "chapter_ref": "NCERT Class 10 Ch 5 — Life Processes",
+          "misconception": "autotroph_heterotroph_confusion"
+        }
+      ]
+    }
+  ]
+}
