@@ -8,6 +8,7 @@ import database as db
 from harshit.ui_utils import (
     render_concept_top_anchor,
     render_scroll_to_top_if_requested,
+    render_subject_unit_tiles,
     request_scroll_to_top,
 )
 from . import components as hpco
@@ -153,21 +154,37 @@ def render_home() -> None:
     )
     st.markdown("")
 
-    if st.button("Unit 1 — Light: Reflection and Refraction", type="primary", use_container_width=True):
-        _open_unit1_home()
-        st.rerun()
-
-    if st.button("Unit 2 — The Human Eye and the Colourful World", use_container_width=True):
-        _open_unit2_home()
-        st.rerun()
-
-    if st.button("Unit 3 — Electricity", use_container_width=True):
-        _open_unit3_home()
-        st.rerun()
-
-    if st.button("Unit 4 — Magnetic Effects of Electric Current", use_container_width=True):
-        _open_unit4_home()
-        st.rerun()
+    render_subject_unit_tiles(
+        [
+            {
+                "id": 1,
+                "title": hpc.UNITS[1]["title"],
+                "subtitle": "NCERT Ch 9 · 16 concept days",
+                "on_open": _open_unit1_home,
+                "featured": True,
+            },
+            {
+                "id": 2,
+                "title": hpc.UNITS[2]["title"],
+                "subtitle": "NCERT Ch 10 · 16 concept days",
+                "on_open": _open_unit2_home,
+            },
+            {
+                "id": 3,
+                "title": hpc.UNITS[3]["title"],
+                "subtitle": "NCERT Ch 11 · 16 concept days",
+                "on_open": _open_unit3_home,
+            },
+            {
+                "id": 4,
+                "title": hpc.UNITS[4]["title"],
+                "subtitle": "NCERT Ch 12 · 16 concept days",
+                "on_open": _open_unit4_home,
+            },
+        ],
+        accent="#6366F1",
+        key_prefix="hp_home",
+    )
 
 
 def render_unit_home(unit_id: int) -> None:

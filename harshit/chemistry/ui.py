@@ -8,6 +8,7 @@ import database as db
 from harshit.ui_utils import (
     render_concept_top_anchor,
     render_scroll_to_top_if_requested,
+    render_subject_unit_tiles,
     request_scroll_to_top,
 )
 from . import components as hpco
@@ -153,34 +154,37 @@ def render_home() -> None:
     )
     st.markdown("")
 
-    if st.button(
-        "Unit 1 — Chemical Reactions and Equations",
-        type="primary",
-        use_container_width=True,
-    ):
-        _open_unit1_home()
-        st.rerun()
-
-    if st.button(
-        "Unit 2 — Acids, Bases and Salts",
-        use_container_width=True,
-    ):
-        _open_unit2_home()
-        st.rerun()
-
-    if st.button(
-        "Unit 3 — Metals and Non-metals",
-        use_container_width=True,
-    ):
-        _open_unit3_home()
-        st.rerun()
-
-    if st.button(
-        "Unit 4 — Carbon and its Compounds",
-        use_container_width=True,
-    ):
-        _open_unit4_home()
-        st.rerun()
+    render_subject_unit_tiles(
+        [
+            {
+                "id": 1,
+                "title": hpc.UNITS[1]["title"],
+                "subtitle": "NCERT Ch 1 · 16 concept days",
+                "on_open": _open_unit1_home,
+                "featured": True,
+            },
+            {
+                "id": 2,
+                "title": hpc.UNITS[2]["title"],
+                "subtitle": "NCERT Ch 2 · 16 concept days",
+                "on_open": _open_unit2_home,
+            },
+            {
+                "id": 3,
+                "title": hpc.UNITS[3]["title"],
+                "subtitle": "NCERT Ch 3 · 16 concept days",
+                "on_open": _open_unit3_home,
+            },
+            {
+                "id": 4,
+                "title": hpc.UNITS[4]["title"],
+                "subtitle": "NCERT Ch 4 · 16 concept days",
+                "on_open": _open_unit4_home,
+            },
+        ],
+        accent="#0D9488",
+        key_prefix="hc_home",
+    )
 
 
 def render_unit_home(unit_id: int) -> None:
