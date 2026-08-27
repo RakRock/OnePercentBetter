@@ -95,7 +95,9 @@ def format_practice_report_email(
     date_str = when.strftime("%A, %B %d, %Y")
     time_str = when.strftime("%I:%M %p").lstrip("0")
     minutes, seconds = divmod(max(time_spent_seconds, 0), 60)
-    score_line = f"{report['correct_count']}/{report['total']} ({report['score_pct']}%)"
+    cc = report.get("correct_count", 0)
+    tot = report.get("total", 0)
+    score_line = f"{cc:g}/{tot:g} ({report['score_pct']}%)"
     first_name = student_name.split()[0] if student_name.strip() else "Student"
     overall_status = report.get("overall_status", "Developing")
     narrative = report.get("summary_narrative") or (
@@ -104,7 +106,7 @@ def format_practice_report_email(
 
     subject = (
         f"{student_name} — {program_name} {unit_title} "
-        f"({report['correct_count']}/{report['total']}, {report['score_pct']}%)"
+        f"({cc:g}/{tot:g}, {report['score_pct']}%)"
     )
 
     missed = failed_questions if failed_questions is not None else _failed_from_report(report, None, None)
@@ -378,7 +380,9 @@ def format_harshit_student_review_email(
     when = when or datetime.now()
     date_str = when.strftime("%A, %B %d, %Y")
     minutes, seconds = divmod(max(time_spent_seconds, 0), 60)
-    score_line = f"{report['correct_count']}/{report['total']} ({report['score_pct']}%)"
+    cc = report.get("correct_count", 0)
+    tot = report.get("total", 0)
+    score_line = f"{cc:g}/{tot:g} ({report['score_pct']}%)"
     first_name = student_name.split()[0] if student_name.strip() else "Student"
 
     missed = failed_questions if failed_questions is not None else _failed_from_report(report, None, None)

@@ -366,6 +366,10 @@ def render_practice_home(unit_id: int) -> None:
 
 
 def render_unit_home(unit_id: int) -> None:
+    import harshit_class10_unit_notes as h10un
+    import harshit_class10_unit_notes_ui as h10ung_ui
+    import harshit_class10_unit_test_ui as h10ut_ui
+
     hmc_ui.inject_harshit_styles()
     unit = h10u.get_unit(unit_id)
     if not unit:
@@ -383,12 +387,19 @@ def render_unit_home(unit_id: int) -> None:
     _render_unit_header(unit_id, unit)
 
     section_key = f"hm10_unit_section_{unit_id}"
+    has_guide = h10un.unit_guide_available(unit_id)
+    section_options = ["🎯 Practice", "📝 Unit Test", "📅 Week Setup"]
+    if has_guide:
+        section_options = ["📖 Unit Guide"] + section_options
+
     if section_key not in st.session_state:
-        st.session_state[section_key] = "🎯 Practice"
+        st.session_state[section_key] = "📖 Unit Guide" if has_guide else "🎯 Practice"
+    elif st.session_state[section_key] not in section_options:
+        st.session_state[section_key] = section_options[0]
 
     section = st.radio(
         "Section",
-        ["🎯 Practice", "📅 Week Setup"],
+        section_options,
         horizontal=True,
         key=section_key,
         label_visibility="collapsed",
@@ -396,8 +407,12 @@ def render_unit_home(unit_id: int) -> None:
 
     st.markdown("---")
 
-    if section == "🎯 Practice":
+    if section == "📖 Unit Guide":
+        h10ung_ui.render_unit_guide(unit_id)
+    elif section == "🎯 Practice":
         render_practice_home(unit_id)
+    elif section == "📝 Unit Test":
+        h10ut_ui.render_unit_test_home(unit_id)
     else:
         render_setup_panel(unit_id)
 

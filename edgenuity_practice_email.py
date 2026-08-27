@@ -127,6 +127,32 @@ def send_harshit_report_email(
     )
 
 
+def send_harshit_unit_test_report_email(
+    *,
+    student_name: str,
+    unit_title: str,
+    report: dict,
+    time_spent_seconds: int,
+    when: datetime | None = None,
+    session_meta: dict | None = None,
+    questions: list[dict] | None = None,
+    answers: list[dict] | None = None,
+) -> EmailSendResult:
+    return send_report(
+        student_name=student_name,
+        unit_title=unit_title,
+        unit_subtitle="Unit Test — 25 min board format",
+        report=report,
+        time_spent_seconds=time_spent_seconds,
+        when=when,
+        session_meta=session_meta,
+        questions=questions,
+        answers=answers,
+        program_name="Harshit Math",
+        report_heading="Harshit Math Unit Test Report",
+    )
+
+
 def send_course3_report_email(
     *,
     student_name: str,
@@ -166,6 +192,7 @@ __all__ = [
     "load_email_config",
     "practice_email_enabled",
     "render_practice_email_result",
+    "send_harshit_unit_test_report_email",
     "send_course3_report_email",
     "send_harshit_report_email",
     "send_linear_equation_report_email",

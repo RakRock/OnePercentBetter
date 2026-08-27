@@ -6045,6 +6045,12 @@ def render_harshit_class10_practice():
     harshit_class10_practice_ui.render_practice()
 
 
+def render_harshit_class10_unit_test():
+    import harshit_class10_unit_test_ui
+
+    harshit_class10_unit_test_ui.render_unit_test_session()
+
+
 def render_harshit_physics_home():
     import harshit_physics_ui
 
@@ -7271,6 +7277,8 @@ elif page == "harshit_class10_unit":
     render_harshit_class10_unit()
 elif page == "harshit_class10_practice":
     render_harshit_class10_practice()
+elif page == "harshit_class10_unit_test":
+    render_harshit_class10_unit_test()
 elif page == "harshit_physics_home":
     render_harshit_physics_home()
 elif page == "harshit_physics_unit1":

@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "unit_id": 4,
+    "chapter": "Quadratic Equations",
+    "ncert": "Chapter 4",
+    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE SQP 2025-26"]
+  },
+  "mcq": [
+    {
+      "id": "bsqp_q6",
+      "source_paper": "CBSE SQP 2025-26",
+      "question": "Which one of the following is NOT a quadratic equation?",
+      "options": ["(x + 2)² = 2(x + 3)", "x² + 3x = (−1)(1 − 3x)²", "x³ − x² + 2x + 1 = (x + 1)³", "(x + 2)(x + 1) = x² + 2x + 3"],
+      "answer": 3,
+      "explanation": "LHS expands to x²+3x+2; RHS is x²+2x+3 — not of the form ax²+bx+c=0 with a≠0 after simplification to linear."
+    },
+    {
+      "id": "b30_quad_disc",
+      "source_paper": "30/1/2",
+      "question": "If the discriminant of 2x² − 3x + 5 is Δ, then nature of roots is:",
+      "options": ["two distinct real roots", "two equal real roots", "no real roots", "one real root"],
+      "answer": 2,
+      "explanation": "Δ = 9 − 40 = −31 < 0."
+    },
+    {
+      "id": "b30_quad_root",
+      "source_paper": "30/1/3",
+      "question": "The roots of x² − 5x + 6 = 0 are:",
+      "options": ["2 and 3", "−2 and −3", "1 and 6", "−1 and −6"],
+      "answer": 0,
+      "explanation": "(x−2)(x−3)=0."
+    }
+  ],
+  "assertion_reason": [
+    {
+      "id": "b30_quad_ar",
+      "source_paper": "30/1/1 (board-style)",
+      "assertion": "Every quadratic equation has at most two roots.",
+      "reason": "The degree of a quadratic polynomial is 2.",
+      "answer": 0,
+      "explanation": "Both true; degree 2 limits zeroes to at most 2."
+    }
+  ],
+  "vsa": [
+    {
+      "id": "b30_quad_vsa_fact",
+      "source_paper": "30/1/1",
+      "marks": 2,
+      "question": "Find the roots of x² − 5x + 6 = 0 by factorisation.",
+      "model_answer": "(x − 2)(x − 3) = 0 ⇒ x = 2 or 3.",
+      "rubric": ["Factorisation", "Roots 2 and 3"]
+    },
+    {
+      "id": "b30_quad_vsa_disc",
+      "source_paper": "30/1/2",
+      "marks": 2,
+      "question": "Find the discriminant of x² + 4x + 5 and state the nature of roots.",
+      "model_answer": "Δ = 16 − 20 = −4 < 0. No real roots.",
+      "rubric": ["Δ = −4", "No real roots"]
+    }
+  ],
+  "sa": [
+    {
+      "id": "b30_quad_sa_formula",
+      "source_paper": "30/1/3",
+      "marks": 3,
+      "question": "Solve 2x² − 7x + 3 = 0 using the quadratic formula.",
+      "model_answer": "x = (7 ± √(49−24))/4 = (7 ± 5)/4 ⇒ x = 3 or 1/2.",
+      "rubric": ["Correct Δ and formula", "Roots 3 and 1/2"]
+    },
+    {
+      "id": "bsqp_quad_sa",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 3,
+      "question": "Find the value of k for which x² − 2(1 + 3k)x + 7(1 + 3k) = 0 has equal roots.",
+      "model_answer": "Δ = 0 ⇒ 4(1+3k)² − 28(1+3k) = 0 ⇒ k = −1 or 2/3.",
+      "rubric": ["Set Δ = 0", "Solve for k"]
+    }
+  ],
+  "la": [
+    {
+      "id": "b30_1_1_d33a",
+      "source_paper": "30/1/1",
+      "marks": 5,
+      "question": "A fast train takes 1 hour less than a slow train for a 200 km journey. If the slow train is 10 km/h slower, find the speeds of both trains.",
+      "model_answer": "Let fast speed = x. 200/x + 1 = 200/(x−10). Solve: x = 50 km/h (fast), 40 km/h (slow).",
+      "rubric": ["Let variable and time equation", "Form quadratic", "Speeds 50 and 40 km/h"]
+    },
+    {
+      "id": "bsqp_d32",
+      "source_paper": "CBSE SQP 2025-26",
+      "marks": 5,
+      "question": "A train travels 63 km at speed x km/h, then 72 km at (x + 6) km/h. Total time is 3 hours. Find the original speed x.",
+      "model_answer": "63/x + 72/(x+6) = 3 ⇒ x² − 33x − 126 = 0 ⇒ x = 36 km/h (reject negative).",
+      "rubric": ["Time equation", "Quadratic formed", "x = 36 km/h"]
+    },
+    {
+      "id": "b30_1_1_d33b",
+      "source_paper": "30/1/1",
+      "marks": 5,
+      "question": "Sum of areas of two squares is 640 m² and difference of perimeters is 64 m. Find the sides of the squares.",
+      "model_answer": "x² + y² = 640, 4x − 4y = 64 ⇒ x − y = 16. Solve x = 24 m, y = 8 m.",
+      "rubric": ["Two equations", "Elimination/substitution", "Sides 24 m and 8 m"]
+    }
+  ]
+}

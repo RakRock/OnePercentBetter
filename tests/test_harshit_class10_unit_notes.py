@@ -1,0 +1,33 @@
+"""Tests for Class 10 unit teaching guides."""
+
+from __future__ import annotations
+
+import unittest
+
+import harshit_class10_unit_notes as h10un
+
+
+class TestClass10UnitNotes(unittest.TestCase):
+    def test_unit2_guide_available(self) -> None:
+        self.assertTrue(h10un.unit_guide_available(2))
+        self.assertFalse(h10un.unit_guide_available(99))
+
+    def test_unit2_sections(self) -> None:
+        guide = h10un.get_unit_guide(2)
+        self.assertIsNotNone(guide)
+        assert guide is not None
+        ids = h10un.guide_section_ids(2)
+        self.assertIn("overview", ids)
+        self.assertIn("formulas", ids)
+        self.assertGreaterEqual(len(guide["sections"]), 4)
+
+    def test_unit2_formulas_mention_sum_product(self) -> None:
+        guide = h10un.get_unit_guide(2)
+        assert guide is not None
+        formulas = next(s for s in guide["sections"] if s["id"] == "formulas")
+        self.assertIn("α + β", formulas["body"])
+        self.assertIn("αβ", formulas["body"])
+
+
+if __name__ == "__main__":
+    unittest.main()

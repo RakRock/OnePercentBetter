@@ -24,6 +24,9 @@ Thumbs.db
 # Queued practice report emails (local retry)
 .email_queue/
 
+# Unit test written-work photos (student uploads — local only)
+HarshitMath/class10/unit_test_work/
+
 # AI Forge
 ai-forge/.env
 ai-forge/frontend/node_modules/

@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "unit_id": 2,
+    "chapter": "Polynomials",
+    "ncert": "Chapter 2",
+    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE 30/1/3", "CBSE SQP 2025-26"]
+  },
+  "mcq": [
+    {
+      "id": "b30_1_1_p4",
+      "source_paper": "30/1/1",
+      "question": "The graph of y = f(x) is given (curve crosses the x-axis at two points). The number of zeroes of f(x) is:",
+      "options": ["0", "1", "2", "4"],
+      "answer": 2,
+      "explanation": "Number of zeroes = number of x-intercepts = 2."
+    },
+    {
+      "id": "bsqp_p13",
+      "source_paper": "CBSE SQP 2025-26",
+      "question": "If zeroes of ax² + bx + c (a, c ≠ 0) are equal, then:",
+      "options": ["c and b must have opposite signs", "c and a must have opposite signs", "c and b must have same signs", "c and a must have same signs"],
+      "answer": 3,
+      "explanation": "Equal zeroes ⇒ Δ = 0 ⇒ b² = 4ac. With equal zeroes, c and a have same sign."
+    },
+    {
+      "id": "b30_1_3_p_mcq",
+      "source_paper": "30/1/3",
+      "question": "Which is the degree of the polynomial 5x³ − 4x + 7?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explanation": "Highest power of x is 3."
+    }
+  ],
+  "assertion_reason": [
+    {
+      "id": "b30_1_1_ar20",
+      "source_paper": "30/1/1",
+      "assertion": "The polynomial p(y) = y² + 4y + 3 has two zeroes.",
+      "reason": "A quadratic polynomial can have at most two zeroes.",
+      "answer": 0,
+      "explanation": "Both true; factorises as (y+1)(y+3) giving two zeroes."
+    }
+  ],
+  "vsa": [
+    {
+      "id": "b30_1_1_b21",
+      "source_paper": "30/1/1",
+      "marks": 2,
+      "question": "If α, β are the zeroes of p(x) = x² − 3x − 1, find the value of 1/α + 1/β.",
+      "model_answer": "1/α + 1/β = (α+β)/(αβ) = 3/(−1) = −3.",
+      "rubric": ["Use (α+β) and αβ", "Answer −3"]
+    },
+    {
+      "id": "b30_1_2_b25",
+      "source_paper": "30/1/2",
+      "marks": 2,
+      "question": "Find the zeroes of x² + 7x + 10 and verify the relationship between zeroes and coefficients.",
+      "model_answer": "Zeroes: −2 and −5. Sum = −7, product = 10.",
+      "rubric": ["Factorise to −2, −5", "Verify sum and product"]
+    },
+    {
+      "id": "b30_1_3_b24",
+      "source_paper": "30/1/3",
+      "marks": 2,
+      "question": "Find a quadratic polynomial whose zeroes are (5 − 2√3) and (5 + 2√3).",
+      "model_answer": "Sum = 10, product = 25 − 12 = 13. Polynomial: x² − 10x + 13.",
+      "rubric": ["Sum and product of zeroes", "x² − 10x + 13"]
+    }
+  ],
+  "sa": [
+    {
+      "id": "bsqp_c28",
+      "source_paper": "CBSE SQP 2025-26",
+      "marks": 3,
+      "question": "Find the zeroes of 2x² − (1 + 2√2)x + √2 and verify the relationship between zeroes and coefficients.",
+      "model_answer": "Factorise: (2x−1)(x−√2)=0 ⇒ x = 1/2, √2. Verify sum and product.",
+      "rubric": ["Zeroes 1/2 and √2", "Verification with coefficients"]
+    },
+    {
+      "id": "b30_1_2_sa_poly",
+      "source_paper": "30/1/2",
+      "marks": 3,
+      "question": "If one zero of p(x) = 3x² + 8x + k is the reciprocal of the other, find k.",
+      "model_answer": "Product of zeroes = k/3 = 1 ⇒ k = 3.",
+      "rubric": ["Reciprocal zeroes ⇒ product 1", "k = 3"]
+    }
+  ],
+  "la": [
+    {
+      "id": "b30_poly_la_div",
+      "source_paper": "30/1/3 (board-style)",
+      "marks": 5,
+      "question": "Obtain all zeroes of p(x) = 2x³ + x² − 5x + 2 if (x − 1) is a factor. Verify the relationship between zeroes and coefficients for the quadratic factor obtained.",
+      "model_answer": "Divide to get (x−1)(2x²+3x−2)=0 ⇒ zeroes 1, 1/2, −2.",
+      "rubric": ["Division algorithm", "All three zeroes", "Verification step"]
+    },
+    {
+      "id": "bsqp_poly_la",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 5,
+      "question": "If α and β are zeroes of x² − 5x + 6, form a quadratic whose zeroes are 1/α and 1/β.",
+      "model_answer": "New sum = (α+β)/(αβ) = 5/6; new product = 1/6. x² − (5/6)x + 1/6 or 6x² − 5x + 1.",
+      "rubric": ["Original sum/product", "New coefficients", "Correct polynomial"]
+    }
+  ]
+}
