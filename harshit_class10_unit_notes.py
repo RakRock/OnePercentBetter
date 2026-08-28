@@ -431,8 +431,16 @@ Then open **Week Setup**, pick all four topics at levels B–C, and start **Prac
 }
 
 
+# Bump a unit's version when its guide content changes so returning users land on the guide tab.
+GUIDE_VERSIONS: dict[int, int] = {2: 1, 3: 1}
+
+
 def unit_guide_available(unit_id: int) -> bool:
     return unit_id in UNIT_GUIDES
+
+
+def guide_version(unit_id: int) -> int:
+    return GUIDE_VERSIONS.get(unit_id, 0)
 
 
 def get_unit_guide(unit_id: int) -> dict[str, Any] | None:

@@ -41,6 +41,11 @@ class TestClass10UnitNotes(unittest.TestCase):
         self.assertIn("a₁/a₂", formulas["body"])
         self.assertIn("Substitution", formulas["body"])
 
+    def test_guide_version_tracked_for_units_with_guides(self) -> None:
+        self.assertEqual(h10un.guide_version(2), 1)
+        self.assertEqual(h10un.guide_version(3), 1)
+        self.assertEqual(h10un.guide_version(1), 0)
+
 
 if __name__ == "__main__":
     unittest.main()

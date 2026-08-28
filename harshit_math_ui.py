@@ -115,6 +115,7 @@ def _prereq_progress_label(prereq: dict, summary: dict) -> str:
 
 
 def _render_class10_tab():
+    import harshit_class10_unit_notes as h10un
     import harshit_class10_units as h10u
 
     active_units = [u["title"] for u in h10u.list_units() if u.get("active")]
@@ -134,10 +135,11 @@ def _render_class10_tab():
     for i, unit in enumerate(h10u.list_units()):
         active = unit.get("active", False)
         pdf_name = unit.get("pdf", "")
+        guide_tag = " · 📖 Unit Guide" if h10un.unit_guide_available(unit["id"]) else ""
         status = (
-            f"Ready · {unit['title']} ({pdf_name})"
+            f"Ready · {unit['title']} ({pdf_name}){guide_tag}"
             if active and pdf_name
-            else ("Ready" if active else "Coming soon")
+            else (f"Ready{guide_tag}" if active else "Coming soon")
         )
         with cols[i % 2]:
             st.markdown(

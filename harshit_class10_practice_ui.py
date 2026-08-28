@@ -320,6 +320,14 @@ def render_setup_panel(unit_id: int) -> None:
 
 
 def render_practice_home(unit_id: int) -> None:
+    import harshit_class10_unit_notes as h10un
+
+    if h10un.unit_guide_available(unit_id):
+        st.info(
+            "📖 **New here?** Open the **Unit Guide** tab above first — "
+            "formulas and teaching notes for this chapter are there."
+        )
+
     config = ensure_week_config(unit_id)
     err = st.session_state.pop(_ss_key(unit_id, "error"), None)
     warn = st.session_state.pop(_ss_key(unit_id, "warn"), None)
@@ -391,6 +399,13 @@ def render_unit_home(unit_id: int) -> None:
     section_options = ["🎯 Practice", "📝 Unit Test", "📅 Week Setup"]
     if has_guide:
         section_options = ["📖 Unit Guide"] + section_options
+
+    guide_ver_key = f"hm10_guide_version_{unit_id}"
+    if has_guide:
+        expected_ver = h10un.guide_version(unit_id)
+        if st.session_state.get(guide_ver_key) != expected_ver:
+            st.session_state[guide_ver_key] = expected_ver
+            st.session_state[section_key] = "📖 Unit Guide"
 
     if section_key not in st.session_state:
         st.session_state[section_key] = "📖 Unit Guide" if has_guide else "🎯 Practice"

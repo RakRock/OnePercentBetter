@@ -59,6 +59,6 @@ def render_unit_guide(unit_id: int) -> None:
 
     st.markdown("---")
     st.caption(
-        "Use **Week Setup** to choose topics, then **Practice** when Harshit is ready. "
-        "Formulas above match NCERT Chapter 2 and board-style questions."
+        f"Use **Week Setup** to choose topics, then **Practice** when Harshit is ready. "
+        f"Notes above follow NCERT Chapter {unit_id} and board-style questions."
     )
