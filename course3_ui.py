@@ -11,6 +11,7 @@ import streamlit as st
 import arjun_course3_content as c3
 import arjun_course3_practice as c3p
 import arjun_course3_render as c3r
+import arjun_course3_week_ui as c3week_ui
 import database as db
 import edgenuity_practice_email as ec3mail
 import google_sheets_sync as gss
@@ -30,7 +31,12 @@ def _xai_api_key() -> str | None:
 
 
 def _use_grok(unit_id: int) -> bool:
-    return bool(st.session_state.get(f"c3_use_llm_{unit_id}", False))
+    config = c3week_ui.ensure_week_config("course3", unit_id)
+    return bool(config.get("use_llm"))
+
+
+def _week_config(unit_id: int) -> dict:
+    return c3week_ui.ensure_week_config("course3", unit_id)
 
 
 def _back_dashboard():
@@ -74,6 +80,7 @@ def _start_practice(
         st.session_state.c3_warn = "No practice questions for this unit yet."
         return
 
+    config = _week_config(unit_id)
     user = db.get_user(st.session_state.selected_user) if st.session_state.get("selected_user") else None
     exclude_ids = (
         db.get_recent_ec3_question_ids(
@@ -85,16 +92,12 @@ def _start_practice(
         else set()
     )
 
-    use_llm = _use_grok(unit_id)
     api_key = _xai_api_key()
-    question_count = (
-        min(FOCUS_QUESTION_COUNT, bank_size)
-        if focus_category
-        else min(FULL_QUESTION_COUNT, bank_size)
-    )
+    use_llm = bool(config.get("use_llm"))
 
     def _build():
         if focus_category:
+            question_count = min(FOCUS_QUESTION_COUNT, c3p.question_count_for_unit(unit_id, [focus_category]))
             return c3p.build_focus_set(
                 unit_id,
                 focus_category,
@@ -103,13 +106,14 @@ def _start_practice(
                 use_llm=use_llm,
                 xai_api_key=api_key,
             )
-        return c3p.build_daily_set(
-            count=question_count,
-            unit_id=unit_id,
+        questions, grok_error = c3p.build_session_set(
+            unit_id,
+            config,
             exclude_ids=exclude_ids,
-            use_llm=use_llm,
             xai_api_key=api_key,
         )
+        st.session_state.c3_grok_notice = grok_error
+        return questions
 
     if show_spinner and use_llm and api_key:
         with st.spinner("Generating fresh questions with xAI Grok…"):
@@ -117,21 +121,21 @@ def _start_practice(
     else:
         questions = _build()
 
+    grok_notice = st.session_state.pop("c3_grok_notice", None)
+
     if not questions:
         st.session_state.c3_warn = (
             f"Not enough questions for {focus_label or 'this unit'} — try full unit practice."
             if focus_category
-            else "Could not load practice questions."
+            else "Could not load practice questions — check Week Setup topics."
         )
         return
 
-    if use_llm and not api_key:
+    if grok_notice:
+        st.session_state.c3_warn = grok_notice
+    elif use_llm and not api_key:
         st.session_state.c3_warn = (
-            "Grok is enabled but XAI_API_KEY is missing — used the built-in question bank instead."
-        )
-    elif use_llm and questions and questions[0].get("source") != "llm":
-        st.session_state.c3_warn = (
-            "Grok generation failed — used the built-in question bank instead."
+            "Grok is enabled in Week Setup but XAI_API_KEY is missing — used the built-in question bank."
         )
     else:
         st.session_state.pop("c3_warn", None)
@@ -304,65 +308,72 @@ def render_unit():
             _open_notes(unit_id, None)
             st.rerun()
 
-    st.markdown("### Activities")
-    st.caption("Tap an activity to open its review notes.")
+    c3week_ui.ensure_week_config("course3", unit_id)
+    tab_activities, tab_practice, tab_setup = st.tabs(["📚 Activities", "🎯 Practice", "📅 Week Setup"])
 
-    for act in unit["activities"]:
-        label = f"Activity {act['number']}: {act['title']}"
-        if act.get("inline_diagrams"):
-            label += " 🎨"
-        if st.button(label, key=f"c3_open_{unit_id}_{act['slug']}", width="stretch"):
-            _open_notes(unit_id, act["slug"])
-            st.rerun()
+    with tab_activities:
+        st.markdown("### Activities")
+        st.caption("Tap an activity to open its review notes.")
+        for act in unit["activities"]:
+            label = f"Activity {act['number']}: {act['title']}"
+            if act.get("inline_diagrams"):
+                label += " 🎨"
+            if st.button(label, key=f"c3_open_{unit_id}_{act['slug']}", width="stretch"):
+                _open_notes(unit_id, act["slug"])
+                st.rerun()
 
-    bank_size = c3p.question_count_for_unit(unit_id)
-    if bank_size:
-        st.markdown("---")
-        st.markdown("### Practice")
-        st.caption(
-            f"**{bank_size}** questions in the bank — mixed unit review ({min(FULL_QUESTION_COUNT, bank_size)} Q) "
-            f"or **{FOCUS_QUESTION_COUNT}-question** topic quizzes."
-        )
+    with tab_practice:
+        bank_size = c3p.question_count_for_unit(unit_id)
+        week_cfg = _week_config(unit_id)
+        filtered_size = c3p.question_count_for_unit(unit_id, week_cfg.get("categories"))
+        if bank_size:
+            st.markdown("### Practice")
+            session_count = int(week_cfg.get("question_count", FULL_QUESTION_COUNT))
+            st.caption(
+                f"**{bank_size}** questions in the bank — weekly plan uses **{filtered_size}** "
+                f"across {len(week_cfg.get('categories', []))} topic(s), **{session_count}** per session."
+            )
 
-        use_llm = st.toggle(
-            "Generate fresh questions with xAI Grok",
-            value=bool(st.session_state.get(f"c3_use_llm_{unit_id}", False)),
-            key=f"c3_use_llm_{unit_id}",
-            help="When on, each practice session calls Grok for new multiple-choice questions.",
-        )
-        if use_llm:
-            if _xai_api_key():
-                st.caption(
-                    "✅ **XAI_API_KEY** found — Grok will write new questions each time you start practice."
-                )
-            else:
-                st.warning(
-                    "**XAI_API_KEY** not set in `.streamlit/secrets.toml` or environment — "
-                    "will fall back to the built-in question bank."
-                )
-
-        if st.button(
-            f"🎯 Start unit practice ({min(FULL_QUESTION_COUNT, bank_size)} questions)",
-            key=f"c3_practice_full_{unit_id}",
-            type="primary",
-            use_container_width=True,
-        ):
-            _start_practice(unit_id, show_spinner=use_llm)
-            st.rerun()
-
-        categories = c3p.get_categories(unit_id)
-        cat_cols = st.columns(2)
-        for i, (cat_id, info) in enumerate(categories.items()):
-            with cat_cols[i % 2]:
-                label = f"{info.get('emoji', '📝')} {info.get('name', cat_id)} quiz"
-                if st.button(label, key=f"c3_focus_{unit_id}_{cat_id}", use_container_width=True):
-                    _start_practice(
-                        unit_id,
-                        focus_category=cat_id,
-                        focus_label=info.get("name", cat_id),
-                        show_spinner=_use_grok(unit_id),
+            if week_cfg.get("use_llm"):
+                if _xai_api_key():
+                    st.caption(
+                        "✅ **Grok is ON** (Week Setup) — each practice start generates fresh questions."
                     )
-                    st.rerun()
+                else:
+                    st.warning(
+                        "**Grok is ON** in Week Setup but **XAI_API_KEY** is missing — "
+                        "will fall back to the built-in question bank."
+                    )
+            else:
+                st.caption("Using the built-in question bank. Enable Grok in **Week Setup** for fresh AI questions.")
+
+            if st.button(
+                f"🎯 Start unit practice ({min(session_count, filtered_size or session_count)} questions)",
+                key=f"c3_practice_full_{unit_id}",
+                type="primary",
+                use_container_width=True,
+            ):
+                _start_practice(unit_id, show_spinner=bool(week_cfg.get("use_llm")))
+                st.rerun()
+
+            categories = c3p.get_categories(unit_id)
+            cat_cols = st.columns(2)
+            for i, (cat_id, info) in enumerate(categories.items()):
+                with cat_cols[i % 2]:
+                    label = f"{info.get('emoji', '📝')} {info.get('name', cat_id)} quiz"
+                    if st.button(label, key=f"c3_focus_{unit_id}_{cat_id}", use_container_width=True):
+                        _start_practice(
+                            unit_id,
+                            focus_category=cat_id,
+                            focus_label=info.get("name", cat_id),
+                            show_spinner=bool(week_cfg.get("use_llm")),
+                        )
+                        st.rerun()
+        else:
+            st.info("Practice questions for this unit are coming soon.")
+
+    with tab_setup:
+        c3week_ui.render_setup_panel("course3", unit_id)
 
 
 def render_notes():

@@ -10,6 +10,7 @@ import streamlit as st
 import arjun_edgenuity_course3_content as ec3
 import arjun_edgenuity_course3_practice as ec3p
 import arjun_edgenuity_course3_render as ec3r
+import arjun_course3_week_ui as ec3week_ui
 import edgenuity_practice_email as ec3mail
 import database as db
 import google_sheets_sync as gss
@@ -27,8 +28,9 @@ def _xai_api_key() -> str | None:
         return os.environ.get("XAI_API_KEY")
 
 
-def _week_config() -> dict:
-    return db.get_linear_eq_week_config()
+def _week_config(unit_id: int | None = None) -> dict:
+    uid = unit_id if unit_id is not None else st.session_state.get("ec3_unit_id", 1)
+    return ec3week_ui.ensure_week_config("edgenuity", uid)
 
 
 def _back_dashboard():
@@ -133,12 +135,10 @@ def _start_practice(
         if user
         else set()
     )
-    config = _week_config()
+    config = _week_config(unit_id)
     api_key = _xai_api_key()
     use_llm = bool(config.get("use_llm"))
-    question_count = count or (
-        (u1ui.FOCUS_QUESTION_COUNT if u1ui and focus_category else 15)
-    )
+    question_count = count or int(config.get("question_count", 15))
 
     def _build():
         if focus_category:
@@ -150,13 +150,14 @@ def _start_practice(
                 use_llm=use_llm,
                 xai_api_key=api_key,
             )
-        return ec3p.build_daily_set(
-            count=question_count,
-            unit_id=unit_id,
+        questions, grok_error = ec3p.build_session_set(
+            unit_id,
+            config,
             exclude_ids=exclude_ids,
-            use_llm=use_llm,
             xai_api_key=api_key,
         )
+        st.session_state.ec3_grok_notice = grok_error
+        return questions
 
     if show_spinner and use_llm and api_key:
         with st.spinner("Generating fresh questions with xAI Grok…"):
@@ -164,22 +165,22 @@ def _start_practice(
     else:
         questions = _build()
 
+    grok_notice = st.session_state.pop("ec3_grok_notice", None)
+
     if not questions:
         st.session_state.ec3_warn = (
             f"Not enough questions for {focus_label or 'this unit'} — try full unit practice."
             if focus_category
-            else "Could not load practice questions."
+            else "Could not load practice questions — check Week Setup topics."
         )
         return
 
-    if use_llm and not api_key:
+    if grok_notice:
+        st.session_state.ec3_warn = grok_notice
+    elif use_llm and not api_key:
         st.session_state.ec3_warn = (
             "AI generation is enabled in Week Setup but XAI_API_KEY is missing — "
             "used the built-in question bank instead."
-        )
-    elif use_llm and questions and questions[0].get("source") != "llm":
-        st.session_state.ec3_warn = (
-            "AI generation failed — used the built-in question bank instead."
         )
     else:
         st.session_state.pop("ec3_warn", None)
@@ -424,12 +425,16 @@ def render_unit():
 
         u1ui.render_unit1_hub(
             unit,
-            week_cfg=_week_config(),
+            week_cfg=_week_config(unit_id),
             xai_configured=bool(_xai_api_key()),
             on_open_notes=_open_notes_page,
             on_start_full_practice=_go_full,
             on_start_focus_practice=_go_focus,
         )
+        ec3week_ui.ensure_week_config("edgenuity", unit_id)
+        st.markdown("---")
+        with st.expander("📅 Week Setup for Unit 1", expanded=False):
+            ec3week_ui.render_setup_panel("edgenuity", unit_id)
         return
 
     col_nav1, col_nav2, _ = st.columns([1, 1, 5])
@@ -463,36 +468,67 @@ def render_unit():
             _open_notes(unit_id, None)
             st.rerun()
 
-    st.markdown("### 📝 Daily Practice")
-    week_cfg = _week_config()
-    if week_cfg.get("use_llm"):
-        if _xai_api_key():
+    ec3week_ui.ensure_week_config("edgenuity", unit_id)
+    tab_activities, tab_practice, tab_setup = st.tabs(["📚 Activities", "🎯 Practice", "📅 Week Setup"])
+
+    with tab_practice:
+        week_cfg = _week_config(unit_id)
+        bank_size = ec3p.question_count_for_unit(unit_id)
+        filtered_size = ec3p.question_count_for_unit(unit_id, week_cfg.get("categories"))
+        session_count = int(week_cfg.get("question_count", 15))
+        st.markdown("### 📝 Daily Practice")
+        if bank_size:
             st.caption(
-                "15 **fresh AI-generated** questions (xAI Grok) — new set each time you start. "
-                "Turn off AI in **Week Setup** to use the built-in bank with graphs."
+                f"**{bank_size}** questions in the bank — weekly plan uses **{filtered_size}** "
+                f"across {len(week_cfg.get('categories', []))} topic(s), **{session_count}** per session."
             )
+        if week_cfg.get("use_llm"):
+            if _xai_api_key():
+                st.caption(
+                    "15 **fresh AI-generated** questions (xAI Grok) — new set each time you start. "
+                    "Turn off AI in **Week Setup** to use the built-in bank with graphs."
+                )
+            else:
+                st.caption(
+                    "AI is enabled in Week Setup but XAI_API_KEY is missing — will use the built-in question bank."
+                )
         else:
             st.caption(
-                "AI is enabled in Week Setup but XAI_API_KEY is missing — will use the built-in question bank."
+                "Questions include graphs/diagrams like the Edgenuity exam. "
+                "Enable **Generate with AI** in Week Setup for fresh questions each session."
             )
-    else:
-        st.caption(
-            "15 questions — at least 9 include graphs/diagrams like the Edgenuity exam. "
-            "Enable **Generate with AI** in Week Setup for fresh questions each session."
-        )
-    if st.button("🎯 Start Daily Practice", key=f"ec3_practice_{unit_id}", use_container_width=True, type="primary"):
-        _start_practice(unit_id, show_spinner=True)
-        st.rerun()
-
-    st.markdown("---")
-    st.markdown("### Activities")
-    for act in unit["activities"]:
-        label = f"Activity {act['number']}: {act['title']}"
-        if act.get("inline_diagrams"):
-            label += " 🎨"
-        if st.button(label, key=f"ec3_open_{unit_id}_{act['slug']}", use_container_width=True):
-            _open_notes(unit_id, act["slug"])
+        if st.button("🎯 Start Daily Practice", key=f"ec3_practice_{unit_id}", use_container_width=True, type="primary"):
+            _start_practice(unit_id, show_spinner=True)
             st.rerun()
+
+        categories = ec3p.get_categories(unit_id)
+        if categories:
+            st.markdown("**Topic quizzes**")
+            cat_cols = st.columns(2)
+            for i, (cat_id, info) in enumerate(categories.items()):
+                with cat_cols[i % 2]:
+                    label = f"{info.get('emoji', '📝')} {info.get('name', cat_id)}"
+                    if st.button(label, key=f"ec3_focus_{unit_id}_{cat_id}", use_container_width=True):
+                        _start_practice(
+                            unit_id,
+                            show_spinner=True,
+                            focus_category=cat_id,
+                            focus_label=info.get("name", cat_id),
+                        )
+                        st.rerun()
+
+    with tab_activities:
+        st.markdown("### Activities")
+        for act in unit["activities"]:
+            label = f"Activity {act['number']}: {act['title']}"
+            if act.get("inline_diagrams"):
+                label += " 🎨"
+            if st.button(label, key=f"ec3_open_{unit_id}_{act['slug']}", use_container_width=True):
+                _open_notes(unit_id, act["slug"])
+                st.rerun()
+
+    with tab_setup:
+        ec3week_ui.render_setup_panel("edgenuity", unit_id)
 
 
 def render_notes():

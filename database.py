@@ -207,6 +207,20 @@ def init_db():
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
 
+            CREATE TABLE IF NOT EXISTS arjun_course3_week_config (
+                unit_id INTEGER PRIMARY KEY,
+                week_label TEXT NOT NULL DEFAULT '',
+                config_json TEXT NOT NULL DEFAULT '{}',
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+
+            CREATE TABLE IF NOT EXISTS arjun_edgenuity_course3_week_config (
+                unit_id INTEGER PRIMARY KEY,
+                week_label TEXT NOT NULL DEFAULT '',
+                config_json TEXT NOT NULL DEFAULT '{}',
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+
             CREATE TABLE IF NOT EXISTS harshit_practice_sessions (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 user_id INTEGER NOT NULL,
@@ -1920,6 +1934,132 @@ def get_harshit_class10_week_config(unit_id: int) -> dict:
         "grok_fresh_only": bool(data.get("grok_fresh_only", False)),
         "unit_id": unit_id,
     }
+
+
+def get_arjun_course3_week_config(unit_id: int) -> dict:
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT week_label, config_json FROM arjun_course3_week_config WHERE unit_id = ?",
+            (unit_id,),
+        ).fetchone()
+    if not row:
+        return {
+            "week_label": "",
+            "categories": [],
+            "question_count": 15,
+            "use_llm": False,
+            "unit_id": unit_id,
+        }
+    try:
+        data = json.loads(row["config_json"] or "{}")
+    except json.JSONDecodeError:
+        data = {}
+    if not isinstance(data, dict):
+        data = {}
+    categories = data.get("categories")
+    if not isinstance(categories, list):
+        categories = []
+    try:
+        question_count = max(5, min(30, int(data.get("question_count", 15))))
+    except (TypeError, ValueError):
+        question_count = 15
+    return {
+        "week_label": row["week_label"] or data.get("week_label", ""),
+        "categories": categories,
+        "question_count": question_count,
+        "use_llm": bool(data.get("use_llm", False)),
+        "unit_id": unit_id,
+    }
+
+
+def save_arjun_course3_week_config(
+    unit_id: int,
+    week_label: str,
+    categories: list[str],
+    *,
+    question_count: int = 15,
+    use_llm: bool = False,
+) -> None:
+    payload = {
+        "week_label": week_label,
+        "categories": categories,
+        "question_count": max(5, min(30, int(question_count))),
+        "use_llm": use_llm,
+        "unit_id": unit_id,
+    }
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO arjun_course3_week_config (unit_id, week_label, config_json, updated_at)
+               VALUES (?, ?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(unit_id) DO UPDATE SET
+                 week_label = excluded.week_label,
+                 config_json = excluded.config_json,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (unit_id, week_label, json.dumps(payload)),
+        )
+
+
+def get_arjun_edgenuity_course3_week_config(unit_id: int) -> dict:
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT week_label, config_json FROM arjun_edgenuity_course3_week_config WHERE unit_id = ?",
+            (unit_id,),
+        ).fetchone()
+    if not row:
+        return {
+            "week_label": "",
+            "categories": [],
+            "question_count": 15,
+            "use_llm": False,
+            "unit_id": unit_id,
+        }
+    try:
+        data = json.loads(row["config_json"] or "{}")
+    except json.JSONDecodeError:
+        data = {}
+    if not isinstance(data, dict):
+        data = {}
+    categories = data.get("categories")
+    if not isinstance(categories, list):
+        categories = []
+    try:
+        question_count = max(5, min(30, int(data.get("question_count", 15))))
+    except (TypeError, ValueError):
+        question_count = 15
+    return {
+        "week_label": row["week_label"] or data.get("week_label", ""),
+        "categories": categories,
+        "question_count": question_count,
+        "use_llm": bool(data.get("use_llm", False)),
+        "unit_id": unit_id,
+    }
+
+
+def save_arjun_edgenuity_course3_week_config(
+    unit_id: int,
+    week_label: str,
+    categories: list[str],
+    *,
+    question_count: int = 15,
+    use_llm: bool = False,
+) -> None:
+    payload = {
+        "week_label": week_label,
+        "categories": categories,
+        "question_count": max(5, min(30, int(question_count))),
+        "use_llm": use_llm,
+        "unit_id": unit_id,
+    }
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO arjun_edgenuity_course3_week_config (unit_id, week_label, config_json, updated_at)
+               VALUES (?, ?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(unit_id) DO UPDATE SET
+                 week_label = excluded.week_label,
+                 config_json = excluded.config_json,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (unit_id, week_label, json.dumps(payload)),
+        )
 
 
 def save_harshit_class10_week_config(

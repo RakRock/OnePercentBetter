@@ -162,6 +162,63 @@ def _top_up(
             used_ids.add(q["id"])
 
 
+def _filter_bank(bank: list[dict], category_filter: list[str] | None) -> list[dict]:
+    if not category_filter:
+        return bank
+    allowed = set(category_filter)
+    return [q for q in bank if q.get("category") in allowed]
+
+
+def _filter_categories(categories: dict, category_filter: list[str] | None) -> dict:
+    if not category_filter:
+        return categories
+    allowed = set(category_filter)
+    return {k: v for k, v in categories.items() if k in allowed}
+
+
+def build_session_set(
+    unit_id: int,
+    config: dict,
+    exclude_ids: set[str] | None = None,
+    *,
+    xai_api_key: str | None = None,
+) -> tuple[list[dict], str | None]:
+    """Build a practice session from weekly plan config."""
+    category_filter = config.get("categories") or None
+    count = int(config.get("question_count", DEFAULT_SESSION_COUNT))
+    use_llm = bool(config.get("use_llm"))
+    bank_size = question_count_for_unit(unit_id, category_filter)
+    if bank_size == 0 and not use_llm:
+        return [], "Configure topics in Week Setup — no questions match the selected categories."
+    count = min(count, bank_size) if bank_size else count
+    grok_error: str | None = None
+    if use_llm and xai_api_key:
+        questions = build_daily_set(
+            count=count,
+            unit_id=unit_id,
+            exclude_ids=exclude_ids,
+            use_llm=True,
+            xai_api_key=xai_api_key,
+            category_filter=category_filter,
+        )
+        if questions and questions[0].get("source") != "llm":
+            grok_error = "Grok generation failed — used the built-in question bank instead."
+    else:
+        if use_llm and not xai_api_key:
+            grok_error = "AI is enabled but XAI_API_KEY is missing — used the built-in question bank."
+        questions = build_daily_set(
+            count=count,
+            unit_id=unit_id,
+            exclude_ids=exclude_ids,
+            use_llm=False,
+            xai_api_key=xai_api_key,
+            category_filter=category_filter,
+        )
+    if not questions:
+        return [], grok_error or "Could not build a practice set — check Week Setup categories."
+    return questions, grok_error
+
+
 def build_daily_set(
     count: int = DEFAULT_SESSION_COUNT,
     unit_id: int = 1,
@@ -169,9 +226,11 @@ def build_daily_set(
     *,
     use_llm: bool = False,
     xai_api_key: str | None = None,
+    category_filter: list[str] | None = None,
 ) -> list[dict]:
     if use_llm and xai_api_key:
         cfg = _unit_practice(unit_id)
+        categories = _filter_categories(cfg["categories"], category_filter)
         try:
             import arjun_course3_content as c3
             from arjun_course3_llm import generate_session_questions
@@ -181,7 +240,7 @@ def build_daily_set(
                 xai_api_key,
                 unit_id,
                 count,
-                categories=cfg["categories"],
+                categories=categories,
                 revision_tips=cfg["revision_tips"],
                 unit_title=unit["title"] if unit else f"Unit {unit_id}",
                 unit_subtitle=unit.get("subtitle", "") if unit else "",
@@ -189,6 +248,7 @@ def build_daily_set(
                     count=count,
                     unit_id=unit_id,
                     exclude_ids=exclude_ids,
+                    category_filter=category_filter,
                 ),
             )
             if questions:
@@ -196,17 +256,25 @@ def build_daily_set(
         except Exception:
             pass
 
-    return _build_bank_daily_set(count=count, unit_id=unit_id, exclude_ids=exclude_ids)
+    return _build_bank_daily_set(
+        count=count,
+        unit_id=unit_id,
+        exclude_ids=exclude_ids,
+        category_filter=category_filter,
+    )
 
 
 def _build_bank_daily_set(
     count: int = DEFAULT_SESSION_COUNT,
     unit_id: int = 1,
     exclude_ids: set[str] | None = None,
+    category_filter: list[str] | None = None,
 ) -> list[dict]:
     cfg = _unit_practice(unit_id)
-    bank = cfg["bank"]
-    categories = cfg["categories"]
+    bank = _filter_bank(cfg["bank"], category_filter)
+    categories = _filter_categories(cfg["categories"], category_filter)
+    if not bank:
+        return []
     avoid_ids = set(exclude_ids or ())
 
     used_ids: set[str] = set()
@@ -357,5 +425,6 @@ def format_report_details(report: dict) -> str:
     return base
 
 
-def question_count_for_unit(unit_id: int) -> int:
-    return len(QUESTION_BANK_BY_UNIT.get(unit_id, []))
+def question_count_for_unit(unit_id: int, category_filter: list[str] | None = None) -> int:
+    bank = QUESTION_BANK_BY_UNIT.get(unit_id, [])
+    return len(_filter_bank(bank, category_filter))
