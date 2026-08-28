@@ -2,15 +2,509 @@
   "questions": {
     "A": [
       {
-        "id": "u8_t1_A_4ccb07b3",
+        "id": "u8_t1_A_3d65ec10",
+        "question": "For acute angle θ in a right triangle:",
+        "options": [
+          "cos θ = hypotenuse/adjacent",
+          "cos θ = adjacent/hypotenuse",
+          "cos θ = opposite/hypotenuse",
+          "cos θ = opposite/adjacent"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_47ee65f6",
         "question": "In right ΔABC (∠B = 90°), with respect to ∠A:",
         "options": [
-          "sin θ = opposite/hypotenuse",
-          "sin θ = opposite/adjacent",
           "sin θ = hypotenuse/opposite",
-          "sin θ = adjacent/hypotenuse"
+          "sin θ = adjacent/hypotenuse",
+          "sin θ = opposite/hypotenuse",
+          "sin θ = opposite/adjacent"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_c5739d46",
+        "question": "tan θ equals:",
+        "options": [
+          "hypotenuse/opposite",
+          "adjacent/opposite",
+          "hypotenuse/adjacent",
+          "opposite/adjacent"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_500cc485",
+        "question": "Right triangle: opp=10, hyp=26. sin θ = ?",
+        "options": [
+          "10/24",
+          "10/26",
+          "26/10",
+          "24/26"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_82c977e0",
+        "question": "Right triangle: opp=5, hyp=13. sin θ = ?",
+        "options": [
+          "13/5",
+          "12/13",
+          "5/12",
+          "5/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_40133b66",
+        "question": "Right triangle: opp=49, hyp=175. sin θ = ?",
+        "options": [
+          "49/168",
+          "168/175",
+          "175/49",
+          "49/175"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_74b47271",
+        "question": "Right triangle: opp=56, hyp=200. sin θ = ?",
+        "options": [
+          "200/56",
+          "56/192",
+          "56/200",
+          "192/200"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_174ab51b",
+        "question": "Right triangle: opp=63, hyp=287. sin θ = ?",
+        "options": [
+          "63/287",
+          "287/63",
+          "280/287",
+          "63/280"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_3131ca04",
+        "question": "Right triangle: opp=56, hyp=119. sin θ = ?",
+        "options": [
+          "119/56",
+          "56/119",
+          "105/119",
+          "56/105"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_892600a6",
+        "question": "Right triangle: opp=16, hyp=34. sin θ = ?",
+        "options": [
+          "30/34",
+          "16/34",
+          "34/16",
+          "16/30"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_69dbb5fc",
+        "question": "Right triangle: opp=40, hyp=104. sin θ = ?",
+        "options": [
+          "40/104",
+          "104/40",
+          "40/96",
+          "96/104"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_158b0277",
+        "question": "Right triangle: opp=40, hyp=85. sin θ = ?",
+        "options": [
+          "40/75",
+          "40/85",
+          "85/40",
+          "75/85"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_643f18d2",
+        "question": "Right triangle: opp=64, hyp=136. sin θ = ?",
+        "options": [
+          "64/136",
+          "64/120",
+          "136/64",
+          "120/136"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_58c95352",
+        "question": "Right triangle: opp=18, hyp=82. sin θ = ?",
+        "options": [
+          "18/80",
+          "18/82",
+          "80/82",
+          "82/18"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_c77e5022",
+        "question": "Right triangle: opp=12, hyp=20. sin θ = ?",
+        "options": [
+          "20/12",
+          "12/20",
+          "16/20",
+          "12/16"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_0f5ad06f",
+        "question": "Right triangle: opp=28, hyp=100. sin θ = ?",
+        "options": [
+          "28/96",
+          "100/28",
+          "96/100",
+          "28/100"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_390b3b68",
+        "question": "Right triangle: opp=30, hyp=78. sin θ = ?",
+        "options": [
+          "72/78",
+          "30/72",
+          "30/78",
+          "78/30"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_19d7b6f5",
+        "question": "Right triangle: opp=84, hyp=259. sin θ = ?",
+        "options": [
+          "84/259",
+          "84/245",
+          "245/259",
+          "259/84"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_a0c84866",
+        "question": "Right triangle: opp=32, hyp=68. sin θ = ?",
+        "options": [
+          "60/68",
+          "68/32",
+          "32/68",
+          "32/60"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_e17f9ccb",
+        "question": "Right triangle: opp=48, hyp=102. sin θ = ?",
+        "options": [
+          "48/90",
+          "90/102",
+          "102/48",
+          "48/102"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_77cd1346",
+        "question": "Right triangle: opp=18, hyp=30. sin θ = ?",
+        "options": [
+          "30/18",
+          "18/24",
+          "24/30",
+          "18/30"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_4dbf8679",
+        "question": "Right triangle: opp=3, hyp=5. sin θ = ?",
+        "options": [
+          "4/5",
+          "5/3",
+          "3/5",
+          "3/4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_ff9b4e6e",
+        "question": "Right triangle: opp=20, hyp=52. sin θ = ?",
+        "options": [
+          "48/52",
+          "52/20",
+          "20/52",
+          "20/48"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_16c324c5",
+        "question": "Right triangle: opp=9, hyp=41. sin θ = ?",
+        "options": [
+          "9/40",
+          "40/41",
+          "9/41",
+          "41/9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_1620d0d3",
+        "question": "Right triangle: opp=21, hyp=35. sin θ = ?",
+        "options": [
+          "28/35",
+          "21/28",
+          "35/21",
+          "21/35"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_c035f22c",
+        "question": "Right triangle: opp=15, hyp=25. sin θ = ?",
+        "options": [
+          "15/25",
+          "25/15",
+          "20/25",
+          "15/20"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_A_62899405",
+        "question": "Right triangle: opp=14, hyp=50. sin θ = ?",
+        "options": [
+          "50/14",
+          "48/50",
+          "14/50",
+          "14/48"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -23,15 +517,509 @@
     ],
     "B": [
       {
-        "id": "u8_t1_B_2612503b",
-        "question": "Correct reciprocal relation:",
+        "id": "u8_t1_B_7a1835f7",
+        "question": "cot θ equals:",
         "options": [
-          "cosec θ = sin θ",
-          "cosec θ = 1/sin θ",
-          "cosec θ = tan θ",
-          "cosec θ = cos θ/sin θ"
+          "tan θ",
+          "1/tan θ",
+          "sin θ/cos θ",
+          "cos θ/sin θ"
         ],
         "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_f7f91e59",
+        "question": "sec θ equals:",
+        "options": [
+          "cos θ",
+          "1/sin θ",
+          "sin θ/cos θ",
+          "1/cos θ"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_19e1169c",
+        "question": "Correct reciprocal relation:",
+        "options": [
+          "cosec θ = cos θ/sin θ",
+          "cosec θ = tan θ",
+          "cosec θ = 1/sin θ",
+          "cosec θ = sin θ"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_b26e690b",
+        "question": "If sin θ = 49/175, then cosec θ = ?",
+        "options": [
+          "1",
+          "49/175",
+          "175/49",
+          "168/175"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_e83c1d56",
+        "question": "If sin θ = 36/111, then cosec θ = ?",
+        "options": [
+          "1",
+          "105/111",
+          "36/111",
+          "111/36"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_1ac5eb90",
+        "question": "If sin θ = 18/82, then cosec θ = ?",
+        "options": [
+          "82/18",
+          "1",
+          "18/82",
+          "80/82"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_2efd531f",
+        "question": "If sin θ = 20/52, then cosec θ = ?",
+        "options": [
+          "48/52",
+          "20/52",
+          "1",
+          "52/20"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_f5a4646a",
+        "question": "If sin θ = 54/246, then cosec θ = ?",
+        "options": [
+          "246/54",
+          "240/246",
+          "1",
+          "54/246"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_0c40fd42",
+        "question": "If sin θ = 16/34, then cosec θ = ?",
+        "options": [
+          "1",
+          "30/34",
+          "16/34",
+          "34/16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_3212f82d",
+        "question": "If sin θ = 63/287, then cosec θ = ?",
+        "options": [
+          "280/287",
+          "287/63",
+          "1",
+          "63/287"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_e75c4da8",
+        "question": "If sin θ = 84/259, then cosec θ = ?",
+        "options": [
+          "245/259",
+          "1",
+          "259/84",
+          "84/259"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_85fc5f33",
+        "question": "If sin θ = 14/50, then cosec θ = ?",
+        "options": [
+          "1",
+          "50/14",
+          "48/50",
+          "14/50"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_c7f0f27f",
+        "question": "If sin θ = 35/91, then cosec θ = ?",
+        "options": [
+          "91/35",
+          "1",
+          "84/91",
+          "35/91"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_f3616363",
+        "question": "If sin θ = 56/119, then cosec θ = ?",
+        "options": [
+          "105/119",
+          "119/56",
+          "1",
+          "56/119"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_0003892a",
+        "question": "If sin θ = 64/136, then cosec θ = ?",
+        "options": [
+          "64/136",
+          "136/64",
+          "120/136",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_48c998a5",
+        "question": "If sin θ = 24/51, then cosec θ = ?",
+        "options": [
+          "51/24",
+          "45/51",
+          "24/51",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_07cb6e8d",
+        "question": "If sin θ = 21/35, then cosec θ = ?",
+        "options": [
+          "1",
+          "28/35",
+          "35/21",
+          "21/35"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_bfee1bc9",
+        "question": "If sin θ = 96/296, then cosec θ = ?",
+        "options": [
+          "96/296",
+          "296/96",
+          "1",
+          "280/296"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_b3dfb547",
+        "question": "If sin θ = 3/5, then cosec θ = ?",
+        "options": [
+          "5/3",
+          "4/5",
+          "3/5",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_b875807c",
+        "question": "If sin θ = 32/68, then cosec θ = ?",
+        "options": [
+          "60/68",
+          "32/68",
+          "1",
+          "68/32"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_6fc99e9b",
+        "question": "If sin θ = 72/222, then cosec θ = ?",
+        "options": [
+          "222/72",
+          "210/222",
+          "72/222",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_3b8e73ad",
+        "question": "If sin θ = 5/13, then cosec θ = ?",
+        "options": [
+          "1",
+          "12/13",
+          "13/5",
+          "5/13"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_5c5fe7bb",
+        "question": "If sin θ = 35/125, then cosec θ = ?",
+        "options": [
+          "120/125",
+          "35/125",
+          "1",
+          "125/35"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_0ea4c5e0",
+        "question": "If sin θ = 40/104, then cosec θ = ?",
+        "options": [
+          "96/104",
+          "1",
+          "40/104",
+          "104/40"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_a777e809",
+        "question": "If sin θ = 45/205, then cosec θ = ?",
+        "options": [
+          "45/205",
+          "1",
+          "200/205",
+          "205/45"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_d66914c0",
+        "question": "If sin θ = 27/123, then cosec θ = ?",
+        "options": [
+          "123/27",
+          "120/123",
+          "27/123",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_B_eef39aac",
+        "question": "If sin θ = 56/200, then cosec θ = ?",
+        "options": [
+          "56/200",
+          "192/200",
+          "1",
+          "200/56"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 1,
         "level": "B",
@@ -44,13 +1032,32 @@
     ],
     "C": [
       {
-        "id": "u8_t1_C_f9f27d0e",
-        "question": "Right triangle: opposite = 6, hypotenuse = 10. sin θ = ?",
+        "id": "u8_t1_C_3d8e0ba9",
+        "question": "Right triangle: opposite = 28, hypotenuse = 100. sin θ = ?",
         "options": [
-          "6/8",
-          "8/10",
-          "8/6",
-          "6/10"
+          "96/100",
+          "28/100",
+          "96/28",
+          "28/96"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_acb808b8",
+        "question": "Right triangle: opposite = 72, hypotenuse = 222. sin θ = ?",
+        "options": [
+          "72/210",
+          "210/72",
+          "210/222",
+          "72/222"
         ],
         "answer": 3,
         "explanation": "",
@@ -63,13 +1070,13 @@
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       },
       {
-        "id": "u8_t1_C_4e955911",
-        "question": "Right triangle: opposite = 3, hypotenuse = 5. sin θ = ?",
+        "id": "u8_t1_C_2c2dbad4",
+        "question": "Right triangle: opposite = 24, hypotenuse = 74. sin θ = ?",
         "options": [
-          "3/4",
-          "4/3",
-          "4/5",
-          "3/5"
+          "70/24",
+          "70/74",
+          "24/70",
+          "24/74"
         ],
         "answer": 3,
         "explanation": "",
@@ -82,13 +1089,32 @@
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       },
       {
-        "id": "u8_t1_C_40ec6716",
-        "question": "Right triangle: opposite = 9, hypotenuse = 15. sin θ = ?",
+        "id": "u8_t1_C_8e9facbb",
+        "question": "Right triangle: opposite = 20, hypotenuse = 52. sin θ = ?",
         "options": [
-          "9/15",
-          "12/15",
-          "12/9",
-          "9/12"
+          "48/20",
+          "48/52",
+          "20/48",
+          "20/52"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_a24bdfc8",
+        "question": "Right triangle: opposite = 15, hypotenuse = 39. sin θ = ?",
+        "options": [
+          "15/39",
+          "36/15",
+          "36/39",
+          "15/36"
         ],
         "answer": 0,
         "explanation": "",
@@ -101,13 +1127,469 @@
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       },
       {
-        "id": "u8_t1_C_25dc4946",
+        "id": "u8_t1_C_7a9b4cfa",
+        "question": "Right triangle: opposite = 36, hypotenuse = 111. sin θ = ?",
+        "options": [
+          "105/111",
+          "36/111",
+          "36/105",
+          "105/36"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_85610f2f",
+        "question": "Right triangle: opposite = 48, hypotenuse = 148. sin θ = ?",
+        "options": [
+          "140/48",
+          "140/148",
+          "48/148",
+          "48/140"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_20d1b405",
+        "question": "Right triangle: opposite = 35, hypotenuse = 125. sin θ = ?",
+        "options": [
+          "35/120",
+          "120/125",
+          "35/125",
+          "120/35"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_70fdc645",
+        "question": "Right triangle: opposite = 24, hypotenuse = 51. sin θ = ?",
+        "options": [
+          "24/51",
+          "24/45",
+          "45/24",
+          "45/51"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_66d6a9ad",
+        "question": "Right triangle: opposite = 64, hypotenuse = 136. sin θ = ?",
+        "options": [
+          "120/64",
+          "64/120",
+          "120/136",
+          "64/136"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_09d6ad1d",
+        "question": "Right triangle: opposite = 21, hypotenuse = 75. sin θ = ?",
+        "options": [
+          "72/21",
+          "72/75",
+          "21/75",
+          "21/72"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_4f13bb33",
+        "question": "Right triangle: opposite = 21, hypotenuse = 35. sin θ = ?",
+        "options": [
+          "28/21",
+          "21/28",
+          "28/35",
+          "21/35"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_b1e42a4f",
         "question": "Right triangle: opposite = 12, hypotenuse = 20. sin θ = ?",
         "options": [
-          "16/20",
+          "12/16",
           "16/12",
-          "12/20",
-          "12/16"
+          "16/20",
+          "12/20"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_ac0785a9",
+        "question": "Right triangle: opposite = 9, hypotenuse = 41. sin θ = ?",
+        "options": [
+          "40/41",
+          "40/9",
+          "9/41",
+          "9/40"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_42d01ad6",
+        "question": "Right triangle: opposite = 5, hypotenuse = 13. sin θ = ?",
+        "options": [
+          "12/5",
+          "12/13",
+          "5/12",
+          "5/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_059c8f85",
+        "question": "Right triangle: opposite = 63, hypotenuse = 287. sin θ = ?",
+        "options": [
+          "63/287",
+          "280/287",
+          "280/63",
+          "63/280"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_56097d31",
+        "question": "Right triangle: opposite = 56, hypotenuse = 200. sin θ = ?",
+        "options": [
+          "56/192",
+          "56/200",
+          "192/200",
+          "192/56"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_b512fcea",
+        "question": "Right triangle: opposite = 18, hypotenuse = 82. sin θ = ?",
+        "options": [
+          "18/82",
+          "80/82",
+          "80/18",
+          "18/80"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_6f4ab8b2",
+        "question": "Right triangle: opposite = 84, hypotenuse = 259. sin θ = ?",
+        "options": [
+          "84/259",
+          "84/245",
+          "245/84",
+          "245/259"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_33b92284",
+        "question": "Right triangle: opposite = 36, hypotenuse = 164. sin θ = ?",
+        "options": [
+          "36/160",
+          "160/164",
+          "36/164",
+          "160/36"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_f1450544",
+        "question": "Right triangle: opposite = 27, hypotenuse = 123. sin θ = ?",
+        "options": [
+          "120/27",
+          "120/123",
+          "27/120",
+          "27/123"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_5e80f3d8",
+        "question": "Right triangle: opposite = 7, hypotenuse = 25. sin θ = ?",
+        "options": [
+          "24/7",
+          "7/25",
+          "7/24",
+          "24/25"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_0e5d4dbe",
+        "question": "Right triangle: opposite = 42, hypotenuse = 150. sin θ = ?",
+        "options": [
+          "144/42",
+          "42/144",
+          "144/150",
+          "42/150"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_b8039d28",
+        "question": "Right triangle: opposite = 72, hypotenuse = 328. sin θ = ?",
+        "options": [
+          "72/328",
+          "320/328",
+          "320/72",
+          "72/320"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_b866bb6e",
+        "question": "Right triangle: opposite = 48, hypotenuse = 102. sin θ = ?",
+        "options": [
+          "48/102",
+          "48/90",
+          "90/48",
+          "90/102"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_74a628db",
+        "question": "Right triangle: opposite = 30, hypotenuse = 78. sin θ = ?",
+        "options": [
+          "30/72",
+          "72/30",
+          "72/78",
+          "30/78"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_46987c1c",
+        "question": "Right triangle: opposite = 25, hypotenuse = 65. sin θ = ?",
+        "options": [
+          "25/60",
+          "60/25",
+          "60/65",
+          "25/65"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_91301c49",
+        "question": "Right triangle: opposite = 45, hypotenuse = 205. sin θ = ?",
+        "options": [
+          "200/205",
+          "45/205",
+          "200/45",
+          "45/200"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_1fd9c338",
+        "question": "Right triangle: opposite = 60, hypotenuse = 185. sin θ = ?",
+        "options": [
+          "60/175",
+          "175/60",
+          "60/185",
+          "175/185"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_1bb854b5",
+        "question": "Right triangle: opposite = 40, hypotenuse = 85. sin θ = ?",
+        "options": [
+          "75/40",
+          "40/75",
+          "40/85",
+          "75/85"
         ],
         "answer": 2,
         "explanation": "",
@@ -122,32 +1604,13 @@
     ],
     "D": [
       {
-        "id": "u8_t1_D_0e88cee7",
-        "question": "cos θ = 4/5 in a right triangle. Adjacent side if hypotenuse = 5:",
+        "id": "u8_t1_D_3aa31e82",
+        "question": "cos θ = 75/85 in a right triangle. Adjacent side if hypotenuse = 85:",
         "options": [
-          "4",
-          "5",
-          "3",
-          "7"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 1,
-        "level": "D",
-        "unit_id": 8,
-        "category": "u8_t1_D",
-        "category_label": "Ratios · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
-      },
-      {
-        "id": "u8_t1_D_9aec60f7",
-        "question": "cos θ = 8/10 in a right triangle. Adjacent side if hypotenuse = 10:",
-        "options": [
-          "10",
-          "14",
-          "6",
-          "8"
+          "115",
+          "40",
+          "85",
+          "75"
         ],
         "answer": 3,
         "explanation": "",
@@ -160,13 +1623,108 @@
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       },
       {
-        "id": "u8_t1_D_5608185f",
-        "question": "cos θ = 12/15 in a right triangle. Adjacent side if hypotenuse = 15:",
+        "id": "u8_t1_D_8dc4ea46",
+        "question": "cos θ = 200/205 in a right triangle. Adjacent side if hypotenuse = 205:",
         "options": [
-          "21",
+          "200",
+          "205",
+          "45",
+          "245"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_86326149",
+        "question": "cos θ = 160/164 in a right triangle. Adjacent side if hypotenuse = 164:",
+        "options": [
+          "196",
+          "36",
+          "160",
+          "164"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_2696f71b",
+        "question": "cos θ = 35/37 in a right triangle. Adjacent side if hypotenuse = 37:",
+        "options": [
+          "35",
           "12",
-          "15",
-          "9"
+          "37",
+          "47"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_d6c9d65a",
+        "question": "cos θ = 28/35 in a right triangle. Adjacent side if hypotenuse = 35:",
+        "options": [
+          "28",
+          "49",
+          "35",
+          "21"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_893a0a6d",
+        "question": "cos θ = 60/65 in a right triangle. Adjacent side if hypotenuse = 65:",
+        "options": [
+          "60",
+          "85",
+          "65",
+          "25"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_a93294b0",
+        "question": "cos θ = 175/185 in a right triangle. Adjacent side if hypotenuse = 185:",
+        "options": [
+          "185",
+          "175",
+          "60",
+          "235"
         ],
         "answer": 1,
         "explanation": "",
@@ -179,15 +1737,433 @@
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       },
       {
-        "id": "u8_t1_D_5f76be5a",
+        "id": "u8_t1_D_2d75f956",
+        "question": "cos θ = 70/74 in a right triangle. Adjacent side if hypotenuse = 74:",
+        "options": [
+          "94",
+          "74",
+          "70",
+          "24"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_18774c07",
+        "question": "cos θ = 48/52 in a right triangle. Adjacent side if hypotenuse = 52:",
+        "options": [
+          "20",
+          "68",
+          "48",
+          "52"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_405d2370",
+        "question": "cos θ = 4/5 in a right triangle. Adjacent side if hypotenuse = 5:",
+        "options": [
+          "3",
+          "5",
+          "7",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_5cf3d33f",
+        "question": "cos θ = 24/30 in a right triangle. Adjacent side if hypotenuse = 30:",
+        "options": [
+          "18",
+          "42",
+          "24",
+          "30"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_12d21b62",
+        "question": "cos θ = 105/111 in a right triangle. Adjacent side if hypotenuse = 111:",
+        "options": [
+          "105",
+          "111",
+          "36",
+          "141"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_8daa16b4",
+        "question": "cos θ = 192/200 in a right triangle. Adjacent side if hypotenuse = 200:",
+        "options": [
+          "200",
+          "192",
+          "56",
+          "248"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_e2581c98",
+        "question": "cos θ = 24/26 in a right triangle. Adjacent side if hypotenuse = 26:",
+        "options": [
+          "10",
+          "34",
+          "26",
+          "24"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_a8c3bf3d",
+        "question": "cos θ = 32/40 in a right triangle. Adjacent side if hypotenuse = 40:",
+        "options": [
+          "40",
+          "56",
+          "24",
+          "32"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_9b504d5c",
+        "question": "cos θ = 36/39 in a right triangle. Adjacent side if hypotenuse = 39:",
+        "options": [
+          "51",
+          "39",
+          "15",
+          "36"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_77e67610",
+        "question": "cos θ = 120/136 in a right triangle. Adjacent side if hypotenuse = 136:",
+        "options": [
+          "136",
+          "120",
+          "64",
+          "184"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_b78bcde0",
+        "question": "cos θ = 210/222 in a right triangle. Adjacent side if hypotenuse = 222:",
+        "options": [
+          "210",
+          "222",
+          "72",
+          "282"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_b8315608",
+        "question": "cos θ = 90/102 in a right triangle. Adjacent side if hypotenuse = 102:",
+        "options": [
+          "138",
+          "102",
+          "48",
+          "90"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_a79effc0",
+        "question": "cos θ = 72/75 in a right triangle. Adjacent side if hypotenuse = 75:",
+        "options": [
+          "72",
+          "93",
+          "21",
+          "75"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_4af1e1d2",
+        "question": "cos θ = 15/17 in a right triangle. Adjacent side if hypotenuse = 17:",
+        "options": [
+          "17",
+          "23",
+          "15",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_88c2a771",
+        "question": "cos θ = 72/78 in a right triangle. Adjacent side if hypotenuse = 78:",
+        "options": [
+          "72",
+          "30",
+          "78",
+          "102"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_4ea18c0e",
+        "question": "cos θ = 280/296 in a right triangle. Adjacent side if hypotenuse = 296:",
+        "options": [
+          "296",
+          "96",
+          "376",
+          "280"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_25f03ff1",
+        "question": "cos θ = 30/34 in a right triangle. Adjacent side if hypotenuse = 34:",
+        "options": [
+          "46",
+          "34",
+          "30",
+          "16"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_d8c8aaf0",
+        "question": "cos θ = 24/25 in a right triangle. Adjacent side if hypotenuse = 25:",
+        "options": [
+          "31",
+          "25",
+          "7",
+          "24"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_0d88a56a",
+        "question": "cos θ = 320/328 in a right triangle. Adjacent side if hypotenuse = 328:",
+        "options": [
+          "72",
+          "328",
+          "320",
+          "392"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_7addc580",
         "question": "cos θ = 16/20 in a right triangle. Adjacent side if hypotenuse = 20:",
         "options": [
-          "12",
           "16",
+          "12",
           "28",
           "20"
         ],
-        "answer": 1,
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_8551006d",
+        "question": "cos θ = 245/259 in a right triangle. Adjacent side if hypotenuse = 259:",
+        "options": [
+          "259",
+          "84",
+          "329",
+          "245"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_abcf54a2",
+        "question": "cos θ = 8/10 in a right triangle. Adjacent side if hypotenuse = 10:",
+        "options": [
+          "8",
+          "6",
+          "10",
+          "14"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_89a1fec1",
+        "question": "cos θ = 140/148 in a right triangle. Adjacent side if hypotenuse = 148:",
+        "options": [
+          "148",
+          "188",
+          "48",
+          "140"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 1,
         "level": "D",
@@ -200,13 +2176,545 @@
     ],
     "E": [
       {
-        "id": "u8_t1_E_47b2de33",
+        "id": "u8_t1_E_423b2586",
         "question": "Quotient relation among ratios:",
         "options": [
-          "tan θ = 1/cos θ",
           "tan θ = sin θ/cos θ",
+          "tan θ = sin θ + cos θ",
           "tan θ = cos θ/sin θ",
-          "tan θ = sin θ + cos θ"
+          "tan θ = 1/cos θ"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_30ca4977",
+        "question": "In a right triangle (opp=27, adj=120, hyp=123), tan θ = ?",
+        "options": [
+          "27/123",
+          "27/120",
+          "120/27",
+          "123/120"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_3c7c6284",
+        "question": "In a right triangle (opp=42, adj=144, hyp=150), tan θ = ?",
+        "options": [
+          "42/150",
+          "144/42",
+          "150/144",
+          "42/144"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_060c8513",
+        "question": "In a right triangle (opp=9, adj=12, hyp=15), tan θ = ?",
+        "options": [
+          "12/9",
+          "9/15",
+          "9/12",
+          "15/12"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_3b1e4c02",
+        "question": "In a right triangle (opp=56, adj=105, hyp=119), tan θ = ?",
+        "options": [
+          "119/105",
+          "56/105",
+          "56/119",
+          "105/56"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_bcaf83ca",
+        "question": "In a right triangle (opp=16, adj=30, hyp=34), tan θ = ?",
+        "options": [
+          "16/34",
+          "34/30",
+          "30/16",
+          "16/30"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_af166562",
+        "question": "In a right triangle (opp=45, adj=200, hyp=205), tan θ = ?",
+        "options": [
+          "205/200",
+          "200/45",
+          "45/205",
+          "45/200"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_daf0b3f2",
+        "question": "In a right triangle (opp=60, adj=175, hyp=185), tan θ = ?",
+        "options": [
+          "175/60",
+          "60/185",
+          "185/175",
+          "60/175"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_8c973996",
+        "question": "In a right triangle (opp=28, adj=96, hyp=100), tan θ = ?",
+        "options": [
+          "100/96",
+          "96/28",
+          "28/100",
+          "28/96"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_cb486ade",
+        "question": "In a right triangle (opp=24, adj=32, hyp=40), tan θ = ?",
+        "options": [
+          "32/24",
+          "24/32",
+          "24/40",
+          "40/32"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_a415f45f",
+        "question": "In a right triangle (opp=6, adj=8, hyp=10), tan θ = ?",
+        "options": [
+          "6/8",
+          "10/8",
+          "6/10",
+          "8/6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_0eec418e",
+        "question": "In a right triangle (opp=25, adj=60, hyp=65), tan θ = ?",
+        "options": [
+          "25/60",
+          "25/65",
+          "60/25",
+          "65/60"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_02002a25",
+        "question": "In a right triangle (opp=24, adj=45, hyp=51), tan θ = ?",
+        "options": [
+          "24/51",
+          "51/45",
+          "45/24",
+          "24/45"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_bf447417",
+        "question": "In a right triangle (opp=48, adj=140, hyp=148), tan θ = ?",
+        "options": [
+          "48/140",
+          "48/148",
+          "140/48",
+          "148/140"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_1c4456cc",
+        "question": "In a right triangle (opp=12, adj=16, hyp=20), tan θ = ?",
+        "options": [
+          "16/12",
+          "20/16",
+          "12/16",
+          "12/20"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_118b1a76",
+        "question": "In a right triangle (opp=54, adj=240, hyp=246), tan θ = ?",
+        "options": [
+          "54/240",
+          "54/246",
+          "240/54",
+          "246/240"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_daaa56c6",
+        "question": "In a right triangle (opp=12, adj=35, hyp=37), tan θ = ?",
+        "options": [
+          "35/12",
+          "37/35",
+          "12/35",
+          "12/37"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_119e0e1e",
+        "question": "In a right triangle (opp=5, adj=12, hyp=13), tan θ = ?",
+        "options": [
+          "13/12",
+          "5/13",
+          "5/12",
+          "12/5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_e6aa87ee",
+        "question": "In a right triangle (opp=10, adj=24, hyp=26), tan θ = ?",
+        "options": [
+          "10/26",
+          "24/10",
+          "10/24",
+          "26/24"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_f551a561",
+        "question": "In a right triangle (opp=14, adj=48, hyp=50), tan θ = ?",
+        "options": [
+          "50/48",
+          "14/48",
+          "14/50",
+          "48/14"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_bd34196d",
+        "question": "In a right triangle (opp=7, adj=24, hyp=25), tan θ = ?",
+        "options": [
+          "25/24",
+          "24/7",
+          "7/25",
+          "7/24"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_036522b9",
+        "question": "In a right triangle (opp=15, adj=36, hyp=39), tan θ = ?",
+        "options": [
+          "39/36",
+          "36/15",
+          "15/39",
+          "15/36"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_d23cdf42",
+        "question": "In a right triangle (opp=48, adj=90, hyp=102), tan θ = ?",
+        "options": [
+          "102/90",
+          "48/90",
+          "90/48",
+          "48/102"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_1480d514",
+        "question": "In a right triangle (opp=84, adj=245, hyp=259), tan θ = ?",
+        "options": [
+          "245/84",
+          "259/245",
+          "84/245",
+          "84/259"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_e43d5ccb",
+        "question": "In a right triangle (opp=56, adj=192, hyp=200), tan θ = ?",
+        "options": [
+          "192/56",
+          "200/192",
+          "56/200",
+          "56/192"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_3bbe1a9a",
+        "question": "In a right triangle (opp=20, adj=48, hyp=52), tan θ = ?",
+        "options": [
+          "20/48",
+          "52/48",
+          "48/20",
+          "20/52"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_6d1af6cf",
+        "question": "In a right triangle (opp=96, adj=280, hyp=296), tan θ = ?",
+        "options": [
+          "280/96",
+          "296/280",
+          "96/280",
+          "96/296"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_0fc735d8",
+        "question": "In a right triangle (opp=49, adj=168, hyp=175), tan θ = ?",
+        "options": [
+          "49/168",
+          "168/49",
+          "175/168",
+          "49/175"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_E_d53643aa",
+        "question": "In a right triangle (opp=30, adj=72, hyp=78), tan θ = ?",
+        "options": [
+          "78/72",
+          "30/72",
+          "72/30",
+          "30/78"
         ],
         "answer": 1,
         "explanation": "",

@@ -2,13 +2,32 @@
   "questions": {
     "A": [
       {
-        "id": "u10_t4_A_810f2cce",
+        "id": "u10_t4_A_1468a7f6",
+        "question": "Equal tangents from external point P are proved using:",
+        "options": [
+          "ASA with radius",
+          "RHS congruence of ΔOQP and ΔORP",
+          "SSA always",
+          "No proof needed"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 10,
+        "category": "u10_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_A_bbca477b",
         "question": "Identify the tangent in a diagram:",
         "options": [
-          "Diameter only",
+          "Any chord",
           "Line touching circle at one point only",
-          "Line through centre",
-          "Any chord"
+          "Diameter only",
+          "Line through centre"
         ],
         "answer": 1,
         "explanation": "",
@@ -23,13 +42,32 @@
     ],
     "B": [
       {
-        "id": "u10_t4_B_128c0d6f",
+        "id": "u10_t4_B_6d8db2f7",
         "question": "Equal tangents from P are proved using:",
         "options": [
-          "RHS congruence of ΔOQP and ΔORP",
+          "ASA with radius",
           "SSA always",
           "No proof needed",
-          "ASA with radius"
+          "RHS congruence of ΔOQP and ΔORP"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_B_ecb91f06",
+        "question": "In ΔOQP and ΔORP (tangents from P), OQ = OR because:",
+        "options": [
+          "Both are radii",
+          "OP is diameter",
+          "Both are tangents",
+          "PQ = PR only"
         ],
         "answer": 0,
         "explanation": "",
@@ -44,15 +82,34 @@
     ],
     "C": [
       {
-        "id": "u10_t4_C_8fc1fdef",
+        "id": "u10_t4_C_f206b789",
         "question": "Chord of larger circle touching smaller concentric circle is:",
         "options": [
-          "Perpendicular only",
           "Bisected at P",
-          "Doubled at P",
-          "Unchanged"
+          "Perpendicular only",
+          "Unchanged",
+          "Doubled at P"
         ],
-        "answer": 1,
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_C_170c65bf",
+        "question": "Two tangents TP, TQ from external T. ∠PTQ and ∠POQ are:",
+        "options": [
+          "Equal always",
+          "Unrelated",
+          "Both 90°",
+          "Supplementary"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 4,
         "level": "C",
@@ -65,16 +122,111 @@
     ],
     "D": [
       {
-        "id": "u10_t4_D_532397a5",
+        "id": "u10_t4_D_fe154a9a",
         "question": "Two tangents TP, TQ from external T. Then:",
         "options": [
-          "∠PTQ = ∠OPQ",
           "∠PTQ = 2 ∠OPQ",
           "∠PTQ = 90° - ∠OPQ",
+          "∠PTQ = ∠OPQ",
           "No relation"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_D_03e96002",
+        "question": "If ∠ between tangents is 80°, then ∠ between OP and a tangent is 40°.",
+        "options": [
+          "40°",
+          "110°",
+          "90°",
+          "80°"
+        ],
+        "answer": 0,
+        "explanation": "OP bisects angle between tangents.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_D_7dd627ca",
+        "question": "If ∠ between tangents is 60°, then ∠ between OP and a tangent is 30°.",
+        "options": [
+          "90°",
+          "30°",
+          "30° (alt)",
+          "60°"
+        ],
+        "answer": 1,
+        "explanation": "OP bisects angle between tangents.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_D_91e71302",
+        "question": "If ∠ between tangents is 50°, then ∠ between OP and a tangent is 25°.",
+        "options": [
+          "25°",
+          "80°",
+          "90°",
+          "50°"
+        ],
+        "answer": 0,
+        "explanation": "OP bisects angle between tangents.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_D_c939c4ab",
+        "question": "If ∠ between tangents is 40°, then ∠ between OP and a tangent is 20°.",
+        "options": [
+          "20°",
+          "90°",
+          "70°",
+          "40°"
+        ],
+        "answer": 0,
+        "explanation": "OP bisects angle between tangents.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_D_ad60c91c",
+        "question": "If ∠ between tangents is 70°, then ∠ between OP and a tangent is 35°.",
+        "options": [
+          "90°",
+          "100°",
+          "70°",
+          "35°"
+        ],
+        "answer": 3,
+        "explanation": "OP bisects angle between tangents.",
         "topic": 4,
         "level": "D",
         "unit_id": 10,
@@ -86,15 +238,15 @@
     ],
     "E": [
       {
-        "id": "u10_t4_E_a7cc196b",
-        "question": "Combined: radius 5 cm, OQ = 13 cm. Tangent PQ length = ?",
+        "id": "u10_t4_E_501f7010",
+        "question": "Combined: radius 20 cm, OQ = 52 cm. Tangent PQ length = ?",
         "options": [
-          "17 cm",
-          "5 cm",
-          "13 cm",
-          "12 cm"
+          "48 cm",
+          "52 cm",
+          "20 cm",
+          "68 cm"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -105,13 +257,51 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t4_E_65ae3f14",
-        "question": "Combined: radius 7 cm, OQ = 25 cm. Tangent PQ length = ?",
+        "id": "u10_t4_E_c49215a6",
+        "question": "Combined: radius 5 cm, OQ = 13 cm. Tangent PQ length = ?",
         "options": [
+          "12 cm",
+          "5 cm",
+          "13 cm",
+          "17 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_eee32eda",
+        "question": "Combined: radius 4 cm, OQ = 5 cm. Tangent PQ length = ?",
+        "options": [
+          "3 cm",
           "7 cm",
-          "25 cm",
-          "24 cm",
-          "31 cm"
+          "5 cm",
+          "4 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_229a2aab",
+        "question": "Combined: radius 24 cm, OQ = 51 cm. Tangent PQ length = ?",
+        "options": [
+          "69 cm",
+          "51 cm",
+          "45 cm",
+          "24 cm"
         ],
         "answer": 2,
         "explanation": "",
@@ -124,15 +314,15 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t4_E_7d4eeabc",
+        "id": "u10_t4_E_e3a8d832",
         "question": "Combined: radius 3 cm, OQ = 5 cm. Tangent PQ length = ?",
         "options": [
           "7 cm",
-          "5 cm",
+          "4 cm",
           "3 cm",
-          "4 cm"
+          "5 cm"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -143,13 +333,13 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t4_E_c569ed35",
-        "question": "Combined: radius 6 cm, OQ = 10 cm. Tangent PQ length = ?",
+        "id": "u10_t4_E_0f199a13",
+        "question": "Combined: radius 16 cm, OQ = 20 cm. Tangent PQ length = ?",
         "options": [
-          "10 cm",
-          "14 cm",
-          "8 cm",
-          "6 cm"
+          "28 cm",
+          "20 cm",
+          "12 cm",
+          "16 cm"
         ],
         "answer": 2,
         "explanation": "",
@@ -162,11 +352,220 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t4_E_0353ad94",
+        "id": "u10_t4_E_a58b616f",
+        "question": "Combined: radius 16 cm, OQ = 34 cm. Tangent PQ length = ?",
+        "options": [
+          "34 cm",
+          "46 cm",
+          "30 cm",
+          "16 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_cc8ffeff",
+        "question": "Combined: radius 15 cm, OQ = 25 cm. Tangent PQ length = ?",
+        "options": [
+          "15 cm",
+          "25 cm",
+          "20 cm",
+          "35 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_afd1ea02",
+        "question": "Combined: radius 20 cm, OQ = 29 cm. Tangent PQ length = ?",
+        "options": [
+          "41 cm",
+          "29 cm",
+          "20 cm",
+          "21 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_831c3611",
         "question": "Combined: radius 9 cm, OQ = 15 cm. Tangent PQ length = ?",
         "options": [
+          "21 cm",
           "12 cm",
+          "15 cm",
+          "9 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_f23e7c7d",
+        "question": "Combined: radius 8 cm, OQ = 17 cm. Tangent PQ length = ?",
+        "options": [
+          "15 cm",
+          "17 cm",
+          "8 cm",
+          "23 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_54b61088",
+        "question": "Combined: radius 10 cm, OQ = 26 cm. Tangent PQ length = ?",
+        "options": [
+          "24 cm",
+          "26 cm",
+          "34 cm",
+          "10 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_ad9e5a4f",
+        "question": "Combined: radius 12 cm, OQ = 37 cm. Tangent PQ length = ?",
+        "options": [
+          "12 cm",
+          "37 cm",
+          "35 cm",
+          "47 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_fc164322",
+        "question": "Combined: radius 18 cm, OQ = 30 cm. Tangent PQ length = ?",
+        "options": [
+          "18 cm",
+          "24 cm",
+          "30 cm",
+          "42 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_88738b41",
+        "question": "Combined: radius 7 cm, OQ = 25 cm. Tangent PQ length = ?",
+        "options": [
+          "31 cm",
+          "24 cm",
+          "25 cm",
+          "7 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_72862b45",
+        "question": "Combined: radius 24 cm, OQ = 30 cm. Tangent PQ length = ?",
+        "options": [
+          "42 cm",
+          "18 cm",
+          "30 cm",
+          "24 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_ea536447",
+        "question": "Combined: radius 15 cm, OQ = 17 cm. Tangent PQ length = ?",
+        "options": [
+          "8 cm",
+          "17 cm",
+          "23 cm",
+          "15 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_6295129b",
+        "question": "Combined: radius 12 cm, OQ = 15 cm. Tangent PQ length = ?",
+        "options": [
           "9 cm",
+          "12 cm",
           "15 cm",
           "21 cm"
         ],
@@ -181,13 +580,222 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t4_E_b36422b7",
-        "question": "Combined: radius 8 cm, OQ = 17 cm. Tangent PQ length = ?",
+        "id": "u10_t4_E_03e8c4b4",
+        "question": "Combined: radius 24 cm, OQ = 26 cm. Tangent PQ length = ?",
+        "options": [
+          "34 cm",
+          "10 cm",
+          "26 cm",
+          "24 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_714e5b70",
+        "question": "Combined: radius 21 cm, OQ = 29 cm. Tangent PQ length = ?",
+        "options": [
+          "29 cm",
+          "20 cm",
+          "41 cm",
+          "21 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_5743de41",
+        "question": "Combined: radius 21 cm, OQ = 35 cm. Tangent PQ length = ?",
+        "options": [
+          "21 cm",
+          "49 cm",
+          "28 cm",
+          "35 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_918b4381",
+        "question": "Combined: radius 9 cm, OQ = 41 cm. Tangent PQ length = ?",
+        "options": [
+          "41 cm",
+          "49 cm",
+          "40 cm",
+          "9 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_33ca16e4",
+        "question": "Combined: radius 12 cm, OQ = 20 cm. Tangent PQ length = ?",
+        "options": [
+          "20 cm",
+          "12 cm",
+          "16 cm",
+          "28 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_faf106e1",
+        "question": "Combined: radius 15 cm, OQ = 39 cm. Tangent PQ length = ?",
+        "options": [
+          "51 cm",
+          "39 cm",
+          "36 cm",
+          "15 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_70b9849a",
+        "question": "Combined: radius 20 cm, OQ = 25 cm. Tangent PQ length = ?",
+        "options": [
+          "25 cm",
+          "20 cm",
+          "15 cm",
+          "35 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_70aa6e6f",
+        "question": "Combined: radius 8 cm, OQ = 10 cm. Tangent PQ length = ?",
+        "options": [
+          "14 cm",
+          "6 cm",
+          "8 cm",
+          "10 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_5293ee9f",
+        "question": "Combined: radius 12 cm, OQ = 13 cm. Tangent PQ length = ?",
         "options": [
           "17 cm",
-          "23 cm",
-          "15 cm",
-          "8 cm"
+          "5 cm",
+          "12 cm",
+          "13 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_238629fd",
+        "question": "Combined: radius 24 cm, OQ = 25 cm. Tangent PQ length = ?",
+        "options": [
+          "31 cm",
+          "24 cm",
+          "7 cm",
+          "25 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_a8f8b326",
+        "question": "Combined: radius 24 cm, OQ = 40 cm. Tangent PQ length = ?",
+        "options": [
+          "32 cm",
+          "24 cm",
+          "56 cm",
+          "40 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t4_E_0b021fbc",
+        "question": "Combined: radius 14 cm, OQ = 50 cm. Tangent PQ length = ?",
+        "options": [
+          "50 cm",
+          "14 cm",
+          "48 cm",
+          "62 cm"
         ],
         "answer": 2,
         "explanation": "",

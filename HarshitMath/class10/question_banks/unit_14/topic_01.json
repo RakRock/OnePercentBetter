@@ -2,15 +2,53 @@
   "questions": {
     "A": [
       {
-        "id": "u14_t1_A_97548333",
-        "question": "Classical probability P(E) =",
+        "id": "u14_t1_A_81dabb44",
+        "question": "Probability of impossible event:",
         "options": [
-          "Favourable outcomes / Total outcomes",
-          "Always 1/2",
-          "Total / Favourable",
-          "1 - P(E)"
+          "0",
+          "1",
+          "Undefined",
+          "1/2"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t1_A",
+        "category_label": "Classical · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_A_8132c66c",
+        "question": "Classical probability P(E) =",
+        "options": [
+          "Always 1/2",
+          "Total / Favourable",
+          "Favourable outcomes / Total outcomes",
+          "1 - P(E)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t1_A",
+        "category_label": "Classical · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_A_5b4d34c2",
+        "question": "Probability of certain event:",
+        "options": [
+          "1/2",
+          "1",
+          "Undefined",
+          "0"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -23,15 +61,15 @@
     ],
     "B": [
       {
-        "id": "u14_t1_B_93e1a8e9",
-        "question": "Fair die/cards: 3 favourable out of 52. P(E) = ?",
+        "id": "u14_t1_B_03003b58",
+        "question": "Fair die/cards: 9 favourable out of 20. P(E) = ?",
         "options": [
+          "0",
+          "11/20",
           "1",
-          "49/52",
-          "3/52",
-          "0"
+          "9/20"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 1,
         "level": "B",
@@ -42,13 +80,32 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t1_B_c11f2477",
-        "question": "Fair die/cards: 1 favourable out of 6. P(E) = ?",
+        "id": "u14_t1_B_18d8fd4e",
+        "question": "Fair die/cards: 17 favourable out of 20. P(E) = ?",
         "options": [
+          "17/20",
+          "3/20",
           "0",
-          "1/6",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_a4b47d44",
+        "question": "Fair die/cards: 8 favourable out of 26. P(E) = ?",
+        "options": [
+          "9/13",
+          "4/13",
           "1",
-          "5/6"
+          "0"
         ],
         "answer": 1,
         "explanation": "",
@@ -61,13 +118,32 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t1_B_d585b6e0",
-        "question": "Fair die/cards: 1 favourable out of 2. P(E) = ?",
+        "id": "u14_t1_B_b08d24f4",
+        "question": "Fair die/cards: 3 favourable out of 26. P(E) = ?",
         "options": [
-          "1/2 (alt)",
           "0",
-          "1/2",
-          "1"
+          "1",
+          "23/26",
+          "3/26"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_9cc5a19e",
+        "question": "Fair die/cards: 24 favourable out of 26. P(E) = ?",
+        "options": [
+          "0",
+          "1",
+          "12/13",
+          "1/13"
         ],
         "answer": 2,
         "explanation": "",
@@ -80,12 +156,50 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t1_B_7b3c4153",
-        "question": "Fair die/cards: 4 favourable out of 52. P(E) = ?",
+        "id": "u14_t1_B_a085ee9b",
+        "question": "Fair die/cards: 1 favourable out of 12. P(E) = ?",
         "options": [
-          "12/13",
+          "1/12",
           "1",
-          "1/13",
+          "11/12",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_a4cfa322",
+        "question": "Fair die/cards: 13 favourable out of 26. P(E) = ?",
+        "options": [
+          "0",
+          "1/2 (alt)",
+          "1",
+          "1/2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_32f73f24",
+        "question": "Fair die/cards: 6 favourable out of 20. P(E) = ?",
+        "options": [
+          "7/10",
+          "1",
+          "3/10",
           "0"
         ],
         "answer": 2,
@@ -99,15 +213,414 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t1_B_68102134",
-        "question": "Fair die/cards: 2 favourable out of 6. P(E) = ?",
+        "id": "u14_t1_B_3f2131f6",
+        "question": "Fair die/cards: 4 favourable out of 6. P(E) = ?",
         "options": [
-          "2/3",
           "0",
           "1/3",
+          "2/3",
           "1"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_f22cc939",
+        "question": "Fair die/cards: 12 favourable out of 26. P(E) = ?",
+        "options": [
+          "0",
+          "1",
+          "7/13",
+          "6/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_4454e647",
+        "question": "Fair die/cards: 18 favourable out of 26. P(E) = ?",
+        "options": [
+          "4/13",
+          "0",
+          "1",
+          "9/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_3b8287db",
+        "question": "Fair die/cards: 11 favourable out of 12. P(E) = ?",
+        "options": [
+          "0",
+          "1/12",
+          "11/12",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_1eb3b518",
+        "question": "Fair die/cards: 8 favourable out of 10. P(E) = ?",
+        "options": [
+          "0",
+          "1/5",
+          "4/5",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_8856a702",
+        "question": "Fair die/cards: 16 favourable out of 26. P(E) = ?",
+        "options": [
+          "5/13",
+          "1",
+          "0",
+          "8/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_e5ac6037",
+        "question": "Fair die/cards: 10 favourable out of 36. P(E) = ?",
+        "options": [
+          "0",
+          "5/18",
+          "1",
+          "13/18"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_c79089fc",
+        "question": "Fair die/cards: 13 favourable out of 52. P(E) = ?",
+        "options": [
+          "3/4",
+          "0",
+          "1",
+          "1/4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_86bfeeeb",
+        "question": "Fair die/cards: 1 favourable out of 36. P(E) = ?",
+        "options": [
+          "1/36",
+          "35/36",
+          "0",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_a2e478b4",
+        "question": "Fair die/cards: 22 favourable out of 26. P(E) = ?",
+        "options": [
+          "2/13",
+          "0",
+          "11/13",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_ba2255ba",
+        "question": "Fair die/cards: 11 favourable out of 52. P(E) = ?",
+        "options": [
+          "0",
+          "11/52",
+          "41/52",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_6884c76f",
+        "question": "Fair die/cards: 11 favourable out of 36. P(E) = ?",
+        "options": [
+          "25/36",
+          "11/36",
+          "1",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_d6651ed8",
+        "question": "Fair die/cards: 15 favourable out of 26. P(E) = ?",
+        "options": [
+          "11/26",
+          "15/26",
+          "0",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_50cbe271",
+        "question": "Fair die/cards: 5 favourable out of 6. P(E) = ?",
+        "options": [
+          "1",
+          "0",
+          "5/6",
+          "1/6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_4c8dc812",
+        "question": "Fair die/cards: 36 favourable out of 52. P(E) = ?",
+        "options": [
+          "4/13",
+          "9/13",
+          "0",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_14b9b2e8",
+        "question": "Fair die/cards: 4 favourable out of 10. P(E) = ?",
+        "options": [
+          "1",
+          "3/5",
+          "2/5",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_ab75556f",
+        "question": "Fair die/cards: 28 favourable out of 36. P(E) = ?",
+        "options": [
+          "0",
+          "1",
+          "2/9",
+          "7/9"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_08d321d6",
+        "question": "Fair die/cards: 12 favourable out of 20. P(E) = ?",
+        "options": [
+          "0",
+          "2/5",
+          "1",
+          "3/5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_9fa48e71",
+        "question": "Fair die/cards: 25 favourable out of 26. P(E) = ?",
+        "options": [
+          "0",
+          "1/26",
+          "25/26",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_2a22aaaf",
+        "question": "Fair die/cards: 44 favourable out of 52. P(E) = ?",
+        "options": [
+          "11/13",
+          "0",
+          "1",
+          "2/13"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_6389b500",
+        "question": "Fair die/cards: 3 favourable out of 12. P(E) = ?",
+        "options": [
+          "1",
+          "0",
+          "1/4",
+          "3/4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t1_B",
+        "category_label": "Classical · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_B_19f4286b",
+        "question": "Fair die/cards: 4 favourable out of 12. P(E) = ?",
+        "options": [
+          "2/3",
+          "1/3",
+          "1",
+          "0"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "B",
@@ -120,13 +633,32 @@
     ],
     "C": [
       {
-        "id": "u14_t1_C_e701a569",
+        "id": "u14_t1_C_0c8f42ee",
         "question": "Probability of impossible event:",
         "options": [
+          "Undefined",
+          "1",
           "0",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t1_C",
+        "category_label": "Classical · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_C_7c549cea",
+        "question": "Probability of certain event:",
+        "options": [
+          "1",
           "Undefined",
           "1/2",
-          "1"
+          "0"
         ],
         "answer": 0,
         "explanation": "",
@@ -141,15 +673,34 @@
     ],
     "D": [
       {
-        "id": "u14_t1_D_6c63a6be",
+        "id": "u14_t1_D_f02b9af4",
         "question": "Classical probability assumes outcomes are:",
         "options": [
+          "Always 1",
           "Equally likely",
           "Complementary",
-          "Always 1",
           "Always 0"
         ],
-        "answer": 0,
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 14,
+        "category": "u14_t1_D",
+        "category_label": "Classical · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_D_95188578",
+        "question": "Sum of probabilities of all elementary events equals:",
+        "options": [
+          "1/2",
+          "1",
+          "n",
+          "0"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "D",
@@ -162,13 +713,32 @@
     ],
     "E": [
       {
-        "id": "u14_t1_E_01adeaa7",
-        "question": "Bag: 4 red out of 52 identical balls. P(red) = ?",
+        "id": "u14_t1_E_b158e554",
+        "question": "Bag: 11 red out of 12 identical balls. P(red) = ?",
+        "options": [
+          "0",
+          "1",
+          "5/6",
+          "11/12"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_6e790e4e",
+        "question": "Bag: 3 red out of 26 identical balls. P(red) = ?",
         "options": [
           "1",
-          "1/13",
+          "3/26",
           "0",
-          "3/52"
+          "1/13"
         ],
         "answer": 1,
         "explanation": "",
@@ -181,12 +751,31 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t1_E_1e8c80ec",
-        "question": "Bag: 3 red out of 6 identical balls. P(red) = ?",
+        "id": "u14_t1_E_34fc6a95",
+        "question": "Bag: 3 red out of 52 identical balls. P(red) = ?",
         "options": [
-          "1/3",
+          "1/26",
+          "3/52",
           "1",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_5ff42fc3",
+        "question": "Bag: 6 red out of 12 identical balls. P(red) = ?",
+        "options": [
           "0",
+          "1",
+          "5/12",
           "1/2"
         ],
         "answer": 3,
@@ -200,11 +789,106 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t1_E_8184cb53",
-        "question": "Bag: 2 red out of 2 identical balls. P(red) = ?",
+        "id": "u14_t1_E_c96d36cb",
+        "question": "Bag: 3 red out of 6 identical balls. P(red) = ?",
         "options": [
-          "1 (alt)",
+          "1/3",
+          "0",
           "1",
+          "1/2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_07f225a9",
+        "question": "Bag: 2 red out of 12 identical balls. P(red) = ?",
+        "options": [
+          "1/12",
+          "1",
+          "1/6",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_371854b3",
+        "question": "Bag: 5 red out of 12 identical balls. P(red) = ?",
+        "options": [
+          "0",
+          "5/12",
+          "1",
+          "1/3"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_42ea2c40",
+        "question": "Bag: 16 red out of 36 identical balls. P(red) = ?",
+        "options": [
+          "1",
+          "4/9",
+          "0",
+          "5/12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_4c9104d2",
+        "question": "Bag: 10 red out of 20 identical balls. P(red) = ?",
+        "options": [
+          "0",
+          "1",
+          "1/2",
+          "9/20"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_7731b953",
+        "question": "Bag: 7 red out of 12 identical balls. P(red) = ?",
+        "options": [
+          "1",
+          "7/12",
           "1/2",
           "0"
         ],
@@ -219,12 +903,164 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t1_E_1a2e1666",
-        "question": "Bag: 5 red out of 52 identical balls. P(red) = ?",
+        "id": "u14_t1_E_5050d6af",
+        "question": "Bag: 8 red out of 26 identical balls. P(red) = ?",
         "options": [
-          "1/13",
+          "1",
+          "7/26",
+          "4/13",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_17370228",
+        "question": "Bag: 4 red out of 26 identical balls. P(red) = ?",
+        "options": [
           "0",
-          "5/52",
+          "2/13",
+          "3/26",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_c64abba1",
+        "question": "Bag: 5 red out of 26 identical balls. P(red) = ?",
+        "options": [
+          "2/13",
+          "0",
+          "1",
+          "5/26"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_cd26fe2f",
+        "question": "Bag: 6 red out of 36 identical balls. P(red) = ?",
+        "options": [
+          "1",
+          "5/36",
+          "0",
+          "1/6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_fd703949",
+        "question": "Bag: 3 red out of 12 identical balls. P(red) = ?",
+        "options": [
+          "1/6",
+          "1",
+          "1/4",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_dbe6a65d",
+        "question": "Bag: 11 red out of 26 identical balls. P(red) = ?",
+        "options": [
+          "11/26",
+          "0",
+          "5/13",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_3499f0f2",
+        "question": "Bag: 9 red out of 26 identical balls. P(red) = ?",
+        "options": [
+          "4/13",
+          "0",
+          "1",
+          "9/26"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_fa672ae7",
+        "question": "Bag: 4 red out of 12 identical balls. P(red) = ?",
+        "options": [
+          "0",
+          "1/3",
+          "1/4",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_a30c28ac",
+        "question": "Bag: 29 red out of 36 identical balls. P(red) = ?",
+        "options": [
+          "7/9",
+          "0",
+          "29/36",
           "1"
         ],
         "answer": 2,
@@ -238,12 +1074,202 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t1_E_694af7e8",
+        "id": "u14_t1_E_9e581634",
+        "question": "Bag: 4 red out of 20 identical balls. P(red) = ?",
+        "options": [
+          "1/5",
+          "3/20",
+          "0",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_481bb9fc",
+        "question": "Bag: 14 red out of 26 identical balls. P(red) = ?",
+        "options": [
+          "1/2",
+          "1",
+          "0",
+          "7/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_e6741bda",
+        "question": "Bag: 5 red out of 36 identical balls. P(red) = ?",
+        "options": [
+          "0",
+          "5/36",
+          "1",
+          "1/9"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_2660beb7",
+        "question": "Bag: 9 red out of 12 identical balls. P(red) = ?",
+        "options": [
+          "0",
+          "1",
+          "2/3",
+          "3/4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_b42897a4",
+        "question": "Bag: 21 red out of 52 identical balls. P(red) = ?",
+        "options": [
+          "1",
+          "21/52",
+          "0",
+          "5/13"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_9dc458ad",
+        "question": "Bag: 8 red out of 20 identical balls. P(red) = ?",
+        "options": [
+          "7/20",
+          "0",
+          "1",
+          "2/5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_cefda2f7",
         "question": "Bag: 2 red out of 6 identical balls. P(red) = ?",
         "options": [
+          "1",
           "1/6",
           "1/3",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_a7cc581f",
+        "question": "Bag: 12 red out of 26 identical balls. P(red) = ?",
+        "options": [
+          "0",
+          "11/26",
+          "6/13",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_d21d46e6",
+        "question": "Bag: 12 red out of 12 identical balls. P(red) = ?",
+        "options": [
+          "1 (alt)",
+          "0",
+          "11/12",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_a867aabf",
+        "question": "Bag: 31 red out of 52 identical balls. P(red) = ?",
+        "options": [
+          "0",
+          "31/52",
+          "15/26",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t1_E",
+        "category_label": "Classical · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t1_E_d985a996",
+        "question": "Bag: 4 red out of 6 identical balls. P(red) = ?",
+        "options": [
           "1",
+          "2/3",
+          "1/2",
           "0"
         ],
         "answer": 1,

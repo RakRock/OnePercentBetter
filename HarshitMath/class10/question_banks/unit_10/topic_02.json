@@ -2,15 +2,53 @@
   "questions": {
     "A": [
       {
-        "id": "u10_t2_A_264b1fe5",
+        "id": "u10_t2_A_957e6d0a",
         "question": "From a point inside a circle:",
         "options": [
-          "Infinite tangents from inside",
           "Two tangents from inside",
-          "No tangent from a point inside the circle",
-          "One tangent from inside"
+          "Infinite tangents from inside",
+          "One tangent from inside",
+          "No tangent from a point inside the circle"
         ],
-        "answer": 2,
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 10,
+        "category": "u10_t2_A",
+        "category_label": "External · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_A_584be36c",
+        "question": "From an external point to a circle:",
+        "options": [
+          "One tangent",
+          "No tangent",
+          "Infinite tangents",
+          "Exactly two tangents"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 10,
+        "category": "u10_t2_A",
+        "category_label": "External · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_A_3f40fb58",
+        "question": "Tangents from external point P to circle are:",
+        "options": [
+          "Equal in length",
+          "Half the radius",
+          "Parallel",
+          "Perpendicular to each other always"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -23,15 +61,34 @@
     ],
     "B": [
       {
-        "id": "u10_t2_B_a9318cc0",
+        "id": "u10_t2_B_827dd3cb",
         "question": "From an external point to a circle:",
         "options": [
+          "Infinite tangents",
           "Exactly two tangents",
           "No tangent",
-          "One tangent",
-          "Infinite tangents"
+          "One tangent"
         ],
-        "answer": 0,
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t2_B",
+        "category_label": "External · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_B_d811464f",
+        "question": "Maximum tangents from an external point:",
+        "options": [
+          "1",
+          "2",
+          "5",
+          "0"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -44,15 +101,34 @@
     ],
     "C": [
       {
-        "id": "u10_t2_C_a67c5884",
+        "id": "u10_t2_C_e9f40b1f",
         "question": "Tangents PQ and PR from external point P (Theorem 10.2):",
         "options": [
-          "PQ ⊥ PR",
           "PQ parallel PR",
+          "PQ = PR",
           "PQ = 2PR",
-          "PQ = PR"
+          "PQ ⊥ PR"
         ],
-        "answer": 3,
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t2_C",
+        "category_label": "External · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_C_bfffafba",
+        "question": "OP bisects the angle between two tangents from P. If ∠QPR = 60°, each half is:",
+        "options": [
+          "90°",
+          "15°",
+          "30°",
+          "60°"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -65,12 +141,31 @@
     ],
     "D": [
       {
-        "id": "u10_t2_D_94365dac",
-        "question": "Two tangents from P make 90° at P. Angle between OP and either tangent is:",
+        "id": "u10_t2_D_ffff758a",
+        "question": "Two tangents from P make 60° at P. Angle between OP and either tangent is:",
         "options": [
-          "45° (alt)",
-          "120°",
-          "45°",
+          "30° (alt)",
+          "90°",
+          "60°",
+          "30°"
+        ],
+        "answer": 3,
+        "explanation": "OP bisects ∠QPR.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t2_D",
+        "category_label": "External · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_D_c34d8ec8",
+        "question": "Two tangents from P make 30° at P. Angle between OP and either tangent is:",
+        "options": [
+          "60°",
+          "30°",
+          "15°",
           "90°"
         ],
         "answer": 2,
@@ -84,34 +179,15 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t2_D_a9474511",
-        "question": "Two tangents from P make 30° at P. Angle between OP and either tangent is:",
-        "options": [
-          "90°",
-          "15°",
-          "30°",
-          "60°"
-        ],
-        "answer": 1,
-        "explanation": "OP bisects ∠QPR.",
-        "topic": 2,
-        "level": "D",
-        "unit_id": 10,
-        "category": "u10_t2_D",
-        "category_label": "External · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 10 Circles"
-      },
-      {
-        "id": "u10_t2_D_c19cac95",
+        "id": "u10_t2_D_b8595339",
         "question": "Two tangents from P make 45° at P. Angle between OP and either tangent is:",
         "options": [
-          "90°",
-          "22°",
+          "45°",
           "75°",
-          "45°"
+          "22°",
+          "90°"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "OP bisects ∠QPR.",
         "topic": 2,
         "level": "D",
@@ -122,13 +198,89 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t2_D_a97fa6aa",
-        "question": "Two tangents from P make 60° at P. Angle between OP and either tangent is:",
+        "id": "u10_t2_D_98b889a4",
+        "question": "Two tangents from P make 90° at P. Angle between OP and either tangent is:",
+        "options": [
+          "90°",
+          "120°",
+          "45°",
+          "45° (alt)"
+        ],
+        "answer": 2,
+        "explanation": "OP bisects ∠QPR.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t2_D",
+        "category_label": "External · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_D_ce057bfc",
+        "question": "Two tangents from P make 120° at P. Angle between OP and either tangent is:",
         "options": [
           "90°",
           "60°",
-          "30° (alt)",
-          "30°"
+          "120°",
+          "150°"
+        ],
+        "answer": 1,
+        "explanation": "OP bisects ∠QPR.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t2_D",
+        "category_label": "External · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_D_4b43fb8e",
+        "question": "Two tangents from P make 20° at P. Angle between OP and either tangent is:",
+        "options": [
+          "90°",
+          "10°",
+          "50°",
+          "20°"
+        ],
+        "answer": 1,
+        "explanation": "OP bisects ∠QPR.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t2_D",
+        "category_label": "External · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_D_3be638d6",
+        "question": "Two tangents from P make 50° at P. Angle between OP and either tangent is:",
+        "options": [
+          "25°",
+          "80°",
+          "90°",
+          "50°"
+        ],
+        "answer": 0,
+        "explanation": "OP bisects ∠QPR.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t2_D",
+        "category_label": "External · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_D_7f26d21b",
+        "question": "Two tangents from P make 40° at P. Angle between OP and either tangent is:",
+        "options": [
+          "40°",
+          "90°",
+          "70°",
+          "20°"
         ],
         "answer": 3,
         "explanation": "OP bisects ∠QPR.",
@@ -143,13 +295,165 @@
     ],
     "E": [
       {
-        "id": "u10_t2_E_a79c4a40",
+        "id": "u10_t2_E_a5e35ba1",
         "question": "Maximum tangents from an external point:",
         "options": [
-          "0",
           "2",
           "1",
-          "5"
+          "5",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t2_E",
+        "category_label": "External · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_E_7f92d158",
+        "question": "If tangents from P make 30° at P, angle between OP and tangent is 15°. OP bisects:",
+        "options": [
+          "The diameter",
+          "Nothing",
+          "∠QPR",
+          "The radius"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t2_E",
+        "category_label": "External · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_E_d6ca711f",
+        "question": "If tangents from P make 60° at P, angle between OP and tangent is 30°. OP bisects:",
+        "options": [
+          "The diameter",
+          "Nothing",
+          "The radius",
+          "∠QPR"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t2_E",
+        "category_label": "External · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_E_7072540e",
+        "question": "If tangents from P make 45° at P, angle between OP and tangent is 22°. OP bisects:",
+        "options": [
+          "Nothing",
+          "∠QPR",
+          "The radius",
+          "The diameter"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t2_E",
+        "category_label": "External · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_E_5e584a8d",
+        "question": "If tangents from P make 120° at P, angle between OP and tangent is 60°. OP bisects:",
+        "options": [
+          "∠QPR",
+          "The radius",
+          "Nothing",
+          "The diameter"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t2_E",
+        "category_label": "External · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_E_90432cab",
+        "question": "If tangents from P make 50° at P, angle between OP and tangent is 25°. OP bisects:",
+        "options": [
+          "The diameter",
+          "∠QPR",
+          "Nothing",
+          "The radius"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t2_E",
+        "category_label": "External · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_E_9be20678",
+        "question": "If tangents from P make 20° at P, angle between OP and tangent is 10°. OP bisects:",
+        "options": [
+          "The radius",
+          "Nothing",
+          "∠QPR",
+          "The diameter"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t2_E",
+        "category_label": "External · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_E_8c313ed0",
+        "question": "If tangents from P make 90° at P, angle between OP and tangent is 45°. OP bisects:",
+        "options": [
+          "The radius",
+          "Nothing",
+          "∠QPR",
+          "The diameter"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t2_E",
+        "category_label": "External · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_E_8ad7eaad",
+        "question": "If tangents from P make 40° at P, angle between OP and tangent is 20°. OP bisects:",
+        "options": [
+          "The diameter",
+          "∠QPR",
+          "The radius",
+          "Nothing"
         ],
         "answer": 1,
         "explanation": "",

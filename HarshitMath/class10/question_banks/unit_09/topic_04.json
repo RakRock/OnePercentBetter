@@ -2,13 +2,32 @@
   "questions": {
     "A": [
       {
-        "id": "u9_t4_A_c5ae5770",
+        "id": "u9_t4_A_4623a264",
         "question": "First step in a heights-and-distances problem:",
         "options": [
-          "Draw right triangle with known angle",
-          "Ignore horizontal",
+          "Use AP formula",
           "Only measure with tape",
-          "Use AP formula"
+          "Ignore horizontal",
+          "Draw right triangle with known angle"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_A_9155b9f3",
+        "question": "In a height problem, the angle is usually measured from:",
+        "options": [
+          "Horizontal",
+          "North pole",
+          "Hypotenuse",
+          "Vertical only"
         ],
         "answer": 0,
         "explanation": "",
@@ -23,15 +42,15 @@
     ],
     "B": [
       {
-        "id": "u9_t4_B_00ce4ab2",
-        "question": "3 m pole casts 8 m shadow. A 2 m pole casts shadow ≈ ?",
+        "id": "u9_t4_B_c7d9081a",
+        "question": "3 m pole casts 7 m shadow. A 2 m pole casts shadow ≈ ?",
         "options": [
           "3 m",
-          "8 m",
-          "5 m",
-          "7 m"
+          "4 m",
+          "7 m",
+          "6 m"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "Same ratio height/shadow.",
         "topic": 4,
         "level": "B",
@@ -42,13 +61,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_B_2c8ab548",
-        "question": "4 m pole casts 8 m shadow. A 3 m pole casts shadow ≈ ?",
+        "id": "u9_t4_B_2273b96e",
+        "question": "5 m pole casts 6 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
-          "4 m",
-          "8 m",
-          "6 m (alt)",
+          "3 m (alt)",
+          "3 m",
+          "5 m",
           "6 m"
+        ],
+        "answer": 1,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_2748a5d0",
+        "question": "4 m pole casts 6 m shadow. A 3 m pole casts shadow ≈ ?",
+        "options": [
+          "None of these",
+          "4 m (alt)",
+          "6 m",
+          "4 m"
         ],
         "answer": 3,
         "explanation": "Same ratio height/shadow.",
@@ -61,11 +99,125 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_B_e37bd6bd",
+        "id": "u9_t4_B_3f28ca98",
+        "question": "7 m pole casts 4 m shadow. A 4 m pole casts shadow ≈ ?",
+        "options": [
+          "2 m",
+          "2 m (alt)",
+          "4 m",
+          "7 m"
+        ],
+        "answer": 0,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_dce15be2",
+        "question": "5 m pole casts 8 m shadow. A 3 m pole casts shadow ≈ ?",
+        "options": [
+          "4 m",
+          "5 m",
+          "8 m",
+          "6 m"
+        ],
+        "answer": 0,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_8b08466f",
+        "question": "8 m pole casts 8 m shadow. A 5 m pole casts shadow ≈ ?",
+        "options": [
+          "7 m",
+          "5 m",
+          "8 m",
+          "5 m (alt)"
+        ],
+        "answer": 1,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_1714f11e",
+        "question": "3 m pole casts 4 m shadow. A 2 m pole casts shadow ≈ ?",
+        "options": [
+          "4 m",
+          "2 m",
+          "3 m",
+          "2 m (alt)"
+        ],
+        "answer": 1,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_e8caab9c",
+        "question": "4 m pole casts 3 m shadow. A 3 m pole casts shadow ≈ ?",
+        "options": [
+          "3 m",
+          "2 m (alt)",
+          "2 m",
+          "4 m"
+        ],
+        "answer": 2,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_e23259d7",
+        "question": "9 m pole casts 6 m shadow. A 5 m pole casts shadow ≈ ?",
+        "options": [
+          "9 m",
+          "5 m",
+          "6 m",
+          "3 m"
+        ],
+        "answer": 3,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_d0d9dab3",
         "question": "6 m pole casts 4 m shadow. A 4 m pole casts shadow ≈ ?",
         "options": [
-          "6 m",
           "4 m",
+          "6 m",
           "2 m (alt)",
           "2 m"
         ],
@@ -80,32 +232,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_B_1e567c55",
-        "question": "4 m pole casts 7 m shadow. A 3 m pole casts shadow ≈ ?",
+        "id": "u9_t4_B_95ebf2df",
+        "question": "8 m pole casts 7 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
+          "6 m",
           "7 m",
-          "4 m",
-          "5 m",
-          "5 m (alt)"
-        ],
-        "answer": 2,
-        "explanation": "Same ratio height/shadow.",
-        "topic": 4,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t4_B",
-        "category_label": "Apps · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t4_B_97791f8b",
-        "question": "7 m pole casts 5 m shadow. A 4 m pole casts shadow ≈ ?",
-        "options": [
-          "7 m",
-          "5 m",
-          "4 m",
-          "2 m"
+          "8 m",
+          "4 m"
         ],
         "answer": 3,
         "explanation": "Same ratio height/shadow.",
@@ -118,51 +251,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_B_d4e2ecbc",
-        "question": "3 m pole casts 6 m shadow. A 2 m pole casts shadow ≈ ?",
+        "id": "u9_t4_B_f6c564cb",
+        "question": "4 m pole casts 5 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
-          "4 m (alt)",
-          "4 m",
-          "6 m",
-          "3 m"
-        ],
-        "answer": 1,
-        "explanation": "Same ratio height/shadow.",
-        "topic": 4,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t4_B",
-        "category_label": "Apps · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t4_B_f0c248f6",
-        "question": "6 m pole casts 8 m shadow. A 4 m pole casts shadow ≈ ?",
-        "options": [
-          "6 m",
-          "5 m",
-          "8 m",
-          "7 m"
-        ],
-        "answer": 1,
-        "explanation": "Same ratio height/shadow.",
-        "topic": 4,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t4_B",
-        "category_label": "Apps · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t4_B_876744bc",
-        "question": "8 m pole casts 3 m shadow. A 5 m pole casts shadow ≈ ?",
-        "options": [
-          "1 m",
-          "8 m",
           "3 m",
-          "1 m (alt)"
+          "3 m (alt)",
+          "5 m",
+          "4 m"
         ],
         "answer": 0,
         "explanation": "Same ratio height/shadow.",
@@ -175,15 +270,34 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_B_591f0301",
-        "question": "6 m pole casts 6 m shadow. A 4 m pole casts shadow ≈ ?",
+        "id": "u9_t4_B_1d763e2d",
+        "question": "8 m pole casts 5 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
-          "None of these",
-          "4 m",
+          "3 m",
+          "8 m",
+          "5 m",
+          "3 m (alt)"
+        ],
+        "answer": 0,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_1011f9e0",
+        "question": "6 m pole casts 7 m shadow. A 4 m pole casts shadow ≈ ?",
+        "options": [
+          "7 m",
           "6 m",
+          "4 m",
           "4 m (alt)"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "Same ratio height/shadow.",
         "topic": 4,
         "level": "B",
@@ -194,32 +308,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_B_0168a0fc",
-        "question": "9 m pole casts 9 m shadow. A 5 m pole casts shadow ≈ ?",
+        "id": "u9_t4_B_c01e2e58",
+        "question": "5 m pole casts 4 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
-          "9 m",
-          "5 m",
+          "4 m",
+          "2 m (alt)",
+          "2 m",
+          "5 m"
+        ],
+        "answer": 2,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_422f1cec",
+        "question": "7 m pole casts 6 m shadow. A 4 m pole casts shadow ≈ ?",
+        "options": [
+          "3 m",
           "7 m",
-          "5 m (alt)"
-        ],
-        "answer": 1,
-        "explanation": "Same ratio height/shadow.",
-        "topic": 4,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t4_B",
-        "category_label": "Apps · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t4_B_9985e9a9",
-        "question": "8 m pole casts 8 m shadow. A 5 m pole casts shadow ≈ ?",
-        "options": [
           "5 m",
-          "8 m",
-          "5 m (alt)",
-          "7 m"
+          "6 m"
         ],
         "answer": 0,
         "explanation": "Same ratio height/shadow.",
@@ -232,31 +346,12 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_B_1c84e5a1",
-        "question": "6 m pole casts 9 m shadow. A 4 m pole casts shadow ≈ ?",
-        "options": [
-          "6 m",
-          "8 m",
-          "6 m (alt)",
-          "9 m"
-        ],
-        "answer": 0,
-        "explanation": "Same ratio height/shadow.",
-        "topic": 4,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t4_B",
-        "category_label": "Apps · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t4_B_f0b36dcb",
+        "id": "u9_t4_B_686ef1cf",
         "question": "9 m pole casts 3 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
+          "3 m",
           "1 m (alt)",
           "9 m",
-          "3 m",
           "1 m"
         ],
         "answer": 3,
@@ -270,13 +365,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_B_721774d5",
-        "question": "7 m pole casts 4 m shadow. A 4 m pole casts shadow ≈ ?",
+        "id": "u9_t4_B_7539e55d",
+        "question": "4 m pole casts 9 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
-          "4 m",
+          "6 m",
+          "8 m",
+          "9 m",
+          "4 m"
+        ],
+        "answer": 0,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_e53a9eb0",
+        "question": "6 m pole casts 3 m shadow. A 4 m pole casts shadow ≈ ?",
+        "options": [
+          "3 m",
           "2 m",
-          "2 m (alt)",
-          "7 m"
+          "6 m",
+          "4 m"
         ],
         "answer": 1,
         "explanation": "Same ratio height/shadow.",
@@ -289,13 +403,203 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_B_244b54dc",
-        "question": "3 m pole casts 9 m shadow. A 2 m pole casts shadow ≈ ?",
+        "id": "u9_t4_B_e2680e28",
+        "question": "9 m pole casts 5 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
+          "2 m",
+          "4 m",
+          "9 m",
+          "5 m"
+        ],
+        "answer": 0,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_3d34a9b1",
+        "question": "8 m pole casts 3 m shadow. A 5 m pole casts shadow ≈ ?",
+        "options": [
+          "1 m (alt)",
           "3 m",
+          "8 m",
+          "1 m"
+        ],
+        "answer": 3,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_6c441012",
+        "question": "9 m pole casts 7 m shadow. A 5 m pole casts shadow ≈ ?",
+        "options": [
+          "5 m",
+          "9 m",
+          "3 m",
+          "7 m"
+        ],
+        "answer": 2,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_93f1f516",
+        "question": "9 m pole casts 9 m shadow. A 5 m pole casts shadow ≈ ?",
+        "options": [
+          "5 m",
+          "7 m",
+          "5 m (alt)",
+          "9 m"
+        ],
+        "answer": 0,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_d0ce97c4",
+        "question": "3 m pole casts 3 m shadow. A 2 m pole casts shadow ≈ ?",
+        "options": [
+          "2 m (alt)",
+          "3 m",
+          "4 m",
+          "2 m"
+        ],
+        "answer": 3,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_a8f0d44c",
+        "question": "3 m pole casts 8 m shadow. A 2 m pole casts shadow ≈ ?",
+        "options": [
+          "8 m",
+          "5 m",
+          "7 m",
+          "3 m"
+        ],
+        "answer": 1,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_31170ee5",
+        "question": "7 m pole casts 3 m shadow. A 4 m pole casts shadow ≈ ?",
+        "options": [
+          "1 m (alt)",
+          "7 m",
+          "1 m",
+          "3 m"
+        ],
+        "answer": 2,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_09f18d92",
+        "question": "3 m pole casts 6 m shadow. A 2 m pole casts shadow ≈ ?",
+        "options": [
+          "6 m",
+          "3 m",
+          "4 m",
+          "4 m (alt)"
+        ],
+        "answer": 2,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_aaae609f",
+        "question": "6 m pole casts 9 m shadow. A 4 m pole casts shadow ≈ ?",
+        "options": [
           "9 m",
           "8 m",
+          "6 m (alt)",
           "6 m"
+        ],
+        "answer": 3,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_194b536c",
+        "question": "6 m pole casts 8 m shadow. A 4 m pole casts shadow ≈ ?",
+        "options": [
+          "5 m",
+          "7 m",
+          "8 m",
+          "6 m"
+        ],
+        "answer": 0,
+        "explanation": "Same ratio height/shadow.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_B_3769cd5e",
+        "question": "9 m pole casts 8 m shadow. A 5 m pole casts shadow ≈ ?",
+        "options": [
+          "6 m",
+          "8 m",
+          "9 m",
+          "4 m"
         ],
         "answer": 3,
         "explanation": "Same ratio height/shadow.",
@@ -310,13 +614,70 @@
     ],
     "C": [
       {
-        "id": "u9_t4_C_36fb3f43",
+        "id": "u9_t4_C_22d337b5",
+        "question": "From window 15 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "52 m",
+          "15 m",
+          "26 m",
+          "13 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_8c36b6e0",
+        "question": "From window 20 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "35 m",
+          "20 m",
+          "70 m",
+          "17 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_03e203d1",
         "question": "From window 30 m high, depression 30° to boat. Distance ≈ ?",
         "options": [
           "104 m",
-          "52 m",
           "26 m",
+          "52 m",
           "30 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_e4c5f028",
+        "question": "From window 28 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "24 m",
+          "48 m",
+          "96 m",
+          "28 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -329,13 +690,70 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_C_0d48b9b9",
-        "question": "From window 20 m high, depression 30° to boat. Distance ≈ ?",
+        "id": "u9_t4_C_c78ae2a3",
+        "question": "From window 44 m high, depression 30° to boat. Distance ≈ ?",
         "options": [
-          "20 m",
-          "17 m",
-          "35 m",
-          "70 m"
+          "44 m",
+          "152 m",
+          "38 m",
+          "76 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_783b8351",
+        "question": "From window 42 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "73 m",
+          "42 m",
+          "146 m",
+          "36 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_defaf239",
+        "question": "From window 12 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "12 m",
+          "10 m",
+          "42 m",
+          "21 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_35787703",
+        "question": "From window 43 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "37 m",
+          "43 m",
+          "74 m",
+          "148 m"
         ],
         "answer": 2,
         "explanation": "",
@@ -348,15 +766,376 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_C_6b095fb4",
-        "question": "From window 15 m high, depression 30° to boat. Distance ≈ ?",
+        "id": "u9_t4_C_e11ddb49",
+        "question": "From window 35 m high, depression 30° to boat. Distance ≈ ?",
         "options": [
-          "52 m",
-          "13 m",
+          "122 m",
+          "61 m",
+          "30 m",
+          "35 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_344a43cd",
+        "question": "From window 33 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "57 m",
+          "33 m",
+          "114 m",
+          "28 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_54cdf934",
+        "question": "From window 31 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "31 m",
+          "54 m",
+          "108 m",
+          "27 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_e0dc587f",
+        "question": "From window 32 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "55 m",
+          "110 m",
+          "32 m",
+          "27 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_cf72ae62",
+        "question": "From window 26 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
           "26 m",
-          "15 m"
+          "22 m",
+          "90 m",
+          "45 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_62d2fa92",
+        "question": "From window 37 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "32 m",
+          "37 m",
+          "64 m",
+          "128 m"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_73f5139f",
+        "question": "From window 36 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "62 m",
+          "124 m",
+          "31 m",
+          "36 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_9964eed7",
+        "question": "From window 17 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "58 m",
+          "14 m",
+          "29 m",
+          "17 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_675707e4",
+        "question": "From window 47 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "40 m",
+          "47 m",
+          "81 m",
+          "162 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_c3bcc06d",
+        "question": "From window 45 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "39 m",
+          "78 m",
+          "156 m",
+          "45 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_0e421bd7",
+        "question": "From window 50 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "50 m",
+          "43 m",
+          "87 m",
+          "174 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_04dea161",
+        "question": "From window 22 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "22 m",
+          "19 m",
+          "76 m",
+          "38 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_b4964e4a",
+        "question": "From window 34 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "34 m",
+          "118 m",
+          "29 m",
+          "59 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_1258601f",
+        "question": "From window 41 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "35 m",
+          "71 m",
+          "142 m",
+          "41 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_ceec9b00",
+        "question": "From window 19 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "16 m",
+          "19 m",
+          "66 m",
+          "33 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_3f0d1b58",
+        "question": "From window 13 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "46 m",
+          "13 m",
+          "11 m",
+          "23 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_222c1660",
+        "question": "From window 29 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "29 m",
+          "25 m",
+          "50 m",
+          "100 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_0f7fb8e6",
+        "question": "From window 27 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "23 m",
+          "47 m",
+          "94 m",
+          "27 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_9adc79cf",
+        "question": "From window 38 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "33 m",
+          "38 m",
+          "66 m",
+          "132 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_60e2199c",
+        "question": "From window 39 m high, depression 30° to boat. Distance ≈ ?",
+        "options": [
+          "68 m",
+          "34 m",
+          "39 m",
+          "136 m"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 4,
         "level": "C",
@@ -369,7 +1148,140 @@
     ],
     "D": [
       {
-        "id": "u9_t4_D_dcd6785d",
+        "id": "u9_t4_D_f4ccc22e",
+        "question": "Aeroplane at 1500 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "1500 m",
+          "30 m",
+          "750 m",
+          "3000 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_746e4326",
+        "question": "Aeroplane at 1000 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "1000 m",
+          "30 m",
+          "2000 m",
+          "500 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_ac0707c3",
+        "question": "Aeroplane at 1000 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "1000 m",
+          "15 m",
+          "500 m",
+          "2000 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_f6f7f831",
+        "question": "Aeroplane at 500 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "250 m",
+          "1000 m",
+          "20 m",
+          "500 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_a53291f0",
+        "question": "Aeroplane at 500 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "500 m",
+          "250 m",
+          "1000 m",
+          "15 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_9a588639",
+        "question": "Aeroplane at 1500 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "3000 m",
+          "750 m",
+          "20 m",
+          "1500 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_18b6f8c9",
+        "question": "Aeroplane at 1500 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "3000 m",
+          "750 m",
+          "1500 m",
+          "15 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_5d11f539",
         "question": "Aeroplane at 1000 m; depression 45° gives horizontal distance ≈ ?",
         "options": [
           "500 m",
@@ -388,106 +1300,11 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_D_5ea500c3",
+        "id": "u9_t4_D_1194e7e0",
         "question": "Aeroplane at 500 m; depression 45° gives horizontal distance ≈ ?",
         "options": [
-          "30 m",
-          "1000 m",
-          "500 m",
-          "250 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 4,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t4_D",
-        "category_label": "Apps · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t4_D_0a4a216e",
-        "question": "Aeroplane at 1500 m; depression 45° gives horizontal distance ≈ ?",
-        "options": [
-          "15 m",
-          "1500 m",
-          "750 m",
-          "3000 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 4,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t4_D",
-        "category_label": "Apps · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t4_D_09577afb",
-        "question": "Aeroplane at 1500 m; depression 45° gives horizontal distance ≈ ?",
-        "options": [
-          "750 m",
-          "3000 m",
-          "20 m",
-          "1500 m"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 4,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t4_D",
-        "category_label": "Apps · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t4_D_05c0ee15",
-        "question": "Aeroplane at 1000 m; depression 45° gives horizontal distance ≈ ?",
-        "options": [
-          "30 m",
-          "1000 m",
-          "2000 m",
-          "500 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 4,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t4_D",
-        "category_label": "Apps · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t4_D_2b898092",
-        "question": "Aeroplane at 1500 m; depression 45° gives horizontal distance ≈ ?",
-        "options": [
-          "30 m",
-          "1500 m",
-          "750 m",
-          "3000 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 4,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t4_D",
-        "category_label": "Apps · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t4_D_74bfe660",
-        "question": "Aeroplane at 500 m; depression 45° gives horizontal distance ≈ ?",
-        "options": [
-          "20 m",
           "250 m",
+          "30 m",
           "1000 m",
           "500 m"
         ],
@@ -502,13 +1319,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_D_b565df59",
-        "question": "Aeroplane at 1000 m; depression 45° gives horizontal distance ≈ ?",
+        "id": "u9_t4_D_376bec28",
+        "question": "Aeroplane at 1997 m; depression 45° gives horizontal distance ≈ ?",
         "options": [
-          "2000 m",
-          "15 m",
-          "1000 m",
-          "500 m"
+          "3994 m",
+          "998 m",
+          "40 m",
+          "1997 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_86c5b94d",
+        "question": "Aeroplane at 1733 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "3466 m",
+          "32 m",
+          "1733 m",
+          "866 m"
         ],
         "answer": 2,
         "explanation": "",
@@ -521,13 +1357,355 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_D_9ae69520",
-        "question": "Aeroplane at 500 m; depression 45° gives horizontal distance ≈ ?",
+        "id": "u9_t4_D_e2f4e0c9",
+        "question": "Aeroplane at 630 m; depression 45° gives horizontal distance ≈ ?",
         "options": [
-          "250 m",
-          "1000 m",
+          "315 m",
+          "49 m",
+          "630 m",
+          "1260 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_827485cf",
+        "question": "Aeroplane at 938 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "938 m",
+          "38 m",
+          "469 m",
+          "1876 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_81689b73",
+        "question": "Aeroplane at 1576 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "788 m",
+          "3152 m",
+          "1576 m",
+          "32 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_a7cf2d78",
+        "question": "Aeroplane at 527 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "23 m",
+          "1054 m",
+          "527 m",
+          "263 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_e742c5a0",
+        "question": "Aeroplane at 820 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "35 m",
+          "1640 m",
+          "820 m",
+          "410 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_d618edc2",
+        "question": "Aeroplane at 1048 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "26 m",
+          "2096 m",
+          "1048 m",
+          "524 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_a815ccb9",
+        "question": "Aeroplane at 631 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "10 m",
+          "315 m",
+          "631 m",
+          "1262 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_c986e77b",
+        "question": "Aeroplane at 1473 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "18 m",
+          "2946 m",
+          "736 m",
+          "1473 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_b1bf9cc2",
+        "question": "Aeroplane at 1191 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "595 m",
+          "1191 m",
+          "2382 m",
+          "18 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_00342144",
+        "question": "Aeroplane at 1381 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "2762 m",
+          "1381 m",
+          "49 m",
+          "690 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_6c778731",
+        "question": "Aeroplane at 1723 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "3446 m",
+          "1723 m",
+          "47 m",
+          "861 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_e2ef4843",
+        "question": "Aeroplane at 633 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "633 m",
+          "316 m",
+          "1266 m",
+          "23 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_593bcb61",
+        "question": "Aeroplane at 1150 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "575 m",
+          "2300 m",
+          "1150 m",
+          "45 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_12d8981f",
+        "question": "Aeroplane at 1634 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "1634 m",
+          "817 m",
+          "23 m",
+          "3268 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_b2cb50bb",
+        "question": "Aeroplane at 1640 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "43 m",
+          "820 m",
+          "3280 m",
+          "1640 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_554c3696",
+        "question": "Aeroplane at 1906 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "3812 m",
+          "953 m",
+          "1906 m",
+          "28 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_ef027721",
+        "question": "Aeroplane at 756 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "378 m",
+          "756 m",
           "15 m",
-          "500 m"
+          "1512 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_559aaed1",
+        "question": "Aeroplane at 882 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "441 m",
+          "48 m",
+          "1764 m",
+          "882 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_43df4506",
+        "question": "Aeroplane at 1011 m; depression 45° gives horizontal distance ≈ ?",
+        "options": [
+          "22 m",
+          "2022 m",
+          "505 m",
+          "1011 m"
         ],
         "answer": 3,
         "explanation": "",
@@ -542,15 +1720,15 @@
     ],
     "E": [
       {
-        "id": "u9_t4_E_d0313c99",
+        "id": "u9_t4_E_6efefdf5",
         "question": "Lighthouse 75 m high; elevation 30° from boat. Distance ≈ ?",
         "options": [
-          "43 m",
           "75 m",
-          "37 m",
-          "150 m"
+          "150 m",
+          "43 m",
+          "37 m"
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -561,13 +1739,89 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_E_ebd182be",
+        "id": "u9_t4_E_3104eee2",
         "question": "Lighthouse 50 m high; elevation 30° from boat. Distance ≈ ?",
         "options": [
-          "29 m",
-          "100 m",
+          "50 m",
           "25 m",
+          "100 m",
+          "29 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_e055c0c2",
+        "question": "Lighthouse 100 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "200 m",
+          "100 m",
+          "58 m",
           "50 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_a70c7934",
+        "question": "Lighthouse 60 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "30 m",
+          "120 m",
+          "60 m",
+          "35 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_2693695e",
+        "question": "Lighthouse 86 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "172 m",
+          "50 m",
+          "43 m",
+          "86 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_5e2bcfb1",
+        "question": "Lighthouse 42 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "24 m",
+          "21 m",
+          "84 m",
+          "42 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -580,15 +1834,452 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t4_E_a30c5a83",
-        "question": "Lighthouse 100 m high; elevation 30° from boat. Distance ≈ ?",
+        "id": "u9_t4_E_f349231d",
+        "question": "Lighthouse 67 m high; elevation 30° from boat. Distance ≈ ?",
         "options": [
-          "58 m",
-          "100 m",
-          "50 m",
-          "200 m"
+          "39 m",
+          "67 m",
+          "134 m",
+          "33 m"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_a73c6d36",
+        "question": "Lighthouse 30 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "60 m",
+          "30 m",
+          "17 m",
+          "15 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_c054d45a",
+        "question": "Lighthouse 113 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "113 m",
+          "226 m",
+          "56 m",
+          "65 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_a3d8932d",
+        "question": "Lighthouse 96 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "96 m",
+          "55 m",
+          "192 m",
+          "48 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_ea5ccf85",
+        "question": "Lighthouse 82 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "41 m",
+          "47 m",
+          "164 m",
+          "82 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_83858b10",
+        "question": "Lighthouse 56 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "28 m",
+          "32 m",
+          "112 m",
+          "56 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_84bf60be",
+        "question": "Lighthouse 34 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "17 m",
+          "34 m",
+          "68 m",
+          "20 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_dfad7481",
+        "question": "Lighthouse 39 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "19 m",
+          "23 m",
+          "78 m",
+          "39 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_38ad2bbc",
+        "question": "Lighthouse 87 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "43 m",
+          "174 m",
+          "87 m",
+          "50 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_057a1d65",
+        "question": "Lighthouse 78 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "156 m",
+          "39 m",
+          "45 m",
+          "78 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_9691311d",
+        "question": "Lighthouse 70 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "70 m",
+          "35 m",
+          "40 m",
+          "140 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_2c6f5574",
+        "question": "Lighthouse 112 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "224 m",
+          "56 m",
+          "65 m",
+          "112 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_e5d69954",
+        "question": "Lighthouse 80 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "80 m",
+          "46 m",
+          "160 m",
+          "40 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_24c7f63b",
+        "question": "Lighthouse 114 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "66 m",
+          "114 m",
+          "57 m",
+          "228 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_b38c8212",
+        "question": "Lighthouse 116 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "58 m",
+          "232 m",
+          "116 m",
+          "67 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_56398f23",
+        "question": "Lighthouse 51 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "51 m",
+          "29 m",
+          "25 m",
+          "102 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_ca9095b9",
+        "question": "Lighthouse 95 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "190 m",
+          "95 m",
+          "47 m",
+          "55 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_d38550bd",
+        "question": "Lighthouse 52 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "52 m",
+          "30 m",
+          "26 m",
+          "104 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_1a8c4b05",
+        "question": "Lighthouse 115 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "230 m",
+          "57 m",
+          "115 m",
+          "66 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_f14f5c2c",
+        "question": "Lighthouse 98 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "98 m",
+          "196 m",
+          "57 m",
+          "49 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_9aecf235",
+        "question": "Lighthouse 77 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "38 m",
+          "77 m",
+          "44 m",
+          "154 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_cf02613f",
+        "question": "Lighthouse 108 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "62 m",
+          "216 m",
+          "108 m",
+          "54 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_71f67ce6",
+        "question": "Lighthouse 47 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "23 m",
+          "27 m",
+          "94 m",
+          "47 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_E_b8fe1961",
+        "question": "Lighthouse 35 m high; elevation 30° from boat. Distance ≈ ?",
+        "options": [
+          "17 m",
+          "20 m",
+          "70 m",
+          "35 m"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 4,
         "level": "E",

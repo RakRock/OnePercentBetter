@@ -2,15 +2,53 @@
   "questions": {
     "A": [
       {
-        "id": "u8_t3_A_3194969e",
+        "id": "u8_t3_A_a78764dd",
         "question": "Fundamental trigonometric identity:",
         "options": [
-          "sin²θ + cos²θ = 1",
           "tan²θ + 1 = 0",
+          "sin θ + cos θ = 1",
           "sin²θ - cos²θ = 1",
-          "sin θ + cos θ = 1"
+          "sin²θ + cos²θ = 1"
         ],
-        "answer": 0,
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t3_A",
+        "category_label": "Identities · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_A_a91d8023",
+        "question": "Identity with cosec:",
+        "options": [
+          "cot θ = tan θ",
+          "1 + cot²θ = cosec²θ",
+          "cosec²θ = 1 - cot²θ",
+          "cot²θ = cosec²θ + 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t3_A",
+        "category_label": "Identities · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_A_1f424ba8",
+        "question": "Which is always true?",
+        "options": [
+          "tan θ = sec θ",
+          "1 + sin²θ = sec²θ",
+          "1 + tan²θ = sec²θ",
+          "sec²θ = tan²θ - 1"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 3,
         "level": "A",
@@ -23,15 +61,72 @@
     ],
     "B": [
       {
-        "id": "u8_t3_B_fe8bec88",
+        "id": "u8_t3_B_faa04d35",
+        "question": "sec²θ - tan²θ equals:",
+        "options": [
+          "1",
+          "cos²θ",
+          "0",
+          "sin²θ"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t3_B",
+        "category_label": "Identities · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_B_a420b350",
         "question": "Identity involving sec and tan:",
         "options": [
-          "tan²θ + cos²θ = 1",
-          "1 + tan²θ = sec²θ",
+          "1 + sin²θ = sec²θ",
           "sec²θ = tan²θ - 1",
-          "1 + sin²θ = sec²θ"
+          "tan²θ + cos²θ = 1",
+          "1 + tan²θ = sec²θ"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t3_B",
+        "category_label": "Identities · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_B_6300d9f4",
+        "question": "cosec²θ - cot²θ equals:",
+        "options": [
+          "tan²θ",
+          "1",
+          "0",
+          "sec²θ"
         ],
         "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t3_B",
+        "category_label": "Identities · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_B_c1748b9f",
+        "question": "1 - cos²θ equals:",
+        "options": [
+          "sin²θ",
+          "1",
+          "tan²θ",
+          "cos²θ"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 3,
         "level": "B",
@@ -44,15 +139,34 @@
     ],
     "C": [
       {
-        "id": "u8_t3_C_83ea8b77",
+        "id": "u8_t3_C_071a99f6",
         "question": "Identity involving cosec and cot:",
         "options": [
-          "cot θ = tan θ",
-          "cot²θ = cosec²θ + 1",
+          "cosec²θ = 1 - cot²θ",
           "1 + cot²θ = cosec²θ",
-          "cosec²θ = 1 - cot²θ"
+          "cot θ = tan θ",
+          "cot²θ = cosec²θ + 1"
         ],
-        "answer": 2,
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t3_C",
+        "category_label": "Identities · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_C_229874f9",
+        "question": "sec²θ - 1 equals:",
+        "options": [
+          "tan²θ",
+          "cos²θ",
+          "sin²θ",
+          "0"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 3,
         "level": "C",
@@ -65,15 +179,53 @@
     ],
     "D": [
       {
-        "id": "u8_t3_D_d0f2d6d1",
+        "id": "u8_t3_D_ee512d1e",
         "question": "1 - sin²θ simplifies to:",
         "options": [
           "sin²θ",
           "tan²θ",
+          "1",
+          "cos²θ"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t3_D",
+        "category_label": "Identities · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_D_6e75e688",
+        "question": "1 - cos²θ simplifies to:",
+        "options": [
+          "1",
+          "sin²θ",
           "cos²θ",
+          "tan²θ"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t3_D",
+        "category_label": "Identities · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_D_b4f95bff",
+        "question": "sec²θ - 1 simplifies to:",
+        "options": [
+          "sin²θ",
+          "tan²θ",
+          "tan²θ (alt)",
           "1"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 3,
         "level": "D",
@@ -86,51 +238,13 @@
     ],
     "E": [
       {
-        "id": "u8_t3_E_ec31d747",
+        "id": "u8_t3_E_53ae8045",
         "question": "Which simplification uses sin²θ + cos²θ = 1?",
         "options": [
+          "8² - 8² sin²θ = 8² cos²θ",
           "0 = 1",
-          "9 sin²θ = 9",
-          "sin²θ = 9",
-          "9² - 9² sin²θ = 9² cos²θ"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 8,
-        "category": "u8_t3_E",
-        "category_label": "Identities · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
-      },
-      {
-        "id": "u8_t3_E_94bd3628",
-        "question": "Which simplification uses sin²θ + cos²θ = 1?",
-        "options": [
-          "0 = 1",
-          "5² - 5² sin²θ = 5² cos²θ",
-          "5 sin²θ = 5",
-          "sin²θ = 5"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 8,
-        "category": "u8_t3_E",
-        "category_label": "Identities · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
-      },
-      {
-        "id": "u8_t3_E_6cf3ba40",
-        "question": "Which simplification uses sin²θ + cos²θ = 1?",
-        "options": [
-          "2² - 2² sin²θ = 2² cos²θ",
-          "sin²θ = 2",
-          "0 = 1",
-          "2 sin²θ = 2"
+          "sin²θ = 8",
+          "8 sin²θ = 8"
         ],
         "answer": 0,
         "explanation": "",
@@ -143,34 +257,15 @@
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       },
       {
-        "id": "u8_t3_E_afb20738",
+        "id": "u8_t3_E_5eaaf9fd",
         "question": "Which simplification uses sin²θ + cos²θ = 1?",
         "options": [
-          "sin²θ = 4",
-          "4 sin²θ = 4",
-          "4² - 4² sin²θ = 4² cos²θ",
-          "0 = 1"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 8,
-        "category": "u8_t3_E",
-        "category_label": "Identities · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
-      },
-      {
-        "id": "u8_t3_E_a6d66ee3",
-        "question": "Which simplification uses sin²θ + cos²θ = 1?",
-        "options": [
-          "sin²θ = 6",
           "0 = 1",
-          "6² - 6² sin²θ = 6² cos²θ",
-          "6 sin²θ = 6"
+          "7² - 7² sin²θ = 7² cos²θ",
+          "sin²θ = 7",
+          "7 sin²θ = 7"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 3,
         "level": "E",
@@ -181,12 +276,12 @@
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       },
       {
-        "id": "u8_t3_E_be13e033",
+        "id": "u8_t3_E_1a22c228",
         "question": "Which simplification uses sin²θ + cos²θ = 1?",
         "options": [
-          "8 sin²θ = 8",
-          "8² - 8² sin²θ = 8² cos²θ",
-          "sin²θ = 8",
+          "2 sin²θ = 2",
+          "2² - 2² sin²θ = 2² cos²θ",
+          "sin²θ = 2",
           "0 = 1"
         ],
         "answer": 1,
@@ -200,13 +295,51 @@
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       },
       {
-        "id": "u8_t3_E_e9f4c038",
+        "id": "u8_t3_E_1a63f295",
+        "question": "Which simplification uses sin²θ + cos²θ = 1?",
+        "options": [
+          "9² - 9² sin²θ = 9² cos²θ",
+          "0 = 1",
+          "9 sin²θ = 9",
+          "sin²θ = 9"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t3_E",
+        "category_label": "Identities · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_E_41027958",
         "question": "Which simplification uses sin²θ + cos²θ = 1?",
         "options": [
           "0 = 1",
+          "6² - 6² sin²θ = 6² cos²θ",
+          "sin²θ = 6",
+          "6 sin²θ = 6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t3_E",
+        "category_label": "Identities · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_E_83415c2f",
+        "question": "Which simplification uses sin²θ + cos²θ = 1?",
+        "options": [
+          "sin²θ = 3",
           "3 sin²θ = 3",
           "3² - 3² sin²θ = 3² cos²θ",
-          "sin²θ = 3"
+          "0 = 1"
         ],
         "answer": 2,
         "explanation": "",
@@ -219,13 +352,32 @@
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       },
       {
-        "id": "u8_t3_E_6c0eeba6",
+        "id": "u8_t3_E_62d8de7c",
         "question": "Which simplification uses sin²θ + cos²θ = 1?",
         "options": [
+          "sin²θ = 5",
           "0 = 1",
-          "sin²θ = 7",
-          "7 sin²θ = 7",
-          "7² - 7² sin²θ = 7² cos²θ"
+          "5² - 5² sin²θ = 5² cos²θ",
+          "5 sin²θ = 5"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t3_E",
+        "category_label": "Identities · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_E_3265ea8b",
+        "question": "Which simplification uses sin²θ + cos²θ = 1?",
+        "options": [
+          "4 sin²θ = 4",
+          "sin²θ = 4",
+          "0 = 1",
+          "4² - 4² sin²θ = 4² cos²θ"
         ],
         "answer": 3,
         "explanation": "",

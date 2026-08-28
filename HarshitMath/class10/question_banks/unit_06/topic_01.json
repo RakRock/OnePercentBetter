@@ -2,15 +2,53 @@
   "questions": {
     "A": [
       {
-        "id": "u6_t1_A_791bd2ca",
+        "id": "u6_t1_A_fa438418",
         "question": "Which statement about congruence and similarity is correct?",
         "options": [
           "All similar figures are congruent",
-          "All congruent figures are similar, but similar figures need not be congruent",
           "Congruent and similar mean the same",
+          "All congruent figures are similar, but similar figures need not be congruent",
           "No relation between them"
         ],
-        "answer": 1,
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t1_A",
+        "category_label": "Similar · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_A_63f23d0f",
+        "question": "Scale factor 1 between two similar figures means they are:",
+        "options": [
+          "Different shapes",
+          "Enlarged only",
+          "Not similar",
+          "Congruent"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t1_A",
+        "category_label": "Similar · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_A_efa562dc",
+        "question": "Two figures with the same shape and size are:",
+        "options": [
+          "Congruent",
+          "Always circles",
+          "Neither similar nor congruent",
+          "Similar only"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -23,13 +61,51 @@
     ],
     "B": [
       {
-        "id": "u6_t1_B_e298d757",
+        "id": "u6_t1_B_b9d84786",
         "question": "Scale factor between two similar figures is:",
         "options": [
           "The difference of perimeters",
           "Always 1",
-          "The ratio of corresponding side lengths (scale factor)",
-          "The sum of corresponding angles"
+          "The sum of corresponding angles",
+          "The ratio of corresponding side lengths (scale factor)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t1_B",
+        "category_label": "Similar · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_B_009a86fd",
+        "question": "If sides are in ratio 2:3, the scale factor (small → large) is:",
+        "options": [
+          "3:2",
+          "2:3",
+          "1:1",
+          "5:1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t1_B",
+        "category_label": "Similar · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_B_cfbc1c76",
+        "question": "Corresponding sides of similar polygons are:",
+        "options": [
+          "Perpendicular",
+          "Unrelated",
+          "Proportional",
+          "Always equal"
         ],
         "answer": 2,
         "explanation": "",
@@ -44,205 +120,15 @@
     ],
     "C": [
       {
-        "id": "u6_t1_C_f4c097b8",
-        "question": "Side AB = 3 cm in ΔABC and A′B′ = 12 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
-          "4:12",
-          "3:12",
-          "12:3",
-          "3:14"
-        ],
-        "answer": 1,
-        "explanation": "Corresponding sides are in ratio 3:12.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_f9c93d3a",
-        "question": "Side AB = 4 cm in ΔABC and A′B′ = 16 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
-          "4:18",
-          "5:16",
-          "4:16",
-          "16:4"
-        ],
-        "answer": 2,
-        "explanation": "Corresponding sides are in ratio 4:16.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_0df7e26b",
-        "question": "Side AB = 7 cm in ΔABC and A′B′ = 11 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
-          "7:13",
-          "8:11",
-          "7:11",
-          "11:7"
-        ],
-        "answer": 2,
-        "explanation": "Corresponding sides are in ratio 7:11.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_3678527d",
-        "question": "Side AB = 7 cm in ΔABC and A′B′ = 10 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
-          "7:10",
-          "8:10",
-          "10:7",
-          "7:12"
-        ],
-        "answer": 0,
-        "explanation": "Corresponding sides are in ratio 7:10.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_c5f5e7a0",
-        "question": "Side AB = 7 cm in ΔABC and A′B′ = 17 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
-          "7:17",
-          "7:19",
-          "8:17",
-          "17:7"
-        ],
-        "answer": 0,
-        "explanation": "Corresponding sides are in ratio 7:17.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_e4aaf981",
-        "question": "Side AB = 3 cm in ΔABC and A′B′ = 13 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
-          "13:3",
-          "4:13",
-          "3:13",
-          "3:15"
-        ],
-        "answer": 2,
-        "explanation": "Corresponding sides are in ratio 3:13.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_0bb078c6",
-        "question": "Side AB = 6 cm in ΔABC and A′B′ = 12 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
-          "6:12",
-          "7:12",
-          "6:14",
-          "12:6"
-        ],
-        "answer": 0,
-        "explanation": "Corresponding sides are in ratio 6:12.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_5877be29",
-        "question": "Side AB = 5 cm in ΔABC and A′B′ = 16 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
-          "5:16",
-          "6:16",
-          "16:5",
-          "5:18"
-        ],
-        "answer": 0,
-        "explanation": "Corresponding sides are in ratio 5:16.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_c162f309",
-        "question": "Side AB = 6 cm in ΔABC and A′B′ = 13 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
-          "13:6",
-          "6:13",
-          "7:13",
-          "6:15"
-        ],
-        "answer": 1,
-        "explanation": "Corresponding sides are in ratio 6:13.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_4b74407e",
-        "question": "Side AB = 7 cm in ΔABC and A′B′ = 18 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
-          "7:18",
-          "18:7",
-          "7:20",
-          "8:18"
-        ],
-        "answer": 0,
-        "explanation": "Corresponding sides are in ratio 7:18.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_7c798bc6",
+        "id": "u6_t1_C_a7801ccb",
         "question": "Side AB = 3 cm in ΔABC and A′B′ = 11 cm in similar ΔA′B′C′. Scale factor (small → large):",
         "options": [
+          "11:3",
           "3:11",
           "4:11",
-          "11:3",
           "3:13"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "Corresponding sides are in ratio 3:11.",
         "topic": 1,
         "level": "C",
@@ -253,35 +139,16 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_C_52e81cbc",
-        "question": "Side AB = 3 cm in ΔABC and A′B′ = 15 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "id": "u6_t1_C_88aa242c",
+        "question": "Side AB = 4 cm in ΔABC and A′B′ = 12 cm in similar ΔA′B′C′. Scale factor (small → large):",
         "options": [
-          "4:15",
-          "3:17",
-          "3:15",
-          "15:3"
-        ],
-        "answer": 2,
-        "explanation": "Corresponding sides are in ratio 3:15.",
-        "topic": 1,
-        "level": "C",
-        "unit_id": 6,
-        "category": "u6_t1_C",
-        "category_label": "Similar · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_C_34e36354",
-        "question": "Side AB = 5 cm in ΔABC and A′B′ = 12 cm in similar ΔA′B′C′. Scale factor (small → large):",
-        "options": [
+          "4:14",
+          "12:4",
           "5:12",
-          "12:5",
-          "6:12",
-          "5:14"
+          "4:12"
         ],
-        "answer": 0,
-        "explanation": "Corresponding sides are in ratio 5:12.",
+        "answer": 3,
+        "explanation": "Corresponding sides are in ratio 4:12.",
         "topic": 1,
         "level": "C",
         "unit_id": 6,
@@ -291,15 +158,15 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_C_438b259d",
+        "id": "u6_t1_C_6308bc9d",
         "question": "Side AB = 4 cm in ΔABC and A′B′ = 15 cm in similar ΔA′B′C′. Scale factor (small → large):",
         "options": [
-          "15:4",
-          "5:15",
           "4:15",
-          "4:17"
+          "5:15",
+          "4:17",
+          "15:4"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "Corresponding sides are in ratio 4:15.",
         "topic": 1,
         "level": "C",
@@ -310,16 +177,510 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_C_e9d70769",
-        "question": "Side AB = 4 cm in ΔABC and A′B′ = 12 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "id": "u6_t1_C_8d08a79a",
+        "question": "Side AB = 6 cm in ΔABC and A′B′ = 10 cm in similar ΔA′B′C′. Scale factor (small → large):",
         "options": [
-          "5:12",
-          "4:14",
-          "4:12",
-          "12:4"
+          "7:10",
+          "6:12",
+          "6:10",
+          "10:6"
         ],
         "answer": 2,
-        "explanation": "Corresponding sides are in ratio 4:12.",
+        "explanation": "Corresponding sides are in ratio 6:10.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_03c0a67b",
+        "question": "Side AB = 3 cm in ΔABC and A′B′ = 14 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "4:14",
+          "3:16",
+          "3:14",
+          "14:3"
+        ],
+        "answer": 2,
+        "explanation": "Corresponding sides are in ratio 3:14.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_b58a0135",
+        "question": "Side AB = 6 cm in ΔABC and A′B′ = 16 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "6:16",
+          "7:16",
+          "16:6",
+          "6:18"
+        ],
+        "answer": 0,
+        "explanation": "Corresponding sides are in ratio 6:16.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_f7b9b50d",
+        "question": "Side AB = 3 cm in ΔABC and A′B′ = 18 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "18:3",
+          "3:20",
+          "4:18",
+          "3:18"
+        ],
+        "answer": 3,
+        "explanation": "Corresponding sides are in ratio 3:18.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_07caf7b1",
+        "question": "Side AB = 5 cm in ΔABC and A′B′ = 12 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "5:14",
+          "5:12",
+          "6:12",
+          "12:5"
+        ],
+        "answer": 1,
+        "explanation": "Corresponding sides are in ratio 5:12.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_8fa3a01f",
+        "question": "Side AB = 7 cm in ΔABC and A′B′ = 18 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "18:7",
+          "7:18",
+          "7:20",
+          "8:18"
+        ],
+        "answer": 1,
+        "explanation": "Corresponding sides are in ratio 7:18.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_15b5a80c",
+        "question": "Side AB = 6 cm in ΔABC and A′B′ = 15 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "15:6",
+          "6:17",
+          "6:15",
+          "7:15"
+        ],
+        "answer": 2,
+        "explanation": "Corresponding sides are in ratio 6:15.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_21101204",
+        "question": "Side AB = 5 cm in ΔABC and A′B′ = 14 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "6:14",
+          "5:14",
+          "5:16",
+          "14:5"
+        ],
+        "answer": 1,
+        "explanation": "Corresponding sides are in ratio 5:14.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_8733f9aa",
+        "question": "Side AB = 6 cm in ΔABC and A′B′ = 17 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "6:19",
+          "6:17",
+          "17:6",
+          "7:17"
+        ],
+        "answer": 1,
+        "explanation": "Corresponding sides are in ratio 6:17.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_a8154144",
+        "question": "Side AB = 3 cm in ΔABC and A′B′ = 12 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "12:3",
+          "4:12",
+          "3:14",
+          "3:12"
+        ],
+        "answer": 3,
+        "explanation": "Corresponding sides are in ratio 3:12.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_1a723df7",
+        "question": "Side AB = 3 cm in ΔABC and A′B′ = 13 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "3:15",
+          "3:13",
+          "13:3",
+          "4:13"
+        ],
+        "answer": 1,
+        "explanation": "Corresponding sides are in ratio 3:13.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_d56155c2",
+        "question": "Side AB = 6 cm in ΔABC and A′B′ = 11 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "11:6",
+          "6:11",
+          "7:11",
+          "6:13"
+        ],
+        "answer": 1,
+        "explanation": "Corresponding sides are in ratio 6:11.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_c8c8a49c",
+        "question": "Side AB = 3 cm in ΔABC and A′B′ = 16 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "3:16",
+          "3:18",
+          "16:3",
+          "4:16"
+        ],
+        "answer": 0,
+        "explanation": "Corresponding sides are in ratio 3:16.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_78ffe57d",
+        "question": "Side AB = 4 cm in ΔABC and A′B′ = 11 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "4:13",
+          "11:4",
+          "4:11",
+          "5:11"
+        ],
+        "answer": 2,
+        "explanation": "Corresponding sides are in ratio 4:11.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_b2efee34",
+        "question": "Side AB = 6 cm in ΔABC and A′B′ = 18 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "6:20",
+          "6:18",
+          "7:18",
+          "18:6"
+        ],
+        "answer": 1,
+        "explanation": "Corresponding sides are in ratio 6:18.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_47ad412b",
+        "question": "Side AB = 5 cm in ΔABC and A′B′ = 17 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "6:17",
+          "17:5",
+          "5:17",
+          "5:19"
+        ],
+        "answer": 2,
+        "explanation": "Corresponding sides are in ratio 5:17.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_358fd7bc",
+        "question": "Side AB = 5 cm in ΔABC and A′B′ = 13 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "5:13",
+          "5:15",
+          "6:13",
+          "13:5"
+        ],
+        "answer": 0,
+        "explanation": "Corresponding sides are in ratio 5:13.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_0e60b7b3",
+        "question": "Side AB = 5 cm in ΔABC and A′B′ = 11 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "6:11",
+          "5:11",
+          "11:5",
+          "5:13"
+        ],
+        "answer": 1,
+        "explanation": "Corresponding sides are in ratio 5:11.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_5b89f79f",
+        "question": "Side AB = 7 cm in ΔABC and A′B′ = 17 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "7:19",
+          "7:17",
+          "8:17",
+          "17:7"
+        ],
+        "answer": 1,
+        "explanation": "Corresponding sides are in ratio 7:17.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_92354632",
+        "question": "Side AB = 8 cm in ΔABC and A′B′ = 11 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "11:8",
+          "8:11",
+          "9:11",
+          "8:13"
+        ],
+        "answer": 1,
+        "explanation": "Corresponding sides are in ratio 8:11.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_dfb1180d",
+        "question": "Side AB = 8 cm in ΔABC and A′B′ = 18 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "8:18",
+          "8:20",
+          "9:18",
+          "18:8"
+        ],
+        "answer": 0,
+        "explanation": "Corresponding sides are in ratio 8:18.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_28397d69",
+        "question": "Side AB = 8 cm in ΔABC and A′B′ = 15 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "15:8",
+          "9:15",
+          "8:17",
+          "8:15"
+        ],
+        "answer": 3,
+        "explanation": "Corresponding sides are in ratio 8:15.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_41299c63",
+        "question": "Side AB = 4 cm in ΔABC and A′B′ = 14 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "4:14",
+          "5:14",
+          "4:16",
+          "14:4"
+        ],
+        "answer": 0,
+        "explanation": "Corresponding sides are in ratio 4:14.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_cce2f457",
+        "question": "Side AB = 7 cm in ΔABC and A′B′ = 16 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "7:16",
+          "16:7",
+          "7:18",
+          "8:16"
+        ],
+        "answer": 0,
+        "explanation": "Corresponding sides are in ratio 7:16.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_30bab16b",
+        "question": "Side AB = 7 cm in ΔABC and A′B′ = 14 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "14:7",
+          "7:16",
+          "7:14",
+          "8:14"
+        ],
+        "answer": 2,
+        "explanation": "Corresponding sides are in ratio 7:14.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_bc8d92ed",
+        "question": "Side AB = 3 cm in ΔABC and A′B′ = 17 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "3:17",
+          "3:19",
+          "4:17",
+          "17:3"
+        ],
+        "answer": 0,
+        "explanation": "Corresponding sides are in ratio 3:17.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t1_C",
+        "category_label": "Similar · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_C_3ddb4581",
+        "question": "Side AB = 3 cm in ΔABC and A′B′ = 10 cm in similar ΔA′B′C′. Scale factor (small → large):",
+        "options": [
+          "4:10",
+          "10:3",
+          "3:10",
+          "3:12"
+        ],
+        "answer": 2,
+        "explanation": "Corresponding sides are in ratio 3:10.",
         "topic": 1,
         "level": "C",
         "unit_id": 6,
@@ -331,13 +692,13 @@
     ],
     "D": [
       {
-        "id": "u6_t1_D_845397d0",
-        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 6 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_14975d1a",
+        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 4 cm, the corresponding larger side is:",
         "options": [
-          "6 cm",
-          "3 cm",
-          "12 cm",
-          "14 cm"
+          "None of these",
+          "4 cm (alt)",
+          "4 cm",
+          "6 cm"
         ],
         "answer": 2,
         "explanation": "",
@@ -350,13 +711,13 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_c12ee459",
-        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 9 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_6a54c0b1",
+        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 9 cm, the corresponding larger side is:",
         "options": [
+          "18 cm",
           "9 cm",
-          "None of these",
-          "11 cm",
-          "9 cm (alt)"
+          "4 cm",
+          "20 cm"
         ],
         "answer": 0,
         "explanation": "",
@@ -369,13 +730,32 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_6f9fb974",
-        "question": "Two similar triangles have sides in ratio 4:3. If the smaller side is 5 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_2e05d357",
+        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 7 cm, the corresponding larger side is:",
         "options": [
-          "3 cm",
-          "5 cm",
+          "7 cm",
+          "None of these",
+          "9 cm",
+          "7 cm (alt)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_b1567455",
+        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 9 cm, the corresponding larger side is:",
+        "options": [
+          "15 cm",
           "6 cm",
-          "8 cm"
+          "13 cm",
+          "9 cm"
         ],
         "answer": 2,
         "explanation": "",
@@ -388,13 +768,32 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_668e4f48",
-        "question": "Two similar triangles have sides in ratio 2:3. If the smaller side is 4 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_f7a0a82f",
+        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 4 cm, the corresponding larger side is:",
         "options": [
           "4 cm",
-          "2 cm (alt)",
-          "6 cm",
+          "10 cm",
+          "8 cm",
           "2 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_1e3ab7de",
+        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 8 cm, the corresponding larger side is:",
+        "options": [
+          "18 cm",
+          "8 cm",
+          "4 cm",
+          "16 cm"
         ],
         "answer": 3,
         "explanation": "",
@@ -407,12 +806,259 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_8adea7ad",
-        "question": "Two similar triangles have sides in ratio 4:3. If the smaller side is 8 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_1fd37a61",
+        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 4 cm, the corresponding larger side is:",
         "options": [
           "6 cm",
-          "12 cm",
+          "4 cm",
+          "2 cm",
+          "8 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_750e6c51",
+        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 8 cm, the corresponding larger side is:",
+        "options": [
           "8 cm",
+          "8 cm (alt)",
+          "10 cm",
+          "None of these"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_fdad5259",
+        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 7 cm, the corresponding larger side is:",
+        "options": [
+          "16 cm",
+          "14 cm",
+          "7 cm",
+          "3 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_c7f056b6",
+        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 6 cm, the corresponding larger side is:",
+        "options": [
+          "4 cm",
+          "9 cm",
+          "6 cm",
+          "11 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_ecb50794",
+        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 6 cm, the corresponding larger side is:",
+        "options": [
+          "6 cm",
+          "14 cm",
+          "12 cm",
+          "3 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_19b22605",
+        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 5 cm, the corresponding larger side is:",
+        "options": [
+          "None of these",
+          "5 cm",
+          "5 cm (alt)",
+          "7 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_cf45eb18",
+        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 9 cm, the corresponding larger side is:",
+        "options": [
+          "9 cm (alt)",
+          "9 cm",
+          "None of these",
+          "11 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_b160d5df",
+        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 8 cm, the corresponding larger side is:",
+        "options": [
+          "10 cm",
+          "8 cm (alt)",
+          "8 cm",
+          "None of these"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_b93fe9bd",
+        "question": "Two similar triangles have sides in ratio 2:3. If the smaller side is 8 cm, the corresponding larger side is:",
+        "options": [
+          "7 cm",
+          "8 cm",
+          "5 cm",
+          "12 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_48c232b5",
+        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 7 cm, the corresponding larger side is:",
+        "options": [
+          "9 cm",
+          "7 cm",
+          "7 cm (alt)",
+          "None of these"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_01bc92a4",
+        "question": "Two similar triangles have sides in ratio 2:3. If the smaller side is 6 cm, the corresponding larger side is:",
+        "options": [
+          "6 cm",
+          "4 cm (alt)",
+          "4 cm",
+          "9 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_68799853",
+        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 9 cm, the corresponding larger side is:",
+        "options": [
+          "None of these",
+          "9 cm (alt)",
+          "11 cm",
+          "9 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_49469562",
+        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 6 cm, the corresponding larger side is:",
+        "options": [
+          "8 cm",
+          "None of these",
+          "6 cm",
+          "6 cm (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_0114d74f",
+        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 5 cm, the corresponding larger side is:",
+        "options": [
+          "2 cm",
+          "5 cm",
+          "12 cm",
           "10 cm"
         ],
         "answer": 3,
@@ -426,32 +1072,13 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_fd13f839",
-        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 6 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_d1c04486",
+        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 7 cm, the corresponding larger side is:",
         "options": [
-          "None of these",
-          "6 cm",
-          "8 cm",
-          "6 cm (alt)"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "D",
-        "unit_id": 6,
-        "category": "u6_t1_D",
-        "category_label": "Similar · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_D_6dc87bec",
-        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 5 cm, the corresponding larger side is:",
-        "options": [
-          "7 cm",
-          "9 cm",
-          "5 cm",
-          "3 cm"
+          "10 cm",
+          "12 cm",
+          "4 cm",
+          "7 cm"
         ],
         "answer": 0,
         "explanation": "",
@@ -464,13 +1091,13 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_dbb0cd48",
-        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 9 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_c0068a9c",
+        "question": "Two similar triangles have sides in ratio 4:3. If the smaller side is 4 cm, the corresponding larger side is:",
         "options": [
           "4 cm",
-          "18 cm",
-          "9 cm",
-          "20 cm"
+          "5 cm",
+          "7 cm",
+          "3 cm"
         ],
         "answer": 1,
         "explanation": "",
@@ -483,11 +1110,68 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_546c7aaa",
-        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 5 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_56c3b45e",
+        "question": "Two similar triangles have sides in ratio 4:3. If the smaller side is 5 cm, the corresponding larger side is:",
         "options": [
-          "None of these",
+          "8 cm",
+          "6 cm",
+          "5 cm",
+          "3 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_326567d6",
+        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 5 cm, the corresponding larger side is:",
+        "options": [
+          "3 cm",
+          "5 cm",
+          "9 cm",
+          "7 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_a76ef099",
+        "question": "Two similar triangles have sides in ratio 4:3. If the smaller side is 9 cm, the corresponding larger side is:",
+        "options": [
+          "9 cm",
+          "12 cm",
+          "14 cm",
+          "6 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t1_D",
+        "category_label": "Similar · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_D_efde3524",
+        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 5 cm, the corresponding larger side is:",
+        "options": [
           "5 cm (alt)",
+          "None of these",
           "7 cm",
           "5 cm"
         ],
@@ -502,13 +1186,13 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_52f073d8",
-        "question": "Two similar triangles have sides in ratio 2:3. If the smaller side is 9 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_cc9e9590",
+        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 4 cm, the corresponding larger side is:",
         "options": [
-          "13 cm",
-          "8 cm",
-          "6 cm",
-          "9 cm"
+          "4 cm (alt)",
+          "None of these",
+          "4 cm",
+          "6 cm"
         ],
         "answer": 2,
         "explanation": "",
@@ -521,12 +1205,12 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_e7a335d3",
-        "question": "Two similar triangles have sides in ratio 2:3. If the smaller side is 8 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_de822fb1",
+        "question": "Two similar triangles have sides in ratio 2:3. If the smaller side is 9 cm, the corresponding larger side is:",
         "options": [
-          "5 cm",
-          "7 cm",
-          "12 cm",
+          "6 cm",
+          "13 cm",
+          "9 cm",
           "8 cm"
         ],
         "answer": 0,
@@ -540,32 +1224,13 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_478f26d1",
-        "question": "Two similar triangles have sides in ratio 2:3. If the smaller side is 5 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_28a86b1b",
+        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 8 cm, the corresponding larger side is:",
         "options": [
-          "3 cm (alt)",
-          "3 cm",
+          "14 cm",
           "5 cm",
-          "7 cm"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "D",
-        "unit_id": 6,
-        "category": "u6_t1_D",
-        "category_label": "Similar · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_D_441e3357",
-        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 9 cm, the corresponding larger side is:",
-        "options": [
-          "9 cm (alt)",
-          "None of these",
-          "9 cm",
-          "11 cm"
+          "12 cm",
+          "8 cm"
         ],
         "answer": 2,
         "explanation": "",
@@ -578,34 +1243,15 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t1_D_da99e3e0",
-        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 8 cm, the corresponding larger side is:",
+        "id": "u6_t1_D_8104e14e",
+        "question": "Two similar triangles have sides in ratio 4:3. If the smaller side is 7 cm, the corresponding larger side is:",
         "options": [
-          "10 cm",
-          "8 cm (alt)",
-          "None of these",
-          "8 cm"
+          "7 cm",
+          "5 cm",
+          "9 cm",
+          "11 cm"
         ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 1,
-        "level": "D",
-        "unit_id": 6,
-        "category": "u6_t1_D",
-        "category_label": "Similar · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t1_D_43a6d7dd",
-        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 6 cm, the corresponding larger side is:",
-        "options": [
-          "6 cm (alt)",
-          "8 cm",
-          "None of these",
-          "6 cm"
-        ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 1,
         "level": "D",
@@ -618,15 +1264,34 @@
     ],
     "E": [
       {
-        "id": "u6_t1_E_726176e3",
+        "id": "u6_t1_E_ab0fb048",
         "question": "Two polygons with the same number of sides are similar if:",
         "options": [
-          "Equal sides only",
-          "Equal corresponding angles AND proportional corresponding sides",
           "Equal angles only",
-          "Same perimeter"
+          "Equal sides only",
+          "Same perimeter",
+          "Equal corresponding angles AND proportional corresponding sides"
         ],
-        "answer": 1,
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t1_E",
+        "category_label": "Similar · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t1_E_5f7e201b",
+        "question": "AAA criterion guarantees:",
+        "options": [
+          "Similarity of triangles",
+          "Congruence always",
+          "Equal perimeters",
+          "Same area"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "E",

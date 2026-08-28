@@ -2,32 +2,13 @@
   "questions": {
     "A": [
       {
-        "id": "u14_t4_A_836399ab",
+        "id": "u14_t4_A_9bb8f996",
         "question": "Bag: 4 red, 6 blue balls. P(red) = ?",
         "options": [
+          "6/10",
+          "1/2",
           "4/10",
-          "1/2",
-          "0",
-          "6/10"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 4,
-        "level": "A",
-        "unit_id": 14,
-        "category": "u14_t4_A",
-        "category_label": "Mixed · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 14 Probability"
-      },
-      {
-        "id": "u14_t4_A_d06c6608",
-        "question": "Bag: 5 red, 3 blue balls. P(red) = ?",
-        "options": [
-          "0",
-          "1/2",
-          "5/8",
-          "3/8"
+          "0"
         ],
         "answer": 2,
         "explanation": "",
@@ -40,11 +21,68 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t4_A_740b292b",
-        "question": "Bag: 3 red, 5 blue balls. P(red) = ?",
+        "id": "u14_t4_A_9ab4b50b",
+        "question": "Bag: 9 red, 12 blue balls. P(red) = ?",
         "options": [
-          "5/8",
-          "3/8",
+          "0",
+          "12/21",
+          "9/21",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_24ebeb93",
+        "question": "Bag: 2 red, 3 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "3/5",
+          "2/5",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_e3e6b1e3",
+        "question": "Bag: 2 red, 12 blue balls. P(red) = ?",
+        "options": [
+          "2/14",
+          "12/14",
+          "0",
+          "1/2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_1814baa9",
+        "question": "Bag: 4 red, 12 blue balls. P(red) = ?",
+        "options": [
+          "12/16",
+          "4/16",
           "1/2",
           "0"
         ],
@@ -57,19 +95,494 @@
         "category_label": "Mixed · Level A",
         "source": "template",
         "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_1d37ddf0",
+        "question": "Bag: 10 red, 2 blue balls. P(red) = ?",
+        "options": [
+          "2/12",
+          "1/2",
+          "10/12",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_b8c0484d",
+        "question": "Bag: 4 red, 7 blue balls. P(red) = ?",
+        "options": [
+          "4/11",
+          "1/2",
+          "0",
+          "7/11"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_42517975",
+        "question": "Bag: 5 red, 7 blue balls. P(red) = ?",
+        "options": [
+          "1/2",
+          "5/12",
+          "0",
+          "7/12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_6e66d740",
+        "question": "Bag: 3 red, 9 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "9/12",
+          "1/2",
+          "3/12"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_ab468a1c",
+        "question": "Bag: 11 red, 8 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "11/19",
+          "1/2",
+          "8/19"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_86e9ccaa",
+        "question": "Bag: 11 red, 5 blue balls. P(red) = ?",
+        "options": [
+          "1/2",
+          "11/16",
+          "5/16",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_387cb22c",
+        "question": "Bag: 5 red, 8 blue balls. P(red) = ?",
+        "options": [
+          "8/13",
+          "1/2",
+          "5/13",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_197d72f6",
+        "question": "Bag: 2 red, 10 blue balls. P(red) = ?",
+        "options": [
+          "2/12",
+          "10/12",
+          "0",
+          "1/2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_3daeca9e",
+        "question": "Bag: 6 red, 10 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "10/16",
+          "1/2",
+          "6/16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_0721c818",
+        "question": "Bag: 7 red, 4 blue balls. P(red) = ?",
+        "options": [
+          "7/11",
+          "0",
+          "1/2",
+          "4/11"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_2a72ec06",
+        "question": "Bag: 10 red, 11 blue balls. P(red) = ?",
+        "options": [
+          "11/21",
+          "0",
+          "1/2",
+          "10/21"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_7cb1cc88",
+        "question": "Bag: 11 red, 2 blue balls. P(red) = ?",
+        "options": [
+          "1/2",
+          "11/13",
+          "2/13",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_6cc1f05c",
+        "question": "Bag: 5 red, 2 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "2/7",
+          "5/7",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_a81e2139",
+        "question": "Bag: 6 red, 12 blue balls. P(red) = ?",
+        "options": [
+          "1/2",
+          "0",
+          "12/18",
+          "6/18"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_92688c0a",
+        "question": "Bag: 3 red, 5 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "1/2",
+          "3/8",
+          "5/8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_783ef6d5",
+        "question": "Bag: 6 red, 6 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "6/12",
+          "1/2",
+          "6/12 (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_1a02d29a",
+        "question": "Bag: 5 red, 4 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "4/9",
+          "1/2",
+          "5/9"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_342fe04d",
+        "question": "Bag: 12 red, 10 blue balls. P(red) = ?",
+        "options": [
+          "1/2",
+          "0",
+          "12/22",
+          "10/22"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_dfceadee",
+        "question": "Bag: 12 red, 2 blue balls. P(red) = ?",
+        "options": [
+          "1/2",
+          "2/14",
+          "12/14",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_13aaf6ca",
+        "question": "Bag: 12 red, 11 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "12/23",
+          "1/2",
+          "11/23"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_fd0d33b5",
+        "question": "Bag: 10 red, 4 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "1/2",
+          "4/14",
+          "10/14"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_e5bdd64b",
+        "question": "Bag: 4 red, 11 blue balls. P(red) = ?",
+        "options": [
+          "1/2",
+          "0",
+          "4/15",
+          "11/15"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_eac9b41d",
+        "question": "Bag: 7 red, 9 blue balls. P(red) = ?",
+        "options": [
+          "9/16",
+          "1/2",
+          "7/16",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_2738182c",
+        "question": "Bag: 4 red, 2 blue balls. P(red) = ?",
+        "options": [
+          "2/6",
+          "1/2",
+          "0",
+          "4/6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_A_b1b079b6",
+        "question": "Bag: 11 red, 11 blue balls. P(red) = ?",
+        "options": [
+          "0",
+          "1/2",
+          "11/22 (alt)",
+          "11/22"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t4_A",
+        "category_label": "Mixed · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
       }
     ],
     "B": [
       {
-        "id": "u14_t4_B_70853be9",
-        "question": "Two draws without replacement from bag (4R, 6B). P(both red) = ?",
+        "id": "u14_t4_B_87b442ef",
+        "question": "Two draws without replacement from bag (11R, 4B). P(both red) = ?",
         "options": [
-          "2/15",
           "0",
-          "1",
-          "2/5"
+          "11/15",
+          "11/21",
+          "1"
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 4,
         "level": "B",
@@ -80,12 +593,88 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t4_B_25ce08c5",
-        "question": "Two draws without replacement from bag (5R, 3B). P(both red) = ?",
+        "id": "u14_t4_B_4d4d5762",
+        "question": "Two draws without replacement from bag (7R, 4B). P(both red) = ?",
         "options": [
           "1",
-          "5/8",
+          "0",
+          "21/55",
+          "7/11"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_dfcb6a89",
+        "question": "Two draws without replacement from bag (10R, 4B). P(both red) = ?",
+        "options": [
+          "0",
+          "1",
+          "5/7",
+          "45/91"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_9fb61ccf",
+        "question": "Two draws without replacement from bag (10R, 7B). P(both red) = ?",
+        "options": [
+          "10/17",
+          "45/136",
+          "1",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_ba47d98a",
+        "question": "Two draws without replacement from bag (3R, 5B). P(both red) = ?",
+        "options": [
+          "1",
+          "3/28",
+          "0",
+          "3/8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_0c50f25e",
+        "question": "Two draws without replacement from bag (5R, 9B). P(both red) = ?",
+        "options": [
+          "1",
           "5/14",
+          "10/91",
           "0"
         ],
         "answer": 2,
@@ -99,15 +688,452 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t4_B_c865a125",
-        "question": "Two draws without replacement from bag (3R, 5B). P(both red) = ?",
+        "id": "u14_t4_B_e824512b",
+        "question": "Two draws without replacement from bag (2R, 11B). P(both red) = ?",
+        "options": [
+          "1",
+          "2/13",
+          "0",
+          "1/78"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_884741b0",
+        "question": "Two draws without replacement from bag (12R, 11B). P(both red) = ?",
         "options": [
           "0",
+          "6/23",
+          "1",
+          "12/23"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_588e2ea6",
+        "question": "Two draws without replacement from bag (8R, 11B). P(both red) = ?",
+        "options": [
+          "8/19",
+          "28/171",
+          "1",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_a2653483",
+        "question": "Two draws without replacement from bag (10R, 8B). P(both red) = ?",
+        "options": [
+          "1",
+          "5/17",
+          "5/9",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_65227a11",
+        "question": "Two draws without replacement from bag (8R, 5B). P(both red) = ?",
+        "options": [
+          "1",
+          "0",
+          "8/13",
+          "14/39"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_28649293",
+        "question": "Two draws without replacement from bag (7R, 12B). P(both red) = ?",
+        "options": [
+          "7/19",
+          "1",
+          "0",
+          "7/57"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_e986cc04",
+        "question": "Two draws without replacement from bag (11R, 8B). P(both red) = ?",
+        "options": [
+          "1",
+          "55/171",
+          "0",
+          "11/19"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_351b37cc",
+        "question": "Two draws without replacement from bag (11R, 11B). P(both red) = ?",
+        "options": [
+          "5/21",
+          "0",
+          "1",
+          "1/2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_6f68bb18",
+        "question": "Two draws without replacement from bag (6R, 10B). P(both red) = ?",
+        "options": [
+          "1",
           "3/8",
-          "3/28",
-          "1"
+          "1/8",
+          "0"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_cd92b470",
+        "question": "Two draws without replacement from bag (9R, 10B). P(both red) = ?",
+        "options": [
+          "9/19",
+          "1",
+          "0",
+          "4/19"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_677c4ec1",
+        "question": "Two draws without replacement from bag (8R, 3B). P(both red) = ?",
+        "options": [
+          "28/55",
+          "1",
+          "8/11",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_700f57f2",
+        "question": "Two draws without replacement from bag (9R, 2B). P(both red) = ?",
+        "options": [
+          "36/55",
+          "9/11",
+          "1",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_134b9329",
+        "question": "Two draws without replacement from bag (8R, 6B). P(both red) = ?",
+        "options": [
+          "4/13",
+          "1",
+          "4/7",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_5955d753",
+        "question": "Two draws without replacement from bag (12R, 5B). P(both red) = ?",
+        "options": [
+          "0",
+          "12/17",
+          "1",
+          "33/68"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_c474842c",
+        "question": "Two draws without replacement from bag (7R, 6B). P(both red) = ?",
+        "options": [
+          "7/13",
+          "1",
+          "0",
+          "7/26"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_8c694239",
+        "question": "Two draws without replacement from bag (6R, 12B). P(both red) = ?",
+        "options": [
+          "1/3",
+          "1",
+          "5/51",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_a765f812",
+        "question": "Two draws without replacement from bag (3R, 9B). P(both red) = ?",
+        "options": [
+          "0",
+          "1",
+          "1/22",
+          "1/4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_5edb7beb",
+        "question": "Two draws without replacement from bag (11R, 6B). P(both red) = ?",
+        "options": [
+          "1",
+          "55/136",
+          "11/17",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_64a31483",
+        "question": "Two draws without replacement from bag (4R, 2B). P(both red) = ?",
+        "options": [
+          "2/3",
+          "2/5",
+          "1",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_c22e3f84",
+        "question": "Two draws without replacement from bag (5R, 8B). P(both red) = ?",
+        "options": [
+          "0",
+          "5/13",
+          "1",
+          "5/39"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_bedc281a",
+        "question": "Two draws without replacement from bag (12R, 4B). P(both red) = ?",
+        "options": [
+          "0",
+          "1",
+          "11/20",
+          "3/4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_8cce0ace",
+        "question": "Two draws without replacement from bag (5R, 4B). P(both red) = ?",
+        "options": [
+          "5/18",
+          "0",
+          "1",
+          "5/9"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_c4630715",
+        "question": "Two draws without replacement from bag (8R, 2B). P(both red) = ?",
+        "options": [
+          "28/45",
+          "1",
+          "0",
+          "4/5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_B_f54da239",
+        "question": "Two draws without replacement from bag (11R, 12B). P(both red) = ?",
+        "options": [
+          "5/23",
+          "1",
+          "0",
+          "11/23"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 4,
         "level": "B",
@@ -120,15 +1146,34 @@
     ],
     "C": [
       {
-        "id": "u14_t4_C_8a91f6d6",
+        "id": "u14_t4_C_2b4183cc",
         "question": "Geometric probability on a region uses:",
         "options": [
-          "Perimeter ratio",
           "Volume ratio",
+          "Favourable area / Total area",
           "Always 1/2",
-          "Favourable area / Total area"
+          "Perimeter ratio"
         ],
-        "answer": 3,
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t4_C",
+        "category_label": "Mixed · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_C_0eb20e3b",
+        "question": "Dart hits a circular target uniformly. P(hitting centre bull) uses:",
+        "options": [
+          "Diameter ratio",
+          "Area ratio",
+          "Perimeter ratio",
+          "Always 1/2"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 4,
         "level": "C",
@@ -141,13 +1186,32 @@
     ],
     "D": [
       {
-        "id": "u14_t4_D_8a24db07",
+        "id": "u14_t4_D_02da9056",
         "question": "Two fair coins tossed. P(exactly one head) = ?",
         "options": [
-          "0",
-          "1/2",
+          "1/4",
           "1",
-          "1/4"
+          "1/2",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 14,
+        "category": "u14_t4_D",
+        "category_label": "Mixed · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_D_9204d3ec",
+        "question": "Three fair coins tossed. P(exactly two heads) = ?",
+        "options": [
+          "1/4",
+          "3/8",
+          "1/8",
+          "1/2"
         ],
         "answer": 1,
         "explanation": "",
@@ -162,12 +1226,145 @@
     ],
     "E": [
       {
-        "id": "u14_t4_E_6f20e46d",
-        "question": "Bag 4 red, 6 blue. P(blue) = ?",
+        "id": "u14_t4_E_95956c38",
+        "question": "Bag 6 red, 6 blue. P(blue) = ?",
         "options": [
+          "6/12",
           "1",
-          "6/10",
-          "4/10",
+          "0",
+          "6/12 (alt)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_580bfbee",
+        "question": "Bag 6 red, 8 blue. P(blue) = ?",
+        "options": [
+          "0",
+          "6/14",
+          "1",
+          "8/14"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_5f9fdd50",
+        "question": "Bag 4 red, 11 blue. P(blue) = ?",
+        "options": [
+          "11/15",
+          "0",
+          "1",
+          "4/15"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_688ab0d7",
+        "question": "Bag 4 red, 12 blue. P(blue) = ?",
+        "options": [
+          "4/16",
+          "0",
+          "1",
+          "12/16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_5d67a154",
+        "question": "Bag 6 red, 2 blue. P(blue) = ?",
+        "options": [
+          "2/8",
+          "0",
+          "6/8",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_7ee28bba",
+        "question": "Bag 4 red, 8 blue. P(blue) = ?",
+        "options": [
+          "4/12",
+          "0",
+          "1",
+          "8/12"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_fb070d38",
+        "question": "Bag 11 red, 5 blue. P(blue) = ?",
+        "options": [
+          "5/16",
+          "0",
+          "11/16",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_01ce8487",
+        "question": "Bag 11 red, 12 blue. P(blue) = ?",
+        "options": [
+          "11/23",
+          "12/23",
+          "1",
           "0"
         ],
         "answer": 1,
@@ -181,12 +1378,107 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t4_E_1b781ec1",
-        "question": "Bag 3 red, 5 blue. P(blue) = ?",
+        "id": "u14_t4_E_254db290",
+        "question": "Bag 2 red, 6 blue. P(blue) = ?",
         "options": [
-          "3/8",
+          "2/8",
+          "1",
           "0",
-          "5/8",
+          "6/8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_11858594",
+        "question": "Bag 2 red, 8 blue. P(blue) = ?",
+        "options": [
+          "2/10",
+          "8/10",
+          "0",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_a48fb43f",
+        "question": "Bag 8 red, 6 blue. P(blue) = ?",
+        "options": [
+          "0",
+          "1",
+          "6/14",
+          "8/14"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_0709976b",
+        "question": "Bag 5 red, 7 blue. P(blue) = ?",
+        "options": [
+          "7/12",
+          "5/12",
+          "0",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_a25ea255",
+        "question": "Bag 7 red, 4 blue. P(blue) = ?",
+        "options": [
+          "4/11",
+          "7/11",
+          "0",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_68b75e70",
+        "question": "Bag 12 red, 5 blue. P(blue) = ?",
+        "options": [
+          "12/17",
+          "0",
+          "5/17",
           "1"
         ],
         "answer": 2,
@@ -200,15 +1492,300 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t4_E_e4e6dbdf",
-        "question": "Bag 5 red, 3 blue. P(blue) = ?",
+        "id": "u14_t4_E_6c7a72dc",
+        "question": "Bag 6 red, 10 blue. P(blue) = ?",
         "options": [
-          "5/8",
-          "0",
+          "6/16",
           "1",
-          "3/8"
+          "10/16",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_b354af72",
+        "question": "Bag 7 red, 11 blue. P(blue) = ?",
+        "options": [
+          "1",
+          "7/18",
+          "0",
+          "11/18"
         ],
         "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_a46de054",
+        "question": "Bag 4 red, 9 blue. P(blue) = ?",
+        "options": [
+          "0",
+          "4/13",
+          "1",
+          "9/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_68863a5a",
+        "question": "Bag 5 red, 5 blue. P(blue) = ?",
+        "options": [
+          "5/10 (alt)",
+          "1",
+          "5/10",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_191ee41e",
+        "question": "Bag 3 red, 10 blue. P(blue) = ?",
+        "options": [
+          "10/13",
+          "1",
+          "0",
+          "3/13"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_67d0a1b4",
+        "question": "Bag 4 red, 7 blue. P(blue) = ?",
+        "options": [
+          "7/11",
+          "0",
+          "4/11",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_f20ea8e5",
+        "question": "Bag 12 red, 8 blue. P(blue) = ?",
+        "options": [
+          "1",
+          "12/20",
+          "8/20",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_cf281062",
+        "question": "Bag 5 red, 11 blue. P(blue) = ?",
+        "options": [
+          "1",
+          "0",
+          "11/16",
+          "5/16"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_a11cfa54",
+        "question": "Bag 9 red, 2 blue. P(blue) = ?",
+        "options": [
+          "2/11",
+          "9/11",
+          "1",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_e3c54946",
+        "question": "Bag 12 red, 6 blue. P(blue) = ?",
+        "options": [
+          "0",
+          "12/18",
+          "6/18",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_f617a1eb",
+        "question": "Bag 12 red, 4 blue. P(blue) = ?",
+        "options": [
+          "0",
+          "12/16",
+          "1",
+          "4/16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_da88dbda",
+        "question": "Bag 7 red, 6 blue. P(blue) = ?",
+        "options": [
+          "6/13",
+          "0",
+          "7/13",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_012d70ef",
+        "question": "Bag 9 red, 7 blue. P(blue) = ?",
+        "options": [
+          "1",
+          "0",
+          "9/16",
+          "7/16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_1836c673",
+        "question": "Bag 9 red, 12 blue. P(blue) = ?",
+        "options": [
+          "12/21",
+          "9/21",
+          "1",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_73534d14",
+        "question": "Bag 7 red, 9 blue. P(blue) = ?",
+        "options": [
+          "1",
+          "0",
+          "7/16",
+          "9/16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t4_E",
+        "category_label": "Mixed · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t4_E_6004fc7e",
+        "question": "Bag 5 red, 12 blue. P(blue) = ?",
+        "options": [
+          "0",
+          "1",
+          "12/17",
+          "5/17"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 4,
         "level": "E",

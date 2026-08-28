@@ -2,15 +2,34 @@
   "questions": {
     "A": [
       {
-        "id": "u10_t3_A_a4f6bd5e",
+        "id": "u10_t3_A_143dfc82",
+        "question": "If OP = 13 cm and r = 5 cm, tangent length = ?",
+        "options": [
+          "5 cm",
+          "13 cm",
+          "12 cm",
+          "18 cm"
+        ],
+        "answer": 2,
+        "explanation": "√(169-25)=12.",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 10,
+        "category": "u10_t3_A",
+        "category_label": "Length · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_A_6b9d6038",
         "question": "Length of tangent from point P at distance OP from centre:",
         "options": [
-          "√(OP² - r²)",
-          "OP + r",
           "r² + OP²",
+          "OP + r",
+          "√(OP² - r²)",
           "OP - r"
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 3,
         "level": "A",
@@ -23,32 +42,13 @@
     ],
     "B": [
       {
-        "id": "u10_t3_B_c8dbbd7e",
-        "question": "Radius 8 cm, OP = 17 cm. Tangent length = ?",
+        "id": "u10_t3_B_39b5dafc",
+        "question": "Radius 16 cm, OP = 34 cm. Tangent length = ?",
         "options": [
-          "8 cm",
-          "15 cm",
-          "15 cm (alt)",
-          "17 cm"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 3,
-        "level": "B",
-        "unit_id": 10,
-        "category": "u10_t3_B",
-        "category_label": "Length · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 10 Circles"
-      },
-      {
-        "id": "u10_t3_B_facba9fd",
-        "question": "Radius 6 cm, OP = 10 cm. Tangent length = ?",
-        "options": [
-          "6 cm",
-          "8 cm (alt)",
-          "8 cm",
-          "10 cm"
+          "34 cm",
+          "16 cm",
+          "30 cm",
+          "32 cm"
         ],
         "answer": 2,
         "explanation": "",
@@ -61,7 +61,463 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_B_beb33e1c",
+        "id": "u10_t3_B_895facc6",
+        "question": "Radius 14 cm, OP = 50 cm. Tangent length = ?",
+        "options": [
+          "48 cm",
+          "48 cm (alt)",
+          "50 cm",
+          "14 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_73acde0e",
+        "question": "Radius 20 cm, OP = 52 cm. Tangent length = ?",
+        "options": [
+          "52 cm",
+          "50 cm",
+          "48 cm",
+          "20 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_767d4249",
+        "question": "Radius 24 cm, OP = 51 cm. Tangent length = ?",
+        "options": [
+          "47 cm",
+          "51 cm",
+          "24 cm",
+          "45 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_5f493a96",
+        "question": "Radius 6 cm, OP = 10 cm. Tangent length = ?",
+        "options": [
+          "8 cm (alt)",
+          "10 cm",
+          "8 cm",
+          "6 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_2be778a2",
+        "question": "Radius 4 cm, OP = 5 cm. Tangent length = ?",
+        "options": [
+          "3 cm (alt)",
+          "4 cm",
+          "5 cm",
+          "3 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_484bebaf",
+        "question": "Radius 24 cm, OP = 40 cm. Tangent length = ?",
+        "options": [
+          "40 cm",
+          "34 cm",
+          "32 cm",
+          "24 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_42a337f8",
+        "question": "Radius 21 cm, OP = 35 cm. Tangent length = ?",
+        "options": [
+          "28 cm",
+          "30 cm",
+          "35 cm",
+          "21 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_e2596357",
+        "question": "Radius 21 cm, OP = 29 cm. Tangent length = ?",
+        "options": [
+          "29 cm",
+          "22 cm",
+          "20 cm",
+          "21 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_168a8acf",
+        "question": "Radius 9 cm, OP = 41 cm. Tangent length = ?",
+        "options": [
+          "9 cm",
+          "40 cm",
+          "41 cm",
+          "42 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_2d389dc8",
+        "question": "Radius 12 cm, OP = 37 cm. Tangent length = ?",
+        "options": [
+          "12 cm",
+          "35 cm (alt)",
+          "35 cm",
+          "37 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_ca813b3d",
+        "question": "Radius 12 cm, OP = 13 cm. Tangent length = ?",
+        "options": [
+          "5 cm",
+          "7 cm",
+          "13 cm",
+          "12 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_83a3c57d",
+        "question": "Radius 24 cm, OP = 25 cm. Tangent length = ?",
+        "options": [
+          "7 cm",
+          "25 cm",
+          "9 cm",
+          "24 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_aa27e848",
+        "question": "Radius 24 cm, OP = 30 cm. Tangent length = ?",
+        "options": [
+          "30 cm",
+          "18 cm",
+          "24 cm",
+          "20 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_071dbd16",
+        "question": "Radius 8 cm, OP = 17 cm. Tangent length = ?",
+        "options": [
+          "17 cm",
+          "15 cm (alt)",
+          "8 cm",
+          "15 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_fbd316e1",
+        "question": "Radius 15 cm, OP = 25 cm. Tangent length = ?",
+        "options": [
+          "15 cm",
+          "22 cm",
+          "25 cm",
+          "20 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_9d067e2e",
+        "question": "Radius 3 cm, OP = 5 cm. Tangent length = ?",
+        "options": [
+          "6 cm",
+          "4 cm",
+          "3 cm",
+          "5 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_65333169",
+        "question": "Radius 16 cm, OP = 20 cm. Tangent length = ?",
+        "options": [
+          "16 cm",
+          "14 cm",
+          "12 cm",
+          "20 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_dbcb9311",
+        "question": "Radius 12 cm, OP = 20 cm. Tangent length = ?",
+        "options": [
+          "16 cm",
+          "20 cm",
+          "18 cm",
+          "12 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_21e6f59f",
+        "question": "Radius 20 cm, OP = 25 cm. Tangent length = ?",
+        "options": [
+          "15 cm",
+          "20 cm",
+          "17 cm",
+          "25 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_bbc5e74b",
+        "question": "Radius 12 cm, OP = 15 cm. Tangent length = ?",
+        "options": [
+          "15 cm",
+          "12 cm",
+          "11 cm",
+          "9 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_5fd6067c",
+        "question": "Radius 20 cm, OP = 29 cm. Tangent length = ?",
+        "options": [
+          "23 cm",
+          "21 cm",
+          "20 cm",
+          "29 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_df631754",
+        "question": "Radius 15 cm, OP = 39 cm. Tangent length = ?",
+        "options": [
+          "38 cm",
+          "36 cm",
+          "39 cm",
+          "15 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_238563aa",
+        "question": "Radius 9 cm, OP = 15 cm. Tangent length = ?",
+        "options": [
+          "9 cm",
+          "12 cm",
+          "15 cm",
+          "14 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_7e002157",
+        "question": "Radius 18 cm, OP = 30 cm. Tangent length = ?",
+        "options": [
+          "26 cm",
+          "24 cm",
+          "30 cm",
+          "18 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_208a33f9",
         "question": "Radius 5 cm, OP = 13 cm. Tangent length = ?",
         "options": [
           "13 cm",
@@ -80,13 +536,32 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_B_d5defc7d",
+        "id": "u10_t3_B_34b0bfc5",
         "question": "Radius 7 cm, OP = 25 cm. Tangent length = ?",
         "options": [
           "26 cm",
+          "25 cm",
           "24 cm",
-          "7 cm",
-          "25 cm"
+          "7 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_314c1a75",
+        "question": "Radius 10 cm, OP = 26 cm. Tangent length = ?",
+        "options": [
+          "10 cm",
+          "24 cm",
+          "24 cm (alt)",
+          "26 cm"
         ],
         "answer": 1,
         "explanation": "",
@@ -99,34 +574,34 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_B_a82d675e",
-        "question": "Radius 3 cm, OP = 5 cm. Tangent length = ?",
+        "id": "u10_t3_B_c6b4fce3",
+        "question": "Radius 15 cm, OP = 17 cm. Tangent length = ?",
         "options": [
-          "3 cm",
-          "4 cm",
-          "5 cm",
-          "6 cm"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 3,
-        "level": "B",
-        "unit_id": 10,
-        "category": "u10_t3_B",
-        "category_label": "Length · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 10 Circles"
-      },
-      {
-        "id": "u10_t3_B_8031de0f",
-        "question": "Radius 9 cm, OP = 15 cm. Tangent length = ?",
-        "options": [
-          "12 cm",
-          "14 cm",
+          "17 cm",
           "15 cm",
-          "9 cm"
+          "10 cm",
+          "8 cm"
         ],
-        "answer": 0,
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_bf76ee45",
+        "question": "Radius 8 cm, OP = 10 cm. Tangent length = ?",
+        "options": [
+          "8 cm",
+          "6 cm",
+          "6 cm (alt)",
+          "10 cm"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 3,
         "level": "B",
@@ -139,35 +614,16 @@
     ],
     "C": [
       {
-        "id": "u10_t3_C_932feb6a",
-        "question": "Tangent length 24 cm from point 25 cm from centre. Radius = ?",
+        "id": "u10_t3_C_0cdc33e3",
+        "question": "Tangent length 12 cm from point 20 cm from centre. Radius = ?",
         "options": [
-          "25 cm",
-          "24 cm",
-          "32 cm",
-          "7 cm"
-        ],
-        "answer": 3,
-        "explanation": "r = √(25² - 24²) = 7.",
-        "topic": 3,
-        "level": "C",
-        "unit_id": 10,
-        "category": "u10_t3_C",
-        "category_label": "Length · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 10 Circles"
-      },
-      {
-        "id": "u10_t3_C_0ec31557",
-        "question": "Tangent length 12 cm from point 15 cm from centre. Radius = ?",
-        "options": [
-          "24 cm",
-          "9 cm",
-          "15 cm",
-          "12 cm"
+          "12 cm",
+          "16 cm",
+          "36 cm",
+          "20 cm"
         ],
         "answer": 1,
-        "explanation": "r = √(15² - 12²) = 9.",
+        "explanation": "r = √(20² - 12²) = 16.",
         "topic": 3,
         "level": "C",
         "unit_id": 10,
@@ -177,16 +633,54 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_C_e9e77ec3",
-        "question": "Tangent length 15 cm from point 17 cm from centre. Radius = ?",
+        "id": "u10_t3_C_2e53b2dd",
+        "question": "Tangent length 16 cm from point 20 cm from centre. Radius = ?",
         "options": [
-          "15 cm",
-          "25 cm",
-          "8 cm",
-          "17 cm"
+          "32 cm",
+          "12 cm",
+          "20 cm",
+          "16 cm"
+        ],
+        "answer": 1,
+        "explanation": "r = √(20² - 16²) = 12.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_6d51e147",
+        "question": "Tangent length 28 cm from point 35 cm from centre. Radius = ?",
+        "options": [
+          "56 cm",
+          "21 cm",
+          "28 cm",
+          "35 cm"
+        ],
+        "answer": 1,
+        "explanation": "r = √(35² - 28²) = 21.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_c0214638",
+        "question": "Tangent length 45 cm from point 51 cm from centre. Radius = ?",
+        "options": [
+          "51 cm",
+          "45 cm",
+          "24 cm",
+          "75 cm"
         ],
         "answer": 2,
-        "explanation": "r = √(17² - 15²) = 8.",
+        "explanation": "r = √(51² - 45²) = 24.",
         "topic": 3,
         "level": "C",
         "unit_id": 10,
@@ -196,13 +690,51 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_C_cde999e5",
+        "id": "u10_t3_C_3fb853af",
+        "question": "Tangent length 6 cm from point 10 cm from centre. Radius = ?",
+        "options": [
+          "10 cm",
+          "8 cm",
+          "6 cm",
+          "18 cm"
+        ],
+        "answer": 1,
+        "explanation": "r = √(10² - 6²) = 8.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_efba52e3",
+        "question": "Tangent length 36 cm from point 39 cm from centre. Radius = ?",
+        "options": [
+          "15 cm",
+          "54 cm",
+          "36 cm",
+          "39 cm"
+        ],
+        "answer": 0,
+        "explanation": "r = √(39² - 36²) = 15.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_0df93a74",
         "question": "Tangent length 12 cm from point 13 cm from centre. Radius = ?",
         "options": [
+          "12 cm",
           "18 cm",
-          "13 cm",
           "5 cm",
-          "12 cm"
+          "13 cm"
         ],
         "answer": 2,
         "explanation": "r = √(13² - 12²) = 5.",
@@ -215,15 +747,338 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_C_4c2dd875",
-        "question": "Tangent length 4 cm from point 5 cm from centre. Radius = ?",
+        "id": "u10_t3_C_6a64e1a6",
+        "question": "Tangent length 8 cm from point 17 cm from centre. Radius = ?",
         "options": [
-          "3 cm",
-          "8 cm",
-          "4 cm",
-          "5 cm"
+          "15 cm",
+          "32 cm",
+          "17 cm",
+          "8 cm"
         ],
         "answer": 0,
+        "explanation": "r = √(17² - 8²) = 15.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_484bf4ba",
+        "question": "Tangent length 7 cm from point 25 cm from centre. Radius = ?",
+        "options": [
+          "25 cm",
+          "7 cm",
+          "49 cm",
+          "24 cm"
+        ],
+        "answer": 3,
+        "explanation": "r = √(25² - 7²) = 24.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_b77f94b2",
+        "question": "Tangent length 48 cm from point 52 cm from centre. Radius = ?",
+        "options": [
+          "72 cm",
+          "48 cm",
+          "20 cm",
+          "52 cm"
+        ],
+        "answer": 2,
+        "explanation": "r = √(52² - 48²) = 20.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_f9831a87",
+        "question": "Tangent length 3 cm from point 5 cm from centre. Radius = ?",
+        "options": [
+          "5 cm",
+          "9 cm",
+          "3 cm",
+          "4 cm"
+        ],
+        "answer": 3,
+        "explanation": "r = √(5² - 3²) = 4.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_df2e819b",
+        "question": "Tangent length 32 cm from point 40 cm from centre. Radius = ?",
+        "options": [
+          "64 cm",
+          "24 cm",
+          "32 cm",
+          "40 cm"
+        ],
+        "answer": 1,
+        "explanation": "r = √(40² - 32²) = 24.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_6642e78e",
+        "question": "Tangent length 24 cm from point 30 cm from centre. Radius = ?",
+        "options": [
+          "24 cm",
+          "18 cm",
+          "48 cm",
+          "30 cm"
+        ],
+        "answer": 1,
+        "explanation": "r = √(30² - 24²) = 18.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_496f9531",
+        "question": "Tangent length 40 cm from point 41 cm from centre. Radius = ?",
+        "options": [
+          "40 cm",
+          "50 cm",
+          "41 cm",
+          "9 cm"
+        ],
+        "answer": 3,
+        "explanation": "r = √(41² - 40²) = 9.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_ea5e0b5b",
+        "question": "Tangent length 15 cm from point 17 cm from centre. Radius = ?",
+        "options": [
+          "17 cm",
+          "25 cm",
+          "15 cm",
+          "8 cm"
+        ],
+        "answer": 3,
+        "explanation": "r = √(17² - 15²) = 8.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_2bfe1493",
+        "question": "Tangent length 15 cm from point 25 cm from centre. Radius = ?",
+        "options": [
+          "25 cm",
+          "20 cm",
+          "15 cm",
+          "45 cm"
+        ],
+        "answer": 1,
+        "explanation": "r = √(25² - 15²) = 20.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_32aa3428",
+        "question": "Tangent length 9 cm from point 15 cm from centre. Radius = ?",
+        "options": [
+          "15 cm",
+          "9 cm",
+          "12 cm",
+          "27 cm"
+        ],
+        "answer": 2,
+        "explanation": "r = √(15² - 9²) = 12.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_ccde730a",
+        "question": "Tangent length 30 cm from point 34 cm from centre. Radius = ?",
+        "options": [
+          "16 cm",
+          "34 cm",
+          "50 cm",
+          "30 cm"
+        ],
+        "answer": 0,
+        "explanation": "r = √(34² - 30²) = 16.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_e0ed4588",
+        "question": "Tangent length 18 cm from point 30 cm from centre. Radius = ?",
+        "options": [
+          "54 cm",
+          "30 cm",
+          "18 cm",
+          "24 cm"
+        ],
+        "answer": 3,
+        "explanation": "r = √(30² - 18²) = 24.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_5843b0c3",
+        "question": "Tangent length 8 cm from point 10 cm from centre. Radius = ?",
+        "options": [
+          "10 cm",
+          "16 cm",
+          "8 cm",
+          "6 cm"
+        ],
+        "answer": 3,
+        "explanation": "r = √(10² - 8²) = 6.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_da218296",
+        "question": "Tangent length 20 cm from point 25 cm from centre. Radius = ?",
+        "options": [
+          "15 cm",
+          "40 cm",
+          "20 cm",
+          "25 cm"
+        ],
+        "answer": 0,
+        "explanation": "r = √(25² - 20²) = 15.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_c39f170b",
+        "question": "Tangent length 24 cm from point 26 cm from centre. Radius = ?",
+        "options": [
+          "10 cm",
+          "24 cm",
+          "36 cm",
+          "26 cm"
+        ],
+        "answer": 0,
+        "explanation": "r = √(26² - 24²) = 10.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_06b8accb",
+        "question": "Tangent length 20 cm from point 29 cm from centre. Radius = ?",
+        "options": [
+          "29 cm",
+          "21 cm",
+          "20 cm",
+          "50 cm"
+        ],
+        "answer": 1,
+        "explanation": "r = √(29² - 20²) = 21.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_8cd9b272",
+        "question": "Tangent length 5 cm from point 13 cm from centre. Radius = ?",
+        "options": [
+          "5 cm",
+          "13 cm",
+          "25 cm",
+          "12 cm"
+        ],
+        "answer": 3,
+        "explanation": "r = √(13² - 5²) = 12.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_c91baa7b",
+        "question": "Tangent length 4 cm from point 5 cm from centre. Radius = ?",
+        "options": [
+          "5 cm",
+          "8 cm",
+          "4 cm",
+          "3 cm"
+        ],
+        "answer": 3,
         "explanation": "r = √(5² - 4²) = 3.",
         "topic": 3,
         "level": "C",
@@ -234,16 +1089,92 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_C_b306cfca",
-        "question": "Tangent length 8 cm from point 10 cm from centre. Radius = ?",
+        "id": "u10_t3_C_47b45a4e",
+        "question": "Tangent length 48 cm from point 50 cm from centre. Radius = ?",
         "options": [
-          "10 cm",
-          "16 cm",
-          "6 cm",
-          "8 cm"
+          "50 cm",
+          "48 cm",
+          "14 cm",
+          "64 cm"
         ],
         "answer": 2,
-        "explanation": "r = √(10² - 8²) = 6.",
+        "explanation": "r = √(50² - 48²) = 14.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_9f169f3d",
+        "question": "Tangent length 21 cm from point 29 cm from centre. Radius = ?",
+        "options": [
+          "20 cm",
+          "49 cm",
+          "21 cm",
+          "29 cm"
+        ],
+        "answer": 0,
+        "explanation": "r = √(29² - 21²) = 20.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_93bc6810",
+        "question": "Tangent length 12 cm from point 15 cm from centre. Radius = ?",
+        "options": [
+          "15 cm",
+          "12 cm",
+          "24 cm",
+          "9 cm"
+        ],
+        "answer": 3,
+        "explanation": "r = √(15² - 12²) = 9.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_71cb8bce",
+        "question": "Tangent length 24 cm from point 25 cm from centre. Radius = ?",
+        "options": [
+          "24 cm",
+          "7 cm",
+          "25 cm",
+          "32 cm"
+        ],
+        "answer": 1,
+        "explanation": "r = √(25² - 24²) = 7.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t3_C",
+        "category_label": "Length · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_C_c0abc945",
+        "question": "Tangent length 10 cm from point 26 cm from centre. Radius = ?",
+        "options": [
+          "24 cm",
+          "50 cm",
+          "26 cm",
+          "10 cm"
+        ],
+        "answer": 0,
+        "explanation": "r = √(26² - 10²) = 24.",
         "topic": 3,
         "level": "C",
         "unit_id": 10,
@@ -255,15 +1186,34 @@
     ],
     "D": [
       {
-        "id": "u10_t3_D_a6177e25",
+        "id": "u10_t3_D_3789e914",
         "question": "Chord of larger circle touches smaller concentric circle at P. Then:",
         "options": [
+          "OP = AP",
           "AP = 2BP",
           "AB = AP",
-          "AP = BP",
-          "OP = AP"
+          "AP = BP"
         ],
-        "answer": 2,
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t3_D",
+        "category_label": "Length · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_D_110a0dd0",
+        "question": "Tangent from external point is ⊥ to radius at contact. So ∠ between radius and tangent =",
+        "options": [
+          "60°",
+          "90°",
+          "45°",
+          "0°"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 3,
         "level": "D",
@@ -276,15 +1226,15 @@
     ],
     "E": [
       {
-        "id": "u10_t3_E_0631c45c",
+        "id": "u10_t3_E_6449633f",
         "question": "From point 10 cm from centre, radius 6 cm. Tangent length = ?",
         "options": [
-          "8 cm",
           "11 cm",
-          "10 cm",
-          "6 cm"
+          "6 cm",
+          "8 cm",
+          "10 cm"
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 3,
         "level": "E",
@@ -295,12 +1245,69 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_E_e7f31458",
+        "id": "u10_t3_E_39d51810",
+        "question": "From point 37 cm from centre, radius 12 cm. Tangent length = ?",
+        "options": [
+          "38 cm",
+          "12 cm",
+          "35 cm",
+          "37 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_f0d0c28e",
+        "question": "From point 50 cm from centre, radius 14 cm. Tangent length = ?",
+        "options": [
+          "51 cm",
+          "50 cm",
+          "48 cm",
+          "14 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_febfe84d",
+        "question": "From point 25 cm from centre, radius 20 cm. Tangent length = ?",
+        "options": [
+          "18 cm",
+          "25 cm",
+          "20 cm",
+          "15 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_d8e667b4",
         "question": "From point 13 cm from centre, radius 5 cm. Tangent length = ?",
         "options": [
           "12 cm",
-          "5 cm",
           "15 cm",
+          "5 cm",
           "13 cm"
         ],
         "answer": 0,
@@ -314,34 +1321,15 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_E_e5c7a043",
-        "question": "From point 5 cm from centre, radius 3 cm. Tangent length = ?",
+        "id": "u10_t3_E_2968b1d4",
+        "question": "From point 39 cm from centre, radius 15 cm. Tangent length = ?",
         "options": [
-          "5 cm",
-          "7 cm",
-          "4 cm",
-          "3 cm"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 10,
-        "category": "u10_t3_E",
-        "category_label": "Length · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 10 Circles"
-      },
-      {
-        "id": "u10_t3_E_f8f3e956",
-        "question": "From point 17 cm from centre, radius 8 cm. Tangent length = ?",
-        "options": [
-          "8 cm",
-          "18 cm",
+          "39 cm",
+          "36 cm",
           "15 cm",
-          "17 cm"
+          "36 cm (alt)"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 3,
         "level": "E",
@@ -352,13 +1340,203 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_E_4fa9c13d",
+        "id": "u10_t3_E_bb3bc3d8",
+        "question": "From point 20 cm from centre, radius 16 cm. Tangent length = ?",
+        "options": [
+          "16 cm",
+          "12 cm",
+          "20 cm",
+          "15 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_10c6bda9",
         "question": "From point 25 cm from centre, radius 7 cm. Tangent length = ?",
         "options": [
-          "27 cm",
-          "25 cm",
+          "24 cm",
           "7 cm",
+          "27 cm",
+          "25 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_0c3ac81e",
+        "question": "From point 40 cm from centre, radius 24 cm. Tangent length = ?",
+        "options": [
+          "24 cm",
+          "35 cm",
+          "32 cm",
+          "40 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_36839ebc",
+        "question": "From point 17 cm from centre, radius 8 cm. Tangent length = ?",
+        "options": [
+          "17 cm",
+          "15 cm",
+          "18 cm",
+          "8 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_f1fe2481",
+        "question": "From point 5 cm from centre, radius 4 cm. Tangent length = ?",
+        "options": [
+          "5 cm",
+          "3 cm",
+          "4 cm",
+          "6 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_e7922717",
+        "question": "From point 30 cm from centre, radius 18 cm. Tangent length = ?",
+        "options": [
+          "30 cm",
+          "24 cm",
+          "27 cm",
+          "18 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_ffef9b49",
+        "question": "From point 35 cm from centre, radius 21 cm. Tangent length = ?",
+        "options": [
+          "35 cm",
+          "28 cm",
+          "21 cm",
+          "31 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_5913b6bd",
+        "question": "From point 30 cm from centre, radius 24 cm. Tangent length = ?",
+        "options": [
+          "21 cm",
+          "30 cm",
+          "18 cm",
           "24 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_2074becd",
+        "question": "From point 29 cm from centre, radius 20 cm. Tangent length = ?",
+        "options": [
+          "21 cm",
+          "20 cm",
+          "29 cm",
+          "24 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_93c7292a",
+        "question": "From point 15 cm from centre, radius 9 cm. Tangent length = ?",
+        "options": [
+          "12 cm (alt)",
+          "9 cm",
+          "12 cm",
+          "15 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_db5bc105",
+        "question": "From point 17 cm from centre, radius 15 cm. Tangent length = ?",
+        "options": [
+          "15 cm",
+          "17 cm",
+          "11 cm",
+          "8 cm"
         ],
         "answer": 3,
         "explanation": "",
@@ -371,15 +1549,243 @@
         "chapter_ref": "NCERT Ch 10 Circles"
       },
       {
-        "id": "u10_t3_E_a5dfbd8f",
-        "question": "From point 15 cm from centre, radius 9 cm. Tangent length = ?",
+        "id": "u10_t3_E_0963eeec",
+        "question": "From point 13 cm from centre, radius 12 cm. Tangent length = ?",
+        "options": [
+          "8 cm",
+          "12 cm",
+          "5 cm",
+          "13 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_7c4b7e57",
+        "question": "From point 10 cm from centre, radius 8 cm. Tangent length = ?",
         "options": [
           "9 cm",
-          "15 cm",
-          "12 cm (alt)",
-          "12 cm"
+          "6 cm",
+          "10 cm",
+          "8 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_b78ee406",
+        "question": "From point 51 cm from centre, radius 24 cm. Tangent length = ?",
+        "options": [
+          "48 cm",
+          "51 cm",
+          "45 cm",
+          "24 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_0c5582c7",
+        "question": "From point 52 cm from centre, radius 20 cm. Tangent length = ?",
+        "options": [
+          "51 cm",
+          "20 cm",
+          "48 cm",
+          "52 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_40b6b372",
+        "question": "From point 26 cm from centre, radius 10 cm. Tangent length = ?",
+        "options": [
+          "10 cm",
+          "24 cm",
+          "26 cm",
+          "27 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_b4aacaab",
+        "question": "From point 29 cm from centre, radius 21 cm. Tangent length = ?",
+        "options": [
+          "29 cm",
+          "21 cm",
+          "23 cm",
+          "20 cm"
         ],
         "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_d5b167ac",
+        "question": "From point 34 cm from centre, radius 16 cm. Tangent length = ?",
+        "options": [
+          "34 cm",
+          "16 cm",
+          "30 cm",
+          "33 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_7c12381b",
+        "question": "From point 15 cm from centre, radius 12 cm. Tangent length = ?",
+        "options": [
+          "9 cm (alt)",
+          "12 cm",
+          "15 cm",
+          "9 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_2e6c6c44",
+        "question": "From point 41 cm from centre, radius 9 cm. Tangent length = ?",
+        "options": [
+          "40 cm",
+          "41 cm",
+          "9 cm",
+          "43 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_0760ee3c",
+        "question": "From point 20 cm from centre, radius 12 cm. Tangent length = ?",
+        "options": [
+          "19 cm",
+          "12 cm",
+          "20 cm",
+          "16 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_ef606cb1",
+        "question": "From point 5 cm from centre, radius 3 cm. Tangent length = ?",
+        "options": [
+          "7 cm",
+          "3 cm",
+          "4 cm",
+          "5 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_169d8890",
+        "question": "From point 25 cm from centre, radius 24 cm. Tangent length = ?",
+        "options": [
+          "24 cm",
+          "7 cm",
+          "10 cm",
+          "25 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t3_E",
+        "category_label": "Length · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_E_6ad2f9fc",
+        "question": "From point 25 cm from centre, radius 15 cm. Tangent length = ?",
+        "options": [
+          "20 cm",
+          "25 cm",
+          "23 cm",
+          "15 cm"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 3,
         "level": "E",

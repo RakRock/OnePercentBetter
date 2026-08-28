@@ -2,15 +2,53 @@
   "questions": {
     "A": [
       {
-        "id": "u9_t1_A_4524606d",
+        "id": "u9_t1_A_ea30246c",
         "question": "Line of sight is:",
         "options": [
           "Vertical height only",
+          "Horizontal ground line",
           "Hypotenuse of any triangle",
-          "Line from observer's eye to object",
-          "Horizontal ground line"
+          "Line from observer's eye to object"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_A_7db8510c",
+        "question": "Angle of elevation is measured:",
+        "options": [
+          "From the object to ground",
+          "Below the horizontal",
+          "Above the horizontal",
+          "At the vertical only"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t1_A",
+        "category_label": "Angles · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_A_7e15ad58",
+        "question": "Angle of depression is measured:",
+        "options": [
+          "From ground upward",
+          "Below the horizontal",
+          "Above the horizontal",
+          "At 90° always"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -23,15 +61,110 @@
     ],
     "B": [
       {
-        "id": "u9_t1_B_35769f89",
+        "id": "u9_t1_B_6d781977",
         "question": "Angle of elevation vs depression:",
         "options": [
-          "Elevation: above horizontal; Depression: below horizontal",
           "Elevation is below horizontal",
-          "Depression is above horizontal",
-          "Both mean the same"
+          "Both mean the same",
+          "Elevation: above horizontal; Depression: below horizontal",
+          "Depression is above horizontal"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_B_d0c06e32",
+        "question": "Looking down at a boat from a cliff (15°) is:",
+        "options": [
+          "Right angle",
+          "Angle of elevation",
+          "Straight angle",
+          "Angle of depression"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_B_1fa19c64",
+        "question": "Looking down at a boat from a cliff (45°) is:",
+        "options": [
+          "Angle of depression",
+          "Right angle",
+          "Angle of elevation",
+          "Straight angle"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_B_932662cf",
+        "question": "Looking down at a boat from a cliff (75°) is:",
+        "options": [
+          "Right angle",
+          "Angle of depression",
+          "Straight angle",
+          "Angle of elevation"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_B_49472db3",
+        "question": "Looking down at a boat from a cliff (30°) is:",
+        "options": [
+          "Angle of depression",
+          "Straight angle",
+          "Right angle",
+          "Angle of elevation"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t1_B",
+        "category_label": "Angles · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_B_44a9b17b",
+        "question": "Looking down at a boat from a cliff (60°) is:",
+        "options": [
+          "Right angle",
+          "Angle of depression",
+          "Straight angle",
+          "Angle of elevation"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "B",
@@ -44,15 +177,15 @@
     ],
     "C": [
       {
-        "id": "u9_t1_C_f2fa03be",
+        "id": "u9_t1_C_a4d1a452",
         "question": "Student looking up at top of minar (60° to horizontal) — this is:",
         "options": [
-          "Angle of depression",
-          "Right angle",
+          "Angle of elevation",
           "Straight angle",
-          "Angle of elevation"
+          "Right angle",
+          "Angle of depression"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "C",
@@ -63,15 +196,15 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t1_C_94551a9e",
+        "id": "u9_t1_C_1812d4d9",
         "question": "Student looking up at top of minar (45° to horizontal) — this is:",
         "options": [
-          "Right angle",
           "Straight angle",
-          "Angle of depression",
-          "Angle of elevation"
+          "Right angle",
+          "Angle of elevation",
+          "Angle of depression"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 1,
         "level": "C",
@@ -82,15 +215,148 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t1_C_dddb270a",
+        "id": "u9_t1_C_3c4cdec9",
         "question": "Student looking up at top of minar (30° to horizontal) — this is:",
         "options": [
           "Right angle",
-          "Angle of depression",
           "Angle of elevation",
+          "Straight angle",
+          "Angle of depression"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_C_1a7b67f9",
+        "question": "Student looking up at top of minar (75° to horizontal) — this is:",
+        "options": [
+          "Angle of depression",
+          "Right angle",
+          "Straight angle",
+          "Angle of elevation"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_C_495e60b7",
+        "question": "Student looking up at top of minar (15° to horizontal) — this is:",
+        "options": [
+          "Right angle",
+          "Angle of elevation",
+          "Angle of depression",
           "Straight angle"
         ],
-        "answer": 2,
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_C_c8eaab4f",
+        "question": "Pilot viewing runway at 15° below horizontal — this is:",
+        "options": [
+          "Angle of depression",
+          "Zero angle",
+          "Complementary to elevation",
+          "Angle of elevation"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_C_e79ba59f",
+        "question": "Pilot viewing runway at 60° below horizontal — this is:",
+        "options": [
+          "Zero angle",
+          "Complementary to elevation",
+          "Angle of elevation",
+          "Angle of depression"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_C_89b4b145",
+        "question": "Pilot viewing runway at 30° below horizontal — this is:",
+        "options": [
+          "Complementary to elevation",
+          "Angle of depression",
+          "Angle of elevation",
+          "Zero angle"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_C_3bcf3c0d",
+        "question": "Pilot viewing runway at 75° below horizontal — this is:",
+        "options": [
+          "Angle of depression",
+          "Angle of elevation",
+          "Zero angle",
+          "Complementary to elevation"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t1_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_C_6c24b04e",
+        "question": "Pilot viewing runway at 45° below horizontal — this is:",
+        "options": [
+          "Angle of depression",
+          "Angle of elevation",
+          "Zero angle",
+          "Complementary to elevation"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "C",
@@ -103,15 +369,15 @@
     ],
     "D": [
       {
-        "id": "u9_t1_D_871be62d",
-        "question": "Observer on cliff sees boat at 30° depression; boat sees cliff at 30° elevation. This shows:",
+        "id": "u9_t1_D_56303ac0",
+        "question": "Observer on cliff sees boat at 60° depression; boat sees cliff at 60° elevation. This shows:",
         "options": [
+          "60° elevation and 60° depression",
           "Only depression",
           "Both 90°",
-          "No angles",
-          "30° elevation and 30° depression"
+          "No angles"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "Alternate interior angles with parallel horizontals.",
         "topic": 1,
         "level": "D",
@@ -122,15 +388,34 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t1_D_4c490976",
+        "id": "u9_t1_D_0761bf62",
+        "question": "Observer on cliff sees boat at 30° depression; boat sees cliff at 30° elevation. This shows:",
+        "options": [
+          "Both 90°",
+          "Only depression",
+          "30° elevation and 30° depression",
+          "No angles"
+        ],
+        "answer": 2,
+        "explanation": "Alternate interior angles with parallel horizontals.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_D_871efbdb",
         "question": "Observer on cliff sees boat at 45° depression; boat sees cliff at 45° elevation. This shows:",
         "options": [
           "Only depression",
-          "45° elevation and 45° depression",
           "No angles",
+          "45° elevation and 45° depression",
           "Both 90°"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "Alternate interior angles with parallel horizontals.",
         "topic": 1,
         "level": "D",
@@ -141,13 +426,51 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t1_D_26497782",
-        "question": "Observer on cliff sees boat at 60° depression; boat sees cliff at 60° elevation. This shows:",
+        "id": "u9_t1_D_423882b6",
+        "question": "Alternate angles with parallel horizontals give:",
         "options": [
+          "Equal elevation and depression",
+          "No relation",
+          "Sum to 90°",
+          "Sum to 180° always"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_D_e921b14a",
+        "question": "Observer on cliff sees boat at 15° depression; boat sees cliff at 15° elevation. This shows:",
+        "options": [
+          "15° elevation and 15° depression",
+          "Only depression",
           "No angles",
+          "Both 90°"
+        ],
+        "answer": 0,
+        "explanation": "Alternate interior angles with parallel horizontals.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t1_D",
+        "category_label": "Angles · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_D_2395f474",
+        "question": "Observer on cliff sees boat at 75° depression; boat sees cliff at 75° elevation. This shows:",
+        "options": [
           "Only depression",
           "Both 90°",
-          "60° elevation and 60° depression"
+          "No angles",
+          "75° elevation and 75° depression"
         ],
         "answer": 3,
         "explanation": "Alternate interior angles with parallel horizontals.",
@@ -162,12 +485,107 @@
     ],
     "E": [
       {
-        "id": "u9_t1_E_46cfb6a8",
+        "id": "u9_t1_E_4cb0080a",
         "question": "Angle of elevation of top = 50°. Angle of depression from top to observer equals:",
         "options": [
+          "Twice elevation",
           "Zero",
+          "Always 90°",
+          "Equal to angle of elevation from object"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_0d950241",
+        "question": "Angle of elevation of top = 40°. Angle of depression from top to observer equals:",
+        "options": [
+          "Always 90°",
           "Equal to angle of elevation from object",
           "Twice elevation",
+          "Zero"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_abfb0ced",
+        "question": "Angle of elevation of top = 20°. Angle of depression from top to observer equals:",
+        "options": [
+          "Zero",
+          "Always 90°",
+          "Twice elevation",
+          "Equal to angle of elevation from object"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_3950df4c",
+        "question": "Angle of elevation of top = 58°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Always 90°",
+          "Equal to angle of elevation from object",
+          "Zero"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_a57e62c1",
+        "question": "Angle of elevation of top = 45°. Angle of depression from top to observer equals:",
+        "options": [
+          "Always 90°",
+          "Zero",
+          "Twice elevation",
+          "Equal to angle of elevation from object"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_e6553dd1",
+        "question": "Angle of elevation of top = 18°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Zero",
           "Always 90°"
         ],
         "answer": 1,
@@ -181,8 +599,426 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t1_E_2c658970",
-        "question": "Angle of elevation of top = 40°. Angle of depression from top to observer equals:",
+        "id": "u9_t1_E_da19456f",
+        "question": "Angle of elevation of top = 63°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Zero",
+          "Always 90°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_130d743f",
+        "question": "Angle of elevation of top = 69°. Angle of depression from top to observer equals:",
+        "options": [
+          "Zero",
+          "Always 90°",
+          "Twice elevation",
+          "Equal to angle of elevation from object"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_6b85ce64",
+        "question": "Angle of elevation of top = 25°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Always 90°",
+          "Zero",
+          "Equal to angle of elevation from object"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_3d6946cf",
+        "question": "Angle of elevation of top = 31°. Angle of depression from top to observer equals:",
+        "options": [
+          "Equal to angle of elevation from object",
+          "Zero",
+          "Twice elevation",
+          "Always 90°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_7dcec868",
+        "question": "Angle of elevation of top = 29°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Always 90°",
+          "Zero"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_10509b20",
+        "question": "Angle of elevation of top = 46°. Angle of depression from top to observer equals:",
+        "options": [
+          "Equal to angle of elevation from object",
+          "Twice elevation",
+          "Always 90°",
+          "Zero"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_9a0b034b",
+        "question": "Angle of elevation of top = 67°. Angle of depression from top to observer equals:",
+        "options": [
+          "Always 90°",
+          "Zero",
+          "Twice elevation",
+          "Equal to angle of elevation from object"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_fdea527c",
+        "question": "Angle of elevation of top = 44°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Always 90°",
+          "Zero"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_9472beca",
+        "question": "Angle of elevation of top = 11°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Zero",
+          "Always 90°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_b1f936ab",
+        "question": "Angle of elevation of top = 76°. Angle of depression from top to observer equals:",
+        "options": [
+          "Equal to angle of elevation from object",
+          "Always 90°",
+          "Twice elevation",
+          "Zero"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_399b22fb",
+        "question": "Angle of elevation of top = 36°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Always 90°",
+          "Zero"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_71ff57d5",
+        "question": "Angle of elevation of top = 30°. Angle of depression from top to observer equals:",
+        "options": [
+          "Always 90°",
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Zero"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_ed86003f",
+        "question": "Angle of elevation of top = 47°. Angle of depression from top to observer equals:",
+        "options": [
+          "Equal to angle of elevation from object",
+          "Twice elevation",
+          "Always 90°",
+          "Zero"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_9d16dd03",
+        "question": "Angle of elevation of top = 53°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Always 90°",
+          "Zero",
+          "Equal to angle of elevation from object"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_6e25a2d6",
+        "question": "Angle of elevation of top = 35°. Angle of depression from top to observer equals:",
+        "options": [
+          "Always 90°",
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Zero"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_bdfa22fd",
+        "question": "Angle of elevation of top = 23°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Always 90°",
+          "Zero",
+          "Equal to angle of elevation from object"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_d8ef329b",
+        "question": "Angle of elevation of top = 48°. Angle of depression from top to observer equals:",
+        "options": [
+          "Always 90°",
+          "Equal to angle of elevation from object",
+          "Twice elevation",
+          "Zero"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_acac2f2f",
+        "question": "Angle of elevation of top = 16°. Angle of depression from top to observer equals:",
+        "options": [
+          "Equal to angle of elevation from object",
+          "Twice elevation",
+          "Zero",
+          "Always 90°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_4c18fa24",
+        "question": "Angle of elevation of top = 39°. Angle of depression from top to observer equals:",
+        "options": [
+          "Twice elevation",
+          "Zero",
+          "Equal to angle of elevation from object",
+          "Always 90°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_af291dec",
+        "question": "Angle of elevation of top = 79°. Angle of depression from top to observer equals:",
+        "options": [
+          "Zero",
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Always 90°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_1d2f2333",
+        "question": "Angle of elevation of top = 27°. Angle of depression from top to observer equals:",
+        "options": [
+          "Always 90°",
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Zero"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_2cbb1629",
+        "question": "Angle of elevation of top = 65°. Angle of depression from top to observer equals:",
+        "options": [
+          "Equal to angle of elevation from object",
+          "Always 90°",
+          "Twice elevation",
+          "Zero"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t1_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t1_E_9e883bd8",
+        "question": "Angle of elevation of top = 49°. Angle of depression from top to observer equals:",
         "options": [
           "Zero",
           "Twice elevation",
@@ -200,15 +1036,15 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t1_E_0a1c1827",
-        "question": "Angle of elevation of top = 20°. Angle of depression from top to observer equals:",
+        "id": "u9_t1_E_f88ce736",
+        "question": "Angle of elevation of top = 54°. Angle of depression from top to observer equals:",
         "options": [
-          "Zero",
-          "Twice elevation",
           "Always 90°",
-          "Equal to angle of elevation from object"
+          "Twice elevation",
+          "Equal to angle of elevation from object",
+          "Zero"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 1,
         "level": "E",

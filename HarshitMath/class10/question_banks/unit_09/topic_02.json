@@ -2,15 +2,15 @@
   "questions": {
     "A": [
       {
-        "id": "u9_t2_A_02c7117f",
+        "id": "u9_t2_A_bbffe0cb",
         "question": "From 30 m away, angle of elevation 30°. Tower height ≈ ?",
         "options": [
+          "17 m",
           "8 m",
           "34 m",
-          "30 m",
-          "17 m"
+          "30 m"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "Use tan 30°.",
         "topic": 2,
         "level": "A",
@@ -21,16 +21,16 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_A_fcf14353",
-        "question": "From 50 m away, angle of elevation 45°. Tower height ≈ ?",
+        "id": "u9_t2_A_c6f54bf4",
+        "question": "From 100 m away, angle of elevation 30°. Tower height ≈ ?",
         "options": [
-          "50 m (alt)",
-          "50 m",
-          "25 m",
-          "100 m"
+          "116 m",
+          "58 m",
+          "100 m",
+          "29 m"
         ],
         "answer": 1,
-        "explanation": "Use tan 45°.",
+        "explanation": "Use tan 30°.",
         "topic": 2,
         "level": "A",
         "unit_id": 9,
@@ -40,12 +40,12 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_A_3e6713fd",
+        "id": "u9_t2_A_15715b75",
         "question": "From 100 m away, angle of elevation 60°. Tower height ≈ ?",
         "options": [
           "173 m",
-          "346 m",
           "86 m",
+          "346 m",
           "100 m"
         ],
         "answer": 0,
@@ -59,108 +59,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_A_8643f555",
-        "question": "From 20 m away, angle of elevation 30°. Tower height ≈ ?",
-        "options": [
-          "6 m",
-          "20 m",
-          "24 m",
-          "12 m"
-        ],
-        "answer": 3,
-        "explanation": "Use tan 30°.",
-        "topic": 2,
-        "level": "A",
-        "unit_id": 9,
-        "category": "u9_t2_A",
-        "category_label": "Heights · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_A_60431b17",
-        "question": "From 50 m away, angle of elevation 60°. Tower height ≈ ?",
-        "options": [
-          "174 m",
-          "87 m",
-          "43 m",
-          "50 m"
-        ],
-        "answer": 1,
-        "explanation": "Use tan 60°.",
-        "topic": 2,
-        "level": "A",
-        "unit_id": 9,
-        "category": "u9_t2_A",
-        "category_label": "Heights · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_A_4207f3de",
-        "question": "From 10 m away, angle of elevation 30°. Tower height ≈ ?",
-        "options": [
-          "10 m",
-          "3 m",
-          "6 m",
-          "12 m"
-        ],
-        "answer": 2,
-        "explanation": "Use tan 30°.",
-        "topic": 2,
-        "level": "A",
-        "unit_id": 9,
-        "category": "u9_t2_A",
-        "category_label": "Heights · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_A_63a65509",
-        "question": "From 100 m away, angle of elevation 30°. Tower height ≈ ?",
-        "options": [
-          "58 m",
-          "29 m",
-          "100 m",
-          "116 m"
-        ],
-        "answer": 0,
-        "explanation": "Use tan 30°.",
-        "topic": 2,
-        "level": "A",
-        "unit_id": 9,
-        "category": "u9_t2_A",
-        "category_label": "Heights · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_A_1faf0af6",
-        "question": "From 50 m away, angle of elevation 30°. Tower height ≈ ?",
+        "id": "u9_t2_A_e3ca762b",
+        "question": "From 50 m away, angle of elevation 45°. Tower height ≈ ?",
         "options": [
           "50 m",
-          "29 m",
-          "14 m",
-          "58 m"
-        ],
-        "answer": 1,
-        "explanation": "Use tan 30°.",
-        "topic": 2,
-        "level": "A",
-        "unit_id": 9,
-        "category": "u9_t2_A",
-        "category_label": "Heights · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_A_7b11612d",
-        "question": "From 30 m away, angle of elevation 45°. Tower height ≈ ?",
-        "options": [
-          "30 m",
-          "15 m",
-          "60 m",
-          "30 m (alt)"
+          "25 m",
+          "100 m",
+          "50 m (alt)"
         ],
         "answer": 0,
         "explanation": "Use tan 45°.",
@@ -173,15 +78,15 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_A_b9950203",
-        "question": "From 30 m away, angle of elevation 60°. Tower height ≈ ?",
+        "id": "u9_t2_A_bc196a49",
+        "question": "From 20 m away, angle of elevation 60°. Tower height ≈ ?",
         "options": [
-          "104 m",
-          "52 m",
-          "26 m",
-          "30 m"
+          "35 m",
+          "17 m",
+          "70 m",
+          "20 m"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "Use tan 60°.",
         "topic": 2,
         "level": "A",
@@ -192,13 +97,70 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_A_3b900d3c",
+        "id": "u9_t2_A_4df0ff70",
+        "question": "From 50 m away, angle of elevation 60°. Tower height ≈ ?",
+        "options": [
+          "87 m",
+          "174 m",
+          "50 m",
+          "43 m"
+        ],
+        "answer": 0,
+        "explanation": "Use tan 60°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_e6238095",
+        "question": "From 20 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "12 m",
+          "24 m",
+          "20 m",
+          "6 m"
+        ],
+        "answer": 0,
+        "explanation": "Use tan 30°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_882feb97",
         "question": "From 10 m away, angle of elevation 45°. Tower height ≈ ?",
         "options": [
-          "10 m (alt)",
           "10 m",
+          "20 m",
           "5 m",
-          "20 m"
+          "10 m (alt)"
+        ],
+        "answer": 0,
+        "explanation": "Use tan 45°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_097d70a2",
+        "question": "From 20 m away, angle of elevation 45°. Tower height ≈ ?",
+        "options": [
+          "10 m",
+          "20 m",
+          "20 m (alt)",
+          "40 m"
         ],
         "answer": 1,
         "explanation": "Use tan 45°.",
@@ -211,7 +173,26 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_A_88a41ea9",
+        "id": "u9_t2_A_42475bf7",
+        "question": "From 30 m away, angle of elevation 60°. Tower height ≈ ?",
+        "options": [
+          "26 m",
+          "30 m",
+          "52 m",
+          "104 m"
+        ],
+        "answer": 2,
+        "explanation": "Use tan 60°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_0dbebf76",
         "question": "From 10 m away, angle of elevation 60°. Tower height ≈ ?",
         "options": [
           "17 m",
@@ -230,15 +211,53 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_A_ca6dff45",
-        "question": "From 100 m away, angle of elevation 45°. Tower height ≈ ?",
+        "id": "u9_t2_A_ce08bd1f",
+        "question": "From 10 m away, angle of elevation 30°. Tower height ≈ ?",
         "options": [
-          "100 m (alt)",
-          "100 m",
-          "200 m",
-          "50 m"
+          "10 m",
+          "3 m",
+          "6 m",
+          "12 m"
+        ],
+        "answer": 2,
+        "explanation": "Use tan 30°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_33877eb6",
+        "question": "From 50 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "50 m",
+          "29 m",
+          "14 m",
+          "58 m"
         ],
         "answer": 1,
+        "explanation": "Use tan 30°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_ddad1b2a",
+        "question": "From 30 m away, angle of elevation 45°. Tower height ≈ ?",
+        "options": [
+          "30 m (alt)",
+          "15 m",
+          "30 m",
+          "60 m"
+        ],
+        "answer": 2,
         "explanation": "Use tan 45°.",
         "topic": 2,
         "level": "A",
@@ -249,13 +268,108 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_A_33825e80",
-        "question": "From 20 m away, angle of elevation 60°. Tower height ≈ ?",
+        "id": "u9_t2_A_f8031de0",
+        "question": "From 100 m away, angle of elevation 45°. Tower height ≈ ?",
         "options": [
-          "70 m",
-          "20 m",
-          "35 m",
-          "17 m"
+          "100 m (alt)",
+          "50 m",
+          "200 m",
+          "100 m"
+        ],
+        "answer": 3,
+        "explanation": "Use tan 45°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_c4b73155",
+        "question": "From 107 m away, angle of elevation 15°. Tower height ≈ ?",
+        "options": [
+          "58 m",
+          "14 m",
+          "29 m",
+          "107 m"
+        ],
+        "answer": 2,
+        "explanation": "Use tan 15°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_d48de424",
+        "question": "From 28 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "16 m",
+          "28 m",
+          "32 m",
+          "8 m"
+        ],
+        "answer": 0,
+        "explanation": "Use tan 30°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_dc35ee19",
+        "question": "From 100 m away, angle of elevation 15°. Tower height ≈ ?",
+        "options": [
+          "100 m",
+          "54 m",
+          "27 m",
+          "13 m"
+        ],
+        "answer": 2,
+        "explanation": "Use tan 15°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_08d4ecfd",
+        "question": "From 93 m away, angle of elevation 75°. Tower height ≈ ?",
+        "options": [
+          "173 m",
+          "694 m",
+          "93 m",
+          "347 m"
+        ],
+        "answer": 3,
+        "explanation": "Use tan 75°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_924dd06b",
+        "question": "From 65 m away, angle of elevation 60°. Tower height ≈ ?",
+        "options": [
+          "65 m",
+          "226 m",
+          "113 m",
+          "56 m"
         ],
         "answer": 2,
         "explanation": "Use tan 60°.",
@@ -268,16 +382,187 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_A_b69dce6c",
-        "question": "From 20 m away, angle of elevation 45°. Tower height ≈ ?",
+        "id": "u9_t2_A_ddc03dae",
+        "question": "From 94 m away, angle of elevation 75°. Tower height ≈ ?",
         "options": [
-          "40 m",
-          "20 m",
-          "10 m",
-          "20 m (alt)"
+          "351 m",
+          "94 m",
+          "175 m",
+          "702 m"
+        ],
+        "answer": 0,
+        "explanation": "Use tan 75°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_99cd2fb3",
+        "question": "From 19 m away, angle of elevation 45°. Tower height ≈ ?",
+        "options": [
+          "9 m",
+          "38 m",
+          "19 m",
+          "19 m (alt)"
+        ],
+        "answer": 2,
+        "explanation": "Use tan 45°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_0858c393",
+        "question": "From 32 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "36 m",
+          "18 m",
+          "9 m",
+          "32 m"
         ],
         "answer": 1,
-        "explanation": "Use tan 45°.",
+        "explanation": "Use tan 30°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_0421a2b4",
+        "question": "From 108 m away, angle of elevation 75°. Tower height ≈ ?",
+        "options": [
+          "201 m",
+          "806 m",
+          "108 m",
+          "403 m"
+        ],
+        "answer": 3,
+        "explanation": "Use tan 75°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_5dd10bbd",
+        "question": "From 94 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "27 m",
+          "54 m",
+          "94 m",
+          "108 m"
+        ],
+        "answer": 1,
+        "explanation": "Use tan 30°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_79a66dc7",
+        "question": "From 41 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "48 m",
+          "12 m",
+          "24 m",
+          "41 m"
+        ],
+        "answer": 2,
+        "explanation": "Use tan 30°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_edd4b9e9",
+        "question": "From 45 m away, angle of elevation 60°. Tower height ≈ ?",
+        "options": [
+          "45 m",
+          "39 m",
+          "78 m",
+          "156 m"
+        ],
+        "answer": 2,
+        "explanation": "Use tan 60°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_350ba200",
+        "question": "From 77 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "88 m",
+          "22 m",
+          "44 m",
+          "77 m"
+        ],
+        "answer": 2,
+        "explanation": "Use tan 30°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_92863c5d",
+        "question": "From 96 m away, angle of elevation 75°. Tower height ≈ ?",
+        "options": [
+          "358 m",
+          "179 m",
+          "96 m",
+          "716 m"
+        ],
+        "answer": 0,
+        "explanation": "Use tan 75°.",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t2_A",
+        "category_label": "Heights · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_A_f294c185",
+        "question": "From 90 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "104 m",
+          "52 m",
+          "26 m",
+          "90 m"
+        ],
+        "answer": 1,
+        "explanation": "Use tan 30°.",
         "topic": 2,
         "level": "A",
         "unit_id": 9,
@@ -289,203 +574,13 @@
     ],
     "B": [
       {
-        "id": "u9_t2_B_e51ef064",
-        "question": "Minar: observer 20 m from foot, elevation 30°. Height ≈ ?",
+        "id": "u9_t2_B_72de5c13",
+        "question": "Minar: observer 50 m from foot, elevation 45°. Height ≈ ?",
         "options": [
-          "12 m",
-          "7 m",
-          "22 m",
-          "20 m"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 2,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t2_B",
-        "category_label": "Heights · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_B_b5f2dfeb",
-        "question": "Minar: observer 10 m from foot, elevation 30°. Height ≈ ?",
-        "options": [
-          "16 m",
-          "6 m",
-          "1 m",
-          "10 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 2,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t2_B",
-        "category_label": "Heights · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_B_86ed69f7",
-        "question": "Minar: observer 100 m from foot, elevation 30°. Height ≈ ?",
-        "options": [
-          "58 m",
-          "100 m",
-          "53 m",
-          "68 m"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 2,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t2_B",
-        "category_label": "Heights · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_B_3b15914a",
-        "question": "Minar: observer 20 m from foot, elevation 60°. Height ≈ ?",
-        "options": [
-          "45 m",
-          "20 m",
-          "35 m",
-          "30 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t2_B",
-        "category_label": "Heights · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_B_d8c39d7a",
-        "question": "Minar: observer 30 m from foot, elevation 45°. Height ≈ ?",
-        "options": [
-          "30 m (alt)",
-          "30 m",
-          "40 m",
-          "25 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 2,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t2_B",
-        "category_label": "Heights · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_B_3bd1a88b",
-        "question": "Minar: observer 100 m from foot, elevation 60°. Height ≈ ?",
-        "options": [
-          "183 m",
-          "168 m",
-          "100 m",
-          "173 m"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 2,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t2_B",
-        "category_label": "Heights · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_B_ec29cf73",
-        "question": "Minar: observer 10 m from foot, elevation 45°. Height ≈ ?",
-        "options": [
-          "20 m",
-          "10 m (alt)",
-          "10 m",
-          "5 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t2_B",
-        "category_label": "Heights · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_B_371f6ad7",
-        "question": "Minar: observer 50 m from foot, elevation 30°. Height ≈ ?",
-        "options": [
-          "24 m",
-          "39 m",
-          "29 m",
-          "50 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t2_B",
-        "category_label": "Heights · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_B_a22f6fc3",
-        "question": "Minar: observer 10 m from foot, elevation 60°. Height ≈ ?",
-        "options": [
-          "10 m",
-          "17 m",
-          "12 m",
-          "27 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 2,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t2_B",
-        "category_label": "Heights · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_B_82b8eb02",
-        "question": "Minar: observer 20 m from foot, elevation 45°. Height ≈ ?",
-        "options": [
-          "30 m",
-          "20 m (alt)",
-          "15 m",
-          "20 m"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 2,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t2_B",
-        "category_label": "Heights · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_B_3f49ed5b",
-        "question": "Minar: observer 50 m from foot, elevation 60°. Height ≈ ?",
-        "options": [
-          "87 m",
           "50 m",
-          "82 m",
-          "97 m"
+          "50 m (alt)",
+          "45 m",
+          "60 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -498,12 +593,12 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_B_a712ffe5",
+        "id": "u9_t2_B_ef416587",
         "question": "Minar: observer 100 m from foot, elevation 45°. Height ≈ ?",
         "options": [
           "100 m",
-          "100 m (alt)",
           "95 m",
+          "100 m (alt)",
           "110 m"
         ],
         "answer": 0,
@@ -517,12 +612,202 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_B_418f67b1",
+        "id": "u9_t2_B_4c3147a1",
+        "question": "Minar: observer 20 m from foot, elevation 30°. Height ≈ ?",
+        "options": [
+          "12 m",
+          "22 m",
+          "20 m",
+          "7 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_b550c3d8",
+        "question": "Minar: observer 10 m from foot, elevation 45°. Height ≈ ?",
+        "options": [
+          "10 m",
+          "20 m",
+          "10 m (alt)",
+          "5 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_2675587b",
+        "question": "Minar: observer 20 m from foot, elevation 60°. Height ≈ ?",
+        "options": [
+          "20 m",
+          "35 m",
+          "45 m",
+          "30 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_a15d6b7a",
+        "question": "Minar: observer 30 m from foot, elevation 45°. Height ≈ ?",
+        "options": [
+          "25 m",
+          "30 m",
+          "40 m",
+          "30 m (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_47f96520",
+        "question": "Minar: observer 50 m from foot, elevation 30°. Height ≈ ?",
+        "options": [
+          "39 m",
+          "24 m",
+          "50 m",
+          "29 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_76916f5d",
+        "question": "Minar: observer 100 m from foot, elevation 30°. Height ≈ ?",
+        "options": [
+          "53 m",
+          "68 m",
+          "100 m",
+          "58 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_d9aefc97",
+        "question": "Minar: observer 100 m from foot, elevation 60°. Height ≈ ?",
+        "options": [
+          "173 m",
+          "168 m",
+          "183 m",
+          "100 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_35908643",
+        "question": "Minar: observer 30 m from foot, elevation 30°. Height ≈ ?",
+        "options": [
+          "17 m",
+          "30 m",
+          "12 m",
+          "27 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_8f249171",
         "question": "Minar: observer 30 m from foot, elevation 60°. Height ≈ ?",
         "options": [
-          "62 m",
-          "47 m",
           "52 m",
+          "62 m",
+          "30 m",
+          "47 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_a62a5754",
+        "question": "Minar: observer 10 m from foot, elevation 60°. Height ≈ ?",
+        "options": [
+          "27 m",
+          "12 m",
+          "17 m",
+          "10 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_97e8c47d",
+        "question": "Minar: observer 20 m from foot, elevation 45°. Height ≈ ?",
+        "options": [
+          "15 m",
+          "20 m (alt)",
+          "20 m",
           "30 m"
         ],
         "answer": 2,
@@ -536,13 +821,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_B_96a2e7df",
-        "question": "Minar: observer 50 m from foot, elevation 45°. Height ≈ ?",
+        "id": "u9_t2_B_2fbe46ec",
+        "question": "Minar: observer 10 m from foot, elevation 30°. Height ≈ ?",
         "options": [
-          "50 m",
-          "60 m",
-          "50 m (alt)",
-          "45 m"
+          "10 m",
+          "16 m",
+          "6 m",
+          "1 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_637de6fc",
+        "question": "Minar: observer 50 m from foot, elevation 60°. Height ≈ ?",
+        "options": [
+          "87 m",
+          "97 m",
+          "82 m",
+          "50 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -555,15 +859,281 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_B_8373ed58",
-        "question": "Minar: observer 30 m from foot, elevation 30°. Height ≈ ?",
+        "id": "u9_t2_B_e36b7083",
+        "question": "Minar: observer 103 m from foot, elevation 45°. Height ≈ ?",
+        "options": [
+          "98 m",
+          "113 m",
+          "103 m (alt)",
+          "103 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_dabf4416",
+        "question": "Minar: observer 83 m from foot, elevation 45°. Height ≈ ?",
+        "options": [
+          "93 m",
+          "83 m (alt)",
+          "83 m",
+          "78 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_5a5e4f10",
+        "question": "Minar: observer 88 m from foot, elevation 30°. Height ≈ ?",
+        "options": [
+          "46 m",
+          "61 m",
+          "51 m",
+          "88 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_03b32aa7",
+        "question": "Minar: observer 108 m from foot, elevation 60°. Height ≈ ?",
+        "options": [
+          "182 m",
+          "108 m",
+          "187 m",
+          "197 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_803b040b",
+        "question": "Minar: observer 35 m from foot, elevation 75°. Height ≈ ?",
+        "options": [
+          "131 m",
+          "141 m",
+          "35 m",
+          "126 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_dede1556",
+        "question": "Minar: observer 38 m from foot, elevation 30°. Height ≈ ?",
+        "options": [
+          "17 m",
+          "38 m",
+          "22 m",
+          "32 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_20908e45",
+        "question": "Minar: observer 119 m from foot, elevation 60°. Height ≈ ?",
+        "options": [
+          "201 m",
+          "206 m",
+          "216 m",
+          "119 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_87b5c618",
+        "question": "Minar: observer 25 m from foot, elevation 75°. Height ≈ ?",
+        "options": [
+          "93 m",
+          "25 m",
+          "88 m",
+          "103 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_8b4c4e38",
+        "question": "Minar: observer 69 m from foot, elevation 60°. Height ≈ ?",
+        "options": [
+          "69 m",
+          "130 m",
+          "120 m",
+          "115 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_9a5d0034",
+        "question": "Minar: observer 59 m from foot, elevation 30°. Height ≈ ?",
+        "options": [
+          "34 m",
+          "29 m",
+          "59 m",
+          "44 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_117854f5",
+        "question": "Minar: observer 13 m from foot, elevation 60°. Height ≈ ?",
+        "options": [
+          "23 m",
+          "33 m",
+          "13 m",
+          "18 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_ff710c61",
+        "question": "Minar: observer 117 m from foot, elevation 75°. Height ≈ ?",
+        "options": [
+          "117 m",
+          "432 m",
+          "437 m",
+          "447 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_c511c797",
+        "question": "Minar: observer 65 m from foot, elevation 15°. Height ≈ ?",
         "options": [
           "27 m",
-          "30 m",
           "12 m",
+          "65 m",
           "17 m"
         ],
         "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_a5395dc0",
+        "question": "Minar: observer 102 m from foot, elevation 30°. Height ≈ ?",
+        "options": [
+          "69 m",
+          "102 m",
+          "59 m",
+          "54 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_cf41f6b2",
+        "question": "Minar: observer 22 m from foot, elevation 30°. Height ≈ ?",
+        "options": [
+          "13 m",
+          "22 m",
+          "23 m",
+          "8 m"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -576,13 +1146,13 @@
     ],
     "C": [
       {
-        "id": "u9_t2_C_922b0c78",
-        "question": "Observer 1.5 m tall, 100 m from minar, elevation 45°. Minar height ≈ ?",
+        "id": "u9_t2_C_0b5006d9",
+        "question": "Observer 1.7 m tall, 10 m from minar, elevation 30°. Minar height ≈ ?",
         "options": [
-          "1.5 m",
-          "101 m",
-          "96 m",
-          "100 m"
+          "1.7 m",
+          "7 m",
+          "2 m",
+          "10 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -595,15 +1165,15 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_C_5fc8e2da",
-        "question": "Observer 1.5 m tall, 50 m from minar, elevation 30°. Minar height ≈ ?",
+        "id": "u9_t2_C_529be0cd",
+        "question": "Observer 1.4 m tall, 10 m from minar, elevation 45°. Minar height ≈ ?",
         "options": [
-          "50 m",
-          "30 m",
-          "25 m",
-          "1.5 m"
+          "1.4 m",
+          "10 m",
+          "11 m",
+          "6 m"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -614,13 +1184,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_C_6f8bfbd2",
-        "question": "Observer 1.5 m tall, 20 m from minar, elevation 45°. Minar height ≈ ?",
+        "id": "u9_t2_C_28a15646",
+        "question": "Observer 1.3 m tall, 10 m from minar, elevation 60°. Minar height ≈ ?",
         "options": [
-          "21 m",
-          "20 m",
-          "16 m",
-          "1.5 m"
+          "19 m",
+          "1.3 m",
+          "14 m",
+          "10 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -633,13 +1203,70 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_C_7c9ea5a8",
-        "question": "Observer 1.8 m tall, 50 m from minar, elevation 30°. Minar height ≈ ?",
+        "id": "u9_t2_C_0d34e5fd",
+        "question": "Observer 1.5 m tall, 50 m from minar, elevation 60°. Minar height ≈ ?",
         "options": [
-          "26 m",
-          "50 m",
-          "1.8 m",
-          "31 m"
+          "1.5 m",
+          "88 m",
+          "83 m",
+          "50 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_2b846f9a",
+        "question": "Observer 1.3 m tall, 30 m from minar, elevation 30°. Minar height ≈ ?",
+        "options": [
+          "1.3 m",
+          "14 m",
+          "19 m",
+          "30 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_7ba44fb2",
+        "question": "Observer 1.8 m tall, 20 m from minar, elevation 60°. Minar height ≈ ?",
+        "options": [
+          "20 m",
+          "31 m",
+          "36 m",
+          "1.8 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_a245c578",
+        "question": "Observer 1.4 m tall, 20 m from minar, elevation 60°. Minar height ≈ ?",
+        "options": [
+          "1.4 m",
+          "31 m",
+          "20 m",
+          "36 m"
         ],
         "answer": 3,
         "explanation": "",
@@ -652,15 +1279,15 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_C_1ec5150c",
-        "question": "Observer 1.2 m tall, 30 m from minar, elevation 60°. Minar height ≈ ?",
+        "id": "u9_t2_C_52b40a32",
+        "question": "Observer 1.7 m tall, 30 m from minar, elevation 60°. Minar height ≈ ?",
         "options": [
-          "53 m",
-          "48 m",
+          "1.7 m",
           "30 m",
-          "1.2 m"
+          "54 m",
+          "49 m"
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -671,13 +1298,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_C_146ac2e6",
-        "question": "Observer 1.7 m tall, 50 m from minar, elevation 30°. Minar height ≈ ?",
+        "id": "u9_t2_C_6ed1ee35",
+        "question": "Observer 1.5 m tall, 20 m from minar, elevation 60°. Minar height ≈ ?",
         "options": [
-          "50 m",
+          "20 m",
+          "1.5 m",
           "31 m",
-          "1.7 m",
-          "26 m"
+          "36 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_b76b1c32",
+        "question": "Observer 1.3 m tall, 10 m from minar, elevation 45°. Minar height ≈ ?",
+        "options": [
+          "10 m",
+          "11 m",
+          "1.3 m",
+          "6 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -690,108 +1336,51 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_C_2397779c",
-        "question": "Observer 1.7 m tall, 20 m from minar, elevation 45°. Minar height ≈ ?",
+        "id": "u9_t2_C_34f9d85b",
+        "question": "Observer 1.3 m tall, 50 m from minar, elevation 30°. Minar height ≈ ?",
         "options": [
-          "17 m",
-          "20 m",
-          "22 m",
-          "1.7 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "C",
-        "unit_id": 9,
-        "category": "u9_t2_C",
-        "category_label": "Heights · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_C_1bfc6b90",
-        "question": "Observer 1.8 m tall, 10 m from minar, elevation 30°. Minar height ≈ ?",
-        "options": [
-          "1.8 m",
-          "10 m",
-          "8 m",
-          "3 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "C",
-        "unit_id": 9,
-        "category": "u9_t2_C",
-        "category_label": "Heights · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_C_4ee3a782",
-        "question": "Observer 1.5 m tall, 30 m from minar, elevation 30°. Minar height ≈ ?",
-        "options": [
-          "14 m",
-          "30 m",
-          "19 m",
-          "1.5 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "C",
-        "unit_id": 9,
-        "category": "u9_t2_C",
-        "category_label": "Heights · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_C_0ccdd019",
-        "question": "Observer 1.4 m tall, 20 m from minar, elevation 30°. Minar height ≈ ?",
-        "options": [
-          "13 m",
-          "8 m",
-          "1.4 m",
-          "20 m"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 2,
-        "level": "C",
-        "unit_id": 9,
-        "category": "u9_t2_C",
-        "category_label": "Heights · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_C_dbec9033",
-        "question": "Observer 1.7 m tall, 20 m from minar, elevation 30°. Minar height ≈ ?",
-        "options": [
-          "13 m",
-          "1.7 m",
-          "8 m",
-          "20 m"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 2,
-        "level": "C",
-        "unit_id": 9,
-        "category": "u9_t2_C",
-        "category_label": "Heights · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_C_c165357c",
-        "question": "Observer 1.3 m tall, 50 m from minar, elevation 60°. Minar height ≈ ?",
-        "options": [
-          "88 m",
           "50 m",
           "1.3 m",
-          "83 m"
+          "30 m",
+          "25 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_efc60ca2",
+        "question": "Observer 1.2 m tall, 100 m from minar, elevation 45°. Minar height ≈ ?",
+        "options": [
+          "96 m",
+          "100 m",
+          "101 m",
+          "1.2 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_8322cd41",
+        "question": "Observer 1.4 m tall, 10 m from minar, elevation 60°. Minar height ≈ ?",
+        "options": [
+          "19 m",
+          "1.4 m",
+          "10 m",
+          "14 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -804,13 +1393,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_C_7f7d5424",
-        "question": "Observer 1.5 m tall, 30 m from minar, elevation 60°. Minar height ≈ ?",
+        "id": "u9_t2_C_76d5b4db",
+        "question": "Observer 1.5 m tall, 20 m from minar, elevation 30°. Minar height ≈ ?",
         "options": [
-          "30 m",
-          "53 m",
           "1.5 m",
-          "48 m"
+          "13 m",
+          "8 m",
+          "20 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -823,13 +1412,89 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_C_28fcd329",
-        "question": "Observer 1.4 m tall, 50 m from minar, elevation 30°. Minar height ≈ ?",
+        "id": "u9_t2_C_eccb685c",
+        "question": "Observer 1.3 m tall, 10 m from minar, elevation 30°. Minar height ≈ ?",
         "options": [
-          "30 m",
-          "25 m",
+          "2 m",
+          "10 m",
+          "1.3 m",
+          "7 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_18113dbf",
+        "question": "Observer 1.4 m tall, 50 m from minar, elevation 45°. Minar height ≈ ?",
+        "options": [
+          "1.4 m",
+          "46 m",
           "50 m",
-          "1.4 m"
+          "51 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_074e9f3d",
+        "question": "Observer 1.8 m tall, 10 m from minar, elevation 60°. Minar height ≈ ?",
+        "options": [
+          "14 m",
+          "1.8 m",
+          "19 m",
+          "10 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_87538562",
+        "question": "Observer 1.4 m tall, 100 m from minar, elevation 45°. Minar height ≈ ?",
+        "options": [
+          "1.4 m",
+          "101 m",
+          "100 m",
+          "96 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_f2dc99fa",
+        "question": "Observer 1.5 m tall, 10 m from minar, elevation 30°. Minar height ≈ ?",
+        "options": [
+          "7 m",
+          "2 m",
+          "1.5 m",
+          "10 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -842,13 +1507,203 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_C_b0770ec9",
-        "question": "Observer 1.8 m tall, 30 m from minar, elevation 30°. Minar height ≈ ?",
+        "id": "u9_t2_C_4468cf24",
+        "question": "Observer 1.5 m tall, 10 m from minar, elevation 60°. Minar height ≈ ?",
         "options": [
-          "1.8 m",
+          "14 m",
           "19 m",
+          "10 m",
+          "1.5 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_280c4dad",
+        "question": "Observer 1.7 m tall, 100 m from minar, elevation 45°. Minar height ≈ ?",
+        "options": [
+          "100 m",
+          "102 m",
+          "97 m",
+          "1.7 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_f610be1c",
+        "question": "Observer 1.4 m tall, 20 m from minar, elevation 30°. Minar height ≈ ?",
+        "options": [
+          "20 m",
+          "8 m",
+          "1.4 m",
+          "13 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_d4d1c671",
+        "question": "Observer 1.8 m tall, 100 m from minar, elevation 60°. Minar height ≈ ?",
+        "options": [
+          "170 m",
+          "100 m",
+          "175 m",
+          "1.8 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_76ba36c8",
+        "question": "Observer 1.3 m tall, 50 m from minar, elevation 45°. Minar height ≈ ?",
+        "options": [
+          "46 m",
+          "50 m",
+          "51 m",
+          "1.3 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_755f6960",
+        "question": "Observer 1.6 m tall, 30 m from minar, elevation 30°. Minar height ≈ ?",
+        "options": [
+          "1.6 m",
           "30 m",
+          "19 m",
           "14 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_1aad3a8e",
+        "question": "Observer 1.8 m tall, 30 m from minar, elevation 60°. Minar height ≈ ?",
+        "options": [
+          "49 m",
+          "1.8 m",
+          "54 m",
+          "30 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_174fcea8",
+        "question": "Observer 1.7 m tall, 100 m from minar, elevation 30°. Minar height ≈ ?",
+        "options": [
+          "100 m",
+          "59 m",
+          "1.7 m",
+          "54 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_157d3d8a",
+        "question": "Observer 1.5 m tall, 30 m from minar, elevation 45°. Minar height ≈ ?",
+        "options": [
+          "1.5 m",
+          "26 m",
+          "31 m",
+          "30 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_cf0dec29",
+        "question": "Observer 1.6 m tall, 50 m from minar, elevation 45°. Minar height ≈ ?",
+        "options": [
+          "47 m",
+          "52 m",
+          "50 m",
+          "1.6 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t2_C",
+        "category_label": "Heights · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_C_81f4fe9c",
+        "question": "Observer 1.6 m tall, 20 m from minar, elevation 45°. Minar height ≈ ?",
+        "options": [
+          "17 m",
+          "22 m",
+          "1.6 m",
+          "20 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -863,30 +1718,11 @@
     ],
     "D": [
       {
-        "id": "u9_t2_D_34952bde",
-        "question": "Balloon at 80 m. Horizontal distance 80 m gives elevation:",
+        "id": "u9_t2_D_d4b4f52a",
+        "question": "Balloon at 40 m. Horizontal distance 40 m gives elevation:",
         "options": [
-          "40 m",
           "30 m",
-          "160 m",
-          "80 m"
-        ],
-        "answer": 3,
-        "explanation": "tan θ = 1 ⇒ 45°.",
-        "topic": 2,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t2_D",
-        "category_label": "Heights · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_D_c17f3736",
-        "question": "Balloon at 40 m. Horizontal distance 40 m gives elevation:",
-        "options": [
           "80 m",
-          "100 m",
           "20 m",
           "40 m"
         ],
@@ -901,51 +1737,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_D_b5060e95",
+        "id": "u9_t2_D_539c575e",
         "question": "Balloon at 80 m. Horizontal distance 80 m gives elevation:",
         "options": [
           "160 m",
+          "30 m",
           "80 m",
-          "50 m",
           "40 m"
-        ],
-        "answer": 1,
-        "explanation": "tan θ = 1 ⇒ 45°.",
-        "topic": 2,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t2_D",
-        "category_label": "Heights · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_D_8874e191",
-        "question": "Balloon at 80 m. Horizontal distance 80 m gives elevation:",
-        "options": [
-          "80 m",
-          "40 m",
-          "10 m",
-          "160 m"
-        ],
-        "answer": 0,
-        "explanation": "tan θ = 1 ⇒ 45°.",
-        "topic": 2,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t2_D",
-        "category_label": "Heights · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_D_c0b0b7c8",
-        "question": "Balloon at 40 m. Horizontal distance 40 m gives elevation:",
-        "options": [
-          "80 m",
-          "20 m",
-          "40 m",
-          "10 m"
         ],
         "answer": 2,
         "explanation": "tan θ = 1 ⇒ 45°.",
@@ -958,10 +1756,10 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_D_cf01c5f2",
+        "id": "u9_t2_D_d0cb7aa5",
         "question": "Balloon at 40 m. Horizontal distance 40 m gives elevation:",
         "options": [
-          "40 m (alt)",
+          "100 m",
           "20 m",
           "80 m",
           "40 m"
@@ -977,50 +1775,12 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_D_86b213a1",
+        "id": "u9_t2_D_49fef197",
         "question": "Balloon at 60 m. Horizontal distance 60 m gives elevation:",
         "options": [
-          "120 m",
-          "60 m",
           "30 m",
-          "10 m"
-        ],
-        "answer": 1,
-        "explanation": "tan θ = 1 ⇒ 45°.",
-        "topic": 2,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t2_D",
-        "category_label": "Heights · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_D_5abf2c97",
-        "question": "Balloon at 80 m. Horizontal distance 80 m gives elevation:",
-        "options": [
-          "80 m",
-          "160 m",
-          "100 m",
-          "40 m"
-        ],
-        "answer": 0,
-        "explanation": "tan θ = 1 ⇒ 45°.",
-        "topic": 2,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t2_D",
-        "category_label": "Heights · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_D_9763f2bd",
-        "question": "Balloon at 60 m. Horizontal distance 60 m gives elevation:",
-        "options": [
+          "10 m",
           "120 m",
-          "100 m",
-          "30 m",
           "60 m"
         ],
         "answer": 3,
@@ -1034,32 +1794,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_D_89693dcc",
-        "question": "Balloon at 60 m. Horizontal distance 60 m gives elevation:",
+        "id": "u9_t2_D_38ed3446",
+        "question": "Balloon at 80 m. Horizontal distance 80 m gives elevation:",
         "options": [
-          "60 m",
+          "40 m",
+          "80 m",
           "50 m",
-          "120 m",
-          "30 m"
-        ],
-        "answer": 0,
-        "explanation": "tan θ = 1 ⇒ 45°.",
-        "topic": 2,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t2_D",
-        "category_label": "Heights · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_D_205c4232",
-        "question": "Balloon at 60 m. Horizontal distance 60 m gives elevation:",
-        "options": [
-          "30 m",
-          "60 m",
-          "20 m",
-          "120 m"
+          "160 m"
         ],
         "answer": 1,
         "explanation": "tan θ = 1 ⇒ 45°.",
@@ -1072,15 +1813,15 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_D_bc83b81a",
+        "id": "u9_t2_D_659e51ff",
         "question": "Balloon at 60 m. Horizontal distance 60 m gives elevation:",
         "options": [
           "60 m (alt)",
-          "30 m",
+          "60 m",
           "120 m",
-          "60 m"
+          "30 m"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "tan θ = 1 ⇒ 45°.",
         "topic": 2,
         "level": "D",
@@ -1091,13 +1832,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_D_34606e39",
-        "question": "Balloon at 80 m. Horizontal distance 80 m gives elevation:",
+        "id": "u9_t2_D_7fc6b029",
+        "question": "Balloon at 60 m. Horizontal distance 60 m gives elevation:",
         "options": [
-          "80 m",
-          "20 m",
-          "160 m",
-          "40 m"
+          "60 m",
+          "120 m",
+          "30 m",
+          "20 m"
         ],
         "answer": 0,
         "explanation": "tan θ = 1 ⇒ 45°.",
@@ -1110,12 +1851,126 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_D_ac718697",
+        "id": "u9_t2_D_77a66161",
+        "question": "Balloon at 40 m. Horizontal distance 40 m gives elevation:",
+        "options": [
+          "40 m",
+          "80 m",
+          "40 m (alt)",
+          "20 m"
+        ],
+        "answer": 0,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_a376e97b",
+        "question": "Balloon at 40 m. Horizontal distance 40 m gives elevation:",
+        "options": [
+          "10 m",
+          "80 m",
+          "40 m",
+          "20 m"
+        ],
+        "answer": 2,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_aca31d08",
+        "question": "Balloon at 80 m. Horizontal distance 80 m gives elevation:",
+        "options": [
+          "40 m",
+          "80 m",
+          "100 m",
+          "160 m"
+        ],
+        "answer": 1,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_bfaedeaf",
+        "question": "Balloon at 80 m. Horizontal distance 80 m gives elevation:",
+        "options": [
+          "40 m",
+          "80 m",
+          "20 m",
+          "160 m"
+        ],
+        "answer": 1,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_94b54d05",
         "question": "Balloon at 40 m. Horizontal distance 40 m gives elevation:",
         "options": [
           "80 m",
-          "20 m",
+          "50 m",
           "40 m",
+          "20 m"
+        ],
+        "answer": 2,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_f81dff75",
+        "question": "Balloon at 80 m. Horizontal distance 80 m gives elevation:",
+        "options": [
+          "40 m",
+          "10 m",
+          "80 m",
+          "160 m"
+        ],
+        "answer": 2,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_a432e5dd",
+        "question": "Balloon at 60 m. Horizontal distance 60 m gives elevation:",
+        "options": [
+          "50 m",
+          "120 m",
+          "60 m",
           "30 m"
         ],
         "answer": 2,
@@ -1129,15 +1984,300 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_D_2d83e214",
-        "question": "Balloon at 40 m. Horizontal distance 40 m gives elevation:",
+        "id": "u9_t2_D_a84b9784",
+        "question": "Balloon at 60 m. Horizontal distance 60 m gives elevation:",
         "options": [
-          "40 m",
-          "50 m",
-          "20 m",
-          "80 m"
+          "30 m",
+          "120 m",
+          "60 m",
+          "100 m"
+        ],
+        "answer": 2,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_72355ab7",
+        "question": "Balloon at 103 m. Horizontal distance 103 m gives elevation:",
+        "options": [
+          "51 m",
+          "103 m",
+          "49 m",
+          "206 m"
+        ],
+        "answer": 1,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_f918737c",
+        "question": "Balloon at 104 m. Horizontal distance 104 m gives elevation:",
+        "options": [
+          "208 m",
+          "104 m",
+          "52 m",
+          "26 m"
+        ],
+        "answer": 1,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_b5b7d51c",
+        "question": "Balloon at 120 m. Horizontal distance 120 m gives elevation:",
+        "options": [
+          "240 m",
+          "104 m",
+          "60 m",
+          "120 m"
+        ],
+        "answer": 3,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_665fcf07",
+        "question": "Balloon at 54 m. Horizontal distance 54 m gives elevation:",
+        "options": [
+          "54 m",
+          "108 m",
+          "73 m",
+          "27 m"
         ],
         "answer": 0,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_68f15330",
+        "question": "Balloon at 69 m. Horizontal distance 69 m gives elevation:",
+        "options": [
+          "138 m",
+          "34 m",
+          "69 m",
+          "108 m"
+        ],
+        "answer": 2,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_224475ac",
+        "question": "Balloon at 47 m. Horizontal distance 47 m gives elevation:",
+        "options": [
+          "108 m",
+          "23 m",
+          "94 m",
+          "47 m"
+        ],
+        "answer": 3,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_285f8ec8",
+        "question": "Balloon at 29 m. Horizontal distance 29 m gives elevation:",
+        "options": [
+          "14 m",
+          "29 m",
+          "100 m",
+          "58 m"
+        ],
+        "answer": 1,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_3fa9a7b7",
+        "question": "Balloon at 99 m. Horizontal distance 99 m gives elevation:",
+        "options": [
+          "198 m",
+          "49 m",
+          "13 m",
+          "99 m"
+        ],
+        "answer": 3,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_6d5de792",
+        "question": "Balloon at 110 m. Horizontal distance 110 m gives elevation:",
+        "options": [
+          "55 m",
+          "110 m",
+          "220 m",
+          "45 m"
+        ],
+        "answer": 1,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_7e75914f",
+        "question": "Balloon at 92 m. Horizontal distance 92 m gives elevation:",
+        "options": [
+          "46 m",
+          "92 m",
+          "60 m",
+          "184 m"
+        ],
+        "answer": 1,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_8aec0a3f",
+        "question": "Balloon at 75 m. Horizontal distance 75 m gives elevation:",
+        "options": [
+          "37 m",
+          "51 m",
+          "75 m",
+          "150 m"
+        ],
+        "answer": 2,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_2c1a281d",
+        "question": "Balloon at 82 m. Horizontal distance 82 m gives elevation:",
+        "options": [
+          "82 m",
+          "41 m",
+          "38 m",
+          "164 m"
+        ],
+        "answer": 0,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_6c5ec924",
+        "question": "Balloon at 105 m. Horizontal distance 105 m gives elevation:",
+        "options": [
+          "90 m",
+          "52 m",
+          "105 m",
+          "210 m"
+        ],
+        "answer": 2,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_e35372ba",
+        "question": "Balloon at 27 m. Horizontal distance 27 m gives elevation:",
+        "options": [
+          "54 m",
+          "23 m",
+          "13 m",
+          "27 m"
+        ],
+        "answer": 3,
+        "explanation": "tan θ = 1 ⇒ 45°.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_ea530e31",
+        "question": "Balloon at 115 m. Horizontal distance 115 m gives elevation:",
+        "options": [
+          "60 m",
+          "57 m",
+          "230 m",
+          "115 m"
+        ],
+        "answer": 3,
         "explanation": "tan θ = 1 ⇒ 45°.",
         "topic": 2,
         "level": "D",
@@ -1150,15 +2290,15 @@
     ],
     "E": [
       {
-        "id": "u9_t2_E_24fa5035",
-        "question": "8 m pole casts 8 m shadow. Tower casts 35 m shadow. Tower height?",
+        "id": "u9_t2_E_b8aca83f",
+        "question": "5 m pole casts 5 m shadow. Tower casts 47 m shadow. Tower height?",
         "options": [
-          "45 m",
-          "35 m (alt)",
-          "35 m",
-          "8 m"
+          "5 m",
+          "47 m (alt)",
+          "57 m",
+          "47 m"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -1169,12 +2309,31 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_5aa529f3",
-        "question": "7 m pole casts 6 m shadow. Tower casts 20 m shadow. Tower height?",
+        "id": "u9_t2_E_5c3291e7",
+        "question": "6 m pole casts 6 m shadow. Tower casts 40 m shadow. Tower height?",
         "options": [
+          "40 m (alt)",
+          "40 m",
+          "6 m",
+          "50 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_d3b33fb2",
+        "question": "4 m pole casts 4 m shadow. Tower casts 23 m shadow. Tower height?",
+        "options": [
+          "4 m",
+          "23 m (alt)",
           "33 m",
-          "20 m",
-          "7 m",
           "23 m"
         ],
         "answer": 3,
@@ -1188,13 +2347,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_977afdae",
-        "question": "5 m pole casts 5 m shadow. Tower casts 21 m shadow. Tower height?",
+        "id": "u9_t2_E_0c4abb98",
+        "question": "4 m pole casts 6 m shadow. Tower casts 32 m shadow. Tower height?",
         "options": [
-          "21 m (alt)",
           "31 m",
+          "4 m",
           "21 m",
-          "5 m"
+          "32 m"
         ],
         "answer": 2,
         "explanation": "",
@@ -1207,12 +2366,183 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_cd0d89b7",
-        "question": "7 m pole casts 4 m shadow. Tower casts 23 m shadow. Tower height?",
+        "id": "u9_t2_E_5c9764a3",
+        "question": "6 m pole casts 7 m shadow. Tower casts 39 m shadow. Tower height?",
         "options": [
-          "40 m",
+          "39 m",
+          "33 m",
+          "6 m",
+          "43 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_a50661ff",
+        "question": "6 m pole casts 5 m shadow. Tower casts 28 m shadow. Tower height?",
+        "options": [
+          "43 m",
+          "6 m",
+          "33 m",
+          "28 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_e1aebb7e",
+        "question": "5 m pole casts 7 m shadow. Tower casts 33 m shadow. Tower height?",
+        "options": [
+          "33 m",
+          "5 m",
           "23 m",
+          "23 m (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_e66819d2",
+        "question": "5 m pole casts 4 m shadow. Tower casts 37 m shadow. Tower height?",
+        "options": [
+          "37 m",
+          "46 m",
+          "56 m",
+          "5 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_52c388ee",
+        "question": "8 m pole casts 8 m shadow. Tower casts 25 m shadow. Tower height?",
+        "options": [
+          "8 m",
+          "35 m",
+          "25 m",
+          "25 m (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_acea3ecd",
+        "question": "5 m pole casts 5 m shadow. Tower casts 45 m shadow. Tower height?",
+        "options": [
+          "45 m (alt)",
+          "5 m",
+          "55 m",
+          "45 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_244412f8",
+        "question": "7 m pole casts 4 m shadow. Tower casts 30 m shadow. Tower height?",
+        "options": [
+          "52 m",
+          "62 m",
+          "7 m",
+          "30 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_6fffacb9",
+        "question": "5 m pole casts 8 m shadow. Tower casts 50 m shadow. Tower height?",
+        "options": [
+          "41 m",
+          "5 m",
           "50 m",
+          "31 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_ea248915",
+        "question": "8 m pole casts 4 m shadow. Tower casts 35 m shadow. Tower height?",
+        "options": [
+          "8 m",
+          "35 m",
+          "80 m",
+          "70 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_85ccdaff",
+        "question": "7 m pole casts 7 m shadow. Tower casts 30 m shadow. Tower height?",
+        "options": [
+          "30 m",
+          "40 m",
+          "30 m (alt)",
           "7 m"
         ],
         "answer": 0,
@@ -1226,15 +2556,15 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_bc4ce4e3",
-        "question": "6 m pole casts 8 m shadow. Tower casts 45 m shadow. Tower height?",
+        "id": "u9_t2_E_d464c573",
+        "question": "5 m pole casts 4 m shadow. Tower casts 20 m shadow. Tower height?",
         "options": [
-          "33 m",
-          "43 m",
-          "45 m",
-          "6 m"
+          "35 m",
+          "25 m",
+          "20 m",
+          "5 m"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -1245,13 +2575,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_fc6bbc30",
-        "question": "4 m pole casts 4 m shadow. Tower casts 29 m shadow. Tower height?",
+        "id": "u9_t2_E_3f6a5dcf",
+        "question": "4 m pole casts 8 m shadow. Tower casts 44 m shadow. Tower height?",
         "options": [
-          "29 m",
-          "39 m",
+          "22 m",
+          "44 m",
           "4 m",
-          "29 m (alt)"
+          "32 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -1264,13 +2594,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_a9827bb1",
-        "question": "5 m pole casts 4 m shadow. Tower casts 42 m shadow. Tower height?",
+        "id": "u9_t2_E_d592556a",
+        "question": "7 m pole casts 6 m shadow. Tower casts 43 m shadow. Tower height?",
         "options": [
-          "5 m",
-          "42 m",
-          "62 m",
-          "52 m"
+          "7 m",
+          "50 m",
+          "43 m",
+          "60 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_8a926185",
+        "question": "4 m pole casts 8 m shadow. Tower casts 40 m shadow. Tower height?",
+        "options": [
+          "40 m",
+          "4 m",
+          "30 m",
+          "20 m"
         ],
         "answer": 3,
         "explanation": "",
@@ -1283,13 +2632,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_f3f91b1b",
-        "question": "5 m pole casts 5 m shadow. Tower casts 23 m shadow. Tower height?",
+        "id": "u9_t2_E_ddc0a2cf",
+        "question": "4 m pole casts 6 m shadow. Tower casts 39 m shadow. Tower height?",
         "options": [
-          "23 m",
-          "5 m",
-          "23 m (alt)",
-          "33 m"
+          "4 m",
+          "36 m",
+          "39 m",
+          "26 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_e3bfc986",
+        "question": "5 m pole casts 7 m shadow. Tower casts 43 m shadow. Tower height?",
+        "options": [
+          "30 m",
+          "43 m",
+          "40 m",
+          "5 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -1302,13 +2670,51 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_f4f6f2fb",
-        "question": "4 m pole casts 7 m shadow. Tower casts 42 m shadow. Tower height?",
+        "id": "u9_t2_E_309b1372",
+        "question": "6 m pole casts 5 m shadow. Tower casts 29 m shadow. Tower height?",
         "options": [
-          "4 m",
-          "42 m",
-          "24 m",
-          "34 m"
+          "29 m",
+          "34 m",
+          "44 m",
+          "6 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_e1605755",
+        "question": "5 m pole casts 4 m shadow. Tower casts 27 m shadow. Tower height?",
+        "options": [
+          "5 m",
+          "33 m",
+          "27 m",
+          "43 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_b94e1d97",
+        "question": "7 m pole casts 7 m shadow. Tower casts 37 m shadow. Tower height?",
+        "options": [
+          "7 m",
+          "47 m",
+          "37 m",
+          "37 m (alt)"
         ],
         "answer": 2,
         "explanation": "",
@@ -1321,13 +2727,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_2c8588e4",
-        "question": "6 m pole casts 7 m shadow. Tower casts 33 m shadow. Tower height?",
+        "id": "u9_t2_E_73744b66",
+        "question": "6 m pole casts 4 m shadow. Tower casts 21 m shadow. Tower height?",
         "options": [
-          "38 m",
-          "28 m",
+          "21 m",
+          "31 m",
           "6 m",
-          "33 m"
+          "41 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -1340,13 +2746,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_7fc0611d",
-        "question": "7 m pole casts 4 m shadow. Tower casts 31 m shadow. Tower height?",
+        "id": "u9_t2_E_b10544b3",
+        "question": "4 m pole casts 5 m shadow. Tower casts 37 m shadow. Tower height?",
+        "options": [
+          "39 m",
+          "4 m",
+          "37 m",
+          "29 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_47cc91ca",
+        "question": "4 m pole casts 4 m shadow. Tower casts 21 m shadow. Tower height?",
         "options": [
           "31 m",
-          "54 m",
-          "7 m",
-          "64 m"
+          "21 m",
+          "21 m (alt)",
+          "4 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -1359,13 +2784,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_bba47ed3",
-        "question": "7 m pole casts 4 m shadow. Tower casts 42 m shadow. Tower height?",
+        "id": "u9_t2_E_4fd14658",
+        "question": "6 m pole casts 7 m shadow. Tower casts 46 m shadow. Tower height?",
         "options": [
-          "73 m",
-          "7 m",
-          "42 m",
-          "83 m"
+          "46 m",
+          "39 m",
+          "49 m",
+          "6 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_62946761",
+        "question": "5 m pole casts 5 m shadow. Tower casts 39 m shadow. Tower height?",
+        "options": [
+          "39 m",
+          "39 m (alt)",
+          "5 m",
+          "49 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -1378,51 +2822,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t2_E_31144e6b",
-        "question": "8 m pole casts 8 m shadow. Tower casts 47 m shadow. Tower height?",
+        "id": "u9_t2_E_f8005054",
+        "question": "6 m pole casts 5 m shadow. Tower casts 44 m shadow. Tower height?",
         "options": [
-          "57 m",
+          "62 m",
+          "44 m",
+          "52 m",
+          "6 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t2_E",
+        "category_label": "Heights · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_E_aae01b75",
+        "question": "6 m pole casts 6 m shadow. Tower casts 47 m shadow. Tower height?",
+        "options": [
           "47 m",
-          "8 m",
+          "57 m",
+          "6 m",
           "47 m (alt)"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t2_E",
-        "category_label": "Heights · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_E_06540baf",
-        "question": "8 m pole casts 4 m shadow. Tower casts 45 m shadow. Tower height?",
-        "options": [
-          "100 m",
-          "90 m",
-          "8 m",
-          "45 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t2_E",
-        "category_label": "Heights · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t2_E_4099988f",
-        "question": "4 m pole casts 7 m shadow. Tower casts 30 m shadow. Tower height?",
-        "options": [
-          "17 m",
-          "30 m",
-          "27 m",
-          "4 m"
         ],
         "answer": 0,
         "explanation": "",

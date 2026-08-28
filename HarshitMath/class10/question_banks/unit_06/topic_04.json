@@ -2,16 +2,548 @@
   "questions": {
     "A": [
       {
-        "id": "u6_t4_A_0aa18040",
+        "id": "u6_t4_A_d0ef4ab8",
         "question": "Right triangle with legs 3 cm and 4 cm. Hypotenuse = ?",
         "options": [
           "12 cm",
-          "6 cm",
+          "5 cm",
           "7 cm",
-          "5 cm"
+          "6 cm"
+        ],
+        "answer": 1,
+        "explanation": "3² + 4² = 5².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_00df6c5d",
+        "question": "Right triangle with legs 30 cm and 72 cm. Hypotenuse = ?",
+        "options": [
+          "79 cm",
+          "102 cm",
+          "78 cm",
+          "2160 cm"
+        ],
+        "answer": 2,
+        "explanation": "30² + 72² = 78².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_c4611a4d",
+        "question": "Right triangle with legs 15 cm and 20 cm. Hypotenuse = ?",
+        "options": [
+          "35 cm",
+          "300 cm",
+          "26 cm",
+          "25 cm"
         ],
         "answer": 3,
-        "explanation": "3² + 4² = 5².",
+        "explanation": "15² + 20² = 25².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_dd91fd8e",
+        "question": "Right triangle with legs 36 cm and 160 cm. Hypotenuse = ?",
+        "options": [
+          "5760 cm",
+          "196 cm",
+          "164 cm",
+          "165 cm"
+        ],
+        "answer": 2,
+        "explanation": "36² + 160² = 164².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_ddcedeea",
+        "question": "Right triangle with legs 24 cm and 32 cm. Hypotenuse = ?",
+        "options": [
+          "41 cm",
+          "40 cm",
+          "56 cm",
+          "768 cm"
+        ],
+        "answer": 1,
+        "explanation": "24² + 32² = 40².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_b9243f74",
+        "question": "Right triangle with legs 21 cm and 28 cm. Hypotenuse = ?",
+        "options": [
+          "49 cm",
+          "36 cm",
+          "35 cm",
+          "588 cm"
+        ],
+        "answer": 2,
+        "explanation": "21² + 28² = 35².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_f58e75f2",
+        "question": "Right triangle with legs 60 cm and 175 cm. Hypotenuse = ?",
+        "options": [
+          "185 cm",
+          "10500 cm",
+          "186 cm",
+          "235 cm"
+        ],
+        "answer": 0,
+        "explanation": "60² + 175² = 185².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_44a89f88",
+        "question": "Right triangle with legs 9 cm and 12 cm. Hypotenuse = ?",
+        "options": [
+          "15 cm",
+          "21 cm",
+          "16 cm",
+          "108 cm"
+        ],
+        "answer": 0,
+        "explanation": "9² + 12² = 15².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_bea5bbd3",
+        "question": "Right triangle with legs 45 cm and 200 cm. Hypotenuse = ?",
+        "options": [
+          "9000 cm",
+          "245 cm",
+          "205 cm",
+          "206 cm"
+        ],
+        "answer": 2,
+        "explanation": "45² + 200² = 205².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_88728a84",
+        "question": "Right triangle with legs 40 cm and 75 cm. Hypotenuse = ?",
+        "options": [
+          "85 cm",
+          "115 cm",
+          "3000 cm",
+          "86 cm"
+        ],
+        "answer": 0,
+        "explanation": "40² + 75² = 85².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_e9b6e162",
+        "question": "Right triangle with legs 64 cm and 120 cm. Hypotenuse = ?",
+        "options": [
+          "137 cm",
+          "136 cm",
+          "7680 cm",
+          "184 cm"
+        ],
+        "answer": 1,
+        "explanation": "64² + 120² = 136².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_edc966c1",
+        "question": "Right triangle with legs 27 cm and 120 cm. Hypotenuse = ?",
+        "options": [
+          "3240 cm",
+          "147 cm",
+          "124 cm",
+          "123 cm"
+        ],
+        "answer": 3,
+        "explanation": "27² + 120² = 123².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_2182c16d",
+        "question": "Right triangle with legs 84 cm and 245 cm. Hypotenuse = ?",
+        "options": [
+          "20580 cm",
+          "259 cm",
+          "329 cm",
+          "260 cm"
+        ],
+        "answer": 1,
+        "explanation": "84² + 245² = 259².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_575bb24c",
+        "question": "Right triangle with legs 72 cm and 320 cm. Hypotenuse = ?",
+        "options": [
+          "328 cm",
+          "23040 cm",
+          "392 cm",
+          "329 cm"
+        ],
+        "answer": 0,
+        "explanation": "72² + 320² = 328².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_3f583315",
+        "question": "Right triangle with legs 24 cm and 70 cm. Hypotenuse = ?",
+        "options": [
+          "74 cm",
+          "94 cm",
+          "75 cm",
+          "1680 cm"
+        ],
+        "answer": 0,
+        "explanation": "24² + 70² = 74².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_3170e0a2",
+        "question": "Right triangle with legs 48 cm and 90 cm. Hypotenuse = ?",
+        "options": [
+          "103 cm",
+          "102 cm",
+          "4320 cm",
+          "138 cm"
+        ],
+        "answer": 1,
+        "explanation": "48² + 90² = 102².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_9f19d75d",
+        "question": "Right triangle with legs 36 cm and 105 cm. Hypotenuse = ?",
+        "options": [
+          "111 cm",
+          "112 cm",
+          "141 cm",
+          "3780 cm"
+        ],
+        "answer": 0,
+        "explanation": "36² + 105² = 111².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_c3e6d064",
+        "question": "Right triangle with legs 24 cm and 45 cm. Hypotenuse = ?",
+        "options": [
+          "51 cm",
+          "69 cm",
+          "52 cm",
+          "1080 cm"
+        ],
+        "answer": 0,
+        "explanation": "24² + 45² = 51².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_9aa32470",
+        "question": "Right triangle with legs 18 cm and 80 cm. Hypotenuse = ?",
+        "options": [
+          "98 cm",
+          "82 cm",
+          "83 cm",
+          "1440 cm"
+        ],
+        "answer": 1,
+        "explanation": "18² + 80² = 82².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_ed952a3c",
+        "question": "Right triangle with legs 56 cm and 105 cm. Hypotenuse = ?",
+        "options": [
+          "119 cm",
+          "120 cm",
+          "5880 cm",
+          "161 cm"
+        ],
+        "answer": 0,
+        "explanation": "56² + 105² = 119².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_a8165b7f",
+        "question": "Right triangle with legs 28 cm and 96 cm. Hypotenuse = ?",
+        "options": [
+          "124 cm",
+          "2688 cm",
+          "100 cm",
+          "101 cm"
+        ],
+        "answer": 2,
+        "explanation": "28² + 96² = 100².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_4572e4d4",
+        "question": "Right triangle with legs 96 cm and 280 cm. Hypotenuse = ?",
+        "options": [
+          "376 cm",
+          "26880 cm",
+          "297 cm",
+          "296 cm"
+        ],
+        "answer": 3,
+        "explanation": "96² + 280² = 296².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_ff739e05",
+        "question": "Right triangle with legs 25 cm and 60 cm. Hypotenuse = ?",
+        "options": [
+          "65 cm",
+          "66 cm",
+          "85 cm",
+          "1500 cm"
+        ],
+        "answer": 0,
+        "explanation": "25² + 60² = 65².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_d871f068",
+        "question": "Right triangle with legs 72 cm and 210 cm. Hypotenuse = ?",
+        "options": [
+          "222 cm",
+          "223 cm",
+          "282 cm",
+          "15120 cm"
+        ],
+        "answer": 0,
+        "explanation": "72² + 210² = 222².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_9556d750",
+        "question": "Right triangle with legs 42 cm and 144 cm. Hypotenuse = ?",
+        "options": [
+          "150 cm",
+          "186 cm",
+          "151 cm",
+          "6048 cm"
+        ],
+        "answer": 0,
+        "explanation": "42² + 144² = 150².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_1ea1c1d2",
+        "question": "Right triangle with legs 16 cm and 30 cm. Hypotenuse = ?",
+        "options": [
+          "34 cm",
+          "480 cm",
+          "35 cm",
+          "46 cm"
+        ],
+        "answer": 0,
+        "explanation": "16² + 30² = 34².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_23d2ac4c",
+        "question": "Right triangle with legs 10 cm and 24 cm. Hypotenuse = ?",
+        "options": [
+          "26 cm",
+          "27 cm",
+          "34 cm",
+          "240 cm"
+        ],
+        "answer": 0,
+        "explanation": "10² + 24² = 26².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_98d56b0f",
+        "question": "Right triangle with legs 15 cm and 36 cm. Hypotenuse = ?",
+        "options": [
+          "39 cm",
+          "40 cm",
+          "540 cm",
+          "51 cm"
+        ],
+        "answer": 0,
+        "explanation": "15² + 36² = 39².",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_A_0658c056",
+        "question": "Right triangle with legs 14 cm and 48 cm. Hypotenuse = ?",
+        "options": [
+          "51 cm",
+          "50 cm",
+          "672 cm",
+          "62 cm"
+        ],
+        "answer": 1,
+        "explanation": "14² + 48² = 50².",
         "topic": 4,
         "level": "A",
         "unit_id": 6,
@@ -23,15 +555,34 @@
     ],
     "B": [
       {
-        "id": "u6_t4_B_dbc02a58",
+        "id": "u6_t4_B_28812584",
         "question": "NCERT uses similarity of triangles to prove Pythagoras theorem by:",
         "options": [
-          "Drop altitude on hypotenuse — creates similar right triangles",
-          "Assume c = a + b",
           "Measure with a tape only",
-          "Use factorisation of a² + b²"
+          "Use factorisation of a² + b²",
+          "Assume c = a + b",
+          "Drop altitude on hypotenuse — creates similar right triangles"
         ],
-        "answer": 0,
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_B_9cc9dadf",
+        "question": "In a right triangle, the square on the hypotenuse equals:",
+        "options": [
+          "Product of the legs",
+          "Twice the shorter leg",
+          "Sum of squares on the other two sides",
+          "Difference of the legs"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 4,
         "level": "B",
@@ -44,15 +595,566 @@
     ],
     "C": [
       {
-        "id": "u6_t4_C_c92f6dc1",
+        "id": "u6_t4_C_3046de1d",
         "question": "A 1 m tree casts a 0 m shadow. A pole casts 0 m shadow. Pole height?",
         "options": [
-          "100 cm",
           "60 cm",
-          "130 cm",
-          "150 cm"
+          "150 cm",
+          "100 cm",
+          "130 cm"
+        ],
+        "answer": 2,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_89955e02",
+        "question": "A 1 m tree casts a 0 m shadow. A pole casts 1 m shadow. Pole height?",
+        "options": [
+          "196 cm",
+          "100 cm",
+          "166 cm (alt)",
+          "166 cm"
+        ],
+        "answer": 3,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_dff2d87b",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "170 cm",
+          "132 cm",
+          "60 cm",
+          "102 cm"
+        ],
+        "answer": 3,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_cf9e5e29",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "50 cm",
+          "40 cm",
+          "150 cm",
+          "80 cm"
         ],
         "answer": 0,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_a854bd09",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "65 cm",
+          "130 cm",
+          "35 cm",
+          "30 cm"
+        ],
+        "answer": 2,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_f0524d8c",
+        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "240 cm",
+          "90 cm",
+          "154 cm",
+          "184 cm"
+        ],
+        "answer": 2,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_e0eda5ba",
+        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "200 cm",
+          "122 cm",
+          "60 cm",
+          "92 cm"
+        ],
+        "answer": 3,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_69d39d8e",
+        "question": "A 2 m tree casts a 1 m shadow. A pole casts 1 m shadow. Pole height?",
+        "options": [
+          "165 cm",
+          "110 cm",
+          "240 cm",
+          "195 cm"
+        ],
+        "answer": 0,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_d1e997eb",
+        "question": "A 2 m tree casts a 0 m shadow. A pole casts 1 m shadow. Pole height?",
+        "options": [
+          "333 cm",
+          "250 cm",
+          "120 cm",
+          "363 cm"
+        ],
+        "answer": 0,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_6a63745a",
+        "question": "A 1 m tree casts a 0 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "60 cm",
+          "172 cm",
+          "190 cm",
+          "142 cm"
+        ],
+        "answer": 3,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_1fd5990a",
+        "question": "A 0 m tree casts a 0 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "120 cm",
+          "150 cm",
+          "90 cm",
+          "80 cm"
+        ],
+        "answer": 0,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_9210d4d0",
+        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "136 cm",
+          "240 cm",
+          "106 cm",
+          "80 cm"
+        ],
+        "answer": 2,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_21ae408b",
+        "question": "A 0 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "90 cm",
+          "50 cm",
+          "53 cm",
+          "23 cm"
+        ],
+        "answer": 3,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_8bc7ff6d",
+        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "105 cm",
+          "75 cm",
+          "60 cm",
+          "240 cm"
+        ],
+        "answer": 1,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_e5dd44f3",
+        "question": "A 1 m tree casts a 0 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "130 cm",
+          "203 cm",
+          "80 cm",
+          "173 cm"
+        ],
+        "answer": 3,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_9b5bd643",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "71 cm",
+          "41 cm",
+          "70 cm",
+          "100 cm"
+        ],
+        "answer": 1,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_86d952d6",
+        "question": "A 2 m tree casts a 0 m shadow. A pole casts 1 m shadow. Pole height?",
+        "options": [
+          "120 cm",
+          "375 cm",
+          "230 cm",
+          "345 cm"
+        ],
+        "answer": 3,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_3dfdd441",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "80 cm (alt)",
+          "110 cm",
+          "130 cm",
+          "80 cm"
+        ],
+        "answer": 3,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_3446c7ca",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "160 cm",
+          "64 cm",
+          "94 cm",
+          "60 cm"
+        ],
+        "answer": 1,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_c1aea87b",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "140 cm",
+          "60 cm",
+          "46 cm",
+          "76 cm"
+        ],
+        "answer": 2,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_fce73ddb",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 1 m shadow. Pole height?",
+        "options": [
+          "120 cm",
+          "110 cm (alt)",
+          "140 cm",
+          "110 cm"
+        ],
+        "answer": 3,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_491603bc",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "35 cm",
+          "65 cm",
+          "140 cm",
+          "40 cm"
+        ],
+        "answer": 0,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_249b57e6",
+        "question": "A 2 m tree casts a 0 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "191 cm",
+          "221 cm",
+          "50 cm",
+          "230 cm"
+        ],
+        "answer": 0,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_65f516b2",
+        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "182 cm",
+          "152 cm",
+          "240 cm",
+          "70 cm"
+        ],
+        "answer": 1,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_cd4f03ed",
+        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "70 cm",
+          "210 cm",
+          "77 cm",
+          "107 cm"
+        ],
+        "answer": 2,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_0be0fa20",
+        "question": "A 1 m tree casts a 0 m shadow. A pole casts 1 m shadow. Pole height?",
+        "options": [
+          "140 cm",
+          "220 cm",
+          "250 cm",
+          "110 cm"
+        ],
+        "answer": 1,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_c3510080",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "110 cm",
+          "82 cm",
+          "90 cm",
+          "112 cm"
+        ],
+        "answer": 1,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_e09f1e12",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "60 cm",
+          "140 cm",
+          "76 cm",
+          "106 cm"
+        ],
+        "answer": 2,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_8880c916",
+        "question": "A 1 m tree casts a 0 m shadow. A pole casts 1 m shadow. Pole height?",
+        "options": [
+          "190 cm",
+          "378 cm",
+          "348 cm",
+          "110 cm"
+        ],
+        "answer": 2,
+        "explanation": "Similar triangles: height/shadow is constant.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_3c47afa7",
+        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "options": [
+          "90 cm",
+          "85 cm",
+          "110 cm",
+          "55 cm"
+        ],
+        "answer": 3,
         "explanation": "Similar triangles: height/shadow is constant.",
         "topic": 4,
         "level": "C",
@@ -65,31 +1167,12 @@
     ],
     "D": [
       {
-        "id": "u6_t4_D_06d32de5",
-        "question": "Two similar triangles have corresponding sides in ratio 1:4. Ratio of their areas is:",
-        "options": [
-          "5:1",
-          "8:1",
-          "16:1",
-          "4:1"
-        ],
-        "answer": 2,
-        "explanation": "Area ratio = (scale factor)².",
-        "topic": 4,
-        "level": "D",
-        "unit_id": 6,
-        "category": "u6_t4_D",
-        "category_label": "Apps · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 6 Triangles"
-      },
-      {
-        "id": "u6_t4_D_778e7e75",
+        "id": "u6_t4_D_a08ee2cc",
         "question": "Two similar triangles have corresponding sides in ratio 1:3. Ratio of their areas is:",
         "options": [
+          "4:1",
           "6:1",
           "3:1",
-          "4:1",
           "9:1"
         ],
         "answer": 3,
@@ -103,13 +1186,32 @@
         "chapter_ref": "NCERT Ch 6 Triangles"
       },
       {
-        "id": "u6_t4_D_282b7069",
+        "id": "u6_t4_D_64c34d79",
         "question": "Two similar triangles have corresponding sides in ratio 1:2. Ratio of their areas is:",
         "options": [
           "2:1",
           "4:1",
-          "4:1 (alt)",
-          "3:1"
+          "3:1",
+          "4:1 (alt)"
+        ],
+        "answer": 1,
+        "explanation": "Area ratio = (scale factor)².",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_D_09f58c1d",
+        "question": "Two similar triangles have corresponding sides in ratio 1:4. Ratio of their areas is:",
+        "options": [
+          "4:1",
+          "16:1",
+          "8:1",
+          "5:1"
         ],
         "answer": 1,
         "explanation": "Area ratio = (scale factor)².",
@@ -124,16 +1226,92 @@
     ],
     "E": [
       {
-        "id": "u6_t4_E_fa8c4c48",
+        "id": "u6_t4_E_176f4de2",
         "question": "A ladder 10 m long rests against a wall with foot 6 m from the wall. Height reached on wall?",
         "options": [
-          "10 m",
-          "8 m (alt)",
+          "8 m",
           "6 m",
-          "8 m"
+          "8 m (alt)",
+          "10 m"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "Pythagoras: h² = 10² - 6² = 8².",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_E_060d4a47",
+        "question": "A ladder 15 m long rests against a wall with foot 9 m from the wall. Height reached on wall?",
+        "options": [
+          "9 m",
+          "14 m",
+          "12 m",
+          "15 m"
+        ],
+        "answer": 2,
+        "explanation": "Pythagoras: h² = 15² - 9² = 12².",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_E_8115476e",
+        "question": "A ladder 10 m long rests against a wall with foot 8 m from the wall. Height reached on wall?",
+        "options": [
+          "6 m (alt)",
+          "6 m",
+          "8 m",
+          "10 m"
+        ],
+        "answer": 1,
+        "explanation": "Pythagoras: h² = 10² - 8² = 6².",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_E_0fe30adc",
+        "question": "A ladder 15 m long rests against a wall with foot 12 m from the wall. Height reached on wall?",
+        "options": [
+          "11 m",
+          "15 m",
+          "9 m",
+          "12 m"
+        ],
+        "answer": 2,
+        "explanation": "Pythagoras: h² = 15² - 12² = 9².",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_E_23fae147",
+        "question": "A ladder 13 m long rests against a wall with foot 5 m from the wall. Height reached on wall?",
+        "options": [
+          "12 m",
+          "13 m",
+          "14 m",
+          "5 m"
+        ],
+        "answer": 0,
+        "explanation": "Pythagoras: h² = 13² - 5² = 12².",
         "topic": 4,
         "level": "E",
         "unit_id": 6,

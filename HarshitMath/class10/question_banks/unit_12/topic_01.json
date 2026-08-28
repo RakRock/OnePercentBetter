@@ -19,6 +19,63 @@
         "category_label": "Formulas · Level A",
         "source": "template",
         "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_A_01564e33",
+        "question": "Surface area of a sphere (radius r):",
+        "options": [
+          "2πr²",
+          "4πr²",
+          "πr²h",
+          "2πrh"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 12,
+        "category": "u12_t1_A",
+        "category_label": "Formulas · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_A_014d5cb5",
+        "question": "Volume of a right circular cylinder:",
+        "options": [
+          "πrl",
+          "4πr²/3",
+          "πr²h",
+          "2πrh"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 12,
+        "category": "u12_t1_A",
+        "category_label": "Formulas · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_A_24342d95",
+        "question": "Volume of a cone (radius r, height h):",
+        "options": [
+          "4πr³/3",
+          "πr²h",
+          "2πrh",
+          "πr²h/3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 12,
+        "category": "u12_t1_A",
+        "category_label": "Formulas · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
       }
     ],
     "B": [
@@ -89,6 +146,500 @@
           "1539 cm²"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_16698d52",
+        "question": "Cylinder: r = 5 cm, h = 8 cm. CSA ≈ ?",
+        "options": [
+          "502.66 cm²",
+          "628 cm²",
+          "251.33 cm²",
+          "80 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_142f2c48",
+        "question": "Cylinder: r = 15 cm, h = 14 cm. CSA ≈ ?",
+        "options": [
+          "2638.94 cm²",
+          "420 cm²",
+          "9896 cm²",
+          "1319.47 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_f144b193",
+        "question": "Cylinder: r = 2 cm, h = 18 cm. CSA ≈ ?",
+        "options": [
+          "72 cm²",
+          "226.19 cm²",
+          "226 cm²",
+          "452.38 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_533af5c6",
+        "question": "Cylinder: r = 15 cm, h = 16 cm. CSA ≈ ?",
+        "options": [
+          "3015.92 cm²",
+          "1507.96 cm²",
+          "480 cm²",
+          "11310 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_0ab84a56",
+        "question": "Cylinder: r = 5 cm, h = 9 cm. CSA ≈ ?",
+        "options": [
+          "90 cm²",
+          "282.74 cm²",
+          "707 cm²",
+          "565.48 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_21dbfd77",
+        "question": "Cylinder: r = 3 cm, h = 13 cm. CSA ≈ ?",
+        "options": [
+          "78 cm²",
+          "490.08 cm²",
+          "245.04 cm²",
+          "368 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_1e5212ed",
+        "question": "Cylinder: r = 8 cm, h = 21 cm. CSA ≈ ?",
+        "options": [
+          "336 cm²",
+          "2111.16 cm²",
+          "1055.58 cm²",
+          "4222 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_e4ee7e9a",
+        "question": "Cylinder: r = 3 cm, h = 10 cm. CSA ≈ ?",
+        "options": [
+          "188.5 cm²",
+          "60 cm²",
+          "377.0 cm²",
+          "283 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_d2e81c29",
+        "question": "Cylinder: r = 3 cm, h = 15 cm. CSA ≈ ?",
+        "options": [
+          "565.48 cm²",
+          "424 cm²",
+          "282.74 cm²",
+          "90 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_4869075c",
+        "question": "Cylinder: r = 11 cm, h = 7 cm. CSA ≈ ?",
+        "options": [
+          "967.62 cm²",
+          "483.81 cm²",
+          "2661 cm²",
+          "154 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_d868c719",
+        "question": "Cylinder: r = 5 cm, h = 6 cm. CSA ≈ ?",
+        "options": [
+          "60 cm²",
+          "471 cm²",
+          "377.0 cm²",
+          "188.5 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_5b9828d0",
+        "question": "Cylinder: r = 7 cm, h = 8 cm. CSA ≈ ?",
+        "options": [
+          "351.86 cm²",
+          "703.72 cm²",
+          "1232 cm²",
+          "112 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_3faed25f",
+        "question": "Cylinder: r = 6 cm, h = 9 cm. CSA ≈ ?",
+        "options": [
+          "678.58 cm²",
+          "1018 cm²",
+          "108 cm²",
+          "339.29 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_17e1a51f",
+        "question": "Cylinder: r = 11 cm, h = 3 cm. CSA ≈ ?",
+        "options": [
+          "66 cm²",
+          "207.35 cm²",
+          "1140 cm²",
+          "414.7 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_109b353f",
+        "question": "Cylinder: r = 9 cm, h = 10 cm. CSA ≈ ?",
+        "options": [
+          "2545 cm²",
+          "565.49 cm²",
+          "180 cm²",
+          "1130.98 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_6e807b07",
+        "question": "Cylinder: r = 7 cm, h = 17 cm. CSA ≈ ?",
+        "options": [
+          "238 cm²",
+          "2617 cm²",
+          "1495.4 cm²",
+          "747.7 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_d74357d9",
+        "question": "Cylinder: r = 15 cm, h = 15 cm. CSA ≈ ?",
+        "options": [
+          "1413.72 cm²",
+          "10603 cm²",
+          "450 cm²",
+          "2827.44 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_dec85f49",
+        "question": "Cylinder: r = 11 cm, h = 17 cm. CSA ≈ ?",
+        "options": [
+          "2349.92 cm²",
+          "1174.96 cm²",
+          "374 cm²",
+          "6462 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_9892315f",
+        "question": "Cylinder: r = 8 cm, h = 16 cm. CSA ≈ ?",
+        "options": [
+          "804.25 cm²",
+          "1608.5 cm²",
+          "256 cm²",
+          "3217 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_1ca14b62",
+        "question": "Cylinder: r = 4 cm, h = 8 cm. CSA ≈ ?",
+        "options": [
+          "64 cm²",
+          "201.06 cm²",
+          "402 cm²",
+          "402.12 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_ee40de3e",
+        "question": "Cylinder: r = 15 cm, h = 13 cm. CSA ≈ ?",
+        "options": [
+          "2450.44 cm²",
+          "9189 cm²",
+          "390 cm²",
+          "1225.22 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_e8f2aa15",
+        "question": "Cylinder: r = 7 cm, h = 20 cm. CSA ≈ ?",
+        "options": [
+          "1759.3 cm²",
+          "879.65 cm²",
+          "280 cm²",
+          "3079 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_fbc22206",
+        "question": "Cylinder: r = 11 cm, h = 8 cm. CSA ≈ ?",
+        "options": [
+          "552.92 cm²",
+          "1105.84 cm²",
+          "176 cm²",
+          "3041 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_0e57fcd8",
+        "question": "Cylinder: r = 9 cm, h = 17 cm. CSA ≈ ?",
+        "options": [
+          "4326 cm²",
+          "1922.66 cm²",
+          "961.33 cm²",
+          "306 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_cda3bcb5",
+        "question": "Cylinder: r = 8 cm, h = 11 cm. CSA ≈ ?",
+        "options": [
+          "552.92 cm²",
+          "176 cm²",
+          "2212 cm²",
+          "1105.84 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_2c598165",
+        "question": "Cylinder: r = 9 cm, h = 21 cm. CSA ≈ ?",
+        "options": [
+          "5344 cm²",
+          "2375.04 cm²",
+          "1187.52 cm²",
+          "378 cm²"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 1,
         "level": "B",
@@ -175,6 +726,500 @@
         "category_label": "Formulas · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_c73d7690",
+        "question": "Cone: r = 5 cm, h = 13 cm. Volume ≈ ?",
+        "options": [
+          "680.68 cm³",
+          "65 cm³",
+          "1021 cm³",
+          "340.34 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_b5a188e9",
+        "question": "Cone: r = 4 cm, h = 9 cm. Volume ≈ ?",
+        "options": [
+          "150.8 cm³",
+          "452 cm³",
+          "301.6 cm³",
+          "36 cm³"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_31aeed48",
+        "question": "Cone: r = 14 cm, h = 19 cm. Volume ≈ ?",
+        "options": [
+          "11699 cm³",
+          "266 cm³",
+          "7799.52 cm³",
+          "3899.76 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_a0ae3f00",
+        "question": "Cone: r = 11 cm, h = 20 cm. Volume ≈ ?",
+        "options": [
+          "7603 cm³",
+          "2534.22 cm³",
+          "5068.44 cm³",
+          "220 cm³"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_21037e14",
+        "question": "Cone: r = 8 cm, h = 14 cm. Volume ≈ ?",
+        "options": [
+          "2815 cm³",
+          "112 cm³",
+          "938.29 cm³",
+          "1876.58 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_8a98e493",
+        "question": "Cone: r = 15 cm, h = 19 cm. Volume ≈ ?",
+        "options": [
+          "8953.54 cm³",
+          "13430 cm³",
+          "285 cm³",
+          "4476.77 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_f0a3497f",
+        "question": "Cone: r = 5 cm, h = 6 cm. Volume ≈ ?",
+        "options": [
+          "471 cm³",
+          "30 cm³",
+          "314.16 cm³",
+          "157.08 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_3b2d654a",
+        "question": "Cone: r = 15 cm, h = 12 cm. Volume ≈ ?",
+        "options": [
+          "180 cm³",
+          "8482 cm³",
+          "2827.43 cm³",
+          "5654.86 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_96307c23",
+        "question": "Cone: r = 7 cm, h = 3 cm. Volume ≈ ?",
+        "options": [
+          "21 cm³",
+          "307.88 cm³",
+          "153.94 cm³",
+          "462 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_61d1476b",
+        "question": "Cone: r = 2 cm, h = 14 cm. Volume ≈ ?",
+        "options": [
+          "28 cm³",
+          "117.28 cm³",
+          "176 cm³",
+          "58.64 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_bda015ad",
+        "question": "Cone: r = 10 cm, h = 8 cm. Volume ≈ ?",
+        "options": [
+          "1675.52 cm³",
+          "837.76 cm³",
+          "80 cm³",
+          "2513 cm³"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_cdc17fd0",
+        "question": "Cone: r = 6 cm, h = 9 cm. Volume ≈ ?",
+        "options": [
+          "54 cm³",
+          "1018 cm³",
+          "678.58 cm³",
+          "339.29 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_c6271f36",
+        "question": "Cone: r = 3 cm, h = 22 cm. Volume ≈ ?",
+        "options": [
+          "207.35 cm³",
+          "66 cm³",
+          "622 cm³",
+          "414.7 cm³"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_06a6931e",
+        "question": "Cone: r = 10 cm, h = 13 cm. Volume ≈ ?",
+        "options": [
+          "2722.72 cm³",
+          "4084 cm³",
+          "130 cm³",
+          "1361.36 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_f3767af1",
+        "question": "Cone: r = 5 cm, h = 18 cm. Volume ≈ ?",
+        "options": [
+          "1414 cm³",
+          "90 cm³",
+          "942.48 cm³",
+          "471.24 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_19222f13",
+        "question": "Cone: r = 8 cm, h = 6 cm. Volume ≈ ?",
+        "options": [
+          "1206 cm³",
+          "804.24 cm³",
+          "48 cm³",
+          "402.12 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_c601f896",
+        "question": "Cone: r = 15 cm, h = 21 cm. Volume ≈ ?",
+        "options": [
+          "315 cm³",
+          "9896.02 cm³",
+          "14844 cm³",
+          "4948.01 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_0eff59c7",
+        "question": "Cone: r = 4 cm, h = 21 cm. Volume ≈ ?",
+        "options": [
+          "84 cm³",
+          "351.86 cm³",
+          "703.72 cm³",
+          "1056 cm³"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_48a4436b",
+        "question": "Cone: r = 8 cm, h = 17 cm. Volume ≈ ?",
+        "options": [
+          "3418 cm³",
+          "136 cm³",
+          "2278.7 cm³",
+          "1139.35 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_55ee6c20",
+        "question": "Cone: r = 6 cm, h = 20 cm. Volume ≈ ?",
+        "options": [
+          "2262 cm³",
+          "120 cm³",
+          "753.98 cm³",
+          "1507.96 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_a358969e",
+        "question": "Cone: r = 7 cm, h = 18 cm. Volume ≈ ?",
+        "options": [
+          "126 cm³",
+          "2771 cm³",
+          "923.63 cm³",
+          "1847.26 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_c469cab5",
+        "question": "Cone: r = 14 cm, h = 22 cm. Volume ≈ ?",
+        "options": [
+          "9031.04 cm³",
+          "308 cm³",
+          "4515.52 cm³",
+          "13547 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_e2e759b1",
+        "question": "Cone: r = 10 cm, h = 16 cm. Volume ≈ ?",
+        "options": [
+          "5027 cm³",
+          "3351.04 cm³",
+          "160 cm³",
+          "1675.52 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_fc6c797d",
+        "question": "Cone: r = 7 cm, h = 4 cm. Volume ≈ ?",
+        "options": [
+          "28 cm³",
+          "205.25 cm³",
+          "616 cm³",
+          "410.5 cm³"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_ebbec97d",
+        "question": "Cone: r = 7 cm, h = 9 cm. Volume ≈ ?",
+        "options": [
+          "1385 cm³",
+          "923.62 cm³",
+          "461.81 cm³",
+          "63 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_b5fbe534",
+        "question": "Cone: r = 7 cm, h = 16 cm. Volume ≈ ?",
+        "options": [
+          "2463 cm³",
+          "112 cm³",
+          "821.0 cm³",
+          "1642.0 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
       }
     ],
     "D": [
@@ -253,6 +1298,196 @@
         "category_label": "Formulas · Level D",
         "source": "template",
         "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_D_d9838ee0",
+        "question": "Sphere radius 8 cm. Surface area ≈ ?",
+        "options": [
+          "804.25 cm²",
+          "1608.5 cm²",
+          "402 cm²",
+          "2145 cm³"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t1_D",
+        "category_label": "Formulas · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_D_b8340bef",
+        "question": "Sphere radius 10 cm. Surface area ≈ ?",
+        "options": [
+          "4189 cm³",
+          "2513.28 cm²",
+          "628 cm²",
+          "1256.64 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t1_D",
+        "category_label": "Formulas · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_D_65635b93",
+        "question": "Sphere radius 6 cm. Surface area ≈ ?",
+        "options": [
+          "226 cm²",
+          "905 cm³",
+          "452.39 cm²",
+          "904.78 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t1_D",
+        "category_label": "Formulas · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_D_746450ab",
+        "question": "Sphere radius 9 cm. Surface area ≈ ?",
+        "options": [
+          "1017.88 cm²",
+          "3054 cm³",
+          "509 cm²",
+          "2035.76 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t1_D",
+        "category_label": "Formulas · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_D_35a4b63c",
+        "question": "Sphere radius 15 cm. Surface area ≈ ?",
+        "options": [
+          "5654.86 cm²",
+          "14137 cm³",
+          "1414 cm²",
+          "2827.43 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t1_D",
+        "category_label": "Formulas · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_D_7df8351f",
+        "question": "Sphere radius 11 cm. Surface area ≈ ?",
+        "options": [
+          "3041.06 cm²",
+          "760 cm²",
+          "5575 cm³",
+          "1520.53 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t1_D",
+        "category_label": "Formulas · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_D_7486f4dd",
+        "question": "Sphere radius 13 cm. Surface area ≈ ?",
+        "options": [
+          "9203 cm³",
+          "2123.72 cm²",
+          "4247.44 cm²",
+          "1062 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t1_D",
+        "category_label": "Formulas · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_D_58730b47",
+        "question": "Sphere radius 4 cm. Surface area ≈ ?",
+        "options": [
+          "201.06 cm²",
+          "268 cm³",
+          "402.12 cm²",
+          "101 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t1_D",
+        "category_label": "Formulas · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_D_0bbd878f",
+        "question": "Sphere radius 2 cm. Surface area ≈ ?",
+        "options": [
+          "25 cm²",
+          "50.27 cm²",
+          "34 cm³",
+          "100.54 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t1_D",
+        "category_label": "Formulas · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_D_d5c260a1",
+        "question": "Sphere radius 12 cm. Surface area ≈ ?",
+        "options": [
+          "1809.56 cm²",
+          "905 cm²",
+          "3619.12 cm²",
+          "7238 cm³"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t1_D",
+        "category_label": "Formulas · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
       }
     ],
     "E": [
@@ -323,6 +1558,196 @@
           "343 cm³"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t1_E",
+        "category_label": "Formulas · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_E_c09282ac",
+        "question": "Sphere r = 9 cm. Volume ≈ ?",
+        "options": [
+          "9160.89 cm³",
+          "729 cm³",
+          "1018 cm²",
+          "3053.63 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t1_E",
+        "category_label": "Formulas · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_E_1e4bbab5",
+        "question": "Sphere r = 10 cm. Volume ≈ ?",
+        "options": [
+          "4188.79 cm³",
+          "1257 cm²",
+          "12566.369999999999 cm³",
+          "1000 cm³"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t1_E",
+        "category_label": "Formulas · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_E_7ed87725",
+        "question": "Sphere r = 13 cm. Volume ≈ ?",
+        "options": [
+          "2124 cm²",
+          "9202.77 cm³",
+          "2197 cm³",
+          "27608.31 cm³"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t1_E",
+        "category_label": "Formulas · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_E_2dae6470",
+        "question": "Sphere r = 11 cm. Volume ≈ ?",
+        "options": [
+          "1331 cm³",
+          "1521 cm²",
+          "5575.28 cm³",
+          "16725.84 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t1_E",
+        "category_label": "Formulas · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_E_fb4ae831",
+        "question": "Sphere r = 2 cm. Volume ≈ ?",
+        "options": [
+          "100.53 cm³",
+          "8 cm³",
+          "50 cm²",
+          "33.51 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t1_E",
+        "category_label": "Formulas · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_E_47032826",
+        "question": "Sphere r = 8 cm. Volume ≈ ?",
+        "options": [
+          "804 cm²",
+          "6433.98 cm³",
+          "2144.66 cm³",
+          "512 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t1_E",
+        "category_label": "Formulas · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_E_576505a7",
+        "question": "Sphere r = 6 cm. Volume ≈ ?",
+        "options": [
+          "452 cm²",
+          "904.78 cm³",
+          "216 cm³",
+          "2714.34 cm³"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t1_E",
+        "category_label": "Formulas · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_E_128843da",
+        "question": "Sphere r = 12 cm. Volume ≈ ?",
+        "options": [
+          "1810 cm²",
+          "7238.23 cm³",
+          "1728 cm³",
+          "21714.69 cm³"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t1_E",
+        "category_label": "Formulas · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_E_72a18ea5",
+        "question": "Sphere r = 4 cm. Volume ≈ ?",
+        "options": [
+          "804.24 cm³",
+          "268.08 cm³",
+          "64 cm³",
+          "201 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t1_E",
+        "category_label": "Formulas · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_E_33b14a23",
+        "question": "Sphere r = 15 cm. Volume ≈ ?",
+        "options": [
+          "42411.51 cm³",
+          "2827 cm²",
+          "3375 cm³",
+          "14137.17 cm³"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 1,
         "level": "E",

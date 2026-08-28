@@ -2,15 +2,34 @@
   "questions": {
     "A": [
       {
-        "id": "u14_t2_A_6567b634",
+        "id": "u14_t2_A_8a101b1d",
         "question": "P(not E) equals:",
         "options": [
-          "1 + P(E)",
-          "P(E) - 1",
           "P(E)/2",
-          "1 - P(E)"
+          "1 - P(E)",
+          "P(E) - 1",
+          "1 + P(E)"
         ],
-        "answer": 3,
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 14,
+        "category": "u14_t2_A",
+        "category_label": "Complement · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_A_4285d9c1",
+        "question": "For any event E, P(E) + P(not E) =",
+        "options": [
+          "0",
+          "1/2",
+          "1",
+          "2"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -23,15 +42,15 @@
     ],
     "B": [
       {
-        "id": "u14_t2_B_f7ee9cf8",
+        "id": "u14_t2_B_ded63e63",
         "question": "P(E) = 2/5. P(not E) = ?",
         "options": [
-          "0",
-          "1",
           "3/5",
-          "2/5"
+          "2/5",
+          "0",
+          "1"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -42,7 +61,45 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t2_B_61d56759",
+        "id": "u14_t2_B_59802664",
+        "question": "P(E) = 3/8. P(not E) = ?",
+        "options": [
+          "5/8",
+          "1",
+          "3/8",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_56d1807e",
+        "question": "P(E) = 1/6. P(not E) = ?",
+        "options": [
+          "0",
+          "5/6",
+          "1",
+          "1/6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_01a7d052",
         "question": "P(E) = 1/4. P(not E) = ?",
         "options": [
           "0",
@@ -61,12 +118,202 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t2_B_d9a2a9fe",
-        "question": "P(E) = 3/8. P(not E) = ?",
+        "id": "u14_t2_B_539ec60f",
+        "question": "P(E) = 2/3. P(not E) = ?",
         "options": [
-          "3/8",
+          "2/3",
+          "1",
+          "1/3",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_cb77841b",
+        "question": "P(E) = 1. P(not E) = ?",
+        "options": [
+          "0 (alt)",
+          "1",
+          "3",
+          "0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_08bd4648",
+        "question": "P(E) = 1/3. P(not E) = ?",
+        "options": [
+          "1/3",
+          "1",
           "0",
-          "5/8",
+          "2/3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_e8f03032",
+        "question": "P(E) = 3/13. P(not E) = ?",
+        "options": [
+          "1",
+          "0",
+          "3/13",
+          "10/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_9eb212c3",
+        "question": "P(E) = 11/8. P(not E) = ?",
+        "options": [
+          "0",
+          "-3/8",
+          "11/8",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_12f8da62",
+        "question": "P(E) = 5/3. P(not E) = ?",
+        "options": [
+          "0",
+          "-2/3",
+          "5/3",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_3e8a9148",
+        "question": "P(E) = 1/2. P(not E) = ?",
+        "options": [
+          "0",
+          "1/2 (alt)",
+          "1",
+          "1/2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_1c4255b5",
+        "question": "P(E) = 1/13. P(not E) = ?",
+        "options": [
+          "12/13",
+          "0",
+          "1",
+          "1/13"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_41685117",
+        "question": "P(E) = 11/10. P(not E) = ?",
+        "options": [
+          "0",
+          "1",
+          "11/10",
+          "-1/10"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_a85e2566",
+        "question": "P(E) = 7/6. P(not E) = ?",
+        "options": [
+          "0",
+          "1",
+          "-1/6",
+          "7/6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_156213bd",
+        "question": "P(E) = 1/20. P(not E) = ?",
+        "options": [
+          "1/20",
+          "0",
+          "19/20",
           "1"
         ],
         "answer": 2,
@@ -80,15 +327,281 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t2_B_32399ca8",
-        "question": "P(E) = 1/6. P(not E) = ?",
+        "id": "u14_t2_B_0692dc1c",
+        "question": "P(E) = 8/13. P(not E) = ?",
         "options": [
           "0",
-          "1/6",
-          "5/6",
+          "8/13",
+          "1",
+          "5/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_355ab6be",
+        "question": "P(E) = 1/12. P(not E) = ?",
+        "options": [
+          "11/12",
+          "0",
+          "1",
+          "1/12"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_a4b25cdb",
+        "question": "P(E) = 4/5. P(not E) = ?",
+        "options": [
+          "1",
+          "1/5",
+          "0",
+          "4/5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_f73f3b10",
+        "question": "P(E) = 3/5. P(not E) = ?",
+        "options": [
+          "0",
+          "3/5",
+          "1",
+          "2/5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_41dedd29",
+        "question": "P(E) = 1/5. P(not E) = ?",
+        "options": [
+          "1/5",
+          "0",
+          "4/5",
           "1"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_7531c2c3",
+        "question": "P(E) = 11/12. P(not E) = ?",
+        "options": [
+          "11/12",
+          "1",
+          "1/12",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_17fbfd35",
+        "question": "P(E) = 7/12. P(not E) = ?",
+        "options": [
+          "5/12",
+          "1",
+          "7/12",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_d8b273a5",
+        "question": "P(E) = 7/13. P(not E) = ?",
+        "options": [
+          "1",
+          "0",
+          "7/13",
+          "6/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_2b772748",
+        "question": "P(E) = 7/10. P(not E) = ?",
+        "options": [
+          "7/10",
+          "1",
+          "0",
+          "3/10"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_26336758",
+        "question": "P(E) = 1/8. P(not E) = ?",
+        "options": [
+          "0",
+          "1",
+          "7/8",
+          "1/8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_54e83e8b",
+        "question": "P(E) = 7/20. P(not E) = ?",
+        "options": [
+          "0",
+          "7/20",
+          "1",
+          "13/20"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_3a056406",
+        "question": "P(E) = 11/20. P(not E) = ?",
+        "options": [
+          "0",
+          "9/20",
+          "1",
+          "11/20"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_ba534a45",
+        "question": "P(E) = 6/13. P(not E) = ?",
+        "options": [
+          "0",
+          "1",
+          "6/13",
+          "7/13"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_e11b3ce1",
+        "question": "P(E) = 2/13. P(not E) = ?",
+        "options": [
+          "0",
+          "11/13",
+          "1",
+          "2/13"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 14,
+        "category": "u14_t2_B",
+        "category_label": "Complement · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_B_0e53c7a9",
+        "question": "P(E) = 5/6. P(not E) = ?",
+        "options": [
+          "0",
+          "5/6",
+          "1",
+          "1/6"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -101,15 +614,148 @@
     ],
     "C": [
       {
-        "id": "u14_t2_C_5c171f76",
+        "id": "u14_t2_C_4464a140",
         "question": "Die: P(at least one six) in one throw uses complement with P(no six) = 5/6?",
         "options": [
+          "1/6",
           "1",
           "5/6",
-          "1/6",
           "0"
         ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t2_C",
+        "category_label": "Complement · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_C_8a23f172",
+        "question": "Die: P(at least one six) in one throw uses complement with P(no six) =",
+        "options": [
+          "1/6",
+          "5/6",
+          "0",
+          "1"
+        ],
         "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t2_C",
+        "category_label": "Complement · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_C_e715edd9",
+        "question": "Die: P(not getting 6) = ?",
+        "options": [
+          "0",
+          "1/6",
+          "5/6",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t2_C",
+        "category_label": "Complement · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_C_72ade2de",
+        "question": "Die: P(not getting 4) = ?",
+        "options": [
+          "1",
+          "1/6",
+          "5/6",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t2_C",
+        "category_label": "Complement · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_C_f65c6d9b",
+        "question": "Die: P(not getting 2) = ?",
+        "options": [
+          "5/6",
+          "1/6",
+          "1",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t2_C",
+        "category_label": "Complement · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_C_737e42fc",
+        "question": "Die: P(not getting 1) = ?",
+        "options": [
+          "0",
+          "5/6",
+          "1",
+          "1/6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t2_C",
+        "category_label": "Complement · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_C_a8395ee9",
+        "question": "Die: P(not getting 3) = ?",
+        "options": [
+          "0",
+          "1/6",
+          "5/6",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t2_C",
+        "category_label": "Complement · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_C_f20a17d2",
+        "question": "Die: P(not getting 5) = ?",
+        "options": [
+          "5/6",
+          "0",
+          "1",
+          "1/6"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -122,13 +768,165 @@
     ],
     "D": [
       {
-        "id": "u14_t2_D_98931565",
+        "id": "u14_t2_D_2e873a34",
         "question": "P(rain) = 3/10. P(no rain) = ?",
         "options": [
-          "7/10",
+          "1",
           "0",
           "3/10",
+          "7/10"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 14,
+        "category": "u14_t2_D",
+        "category_label": "Complement · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_D_a1af0f1b",
+        "question": "P(rain) = 4/5. P(no rain) = ?",
+        "options": [
+          "4/5",
+          "1",
+          "0",
+          "1/5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 14,
+        "category": "u14_t2_D",
+        "category_label": "Complement · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_D_67dd7615",
+        "question": "P(rain) = 2/5. P(no rain) = ?",
+        "options": [
+          "2/5",
+          "1",
+          "3/5",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 14,
+        "category": "u14_t2_D",
+        "category_label": "Complement · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_D_3501481f",
+        "question": "P(rain) = 9/10. P(no rain) = ?",
+        "options": [
+          "1/10",
+          "9/10",
+          "0",
           "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 14,
+        "category": "u14_t2_D",
+        "category_label": "Complement · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_D_c5aa76fe",
+        "question": "P(rain) = 7/10. P(no rain) = ?",
+        "options": [
+          "3/10",
+          "7/10",
+          "0",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 14,
+        "category": "u14_t2_D",
+        "category_label": "Complement · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_D_0eac9bc0",
+        "question": "P(rain) = 1/10. P(no rain) = ?",
+        "options": [
+          "1/10",
+          "9/10",
+          "1",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 14,
+        "category": "u14_t2_D",
+        "category_label": "Complement · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_D_781727ac",
+        "question": "P(rain) = 3/5. P(no rain) = ?",
+        "options": [
+          "2/5",
+          "3/5",
+          "1",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 14,
+        "category": "u14_t2_D",
+        "category_label": "Complement · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_D_7745d5b2",
+        "question": "P(rain) = 1/2. P(no rain) = ?",
+        "options": [
+          "1/2",
+          "0",
+          "1",
+          "1/2 (alt)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 14,
+        "category": "u14_t2_D",
+        "category_label": "Complement · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_D_9d6f45a7",
+        "question": "P(rain) = 1/5. P(no rain) = ?",
+        "options": [
+          "4/5",
+          "1",
+          "1/5",
+          "0"
         ],
         "answer": 0,
         "explanation": "",
@@ -143,13 +941,51 @@
     ],
     "E": [
       {
-        "id": "u14_t2_E_19acbbad",
+        "id": "u14_t2_E_04eebee1",
         "question": "P(win) = 2/5. P(lose) = ?",
         "options": [
+          "1",
           "4/5",
-          "3/5",
           "2/5",
-          "1"
+          "3/5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_24d33a1d",
+        "question": "P(win) = 3/8. P(lose) = ?",
+        "options": [
+          "3/4",
+          "1",
+          "3/8",
+          "5/8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_f32b13aa",
+        "question": "P(win) = 1/6. P(lose) = ?",
+        "options": [
+          "1/6",
+          "5/6",
+          "1",
+          "1/3"
         ],
         "answer": 1,
         "explanation": "",
@@ -162,15 +998,91 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t2_E_9d3723d6",
-        "question": "P(win) = 1/6. P(lose) = ?",
+        "id": "u14_t2_E_84f17b4b",
+        "question": "P(win) = 1/4. P(lose) = ?",
         "options": [
-          "1/3",
           "1",
+          "3/4",
+          "1/4",
+          "1/2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_274984de",
+        "question": "P(win) = 1/5. P(lose) = ?",
+        "options": [
+          "2/5",
+          "1/5",
+          "4/5",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_1e3914fb",
+        "question": "P(win) = 3/20. P(lose) = ?",
+        "options": [
+          "3/10",
+          "3/20",
+          "1",
+          "17/20"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_8d456882",
+        "question": "P(win) = 1/8. P(lose) = ?",
+        "options": [
+          "1/8",
+          "1/4",
+          "7/8",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_e36f43b5",
+        "question": "P(win) = 5/6. P(lose) = ?",
+        "options": [
+          "1",
+          "5/3",
           "5/6",
           "1/6"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -181,34 +1093,414 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
-        "id": "u14_t2_E_f09f7bf1",
-        "question": "P(win) = 3/8. P(lose) = ?",
+        "id": "u14_t2_E_77ec7e08",
+        "question": "P(win) = 11/8. P(lose) = ?",
         "options": [
+          "-3/8",
+          "11/4",
           "1",
-          "3/4",
-          "5/8",
-          "3/8"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 14,
-        "category": "u14_t2_E",
-        "category_label": "Complement · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 14 Probability"
-      },
-      {
-        "id": "u14_t2_E_2348617b",
-        "question": "P(win) = 1/4. P(lose) = ?",
-        "options": [
-          "3/4",
-          "1/4",
-          "1/2",
-          "1"
+          "11/8"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_29c4f66a",
+        "question": "P(win) = 3/4. P(lose) = ?",
+        "options": [
+          "1",
+          "1/4",
+          "3/4",
+          "3/2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_b4f652b6",
+        "question": "P(win) = 4/5. P(lose) = ?",
+        "options": [
+          "8/5",
+          "1",
+          "4/5",
+          "1/5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_b6ac1ee1",
+        "question": "P(win) = 5/4. P(lose) = ?",
+        "options": [
+          "-1/4",
+          "5/4",
+          "1",
+          "5/2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_e5835c77",
+        "question": "P(win) = 1. P(lose) = ?",
+        "options": [
+          "0",
+          "0 (alt)",
+          "1",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_1717dc56",
+        "question": "P(win) = 3/13. P(lose) = ?",
+        "options": [
+          "6/13",
+          "3/13",
+          "10/13",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_89e508b1",
+        "question": "P(win) = 3/5. P(lose) = ?",
+        "options": [
+          "2/5",
+          "1",
+          "3/5",
+          "6/5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_d03c3fe1",
+        "question": "P(win) = 3/2. P(lose) = ?",
+        "options": [
+          "3",
+          "3/2",
+          "1",
+          "-1/2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_b594ee4b",
+        "question": "P(win) = 7/10. P(lose) = ?",
+        "options": [
+          "1",
+          "7/5",
+          "3/10",
+          "7/10"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_c14bd65a",
+        "question": "P(win) = 2/3. P(lose) = ?",
+        "options": [
+          "2/3",
+          "4/3",
+          "1/3",
+          "1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_b4d44e4d",
+        "question": "P(win) = 1/2. P(lose) = ?",
+        "options": [
+          "None of these",
+          "1/2",
+          "1",
+          "1/2 (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_005d39ff",
+        "question": "P(win) = 11/12. P(lose) = ?",
+        "options": [
+          "11/12",
+          "1/12",
+          "1",
+          "11/6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_5bca3321",
+        "question": "P(win) = 7/13. P(lose) = ?",
+        "options": [
+          "1",
+          "6/13",
+          "7/13",
+          "14/13"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_2ac02fb4",
+        "question": "P(win) = 5/8. P(lose) = ?",
+        "options": [
+          "5/4",
+          "3/8",
+          "1",
+          "5/8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_a162c037",
+        "question": "P(win) = 3/10. P(lose) = ?",
+        "options": [
+          "1",
+          "7/10",
+          "3/5",
+          "3/10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_5f69ca9c",
+        "question": "P(win) = 7/6. P(lose) = ?",
+        "options": [
+          "-1/6",
+          "1",
+          "7/3",
+          "7/6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_2f12e08b",
+        "question": "P(win) = 5/12. P(lose) = ?",
+        "options": [
+          "5/12",
+          "7/12",
+          "1",
+          "5/6"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_ecb80622",
+        "question": "P(win) = 7/12. P(lose) = ?",
+        "options": [
+          "1",
+          "7/12",
+          "7/6",
+          "5/12"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_395e8dab",
+        "question": "P(win) = 1/3. P(lose) = ?",
+        "options": [
+          "2/3",
+          "2/3 (alt)",
+          "1",
+          "1/3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_5c82feab",
+        "question": "P(win) = 1/13. P(lose) = ?",
+        "options": [
+          "1/13",
+          "1",
+          "12/13",
+          "2/13"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_51e2b86a",
+        "question": "P(win) = 4/3. P(lose) = ?",
+        "options": [
+          "8/3",
+          "4/3",
+          "1",
+          "-1/3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 14,
+        "category": "u14_t2_E",
+        "category_label": "Complement · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t2_E_6dbf11bf",
+        "question": "P(win) = 10/13. P(lose) = ?",
+        "options": [
+          "10/13",
+          "3/13",
+          "1",
+          "20/13"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "E",

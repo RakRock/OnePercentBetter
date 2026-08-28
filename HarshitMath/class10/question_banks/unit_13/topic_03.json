@@ -2,15 +2,34 @@
   "questions": {
     "A": [
       {
-        "id": "u13_t3_A_d537fa80",
+        "id": "u13_t3_A_625aadec",
         "question": "Modal class is the:",
         "options": [
           "Class with maximum frequency",
-          "Lowest class",
+          "Median class",
           "Last class",
-          "Median class"
+          "Lowest class"
         ],
         "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 13,
+        "category": "u13_t3_A",
+        "category_label": "Mode · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_A_f3792c88",
+        "question": "Mode is the value that occurs:",
+        "options": [
+          "In the middle",
+          "At the end only",
+          "Least frequently",
+          "Most frequently"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 3,
         "level": "A",
@@ -23,15 +42,34 @@
     ],
     "B": [
       {
-        "id": "u13_t3_B_39928bca",
+        "id": "u13_t3_B_4160ce84",
         "question": "Mode formula for grouped data:",
         "options": [
-          "n/2 formula",
-          "cf graph",
           "l + ((f^1-f^0)/(2f^1-f^0-f^2)) × h",
+          "cf graph",
+          "n/2 formula",
           "Σfixi/Σfi"
         ],
-        "answer": 2,
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t3_B",
+        "category_label": "Mode · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_B_c52adc88",
+        "question": "In mode formula, f^1 is:",
+        "options": [
+          "Class width",
+          "Cumulative frequency",
+          "Total n",
+          "Frequency of modal class"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 3,
         "level": "B",
@@ -44,15 +82,566 @@
     ],
     "C": [
       {
-        "id": "u13_t3_C_2ff933fe",
-        "question": "Modal class l = 30, f^1 = 15, f^0 = 10, f^2 = 8, h = 10. Mode ≈ ?",
+        "id": "u13_t3_C_a724605c",
+        "question": "Modal class l = 44, f^1 = 15, f^0 = 11, f^2 = 7, h = 10. Mode ≈ ?",
         "options": [
-          "30",
+          "47.3",
+          "54",
           "15",
+          "44"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_4badf10b",
+        "question": "Modal class l = 43, f^1 = 14, f^0 = 14, f^2 = 12, h = 10. Mode ≈ ?",
+        "options": [
+          "43",
+          "53",
+          "43.0",
+          "14"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_423d1631",
+        "question": "Modal class l = 33, f^1 = 18, f^0 = 10, f^2 = 12, h = 5. Mode ≈ ?",
+        "options": [
+          "33",
+          "35.9",
+          "18",
+          "38"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_442c9c61",
+        "question": "Modal class l = 50, f^1 = 11, f^0 = 6, f^2 = 5, h = 10. Mode ≈ ?",
+        "options": [
+          "60",
+          "11",
+          "54.5",
+          "50"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_c5ca5bb3",
+        "question": "Modal class l = 39, f^1 = 15, f^0 = 6, f^2 = 5, h = 10. Mode ≈ ?",
+        "options": [
+          "15",
+          "43.7",
+          "39",
+          "49"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_25837806",
+        "question": "Modal class l = 27, f^1 = 11, f^0 = 6, f^2 = 5, h = 5. Mode ≈ ?",
+        "options": [
+          "29.3",
+          "27",
+          "32",
+          "11"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_88832bbc",
+        "question": "Modal class l = 40, f^1 = 15, f^0 = 15, f^2 = 7, h = 5. Mode ≈ ?",
+        "options": [
           "40",
-          "34.2"
+          "45",
+          "15",
+          "40.0"
         ],
         "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_24225c0c",
+        "question": "Modal class l = 48, f^1 = 11, f^0 = 14, f^2 = 12, h = 5. Mode ≈ ?",
+        "options": [
+          "48",
+          "51.8",
+          "11",
+          "53"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_d304b2e7",
+        "question": "Modal class l = 47, f^1 = 15, f^0 = 6, f^2 = 4, h = 10. Mode ≈ ?",
+        "options": [
+          "57",
+          "51.5",
+          "15",
+          "47"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_fa90871b",
+        "question": "Modal class l = 32, f^1 = 13, f^0 = 15, f^2 = 6, h = 10. Mode ≈ ?",
+        "options": [
+          "28.0",
+          "13",
+          "42",
+          "32"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_d9f09248",
+        "question": "Modal class l = 43, f^1 = 11, f^0 = 13, f^2 = 4, h = 5. Mode ≈ ?",
+        "options": [
+          "41.0",
+          "48",
+          "11",
+          "43"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_2d684b1f",
+        "question": "Modal class l = 36, f^1 = 15, f^0 = 8, f^2 = 11, h = 5. Mode ≈ ?",
+        "options": [
+          "15",
+          "39.2",
+          "41",
+          "36"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_0cacd9b7",
+        "question": "Modal class l = 20, f^1 = 19, f^0 = 13, f^2 = 8, h = 5. Mode ≈ ?",
+        "options": [
+          "25",
+          "21.8",
+          "19",
+          "20"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_94eaf811",
+        "question": "Modal class l = 33, f^1 = 17, f^0 = 12, f^2 = 7, h = 5. Mode ≈ ?",
+        "options": [
+          "34.7",
+          "17",
+          "33",
+          "38"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_b6d60998",
+        "question": "Modal class l = 26, f^1 = 18, f^0 = 6, f^2 = 12, h = 10. Mode ≈ ?",
+        "options": [
+          "32.7",
+          "26",
+          "36",
+          "18"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_20150b0d",
+        "question": "Modal class l = 28, f^1 = 20, f^0 = 6, f^2 = 10, h = 5. Mode ≈ ?",
+        "options": [
+          "30.9",
+          "33",
+          "28",
+          "20"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_2a731753",
+        "question": "Modal class l = 43, f^1 = 15, f^0 = 11, f^2 = 8, h = 5. Mode ≈ ?",
+        "options": [
+          "44.8",
+          "15",
+          "48",
+          "43"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_126e6cb7",
+        "question": "Modal class l = 26, f^1 = 13, f^0 = 10, f^2 = 12, h = 10. Mode ≈ ?",
+        "options": [
+          "26",
+          "13",
+          "36",
+          "33.5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_972b6d60",
+        "question": "Modal class l = 38, f^1 = 16, f^0 = 8, f^2 = 7, h = 5. Mode ≈ ?",
+        "options": [
+          "40.4",
+          "38",
+          "16",
+          "43"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_27653371",
+        "question": "Modal class l = 50, f^1 = 18, f^0 = 10, f^2 = 5, h = 5. Mode ≈ ?",
+        "options": [
+          "55",
+          "18",
+          "51.9",
+          "50"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_647053d8",
+        "question": "Modal class l = 42, f^1 = 15, f^0 = 12, f^2 = 12, h = 5. Mode ≈ ?",
+        "options": [
+          "44.5",
+          "47",
+          "15",
+          "42"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_e74fd112",
+        "question": "Modal class l = 46, f^1 = 14, f^0 = 8, f^2 = 6, h = 5. Mode ≈ ?",
+        "options": [
+          "46",
+          "14",
+          "51",
+          "48.1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_3d8369c3",
+        "question": "Modal class l = 25, f^1 = 14, f^0 = 12, f^2 = 4, h = 5. Mode ≈ ?",
+        "options": [
+          "25",
+          "14",
+          "25.8",
+          "30"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_768a4414",
+        "question": "Modal class l = 23, f^1 = 16, f^0 = 8, f^2 = 5, h = 5. Mode ≈ ?",
+        "options": [
+          "16",
+          "23",
+          "28",
+          "25.1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_1e4af93e",
+        "question": "Modal class l = 31, f^1 = 16, f^0 = 5, f^2 = 11, h = 5. Mode ≈ ?",
+        "options": [
+          "31",
+          "36",
+          "16",
+          "34.4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_4b913d8d",
+        "question": "Modal class l = 47, f^1 = 15, f^0 = 15, f^2 = 7, h = 5. Mode ≈ ?",
+        "options": [
+          "47.0",
+          "52",
+          "47",
+          "15"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_3c40e008",
+        "question": "Modal class l = 42, f^1 = 20, f^0 = 12, f^2 = 7, h = 5. Mode ≈ ?",
+        "options": [
+          "42",
+          "43.9",
+          "47",
+          "20"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_143b3a3d",
+        "question": "Modal class l = 45, f^1 = 17, f^0 = 5, f^2 = 4, h = 10. Mode ≈ ?",
+        "options": [
+          "55",
+          "17",
+          "49.8",
+          "45"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_d5e7b6e7",
+        "question": "Modal class l = 42, f^1 = 16, f^0 = 11, f^2 = 5, h = 10. Mode ≈ ?",
+        "options": [
+          "52",
+          "45.1",
+          "16",
+          "42"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_C_a0493451",
+        "question": "Modal class l = 35, f^1 = 14, f^0 = 6, f^2 = 10, h = 10. Mode ≈ ?",
+        "options": [
+          "45",
+          "35",
+          "41.7",
+          "14"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 3,
         "level": "C",
@@ -65,15 +654,566 @@
     ],
     "D": [
       {
-        "id": "u13_t3_D_37cc9d4d",
+        "id": "u13_t3_D_13b2db36",
         "question": "Mean = 35.0, median = 33.0. Mode (empirical) ≈ ?",
         "options": [
-          "35.0",
+          "33.0",
           "68.0",
           "29.0",
-          "33.0"
+          "35.0"
         ],
         "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_543875d1",
+        "question": "Mean = 31.9, median = 28.9. Mode (empirical) ≈ ?",
+        "options": [
+          "28.9",
+          "60.8",
+          "22.9",
+          "31.9"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_58d72624",
+        "question": "Mean = 35.0, median = 37.0. Mode (empirical) ≈ ?",
+        "options": [
+          "35.0",
+          "37.0",
+          "72.0",
+          "41.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_43018da5",
+        "question": "Mean = 30.4, median = 33.4. Mode (empirical) ≈ ?",
+        "options": [
+          "39.4",
+          "30.4",
+          "63.8",
+          "33.4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_b6af0a75",
+        "question": "Mean = 29.3, median = 27.3. Mode (empirical) ≈ ?",
+        "options": [
+          "23.3",
+          "56.6",
+          "29.3",
+          "27.3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_e855f9a8",
+        "question": "Mean = 33.4, median = 30.4. Mode (empirical) ≈ ?",
+        "options": [
+          "30.4",
+          "33.4",
+          "24.4",
+          "63.8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_148c1097",
+        "question": "Mean = 44.3, median = 46.3. Mode (empirical) ≈ ?",
+        "options": [
+          "46.3",
+          "90.6",
+          "50.3",
+          "44.3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_ed0848d1",
+        "question": "Mean = 37.0, median = 35.0. Mode (empirical) ≈ ?",
+        "options": [
+          "72.0",
+          "31.0",
+          "35.0",
+          "37.0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_8011df8b",
+        "question": "Mean = 38.4, median = 36.4. Mode (empirical) ≈ ?",
+        "options": [
+          "38.4",
+          "74.8",
+          "36.4",
+          "32.4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_e6b18a93",
+        "question": "Mean = 32.5, median = 29.5. Mode (empirical) ≈ ?",
+        "options": [
+          "29.5",
+          "62.0",
+          "32.5",
+          "23.5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_65082035",
+        "question": "Mean = 25.8, median = 28.8. Mode (empirical) ≈ ?",
+        "options": [
+          "54.6",
+          "28.8",
+          "25.8",
+          "34.8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_c3aedfa7",
+        "question": "Mean = 30.6, median = 27.6. Mode (empirical) ≈ ?",
+        "options": [
+          "21.6",
+          "58.2",
+          "27.6",
+          "30.6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_6fe0941e",
+        "question": "Mean = 33.4, median = 36.4. Mode (empirical) ≈ ?",
+        "options": [
+          "33.4",
+          "42.4",
+          "36.4",
+          "69.8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_327b8c36",
+        "question": "Mean = 38.4, median = 35.4. Mode (empirical) ≈ ?",
+        "options": [
+          "73.8",
+          "38.4",
+          "29.4",
+          "35.4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_cfe136a2",
+        "question": "Mean = 42.5, median = 45.5. Mode (empirical) ≈ ?",
+        "options": [
+          "45.5",
+          "88.0",
+          "42.5",
+          "51.5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_4fc108ee",
+        "question": "Mean = 38.8, median = 40.8. Mode (empirical) ≈ ?",
+        "options": [
+          "44.8",
+          "38.8",
+          "40.8",
+          "79.6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_7955b048",
+        "question": "Mean = 34.6, median = 37.6. Mode (empirical) ≈ ?",
+        "options": [
+          "37.6",
+          "72.2",
+          "43.6",
+          "34.6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_2f9b185c",
+        "question": "Mean = 30.0, median = 27.0. Mode (empirical) ≈ ?",
+        "options": [
+          "57.0",
+          "27.0",
+          "21.0",
+          "30.0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_6ab4e51b",
+        "question": "Mean = 32.8, median = 35.8. Mode (empirical) ≈ ?",
+        "options": [
+          "68.6",
+          "41.8",
+          "32.8",
+          "35.8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_f2cf397d",
+        "question": "Mean = 44.4, median = 42.4. Mode (empirical) ≈ ?",
+        "options": [
+          "38.4",
+          "86.8",
+          "44.4",
+          "42.4"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_42b2388c",
+        "question": "Mean = 43.6, median = 46.6. Mode (empirical) ≈ ?",
+        "options": [
+          "46.6",
+          "90.2",
+          "43.6",
+          "52.6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_cf120642",
+        "question": "Mean = 25.2, median = 22.2. Mode (empirical) ≈ ?",
+        "options": [
+          "16.2",
+          "22.2",
+          "47.4",
+          "25.2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_4f894b3f",
+        "question": "Mean = 44.8, median = 47.8. Mode (empirical) ≈ ?",
+        "options": [
+          "53.8",
+          "47.8",
+          "92.6",
+          "44.8"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_1229f873",
+        "question": "Mean = 36.9, median = 39.9. Mode (empirical) ≈ ?",
+        "options": [
+          "36.9",
+          "45.9",
+          "39.9",
+          "76.8"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_2ff04e99",
+        "question": "Mean = 35.7, median = 38.7. Mode (empirical) ≈ ?",
+        "options": [
+          "38.7",
+          "74.4",
+          "44.7",
+          "35.7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_95a62c1a",
+        "question": "Mean = 44.8, median = 46.8. Mode (empirical) ≈ ?",
+        "options": [
+          "44.8",
+          "91.6",
+          "46.8",
+          "50.8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_93d02d43",
+        "question": "Mean = 44.1, median = 46.1. Mode (empirical) ≈ ?",
+        "options": [
+          "46.1",
+          "50.1",
+          "90.2",
+          "44.1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_334e746c",
+        "question": "Mean = 38.9, median = 41.9. Mode (empirical) ≈ ?",
+        "options": [
+          "38.9",
+          "41.9",
+          "47.9",
+          "80.8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_bca0412e",
+        "question": "Mean = 33.6, median = 35.6. Mode (empirical) ≈ ?",
+        "options": [
+          "69.2",
+          "35.6",
+          "33.6",
+          "39.6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_D_64ef1567",
+        "question": "Mean = 35.1, median = 37.1. Mode (empirical) ≈ ?",
+        "options": [
+          "41.1",
+          "72.2",
+          "37.1",
+          "35.1"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 3,
         "level": "D",
@@ -86,15 +1226,566 @@
     ],
     "E": [
       {
-        "id": "u13_t3_E_c7d01327",
+        "id": "u13_t3_E_00c4ecb2",
         "question": "Grouped data: modal class starts at 30. Mode ≈ ?",
         "options": [
+          "40",
+          "5",
+          "20",
+          "34.5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_5a952c11",
+        "question": "Grouped data: modal class starts at 42. Mode ≈ ?",
+        "options": [
+          "38",
+          "43.4",
+          "47",
+          "13"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_7bc81827",
+        "question": "Grouped data: modal class starts at 27. Mode ≈ ?",
+        "options": [
+          "7",
+          "32",
+          "36",
+          "29.8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_1a5f9aaa",
+        "question": "Grouped data: modal class starts at 37. Mode ≈ ?",
+        "options": [
+          "42",
+          "32",
+          "39.5",
+          "7"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_dc8c34bc",
+        "question": "Grouped data: modal class starts at 43. Mode ≈ ?",
+        "options": [
+          "13",
+          "43.0",
+          "26",
+          "48"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_3f06220c",
+        "question": "Grouped data: modal class starts at 41. Mode ≈ ?",
+        "options": [
+          "32",
+          "51",
+          "46.7",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_428ec6e5",
+        "question": "Grouped data: modal class starts at 28. Mode ≈ ?",
+        "options": [
+          "26",
+          "11",
+          "38",
+          "33.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_1156aeae",
+        "question": "Grouped data: modal class starts at 49. Mode ≈ ?",
+        "options": [
+          "50.3",
+          "14",
+          "38",
+          "54"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_ce0219ba",
+        "question": "Grouped data: modal class starts at 39. Mode ≈ ?",
+        "options": [
+          "49",
+          "34",
+          "40.3",
+          "15"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_5f6c0e31",
+        "question": "Grouped data: modal class starts at 35. Mode ≈ ?",
+        "options": [
+          "13",
+          "20",
+          "45",
+          "50.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_48a8626d",
+        "question": "Grouped data: modal class starts at 25. Mode ≈ ?",
+        "options": [
+          "26.2",
+          "32",
+          "13",
+          "30"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_365f7650",
+        "question": "Grouped data: modal class starts at 48. Mode ≈ ?",
+        "options": [
+          "34",
+          "51.3",
+          "58",
+          "13"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_f9758c09",
+        "question": "Grouped data: modal class starts at 23. Mode ≈ ?",
+        "options": [
+          "28",
+          "28.0",
+          "24",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_d212da44",
+        "question": "Grouped data: modal class starts at 34. Mode ≈ ?",
+        "options": [
+          "38.4",
+          "44",
+          "28",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_fa2d0dee",
+        "question": "Grouped data: modal class starts at 35. Mode ≈ ?",
+        "options": [
+          "45",
           "10",
-          "34.2",
+          "38.3",
+          "24"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_03cc6343",
+        "question": "Grouped data: modal class starts at 23. Mode ≈ ?",
+        "options": [
+          "28",
+          "15",
+          "26",
+          "13.0"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_e5985994",
+        "question": "Grouped data: modal class starts at 32. Mode ≈ ?",
+        "options": [
+          "35.3",
+          "13",
+          "32",
+          "42"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_5a6fbe1e",
+        "question": "Grouped data: modal class starts at 44. Mode ≈ ?",
+        "options": [
+          "64.0",
+          "49",
+          "22",
+          "15"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_8830acc5",
+        "question": "Grouped data: modal class starts at 38. Mode ≈ ?",
+        "options": [
+          "48",
+          "30",
+          "11",
+          "40.7"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_2badb3ef",
+        "question": "Grouped data: modal class starts at 40. Mode ≈ ?",
+        "options": [
+          "43.3",
+          "50",
+          "8",
+          "22"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_2a7aca58",
+        "question": "Grouped data: modal class starts at 31. Mode ≈ ?",
+        "options": [
+          "33.5",
+          "41",
+          "30",
+          "12"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_464b9b43",
+        "question": "Grouped data: modal class starts at 49. Mode ≈ ?",
+        "options": [
+          "59",
+          "52.3",
+          "14",
+          "38"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_2a9c4e9e",
+        "question": "Grouped data: modal class starts at 25. Mode ≈ ?",
+        "options": [
+          "13",
+          "26.8",
           "30",
           "40"
         ],
         "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_57bb736b",
+        "question": "Grouped data: modal class starts at 49. Mode ≈ ?",
+        "options": [
+          "9",
+          "54",
+          "32",
+          "50.8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_1fb59c25",
+        "question": "Grouped data: modal class starts at 39. Mode ≈ ?",
+        "options": [
+          "38",
+          "12",
+          "42.3",
+          "49"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_e4c8f35e",
+        "question": "Grouped data: modal class starts at 45. Mode ≈ ?",
+        "options": [
+          "7",
+          "49.5",
+          "32",
+          "55"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_83d69a45",
+        "question": "Grouped data: modal class starts at 26. Mode ≈ ?",
+        "options": [
+          "38",
+          "27.6",
+          "13",
+          "31"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_190c5d44",
+        "question": "Grouped data: modal class starts at 46. Mode ≈ ?",
+        "options": [
+          "48.4",
+          "5",
+          "30",
+          "51"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_b5c0c3d9",
+        "question": "Grouped data: modal class starts at 21. Mode ≈ ?",
+        "options": [
+          "38",
+          "8",
+          "25.6",
+          "31"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t3_E_497be1f0",
+        "question": "Grouped data: modal class starts at 43. Mode ≈ ?",
+        "options": [
+          "48.0",
+          "32",
+          "6",
+          "53"
+        ],
+        "answer": 0,
         "explanation": "",
         "topic": 3,
         "level": "E",

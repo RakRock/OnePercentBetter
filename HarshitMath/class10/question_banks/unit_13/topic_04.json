@@ -2,13 +2,51 @@
   "questions": {
     "A": [
       {
-        "id": "u13_t4_A_b748b00c",
+        "id": "u13_t4_A_2b75c130",
         "question": "Less-than ogive plots:",
         "options": [
           "Frequency on x-axis only",
+          "No cf",
           "Less-than type: cf on y-axis",
-          "More-than only",
-          "No cf"
+          "More-than only"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 13,
+        "category": "u13_t4_A",
+        "category_label": "Ogive · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_A_d53abd6f",
+        "question": "More-than ogive uses:",
+        "options": [
+          "No axes",
+          "Increasing cf only",
+          "Decreasing cumulative frequency",
+          "Class marks on y-axis"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 13,
+        "category": "u13_t4_A",
+        "category_label": "Ogive · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_A_b77cf270",
+        "question": "Ogive is a:",
+        "options": [
+          "Bar chart",
+          "Cumulative frequency curve",
+          "Histogram only",
+          "Pie chart"
         ],
         "answer": 1,
         "explanation": "",
@@ -23,15 +61,566 @@
     ],
     "B": [
       {
-        "id": "u13_t4_B_82528ef2",
+        "id": "u13_t4_B_cbaf43db",
         "question": "Frequencies [5, 8, 12, 6]. Total (last cf) = ?",
         "options": [
-          "0",
-          "6",
+          "31",
           "32",
-          "31"
+          "0",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_394e61c4",
+        "question": "Frequencies [13, 15, 12, 10, 8, 12]. Total (last cf) = ?",
+        "options": [
+          "70",
+          "71",
+          "12",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_a5a1f4c7",
+        "question": "Frequencies [7, 11, 10, 10, 15, 4]. Total (last cf) = ?",
+        "options": [
+          "0",
+          "4",
+          "57",
+          "58"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_1098baf9",
+        "question": "Frequencies [8, 13, 12, 4, 9, 4]. Total (last cf) = ?",
+        "options": [
+          "4",
+          "51",
+          "0",
+          "50"
         ],
         "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_c2f2b7b8",
+        "question": "Frequencies [8, 11, 6]. Total (last cf) = ?",
+        "options": [
+          "6",
+          "25",
+          "26",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_6003cc3e",
+        "question": "Frequencies [12, 10, 6, 15, 11]. Total (last cf) = ?",
+        "options": [
+          "11",
+          "55",
+          "54",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_ae8f8be4",
+        "question": "Frequencies [4, 3, 7]. Total (last cf) = ?",
+        "options": [
+          "15",
+          "14",
+          "7",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_25bc1e00",
+        "question": "Frequencies [3, 15, 5]. Total (last cf) = ?",
+        "options": [
+          "24",
+          "5",
+          "23",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_c117987f",
+        "question": "Frequencies [4, 8, 10, 9]. Total (last cf) = ?",
+        "options": [
+          "32",
+          "31",
+          "0",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_417475db",
+        "question": "Frequencies [10, 7, 3, 12, 11]. Total (last cf) = ?",
+        "options": [
+          "0",
+          "44",
+          "11",
+          "43"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_16cad943",
+        "question": "Frequencies [7, 5, 9, 5, 5]. Total (last cf) = ?",
+        "options": [
+          "32",
+          "31",
+          "5",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_0442e982",
+        "question": "Frequencies [10, 6, 7, 4]. Total (last cf) = ?",
+        "options": [
+          "28",
+          "4",
+          "27",
+          "0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_2e2e885c",
+        "question": "Frequencies [12, 12, 9]. Total (last cf) = ?",
+        "options": [
+          "33",
+          "0",
+          "34",
+          "9"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_bdfd4b96",
+        "question": "Frequencies [13, 5, 4, 5, 7]. Total (last cf) = ?",
+        "options": [
+          "7",
+          "0",
+          "35",
+          "34"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_b91ce15a",
+        "question": "Frequencies [14, 3, 13]. Total (last cf) = ?",
+        "options": [
+          "30",
+          "31",
+          "13",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_21c38157",
+        "question": "Frequencies [15, 8, 3, 12, 7]. Total (last cf) = ?",
+        "options": [
+          "7",
+          "45",
+          "46",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_7e0f3684",
+        "question": "Frequencies [9, 8, 4, 3]. Total (last cf) = ?",
+        "options": [
+          "25",
+          "0",
+          "3",
+          "24"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_329a519f",
+        "question": "Frequencies [7, 14, 13, 9]. Total (last cf) = ?",
+        "options": [
+          "0",
+          "44",
+          "9",
+          "43"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_f2318534",
+        "question": "Frequencies [13, 4, 8, 4]. Total (last cf) = ?",
+        "options": [
+          "0",
+          "30",
+          "29",
+          "4"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_14e60696",
+        "question": "Frequencies [13, 10, 12, 13, 9, 4]. Total (last cf) = ?",
+        "options": [
+          "62",
+          "0",
+          "4",
+          "61"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_b0584216",
+        "question": "Frequencies [8, 13, 10, 8, 15, 13]. Total (last cf) = ?",
+        "options": [
+          "68",
+          "67",
+          "0",
+          "13"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_f3de4d35",
+        "question": "Frequencies [11, 15, 10, 9]. Total (last cf) = ?",
+        "options": [
+          "45",
+          "0",
+          "9",
+          "46"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_abd61167",
+        "question": "Frequencies [8, 13, 7, 4, 14, 11]. Total (last cf) = ?",
+        "options": [
+          "57",
+          "58",
+          "11",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_250399fc",
+        "question": "Frequencies [7, 5, 3, 4, 13, 12]. Total (last cf) = ?",
+        "options": [
+          "12",
+          "45",
+          "0",
+          "44"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_8bfebcdc",
+        "question": "Frequencies [4, 5, 6]. Total (last cf) = ?",
+        "options": [
+          "16",
+          "0",
+          "6",
+          "15"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_37062eca",
+        "question": "Frequencies [14, 9, 10]. Total (last cf) = ?",
+        "options": [
+          "34",
+          "0",
+          "33",
+          "10"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_d12b4879",
+        "question": "Frequencies [12, 14, 5, 5]. Total (last cf) = ?",
+        "options": [
+          "0",
+          "36",
+          "37",
+          "5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_16562db1",
+        "question": "Frequencies [11, 12, 3]. Total (last cf) = ?",
+        "options": [
+          "0",
+          "3",
+          "27",
+          "26"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_bc685175",
+        "question": "Frequencies [3, 6, 4, 10, 6, 6]. Total (last cf) = ?",
+        "options": [
+          "0",
+          "35",
+          "6",
+          "36"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_B_f96cf7e3",
+        "question": "Frequencies [15, 9, 12, 5, 3, 4]. Total (last cf) = ?",
+        "options": [
+          "49",
+          "0",
+          "48",
+          "4"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 4,
         "level": "B",
@@ -44,15 +633,34 @@
     ],
     "C": [
       {
-        "id": "u13_t4_C_fe4aa1bf",
+        "id": "u13_t4_C_a2666d8d",
         "question": "Median from ogives is read at:",
         "options": [
-          "Class width",
-          "Maximum frequency",
           "x-coordinate of intersection of ogives",
+          "Maximum frequency",
+          "Class width",
           "First cf"
         ],
-        "answer": 2,
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t4_C",
+        "category_label": "Ogive · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_C_967c6688",
+        "question": "Intersection of less-than and more-than ogives gives:",
+        "options": [
+          "Mean always",
+          "Median",
+          "Mode",
+          "Range"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 4,
         "level": "C",
@@ -65,7 +673,7 @@
     ],
     "D": [
       {
-        "id": "u13_t4_D_9bcdff71",
+        "id": "u13_t4_D_24ddaaa2",
         "question": "On a less-than ogive, a steep rise indicates:",
         "options": [
           "Mean equals mode",
@@ -82,19 +690,114 @@
         "category_label": "Ogive · Level D",
         "source": "template",
         "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_D_d4aaa14b",
+        "question": "A flat section on an ogive means:",
+        "options": [
+          "Mean class",
+          "Maximum frequency class",
+          "Median class",
+          "Few or no observations added in that interval"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t4_D",
+        "category_label": "Ogive · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
       }
     ],
     "E": [
       {
-        "id": "u13_t4_E_000466bf",
+        "id": "u13_t4_E_cb7d5f9b",
         "question": "Total n = 50. Median position on ogive is at cf = ?",
+        "options": [
+          "50",
+          "12",
+          "0",
+          "25"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t4_E",
+        "category_label": "Ogive · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_E_76864af2",
+        "question": "Total n = 60. Median position on ogive is at cf = ?",
+        "options": [
+          "60",
+          "15",
+          "0",
+          "30"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t4_E",
+        "category_label": "Ogive · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_E_0a5226a1",
+        "question": "Total n = 80. Median position on ogive is at cf = ?",
+        "options": [
+          "0",
+          "20",
+          "40",
+          "80"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t4_E",
+        "category_label": "Ogive · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_E_da28cc87",
+        "question": "Total n = 100. Median position on ogive is at cf = ?",
         "options": [
           "25",
           "0",
-          "50",
-          "12"
+          "100",
+          "50"
         ],
-        "answer": 0,
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t4_E",
+        "category_label": "Ogive · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t4_E_aaed143d",
+        "question": "Total n = 40. Median position on ogive is at cf = ?",
+        "options": [
+          "0",
+          "20",
+          "10",
+          "40"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 4,
         "level": "E",

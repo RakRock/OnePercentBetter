@@ -2,13 +2,13 @@
   "questions": {
     "A": [
       {
-        "id": "u9_t3_A_0aabfada",
-        "question": "Width of river if height 10 m, angle 45° across:",
+        "id": "u9_t3_A_a20020a3",
+        "question": "Width of river if height 50 m, angle 45° across:",
         "options": [
-          "10 m",
-          "20 m",
-          "5 m",
-          "10 m (alt)"
+          "50 m",
+          "50 m (alt)",
+          "100 m",
+          "25 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -21,13 +21,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_A_d1eca2ac",
-        "question": "Width of river if height 10 m, angle 60° across:",
+        "id": "u9_t3_A_26d88706",
+        "question": "Width of river if height 10 m, angle 30° across:",
         "options": [
-          "3 m",
-          "12 m",
+          "8 m",
+          "17 m",
+          "34 m",
+          "10 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_2bf9b6c3",
+        "question": "Width of river if height 20 m, angle 45° across:",
+        "options": [
+          "40 m",
+          "20 m (alt)",
           "10 m",
-          "6 m"
+          "20 m"
         ],
         "answer": 3,
         "explanation": "",
@@ -40,7 +59,26 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_A_d89711df",
+        "id": "u9_t3_A_c4daf8e4",
+        "question": "Width of river if height 50 m, angle 30° across:",
+        "options": [
+          "174 m",
+          "43 m",
+          "87 m",
+          "50 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_d43eebd3",
         "question": "Width of river if height 20 m, angle 60° across:",
         "options": [
           "20 m",
@@ -59,51 +97,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_A_b5ec8d92",
+        "id": "u9_t3_A_9f8776d7",
+        "question": "Width of river if height 10 m, angle 60° across:",
+        "options": [
+          "12 m",
+          "6 m",
+          "3 m",
+          "10 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_d42a88c6",
         "question": "Width of river if height 50 m, angle 60° across:",
         "options": [
+          "29 m",
+          "50 m",
           "14 m",
-          "58 m",
-          "50 m",
-          "29 m"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 3,
-        "level": "A",
-        "unit_id": 9,
-        "category": "u9_t3_A",
-        "category_label": "Distance · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_A_cf746308",
-        "question": "Width of river if height 50 m, angle 45° across:",
-        "options": [
-          "50 m (alt)",
-          "25 m",
-          "50 m",
-          "100 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 3,
-        "level": "A",
-        "unit_id": 9,
-        "category": "u9_t3_A",
-        "category_label": "Distance · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_A_29dde102",
-        "question": "Width of river if height 50 m, angle 30° across:",
-        "options": [
-          "87 m",
-          "174 m",
-          "43 m",
-          "50 m"
+          "58 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -116,15 +135,15 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_A_a0628c60",
+        "id": "u9_t3_A_6f4bf049",
         "question": "Width of river if height 20 m, angle 30° across:",
         "options": [
+          "70 m",
           "17 m",
           "20 m",
-          "35 m",
-          "70 m"
+          "35 m"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 3,
         "level": "A",
@@ -135,34 +154,414 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_A_c116ec5c",
-        "question": "Width of river if height 10 m, angle 30° across:",
+        "id": "u9_t3_A_c00b790b",
+        "question": "Width of river if height 10 m, angle 45° across:",
         "options": [
-          "34 m",
-          "10 m",
-          "17 m",
-          "8 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 3,
-        "level": "A",
-        "unit_id": 9,
-        "category": "u9_t3_A",
-        "category_label": "Distance · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_A_540c8bd2",
-        "question": "Width of river if height 20 m, angle 45° across:",
-        "options": [
-          "40 m",
           "20 m",
-          "20 m (alt)",
+          "10 m (alt)",
+          "5 m",
           "10 m"
         ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_b3f018ed",
+        "question": "Width of river if height 22 m, angle 60° across:",
+        "options": [
+          "13 m",
+          "26 m",
+          "22 m",
+          "6 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_d64b8867",
+        "question": "Width of river if height 23 m, angle 30° across:",
+        "options": [
+          "23 m",
+          "40 m",
+          "80 m",
+          "20 m"
+        ],
         "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_6a665909",
+        "question": "Width of river if height 56 m, angle 45° across:",
+        "options": [
+          "28 m",
+          "56 m (alt)",
+          "112 m",
+          "56 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_09646307",
+        "question": "Width of river if height 30 m, angle 60° across:",
+        "options": [
+          "8 m",
+          "17 m",
+          "30 m",
+          "34 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_4e0455c7",
+        "question": "Width of river if height 16 m, angle 30° across:",
+        "options": [
+          "28 m",
+          "56 m",
+          "16 m",
+          "14 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_002f81cf",
+        "question": "Width of river if height 61 m, angle 15° across:",
+        "options": [
+          "114 m",
+          "456 m",
+          "228 m",
+          "61 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_d3e19bb8",
+        "question": "Width of river if height 39 m, angle 45° across:",
+        "options": [
+          "78 m",
+          "39 m",
+          "39 m (alt)",
+          "19 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_084a91f9",
+        "question": "Width of river if height 80 m, angle 75° across:",
+        "options": [
+          "21 m",
+          "10 m",
+          "42 m",
+          "80 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_4f1075bb",
+        "question": "Width of river if height 38 m, angle 60° across:",
+        "options": [
+          "38 m",
+          "11 m",
+          "22 m",
+          "44 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_086a491c",
+        "question": "Width of river if height 78 m, angle 60° across:",
+        "options": [
+          "45 m",
+          "90 m",
+          "78 m",
+          "22 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_e9853923",
+        "question": "Width of river if height 40 m, angle 75° across:",
+        "options": [
+          "5 m",
+          "11 m",
+          "22 m",
+          "40 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_8f1123df",
+        "question": "Width of river if height 77 m, angle 15° across:",
+        "options": [
+          "287 m",
+          "77 m",
+          "574 m",
+          "143 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_78904ee2",
+        "question": "Width of river if height 80 m, angle 30° across:",
+        "options": [
+          "278 m",
+          "69 m",
+          "80 m",
+          "139 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_5f80d01a",
+        "question": "Width of river if height 38 m, angle 75° across:",
+        "options": [
+          "20 m",
+          "5 m",
+          "10 m",
+          "38 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_02acfcb3",
+        "question": "Width of river if height 12 m, angle 60° across:",
+        "options": [
+          "12 m",
+          "14 m",
+          "7 m",
+          "3 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_df5b125a",
+        "question": "Width of river if height 64 m, angle 45° across:",
+        "options": [
+          "128 m",
+          "64 m",
+          "64 m (alt)",
+          "32 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_55eb9e0e",
+        "question": "Width of river if height 21 m, angle 30° across:",
+        "options": [
+          "36 m",
+          "21 m",
+          "18 m",
+          "72 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_209fa716",
+        "question": "Width of river if height 38 m, angle 45° across:",
+        "options": [
+          "76 m",
+          "38 m (alt)",
+          "19 m",
+          "38 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_52853efc",
+        "question": "Width of river if height 46 m, angle 60° across:",
+        "options": [
+          "13 m",
+          "54 m",
+          "27 m",
+          "46 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_71c48dd5",
+        "question": "Width of river if height 37 m, angle 75° across:",
+        "options": [
+          "37 m",
+          "10 m",
+          "5 m",
+          "20 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 9,
+        "category": "u9_t3_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_A_3fb9577b",
+        "question": "Width of river if height 32 m, angle 15° across:",
+        "options": [
+          "238 m",
+          "32 m",
+          "59 m",
+          "119 m"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 3,
         "level": "A",
@@ -175,12 +574,107 @@
     ],
     "B": [
       {
-        "id": "u9_t3_B_c73ee163",
+        "id": "u9_t3_B_b827fd74",
+        "question": "Ladder reaches 20 m on wall, elevation 30°. Foot from wall ≈ ?",
+        "options": [
+          "32 m",
+          "40 m",
+          "35 m",
+          "20 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_1691b2c9",
+        "question": "Ladder reaches 10 m on wall, elevation 30°. Foot from wall ≈ ?",
+        "options": [
+          "17 m",
+          "22 m",
+          "14 m",
+          "10 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_c4ff2bc5",
+        "question": "Ladder reaches 20 m on wall, elevation 45°. Foot from wall ≈ ?",
+        "options": [
+          "25 m",
+          "17 m",
+          "20 m",
+          "20 m (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_6a409135",
+        "question": "Ladder reaches 10 m on wall, elevation 45°. Foot from wall ≈ ?",
+        "options": [
+          "10 m",
+          "7 m",
+          "10 m (alt)",
+          "15 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_5470127a",
+        "question": "Ladder reaches 50 m on wall, elevation 30°. Foot from wall ≈ ?",
+        "options": [
+          "92 m",
+          "87 m",
+          "84 m",
+          "50 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_300797a1",
         "question": "Ladder reaches 50 m on wall, elevation 60°. Foot from wall ≈ ?",
         "options": [
           "29 m",
-          "34 m",
           "50 m",
+          "34 m",
           "26 m"
         ],
         "answer": 0,
@@ -194,12 +688,31 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_B_e4e38f21",
+        "id": "u9_t3_B_d59a3e57",
+        "question": "Ladder reaches 20 m on wall, elevation 60°. Foot from wall ≈ ?",
+        "options": [
+          "12 m",
+          "17 m",
+          "9 m",
+          "20 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_460984a9",
         "question": "Ladder reaches 10 m on wall, elevation 60°. Foot from wall ≈ ?",
         "options": [
-          "10 m",
           "11 m",
           "3 m",
+          "10 m",
           "6 m"
         ],
         "answer": 3,
@@ -213,32 +726,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_B_bb2a6fa9",
-        "question": "Ladder reaches 20 m on wall, elevation 45°. Foot from wall ≈ ?",
+        "id": "u9_t3_B_b69266b5",
+        "question": "Ladder reaches 50 m on wall, elevation 45°. Foot from wall ≈ ?",
         "options": [
-          "17 m",
-          "20 m (alt)",
-          "25 m",
-          "20 m"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 3,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t3_B",
-        "category_label": "Distance · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_B_bd0dfddb",
-        "question": "Ladder reaches 20 m on wall, elevation 60°. Foot from wall ≈ ?",
-        "options": [
-          "12 m",
-          "20 m",
-          "17 m",
-          "9 m"
+          "50 m",
+          "50 m (alt)",
+          "55 m",
+          "47 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -251,13 +745,51 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_B_e2fdbb31",
-        "question": "Ladder reaches 50 m on wall, elevation 45°. Foot from wall ≈ ?",
+        "id": "u9_t3_B_00cf5de9",
+        "question": "Ladder reaches 13 m on wall, elevation 15°. Foot from wall ≈ ?",
         "options": [
-          "47 m",
-          "50 m",
-          "55 m",
-          "50 m (alt)"
+          "54 m",
+          "13 m",
+          "49 m",
+          "46 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_72466e10",
+        "question": "Ladder reaches 24 m on wall, elevation 45°. Foot from wall ≈ ?",
+        "options": [
+          "29 m",
+          "24 m (alt)",
+          "24 m",
+          "21 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_3d1d27fa",
+        "question": "Ladder reaches 64 m on wall, elevation 60°. Foot from wall ≈ ?",
+        "options": [
+          "34 m",
+          "37 m",
+          "42 m",
+          "64 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -270,51 +802,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_B_3a41174c",
-        "question": "Ladder reaches 10 m on wall, elevation 30°. Foot from wall ≈ ?",
+        "id": "u9_t3_B_ff9422d4",
+        "question": "Ladder reaches 63 m on wall, elevation 30°. Foot from wall ≈ ?",
         "options": [
-          "10 m",
-          "22 m",
-          "17 m",
-          "14 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 3,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t3_B",
-        "category_label": "Distance · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_B_20901f13",
-        "question": "Ladder reaches 20 m on wall, elevation 30°. Foot from wall ≈ ?",
-        "options": [
-          "40 m",
-          "32 m",
-          "35 m",
-          "20 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 3,
-        "level": "B",
-        "unit_id": 9,
-        "category": "u9_t3_B",
-        "category_label": "Distance · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_B_5df76edb",
-        "question": "Ladder reaches 50 m on wall, elevation 30°. Foot from wall ≈ ?",
-        "options": [
-          "84 m",
-          "92 m",
-          "50 m",
-          "87 m"
+          "114 m",
+          "106 m",
+          "63 m",
+          "109 m"
         ],
         "answer": 3,
         "explanation": "",
@@ -327,13 +821,317 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_B_ee689747",
-        "question": "Ladder reaches 10 m on wall, elevation 45°. Foot from wall ≈ ?",
+        "id": "u9_t3_B_b8fb39ee",
+        "question": "Ladder reaches 8 m on wall, elevation 75°. Foot from wall ≈ ?",
+        "options": [
+          "8 m",
+          "7 m",
+          "-1 m",
+          "2 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_a950710e",
+        "question": "Ladder reaches 70 m on wall, elevation 45°. Foot from wall ≈ ?",
+        "options": [
+          "75 m",
+          "70 m (alt)",
+          "67 m",
+          "70 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_d20467dc",
+        "question": "Ladder reaches 74 m on wall, elevation 45°. Foot from wall ≈ ?",
+        "options": [
+          "74 m",
+          "71 m",
+          "74 m (alt)",
+          "79 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_243436c1",
+        "question": "Ladder reaches 63 m on wall, elevation 75°. Foot from wall ≈ ?",
+        "options": [
+          "22 m",
+          "17 m",
+          "14 m",
+          "63 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_1d4cf2a0",
+        "question": "Ladder reaches 18 m on wall, elevation 60°. Foot from wall ≈ ?",
         "options": [
           "7 m",
           "10 m",
-          "10 m (alt)",
-          "15 m"
+          "15 m",
+          "18 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_8762439d",
+        "question": "Ladder reaches 80 m on wall, elevation 15°. Foot from wall ≈ ?",
+        "options": [
+          "299 m",
+          "80 m",
+          "304 m",
+          "296 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_97f2113f",
+        "question": "Ladder reaches 78 m on wall, elevation 75°. Foot from wall ≈ ?",
+        "options": [
+          "26 m",
+          "18 m",
+          "21 m",
+          "78 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_0f38f211",
+        "question": "Ladder reaches 38 m on wall, elevation 45°. Foot from wall ≈ ?",
+        "options": [
+          "38 m (alt)",
+          "43 m",
+          "38 m",
+          "35 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_c08e07cb",
+        "question": "Ladder reaches 35 m on wall, elevation 30°. Foot from wall ≈ ?",
+        "options": [
+          "58 m",
+          "61 m",
+          "35 m",
+          "66 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_71c77da4",
+        "question": "Ladder reaches 13 m on wall, elevation 60°. Foot from wall ≈ ?",
+        "options": [
+          "13 m",
+          "5 m",
+          "8 m",
+          "8 m (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_ba4bbe13",
+        "question": "Ladder reaches 45 m on wall, elevation 30°. Foot from wall ≈ ?",
+        "options": [
+          "45 m",
+          "75 m",
+          "78 m",
+          "83 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_d74c9c2b",
+        "question": "Ladder reaches 45 m on wall, elevation 15°. Foot from wall ≈ ?",
+        "options": [
+          "173 m",
+          "165 m",
+          "168 m",
+          "45 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_e8f0011f",
+        "question": "Ladder reaches 19 m on wall, elevation 75°. Foot from wall ≈ ?",
+        "options": [
+          "10 m",
+          "19 m",
+          "5 m",
+          "2 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_42a5da7a",
+        "question": "Ladder reaches 34 m on wall, elevation 45°. Foot from wall ≈ ?",
+        "options": [
+          "34 m (alt)",
+          "39 m",
+          "34 m",
+          "31 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_e3f0ff7b",
+        "question": "Ladder reaches 27 m on wall, elevation 75°. Foot from wall ≈ ?",
+        "options": [
+          "4 m",
+          "12 m",
+          "27 m",
+          "7 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_90c41dbd",
+        "question": "Ladder reaches 48 m on wall, elevation 30°. Foot from wall ≈ ?",
+        "options": [
+          "48 m",
+          "83 m",
+          "88 m",
+          "80 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t3_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_B_9ee5b160",
+        "question": "Ladder reaches 51 m on wall, elevation 60°. Foot from wall ≈ ?",
+        "options": [
+          "34 m",
+          "29 m",
+          "26 m",
+          "51 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -348,15 +1146,15 @@
     ],
     "C": [
       {
-        "id": "u9_t3_C_44a894cc",
-        "question": "Boat moves from 4 m to 2 m from cliff. Distance moved ≈ ?",
+        "id": "u9_t3_C_2666da86",
+        "question": "Boat moves from 12 m to 7 m from cliff. Distance moved ≈ ?",
         "options": [
-          "2 m apart",
-          "6 m",
-          "4 m",
-          "2 m"
+          "7 m",
+          "12 m",
+          "5 m apart",
+          "19 m"
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 3,
         "level": "C",
@@ -367,50 +1165,31 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_C_3736acbb",
-        "question": "Boat moves from 6 m to 3 m from cliff. Distance moved ≈ ?",
+        "id": "u9_t3_C_40fa8002",
+        "question": "Boat moves from 4 m to 4 m from cliff. Distance moved ≈ ?",
         "options": [
-          "3 m",
-          "6 m",
-          "9 m",
-          "3 m apart"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 3,
-        "level": "C",
-        "unit_id": 9,
-        "category": "u9_t3_C",
-        "category_label": "Distance · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_C_f7b05e82",
-        "question": "Boat moves from 9 m to 4 m from cliff. Distance moved ≈ ?",
-        "options": [
-          "9 m",
-          "4 m",
-          "13 m",
-          "5 m apart"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 3,
-        "level": "C",
-        "unit_id": 9,
-        "category": "u9_t3_C",
-        "category_label": "Distance · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_C_7fdeb370",
-        "question": "Boat moves from 7 m to 7 m from cliff. Distance moved ≈ ?",
-        "options": [
-          "0 m apart",
-          "14 m",
           "0 m apart (alt)",
+          "8 m",
+          "4 m",
+          "0 m apart"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_608f6078",
+        "question": "Boat moves from 5 m to 2 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "3 m apart",
+          "2 m",
+          "5 m",
           "7 m"
         ],
         "answer": 0,
@@ -424,13 +1203,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_C_50a6cffb",
-        "question": "Boat moves from 5 m to 6 m from cliff. Distance moved ≈ ?",
+        "id": "u9_t3_C_4e4c7e66",
+        "question": "Boat moves from 4 m to 6 m from cliff. Distance moved ≈ ?",
         "options": [
-          "6 m",
-          "1 m apart",
-          "5 m",
-          "11 m"
+          "4 m",
+          "10 m",
+          "2 m apart",
+          "6 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_b1750fb1",
+        "question": "Boat moves from 7 m to 2 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "2 m",
+          "5 m apart",
+          "9 m",
+          "7 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -443,13 +1241,51 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_C_5a704884",
-        "question": "Boat moves from 4 m to 8 m from cliff. Distance moved ≈ ?",
+        "id": "u9_t3_C_2b609a32",
+        "question": "Boat moves from 4 m to 2 m from cliff. Distance moved ≈ ?",
         "options": [
-          "4 m apart",
-          "12 m",
+          "2 m",
+          "4 m",
+          "2 m apart",
+          "6 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_e73a2270",
+        "question": "Boat moves from 8 m to 6 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "14 m",
           "8 m",
-          "4 m"
+          "2 m apart",
+          "6 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_45438a30",
+        "question": "Boat moves from 11 m to 8 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "3 m apart",
+          "8 m",
+          "19 m",
+          "11 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -462,69 +1298,12 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_C_bde6b8f6",
-        "question": "Boat moves from 10 m to 5 m from cliff. Distance moved ≈ ?",
-        "options": [
-          "15 m",
-          "5 m apart",
-          "10 m",
-          "5 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 3,
-        "level": "C",
-        "unit_id": 9,
-        "category": "u9_t3_C",
-        "category_label": "Distance · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_C_0330a800",
-        "question": "Boat moves from 8 m to 6 m from cliff. Distance moved ≈ ?",
+        "id": "u9_t3_C_e01e30c1",
+        "question": "Boat moves from 5 m to 6 m from cliff. Distance moved ≈ ?",
         "options": [
           "6 m",
-          "8 m",
-          "14 m",
-          "2 m apart"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 3,
-        "level": "C",
-        "unit_id": 9,
-        "category": "u9_t3_C",
-        "category_label": "Distance · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_C_6e0b2679",
-        "question": "Boat moves from 11 m to 6 m from cliff. Distance moved ≈ ?",
-        "options": [
-          "17 m",
-          "5 m apart",
           "11 m",
-          "6 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 3,
-        "level": "C",
-        "unit_id": 9,
-        "category": "u9_t3_C",
-        "category_label": "Distance · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_C_ffca7dca",
-        "question": "Boat moves from 7 m to 8 m from cliff. Distance moved ≈ ?",
-        "options": [
-          "7 m",
-          "8 m",
-          "15 m",
+          "5 m",
           "1 m apart"
         ],
         "answer": 3,
@@ -538,13 +1317,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_C_7c213267",
-        "question": "Boat moves from 5 m to 3 m from cliff. Distance moved ≈ ?",
+        "id": "u9_t3_C_ba4d43d0",
+        "question": "Boat moves from 12 m to 8 m from cliff. Distance moved ≈ ?",
         "options": [
+          "12 m",
           "8 m",
-          "5 m",
-          "2 m apart",
-          "3 m"
+          "4 m apart",
+          "20 m"
         ],
         "answer": 2,
         "explanation": "",
@@ -557,12 +1336,50 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_C_fff97035",
+        "id": "u9_t3_C_293c3de9",
+        "question": "Boat moves from 6 m to 3 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "6 m",
+          "3 m apart",
+          "3 m",
+          "9 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_dc4acc36",
+        "question": "Boat moves from 5 m to 7 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "12 m",
+          "2 m apart",
+          "5 m",
+          "7 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_a610b5e1",
         "question": "Boat moves from 9 m to 6 m from cliff. Distance moved ≈ ?",
         "options": [
-          "9 m",
-          "3 m apart",
           "6 m",
+          "3 m apart",
+          "9 m",
           "15 m"
         ],
         "answer": 1,
@@ -576,13 +1393,70 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_C_4b8ed357",
-        "question": "Boat moves from 11 m to 5 m from cliff. Distance moved ≈ ?",
+        "id": "u9_t3_C_ff8dce92",
+        "question": "Boat moves from 8 m to 4 m from cliff. Distance moved ≈ ?",
         "options": [
-          "6 m apart",
-          "5 m",
-          "11 m",
-          "16 m"
+          "8 m",
+          "4 m",
+          "4 m apart",
+          "12 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_ad9618c4",
+        "question": "Boat moves from 10 m to 4 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "10 m",
+          "4 m",
+          "14 m",
+          "6 m apart"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_5c9fd067",
+        "question": "Boat moves from 12 m to 3 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "15 m",
+          "3 m",
+          "9 m apart",
+          "12 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_118d590b",
+        "question": "Boat moves from 4 m to 8 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "4 m apart",
+          "12 m",
+          "4 m",
+          "8 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -595,12 +1469,88 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_C_83ce1465",
-        "question": "Boat moves from 8 m to 4 m from cliff. Distance moved ≈ ?",
+        "id": "u9_t3_C_1d7a3234",
+        "question": "Boat moves from 11 m to 7 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "4 m apart",
+          "11 m",
+          "7 m",
+          "18 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_4bd41b21",
+        "question": "Boat moves from 7 m to 6 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "6 m",
+          "13 m",
+          "1 m apart",
+          "7 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_90669544",
+        "question": "Boat moves from 9 m to 8 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "9 m",
+          "17 m",
+          "1 m apart",
+          "8 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_46096d89",
+        "question": "Boat moves from 6 m to 4 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "10 m",
+          "4 m",
+          "6 m",
+          "2 m apart"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_95567c44",
+        "question": "Boat moves from 6 m to 2 m from cliff. Distance moved ≈ ?",
         "options": [
           "8 m",
-          "4 m",
-          "12 m",
+          "2 m",
+          "6 m",
           "4 m apart"
         ],
         "answer": 3,
@@ -614,15 +1564,148 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_C_131c2e96",
-        "question": "Boat moves from 11 m to 2 m from cliff. Distance moved ≈ ?",
+        "id": "u9_t3_C_91bd7cd8",
+        "question": "Boat moves from 12 m to 5 m from cliff. Distance moved ≈ ?",
         "options": [
-          "9 m apart",
-          "13 m",
-          "2 m",
-          "11 m"
+          "17 m",
+          "12 m",
+          "5 m",
+          "7 m apart"
         ],
-        "answer": 0,
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_40795a99",
+        "question": "Boat moves from 6 m to 5 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "11 m",
+          "5 m",
+          "1 m apart",
+          "6 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_28f0a3a3",
+        "question": "Boat moves from 8 m to 5 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "8 m",
+          "3 m apart",
+          "13 m",
+          "5 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_2f4da958",
+        "question": "Boat moves from 11 m to 5 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "5 m",
+          "6 m apart",
+          "11 m",
+          "16 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_ee0ae3dd",
+        "question": "Boat moves from 4 m to 5 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "4 m",
+          "1 m apart",
+          "5 m",
+          "9 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_699f3423",
+        "question": "Boat moves from 9 m to 2 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "11 m",
+          "2 m",
+          "9 m",
+          "7 m apart"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_db11facc",
+        "question": "Boat moves from 5 m to 4 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "4 m",
+          "5 m",
+          "9 m",
+          "1 m apart"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t3_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_C_522c0e99",
+        "question": "Boat moves from 6 m to 7 m from cliff. Distance moved ≈ ?",
+        "options": [
+          "6 m",
+          "1 m apart",
+          "7 m",
+          "13 m"
+        ],
+        "answer": 1,
         "explanation": "",
         "topic": 3,
         "level": "C",
@@ -635,49 +1718,11 @@
     ],
     "D": [
       {
-        "id": "u9_t3_D_1a4c7479",
-        "question": "From 20 m building, depression of car is 60°. Car distance ≈ ?",
+        "id": "u9_t3_D_ba875084",
+        "question": "From 50 m building, depression of car is 30°. Car distance ≈ ?",
         "options": [
-          "20 m",
-          "12 m",
-          "40 m",
-          "10 m"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 3,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t3_D",
-        "category_label": "Distance · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_D_a1af5b75",
-        "question": "From 10 m building, depression of car is 45°. Car distance ≈ ?",
-        "options": [
-          "10 m (alt)",
-          "5 m",
-          "20 m",
-          "10 m"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 3,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t3_D",
-        "category_label": "Distance · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_D_76e45070",
-        "question": "From 50 m building, depression of car is 60°. Car distance ≈ ?",
-        "options": [
+          "87 m",
           "100 m",
-          "29 m",
           "50 m",
           "25 m"
         ],
@@ -692,32 +1737,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_D_8ae4311a",
-        "question": "From 50 m building, depression of car is 30°. Car distance ≈ ?",
+        "id": "u9_t3_D_67f22ea6",
+        "question": "From 10 m building, depression of car is 30°. Car distance ≈ ?",
         "options": [
-          "87 m",
-          "50 m",
-          "100 m",
-          "25 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 3,
-        "level": "D",
-        "unit_id": 9,
-        "category": "u9_t3_D",
-        "category_label": "Distance · Level D",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_D_a4d3edd3",
-        "question": "From 20 m building, depression of car is 45°. Car distance ≈ ?",
-        "options": [
-          "20 m",
           "10 m",
-          "40 m",
-          "20 m (alt)"
+          "5 m",
+          "20 m",
+          "17 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -730,13 +1756,32 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_D_f8e9045f",
-        "question": "From 10 m building, depression of car is 30°. Car distance ≈ ?",
+        "id": "u9_t3_D_5fb5ea66",
+        "question": "From 10 m building, depression of car is 60°. Car distance ≈ ?",
         "options": [
-          "5 m",
-          "17 m",
           "20 m",
-          "10 m"
+          "6 m",
+          "10 m",
+          "5 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_af1f522a",
+        "question": "From 20 m building, depression of car is 30°. Car distance ≈ ?",
+        "options": [
+          "35 m",
+          "10 m",
+          "40 m",
+          "20 m"
         ],
         "answer": 3,
         "explanation": "",
@@ -749,11 +1794,49 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_D_f971058f",
+        "id": "u9_t3_D_724cba13",
         "question": "From 50 m building, depression of car is 45°. Car distance ≈ ?",
         "options": [
-          "25 m",
           "50 m (alt)",
+          "100 m",
+          "50 m",
+          "25 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_92f52063",
+        "question": "From 20 m building, depression of car is 60°. Car distance ≈ ?",
+        "options": [
+          "20 m",
+          "12 m",
+          "10 m",
+          "40 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_8cbe77e1",
+        "question": "From 50 m building, depression of car is 60°. Car distance ≈ ?",
+        "options": [
+          "29 m",
+          "25 m",
           "100 m",
           "50 m"
         ],
@@ -768,13 +1851,89 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_D_70e7951d",
-        "question": "From 20 m building, depression of car is 30°. Car distance ≈ ?",
+        "id": "u9_t3_D_e636405c",
+        "question": "From 20 m building, depression of car is 45°. Car distance ≈ ?",
         "options": [
+          "20 m",
           "40 m",
+          "20 m (alt)",
+          "10 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_330023e9",
+        "question": "From 10 m building, depression of car is 45°. Car distance ≈ ?",
+        "options": [
+          "5 m",
+          "10 m (alt)",
           "10 m",
-          "35 m",
           "20 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_195b7f56",
+        "question": "From 33 m building, depression of car is 75°. Car distance ≈ ?",
+        "options": [
+          "33 m",
+          "16 m",
+          "66 m",
+          "9 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_d5a3c015",
+        "question": "From 38 m building, depression of car is 45°. Car distance ≈ ?",
+        "options": [
+          "76 m",
+          "38 m",
+          "38 m (alt)",
+          "19 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_dbd6d736",
+        "question": "From 67 m building, depression of car is 60°. Car distance ≈ ?",
+        "options": [
+          "33 m",
+          "39 m",
+          "134 m",
+          "67 m"
         ],
         "answer": 3,
         "explanation": "",
@@ -787,15 +1946,338 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_D_4d8a9cc5",
-        "question": "From 10 m building, depression of car is 60°. Car distance ≈ ?",
+        "id": "u9_t3_D_ac3b66d3",
+        "question": "From 68 m building, depression of car is 75°. Car distance ≈ ?",
+        "options": [
+          "68 m",
+          "136 m",
+          "34 m",
+          "18 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_25c2a73e",
+        "question": "From 32 m building, depression of car is 30°. Car distance ≈ ?",
+        "options": [
+          "16 m",
+          "32 m",
+          "64 m",
+          "55 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_a2c54e21",
+        "question": "From 29 m building, depression of car is 15°. Car distance ≈ ?",
+        "options": [
+          "29 m",
+          "108 m",
+          "58 m",
+          "14 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_ddb243a1",
+        "question": "From 77 m building, depression of car is 30°. Car distance ≈ ?",
+        "options": [
+          "154 m",
+          "133 m",
+          "38 m",
+          "77 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_d63e10fd",
+        "question": "From 10 m building, depression of car is 15°. Car distance ≈ ?",
         "options": [
           "5 m",
           "20 m",
-          "6 m",
+          "37 m",
           "10 m"
         ],
         "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_49c2baf8",
+        "question": "From 35 m building, depression of car is 60°. Car distance ≈ ?",
+        "options": [
+          "20 m",
+          "35 m",
+          "70 m",
+          "17 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_602e8fab",
+        "question": "From 31 m building, depression of car is 45°. Car distance ≈ ?",
+        "options": [
+          "62 m",
+          "15 m",
+          "31 m (alt)",
+          "31 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_1c5d1c88",
+        "question": "From 71 m building, depression of car is 30°. Car distance ≈ ?",
+        "options": [
+          "35 m",
+          "142 m",
+          "123 m",
+          "71 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_cf16f10e",
+        "question": "From 8 m building, depression of car is 30°. Car distance ≈ ?",
+        "options": [
+          "16 m",
+          "4 m",
+          "14 m",
+          "8 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_1941da67",
+        "question": "From 32 m building, depression of car is 60°. Car distance ≈ ?",
+        "options": [
+          "64 m",
+          "32 m",
+          "18 m",
+          "16 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_3d411fdf",
+        "question": "From 39 m building, depression of car is 45°. Car distance ≈ ?",
+        "options": [
+          "39 m (alt)",
+          "19 m",
+          "39 m",
+          "78 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_a0e03134",
+        "question": "From 8 m building, depression of car is 45°. Car distance ≈ ?",
+        "options": [
+          "4 m",
+          "8 m",
+          "8 m (alt)",
+          "16 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_223fe1f1",
+        "question": "From 20 m building, depression of car is 15°. Car distance ≈ ?",
+        "options": [
+          "10 m",
+          "20 m",
+          "40 m",
+          "75 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_b1eee04d",
+        "question": "From 23 m building, depression of car is 45°. Car distance ≈ ?",
+        "options": [
+          "23 m",
+          "46 m",
+          "23 m (alt)",
+          "11 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_fe66b85b",
+        "question": "From 18 m building, depression of car is 75°. Car distance ≈ ?",
+        "options": [
+          "5 m",
+          "36 m",
+          "18 m",
+          "9 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_23b69d1e",
+        "question": "From 33 m building, depression of car is 45°. Car distance ≈ ?",
+        "options": [
+          "33 m",
+          "33 m (alt)",
+          "66 m",
+          "16 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_e1607f4e",
+        "question": "From 31 m building, depression of car is 30°. Car distance ≈ ?",
+        "options": [
+          "62 m",
+          "54 m",
+          "15 m",
+          "31 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t3_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_D_07baaa1d",
+        "question": "From 25 m building, depression of car is 15°. Car distance ≈ ?",
+        "options": [
+          "12 m",
+          "93 m",
+          "25 m",
+          "50 m"
+        ],
+        "answer": 2,
         "explanation": "",
         "topic": 3,
         "level": "D",
@@ -808,13 +2290,32 @@
     ],
     "E": [
       {
-        "id": "u9_t3_E_f41d481b",
-        "question": "Two observers 72 m apart see pole at 30° and 45°. Setup uses:",
+        "id": "u9_t3_E_9a6eab41",
+        "question": "Two observers 107 m apart see pole at 30° and 45°. Setup uses:",
         "options": [
-          "50 m",
-          "72 m",
-          "36 m",
-          "144 m"
+          "107 m",
+          "20 m",
+          "214 m",
+          "53 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_a32b2b27",
+        "question": "Two observers 111 m apart see pole at 45° and 45°. Setup uses:",
+        "options": [
+          "55 m",
+          "111 m",
+          "222 m",
+          "10 m"
         ],
         "answer": 1,
         "explanation": "",
@@ -827,50 +2328,335 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_E_39ad6528",
-        "question": "Two observers 139 m apart see pole at 60° and 45°. Setup uses:",
+        "id": "u9_t3_E_58b63a65",
+        "question": "Two observers 90 m apart see pole at 60° and 45°. Setup uses:",
         "options": [
-          "139 m",
-          "69 m",
-          "278 m",
-          "10 m"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_0bf8d941",
-        "question": "Two observers 114 m apart see pole at 45° and 45°. Setup uses:",
-        "options": [
-          "114 m",
-          "10 m",
-          "228 m",
-          "57 m"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_2b5f9eba",
-        "question": "Two observers 103 m apart see pole at 30° and 45°. Setup uses:",
-        "options": [
-          "103 m",
-          "206 m",
+          "45 m",
+          "180 m",
           "50 m",
+          "90 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_711dc083",
+        "question": "Two observers 120 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "60 m",
+          "240 m",
+          "20 m",
+          "120 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_6d32f277",
+        "question": "Two observers 143 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "50 m",
+          "143 m",
+          "286 m",
+          "71 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_095c7bd9",
+        "question": "Two observers 72 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "20 m",
+          "36 m",
+          "72 m",
+          "144 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_9f85da2b",
+        "question": "Two observers 146 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "292 m",
+          "50 m",
+          "146 m",
+          "73 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_86ca0426",
+        "question": "Two observers 125 m apart see pole at 45° and 45°. Setup uses:",
+        "options": [
+          "10 m",
+          "250 m",
+          "125 m",
+          "62 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_f807e472",
+        "question": "Two observers 100 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "200 m",
+          "10 m",
+          "100 m",
+          "50 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_fe0414d0",
+        "question": "Two observers 140 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "140 m",
+          "10 m",
+          "70 m",
+          "280 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_54e07336",
+        "question": "Two observers 143 m apart see pole at 30° and 45°. Setup uses:",
+        "options": [
+          "71 m",
+          "10 m",
+          "286 m",
+          "143 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_d2e12d2e",
+        "question": "Two observers 106 m apart see pole at 30° and 45°. Setup uses:",
+        "options": [
+          "106 m",
+          "53 m",
+          "212 m",
+          "50 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_e60b06e9",
+        "question": "Two observers 68 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "50 m",
+          "136 m",
+          "68 m",
+          "34 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_213143d1",
+        "question": "Two observers 148 m apart see pole at 45° and 45°. Setup uses:",
+        "options": [
+          "74 m",
+          "10 m",
+          "148 m",
+          "296 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_549b5fe4",
+        "question": "Two observers 118 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "118 m",
+          "50 m",
+          "236 m",
+          "59 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_8bf725a4",
+        "question": "Two observers 129 m apart see pole at 45° and 45°. Setup uses:",
+        "options": [
+          "258 m",
+          "129 m",
+          "64 m",
+          "20 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_2cfef8b1",
+        "question": "Two observers 119 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "119 m",
+          "20 m",
+          "59 m",
+          "238 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_a0ad5c8c",
+        "question": "Two observers 98 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "20 m",
+          "196 m",
+          "49 m",
+          "98 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_a03af689",
+        "question": "Two observers 58 m apart see pole at 30° and 45°. Setup uses:",
+        "options": [
+          "58 m",
+          "29 m",
+          "50 m",
+          "116 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_0b3e8a38",
+        "question": "Two observers 102 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "102 m",
+          "10 m",
+          "204 m",
           "51 m"
         ],
         "answer": 0,
@@ -884,184 +2670,13 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_E_c9ded581",
-        "question": "Two observers 55 m apart see pole at 30° and 45°. Setup uses:",
+        "id": "u9_t3_E_7d8a339f",
+        "question": "Two observers 133 m apart see pole at 30° and 45°. Setup uses:",
         "options": [
-          "110 m",
-          "55 m",
-          "10 m",
-          "27 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_e658dbfb",
-        "question": "Two observers 63 m apart see pole at 30° and 45°. Setup uses:",
-        "options": [
-          "31 m",
-          "63 m",
-          "126 m",
-          "10 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_87e8aff9",
-        "question": "Two observers 150 m apart see pole at 30° and 45°. Setup uses:",
-        "options": [
-          "300 m",
-          "10 m",
-          "75 m",
-          "150 m"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_2170158e",
-        "question": "Two observers 137 m apart see pole at 45° and 45°. Setup uses:",
-        "options": [
+          "133 m",
           "20 m",
-          "68 m",
-          "137 m",
-          "274 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_1cc2b6af",
-        "question": "Two observers 112 m apart see pole at 60° and 45°. Setup uses:",
-        "options": [
-          "224 m",
-          "56 m",
-          "112 m",
-          "20 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_6724cbaa",
-        "question": "Two observers 87 m apart see pole at 30° and 45°. Setup uses:",
-        "options": [
-          "43 m",
-          "87 m",
-          "174 m",
-          "50 m"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_3a2f5325",
-        "question": "Two observers 77 m apart see pole at 45° and 45°. Setup uses:",
-        "options": [
-          "38 m",
-          "20 m",
-          "154 m",
-          "77 m"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_fa4ba130",
-        "question": "Two observers 139 m apart see pole at 30° and 45°. Setup uses:",
-        "options": [
-          "69 m",
-          "20 m",
-          "278 m",
-          "139 m"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_a1f2448b",
-        "question": "Two observers 62 m apart see pole at 60° and 45°. Setup uses:",
-        "options": [
-          "20 m",
-          "124 m",
-          "62 m",
-          "31 m"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 3,
-        "level": "E",
-        "unit_id": 9,
-        "category": "u9_t3_E",
-        "category_label": "Distance · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
-      },
-      {
-        "id": "u9_t3_E_e63dec75",
-        "question": "Two observers 56 m apart see pole at 60° and 45°. Setup uses:",
-        "options": [
-          "56 m",
-          "50 m",
-          "28 m",
-          "112 m"
+          "66 m",
+          "266 m"
         ],
         "answer": 0,
         "explanation": "",
@@ -1074,13 +2689,165 @@
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       },
       {
-        "id": "u9_t3_E_ad68035f",
-        "question": "Two observers 52 m apart see pole at 30° and 45°. Setup uses:",
+        "id": "u9_t3_E_770e93e0",
+        "question": "Two observers 96 m apart see pole at 30° and 45°. Setup uses:",
         "options": [
-          "26 m",
+          "96 m",
+          "10 m",
+          "48 m",
+          "192 m"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_5408ba4a",
+        "question": "Two observers 105 m apart see pole at 45° and 45°. Setup uses:",
+        "options": [
+          "210 m",
+          "52 m",
+          "50 m",
+          "105 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_3759cbd0",
+        "question": "Two observers 59 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
           "20 m",
-          "104 m",
-          "52 m"
+          "118 m",
+          "59 m",
+          "29 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_c62a42bf",
+        "question": "Two observers 83 m apart see pole at 30° and 45°. Setup uses:",
+        "options": [
+          "41 m",
+          "166 m",
+          "10 m",
+          "83 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_2ec4e2a6",
+        "question": "Two observers 67 m apart see pole at 45° and 45°. Setup uses:",
+        "options": [
+          "50 m",
+          "134 m",
+          "67 m",
+          "33 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_12591cb8",
+        "question": "Two observers 55 m apart see pole at 30° and 45°. Setup uses:",
+        "options": [
+          "27 m",
+          "50 m",
+          "110 m",
+          "55 m"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_963b0ae6",
+        "question": "Two observers 120 m apart see pole at 60° and 45°. Setup uses:",
+        "options": [
+          "50 m",
+          "60 m",
+          "120 m",
+          "240 m"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_b36ef7d7",
+        "question": "Two observers 76 m apart see pole at 45° and 45°. Setup uses:",
+        "options": [
+          "152 m",
+          "76 m",
+          "10 m",
+          "38 m"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 9,
+        "category": "u9_t3_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t3_E_7421f5ca",
+        "question": "Two observers 100 m apart see pole at 45° and 45°. Setup uses:",
+        "options": [
+          "200 m",
+          "10 m",
+          "50 m",
+          "100 m"
         ],
         "answer": 3,
         "explanation": "",
