@@ -311,6 +311,29 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(q["unit_id"], 14)
         self.assertEqual(q["chapter_ref"], "NCERT Ch 14 Probability")
 
+    def test_one_zero_accepts_either_root(self):
+        import harshit_math_answers as hma
+
+        q = {
+            "question": "One zero of p(x) = x² + 3x - 10 is:",
+            "options": ["-5", "2", "-3", "-10"],
+            "answer": 1,
+        }
+        self.assertTrue(hma.is_pick_correct(q, 0))
+        self.assertTrue(hma.is_pick_correct(q, 1))
+        self.assertFalse(hma.is_pick_correct(q, 2))
+
+    def test_other_zero_does_not_accept_both_roots(self):
+        import harshit_math_answers as hma
+
+        q = {
+            "question": "One zero of p(x) = x² + 3x - 10 is 2. The other zero is:",
+            "options": ["-5", "3", "-3", "-10"],
+            "answer": 0,
+        }
+        self.assertTrue(hma.is_pick_correct(q, 0))
+        self.assertFalse(hma.is_pick_correct(q, 1))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -61,7 +61,7 @@ def normalize_question(raw: dict, unit_id: int, topic_id: int, level: str) -> di
         raise ValueError("Question must have 4 distinct options")
 
     qid = str(raw.get("id") or f"u{unit_id}_t{topic_id}_{level}_{uuid.uuid4().hex[:8]}")
-    return {
+    out = {
         "id": qid,
         "question": hmr.normalize_unit_coefficients(
             hmr.sanitize_grok_math_text(str(raw.get("question", "")))
@@ -77,6 +77,9 @@ def normalize_question(raw: dict, unit_id: int, topic_id: int, level: str) -> di
         "source": raw.get("source", "template"),
         "chapter_ref": raw.get("chapter_ref", ""),
     }
+    if raw.get("valid_answers"):
+        out["valid_answers"] = [str(v) for v in raw["valid_answers"]]
+    return out
 
 
 def add_questions(unit_id: int, topic_id: int, level: str, questions: list[dict]) -> int:

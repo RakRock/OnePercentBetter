@@ -500,9 +500,15 @@ def render_practice() -> None:
             correct_disp = hmr.format_math_display(str(fb["correct_val"]))
             expl_disp = hmr.format_math_display(str(q.get("explanation", "")))
             if fb["correct"]:
+                if str(fb["picked"]) != str(fb["correct_val"]):
+                    headline = (
+                        f"✅ <strong>Correct!</strong> <strong>{picked_disp}</strong> is also a valid answer."
+                    )
+                else:
+                    headline = f"✅ <strong>Correct!</strong> The answer is <strong>{correct_disp}</strong>"
                 st.markdown(
                     f'<div class="correct-answer" style="text-align:center;">'
-                    f'✅ <strong>Correct!</strong> The answer is <strong>{correct_disp}</strong>'
+                    f"{headline}"
                     f'<p style="color:#065f46;font-size:0.9rem;">{expl_disp}</p></div>',
                     unsafe_allow_html=True,
                 )

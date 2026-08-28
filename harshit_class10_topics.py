@@ -793,8 +793,10 @@ def _mcq(
     options: list[str],
     answer: int,
     explanation: str = "",
+    *,
+    valid_answers: list[str] | None = None,
 ) -> dict:
-    return {
+    out = {
         "id": f"u{unit_id}_t{topic_id}_{level}_{uuid.uuid4().hex[:8]}",
         "question": question,
         "options": options,
@@ -808,6 +810,9 @@ def _mcq(
         "source": "template",
         "chapter_ref": _chapter_ref(unit_id),
     }
+    if valid_answers:
+        out["valid_answers"] = [str(v) for v in valid_answers]
+    return out
 
 
 def _shuffle_options(correct: str, wrong: list[str]) -> tuple[list[str], int]:
@@ -1260,8 +1265,21 @@ def _gen_u2_t2(level: str) -> dict:
             correct, qtext = str(r1), f"One zero of p(x) = {poly} is:"
         else:
             correct, qtext = str(r2), f"Another zero of p(x) = {poly} is:"
-        opts, ans = _shuffle_options(correct, [str(r1 + r2), str(r1 * r2), str(r1 + r2 + 1)])
-        return _mcq(2, 2, level, qtext, opts, ans, f"Zeroes are {r1} and {r2}.")
+        sibling = str(r2) if correct == str(r1) else str(r1)
+        wrong = [w for w in (str(r1 + r2), str(r1 * r2), str(r1 + r2 + 1)) if w not in {correct, sibling}]
+        while len(wrong) < 3:
+            filler = str(int(correct) + len(wrong) + 2) if correct.lstrip("-").isdigit() else f"{correct} (alt)"
+            if filler not in {correct, sibling} and filler not in wrong:
+                wrong.append(filler)
+            else:
+                wrong.append(str(len(wrong) + 10))
+        opts, ans = _shuffle_options(correct, wrong[:3])
+        valid = [str(r1), str(r2)] if qtext.startswith("One zero") else None
+        return _mcq(
+            2, 2, level, qtext, opts, ans,
+            f"Zeroes are {r1} and {r2}.",
+            valid_answers=valid,
+        )
     if level == "D":
         count = random.choice([0, 1, 2])
         desc = random.choice([
