@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "unit_id": 7,
+    "chapter": "Coordinate Geometry",
+    "ncert": "Chapter 7",
+    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE SQP 2025-26", "NCERT Ch 7"]
+  },
+  "mcq": [
+    {
+      "id": "b30_coord_mcq1",
+      "source_paper": "30/1/1 (board-style)",
+      "question": "Distance between (3, 4) and (0, 0) is:",
+      "options": ["5 units", "7 units", "25 units", "1 unit"],
+      "answer": 0,
+      "explanation": "√(3² + 4²) = 5."
+    },
+    {
+      "id": "b30_coord_mcq2",
+      "source_paper": "30/1/2 (board-style)",
+      "question": "Mid-point of line joining (2, 3) and (6, 7) is:",
+      "options": ["(4, 5)", "(3, 4)", "(8, 10)", "(2, 2)"],
+      "answer": 0,
+      "explanation": "Mid-point = ((2+6)/2, (3+7)/2) = (4, 5)."
+    },
+    {
+      "id": "bsqp_coord_mcq",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "question": "Point dividing (1, 2) and (4, 5) internally in ratio 1:2 has coordinates:",
+      "options": ["(2, 3)", "(3, 4)", "(1, 1)", "(5, 6)"],
+      "answer": 0,
+      "explanation": "((1×4+2×1)/3, (1×5+2×2)/3) = (2, 3)."
+    }
+  ],
+  "assertion_reason": [
+    {
+      "id": "b30_coord_ar",
+      "source_paper": "30/1/1 (board-style)",
+      "assertion": "Distance between (a, 0) and (b, 0) is |b − a|.",
+      "reason": "Both points lie on the x-axis so distance is difference of abscissae.",
+      "answer": 0,
+      "explanation": "Both true; reason correctly explains the special case."
+    }
+  ],
+  "vsa": [
+    {
+      "id": "b30_coord_vsa_dist",
+      "source_paper": "30/1/1",
+      "marks": 2,
+      "question": "Find the distance between (−3, 4) and (5, 1).",
+      "model_answer": "√[(5−(−3))² + (1−4)²] = √(64 + 9) = √73 units.",
+      "rubric": ["Correct formula", "√73 units"]
+    },
+    {
+      "id": "b30_coord_vsa_mid",
+      "source_paper": "30/1/2",
+      "marks": 2,
+      "question": "Find the mid-point of the segment joining A(−2, 6) and B(4, −2).",
+      "model_answer": "Mid-point = (1, 2).",
+      "rubric": ["Average of x", "Mid-point (1, 2)"]
+    }
+  ],
+  "sa": [
+    {
+      "id": "b30_coord_sa_section",
+      "source_paper": "30/1/3",
+      "marks": 3,
+      "question": "Find coordinates of point P dividing A(2, −3) and B(5, 6) internally in ratio 2:1.",
+      "model_answer": "P = ((2×5+1×2)/3, (2×6+1×(−3))/3) = (4, 3).",
+      "rubric": ["Section formula", "P = (4, 3)"]
+    },
+    {
+      "id": "bsqp_coord_sa_collinear",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 3,
+      "question": "Show that A(1, 1), B(2, 3), C(3, 5) are collinear.",
+      "model_answer": "AB = √5, BC = √5, AC = 2√5 = AB + BC ⇒ collinear.",
+      "rubric": ["Find distances", "AB + BC = AC", "Collinear"]
+    }
+  ],
+  "la": [
+    {
+      "id": "b30_coord_la_town",
+      "source_paper": "30/1/1 (NCERT Ex 7.2 style)",
+      "marks": 5,
+      "question": "Town B is 36 km east and 15 km north of town A. Find the distance from A to B.",
+      "model_answer": "B = (36, 15), A = (0, 0). AB = √(36² + 15²) = √1521 = 39 km.",
+      "rubric": ["Coordinates", "Distance formula", "39 km"]
+    },
+    {
+      "id": "b30_coord_la_ratio",
+      "source_paper": "30/1/2",
+      "marks": 5,
+      "question": "Find the ratio in which the y-axis divides the segment joining (5, −6) and (−1, −4).",
+      "model_answer": "Point on y-axis is (0, y). Ratio = 5:1 externally or solve section formula → 5:1.",
+      "rubric": ["Point on y-axis", "Section formula", "Ratio 5:1"]
+    },
+    {
+      "id": "bsqp_coord_la_perimeter",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 5,
+      "question": "Vertices of a triangle are (0, 0), (6, 0), (0, 8). Find its perimeter.",
+      "model_answer": "Sides 6, 8, 10. Perimeter = 24 units.",
+      "rubric": ["Three distances", "Hypotenuse 10", "Perimeter 24"]
+    }
+  ]
+}

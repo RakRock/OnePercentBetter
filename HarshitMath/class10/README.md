@@ -36,6 +36,30 @@ Fifteen units aligned with NCERT Class 10 Mathematics.
 - Topics: similar figures & scale factor, BPT, similarity criteria (AAA/SSS/SAS), Pythagoras & applications
 - Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–5)
 
+## Unit 7 — Coordinate Geometry
+
+- PDF: `units/unit_07/jemh107.pdf` (NCERT Chapter 7)
+- Topics: distance formula, section formula, collinearity & verification, coordinate applications
+- Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–6)
+
+## Unit 8 — Introduction to Trigonometry
+
+- PDF: `units/unit_08/jemh108.pdf` (NCERT Chapter 8)
+- Topics: trigonometric ratios, specific angles, identities, mixed trigonometry
+- Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–7)
+
+## Unit 9 — Some Applications of Trigonometry
+
+- PDF: `units/unit_09/jemh109.pdf` (NCERT Chapter 9)
+- Topics: elevation & depression, heights, distances, word problems
+- Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–8)
+
+## Unit 10 — Circles
+
+- PDF: `units/unit_10/jemh110.pdf` (NCERT Chapter 10)
+- Topics: tangent to a circle, tangents from external point, length of tangent, applications & proofs
+- Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–9)
+
 ## Question banks
 
 `question_banks/unit_XX/topic_YY.json` — seeded from NCERT-aligned templates:
@@ -47,6 +71,10 @@ python scripts/seed_harshit_class10_banks.py --unit 3 --per-level 15
 python scripts/seed_harshit_class10_banks.py --unit 4 --per-level 15
 python scripts/seed_harshit_class10_banks.py --unit 5 --per-level 15
 python scripts/seed_harshit_class10_banks.py --unit 6 --per-level 15
+python scripts/seed_harshit_class10_banks.py --unit 7 --per-level 15
+python scripts/seed_harshit_class10_banks.py --unit 8 --per-level 15
+python scripts/seed_harshit_class10_banks.py --unit 9 --per-level 15
+python scripts/seed_harshit_class10_banks.py --unit 10 --per-level 15
 ```
 
 ## External PDF folder (optional)

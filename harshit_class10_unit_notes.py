@@ -797,11 +797,571 @@ Then open **Week Setup**, pick all four topics at levels B–C, and start **Prac
             },
         ],
     },
+    7: {
+        "title": "Coordinate Geometry — Unit Guide",
+        "subtitle": "NCERT Chapter 7 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 7** uses **algebra on a grid** to study geometry — distances, mid-points, and dividing lines.
+
+**Real-life idea:**  
+A town is **36 km east** and **15 km north** of another. On a map with 1 unit = 1 km, the second town is at **(36, 15)**. The straight-line distance is **not** 36 + 15 — you need the **distance formula** (Pythagoras on the grid).
+
+**The big ideas:**
+
+> 1. **Distance** between two points using coordinates  
+> 2. **Section formula** — point dividing a segment in ratio **m : n**  
+> 3. **Collinearity** and **area** checks using coordinates
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Distance Formula 📏
+
+**d = √[(x₂ − x₁)² + (y₂ − y₁)²]**
+
+On the **x-axis only**: distance = |x₂ − x₁|.
+
+---
+
+### 2. Section Formula ✂️
+
+Point dividing (x₁, y₁) and (x₂, y₂) **internally** in ratio **m : n**:
+
+**P = ((mx₂ + nx₁)/(m + n), (my₂ + ny₁)/(m + n))**
+
+**Mid-point** = ratio **1 : 1**.
+
+---
+
+### 3. Collinearity & Verification 📍
+
+Three points **collinear** if they lie on one line — check with **equal slopes** or **AB + BC = AC**.
+
+**Area of triangle** from coordinates — area **0** means collinear.
+
+---
+
+### 4. Coordinate Applications 🗺️
+
+Town problems, **perimeter** of triangles, finding unknown coordinates.
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **7.1 Introduction** | Recap of Class IX coordinates |
+| **7.2 Distance Formula** | Pythagoras on the coordinate plane |
+| **7.3 Section Formula** | Internal division; mid-point |
+| **7.4 Summary** | Key formulas |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Find **distance** between any two points  
+2. Find **mid-point** and **section point** in ratio m : n  
+3. Test **collinearity** and find **area** of a triangle  
+4. Solve **town / map** style problems  
+
+**Comes next:** **Unit 8 — Introduction to Trigonometry**. Unit 7 is **algebra + geometry on a grid**.
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Distance
+
+**d = √[(x₂ − x₁)² + (y₂ − y₁)²]**
+
+On x-axis: **|x₂ − x₁|** · On y-axis: **|y₂ − y₁|**
+
+---
+
+### Section (internal, ratio m : n)
+
+**x = (mx₂ + nx₁)/(m + n)**  
+**y = (my₂ + ny₁)/(m + n)**
+
+**Mid-point:** ((x₁ + x₂)/2, (y₁ + y₂)/2)
+
+---
+
+### Area of triangle
+
+**Area = ½ |x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|**
+
+If area = **0** → points are **collinear**.
+
+---
+
+### Quick reference
+
+```
+Distance     → √(Δx² + Δy²)
+Mid-point    → average of coordinates
+Section m:n  → weighted average toward (x₂, y₂)
+Collinear    → same slope or AB + BC = AC
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Distance on x-axis: (4,0) to (6,0) | 10 min |
+| 2 | Distance formula: (3,4) to (0,0) = 5 | 20 min |
+| 3 | Mid-point of two points | 15 min |
+| 4 | Section formula ratio 2:1 | 20 min |
+| 5 | Collinearity check | 15 min |
+| 6 | Town B 36 km east, 15 km north | 20 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- Sketch points on rough axes before substituting.  
+- **Square** the differences in the distance formula — signs disappear.  
+- Mid-point is always **section 1:1**.
+
+Then open **Week Setup**, pick topics at levels B–C, and start **Practice**.
+
+**One sentence for Harshit:**
+
+> *Plot the points, use √(Δx² + Δy²) for distance, and the section formula when a point splits a line in ratio m : n.*
+""",
+            },
+        ],
+    },
+    8: {
+        "title": "Introduction to Trigonometry — Unit Guide",
+        "subtitle": "NCERT Chapter 8 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 8** studies **ratios in right triangles** — how side lengths depend on acute angles.
+
+**Real-life idea:**  
+Looking up at a **minar**, you imagine a **right triangle**. The **angle of view** fixes the ratio **height / distance**. That ratio has a name: **tan θ**.
+
+**The big ideas:**
+
+> 1. **Six ratios**: sin, cos, tan, cosec, sec, cot  
+> 2. **Standard values** at 0°, 30°, 45°, 60°, 90°  
+> 3. **Identities** linking the ratios
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Trigonometric Ratios 📐
+
+With respect to angle **θ** in right ΔABC (∠B = 90°):
+
+| Ratio | Definition |
+|-------|------------|
+| **sin θ** | opposite / hypotenuse |
+| **cos θ** | adjacent / hypotenuse |
+| **tan θ** | opposite / adjacent |
+
+**cosec = 1/sin**, **sec = 1/cos**, **cot = 1/tan**
+
+---
+
+### 2. Ratios of Specific Angles 🎯
+
+Memorise the table for **0°, 30°, 45°, 60°, 90°**.
+
+**Complementary:** sin(90° − θ) = cos θ
+
+---
+
+### 3. Trigonometric Identities 🆔
+
+**sin²θ + cos²θ = 1**  
+**1 + tan²θ = sec²θ**  
+**1 + cot²θ = cosec²θ**
+
+---
+
+### 4. Mixed Trigonometry 🔀
+
+Simplify expressions; combine **specific angles** with **identities**.
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **8.1 Introduction** | Right triangles in real life |
+| **8.2 Trigonometric Ratios** | Definitions; reciprocal relations |
+| **8.3 Ratios of Specific Angles** | Table; 0° and 90° |
+| **8.4 Trigonometric Identities** | Three main identities |
+| **8.5 Summary** | |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Write **all six ratios** from a right triangle diagram  
+2. Recall **standard values** without a calculator  
+3. Use **identities** to simplify expressions  
+4. Prove **simple identities** in 2–3 steps  
+
+**Comes next:** **Unit 9 — Applications of Trigonometry** (heights and distances).
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Standard values (memorise)
+
+| θ | sin θ | cos θ | tan θ |
+|---|-------|-------|-------|
+| 0° | 0 | 1 | 0 |
+| 30° | 1/2 | √3/2 | 1/√3 |
+| 45° | 1/√2 | 1/√2 | 1 |
+| 60° | √3/2 | 1/2 | √3 |
+| 90° | 1 | 0 | undefined |
+
+---
+
+### Identities
+
+**sin²θ + cos²θ = 1**  
+**1 + tan²θ = sec²θ**  
+**1 + cot²θ = cosec²θ**
+
+---
+
+### Complementary angles
+
+**sin(90° − θ) = cos θ**  
+**cos(90° − θ) = sin θ**  
+**tan(90° − θ) = cot θ**
+
+---
+
+### Quick reference
+
+```
+SOH CAH TOA  → sin, cos, tan definitions
+cosec sec cot → reciprocals
+1 − sin²θ     → cos²θ
+Table values  → exact surds, not decimals
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Label opposite, adjacent, hypotenuse | 15 min |
+| 2 | sin, cos, tan from a 3-4-5 triangle | 20 min |
+| 3 | Table for 30°, 45°, 60° | 25 min |
+| 4 | sin²θ + cos²θ = 1 | 15 min |
+| 5 | Simplify (1 − sin²θ) | 15 min |
+| 6 | Evaluate sin 30° + cos 60° | 10 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- Always **mark the angle** you are using — opposite/adjacent swap for different angles.  
+- Learn the **table** by heart for board exams.  
+- For identities, pick **sin² + cos² = 1** first when simplifying.
+
+**One sentence for Harshit:**
+
+> *Label the right triangle, pick the ratio you need, and use sin²θ + cos²θ = 1 when expressions mix sin and cos.*
+""",
+            },
+        ],
+    },
+    9: {
+        "title": "Some Applications of Trigonometry — Unit Guide",
+        "subtitle": "NCERT Chapter 9 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 9** uses trigonometry for **heights and distances** — minars, towers, cliffs, boats, aeroplanes.
+
+**Key vocabulary:**
+
+- **Line of sight** — from eye to object  
+- **Angle of elevation** — looking **up** from horizontal  
+- **Angle of depression** — looking **down** from horizontal  
+
+Draw a **right triangle** first; then pick **sin, cos, or tan**.
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Angle of Elevation & Depression 👁️
+
+Elevation = above horizontal · Depression = below horizontal.
+
+Alternate angles link elevation and depression across **parallel horizontals**.
+
+---
+
+### 2. Heights Using Trigonometry 🏗️
+
+**height = horizontal distance × tan(angle)** (often)
+
+Add **observer height** when the question gives eye level.
+
+---
+
+### 3. Distances Using Trigonometry 🌉
+
+Find **width of river**, **distance of boat**, **foot of ladder** using known height and angle.
+
+---
+
+### 4. Applications & Word Problems 🏔️
+
+Shadow problems, **two-angle** setups, lighthouse and aeroplane questions.
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **9.1 Heights and Distances** | Line of sight; elevation & depression; worked examples |
+| **9.2 Summary** | |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Draw a **clear diagram** with horizontal and line of sight  
+2. Distinguish **elevation** vs **depression**  
+3. Find **heights** and **distances** using tan/sin/cos  
+4. Handle **two-triangle** board problems  
+
+**Comes next:** **Unit 10 — Circles** (tangents and proofs).
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Typical setup (angle of elevation θ)
+
+**tan θ = height / distance**  
+**height = distance × tan θ**  
+**distance = height / tan θ**
+
+---
+
+### With observer height h₀
+
+Total height = **h₀ + (horizontal × tan θ)**
+
+---
+
+### Shadow problems
+
+Same sun ⇒ **height / shadow** is constant (similar triangles).
+
+---
+
+### Quick reference
+
+```
+Elevation    → angle above horizontal
+Depression   → angle below horizontal
+Line of sight → eye to object
+Draw ⊥       → mark height and base first
+tan θ        → most common in height problems
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Line of sight and horizontal | 15 min |
+| 2 | Elevation vs depression on one diagram | 15 min |
+| 3 | Tower: distance 30 m, angle 30° | 20 min |
+| 4 | Add observer height 1.5 m | 20 min |
+| 5 | Depression from cliff | 20 min |
+| 6 | Shadow ratio problem | 15 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- **Diagram is half the answer** — label θ, height, distance.  
+- Check whether the height is from **ground** or **eye level**.  
+- For depression, the angle inside the triangle equals the depression angle (alternate angles).
+
+**One sentence for Harshit:**
+
+> *Draw the right triangle, mark elevation or depression, then use tan θ = opposite/adjacent with the right pair of sides.*
+""",
+            },
+        ],
+    },
+    10: {
+        "title": "Circles — Unit Guide",
+        "subtitle": "NCERT Chapter 10 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 10** is about **tangents** — lines that touch a circle at **exactly one point**.
+
+**Three cases** for a line and a circle:
+
+1. **No point** in common — non-intersecting  
+2. **Two points** — **secant**  
+3. **One point** — **tangent**
+
+From a point **outside** the circle you can draw **exactly two** tangents; their lengths are **equal**.
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Tangent to a Circle ⭕
+
+**Theorem 10.1:** Radius ⊥ tangent at point of contact.
+
+---
+
+### 2. Tangents from an External Point 📍
+
+- Inside → **no** tangent  
+- On circle → **one** tangent  
+- Outside → **two** tangents  
+
+**Theorem 10.2:** Tangents from external point are **equal** (PQ = PR).
+
+---
+
+### 3. Length of Tangent 📏
+
+**Length = √(OP² − r²)** where O is centre, P external point, r radius.
+
+---
+
+### 4. Circle Applications & Proofs 🔧
+
+Concentric circles, chord as tangent to inner circle, angle between tangents.
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **10.1 Introduction** | Line vs circle: none, secant, tangent |
+| **10.2 Tangent to a Circle** | Theorem 10.1 |
+| **10.3 Number of Tangents from a Point** | Cases 1–3; Theorem 10.2 |
+| **10.4 Summary** | |
+
+**By the end of the unit** Harshit should be able to:
+
+1. State **Theorem 10.1** and **10.2**  
+2. Find **tangent length** using Pythagoras  
+3. Count tangents from **inside / on / outside**  
+4. Prove **standard circle results** (equal tangents, bisected chord)  
+
+**Comes next:** **Unit 11 — Areas Related to Circles**.
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Theorem 10.1
+
+**Radius ⊥ tangent** at point of contact.
+
+---
+
+### Tangent length from external point P
+
+**PT = √(OP² − r²)**
+
+---
+
+### Theorem 10.2
+
+**Two tangents from external P are equal:** PQ = PR.
+
+**OP bisects** ∠QPR.
+
+---
+
+### Concentric circles
+
+Chord of **outer** circle tangent to **inner** ⇒ tangent point **bisects** the chord.
+
+---
+
+### Quick reference
+
+```
+Tangent      → one common point
+Secant       → two common points
+Inside point → 0 tangents
+Outside      → 2 equal tangents
+Length       → √(OP² − r²)
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Tangent vs secant — one vs two points | 15 min |
+| 2 | Radius ⊥ tangent (Theorem 10.1) | 20 min |
+| 3 | Tangent length: r = 5, OP = 13 | 20 min |
+| 4 | Two tangents equal from outside | 20 min |
+| 5 | Concentric circles — chord bisected | 15 min |
+| 6 | NCERT Example: ∠PTQ = 2∠OPQ | 20 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- Mark the **right angle** at the point of contact first.  
+- Tangent length problems are **Pythagoras** in disguise.  
+- For proofs, join **OP** and use **RHS** congruence.
+
+**One sentence for Harshit:**
+
+> *Radius meets tangent at 90°; from outside the circle, both tangents have the same length — √(OP² − r²).*
+""",
+            },
+        ],
+    },
 }
 
 
 # Bump a unit's version when its guide content changes so returning users land on the guide tab.
-GUIDE_VERSIONS: dict[int, int] = {2: 1, 3: 1, 5: 1, 6: 1}
+GUIDE_VERSIONS: dict[int, int] = {2: 1, 3: 1, 5: 1, 6: 1, 7: 1, 8: 1, 9: 1, 10: 1}
 
 
 def unit_guide_available(unit_id: int) -> bool:

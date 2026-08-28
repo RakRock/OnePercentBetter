@@ -1,0 +1,398 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u8_t2_A_fdc30def",
+        "question": "sin 30° = ?",
+        "options": [
+          "√3/2",
+          "1/2",
+          "1/√2",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t2_A",
+        "category_label": "Angles · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      }
+    ],
+    "B": [
+      {
+        "id": "u8_t2_B_3d877c0b",
+        "question": "tan 45° = ?",
+        "options": [
+          "1",
+          "0",
+          "1/√3",
+          "√3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t2_B",
+        "category_label": "Angles · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      }
+    ],
+    "C": [
+      {
+        "id": "u8_t2_C_e4fdf9f2",
+        "question": "cos 0° = ?",
+        "options": [
+          "4",
+          "1",
+          "1 (alt)",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_d0de5f16",
+        "question": "tan 45° = ?",
+        "options": [
+          "1/√2",
+          "1 (alt)",
+          "4",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_a6dc6c23",
+        "question": "tan 60° = ?",
+        "options": [
+          "√3",
+          "1/2",
+          "√3/2",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_121ee755",
+        "question": "sin 60° = ?",
+        "options": [
+          "√3",
+          "1",
+          "√3/2",
+          "1/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_62b6d259",
+        "question": "tan 0° = ?",
+        "options": [
+          "1",
+          "0",
+          "3",
+          "0 (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_48a84b69",
+        "question": "cos 90° = ?",
+        "options": [
+          "1",
+          "undefined",
+          "0",
+          "0 (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_bbedc1f5",
+        "question": "tan 30° = ?",
+        "options": [
+          "√3/2",
+          "1/2",
+          "1",
+          "1/√3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_ef4307d6",
+        "question": "sin 30° = ?",
+        "options": [
+          "√3/2",
+          "1/√3",
+          "1",
+          "1/2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_2a08c1bc",
+        "question": "cos 30° = ?",
+        "options": [
+          "√3/2",
+          "1/√3",
+          "1/2",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_88d08535",
+        "question": "tan 90° = ?",
+        "options": [
+          "undefined",
+          "undefined (alt)",
+          "1",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_0ff474cb",
+        "question": "sin 0° = ?",
+        "options": [
+          "3",
+          "1",
+          "0",
+          "0 (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_48438407",
+        "question": "cos 60° = ?",
+        "options": [
+          "1/2",
+          "√3/2",
+          "√3",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_95912523",
+        "question": "cos 45° = ?",
+        "options": [
+          "1",
+          "None of these",
+          "1/√2",
+          "1/√2 (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_325892ec",
+        "question": "sin 90° = ?",
+        "options": [
+          "0",
+          "undefined",
+          "1 (alt)",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_C_e24e94ec",
+        "question": "sin 45° = ?",
+        "options": [
+          "None of these",
+          "1",
+          "1/√2",
+          "1/√2 (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t2_C",
+        "category_label": "Angles · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      }
+    ],
+    "D": [
+      {
+        "id": "u8_t2_D_22a33ac4",
+        "question": "Complementary angle relation:",
+        "options": [
+          "tan(90° - θ) = sec θ",
+          "sin(90° - θ) = sin θ",
+          "cos(90° - θ) = tan θ",
+          "sin(90° - θ) = cos θ"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t2_D",
+        "category_label": "Angles · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      }
+    ],
+    "E": [
+      {
+        "id": "u8_t2_E_238b3a00",
+        "question": "tan 30° = ?",
+        "options": [
+          "1/√3 (alt)",
+          "1/√3",
+          "1",
+          "1/2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t2_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_E_0a325df3",
+        "question": "tan 60° = ?",
+        "options": [
+          "√3",
+          "1",
+          "1/√3",
+          "1/2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t2_E",
+        "category_label": "Angles · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 8,
+    "topic_id": 2
+  }
+}

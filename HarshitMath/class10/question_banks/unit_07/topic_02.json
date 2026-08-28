@@ -1,0 +1,1177 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u7_t2_A_b5a481e2",
+        "question": "Internal section formula (ratio m : n):",
+        "options": [
+          "((x₁ + x₂)/2, (y₁ + y₂)/2) only",
+          "((mx₂ + nx₁)/(m + n), (my₂ + ny₁)/(m + n))",
+          "(mx₁ - nx₂, my₁ - ny₂)",
+          "(x₂ - x₁, y₂ - y₁)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 7,
+        "category": "u7_t2_A",
+        "category_label": "Section · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      }
+    ],
+    "B": [
+      {
+        "id": "u7_t2_B_4f3199ce",
+        "question": "Point dividing (2, 3) and (6, 8) internally in ratio 3:1:",
+        "options": [
+          "(6, 8)",
+          "(5, 6.75)",
+          "(4, 5.5)",
+          "(2, 3)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_3c5a2c8c",
+        "question": "Point dividing (0, 4) and (6, 10) internally in ratio 3:2:",
+        "options": [
+          "(3.6, 7.6)",
+          "(3, 7)",
+          "(0, 4)",
+          "(6, 10)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_cf99d05f",
+        "question": "Point dividing (3, 3) and (7, 10) internally in ratio 1:1:",
+        "options": [
+          "(3, 3)",
+          "(5, 6.5) (alt)",
+          "(5, 6.5)",
+          "(7, 10)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_ceb9576b",
+        "question": "Point dividing (4, 0) and (9, 7) internally in ratio 3:2:",
+        "options": [
+          "(6.5, 3.5)",
+          "(7, 4.2)",
+          "(4, 0)",
+          "(9, 7)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_81491e50",
+        "question": "Point dividing (3, 1) and (11, 8) internally in ratio 1:3:",
+        "options": [
+          "(5, 2.75)",
+          "(3, 1)",
+          "(7, 4.5)",
+          "(11, 8)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_e5940419",
+        "question": "Point dividing (2, 4) and (10, 10) internally in ratio 2:2:",
+        "options": [
+          "(6, 7) (alt)",
+          "(6, 7)",
+          "(10, 10)",
+          "(2, 4)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_09fe8a73",
+        "question": "Point dividing (2, 1) and (8, 8) internally in ratio 2:1:",
+        "options": [
+          "(6, 5.66667)",
+          "(8, 8)",
+          "(5, 4.5)",
+          "(2, 1)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_b0e1d8fb",
+        "question": "Point dividing (2, 3) and (7, 9) internally in ratio 3:1:",
+        "options": [
+          "(7, 9)",
+          "(5.75, 7.5)",
+          "(4.5, 6)",
+          "(2, 3)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_79e22b19",
+        "question": "Point dividing (3, 3) and (10, 10) internally in ratio 1:2:",
+        "options": [
+          "(5.33333, 5.33333)",
+          "(10, 10)",
+          "(6.5, 6.5)",
+          "(3, 3)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_5d5f106e",
+        "question": "Point dividing (4, 3) and (11, 11) internally in ratio 1:2:",
+        "options": [
+          "(6.33333, 5.66667)",
+          "(4, 3)",
+          "(11, 11)",
+          "(7.5, 7)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_196a4778",
+        "question": "Point dividing (4, 4) and (8, 9) internally in ratio 3:3:",
+        "options": [
+          "(4, 4)",
+          "(6, 6.5) (alt)",
+          "(6, 6.5)",
+          "(8, 9)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_c29d9b06",
+        "question": "Point dividing (3, 1) and (10, 5) internally in ratio 2:1:",
+        "options": [
+          "(7.66667, 3.66667)",
+          "(3, 1)",
+          "(10, 5)",
+          "(6.5, 3)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_8ce76875",
+        "question": "Point dividing (3, 2) and (10, 8) internally in ratio 1:3:",
+        "options": [
+          "(6.5, 5)",
+          "(4.75, 3.5)",
+          "(3, 2)",
+          "(10, 8)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_088a4d06",
+        "question": "Point dividing (4, 1) and (12, 7) internally in ratio 2:3:",
+        "options": [
+          "(12, 7)",
+          "(8, 4)",
+          "(7.2, 3.4)",
+          "(4, 1)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_ba53d546",
+        "question": "Point dividing (0, 1) and (7, 8) internally in ratio 3:3:",
+        "options": [
+          "(0, 1)",
+          "(3.5, 4.5) (alt)",
+          "(3.5, 4.5)",
+          "(7, 8)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      }
+    ],
+    "C": [
+      {
+        "id": "u7_t2_C_b26bd8aa",
+        "question": "Mid-point of (3, 0) and (8, 6):",
+        "options": [
+          "(5.5, 3) (alt)",
+          "(3, 6)",
+          "(5.5, 3)",
+          "(8, 0)"
+        ],
+        "answer": 2,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_23a1bc77",
+        "question": "Mid-point of (3, 4) and (10, 12):",
+        "options": [
+          "(7.66667, 9.33333)",
+          "(10, 4)",
+          "(6.5, 8)",
+          "(3, 12)"
+        ],
+        "answer": 2,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_5cbaf425",
+        "question": "Mid-point of (3, 2) and (8, 9):",
+        "options": [
+          "(5.5, 5.5)",
+          "(3, 9)",
+          "(8, 2)",
+          "(6.33333, 6.66667)"
+        ],
+        "answer": 0,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_080c9f81",
+        "question": "Mid-point of (0, 3) and (7, 7):",
+        "options": [
+          "(5.25, 6)",
+          "(3.5, 5)",
+          "(7, 3)",
+          "(0, 7)"
+        ],
+        "answer": 1,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_0655bc85",
+        "question": "Mid-point of (3, 2) and (7, 10):",
+        "options": [
+          "(3, 10)",
+          "(5, 6) (alt)",
+          "(7, 2)",
+          "(5, 6)"
+        ],
+        "answer": 3,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_43aad2e6",
+        "question": "Mid-point of (2, 2) and (6, 6):",
+        "options": [
+          "(3.33333, 3.33333)",
+          "(2, 6)",
+          "(4, 4)",
+          "(6, 2)"
+        ],
+        "answer": 2,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_ea1050f6",
+        "question": "Mid-point of (1, 3) and (6, 9):",
+        "options": [
+          "(3.5, 6)",
+          "(1, 9)",
+          "(3, 5.4)",
+          "(6, 3)"
+        ],
+        "answer": 0,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_c7a2c7c1",
+        "question": "Mid-point of (0, 3) and (7, 10):",
+        "options": [
+          "(3.5, 6.5)",
+          "(0, 10)",
+          "(7, 3)",
+          "(3.5, 6.5) (alt)"
+        ],
+        "answer": 0,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_d12bd933",
+        "question": "Mid-point of (1, 0) and (5, 7):",
+        "options": [
+          "(3, 3.5)",
+          "(4, 5.25)",
+          "(5, 0)",
+          "(1, 7)"
+        ],
+        "answer": 0,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_f365b5e5",
+        "question": "Mid-point of (3, 0) and (7, 7):",
+        "options": [
+          "(7, 0)",
+          "(5, 3.5)",
+          "(3, 7)",
+          "(4.33333, 2.33333)"
+        ],
+        "answer": 1,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_37fab2ee",
+        "question": "Mid-point of (0, 1) and (6, 8):",
+        "options": [
+          "(4, 5.66667)",
+          "(6, 1)",
+          "(3, 4.5)",
+          "(0, 8)"
+        ],
+        "answer": 2,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_e9cf3f8c",
+        "question": "Mid-point of (3, 0) and (9, 6):",
+        "options": [
+          "(3, 6)",
+          "(5.4, 2.4)",
+          "(6, 3)",
+          "(9, 0)"
+        ],
+        "answer": 2,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_c42bfdd1",
+        "question": "Mid-point of (0, 2) and (6, 9):",
+        "options": [
+          "(3, 5.5)",
+          "(0, 9)",
+          "(6, 2)",
+          "(1.5, 3.75)"
+        ],
+        "answer": 0,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_72d6f449",
+        "question": "Mid-point of (3, 0) and (10, 5):",
+        "options": [
+          "(10, 0)",
+          "(3, 5)",
+          "(6.5, 2.5) (alt)",
+          "(6.5, 2.5)"
+        ],
+        "answer": 3,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_fb9f7390",
+        "question": "Mid-point of (3, 2) and (11, 9):",
+        "options": [
+          "(11, 2)",
+          "(7, 5.5)",
+          "(8.33333, 6.66667)",
+          "(3, 9)"
+        ],
+        "answer": 1,
+        "explanation": "Mid-point is ratio 1:1.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      }
+    ],
+    "D": [
+      {
+        "id": "u7_t2_D_84f87614",
+        "question": "P divides AB with A(2, 4), B(9, 12), P(5.5, 8). Ratio AP : PB ≈ ?",
+        "options": [
+          "3 : 3 (alt)",
+          "3 : 3",
+          "1 : 1",
+          "6 : 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_10e7ce25",
+        "question": "P divides AB with A(2, 2), B(9, 9), P(3.75, 3.75). Ratio AP : PB ≈ ?",
+        "options": [
+          "1 : 1",
+          "1 : 3",
+          "4 : 1",
+          "3 : 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_fe401cf4",
+        "question": "P divides AB with A(1, 2), B(6, 10), P(3.5, 6). Ratio AP : PB ≈ ?",
+        "options": [
+          "6 : 1",
+          "3 : 3",
+          "1 : 1",
+          "3 : 3 (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_7408efce",
+        "question": "P divides AB with A(2, 1), B(7, 8), P(4, 3.8). Ratio AP : PB ≈ ?",
+        "options": [
+          "1 : 1",
+          "5 : 1",
+          "3 : 2",
+          "2 : 3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_efcdaee1",
+        "question": "P divides AB with A(0, 1), B(8, 7), P(4, 4). Ratio AP : PB ≈ ?",
+        "options": [
+          "1 : 1 (alt)",
+          "None of these",
+          "1 : 1",
+          "2 : 1"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_67ff4a13",
+        "question": "P divides AB with A(3, 2), B(11, 7), P(5.66667, 3.66667). Ratio AP : PB ≈ ?",
+        "options": [
+          "1 : 1",
+          "1 : 2",
+          "2 : 1",
+          "3 : 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_43ea6ea1",
+        "question": "P divides AB with A(0, 3), B(7, 7), P(5.25, 6). Ratio AP : PB ≈ ?",
+        "options": [
+          "3 : 1",
+          "4 : 1",
+          "1 : 1",
+          "1 : 3"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_e8426ba4",
+        "question": "P divides AB with A(3, 1), B(8, 8), P(6.33333, 5.66667). Ratio AP : PB ≈ ?",
+        "options": [
+          "2 : 1",
+          "1 : 1",
+          "3 : 1",
+          "1 : 2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_af26b88f",
+        "question": "P divides AB with A(0, 4), B(7, 8), P(4.66667, 6.66667). Ratio AP : PB ≈ ?",
+        "options": [
+          "2 : 1",
+          "1 : 2",
+          "1 : 1",
+          "3 : 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_eb6d38e3",
+        "question": "P divides AB with A(1, 3), B(7, 10), P(4, 6.5). Ratio AP : PB ≈ ?",
+        "options": [
+          "6 : 1",
+          "3 : 3",
+          "1 : 1",
+          "3 : 3 (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_39a185c6",
+        "question": "P divides AB with A(1, 4), B(5, 10), P(2.33333, 6). Ratio AP : PB ≈ ?",
+        "options": [
+          "3 : 1",
+          "1 : 2",
+          "1 : 1",
+          "2 : 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_d95bce33",
+        "question": "P divides AB with A(0, 2), B(5, 6), P(3.33333, 4.66667). Ratio AP : PB ≈ ?",
+        "options": [
+          "1 : 1",
+          "2 : 1",
+          "1 : 2",
+          "3 : 1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_e14b5b95",
+        "question": "P divides AB with A(3, 3), B(10, 9), P(6.5, 6). Ratio AP : PB ≈ ?",
+        "options": [
+          "None of these",
+          "1 : 1 (alt)",
+          "2 : 1",
+          "1 : 1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_28283618",
+        "question": "P divides AB with A(3, 1), B(7, 8), P(5, 4.5). Ratio AP : PB ≈ ?",
+        "options": [
+          "4 : 1",
+          "2 : 2",
+          "1 : 1",
+          "2 : 2 (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_cc472e3c",
+        "question": "P divides AB with A(2, 1), B(8, 5), P(5, 3). Ratio AP : PB ≈ ?",
+        "options": [
+          "3 : 3",
+          "1 : 1",
+          "6 : 1",
+          "3 : 3 (alt)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      }
+    ],
+    "E": [
+      {
+        "id": "u7_t2_E_924a77d6",
+        "question": "Town B is 32 km east and 9 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(9, 32)",
+          "(0, 0)",
+          "(41, 0)",
+          "(32, 9)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_19a167f3",
+        "question": "Town B is 26 km east and 25 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(51, 0)",
+          "(0, 0)",
+          "(25, 26)",
+          "(26, 25)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_9a14fd3e",
+        "question": "Town B is 12 km east and 28 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(12, 28)",
+          "(40, 0)",
+          "(0, 0)",
+          "(28, 12)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_b38cf355",
+        "question": "Town B is 11 km east and 23 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(11, 23)",
+          "(23, 11)",
+          "(0, 0)",
+          "(34, 0)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_fa7e9fe3",
+        "question": "Town B is 48 km east and 26 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(0, 0)",
+          "(74, 0)",
+          "(26, 48)",
+          "(48, 26)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_8d049ef1",
+        "question": "Town B is 12 km east and 10 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(12, 10)",
+          "(10, 12)",
+          "(22, 0)",
+          "(0, 0)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_ec0c2584",
+        "question": "Town B is 16 km east and 8 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(24, 0)",
+          "(8, 16)",
+          "(0, 0)",
+          "(16, 8)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_0f1bc397",
+        "question": "Town B is 29 km east and 15 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(44, 0)",
+          "(15, 29)",
+          "(29, 15)",
+          "(0, 0)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_078bce6e",
+        "question": "Town B is 39 km east and 12 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(39, 12)",
+          "(0, 0)",
+          "(51, 0)",
+          "(12, 39)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_1b82f2c4",
+        "question": "Town B is 39 km east and 6 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(6, 39)",
+          "(0, 0)",
+          "(39, 6)",
+          "(45, 0)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_60d1e16c",
+        "question": "Town B is 37 km east and 18 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(37, 18)",
+          "(0, 0)",
+          "(55, 0)",
+          "(18, 37)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_82d51c39",
+        "question": "Town B is 14 km east and 5 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(14, 5)",
+          "(19, 0)",
+          "(5, 14)",
+          "(0, 0)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_6f87fa40",
+        "question": "Town B is 41 km east and 28 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(41, 28)",
+          "(69, 0)",
+          "(28, 41)",
+          "(0, 0)"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_5a0f82ba",
+        "question": "Town B is 35 km east and 11 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(0, 0)",
+          "(11, 35)",
+          "(46, 0)",
+          "(35, 11)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_E_95a9b6dd",
+        "question": "Town B is 30 km east and 28 km north of A (origin). Coordinates of B:",
+        "options": [
+          "(28, 30)",
+          "(0, 0)",
+          "(58, 0)",
+          "(30, 28)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t2_E",
+        "category_label": "Section · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 7,
+    "topic_id": 2
+  }
+}

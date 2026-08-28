@@ -1,0 +1,227 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u8_t1_A_4ccb07b3",
+        "question": "In right ΔABC (∠B = 90°), with respect to ∠A:",
+        "options": [
+          "sin θ = opposite/hypotenuse",
+          "sin θ = opposite/adjacent",
+          "sin θ = hypotenuse/opposite",
+          "sin θ = adjacent/hypotenuse"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t1_A",
+        "category_label": "Ratios · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      }
+    ],
+    "B": [
+      {
+        "id": "u8_t1_B_2612503b",
+        "question": "Correct reciprocal relation:",
+        "options": [
+          "cosec θ = sin θ",
+          "cosec θ = 1/sin θ",
+          "cosec θ = tan θ",
+          "cosec θ = cos θ/sin θ"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t1_B",
+        "category_label": "Ratios · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      }
+    ],
+    "C": [
+      {
+        "id": "u8_t1_C_f9f27d0e",
+        "question": "Right triangle: opposite = 6, hypotenuse = 10. sin θ = ?",
+        "options": [
+          "6/8",
+          "8/10",
+          "8/6",
+          "6/10"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_4e955911",
+        "question": "Right triangle: opposite = 3, hypotenuse = 5. sin θ = ?",
+        "options": [
+          "3/4",
+          "4/3",
+          "4/5",
+          "3/5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_40ec6716",
+        "question": "Right triangle: opposite = 9, hypotenuse = 15. sin θ = ?",
+        "options": [
+          "9/15",
+          "12/15",
+          "12/9",
+          "9/12"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_25dc4946",
+        "question": "Right triangle: opposite = 12, hypotenuse = 20. sin θ = ?",
+        "options": [
+          "16/20",
+          "16/12",
+          "12/20",
+          "12/16"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      }
+    ],
+    "D": [
+      {
+        "id": "u8_t1_D_0e88cee7",
+        "question": "cos θ = 4/5 in a right triangle. Adjacent side if hypotenuse = 5:",
+        "options": [
+          "4",
+          "5",
+          "3",
+          "7"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_9aec60f7",
+        "question": "cos θ = 8/10 in a right triangle. Adjacent side if hypotenuse = 10:",
+        "options": [
+          "10",
+          "14",
+          "6",
+          "8"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_5608185f",
+        "question": "cos θ = 12/15 in a right triangle. Adjacent side if hypotenuse = 15:",
+        "options": [
+          "21",
+          "12",
+          "15",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_5f76be5a",
+        "question": "cos θ = 16/20 in a right triangle. Adjacent side if hypotenuse = 20:",
+        "options": [
+          "12",
+          "16",
+          "28",
+          "20"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      }
+    ],
+    "E": [
+      {
+        "id": "u8_t1_E_47b2de33",
+        "question": "Quotient relation among ratios:",
+        "options": [
+          "tan θ = 1/cos θ",
+          "tan θ = sin θ/cos θ",
+          "tan θ = cos θ/sin θ",
+          "tan θ = sin θ + cos θ"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 8,
+        "category": "u8_t1_E",
+        "category_label": "Ratios · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 8,
+    "topic_id": 1
+  }
+}

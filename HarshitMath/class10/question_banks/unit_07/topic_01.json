@@ -1,0 +1,911 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u7_t1_A_255c9af5",
+        "question": "Distance between (x₁, y₁) and (x₂, y₂):",
+        "options": [
+          "√[(x₂ - x₁)² + (y₂ - y₁)²]",
+          "(x₂ - x₁)(y₂ - y₁)",
+          "|x₂ - x₁| + |y₂ - y₁|",
+          "x₂² + y₂²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 7,
+        "category": "u7_t1_A",
+        "category_label": "Distance · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      }
+    ],
+    "B": [
+      {
+        "id": "u7_t1_B_a9a20c01",
+        "question": "Distance between (6, 0) and (10, 0) on the x-axis:",
+        "options": [
+          "4 units",
+          "5 units",
+          "6 units",
+          "16 units"
+        ],
+        "answer": 0,
+        "explanation": "|10 - 6| = 4.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_bc5f3fca",
+        "question": "Distance between (2, 0) and (7, 0) on the x-axis:",
+        "options": [
+          "6 units",
+          "7 units",
+          "9 units",
+          "5 units"
+        ],
+        "answer": 3,
+        "explanation": "|7 - 2| = 5.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_f34ba851",
+        "question": "Distance between (9, 0) and (9, 0) on the x-axis:",
+        "options": [
+          "0 units",
+          "2 units",
+          "1 units",
+          "18 units"
+        ],
+        "answer": 0,
+        "explanation": "|9 - 9| = 0.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_113c99d3",
+        "question": "Distance between (2, 0) and (10, 0) on the x-axis:",
+        "options": [
+          "9 units",
+          "8 units",
+          "10 units",
+          "12 units"
+        ],
+        "answer": 1,
+        "explanation": "|10 - 2| = 8.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_a9a3388e",
+        "question": "Distance between (6, 0) and (15, 0) on the x-axis:",
+        "options": [
+          "11 units",
+          "10 units",
+          "21 units",
+          "9 units"
+        ],
+        "answer": 3,
+        "explanation": "|15 - 6| = 9.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_d2d5b0d4",
+        "question": "Distance between (9, 0) and (7, 0) on the x-axis:",
+        "options": [
+          "4 units",
+          "16 units",
+          "3 units",
+          "2 units"
+        ],
+        "answer": 3,
+        "explanation": "|7 - 9| = 2.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_d6682873",
+        "question": "Distance between (9, 0) and (6, 0) on the x-axis:",
+        "options": [
+          "4 units",
+          "3 units",
+          "5 units",
+          "15 units"
+        ],
+        "answer": 1,
+        "explanation": "|6 - 9| = 3.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_7773b9fd",
+        "question": "Distance between (2, 0) and (5, 0) on the x-axis:",
+        "options": [
+          "4 units",
+          "7 units",
+          "5 units",
+          "3 units"
+        ],
+        "answer": 3,
+        "explanation": "|5 - 2| = 3.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_1d4babdb",
+        "question": "Distance between (9, 0) and (12, 0) on the x-axis:",
+        "options": [
+          "21 units",
+          "3 units",
+          "5 units",
+          "4 units"
+        ],
+        "answer": 1,
+        "explanation": "|12 - 9| = 3.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_7c25d3ff",
+        "question": "Distance between (4, 0) and (11, 0) on the x-axis:",
+        "options": [
+          "15 units",
+          "8 units",
+          "7 units",
+          "9 units"
+        ],
+        "answer": 2,
+        "explanation": "|11 - 4| = 7.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_0309677b",
+        "question": "Distance between (5, 0) and (14, 0) on the x-axis:",
+        "options": [
+          "11 units",
+          "9 units",
+          "10 units",
+          "19 units"
+        ],
+        "answer": 1,
+        "explanation": "|14 - 5| = 9.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_e64745c1",
+        "question": "Distance between (6, 0) and (9, 0) on the x-axis:",
+        "options": [
+          "3 units",
+          "15 units",
+          "5 units",
+          "4 units"
+        ],
+        "answer": 0,
+        "explanation": "|9 - 6| = 3.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_6b4e380c",
+        "question": "Distance between (3, 0) and (10, 0) on the x-axis:",
+        "options": [
+          "7 units",
+          "8 units",
+          "9 units",
+          "13 units"
+        ],
+        "answer": 0,
+        "explanation": "|10 - 3| = 7.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_1bdcf37c",
+        "question": "Distance between (9, 0) and (10, 0) on the x-axis:",
+        "options": [
+          "19 units",
+          "3 units",
+          "2 units",
+          "1 units"
+        ],
+        "answer": 3,
+        "explanation": "|10 - 9| = 1.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_fd8743a5",
+        "question": "Distance between (4, 0) and (8, 0) on the x-axis:",
+        "options": [
+          "5 units",
+          "4 units",
+          "12 units",
+          "6 units"
+        ],
+        "answer": 1,
+        "explanation": "|8 - 4| = 4.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      }
+    ],
+    "C": [
+      {
+        "id": "u7_t1_C_f0355d0c",
+        "question": "Distance between (5, 5) and (8, 10):",
+        "options": [
+          "3 units",
+          "5 units (alt)",
+          "8 units",
+          "5 units"
+        ],
+        "answer": 3,
+        "explanation": "√[(8-5)² + (10-5)²] = 5.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_b5822caf",
+        "question": "Distance between (1, 1) and (4, 7):",
+        "options": [
+          "6 units",
+          "9 units",
+          "6 units (alt)",
+          "4 units"
+        ],
+        "answer": 0,
+        "explanation": "√[(4-1)² + (7-1)²] = 6.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_9f52a4ff",
+        "question": "Distance between (1, 1) and (4, 6):",
+        "options": [
+          "8 units",
+          "3 units",
+          "5 units",
+          "5 units (alt)"
+        ],
+        "answer": 2,
+        "explanation": "√[(4-1)² + (6-1)²] = 5.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_74070401",
+        "question": "Distance between (4, 2) and (10, 9):",
+        "options": [
+          "9 units",
+          "7 units",
+          "12 units",
+          "13 units"
+        ],
+        "answer": 0,
+        "explanation": "√[(10-4)² + (9-2)²] = 9.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_1b0a66d4",
+        "question": "Distance between (2, 4) and (5, 11):",
+        "options": [
+          "7 units",
+          "7 units (alt)",
+          "5 units",
+          "10 units"
+        ],
+        "answer": 0,
+        "explanation": "√[(5-2)² + (11-4)²] = 7.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_cf258a55",
+        "question": "Distance between (5, 2) and (10, 9):",
+        "options": [
+          "12 units",
+          "6 units",
+          "11 units",
+          "8 units"
+        ],
+        "answer": 3,
+        "explanation": "√[(10-5)² + (9-2)²] = 8.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_509aa1df",
+        "question": "Distance between (1, 2) and (4, 10):",
+        "options": [
+          "6 units",
+          "8 units (alt)",
+          "11 units",
+          "8 units"
+        ],
+        "answer": 3,
+        "explanation": "√[(4-1)² + (10-2)²] = 8.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_3f5a20f8",
+        "question": "Distance between (4, 5) and (9, 12):",
+        "options": [
+          "11 units",
+          "6 units",
+          "8 units",
+          "12 units"
+        ],
+        "answer": 2,
+        "explanation": "√[(9-4)² + (12-5)²] = 8.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_dc61cc3e",
+        "question": "Distance between (1, 5) and (7, 9):",
+        "options": [
+          "5 units",
+          "10 units",
+          "7 units (alt)",
+          "7 units"
+        ],
+        "answer": 3,
+        "explanation": "√[(7-1)² + (9-5)²] = 7.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_fb1fc894",
+        "question": "Distance between (1, 5) and (6, 11):",
+        "options": [
+          "7 units",
+          "11 units",
+          "10 units",
+          "5 units"
+        ],
+        "answer": 0,
+        "explanation": "√[(6-1)² + (11-5)²] = 7.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_77424f6c",
+        "question": "Distance between (3, 4) and (7, 8):",
+        "options": [
+          "5 units",
+          "5 units (alt)",
+          "3 units",
+          "8 units"
+        ],
+        "answer": 0,
+        "explanation": "√[(7-3)² + (8-4)²] = 5.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_b6ccd930",
+        "question": "Distance between (1, 5) and (4, 11):",
+        "options": [
+          "6 units (alt)",
+          "4 units",
+          "6 units",
+          "9 units"
+        ],
+        "answer": 2,
+        "explanation": "√[(4-1)² + (11-5)²] = 6.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_dcbb75f6",
+        "question": "Distance between (4, 4) and (10, 8):",
+        "options": [
+          "7 units",
+          "5 units",
+          "10 units",
+          "7 units (alt)"
+        ],
+        "answer": 0,
+        "explanation": "√[(10-4)² + (8-4)²] = 7.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_227aaac0",
+        "question": "Distance between (2, 5) and (8, 13):",
+        "options": [
+          "14 units",
+          "10 units",
+          "8 units",
+          "13 units"
+        ],
+        "answer": 1,
+        "explanation": "√[(8-2)² + (13-5)²] = 10.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_C_671d2fa9",
+        "question": "Distance between (2, 3) and (7, 7):",
+        "options": [
+          "4 units",
+          "6 units (alt)",
+          "9 units",
+          "6 units"
+        ],
+        "answer": 3,
+        "explanation": "√[(7-2)² + (7-3)²] = 6.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t1_C",
+        "category_label": "Distance · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      }
+    ],
+    "D": [
+      {
+        "id": "u7_t1_D_f2d33fe0",
+        "question": "Which expression gives distance from (4, 1) to (10, 5)?",
+        "options": [
+          "(10)/2",
+          "10",
+          "√(6² + 4²)",
+          "6² - 4²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_7c961b0f",
+        "question": "Which expression gives distance from (2, 5) to (8, 13)?",
+        "options": [
+          "√(6² + 8²)",
+          "(14)/2",
+          "14",
+          "6² - 8²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_e9ec6fc5",
+        "question": "Which expression gives distance from (4, 2) to (10, 8)?",
+        "options": [
+          "√(6² + 6²)",
+          "(12)/2",
+          "12",
+          "6² - 6²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_8e4e9221",
+        "question": "Which expression gives distance from (5, 1) to (9, 9)?",
+        "options": [
+          "12",
+          "(12)/2",
+          "4² - 8²",
+          "√(4² + 8²)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_e6f6a523",
+        "question": "Which expression gives distance from (1, 4) to (4, 12)?",
+        "options": [
+          "√(3² + 8²)",
+          "(11)/2",
+          "3² - 8²",
+          "11"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_95765198",
+        "question": "Which expression gives distance from (5, 5) to (11, 13)?",
+        "options": [
+          "(14)/2",
+          "6² - 8²",
+          "√(6² + 8²)",
+          "14"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_75938607",
+        "question": "Which expression gives distance from (3, 3) to (6, 7)?",
+        "options": [
+          "√(3² + 4²)",
+          "7",
+          "(7)/2",
+          "3² - 4²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_7cbf3408",
+        "question": "Which expression gives distance from (1, 1) to (4, 7)?",
+        "options": [
+          "9",
+          "√(3² + 6²)",
+          "(9)/2",
+          "3² - 6²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_7b4f1cfb",
+        "question": "Which expression gives distance from (5, 4) to (9, 9)?",
+        "options": [
+          "9",
+          "√(4² + 5²)",
+          "4² - 5²",
+          "(9)/2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_1867aa92",
+        "question": "Which expression gives distance from (1, 2) to (6, 6)?",
+        "options": [
+          "√(5² + 4²)",
+          "(9)/2",
+          "9",
+          "5² - 4²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_31bc9632",
+        "question": "Which expression gives distance from (4, 4) to (9, 8)?",
+        "options": [
+          "9",
+          "5² - 4²",
+          "(9)/2",
+          "√(5² + 4²)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_8cbb8bb1",
+        "question": "Which expression gives distance from (2, 2) to (7, 7)?",
+        "options": [
+          "(10)/2",
+          "5² - 5²",
+          "10",
+          "√(5² + 5²)"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_cafb1818",
+        "question": "Which expression gives distance from (1, 2) to (5, 9)?",
+        "options": [
+          "(11)/2",
+          "√(4² + 7²)",
+          "4² - 7²",
+          "11"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_8561b979",
+        "question": "Which expression gives distance from (2, 5) to (7, 13)?",
+        "options": [
+          "√(5² + 8²)",
+          "13",
+          "5² - 8²",
+          "(13)/2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_D_33cd4727",
+        "question": "Which expression gives distance from (4, 3) to (9, 8)?",
+        "options": [
+          "√(5² + 5²)",
+          "10",
+          "(10)/2",
+          "5² - 5²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t1_D",
+        "category_label": "Distance · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      }
+    ],
+    "E": [
+      {
+        "id": "u7_t1_E_328253d2",
+        "question": "Perimeter of triangle with vertices (0, 0), (3, 0), (0, 4):",
+        "options": [
+          "7 units",
+          "12 units (alt)",
+          "10 units",
+          "12 units"
+        ],
+        "answer": 3,
+        "explanation": "Sides 3, 4, 5 — right triangle.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 7,
+        "category": "u7_t1_E",
+        "category_label": "Distance · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 7,
+    "topic_id": 1
+  }
+}

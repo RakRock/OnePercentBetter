@@ -1,0 +1,303 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u10_t1_A_5782f66d",
+        "question": "A tangent to a circle:",
+        "options": [
+          "Intersects the circle at exactly one point",
+          "Meets at two points",
+          "Passes through centre always",
+          "Does not meet the circle"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 10,
+        "category": "u10_t1_A",
+        "category_label": "Tangent · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      }
+    ],
+    "B": [
+      {
+        "id": "u10_t1_B_a2bb6e9b",
+        "question": "Theorem 10.1:",
+        "options": [
+          "Tangent equals diameter",
+          "Radius is parallel to tangent",
+          "Radius is perpendicular to tangent at point of contact",
+          "Angle is 45° always"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t1_B",
+        "category_label": "Tangent · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      }
+    ],
+    "C": [
+      {
+        "id": "u10_t1_C_cd585912",
+        "question": "Line cutting a circle at two points is called a:",
+        "options": [
+          "Tangent",
+          "Secant",
+          "Diameter",
+          "Non-intersecting line"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 10,
+        "category": "u10_t1_C",
+        "category_label": "Tangent · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      }
+    ],
+    "D": [
+      {
+        "id": "u10_t1_D_fdc3b059",
+        "question": "Tangent from Q with OQ = 5 cm, radius = 3 cm. Length PQ = ?",
+        "options": [
+          "7 cm",
+          "4 cm",
+          "3 cm",
+          "5 cm"
+        ],
+        "answer": 1,
+        "explanation": "PQ = √(5² - 3²) = 4.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t1_D",
+        "category_label": "Tangent · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t1_D_295f68e3",
+        "question": "Tangent from Q with OQ = 25 cm, radius = 7 cm. Length PQ = ?",
+        "options": [
+          "24 cm",
+          "7 cm",
+          "31 cm",
+          "25 cm"
+        ],
+        "answer": 0,
+        "explanation": "PQ = √(25² - 7²) = 24.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t1_D",
+        "category_label": "Tangent · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t1_D_1cc76fb3",
+        "question": "Tangent from Q with OQ = 17 cm, radius = 8 cm. Length PQ = ?",
+        "options": [
+          "8 cm",
+          "23 cm",
+          "15 cm",
+          "17 cm"
+        ],
+        "answer": 2,
+        "explanation": "PQ = √(17² - 8²) = 15.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t1_D",
+        "category_label": "Tangent · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t1_D_fcc68227",
+        "question": "Tangent from Q with OQ = 15 cm, radius = 9 cm. Length PQ = ?",
+        "options": [
+          "9 cm",
+          "15 cm",
+          "12 cm",
+          "21 cm"
+        ],
+        "answer": 2,
+        "explanation": "PQ = √(15² - 9²) = 12.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t1_D",
+        "category_label": "Tangent · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t1_D_c006940e",
+        "question": "Tangent from Q with OQ = 10 cm, radius = 6 cm. Length PQ = ?",
+        "options": [
+          "14 cm",
+          "8 cm",
+          "10 cm",
+          "6 cm"
+        ],
+        "answer": 1,
+        "explanation": "PQ = √(10² - 6²) = 8.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t1_D",
+        "category_label": "Tangent · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t1_D_e951d062",
+        "question": "Tangent from Q with OQ = 13 cm, radius = 5 cm. Length PQ = ?",
+        "options": [
+          "12 cm",
+          "5 cm",
+          "17 cm",
+          "13 cm"
+        ],
+        "answer": 0,
+        "explanation": "PQ = √(13² - 5²) = 12.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t1_D",
+        "category_label": "Tangent · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      }
+    ],
+    "E": [
+      {
+        "id": "u10_t1_E_cd613cf7",
+        "question": "Radius 5 cm, point 13 cm from centre. Tangent length = ?",
+        "options": [
+          "13 cm",
+          "5 cm",
+          "12 cm",
+          "17 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t1_E",
+        "category_label": "Tangent · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t1_E_c824263b",
+        "question": "Radius 9 cm, point 15 cm from centre. Tangent length = ?",
+        "options": [
+          "15 cm",
+          "21 cm",
+          "9 cm",
+          "12 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t1_E",
+        "category_label": "Tangent · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t1_E_d742584c",
+        "question": "Radius 3 cm, point 5 cm from centre. Tangent length = ?",
+        "options": [
+          "5 cm",
+          "4 cm",
+          "7 cm",
+          "3 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t1_E",
+        "category_label": "Tangent · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t1_E_d3902cc7",
+        "question": "Radius 8 cm, point 17 cm from centre. Tangent length = ?",
+        "options": [
+          "15 cm",
+          "8 cm",
+          "17 cm",
+          "23 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t1_E",
+        "category_label": "Tangent · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t1_E_4a78b8bc",
+        "question": "Radius 6 cm, point 10 cm from centre. Tangent length = ?",
+        "options": [
+          "10 cm",
+          "6 cm",
+          "8 cm",
+          "14 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t1_E",
+        "category_label": "Tangent · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t1_E_a5147684",
+        "question": "Radius 7 cm, point 25 cm from centre. Tangent length = ?",
+        "options": [
+          "25 cm",
+          "7 cm",
+          "24 cm",
+          "31 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 10,
+        "category": "u10_t1_E",
+        "category_label": "Tangent · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 10,
+    "topic_id": 1
+  }
+}

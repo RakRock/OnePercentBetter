@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "unit_id": 8,
+    "chapter": "Introduction to Trigonometry",
+    "ncert": "Chapter 8",
+    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE SQP 2025-26", "NCERT Ch 8"]
+  },
+  "mcq": [
+    {
+      "id": "b30_trig_mcq1",
+      "source_paper": "30/1/1 (board-style)",
+      "question": "If sin θ = 3/5, then cos θ equals:",
+      "options": ["4/5", "3/4", "5/4", "5/3"],
+      "answer": 0,
+      "explanation": "cos²θ = 1 − 9/25 = 16/25 ⇒ cos θ = 4/5 (acute angle)."
+    },
+    {
+      "id": "b30_trig_mcq2",
+      "source_paper": "30/1/2 (board-style)",
+      "question": "tan 45° + cot 45° =",
+      "options": ["2", "1", "0", "√2"],
+      "answer": 0,
+      "explanation": "1 + 1 = 2."
+    },
+    {
+      "id": "bsqp_trig_mcq",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "question": "Which identity is correct?",
+      "options": ["sin²θ + cos²θ = 1", "sin θ + cos θ = 1", "1 + sin²θ = cos²θ", "sec²θ + tan²θ = 1"],
+      "answer": 0,
+      "explanation": "Fundamental identity from NCERT 8.4."
+    }
+  ],
+  "assertion_reason": [
+    {
+      "id": "b30_trig_ar",
+      "source_paper": "30/1/1 (board-style)",
+      "assertion": "sin(90° − θ) = cos θ.",
+      "reason": "Complementary angles in a right triangle swap opposite and adjacent roles.",
+      "answer": 0,
+      "explanation": "Both true; standard complementary angle relation."
+    }
+  ],
+  "vsa": [
+    {
+      "id": "b30_trig_vsa_val",
+      "source_paper": "30/1/1",
+      "marks": 2,
+      "question": "Evaluate sin 60° cos 30° + sin 30° cos 60°.",
+      "model_answer": "(√3/2)(√3/2) + (1/2)(1/2) = 3/4 + 1/4 = 1.",
+      "rubric": ["Substitute values", "Answer 1"]
+    },
+    {
+      "id": "b30_trig_vsa_ratio",
+      "source_paper": "30/1/2",
+      "marks": 2,
+      "question": "In ΔABC, ∠B = 90°, AB = 12 cm, BC = 5 cm. Find tan A.",
+      "model_answer": "tan A = BC/AB = 5/12.",
+      "rubric": ["Identify opposite/adjacent", "tan A = 5/12"]
+    }
+  ],
+  "sa": [
+    {
+      "id": "b30_trig_sa_simplify",
+      "source_paper": "30/1/3",
+      "marks": 3,
+      "question": "Prove that (sin θ / (1 − cos θ)) + ((1 − cos θ) / sin θ) = 2 cosec θ.",
+      "model_answer": "Combine fractions; use sin²θ = 1 − cos²θ = (1−cos)(1+cos); simplify to 2/sin θ.",
+      "rubric": ["Common denominator", "Use identity", "2 cosec θ"]
+    },
+    {
+      "id": "bsqp_trig_sa_identity",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 3,
+      "question": "If 15 cot A = 8, find sin A and sec A.",
+      "model_answer": "cot A = 8/15; triangle 8, 15, 17; sin A = 15/17, sec A = 17/8.",
+      "rubric": ["Build right triangle", "sin A = 15/17", "sec A = 17/8"]
+    }
+  ],
+  "la": [
+    {
+      "id": "b30_trig_la_prove",
+      "source_paper": "30/1/1 (NCERT Ex 8.4 style)",
+      "marks": 5,
+      "question": "Prove that (1 + tan²A) / (1 + cot²A) = tan²A.",
+      "model_answer": "LHS = sec²A / cosec²A = (1/cos²A)/(1/sin²A) = sin²A/cos²A = tan²A.",
+      "rubric": ["Convert to sin/cos", "Use 1+tan²=sec²", "tan²A"]
+    },
+    {
+      "id": "b30_trig_la_table",
+      "source_paper": "30/1/2",
+      "marks": 5,
+      "question": "Evaluate: (sin 30° + tan 45° − cosec 60°) / (sec 30° + cos 60° + cot 45°).",
+      "model_answer": "Numerator = 1/2 + 1 − 2/√3; Denominator = 2/√3 + 1/2 + 1; simplify to required value.",
+      "rubric": ["Substitute standard values", "Simplify numerator", "Final value"]
+    },
+    {
+      "id": "bsqp_trig_la_zero",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 5,
+      "question": "Prove that sin²30° + tan²30° = 7/12.",
+      "model_answer": "(1/2)² + (1/√3)² = 1/4 + 1/3 = 7/12.",
+      "rubric": ["Values at 30°", "Add fractions", "7/12"]
+    }
+  ]
+}

@@ -321,6 +321,206 @@ TOPICS: dict[int, dict[int, dict]] = {
             },
         },
     },
+    7: {
+        1: {
+            "name": "Distance Formula",
+            "short": "Distance",
+            "emoji": "📏",
+            "levels": {
+                "A": "State distance formula between two points",
+                "B": "Distance on x-axis or y-axis",
+                "C": "Distance between two general points",
+                "D": "Distance with Pythagoras setup",
+                "E": "Perimeter using distance formula",
+            },
+        },
+        2: {
+            "name": "Section Formula",
+            "short": "Section",
+            "emoji": "✂️",
+            "levels": {
+                "A": "Internal division in ratio m : n",
+                "B": "Coordinates of dividing point",
+                "C": "Mid-point as special case",
+                "D": "Find ratio from given coordinates",
+                "E": "Section formula word problems",
+            },
+        },
+        3: {
+            "name": "Collinearity & Verification",
+            "short": "Collinear",
+            "emoji": "📍",
+            "levels": {
+                "A": "Three points collinear — idea",
+                "B": "Check collinearity using distances",
+                "C": "Area of triangle from coordinates",
+                "D": "Find unknown coordinate for collinearity",
+                "E": "Verify quadrilateral type from vertices",
+            },
+        },
+        4: {
+            "name": "Coordinate Applications",
+            "short": "Apps",
+            "emoji": "🗺️",
+            "levels": {
+                "A": "Town on a grid — east/north distance",
+                "B": "Find vertex of a triangle",
+                "C": "Centroid / special point (mid-point chain)",
+                "D": "Combined distance and section",
+                "E": "Multi-step board-style coordinate problems",
+            },
+        },
+    },
+    8: {
+        1: {
+            "name": "Trigonometric Ratios",
+            "short": "Ratios",
+            "emoji": "📐",
+            "levels": {
+                "A": "sin, cos, tan in a right triangle",
+                "B": "cosec, sec, cot definitions",
+                "C": "Express ratios from sides",
+                "D": "Find side using a ratio",
+                "E": "Reciprocal and quotient relations",
+            },
+        },
+        2: {
+            "name": "Ratios of Specific Angles",
+            "short": "Angles",
+            "emoji": "🎯",
+            "levels": {
+                "A": "Values at 0°, 30°, 45°, 60°, 90°",
+                "B": "Table of standard angles",
+                "C": "Evaluate simple expressions",
+                "D": "Complementary angle relations",
+                "E": "Pick correct value from options",
+            },
+        },
+        3: {
+            "name": "Trigonometric Identities",
+            "short": "Identities",
+            "emoji": "🆔",
+            "levels": {
+                "A": "sin²θ + cos²θ = 1",
+                "B": "1 + tan²θ = sec²θ",
+                "C": "1 + cot²θ = cosec²θ",
+                "D": "Simplify using identities",
+                "E": "Prove simple identity steps",
+            },
+        },
+        4: {
+            "name": "Mixed Trigonometry",
+            "short": "Mixed",
+            "emoji": "🔀",
+            "levels": {
+                "A": "Express tan in sin and cos",
+                "B": "Evaluate (sin 30° + cos 60°) type",
+                "C": "Simplify (1 − sin²θ) expressions",
+                "D": "Identity + specific angle combined",
+                "E": "Board-style multi-step simplification",
+            },
+        },
+    },
+    9: {
+        1: {
+            "name": "Angle of Elevation & Depression",
+            "short": "Angles",
+            "emoji": "👁️",
+            "levels": {
+                "A": "Line of sight and horizontal",
+                "B": "Elevation vs depression",
+                "C": "Identify angle in a diagram",
+                "D": "Two angles in same figure",
+                "E": "Convert between elevation and depression",
+            },
+        },
+        2: {
+            "name": "Heights Using Trigonometry",
+            "short": "Heights",
+            "emoji": "🏗️",
+            "levels": {
+                "A": "Height = distance × tan θ",
+                "B": "Tower / minar height problems",
+                "C": "Height with observer eye-level",
+                "D": "Two-stage height (balloon / cliff)",
+                "E": "Multi-step height problems",
+            },
+        },
+        3: {
+            "name": "Distances Using Trigonometry",
+            "short": "Distance",
+            "emoji": "🌉",
+            "levels": {
+                "A": "Width of river / gap",
+                "B": "Distance from tan and height",
+                "C": "Boat / ladder distance",
+                "D": "Find distance with two angles",
+                "E": "Combined height and distance",
+            },
+        },
+        4: {
+            "name": "Applications & Word Problems",
+            "short": "Apps",
+            "emoji": "🏔️",
+            "levels": {
+                "A": "Single right triangle setup",
+                "B": "Shadow length problems",
+                "C": "Building across a river",
+                "D": "Aeroplane / lighthouse problems",
+                "E": "Board-style mixed applications",
+            },
+        },
+    },
+    10: {
+        1: {
+            "name": "Tangent to a Circle",
+            "short": "Tangent",
+            "emoji": "⭕",
+            "levels": {
+                "A": "Tangent touches circle at one point",
+                "B": "Radius ⊥ tangent (Theorem 10.1)",
+                "C": "Tangent vs secant vs non-intersecting",
+                "D": "Find length using ⊥ radius",
+                "E": "Pythagoras in tangent-radius triangle",
+            },
+        },
+        2: {
+            "name": "Tangents from an External Point",
+            "short": "External",
+            "emoji": "📍",
+            "levels": {
+                "A": "No tangent from inside; one on circle",
+                "B": "Two tangents from outside (Case 3)",
+                "C": "Equal tangent lengths (Theorem 10.2)",
+                "D": "Angle between tangents",
+                "E": "External point — count tangents",
+            },
+        },
+        3: {
+            "name": "Length of Tangent",
+            "short": "Length",
+            "emoji": "📏",
+            "levels": {
+                "A": "Length = √(OP² − r²)",
+                "B": "Find tangent length from P",
+                "C": "Find radius or OP",
+                "D": "Concentric circles — chord as tangent",
+                "E": "Multi-step tangent length",
+            },
+        },
+        4: {
+            "name": "Circle Applications & Proofs",
+            "short": "Apps",
+            "emoji": "🔧",
+            "levels": {
+                "A": "Identify tangent in a diagram",
+                "B": "Prove equal tangents (idea)",
+                "C": "Chord bisected at point of contact",
+                "D": "∠PTQ and ∠OPQ relation",
+                "E": "Board-style combined circle proofs",
+            },
+        },
+    },
 }
 
 
@@ -374,6 +574,10 @@ def _chapter_ref(unit_id: int) -> str:
         4: "NCERT Ch 4 Quadratic Equations",
         5: "NCERT Ch 5 Arithmetic Progressions",
         6: "NCERT Ch 6 Triangles",
+        7: "NCERT Ch 7 Coordinate Geometry",
+        8: "NCERT Ch 8 Introduction to Trigonometry",
+        9: "NCERT Ch 9 Applications of Trigonometry",
+        10: "NCERT Ch 10 Circles",
     }.get(unit_id, f"NCERT Unit {unit_id}")
 
 
@@ -1739,6 +1943,645 @@ def _gen_u6_t4(level: str) -> dict:
     )
 
 
+# ── Unit 7 helpers & generators ──
+
+
+def _coord_dist(x1: int, y1: int, x2: int, y2: int) -> float:
+    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+
+def _section_point(x1: int, y1: int, x2: int, y2: int, m: int, n: int) -> tuple[float, float]:
+    return (m * x2 + n * x1) / (m + n), (m * y2 + n * y1) / (m + n)
+
+
+def _gen_u7_t1(level: str) -> dict:
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "√[(x₂ − x₁)² + (y₂ − y₁)²]",
+            ["|x₂ − x₁| + |y₂ − y₁|", "(x₂ − x₁)(y₂ − y₁)", "x₂² + y₂²"],
+        )
+        return _mcq(7, 1, level, "Distance between (x₁, y₁) and (x₂, y₂):", opts, ans)
+    if level == "B":
+        a, b = random.randint(2, 9), random.randint(5, 15)
+        dist = abs(b - a)
+        opts, ans = _shuffle_options(f"{dist} units", [f"{a + b} units", f"{dist + 2} units", f"{abs(a - b) + 1} units"])
+        return _mcq(
+            7, 1, level,
+            f"Distance between ({a}, 0) and ({b}, 0) on the x-axis:",
+            opts, ans,
+            f"|{b} − {a}| = {dist}.",
+        )
+    x1, y1 = random.randint(1, 5), random.randint(1, 5)
+    x2, y2 = x1 + random.randint(3, 6), y1 + random.randint(4, 8)
+    d = int(_coord_dist(x1, y1, x2, y2))
+    if level == "C":
+        opts, ans = _shuffle_options(f"{d} units", [f"{d + 3} units", f"{x2 - x1 + y2 - y1} units", f"{d - 2} units"])
+        return _mcq(
+            7, 1, level,
+            f"Distance between ({x1}, {y1}) and ({x2}, {y2}):",
+            opts, ans,
+            f"√[({x2}−{x1})² + ({y2}−{y1})²] = {d}.",
+        )
+    if level == "D":
+        dx, dy = x2 - x1, y2 - y1
+        opts, ans = _shuffle_options(f"√({dx}² + {dy}²)", [f"{dx + dy}", f"{dx}² − {dy}²", f"({dx + dy})/2"])
+        return _mcq(
+            7, 1, level,
+            f"Which expression gives distance from ({x1}, {y1}) to ({x2}, {y2})?",
+            opts, ans,
+        )
+    # perimeter of triangle with nice distances
+    pts = [(0, 0), (3, 0), (0, 4)]
+    perim = 3 + 4 + 5
+    opts, ans = _shuffle_options(f"{perim} units", ["12 units", "7 units", "10 units"])
+    return _mcq(
+        7, 1, level,
+        "Perimeter of triangle with vertices (0, 0), (3, 0), (0, 4):",
+        opts, ans,
+        "Sides 3, 4, 5 — right triangle.",
+    )
+
+
+def _gen_u7_t2(level: str) -> dict:
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "((mx₂ + nx₁)/(m + n), (my₂ + ny₁)/(m + n))",
+            ["((x₁ + x₂)/2, (y₁ + y₂)/2) only", "(mx₁ − nx₂, my₁ − ny₂)", "(x₂ − x₁, y₂ − y₁)"],
+        )
+        return _mcq(7, 2, level, "Internal section formula (ratio m : n):", opts, ans)
+    x1, y1 = random.randint(0, 4), random.randint(0, 4)
+    x2, y2 = x1 + random.randint(4, 8), y1 + random.randint(4, 8)
+    m, n = random.randint(1, 3), random.randint(1, 3)
+    px, py = _section_point(x1, y1, x2, y2, m, n)
+    if level == "B":
+        opts, ans = _shuffle_options(
+            f"({px:g}, {py:g})",
+            [f"({x1}, {y1})", f"({x2}, {y2})", f"({(x1+x2)/2:g}, {(y1+y2)/2:g})"],
+        )
+        return _mcq(
+            7, 2, level,
+            f"Point dividing ({x1}, {y1}) and ({x2}, {y2}) internally in ratio {m}:{n}:",
+            opts, ans,
+        )
+    if level == "C":
+        mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+        opts, ans = _shuffle_options(f"({mx:g}, {my:g})", [f"({px:g}, {py:g})", f"({x1}, {y2})", f"({x2}, {y1})"])
+        return _mcq(
+            7, 2, level,
+            f"Mid-point of ({x1}, {y1}) and ({x2}, {y2}):",
+            opts, ans,
+            "Mid-point is ratio 1:1.",
+        )
+    if level == "D":
+        opts, ans = _shuffle_options(f"{m} : {n}", [f"{n} : {m}", f"{m + n} : 1", "1 : 1"])
+        return _mcq(
+            7, 2, level,
+            f"P divides AB with A({x1}, {y1}), B({x2}, {y2}), P({px:g}, {py:g}). Ratio AP : PB ≈ ?",
+            opts, ans,
+        )
+    east, north = random.randint(10, 50), random.randint(5, 30)
+    opts, ans = _shuffle_options(f"({east}, {north})", [f"({north}, {east})", f"({east + north}, 0)", "(0, 0)"])
+    return _mcq(
+        7, 2, level,
+        f"Town B is {east} km east and {north} km north of A (origin). Coordinates of B:",
+        opts, ans,
+    )
+
+
+def _gen_u7_t3(level: str) -> dict:
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "Area of triangle = 0 (or points on one line)",
+            ["Perimeter is zero", "All x-coordinates equal 1", "Distances are all different"],
+        )
+        return _mcq(7, 3, level, "Three points A, B, C are collinear when:", opts, ans)
+    k = random.randint(2, 5)
+    if level == "B":
+        opts, ans = _shuffle_options("Yes", ["No", "Only if y equal", "Cannot tell"])
+        return _mcq(
+            7, 3, level,
+            f"Are (1, 2), (1 + {k}, 2 + 2{k}), (1 + 2{k}, 2 + 4{k}) collinear?",
+            opts, ans,
+            "Constant slope 2.",
+        )
+    if level == "C":
+        base, height = random.randint(3, 8), random.randint(3, 8)
+        area = base * height // 2
+        opts, ans = _shuffle_options(f"{area} sq units", [f"{base + height} sq units", f"{base * height} sq units", "0 sq units"])
+        return _mcq(
+            7, 3, level,
+            f"Area of triangle with vertices (0, 0), ({base}, 0), (0, {height}):",
+            opts, ans,
+            f"Area = ½ × {base} × {height} = {area}.",
+        )
+    if level == "D":
+        k2 = random.randint(3, 8)
+        opts, ans = _shuffle_options(f"k = {2 * k2}", [f"k = {k2}", f"k = {k2 + 2}", f"k = {2 * k2 + 1}"])
+        return _mcq(
+            7, 3, level,
+            f"If (1, 2), (3, k), (5, {2 * k2}) are collinear, then k = ?",
+            opts, ans,
+            "Equal slope gives k = 2 × middle term pattern.",
+        )
+    side = random.randint(3, 6)
+    opts, ans = _shuffle_options("Square", ["Rectangle (non-square)", "Rhombus only", "Circle"])
+    return _mcq(
+        7, 3, level,
+        f"A(0,0), B({side},0), C({side},{side}), D(0,{side}) form which quadrilateral?",
+        opts, ans,
+    )
+
+
+def _gen_u7_t4(level: str) -> dict:
+    east, north = random.randint(20, 50), random.randint(10, 25)
+    dist = int(math.sqrt(east * east + north * north))
+    if level == "A":
+        opts, ans = _shuffle_options(f"{dist} km", [f"{east + north} km", f"{east} km", f"{north} km"])
+        return _mcq(
+            7, 4, level,
+            f"Town B is {east} km east and {north} km north of A. Distance AB ≈ ?",
+            opts, ans,
+            f"√({east}² + {north}²) = {dist}.",
+        )
+    side = random.randint(3, 8)
+    if level == "B":
+        opts, ans = _shuffle_options(f"(0, {side})", [f"({side}, 0)", f"({side}, {side})", "(0, 0)"])
+        return _mcq(
+            7, 4, level,
+            f"Isosceles right triangle with A(0,0), B({side},0), C above x-axis with AB = BC. C could be:",
+            opts, ans,
+        )
+    x2 = random.randint(4, 10)
+    if level == "C":
+        opts, ans = _shuffle_options(f"({x2 // 2}, {x2 // 2})", [f"({x2}, {x2})", "(0, 0)", f"({x2 // 2}, 0)"])
+        return _mcq(
+            7, 4, level,
+            f"Mid-point of diagonal from (0,0) to ({x2}, {x2}):",
+            opts, ans,
+        )
+    x1, y1 = random.randint(0, 3), random.randint(0, 3)
+    x2, y2 = x1 + random.randint(3, 6), y1 + random.randint(4, 7)
+    d = int(_coord_dist(x1, y1, x2, y2))
+    if level == "D":
+        opts, ans = _shuffle_options(f"{d} units", [f"{d + 2} units", f"{x2 - x1} units", f"{y2 - y1} units"])
+        return _mcq(
+            7, 4, level,
+            f"Distance from ({x1}, {y1}) to ({x2}, {y2}) is {d}.",
+            opts, ans,
+        )
+    a, b = random.randint(4, 8), random.randint(4, 8)
+    perim = a + b + int(math.sqrt(a * a + b * b))
+    opts, ans = _shuffle_options(f"{perim} units", [f"{a + b} units", f"{2 * (a + b)} units", f"{a * b} units"])
+    return _mcq(
+        7, 4, level,
+        f"Vertices (0,0), ({a},0), (0,{b}). Perimeter of triangle:",
+        opts, ans,
+    )
+
+
+# ── Unit 8 helpers & generators ──
+
+_STD_TRIG: dict[int, tuple[str, str, str]] = {
+    0: ("0", "1", "0"),
+    30: ("1/2", "√3/2", "1/√3"),
+    45: ("1/√2", "1/√2", "1"),
+    60: ("√3/2", "1/2", "√3"),
+    90: ("1", "0", "undefined"),
+}
+
+
+def _gen_u8_t1(level: str) -> dict:
+    scale = random.randint(1, 4)
+    opp, adj, hyp = 3 * scale, 4 * scale, 5 * scale
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "sin θ = opposite/hypotenuse",
+            ["sin θ = adjacent/hypotenuse", "sin θ = opposite/adjacent", "sin θ = hypotenuse/opposite"],
+        )
+        return _mcq(8, 1, level, "In right ΔABC (∠B = 90°), with respect to ∠A:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(
+            "cosec θ = 1/sin θ",
+            ["cosec θ = sin θ", "cosec θ = cos θ/sin θ", "cosec θ = tan θ"],
+        )
+        return _mcq(8, 1, level, "Correct reciprocal relation:", opts, ans)
+    if level == "C":
+        sin_val = f"{opp}/{hyp}"
+        opts, ans = _shuffle_options(sin_val, [f"{adj}/{hyp}", f"{opp}/{adj}", f"{adj}/{opp}"])
+        return _mcq(
+            8, 1, level,
+            f"Right triangle: opposite = {opp}, hypotenuse = {hyp}. sin θ = ?",
+            opts, ans,
+        )
+    if level == "D":
+        opts, ans = _shuffle_options(f"{adj}", [f"{opp}", f"{hyp}", f"{opp + adj}"])
+        return _mcq(
+            8, 1, level,
+            f"cos θ = {adj}/{hyp} in a right triangle. Adjacent side if hypotenuse = {hyp}:",
+            opts, ans,
+        )
+    opts, ans = _shuffle_options("tan θ = sin θ/cos θ", ["tan θ = cos θ/sin θ", "tan θ = sin θ + cos θ", "tan θ = 1/cos θ"])
+    return _mcq(8, 1, level, "Quotient relation among ratios:", opts, ans)
+
+
+def _gen_u8_t2(level: str) -> dict:
+    angle = random.choice([0, 30, 45, 60, 90])
+    sin_v, cos_v, tan_v = _STD_TRIG[angle]
+    ratio_type = random.choice(["sin", "cos", "tan"])
+    correct = {"sin": sin_v, "cos": cos_v, "tan": tan_v}[ratio_type]
+    if level == "A":
+        opts, ans = _shuffle_options(_STD_TRIG[30][0], [_STD_TRIG[45][0], _STD_TRIG[60][0], "1"])
+        return _mcq(8, 2, level, "sin 30° = ?", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(_STD_TRIG[45][2], [_STD_TRIG[30][2], _STD_TRIG[60][2], "0"])
+        return _mcq(8, 2, level, "tan 45° = ?", opts, ans)
+    if level == "C":
+        others = [v for k, v in zip(["sin", "cos", "tan"], _STD_TRIG[angle]) if k != ratio_type]
+        opts, ans = _shuffle_options(correct, others + ["1"])
+        return _mcq(8, 2, level, f"{ratio_type} {angle}° = ?", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options("sin(90° − θ) = cos θ", ["sin(90° − θ) = sin θ", "cos(90° − θ) = tan θ", "tan(90° − θ) = sec θ"])
+        return _mcq(8, 2, level, "Complementary angle relation:", opts, ans)
+    ang = random.choice([30, 60])
+    opts, ans = _shuffle_options(_STD_TRIG[ang][2], [_STD_TRIG[30][2], _STD_TRIG[45][2], "1/2"])
+    return _mcq(8, 2, level, f"tan {ang}° = ?", opts, ans)
+
+
+def _gen_u8_t3(level: str) -> dict:
+    if level == "A":
+        opts, ans = _shuffle_options("sin²θ + cos²θ = 1", ["sin θ + cos θ = 1", "sin²θ − cos²θ = 1", "tan²θ + 1 = 0"])
+        return _mcq(8, 3, level, "Fundamental trigonometric identity:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options("1 + tan²θ = sec²θ", ["1 + sin²θ = sec²θ", "tan²θ + cos²θ = 1", "sec²θ = tan²θ − 1"])
+        return _mcq(8, 3, level, "Identity involving sec and tan:", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("1 + cot²θ = cosec²θ", ["cot²θ = cosec²θ + 1", "cosec²θ = 1 − cot²θ", "cot θ = tan θ"])
+        return _mcq(8, 3, level, "Identity involving cosec and cot:", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options("cos²θ", ["sin²θ", "1", "tan²θ"])
+        return _mcq(8, 3, level, "1 − sin²θ simplifies to:", opts, ans)
+    n = random.randint(2, 9)
+    opts, ans = _shuffle_options(f"{n}² − {n}² sin²θ = {n}² cos²θ", [f"{n} sin²θ = {n}", "0 = 1", f"sin²θ = {n}"])
+    return _mcq(
+        8, 3, level,
+        f"Which simplification uses sin²θ + cos²θ = 1?",
+        opts, ans,
+    )
+
+
+def _gen_u8_t4(level: str) -> dict:
+    a, b = random.choice([(30, 60), (45, 45), (60, 30), (0, 90)])
+    if level == "A":
+        opts, ans = _shuffle_options("sin θ/cos θ", ["cos θ/sin θ", "1/cos θ", "sin θ × cos θ"])
+        return _mcq(8, 4, level, "tan θ in terms of sin and cos:", opts, ans)
+    if level == "B":
+        pairs = {
+            (30, 60): ("1", "1/2 + 1/2 = 1."),
+            (45, 45): ("√2", "2/√2 = √2."),
+            (60, 30): ("(√3+1)/2", "√3/2 + 1/2."),
+            (0, 90): ("1", "0 + 1 = 1."),
+        }
+        ans_val, expl = pairs[(a, b)]
+        opts, ans = _shuffle_options(ans_val, ["0", "√3", "1/2"])
+        return _mcq(8, 4, level, f"sin {a}° + cos {b}° = ?", opts, ans, expl)
+    if level == "C":
+        opts, ans = _shuffle_options("1", ["sin²θ", "0", "sec²θ"])
+        return _mcq(8, 4, level, "(1 − sin²θ)(1 + tan²θ) simplifies to:", opts, ans)
+    if level == "D":
+        val = round(1 / math.sqrt(2) + 1 / math.sqrt(2), 4)
+        opts, ans = _shuffle_options(str(val), ["1", "√3", "0.5"])
+        return _mcq(8, 4, level, "sin 45° + cos 45° = ?", opts, ans)
+    x = random.choice([30, 45, 60])
+    opts, ans = _shuffle_options(_STD_TRIG[x][0], [_STD_TRIG[x][1], _STD_TRIG[x][2], "1"])
+    return _mcq(8, 4, level, f"Value of sin {x}°:", opts, ans)
+
+
+# ── Unit 9 generators ──
+
+
+def _gen_u9_t1(level: str) -> dict:
+    angle = random.choice([30, 45, 60])
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "Line from observer's eye to object",
+            ["Horizontal ground line", "Vertical height only", "Hypotenuse of any triangle"],
+        )
+        return _mcq(9, 1, level, "Line of sight is:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(
+            "Elevation: above horizontal; Depression: below horizontal",
+            ["Both mean the same", "Elevation is below horizontal", "Depression is above horizontal"],
+        )
+        return _mcq(9, 1, level, "Angle of elevation vs depression:", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("Angle of elevation", ["Angle of depression", "Right angle", "Straight angle"])
+        return _mcq(
+            9, 1, level,
+            f"Student looking up at top of minar ({angle}° to horizontal) — this is:",
+            opts, ans,
+        )
+    if level == "D":
+        opts, ans = _shuffle_options(f"{angle}° elevation and {angle}° depression", ["Both 90°", "No angles", "Only depression"])
+        return _mcq(
+            9, 1, level,
+            f"Observer on cliff sees boat at {angle}° depression; boat sees cliff at {angle}° elevation. This shows:",
+            opts, ans,
+            "Alternate interior angles with parallel horizontals.",
+        )
+    ang = random.choice([20, 40, 50])
+    opts, ans = _shuffle_options("Equal to angle of elevation from object", ["Always 90°", "Twice elevation", "Zero"])
+    return _mcq(
+        9, 1, level,
+        f"Angle of elevation of top = {ang}°. Angle of depression from top to observer equals:",
+        opts, ans,
+    )
+
+
+def _gen_u9_t2(level: str) -> dict:
+    dist = random.choice([10, 20, 30, 50, 100])
+    angle = random.choice([30, 45, 60])
+    if angle == 45:
+        height = dist
+    elif angle == 30:
+        height = round(dist / math.sqrt(3))
+    else:
+        height = round(dist * math.sqrt(3))
+    if level == "A":
+        opts, ans = _shuffle_options(f"{height} m", [f"{dist} m", f"{height // 2} m", f"{height * 2} m"])
+        return _mcq(
+            9, 2, level,
+            f"From {dist} m away, angle of elevation {angle}°. Tower height ≈ ?",
+            opts, ans,
+            f"Use tan {angle}°.",
+        )
+    if level == "B":
+        opts, ans = _shuffle_options(f"{height} m", [f"{dist} m", f"{height + 10} m", f"{height - 5} m"])
+        return _mcq(
+            9, 2, level,
+            f"Minar: observer {dist} m from foot, elevation {angle}°. Height ≈ ?",
+            opts, ans,
+        )
+    if level == "C":
+        eye = round(random.uniform(1.2, 1.8), 1)
+        tower = round(eye + dist * math.tan(math.radians(angle)))
+        opts, ans = _shuffle_options(f"{tower} m", [f"{tower - 5} m", f"{eye} m", f"{dist} m"])
+        return _mcq(
+            9, 2, level,
+            f"Observer {eye} m tall, {dist} m from minar, elevation {angle}°. Minar height ≈ ?",
+            opts, ans,
+        )
+    if level == "D":
+        h = random.choice([40, 60, 80])
+        opts, ans = _shuffle_options(f"{h} m", [f"{h // 2} m", f"{h * 2} m", f"{dist} m"])
+        return _mcq(
+            9, 2, level,
+            f"Balloon at {h} m. Horizontal distance {h} m gives elevation:",
+            opts, ans,
+            "tan θ = 1 ⇒ 45°.",
+        )
+    pole, shadow = random.randint(4, 8), random.randint(4, 8)
+    tower_shadow = random.randint(20, 50)
+    tower_h = pole * tower_shadow // shadow
+    opts, ans = _shuffle_options(f"{tower_h} m", [f"{pole} m", f"{tower_shadow} m", f"{tower_h + 10} m"])
+    return _mcq(
+        9, 2, level,
+        f"{pole} m pole casts {shadow} m shadow. Tower casts {tower_shadow} m shadow. Tower height?",
+        opts, ans,
+    )
+
+
+def _gen_u9_t3(level: str) -> dict:
+    angle = random.choice([30, 45, 60])
+    height = random.choice([10, 20, 50])
+    if angle == 45:
+        dist = height
+    elif angle == 30:
+        dist = round(height * math.sqrt(3))
+    else:
+        dist = round(height / math.sqrt(3))
+    if level == "A":
+        opts, ans = _shuffle_options(f"{dist} m", [f"{height} m", f"{dist // 2} m", f"{dist * 2} m"])
+        return _mcq(
+            9, 3, level,
+            f"Width of river if height {height} m, angle {angle}° across:",
+            opts, ans,
+        )
+    if level == "B":
+        opts, ans = _shuffle_options(f"{dist} m", [f"{height} m", f"{dist + 5} m", f"{dist - 3} m"])
+        return _mcq(
+            9, 3, level,
+            f"Ladder reaches {height} m on wall, elevation {angle}°. Foot from wall ≈ ?",
+            opts, ans,
+        )
+    if level == "C":
+        d1, d2 = random.randint(4, 12), random.randint(2, 8)
+        opts, ans = _shuffle_options(f"{abs(d1 - d2)} m apart", [f"{d1 + d2} m", f"{d1} m", f"{d2} m"])
+        return _mcq(
+            9, 3, level,
+            f"Boat moves from {d1} m to {d2} m from cliff. Distance moved ≈ ?",
+            opts, ans,
+        )
+    if level == "D":
+        opts, ans = _shuffle_options(f"{height} m", [f"{dist} m", f"{height * 2} m", f"{height // 2} m"])
+        return _mcq(
+            9, 3, level,
+            f"From {height} m building, depression of car is {angle}°. Car distance ≈ ?",
+            opts, ans,
+        )
+    base = random.randint(50, 150)
+    opts, ans = _shuffle_options(f"{base} m", [f"{base // 2} m", f"{base * 2} m", f"{height} m"])
+    return _mcq(
+        9, 3, level,
+        f"Two observers {base} m apart see pole at {angle}° and 45°. Setup uses:",
+        opts, ans,
+    )
+
+
+def _gen_u9_t4(level: str) -> dict:
+    pole, shadow = random.randint(3, 9), random.randint(3, 9)
+    if level == "A":
+        opts, ans = _shuffle_options("Draw right triangle with known angle", ["Use AP formula", "Only measure with tape", "Ignore horizontal"])
+        return _mcq(9, 4, level, "First step in a heights-and-distances problem:", opts, ans)
+    if level == "B":
+        small_pole = pole // 2 + 1
+        ans_val = max(1, small_pole * shadow // pole)
+        opts, ans = _shuffle_options(f"{ans_val} m", [f"{pole} m", f"{shadow} m", f"{ans_val + 2} m"])
+        return _mcq(
+            9, 4, level,
+            f"{pole} m pole casts {shadow} m shadow. A {small_pole} m pole casts shadow ≈ ?",
+            opts, ans,
+            "Same ratio height/shadow.",
+        )
+    h = random.choice([15, 20, 30])
+    dist = round(h / math.tan(math.radians(30)))
+    if level == "C":
+        opts, ans = _shuffle_options(f"{dist} m", [f"{h} m", f"{dist // 2} m", f"{dist * 2} m"])
+        return _mcq(
+            9, 4, level,
+            f"From window {h} m high, depression 30° to boat. Distance ≈ ?",
+            opts, ans,
+        )
+    if level == "D":
+        alt = random.choice([500, 1000, 1500])
+        opts, ans = _shuffle_options(f"{alt} m", [f"{alt // 2} m", f"{alt * 2} m", f"{h} m"])
+        return _mcq(
+            9, 4, level,
+            f"Aeroplane at {alt} m; depression 45° gives horizontal distance ≈ ?",
+            opts, ans,
+        )
+    lh = random.choice([50, 75, 100])
+    opts, ans = _shuffle_options(f"{round(lh / math.sqrt(3))} m", [f"{lh} m", f"{lh * 2} m", f"{lh // 2} m"])
+    return _mcq(
+        9, 4, level,
+        f"Lighthouse {lh} m high; elevation 30° from boat. Distance ≈ ?",
+        opts, ans,
+    )
+
+
+# ── Unit 10 generators ──
+
+_TANGENT_PAIRS = [(3, 5, 4), (5, 13, 12), (6, 10, 8), (7, 25, 24), (8, 17, 15), (9, 15, 12)]
+
+
+def _tangent_len(op: int, r: int) -> int:
+    return int(math.sqrt(op * op - r * r))
+
+
+def _gen_u10_t1(level: str) -> dict:
+    r, op, pq = random.choice(_TANGENT_PAIRS)
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "Intersects the circle at exactly one point",
+            ["Does not meet the circle", "Meets at two points", "Passes through centre always"],
+        )
+        return _mcq(10, 1, level, "A tangent to a circle:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(
+            "Radius is perpendicular to tangent at point of contact",
+            ["Radius is parallel to tangent", "Tangent equals diameter", "Angle is 45° always"],
+        )
+        return _mcq(10, 1, level, "Theorem 10.1:", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("Secant", ["Tangent", "Non-intersecting line", "Diameter"])
+        return _mcq(
+            10, 1, level,
+            "Line cutting a circle at two points is called a:",
+            opts, ans,
+        )
+    if level == "D":
+        opts, ans = _shuffle_options(f"{pq} cm", [f"{op} cm", f"{r} cm", f"{pq + r} cm"])
+        return _mcq(
+            10, 1, level,
+            f"Tangent from Q with OQ = {op} cm, radius = {r} cm. Length PQ = ?",
+            opts, ans,
+            f"PQ = √({op}² − {r}²) = {pq}.",
+        )
+    opts, ans = _shuffle_options(f"{pq} cm", [f"{op} cm", f"{r + pq} cm", f"{r} cm"])
+    return _mcq(
+        10, 1, level,
+        f"Radius {r} cm, point {op} cm from centre. Tangent length = ?",
+        opts, ans,
+    )
+
+
+def _gen_u10_t2(level: str) -> dict:
+    angle = random.choice([30, 45, 60, 90])
+    if level == "A":
+        opts, ans = _shuffle_options("No tangent from a point inside the circle", ["Two tangents from inside", "One tangent from inside", "Infinite tangents from inside"])
+        return _mcq(10, 2, level, "From a point inside a circle:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options("Exactly two tangents", ["One tangent", "No tangent", "Infinite tangents"])
+        return _mcq(10, 2, level, "From an external point to a circle:", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("PQ = PR", ["PQ = 2PR", "PQ ⊥ PR", "PQ parallel PR"])
+        return _mcq(
+            10, 2, level,
+            "Tangents PQ and PR from external point P (Theorem 10.2):",
+            opts, ans,
+        )
+    if level == "D":
+        half = angle // 2
+        opts, ans = _shuffle_options(f"{half}°", ["90°", f"{angle}°", f"{angle + 30}°"])
+        return _mcq(
+            10, 2, level,
+            f"Two tangents from P make {angle}° at P. Angle between OP and either tangent is:",
+            opts, ans,
+            "OP bisects ∠QPR.",
+        )
+    opts, ans = _shuffle_options("2", ["0", "1", "5"])
+    return _mcq(10, 2, level, "Maximum tangents from an external point:", opts, ans)
+
+
+def _gen_u10_t3(level: str) -> dict:
+    r, op, pq = random.choice(_TANGENT_PAIRS)
+    if level == "A":
+        opts, ans = _shuffle_options("√(OP² − r²)", ["OP + r", "OP − r", "r² + OP²"])
+        return _mcq(10, 3, level, "Length of tangent from point P at distance OP from centre:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(f"{pq} cm", [f"{op} cm", f"{r} cm", f"{pq + 2} cm"])
+        return _mcq(
+            10, 3, level,
+            f"Radius {r} cm, OP = {op} cm. Tangent length = ?",
+            opts, ans,
+        )
+    if level == "C":
+        opts, ans = _shuffle_options(f"{r} cm", [f"{op} cm", f"{pq} cm", f"{r + op} cm"])
+        return _mcq(
+            10, 3, level,
+            f"Tangent length {pq} cm from point {op} cm from centre. Radius = ?",
+            opts, ans,
+            f"r = √({op}² − {pq}²) = {r}.",
+        )
+    if level == "D":
+        opts, ans = _shuffle_options("AP = BP", ["AB = AP", "OP = AP", "AP = 2BP"])
+        return _mcq(
+            10, 3, level,
+            "Chord of larger circle touches smaller concentric circle at P. Then:",
+            opts, ans,
+        )
+    r2, op2, tl2 = random.choice(_TANGENT_PAIRS)
+    opts, ans = _shuffle_options(f"{tl2} cm", [f"{op2} cm", f"{r2} cm", f"{tl2 + 3} cm"])
+    return _mcq(
+        10, 3, level,
+        f"From point {op2} cm from centre, radius {r2} cm. Tangent length = ?",
+        opts, ans,
+    )
+
+
+def _gen_u10_t4(level: str) -> dict:
+    r, op, pq = random.choice(_TANGENT_PAIRS)
+    if level == "A":
+        opts, ans = _shuffle_options("Line touching circle at one point only", ["Line through centre", "Any chord", "Diameter only"])
+        return _mcq(10, 4, level, "Identify the tangent in a diagram:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options("RHS congruence of ΔOQP and ΔORP", ["SSA always", "ASA with radius", "No proof needed"])
+        return _mcq(
+            10, 4, level,
+            "Equal tangents from P are proved using:",
+            opts, ans,
+        )
+    if level == "C":
+        opts, ans = _shuffle_options("Bisected at P", ["Doubled at P", "Unchanged", "Perpendicular only"])
+        return _mcq(
+            10, 4, level,
+            "Chord of larger circle touching smaller concentric circle is:",
+            opts, ans,
+        )
+    if level == "D":
+        opts, ans = _shuffle_options("∠PTQ = 2 ∠OPQ", ["∠PTQ = ∠OPQ", "∠PTQ = 90° − ∠OPQ", "No relation"])
+        return _mcq(
+            10, 4, level,
+            "Two tangents TP, TQ from external T. Then:",
+            opts, ans,
+        )
+    opts, ans = _shuffle_options(f"{pq} cm", [f"{op} cm", f"{r} cm", f"{pq + r} cm"])
+    return _mcq(
+        10, 4, level,
+        f"Combined: radius {r} cm, OQ = {op} cm. Tangent PQ length = ?",
+        opts, ans,
+    )
+
+
 GENERATORS: dict[tuple[int, int], callable] = {
     (1, 1): _gen_u1_t1,
     (1, 2): _gen_u1_t2,
@@ -1764,6 +2607,22 @@ GENERATORS: dict[tuple[int, int], callable] = {
     (6, 2): _gen_u6_t2,
     (6, 3): _gen_u6_t3,
     (6, 4): _gen_u6_t4,
+    (7, 1): _gen_u7_t1,
+    (7, 2): _gen_u7_t2,
+    (7, 3): _gen_u7_t3,
+    (7, 4): _gen_u7_t4,
+    (8, 1): _gen_u8_t1,
+    (8, 2): _gen_u8_t2,
+    (8, 3): _gen_u8_t3,
+    (8, 4): _gen_u8_t4,
+    (9, 1): _gen_u9_t1,
+    (9, 2): _gen_u9_t2,
+    (9, 3): _gen_u9_t3,
+    (9, 4): _gen_u9_t4,
+    (10, 1): _gen_u10_t1,
+    (10, 2): _gen_u10_t2,
+    (10, 3): _gen_u10_t3,
+    (10, 4): _gen_u10_t4,
 }
 
 

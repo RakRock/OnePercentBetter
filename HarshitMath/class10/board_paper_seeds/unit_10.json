@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "unit_id": 10,
+    "chapter": "Circles",
+    "ncert": "Chapter 10",
+    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE SQP 2025-26", "NCERT Ch 10"]
+  },
+  "mcq": [
+    {
+      "id": "b30_circ_mcq1",
+      "source_paper": "30/1/1 (board-style)",
+      "question": "Tangent PQ at P to a circle of radius 5 cm meets line through centre at Q with OQ = 13 cm. Length PQ is:",
+      "options": ["12 cm", "13 cm", "8 cm", "10 cm"],
+      "answer": 0,
+      "explanation": "PQ = √(13² − 5²) = 12 cm."
+    },
+    {
+      "id": "b30_circ_mcq2",
+      "source_paper": "30/1/2 (board-style)",
+      "question": "From an external point, the number of tangents to a circle is:",
+      "options": ["2", "1", "0", "Infinite"],
+      "answer": 0,
+      "explanation": "Case 3 in NCERT 10.3 — exactly two tangents."
+    },
+    {
+      "id": "bsqp_circ_mcq",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "question": "Radius to point of contact of a tangent is:",
+      "options": ["Perpendicular to tangent", "Parallel to tangent", "Equal to tangent", "Bisects tangent"],
+      "answer": 0,
+      "explanation": "Theorem 10.1."
+    }
+  ],
+  "assertion_reason": [
+    {
+      "id": "b30_circ_ar",
+      "source_paper": "30/1/1 (board-style)",
+      "assertion": "Tangents drawn from an external point to a circle are equal in length.",
+      "reason": "ΔOQP ≅ ΔORP by RHS, so PQ = PR.",
+      "answer": 0,
+      "explanation": "Theorem 10.2 — both assertion and reason true."
+    }
+  ],
+  "vsa": [
+    {
+      "id": "b30_circ_vsa_len",
+      "source_paper": "30/1/1",
+      "marks": 2,
+      "question": "Radius 7 cm, tangent from point 25 cm from centre. Find tangent length.",
+      "model_answer": "√(625 − 49) = √576 = 24 cm.",
+      "rubric": ["Use √(OP² − r²)", "24 cm"]
+    },
+    {
+      "id": "b30_circ_vsa_count",
+      "source_paper": "30/1/2",
+      "marks": 2,
+      "question": "How many tangents can be drawn from a point lying on the circle?",
+      "model_answer": "Exactly one tangent (Case 2).",
+      "rubric": ["One tangent", "Point on circle"]
+    }
+  ],
+  "sa": [
+    {
+      "id": "b30_circ_sa_equal",
+      "source_paper": "30/1/3",
+      "marks": 3,
+      "question": "Prove that tangents drawn at the ends of a diameter are parallel.",
+      "model_answer": "Each tangent ⊥ radius at contact; radii along diameter ⇒ both tangents ⊥ same line ⇒ parallel.",
+      "rubric": ["Tangent ⊥ radius", "Diameter straight line", "Parallel"]
+    },
+    {
+      "id": "bsqp_circ_sa_concentric",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 3,
+      "question": "Chord of larger circle touches smaller concentric circle. Prove chord is bisected at point of contact.",
+      "model_answer": "OP ⊥ chord AB at P ⇒ P bisects AB (perpendicular from centre bisects chord).",
+      "rubric": ["Tangent ⊥ radius", "OP ⊥ AB", "AP = BP"]
+    }
+  ],
+  "la": [
+    {
+      "id": "b30_circ_la_tangent",
+      "source_paper": "30/1/1 (NCERT Ex 10.2 style)",
+      "marks": 5,
+      "question": "Prove that the tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+      "model_answer": "Standard NCERT proof by contradiction using shortest distance from centre to line.",
+      "rubric": ["Assume not perpendicular", "Contradiction with shortest distance", "Conclude ⊥"]
+    },
+    {
+      "id": "b30_circ_la_external",
+      "source_paper": "30/1/2",
+      "marks": 5,
+      "question": "From external point P, tangents PA and PB are drawn. Prove PA = PB.",
+      "model_answer": "Join OA, OB, OP. ΔOAP ≅ ΔOBP (RHS) ⇒ PA = PB.",
+      "rubric": ["Right angles at A, B", "OA = OB, OP common", "PA = PB"]
+    },
+    {
+      "id": "bsqp_circ_la_angle",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 5,
+      "question": "Two tangents TP and TQ from external T make ∠PTQ = 60°. Prove ∠PTQ = 2 ∠OPT.",
+      "model_answer": "TP = TQ ⇒ isosceles; use ∠OPT = 90° and angle chase to get ∠PTQ = 2∠OPT.",
+      "rubric": ["TP = TQ", "∠OPT = 90°", "Angle relation proved"]
+    }
+  ]
+}

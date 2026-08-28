@@ -10,14 +10,14 @@ import harshit_class10_unit_test as h10ut
 
 class TestClass10UnitTest(unittest.TestCase):
     def test_board_seeds_loaded(self) -> None:
-        for uid in (1, 2, 3, 4, 5, 6):
+        for uid in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10):
             self.assertTrue(h10bs.seeds_available(uid))
             data = h10bs.load_unit_seeds(uid)
             self.assertGreaterEqual(len(data["mcq"]), 3)
             self.assertGreaterEqual(len(data["la"]), 1)
 
     def test_available_for_active_units(self) -> None:
-        for uid in (1, 2, 3, 4, 5, 6):
+        for uid in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10):
             self.assertTrue(h10ut.unit_test_available(uid))
 
     def test_build_unit_test_structure(self) -> None:
