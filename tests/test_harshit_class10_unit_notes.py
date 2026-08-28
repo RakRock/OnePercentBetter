@@ -28,6 +28,19 @@ class TestClass10UnitNotes(unittest.TestCase):
         self.assertIn("α + β", formulas["body"])
         self.assertIn("αβ", formulas["body"])
 
+    def test_unit3_guide_available(self) -> None:
+        self.assertTrue(h10un.unit_guide_available(3))
+        guide = h10un.get_unit_guide(3)
+        assert guide is not None
+        self.assertIn("Pair of Linear Equations", guide["title"])
+
+    def test_unit3_formulas_mention_ratio_test(self) -> None:
+        guide = h10un.get_unit_guide(3)
+        assert guide is not None
+        formulas = next(s for s in guide["sections"] if s["id"] == "formulas")
+        self.assertIn("a₁/a₂", formulas["body"])
+        self.assertIn("Substitution", formulas["body"])
+
 
 if __name__ == "__main__":
     unittest.main()
