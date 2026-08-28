@@ -1,0 +1,227 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u13_t2_A_4c6e7771",
+        "question": "Median class is the:",
+        "options": [
+          "Last class",
+          "First class",
+          "Class where cf crosses n/2",
+          "Highest frequency class"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 13,
+        "category": "u13_t2_A",
+        "category_label": "Median · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "B": [
+      {
+        "id": "u13_t2_B_a6af6fd2",
+        "question": "Median of grouped data formula:",
+        "options": [
+          "Σfixi/Σfi",
+          "l + ((f^1-f^0)/(2f^1-f^0-f^2))h",
+          "l + ((n/2 - cf)/f) × h",
+          "cf only"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t2_B",
+        "category_label": "Median · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "C": [
+      {
+        "id": "u13_t2_C_84db0f9b",
+        "question": "n = 60, median class lower l = 20, f = 12, cf = 18, h = 10. Median ≈ ?",
+        "options": [
+          "30",
+          "30.0",
+          "20",
+          "30.0 (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t2_C",
+        "category_label": "Median · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_C_b7543943",
+        "question": "n = 80, median class lower l = 20, f = 12, cf = 18, h = 10. Median ≈ ?",
+        "options": [
+          "20",
+          "38.3",
+          "40",
+          "30"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t2_C",
+        "category_label": "Median · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_C_9a6cb334",
+        "question": "n = 40, median class lower l = 20, f = 12, cf = 18, h = 10. Median ≈ ?",
+        "options": [
+          "21.7",
+          "20",
+          "21.7 (alt)",
+          "30"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t2_C",
+        "category_label": "Median · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_C_11d6d1b9",
+        "question": "n = 50, median class lower l = 20, f = 12, cf = 18, h = 10. Median ≈ ?",
+        "options": [
+          "20",
+          "25",
+          "25.8",
+          "30"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t2_C",
+        "category_label": "Median · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "D": [
+      {
+        "id": "u13_t2_D_ed2359b1",
+        "question": "Compare mean and median for skewed data:",
+        "options": [
+          "Median always larger",
+          "Mean always larger",
+          "Mean affected by extremes; median more robust",
+          "Always equal"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t2_D",
+        "category_label": "Median · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "E": [
+      {
+        "id": "u13_t2_E_63470304",
+        "question": "Median = 25.8, known l, cf, h. Frequency f of median class ≈ ?",
+        "options": [
+          "20",
+          "10",
+          "12",
+          "18"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_83376f09",
+        "question": "Median = 38.3, known l, cf, h. Frequency f of median class ≈ ?",
+        "options": [
+          "10",
+          "18",
+          "20",
+          "12"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_79e8442d",
+        "question": "Median = 21.7, known l, cf, h. Frequency f of median class ≈ ?",
+        "options": [
+          "20",
+          "12",
+          "10",
+          "18"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_82ca373f",
+        "question": "Median = 30.0, known l, cf, h. Frequency f of median class ≈ ?",
+        "options": [
+          "18",
+          "12",
+          "20",
+          "10"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 13,
+    "topic_id": 2
+  }
+}

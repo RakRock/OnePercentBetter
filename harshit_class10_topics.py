@@ -521,6 +521,206 @@ TOPICS: dict[int, dict[int, dict]] = {
             },
         },
     },
+    11: {
+        1: {
+            "name": "Sector Area",
+            "short": "Sector",
+            "emoji": "🥧",
+            "levels": {
+                "A": "Sector area formula (θ/360)πr²",
+                "B": "Find sector area given r and θ",
+                "C": "Find angle from sector area",
+                "D": "Semicircle and quadrant areas",
+                "E": "Multi-step sector problems",
+            },
+        },
+        2: {
+            "name": "Arc Length",
+            "short": "Arc",
+            "emoji": "〰️",
+            "levels": {
+                "A": "Arc length formula (θ/360)2πr",
+                "B": "Find arc length given r and θ",
+                "C": "Find radius or angle from arc",
+                "D": "Perimeter of sector",
+                "E": "Combined arc length problems",
+            },
+        },
+        3: {
+            "name": "Segment Area",
+            "short": "Segment",
+            "emoji": "🌙",
+            "levels": {
+                "A": "Segment = sector − triangle",
+                "B": "Minor segment area (60°, 90°)",
+                "C": "Major vs minor segment",
+                "D": "Segment with chord given",
+                "E": "Board-style segment area",
+            },
+        },
+        4: {
+            "name": "Combined Circle Figures",
+            "short": "Combine",
+            "emoji": "🔵",
+            "levels": {
+                "A": "Square + quarter circles",
+                "B": "Shaded region between circles",
+                "C": "Wheel / brooch design areas",
+                "D": "Area of ring (annulus)",
+                "E": "Mixed mensuration applications",
+            },
+        },
+    },
+    12: {
+        1: {
+            "name": "Cylinder, Cone & Sphere Formulas",
+            "short": "Formulas",
+            "emoji": "📐",
+            "levels": {
+                "A": "Identify SA/volume formula",
+                "B": "Cylinder CSA and volume",
+                "C": "Cone and hemisphere SA/volume",
+                "D": "Sphere surface area and volume",
+                "E": "Compare dimensions from SA/volume",
+            },
+        },
+        2: {
+            "name": "Combination Surface Area",
+            "short": "Combo SA",
+            "emoji": "📦",
+            "levels": {
+                "A": "Which faces to include/exclude",
+                "B": "Cylinder + hemisphere (toy)",
+                "C": "Cone on cylinder — visible SA",
+                "D": "Hollow cylinder SA",
+                "E": "Board-style combination SA",
+            },
+        },
+        3: {
+            "name": "Combination Volume",
+            "short": "Combo Vol",
+            "emoji": "🧊",
+            "levels": {
+                "A": "Add volumes of solids",
+                "B": "Volume of toy (cone + hemisphere)",
+                "C": "Hollow solid volume",
+                "D": "Water displaced / capacity",
+                "E": "Multi-solid volume problems",
+            },
+        },
+        4: {
+            "name": "Frustum & Board Applications",
+            "short": "Frustum",
+            "emoji": "🪣",
+            "levels": {
+                "A": "Frustum — what is it?",
+                "B": "Bucket / glass (frustum) volume idea",
+                "C": "Conversion: melt and recast",
+                "D": "Ratio of volumes of similar solids",
+                "E": "Board-style SA/volume applications",
+            },
+        },
+    },
+    13: {
+        1: {
+            "name": "Mean of Grouped Data",
+            "short": "Mean",
+            "emoji": "📊",
+            "levels": {
+                "A": "Class mark xi for an interval",
+                "B": "Direct method: Σfixi / Σfi",
+                "C": "Assumed mean method",
+                "D": "Step-deviation method",
+                "E": "Find missing frequency from mean",
+            },
+        },
+        2: {
+            "name": "Median",
+            "short": "Median",
+            "emoji": "📈",
+            "levels": {
+                "A": "Median class from cumulative frequency",
+                "B": "Median formula components",
+                "C": "Compute median from grouped data",
+                "D": "Compare mean and median",
+                "E": "Missing frequency using median",
+            },
+        },
+        3: {
+            "name": "Mode",
+            "short": "Mode",
+            "emoji": "🔝",
+            "levels": {
+                "A": "Modal class identification",
+                "B": "Mode formula: l + ((f1−f0)/(2f1−f0−f2))h",
+                "C": "Compute mode from grouped data",
+                "D": "Empirical relation 3 median − 2 mean",
+                "E": "Board-style mode problems",
+            },
+        },
+        4: {
+            "name": "Ogive & Cumulative Frequency",
+            "short": "Ogive",
+            "emoji": "📉",
+            "levels": {
+                "A": "Less-than vs more-than ogive",
+                "B": "Build cumulative frequency table",
+                "C": "Read median from ogive intersection",
+                "D": "Interpret ogive graph",
+                "E": "Mixed statistics from tables/graphs",
+            },
+        },
+    },
+    14: {
+        1: {
+            "name": "Classical Probability",
+            "short": "Classical",
+            "emoji": "🎯",
+            "levels": {
+                "A": "P(E) = favourable / total outcomes",
+                "B": "Probability of simple events",
+                "C": "Impossible and certain events",
+                "D": "Equally likely outcomes",
+                "E": "Multi-outcome classical probability",
+            },
+        },
+        2: {
+            "name": "Complementary Events",
+            "short": "Complement",
+            "emoji": "↔️",
+            "levels": {
+                "A": "P(E') = 1 − P(E)",
+                "B": "Not E from given P(E)",
+                "C": "At least one vs none",
+                "D": "Complement in word problems",
+                "E": "Combined complement reasoning",
+            },
+        },
+        3: {
+            "name": "Cards & Dice",
+            "short": "Cards/Dice",
+            "emoji": "🃏",
+            "levels": {
+                "A": "Single die — one outcome",
+                "B": "Two dice — sum probabilities",
+                "C": "Drawing one card from deck",
+                "D": "Face cards / red cards / ace",
+                "E": "Board-style card and dice problems",
+            },
+        },
+        4: {
+            "name": "Mixed Probability",
+            "short": "Mixed",
+            "emoji": "🎲",
+            "levels": {
+                "A": "Bag of coloured balls",
+                "B": "Two draws without replacement",
+                "C": "Geometric probability (region)",
+                "D": "Word problems — coins and bags",
+                "E": "Board-style mixed probability",
+            },
+        },
+    },
 }
 
 
@@ -578,6 +778,10 @@ def _chapter_ref(unit_id: int) -> str:
         8: "NCERT Ch 8 Introduction to Trigonometry",
         9: "NCERT Ch 9 Applications of Trigonometry",
         10: "NCERT Ch 10 Circles",
+        11: "NCERT Ch 11 Areas Related to Circles",
+        12: "NCERT Ch 12 Surface Areas and Volumes",
+        13: "NCERT Ch 13 Statistics",
+        14: "NCERT Ch 14 Probability",
     }.get(unit_id, f"NCERT Unit {unit_id}")
 
 
@@ -2582,6 +2786,374 @@ def _gen_u10_t4(level: str) -> dict:
     )
 
 
+# ── Unit 11 generators ──
+
+def _sector_area(r: int, angle: int) -> float:
+    return round(angle / 360 * math.pi * r * r, 2)
+
+
+def _arc_length(r: int, angle: int) -> float:
+    return round(angle / 360 * 2 * math.pi * r, 2)
+
+
+def _gen_u11_t1(level: str) -> dict:
+    r = random.choice([7, 14, 21, 28, 35])
+    angle = random.choice([30, 45, 60, 90, 120, 180])
+    area = _sector_area(r, angle)
+    if level == "A":
+        opts, ans = _shuffle_options("(θ/360) × πr²", ["θ × πr²", "2πr × θ", "πr² only"])
+        return _mcq(11, 1, level, "Area of a sector of angle θ and radius r:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(f"{area} cm²", [f"{area * 2} cm²", f"{r * r} cm²", f"{area / 2} cm²"])
+        return _mcq(11, 1, level, f"Sector: r = {r} cm, θ = {angle}°. Area ≈ ?", opts, ans, f"(θ/360)πr².")
+    if level == "C":
+        opts, ans = _shuffle_options(f"{angle}°", ["90°", "180°", f"{angle + 30}°"])
+        return _mcq(11, 1, level, f"Sector area ≈ {area} cm², r = {r} cm. Angle θ ≈ ?", opts, ans)
+    if level == "D":
+        semi = round(math.pi * r * r / 2, 2)
+        opts, ans = _shuffle_options(f"{semi} cm²", [f"{r * r} cm²", f"{area} cm²", f"{semi * 2} cm²"])
+        return _mcq(11, 1, level, f"Area of semicircle, radius {r} cm ≈ ?", opts, ans)
+    quad = round(math.pi * r * r / 4, 2)
+    opts, ans = _shuffle_options(f"{quad} cm²", [f"{area} cm²", f"{r} cm²", f"{quad * 2} cm²"])
+    return _mcq(11, 1, level, f"Area of quadrant, radius {r} cm ≈ ?", opts, ans)
+
+
+def _gen_u11_t2(level: str) -> dict:
+    r = random.choice([7, 14, 21, 28])
+    angle = random.choice([60, 90, 120, 180])
+    arc = _arc_length(r, angle)
+    if level == "A":
+        opts, ans = _shuffle_options("(θ/360) × 2πr", ["(θ/360) × πr²", "2πr", "πr"])
+        return _mcq(11, 2, level, "Length of an arc subtending angle θ at centre:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(f"{arc} cm", [f"{arc * 2} cm", f"{2 * math.pi * r:.1f} cm", f"{r} cm"])
+        return _mcq(11, 2, level, f"Arc length: r = {r} cm, θ = {angle}° ≈ ?", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options(f"{r} cm", [f"{r * 2} cm", f"{arc} cm", f"{r // 2} cm"])
+        return _mcq(11, 2, level, f"Arc length {arc} cm for θ = {angle}°. Radius ≈ ?", opts, ans)
+    perim = round(arc + 2 * r, 2)
+    if level == "D":
+        opts, ans = _shuffle_options(f"{perim} cm", [f"{arc} cm", f"{2 * r} cm", f"{perim + r} cm"])
+        return _mcq(11, 2, level, f"Perimeter of sector (r = {r} cm, θ = {angle}°) ≈ ?", opts, ans)
+    opts, ans = _shuffle_options(f"{arc + _arc_length(r, 180 - angle):.1f} cm", [f"{arc} cm", f"{2 * arc} cm", f"{r} cm"])
+    return _mcq(11, 2, level, f"Two arcs on same circle: {angle}° and {180 - angle}° (r = {r}). Total arc ≈ ?", opts, ans)
+
+
+def _gen_u11_t3(level: str) -> dict:
+    r = random.choice([7, 14, 21])
+    angle = random.choice([60, 90, 120])
+    sector = _sector_area(r, angle)
+    tri = round(r * r * math.sin(math.radians(angle)) / 2, 2)
+    segment = round(sector - tri, 2)
+    if level == "A":
+        opts, ans = _shuffle_options("Sector area − area of triangle", ["πr² − sector", "Arc length × r", "2 × sector"])
+        return _mcq(11, 3, level, "Area of a segment equals:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(f"{segment} cm²", [f"{sector} cm²", f"{tri} cm²", f"{segment * 2} cm²"])
+        return _mcq(11, 3, level, f"Minor segment: r = {r} cm, θ = {angle}°. Area ≈ ?", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("Major segment", ["Minor segment", "Semicircle", "Quadrant"])
+        return _mcq(11, 3, level, f"Segment larger than semicircle (θ = {angle}°) is:", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options(f"{segment} cm²", [f"{sector} cm²", f"{tri} cm²", f"{r} cm²"])
+        return _mcq(11, 3, level, f"Chord subtends {angle}° at centre, r = {r} cm. Minor segment ≈ ?", opts, ans)
+    opts, ans = _shuffle_options(f"{round(math.pi * r * r - segment, 2)} cm²", [f"{segment} cm²", f"{sector} cm²", f"{tri} cm²"])
+    return _mcq(11, 3, level, f"Circle r = {r} cm; minor segment ≈ {segment} cm². Major segment ≈ ?", opts, ans)
+
+
+def _gen_u11_t4(level: str) -> dict:
+    r = random.choice([7, 14, 21])
+    side = 2 * r
+    sq = side * side
+    quad_area = round(math.pi * r * r / 4, 2)
+    if level == "A":
+        shaded = round(sq - 4 * quad_area, 2)
+        opts, ans = _shuffle_options(f"{shaded} cm²", [f"{sq} cm²", f"{quad_area} cm²", f"{4 * quad_area} cm²"])
+        return _mcq(11, 4, level, f"Square side {side} cm with four quadrants (r = {r}) cut from corners. Shaded (centre) ≈ ?", opts, ans)
+    if level == "B":
+        outer, inner = random.choice([(14, 7), (21, 14), (28, 21)])
+        ring = round(math.pi * (outer * outer - inner * inner), 2)
+        opts, ans = _shuffle_options(f"{ring} cm²", [f"{math.pi * outer * outer:.0f} cm²", f"{inner} cm²", f"{ring / 2} cm²"])
+        return _mcq(11, 4, level, f"Ring: outer r = {outer} cm, inner r = {inner} cm. Area ≈ ?", opts, ans)
+    if level == "C":
+        brooch = round(6 * quad_area, 2)
+        opts, ans = _shuffle_options(f"{brooch} cm²", [f"{quad_area} cm²", f"{sq} cm²", f"{brooch * 2} cm²"])
+        return _mcq(11, 4, level, f"Brooch: 6 equal quadrants, each r = {r} cm. Total area ≈ ?", opts, ans)
+    if level == "D":
+        ring = round(math.pi * (r * 2) ** 2 - math.pi * r * r, 2)
+        opts, ans = _shuffle_options(f"{ring} cm²", [f"{math.pi * r * r:.0f} cm²", f"{r} cm²", f"{ring * 2} cm²"])
+        return _mcq(11, 4, level, f"Annulus: outer R = {2 * r} cm, inner r = {r} cm. Area ≈ ?", opts, ans)
+    combined = round(_sector_area(r, 60) + _sector_area(r, 120), 2)
+    opts, ans = _shuffle_options(f"{combined} cm²", [f"{_sector_area(r, 60)} cm²", f"{r} cm²", f"{combined * 2} cm²"])
+    return _mcq(11, 4, level, f"Two sectors same r = {r}: 60° + 120°. Combined area ≈ ?", opts, ans)
+
+
+# ── Unit 12 generators ──
+
+def _gen_u12_t1(level: str) -> dict:
+    r, h = random.choice([(3, 7), (7, 10), (14, 5), (5, 12)])
+    if level == "A":
+        opts, ans = _shuffle_options("2πrh", ["πr²h", "πrl", "4πr²"])
+        return _mcq(12, 1, level, "Curved surface area of a right circular cylinder:", opts, ans)
+    if level == "B":
+        csa = round(2 * math.pi * r * h, 2)
+        opts, ans = _shuffle_options(f"{csa} cm²", [f"{math.pi * r * r * h:.0f} cm²", f"{2 * r * h} cm²", f"{csa * 2} cm²"])
+        return _mcq(12, 1, level, f"Cylinder: r = {r} cm, h = {h} cm. CSA ≈ ?", opts, ans)
+    if level == "C":
+        vol_cone = round(math.pi * r * r * h / 3, 2)
+        opts, ans = _shuffle_options(f"{vol_cone} cm³", [f"{math.pi * r * r * h:.0f} cm³", f"{2 * vol_cone} cm³", f"{r * h} cm³"])
+        return _mcq(12, 1, level, f"Cone: r = {r} cm, h = {h} cm. Volume ≈ ?", opts, ans)
+    if level == "D":
+        sa_sphere = round(4 * math.pi * r * r, 2)
+        opts, ans = _shuffle_options(f"{sa_sphere} cm²", [f"{2 * math.pi * r * r:.0f} cm²", f"{(4/3) * math.pi * r ** 3:.0f} cm³", f"{sa_sphere * 2} cm²"])
+        return _mcq(12, 1, level, f"Sphere radius {r} cm. Surface area ≈ ?", opts, ans)
+    vol_sph = round(4 * math.pi * r ** 3 / 3, 2)
+    opts, ans = _shuffle_options(f"{vol_sph} cm³", [f"{4 * math.pi * r * r:.0f} cm²", f"{vol_sph * 3} cm³", f"{r ** 3} cm³"])
+    return _mcq(12, 1, level, f"Sphere r = {r} cm. Volume ≈ ?", opts, ans)
+
+
+def _gen_u12_t2(level: str) -> dict:
+    r, h = random.choice([(3, 6), (7, 14), (5, 10)])
+    if level == "A":
+        opts, ans = _shuffle_options("Exclude the common circular face", ["Add all faces twice", "Only curved areas", "Ignore hemisphere"])
+        return _mcq(12, 2, level, "Cylinder surmounted by hemisphere — for total SA:", opts, ans)
+    if level == "B":
+        csa_cyl = 2 * math.pi * r * h
+        sa_hemi = 2 * math.pi * r * r
+        base = math.pi * r * r
+        total = round(csa_cyl + sa_hemi + base, 2)
+        opts, ans = _shuffle_options(f"{total} cm²", [f"{csa_cyl:.0f} cm²", f"{sa_hemi:.0f} cm²", f"{total * 2} cm²"])
+        return _mcq(12, 2, level, f"Toy: cylinder r = {r}, h = {h} + hemisphere on top. Total SA ≈ ?", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("CSA of cone + CSA of cylinder − base overlap", ["Sum all TSA", "Volume only", "2πr(h + l)"])
+        return _mcq(12, 2, level, "Cone on cylinder — visible surface area uses:", opts, ans)
+    if level == "D":
+        outer_r, inner_r, h2 = r + 2, r, h
+        hollow_csa = round(2 * math.pi * (outer_r + inner_r) * h2, 2)
+        opts, ans = _shuffle_options(f"{hollow_csa} cm²", [f"{2 * math.pi * outer_r * h2:.0f} cm²", f"{h2} cm²", f"{hollow_csa / 2} cm²"])
+        return _mcq(12, 2, level, f"Hollow cylinder: outer r = {outer_r}, inner r = {inner_r}, h = {h2}. CSA ≈ ?", opts, ans)
+    total = round(2 * math.pi * r * h + 2 * math.pi * r * r, 2)
+    opts, ans = _shuffle_options(f"{total} cm²", [f"{2 * math.pi * r * h:.0f} cm²", f"{math.pi * r * r:.0f} cm²", f"{total / 2} cm²"])
+    return _mcq(12, 2, level, f"Closed cylinder r = {r}, h = {h}. Total SA ≈ ?", opts, ans)
+
+
+def _gen_u12_t3(level: str) -> dict:
+    r, h = random.choice([(3, 7), (7, 14), (5, 9)])
+    if level == "A":
+        opts, ans = _shuffle_options("Add individual volumes", ["Multiply SA and h", "Average of volumes", "Subtract smaller solid"])
+        return _mcq(12, 3, level, "Volume of a solid made of two joined solids:", opts, ans)
+    if level == "B":
+        vol = round(math.pi * r * r * h / 3 + 2 * math.pi * r ** 3 / 3, 2)
+        opts, ans = _shuffle_options(f"{vol} cm³", [f"{math.pi * r * r * h / 3:.0f} cm³", f"{4 * math.pi * r ** 3 / 3:.0f} cm³", f"{vol * 2} cm³"])
+        return _mcq(12, 3, level, f"Toy: cone h = {h}, r = {r} + hemisphere. Volume ≈ ?", opts, ans)
+    if level == "C":
+        outer, inner, ht = r + 3, r, h
+        hollow = round(math.pi * (outer ** 2 - inner ** 2) * ht, 2)
+        opts, ans = _shuffle_options(f"{hollow} cm³", [f"{math.pi * outer ** 2 * ht:.0f} cm³", f"{inner} cm³", f"{hollow * 2} cm³"])
+        return _mcq(12, 3, level, f"Hollow cylinder: outer r = {outer}, inner r = {inner}, h = {ht}. Volume ≈ ?", opts, ans)
+    if level == "D":
+        vol_cyl = math.pi * r * r * h
+        opts, ans = _shuffle_options(f"{vol_cyl:.0f} cm³", [f"{vol_cyl / 1000:.2f} L", f"{r} cm³", f"{vol_cyl * 2:.0f} cm³"])
+        return _mcq(12, 3, level, f"Cylindrical tank r = {r} cm, h = {h} cm holds water ≈ ? cm³", opts, ans)
+    v1 = round(4 * math.pi * r ** 3 / 3, 2)
+    v2 = round(math.pi * r * r * h, 2)
+    opts, ans = _shuffle_options(f"{v1 + v2:.0f} cm³", [f"{v1} cm³", f"{v2} cm³", f"{r} cm³"])
+    return _mcq(12, 3, level, f"Sphere r = {r} + cylinder same r, h = {h}. Combined volume ≈ ?", opts, ans)
+
+
+def _gen_u12_t4(level: str) -> dict:
+    r1, r2, h = random.choice([(7, 3, 10), (14, 7, 12), (10, 5, 8)])
+    if level == "A":
+        opts, ans = _shuffle_options("Portion of a cone between two parallel cuts", ["Full cone", "Cylinder only", "Hemisphere cut"])
+        return _mcq(12, 4, level, "A frustum of a cone is:", opts, ans)
+    if level == "B":
+        vol = round(math.pi * h * (r1 * r1 + r1 * r2 + r2 * r2) / 3, 2)
+        opts, ans = _shuffle_options(f"{vol} cm³", [f"{math.pi * r1 * r1 * h / 3:.0f} cm³", f"{h} cm³", f"{vol * 2} cm³"])
+        return _mcq(12, 4, level, f"Frustum: radii {r1} & {r2} cm, height {h} cm. Volume ≈ ?", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("Volume stays same (conservation)", ["Volume doubles", "SA unchanged", "Shape irrelevant"])
+        return _mcq(12, 4, level, "Metallic sphere melted and recast into cylinder. Which is true?", opts, ans)
+    if level == "D":
+        k = random.choice([2, 3])
+        opts, ans = _shuffle_options(f"{k ** 3}", [f"{k}", f"{k ** 2}", f"{2 * k}"])
+        return _mcq(12, 4, level, f"Two similar solids; linear scale factor {k}. Volume ratio = ?", opts, ans)
+    bucket = round(math.pi * h * (r1 * r1 + r1 * r2 + r2 * r2) / 3, 2)
+    opts, ans = _shuffle_options(f"{bucket} cm³", [f"{math.pi * r1 ** 2 * h:.0f} cm³", f"{r1 - r2} cm³", f"{bucket / 2} cm³"])
+    return _mcq(12, 4, level, f"Bucket (frustum): top r = {r1}, bottom r = {r2}, depth {h} cm. Capacity ≈ ?", opts, ans)
+
+
+# ── Unit 13 generators ──
+
+def _gen_u13_t1(level: str) -> dict:
+    lo, hi = random.choice([(10, 20), (20, 30), (30, 40)])
+    mid = (lo + hi) // 2
+    if level == "A":
+        opts, ans = _shuffle_options(f"{mid}", [f"{lo}", f"{hi}", f"{lo + hi}"])
+        return _mcq(13, 1, level, f"Class mark for interval {lo}–{hi}:", opts, ans, "(lower + upper)/2")
+    freqs = [random.randint(2, 8) for _ in range(4)]
+    classes = [(10, 20), (20, 30), (30, 40), (40, 50)]
+    fx = sum(f * ((a + b) // 2) for f, (a, b) in zip(freqs, classes))
+    sf = sum(freqs)
+    mean = round(fx / sf, 1)
+    if level == "B":
+        opts, ans = _shuffle_options(f"{mean}", [f"{mean + 5}", f"{sf}", f"{fx}"])
+        return _mcq(13, 1, level, f"Grouped data: Σfixi = {fx}, Σfi = {sf}. Mean ≈ ?", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("Assumed mean a and deviations di", ["Only midpoints", "No frequencies", "Median class"])
+        return _mcq(13, 1, level, "Assumed mean method uses:", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options("ui = (xi − a)/h step widths", ["xi only", "cf only", "Mode formula"])
+        return _mcq(13, 1, level, "Step-deviation method uses:", opts, ans)
+    missing_f = random.randint(3, 7)
+    opts, ans = _shuffle_options(f"{missing_f}", [f"{missing_f + 2}", f"{sf}", f"1"])
+    return _mcq(13, 1, level, f"Mean = {mean}; total frequency {sf + missing_f - sum(freqs[:1])}. Find missing f in first class ≈ ?", opts, ans)
+
+
+def _gen_u13_t2(level: str) -> dict:
+    n = random.choice([40, 50, 60, 80])
+    half = n // 2
+    if level == "A":
+        opts, ans = _shuffle_options("Class where cf crosses n/2", ["Highest frequency class", "First class", "Last class"])
+        return _mcq(13, 2, level, "Median class is the:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options("l + ((n/2 − cf)/f) × h", ["Σfixi/Σfi", "l + ((f1−f0)/(2f1−f0−f2))h", "cf only"])
+        return _mcq(13, 2, level, "Median of grouped data formula:", opts, ans)
+    l, f, cf, h = 20, 12, 18, 10
+    median = round(l + ((half - cf) / f) * h, 1)
+    if level == "C":
+        opts, ans = _shuffle_options(f"{median}", [f"{l}", f"{l + h}", f"{half}"])
+        return _mcq(13, 2, level, f"n = {n}, median class lower l = {l}, f = {f}, cf = {cf}, h = {h}. Median ≈ ?", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options("Mean affected by extremes; median more robust", ["Always equal", "Median always larger", "Mean always larger"])
+        return _mcq(13, 2, level, "Compare mean and median for skewed data:", opts, ans)
+    opts, ans = _shuffle_options(f"{f}", [f"{cf}", f"{l}", f"{h}"])
+    return _mcq(13, 2, level, f"Median = {median}, known l, cf, h. Frequency f of median class ≈ ?", opts, ans)
+
+
+def _gen_u13_t3(level: str) -> dict:
+    if level == "A":
+        opts, ans = _shuffle_options("Class with maximum frequency", ["Lowest class", "Median class", "Last class"])
+        return _mcq(13, 3, level, "Modal class is the:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options("l + ((f1−f0)/(2f1−f0−f2)) × h", ["Σfixi/Σfi", "n/2 formula", "cf graph"])
+        return _mcq(13, 3, level, "Mode formula for grouped data:", opts, ans)
+    l, f1, f0, f2, h = 30, 15, 10, 8, 10
+    mode = round(l + ((f1 - f0) / (2 * f1 - f0 - f2)) * h, 1)
+    if level == "C":
+        opts, ans = _shuffle_options(f"{mode}", [f"{l}", f"{l + h}", f"{f1}"])
+        return _mcq(13, 3, level, f"Modal class l = {l}, f1 = {f1}, f0 = {f0}, f2 = {f2}, h = {h}. Mode ≈ ?", opts, ans)
+    if level == "D":
+        mean_val, median_val = 35.0, 33.0
+        emp = round(3 * median_val - 2 * mean_val, 1)
+        opts, ans = _shuffle_options(f"{emp}", [f"{mean_val}", f"{median_val}", f"{mean_val + median_val}"])
+        return _mcq(13, 3, level, f"Mean = {mean_val}, median = {median_val}. Mode (empirical) ≈ ?", opts, ans)
+    opts, ans = _shuffle_options(f"{mode}", [f"{l + h}", f"{f0}", f"{2 * f1}"])
+    return _mcq(13, 3, level, f"Grouped data: modal class starts at {l}. Mode ≈ ?", opts, ans)
+
+
+def _gen_u13_t4(level: str) -> dict:
+    if level == "A":
+        opts, ans = _shuffle_options("Less-than type: cf on y-axis", ["More-than only", "Frequency on x-axis only", "No cf"])
+        return _mcq(13, 4, level, "Less-than ogive plots:", opts, ans)
+    if level == "B":
+        freqs = [5, 8, 12, 6]
+        cf = []
+        s = 0
+        for f in freqs:
+            s += f
+            cf.append(s)
+        opts, ans = _shuffle_options(str(cf[-1]), [str(freqs[-1]), str(sum(freqs) + 1), "0"])
+        return _mcq(13, 4, level, f"Frequencies {freqs}. Total (last cf) = ?", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("x-coordinate of intersection of ogives", ["Maximum frequency", "Class width", "First cf"])
+        return _mcq(13, 4, level, "Median from ogives is read at:", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options("Steep rise → many observations in that interval", ["Always decreasing", "Mean equals mode", "Zero frequency"])
+        return _mcq(13, 4, level, "On a less-than ogive, a steep rise indicates:", opts, ans)
+    n = 50
+    opts, ans = _shuffle_options(f"{n // 2}", [f"{n}", f"{n // 4}", "0"])
+    return _mcq(13, 4, level, f"Total n = {n}. Median position on ogive is at cf = ?", opts, ans)
+
+
+# ── Unit 14 generators ──
+
+def _gen_u14_t1(level: str) -> dict:
+    fav, total = random.choice([(1, 6), (2, 6), (3, 52), (4, 52), (1, 2)])
+    p = Fraction(fav, total)
+    if level == "A":
+        opts, ans = _shuffle_options("Favourable outcomes / Total outcomes", ["Total / Favourable", "1 − P(E)", "Always 1/2"])
+        return _mcq(14, 1, level, "Classical probability P(E) =", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(str(p), [str(Fraction(total - fav, total)), "0", "1"])
+        return _mcq(14, 1, level, f"Fair die/cards: {fav} favourable out of {total}. P(E) = ?", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("0", ["1", "1/2", "Undefined"])
+        return _mcq(14, 1, level, "Probability of impossible event:", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options("Equally likely", ["Always 0", "Always 1", "Complementary"])
+        return _mcq(14, 1, level, "Classical probability assumes outcomes are:", opts, ans)
+    p2 = Fraction(fav + 1, total)
+    opts, ans = _shuffle_options(str(p2), [str(p), "1", "0"])
+    return _mcq(14, 1, level, f"Bag: {fav + 1} red out of {total} identical balls. P(red) = ?", opts, ans)
+
+
+def _gen_u14_t2(level: str) -> dict:
+    p = random.choice([Fraction(1, 6), Fraction(1, 4), Fraction(2, 5), Fraction(3, 8)])
+    comp = Fraction(1) - p
+    if level == "A":
+        opts, ans = _shuffle_options("1 − P(E)", ["P(E) − 1", "1 + P(E)", "P(E)/2"])
+        return _mcq(14, 2, level, "P(not E) equals:", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(str(comp), [str(p), "0", "1"])
+        return _mcq(14, 2, level, f"P(E) = {p}. P(not E) = ?", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options(str(Fraction(5, 6)), [str(Fraction(1, 6)), "0", "1"])
+        return _mcq(14, 2, level, "Die: P(at least one six) in one throw uses complement with P(no six) = 5/6?", opts, ans)
+    if level == "D":
+        rain_p = Fraction(3, 10)
+        opts, ans = _shuffle_options(str(Fraction(1) - rain_p), [str(rain_p), "0", "1"])
+        return _mcq(14, 2, level, f"P(rain) = {rain_p}. P(no rain) = ?", opts, ans)
+    opts, ans = _shuffle_options(str(comp), [str(p), str(p * 2), "1"])
+    return _mcq(14, 2, level, f"P(win) = {p}. P(lose) = ?", opts, ans)
+
+
+def _gen_u14_t3(level: str) -> dict:
+    if level == "A":
+        opts, ans = _shuffle_options("1/6", ["1/3", "1/2", "1/36"])
+        return _mcq(14, 3, level, "One fair die: P(getting 4) = ?", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options("1/36", ["1/6", "1/12", "2/36"])
+        return _mcq(14, 3, level, "Two dice: P(sum = 2) = ?", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("1/52", ["1/13", "1/4", "4/52"])
+        return _mcq(14, 3, level, "One card from standard deck: P(specific card) = ?", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options("3/13", ["1/13", "12/52", "4/52"])
+        return _mcq(14, 3, level, "P(drawing a king from deck) = ?", opts, ans)
+    opts, ans = _shuffle_options("1/2", ["1/4", "26/52", "13/52"])
+    return _mcq(14, 3, level, "P(red card from well-shuffled deck) = ?", opts, ans)
+
+
+def _gen_u14_t4(level: str) -> dict:
+    red, blue = random.choice([(3, 5), (4, 6), (5, 3)])
+    total = red + blue
+    if level == "A":
+        opts, ans = _shuffle_options(f"{red}/{total}", [f"{blue}/{total}", "1/2", "0"])
+        return _mcq(14, 4, level, f"Bag: {red} red, {blue} blue balls. P(red) = ?", opts, ans)
+    if level == "B":
+        p = Fraction(red, total) * Fraction(red - 1, total - 1)
+        opts, ans = _shuffle_options(str(p), [str(Fraction(red, total)), "1", "0"])
+        return _mcq(14, 4, level, f"Two draws without replacement from bag ({red}R, {blue}B). P(both red) = ?", opts, ans)
+    if level == "C":
+        opts, ans = _shuffle_options("Favourable area / Total area", ["Perimeter ratio", "Always 1/2", "Volume ratio"])
+        return _mcq(14, 4, level, "Geometric probability on a region uses:", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options("1/2", ["1/4", "1", "0"])
+        return _mcq(14, 4, level, "Two fair coins tossed. P(exactly one head) = ?", opts, ans)
+    opts, ans = _shuffle_options(f"{blue}/{total}", [f"{red}/{total}", "1", "0"])
+    return _mcq(14, 4, level, f"Bag {red} red, {blue} blue. P(blue) = ?", opts, ans)
+
+
 GENERATORS: dict[tuple[int, int], callable] = {
     (1, 1): _gen_u1_t1,
     (1, 2): _gen_u1_t2,
@@ -2623,6 +3195,22 @@ GENERATORS: dict[tuple[int, int], callable] = {
     (10, 2): _gen_u10_t2,
     (10, 3): _gen_u10_t3,
     (10, 4): _gen_u10_t4,
+    (11, 1): _gen_u11_t1,
+    (11, 2): _gen_u11_t2,
+    (11, 3): _gen_u11_t3,
+    (11, 4): _gen_u11_t4,
+    (12, 1): _gen_u12_t1,
+    (12, 2): _gen_u12_t2,
+    (12, 3): _gen_u12_t3,
+    (12, 4): _gen_u12_t4,
+    (13, 1): _gen_u13_t1,
+    (13, 2): _gen_u13_t2,
+    (13, 3): _gen_u13_t3,
+    (13, 4): _gen_u13_t4,
+    (14, 1): _gen_u14_t1,
+    (14, 2): _gen_u14_t2,
+    (14, 3): _gen_u14_t3,
+    (14, 4): _gen_u14_t4,
 }
 
 

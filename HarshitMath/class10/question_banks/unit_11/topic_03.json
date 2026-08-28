@@ -1,0 +1,607 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u11_t3_A_82cfe693",
+        "question": "Area of a segment equals:",
+        "options": [
+          "Arc length × r",
+          "πr² - sector",
+          "Sector area - area of triangle",
+          "2 × sector"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 11,
+        "category": "u11_t3_A",
+        "category_label": "Segment · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "B": [
+      {
+        "id": "u11_t3_B_f9c4cef7",
+        "question": "Minor segment: r = 21 cm, θ = 60°. Area ≈ ?",
+        "options": [
+          "39.95 cm²",
+          "79.9 cm²",
+          "190.96 cm²",
+          "230.91 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t3_B",
+        "category_label": "Segment · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_B_ddbf8366",
+        "question": "Minor segment: r = 21 cm, θ = 120°. Area ≈ ?",
+        "options": [
+          "270.85 cm²",
+          "190.96 cm²",
+          "541.7 cm²",
+          "461.81 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t3_B",
+        "category_label": "Segment · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_B_5d6e05f8",
+        "question": "Minor segment: r = 14 cm, θ = 120°. Area ≈ ?",
+        "options": [
+          "120.38 cm²",
+          "205.25 cm²",
+          "240.76 cm²",
+          "84.87 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t3_B",
+        "category_label": "Segment · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_B_483d8b6d",
+        "question": "Minor segment: r = 21 cm, θ = 90°. Area ≈ ?",
+        "options": [
+          "220.5 cm²",
+          "125.86 cm²",
+          "251.72 cm²",
+          "346.36 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t3_B",
+        "category_label": "Segment · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_B_79febf53",
+        "question": "Minor segment: r = 7 cm, θ = 120°. Area ≈ ?",
+        "options": [
+          "21.22 cm²",
+          "30.09 cm²",
+          "60.18 cm²",
+          "51.31 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t3_B",
+        "category_label": "Segment · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_B_7479d099",
+        "question": "Minor segment: r = 14 cm, θ = 60°. Area ≈ ?",
+        "options": [
+          "17.76 cm²",
+          "84.87 cm²",
+          "102.63 cm²",
+          "35.52 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t3_B",
+        "category_label": "Segment · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_B_81c36921",
+        "question": "Minor segment: r = 14 cm, θ = 90°. Area ≈ ?",
+        "options": [
+          "153.94 cm²",
+          "55.94 cm²",
+          "98.0 cm²",
+          "111.88 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t3_B",
+        "category_label": "Segment · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_B_a5a3baa9",
+        "question": "Minor segment: r = 7 cm, θ = 90°. Area ≈ ?",
+        "options": [
+          "38.48 cm²",
+          "24.5 cm²",
+          "13.98 cm²",
+          "27.96 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t3_B",
+        "category_label": "Segment · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_B_de5271c6",
+        "question": "Minor segment: r = 7 cm, θ = 60°. Area ≈ ?",
+        "options": [
+          "25.66 cm²",
+          "4.44 cm²",
+          "21.22 cm²",
+          "8.88 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t3_B",
+        "category_label": "Segment · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "C": [
+      {
+        "id": "u11_t3_C_da83dc31",
+        "question": "Segment larger than semicircle (θ = 120°) is:",
+        "options": [
+          "Minor segment",
+          "Major segment",
+          "Semicircle",
+          "Quadrant"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t3_C",
+        "category_label": "Segment · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_C_52bd1d57",
+        "question": "Segment larger than semicircle (θ = 60°) is:",
+        "options": [
+          "Semicircle",
+          "Quadrant",
+          "Major segment",
+          "Minor segment"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t3_C",
+        "category_label": "Segment · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_C_ee9b1251",
+        "question": "Segment larger than semicircle (θ = 90°) is:",
+        "options": [
+          "Semicircle",
+          "Quadrant",
+          "Minor segment",
+          "Major segment"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t3_C",
+        "category_label": "Segment · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "D": [
+      {
+        "id": "u11_t3_D_7118cc9e",
+        "question": "Chord subtends 120° at centre, r = 21 cm. Minor segment ≈ ?",
+        "options": [
+          "270.85 cm²",
+          "21 cm²",
+          "461.81 cm²",
+          "190.96 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t3_D",
+        "category_label": "Segment · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_D_1ab25746",
+        "question": "Chord subtends 120° at centre, r = 14 cm. Minor segment ≈ ?",
+        "options": [
+          "205.25 cm²",
+          "84.87 cm²",
+          "120.38 cm²",
+          "14 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t3_D",
+        "category_label": "Segment · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_D_aabee321",
+        "question": "Chord subtends 60° at centre, r = 14 cm. Minor segment ≈ ?",
+        "options": [
+          "17.76 cm²",
+          "102.63 cm²",
+          "14 cm²",
+          "84.87 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t3_D",
+        "category_label": "Segment · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_D_5cb1cc92",
+        "question": "Chord subtends 90° at centre, r = 7 cm. Minor segment ≈ ?",
+        "options": [
+          "38.48 cm²",
+          "13.98 cm²",
+          "7 cm²",
+          "24.5 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t3_D",
+        "category_label": "Segment · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_D_89b91b66",
+        "question": "Chord subtends 60° at centre, r = 7 cm. Minor segment ≈ ?",
+        "options": [
+          "7 cm²",
+          "21.22 cm²",
+          "25.66 cm²",
+          "4.44 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t3_D",
+        "category_label": "Segment · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_D_63bd49e3",
+        "question": "Chord subtends 60° at centre, r = 21 cm. Minor segment ≈ ?",
+        "options": [
+          "39.95 cm²",
+          "21 cm²",
+          "230.91 cm²",
+          "190.96 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t3_D",
+        "category_label": "Segment · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_D_e2ef0b4c",
+        "question": "Chord subtends 90° at centre, r = 14 cm. Minor segment ≈ ?",
+        "options": [
+          "153.94 cm²",
+          "98.0 cm²",
+          "14 cm²",
+          "55.94 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t3_D",
+        "category_label": "Segment · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_D_62abdf6d",
+        "question": "Chord subtends 90° at centre, r = 21 cm. Minor segment ≈ ?",
+        "options": [
+          "125.86 cm²",
+          "21 cm²",
+          "346.36 cm²",
+          "220.5 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t3_D",
+        "category_label": "Segment · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_D_123d248d",
+        "question": "Chord subtends 120° at centre, r = 7 cm. Minor segment ≈ ?",
+        "options": [
+          "30.09 cm²",
+          "51.31 cm²",
+          "21.22 cm²",
+          "7 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t3_D",
+        "category_label": "Segment · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "E": [
+      {
+        "id": "u11_t3_E_fdf381e2",
+        "question": "Circle r = 21 cm; minor segment ≈ 125.86 cm². Major segment ≈ ?",
+        "options": [
+          "1259.58 cm²",
+          "125.86 cm²",
+          "220.5 cm²",
+          "346.36 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t3_E",
+        "category_label": "Segment · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_E_ebc98ab0",
+        "question": "Circle r = 14 cm; minor segment ≈ 120.38 cm². Major segment ≈ ?",
+        "options": [
+          "205.25 cm²",
+          "495.37 cm²",
+          "84.87 cm²",
+          "120.38 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t3_E",
+        "category_label": "Segment · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_E_551a0c16",
+        "question": "Circle r = 7 cm; minor segment ≈ 13.98 cm². Major segment ≈ ?",
+        "options": [
+          "24.5 cm²",
+          "38.48 cm²",
+          "13.98 cm²",
+          "139.96 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t3_E",
+        "category_label": "Segment · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_E_8719fff0",
+        "question": "Circle r = 21 cm; minor segment ≈ 270.85 cm². Major segment ≈ ?",
+        "options": [
+          "461.81 cm²",
+          "1114.59 cm²",
+          "190.96 cm²",
+          "270.85 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t3_E",
+        "category_label": "Segment · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_E_43e47459",
+        "question": "Circle r = 7 cm; minor segment ≈ 4.44 cm². Major segment ≈ ?",
+        "options": [
+          "4.44 cm²",
+          "25.66 cm²",
+          "149.5 cm²",
+          "21.22 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t3_E",
+        "category_label": "Segment · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_E_90b512a2",
+        "question": "Circle r = 21 cm; minor segment ≈ 39.95 cm². Major segment ≈ ?",
+        "options": [
+          "190.96 cm²",
+          "39.95 cm²",
+          "1345.49 cm²",
+          "230.91 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t3_E",
+        "category_label": "Segment · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_E_cbd7c89f",
+        "question": "Circle r = 14 cm; minor segment ≈ 17.76 cm². Major segment ≈ ?",
+        "options": [
+          "102.63 cm²",
+          "597.99 cm²",
+          "84.87 cm²",
+          "17.76 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t3_E",
+        "category_label": "Segment · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_E_aa3eede3",
+        "question": "Circle r = 14 cm; minor segment ≈ 55.94 cm². Major segment ≈ ?",
+        "options": [
+          "55.94 cm²",
+          "559.81 cm²",
+          "153.94 cm²",
+          "98.0 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t3_E",
+        "category_label": "Segment · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t3_E_64a31d76",
+        "question": "Circle r = 7 cm; minor segment ≈ 30.09 cm². Major segment ≈ ?",
+        "options": [
+          "30.09 cm²",
+          "21.22 cm²",
+          "123.85 cm²",
+          "51.31 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t3_E",
+        "category_label": "Segment · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 11,
+    "topic_id": 3
+  }
+}

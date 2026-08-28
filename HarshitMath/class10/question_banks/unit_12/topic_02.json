@@ -1,0 +1,227 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u12_t2_A_313fbce1",
+        "question": "Cylinder surmounted by hemisphere — for total SA:",
+        "options": [
+          "Only curved areas",
+          "Add all faces twice",
+          "Ignore hemisphere",
+          "Exclude the common circular face"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 12,
+        "category": "u12_t2_A",
+        "category_label": "Combo SA · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      }
+    ],
+    "B": [
+      {
+        "id": "u12_t2_B_5a1031c3",
+        "question": "Toy: cylinder r = 3, h = 6 + hemisphere on top. Total SA ≈ ?",
+        "options": [
+          "197.92 cm²",
+          "57 cm²",
+          "395.84 cm²",
+          "113 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t2_B",
+        "category_label": "Combo SA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t2_B_908b08fa",
+        "question": "Toy: cylinder r = 5, h = 10 + hemisphere on top. Total SA ≈ ?",
+        "options": [
+          "549.78 cm²",
+          "314 cm²",
+          "157 cm²",
+          "1099.56 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t2_B",
+        "category_label": "Combo SA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t2_B_9eabe04b",
+        "question": "Toy: cylinder r = 7, h = 14 + hemisphere on top. Total SA ≈ ?",
+        "options": [
+          "1077.57 cm²",
+          "2155.14 cm²",
+          "308 cm²",
+          "616 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t2_B",
+        "category_label": "Combo SA · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      }
+    ],
+    "C": [
+      {
+        "id": "u12_t2_C_c742d9bb",
+        "question": "Cone on cylinder — visible surface area uses:",
+        "options": [
+          "2πr(h + l)",
+          "Sum all TSA",
+          "CSA of cone + CSA of cylinder - base overlap",
+          "Volume only"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t2_C",
+        "category_label": "Combo SA · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      }
+    ],
+    "D": [
+      {
+        "id": "u12_t2_D_e2c00861",
+        "question": "Hollow cylinder: outer r = 9, inner r = 7, h = 14. CSA ≈ ?",
+        "options": [
+          "14 cm²",
+          "792 cm²",
+          "703.715 cm²",
+          "1407.43 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t2_D",
+        "category_label": "Combo SA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t2_D_1eee72b0",
+        "question": "Hollow cylinder: outer r = 5, inner r = 3, h = 6. CSA ≈ ?",
+        "options": [
+          "6 cm²",
+          "301.59 cm²",
+          "150.795 cm²",
+          "188 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t2_D",
+        "category_label": "Combo SA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t2_D_5457958a",
+        "question": "Hollow cylinder: outer r = 7, inner r = 5, h = 10. CSA ≈ ?",
+        "options": [
+          "440 cm²",
+          "376.99 cm²",
+          "10 cm²",
+          "753.98 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t2_D",
+        "category_label": "Combo SA · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      }
+    ],
+    "E": [
+      {
+        "id": "u12_t2_E_3c3ec102",
+        "question": "Closed cylinder r = 7, h = 14. Total SA ≈ ?",
+        "options": [
+          "154 cm²",
+          "616 cm²",
+          "923.63 cm²",
+          "461.815 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t2_E",
+        "category_label": "Combo SA · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t2_E_5d3b3a8d",
+        "question": "Closed cylinder r = 5, h = 10. Total SA ≈ ?",
+        "options": [
+          "471.24 cm²",
+          "314 cm²",
+          "235.62 cm²",
+          "79 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t2_E",
+        "category_label": "Combo SA · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t2_E_791fbdb6",
+        "question": "Closed cylinder r = 3, h = 6. Total SA ≈ ?",
+        "options": [
+          "113 cm²",
+          "169.65 cm²",
+          "84.825 cm²",
+          "28 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t2_E",
+        "category_label": "Combo SA · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 12,
+    "topic_id": 2
+  }
+}

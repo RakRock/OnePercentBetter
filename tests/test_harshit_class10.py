@@ -219,6 +219,98 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(q["unit_id"], 10)
         self.assertEqual(q["chapter_ref"], "NCERT Ch 10 Circles")
 
+    def test_unit11_pdf_exists(self):
+        path = h10u.unit_pdf_path(11)
+        self.assertIsNotNone(path)
+        self.assertEqual(path.name, "jemh111.pdf")
+
+    def test_unit11_active_in_catalog(self):
+        unit = h10u.get_unit(11)
+        self.assertIsNotNone(unit)
+        self.assertTrue(unit.get("active"))
+        self.assertEqual(unit["title"], "Areas Related to Circles")
+
+    def test_build_session_unit11(self):
+        config = h10t.default_week_config(11)
+        qs, _ = h10p.build_session_set(11, config, count=15)
+        self.assertEqual(len(qs), 15)
+        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+
+    def test_generate_unit11_question(self):
+        q = h10t.generate_question(11, 1, "B", templates_only=True)
+        self.assertIsNotNone(q)
+        self.assertEqual(q["unit_id"], 11)
+        self.assertEqual(q["chapter_ref"], "NCERT Ch 11 Areas Related to Circles")
+
+    def test_unit12_pdf_exists(self):
+        path = h10u.unit_pdf_path(12)
+        self.assertIsNotNone(path)
+        self.assertEqual(path.name, "jemh112.pdf")
+
+    def test_unit12_active_in_catalog(self):
+        unit = h10u.get_unit(12)
+        self.assertIsNotNone(unit)
+        self.assertTrue(unit.get("active"))
+        self.assertEqual(unit["title"], "Surface Areas and Volumes")
+
+    def test_build_session_unit12(self):
+        config = h10t.default_week_config(12)
+        qs, _ = h10p.build_session_set(12, config, count=15)
+        self.assertEqual(len(qs), 15)
+        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+
+    def test_generate_unit12_question(self):
+        q = h10t.generate_question(12, 1, "B", templates_only=True)
+        self.assertIsNotNone(q)
+        self.assertEqual(q["unit_id"], 12)
+        self.assertEqual(q["chapter_ref"], "NCERT Ch 12 Surface Areas and Volumes")
+
+    def test_unit13_pdf_exists(self):
+        path = h10u.unit_pdf_path(13)
+        self.assertIsNotNone(path)
+        self.assertEqual(path.name, "jemh113.pdf")
+
+    def test_unit13_active_in_catalog(self):
+        unit = h10u.get_unit(13)
+        self.assertIsNotNone(unit)
+        self.assertTrue(unit.get("active"))
+        self.assertEqual(unit["title"], "Statistics")
+
+    def test_build_session_unit13(self):
+        config = h10t.default_week_config(13)
+        qs, _ = h10p.build_session_set(13, config, count=15)
+        self.assertEqual(len(qs), 15)
+        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+
+    def test_generate_unit13_question(self):
+        q = h10t.generate_question(13, 1, "B", templates_only=True)
+        self.assertIsNotNone(q)
+        self.assertEqual(q["unit_id"], 13)
+        self.assertEqual(q["chapter_ref"], "NCERT Ch 13 Statistics")
+
+    def test_unit14_pdf_exists(self):
+        path = h10u.unit_pdf_path(14)
+        self.assertIsNotNone(path)
+        self.assertEqual(path.name, "jemh114.pdf")
+
+    def test_unit14_active_in_catalog(self):
+        unit = h10u.get_unit(14)
+        self.assertIsNotNone(unit)
+        self.assertTrue(unit.get("active"))
+        self.assertEqual(unit["title"], "Probability")
+
+    def test_build_session_unit14(self):
+        config = h10t.default_week_config(14)
+        qs, _ = h10p.build_session_set(14, config, count=15)
+        self.assertEqual(len(qs), 15)
+        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+
+    def test_generate_unit14_question(self):
+        q = h10t.generate_question(14, 1, "B", templates_only=True)
+        self.assertIsNotNone(q)
+        self.assertEqual(q["unit_id"], 14)
+        self.assertEqual(q["chapter_ref"], "NCERT Ch 14 Probability")
+
 
 if __name__ == "__main__":
     unittest.main()

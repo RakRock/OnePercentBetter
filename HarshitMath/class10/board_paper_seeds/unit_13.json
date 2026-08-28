@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "unit_id": 13,
+    "chapter": "Statistics",
+    "ncert": "Chapter 13",
+    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE SQP 2025-26", "NCERT Ch 13"]
+  },
+  "mcq": [
+    {
+      "id": "b30_stat_mcq1",
+      "source_paper": "30/1/1 (board-style)",
+      "question": "Class mark of interval 20–30 is:",
+      "options": ["25", "20", "30", "50"],
+      "answer": 0,
+      "explanation": "(20 + 30)/2 = 25."
+    },
+    {
+      "id": "b30_stat_mcq2",
+      "source_paper": "30/1/2 (board-style)",
+      "question": "Median class is the class where cumulative frequency:",
+      "options": ["First reaches n/2", "Is maximum", "Is minimum", "Equals mode"],
+      "answer": 0,
+      "explanation": "NCERT 13.4 median class definition."
+    },
+    {
+      "id": "bsqp_stat_mcq",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "question": "Empirical relation between mean, median and mode is:",
+      "options": ["Mode = 3 Median − 2 Mean", "Mean = Mode + Median", "Median = 2 Mode − Mean", "Mode = Mean − Median"],
+      "answer": 0,
+      "explanation": "Standard empirical formula."
+    }
+  ],
+  "assertion_reason": [
+    {
+      "id": "b30_stat_ar",
+      "source_paper": "30/1/1 (board-style)",
+      "assertion": "For grouped data, mean is computed using class marks.",
+      "reason": "Raw values in each class are not known individually.",
+      "answer": 0,
+      "explanation": "Both true — midpoints represent each class."
+    }
+  ],
+  "vsa": [
+    {
+      "id": "b30_stat_vsa_mean",
+      "source_paper": "30/1/1",
+      "marks": 2,
+      "question": "Find mean if Σfixi = 850 and Σfi = 50.",
+      "model_answer": "850/50 = 17.",
+      "rubric": ["Σfixi/Σfi", "17"]
+    },
+    {
+      "id": "b30_stat_vsa_modal",
+      "source_paper": "30/1/2",
+      "marks": 2,
+      "question": "Which class is modal class if frequencies are 5, 12, 8, 3?",
+      "model_answer": "Second class (frequency 12 is maximum).",
+      "rubric": ["Identify max fi", "Correct class"]
+    }
+  ],
+  "sa": [
+    {
+      "id": "b30_stat_sa_median",
+      "source_paper": "30/1/3",
+      "marks": 3,
+      "question": "Find median from grouped data: n = 60, median class 20–30 with l = 20, f = 15, cf = 22, h = 10.",
+      "model_answer": "Median = 20 + ((30 − 22)/15) × 10 = 20 + 16/3 ≈ 25.33.",
+      "rubric": ["n/2 = 30", "Apply formula", "Numerical answer"]
+    },
+    {
+      "id": "bsqp_stat_sa_mode",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 3,
+      "question": "Find mode: modal class 30–40, l = 30, f1 = 18, f0 = 12, f2 = 10, h = 10.",
+      "model_answer": "Mode = 30 + ((18−12)/(2×18−12−10)) × 10.",
+      "rubric": ["Modal class", "Mode formula", "Answer"]
+    }
+  ],
+  "la": [
+    {
+      "id": "b30_stat_la_mean",
+      "source_paper": "30/1/1 (NCERT Ex 13.1 style)",
+      "marks": 5,
+      "question": "Find mean of grouped frequency distribution using direct method (table provided in exam).",
+      "model_answer": "Compute xi, fixi columns; x̄ = Σfixi/Σfi.",
+      "rubric": ["Class marks", "Σfixi", "Mean"]
+    },
+    {
+      "id": "b30_stat_la_ogive",
+      "source_paper": "30/1/2",
+      "marks": 5,
+      "question": "Draw less-than ogive for given distribution and estimate median.",
+      "model_answer": "Plot upper limits vs cf; median at cf = n/2.",
+      "rubric": ["cf table", "Correct graph", "Median read"]
+    },
+    {
+      "id": "bsqp_stat_la_all",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 5,
+      "question": "For a grouped distribution find mean, median and mode (data in paper).",
+      "model_answer": "Apply direct mean, median and mode formulae separately.",
+      "rubric": ["Mean", "Median", "Mode"]
+    }
+  ]
+}

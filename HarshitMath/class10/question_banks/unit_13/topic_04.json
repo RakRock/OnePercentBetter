@@ -1,0 +1,113 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u13_t4_A_b748b00c",
+        "question": "Less-than ogive plots:",
+        "options": [
+          "Frequency on x-axis only",
+          "Less-than type: cf on y-axis",
+          "More-than only",
+          "No cf"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 13,
+        "category": "u13_t4_A",
+        "category_label": "Ogive · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "B": [
+      {
+        "id": "u13_t4_B_82528ef2",
+        "question": "Frequencies [5, 8, 12, 6]. Total (last cf) = ?",
+        "options": [
+          "0",
+          "6",
+          "32",
+          "31"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t4_B",
+        "category_label": "Ogive · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "C": [
+      {
+        "id": "u13_t4_C_fe4aa1bf",
+        "question": "Median from ogives is read at:",
+        "options": [
+          "Class width",
+          "Maximum frequency",
+          "x-coordinate of intersection of ogives",
+          "First cf"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t4_C",
+        "category_label": "Ogive · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "D": [
+      {
+        "id": "u13_t4_D_9bcdff71",
+        "question": "On a less-than ogive, a steep rise indicates:",
+        "options": [
+          "Mean equals mode",
+          "Steep rise → many observations in that interval",
+          "Zero frequency",
+          "Always decreasing"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t4_D",
+        "category_label": "Ogive · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "E": [
+      {
+        "id": "u13_t4_E_000466bf",
+        "question": "Total n = 50. Median position on ogive is at cf = ?",
+        "options": [
+          "25",
+          "0",
+          "50",
+          "12"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t4_E",
+        "category_label": "Ogive · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 13,
+    "topic_id": 4
+  }
+}

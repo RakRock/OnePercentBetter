@@ -1,0 +1,208 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u12_t4_A_eaa2b46b",
+        "question": "A frustum of a cone is:",
+        "options": [
+          "Portion of a cone between two parallel cuts",
+          "Full cone",
+          "Cylinder only",
+          "Hemisphere cut"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 12,
+        "category": "u12_t4_A",
+        "category_label": "Frustum · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      }
+    ],
+    "B": [
+      {
+        "id": "u12_t4_B_6e7c56cf",
+        "question": "Frustum: radii 14 & 7 cm, height 12 cm. Volume ≈ ?",
+        "options": [
+          "2463 cm³",
+          "4310.27 cm³",
+          "8620.54 cm³",
+          "12 cm³"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t4_B",
+        "category_label": "Frustum · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t4_B_487f725c",
+        "question": "Frustum: radii 10 & 5 cm, height 8 cm. Volume ≈ ?",
+        "options": [
+          "838 cm³",
+          "8 cm³",
+          "1466.08 cm³",
+          "2932.16 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t4_B",
+        "category_label": "Frustum · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t4_B_9336c5dd",
+        "question": "Frustum: radii 7 & 3 cm, height 10 cm. Volume ≈ ?",
+        "options": [
+          "513 cm³",
+          "1654.58 cm³",
+          "827.29 cm³",
+          "10 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t4_B",
+        "category_label": "Frustum · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      }
+    ],
+    "C": [
+      {
+        "id": "u12_t4_C_02f33135",
+        "question": "Metallic sphere melted and recast into cylinder. Which is true?",
+        "options": [
+          "Shape irrelevant",
+          "Volume stays same (conservation)",
+          "Volume doubles",
+          "SA unchanged"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t4_C",
+        "category_label": "Frustum · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      }
+    ],
+    "D": [
+      {
+        "id": "u12_t4_D_051e82f8",
+        "question": "Two similar solids; linear scale factor 2. Volume ratio = ?",
+        "options": [
+          "8",
+          "8 (alt)",
+          "4",
+          "2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t4_D",
+        "category_label": "Frustum · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t4_D_99b93cea",
+        "question": "Two similar solids; linear scale factor 3. Volume ratio = ?",
+        "options": [
+          "6",
+          "3",
+          "9",
+          "27"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 12,
+        "category": "u12_t4_D",
+        "category_label": "Frustum · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      }
+    ],
+    "E": [
+      {
+        "id": "u12_t4_E_4f24ed1f",
+        "question": "Bucket (frustum): top r = 10, bottom r = 5, depth 8 cm. Capacity ≈ ?",
+        "options": [
+          "733.04 cm³",
+          "2513 cm³",
+          "1466.08 cm³",
+          "5 cm³"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t4_E",
+        "category_label": "Frustum · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t4_E_6ae09494",
+        "question": "Bucket (frustum): top r = 14, bottom r = 7, depth 12 cm. Capacity ≈ ?",
+        "options": [
+          "4310.27 cm³",
+          "2155.135 cm³",
+          "7389 cm³",
+          "7 cm³"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t4_E",
+        "category_label": "Frustum · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t4_E_ac16ddb6",
+        "question": "Bucket (frustum): top r = 7, bottom r = 3, depth 10 cm. Capacity ≈ ?",
+        "options": [
+          "1539 cm³",
+          "413.645 cm³",
+          "4 cm³",
+          "827.29 cm³"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 12,
+        "category": "u12_t4_E",
+        "category_label": "Frustum · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 12,
+    "topic_id": 4
+  }
+}

@@ -8,6 +8,174 @@ import harshit_class10_units as h10u
 
 # Each unit may define ordered sections with markdown body (plain + Unicode math).
 UNIT_GUIDES: dict[int, dict[str, Any]] = {
+    1: {
+        "title": "Real Numbers — Unit Guide",
+        "subtitle": "NCERT Chapter 1 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 1 — Real Numbers** revisits numbers you know from Class 9 and goes deeper into **why**
+prime factorisation works, how **HCF and LCM** connect, and how we **prove** that numbers like **√2**
+are **irrational**.
+
+**Real-life idea:**  
+Two bells ring every **12** and **18** seconds. When will they ring together again? That “meet again”
+time is the **LCM**. If you split a rope into equal pieces with **no leftover**, the piece length is a
+**factor** — related to **HCF**.
+
+**The big ideas:**
+
+> 1. Every composite number breaks into **primes** in only **one way** (Fundamental Theorem of Arithmetic).  
+> 2. **HCF × LCM = product** (for two numbers) links greatest and least common multiples.  
+> 3. Some numbers **cannot** be written as fractions — we prove that with **contradiction**.
+
+This chapter builds the **logic and factor tools** used all year in algebra and number questions.
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Prime factorisation & FTA 🔢
+
+- **Prime** = exactly two factors (2, 3, 5, 7, …)  
+- **Composite** = more than two factors (4, 6, 12, …)  
+- **Prime factor tree** → write as product of powers of primes  
+- **FTA:** every integer **> 1** has a **unique** prime factorisation (order does not matter)
+
+**Example:** `360 = 2³ × 3² × 5`
+
+---
+
+### 2. HCF and LCM 🔗
+
+- **HCF** (Highest Common Factor) = largest number dividing **both**  
+- **LCM** (Least Common Multiple) = smallest number divisible by **both**  
+- From prime forms: take **lowest** powers for HCF, **highest** powers for LCM  
+- **Key link:** **HCF(a, b) × LCM(a, b) = a × b** (for two positive integers)
+
+---
+
+### 3. Irrational numbers ∞
+
+- **Rational** = p/q where p, q are integers, q ≠ 0  
+- **Irrational** = **not** rational (e.g. √2, √3, π)  
+- **Theorem 1.2:** If **p** is prime and **p** divides **a²**, then **p** divides **a**  
+- **Proof by contradiction:** assume √p is rational → show it leads to an impossible situation
+
+---
+
+### 4. Rationals & irrationals together ➕
+
+- **√2, √3, √5** are irrational (standard proofs)  
+- **5 − √3**, **3 + 2√2** — classify or prove irrational  
+- **Sum/product rules:**  
+  - rational ± irrational → **irrational**  
+  - non-zero rational × irrational → **irrational**
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **1.1 Introduction** | Euclid’s division lemma (revision); primes & composites |
+| **1.2 Fundamental Theorem of Arithmetic** | Prime factorisation; uniqueness |
+| **1.3 Revisiting Irrational Numbers** | Contradiction proofs; √2, √3 |
+| **1.4 Summary** | HCF, LCM, FTA, irrationality |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Prime-factorise and use **FTA** in reasoning  
+2. Find **HCF** and **LCM** (two or three numbers)  
+3. Use **HCF × LCM = product**  
+4. Explain **rational vs irrational** and start a **contradiction proof**  
+5. Prove **√p** is irrational when **p** is prime  
+
+**Comes next:** **Unit 2 — Polynomials** (expressions in x; zeroes).
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Prime factorisation
+
+Write **n** as a product of primes with powers:
+
+`n = p₁^a₁ × p₂^a₂ × …`
+
+---
+
+### HCF and LCM from prime forms
+
+| | Rule |
+|--|------|
+| **HCF** | Take each prime with the **smaller** exponent |
+| **LCM** | Take each prime with the **larger** exponent |
+
+---
+
+### Two-number link
+
+**HCF(a, b) × LCM(a, b) = a × b**
+
+(For **three** numbers, find HCF/LCM step by step — no single product formula like above.)
+
+---
+
+### Irrationality proof pattern (√p, p prime)
+
+1. Assume **√p = a/b** in lowest terms (a, b integers, b ≠ 0)  
+2. Square → **pb² = a²** → **p divides a²** → **p divides a**  
+3. Write **a = pc**, substitute → **p divides b**  
+4. **Contradiction:** both a and b had **p** as factor — not lowest terms  
+
+---
+
+### Quick reference
+
+```
+Prime        → exactly 2 factors
+FTA          → unique prime factorisation
+HCF × LCM    → a × b (two numbers)
+√p irrational → p prime, contradiction proof
+rational ± irrational → irrational
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Prime vs composite; factor tree for 360 | 15 min |
+| 2 | HCF & LCM from prime forms + product rule | 25 min |
+| 3 | “Meet again” LCM word problem (bells, buses) | 15 min |
+| 4 | Rational vs irrational — examples | 15 min |
+| 5 | Walk through √2 proof on paper together | 25 min |
+| 6 | Quick check: HCF(96, 404) style question | 15 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- Draw **factor trees** — avoids arithmetic slips.  
+- For HCF/LCM, **prime form first** is safer than listing all factors.  
+- In irrational proofs, say **“Suppose √2 = a/b in lowest terms”** every time.  
+- Board questions often combine **FTA** with “find the HCF/LCM of …”.
+
+Then open **Week Setup**, pick all four topics at levels B–C, and start **Practice**.
+
+**One sentence for Harshit:**
+
+> *Break numbers into primes, link HCF and LCM, and use contradiction to show roots like √2 cannot be fractions.*
+""",
+            },
+        ],
+    },
     2: {
         "title": "Polynomials — Unit Guide",
         "subtitle": "NCERT Chapter 2 · Read together before practice",
@@ -424,6 +592,193 @@ Then open **Week Setup**, pick all four topics at levels B–C, and start **Prac
 
 > *Two rules, two unknowns — find the one (x, y) that makes both true, or see from the graph
 > whether the lines meet, run parallel, or are the same line.*
+""",
+            },
+        ],
+    },
+    4: {
+        "title": "Quadratic Equations — Unit Guide",
+        "subtitle": "NCERT Chapter 4 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 4 — Quadratic Equations** is about solving equations of the form **ax² + bx + c = 0** where **a ≠ 0**.
+
+**Connection to Unit 2:** Finding **roots** of a quadratic equation is the same as finding **zeroes** of the
+quadratic polynomial **ax² + bx + c**.
+
+**Real-life idea:**  
+A rectangular garden has area **48 m²**. If the length is **2 m more** than the width, what are the
+dimensions? You get a quadratic in the width — that is what this chapter teaches you to solve.
+
+**Standard form:** **ax² + bx + c = 0** (a, b, c real; **a ≠ 0**)
+
+**The big questions:**
+
+> 1. Is a given value a **root**?  
+> 2. Solve by **factorisation** when it splits nicely  
+> 3. Solve using the **quadratic formula** when factorisation is hard  
+> 4. How many **real roots**? (**Discriminant** Δ = b² − 4ac)
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Standard form & roots 🎯
+
+- Identify **a, b, c** in **ax² + bx + c = 0**  
+- **Root** = value of x that makes the equation **true**  
+- Check a root by **substitution**  
+- At most **two** roots (degree 2)  
+- Build equation from **sum/product of roots** (links to Unit 2)
+
+---
+
+### 2. Factorisation method 🧩
+
+- Rearrange to **ax² + bx + c = 0** if needed  
+- **Split middle term:** find two numbers with **sum = b**, **product = ac**  
+- Write **(x + p)(x + q) = 0** → roots **−p, −q**  
+- Take out **common factor** first when possible  
+
+**Example:** `x² − 5x + 6 = 0` → `(x − 2)(x − 3) = 0` → **x = 2, 3**
+
+---
+
+### 3. Quadratic formula √
+
+When factorisation is awkward, use:
+
+**x = (−b ± √(b² − 4ac)) / 2a**
+
+Always compute **Δ = b² − 4ac** first.
+
+---
+
+### 4. Discriminant & nature of roots Δ
+
+| Δ = b² − 4ac | Nature of roots |
+|--------------|-----------------|
+| **Δ > 0** | Two **distinct real** roots |
+| **Δ = 0** | Two **equal** real roots |
+| **Δ < 0** | **No real** roots |
+
+**Find k** so that roots are equal / distinct / none — set **Δ = 0**, **Δ > 0**, or **Δ < 0**.
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **4.1 Introduction** | Standard form; what is a quadratic equation |
+| **4.2 Solution by Factorisation** | Splitting middle term; zero product property |
+| **4.3 Nature of Roots** | Discriminant; quadratic formula |
+| **4.4 Summary** | Methods and Δ |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Write equations in **standard form** and verify roots  
+2. **Factorise** and solve when factors are nice integers  
+3. Use the **quadratic formula** with correct Δ  
+4. State **nature of roots** from Δ  
+5. Find **k** for equal / distinct / no real roots  
+6. Solve simple **word problems** (area, speed, numbers)  
+
+**Builds on:** Unit 2 (zeroes, sum/product). **Comes next:** Unit 5 — AP (different type of pattern).
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Standard form
+
+**ax² + bx + c = 0**,  **a ≠ 0**
+
+---
+
+### Quadratic formula
+
+**x = (−b ± √(b² − 4ac)) / 2a**
+
+---
+
+### Discriminant
+
+**Δ = b² − 4ac**
+
+| Δ | Roots |
+|---|-------|
+| > 0 | Two distinct real |
+| = 0 | Two equal real |
+| < 0 | No real roots |
+
+---
+
+### Factorisation shortcut (monic x² + bx + c)
+
+Find **p, q** with **p + q = b** and **pq = c** → **(x + p)(x + q) = 0**
+
+---
+
+### Sum & product of roots (α, β)
+
+| | |
+|--|--|
+| **α + β** | **−b/a** |
+| **αβ** | **c/a** |
+
+Monic **x² + bx + c = 0:** sum = **−b**, product = **c**
+
+---
+
+### Equal roots condition
+
+**Δ = 0**  ⟺  **b² − 4ac = 0**
+
+---
+
+### Quick reference
+
+```
+Check root     → substitute x
+Factorise      → split middle term; ac trick
+Hard case      → quadratic formula
+Nature         → Δ first
+Equal roots    → Δ = 0, solve for unknown k
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Standard form; “is x = 3 a root?” | 15 min |
+| 2 | Factorise x² − 5x + 6 and x² + x − 6 | 25 min |
+| 3 | Quadratic formula on 2x² − 7x + 3 = 0 | 20 min |
+| 4 | Δ and nature — one example each case | 20 min |
+| 5 | Find k for equal roots (one example) | 15 min |
+| 6 | One word problem → equation → solve | 20 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- Always write **Δ = b² − 4ac** before the formula — boards give partial marks.  
+- Try **factorisation first** if c is small and roots look like integers.  
+- For **k** problems, leave equation in **ax² + bx + c = 0** with **a** involving k.  
+- Connect back to Unit 2: **roots = zeroes** of the polynomial.
+
+Then open **Week Setup**, pick all four topics at levels B–C, and start **Practice**.
+
+**One sentence for Harshit:**
+
+> *Write ax² + bx + c = 0, try to factorise, use the formula if stuck, and let Δ tell you how many real answers exist.*
 """,
             },
         ],
@@ -1357,11 +1712,554 @@ Length       → √(OP² − r²)
             },
         ],
     },
+    11: {
+        "title": "Areas Related to Circles — Unit Guide",
+        "subtitle": "NCERT Chapter 11 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 11** extends circle work from Unit 10 into **mensuration** — finding **areas** and **lengths**
+of parts of a circle: **sectors**, **arcs**, and **segments**, plus **combined figures** in board-style diagrams.
+
+**Real-life idea:**  
+A **pizza slice** is a sector. The **crust edge** of that slice is an arc. The **curved bite** between
+chord and arc is a **segment**.
+
+**The big ideas:**
+
+> 1. **Sector area** = fraction of full circle: (θ/360) × πr²  
+> 2. **Arc length** = fraction of circumference: (θ/360) × 2πr  
+> 3. **Segment** = sector minus the triangle formed by two radii and the chord
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Sector Area 🥧
+
+**Area = (θ/360) × πr²** where θ is the central angle in degrees.
+
+---
+
+### 2. Arc Length 〰️
+
+**Arc = (θ/360) × 2πr**  
+**Perimeter of sector** = arc + 2r
+
+---
+
+### 3. Segment Area 🌙
+
+**Minor segment** = sector area − area of Δ formed by two radii  
+Equilateral triangle in circle: special case in NCERT examples.
+
+---
+
+### 4. Combined Circle Figures 🔵
+
+Square with corner quadrants, rings (annulus), brooch/wheel designs — add/subtract areas.
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **11.1 Perimeter and Area of a Circle** | Review; semicircle, quadrant |
+| **11.2 Areas of Sector and Segment** | Formulae and examples |
+| **11.3 Areas of Combinations of Plane Figures** | Shaded regions |
+| **11.4 Summary** | |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Find **sector area** and **arc length**  
+2. Compute **segment area** (minor/major)  
+3. Solve **combined figure** shading problems  
+4. Use **π ≈ 22/7** or calculator consistently  
+
+**Comes next:** **Unit 12 — Surface Areas and Volumes**.
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Circle review
+
+**Area = πr²**  
+**Circumference = 2πr**
+
+---
+
+### Sector (angle θ°)
+
+**Area = (θ/360) × πr²**  
+**Arc length = (θ/360) × 2πr**
+
+---
+
+### Segment
+
+**Segment = sector − triangle** (two radii + chord)
+
+---
+
+### Annulus (ring)
+
+**Area = π(R² − r²)**
+
+---
+
+### Quick reference
+
+```
+Semicircle area     = πr²/2
+Quadrant area       = πr²/4
+Sector perimeter    = arc + 2r
+Shaded region       = add/subtract known parts
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Review πr² and 2πr | 10 min |
+| 2 | Sector area: r = 14, θ = 90° | 20 min |
+| 3 | Arc length and sector perimeter | 15 min |
+| 4 | Segment = sector − triangle | 20 min |
+| 5 | Square minus four quadrants | 20 min |
+| 6 | Ring / brooch combined figure | 15 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- Always mark **θ** at the **centre**, not on the circumference.  
+- For segments, draw the **triangle** first — it unlocks the subtraction.  
+- Combined figures: list **parts to add** and **parts to subtract**.
+
+**One sentence for Harshit:**
+
+> *Sector and arc are fractions of the full circle; a segment is what's left after removing the triangle from a sector.*
+""",
+            },
+        ],
+    },
+    12: {
+        "title": "Surface Areas and Volumes — Unit Guide",
+        "subtitle": "NCERT Chapter 12 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 12** covers **3D mensuration** — surface area and volume of **cylinder**, **cone**, **sphere**,
+and **hemisphere**, plus **combinations** (toys, tanks, buckets) and **frustum** ideas from NCERT.
+
+**Real-life idea:**  
+A **temple gopuram** (cone on cylinder), a **gulab jamun** (sphere), a **bucket** (frustum) — same formulas, different shapes.
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Cylinder, Cone & Sphere Formulas 📐
+
+| Solid | CSA / curved | Volume |
+|-------|--------------|--------|
+| Cylinder | 2πrh | πr²h |
+| Cone | πrl | (1/3)πr²h |
+| Sphere | 4πr² | (4/3)πr³ |
+| Hemisphere | 2πr² | (2/3)πr³ |
+
+---
+
+### 2. Combination Surface Area 📦
+
+Only **visible** faces count — exclude **hidden** joins (e.g. flat face where hemisphere sits on cylinder).
+
+---
+
+### 3. Combination Volume 🧊
+
+**Add** volumes of parts (or subtract for hollow solids).
+
+---
+
+### 4. Frustum & Board Applications 🪣
+
+Frustum = cone with top sliced off. **Conversion** problems: melt and recast ⇒ volume conserved.
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **12.1 Introduction** | Review solids |
+| **12.2 Surface Area of a Combination of Solids** | Toys, vessels |
+| **12.3 Volume of a Combination of Solids** | Added volumes |
+| **12.4 Conversion of Solid from One Shape to Another** | Same volume |
+| **12.5 Frustum of a Cone** | Bucket problems |
+| **12.6 Summary** | |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Recall **CSA/TSA/volume** for standard solids  
+2. Find **SA of combined solids** (exclude hidden faces)  
+3. Add/subtract **volumes**; handle **hollow** objects  
+4. Use **volume conservation** in conversion problems  
+
+**Comes next:** **Unit 13 — Statistics**.
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Cylinder (radius r, height h)
+
+**CSA = 2πrh**  
+**TSA = 2πr(r + h)**  
+**Volume = πr²h**
+
+---
+
+### Cone (slant height l)
+
+**CSA = πrl**  
+**Volume = (1/3)πr²h**  
+**l² = r² + h²**
+
+---
+
+### Sphere / Hemisphere
+
+**Sphere SA = 4πr²**, **V = (4/3)πr³**  
+**Hemisphere CSA = 2πr²**, curved only; add **πr²** base for TSA
+
+---
+
+### Frustum (radii r₁, r₂, height h)
+
+**V = (1/3)πh(r₁² + r₁r₂ + r₂²)**
+
+---
+
+### Quick reference
+
+```
+Combination SA  → count visible faces only
+Combination V   → add (or outer − inner)
+Melt & recast   → volume unchanged
+Similar solids  → volume ratio = (linear scale)³
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Cylinder CSA and volume | 20 min |
+| 2 | Cone and hemisphere | 20 min |
+| 3 | Sphere SA and volume | 15 min |
+| 4 | Toy: cylinder + hemisphere SA | 25 min |
+| 5 | Combined volume + hollow cylinder | 20 min |
+| 6 | Frustum bucket (intro) | 15 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- Draw the solid and **colour the faces you count** for SA.  
+- **Hidden circular faces** are the usual trap in combination SA.  
+- Always check **units**: cm² vs cm³.
+
+**One sentence for Harshit:**
+
+> *Surface area counts faces you can paint; volume counts space inside — for combos, add parts but don't double-count joined faces.*
+""",
+            },
+        ],
+    },
+    13: {
+        "title": "Statistics — Unit Guide",
+        "subtitle": "NCERT Chapter 13 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 13** deals with **grouped data** — large surveys where values fall in **class intervals**.
+You learn **mean**, **median**, and **mode** for grouped tables, plus **ogives** (cumulative frequency graphs).
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Mean of Grouped Data 📊
+
+**Direct:** x̄ = Σfixi / Σfi (xi = class mark)  
+**Assumed mean** and **step-deviation** shorten arithmetic.
+
+---
+
+### 2. Median 📈
+
+**Median class:** cf first reaches n/2  
+**Median = l + ((n/2 − cf)/f) × h**
+
+---
+
+### 3. Mode 🔝
+
+**Modal class:** highest frequency  
+**Mode = l + ((f1−f0)/(2f1−f0−f2)) × h**
+
+---
+
+### 4. Ogive & Cumulative Frequency 📉
+
+**Less-than ogive** and **more-than ogive** — median from intersection.
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **13.1 Introduction** | Need for grouped data |
+| **13.2 Mean of Grouped Data** | Direct, assumed mean, step-deviation |
+| **13.3 Mode of Grouped Data** | Formula |
+| **13.4 Median of Grouped Data** | Formula |
+| **13.5 Graphical Representation** | Ogive |
+| **13.6 Summary** | |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Find **mean** by direct or shortcut methods  
+2. Locate **median class** and compute **median**  
+3. Find **mode** from grouped data  
+4. Draw/read **ogive** for median  
+
+**Comes next:** **Unit 14 — Probability**.
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Class mark
+
+**xi = (lower limit + upper limit) / 2**
+
+---
+
+### Mean (direct)
+
+**x̄ = Σfixi / Σfi**
+
+---
+
+### Median
+
+**Median = l + ((n/2 − cf)/f) × h**  
+l = lower of median class, cf = cf before median class, f = frequency of median class
+
+---
+
+### Mode
+
+**Mode = l + ((f1−f0)/(2f1−f0−f2)) × h**
+
+---
+
+### Empirical relation
+
+**Mode ≈ 3 Median − 2 Mean**
+
+---
+
+### Quick reference
+
+```
+n     = Σfi
+n/2   → median position
+Modal class → max fi
+Ogive intersection → median graphically
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Class marks from intervals | 15 min |
+| 2 | Mean — direct method table | 20 min |
+| 3 | Median class and formula | 25 min |
+| 4 | Mode formula walk-through | 20 min |
+| 5 | Less-than ogive | 20 min |
+| 6 | Mixed table → mean, median, mode | 20 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- Write **cf column** before median — it prevents errors.  
+- **f0** and **f2** are frequencies of classes **before** and **after** modal class.  
+- Label axes clearly on ogives: **upper limit** vs **cf**.
+
+**One sentence for Harshit:**
+
+> *For grouped data, mean uses class marks; median and mode need the right class first, then the formula.*
+""",
+            },
+        ],
+    },
+    14: {
+        "title": "Probability — Unit Guide",
+        "subtitle": "NCERT Chapter 14 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 14** introduces **theoretical (classical) probability** for equally likely outcomes —
+dice, coins, cards, bags of balls — and **complementary events**.
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Classical Probability 🎯
+
+**P(E) = Number of favourable outcomes / Total number of outcomes**  
+**0 ≤ P(E) ≤ 1**
+
+---
+
+### 2. Complementary Events ↔️
+
+**E'** (not E): **P(E') = 1 − P(E)**  
+Useful for "at least one" problems.
+
+---
+
+### 3. Cards & Dice 🃏
+
+Standard deck: **52** cards.  
+Two dice: **36** equally likely ordered pairs.
+
+---
+
+### 4. Mixed Probability 🎲
+
+Bags with coloured balls, coins, simple geometric probability.
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **14.1 Probability — A Theoretical Approach** | Classical definition |
+| **14.2 Summary** | |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Compute **P(E)** for equally likely outcomes  
+2. Use **complement** when direct counting is harder  
+3. Solve **dice, coin, card, bag** problems  
+4. Stay within **[0, 1]** and justify **fair** experiments  
+
+**Comes next:** **Unit 15 — Mixed Revision & Exam Prep**.
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Classical probability
+
+**P(E) = favourable / total** (equally likely)
+
+---
+
+### Complement
+
+**P(E') = 1 − P(E)**
+
+---
+
+### Certain and impossible
+
+**P(certain) = 1**  
+**P(impossible) = 0**
+
+---
+
+### Standard experiments
+
+| Experiment | Total outcomes |
+|------------|----------------|
+| One die | 6 |
+| Two dice | 36 |
+| One coin | 2 |
+| One card | 52 |
+
+---
+
+### Quick reference
+
+```
+P(E) + P(not E) = 1
+"At least one"  → often use complement
+Without replacement → second draw total decreases
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Favourable vs total outcomes | 15 min |
+| 2 | Die and coin examples | 15 min |
+| 3 | Complement: P(not 6) = 5/6 | 15 min |
+| 4 | One card from deck | 20 min |
+| 5 | Bag of balls | 20 min |
+| 6 | Two dice sum (selected sums) | 15 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- **List sample space** for two dice when unsure.  
+- **"Not E"** is often faster than adding many cases.  
+- Cards: **4 suits × 13 ranks = 52**.
+
+**One sentence for Harshit:**
+
+> *Probability is favourable over total when outcomes are equally likely — and "not happening" is 1 minus the probability it happens.*
+""",
+            },
+        ],
+    },
 }
 
 
 # Bump a unit's version when its guide content changes so returning users land on the guide tab.
-GUIDE_VERSIONS: dict[int, int] = {2: 1, 3: 1, 5: 1, 6: 1, 7: 1, 8: 1, 9: 1, 10: 1}
+GUIDE_VERSIONS: dict[int, int] = {1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1, 8: 1, 9: 1, 10: 1, 11: 1, 12: 1, 13: 1, 14: 1}
 
 
 def unit_guide_available(unit_id: int) -> bool:

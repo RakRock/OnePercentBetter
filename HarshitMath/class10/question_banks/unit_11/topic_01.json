@@ -1,0 +1,1177 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u11_t1_A_81ebccbc",
+        "question": "Area of a sector of angle θ and radius r:",
+        "options": [
+          "2πr × θ",
+          "πr² only",
+          "(θ/360) × πr²",
+          "θ × πr²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 11,
+        "category": "u11_t1_A",
+        "category_label": "Sector · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "B": [
+      {
+        "id": "u11_t1_B_1e6419c1",
+        "question": "Sector: r = 35 cm, θ = 45°. Area ≈ ?",
+        "options": [
+          "481.06 cm²",
+          "962.12 cm²",
+          "240.53 cm²",
+          "1225 cm²"
+        ],
+        "answer": 0,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_794177d7",
+        "question": "Sector: r = 14 cm, θ = 30°. Area ≈ ?",
+        "options": [
+          "51.31 cm²",
+          "25.655 cm²",
+          "102.62 cm²",
+          "196 cm²"
+        ],
+        "answer": 0,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_bcae3a5c",
+        "question": "Sector: r = 7 cm, θ = 180°. Area ≈ ?",
+        "options": [
+          "76.97 cm²",
+          "153.94 cm²",
+          "38.485 cm²",
+          "49 cm²"
+        ],
+        "answer": 0,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_63b9778b",
+        "question": "Sector: r = 21 cm, θ = 45°. Area ≈ ?",
+        "options": [
+          "86.59 cm²",
+          "173.18 cm²",
+          "346.36 cm²",
+          "441 cm²"
+        ],
+        "answer": 1,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_0dbdf0ef",
+        "question": "Sector: r = 28 cm, θ = 180°. Area ≈ ?",
+        "options": [
+          "784 cm²",
+          "1231.5 cm²",
+          "615.75 cm²",
+          "2463.0 cm²"
+        ],
+        "answer": 1,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_6987413f",
+        "question": "Sector: r = 28 cm, θ = 30°. Area ≈ ?",
+        "options": [
+          "410.5 cm²",
+          "205.25 cm²",
+          "784 cm²",
+          "102.625 cm²"
+        ],
+        "answer": 1,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_5ab38fa2",
+        "question": "Sector: r = 35 cm, θ = 30°. Area ≈ ?",
+        "options": [
+          "320.7 cm²",
+          "1225 cm²",
+          "641.4 cm²",
+          "160.35 cm²"
+        ],
+        "answer": 0,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_af2a9665",
+        "question": "Sector: r = 14 cm, θ = 120°. Area ≈ ?",
+        "options": [
+          "410.5 cm²",
+          "102.625 cm²",
+          "196 cm²",
+          "205.25 cm²"
+        ],
+        "answer": 3,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_b36cab10",
+        "question": "Sector: r = 35 cm, θ = 180°. Area ≈ ?",
+        "options": [
+          "962.115 cm²",
+          "1924.23 cm²",
+          "1225 cm²",
+          "3848.46 cm²"
+        ],
+        "answer": 1,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_0684aaf2",
+        "question": "Sector: r = 21 cm, θ = 30°. Area ≈ ?",
+        "options": [
+          "57.725 cm²",
+          "115.45 cm²",
+          "441 cm²",
+          "230.9 cm²"
+        ],
+        "answer": 1,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_910de8e3",
+        "question": "Sector: r = 14 cm, θ = 45°. Area ≈ ?",
+        "options": [
+          "76.97 cm²",
+          "196 cm²",
+          "38.485 cm²",
+          "153.94 cm²"
+        ],
+        "answer": 0,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_2db6f687",
+        "question": "Sector: r = 7 cm, θ = 60°. Area ≈ ?",
+        "options": [
+          "12.83 cm²",
+          "25.66 cm²",
+          "49 cm²",
+          "51.32 cm²"
+        ],
+        "answer": 1,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_7309a6b9",
+        "question": "Sector: r = 35 cm, θ = 60°. Area ≈ ?",
+        "options": [
+          "320.705 cm²",
+          "641.41 cm²",
+          "1225 cm²",
+          "1282.82 cm²"
+        ],
+        "answer": 1,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_9de89aea",
+        "question": "Sector: r = 14 cm, θ = 90°. Area ≈ ?",
+        "options": [
+          "153.94 cm²",
+          "196 cm²",
+          "76.97 cm²",
+          "307.88 cm²"
+        ],
+        "answer": 0,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_B_a72892dc",
+        "question": "Sector: r = 35 cm, θ = 90°. Area ≈ ?",
+        "options": [
+          "1924.22 cm²",
+          "962.11 cm²",
+          "481.055 cm²",
+          "1225 cm²"
+        ],
+        "answer": 1,
+        "explanation": "(θ/360)πr².",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t1_B",
+        "category_label": "Sector · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "C": [
+      {
+        "id": "u11_t1_C_4dc14c14",
+        "question": "Sector area ≈ 51.31 cm², r = 7 cm. Angle θ ≈ ?",
+        "options": [
+          "150°",
+          "90°",
+          "180°",
+          "120°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_6c011a5f",
+        "question": "Sector area ≈ 641.41 cm², r = 35 cm. Angle θ ≈ ?",
+        "options": [
+          "90°",
+          "60°",
+          "180°",
+          "60° (alt)"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_607dcd35",
+        "question": "Sector area ≈ 25.66 cm², r = 7 cm. Angle θ ≈ ?",
+        "options": [
+          "60° (alt)",
+          "180°",
+          "90°",
+          "60°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_40b3117c",
+        "question": "Sector area ≈ 19.24 cm², r = 7 cm. Angle θ ≈ ?",
+        "options": [
+          "45°",
+          "180°",
+          "75°",
+          "90°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_b9481e95",
+        "question": "Sector area ≈ 320.7 cm², r = 35 cm. Angle θ ≈ ?",
+        "options": [
+          "30°",
+          "60°",
+          "90°",
+          "180°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_8b6335fe",
+        "question": "Sector area ≈ 76.97 cm², r = 14 cm. Angle θ ≈ ?",
+        "options": [
+          "75°",
+          "90°",
+          "45°",
+          "180°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_e6c9b7cd",
+        "question": "Sector area ≈ 1282.82 cm², r = 35 cm. Angle θ ≈ ?",
+        "options": [
+          "90°",
+          "150°",
+          "180°",
+          "120°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_0ba23615",
+        "question": "Sector area ≈ 38.48 cm², r = 7 cm. Angle θ ≈ ?",
+        "options": [
+          "180°",
+          "90°",
+          "90° (alt)",
+          "120°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_d933f61d",
+        "question": "Sector area ≈ 153.94 cm², r = 14 cm. Angle θ ≈ ?",
+        "options": [
+          "180°",
+          "90° (alt)",
+          "90°",
+          "120°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_7db278d1",
+        "question": "Sector area ≈ 307.88 cm², r = 28 cm. Angle θ ≈ ?",
+        "options": [
+          "180°",
+          "75°",
+          "45°",
+          "90°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_1ff9626c",
+        "question": "Sector area ≈ 692.72 cm², r = 21 cm. Angle θ ≈ ?",
+        "options": [
+          "180°",
+          "180° (alt)",
+          "210°",
+          "90°"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_0f36a84d",
+        "question": "Sector area ≈ 230.91 cm², r = 21 cm. Angle θ ≈ ?",
+        "options": [
+          "60° (alt)",
+          "60°",
+          "180°",
+          "90°"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_91a5e343",
+        "question": "Sector area ≈ 12.83 cm², r = 7 cm. Angle θ ≈ ?",
+        "options": [
+          "60°",
+          "180°",
+          "30°",
+          "90°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_34aadb88",
+        "question": "Sector area ≈ 205.25 cm², r = 28 cm. Angle θ ≈ ?",
+        "options": [
+          "60°",
+          "180°",
+          "90°",
+          "30°"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_C_8012f52f",
+        "question": "Sector area ≈ 205.25 cm², r = 14 cm. Angle θ ≈ ?",
+        "options": [
+          "180°",
+          "150°",
+          "120°",
+          "90°"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t1_C",
+        "category_label": "Sector · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "D": [
+      {
+        "id": "u11_t1_D_5f29b937",
+        "question": "Area of semicircle, radius 14 cm ≈ ?",
+        "options": [
+          "102.63 cm²",
+          "196 cm²",
+          "615.76 cm²",
+          "307.88 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_edd91e68",
+        "question": "Area of semicircle, radius 7 cm ≈ ?",
+        "options": [
+          "153.94 cm²",
+          "49 cm²",
+          "19.24 cm²",
+          "76.97 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_f46bc236",
+        "question": "Area of semicircle, radius 21 cm ≈ ?",
+        "options": [
+          "441 cm²",
+          "692.72 cm²",
+          "1385.44 cm²",
+          "230.91 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_00707519",
+        "question": "Area of semicircle, radius 35 cm ≈ ?",
+        "options": [
+          "1225 cm²",
+          "1924.23 cm²",
+          "320.7 cm²",
+          "3848.46 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_616cc91b",
+        "question": "Area of semicircle, radius 7 cm ≈ ?",
+        "options": [
+          "49 cm²",
+          "76.97 cm²",
+          "153.94 cm²",
+          "38.48 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_8bdfa054",
+        "question": "Area of semicircle, radius 7 cm ≈ ?",
+        "options": [
+          "25.66 cm²",
+          "49 cm²",
+          "153.94 cm²",
+          "76.97 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_82ddc09a",
+        "question": "Area of semicircle, radius 14 cm ≈ ?",
+        "options": [
+          "307.88 cm²",
+          "615.76 cm²",
+          "153.94 cm²",
+          "196 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_2f53b8f9",
+        "question": "Area of semicircle, radius 28 cm ≈ ?",
+        "options": [
+          "2463.0 cm²",
+          "307.88 cm²",
+          "784 cm²",
+          "1231.5 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_41dfeb55",
+        "question": "Area of semicircle, radius 28 cm ≈ ?",
+        "options": [
+          "1231.5 cm²",
+          "205.25 cm²",
+          "784 cm²",
+          "2463.0 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_cbaf5dfb",
+        "question": "Area of semicircle, radius 35 cm ≈ ?",
+        "options": [
+          "1924.23 cm²",
+          "962.11 cm²",
+          "3848.46 cm²",
+          "1225 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_1d2ac394",
+        "question": "Area of semicircle, radius 21 cm ≈ ?",
+        "options": [
+          "441 cm²",
+          "692.72 cm²",
+          "1385.44 cm²",
+          "115.45 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_17708d9f",
+        "question": "Area of semicircle, radius 28 cm ≈ ?",
+        "options": [
+          "784 cm²",
+          "1231.5 cm² (alt)",
+          "2463.0 cm²",
+          "1231.5 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_88702f31",
+        "question": "Area of semicircle, radius 14 cm ≈ ?",
+        "options": [
+          "205.25 cm²",
+          "196 cm²",
+          "307.88 cm²",
+          "615.76 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_4fe55148",
+        "question": "Area of semicircle, radius 35 cm ≈ ?",
+        "options": [
+          "3848.46 cm²",
+          "481.06 cm²",
+          "1924.23 cm²",
+          "1225 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_D_bf28503d",
+        "question": "Area of semicircle, radius 28 cm ≈ ?",
+        "options": [
+          "1231.5 cm²",
+          "784 cm²",
+          "410.5 cm²",
+          "2463.0 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t1_D",
+        "category_label": "Sector · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "E": [
+      {
+        "id": "u11_t1_E_66a08278",
+        "question": "Area of quadrant, radius 21 cm ≈ ?",
+        "options": [
+          "461.81 cm²",
+          "692.72 cm²",
+          "346.36 cm²",
+          "21 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_55e30ff7",
+        "question": "Area of quadrant, radius 21 cm ≈ ?",
+        "options": [
+          "692.72 cm²",
+          "21 cm²",
+          "346.36 cm²",
+          "346.36 cm² (alt)"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_34ce295c",
+        "question": "Area of quadrant, radius 35 cm ≈ ?",
+        "options": [
+          "1924.22 cm²",
+          "962.11 cm² (alt)",
+          "962.11 cm²",
+          "35 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_29f99c41",
+        "question": "Area of quadrant, radius 14 cm ≈ ?",
+        "options": [
+          "307.88 cm²",
+          "153.94 cm² (alt)",
+          "153.94 cm²",
+          "14 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_67b1740d",
+        "question": "Area of quadrant, radius 14 cm ≈ ?",
+        "options": [
+          "153.94 cm²",
+          "307.88 cm²",
+          "51.31 cm²",
+          "14 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_aab7730d",
+        "question": "Area of quadrant, radius 28 cm ≈ ?",
+        "options": [
+          "615.75 cm²",
+          "1231.5 cm²",
+          "28 cm²",
+          "821.0 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_8dc12307",
+        "question": "Area of quadrant, radius 14 cm ≈ ?",
+        "options": [
+          "307.88 cm²",
+          "14 cm²",
+          "153.94 cm²",
+          "102.63 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_3e523a94",
+        "question": "Area of quadrant, radius 28 cm ≈ ?",
+        "options": [
+          "28 cm²",
+          "615.75 cm²",
+          "1231.5 cm²",
+          "205.25 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_8333f9f0",
+        "question": "Area of quadrant, radius 28 cm ≈ ?",
+        "options": [
+          "615.75 cm²",
+          "28 cm²",
+          "1231.5 cm²",
+          "410.5 cm²"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_e58866aa",
+        "question": "Area of quadrant, radius 7 cm ≈ ?",
+        "options": [
+          "76.96 cm²",
+          "7 cm²",
+          "25.66 cm²",
+          "38.48 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_b5fa08e3",
+        "question": "Area of quadrant, radius 7 cm ≈ ?",
+        "options": [
+          "76.96 cm²",
+          "38.48 cm²",
+          "51.31 cm²",
+          "7 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_45ee3edf",
+        "question": "Area of quadrant, radius 35 cm ≈ ?",
+        "options": [
+          "1924.22 cm²",
+          "481.06 cm²",
+          "35 cm²",
+          "962.11 cm²"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_246a4223",
+        "question": "Area of quadrant, radius 21 cm ≈ ?",
+        "options": [
+          "173.18 cm²",
+          "21 cm²",
+          "346.36 cm²",
+          "692.72 cm²"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_9d7a59ff",
+        "question": "Area of quadrant, radius 14 cm ≈ ?",
+        "options": [
+          "76.97 cm²",
+          "153.94 cm²",
+          "14 cm²",
+          "307.88 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t1_E_80c0024e",
+        "question": "Area of quadrant, radius 28 cm ≈ ?",
+        "options": [
+          "1231.5 cm²",
+          "615.75 cm²",
+          "307.88 cm²",
+          "28 cm²"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t1_E",
+        "category_label": "Sector · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 11,
+    "topic_id": 1
+  }
+}

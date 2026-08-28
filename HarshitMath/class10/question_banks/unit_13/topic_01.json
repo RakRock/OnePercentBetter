@@ -1,0 +1,683 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u13_t1_A_b29f9c89",
+        "question": "Class mark for interval 10-20:",
+        "options": [
+          "20",
+          "30",
+          "15",
+          "10"
+        ],
+        "answer": 2,
+        "explanation": "(lower + upper)/2",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 13,
+        "category": "u13_t1_A",
+        "category_label": "Mean · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_A_a63629e1",
+        "question": "Class mark for interval 20-30:",
+        "options": [
+          "50",
+          "30",
+          "25",
+          "20"
+        ],
+        "answer": 2,
+        "explanation": "(lower + upper)/2",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 13,
+        "category": "u13_t1_A",
+        "category_label": "Mean · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_A_31aa5bd4",
+        "question": "Class mark for interval 30-40:",
+        "options": [
+          "70",
+          "30",
+          "40",
+          "35"
+        ],
+        "answer": 3,
+        "explanation": "(lower + upper)/2",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 13,
+        "category": "u13_t1_A",
+        "category_label": "Mean · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "B": [
+      {
+        "id": "u13_t1_B_95744777",
+        "question": "Grouped data: Σfixi = 635, Σfi = 23. Mean ≈ ?",
+        "options": [
+          "635",
+          "32.6",
+          "27.6",
+          "23"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_103ce237",
+        "question": "Grouped data: Σfixi = 785, Σfi = 23. Mean ≈ ?",
+        "options": [
+          "39.1",
+          "785",
+          "34.1",
+          "23"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_33606b34",
+        "question": "Grouped data: Σfixi = 720, Σfi = 24. Mean ≈ ?",
+        "options": [
+          "30.0",
+          "24",
+          "720",
+          "35.0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_ff31af22",
+        "question": "Grouped data: Σfixi = 625, Σfi = 23. Mean ≈ ?",
+        "options": [
+          "23",
+          "625",
+          "27.2",
+          "32.2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_8254c1c1",
+        "question": "Grouped data: Σfixi = 465, Σfi = 15. Mean ≈ ?",
+        "options": [
+          "31.0",
+          "465",
+          "15",
+          "36.0"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_e833981f",
+        "question": "Grouped data: Σfixi = 615, Σfi = 23. Mean ≈ ?",
+        "options": [
+          "23",
+          "31.7",
+          "615",
+          "26.7"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_540cff21",
+        "question": "Grouped data: Σfixi = 535, Σfi = 17. Mean ≈ ?",
+        "options": [
+          "535",
+          "31.5",
+          "36.5",
+          "17"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_cf217e6f",
+        "question": "Grouped data: Σfixi = 545, Σfi = 21. Mean ≈ ?",
+        "options": [
+          "26.0",
+          "21",
+          "31.0",
+          "545"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_3cb6d92b",
+        "question": "Grouped data: Σfixi = 720, Σfi = 22. Mean ≈ ?",
+        "options": [
+          "22",
+          "720",
+          "37.7",
+          "32.7"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_433fb584",
+        "question": "Grouped data: Σfixi = 625, Σfi = 19. Mean ≈ ?",
+        "options": [
+          "32.9",
+          "37.9",
+          "19",
+          "625"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_ba15b55c",
+        "question": "Grouped data: Σfixi = 690, Σfi = 22. Mean ≈ ?",
+        "options": [
+          "36.4",
+          "31.4",
+          "690",
+          "22"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_bdd7fbe9",
+        "question": "Grouped data: Σfixi = 655, Σfi = 21. Mean ≈ ?",
+        "options": [
+          "36.2",
+          "655",
+          "31.2",
+          "21"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_06d6cc71",
+        "question": "Grouped data: Σfixi = 485, Σfi = 17. Mean ≈ ?",
+        "options": [
+          "17",
+          "28.5",
+          "485",
+          "33.5"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_3625e38d",
+        "question": "Grouped data: Σfixi = 625, Σfi = 21. Mean ≈ ?",
+        "options": [
+          "21",
+          "625",
+          "29.8",
+          "34.8"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_B_6794c63a",
+        "question": "Grouped data: Σfixi = 360, Σfi = 12. Mean ≈ ?",
+        "options": [
+          "360",
+          "30.0",
+          "35.0",
+          "12"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t1_B",
+        "category_label": "Mean · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "C": [
+      {
+        "id": "u13_t1_C_e9514757",
+        "question": "Assumed mean method uses:",
+        "options": [
+          "Median class",
+          "No frequencies",
+          "Only midpoints",
+          "Assumed mean a and deviations di"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t1_C",
+        "category_label": "Mean · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "D": [
+      {
+        "id": "u13_t1_D_904b0e28",
+        "question": "Step-deviation method uses:",
+        "options": [
+          "cf only",
+          "xi only",
+          "Mode formula",
+          "ui = (xi - a)/h step widths"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t1_D",
+        "category_label": "Mean · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "E": [
+      {
+        "id": "u13_t1_E_02aff8c9",
+        "question": "Mean = 30.7; total frequency 17. Find missing f in first class ≈ ?",
+        "options": [
+          "8",
+          "1",
+          "14",
+          "6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_94932230",
+        "question": "Mean = 30.5; total frequency 30. Find missing f in first class ≈ ?",
+        "options": [
+          "1",
+          "29",
+          "9",
+          "7"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_09a1e0b8",
+        "question": "Mean = 31.4; total frequency 22. Find missing f in first class ≈ ?",
+        "options": [
+          "6",
+          "1",
+          "22",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_481a68ea",
+        "question": "Mean = 31.7; total frequency 14. Find missing f in first class ≈ ?",
+        "options": [
+          "15",
+          "3",
+          "5",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_f156cea9",
+        "question": "Mean = 27.2; total frequency 21. Find missing f in first class ≈ ?",
+        "options": [
+          "7",
+          "5",
+          "23",
+          "1"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_53b769b9",
+        "question": "Mean = 32.1; total frequency 19. Find missing f in first class ≈ ?",
+        "options": [
+          "8",
+          "1",
+          "17",
+          "6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_ac1e42ea",
+        "question": "Mean = 29.7; total frequency 18. Find missing f in first class ≈ ?",
+        "options": [
+          "17",
+          "1",
+          "7",
+          "5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_f6050451",
+        "question": "Mean = 29.2; total frequency 12. Find missing f in first class ≈ ?",
+        "options": [
+          "4",
+          "6",
+          "1",
+          "12"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_d086736e",
+        "question": "Mean = 29.4; total frequency 21. Find missing f in first class ≈ ?",
+        "options": [
+          "7",
+          "18",
+          "1",
+          "9"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_26aae811",
+        "question": "Mean = 28.5; total frequency 17. Find missing f in first class ≈ ?",
+        "options": [
+          "3",
+          "20",
+          "5",
+          "1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_17c4111d",
+        "question": "Mean = 30.3; total frequency 19. Find missing f in first class ≈ ?",
+        "options": [
+          "7",
+          "1",
+          "9",
+          "19"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_c6624616",
+        "question": "Mean = 32.8; total frequency 24. Find missing f in first class ≈ ?",
+        "options": [
+          "23",
+          "1",
+          "7",
+          "5"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_84228660",
+        "question": "Mean = 31.4; total frequency 26. Find missing f in first class ≈ ?",
+        "options": [
+          "25",
+          "8",
+          "1",
+          "6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_b7adfde6",
+        "question": "Mean = 29.1; total frequency 16. Find missing f in first class ≈ ?",
+        "options": [
+          "3",
+          "17",
+          "1",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t1_E_b535e784",
+        "question": "Mean = 34.0; total frequency 21. Find missing f in first class ≈ ?",
+        "options": [
+          "21",
+          "1",
+          "4",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t1_E",
+        "category_label": "Mean · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 13,
+    "topic_id": 1
+  }
+}

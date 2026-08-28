@@ -60,6 +60,30 @@ Fifteen units aligned with NCERT Class 10 Mathematics.
 - Topics: tangent to a circle, tangents from external point, length of tangent, applications & proofs
 - Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–9)
 
+## Unit 11 — Areas Related to Circles
+
+- PDF: `units/unit_11/jemh111.pdf` (NCERT Chapter 11)
+- Topics: sector area, arc length, segment area, combined circle figures
+- Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–10)
+
+## Unit 12 — Surface Areas and Volumes
+
+- PDF: `units/unit_12/jemh112.pdf` (NCERT Chapter 12)
+- Topics: cylinder/cone/sphere formulas, combination SA, combination volume, frustum/board apps
+- Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–11)
+
+## Unit 13 — Statistics
+
+- PDF: `units/unit_13/jemh113.pdf` (NCERT Chapter 13)
+- Topics: mean grouped data, median, mode, ogive/cumulative frequency
+- Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–12)
+
+## Unit 14 — Probability
+
+- PDF: `units/unit_14/jemh114.pdf` (NCERT Chapter 14)
+- Topics: classical probability, complementary events, cards/dice, mixed probability
+- Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–13)
+
 ## Question banks
 
 `question_banks/unit_XX/topic_YY.json` — seeded from NCERT-aligned templates:
@@ -75,6 +99,10 @@ python scripts/seed_harshit_class10_banks.py --unit 7 --per-level 15
 python scripts/seed_harshit_class10_banks.py --unit 8 --per-level 15
 python scripts/seed_harshit_class10_banks.py --unit 9 --per-level 15
 python scripts/seed_harshit_class10_banks.py --unit 10 --per-level 15
+python scripts/seed_harshit_class10_banks.py --unit 11 --per-level 15
+python scripts/seed_harshit_class10_banks.py --unit 12 --per-level 15
+python scripts/seed_harshit_class10_banks.py --unit 13 --per-level 15
+python scripts/seed_harshit_class10_banks.py --unit 14 --per-level 15
 ```
 
 ## External PDF folder (optional)

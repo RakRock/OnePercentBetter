@@ -1,0 +1,1177 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u11_t2_A_9fb240be",
+        "question": "Length of an arc subtending angle θ at centre:",
+        "options": [
+          "πr",
+          "(θ/360) × πr²",
+          "2πr",
+          "(θ/360) × 2πr"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 11,
+        "category": "u11_t2_A",
+        "category_label": "Arc · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "B": [
+      {
+        "id": "u11_t2_B_8931374d",
+        "question": "Arc length: r = 28 cm, θ = 180° ≈ ?",
+        "options": [
+          "175.92 cm",
+          "175.9 cm",
+          "87.96 cm",
+          "28 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_639698cb",
+        "question": "Arc length: r = 28 cm, θ = 120° ≈ ?",
+        "options": [
+          "117.28 cm",
+          "58.64 cm",
+          "28 cm",
+          "175.9 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_0d9f6ff6",
+        "question": "Arc length: r = 14 cm, θ = 120° ≈ ?",
+        "options": [
+          "14 cm",
+          "88.0 cm",
+          "29.32 cm",
+          "58.64 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_d2c46ca6",
+        "question": "Arc length: r = 7 cm, θ = 90° ≈ ?",
+        "options": [
+          "22.0 cm",
+          "44.0 cm",
+          "7 cm",
+          "11.0 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_a508ca17",
+        "question": "Arc length: r = 21 cm, θ = 60° ≈ ?",
+        "options": [
+          "21 cm",
+          "131.9 cm",
+          "43.98 cm",
+          "21.99 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_5e80fc58",
+        "question": "Arc length: r = 21 cm, θ = 180° ≈ ?",
+        "options": [
+          "131.94 cm",
+          "131.9 cm",
+          "21 cm",
+          "65.97 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_22f9762d",
+        "question": "Arc length: r = 7 cm, θ = 180° ≈ ?",
+        "options": [
+          "21.99 cm",
+          "43.98 cm",
+          "7 cm",
+          "44.0 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_24d46157",
+        "question": "Arc length: r = 14 cm, θ = 180° ≈ ?",
+        "options": [
+          "87.96 cm",
+          "43.98 cm",
+          "88.0 cm",
+          "14 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_a934c597",
+        "question": "Arc length: r = 7 cm, θ = 120° ≈ ?",
+        "options": [
+          "29.32 cm",
+          "14.66 cm",
+          "44.0 cm",
+          "7 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_625dda78",
+        "question": "Arc length: r = 14 cm, θ = 60° ≈ ?",
+        "options": [
+          "88.0 cm",
+          "29.32 cm",
+          "14.66 cm",
+          "14 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_3c7fb62a",
+        "question": "Arc length: r = 28 cm, θ = 60° ≈ ?",
+        "options": [
+          "28 cm",
+          "58.64 cm",
+          "29.32 cm",
+          "175.9 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_2bb838fa",
+        "question": "Arc length: r = 28 cm, θ = 90° ≈ ?",
+        "options": [
+          "43.98 cm",
+          "28 cm",
+          "175.9 cm",
+          "87.96 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_8c40d563",
+        "question": "Arc length: r = 21 cm, θ = 120° ≈ ?",
+        "options": [
+          "43.98 cm",
+          "131.9 cm",
+          "87.96 cm",
+          "21 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_569b1d77",
+        "question": "Arc length: r = 14 cm, θ = 90° ≈ ?",
+        "options": [
+          "43.98 cm",
+          "21.99 cm",
+          "14 cm",
+          "88.0 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_B_9df1fc0c",
+        "question": "Arc length: r = 21 cm, θ = 90° ≈ ?",
+        "options": [
+          "32.99 cm",
+          "21 cm",
+          "131.9 cm",
+          "65.98 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 11,
+        "category": "u11_t2_B",
+        "category_label": "Arc · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "C": [
+      {
+        "id": "u11_t2_C_71ccbebc",
+        "question": "Arc length 65.97 cm for θ = 180°. Radius ≈ ?",
+        "options": [
+          "42 cm",
+          "10 cm",
+          "21 cm",
+          "65.97 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_3e5ad3c7",
+        "question": "Arc length 29.32 cm for θ = 60°. Radius ≈ ?",
+        "options": [
+          "14 cm",
+          "29.32 cm",
+          "28 cm",
+          "56 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_7b48f3f6",
+        "question": "Arc length 21.99 cm for θ = 60°. Radius ≈ ?",
+        "options": [
+          "21.99 cm",
+          "42 cm",
+          "21 cm",
+          "10 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_49b1d0ac",
+        "question": "Arc length 43.98 cm for θ = 90°. Radius ≈ ?",
+        "options": [
+          "56 cm",
+          "43.98 cm",
+          "28 cm",
+          "14 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_a0389999",
+        "question": "Arc length 29.32 cm for θ = 120°. Radius ≈ ?",
+        "options": [
+          "14 cm",
+          "7 cm",
+          "29.32 cm",
+          "28 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_e673c8dc",
+        "question": "Arc length 43.98 cm for θ = 180°. Radius ≈ ?",
+        "options": [
+          "43.98 cm",
+          "28 cm",
+          "7 cm",
+          "14 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_f5d14e61",
+        "question": "Arc length 58.64 cm for θ = 120°. Radius ≈ ?",
+        "options": [
+          "28 cm",
+          "58.64 cm",
+          "56 cm",
+          "14 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_6c4cb2d5",
+        "question": "Arc length 32.99 cm for θ = 90°. Radius ≈ ?",
+        "options": [
+          "42 cm",
+          "32.99 cm",
+          "10 cm",
+          "21 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_b93c7fc6",
+        "question": "Arc length 11.0 cm for θ = 90°. Radius ≈ ?",
+        "options": [
+          "3 cm",
+          "11.0 cm",
+          "7 cm",
+          "14 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_a26d0ccc",
+        "question": "Arc length 43.98 cm for θ = 120°. Radius ≈ ?",
+        "options": [
+          "10 cm",
+          "43.98 cm",
+          "42 cm",
+          "21 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_d85ee588",
+        "question": "Arc length 7.33 cm for θ = 60°. Radius ≈ ?",
+        "options": [
+          "7 cm",
+          "7.33 cm",
+          "3 cm",
+          "14 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_fbbda0f5",
+        "question": "Arc length 14.66 cm for θ = 60°. Radius ≈ ?",
+        "options": [
+          "7 cm",
+          "14 cm",
+          "14.66 cm",
+          "28 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_450e474c",
+        "question": "Arc length 21.99 cm for θ = 90°. Radius ≈ ?",
+        "options": [
+          "7 cm",
+          "14 cm",
+          "28 cm",
+          "21.99 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_4ed4c955",
+        "question": "Arc length 87.96 cm for θ = 180°. Radius ≈ ?",
+        "options": [
+          "14 cm",
+          "28 cm",
+          "87.96 cm",
+          "56 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_C_96322603",
+        "question": "Arc length 21.99 cm for θ = 180°. Radius ≈ ?",
+        "options": [
+          "21.99 cm",
+          "7 cm",
+          "14 cm",
+          "3 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 11,
+        "category": "u11_t2_C",
+        "category_label": "Arc · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "D": [
+      {
+        "id": "u11_t2_D_3f64aea8",
+        "question": "Perimeter of sector (r = 28 cm, θ = 180°) ≈ ?",
+        "options": [
+          "171.96 cm",
+          "87.96 cm",
+          "143.96 cm",
+          "56 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_0c5f28e0",
+        "question": "Perimeter of sector (r = 21 cm, θ = 120°) ≈ ?",
+        "options": [
+          "43.98 cm",
+          "42 cm",
+          "106.98 cm",
+          "85.98 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_af436a4f",
+        "question": "Perimeter of sector (r = 7 cm, θ = 180°) ≈ ?",
+        "options": [
+          "42.99 cm",
+          "21.99 cm",
+          "35.99 cm",
+          "14 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_1ab14160",
+        "question": "Perimeter of sector (r = 14 cm, θ = 180°) ≈ ?",
+        "options": [
+          "28 cm",
+          "71.98 cm",
+          "43.98 cm",
+          "85.98 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_ce273777",
+        "question": "Perimeter of sector (r = 7 cm, θ = 90°) ≈ ?",
+        "options": [
+          "32.0 cm",
+          "14 cm",
+          "11.0 cm",
+          "25.0 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_c72ddb6b",
+        "question": "Perimeter of sector (r = 21 cm, θ = 60°) ≈ ?",
+        "options": [
+          "84.99000000000001 cm",
+          "63.99 cm",
+          "21.99 cm",
+          "42 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_b30c0d84",
+        "question": "Perimeter of sector (r = 21 cm, θ = 90°) ≈ ?",
+        "options": [
+          "42 cm",
+          "95.99 cm",
+          "74.99 cm",
+          "32.99 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_c70dcd60",
+        "question": "Perimeter of sector (r = 14 cm, θ = 120°) ≈ ?",
+        "options": [
+          "29.32 cm",
+          "71.32 cm",
+          "28 cm",
+          "57.32 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_5329cb04",
+        "question": "Perimeter of sector (r = 14 cm, θ = 60°) ≈ ?",
+        "options": [
+          "42.66 cm",
+          "28 cm",
+          "14.66 cm",
+          "56.66 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_33850454",
+        "question": "Perimeter of sector (r = 28 cm, θ = 90°) ≈ ?",
+        "options": [
+          "99.98 cm",
+          "43.98 cm",
+          "127.98 cm",
+          "56 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_405d52e4",
+        "question": "Perimeter of sector (r = 21 cm, θ = 180°) ≈ ?",
+        "options": [
+          "107.97 cm",
+          "65.97 cm",
+          "42 cm",
+          "128.97 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_7b858e09",
+        "question": "Perimeter of sector (r = 7 cm, θ = 60°) ≈ ?",
+        "options": [
+          "28.33 cm",
+          "21.33 cm",
+          "14 cm",
+          "7.33 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_461b5cb7",
+        "question": "Perimeter of sector (r = 7 cm, θ = 120°) ≈ ?",
+        "options": [
+          "35.66 cm",
+          "14.66 cm",
+          "28.66 cm",
+          "14 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_0a99c530",
+        "question": "Perimeter of sector (r = 28 cm, θ = 120°) ≈ ?",
+        "options": [
+          "142.64 cm",
+          "58.64 cm",
+          "56 cm",
+          "114.64 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_D_235d1605",
+        "question": "Perimeter of sector (r = 28 cm, θ = 60°) ≈ ?",
+        "options": [
+          "29.32 cm",
+          "85.32 cm",
+          "56 cm",
+          "113.32 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 11,
+        "category": "u11_t2_D",
+        "category_label": "Arc · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ],
+    "E": [
+      {
+        "id": "u11_t2_E_264388db",
+        "question": "Two arcs on same circle: 60° and 120° (r = 7). Total arc ≈ ?",
+        "options": [
+          "14.66 cm",
+          "7.33 cm",
+          "22.0 cm",
+          "7 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_1b6bf3dd",
+        "question": "Two arcs on same circle: 180° and 0° (r = 28). Total arc ≈ ?",
+        "options": [
+          "88.0 cm",
+          "87.96 cm",
+          "28 cm",
+          "175.92 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_07612af5",
+        "question": "Two arcs on same circle: 120° and 60° (r = 7). Total arc ≈ ?",
+        "options": [
+          "14.66 cm",
+          "29.32 cm",
+          "7 cm",
+          "22.0 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_c4076c1d",
+        "question": "Two arcs on same circle: 180° and 0° (r = 7). Total arc ≈ ?",
+        "options": [
+          "7 cm",
+          "22.0 cm",
+          "21.99 cm",
+          "43.98 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_abb94c50",
+        "question": "Two arcs on same circle: 120° and 60° (r = 28). Total arc ≈ ?",
+        "options": [
+          "88.0 cm",
+          "28 cm",
+          "58.64 cm",
+          "117.28 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_19bdf283",
+        "question": "Two arcs on same circle: 180° and 0° (r = 14). Total arc ≈ ?",
+        "options": [
+          "44.0 cm",
+          "14 cm",
+          "43.98 cm",
+          "87.96 cm"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_784f054a",
+        "question": "Two arcs on same circle: 60° and 120° (r = 14). Total arc ≈ ?",
+        "options": [
+          "29.32 cm",
+          "14.66 cm",
+          "14 cm",
+          "44.0 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_bd97140c",
+        "question": "Two arcs on same circle: 120° and 60° (r = 21). Total arc ≈ ?",
+        "options": [
+          "21 cm",
+          "66.0 cm",
+          "87.96 cm",
+          "43.98 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_67592271",
+        "question": "Two arcs on same circle: 90° and 90° (r = 14). Total arc ≈ ?",
+        "options": [
+          "21.99 cm",
+          "43.98 cm",
+          "14 cm",
+          "44.0 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_709aa38b",
+        "question": "Two arcs on same circle: 90° and 90° (r = 7). Total arc ≈ ?",
+        "options": [
+          "7 cm",
+          "11.0 cm",
+          "22.0 cm (alt)",
+          "22.0 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_dcc8571e",
+        "question": "Two arcs on same circle: 60° and 120° (r = 28). Total arc ≈ ?",
+        "options": [
+          "58.64 cm",
+          "29.32 cm",
+          "28 cm",
+          "88.0 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_f9106ee2",
+        "question": "Two arcs on same circle: 90° and 90° (r = 21). Total arc ≈ ?",
+        "options": [
+          "32.99 cm",
+          "65.98 cm",
+          "66.0 cm",
+          "21 cm"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_537956c5",
+        "question": "Two arcs on same circle: 60° and 120° (r = 21). Total arc ≈ ?",
+        "options": [
+          "21.99 cm",
+          "21 cm",
+          "43.98 cm",
+          "66.0 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_16e37408",
+        "question": "Two arcs on same circle: 90° and 90° (r = 28). Total arc ≈ ?",
+        "options": [
+          "43.98 cm",
+          "87.96 cm",
+          "28 cm",
+          "88.0 cm"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      },
+      {
+        "id": "u11_t2_E_80928310",
+        "question": "Two arcs on same circle: 180° and 0° (r = 21). Total arc ≈ ?",
+        "options": [
+          "131.94 cm",
+          "66.0 cm",
+          "21 cm",
+          "65.97 cm"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 11,
+        "category": "u11_t2_E",
+        "category_label": "Arc · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 11 Areas Related to Circles"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 11,
+    "topic_id": 2
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u13_t3_A_d537fa80",
+        "question": "Modal class is the:",
+        "options": [
+          "Class with maximum frequency",
+          "Lowest class",
+          "Last class",
+          "Median class"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 13,
+        "category": "u13_t3_A",
+        "category_label": "Mode · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "B": [
+      {
+        "id": "u13_t3_B_39928bca",
+        "question": "Mode formula for grouped data:",
+        "options": [
+          "n/2 formula",
+          "cf graph",
+          "l + ((f^1-f^0)/(2f^1-f^0-f^2)) × h",
+          "Σfixi/Σfi"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 13,
+        "category": "u13_t3_B",
+        "category_label": "Mode · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "C": [
+      {
+        "id": "u13_t3_C_2ff933fe",
+        "question": "Modal class l = 30, f^1 = 15, f^0 = 10, f^2 = 8, h = 10. Mode ≈ ?",
+        "options": [
+          "30",
+          "15",
+          "40",
+          "34.2"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t3_C",
+        "category_label": "Mode · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "D": [
+      {
+        "id": "u13_t3_D_37cc9d4d",
+        "question": "Mean = 35.0, median = 33.0. Mode (empirical) ≈ ?",
+        "options": [
+          "35.0",
+          "68.0",
+          "29.0",
+          "33.0"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 13,
+        "category": "u13_t3_D",
+        "category_label": "Mode · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ],
+    "E": [
+      {
+        "id": "u13_t3_E_c7d01327",
+        "question": "Grouped data: modal class starts at 30. Mode ≈ ?",
+        "options": [
+          "10",
+          "34.2",
+          "30",
+          "40"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t3_E",
+        "category_label": "Mode · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 13,
+    "topic_id": 3
+  }
+}
