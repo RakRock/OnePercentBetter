@@ -1,0 +1,113 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u5_t4_A_b1c4e1f0",
+        "question": "Monthly salary starts at ₹8000 with ₹500 annual increment. Salary in year 5?",
+        "options": [
+          "₹10000 (alt)",
+          "₹10500",
+          "₹8000",
+          "₹10000"
+        ],
+        "answer": 3,
+        "explanation": "AP with a = 8000, d = 500; year 5 term = 10000.",
+        "topic": 4,
+        "level": "A",
+        "unit_id": 5,
+        "category": "u5_t4_A",
+        "category_label": "Apps · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      }
+    ],
+    "B": [
+      {
+        "id": "u5_t4_B_64f86b35",
+        "question": "Rose plants per row: 23, 21, …, 5. How many rows?",
+        "options": [
+          "10",
+          "11",
+          "9",
+          "10 (alt)"
+        ],
+        "answer": 0,
+        "explanation": "Solve 5 = 23 + (n-1)(-2).",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t4_B",
+        "category_label": "Apps · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      }
+    ],
+    "C": [
+      {
+        "id": "u5_t4_C_865b33a1",
+        "question": "₹1000 at 8% simple interest per year — interest at end of year 30?",
+        "options": [
+          "₹80",
+          "₹2400",
+          "₹3400",
+          "₹2480"
+        ],
+        "answer": 1,
+        "explanation": "Interests 80, 160, … form AP; a_30 = 2400.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      }
+    ],
+    "D": [
+      {
+        "id": "u5_t4_D_6b962b2f",
+        "question": "How many two-digit numbers are divisible by 3?",
+        "options": [
+          "29",
+          "31",
+          "30",
+          "33"
+        ],
+        "answer": 2,
+        "explanation": "AP 12, 15, …, 99 gives n = 30.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      }
+    ],
+    "E": [
+      {
+        "id": "u5_t4_E_1b913ab2",
+        "question": "Find the sum of first 10 terms of AP 6, 10, 14, …",
+        "options": [
+          "240",
+          "42",
+          "236",
+          "250"
+        ],
+        "answer": 0,
+        "explanation": "S_10 = 10/2[2×6 + 9×4] = 240.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 5,
+        "category": "u5_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 5,
+    "topic_id": 4
+  }
+}

@@ -1,0 +1,645 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u6_t2_A_fdd517f1",
+        "question": "Basic Proportionality Theorem (Theorem 6.1) states:",
+        "options": [
+          "All triangles are equilateral",
+          "Angles sum to 180° only",
+          "Parallel lines have equal length",
+          "A line parallel to one side divides the other two sides in the same ratio"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t2_A",
+        "category_label": "BPT · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      }
+    ],
+    "B": [
+      {
+        "id": "u6_t2_B_3a9639de",
+        "question": "In ΔABC, DE ∥ BC. AD = 2 cm, DB = 3 cm, AE = 6 cm. EC = ?",
+        "options": [
+          "9 cm",
+          "3 cm",
+          "11 cm",
+          "6 cm"
+        ],
+        "answer": 0,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 6×3/2 = 9.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_7279d78a",
+        "question": "In ΔABC, DE ∥ BC. AD = 4 cm, DB = 5 cm, AE = 8 cm. EC = ?",
+        "options": [
+          "8 cm",
+          "10 cm",
+          "5 cm",
+          "14 cm"
+        ],
+        "answer": 1,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 8×5/4 = 10.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_b487ba63",
+        "question": "In ΔABC, DE ∥ BC. AD = 3 cm, DB = 7 cm, AE = 4 cm. EC = ?",
+        "options": [
+          "7 cm",
+          "9 cm",
+          "4 cm",
+          "12 cm"
+        ],
+        "answer": 1,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 4×7/3 = 9.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_dd830abe",
+        "question": "In ΔABC, DE ∥ BC. AD = 3 cm, DB = 4 cm, AE = 3 cm. EC = ?",
+        "options": [
+          "7 cm",
+          "4 cm (alt)",
+          "4 cm",
+          "3 cm"
+        ],
+        "answer": 2,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 3×4/3 = 4.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_8b9489ac",
+        "question": "In ΔABC, DE ∥ BC. AD = 4 cm, DB = 4 cm, AE = 9 cm. EC = ?",
+        "options": [
+          "9 cm (alt)",
+          "13 cm",
+          "4 cm",
+          "9 cm"
+        ],
+        "answer": 3,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 9×4/4 = 9.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_e4ec1844",
+        "question": "In ΔABC, DE ∥ BC. AD = 5 cm, DB = 5 cm, AE = 5 cm. EC = ?",
+        "options": [
+          "5 cm (alt)",
+          "5 cm",
+          "10 cm",
+          "None of these"
+        ],
+        "answer": 1,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 5×5/5 = 5.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_02163145",
+        "question": "In ΔABC, DE ∥ BC. AD = 5 cm, DB = 7 cm, AE = 6 cm. EC = ?",
+        "options": [
+          "6 cm",
+          "13 cm",
+          "7 cm",
+          "8 cm"
+        ],
+        "answer": 3,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 6×7/5 = 8.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_2bee6dd8",
+        "question": "In ΔABC, DE ∥ BC. AD = 4 cm, DB = 4 cm, AE = 6 cm. EC = ?",
+        "options": [
+          "6 cm",
+          "6 cm (alt)",
+          "4 cm",
+          "10 cm"
+        ],
+        "answer": 0,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 6×4/4 = 6.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_6aff02eb",
+        "question": "In ΔABC, DE ∥ BC. AD = 2 cm, DB = 7 cm, AE = 8 cm. EC = ?",
+        "options": [
+          "7 cm",
+          "8 cm",
+          "30 cm",
+          "28 cm"
+        ],
+        "answer": 3,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 8×7/2 = 28.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_8647ac4e",
+        "question": "In ΔABC, DE ∥ BC. AD = 4 cm, DB = 6 cm, AE = 7 cm. EC = ?",
+        "options": [
+          "6 cm",
+          "7 cm",
+          "10 cm",
+          "14 cm"
+        ],
+        "answer": 2,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 7×6/4 = 10.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_6f7470a2",
+        "question": "In ΔABC, DE ∥ BC. AD = 5 cm, DB = 4 cm, AE = 3 cm. EC = ?",
+        "options": [
+          "2 cm",
+          "3 cm",
+          "7 cm",
+          "4 cm"
+        ],
+        "answer": 0,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 3×4/5 = 2.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_6583564f",
+        "question": "In ΔABC, DE ∥ BC. AD = 3 cm, DB = 3 cm, AE = 5 cm. EC = ?",
+        "options": [
+          "3 cm",
+          "5 cm (alt)",
+          "8 cm",
+          "5 cm"
+        ],
+        "answer": 3,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 5×3/3 = 5.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_f1664feb",
+        "question": "In ΔABC, DE ∥ BC. AD = 2 cm, DB = 6 cm, AE = 7 cm. EC = ?",
+        "options": [
+          "21 cm",
+          "23 cm",
+          "6 cm",
+          "7 cm"
+        ],
+        "answer": 0,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 7×6/2 = 21.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_97afa8e8",
+        "question": "In ΔABC, DE ∥ BC. AD = 3 cm, DB = 5 cm, AE = 7 cm. EC = ?",
+        "options": [
+          "11 cm",
+          "14 cm",
+          "7 cm",
+          "5 cm"
+        ],
+        "answer": 0,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 7×5/3 = 11.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_B_e3c7be1b",
+        "question": "In ΔABC, DE ∥ BC. AD = 2 cm, DB = 8 cm, AE = 3 cm. EC = ?",
+        "options": [
+          "8 cm",
+          "3 cm",
+          "12 cm",
+          "14 cm"
+        ],
+        "answer": 2,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 3×8/2 = 12.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t2_B",
+        "category_label": "BPT · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      }
+    ],
+    "C": [
+      {
+        "id": "u6_t2_C_1bca2ac3",
+        "question": "DE ∥ BC with AD = 4, DB = 3, AE = 6, EC = 4. Which ratio is correct?",
+        "options": [
+          "AE/AC = 6/10",
+          "AE/EC = 3/4",
+          "AD/AB = 3/7",
+          "AD/AE = 4/6"
+        ],
+        "answer": 0,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_52e90db1",
+        "question": "DE ∥ BC with AD = 4, DB = 4, AE = 9, EC = 9. Which ratio is correct?",
+        "options": [
+          "AE/AC = 9/18",
+          "AE/EC = 4/4",
+          "AD/AB = 4/8",
+          "AD/AE = 9/9"
+        ],
+        "answer": 0,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_9e31575b",
+        "question": "DE ∥ BC with AD = 2, DB = 7, AE = 6, EC = 21. Which ratio is correct?",
+        "options": [
+          "AD/AB = 7/9",
+          "AE/AC = 6/27",
+          "AE/EC = 7/2",
+          "AD/AE = 21/6"
+        ],
+        "answer": 1,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_73ebf6f7",
+        "question": "DE ∥ BC with AD = 5, DB = 7, AE = 6, EC = 8. Which ratio is correct?",
+        "options": [
+          "AE/EC = 7/5",
+          "AD/AE = 8/6",
+          "AE/AC = 6/14",
+          "AD/AB = 7/12"
+        ],
+        "answer": 2,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_db8cd1ae",
+        "question": "DE ∥ BC with AD = 4, DB = 7, AE = 3, EC = 5. Which ratio is correct?",
+        "options": [
+          "AE/AC = 3/8",
+          "AD/AE = 5/3",
+          "AD/AB = 7/11",
+          "AE/EC = 7/4"
+        ],
+        "answer": 0,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_8d5682bf",
+        "question": "DE ∥ BC with AD = 2, DB = 8, AE = 6, EC = 24. Which ratio is correct?",
+        "options": [
+          "AD/AE = 24/6",
+          "AD/AB = 8/10",
+          "AE/EC = 8/2",
+          "AE/AC = 6/30"
+        ],
+        "answer": 3,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_15a4a77b",
+        "question": "DE ∥ BC with AD = 5, DB = 4, AE = 9, EC = 7. Which ratio is correct?",
+        "options": [
+          "AD/AB = 4/9",
+          "AE/AC = 9/16",
+          "AD/AE = 7/9",
+          "AE/EC = 4/5"
+        ],
+        "answer": 1,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_455e9b00",
+        "question": "DE ∥ BC with AD = 5, DB = 3, AE = 7, EC = 4. Which ratio is correct?",
+        "options": [
+          "AD/AE = 4/7",
+          "AE/AC = 7/11",
+          "AE/EC = 3/5",
+          "AD/AB = 3/8"
+        ],
+        "answer": 1,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_d23bdd0d",
+        "question": "DE ∥ BC with AD = 3, DB = 4, AE = 7, EC = 9. Which ratio is correct?",
+        "options": [
+          "AD/AB = 4/7",
+          "AD/AE = 9/7",
+          "AE/AC = 7/16",
+          "AE/EC = 4/3"
+        ],
+        "answer": 2,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_e9524374",
+        "question": "DE ∥ BC with AD = 4, DB = 7, AE = 8, EC = 14. Which ratio is correct?",
+        "options": [
+          "AE/AC = 8/22",
+          "AE/EC = 7/4",
+          "AD/AE = 14/8",
+          "AD/AB = 7/11"
+        ],
+        "answer": 0,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_7694e55f",
+        "question": "DE ∥ BC with AD = 3, DB = 6, AE = 4, EC = 8. Which ratio is correct?",
+        "options": [
+          "AD/AE = 8/4",
+          "AD/AB = 6/9",
+          "AE/AC = 4/12",
+          "AE/EC = 6/3"
+        ],
+        "answer": 2,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_bb1e3551",
+        "question": "DE ∥ BC with AD = 5, DB = 5, AE = 4, EC = 4. Which ratio is correct?",
+        "options": [
+          "AD/AB = 5/10",
+          "AD/AE = 4/4",
+          "AE/AC = 4/8",
+          "AE/EC = 5/5"
+        ],
+        "answer": 2,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_f2de61c6",
+        "question": "DE ∥ BC with AD = 5, DB = 5, AE = 9, EC = 9. Which ratio is correct?",
+        "options": [
+          "AD/AB = 5/10",
+          "AD/AE = 9/9",
+          "AE/EC = 5/5",
+          "AE/AC = 9/18"
+        ],
+        "answer": 3,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_598f0e70",
+        "question": "DE ∥ BC with AD = 4, DB = 5, AE = 6, EC = 7. Which ratio is correct?",
+        "options": [
+          "AE/EC = 5/4",
+          "AD/AE = 7/6",
+          "AD/AB = 5/9",
+          "AE/AC = 6/13"
+        ],
+        "answer": 3,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_339119f6",
+        "question": "DE ∥ BC with AD = 3, DB = 5, AE = 4, EC = 6. Which ratio is correct?",
+        "options": [
+          "AD/AB = 5/8",
+          "AD/AE = 6/4",
+          "AE/AC = 4/10",
+          "AE/EC = 5/3"
+        ],
+        "answer": 2,
+        "explanation": "Also AD/AB = AE/AC when DE ∥ BC.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      }
+    ],
+    "D": [
+      {
+        "id": "u6_t2_D_e19a746d",
+        "question": "In ΔPQR, PE = 3 cm, EQ = 4 cm, PF = 6 cm, FR = 8 cm. Is EF ∥ QR?",
+        "options": [
+          "Only if PQ = PR",
+          "Cannot tell",
+          "Yes, EF ∥ QR",
+          "No"
+        ],
+        "answer": 2,
+        "explanation": "PE/EQ = 3/4 = PF/FR = 6/8 — converse of BPT applies.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t2_D",
+        "category_label": "BPT · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      }
+    ],
+    "E": [
+      {
+        "id": "u6_t2_E_2a0339c3",
+        "question": "In trapezium ABCD (AB ∥ DC), EF ∥ AB with E on AD and F on BC. Then:",
+        "options": [
+          "No ratio relation",
+          "AE = BF always",
+          "AE/ED = BF/FC when EF ∥ AB in a trapezium",
+          "EF = AB"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t2_E",
+        "category_label": "BPT · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 6,
+    "topic_id": 2
+  }
+}

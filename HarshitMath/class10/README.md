@@ -24,6 +24,18 @@ Fifteen units aligned with NCERT Class 10 Mathematics.
 - PDF: `units/unit_04/jemh104.pdf` (NCERT Chapter 4)
 - Topics: standard form, factorisation, quadratic formula, discriminant
 
+## Unit 5 — Arithmetic Progressions
+
+- PDF: `units/unit_05/jemh105.pdf` (NCERT Chapter 5)
+- Topics: AP definition, nth term, sum of n terms, word problems
+- Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–4)
+
+## Unit 6 — Triangles
+
+- PDF: `units/unit_06/jemh106.pdf` (NCERT Chapter 6)
+- Topics: similar figures & scale factor, BPT, similarity criteria (AAA/SSS/SAS), Pythagoras & applications
+- Unit Guide, Practice, Unit Test, and Week Setup (same as Units 2–5)
+
 ## Question banks
 
 `question_banks/unit_XX/topic_YY.json` — seeded from NCERT-aligned templates:
@@ -33,6 +45,8 @@ python scripts/seed_harshit_class10_banks.py --unit 1 --per-level 15
 python scripts/seed_harshit_class10_banks.py --unit 2 --per-level 15
 python scripts/seed_harshit_class10_banks.py --unit 3 --per-level 15
 python scripts/seed_harshit_class10_banks.py --unit 4 --per-level 15
+python scripts/seed_harshit_class10_banks.py --unit 5 --per-level 15
+python scripts/seed_harshit_class10_banks.py --unit 6 --per-level 15
 ```
 
 ## External PDF folder (optional)

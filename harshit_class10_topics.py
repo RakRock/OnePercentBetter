@@ -221,6 +221,106 @@ TOPICS: dict[int, dict[int, dict]] = {
             },
         },
     },
+    5: {
+        1: {
+            "name": "Patterns & Definition of AP",
+            "short": "AP Def",
+            "emoji": "📈",
+            "levels": {
+                "A": "Recognise a constant difference pattern",
+                "B": "Find common difference d",
+                "C": "Decide if a list is an AP",
+                "D": "Write the next term(s)",
+                "E": "Finite vs infinite AP; general form a, a+d, …",
+            },
+        },
+        2: {
+            "name": "nth Term of an AP",
+            "short": "nth",
+            "emoji": "🔢",
+            "levels": {
+                "A": "State aₙ = a + (n − 1)d",
+                "B": "Find a specific term (e.g. 10th)",
+                "C": "Find n when a term value is given",
+                "D": "Find a and d from two given terms",
+                "E": "Term from the end / two-digit divisible problems",
+            },
+        },
+        3: {
+            "name": "Sum of First n Terms",
+            "short": "Sum",
+            "emoji": "➕",
+            "levels": {
+                "A": "State Sₙ = n/2 [2a + (n−1)d]",
+                "B": "Sum of first n terms (integer AP)",
+                "C": "Use Sₙ = n/2 (a + l) when last term known",
+                "D": "Find n when sum is given",
+                "E": "Pick the right sum formula",
+            },
+        },
+        4: {
+            "name": "Applications & Word Problems",
+            "short": "Apps",
+            "emoji": "🌱",
+            "levels": {
+                "A": "Salary / savings increment stories",
+                "B": "Rows of plants, seats, or rungs",
+                "C": "Simple interest forming an AP",
+                "D": "Find number of terms from context",
+                "E": "Multi-step board-style mixed problems",
+            },
+        },
+    },
+    6: {
+        1: {
+            "name": "Similar Figures & Scale Factor",
+            "short": "Similar",
+            "emoji": "🔺",
+            "levels": {
+                "A": "Congruent vs similar figures",
+                "B": "Scale factor between similar figures",
+                "C": "Corresponding sides in the same ratio",
+                "D": "Find missing side using scale factor",
+                "E": "Conditions for similar polygons",
+            },
+        },
+        2: {
+            "name": "Basic Proportionality Theorem (BPT)",
+            "short": "BPT",
+            "emoji": "📏",
+            "levels": {
+                "A": "State BPT (Thales Theorem 6.1)",
+                "B": "Find a divided segment (AD/DB = AE/EC)",
+                "C": "Use BPT when DE ∥ BC",
+                "D": "Converse: line parallel to third side?",
+                "E": "BPT in trapezium / combined ratios",
+            },
+        },
+        3: {
+            "name": "Similarity Criteria (AAA, SSS, SAS)",
+            "short": "Criteria",
+            "emoji": "△",
+            "levels": {
+                "A": "AAA / AA similarity",
+                "B": "SSS similarity — sides proportional",
+                "C": "SAS similarity — included angle",
+                "D": "Pick the correct criterion",
+                "E": "Find unknown side using similarity",
+            },
+        },
+        4: {
+            "name": "Pythagoras & Applications",
+            "short": "Apps",
+            "emoji": "📐",
+            "levels": {
+                "A": "Pythagoras theorem in right triangles",
+                "B": "Proof idea via similar triangles",
+                "C": "Indirect measurement (shadow / height)",
+                "D": "Area ratio of similar triangles",
+                "E": "Multi-step board-style geometry",
+            },
+        },
+    },
 }
 
 
@@ -272,6 +372,8 @@ def _chapter_ref(unit_id: int) -> str:
         2: "NCERT Ch 2 Polynomials",
         3: "NCERT Ch 3 Pair of Linear Equations",
         4: "NCERT Ch 4 Quadratic Equations",
+        5: "NCERT Ch 5 Arithmetic Progressions",
+        6: "NCERT Ch 6 Triangles",
     }.get(unit_id, f"NCERT Unit {unit_id}")
 
 
@@ -1240,6 +1342,403 @@ def _gen_u4_t4(level: str) -> dict:
     return _mcq(4, 4, level, f"x² + {k}x + {c} = 0 has no real roots because:", opts, ans, "Check Δ = k² − 4c < 0.")
 
 
+# ── Unit 5 generators ──
+
+
+def _ap_nth(a: int, d: int, n: int) -> int:
+    return a + (n - 1) * d
+
+
+def _ap_sum(a: int, d: int, n: int) -> int:
+    return n * (2 * a + (n - 1) * d) // 2
+
+
+def _random_ap() -> tuple[int, int]:
+    a = random.randint(-8, 15)
+    d = random.choice([x for x in range(-6, 7) if x != 0])
+    return a, d
+
+
+def _ap_terms_str(a: int, d: int, count: int = 4) -> str:
+    terms = [_ap_nth(a, d, i) for i in range(1, count + 1)]
+    return ", ".join(str(t) for t in terms) + ", …"
+
+
+def _gen_u5_t1(level: str) -> dict:
+    a, d = _random_ap()
+    seq = _ap_terms_str(a, d)
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "Each term differs by a fixed number from the previous one",
+            ["Each term is double the previous", "Terms are perfect squares", "Terms multiply by a fixed ratio"],
+        )
+        return _mcq(5, 1, level, f"The list {seq} follows which pattern?", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(str(d), [str(d + 1), str(-d), str(a)])
+        return _mcq(5, 1, level, f"In the AP {seq} the common difference d is:", opts, ans)
+    if level == "C":
+        if random.random() < 0.5:
+            opts, ans = _shuffle_options("Yes", ["No", "Only if n is even", "Cannot tell"])
+            return _mcq(5, 1, level, f"Is {seq} an arithmetic progression?", opts, ans, f"Successive differences equal {d}.")
+        b, c = random.randint(2, 5), random.randint(2, 5)
+        not_ap = f"{b}, {b * c}, {b + c}, {b * c + c}, …"
+        opts, ans = _shuffle_options("No", ["Yes", "Only for even terms", "Yes if c = 0"])
+        return _mcq(5, 1, level, f"Is {not_ap} an arithmetic progression?", opts, ans, "Differences are not constant.")
+    if level == "D":
+        next_t = _ap_nth(a, d, 5)
+        opts, ans = _shuffle_options(str(next_t), [str(next_t + d), str(a + d), str(next_t - d)])
+        return _mcq(5, 1, level, f"Next term after {seq.rstrip(', …')} is:", opts, ans)
+    opts, ans = _shuffle_options(
+        "a, a + d, a + 2d, a + 3d, …",
+        ["a, ad, ad², ad³, …", "a, a², a³, a⁴, …", "a, a − d, a − 2d, …"],
+    )
+    return _mcq(5, 1, level, "General form of an AP with first term a and common difference d:", opts, ans)
+
+
+def _gen_u5_t2(level: str) -> dict:
+    a, d = _random_ap()
+    n = random.randint(5, 15)
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "aₙ = a + (n − 1)d",
+            ["aₙ = a + nd", "aₙ = a × dⁿ", "aₙ = n(a + d)"],
+        )
+        return _mcq(5, 2, level, "nth term of an AP:", opts, ans)
+    if level == "B":
+        term = _ap_nth(a, d, n)
+        opts, ans = _shuffle_options(str(term), [str(term + d), str(a + n * d), str(term - d)])
+        return _mcq(
+            5, 2, level,
+            f"10th term of AP with a = {a}, d = {d}:" if n == 10 else f"{n}th term of AP with a = {a}, d = {d}:",
+            opts, ans,
+            f"a_{n} = {a} + ({n}−1)×{d} = {term}.",
+        )
+    if level == "C":
+        n_target = random.randint(8, 20)
+        term_val = _ap_nth(a, d, n_target)
+        opts, ans = _shuffle_options(str(n_target), [str(n_target + 1), str(n_target - 1), str(n_target + 2)])
+        return _mcq(
+            5, 2, level,
+            f"Which term of the AP {_ap_terms_str(a, d)} equals {term_val}?",
+            opts, ans,
+            f"Solve {term_val} = {a} + (n−1)({d}).",
+        )
+    if level == "D":
+        a3, a7 = _ap_nth(a, d, 3), _ap_nth(a, d, 7)
+        opts, ans = _shuffle_options(f"a = {a}, d = {d}", [f"a = {a + d}, d = {d + 1}", f"a = {a - 1}, d = {d}", f"a = {a}, d = 0"])
+        return _mcq(
+            5, 2, level,
+            f"AP whose 3rd term is {a3} and 7th term is {a7}:",
+            opts, ans,
+            "Two equations: a + 2d and a + 6d.",
+        )
+    # term from end style
+    a_pos, d_neg = 10, -3
+    n_total = 25
+    l = _ap_nth(a_pos, d_neg, n_total)
+    term_from_end = _ap_nth(a_pos, d_neg, n_total - 10)  # 11th from last = 15th
+    opts, ans = _shuffle_options(str(term_from_end), [str(l), str(_ap_nth(a_pos, d_neg, 11)), str(term_from_end + 3)])
+    return _mcq(
+        5, 2, level,
+        f"AP 10, 7, 4, …, {l} has 25 terms. The 11th term from the last is:",
+        opts, ans,
+        "11th from last = 15th from start = 10 + 14(−3) = −32.",
+    )
+
+
+def _gen_u5_t3(level: str) -> dict:
+    a, d = _random_ap()
+    n = random.randint(5, 12)
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "Sₙ = n/2 [2a + (n − 1)d]",
+            ["Sₙ = n(a + d)", "Sₙ = a + (n − 1)d", "Sₙ = n²d"],
+        )
+        return _mcq(5, 3, level, "Sum of first n terms of an AP:", opts, ans)
+    if level == "B":
+        total = _ap_sum(a, d, n)
+        opts, ans = _shuffle_options(str(total), [str(total + n), str(_ap_nth(a, d, n)), str(total - d)])
+        return _mcq(
+            5, 3, level,
+            f"Sum of first {n} terms of AP with a = {a}, d = {d}:",
+            opts, ans,
+            f"S_{n} = {n}/2[2×{a} + ({n}−1)×{d}] = {total}.",
+        )
+    if level == "C":
+        l = _ap_nth(a, d, n)
+        total = _ap_sum(a, d, n)
+        alt_wrong = n * (a + l) // 2 + d
+        opts, ans = _shuffle_options(str(total), [str(alt_wrong), str(l), str(a + l)])
+        return _mcq(
+            5, 3, level,
+            f"AP: a = {a}, d = {d}, n = {n}. Sum using Sₙ = n/2(a + l):",
+            opts, ans,
+            f"l = {l}, S = {n}/2({a}+{l}) = {total}.",
+        )
+    if level == "D":
+        n_solve = random.randint(6, 10)
+        s_val = _ap_sum(a, d, n_solve)
+        opts, ans = _shuffle_options(str(n_solve), [str(n_solve + 1), str(n_solve - 1), str(n_solve + 2)])
+        return _mcq(
+            5, 3, level,
+            f"Sum of an AP is {s_val} with a = {a}, d = {d}. Number of terms n = ?",
+            opts, ans,
+        )
+    opts, ans = _shuffle_options(
+        "Sₙ = n/2(a + l) when last term l is known",
+        ["Always use Sₙ = n²d", "Use aₙ formula instead", "Add terms one by one only"],
+    )
+    return _mcq(5, 3, level, "Best formula when first term a and last term l are known:", opts, ans)
+
+
+def _gen_u5_t4(level: str) -> dict:
+    if level == "A":
+        start, inc, yr = 8000, 500, 5
+        salary = start + (yr - 1) * inc
+        opts, ans = _shuffle_options(f"₹{salary}", [f"₹{salary + inc}", f"₹{start + yr * inc}", f"₹{start}"])
+        return _mcq(
+            5, 4, level,
+            f"Monthly salary starts at ₹{start} with ₹{inc} annual increment. Salary in year {yr}?",
+            opts, ans,
+            f"AP with a = {start}, d = {inc}; year {yr} term = {salary}.",
+        )
+    if level == "B":
+        first, diff, last = 23, -2, 5
+        n = (last - first) // diff + 1
+        opts, ans = _shuffle_options(str(n), [str(n + 1), str(n - 1), str(abs(n))])
+        return _mcq(
+            5, 4, level,
+            f"Rose plants per row: {first}, {first + diff}, …, {last}. How many rows?",
+            opts, ans,
+            f"Solve {last} = {first} + (n−1)({diff}).",
+        )
+    if level == "C":
+        p, rate, yrs = 1000, 8, 30
+        interest = p * rate * yrs // 100
+        opts, ans = _shuffle_options(f"₹{interest}", [f"₹{p * rate // 100}", f"₹{interest + 80}", f"₹{p + interest}"])
+        return _mcq(
+            5, 4, level,
+            f"₹{p} at {rate}% simple interest per year — interest at end of year {yrs}?",
+            opts, ans,
+            f"Interests 80, 160, … form AP; a_{yrs} = {interest}.",
+        )
+    if level == "D":
+        a, d, target = 12, 3, 99
+        n = (target - a) // d + 1
+        opts, ans = _shuffle_options(str(n), [str(n - 1), str(n + 1), "33"])
+        return _mcq(
+            5, 4, level,
+            "How many two-digit numbers are divisible by 3?",
+            opts, ans,
+            f"AP 12, 15, …, 99 gives n = {n}.",
+        )
+    a, d = 6, 4
+    s10 = _ap_sum(a, d, 10)
+    opts, ans = _shuffle_options(str(s10), [str(_ap_nth(a, d, 10)), str(s10 + 10), str(s10 - 4)])
+    return _mcq(
+        5, 4, level,
+        f"Find the sum of first 10 terms of AP {a}, {a + d}, {a + 2 * d}, …",
+        opts, ans,
+        f"S_10 = 10/2[2×{a} + 9×{d}] = {s10}.",
+    )
+
+
+# ── Unit 6 generators ──
+
+
+def _bpt_ec(ad: int, db: int, ae: int) -> int:
+    """EC when AD/DB = AE/EC with integer result."""
+    return ae * db // ad
+
+
+def _gen_u6_t1(level: str) -> dict:
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "All congruent figures are similar, but similar figures need not be congruent",
+            ["All similar figures are congruent", "Congruent and similar mean the same", "No relation between them"],
+        )
+        return _mcq(6, 1, level, "Which statement about congruence and similarity is correct?", opts, ans)
+    if level == "B":
+        opts, ans = _shuffle_options(
+            "The ratio of corresponding side lengths (scale factor)",
+            ["The sum of corresponding angles", "The difference of perimeters", "Always 1"],
+        )
+        return _mcq(6, 1, level, "Scale factor between two similar figures is:", opts, ans)
+    if level == "C":
+        small, large = random.randint(3, 8), random.randint(10, 18)
+        ratio = f"{small}:{large}"
+        opts, ans = _shuffle_options(ratio, [f"{large}:{small}", f"{small + 1}:{large}", f"{small}:{large + 2}"])
+        return _mcq(
+            6, 1, level,
+            f"Side AB = {small} cm in ΔABC and A′B′ = {large} cm in similar ΔA′B′C′. Scale factor (small → large):",
+            opts, ans,
+            f"Corresponding sides are in ratio {small}:{large}.",
+        )
+    if level == "D":
+        k_num, k_den = random.randint(2, 4), random.randint(2, 3)
+        base = random.randint(4, 9)
+        missing = base * k_num // k_den
+        opts, ans = _shuffle_options(f"{missing} cm", [f"{base} cm", f"{missing + 2} cm", f"{base * k_den // k_num} cm"])
+        return _mcq(
+            6, 1, level,
+            f"Two similar triangles have sides in ratio {k_num}:{k_den}. If the smaller side is {base} cm, the corresponding larger side is:",
+            opts, ans,
+        )
+    opts, ans = _shuffle_options(
+        "Equal corresponding angles AND proportional corresponding sides",
+        ["Equal sides only", "Equal angles only", "Same perimeter"],
+    )
+    return _mcq(6, 1, level, "Two polygons with the same number of sides are similar if:", opts, ans)
+
+
+def _gen_u6_t2(level: str) -> dict:
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "A line parallel to one side divides the other two sides in the same ratio",
+            ["Parallel lines have equal length", "All triangles are equilateral", "Angles sum to 180° only"],
+        )
+        return _mcq(6, 2, level, "Basic Proportionality Theorem (Theorem 6.1) states:", opts, ans)
+    ad, db = random.randint(2, 5), random.randint(3, 8)
+    ae = random.randint(3, 9)
+    ec = _bpt_ec(ad, db, ae)
+    if level == "B":
+        opts, ans = _shuffle_options(f"{ec} cm", [f"{ae} cm", f"{ec + ad} cm", f"{db} cm"])
+        return _mcq(
+            6, 2, level,
+            f"In ΔABC, DE ∥ BC. AD = {ad} cm, DB = {db} cm, AE = {ae} cm. EC = ?",
+            opts, ans,
+            f"AD/DB = AE/EC ⇒ EC = {ae}×{db}/{ad} = {ec}.",
+        )
+    if level == "C":
+        ab = ad + db
+        ac = ae + ec
+        opts, ans = _shuffle_options(f"AE/AC = {ae}/{ac}", [f"AD/AB = {db}/{ab}", f"AE/EC = {db}/{ad}", f"AD/AE = {ec}/{ae}"])
+        return _mcq(
+            6, 2, level,
+            f"DE ∥ BC with AD = {ad}, DB = {db}, AE = {ae}, EC = {ec}. Which ratio is correct?",
+            opts, ans,
+            "Also AD/AB = AE/AC when DE ∥ BC.",
+        )
+    if level == "D":
+        pe, eq, pf, fr = 3, 4, 6, 8  # 3/4 = 6/8 → parallel
+        opts, ans = _shuffle_options("Yes, EF ∥ QR", ["No", "Only if PQ = PR", "Cannot tell"])
+        return _mcq(
+            6, 2, level,
+            f"In ΔPQR, PE = {pe} cm, EQ = {eq} cm, PF = {pf} cm, FR = {fr} cm. Is EF ∥ QR?",
+            opts, ans,
+            f"PE/EQ = {pe}/{eq} = PF/FR = {pf}/{fr} — converse of BPT applies.",
+        )
+    opts, ans = _shuffle_options(
+        "AE/ED = BF/FC when EF ∥ AB in a trapezium",
+        ["AE = BF always", "EF = AB", "No ratio relation"],
+    )
+    return _mcq(
+        6, 2, level,
+        "In trapezium ABCD (AB ∥ DC), EF ∥ AB with E on AD and F on BC. Then:",
+        opts, ans,
+    )
+
+
+def _gen_u6_t3(level: str) -> dict:
+    r1, r2 = random.randint(2, 4), random.randint(2, 4)
+    side_small = random.randint(4, 9)
+    side_large = side_small * r2 // r1
+    if level == "A":
+        opts, ans = _shuffle_options(
+            "If corresponding angles are equal, triangles are similar (AAA)",
+            ["If one side matches, triangles are congruent", "All triangles are similar", "Equal perimeters imply similarity"],
+        )
+        return _mcq(6, 3, level, "AAA similarity criterion (Theorem 6.3):", opts, ans)
+    if level == "B":
+        a, b, c = 3, 4, 5
+        ka = random.randint(2, 4)
+        opts, ans = _shuffle_options(
+            f"{ka * a}, {ka * b}, {ka * c}",
+            [f"{a + ka}, {b + ka}, {c + ka}", f"{a}, {b}, {c + 1}", f"{ka}, {ka + 1}, {ka + 2}"],
+        )
+        return _mcq(
+            6, 3, level,
+            f"Δ with sides {a}, {b}, {c} is similar to Δ with sides:",
+            opts, ans,
+            "SSS similarity: all three pairs of sides in the same ratio.",
+        )
+    if level == "C":
+        opts, ans = _shuffle_options(
+            "One equal angle and the sides including it are proportional (SAS)",
+            ["Two sides equal length only", "All angles 60°", "Same perimeter"],
+        )
+        return _mcq(6, 3, level, "SAS similarity criterion (Theorem 6.5) requires:", opts, ans)
+    if level == "D":
+        opts, ans = _shuffle_options("AAA (two angles equal)", ["SSS only", "Perimeter match", "Same area"])
+        return _mcq(
+            6, 3, level,
+            "In two triangles, ∠A = ∠D and ∠B = ∠E. Best criterion to prove similarity:",
+            opts, ans,
+            "Two angles equal ⇒ third pair equal ⇒ AAA.",
+        )
+    opts, ans = _shuffle_options(f"{side_large} cm", [f"{side_small} cm", f"{side_large + r1} cm", f"{side_small * r1 // r2} cm"])
+    return _mcq(
+        6, 3, level,
+        f"ΔABC ~ ΔDEF with AB/DE = {r1}/{r2}. If AB = {side_small} cm, then DE = ?",
+        opts, ans,
+        f"DE = AB × {r2}/{r1} = {side_large}.",
+    )
+
+
+def _gen_u6_t4(level: str) -> dict:
+    if level == "A":
+        a, b = 3, 4
+        c = 5
+        opts, ans = _shuffle_options(f"{c} cm", [f"{a + b} cm", f"{a * b} cm", f"{c + 1} cm"])
+        return _mcq(
+            6, 4, level,
+            f"Right triangle with legs {a} cm and {b} cm. Hypotenuse = ?",
+            opts, ans,
+            f"{a}² + {b}² = {c}².",
+        )
+    if level == "B":
+        opts, ans = _shuffle_options(
+            "Drop altitude on hypotenuse — creates similar right triangles",
+            ["Use factorisation of a² + b²", "Measure with a tape only", "Assume c = a + b"],
+        )
+        return _mcq(
+            6, 4, level,
+            "NCERT uses similarity of triangles to prove Pythagoras theorem by:",
+            opts, ans,
+        )
+    if level == "C":
+        h_obj, sh_obj = 150, 90  # cm
+        sh_pole = 60
+        h_pole = h_obj * sh_pole // sh_obj
+        opts, ans = _shuffle_options(f"{h_pole} cm", [f"{sh_pole} cm", f"{h_obj} cm", f"{h_pole + 30} cm"])
+        return _mcq(
+            6, 4, level,
+            f"A {h_obj // 100} m tree casts a {sh_obj // 100} m shadow. A pole casts {sh_pole // 100} m shadow. Pole height?",
+            opts, ans,
+            "Similar triangles: height/shadow is constant.",
+        )
+    if level == "D":
+        k = random.randint(2, 4)
+        area_ratio = k * k
+        opts, ans = _shuffle_options(f"{area_ratio}:1", [f"{k}:1", f"{2 * k}:1", f"{k + 1}:1"])
+        return _mcq(
+            6, 4, level,
+            f"Two similar triangles have corresponding sides in ratio 1:{k}. Ratio of their areas is:",
+            opts, ans,
+            "Area ratio = (scale factor)².",
+        )
+    # multi-step: ladder against wall
+    base, hyp = 6, 10
+    height = 8
+    opts, ans = _shuffle_options(f"{height} m", [f"{base} m", f"{hyp} m", f"{height + 2} m"])
+    return _mcq(
+        6, 4, level,
+        f"A ladder {hyp} m long rests against a wall with foot {base} m from the wall. Height reached on wall?",
+        opts, ans,
+        f"Pythagoras: h² = {hyp}² − {base}² = {height}².",
+    )
+
+
 GENERATORS: dict[tuple[int, int], callable] = {
     (1, 1): _gen_u1_t1,
     (1, 2): _gen_u1_t2,
@@ -1257,6 +1756,14 @@ GENERATORS: dict[tuple[int, int], callable] = {
     (4, 2): _gen_u4_t2,
     (4, 3): _gen_u4_t3,
     (4, 4): _gen_u4_t4,
+    (5, 1): _gen_u5_t1,
+    (5, 2): _gen_u5_t2,
+    (5, 3): _gen_u5_t3,
+    (5, 4): _gen_u5_t4,
+    (6, 1): _gen_u6_t1,
+    (6, 2): _gen_u6_t2,
+    (6, 3): _gen_u6_t3,
+    (6, 4): _gen_u6_t4,
 }
 
 

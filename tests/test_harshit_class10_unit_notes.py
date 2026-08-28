@@ -41,9 +41,23 @@ class TestClass10UnitNotes(unittest.TestCase):
         self.assertIn("a₁/a₂", formulas["body"])
         self.assertIn("Substitution", formulas["body"])
 
+    def test_unit6_guide_available(self) -> None:
+        self.assertTrue(h10un.unit_guide_available(6))
+        guide = h10un.get_unit_guide(6)
+        assert guide is not None
+        self.assertIn("Triangles", guide["title"])
+
+    def test_unit6_formulas_mention_bpt(self) -> None:
+        guide = h10un.get_unit_guide(6)
+        assert guide is not None
+        formulas = next(s for s in guide["sections"] if s["id"] == "formulas")
+        self.assertIn("AD/DB", formulas["body"])
+        self.assertIn("AAA", formulas["body"])
+
     def test_guide_version_tracked_for_units_with_guides(self) -> None:
         self.assertEqual(h10un.guide_version(2), 1)
         self.assertEqual(h10un.guide_version(3), 1)
+        self.assertEqual(h10un.guide_version(6), 1)
         self.assertEqual(h10un.guide_version(1), 0)
 
 

@@ -81,6 +81,29 @@ class TestHarshitClass10(unittest.TestCase):
         qs, _ = h10p.build_session_set(4, config, count=15)
         self.assertEqual(len(qs), 15)
 
+    def test_unit6_pdf_exists(self):
+        path = h10u.unit_pdf_path(6)
+        self.assertIsNotNone(path)
+        self.assertEqual(path.name, "jemh106.pdf")
+
+    def test_unit6_active_in_catalog(self):
+        unit = h10u.get_unit(6)
+        self.assertIsNotNone(unit)
+        self.assertTrue(unit.get("active"))
+        self.assertEqual(unit["title"], "Triangles")
+
+    def test_build_session_unit6(self):
+        config = h10t.default_week_config(6)
+        qs, _ = h10p.build_session_set(6, config, count=15)
+        self.assertEqual(len(qs), 15)
+        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+
+    def test_generate_unit6_question(self):
+        q = h10t.generate_question(6, 2, "B", templates_only=True)
+        self.assertIsNotNone(q)
+        self.assertEqual(q["unit_id"], 6)
+        self.assertEqual(q["chapter_ref"], "NCERT Ch 6 Triangles")
+
 
 if __name__ == "__main__":
     unittest.main()

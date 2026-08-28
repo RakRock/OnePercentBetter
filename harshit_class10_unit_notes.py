@@ -428,11 +428,380 @@ Then open **Week Setup**, pick all four topics at levels B–C, and start **Prac
             },
         ],
     },
+    5: {
+        "title": "Arithmetic Progressions — Unit Guide",
+        "subtitle": "NCERT Chapter 5 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 5** is about **patterns where you keep adding the same number** each time.
+
+**Real-life idea:**  
+Reena starts a job at **₹8000** per month. Every year her salary goes up by **₹500**. Her salaries for year 1, 2, 3, … are:
+
+`8000, 8500, 9000, 9500, …`
+
+Each new term = previous term **+ 500**. That fixed step is the **common difference** **d**.
+
+**Arithmetic Progression (AP)** = a list of numbers where each term (after the first) is obtained by adding the **same fixed number** **d** to the term before it.
+
+**First term** = **a** (or a₁)  
+**Common difference** = **d** (can be **positive**, **negative**, or **zero**)
+
+**General form:** `a, a + d, a + 2d, a + 3d, …`
+
+**Not an AP:** `2, 4, 8, 16, …` (multiply by 2 each time — that is a **geometric** pattern, not arithmetic).
+
+**The big questions of the chapter:**
+
+> 1. Is this list an AP? What are **a** and **d**?  
+> 2. What is the **nth term**?  
+> 3. What is the **sum of the first n terms**?  
+> 4. How do we use this in **daily-life** problems (salary, rows of plants, savings)?
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Patterns & definition 📈
+
+- Spot a **constant difference** between consecutive terms  
+- Find **a** (first term) and **d** (common difference)  
+- Decide if a list **is** or **is not** an AP  
+- **Finite AP** = has a last term · **Infinite AP** = goes on forever  
+
+---
+
+### 2. nth term 🔢
+
+**Formula:** **aₙ = a + (n − 1)d**
+
+- Find the **10th term**, **15th term**, etc.  
+- Find **which term** equals a given number (solve for **n**)  
+- Find **a** and **d** when two terms are given (e.g. 3rd term = 5, 7th term = 9)  
+- **Term from the end:** reverse the AP or use total number of terms first  
+
+---
+
+### 3. Sum of first n terms ➕
+
+**Formulas:**
+
+- **Sₙ = n/2 [2a + (n − 1)d]**  
+- **Sₙ = n/2 (a + l)** when the **last term l** is known  
+
+Use when the question asks for **total**, **sum**, or **all terms added**.
+
+---
+
+### 4. Word problems 🌱
+
+Turn the story into an AP:
+
+| Story | Often becomes |
+|-------|----------------|
+| Salary + fixed raise each year | a = starting amount, d = increment |
+| Rows of plants decreasing by 2 each row | a = first row, d = −2 |
+| Simple interest each year | Interests form an AP |
+| Numbers divisible by 3 | AP with d = 3 |
+
+Always **define** what **n** means (which year? which row?).
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **5.1 Introduction** | Patterns in nature and daily life |
+| **5.2 Arithmetic Progressions** | Definition, a and d, finite vs infinite |
+| **5.3 nth Term of an AP** | Formula aₙ = a + (n − 1)d |
+| **5.4 Sum of First n Terms** | Sₙ formulas and applications |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Test whether a list is an AP and find **a**, **d**  
+2. Find any **nth term** and **which term** equals a given value  
+3. Find **Sₙ** using the correct formula  
+4. Solve **word problems** (salary, rows, savings, divisible numbers)  
+5. Handle **terms from the end** of a finite AP  
+
+**Comes next:** **Unit 6 — Triangles** (geometry). Unit 5 is pure **number patterns** and **algebra**.
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### Check if a list is an AP
+
+Compute **a₂ − a₁**, **a₃ − a₂**, **a₄ − a₃**, …  
+If **all equal** → AP with that common difference **d**.  
+If **not equal** → **not** an AP.
+
+---
+
+### nth term
+
+**aₙ = a + (n − 1)d**
+
+Also written: **l = a + (n − 1)d** when **l** is the **last term**.
+
+**Find n when a term is given:**
+
+Set **aₙ = given value** and solve the linear equation for **n**.  
+**n must be a positive integer** for the term to belong to the list.
+
+---
+
+### Sum of first n terms
+
+**Sₙ = n/2 [2a + (n − 1)d]**
+
+**Sₙ = n/2 (a + l)**  ← use when last term **l** is known
+
+---
+
+### Useful special cases
+
+| Question type | Quick approach |
+|---------------|----------------|
+| Two-digit numbers divisible by k | AP from smallest to largest 2-digit multiple |
+| 3rd term = p, 7th term = q | a + 2d = p, a + 6d = q → solve pair |
+| Term from the end | Reverse AP: new a = old last term, new d = −old d |
+| Simple interest | Interest each year forms AP with d = P×R/100 |
+
+---
+
+### Quick reference
+
+```
+AP          → constant difference d
+aₙ          → a + (n−1)d
+Sₙ          → n/2[2a + (n−1)d]  OR  n/2(a + l)
+Not AP      → 2, 4, 8, 16 (×2 each time)
+Check n     → must be a positive whole number
+Word problem → write a, d, and what n stands for first
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+A comfortable order **before Practice**:
+
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Spot +500 / −2 patterns; define a and d | 15 min |
+| 2 | “Is this an AP?” — yes/no with reason | 15 min |
+| 3 | aₙ = a + (n−1)d — find 10th term | 20 min |
+| 4 | Find n when term = −81 (NCERT Example 4) | 20 min |
+| 5 | Sₙ formula — sum of first 10 terms | 20 min |
+| 6 | One word problem (rows of plants or salary) | 20 min |
+
+**Tips for Harshit’s age (Class 10):**
+
+- Write **a**, **d**, and **n** at the top of every problem before substituting.  
+- For “is it an AP?”, check **at least two** consecutive differences — one match is not enough.  
+- When solving for **n**, reject answers that are **not positive integers**.  
+- For sums, ask: “Do I know the **last term**?” → if yes, use **n/2(a + l)**.
+
+Then open **Week Setup**, pick all four topics at levels B–C, and start **Practice**. Try the **Unit Test** when formulas feel solid.
+
+**One sentence for Harshit:**
+
+> *An AP adds the same number every step — find any term with a + (n−1)d, find the total with Sₙ, and always check your story makes sense.*
+""",
+            },
+        ],
+    },
+    6: {
+        "title": "Triangles — Unit Guide",
+        "subtitle": "NCERT Chapter 6 · Read together before practice",
+        "sections": [
+            {
+                "id": "overview",
+                "title": "What this chapter is about",
+                "body": """
+**Unit 6** is about **similar figures** — same **shape**, not necessarily the same **size**.
+
+**Real-life idea:**  
+A photographer enlarges a 35 mm photo to 45 mm. Every line in the big photo is **45/35** times the small one. The **angles stay the same**; only lengths scale. That is **similarity**.
+
+**Congruent** = same shape **and** same size.  
+**Similar** = same shape, sides in a **fixed ratio** (scale factor).
+
+**The big ideas of the chapter:**
+
+> 1. When is a line **parallel** to a triangle side? → **BPT** (Basic Proportionality Theorem)  
+> 2. When are two triangles **similar**? → **AAA**, **SSS**, **SAS** criteria  
+> 3. How do we use similarity for **height of a tower**, **shadow problems**, and a proof of **Pythagoras**?
+""",
+            },
+            {
+                "id": "topics",
+                "title": "Four topics in this unit",
+                "body": """
+### 1. Similar figures & scale factor 🔺
+
+- Congruent ⇒ similar, but **not** the reverse  
+- **Scale factor** = ratio of corresponding sides (e.g. 2:3)  
+- Similar polygons: **equal angles** + **proportional sides**  
+
+---
+
+### 2. Basic Proportionality Theorem (BPT) 📏
+
+**Theorem 6.1:** If DE ∥ BC in ΔABC, then **AD/DB = AE/EC**.
+
+**Converse (6.2):** If **AD/DB = AE/EC**, then **DE ∥ BC**.
+
+Use for finding a missing segment or checking parallelism.
+
+---
+
+### 3. Similarity criteria △
+
+| Criterion | What you need |
+|-----------|----------------|
+| **AAA / AA** | Corresponding angles equal |
+| **SSS** | All three pairs of sides proportional |
+| **SAS** | One equal angle + sides **including** it proportional |
+
+Pick the criterion that matches what the question gives.
+
+---
+
+### 4. Pythagoras & applications 📐
+
+- **a² + b² = c²** in a right triangle (c = hypotenuse)  
+- NCERT proves Pythagoras using **similar right triangles**  
+- **Shadow / height** problems → similar triangles, same ratio  
+- **Area ratio** of similar triangles = **(side ratio)²**
+""",
+            },
+            {
+                "id": "ncert",
+                "title": "How NCERT organises the chapter",
+                "body": """
+| Section | Content |
+|---------|---------|
+| **6.1 Introduction** | Similar vs congruent; indirect measurement |
+| **6.2 Similar Figures** | Scale factor; conditions for similar polygons |
+| **6.3 Similarity of Triangles** | BPT (Thales) and converse |
+| **6.4 Criteria for Similarity** | AAA, SSS, SAS (Theorems 6.3–6.5) |
+| **6.5 Summary** | Pythagoras via similarity; RHS note |
+
+**By the end of the unit** Harshit should be able to:
+
+1. Tell **similar vs congruent** and find **scale factor**  
+2. Use **BPT** and its **converse** to find segments or prove DE ∥ BC  
+3. Prove triangles similar using **AAA, SSS, or SAS**  
+4. Solve **shadow / height** and **ladder** problems  
+5. Use **area ratio = (side ratio)²** for similar triangles  
+
+**Comes next:** **Unit 7 — Coordinate Geometry**. Unit 6 is **pure geometry** with ratios and proofs.
+""",
+            },
+            {
+                "id": "formulas",
+                "title": "Formula sheet — get these comfortable",
+                "body": """
+### BPT (DE ∥ BC)
+
+**AD/DB = AE/EC**
+
+Also: **AD/AB = AE/AC** when DE ∥ BC.
+
+**Converse:** Equal ratios on two sides ⇒ line **parallel** to third side.
+
+---
+
+### Similarity criteria
+
+- **AAA:** All corresponding angles equal (often only need **AA**)  
+- **SSS:** AB/DE = BC/EF = CA/FD  
+- **SAS:** One angle equal + **including** sides proportional  
+
+---
+
+### Pythagoras (right triangle)
+
+**Hypotenuse² = leg₁² + leg₂²**
+
+Example: legs 6 and 8 → hypotenuse = 10.
+
+---
+
+### Indirect measurement
+
+```
+height₁ / shadow₁ = height₂ / shadow₂
+```
+
+Same sun angle ⇒ similar triangles.
+
+---
+
+### Area of similar triangles
+
+If sides are in ratio **k : 1**, then  
+**ar(large) / ar(small) = k²**
+
+---
+
+### Quick reference
+
+```
+Similar      → same shape, sides in ratio
+BPT          → parallel line ⇒ divide sides equally (in ratio)
+AAA          → angles match → similar
+Area ratio   → (side ratio)²
+Pythagoras   → a² + b² = c² (right triangle only)
+```
+""",
+            },
+            {
+                "id": "teaching",
+                "title": "Suggested teaching order",
+                "body": """
+A comfortable order **before Practice**:
+
+| Step | Focus | ~Time |
+|------|--------|-------|
+| 1 | Congruent vs similar; scale factor 2:3 | 15 min |
+| 2 | BPT: DE ∥ BC → find EC (one numeric example) | 20 min |
+| 3 | Converse: check if EF ∥ QR from ratios | 15 min |
+| 4 | AAA: two angles equal → similar | 15 min |
+| 5 | Find missing side using similarity ratio | 20 min |
+| 6 | Shadow problem or Pythagoras ladder | 20 min |
+
+**Tips for Harshit's age (Class 10):**
+
+- Draw a **neat diagram** and mark parallel lines with arrows.  
+- For BPT, write **AD/DB = AE/EC** before substituting numbers.  
+- For similarity, **name corresponding vertices** in order (A ↔ D, B ↔ E, …).  
+- Area questions: square the **side ratio**, not the ratio itself.
+
+Then open **Week Setup**, pick all four topics at levels B–C, and start **Practice**. Try the **Unit Test** when BPT and one similarity criterion feel solid.
+
+**One sentence for Harshit:**
+
+> *Parallel lines split sides in the same ratio; equal angles or proportional sides make triangles similar — then use ratios for lengths, areas, and heights.*
+""",
+            },
+        ],
+    },
 }
 
 
 # Bump a unit's version when its guide content changes so returning users land on the guide tab.
-GUIDE_VERSIONS: dict[int, int] = {2: 1, 3: 1}
+GUIDE_VERSIONS: dict[int, int] = {2: 1, 3: 1, 5: 1, 6: 1}
 
 
 def unit_guide_available(unit_id: int) -> bool:

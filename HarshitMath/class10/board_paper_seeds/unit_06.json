@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "unit_id": 6,
+    "chapter": "Triangles",
+    "ncert": "Chapter 6",
+    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE SQP 2025-26", "NCERT Ch 6"]
+  },
+  "mcq": [
+    {
+      "id": "b30_tri_mcq1",
+      "source_paper": "30/1/1 (board-style)",
+      "question": "In ΔABC, DE ∥ BC with AD = 4 cm, DB = 6 cm, AE = 5 cm. Then EC equals:",
+      "options": ["7.5 cm", "5 cm", "6 cm", "4 cm"],
+      "answer": 0,
+      "explanation": "By BPT: AD/DB = AE/EC ⇒ 4/6 = 5/EC ⇒ EC = 7.5 cm."
+    },
+    {
+      "id": "b30_tri_mcq2",
+      "source_paper": "30/1/2 (board-style)",
+      "question": "If two triangles are similar, then the ratio of their corresponding sides is:",
+      "options": ["equal", "proportional to areas", "always 1", "equal to ratio of perimeters only"],
+      "answer": 0,
+      "explanation": "Similar triangles have corresponding sides in the same ratio (scale factor)."
+    },
+    {
+      "id": "bsqp_tri_mcq",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "question": "Which criterion is sufficient to prove ΔABC ~ ΔDEF when ∠A = ∠D and ∠B = ∠E?",
+      "options": ["AAA similarity", "SSS similarity only", "RHS congruence", "SAS congruence"],
+      "answer": 0,
+      "explanation": "Two pairs of equal angles ⇒ third pair equal ⇒ AAA (AA) similarity."
+    }
+  ],
+  "assertion_reason": [
+    {
+      "id": "b30_tri_ar",
+      "source_paper": "30/1/1 (board-style)",
+      "assertion": "All congruent figures are similar.",
+      "reason": "Congruent figures have the same shape and the same size.",
+      "answer": 0,
+      "explanation": "Both true; same shape and size implies corresponding sides in ratio 1:1."
+    }
+  ],
+  "vsa": [
+    {
+      "id": "b30_tri_vsa_bpt",
+      "source_paper": "30/1/1",
+      "marks": 2,
+      "question": "In ΔPQR, ST ∥ QR with PS = 3 cm, SQ = 6 cm, PT = 4 cm. Find TR.",
+      "model_answer": "By BPT: PS/SQ = PT/TR ⇒ 3/6 = 4/TR ⇒ TR = 8 cm.",
+      "rubric": ["Apply BPT", "TR = 8 cm"]
+    },
+    {
+      "id": "b30_tri_vsa_sim",
+      "source_paper": "30/1/2",
+      "marks": 2,
+      "question": "ΔABC ~ ΔPQR with AB/PQ = 2/3. If AB = 8 cm, find PQ.",
+      "model_answer": "PQ = AB × 3/2 = 12 cm.",
+      "rubric": ["Use similarity ratio", "PQ = 12 cm"]
+    }
+  ],
+  "sa": [
+    {
+      "id": "b30_tri_sa_criterion",
+      "source_paper": "30/1/3",
+      "marks": 3,
+      "question": "In ΔABC and ΔDEF, AB/DE = BC/EF = CA/FD = 3/4. Are the triangles similar? Which criterion applies?",
+      "model_answer": "Yes. All three pairs of corresponding sides are proportional ⇒ SSS similarity criterion.",
+      "rubric": ["State similar", "SSS criterion", "Sides in ratio 3:4"]
+    },
+    {
+      "id": "bsqp_tri_sa_pyth",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 3,
+      "question": "A vertical pole 6 m high casts a shadow 4 m long. At the same time, a tower casts a shadow 28 m long. Find the height of the tower.",
+      "model_answer": "Similar triangles: height/shadow constant. Tower height = 6/4 × 28 = 42 m.",
+      "rubric": ["Set up ratio", "Height = 42 m"]
+    }
+  ],
+  "la": [
+    {
+      "id": "b30_tri_la_bpt",
+      "source_paper": "30/1/1 (NCERT Ex 6.2 style)",
+      "marks": 5,
+      "question": "Prove that a line drawn through the mid-point of one side of a triangle parallel to another side bisects the third side.",
+      "model_answer": "Let D be mid-point of AB and DE ∥ BC. By converse of BPT, AE/EC = AD/DB = 1 ⇒ E is mid-point of AC.",
+      "rubric": ["State given and to prove", "Use converse BPT", "Conclude E bisects AC"]
+    },
+    {
+      "id": "b30_tri_la_pyth",
+      "source_paper": "30/1/2",
+      "marks": 5,
+      "question": "In right ΔABC (∠B = 90°), BD ⊥ AC. Prove that BD² = AD × DC.",
+      "model_answer": "ΔADB ~ ΔBDC (AA). BD/DC = AD/BD ⇒ BD² = AD × DC.",
+      "rubric": ["Identify similar triangles", "Write ratio", "Obtain BD² = AD·DC"]
+    },
+    {
+      "id": "bsqp_tri_la_area",
+      "source_paper": "CBSE SQP 2025-26 (adapted)",
+      "marks": 5,
+      "question": "ΔABC ~ ΔDEF with ar(ΔABC) = 36 cm² and ar(ΔDEF) = 81 cm². If BC = 8 cm, find EF.",
+      "model_answer": "Area ratio = 36/81 = 4/9 = (BC/EF)² ⇒ BC/EF = 2/3 ⇒ EF = 12 cm.",
+      "rubric": ["Area ratio = square of side ratio", "Side ratio 2:3", "EF = 12 cm"]
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "questions": {
+    "A": [
+      {
+        "id": "u6_t3_A_067b9209",
+        "question": "AAA similarity criterion (Theorem 6.3):",
+        "options": [
+          "Equal perimeters imply similarity",
+          "If corresponding angles are equal, triangles are similar (AAA)",
+          "All triangles are similar",
+          "If one side matches, triangles are congruent"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "A",
+        "unit_id": 6,
+        "category": "u6_t3_A",
+        "category_label": "Criteria · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      }
+    ],
+    "B": [
+      {
+        "id": "u6_t3_B_ce518ae8",
+        "question": "Δ with sides 3, 4, 5 is similar to Δ with sides:",
+        "options": [
+          "5, 6, 7",
+          "6, 8, 10",
+          "2, 3, 4",
+          "3, 4, 6"
+        ],
+        "answer": 1,
+        "explanation": "SSS similarity: all three pairs of sides in the same ratio.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t3_B",
+        "category_label": "Criteria · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_B_ef3950a7",
+        "question": "Δ with sides 3, 4, 5 is similar to Δ with sides:",
+        "options": [
+          "3, 4, 6",
+          "4, 5, 6",
+          "12, 16, 20",
+          "7, 8, 9"
+        ],
+        "answer": 2,
+        "explanation": "SSS similarity: all three pairs of sides in the same ratio.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t3_B",
+        "category_label": "Criteria · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_B_62ea0d48",
+        "question": "Δ with sides 3, 4, 5 is similar to Δ with sides:",
+        "options": [
+          "3, 4, 6",
+          "3, 4, 5",
+          "6, 7, 8",
+          "9, 12, 15"
+        ],
+        "answer": 3,
+        "explanation": "SSS similarity: all three pairs of sides in the same ratio.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 6,
+        "category": "u6_t3_B",
+        "category_label": "Criteria · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      }
+    ],
+    "C": [
+      {
+        "id": "u6_t3_C_2ab3a644",
+        "question": "SAS similarity criterion (Theorem 6.5) requires:",
+        "options": [
+          "One equal angle and the sides including it are proportional (SAS)",
+          "Two sides equal length only",
+          "All angles 60°",
+          "Same perimeter"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t3_C",
+        "category_label": "Criteria · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      }
+    ],
+    "D": [
+      {
+        "id": "u6_t3_D_c5ee49ab",
+        "question": "In two triangles, ∠A = ∠D and ∠B = ∠E. Best criterion to prove similarity:",
+        "options": [
+          "SSS only",
+          "Perimeter match",
+          "AAA (two angles equal)",
+          "Same area"
+        ],
+        "answer": 2,
+        "explanation": "Two angles equal ⇒ third pair equal ⇒ AAA.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t3_D",
+        "category_label": "Criteria · Level D",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      }
+    ],
+    "E": [
+      {
+        "id": "u6_t3_E_b641d56d",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 2/4. If AB = 5 cm, then DE = ?",
+        "options": [
+          "2 cm",
+          "12 cm",
+          "10 cm",
+          "5 cm"
+        ],
+        "answer": 2,
+        "explanation": "DE = AB × 4/2 = 10.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_601dc0aa",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 3/3. If AB = 9 cm, then DE = ?",
+        "options": [
+          "None of these",
+          "12 cm",
+          "9 cm (alt)",
+          "9 cm"
+        ],
+        "answer": 3,
+        "explanation": "DE = AB × 3/3 = 9.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_3acba75c",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 2/3. If AB = 8 cm, then DE = ?",
+        "options": [
+          "12 cm",
+          "14 cm",
+          "5 cm",
+          "8 cm"
+        ],
+        "answer": 0,
+        "explanation": "DE = AB × 3/2 = 12.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_141b5713",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 3/4. If AB = 8 cm, then DE = ?",
+        "options": [
+          "10 cm",
+          "8 cm",
+          "6 cm",
+          "13 cm"
+        ],
+        "answer": 0,
+        "explanation": "DE = AB × 4/3 = 10.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_053fde5f",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 2/2. If AB = 9 cm, then DE = ?",
+        "options": [
+          "None of these",
+          "9 cm",
+          "11 cm",
+          "9 cm (alt)"
+        ],
+        "answer": 1,
+        "explanation": "DE = AB × 2/2 = 9.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_ba6d7ca0",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 4/3. If AB = 7 cm, then DE = ?",
+        "options": [
+          "5 cm (alt)",
+          "5 cm",
+          "9 cm",
+          "7 cm"
+        ],
+        "answer": 1,
+        "explanation": "DE = AB × 3/4 = 5.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_76ca5050",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 2/3. If AB = 9 cm, then DE = ?",
+        "options": [
+          "9 cm",
+          "15 cm",
+          "6 cm",
+          "13 cm"
+        ],
+        "answer": 3,
+        "explanation": "DE = AB × 3/2 = 13.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_0d5ff539",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 4/4. If AB = 4 cm, then DE = ?",
+        "options": [
+          "4 cm (alt)",
+          "8 cm",
+          "None of these",
+          "4 cm"
+        ],
+        "answer": 3,
+        "explanation": "DE = AB × 4/4 = 4.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_5d5fd4c3",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 2/4. If AB = 8 cm, then DE = ?",
+        "options": [
+          "4 cm",
+          "16 cm",
+          "18 cm",
+          "8 cm"
+        ],
+        "answer": 1,
+        "explanation": "DE = AB × 4/2 = 16.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_06a450ae",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 3/2. If AB = 8 cm, then DE = ?",
+        "options": [
+          "8 cm",
+          "12 cm",
+          "5 cm",
+          "5 cm (alt)"
+        ],
+        "answer": 2,
+        "explanation": "DE = AB × 2/3 = 5.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_9ea89e53",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 2/3. If AB = 7 cm, then DE = ?",
+        "options": [
+          "12 cm",
+          "7 cm",
+          "10 cm",
+          "4 cm"
+        ],
+        "answer": 2,
+        "explanation": "DE = AB × 3/2 = 10.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_4b4ed75e",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 2/4. If AB = 6 cm, then DE = ?",
+        "options": [
+          "12 cm",
+          "14 cm",
+          "6 cm",
+          "3 cm"
+        ],
+        "answer": 0,
+        "explanation": "DE = AB × 4/2 = 12.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_8acd1d44",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 3/4. If AB = 9 cm, then DE = ?",
+        "options": [
+          "15 cm",
+          "6 cm",
+          "9 cm",
+          "12 cm"
+        ],
+        "answer": 3,
+        "explanation": "DE = AB × 4/3 = 12.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_68a47e6b",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 4/4. If AB = 7 cm, then DE = ?",
+        "options": [
+          "7 cm (alt)",
+          "7 cm",
+          "None of these",
+          "11 cm"
+        ],
+        "answer": 1,
+        "explanation": "DE = AB × 4/4 = 7.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t3_E_3d952b67",
+        "question": "ΔABC ~ ΔDEF with AB/DE = 4/2. If AB = 8 cm, then DE = ?",
+        "options": [
+          "4 cm (alt)",
+          "8 cm",
+          "4 cm",
+          "16 cm"
+        ],
+        "answer": 2,
+        "explanation": "DE = AB × 2/4 = 4.",
+        "topic": 3,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t3_E",
+        "category_label": "Criteria · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      }
+    ]
+  },
+  "meta": {
+    "unit_id": 6,
+    "topic_id": 3
+  }
+}
