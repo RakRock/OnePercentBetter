@@ -1142,6 +1142,120 @@
         "category_label": "Factor · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t2_B_d2c29e02",
+        "question": "Solve by factorisation: x² + 8x + 7 = 0",
+        "options": [
+          "x = -8",
+          "x = 7",
+          "x = -1, -7",
+          "x = 1, 7"
+        ],
+        "answer": 2,
+        "explanation": "Factor: (x - -1)(x - -7) = 0.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t2_B",
+        "category_label": "Factor · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t2_B_cb1d71d6",
+        "question": "Solve by factorisation: x² - x - 42 = 0",
+        "options": [
+          "x = -7, 6",
+          "x = -42",
+          "x = 7, -6",
+          "x = 1"
+        ],
+        "answer": 2,
+        "explanation": "Factor: (x - 7)(x - -6) = 0.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t2_B",
+        "category_label": "Factor · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t2_B_9fbd4ae0",
+        "question": "Solve by factorisation: x² - 3x = 0",
+        "options": [
+          "x = 0",
+          "x = 3",
+          "x = 0, -3",
+          "x = 0, 3"
+        ],
+        "answer": 3,
+        "explanation": "Factor: (x - 0)(x - 3) = 0.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t2_B",
+        "category_label": "Factor · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t2_B_2d27a909",
+        "question": "Solve by factorisation: x² - 16x + 64 = 0",
+        "options": [
+          "x = 64",
+          "x = -8, -8",
+          "x = 16",
+          "x = 8 (repeated)"
+        ],
+        "answer": 3,
+        "explanation": "Factor: (x - 8)(x - 8) = 0.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t2_B",
+        "category_label": "Factor · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t2_B_f45fb62e",
+        "question": "Solve by factorisation: x² - 3x - 18 = 0",
+        "options": [
+          "x = 3",
+          "x = -18",
+          "x = -6, 3",
+          "x = 6, -3"
+        ],
+        "answer": 3,
+        "explanation": "Factor: (x - 6)(x - -3) = 0.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t2_B",
+        "category_label": "Factor · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t2_B_16c10b46",
+        "question": "Solve by factorisation: x² + 9x + 20 = 0",
+        "options": [
+          "x = -9",
+          "x = 4, 5",
+          "x = 20",
+          "x = -4, -5"
+        ],
+        "answer": 3,
+        "explanation": "Factor: (x - -4)(x - -5) = 0.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t2_B",
+        "category_label": "Factor · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
       }
     ],
     "C": [

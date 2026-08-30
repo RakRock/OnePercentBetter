@@ -1144,6 +1144,63 @@
         "category_label": "Apps · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_29d8c379",
+        "question": "A ladder 13 m long rests against a wall with foot 5 m away. Height on wall = ?",
+        "options": [
+          "13 m",
+          "5 m",
+          "14 m",
+          "12 m"
+        ],
+        "answer": 3,
+        "explanation": "h² = 13² - 5².",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_0452cd6f",
+        "question": "A ladder 10 m long rests against a wall with foot 6 m away. Height on wall = ?",
+        "options": [
+          "10 m",
+          "8 m (alt)",
+          "6 m",
+          "8 m"
+        ],
+        "answer": 3,
+        "explanation": "h² = 10² - 6².",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_C_cc14a1bb",
+        "question": "A ladder 10 m long rests against a wall with foot 8 m away. Height on wall = ?",
+        "options": [
+          "8 m",
+          "10 m",
+          "6 m (alt)",
+          "6 m"
+        ],
+        "answer": 3,
+        "explanation": "h² = 10² - 8².",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 9,
+        "category": "u9_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       }
     ],
     "D": [
@@ -1715,6 +1772,120 @@
         "category": "u9_t4_D",
         "category_label": "Apps · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_9e664c04",
+        "question": "Tower seen at 30° from point A and 60° from point B (A-B = 40 m). Height ≈ ?",
+        "options": [
+          "20 m",
+          "40 m",
+          "38 m",
+          "23 m"
+        ],
+        "answer": 3,
+        "explanation": "Set up two equations in height and distances.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_0d0fe43c",
+        "question": "Tower seen at 30° from point A and 60° from point B (A-B = 90 m). Height ≈ ?",
+        "options": [
+          "52 m",
+          "45 m",
+          "90 m",
+          "67 m"
+        ],
+        "answer": 0,
+        "explanation": "Set up two equations in height and distances.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_b3b84ef0",
+        "question": "Tower seen at 30° from point A and 60° from point B (A-B = 49 m). Height ≈ ?",
+        "options": [
+          "24 m",
+          "28 m",
+          "43 m",
+          "49 m"
+        ],
+        "answer": 1,
+        "explanation": "Set up two equations in height and distances.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_28462322",
+        "question": "Tower seen at 30° from point A and 60° from point B (A-B = 67 m). Height ≈ ?",
+        "options": [
+          "33 m",
+          "67 m",
+          "54 m",
+          "39 m"
+        ],
+        "answer": 3,
+        "explanation": "Set up two equations in height and distances.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_b86489aa",
+        "question": "Tower seen at 30° from point A and 60° from point B (A-B = 63 m). Height ≈ ?",
+        "options": [
+          "51 m",
+          "31 m",
+          "63 m",
+          "36 m"
+        ],
+        "answer": 3,
+        "explanation": "Set up two equations in height and distances.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t4_D_1f2f939d",
+        "question": "Tower seen at 30° from point A and 60° from point B (A-B = 75 m). Height ≈ ?",
+        "options": [
+          "58 m",
+          "75 m",
+          "43 m",
+          "37 m"
+        ],
+        "answer": 2,
+        "explanation": "Set up two equations in height and distances.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       }
     ],

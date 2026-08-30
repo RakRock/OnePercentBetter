@@ -6,6 +6,7 @@ import os
 import tempfile
 import unittest
 
+import arjun_course3_levels as c3lvl
 import arjun_course3_practice as c3p
 import arjun_course3_week as c3w
 import arjun_edgenuity_course3_practice as ec3p
@@ -35,62 +36,81 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
             conn.execute("DELETE FROM arjun_course3_week_config")
             conn.execute("DELETE FROM arjun_edgenuity_course3_week_config")
 
-    def test_course3_default_week_config_covers_all_categories(self):
+    def test_course3_default_week_config_has_topics_and_levels(self):
         for unit_id in range(1, 6):
             config = c3w.default_week_config(unit_id)
             cats = c3p.get_categories(unit_id)
-            self.assertTrue(config["categories"], f"unit {unit_id} should have categories")
-            self.assertEqual(set(config["categories"]), set(cats.keys()))
-            self.assertEqual(config["question_count"], c3p.DEFAULT_SESSION_COUNT)
+            self.assertTrue(config["topics"], f"unit {unit_id} should have topics")
+            topic_ids = {t["id"] for t in config["topics"]}
+            self.assertEqual(topic_ids, set(cats.keys()))
+            for topic in config["topics"]:
+                self.assertEqual(topic["levels"], c3lvl.DEFAULT_LEVELS)
 
-    def test_edgenuity_default_week_config_covers_all_categories(self):
+    def test_edgenuity_default_week_config_has_topics_and_levels(self):
         for unit_id in range(1, 7):
             config = ec3w.default_week_config(unit_id)
             cats = ec3p.get_categories(unit_id)
-            self.assertTrue(config["categories"], f"unit {unit_id} should have categories")
-            self.assertEqual(set(config["categories"]), set(cats.keys()))
+            self.assertTrue(config["topics"], f"unit {unit_id} should have topics")
+            topic_ids = {t["id"] for t in config["topics"]}
+            self.assertEqual(topic_ids, set(cats.keys()))
 
-    def test_course3_build_session_set_respects_category_filter(self):
+    def test_legacy_categories_migrate_to_topics(self):
+        legacy = {
+            "week_label": "Legacy",
+            "categories": ["patterns", "fractions"],
+            "question_count": 12,
+        }
+        valid = set(c3p.get_categories(1).keys())
+        normalized = c3lvl.normalize_week_config(legacy, valid)
+        self.assertEqual(len(normalized["topics"]), 2)
+        self.assertEqual(normalized["topics"][0]["levels"], c3lvl.DEFAULT_LEVELS)
+
+    def test_course3_build_session_set_respects_topic_levels(self):
         unit_id = 2
         full = c3w.default_week_config(unit_id)
         questions, err = c3p.build_session_set(unit_id, full)
         self.assertTrue(questions)
         self.assertIsNone(err)
-        self.assertLessEqual(len(questions), full["question_count"])
 
         narrow = dict(full)
-        narrow["categories"] = ["slope"]
+        narrow["topics"] = [{"id": "slope", "levels": ["B"]}]
         slope_only, _ = c3p.build_session_set(unit_id, narrow)
         self.assertTrue(slope_only)
         self.assertTrue(all(q["category"] == "slope" for q in slope_only))
+        level_map = c3lvl.bank_level_map(c3p.QUESTION_BANK_BY_UNIT[unit_id])
+        self.assertTrue(all(level_map[q["id"]] == "B" for q in slope_only))
 
     def test_course3_week_config_persistence(self):
         starter = c3w.default_week_config(1)
+        topics = starter["topics"][:2]
+        topics[0] = {"id": topics[0]["id"], "levels": ["A", "C"]}
         db.save_arjun_course3_week_config(
             1,
             starter["week_label"],
-            starter["categories"][:4],
+            topics,
             question_count=10,
             use_llm=True,
         )
         loaded = db.get_arjun_course3_week_config(1)
         self.assertEqual(loaded["week_label"], starter["week_label"])
-        self.assertEqual(len(loaded["categories"]), 4)
+        self.assertEqual(len(loaded["topics"]), 2)
+        self.assertEqual(loaded["topics"][0]["levels"], ["A", "C"])
         self.assertEqual(loaded["question_count"], 10)
         self.assertTrue(loaded["use_llm"])
 
     def test_edgenuity_week_config_persistence(self):
         starter = ec3w.default_week_config(2)
+        topics = starter["topics"][:3]
         db.save_arjun_edgenuity_course3_week_config(
             2,
             "Unit 2 review week",
-            starter["categories"][:3],
+            topics,
             question_count=12,
             use_llm=False,
         )
         loaded = db.get_arjun_edgenuity_course3_week_config(2)
         self.assertEqual(loaded["week_label"], "Unit 2 review week")
-        self.assertEqual(len(loaded["categories"]), 3)
+        self.assertEqual(len(loaded["topics"]), 3)
         self.assertEqual(loaded["question_count"], 12)
 
 

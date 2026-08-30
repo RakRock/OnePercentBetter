@@ -42,8 +42,8 @@ TOPICS: dict[int, dict[int, dict]] = {
                 "A": "HCF or LCM of two small numbers",
                 "B": "Use prime factorisation for HCF/LCM",
                 "C": "Verify HCF × LCM = product (two numbers)",
-                "D": "HCF/LCM of three integers",
-                "E": "LCM word problems (meet again)",
+                "D": "HCF/LCM of three integers; Euclid & prime-factor steps",
+                "E": "LCM word problems; HCF/LCM pair from given HCF & LCM",
             },
         },
         3: {
@@ -54,8 +54,8 @@ TOPICS: dict[int, dict[int, dict]] = {
                 "A": "Classify rational vs irrational",
                 "B": "Theorem 1.2: prime divides square",
                 "C": "Proof by contradiction — first step",
-                "D": "√p is irrational (p prime)",
-                "E": "Prove expressions like 5 − √3 irrational",
+                "D": "√p is irrational (p prime); proof steps (assume & contradict)",
+                "E": "Prove expressions like 5 − √3 irrational; multi-step proofs",
             },
         },
         4: {
@@ -104,7 +104,7 @@ TOPICS: dict[int, dict[int, dict]] = {
                 "A": "Sum of zeroes (quadratic)",
                 "B": "Product of zeroes (quadratic)",
                 "C": "Form quadratic from sum and product",
-                "D": "Relations for ax² + bx + c",
+                "D": "Relations for ax² + bx + c; surd conjugate zeroes",
                 "E": "Find unknown coefficient from a given zero",
             },
         },
@@ -117,7 +117,7 @@ TOPICS: dict[int, dict[int, dict]] = {
                 "B": "Check whether (x − a) is a factor",
                 "C": "Remainder theorem for quadratics",
                 "D": "Find a zero using the factor theorem",
-                "E": "Find missing coefficient using a factor",
+                "E": "Cubic factor (x−a): quotient, all zeroes, verify quadratic relations",
             },
         },
     },
@@ -142,8 +142,8 @@ TOPICS: dict[int, dict[int, dict]] = {
                 "A": "Solve simple pair (small integers)",
                 "B": "Express one variable and substitute",
                 "C": "Find x after substitution",
-                "D": "Find y after substitution",
-                "E": "Substitution with fractions/coefficients",
+                "D": "Find y after substitution (stepwise)",
+                "E": "Substitution with coefficients; express & full solve",
             },
         },
         3: {
@@ -154,8 +154,8 @@ TOPICS: dict[int, dict[int, dict]] = {
                 "A": "Add/subtract equations to eliminate",
                 "B": "Make coefficients equal then eliminate",
                 "C": "Solve for x",
-                "D": "Solve for y",
-                "E": "Elimination with scaled equations",
+                "D": "Find y after elimination (stepwise)",
+                "E": "Elimination with scaled equations; full solution steps",
             },
         },
         4: {
@@ -166,8 +166,8 @@ TOPICS: dict[int, dict[int, dict]] = {
                 "A": "Cross-multiplication formula",
                 "B": "Apply cross-multiplication",
                 "C": "Age / number word problems",
-                "D": "Fraction and digit problems",
-                "E": "Multi-step application problems",
+                "D": "Digit problems; consistency & age setup/solve steps",
+                "E": "Multi-step applications; ages solve & consistency",
             },
         },
     },
@@ -1008,6 +1008,9 @@ def _gen_u1_t2(level: str) -> dict:
         opts, ans = _shuffle_options(correct, wrong)
         return _mcq(1, 2, level, qtext, opts, ans, expl)
     if level == "D":
+        if random.random() < 0.5:
+            step = random.choice(["euclid_r1", "euclid_hcf", "prime_hcf", "prime_lcm"])
+            return _u1_multistep_mcq(1, 2, level, step=step, canonical=random.random() < 0.25)
         a, b, c = sorted([random.randint(4, 60) for _ in range(3)])
         if random.random() < 0.5:
             val = math.gcd(math.gcd(a, b), c)
@@ -1017,6 +1020,9 @@ def _gen_u1_t2(level: str) -> dict:
             qtext = f"LCM({a}, {b}, {c}) = ?"
         opts, ans = _shuffle_options(str(val), [str(a + b + c), str(a * b), str(val + 4)])
         return _mcq(1, 2, level, qtext, opts, ans)
+    if random.random() < 0.55:
+        step = random.choice(["hcf_lcm_pair", "hcf_product_lcm", "euclid_hcf"])
+        return _u1_multistep_mcq(1, 2, level, step=step, canonical=step == "hcf_lcm_pair" and random.random() < 0.3)
     t1, t2 = _random_pair()
     lcm = t1 * t2 // math.gcd(t1, t2)
     names = random.choice([("Sonia", "Ravi"), ("Asha", "Ben"), ("Mira", "Jay")])
@@ -1054,12 +1060,18 @@ def _gen_u1_t3(level: str) -> dict:
         )
         return _mcq(1, 3, level, f"Proof by contradiction that {sym} is irrational begins by:", opts, ans)
     if level == "D":
+        if random.random() < 0.45:
+            step = random.choice(["irrational_assume", "irrational_contradict"])
+            return _u1_multistep_mcq(1, 3, level, step=step, canonical=random.random() < 0.2)
         p = random.choice([5, 7, 11, 13, 17, 19, 23])
         opts, ans = _shuffle_options(
             f"√{p} is irrational",
             [f"√{p} is rational", f"{p} is composite", f"√{p} = {p}/2"],
         )
         return _mcq(1, 3, level, f"Which statement about √{p} is true?", opts, ans, f"√{p} is irrational for prime {p}.")
+    if random.random() < 0.4:
+        step = random.choice(["irrational_assume", "irrational_contradict"])
+        return _u1_multistep_mcq(1, 3, level, step=step)
     a, b = random.randint(2, 9), random.choice([2, 3, 5, 7])
     expr = f"{a} − √{b}" if random.random() < 0.5 else f"{a} + √{b}"
     opts, ans = _shuffle_options(
@@ -1157,6 +1169,66 @@ def _poly_quadratic(b: int, c: int, a: int = 1) -> str:
     return head + mid + tail
 
 
+def _fmt_surd_zero(a: int, b: int, rad: int, *, plus: bool) -> str:
+    """Format a conjugate surd zero like (5 − 2√3) or (5 + 2√3)."""
+    surd = f"√{rad}" if b == 1 else f"{b}√{rad}"
+    sign = "+" if plus else "−"
+    return f"({a} {sign} {surd})"
+
+
+def _random_surd_conjugate_zeroes() -> tuple[int, int, int, int, int]:
+    """Return (a, b, rad, sum, product) for zeroes a ± b√rad."""
+    a = random.randint(2, 8)
+    b = random.randint(1, 4)
+    rad = random.choice([2, 3, 5, 7])
+    s = 2 * a
+    p = a * a - b * b * rad
+    return a, b, rad, s, p
+
+
+def _surd_zeroes_mcq(
+    unit_id: int,
+    topic_id: int,
+    level: str,
+    *,
+    step: str = "polynomial",
+) -> dict:
+    """Multi-step MCQ: sum, product, or full polynomial from conjugate surd zeroes."""
+    a, b, rad, s, p = _random_surd_conjugate_zeroes()
+    z_minus = _fmt_surd_zero(a, b, rad, plus=False)
+    z_plus = _fmt_surd_zero(a, b, rad, plus=True)
+    b_sq = b * b
+    wrong_product = a * a + b_sq * rad
+
+    if step == "sum":
+        correct = str(s)
+        wrong = [str(s + 2), str(b * 2), str(a)]
+        qtext = f"If α = {z_minus} and β = {z_plus}, then α + β equals:"
+        expl = f"Conjugate surd pair: ({a} − …) + ({a} + …) = 2×{a} = {s}."
+    elif step == "product":
+        correct = str(p)
+        wrong = [str(wrong_product), str(s), str(a * a)]
+        qtext = f"If α = {z_minus} and β = {z_plus}, then α × β equals:"
+        expl = (
+            f"Use (a+b√c)(a−b√c) = a² − b²c: {a}² − ({b})²×{rad} = {a * a} − {b_sq * rad} = {p}."
+        )
+    else:
+        correct = _poly_quadratic(-s, p)
+        wrong = [
+            _poly_quadratic(s, p),
+            _poly_quadratic(-s, wrong_product),
+            _poly_quadratic(-(s + 1), p),
+        ]
+        qtext = f"Find a quadratic polynomial whose zeroes are {z_minus} and {z_plus}."
+        expl = (
+            f"Step 1: sum = {s}. Step 2: product = {a}² − ({b}√{rad})² = {a * a} − {b_sq * rad} = {p}. "
+            f"Step 3: x² − (sum)x + (product) = {correct}."
+        )
+
+    opts, ans = _shuffle_options(correct, wrong)
+    return _mcq(unit_id, topic_id, level, qtext, opts, ans, expl)
+
+
 def _poly_cubic(a: int, b: int, c: int, d: int) -> str:
     head = "x³" if a == 1 else f"{a}x³"
     parts = [head]
@@ -1180,6 +1252,375 @@ def _eval_poly(coeffs: list[int], x: int) -> int:
         total += coef * (x ** power)
         power -= 1
     return total
+
+
+def _cubic_coeffs_from_roots(a: int, r: int, s: int, t: int) -> tuple[int, int, int, int]:
+    """Leading coefficient a with integer roots r, s, t → (A, B, C, D) for Ax³+Bx²+Cx+D."""
+    sum_r = r + s + t
+    pair = r * s + r * t + s * t
+    prod = r * s * t
+    return a, -a * sum_r, a * pair, -a * prod
+
+
+def _cubic_quotient_by_linear(a: int, b: int, c: int, d: int, r: int) -> tuple[int, int, int]:
+    """Divide Ax³+Bx²+Cx+D by (x−r); return (qa, qb, qc) for quotient qa·x²+qb·x+qc."""
+    qa = a
+    qb = b + a * r
+    qc = c + qb * r
+    return qa, qb, qc
+
+
+def _format_zero_list(values: list[Fraction | int]) -> str:
+    parts: list[str] = []
+    for z in sorted(values, key=lambda v: float(v)):
+        if isinstance(z, Fraction):
+            if z.denominator == 1:
+                parts.append(str(int(z)))
+            else:
+                parts.append(f"{z.numerator}/{z.denominator}")
+        else:
+            parts.append(str(z))
+    return ", ".join(parts)
+
+
+def _random_cubic_factor_case(*, canonical: bool = False) -> dict:
+    """Build a cubic with known linear factor (x−r) and quadratic quotient data."""
+    if canonical:
+        a, b, c, d = 2, 1, -5, 2
+        r = 1
+        qa, qb, qc = 2, 3, -2
+        other = [Fraction(1, 2), Fraction(-2)]
+    else:
+        a = random.choice([1, 2])
+        r = random.randint(-3, 4)
+        # pick two other integer roots distinct from r
+        pool = [x for x in range(-5, 6) if x != r]
+        s, t = random.sample(pool, 2)
+        A, B, C, D = _cubic_coeffs_from_roots(a, r, s, t)
+        a, b, c, d = A, B, C, D
+        qa, qb, qc = _cubic_quotient_by_linear(a, b, c, d, r)
+        other = [Fraction(s), Fraction(t)]
+
+    all_zeroes = [Fraction(r), *other]
+    quad_sum = Fraction(-qb, qa)
+    quad_product = Fraction(qc, qa)
+    return {
+        "cubic_str": _poly_cubic(a, b, c, d),
+        "factor_root": r,
+        "coeffs": (a, b, c, d),
+        "quotient_str": _poly_quadratic(qb, qc, qa),
+        "quotient": (qa, qb, qc),
+        "all_zeroes_str": _format_zero_list(all_zeroes),
+        "quad_sum_str": (
+            str(int(quad_sum))
+            if quad_sum.denominator == 1
+            else f"{quad_sum.numerator}/{quad_sum.denominator}"
+        ),
+        "quad_product_str": (
+            str(int(quad_product))
+            if quad_product.denominator == 1
+            else f"{quad_product.numerator}/{quad_product.denominator}"
+        ),
+        "quad_sum": quad_sum,
+        "quad_product": quad_product,
+    }
+
+
+def _cubic_factor_mcq(
+    unit_id: int,
+    topic_id: int,
+    level: str,
+    *,
+    step: str = "all_zeroes",
+    canonical: bool = False,
+) -> dict:
+    """Multi-step MCQ from cubic ÷ (x−a): quotient, all zeroes, or verify quadratic relations."""
+    data = _random_cubic_factor_case(canonical=canonical)
+    r = data["factor_root"]
+    cubic = data["cubic_str"]
+    qa, qb, qc = data["quotient"]
+
+    if step == "quotient":
+        correct = data["quotient_str"]
+        wrong = [
+            _poly_quadratic(qb + 1, qc, qa),
+            _poly_quadratic(qb, -qc, qa),
+            _poly_quadratic(qc, qb, qa),
+        ]
+        qtext = f"If (x − {r}) is a factor of p(x) = {cubic}, the quadratic quotient is:"
+        expl = (
+            f"Step 1: divide by (x − {r}) (synthetic division). "
+            f"Step 2: quotient = {correct}."
+        )
+    elif step == "quad_sum":
+        correct = data["quad_sum_str"]
+        wrong = [
+            data["quad_product_str"],
+            str(int(-qb)) if qa == 1 else f"{-qb}/{qa}",
+            str(qb),
+        ]
+        qtext = (
+            f"For p(x) = {cubic} with factor (x − {r}), the quadratic factor is {data['quotient_str']}. "
+            f"Sum of zeroes of this quadratic factor equals:"
+        )
+        expl = (
+            f"For {data['quotient_str']}, sum of zeroes = −({qb})/({qa}) = {correct}."
+        )
+    elif step == "quad_product":
+        correct = data["quad_product_str"]
+        wrong = [
+            data["quad_sum_str"],
+            str(-qc // qa) if qc % qa == 0 else f"{-qc}/{qa}",
+            str(qc),
+        ]
+        qtext = (
+            f"For p(x) = {cubic} with factor (x − {r}), the quadratic factor is {data['quotient_str']}. "
+            f"Product of zeroes of this quadratic factor equals:"
+        )
+        expl = (
+            f"For {data['quotient_str']}, product of zeroes = ({qc})/({qa}) = {correct}."
+        )
+    else:
+        correct = data["all_zeroes_str"]
+        r_frac = Fraction(r)
+        wrong = [
+            _format_zero_list([r_frac, Fraction(r + 1), Fraction(r + 2)]),
+            _format_zero_list([r_frac, Fraction(qb), Fraction(qc)]),
+            _format_zero_list([Fraction(r + 1), Fraction(r + 2), Fraction(r + 3)]),
+        ]
+        qtext = (
+            f"Obtain all zeroes of p(x) = {cubic} if (x − {r}) is a factor. "
+            f"(First find the quadratic factor, then its zeroes.)"
+        )
+        expl = (
+            f"Step 1: (x − {r}) is a factor ⇒ x = {r} is a zero. "
+            f"Step 2: divide to get quadratic factor {data['quotient_str']}. "
+            f"Step 3: factor the quadratic → all zeroes are {correct}. "
+            f"Step 4: verify sum = {data['quad_sum_str']}, product = {data['quad_product_str']} for the quadratic."
+        )
+
+    opts, ans = _shuffle_options(correct, wrong)
+    return _mcq(unit_id, topic_id, level, qtext, opts, ans, expl)
+
+
+def _euclid_remainders(a: int, b: int) -> list[int]:
+    x, y = max(a, b), min(a, b)
+    remainders: list[int] = []
+    while y:
+        _, r = divmod(x, y)
+        remainders.append(r)
+        x, y = y, r
+    return remainders
+
+
+def _u1_multistep_mcq(
+    unit_id: int,
+    topic_id: int,
+    level: str,
+    *,
+    step: str,
+    canonical: bool = False,
+) -> dict:
+    """Multi-step Real Numbers MCQs: Euclid, prime factorisation, irrational proofs, HCF/LCM."""
+    if step.startswith("euclid"):
+        if canonical:
+            a, b = 135, 225
+        else:
+            a, b = sorted([random.randint(80, 400), random.randint(80, 400)], reverse=True)
+        rems = _euclid_remainders(a, b)
+        hcf = math.gcd(a, b)
+        if step == "euclid_r1":
+            correct = str(rems[0])
+            wrong = [str(rems[1] if len(rems) > 1 else rems[0] + 5), str(hcf), str(a - b)]
+            qtext = f"Using Euclid's algorithm on {a} and {b}, the first remainder is:"
+            expl = (
+                f"Step 1: {max(a, b)} = {min(a, b)} × q + {rems[0]}. "
+                f"Continue until remainder 0; HCF = {hcf}."
+            )
+        else:
+            correct = str(hcf)
+            wrong = [str(rems[0]), str(a + b), str(a * b // hcf if hcf else hcf + 1)]
+            qtext = f"Using Euclid's division algorithm, HCF({a}, {b}) = ?"
+            expl = (
+                f"Steps: remainders {', '.join(map(str, rems))}. "
+                f"Last non-zero remainder is HCF = {hcf}."
+            )
+    elif step.startswith("prime"):
+        if canonical or random.random() < 0.3:
+            a, b = 96, 404
+        else:
+            a, b = random.randint(24, 180), random.randint(24, 180)
+        fa, fb = _factor_string(a), _factor_string(b)
+        hcf, lcm = math.gcd(a, b), a * b // math.gcd(a, b)
+        if step == "prime_factor_a":
+            correct, wrong = fa, [_factor_string(a + 2), _factor_string(a // 2 if a % 2 == 0 else a + 3), str(a)]
+            qtext = f"Step 1 — prime factorisation of {a} is:"
+            expl = f"Step 2 uses this with factors of {b} to find HCF/LCM."
+        elif step == "prime_hcf":
+            correct, wrong = str(hcf), [str(lcm), str(a + b), str(hcf + 2)]
+            qtext = (
+                f"{a} = {fa} and {b} = {fb}. "
+                f"Step 2 — HCF({a}, {b}) using prime factorisation = ?"
+            )
+            expl = "HCF = product of common prime factors with smallest powers."
+        else:
+            correct, wrong = str(lcm), [str(hcf), str(a * b), str(lcm + 4)]
+            qtext = (
+                f"{a} = {fa} and {b} = {fb}. "
+                f"Step 2 — LCM({a}, {b}) using prime factorisation = ?"
+            )
+            expl = "LCM = product of all prime factors with greatest powers."
+    elif step == "hcf_product_lcm":
+        a, b = random.randint(12, 80), random.randint(12, 80)
+        hcf = math.gcd(a, b)
+        product, lcm = a * b, a * b // hcf
+        correct = str(hcf)
+        wrong = [str(lcm), str(product // lcm if lcm else hcf + 1), str(hcf + 3)]
+        qtext = f"Two numbers have product {product} and LCM {lcm}. Step 1 — their HCF = ?"
+        expl = f"Step 2: verify HCF × LCM = {hcf} × {lcm} = {product}."
+    elif step == "hcf_lcm_pair":
+        hcf, lcm = random.choice([(12, 420), (6, 180), (8, 240)])
+        a = hcf * random.choice([2, 3, 5, 7])
+        b = lcm * hcf // a
+        while math.gcd(a, b) != hcf:
+            a = hcf * random.randint(2, 10)
+            b = lcm * hcf // a
+        correct = f"({a}, {b})"
+        wrong = [f"({a + hcf}, {b})", f"({hcf}, {lcm})", f"({a}, {b + hcf})"]
+        qtext = (
+            f"If HCF(a, b) = {hcf} and LCM(a, b) = {lcm}, "
+            f"Step 1 — write one valid pair (a, b):"
+        )
+        expl = (
+            f"Check: gcd({a},{b})={hcf}, lcm={lcm}, and {a}×{b}={a*b}="
+            f"{hcf}×{lcm}."
+        )
+    else:
+        root = random.choice([2, 3, 5]) if not canonical else 2
+        sym = f"√{root}"
+        if step == "irrational_assume":
+            correct = f"Assume {sym} is rational (= p/q in lowest terms)"
+            wrong = [f"Assume {sym} is irrational", "Square both sides first", "Set p = q"]
+            qtext = f"To prove {sym} is irrational, Step 1 is to:"
+            expl = "Proof by contradiction — assume rational and derive a contradiction."
+        else:
+            correct = f"{root} divides p², so {root} divides p"
+            wrong = ["p divides q", f"{sym} is rational", "q² = p²"]
+            qtext = f"After assuming {sym} = p/q (lowest terms) and squaring, Step 2 gives:"
+            expl = f"Then p and q would share a factor — contradicting lowest terms. Hence {sym} is irrational."
+
+    opts, ans = _shuffle_options(correct, wrong)
+    return _mcq(unit_id, topic_id, level, qtext, opts, ans, expl)
+
+
+def _nice_substitution_sys() -> tuple[int, int, tuple[int, int, int], tuple[int, int, int]]:
+    x, y = random.randint(2, 7), random.randint(2, 7)
+    s = x + y
+    a, b = random.randint(2, 4), random.randint(2, 4)
+    while a == b:
+        b = random.randint(2, 4)
+    c = a * x + b * y
+    return x, y, (1, 1, s), (a, b, c)
+
+
+def _u3_multistep_mcq(
+    unit_id: int,
+    topic_id: int,
+    level: str,
+    *,
+    step: str,
+) -> dict:
+    """Multi-step linear equations MCQs: substitution, elimination, consistency, word problems."""
+    if step.startswith("sub"):
+        x, y, (a1, b1, c1), (a2, b2, c2) = _nice_substitution_sys()
+        eq1, eq2 = _lin_eq(a1, b1, c1), _lin_eq(a2, b2, c2)
+        if step == "sub_express":
+            correct = f"x = {c1} − y" if a1 == 1 and b1 == 1 else f"x = ({c1} − {b1}y)/{a1}"
+            wrong = [f"y = {c1} − x", f"x = {c1} + y", f"x = {c2} − y"]
+            qtext = f"Solve by substitution. Step 1 — from {eq1}, express x:"
+            expl = f"Step 2: substitute into {eq2}, then solve for y."
+        elif step == "sub_y":
+            correct = str(y)
+            wrong = [str(x), str(y + 1), str(x + y)]
+            qtext = f"Using substitution on {eq1} and {eq2}, Step 2 — y equals:"
+            expl = f"Step 3: back-substitute to get x = {x}."
+        elif step == "sub_x":
+            correct = str(x)
+            wrong = [str(y), str(x + 1), str(y + 1)]
+            qtext = f"Using substitution on {eq1} and {eq2}, Step 3 — x equals:"
+            expl = f"Full solution: x = {x}, y = {y}."
+        else:
+            correct = f"x = {x}, y = {y}"
+            wrong = [f"x = {y}, y = {x}", f"x = {x + 1}, y = {y}", f"x = {x}, y = {y + 1}"]
+            qtext = f"Solve by substitution: {eq1} and {eq2}. Final solution:"
+            expl = f"Step 1: isolate x. Step 2: y = {y}. Step 3: x = {x}."
+    elif step.startswith("elim"):
+        x, y, (a1, b1, c1), (a2, b2, c2) = _random_lin_sys()
+        eq1, eq2 = _lin_eq(a1, b1, c1), _lin_eq(a2, b2, c2)
+        if step == "elim_x":
+            correct = str(x)
+            wrong = [str(y), str(x + 1), str(y + 1)]
+            qtext = f"Solve by elimination: {eq1} and {eq2}. Step 2 — x equals:"
+            expl = f"Step 1: equalise coefficients and add/subtract. Step 3: y = {y}."
+        elif step == "elim_y":
+            correct = str(y)
+            wrong = [str(x), str(x + 1), str(y + 1)]
+            qtext = f"Solve by elimination: {eq1} and {eq2}. Step 3 — y equals:"
+            expl = f"After finding x = {x}, substitute back for y."
+        else:
+            correct = f"x = {x}, y = {y}"
+            wrong = [f"x = {y}, y = {x}", f"x = {x + 1}, y = {y}", f"x = {x}, y = {y + 2}"]
+            qtext = f"Solve by elimination: {eq1} and {eq2}. Final solution:"
+            expl = "Step 1: eliminate one variable. Step 2: solve for the other. Step 3: back-substitute."
+    elif step == "consistency":
+        kind = random.choice(["unique", "none", "infinite"])
+        if kind == "unique":
+            x, y, (a1, b1, c1), (a2, b2, c2) = _random_lin_sys()
+            correct = "Unique solution (a₁/a₂ ≠ b₁/b₂)"
+            wrong = ["No solution", "Infinitely many solutions", "Exactly two solutions"]
+            expl = f"Ratios differ → intersecting lines → x = {x}, y = {y}."
+        elif kind == "none":
+            (a1, b1, c1), (a2, b2, c2) = _parallel_sys()
+            correct = "No solution (a₁/a₂ = b₁/b₂ ≠ c₁/c₂)"
+            wrong = ["Unique solution", "Infinitely many solutions", "Dependent only"]
+            expl = "Parallel distinct lines → inconsistent pair."
+        else:
+            (a1, b1, c1), (a2, b2, c2) = _coincident_sys()
+            correct = "Infinitely many solutions (a₁/a₂ = b₁/b₂ = c₁/c₂)"
+            wrong = ["No solution", "Unique solution", "Exactly two solutions"]
+            expl = "Coincident lines → dependent equations."
+        qtext = (
+            f"For {_lin_eq(a1, b1, c1)} and {_lin_eq(a2, b2, c2)}, "
+            f"compare a₁/a₂, b₁/b₂, c₁/c₂. The pair has:"
+        )
+    else:
+        mult = random.choice([2, 3])
+        years = random.randint(8, 15)
+        son = random.randint(8, 14)
+        father = mult * son
+        if step == "word_ages_setup":
+            correct = f"y = {mult}x; y + {years} = {mult - 1}(x + {years})"
+            wrong = [
+                f"x = {mult}y; x + {years} = {mult - 1}(y + {years})",
+                f"y = {mult}x; y = {mult - 1}x",
+                f"x + y = {years}; y − x = {mult}",
+            ]
+            qtext = (
+                f"Father is {mult} times son's age. In {years} years he will be "
+                f"{mult - 1} times son's age. Step 1 — form the equations (x = son, y = father):"
+            )
+            expl = "Step 2: solve the linear pair for present ages."
+        else:
+            correct = f"Son = {son}, Father = {father}"
+            wrong = [f"Son = {son + years}, Father = {father + years}", f"Son = {father}, Father = {son}", f"Son = {son + 1}, Father = {father}"]
+            qtext = (
+                f"Father is {mult}× son's age; in {years} years he will be {mult - 1}× son's age. "
+                f"Step 2 — present ages are:"
+            )
+            expl = f"From y = {mult}x and y + {years} = {mult - 1}(x + {years}), son = {son}, father = {father}."
+
+    opts, ans = _shuffle_options(correct, wrong)
+    return _mcq(unit_id, topic_id, level, qtext, opts, ans, expl)
 
 
 def _gen_u2_t1(level: str) -> dict:
@@ -1335,6 +1776,9 @@ def _gen_u2_t3(level: str) -> dict:
             "Use x² − (sum)x + (product).",
         )
     if level == "D":
+        if random.random() < 0.5:
+            step = random.choice(["sum", "product", "polynomial"])
+            return _surd_zeroes_mcq(2, 3, level, step=step)
         a = random.randint(2, 5)
         b, c = random.randint(-9, 9), random.randint(-12, 12)
         poly = _poly_quadratic(b, c, a)
@@ -1409,6 +1853,9 @@ def _gen_u2_t4(level: str) -> dict:
             wrong = [str(r2), str(b), str(c)]
         opts, ans = _shuffle_options(correct, wrong)
         return _mcq(2, 4, level, qtext, opts, ans, f"Zeroes are {r1} and {r2}.")
+    if random.random() < 0.55:
+        step = random.choice(["quotient", "all_zeroes", "quad_sum", "quad_product"])
+        return _cubic_factor_mcq(2, 4, level, step=step, canonical=random.random() < 0.2)
     r = random.randint(2, 9)
     k = -2 * r
     missing = r * r
@@ -1571,8 +2018,14 @@ def _gen_u3_t2(level: str) -> dict:
         opts, ans = _shuffle_options(str(x), [str(y), str(x + y), str(x - y)])
         return _mcq(3, 2, level, f"Using substitution on {eq1} and {eq2}, x equals:", opts, ans)
     if level == "D":
+        if random.random() < 0.55:
+            step = random.choice(["sub_y", "sub_x", "sub_full"])
+            return _u3_multistep_mcq(3, 2, level, step=step)
         opts, ans = _shuffle_options(str(y), [str(x), str(x + y), str(x - y)])
         return _mcq(3, 2, level, f"Using substitution on {eq1} and {eq2}, y equals:", opts, ans)
+    if random.random() < 0.5:
+        step = random.choice(["sub_express", "sub_full"])
+        return _u3_multistep_mcq(3, 2, level, step=step)
     a1, b1, c1 = random.randint(2, 5), random.randint(2, 5), random.randint(10, 30)
     x_val = random.randint(2, 6)
     y_val = (c1 - a1 * x_val) // b1 if (c1 - a1 * x_val) % b1 == 0 else None
@@ -1608,8 +2061,14 @@ def _gen_u3_t3(level: str) -> dict:
         opts, ans = _shuffle_options(str(x), [str(y), str(x + 1), str(y + 1)])
         return _mcq(3, 3, level, f"Elimination on {eq1} and {eq2} gives x = ?", opts, ans)
     if level == "D":
+        if random.random() < 0.55:
+            step = random.choice(["elim_y", "elim_full"])
+            return _u3_multistep_mcq(3, 3, level, step=step)
         opts, ans = _shuffle_options(str(y), [str(x), str(x + 1), str(y + 1)])
         return _mcq(3, 3, level, f"Elimination on {eq1} and {eq2} gives y = ?", opts, ans)
+    if random.random() < 0.5:
+        step = random.choice(["elim_x", "elim_full"])
+        return _u3_multistep_mcq(3, 3, level, step=step)
     # scaled elimination
     m = random.randint(2, 3)
     a1, b1, c1 = 2, 3, random.randint(8, 20)
@@ -1645,6 +2104,9 @@ def _gen_u3_t4(level: str) -> dict:
             opts, ans, "Set son = x, father = 3x; solve 3x + 12 = 2(x + 12) → x = 12, difference = 24.",
         )
     if level == "D":
+        if random.random() < 0.5:
+            step = random.choice(["consistency", "word_ages_setup", "word_ages_solve"])
+            return _u3_multistep_mcq(3, 4, level, step=step)
         tens, ones = random.randint(2, 7), random.randint(1, 9)
         num = 10 * tens + ones
         rev = 10 * ones + tens
@@ -1656,6 +2118,9 @@ def _gen_u3_t4(level: str) -> dict:
             f"Difference between the number and its reverse?",
             opts, ans,
         )
+    if random.random() < 0.45:
+        step = random.choice(["word_ages_solve", "consistency"])
+        return _u3_multistep_mcq(3, 4, level, step=step)
     price_a, price_b = random.randint(20, 50), random.randint(10, 30)
     total_items = random.randint(4, 10)
     total_cost = price_a * random.randint(1, total_items - 1) + price_b * (total_items - random.randint(1, total_items - 1))
@@ -3522,6 +3987,16 @@ def generate_question(
         )
         if q:
             return q
+
+    if templates_only and random.random() < 0.5:
+        try:
+            from harshit_class10_exam_generators import generate_for_slot
+
+            q = generate_for_slot(unit_id, topic_id, level)
+            if q and h10q.question_dedup_key(str(q.get("question", "")), q.get("options")) not in (exclude_text or set()) and str(q.get("id") or "") not in (exclude_ids or set()):
+                return q
+        except Exception:
+            pass
 
     fn = GENERATORS.get((unit_id, topic_id))
     if not fn:

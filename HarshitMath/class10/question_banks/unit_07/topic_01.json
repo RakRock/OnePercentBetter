@@ -591,6 +591,234 @@
         "category_label": "Distance · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_7f0388fc",
+        "question": "Distance between (1, 1) and (7, 6):",
+        "options": [
+          "11 units",
+          "5 units",
+          "10 units",
+          "7 units"
+        ],
+        "answer": 3,
+        "explanation": "√[(7-1)² + (6-1)²] = 7.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_771d150e",
+        "question": "Distance between (1, 5) and (5, 9):",
+        "options": [
+          "5 units (alt)",
+          "5 units",
+          "3 units",
+          "8 units"
+        ],
+        "answer": 1,
+        "explanation": "√[(5-1)² + (9-5)²] = 5.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_84ddb4a3",
+        "question": "Distance between (3, 2) and (8, 7):",
+        "options": [
+          "7 units (alt)",
+          "5 units",
+          "10 units",
+          "7 units"
+        ],
+        "answer": 3,
+        "explanation": "√[(8-3)² + (7-2)²] = 7.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_c1015120",
+        "question": "Distance of (6, 4) from origin:",
+        "options": [
+          "9 units",
+          "10 units",
+          "7 units",
+          "2 units"
+        ],
+        "answer": 2,
+        "explanation": "√(6² + 4²) = 7.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_a23a40c0",
+        "question": "Distance of (6, 5) from origin:",
+        "options": [
+          "11 units",
+          "7 units",
+          "9 units",
+          "1 units"
+        ],
+        "answer": 1,
+        "explanation": "√(6² + 5²) = 7.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_1afd4c86",
+        "question": "Distance of (3, 12) from origin:",
+        "options": [
+          "15 units",
+          "12 units",
+          "9 units",
+          "14 units"
+        ],
+        "answer": 1,
+        "explanation": "√(3² + 12²) = 12.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_1c05c5d0",
+        "question": "Distance between (1, 0) and (4, 5):",
+        "options": [
+          "5 units (alt)",
+          "8 units",
+          "5 units",
+          "3 units"
+        ],
+        "answer": 2,
+        "explanation": "√[(4-1)² + (5-0)²] = 5.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_3d6eece5",
+        "question": "Distance between (0, 4) and (5, 10):",
+        "options": [
+          "5 units",
+          "10 units",
+          "11 units",
+          "7 units"
+        ],
+        "answer": 3,
+        "explanation": "√[(5-0)² + (10-4)²] = 7.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_d5391e55",
+        "question": "Distance between (0, 5) and (5, 9):",
+        "options": [
+          "4 units",
+          "6 units",
+          "9 units",
+          "6 units (alt)"
+        ],
+        "answer": 1,
+        "explanation": "√[(5-0)² + (9-5)²] = 6.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_172fc162",
+        "question": "Distance of (10, 6) from origin:",
+        "options": [
+          "4 units",
+          "16 units",
+          "13 units",
+          "11 units"
+        ],
+        "answer": 3,
+        "explanation": "√(10² + 6²) = 11.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_338e951c",
+        "question": "Distance of (4, 8) from origin:",
+        "options": [
+          "4 units",
+          "8 units",
+          "10 units",
+          "12 units"
+        ],
+        "answer": 1,
+        "explanation": "√(4² + 8²) = 8.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t1_B_a164ea4f",
+        "question": "Distance of (12, 5) from origin:",
+        "options": [
+          "13 units",
+          "7 units",
+          "17 units",
+          "15 units"
+        ],
+        "answer": 0,
+        "explanation": "√(12² + 5²) = 13.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t1_B",
+        "category_label": "Distance · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
       }
     ],
     "C": [

@@ -1714,6 +1714,234 @@
         "category_label": "Standard · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_81417a73",
+        "question": "Quadratic equation with roots -1 and -5:",
+        "options": [
+          "x² - 6x + 5 = 0",
+          "x² + 6x - 5 = 0",
+          "2x² + 6x + 5 = 0",
+          "x² + 6x + 5 = 0"
+        ],
+        "answer": 3,
+        "explanation": "(x - α)(x - β) = 0.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_280895a0",
+        "question": "Quadratic equation with roots 2 and 4:",
+        "options": [
+          "2x² - 6x + 8 = 0",
+          "x² - 6x - 8 = 0",
+          "x² - 6x + 8 = 0",
+          "x² + 6x + 8 = 0"
+        ],
+        "answer": 2,
+        "explanation": "(x - α)(x - β) = 0.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_b07bfb0a",
+        "question": "Quadratic equation with roots 6 and 5:",
+        "options": [
+          "2x² - 11x + 30 = 0",
+          "x² + 11x + 30 = 0",
+          "x² - 11x + 30 = 0",
+          "x² - 11x - 30 = 0"
+        ],
+        "answer": 2,
+        "explanation": "(x - α)(x - β) = 0.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_1d9731ee",
+        "question": "Roots of x² + 8x = 0 are 0 and -8. Verify sum and product:",
+        "options": [
+          "Do not match",
+          "sum = -8 = -(8); product = 0 = 0",
+          "sum = 0; product = 8",
+          "sum = 8; product = 0"
+        ],
+        "answer": 1,
+        "explanation": "For ax² + bx + c: sum = -b/a, product = c/a.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_16f9e186",
+        "question": "Roots of x² - 4x = 0 are 0 and 4. Verify sum and product:",
+        "options": [
+          "Do not match",
+          "sum = 0; product = -4",
+          "sum = -4; product = 0",
+          "sum = 4 = -(-4); product = 0 = 0"
+        ],
+        "answer": 3,
+        "explanation": "For ax² + bx + c: sum = -b/a, product = c/a.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_b89737ae",
+        "question": "Roots of x² + 5x + 4 = 0 are -1 and -4. Verify sum and product:",
+        "options": [
+          "sum = 4; product = 5",
+          "sum = -5 = -(5); product = 4 = 4",
+          "sum = 5; product = 4",
+          "Do not match"
+        ],
+        "answer": 1,
+        "explanation": "For ax² + bx + c: sum = -b/a, product = c/a.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_309fba08",
+        "question": "Quadratic equation with roots 4 and 0:",
+        "options": [
+          "x² + 4x = 0",
+          "x² - 4x = 0",
+          "x² - 4x = 0 (alt)",
+          "2x² - 4x = 0"
+        ],
+        "answer": 1,
+        "explanation": "(x - α)(x - β) = 0.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_5d2dcab7",
+        "question": "Quadratic equation with roots -1 and 3:",
+        "options": [
+          "2x² - 2x - 3 = 0",
+          "x² - 2x - 3 = 0",
+          "x² - 2x + 3 = 0",
+          "x² + 2x - 3 = 0"
+        ],
+        "answer": 1,
+        "explanation": "(x - α)(x - β) = 0.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_666a8f6a",
+        "question": "Quadratic equation with roots 2 and 0:",
+        "options": [
+          "x² - 2x = 0",
+          "x² + 2x = 0",
+          "x² - 2x = 0 (alt)",
+          "2x² - 2x = 0"
+        ],
+        "answer": 0,
+        "explanation": "(x - α)(x - β) = 0.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_e7737c8e",
+        "question": "Roots of x² + 5x + 4 = 0 are -4 and -1. Verify sum and product:",
+        "options": [
+          "sum = -5 = -(5); product = 4 = 4",
+          "sum = 5; product = 4",
+          "Do not match",
+          "sum = 4; product = 5"
+        ],
+        "answer": 0,
+        "explanation": "For ax² + bx + c: sum = -b/a, product = c/a.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_9b1fd776",
+        "question": "Roots of x² - 9 = 0 are -3 and 3. Verify sum and product:",
+        "options": [
+          "sum = 0; product = -9",
+          "sum = -9; product = 0",
+          "Do not match",
+          "sum = 0 = -(0); product = -9 = -9"
+        ],
+        "answer": 3,
+        "explanation": "For ax² + bx + c: sum = -b/a, product = c/a.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_C_83ec2a64",
+        "question": "Roots of x² - 8x + 7 = 0 are 7 and 1. Verify sum and product:",
+        "options": [
+          "sum = 7; product = -8",
+          "sum = 8 = -(-8); product = 7 = 7",
+          "sum = -8; product = 7",
+          "Do not match"
+        ],
+        "answer": 1,
+        "explanation": "For ax² + bx + c: sum = -b/a, product = c/a.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t1_C",
+        "category_label": "Standard · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
       }
     ],
     "D": [
@@ -1734,6 +1962,215 @@
         "category": "u4_t1_D",
         "category_label": "Standard · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_bd8fe327",
+        "question": "Product of two consecutive integers is 56. The integers are:",
+        "options": [
+          "7 and 8",
+          "6 and 7",
+          "8 and 9",
+          "7 and 9"
+        ],
+        "answer": 0,
+        "explanation": "n(n+1) = 56 ⇒ n = 7.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_201cf8c9",
+        "question": "Product of two consecutive integers is 20. The integers are:",
+        "options": [
+          "4 and 5",
+          "4 and 6",
+          "3 and 4",
+          "5 and 6"
+        ],
+        "answer": 0,
+        "explanation": "n(n+1) = 20 ⇒ n = 4.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_42fddc67",
+        "question": "Product of two consecutive integers is 110. The integers are:",
+        "options": [
+          "10 and 11",
+          "10 and 12",
+          "11 and 12",
+          "9 and 10"
+        ],
+        "answer": 0,
+        "explanation": "n(n+1) = 110 ⇒ n = 10.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_51f77fbd",
+        "question": "A rectangle has length 13 m more than width. Area = 117 m². Width = ?",
+        "options": [
+          "117 m",
+          "13 m",
+          "10 m",
+          "9 m"
+        ],
+        "answer": 3,
+        "explanation": "Let width = x; x(x+13) = 117.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_9b9ce55a",
+        "question": "A rectangle has length 7 m more than width. Area = 35 m². Width = ?",
+        "options": [
+          "7 m",
+          "5 m",
+          "6 m",
+          "35 m"
+        ],
+        "answer": 1,
+        "explanation": "Let width = x; x(x+7) = 35.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_01b4685a",
+        "question": "A rectangle has length 11 m more than width. Area = 77 m². Width = ?",
+        "options": [
+          "7 m",
+          "11 m",
+          "77 m",
+          "8 m"
+        ],
+        "answer": 0,
+        "explanation": "Let width = x; x(x+11) = 77.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_dd59f812",
+        "question": "Product of two consecutive integers is 156. The integers are:",
+        "options": [
+          "12 and 14",
+          "13 and 14",
+          "12 and 13",
+          "11 and 12"
+        ],
+        "answer": 2,
+        "explanation": "n(n+1) = 156 ⇒ n = 12.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_1096ca96",
+        "question": "Product of two consecutive integers is 30. The integers are:",
+        "options": [
+          "6 and 7",
+          "5 and 7",
+          "5 and 6",
+          "4 and 5"
+        ],
+        "answer": 2,
+        "explanation": "n(n+1) = 30 ⇒ n = 5.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_5c85cc58",
+        "question": "A rectangle has length 7 m more than width. Area = 56 m². Width = ?",
+        "options": [
+          "8 m",
+          "9 m",
+          "56 m",
+          "7 m"
+        ],
+        "answer": 0,
+        "explanation": "Let width = x; x(x+7) = 56.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_fb4c51cf",
+        "question": "A rectangle has length 12 m more than width. Area = 72 m². Width = ?",
+        "options": [
+          "7 m",
+          "72 m",
+          "6 m",
+          "12 m"
+        ],
+        "answer": 2,
+        "explanation": "Let width = x; x(x+12) = 72.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_D_ca863a4d",
+        "question": "A rectangle has length 14 m more than width. Area = 56 m². Width = ?",
+        "options": [
+          "5 m",
+          "14 m",
+          "4 m",
+          "56 m"
+        ],
+        "answer": 2,
+        "explanation": "Let width = x; x(x+14) = 56.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 4,
+        "category": "u4_t1_D",
+        "category_label": "Standard · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 4 Quadratic Equations"
       }
     ],
@@ -2306,6 +2743,120 @@
         "category": "u4_t1_E",
         "category_label": "Standard · Level E",
         "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_E_23f9f4f3",
+        "question": "A train travels 287 km at 60 km/h, then 287 km at 70 km/h. Total time ≈ ? hours",
+        "options": [
+          "10 hours",
+          "8 hours (alt)",
+          "8 hours",
+          "4 hours"
+        ],
+        "answer": 2,
+        "explanation": "Form equation: distance/speed for each leg.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 4,
+        "category": "u4_t1_E",
+        "category_label": "Standard · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_E_62c40fde",
+        "question": "A train travels 232 km at 60 km/h, then 232 km at 70 km/h. Total time ≈ ? hours",
+        "options": [
+          "6 hours (alt)",
+          "6 hours",
+          "9 hours",
+          "3 hours"
+        ],
+        "answer": 1,
+        "explanation": "Form equation: distance/speed for each leg.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 4,
+        "category": "u4_t1_E",
+        "category_label": "Standard · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_E_10a731e5",
+        "question": "A train travels 275 km at 60 km/h, then 275 km at 70 km/h. Total time ≈ ? hours",
+        "options": [
+          "3 hours",
+          "7 hours",
+          "4 hours",
+          "10 hours"
+        ],
+        "answer": 1,
+        "explanation": "Form equation: distance/speed for each leg.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 4,
+        "category": "u4_t1_E",
+        "category_label": "Standard · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_E_a8955149",
+        "question": "A train travels 149 km at 60 km/h, then 149 km at 70 km/h. Total time ≈ ? hours",
+        "options": [
+          "2 hours",
+          "4 hours",
+          "4 hours (alt)",
+          "6 hours"
+        ],
+        "answer": 1,
+        "explanation": "Form equation: distance/speed for each leg.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 4,
+        "category": "u4_t1_E",
+        "category_label": "Standard · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_E_ab440c5e",
+        "question": "A train travels 291 km at 60 km/h, then 291 km at 70 km/h. Total time ≈ ? hours",
+        "options": [
+          "8 hours",
+          "9 hours",
+          "4 hours",
+          "8 hours (alt)"
+        ],
+        "answer": 0,
+        "explanation": "Form equation: distance/speed for each leg.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 4,
+        "category": "u4_t1_E",
+        "category_label": "Standard · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t1_E_43089162",
+        "question": "A train travels 140 km at 60 km/h, then 140 km at 70 km/h. Total time ≈ ? hours",
+        "options": [
+          "4 hours (alt)",
+          "4 hours",
+          "6 hours",
+          "2 hours"
+        ],
+        "answer": 1,
+        "explanation": "Form equation: distance/speed for each leg.",
+        "topic": 1,
+        "level": "E",
+        "unit_id": 4,
+        "category": "u4_t1_E",
+        "category_label": "Standard · Level E",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 4 Quadratic Equations"
       }
     ]

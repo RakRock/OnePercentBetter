@@ -707,6 +707,177 @@
         "category_label": "Elim · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_fef0d8d2",
+        "question": "Solve by elimination: 3x + y = 7 and 4x = 0:",
+        "options": [
+          "x = 0, y = 9",
+          "x = 0, y = 7",
+          "x = 1, y = 7",
+          "x = 7, y = 0"
+        ],
+        "answer": 1,
+        "explanation": "Make coefficients equal and add/subtract equations.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_113a9454",
+        "question": "Solve by elimination: 3x + 6y = -3 and 5x - 3y = 21:",
+        "options": [
+          "x = 3, y = -2",
+          "x = -2, y = 3",
+          "x = 3, y = 0",
+          "x = 4, y = -2"
+        ],
+        "answer": 0,
+        "explanation": "Make coefficients equal and add/subtract equations.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_ebf61a81",
+        "question": "Solve by elimination: x + 2y = 16 and 2x - 2y = 8:",
+        "options": [
+          "x = 4, y = 8",
+          "x = 8, y = 4",
+          "x = 8, y = 6",
+          "x = 9, y = 4"
+        ],
+        "answer": 1,
+        "explanation": "Make coefficients equal and add/subtract equations.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_7be706f4",
+        "question": "Solve by elimination: 6x + y = 61 and x + y = 16:",
+        "options": [
+          "x = 9, y = 7",
+          "x = 10, y = 7",
+          "x = 7, y = 9",
+          "x = 9, y = 9"
+        ],
+        "answer": 0,
+        "explanation": "Make coefficients equal and add/subtract equations.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_49f85713",
+        "question": "Solve by elimination: x + 3y = 6 and 3x + 3y = 12:",
+        "options": [
+          "x = 3, y = 1",
+          "x = 4, y = 1",
+          "x = 3, y = 3",
+          "x = 1, y = 3"
+        ],
+        "answer": 0,
+        "explanation": "Make coefficients equal and add/subtract equations.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_37425d37",
+        "question": "Solve by elimination: 3x + 6y = 3 and 2x - 3y = 9:",
+        "options": [
+          "x = -1, y = 3",
+          "x = 3, y = -1",
+          "x = 4, y = -1",
+          "x = 3, y = 1"
+        ],
+        "answer": 1,
+        "explanation": "Make coefficients equal and add/subtract equations.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_674d80d9",
+        "question": "Solve by elimination: x + 5y = -26 and 3x + 5y = -18. Final solution:",
+        "options": [
+          "x = 5, y = -6",
+          "x = -6, y = 4",
+          "x = 4, y = -4",
+          "x = 4, y = -6"
+        ],
+        "answer": 3,
+        "explanation": "Step 1: eliminate one variable. Step 2: solve for the other. Step 3: back-substitute.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_4dbdcc28",
+        "question": "Solve by elimination: 6x + 3y = 21 and 5x - 3y = 34. Final solution:",
+        "options": [
+          "x = 5, y = -3",
+          "x = 5, y = -1",
+          "x = -3, y = 5",
+          "x = 6, y = -3"
+        ],
+        "answer": 0,
+        "explanation": "Step 1: eliminate one variable. Step 2: solve for the other. Step 3: back-substitute.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_C_1773608c",
+        "question": "Solve by elimination: 3x + 3y = 42 and 4x = 32. Final solution:",
+        "options": [
+          "x = 8, y = 8",
+          "x = 6, y = 8",
+          "x = 8, y = 6",
+          "x = 9, y = 6"
+        ],
+        "answer": 2,
+        "explanation": "Step 1: eliminate one variable. Step 2: solve for the other. Step 3: back-substitute.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t3_C",
+        "category_label": "Elim · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ],
     "D": [
@@ -1278,6 +1449,63 @@
         "category": "u3_t3_D",
         "category_label": "Elim · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_14c78205",
+        "question": "Solve by elimination: 5x + y = -14 and 6x + 5y = -13. Step 3 — y equals:",
+        "options": [
+          "-3",
+          "1",
+          "2",
+          "-2"
+        ],
+        "answer": 1,
+        "explanation": "After finding x = -3, substitute back for y.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_b085960b",
+        "question": "Solve by elimination: 5x + 4y = -32 and 3x + 3y = -21. Step 3 — y equals:",
+        "options": [
+          "-3 (alt)",
+          "-3",
+          "-4",
+          "-2"
+        ],
+        "answer": 1,
+        "explanation": "After finding x = -4, substitute back for y.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t3_D_d4b3b33a",
+        "question": "Solve by elimination: 3x + 5y = 15 and 2x + 5y = 10. Step 3 — y equals:",
+        "options": [
+          "5",
+          "1",
+          "0",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "After finding x = 5, substitute back for y.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t3_D",
+        "category_label": "Elim · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ],

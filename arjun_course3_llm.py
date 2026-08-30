@@ -11,6 +11,7 @@ from typing import Callable
 from openai import APIConnectionError, APITimeoutError, OpenAI, OpenAIError
 
 import arjun_course3_content as c3
+import arjun_course3_levels as c3lvl
 from llm_question_format import KID_NUMERIC_FORMAT_RULES, NUMERIC_RETRY_HINT, validate_numerical_format
 
 XAI_BASE_URL = "https://api.x.ai/v1"
@@ -20,6 +21,31 @@ _MAX_RETRIES = 3
 
 def _get_client(xai_api_key: str) -> OpenAI:
     return OpenAI(api_key=xai_api_key, base_url=XAI_BASE_URL)
+
+
+def _session_slots(
+    categories: dict,
+    count: int,
+    *,
+    week_config: dict | None = None,
+    focus_category: str | None = None,
+) -> list[tuple[str, str]]:
+    if focus_category and focus_category in categories:
+        levels = c3lvl.DEFAULT_LEVELS
+        if week_config:
+            for item in week_config.get("topics") or []:
+                if item.get("id") == focus_category and item.get("levels"):
+                    levels = list(item["levels"])
+                    break
+        lvl = levels[0] if levels else "B"
+        return [(focus_category, lvl)] * count
+    if week_config and week_config.get("topics"):
+        valid = set(categories.keys())
+        plan = c3lvl.slot_plan(week_config["topics"], valid, count)
+        if plan:
+            return plan
+    cats = _category_plan(categories, count)
+    return [(cat, "B") for cat in cats]
 
 
 def _category_plan(categories: dict, count: int) -> list[str]:
@@ -32,6 +58,13 @@ def _category_plan(categories: dict, count: int) -> list[str]:
     random.shuffle(weighted)
     cycle = weighted * ((count // len(weighted)) + 1)
     return cycle[:count]
+
+
+def _level_guidance_block() -> str:
+    lines = ["DIFFICULTY LEVELS (match the requested level on each question):"]
+    for lvl in c3lvl.LEVEL_ORDER:
+        lines.append(f"- Level {lvl}: {c3lvl.LEVEL_DESCRIPTIONS[lvl]}")
+    return "\n".join(lines)
 
 
 def _activity_blurbs(unit_id: int) -> str:
@@ -66,6 +99,8 @@ LESSON ACTIVITIES IN THIS UNIT:
 
 TOPICS — each question MUST use one of these exact category ids:
 {chr(10).join(topic_lines)}
+
+{_level_guidance_block()}
 
 RULES:
 - Grade 8 difficulty; use clear, kid-friendly wording in full sentences (especially for patterns and word problems).
@@ -132,6 +167,7 @@ def _parse_llm_questions(raw: str, expected_categories: list[str], categories: d
         validated.append(
             {
                 "category": cat,
+                "level": str(q.get("level") or "B").strip().upper()[:1] or "B",
                 "question": str(q["question"]).strip(),
                 "options": options,
                 "answer": answer,
@@ -157,18 +193,21 @@ def _to_session_question(q: dict, unit_id: int, categories: dict) -> dict:
         "answer": q["answer"],
         "explanation": q.get("explanation", ""),
         "source": "llm",
+        "level": q.get("level", "B"),
         "category_label": info.get("name", cat),
     }
 
 
-def _build_user_message(slots: list[str], categories: dict, seed: int) -> str:
+def _build_user_message(slots: list[tuple[str, str]], categories: dict, seed: int) -> str:
     lines = [
         f"Generate exactly {len(slots)} multiple-choice questions for practice session {seed}.",
-        "Each question MUST use the exact category id listed (one question per line, same order):",
+        "Each question MUST match category id and difficulty level (one question per line, same order):",
     ]
-    for i, cat_id in enumerate(slots, start=1):
+    for i, (cat_id, level) in enumerate(slots, start=1):
         name = categories.get(cat_id, {}).get("name", cat_id)
-        lines.append(f"{i}. category **{cat_id}** — {name}")
+        desc = c3lvl.LEVEL_DESCRIPTIONS.get(level, level)
+        lines.append(f"{i}. category **{cat_id}** — {name} — **Level {level}** ({desc})")
+    lines.append('Include optional JSON field "level" (A–E) on each object matching the requested level.')
     lines.append("Return ONLY the JSON array, in the same order as the list above.")
     return "\n".join(lines)
 
@@ -183,13 +222,16 @@ def generate_session_questions(
     unit_title: str = "",
     unit_subtitle: str = "",
     focus_category: str | None = None,
+    week_config: dict | None = None,
     fallback: Callable[[], list[dict]] | None = None,
 ) -> list[dict]:
     """Generate a full unit practice session via xAI Grok."""
-    if focus_category and focus_category in categories:
-        slots = [focus_category] * count
-    else:
-        slots = _category_plan(categories, count)
+    slots = _session_slots(
+        categories,
+        count,
+        week_config=week_config,
+        focus_category=focus_category,
+    )
     if not slots:
         return fallback() if fallback else []
 
@@ -207,6 +249,7 @@ def generate_session_questions(
         activity_blurbs=_activity_blurbs(unit_id),
     )
     user_msg = _build_user_message(slots, categories, seed)
+    expected_cats = [cat for cat, _ in slots]
     last_error: str | None = None
 
     for attempt in range(_MAX_RETRIES):
@@ -221,8 +264,14 @@ def generate_session_questions(
                 temperature=0.85,
             )
             raw = response.choices[0].message.content.strip()
-            parsed = _parse_llm_questions(raw, slots, categories)
-            questions = [_to_session_question(parsed[i], unit_id, categories) for i in range(len(slots))]
+            parsed = _parse_llm_questions(raw, expected_cats, categories)
+            questions = []
+            for i, slot in enumerate(slots):
+                if i >= len(parsed):
+                    break
+                q = parsed[i]
+                q["level"] = slot[1]
+                questions.append(_to_session_question(q, unit_id, categories))
             random.shuffle(questions)
             return questions[:count]
         except (APIConnectionError, APITimeoutError, OpenAIError) as exc:

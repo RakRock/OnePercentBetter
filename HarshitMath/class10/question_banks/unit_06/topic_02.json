@@ -1201,6 +1201,63 @@
         "category_label": "BPT · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_3657b0ad",
+        "question": "Converse of BPT: if AD/DB = AE/EC, then:",
+        "options": [
+          "AB = AC",
+          "DE ∥ BC",
+          "ΔABC is isosceles",
+          "DE = BC"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_18029324",
+        "question": "To prove BPT, which construction is standard?",
+        "options": [
+          "Draw BE ∥ AD meeting AC produced at E (or similar auxiliary line)",
+          "Use coordinate geometry only",
+          "Assume the triangle is equilateral",
+          "Measure with ruler"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_C_a9d4a5d7",
+        "question": "Basic Proportionality Theorem (BPT) states:",
+        "options": [
+          "All triangles are congruent",
+          "A line parallel to one side of a triangle divides the other two sides proportionally",
+          "Angles sum to 360°",
+          "Parallel lines are equal in length"
+        ],
+        "answer": 1,
+        "explanation": "Theorem 6.1 — Thales theorem.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t2_C",
+        "category_label": "BPT · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
       }
     ],
     "D": [
@@ -1772,6 +1829,120 @@
         "category": "u6_t2_D",
         "category_label": "BPT · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_D_d22ff22f",
+        "question": "In ΔABC, DE ∥ BC. AD = 3 cm, DB = 2 cm, AE = 7 cm. EC = ?",
+        "options": [
+          "4 cm (alt)",
+          "4 cm",
+          "7 cm",
+          "2 cm"
+        ],
+        "answer": 1,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 7×2/3 = 4.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t2_D",
+        "category_label": "BPT · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_D_45a38b9e",
+        "question": "In ΔABC, DE ∥ BC. AD = 6 cm, DB = 8 cm, AE = 10 cm. EC = ?",
+        "options": [
+          "8 cm",
+          "13 cm",
+          "19 cm",
+          "10 cm"
+        ],
+        "answer": 1,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 10×8/6 = 13.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t2_D",
+        "category_label": "BPT · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_D_8ce4a5ff",
+        "question": "In ΔABC, DE ∥ BC. AD = 8 cm, DB = 3 cm, AE = 11 cm. EC = ?",
+        "options": [
+          "11 cm",
+          "3 cm",
+          "4 cm",
+          "12 cm"
+        ],
+        "answer": 2,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 11×3/8 = 4.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t2_D",
+        "category_label": "BPT · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_D_f42a1840",
+        "question": "In ΔABC, DE ∥ BC. AD = 12 cm, DB = 7 cm, AE = 11 cm. EC = ?",
+        "options": [
+          "6 cm",
+          "18 cm",
+          "7 cm",
+          "11 cm"
+        ],
+        "answer": 0,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 11×7/12 = 6.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t2_D",
+        "category_label": "BPT · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_D_c0a8509e",
+        "question": "In ΔABC, DE ∥ BC. AD = 9 cm, DB = 12 cm, AE = 2 cm. EC = ?",
+        "options": [
+          "11 cm",
+          "12 cm",
+          "2 cm",
+          "2 cm (alt)"
+        ],
+        "answer": 2,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 2×12/9 = 2.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t2_D",
+        "category_label": "BPT · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t2_D_0f76fad3",
+        "question": "In ΔABC, DE ∥ BC. AD = 5 cm, DB = 9 cm, AE = 13 cm. EC = ?",
+        "options": [
+          "13 cm",
+          "23 cm",
+          "9 cm",
+          "28 cm"
+        ],
+        "answer": 1,
+        "explanation": "AD/DB = AE/EC ⇒ EC = 13×9/5 = 23.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t2_D",
+        "category_label": "BPT · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 6 Triangles"
       }
     ],

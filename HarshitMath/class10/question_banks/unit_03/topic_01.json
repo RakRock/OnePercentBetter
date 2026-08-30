@@ -1353,6 +1353,120 @@
         "category_label": "Graph · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_C_8f744979",
+        "question": "The pair 2x + y = 7 and 6x + 3y = 9 has no solution because:",
+        "options": [
+          "Lines intersect",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "a₁/a₂ ≠ b₁/b₂",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂ (parallel distinct lines)"
+        ],
+        "answer": 3,
+        "explanation": "Parallel distinct lines → inconsistent system.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t1_C",
+        "category_label": "Graph · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_C_972e0dff",
+        "question": "The pair 5x + 4y = 13 and 20x + 16y = 14 has no solution because:",
+        "options": [
+          "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "a₁/a₂ ≠ b₁/b₂",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂ (parallel distinct lines)",
+          "Lines intersect"
+        ],
+        "answer": 2,
+        "explanation": "Parallel distinct lines → inconsistent system.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t1_C",
+        "category_label": "Graph · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_C_8d867d6e",
+        "question": "The pair 3x + 4y = 9 and 9x + 12y = 11 has no solution because:",
+        "options": [
+          "Lines intersect",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂ (parallel distinct lines)",
+          "a₁/a₂ ≠ b₁/b₂",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂"
+        ],
+        "answer": 1,
+        "explanation": "Parallel distinct lines → inconsistent system.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t1_C",
+        "category_label": "Graph · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_C_c900fc22",
+        "question": "The pair 2x + 3y = 8 and 8x + 12y = 13 has no solution because:",
+        "options": [
+          "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "Lines intersect",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂ (parallel distinct lines)",
+          "a₁/a₂ ≠ b₁/b₂"
+        ],
+        "answer": 2,
+        "explanation": "Parallel distinct lines → inconsistent system.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t1_C",
+        "category_label": "Graph · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_C_4601e4ca",
+        "question": "The pair 3x + 5y = 19 and 12x + 20y = 22 has no solution because:",
+        "options": [
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂ (parallel distinct lines)",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "Lines intersect",
+          "a₁/a₂ ≠ b₁/b₂"
+        ],
+        "answer": 0,
+        "explanation": "Parallel distinct lines → inconsistent system.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t1_C",
+        "category_label": "Graph · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_C_30dfd938",
+        "question": "The pair 2x + 3y = 7 and 4x + 6y = 9 has no solution because:",
+        "options": [
+          "Lines intersect",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂ (parallel distinct lines)",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "a₁/a₂ ≠ b₁/b₂"
+        ],
+        "answer": 1,
+        "explanation": "Parallel distinct lines → inconsistent system.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t1_C",
+        "category_label": "Graph · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ],
     "D": [
@@ -1924,6 +2038,120 @@
         "category": "u3_t1_D",
         "category_label": "Graph · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_D_f7361b72",
+        "question": "The pair 2x + y = 12 and 8x + 4y = 48 has infinitely many solutions because:",
+        "options": [
+          "Lines are parallel distinct",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂ (coincident lines)",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "a₁/a₂ ≠ b₁/b₂"
+        ],
+        "answer": 1,
+        "explanation": "Coincident lines → dependent equations.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t1_D",
+        "category_label": "Graph · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_D_082435fb",
+        "question": "The pair 4x + 5y = 19 and 16x + 20y = 76 has infinitely many solutions because:",
+        "options": [
+          "a₁/a₂ = b₁/b₂ = c₁/c₂ (coincident lines)",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "a₁/a₂ ≠ b₁/b₂",
+          "Lines are parallel distinct"
+        ],
+        "answer": 0,
+        "explanation": "Coincident lines → dependent equations.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t1_D",
+        "category_label": "Graph · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_D_ffa9429d",
+        "question": "The pair 4x + 3y = 13 and 8x + 6y = 26 has infinitely many solutions because:",
+        "options": [
+          "a₁/a₂ ≠ b₁/b₂",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂ (coincident lines)",
+          "Lines are parallel distinct",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂"
+        ],
+        "answer": 1,
+        "explanation": "Coincident lines → dependent equations.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t1_D",
+        "category_label": "Graph · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_D_445c6b34",
+        "question": "The pair 2x + 3y = 22 and 6x + 9y = 66 has infinitely many solutions because:",
+        "options": [
+          "Lines are parallel distinct",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂ (coincident lines)",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "a₁/a₂ ≠ b₁/b₂"
+        ],
+        "answer": 1,
+        "explanation": "Coincident lines → dependent equations.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t1_D",
+        "category_label": "Graph · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_D_142a1420",
+        "question": "The pair 3x + 4y = 14 and 6x + 8y = 28 has infinitely many solutions because:",
+        "options": [
+          "Lines are parallel distinct",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂ (coincident lines)",
+          "a₁/a₂ ≠ b₁/b₂"
+        ],
+        "answer": 2,
+        "explanation": "Coincident lines → dependent equations.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t1_D",
+        "category_label": "Graph · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_D_65056122",
+        "question": "The pair 4x + 4y = 8 and 8x + 8y = 16 has infinitely many solutions because:",
+        "options": [
+          "a₁/a₂ ≠ b₁/b₂",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂ (coincident lines)",
+          "Lines are parallel distinct",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂"
+        ],
+        "answer": 1,
+        "explanation": "Coincident lines → dependent equations.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t1_D",
+        "category_label": "Graph · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ],

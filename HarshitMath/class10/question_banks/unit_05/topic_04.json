@@ -61,6 +61,63 @@
         "category_label": "Apps · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_C_c91303fc",
+        "question": "Monthly savings start at ₹10000 with ₹600 annual increment. Amount in year 3?",
+        "options": [
+          "₹11800",
+          "₹10000",
+          "₹11200 (alt)",
+          "₹11200"
+        ],
+        "answer": 3,
+        "explanation": "AP: a = 10000, d = 600.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_C_4059adfe",
+        "question": "Monthly savings start at ₹8000 with ₹500 annual increment. Amount in year 5?",
+        "options": [
+          "₹10000 (alt)",
+          "₹8000",
+          "₹10500",
+          "₹10000"
+        ],
+        "answer": 3,
+        "explanation": "AP: a = 8000, d = 500.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_C_4bb5a877",
+        "question": "Monthly savings start at ₹5000 with ₹300 annual increment. Amount in year 4?",
+        "options": [
+          "₹5900",
+          "₹5900 (alt)",
+          "₹6200",
+          "₹5000"
+        ],
+        "answer": 0,
+        "explanation": "AP: a = 5000, d = 300.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
       }
     ],
     "D": [
@@ -82,6 +139,63 @@
         "category_label": "Apps · Level D",
         "source": "template",
         "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_D_c33032dd",
+        "question": "Rows in a lawn: 23, 21, …, 5 plants. Number of rows = ?",
+        "options": [
+          "10",
+          "10 (alt)",
+          "11",
+          "9"
+        ],
+        "answer": 0,
+        "explanation": "Last term = first + (n-1)d.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_D_e9771074",
+        "question": "Rows in a lawn: 30, 25, …, 5 plants. Number of rows = ?",
+        "options": [
+          "6",
+          "7",
+          "5",
+          "6 (alt)"
+        ],
+        "answer": 0,
+        "explanation": "Last term = first + (n-1)d.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_D_5c60da73",
+        "question": "Rows in a lawn: 20, 17, …, 2 plants. Number of rows = ?",
+        "options": [
+          "6",
+          "8",
+          "7 (alt)",
+          "7"
+        ],
+        "answer": 3,
+        "explanation": "Last term = first + (n-1)d.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
       }
     ],
     "E": [
@@ -102,6 +216,120 @@
         "category": "u5_t4_E",
         "category_label": "Apps · Level E",
         "source": "template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_E_60a46e1d",
+        "question": "Three numbers in AP with sum 21 and product 315 are:",
+        "options": [
+          "5, 9, 7",
+          "7, 5, 9",
+          "4, 7, 10",
+          "5, 7, 9"
+        ],
+        "answer": 3,
+        "explanation": "Let numbers be a-d, a, a+d.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 5,
+        "category": "u5_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_E_8b0975a8",
+        "question": "Three numbers in AP with sum 18 and product 162 are:",
+        "options": [
+          "3, 9, 6",
+          "2, 6, 10",
+          "3, 6, 9",
+          "6, 3, 9"
+        ],
+        "answer": 2,
+        "explanation": "Let numbers be a-d, a, a+d.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 5,
+        "category": "u5_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_E_5d2773d3",
+        "question": "Three numbers in AP with sum 27 and product 585 are:",
+        "options": [
+          "5, 9, 13",
+          "4, 9, 14",
+          "9, 5, 13",
+          "5, 13, 9"
+        ],
+        "answer": 0,
+        "explanation": "Let numbers be a-d, a, a+d.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 5,
+        "category": "u5_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_E_eef83662",
+        "question": "Three numbers in AP with sum 39 and product 2145 are:",
+        "options": [
+          "10, 13, 16",
+          "11, 13, 15",
+          "13, 11, 15",
+          "11, 15, 13"
+        ],
+        "answer": 1,
+        "explanation": "Let numbers be a-d, a, a+d.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 5,
+        "category": "u5_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_E_1d93098c",
+        "question": "Three numbers in AP with sum 30 and product 960 are:",
+        "options": [
+          "10, 8, 12",
+          "8, 12, 10",
+          "8, 10, 12",
+          "7, 10, 13"
+        ],
+        "answer": 2,
+        "explanation": "Let numbers be a-d, a, a+d.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 5,
+        "category": "u5_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t4_E_1eb355f9",
+        "question": "Three numbers in AP with sum 27 and product 504 are:",
+        "options": [
+          "4, 9, 14",
+          "4, 14, 9",
+          "9, 4, 14",
+          "3, 9, 15"
+        ],
+        "answer": 0,
+        "explanation": "Let numbers be a-d, a, a+d.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 5,
+        "category": "u5_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
       }
     ]

@@ -591,6 +591,120 @@
         "category_label": "Sum · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_B_ca44ed08",
+        "question": "Sum of first 9 terms of AP (a = -5, d = 3):",
+        "options": [
+          "60",
+          "19",
+          "72",
+          "63"
+        ],
+        "answer": 3,
+        "explanation": "Sₙ = n/2[2a + (n-1)d] = 63.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t3_B",
+        "category_label": "Sum · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_B_5b7c9a77",
+        "question": "Sum of first 9 terms of AP (a = 5, d = 2):",
+        "options": [
+          "21",
+          "115",
+          "117",
+          "126"
+        ],
+        "answer": 2,
+        "explanation": "Sₙ = n/2[2a + (n-1)d] = 117.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t3_B",
+        "category_label": "Sum · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_B_e30de13f",
+        "question": "Sum of first 6 terms of AP (a = 2, d = -6):",
+        "options": [
+          "-72",
+          "-78 (alt)",
+          "-28",
+          "-78"
+        ],
+        "answer": 3,
+        "explanation": "Sₙ = n/2[2a + (n-1)d] = -78.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t3_B",
+        "category_label": "Sum · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_B_3bb4165f",
+        "question": "Sum of first 10 terms of AP (a = 7, d = 2):",
+        "options": [
+          "25",
+          "160",
+          "170",
+          "158"
+        ],
+        "answer": 1,
+        "explanation": "Sₙ = n/2[2a + (n-1)d] = 160.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t3_B",
+        "category_label": "Sum · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_B_49eb1c8d",
+        "question": "Sum of first 7 terms of AP (a = -8, d = 4):",
+        "options": [
+          "28",
+          "24",
+          "16",
+          "35"
+        ],
+        "answer": 0,
+        "explanation": "Sₙ = n/2[2a + (n-1)d] = 28.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t3_B",
+        "category_label": "Sum · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_B_4d2bf286",
+        "question": "Sum of first 11 terms of AP (a = 5, d = 2):",
+        "options": [
+          "176",
+          "163",
+          "25",
+          "165"
+        ],
+        "answer": 3,
+        "explanation": "Sₙ = n/2[2a + (n-1)d] = 165.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t3_B",
+        "category_label": "Sum · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
       }
     ],
     "C": [
@@ -1163,6 +1277,120 @@
         "category_label": "Sum · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_C_13a3c58b",
+        "question": "Sum of first 20 terms of AP with a = -3, d = 1:",
+        "options": [
+          "130",
+          "150",
+          "-2",
+          "114"
+        ],
+        "answer": 0,
+        "explanation": "S₂₀ = 20/2[2×-3 + 19×1] = 130.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t3_C",
+        "category_label": "Sum · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_C_03336da9",
+        "question": "Sum of first 20 terms of AP with a = -6, d = -4:",
+        "options": [
+          "-880",
+          "-798",
+          "-10",
+          "-860"
+        ],
+        "answer": 0,
+        "explanation": "S₂₀ = 20/2[2×-6 + 19×-4] = -880.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t3_C",
+        "category_label": "Sum · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_C_09775741",
+        "question": "Sum of first 20 terms of AP with a = 11, d = -1:",
+        "options": [
+          "30",
+          "38",
+          "50",
+          "10"
+        ],
+        "answer": 0,
+        "explanation": "S₂₀ = 20/2[2×11 + 19×-1] = 30.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t3_C",
+        "category_label": "Sum · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_C_1fca8ed1",
+        "question": "Sum of first 20 terms of AP with a = 14, d = 3:",
+        "options": [
+          "779",
+          "870",
+          "17",
+          "850"
+        ],
+        "answer": 3,
+        "explanation": "S₂₀ = 20/2[2×14 + 19×3] = 850.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t3_C",
+        "category_label": "Sum · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_C_a0792e6f",
+        "question": "Sum of first 20 terms of AP with a = -1, d = 4:",
+        "options": [
+          "665",
+          "3",
+          "740",
+          "760"
+        ],
+        "answer": 2,
+        "explanation": "S₂₀ = 20/2[2×-1 + 19×4] = 740.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t3_C",
+        "category_label": "Sum · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_C_8239731b",
+        "question": "Sum of first 20 terms of AP with a = 6, d = -1:",
+        "options": [
+          "-57",
+          "-50",
+          "5",
+          "-70"
+        ],
+        "answer": 3,
+        "explanation": "S₂₀ = 20/2[2×6 + 19×-1] = -70.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t3_C",
+        "category_label": "Sum · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
       }
     ],
     "D": [
@@ -1734,6 +1962,120 @@
         "category": "u5_t3_D",
         "category_label": "Sum · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_D_9478c95a",
+        "question": "Sum of AP is 182 with a = 11, d = 5. Number of terms n = ?",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "Solve Sₙ = 182.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t3_D",
+        "category_label": "Sum · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_D_96bb7af3",
+        "question": "Sum of AP is 252 with a = 12, d = 4. Number of terms n = ?",
+        "options": [
+          "9",
+          "10",
+          "11",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "Solve Sₙ = 252.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t3_D",
+        "category_label": "Sum · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_D_1c9594de",
+        "question": "Sum of AP is 14 with a = 5, d = -1. Number of terms n = ?",
+        "options": [
+          "9",
+          "7",
+          "8",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "Solve Sₙ = 14.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t3_D",
+        "category_label": "Sum · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_D_0317a22f",
+        "question": "Sum of AP is 15 with a = 6, d = -1. Number of terms n = ?",
+        "options": [
+          "9",
+          "12",
+          "10",
+          "11"
+        ],
+        "answer": 2,
+        "explanation": "Solve Sₙ = 15.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t3_D",
+        "category_label": "Sum · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_D_9cccd003",
+        "question": "Sum of AP is -154 with a = -7, d = -5. Number of terms n = ?",
+        "options": [
+          "9",
+          "8",
+          "7",
+          "6"
+        ],
+        "answer": 2,
+        "explanation": "Solve Sₙ = -154.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t3_D",
+        "category_label": "Sum · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t3_D_da1ac366",
+        "question": "Sum of AP is 45 with a = 9, d = -1. Number of terms n = ?",
+        "options": [
+          "12",
+          "10",
+          "11",
+          "9"
+        ],
+        "answer": 1,
+        "explanation": "Solve Sₙ = 45.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t3_D",
+        "category_label": "Sum · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
       }
     ],

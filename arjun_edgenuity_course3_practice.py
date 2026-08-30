@@ -7,6 +7,8 @@ from __future__ import annotations
 import random
 from pathlib import Path
 
+import arjun_course3_levels as c3lvl
+
 from arjun_edgenuity_course3_unit2_practice import (
     UNIT2_CATEGORIES,
     UNIT2_CATEGORY_ACTIVITY,
@@ -1188,6 +1190,11 @@ def _top_up(
                 used_images.add(img)
 
 
+def _normalized_config(unit_id: int, config: dict) -> dict:
+    valid = set(get_categories(unit_id).keys())
+    return c3lvl.normalize_week_config({**config, "unit_id": unit_id}, valid, unit_id=unit_id)
+
+
 def _filter_bank(bank: list[dict], category_filter: list[str] | None) -> list[dict]:
     if not category_filter:
         return bank
@@ -1202,8 +1209,29 @@ def _filter_categories(categories: dict, category_filter: list[str] | None) -> d
     return {k: v for k, v in categories.items() if k in allowed}
 
 
-def question_count_for_unit(unit_id: int, category_filter: list[str] | None = None) -> int:
+def _bank_for_config(bank: list[dict], config: dict, unit_id: int) -> list[dict]:
+    norm = _normalized_config(unit_id, config)
+    valid = set(get_categories(unit_id).keys())
+    level_map = c3lvl.bank_level_map(bank)
+    allowed_slots = set(c3lvl.active_slots(norm.get("topics") or [], valid))
+    if not allowed_slots:
+        return []
+    return [
+        q
+        for q in bank
+        if (str(q.get("category", "")), level_map.get(str(q.get("id", "")), "B")) in allowed_slots
+    ]
+
+
+def question_count_for_unit(
+    unit_id: int,
+    category_filter: list[str] | None = None,
+    *,
+    config: dict | None = None,
+) -> int:
     cfg = _unit_practice(unit_id)
+    if config:
+        return len(_bank_for_config(cfg["bank"], config, unit_id))
     return len(_filter_bank(cfg["bank"], category_filter))
 
 
@@ -1214,12 +1242,15 @@ def build_session_set(
     *,
     xai_api_key: str | None = None,
 ) -> tuple[list[dict], str | None]:
-    category_filter = config.get("categories") or None
-    count = int(config.get("question_count", 15))
-    use_llm = bool(config.get("use_llm"))
-    bank_size = question_count_for_unit(unit_id, category_filter)
+    norm = _normalized_config(unit_id, config)
+    valid = set(get_categories(unit_id).keys())
+    if not c3lvl.active_slots(norm.get("topics") or [], valid):
+        return [], "Select topics and difficulty levels in Week Setup."
+    count = int(norm.get("question_count", 15))
+    use_llm = bool(norm.get("use_llm"))
+    bank_size = question_count_for_unit(unit_id, config=norm)
     if bank_size == 0 and not use_llm:
-        return [], "Configure topics in Week Setup — no questions match the selected categories."
+        return [], "No bank questions match the selected topics and levels."
     count = min(count, bank_size) if bank_size else count
     grok_error: str | None = None
     if use_llm and xai_api_key:
@@ -1229,7 +1260,7 @@ def build_session_set(
             exclude_ids=exclude_ids,
             use_llm=True,
             xai_api_key=xai_api_key,
-            category_filter=category_filter,
+            week_config=norm,
         )
         if questions and questions[0].get("source") != "llm":
             grok_error = "Grok generation failed — used the built-in question bank instead."
@@ -1242,10 +1273,10 @@ def build_session_set(
             exclude_ids=exclude_ids,
             use_llm=False,
             xai_api_key=xai_api_key,
-            category_filter=category_filter,
+            week_config=norm,
         )
     if not questions:
-        return [], grok_error or "Could not build a practice set — check Week Setup categories."
+        return [], grok_error or "Could not build a practice set — check Week Setup."
     return questions, grok_error
 
 
@@ -1257,10 +1288,15 @@ def build_daily_set(
     use_llm: bool = False,
     xai_api_key: str | None = None,
     category_filter: list[str] | None = None,
+    week_config: dict | None = None,
 ) -> list[dict]:
+    cfg = _unit_practice(unit_id)
+    config = week_config or (
+        {"categories": category_filter} if category_filter else {}
+    )
+    norm = _normalized_config(unit_id, config)
+    categories = _filter_categories(cfg["categories"], norm.get("categories"))
     if use_llm and xai_api_key:
-        cfg = _unit_practice(unit_id)
-        categories = _filter_categories(cfg["categories"], category_filter)
         unit = None
         try:
             import arjun_edgenuity_course3_content as ec3
@@ -1275,11 +1311,12 @@ def build_daily_set(
                 revision_tips=cfg["revision_tips"],
                 unit_title=unit["title"] if unit else f"Unit {unit_id}",
                 unit_subtitle=unit.get("subtitle", "") if unit else "",
+                week_config=norm,
                 fallback=lambda: _build_bank_daily_set(
                     count=count,
                     unit_id=unit_id,
                     exclude_ids=exclude_ids,
-                    category_filter=category_filter,
+                    week_config=norm,
                 ),
             )
             if questions:
@@ -1291,7 +1328,7 @@ def build_daily_set(
         count=count,
         unit_id=unit_id,
         exclude_ids=exclude_ids,
-        category_filter=category_filter,
+        week_config=norm,
     )
 
 
@@ -1300,10 +1337,15 @@ def _build_bank_daily_set(
     unit_id: int = 1,
     exclude_ids: set[str] | None = None,
     category_filter: list[str] | None = None,
+    week_config: dict | None = None,
 ) -> list[dict]:
     cfg = _unit_practice(unit_id)
-    bank = _filter_bank(cfg["bank"], category_filter)
-    categories = _filter_categories(cfg["categories"], category_filter)
+    config = week_config or (
+        {"categories": category_filter} if category_filter else {}
+    )
+    norm = _normalized_config(unit_id, config)
+    bank = _bank_for_config(cfg["bank"], norm, unit_id)
+    categories = _filter_categories(cfg["categories"], norm.get("categories"))
     if not bank:
         return []
     generators = cfg["generators"]

@@ -975,6 +975,291 @@
         "category_label": "Irrational · Level D",
         "source": "template",
         "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_e5761c92",
+        "question": "Which conclusion follows in the proof that √2 is irrational?",
+        "options": [
+          "√2 = 2/2",
+          "2 is composite",
+          "√2 is irrational",
+          "√2 is rational"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_d5fcc7a8",
+        "question": "After assuming √2 = p/q (lowest terms), squaring gives:",
+        "options": [
+          "p² = q²",
+          "p² = 2q², so 2 divides p²",
+          "p = q",
+          "q² = 2p²"
+        ],
+        "answer": 1,
+        "explanation": "Then 2 | p, contradicting lowest terms unless p, q share a factor.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_6f37b1a4",
+        "question": "Proof that √2 is irrational begins by:",
+        "options": [
+          "Assume √2 is rational (= p/q in lowest terms)",
+          "Set p = q",
+          "Square both sides first",
+          "Assume √2 is irrational"
+        ],
+        "answer": 0,
+        "explanation": "Proof by contradiction: assume rational, derive p | q² ⇒ p | q.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_8d855b82",
+        "question": "After assuming √3 = p/q (lowest terms), squaring gives:",
+        "options": [
+          "p = q",
+          "p² = 3q², so 3 divides p²",
+          "p² = q²",
+          "q² = 3p²"
+        ],
+        "answer": 1,
+        "explanation": "Then 3 | p, contradicting lowest terms unless p, q share a factor.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_894b5f42",
+        "question": "Which conclusion follows in the proof that √3 is irrational?",
+        "options": [
+          "√3 is rational",
+          "√3 is irrational",
+          "3 is composite",
+          "√3 = 3/2"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_3939c6fd",
+        "question": "Proof that √3 is irrational begins by:",
+        "options": [
+          "Assume √3 is rational (= p/q in lowest terms)",
+          "Assume √3 is irrational",
+          "Square both sides first",
+          "Set p = q"
+        ],
+        "answer": 0,
+        "explanation": "Proof by contradiction: assume rational, derive p | q² ⇒ p | q.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_4960cfe9",
+        "question": "Proof that √5 is irrational begins by:",
+        "options": [
+          "Assume √5 is rational (= p/q in lowest terms)",
+          "Square both sides first",
+          "Set p = q",
+          "Assume √5 is irrational"
+        ],
+        "answer": 0,
+        "explanation": "Proof by contradiction: assume rational, derive p | q² ⇒ p | q.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_85ba0487",
+        "question": "After assuming √5 = p/q (lowest terms), squaring gives:",
+        "options": [
+          "p² = q²",
+          "p² = 5q², so 5 divides p²",
+          "q² = 5p²",
+          "p = q"
+        ],
+        "answer": 1,
+        "explanation": "Then 5 | p, contradicting lowest terms unless p, q share a factor.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_8b416ed8",
+        "question": "Which conclusion follows in the proof that √5 is irrational?",
+        "options": [
+          "√5 is irrational",
+          "5 is composite",
+          "√5 = 5/2",
+          "√5 is rational"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_0c46c0c2",
+        "question": "To prove √3 is irrational, Step 1 is to:",
+        "options": [
+          "Set p = q",
+          "Assume √3 is irrational",
+          "Assume √3 is rational (= p/q in lowest terms)",
+          "Square both sides first"
+        ],
+        "answer": 2,
+        "explanation": "Proof by contradiction — assume rational and derive a contradiction.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_e7069ddf",
+        "question": "To prove √2 is irrational, Step 1 is to:",
+        "options": [
+          "Square both sides first",
+          "Assume √2 is irrational",
+          "Assume √2 is rational (= p/q in lowest terms)",
+          "Set p = q"
+        ],
+        "answer": 2,
+        "explanation": "Proof by contradiction — assume rational and derive a contradiction.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_3ded0bbc",
+        "question": "To prove √5 is irrational, Step 1 is to:",
+        "options": [
+          "Set p = q",
+          "Square both sides first",
+          "Assume √5 is rational (= p/q in lowest terms)",
+          "Assume √5 is irrational"
+        ],
+        "answer": 2,
+        "explanation": "Proof by contradiction — assume rational and derive a contradiction.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_6a325fc3",
+        "question": "After assuming √3 = p/q (lowest terms) and squaring, Step 2 gives:",
+        "options": [
+          "q² = p²",
+          "p divides q",
+          "3 divides p², so 3 divides p",
+          "√3 is rational"
+        ],
+        "answer": 2,
+        "explanation": "Then p and q would share a factor — contradicting lowest terms. Hence √3 is irrational.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_0d4a07c6",
+        "question": "After assuming √2 = p/q (lowest terms) and squaring, Step 2 gives:",
+        "options": [
+          "√2 is rational",
+          "2 divides p², so 2 divides p",
+          "p divides q",
+          "q² = p²"
+        ],
+        "answer": 1,
+        "explanation": "Then p and q would share a factor — contradicting lowest terms. Hence √2 is irrational.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t3_D_dc3ea446",
+        "question": "After assuming √5 = p/q (lowest terms) and squaring, Step 2 gives:",
+        "options": [
+          "q² = p²",
+          "p divides q",
+          "√5 is rational",
+          "5 divides p², so 5 divides p"
+        ],
+        "answer": 3,
+        "explanation": "Then p and q would share a factor — contradicting lowest terms. Hence √5 is irrational.",
+        "topic": 3,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t3_D",
+        "category_label": "Irrational · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
       }
     ],
     "E": [

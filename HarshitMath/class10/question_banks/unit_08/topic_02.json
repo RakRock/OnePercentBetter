@@ -190,6 +190,120 @@
         "category_label": "Angles · Level A",
         "source": "template",
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_A_0a4fbd5a",
+        "question": "cos 30° = ?",
+        "options": [
+          "√3/2",
+          "1",
+          "1/√3",
+          "1/2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t2_A",
+        "category_label": "Angles · Level A",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_A_ca2e5103",
+        "question": "sin 90° = ?",
+        "options": [
+          "undefined",
+          "1 (alt)",
+          "0",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t2_A",
+        "category_label": "Angles · Level A",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_A_8a44cb41",
+        "question": "cos 90° = ?",
+        "options": [
+          "0",
+          "1",
+          "0 (alt)",
+          "undefined"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t2_A",
+        "category_label": "Angles · Level A",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_A_8770906c",
+        "question": "cos 45° = ?",
+        "options": [
+          "1/√2 (alt)",
+          "1/√2",
+          "1",
+          "None of these"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t2_A",
+        "category_label": "Angles · Level A",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_A_4c7bc5b8",
+        "question": "cos 60° = ?",
+        "options": [
+          "√3",
+          "1",
+          "1/2",
+          "√3/2"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t2_A",
+        "category_label": "Angles · Level A",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_A_235f5022",
+        "question": "tan 30° = ?",
+        "options": [
+          "1/√3",
+          "1",
+          "√3/2",
+          "1/2"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "A",
+        "unit_id": 8,
+        "category": "u8_t2_A",
+        "category_label": "Angles · Level A",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       }
     ],
     "B": [
@@ -305,6 +419,63 @@
         "category": "u8_t2_B",
         "category_label": "Angles · Level B",
         "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_B_d79c4d32",
+        "question": "sin 60° + cos 30° = ?",
+        "options": [
+          "1/2",
+          "0",
+          "1",
+          "√3"
+        ],
+        "answer": 2,
+        "explanation": "Use standard trigonometric values.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t2_B",
+        "category_label": "Angles · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_B_cd83e349",
+        "question": "sin 45° + cos 45° = ?",
+        "options": [
+          "1/2",
+          "√2",
+          "√3",
+          "0"
+        ],
+        "answer": 1,
+        "explanation": "Use standard trigonometric values.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t2_B",
+        "category_label": "Angles · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t2_B_d0884dee",
+        "question": "sin 30° + cos 60° = ?",
+        "options": [
+          "1/2",
+          "0",
+          "√3",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "Use standard trigonometric values.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t2_B",
+        "category_label": "Angles · Level B",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       }
     ],

@@ -591,6 +591,120 @@
         "category_label": "Formula · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_9885be85",
+        "question": "Using the quadratic formula on x² - 7x - 8 = 0 (Δ = 81):",
+        "options": [
+          "No real roots",
+          "x = -7, -8",
+          "x = 1, -8",
+          "x = -1, 8"
+        ],
+        "answer": 3,
+        "explanation": "x = (-b ± √Δ)/2.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_36765080",
+        "question": "Using the quadratic formula on x² + 5x + 4 = 0 (Δ = 9):",
+        "options": [
+          "x = -1, -4",
+          "No real roots",
+          "x = 1, 4",
+          "x = 5, 4"
+        ],
+        "answer": 0,
+        "explanation": "x = (-b ± √Δ)/2.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_6aab6393",
+        "question": "Using the quadratic formula on x² - x - 2 = 0 (Δ = 9):",
+        "options": [
+          "No real roots",
+          "x = 2, -1",
+          "x = -1, -2",
+          "x = -2, 1"
+        ],
+        "answer": 1,
+        "explanation": "x = (-b ± √Δ)/2.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_d2dd213a",
+        "question": "Using the quadratic formula on x² + 4x - 32 = 0 (Δ = 144):",
+        "options": [
+          "No real roots",
+          "x = 8, -4",
+          "x = -8, 4",
+          "x = 4, -32"
+        ],
+        "answer": 2,
+        "explanation": "x = (-b ± √Δ)/2.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_36bda9e0",
+        "question": "Using the quadratic formula on x² - 2x = 0 (Δ = 4):",
+        "options": [
+          "x = 0, -2",
+          "x = 0, 2",
+          "x = -2, 0",
+          "No real roots"
+        ],
+        "answer": 1,
+        "explanation": "x = (-b ± √Δ)/2.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_B_7d6f29a9",
+        "question": "Using the quadratic formula on x² + 4x - 5 = 0 (Δ = 36):",
+        "options": [
+          "No real roots",
+          "x = -5, 1",
+          "x = 5, -1",
+          "x = 4, -5"
+        ],
+        "answer": 1,
+        "explanation": "x = (-b ± √Δ)/2.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t3_B",
+        "category_label": "Formula · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
       }
     ],
     "C": [
@@ -1162,6 +1276,101 @@
         "category": "u4_t3_C",
         "category_label": "Formula · Level C",
         "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_8770e0a9",
+        "question": "Solutions of x² + x - 6 = 0:",
+        "options": [
+          "No real roots",
+          "x = 0, 1",
+          "x = 7, 3",
+          "x = 2, -3"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_d6321d8b",
+        "question": "Solutions of 2x² - 7x + 3 = 0:",
+        "options": [
+          "No real roots",
+          "x = 0, 1",
+          "x = 3, 1/2",
+          "x = 7, 3"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_63524192",
+        "question": "Solutions of 2x² + 8x - 24 = 0:",
+        "options": [
+          "No real roots",
+          "x = 0, 1",
+          "x = 7, 3",
+          "x = 2, -6"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_6fc25321",
+        "question": "Solutions of x² - 3x - 28 = 0:",
+        "options": [
+          "x = 7, -4",
+          "No real roots",
+          "x = 7, 3",
+          "x = 0, 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t3_C_5e593810",
+        "question": "Solutions of x² + 5x - 24 = 0:",
+        "options": [
+          "x = 3, -8",
+          "x = 7, 3",
+          "No real roots",
+          "x = 0, 1"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t3_C",
+        "category_label": "Formula · Level C",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 4 Quadratic Equations"
       }
     ],

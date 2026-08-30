@@ -1600,6 +1600,215 @@
         "category_label": "Ratios · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_79cc1383",
+        "question": "If sin θ = 20/52, then cos θ and tan θ are:",
+        "options": [
+          "cos θ = 52/48, tan θ = 1",
+          "cos θ = 48/52, tan θ = 20/48",
+          "Cannot determine",
+          "cos θ = 20/52, tan θ = 48/20"
+        ],
+        "answer": 1,
+        "explanation": "Use sin²θ + cos²θ = 1 and tan = sin/cos.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_8681df4c",
+        "question": "If sin θ = 7/25, then cos θ and tan θ are:",
+        "options": [
+          "cos θ = 7/25, tan θ = 24/7",
+          "cos θ = 24/25, tan θ = 7/24",
+          "Cannot determine",
+          "cos θ = 25/24, tan θ = 1"
+        ],
+        "answer": 1,
+        "explanation": "Use sin²θ + cos²θ = 1 and tan = sin/cos.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_99741707",
+        "question": "If sin θ = 24/74, then cos θ and tan θ are:",
+        "options": [
+          "cos θ = 74/70, tan θ = 1",
+          "cos θ = 70/74, tan θ = 24/70",
+          "cos θ = 24/74, tan θ = 70/24",
+          "Cannot determine"
+        ],
+        "answer": 1,
+        "explanation": "Use sin²θ + cos²θ = 1 and tan = sin/cos.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_e4bd5c5f",
+        "question": "If tan θ = 36/160, then sin θ and cos θ are:",
+        "options": [
+          "Equal",
+          "sin θ = 36/164, cos θ = 160/164",
+          "sin θ = 160/164, cos θ = 36/164",
+          "sin θ = 1, cos θ = 0"
+        ],
+        "answer": 1,
+        "explanation": "From tan = opp/adj, build right triangle.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_1d8e0781",
+        "question": "If tan θ = 12/35, then sin θ and cos θ are:",
+        "options": [
+          "sin θ = 1, cos θ = 0",
+          "Equal",
+          "sin θ = 35/37, cos θ = 12/37",
+          "sin θ = 12/37, cos θ = 35/37"
+        ],
+        "answer": 3,
+        "explanation": "From tan = opp/adj, build right triangle.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_8429639c",
+        "question": "If tan θ = 3/4, then sin θ and cos θ are:",
+        "options": [
+          "sin θ = 4/5, cos θ = 3/5",
+          "Equal",
+          "sin θ = 1, cos θ = 0",
+          "sin θ = 3/5, cos θ = 4/5"
+        ],
+        "answer": 3,
+        "explanation": "From tan = opp/adj, build right triangle.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_316bb1b9",
+        "question": "If sin θ = 60/185, then cos θ and tan θ are:",
+        "options": [
+          "cos θ = 60/185, tan θ = 175/60",
+          "cos θ = 175/185, tan θ = 60/175",
+          "cos θ = 185/175, tan θ = 1",
+          "Cannot determine"
+        ],
+        "answer": 1,
+        "explanation": "Use sin²θ + cos²θ = 1 and tan = sin/cos.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_7e43cc09",
+        "question": "If sin θ = 35/125, then cos θ and tan θ are:",
+        "options": [
+          "cos θ = 120/125, tan θ = 35/120",
+          "cos θ = 35/125, tan θ = 120/35",
+          "Cannot determine",
+          "cos θ = 125/120, tan θ = 1"
+        ],
+        "answer": 0,
+        "explanation": "Use sin²θ + cos²θ = 1 and tan = sin/cos.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_b5862536",
+        "question": "If sin θ = 72/328, then cos θ and tan θ are:",
+        "options": [
+          "cos θ = 72/328, tan θ = 320/72",
+          "Cannot determine",
+          "cos θ = 320/328, tan θ = 72/320",
+          "cos θ = 328/320, tan θ = 1"
+        ],
+        "answer": 2,
+        "explanation": "Use sin²θ + cos²θ = 1 and tan = sin/cos.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_8b738d11",
+        "question": "If tan θ = 48/90, then sin θ and cos θ are:",
+        "options": [
+          "sin θ = 1, cos θ = 0",
+          "sin θ = 48/102, cos θ = 90/102",
+          "sin θ = 90/102, cos θ = 48/102",
+          "Equal"
+        ],
+        "answer": 1,
+        "explanation": "From tan = opp/adj, build right triangle.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_C_de3ce1b1",
+        "question": "If tan θ = 15/36, then sin θ and cos θ are:",
+        "options": [
+          "sin θ = 15/39, cos θ = 36/39",
+          "Equal",
+          "sin θ = 1, cos θ = 0",
+          "sin θ = 36/39, cos θ = 15/39"
+        ],
+        "answer": 0,
+        "explanation": "From tan = opp/adj, build right triangle.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t1_C",
+        "category_label": "Ratios · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       }
     ],
     "D": [
@@ -2171,6 +2380,82 @@
         "category": "u8_t1_D",
         "category_label": "Ratios · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_ffe45c0b",
+        "question": "If cos θ = 1/√2, then θ = ?",
+        "options": [
+          "45° (alt)",
+          "45°",
+          "0°",
+          "90°"
+        ],
+        "answer": 1,
+        "explanation": "Standard angle table.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_d860892f",
+        "question": "If sin θ = 1/√2, then θ = ?",
+        "options": [
+          "90°",
+          "0°",
+          "45° (alt)",
+          "45°"
+        ],
+        "answer": 3,
+        "explanation": "Standard angle table.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_e539844d",
+        "question": "If sin θ = 1/2, then θ = ?",
+        "options": [
+          "0°",
+          "60°",
+          "90°",
+          "30°"
+        ],
+        "answer": 3,
+        "explanation": "Standard angle table.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t1_D_b05e0b09",
+        "question": "If tan θ = 1, then θ = ?",
+        "options": [
+          "90°",
+          "45° (alt)",
+          "0°",
+          "45°"
+        ],
+        "answer": 3,
+        "explanation": "Standard angle table.",
+        "topic": 1,
+        "level": "D",
+        "unit_id": 8,
+        "category": "u8_t1_D",
+        "category_label": "Ratios · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       }
     ],

@@ -1936,15 +1936,11 @@ def get_harshit_class10_week_config(unit_id: int) -> dict:
     }
 
 
-def get_arjun_course3_week_config(unit_id: int) -> dict:
-    with get_connection() as conn:
-        row = conn.execute(
-            "SELECT week_label, config_json FROM arjun_course3_week_config WHERE unit_id = ?",
-            (unit_id,),
-        ).fetchone()
+def _load_arjun_week_config_row(row, unit_id: int) -> dict:
     if not row:
         return {
             "week_label": "",
+            "topics": [],
             "categories": [],
             "question_count": 15,
             "use_llm": False,
@@ -1956,15 +1952,25 @@ def get_arjun_course3_week_config(unit_id: int) -> dict:
         data = {}
     if not isinstance(data, dict):
         data = {}
+    topics = data.get("topics")
+    if not isinstance(topics, list):
+        topics = []
     categories = data.get("categories")
     if not isinstance(categories, list):
         categories = []
+    if not categories and topics:
+        categories = [
+            str(item.get("id"))
+            for item in topics
+            if isinstance(item, dict) and item.get("id")
+        ]
     try:
         question_count = max(5, min(30, int(data.get("question_count", 15))))
     except (TypeError, ValueError):
         question_count = 15
     return {
         "week_label": row["week_label"] or data.get("week_label", ""),
+        "topics": topics,
         "categories": categories,
         "question_count": question_count,
         "use_llm": bool(data.get("use_llm", False)),
@@ -1972,16 +1978,31 @@ def get_arjun_course3_week_config(unit_id: int) -> dict:
     }
 
 
+def get_arjun_course3_week_config(unit_id: int) -> dict:
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT week_label, config_json FROM arjun_course3_week_config WHERE unit_id = ?",
+            (unit_id,),
+        ).fetchone()
+    return _load_arjun_week_config_row(row, unit_id)
+
+
 def save_arjun_course3_week_config(
     unit_id: int,
     week_label: str,
-    categories: list[str],
+    topics: list[dict],
     *,
     question_count: int = 15,
     use_llm: bool = False,
 ) -> None:
+    categories = [
+        str(item.get("id"))
+        for item in topics
+        if isinstance(item, dict) and item.get("id")
+    ]
     payload = {
         "week_label": week_label,
+        "topics": topics,
         "categories": categories,
         "question_count": max(5, min(30, int(question_count))),
         "use_llm": use_llm,
@@ -2005,46 +2026,25 @@ def get_arjun_edgenuity_course3_week_config(unit_id: int) -> dict:
             "SELECT week_label, config_json FROM arjun_edgenuity_course3_week_config WHERE unit_id = ?",
             (unit_id,),
         ).fetchone()
-    if not row:
-        return {
-            "week_label": "",
-            "categories": [],
-            "question_count": 15,
-            "use_llm": False,
-            "unit_id": unit_id,
-        }
-    try:
-        data = json.loads(row["config_json"] or "{}")
-    except json.JSONDecodeError:
-        data = {}
-    if not isinstance(data, dict):
-        data = {}
-    categories = data.get("categories")
-    if not isinstance(categories, list):
-        categories = []
-    try:
-        question_count = max(5, min(30, int(data.get("question_count", 15))))
-    except (TypeError, ValueError):
-        question_count = 15
-    return {
-        "week_label": row["week_label"] or data.get("week_label", ""),
-        "categories": categories,
-        "question_count": question_count,
-        "use_llm": bool(data.get("use_llm", False)),
-        "unit_id": unit_id,
-    }
+    return _load_arjun_week_config_row(row, unit_id)
 
 
 def save_arjun_edgenuity_course3_week_config(
     unit_id: int,
     week_label: str,
-    categories: list[str],
+    topics: list[dict],
     *,
     question_count: int = 15,
     use_llm: bool = False,
 ) -> None:
+    categories = [
+        str(item.get("id"))
+        for item in topics
+        if isinstance(item, dict) and item.get("id")
+    ]
     payload = {
         "week_label": week_label,
+        "topics": topics,
         "categories": categories,
         "question_count": max(5, min(30, int(question_count))),
         "use_llm": use_llm,

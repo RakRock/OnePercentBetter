@@ -610,6 +610,101 @@
         "category_label": "Length · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_8edebe1f",
+        "question": "Radius 7 cm, point 25 cm from centre. Tangent length = ?",
+        "options": [
+          "7 cm",
+          "25 cm",
+          "26 cm",
+          "24 cm"
+        ],
+        "answer": 3,
+        "explanation": "PQ = √(25² - 7²) = 24.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_636f7106",
+        "question": "Radius 12 cm, point 15 cm from centre. Tangent length = ?",
+        "options": [
+          "9 cm",
+          "15 cm",
+          "12 cm",
+          "11 cm"
+        ],
+        "answer": 0,
+        "explanation": "PQ = √(15² - 12²) = 9.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_648cd381",
+        "question": "Radius 15 cm, point 39 cm from centre. Tangent length = ?",
+        "options": [
+          "38 cm",
+          "36 cm",
+          "39 cm",
+          "15 cm"
+        ],
+        "answer": 1,
+        "explanation": "PQ = √(39² - 15²) = 36.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_b0a06b89",
+        "question": "Radius 20 cm, point 25 cm from centre. Tangent length = ?",
+        "options": [
+          "17 cm",
+          "25 cm",
+          "15 cm",
+          "20 cm"
+        ],
+        "answer": 2,
+        "explanation": "PQ = √(25² - 20²) = 15.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t3_B_87b03f8e",
+        "question": "Radius 6 cm, point 10 cm from centre. Tangent length = ?",
+        "options": [
+          "8 cm",
+          "10 cm",
+          "8 cm (alt)",
+          "6 cm"
+        ],
+        "answer": 0,
+        "explanation": "PQ = √(10² - 6²) = 8.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t3_B",
+        "category_label": "Length · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
       }
     ],
     "C": [

@@ -1142,6 +1142,120 @@
         "category_label": "Disc · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_B_f0c98337",
+        "question": "For x² + -5x + -2 = 0, Δ = 33. Nature of roots:",
+        "options": [
+          "No real roots",
+          "Two equal real roots",
+          "Two distinct real roots (alt)",
+          "Two distinct real roots"
+        ],
+        "answer": 3,
+        "explanation": "Δ = b² - 4ac = 33.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t4_B",
+        "category_label": "Disc · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_B_0ab23fcd",
+        "question": "For x² + 4x + -1 = 0, Δ = 20. Nature of roots:",
+        "options": [
+          "Two distinct real roots",
+          "No real roots",
+          "Two distinct real roots (alt)",
+          "Two equal real roots"
+        ],
+        "answer": 0,
+        "explanation": "Δ = b² - 4ac = 20.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t4_B",
+        "category_label": "Disc · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_B_71654c5f",
+        "question": "For x² + x + -11 = 0, Δ = 45. Nature of roots:",
+        "options": [
+          "Two distinct real roots",
+          "No real roots",
+          "Two equal real roots",
+          "Two distinct real roots (alt)"
+        ],
+        "answer": 0,
+        "explanation": "Δ = b² - 4ac = 45.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t4_B",
+        "category_label": "Disc · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_B_b14a9fed",
+        "question": "For x² + 5x + 9 = 0, Δ = -11. Nature of roots:",
+        "options": [
+          "No real roots (alt)",
+          "Two distinct real roots",
+          "Two equal real roots",
+          "No real roots"
+        ],
+        "answer": 3,
+        "explanation": "Δ = b² - 4ac = -11.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t4_B",
+        "category_label": "Disc · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_B_5d187fcc",
+        "question": "For x² + 0x + 4 = 0, Δ = -16. Nature of roots:",
+        "options": [
+          "No real roots",
+          "Two equal real roots",
+          "No real roots (alt)",
+          "Two distinct real roots"
+        ],
+        "answer": 0,
+        "explanation": "Δ = b² - 4ac = -16.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t4_B",
+        "category_label": "Disc · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_B_0e3cd759",
+        "question": "For x² + 2x + -12 = 0, Δ = 52. Nature of roots:",
+        "options": [
+          "No real roots",
+          "Two equal real roots",
+          "Two distinct real roots (alt)",
+          "Two distinct real roots"
+        ],
+        "answer": 3,
+        "explanation": "Δ = b² - 4ac = 52.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 4,
+        "category": "u4_t4_B",
+        "category_label": "Disc · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
       }
     ],
     "C": [
@@ -1257,6 +1371,196 @@
         "category": "u4_t4_C",
         "category_label": "Disc · Level C",
         "source": "template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_C_713b66bd",
+        "question": "x² + kx + 64 = 0 has equal roots. Then k = ?",
+        "options": [
+          "-14",
+          "16",
+          "8",
+          "-16"
+        ],
+        "answer": 3,
+        "explanation": "Equal roots ⇒ Δ = k² - 4r² = 0 ⇒ k = ±16.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t4_C",
+        "category_label": "Disc · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_C_c1ff3ef3",
+        "question": "x² + kx + 49 = 0 has equal roots. Then k = ?",
+        "options": [
+          "7",
+          "14",
+          "-12",
+          "-14"
+        ],
+        "answer": 3,
+        "explanation": "Equal roots ⇒ Δ = k² - 4r² = 0 ⇒ k = ±14.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t4_C",
+        "category_label": "Disc · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_C_e8db2a8e",
+        "question": "x² + kx + 9 = 0 has equal roots. Then k = ?",
+        "options": [
+          "6",
+          "-4",
+          "-6",
+          "3"
+        ],
+        "answer": 2,
+        "explanation": "Equal roots ⇒ Δ = k² - 4r² = 0 ⇒ k = ±6.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t4_C",
+        "category_label": "Disc · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_C_e460ca0c",
+        "question": "x² + 5x + 29 = 0 has no real roots because:",
+        "options": [
+          "Δ > 0",
+          "Δ = 0",
+          "Roots are always real",
+          "Δ = 5² - 4×29 = -91 < 0"
+        ],
+        "answer": 3,
+        "explanation": "Discriminant negative ⇒ no real roots.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t4_C",
+        "category_label": "Disc · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_C_c2cc4fb9",
+        "question": "x² + 7x + 50 = 0 has no real roots because:",
+        "options": [
+          "Δ > 0",
+          "Δ = 0",
+          "Δ = 7² - 4×50 = -151 < 0",
+          "Roots are always real"
+        ],
+        "answer": 2,
+        "explanation": "Discriminant negative ⇒ no real roots.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t4_C",
+        "category_label": "Disc · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_C_469d1374",
+        "question": "x² + 7x + 55 = 0 has no real roots because:",
+        "options": [
+          "Δ > 0",
+          "Roots are always real",
+          "Δ = 7² - 4×55 = -171 < 0",
+          "Δ = 0"
+        ],
+        "answer": 2,
+        "explanation": "Discriminant negative ⇒ no real roots.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t4_C",
+        "category_label": "Disc · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_C_49c0bae1",
+        "question": "x² + kx + 25 = 0 has equal roots. Then k = ?",
+        "options": [
+          "-10",
+          "10",
+          "-8",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "Equal roots ⇒ Δ = k² - 4r² = 0 ⇒ k = ±10.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t4_C",
+        "category_label": "Disc · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_C_adc18f21",
+        "question": "x² + 2x + 5 = 0 has no real roots because:",
+        "options": [
+          "Δ = 2² - 4×5 = -16 < 0",
+          "Roots are always real",
+          "Δ > 0",
+          "Δ = 0"
+        ],
+        "answer": 0,
+        "explanation": "Discriminant negative ⇒ no real roots.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t4_C",
+        "category_label": "Disc · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_C_09bc29fe",
+        "question": "x² + 7x + 53 = 0 has no real roots because:",
+        "options": [
+          "Roots are always real",
+          "Δ = 0",
+          "Δ > 0",
+          "Δ = 7² - 4×53 = -163 < 0"
+        ],
+        "answer": 3,
+        "explanation": "Discriminant negative ⇒ no real roots.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t4_C",
+        "category_label": "Disc · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 4 Quadratic Equations"
+      },
+      {
+        "id": "u4_t4_C_fa386c96",
+        "question": "x² + 8x + 66 = 0 has no real roots because:",
+        "options": [
+          "Roots are always real",
+          "Δ = 8² - 4×66 = -200 < 0",
+          "Δ = 0",
+          "Δ > 0"
+        ],
+        "answer": 1,
+        "explanation": "Discriminant negative ⇒ no real roots.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 4,
+        "category": "u4_t4_C",
+        "category_label": "Disc · Level C",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 4 Quadratic Equations"
       }
     ],

@@ -1393,6 +1393,139 @@
         "category_label": "Apps · Level D",
         "source": "template",
         "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t4_D_5af2088d",
+        "question": "Do (0, 0), (3, 0), (0, 4) form a right-angled triangle?",
+        "options": [
+          "Collinear",
+          "Equilateral",
+          "No",
+          "Yes — right angle at origin"
+        ],
+        "answer": 3,
+        "explanation": "3-4-5 triangle: 3² + 4² = 5².",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t4_D_bdf22381",
+        "question": "Distance between (3, 2) and (6, 2) is 3 units. Verify x₂:",
+        "options": [
+          "x₂ = 8",
+          "x₂ = 6",
+          "x₂ = 3",
+          "x₂ = 6 (alt)"
+        ],
+        "answer": 1,
+        "explanation": "|x₂ - x₁| = 3.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t4_D_719a1608",
+        "question": "Distance between (5, 4) and (11, 4) is 6 units. Verify x₂:",
+        "options": [
+          "x₂ = 6",
+          "x₂ = 11",
+          "x₂ = 5",
+          "x₂ = 13"
+        ],
+        "answer": 1,
+        "explanation": "|x₂ - x₁| = 6.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t4_D_b586e868",
+        "question": "Distance between (5, 2) and (9, 2) is 4 units. Verify x₂:",
+        "options": [
+          "x₂ = 9",
+          "x₂ = 11",
+          "x₂ = 4",
+          "x₂ = 5"
+        ],
+        "answer": 0,
+        "explanation": "|x₂ - x₁| = 4.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t4_D_4e9d3216",
+        "question": "Distance between (2, 3) and (5, 3) is 3 units. Verify x₂:",
+        "options": [
+          "x₂ = 7",
+          "x₂ = 2",
+          "x₂ = 3",
+          "x₂ = 5"
+        ],
+        "answer": 3,
+        "explanation": "|x₂ - x₁| = 3.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t4_D_aeda5007",
+        "question": "Distance between (4, 1) and (10, 1) is 6 units. Verify x₂:",
+        "options": [
+          "x₂ = 4",
+          "x₂ = 12",
+          "x₂ = 10",
+          "x₂ = 6"
+        ],
+        "answer": 2,
+        "explanation": "|x₂ - x₁| = 6.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t4_D_39cd7da4",
+        "question": "Distance between (4, 3) and (8, 3) is 4 units. Verify x₂:",
+        "options": [
+          "x₂ = 8",
+          "x₂ = 10",
+          "x₂ = 8 (alt)",
+          "x₂ = 4"
+        ],
+        "answer": 0,
+        "explanation": "|x₂ - x₁| = 4.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
       }
     ],
     "E": [

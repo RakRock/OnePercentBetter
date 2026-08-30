@@ -975,6 +975,101 @@
         "category_label": "Combine · Level D",
         "source": "template",
         "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_71f353a6",
+        "question": "Which is correct about 5 + 3√3?",
+        "options": [
+          "5 + 3√3 is rational",
+          "√3 is rational",
+          "5 + 3√3 is irrational",
+          "Sum of two rationals is irrational"
+        ],
+        "answer": 2,
+        "explanation": "Assuming rational leads to √ being rational — contradiction.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_40bbd0e5",
+        "question": "Which is correct about 4 + 2√6?",
+        "options": [
+          "4 + 2√6 is irrational",
+          "4 + 2√6 is rational",
+          "Sum of two rationals is irrational",
+          "√6 is rational"
+        ],
+        "answer": 0,
+        "explanation": "Assuming rational leads to √ being rational — contradiction.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_cbaec53b",
+        "question": "Which is correct about 4 + 4√6?",
+        "options": [
+          "Sum of two rationals is irrational",
+          "4 + 4√6 is irrational",
+          "4 + 4√6 is rational",
+          "√6 is rational"
+        ],
+        "answer": 1,
+        "explanation": "Assuming rational leads to √ being rational — contradiction.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_a0e21fa8",
+        "question": "Which is correct about 4 + 3√6?",
+        "options": [
+          "4 + 3√6 is rational",
+          "4 + 3√6 is irrational",
+          "√6 is rational",
+          "Sum of two rationals is irrational"
+        ],
+        "answer": 1,
+        "explanation": "Assuming rational leads to √ being rational — contradiction.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
+      },
+      {
+        "id": "u1_t4_D_c575127e",
+        "question": "Which is correct about 5 + 4√3?",
+        "options": [
+          "5 + 4√3 is rational",
+          "√3 is rational",
+          "Sum of two rationals is irrational",
+          "5 + 4√3 is irrational"
+        ],
+        "answer": 3,
+        "explanation": "Assuming rational leads to √ being rational — contradiction.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 1,
+        "category": "u1_t4_D",
+        "category_label": "Combine · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 1 Real Numbers"
       }
     ],
     "E": [

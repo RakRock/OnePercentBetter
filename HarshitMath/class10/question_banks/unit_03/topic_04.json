@@ -591,6 +591,120 @@
         "category_label": "Cross · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_73f93388",
+        "question": "Cross-multiplication on 3x + 3y = 42 and x + 5y = 46 gives:",
+        "options": [
+          "x = 7, y = 8",
+          "x = 8, y = 6",
+          "x = 6, y = 9",
+          "x = 6, y = 8"
+        ],
+        "answer": 3,
+        "explanation": "Det = 12; x = (c₁b₂ - c₂b₁)/det.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_97196ae7",
+        "question": "Cross-multiplication on x + y = 14 and 3x + 6y = 57 gives:",
+        "options": [
+          "x = 9, y = 5",
+          "x = 9, y = 6",
+          "x = 5, y = 9",
+          "x = 10, y = 5"
+        ],
+        "answer": 0,
+        "explanation": "Det = 3; x = (c₁b₂ - c₂b₁)/det.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_a7ec5638",
+        "question": "Cross-multiplication on 4x + 3y = 34 and 2x - 5y = -22 gives:",
+        "options": [
+          "x = 6, y = 4",
+          "x = 4, y = 7",
+          "x = 4, y = 6",
+          "x = 5, y = 6"
+        ],
+        "answer": 2,
+        "explanation": "Det = -26; x = (c₁b₂ - c₂b₁)/det.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_20f1a709",
+        "question": "Cross-multiplication on 3x + 2y = 36 and x - 3y = -21 gives:",
+        "options": [
+          "x = 7, y = 9",
+          "x = 6, y = 9",
+          "x = 6, y = 10",
+          "x = 9, y = 6"
+        ],
+        "answer": 1,
+        "explanation": "Det = -11; x = (c₁b₂ - c₂b₁)/det.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_de9cc9c3",
+        "question": "Cross-multiplication on x + 6y = -9 and 5x - 4y = 23 gives:",
+        "options": [
+          "x = -2, y = 3",
+          "x = 3, y = -1",
+          "x = 3, y = -2",
+          "x = 4, y = -2"
+        ],
+        "answer": 2,
+        "explanation": "Det = -34; x = (c₁b₂ - c₂b₁)/det.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_B_9f570c1c",
+        "question": "Cross-multiplication on 2x + 5y = 15 and 6x - 3y = 27 gives:",
+        "options": [
+          "x = 5, y = 2",
+          "x = 5, y = 1",
+          "x = 1, y = 5",
+          "x = 6, y = 1"
+        ],
+        "answer": 1,
+        "explanation": "Det = -36; x = (c₁b₂ - c₂b₁)/det.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t4_B",
+        "category_label": "Cross · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ],
     "C": [
@@ -611,6 +725,120 @@
         "category": "u3_t4_C",
         "category_label": "Cross · Level C",
         "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_C_602a1284",
+        "question": "For 6x + 3y = 3 and 3x - 3y = -39, the pair has a unique solution because:",
+        "options": [
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "a₁/a₂ ≠ b₁/b₂",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "Lines are coincident"
+        ],
+        "answer": 1,
+        "explanation": "Solution: x = -4, y = 9.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t4_C",
+        "category_label": "Cross · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_C_1b414801",
+        "question": "For x + 4y = -24 and 4x - 2y = 12, the pair has a unique solution because:",
+        "options": [
+          "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "Lines are coincident",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "a₁/a₂ ≠ b₁/b₂"
+        ],
+        "answer": 3,
+        "explanation": "Solution: x = 0, y = -6.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t4_C",
+        "category_label": "Cross · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_C_32343013",
+        "question": "For 4x + 6y = 70 and 6x + 2y = 42, the pair has a unique solution because:",
+        "options": [
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "Lines are coincident",
+          "a₁/a₂ ≠ b₁/b₂"
+        ],
+        "answer": 3,
+        "explanation": "Solution: x = 4, y = 9.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t4_C",
+        "category_label": "Cross · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_C_fbd0d31b",
+        "question": "For 5x + 3y = 19 and 5x + 6y = 43, the pair has a unique solution because:",
+        "options": [
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "Lines are coincident",
+          "a₁/a₂ ≠ b₁/b₂"
+        ],
+        "answer": 3,
+        "explanation": "Solution: x = -1, y = 8.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t4_C",
+        "category_label": "Cross · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_C_4fe21304",
+        "question": "For 5x + 3y = 49 and 3x = 15, the pair has a unique solution because:",
+        "options": [
+          "Lines are coincident",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "a₁/a₂ ≠ b₁/b₂",
+          "a₁/a₂ = b₁/b₂ = c₁/c₂"
+        ],
+        "answer": 2,
+        "explanation": "Solution: x = 5, y = 8.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t4_C",
+        "category_label": "Cross · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_C_27bac822",
+        "question": "For 3x + 6y = 3 and 4x + 3y = 24, the pair has a unique solution because:",
+        "options": [
+          "a₁/a₂ = b₁/b₂ = c₁/c₂",
+          "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "a₁/a₂ ≠ b₁/b₂",
+          "Lines are coincident"
+        ],
+        "answer": 2,
+        "explanation": "Solution: x = 9, y = -4.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t4_C",
+        "category_label": "Cross · Level C",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ],
@@ -1146,6 +1374,405 @@
         "category_label": "Cross · Level D",
         "source": "template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_ab7cedbb",
+        "question": "Father is 3× son's age; in 14 years he will be 2× son's age. Age difference now?",
+        "options": [
+          "36 years",
+          "24 years",
+          "12 years",
+          "38 years"
+        ],
+        "answer": 1,
+        "explanation": "son = 12, father = 36; difference = 24.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_5f6fcb6c",
+        "question": "Father is 3× son's age; in 9 years he will be 2× son's age. Age difference now?",
+        "options": [
+          "12 years",
+          "36 years",
+          "24 years",
+          "33 years"
+        ],
+        "answer": 2,
+        "explanation": "son = 12, father = 36; difference = 24.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_9517f61d",
+        "question": "Father is 3× son's age; in 11 years he will be 2× son's age. Age difference now?",
+        "options": [
+          "36 years",
+          "35 years",
+          "24 years",
+          "12 years"
+        ],
+        "answer": 2,
+        "explanation": "son = 12, father = 36; difference = 24.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_09e01bba",
+        "question": "A two-digit number has tens digit 7 and units 7. Difference between the number and its reverse is:",
+        "options": [
+          "0",
+          "14",
+          "9",
+          "154"
+        ],
+        "answer": 0,
+        "explanation": "Number = 77, reverse = 77.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_0e738bf5",
+        "question": "A two-digit number has tens digit 4 and units 3. Difference between the number and its reverse is:",
+        "options": [
+          "9",
+          "18",
+          "77",
+          "7"
+        ],
+        "answer": 0,
+        "explanation": "Number = 43, reverse = 34.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_65bf4f48",
+        "question": "A two-digit number has tens digit 6 and units 8. Difference between the number and its reverse is:",
+        "options": [
+          "154",
+          "27",
+          "18",
+          "14"
+        ],
+        "answer": 2,
+        "explanation": "Number = 68, reverse = 86.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_66a538c0",
+        "question": "Father is 3× son's age; in 15 years he will be 2× son's age. Age difference now?",
+        "options": [
+          "36 years",
+          "24 years",
+          "39 years",
+          "12 years"
+        ],
+        "answer": 1,
+        "explanation": "son = 12, father = 36; difference = 24.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_7465b4b7",
+        "question": "Father is 2× son's age; in 8 years he will be 1× son's age. Age difference now?",
+        "options": [
+          "12 years",
+          "20 years",
+          "12 years (alt)",
+          "24 years"
+        ],
+        "answer": 0,
+        "explanation": "son = 12, father = 24; difference = 12.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_6278e8a8",
+        "question": "Father is 2× son's age; in 14 years he will be 1× son's age. Age difference now?",
+        "options": [
+          "26 years",
+          "12 years",
+          "24 years",
+          "12 years (alt)"
+        ],
+        "answer": 1,
+        "explanation": "son = 12, father = 24; difference = 12.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_ad988cb5",
+        "question": "A two-digit number has tens digit 4 and units 6. Difference between the number and its reverse is:",
+        "options": [
+          "18",
+          "110",
+          "27",
+          "10"
+        ],
+        "answer": 0,
+        "explanation": "Number = 46, reverse = 64.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_b9f46aba",
+        "question": "A two-digit number has tens digit 6 and units 1. Difference between the number and its reverse is:",
+        "options": [
+          "54",
+          "45",
+          "7",
+          "77"
+        ],
+        "answer": 1,
+        "explanation": "Number = 61, reverse = 16.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_951a116f",
+        "question": "A two-digit number has tens digit 3 and units 6. Difference between the number and its reverse is:",
+        "options": [
+          "9",
+          "36",
+          "27",
+          "99"
+        ],
+        "answer": 2,
+        "explanation": "Number = 36, reverse = 63.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_d062447a",
+        "question": "For 6x + y = 48 and 6x - 4y = 18, compare a₁/a₂, b₁/b₂, c₁/c₂. The pair has:",
+        "options": [
+          "Unique solution (a₁/a₂ ≠ b₁/b₂)",
+          "Infinitely many solutions",
+          "Exactly two solutions",
+          "No solution"
+        ],
+        "answer": 0,
+        "explanation": "Ratios differ → intersecting lines → x = 7, y = 6.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_38771e83",
+        "question": "For 5x + 5y = 17 and 15x + 15y = 19, compare a₁/a₂, b₁/b₂, c₁/c₂. The pair has:",
+        "options": [
+          "Dependent only",
+          "Infinitely many solutions",
+          "No solution (a₁/a₂ = b₁/b₂ ≠ c₁/c₂)",
+          "Unique solution"
+        ],
+        "answer": 2,
+        "explanation": "Parallel distinct lines → inconsistent pair.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_4b415175",
+        "question": "For 5x + 5y = -20 and 2x - 3y = -3, compare a₁/a₂, b₁/b₂, c₁/c₂. The pair has:",
+        "options": [
+          "Unique solution (a₁/a₂ ≠ b₁/b₂)",
+          "Infinitely many solutions",
+          "Exactly two solutions",
+          "No solution"
+        ],
+        "answer": 0,
+        "explanation": "Ratios differ → intersecting lines → x = -3, y = -1.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_5e93b129",
+        "question": "Father is 2 times son's age. In 14 years he will be 1 times son's age. Step 1 — form the equations (x = son, y = father):",
+        "options": [
+          "y = 2x; y + 14 = 1(x + 14)",
+          "x = 2y; x + 14 = 1(y + 14)",
+          "y = 2x; y = x",
+          "x + y = 14; y - x = 2"
+        ],
+        "answer": 0,
+        "explanation": "Step 2: solve the linear pair for present ages.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_bb7350eb",
+        "question": "Father is 2 times son's age. In 9 years he will be 1 times son's age. Step 1 — form the equations (x = son, y = father):",
+        "options": [
+          "y = 2x; y + 9 = 1(x + 9)",
+          "x + y = 9; y - x = 2",
+          "x = 2y; x + 9 = 1(y + 9)",
+          "y = 2x; y = x"
+        ],
+        "answer": 0,
+        "explanation": "Step 2: solve the linear pair for present ages.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_df7e34f9",
+        "question": "Father is 2 times son's age. In 13 years he will be 1 times son's age. Step 1 — form the equations (x = son, y = father):",
+        "options": [
+          "y = 2x; y = x",
+          "x + y = 13; y - x = 2",
+          "y = 2x; y + 13 = 1(x + 13)",
+          "x = 2y; x + 13 = 1(y + 13)"
+        ],
+        "answer": 2,
+        "explanation": "Step 2: solve the linear pair for present ages.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_c4ebfa21",
+        "question": "Father is 2× son's age; in 9 years he will be 1× son's age. Step 2 — present ages are:",
+        "options": [
+          "Son = 8, Father = 16",
+          "Son = 17, Father = 25",
+          "Son = 16, Father = 8",
+          "Son = 9, Father = 16"
+        ],
+        "answer": 0,
+        "explanation": "From y = 2x and y + 9 = 1(x + 9), son = 8, father = 16.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_9f2c2a31",
+        "question": "Father is 2× son's age; in 13 years he will be 1× son's age. Step 2 — present ages are:",
+        "options": [
+          "Son = 14, Father = 28",
+          "Son = 28, Father = 14",
+          "Son = 27, Father = 41",
+          "Son = 15, Father = 28"
+        ],
+        "answer": 0,
+        "explanation": "From y = 2x and y + 13 = 1(x + 13), son = 14, father = 28.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_D_12a45032",
+        "question": "Father is 3× son's age; in 14 years he will be 2× son's age. Step 2 — present ages are:",
+        "options": [
+          "Son = 26, Father = 50",
+          "Son = 13, Father = 36",
+          "Son = 12, Father = 36",
+          "Son = 36, Father = 12"
+        ],
+        "answer": 2,
+        "explanation": "From y = 3x and y + 14 = 2(x + 14), son = 12, father = 36.",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t4_D",
+        "category_label": "Cross · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ],
     "E": [
@@ -1166,6 +1793,348 @@
         "category": "u3_t4_E",
         "category_label": "Cross · Level E",
         "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_62029dc5",
+        "question": "Income = ₹8705, expenditure = ₹6895. Monthly savings = ?",
+        "options": [
+          "₹2310",
+          "₹1810",
+          "₹6895",
+          "₹15600"
+        ],
+        "answer": 1,
+        "explanation": "Form linear equations for income/expenditure word problems.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_c0899c86",
+        "question": "Income = ₹12755, expenditure = ₹10768. Monthly savings = ?",
+        "options": [
+          "₹2487",
+          "₹1987",
+          "₹23523",
+          "₹10768"
+        ],
+        "answer": 1,
+        "explanation": "Form linear equations for income/expenditure word problems.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_6ed348ed",
+        "question": "Income = ₹14801, expenditure = ₹5222. Monthly savings = ?",
+        "options": [
+          "₹9579",
+          "₹10079",
+          "₹20023",
+          "₹5222"
+        ],
+        "answer": 0,
+        "explanation": "Form linear equations for income/expenditure word problems.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_eeefc698",
+        "question": "A train covers 312 km in 5 hours. Speed = ? km/h",
+        "options": [
+          "57",
+          "62",
+          "317",
+          "72"
+        ],
+        "answer": 1,
+        "explanation": "Speed = distance/time = 312/5 = 62.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_d03ef508",
+        "question": "A train covers 249 km in 4 hours. Speed = ? km/h",
+        "options": [
+          "253",
+          "57",
+          "72",
+          "62"
+        ],
+        "answer": 3,
+        "explanation": "Speed = distance/time = 249/4 = 62.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_551dfb4e",
+        "question": "A train covers 260 km in 8 hours. Speed = ? km/h",
+        "options": [
+          "32",
+          "268",
+          "42",
+          "27"
+        ],
+        "answer": 0,
+        "explanation": "Speed = distance/time = 260/8 = 32.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_e5fe2d10",
+        "question": "2 pens at ₹35 each and 8 pencils at ₹19 each cost:",
+        "options": [
+          "₹222",
+          "₹10",
+          "₹257",
+          "₹54"
+        ],
+        "answer": 0,
+        "explanation": "Two linear equations in pen and pencil counts/prices.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_c42826c1",
+        "question": "4 pens at ₹26 each and 7 pencils at ₹19 each cost:",
+        "options": [
+          "₹263",
+          "₹45",
+          "₹11",
+          "₹237"
+        ],
+        "answer": 3,
+        "explanation": "Two linear equations in pen and pencil counts/prices.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_40126306",
+        "question": "4 pens at ₹19 each and 3 pencils at ₹13 each cost:",
+        "options": [
+          "₹115",
+          "₹32",
+          "₹7",
+          "₹134"
+        ],
+        "answer": 0,
+        "explanation": "Two linear equations in pen and pencil counts/prices.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_fc30827d",
+        "question": "Income = ₹13893, expenditure = ₹6757. Monthly savings = ?",
+        "options": [
+          "₹6757",
+          "₹20650",
+          "₹7636",
+          "₹7136"
+        ],
+        "answer": 3,
+        "explanation": "Form linear equations for income/expenditure word problems.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_dd84dcd6",
+        "question": "Income = ₹12017, expenditure = ₹6031. Monthly savings = ?",
+        "options": [
+          "₹18048",
+          "₹6031",
+          "₹5986",
+          "₹6486"
+        ],
+        "answer": 2,
+        "explanation": "Form linear equations for income/expenditure word problems.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_0617db4c",
+        "question": "Income = ₹9700, expenditure = ₹10498. Monthly savings = ?",
+        "options": [
+          "₹-298",
+          "₹20198",
+          "₹10498",
+          "₹-798"
+        ],
+        "answer": 3,
+        "explanation": "Form linear equations for income/expenditure word problems.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_e0983e06",
+        "question": "A train covers 307 km in 7 hours. Speed = ? km/h",
+        "options": [
+          "38",
+          "314",
+          "43",
+          "53"
+        ],
+        "answer": 2,
+        "explanation": "Speed = distance/time = 307/7 = 43.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_881214ad",
+        "question": "A train covers 440 km in 3 hours. Speed = ? km/h",
+        "options": [
+          "156",
+          "141",
+          "146",
+          "443"
+        ],
+        "answer": 2,
+        "explanation": "Speed = distance/time = 440/3 = 146.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_b11092a3",
+        "question": "A train covers 205 km in 7 hours. Speed = ? km/h",
+        "options": [
+          "24",
+          "39",
+          "212",
+          "29"
+        ],
+        "answer": 3,
+        "explanation": "Speed = distance/time = 205/7 = 29.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_afb31d78",
+        "question": "5 pens at ₹18 each and 8 pencils at ₹22 each cost:",
+        "options": [
+          "₹266",
+          "₹40",
+          "₹13",
+          "₹284"
+        ],
+        "answer": 0,
+        "explanation": "Two linear equations in pen and pencil counts/prices.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_6a529a5c",
+        "question": "4 pens at ₹30 each and 4 pencils at ₹20 each cost:",
+        "options": [
+          "₹8",
+          "₹230",
+          "₹200",
+          "₹50"
+        ],
+        "answer": 2,
+        "explanation": "Two linear equations in pen and pencil counts/prices.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t4_E_310b05a0",
+        "question": "2 pens at ₹32 each and 6 pencils at ₹14 each cost:",
+        "options": [
+          "₹8",
+          "₹46",
+          "₹148",
+          "₹180"
+        ],
+        "answer": 2,
+        "explanation": "Two linear equations in pen and pencil counts/prices.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 3,
+        "category": "u3_t4_E",
+        "category_label": "Cross · Level E",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ]

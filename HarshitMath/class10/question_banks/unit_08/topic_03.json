@@ -135,6 +135,44 @@
         "category_label": "Identities · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_B_3f7bd615",
+        "question": "Fundamental identity sin²θ + cos²θ = 1 implies:",
+        "options": [
+          "1 - sin²θ = cos²θ",
+          "sin²θ = cos²θ",
+          "tan²θ = 1",
+          "1 + sin²θ = cos²θ"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t3_B",
+        "category_label": "Identities · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_B_c5fec84d",
+        "question": "For any angle θ where defined, sin²θ + cos²θ equals:",
+        "options": [
+          "sin θ + cos θ",
+          "0",
+          "1",
+          "tan θ"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t3_B",
+        "category_label": "Identities · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       }
     ],
     "C": [
@@ -174,6 +212,82 @@
         "category": "u8_t3_C",
         "category_label": "Identities · Level C",
         "source": "template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_C_569f302d",
+        "question": "Which identity helps simplify (1 - sin²θ)?",
+        "options": [
+          "sec²θ",
+          "sin²θ",
+          "cos²θ",
+          "tan²θ"
+        ],
+        "answer": 2,
+        "explanation": "sin²θ + cos²θ = 1.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t3_C",
+        "category_label": "Identities · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_C_ab4aefe5",
+        "question": "To prove a trig identity, the first step is often:",
+        "options": [
+          "Substitute θ = 90°",
+          "Express all ratios in terms of sin θ and cos θ",
+          "Multiply by sec θ only",
+          "Assume identity false"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t3_C",
+        "category_label": "Identities · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_C_27225232",
+        "question": "sec²θ - tan²θ equals:",
+        "options": [
+          "0",
+          "sin²θ",
+          "cos²θ",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "Rearrange 1 + tan²θ = sec²θ.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t3_C",
+        "category_label": "Identities · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t3_C_163ecde8",
+        "question": "Identity 1 + tan²θ equals:",
+        "options": [
+          "cosec²θ",
+          "cos²θ",
+          "sin²θ",
+          "sec²θ"
+        ],
+        "answer": 3,
+        "explanation": "Divide sin²θ + cos²θ = 1 by cos²θ.",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 8,
+        "category": "u8_t3_C",
+        "category_label": "Identities · Level C",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       }
     ],

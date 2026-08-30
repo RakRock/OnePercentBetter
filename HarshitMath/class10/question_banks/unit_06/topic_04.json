@@ -1163,6 +1163,44 @@
         "category_label": "Apps · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_24c9e52b",
+        "question": "Pythagoras theorem is proved using similarity by:",
+        "options": [
+          "Use factorisation",
+          "Measure only",
+          "Drop altitude on hypotenuse — creates three similar right triangles",
+          "Assume c = a + b"
+        ],
+        "answer": 2,
+        "explanation": "NCERT proof via similarity.",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_C_d0229ceb",
+        "question": "In the similarity proof of a² + b² = c², which triangles are similar?",
+        "options": [
+          "Only the two legs",
+          "All equilateral",
+          "The two smaller right triangles and the original triangle",
+          "No similar triangles"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "C",
+        "unit_id": 6,
+        "category": "u6_t4_C",
+        "category_label": "Apps · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
       }
     ],
     "D": [
@@ -1221,6 +1259,139 @@
         "category": "u6_t4_D",
         "category_label": "Apps · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_D_eb2ffc4c",
+        "question": "Two similar triangles have sides in ratio 1:3. Ratio of their areas is:",
+        "options": [
+          "3:1",
+          "4:1",
+          "9:1",
+          "6:1"
+        ],
+        "answer": 2,
+        "explanation": "Area ratio = (scale factor)².",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_D_9d07cfce",
+        "question": "Two similar triangles have sides in ratio 1:2. Ratio of their areas is:",
+        "options": [
+          "2:1",
+          "4:1 (alt)",
+          "4:1",
+          "3:1"
+        ],
+        "answer": 2,
+        "explanation": "Area ratio = (scale factor)².",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_D_654ad14b",
+        "question": "Two similar triangles have sides in ratio 1:4. Ratio of their areas is:",
+        "options": [
+          "8:1",
+          "16:1",
+          "4:1",
+          "5:1"
+        ],
+        "answer": 1,
+        "explanation": "Area ratio = (scale factor)².",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_D_3638c2a6",
+        "question": "If areas of two similar triangles are in ratio 9:1, side ratio is:",
+        "options": [
+          "1:3",
+          "9:1",
+          "4:1",
+          "3:1"
+        ],
+        "answer": 3,
+        "explanation": "Side ratio = √(area ratio).",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_D_6a1b4f5a",
+        "question": "If areas of two similar triangles are in ratio 4:1, side ratio is:",
+        "options": [
+          "4:1",
+          "3:1",
+          "2:1",
+          "1:2"
+        ],
+        "answer": 2,
+        "explanation": "Side ratio = √(area ratio).",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_D_6ff01958",
+        "question": "If areas of two similar triangles are in ratio 16:1, side ratio is:",
+        "options": [
+          "16:1",
+          "5:1",
+          "1:4",
+          "4:1"
+        ],
+        "answer": 3,
+        "explanation": "Side ratio = √(area ratio).",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_D_364f2f10",
+        "question": "Two similar triangles have sides in ratio 1:5. Ratio of their areas is:",
+        "options": [
+          "5:1",
+          "6:1",
+          "10:1",
+          "25:1"
+        ],
+        "answer": 3,
+        "explanation": "Area ratio = (scale factor)².",
+        "topic": 4,
+        "level": "D",
+        "unit_id": 6,
+        "category": "u6_t4_D",
+        "category_label": "Apps · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 6 Triangles"
       }
     ],
@@ -1318,6 +1489,44 @@
         "category": "u6_t4_E",
         "category_label": "Apps · Level E",
         "source": "template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_E_b83877ce",
+        "question": "To prove a line divides sides proportionally using similarity:",
+        "options": [
+          "Use only angle chasing",
+          "Apply Pythagoras directly",
+          "Show triangles formed are similar (AA), then equate ratios",
+          "Assume lengths equal"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 6 Triangles"
+      },
+      {
+        "id": "u6_t4_E_d586433a",
+        "question": "In a trapezium ABCD (AB ∥ DC), EF ∥ AB. Then AE/ED equals:",
+        "options": [
+          "AE = BF always",
+          "EF = AB",
+          "BF/FC",
+          "AB/DC"
+        ],
+        "answer": 2,
+        "explanation": "BPT in trapezium.",
+        "topic": 4,
+        "level": "E",
+        "unit_id": 6,
+        "category": "u6_t4_E",
+        "category_label": "Apps · Level E",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 6 Triangles"
       }
     ]

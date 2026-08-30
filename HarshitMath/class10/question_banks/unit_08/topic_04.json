@@ -116,6 +116,44 @@
         "category_label": "Mixed · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t4_B_79d91448",
+        "question": "sin²θ + cos²θ - 1 equals:",
+        "options": [
+          "1",
+          "0",
+          "sin²θ",
+          "cos²θ"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
+      },
+      {
+        "id": "u8_t4_B_bb34f3df",
+        "question": "(1 - sin²θ)(1 + tan²θ) simplifies to:",
+        "options": [
+          "sec²θ",
+          "0",
+          "sin²θ",
+          "1"
+        ],
+        "answer": 3,
+        "explanation": "Use sin²θ + cos²θ = 1 and 1 + tan²θ = sec²θ.",
+        "topic": 4,
+        "level": "B",
+        "unit_id": 8,
+        "category": "u8_t4_B",
+        "category_label": "Mixed · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 8 Introduction to Trigonometry"
       }
     ],
     "C": [

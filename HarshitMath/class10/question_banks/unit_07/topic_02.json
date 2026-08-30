@@ -591,6 +591,120 @@
         "category_label": "Section · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_819f8c3c",
+        "question": "Midpoint of (4, 0) and (11, 8):",
+        "options": [
+          "(7.5, 4)",
+          "(4, 8)",
+          "(11, 0)",
+          "(8.5, 4)"
+        ],
+        "answer": 0,
+        "explanation": "Mid-point formula: average of coordinates.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_acab174c",
+        "question": "Midpoint of (4, 2) and (9, 10):",
+        "options": [
+          "(4, 10)",
+          "(6.5, 6)",
+          "(7.5, 6)",
+          "(9, 2)"
+        ],
+        "answer": 1,
+        "explanation": "Mid-point formula: average of coordinates.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_346bc5c5",
+        "question": "Midpoint of (2, 1) and (10, 8):",
+        "options": [
+          "(7, 4.5)",
+          "(2, 8)",
+          "(10, 1)",
+          "(6, 4.5)"
+        ],
+        "answer": 3,
+        "explanation": "Mid-point formula: average of coordinates.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_34c064e6",
+        "question": "Midpoint of (3, 0) and (8, 6):",
+        "options": [
+          "(5.5, 3)",
+          "(6.5, 3)",
+          "(3, 6)",
+          "(8, 0)"
+        ],
+        "answer": 0,
+        "explanation": "Mid-point formula: average of coordinates.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_866ab5a6",
+        "question": "Midpoint of (3, 2) and (10, 7):",
+        "options": [
+          "(3, 7)",
+          "(10, 2)",
+          "(7.5, 4.5)",
+          "(6.5, 4.5)"
+        ],
+        "answer": 3,
+        "explanation": "Mid-point formula: average of coordinates.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_B_69756740",
+        "question": "Midpoint of (1, 1) and (6, 7):",
+        "options": [
+          "(4.5, 4)",
+          "(3.5, 4)",
+          "(1, 7)",
+          "(6, 1)"
+        ],
+        "answer": 1,
+        "explanation": "Mid-point formula: average of coordinates.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 7,
+        "category": "u7_t2_B",
+        "category_label": "Section · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
       }
     ],
     "C": [
@@ -1163,6 +1277,120 @@
         "category_label": "Section · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_57eec605",
+        "question": "Point dividing (1, 2) and (5, 10) internally in ratio 2:2:",
+        "options": [
+          "(3, 6) (alt)",
+          "(5, 10)",
+          "(1, 2)",
+          "(3, 6)"
+        ],
+        "answer": 3,
+        "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_693123c7",
+        "question": "Point dividing (3, 4) and (9, 10) internally in ratio 2:1:",
+        "options": [
+          "(9, 10)",
+          "(3, 4)",
+          "(6, 7)",
+          "(7, 8)"
+        ],
+        "answer": 3,
+        "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_2a07f0a2",
+        "question": "Point dividing (4, 0) and (11, 8) internally in ratio 1:1:",
+        "options": [
+          "(4, 0)",
+          "(11, 8)",
+          "(7.5, 4)",
+          "(7.5, 4) (alt)"
+        ],
+        "answer": 2,
+        "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_4c863b7f",
+        "question": "Point dividing (2, 0) and (8, 8) internally in ratio 1:1:",
+        "options": [
+          "(5, 4)",
+          "(2, 0)",
+          "(8, 8)",
+          "(5, 4) (alt)"
+        ],
+        "answer": 0,
+        "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_13e9888c",
+        "question": "Point dividing (1, 1) and (6, 9) internally in ratio 3:3:",
+        "options": [
+          "(1, 1)",
+          "(6, 9)",
+          "(3.5, 5)",
+          "(3.5, 5) (alt)"
+        ],
+        "answer": 2,
+        "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_C_e6d896ed",
+        "question": "Point dividing (2, 2) and (8, 10) internally in ratio 2:2:",
+        "options": [
+          "(8, 10)",
+          "(5, 6) (alt)",
+          "(2, 2)",
+          "(5, 6)"
+        ],
+        "answer": 3,
+        "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 7,
+        "category": "u7_t2_C",
+        "category_label": "Section · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
       }
     ],
     "D": [
@@ -1734,6 +1962,120 @@
         "category": "u7_t2_D",
         "category_label": "Section · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_c4b91879",
+        "question": "P(5.5, 5.5) divides A(0, 0) and B(11, 11). Ratio AP : PB = ?",
+        "options": [
+          "6 : 1",
+          "3 : 3 (alt)",
+          "1 : 1",
+          "3 : 3"
+        ],
+        "answer": 3,
+        "explanation": "Use section formula in reverse.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_c0505ff7",
+        "question": "P(3, 6) divides A(0, 0) and B(6, 12). Ratio AP : PB = ?",
+        "options": [
+          "3 : 3 (alt)",
+          "6 : 1",
+          "1 : 1",
+          "3 : 3"
+        ],
+        "answer": 3,
+        "explanation": "Use section formula in reverse.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_af4ec629",
+        "question": "P(1.5, 1.75) divides A(0, 0) and B(6, 7). Ratio AP : PB = ?",
+        "options": [
+          "4 : 1",
+          "1 : 3",
+          "1 : 1",
+          "3 : 1"
+        ],
+        "answer": 1,
+        "explanation": "Use section formula in reverse.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_4b292237",
+        "question": "P(3.33333, 2.66667) divides A(0, 0) and B(10, 8). Ratio AP : PB = ?",
+        "options": [
+          "1 : 2",
+          "1 : 1",
+          "2 : 1",
+          "3 : 1"
+        ],
+        "answer": 0,
+        "explanation": "Use section formula in reverse.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_95a9ff5c",
+        "question": "P(5.4, 4.2) divides A(0, 0) and B(9, 7). Ratio AP : PB = ?",
+        "options": [
+          "3 : 2",
+          "1 : 1",
+          "5 : 1",
+          "2 : 3"
+        ],
+        "answer": 0,
+        "explanation": "Use section formula in reverse.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
+      },
+      {
+        "id": "u7_t2_D_19ad91b1",
+        "question": "P(3, 2.33333) divides A(0, 0) and B(9, 7). Ratio AP : PB = ?",
+        "options": [
+          "1 : 2",
+          "2 : 1",
+          "3 : 1",
+          "1 : 1"
+        ],
+        "answer": 0,
+        "explanation": "Use section formula in reverse.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 7,
+        "category": "u7_t2_D",
+        "category_label": "Section · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 7 Coordinate Geometry"
       }
     ],

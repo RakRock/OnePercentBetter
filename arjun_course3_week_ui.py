@@ -7,6 +7,7 @@ from typing import Literal
 import streamlit as st
 
 import arjun_course3_content as c3
+import arjun_course3_levels as c3lvl
 import arjun_course3_practice as c3p
 import arjun_course3_week as c3w
 import arjun_edgenuity_course3_content as ec3
@@ -31,34 +32,42 @@ def _xai_api_key() -> str | None:
 def ensure_week_config(track: Track, unit_id: int) -> dict:
     if track == "course3":
         config = db.get_arjun_course3_week_config(unit_id)
-        if config.get("categories"):
-            return config
+        valid = set(c3p.get_categories(unit_id).keys())
+        normalized = c3lvl.normalize_week_config(config, valid, unit_id=unit_id)
+        if normalized.get("topics"):
+            return normalized
         starter = c3w.default_week_config(unit_id)
-        if not starter.get("categories"):
-            return config
+        if not starter.get("topics"):
+            return normalized
         db.save_arjun_course3_week_config(
             unit_id,
             starter["week_label"],
-            starter["categories"],
+            starter["topics"],
             question_count=int(starter.get("question_count", c3p.DEFAULT_SESSION_COUNT)),
             use_llm=bool(starter.get("use_llm", False)),
         )
-        return db.get_arjun_course3_week_config(unit_id)
+        return c3lvl.normalize_week_config(
+            db.get_arjun_course3_week_config(unit_id), valid, unit_id=unit_id
+        )
 
     config = db.get_arjun_edgenuity_course3_week_config(unit_id)
-    if config.get("categories"):
-        return config
+    valid = set(ec3p.get_categories(unit_id).keys())
+    normalized = c3lvl.normalize_week_config(config, valid, unit_id=unit_id)
+    if normalized.get("topics"):
+        return normalized
     starter = ec3w.default_week_config(unit_id)
-    if not starter.get("categories"):
-        return config
+    if not starter.get("topics"):
+        return normalized
     db.save_arjun_edgenuity_course3_week_config(
         unit_id,
         starter["week_label"],
-        starter["categories"],
+        starter["topics"],
         question_count=int(starter.get("question_count", 15)),
         use_llm=bool(starter.get("use_llm", False)),
     )
-    return db.get_arjun_edgenuity_course3_week_config(unit_id)
+    return c3lvl.normalize_week_config(
+        db.get_arjun_edgenuity_course3_week_config(unit_id), valid, unit_id=unit_id
+    )
 
 
 def _clear_setup_widget_state(track: Track, unit_id: int) -> None:
@@ -98,14 +107,16 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
         st.info("Practice categories for this unit are not ready yet.")
         return
 
+    valid = set(categories_meta.keys())
+    current = c3lvl.normalize_week_config(get_config(unit_id), valid, unit_id=unit_id)
+
     st.markdown("### Weekly Plan Setup")
     st.caption(
-        f"Choose practice topics and Grok generation for **{unit['title']}**. "
-        "Daily practice pulls from the categories you select below."
+        f"Choose practice topics, difficulty levels, and Grok generation for **{unit['title']}**. "
+        "Daily practice rotates through the topic + level slots you select."
     )
     st.markdown(guidance)
 
-    current = get_config(unit_id)
     if bank_count:
         st.caption(f"Question bank: **{bank_count}** questions across all topics.")
 
@@ -137,27 +148,48 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
     )
 
     st.markdown("---")
-    st.markdown("#### Practice topics")
-    current_cats = set(current.get("categories") or [])
-    selected: list[str] = []
-    cat_cols = st.columns(2)
-    for i, (cat_id, info) in enumerate(categories_meta.items()):
-        with cat_cols[i % 2]:
-            if st.checkbox(
-                f"{info.get('emoji', '')} {info.get('name', cat_id)}",
-                value=cat_id in current_cats if current_cats else True,
-                key=f"{key_prefix}_setup_cat_{unit_id}_{cat_id}",
-            ):
-                selected.append(cat_id)
+    st.markdown("#### Topics & difficulty levels")
+
+    current_levels: dict[str, list[str]] = {}
+    for item in current.get("topics") or []:
+        current_levels[str(item.get("id", ""))] = list(item.get("levels") or [])
+
+    new_topics: list[dict] = []
+    for cat_id, info in categories_meta.items():
+        level_options = {
+            c3lvl.format_level_picker_label(lvl): lvl for lvl in c3lvl.LEVEL_ORDER
+        }
+        default = [
+            c3lvl.format_level_picker_label(lvl)
+            for lvl in c3lvl.LEVEL_ORDER
+            if lvl in current_levels.get(cat_id, c3lvl.DEFAULT_LEVELS)
+        ]
+        if not default and cat_id in current_levels:
+            default = [
+                c3lvl.format_level_picker_label(lvl)
+                for lvl in current_levels[cat_id]
+                if lvl in c3lvl.LEVEL_ORDER
+            ]
+        picked = st.multiselect(
+            f"{info.get('emoji', '')} **{info.get('name', cat_id)}**",
+            options=list(level_options.keys()),
+            default=default or [
+                c3lvl.format_level_picker_label(lvl) for lvl in c3lvl.DEFAULT_LEVELS
+            ],
+            key=f"{key_prefix}_setup_topic_{unit_id}_{cat_id}",
+        )
+        levels = [level_options[p] for p in picked]
+        if levels:
+            new_topics.append({"id": cat_id, "levels": levels})
 
     if st.button("Save weekly plan", type="primary", key=f"{key_prefix}_setup_save_{unit_id}"):
-        if not selected:
-            st.warning("Select at least one practice topic.")
+        if not new_topics:
+            st.warning("Select at least one topic with one difficulty level.")
         else:
             save_config(
                 unit_id,
                 week_label.strip(),
-                selected,
+                new_topics,
                 question_count=question_count,
                 use_llm=use_llm,
             )
@@ -165,7 +197,7 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
             st.success("Weekly plan saved.")
             st.rerun()
 
-    saved = get_config(unit_id)
-    if saved.get("categories"):
+    saved = c3lvl.normalize_week_config(get_config(unit_id), valid, unit_id=unit_id)
+    if saved.get("topics"):
         st.markdown("**Current active plan**")
         st.code(format_summary(unit_id, saved), language=None)

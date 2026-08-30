@@ -1142,6 +1142,120 @@
         "category_label": "Heights · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_23151491",
+        "question": "From 94 m away, angle of elevation 60°. Tower height ≈ ?",
+        "options": [
+          "163 m",
+          "81 m",
+          "326 m",
+          "94 m"
+        ],
+        "answer": 0,
+        "explanation": "tan 60° = height/94.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_edf780c9",
+        "question": "From 58 m away, angle of elevation 60°. Tower height ≈ ?",
+        "options": [
+          "100 m",
+          "200 m",
+          "50 m",
+          "58 m"
+        ],
+        "answer": 0,
+        "explanation": "tan 60° = height/58.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_fe104195",
+        "question": "From 82 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "82 m",
+          "47 m",
+          "94 m",
+          "23 m"
+        ],
+        "answer": 1,
+        "explanation": "tan 30° = height/82.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_9f68bc41",
+        "question": "From 100 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "58 m",
+          "100 m",
+          "116 m",
+          "29 m"
+        ],
+        "answer": 0,
+        "explanation": "tan 30° = height/100.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_f5231df5",
+        "question": "From 70 m away, angle of elevation 60°. Tower height ≈ ?",
+        "options": [
+          "70 m",
+          "121 m",
+          "60 m",
+          "242 m"
+        ],
+        "answer": 1,
+        "explanation": "tan 60° = height/70.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_B_eebaf643",
+        "question": "From 32 m away, angle of elevation 30°. Tower height ≈ ?",
+        "options": [
+          "9 m",
+          "18 m",
+          "36 m",
+          "32 m"
+        ],
+        "answer": 1,
+        "explanation": "tan 30° = height/32.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 9,
+        "category": "u9_t2_B",
+        "category_label": "Heights · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       }
     ],
     "C": [
@@ -2285,6 +2399,120 @@
         "category": "u9_t2_D",
         "category_label": "Heights · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_14110b69",
+        "question": "Building viewed from 25 m (30°) and 45 m (60°). Height ≈ ? m",
+        "options": [
+          "24 m",
+          "20 m",
+          "25 m",
+          "14 m"
+        ],
+        "answer": 3,
+        "explanation": "Two right triangles with same height.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_c2c29875",
+        "question": "Building viewed from 40 m (30°) and 53 m (60°). Height ≈ ? m",
+        "options": [
+          "13 m",
+          "23 m",
+          "40 m",
+          "33 m"
+        ],
+        "answer": 1,
+        "explanation": "Two right triangles with same height.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_4a48d053",
+        "question": "Building viewed from 21 m (30°) and 37 m (60°). Height ≈ ? m",
+        "options": [
+          "12 m",
+          "21 m",
+          "22 m",
+          "16 m"
+        ],
+        "answer": 0,
+        "explanation": "Two right triangles with same height.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_2784a6bd",
+        "question": "Building viewed from 31 m (30°) and 45 m (60°). Height ≈ ? m",
+        "options": [
+          "14 m",
+          "28 m",
+          "31 m",
+          "18 m"
+        ],
+        "answer": 3,
+        "explanation": "Two right triangles with same height.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_1382f9d5",
+        "question": "Building viewed from 26 m (30°) and 47 m (60°). Height ≈ ? m",
+        "options": [
+          "25 m",
+          "21 m",
+          "15 m",
+          "26 m"
+        ],
+        "answer": 2,
+        "explanation": "Two right triangles with same height.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
+      },
+      {
+        "id": "u9_t2_D_cc62bd1f",
+        "question": "Building viewed from 27 m (30°) and 52 m (60°). Height ≈ ? m",
+        "options": [
+          "25 m",
+          "26 m",
+          "16 m",
+          "27 m"
+        ],
+        "answer": 2,
+        "explanation": "Two right triangles with same height.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 9,
+        "category": "u9_t2_D",
+        "category_label": "Heights · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 9 Applications of Trigonometry"
       }
     ],

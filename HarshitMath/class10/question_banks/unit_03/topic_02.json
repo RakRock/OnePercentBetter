@@ -1123,6 +1123,63 @@
         "category_label": "Subst · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_B_832b0d1f",
+        "question": "Solve by substitution. Step 1 — from x + y = 7, express x:",
+        "options": [
+          "x = 7 + y",
+          "x = 7 - y",
+          "y = 7 - x",
+          "x = 25 - y"
+        ],
+        "answer": 1,
+        "explanation": "Step 2: substitute into 3x + 4y = 25, then solve for y.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t2_B",
+        "category_label": "Subst · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_B_ffce7d14",
+        "question": "Solve by substitution. Step 1 — from x + y = 7, express x:",
+        "options": [
+          "x = 7 + y",
+          "y = 7 - x",
+          "x = 26 - y",
+          "x = 7 - y"
+        ],
+        "answer": 3,
+        "explanation": "Step 2: substitute into 3x + 4y = 26, then solve for y.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t2_B",
+        "category_label": "Subst · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_B_188b2966",
+        "question": "Solve by substitution. Step 1 — from x + y = 10, express x:",
+        "options": [
+          "y = 10 - x",
+          "x = 24 - y",
+          "x = 10 + y",
+          "x = 10 - y"
+        ],
+        "answer": 3,
+        "explanation": "Step 2: substitute into 3x + 2y = 24, then solve for y.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t2_B",
+        "category_label": "Subst · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ],
     "C": [
@@ -1695,6 +1752,177 @@
         "category_label": "Subst · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_C_d7c0470b",
+        "question": "Solve by substitution: 2x + 5y = 18 and x + 3y = 10. Solution:",
+        "options": [
+          "x = 4, y = 2",
+          "x = 2, y = 4",
+          "x = 5, y = 2",
+          "x = 4, y = 3"
+        ],
+        "answer": 0,
+        "explanation": "Express one variable and substitute into the second equation.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t2_C",
+        "category_label": "Subst · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_C_bda6d824",
+        "question": "Solve by substitution: 2x + 6y = -8 and 4x + 5y = 12. Solution:",
+        "options": [
+          "x = 8, y = -3",
+          "x = 8, y = -4",
+          "x = -4, y = 8",
+          "x = 9, y = -4"
+        ],
+        "answer": 1,
+        "explanation": "Express one variable and substitute into the second equation.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t2_C",
+        "category_label": "Subst · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_C_8933acfc",
+        "question": "Solve by substitution: 4x + 3y = 6 and 6x + 5y = 8. Solution:",
+        "options": [
+          "x = 3, y = -1",
+          "x = 4, y = -2",
+          "x = -2, y = 3",
+          "x = 3, y = -2"
+        ],
+        "answer": 3,
+        "explanation": "Express one variable and substitute into the second equation.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t2_C",
+        "category_label": "Subst · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_C_3690ac94",
+        "question": "Solve by substitution: x + 6y = 20 and 5x + 6y = 52. Solution:",
+        "options": [
+          "x = 2, y = 8",
+          "x = 9, y = 2",
+          "x = 8, y = 2",
+          "x = 8, y = 3"
+        ],
+        "answer": 2,
+        "explanation": "Express one variable and substitute into the second equation.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t2_C",
+        "category_label": "Subst · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_C_fa8c4026",
+        "question": "Solve by substitution: 5x + y = -3 and x + 2y = -6. Solution:",
+        "options": [
+          "x = 1, y = -3",
+          "x = -3, y = 0",
+          "x = 0, y = -3",
+          "x = 0, y = -2"
+        ],
+        "answer": 2,
+        "explanation": "Express one variable and substitute into the second equation.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t2_C",
+        "category_label": "Subst · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_C_ed8fd10a",
+        "question": "Solve by substitution: 5x + 2y = 35 and 3x - y = 21. Solution:",
+        "options": [
+          "x = 8, y = 0",
+          "x = 7, y = 0",
+          "x = 0, y = 7",
+          "x = 7, y = 1"
+        ],
+        "answer": 1,
+        "explanation": "Express one variable and substitute into the second equation.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t2_C",
+        "category_label": "Subst · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_C_0197969c",
+        "question": "Solve by substitution: x + y = 8 and 4x + 3y = 29. Final solution:",
+        "options": [
+          "x = 6, y = 3",
+          "x = 3, y = 5",
+          "x = 5, y = 4",
+          "x = 5, y = 3"
+        ],
+        "answer": 3,
+        "explanation": "Step 1: isolate x. Step 2: y = 3. Step 3: x = 5.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t2_C",
+        "category_label": "Subst · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_C_eabb1b66",
+        "question": "Solve by substitution: x + y = 6 and 4x + 2y = 16. Final solution:",
+        "options": [
+          "x = 2, y = 4",
+          "x = 4, y = 2",
+          "x = 2, y = 5",
+          "x = 3, y = 4"
+        ],
+        "answer": 0,
+        "explanation": "Step 1: isolate x. Step 2: y = 4. Step 3: x = 2.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t2_C",
+        "category_label": "Subst · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_C_27aced82",
+        "question": "Solve by substitution: x + y = 9 and 2x + 3y = 23. Final solution:",
+        "options": [
+          "x = 4, y = 5",
+          "x = 5, y = 5",
+          "x = 4, y = 6",
+          "x = 5, y = 4"
+        ],
+        "answer": 0,
+        "explanation": "Step 1: isolate x. Step 2: y = 5. Step 3: x = 4.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 3,
+        "category": "u3_t2_C",
+        "category_label": "Subst · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ],
     "D": [
@@ -2266,6 +2494,63 @@
         "category": "u3_t2_D",
         "category_label": "Subst · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_D_2e945486",
+        "question": "Using substitution on x + y = 6 and 2x + 3y = 16, Step 2 — y equals:",
+        "options": [
+          "2",
+          "6",
+          "5",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "Step 3: back-substitute to get x = 2.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t2_D",
+        "category_label": "Subst · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_D_69d57beb",
+        "question": "Using substitution on x + y = 10 and 3x + 2y = 25, Step 2 — y equals:",
+        "options": [
+          "6",
+          "5 (alt)",
+          "5",
+          "10"
+        ],
+        "answer": 2,
+        "explanation": "Step 3: back-substitute to get x = 5.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t2_D",
+        "category_label": "Subst · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t2_D_08ae525d",
+        "question": "Using substitution on x + y = 13 and 4x + 2y = 40, Step 2 — y equals:",
+        "options": [
+          "13",
+          "6 (alt)",
+          "7",
+          "6"
+        ],
+        "answer": 3,
+        "explanation": "Step 3: back-substitute to get x = 7.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 3,
+        "category": "u3_t2_D",
+        "category_label": "Subst · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       }
     ],

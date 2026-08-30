@@ -325,13 +325,13 @@ def render_unit():
     with tab_practice:
         bank_size = c3p.question_count_for_unit(unit_id)
         week_cfg = _week_config(unit_id)
-        filtered_size = c3p.question_count_for_unit(unit_id, week_cfg.get("categories"))
+        filtered_size = c3p.question_count_for_unit(unit_id, config=week_cfg)
         if bank_size:
             st.markdown("### Practice")
             session_count = int(week_cfg.get("question_count", FULL_QUESTION_COUNT))
             st.caption(
                 f"**{bank_size}** questions in the bank — weekly plan uses **{filtered_size}** "
-                f"across {len(week_cfg.get('categories', []))} topic(s), **{session_count}** per session."
+                f"across {len(week_cfg.get('topics', []))} topic(s), **{session_count}** per session."
             )
 
             if week_cfg.get("use_llm"):

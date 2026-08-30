@@ -97,6 +97,44 @@
         "category_label": "External · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_B_50c79172",
+        "question": "Theorem 10.2: tangents drawn from an external point to a circle are:",
+        "options": [
+          "Parallel",
+          "Half the radius",
+          "Perpendicular to each other",
+          "Equal in length"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t2_B",
+        "category_label": "External · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_B_eceafd7a",
+        "question": "From external point P, tangents PQ and PR satisfy:",
+        "options": [
+          "PQ = 2PR",
+          "PQ = PR",
+          "PQ ∥ PR",
+          "PQ ⊥ PR always"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 10,
+        "category": "u10_t2_B",
+        "category_label": "External · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
       }
     ],
     "C": [
@@ -290,6 +328,101 @@
         "category": "u10_t2_D",
         "category_label": "External · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_D_4825b134",
+        "question": "Two tangents from P make 60° at P. OP bisects this angle, so each half is:",
+        "options": [
+          "60°",
+          "30° (alt)",
+          "30°",
+          "90°"
+        ],
+        "answer": 2,
+        "explanation": "OP bisects ∠QPR between equal tangents.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t2_D",
+        "category_label": "External · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_D_2e7e49f4",
+        "question": "Two tangents from P make 80° at P. OP bisects this angle, so each half is:",
+        "options": [
+          "110°",
+          "80°",
+          "90°",
+          "40°"
+        ],
+        "answer": 3,
+        "explanation": "OP bisects ∠QPR between equal tangents.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t2_D",
+        "category_label": "External · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_D_ae8d6592",
+        "question": "Two tangents from P make 40° at P. OP bisects this angle, so each half is:",
+        "options": [
+          "90°",
+          "40°",
+          "70°",
+          "20°"
+        ],
+        "answer": 3,
+        "explanation": "OP bisects ∠QPR between equal tangents.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t2_D",
+        "category_label": "External · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_D_70b13160",
+        "question": "Two tangents from P make 120° at P. OP bisects this angle, so each half is:",
+        "options": [
+          "120°",
+          "90°",
+          "150°",
+          "60°"
+        ],
+        "answer": 3,
+        "explanation": "OP bisects ∠QPR between equal tangents.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t2_D",
+        "category_label": "External · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 10 Circles"
+      },
+      {
+        "id": "u10_t2_D_3c845312",
+        "question": "Two tangents from P make 100° at P. OP bisects this angle, so each half is:",
+        "options": [
+          "100°",
+          "130°",
+          "50°",
+          "90°"
+        ],
+        "answer": 2,
+        "explanation": "OP bisects ∠QPR between equal tangents.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 10,
+        "category": "u10_t2_D",
+        "category_label": "External · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 10 Circles"
       }
     ],

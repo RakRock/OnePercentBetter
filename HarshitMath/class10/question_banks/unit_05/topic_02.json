@@ -591,6 +591,120 @@
         "category_label": "nth · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_B_1f07727a",
+        "question": "10th term of AP with a = 3, d = 4:",
+        "options": [
+          "35",
+          "39 (alt)",
+          "39",
+          "43"
+        ],
+        "answer": 2,
+        "explanation": "aₙ = a + (n-1)d = 39.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t2_B",
+        "category_label": "nth · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_B_fe114ce9",
+        "question": "6th term of AP with a = 4, d = -6:",
+        "options": [
+          "-20",
+          "-26",
+          "-26 (alt)",
+          "-32"
+        ],
+        "answer": 1,
+        "explanation": "aₙ = a + (n-1)d = -26.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t2_B",
+        "category_label": "nth · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_B_564fa7b4",
+        "question": "6th term of AP with a = -3, d = -1:",
+        "options": [
+          "-8",
+          "-9",
+          "-8 (alt)",
+          "-7"
+        ],
+        "answer": 0,
+        "explanation": "aₙ = a + (n-1)d = -8.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t2_B",
+        "category_label": "nth · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_B_0203770f",
+        "question": "6th term of AP with a = -8, d = -3:",
+        "options": [
+          "-23",
+          "-20",
+          "-23 (alt)",
+          "-26"
+        ],
+        "answer": 0,
+        "explanation": "aₙ = a + (n-1)d = -23.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t2_B",
+        "category_label": "nth · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_B_8a7075d5",
+        "question": "13th term of AP with a = -1, d = -2:",
+        "options": [
+          "-27",
+          "-25 (alt)",
+          "-23",
+          "-25"
+        ],
+        "answer": 3,
+        "explanation": "aₙ = a + (n-1)d = -25.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t2_B",
+        "category_label": "nth · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_B_09c8036a",
+        "question": "12th term of AP with a = -6, d = -4:",
+        "options": [
+          "-54",
+          "-50 (alt)",
+          "-50",
+          "-46"
+        ],
+        "answer": 2,
+        "explanation": "aₙ = a + (n-1)d = -50.",
+        "topic": 2,
+        "level": "B",
+        "unit_id": 5,
+        "category": "u5_t2_B",
+        "category_label": "nth · Level B",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
       }
     ],
     "C": [
@@ -1163,6 +1277,120 @@
         "category_label": "nth · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_C_7519bb6e",
+        "question": "20th term of AP 14, 10, 6, 2, …:",
+        "options": [
+          "-62",
+          "-66",
+          "-58",
+          "-62 (alt)"
+        ],
+        "answer": 0,
+        "explanation": "a₂₀ = 14 + 19×-4 = -62.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t2_C",
+        "category_label": "nth · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_C_d5bd66f6",
+        "question": "20th term of AP 7, 6, 5, 4, …:",
+        "options": [
+          "-12 (alt)",
+          "-12",
+          "-13",
+          "-11"
+        ],
+        "answer": 1,
+        "explanation": "a₂₀ = 7 + 19×-1 = -12.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t2_C",
+        "category_label": "nth · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_C_91c0ff5b",
+        "question": "20th term of AP -5, -9, -13, -17, …:",
+        "options": [
+          "-81",
+          "-81 (alt)",
+          "-85",
+          "-77"
+        ],
+        "answer": 0,
+        "explanation": "a₂₀ = -5 + 19×-4 = -81.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t2_C",
+        "category_label": "nth · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_C_7304ef6a",
+        "question": "20th term of AP 0, 2, 4, 6, …:",
+        "options": [
+          "38 (alt)",
+          "36",
+          "38",
+          "40"
+        ],
+        "answer": 2,
+        "explanation": "a₂₀ = 0 + 19×2 = 38.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t2_C",
+        "category_label": "nth · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_C_988c06f1",
+        "question": "20th term of AP -5, -10, -15, -20, …:",
+        "options": [
+          "-105",
+          "-95",
+          "-100 (alt)",
+          "-100"
+        ],
+        "answer": 3,
+        "explanation": "a₂₀ = -5 + 19×-5 = -100.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t2_C",
+        "category_label": "nth · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_C_196e705f",
+        "question": "20th term of AP 4, 1, -2, -5, …:",
+        "options": [
+          "-50",
+          "-56",
+          "-53",
+          "-53 (alt)"
+        ],
+        "answer": 2,
+        "explanation": "a₂₀ = 4 + 19×-3 = -53.",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 5,
+        "category": "u5_t2_C",
+        "category_label": "nth · Level C",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
       }
     ],
     "D": [
@@ -1734,6 +1962,234 @@
         "category": "u5_t2_D",
         "category_label": "nth · Level D",
         "source": "template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_2ab93d8a",
+        "question": "AP whose 3rd term is 4 and 7th term is 12: first term a and d are:",
+        "options": [
+          "a = 0, d = 2",
+          "a = 0, d = 0",
+          "a = 2, d = 3",
+          "a = -1, d = 2"
+        ],
+        "answer": 0,
+        "explanation": "Solve a + 2d and a + 6d simultaneously.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_fb149429",
+        "question": "AP whose 3rd term is 0 and 7th term is -24: first term a and d are:",
+        "options": [
+          "a = 6, d = -5",
+          "a = 12, d = -6",
+          "a = 11, d = -6",
+          "a = 12, d = 0"
+        ],
+        "answer": 1,
+        "explanation": "Solve a + 2d and a + 6d simultaneously.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_bed9e60f",
+        "question": "AP whose 3rd term is 4 and 7th term is 16: first term a and d are:",
+        "options": [
+          "a = 1, d = 4",
+          "a = -2, d = 0",
+          "a = -3, d = 3",
+          "a = -2, d = 3"
+        ],
+        "answer": 3,
+        "explanation": "Solve a + 2d and a + 6d simultaneously.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_16c0fdf9",
+        "question": "Which term of AP 12, 6, 0, -6, … equals -66?",
+        "options": [
+          "16",
+          "13",
+          "14",
+          "15"
+        ],
+        "answer": 2,
+        "explanation": "Solve -66 = 12 + (n-1)(-6).",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_84d5e841",
+        "question": "Which term of AP -5, -11, -17, -23, … equals -107?",
+        "options": [
+          "19",
+          "17",
+          "18",
+          "20"
+        ],
+        "answer": 2,
+        "explanation": "Solve -107 = -5 + (n-1)(-6).",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_f00e5ccb",
+        "question": "Which term of AP 2, 6, 10, 14, … equals 42?",
+        "options": [
+          "11",
+          "13",
+          "10",
+          "12"
+        ],
+        "answer": 0,
+        "explanation": "Solve 42 = 2 + (n-1)(4).",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_f6106924",
+        "question": "AP whose 3rd term is 15 and 7th term is 19: first term a and d are:",
+        "options": [
+          "a = 13, d = 1",
+          "a = 12, d = 1",
+          "a = 14, d = 2",
+          "a = 13, d = 0"
+        ],
+        "answer": 0,
+        "explanation": "Solve a + 2d and a + 6d simultaneously.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_56c26e61",
+        "question": "AP whose 3rd term is 18 and 7th term is 38: first term a and d are:",
+        "options": [
+          "a = 13, d = 6",
+          "a = 8, d = 5",
+          "a = 7, d = 5",
+          "a = 8, d = 0"
+        ],
+        "answer": 1,
+        "explanation": "Solve a + 2d and a + 6d simultaneously.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_3753314c",
+        "question": "AP whose 3rd term is 6 and 7th term is -10: first term a and d are:",
+        "options": [
+          "a = 13, d = -4",
+          "a = 14, d = 0",
+          "a = 14, d = -4",
+          "a = 10, d = -3"
+        ],
+        "answer": 2,
+        "explanation": "Solve a + 2d and a + 6d simultaneously.",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_b76b112b",
+        "question": "Which term of AP 9, 8, 7, 6, … equals 1?",
+        "options": [
+          "9",
+          "10",
+          "11",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "Solve 1 = 9 + (n-1)(-1).",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_2f1b1de4",
+        "question": "Which term of AP -6, -8, -10, -12, … equals -20?",
+        "options": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "answer": 1,
+        "explanation": "Solve -20 = -6 + (n-1)(-2).",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
+        "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
+      },
+      {
+        "id": "u5_t2_D_2b64d3b3",
+        "question": "Which term of AP 13, 17, 21, 25, … equals 57?",
+        "options": [
+          "13",
+          "14",
+          "12",
+          "11"
+        ],
+        "answer": 2,
+        "explanation": "Solve 57 = 13 + (n-1)(4).",
+        "topic": 2,
+        "level": "D",
+        "unit_id": 5,
+        "category": "u5_t2_D",
+        "category_label": "nth · Level D",
+        "source": "exam_template",
         "chapter_ref": "NCERT Ch 5 Arithmetic Progressions"
       }
     ],
