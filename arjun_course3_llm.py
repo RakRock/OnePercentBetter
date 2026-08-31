@@ -11,6 +11,7 @@ from typing import Callable
 from openai import APIConnectionError, APITimeoutError, OpenAI, OpenAIError
 
 import arjun_course3_content as c3
+import arjun_course3_concept_check as c3cc
 import arjun_course3_levels as c3lvl
 from llm_question_format import KID_NUMERIC_FORMAT_RULES, NUMERIC_RETRY_HINT, validate_numerical_format
 
@@ -114,6 +115,9 @@ RULES:
 - Answer choices must be self-contained full phrases — never say "Both A and B", "Option C", or use letter labels.
 - Explain proportional vs linear clearly: proportional means through (0, 0); a starting fee means NOT proportional.
 - Use plain language kids understand (e.g., "the $5 entry fee" instead of "flat fee").
+
+{c3cc.concept_check_prompt_block()}
+
 {KID_NUMERIC_FORMAT_RULES}
 
 Respond with ONLY a valid JSON array — one object per requested question, in order:
@@ -206,7 +210,11 @@ def _build_user_message(slots: list[tuple[str, str]], categories: dict, seed: in
     for i, (cat_id, level) in enumerate(slots, start=1):
         name = categories.get(cat_id, {}).get("name", cat_id)
         desc = c3lvl.LEVEL_DESCRIPTIONS.get(level, level)
-        lines.append(f"{i}. category **{cat_id}** — {name} — **Level {level}** ({desc})")
+        archetype = c3cc.archetype_hint(cat_id, level)
+        lines.append(
+            f"{i}. category **{cat_id}** — {name} — **Level {level}** ({desc})\n"
+            f"   Concept-check style: {archetype}"
+        )
     lines.append('Include optional JSON field "level" (A–E) on each object matching the requested level.')
     lines.append("Return ONLY the JSON array, in the same order as the list above.")
     return "\n".join(lines)

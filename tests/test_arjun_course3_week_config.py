@@ -78,7 +78,14 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
         self.assertTrue(slope_only)
         self.assertTrue(all(q["category"] == "slope" for q in slope_only))
         level_map = c3lvl.bank_level_map(c3p.QUESTION_BANK_BY_UNIT[unit_id])
-        self.assertTrue(all(level_map[q["id"]] == "B" for q in slope_only))
+
+        def _resolved_level(q: dict) -> str:
+            tagged = q.get("level")
+            if tagged in c3lvl.LEVEL_ORDER:
+                return str(tagged)
+            return level_map.get(q["id"], "B")
+
+        self.assertTrue(all(_resolved_level(q) == "B" for q in slope_only))
 
     def test_course3_week_config_persistence(self):
         starter = c3w.default_week_config(1)

@@ -6,6 +6,13 @@ import random
 from pathlib import Path
 
 import arjun_course3_levels as c3lvl
+from arjun_course3_concept_check import (
+    daily_concept_check_quota,
+    extend_bank,
+    focus_concept_check_quota,
+    is_concept_check,
+    pick_or_generate_concept_check,
+)
 
 from arjun_course3_unit1_practice import (
     UNIT1_CATEGORIES,
@@ -46,11 +53,11 @@ FOCUS_SESSION_COUNT = 8
 RECENT_SESSIONS_TO_AVOID = 2
 
 QUESTION_BANK_BY_UNIT: dict[int, list[dict]] = {
-    1: UNIT1_QUESTION_BANK,
-    2: UNIT2_QUESTION_BANK,
-    3: UNIT3_QUESTION_BANK,
-    4: UNIT4_QUESTION_BANK,
-    5: UNIT5_QUESTION_BANK,
+    1: extend_bank(UNIT1_QUESTION_BANK, 1),
+    2: extend_bank(UNIT2_QUESTION_BANK, 2),
+    3: extend_bank(UNIT3_QUESTION_BANK, 3),
+    4: extend_bank(UNIT4_QUESTION_BANK, 4),
+    5: extend_bank(UNIT5_QUESTION_BANK, 5),
 }
 
 CATEGORIES_BY_UNIT: dict[int, dict] = {
@@ -204,6 +211,8 @@ def _pick_for_slots(
     count: int,
     used_ids: set[str],
     avoid_ids: set[str],
+    *,
+    xai_api_key: str | None = None,
 ) -> list[dict]:
     norm = _normalized_config(unit_id, config)
     valid = set(get_categories(unit_id).keys())
@@ -220,39 +229,103 @@ def _pick_for_slots(
         random.shuffle(pool)
 
     selected: list[dict] = []
+    cc_quota = daily_concept_check_quota(count)
+    cc_picked = 0
 
-    def _take_from_pool(pool: list[dict]) -> dict | None:
-        for allow_recent in (False, True):
-            for q in pool:
-                if not _question_available(q, used_ids, avoid_ids, allow_recent=allow_recent):
-                    continue
-                used_ids.add(q["id"])
-                return dict(q)
+    def _topic_levels(cat: str) -> set[str]:
+        return set(
+            next(
+                (item.get("levels") or [] for item in norm["topics"] if item.get("id") == cat),
+                [],
+            )
+        )
+
+    def _take_from_pool(pool: list[dict], *, prefer_concept_check: bool = False) -> dict | None:
+        tiers: list[list[dict]] = []
+        if prefer_concept_check:
+            cc_pool = [q for q in pool if is_concept_check(q)]
+            other_pool = [q for q in pool if not is_concept_check(q)]
+            if cc_pool:
+                tiers.append(cc_pool)
+            tiers.append(other_pool)
+        else:
+            tiers.append(pool)
+        for tier in tiers:
+            for allow_recent in (False, True):
+                for q in tier:
+                    if not _question_available(q, used_ids, avoid_ids, allow_recent=allow_recent):
+                        continue
+                    used_ids.add(q["id"])
+                    return dict(q)
         return None
 
     for cat, lvl in plan:
         if len(selected) >= count:
             break
-        q = _take_from_pool(by_slot.get((cat, lvl), []))
+        want_cc = cc_picked < cc_quota
+        if want_cc:
+            q = pick_or_generate_concept_check(
+                unit_id,
+                cat,
+                lvl,
+                bank,
+                used_ids,
+                avoid_ids,
+                _topic_levels(cat),
+                xai_api_key=xai_api_key,
+            )
+            if q:
+                selected.append(q)
+                cc_picked += 1
+                continue
+        q = _take_from_pool(by_slot.get((cat, lvl), []), prefer_concept_check=want_cc)
         if q:
             selected.append(q)
+            if is_concept_check(q):
+                cc_picked += 1
             continue
         # fallback: same category, any allowed level for that category
-        topic_levels = next(
-            (set(item.get("levels") or []) for item in norm["topics"] if item.get("id") == cat),
-            set(),
-        )
+        topic_levels = _topic_levels(cat)
         for fallback_lvl in c3lvl.LEVEL_ORDER:
             if fallback_lvl not in topic_levels:
                 continue
-            q = _take_from_pool(by_slot.get((cat, fallback_lvl), []))
+            if want_cc and cc_picked < cc_quota:
+                q = pick_or_generate_concept_check(
+                    unit_id,
+                    cat,
+                    fallback_lvl,
+                    bank,
+                    used_ids,
+                    avoid_ids,
+                    topic_levels,
+                    xai_api_key=xai_api_key,
+                )
+                if q:
+                    selected.append(q)
+                    cc_picked += 1
+                    break
+            q = _take_from_pool(
+                by_slot.get((cat, fallback_lvl), []),
+                prefer_concept_check=want_cc,
+            )
             if q:
                 selected.append(q)
+                if is_concept_check(q):
+                    cc_picked += 1
                 break
 
     if len(selected) < count:
         remainder = [q for q in _bank_for_config(bank, config, unit_id) if q["id"] not in used_ids]
-        _top_up(selected, count, used_ids, avoid_ids, remainder)
+        random.shuffle(remainder)
+        cc_remainder = [q for q in remainder if is_concept_check(q)]
+        other_remainder = [q for q in remainder if not is_concept_check(q)]
+        while len(selected) < count and cc_picked < cc_quota and cc_remainder:
+            q = cc_remainder.pop()
+            if _question_available(q, used_ids, avoid_ids, allow_recent=True):
+                selected.append(dict(q))
+                used_ids.add(q["id"])
+                cc_picked += 1
+        _top_up(selected, count, used_ids, avoid_ids, cc_remainder + other_remainder)
 
     random.shuffle(selected)
     return selected[:count]
@@ -340,6 +413,7 @@ def build_daily_set(
                     unit_id=unit_id,
                     exclude_ids=exclude_ids,
                     week_config=norm,
+                    xai_api_key=xai_api_key,
                 ),
             )
             if questions:
@@ -352,6 +426,7 @@ def build_daily_set(
         unit_id=unit_id,
         exclude_ids=exclude_ids,
         week_config=norm,
+        xai_api_key=xai_api_key,
     )
 
 
@@ -361,6 +436,8 @@ def _build_bank_daily_set(
     exclude_ids: set[str] | None = None,
     category_filter: list[str] | None = None,
     week_config: dict | None = None,
+    *,
+    xai_api_key: str | None = None,
 ) -> list[dict]:
     cfg = _unit_practice(unit_id)
     config = week_config or (
@@ -372,7 +449,9 @@ def _build_bank_daily_set(
         return []
     avoid_ids = set(exclude_ids or ())
     used_ids: set[str] = set()
-    return _pick_for_slots(cfg["bank"], norm, unit_id, count, used_ids, avoid_ids)
+    return _pick_for_slots(
+        cfg["bank"], norm, unit_id, count, used_ids, avoid_ids, xai_api_key=xai_api_key
+    )
 
 
 def build_focus_set(
@@ -409,6 +488,7 @@ def build_focus_set(
                     category=category,
                     count=count,
                     exclude_ids=exclude_ids,
+                    xai_api_key=xai_api_key,
                 ),
             )
             if questions:
@@ -421,6 +501,7 @@ def build_focus_set(
         category=category,
         count=count,
         exclude_ids=exclude_ids,
+        xai_api_key=xai_api_key,
     )
 
 
@@ -429,14 +510,38 @@ def _build_bank_focus_set(
     category: str,
     count: int = FOCUS_SESSION_COUNT,
     exclude_ids: set[str] | None = None,
+    *,
+    xai_api_key: str | None = None,
 ) -> list[dict]:
     cfg = _unit_practice(unit_id)
     bank = [q for q in cfg["bank"] if q.get("category") == category]
     avoid_ids = set(exclude_ids or ())
     used_ids: set[str] = set()
-    selected = _pick_unique(bank, count, used_ids, avoid_ids)
+    selected: list[dict] = []
+    cc_quota = focus_concept_check_quota(count)
+    cc_pool = [q for q in bank if is_concept_check(q)]
+    other_pool = [q for q in bank if not is_concept_check(q)]
+
+    for _ in range(cc_quota):
+        picked = _pick_unique(cc_pool, 1, used_ids, avoid_ids)
+        if picked:
+            selected.extend(picked)
+        else:
+            generated = pick_or_generate_concept_check(
+                unit_id,
+                category,
+                "C",
+                bank,
+                used_ids,
+                avoid_ids,
+                set(c3lvl.LEVEL_ORDER),
+                xai_api_key=xai_api_key,
+            )
+            if generated:
+                selected.append(generated)
+
     if len(selected) < count:
-        _top_up(selected, count, used_ids, avoid_ids, bank)
+        _top_up(selected, count, used_ids, avoid_ids, other_pool + cc_pool)
     random.shuffle(selected)
     return selected[:count]
 
