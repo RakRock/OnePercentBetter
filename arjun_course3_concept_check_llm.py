@@ -24,7 +24,7 @@ def _get_client(xai_api_key: str):
     return make_xai_client(xai_api_key)
 
 
-def _system_prompt(unit_id: int, categories: dict, revision_tips: dict) -> str:
+def _system_prompt(unit_id: int, categories: dict, revision_tips: dict, *, count: int = 1) -> str:
     unit = c3.get_unit(unit_id)
     title = unit["title"] if unit else f"Unit {unit_id}"
     topic_lines = []
@@ -49,26 +49,19 @@ DIFFICULTY:
 {c3cc.concept_check_prompt_block()}
 
 RULES:
-- Exactly ONE question object in a JSON array with one element.
+- Return a JSON array with exactly {count} question object{"s" if count != 1 else ""}.
 - Exactly 4 options; "answer" is 0-based index of the correct option.
 - Include "explanation" with Step 1, Step 2 when math is involved.
 - Self-contained full-sentence stems; no images — describe graphs/tables in words.
 - Wrong options = plausible mistakes from the school's concept checks.
-- Match the requested category and level exactly.
+- Match the requested category and level exactly. Each stem must be unique.
 {KID_NUMERIC_FORMAT_RULES}
 
-Respond with ONLY a JSON array:
+Respond with ONLY a JSON array of {count} object{"s" if count != 1 else ""}:
 [{{"category": "...", "level": "B", "question": "...", "options": ["...", "...", "...", "..."], "answer": 0, "explanation": "..."}}]"""
 
 
-def _parse_one(raw: str, unit_id: int, category: str, level: str, categories: dict) -> dict:
-    match = re.search(r"\[[\s\S]*\]", raw)
-    if not match:
-        raise ValueError("No JSON array in response")
-    items = json.loads(match.group())
-    if not isinstance(items, list) or not items:
-        raise ValueError("Expected non-empty JSON array")
-    q = items[0]
+def _normalize_item(q: dict, unit_id: int, category: str, fallback_level: str, categories: dict) -> dict:
     if not isinstance(q, dict):
         raise ValueError("Question must be an object")
     cat = str(q.get("category", category)).strip()
@@ -85,9 +78,9 @@ def _parse_one(raw: str, unit_id: int, category: str, level: str, categories: di
     random.shuffle(indices)
     options = [str(q["options"][j]) for j in indices]
     answer = options.index(correct)
-    lvl = str(q.get("level") or level).strip().upper()[:1]
+    lvl = str(q.get("level") or fallback_level).strip().upper()[:1]
     if lvl not in c3lvl.LEVEL_ORDER:
-        lvl = level
+        lvl = fallback_level
     stamp = int(time.time() * 1000) % 1_000_000
     return {
         "id": f"cc_ai_u{unit_id}_{category}_{stamp}_{random.randint(100, 999)}",
@@ -100,6 +93,29 @@ def _parse_one(raw: str, unit_id: int, category: str, level: str, categories: di
         "source": "concept_check",
         "origin": "llm",
     }
+
+
+def _parse_items(raw: str, unit_id: int, category: str, level: str, categories: dict) -> list[dict]:
+    match = re.search(r"\[[\s\S]*\]", raw)
+    if not match:
+        raise ValueError("No JSON array in response")
+    items = json.loads(match.group())
+    if not isinstance(items, list) or not items:
+        raise ValueError("Expected non-empty JSON array")
+    out: list[dict] = []
+    errors: list[str] = []
+    for q in items:
+        try:
+            out.append(_normalize_item(q, unit_id, category, level, categories))
+        except (ValueError, KeyError, TypeError) as exc:
+            errors.append(str(exc))
+    if not out:
+        raise ValueError(errors[0] if errors else "No valid questions")
+    return out
+
+
+def _parse_one(raw: str, unit_id: int, category: str, level: str, categories: dict) -> dict:
+    return _parse_items(raw, unit_id, category, level, categories)[0]
 
 
 def generate_concept_check_llm(
@@ -131,7 +147,7 @@ def generate_concept_check_llm(
         f"Session seed: {random.randint(1000, 9999)} — make it unique.\n"
         "Return ONLY the JSON array."
     )
-    system = _system_prompt(unit_id, cats, tips)
+    system = _system_prompt(unit_id, cats, tips, count=1)
     client = _get_client(xai_api_key)
     last_err: str | None = None
 
@@ -163,6 +179,85 @@ def generate_concept_check_llm(
     return None
 
 
+def generate_concept_check_batch_llm(
+    xai_api_key: str,
+    unit_id: int,
+    category: str,
+    levels: list[str],
+    *,
+    categories: dict | None = None,
+    revision_tips: dict | None = None,
+    persist: bool = False,
+    verbose: bool = False,
+) -> list[dict]:
+    """Generate several concept-check MCQs for one category in a single Grok call."""
+    import arjun_course3_practice as c3p
+
+    if not levels:
+        return []
+    cfg = c3p._unit_practice(unit_id)
+    cats = categories or cfg["categories"]
+    tips = revision_tips or cfg["revision_tips"]
+    if category not in cats:
+        return []
+
+    count = len(levels)
+    level_list = ", ".join(levels)
+    archetypes = "\n".join(
+        f"- Item {i + 1} (Level {lvl}): {c3cc.archetype_hint(category, lvl)}"
+        for i, lvl in enumerate(levels)
+    )
+    style_extra = ""
+    if unit_id >= 4:
+        style_extra = (
+            "\nMatch Units 1–3 school concept-check style:\n"
+            "- Concrete numbers a kid can compute (tables, percents, y=mx+b).\n"
+            "- Kid-friendly story (sports, food, school, games) — not a vague description.\n"
+            "- Wrong options = common slips (swap slope/intercept, use row vs table total).\n"
+            "- Each explanation must have Step 1 and Step 2.\n"
+        )
+    user_msg = (
+        f"Generate exactly {count} different concept-check questions for one category.\n"
+        f"category: **{category}** ({cats[category].get('name', category)})\n"
+        f"Levels in order: {level_list}\n"
+        f"{archetypes}\n"
+        f"{style_extra}"
+        f"Session seed: {random.randint(1000, 9999)} — make each stem unique.\n"
+        "Return ONLY a JSON array with that many objects."
+    )
+    system = _system_prompt(unit_id, cats, tips, count=count)
+    client = _get_client(xai_api_key)
+    last_err: str | None = None
+    fallback_level = levels[0]
+
+    for attempt in range(_MAX_RETRIES):
+        try:
+            resp = client.chat.completions.create(
+                model=XAI_MODEL,
+                messages=[
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user_msg},
+                ],
+                max_tokens=3500,
+                temperature=0.9,
+            )
+            raw = (resp.choices[0].message.content or "").strip()
+            out = _parse_items(raw, unit_id, category, fallback_level, cats)
+            if persist:
+                c3store.add_questions(unit_id, out)
+            return out[:count]
+        except (APIConnectionError, APITimeoutError, OpenAIError) as exc:
+            last_err = str(exc)
+            break
+        except (ValueError, json.JSONDecodeError, KeyError, TypeError) as exc:
+            last_err = str(exc)
+            user_msg += f"\n\nInvalid prior response ({last_err}). {NUMERIC_RETRY_HINT}"
+
+    if verbose and last_err:
+        print(f"    reason: {last_err}")
+    return []
+
+
 def generate_batch_for_unit(
     xai_api_key: str,
     unit_id: int,
@@ -178,8 +273,18 @@ def generate_batch_for_unit(
     lvls = levels or ["B", "C", "D"]
     out: list[dict] = []
     for cat_id in cats:
-        for i in range(per_category):
-            lvl = lvls[i % len(lvls)]
+        wanted = [lvls[i % len(lvls)] for i in range(per_category)]
+        batch = generate_concept_check_batch_llm(
+            xai_api_key,
+            unit_id,
+            cat_id,
+            wanted,
+            categories=cats,
+            revision_tips=cfg["revision_tips"],
+            persist=False,
+        )
+        out.extend(batch)
+        for i, lvl in enumerate(wanted[len(batch) :]):
             q = generate_concept_check_llm(
                 xai_api_key,
                 unit_id,

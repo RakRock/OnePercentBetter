@@ -27,6 +27,14 @@ CONCEPT CHECK STYLE (match Arjun's school assessments):
   (5) Interpret in context: explain what slope or y-intercept means in dollars, feet, etc.
   (6) Geometry applications: volume → edge length, perimeter → area (square/cube).
   (7) Compare/order: absolute values, fractions/decimals/percents, rational vs irrational.
+  (8) Systems: solve without graphing, write a system for a given point, or SET UP a quantity+value word problem (do not solve).
+  (9) Angle pairs: alternate interior/exterior, corresponding, same-side interior, vertical; algebra with 90° or 180°.
+  (10) Triangle/quadrilateral angles: interior sum, exterior-angle theorem, "can these angles form a polygon?"
+  (11) Transformations: identify 90°/180°/dilation from a point pair; compositions (order matters); rigid vs non-rigid.
+  (12) Similarity: corresponding angles, scale factor, missing side, area scales by k², perimeter by k.
+  (13) Pythagorean: converse, missing side (including radicals), coordinate distance, 3-D space diagonal.
+  (14) Volume/SA: triangular-prism lateral vs total SA vs volume; cone/cylinder/pyramid; leave π exact; composite solids.
+  (15) Functions: domain from points, mapping/table "is it a function?", discrete vs continuous, write y=mx+b from a table, interpret rate and start, qualitative distance-time graphs.
 - Answers must be in simplest form; explanations should show the key steps (Step 1, Step 2…).
 - Use kid-friendly real-world contexts (food, sports, school, measurements).
 - Fraction word problems: include unlike denominators when level is C or higher.
@@ -97,68 +105,90 @@ CATEGORY_ARCHETYPES: dict[str, list[str]] = {
         "Explain why y-intercept ≠ 0 means not proportional",
     ],
     "systems": [
-        "Two lines: unique solution vs parallel vs coincident",
-        "Word problem setup for two equations",
+        "Solve a 2×2 system by elimination or substitution (integer solution)",
+        "Write a system whose only solution is a given point",
+        "Quantity + value word problem: SET UP the system, do not solve",
+        "Describe or identify a system with no solution (parallel lines)",
     ],
     "angles": [
-        "Supplementary angles with algebra",
-        "Vertical angles + linear pair",
+        "Identify alternate interior, corresponding, alternate exterior, or same-side interior",
+        "Which angle pairs are congruent vs supplementary (select-all style)",
+        "Algebra: corresponding/alternate equal, or same-side interiors sum to 180°",
+        "Triangle angle-sum word problem; exterior-angle theorem; quadrilateral sum 360°",
     ],
     "pythagorean": [
-        "Find missing leg or hypotenuse in word context",
-        "Converse: is triangle a right triangle?",
+        "Converse: is 8-15-17 (or similar) a right triangle?",
+        "Missing side with radicals: √2 and √18 → other leg 4",
+        "Coordinate distance between two points",
+        "3-D space diagonal of a rectangular prism; tree/statue shadow word problem",
     ],
     "volume": [
-        "Cube/cylinder volume → missing dimension",
-        "Compare volumes after scaling",
+        "Triangular-prism volume V = Bh",
+        "Cone or cylinder volume in terms of π; find missing h or r",
+        "Pyramid V = (1/3)Bh; composite cylinder+cone or cylinder−hemisphere",
     ],
     "function_basics": [
-        "Is this relation a function? (vertical line test in words)",
-        "Evaluate f(x) for given x",
+        "Domain from plotted points (−5,1), (−1,5), (0,−2), (2,−1), (4,6)",
+        "Mapping/table: (1,4), (2,4), (5,4), (5,8) is NOT a function",
+        "Evaluate y = −6x + 2 at x = 5",
+        "Discrete vs continuous: tickets vs time-to-eat 10 hot dogs",
     ],
     "linear_functions": [
-        "Rate of change from table",
-        "Write y = mx + b from context",
+        "Table 0,1,2 min → 12,16,20 pineapples → y = 4x + 12",
+        "Bathtub 220, 209, 198 L → y = −11x + 220; after 5 min; empty when y=0",
+        "Interpret slope as pineapples per minute and intercept as starting amount",
     ],
     "scatter_association": [
-        "Describe association: positive, negative, none",
-        "Outlier effect on trend",
+        "More TV hours, lower scores → negative; more homework, higher scores → positive",
+        "Describe direction, form (linear), and strength from a word description",
+        "One outlier far from the cluster: removing it makes the trend stronger",
     ],
     "two_way_tables": [
-        "Two-way table: what fraction prefer X given Y?",
-        "Joint vs marginal frequency",
+        "Defense 35 pizza + 9 burger: what percent prefer burger? 9/44",
+        "330 of 500 males always wear a seat belt → 66%",
+        "Compare row percents to decide if two groups are associated",
+        "Of 50 students 30 prefer pizza vs 15 of 40 adults — who has the greater fraction?",
     ],
     "transformations": [
-        "Reflect a point across x-axis or y-axis",
-        "Translation: add constant to coordinates",
+        "Identify 90° CCW, 180° about origin, or dilation from a point pair",
+        "Composition: translate, then rotate/reflect/dilate — track (x, y)",
+        "Order matters; double reflection over both axes = 180° rotation",
+        "Which is NOT rigid? Dilations",
     ],
     "similarity": [
-        "Scale factor between similar figures",
-        "Find missing side using proportions",
+        "Corresponding angles in similar triangles (180° − given)",
+        "Scale factor from side ratios; missing side via proportion",
+        "Area scales by k²; perimeter scales by k; inverse scale for the smaller figure",
     ],
     "surface_area": [
+        "Triangular-prism lateral area (perimeter of base × length)",
+        "Total SA = lateral + 2 triangular bases",
         "Cube or rectangular prism surface area",
-        "Net → total area",
     ],
     "bivariate_data": [
-        "Trend from a small table of x and y",
-        "Predict y from linear pattern in table",
+        "Hours 1,2,3 and pages 20,40,60 — predict pages at 5 hours",
+        "Use trend line y = 8x + 12 to predict y when x = 6",
+        "Warn against extrapolation far outside the data",
     ],
     "comparing_functions": [
-        "Which function grows faster for x > 0",
-        "Compare rates from two equations",
+        "Shop A: C = 5h + 20 vs Shop B: C = 6h + 15 — who has the greater hourly rate?",
+        "After 10 hours, which shop costs less? Compute both totals",
+        "Distance-time graph: running home must be steeper than walking there",
     ],
     "constructing": [
-        "Write equation from starting value + rate",
-        "Build function from word problem",
+        "Giants tickets: y = 200x + 20 (fees + per ticket)",
+        "Movies: 4 per year → y = 4x; discrete points not a solid line",
+        "Table x: −4, 10, 28 and y: 8, 15, 24 → y = (1/2)x + 10",
     ],
     "linear_nonlinear": [
-        "Identify nonlinear table (non-constant rate)",
-        "Which graph description is nonlinear",
+        "Squares table 1,4,9 is nonlinear; 2,4,6 is linear",
+        "Uneven x-gaps but constant Δy/Δx = 1/2 is still linear",
+        "Error analysis: student called a curve linear because it 'goes up'",
     ],
-    "systems": [
-        "Parallel vs intersecting lines",
-        "No solution vs infinitely many",
+    "mad": [
+        "Data 4, 6, 8, 10; mean 7; MAD = 2",
+        "Compare two teams' MAD — smaller MAD is more consistent",
+        "Compute MAD from a 5-value set; show |each − mean| then average",
     ],
 }
 
@@ -224,7 +254,20 @@ def _mcq(
     *,
     level: str = "C",
 ) -> dict:
-    opts = [correct] + wrong[:3]
+    seen = {correct}
+    unique_wrong: list[str] = []
+    for item in list(wrong) + [
+        "Cannot tell from the given information",
+        "None of these",
+        "Not enough information",
+    ]:
+        if item in seen:
+            continue
+        seen.add(item)
+        unique_wrong.append(item)
+        if len(unique_wrong) == 3:
+            break
+    opts = [correct] + unique_wrong[:3]
     random.shuffle(opts)
     return {
         "id": qid,
@@ -623,24 +666,177 @@ def _gen_systems() -> list[dict]:
             "Same slope 2, different intercepts → parallel, never meet.",
             level="C",
         ),
+        _mcq(
+            "cc_u2_sys_solve",
+            "systems",
+            "Solve using any method except graphing: 2x + 5y = 16 and 4y = 3x − 24.",
+            "(8, 0)",
+            ["(0, 8)", "(8, 4)", "(2, 0)"],
+            "Rewrite as −3x + 4y = −24. Eliminate x: 3(2x+5y) + 2(−3x+4y) = 48 − 48 → 23y = 0 → y = 0, x = 8.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u2_sys_write_point",
+            "systems",
+            "Which system has (2, −4) as its only solution?",
+            "x + y = −2 and x − y = 6",
+            [
+                "x + y = 2 and x − y = −4",
+                "x + y = −2 and x − y = −6",
+                "2x + y = 0 and x + y = 2",
+            ],
+            "Plug in (2, −4): 2 + (−4) = −2 and 2 − (−4) = 6. Two independent lines meet at one point.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u2_sys_setup_pies",
+            "systems",
+            (
+                "Apple pies cost $5 and pumpkin pies cost $4. You bought 13 pies and spent $58. "
+                "Which system could be used to solve this? Do NOT solve."
+            ),
+            "x + y = 13 and 5x + 4y = 58",
+            [
+                "x + y = 58 and 5x + 4y = 13",
+                "5x + 4y = 13 and x + y = 58",
+                "x + y = 13 and 5x + 4y = 13",
+            ],
+            "Let x = apple pies, y = pumpkin pies. Count: x+y=13. Cost: 5x+4y=58.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u2_sys_solve2",
+            "systems",
+            "Solve: 4x − 5y = 23 and 6x + 9y = −15.",
+            "(2, −3)",
+            ["(−2, 3)", "(3, −2)", "(2, 3)"],
+            "Eliminate x: −3(4x−5y)+2(6x+9y) = −69 − 30 → 33y = −99 → y = −3, then x = 2.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u2_sys_setup_hours",
+            "systems",
+            (
+                "Dwight raises $50 per hour and Clark raises $75 per hour. Together they worked 84 hours "
+                "and raised $4,900. Which system could find their hours? Do NOT solve."
+            ),
+            "x + y = 84 and 50x + 75y = 4900",
+            [
+                "x + y = 4900 and 50x + 75y = 84",
+                "50x + 75y = 84 and x + y = 4900",
+                "x + y = 84 and 50x + 75y = 84",
+            ],
+            "x = Dwight hours, y = Clark hours. Total hours x+y=84. Total money 50x+75y=4900.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u2_sys_write_1419",
+            "systems",
+            "Which system has (14, 9) as its only solution?",
+            "x + y = 23 and x − y = 5",
+            [
+                "x + y = 14 and x − y = 9",
+                "x + y = 23 and x − y = 23",
+                "x + y = 5 and x − y = 23",
+            ],
+            "14+9=23 and 14−9=5. Two different lines through (14, 9) give a unique solution.",
+            level="C",
+        ),
     ]
 
 
-# ── Unit 3–5 lightweight generators ──
+# ── Unit 3–4 school-style generators ──
 
 
 def _gen_pythagorean() -> list[dict]:
-    a, b = 6, 8
-    c = 10
     return [
         _mcq(
             "cc_u3_pyth",
             "pythagorean",
-            f"A right triangle has legs {a} ft and {b} ft. How long is the hypotenuse?",
-            f"{c} ft",
-            [f"{c - 2} ft", f"{a + b} ft", f"{c + 2} ft"],
-            f"c² = a² + b² = {a*a}+{b*b} = {c*c} → c = {c}.",
+            "A right triangle has legs 6 ft and 8 ft. How long is the hypotenuse?",
+            "10 ft",
+            ["8 ft", "14 ft", "12 ft"],
+            "c² = 6² + 8² = 36 + 64 = 100 → c = 10.",
             level="C",
+        ),
+        _mcq(
+            "cc_u3_pyth_converse",
+            "pythagorean",
+            "Determine if a triangle with sides 8, 15, and 17 is a right triangle.",
+            "Yes — 8² + 15² = 17²",
+            [
+                "No — 8 + 15 ≠ 17",
+                "Yes — 8 + 15 = 17",
+                "No — 8² + 17² ≠ 15²",
+            ],
+            "8² + 15² = 64 + 225 = 289 = 17², so the converse of the Pythagorean theorem says it is right.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_pyth_radicals",
+            "pythagorean",
+            "A right triangle has one leg √2 cm and hypotenuse √18 cm. What is the other leg?",
+            "4 cm",
+            ["√16 cm only if left unsimplified", "√20 cm", "3 cm"],
+            "(√2)² + x² = (√18)² → 2 + x² = 18 → x² = 16 → x = 4 cm.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_pyth_distance",
+            "pythagorean",
+            "Find the distance between (−4, 2) and (0, 5).",
+            "5 units",
+            ["7 units", "3 units", "√7 units"],
+            "Horizontal change 4, vertical change 3: 4² + 3² = 25 → distance 5.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_pyth_3d",
+            "pythagorean",
+            (
+                "A box is 12 in by 9 in by 8 in. What is the space diagonal from one bottom corner "
+                "to the opposite top corner?"
+            ),
+            "17 in",
+            ["15 in", "21 in", "√145 in"],
+            "d² = 12² + 9² + 8² = 144 + 81 + 64 = 289 → d = 17 in.",
+            level="E",
+        ),
+        _mcq(
+            "cc_u3_pyth_map",
+            "pythagorean",
+            (
+                "On a map, Space Mountain is at (5, −1) and Rise of the Resistance is at (−4, 11). "
+                "If 1 unit takes 3 minutes to walk, how long is the walk?"
+            ),
+            "45 minutes",
+            ["15 minutes", "30 minutes", "36 minutes"],
+            "Δx = 9, Δy = 12 → distance 15 units. 15 × 3 = 45 minutes.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_pyth_shadow",
+            "pythagorean",
+            (
+                "A tree casts a 15 ft shadow. The distance from the top of the tree to the tip of "
+                "the shadow is 17 ft. How tall is the tree?"
+            ),
+            "8 ft",
+            ["2 ft", "32 ft", "√481 ft"],
+            "15² + h² = 17² → 225 + h² = 289 → h² = 64 → h = 8 ft.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_pyth_statue",
+            "pythagorean",
+            (
+                "A statue is 10 ft tall. The distance from the top of the statue to the tip of its "
+                "shadow is √164 ft. How long is the shadow?"
+            ),
+            "8 ft",
+            ["√64 ft left unsimplified only", "12 ft", "6 ft"],
+            "10² + s² = 164 → 100 + s² = 164 → s² = 64 → s = 8 ft.",
+            level="D",
         ),
     ]
 
@@ -654,6 +850,87 @@ def _gen_volume() -> list[dict]:
             "2 inches",
             ["6 inches", "3 inches", "72 inches"],
             "Edge = ∛216 = 6 in; sand depth = 6 × 1/3 = 2 in.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_vol_prism",
+            "volume",
+            (
+                "A right triangular prism has a 6 cm by 8 cm right-triangle base (hypotenuse 10 cm) "
+                "and length 4 cm. What is its volume?"
+            ),
+            "96 cm³",
+            ["96 cm²", "144 cm³", "192 cm³"],
+            "Base area = (6×8)/2 = 24. Volume = Bh = 24 × 4 = 96 cm³.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_vol_cone",
+            "volume",
+            "Find the volume of a cone with radius 9 and height 2. Leave the answer in terms of π.",
+            "54π",
+            ["162π", "54", "81π"],
+            "V = (1/3)πr²h = (1/3)π(81)(2) = 54π.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_vol_cyl_h",
+            "volume",
+            "A cylinder has volume 200π cubic units and radius 5. What is its height?",
+            "8 units",
+            ["5 units", "40 units", "8π units"],
+            "πr²h = 200π → 25h = 200 → h = 8.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_vol_pyramid",
+            "volume",
+            "A rectangular pyramid has base 13 yd by 7 yd and height 12 yd. What is its volume?",
+            "364 yd³",
+            ["1092 yd³", "273 yd³", "91 yd³"],
+            "V = (1/3)Bh = (1/3)(13×7)(12) = (1/3)(91)(12) = 364 yd³.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_vol_composite",
+            "volume",
+            (
+                "A cylinder of radius 3 m and height 50 m sits on a cone with the same radius and "
+                "height 4 m. What is the total volume, in terms of π?"
+            ),
+            "462π m³",
+            ["450π m³", "462 m³", "150π m³"],
+            "Cylinder: π(9)(50)=450π. Cone: (1/3)π(9)(4)=12π. Total 462π m³.",
+            level="E",
+        ),
+        _mcq(
+            "cc_u3_vol_cyl_r",
+            "volume",
+            "A cylinder has volume 144π and height 4. What is the radius?",
+            "6 units",
+            ["4 units", "12 units", "36 units"],
+            "πr²(4) = 144π → 4r² = 144 → r² = 36 → r = 6.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_vol_hemisphere",
+            "volume",
+            (
+                "A hemisphere of radius 3 is scooped out of a cylinder of radius 4 and height 10. "
+                "What remaining volume, in terms of π?"
+            ),
+            "142π",
+            ["160π", "142", "118π"],
+            "Cylinder 16π×10=160π. Hemisphere (2/3)π(27)=18π. Remaining 142π.",
+            level="E",
+        ),
+        _mcq(
+            "cc_u3_vol_cone_h",
+            "volume",
+            "A cone has volume 108π and radius 9. What is its height?",
+            "4 units",
+            ["12 units", "3 units", "36 units"],
+            "(1/3)π(81)h = 108π → 27h = 108 → h = 4.",
             level="D",
         ),
     ]
@@ -670,6 +947,181 @@ def _gen_angles() -> list[dict]:
             "3x+10+2x+20=180 → 5x=150 → x=30.",
             level="C",
         ),
+        _mcq(
+            "cc_u3_ang_supp2",
+            "angles",
+            "∠A and ∠B are supplementary. m∠A = 3x° and m∠B = (5x + 44)°. Find x.",
+            "17",
+            ["19", "15", "22"],
+            "3x + 5x + 44 = 180 → 8x = 136 → x = 17.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_ang_comp",
+            "angles",
+            "∠A and ∠B are complementary. m∠A = (2x + 14)° and m∠B = (5x + 6)°. Find x.",
+            "10",
+            ["8", "12", "20"],
+            "2x+14+5x+6=90 → 7x+20=90 → 7x=70 → x=10.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_ang_same_side",
+            "angles",
+            (
+                "Parallel lines cut by a transversal form same-side interior angles (11x)° and "
+                "(5x + 36)°. What is x?"
+            ),
+            "9",
+            ["6", "12", "16"],
+            "Same-side interiors are supplementary: 11x + 5x + 36 = 180 → 16x = 144 → x = 9.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_ang_corresponding",
+            "angles",
+            (
+                "Parallel lines: corresponding angles measure (3x + 10)° and (4x − 20)°. Find x."
+            ),
+            "30",
+            ["10", "20", "15"],
+            "Corresponding angles are congruent: 3x+10=4x−20 → 30=x.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_ang_alt_int",
+            "angles",
+            (
+                "Parallel lines: alternate interior angles measure (12x + 8)° and (3x + 26)°. Find x."
+            ),
+            "2",
+            ["4", "6", "18"],
+            "Alternate interiors are congruent: 12x+8=3x+26 → 9x=18 → x=2.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_ang_vertical",
+            "angles",
+            "If m∠2 = 60° and ∠2 and ∠3 are vertical angles, what is m∠3? Why?",
+            "60° — vertical angles are congruent",
+            [
+                "120° — they form a linear pair",
+                "30° — they are complementary",
+                "180° — they are supplementary",
+            ],
+            "Vertical angles are equal, so m∠3 = 60°.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u3_ang_alt_ext",
+            "angles",
+            "If m∠2 = 60° and ∠2 and ∠7 are alternate exterior angles on parallel lines, m∠7 is:",
+            "60° — alternate exterior angles are congruent",
+            [
+                "120° — they are supplementary",
+                "30° — they are complementary",
+                "Cannot tell without a diagram scale",
+            ],
+            "Alternate exterior angles formed by parallel lines are congruent.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u3_ang_congruent_pairs",
+            "angles",
+            "When parallel lines are cut by a transversal, which pairs are congruent?",
+            "Alternate interior, alternate exterior, corresponding, and vertical",
+            [
+                "Only vertical angles",
+                "Only corresponding angles",
+                "Same-side interior and linear pairs (those are supplementary, not congruent)",
+            ],
+            "Alt. int., alt. ext., corresponding, and vertical angles are congruent. Same-side interiors sum to 180°.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_ang_tri_alg",
+            "angles",
+            "The angles of a triangle are x°, (2x + 15)°, and (4x − 10)°. Find x.",
+            "25",
+            ["20", "30", "35"],
+            "x+2x+15+4x−10=180 → 7x+5=180 → 7x=175 → x=25.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_ang_tri_word",
+            "angles",
+            (
+                "In △ABC, ∠B is twice ∠A, and ∠C is 24° more than ∠A. What is m∠A?"
+            ),
+            "39°",
+            ["36°", "48°", "52°"],
+            "x + 2x + (x+24) = 180 → 4x+24=180 → 4x=156 → x=39°.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_ang_tri_word2",
+            "angles",
+            (
+                "In △XYZ, ∠Y is 3 times ∠X, and ∠Z is 20° less than ∠X. What are the three angles?"
+            ),
+            "40°, 120°, and 20°",
+            ["40°, 80°, and 60°", "36°, 108°, and 16°", "45°, 135°, and 25°"],
+            "x+3x+(x−20)=180 → 5x=200 → x=40. Then Y=120°, Z=20°.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_ang_exterior",
+            "angles",
+            (
+                "A triangle has remote interior angles 51° and (4x + 22)°. The exterior angle is "
+                "(11x + 10)°. Find x."
+            ),
+            "9",
+            ["5", "7", "11"],
+            "Exterior-angle theorem: 51+4x+22 = 11x+10 → 73+4x=11x+10 → 63=7x → x=9.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_ang_quad_sum",
+            "angles",
+            (
+                "Bobana says she has a quadrilateral with angles 34°, 98°, 105°, and 122°. "
+                "Bobryce says that cannot be true. Who is right?"
+            ),
+            "Bobryce — the angles add to 359°, not 360°",
+            [
+                "Bobana — any four angles make a quadrilateral",
+                "Bobryce — quadrilaterals must add to 180°",
+                "Neither — you cannot tell without a drawing",
+            ],
+            "34+98+105+122=359 ≠ 360, so those measures cannot be a quadrilateral.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_ang_quad_why",
+            "angles",
+            "Why is the sum of the interior angles of any quadrilateral 360°?",
+            "A diagonal splits it into two triangles, and 180° + 180° = 360°",
+            [
+                "Four right angles are required",
+                "Each exterior angle is 90°",
+                "Quadrilaterals have four sides, so 4 × 90°",
+            ],
+            "One diagonal makes two triangles; each triangle sums to 180°.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u3_ang_quad_ext",
+            "angles",
+            (
+                "A quadrilateral has interior angles 137°, 25°, and 155°. The fourth interior angle "
+                "has an adjacent exterior angle y. What is y?"
+            ),
+            "137°",
+            ["43°", "223°", "360°"],
+            "Fourth interior = 360 − 317 = 43°. Exterior y is supplementary: 180 − 43 = 137°.",
+            level="E",
+        ),
     ]
 
 
@@ -684,6 +1136,66 @@ def _gen_linear_functions() -> list[dict]:
             "$2 per mile is slope; $3 flat fee is y-intercept.",
             level="B",
         ),
+        _mcq(
+            "cc_u4_lin_table",
+            "linear_functions",
+            (
+                "Minutes after 1 pm: 0, 1, 2. Pineapples eaten: 12, 16, 20. "
+                "Which linear function relates pineapples y to minutes x?"
+            ),
+            "y = 4x + 12",
+            ["y = 12x + 4", "y = 4x", "y = x + 12"],
+            "Rate (16−12)/(1−0)=4. Start at 12 when x=0 → y=4x+12.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u4_lin_interpret_m",
+            "linear_functions",
+            "For y = 4x + 12 pineapples after x minutes, what does the 4 mean?",
+            "4 pineapples eaten per minute",
+            ["12 pineapples per minute", "4 pineapples already eaten", "Total after 4 minutes"],
+            "Slope is the rate of change: pineapples per minute.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u4_lin_interpret_b",
+            "linear_functions",
+            "For y = 4x + 12 pineapples after x minutes, what does the 12 mean?",
+            "12 pineapples already eaten at 1 pm",
+            ["12 pineapples per minute", "You eat 12 more each minute", "The domain"],
+            "Initial value (y-intercept) is the starting amount when x=0.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u4_lin_bathtub",
+            "linear_functions",
+            (
+                "A tub has 220 L at 0 min, 209 L at 1 min, and 198 L at 2 min. "
+                "Which function gives liters y after x minutes?"
+            ),
+            "y = −11x + 220",
+            ["y = 11x + 220", "y = −11x", "y = 220x − 11"],
+            "Rate (209−220)/1 = −11 L/min. Start 220 → y=−11x+220.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u4_lin_bathtub_eval",
+            "linear_functions",
+            "Using y = −11x + 220, how many liters remain after 5 minutes?",
+            "165 L",
+            ["175 L", "55 L", "209 L"],
+            "y = −11(5)+220 = −55+220 = 165 L.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u4_lin_bathtub_zero",
+            "linear_functions",
+            "Using y = −11x + 220, after how many minutes is the tub empty?",
+            "20 minutes",
+            ["11 minutes", "220 minutes", "15 minutes"],
+            "0 = −11x + 220 → 11x = 220 → x = 20 minutes.",
+            level="D",
+        ),
     ]
 
 
@@ -696,6 +1208,60 @@ def _gen_scatter() -> list[dict]:
             "Positive association",
             ["Negative association", "No association", "Nonlinear only"],
             "Both variables increase together → positive association.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u5_sc_tv",
+            "scatter_association",
+            "Students who watch more TV hours tend to have lower test scores. What association is this?",
+            "Negative association",
+            ["Positive association", "No association", "Cannot tell"],
+            "TV hours up, scores down → negative association.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u5_sc_hot_choc",
+            "scatter_association",
+            (
+                "A scatter plot of daily temperature vs cups of hot chocolate sold goes down "
+                "from left to right, with points close to a straight line. Describe it."
+            ),
+            "Strong negative linear association",
+            [
+                "Weak positive association",
+                "No association",
+                "Strong positive linear association",
+            ],
+            "As temperature rises, sales fall, and points hug a line → strong negative linear.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u5_sc_outlier",
+            "scatter_association",
+            (
+                "Eleven points show a clear positive trend (more practice, more goals). "
+                "One outlier is many hours with almost no goals. If you remove the outlier, "
+                "what happens to the trend?"
+            ),
+            "The positive association becomes stronger",
+            [
+                "The association becomes negative",
+                "The trend disappears",
+                "The association becomes weaker",
+            ],
+            "The outlier pulls against the pattern. Removing it makes the positive trend clearer.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u5_sc_none",
+            "scatter_association",
+            (
+                "A plot of shoe size vs favorite ice-cream flavor score looks like a random cloud "
+                "with no up or down pattern. What association is shown?"
+            ),
+            "No association",
+            ["Positive linear", "Negative linear", "Strong nonlinear only"],
+            "No direction: knowing shoe size does not help predict the score.",
             level="B",
         ),
     ]
@@ -713,6 +1279,56 @@ def _gen_two_way() -> list[dict]:
             "Students: 30/50 = 3/5 = 0.6. Adults: 15/40 = 3/8 = 0.375.",
             level="C",
         ),
+        _mcq(
+            "cc_u5_tw_burger",
+            "two_way_tables",
+            (
+                "Offense: 23 pizza, 21 burger. Defense: 35 pizza, 9 burger. "
+                "What percent of defensive players prefer burger?"
+            ),
+            "About 20.5% (9/44)",
+            ["9%", "35%", "About 50%"],
+            "Defense total = 35+9=44. Burger share = 9/44 ≈ 20.5%.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u5_tw_seatbelt",
+            "two_way_tables",
+            "330 of 500 males always wear a seat belt. What percent is that?",
+            "66%",
+            ["33%", "50%", "330%"],
+            "330/500 = 0.66 = 66%.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u5_tw_assoc",
+            "two_way_tables",
+            (
+                "Males: 66% always wear a seat belt. Females: 325 of 500 always wear one. "
+                "Is there a meaningful association with gender?"
+            ),
+            "No — 325/500 = 65%, almost the same as 66%",
+            [
+                "Yes — the percents are completely different",
+                "Yes — males are twice as likely",
+                "Cannot compare percents from two-way tables",
+            ],
+            "Row percents 66% vs 65% are nearly equal, so little association.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u5_tw_row",
+            "two_way_tables",
+            (
+                "A table shows 12 sixth graders and 18 seventh graders like soccer; "
+                "8 sixth graders and 6 seventh graders like basketball. "
+                "What fraction of sixth graders like soccer?"
+            ),
+            "12/20 = 3/5",
+            ["12/18", "12/44", "18/24"],
+            "Sixth-grade total = 12+8=20. Soccer = 12/20 = 3/5.",
+            level="C",
+        ),
     ]
 
 
@@ -727,6 +1343,125 @@ def _gen_transformations() -> list[dict]:
             "Reflection over the x-axis changes the sign of y: (4, 2) → (4, −2).",
             level="B",
         ),
+        _mcq(
+            "cc_u3_tr_180",
+            "transformations",
+            "Point A is at (4, 10) and A′ is at (−4, −10). If this was NOT a translation, what happened?",
+            "180° rotation about the origin",
+            [
+                "Reflection over the x-axis only",
+                "90° counterclockwise about the origin",
+                "Dilation by −1 from (4, 10)",
+            ],
+            "(x, y) → (−x, −y) is a 180° rotation about the origin.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_tr_90ccw",
+            "transformations",
+            "Identify the transformation (not a translation): (9, −12) → (12, 9).",
+            "90° counterclockwise about the origin",
+            [
+                "90° clockwise about the origin",
+                "180° about the origin",
+                "Reflection over y = x",
+            ],
+            "90° CCW rule is (x, y) → (−y, x): −(−12)=12 and x=9.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_tr_compose1",
+            "transformations",
+            (
+                "B is at (−5, 9). Translate 4 right and 12 down, rotate 90° CCW about the origin, "
+                "then reflect across y = x. Where is B‴?"
+            ),
+            "(−1, 3)",
+            ["(3, −1)", "(−1, −3)", "(1, −3)"],
+            "Translate → (−1, −3). 90° CCW (−y, x) → (3, −1). Reflect y=x (y, x) → (−1, 3).",
+            level="E",
+        ),
+        _mcq(
+            "cc_u3_tr_compose2",
+            "transformations",
+            (
+                "A is at (3, 1). Translate 8 right and 5 down, reflect over the x-axis, "
+                "then rotate 270° CCW about the origin. Where is A‴?"
+            ),
+            "(4, −11)",
+            ["(11, 4)", "(−4, 11)", "(4, 11)"],
+            "Translate → (11, −4). Reflect x-axis → (11, 4). 270° CCW (y, −x) → (4, −11).",
+            level="E",
+        ),
+        _mcq(
+            "cc_u3_tr_order",
+            "transformations",
+            (
+                "If you do the same three transformations as above but in reverse order, "
+                "does A end in the same place?"
+            ),
+            "No — order of transformations matters",
+            [
+                "Yes — compositions always commute",
+                "Yes — each step is a rigid motion",
+                "Only if you include a dilation",
+            ],
+            "Translations, reflections, and rotations do not all commute; reverse order lands elsewhere.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_tr_combine",
+            "transformations",
+            (
+                "Write one rule for: translate 12 left and 1 up, then apply (x, y) → (x + 9, y − 12)."
+            ),
+            "(x, y) → (x − 3, y − 11)",
+            [
+                "(x, y) → (x − 21, y + 13)",
+                "(x, y) → (x + 3, y − 11)",
+                "(x, y) → (x − 3, y + 11)",
+            ],
+            "First (x−12, y+1), then add (9, −12) → (x−3, y−11).",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_tr_rigid",
+            "transformations",
+            "Which of these is NOT a rigid transformation?",
+            "Dilations",
+            ["Translations", "Reflections", "Rotations"],
+            "Rigid motions preserve distance. Dilations change size.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u3_tr_double_ref",
+            "transformations",
+            (
+                "A point is reflected across the x-axis and then across the y-axis. "
+                "Besides a translation, what single transformation matches that?"
+            ),
+            "180° rotation about the origin",
+            [
+                "90° counterclockwise about the origin",
+                "Reflection over y = x",
+                "Dilation by −1 from the point",
+            ],
+            "Reflect x then y: (x, y) → (x, −y) → (−x, −y), which is 180° about the origin.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_tr_dilate",
+            "transformations",
+            "Identify the transformation (not a translation): (12, 16) → (27, 36).",
+            "Dilation by 9/4 about the origin",
+            [
+                "Dilation by 4/9 about the origin",
+                "90° counterclockwise about the origin",
+                "Translation 15 right and 20 up only",
+            ],
+            "27/12 = 36/16 = 9/4, so both coordinates scale by 9/4 from the origin.",
+            level="D",
+        ),
     ]
 
 
@@ -735,12 +1470,92 @@ def _gen_similarity() -> list[dict]:
         _mcq(
             "cc_u3_similar",
             "similarity",
-            "Two similar triangles have a scale factor of 3 (small → large). "
-            "A side on the smaller triangle is 5 cm. What is the matching side on the larger triangle?",
+            (
+                "Two similar triangles have a scale factor of 3 (small → large). "
+                "A side on the smaller triangle is 5 cm. What is the matching side on the larger triangle?"
+            ),
             "15 cm",
             ["8 cm", "12 cm", "5 cm"],
             "Multiply corresponding sides by the scale factor: 5 × 3 = 15 cm.",
             level="C",
+        ),
+        _mcq(
+            "cc_u3_sim_angles",
+            "similarity",
+            "△CHL ∼ △ZOE. m∠C = 50° and m∠O = 100°. What is m∠L?",
+            "30°",
+            ["50°", "100°", "80°"],
+            "Corresponding angles: ∠H ↔ ∠O = 100°. Then m∠L = 180 − 50 − 100 = 30°.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_sim_sides",
+            "similarity",
+            (
+                "△ABC has sides 10, 24, 26. △XYZ has corresponding sides 15, 36, 39. "
+                "Are they similar, and what is the scale factor of ABC to XYZ?"
+            ),
+            "Yes — scale factor 3/2",
+            [
+                "Yes — scale factor 2/3",
+                "No — the sides are not proportional",
+                "Yes — scale factor 5",
+            ],
+            "15/10 = 36/24 = 39/26 = 3/2, so △ABC ∼ △XYZ with k = 3/2.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_sim_area",
+            "similarity",
+            "△ABC ∼ △XYZ with scale factor 5 (ABC → XYZ). If area of ABC is 8 m², area of XYZ is:",
+            "200 m²",
+            ["40 m²", "13 m²", "25 m²"],
+            "Areas scale by k²: 5² × 8 = 25 × 8 = 200 m².",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_sim_perim",
+            "similarity",
+            "△ABC ∼ △XYZ with scale factor 5 (ABC → XYZ). If perimeter of ABC is 4 m, perimeter of XYZ is:",
+            "20 m",
+            ["9 m", "100 m", "4/5 m"],
+            "Perimeters scale by k: 4 × 5 = 20 m.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_sim_inverse",
+            "similarity",
+            (
+                "Figure A ∼ figure B. Scale factor of A to B is 7/2. "
+                "A side of B is 42. What is the matching side of A?"
+            ),
+            "12",
+            ["147", "21", "6"],
+            "A is smaller: multiply by 2/7. 42 × (2/7) = 12.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_sim_missing",
+            "similarity",
+            (
+                "△ABC ∼ △DEF. AC = 63 m and DF = 14 m. Hypotenuse BC = 90 m and EF = x. "
+                "What is x?"
+            ),
+            "20 m",
+            ["405 m", "76 m", "14 m"],
+            "k of ABC to DEF is 14/63 = 2/9. Then x = 90 × (2/9) = 20 m.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_sim_alg",
+            "similarity",
+            (
+                "△ABC ∼ △DEF. Heights (3x + 15) and x, hypotenuses 65 and 13. Find x."
+            ),
+            "7.5",
+            ["5", "13", "15"],
+            "65/13 = (3x+15)/x → 5 = (3x+15)/x → 5x = 3x+15 → 2x = 15 → x = 7.5.",
+            level="E",
         ),
     ]
 
@@ -754,6 +1569,59 @@ def _gen_surface_area() -> list[dict]:
             "96 cm²",
             ["64 cm²", "16 cm²", "48 cm²"],
             "One face = 4² = 16; six faces → 6 × 16 = 96 cm².",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_sa_prism_lat",
+            "surface_area",
+            (
+                "A right triangular prism has a 6-8-10 cm triangular base and length 4 cm. "
+                "What is the lateral area?"
+            ),
+            "96 cm²",
+            ["144 cm²", "48 cm²", "96 cm³"],
+            "Lateral area = perimeter of base × length = (6+8+10)×4 = 96 cm².",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_sa_prism_total",
+            "surface_area",
+            (
+                "Same 6-8-10 prism of length 4 cm. What is the total surface area?"
+            ),
+            "144 cm²",
+            ["96 cm²", "192 cm²", "48 cm²"],
+            "Lateral 96 plus two triangular bases: 2×(6×8)/2 = 48. Total 144 cm².",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_sa_prism2",
+            "surface_area",
+            (
+                "An isosceles triangular prism has base sides 10, 10, and 12, triangle height 8, "
+                "and length 20. What is the lateral area?"
+            ),
+            "640",
+            ["96", "736", "320"],
+            "Perimeter 10+10+12=32. Lateral = 32×20 = 640.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u3_sa_prism2_total",
+            "surface_area",
+            "For that same prism (sides 10-10-12, height 8, length 20), what is the total surface area?",
+            "736",
+            ["640", "96", "800"],
+            "Two bases: 2×(1/2)×12×8 = 96. Total SA = 640 + 96 = 736.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u3_sa_345",
+            "surface_area",
+            "A 3-4-5 triangular prism has length 9 cm. What is the total surface area?",
+            "120 cm²",
+            ["108 cm²", "54 cm²", "135 cm²"],
+            "Lateral (3+4+5)×9=108. Two bases 2×(1/2)×3×4=12. Total 120 cm².",
             level="C",
         ),
     ]
@@ -770,6 +1638,117 @@ def _gen_function_basics() -> list[dict]:
             "A function allows repeated outputs; inputs must not repeat with different outputs.",
             level="B",
         ),
+        _mcq(
+            "cc_u4_fn_domain",
+            "function_basics",
+            (
+                "A graph shows the points (−5, 1), (−1, 5), (0, −2), (2, −1), and (4, 6). "
+                "What is the domain?"
+            ),
+            "{−5, −1, 0, 2, 4}",
+            [
+                "{1, 5, −2, −1, 6}",
+                "All real numbers",
+                "{−5, −1, 0, 2, 4, 1, 5}",
+            ],
+            "Domain is the set of x-values of the plotted points.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u4_fn_graph",
+            "function_basics",
+            "Is that five-point graph a function? Why?",
+            "Yes — each x-value has exactly one y-value",
+            [
+                "No — some y-values repeat",
+                "No — the points are not on a line",
+                "Only if you connect the dots",
+            ],
+            "No input repeats with a different output, so it is a function.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u4_fn_mapping",
+            "function_basics",
+            "A table lists pairs (1, 4), (2, 4), (5, 4), and (5, 8). Is this a function?",
+            "No — input 5 has two different outputs",
+            [
+                "Yes — outputs can repeat",
+                "Yes — 4 appears more than once",
+                "Only if you draw a mapping",
+            ],
+            "Input 5 maps to both 4 and 8, so it is not a function.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u4_fn_table_yes",
+            "function_basics",
+            "A table lists pairs (1, 4), (2, 4), (5, 4), and (6, 8). Is this a function?",
+            "Yes — no input repeats",
+            [
+                "No — output 4 repeats",
+                "No — the y-values are not increasing",
+                "Only if it is linear",
+            ],
+            "Each x appears once. Repeated outputs are allowed.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u4_fn_continuous",
+            "function_basics",
+            (
+                "Is the time it takes you to eat 10 hot dogs discrete or continuous? Why?"
+            ),
+            "Continuous — time can be any value, including fractions of a second",
+            [
+                "Discrete — you eat a whole number of hot dogs",
+                "Discrete — you cannot finish in 5.1 seconds",
+                "Neither — time is only measured in minutes",
+            ],
+            "Time can take any real value in an interval, so the measurement is continuous.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u4_fn_discrete",
+            "function_basics",
+            (
+                "Tickets cost $200 each plus $20 in fees: y = 200x + 20. "
+                "What does the domain represent, and is it discrete or continuous?"
+            ),
+            "Number of tickets — discrete (you cannot buy half a ticket)",
+            [
+                "Total cost — continuous",
+                "Number of tickets — continuous because money is continuous",
+                "The $20 fee — discrete",
+            ],
+            "x is a count of tickets, so only whole numbers make sense → discrete.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u4_fn_eval",
+            "function_basics",
+            "Use y = −6x + 2. What is y when x = 5?",
+            "−28",
+            ["28", "−32", "32"],
+            "−6(5) + 2 = −30 + 2 = −28.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u4_fn_range",
+            "function_basics",
+            (
+                "Points (−5, 1), (−1, 5), (0, −2), (2, −1), and (4, 6) form a function. "
+                "What is the range?"
+            ),
+            "{−2, −1, 1, 5, 6}",
+            [
+                "{−5, −1, 0, 2, 4}",
+                "{1, 5, −2, −1, 6, −5}",
+                "All real numbers",
+            ],
+            "Range is the set of y-values: −2, −1, 1, 5, and 6.",
+            level="C",
+        ),
     ]
 
 
@@ -783,6 +1762,55 @@ def _gen_comparing_functions() -> list[dict]:
             ["Function A", "They grow at the same rate", "Neither grows"],
             "Both are linear through the origin; slope 5 > 2 so B increases faster.",
             level="C",
+        ),
+        _mcq(
+            "cc_u4_compare_qual",
+            "comparing_functions",
+            (
+                "A distance-from-home graph shows a steep line away, a flat segment, then a "
+                "shallower line back. The story is: walk to a friend, hang out, run home. "
+                "Does the graph match? Why?"
+            ),
+            "No — running home should be steeper than walking there",
+            [
+                "Yes — the flat part is hanging out",
+                "Yes — any return path works",
+                "No — hanging out should slope upward",
+            ],
+            "The return segment is less steep than the outbound walk, but running is faster, so it should be steeper.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u4_compare_total",
+            "comparing_functions",
+            (
+                "Shop A charges C = 5h + 20. Shop B charges C = 6h + 15. "
+                "After 10 hours, which shop is cheaper, and by how much?"
+            ),
+            "Shop A is cheaper by $5 (70 vs 75)",
+            [
+                "Shop B is cheaper by $5",
+                "They cost the same",
+                "Shop A is cheaper by $20",
+            ],
+            "A: 5(10)+20=70. B: 6(10)+15=75. Shop A costs $5 less.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u4_compare_error",
+            "comparing_functions",
+            (
+                "Maya says y = 8x + 3 grows faster than y = 3x + 80 because 80 is bigger. "
+                "What is Maya's error?"
+            ),
+            "She compared intercepts; the rate (slope) 8 is larger than 3",
+            [
+                "She is right — 80 means it grows faster",
+                "Both grow at the same rate",
+                "You cannot compare two linear functions",
+            ],
+            "Growth speed is the slope. 8 > 3, so y=8x+3 increases faster. 80 is only the start.",
+            level="D",
         ),
     ]
 
@@ -798,6 +1826,39 @@ def _gen_constructing() -> list[dict]:
             "Starting value 3 is the intercept; 2 cm/week is the slope → h = 2w + 3.",
             level="C",
         ),
+        _mcq(
+            "cc_u4_con_tickets",
+            "constructing",
+            (
+                "A Giants game costs $20 in online fees plus $200 per ticket. "
+                "Which function relates total cost y to tickets x?"
+            ),
+            "y = 200x + 20",
+            ["y = 20x + 200", "y = 220x", "y = 200x"],
+            "Rate $200 per ticket; $20 fee is the starting value.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u4_con_movies",
+            "constructing",
+            "A studio releases 4 movies per year. Which function gives total movies y after x years?",
+            "y = 4x",
+            ["y = x + 4", "y = 4x + 4", "y = x/4"],
+            "Starts at 0 movies and adds 4 each year → y = 4x.",
+            level="B",
+        ),
+        _mcq(
+            "cc_u4_con_linear_table",
+            "constructing",
+            (
+                "A table has x: −4, 10, 28 and y: 8, 15, 24. It has a constant rate of change. "
+                "Write the linear function."
+            ),
+            "y = (1/2)x + 10",
+            ["y = 2x + 10", "y = (1/2)x + 8", "y = x + 12"],
+            "m = (15−8)/(10−(−4)) = 7/14 = 1/2. Using (10, 15): 15 = (1/2)(10)+b → b=10.",
+            level="D",
+        ),
     ]
 
 
@@ -810,6 +1871,37 @@ def _gen_linear_nonlinear() -> list[dict]:
             "x: 1,2,3 → y: 1,4,9 (perfect squares)",
             ["x: 1,2,3 → y: 2,4,6", "x: 1,2,3 → y: 5,5,5", "x: 1,2,3 → y: 3,5,7"],
             "Equal steps in x but y increases by 3, then 5 — not a constant rate → nonlinear.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u4_lin_croc",
+            "linear_nonlinear",
+            (
+                "x: −4, 10, 28 and y: 8, 15, 24. Δx is 14 then 18; Δy is 7 then 9. "
+                "Is this a linear function?"
+            ),
+            "Yes — Δy/Δx = 1/2 both times (constant rate of change)",
+            [
+                "No — the x-steps are not equal",
+                "No — the y-steps are not equal",
+                "Only if you plot it and it looks straight",
+            ],
+            "7/14 = 9/18 = 1/2, so the rate is constant even though the x-gaps differ.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u4_lin_discrete_graph",
+            "linear_nonlinear",
+            (
+                "A studio makes 4 movies per year for 5 years. Which graph is correct?"
+            ),
+            "Discrete points at (1, 4), (2, 8), …, (5, 20) — you cannot make half a movie",
+            [
+                "A solid line through those points",
+                "A curve starting at the origin",
+                "Only a bar for year 5",
+            ],
+            "Movie counts are discrete, so plot points with gaps, not a continuous line.",
             level="C",
         ),
     ]
@@ -826,6 +1918,55 @@ def _gen_bivariate() -> list[dict]:
             "Both variables increase together → positive association.",
             level="B",
         ),
+        _mcq(
+            "cc_u5_bv_pages",
+            "bivariate_data",
+            (
+                "Hours 1, 2, 3 match pages read 20, 40, 60. "
+                "If the pattern continues, how many pages after 5 hours?"
+            ),
+            "100",
+            ["80", "60", "120"],
+            "Pages increase 20 per hour. After 5 hours: 20×5=100.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u5_bv_predict",
+            "bivariate_data",
+            "A trend line is y = 8x + 12. Predict y when x = 6.",
+            "60",
+            ["48", "20", "72"],
+            "y = 8(6)+12 = 48+12 = 60.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u5_bv_extra",
+            "bivariate_data",
+            (
+                "A trend line from TV hours 0–12 is used to predict the score at 40 hours of TV. "
+                "Why is that prediction risky?"
+            ),
+            "It is extrapolation — 40 hours is far outside the data",
+            [
+                "Trend lines can never be used to predict",
+                "40 is less than 12 so it is interpolation",
+                "You must use MAD instead",
+            ],
+            "Predicting far beyond the data range is extrapolation and can be unreliable.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u5_bv_slope",
+            "bivariate_data",
+            (
+                "A trend line for practice hours x and points scored y is y = 3x + 5. "
+                "What does the 3 mean?"
+            ),
+            "About 3 more points for each extra hour of practice",
+            ["Starting points when x = 0 is 3", "Exactly 3 hours of practice", "The MAD is 3"],
+            "Slope 3 is the rate: points per hour of practice.",
+            level="C",
+        ),
     ]
 
 
@@ -839,6 +1980,53 @@ def _gen_mad() -> list[dict]:
             ["3", "1.5", "4"],
             "Deviations: |4−7|,|6−7|,|8−7|,|10−7| = 3,1,1,3 → average (3+1+1+3)/4 = 2.",
             level="D",
+        ),
+        _mcq(
+            "cc_u5_mad_compute",
+            "mad",
+            "Data: 2, 4, 6, 8, 10. Mean = 6. What is the MAD?",
+            "2.4",
+            ["2", "6", "4"],
+            "Deviations 4,2,0,2,4. Average = 12/5 = 2.4.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u5_mad_compare",
+            "mad",
+            (
+                "Team A scores have MAD 2. Team B scores have MAD 6. "
+                "Which team is more consistent, and why?"
+            ),
+            "Team A — smaller MAD means scores stay closer to the mean",
+            [
+                "Team B — larger MAD means more consistent",
+                "They are equally consistent",
+                "You need the mean, not the MAD",
+            ],
+            "MAD is average distance from the mean. Smaller MAD → less spread → more consistent.",
+            level="C",
+        ),
+        _mcq(
+            "cc_u5_mad_steps",
+            "mad",
+            "Data: 10, 10, 10, 22. Mean = 13. What is the MAD?",
+            "4.5",
+            ["3", "13", "12"],
+            "Deviations: 3, 3, 3, 9. Average = 18/4 = 4.5.",
+            level="D",
+        ),
+        _mcq(
+            "cc_u5_mad_meaning",
+            "mad",
+            "A class has mean score 80 and MAD 3. What does that tell you?",
+            "Typical scores are about 3 points from 80",
+            [
+                "Everyone scored exactly 80",
+                "The highest score is 83",
+                "The mean is 3",
+            ],
+            "MAD is the average distance from the mean, so scores typically sit near 80 ± 3.",
+            level="C",
         ),
     ]
 
@@ -933,8 +2121,34 @@ def _dyn_slope(level: str) -> dict:
 
 
 def _dyn_pythagorean(level: str) -> dict:
-    triples = [(3, 4, 5), (5, 12, 13), (8, 15, 17), (6, 8, 10)]
+    triples = [(3, 4, 5), (5, 12, 13), (8, 15, 17), (6, 8, 10), (7, 24, 25)]
     a, b, c = random.choice(triples)
+    style = random.choice(["hyp", "converse", "distance"])
+    if style == "converse":
+        return _mcq(
+            _dyn_id(3, "pythagorean"),
+            "pythagorean",
+            f"Is a triangle with sides {a}, {b}, and {c} a right triangle?",
+            f"Yes — {a}² + {b}² = {c}²",
+            [
+                f"No — {a} + {b} ≠ {c}",
+                f"Yes — {a} + {b} = {c}",
+                f"No — {a}² + {c}² ≠ {b}²",
+            ],
+            f"{a}² + {b}² = {a*a + b*b} = {c}².",
+            level=level,
+        )
+    if style == "distance":
+        x1, y1 = random.randint(-6, 2), random.randint(-2, 4)
+        return _mcq(
+            _dyn_id(3, "pythagorean"),
+            "pythagorean",
+            f"Distance between ({x1}, {y1}) and ({x1 + a}, {y1 + b})?",
+            f"{c} units",
+            [f"{a + b} units", f"{c + 2} units", f"{abs(a - b)} units"],
+            f"Δx={a}, Δy={b} → {a}²+{b}²={c}² → distance {c}.",
+            level=level,
+        )
     return _mcq(
         _dyn_id(3, "pythagorean"),
         "pythagorean",
@@ -1114,59 +2328,237 @@ def _dyn_proportional(level: str) -> dict:
 
 
 def _dyn_systems(level: str) -> dict:
-    m = random.randint(2, 5)
+    style = random.choice(["parallel", "solve", "write", "setup"])
+    if style == "parallel":
+        m = random.randint(2, 5)
+        return _mcq(
+            _dyn_id(2, "systems"),
+            "systems",
+            f"y = {m}x + 1 and y = {m}x − 4 represent lines that are:",
+            "Parallel with no solution",
+            ["Intersecting once", "The same line", "Perpendicular"],
+            f"Same slope {m}, different intercepts → parallel.",
+            level=level,
+        )
+    if style == "write":
+        px, py = random.randint(2, 12), random.randint(-8, 8)
+        if py == 0:
+            py = 3
+        return _mcq(
+            _dyn_id(2, "systems"),
+            "systems",
+            f"Which system has ({px}, {py}) as its only solution?",
+            f"x + y = {px + py} and x − y = {px - py}",
+            [
+                f"x + y = {px} and x − y = {py}",
+                f"x + y = {px + py} and x − y = {px + py}",
+                f"x + y = {py} and x − y = {px}",
+            ],
+            f"Check: {px}+{py}={px+py} and {px}−({py})={px-py}. Two independent lines meet once.",
+            level=level,
+        )
+    if style == "setup":
+        apple, pumpkin, n = 5, 4, random.choice([10, 12, 13, 15])
+        a = random.randint(3, n - 3)
+        total = apple * a + pumpkin * (n - a)
+        return _mcq(
+            _dyn_id(2, "systems"),
+            "systems",
+            (
+                f"Apple pies cost ${apple} and pumpkin pies cost ${pumpkin}. "
+                f"You bought {n} pies and spent ${total}. Which system could you use? Do NOT solve."
+            ),
+            f"x + y = {n} and {apple}x + {pumpkin}y = {total}",
+            [
+                f"x + y = {total} and {apple}x + {pumpkin}y = {n}",
+                f"{apple}x + {pumpkin}y = {n} and x + y = {total}",
+                f"x + y = {n} and {apple}x + {pumpkin}y = {n}",
+            ],
+            f"Count: x+y={n}. Cost: {apple}x+{pumpkin}y={total}.",
+            level=level,
+        )
+    x, y = random.randint(1, 6), random.choice([-4, -3, -2, 1, 2, 3])
+    a1, b1 = 2, 5
+    c1 = a1 * x + b1 * y
+    a2, b2 = 3, -1
+    c2 = a2 * x + b2 * y
+    correct = f"({x}, {y})"
+    distractors = [f"({y}, {x})", f"({x}, {-y})", f"({-x}, {y})", f"({x + 1}, {y})"]
+    distractors = [d for d in distractors if d != correct][:3]
     return _mcq(
         _dyn_id(2, "systems"),
         "systems",
-        f"y = {m}x + 1 and y = {m}x − 4 represent lines that are:",
-        "Parallel with no solution",
-        ["Intersecting once", "The same line", "Perpendicular"],
-        f"Same slope {m}, different intercepts → parallel.",
+        f"Solve: {a1}x + {b1}y = {c1} and {a2}x + {b2}y = {c2}.",
+        correct,
+        distractors,
+        f"Elimination or substitution gives x={x}, y={y}.",
         level=level,
     )
 
 
 def _dyn_angles(level: str) -> dict:
-    x = random.randint(20, 40)
+    style = random.choice(["supp", "comp", "tri", "exterior"])
+    if style == "supp":
+        x = random.randint(8, 20)
+        a, b = 3, 5
+        extra = 180 - (a + b) * x
+        if extra <= 0:
+            extra = 20
+            x = (180 - extra) // (a + b)
+        return _mcq(
+            _dyn_id(3, "angles"),
+            "angles",
+            f"Supplementary angles ({a}x)° and ({b}x + {extra})°. Find x.",
+            str(x),
+            [str(x + 2), str(x - 2 if x > 2 else x + 3), str(extra)],
+            f"{a}x + {b}x + {extra} = 180 → {(a+b)}x = {180-extra} → x = {x}.",
+            level=level,
+        )
+    if style == "comp":
+        x = random.randint(6, 14)
+        extra = 90 - 7 * x
+        if extra <= 0:
+            x = 10
+            extra = 20
+        return _mcq(
+            _dyn_id(3, "angles"),
+            "angles",
+            f"Complementary angles (2x + {extra})° and (5x)°. Find x.",
+            str(x),
+            [str(x + 2), str(x - 2 if x > 2 else x + 4), "90"],
+            f"2x + {extra} + 5x = 90 → 7x = {90-extra} → x = {x}.",
+            level=level,
+        )
+    if style == "tri":
+        x = random.choice([15, 18, 20, 24, 25, 30])
+        return _mcq(
+            _dyn_id(3, "angles"),
+            "angles",
+            f"Triangle angles x°, (2x)°, and ({180 - 3*x})°. Find x.",
+            str(x),
+            [str(x + 5), str(x - 5 if x > 5 else x + 8), str(180 - 3 * x)],
+            f"x+2x+{180-3*x}=180 → 3x={3*x} → x={x}.",
+            level=level,
+        )
+    remote, x = random.choice([40, 50, 55, 60]), random.randint(4, 12)
+    other = 3 * x + 5
+    exterior = remote + other
     return _mcq(
         _dyn_id(3, "angles"),
         "angles",
-        f"Vertical angles: one angle is ({2*x + 10})°. The vertical angle equals?",
-        f"{2*x + 10}°",
-        [f"{180 - (2*x + 10)}°", f"{90 - x}°", f"{x}°"],
-        "Vertical angles are congruent.",
+        (
+            f"Remote interiors {remote}° and (3x + 5)°. Exterior angle {exterior}°. "
+            f"If 3x + 5 = {other}, what is x?"
+        ),
+        str(x),
+        [str(x + 2), str(x - 1 if x > 1 else x + 3), str(other)],
+        f"Exterior-angle theorem: {remote} + 3x + 5 = {exterior} → 3x = {other-5} → x = {x}.",
         level=level,
     )
 
 
 def _dyn_transformations(level: str) -> dict:
     x, y = random.randint(2, 8), random.randint(2, 8)
+    style = random.choice(["reflect_y", "rot180", "rot90", "dilate"])
+    if style == "reflect_y":
+        return _mcq(
+            _dyn_id(3, "transformations"),
+            "transformations",
+            f"Point ({x}, {y}) reflected over the y-axis lands at:",
+            f"({-x}, {y})",
+            [f"({x}, {-y})", f"({y}, {x})", f"({-x}, {-y})"],
+            "Reflection over y-axis negates x.",
+            level=level,
+        )
+    if style == "rot180":
+        return _mcq(
+            _dyn_id(3, "transformations"),
+            "transformations",
+            f"({x}, {y}) → ({-x}, {-y}) is which transformation about the origin?",
+            "180° rotation",
+            ["90° counterclockwise", "Reflection over x-axis", "Dilation by −1 from the point"],
+            "(x, y) → (−x, −y) is 180° about the origin.",
+            level=level,
+        )
+    if style == "rot90":
+        return _mcq(
+            _dyn_id(3, "transformations"),
+            "transformations",
+            f"({x}, {y}) → ({-y}, {x}) is which rotation about the origin?",
+            "90° counterclockwise",
+            ["90° clockwise", "180°", "270° counterclockwise"],
+            "90° CCW rule: (x, y) → (−y, x).",
+            level=level,
+        )
+    k = random.choice([2, 3, 4])
     return _mcq(
         _dyn_id(3, "transformations"),
         "transformations",
-        f"Point ({x}, {y}) reflected over the y-axis lands at:",
-        f"({-x}, {y})",
-        [f"({x}, {-y})", f"({y}, {x})", f"({-x}, {-y})"],
-        "Reflection over y-axis negates x.",
+        f"({x}, {y}) → ({k*x}, {k*y}) is:",
+        f"Dilation by {k} about the origin",
+        [
+            f"Translation {k} units",
+            f"Dilation by {k} from ({x}, {y})",
+            "90° counterclockwise",
+        ],
+        f"Both coordinates multiply by {k} → dilation about the origin.",
         level=level,
     )
 
 
 def _dyn_similarity(level: str) -> dict:
-    k = random.choice([2, 3, 4])
+    style = random.choice(["side", "area", "perim"])
+    k = random.choice([2, 3, 4, 5])
     side = random.randint(3, 12)
+    if style == "area":
+        area = random.choice([6, 8, 10, 12])
+        return _mcq(
+            _dyn_id(3, "similarity"),
+            "similarity",
+            f"Similar figures, scale factor {k} (small → large). Small area {area}. Large area?",
+            str(k * k * area),
+            [str(k * area), str(area + k * k), str(k * k)],
+            f"Areas scale by k²: {k}² × {area} = {k*k*area}.",
+            level=level,
+        )
+    if style == "perim":
+        perim = random.choice([8, 10, 12, 16])
+        return _mcq(
+            _dyn_id(3, "similarity"),
+            "similarity",
+            f"Similar figures, scale factor {k}. Small perimeter {perim}. Large perimeter?",
+            str(k * perim),
+            [str(k * k * perim), str(perim + k), str(perim)],
+            f"Perimeters scale by k: {perim} × {k} = {k*perim}.",
+            level=level,
+        )
     return _mcq(
         _dyn_id(3, "similarity"),
         "similarity",
         f"Similar figures scale factor {k}. Small side {side} cm → large side?",
         f"{k * side} cm",
-        [f"{side + k} cm", f"{side // k} cm", f"{side} cm"],
+        [f"{side + k} cm", f"{max(1, side // k)} cm", f"{side} cm"],
         f"Multiply by scale factor: {side} × {k} = {k*side}.",
         level=level,
     )
 
 
 def _dyn_surface_area(level: str) -> dict:
+    if random.random() < 0.5:
+        a, b, c = random.choice([(3, 4, 5), (5, 12, 13), (6, 8, 10)])
+        length = random.choice([4, 6, 8, 9])
+        lat = (a + b + c) * length
+        bases = a * b
+        total = lat + bases
+        return _mcq(
+            _dyn_id(3, "surface_area"),
+            "surface_area",
+            f"A {a}-{b}-{c} right triangular prism has length {length}. Total surface area?",
+            f"{total}",
+            [f"{lat}", f"{bases}", f"{lat + bases // 2}"],
+            f"Lateral ({a}+{b}+{c})×{length}={lat}. Two bases {a}×{b}={bases}. Total {total}.",
+            level=level,
+        )
     e = random.randint(3, 9)
     sa = 6 * e * e
     return _mcq(
@@ -1181,6 +2573,42 @@ def _dyn_surface_area(level: str) -> dict:
 
 
 def _dyn_volume(level: str) -> dict:
+    style = random.choice(["cube", "cone", "cyl", "prism"])
+    if style == "cone":
+        r, h = random.choice([3, 6, 9]), random.choice([2, 3, 4, 6])
+        coeff = (r * r * h) // 3
+        return _mcq(
+            _dyn_id(3, "volume"),
+            "volume",
+            f"Cone radius {r}, height {h}. Volume in terms of π?",
+            f"{coeff}π",
+            [f"{r*r*h}π", f"{coeff}", f"{(r*r*h)//2}π"],
+            f"V=(1/3)πr²h=(1/3)π({r*r})({h})={coeff}π.",
+            level=level,
+        )
+    if style == "cyl":
+        r, h = random.choice([3, 4, 5, 6]), random.choice([4, 5, 8, 10])
+        return _mcq(
+            _dyn_id(3, "volume"),
+            "volume",
+            f"Cylinder volume {r*r*h}π and radius {r}. Height?",
+            str(h),
+            [str(r), str(r * r), str(h + 2)],
+            f"πr²h={r*r*h}π → {r*r}h={r*r*h} → h={h}.",
+            level=level,
+        )
+    if style == "prism":
+        a, b, length = 6, 8, random.choice([3, 4, 5])
+        vol = (a * b // 2) * length
+        return _mcq(
+            _dyn_id(3, "volume"),
+            "volume",
+            f"Right triangular prism, legs {a} and {b}, length {length}. Volume?",
+            f"{vol}",
+            [f"{a*b*length}", f"{(a+b)*length}", f"{vol + a}"],
+            f"B=({a}×{b})/2={a*b//2}. V=Bh={vol}.",
+            level=level,
+        )
     e = random.randint(3, 8)
     vol = e ** 3
     return _mcq(
@@ -1195,6 +2623,39 @@ def _dyn_volume(level: str) -> dict:
 
 
 def _dyn_function_basics(level: str) -> dict:
+    style = random.choice(["eval", "function", "discrete"])
+    if style == "function":
+        x = random.randint(2, 6)
+        return _mcq(
+            _dyn_id(4, "function_basics"),
+            "function_basics",
+            f"A table lists ({x}, 3), ({x + 1}, 3), and ({x}, 8). Is this a function?",
+            f"No — input {x} has two outputs",
+            [
+                "Yes — outputs can repeat",
+                "Yes — there are three pairs",
+                "Only if you draw a mapping",
+            ],
+            f"Input {x} maps to both 3 and 8.",
+            level=level,
+        )
+    if style == "discrete":
+        fee, rate = random.choice([10, 20, 25]), random.choice([8, 12, 15])
+        return _mcq(
+            _dyn_id(4, "function_basics"),
+            "function_basics",
+            (
+                f"Cost is ${fee} plus ${rate} per ticket. The domain (number of tickets) is:"
+            ),
+            "Discrete — you cannot buy a fraction of a ticket",
+            [
+                "Continuous — money can be any amount",
+                "Discrete — because the fee is fixed",
+                "Neither — domain is the total cost",
+            ],
+            "x is a count of tickets, so only whole numbers make sense.",
+            level=level,
+        )
     x = random.randint(2, 7)
     ans = 3 * x - 1
     return _mcq(
@@ -1202,7 +2663,7 @@ def _dyn_function_basics(level: str) -> dict:
         "function_basics",
         f"If f(x) = 3x − 1, what is f({x})?",
         str(ans),
-        [str(ans + 2), str(3 * x + 1), str(x - 1)],
+        [str(ans + 3), str(3 * x + 1), str(x - 1)],
         f"f({x}) = 3({x}) − 1 = {ans}.",
         level=level,
     )
@@ -1222,6 +2683,17 @@ def _dyn_comparing_functions(level: str) -> dict:
 
 
 def _dyn_constructing(level: str) -> dict:
+    if random.random() < 0.5:
+        fee, rate = random.choice([15, 20, 25]), random.choice([50, 80, 200])
+        return _mcq(
+            _dyn_id(4, "constructing"),
+            "constructing",
+            f"${fee} in fees plus ${rate} per ticket. Total cost y for x tickets?",
+            f"y = {rate}x + {fee}",
+            [f"y = {fee}x + {rate}", f"y = {rate + fee}x", f"y = {rate}x"],
+            f"Rate ${rate}/ticket is slope; ${fee} fee is the intercept.",
+            level=level,
+        )
     start, rate = random.randint(2, 8), random.randint(2, 6)
     return _mcq(
         _dyn_id(4, "constructing"),
@@ -1235,15 +2707,39 @@ def _dyn_constructing(level: str) -> dict:
 
 
 def _dyn_linear_functions(level: str) -> dict:
-    x1, y1, x2, y2 = 0, random.randint(2, 8), 4, random.randint(10, 20)
-    m = Fraction(y2 - y1, x2 - x1)
+    start = random.choice([12, 20, 40, 100, 220])
+    rate = random.choice([-11, -5, 3, 4, 6])
+    style = random.choice(["write", "eval", "rate"])
+    if style == "write":
+        y1, y2 = start, start + rate
+        return _mcq(
+            _dyn_id(4, "linear_functions"),
+            "linear_functions",
+            f"At 0 min: {start}. At 1 min: {y1 + rate}. Linear function for y after x minutes?",
+            f"y = {rate}x + {start}",
+            [f"y = {start}x + {rate}", f"y = {rate}x", f"y = {abs(rate)}x + {start}"],
+            f"Rate {y2}-{start}={rate}; start {start} → y={rate}x+{start}.",
+            level=level,
+        )
+    if style == "eval":
+        mins = random.choice([3, 4, 5, 6])
+        ans = rate * mins + start
+        return _mcq(
+            _dyn_id(4, "linear_functions"),
+            "linear_functions",
+            f"Using y = {rate}x + {start}, what is y when x = {mins}?",
+            str(ans),
+            [str(ans + rate), str(start), str(ans - start if ans != start else ans + 11)],
+            f"y = {rate}({mins}) + {start} = {ans}.",
+            level=level,
+        )
     return _mcq(
         _dyn_id(4, "linear_functions"),
         "linear_functions",
-        f"Line through ({x1},{y1}) and ({x2},{y2}). Rate of change?",
-        _mixed(m),
-        [_mixed(m + 1), _mixed(-m), str(y2)],
-        f"({y2}−{y1})/({x2}−{x1}) = {_mixed(m)}.",
+        f"In y = {rate}x + {start}, what does {rate} represent?",
+        f"The amount y changes each time x increases by 1",
+        [f"The starting value when x = 0", f"The value of y when x = {rate}", "The domain"],
+        "Slope is the rate of change.",
         level=level,
     )
 

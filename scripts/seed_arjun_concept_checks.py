@@ -42,16 +42,36 @@ def seed_unit(
     per_category: int = 4,
     levels: list[str] | None = None,
     verbose: bool = False,
+    fill_missing: bool = True,
 ) -> int:
     cfg = c3p._unit_practice(unit_id)
     cats = cfg["categories"]
     lvls = levels or ["B", "C", "D"]
+    existing = c3store.count_by_category(unit_id)
     batch: list[dict] = []
     for cat_id in c3cc.categories_for_unit(unit_id):
         if cat_id not in cats:
             continue
-        for i in range(per_category):
-            lvl = lvls[i % len(lvls)]
+        have = existing.get(cat_id, 0) if fill_missing else 0
+        need = max(0, per_category - have)
+        if need == 0:
+            print(f"  = {cat_id} already has {have}")
+            continue
+        wanted = [lvls[(have + i) % len(lvls)] for i in range(need)]
+        print(f"  … {cat_id} generating {need} ({', '.join(wanted)})")
+        generated = c3ccllm.generate_concept_check_batch_llm(
+            api_key,
+            unit_id,
+            cat_id,
+            wanted,
+            categories=cats,
+            revision_tips=cfg["revision_tips"],
+            persist=False,
+            verbose=verbose,
+        )
+        batch.extend(generated)
+        print(f"  + {cat_id} {len(generated)}/{need} from batch")
+        for lvl in wanted[len(generated) :]:
             q = c3ccllm.generate_concept_check_llm(
                 api_key,
                 unit_id,
@@ -64,7 +84,7 @@ def seed_unit(
             )
             if q:
                 batch.append(q)
-                print(f"  + {cat_id} [{lvl}]")
+                print(f"  + {cat_id} [{lvl}] fallback")
             else:
                 print(f"  ! failed {cat_id} [{lvl}]")
     added = c3store.add_questions(unit_id, batch)
@@ -78,6 +98,11 @@ def main() -> int:
     parser.add_argument("--per-category", type=int, default=4, help="Questions per category")
     parser.add_argument("--levels", default="B,C,D", help="Levels to rotate")
     parser.add_argument("--verbose", "-v", action="store_true", help="Print failure reasons")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Generate per-category even if the AI bank already has enough",
+    )
     args = parser.parse_args()
 
     api_key = _load_api_key()
@@ -92,7 +117,14 @@ def main() -> int:
         if uid not in range(1, 6):
             print(f"Skip invalid unit {uid}")
             continue
-        total += seed_unit(uid, api_key, per_category=args.per_category, levels=levels, verbose=args.verbose)
+        total += seed_unit(
+            uid,
+            api_key,
+            per_category=args.per_category,
+            levels=levels,
+            verbose=args.verbose,
+            fill_missing=not args.force,
+        )
     print(f"Done. Added {total} AI concept-check questions total.")
     return 0
 

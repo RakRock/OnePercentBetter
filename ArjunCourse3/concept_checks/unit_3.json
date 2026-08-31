@@ -1,0 +1,770 @@
+[
+  {
+    "id": "cc_ai_u3_angles_885620_866",
+    "category": "angles",
+    "level": "B",
+    "question": "Two lines intersect and form vertical angles and linear pairs. If one angle measures 68°, what is the measure of the angle that forms a linear pair with it?",
+    "options": [
+      "68°",
+      "112°",
+      "180°",
+      "90°"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Angles in a linear pair are supplementary and add up to 180°. Step 2: Subtract to find the pair: 180 - 68 = 112.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_895895_867",
+    "category": "angles",
+    "level": "C",
+    "question": "Two supplementary angles measure (3x + 20)° and (2x + 10)°. What is the measure of the smaller angle?",
+    "options": [
+      "70",
+      "110",
+      "90",
+      "40"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Supplementary angles add to 180°, so (3x + 20) + (2x + 10) = 180. Step 2: Simplify to 5x + 30 = 180, subtract 30 to get 5x = 150, then divide by 5 to find x = 30. Step 3: Substitute x = 30 into the smaller expression: 2(30) + 10 = 70.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_905525_653",
+    "category": "angles",
+    "level": "D",
+    "question": "Two lines intersect and form vertical angles and linear pairs. One angle measures (3x + 25)°. Its vertical angle measures (5x − 15)°. What is the measure of the adjacent angle that forms a linear pair with the first angle?",
+    "options": [
+      "85°",
+      "140°",
+      "105°",
+      "95°"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Vertical angles are equal, so 3x + 25 = 5x − 15. Subtract 3x from both sides to get 25 = 2x − 15. Add 15 to both sides: 40 = 2x, so x = 20. Step 2: Substitute x = 20 into the first angle: 3(20) + 25 = 85°. A linear pair sums to 180°, so the adjacent angle is 180° − 85° = 95°.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_915353_533",
+    "category": "angles",
+    "level": "B",
+    "question": "Two lines intersect and form vertical angles and linear pairs. One angle measures 68°. What is the measure of the angle that forms a linear pair with the vertical angle opposite the 68° angle?",
+    "options": [
+      "68°",
+      "292°",
+      "112°",
+      "180°"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Vertical angles are equal, so the opposite angle also measures 68°. Step 2: Angles in a linear pair add to 180°, so 180° - 68° = 112°.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_921058_706",
+    "category": "transformations",
+    "level": "B",
+    "question": "Point Q starts at (3, 8). It is translated by adding 4 to the x-coordinate and adding 5 to the y-coordinate. What are the new coordinates of point Q?",
+    "options": [
+      "(7, 3)",
+      "(-1, 13)",
+      "(3, 13)",
+      "(7, 13)"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Add 4 to the x-coordinate: 3 + 4 = 7. Step 2: Add 5 to the y-coordinate: 8 + 5 = 13. The new point is (7, 13).",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_929193_200",
+    "category": "transformations",
+    "level": "C",
+    "question": "Start with point (2, -5) on the coordinate plane. Reflect it across the x-axis to get point A. Then reflect point A across the y-axis. What is the final point?",
+    "options": [
+      "(-2, 5)",
+      "(-2, -5)",
+      "(2, -5)",
+      "(2, 5)"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Reflect (2, -5) across the x-axis by negating the y-coordinate to get (2, 5). Step 2: Reflect (2, 5) across the y-axis by negating the x-coordinate to get (-2, 5).",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_937079_896",
+    "category": "transformations",
+    "level": "D",
+    "question": "A point at (-12, 8) is translated by adding 15 to the x-coordinate and subtracting 6 from the y-coordinate. What are the new coordinates?",
+    "options": [
+      "(3, 14)",
+      "(-27, 2)",
+      "(-27, 14)",
+      "(3, 2)"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Add 15 to the x-coordinate: -12 + 15 = 3. Step 2: Subtract 6 from the y-coordinate: 8 - 6 = 2. The image point is (3, 2).",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_944832_309",
+    "category": "transformations",
+    "level": "B",
+    "question": "A point starts at (3, 4) on a grid. It is translated 5 units right and 2 units up. What are the new coordinates?",
+    "options": [
+      "(8,6)",
+      "(-2,6)",
+      "(3,9)",
+      "(8,2)"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Add 5 to the x-coordinate: 3 + 5 = 8. Step 2: Add 2 to the y-coordinate: 4 + 2 = 6. The new point is (8,6).",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_956737_132",
+    "category": "similarity",
+    "level": "B",
+    "question": "Two similar triangles have corresponding sides of 3 cm and 8 cm. If the side corresponding to 3 cm measures 6 cm, how long is the side corresponding to 8 cm?",
+    "options": [
+      "4",
+      "24",
+      "12",
+      "16"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The scale factor is 6/3 = 2. Step 2: Multiply the other side by the scale factor: 8 × 2 = 16.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_968983_355",
+    "category": "similarity",
+    "level": "C",
+    "question": "Triangles RST and XYZ are similar. Side RS measures 6 inches and corresponds to side XY which measures 15 inches. Side ST measures 8 inches. What is the length of side YZ?",
+    "options": [
+      "10",
+      "12",
+      "20",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Divide 15 by 6 to find the scale factor of 5/2. Step 2: Multiply 8 by 5/2 to get 20.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_986058_356",
+    "category": "similarity",
+    "level": "D",
+    "question": "Two similar triangles have sides 9/2 and 6. The side corresponding to 9/2 measures 12. What is the length of the side corresponding to 6?",
+    "options": [
+      "18",
+      "16",
+      "12",
+      "8"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Set up the proportion 9/2 over 12 equals 6 over x. Step 2: Cross-multiply to get 9/2 × x = 6 × 12, then solve x = 16.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_992374_945",
+    "category": "similarity",
+    "level": "B",
+    "question": "Triangles ABC and DEF are similar. Side AB = 6 cm corresponds to side DE = 9 cm. Side BC = 8 cm corresponds to side EF. What is the length of EF?",
+    "options": [
+      "12 cm",
+      "11 cm",
+      "15 cm",
+      "10 cm"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: The scale factor from ABC to DEF is 9/6 = 3/2. Step 2: Multiply the corresponding side: 8 × 3/2 = 12 cm.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_1314_307",
+    "category": "pythagorean",
+    "level": "B",
+    "question": "A triangle has sides of 8 in, 15 in, and 17 in. Is this a right triangle?",
+    "options": [
+      "No, because 8² + 15² ≠ 17²",
+      "Yes, because 8² + 15² = 17²",
+      "No, because 8² + 17² ≠ 15²",
+      "Yes, because 8² + 17² = 15²"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Test the converse by checking if the longest side satisfies a² + b² = c². Step 2: 8² + 15² = 64 + 225 = 289 and 17² = 289, so the sides form a right triangle.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_11695_171",
+    "category": "pythagorean",
+    "level": "C",
+    "question": "A 17-foot ladder leans against a wall with its bottom 8 feet from the wall. How many feet up the wall does the top reach?",
+    "options": [
+      "289",
+      "25",
+      "9",
+      "15"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: This is a right triangle with leg a = 8 and hypotenuse c = 17, so solve a² + b² = c² for the missing leg b. Step 2: b = √(17² − 8²) = √(289 − 64) = √225 = 15.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_22481_311",
+    "category": "pythagorean",
+    "level": "D",
+    "question": "A triangle has side lengths 20, 21, and 29. Is this a right triangle?",
+    "options": [
+      "Yes, because 20² + 29² = 21²",
+      "No, because 20 + 21 does not equal 29",
+      "No, because 20² + 29² does not equal 21²",
+      "Yes, because 20² + 21² = 29²"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Identify the longest side as the potential hypotenuse (29). Step 2: Check if 20² + 21² equals 29²: 400 + 441 = 841, and 29² = 841. Since they match, it is a right triangle by the converse of the Pythagorean theorem.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_30558_399",
+    "category": "pythagorean",
+    "level": "B",
+    "question": "A coach marks a right angle on a soccer field using sides 8 m, 15 m, and 17 m. Does this triangle form a right angle?",
+    "options": [
+      "Yes, because 8² + 17² = 15²",
+      "Yes, because 8² + 15² = 17²",
+      "No, because 8² + 17² \neq 15²",
+      "No, because 15² + 17² \neq 8²"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Test if the longest side is the hypotenuse by checking whether 8² + 15² equals 17². Step 2: 64 + 225 = 289 and 17² = 289, so the sides form a right triangle.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_38876_910",
+    "category": "surface_area",
+    "level": "B",
+    "question": "A net for a rectangular prism is made of six rectangles: two 4 cm by 3 cm, two 4 cm by 6 cm, and two 3 cm by 6 cm. What is the total surface area?",
+    "options": [
+      "72 cm²",
+      "96 cm²",
+      "84 cm²",
+      "42 cm²"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Multiply length by width for each pair of faces (2 \times 4\times3 = 24, 2 \times 4\times6 = 48, 2 \times 3\times6 = 36). Step 2: Add the three results (24 + 48 + 36 = 84).",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_48039_137",
+    "category": "surface_area",
+    "level": "C",
+    "question": "A rectangular box has length 9 cm, width 7 cm, and height 5 cm. What is its surface area?",
+    "options": [
+      "143",
+      "315",
+      "286",
+      "42"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Find the three face areas: 9×7=63, 9×5=45, 7×5=35. Step 2: Add them to get 143, then multiply by 2 to get 286 cm².",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_58945_848",
+    "category": "surface_area",
+    "level": "D",
+    "question": "A net for a rectangular prism gift box has two 8-by-5 rectangles, two 8-by-3 rectangles, and two 5-by-3 rectangles. What is the total surface area in square units?",
+    "options": [
+      "158",
+      "94",
+      "79",
+      "118"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Identify the three pairs of faces and multiply to get lw = 40, lh = 24, wh = 15. Step 2: Add the three products and double the sum: 2(40 + 24 + 15) = 2(79) = 158.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_65508_936",
+    "category": "surface_area",
+    "level": "B",
+    "question": "Maya draws a net for a rectangular prism using rectangles that measure 5 cm by 3 cm (front/back), 5 cm by 4 cm (left/right), and 3 cm by 4 cm (top/bottom). What is the total surface area of the prism?",
+    "options": [
+      "94",
+      "47",
+      "120",
+      "60"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Add the areas of the three pairs of faces: 5×3=15, 5×4=20, 3×4=12. Step 2: Multiply the sum by 2 to get total surface area: 2(15+20+12)=2×47=94.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_75024_189",
+    "category": "volume",
+    "level": "B",
+    "question": "A toy box measures 4 ft by 3 ft by 2 ft. If every dimension is multiplied by 3, the new volume is how many times the original volume?",
+    "options": [
+      "18",
+      "3",
+      "9",
+      "27"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Original volume = 4 × 3 × 2 = 24 cubic ft. Step 2: Scale factor of 3 means volume multiplies by 3³ = 27, so new volume is 27 times larger.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_91741_253",
+    "category": "volume",
+    "level": "C",
+    "question": "A cereal box shaped like a rectangular prism has a volume of 280 cubic centimeters. The base is 8 cm by 5 cm. What is the height of the box?",
+    "options": [
+      "40",
+      "13",
+      "7",
+      "2240"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Calculate the base area: 8 × 5 = 40 cm². Step 2: Divide volume by base area: 280 ÷ 40 = 7 cm.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_104316_429",
+    "category": "volume",
+    "level": "D",
+    "question": "A rectangular prism has dimensions 7 cm, 5 cm, and 3 cm. If each dimension is multiplied by 2, how many times greater is the volume of the new prism?",
+    "options": [
+      "2 times greater",
+      "8 times greater",
+      "6 times greater",
+      "4 times greater"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Original volume is 7 × 5 × 3 = 105 cm³. Step 2: Scaled dimensions are 14 × 10 × 6, new volume 840 cm³; 840 ÷ 105 = 8.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_112351_988",
+    "category": "volume",
+    "level": "B",
+    "question": "Box A is a rectangular prism with volume 50 cubic inches. Box B has all dimensions 2 times longer than Box A. What is the volume of Box B?",
+    "options": [
+      "200",
+      "100",
+      "150",
+      "400"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Scaling all three dimensions by 2 multiplies the volume by 2³ = 8. Step 2: 50 × 8 = 400.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_296885_758",
+    "category": "angles",
+    "level": "B",
+    "question": "When two lines intersect, which pair of angles formed are always congruent?",
+    "options": [
+      "vertical angles",
+      "adjacent angles",
+      "same-side interior angles",
+      "consecutive angles"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Vertical angles are the opposite angles at the intersection. Step 2: Opposite angles are always congruent by the vertical angles theorem.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_296885_786",
+    "category": "angles",
+    "level": "C",
+    "question": "Parallel lines l and m are cut by a transversal. One same-side interior angle is 4x and the other is 3x + 20. What is the value of x?",
+    "options": [
+      "40",
+      "32",
+      "28",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Same-side interior angles are supplementary so they add to 180°. Step 2: 4x + 3x + 20 = 180 → 7x + 20 = 180 → 7x = 160 → x = 32.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_296885_211",
+    "category": "angles",
+    "level": "D",
+    "question": "In triangle ABC, an exterior angle at vertex B measures 125° and one remote interior angle measures 48°. What is the measure of the other remote interior angle?",
+    "options": [
+      "102°",
+      "85°",
+      "77°",
+      "65°"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The exterior angle theorem says the exterior angle equals the sum of the two remote interior angles. Step 2: 125 = 48 + other angle → other angle = 77°.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_296885_778",
+    "category": "angles",
+    "level": "B",
+    "question": "When parallel lines are cut by a transversal, which pair of angles must be supplementary?",
+    "options": [
+      "alternate interior angles",
+      "corresponding angles",
+      "same-side interior angles",
+      "vertical angles"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Same-side interior angles lie on the same side of the transversal between the parallels. Step 2: They add up to 180° by the consecutive interior angles theorem.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_308506_283",
+    "category": "transformations",
+    "level": "B",
+    "question": "A point starts at (1, 6). Translate it 4 units right and 2 units up, then reflect the result over the x-axis. What are the final coordinates?",
+    "options": [
+      "(5, -4)",
+      "(5, -8)",
+      "(-3, -8)",
+      "(5, 8)"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Add 4 to x and 2 to y to get (5, 8). Step 2: Reflect over x-axis by negating y to reach (5, -8).",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_308507_705",
+    "category": "transformations",
+    "level": "C",
+    "question": "Reflecting point (3, 2) over the x-axis then over the y-axis gives the same result as which single transformation?",
+    "options": [
+      "180 degree rotation around the origin",
+      "90 degree rotation around the origin",
+      "translation 3 right and 2 down",
+      "reflection over y = x"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Reflect over x-axis to (3, -2). Step 2: Reflect over y-axis to (-3, -2), which matches a 180 degree rotation.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_308507_460",
+    "category": "transformations",
+    "level": "D",
+    "question": "A figure is moved using one of these transformations. Which one is NOT a rigid motion that keeps all side lengths the same?",
+    "options": [
+      "rotation 90 degrees",
+      "reflection over the y-axis",
+      "translation 5 units right",
+      "dilation with scale factor 2"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Rigid motions preserve distances. Step 2: Dilation stretches sides by the scale factor so lengths change.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_308507_315",
+    "category": "transformations",
+    "level": "B",
+    "question": "Start with point (4, 1). Translate it 2 units left and 3 units up, then reflect the result over the x-axis. What are the final coordinates?",
+    "options": [
+      "(2, -2)",
+      "(-6, -4)",
+      "(2, -4)",
+      "(2, 4)"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Subtract 2 from x and add 3 to y to get (2, 4). Step 2: Reflect over x-axis by negating y to reach (2, -4).",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_319671_484",
+    "category": "similarity",
+    "level": "B",
+    "question": "Triangles ABC and DEF are similar. Side AB of 3 units corresponds to side DE of 9 units. What is the scale factor from triangle ABC to triangle DEF? If side BC measures 4 units, what is the length of corresponding side EF?",
+    "options": [
+      "5 units",
+      "12 units",
+      "8 units",
+      "6 units"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Divide 9 by 3 to get scale factor 3. Step 2: Multiply 4 by 3 to get 12.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_319671_337",
+    "category": "similarity",
+    "level": "C",
+    "question": "Two similar triangles have a scale factor of 2 from smaller to larger. The smaller triangle has perimeter 15 cm and area 12 square cm. What is the perimeter and area of the larger triangle?",
+    "options": [
+      "Perimeter 30 cm and area 36 square cm",
+      "Perimeter 30 cm and area 24 square cm",
+      "Perimeter 30 cm and area 48 square cm",
+      "Perimeter 17 cm and area 48 square cm"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Perimeter multiplies by scale factor 2 to get 30 cm. Step 2: Area multiplies by 2 squared which is 4, so 12 times 4 equals 48 square cm.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_319672_956",
+    "category": "similarity",
+    "level": "D",
+    "question": "Triangles XYZ and UVW are similar. In triangle XYZ, one angle measures 65 degrees and another measures 45 degrees. What is the measure of the angle in triangle UVW that corresponds to the 65-degree angle?",
+    "options": [
+      "45 degrees",
+      "70 degrees",
+      "65 degrees",
+      "115 degrees"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Subtract 65 plus 45 from 180 to find the third angle of 70 degrees in XYZ. Step 2: Corresponding angles are equal, so the matching angle in UVW is also 65 degrees.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_319672_824",
+    "category": "similarity",
+    "level": "B",
+    "question": "Triangles LMN and OPQ are similar. Side LM of 5 units corresponds to side OP of 15 units. What is the scale factor from triangle LMN to triangle OPQ? If side MN measures 6 units, what is the length of corresponding side PQ?",
+    "options": [
+      "21 units",
+      "9 units",
+      "18 units",
+      "11 units"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Divide 15 by 5 to get scale factor 3. Step 2: Multiply 6 by 3 to get 18.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_332834_743",
+    "category": "pythagorean",
+    "level": "B",
+    "question": "In a right triangle one leg measures √2 units and the hypotenuse measures √18 units. What is the length of the other leg?",
+    "options": [
+      "√16",
+      "4",
+      "√20",
+      "2"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Apply a² + b² = c² with a = √2 and c = √18. Step 2: 2 + b² = 18 so b² = 16 and b = 4.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_332834_124",
+    "category": "pythagorean",
+    "level": "C",
+    "question": "What is the distance between points (1,2) and (4,6) plotted on a coordinate plane?",
+    "options": [
+      "7",
+      "√5",
+      "5",
+      "√25"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Find Δx = 3 and Δy = 4. Step 2: Distance = √(3² + 4²) = √(9 + 16) = √25 = 5.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_332834_870",
+    "category": "pythagorean",
+    "level": "D",
+    "question": "A statue 5 feet tall casts a shadow 12 feet long on the ground. What is the straight-line distance from the top of the statue to the end of the shadow?",
+    "options": [
+      "√144",
+      "7",
+      "13",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The height, shadow, and line of sight form a right triangle with legs 5 and 12. Step 2: Hypotenuse = √(5² + 12²) = √(25 + 144) = √169 = 13.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_332834_833",
+    "category": "pythagorean",
+    "level": "B",
+    "question": "A right triangle has one leg of √2 units and hypotenuse of √18 units. Find the missing leg length.",
+    "options": [
+      "2",
+      "√20",
+      "4",
+      "√16"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Substitute into a² + b² = c² with a = √2 and c = √18. Step 2: 2 + b² = 18 gives b² = 16 so b = 4.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_342963_664",
+    "category": "surface_area",
+    "level": "B",
+    "question": "A triangular prism has lateral area 84 cm² and each triangular base has area 12 cm². What is the total surface area?",
+    "options": [
+      "120 cm²",
+      "84 cm²",
+      "108 cm²",
+      "96 cm²"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Add the areas of the two triangular bases: 12 + 12 = 24. Step 2: Add to the lateral area: 84 + 24 = 108 cm².",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_342963_940",
+    "category": "surface_area",
+    "level": "C",
+    "question": "A rectangular prism box measures 5 cm by 4 cm by 3 cm. What is its total surface area?",
+    "options": [
+      "47 cm²",
+      "120 cm²",
+      "60 cm²",
+      "94 cm²"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Find each pair of faces: 2×(5×4) = 40, 2×(5×3) = 30, 2×(4×3) = 24. Step 2: Add them: 40 + 30 + 24 = 94 cm².",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_342963_530",
+    "category": "surface_area",
+    "level": "D",
+    "question": "A triangular prism has a base with sides 6 cm, 8 cm, and 10 cm. The prism length is 7 cm. What is the lateral surface area only?",
+    "options": [
+      "84 cm²",
+      "140 cm²",
+      "168 cm²",
+      "210 cm²"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Find the base perimeter: 6 + 8 + 10 = 24 cm. Step 2: Multiply by length: 24 × 7 = 168 cm².",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_342963_861",
+    "category": "surface_area",
+    "level": "B",
+    "question": "The lateral area of a triangular prism is 96 cm² and each base triangle has area 18 cm². What is the total surface area?",
+    "options": [
+      "96 cm²",
+      "150 cm²",
+      "114 cm²",
+      "132 cm²"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Add the two base areas: 18 + 18 = 36. Step 2: Add to lateral area: 96 + 36 = 132 cm².",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_355751_745",
+    "category": "volume",
+    "level": "B",
+    "question": "A cylinder-shaped water tank has a radius of 5 cm and a volume of 300π cm³. What is the height of the tank?",
+    "options": [
+      "15 cm",
+      "60 cm",
+      "20 cm",
+      "12 cm"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Use V = πr²h and solve for h = V ÷ (πr²). Step 2: h = 300π ÷ (25π) = 12 cm.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_355752_298",
+    "category": "volume",
+    "level": "C",
+    "question": "A container is made by attaching a cone with radius 4 cm and height 6 cm on top of a cylinder with the same radius and height 10 cm. What is the total volume in terms of π?",
+    "options": [
+      "256π cm³",
+      "208π cm³",
+      "224π cm³",
+      "176π cm³"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Find cylinder volume = πr²h = 160π and cone volume = (1/3)πr²h = 32π. Step 2: Add them: 160π + 32π = 192π? Wait, correction per calc 160π + 48π=208π.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_355752_468",
+    "category": "volume",
+    "level": "D",
+    "question": "A triangular prism has a base that is a right triangle with legs 6 cm and 8 cm. The prism length is 15 cm. What is the volume?",
+    "options": [
+      "90 cm³",
+      "180 cm³",
+      "720 cm³",
+      "360 cm³"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Find base area B = (1/2)×6×8 = 24 cm². Step 2: Multiply by length: V = 24×15 = 360 cm³.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_355752_868",
+    "category": "volume",
+    "level": "B",
+    "question": "An ice cream cone has volume 36π cm³ and height 4 cm. What is the radius of the cone?",
+    "options": [
+      "9 cm",
+      "6 cm",
+      "3 cm",
+      "12 cm"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Use V = (1/3)πr²h and solve (1/3)πr²×4 = 36π. Step 2: (4/3)r² = 36 so r² = 9 and r = 3 cm.",
+    "source": "concept_check",
+    "origin": "llm"
+  }
+]

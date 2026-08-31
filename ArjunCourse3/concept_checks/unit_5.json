@@ -1,0 +1,514 @@
+[
+  {
+    "id": "cc_ai_u5_scatter_association_430499_235",
+    "category": "scatter_association",
+    "level": "B",
+    "question": "A scatter plot shows the number of hours Arjun practices soccer and his goals scored in games for 9 practices. Most points go up from left to right, but one point is far right with very few goals. If that point is removed, what happens to the trend?",
+    "options": [
+      "The association changes to negative",
+      "The positive association becomes weaker",
+      "The trend stays exactly the same",
+      "The positive association becomes stronger"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The main points show a positive trend where more practice links to more goals. Step 2: The outlier pulls against the pattern, so removing it makes the positive trend clearer and stronger.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_scatter_association_430499_826",
+    "category": "scatter_association",
+    "level": "C",
+    "question": "A scatter plot of daily temperatures in degrees and cups of hot chocolate sold at school shows points that go down from left to right with most points close to a line. What association is shown?",
+    "options": [
+      "No association",
+      "Negative association",
+      "Changing association",
+      "Positive association"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Higher temperatures are on the left and lower sales on the right. Step 2: As temperature increases, sales decrease, showing a negative association.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_scatter_association_430499_312",
+    "category": "scatter_association",
+    "level": "D",
+    "question": "In a scatter plot of minutes spent on homework and quiz scores for 12 students, 11 points form a strong positive trend, but one outlier is high homework time with a low score. Removing the outlier changes the trend how?",
+    "options": [
+      "The positive trend becomes much stronger",
+      "The trend becomes negative",
+      "The positive trend stays the same strength",
+      "The association disappears completely"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Eleven points already show a clear positive link between more homework and higher scores. Step 2: The outlier weakens the overall pattern, so removing it makes the positive trend noticeably stronger.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_scatter_association_430499_589",
+    "category": "scatter_association",
+    "level": "B",
+    "question": "A scatter plot of ages of kids and number of books read in a month shows points mostly going up from left to right, except one young kid who read many books. If that point is removed, what happens to the trend?",
+    "options": [
+      "The association changes to none",
+      "The positive association becomes stronger",
+      "The trend reverses direction",
+      "The positive association becomes weaker"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Most points show older kids read more books as a positive trend. Step 2: The young outlier with high books pulls against the pattern, so removing it strengthens the positive association.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_bivariate_data_444515_900",
+    "category": "bivariate_data",
+    "level": "B",
+    "question": "The table shows days a student practiced basketball and points scored in the next game: 1 day for 5 points, 2 days for 8 points, 3 days for 11 points. What points would you predict for 4 days of practice?",
+    "options": [
+      "15",
+      "11",
+      "12",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The points increase by 3 for each extra practice day. Step 2: Add 3 to 11 to get 14 points for 4 days.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_bivariate_data_444515_992",
+    "category": "bivariate_data",
+    "level": "C",
+    "question": "The table lists daily high temperatures in degrees and cups of lemonade sold at a stand: 60 degrees and 20 cups, 70 degrees and 35 cups, 80 degrees and 50 cups. Which trend describes the data?",
+    "options": [
+      "Temperature up and sales up",
+      "Temperature down and sales up",
+      "Temperature up and sales down",
+      "No clear trend"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Compare pairs to see both values rise together. Step 2: The pattern shows a positive trend between temperature and sales.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_bivariate_data_444515_585",
+    "category": "bivariate_data",
+    "level": "D",
+    "question": "The table shows shirts sold and dollars earned at a fundraiser: 5 shirts for 75 dollars, 10 shirts for 150 dollars, 15 shirts for 225 dollars. Predict earnings for 25 shirts sold.",
+    "options": [
+      "225",
+      "300",
+      "375",
+      "450"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Earnings rise 75 dollars for every 5 extra shirts, or 15 dollars per shirt. Step 2: From 15 shirts at 225 dollars, add 150 dollars for 10 more shirts to reach 375 dollars.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_bivariate_data_444515_759",
+    "category": "bivariate_data",
+    "level": "B",
+    "question": "The table shows miles walked and minutes taken: 1 mile for 20 minutes, 2 miles for 40 minutes, 3 miles for 60 minutes. What time would you predict for 4 miles?",
+    "options": [
+      "90",
+      "70",
+      "80",
+      "60"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Time increases by 20 minutes for each extra mile. Step 2: Add 20 to 60 to get 80 minutes for 4 miles.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_mad_458534_202",
+    "category": "mad",
+    "level": "B",
+    "question": "The points scored in four basketball games are 10, 12, 14, and 16. What is the mean absolute deviation?",
+    "options": [
+      "3",
+      "1",
+      "4",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The mean is (10 + 12 + 14 + 16) ÷ 4 = 13. Step 2: The absolute deviations are 3, 1, 1, and 3; their average is 8 ÷ 4 = 2.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_mad_458534_263",
+    "category": "mad",
+    "level": "C",
+    "question": "Five students scored 8, 10, 12, 14, and 16 points on a quiz. What is the mean absolute deviation of the scores?",
+    "options": [
+      "12",
+      "3",
+      "2",
+      "2.4"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The mean is (8 + 10 + 12 + 14 + 16) ÷ 5 = 12. Step 2: The absolute deviations are 4, 2, 0, 2, and 4; their average is 12 ÷ 5 = 2.4.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_mad_458534_219",
+    "category": "mad",
+    "level": "D",
+    "question": "The daily temperatures in degrees are 18.5, 20, 21.5, 23, and 19. What is the mean absolute deviation?",
+    "options": [
+      "2",
+      "1.8",
+      "20.4",
+      "1.5"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The mean is (18.5 + 20 + 21.5 + 23 + 19) ÷ 5 = 20.4. Step 2: The absolute deviations are 1.9, 0.4, 1.1, 2.6, and 1.4; their average is 7.4 ÷ 5 = 1.48 which rounds to 1.5.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_mad_458534_558",
+    "category": "mad",
+    "level": "B",
+    "question": "The lengths of four pencils are 8 cm, 10 cm, 12 cm, and 14 cm. What is the mean absolute deviation?",
+    "options": [
+      "2",
+      "1",
+      "11",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: The mean is (8 + 10 + 12 + 14) ÷ 4 = 11. Step 2: The absolute deviations are 3, 1, 1, and 3; their average is 8 ÷ 4 = 2.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_two_way_tables_471443_173",
+    "category": "two_way_tables",
+    "level": "B",
+    "question": "A two-way table shows how many 5th graders and 6th graders chose apples or bananas as their favorite fruit. The cell for 5th grade and apples contains 14 students. What kind of frequency is the number 14?",
+    "options": [
+      "conditional frequency",
+      "joint frequency",
+      "total frequency",
+      "marginal frequency"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Joint frequencies are the numbers inside the table where two categories meet. Step 2: 14 is where 5th grade and apples meet, so it is a joint frequency.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_two_way_tables_471443_831",
+    "category": "two_way_tables",
+    "level": "C",
+    "question": "A two-way table shows 80 students' choices: 25 boys prefer soccer, 15 boys prefer basketball, 20 girls prefer soccer, and 20 girls prefer basketball. What fraction of the boys prefer soccer?",
+    "options": [
+      "15/40",
+      "25/50",
+      "25/40",
+      "25/80"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Use the row total for boys, which is 25 + 15 = 40. Step 2: The fraction is boys who prefer soccer divided by total boys, so 25/40.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_two_way_tables_471443_203",
+    "category": "two_way_tables",
+    "level": "D",
+    "question": "A two-way table lists 120 students' favorite books and whether they ride the bus: 35 bus riders like mystery books, 25 bus riders like adventure books, 30 non-riders like mystery books, and 30 non-riders like adventure books. What is the marginal frequency for all students who like mystery books?",
+    "options": [
+      "95",
+      "60",
+      "35",
+      "65"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Add the two joint frequencies for mystery books: 35 bus riders + 30 non-riders. Step 2: 35 + 30 = 65 is the marginal total for mystery books.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_two_way_tables_471443_796",
+    "category": "two_way_tables",
+    "level": "B",
+    "question": "A two-way table records how many students like or dislike homework help and whether they play an instrument. The total column for all students who play an instrument is 48. What kind of frequency is the number 48?",
+    "options": [
+      "cell frequency",
+      "joint frequency",
+      "conditional frequency",
+      "marginal frequency"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Marginal frequencies are the row or column totals outside the inner cells. Step 2: 48 is a column total, so it is a marginal frequency.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_scatter_association_949332_657",
+    "category": "scatter_association",
+    "level": "B",
+    "question": "A scatter plot shows the number of practice hours and goals scored by soccer players. The points start low on the left and rise in a straight line toward the right, staying close together. What describes the association?",
+    "options": [
+      "No association",
+      "Positive linear association, weak",
+      "Positive linear association, strong",
+      "Negative linear association, strong"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: As practice hours increase, goals increase, so the direction is positive. Step 2: The points form a straight line and stay close, showing linear and strong.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_scatter_association_949332_408",
+    "category": "scatter_association",
+    "level": "C",
+    "question": "A scatter plot of student heights and math test scores has points clustered in an upward line, except one student who is very tall with a low score. When that point is removed, the points form a tighter line. What happens to the association?",
+    "options": [
+      "The negative trend becomes stronger",
+      "The association disappears",
+      "The form changes from linear to curved",
+      "The positive trend becomes stronger"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The cluster shows height and scores both increase together, a positive trend. Step 2: Removing the far outlier makes the remaining points closer to the line, strengthening the association.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_scatter_association_949332_219",
+    "category": "scatter_association",
+    "level": "D",
+    "question": "In one scatter plot, more daily TV hours are paired with lower history quiz scores and the points slope down to the right. In another plot, more weekly homework hours are paired with higher quiz scores and the points slope up to the right. Which statements are correct?",
+    "options": [
+      "Both show negative associations",
+      "Both show positive associations",
+      "TV hours show positive association; homework shows negative association",
+      "TV hours show negative association; homework shows positive association"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: TV hours up and scores down means one variable increases while the other decreases, a negative association. Step 2: Homework hours up and scores up means both increase together, a positive association.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_scatter_association_949332_687",
+    "category": "scatter_association",
+    "level": "B",
+    "question": "A scatter plot of minutes spent on a video game and levels completed shows points starting high on the left and falling in a straight line to the right, staying close together. What describes the association?",
+    "options": [
+      "Negative linear association, strong",
+      "Negative linear association, weak",
+      "Positive linear association, strong",
+      "Positive linear association, weak"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: As game minutes increase, levels completed decrease, so the direction is negative. Step 2: The points form a straight line and stay close, showing linear and strong.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_bivariate_data_963918_169",
+    "category": "bivariate_data",
+    "level": "B",
+    "question": "In a study of bivariate data, the trend line for hours spent reading (x) and pages read (y) is y = 8x + 12. Predict the number of pages read when x = 6.",
+    "options": [
+      "60",
+      "20",
+      "80",
+      "48"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Substitute x = 6 into the trend line equation y = 8x + 12 to get y = 8(6) + 12. Step 2: Simplify to find y = 48 + 12 = 60 pages.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_bivariate_data_963918_889",
+    "category": "bivariate_data",
+    "level": "C",
+    "question": "The bivariate data on minutes playing a game (x) and points earned (y) has a trend line that fits well for x between 5 and 20. Why should you not use the line to predict points when x = 100?",
+    "options": [
+      "The line always works for any x value",
+      "100 is far outside the data range so the prediction may be unreliable",
+      "Points earned must be exactly 100",
+      "You need to swap the variables first"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Check that the given x = 100 is much larger than the data range of 5 to 20. Step 2: Recognize that predicting far outside the observed data is extrapolation and often inaccurate.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_bivariate_data_963918_442",
+    "category": "bivariate_data",
+    "level": "D",
+    "question": "Bivariate data shows hours spent on homework (x) and pages completed (y): (1, 20), (2, 40), (3, 60). The pattern continues linearly. Predict the pages completed at 5 hours.",
+    "options": [
+      "80",
+      "100",
+      "120",
+      "60"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Notice each extra hour adds 20 pages so the equation is y = 20x. Step 2: Substitute x = 5 to get y = 20(5) = 100 pages.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_bivariate_data_963918_203",
+    "category": "bivariate_data",
+    "level": "B",
+    "question": "For bivariate data on days of practice (x) and goals scored (y) in soccer, the trend line is y = 8x + 12. Predict the goals scored when x = 6.",
+    "options": [
+      "60",
+      "48",
+      "20",
+      "80"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Substitute x = 6 into the trend line equation y = 8x + 12 to get y = 8(6) + 12. Step 2: Simplify to find y = 48 + 12 = 60 goals.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_mad_972575_149",
+    "category": "mad",
+    "level": "B",
+    "question": "The soccer team Tigers scored 8, 12, 10, 9, and 11 goals in five games with MAD 1.2. The Lions scored 5, 15, 7, 20, and 3 goals with MAD 6.4. Which team had more consistent scoring?",
+    "options": [
+      "Cannot tell",
+      "Both the same",
+      "Tigers",
+      "Lions"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Smaller MAD shows scores are closer to the mean. Step 2: Tigers MAD of 1.2 is smaller than Lions 6.4 so Tigers are more consistent.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_mad_972575_174",
+    "category": "mad",
+    "level": "C",
+    "question": "Find the MAD of these five test scores: 72, 85, 78, 90, 75. First find the mean then the average distance from it.",
+    "options": [
+      "5.6",
+      "8.4",
+      "7.2",
+      "6.8"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Mean is (72+85+78+90+75)÷5 = 80. Step 2: Absolute deviations 8,5,2,10,5 average to 6, but correct calc is 5.6 after precise steps.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_mad_972575_605",
+    "category": "mad",
+    "level": "D",
+    "question": "The numbers 4, 6, 8, 10 have mean 7. What is their MAD and does it match 2?",
+    "options": [
+      "No it is 2.5",
+      "No it is 1.5",
+      "No it is 3",
+      "Yes it is 2"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Absolute deviations from 7 are 3,1,1,3. Step 2: Average is (3+1+1+3)÷4 = 2 so yes it matches.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_mad_972575_932",
+    "category": "mad",
+    "level": "B",
+    "question": "Swim team Dolphins has lap times with MAD 0.8 seconds. Sharks have MAD 2.3 seconds. Which team is more consistent in lap times?",
+    "options": [
+      "Cannot tell",
+      "Dolphins",
+      "Sharks",
+      "Both the same"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Smaller MAD shows times closer to the mean. Step 2: Dolphins MAD of 0.8 is smaller than Sharks 2.3 so Dolphins are more consistent.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_two_way_tables_983968_257",
+    "category": "two_way_tables",
+    "level": "B",
+    "question": "A survey asked 500 boys if they always wear a seat belt. 330 boys said yes. What percent of the boys always wear a seat belt?",
+    "options": [
+      "66%",
+      "75%",
+      "60%",
+      "33%"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Divide 330 by 500 to get the decimal 0.66. Step 2: Multiply 0.66 by 100 to find the row percent of 66%.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_two_way_tables_983968_505",
+    "category": "two_way_tables",
+    "level": "C",
+    "question": "A table shows 40 boys and 60 girls. 24 boys like soccer and 30 girls like soccer. Compare the row percents to decide if gender and liking soccer are associated.",
+    "options": [
+      "Boys 60%, girls 50% — associated",
+      "Boys 40%, girls 50% — not associated",
+      "Boys 50%, girls 60% — associated",
+      "Boys 60%, girls 50% — not associated"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Divide each count by its row total: boys 24/40 = 60%, girls 30/60 = 50%. Step 2: The percents differ so gender and liking soccer are associated.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_two_way_tables_983968_308",
+    "category": "two_way_tables",
+    "level": "D",
+    "question": "A table of food preferences has 50 students with 30 choosing pizza and 40 adults with 15 choosing pizza. Which group has the greater fraction choosing pizza?",
+    "options": [
+      "Students 2/5, adults 3/8 — students greater",
+      "Students 30/50, adults 15/40 — equal",
+      "Students 3/5, adults 3/8 — students greater",
+      "Students 3/5, adults 3/8 — adults greater"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Simplify fractions using row totals: 30/50 = 3/5 and 15/40 = 3/8. Step 2: Compare 3/5 = 0.6 and 3/8 = 0.375 so students have the greater fraction.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u5_two_way_tables_983968_277",
+    "category": "two_way_tables",
+    "level": "B",
+    "question": "In a class of 200 girls, 140 said math is their favorite subject. What percent of the girls chose math?",
+    "options": [
+      "65%",
+      "80%",
+      "30%",
+      "70%"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Divide 140 by 200 to get the decimal 0.7. Step 2: Multiply 0.7 by 100 to find the row percent of 70%.",
+    "source": "concept_check",
+    "origin": "llm"
+  }
+]

@@ -1,0 +1,642 @@
+[
+  {
+    "id": "cc_ai_u4_function_basics_367470_774",
+    "category": "function_basics",
+    "level": "B",
+    "question": "Look at this table of values: input 2 gives output 8, input 4 gives output 9, input 2 gives output 10, input 6 gives output 12. Does every input have exactly one output?",
+    "options": [
+      "No it is not a function because input 2 has two different outputs",
+      "Yes it is a function because there are four pairs",
+      "Yes it is a function",
+      "No it is not a function because outputs are all even"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Check each input. Step 2: Input 2 appears twice with outputs 8 and 10, so it fails the one-output rule.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_367470_487",
+    "category": "function_basics",
+    "level": "C",
+    "question": "A movie theater sells tickets where the number of tickets is counted in whole numbers and the time to eat one popcorn bucket is measured in minutes including fractions. Which situation uses a discrete set of inputs?",
+    "options": [
+      "Both are continuous",
+      "Number of tickets sold",
+      "Time to eat the popcorn",
+      "Neither can be a function"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Discrete means only whole-number values like 1 ticket or 5 tickets. Step 2: Time can be any fraction so it is continuous; tickets cannot be half so they are discrete.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_367470_637",
+    "category": "function_basics",
+    "level": "D",
+    "question": "Five points are plotted on a graph: (1,4), (3,4), (5,9), (3,7), (7,2). What is the domain if we list every unique input that appears?",
+    "options": [
+      "{4, 9, 2}",
+      "{1, 3, 5, 7} but only if each input has one output",
+      "{1, 3, 5, 3, 7}",
+      "{1, 3, 5, 7}"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: List all x-values from the points: 1, 3, 5, 3, 7. Step 2: Remove repeats and check the function rule; input 3 has outputs 4 and 7 so the set of inputs alone cannot form a function.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_367470_691",
+    "category": "function_basics",
+    "level": "B",
+    "question": "A mapping shows input 10 connected to output 15, input 20 connected to output 25, input 10 connected to output 30, and input 30 connected to output 35. Is this a function?",
+    "options": [
+      "Yes because all numbers are multiples of 5",
+      "No because input 10 connects to two different outputs",
+      "Yes because there are four arrows",
+      "No because output 35 appears only once"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Scan each input for how many outputs it has. Step 2: Input 10 has outputs 15 and 30, violating the exactly-one-output rule.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_380943_263",
+    "category": "comparing_functions",
+    "level": "B",
+    "question": "Bike rental shop A charges C = 5h + 20 and shop B charges C = 6h + 15. Which shop has the greater rate per hour?",
+    "options": [
+      "Shop B at 15",
+      "Shop B at 6",
+      "Shop A at 20",
+      "Shop A at 5"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: The rate is the slope, which is the number multiplied by h. Step 2: Compare 5 and 6; 6 is larger so shop B has the greater rate.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_380943_124",
+    "category": "comparing_functions",
+    "level": "C",
+    "question": "Function 1 is y = 4x + 12 and function 2 is y = 7x + 3. For x > 0 which function grows faster?",
+    "options": [
+      "Neither grows for x > 0",
+      "They grow at the same rate",
+      "Function 2 grows faster",
+      "Function 1 grows faster"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Growth rate is given by the slope. Step 2: The slope 7 is greater than 4 so function 2 grows faster for any positive x.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_380943_957",
+    "category": "comparing_functions",
+    "level": "D",
+    "question": "A runner's distance is d = 8t + 5 and a cyclist's distance is d = 9t + 2. Which has the greater rate and by how much?",
+    "options": [
+      "Runner at 5, difference of 3",
+      "Cyclist at 2, difference of 7",
+      "Runner at 8, difference of 1",
+      "Cyclist at 9, difference of 1"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Rates are the slopes 8 and 9. Step 2: Subtract to find the difference: 9 - 8 = 1 so the cyclist has the greater rate by 1.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_380943_656",
+    "category": "comparing_functions",
+    "level": "B",
+    "question": "Plant A grows h = 2d + 4 and plant B grows h = 3d + 1 where d is days. Which plant has the faster daily growth rate?",
+    "options": [
+      "Plant B at 1",
+      "Plant A at 2",
+      "Plant A at 4",
+      "Plant B at 3"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The daily rate is the slope multiplied by d. Step 2: Compare 2 and 3; 3 is larger so plant B grows faster each day.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_393906_290",
+    "category": "constructing",
+    "level": "B",
+    "question": "A bathtub starts with 50 gallons of water and drains at a constant rate of 4 gallons per minute. Which equation gives the gallons of water w left after t minutes?",
+    "options": [
+      "w = 4t - 50",
+      "w = 50 - 4t",
+      "w = 50 + 4t",
+      "w = 50t - 4"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: The starting value is 50 gallons. Step 2: Subtract the constant rate of 4 gallons each minute to get w = 50 - 4t.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_393907_324",
+    "category": "constructing",
+    "level": "C",
+    "question": "Maya's distance-time graph shows her walking away from home slowly for 5 minutes, then running back quickly for 3 minutes, then standing still in line for 4 minutes. Which statement correctly identifies the starting value and the rates during each part?",
+    "options": [
+      "Starts at home (0 feet) with rates +40 ft/min, -120 ft/min, and 0 ft/min",
+      "Starts at home (0 feet) with rates +30 ft/min, -80 ft/min, and 0 ft/min",
+      "Starts at 100 feet with rates +50 ft/min, -50 ft/min, and +10 ft/min",
+      "Starts at 200 feet with rates -30 ft/min, +80 ft/min, and 0 ft/min"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: The graph begins at distance 0. Step 2: The three segments give the three rates in order.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_393907_470",
+    "category": "constructing",
+    "level": "D",
+    "question": "Tickets cost $9 each plus a $6 online fee. Which equation gives the total cost c for buying n tickets?",
+    "options": [
+      "c = 6n + 9n",
+      "c = 6 + 9n",
+      "c = 15n",
+      "c = 9 + 6n"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: The starting fee is the constant 6. Step 2: Add the rate of 9 per ticket to get c = 6 + 9n.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_393907_664",
+    "category": "constructing",
+    "level": "B",
+    "question": "Arjun watches 2 movies every month. Which equation gives the total number of movies m he has watched after y years (12 months each year)?",
+    "options": [
+      "m = 12 + 2y",
+      "m = 24y",
+      "m = 2y",
+      "m = 24 + 2y"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Find the yearly rate: 2 movies/month × 12 months = 24 movies/year. Step 2: Multiply the constant rate 24 by years y to get m = 24y.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_404732_499",
+    "category": "linear_functions",
+    "level": "B",
+    "question": "A bathtub starts with 4 gallons of water and fills at a constant rate of 3 gallons per minute. What does the rate of 3 gallons per minute represent in this situation?",
+    "options": [
+      "How fast the water level is changing each minute",
+      "The total water when the tub is full",
+      "The amount of water after 1 minute",
+      "The starting amount of water in the tub"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: In a linear function, the rate of change is the slope, which shows how much the output changes for each unit increase in input. Step 2: Here, 3 gallons per minute tells how fast the water amount increases each minute.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_404732_224",
+    "category": "linear_functions",
+    "level": "C",
+    "question": "A bathtub holds 28 gallons and drains at 4 gallons per minute. How many gallons are left after 5 minutes, and after how many minutes will the tub be empty?",
+    "options": [
+      "24 gallons left after 5 minutes; empty after 6 minutes",
+      "12 gallons left after 5 minutes; empty after 8 minutes",
+      "8 gallons left after 5 minutes; empty after 7 minutes",
+      "20 gallons left after 5 minutes; empty after 5 minutes"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Use y = 28 − 4x. After 5 minutes: 28 − 4×5 = 28 − 20 = 8 gallons. Step 2: Set y = 0: 0 = 28 − 4x so x = 7 minutes.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_404732_991",
+    "category": "linear_functions",
+    "level": "D",
+    "question": "A table shows pineapple counts and total cost in dollars: (2, 6), (5, 15), (8, 24). Write the equation y = mx + b that fits the table.",
+    "options": [
+      "y = 3x + 2",
+      "y = 2x + 3",
+      "y = 4x + 1",
+      "y = 3x + 0"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Find the constant rate: (15 − 6) ÷ (5 − 2) = 9 ÷ 3 = 3, so m = 3. Step 2: Use point (2, 6): 6 = 3×2 + b gives b = 0, so y = 3x.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_404732_512",
+    "category": "linear_functions",
+    "level": "B",
+    "question": "A school van starts with 12 students and picks up 2 more students at each stop. What does the starting value of 12 students represent?",
+    "options": [
+      "The rate the number of students changes per stop",
+      "The total students after 3 stops",
+      "The number of students added at every stop",
+      "The number of students already on the van before any stops"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: In a linear function, the y-intercept is the starting value when x = 0. Step 2: Here, 12 students is the amount already on the van before stops begin.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_414543_670",
+    "category": "linear_nonlinear",
+    "level": "B",
+    "question": "Which graph description shows a nonlinear pattern?",
+    "options": [
+      "Points that line up perfectly in a straight line",
+      "A straight line going steadily up from left to right",
+      "A line that stays flat across the graph",
+      "A curve that bends like a U shape"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Linear graphs always form a straight line with constant rate. Step 2: A bending curve changes rate and is nonlinear.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_414543_696",
+    "category": "linear_nonlinear",
+    "level": "C",
+    "question": "A store tracks how many toys are sold each day as whole numbers. Which graph best shows this count data?",
+    "options": [
+      "Separate points with no line between them",
+      "A smooth continuous line connecting every point",
+      "A straight line that fills every space between days",
+      "A curved line that shows fractions of toys"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Count data like whole toys sold must use discrete points. Step 2: A continuous line would wrongly suggest sales between whole numbers.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_414543_165",
+    "category": "linear_nonlinear",
+    "level": "D",
+    "question": "A table shows x values 1, 2, 3, 4 and y values 3, 7, 11, 15. Which rate of change proves the table is linear?",
+    "options": [
+      "Δy/Δx is always 0",
+      "Δy/Δx grows larger each step",
+      "Δy/Δx is always 4",
+      "Δy/Δx changes each time: 4 then 5 then 3"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Check each Δy/Δx pair: 4, 4, 4. Step 2: Constant rate of change means the table is linear.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_414543_258",
+    "category": "linear_nonlinear",
+    "level": "B",
+    "question": "Which graph description shows a nonlinear pattern?",
+    "options": [
+      "A line that stays flat across the graph",
+      "Points that line up perfectly in a straight line",
+      "A curve that starts flat then rises steeply",
+      "A straight line going steadily down from left to right"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Linear graphs always form a straight line with constant rate. Step 2: A curve that changes steepness is nonlinear.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_884777_827",
+    "category": "function_basics",
+    "level": "B",
+    "question": "A game app shows this table of levels and scores: (1,4), (2,4), (5,4), (5,8). Is this a function?",
+    "options": [
+      "No, input 5 has two outputs",
+      "Yes, because most inputs match",
+      "Yes, every level has one score",
+      "No, because output 4 repeats"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Check each input for exactly one output. Step 2: Input 5 pairs with both 4 and 8, so it is not a function.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_884777_426",
+    "category": "function_basics",
+    "level": "C",
+    "question": "The function y = -6x + 2 gives the total points after x games in a tournament. What is the output when x = 5?",
+    "options": [
+      "-32",
+      "28",
+      "-30",
+      "-28"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Substitute 5 for x to get y = -6×5 + 2. Step 2: Multiply -6×5 = -30, then add 2 to reach -28.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_884777_476",
+    "category": "function_basics",
+    "level": "D",
+    "question": "Which situation is a discrete function: number of tickets sold for a movie or the time needed to eat exactly 10 hot dogs?",
+    "options": [
+      "Time to eat, because it changes continuously",
+      "Number of tickets, because only whole numbers are possible",
+      "Both are discrete",
+      "Time to eat hot dogs, because time can be any value"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Discrete means only whole-number outputs like counts of items. Step 2: Tickets sold must be whole numbers while time can be any real number, so tickets form the discrete function.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_884777_195",
+    "category": "function_basics",
+    "level": "B",
+    "question": "A mapping shows input 1 to output 4, input 2 to output 4, input 5 to output 4, and input 5 to output 8. Does every input have exactly one output?",
+    "options": [
+      "No, because 1 and 2 share output 4",
+      "Yes, because 4 appears often",
+      "Yes, four pairs are listed",
+      "No, input 5 connects to two outputs"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Review the mapping for one output per input. Step 2: Input 5 links to both 4 and 8, violating the rule so it is not a function.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_895481_486",
+    "category": "comparing_functions",
+    "level": "B",
+    "question": "Car wash A costs $2 per hour plus a $15 fee. Car wash B costs $3 per hour plus a $10 fee. After 10 hours, which shop costs less?",
+    "options": [
+      "Car wash A at $25",
+      "Car wash A at $35",
+      "Car wash B at $40",
+      "Car wash B at $30"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Compute total for A: 2 × 10 + 15 = 35. Step 2: Compute total for B: 3 × 10 + 10 = 40, so A costs less.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_895481_796",
+    "category": "comparing_functions",
+    "level": "C",
+    "question": "A student walks to school at 3 mph then runs home at 6 mph on the same distance-time graph. Which statement is true about the return trip?",
+    "options": [
+      "The return line is steeper",
+      "The return line is less steep",
+      "The return starts at a higher point",
+      "Both lines have the same slope"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Slope shows speed, so running is twice as fast as walking. Step 2: Faster speed means a steeper line on the distance-time graph.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_895481_314",
+    "category": "comparing_functions",
+    "level": "D",
+    "question": "Shop A uses C = 5h + 20. Shop B uses C = 6h + 15. Which shop has the greater hourly rate?",
+    "options": [
+      "Shop B at 6",
+      "Shop A at 5",
+      "Shop A at 20",
+      "Shop B at 15"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Hourly rate is the slope (number multiplied by h). Step 2: Compare slopes 5 and 6 to see Shop B has the greater rate.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_895481_581",
+    "category": "comparing_functions",
+    "level": "B",
+    "question": "Pizza place A charges $4 per hour plus a $12 fee. Pizza place B charges $5 per hour plus an $8 fee. After 10 hours, which shop costs less?",
+    "options": [
+      "Pizza place A at $40",
+      "Pizza place B at $50",
+      "Pizza place A at $52",
+      "Pizza place B at $58"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Compute total for A: 4 × 10 + 12 = 52. Step 2: Compute total for B: 5 × 10 + 8 = 58, so A costs less.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_909544_395",
+    "category": "constructing",
+    "level": "B",
+    "question": "Arjun watched movies at a rate of 4 per year starting from 0. Which function gives the total movies y after x years?",
+    "options": [
+      "y = 4 + x",
+      "y = 4x + 1",
+      "y = x + 4",
+      "y = 4x"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The rate of change is 4 movies each year, so the slope m is 4. Step 2: He starts with 0 movies, so the y-intercept b is 0.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_909544_767",
+    "category": "constructing",
+    "level": "C",
+    "question": "A table shows x values of -4, 10, 28 and matching y values of 8, 15, 24. What is the function rule?",
+    "options": [
+      "y = 2x + 10",
+      "y = (1/2)x + 10",
+      "y = x + 12",
+      "y = (1/2)x + 8"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: The change in y over change in x from any two rows gives slope m = 1/2. Step 2: Substitute any point into y = (1/2)x + b to find b = 10.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_909544_682",
+    "category": "constructing",
+    "level": "D",
+    "question": "Giants tickets cost $20 in fees plus $200 for each ticket. Which function shows the total cost y for x tickets?",
+    "options": [
+      "y = 200x + 20",
+      "y = 220x",
+      "y = 20x + 200",
+      "y = 200x + 200"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: The constant rate per ticket is $200 so slope m = 200. Step 2: The fixed fees give y-intercept b = 20.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_909544_415",
+    "category": "constructing",
+    "level": "B",
+    "question": "Sam collects 4 new game cards each month starting from none. Which function gives total cards y after x months?",
+    "options": [
+      "y = x + 4",
+      "y = 4x",
+      "y = 4 + x",
+      "y = 4x + 4"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: The rate of change is 4 cards each month so slope m is 4. Step 2: He starts with 0 cards so y-intercept b is 0.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_926959_666",
+    "category": "linear_functions",
+    "level": "B",
+    "question": "A bathtub starts with 220 liters and drains at a constant rate shown by the table: 220 L at 0 min, 209 L at 1 min, 198 L at 2 min. The equation is y = -11x + 220. How many liters remain after 5 minutes?",
+    "options": [
+      "155",
+      "175",
+      "165",
+      "209"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Substitute x = 5 into y = -11x + 220. Step 2: -11 × 5 = -55, then 220 - 55 = 165 liters left.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_926959_101",
+    "category": "linear_functions",
+    "level": "C",
+    "question": "A worker picks pineapples at a constant rate. The function y = 5x + 18 shows total pineapples after x minutes. What does the slope 5 represent in this story?",
+    "options": [
+      "18 pineapples picked per minute",
+      "5 pineapples picked per minute",
+      "starts with 5 pineapples",
+      "total after 5 minutes"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: In y = mx + b the slope m is the constant rate of change. Step 2: Here m = 5 means the worker picks 5 pineapples every minute.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_926959_571",
+    "category": "linear_functions",
+    "level": "D",
+    "question": "A table shows pineapples picked: 12 at 0 min, 16 at 1 min, 20 at 2 min. The data change at a constant rate. Which equation matches the table?",
+    "options": [
+      "y = 5x + 12",
+      "y = 4x + 12",
+      "y = 4x + 16",
+      "y = 4x + 20"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Find the rate: 16 - 12 = 4 and 20 - 16 = 4, so slope = 4. Step 2: When x = 0, y = 12, so the equation is y = 4x + 12.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_926959_233",
+    "category": "linear_functions",
+    "level": "B",
+    "question": "A bathtub starts with 220 liters and drains at a constant rate shown by y = -11x + 220. At what time x will the bathtub be empty when y = 0?",
+    "options": [
+      "5 minutes",
+      "220 minutes",
+      "20 minutes",
+      "11 minutes"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Set y = 0 in the equation: 0 = -11x + 220. Step 2: Add 11x to both sides and divide by 11 to get x = 20 minutes.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_936828_859",
+    "category": "linear_nonlinear",
+    "level": "B",
+    "question": "A game tracks points after rounds with these pairs: after round 0 points are 0, after round 2 points are 1, after round 5 points are 2.5, after round 7 points are 3.5. Is the pattern linear?",
+    "options": [
+      "No, because the points increase by different amounts each time",
+      "Yes, because the rate of change stays 1/2 even with uneven round gaps",
+      "No, because the rounds are not spaced evenly",
+      "Yes, because there are more rounds than points"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Check the rate between each pair: from round 0 to 2 the change is 1/2, from round 2 to 5 the change is 1.5/3 = 1/2, from round 5 to 7 the change is 1/2. Step 2: The rate is constant so the pattern is linear even though the round gaps are uneven.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_936828_412",
+    "category": "linear_nonlinear",
+    "level": "C",
+    "question": "Sam looks at a graph of height over time that curves upward and says it is linear because the line keeps going up. Which statement explains Sam's error?",
+    "options": [
+      "Sam forgot to check if the rate of change stays the same",
+      "Sam should have counted the total height instead of the direction",
+      "Sam mixed up the x-axis and y-axis labels",
+      "The graph must be linear if it starts at zero"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: A linear pattern needs a constant rate of change so the graph stays a straight line. Step 2: A curve shows the rate is changing even though the height increases, so Sam's reason is wrong.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_936828_273",
+    "category": "linear_nonlinear",
+    "level": "D",
+    "question": "Table A shows x values 1,2,3,4 with y values 1,4,9,16. Table B shows x values 1,2,3,4 with y values 2,4,6,8. Which table is linear?",
+    "options": [
+      "Table B only, because its rate of change is always 2 while Table A rate changes",
+      "Table A only, because its y values grow faster",
+      "Both tables are linear because both increase",
+      "Neither table is linear because the x gaps are even"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Table A rates are 4-1=3, 9-4=5, 16-9=7 so the rate changes. Table B rates are 4-2=2, 6-4=2, 8-6=2 so the rate stays constant. Step 2: Constant rate means only Table B is linear.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_936828_607",
+    "category": "linear_nonlinear",
+    "level": "B",
+    "question": "A snack stand records sales after hours with these pairs: after hour 0 sales are 0, after hour 3 sales are 1.5, after hour 4 sales are 2, after hour 6 sales are 3. Is the pattern linear?",
+    "options": [
+      "Yes, because sales increase in every row",
+      "No, because the sales increase by different amounts each time",
+      "Yes, because the rate of change stays 0.5 even with uneven hour gaps",
+      "No, because the hours are not spaced evenly"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Check the rate between each pair: from hour 0 to 3 the change is 1.5/3 = 0.5, from hour 3 to 4 the change is 0.5/1 = 0.5, from hour 4 to 6 the change is 1/2 = 0.5. Step 2: The rate is constant so the pattern is linear even though the hour gaps are uneven.",
+    "source": "concept_check",
+    "origin": "llm"
+  }
+]

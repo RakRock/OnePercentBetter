@@ -494,5 +494,21 @@
     "explanation": "Step 1: Multiply the coefficients 5 and 3 to get 15, and add the exponents 3 + 4 to get 7, resulting in 15 \times 10^7. Step 2: Rewrite 15 \times 10^7 as 1.5 \times 10^8 so the coefficient is between 1 and 10.",
     "source": "concept_check",
     "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_213993_243",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Which list shows 3/4, 0.85, and 80% ordered from greatest to least?",
+    "options": [
+      "0.85, 80%, 3/4",
+      "0.85, 3/4, 80%",
+      "3/4, 0.85, 80%",
+      "80%, 0.85, 3/4"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Convert to decimals: 3/4 = 0.75 and 80% = 0.8. Step 2: Compare 0.85 > 0.8 > 0.75, which matches 0.85, 80%, 3/4.",
+    "source": "concept_check",
+    "origin": "llm"
   }
 ]
