@@ -31,9 +31,10 @@ def _label(x: float, y: float, text: str, *, color: str = "#1e293b", size: int =
 
 def _arrow(x1: float, y1: float, x2: float, y2: float, *, color: str = "#2563eb", width: float = 2.5, dash: str = "", marker: str = "arr") -> str:
     dash_attr = f' stroke-dasharray="{dash}"' if dash else ""
+    marker_attr = f' marker-end="url(#{marker})"' if marker else ""
     return (
         f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" '
-        f'stroke="{color}" stroke-width="{width}" marker-end="url(#{marker})"{dash_attr}/>'
+        f'stroke="{color}" stroke-width="{width}"{marker_attr}{dash_attr}/>'
     )
 
 
@@ -157,238 +158,713 @@ def svg_straight_ray(cfg: dict) -> str:
     return _svg_wrap(parts, title="Light travels in straight lines")
 
 
+def _hatched_plane_mirror(x: float = 280, y1: float = 36, y2: float = 250) -> list[str]:
+    """Vertical plane mirror, hatch on the non-reflecting (right) side — NCERT Fig 9.1 style."""
+    parts = [f'<line x1="{x:.0f}" y1="{y1:.0f}" x2="{x:.0f}" y2="{y2:.0f}" stroke="#334155" stroke-width="3.2"/>']
+    for y in range(int(y1) + 8, int(y2), 12):
+        parts.append(f'<line x1="{x:.0f}" y1="{y}" x2="{x + 10:.0f}" y2="{y - 8}" stroke="#64748b" stroke-width="1.3"/>')
+    parts.append(_label(x, y2 + 16, "M", size=11, bold=True))
+    return parts
+
+
 def svg_plane_mirror_reflection(cfg: dict) -> str:
     hl = cfg.get("highlight", "")
     mode = cfg.get("mode", "")
+    mx = 280
     if mode == "image_properties":
-        parts = [
-            '<line x1="240" y1="30" x2="240" y2="250" stroke="#94a3b8" stroke-width="5"/>',
-            _label(240, 265, "Plane mirror", size=10),
-            '<polygon points="120,180 140,120 160,180" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>',
-            _label(140, 200, "Object", bold=True),
-            '<polygon points="320,180 340,120 360,180" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="5,4"/>',
-            _label(340, 200, "Virtual image", color="#6366f1", bold=True),
-            _label(340, 215, "(same size, erect)", size=10, color="#64748b"),
-            _label(140, 95, "As far in front", size=9, color="#64748b"),
-            _label(340, 95, "as image behind", size=9, color="#64748b"),
-        ]
-        return _svg_wrap(parts, title="Plane mirror image")
+        parts = _hatched_plane_mirror(mx, 40, 240)
+        parts.extend(_axis_arrow(160, 180, 120, color="#1d4ed8", tip_label="A", base_label="B"))
+        parts.extend(_axis_arrow(400, 180, 120, color="#dc2626", dash="4,3", tip_label="A′", base_label="B′"))
+        parts.append(_label(160, 210, "Object", size=10, color="#1d4ed8", bold=True))
+        parts.append(_label(400, 210, "Virtual image", size=10, color="#dc2626", bold=True))
+        parts.append(_label(280, 268, "Same size · erect · as far behind as object is in front", size=11, color="#334155"))
+        return _svg_wrap(parts, w=560, h=300, title="Plane mirror image")
     parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"))]
-    parts.append('<line x1="240" y1="30" x2="240" y2="250" stroke="#94a3b8" stroke-width="5"/>')
-    parts.append(_arrow(240, 130, 240, 50, color="#64748b", width=1.5, dash="5,4"))
-    parts.append(_label(252, 90, "Normal", size=10, color="#64748b"))
-    inc_w = 3.5 if hl == "incident" else 2.5
-    ref_w = 3.5 if hl == "reflected" else 2.5
-    parts.append(_arrow(60, 190, 240, 130, color="#2563eb", width=inc_w))
-    parts.append(_label(130, 175, "Incident ray", size=10, color="#2563eb"))
-    parts.append(_arrow(240, 130, 420, 70, color="#059669", width=ref_w, marker="arrG"))
-    parts.append(_label(350, 88, "Reflected ray", size=10, color="#059669"))
+    parts.extend(_hatched_plane_mirror(mx, 36, 240))
+    parts.append(_arrow(mx, 140, mx, 50, color="#64748b", width=1.5, dash="5,4"))
+    parts.append(_label(mx + 14, 90, "Normal", size=10, color="#64748b", anchor="start"))
+    inc_w = 3.5 if hl == "incident" else 2.2
+    ref_w = 3.5 if hl == "reflected" else 2.2
+    parts.append(_arrow(70, 200, mx, 140, color="#2563eb", width=inc_w))
+    parts.append(_label(140, 188, "Incident ray", size=10, color="#2563eb"))
+    parts.append(_arrow(mx, 140, 490, 80, color="#059669", width=ref_w, marker="arrG"))
+    parts.append(_label(400, 96, "Reflected ray", size=10, color="#059669"))
     if hl == "incidence_point":
-        parts.append('<circle cx="240" cy="130" r="6" fill="#6366f1"/>')
-        parts.append(_label(240, 148, "Point of incidence", size=10, color="#6366f1", bold=True))
-    return _svg_wrap(parts, title="Reflection at a plane mirror")
+        parts.append(f'<circle cx="{mx}" cy="140" r="6" fill="#6366f1"/>')
+        parts.append(_label(mx, 162, "Point of incidence", size=10, color="#6366f1", bold=True))
+    if hl == "surface":
+        parts.append(_label(mx + 36, 60, "Reflecting surface", size=10, color="#6366f1", bold=True, anchor="start"))
+    if hl == "same_plane" or mode == "3d_hint":
+        parts.append(_label(280, 268, "Incident ray, reflected ray and normal lie in one plane", size=11, color="#334155", bold=True))
+    return _svg_wrap(parts, w=560, h=300, title="Reflection at a plane mirror")
 
 
 def svg_normal_angle(cfg: dict) -> str:
     hl = cfg.get("highlight", "")
+    mx = 280
     parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"))]
-    parts.append('<line x1="240" y1="30" x2="240" y2="250" stroke="#94a3b8" stroke-width="5"/>')
+    parts.extend(_hatched_plane_mirror(mx, 36, 230))
     n_stroke = "#6366f1" if hl == "normal" else "#64748b"
-    n_w = 2.5 if hl == "normal" else 1.5
-    parts.append(_arrow(240, 200, 240, 45, color=n_stroke, width=n_w, dash="6,4"))
-    parts.append(_label(255, 120, "Normal (90° to mirror)", size=10, color=n_stroke))
-    parts.append(_arrow(50, 200, 240, 130, color="#2563eb", width=3 if hl == "angle_i" else 2.5))
-    parts.append(_arrow(240, 130, 430, 60, color="#059669", width=3 if hl == "angle_r" else 2.5, marker="arrG"))
-    parts.append('<path d="M240,130 L240,100 A30,30 0 0,0 215,112" fill="none" stroke="#2563eb" stroke-width="2"/>')
-    parts.append('<path d="M240,130 L240,100 A30,30 0 0,1 265,112" fill="none" stroke="#059669" stroke-width="2"/>')
-    parts.append(_label(225, 108, "i", color="#2563eb", bold=True))
-    parts.append(_label(252, 108, "r", color="#059669", bold=True))
+    n_w = 2.6 if hl == "normal" else 1.5
+    parts.append(_arrow(mx, 210, mx, 48, color=n_stroke, width=n_w, dash="6,4"))
+    parts.append(_label(mx + 14, 120, "Normal (90° to mirror)", size=10, color=n_stroke, anchor="start"))
+    parts.append(_arrow(60, 210, mx, 140, color="#2563eb", width=3.2 if hl == "angle_i" else 2.2))
+    parts.append(_arrow(mx, 140, 500, 70, color="#059669", width=3.2 if hl == "angle_r" else 2.2, marker="arrG"))
+    parts.append(f'<path d="M{mx},140 L{mx},108 A32,32 0 0,0 252,124" fill="none" stroke="#2563eb" stroke-width="2"/>')
+    parts.append(f'<path d="M{mx},140 L{mx},108 A32,32 0 0,1 308,124" fill="none" stroke="#059669" stroke-width="2"/>')
+    parts.append(_label(258, 118, "i", color="#2563eb", bold=True))
+    parts.append(_label(298, 118, "r", color="#059669", bold=True))
     if cfg.get("show_labels") or hl == "equal_angles":
-        parts.append(_label(240, 230, "Angle of incidence = Angle of reflection", bold=True, color="#334155", size=11))
-    return _svg_wrap(parts, title="Measure angles from the normal")
+        parts.append(_label(280, 260, "Angle of incidence i = angle of reflection r", bold=True, color="#334155", size=11))
+    return _svg_wrap(parts, w=560, h=290, title="Measure angles from the normal")
 
 
 def svg_spherical_mirror_labels(cfg: dict) -> str:
     mtype = cfg.get("mirror_type", "concave")
     hl = cfg.get("highlight", "")
+    concave = str(mtype) != "convex"
     if cfg.get("mode") == "compare":
-        parts = [
-            '<path d="M60,170 Q120,50 180,170" fill="none" stroke="#64748b" stroke-width="4"/>',
-            _label(120, 195, "Concave (inward)", bold=True, size=11),
-            '<path d="M280,170 Q340,50 400,170" fill="none" stroke="#64748b" stroke-width="4"/>',
-            _label(340, 195, "Convex (outward)", bold=True, size=11),
-            _label(120, 155, "reflecting side faces center", size=9, color="#64748b"),
-        ]
-        return _svg_wrap(parts, h=240, title="Compare mirror types")
-    if mtype == "convex":
-        arc = '<path d="M100,200 Q240,40 380,200" fill="none" stroke="#64748b" stroke-width="5"/>'
-        axis_y, p_y, f_x, c_x = 200, 188, 160, 80
-    else:
-        arc = '<path d="M100,60 Q240,220 380,60" fill="none" stroke="#64748b" stroke-width="5"/>'
-        axis_y, p_y, f_x, c_x = 60, 72, 320, 400
-    parts = [arc, f'<line x1="40" y1="{axis_y}" x2="440" y2="{axis_y}" stroke="#cbd5e1" stroke-width="1.5"/>']
-    labels = {"P": (240, p_y), "F": (f_x, axis_y), "C": (c_x, axis_y)}
-    for key, (x, y) in labels.items():
-        hi = hl == key or (hl == "principal_axis" and key == "P")
-        r = 6 if hi else 4
-        stroke = ' stroke="#6366f1" stroke-width="2"' if hi else ""
-        parts.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="#1e293b"{stroke}/>')
-        parts.append(_label(x + 10, y + 4, key, anchor="start", bold=hi))
+        parts = [_defs()]
+        parts.append(_label(120, 210, "Concave (inward)", bold=True, size=11))
+        parts.append(_label(400, 210, "Convex (outward)", bold=True, size=11))
+        # Two compact side-view sketches sharing the NCERT orientation.
+        parts.append('<polyline points="80,70 100,90 110,120 100,150 80,170" fill="none" stroke="#334155" stroke-width="3"/>')
+        for y1, y2 in ((74, 64), (90, 82), (120, 120), (150, 158), (166, 176)):
+            parts.append(f'<line x1="100" y1="{y1}" x2="112" y2="{y2}" stroke="#64748b" stroke-width="1.2"/>')
+        parts.append('<line x1="30" y1="120" x2="200" y2="120" stroke="#94a3b8"/>')
+        parts.append(_label(110, 136, "P", size=10, bold=True))
+        parts.append(_label(80, 136, "F", size=10, bold=True))
+        parts.append(_label(50, 136, "C", size=10, bold=True))
+        parts.append('<polyline points="400,70 380,90 370,120 380,150 400,170" fill="none" stroke="#334155" stroke-width="3"/>')
+        for y1, y2 in ((74, 64), (90, 82), (120, 120), (150, 158), (166, 176)):
+            parts.append(f'<line x1="380" y1="{y1}" x2="392" y2="{y2}" stroke="#64748b" stroke-width="1.2"/>')
+        parts.append('<line x1="280" y1="120" x2="450" y2="120" stroke="#94a3b8"/>')
+        parts.append(_label(370, 136, "P", size=10, bold=True))
+        parts.append(_label(400, 136, "F", size=10, bold=True))
+        parts.append(_label(430, 136, "C", size=10, bold=True))
+        parts.append(_label(240, 230, "Side view — same as the NCERT ray diagrams", size=10, color="#64748b"))
+        return _svg_wrap(parts, h=260, title="Compare mirror types")
+    g = _ncert_axis_geom(concave=concave)
+    parts = _ncert_mirror_arc(g, concave=concave)
+    ay, px, fx, cx = g["ay"], g["px"], g["fx"], g["cx"]
     if hl == "principal_axis":
-        parts[1] = f'<line x1="40" y1="{axis_y}" x2="440" y2="{axis_y}" stroke="#6366f1" stroke-width="2.5"/>'
-    parts.append(_label(240, axis_y + 22, "Principal axis", size=10, color="#64748b"))
-    title = "Concave mirror" if mtype == "concave" else "Convex mirror"
-    return _svg_wrap(parts, title=title)
+        parts.append(f'<line x1="28" y1="{ay:.1f}" x2="548" y2="{ay:.1f}" stroke="#6366f1" stroke-width="2.6"/>')
+        parts.append(_label(90, 70, "Principal axis", size=12, color="#6366f1", bold=True))
+    if hl in ("P", "F", "C"):
+        x = {"P": px, "F": fx, "C": cx}[hl]
+        parts.append(f'<circle cx="{x:.1f}" cy="{ay:.1f}" r="7" fill="none" stroke="#6366f1" stroke-width="2"/>')
+        names = {"P": "Pole P — midpoint of the mirror", "F": "Principal focus F", "C": "Centre of curvature C"}
+        parts.append(_label(150, 52, names[hl], size=12, color="#6366f1", bold=True))
+    if hl in ("R",) or cfg.get("show_R_segment"):
+        parts.append(f'<line x1="{cx:.1f}" y1="{ay + 28:.1f}" x2="{px:.1f}" y2="{ay + 28:.1f}" stroke="#6366f1" stroke-width="2"/>')
+        parts.append(_label((cx + px) / 2, ay + 46, "R = 2f", size=12, color="#6366f1", bold=True))
+    if hl == "aperture":
+        parts.append(f'<line x1="368" y1="48" x2="368" y2="288" stroke="#6366f1" stroke-width="1.6" stroke-dasharray="4,3"/>')
+        parts.append(_label(150, 52, "Aperture = opening MN", size=12, color="#6366f1", bold=True))
+    if hl in ("reflecting_side", "reflecting_inward", "curved_surface"):
+        parts.append(_label(150, 52, "Inner face is the reflecting surface", size=12, color="#6366f1", bold=True))
+    if hl == "reflecting_outward":
+        parts.append(_label(200, 52, "Outer bulge is the reflecting surface", size=12, color="#6366f1", bold=True))
+    parts.append(_label(280, 326, "Principal axis · P pole · F focus · C centre  (R = 2f)", size=11, color="#334155"))
+    title = "Concave mirror" if concave else "Convex mirror"
+    return _svg_wrap(parts, w=560, h=340, title=title)
 
 
 def svg_mirror_focus_ray(cfg: dict) -> str:
     mtype = cfg.get("mirror_type", "concave")
     hl = cfg.get("highlight", "")
-    if mtype == "convex":
-        arc = '<path d="M100,210 Q240,50 380,210" fill="none" stroke="#64748b" stroke-width="5"/>'
-        ay, fx = 210, 150
+    concave = str(mtype) != "convex"
+    g = _ncert_axis_geom(concave=concave)
+    ay, px, fx, cx, r = g["ay"], g["px"], g["fx"], g["cx"], g["R"]
+    side = int(g["side"])
+    parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"))]
+    parts.extend(_ncert_mirror_arc(g, concave=concave))
+    for yoff in (-28, 28):
+        y = ay + yoff
+        hx = _circ_x_at_y(cx, ay, r, y, side=side)
+        if hx is None:
+            continue
+        parts.append(_clipped_ray(40, y, hx, y, color="#2563eb"))
+        if concave:
+            parts.append(_clipped_ray(hx, y, fx, ay, color="#059669", marker="arrG"))
+        else:
+            left = _extend_to_x(hx, y, hx - 50, y - 1.2 * yoff, 36)
+            parts.append(_clipped_ray(hx, y, left[0], left[1], color="#059669", marker="arrG"))
+            parts.append(_arrow(hx, y, fx, ay, color="#2563eb", dash="5,4", marker=""))
+    notes = {
+        "F": "F is the principal focus",
+        "f_segment": "Focal length f = PF",
+        "real_focus": "Concave: rays actually meet at F (real focus)",
+        "virtual_focus": "Convex: rays only appear to come from F (virtual focus)",
+        "converging": "Concave mirror is converging",
+        "diverging": "Convex mirror is diverging",
+        "parallel_incident": "Incident rays are parallel to the principal axis",
+        "reflected": "After reflection the rays follow the focus rule",
+        "R_2f": "Radius R = PC = 2f",
+        "P_F_C": "F lies midway between P and C",
+    }
+    if hl in notes:
+        parts.append(_label(200, 52, notes[hl], size=12, color="#6366f1", bold=True))
+    elif concave:
+        parts.append(_label(200, 70, "Parallel rays meet at F", size=11, color="#059669", bold=True))
     else:
-        arc = '<path d="M100,50 Q240,210 380,50" fill="none" stroke="#64748b" stroke-width="5"/>'
-        ay, fx = 50, 330
-    parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669")), arc]
-    parts.append(f'<line x1="40" y1="{ay}" x2="440" y2="{ay}" stroke="#cbd5e1" stroke-width="1.5"/>')
-    parts.append(_arrow(40, ay, 240, ay, color="#2563eb"))
-    parts.append(_label(130, ay - 12, "Parallel incident rays", size=10, color="#2563eb"))
-    if mtype == "concave":
-        parts.append(_arrow(240, ay, fx, ay, color="#059669", marker="arrG"))
-        parts.append(_label(285, ay - 12, "Meet at F (real focus)", size=10, color="#059669"))
+        parts.append(_label(280, 70, "Rays diverge — appear to come from F", size=11, color="#059669", bold=True))
+    if hl in ("R_2f", "P_F_C", "f_segment") or cfg.get("show_segments"):
+        parts.append(f'<line x1="{min(px, cx):.1f}" y1="{ay + 30:.1f}" x2="{max(px, cx):.1f}" y2="{ay + 30:.1f}" stroke="#6366f1" stroke-width="1.8"/>')
+        parts.append(_label((px + cx) / 2, ay + 48, "R = 2f", size=12, color="#334155", bold=True))
+    if cfg.get("mode") == "both":
+        parts.append(_label(280, 326, "Concave meets at F · convex appears to come from F", size=11, color="#334155"))
+    return _svg_wrap(parts, w=560, h=340, title="Focus and parallel rays")
+
+
+def _ncert_axis_geom(*, concave: bool = True) -> dict[str, float]:
+    """NCERT Fig 9.7 layout: object on the left, mirror on the right, R = 2f."""
+    ay = 168.0
+    f = 78.0
+    if concave:
+        px = 428.0
+        cx = px - 2 * f
+        fx = px - f
+        side = "right"
     else:
-        parts.append(_arrow(240, ay, 380, ay - 50, color="#059669", marker="arrG"))
-        parts.append(_label(310, ay - 55, "Diverge — appear from F", size=10, color="#059669"))
-    parts.append(f'<circle cx="{fx}" cy="{ay}" r="5" fill="#6366f1"/>')
-    parts.append(_label(fx, ay + 18, "F", bold=True))
-    parts.append(f'<circle cx="240" cy="{ay}" r="4" fill="#1e293b"/>')
-    parts.append(_label(240, ay + 18, "P"))
-    if hl in ("R_2f", "P_F_C"):
-        cx = 400 if mtype == "concave" else 80
-        parts.append(f'<circle cx="{cx}" cy="{ay}" r="4" fill="#1e293b"/>')
-        parts.append(_label(cx, ay + 18, "C"))
-        parts.append(f'<line x1="240" y1="{ay+28}" x2="{cx}" y2="{ay+28}" stroke="#94a3b8"/>')
-        parts.append(_label((240 + cx) / 2, ay + 42, "R = 2f", color="#64748b"))
-    return _svg_wrap(parts, title="Focus and parallel rays")
+        px = 148.0
+        cx = px + 2 * f
+        fx = px + f
+        side = "left"
+    return {"ay": ay, "f": f, "px": px, "cx": cx, "fx": fx, "R": 2 * f, "side": 1 if side == "right" else -1}
+
+
+def _circ_x_at_y(cx: float, ay: float, r: float, y: float, *, side: int) -> float | None:
+    dy = y - ay
+    disc = r * r - dy * dy
+    if disc < 1:
+        return None
+    return cx + side * math.sqrt(disc)
+
+
+def _intersect_lines(
+    x1: float, y1: float, x2: float, y2: float, x3: float, y3: float, x4: float, y4: float
+) -> tuple[float, float] | None:
+    den = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4)
+    if abs(den) < 1e-8:
+        return None
+    px = ((x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)) / den
+    py = ((x1 * y2 - y1 * x2) * (y3 - y4) - (y1 - y2) * (x3 * y4 - y3 * x4)) / den
+    return px, py
+
+
+def _line_circle_hit(
+    x1: float, y1: float, x2: float, y2: float, cx: float, ay: float, r: float, *, min_t: float = 1.02
+) -> tuple[float, float] | None:
+    dx, dy = x2 - x1, y2 - y1
+    fx, fy = x1 - cx, y1 - ay
+    a = dx * dx + dy * dy
+    if a < 1e-9:
+        return None
+    b = 2 * (fx * dx + fy * dy)
+    c = fx * fx + fy * fy - r * r
+    disc = b * b - 4 * a * c
+    if disc < 0:
+        return None
+    root = math.sqrt(disc)
+    hits = [(-b + root) / (2 * a), (-b - root) / (2 * a)]
+    ts = [t for t in hits if t >= min_t]
+    if not ts:
+        return None
+    t = min(ts)
+    return x1 + t * dx, y1 + t * dy
+
+
+def _line_circle_first_hit(
+    x1: float, y1: float, x2: float, y2: float, cx: float, ay: float, r: float, *, min_t: float = 0.02
+) -> tuple[float, float] | None:
+    """Nearest intersection in the forward direction — the reflecting surface."""
+    return _line_circle_hit(x1, y1, x2, y2, cx, ay, r, min_t=min_t)
+
+
+def _extend_to_x(x1: float, y1: float, x2: float, y2: float, x: float) -> tuple[float, float]:
+    dx = x2 - x1
+    if abs(dx) < 1e-8:
+        return x1, y1
+    t = (x - x1) / dx
+    return x, y1 + t * (y2 - y1)
+
+
+def _clamp_seg(x1: float, y1: float, x2: float, y2: float, *, x_lo: float = 24, x_hi: float = 536, y_lo: float = 36, y_hi: float = 308) -> tuple[float, float, float, float]:
+    """Clip a segment so both ends stay inside the diagram frame."""
+    dx, dy = x2 - x1, y2 - y1
+    if abs(dx) < 1e-9 and abs(dy) < 1e-9:
+        return x1, y1, x2, y2
+    t0, t1 = 0.0, 1.0
+    for p, q, lo, hi in ((dx, x1, x_lo, x_hi), (dy, y1, y_lo, y_hi)):
+        if abs(p) < 1e-9:
+            if q < lo or q > hi:
+                return x1, y1, x1, y1
+            continue
+        t_enter = (lo - q) / p
+        t_leave = (hi - q) / p
+        if t_enter > t_leave:
+            t_enter, t_leave = t_leave, t_enter
+        t0 = max(t0, t_enter)
+        t1 = min(t1, t_leave)
+    if t1 < t0:
+        return x1, y1, x1, y1
+    return x1 + t0 * dx, y1 + t0 * dy, x1 + t1 * dx, y1 + t1 * dy
+
+
+def _ray_line(
+    x1: float, y1: float, x2: float, y2: float, *, color: str = "#2563eb", width: float = 1.8, dash: str = "", marker: str = "arr"
+) -> str:
+    return _arrow(x1, y1, x2, y2, color=color, width=width, dash=dash, marker=marker)
+
+
+def _axis_arrow(
+    x: float,
+    y0: float,
+    y1: float,
+    *,
+    color: str,
+    dash: str = "",
+    tip_label: str = "",
+    base_label: str = "",
+    label: str = "",
+) -> list[str]:
+    parts = [
+        f'<line x1="{x:.1f}" y1="{y0:.1f}" x2="{x:.1f}" y2="{y1:.1f}" '
+        f'stroke="{color}" stroke-width="2.4"{" stroke-dasharray=\"" + dash + "\"" if dash else ""}/>'
+    ]
+    tip = -1 if y1 < y0 else 1
+    parts.append(
+        f'<polygon points="{x-5:.1f},{y1 + 10 * tip:.1f} {x:.1f},{y1:.1f} {x+5:.1f},{y1 + 10 * tip:.1f}" fill="{color}"/>'
+    )
+    if tip_label:
+        parts.append(_label(x - 10, y1 + (4 if y1 < y0 else 16), tip_label, size=11, color=color, bold=True, anchor="end"))
+    if base_label:
+        parts.append(_label(x - 10, y0 + 20, base_label, size=11, color=color, bold=True, anchor="end"))
+    if label and not tip_label:
+        parts.append(_label(x + 12, min(y0, y1) - 4 if y1 < y0 else max(y0, y1) + 14, label, size=11, color=color, bold=True, anchor="start"))
+    return parts
+
+
+def _clipped_ray(x1: float, y1: float, x2: float, y2: float, **kwargs) -> str:
+    cx1, cy1, cx2, cy2 = _clamp_seg(x1, y1, x2, y2)
+    return _arrow(cx1, cy1, cx2, cy2, **kwargs)
+
+
+def _ncert_mirror_arc(g: dict, *, concave: bool) -> list[str]:
+    cx, ay, r, px = g["cx"], g["ay"], g["R"], g["px"]
+    span = 52 if concave else 52
+    pts = []
+    for deg in range(-span, span + 1, 2):
+        rad = math.radians(deg)
+        # Concave: P is the rightmost point of the circle (opens left). Convex: leftmost (bulges left).
+        if concave:
+            x = cx + r * math.cos(rad)
+            y = ay + r * math.sin(rad)
+        else:
+            x = cx - r * math.cos(rad)
+            y = ay + r * math.sin(rad)
+        pts.append(f"{x:.1f},{y:.1f}")
+    parts = [f'<polyline points="{" ".join(pts)}" fill="none" stroke="#334155" stroke-width="3.2"/>']
+    # Hatch marks on the non-reflecting side (NCERT style).
+    for deg in range(-span + 4, span, 8):
+        rad = math.radians(deg)
+        if concave:
+            x = cx + r * math.cos(rad)
+            y = ay + r * math.sin(rad)
+            hx, hy = x + 9 * math.cos(rad), y + 9 * math.sin(rad)
+        else:
+            x = cx - r * math.cos(rad)
+            y = ay + r * math.sin(rad)
+            # Non-reflecting side is behind the bulge (to the right of P).
+            hx, hy = x + 9 * math.cos(rad), y + 9 * math.sin(rad)
+        parts.append(f'<line x1="{x:.1f}" y1="{y:.1f}" x2="{hx:.1f}" y2="{hy:.1f}" stroke="#64748b" stroke-width="1.4"/>')
+    top = pts[0].split(",")
+    bot = pts[-1].split(",")
+    parts.append(_label(float(top[0]), float(top[1]) - 8, "M", size=11, bold=True))
+    parts.append(_label(float(bot[0]), float(bot[1]) + 16, "N", size=11, bold=True))
+    parts.append(f'<line x1="28" y1="{ay:.1f}" x2="548" y2="{ay:.1f}" stroke="#94a3b8" stroke-width="1.4"/>')
+    for name, x, dy in (("C", g["cx"], 16), ("F", g["fx"], 16), ("P", px, 16)):
+        parts.append(f'<circle cx="{x:.1f}" cy="{ay:.1f}" r="3.4" fill="#1e293b"/>')
+        parts.append(_label(x, ay + dy, name, size=12, bold=True))
+    return parts
+
+
+def _normalize_mirror_position(raw: str) -> str:
+    key = str(raw or "beyond_c").strip().lower().replace(" ", "_")
+    aliases = {
+        "beyond_c": "beyond_C",
+        "at_c": "at_C",
+        "between_c_f": "between_C_F",
+        "at_f": "at_F",
+        "between_f_p": "between_F_P",
+        "between_p_f": "between_F_P",
+        "infinity": "infinity",
+    }
+    return aliases.get(key, raw if raw in aliases.values() else aliases.get(key, "beyond_C"))
+
+
+def _svg_table_9_1() -> str:
+    """NCERT Table 9.1 — image formation by a concave mirror."""
+    rows = [
+        ("Object", "Image", "Size", "Nature"),
+        ("At infinity", "At F", "Point-sized", "Real, inverted"),
+        ("Beyond C", "Between F and C", "Diminished", "Real, inverted"),
+        ("At C", "At C", "Same size", "Real, inverted"),
+        ("Between C and F", "Beyond C", "Enlarged", "Real, inverted"),
+        ("At F", "At infinity", "Highly enlarged", "Real, inverted"),
+        ("Between F and P", "Behind mirror", "Enlarged", "Virtual, erect"),
+    ]
+    parts = ['<rect x="24" y="40" width="512" height="268" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>']
+    y = 68
+    for i, cols in enumerate(rows):
+        weight = True if i == 0 else False
+        color = "#0f172a" if i == 0 else "#334155"
+        xs = (70, 200, 340, 460)
+        if i == 0:
+            parts.append(f'<rect x="24" y="40" width="512" height="36" fill="#e2e8f0"/>')
+        for x, text in zip(xs, cols):
+            parts.append(_label(x, y, text, size=11, color=color, bold=weight))
+        y += 34
+    parts.append(_label(280, 326, "NCERT Table 9.1 — move the object from infinity toward P", size=11, color="#334155"))
+    return _svg_wrap(parts, w=560, h=340, title="Image formation by a concave mirror")
+
+
+def _mirror_formula(px: float, ox: float, f_signed: float) -> tuple[float | None, float]:
+    """NCERT signs: u is negative on the object side. Returns (v, m) or (None, 0) at infinity."""
+    u = -(px - ox)
+    if abs(u) < 1e-6:
+        return None, 0.0
+    inv_v = (1 / f_signed) - (1 / u)
+    if abs(inv_v) < 1e-5:
+        return None, 0.0
+    v = 1 / inv_v
+    return v, -v / u
 
 
 def svg_concave_image(cfg: dict) -> str:
-    """Concave/convex mirror with object and image positions."""
-    position = cfg.get("position") or cfg.get("case", "beyond_c")
-    mtype = cfg.get("mirror_type", "concave")
-    ay = 50
-    parts = [_defs(("arr", "#2563eb"), ("arrR", "#dc2626"))]
-    if mtype == "convex":
-        parts.append('<path d="M100,50 Q240,210 380,50" fill="none" stroke="#64748b" stroke-width="5"/>')
-    else:
-        parts.append('<path d="M100,50 Q240,210 380,50" fill="none" stroke="#64748b" stroke-width="5"/>')
-    parts.append(f'<line x1="40" y1="{ay}" x2="440" y2="{ay}" stroke="#cbd5e1" stroke-width="1.5"/>')
-    obj_x = {
-        "infinity": 30,
-        "beyond_C": 360,
-        "beyond_c": 360,
-        "at_C": 400,
-        "at_c": 400,
-        "between_C_F": 320,
-        "between_c_f": 320,
-        "at_F": 280,
-        "at_f": 280,
-        "between_F_P": 260,
-        "between_f_p": 260,
+    """NCERT Fig 9.7 / 9.8 ray diagram for one object position."""
+    mtype = str(cfg.get("mirror_type", "concave")).lower()
+    concave = mtype != "convex"
+    highlight = str(cfg.get("highlight") or "")
+    mode = str(cfg.get("mode") or "")
+    if mode == "sequence":
+        return _svg_table_9_1()
+    default_pos = "between_F_P" if highlight in ("virtual", "erect", "behind") else "between_C_F"
+    position = _normalize_mirror_position(str(cfg.get("position") or cfg.get("case") or default_pos))
+    g = _ncert_axis_geom(concave=concave)
+    ay, px, cx, fx, r = g["ay"], g["px"], g["cx"], g["fx"], g["R"]
+    side = int(g["side"])
+    h_obj = 46.0
+    ay_tip = ay - h_obj
+
+    captions = {
+        "infinity": "Object at infinity: image at F (highly diminished, real)",
+        "beyond_C": "Object beyond C: image between F and C (diminished, real, inverted)",
+        "at_C": "Object at C: image at C (same size, real, inverted)",
+        "between_C_F": "Object between C and F: image beyond C (enlarged, real, inverted)",
+        "at_F": "Object at F: reflected rays are parallel (image at infinity)",
+        "between_F_P": "Object between F and P: virtual, erect, enlarged image behind the mirror",
     }
-    ox = obj_x.get(position, 360)
-    if position != "infinity":
-        parts.append(f'<line x1="{ox}" y1="{ay}" x2="{ox}" y2="{ay-55}" stroke="#2563eb" stroke-width="3"/>')
-        parts.append(_arrow(ox, ay - 55, ox, ay - 25, color="#2563eb"))
-        parts.append(_label(ox, ay - 65, "Object", size=10, color="#2563eb"))
+    convex_caption = "Convex mirror: virtual, erect, diminished image behind the mirror"
+
+    parts = [_defs(("arr", "#2563eb"), ("arrR", "#dc2626"), ("arrG", "#059669"))]
+    parts.extend(_ncert_mirror_arc(g, concave=concave))
+
+    if not concave:
+        ox = 70.0
+        v, m = _mirror_formula(px, ox, abs(g["f"]))
+        ix = px + (v or 40.0)
+        ih = h_obj * m
+        h1x = _circ_x_at_y(cx, ay, r, ay_tip, side=side) or px
+        parts.extend(_axis_arrow(ox, ay, ay_tip, color="#1d4ed8", tip_label="A", base_label="B"))
+        parts.append(_clipped_ray(ox, ay_tip, h1x, ay_tip, color="#2563eb"))
+        left = _extend_to_x(h1x, ay_tip, h1x - 40, ay_tip - 28, 36)
+        parts.append(_clipped_ray(h1x, ay_tip, left[0], left[1], color="#2563eb"))
+        parts.append(_arrow(h1x, ay_tip, fx, ay, color="#2563eb", dash="5,4", marker=""))
+        hit_c = _line_circle_first_hit(ox, ay_tip, cx, ay, cx, ay, r)
+        if hit_c:
+            parts.append(_clipped_ray(ox, ay_tip, hit_c[0], hit_c[1], color="#0f766e"))
+            back = _extend_to_x(hit_c[0], hit_c[1], ox, ay_tip, 36)
+            parts.append(_clipped_ray(hit_c[0], hit_c[1], back[0], back[1], color="#0f766e"))
+            parts.append(_arrow(hit_c[0], hit_c[1], cx, ay, color="#0f766e", dash="5,4", marker=""))
+        parts.extend(_axis_arrow(ix, ay, ay - ih, color="#dc2626", dash="4,3", tip_label="A′", base_label="B′"))
+        extra = {
+            "behind": "Image always lies behind the mirror",
+            "erect": "Image is always erect",
+            "diminished": "Image is always diminished",
+            "wide_view": "Wide field of view — more of the scene fits in",
+            "object_move": "Move the object: nature stays virtual, erect, diminished",
+        }.get(highlight or mode, "")
+        if extra:
+            parts.append(_label(200, 52, extra, size=12, color="#6366f1", bold=True))
+        parts.append(_label(280, 326, convex_caption, size=11, color="#334155"))
+        return _svg_wrap(parts, w=560, h=340, title="Image formation by a convex mirror")
+
+    obj_x = {
+        "infinity": None,
+        "beyond_C": cx - 88,
+        "at_C": cx,
+        "between_C_F": (cx + fx) / 2,
+        "at_F": fx,
+        "between_F_P": (fx + px) / 2,
+    }
+    ox = obj_x.get(position)
+
+    if position == "infinity" or ox is None:
+        for yoff in (-36, -18, 18, 36):
+            y = ay + yoff
+            hx = _circ_x_at_y(cx, ay, r, y, side=side)
+            if hx is None:
+                continue
+            parts.append(_clipped_ray(36, y, hx, y, color="#2563eb"))
+            parts.append(_clipped_ray(hx, y, fx, ay, color="#2563eb"))
+        parts.append(f'<circle cx="{fx:.1f}" cy="{ay:.1f}" r="5" fill="#dc2626"/>')
+        parts.append(_label(fx, ay - 14, "A′B′ at F", size=10, color="#dc2626", bold=True))
+        parts.append(_label(280, 326, captions["infinity"], size=11, color="#334155"))
+        return _svg_wrap(parts, w=560, h=340, title="Image formation by a concave mirror")
+
+    parts.extend(_axis_arrow(ox, ay, ay_tip, color="#1d4ed8", tip_label="A", base_label="B"))
+    h1x = _circ_x_at_y(cx, ay, r, ay_tip, side=side)
+
+    if position == "at_F":
+        # Fig 9.7(e): reflected rays do not meet. Parallel incident + ray along C–A.
+        if h1x is not None:
+            parts.append(_clipped_ray(ox, ay_tip, h1x, ay_tip, color="#2563eb"))
+            through_f = _extend_to_x(h1x, ay_tip, fx, ay, 36)
+            parts.append(_clipped_ray(h1x, ay_tip, through_f[0], through_f[1], color="#2563eb"))
+        hit_c = _line_circle_hit(cx, ay, ox, ay_tip, cx, ay, r, min_t=1.02)
+        if hit_c:
+            parts.append(_clipped_ray(ox, ay_tip, hit_c[0], hit_c[1], color="#0f766e"))
+            back = _extend_to_x(hit_c[0], hit_c[1], cx, ay, 36)
+            parts.append(_clipped_ray(hit_c[0], hit_c[1], back[0], back[1], color="#0f766e"))
+        parts.append(_label(118, 70, "Reflected rays are parallel", size=11, color="#dc2626", bold=True))
+        parts.append(_label(118, 88, "Image at infinity", size=11, color="#dc2626"))
+    elif position == "between_F_P":
+        # Fig 9.7(f): through-F misses the mirror, so use pole (i = r) as the second ray.
+        v, m = _mirror_formula(px, ox, -g["f"])
+        ix = px + (v or 70.0)
+        ih = h_obj * m
+        if h1x is not None:
+            parts.append(_clipped_ray(ox, ay_tip, h1x, ay_tip, color="#2563eb"))
+            through_f = _extend_to_x(h1x, ay_tip, fx, ay, 36)
+            parts.append(_clipped_ray(h1x, ay_tip, through_f[0], through_f[1], color="#2563eb"))
+            parts.append(_arrow(h1x, ay_tip, ix, ay - ih, color="#dc2626", dash="5,4", marker=""))
+        parts.append(_clipped_ray(ox, ay_tip, px, ay, color="#0f766e"))
+        # Reflection at P: equal angles with the axis (normal).
+        inc_x, inc_y = px - ox, ay - ay_tip
+        ref = _extend_to_x(px, ay, px - inc_x, ay + inc_y, 36)
+        parts.append(_clipped_ray(px, ay, ref[0], ref[1], color="#0f766e"))
+        parts.append(_arrow(px, ay, ix, ay - ih, color="#dc2626", dash="5,4", marker=""))
+        parts.extend(_axis_arrow(ix, ay, ay - ih, color="#dc2626", dash="4,3", tip_label="A′", base_label="B′"))
+        parts.append(_label(min(ix, 500), ay + 32, "behind the mirror", size=10, color="#dc2626"))
     else:
-        parts.append(_arrow(60, ay - 30, 200, ay - 30, color="#2563eb"))
-        parts.append(_arrow(60, ay - 10, 200, ay - 10, color="#2563eb"))
-        parts.append(_label(100, ay - 45, "Parallel rays (object at ∞)", size=10, color="#2563eb"))
-    if position in ("beyond_C", "beyond_c", "at_C", "at_c", "between_C_F", "between_c_f"):
-        ix = 120 if position in ("beyond_C", "beyond_c") else 400
-        ih = 25 if position in ("beyond_C", "beyond_c") else 55
-        parts.append(f'<line x1="{ix}" y1="{ay}" x2="{ix}" y2="{ay-ih}" stroke="#dc2626" stroke-width="3" stroke-dasharray="4,3"/>')
-        parts.append(_label(ix, ay + 18, "Real image", size=10, color="#dc2626"))
-    elif position in ("between_F_P", "between_f_p") or mtype == "convex":
-        parts.append(_label(100, ay - 30, "Virtual image behind mirror", size=10, color="#dc2626"))
-    elif position in ("at_F", "at_f"):
-        parts.append(_label(120, ay - 50, "Image at infinity", size=10, color="#dc2626"))
-    fx = 280 if mtype == "concave" else 200
-    parts.append(f'<circle cx="{fx}" cy="{ay}" r="4" fill="#6366f1"/>')
-    parts.append(_label(fx, ay + 18, "F"))
-    if mtype == "concave":
-        parts.append(f'<circle cx="400" cy="{ay}" r="4" fill="#1e293b"/>')
-        parts.append(_label(400, ay + 18, "C"))
-    label = cfg.get("label") or cfg.get("mode") or position.replace("_", " ")
-    parts.append(_label(240, 195, str(label).title(), size=11, color="#64748b"))
-    return _svg_wrap(parts, title="Mirror image")
+        # Fig 9.7(b–d): parallel → through F, and through F → parallel.
+        hit_f = _line_circle_hit(ox, ay_tip, fx, ay, cx, ay, r, min_t=1.01)
+        meet: tuple[float, float] | None = None
+        if h1x is not None and hit_f is not None:
+            meet = _intersect_lines(h1x, ay_tip, fx, ay, hit_f[0], hit_f[1], 36, hit_f[1])
+        if position == "at_C":
+            meet = (cx, ay + h_obj)
+        if h1x is not None:
+            parts.append(_clipped_ray(ox, ay_tip, h1x, ay_tip, color="#2563eb"))
+            dest = meet if meet else (fx, ay)
+            parts.append(_clipped_ray(h1x, ay_tip, dest[0], dest[1], color="#2563eb"))
+        if hit_f:
+            parts.append(_clipped_ray(ox, ay_tip, hit_f[0], hit_f[1], color="#0f766e"))
+            dest = meet if meet else (36, hit_f[1])
+            parts.append(_clipped_ray(hit_f[0], hit_f[1], dest[0], dest[1], color="#0f766e"))
+        if meet and 20 < meet[0] < 540:
+            ix, iy = meet
+        else:
+            v, m = _mirror_formula(px, ox, -g["f"])
+            ix = px + (v or -80.0)
+            iy = ay - h_obj * m
+        dash = "4,3" if highlight in ("real_screen", "screen") else ""
+        parts.extend(_axis_arrow(ix, ay, iy, color="#dc2626", dash=dash, tip_label="A′", base_label="B′"))
+        if highlight in ("real_screen", "screen"):
+            top, bot = min(ay, iy) - 8, max(ay, iy) + 8
+            parts.append(
+                f'<rect x="{ix - 10:.1f}" y="{top:.1f}" width="20" height="{bot - top:.1f}" '
+                f'fill="#fef3c7" stroke="#d97706" stroke-width="1.5" opacity="0.85"/>'
+            )
+            parts.append(_label(ix + 18, top + 8, "screen", size=10, color="#b45309", anchor="start"))
+
+    if highlight in ("inverted", "size_compare", "enlarged", "diminished", "same_size", "image_beyond_C", "virtual", "erect", "behind"):
+        note = {
+            "inverted": "A′B′ is inverted (real image)",
+            "size_compare": "Compare heights of AB and A′B′",
+            "enlarged": "|A′B′| > |AB|  (enlarged)",
+            "diminished": "|A′B′| < |AB|  (diminished)",
+            "same_size": "|A′B′| = |AB|  (same size)",
+            "image_beyond_C": "Image lies beyond C",
+            "virtual": "Virtual image — dotted rays meet behind the mirror",
+            "erect": "A′B′ is erect (same way up as AB)",
+            "behind": "Image is behind the mirror",
+        }.get(highlight, "")
+        if note:
+            parts.append(_label(150, 52, note, size=11, color="#b45309", bold=True))
+
+    cap = captions.get(position, captions["between_C_F"])
+    if cfg.get("label") and str(cfg.get("label")) not in ("sequence", "wide_view", "object_move"):
+        cap = str(cfg["label"])
+    parts.append(_label(280, 326, cap, size=11, color="#334155"))
+    return _svg_wrap(parts, w=560, h=340, title="Image formation by a concave mirror")
+
+
+def _ncert_lens_geom() -> dict[str, float]:
+    """NCERT lens layout: object on the left, lens at centre, F₁ / F₂ marked."""
+    ay, ox, f = 168.0, 280.0, 70.0
+    return {
+        "ay": ay,
+        "ox": ox,
+        "f": f,
+        "F1": ox - f,
+        "F2": ox + f,
+        "twoF1": ox - 2 * f,
+        "twoF2": ox + 2 * f,
+    }
+
+
+def _ncert_lens_shape(lg: dict, *, convex: bool) -> list[str]:
+    ay, o = lg["ay"], lg["ox"]
+    if convex:
+        shape = (
+            f'<path d="M{o:.0f},72 Q{o - 22:.0f},{ay:.0f} {o:.0f},264 '
+            f'Q{o + 22:.0f},{ay:.0f} {o:.0f},72 Z" fill="#e0f2fe" stroke="#334155" stroke-width="2.6"/>'
+        )
+    else:
+        shape = (
+            f'<path d="M{o - 16:.0f},72 Q{o + 10:.0f},{ay:.0f} {o - 16:.0f},264" fill="none" stroke="#334155" stroke-width="2.6"/>'
+            f'<path d="M{o + 16:.0f},72 Q{o - 10:.0f},{ay:.0f} {o + 16:.0f},264" fill="none" stroke="#334155" stroke-width="2.6"/>'
+        )
+    parts = [shape, f'<line x1="28" y1="{ay:.1f}" x2="548" y2="{ay:.1f}" stroke="#94a3b8" stroke-width="1.4"/>']
+    for name, x in (("2F₁", lg["twoF1"]), ("F₁", lg["F1"]), ("O", o), ("F₂", lg["F2"]), ("2F₂", lg["twoF2"])):
+        parts.append(f'<circle cx="{x:.1f}" cy="{ay:.1f}" r="3.2" fill="#1e293b"/>')
+        parts.append(_label(x, ay + 16, name, size=11, bold=True))
+    return parts
 
 
 def svg_mirror_ray_rules(cfg: dict) -> str:
-    """Two-ray rule diagram for mirrors."""
+    """NCERT Fig 9.3–9.6 construction-ray rules."""
     rule = str(cfg.get("rule", "parallel")).lower().replace("_", "")
-    highlight = cfg.get("highlight", "")
-    ay = 50
+    highlight = str(cfg.get("highlight") or "")
+    mode = str(cfg.get("mode") or "")
+    if mode == "applications":
+        parts = [
+            _label(280, 80, "Concave: torches, headlights, dentist / shaving mirrors", size=13, bold=True),
+            _label(280, 120, "Convex: rear-view and shop-security mirrors", size=13, bold=True, color="#0f766e"),
+            _label(280, 170, "Plane: dressing mirrors (same-size virtual image)", size=13, bold=True, color="#334155"),
+            _label(280, 230, "Choose the mirror by the image you need", size=11, color="#64748b"),
+        ]
+        return _svg_wrap(parts, w=560, h=280, title="Uses of mirrors")
+    g = _ncert_axis_geom(concave=True)
+    ay, px, fx, cx, r = g["ay"], g["px"], g["fx"], g["cx"], g["R"]
+    side = int(g["side"])
+    y_tip = ay - 40
+    hx = _circ_x_at_y(cx, ay, r, y_tip, side=side) or px
     parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"))]
-    parts.append('<path d="M100,50 Q240,210 380,50" fill="none" stroke="#64748b" stroke-width="5"/>')
-    parts.append(f'<line x1="40" y1="{ay}" x2="440" y2="{ay}" stroke="#cbd5e1" stroke-width="1.5"/>')
-    ox = 350
-    parts.append(f'<circle cx="280" cy="{ay}" r="4" fill="#6366f1"/>')
-    parts.append(_label(280, ay + 18, "F"))
-    parts.append(f'<circle cx="240" cy="{ay}" r="4" fill="#1e293b"/>')
-    parts.append(_label(240, ay + 18, "P"))
-    if highlight in ("backward", "intersect", "locate", "errors"):
-        parts.append(_arrow(ox, ay - 40, 240, ay - 40, color="#2563eb"))
-        parts.append(_arrow(240, ay - 40, 280, ay, color="#059669", marker="arrG"))
-        cap = {"backward": "Extend reflected rays backward (dotted)", "intersect": "Real image = forward intersection",
-               "locate": "Two rays → image tip", "errors": "Check F, C, and ray rules"}
-        parts.append(_label(260, ay - 55, cap.get(highlight, highlight), size=10))
-    elif rule == "parallel" or rule == "tworays":
-        parts.append(_arrow(ox, ay - 40, 240, ay - 40, color="#2563eb"))
-        parts.append(_arrow(240, ay - 40, 280, ay, color="#059669", marker="arrG"))
-        parts.append(_label(300, ay - 50, "Parallel → through F", size=10))
+    parts.extend(_ncert_mirror_arc(g, concave=True))
+    cap = "Use two standard rays to locate the image"
+    if highlight == "backward" or rule == "backward":
+        parts.append(_clipped_ray(90, y_tip, hx, y_tip, color="#2563eb"))
+        parts.append(_clipped_ray(hx, y_tip, 40, y_tip - 30, color="#059669", marker="arrG"))
+        parts.append(_arrow(hx, y_tip, fx, ay, color="#dc2626", dash="5,4", marker=""))
+        cap = "Virtual image: extend reflected rays backward (dotted)"
+    elif highlight in ("intersect", "locate") or rule == "tworays":
+        hit_f = _line_circle_hit(200, y_tip, fx, ay, cx, ay, r, min_t=1.01)
+        meet = _intersect_lines(hx, y_tip, fx, ay, *(hit_f or (hx, y_tip)), 36, (hit_f or (36, y_tip))[1]) if hit_f else None
+        parts.append(_clipped_ray(200, y_tip, hx, y_tip, color="#2563eb"))
+        dest = meet or (fx, ay)
+        parts.append(_clipped_ray(hx, y_tip, dest[0], dest[1], color="#2563eb"))
+        if hit_f:
+            parts.append(_clipped_ray(200, y_tip, hit_f[0], hit_f[1], color="#0f766e"))
+            parts.append(_clipped_ray(hit_f[0], hit_f[1], dest[0], dest[1], color="#0f766e"))
+        if meet:
+            parts.extend(_axis_arrow(meet[0], ay, meet[1], color="#dc2626", tip_label="A′", base_label="B′"))
+        cap = "Two rays are enough — their intersection is A′"
+    elif highlight == "errors":
+        cap = "Check: angles from the normal, F vs C, and arrow direction"
+        parts.append(_clipped_ray(80, y_tip, hx, y_tip, color="#2563eb"))
+        parts.append(_clipped_ray(hx, y_tip, fx, ay, color="#059669", marker="arrG"))
     elif rule == "throughf":
-        parts.append(_arrow(ox, ay, 280, ay, color="#2563eb"))
-        parts.append(_arrow(280, ay, 240, ay - 50, color="#059669", marker="arrG"))
-        parts.append(_label(300, ay + 25, "Through F → parallel", size=10))
+        hit_f = _line_circle_hit(80, y_tip, fx, ay, cx, ay, r, min_t=1.01)
+        if hit_f:
+            parts.append(_clipped_ray(80, y_tip, hit_f[0], hit_f[1], color="#2563eb"))
+            left = _extend_to_x(hit_f[0], hit_f[1], 36, hit_f[1], 36)
+            parts.append(_clipped_ray(hit_f[0], hit_f[1], left[0], left[1], color="#059669", marker="arrG"))
+        cap = "Through F: reflects parallel to the principal axis"
     elif rule == "throughc":
-        parts.append(f'<circle cx="400" cy="{ay}" r="4" fill="#1e293b"/>')
-        parts.append(_label(400, ay + 18, "C"))
-        parts.append(_arrow(ox, ay, 400, ay, color="#2563eb"))
-        parts.append(_arrow(400, ay, 240, ay - 50, color="#059669", marker="arrG"))
-        parts.append(_label(300, ay + 25, "Through C → retraces", size=10))
+        hit_c = _line_circle_hit(80, y_tip, cx, ay, cx, ay, r, min_t=1.01)
+        if hit_c:
+            parts.append(_clipped_ray(80, y_tip, hit_c[0], hit_c[1], color="#2563eb"))
+            parts.append(_clipped_ray(hit_c[0], hit_c[1], 80, y_tip, color="#059669", marker="arrG"))
+        cap = "Through C: hits along the normal and retraces its path"
+    elif rule == "pole":
+        parts.append(_clipped_ray(90, y_tip, px, ay, color="#2563eb"))
+        inc_x, inc_y = px - 90, ay - y_tip
+        ref = _extend_to_x(px, ay, px - inc_x, ay + inc_y, 36)
+        parts.append(_clipped_ray(px, ay, ref[0], ref[1], color="#059669", marker="arrG"))
+        cap = "At pole P: i = r, measured from the principal axis"
     else:
-        parts.append(_arrow(ox, ay, 240, ay, color="#2563eb"))
-        parts.append(_arrow(240, ay, 200, ay - 40, color="#059669", marker="arrG"))
-        parts.append(_label(280, ay + 25, "At pole → equal angles", size=10))
-    return _svg_wrap(parts, title="Mirror ray rules")
+        parts.append(_clipped_ray(80, y_tip, hx, y_tip, color="#2563eb"))
+        through_f = _extend_to_x(hx, y_tip, fx, ay, 36)
+        parts.append(_clipped_ray(hx, y_tip, through_f[0], through_f[1], color="#059669", marker="arrG"))
+        parts.append(f'<line x1="{cx:.1f}" y1="{ay:.1f}" x2="{hx:.1f}" y2="{y_tip:.1f}" stroke="#94a3b8" stroke-dasharray="4,3"/>')
+        cap = "Parallel to the axis: reflects through F (Fig 9.3)"
+    parts.append(_label(280, 326, cap, size=11, color="#334155"))
+    return _svg_wrap(parts, w=560, h=340, title="Mirror ray rules")
 
 
 def svg_sign_axis(cfg: dict) -> str:
-    """Sign convention axis for mirrors or lenses."""
-    medium = cfg.get("medium") or cfg.get("topic", "mirror")
-    ay = 120
-    parts = [_defs(("arr", "#2563eb"))]
-    parts.append(f'<line x1="40" y1="{ay}" x2="440" y2="{ay}" stroke="#1e293b" stroke-width="2"/>')
-    parts.append(_arrow(240, ay, 400, ay, color="#2563eb"))
-    parts.append(_label(400, ay - 15, "+ x (incident side)", size=10, color="#2563eb"))
-    parts.append(_arrow(240, ay, 80, ay, color="#64748b", marker="arr"))
-    parts.append(_label(60, ay - 15, "− x", size=10, color="#64748b"))
-    parts.append(_arrow(240, ay - 30, 240, ay - 70, color="#059669"))
-    parts.append(_label(250, ay - 75, "+ y (up)", size=10, color="#059669"))
-    parts.append(_arrow(240, ay + 30, 240, ay + 70, color="#dc2626"))
-    parts.append(_label(250, ay + 85, "− y (down)", size=10, color="#dc2626"))
-    parts.append(f'<circle cx="240" cy="{ay}" r="5" fill="#6366f1"/>')
-    parts.append(_label(240, ay + 18, "P / O", bold=True))
-    if medium == "mirror":
-        parts.append('<path d="M100,50 Q240,210 380,50" fill="none" stroke="#64748b" stroke-width="4"/>')
-        parts.append(_label(240, 200, "Mirror: object side +x, concave f < 0", size=10, color="#64748b"))
+    """NCERT New Cartesian sign convention — side view."""
+    medium = str(cfg.get("medium") or cfg.get("topic") or "mirror")
+    hl = str(cfg.get("highlight") or "")
+    lens = medium == "lens" or str(cfg.get("topic") or "") == "lens"
+    mtype = str(cfg.get("mirror_type") or ("convex" if lens else "concave"))
+    parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"), ("arrR", "#dc2626"))]
+    if lens:
+        lg = _ncert_lens_geom()
+        ay, o = lg["ay"], lg["ox"]
+        parts.extend(_ncert_lens_shape(lg, convex=mtype != "concave"))
+        parts.append(f'<line x1="28" y1="{ay:.1f}" x2="548" y2="{ay:.1f}" stroke="#94a3b8" stroke-width="1.4"/>')
+        parts.append(f'<circle cx="{o:.1f}" cy="{ay:.1f}" r="3.4" fill="#1e293b"/>')
+        parts.append(_label(o, ay + 16, "O", size=12, bold=True))
+        origin = o
+        foot = "Lens: incident light left to right · origin at O"
     else:
-        parts.append('<ellipse cx="240" cy="120" rx="12" ry="55" fill="none" stroke="#64748b" stroke-width="4"/>')
-        parts.append(_label(240, 200, "Lens: incident side +x, convex f > 0", size=10, color="#64748b"))
-    return _svg_wrap(parts, title="Sign convention")
+        g = _ncert_axis_geom(concave=mtype != "convex")
+        ay, origin = g["ay"], g["px"]
+        parts.extend(_ncert_mirror_arc(g, concave=mtype != "convex"))
+        foot = "Mirror: incident light left to right · origin at P"
+    plus_end = min(origin + 90, 520)
+    minus_end = max(origin - 150, 40)
+    parts.append(_arrow(origin, ay, plus_end, ay, color="#2563eb", width=2.2))
+    parts.append(_label((origin + plus_end) / 2, ay - 14, "+ x", size=10, color="#2563eb"))
+    parts.append(_arrow(origin, ay, minus_end, ay, color="#64748b", width=2.2, marker="arr"))
+    parts.append(_label((origin + minus_end) / 2, ay - 14, "− x", size=10, color="#64748b"))
+    parts.append(_arrow(max(origin - 180, 40), ay - 52, origin - 16, ay - 52, color="#2563eb", width=1.8))
+    parts.append(_label(max(origin - 98, 90), ay - 66, "incident light", size=10, color="#2563eb"))
+    parts.append(_arrow(origin, ay - 16, origin, ay - 70, color="#059669", width=2.2, marker="arrG"))
+    parts.append(_label(origin + 10, ay - 74, "+ y (up)", size=10, color="#059669", anchor="start"))
+    parts.append(_arrow(origin, ay + 16, origin, ay + 70, color="#dc2626", width=2.2, marker="arrR"))
+    parts.append(_label(origin + 10, ay + 84, "− y (down)", size=10, color="#dc2626", anchor="start"))
+    notes = {
+        "P": "Origin is the pole P (mirrors) or optical centre O (lenses)",
+        "light_direction": "Incident light travels left to right",
+        "positive_x": "Distances with the incident light are positive",
+        "negative_x": "Distances opposite the incident light are negative",
+        "positive_h": "Upright heights are positive",
+        "negative_h": "Inverted heights are negative",
+        "u": "u is measured from P/O to the object (usually negative)",
+        "v": "v is measured from P/O to the image",
+        "f": "Concave mirror / concave lens: f is negative · convex lens / convex mirror: f is positive",
+        "convention": "New Cartesian signs — measure from P or O",
+    }
+    if hl in notes:
+        parts.append(_label(280, 52, notes[hl], size=12, color="#6366f1", bold=True))
+    parts.append(_label(280, 326, foot, size=11, color="#334155"))
+    return _svg_wrap(parts, w=560, h=340, title="Sign convention")
 
 
 def svg_formula_panel(cfg: dict) -> str:
@@ -424,134 +900,233 @@ def svg_formula_panel(cfg: dict) -> str:
     formula = cfg.get("formula") or symbol_map.get(sym, sym or "Formula")
     note = cfg.get("note", cfg.get("topic", ""))
     parts = [
-        '<rect x="60" y="60" width="360" height="120" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>',
-        f'<text x="240" y="115" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#1e293b">{formula}</text>',
+        '<rect x="40" y="70" width="480" height="160" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>',
+        f'<text x="280" y="140" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#1e293b">{_esc(formula)}</text>',
     ]
     if note:
-        parts.append(_label(240, 155, str(note), size=11, color="#64748b"))
-    return _svg_wrap(parts, h=220, title="Formula")
+        parts.append(_label(280, 185, str(note), size=12, color="#64748b"))
+    return _svg_wrap(parts, w=560, h=280, title="Formula")
 
 
 def svg_refraction(cfg: dict) -> str:
-    """Refraction at a boundary."""
-    mode = cfg.get("mode", "")
-    direction = cfg.get("direction", "")
+    """NCERT-style refraction at a plane boundary (Fig 9.9)."""
+    mode = str(cfg.get("mode") or "")
+    hl = str(cfg.get("highlight") or "")
     if mode in ("toward", "air_glass", "denser"):
         direction = "into_denser"
     elif mode in ("away", "glass_air", "rarer"):
         direction = "into_rarer"
-    elif not direction:
-        direction = "into_denser"
-    ay = 180
-    parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"))]
-    parts.append(f'<line x1="40" y1="{ay}" x2="440" y2="{ay}" stroke="#64748b" stroke-width="3"/>')
-    parts.append('<rect x="40" y="180" width="400" height="60" fill="#dbeafe" opacity="0.5"/>')
-    parts.append('<rect x="40" y="60" width="400" height="120" fill="#fef3c7" opacity="0.4"/>')
-    parts.append(_label(80, 100, "rarer", size=10, color="#64748b"))
-    parts.append(_label(80, 210, "denser", size=10, color="#64748b"))
-    parts.append(f'<line x1="240" y1="40" x2="240" y2="220" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>')
-    parts.append(_label(250, 50, "Normal", size=10, color="#64748b"))
-    if direction == "into_denser":
-        parts.append(_arrow(240, 80, 240, ay, color="#2563eb"))
-        parts.append(_arrow(240, ay, 270, 220, color="#059669", marker="arrG"))
-        parts.append(_label(300, 130, "Bends toward normal", size=10, color="#059669"))
     else:
-        parts.append(_arrow(240, 220, 240, ay, color="#2563eb"))
-        parts.append(_arrow(240, ay, 210, 80, color="#059669", marker="arrG"))
-        parts.append(_label(160, 130, "Bends away from normal", size=10, color="#059669"))
-    cap = mode or cfg.get("highlight", "")
-    if cap:
-        parts.append(_label(240, 235, str(cap).replace("_", " "), size=10, color="#64748b"))
-    return _svg_wrap(parts, title="Refraction")
+        direction = "into_denser"
+    ay = 168
+    mx = 280
+    parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"))]
+    parts.append('<rect x="28" y="40" width="504" height="128" fill="#fef9c3" opacity="0.45"/>')
+    parts.append('<rect x="28" y="168" width="504" height="128" fill="#bfdbfe" opacity="0.45"/>')
+    parts.append(f'<line x1="28" y1="{ay}" x2="532" y2="{ay}" stroke="#334155" stroke-width="2.4"/>')
+    parts.append(_label(70, 70, "Air (rarer)", size=11, color="#92400e", bold=True, anchor="start"))
+    parts.append(_label(70, 280, "Glass (denser)", size=11, color="#1e3a8a", bold=True, anchor="start"))
+    n_w = 2.6 if hl == "normal" else 1.5
+    parts.append(_arrow(mx, 48, mx, 288, color="#64748b", width=n_w, dash="6,4"))
+    parts.append(_label(mx + 12, 56, "Normal", size=10, color="#64748b", anchor="start"))
+    if direction == "into_denser":
+        parts.append(_arrow(140, 70, mx, ay, color="#2563eb", width=3 if hl == "incident" else 2.2))
+        parts.append(_arrow(mx, ay, 330, 268, color="#059669", width=3 if hl == "refracted" else 2.2, marker="arrG"))
+        parts.append('<path d="M280,168 L280,132 A36,36 0 0,0 250,148" fill="none" stroke="#2563eb" stroke-width="2"/>')
+        parts.append('<path d="M280,168 L280,204 A36,36 0 0,1 302,196" fill="none" stroke="#059669" stroke-width="2"/>')
+        parts.append(_label(248, 140, "i", color="#2563eb", bold=True))
+        parts.append(_label(308, 202, "r", color="#059669", bold=True))
+        cap = "Into a denser medium: ray bends toward the normal"
+    else:
+        parts.append(_arrow(330, 268, mx, ay, color="#2563eb", width=3 if hl == "incident" else 2.2))
+        parts.append(_arrow(mx, ay, 140, 70, color="#059669", width=3 if hl == "refracted" else 2.2, marker="arrG"))
+        cap = "Into a rarer medium: ray bends away from the normal"
+    notes = {
+        "incident": "Incident ray — travelling toward the boundary",
+        "refracted": "Refracted ray — travelling in the second medium",
+        "normal": "Normal is drawn perpendicular to the boundary",
+        "speed": "Light slows down in the denser medium",
+        "angle_i": "Angle of incidence i is from the normal",
+        "angle_r": "Angle of refraction r is from the normal",
+        "transparent": "A transparent medium lets light pass through",
+        "boundary": "Refraction happens at the boundary",
+        "coplanar": "Incident ray, refracted ray and normal are coplanar",
+        "n_speed": "Higher n means lower speed (n = c / v)",
+        "compare_n": "Compare n: glass > water > air",
+        "optical_vs_physical": "Optical density is not the same as mass density",
+    }
+    if hl in notes:
+        parts.append(_label(280, 52, notes[hl], size=12, color="#6366f1", bold=True))
+    elif mode in notes:
+        parts.append(_label(280, 52, notes[mode], size=12, color="#6366f1", bold=True))
+    parts.append(_label(280, 326, cap, size=11, color="#334155"))
+    return _svg_wrap(parts, w=560, h=340, title="Refraction")
 
 
 def svg_glass_slab(cfg: dict) -> str:
-    """Rectangular glass slab — lateral displacement."""
-    ay = 120
-    parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"))]
-    parts.append('<rect x="160" y="60" width="160" height="120" fill="#dbeafe" stroke="#64748b" stroke-width="2" opacity="0.7"/>')
-    parts.append(_label(240, 55, "Glass slab", size=10, color="#64748b"))
-    parts.append(_arrow(60, ay, 160, ay, color="#2563eb"))
-    parts.append(_arrow(160, ay, 200, 100, color="#2563eb"))
-    parts.append(_arrow(200, 100, 280, 100, color="#2563eb"))
-    parts.append(_arrow(280, 100, 320, ay, color="#059669", marker="arrG"))
-    parts.append(_arrow(320, ay, 420, ay, color="#059669", marker="arrG"))
-    parts.append(f'<line x1="60" y1="{ay}" x2="420" y2="{ay}" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,3"/>')
-    parts.append(_label(240, ay + 25, "Emergent ray ∥ incident (lateral shift)", size=10, color="#64748b"))
-    return _svg_wrap(parts, title="Glass slab")
+    """NCERT Fig 9.10 — rectangular glass slab and lateral shift."""
+    hl = str(cfg.get("highlight") or "")
+    parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"), ("arrR", "#dc2626"))]
+    parts.append('<rect x="200" y="48" width="160" height="220" fill="#bfdbfe" stroke="#334155" stroke-width="2.2" opacity="0.7"/>')
+    parts.append(_label(280, 40, "Glass slab", size=11, color="#1e3a8a", bold=True))
+    parts.append('<line x1="200" y1="90" x2="360" y2="90" stroke="#94a3b8" stroke-dasharray="4,3"/>')
+    parts.append('<line x1="200" y1="226" x2="360" y2="226" stroke="#94a3b8" stroke-dasharray="4,3"/>')
+    parts.append(_label(372, 88, "N₁", size=10, color="#64748b", anchor="start"))
+    parts.append(_label(372, 224, "N₂", size=10, color="#64748b", anchor="start"))
+    parts.append(_arrow(70, 70, 200, 90, color="#2563eb", width=3 if hl == "incident" else 2.2))
+    parts.append(_arrow(200, 90, 360, 226, color="#0f766e", width=2.2))
+    parts.append(_arrow(360, 226, 500, 246, color="#059669", width=3 if hl == "emergent" else 2.2, marker="arrG"))
+    parts.append('<line x1="70" y1="70" x2="500" y2="246" stroke="#cbd5e1" stroke-dasharray="5,4"/>')
+    if hl in ("shift", "parallel"):
+        parts.append(_arrow(430, 200, 430, 246, color="#dc2626", width=1.8, marker="arrR"))
+        parts.append(_label(442, 226, "lateral shift", size=10, color="#dc2626", anchor="start"))
+    notes = {
+        "emergent": "Emergent ray leaves the second face",
+        "parallel": "Emergent ray is parallel to the incident ray",
+        "shift": "The ray is displaced sideways — lateral displacement",
+        "slab": "Two parallel faces: two refractions",
+    }
+    if hl in notes:
+        parts.append(_label(150, 52, notes[hl], size=12, color="#6366f1", bold=True))
+    parts.append(_label(280, 326, "Incident and emergent rays are parallel (lateral shift)", size=11, color="#334155"))
+    return _svg_wrap(parts, w=560, h=340, title="Glass slab")
 
 
 def svg_lens_labels(cfg: dict) -> str:
-    """Convex or concave lens with labels."""
-    ltype = cfg.get("lens") or cfg.get("lens_type", "convex")
-    ay = 120
+    """NCERT lens labels — O, F₁, F₂, 2F, principal axis."""
+    ltype = str(cfg.get("lens") or cfg.get("lens_type") or "convex")
+    hl = str(cfg.get("highlight") or "")
+    mode = str(cfg.get("mode") or "")
+    convex = ltype != "concave"
+    lg = _ncert_lens_geom()
     parts = [_defs()]
-    parts.append(f'<line x1="40" y1="{ay}" x2="440" y2="{ay}" stroke="#cbd5e1" stroke-width="1.5"/>')
-    if ltype == "convex":
-        parts.append('<path d="M230,60 Q240,120 230,180 Q250,120 250,60 Q240,120 250,180" fill="none" stroke="#64748b" stroke-width="4"/>')
-        parts.append('<ellipse cx="240" cy="120" rx="10" ry="60" fill="none" stroke="#64748b" stroke-width="3"/>')
-        parts.append(_label(240, 200, "Convex (converging)", size=10, color="#059669"))
-        fx1, fx2 = 180, 300
-    else:
-        parts.append('<path d="M230,60 Q220,120 230,180 M250,60 Q260,120 250,180" fill="none" stroke="#64748b" stroke-width="4"/>')
-        parts.append(_label(240, 200, "Concave (diverging)", size=10, color="#dc2626"))
-        fx1, fx2 = 300, 180
-    parts.append(f'<circle cx="240" cy="{ay}" r="4" fill="#6366f1"/>')
-    parts.append(_label(240, ay + 18, "O"))
-    parts.append(f'<circle cx="{fx1}" cy="{ay}" r="4" fill="#6366f1"/>')
-    parts.append(_label(fx1, ay + 18, "F₁"))
-    parts.append(f'<circle cx="{fx2}" cy="{ay}" r="4" fill="#6366f1"/>')
-    parts.append(_label(fx2, ay + 18, "F₂"))
-    return _svg_wrap(parts, title="Lens labels")
+    parts.extend(_ncert_lens_shape(lg, convex=convex))
+    notes = {
+        "O": "O is the optical centre — a ray through O goes undeviated",
+        "axis": "Principal axis: the symmetry line through O",
+        "F1_F2": "Two principal foci, one on each side",
+        "f": "Focal length f = OF₁ = OF₂",
+        "intro": "A lens has two spherical refracting surfaces",
+        "thin_symbol": "A thin lens is drawn as this double-arc outline",
+    }
+    title = "Convex lens (converging)" if convex else "Concave lens (diverging)"
+    if hl in notes or mode in notes:
+        parts.append(_label(280, 52, notes.get(hl) or notes.get(mode, ""), size=12, color="#6366f1", bold=True))
+    if hl == "f":
+        parts.append(f'<line x1="{lg["ox"]:.1f}" y1="{lg["ay"] + 28:.1f}" x2="{lg["F2"]:.1f}" y2="{lg["ay"] + 28:.1f}" stroke="#6366f1" stroke-width="2"/>')
+        parts.append(_label((lg["ox"] + lg["F2"]) / 2, lg["ay"] + 46, "f", size=12, color="#6366f1", bold=True))
+    parts.append(_label(280, 326, title, size=11, color="#334155"))
+    return _svg_wrap(parts, w=560, h=340, title="Lens labels")
 
 
 def svg_lens_ray(cfg: dict) -> str:
-    """Lens ray diagram."""
-    rule = cfg.get("rule", "parallel")
-    ltype = cfg.get("lens", "convex")
-    ay = 120
+    """NCERT lens construction-ray rules."""
+    rule = str(cfg.get("rule") or "parallel").lower().replace("-", "_")
+    ltype = str(cfg.get("lens") or cfg.get("lens_type") or "convex")
+    convex = ltype != "concave"
+    lg = _ncert_lens_geom()
+    ay, o, f1, f2 = lg["ay"], lg["ox"], lg["F1"], lg["F2"]
+    y = ay - 40
     parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"))]
-    parts.append(f'<line x1="40" y1="{ay}" x2="440" y2="{ay}" stroke="#cbd5e1" stroke-width="1.5"/>')
-    parts.append('<ellipse cx="240" cy="120" rx="10" ry="60" fill="none" stroke="#64748b" stroke-width="3"/>')
-    parts.append(f'<circle cx="300" cy="{ay}" r="4" fill="#6366f1"/>')
-    parts.append(_label(300, ay + 18, "F"))
-    parts.append(f'<circle cx="240" cy="{ay}" r="4" fill="#6366f1"/>')
-    parts.append(_label(240, ay + 18, "O"))
-    ox = 80
-    if rule == "parallel":
-        parts.append(_arrow(ox, ay - 40, 240, ay - 40, color="#2563eb"))
-        parts.append(_arrow(240, ay - 40, 300, ay, color="#059669", marker="arrG"))
-        parts.append(_label(320, ay - 50, "Parallel → through F", size=10))
-    elif rule == "through_f":
-        parts.append(_arrow(ox, ay, 300, ay, color="#2563eb"))
-        parts.append(_arrow(300, ay, 240, ay - 50, color="#059669", marker="arrG"))
-        parts.append(_label(320, ay + 25, "Through F → parallel", size=10))
+    parts.extend(_ncert_lens_shape(lg, convex=convex))
+    if rule in ("through_f", "throughf"):
+        if convex:
+            hit = _extend_to_x(60, y, f1, ay, o)
+            parts.append(_clipped_ray(60, y, hit[0], hit[1], color="#2563eb"))
+            parts.append(_clipped_ray(hit[0], hit[1], 520, hit[1], color="#059669", marker="arrG"))
+            cap = "Through F₁: emerges parallel to the principal axis"
+        else:
+            parts.append(_clipped_ray(60, y, o, y, color="#2563eb"))
+            parts.append(_clipped_ray(o, y, 520, y + 36, color="#059669", marker="arrG"))
+            cap = "Toward F₂: emerges parallel (concave lens)"
+    elif rule in ("through_o", "througho"):
+        parts.append(_clipped_ray(70, y, o, ay, color="#2563eb"))
+        ext = _extend_to_x(70, y, o, ay, 520)
+        parts.append(_clipped_ray(o, ay, ext[0], ext[1], color="#059669", marker="arrG"))
+        cap = "Through O: goes on undeviated"
     else:
-        parts.append(_arrow(ox, ay, 240, ay, color="#2563eb"))
-        parts.append(_arrow(240, ay, 380, ay, color="#059669", marker="arrG"))
-        parts.append(_label(320, ay + 25, "Through O → undeviated", size=10))
-    return _svg_wrap(parts, title="Lens rays")
+        parts.append(_clipped_ray(60, y, o, y, color="#2563eb"))
+        if convex:
+            parts.append(_clipped_ray(o, y, f2, ay, color="#059669", marker="arrG"))
+            cap = "Parallel to the axis: refracts through F₂"
+        else:
+            parts.append(_arrow(o, y, f1, ay, color="#2563eb", dash="5,4", marker=""))
+            parts.append(_clipped_ray(o, y, 520, y + 36, color="#059669", marker="arrG"))
+            cap = "Parallel to the axis: appears to come from F₁"
+        if rule in ("two_rays", "tworays"):
+            ext = _extend_to_x(70, y, o, ay, 520)
+            parts.append(_clipped_ray(70, y, o, ay, color="#0f766e"))
+            parts.append(_clipped_ray(o, ay, ext[0], ext[1], color="#0f766e"))
+            cap = "Two rays locate the image tip"
+    parts.append(_label(280, 326, cap, size=11, color="#334155"))
+    return _svg_wrap(parts, w=560, h=340, title="Lens rays")
 
 
 def svg_lens_image(cfg: dict) -> str:
-    """Lens image formation sketch."""
-    case = cfg.get("case", "beyond_2f")
-    ay = 120
-    parts = [_defs(("arr", "#2563eb"), ("arrR", "#dc2626"))]
-    parts.append(f'<line x1="40" y1="{ay}" x2="440" y2="{ay}" stroke="#cbd5e1" stroke-width="1.5"/>')
-    parts.append('<ellipse cx="240" cy="120" rx="10" ry="60" fill="none" stroke="#64748b" stroke-width="3"/>')
-    obj_x = {"beyond_2f": 100, "at_2f": 140, "between_f_2f": 170, "inside_f": 200}
-    ox = obj_x.get(case, 100)
-    parts.append(f'<line x1="{ox}" y1="{ay}" x2="{ox}" y2="{ay-50}" stroke="#2563eb" stroke-width="3"/>')
-    parts.append(_label(ox, ay - 60, "Object", size=10, color="#2563eb"))
-    if case == "inside_f":
-        parts.append(_label(350, ay - 40, "Virtual, erect, enlarged", size=10, color="#dc2626"))
+    """NCERT Fig 9.16-style lens image for one object position."""
+    ltype = str(cfg.get("lens") or cfg.get("lens_type") or "convex")
+    raw = str(cfg.get("position") or cfg.get("case") or "beyond_2f").lower().replace(" ", "_")
+    aliases = {
+        "beyond_f": "beyond_2f",
+        "beyond_2f": "beyond_2f",
+        "at_2f": "at_2f",
+        "f_to_2f": "f_to_2f",
+        "between_f_2f": "f_to_2f",
+        "inside_f": "inside_f",
+    }
+    case = aliases.get(raw, raw if raw in aliases.values() else "beyond_2f")
+    convex = ltype != "concave"
+    lg = _ncert_lens_geom()
+    ay, o, f1, f2 = lg["ay"], lg["ox"], lg["F1"], lg["F2"]
+    h = 40.0
+    y = ay - h
+    obj_x = {"beyond_2f": 80.0, "at_2f": lg["twoF1"], "f_to_2f": (lg["F1"] + lg["twoF1"]) / 2, "inside_f": (lg["F1"] + o) / 2}
+    ox = 90.0 if not convex else obj_x.get(case, 80.0)
+    parts = [_defs(("arr", "#2563eb"), ("arrG", "#059669"), ("arrR", "#dc2626"))]
+    parts.extend(_ncert_lens_shape(lg, convex=convex))
+    parts.extend(_axis_arrow(ox, ay, y, color="#1d4ed8", tip_label="A", base_label="B"))
+    parts.append(_clipped_ray(ox, y, o, y, color="#2563eb"))
+    if convex:
+        if case == "inside_f":
+            # Parallel rule: through F2 after lens; virtual = backward through F2? 
+            # Parallel → through F2 (forward). Through O undeviated. They diverge; extend back.
+            parts.append(_clipped_ray(o, y, f2, ay, color="#2563eb"))
+            onward = _extend_to_x(o, y, f2, ay, 520)
+            parts.append(_clipped_ray(f2, ay, onward[0], onward[1], color="#2563eb"))
+            ext = _extend_to_x(ox, y, o, ay, 520)
+            parts.append(_clipped_ray(ox, y, ext[0], ext[1], color="#0f766e"))
+            back = _intersect_lines(o, y, f2, ay, ox, y, o, ay)
+            if back:
+                parts.append(_arrow(o, y, back[0], back[1], color="#dc2626", dash="5,4", marker=""))
+                parts.append(_arrow(o, ay, back[0], back[1], color="#dc2626", dash="5,4", marker=""))
+                parts.extend(_axis_arrow(back[0], ay, back[1], color="#dc2626", dash="4,3", tip_label="A′", base_label="B′"))
+            cap = "Object inside F: virtual, erect, enlarged (same side)"
+        else:
+            onward = _extend_to_x(o, y, f2, ay, 530)
+            parts.append(_clipped_ray(o, y, onward[0], onward[1], color="#2563eb"))
+            ext = _extend_to_x(ox, y, o, ay, 530)
+            parts.append(_clipped_ray(ox, y, ext[0], ext[1], color="#0f766e"))
+            meet = _intersect_lines(o, y, f2, ay, ox, y, o, ay)
+            if meet and meet[0] > o:
+                parts.extend(_axis_arrow(meet[0], ay, meet[1], color="#dc2626", tip_label="A′", base_label="B′"))
+            caps = {
+                "beyond_2f": "Object beyond 2F: real, inverted, diminished (between F₂ and 2F₂)",
+                "at_2f": "Object at 2F: real, inverted, same size (at 2F₂)",
+                "f_to_2f": "Object between F and 2F: real, inverted, enlarged (beyond 2F₂)",
+            }
+            cap = caps.get(case, caps["beyond_2f"])
     else:
-        ix = 340 if case != "at_2f" else 340
-        parts.append(f'<line x1="{ix}" y1="{ay}" x2="{ix}" y2="{ay-30}" stroke="#dc2626" stroke-width="3" stroke-dasharray="4,3"/>')
-        parts.append(_label(ix, ay + 18, "Real image", size=10, color="#dc2626"))
-    parts.append(_label(240, 200, cfg.get("label", case.replace("_", " ")), size=10, color="#64748b"))
-    return _svg_wrap(parts, title="Lens image")
+        parts.append(_arrow(o, y, f1, ay, color="#2563eb", dash="5,4", marker=""))
+        parts.append(_clipped_ray(o, y, 520, y + 28, color="#2563eb"))
+        ext = _extend_to_x(ox, y, o, ay, 520)
+        parts.append(_clipped_ray(ox, y, ext[0], ext[1], color="#0f766e"))
+        meet = _intersect_lines(f1, ay, o, y, ox, y, o, ay)
+        if meet:
+            parts.append(_arrow(o, y, meet[0], meet[1], color="#dc2626", dash="5,4", marker=""))
+            parts.extend(_axis_arrow(meet[0], ay, meet[1], color="#dc2626", dash="4,3", tip_label="A′", base_label="B′"))
+        cap = "Concave lens: virtual, erect, diminished (between O and F₁)"
+    parts.append(_label(280, 326, cap, size=11, color="#334155"))
+    return _svg_wrap(parts, w=560, h=340, title="Lens image")
 
 
 def svg_placeholder(cfg: dict) -> str:
