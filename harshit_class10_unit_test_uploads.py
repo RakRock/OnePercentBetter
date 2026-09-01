@@ -1,4 +1,4 @@
-"""Persist unit-test written work photos (VSA / SA / LA)."""
+"""Persist unit-test written work photos (one attachment for the whole paper)."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ WORK_ROOT = ROOT / "HarshitMath" / "class10" / "unit_test_work"
 
 ALLOWED_EXTENSIONS = {".jpg", ".jpeg", ".png"}
 MAX_FILE_BYTES = 8 * 1024 * 1024
-MAX_IMAGES_PER_QUESTION = 6
+MAX_IMAGES_PER_TEST = 1
 
 
 def _slug(text: str) -> str:
@@ -27,8 +27,57 @@ def session_dir(session_id: str, student_name: str) -> Path:
     return WORK_ROOT / _slug(student_name) / _slug(session_id)
 
 
-def question_dir(session_id: str, student_name: str, unit_id: int, q_num: int) -> Path:
-    return session_dir(session_id, student_name) / f"unit_{unit_id:02d}" / f"q{q_num:02d}"
+def paper_dir(session_id: str, student_name: str, unit_id: int) -> Path:
+    return session_dir(session_id, student_name) / f"unit_{unit_id:02d}" / "paper"
+
+
+def _as_file_list(uploaded_files) -> list:
+    if uploaded_files is None:
+        return []
+    if isinstance(uploaded_files, (list, tuple)):
+        return list(uploaded_files)
+    return [uploaded_files]
+
+
+def save_session_work_images(
+    *,
+    session_id: str,
+    student_name: str,
+    unit_id: int,
+    uploaded_files,
+    existing: list[dict] | None = None,
+) -> tuple[list[dict], str | None]:
+    """Save one paper photo for the whole unit test; a new upload replaces the previous one."""
+    files = _as_file_list(uploaded_files)
+    if not files:
+        return list(existing or []), None
+
+    dest_root = paper_dir(session_id, student_name, unit_id)
+    dest_root.mkdir(parents=True, exist_ok=True)
+
+    upload = files[0]
+    name = str(getattr(upload, "name", "") or "work.jpg")
+    ext = Path(name).suffix.lower()
+    if ext not in ALLOWED_EXTENSIONS:
+        return list(existing or []), "Only JPG and PNG photos are allowed."
+    data = upload.getvalue()
+    if len(data) > MAX_FILE_BYTES:
+        return list(existing or []), "The photo must be 8 MB or smaller."
+
+    stamp = int(time.time() * 1000)
+    safe = re.sub(r"[^a-zA-Z0-9._-]+", "_", name)
+    path = dest_root / f"{stamp}_{safe}"
+    path.write_bytes(data)
+    return (
+        [
+            {
+                "filename": name,
+                "path": str(path),
+                "size": len(data),
+            }
+        ],
+        None,
+    )
 
 
 def save_work_images(
@@ -36,61 +85,41 @@ def save_work_images(
     session_id: str,
     student_name: str,
     unit_id: int,
-    q_num: int,
-    uploaded_files,
+    q_num: int = 0,
+    uploaded_files=None,
     existing: list[dict] | None = None,
 ) -> tuple[list[dict], str | None]:
-    """Save uploaded Streamlit files; return metadata list and optional error."""
-    existing = list(existing or [])
-    if len(existing) >= MAX_IMAGES_PER_QUESTION:
-        return existing, f"Maximum {MAX_IMAGES_PER_QUESTION} photos per question."
+    """Compatibility wrapper — work is stored once per test, not per question."""
+    del q_num
+    return save_session_work_images(
+        session_id=session_id,
+        student_name=student_name,
+        unit_id=unit_id,
+        uploaded_files=uploaded_files,
+        existing=existing,
+    )
 
-    dest_root = question_dir(session_id, student_name, unit_id, q_num)
-    dest_root.mkdir(parents=True, exist_ok=True)
 
-    saved_names = {m.get("filename") for m in existing}
-    out = list(existing)
-
-    for upload in uploaded_files or []:
-        if len(out) >= MAX_IMAGES_PER_QUESTION:
-            break
-        name = str(getattr(upload, "name", "") or "work.jpg")
-        ext = Path(name).suffix.lower()
-        if ext not in ALLOWED_EXTENSIONS:
-            return out, "Only JPG and PNG photos are allowed."
-        data = upload.getvalue()
-        if len(data) > MAX_FILE_BYTES:
-            return out, "Each photo must be 8 MB or smaller."
-        if name in saved_names:
-            continue
-        stamp = int(time.time() * 1000)
-        safe = re.sub(r"[^a-zA-Z0-9._-]+", "_", name)
-        path = dest_root / f"{stamp}_{safe}"
-        path.write_bytes(data)
-        out.append(
-            {
-                "filename": name,
-                "path": str(path),
-                "size": len(data),
-            }
-        )
-        saved_names.add(name)
-
-    return out, None
+def test_requires_work_photo(questions: list[dict] | None) -> bool:
+    return any(q.get("type") == "written" for q in (questions or []))
 
 
 def work_upload_required(q: dict) -> bool:
-    """Board-style written questions should include work photos."""
+    """True for board-style written items (used to decide if the paper needs a photo)."""
     return q.get("type") == "written"
+
+
+def has_session_work_upload(images: list[dict] | None) -> bool:
+    return bool(images)
 
 
 def has_work_upload(resp: dict) -> bool:
     return bool(resp.get("work_images"))
 
 
-def work_upload_label(q: dict) -> str:
-    marks = int(q.get("marks", 0))
-    section = str(q.get("section", ""))
-    if section == "D" or marks >= 5:
-        return "Required for 5-mark questions: photograph every page of your work (including diagrams)."
-    return "Photograph your written work on paper before checking the model answer."
+def work_upload_label(q: dict | None = None) -> str:
+    del q
+    return (
+        "Photograph your full written paper (Sections B–D) as one photo, "
+        "then save it before you submit the test."
+    )

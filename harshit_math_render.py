@@ -58,8 +58,9 @@ def normalize_unit_coefficients(text: str) -> str:
     return _UNIT_COEFF_POS_RE.sub(r"\1\2", s)
 
 # NCERT-style implicit exponents: u3 → u^3, 3x2 → 3x^2 (not plain numbers like 12).
+# Use ASCII digits only — Unicode ₁/₂ would otherwise turn a₁ into a superscript.
 _IMPLICIT_POLY_EXP_RE = re.compile(
-    r"(?<![a-zA-Z])(\d*)([a-zA-Z])(\d+)(?![a-zA-Z0-9])"
+    r"(?<![a-zA-Z])([0-9]*)([a-zA-Z])([0-9]+)(?![a-zA-Z0-9])"
 )
 
 _COMPOUND_POWER_RE = re.compile(
@@ -90,9 +91,20 @@ _EXP_UNICODE_CHARS = str.maketrans(
 )
 
 _SUB_UNICODE_CHARS = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
+_UNICODE_SUB_DIGITS = "₀₁₂₃₄₅₆₇₈₉"
+_UNICODE_SUB_N = "ₙ"
+_SUB_ASCII_FROM_UNI = str.maketrans(_UNICODE_SUB_DIGITS + _UNICODE_SUB_N, "0123456789n")
 
-# Coefficient subscripts: a_0, x_n (NCERT polynomial notation).
-_COEFF_SUB_RE = re.compile(r"\b([a-zA-Z])_(\d+|n)\b")
+# Coefficient subscripts: a_1, a1, a₁ (NCERT a₁/a₂, b₁/b₂, c₁/c₂).
+_COEFF_INDEX_RE = re.compile(
+    rf"\b([abc])(?:_([0-9n])|([0-9])|([{_UNICODE_SUB_DIGITS}{_UNICODE_SUB_N}]))\b"
+)
+_COEFF_RATIO_RE = re.compile(
+    rf"\b([abc])(?:_([0-9n])|([0-9])|([{_UNICODE_SUB_DIGITS}{_UNICODE_SUB_N}]))"
+    rf"\s*/\s*"
+    rf"([abc])(?:_([0-9n])|([0-9])|([{_UNICODE_SUB_DIGITS}{_UNICODE_SUB_N}]))\b"
+)
+_COEFF_SUB_RE = _COEFF_INDEX_RE
 
 
 def _read_braced_content(s: str, open_brace_idx: int) -> tuple[str, int] | None:
@@ -178,6 +190,9 @@ def _normalize_implicit_poly_exponents(s: str) -> str:
 
     def repl(m: re.Match) -> str:
         coeff, var, exp = m.group(1) or "", m.group(2), m.group(3)
+        # a1, b2, c1 are coefficient indices, not powers.
+        if var in "abc" and not coeff:
+            return m.group(0)
         return f"{coeff}{var}^{exp}"
 
     return _IMPLICIT_POLY_EXP_RE.sub(repl, s)
@@ -437,6 +452,8 @@ def _collect_exponent_matches(s: str, *, unicode_only: bool) -> list[tuple[int, 
 
     for m in _IMPLICIT_POLY_EXP_RE.finditer(s):
         coeff, var, exp = m.group(1) or "", m.group(2), m.group(3)
+        if var in "abc" and not coeff:
+            continue
         if unicode_only:
             repl = f"{coeff}{var}{_exp_unicode(exp)}"
         else:
@@ -448,6 +465,7 @@ def _collect_exponent_matches(s: str, *, unicode_only: bool) -> list[tuple[int, 
 
 
 def _apply_exponent_formatting(s: str, *, unicode_only: bool) -> str:
+    s, ratio_tokens = _stash_coeff_ratios(s, unicode_only=unicode_only)
     s = _apply_subscript_formatting(s, unicode_only=True)
     matches = _collect_exponent_matches(s, unicode_only=unicode_only)
     out: list[str] = []
@@ -461,7 +479,7 @@ def _apply_exponent_formatting(s: str, *, unicode_only: bool) -> str:
         last = end
     tail = s[last:]
     out.append(tail if unicode_only else html.escape(tail))
-    return "".join(out)
+    return _restore_stashed("".join(out), ratio_tokens)
 
 
 def _format_powers_html(s: str) -> str:
@@ -580,11 +598,61 @@ def _html_sub(text: str) -> str:
     )
 
 
+def _coeff_index(*groups: str | None) -> str:
+    for group in groups:
+        if group:
+            return group.translate(_SUB_ASCII_FROM_UNI)
+    return ""
+
+
+def _plain_coeff(letter: str, idx: str) -> str:
+    return f"{letter}{_sub_unicode(idx)}"
+
+
+def _html_coeff(letter: str, idx: str) -> str:
+    return f"{html.escape(letter)}{_html_sub(idx)}"
+
+
+def _html_stacked_frac(num_html: str, den_html: str) -> str:
+    return (
+        '<span style="display:inline-block;vertical-align:middle;text-align:center;'
+        'line-height:1.1;margin:0 0.18em;">'
+        f'<span style="display:block;border-bottom:1px solid currentColor;'
+        f'padding:0 0.28em 0.06em;">{num_html}</span>'
+        f'<span style="display:block;padding:0.06em 0.28em 0;">{den_html}</span>'
+        "</span>"
+    )
+
+
+def _stash_coeff_ratios(s: str, *, unicode_only: bool) -> tuple[str, list[str]]:
+    """Replace a₁/a₂-style ratios with tokens so they are not treated as powers."""
+    tokens: list[str] = []
+
+    def repl(m: re.Match) -> str:
+        n_let, n_idx = m.group(1), _coeff_index(m.group(2), m.group(3), m.group(4))
+        d_let, d_idx = m.group(5), _coeff_index(m.group(6), m.group(7), m.group(8))
+        if unicode_only:
+            piece = f"{_plain_coeff(n_let, n_idx)}/{_plain_coeff(d_let, d_idx)}"
+        else:
+            piece = _html_stacked_frac(_html_coeff(n_let, n_idx), _html_coeff(d_let, d_idx))
+        tokens.append(piece)
+        return f"‹{len(tokens) - 1}›"
+
+    return _COEFF_RATIO_RE.sub(repl, s), tokens
+
+
+def _restore_stashed(s: str, tokens: list[str]) -> str:
+    for i, token in enumerate(tokens):
+        s = s.replace(f"‹{i}›", token)
+    return s
+
+
 def _apply_subscript_formatting(s: str, *, unicode_only: bool) -> str:
-    """Turn a_0, a_n into subscripts (before exponent pass treats a^0 as power)."""
+    """Turn a_1, a1, a₁ into subscripts (before exponent pass treats a^1 as a power)."""
     matches: list[tuple[int, int, str]] = []
-    for m in _COEFF_SUB_RE.finditer(s):
-        var, sub = m.group(1), m.group(2)
+    for m in _COEFF_INDEX_RE.finditer(s):
+        var = m.group(1)
+        sub = _coeff_index(m.group(2), m.group(3), m.group(4))
         glyph = _sub_unicode(sub)
         if unicode_only:
             repl = f"{var}{glyph}"

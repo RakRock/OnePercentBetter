@@ -57,7 +57,12 @@ class TestClass10UnitTest(unittest.TestCase):
         responses = []
         for q in questions:
             if q["type"] == "written":
-                responses.append({"self_rating": "partial", "work_images": [{"path": "/x.jpg"}]})
+                responses.append(
+                    {
+                        "ai_grade": {"earned": q["marks"] / 2, "feedback": "Method only"},
+                        "work_images": [{"path": "/x.jpg"}],
+                    }
+                )
             elif q["type"] == "assertion_reason":
                 responses.append({"picked_index": 0 if q["answer"] != 0 else 1})
             else:

@@ -116,7 +116,7 @@ def _wrap_written(raw: dict, q_num: int, section: str, default_marks: int) -> di
         label = "Section C — Short Answer"
     else:
         label = "Section D — Long Answer"
-    return {
+    wrapped = {
         "id": raw.get("id", f"ut_w_{uuid.uuid4().hex[:8]}"),
         "q_num": q_num,
         "section": section,
@@ -128,6 +128,9 @@ def _wrap_written(raw: dict, q_num: int, section: str, default_marks: int) -> di
         "rubric": list(raw.get("rubric", [])),
         "source": raw.get("source_paper", "board_seed"),
     }
+    if raw.get("marking_scheme"):
+        wrapped["marking_scheme"] = raw["marking_scheme"]
+    return wrapped
 
 
 def _pick_written(unit_id: int, bucket: str, section: str, default_marks: int, used_ids: set[str]) -> dict | None:
@@ -213,6 +216,22 @@ def grade_written_self_rating(marks: int, rating: str) -> float:
     return 0.0
 
 
+def written_earned(question: dict, resp: dict) -> float:
+    import harshit_class10_unit_test_grader as h10g
+
+    marks = float(question.get("marks", 0))
+    grade = resp.get("ai_grade") or {}
+    if "earned" in grade:
+        try:
+            return h10g.clamp_half_mark(float(grade.get("earned", 0)), marks)
+        except (TypeError, ValueError):
+            return 0.0
+    rating = str(resp.get("self_rating") or "")
+    if rating:
+        return grade_written_self_rating(int(marks), rating)
+    return 0.0
+
+
 def build_unit_test_report(questions: list[dict], responses: list[dict]) -> dict[str, Any]:
     earned = 0.0
     max_marks = 0.0
@@ -226,7 +245,7 @@ def build_unit_test_report(questions: list[dict], responses: list[dict]) -> dict
             picked = resp.get("picked_index")
             got = grade_mcq_pick(q, int(picked)) if picked is not None else 0.0
         else:
-            got = grade_written_self_rating(int(marks), str(resp.get("self_rating", "missed")))
+            got = written_earned(q, resp)
         earned += got
         breakdown.append(
             {
@@ -285,21 +304,27 @@ def build_unit_test_failed_questions(questions: list[dict], responses: list[dict
             continue
 
         marks = int(q.get("marks", 0))
-        rating = str(resp.get("self_rating", "missed"))
-        got = grade_written_self_rating(marks, rating)
+        got = written_earned(q, resp)
         if got >= marks:
             continue
-        labels = {"full": "Full marks", "partial": "Partial credit", "missed": "Missed"}
+        grade = resp.get("ai_grade") or {}
         n_photos = len(resp.get("work_images") or [])
-        photo_note = f" ({n_photos} work photo(s) submitted)" if n_photos else ""
+        photo_note = f" ({n_photos} paper photo(s) on file)" if n_photos else ""
+        feedback = str(grade.get("feedback") or grade.get("corrections") or "").strip()
+        if not feedback:
+            feedback = "Review the CBSE marking-scheme steps for this question."
+        picked = f"{got:g}/{marks} (examiner)"
+        if resp.get("self_rating") and "earned" not in grade:
+            labels = {"full": "Full marks", "partial": "Partial credit", "missed": "Missed"}
+            picked = labels.get(str(resp.get("self_rating")), str(resp.get("self_rating")))
         failed.append(
             {
                 "number": q_num,
                 "topic": f"Section {q.get('section', '?')} written ({marks} marks){photo_note}",
                 "question": str(q.get("question", "")),
-                "picked": labels.get(rating, rating),
+                "picked": picked,
                 "correct": str(q.get("model_answer", "")),
-                "explanation": "Review model answer and CBSE marking scheme steps.",
+                "explanation": feedback,
             }
         )
     return failed
