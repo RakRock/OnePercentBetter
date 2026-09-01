@@ -694,6 +694,8 @@ def select_activity(activity):
         st.session_state.current_page = "movie_buff_home"
     elif activity == "LogoID":
         st.session_state.current_page = "logo_id_home"
+    elif activity == "ArjunSpanish":
+        st.session_state.current_page = "arjun_spanish_home"
     elif activity == "CubeAddition":
         st.session_state.current_page = "cube_addition"
         st.session_state.cube_problem = None
@@ -1364,8 +1366,21 @@ def render_user_dashboard():
                 st.rerun()
 
         st.markdown("")
-        _, act_row3_c, _ = st.columns([1, 2, 1], gap="large")
-        with act_row3_c:
+        act_row3_c1, act_row3_c2 = st.columns(2, gap="large")
+        with act_row3_c1:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #c2410c;">
+                <div style="font-size: 3rem;">🇪🇸</div>
+                <h3 style="margin: 0.5rem 0;">Spanish</h3>
+                <p style="color: #6b7280;">Flash cards, quizzes & daily vocab</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("🇪🇸 Spanish", key="btn_arjun_spanish", width="stretch", type="primary"):
+                select_activity("ArjunSpanish")
+                st.rerun()
+
+        with act_row3_c2:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #f59e0b;">
                 <div style="font-size: 3rem;">🏷️</div>
@@ -7158,6 +7173,18 @@ def render_cube_addition():
                     st.rerun()
 
 
+def render_arjun_spanish_home():
+    import arjun_spanish_ui
+
+    arjun_spanish_ui.render_home()
+
+
+def render_arjun_spanish_practice():
+    import arjun_spanish_ui
+
+    arjun_spanish_ui.render_practice()
+
+
 # ──────────────────────────────────────────────
 # Main Router
 # ──────────────────────────────────────────────
@@ -7195,6 +7222,10 @@ elif page == "vocab_home":
     render_vocab_home()
 elif page == "vocab_practice":
     render_vocab_practice()
+elif page == "arjun_spanish_home":
+    render_arjun_spanish_home()
+elif page == "arjun_spanish_practice":
+    render_arjun_spanish_practice()
 elif page == "map_explorer_home":
     render_map_explorer_home()
 elif page == "map_explorer_practice":
