@@ -327,6 +327,25 @@ def _pick_for_slots(
                 cc_picked += 1
         _top_up(selected, count, used_ids, avoid_ids, cc_remainder + other_remainder)
 
+    if len(selected) < count:
+        filler = list(plan) or list(c3lvl.active_slots(norm.get("topics") or [], valid))
+        guard = 0
+        while filler and len(selected) < count and guard < count * 6:
+            guard += 1
+            cat, lvl = filler[guard % len(filler)]
+            q = pick_or_generate_concept_check(
+                unit_id,
+                cat,
+                lvl,
+                bank,
+                used_ids,
+                avoid_ids,
+                _topic_levels(cat),
+                xai_api_key=xai_api_key,
+            )
+            if q:
+                selected.append(q)
+
     random.shuffle(selected)
     return selected[:count]
 
@@ -343,12 +362,10 @@ def build_session_set(
     valid = set(get_categories(unit_id).keys())
     if not c3lvl.active_slots(norm.get("topics") or [], valid):
         return [], "Select topics and difficulty levels in Week Setup."
-    count = int(norm.get("question_count", DEFAULT_SESSION_COUNT))
+    count = DEFAULT_SESSION_COUNT
     use_llm = bool(norm.get("use_llm"))
-    bank_size = question_count_for_unit(unit_id, config=norm)
-    if bank_size == 0 and not use_llm:
-        return [], "No bank questions match the selected topics and levels."
-    count = min(count, bank_size) if bank_size else count
+    # Do not cap to the static bank — concept-check generators (and Grok) can
+    # fill a 15-question session when Week Setup only matches a handful of items.
     grok_error: str | None = None
     if use_llm and xai_api_key:
         questions = build_daily_set(

@@ -2035,8 +2035,7 @@ def _gen_mad() -> list[dict]:
 
 
 def _dyn_id(unit_id: int, category: str) -> str:
-    stamp = int(time.time() * 1000) % 1_000_000
-    return f"cc_dyn_u{unit_id}_{category}_{stamp}_{random.randint(100, 999)}"
+    return f"cc_dyn_u{unit_id}_{category}_{time.time_ns()}_{random.randint(100, 9999)}"
 
 
 def _dyn_fractions(level: str) -> dict:

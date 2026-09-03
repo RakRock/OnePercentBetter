@@ -70,8 +70,7 @@ def format_week_plan_summary(unit_id: int, config: dict) -> str:
         info = categories_meta.get(cat_id, {})
         lvls = ", ".join(item.get("levels") or [])
         lines.append(f"  • {info.get('emoji', '')} {info.get('name', cat_id)} [{lvls}]")
-    count = normalized.get("question_count", DEFAULT_QUESTION_COUNT)
-    lines.append(f"  • Questions per session: {count}")
+    lines.append(f"  • Questions per session: {DEFAULT_QUESTION_COUNT}")
     if normalized.get("use_llm"):
         lines.append("  • xAI (Grok): on — fresh questions each session")
     else:

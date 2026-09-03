@@ -1246,12 +1246,11 @@ def build_session_set(
     valid = set(get_categories(unit_id).keys())
     if not c3lvl.active_slots(norm.get("topics") or [], valid):
         return [], "Select topics and difficulty levels in Week Setup."
-    count = int(norm.get("question_count", 15))
+    count = 15
     use_llm = bool(norm.get("use_llm"))
     bank_size = question_count_for_unit(unit_id, config=norm)
     if bank_size == 0 and not use_llm:
         return [], "No bank questions match the selected topics and levels."
-    count = min(count, bank_size) if bank_size else count
     grok_error: str | None = None
     if use_llm and xai_api_key:
         questions = build_daily_set(

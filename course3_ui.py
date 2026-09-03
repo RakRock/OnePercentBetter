@@ -328,7 +328,7 @@ def render_unit():
         filtered_size = c3p.question_count_for_unit(unit_id, config=week_cfg)
         if bank_size:
             st.markdown("### Practice")
-            session_count = int(week_cfg.get("question_count", FULL_QUESTION_COUNT))
+            session_count = FULL_QUESTION_COUNT
             st.caption(
                 f"**{bank_size}** questions in the bank — weekly plan uses **{filtered_size}** "
                 f"across {len(week_cfg.get('topics', []))} topic(s), **{session_count}** per session."
@@ -348,7 +348,7 @@ def render_unit():
                 st.caption("Using the built-in question bank. Enable Grok in **Week Setup** for fresh AI questions.")
 
             if st.button(
-                f"🎯 Start unit practice ({min(session_count, filtered_size or session_count)} questions)",
+                f"🎯 Start unit practice ({session_count} questions)",
                 key=f"c3_practice_full_{unit_id}",
                 type="primary",
                 use_container_width=True,

@@ -87,6 +87,21 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
 
         self.assertTrue(all(_resolved_level(q) == "B" for q in slope_only))
 
+    def test_unit1_session_keeps_15_when_static_bank_is_small(self):
+        """Week 1 topics at level C only match 8 bank items — still build 15."""
+        cfg = c3w.default_week_config(1)
+        cfg["topics"] = [
+            {"id": "patterns", "levels": ["C"]},
+            {"id": "fractions", "levels": ["C"]},
+            {"id": "powers_roots", "levels": ["C"]},
+            {"id": "rational_numbers", "levels": ["C"]},
+        ]
+        cfg["question_count"] = 8
+        self.assertEqual(c3p.question_count_for_unit(1, config=cfg), 8)
+        questions, err = c3p.build_session_set(1, cfg)
+        self.assertIsNone(err)
+        self.assertEqual(len(questions), 15)
+
     def test_course3_week_config_persistence(self):
         starter = c3w.default_week_config(1)
         topics = starter["topics"][:2]

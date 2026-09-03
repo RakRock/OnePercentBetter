@@ -86,7 +86,6 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
         bank_count = c3p.question_count_for_unit(unit_id)
         guidance = c3w.weekly_guidance(unit_id)
         format_summary = c3w.format_week_plan_summary
-        default_count = c3p.DEFAULT_SESSION_COUNT
         key_prefix = "c3"
     else:
         unit = ec3.get_unit(unit_id)
@@ -96,7 +95,6 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
         bank_count = ec3p.question_count_for_unit(unit_id)
         guidance = ec3w.weekly_guidance(unit_id)
         format_summary = ec3w.format_week_plan_summary
-        default_count = 15
         key_prefix = "ec3"
 
     if not unit:
@@ -138,14 +136,8 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
         value=bool(current.get("use_llm", False)),
         key=f"{key_prefix}_setup_llm_{unit_id}",
     )
-
-    question_count = st.slider(
-        "Questions per session",
-        min_value=5,
-        max_value=30,
-        value=int(current.get("question_count", default_count)),
-        key=f"{key_prefix}_setup_count_{unit_id}",
-    )
+    st.caption("Each full unit session is **15 questions**.")
+    question_count = 15
 
     st.markdown("---")
     st.markdown("#### Topics & difficulty levels")

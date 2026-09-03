@@ -138,7 +138,7 @@ def _start_practice(
     config = _week_config(unit_id)
     api_key = _xai_api_key()
     use_llm = bool(config.get("use_llm"))
-    question_count = count or int(config.get("question_count", 15))
+    question_count = count or 15
 
     def _build():
         if focus_category:
@@ -475,7 +475,7 @@ def render_unit():
         week_cfg = _week_config(unit_id)
         bank_size = ec3p.question_count_for_unit(unit_id)
         filtered_size = ec3p.question_count_for_unit(unit_id, config=week_cfg)
-        session_count = int(week_cfg.get("question_count", 15))
+        session_count = 15
         st.markdown("### 📝 Daily Practice")
         if bank_size:
             st.caption(
