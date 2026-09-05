@@ -114,7 +114,7 @@ def test_email() -> bool:
 
     print(f"  enabled:     {settings.enabled}")
     print(f"  transport:   {settings.transport}")
-    print(f"  recipient:   {_mask_email(settings.recipient)}")
+    print(f"  recipient:   {', '.join(_mask_email(r) for r in settings.recipients)}")
     print(f"  gmail_api:   {gmail_api_configured(settings)}")
     print(f"  smtp:        {smtp_configured(settings)}")
     if smtp_configured(settings):

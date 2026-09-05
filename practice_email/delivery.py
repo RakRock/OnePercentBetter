@@ -167,6 +167,53 @@ def _deliver_message(
         )
 
 
+def _deliver_to_recipients(
+    settings,
+    *,
+    subject: str,
+    plain: str,
+    html: str,
+    recipients: list[str],
+) -> EmailSendResult:
+    """Send the same message to each recipient; succeed if at least one delivery works."""
+    if not recipients:
+        return EmailSendResult(ok=False, skipped=True, error="PRACTICE_REPORT_EMAIL_TO is not set")
+
+    successes: list[tuple[str, EmailSendResult]] = []
+    failures: list[str] = []
+    for addr in recipients:
+        result = _deliver_message(
+            settings,
+            subject=subject,
+            plain=plain,
+            html=html,
+            recipient=addr,
+        )
+        if result.ok:
+            successes.append((addr, result))
+        else:
+            failures.append(f"{addr}: {result.error or 'send failed'}")
+
+    if successes:
+        addrs = [a for a, _ in successes]
+        display = " + ".join(addrs) if len(addrs) > 1 else addrs[0]
+        return EmailSendResult(
+            ok=True,
+            recipient=display,
+            extra_recipients=addrs[1:],
+            transport=successes[0][1].transport,
+            error="; ".join(failures) if failures else "",
+        )
+
+    first = recipients[0]
+    return EmailSendResult(
+        ok=False,
+        recipient=first,
+        extra_recipients=recipients[1:],
+        error="; ".join(failures) if failures else "Email send failed",
+    )
+
+
 def send_report(
     *,
     student_name: str,
@@ -185,7 +232,7 @@ def send_report(
     settings = load_settings()
     if not settings.enabled:
         return EmailSendResult(ok=False, skipped=True, error="Email disabled")
-    if not settings.recipient:
+    if not settings.recipients:
         return EmailSendResult(ok=False, skipped=True, error="PRACTICE_REPORT_EMAIL_TO is not set")
 
     ready, _transport, config_err = delivery_ready(settings)
@@ -213,12 +260,12 @@ def send_report(
         report_heading=report_heading,
     )
 
-    return _deliver_message(
+    return _deliver_to_recipients(
         settings,
         subject=subject,
         plain=plain,
         html=html,
-        recipient=settings.recipient,
+        recipients=list(settings.recipients),
     )
 
 
@@ -238,7 +285,7 @@ def send_harshit_session_emails(
     settings = load_settings()
     if not settings.enabled:
         return EmailSendResult(ok=False, skipped=True, error="Email disabled")
-    if not settings.recipient:
+    if not settings.recipients:
         return EmailSendResult(ok=False, skipped=True, error="PRACTICE_REPORT_EMAIL_TO is not set")
 
     ready, _transport, config_err = delivery_ready(settings)
@@ -270,7 +317,8 @@ def send_harshit_session_emails(
         return parent_result
 
     student_email = (settings.harshit_student_email or "").strip()
-    if not student_email or student_email == settings.recipient:
+    parent_addrs = {a.lower() for a in settings.recipients}
+    if not student_email or student_email.lower() in parent_addrs:
         return parent_result
 
     student_subject, student_plain, student_html = format_harshit_student_review_email(
@@ -290,7 +338,7 @@ def send_harshit_session_emails(
         recipient=student_email,
     )
 
-    combined_recipient = f"{settings.recipient} + {student_email}"
+    combined_recipient = f"{parent_result.recipient} + {student_email}"
     if student_result.ok:
         return EmailSendResult(
             ok=True,
@@ -301,7 +349,7 @@ def send_harshit_session_emails(
 
     return EmailSendResult(
         ok=True,
-        recipient=settings.recipient,
+        recipient=parent_result.recipient,
         extra_recipients=[student_email],
         transport=parent_result.transport,
         error=f"Parent report sent; student review failed: {student_result.error}",

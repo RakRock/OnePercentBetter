@@ -27,8 +27,11 @@ def _open_day(day_id: int):
 
 
 def _open_prereq_bucket(prereq_id: int):
+    import harshit_prereq_unit_notes as hpun
+
     st.session_state.hm_prereq_id = prereq_id
-    st.session_state[f"hm_bucket_section_{prereq_id}"] = "🎯 Practice"
+    start = "📘 Notes" if hpun.prereq_has_notes(prereq_id) else "🎯 Practice"
+    st.session_state[f"hm_bucket_section_{prereq_id}"] = start
     st.session_state.current_page = "harshit_prereq_bucket"
 
 
@@ -512,16 +515,22 @@ def render_prereq_bucket():
     )
     st.markdown(f'<p style="color:var(--hm-text-secondary);">{prereq.get("summary","")}</p>', unsafe_allow_html=True)
 
+    import harshit_prereq_unit_notes as hpun
+    import harshit_prereq_unit_notes_ui as hpnui
+
     section_key = f"hm_bucket_section_{prereq_id}"
     _apply_pending_nav(section_key, f"hm_bucket_nav_{prereq_id}")
     if st.session_state.get(section_key) == "📘 Chapters":
         st.session_state[section_key] = "🎯 Practice"
+    tabs = ["🎯 Practice", "📅 Week Setup"]
+    if hpun.prereq_has_notes(prereq_id):
+        tabs = ["📘 Notes", *tabs]
     if section_key not in st.session_state:
-        st.session_state[section_key] = "🎯 Practice"
+        st.session_state[section_key] = tabs[0]
 
     section = st.radio(
         "Section",
-        ["🎯 Practice", "📅 Week Setup"],
+        tabs,
         horizontal=True,
         key=section_key,
         label_visibility="collapsed",
@@ -529,7 +538,9 @@ def render_prereq_bucket():
 
     st.markdown("---")
 
-    if section == "🎯 Practice":
+    if section == "📘 Notes":
+        hpnui.render_prereq_notes(prereq_id)
+    elif section == "🎯 Practice":
         hppui.render_practice_home(prereq_id)
     else:
         hppui.render_setup_panel(prereq_id)

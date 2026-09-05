@@ -27,7 +27,7 @@ DEFAULT_HARSHIT_STUDENT_EMAIL = "harshitsai.rv@gmail.com"
 @dataclass(frozen=True)
 class EmailSettings:
     enabled: bool
-    recipient: str
+    recipients: tuple[str, ...]
     harshit_student_email: str
     transport: str
     smtp_host: str
@@ -39,6 +39,43 @@ class EmailSettings:
     gmail_client_id: str
     gmail_client_secret: str
     gmail_refresh_token: str
+
+    @property
+    def recipient(self) -> str:
+        """Primary recipient (first in list) — backward compatible."""
+        return self.recipients[0] if self.recipients else ""
+
+
+def parse_email_recipients(raw: str) -> list[str]:
+    """Split comma/semicolon-separated addresses; dedupe case-insensitively."""
+    if not raw:
+        return []
+    seen: set[str] = set()
+    out: list[str] = []
+    for part in re.split(r"[,;]+", raw):
+        addr = part.strip()
+        if not addr or "@" not in addr:
+            continue
+        key = addr.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(addr)
+    return out
+
+
+def merge_recipients(*groups: str) -> tuple[str, ...]:
+    """Combine multiple recipient strings into one deduped tuple."""
+    seen: set[str] = set()
+    out: list[str] = []
+    for group in groups:
+        for addr in parse_email_recipients(group):
+            key = addr.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append(addr)
+    return tuple(out)
 
 
 def _load_toml() -> dict:
@@ -193,16 +230,18 @@ def validate_smtp_host(host: str) -> tuple[bool, str]:
 
 def load_settings() -> EmailSettings:
     toml = _load_toml()
-    recipient = _get(toml, "PRACTICE_REPORT_EMAIL_TO")
+    recipient_to = _get(toml, "PRACTICE_REPORT_EMAIL_TO")
+    recipient_cc = _get(toml, "PRACTICE_REPORT_EMAIL_CC")
+    recipients = merge_recipients(recipient_to, recipient_cc)
     harshit_student = _get(toml, "HARSHIT_STUDENT_EMAIL", DEFAULT_HARSHIT_STUDENT_EMAIL)
-    enabled = _bool_val(_get(toml, "PRACTICE_REPORT_EMAIL_ENABLED"), bool(recipient))
+    enabled = _bool_val(_get(toml, "PRACTICE_REPORT_EMAIL_ENABLED"), bool(recipients))
     smtp_user = _get(toml, "SMTP_USER")
     password = (_get(toml, "SMTP_PASSWORD") or _get(toml, "SMTP_PASS")).replace(" ", "")
     transport = _get(toml, "PRACTICE_EMAIL_TRANSPORT", "auto").lower() or "auto"
     smtp_host = normalize_smtp_host(_get(toml, "SMTP_HOST"))
     return EmailSettings(
         enabled=enabled,
-        recipient=recipient,
+        recipients=recipients,
         harshit_student_email=harshit_student,
         transport=transport,
         smtp_host=smtp_host,
@@ -271,7 +310,7 @@ def delivery_ready(settings: EmailSettings | None = None) -> tuple[bool, str, st
 
 def email_configured() -> bool:
     s = load_settings()
-    if not s.enabled or not s.recipient:
+    if not s.enabled or not s.recipients:
         return False
     ready, _, _ = delivery_ready(s)
     return ready
@@ -280,7 +319,7 @@ def email_configured() -> bool:
 def practice_email_enabled() -> bool:
     """Recipient wants reports — may still need OAuth/SMTP setup."""
     s = load_settings()
-    return bool(s.enabled and s.recipient)
+    return bool(s.enabled and s.recipients)
 
 
 def format_config_error(settings: EmailSettings | None = None, mode: str | None = None) -> str:

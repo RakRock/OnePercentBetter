@@ -28,7 +28,8 @@ def email_status_message() -> str:
     ready, transport, err = delivery_ready(settings)
     if ready:
         via = "Gmail API" if transport == "gmail_api" else "SMTP"
-        return f"Report email ready → {settings.recipient} via {via}"
+        dest = " + ".join(settings.recipients) if len(settings.recipients) > 1 else settings.recipient
+        return f"Report email ready → {dest} via {via}"
     return err or format_config_error(settings)
 
 

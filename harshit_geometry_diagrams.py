@@ -90,6 +90,16 @@ def svg_trapezium() -> str:
     return _svg_wrap(parts)
 
 
+def svg_kite() -> str:
+    pts = {"A": (200, 45), "B": (300, 130), "C": (200, 215), "D": (100, 130)}
+    parts = [_polygon([pts[k] for k in "ABCD"], fill="#fce7f3", stroke="#db2777")]
+    parts.append(_segment(pts["A"], pts["C"], stroke="#dc2626", dash="6 4"))
+    parts.append(_segment(pts["B"], pts["D"], stroke="#059669", dash="6 4"))
+    parts.extend(_quad_labels(pts))
+    parts.append(_label(200, 24, "Kite ABCD  (AB = AD, CB = CD)", size=12, color="#64748b"))
+    return _svg_wrap(parts)
+
+
 def svg_triangle(
     *,
     angle_a: int | None = None,
@@ -119,6 +129,39 @@ def svg_triangle(
     return _svg_wrap(parts)
 
 
+def svg_isosceles_triangle() -> str:
+    """Isosceles △ABC with AC = BC and equal base angles."""
+    pts = {"A": (90, 200), "B": (310, 200), "C": (200, 50)}
+    parts = [_polygon([pts[k] for k in "ABC"], fill="#fef3c7", stroke="#d97706")]
+    for name, (x, y) in pts.items():
+        parts.append(_label(x, y + (16 if name != "C" else -10), name))
+    parts.append(_label(200, 188, "AB", size=12, color="#92400e"))
+    parts.append(_label(120, 120, "AC", size=12, color="#dc2626"))
+    parts.append(_label(280, 120, "BC", size=12, color="#dc2626"))
+    parts.append(_label(112, 188, "α", size=14, color="#dc2626"))
+    parts.append(_label(288, 188, "α", size=14, color="#dc2626"))
+    parts.append(_label(200, 24, "Isosceles: AC = BC → base angles equal", size=12, color="#64748b"))
+    return _svg_wrap(parts)
+
+
+def svg_congruent_triangles() -> str:
+    """Two triangles with matching tick marks — SSS idea."""
+    left = {"A": (50, 200), "B": (170, 200), "C": (90, 80)}
+    right = {"D": (230, 200), "E": (350, 200), "F": (270, 80)}
+    parts = [
+        _polygon([left[k] for k in "ABC"], fill="#dbeafe", stroke="#2563eb"),
+        _polygon([right[k] for k in "DEF"], fill="#dbeafe", stroke="#2563eb"),
+    ]
+    for name, (x, y) in {**left, **right}.items():
+        parts.append(_label(x, y + (14 if name in "ABE" else -10), name, size=13))
+    parts.append(_label(200, 24, "Congruent: same size and shape", size=12, color="#64748b"))
+    return _svg_wrap(parts)
+
+
+def _circle_outline(cx: float, cy: float, r: float) -> str:
+    return f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>'
+
+
 def svg_circle(*, variant: str = "basic", angle: int | None = None, hide_center_label: bool = False) -> str:
     cx, cy, r = 200, 135, 78
 
@@ -135,7 +178,7 @@ def svg_circle(*, variant: str = "basic", angle: int | None = None, hide_center_
         p_deg = a_deg + central / 2 + 180
         px, py = _pt(p_deg)
         parts = [
-            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>',
+            _circle_outline(cx, cy, r),
             _segment((cx, cy), (ax, ay), stroke="#2563eb"),
             _segment((cx, cy), (bx, by), stroke="#2563eb"),
             _segment((ax, ay), (bx, by), stroke="#7c3aed", dash="5 3"),
@@ -152,27 +195,144 @@ def svg_circle(*, variant: str = "basic", angle: int | None = None, hide_center_
         parts.append(_label(200, 24, "Find ∠APB — P is on the major arc", size=12, color="#64748b"))
         return _svg_wrap(parts)
 
+    if variant == "perp_chord":
+        ax, ay = _pt(200)
+        bx, by = _pt(340)
+        mx, my = (ax + bx) / 2, (ay + by) / 2
+        parts = [
+            _circle_outline(cx, cy, r),
+            _segment((ax, ay), (bx, by), stroke="#7c3aed"),
+            _segment((cx, cy), (mx, my), stroke="#059669"),
+            f'<path d="M {mx - 9:.1f} {my:.1f} L {mx - 9:.1f} {my - 9:.1f} L {mx:.1f} {my - 9:.1f}" '
+            f'fill="none" stroke="#059669" stroke-width="1.8"/>',
+            _label(cx - 14, cy + 4, "O"),
+            _label(ax - 14, ay + 4, "A"),
+            _label(bx + 12, by + 4, "B"),
+            _label(mx + 12, my + 4, "M", color="#059669"),
+            _label(200, 24, "OM ⊥ AB, so AM = MB", size=12, color="#64748b"),
+        ]
+        return _svg_wrap(parts)
+
+    if variant == "semicircle":
+        ax, ay = cx - r, cy
+        bx, by = cx + r, cy
+        px, py = _pt(90)
+        parts = [
+            _circle_outline(cx, cy, r),
+            _segment((ax, ay), (bx, by), stroke="#dc2626"),
+            _segment((ax, ay), (px, py), stroke="#2563eb"),
+            _segment((bx, by), (px, py), stroke="#2563eb"),
+            f'<path d="M {px - 10:.1f} {py:.1f} L {px - 10:.1f} {py + 10:.1f} L {px:.1f} {py + 10:.1f}" '
+            f'fill="none" stroke="#dc2626" stroke-width="1.8"/>',
+            _label(cx - 6, cy + 18, "O"),
+            _label(ax - 14, ay + 6, "A"),
+            _label(bx + 12, by + 6, "B"),
+            _label(px, py - 10, "P"),
+            _label(200, 24, "Angle in a semicircle: ∠APB = 90°", size=12, color="#64748b"),
+        ]
+        return _svg_wrap(parts)
+
+    if variant == "sector":
+        a_deg, b_deg = 25.0, 125.0
+        ax, ay = _pt(a_deg)
+        bx, by = _pt(b_deg)
+        large = 0 if (b_deg - a_deg) <= 180 else 1
+        parts = [
+            _circle_outline(cx, cy, r),
+            (
+                f'<path d="M {cx:.1f} {cy:.1f} L {ax:.1f} {ay:.1f} '
+                f'A {r} {r} 0 {large} 0 {bx:.1f} {by:.1f} Z" '
+                f'fill="#bfdbfe" stroke="#2563eb" stroke-width="2.5"/>'
+            ),
+            _segment((ax, ay), (bx, by), stroke="#7c3aed", dash="5 3"),
+            _label(cx - 6, cy + 6, "O"),
+            _label(ax + 10, ay + 4, "A"),
+            _label(bx - 12, by + 4, "B"),
+            _label(268, 78, "sector", color="#1d4ed8", size=12),
+            _label(200, 222, "segment (chord + arc)", color="#7c3aed", size=12),
+            _label(200, 24, "Sector = pie slice; segment = chord + arc", size=12, color="#64748b"),
+        ]
+        return _svg_wrap(parts)
+
+    if variant == "equal_chords":
+        a1, b1 = _pt(200), _pt(250)
+        c1, d1 = _pt(40), _pt(90)
+        parts = [
+            _circle_outline(cx, cy, r),
+            _segment((cx, cy), a1, stroke="#2563eb"),
+            _segment((cx, cy), b1, stroke="#2563eb"),
+            _segment((cx, cy), c1, stroke="#059669"),
+            _segment((cx, cy), d1, stroke="#059669"),
+            _segment(a1, b1, stroke="#7c3aed"),
+            _segment(c1, d1, stroke="#7c3aed"),
+            _label(cx - 8, cy + 6, "O"),
+            _label(a1[0] - 12, a1[1] + 6, "A"),
+            _label(b1[0] + 10, b1[1] + 6, "B"),
+            _label(c1[0] + 10, c1[1] + 4, "C"),
+            _label(d1[0] + 8, d1[1] - 6, "D"),
+            _label(200, 24, "Equal chords → equal angles at O", size=12, color="#64748b"),
+        ]
+        return _svg_wrap(parts)
+
+    if variant == "cyclic":
+        pts = [_pt(d) for d in (200, 40, 320, 130)]
+        names = "ABCD"
+        offsets = {"A": (-14, 6), "B": (12, 4), "C": (10, 8), "D": (-8, -8)}
+        parts = [
+            _circle_outline(cx, cy, r),
+            _polygon(pts, fill="#d1fae5", stroke="#059669"),
+            _label(cx - 6, cy + 6, "O"),
+        ]
+        for name, (x, y) in zip(names, pts):
+            ox, oy = offsets[name]
+            parts.append(_label(x + ox, y + oy, name))
+        parts.append(_label(200, 24, "Cyclic quadrilateral: opposite angles add to 180°", size=12, color="#64748b"))
+        return _svg_wrap(parts)
+
     parts = [
-        f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>',
+        _circle_outline(cx, cy, r),
         _segment((cx, cy), (cx + r, cy), stroke="#dc2626"),
         _label(cx + r / 2, cy + 18, "r", color="#dc2626"),
         _label(cx - 6, cy + 6, "O"),
     ]
-    if variant in ("chord", "cyclic"):
+    if variant == "chord":
         ax, ay = _pt(-35)
         bx, by = _pt(145)
         parts.append(_segment((ax, ay), (bx, by), stroke="#7c3aed", dash="5 3"))
         parts.append(_label(ax + 8, ay, "A"))
         parts.append(_label(bx - 8, by, "B"))
-    if variant == "cyclic":
-        qx, qy = _pt(60)
-        px, py = _pt(200)
-        rx, ry = _pt(300)
-        sx, sy = _pt(120)
-        parts.append(_polygon([(px, py), (qx, qy), (rx, ry), (sx, sy)], fill="none", stroke="#059669"))
-        parts.append(_label(200, 24, "Cyclic quadrilateral", size=12, color="#64748b"))
+        parts.append(_label(200, 24, "Chord AB — diameter is the longest chord", size=12, color="#64748b"))
     else:
         parts.append(_label(200, 24, "Circle with centre O", size=12, color="#64748b"))
+    return _svg_wrap(parts)
+
+
+def svg_two_points_line() -> str:
+    """Euclid: exactly one line through two distinct points P and Q."""
+    px, py, qx, qy = 110, 150, 290, 110
+    parts = [
+        _segment((40, 168), (360, 92)),
+        f'<circle cx="{px}" cy="{py}" r="6" fill="#2563eb"/>',
+        f'<circle cx="{qx}" cy="{qy}" r="6" fill="#2563eb"/>',
+        _label(px, py + 28, "P", color="#1d4ed8"),
+        _label(qx, qy - 16, "Q", color="#1d4ed8"),
+        _label(200, 24, "Exactly one line through P and Q", size=12, color="#64748b"),
+    ]
+    return _svg_wrap(parts)
+
+
+def svg_linear_pair() -> str:
+    """Adjacent angles on a straight line — a linear pair (sum 180°)."""
+    ox, oy = 200, 160
+    parts = [
+        _segment((50, oy), (350, oy)),
+        _segment((ox, oy), (270, 60), stroke="#dc2626"),
+        f'<path d="M {ox + 42} {oy} A 42 42 0 0 0 {ox + 28} {oy - 32}" fill="none" stroke="#dc2626" stroke-width="2"/>',
+        f'<path d="M {ox - 42} {oy} A 42 42 0 0 1 {ox + 20} {oy - 36}" fill="none" stroke="#2563eb" stroke-width="2"/>',
+        _label(ox + 58, oy - 18, "a", color="#dc2626"),
+        _label(ox - 8, oy - 48, "b", color="#2563eb"),
+        _label(200, 24, "Linear pair: a + b = 180°", size=12, color="#64748b"),
+    ]
     return _svg_wrap(parts)
 
 
@@ -356,6 +516,8 @@ def render_geometry_svg(spec: dict) -> str | None:
         return svg_rhombus(show_diagonals=bool(spec.get("show_diagonals", True)))
     if kind == "trapezium":
         return svg_trapezium()
+    if kind == "kite":
+        return svg_kite()
     if kind == "triangle":
         return svg_triangle(
             angle_a=spec.get("angle_a"),
@@ -363,6 +525,10 @@ def render_geometry_svg(spec: dict) -> str | None:
             midpoints=bool(spec.get("midpoints")),
             exterior=bool(spec.get("exterior")),
         )
+    if kind == "isosceles_triangle":
+        return svg_isosceles_triangle()
+    if kind == "congruent_triangles":
+        return svg_congruent_triangles()
     if kind == "circle":
         return svg_circle(
             variant=str(spec.get("variant", "basic")),
@@ -375,4 +541,8 @@ def render_geometry_svg(spec: dict) -> str | None:
         return svg_intersecting_lines(angle_a=spec.get("angle_a"), angle_b=spec.get("angle_b"))
     if kind == "angle_arc":
         return svg_angle_arc(int(spec.get("degrees", 45)))
+    if kind == "two_points_line":
+        return svg_two_points_line()
+    if kind == "linear_pair":
+        return svg_linear_pair()
     return None
