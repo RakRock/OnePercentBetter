@@ -74,5 +74,33 @@ class TestSpanishPractice(unittest.TestCase):
         self.assertEqual({x["id"] for x in round_["left"]}, {x["id"] for x in round_["right"]})
 
 
+class TestSpanishSession(unittest.TestCase):
+    def test_build_session_from_bank(self) -> None:
+        from arjun_spanish import session as ess
+
+        cfg = {
+            "topics": ["greetings", "numbers"],
+            "use_llm": False,
+            "question_count": 6,
+        }
+        questions, err = ess.build_session_set(cfg, count=6)
+        self.assertEqual(err, "")
+        self.assertEqual(len(questions), 6)
+        for q in questions:
+            self.assertEqual(len(q["options"]), 4)
+            self.assertIn(q["answer"], range(4))
+            self.assertTrue(q.get("explanation"))
+
+    def test_card_to_question_format(self) -> None:
+        from arjun_spanish import bank as esbank
+
+        card = es.cards_for_topic("greetings")[0]
+        q = esbank.card_to_question(card, direction="es_en")
+        self.assertIsNotNone(q)
+        assert q is not None
+        self.assertIn("Buenos días", q["question"])
+        self.assertEqual(len(q["options"]), 4)
+
+
 if __name__ == "__main__":
     unittest.main()

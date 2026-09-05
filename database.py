@@ -221,6 +221,13 @@ def init_db():
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
 
+            CREATE TABLE IF NOT EXISTS arjun_spanish_config (
+                id INTEGER PRIMARY KEY CHECK (id = 1),
+                week_label TEXT NOT NULL DEFAULT '',
+                config_json TEXT NOT NULL DEFAULT '{}',
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+
             CREATE TABLE IF NOT EXISTS harshit_practice_sessions (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 user_id INTEGER NOT NULL,
@@ -2017,6 +2024,53 @@ def save_arjun_course3_week_config(
                  config_json = excluded.config_json,
                  updated_at = CURRENT_TIMESTAMP""",
             (unit_id, week_label, json.dumps(payload)),
+        )
+
+
+def get_arjun_spanish_config() -> dict:
+    try:
+        with get_connection() as conn:
+            row = conn.execute(
+                "SELECT week_label, config_json FROM arjun_spanish_config WHERE id = 1"
+            ).fetchone()
+    except Exception:
+        return {}
+    if not row:
+        return {}
+    try:
+        data = json.loads(row["config_json"] or "{}")
+    except json.JSONDecodeError:
+        data = {}
+    if not isinstance(data, dict):
+        data = {}
+    data["week_label"] = row["week_label"] or data.get("week_label", "")
+    return data
+
+
+def save_arjun_spanish_config(
+    week_label: str,
+    topics: list[str],
+    *,
+    use_llm: bool = True,
+    grok_fresh_only: bool = False,
+    question_count: int = 12,
+) -> None:
+    payload = {
+        "week_label": week_label,
+        "topics": [str(t) for t in topics if t],
+        "use_llm": bool(use_llm),
+        "grok_fresh_only": bool(grok_fresh_only),
+        "question_count": max(5, min(20, int(question_count))),
+    }
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO arjun_spanish_config (id, week_label, config_json, updated_at)
+               VALUES (1, ?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(id) DO UPDATE SET
+                 week_label = excluded.week_label,
+                 config_json = excluded.config_json,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (week_label, json.dumps(payload)),
         )
 
 

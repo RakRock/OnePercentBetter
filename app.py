@@ -7185,6 +7185,12 @@ def render_arjun_spanish_practice():
     arjun_spanish_ui.render_practice()
 
 
+def render_arjun_spanish_session():
+    import arjun_spanish_ui
+
+    arjun_spanish_ui.render_session()
+
+
 # ──────────────────────────────────────────────
 # Main Router
 # ──────────────────────────────────────────────
@@ -7226,6 +7232,8 @@ elif page == "arjun_spanish_home":
     render_arjun_spanish_home()
 elif page == "arjun_spanish_practice":
     render_arjun_spanish_practice()
+elif page == "arjun_spanish_session":
+    render_arjun_spanish_session()
 elif page == "map_explorer_home":
     render_map_explorer_home()
 elif page == "map_explorer_practice":

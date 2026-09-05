@@ -1,0 +1,206 @@
+[
+  {
+    "id": "es_grok_body_31bc0c19ed",
+    "category": "body",
+    "category_label": "💪 Body & feelings",
+    "question": "How do you say \"the leg\" in Spanish?",
+    "options": [
+      "la pierna",
+      "el pie",
+      "la cabeza",
+      "el brazo"
+    ],
+    "answer": 0,
+    "explanation": "Remember 'pierna' sounds like 'pier' which can help link to leg.",
+    "direction": "en_es",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_goodbyes_4f8839e844",
+    "category": "goodbyes",
+    "category_label": "🙌 Titles & goodbyes",
+    "question": "¿Qué significa \"¡Nos vemos!\" en inglés?",
+    "options": [
+      "Good-bye!",
+      "See you!",
+      "Hello!",
+      "Good morning"
+    ],
+    "answer": 1,
+    "explanation": "Think of 'vemos' as seeing each other again soon.",
+    "direction": "es_en",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_weather_fa892e1158",
+    "category": "weather",
+    "category_label": "☀️ Weather & seasons",
+    "question": "¿Qué significa \"Nieva.\" en inglés?",
+    "options": [
+      "It's sunny.",
+      "It's snowing.",
+      "It's hot.",
+      "It's summer"
+    ],
+    "answer": 1,
+    "explanation": "Nieva comes from nieve (snow) so it means snowing.",
+    "direction": "es_en",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_commands_b10a84b209",
+    "category": "commands",
+    "category_label": "📣 Class commands",
+    "question": "¿Qué significa \"Levántense, por favor.\" en inglés?",
+    "options": [
+      "Open the book.",
+      "Repeat, please.",
+      "Stand up, please.",
+      "Close the book"
+    ],
+    "answer": 2,
+    "explanation": "Levántense starts with 'lev' like lift, so think stand up.",
+    "direction": "es_en",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_numbers_91d2820240",
+    "category": "numbers",
+    "category_label": "🔢 Numbers",
+    "question": "What is \"twenty-two\" in Spanish?",
+    "options": [
+      "veintitrés",
+      "diecinueve",
+      "veintidós",
+      "cero"
+    ],
+    "answer": 2,
+    "explanation": "Veintidós combines veinte (20) and dos (2).",
+    "direction": "en_es",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_greetings_3008b6e584",
+    "category": "greetings",
+    "category_label": "👋 Greetings",
+    "question": "How do you say \"Good afternoon.\" in Spanish?",
+    "options": [
+      "Buenas tardes.",
+      "Me llamo…",
+      "Mucho gusto.",
+      "¡Hola!"
+    ],
+    "answer": 0,
+    "explanation": "Tardes means afternoons, so pair it with buenas.",
+    "direction": "en_es",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_calendar_ddcb74dc64",
+    "category": "calendar",
+    "category_label": "📅 Calendar",
+    "question": "¿Qué significa \"julio\" en inglés?",
+    "options": [
+      "the day",
+      "today",
+      "July",
+      "November"
+    ],
+    "answer": 2,
+    "explanation": "Julio starts with Ju like June but it's the next month, July.",
+    "direction": "es_en",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_feelings_419d149f39",
+    "category": "feelings",
+    "category_label": "😊 How are you?",
+    "question": "How do you say \"And you?\" (formal) in Spanish?",
+    "options": [
+      "¿Y tú?",
+      "mal",
+      "¿Y usted?",
+      "muy bien"
+    ],
+    "answer": 2,
+    "explanation": "Use usted for formal situations like with adults.",
+    "direction": "en_es",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_phrases_fd0df931bd",
+    "category": "phrases",
+    "category_label": "💬 Classroom phrases",
+    "question": "How do you say \"How do you spell…?\" in Spanish?",
+    "options": [
+      "Se dice…",
+      "¿Cómo se escribe…?",
+      "¿Cómo se dice…?",
+      "¿Qué quiere decir…?"
+    ],
+    "answer": 1,
+    "explanation": "Escribe comes from escribir (to write).",
+    "direction": "en_es",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_classroom_89ce8c34cf",
+    "category": "classroom",
+    "category_label": "✏️ Classroom objects",
+    "question": "What is \"the student desk\" in Spanish?",
+    "options": [
+      "la profesora",
+      "el pupitre",
+      "el lápiz",
+      "la mochila"
+    ],
+    "answer": 1,
+    "explanation": "Pupitre is the desk where a pupil sits.",
+    "direction": "en_es",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_greetings_9f9b50f2d0",
+    "category": "greetings",
+    "category_label": "👋 Greetings",
+    "question": "¿Qué significa \"Buenos días.\" en inglés?",
+    "options": [
+      "Hello! / Hi!",
+      "Likewise. / Same here.",
+      "Good morning.",
+      "Nice to meet you."
+    ],
+    "answer": 2,
+    "explanation": "Días means days, so Buenos días greets the morning.",
+    "direction": "es_en",
+    "source": "llm",
+    "level": "B"
+  },
+  {
+    "id": "es_grok_time_1ffbdc7b1c",
+    "category": "time",
+    "category_label": "🕐 Telling time",
+    "question": "¿Qué significa \"Son las once.\" en inglés?",
+    "options": [
+      "It's one o'clock.",
+      "It's eleven o'clock.",
+      "in the morning",
+      "It's four o'clock."
+    ],
+    "answer": 1,
+    "explanation": "Once means eleven, like 'once' upon a time but for 11.",
+    "direction": "es_en",
+    "source": "llm",
+    "level": "B"
+  }
+]

@@ -9,8 +9,10 @@ import time
 import streamlit as st
 
 import database as db
+import edgenuity_practice_email as ec3mail
 from arjun_spanish import content as es
 from arjun_spanish import practice as esp
+from arjun_spanish import practice_ui as espu
 
 PRIMARY = "#c2410c"
 GOLD = "#d97706"
@@ -184,13 +186,46 @@ def render_home() -> None:
         )
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    section = st.radio(
+        "Section",
+        ["🎯 Daily practice", "📚 Study modes", "⚙️ Practice setup"],
+        horizontal=True,
+        key="es_home_section",
+        label_visibility="collapsed",
+    )
+    st.markdown("---")
+
+    if section == "🎯 Daily practice":
+        espu.render_practice_home_panel()
+    elif section == "⚙️ Practice setup":
+        espu.render_setup_panel()
+    else:
+        _render_study_modes()
+
+    with st.expander("🔊 Pronunciation cheat sheet"):
+        st.markdown(
+            """
+- **Vowels:** a *ah* · e *eh* · i *ee* · o *oh* · u *oo*
+- **h** is silent: *hola* sounds like *ola*
+- **j** and **g** (before e/i) are a scratchy *h*: *jueves*, *gente*
+- **ñ** is *ny*: *mañana* → *ma-NYA-na*
+- **ll** is like *y*: *me llamo* → *me YA-mo*
+- **rr** is a rolled r: *perro*
+- **c** is *s* before e/i (*cinco*), and *k* before a/o/u (*casa*)
+- Formal **usted (Ud.)** with adults; informal **tú** with friends
+            """
+        )
+
+
+def _render_study_modes() -> None:
     st.markdown(
         f"""
         <div style="background:linear-gradient(135deg,{PRIMARY},{GOLD});border-radius:20px;
              padding:1.2rem 1.4rem;color:white;margin-bottom:0.6rem;">
-            <div style="font-size:2rem;">🔥 Daily mix</div>
+            <div style="font-size:2rem;">🔥 Study modes</div>
             <div style="opacity:0.95;margin-top:0.25rem;">
-                {es.FLASH_SIZE} cards from the whole bank · {es.total_cards()} words ready
+                Flash cards, quiz, typing, and matching · {es.total_cards()} words in the bank
             </div>
         </div>
         """,
@@ -212,19 +247,9 @@ def render_home() -> None:
     st.caption("New words to grow beyond the first packet.")
     _topic_grid([t for t in es.TOPICS if t["source"] == "extra"])
 
-    with st.expander("🔊 Pronunciation cheat sheet"):
-        st.markdown(
-            """
-- **Vowels:** a *ah* · e *eh* · i *ee* · o *oh* · u *oo*
-- **h** is silent: *hola* sounds like *ola*
-- **j** and **g** (before e/i) are a scratchy *h*: *jueves*, *gente*
-- **ñ** is *ny*: *mañana* → *ma-NYA-na*
-- **ll** is like *y*: *me llamo* → *me YA-mo*
-- **rr** is a rolled r: *perro*
-- **c** is *s* before e/i (*cinco*), and *k* before a/o/u (*casa*)
-- Formal **usted (Ud.)** with adults; informal **tú** with friends
-            """
-        )
+
+def render_session() -> None:
+    espu.render_session()
 
 
 def _topic_grid(topics: list[dict]) -> None:

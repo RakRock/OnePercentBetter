@@ -38,6 +38,26 @@ def validate_question(q: dict, *, program: str = "auto") -> ValidationResult:
     if program in ("harshit", "generic", "auto"):
         return _validate_generic(q, errors)
 
+    if program == "spanish":
+        return _validate_spanish(q, errors)
+
+    return ValidationResult(ok=not errors, errors=errors)
+
+
+def _validate_spanish(q: dict, errors: list[str]) -> ValidationResult:
+    text = str(q.get("question", "")).strip()
+    options = [str(o).strip() for o in q.get("options", [])]
+    if len(text) < 8:
+        errors.append("Question too short")
+    if len(options) != 4 or len({o.lower() for o in options}) < 4:
+        errors.append("Need 4 distinct options")
+    answer = q.get("answer")
+    if not isinstance(answer, int) or answer not in range(4):
+        errors.append("Answer must be 0-3")
+    if not str(q.get("explanation", "")).strip():
+        errors.append("Missing explanation")
+    if not (q.get("category") or q.get("category_label")):
+        errors.append("Missing category metadata")
     return ValidationResult(ok=not errors, errors=errors)
 
 
