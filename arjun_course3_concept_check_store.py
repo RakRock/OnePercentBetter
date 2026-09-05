@@ -6,6 +6,12 @@ import json
 import re
 from pathlib import Path
 
+from numeric_expression_eval import (
+    ensure_numeric_answer_key,
+    ensure_simplest_form_answer,
+    validate_distinct_options,
+)
+
 ROOT = Path(__file__).resolve().parent
 CONCEPT_CHECK_DIR = ROOT / "ArjunCourse3" / "concept_checks"
 
@@ -38,6 +44,24 @@ def load_ai_bank(unit_id: int) -> list[dict]:
         q = dict(item)
         q.setdefault("source", "concept_check")
         q.setdefault("origin", "llm")
+        opts = q.get("options")
+        ans = q.get("answer")
+        if isinstance(opts, list) and len(opts) == 4 and isinstance(ans, int) and ans in range(4):
+            options_raw = [str(o) for o in opts]
+            question = str(q.get("question", ""))
+            try:
+                validate_distinct_options(options_raw)
+            except ValueError:
+                continue
+            try:
+                ans = ensure_numeric_answer_key(question, options_raw, ans)
+            except ValueError:
+                pass
+            try:
+                ans = ensure_simplest_form_answer(question, options_raw, ans)
+            except ValueError:
+                pass
+            q["answer"] = ans
         out.append(q)
     return out
 

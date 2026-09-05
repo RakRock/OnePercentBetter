@@ -2853,6 +2853,23 @@ def pick_or_generate_concept_check(
     def _level_ok(lvl: str) -> bool:
         return not allowed_levels or lvl in allowed_levels
 
+    def _finalize_pick(q: dict) -> dict:
+        out = dict(q)
+        opts = out.get("options")
+        ans = out.get("answer")
+        if isinstance(opts, list) and len(opts) == 4 and isinstance(ans, int) and ans in range(4):
+            try:
+                from numeric_expression_eval import ensure_numeric_answer_key
+
+                out["answer"] = ensure_numeric_answer_key(
+                    str(out.get("question", "")),
+                    [str(o) for o in opts],
+                    ans,
+                )
+            except ValueError:
+                pass
+        return out
+
     def _try_pick(allow_recent: bool) -> dict | None:
         candidates = [
             q
@@ -2869,7 +2886,7 @@ def pick_or_generate_concept_check(
             pool = [q for q, lvl in tagged if lvl == target]
             random.shuffle(pool)
             if pool:
-                q = dict(pool[0])
+                q = _finalize_pick(pool[0])
                 used_ids.add(q["id"])
                 return q
         return None

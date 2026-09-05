@@ -8,6 +8,7 @@ import uuid
 
 import streamlit as st
 
+import arjun_course3_answers as c3ans
 import arjun_course3_content as c3
 import arjun_course3_practice as c3p
 import arjun_course3_render as c3r
@@ -556,7 +557,7 @@ def render_practice():
                 col = ans_col1 if i % 2 == 0 else ans_col2
                 with col:
                     if st.button(str(opt), key=f"c3_opt_{current}_{i}", use_container_width=True, type="primary"):
-                        is_correct = i == q["answer"]
+                        is_correct = c3ans.is_pick_correct(q, i)
                         st.session_state.c3_answers.append({
                             "picked": opt,
                             "correct_val": q["options"][q["answer"]],

@@ -14,6 +14,11 @@ import arjun_course3_concept_check_store as c3store
 import arjun_course3_content as c3
 import arjun_course3_levels as c3lvl
 from llm_question_format import KID_NUMERIC_FORMAT_RULES, NUMERIC_RETRY_HINT, validate_numerical_format
+from numeric_expression_eval import (
+    ensure_numeric_answer_key,
+    ensure_simplest_form_answer,
+    validate_distinct_options,
+)
 from xai_client import make_xai_client
 
 XAI_MODEL = "grok-3-mini"
@@ -55,6 +60,8 @@ RULES:
 - Self-contained full-sentence stems; no images — describe graphs/tables in words.
 - Wrong options = plausible mistakes from the school's concept checks.
 - Match the requested category and level exactly. Each stem must be unique.
+- For "simplest form" fraction answers: put ONLY the reduced fraction in options (e.g. 5/11, not 45/99).
+- Never put two options that are the same value in different forms (e.g. do not list both 45/99 and 5/11).
 {KID_NUMERIC_FORMAT_RULES}
 
 Respond with ONLY a JSON array of {count} object{"s" if count != 1 else ""}:
@@ -72,8 +79,13 @@ def _normalize_item(q: dict, unit_id: int, category: str, fallback_level: str, c
     ans = q.get("answer")
     if not isinstance(ans, int) or ans not in range(4):
         raise ValueError("answer must be 0-3")
-    validate_numerical_format(str(q.get("question", "")), [str(o) for o in q["options"]])
-    correct = str(q["options"][ans])
+    options_raw = [str(o) for o in q["options"]]
+    question = str(q.get("question", "")).strip()
+    validate_numerical_format(question, options_raw)
+    validate_distinct_options(options_raw)
+    ans = ensure_numeric_answer_key(question, options_raw, ans)
+    ans = ensure_simplest_form_answer(question, options_raw, ans)
+    correct = options_raw[ans]
     indices = list(range(4))
     random.shuffle(indices)
     options = [str(q["options"][j]) for j in indices]
@@ -86,7 +98,7 @@ def _normalize_item(q: dict, unit_id: int, category: str, fallback_level: str, c
         "id": f"cc_ai_u{unit_id}_{category}_{stamp}_{random.randint(100, 999)}",
         "category": cat,
         "level": lvl,
-        "question": str(q.get("question", "")).strip(),
+        "question": question,
         "options": options,
         "answer": answer,
         "explanation": str(q.get("explanation", "")).strip(),
