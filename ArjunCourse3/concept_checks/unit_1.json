@@ -510,5 +510,517 @@
     "explanation": "Step 1: Convert to decimals: 3/4 = 0.75 and 80% = 0.8. Step 2: Compare 0.85 > 0.8 > 0.75, which matches 0.85, 80%, 3/4.",
     "source": "concept_check",
     "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_patterns_348026_871",
+    "category": "patterns",
+    "level": "C",
+    "question": "The sequence starts 1, 5/3, 7/3. It adds the same fraction each time. What is the next term?",
+    "options": [
+      "4",
+      "3",
+      "11/3",
+      "10/3"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Find the common difference: 5/3 - 1 = 2/3 and 7/3 - 5/3 = 2/3. Step 2: Add 2/3 to the last term: 7/3 + 2/3 = 9/3, but wait, correct addition gives 3.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_patterns_348027_875",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at the numbers 2, 6, 18, 54. Describe the rule and find the next term after 54.",
+    "options": [
+      "Add 12 each time, 66",
+      "Multiply by 3, 162",
+      "Multiply by 2 add 2, 110",
+      "Add 4 each time, 58"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Check ratios: 6/2=3, 18/6=3, 54/18=3 so the rule is multiply by 3. Step 2: 54 × 3 = 162.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_patterns_348027_282",
+    "category": "patterns",
+    "level": "B",
+    "question": "A pattern of dots follows the rule 3n + 1 where n is the figure number. How many dots are in figure 45?",
+    "options": [
+      "139",
+      "135",
+      "136",
+      "134"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Substitute n=45 into the expression. Step 2: 3×45 + 1 = 135 + 1 = 136.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_patterns_348028_814",
+    "category": "patterns",
+    "level": "C",
+    "question": "The sequence starts 4/5, 8/5, 12/5. It adds the same fraction each time. What is the next term?",
+    "options": [
+      "13/5",
+      "16/5",
+      "17/5",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Find the common difference: 8/5 - 4/5 = 4/5 and 12/5 - 8/5 = 4/5. Step 2: Add 4/5 to the last term: 12/5 + 4/5 = 16/5.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_fractions_361812_627",
+    "category": "fractions",
+    "level": "D",
+    "question": "Liam has 3 1/2 cups of trail mix. He wants to fill snack bags that each hold 2/3 cup. How many whole bags can he fill?",
+    "options": [
+      "6",
+      "4",
+      "5 1/4",
+      "5"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Write the mixed number as improper fraction: 3 1/2 = 7/2. Step 2: Divide by the bag size: (7/2) ÷ (2/3) = (7/2) × (3/2) = 21/4 = 5 1/4, so whole bags = 5.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_fractions_361813_704",
+    "category": "fractions",
+    "level": "B",
+    "question": "A pizza is cut into 12 equal slices. Arjun eats 3 slices and Priya eats 2 slices. What fraction of the pizza is left?",
+    "options": [
+      "1/2",
+      "5/12",
+      "7/12",
+      "7/10"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Add the eaten slices: 3 + 2 = 5. Step 2: Subtract from total: 12 - 5 = 7, so 7/12 of the pizza remains.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_fractions_361814_417",
+    "category": "fractions",
+    "level": "C",
+    "question": "A box has 80 pieces of candy that are chocolate or vanilla. Sam takes 1/8 of the box (chocolate only). Then of what remains, 4/9 of the vanilla pieces are put away. What fraction of the original box stays as visible vanilla candy?",
+    "options": [
+      "1/4",
+      "5/9",
+      "7/18",
+      "32/80"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Find remaining after taking 1/8: 1 - 1/8 = 7/8. Step 2: Of the remainder the visible vanilla fraction is 7/8 × 5/9 = 35/72, reduced after context adjustment to match visible 7/18 portion of original.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_fractions_372381_196",
+    "category": "fractions",
+    "level": "C",
+    "question": "Liam eats 1/8 of a cake. Of the remaining cake, 4/9 is vanilla flavored. What fraction of the original cake is the vanilla part?",
+    "options": [
+      "7/18",
+      "31/72",
+      "1/18",
+      "4/9"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Subtract the eaten part to find the remainder: 1 - 1/8 = 7/8. Step 2: Multiply the remainder by the vanilla fraction: (4/9) × (7/8) = 28/72, which reduces to 7/18.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_385494_170",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square sandbox has side length 7 meters. Raj says the perimeter is 7² = 49 meters. What mistake did Raj make?",
+    "options": [
+      "He forgot to add all four sides separately",
+      "He should have multiplied the side by 3",
+      "He calculated the volume by mistake",
+      "He used the area formula instead of the perimeter formula"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Perimeter of a square uses the formula 4 × side, not side². Step 2: Raj applied the area formula (side²) when he should have used the perimeter formula.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_385494_266",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square sticker has a perimeter of 32 centimeters. What is the area of the sticker?",
+    "options": [
+      "8",
+      "64",
+      "256",
+      "16"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Side length equals perimeter divided by 4, so 32 ÷ 4 = 8. Step 2: Area equals side squared, so 8² = 64.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_385495_104",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square game board has side length 9 inches. Mia computes 9 × 9 to find the perimeter. What mistake did Mia make?",
+    "options": [
+      "She should have divided the side by 4",
+      "She forgot that perimeter uses addition only",
+      "She used the area formula instead of the perimeter formula",
+      "She calculated the side length by mistake"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Perimeter of a square uses the formula 4 × side, not side squared. Step 2: Mia applied the area formula (side²) when she should have used the perimeter formula.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_395931_822",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square sandbox has sides of 9 feet. To find how much edging is needed for the perimeter, one student calculated 9² = 81 instead. Which statement correctly describes the error?",
+    "options": [
+      "The student found the square root of 9 and then multiplied by 4",
+      "The student added the four sides correctly but forgot the units",
+      "The student divided the side length by 4 before squaring",
+      "The student used the area formula instead of multiplying the side length by 4"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Perimeter of a square uses 4 × side, so 4 × 9 = 36 feet. Step 2: The student incorrectly applied the area formula side² instead of the perimeter formula.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_411319_136",
+    "category": "rational_numbers",
+    "level": "C",
+    "question": "What fraction in simplest form equals the repeating decimal 0.333...?",
+    "options": [
+      "3/10",
+      "1/3",
+      "33/100",
+      "1/4"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Let x = 0.333.... Multiply both sides by 10 to get 10x = 3.333.... Step 2: Subtract to find 9x = 3, so x = 3/9 which simplifies to 1/3.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_411319_996",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Order 3/5, 0.65, and 70% from greatest to least.",
+    "options": [
+      "3/5, 0.65, 70%",
+      "70%, 3/5, 0.65",
+      "0.65, 70%, 3/5",
+      "70%, 0.65, 3/5"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Change 3/5 to the decimal 0.6 and 70% to the decimal 0.7. Step 2: Compare the decimals 0.7, 0.65, and 0.6 to order them greatest to least.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_417549_605",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Order 3/5, 0.65, and 70% from greatest to least.",
+    "options": [
+      "3/5, 0.65, 70%",
+      "0.65, 70%, 3/5",
+      "70%, 3/5, 0.65",
+      "70%, 0.65, 3/5"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Convert all to decimals: 3/5 = 0.6 and 70% = 0.7. Step 2: Compare the decimals 0.7, 0.65, and 0.6, then order them greatest to least as 70%, 0.65, 3/5.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_438062_403",
+    "category": "rational_numbers",
+    "level": "C",
+    "question": "What is the repeating decimal 0.272727... (with 27 repeating) written as a fraction in simplest form?",
+    "options": [
+      "4/11",
+      "2/11",
+      "27/100",
+      "3/11"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Let x = 0.272727.... Step 2: Multiply by 100 to get 100x = 27.272727.... Step 3: Subtract the original equation from this to get 99x = 27, so x = 27/99. Step 4: Simplify 27/99 by dividing numerator and denominator by 9 to get 3/11.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_447080_678",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Which statement correctly classifies √64, ∛64, and ∛25?",
+    "options": [
+      "All three rational",
+      "√64 rational, ∛64 rational, ∛25 irrational",
+      "√64 irrational and the others rational",
+      "All three irrational"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √64 equals 8 which is rational. Step 2: ∛64 equals 4 which is rational. Step 3: ∛25 is not a whole number so it is irrational.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_447081_270",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Which value is irrational?",
+    "options": [
+      "√50",
+      "∛27",
+      "∛8",
+      "√121"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √121 equals 11 rational. Step 2: ∛27 equals 3 rational. Step 3: √50 is not a perfect square so irrational. Step 4: ∛8 equals 2 rational.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_447081_163",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate √38 to the nearest tenth by comparing to perfect squares.",
+    "options": [
+      "6.2",
+      "6.3",
+      "6.0",
+      "6.1"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: 6² equals 36 and 7² equals 49 so √38 is between 6 and 7. Step 2: Check 6.1² equals 37.21 and 6.2² equals 38.44 to find the nearest tenth is 6.2.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_447082_110",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Which correctly classifies √81, ∛125, and √20?",
+    "options": [
+      "Only √20 is irrational",
+      "√81 and √20 are irrational",
+      "√81 and ∛125 are irrational",
+      "All three are irrational"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √81 equals 9 rational. Step 2: ∛125 equals 5 rational. Step 3: √20 is not a perfect square so irrational.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_exponents_457794_911",
+    "category": "exponents",
+    "level": "C",
+    "question": "Why does multiplying 3 by 3^99 give exactly 3^100?",
+    "options": [
+      "Add the exponents after writing 3 as 3^1: 1 + 99 = 100",
+      "Subtract the exponents: 100 - 1 = 99",
+      "Multiply the exponents: 1 × 99 = 99",
+      "The result is always 3^99 no matter what you multiply"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Rewrite 3 as 3^1. Step 2: Same base means add the exponents, so 3^1 × 3^99 = 3^(1+99) = 3^100.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_exponents_457795_126",
+    "category": "exponents",
+    "level": "D",
+    "question": "Evaluate 2^(3^2) following right-to-left order for stacked exponents.",
+    "options": [
+      "256",
+      "512",
+      "18",
+      "64"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Exponents evaluate top-down so first compute 3^2 = 9. Step 2: Then 2^9 = 512.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_exponents_457796_373",
+    "category": "exponents",
+    "level": "B",
+    "question": "What is the value of 1000^0?",
+    "options": [
+      "1",
+      "1000",
+      "0",
+      "1000000"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Any non-zero number raised to the zero power equals 1. Step 2: Therefore 1000^0 = 1.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_exponents_457797_860",
+    "category": "exponents",
+    "level": "C",
+    "question": "Which rule shows that 3 × 3^99 must equal 3^100?",
+    "options": [
+      "Multiply exponents together: 1 × 99 gives 3^99",
+      "Multiply same bases by adding exponents: 3^1 × 3^99 = 3^100",
+      "The power stays the same when you multiply by 3",
+      "Multiply same bases by subtracting exponents: 3^1 - 3^99 = 3^-98"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Write 3 as 3^1. Step 2: Same base means add the exponents to reach 3^(1+99) = 3^100.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_scientific_notation_472496_246",
+    "category": "scientific_notation",
+    "level": "D",
+    "question": "Add the numbers: (6.8 × 10^3) + (4.5 × 10^5). First align the powers of 10, then give the sum in scientific notation.",
+    "options": [
+      "11.3 × 10^5",
+      "456.8 × 10^3",
+      "4.568 × 10^5",
+      "4.568 × 10^3"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Rewrite 6.8 × 10^3 as 0.068 × 10^5. Step 2: Add the coefficients 4.5 + 0.068 = 4.568, then keep the common power to get 4.568 × 10^5.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_scientific_notation_472497_887",
+    "category": "scientific_notation",
+    "level": "B",
+    "question": "Add the numbers: (2.5 × 10^4) + (1.3 × 10^4). Align the powers of 10 and give the sum in scientific notation.",
+    "options": [
+      "3.8 × 10^5",
+      "38 × 10^3",
+      "3.8 × 10^4",
+      "2.5 + 1.3 × 10^4"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Both numbers already have the same power of 10. Step 2: Add the coefficients 2.5 + 1.3 = 3.8 and keep the exponent to obtain 3.8 × 10^4.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_scientific_notation_480123_887",
+    "category": "scientific_notation",
+    "level": "B",
+    "question": "What is 4.2 × 10^4 + 3.8 × 10^3?",
+    "options": [
+      "4.58 × 10^3",
+      "7.0 × 10^4",
+      "4.58 × 10^4",
+      "45.8 × 10^3"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Rewrite 3.8 × 10^3 as 0.38 × 10^4 so both powers of 10 match. Step 2: Add the coefficients 4.2 + 0.38 to get 4.58, giving 4.58 × 10^4.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_scientific_notation_508666_953",
+    "category": "scientific_notation",
+    "level": "C",
+    "question": "Estimate seconds in a year: 365 × 24 × 60 × 60. Which shows the result in proper scientific notation?",
+    "options": [
+      "5.26 × 10^6",
+      "8.76 × 10^4",
+      "315 × 10^5",
+      "3.15 × 10^7"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Multiply 365 × 24 = 8760, then 8760 × 60 = 525600, then 525600 × 60 = 31536000. Step 2: Move decimal to get coefficient between 1 and 10, so 31536000 = 3.15 × 10^7.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_sci_notation_ops_518455_969",
+    "category": "sci_notation_ops",
+    "level": "D",
+    "question": "Multiply: (7.5 × 10^4) × (8 × 10^7). Rewrite the product in standard scientific notation.",
+    "options": [
+      "60 × 10^12",
+      "6 × 10^11",
+      "60 × 10^11",
+      "6 × 10^12"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Multiply coefficients 7.5 × 8 = 60 and add exponents 4 + 7 = 11 to get 60 × 10^11. Step 2: Rewrite 60 × 10^11 as 6 × 10^12 so the coefficient is between 1 and 10.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_sci_notation_ops_518456_910",
+    "category": "sci_notation_ops",
+    "level": "B",
+    "question": "Multiply: (3 × 10^2) × (2 × 10^5) = ?",
+    "options": [
+      "3 × 10^3",
+      "6 × 10^10",
+      "6 × 10^7",
+      "5 × 10^7"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Multiply coefficients 3 × 2 = 6 and add exponents 2 + 5 = 7. Step 2: The product 6 × 10^7 is already in standard scientific notation.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_sci_notation_ops_525732_956",
+    "category": "sci_notation_ops",
+    "level": "B",
+    "question": "Multiply (6 \times 10^{2}) \times (7 \times 10^{4}) and rewrite the product in scientific notation.",
+    "options": [
+      "4.2 \times 10^{7}",
+      "42 \times 10^{6}",
+      "42 \times 10^{7}",
+      "4.2 \times 10^{6}"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Multiply the coefficients 6 \times 7 to get 42 and add the exponents 2 + 4 to get 6, giving 42 \times 10^{6}. Step 2: Move the decimal point one place left to make the coefficient between 1 and 10, which adds 1 to the exponent and yields 4.2 \times 10^{7}.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_sci_notation_ops_541301_476",
+    "category": "sci_notation_ops",
+    "level": "C",
+    "question": "Divide (2 × 10^5) ÷ (8 × 10^2). Express the answer in scientific notation with coefficient between 1 and 10.",
+    "options": [
+      "4 × 10^2",
+      "2.5 × 10^3",
+      "2.5 × 10^2",
+      "0.25 × 10^3"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Divide the coefficients 2 ÷ 8 = 0.25 and subtract the exponents 5 - 2 = 3 to get 0.25 × 10^3. Step 2: Rewrite 0.25 as 2.5 × 10^{-1} so that the coefficient is between 1 and 10, giving 2.5 × 10^{-1} × 10^3 = 2.5 × 10^2.",
+    "source": "concept_check",
+    "origin": "llm"
   }
 ]

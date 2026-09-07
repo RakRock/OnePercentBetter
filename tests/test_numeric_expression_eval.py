@@ -12,8 +12,10 @@ from numeric_expression_eval import (
     ensure_numeric_answer_key,
     evaluate_numeric,
     extract_expression,
+    option_numeric_value,
     options_equivalent,
     parse_scientific_notation_value,
+    system_options_equivalent,
 )
 
 
@@ -94,6 +96,25 @@ class TestNumericExpressionEval(unittest.TestCase):
 
         self.assertEqual(option_numeric_value("1,456,789,874,500"), 1456789874500.0)
         self.assertFalse(options_equivalent("1,456,789,874,500", "1"))
+
+    def test_sci_notation_sum_prefers_proper_form_key(self) -> None:
+        question = (
+            "Add the numbers: (6.8 × 10³) + (4.5 × 10⁵). "
+            "First align the powers of 10, then give the sum in scientific notation."
+        )
+        options = ["11.3 × 10⁵", "456.8 × 10³", "4.568 × 10⁵", "4.568 × 10³"]
+        self.assertEqual(ensure_numeric_answer_key(question, options, 1), 2)
+
+    def test_equation_system_options_not_collapsed_to_leading_coefficient(self) -> None:
+        opts = [
+            "3p + 4d = 11 and 2p + 2d = 12",
+            "3p + 2d = 11 and 2p + 4d = 12",
+            "3p + 2d = 12 and 2p + 4d = 11",
+            "p + d = 11 and 3p + 2d = 12",
+        ]
+        self.assertIsNone(option_numeric_value(opts[0]))
+        self.assertFalse(options_equivalent(opts[0], opts[1]))
+        self.assertTrue(system_options_equivalent(opts[1], "2p + 4d = 12 and 3p + 2d = 11"))
 
     def test_linear_expression_figure_45(self) -> None:
         question = (

@@ -232,6 +232,32 @@ def linear_n_options_equivalent(a: str, b: str) -> bool | None:
     return pa == pb
 
 
+def _is_equation_system_option(text: str) -> bool:
+    """True for paired equations like ``3p + 2d = 11 and 2p + 4d = 12``."""
+    s = str(text).lower()
+    if " and " not in s or "=" not in s:
+        return False
+    return bool(re.search(r"\d+\s*[pdxy]", s))
+
+
+def _normalize_system_option(text: str) -> tuple[str, ...] | None:
+    if not _is_equation_system_option(text):
+        return None
+    parts = [re.sub(r"\s+", "", p.strip().lower()) for p in str(text).split(" and ")]
+    if len(parts) < 2 or not all("=" in p for p in parts):
+        return None
+    return tuple(sorted(parts))
+
+
+def system_options_equivalent(a: str, b: str) -> bool | None:
+    """Compare equation-system MCQ options by normalized equation set."""
+    sa = _normalize_system_option(a)
+    sb = _normalize_system_option(b)
+    if sa is None or sb is None:
+        return None
+    return sa == sb
+
+
 @dataclass
 class _Tok:
     kind: str
@@ -602,6 +628,8 @@ def option_numeric_value(text: str) -> float | None:
         return mixed
     if _parse_linear_n_expression(raw) is not None:
         return None
+    if _is_equation_system_option(raw):
+        return None
     if _contains_unicode_exponent(raw) or "^" in _sanitize_math_text(raw):
         term = _parse_power_term(raw)
         if term is not None:
@@ -646,6 +674,9 @@ def options_equivalent(a: str, b: str) -> bool:
     lin_equiv = linear_n_options_equivalent(a, b)
     if lin_equiv is not None:
         return lin_equiv
+    sys_equiv = system_options_equivalent(a, b)
+    if sys_equiv is not None:
+        return sys_equiv
     a_norm = _normalize_expr(a)
     b_norm = _normalize_expr(b)
     if a_norm == b_norm:
@@ -671,6 +702,34 @@ def find_matching_option_index(expected: float, options: list[str]) -> int | Non
         if ov is not None and abs(ov - expected) <= 1e-9:
             return i
     return None
+
+
+def _stem_requires_scientific_notation_answer(stem: str) -> bool:
+    """True when the stem asks for a result written in scientific notation."""
+    lower = str(stem).lower()
+    if "scientific notation" not in lower:
+        return False
+    if re.search(r"(?:is|written in)\s+(?:correct\s+)?scientific notation\??", lower):
+        return False
+    return bool(re.search(r"(?:in|give|write|express|using)\s+scientific notation", lower))
+
+
+def find_proper_scientific_notation_index(expected: float, options: list[str]) -> int | None:
+    """Among sci-notation options matching ``expected``, prefer proper coefficient form."""
+    fallback: int | None = None
+    for i, opt in enumerate(options):
+        terms = _parse_scientific_notation_terms(str(opt))
+        if len(terms) != 1:
+            continue
+        coef, exp = terms[0]
+        val = coef * (10 ** exp)
+        if abs(val - expected) > 1e-6 * max(1.0, abs(expected)):
+            continue
+        if is_proper_scientific_coefficient(coef):
+            return i
+        if fallback is None:
+            fallback = i
+    return fallback
 
 
 def validate_explanation_quality(explanation: str) -> None:
@@ -718,6 +777,10 @@ def ensure_numeric_answer_key(question: str, options: list[str], answer: int) ->
         raise ValueError(
             f"Computed value {expected!r} is not among options for question: {question[:100]}"
         )
+    if _stem_requires_scientific_notation_answer(lower_q):
+        proper_idx = find_proper_scientific_notation_index(expected, options)
+        if proper_idx is not None:
+            return proper_idx
     return idx
 
 

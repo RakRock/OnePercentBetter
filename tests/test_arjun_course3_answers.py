@@ -107,6 +107,49 @@ class TestArjunCourse3Answers(unittest.TestCase):
         self.assertTrue(c3ans.is_pick_correct(q, 1))
         self.assertFalse(c3ans.is_pick_correct(q, 0))
 
+    def test_finalize_fixes_improper_sci_notation_sum_key(self) -> None:
+        q = {
+            "question": (
+                "Add the numbers: (6.8 × 10³) + (4.5 × 10⁵). "
+                "First align the powers of 10, then give the sum in scientific notation."
+            ),
+            "options": ["11.3 × 10⁵", "456.8 × 10³", "4.568 × 10⁵", "4.568 × 10³"],
+            "answer": 1,
+        }
+        fixed = c3ans.finalize_question(q)
+        self.assertEqual(fixed["answer"], 2)
+
+    def test_finalize_fixes_same_exponent_sci_notation_sum(self) -> None:
+        q = {
+            "question": (
+                "Add the numbers: (2.5 × 10⁴) + (1.3 × 10⁴). "
+                "Align the powers of 10 and give the sum in scientific notation."
+            ),
+            "options": ["3.8 × 10⁵", "38 × 10³", "3.8 × 10⁴", "2.5 + 1.3 × 10⁴"],
+            "answer": 1,
+        }
+        fixed = c3ans.finalize_question(q)
+        self.assertEqual(fixed["answer"], 2)
+        self.assertFalse(c3ans.is_pick_correct(fixed, 1))
+
+    def test_rejects_wrong_equation_system_setup(self) -> None:
+        q = {
+            "question": (
+                "At a school fair, Maya buys 3 bags of popcorn and 2 drinks for $11. "
+                "Sam buys 2 bags of popcorn and 4 drinks for $12. "
+                "Which system sets up the prices without solving?"
+            ),
+            "options": [
+                "3p + 4d = 11 and 2p + 2d = 12",
+                "3p + 2d = 11 and 2p + 4d = 12",
+                "3p + 2d = 12 and 2p + 4d = 11",
+                "p + d = 11 and 3p + 2d = 12",
+            ],
+            "answer": 1,
+        }
+        self.assertTrue(c3ans.is_pick_correct(q, 1))
+        self.assertFalse(c3ans.is_pick_correct(q, 0))
+
     def test_finalize_question_preserves_multi_answer_mcq(self) -> None:
         q = {
             "question": "Add: 3.4 × 10⁵ + 9.1 × 10⁵. Which answer(s) are correct?",

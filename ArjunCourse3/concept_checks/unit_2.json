@@ -458,7 +458,7 @@
       "3",
       "1"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Step 1: Distribute to get 3x + 6 = 2x + 7. Step 2: Subtract 2x and subtract 6 to get x = 1.",
     "source": "concept_check",
     "origin": "llm"
@@ -695,7 +695,7 @@
     "options": [
       "y = x + 2 and y = 3x - 5",
       "y = x + 1 and y = 2x - 2",
-      "y = 2x - 2 and y = x + 1",
+      "y = x + 2 and y = 2x - 2",
       "y = 2x + 1 and y = x + 3"
     ],
     "answer": 1,
@@ -748,6 +748,406 @@
     ],
     "answer": 1,
     "explanation": "Step 1: Plug x = 1 into each equation pair. Step 2: Verify both equations produce y = 2.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_expressions_805610_936",
+    "category": "expressions",
+    "level": "D",
+    "question": "A pattern of rectangular fences has perimeters of 4, 6, and 8 units for the first three fences. Which expression gives the perimeter for the nth fence?",
+    "options": [
+      "2n",
+      "n + 3",
+      "2n + 2",
+      "3n + 1"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The constant difference between terms is +2. Step 2: Substitute n = 1 into 2n + 2 to get 4, matching the first term.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_expressions_805611_637",
+    "category": "expressions",
+    "level": "B",
+    "question": "The first three shapes in a border pattern have perimeters 4, 6, and 8 units. What expression shows the perimeter of the nth shape?",
+    "options": [
+      "2n - 2",
+      "3n",
+      "n + 3",
+      "2n + 2"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The perimeters increase by 2 each time. Step 2: Test n = 1 in 2n + 2 to confirm it equals 4.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_expressions_805612_444",
+    "category": "expressions",
+    "level": "C",
+    "question": "A dot pattern starts with 3, 5, and 7 dots. Fill the table to find the rule, write an expression, then find the number of dots when n = 45.",
+    "options": [
+      "2n + 1",
+      "3n - 1",
+      "2n + 3",
+      "n + 2"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: The constant difference is +2, and the expression is 2n + 1. Step 2: Substitute n = 45 to get 2(45) + 1 = 91.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_expressions_805613_642",
+    "category": "expressions",
+    "level": "D",
+    "question": "Fences in a growing pattern measure 4, 6, and 8 units around for the first three stages. Which expression works for any stage n, and what is the perimeter at stage 12?",
+    "options": [
+      "4n",
+      "2n + 2",
+      "3n - 1",
+      "2n + 4"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Constant difference of 2 gives 2n + 2 as the rule. Step 2: Substitute n = 12 to get 2(12) + 2 = 26.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_solving_equations_824089_941",
+    "category": "solving_equations",
+    "level": "D",
+    "question": "A square park has sides of equal length. The equation 4(2x + 1) = 36 represents its perimeter in meters. Solve the equation to find the perimeter of the park.",
+    "options": [
+      "18",
+      "72",
+      "36",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Divide both sides by 4 to simplify the left side. Step 2: The original equation directly states the perimeter equals 36 meters.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_solving_equations_824089_375",
+    "category": "solving_equations",
+    "level": "B",
+    "question": "A square park has sides of equal length. The equation 4x = 24 represents its perimeter in meters where x is the side length. Solve to find the perimeter.",
+    "options": [
+      "96",
+      "6",
+      "20",
+      "24"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The equation states that the perimeter equals 24 meters directly.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_solving_equations_824090_378",
+    "category": "solving_equations",
+    "level": "C",
+    "question": "Solve the multi-step equation 5(x - 1) = 2x + 8. What is the solution for x?",
+    "options": [
+      "5/3",
+      "13/3",
+      "3",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Distribute on the left to get 5x - 5 = 2x + 8. Step 2: Subtract 2x and add 5 to both sides to reach 3x = 13. Step 3: Divide by 3 to get x = 13/3.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_solving_equations_824091_681",
+    "category": "solving_equations",
+    "level": "D",
+    "question": "A square park has sides of equal length. The equation 4(3x + 2) = 80 represents its perimeter in meters. Solve the equation to find the perimeter of the park.",
+    "options": [
+      "160",
+      "80",
+      "20",
+      "40"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Divide both sides by 4 to simplify the left side. Step 2: The original equation directly states the perimeter equals 80 meters.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_slope_834625_354",
+    "category": "slope",
+    "level": "D",
+    "question": "The points (4, 9) and (k, 21) lie on a line with slope 4. What is the value of k?",
+    "options": [
+      "13",
+      "5",
+      "7",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Use slope formula: (21 - 9) ÷ (k - 4) = 4. Step 2: 12 ÷ (k - 4) = 4, so k - 4 = 3 and k = 7.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_slope_834626_950",
+    "category": "slope",
+    "level": "B",
+    "question": "The points (2, 5) and (k, 11) lie on a line with slope 3. What is the value of k?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Use slope formula: (11 - 5) ÷ (k - 2) = 3. Step 2: 6 ÷ (k - 2) = 3, so k - 2 = 2 and k = 4.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_slope_834626_751",
+    "category": "slope",
+    "level": "C",
+    "question": "A graph of distance in feet versus time in seconds passes through the points (1, 4) and (5, 20). What is the slope of the line?",
+    "options": [
+      "3",
+      "16",
+      "4",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Find change in y and change in x: 20 - 4 = 16 and 5 - 1 = 4. Step 2: Divide: 16 ÷ 4 = 4.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_slope_834627_914",
+    "category": "slope",
+    "level": "D",
+    "question": "The points (3, 8) and (k, 26) lie on a line with slope 6. What is the value of k?",
+    "options": [
+      "6",
+      "7",
+      "5",
+      "18"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Use slope formula: (26 - 8) ÷ (k - 3) = 6. Step 2: 18 ÷ (k - 3) = 6, so k - 3 = 3 and k = 6.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_slope_intercept_846042_565",
+    "category": "slope_intercept",
+    "level": "C",
+    "question": "At a pizza restaurant the total cost y in dollars after ordering x meals follows y = 6.5x + 4. What does the slope of 6.5 mean in this situation?",
+    "options": [
+      "There are 6.5 meals ordered",
+      "Each meal costs 6.5 dollars",
+      "The starting fee is 6.5 dollars",
+      "The total cost for 6 meals is 4 dollars"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: In y = mx + b the slope m shows the rate of change. Step 2: The 6.5 means the cost rises by 6.5 dollars for every extra meal ordered.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_slope_intercept_846043_338",
+    "category": "slope_intercept",
+    "level": "D",
+    "question": "A sports club charges a membership fee plus a cost per meal. The equation y = 7.25x + 25 gives the total cost y for x meals. What does the y-intercept of 25 represent?",
+    "options": [
+      "Each meal costs 25 dollars",
+      "The slope is 25 dollars per meal",
+      "The membership fee is 25 dollars",
+      "The club serves 25 meals"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: In y = mx + b the y-intercept b is the starting value when x equals 0. Step 2: The 25 shows the fixed membership fee paid before any meals are bought.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_slope_intercept_846044_416",
+    "category": "slope_intercept",
+    "level": "B",
+    "question": "The total cost y in dollars for x meals at a school lunch program is y = 3x + 1. What does the y-intercept of 1 represent?",
+    "options": [
+      "Each meal costs 1 dollar",
+      "There are 3 meals",
+      "The slope is 3 dollars",
+      "The starting fee is 1 dollar"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: In y = mx + b the y-intercept b is the value when x is zero. Step 2: The 1 means a starting fee of 1 dollar before buying any meals.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_slope_intercept_846045_733",
+    "category": "slope_intercept",
+    "level": "C",
+    "question": "At a fast-food stand the total cost y after x meals follows y = 5.75x + 3. What does the slope of 5.75 mean in this situation?",
+    "options": [
+      "Each meal costs 5.75 dollars",
+      "The starting fee is 5.75 dollars",
+      "There are 5.75 meals",
+      "The total cost for 5 meals is 3 dollars"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: In y = mx + b the slope m shows how y changes with x. Step 2: The 5.75 means the cost rises by 5.75 dollars for every extra meal ordered.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_slope_intercept_846046_954",
+    "category": "slope_intercept",
+    "level": "D",
+    "question": "A cooking club has a yearly membership plus a per-meal cost. The equation y = 4.5x + 40 models total cost y for x meals. What does the y-intercept of 40 represent?",
+    "options": [
+      "The membership fee is 40 dollars",
+      "Each meal costs 40 dollars",
+      "The club cooks 40 meals",
+      "The slope is 4.5 dollars per meal"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: In y = mx + b the y-intercept b is the starting value when x equals 0. Step 2: The 40 shows the fixed yearly membership fee paid before ordering any meals.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_proportional_855991_673",
+    "category": "proportional",
+    "level": "D",
+    "question": "A graph shows the total cost y for x items as y = 4x + 7. Why does this mean the relationship is not proportional?",
+    "options": [
+      "Cost always starts at zero",
+      "The y-intercept is 7 so the line misses (0,0)",
+      "x must be zero first",
+      "The slope 4 is too large"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: A proportional relationship must pass through (0,0). Step 2: Adding 7 moves the starting point away from zero, so y/x is not constant.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_proportional_855992_308",
+    "category": "proportional",
+    "level": "B",
+    "question": "The equation for a bike rental is y = 5x + 10. Why is this cost not proportional to hours x?",
+    "options": [
+      "It starts at 10 dollars instead of zero",
+      "The rate 5 changes",
+      "Bikes cost the same",
+      "Hours cannot be negative"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Proportional needs to start at (0,0). Step 2: The +10 fee makes the line miss the origin.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_proportional_855993_677",
+    "category": "proportional",
+    "level": "C",
+    "question": "Club fee: y = 10x + 250. Non-club: y = 10x. Which plan is proportional to meals x?",
+    "options": [
+      "Neither plan",
+      "Club only",
+      "Both plans",
+      "Non-club only"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Check if each passes through (0,0). Step 2: Non-club y=10x does; club adds 250 so it does not.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_proportional_855994_233",
+    "category": "proportional",
+    "level": "D",
+    "question": "A snack table shows y = 3x + 2 where x is bags and y is total dollars. Explain why it fails the proportional test.",
+    "options": [
+      "Ratio y/x stays 3",
+      "Slope is constant",
+      "Bags must be whole numbers",
+      "y-intercept of 2 means it misses (0,0)"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Proportional needs constant ratio and through origin. Step 2: Adding 2 breaks the ratio being the same for every x including zero.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_systems_868272_966",
+    "category": "systems",
+    "level": "D",
+    "question": "Which system of equations has no solution because the lines are parallel?",
+    "options": [
+      "y = 2x + 5 and y = 3x + 5",
+      "y = x + 3 and y = x + 3",
+      "y = 4x + 1 and y = -4x + 1",
+      "y = 3x + 4 and y = 3x - 2"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Parallel lines have the same slope but different y-intercepts. Step 2: The first pair both have slope 3 but intercepts 4 and -2, so they never meet and have no solution.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_systems_868274_943",
+    "category": "systems",
+    "level": "B",
+    "question": "Which system of equations has the single solution (1, 4)?",
+    "options": [
+      "x + 2y = 9 and x - y = -3",
+      "x + y = 5 and x - y = -5",
+      "2x + y = 6 and x + y = 3",
+      "x + y = 5 and x - y = -3"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Substitute x=1 and y=4 into each equation. Step 2: Only the first system gives 1+4=5 and 1-4=-3, which both match.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_systems_868274_463",
+    "category": "systems",
+    "level": "D",
+    "question": "Which system of equations has no solution because the lines are parallel?",
+    "options": [
+      "2x + y = 7 and 2x + y = 9",
+      "x + 2y = 6 and 2x + 4y = 8",
+      "y = 5x - 1 and y = -5x - 1",
+      "3x - y = 4 and x + y = 4"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Parallel lines have matching slopes but different constants. Step 2: The first pair can be rewritten as y = -2x + 7 and y = -2x + 9, confirming identical slopes but different intercepts so no solution.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u2_systems_876924_907",
+    "category": "systems",
+    "level": "D",
+    "question": "Which system of equations has no solution?",
+    "options": [
+      "x + y = 5 and x - y = 1",
+      "4x - 2y = 6 and 2x - y = 3",
+      "3x + 5y = 15 and 6x + 10y = 25",
+      "2x + y = 4 and 4x + 2y = 8"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Rewrite each system in slope-intercept form to compare slopes and y-intercepts. Step 2: The second pair becomes y = -3/5 x + 3 and y = -3/5 x + 2.5, so the slopes match but the y-intercepts differ, meaning the lines are parallel and never intersect.",
     "source": "concept_check",
     "origin": "llm"
   }
