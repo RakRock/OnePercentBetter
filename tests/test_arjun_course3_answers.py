@@ -57,6 +57,56 @@ class TestArjunCourse3Answers(unittest.TestCase):
         self.assertEqual(fixed["answer"], 1)
         self.assertEqual(fixed["options"][1], "3/4, 72%, 0.7")
 
+    def test_rejects_improper_scientific_notation_pick(self) -> None:
+        q = {
+            "question": "Write the estimate in scientific notation.",
+            "options": ["12 × 10⁹", "1.2 × 10¹⁰", "1.4 × 10¹⁰", "1.12 × 10¹¹"],
+            "answer": 1,
+        }
+        self.assertTrue(c3ans.is_pick_correct(q, 1))
+        self.assertFalse(c3ans.is_pick_correct(q, 0))
+
+    def test_rejects_whole_number_when_mixed_fraction_is_keyed(self) -> None:
+        q = {
+            "question": "A sequence starts 6 1/3, 7, 7 2/3, … Each term adds the same amount. What is the next term?",
+            "options": ["9 1/3", "8", "8 1/3", "Cannot tell from the given information"],
+            "answer": 2,
+        }
+        self.assertTrue(c3ans.is_pick_correct(q, 2))
+        self.assertFalse(c3ans.is_pick_correct(q, 1))
+
+    def test_rejects_cubed_exponent_when_tripling_is_keyed(self) -> None:
+        q = {
+            "question": "If you triple 3⁹⁹, what is the result?",
+            "options": ["3²⁹⁷", "3⁹⁹ + 3", "9⁹⁹", "3¹⁰⁰"],
+            "answer": 3,
+        }
+        self.assertTrue(c3ans.is_pick_correct(q, 3))
+        self.assertFalse(c3ans.is_pick_correct(q, 0))
+        self.assertFalse(c3ans.is_pick_correct(q, 1))
+
+    def test_rejects_wrong_linear_expression(self) -> None:
+        q = {
+            "question": (
+                "A dot pattern has 4 dots in figure 1, 7 in figure 2, and 10 in figure 3 "
+                "(each new figure adds 3 dots). Which expression gives the dots in figure n?"
+            ),
+            "options": ["4n - 3", "n + 3", "3n - 1", "3n + 1"],
+            "answer": 3,
+        }
+        self.assertTrue(c3ans.is_pick_correct(q, 3))
+        self.assertFalse(c3ans.is_pick_correct(q, 2))
+
+    def test_rejects_base_when_zero_exponent_keyed(self) -> None:
+        q = {
+            "id": "cc_u1_exp_zero",
+            "question": "Simplify: 1,456,789,874,500⁰",
+            "options": ["1,456,789,874,500", "1", "Cannot simplify", "0"],
+            "answer": 1,
+        }
+        self.assertTrue(c3ans.is_pick_correct(q, 1))
+        self.assertFalse(c3ans.is_pick_correct(q, 0))
+
     def test_finalize_question_preserves_multi_answer_mcq(self) -> None:
         q = {
             "question": "Add: 3.4 × 10⁵ + 9.1 × 10⁵. Which answer(s) are correct?",

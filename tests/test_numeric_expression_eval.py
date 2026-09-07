@@ -12,6 +12,7 @@ from numeric_expression_eval import (
     ensure_numeric_answer_key,
     evaluate_numeric,
     extract_expression,
+    options_equivalent,
     parse_scientific_notation_value,
 )
 
@@ -55,6 +56,44 @@ class TestNumericExpressionEval(unittest.TestCase):
         question = "Add 4.5 × 10³ and 3.2 × 10³ in scientific notation."
         options = ["7.7 × 10³", "4.82 × 10³", "77 × 10²", "1.45 × 10⁴"]
         self.assertEqual(ensure_numeric_answer_key(question, options, 1), 0)
+
+    def test_improper_scientific_notation_not_equivalent_to_proper(self) -> None:
+        self.assertFalse(options_equivalent("12 × 10⁹", "1.2 × 10¹⁰"))
+        self.assertTrue(options_equivalent("1.2 × 10¹⁰", "1.20 × 10¹⁰"))
+
+    def test_mixed_number_parsing(self) -> None:
+        from numeric_expression_eval import option_numeric_value, parse_mixed_number_value
+
+        self.assertAlmostEqual(parse_mixed_number_value("8 1/3"), 25 / 3)
+        self.assertAlmostEqual(parse_mixed_number_value("6 1/3"), 19 / 3)
+        self.assertAlmostEqual(option_numeric_value("8 1/3"), 25 / 3)
+        self.assertFalse(options_equivalent("8", "8 1/3"))
+
+    def test_power_expression_parsing(self) -> None:
+        from numeric_expression_eval import _parse_power_term, power_options_equivalent
+
+        self.assertEqual(_parse_power_term("3¹⁰⁰"), (3.0, 100.0))
+        self.assertEqual(_parse_power_term("3²⁹⁷"), (3.0, 297.0))
+        self.assertFalse(power_options_equivalent("3²⁹⁷", "3¹⁰⁰"))
+        self.assertTrue(power_options_equivalent("3¹⁰⁰", "3^100"))
+        self.assertFalse(options_equivalent("3²⁹⁷", "3¹⁰⁰"))
+        self.assertFalse(options_equivalent("3⁹⁹ + 3", "3¹⁰⁰"))
+
+    def test_linear_n_expression_parsing(self) -> None:
+        from numeric_expression_eval import _parse_linear_n_expression, linear_n_options_equivalent
+
+        self.assertEqual(_parse_linear_n_expression("3n + 1"), (3, 1))
+        self.assertEqual(_parse_linear_n_expression("3n - 1"), (3, -1))
+        self.assertEqual(_parse_linear_n_expression("n + 3"), (1, 3))
+        self.assertFalse(linear_n_options_equivalent("3n - 1", "3n + 1"))
+        self.assertTrue(linear_n_options_equivalent("3n + 1", "3n+1"))
+        self.assertFalse(options_equivalent("3n - 1", "3n + 1"))
+
+    def test_thousands_separator_parsing(self) -> None:
+        from numeric_expression_eval import option_numeric_value
+
+        self.assertEqual(option_numeric_value("1,456,789,874,500"), 1456789874500.0)
+        self.assertFalse(options_equivalent("1,456,789,874,500", "1"))
 
     def test_linear_expression_figure_45(self) -> None:
         question = (

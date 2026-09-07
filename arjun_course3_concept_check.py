@@ -350,7 +350,7 @@ def _gen_patterns() -> list[dict]:
             "patterns",
             f"A sequence starts {', '.join(_mixed(t) for t in seq)}, … Each term adds the same amount. What is the next term?",
             _mixed(next_term),
-            [_mixed(Fraction(8, 1)), _mixed(Fraction(9, 1) + Fraction(1, 3)), _mixed(seq[-1] + Fraction(1, 3))],
+            [_mixed(Fraction(8, 1)), _mixed(Fraction(9, 1) + Fraction(1, 3)), _mixed(Fraction(8, 1) + Fraction(2, 3))],
             "The step is +2/3 each time. Add 2/3 to the last term shown.",
             level="C",
         )

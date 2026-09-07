@@ -14,6 +14,7 @@ from practice_email.format import (
     build_failed_questions,
     format_harshit_student_review_email,
     format_practice_report_email,
+    format_validation_audit_email,
 )
 from practice_email.settings import (
     EmailConfigError,
@@ -260,6 +261,53 @@ def send_report(
         report_heading=report_heading,
     )
 
+    return _deliver_to_recipients(
+        settings,
+        subject=subject,
+        plain=plain,
+        html=html,
+        recipients=list(settings.recipients),
+    )
+
+
+def send_validation_audit_email(
+    *,
+    student_name: str,
+    program_name: str,
+    unit_title: str,
+    unit_subtitle: str,
+    audit_rows: list[dict],
+    report: dict,
+    requested_count: int,
+    generated_count: int,
+    when: datetime | None = None,
+) -> EmailSendResult:
+    """Email a full question-by-question validation audit to configured recipients."""
+    settings = load_settings()
+    if not settings.enabled:
+        return EmailSendResult(ok=False, skipped=True, error="Email disabled")
+    if not settings.recipients:
+        return EmailSendResult(ok=False, skipped=True, error="PRACTICE_REPORT_EMAIL_TO is not set")
+
+    ready, _transport, config_err = delivery_ready(settings)
+    if not ready:
+        return EmailSendResult(
+            ok=False,
+            skipped=True,
+            error=config_err or format_config_error(settings),
+        )
+
+    subject, plain, html = format_validation_audit_email(
+        student_name=student_name,
+        program_name=program_name,
+        unit_title=unit_title,
+        unit_subtitle=unit_subtitle,
+        audit_rows=audit_rows,
+        report=report,
+        requested_count=requested_count,
+        generated_count=generated_count,
+        when=when,
+    )
     return _deliver_to_recipients(
         settings,
         subject=subject,

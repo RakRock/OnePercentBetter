@@ -18,7 +18,10 @@ _BAD_EXPLANATION_RE = re.compile(
     re.I,
 )
 _LINEAR_EXPR_RE = re.compile(r"(-?\d+)\s*n\s*([+-])\s*(\d+)", re.I)
+_LINEAR_OPTION_RE = re.compile(r"^(-?\d*)n([+-])(\d+)$", re.I)
 _LEADING_NUM_RE = re.compile(r"^\s*(-?\d+(?:\.\d+)?(?:/\d+)?)")
+_MIXED_NUM_RE = re.compile(r"^\s*(-?\d+)\s+(\d+)\s*/\s*(\d+)")
+_THOUSANDS_SEP_RE = re.compile(r"^-?\d{1,3}(?:,\d{3})+(?:\.\d+)?$")
 _EXPL_RESULT_RE = re.compile(r"=\s*(-?\d+(?:\.\d+)?)\s*(?:\?|\.|,|;|\s|$)")
 _SCI_TERM_RE = re.compile(
     r"(-?\d+(?:\.\d+)?)\s*(?:×|x|\*|\\times)?\s*10\s*\^?\s*(-?\d+)",
@@ -151,6 +154,82 @@ def _parse_number_token(tok: str) -> float | None:
         except ValueError:
             return None
     return None
+
+
+def parse_mixed_number_value(text: str) -> float | None:
+    """Parse whole-number + fraction forms like 8 1/3 or -6 1/2."""
+    raw = str(text).strip()
+    m = _MIXED_NUM_RE.match(raw)
+    if not m:
+        return None
+    whole = int(m.group(1))
+    num = int(m.group(2))
+    den = int(m.group(3))
+    if den == 0:
+        return None
+    frac_part = num / den
+    if whole < 0:
+        return float(whole) - frac_part
+    return float(whole) + frac_part
+
+
+def _strip_thousands_separators(text: str) -> str:
+    """Remove grouping commas from plain integers like 1,456,789,874,500."""
+    s = str(text).strip()
+    if _THOUSANDS_SEP_RE.fullmatch(s):
+        return s.replace(",", "")
+    return s
+
+
+def _contains_unicode_exponent(text: str) -> bool:
+    return "⁻" in text or any(ch in _SUPER_DIGITS for ch in text)
+
+
+def _parse_power_term(text: str) -> tuple[float, float] | None:
+    """Return (base, exponent) when text is a single power like 3¹⁰⁰ or 3^100."""
+    s = _normalize_expr(str(text).strip())
+    m = re.fullmatch(r"(-?\d+(?:\.\d+)?)\^(-?\d+(?:\.\d+)?)", s)
+    if not m:
+        return None
+    return float(m.group(1)), float(m.group(2))
+
+
+def power_options_equivalent(a: str, b: str) -> bool | None:
+    """Compare single power expressions by base and exponent; None if not both powers."""
+    pa = _parse_power_term(a)
+    pb = _parse_power_term(b)
+    if pa is None or pb is None:
+        return None
+    return pa == pb
+
+
+def _parse_linear_n_expression(text: str) -> tuple[int, int] | None:
+    """Parse an + b style options like 3n + 1 or n + 3 into (coefficient, constant)."""
+    s = _normalize_expr(str(text).strip())
+    if s.lower().count("n") != 1:
+        return None
+    m = _LINEAR_OPTION_RE.match(s)
+    if not m:
+        return None
+    coeff_raw = m.group(1)
+    if coeff_raw in ("", "+"):
+        coeff = 1
+    elif coeff_raw == "-":
+        coeff = -1
+    else:
+        coeff = int(coeff_raw)
+    const = int(m.group(3))
+    offset = const if m.group(2) == "+" else -const
+    return coeff, offset
+
+
+def linear_n_options_equivalent(a: str, b: str) -> bool | None:
+    """Compare linear expressions in n by coefficient and constant."""
+    pa = _parse_linear_n_expression(a)
+    pb = _parse_linear_n_expression(b)
+    if pa is None or pb is None:
+        return None
+    return pa == pb
 
 
 @dataclass
@@ -331,6 +410,43 @@ def parse_scientific_notation_value(text: str) -> float | None:
     return coef * (10 ** exp)
 
 
+def is_proper_scientific_coefficient(coef: float) -> bool:
+    """True when coefficient satisfies 1 ≤ |a| < 10 (standard scientific notation)."""
+    return 1.0 <= abs(coef) < 10.0
+
+
+def _single_scientific_notation_term(text: str) -> tuple[float, int] | None:
+    terms = _parse_scientific_notation_terms(text)
+    if len(terms) != 1:
+        return None
+    return terms[0]
+
+
+def scientific_notation_options_equivalent(a: str, b: str) -> bool | None:
+    """Compare sci-notation MCQ options; None when either side is not a single term.
+
+    Same numeric value is not enough: 12×10⁹ and 1.2×10¹⁰ differ because only the
+    latter uses a proper coefficient (1 ≤ |a| < 10).
+    """
+    ta = _single_scientific_notation_term(a)
+    tb = _single_scientific_notation_term(b)
+    if ta is None or tb is None:
+        return None
+    ca, ea = ta
+    cb, eb = tb
+    va = ca * (10 ** ea)
+    vb = cb * (10 ** eb)
+    if abs(va - vb) > 1e-9:
+        return False
+    proper_a = is_proper_scientific_coefficient(ca)
+    proper_b = is_proper_scientific_coefficient(cb)
+    if proper_a and proper_b:
+        return True
+    if proper_a != proper_b:
+        return False
+    return True
+
+
 def compute_scientific_notation_sum(question: str) -> float | None:
     """Add two scientific-notation values, e.g. 4.5×10^6 + 3.2×10^5."""
     lower = str(question).lower()
@@ -477,10 +593,29 @@ def _format_fraction(value: float) -> str | None:
 
 
 def option_numeric_value(text: str) -> float | None:
-    raw = str(text).strip()
+    raw = _strip_thousands_separators(str(text).strip())
     sci = parse_scientific_notation_value(raw)
     if sci is not None:
         return sci
+    mixed = parse_mixed_number_value(raw)
+    if mixed is not None:
+        return mixed
+    if _parse_linear_n_expression(raw) is not None:
+        return None
+    if _contains_unicode_exponent(raw) or "^" in _sanitize_math_text(raw):
+        term = _parse_power_term(raw)
+        if term is not None:
+            base, exp = term
+            if abs(exp) <= 400 and abs(base) <= 100:
+                try:
+                    return base ** exp
+                except OverflowError:
+                    return None
+            return None
+        s = _normalize_expr(raw)
+        if any(ch in s for ch in "+-*/"):
+            return evaluate_numeric(s)
+        return None
     lead = _LEADING_NUM_RE.match(raw)
     if lead:
         val = _parse_number_token(lead.group(1))
@@ -502,6 +637,15 @@ def options_equivalent(a: str, b: str) -> bool:
     b_order = _ordering_values_from_option(b)
     if a_order is not None and b_order is not None:
         return a_order == b_order
+    sci_equiv = scientific_notation_options_equivalent(a, b)
+    if sci_equiv is not None:
+        return sci_equiv
+    pow_equiv = power_options_equivalent(a, b)
+    if pow_equiv is not None:
+        return pow_equiv
+    lin_equiv = linear_n_options_equivalent(a, b)
+    if lin_equiv is not None:
+        return lin_equiv
     a_norm = _normalize_expr(a)
     b_norm = _normalize_expr(b)
     if a_norm == b_norm:

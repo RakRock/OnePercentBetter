@@ -328,6 +328,138 @@ def format_practice_report_email(
     return subject, plain, html_body
 
 
+def format_validation_audit_email(
+    *,
+    student_name: str,
+    program_name: str,
+    unit_title: str,
+    unit_subtitle: str,
+    audit_rows: list[dict],
+    report: dict,
+    requested_count: int,
+    generated_count: int,
+    when: datetime | None = None,
+) -> tuple[str, str, str]:
+    """Parent validation email listing every generated question and simulated pick."""
+    when = when or datetime.now()
+    date_str = when.strftime("%A, %B %d, %Y")
+    time_str = when.strftime("%I:%M %p").lstrip("0")
+    cc = int(report.get("correct_count", 0))
+    tot = int(report.get("total", 0))
+    wrong_count = tot - cc
+
+    subject = (
+        f"[Validation] {student_name} — {program_name} {unit_title} "
+        f"({generated_count}/{requested_count} questions, {wrong_count} simulated misses)"
+    )
+
+    plain_parts = [
+        "PRACTICE VALIDATION AUDIT",
+        "========================",
+        f"Student: {student_name}",
+        f"Program: {program_name}",
+        f"Unit: {unit_title}" + (f" — {unit_subtitle}" if unit_subtitle else ""),
+        f"Generated: {generated_count} of {requested_count} requested",
+        f"Simulated score: {cc}/{tot} ({report.get('score_pct', 0)}%)",
+        f"Date: {date_str} at {time_str}",
+        "",
+        "Review each question below. The KEYED ANSWER is what the app marks correct.",
+        "The SIMULATED PICK is a random choice used only for this audit.",
+        "",
+    ]
+
+    for row in audit_rows:
+        status = "CORRECT" if row.get("correct") else "WRONG"
+        plain_parts.append(f"Q{row['number']} · {row.get('category', '')} [{row.get('id', '')}]")
+        plain_parts.append(_format_math_for_email_plain(row.get("question", "")))
+        for i, opt in enumerate(row.get("options") or []):
+            marker = []
+            if i == row.get("keyed_index"):
+                marker.append("KEY")
+            if i == row.get("picked_index"):
+                marker.append("PICKED")
+            tag = f" ({', '.join(marker)})" if marker else ""
+            plain_parts.append(f"  {chr(65 + i)}) {_format_math_for_email_plain(opt)}{tag}")
+        plain_parts.append(f"Keyed answer: {_format_math_for_email_plain(row.get('keyed_answer', '?'))}")
+        plain_parts.append(f"Simulated pick: {_format_math_for_email_plain(row.get('picked', '?'))} — {status}")
+        if not row.get("correct") and row.get("explanation"):
+            plain_parts.append(f"Why: {_format_math_for_email_plain(row['explanation'])}")
+        plain_parts.append("")
+
+    plain_parts.append("— OnePercent validation audit (not a student session)")
+    plain = "\n".join(plain_parts)
+
+    html_blocks: list[str] = []
+    for row in audit_rows:
+        ok = bool(row.get("correct"))
+        border = "#10b981" if ok else "#ef4444"
+        bg = "#ecfdf5" if ok else "#fef2f2"
+        status = "✅ Simulated correct" if ok else "❌ Simulated wrong"
+        opts_html = []
+        for i, opt in enumerate(row.get("options") or []):
+            tags = []
+            if i == row.get("keyed_index"):
+                tags.append('<span style="color:#047857;font-weight:700;">KEY</span>')
+            if i == row.get("picked_index"):
+                tags.append('<span style="color:#b45309;font-weight:700;">PICKED</span>')
+            tag_html = " ".join(tags)
+            opts_html.append(
+                f'<li style="margin:0.15rem 0;">{chr(65 + i)}) {_format_math_for_email_html(opt)} {tag_html}</li>'
+            )
+        expl_html = ""
+        if not ok and row.get("explanation"):
+            expl_html = (
+                f'<p style="margin:0.4rem 0 0 0;color:#374151;font-size:0.9rem;">'
+                f'<strong>Why:</strong> {_format_math_for_email_html(row["explanation"])}</p>'
+            )
+        html_blocks.append(
+            f"""
+            <div style="background:{bg};border-left:4px solid {border};padding:0.75rem 0.9rem;
+                 border-radius:8px;margin-bottom:0.65rem;">
+              <p style="margin:0;font-weight:700;color:#1f2937;">
+                Q{row["number"]} · {html_lib.escape(str(row.get("category", "")))}
+                <span style="font-weight:500;color:#6b7280;"> — {status}</span>
+              </p>
+              <p style="margin:0.25rem 0 0 0;color:#6b7280;font-size:0.8rem;">
+                id: {html_lib.escape(str(row.get("id", "")))}
+                {f' · source: {html_lib.escape(str(row.get("source", "")))}' if row.get("source") else ''}
+              </p>
+              <p style="margin:0.35rem 0 0 0;color:#1f2937;">{_format_math_for_email_html(row.get("question", ""))}</p>
+              <ul style="margin:0.35rem 0 0 1rem;padding:0;color:#374151;">{"".join(opts_html)}</ul>
+              <p style="margin:0.35rem 0 0 0;color:#047857;"><strong>Keyed answer:</strong>
+                {_format_math_for_email_html(row.get("keyed_answer", "?"))}</p>
+              <p style="margin:0.15rem 0 0 0;color:#b45309;"><strong>Simulated pick:</strong>
+                {_format_math_for_email_html(row.get("picked", "?"))}</p>
+              {expl_html}
+            </div>
+            """
+        )
+
+    html_body = f"""
+    <div style="font-family:sans-serif;max-width:640px;color:#1f2937;">
+      <h2 style="color:#6366f1;margin:0 0 0.5rem 0;">Practice validation audit</h2>
+      <p style="margin:0 0 0.75rem 0;line-height:1.5;">
+        Automated check for <strong>{html_lib.escape(student_name)}</strong> —
+        <strong>{html_lib.escape(program_name)}</strong>,
+        <strong>{html_lib.escape(unit_title)}</strong>.
+        Review keyed answers against the question text and explanations.
+      </p>
+      <table style="border-collapse:collapse;margin-bottom:1rem;">
+        <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Date</td><td>{date_str} at {time_str}</td></tr>
+        <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Generated</td>
+            <td><strong>{generated_count}</strong> / {requested_count}</td></tr>
+        <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Simulated score</td>
+            <td><strong>{cc}/{tot}</strong> ({report.get("score_pct", 0)}%)</td></tr>
+      </table>
+      {"".join(html_blocks)}
+      <p style="color:#9ca3af;font-size:0.85rem;margin-top:1.5rem;">
+        OnePercent validation audit — random picks only; verify keyed answers manually.
+      </p>
+    </div>
+    """
+    return subject, plain, html_body
+
+
 def build_review_concepts_from_failures(
     failed: list[dict],
     *,
