@@ -38,12 +38,12 @@
     "question": "Five points are plotted on a graph: (1,4), (3,4), (5,9), (3,7), (7,2). What is the domain if we list every unique input that appears?",
     "options": [
       "{4, 9, 2}",
-      "{1, 3, 5, 7} but only if each input has one output",
+      "1, 3, and 7 only, excluding 3 because it has two outputs",
       "{1, 3, 5, 3, 7}",
       "{1, 3, 5, 7}"
     ],
-    "answer": 1,
-    "explanation": "Step 1: List all x-values from the points: 1, 3, 5, 3, 7. Step 2: Remove repeats and check the function rule; input 3 has outputs 4 and 7 so the set of inputs alone cannot form a function.",
+    "answer": 3,
+    "explanation": "Step 1: The domain is the set of all first coordinates (inputs) from the points: 1, 3, 5, 3, 7. Step 2: List every unique input: {1, 3, 5, 7}. A relation has a domain even when it is not a function; input 3 appears twice with different outputs, but 3 still belongs in the domain.",
     "source": "concept_check",
     "origin": "llm"
   },
@@ -147,15 +147,15 @@
     "id": "cc_ai_u4_constructing_393907_324",
     "category": "constructing",
     "level": "C",
-    "question": "Maya's distance-time graph shows her walking away from home slowly for 5 minutes, then running back quickly for 3 minutes, then standing still in line for 4 minutes. Which statement correctly identifies the starting value and the rates during each part?",
+    "question": "Maya's distance-from-home graph starts at 0 feet, rises gradually for 5 minutes, falls sharply for 3 minutes, then stays flat for 4 minutes while she waits in line. Which statement correctly describes the starting value and the sign of the slope during each part?",
     "options": [
-      "Starts at home (0 feet) with rates +40 ft/min, -120 ft/min, and 0 ft/min",
-      "Starts at home (0 feet) with rates +30 ft/min, -80 ft/min, and 0 ft/min",
-      "Starts at 100 feet with rates +50 ft/min, -50 ft/min, and +10 ft/min",
-      "Starts at 200 feet with rates -30 ft/min, +80 ft/min, and 0 ft/min"
+      "Starts at 0 feet; slopes are positive, then negative, then zero",
+      "Starts at 0 feet; slopes are negative, then positive, then zero",
+      "Starts at 100 feet; slopes are positive, then negative, then zero",
+      "Starts at 200 feet; slopes are positive, then negative, then positive"
     ],
     "answer": 0,
-    "explanation": "Step 1: The graph begins at distance 0. Step 2: The three segments give the three rates in order.",
+    "explanation": "Step 1: The graph begins at home, so the starting distance is 0 feet. Step 2: Walking away from home increases distance (positive slope), running back decreases it (negative slope), and standing still keeps distance constant (zero slope).",
     "source": "concept_check",
     "origin": "llm"
   },

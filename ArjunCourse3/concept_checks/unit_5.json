@@ -405,13 +405,13 @@
     "level": "C",
     "question": "Find the MAD of these five test scores: 72, 85, 78, 90, 75. First find the mean then the average distance from it.",
     "options": [
-      "5.6",
+      "6",
       "8.4",
       "7.2",
       "6.8"
     ],
     "answer": 0,
-    "explanation": "Step 1: Mean is (72+85+78+90+75)÷5 = 80. Step 2: Absolute deviations 8,5,2,10,5 average to 6, but correct calc is 5.6 after precise steps.",
+    "explanation": "Step 1: Mean is (72+85+78+90+75)÷5 = 80. Step 2: Absolute deviations are 8, 5, 2, 10, and 5. Step 3: MAD = (8+5+2+10+5)÷5 = 30÷5 = 6.",
     "source": "concept_check",
     "origin": "llm"
   },

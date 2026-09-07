@@ -116,6 +116,19 @@ class TestNumericExpressionEval(unittest.TestCase):
         self.assertFalse(options_equivalent(opts[0], opts[1]))
         self.assertTrue(system_options_equivalent(opts[1], "2p + 4d = 12 and 3p + 2d = 11"))
 
+    def test_verbal_slope_options_not_equivalent_by_shared_number(self) -> None:
+        slope = "15 m more per year of age"
+        reciprocal = "15 years per meter"
+        self.assertFalse(options_equivalent(slope, reciprocal))
+        from arjun_course3_answers import is_pick_correct
+
+        q = {
+            "options": ["Start at 492 m", slope, reciprocal, "492 years"],
+            "answer": 1,
+        }
+        self.assertTrue(is_pick_correct(q, 1))
+        self.assertFalse(is_pick_correct(q, 2))
+
     def test_linear_expression_figure_45(self) -> None:
         question = (
             "A table shows figure number n and number of tiles: 3n+1. "

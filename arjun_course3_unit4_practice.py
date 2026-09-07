@@ -145,8 +145,8 @@ UNIT4_QUESTION_BANK: list[dict] = [
             "A train of n unit squares in a row (each side 1 unit) has perimeter P. "
             "Which rule matches that pattern?"
         ),
-        "options": ["P = 4n", "P = n + 4", "P = 2n", "P = n²"], "answer": 0,
-        "explanation": "Each square adds 4 to the perimeter when squares are separate → P = 4n.",
+        "options": ["P = 4n", "P = n + 4", "P = 2n + 2", "P = n²"], "answer": 2,
+        "explanation": "Connected squares in a row share interior edges, so the outer perimeter grows by 2 each time → P = 2n + 2 (e.g. n=1 → 4, n=2 → 6, n=3 → 8).",
     },
     {
         "id": "u4_lf1", "category": "linear_functions",

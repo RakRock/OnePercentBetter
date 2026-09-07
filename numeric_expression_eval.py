@@ -20,6 +20,11 @@ _BAD_EXPLANATION_RE = re.compile(
 _LINEAR_EXPR_RE = re.compile(r"(-?\d+)\s*n\s*([+-])\s*(\d+)", re.I)
 _LINEAR_OPTION_RE = re.compile(r"^(-?\d*)n([+-])(\d+)$", re.I)
 _LEADING_NUM_RE = re.compile(r"^\s*(-?\d+(?:\.\d+)?(?:/\d+)?)")
+_VERBAL_CONTEXT_RE = re.compile(
+    r"\b(?:more|less|per|every|each|start(?:ing)?|association|positive|negative|"
+    r"cannot|both|walked|age|year|years|meter|meters|minute|minutes|fat|grams)\b",
+    re.I,
+)
 _MIXED_NUM_RE = re.compile(r"^\s*(-?\d+)\s+(\d+)\s*/\s*(\d+)")
 _THOUSANDS_SEP_RE = re.compile(r"^-?\d{1,3}(?:,\d{3})+(?:\.\d+)?$")
 _EXPL_RESULT_RE = re.compile(r"=\s*(-?\d+(?:\.\d+)?)\s*(?:\?|\.|,|;|\s|$)")
@@ -660,6 +665,11 @@ def option_numeric_value(text: str) -> float | None:
     return None
 
 
+def _is_verbal_context_option(text: str) -> bool:
+    """True for slope/rate/word-problem MCQ options that must not match by leading number alone."""
+    return bool(_VERBAL_CONTEXT_RE.search(str(text)))
+
+
 def options_equivalent(a: str, b: str) -> bool:
     a_order = _ordering_values_from_option(a)
     b_order = _ordering_values_from_option(b)
@@ -681,6 +691,8 @@ def options_equivalent(a: str, b: str) -> bool:
     b_norm = _normalize_expr(b)
     if a_norm == b_norm:
         return True
+    if _is_verbal_context_option(a) or _is_verbal_context_option(b):
+        return str(a).strip().casefold() == str(b).strip().casefold()
     va, vb = option_numeric_value(a), option_numeric_value(b)
     if va is not None and vb is not None:
         return abs(va - vb) <= 1e-9
