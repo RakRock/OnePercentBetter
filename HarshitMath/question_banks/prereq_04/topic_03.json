@@ -68,14 +68,14 @@
       },
       {
         "id": "p4_t3_A_aad95209",
-        "question": "Use the diagram. In parallelogram ABCD, P and Q are midpoints of AB and CD. The shaded quadrilateral is DPBQ. What type of quadrilateral is DPBQ?",
+        "question": "In parallelogram ABCD, P and Q are midpoints of AB and CD. The shaded quadrilateral is DPBQ. What type of quadrilateral is DPBQ?",
         "options": [
-          "ABCD",
-          "APCQ",
-          "DPBQ",
-          "PSQR"
+          "rectangle",
+          "parallelogram",
+          "rhombus",
+          "trapezium"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "Step 1: P and Q are midpoints, so DP = ½AD side path and BQ relates to half of BC — with AB ∥ CD, DQ = PB and DQ ∥ PB. Step 2: DPBQ has one pair of opposite sides equal and parallel, so it is a parallelogram (Example 6 ii).",
         "diagram": {
           "type": "parallelogram_midpoints",

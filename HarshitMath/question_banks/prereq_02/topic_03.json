@@ -23,15 +23,15 @@
       },
       {
         "id": "p2_t3_A_0f367d6b",
-        "question": "Factor out the common factor from 2x + 1.",
+        "question": "What is the greatest common factor of the terms in 2x + 1?",
         "options": [
           "2",
           "2x + 1",
           "1",
           "x"
         ],
-        "answer": 1,
-        "explanation": "The terms 2x and 1 have no common factor other than 1, as shown when solving 2x + 1 = 0 in Example 4.",
+        "answer": 2,
+        "explanation": "The terms 2x and 1 share no factor other than 1, so the polynomial cannot be factored further.",
         "topic": 3,
         "level": "A",
         "prereq_id": 2,
@@ -63,15 +63,15 @@
       },
       {
         "id": "p2_t3_A_a67272a4",
-        "question": "Identify the common factor in x - 1.",
+        "question": "What is the greatest common factor of the terms in x - 1?",
         "options": [
           "x-1",
           "-1",
           "1",
           "x"
         ],
-        "answer": 0,
-        "explanation": "The linear polynomial x - 1 has no common numerical factor other than 1, as its zero is found by solving x - 1 = 0.",
+        "answer": 2,
+        "explanation": "The terms x and -1 share no factor other than 1, so the greatest common factor is 1.",
         "topic": 3,
         "level": "A",
         "prereq_id": 2,

@@ -130,8 +130,11 @@
           "5√5/5",
           "√5"
         ],
-        "answer": 1,
-        "explanation": "Multiply top and bottom by √5 so the denominator becomes 5, which is rational.",
+        "answer": 3,
+        "valid_answers": [
+          "5√5/5"
+        ],
+        "explanation": "Multiply top and bottom by √5: (5√5)/(√5·√5) = 5√5/5 = √5.",
         "topic": 4,
         "level": "A",
         "prereq_id": 1,
@@ -609,15 +612,15 @@
       },
       {
         "id": "p1_t4_B_1247ada0",
-        "question": "What operation on √3 + 1 would help place it exactly using the number line gaps described?",
+        "question": "Starting from √3 on the number line, what operation places the point √3 + 1?",
         "options": [
           "Multiply by conjugate",
           "Add 1",
           "Subtract √3",
           "Divide by 2"
         ],
-        "answer": 0,
-        "explanation": "The excerpt highlights gaps holding non-rational numbers like those involving roots, which can be positioned by relating to their conjugates on the line.",
+        "answer": 1,
+        "explanation": "Translate √3 one unit to the right on the number line to reach √3 + 1. Multiplying by a conjugate is for rationalizing denominators, not for plotting this point.",
         "topic": 4,
         "level": "B",
         "prereq_id": 1,

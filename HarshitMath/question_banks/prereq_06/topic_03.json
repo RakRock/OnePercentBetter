@@ -507,13 +507,13 @@
         "id": "p6_t3_B_e03141dd",
         "question": "Fair die: P(not rolling a 3) = ?",
         "options": [
-          "0",
+          "5/6",
           "3/6",
-          "3/2",
+          "1/6",
           "1"
         ],
-        "answer": 1,
-        "explanation": "Use complementary probability.",
+        "answer": 0,
+        "explanation": "P(not 3) = 1 - P(3) = 1 - 1/6 = 5/6. Five of the six outcomes are not 3.",
         "topic": 3,
         "level": "B",
         "prereq_id": 6,
@@ -527,13 +527,13 @@
         "id": "p6_t3_B_2a3483e1",
         "question": "Fair die: P(not rolling a 4) = ?",
         "options": [
+          "5/6",
           "4/6",
-          "0",
           "2/6",
-          "1"
+          "1/6"
         ],
-        "answer": 2,
-        "explanation": "Use complementary probability.",
+        "answer": 0,
+        "explanation": "P(not 4) = 1 - P(4) = 1 - 1/6 = 5/6. Five of the six outcomes are not 4.",
         "topic": 3,
         "level": "B",
         "prereq_id": 6,
@@ -567,13 +567,13 @@
         "id": "p6_t3_B_e0e5bae6",
         "question": "Fair die: P(not rolling a 2) = ?",
         "options": [
+          "5/6",
           "2/6",
           "4/6",
-          "0",
-          "1"
+          "1/6"
         ],
-        "answer": 1,
-        "explanation": "Use complementary probability.",
+        "answer": 0,
+        "explanation": "P(not 2) = 1 - P(2) = 1 - 1/6 = 5/6. Five of the six outcomes are not 2.",
         "topic": 3,
         "level": "B",
         "prereq_id": 6,

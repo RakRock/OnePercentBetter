@@ -187,7 +187,7 @@
         "options": [
           "y = 2x + 2",
           "x = 2y + 2",
-          "y = 2x + 2 (alt 1)",
+          "y = 2x",
           "y = 2x - 2"
         ],
         "answer": 0,
@@ -385,9 +385,9 @@
         "id": "p3_t2_A_a5000c3c",
         "question": "Which equation has slope 3 and y-intercept 0?",
         "options": [
-          "y = 3x + 0",
-          "x = 3y + 0",
-          "y = 3x - 0",
+          "y = 3x",
+          "x = 3y",
+          "y = 3x + 1",
           "y = 0x + 3"
         ],
         "answer": 0,
@@ -747,9 +747,9 @@
         "id": "p3_t2_B_55c95781",
         "question": "Which equation has slope 1 and y-intercept 0?",
         "options": [
-          "x = y + 0",
-          "y = x - 0",
-          "y = x + 0",
+          "x = y",
+          "y = x + 1",
+          "y = x",
           "y = 0x + 1"
         ],
         "answer": 2,
@@ -787,10 +787,10 @@
         "id": "p3_t2_B_0966e4c3",
         "question": "Which equation has slope 4 and y-intercept 0?",
         "options": [
-          "x = 4y + 0",
-          "y = 4x + 0",
+          "x = 4y",
+          "y = 4x",
           "y = 0x + 4",
-          "y = 4x - 0"
+          "y = 4x + 1"
         ],
         "answer": 1,
         "explanation": "",

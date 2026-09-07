@@ -1488,12 +1488,12 @@
         "question": "Median of [6, 8, 8, 10, 11, 11]?",
         "options": [
           "6",
-          "9.0 (alt 1)",
-          "9.0",
+          "8.5",
+          "9",
           "11"
         ],
         "answer": 2,
-        "explanation": "",
+        "explanation": "With six values in order, the median is the average of the 3rd and 4th values: (8 + 10) ÷ 2 = 9.",
         "topic": 1,
         "level": "B",
         "prereq_id": 6,
