@@ -2521,13 +2521,13 @@
         "id": "u9_t2_E_b8aca83f",
         "question": "5 m pole casts 5 m shadow. Tower casts 47 m shadow. Tower height?",
         "options": [
-          "5 m",
-          "47 m (alt)",
+          "47 m",
+          "47 m",
           "57 m",
-          "47 m"
+          "5 m"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "5 × 47/5 = 47 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2540,13 +2540,13 @@
         "id": "u9_t2_E_5c3291e7",
         "question": "6 m pole casts 6 m shadow. Tower casts 40 m shadow. Tower height?",
         "options": [
-          "40 m (alt)",
-          "40 m",
           "6 m",
+          "40 m",
+          "40 m",
           "50 m"
         ],
         "answer": 1,
-        "explanation": "",
+        "explanation": "6 × 40/6 = 40 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2559,13 +2559,13 @@
         "id": "u9_t2_E_d3b33fb2",
         "question": "4 m pole casts 4 m shadow. Tower casts 23 m shadow. Tower height?",
         "options": [
+          "23 m",
+          "23 m",
           "4 m",
-          "23 m (alt)",
-          "33 m",
-          "23 m"
+          "33 m"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "4 × 23/4 = 23 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2578,13 +2578,13 @@
         "id": "u9_t2_E_0c4abb98",
         "question": "4 m pole casts 6 m shadow. Tower casts 32 m shadow. Tower height?",
         "options": [
+          "21 m",
           "31 m",
           "4 m",
-          "21 m",
           "32 m"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "4 × 32/6 ≈ 21.33 ≈ 21 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2597,13 +2597,13 @@
         "id": "u9_t2_E_5c9764a3",
         "question": "6 m pole casts 7 m shadow. Tower casts 39 m shadow. Tower height?",
         "options": [
-          "39 m",
-          "33 m",
           "6 m",
+          "33 m",
+          "39 m",
           "43 m"
         ],
         "answer": 1,
-        "explanation": "",
+        "explanation": "6 × 39/7 ≈ 33.43 ≈ 33 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2616,13 +2616,13 @@
         "id": "u9_t2_E_a50661ff",
         "question": "6 m pole casts 5 m shadow. Tower casts 28 m shadow. Tower height?",
         "options": [
-          "43 m",
-          "6 m",
-          "33 m",
-          "28 m"
+          "34 m",
+          "28 m",
+          "44 m",
+          "6 m"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "6 × 28/5 ≈ 33.60 ≈ 34 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2636,12 +2636,12 @@
         "question": "5 m pole casts 7 m shadow. Tower casts 33 m shadow. Tower height?",
         "options": [
           "33 m",
+          "34 m",
           "5 m",
-          "23 m",
-          "23 m (alt)"
+          "24 m"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 3,
+        "explanation": "5 × 33/7 ≈ 23.57 ≈ 24 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2656,11 +2656,11 @@
         "options": [
           "37 m",
           "46 m",
-          "56 m",
-          "5 m"
+          "5 m",
+          "56 m"
         ],
         "answer": 1,
-        "explanation": "",
+        "explanation": "5 × 37/4 ≈ 46.25 ≈ 46 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2676,10 +2676,10 @@
           "8 m",
           "35 m",
           "25 m",
-          "25 m (alt)"
+          "25 m"
         ],
         "answer": 2,
-        "explanation": "",
+        "explanation": "8 × 25/8 = 25 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2692,13 +2692,13 @@
         "id": "u9_t2_E_acea3ecd",
         "question": "5 m pole casts 5 m shadow. Tower casts 45 m shadow. Tower height?",
         "options": [
-          "45 m (alt)",
+          "45 m",
           "5 m",
-          "55 m",
-          "45 m"
+          "45 m",
+          "55 m"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "5 × 45/5 = 45 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2711,13 +2711,13 @@
         "id": "u9_t2_E_244412f8",
         "question": "7 m pole casts 4 m shadow. Tower casts 30 m shadow. Tower height?",
         "options": [
-          "52 m",
           "62 m",
           "7 m",
-          "30 m"
+          "30 m",
+          "52.5 m"
         ],
-        "answer": 0,
-        "explanation": "",
+        "answer": 3,
+        "explanation": "7 × 30/4 = 52.5 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2730,13 +2730,13 @@
         "id": "u9_t2_E_6fffacb9",
         "question": "5 m pole casts 8 m shadow. Tower casts 50 m shadow. Tower height?",
         "options": [
-          "41 m",
-          "5 m",
           "50 m",
-          "31 m"
+          "31 m",
+          "41 m",
+          "5 m"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "5 × 50/8 ≈ 31.25 ≈ 31 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2749,13 +2749,13 @@
         "id": "u9_t2_E_ea248915",
         "question": "8 m pole casts 4 m shadow. Tower casts 35 m shadow. Tower height?",
         "options": [
-          "8 m",
-          "35 m",
           "80 m",
-          "70 m"
+          "8 m",
+          "70 m",
+          "35 m"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "8 × 35/4 = 70 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2768,13 +2768,13 @@
         "id": "u9_t2_E_85ccdaff",
         "question": "7 m pole casts 7 m shadow. Tower casts 30 m shadow. Tower height?",
         "options": [
-          "30 m",
           "40 m",
-          "30 m (alt)",
+          "30 m",
+          "30 m",
           "7 m"
         ],
-        "answer": 0,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "7 × 30/7 = 30 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2787,13 +2787,13 @@
         "id": "u9_t2_E_d464c573",
         "question": "5 m pole casts 4 m shadow. Tower casts 20 m shadow. Tower height?",
         "options": [
-          "35 m",
+          "5 m",
           "25 m",
-          "20 m",
-          "5 m"
+          "35 m",
+          "20 m"
         ],
         "answer": 1,
-        "explanation": "",
+        "explanation": "5 × 20/4 = 25 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2806,13 +2806,13 @@
         "id": "u9_t2_E_3f6a5dcf",
         "question": "4 m pole casts 8 m shadow. Tower casts 44 m shadow. Tower height?",
         "options": [
-          "22 m",
-          "44 m",
           "4 m",
-          "32 m"
+          "44 m",
+          "32 m",
+          "22 m"
         ],
-        "answer": 0,
-        "explanation": "",
+        "answer": 3,
+        "explanation": "4 × 44/8 = 22 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2831,7 +2831,7 @@
           "60 m"
         ],
         "answer": 1,
-        "explanation": "",
+        "explanation": "7 × 43/6 ≈ 50.17 ≈ 50 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2845,12 +2845,12 @@
         "question": "4 m pole casts 8 m shadow. Tower casts 40 m shadow. Tower height?",
         "options": [
           "40 m",
-          "4 m",
           "30 m",
-          "20 m"
+          "20 m",
+          "4 m"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "4 × 40/8 = 20 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2863,13 +2863,13 @@
         "id": "u9_t2_E_ddc0a2cf",
         "question": "4 m pole casts 6 m shadow. Tower casts 39 m shadow. Tower height?",
         "options": [
-          "4 m",
           "36 m",
           "39 m",
+          "4 m",
           "26 m"
         ],
         "answer": 3,
-        "explanation": "",
+        "explanation": "4 × 39/6 = 26 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2882,13 +2882,13 @@
         "id": "u9_t2_E_e3bfc986",
         "question": "5 m pole casts 7 m shadow. Tower casts 43 m shadow. Tower height?",
         "options": [
-          "30 m",
-          "43 m",
-          "40 m",
-          "5 m"
+          "5 m",
+          "41 m",
+          "31 m",
+          "43 m"
         ],
-        "answer": 0,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "5 × 43/7 ≈ 30.71 ≈ 31 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2901,13 +2901,13 @@
         "id": "u9_t2_E_309b1372",
         "question": "6 m pole casts 5 m shadow. Tower casts 29 m shadow. Tower height?",
         "options": [
-          "29 m",
-          "34 m",
-          "44 m",
-          "6 m"
+          "35 m",
+          "6 m",
+          "45 m",
+          "29 m"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "6 × 29/5 ≈ 34.80 ≈ 35 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2920,13 +2920,13 @@
         "id": "u9_t2_E_e1605755",
         "question": "5 m pole casts 4 m shadow. Tower casts 27 m shadow. Tower height?",
         "options": [
-          "5 m",
-          "33 m",
+          "34 m",
           "27 m",
-          "43 m"
+          "5 m",
+          "44 m"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "5 × 27/4 ≈ 33.75 ≈ 34 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2939,13 +2939,13 @@
         "id": "u9_t2_E_b94e1d97",
         "question": "7 m pole casts 7 m shadow. Tower casts 37 m shadow. Tower height?",
         "options": [
-          "7 m",
-          "47 m",
           "37 m",
-          "37 m (alt)"
+          "37 m",
+          "7 m",
+          "47 m"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "7 × 37/7 = 37 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2958,13 +2958,13 @@
         "id": "u9_t2_E_73744b66",
         "question": "6 m pole casts 4 m shadow. Tower casts 21 m shadow. Tower height?",
         "options": [
+          "42 m",
+          "31.5 m",
           "21 m",
-          "31 m",
-          "6 m",
-          "41 m"
+          "6 m"
         ],
         "answer": 1,
-        "explanation": "",
+        "explanation": "6 × 21/4 = 31.5 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2977,13 +2977,13 @@
         "id": "u9_t2_E_b10544b3",
         "question": "4 m pole casts 5 m shadow. Tower casts 37 m shadow. Tower height?",
         "options": [
-          "39 m",
+          "30 m",
           "4 m",
-          "37 m",
-          "29 m"
+          "40 m",
+          "37 m"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "4 × 37/5 ≈ 29.60 ≈ 30 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -2998,11 +2998,11 @@
         "options": [
           "31 m",
           "21 m",
-          "21 m (alt)",
+          "21 m",
           "4 m"
         ],
         "answer": 1,
-        "explanation": "",
+        "explanation": "4 × 21/4 = 21 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -3015,13 +3015,13 @@
         "id": "u9_t2_E_4fd14658",
         "question": "6 m pole casts 7 m shadow. Tower casts 46 m shadow. Tower height?",
         "options": [
+          "6 m",
           "46 m",
-          "39 m",
           "49 m",
-          "6 m"
+          "39 m"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 3,
+        "explanation": "6 × 46/7 ≈ 39.43 ≈ 39 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -3035,12 +3035,12 @@
         "question": "5 m pole casts 5 m shadow. Tower casts 39 m shadow. Tower height?",
         "options": [
           "39 m",
-          "39 m (alt)",
-          "5 m",
-          "49 m"
+          "39 m",
+          "49 m",
+          "5 m"
         ],
         "answer": 0,
-        "explanation": "",
+        "explanation": "5 × 39/5 = 39 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -3053,13 +3053,13 @@
         "id": "u9_t2_E_f8005054",
         "question": "6 m pole casts 5 m shadow. Tower casts 44 m shadow. Tower height?",
         "options": [
-          "62 m",
           "44 m",
-          "52 m",
+          "63 m",
+          "53 m",
           "6 m"
         ],
         "answer": 2,
-        "explanation": "",
+        "explanation": "6 × 44/5 ≈ 52.80 ≈ 53 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,
@@ -3072,13 +3072,13 @@
         "id": "u9_t2_E_aae01b75",
         "question": "6 m pole casts 6 m shadow. Tower casts 47 m shadow. Tower height?",
         "options": [
-          "47 m",
           "57 m",
+          "47 m",
           "6 m",
-          "47 m (alt)"
+          "47 m"
         ],
-        "answer": 0,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "6 × 47/6 = 47 m.",
         "topic": 2,
         "level": "E",
         "unit_id": 9,

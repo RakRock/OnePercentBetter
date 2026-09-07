@@ -1015,27 +1015,24 @@ def _gen_u6_similar_proof() -> dict:
 
 
 def _gen_u7_distance_two_points() -> dict:
-    x1, y1 = random.randint(0, 5), random.randint(0, 5)
-    x2, y2 = x1 + random.randint(3, 6), y1 + random.randint(4, 8)
-    d = int(_coord_dist(x1, y1, x2, y2))
+    x1, y1, x2, y2, d = h10t._random_distance_points()
     return _exam_mcq(
         "u7_distance_two_points",
         f"Distance between ({x1}, {y1}) and ({x2}, {y2}):",
         f"{d} units",
-        [f"{d + 3} units", f"{x2 - x1 + y2 - y1} units", f"{d - 2} units"],
+        [f"{d + 3} units", f"{x2 - x1 + y2 - y1} units", f"{max(1, d - 2)} units"],
         f"√[({x2}−{x1})² + ({y2}−{y1})²] = {d}.",
     )
 
 
 def _gen_u7_distance_origin() -> dict:
-    x, y = random.randint(3, 12), random.randint(4, 12)
-    d = int(_coord_dist(0, 0, x, y))
+    dx, dy, d = random.choice([(3, 4, 5), (5, 12, 13), (6, 8, 10), (8, 15, 17), (9, 12, 15)])
     return _exam_mcq(
         "u7_distance_origin",
-        f"Distance of ({x}, {y}) from origin:",
+        f"Distance of ({dx}, {dy}) from origin:",
         f"{d} units",
-        [f"{x + y} units", f"{d + 2} units", f"{abs(x - y)} units"],
-        f"√({x}² + {y}²) = {d}.",
+        [f"{dx + dy} units", f"{d + 2} units", f"{abs(dx - dy)} units"],
+        f"√({dx}² + {dy}²) = {d}.",
     )
 
 
@@ -1083,7 +1080,7 @@ def _gen_u7_collinear() -> dict:
     k = random.randint(2, 5)
     return _exam_mcq(
         "u7_collinear",
-        f"Are (1, 2), (1 + {k}, 2 + 2{k}), (1 + 2{k}, 2 + 4{k}) collinear?",
+        f"Are (1, 2), (1 + {k}, 2 + {2 * k}), (1 + {2 * k}, 2 + {4 * k}) collinear?",
         "Yes",
         ["No", "Only if k = 0", "Cannot tell"],
         "Constant slope 2 ⇒ collinear.",
@@ -1092,6 +1089,8 @@ def _gen_u7_collinear() -> dict:
 
 def _gen_u7_triangle_area() -> dict:
     base, height = random.randint(3, 8), random.randint(3, 8)
+    if (base * height) % 2:
+        height += 1
     area = base * height // 2
     return _exam_mcq(
         "u7_triangle_area",
@@ -1139,16 +1138,14 @@ def _gen_u8_standard_angles() -> dict:
 
 
 def _gen_u8_eval_expression() -> dict:
-    a, b = random.choice([(30, 60), (45, 45), (60, 30)])
-    ans_val = "1"
-    if (a, b) == (45, 45):
-        ans_val = "√2"
+    a, b = random.choice(list(h10t._SIN_COS_SUMS))
+    ans_val, expl = h10t._sin_cos_sum(a, b)
     return _exam_mcq(
         "u8_eval_expression",
         f"sin {a}° + cos {b}° = ?",
         ans_val,
         ["0", "√3", "1/2"],
-        "Use standard trigonometric values.",
+        expl,
     )
 
 

@@ -45,13 +45,13 @@
         "id": "u9_t4_B_c7d9081a",
         "question": "3 m pole casts 7 m shadow. A 2 m pole casts shadow ≈ ?",
         "options": [
-          "3 m",
-          "4 m",
           "7 m",
-          "6 m"
+          "5 m",
+          "3 m",
+          "7 m"
         ],
         "answer": 1,
-        "explanation": "Same ratio height/shadow.",
+        "explanation": "2 × 7/3 ≈ 4.67 ≈ 5 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -64,13 +64,13 @@
         "id": "u9_t4_B_2273b96e",
         "question": "5 m pole casts 6 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
-          "3 m (alt)",
-          "3 m",
-          "5 m",
-          "6 m"
+          "4 m",
+          "6 m",
+          "6 m",
+          "5 m"
         ],
-        "answer": 1,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 0,
+        "explanation": "3 × 6/5 ≈ 3.60 ≈ 4 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -83,13 +83,13 @@
         "id": "u9_t4_B_2748a5d0",
         "question": "4 m pole casts 6 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
-          "None of these",
-          "4 m (alt)",
           "6 m",
-          "4 m"
+          "6 m",
+          "4 m",
+          "4.5 m"
         ],
         "answer": 3,
-        "explanation": "Same ratio height/shadow.",
+        "explanation": "3 × 6/4 = 4.5 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -102,13 +102,13 @@
         "id": "u9_t4_B_3f28ca98",
         "question": "7 m pole casts 4 m shadow. A 4 m pole casts shadow ≈ ?",
         "options": [
-          "2 m",
-          "2 m (alt)",
           "4 m",
-          "7 m"
+          "2 m",
+          "7 m",
+          "4 m"
         ],
-        "answer": 0,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 1,
+        "explanation": "4 × 4/7 ≈ 2.29 ≈ 2 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -121,13 +121,13 @@
         "id": "u9_t4_B_dce15be2",
         "question": "5 m pole casts 8 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
-          "4 m",
-          "5 m",
           "8 m",
-          "6 m"
+          "5 m",
+          "5 m",
+          "7 m"
         ],
-        "answer": 0,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 1,
+        "explanation": "3 × 8/5 ≈ 4.80 ≈ 5 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -140,13 +140,13 @@
         "id": "u9_t4_B_8b08466f",
         "question": "8 m pole casts 8 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
-          "7 m",
           "5 m",
+          "7 m",
           "8 m",
-          "5 m (alt)"
+          "8 m"
         ],
-        "answer": 1,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 0,
+        "explanation": "5 × 8/8 = 5 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -159,13 +159,13 @@
         "id": "u9_t4_B_1714f11e",
         "question": "3 m pole casts 4 m shadow. A 2 m pole casts shadow ≈ ?",
         "options": [
-          "4 m",
-          "2 m",
           "3 m",
-          "2 m (alt)"
+          "5 m",
+          "3 m",
+          "4 m"
         ],
-        "answer": 1,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 0,
+        "explanation": "2 × 4/3 ≈ 2.67 ≈ 3 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -179,12 +179,12 @@
         "question": "4 m pole casts 3 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
           "3 m",
-          "2 m (alt)",
           "2 m",
+          "4 m",
           "4 m"
         ],
-        "answer": 2,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 1,
+        "explanation": "3 × 3/4 ≈ 2.25 ≈ 2 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -203,7 +203,7 @@
           "3 m"
         ],
         "answer": 3,
-        "explanation": "Same ratio height/shadow.",
+        "explanation": "5 × 6/9 ≈ 3.33 ≈ 3 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -216,13 +216,13 @@
         "id": "u9_t4_B_d0d9dab3",
         "question": "6 m pole casts 4 m shadow. A 4 m pole casts shadow ≈ ?",
         "options": [
+          "5 m",
+          "3 m",
           "4 m",
-          "6 m",
-          "2 m (alt)",
-          "2 m"
+          "6 m"
         ],
-        "answer": 3,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 1,
+        "explanation": "4 × 4/6 ≈ 2.67 ≈ 3 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -235,13 +235,13 @@
         "id": "u9_t4_B_95ebf2df",
         "question": "8 m pole casts 7 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
+          "8 m",
           "6 m",
           "7 m",
-          "8 m",
           "4 m"
         ],
         "answer": 3,
-        "explanation": "Same ratio height/shadow.",
+        "explanation": "5 × 7/8 ≈ 4.38 ≈ 4 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -254,13 +254,13 @@
         "id": "u9_t4_B_f6c564cb",
         "question": "4 m pole casts 5 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
-          "3 m",
-          "3 m (alt)",
-          "5 m",
-          "4 m"
+          "6 m",
+          "4 m",
+          "4 m",
+          "5 m"
         ],
-        "answer": 0,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 1,
+        "explanation": "3 × 5/4 ≈ 3.75 ≈ 4 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -273,13 +273,13 @@
         "id": "u9_t4_B_1d763e2d",
         "question": "8 m pole casts 5 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
-          "3 m",
           "8 m",
           "5 m",
-          "3 m (alt)"
+          "5 m",
+          "3 m"
         ],
-        "answer": 0,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 3,
+        "explanation": "5 × 5/8 ≈ 3.12 ≈ 3 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -292,13 +292,13 @@
         "id": "u9_t4_B_1011f9e0",
         "question": "6 m pole casts 7 m shadow. A 4 m pole casts shadow ≈ ?",
         "options": [
+          "5 m",
           "7 m",
           "6 m",
-          "4 m",
-          "4 m (alt)"
+          "7 m"
         ],
-        "answer": 2,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 0,
+        "explanation": "4 × 7/6 ≈ 4.67 ≈ 5 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -311,13 +311,13 @@
         "id": "u9_t4_B_c01e2e58",
         "question": "5 m pole casts 4 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
+          "5 m",
           "4 m",
-          "2 m (alt)",
-          "2 m",
-          "5 m"
+          "4 m",
+          "2 m"
         ],
-        "answer": 2,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 3,
+        "explanation": "3 × 4/5 ≈ 2.40 ≈ 2 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -330,13 +330,13 @@
         "id": "u9_t4_B_422f1cec",
         "question": "7 m pole casts 6 m shadow. A 4 m pole casts shadow ≈ ?",
         "options": [
-          "3 m",
           "7 m",
-          "5 m",
-          "6 m"
+          "6 m",
+          "3 m",
+          "5 m"
         ],
-        "answer": 0,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 2,
+        "explanation": "4 × 6/7 ≈ 3.43 ≈ 3 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -349,13 +349,13 @@
         "id": "u9_t4_B_686ef1cf",
         "question": "9 m pole casts 3 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
-          "3 m",
-          "1 m (alt)",
+          "2 m",
           "9 m",
-          "1 m"
+          "3 m",
+          "4 m"
         ],
-        "answer": 3,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 0,
+        "explanation": "5 × 3/9 ≈ 1.67 ≈ 2 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -368,13 +368,13 @@
         "id": "u9_t4_B_7539e55d",
         "question": "4 m pole casts 9 m shadow. A 3 m pole casts shadow ≈ ?",
         "options": [
-          "6 m",
-          "8 m",
           "9 m",
-          "4 m"
+          "9 m",
+          "4 m",
+          "7 m"
         ],
-        "answer": 0,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 3,
+        "explanation": "3 × 9/4 ≈ 6.75 ≈ 7 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -387,13 +387,13 @@
         "id": "u9_t4_B_e53a9eb0",
         "question": "6 m pole casts 3 m shadow. A 4 m pole casts shadow ≈ ?",
         "options": [
-          "3 m",
-          "2 m",
           "6 m",
-          "4 m"
+          "4 m",
+          "2 m",
+          "3 m"
         ],
-        "answer": 1,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 2,
+        "explanation": "4 × 3/6 = 2 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -406,13 +406,13 @@
         "id": "u9_t4_B_e2680e28",
         "question": "9 m pole casts 5 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
-          "2 m",
-          "4 m",
+          "5 m",
+          "3 m",
           "9 m",
           "5 m"
         ],
-        "answer": 0,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 1,
+        "explanation": "5 × 5/9 ≈ 2.78 ≈ 3 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -425,13 +425,13 @@
         "id": "u9_t4_B_3d34a9b1",
         "question": "8 m pole casts 3 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
-          "1 m (alt)",
-          "3 m",
+          "2 m",
+          "4 m",
           "8 m",
-          "1 m"
+          "3 m"
         ],
-        "answer": 3,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 0,
+        "explanation": "5 × 3/8 ≈ 1.88 ≈ 2 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -444,13 +444,13 @@
         "id": "u9_t4_B_6c441012",
         "question": "9 m pole casts 7 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
-          "5 m",
+          "7 m",
           "9 m",
-          "3 m",
-          "7 m"
+          "6 m",
+          "4 m"
         ],
-        "answer": 2,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 3,
+        "explanation": "5 × 7/9 ≈ 3.89 ≈ 4 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -463,13 +463,13 @@
         "id": "u9_t4_B_93f1f516",
         "question": "9 m pole casts 9 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
-          "5 m",
+          "9 m",
           "7 m",
-          "5 m (alt)",
+          "5 m",
           "9 m"
         ],
-        "answer": 0,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 2,
+        "explanation": "5 × 9/9 = 5 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -482,13 +482,13 @@
         "id": "u9_t4_B_d0ce97c4",
         "question": "3 m pole casts 3 m shadow. A 2 m pole casts shadow ≈ ?",
         "options": [
-          "2 m (alt)",
           "3 m",
-          "4 m",
-          "2 m"
+          "3 m",
+          "2 m",
+          "4 m"
         ],
-        "answer": 3,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 2,
+        "explanation": "2 × 3/3 = 2 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -501,13 +501,13 @@
         "id": "u9_t4_B_a8f0d44c",
         "question": "3 m pole casts 8 m shadow. A 2 m pole casts shadow ≈ ?",
         "options": [
-          "8 m",
-          "5 m",
+          "3 m",
           "7 m",
-          "3 m"
+          "8 m",
+          "5 m"
         ],
-        "answer": 1,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 3,
+        "explanation": "2 × 8/3 ≈ 5.33 ≈ 5 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -520,13 +520,13 @@
         "id": "u9_t4_B_31170ee5",
         "question": "7 m pole casts 3 m shadow. A 4 m pole casts shadow ≈ ?",
         "options": [
-          "1 m (alt)",
           "7 m",
-          "1 m",
+          "4 m",
+          "2 m",
           "3 m"
         ],
         "answer": 2,
-        "explanation": "Same ratio height/shadow.",
+        "explanation": "4 × 3/7 ≈ 1.71 ≈ 2 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -539,13 +539,13 @@
         "id": "u9_t4_B_09f18d92",
         "question": "3 m pole casts 6 m shadow. A 2 m pole casts shadow ≈ ?",
         "options": [
-          "6 m",
           "3 m",
+          "6 m",
           "4 m",
-          "4 m (alt)"
+          "6 m"
         ],
         "answer": 2,
-        "explanation": "Same ratio height/shadow.",
+        "explanation": "2 × 6/3 = 4 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -558,13 +558,13 @@
         "id": "u9_t4_B_aaae609f",
         "question": "6 m pole casts 9 m shadow. A 4 m pole casts shadow ≈ ?",
         "options": [
+          "6 m",
           "9 m",
           "8 m",
-          "6 m (alt)",
           "6 m"
         ],
-        "answer": 3,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 0,
+        "explanation": "4 × 9/6 = 6 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -577,13 +577,13 @@
         "id": "u9_t4_B_194b536c",
         "question": "6 m pole casts 8 m shadow. A 4 m pole casts shadow ≈ ?",
         "options": [
+          "6 m",
           "5 m",
           "7 m",
-          "8 m",
-          "6 m"
+          "8 m"
         ],
-        "answer": 0,
-        "explanation": "Same ratio height/shadow.",
+        "answer": 1,
+        "explanation": "4 × 8/6 ≈ 5.33 ≈ 5 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,
@@ -596,13 +596,13 @@
         "id": "u9_t4_B_3769cd5e",
         "question": "9 m pole casts 8 m shadow. A 5 m pole casts shadow ≈ ?",
         "options": [
+          "9 m",
           "6 m",
           "8 m",
-          "9 m",
           "4 m"
         ],
         "answer": 3,
-        "explanation": "Same ratio height/shadow.",
+        "explanation": "5 × 8/9 ≈ 4.44 ≈ 4 m.",
         "topic": 4,
         "level": "B",
         "unit_id": 9,

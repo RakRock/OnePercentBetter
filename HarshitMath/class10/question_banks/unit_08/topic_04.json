@@ -46,12 +46,12 @@
         "question": "sin 60° + cos 30° = ?",
         "options": [
           "0",
-          "√3",
           "1/2",
-          "(√3+1)/2"
+          "1",
+          "√3"
         ],
         "answer": 3,
-        "explanation": "√3/2 + 1/2.",
+        "explanation": "√3/2 + √3/2 = √3.",
         "topic": 4,
         "level": "B",
         "unit_id": 8,
@@ -64,13 +64,13 @@
         "id": "u8_t4_B_abc46bb2",
         "question": "sin 0° + cos 90° = ?",
         "options": [
-          "0",
-          "1/2",
           "√3",
-          "1"
+          "1",
+          "0",
+          "1/2"
         ],
-        "answer": 3,
-        "explanation": "0 + 1 = 1.",
+        "answer": 2,
+        "explanation": "0 + 0 = 0.",
         "topic": 4,
         "level": "B",
         "unit_id": 8,
@@ -83,12 +83,12 @@
         "id": "u8_t4_B_3b6ce21d",
         "question": "sin 30° + cos 60° = ?",
         "options": [
+          "0",
           "1",
-          "1/2",
           "√3",
-          "0"
+          "1/2"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "1/2 + 1/2 = 1.",
         "topic": 4,
         "level": "B",
@@ -102,13 +102,13 @@
         "id": "u8_t4_B_b95f0779",
         "question": "sin 45° + cos 45° = ?",
         "options": [
-          "0",
           "1/2",
+          "√2",
           "√3",
-          "√2"
+          "0"
         ],
-        "answer": 3,
-        "explanation": "2/√2 = √2.",
+        "answer": 1,
+        "explanation": "1/√2 + 1/√2 = √2.",
         "topic": 4,
         "level": "B",
         "unit_id": 8,
@@ -201,13 +201,13 @@
         "id": "u8_t4_D_78ab2fc9",
         "question": "sin 45° + cos 45° = ?",
         "options": [
+          "0",
+          "√2",
           "√3",
-          "1.4142",
-          "1",
-          "0.5"
+          "1/2"
         ],
         "answer": 1,
-        "explanation": "",
+        "explanation": "1/√2 + 1/√2 = √2.",
         "topic": 4,
         "level": "D",
         "unit_id": 8,
@@ -220,13 +220,13 @@
         "id": "u8_t4_D_a0933c1b",
         "question": "sin 45° + cos 45° = ?",
         "options": [
-          "1/2",
-          "1.4142",
           "√3",
-          "0"
+          "√2",
+          "0",
+          "1/2"
         ],
         "answer": 1,
-        "explanation": "",
+        "explanation": "1/√2 + 1/√2 = √2.",
         "topic": 4,
         "level": "D",
         "unit_id": 8,
@@ -239,13 +239,13 @@
         "id": "u8_t4_D_eca39d67",
         "question": "sin 60° + cos 30° = ?",
         "options": [
+          "0",
           "1/2",
-          "(√3+1)/2",
           "√3",
-          "0"
+          "1"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "√3/2 + √3/2 = √3.",
         "topic": 4,
         "level": "D",
         "unit_id": 8,
@@ -258,13 +258,13 @@
         "id": "u8_t4_D_e4b95f5f",
         "question": "sin 30° + cos 60° = ?",
         "options": [
-          "√3",
           "1",
-          "0",
-          "1/2"
+          "1/2",
+          "√3",
+          "0"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "1/2 + 1/2 = 1.",
         "topic": 4,
         "level": "D",
         "unit_id": 8,
@@ -317,12 +317,12 @@
         "id": "u8_t4_E_433e640c",
         "question": "Value of sin 45°:",
         "options": [
-          "1/√2 (alt)",
+          "1/√2",
           "None of these",
           "1",
-          "1/√2"
+          "√2"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -337,11 +337,11 @@
         "question": "Value of cos 45°:",
         "options": [
           "1",
-          "1/√2 (alt)",
+          "1/√2",
           "None of these",
-          "1/√2"
+          "1/2"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -355,12 +355,12 @@
         "id": "u8_t4_E_d6b1a3be",
         "question": "Value of tan 0°:",
         "options": [
-          "0 (alt)",
-          "1",
           "0",
-          "3"
+          "1",
+          "3",
+          "1/2"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -374,12 +374,12 @@
         "id": "u8_t4_E_a97d8da8",
         "question": "Value of cos 0°:",
         "options": [
-          "1 (alt)",
-          "4",
           "1",
-          "0"
+          "4",
+          "0",
+          "√2"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -393,12 +393,12 @@
         "id": "u8_t4_E_c07947c5",
         "question": "Value of tan 90°:",
         "options": [
-          "undefined (alt)",
           "undefined",
           "0",
-          "1"
+          "1",
+          "√2"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -433,10 +433,10 @@
         "options": [
           "0",
           "undefined",
-          "1 (alt)",
-          "1"
+          "1",
+          "1/2"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -453,7 +453,7 @@
           "undefined",
           "0",
           "1",
-          "0 (alt)"
+          "1/2"
         ],
         "answer": 1,
         "explanation": "",
@@ -528,10 +528,10 @@
         "options": [
           "3",
           "1",
-          "0 (alt)",
-          "0"
+          "0",
+          "1/2"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -548,7 +548,7 @@
           "1/√2",
           "1",
           "4",
-          "1 (alt)"
+          "√3/2"
         ],
         "answer": 1,
         "explanation": "",

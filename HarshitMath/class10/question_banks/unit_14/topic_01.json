@@ -178,12 +178,12 @@
         "id": "u14_t1_B_a4cfa322",
         "question": "Fair die/cards: 13 favourable out of 26. P(E) = ?",
         "options": [
-          "0",
-          "1/2 (alt)",
+          "2/2",
+          "1/2",
           "1",
-          "1/2"
+          "0"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "B",
@@ -1229,12 +1229,12 @@
         "id": "u14_t1_E_d21d46e6",
         "question": "Bag: 12 red out of 12 identical balls. P(red) = ?",
         "options": [
-          "1 (alt)",
           "0",
           "11/12",
-          "1"
+          "1",
+          "4"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 1,
         "level": "E",

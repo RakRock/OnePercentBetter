@@ -596,15 +596,15 @@
     "C": [
       {
         "id": "u6_t4_C_3046de1d",
-        "question": "A 1 m tree casts a 0 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 0.8 m tree casts a 1.3 m shadow. A pole casts 0.5 m shadow. Pole height?",
         "options": [
-          "60 cm",
-          "150 cm",
-          "100 cm",
-          "130 cm"
+          "80 cm",
+          "10 cm",
+          "30 cm",
+          "50 cm"
         ],
         "answer": 2,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "explanation": "height/shadow is constant: 80/130 = h/50 ⇒ h = 30 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -615,15 +615,15 @@
       },
       {
         "id": "u6_t4_C_89955e02",
-        "question": "A 1 m tree casts a 0 m shadow. A pole casts 1 m shadow. Pole height?",
+        "question": "A 1.3 m tree casts a 1.8 m shadow. A pole casts 1.1 m shadow. Pole height?",
         "options": [
-          "196 cm",
-          "100 cm",
-          "166 cm (alt)",
-          "166 cm"
+          "109 cm",
+          "110 cm",
+          "130 cm",
+          "79 cm"
         ],
         "answer": 3,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "explanation": "height/shadow is constant: 130/180 = h/110 ⇒ h = 79 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -634,15 +634,15 @@
       },
       {
         "id": "u6_t4_C_dff2d87b",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 2.2 m tree casts a 0.9 m shadow. A pole casts 0.5 m shadow. Pole height?",
         "options": [
-          "170 cm",
-          "132 cm",
-          "60 cm",
-          "102 cm"
+          "152 cm",
+          "50 cm",
+          "122 cm",
+          "220 cm"
         ],
-        "answer": 3,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 220/90 = h/50 ⇒ h = 122 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -653,15 +653,15 @@
       },
       {
         "id": "u6_t4_C_cf9e5e29",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 1.5 m tree casts a 1.8 m shadow. A pole casts 0.6 m shadow. Pole height?",
         "options": [
-          "50 cm",
-          "40 cm",
+          "60 cm",
           "150 cm",
+          "50 cm",
           "80 cm"
         ],
-        "answer": 0,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 150/180 = h/60 ⇒ h = 50 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -672,15 +672,15 @@
       },
       {
         "id": "u6_t4_C_a854bd09",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 1.7 m tree casts a 0.8 m shadow. A pole casts 1.2 m shadow. Pole height?",
         "options": [
-          "65 cm",
-          "130 cm",
-          "35 cm",
-          "30 cm"
+          "265 cm",
+          "255 cm",
+          "120 cm",
+          "170 cm"
         ],
-        "answer": 2,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 170/80 = h/120 ⇒ h = 255 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -691,15 +691,15 @@
       },
       {
         "id": "u6_t4_C_f0524d8c",
-        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 1 m tree casts a 1.4 m shadow. A pole casts 0.7 m shadow. Pole height?",
         "options": [
-          "240 cm",
-          "90 cm",
-          "154 cm",
-          "184 cm"
+          "100 cm",
+          "50 cm",
+          "60 cm",
+          "80 cm"
         ],
-        "answer": 2,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 100/140 = h/70 ⇒ h = 50 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -710,15 +710,15 @@
       },
       {
         "id": "u6_t4_C_e0eda5ba",
-        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 2.5 m tree casts a 1.7 m shadow. A pole casts 1.1 m shadow. Pole height?",
         "options": [
-          "200 cm",
-          "122 cm",
-          "60 cm",
-          "92 cm"
+          "191 cm",
+          "110 cm",
+          "141 cm",
+          "161 cm"
         ],
         "answer": 3,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "explanation": "height/shadow is constant: 250/170 = h/110 ⇒ h = 161 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -729,15 +729,15 @@
       },
       {
         "id": "u6_t4_C_69d39d8e",
-        "question": "A 2 m tree casts a 1 m shadow. A pole casts 1 m shadow. Pole height?",
+        "question": "A 1.8 m tree casts a 1 m shadow. A pole casts 0.4 m shadow. Pole height?",
         "options": [
-          "165 cm",
-          "110 cm",
-          "240 cm",
-          "195 cm"
+          "72 cm",
+          "52 cm",
+          "82 cm",
+          "40 cm"
         ],
         "answer": 0,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "explanation": "height/shadow is constant: 180/100 = h/40 ⇒ h = 72 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -748,15 +748,15 @@
       },
       {
         "id": "u6_t4_C_d1e997eb",
-        "question": "A 2 m tree casts a 0 m shadow. A pole casts 1 m shadow. Pole height?",
+        "question": "A 1.5 m tree casts a 1 m shadow. A pole casts 0.7 m shadow. Pole height?",
         "options": [
-          "333 cm",
-          "250 cm",
-          "120 cm",
-          "363 cm"
+          "150 cm",
+          "105 cm",
+          "70 cm",
+          "115 cm"
         ],
-        "answer": 0,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 150/100 = h/70 ⇒ h = 105 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -767,15 +767,15 @@
       },
       {
         "id": "u6_t4_C_6a63745a",
-        "question": "A 1 m tree casts a 0 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 2.4 m tree casts a 0.9 m shadow. A pole casts 0.5 m shadow. Pole height?",
         "options": [
-          "60 cm",
-          "172 cm",
-          "190 cm",
-          "142 cm"
+          "240 cm",
+          "163 cm",
+          "133 cm",
+          "50 cm"
         ],
-        "answer": 3,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 240/90 = h/50 ⇒ h = 133 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -786,15 +786,15 @@
       },
       {
         "id": "u6_t4_C_1fd5990a",
-        "question": "A 0 m tree casts a 0 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 2.4 m tree casts a 1 m shadow. A pole casts 0.9 m shadow. Pole height?",
         "options": [
-          "120 cm",
-          "150 cm",
+          "196 cm",
           "90 cm",
-          "80 cm"
+          "216 cm",
+          "240 cm"
         ],
-        "answer": 0,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 240/100 = h/90 ⇒ h = 216 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -805,15 +805,15 @@
       },
       {
         "id": "u6_t4_C_9210d4d0",
-        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 0.9 m tree casts a 0.6 m shadow. A pole casts 1.1 m shadow. Pole height?",
         "options": [
-          "136 cm",
-          "240 cm",
-          "106 cm",
-          "80 cm"
+          "165 cm",
+          "90 cm",
+          "175 cm",
+          "110 cm"
         ],
-        "answer": 2,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 0,
+        "explanation": "height/shadow is constant: 90/60 = h/110 ⇒ h = 165 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -824,15 +824,15 @@
       },
       {
         "id": "u6_t4_C_21ae408b",
-        "question": "A 0 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 1.2 m tree casts a 1.6 m shadow. A pole casts 0.8 m shadow. Pole height?",
         "options": [
-          "90 cm",
-          "50 cm",
-          "53 cm",
-          "23 cm"
+          "120 cm",
+          "80 cm",
+          "60 cm",
+          "90 cm"
         ],
-        "answer": 3,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 120/160 = h/80 ⇒ h = 60 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -843,15 +843,15 @@
       },
       {
         "id": "u6_t4_C_8bc7ff6d",
-        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 1.7 m tree casts a 0.8 m shadow. A pole casts 0.4 m shadow. Pole height?",
         "options": [
-          "105 cm",
-          "75 cm",
-          "60 cm",
-          "240 cm"
+          "170 cm",
+          "65 cm",
+          "115 cm",
+          "85 cm"
         ],
-        "answer": 1,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 3,
+        "explanation": "height/shadow is constant: 170/80 = h/40 ⇒ h = 85 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -862,15 +862,15 @@
       },
       {
         "id": "u6_t4_C_e5dd44f3",
-        "question": "A 1 m tree casts a 0 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 2.5 m tree casts a 1.5 m shadow. A pole casts 1.2 m shadow. Pole height?",
         "options": [
-          "130 cm",
-          "203 cm",
-          "80 cm",
-          "173 cm"
+          "210 cm",
+          "120 cm",
+          "230 cm",
+          "200 cm"
         ],
         "answer": 3,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "explanation": "height/shadow is constant: 250/150 = h/120 ⇒ h = 200 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -881,15 +881,15 @@
       },
       {
         "id": "u6_t4_C_9b5bd643",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 0.8 m tree casts a 1.5 m shadow. A pole casts 0.5 m shadow. Pole height?",
         "options": [
-          "71 cm",
-          "41 cm",
-          "70 cm",
-          "100 cm"
+          "26 cm",
+          "10 cm",
+          "80 cm",
+          "36 cm"
         ],
-        "answer": 1,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 0,
+        "explanation": "height/shadow is constant: 80/150 = h/50 ⇒ h = 26 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -900,15 +900,15 @@
       },
       {
         "id": "u6_t4_C_86d952d6",
-        "question": "A 2 m tree casts a 0 m shadow. A pole casts 1 m shadow. Pole height?",
+        "question": "A 0.9 m tree casts a 2 m shadow. A pole casts 1.1 m shadow. Pole height?",
         "options": [
-          "120 cm",
-          "375 cm",
-          "230 cm",
-          "345 cm"
+          "29 cm",
+          "49 cm",
+          "110 cm",
+          "90 cm"
         ],
-        "answer": 3,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 90/200 = h/110 ⇒ h = 49 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -919,15 +919,15 @@
       },
       {
         "id": "u6_t4_C_3dfdd441",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 2.3 m tree casts a 0.9 m shadow. A pole casts 1 m shadow. Pole height?",
         "options": [
-          "80 cm (alt)",
-          "110 cm",
-          "130 cm",
-          "80 cm"
+          "100 cm",
+          "230 cm",
+          "255 cm",
+          "265 cm"
         ],
-        "answer": 3,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 230/90 = h/100 ⇒ h = 255 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -938,15 +938,15 @@
       },
       {
         "id": "u6_t4_C_3446c7ca",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 0.9 m tree casts a 1.2 m shadow. A pole casts 0.4 m shadow. Pole height?",
         "options": [
-          "160 cm",
-          "64 cm",
-          "94 cm",
-          "60 cm"
+          "60 cm",
+          "10 cm",
+          "90 cm",
+          "30 cm"
         ],
-        "answer": 1,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 3,
+        "explanation": "height/shadow is constant: 90/120 = h/40 ⇒ h = 30 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -957,15 +957,15 @@
       },
       {
         "id": "u6_t4_C_c1aea87b",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 1.9 m tree casts a 0.7 m shadow. A pole casts 1.1 m shadow. Pole height?",
         "options": [
-          "140 cm",
-          "60 cm",
-          "46 cm",
-          "76 cm"
+          "110 cm",
+          "278 cm",
+          "298 cm",
+          "328 cm"
         ],
         "answer": 2,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "explanation": "height/shadow is constant: 190/70 = h/110 ⇒ h = 298 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -976,15 +976,15 @@
       },
       {
         "id": "u6_t4_C_fce73ddb",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 1 m shadow. Pole height?",
+        "question": "A 2.3 m tree casts a 0.8 m shadow. A pole casts 0.7 m shadow. Pole height?",
         "options": [
-          "120 cm",
-          "110 cm (alt)",
-          "140 cm",
-          "110 cm"
+          "201 cm",
+          "231 cm",
+          "230 cm",
+          "211 cm"
         ],
-        "answer": 3,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 0,
+        "explanation": "height/shadow is constant: 230/80 = h/70 ⇒ h = 201 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -995,15 +995,15 @@
       },
       {
         "id": "u6_t4_C_491603bc",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 2.5 m tree casts a 1.3 m shadow. A pole casts 0.4 m shadow. Pole height?",
         "options": [
-          "35 cm",
-          "65 cm",
-          "140 cm",
-          "40 cm"
+          "76 cm",
+          "40 cm",
+          "106 cm",
+          "250 cm"
         ],
         "answer": 0,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "explanation": "height/shadow is constant: 250/130 = h/40 ⇒ h = 76 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1014,15 +1014,15 @@
       },
       {
         "id": "u6_t4_C_249b57e6",
-        "question": "A 2 m tree casts a 0 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 1.8 m tree casts a 1.3 m shadow. A pole casts 0.7 m shadow. Pole height?",
         "options": [
-          "191 cm",
-          "221 cm",
-          "50 cm",
-          "230 cm"
+          "76 cm",
+          "96 cm",
+          "180 cm",
+          "106 cm"
         ],
-        "answer": 0,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 180/130 = h/70 ⇒ h = 96 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1033,15 +1033,15 @@
       },
       {
         "id": "u6_t4_C_65f516b2",
-        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 0.9 m tree casts a 1.4 m shadow. A pole casts 0.5 m shadow. Pole height?",
         "options": [
-          "182 cm",
-          "152 cm",
-          "240 cm",
-          "70 cm"
+          "90 cm",
+          "32 cm",
+          "62 cm",
+          "50 cm"
         ],
         "answer": 1,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "explanation": "height/shadow is constant: 90/140 = h/50 ⇒ h = 32 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1052,15 +1052,15 @@
       },
       {
         "id": "u6_t4_C_cd4f03ed",
-        "question": "A 2 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 1.5 m tree casts a 0.6 m shadow. A pole casts 0.3 m shadow. Pole height?",
         "options": [
-          "70 cm",
-          "210 cm",
-          "77 cm",
-          "107 cm"
+          "105 cm",
+          "75 cm",
+          "85 cm",
+          "150 cm"
         ],
-        "answer": 2,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 150/60 = h/30 ⇒ h = 75 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1071,15 +1071,15 @@
       },
       {
         "id": "u6_t4_C_0be0fa20",
-        "question": "A 1 m tree casts a 0 m shadow. A pole casts 1 m shadow. Pole height?",
+        "question": "A 1.3 m tree casts a 0.9 m shadow. A pole casts 0.4 m shadow. Pole height?",
         "options": [
-          "140 cm",
-          "220 cm",
-          "250 cm",
-          "110 cm"
+          "67 cm",
+          "130 cm",
+          "57 cm",
+          "87 cm"
         ],
-        "answer": 1,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 130/90 = h/40 ⇒ h = 57 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1090,15 +1090,15 @@
       },
       {
         "id": "u6_t4_C_c3510080",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 1.4 m tree casts a 0.6 m shadow. A pole casts 0.8 m shadow. Pole height?",
         "options": [
-          "110 cm",
-          "82 cm",
-          "90 cm",
-          "112 cm"
+          "166 cm",
+          "80 cm",
+          "186 cm",
+          "196 cm"
         ],
-        "answer": 1,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 140/60 = h/80 ⇒ h = 186 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1109,15 +1109,15 @@
       },
       {
         "id": "u6_t4_C_e09f1e12",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 1.7 m tree casts a 0.7 m shadow. A pole casts 0.8 m shadow. Pole height?",
         "options": [
-          "60 cm",
-          "140 cm",
-          "76 cm",
-          "106 cm"
+          "80 cm",
+          "224 cm",
+          "194 cm",
+          "170 cm"
         ],
         "answer": 2,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "explanation": "height/shadow is constant: 170/70 = h/80 ⇒ h = 194 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1128,15 +1128,15 @@
       },
       {
         "id": "u6_t4_C_8880c916",
-        "question": "A 1 m tree casts a 0 m shadow. A pole casts 1 m shadow. Pole height?",
+        "question": "A 2.3 m tree casts a 0.9 m shadow. A pole casts 1 m shadow. Pole height?",
         "options": [
-          "190 cm",
-          "378 cm",
-          "348 cm",
-          "110 cm"
+          "230 cm",
+          "255 cm",
+          "265 cm",
+          "100 cm"
         ],
-        "answer": 2,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 230/90 = h/100 ⇒ h = 255 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1147,15 +1147,15 @@
       },
       {
         "id": "u6_t4_C_3c47afa7",
-        "question": "A 1 m tree casts a 1 m shadow. A pole casts 0 m shadow. Pole height?",
+        "question": "A 0.8 m tree casts a 1.4 m shadow. A pole casts 0.7 m shadow. Pole height?",
         "options": [
-          "90 cm",
-          "85 cm",
-          "110 cm",
-          "55 cm"
+          "40 cm",
+          "70 cm",
+          "80 cm",
+          "20 cm"
         ],
-        "answer": 3,
-        "explanation": "Similar triangles: height/shadow is constant.",
+        "answer": 0,
+        "explanation": "height/shadow is constant: 80/140 = h/70 ⇒ h = 40 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1166,15 +1166,15 @@
       },
       {
         "id": "u6_t4_C_24c9e52b",
-        "question": "Pythagoras theorem is proved using similarity by:",
+        "question": "A 1.9 m tree casts a 0.7 m shadow. A pole casts 0.8 m shadow. Pole height?",
         "options": [
-          "Use factorisation",
-          "Measure only",
-          "Drop altitude on hypotenuse — creates three similar right triangles",
-          "Assume c = a + b"
+          "227 cm",
+          "80 cm",
+          "217 cm",
+          "197 cm"
         ],
         "answer": 2,
-        "explanation": "NCERT proof via similarity.",
+        "explanation": "height/shadow is constant: 190/70 = h/80 ⇒ h = 217 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1185,15 +1185,15 @@
       },
       {
         "id": "u6_t4_C_d0229ceb",
-        "question": "In the similarity proof of a² + b² = c², which triangles are similar?",
+        "question": "A 2.4 m tree casts a 1.4 m shadow. A pole casts 0.3 m shadow. Pole height?",
         "options": [
-          "Only the two legs",
-          "All equilateral",
-          "The two smaller right triangles and the original triangle",
-          "No similar triangles"
+          "81 cm",
+          "51 cm",
+          "240 cm",
+          "31 cm"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 240/140 = h/30 ⇒ h = 51 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,

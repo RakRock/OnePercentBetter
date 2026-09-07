@@ -140,12 +140,12 @@
         "id": "u14_t2_B_cb77841b",
         "question": "P(E) = 1. P(not E) = ?",
         "options": [
-          "0 (alt)",
-          "1",
           "3",
-          "0"
+          "0",
+          "1",
+          "Option 5"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -195,14 +195,14 @@
       },
       {
         "id": "u14_t2_B_9eb212c3",
-        "question": "P(E) = 11/8. P(not E) = ?",
+        "question": "P(E) = 1/8. P(not E) = ?",
         "options": [
-          "0",
-          "-3/8",
-          "11/8",
-          "1"
+          "1",
+          "1/8",
+          "7/8",
+          "0"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -214,14 +214,14 @@
       },
       {
         "id": "u14_t2_B_12f8da62",
-        "question": "P(E) = 5/3. P(not E) = ?",
+        "question": "P(E) = 1. P(not E) = ?",
         "options": [
           "0",
-          "-2/3",
-          "5/3",
-          "1"
+          "2",
+          "1",
+          "3"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -235,12 +235,12 @@
         "id": "u14_t2_B_3e8a9148",
         "question": "P(E) = 1/2. P(not E) = ?",
         "options": [
-          "0",
-          "1/2 (alt)",
           "1",
-          "1/2"
+          "2/2",
+          "1/2",
+          "0"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -271,14 +271,14 @@
       },
       {
         "id": "u14_t2_B_41685117",
-        "question": "P(E) = 11/10. P(not E) = ?",
+        "question": "P(E) = 1/2. P(not E) = ?",
         "options": [
+          "1/2",
           "0",
-          "1",
-          "11/10",
-          "-1/10"
+          "2/2",
+          "1"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -290,14 +290,14 @@
       },
       {
         "id": "u14_t2_B_a85e2566",
-        "question": "P(E) = 7/6. P(not E) = ?",
+        "question": "P(E) = 2/3. P(not E) = ?",
         "options": [
-          "0",
           "1",
-          "-1/6",
-          "7/6"
+          "0",
+          "2/3",
+          "1/3"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -904,12 +904,12 @@
         "id": "u14_t2_D_7745d5b2",
         "question": "P(rain) = 1/2. P(no rain) = ?",
         "options": [
-          "1/2",
           "0",
+          "1/2",
           "1",
-          "1/2 (alt)"
+          "2/2"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1094,12 +1094,12 @@
       },
       {
         "id": "u14_t2_E_77ec7e08",
-        "question": "P(win) = 11/8. P(lose) = ?",
+        "question": "P(win) = 1/4. P(lose) = ?",
         "options": [
-          "-3/8",
-          "11/4",
+          "3/4",
+          "1/4",
           "1",
-          "11/8"
+          "0"
         ],
         "answer": 0,
         "explanation": "",
@@ -1151,14 +1151,14 @@
       },
       {
         "id": "u14_t2_E_b6ac1ee1",
-        "question": "P(win) = 5/4. P(lose) = ?",
+        "question": "P(win) = 1/4. P(lose) = ?",
         "options": [
-          "-1/4",
-          "5/4",
+          "1/4",
+          "0",
           "1",
-          "5/2"
+          "3/4"
         ],
-        "answer": 0,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -1173,9 +1173,9 @@
         "question": "P(win) = 1. P(lose) = ?",
         "options": [
           "0",
-          "0 (alt)",
-          "1",
-          "2"
+          "3",
+          "2",
+          "1"
         ],
         "answer": 0,
         "explanation": "",
@@ -1227,14 +1227,14 @@
       },
       {
         "id": "u14_t2_E_d03c3fe1",
-        "question": "P(win) = 3/2. P(lose) = ?",
+        "question": "P(win) = 1. P(lose) = ?",
         "options": [
+          "0",
           "3",
-          "3/2",
           "1",
-          "-1/2"
+          "2"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -1287,11 +1287,11 @@
         "question": "P(win) = 1/2. P(lose) = ?",
         "options": [
           "None of these",
-          "1/2",
           "1",
-          "1/2 (alt)"
+          "1/2",
+          "2/2"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -1379,12 +1379,12 @@
       },
       {
         "id": "u14_t2_E_5f69ca9c",
-        "question": "P(win) = 7/6. P(lose) = ?",
+        "question": "P(win) = 5/6. P(lose) = ?",
         "options": [
-          "-1/6",
-          "1",
-          "7/3",
-          "7/6"
+          "1/6",
+          "5/6",
+          "0",
+          "1"
         ],
         "answer": 0,
         "explanation": "",
@@ -1439,9 +1439,9 @@
         "question": "P(win) = 1/3. P(lose) = ?",
         "options": [
           "2/3",
-          "2/3 (alt)",
+          "1/3",
           "1",
-          "1/3"
+          "3/3"
         ],
         "answer": 0,
         "explanation": "",
@@ -1474,14 +1474,14 @@
       },
       {
         "id": "u14_t2_E_51e2b86a",
-        "question": "P(win) = 4/3. P(lose) = ?",
+        "question": "P(win) = 1/3. P(lose) = ?",
         "options": [
-          "8/3",
-          "4/3",
+          "0",
+          "2/3",
           "1",
-          "-1/3"
+          "1/3"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "E",

@@ -199,8 +199,8 @@
         "options": [
           "1/36",
           "1/18",
-          "1/36 (alt)",
-          "1/6"
+          "1/6",
+          "2/36"
         ],
         "answer": 0,
         "explanation": "",
@@ -235,12 +235,12 @@
         "id": "u14_t3_B_49607ae5",
         "question": "Two dice: P(sum = 6) = ?",
         "options": [
-          "5/36 (alt)",
+          "6/36",
+          "1/36",
           "5/36",
-          "1/6",
-          "1/36"
+          "1/6"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 3,
         "level": "B",
@@ -254,12 +254,12 @@
         "id": "u14_t3_B_9a5fa873",
         "question": "Two dice: P(sum = 12) = ?",
         "options": [
+          "1/36",
           "1/6",
-          "1/36 (alt)",
           "1/18",
-          "1/36"
+          "2/36"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 3,
         "level": "B",
@@ -273,12 +273,12 @@
         "id": "u14_t3_B_0b418771",
         "question": "Two dice: P(sum = 8) = ?",
         "options": [
-          "5/36 (alt)",
-          "1/6",
+          "6/36",
           "1/36",
-          "5/36"
+          "5/36",
+          "1/6"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 3,
         "level": "B",
@@ -330,10 +330,10 @@
         "id": "u14_t3_B_7fbac1e7",
         "question": "Two dice: P(sum = 7) = ?",
         "options": [
-          "7/36",
-          "1/6",
           "1/36",
-          "1/6 (alt)"
+          "1/6",
+          "2/6",
+          "7/36"
         ],
         "answer": 1,
         "explanation": "",
@@ -349,45 +349,7 @@
     "C": [
       {
         "id": "u14_t3_C_8abbf4e5",
-        "question": "One card from standard deck: P(specific card) = ?",
-        "options": [
-          "1/13",
-          "4/52",
-          "1/52",
-          "1/4"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 3,
-        "level": "C",
-        "unit_id": 14,
-        "category": "u14_t3_C",
-        "category_label": "Cards/Dice · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 14 Probability"
-      },
-      {
-        "id": "u14_t3_C_393cd223",
-        "question": "One card from deck: P(specific heart card) = ?",
-        "options": [
-          "1/52",
-          "4/52",
-          "1/13",
-          "1/4"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 3,
-        "level": "C",
-        "unit_id": 14,
-        "category": "u14_t3_C",
-        "category_label": "Cards/Dice · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 14 Probability"
-      },
-      {
-        "id": "u14_t3_C_fdbab836",
-        "question": "One card from deck: P(specific club card) = ?",
+        "question": "One card from a well-shuffled deck: P(drawing the 4 of diamonds) = ?",
         "options": [
           "1/13",
           "1/4",
@@ -405,8 +367,46 @@
         "chapter_ref": "NCERT Ch 14 Probability"
       },
       {
+        "id": "u14_t3_C_393cd223",
+        "question": "One card from a well-shuffled deck: P(drawing the King of hearts) = ?",
+        "options": [
+          "1/13",
+          "4/52",
+          "1/4",
+          "1/52"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t3_C",
+        "category_label": "Cards/Dice · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
+        "id": "u14_t3_C_fdbab836",
+        "question": "One card from a well-shuffled deck: P(drawing the 4 of clubs) = ?",
+        "options": [
+          "1/13",
+          "1/4",
+          "4/52",
+          "1/52"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 14,
+        "category": "u14_t3_C",
+        "category_label": "Cards/Dice · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 14 Probability"
+      },
+      {
         "id": "u14_t3_C_36426941",
-        "question": "One card from deck: P(specific diamond card) = ?",
+        "question": "One card from a well-shuffled deck: P(drawing the 2 of diamonds) = ?",
         "options": [
           "4/52",
           "1/13",
@@ -425,14 +425,14 @@
       },
       {
         "id": "u14_t3_C_9c8f64e5",
-        "question": "One card from deck: P(specific spade card) = ?",
+        "question": "One card from a well-shuffled deck: P(drawing the 8 of spades) = ?",
         "options": [
-          "1/4",
           "1/52",
-          "1/13",
-          "4/52"
+          "4/52",
+          "1/4",
+          "1/13"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 3,
         "level": "C",
@@ -467,9 +467,9 @@
         "id": "u14_t3_D_2f30570e",
         "question": "P(drawing a ace from deck) = ?",
         "options": [
+          "2/13",
           "12/52",
           "4/52",
-          "1/13 (alt)",
           "1/13"
         ],
         "answer": 3,
@@ -486,12 +486,12 @@
         "id": "u14_t3_D_867f5297",
         "question": "P(drawing a queen from deck) = ?",
         "options": [
-          "4/52",
           "12/52",
-          "1/13 (alt)",
-          "1/13"
+          "2/13",
+          "1/13",
+          "4/52"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 3,
         "level": "D",
@@ -505,12 +505,12 @@
         "id": "u14_t3_D_025b725d",
         "question": "P(drawing a jack from deck) = ?",
         "options": [
-          "1/13 (alt)",
-          "1/13",
+          "2/13",
+          "12/52",
           "4/52",
-          "12/52"
+          "1/13"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 3,
         "level": "D",
@@ -524,12 +524,12 @@
         "id": "u14_t3_D_c69678a1",
         "question": "P(drawing a king from deck) = ?",
         "options": [
-          "4/52",
-          "1/13 (alt)",
           "1/13",
-          "12/52"
+          "4/52",
+          "12/52",
+          "2/13"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 3,
         "level": "D",

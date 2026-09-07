@@ -596,15 +596,15 @@
     "C": [
       {
         "id": "u11_t3_C_da83dc31",
-        "question": "Segment larger than semicircle (θ = 120°) is:",
+        "question": "A chord subtends θ = 120° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
-          "Minor segment",
           "Major segment",
+          "Quadrant",
           "Semicircle",
-          "Quadrant"
+          "Minor segment"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -615,15 +615,15 @@
       },
       {
         "id": "u11_t3_C_52bd1d57",
-        "question": "Segment larger than semicircle (θ = 60°) is:",
+        "question": "A chord subtends θ = 60° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
-          "Semicircle",
           "Quadrant",
+          "Semicircle",
           "Major segment",
           "Minor segment"
         ],
         "answer": 2,
-        "explanation": "",
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -634,15 +634,15 @@
       },
       {
         "id": "u11_t3_C_ee9b1251",
-        "question": "Segment larger than semicircle (θ = 90°) is:",
+        "question": "A chord subtends θ = 90° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
-          "Semicircle",
-          "Quadrant",
           "Minor segment",
-          "Major segment"
+          "Quadrant",
+          "Major segment",
+          "Semicircle"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -653,15 +653,15 @@
       },
       {
         "id": "u11_t3_C_d27a61b9",
-        "question": "Segment larger than semicircle (θ = 140°) is:",
+        "question": "A chord subtends θ = 140° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
+          "Quadrant",
           "Minor segment",
-          "Major segment",
           "Semicircle",
-          "Quadrant"
+          "Major segment"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 3,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -672,15 +672,15 @@
       },
       {
         "id": "u11_t3_C_89f502e6",
-        "question": "Segment larger than semicircle (θ = 110°) is:",
+        "question": "A chord subtends θ = 110° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
-          "Minor segment",
           "Quadrant",
+          "Major segment",
           "Semicircle",
-          "Major segment"
+          "Minor segment"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -691,15 +691,15 @@
       },
       {
         "id": "u11_t3_C_13a80694",
-        "question": "Segment larger than semicircle (θ = 80°) is:",
+        "question": "A chord subtends θ = 80° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
-          "Minor segment",
-          "Semicircle",
           "Major segment",
-          "Quadrant"
+          "Minor segment",
+          "Quadrant",
+          "Semicircle"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -710,15 +710,15 @@
       },
       {
         "id": "u11_t3_C_a7a5de08",
-        "question": "Segment larger than semicircle (θ = 70°) is:",
+        "question": "A chord subtends θ = 70° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
-          "Minor segment",
           "Quadrant",
           "Semicircle",
-          "Major segment"
+          "Major segment",
+          "Minor segment"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -729,15 +729,15 @@
       },
       {
         "id": "u11_t3_C_2c7c373d",
-        "question": "Segment larger than semicircle (θ = 130°) is:",
+        "question": "A chord subtends θ = 130° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
+          "Major segment",
           "Minor segment",
-          "Quadrant",
           "Semicircle",
-          "Major segment"
+          "Quadrant"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -748,15 +748,15 @@
       },
       {
         "id": "u11_t3_C_8c168894",
-        "question": "Segment larger than semicircle (θ = 150°) is:",
+        "question": "A chord subtends θ = 150° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
           "Quadrant",
+          "Major segment",
           "Semicircle",
-          "Minor segment",
-          "Major segment"
+          "Minor segment"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -767,15 +767,15 @@
       },
       {
         "id": "u11_t3_C_a4222161",
-        "question": "Segment larger than semicircle (θ = 100°) is:",
+        "question": "A chord subtends θ = 100° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
-          "Major segment",
           "Minor segment",
-          "Semicircle",
-          "Quadrant"
+          "Major segment",
+          "Quadrant",
+          "Semicircle"
         ],
-        "answer": 0,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -786,15 +786,15 @@
       },
       {
         "id": "u11_t3_C_bc41c1cc",
-        "question": "Segment larger than semicircle (θ = 40°) is:",
+        "question": "A chord subtends θ = 40° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
-          "Semicircle",
+          "Major segment",
           "Quadrant",
           "Minor segment",
-          "Major segment"
+          "Semicircle"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -805,15 +805,15 @@
       },
       {
         "id": "u11_t3_C_7abe46f3",
-        "question": "Segment larger than semicircle (θ = 50°) is:",
+        "question": "A chord subtends θ = 50° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
-          "Minor segment",
           "Semicircle",
-          "Quadrant",
-          "Major segment"
+          "Major segment",
+          "Minor segment",
+          "Quadrant"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,
@@ -824,15 +824,15 @@
       },
       {
         "id": "u11_t3_C_52e24d1e",
-        "question": "Segment larger than semicircle (θ = 30°) is:",
+        "question": "A chord subtends θ = 30° at the centre (θ < 180°). The segment larger than a semicircle is called:",
         "options": [
           "Major segment",
-          "Quadrant",
           "Semicircle",
-          "Minor segment"
+          "Minor segment",
+          "Quadrant"
         ],
         "answer": 0,
-        "explanation": "",
+        "explanation": "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
         "topic": 3,
         "level": "C",
         "unit_id": 11,

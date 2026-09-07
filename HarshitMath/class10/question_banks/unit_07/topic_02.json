@@ -65,11 +65,11 @@
         "question": "Point dividing (3, 3) and (7, 10) internally in ratio 1:1:",
         "options": [
           "(3, 3)",
-          "(5, 6.5) (alt)",
           "(5, 6.5)",
-          "(7, 10)"
+          "(7, 10)",
+          "(1, 2)"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -121,12 +121,12 @@
         "id": "u7_t2_B_e5940419",
         "question": "Point dividing (2, 4) and (10, 10) internally in ratio 2:2:",
         "options": [
-          "(6, 7) (alt)",
           "(6, 7)",
           "(10, 10)",
-          "(2, 4)"
+          "(2, 4)",
+          "(1, 2)"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -217,11 +217,11 @@
         "question": "Point dividing (4, 4) and (8, 9) internally in ratio 3:3:",
         "options": [
           "(4, 4)",
-          "(6, 6.5) (alt)",
           "(6, 6.5)",
-          "(8, 9)"
+          "(8, 9)",
+          "(1, 2)"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -293,11 +293,11 @@
         "question": "Point dividing (0, 1) and (7, 8) internally in ratio 3:3:",
         "options": [
           "(0, 1)",
-          "(3.5, 4.5) (alt)",
           "(3.5, 4.5)",
-          "(7, 8)"
+          "(7, 8)",
+          "(1, 2)"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -330,12 +330,12 @@
         "id": "u7_t2_B_7059f21c",
         "question": "Point dividing (2, 4) and (8, 11) internally in ratio 3:3:",
         "options": [
-          "(5, 7.5) (alt)",
           "(5, 7.5)",
           "(2, 4)",
-          "(8, 11)"
+          "(8, 11)",
+          "(1, 2)"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -464,11 +464,11 @@
         "question": "Point dividing (0, 4) and (5, 8) internally in ratio 2:2:",
         "options": [
           "(0, 4)",
-          "(2.5, 6) (alt)",
           "(2.5, 6)",
-          "(5, 8)"
+          "(5, 8)",
+          "(1, 2)"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -482,12 +482,12 @@
         "id": "u7_t2_B_a1e93768",
         "question": "Point dividing (3, 4) and (8, 12) internally in ratio 1:1:",
         "options": [
-          "(5.5, 8) (alt)",
+          "(5.5, 8)",
           "(8, 12)",
           "(3, 4)",
-          "(5.5, 8)"
+          "(1, 2)"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -501,12 +501,12 @@
         "id": "u7_t2_B_34269e4a",
         "question": "Point dividing (0, 1) and (7, 6) internally in ratio 1:1:",
         "options": [
-          "(3.5, 3.5) (alt)",
+          "(3.5, 3.5)",
           "(7, 6)",
           "(0, 1)",
-          "(3.5, 3.5)"
+          "(1, 2)"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -520,12 +520,12 @@
         "id": "u7_t2_B_da8e35e5",
         "question": "Point dividing (3, 3) and (10, 7) internally in ratio 3:3:",
         "options": [
-          "(6.5, 5) (alt)",
+          "(6.5, 5)",
           "(10, 7)",
           "(3, 3)",
-          "(6.5, 5)"
+          "(1, 2)"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "B",
@@ -542,7 +542,7 @@
           "(3, 2)",
           "(8, 9)",
           "(5.5, 5.5)",
-          "(5.5, 5.5) (alt)"
+          "(1, 2)"
         ],
         "answer": 2,
         "explanation": "",
@@ -712,12 +712,12 @@
         "id": "u7_t2_C_b26bd8aa",
         "question": "Mid-point of (3, 0) and (8, 6):",
         "options": [
-          "(5.5, 3) (alt)",
-          "(3, 6)",
           "(5.5, 3)",
-          "(8, 0)"
+          "(3, 6)",
+          "(8, 0)",
+          "(1, 2)"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "Mid-point is ratio 1:1.",
         "topic": 2,
         "level": "C",
@@ -789,11 +789,11 @@
         "question": "Mid-point of (3, 2) and (7, 10):",
         "options": [
           "(3, 10)",
-          "(5, 6) (alt)",
+          "(5, 6)",
           "(7, 2)",
-          "(5, 6)"
+          "(1, 2)"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "Mid-point is ratio 1:1.",
         "topic": 2,
         "level": "C",
@@ -848,7 +848,7 @@
           "(3.5, 6.5)",
           "(0, 10)",
           "(7, 3)",
-          "(3.5, 6.5) (alt)"
+          "(1, 2)"
         ],
         "answer": 0,
         "explanation": "Mid-point is ratio 1:1.",
@@ -961,10 +961,10 @@
         "options": [
           "(10, 0)",
           "(3, 5)",
-          "(6.5, 2.5) (alt)",
-          "(6.5, 2.5)"
+          "(6.5, 2.5)",
+          "(1, 2)"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "Mid-point is ratio 1:1.",
         "topic": 2,
         "level": "C",
@@ -1112,11 +1112,11 @@
         "question": "Mid-point of (1, 0) and (8, 7):",
         "options": [
           "(8, 0)",
-          "(4.5, 3.5) (alt)",
+          "(4.5, 3.5)",
           "(1, 7)",
-          "(4.5, 3.5)"
+          "(1, 2)"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "Mid-point is ratio 1:1.",
         "topic": 2,
         "level": "C",
@@ -1190,7 +1190,7 @@
           "(12, 2)",
           "(4, 6)",
           "(8, 4)",
-          "(8, 4) (alt)"
+          "(1, 2)"
         ],
         "answer": 2,
         "explanation": "Mid-point is ratio 1:1.",
@@ -1282,12 +1282,12 @@
         "id": "u7_t2_C_57eec605",
         "question": "Point dividing (1, 2) and (5, 10) internally in ratio 2:2:",
         "options": [
-          "(3, 6) (alt)",
+          "(3, 6)",
           "(5, 10)",
           "(1, 2)",
-          "(3, 6)"
+          "(2, 3)"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
         "topic": 2,
         "level": "C",
@@ -1323,7 +1323,7 @@
           "(4, 0)",
           "(11, 8)",
           "(7.5, 4)",
-          "(7.5, 4) (alt)"
+          "(1, 2)"
         ],
         "answer": 2,
         "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
@@ -1342,7 +1342,7 @@
           "(5, 4)",
           "(2, 0)",
           "(8, 8)",
-          "(5, 4) (alt)"
+          "(1, 2)"
         ],
         "answer": 0,
         "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
@@ -1361,7 +1361,7 @@
           "(1, 1)",
           "(6, 9)",
           "(3.5, 5)",
-          "(3.5, 5) (alt)"
+          "(1, 2)"
         ],
         "answer": 2,
         "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
@@ -1378,11 +1378,11 @@
         "question": "Point dividing (2, 2) and (8, 10) internally in ratio 2:2:",
         "options": [
           "(8, 10)",
-          "(5, 6) (alt)",
+          "(5, 6)",
           "(2, 2)",
-          "(5, 6)"
+          "(1, 2)"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "Section formula: ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)).",
         "topic": 2,
         "level": "C",
@@ -1398,12 +1398,12 @@
         "id": "u7_t2_D_84f87614",
         "question": "P divides AB with A(2, 4), B(9, 12), P(5.5, 8). Ratio AP : PB ≈ ?",
         "options": [
-          "3 : 3 (alt)",
           "3 : 3",
           "1 : 1",
-          "6 : 1"
+          "6 : 1",
+          "4 : 4"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1439,7 +1439,7 @@
           "6 : 1",
           "3 : 3",
           "1 : 1",
-          "3 : 3 (alt)"
+          "4 : 4"
         ],
         "answer": 1,
         "explanation": "",
@@ -1474,12 +1474,12 @@
         "id": "u7_t2_D_efcdaee1",
         "question": "P divides AB with A(0, 1), B(8, 7), P(4, 4). Ratio AP : PB ≈ ?",
         "options": [
-          "1 : 1 (alt)",
-          "None of these",
           "1 : 1",
-          "2 : 1"
+          "None of these",
+          "2 : 1",
+          "2 : 2"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1572,7 +1572,7 @@
           "6 : 1",
           "3 : 3",
           "1 : 1",
-          "3 : 3 (alt)"
+          "4 : 4"
         ],
         "answer": 1,
         "explanation": "",
@@ -1627,11 +1627,11 @@
         "question": "P divides AB with A(3, 3), B(10, 9), P(6.5, 6). Ratio AP : PB ≈ ?",
         "options": [
           "None of these",
-          "1 : 1 (alt)",
+          "1 : 1",
           "2 : 1",
-          "1 : 1"
+          "2 : 2"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1648,7 +1648,7 @@
           "4 : 1",
           "2 : 2",
           "1 : 1",
-          "2 : 2 (alt)"
+          "3 : 3"
         ],
         "answer": 1,
         "explanation": "",
@@ -1667,7 +1667,7 @@
           "3 : 3",
           "1 : 1",
           "6 : 1",
-          "3 : 3 (alt)"
+          "4 : 4"
         ],
         "answer": 0,
         "explanation": "",
@@ -1704,8 +1704,8 @@
         "options": [
           "4 : 1",
           "2 : 2",
-          "2 : 2 (alt)",
-          "1 : 1"
+          "1 : 1",
+          "3 : 3"
         ],
         "answer": 1,
         "explanation": "",
@@ -1721,12 +1721,12 @@
         "id": "u7_t2_D_234da04b",
         "question": "P divides AB with A(0, 2), B(5, 9), P(2.5, 5.5). Ratio AP : PB ≈ ?",
         "options": [
-          "1 : 1 (alt)",
-          "None of these",
           "1 : 1",
-          "2 : 1"
+          "None of these",
+          "2 : 1",
+          "2 : 2"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1740,12 +1740,12 @@
         "id": "u7_t2_D_7dbb1b5d",
         "question": "P divides AB with A(3, 0), B(7, 5), P(5, 2.5). Ratio AP : PB ≈ ?",
         "options": [
-          "1 : 1 (alt)",
-          "None of these",
           "1 : 1",
-          "2 : 1"
+          "None of these",
+          "2 : 1",
+          "2 : 2"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1818,8 +1818,8 @@
         "options": [
           "2 : 2",
           "4 : 1",
-          "2 : 2 (alt)",
-          "1 : 1"
+          "1 : 1",
+          "3 : 3"
         ],
         "answer": 0,
         "explanation": "",
@@ -1855,9 +1855,9 @@
         "question": "P divides AB with A(2, 4), B(7, 9), P(4.5, 6.5). Ratio AP : PB ≈ ?",
         "options": [
           "3 : 3",
-          "3 : 3 (alt)",
           "1 : 1",
-          "6 : 1"
+          "6 : 1",
+          "4 : 4"
         ],
         "answer": 0,
         "explanation": "",
@@ -1930,12 +1930,12 @@
         "id": "u7_t2_D_7e177eb8",
         "question": "P divides AB with A(2, 1), B(9, 9), P(5.5, 5). Ratio AP : PB ≈ ?",
         "options": [
-          "2 : 2 (alt)",
-          "4 : 1",
           "2 : 2",
-          "1 : 1"
+          "4 : 1",
+          "1 : 1",
+          "3 : 3"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1969,11 +1969,11 @@
         "question": "P(5.5, 5.5) divides A(0, 0) and B(11, 11). Ratio AP : PB = ?",
         "options": [
           "6 : 1",
-          "3 : 3 (alt)",
+          "3 : 3",
           "1 : 1",
-          "3 : 3"
+          "4 : 4"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "Use section formula in reverse.",
         "topic": 2,
         "level": "D",
@@ -1987,12 +1987,12 @@
         "id": "u7_t2_D_c0505ff7",
         "question": "P(3, 6) divides A(0, 0) and B(6, 12). Ratio AP : PB = ?",
         "options": [
-          "3 : 3 (alt)",
+          "3 : 3",
           "6 : 1",
           "1 : 1",
-          "3 : 3"
+          "4 : 4"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "Use section formula in reverse.",
         "topic": 2,
         "level": "D",

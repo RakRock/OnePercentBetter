@@ -591,6 +591,44 @@
         "category_label": "Combo Vol · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t3_B_f6eb1de7",
+        "question": "Toy: cone h=8, r=4 + hemisphere. Volume ≈ ?",
+        "options": [
+          "134.04",
+          "268.08",
+          "402.12",
+          "536.17"
+        ],
+        "answer": 1,
+        "explanation": "V_cone + V_hemisphere = (1/3)πr²h + (2/3)πr³.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t3_B",
+        "category_label": "Combo Vol · Level B",
+        "source": "chapter_llm",
+        "chapter_ref": "12.2 Surface Area of a Combination of Solids"
+      },
+      {
+        "id": "u12_t3_B_b531c87f",
+        "question": "Toy: cone h=10, r=5 + hemisphere. Volume ≈ ?",
+        "options": [
+          "327.25",
+          "981.75",
+          "1309",
+          "654.5"
+        ],
+        "answer": 3,
+        "explanation": "V_cone + V_hemisphere = (1/3)πr²h + (2/3)πr³.",
+        "topic": 3,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t3_B",
+        "category_label": "Combo Vol · Level B",
+        "source": "chapter_llm",
+        "chapter_ref": "12.2 Surface Area of a Combination of Solids"
       }
     ],
     "C": [
@@ -1277,6 +1315,44 @@
         "category_label": "Combo Vol · Level C",
         "source": "exam_template",
         "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t3_C_0066355e",
+        "question": "Hollow cylinder: outer r=10, inner r=7, h=8. Volume ≈ ?",
+        "options": [
+          "353.95",
+          "530.93",
+          "1592.79",
+          "1061.86"
+        ],
+        "answer": 3,
+        "explanation": "Volume = πh(R² - r²) = 3.14×8×(100-49).",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t3_C",
+        "category_label": "Combo Vol · Level C",
+        "source": "chapter_llm",
+        "chapter_ref": "12.2 Surface Area of a Combination of Solids"
+      },
+      {
+        "id": "u12_t3_C_fc4f42fd",
+        "question": "Hollow cylinder: outer r=9, inner r=6, h=10. Volume ≈ ?",
+        "options": [
+          "2120.58",
+          "706.86",
+          "353.43",
+          "1413.72"
+        ],
+        "answer": 3,
+        "explanation": "Volume = πh(R² - r²) = 3.14×10×(81-36).",
+        "topic": 3,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t3_C",
+        "category_label": "Combo Vol · Level C",
+        "source": "chapter_llm",
+        "chapter_ref": "12.2 Surface Area of a Combination of Solids"
       }
     ],
     "D": [

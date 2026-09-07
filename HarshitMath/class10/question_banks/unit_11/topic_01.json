@@ -734,7 +734,7 @@
           "90°",
           "60°",
           "180°",
-          "60° (alt)"
+          "270°"
         ],
         "answer": 1,
         "explanation": "",
@@ -750,12 +750,12 @@
         "id": "u11_t1_C_607dcd35",
         "question": "Sector area ≈ 25.66 cm², r = 7 cm. Angle θ ≈ ?",
         "options": [
-          "60° (alt)",
+          "60°",
           "180°",
           "90°",
-          "60°"
+          "0 cm²"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "C",
@@ -847,8 +847,8 @@
         "options": [
           "180°",
           "90°",
-          "90° (alt)",
-          "120°"
+          "120°",
+          "πr²"
         ],
         "answer": 1,
         "explanation": "",
@@ -865,11 +865,11 @@
         "question": "Sector area ≈ 153.94 cm², r = 14 cm. Angle θ ≈ ?",
         "options": [
           "180°",
-          "90° (alt)",
           "90°",
-          "120°"
+          "120°",
+          "45°"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "C",
@@ -903,9 +903,9 @@
         "question": "Sector area ≈ 692.72 cm², r = 21 cm. Angle θ ≈ ?",
         "options": [
           "180°",
-          "180° (alt)",
           "210°",
-          "90°"
+          "90°",
+          "120°"
         ],
         "answer": 0,
         "explanation": "",
@@ -921,12 +921,12 @@
         "id": "u11_t1_C_0f36a84d",
         "question": "Sector area ≈ 230.91 cm², r = 21 cm. Angle θ ≈ ?",
         "options": [
-          "60° (alt)",
           "60°",
           "180°",
-          "90°"
+          "90°",
+          "120°"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "C",
@@ -1187,12 +1187,12 @@
         "id": "u11_t1_C_531eb202",
         "question": "Sector area ≈ 503.18 cm², r = 31 cm. Angle θ ≈ ?",
         "options": [
-          "60° (alt)",
-          "180°",
           "60°",
-          "90°"
+          "180°",
+          "90°",
+          "45°"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "C",
@@ -1494,11 +1494,11 @@
         "question": "Area of semicircle, radius 28 cm ≈ ?",
         "options": [
           "784 cm²",
-          "1231.5 cm² (alt)",
+          "1231.5 cm²",
           "2463.0 cm²",
-          "1231.5 cm²"
+          "45°"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "D",
@@ -1878,7 +1878,7 @@
           "692.72 cm²",
           "21 cm²",
           "346.36 cm²",
-          "346.36 cm² (alt)"
+          "60°"
         ],
         "answer": 2,
         "explanation": "",
@@ -1895,11 +1895,11 @@
         "question": "Area of quadrant, radius 35 cm ≈ ?",
         "options": [
           "1924.22 cm²",
-          "962.11 cm² (alt)",
           "962.11 cm²",
-          "35 cm²"
+          "35 cm²",
+          "60°"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "E",
@@ -1914,11 +1914,11 @@
         "question": "Area of quadrant, radius 14 cm ≈ ?",
         "options": [
           "307.88 cm²",
-          "153.94 cm² (alt)",
           "153.94 cm²",
-          "14 cm²"
+          "14 cm²",
+          "45°"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "E",

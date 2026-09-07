@@ -85,12 +85,12 @@
         "id": "u13_t2_C_615721af",
         "question": "n = 40, median class lower l = 29, f = 15, cf = 19, h = 5. Median ≈ ?",
         "options": [
-          "29",
-          "20",
           "34",
-          "29.3"
+          "29.3",
+          "20",
+          "29"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -104,12 +104,12 @@
         "id": "u13_t2_C_3d6d2653",
         "question": "n = 40, median class lower l = 49, f = 11, cf = 19, h = 5. Median ≈ ?",
         "options": [
-          "49",
-          "54",
           "20",
-          "49.5"
+          "49.5",
+          "49",
+          "54"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -123,10 +123,10 @@
         "id": "u13_t2_C_280d1781",
         "question": "n = 100, median class lower l = 20, f = 17, cf = 35, h = 10. Median ≈ ?",
         "options": [
+          "30",
           "20",
-          "50",
           "28.8",
-          "30"
+          "50"
         ],
         "answer": 2,
         "explanation": "",
@@ -142,12 +142,12 @@
         "id": "u13_t2_C_6cb7fd0c",
         "question": "n = 100, median class lower l = 45, f = 16, cf = 40, h = 10. Median ≈ ?",
         "options": [
-          "50",
+          "51.2",
           "45",
-          "55",
-          "51.2"
+          "50",
+          "55"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -159,14 +159,14 @@
       },
       {
         "id": "u13_t2_C_5f07c776",
-        "question": "n = 50, median class lower l = 38, f = 8, cf = 36, h = 10. Median ≈ ?",
+        "question": "n = 50, median class lower l = 38, f = 8, cf = 24, h = 10. Median ≈ ?",
         "options": [
           "25",
-          "24.2",
+          "48",
           "38",
-          "48"
+          "39.2"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -180,12 +180,12 @@
         "id": "u13_t2_C_82c5593c",
         "question": "n = 40, median class lower l = 39, f = 13, cf = 14, h = 10. Median ≈ ?",
         "options": [
-          "43.6",
-          "39",
           "20",
-          "49"
+          "39",
+          "49",
+          "43.6"
         ],
-        "answer": 0,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -200,11 +200,11 @@
         "question": "n = 40, median class lower l = 23, f = 12, cf = 19, h = 10. Median ≈ ?",
         "options": [
           "33",
+          "23",
           "20",
-          "23.8",
-          "23"
+          "23.8"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -216,14 +216,14 @@
       },
       {
         "id": "u13_t2_C_77ea1e37",
-        "question": "n = 120, median class lower l = 48, f = 20, cf = 34, h = 5. Median ≈ ?",
+        "question": "n = 120, median class lower l = 48, f = 20, cf = 41, h = 5. Median ≈ ?",
         "options": [
-          "54.5",
           "53",
           "60",
-          "48"
+          "48",
+          "52.8"
         ],
-        "answer": 0,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -235,14 +235,14 @@
       },
       {
         "id": "u13_t2_C_bebd7e4e",
-        "question": "n = 100, median class lower l = 19, f = 18, cf = 28, h = 10. Median ≈ ?",
+        "question": "n = 100, median class lower l = 19, f = 18, cf = 33, h = 10. Median ≈ ?",
         "options": [
-          "31.2",
+          "29",
           "19",
-          "50",
-          "29"
+          "28.4",
+          "50"
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -256,10 +256,48 @@
         "id": "u13_t2_C_118256e4",
         "question": "n = 80, median class lower l = 50, f = 18, cf = 33, h = 10. Median ≈ ?",
         "options": [
+          "60",
           "40",
           "53.9",
+          "50"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t2_C",
+        "category_label": "Median · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_C_8d11d90d",
+        "question": "n = 100, median class lower l = 41, f = 9, cf = 42, h = 10. Median ≈ ?",
+        "options": [
           "50",
-          "60"
+          "41",
+          "49.9",
+          "51"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "C",
+        "unit_id": 13,
+        "category": "u13_t2_C",
+        "category_label": "Median · Level C",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_C_90712707",
+        "question": "n = 40, median class lower l = 48, f = 14, cf = 19, h = 10. Median ≈ ?",
+        "options": [
+          "20",
+          "48.7",
+          "48",
+          "58"
         ],
         "answer": 1,
         "explanation": "",
@@ -272,53 +310,15 @@
         "chapter_ref": "NCERT Ch 13 Statistics"
       },
       {
-        "id": "u13_t2_C_8d11d90d",
-        "question": "n = 100, median class lower l = 41, f = 9, cf = 36, h = 10. Median ≈ ?",
-        "options": [
-          "50",
-          "51",
-          "41",
-          "56.6"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 2,
-        "level": "C",
-        "unit_id": 13,
-        "category": "u13_t2_C",
-        "category_label": "Median · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
-        "id": "u13_t2_C_90712707",
-        "question": "n = 40, median class lower l = 48, f = 14, cf = 32, h = 10. Median ≈ ?",
-        "options": [
-          "58",
-          "20",
-          "39.4",
-          "48"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "C",
-        "unit_id": 13,
-        "category": "u13_t2_C",
-        "category_label": "Median · Level C",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
         "id": "u13_t2_C_c2581087",
-        "question": "n = 80, median class lower l = 14, f = 8, cf = 20, h = 10. Median ≈ ?",
+        "question": "n = 80, median class lower l = 14, f = 8, cf = 33, h = 10. Median ≈ ?",
         "options": [
-          "24",
           "40",
-          "14",
-          "39.0"
+          "22.8",
+          "24",
+          "14"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -330,14 +330,14 @@
       },
       {
         "id": "u13_t2_C_ea9dc9f5",
-        "question": "n = 40, median class lower l = 31, f = 9, cf = 27, h = 10. Median ≈ ?",
+        "question": "n = 40, median class lower l = 31, f = 9, cf = 19, h = 10. Median ≈ ?",
         "options": [
           "31",
           "41",
-          "23.2",
-          "20"
+          "20",
+          "32.1"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -351,12 +351,12 @@
         "id": "u13_t2_C_159d7461",
         "question": "n = 60, median class lower l = 49, f = 9, cf = 24, h = 5. Median ≈ ?",
         "options": [
+          "54",
           "52.3",
           "30",
-          "54",
           "49"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -368,14 +368,14 @@
       },
       {
         "id": "u13_t2_C_ba02ca63",
-        "question": "n = 80, median class lower l = 49, f = 12, cf = 20, h = 10. Median ≈ ?",
+        "question": "n = 80, median class lower l = 49, f = 12, cf = 29, h = 10. Median ≈ ?",
         "options": [
-          "65.7",
-          "59",
+          "49",
           "40",
-          "49"
+          "59",
+          "58.2"
         ],
-        "answer": 0,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -387,14 +387,14 @@
       },
       {
         "id": "u13_t2_C_607240be",
-        "question": "n = 80, median class lower l = 38, f = 13, cf = 11, h = 5. Median ≈ ?",
+        "question": "n = 80, median class lower l = 38, f = 13, cf = 28, h = 5. Median ≈ ?",
         "options": [
+          "38",
           "43",
-          "49.2",
-          "40",
-          "38"
+          "42.6",
+          "40"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -408,12 +408,12 @@
         "id": "u13_t2_C_5aeec2fb",
         "question": "n = 50, median class lower l = 34, f = 9, cf = 17, h = 10. Median ≈ ?",
         "options": [
-          "34",
           "25",
           "42.9",
+          "34",
           "44"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -428,11 +428,11 @@
         "question": "n = 80, median class lower l = 15, f = 20, cf = 29, h = 10. Median ≈ ?",
         "options": [
           "25",
+          "40",
           "15",
-          "20.5",
-          "40"
+          "20.5"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -446,12 +446,12 @@
         "id": "u13_t2_C_3b0319d6",
         "question": "n = 50, median class lower l = 38, f = 18, cf = 24, h = 10. Median ≈ ?",
         "options": [
-          "38.6",
           "25",
           "48",
-          "38"
+          "38",
+          "38.6"
         ],
-        "answer": 0,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -465,8 +465,8 @@
         "id": "u13_t2_C_e1a030ac",
         "question": "n = 60, median class lower l = 40, f = 16, cf = 25, h = 10. Median ≈ ?",
         "options": [
-          "50",
           "30",
+          "50",
           "43.1",
           "40"
         ],
@@ -484,12 +484,12 @@
         "id": "u13_t2_C_2bd6c43f",
         "question": "n = 50, median class lower l = 38, f = 18, cf = 15, h = 5. Median ≈ ?",
         "options": [
+          "38",
           "43",
           "25",
-          "40.8",
-          "38"
+          "40.8"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -503,12 +503,12 @@
         "id": "u13_t2_C_be4d307d",
         "question": "n = 50, median class lower l = 20, f = 8, cf = 21, h = 10. Median ≈ ?",
         "options": [
-          "25",
           "25.0",
-          "20",
-          "30"
+          "30",
+          "25",
+          "20"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -522,10 +522,10 @@
         "id": "u13_t2_C_90b72b4e",
         "question": "n = 40, median class lower l = 27, f = 20, cf = 17, h = 5. Median ≈ ?",
         "options": [
-          "20",
+          "32",
           "27.8",
-          "27",
-          "32"
+          "20",
+          "27"
         ],
         "answer": 1,
         "explanation": "",
@@ -539,14 +539,14 @@
       },
       {
         "id": "u13_t2_C_ea0d5dbd",
-        "question": "n = 80, median class lower l = 11, f = 14, cf = 10, h = 5. Median ≈ ?",
+        "question": "n = 80, median class lower l = 11, f = 14, cf = 27, h = 5. Median ≈ ?",
         "options": [
           "16",
           "40",
-          "11",
-          "21.7"
+          "15.6",
+          "11"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -558,14 +558,14 @@
       },
       {
         "id": "u13_t2_C_a5a995da",
-        "question": "n = 80, median class lower l = 34, f = 9, cf = 10, h = 10. Median ≈ ?",
+        "question": "n = 80, median class lower l = 34, f = 9, cf = 32, h = 10. Median ≈ ?",
         "options": [
-          "44",
-          "34",
           "40",
-          "67.3"
+          "42.9",
+          "44",
+          "34"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -580,8 +580,8 @@
         "question": "n = 100, median class lower l = 25, f = 20, cf = 31, h = 5. Median ≈ ?",
         "options": [
           "30",
-          "25",
           "50",
+          "25",
           "29.8"
         ],
         "answer": 3,
@@ -596,14 +596,14 @@
       },
       {
         "id": "u13_t2_C_996cd9f9",
-        "question": "n = 120, median class lower l = 13, f = 20, cf = 16, h = 5. Median ≈ ?",
+        "question": "n = 120, median class lower l = 13, f = 20, cf = 41, h = 5. Median ≈ ?",
         "options": [
-          "13",
-          "60",
           "18",
-          "24.0"
+          "17.8",
+          "60",
+          "13"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -615,14 +615,14 @@
       },
       {
         "id": "u13_t2_C_d1b09638",
-        "question": "n = 60, median class lower l = 14, f = 10, cf = 17, h = 5. Median ≈ ?",
+        "question": "n = 60, median class lower l = 14, f = 10, cf = 21, h = 5. Median ≈ ?",
         "options": [
-          "19",
-          "20.5",
+          "18.5",
           "30",
+          "19",
           "14"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -636,12 +636,12 @@
         "id": "u13_t2_C_6900a15b",
         "question": "n = 50, median class lower l = 23, f = 16, cf = 17, h = 10. Median ≈ ?",
         "options": [
-          "23",
           "28.0",
+          "25",
           "33",
-          "25"
+          "23"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "C",
@@ -695,12 +695,12 @@
     "E": [
       {
         "id": "u13_t2_E_fb26ba6d",
-        "question": "Median = 46.7, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 120, median class lower l = 21, cf = 56, h = 5, median ≈ 22.2. Frequency f of median class ≈ ?",
         "options": [
-          "40",
-          "10",
-          "9",
-          "24"
+          "21",
+          "56",
+          "17",
+          "5"
         ],
         "answer": 2,
         "explanation": "",
@@ -714,14 +714,14 @@
       },
       {
         "id": "u13_t2_E_d2c3b10f",
-        "question": "Median = 19.0, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 120, median class lower l = 17, cf = 58, h = 5, median ≈ 18.0. Frequency f of median class ≈ ?",
         "options": [
-          "34",
+          "17",
           "10",
-          "18",
-          "24"
+          "58",
+          "5"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -733,12 +733,12 @@
       },
       {
         "id": "u13_t2_E_d60f57f9",
-        "question": "Median = 54.0, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 60, median class lower l = 40, cf = 21, h = 5, median ≈ 42.8. Frequency f of median class ≈ ?",
         "options": [
-          "31",
-          "19",
-          "5",
-          "49"
+          "21",
+          "16",
+          "40",
+          "5"
         ],
         "answer": 1,
         "explanation": "",
@@ -752,14 +752,14 @@
       },
       {
         "id": "u13_t2_E_d92ca1b7",
-        "question": "Median = 34.4, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 80, median class lower l = 37, cf = 36, h = 10, median ≈ 39.2. Frequency f of median class ≈ ?",
         "options": [
           "37",
-          "5",
-          "17",
-          "39"
+          "10",
+          "36",
+          "18"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -771,12 +771,31 @@
       },
       {
         "id": "u13_t2_E_048e54fa",
-        "question": "Median = 43.9, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 60, median class lower l = 24, cf = 21, h = 5, median ≈ 27.8. Frequency f of median class ≈ ?",
         "options": [
           "5",
-          "17",
-          "8",
-          "8 (alt)"
+          "12",
+          "21",
+          "24"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_e52b7680",
+        "question": "n = 120, median class lower l = 47, cf = 48, h = 10, median ≈ 55.0. Frequency f of median class ≈ ?",
+        "options": [
+          "10",
+          "47",
+          "15",
+          "48"
         ],
         "answer": 2,
         "explanation": "",
@@ -789,88 +808,12 @@
         "chapter_ref": "NCERT Ch 13 Statistics"
       },
       {
-        "id": "u13_t2_E_e52b7680",
-        "question": "Median = 22.1, known l, cf, h. Frequency f of median class ≈ ?",
-        "options": [
-          "19",
-          "10",
-          "21",
-          "9"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 13,
-        "category": "u13_t2_E",
-        "category_label": "Median · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
         "id": "u13_t2_E_9d023341",
-        "question": "Median = 52.1, known l, cf, h. Frequency f of median class ≈ ?",
-        "options": [
-          "5",
-          "38",
-          "19",
-          "11"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 13,
-        "category": "u13_t2_E",
-        "category_label": "Median · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
-        "id": "u13_t2_E_e8369f73",
-        "question": "Median = 34.5, known l, cf, h. Frequency f of median class ≈ ?",
-        "options": [
-          "10",
-          "5",
-          "31",
-          "25"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 13,
-        "category": "u13_t2_E",
-        "category_label": "Median · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
-        "id": "u13_t2_E_ebb353a9",
-        "question": "Median = 47.3, known l, cf, h. Frequency f of median class ≈ ?",
-        "options": [
-          "38",
-          "10",
-          "26",
-          "15"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 13,
-        "category": "u13_t2_E",
-        "category_label": "Median · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
-        "id": "u13_t2_E_e8afbc92",
-        "question": "Median = -0.3, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 80, median class lower l = 34, cf = 37, h = 10, median ≈ 37.3. Frequency f of median class ≈ ?",
         "options": [
           "37",
           "9",
-          "13",
+          "34",
           "10"
         ],
         "answer": 1,
@@ -884,13 +827,70 @@
         "chapter_ref": "NCERT Ch 13 Statistics"
       },
       {
-        "id": "u13_t2_E_9099c86a",
-        "question": "Median = 36.2, known l, cf, h. Frequency f of median class ≈ ?",
+        "id": "u13_t2_E_e8369f73",
+        "question": "n = 50, median class lower l = 38, cf = 23, h = 10, median ≈ 39.3. Frequency f of median class ≈ ?",
         "options": [
-          "18",
-          "18 (alt)",
+          "15",
           "10",
-          "24"
+          "23",
+          "38"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_ebb353a9",
+        "question": "n = 100, median class lower l = 21, cf = 45, h = 10, median ≈ 27.2. Frequency f of median class ≈ ?",
+        "options": [
+          "21",
+          "45",
+          "8",
+          "10"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_e8afbc92",
+        "question": "n = 80, median class lower l = 45, cf = 33, h = 10, median ≈ 53.8. Frequency f of median class ≈ ?",
+        "options": [
+          "8",
+          "45",
+          "33",
+          "10"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_9099c86a",
+        "question": "n = 40, median class lower l = 16, cf = 15, h = 5, median ≈ 18.8. Frequency f of median class ≈ ?",
+        "options": [
+          "9",
+          "5",
+          "16",
+          "15"
         ],
         "answer": 0,
         "explanation": "",
@@ -904,12 +904,12 @@
       },
       {
         "id": "u13_t2_E_9347b838",
-        "question": "Median = 27.5, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 50, median class lower l = 26, cf = 18, h = 5, median ≈ 28.7. Frequency f of median class ≈ ?",
         "options": [
-          "33",
-          "23",
+          "18",
+          "26",
           "5",
-          "19"
+          "13"
         ],
         "answer": 3,
         "explanation": "",
@@ -923,87 +923,11 @@
       },
       {
         "id": "u13_t2_E_ccfe6e33",
-        "question": "Median = 6.2, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 40, median class lower l = 20, cf = 19, h = 5, median ≈ 20.4. Frequency f of median class ≈ ?",
         "options": [
-          "35",
-          "10",
-          "8",
-          "25"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 13,
-        "category": "u13_t2_E",
-        "category_label": "Median · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
-        "id": "u13_t2_E_dfcb9634",
-        "question": "Median = 17.3, known l, cf, h. Frequency f of median class ≈ ?",
-        "options": [
-          "15",
+          "19",
+          "5",
           "20",
-          "10",
-          "34"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 13,
-        "category": "u13_t2_E",
-        "category_label": "Median · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
-        "id": "u13_t2_E_6a1ae5bf",
-        "question": "Median = 72.2, known l, cf, h. Frequency f of median class ≈ ?",
-        "options": [
-          "8",
-          "10",
-          "8 (alt)",
-          "11"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 13,
-        "category": "u13_t2_E",
-        "category_label": "Median · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
-        "id": "u13_t2_E_1ce3f8a7",
-        "question": "Median = 34.0, known l, cf, h. Frequency f of median class ≈ ?",
-        "options": [
-          "11",
-          "27",
-          "10",
-          "10 (alt)"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 13,
-        "category": "u13_t2_E",
-        "category_label": "Median · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
-        "id": "u13_t2_E_bab98b29",
-        "question": "Median = 39.2, known l, cf, h. Frequency f of median class ≈ ?",
-        "options": [
-          "29",
-          "30",
-          "10",
           "12"
         ],
         "answer": 3,
@@ -1017,13 +941,89 @@
         "chapter_ref": "NCERT Ch 13 Statistics"
       },
       {
-        "id": "u13_t2_E_5c6270f0",
-        "question": "Median = 51.5, known l, cf, h. Frequency f of median class ≈ ?",
+        "id": "u13_t2_E_dfcb9634",
+        "question": "n = 80, median class lower l = 26, cf = 29, h = 5, median ≈ 29.1. Frequency f of median class ≈ ?",
         "options": [
-          "13",
+          "26",
+          "5",
+          "29",
+          "18"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_6a1ae5bf",
+        "question": "n = 100, median class lower l = 31, cf = 49, h = 10, median ≈ 32.1. Frequency f of median class ≈ ?",
+        "options": [
+          "9",
+          "49",
           "10",
-          "36",
-          "33"
+          "31"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_1ce3f8a7",
+        "question": "n = 100, median class lower l = 31, cf = 40, h = 10, median ≈ 37.2. Frequency f of median class ≈ ?",
+        "options": [
+          "10",
+          "31",
+          "40",
+          "16"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_bab98b29",
+        "question": "n = 100, median class lower l = 12, cf = 47, h = 5, median ≈ 13.9. Frequency f of median class ≈ ?",
+        "options": [
+          "5",
+          "47",
+          "8",
+          "12"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_5c6270f0",
+        "question": "n = 100, median class lower l = 31, cf = 44, h = 10, median ≈ 36.5. Frequency f of median class ≈ ?",
+        "options": [
+          "11",
+          "10",
+          "31",
+          "44"
         ],
         "answer": 0,
         "explanation": "",
@@ -1037,14 +1037,14 @@
       },
       {
         "id": "u13_t2_E_d3c211ed",
-        "question": "Median = 16.4, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 60, median class lower l = 24, cf = 21, h = 10, median ≈ 31.5. Frequency f of median class ≈ ?",
         "options": [
-          "5",
-          "11",
-          "12",
-          "37"
+          "21",
+          "10",
+          "24",
+          "12"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -1056,14 +1056,14 @@
       },
       {
         "id": "u13_t2_E_4944bfb8",
-        "question": "Median = 10.4, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 50, median class lower l = 39, cf = 21, h = 5, median ≈ 41.2. Frequency f of median class ≈ ?",
         "options": [
-          "10",
-          "16",
-          "18",
-          "40"
+          "9",
+          "39",
+          "5",
+          "21"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -1075,12 +1075,12 @@
       },
       {
         "id": "u13_t2_E_5ae10a0a",
-        "question": "Median = 51.5, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 50, median class lower l = 11, cf = 14, h = 10, median ≈ 19.5. Frequency f of median class ≈ ?",
         "options": [
-          "37",
-          "41",
-          "5",
-          "11"
+          "14",
+          "10",
+          "11",
+          "13"
         ],
         "answer": 3,
         "explanation": "",
@@ -1094,14 +1094,14 @@
       },
       {
         "id": "u13_t2_E_d708f3ac",
-        "question": "Median = 61.6, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 50, median class lower l = 40, cf = 21, h = 5, median ≈ 41.8. Frequency f of median class ≈ ?",
         "options": [
-          "24",
-          "10",
-          "38",
-          "11"
+          "11",
+          "5",
+          "40",
+          "21"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -1113,12 +1113,12 @@
       },
       {
         "id": "u13_t2_E_3784e8f9",
-        "question": "Median = 27.5, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 100, median class lower l = 42, cf = 47, h = 10, median ≈ 45.3. Frequency f of median class ≈ ?",
         "options": [
-          "5",
+          "42",
           "10",
-          "12",
-          "15"
+          "9",
+          "47"
         ],
         "answer": 2,
         "explanation": "",
@@ -1132,10 +1132,29 @@
       },
       {
         "id": "u13_t2_E_860a6bf9",
-        "question": "Median = 34.0, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 100, median class lower l = 39, cf = 44, h = 5, median ≈ 41.3. Frequency f of median class ≈ ?",
         "options": [
-          "15",
-          "14",
+          "13",
+          "39",
+          "44",
+          "5"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_829c8e72",
+        "question": "n = 50, median class lower l = 20, cf = 21, h = 10, median ≈ 24.4. Frequency f of median class ≈ ?",
+        "options": [
+          "9",
+          "21",
           "10",
           "20"
         ],
@@ -1150,12 +1169,12 @@
         "chapter_ref": "NCERT Ch 13 Statistics"
       },
       {
-        "id": "u13_t2_E_829c8e72",
-        "question": "Median = 54.0, known l, cf, h. Frequency f of median class ≈ ?",
+        "id": "u13_t2_E_43db1fe2",
+        "question": "n = 120, median class lower l = 18, cf = 46, h = 5, median ≈ 22.1. Frequency f of median class ≈ ?",
         "options": [
-          "44",
-          "13",
-          "10",
+          "18",
+          "46",
+          "5",
           "17"
         ],
         "answer": 3,
@@ -1169,51 +1188,13 @@
         "chapter_ref": "NCERT Ch 13 Statistics"
       },
       {
-        "id": "u13_t2_E_43db1fe2",
-        "question": "Median = 48.3, known l, cf, h. Frequency f of median class ≈ ?",
-        "options": [
-          "25",
-          "10",
-          "18 (alt)",
-          "18"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 13,
-        "category": "u13_t2_E",
-        "category_label": "Median · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
         "id": "u13_t2_E_68d664a5",
-        "question": "Median = 53.8, known l, cf, h. Frequency f of median class ≈ ?",
-        "options": [
-          "46",
-          "29",
-          "20",
-          "5"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 2,
-        "level": "E",
-        "unit_id": 13,
-        "category": "u13_t2_E",
-        "category_label": "Median · Level E",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 13 Statistics"
-      },
-      {
-        "id": "u13_t2_E_d396334e",
-        "question": "Median = 51.1, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 40, median class lower l = 14, cf = 18, h = 10, median ≈ 15.1. Frequency f of median class ≈ ?",
         "options": [
           "19",
           "10",
-          "27",
-          "39"
+          "14",
+          "18"
         ],
         "answer": 0,
         "explanation": "",
@@ -1226,15 +1207,34 @@
         "chapter_ref": "NCERT Ch 13 Statistics"
       },
       {
-        "id": "u13_t2_E_2b3b8fca",
-        "question": "Median = 24.8, known l, cf, h. Frequency f of median class ≈ ?",
+        "id": "u13_t2_E_d396334e",
+        "question": "n = 80, median class lower l = 32, cf = 33, h = 10, median ≈ 40.8. Frequency f of median class ≈ ?",
         "options": [
-          "19",
-          "13",
-          "5",
-          "25"
+          "32",
+          "10",
+          "33",
+          "8"
         ],
-        "answer": 1,
+        "answer": 3,
+        "explanation": "",
+        "topic": 2,
+        "level": "E",
+        "unit_id": 13,
+        "category": "u13_t2_E",
+        "category_label": "Median · Level E",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 13 Statistics"
+      },
+      {
+        "id": "u13_t2_E_2b3b8fca",
+        "question": "n = 40, median class lower l = 16, cf = 11, h = 5, median ≈ 19.0. Frequency f of median class ≈ ?",
+        "options": [
+          "5",
+          "16",
+          "11",
+          "15"
+        ],
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "E",
@@ -1246,14 +1246,14 @@
       },
       {
         "id": "u13_t2_E_de42ea47",
-        "question": "Median = 33.3, known l, cf, h. Frequency f of median class ≈ ?",
+        "question": "n = 80, median class lower l = 47, cf = 37, h = 5, median ≈ 48.2. Frequency f of median class ≈ ?",
         "options": [
-          "10",
-          "14",
-          "15",
-          "26"
+          "13",
+          "37",
+          "47",
+          "5"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "E",

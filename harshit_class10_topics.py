@@ -826,12 +826,45 @@ def _shuffle_options(correct: str, wrong: list[str]) -> tuple[list[str], int]:
         seen.add(candidate)
         unique_wrong.append(candidate)
     while len(unique_wrong) < 3:
-        filler = f"{correct} (alt)"
-        if filler not in seen:
-            seen.add(filler)
-            unique_wrong.append(filler)
-        else:
-            unique_wrong.append(f"{int(correct) + len(unique_wrong) + 1}" if correct.isdigit() else "None of these")
+        n = len(unique_wrong)
+        filler: str | None = None
+        if correct.isdigit():
+            filler = str(int(correct) + n + 1)
+        elif "/" in correct:
+            parts = correct.split("/", 1)
+            if len(parts) == 2 and parts[0].lstrip("-").isdigit() and parts[1].isdigit():
+                num_i, den_i = int(parts[0]), int(parts[1])
+                for delta_num, delta_den in ((1, 0), (-1, 0), (0, 1), (2, 0), (1, 1), (0, 2), (-2, 0)):
+                    nn = max(1, num_i + delta_num)
+                    dd = max(1, den_i + delta_den)
+                    cand = f"{nn}/{dd}"
+                    if cand not in seen:
+                        filler = cand
+                        break
+        if filler is None:
+            if correct.endswith(" units"):
+                base = int(correct.split()[0])
+                filler = f"{base + n + 1} units"
+            elif correct.endswith(" sq units"):
+                base = correct.split()[0]
+                filler = f"{float(base) + n + 1:g} sq units" if "." in base else f"{int(base) + n + 1} sq units"
+            elif correct.startswith("(") and "," in correct:
+                filler = f"({n + 1}, {n + 2})"
+            elif " : " in correct:
+                parts = [p.strip() for p in correct.split(":")]
+                if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
+                    filler = f"{int(parts[0]) + n + 1} : {int(parts[1]) + n + 1}"
+                else:
+                    filler = f"Option {n + 2}"
+            elif correct.endswith(" km"):
+                base = int(correct.split()[0])
+                filler = f"{base + n + 1} km"
+            else:
+                filler = f"Option {n + 2}"
+        if filler in seen:
+            filler = f"Option {n + 3}"
+        seen.add(filler)
+        unique_wrong.append(filler)
     opts = [correct, *unique_wrong[:3]]
     random.shuffle(opts)
     return opts, opts.index(correct)
@@ -2481,12 +2514,17 @@ def _bpt_ec(ad: int, db: int, ae: int) -> int:
 def _random_bpt_segments() -> tuple[int, int, int, int]:
     ad = random.randint(2, 12)
     db = random.randint(2, 12)
-    ae = random.randint(2, 15)
-    ec = ae * db // ad
-    if ec < 1:
-        ec = random.randint(2, 12)
-        ae = ec * ad // db
-    return ad, db, ae, max(ec, 1)
+    k = random.randint(1, 4)
+    ae = ad * k
+    ec = db * k
+    return ad, db, ae, ec
+
+
+def _fmt_m(cm: int) -> str:
+    """Format centimetres as metres (one decimal when needed)."""
+    if cm % 100 == 0:
+        return f"{cm // 100} m"
+    return f"{cm / 100:g} m"
 
 
 def _random_parallel_segments() -> tuple[int, int, int, int, bool]:
@@ -2576,7 +2614,7 @@ def _gen_u6_t2(level: str) -> dict:
     if level == "C":
         ab = ad + db
         ac = ae + ec
-        opts, ans = _shuffle_options(f"AE/AC = {ae}/{ac}", [f"AD/AB = {db}/{ab}", f"AE/EC = {db}/{ad}", f"AD/AE = {ec}/{ae}"])
+        opts, ans = _shuffle_options(f"AE/AC = {ae}/{ac}", [f"AD/AB = {ad}/{ab}", f"AE/EC = {ec}/{ae}", f"AD/AE = {ad}/{ae}"])
         return _mcq(
             6, 2, level,
             f"DE ∥ BC with AD = {ad}, DB = {db}, AE = {ae}, EC = {ec}. Which ratio is correct?",
@@ -2679,9 +2717,9 @@ def _gen_u6_t4(level: str) -> dict:
         opts, ans = _shuffle_options(f"{h_pole} cm", [f"{sh_pole} cm", f"{h_obj} cm", f"{h_pole + 30} cm"])
         return _mcq(
             6, 4, level,
-            f"A {h_obj // 100} m tree casts a {sh_obj // 100} m shadow. A pole casts {sh_pole // 100} m shadow. Pole height?",
+            f"A {_fmt_m(h_obj)} tree casts a {_fmt_m(sh_obj)} shadow. A pole casts {_fmt_m(sh_pole)} shadow. Pole height?",
             opts, ans,
-            "Similar triangles: height/shadow is constant.",
+            f"height/shadow is constant: {h_obj}/{sh_obj} = h/{sh_pole} ⇒ h = {h_pole} cm.",
         )
     if level == "D":
         k = random.randint(2, 4)
@@ -2712,6 +2750,15 @@ def _coord_dist(x1: int, y1: int, x2: int, y2: int) -> float:
     return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
 
+def _random_distance_points() -> tuple[int, int, int, int, int]:
+    """Return (x1, y1, x2, y2, distance) with an exact integer distance."""
+    dx, dy, d = random.choice([(3, 4, 5), (5, 12, 13), (6, 8, 10), (8, 15, 17), (9, 12, 15)])
+    if random.random() < 0.5:
+        dx, dy = dy, dx
+    x1, y1 = random.randint(0, 5), random.randint(0, 5)
+    return x1, y1, x1 + dx, y1 + dy, d
+
+
 def _section_point(x1: int, y1: int, x2: int, y2: int, m: int, n: int) -> tuple[float, float]:
     return (m * x2 + n * x1) / (m + n), (m * y2 + n * y1) / (m + n)
 
@@ -2733,11 +2780,9 @@ def _gen_u7_t1(level: str) -> dict:
             opts, ans,
             f"|{b} − {a}| = {dist}.",
         )
-    x1, y1 = random.randint(1, 5), random.randint(1, 5)
-    x2, y2 = x1 + random.randint(3, 6), y1 + random.randint(4, 8)
-    d = int(_coord_dist(x1, y1, x2, y2))
+    x1, y1, x2, y2, d = _random_distance_points()
     if level == "C":
-        opts, ans = _shuffle_options(f"{d} units", [f"{d + 3} units", f"{x2 - x1 + y2 - y1} units", f"{d - 2} units"])
+        opts, ans = _shuffle_options(f"{d} units", [f"{d + 3} units", f"{x2 - x1 + y2 - y1} units", f"{max(1, d - 2)} units"])
         return _mcq(
             7, 1, level,
             f"Distance between ({x1}, {y1}) and ({x2}, {y2}):",
@@ -2822,12 +2867,14 @@ def _gen_u7_t3(level: str) -> dict:
         opts, ans = _shuffle_options("Yes", ["No", "Only if y equal", "Cannot tell"])
         return _mcq(
             7, 3, level,
-            f"Are (1, 2), (1 + {k}, 2 + 2{k}), (1 + 2{k}, 2 + 4{k}) collinear?",
+            f"Are (1, 2), (1 + {k}, 2 + {2 * k}), (1 + {2 * k}, 2 + {4 * k}) collinear?",
             opts, ans,
             "Constant slope 2.",
         )
     if level == "C":
         base, height = random.randint(3, 8), random.randint(3, 8)
+        if (base * height) % 2:
+            height += 1
         area = base * height // 2
         opts, ans = _shuffle_options(f"{area} sq units", [f"{base + height} sq units", f"{base * height} sq units", "0 sq units"])
         return _mcq(
@@ -2855,8 +2902,7 @@ def _gen_u7_t3(level: str) -> dict:
 
 
 def _gen_u7_t4(level: str) -> dict:
-    east, north = random.randint(20, 50), random.randint(10, 25)
-    dist = int(math.sqrt(east * east + north * north))
+    east, north, dist = random.choice([(20, 21, 29), (12, 16, 20), (15, 20, 25), (9, 40, 41), (28, 45, 53)])
     if level == "A":
         opts, ans = _shuffle_options(f"{dist} km", [f"{east + north} km", f"{east} km", f"{north} km"])
         return _mcq(
@@ -2867,23 +2913,24 @@ def _gen_u7_t4(level: str) -> dict:
         )
     side = random.randint(3, 8)
     if level == "B":
-        opts, ans = _shuffle_options(f"(0, {side})", [f"({side}, 0)", f"({side}, {side})", "(0, 0)"])
+        opts, ans = _shuffle_options(f"({side}, {side})", [f"({side}, 0)", "(0, 0)", f"(0, {side})"])
         return _mcq(
             7, 4, level,
             f"Isosceles right triangle with A(0,0), B({side},0), C above x-axis with AB = BC. C could be:",
             opts, ans,
+            f"Right angle at B gives C = ({side}, {side}) with AB = BC = {side}.",
         )
-    x2 = random.randint(4, 10)
+    x2 = random.randint(2, 10) * 2
+    half = x2 // 2
     if level == "C":
-        opts, ans = _shuffle_options(f"({x2 // 2}, {x2 // 2})", [f"({x2}, {x2})", "(0, 0)", f"({x2 // 2}, 0)"])
+        opts, ans = _shuffle_options(f"({half}, {half})", [f"({x2}, {x2})", "(0, 0)", f"({half}, 0)"])
         return _mcq(
             7, 4, level,
             f"Mid-point of diagonal from (0,0) to ({x2}, {x2}):",
             opts, ans,
+            f"Mid-point = ({half}, {half}).",
         )
-    x1, y1 = random.randint(0, 3), random.randint(0, 3)
-    x2, y2 = x1 + random.randint(3, 6), y1 + random.randint(4, 7)
-    d = int(_coord_dist(x1, y1, x2, y2))
+    x1, y1, x2, y2, d = _random_distance_points()
     if level == "D":
         opts, ans = _shuffle_options(f"{d} units", [f"{d + 2} units", f"{x2 - x1} units", f"{y2 - y1} units"])
         return _mcq(
@@ -2911,6 +2958,23 @@ _STD_TRIG: dict[int, tuple[str, str, str]] = {
     90: ("1", "0", "undefined"),
 }
 
+_SIN_COS_SUMS: dict[tuple[int, int], tuple[str, str]] = {
+    (30, 60): ("1", "1/2 + 1/2 = 1."),
+    (60, 30): ("√3", "√3/2 + √3/2 = √3."),
+    (45, 45): ("√2", "1/√2 + 1/√2 = √2."),
+    (0, 90): ("0", "0 + 0 = 0."),
+    (90, 0): ("2", "1 + 1 = 2."),
+}
+
+
+def _sin_cos_sum(a: int, b: int) -> tuple[str, str]:
+    """Return (answer, explanation) for sin a° + cos b°."""
+    if (a, b) in _SIN_COS_SUMS:
+        return _SIN_COS_SUMS[(a, b)]
+    sin_a, _, _ = _STD_TRIG[a]
+    _, cos_b, _ = _STD_TRIG[b]
+    return (f"{sin_a} + {cos_b}", f"{sin_a} + {cos_b}.")
+
 
 def _gen_u8_t1(level: str) -> dict:
     opp, adj, hyp = _random_right_triangle()
@@ -2930,7 +2994,7 @@ def _gen_u8_t1(level: str) -> dict:
             ("Correct reciprocal relation:", "cosec θ = 1/sin θ",
              ["cosec θ = sin θ", "cosec θ = cos θ/sin θ", "cosec θ = tan θ"], ""),
             ("sec θ equals:", "1/cos θ", ["cos θ", "1/sin θ", "sin θ/cos θ"], ""),
-            ("cot θ equals:", "1/tan θ", ["tan θ", "sin θ/cos θ", "cos θ/sin θ"], ""),
+            ("cot θ equals:", "1/tan θ", ["tan θ", "sin θ/cos θ", "1/cos θ"], ""),
             (f"If sin θ = {opp}/{hyp}, then cosec θ = ?", f"{hyp}/{opp}",
              [f"{opp}/{hyp}", f"{adj}/{hyp}", "1"], ""),
         ])
@@ -3055,7 +3119,6 @@ def _gen_u8_t3(level: str) -> dict:
 
 
 def _gen_u8_t4(level: str) -> dict:
-    a, b = random.choice([(30, 60), (45, 45), (60, 30), (0, 90)])
     if level == "A":
         return _variant_mcq(8, 4, level, [
             ("tan θ in terms of sin and cos:", "sin θ/cos θ",
@@ -3063,13 +3126,8 @@ def _gen_u8_t4(level: str) -> dict:
             ("sec θ equals:", "1/cos θ", ["cos θ", "1/sin θ", "sin θ/cos θ"], ""),
         ])
     if level == "B":
-        pairs = {
-            (30, 60): ("1", "1/2 + 1/2 = 1."),
-            (45, 45): ("√2", "2/√2 = √2."),
-            (60, 30): ("(√3+1)/2", "√3/2 + 1/2."),
-            (0, 90): ("1", "0 + 1 = 1."),
-        }
-        ans_val, expl = pairs[(a, b)]
+        a, b = random.choice(list(_SIN_COS_SUMS))
+        ans_val, expl = _sin_cos_sum(a, b)
         opts, ans = _shuffle_options(ans_val, ["0", "√3", "1/2"])
         return _mcq(8, 4, level, f"sin {a}° + cos {b}° = ?", opts, ans, expl)
     if level == "C":
@@ -3078,15 +3136,12 @@ def _gen_u8_t4(level: str) -> dict:
             ("(1 + cot²θ)(1 − cos²θ) simplifies to:", "1", ["0", "sin²θ", "tan²θ"], ""),
         ])
     if level == "D":
-        sums = {
-            30: ("1", "sin 30° + cos 60°"),
-            45: (str(round(2 / math.sqrt(2), 4)), "sin 45° + cos 45°"),
-            60: ("(√3+1)/2", "sin 60° + cos 30°"),
-        }
-        a = random.choice(list(sums))
-        ans_val, qtext = sums[a]
+        a = random.choice([30, 45, 60])
+        qtext = {30: "sin 30° + cos 60°", 45: "sin 45° + cos 45°", 60: "sin 60° + cos 30°"}[a]
+        b = {30: 60, 45: 45, 60: 30}[a]
+        ans_val, expl = _sin_cos_sum(a, b)
         opts, ans = _shuffle_options(ans_val, ["0", "√3", "1/2"])
-        return _mcq(8, 4, level, f"{qtext} = ?", opts, ans)
+        return _mcq(8, 4, level, f"{qtext} = ?", opts, ans, expl)
     x = random.choice([0, 30, 45, 60, 90])
     ratio = random.choice(["sin", "cos", "tan"])
     correct = {"sin": _STD_TRIG[x][0], "cos": _STD_TRIG[x][1], "tan": _STD_TRIG[x][2]}[ratio]
@@ -3140,6 +3195,21 @@ def _gen_u9_t1(level: str) -> dict:
     )
 
 
+def _proportional_length_m(numerator: float, denominator: float, value: float) -> tuple[str, str]:
+    """Format h₂ × s₁/h₁ (or similar ratio) with sensible rounding for MCQ answers."""
+    exact = numerator * value / denominator
+    if denominator == 0:
+        return "0 m", "Undefined ratio."
+    if abs(exact - round(exact)) < 1e-9:
+        rounded = int(round(exact))
+        return f"{rounded} m", f"{numerator:g} × {value:g}/{denominator:g} = {rounded} m."
+    half = round(exact * 2) / 2
+    if abs(exact - half) < 1e-9:
+        return f"{half:g} m", f"{numerator:g} × {value:g}/{denominator:g} = {half:g} m."
+    rounded = round(exact)
+    return f"{rounded} m", f"{numerator:g} × {value:g}/{denominator:g} ≈ {exact:.2f} ≈ {rounded} m."
+
+
 def _gen_u9_t2(level: str) -> dict:
     dist = random.randint(10, 120)
     angle = random.choice([15, 30, 45, 60, 75])
@@ -3188,12 +3258,14 @@ def _gen_u9_t2(level: str) -> dict:
         )
     pole, shadow = random.randint(4, 8), random.randint(4, 8)
     tower_shadow = random.randint(20, 50)
-    tower_h = pole * tower_shadow // shadow
-    opts, ans = _shuffle_options(f"{tower_h} m", [f"{pole} m", f"{tower_shadow} m", f"{tower_h + 10} m"])
+    tower_ans, tower_expl = _proportional_length_m(pole, shadow, tower_shadow)
+    tower_num = round(pole * tower_shadow / shadow)
+    opts, ans = _shuffle_options(tower_ans, [f"{pole} m", f"{tower_shadow} m", f"{tower_num + 10} m"])
     return _mcq(
         9, 2, level,
         f"{pole} m pole casts {shadow} m shadow. Tower casts {tower_shadow} m shadow. Tower height?",
         opts, ans,
+        tower_expl,
     )
 
 
@@ -3250,13 +3322,14 @@ def _gen_u9_t4(level: str) -> dict:
         ])
     if level == "B":
         small_pole = pole // 2 + 1
-        ans_val = max(1, small_pole * shadow // pole)
-        opts, ans = _shuffle_options(f"{ans_val} m", [f"{pole} m", f"{shadow} m", f"{ans_val + 2} m"])
+        ans_text, expl = _proportional_length_m(small_pole, pole, shadow)
+        ans_num = int(float(ans_text.split()[0]))
+        opts, ans = _shuffle_options(ans_text, [f"{pole} m", f"{shadow} m", f"{ans_num + 2} m"])
         return _mcq(
             9, 4, level,
             f"{pole} m pole casts {shadow} m shadow. A {small_pole} m pole casts shadow ≈ ?",
             opts, ans,
-            "Same ratio height/shadow.",
+            expl,
         )
     h = random.randint(10, 50)
     dist = round(h / math.tan(math.radians(30)))
@@ -3516,7 +3589,12 @@ def _gen_u11_t3(level: str) -> dict:
         return _mcq(11, 3, level, f"Minor segment: r = {r} cm, θ = {angle}°. Area ≈ ?", opts, ans)
     if level == "C":
         opts, ans = _shuffle_options("Major segment", ["Minor segment", "Semicircle", "Quadrant"])
-        return _mcq(11, 3, level, f"Segment larger than semicircle (θ = {angle}°) is:", opts, ans)
+        return _mcq(
+            11, 3, level,
+            f"A chord subtends θ = {angle}° at the centre (θ < 180°). The segment larger than a semicircle is called:",
+            opts, ans,
+            "The minor segment from θ < 180° is smaller than a semicircle; the rest is the major segment.",
+        )
     if level == "D":
         opts, ans = _shuffle_options(f"{segment} cm²", [f"{sector} cm²", f"{tri} cm²", f"{r} cm²"])
         return _mcq(11, 3, level, f"Chord subtends {angle}° at centre, r = {r} cm. Minor segment ≈ ?", opts, ans)
@@ -3539,9 +3617,19 @@ def _gen_u11_t4(level: str) -> dict:
         opts, ans = _shuffle_options(f"{ring} cm²", [f"{math.pi * outer * outer:.0f} cm²", f"{inner} cm²", f"{ring / 2} cm²"])
         return _mcq(11, 4, level, f"Ring: outer r = {outer} cm, inner r = {inner} cm. Area ≈ ?", opts, ans)
     if level == "C":
-        brooch = round(6 * quad_area, 2)
-        opts, ans = _shuffle_options(f"{brooch} cm²", [f"{quad_area} cm²", f"{sq} cm²", f"{brooch * 2} cm²"])
-        return _mcq(11, 4, level, f"Brooch: 6 equal quadrants, each r = {r} cm. Total area ≈ ?", opts, ans)
+        full_circle = round(math.pi * r * r, 2)
+        sector_one = round(full_circle / 6, 2)
+        six_quadrants_mistake = round(6 * quad_area, 2)
+        opts, ans = _shuffle_options(
+            f"{full_circle} cm²",
+            [f"{sector_one} cm²", f"{six_quadrants_mistake} cm²", f"{full_circle * 2} cm²"],
+        )
+        return _mcq(
+            11, 4, level,
+            f"Brooch: 6 equal sectors of 60° each, radius r = {r} cm. Total area ≈ ?",
+            opts, ans,
+            "6 × 60° = 360° ⇒ area of one full circle = πr².",
+        )
     if level == "D":
         ring = round(math.pi * (r * 2) ** 2 - math.pi * r * r, 2)
         opts, ans = _shuffle_options(f"{ring} cm²", [f"{math.pi * r * r:.0f} cm²", f"{r} cm²", f"{ring * 2} cm²"])
@@ -3552,6 +3640,17 @@ def _gen_u11_t4(level: str) -> dict:
 
 
 # ── Unit 12 generators ──
+
+def _toy_cylinder_hemisphere_tsa(r: int, h: int) -> float:
+    """CSA cylinder + CSA hemisphere + flat circular base."""
+    return round(2 * math.pi * r * h + 3 * math.pi * r * r, 2)
+
+
+def _cone_cylinder_visible_csa(r: int, h_cyl: int, h_cone: int) -> float:
+    """Visible CSA: cylinder CSA + cone CSA (bases hidden)."""
+    slant = math.sqrt(r * r + h_cone * h_cone)
+    return round(2 * math.pi * r * h_cyl + math.pi * r * slant, 2)
+
 
 def _gen_u12_t1(level: str) -> dict:
     r, h = random.randint(2, 15), random.randint(3, 22)
@@ -3585,12 +3684,16 @@ def _gen_u12_t2(level: str) -> dict:
         opts, ans = _shuffle_options("Exclude the common circular face", ["Add all faces twice", "Only curved areas", "Ignore hemisphere"])
         return _mcq(12, 2, level, "Cylinder surmounted by hemisphere — for total SA:", opts, ans)
     if level == "B":
+        total = _toy_cylinder_hemisphere_tsa(r, h)
         csa_cyl = 2 * math.pi * r * h
         sa_hemi = 2 * math.pi * r * r
-        base = math.pi * r * r
-        total = round(csa_cyl + sa_hemi + base, 2)
-        opts, ans = _shuffle_options(f"{total} cm²", [f"{csa_cyl:.0f} cm²", f"{sa_hemi:.0f} cm²", f"{total * 2} cm²"])
-        return _mcq(12, 2, level, f"Toy: cylinder r = {r}, h = {h} + hemisphere on top. Total SA ≈ ?", opts, ans)
+        opts, ans = _shuffle_options(f"{total} cm²", [f"{round(csa_cyl + sa_hemi, 2)} cm²", f"{round(csa_cyl, 2)} cm²", f"{total * 2} cm²"])
+        return _mcq(
+            12, 2, level,
+            f"Toy: cylinder r = {r}, h = {h} + hemisphere on top. Total SA ≈ ?",
+            opts, ans,
+            "CSA cylinder + CSA hemisphere + flat base = 2πrh + 3πr².",
+        )
     if level == "C":
         opts, ans = _shuffle_options("CSA of cone + CSA of cylinder − base overlap", ["Sum all TSA", "Volume only", "2πr(h + l)"])
         return _mcq(12, 2, level, "Cone on cylinder — visible surface area uses:", opts, ans)
@@ -3602,6 +3705,21 @@ def _gen_u12_t2(level: str) -> dict:
     total = round(2 * math.pi * r * h + 2 * math.pi * r * r, 2)
     opts, ans = _shuffle_options(f"{total} cm²", [f"{2 * math.pi * r * h:.0f} cm²", f"{math.pi * r * r:.0f} cm²", f"{total / 2} cm²"])
     return _mcq(12, 2, level, f"Closed cylinder r = {r}, h = {h}. Total SA ≈ ?", opts, ans)
+
+
+def _gen_u12_t2_cone_cylinder_csa(r: int, h_cyl: int, h_cone: int) -> dict:
+    total = _cone_cylinder_visible_csa(r, h_cyl, h_cone)
+    cyl_only = round(2 * math.pi * r * h_cyl, 2)
+    opts, ans = _shuffle_options(
+        f"{total}",
+        [f"{cyl_only}", f"{round(total * 1.5, 2)}", f"{round(total / 2, 2)}"],
+    )
+    return _mcq(
+        12, 2, "C",
+        f"Cylinder r={r} cm, h={h_cyl} cm with cone on top (cone h={h_cone} cm; visible CSA only). CSA ≈ ? cm²",
+        opts, ans,
+        "CSA cylinder + CSA cone (πrl); shared bases are hidden.",
+    )
 
 
 def _gen_u12_t3(level: str) -> dict:
@@ -3652,6 +3770,43 @@ def _gen_u12_t4(level: str) -> dict:
 
 
 # ── Unit 13 generators ──
+
+def _random_median_class_params(n: int) -> tuple[int, int, int, int]:
+    """Return (l, f, cf, h) with cf < n/2 <= cf + f and median in [l, l+h)."""
+    half = n / 2
+    h = random.choice([5, 10])
+    for _ in range(40):
+        f = random.randint(8, 20)
+        cf_lo = max(0, math.floor(half - f) + 1)
+        cf_hi = int(half - 1) if half == int(half) else math.floor(half - 1e-9)
+        if cf_lo > cf_hi:
+            continue
+        cf = random.randint(cf_lo, cf_hi)
+        l = random.randint(10, 50)
+        return l, f, cf, h
+    f = max(8, math.ceil(half))
+    cf = max(0, math.floor(half - f) + 1)
+    return random.randint(10, 50), f, cf, h
+
+
+def _median_grouped(l: int, f: int, cf: int, h: int, n: int) -> float:
+    half = n / 2
+    return round(l + ((half - cf) / f) * h, 1)
+
+
+def _random_modal_class_params() -> tuple[int, int, int, int, int]:
+    """Return (l, f1, f0, f2, h) with f1 strictly greater than both neighbours."""
+    h = random.choice([5, 10])
+    f1 = random.randint(12, 22)
+    f0 = random.randint(4, f1 - 1)
+    f2 = random.randint(4, f1 - 1)
+    l = random.randint(20, 50)
+    return l, f1, f0, f2, h
+
+
+def _mode_grouped(l: int, f1: int, f0: int, f2: int, h: int) -> float:
+    return round(l + ((f1 - f0) / (2 * f1 - f0 - f2)) * h, 1)
+
 
 def _gen_u13_t1(level: str) -> dict:
     step = random.choice([5, 10])
@@ -3706,8 +3861,8 @@ def _gen_u13_t2(level: str) -> dict:
             ("In median formula, l is:", "Lower limit of median class",
              ["Upper limit", "Class width", "Total frequency"], ""),
         ])
-    l, f, cf, h = random.randint(10, 50), random.randint(8, 20), random.randint(10, 40), random.choice([5, 10])
-    median = round(l + ((half - cf) / f) * h, 1)
+    l, f, cf, h = _random_median_class_params(n)
+    median = _median_grouped(l, f, cf, h, n)
     if level == "C":
         opts, ans = _shuffle_options(f"{median}", [f"{l}", f"{l + h}", f"{half}"])
         return _mcq(13, 2, level, f"n = {n}, median class lower l = {l}, f = {f}, cf = {cf}, h = {h}. Median ≈ ?", opts, ans)
@@ -3719,7 +3874,12 @@ def _gen_u13_t2(level: str) -> dict:
              ["Always zero", "Median always double mean", "Unrelated"], ""),
         ])
     opts, ans = _shuffle_options(f"{f}", [f"{cf}", f"{l}", f"{h}"])
-    return _mcq(13, 2, level, f"Median = {median}, known l, cf, h. Frequency f of median class ≈ ?", opts, ans)
+    return _mcq(
+        13, 2, level,
+        f"n = {n}, median class lower l = {l}, cf = {cf}, h = {h}, median ≈ {median}. "
+        f"Frequency f of median class ≈ ?",
+        opts, ans,
+    )
 
 
 def _gen_u13_t3(level: str) -> dict:
@@ -3737,8 +3897,8 @@ def _gen_u13_t3(level: str) -> dict:
             ("In mode formula, f1 is:", "Frequency of modal class",
              ["Cumulative frequency", "Class width", "Total n"], ""),
         ])
-    l, f1, f0, f2, h = random.randint(20, 50), random.randint(10, 20), random.randint(5, 15), random.randint(4, 12), random.choice([5, 10])
-    mode = round(l + ((f1 - f0) / (2 * f1 - f0 - f2)) * h, 1)
+    l, f1, f0, f2, h = _random_modal_class_params()
+    mode = _mode_grouped(l, f1, f0, f2, h)
     if level == "C":
         opts, ans = _shuffle_options(f"{mode}", [f"{l}", f"{l + h}", f"{f1}"])
         return _mcq(13, 3, level, f"Modal class l = {l}, f1 = {f1}, f0 = {f0}, f2 = {f2}, h = {h}. Mode ≈ ?", opts, ans)
@@ -3792,6 +3952,16 @@ def _gen_u13_t4(level: str) -> dict:
 
 # ── Unit 14 generators ──
 
+_CARD_RANKS = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
+_CARD_SUITS = ["hearts", "clubs", "diamonds", "spades"]
+
+
+def _random_valid_probability() -> Fraction:
+    den = random.choice([6, 8, 10, 12, 13, 20])
+    num = random.randint(1, den)
+    return Fraction(num, den)
+
+
 def _gen_u14_t1(level: str) -> dict:
     total = random.choice([6, 10, 12, 20, 26, 36, 52])
     fav = random.randint(1, total - 1)
@@ -3824,9 +3994,7 @@ def _gen_u14_t1(level: str) -> dict:
 
 
 def _gen_u14_t2(level: str) -> dict:
-    num = random.randint(1, 11)
-    den = random.choice([6, 8, 10, 12, 13, 20])
-    p = Fraction(num, den)
+    p = _random_valid_probability()
     comp = Fraction(1) - p
     if level == "A":
         return _variant_mcq(14, 2, level, [
@@ -3862,12 +4030,35 @@ def _gen_u14_t3(level: str) -> dict:
         target_sum = random.randint(2, 12)
         ways = sum(1 for i in range(1, 7) for j in range(1, 7) if i + j == target_sum)
         p = Fraction(ways, 36)
-        opts, ans = _shuffle_options(str(p), [str(Fraction(1, 6)), str(Fraction(1, 36)), str(Fraction(ways + 1, 36))])
+        wrong_pool = [
+            Fraction(1, 6),
+            Fraction(1, 36),
+            Fraction(max(1, ways - 1), 36),
+            Fraction(min(35, ways + 1), 36),
+            Fraction(ways, 35),
+        ]
+        wrong: list[str] = []
+        for cand in wrong_pool:
+            s = str(cand)
+            if s != str(p) and s not in wrong:
+                wrong.append(s)
+        while len(wrong) < 3:
+            extra = str(Fraction(min(35, ways + len(wrong) + 2), 36))
+            if extra not in wrong and extra != str(p):
+                wrong.append(extra)
+            else:
+                wrong.append(str(Fraction(len(wrong) + 2, 36)))
+        opts, ans = _shuffle_options(str(p), wrong[:3])
         return _mcq(14, 3, level, f"Two dice: P(sum = {target_sum}) = ?", opts, ans)
     if level == "C":
-        suits = random.choice(["heart", "spade", "diamond", "club"])
+        rank = random.choice(_CARD_RANKS)
+        suit = random.choice(_CARD_SUITS)
         opts, ans = _shuffle_options("1/52", ["1/13", "1/4", "4/52"])
-        return _mcq(14, 3, level, f"One card from deck: P(specific {suits} card) = ?", opts, ans)
+        return _mcq(
+            14, 3, level,
+            f"One card from a well-shuffled deck: P(drawing the {rank} of {suit}) = ?",
+            opts, ans,
+        )
     if level == "D":
         ranks = ["king", "queen", "jack", "ace"]
         rank = random.choice(ranks)

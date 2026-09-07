@@ -385,10 +385,10 @@
         "id": "u14_t4_A_783ef6d5",
         "question": "Bag: 6 red, 6 blue balls. P(red) = ?",
         "options": [
-          "0",
-          "6/12",
           "1/2",
-          "6/12 (alt)"
+          "6/12",
+          "0",
+          "7/12"
         ],
         "answer": 1,
         "explanation": "",
@@ -556,12 +556,12 @@
         "id": "u14_t4_A_b1b079b6",
         "question": "Bag: 11 red, 11 blue balls. P(red) = ?",
         "options": [
-          "0",
           "1/2",
-          "11/22 (alt)",
-          "11/22"
+          "12/22",
+          "11/22",
+          "0"
         ],
-        "answer": 3,
+        "answer": 2,
         "explanation": "",
         "topic": 4,
         "level": "A",
@@ -1229,12 +1229,12 @@
         "id": "u14_t4_E_95956c38",
         "question": "Bag 6 red, 6 blue. P(blue) = ?",
         "options": [
-          "6/12",
           "1",
-          "0",
-          "6/12 (alt)"
+          "6/12",
+          "7/12",
+          "0"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 4,
         "level": "E",
@@ -1552,12 +1552,12 @@
         "id": "u14_t4_E_68863a5a",
         "question": "Bag 5 red, 5 blue. P(blue) = ?",
         "options": [
-          "5/10 (alt)",
           "1",
           "5/10",
-          "0"
+          "0",
+          "6/10"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 4,
         "level": "E",

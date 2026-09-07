@@ -648,6 +648,44 @@
         "category_label": "Formulas · Level B",
         "source": "template",
         "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_B_ecf4e2b7",
+        "question": "Cylinder: r=6 cm, h=10 cm. CSA ≈ ?",
+        "options": [
+          "753.98",
+          "376.99",
+          "188.5",
+          "565.49"
+        ],
+        "answer": 1,
+        "explanation": "CSA = 2πrh = 2×3.14×6×10.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "chapter_llm",
+        "chapter_ref": "12.2 Surface Area of a Combination of Solids"
+      },
+      {
+        "id": "u12_t1_B_b629e45a",
+        "question": "Cylinder: r=8 cm, h=12 cm. CSA ≈ ?",
+        "options": [
+          "904.32",
+          "301.44",
+          "1205.76",
+          "602.88"
+        ],
+        "answer": 3,
+        "explanation": "CSA = 2πrh = 2×3.14×8×12.",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 12,
+        "category": "u12_t1_B",
+        "category_label": "Formulas · Level B",
+        "source": "chapter_llm",
+        "chapter_ref": "12.2 Surface Area of a Combination of Solids"
       }
     ],
     "C": [
@@ -1220,6 +1258,44 @@
         "category_label": "Formulas · Level C",
         "source": "template",
         "chapter_ref": "NCERT Ch 12 Surface Areas and Volumes"
+      },
+      {
+        "id": "u12_t1_C_b9c452a5",
+        "question": "Cone: r=12 cm, h=16 cm. Volume ≈ ?",
+        "options": [
+          "4825.49",
+          "1206.37",
+          "2412.74",
+          "7238.23"
+        ],
+        "answer": 2,
+        "explanation": "Volume = (1/3)πr²h = (1/3)×3.14×144×16.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "chapter_llm",
+        "chapter_ref": "12.2 Surface Area of a Combination of Solids"
+      },
+      {
+        "id": "u12_t1_C_c9abc670",
+        "question": "Cone: r=5 cm, h=12 cm. Volume ≈ ?",
+        "options": [
+          "314.16",
+          "628.32",
+          "471.24",
+          "157.08"
+        ],
+        "answer": 0,
+        "explanation": "Volume = (1/3)πr²h = (1/3)×3.14×25×12.",
+        "topic": 1,
+        "level": "C",
+        "unit_id": 12,
+        "category": "u12_t1_C",
+        "category_label": "Formulas · Level C",
+        "source": "chapter_llm",
+        "chapter_ref": "12.2 Surface Area of a Combination of Solids"
       }
     ],
     "D": [
