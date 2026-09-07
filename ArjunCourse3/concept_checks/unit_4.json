@@ -638,5 +638,325 @@
     "explanation": "Step 1: Check the rate between each pair: from hour 0 to 3 the change is 1.5/3 = 0.5, from hour 3 to 4 the change is 0.5/1 = 0.5, from hour 4 to 6 the change is 1/2 = 0.5. Step 2: The rate is constant so the pattern is linear even though the hour gaps are uneven.",
     "source": "concept_check",
     "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_381445_586",
+    "category": "function_basics",
+    "level": "D",
+    "question": "At the fair, Maya buys tickets where the cost function is 4 dollars per ticket. The input is the number of tickets. Is this function discrete or continuous?",
+    "options": [
+      "Discrete because only whole numbers of tickets can be bought",
+      "Discrete because time passes continuously",
+      "Continuous because any real number works as input",
+      "Continuous because the cost can be any decimal amount"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Identify that inputs must be whole tickets since you cannot buy a fraction of a ticket. Step 2: This means the function has gaps and is discrete, matching the rule that each whole-number input gives exactly one output cost.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_381447_405",
+    "category": "function_basics",
+    "level": "B",
+    "question": "Look at this table of values: x values are 1, 2, 5, 5 and y values are 4, 4, 4, 8. Does this table represent a function?",
+    "options": [
+      "No, because x values are all different",
+      "Yes, because y values repeat",
+      "Yes, because most inputs have one output",
+      "No, because x=5 has two different outputs"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Check each input x to see how many outputs y it pairs with. Step 2: x=5 pairs with both y=4 and y=8, so the table does not show a function since each input must have exactly one output.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_381448_320",
+    "category": "function_basics",
+    "level": "C",
+    "question": "Evaluate the function y = −6x + 2 when x = 5.",
+    "options": [
+      "32",
+      "−32",
+      "−28",
+      "−30"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Substitute 5 for x to get y = −6(5) + 2. Step 2: Multiply to get −30 then add 2, which equals −28, giving exactly one output for the input.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_function_basics_381449_447",
+    "category": "function_basics",
+    "level": "D",
+    "question": "In a hot-dog eating contest, the time in minutes to finish 10 hot dogs can be any value greater than zero. Is this function discrete or continuous?",
+    "options": [
+      "Continuous because the number of hot dogs changes",
+      "Discrete because only 10 hot dogs are allowed",
+      "Continuous because time can be any real number",
+      "Discrete because you finish whole hot dogs"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The input is time which can include fractions of a minute such as 4.5 minutes. Step 2: This means every possible real-number input gives exactly one output time, so the function is continuous.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_389030_105",
+    "category": "comparing_functions",
+    "level": "D",
+    "question": "Bike rental Shop A uses C = 4h + 12 and Shop B uses C = 3h + 18. Which shop has the greater hourly rate?",
+    "options": [
+      "Cannot tell from the equations",
+      "Both have the same rate",
+      "Shop B",
+      "Shop A"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The hourly rate is the slope (coefficient of h) in each equation. Step 2: Shop A has slope 4 and Shop B has slope 3, so Shop A charges more per hour.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_389032_621",
+    "category": "comparing_functions",
+    "level": "B",
+    "question": "Pizza Shop A charges C = 2s + 10 and Shop B charges C = 3s + 7. After ordering 8 slices, which shop costs less?",
+    "options": [
+      "Cannot tell without more information",
+      "Shop B costs less",
+      "Shop A costs less",
+      "Both cost the same"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Calculate total for Shop A: 2×8 + 10 = 26. Step 2: Calculate total for Shop B: 3×8 + 7 = 31. Shop A costs less.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_389033_830",
+    "category": "comparing_functions",
+    "level": "C",
+    "question": "A graph shows Maya walking to school then running home. The line for the return trip must be steeper because running is faster than walking. What does the steeper slope tell you?",
+    "options": [
+      "She started later on the way home",
+      "The total distance is longer",
+      "Her speed is greater on the return trip",
+      "She stopped for a snack"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Slope on a distance-time graph represents speed. Step 2: A steeper line means a greater rate of change, so Maya runs faster going home.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_comparing_functions_389033_909",
+    "category": "comparing_functions",
+    "level": "D",
+    "question": "Game rental Shop A uses C = 5g + 8 and Shop B uses C = 7g + 4. Which shop has the greater rate per game?",
+    "options": [
+      "Cannot tell from the equations",
+      "Shop A",
+      "Shop B",
+      "Both have the same rate"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The rate per game is the slope (coefficient of g). Step 2: Shop A has slope 5 and Shop B has slope 7, so Shop B has the greater rate.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_401648_222",
+    "category": "constructing",
+    "level": "D",
+    "question": "Giants baseball tickets cost $200 each plus a one-time $20 processing fee. Which function gives the total cost y for buying x tickets?",
+    "options": [
+      "y = 20x + 200",
+      "y = 220x",
+      "y = 200x",
+      "y = 200x + 20"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The $200 is the constant rate for each ticket so the slope is 200. Step 2: The $20 fee is paid only once so it is the starting value or y-intercept, giving y = 200x + 20.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_401648_242",
+    "category": "constructing",
+    "level": "B",
+    "question": "Maya watches exactly 4 movies every year. Which equation shows the total number of movies y after x years?",
+    "options": [
+      "y = x + 4",
+      "y = 4x",
+      "y = 4x + 1",
+      "y = 4"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: The rate is 4 movies each year so the slope is 4. Step 2: There is no starting number of movies before year zero so the y-intercept is 0, giving y = 4x.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_401650_363",
+    "category": "constructing",
+    "level": "C",
+    "question": "A table shows x values of -4, 10, and 28 with matching y values of 8, 15, and 24. Which function matches the table?",
+    "options": [
+      "y = (1/2)x + 8",
+      "y = x + 12",
+      "y = (1/2)x + 10",
+      "y = 2x + 10"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The change from x = -4 to x = 10 is 14 and the change in y is 7, so the slope is 7 divided by 14 which equals 1/2. Step 2: When x = -4, y must equal 8, so 8 = (1/2)(-4) + b gives b = 10, producing y = (1/2)x + 10.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_constructing_401651_236",
+    "category": "constructing",
+    "level": "D",
+    "question": "Buying Giants tickets costs $200 per ticket plus one $20 fee no matter how many tickets are bought. Which function gives total cost y when x tickets are purchased?",
+    "options": [
+      "y = 200x",
+      "y = 200x + 20",
+      "y = 220x + 20",
+      "y = 20x + 200"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Each ticket adds $200 so the rate of change or slope is 200. Step 2: The single $20 fee is paid once, making it the starting value or y-intercept, so the function is y = 200x + 20.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_414964_120",
+    "category": "linear_functions",
+    "level": "D",
+    "question": "A pineapple packing machine starts with 12 pineapples at 0 minutes, 16 at 1 minute, and 20 at 2 minutes. Which equation gives the total pineapples y after x minutes?",
+    "options": [
+      "y = 12x + 4",
+      "y = 4x + 12",
+      "y = 4x + 16",
+      "y = 20x + 12"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: The change from 12 to 16 is +4 and from 16 to 20 is +4, so the rate is 4. Step 2: It starts at 12 when x = 0, giving the equation y = 4x + 12.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_414966_520",
+    "category": "linear_functions",
+    "level": "B",
+    "question": "A bathtub starts with 220 liters and drains 11 liters each minute. Which equation shows the liters y left after x minutes?",
+    "options": [
+      "y = 220x - 11",
+      "y = -11x + 198",
+      "y = 11x + 220",
+      "y = -11x + 220"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The water drops by 11 liters per minute, so the rate is -11. Step 2: It begins at 220 liters when x = 0, giving y = -11x + 220.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_414967_929",
+    "category": "linear_functions",
+    "level": "C",
+    "question": "The equation y = 4x + 12 models pineapples packed over x minutes. What do the slope and y-intercept represent?",
+    "options": [
+      "Slope is 4 pineapples per minute and intercept is 12 pineapples to start",
+      "Slope is 12 pineapples to start and intercept is 4 pineapples per minute",
+      "Slope is 4 minutes per pineapple and intercept is 12 total",
+      "Slope is 16 pineapples and intercept is 20 minutes"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: The slope is the constant change of +4 pineapples each minute. Step 2: The y-intercept is the starting amount of 12 pineapples when time is zero.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_functions_414968_560",
+    "category": "linear_functions",
+    "level": "D",
+    "question": "A machine packs pineapples starting at 12 when time is zero, then 16 after one minute and 20 after two minutes. What equation shows y pineapples after x minutes?",
+    "options": [
+      "y = 4x + 20",
+      "y = 12x + 4",
+      "y = 8x + 12",
+      "y = 4x + 12"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Subtract to find the rate: 16 - 12 = 4 and 20 - 16 = 4, confirming a constant rate of 4. Step 2: The amount at x = 0 is 12, so the equation is y = 4x + 12.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_427370_872",
+    "category": "linear_nonlinear",
+    "level": "D",
+    "question": "The table shows x-values 10, 11, 12, 13 and y-values 100, 121, 144, 169. Is the relationship linear or nonlinear?",
+    "options": [
+      "Nonlinear, because the rate of change is not constant",
+      "Nonlinear, because the y-values are all perfect squares",
+      "Linear, because y gets larger as x gets larger",
+      "Linear, because each x has exactly one y"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Find the changes in y: 121-100=21, 144-121=23, 169-144=25. Step 2: The differences increase by 2 each time, so the rate of change is not constant and the relationship is nonlinear.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_435870_430",
+    "category": "linear_nonlinear",
+    "level": "B",
+    "question": "A hiker records time and distance in this table: time (hours) 0, 1, 3, 4 and distance (miles) 0, 1/2, 3/2, 2. Is the relationship linear or nonlinear?",
+    "options": [
+      "Nonlinear, because the points would not lie on a straight line",
+      "Linear, because each y-value increases by exactly 1/2",
+      "Nonlinear, because the time values are not spaced evenly",
+      "Linear, because the rate of change is constantly 1/2 even with uneven time gaps"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Find the rate of change between each pair of points: (1/2 - 0)/(1 - 0) = 1/2, (3/2 - 1/2)/(3 - 1) = 1/2, (2 - 3/2)/(4 - 3) = 1/2. Step 2: All rates equal 1/2, so the function is linear despite the uneven x-gaps.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_441571_678",
+    "category": "linear_nonlinear",
+    "level": "C",
+    "question": "Mia graphs the height of a ball thrown upward over time. The points form a curve that starts at (0,0), rises, then falls. She says the relationship is linear because the height values go up at first. Which statement explains Mia's error?",
+    "options": [
+      "The ball's path is linear because it reaches a maximum height before falling.",
+      "The graph must be linear since any upward trend is a straight line.",
+      "The graph is nonlinear because the rate of change is not constant; it increases then decreases.",
+      "A curve can still be linear if the starting point is (0,0)."
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Linear functions show a constant rate of change and form a straight line. Step 2: Mia's graph curves, so the rate changes (speed slows then speeds up), making it nonlinear.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u4_linear_nonlinear_450917_563",
+    "category": "linear_nonlinear",
+    "level": "D",
+    "question": "A table shows x values 2, 3, 4, 5, 6 paired with y values 4, 9, 16, 25, 36. Which statement correctly describes the pattern?",
+    "options": [
+      "Linear, because the y-values increase by the same amount each time.",
+      "Nonlinear, because the y-values are all even numbers.",
+      "Linear, because each y is a perfect square.",
+      "Nonlinear, because the differences between y-values are 5, 7, 9, 11 and keep growing."
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Subtract consecutive y-values to find the rate of change: 9-4=5, 16-9=7, 25-16=9, 36-25=11. Step 2: The differences 5, 7, 9, 11 are not constant, so the pattern is nonlinear.",
+    "source": "concept_check",
+    "origin": "llm"
   }
 ]

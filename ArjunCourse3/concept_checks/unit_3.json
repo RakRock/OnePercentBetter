@@ -766,5 +766,373 @@
     "explanation": "Step 1: Use V = (1/3)πr²h and solve (1/3)πr²×4 = 36π. Step 2: (4/3)r² = 36 so r² = 9 and r = 3 cm.",
     "source": "concept_check",
     "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_283931_876",
+    "category": "angles",
+    "level": "D",
+    "question": "A quadrilateral has three angles measuring 85°, 95°, and 110°. An exterior angle at the fourth vertex measures 115°. What is the measure of the interior angle at that vertex?",
+    "options": [
+      "115°",
+      "70°",
+      "245°",
+      "65°"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The sum of interior angles in a quadrilateral is 360°. Step 2: Add the three given angles: 85 + 95 + 110 = 290. Step 3: Subtract from 360 to find the fourth interior angle: 360 - 290 = 70. The exterior angle confirms it is 180 - 70 = 110, but the question asks for the interior.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_283932_559",
+    "category": "angles",
+    "level": "B",
+    "question": "Which pair of angles formed by two parallel lines cut by a transversal are always congruent?",
+    "options": [
+      "alternate exterior angles that are on the same side",
+      "vertical angles",
+      "consecutive exterior angles",
+      "same-side interior angles"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Vertical angles are formed by intersecting lines and are always congruent. Step 2: Alternate exterior and corresponding angles are also congruent when lines are parallel, but among the choices, vertical angles fit the always-congruent description without needing parallel lines.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_283933_261",
+    "category": "angles",
+    "level": "C",
+    "question": "Two parallel lines are cut by a transversal. One same-side interior angle measures 3x + 10 and the other measures 2x + 50. What is the value of x?",
+    "options": [
+      "24",
+      "42",
+      "36",
+      "30"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Same-side interior angles are supplementary, so they add to 180°. Step 2: Set up the equation: 3x + 10 + 2x + 50 = 180. Step 3: Combine like terms to get 5x + 60 = 180. Step 4: Subtract 60 and divide by 5 to solve x = 24.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_angles_297911_535",
+    "category": "angles",
+    "level": "D",
+    "question": "A quadrilateral-shaped sign has three interior angles measuring 85°, 95°, and 110°. What is the measure of the exterior angle at the fourth vertex?",
+    "options": [
+      "115°",
+      "290°",
+      "110°",
+      "70°"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The sum of the interior angles of any quadrilateral is 360°, so the fourth interior angle is 360° − 85° − 95° − 110° = 70°. Step 2: An exterior angle and its adjacent interior angle form a straight line, so the exterior angle is 180° − 70° = 110°.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_308133_319",
+    "category": "transformations",
+    "level": "D",
+    "question": "A point starts at (4,5). After a dilation with scale factor 3 centered at the origin, where does it land?",
+    "options": [
+      "(7,8)",
+      "(4/3,5/3)",
+      "(12,15)",
+      "(1,2)"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Dilation multiplies both coordinates by the scale factor. Step 2: 4×3=12 and 5×3=15, so the image is (12,15).",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_308134_379",
+    "category": "transformations",
+    "level": "B",
+    "question": "Start with point (1,2). Translate 3 units right, then reflect over the x-axis. What are the final coordinates?",
+    "options": [
+      "(-2,4)",
+      "(1,-5)",
+      "(4,-2)",
+      "(4,2)"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Add 3 to the x-coordinate to get (4,2). Step 2: Reflect over x-axis by negating the y-coordinate to reach (4,-2).",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_308135_820",
+    "category": "transformations",
+    "level": "C",
+    "question": "Reflect the point (3,1) over the x-axis and then over the y-axis. Which other transformation gives the same result?",
+    "options": [
+      "Dilation by scale factor 1",
+      "180 degree rotation around the origin",
+      "90 degree rotation around the origin",
+      "Translation by (-3,-1)"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: x-axis reflection gives (3,-1). Step 2: y-axis reflection gives (-3,1). Step 3: This matches a 180 degree rotation around (0,0).",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_transformations_308136_945",
+    "category": "transformations",
+    "level": "D",
+    "question": "Which of these transformations changes the size of a figure and is therefore not rigid?",
+    "options": [
+      "Reflection over the line y=x",
+      "Rotation 180 degrees around (0,0)",
+      "Dilation with scale factor 1/2",
+      "Translation 5 units left"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Rigid transformations keep all distances the same. Step 2: A dilation multiplies every distance by the scale factor, so it is not rigid.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_317229_765",
+    "category": "similarity",
+    "level": "D",
+    "question": "Triangles JKL and MNO are similar. In triangle JKL, angle J is 48° and angle K is 62°. What is the measure of the angle in triangle MNO that corresponds to angle L?",
+    "options": [
+      "62°",
+      "70°",
+      "48°",
+      "110°"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Find angle L using the triangle sum: 180° − 48° − 62° = 70°. Step 2: Similar triangles have matching angles, so the corresponding angle in MNO is also 70°.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_317230_862",
+    "category": "similarity",
+    "level": "B",
+    "question": "Two similar rectangles have corresponding sides of 6 cm and 15 cm. The shorter side of the smaller rectangle is 8 cm. What is the length of its longer side?",
+    "options": [
+      "30 cm",
+      "9 cm",
+      "12 cm",
+      "20 cm"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Scale factor is 15 ÷ 6 = 2.5. Step 2: Multiply the 8 cm side by the scale factor: 8 × 2.5 = 20 cm.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_317231_623",
+    "category": "similarity",
+    "level": "C",
+    "question": "Similar triangles have a scale factor of 3. The smaller triangle has a perimeter of 24 cm and area of 30 cm². What is the perimeter and area of the larger triangle?",
+    "options": [
+      "27 cm and 90 cm²",
+      "72 cm and 270 cm²",
+      "72 cm and 90 cm²",
+      "27 cm and 270 cm²"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Perimeter scales by k, so 24 × 3 = 72 cm. Step 2: Area scales by k², so 30 × 9 = 270 cm².",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_similarity_317232_171",
+    "category": "similarity",
+    "level": "D",
+    "question": "Triangles RST and UVW are similar. Angle R is 55° and angle S is 75°. What is the measure of the angle in triangle UVW that corresponds to angle T?",
+    "options": [
+      "130°",
+      "55°",
+      "50°",
+      "75°"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Find angle T using the triangle sum: 180° − 55° − 75° = 50°. Step 2: Corresponding angles in similar triangles are equal, so the matching angle is 50°.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_328810_642",
+    "category": "pythagorean",
+    "level": "D",
+    "question": "A rectangular prism measures 2 ft long, 3 ft wide, and √5 ft tall. What is the exact length of the space diagonal from one corner to the opposite corner?",
+    "options": [
+      "√20",
+      "√14",
+      "√18",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Apply the 3D Pythagorean theorem: space diagonal d satisfies d² = l² + w² + h². Step 2: d² = 2² + 3² + (√5)² = 4 + 9 + 5 = 18, so d = √18.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_328811_368",
+    "category": "pythagorean",
+    "level": "B",
+    "question": "A right triangle has legs √2 and 4. What is the hypotenuse?",
+    "options": [
+      "4",
+      "√18",
+      "√20",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Use a² + b² = c² with a = √2 and b = 4. Step 2: c² = (√2)² + 4² = 2 + 16 = 18, so c = √18.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_328812_549",
+    "category": "pythagorean",
+    "level": "C",
+    "question": "What is the distance between points (1, 2) and (4, 6) on the coordinate plane?",
+    "options": [
+      "√29",
+      "7",
+      "√13",
+      "5"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Subtract coordinates to get differences: Δx = 3, Δy = 4. Step 2: Distance = √(3² + 4²) = √(9 + 16) = √25 = 5.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_pythagorean_328812_859",
+    "category": "pythagorean",
+    "level": "D",
+    "question": "A statue is 8 feet tall. Its shadow is 15 feet long. What is the exact distance from the top of the statue to the end of the shadow?",
+    "options": [
+      "√289",
+      "17",
+      "√161",
+      "23"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Form a right triangle with legs 8 and 15. Step 2: Hypotenuse c = √(8² + 15²) = √(64 + 225) = √289 = 17.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_340749_778",
+    "category": "surface_area",
+    "level": "B",
+    "question": "A triangular prism has right-triangular bases with legs of length 5 cm and 12 cm. The prism is 6 cm tall. What is the total surface area in square centimeters?",
+    "options": [
+      "240",
+      "210",
+      "180",
+      "120"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Find the area of one triangular base as (1/2) × 5 × 12 = 30 cm², so two bases total 60 cm². Step 2: The three rectangular lateral faces have areas 5 × 6 = 30, 12 × 6 = 72, and 13 × 6 = 78, which sum to 180 cm². Step 3: Add them for total surface area 60 + 180 = 240 cm².",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_349078_983",
+    "category": "surface_area",
+    "level": "C",
+    "question": "A rectangular snack box is 6 inches long, 4 inches wide, and 5 inches tall. How many square inches of cardboard are needed to make the entire outside of the box?",
+    "options": [
+      "120",
+      "88",
+      "148",
+      "74"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Find the area of each pair of faces using 6×4=24, 6×5=30, and 4×5=20. Step 2: Add the three areas and multiply by 2 to get both sides: 2(24+30+20)=148.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_surface_area_357481_346",
+    "category": "surface_area",
+    "level": "D",
+    "question": "A triangular prism tent has base sides of 9 cm, 12 cm, and 15 cm. The tent is 10 cm long. What is the lateral surface area?",
+    "options": [
+      "720",
+      "360",
+      "180",
+      "240"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Add the base sides to find the perimeter: 9 + 12 + 15 = 36 cm. Step 2: Multiply the perimeter by the length for lateral surface area: 36 × 10 = 360 cm².",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_366902_773",
+    "category": "volume",
+    "level": "D",
+    "question": "A triangular prism has a right-triangle base with legs 5 cm and 12 cm. The prism length is 9 cm. What is the volume in cubic centimeters?",
+    "options": [
+      "324",
+      "135",
+      "270",
+      "540"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Find base area B = (1/2) × 5 × 12 = 30. Step 2: Multiply by length: V = 30 × 9 = 270.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_366903_879",
+    "category": "volume",
+    "level": "B",
+    "question": "A cylinder has radius 4 cm and volume 64π cubic centimeters. What is its height in centimeters?",
+    "options": [
+      "2",
+      "16",
+      "8",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Use V = πr²h. Step 2: 64π = π × 16 × h, so h = 4.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_366903_550",
+    "category": "volume",
+    "level": "C",
+    "question": "A solid is a cylinder of radius 3 cm and height 8 cm with a cone of the same radius and height 4 cm on top. What is the total volume in terms of π?",
+    "options": [
+      "60π",
+      "84π",
+      "96π",
+      "72π"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Cylinder volume = π × 9 × 8 = 72π. Step 2: Cone volume = (1/3) × 72π / 2 wait no, (1/3)πr²h = (1/3)π9×4=12π. Total 84π.",
+    "source": "concept_check",
+    "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u3_volume_366904_444",
+    "category": "volume",
+    "level": "D",
+    "question": "A triangular prism has a base that is an isosceles right triangle with legs 8 cm each. The prism length is 15 cm. What is the volume in cubic centimeters?",
+    "options": [
+      "480",
+      "384",
+      "240",
+      "960"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Find base area B = (1/2) × 8 × 8 = 32. Step 2: Multiply by length: V = 32 × 15 = 480.",
+    "source": "concept_check",
+    "origin": "llm"
   }
 ]
