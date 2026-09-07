@@ -403,7 +403,7 @@
     "id": "cc_ai_u3_angles_296885_786",
     "category": "angles",
     "level": "C",
-    "question": "Parallel lines l and m are cut by a transversal. One same-side interior angle is 4x and the other is 3x + 20. What is the value of x?",
+    "question": "Parallel lines l and m are cut by a transversal. One same-side interior angle is 2x and the other is 3x + 20. What is the value of x?",
     "options": [
       "40",
       "32",
@@ -411,7 +411,7 @@
       "22"
     ],
     "answer": 1,
-    "explanation": "Step 1: Same-side interior angles are supplementary so they add to 180°. Step 2: 4x + 3x + 20 = 180 → 7x + 20 = 180 → 7x = 160 → x = 32.",
+    "explanation": "Step 1: Same-side interior angles are supplementary, so they add to 180°. Step 2: 2x + (3x + 20) = 180 → 5x + 20 = 180 → 5x = 160 → x = 32.",
     "source": "concept_check",
     "origin": "llm"
   },
@@ -727,11 +727,11 @@
     "options": [
       "256π cm³",
       "208π cm³",
-      "224π cm³",
-      "176π cm³"
+      "192π cm³",
+      "224π cm³"
     ],
-    "answer": 1,
-    "explanation": "Step 1: Find cylinder volume = πr²h = 160π and cone volume = (1/3)πr²h = 32π. Step 2: Add them: 160π + 32π = 192π? Wait, correction per calc 160π + 48π=208π.",
+    "answer": 2,
+    "explanation": "Step 1: Cylinder volume = πr²h = π(4²)(10) = 160π cm³. Step 2: Cone volume = (1/3)πr²h = (1/3)π(16)(6) = 32π cm³. Step 3: Total = 160π + 32π = 192π cm³.",
     "source": "concept_check",
     "origin": "llm"
   },
@@ -755,7 +755,7 @@
     "id": "cc_ai_u3_volume_355752_868",
     "category": "volume",
     "level": "B",
-    "question": "An ice cream cone has volume 36π cm³ and height 4 cm. What is the radius of the cone?",
+    "question": "An ice cream cone has volume 12π cm³ and height 4 cm. What is the radius of the cone?",
     "options": [
       "9 cm",
       "6 cm",
@@ -763,7 +763,7 @@
       "12 cm"
     ],
     "answer": 2,
-    "explanation": "Step 1: Use V = (1/3)πr²h and solve (1/3)πr²×4 = 36π. Step 2: (4/3)r² = 36 so r² = 9 and r = 3 cm.",
+    "explanation": "Step 1: Use V = (1/3)πr²h and set (1/3)πr²(4) = 12π. Step 2: (4/3)r² = 12, so r² = 9 and r = 3 cm.",
     "source": "concept_check",
     "origin": "llm"
   },
@@ -787,15 +787,15 @@
     "id": "cc_ai_u3_angles_283932_559",
     "category": "angles",
     "level": "B",
-    "question": "Which pair of angles formed by two parallel lines cut by a transversal are always congruent?",
+    "question": "When two parallel lines are cut by a transversal, which pair of angles are congruent?",
     "options": [
-      "alternate exterior angles that are on the same side",
+      "corresponding angles",
+      "same-side interior angles",
       "vertical angles",
-      "consecutive exterior angles",
-      "same-side interior angles"
+      "consecutive exterior angles"
     ],
-    "answer": 1,
-    "explanation": "Step 1: Vertical angles are formed by intersecting lines and are always congruent. Step 2: Alternate exterior and corresponding angles are also congruent when lines are parallel, but among the choices, vertical angles fit the always-congruent description without needing parallel lines.",
+    "answer": 0,
+    "explanation": "Step 1: When parallel lines are cut by a transversal, corresponding angles are congruent. Step 2: Same-side interior angles and consecutive exterior angles are supplementary (sum to 180°), not congruent. Vertical angles are always congruent, but they are not the standard transversal pair this question is asking about.",
     "source": "concept_check",
     "origin": "llm"
   },
@@ -915,7 +915,7 @@
     "id": "cc_ai_u3_similarity_317230_862",
     "category": "similarity",
     "level": "B",
-    "question": "Two similar rectangles have corresponding sides of 6 cm and 15 cm. The shorter side of the smaller rectangle is 8 cm. What is the length of its longer side?",
+    "question": "Two similar rectangles have a pair of corresponding sides measuring 6 cm on the smaller rectangle and 15 cm on the larger rectangle. Another side of the smaller rectangle is 8 cm. What is the length of the matching side on the larger rectangle?",
     "options": [
       "30 cm",
       "9 cm",
@@ -923,7 +923,7 @@
       "20 cm"
     ],
     "answer": 3,
-    "explanation": "Step 1: Scale factor is 15 ÷ 6 = 2.5. Step 2: Multiply the 8 cm side by the scale factor: 8 × 2.5 = 20 cm.",
+    "explanation": "Step 1: Scale factor from smaller to larger is 15 ÷ 6 = 2.5. Step 2: Multiply the 8 cm side on the smaller rectangle: 8 × 2.5 = 20 cm on the larger rectangle.",
     "source": "concept_check",
     "origin": "llm"
   },
