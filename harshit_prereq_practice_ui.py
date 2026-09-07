@@ -438,7 +438,7 @@ def render_practice():
     )
 
     if not is_done:
-        q = hmd.fix_quadrant_question(questions[current])
+        q = hmd.fix_parallelogram_midpoint_question(hmd.fix_quadrant_question(questions[current]))
         src = q.get("source", "template")
         src_label = {
             "chapter_pdf": "NCERT chapter bank",

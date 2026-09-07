@@ -8,6 +8,7 @@ import random
 from pathlib import Path
 
 import arjun_course3_levels as c3lvl
+import arjun_course3_answers as c3ans
 
 from arjun_edgenuity_course3_unit2_practice import (
     UNIT2_CATEGORIES,
@@ -979,6 +980,9 @@ CATEGORIES_BY_UNIT[6] = UNIT6_CATEGORIES
 CATEGORY_ACTIVITY_BY_UNIT[6] = UNIT6_CATEGORY_ACTIVITY
 REVISION_TIPS_BY_UNIT[6] = UNIT6_REVISION_TIPS
 
+for _uid in QUESTION_BANK_BY_UNIT:
+    QUESTION_BANK_BY_UNIT[_uid] = c3ans.finalize_questions(QUESTION_BANK_BY_UNIT[_uid])
+
 
 def _gen_quadrant_question() -> dict:
     x, y = random.choice([(3, 2), (-3, 5), (-2, -4), (2, -4), (-1, 6), (4, -3)])
@@ -1158,7 +1162,7 @@ def _pick_unique(
                 break
             if not _question_available(q, used_ids, used_images, avoid_ids, allow_recent=allow_recent):
                 continue
-            picked.append(dict(q))
+            picked.append(c3ans.finalize_question(dict(q)))
             used_ids.add(q["id"])
             img = q.get("image")
             if img:
@@ -1183,7 +1187,7 @@ def _top_up(
                 break
             if not _question_available(q, used_ids, used_images, avoid_ids, allow_recent=allow_recent):
                 continue
-            selected.append(dict(q))
+            selected.append(c3ans.finalize_question(dict(q)))
             used_ids.add(q["id"])
             img = q.get("image")
             if img:
@@ -1385,11 +1389,11 @@ def _build_bank_daily_set(
             continue
         if not attempts > 10 and gq["id"] in avoid_ids:
             continue
-        selected.append(gq)
+        selected.append(c3ans.finalize_question(gq))
         used_ids.add(gq["id"])
 
     random.shuffle(selected)
-    return selected[:count]
+    return c3ans.finalize_questions(selected[:count])
 
 
 def build_focus_set(
@@ -1457,7 +1461,7 @@ def _build_focus_bank_set(
     if len(selected) < count:
         _top_up(selected, count, used_ids, used_images, avoid_ids, bank)
     random.shuffle(selected)
-    return selected[:count]
+    return c3ans.finalize_questions(selected[:count])
 
 
 def graph_question_count(questions: list[dict]) -> int:

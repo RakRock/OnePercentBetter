@@ -322,7 +322,7 @@ def _gen_fractions() -> list[dict]:
         )
     )
     # fraction of remainder
-    hidden = Fraction(3, 4) * Fraction(4, 9)
+    hidden = Fraction(7, 8) * Fraction(4, 9)
     out.append(
         _mcq(
             "cc_u1_frac_of_frac",
@@ -332,7 +332,7 @@ def _gen_fractions() -> list[dict]:
                 "Of the vanilla cakes, 4/9 are hidden. What fraction of ALL cakes are vanilla and hidden?"
             ),
             _mixed(hidden),
-            [_mixed(Fraction(4, 9)), _mixed(Fraction(1, 2)), _mixed(Fraction(5, 18))],
+            [_mixed(Fraction(4, 9) * Fraction(1, 8)), _mixed(Fraction(1, 2)), _mixed(Fraction(5, 18))],
             "Step 1: vanilla = 1 − 1/8 = 7/8. Step 2: 7/8 × 4/9 = 7/18.",
             level="D",
         )
@@ -2830,9 +2830,11 @@ def generate_concept_check_question(
     gen = _DYNAMIC_BY_CATEGORY.get(category)
     if not gen:
         return None
+    import arjun_course3_answers as c3ans
+
     q = gen(level)
     q["unit_id"] = unit_id
-    return q
+    return c3ans.finalize_question(q)
 
 
 def pick_or_generate_concept_check(
@@ -2854,21 +2856,9 @@ def pick_or_generate_concept_check(
         return not allowed_levels or lvl in allowed_levels
 
     def _finalize_pick(q: dict) -> dict:
-        out = dict(q)
-        opts = out.get("options")
-        ans = out.get("answer")
-        if isinstance(opts, list) and len(opts) == 4 and isinstance(ans, int) and ans in range(4):
-            try:
-                from numeric_expression_eval import ensure_numeric_answer_key
+        import arjun_course3_answers as c3ans
 
-                out["answer"] = ensure_numeric_answer_key(
-                    str(out.get("question", "")),
-                    [str(o) for o in opts],
-                    ans,
-                )
-            except ValueError:
-                pass
-        return out
+        return c3ans.finalize_question(q)
 
     def _try_pick(allow_recent: bool) -> dict | None:
         candidates = [
@@ -2948,9 +2938,11 @@ def load_full_concept_check_bank(unit_id: int) -> list[dict]:
 
 def extend_bank(base_bank: list[dict], unit_id: int) -> list[dict]:
     """Append concept-check questions (built-in + AI JSON) to a unit bank."""
+    import arjun_course3_answers as c3ans
+
     existing = {q.get("id") for q in base_bank}
     extra = [q for q in load_full_concept_check_bank(unit_id) if q.get("id") not in existing]
-    return list(base_bank) + extra
+    return c3ans.finalize_questions(list(base_bank) + extra)
 
 
 _UNIT_GENERATORS: dict[int, list] = {

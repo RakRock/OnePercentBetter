@@ -60,6 +60,85 @@ def svg_parallelogram(*, show_diagonals: bool = False) -> str:
     return _svg_wrap(parts)
 
 
+# NCERT Ch 8 Example 6 — midpoints P, Q on AB and CD; classify APCQ / DPBQ / PSQR.
+_EX6_BASE = {"A": (70, 190), "B": (290, 190), "C": (330, 90), "D": (110, 90)}
+
+
+def _ex6_midpoints() -> dict[str, tuple[float, float]]:
+    a, b, c, d = _EX6_BASE["A"], _EX6_BASE["B"], _EX6_BASE["C"], _EX6_BASE["D"]
+    p = ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
+    q = ((c[0] + d[0]) / 2, (c[1] + d[1]) / 2)
+    return {"P": p, "Q": q}
+
+
+def _ex6_intersection_s() -> tuple[float, float]:
+    """Intersection of AQ and DP in Example 6 layout."""
+    a, d = _EX6_BASE["A"], _EX6_BASE["D"]
+    p, q = _ex6_midpoints()["P"], _ex6_midpoints()["Q"]
+    return ((a[0] + q[0]) / 2, (a[1] + q[1]) / 2)
+
+
+def svg_parallelogram_midpoints(
+    *,
+    highlight: str = "APCQ",
+    show_construction: bool = True,
+) -> str:
+    """Parallelogram ABCD with midpoints P, Q — shade the inner quadrilateral (Example 6)."""
+    pts = dict(_EX6_BASE)
+    mids = _ex6_midpoints()
+    pts.update(mids)
+    highlight = str(highlight or "APCQ").upper()
+    highlight_vertices = {
+        "APCQ": ("A", "P", "C", "Q"),
+        "DPBQ": ("D", "P", "B", "Q"),
+        "PSQR": ("P", "S", "Q", "R"),
+    }
+    if highlight == "PSQR":
+        s = _ex6_intersection_s()
+        r = ((pts["B"][0] + pts["C"][0]) / 2, (pts["B"][1] + pts["C"][1]) / 2)
+        pts["S"] = s
+        pts["R"] = r
+    verts = highlight_vertices.get(highlight, highlight_vertices["APCQ"])
+    parts = [_polygon([pts[k] for k in "ABCD"], fill="#f1f5f9", stroke="#94a3b8")]
+    if highlight in highlight_vertices:
+        parts.append(
+            _polygon(
+                [pts[k] for k in verts],
+                fill="#bbf7d0",
+                stroke="#16a34a",
+            )
+        )
+    if show_construction:
+        parts.append(_segment(pts["A"], pts["Q"], stroke="#dc2626", dash="5 4"))
+        parts.append(_segment(pts["D"], pts["P"], stroke="#dc2626", dash="5 4"))
+        if highlight == "PSQR":
+            parts.append(_segment(pts["P"], pts["S"], stroke="#7c3aed", dash="4 3"))
+            parts.append(_segment(pts["Q"], pts["R"], stroke="#7c3aed", dash="4 3"))
+    parts.extend(_quad_labels({k: pts[k] for k in "ABCD"}))
+    for name in ("P", "Q", "S", "R"):
+        if name in pts:
+            ox, oy = (0, 14) if name in ("P", "Q") and name == "P" else (0, -8 if name == "Q" else 0)
+            if name == "P":
+                ox, oy = 0, 14
+            elif name == "Q":
+                ox, oy = 0, -8
+            elif name == "S":
+                ox, oy = -12, -4
+            elif name == "R":
+                ox, oy = 0, -8
+            parts.append(_label(pts[name][0] + ox, pts[name][1] + oy, name, color="#7c3aed"))
+    parts.append(
+        _label(
+            200,
+            24,
+            f"Shaded region: {highlight}  (P, Q are midpoints of AB and CD)",
+            size=11,
+            color="#64748b",
+        )
+    )
+    return _svg_wrap(parts, w=420, h=270)
+
+
 def svg_rectangle(*, show_diagonals: bool = False) -> str:
     pts = {"A": (90, 190), "B": (310, 190), "C": (310, 70), "D": (90, 70)}
     parts = [_polygon([pts[k] for k in "ABCD"])]
@@ -449,6 +528,23 @@ def infer_geometry_diagram(question: dict) -> dict | None:
         return {"type": "rectangle", "show_diagonals": "diagonal" in lower}
     if "trapezium" in lower or "trapezoid" in lower:
         return {"type": "trapezium"}
+    if re.search(r"parallelogram", lower) and (
+        re.search(r"mid-?point", lower)
+        or re.search(r"\bapcq\b|\bdpbq\b|\bpsqr\b", lower)
+    ):
+        highlight = "APCQ"
+        compact = re.sub(r"\s+", "", lower)
+        if "dpbq" in compact:
+            highlight = "DPBQ"
+        elif "psqr" in compact:
+            highlight = "PSQR"
+        elif "apcq" in compact:
+            highlight = "APCQ"
+        return {
+            "type": "parallelogram_midpoints",
+            "highlight": highlight,
+            "show_construction": True,
+        }
     if "parallelogram" in lower or re.search(r"\babcd\b", lower):
         return {"type": "parallelogram", "show_diagonals": "diagonal" in lower}
 
@@ -510,6 +606,11 @@ def render_geometry_svg(spec: dict) -> str | None:
     kind = spec.get("type")
     if kind == "parallelogram":
         return svg_parallelogram(show_diagonals=bool(spec.get("show_diagonals")))
+    if kind == "parallelogram_midpoints":
+        return svg_parallelogram_midpoints(
+            highlight=str(spec.get("highlight", "APCQ")),
+            show_construction=bool(spec.get("show_construction", True)),
+        )
     if kind == "rectangle":
         return svg_rectangle(show_diagonals=bool(spec.get("show_diagonals")))
     if kind == "rhombus":

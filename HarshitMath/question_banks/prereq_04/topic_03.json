@@ -3,7 +3,7 @@
     "A": [
       {
         "id": "p4_t3_A_4fb0782a",
-        "question": "In parallelogram ABCD, P and Q are mid-points of AB and CD. Given AP || QC and AP = QC, what is APCQ?",
+        "question": "Use the diagram. In parallelogram ABCD, P and Q are midpoints of AB and CD. The shaded quadrilateral is APCQ. What type of quadrilateral is APCQ?",
         "options": [
           "rectangle",
           "parallelogram",
@@ -11,7 +11,12 @@
           "trapezium"
         ],
         "answer": 1,
-        "explanation": "By Theorem 8.8, a quadrilateral with both pairs of opposite sides equal and parallel is a parallelogram, as shown in Example 6.",
+        "explanation": "Step 1: P and Q are midpoints, so AP = ½AB and CQ = ½CD. Step 2: In parallelogram ABCD, AB = CD and AB ∥ CD, so AP = CQ and AP ∥ QC. Step 3: One pair of opposite sides equal and parallel → APCQ is a parallelogram (Theorem 8.8). It is not a trapezium — both pairs of opposite sides of APCQ are parallel.",
+        "diagram": {
+          "type": "parallelogram_midpoints",
+          "highlight": "APCQ",
+          "show_construction": true
+        },
         "topic": 3,
         "level": "A",
         "prereq_id": 4,
@@ -63,7 +68,7 @@
       },
       {
         "id": "p4_t3_A_aad95209",
-        "question": "In parallelogram ABCD, DQ || PB and DQ = PB. Which quadrilateral is formed?",
+        "question": "Use the diagram. In parallelogram ABCD, P and Q are midpoints of AB and CD. The shaded quadrilateral is DPBQ. What type of quadrilateral is DPBQ?",
         "options": [
           "ABCD",
           "APCQ",
@@ -71,7 +76,12 @@
           "PSQR"
         ],
         "answer": 2,
-        "explanation": "DQ || PB and DQ = PB shows DPBQ is a parallelogram, as proved in Example 6 (ii).",
+        "explanation": "Step 1: P and Q are midpoints, so DP = ½AD side path and BQ relates to half of BC — with AB ∥ CD, DQ = PB and DQ ∥ PB. Step 2: DPBQ has one pair of opposite sides equal and parallel, so it is a parallelogram (Example 6 ii).",
+        "diagram": {
+          "type": "parallelogram_midpoints",
+          "highlight": "DPBQ",
+          "show_construction": true
+        },
         "topic": 3,
         "level": "A",
         "prereq_id": 4,

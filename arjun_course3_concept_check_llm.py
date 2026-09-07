@@ -14,10 +14,12 @@ import arjun_course3_concept_check_store as c3store
 import arjun_course3_content as c3
 import arjun_course3_levels as c3lvl
 from llm_question_format import KID_NUMERIC_FORMAT_RULES, NUMERIC_RETRY_HINT, validate_numerical_format
+import arjun_course3_answers as c3ans
 from numeric_expression_eval import (
     ensure_numeric_answer_key,
     ensure_simplest_form_answer,
     validate_distinct_options,
+    validate_explanation_matches_key,
 )
 from xai_client import make_xai_client
 
@@ -83,8 +85,10 @@ def _normalize_item(q: dict, unit_id: int, category: str, fallback_level: str, c
     question = str(q.get("question", "")).strip()
     validate_numerical_format(question, options_raw)
     validate_distinct_options(options_raw)
+    explanation = str(q.get("explanation", "")).strip()
     ans = ensure_numeric_answer_key(question, options_raw, ans)
     ans = ensure_simplest_form_answer(question, options_raw, ans)
+    validate_explanation_matches_key(explanation, options_raw, ans)
     correct = options_raw[ans]
     indices = list(range(4))
     random.shuffle(indices)
@@ -94,17 +98,19 @@ def _normalize_item(q: dict, unit_id: int, category: str, fallback_level: str, c
     if lvl not in c3lvl.LEVEL_ORDER:
         lvl = fallback_level
     stamp = int(time.time() * 1000) % 1_000_000
-    return {
-        "id": f"cc_ai_u{unit_id}_{category}_{stamp}_{random.randint(100, 999)}",
-        "category": cat,
-        "level": lvl,
-        "question": question,
-        "options": options,
-        "answer": answer,
-        "explanation": str(q.get("explanation", "")).strip(),
-        "source": "concept_check",
-        "origin": "llm",
-    }
+    return c3ans.finalize_question(
+        {
+            "id": f"cc_ai_u{unit_id}_{category}_{stamp}_{random.randint(100, 999)}",
+            "category": cat,
+            "level": lvl,
+            "question": question,
+            "options": options,
+            "answer": answer,
+            "explanation": explanation,
+            "source": "concept_check",
+            "origin": "llm",
+        }
+    )
 
 
 def _parse_items(raw: str, unit_id: int, category: str, level: str, categories: dict) -> list[dict]:

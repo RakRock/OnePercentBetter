@@ -6,11 +6,7 @@ import json
 import re
 from pathlib import Path
 
-from numeric_expression_eval import (
-    ensure_numeric_answer_key,
-    ensure_simplest_form_answer,
-    validate_distinct_options,
-)
+import arjun_course3_answers as c3ans
 
 ROOT = Path(__file__).resolve().parent
 CONCEPT_CHECK_DIR = ROOT / "ArjunCourse3" / "concept_checks"
@@ -44,26 +40,38 @@ def load_ai_bank(unit_id: int) -> list[dict]:
         q = dict(item)
         q.setdefault("source", "concept_check")
         q.setdefault("origin", "llm")
-        opts = q.get("options")
-        ans = q.get("answer")
-        if isinstance(opts, list) and len(opts) == 4 and isinstance(ans, int) and ans in range(4):
-            options_raw = [str(o) for o in opts]
-            question = str(q.get("question", ""))
-            try:
-                validate_distinct_options(options_raw)
-            except ValueError:
-                continue
-            try:
-                ans = ensure_numeric_answer_key(question, options_raw, ans)
-            except ValueError:
-                pass
-            try:
-                ans = ensure_simplest_form_answer(question, options_raw, ans)
-            except ValueError:
-                pass
-            q["answer"] = ans
-        out.append(q)
+        out.append(c3ans.finalize_question(q))
     return out
+
+
+def reconcile_ai_bank(unit_id: int) -> int:
+    """Rewrite persisted AI bank JSON with validated answer keys. Returns change count."""
+    path = _unit_path(unit_id)
+    if not path.is_file():
+        return 0
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return 0
+    if not isinstance(data, list):
+        return 0
+    changes = 0
+    fixed: list[dict] = []
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+        q = c3ans.finalize_question(dict(item))
+        if q.get("answer") != item.get("answer"):
+            changes += 1
+        fixed.append(q)
+    path.write_text(json.dumps(fixed, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return changes
+
+
+def reconcile_all_ai_banks(unit_ids: range | list[int] | None = None) -> dict[int, int]:
+    """Reconcile every unit AI concept-check JSON bank. Returns {unit_id: change_count}."""
+    ids = list(unit_ids) if unit_ids is not None else list(range(1, 6))
+    return {unit_id: reconcile_ai_bank(unit_id) for unit_id in ids}
 
 
 def add_questions(unit_id: int, questions: list[dict]) -> int:

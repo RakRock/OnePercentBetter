@@ -234,6 +234,66 @@ def fix_quadrant_question(question: dict) -> dict:
     return out
 
 
+def _example6_highlight(question: str) -> str:
+    lower = str(question).lower()
+    compact = re.sub(r"\s+", "", lower)
+    if "dpbq" in compact:
+        return "DPBQ"
+    if "psqr" in compact:
+        return "PSQR"
+    return "APCQ"
+
+
+def _is_example6_midpoint_question(text: str) -> bool:
+    lower = str(text).lower()
+    if "parallelogram" not in lower:
+        return False
+    return bool(
+        re.search(r"mid-?point", lower)
+        or re.search(r"\bapcq\b|\bdpbq\b|\bpsqr\b", lower)
+    )
+
+
+def fix_parallelogram_midpoint_question(question: dict) -> dict:
+    """Attach Example 6 diagram and rewrite dense midpoint-parallelogram stems."""
+    out = dict(question)
+    text = str(out.get("question", ""))
+    if not _is_example6_midpoint_question(text):
+        return out
+
+    highlight = _example6_highlight(text)
+    out["diagram"] = {
+        "type": "parallelogram_midpoints",
+        "highlight": highlight,
+        "show_construction": True,
+    }
+
+    lower = text.lower()
+    if re.search(
+        r"what is apcq|which quadrilateral|what type of quadrilateral|formed by apcq|what is psqr|what is dpbq",
+        lower,
+    ) or ("apcq" in lower and "parallelogram" in lower and "what" in lower):
+        out["question"] = (
+            f"Use the diagram. In parallelogram ABCD, P and Q are midpoints of AB and CD. "
+            f"The shaded quadrilateral is {highlight}. What type of quadrilateral is {highlight}?"
+        )
+    elif "given ap" in lower or "ap = qc" in lower or "ap ||" in lower:
+        out["question"] = (
+            f"Use the diagram. In parallelogram ABCD, P and Q are midpoints of AB and CD. "
+            f"What type of quadrilateral is the shaded region {highlight}?"
+        )
+
+    expl = str(out.get("explanation", "")).strip()
+    if highlight == "APCQ" and expl and "step 1" not in expl.lower():
+        out["explanation"] = (
+            "Step 1: P and Q are midpoints, so AP = ½AB and CQ = ½CD. "
+            "Step 2: In parallelogram ABCD, AB = CD and AB ∥ CD, so AP = CQ and AP ∥ QC. "
+            "Step 3: One pair of opposite sides equal and parallel → APCQ is a parallelogram "
+            "(Theorem 8.8). It is not a trapezium — both pairs of opposite sides of APCQ are parallel."
+        )
+    return out
+
+
 def infer_coordinate_diagram(question: dict) -> dict | None:
     """Detect read-coordinates questions that need a graph (not quadrant questions)."""
     text = str(question.get("question", ""))
@@ -291,7 +351,7 @@ def _normalize_diagram(spec: Any) -> dict | None:
                 "mode": parts[2] if len(parts) >= 3 else "read_coords",
             }
         geo_types = (
-            "parallelogram", "rectangle", "rhombus", "trapezium", "triangle",
+            "parallelogram", "parallelogram_midpoints", "rectangle", "rhombus", "trapezium", "triangle",
             "circle", "parallel_transversal", "intersecting_lines", "angle_arc",
         )
         if kind in geo_types:
@@ -396,6 +456,12 @@ def kid_friendly_prompt(question: dict, spec: dict | None = None) -> str | None:
         if spec.get("mode") == "quadrant":
             return None
         return "Point P is marked on the coordinate plane. What are its coordinates?"
+    if kind == "parallelogram_midpoints":
+        highlight = str(spec.get("highlight", "APCQ"))
+        return (
+            f"Use the diagram. In parallelogram ABCD, P and Q are midpoints of AB and CD. "
+            f"The shaded quadrilateral is {highlight}. What type of quadrilateral is {highlight}?"
+        )
     return None
 
 

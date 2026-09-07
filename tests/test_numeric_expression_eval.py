@@ -6,9 +6,13 @@ import unittest
 
 from numeric_expression_eval import (
     compute_expected,
+    compute_fraction_of_remainder,
+    compute_linear_expression,
+    compute_scientific_notation_sum,
     ensure_numeric_answer_key,
     evaluate_numeric,
     extract_expression,
+    parse_scientific_notation_value,
 )
 
 
@@ -30,6 +34,59 @@ class TestNumericExpressionEval(unittest.TestCase):
         question = "Evaluate: 2 + 3 × 4"
         options = ["14", "20", "12", "10"]
         self.assertEqual(ensure_numeric_answer_key(question, options, 0), 0)
+
+    def test_order_rationals_greatest_to_least(self) -> None:
+        question = "Order 3/4, 0.7, and 72% from greatest to least."
+        options = [
+            "3/4, 0.7, 72%",
+            "3/4, 72%, 0.7",
+            "72%, 3/4, 0.7",
+            "0.7, 72%, 3/4",
+        ]
+        self.assertEqual(ensure_numeric_answer_key(question, options, 0), 1)
+
+    def test_scientific_notation_addition(self) -> None:
+        question = "Add 4.5 × 10⁶ and 3.2 × 10⁵. Give the sum in scientific notation."
+        options = ["7.7 × 10⁶", "4.82 × 10⁶", "7.7 × 10⁵", "48.2 × 10⁵"]
+        self.assertEqual(ensure_numeric_answer_key(question, options, 0), 1)
+        self.assertAlmostEqual(parse_scientific_notation_value("4.82 × 10⁶"), 4820000.0)
+
+    def test_scientific_notation_same_exponent(self) -> None:
+        question = "Add 4.5 × 10³ and 3.2 × 10³ in scientific notation."
+        options = ["7.7 × 10³", "4.82 × 10³", "77 × 10²", "1.45 × 10⁴"]
+        self.assertEqual(ensure_numeric_answer_key(question, options, 1), 0)
+
+    def test_linear_expression_figure_45(self) -> None:
+        question = (
+            "A table shows figure number n and number of tiles: 3n+1. "
+            "How many tiles are in figure 45?"
+        )
+        options = ["139 tiles", "136 tiles", "135", "130"]
+        self.assertEqual(ensure_numeric_answer_key(question, options, 0), 1)
+
+    def test_exponent_pemdas_expression(self) -> None:
+        question = "Simplify: (4³ - 2⁴) × 2²."
+        options = ["128", "320", "192", "256"]
+        self.assertEqual(ensure_numeric_answer_key(question, options, 1), 2)
+
+    def test_rejects_contradictory_explanation(self) -> None:
+        from numeric_expression_eval import validate_explanation_matches_key
+
+        explanation = (
+            "4³=64, 2⁴=16; 64-16=48; 48×2²=48×4=192? Wait, recalculate: correct path yields 320"
+        )
+        options = ["128", "320", "192", "256"]
+        with self.assertRaises(ValueError):
+            validate_explanation_matches_key(explanation, options, 1)
+
+    def test_fraction_of_remainder_chocolate_bar(self) -> None:
+        question = (
+            "After eating 1/8 of a chocolate bar, 4/9 of the remaining chocolate was hidden. "
+            "What fraction of the original bar is hidden?"
+        )
+        self.assertAlmostEqual(compute_fraction_of_remainder(question), 7 / 18)
+        options = ["1/2", "7/18", "4/72", "28/72"]
+        self.assertEqual(ensure_numeric_answer_key(question, options, 0), 1)
 
     def test_skips_non_numeric_questions(self) -> None:
         question = "Which expression shows the distributive property?"

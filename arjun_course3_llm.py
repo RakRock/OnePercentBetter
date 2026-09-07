@@ -13,7 +13,13 @@ from openai import APIConnectionError, APITimeoutError, OpenAI, OpenAIError
 import arjun_course3_content as c3
 import arjun_course3_concept_check as c3cc
 import arjun_course3_levels as c3lvl
+import arjun_course3_answers as c3ans
 from llm_question_format import KID_NUMERIC_FORMAT_RULES, NUMERIC_RETRY_HINT, validate_numerical_format
+from numeric_expression_eval import (
+    ensure_numeric_answer_key,
+    ensure_simplest_form_answer,
+    validate_distinct_options,
+)
 
 XAI_BASE_URL = "https://api.x.ai/v1"
 XAI_MODEL = "grok-3-mini"
@@ -166,13 +172,17 @@ def _parse_llm_questions(raw: str, expected_categories: list[str], categories: d
         options = [str(q["options"][j]) for j in indices]
         answer = options.index(correct_text)
 
-        validate_numerical_format(str(q["question"]).strip(), options)
+        question_text = str(q["question"]).strip()
+        validate_numerical_format(question_text, options)
+        validate_distinct_options(options)
+        answer = ensure_numeric_answer_key(question_text, options, answer)
+        answer = ensure_simplest_form_answer(question_text, options, answer)
 
         validated.append(
             {
                 "category": cat,
                 "level": str(q.get("level") or "B").strip().upper()[:1] or "B",
-                "question": str(q["question"]).strip(),
+                "question": question_text,
                 "options": options,
                 "answer": answer,
                 "explanation": str(q.get("explanation") or "").strip(),
@@ -189,17 +199,19 @@ def _to_session_question(q: dict, unit_id: int, categories: dict) -> dict:
     cat = q["category"]
     info = categories.get(cat, {})
     stamp = int(time.time() * 1000) % 1_000_000
-    return {
-        "id": f"c3_llm_u{unit_id}_{cat}_{stamp}_{random.randint(100, 999)}",
-        "category": cat,
-        "question": q["question"],
-        "options": q["options"],
-        "answer": q["answer"],
-        "explanation": q.get("explanation", ""),
-        "source": "llm",
-        "level": q.get("level", "B"),
-        "category_label": info.get("name", cat),
-    }
+    return c3ans.finalize_question(
+        {
+            "id": f"c3_llm_u{unit_id}_{cat}_{stamp}_{random.randint(100, 999)}",
+            "category": cat,
+            "question": q["question"],
+            "options": q["options"],
+            "answer": q["answer"],
+            "explanation": q.get("explanation", ""),
+            "source": "llm",
+            "level": q.get("level", "B"),
+            "category_label": info.get("name", cat),
+        }
+    )
 
 
 def _build_user_message(slots: list[tuple[str, str]], categories: dict, seed: int) -> str:
@@ -281,7 +293,7 @@ def generate_session_questions(
                 q["level"] = slot[1]
                 questions.append(_to_session_question(q, unit_id, categories))
             random.shuffle(questions)
-            return questions[:count]
+            return c3ans.finalize_questions(questions[:count])
         except (APIConnectionError, APITimeoutError, OpenAIError) as exc:
             last_error = str(exc)
             break

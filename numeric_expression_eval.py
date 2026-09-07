@@ -10,6 +10,21 @@ from fractions import Fraction
 _FRAC_RE = re.compile(r"^-?\d+/-?\d+$")
 _INT_RE = re.compile(r"^-?\d+$")
 
+_BAD_EXPLANATION_RE = re.compile(
+    r"pick plausible|adjust:\s*actually|wait,\s*recalculate|"
+    r"not in (?:the )?list|closest match|options adjusted|revised calc|"
+    r"correct path yields|fix:\s*proper|closest match adjusted|"
+    r"but options|yields \d+\? no|calc error|choose matching|needs adjustment",
+    re.I,
+)
+_LINEAR_EXPR_RE = re.compile(r"(-?\d+)\s*n\s*([+-])\s*(\d+)", re.I)
+_LEADING_NUM_RE = re.compile(r"^\s*(-?\d+(?:\.\d+)?(?:/\d+)?)")
+_EXPL_RESULT_RE = re.compile(r"=\s*(-?\d+(?:\.\d+)?)\s*(?:\?|\.|,|;|\s|$)")
+_SCI_TERM_RE = re.compile(
+    r"(-?\d+(?:\.\d+)?)\s*(?:×|x|\*|\\times)?\s*10\s*\^?\s*(-?\d+)",
+    re.I,
+)
+
 _EXTRACT_PATTERNS: list[re.Pattern[str]] = [
     re.compile(
         r"^(?:Compute|Evaluate|Simplify|Add|Multiply|Subtract|Divide):\s*(.+?)(?:\s*=\s*\?)?\.?\s*$",
@@ -293,9 +308,158 @@ def extract_expression(question: str) -> str | None:
 
 def compute_expected(question: str) -> float | None:
     expr = extract_expression(question)
-    if not expr:
+    if expr:
+        val = evaluate_numeric(expr)
+        if val is not None:
+            return val
+    return compute_fraction_of_remainder(question) or compute_linear_expression(question) or compute_scientific_notation_sum(question)
+
+
+def _parse_scientific_notation_terms(text: str) -> list[tuple[float, int]]:
+    s = _sanitize_math_text(text)
+    return [
+        (float(m.group(1)), int(m.group(2)))
+        for m in _SCI_TERM_RE.finditer(s)
+    ]
+
+
+def parse_scientific_notation_value(text: str) -> float | None:
+    terms = _parse_scientific_notation_terms(text)
+    if len(terms) != 1:
         return None
-    return evaluate_numeric(expr)
+    coef, exp = terms[0]
+    return coef * (10 ** exp)
+
+
+def compute_scientific_notation_sum(question: str) -> float | None:
+    """Add two scientific-notation values, e.g. 4.5×10^6 + 3.2×10^5."""
+    lower = str(question).lower()
+    if not re.search(r"\badd\b", lower):
+        return None
+    terms = _parse_scientific_notation_terms(question)
+    if len(terms) < 2:
+        return None
+    return sum(coef * (10 ** exp) for coef, exp in terms[:2])
+
+
+_RATIONAL_TOKEN_RE = re.compile(r"\d+/\d+|\d+\.\d+|\d+%")
+
+
+def parse_rational_token(token: str) -> float | None:
+    raw = str(token).strip()
+    if raw.endswith("%"):
+        try:
+            return float(raw[:-1]) / 100.0
+        except ValueError:
+            return None
+    if "/" in raw:
+        num, den = raw.split("/", 1)
+        try:
+            return float(Fraction(int(num), int(den)))
+        except (ValueError, ZeroDivisionError):
+            return None
+    try:
+        return float(raw)
+    except ValueError:
+        return None
+
+
+def _extract_rational_tokens(question: str) -> list[str]:
+    seen: list[str] = []
+    for token in _RATIONAL_TOKEN_RE.findall(str(question)):
+        if token not in seen:
+            seen.append(token)
+    return seen
+
+
+def _ordering_values_from_option(option: str) -> tuple[float, ...] | None:
+    tokens = _RATIONAL_TOKEN_RE.findall(str(option))
+    if len(tokens) < 3:
+        return None
+    values: list[float] = []
+    for token in tokens[:3]:
+        val = parse_rational_token(token)
+        if val is None:
+            return None
+        values.append(val)
+    return tuple(values)
+
+
+def find_ordering_option_index(question: str, options: list[str]) -> int | None:
+    """Match greatest-to-least / least-to-greatest ordering MCQs."""
+    lower = str(question).lower()
+    if not re.search(r"greatest to least|least to greatest", lower):
+        return None
+    tokens = _extract_rational_tokens(question)
+    if len(tokens) < 3:
+        return None
+    pairs = [(token, parse_rational_token(token)) for token in tokens[:3]]
+    if any(val is None for _, val in pairs):
+        return None
+    descending = "greatest to least" in lower
+    pairs.sort(key=lambda item: item[1], reverse=descending)
+    expected = tuple(val for _, val in pairs)
+    for i, opt in enumerate(options):
+        ordered = _ordering_values_from_option(opt)
+        if ordered == expected:
+            return i
+    return None
+
+
+def compute_linear_expression(question: str) -> float | None:
+    """Evaluate an + b style rules at a given figure number, e.g. 3n+1 at figure 45."""
+    text = str(question)
+    m = _LINEAR_EXPR_RE.search(text)
+    if not m:
+        return None
+    a = int(m.group(1))
+    sign = m.group(2)
+    b = int(m.group(3))
+    n_match = re.search(r"figure\s*(\d+)", text, re.I)
+    if not n_match:
+        n_match = re.search(r"\bn\s*=\s*(\d+)", text, re.I)
+    if not n_match:
+        return None
+    n = int(n_match.group(1))
+    offset = b if sign == "+" else -b
+    return float(a * n + offset)
+
+
+def compute_fraction_of_remainder(question: str) -> float | None:
+    """Fraction-of-remainder word problems: eat 1/8, then 4/9 of what's left."""
+    q = str(question).lower()
+    if not re.search(r"\b(remaining|rest|left)\b", q):
+        return None
+
+    rem_match = re.search(r"(\d+)\s*/\s*(\d+)\s+of\s+(?:the\s+)?(?:remaining|rest)", q)
+    if not rem_match:
+        return None
+
+    eaten: Fraction | None = None
+    eat_match = re.search(
+        r"(?:eating|eat|ate|removed|take out|taken out|taking)\s+(\d+)\s*/\s*(\d+)",
+        q,
+    )
+    if eat_match:
+        eaten = Fraction(int(eat_match.group(1)), int(eat_match.group(2)))
+    else:
+        choc_match = re.search(
+            r"(\d+)\s*/\s*(\d+)\s+of\s+(?:them\s+are|the\s+(?:bar|candies|chocolate))",
+            q,
+        )
+        if choc_match:
+            eaten = Fraction(int(choc_match.group(1)), int(choc_match.group(2)))
+        else:
+            first_frac = re.search(r"(\d+)\s*/\s*(\d+)", q)
+            if first_frac:
+                eaten = Fraction(int(first_frac.group(1)), int(first_frac.group(2)))
+
+    if eaten is None or eaten >= 1:
+        return None
+
+    portion = Fraction(int(rem_match.group(1)), int(rem_match.group(2)))
+    result = (Fraction(1, 1) - eaten) * portion
+    return float(result)
 
 
 def _format_fraction(value: float) -> str | None:
@@ -313,7 +477,16 @@ def _format_fraction(value: float) -> str | None:
 
 
 def option_numeric_value(text: str) -> float | None:
-    s = _normalize_expr(str(text))
+    raw = str(text).strip()
+    sci = parse_scientific_notation_value(raw)
+    if sci is not None:
+        return sci
+    lead = _LEADING_NUM_RE.match(raw)
+    if lead:
+        val = _parse_number_token(lead.group(1))
+        if val is not None:
+            return val
+    s = _normalize_expr(raw)
     if not s:
         return None
     val = _parse_number_token(s)
@@ -325,6 +498,10 @@ def option_numeric_value(text: str) -> float | None:
 
 
 def options_equivalent(a: str, b: str) -> bool:
+    a_order = _ordering_values_from_option(a)
+    b_order = _ordering_values_from_option(b)
+    if a_order is not None and b_order is not None:
+        return a_order == b_order
     a_norm = _normalize_expr(a)
     b_norm = _normalize_expr(b)
     if a_norm == b_norm:
@@ -352,10 +529,43 @@ def find_matching_option_index(expected: float, options: list[str]) -> int | Non
     return None
 
 
+def validate_explanation_quality(explanation: str) -> None:
+    """Reject Grok explanations that admit the answer key is wrong."""
+    if _BAD_EXPLANATION_RE.search(str(explanation)):
+        raise ValueError("Explanation contains self-correction or contradictory text")
+
+
+def validate_explanation_matches_key(explanation: str, options: list[str], answer: int) -> None:
+    """Reject when the explanation's final numeric result disagrees with the marked option."""
+    validate_explanation_quality(explanation)
+    matches = _EXPL_RESULT_RE.findall(str(explanation))
+    if not matches:
+        return
+    try:
+        conclusion = float(matches[-1])
+    except ValueError:
+        return
+    idx = find_matching_option_index(conclusion, options)
+    if idx is None:
+        return
+    if idx != answer:
+        raise ValueError(
+            f"Explanation concludes {matches[-1]} but answer key marks {options[answer]!r}"
+        )
+
+
 def ensure_numeric_answer_key(question: str, options: list[str], answer: int) -> int:
     """Return the option index matching the evaluated expression; auto-fix wrong keys."""
     if not isinstance(answer, int) or answer not in range(len(options)):
         raise ValueError("answer must be a valid option index")
+    lower_q = str(question).lower()
+    if re.search(r"which answer\(s\)|all of the above|more than one", lower_q):
+        return answer
+    if re.search(r"\bboth\b", str(options[answer]), re.I):
+        return answer
+    ordering_idx = find_ordering_option_index(question, options)
+    if ordering_idx is not None:
+        return ordering_idx
     expected = compute_expected(question)
     if expected is None:
         return answer

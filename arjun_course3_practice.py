@@ -6,6 +6,7 @@ import random
 from pathlib import Path
 
 import arjun_course3_levels as c3lvl
+import arjun_course3_answers as c3ans
 from arjun_course3_concept_check import (
     daily_concept_check_quota,
     extend_bank,
@@ -167,7 +168,7 @@ def _top_up(
                 break
             if not _question_available(q, used_ids, avoid_ids, allow_recent=allow_recent):
                 continue
-            selected.append(dict(q))
+            selected.append(c3ans.finalize_question(dict(q)))
             used_ids.add(q["id"])
 
 
@@ -256,7 +257,7 @@ def _pick_for_slots(
                     if not _question_available(q, used_ids, avoid_ids, allow_recent=allow_recent):
                         continue
                     used_ids.add(q["id"])
-                    return dict(q)
+                    return c3ans.finalize_question(dict(q))
         return None
 
     for cat, lvl in plan:
@@ -322,7 +323,7 @@ def _pick_for_slots(
         while len(selected) < count and cc_picked < cc_quota and cc_remainder:
             q = cc_remainder.pop()
             if _question_available(q, used_ids, avoid_ids, allow_recent=True):
-                selected.append(dict(q))
+                selected.append(c3ans.finalize_question(dict(q)))
                 used_ids.add(q["id"])
                 cc_picked += 1
         _top_up(selected, count, used_ids, avoid_ids, cc_remainder + other_remainder)
@@ -347,7 +348,7 @@ def _pick_for_slots(
                 selected.append(q)
 
     random.shuffle(selected)
-    return selected[:count]
+    return c3ans.finalize_questions(selected[:count])
 
 
 def build_session_set(
@@ -560,7 +561,7 @@ def _build_bank_focus_set(
     if len(selected) < count:
         _top_up(selected, count, used_ids, avoid_ids, other_pool + cc_pool)
     random.shuffle(selected)
-    return selected[:count]
+    return c3ans.finalize_questions(selected[:count])
 
 
 def build_session_report(

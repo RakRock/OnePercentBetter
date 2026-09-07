@@ -10,6 +10,7 @@ import streamlit as st
 import arjun_edgenuity_course3_content as ec3
 import arjun_edgenuity_course3_practice as ec3p
 import arjun_edgenuity_course3_render as ec3r
+import arjun_course3_answers as c3ans
 import arjun_course3_week_ui as ec3week_ui
 import edgenuity_practice_email as ec3mail
 import database as db
@@ -754,7 +755,7 @@ def render_practice():
                 col = ans_col1 if i % 2 == 0 else ans_col2
                 with col:
                     if st.button(str(opt), key=f"ec3_opt_{current}_{i}", use_container_width=True, type="primary"):
-                        is_correct = i == q["answer"]
+                        is_correct = c3ans.is_pick_correct(q, i)
                         st.session_state.ec3_answers.append({
                             "picked": opt,
                             "correct_val": q["options"][q["answer"]],
