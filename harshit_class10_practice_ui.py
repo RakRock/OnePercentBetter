@@ -324,8 +324,8 @@ def render_practice_home(unit_id: int) -> None:
 
     if h10un.unit_guide_available(unit_id):
         st.info(
-            "📖 **New here?** Open the **Unit Guide** tab above first — "
-            "formulas and teaching notes for this chapter are there."
+            "📘 **New here?** Open the **Notes** tab above first — "
+            "revision sheet and formulas for this chapter are there."
         )
 
     config = ensure_week_config(unit_id)
@@ -398,17 +398,17 @@ def render_unit_home(unit_id: int) -> None:
     has_guide = h10un.unit_guide_available(unit_id)
     section_options = ["🎯 Practice", "📝 Unit Test", "📅 Week Setup"]
     if has_guide:
-        section_options = ["📖 Unit Guide"] + section_options
+        section_options = ["📘 Notes"] + section_options
 
     guide_ver_key = f"hm10_guide_version_{unit_id}"
     if has_guide:
         expected_ver = h10un.guide_version(unit_id)
         if st.session_state.get(guide_ver_key) != expected_ver:
             st.session_state[guide_ver_key] = expected_ver
-            st.session_state[section_key] = "📖 Unit Guide"
+            st.session_state[section_key] = "📘 Notes"
 
     if section_key not in st.session_state:
-        st.session_state[section_key] = "📖 Unit Guide" if has_guide else "🎯 Practice"
+        st.session_state[section_key] = "📘 Notes" if has_guide else "🎯 Practice"
     elif st.session_state[section_key] not in section_options:
         st.session_state[section_key] = section_options[0]
 
@@ -422,7 +422,7 @@ def render_unit_home(unit_id: int) -> None:
 
     st.markdown("---")
 
-    if section == "📖 Unit Guide":
+    if section == "📘 Notes":
         h10ung_ui.render_unit_guide(unit_id)
     elif section == "🎯 Practice":
         render_practice_home(unit_id)

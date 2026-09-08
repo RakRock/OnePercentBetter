@@ -5,7 +5,27 @@ from __future__ import annotations
 import unittest
 
 import harshit_geometry_diagrams as hgd
+import harshit_prereq_revision_notes as hprn
 import harshit_prereq_unit_notes as hpun
+
+
+class TestPrereqRevisionNotes(unittest.TestCase):
+    def test_all_six_prereqs_have_revision_guide(self) -> None:
+        for pid in range(1, 7):
+            self.assertTrue(hprn.has_revision_notes(pid))
+            guide = hprn.get_revision_guide(pid)
+            self.assertIsNotNone(guide)
+            self.assertGreaterEqual(len(guide["sections"]), 4)
+
+    def test_prereq_has_notes_uses_revision(self) -> None:
+        for pid in range(1, 7):
+            self.assertTrue(hpun.prereq_has_notes(pid))
+            self.assertIsNotNone(hpun.get_revision_guide(pid))
+
+    def test_prereq1_covers_number_systems(self) -> None:
+        body = " ".join(s["body"] for s in hprn.get_revision_guide(1)["sections"])
+        for needle in ("LCD", "exponent", "Rationalize", "irrational"):
+            self.assertIn(needle.lower(), body.lower())
 
 
 class TestPrereq4LinesAnglesNotes(unittest.TestCase):

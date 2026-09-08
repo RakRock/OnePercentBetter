@@ -138,7 +138,7 @@ def _render_class10_tab():
     for i, unit in enumerate(h10u.list_units()):
         active = unit.get("active", False)
         pdf_name = unit.get("pdf", "")
-        guide_tag = " · 📖 Unit Guide" if h10un.unit_guide_available(unit["id"]) else ""
+        guide_tag = " · 📘 Notes" if h10un.unit_guide_available(unit["id"]) else ""
         status = (
             f"Ready · {unit['title']} ({pdf_name}){guide_tag}"
             if active and pdf_name

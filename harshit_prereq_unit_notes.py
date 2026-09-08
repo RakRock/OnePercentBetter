@@ -653,9 +653,20 @@ def get_topic_guide(prereq_id: int, topic_id: int) -> dict[str, Any] | None:
     return TOPIC_GUIDES.get(prereq_id, {}).get(topic_id)
 
 
+def get_revision_guide(prereq_id: int) -> dict[str, Any] | None:
+    """Single 2–3 page revision sheet per PreReq (preferred in Notes tab)."""
+    import harshit_prereq_revision_notes as hprn
+
+    return hprn.get_revision_guide(prereq_id)
+
+
 def topics_with_notes(prereq_id: int) -> list[int]:
+    if get_revision_guide(prereq_id):
+        return []
     return sorted(TOPIC_GUIDES.get(prereq_id, {}))
 
 
 def prereq_has_notes(prereq_id: int) -> bool:
-    return bool(TOPIC_GUIDES.get(prereq_id))
+    import harshit_prereq_revision_notes as hprn
+
+    return hprn.has_revision_notes(prereq_id) or bool(TOPIC_GUIDES.get(prereq_id))

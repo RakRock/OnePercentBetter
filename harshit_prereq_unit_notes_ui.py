@@ -9,7 +9,45 @@ import harshit_prereq_topics as hpt
 import harshit_prereq_unit_notes as hpun
 
 
+def _render_guide_sections(guide: dict, section_key: str) -> None:
+    st.markdown(f"### {guide['title']}")
+    if guide.get("subtitle"):
+        st.caption(guide["subtitle"])
+
+    sections = guide.get("sections") or []
+    labels = [s["title"] for s in sections]
+    selected = None
+    if labels:
+        selected = st.radio(
+            "Section",
+            labels,
+            horizontal=True,
+            key=section_key,
+            label_visibility="collapsed",
+        )
+
+    st.markdown("---")
+    for sec in sections:
+        if selected and sec["title"] != selected:
+            continue
+        for spec in sec.get("diagrams") or []:
+            svg = hgd.render_geometry_svg(spec)
+            if svg:
+                st.markdown(svg, unsafe_allow_html=True)
+        body = str(sec.get("body", "")).strip()
+        if body:
+            st.markdown(body)
+        break
+
+    st.caption("Read a section together, then switch to **Practice** when ready.")
+
+
 def render_prereq_notes(prereq_id: int) -> None:
+    revision = hpun.get_revision_guide(prereq_id)
+    if revision:
+        _render_guide_sections(revision, f"hm_pr_notes_rev_{prereq_id}")
+        return
+
     topic_ids = hpun.topics_with_notes(prereq_id)
     if not topic_ids:
         st.info("Lesson notes for this PreReq are coming next. Use Practice for now.")
@@ -36,36 +74,6 @@ def render_prereq_notes(prereq_id: int) -> None:
         st.info("Notes for this topic are not ready yet.")
         return
 
-    st.markdown(f"### {guide['title']}")
-    if guide.get("subtitle"):
-        st.caption(guide["subtitle"])
-
-    sections = guide.get("sections") or []
-    labels = [s["title"] for s in sections]
-    sec_key = f"hm_pr_notes_sec_{prereq_id}_{choice}"
-    if labels:
-        selected = st.radio(
-            "Section",
-            labels,
-            horizontal=True,
-            key=sec_key,
-            label_visibility="collapsed",
-        )
-    else:
-        selected = None
-
-    st.markdown("---")
-    for sec in sections:
-        if selected and sec["title"] != selected:
-            continue
-        for spec in sec.get("diagrams") or []:
-            svg = hgd.render_geometry_svg(spec)
-            if svg:
-                st.markdown(svg, unsafe_allow_html=True)
-        body = str(sec.get("body", "")).strip()
-        if body:
-            st.markdown(body)
-        break
-
+    _render_guide_sections(guide, f"hm_pr_notes_sec_{prereq_id}_{choice}")
     topic_name = topic_labels.get(int(choice), "this topic")
     st.caption(f"Read a section together, then switch to **Practice** — {topic_name}, Level A.")

@@ -4,7 +4,35 @@ from __future__ import annotations
 
 import unittest
 
+import harshit_class10_revision_notes as h10rn
 import harshit_class10_unit_notes as h10un
+
+
+class TestClass10RevisionNotes(unittest.TestCase):
+    def test_all_active_units_have_revision_guide(self) -> None:
+        import harshit_class10_units as h10u
+
+        active = [u["id"] for u in h10u.list_units() if u.get("active")]
+        self.assertEqual(len(active), 14)
+        for uid in active:
+            with self.subTest(unit_id=uid):
+                self.assertTrue(h10rn.has_unit_revision_notes(uid))
+                guide = h10rn.get_unit_revision_guide(uid)
+                self.assertIsNotNone(guide)
+                assert guide is not None
+                self.assertGreaterEqual(len(guide["sections"]), 4)
+                section_ids = [s["id"] for s in guide["sections"]]
+                for sid in ("overview", "ncert", "formulas", "checklist"):
+                    self.assertIn(sid, section_ids)
+                topics_body = " ".join(s["body"] for s in guide["sections"])
+                self.assertNotIn("Four topics in this unit", topics_body)
+
+    def test_unit1_revision_mentions_hcf_lcm(self) -> None:
+        guide = h10rn.get_unit_revision_guide(1)
+        assert guide is not None
+        body = " ".join(s["body"] for s in guide["sections"])
+        self.assertIn("HCF", body)
+        self.assertIn("LCM", body)
 
 
 class TestClass10UnitNotes(unittest.TestCase):
