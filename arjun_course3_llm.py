@@ -214,18 +214,32 @@ def _to_session_question(q: dict, unit_id: int, categories: dict) -> dict:
     )
 
 
-def _build_user_message(slots: list[tuple[str, str]], categories: dict, seed: int) -> str:
+def _build_user_message(
+    slots: list[tuple[str, str]],
+    categories: dict,
+    seed: int,
+    *,
+    unit_id: int = 1,
+) -> str:
+    import arjun_course3_practice as c3p
+
     lines = [
         f"Generate exactly {len(slots)} multiple-choice questions for practice session {seed}.",
         "Each question MUST match category id and difficulty level (one question per line, same order):",
+        "Use SEED EXAMPLES as style guides — write NEW questions, do not copy them verbatim.",
     ]
     for i, (cat_id, level) in enumerate(slots, start=1):
         name = categories.get(cat_id, {}).get("name", cat_id)
         desc = c3lvl.LEVEL_DESCRIPTIONS.get(level, level)
         archetype = c3cc.archetype_hint(cat_id, level)
+        seeds = c3p.seed_questions_for_category(unit_id, cat_id, level=level, limit=2)
+        seed_block = ""
+        if seeds:
+            seed_lines = [f"Q: {s.get('question')} | opts: {s.get('options')}" for s in seeds]
+            seed_block = "\n   Seed examples: " + " | ".join(seed_lines)
         lines.append(
             f"{i}. category **{cat_id}** — {name} — **Level {level}** ({desc})\n"
-            f"   Concept-check style: {archetype}"
+            f"   Concept-check style: {archetype}{seed_block}"
         )
     lines.append('Include optional JSON field "level" (A–E) on each object matching the requested level.')
     lines.append("Return ONLY the JSON array, in the same order as the list above.")
@@ -268,7 +282,7 @@ def generate_session_questions(
         revision_tips=revision_tips,
         activity_blurbs=_activity_blurbs(unit_id),
     )
-    user_msg = _build_user_message(slots, categories, seed)
+    user_msg = _build_user_message(slots, categories, seed, unit_id=unit_id)
     expected_cats = [cat for cat, _ in slots]
     last_error: str | None = None
 
@@ -300,7 +314,7 @@ def generate_session_questions(
         except (ValueError, json.JSONDecodeError, KeyError, IndexError, TypeError) as exc:
             last_error = str(exc)
             user_msg = (
-                _build_user_message(slots, categories, seed)
+                _build_user_message(slots, categories, seed, unit_id=unit_id)
                 + f"\n\nYour previous response was invalid ({last_error}). "
                 "Return ONLY a valid JSON array with category, question, options (4), answer (0-3), explanation. "
                 + NUMERIC_RETRY_HINT

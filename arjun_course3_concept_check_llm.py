@@ -25,10 +25,32 @@ from xai_client import make_xai_client
 
 XAI_MODEL = "grok-3-mini"
 _MAX_RETRIES = 3
+MAX_SEED_EXAMPLES = 3
 
 
 def _get_client(xai_api_key: str):
     return make_xai_client(xai_api_key)
+
+
+def _format_seed_block(seeds: list[dict]) -> str:
+    if not seeds:
+        return ""
+    lines = ["\nSeed examples from the current question bank (style only — write different questions):"]
+    for s in seeds:
+        opts = s.get("options") or []
+        lines.append(f"- Q: {s.get('question', '')} | opts: {opts}")
+    return "\n".join(lines)
+
+
+def _seed_examples(unit_id: int, category: str, level: str | None = None) -> list[dict]:
+    import arjun_course3_practice as c3p
+
+    return c3p.seed_questions_for_category(
+        unit_id,
+        category,
+        level=level,
+        limit=MAX_SEED_EXAMPLES,
+    )
 
 
 def _system_prompt(unit_id: int, categories: dict, revision_tips: dict, *, count: int = 1) -> str:
@@ -62,6 +84,7 @@ RULES:
 - Self-contained full-sentence stems; no images — describe graphs/tables in words.
 - Wrong options = plausible mistakes from the school's concept checks.
 - Match the requested category and level exactly. Each stem must be unique.
+- Use SEED EXAMPLES as style/format guides — write NEW questions, do not copy them verbatim.
 - For "simplest form" fraction answers: put ONLY the reduced fraction in options (e.g. 5/11, not 45/99).
 - Never put two options that are the same value in different forms (e.g. do not list both 45/99 and 5/11).
 {KID_NUMERIC_FORMAT_RULES}
@@ -157,11 +180,13 @@ def generate_concept_check_llm(
         return None
 
     archetype = c3cc.archetype_hint(category, level)
+    seed_block = _format_seed_block(_seed_examples(unit_id, category, level))
     user_msg = (
         f"Generate exactly 1 concept-check question.\n"
         f"category: **{category}** ({cats[category].get('name', category)})\n"
         f"level: **{level}** — {c3lvl.LEVEL_DESCRIPTIONS.get(level, level)}\n"
         f"Archetype: {archetype}\n"
+        f"{seed_block}\n"
         f"Session seed: {random.randint(1000, 9999)} — make it unique.\n"
         "Return ONLY the JSON array."
     )
@@ -234,12 +259,14 @@ def generate_concept_check_batch_llm(
             "- Wrong options = common slips (swap slope/intercept, use row vs table total).\n"
             "- Each explanation must have Step 1 and Step 2.\n"
         )
+    seed_block = _format_seed_block(_seed_examples(unit_id, category))
     user_msg = (
         f"Generate exactly {count} different concept-check questions for one category.\n"
         f"category: **{category}** ({cats[category].get('name', category)})\n"
         f"Levels in order: {level_list}\n"
         f"{archetypes}\n"
         f"{style_extra}"
+        f"{seed_block}\n"
         f"Session seed: {random.randint(1000, 9999)} — make each stem unique.\n"
         "Return ONLY a JSON array with that many objects."
     )
@@ -274,6 +301,58 @@ def generate_concept_check_batch_llm(
     if verbose and last_err:
         print(f"    reason: {last_err}")
     return []
+
+
+def expand_unit_bank(
+    xai_api_key: str,
+    unit_id: int,
+    *,
+    per_category: int = 2,
+    levels: list[str] | None = None,
+    categories: list[str] | None = None,
+    verbose: bool = False,
+) -> dict[str, int]:
+    """Generate more AI questions seeded from the current bank; returns added count per category."""
+    import arjun_course3_practice as c3p
+
+    cfg = c3p._unit_practice(unit_id)
+    cats = cfg["categories"]
+    cat_ids = [c for c in (categories or list(cats.keys())) if c in cats]
+    lvls = levels or ["B", "C", "D"]
+    before = c3store.count_by_category(unit_id)
+    batch: list[dict] = []
+
+    for cat_id in cat_ids:
+        wanted = [lvls[i % len(lvls)] for i in range(per_category)]
+        generated = generate_concept_check_batch_llm(
+            xai_api_key,
+            unit_id,
+            cat_id,
+            wanted,
+            categories=cats,
+            revision_tips=cfg["revision_tips"],
+            persist=False,
+            verbose=verbose,
+        )
+        batch.extend(generated)
+        for lvl in wanted[len(generated) :]:
+            q = generate_concept_check_llm(
+                xai_api_key,
+                unit_id,
+                cat_id,
+                lvl,
+                categories=cats,
+                revision_tips=cfg["revision_tips"],
+                persist=False,
+                verbose=verbose,
+            )
+            if q:
+                batch.append(q)
+
+    c3store.add_questions(unit_id, batch)
+    c3p.refresh_unit_bank(unit_id)
+    after = c3store.count_by_category(unit_id)
+    return {cat: after.get(cat, 0) - before.get(cat, 0) for cat in cat_ids}
 
 
 def generate_batch_for_unit(

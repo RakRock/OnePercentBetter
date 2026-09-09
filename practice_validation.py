@@ -422,6 +422,105 @@ def _merge_pool(
         seen_keys.add(key)
 
 
+def load_base_seed_questions(app_key: str, unit_id: int) -> list[dict]:
+    """Static unit bank + built-in concept-check generators (excludes AI JSON bank)."""
+    spec = resolve_app(app_key)
+    if unit_id < 1 or unit_id > spec.unit_count:
+        raise ValueError(f"{spec.unit_id_label} must be 1–{spec.unit_count} for {spec.label}")
+
+    if app_key == "course3":
+        from arjun_course3_concept_check import build_concept_check_bank
+        from arjun_course3_practice import _BASE_BANK_BY_UNIT
+
+        static = list(_BASE_BANK_BY_UNIT.get(unit_id, []))
+        builtin = build_concept_check_bank(unit_id)
+        return c3ans.finalize_questions(static + builtin)
+
+    if app_key == "edgenuity":
+        import arjun_edgenuity_course3_practice as ec3p
+
+        return list(ec3p.QUESTION_BANK_BY_UNIT.get(unit_id, []))
+
+    raise ValueError(f"Base-seed validation is not supported for app '{app_key}'")
+
+
+def validate_question_structure(
+    q: dict,
+    *,
+    is_pick_correct: Callable[[dict, int], bool],
+) -> list[str]:
+    """Return structural/key issues for one MCQ (empty list = OK)."""
+    issues: list[str] = []
+    qid = str(q.get("id", "?"))
+    opts = list(q.get("options") or [])
+    if len(opts) != 4:
+        issues.append(f"{qid}: expected 4 options, got {len(opts)}")
+    if not str(q.get("question", "")).strip():
+        issues.append(f"{qid}: empty question stem")
+    if not str(q.get("explanation", "")).strip():
+        issues.append(f"{qid}: empty explanation")
+    ans = q.get("answer")
+    if not isinstance(ans, int) or ans not in range(4):
+        issues.append(f"{qid}: answer index {ans!r} out of range")
+    if len(opts) == 4:
+        try:
+            from numeric_expression_eval import validate_distinct_options
+
+            validate_distinct_options([str(o) for o in opts])
+        except Exception as exc:
+            issues.append(f"{qid}: {exc}")
+        if isinstance(ans, int) and ans in range(4) and not is_pick_correct(q, ans):
+            issues.append(f"{qid}: keyed answer fails grading check")
+    return issues
+
+
+def run_base_seed_validation_audit(
+    app_key: str,
+    unit_id: int,
+    *,
+    seed: int | None = None,
+    student_name: str | None = None,
+) -> dict:
+    """Validate every static + built-in seed question for a unit."""
+    spec = resolve_app(app_key)
+    unit = spec.get_unit_info(unit_id)
+    questions = load_base_seed_questions(app_key, unit_id)
+    structural_issues: list[str] = []
+    for q in questions:
+        structural_issues.extend(
+            validate_question_structure(q, is_pick_correct=spec.is_pick_correct)
+        )
+    answers = simulate_random_answers(
+        questions, is_pick_correct=spec.is_pick_correct, seed=seed
+    )
+    report = spec.build_report(questions, answers, unit_id)
+    audit_rows = build_validation_audit_rows(
+        questions,
+        answers,
+        categories=spec.get_categories(unit_id),
+    )
+    subtitle = unit.get("subtitle", "")
+    if subtitle:
+        subtitle = f"{subtitle} · base seed bank"
+    else:
+        subtitle = "base seed bank"
+    return {
+        "app": spec,
+        "student_name": student_name or spec.student_name,
+        "unit_id": unit_id,
+        "unit_title": unit.get("title", f"{spec.unit_id_label} {unit_id}"),
+        "unit_subtitle": subtitle,
+        "questions": questions,
+        "answers": answers,
+        "report": report,
+        "audit_rows": audit_rows,
+        "generated_count": len(questions),
+        "requested_count": len(questions),
+        "structural_issues": structural_issues,
+        "base_seed": True,
+    }
+
+
 def generate_validation_questions(
     app_key: str,
     unit_id: int,

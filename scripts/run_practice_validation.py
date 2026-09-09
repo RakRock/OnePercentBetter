@@ -4,6 +4,7 @@
 Examples:
   python scripts/run_practice_validation.py --list-apps
   python scripts/run_practice_validation.py --app course3 --unit 1 --count 100 --email
+  python scripts/run_practice_validation.py --app course3 --unit 1 --base-seed --email
   python scripts/run_practice_validation.py --app harshit_prereq --unit 4 --count 100 --email
   python scripts/run_practice_validation.py --app harshit_class10 --unit 1 --count 50 --dry-run
 """
@@ -42,6 +43,11 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--unit", type=int, default=1, help="Unit or PreReq number (default: 1)")
     parser.add_argument("--count", type=int, default=100, help="Questions to generate (default: 100)")
     parser.add_argument(
+        "--base-seed",
+        action="store_true",
+        help="Audit all static + built-in seed questions (no AI bank, no random sample)",
+    )
+    parser.add_argument(
         "--use-llm",
         action="store_true",
         help="Enable Grok generation where configured (requires XAI_API_KEY)",
@@ -62,7 +68,7 @@ def _parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = _parse_args()
-    from practice_validation import list_apps, run_validation_audit
+    from practice_validation import list_apps, run_base_seed_validation_audit, run_validation_audit
     from practice_email.delivery import send_validation_audit_email
     from practice_email.settings import practice_email_enabled
     import edgenuity_practice_email as mail
@@ -78,14 +84,22 @@ def main() -> int:
         return 0
 
     try:
-        payload = run_validation_audit(
-            args.app,
-            args.unit,
-            args.count,
-            use_llm=args.use_llm,
-            seed=args.seed,
-            student_name=args.student,
-        )
+        if args.base_seed:
+            payload = run_base_seed_validation_audit(
+                args.app,
+                args.unit,
+                seed=args.seed,
+                student_name=args.student,
+            )
+        else:
+            payload = run_validation_audit(
+                args.app,
+                args.unit,
+                args.count,
+                use_llm=args.use_llm,
+                seed=args.seed,
+                student_name=args.student,
+            )
     except ValueError as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 2
@@ -100,9 +114,21 @@ def main() -> int:
     print(f"Student: {student}")
     print(f"App: {spec.label}")
     print(f"{spec.unit_id_label}: {payload['unit_id']} — {payload['unit_title']}")
+    mode = "base seed bank" if payload.get("base_seed") else "sampled session"
+    print(f"Mode: {mode}")
     print(f"Generated: {generated}/{requested} questions")
     print(f"Simulated random score: {report.get('correct_count')}/{report.get('total')} ({report.get('score_pct')}%)")
     print(f"Simulated misses (explanations included in email): {wrong}")
+
+    structural = payload.get("structural_issues") or []
+    if structural:
+        print(f"Structural issues found: {len(structural)}")
+        for issue in structural[:20]:
+            print(f"  - {issue}")
+        if len(structural) > 20:
+            print(f"  ... and {len(structural) - 20} more")
+    else:
+        print("Structural validation: all questions passed")
 
     if generated < requested:
         print(f"Warning: only {generated} unique questions available; requested {requested}.")

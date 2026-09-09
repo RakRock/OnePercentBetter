@@ -53,13 +53,46 @@ DEFAULT_SESSION_COUNT = 15
 FOCUS_SESSION_COUNT = 8
 RECENT_SESSIONS_TO_AVOID = 2
 
-QUESTION_BANK_BY_UNIT: dict[int, list[dict]] = {
-    1: extend_bank(UNIT1_QUESTION_BANK, 1),
-    2: extend_bank(UNIT2_QUESTION_BANK, 2),
-    3: extend_bank(UNIT3_QUESTION_BANK, 3),
-    4: extend_bank(UNIT4_QUESTION_BANK, 4),
-    5: extend_bank(UNIT5_QUESTION_BANK, 5),
+_BASE_BANK_BY_UNIT: dict[int, list[dict]] = {
+    1: UNIT1_QUESTION_BANK,
+    2: UNIT2_QUESTION_BANK,
+    3: UNIT3_QUESTION_BANK,
+    4: UNIT4_QUESTION_BANK,
+    5: UNIT5_QUESTION_BANK,
 }
+
+QUESTION_BANK_BY_UNIT: dict[int, list[dict]] = {
+    uid: extend_bank(base, uid) for uid, base in _BASE_BANK_BY_UNIT.items()
+}
+
+
+def refresh_unit_bank(unit_id: int) -> int:
+    """Reload merged bank (static + concept checks + AI JSON) after new questions are saved."""
+    base = _BASE_BANK_BY_UNIT.get(unit_id)
+    if not base:
+        return 0
+    QUESTION_BANK_BY_UNIT[unit_id] = extend_bank(base, unit_id)
+    return len(QUESTION_BANK_BY_UNIT[unit_id])
+
+
+def seed_questions_for_category(
+    unit_id: int,
+    category: str,
+    *,
+    level: str | None = None,
+    limit: int = 3,
+) -> list[dict]:
+    """Sample existing bank questions to seed Grok generation (style guides, not copies)."""
+    bank = QUESTION_BANK_BY_UNIT.get(unit_id, [])
+    pool = [q for q in bank if q.get("category") == category]
+    if level:
+        by_level = [q for q in pool if q.get("level") == level]
+        if by_level:
+            pool = by_level
+    if not pool:
+        return []
+    k = min(limit, len(pool))
+    return random.sample(pool, k)
 
 CATEGORIES_BY_UNIT: dict[int, dict] = {
     1: UNIT1_CATEGORIES,

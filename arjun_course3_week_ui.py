@@ -193,3 +193,52 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
     if saved.get("topics"):
         st.markdown("**Current active plan**")
         st.code(format_summary(unit_id, saved), language=None)
+
+    if track == "course3":
+        import arjun_course3_concept_check_llm as c3ccllm
+        import arjun_course3_concept_check_store as c3store
+
+        st.markdown("---")
+        st.markdown("#### Expand question bank")
+        st.caption(
+            "Generate more practice questions with Grok, using your **current bank** as style seeds "
+            "(same approach as Harshit Biology). New questions are saved to the unit AI bank."
+        )
+        ai_counts = c3store.count_by_category(unit_id)
+        if ai_counts:
+            parts = [f"{categories_meta.get(cid, {}).get('name', cid)}: {n}" for cid, n in sorted(ai_counts.items())]
+            st.caption("AI bank per topic: " + " · ".join(parts))
+        else:
+            st.caption("AI bank is empty for this unit — generation will use the static bank as seeds.")
+
+        per_topic = st.number_input(
+            "New questions per topic",
+            min_value=1,
+            max_value=6,
+            value=2,
+            key=f"{key_prefix}_setup_expand_count_{unit_id}",
+        )
+        if st.button(
+            "Generate more questions (Grok)",
+            key=f"{key_prefix}_setup_expand_{unit_id}",
+            disabled=not xai_key,
+        ):
+            with st.spinner(f"Generating ~{per_topic * len(categories_meta)} questions for Unit {unit_id}…"):
+                try:
+                    added = c3ccllm.expand_unit_bank(
+                        xai_key,
+                        unit_id,
+                        per_category=int(per_topic),
+                    )
+                    total_added = sum(added.values())
+                    refreshed = c3p.refresh_unit_bank(unit_id)
+                    if total_added:
+                        st.success(
+                            f"Added **{total_added}** new question(s). "
+                            f"Unit bank now has **{refreshed}** questions."
+                        )
+                    else:
+                        st.warning("No new questions were saved (duplicates or generation failed).")
+                except Exception as exc:
+                    st.error(f"Generation failed: {exc}")
+            st.rerun()
