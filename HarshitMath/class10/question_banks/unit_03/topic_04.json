@@ -3,7 +3,7 @@
     "A": [
       {
         "id": "u3_t4_A_bc2fabc0",
-        "question": "Cross-multiplication formula for a₁x + b₁y = c₁:",
+        "question": "Cross-multiplication formula for a₁x + b₁y = c₁ and a₂x + b₂y = c₂:",
         "options": [
           "x = (c₁b₂ - c₂b₁)/(a₁b₂ - a₂b₁), y = (a₁c₂ - a₂c₁)/(a₁b₂ - a₂b₁)",
           "x = (a₁c₂ - a₂c₁)/(b₁c₂ - b₂c₁)",
@@ -11,7 +11,7 @@
           "x = c₁/a₁, y = c₂/a₂"
         ],
         "answer": 0,
-        "explanation": "",
+        "explanation": "Cramer / cross-multiplication: x = (c₁b₂ − c₂b₁)/Δ, y = (a₁c₂ − a₂c₁)/Δ, Δ = a₁b₂ − a₂b₁.",
         "topic": 4,
         "level": "A",
         "unit_id": 3,
@@ -713,7 +713,7 @@
         "question": "Father is 3× son's age; in 12 years he will be 2× son's age. Age difference now?",
         "options": [
           "36 years",
-          "24 years (alt 1)",
+          "27 years",
           "24 years",
           "12 years"
         ],
@@ -1379,7 +1379,7 @@
         "id": "u3_t4_D_ab7cedbb",
         "question": "Father is 3× son's age; in 14 years he will be 2× son's age. Age difference now?",
         "options": [
-          "28 years (alt 1)",
+          "31 years",
           "28 years",
           "14 years",
           "42 years"
@@ -1401,7 +1401,7 @@
           "18 years",
           "9 years",
           "27 years",
-          "18 years (alt 1)"
+          "21 years"
         ],
         "answer": 0,
         "explanation": "3x + 9 = 2(x + 9) ⇒ x = 9; difference = 18.",
@@ -1418,7 +1418,7 @@
         "question": "Father is 3× son's age; in 11 years he will be 2× son's age. Age difference now?",
         "options": [
           "33 years",
-          "22 years (alt 1)",
+          "25 years",
           "22 years",
           "11 years"
         ],
@@ -1493,7 +1493,7 @@
         "id": "u3_t4_D_66a538c0",
         "question": "Father is 3× son's age; in 15 years he will be 2× son's age. Age difference now?",
         "options": [
-          "30 years (alt 1)",
+          "33 years",
           "30 years",
           "15 years",
           "45 years"
@@ -1514,7 +1514,7 @@
         "options": [
           "15 years",
           "45 years",
-          "30 years (alt 1)",
+          "33 years",
           "30 years"
         ],
         "answer": 3,
@@ -1534,7 +1534,7 @@
           "26 years",
           "13 years",
           "39 years",
-          "26 years (alt 1)"
+          "29 years"
         ],
         "answer": 0,
         "explanation": "3x + 13 = 2(x + 13) ⇒ x = 13; difference = 26.",

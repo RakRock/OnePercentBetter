@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import math
 import random
+import re
 import uuid
 from fractions import Fraction
 
@@ -815,20 +816,28 @@ def _mcq(
     return out
 
 
+def _option_dedupe_key(text: str) -> str:
+    s = str(text).strip()
+    s = re.sub(r"\s*\(alt\)\s*$", "", s, flags=re.I)
+    s = re.sub(r"\s*\(alt\s*\d+\)\s*$", "", s, flags=re.I)
+    return s
+
+
 def _shuffle_options(correct: str, wrong: list[str]) -> tuple[list[str], int]:
     correct = str(correct)
-    seen = {correct}
+    seen = {_option_dedupe_key(correct)}
     unique_wrong: list[str] = []
     for item in wrong:
         candidate = str(item)
-        if candidate in seen:
+        key = _option_dedupe_key(candidate)
+        if key in seen:
             continue
-        seen.add(candidate)
+        seen.add(key)
         unique_wrong.append(candidate)
     while len(unique_wrong) < 3:
         n = len(unique_wrong)
         filler: str | None = None
-        if correct.isdigit():
+        if correct.lstrip("-").isdigit():
             filler = str(int(correct) + n + 1)
         elif "/" in correct:
             parts = correct.split("/", 1)
@@ -2173,7 +2182,15 @@ def _gen_u3_t4(level: str) -> dict:
             "x = (c₁b₂ − c₂b₁)/(a₁b₂ − a₂b₁), y = (a₁c₂ − a₂c₁)/(a₁b₂ − a₂b₁)",
             ["x = c₁/a₁, y = c₂/a₂", "x = (a₁c₂ − a₂c₁)/(b₁c₂ − b₂c₁)", "x = y = c₁ + c₂"],
         )
-        return _mcq(3, 4, level, "Cross-multiplication formula for a₁x + b₁y = c₁:", opts, ans)
+        return _mcq(
+            3,
+            4,
+            level,
+            "Cross-multiplication formula for a₁x + b₁y = c₁ and a₂x + b₂y = c₂:",
+            opts,
+            ans,
+            "Cramer / cross-multiplication: x = (c₁b₂ − c₂b₁)/Δ, y = (a₁c₂ − a₂c₁)/Δ, Δ = a₁b₂ − a₂b₁.",
+        )
     if level == "B":
         opts, ans = _shuffle_options(f"x = {x_cross}, y = {y_cross}", [f"x = {y_cross}, y = {x_cross}", f"x = {x_cross + 1}, y = {y_cross}", f"x = {x}, y = {y + 1}"])
         return _mcq(

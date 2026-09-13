@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 UNIT03_DIR = ROOT / "HarshitMath" / "class10" / "question_banks" / "unit_03"
 
 _ALT_SUFFIX = re.compile(r"\s*\(alt\)\s*$", re.I)
+_ALT_NUM_SUFFIX = re.compile(r"\s*\(alt\s*\d+\)\s*$", re.I)
 _LINES_A = re.compile(
     r"^Lines (.+?) and (.+?)(?: \(different slopes\))? are:\s*$",
     re.I,
@@ -49,7 +50,37 @@ def _det_int(seed: str, lo: int, hi: int) -> int:
 
 
 def _strip_alt(text: str) -> str:
-    return _ALT_SUFFIX.sub("", str(text).strip())
+    s = _ALT_SUFFIX.sub("", str(text).strip())
+    return _ALT_NUM_SUFFIX.sub("", s).strip()
+
+
+def _norm_option(text: str) -> str:
+    return _strip_alt(text).strip().lower()
+
+
+def _wrong_distractor(correct: str, used: set[str], seed: str) -> str:
+    """Numeric or 'N years' distractor distinct from correct and used set."""
+    base = _strip_alt(correct)
+    used_norm = {_norm_option(u) for u in used}
+    m = re.match(r"^(-?\d+)\s*years?\s*$", base, re.I)
+    if m:
+        v = int(m.group(1))
+        for delta in (3, 5, 7, 9, 11, 2, 4):
+            cand = f"{v + delta} years"
+            if _norm_option(cand) not in used_norm and _norm_option(cand) != _norm_option(correct):
+                return cand
+    m = re.match(r"^(-?\d+)$", base.strip())
+    if m:
+        v = int(m.group(1))
+        for delta in (1, 2, 3, 4, 5):
+            for cand in (str(v + delta), str(v - delta)):
+                if _norm_option(cand) not in used_norm and _norm_option(cand) != _norm_option(correct):
+                    return cand
+    n = _det_int(seed, 2, 50)
+    cand = str(n)
+    if _norm_option(cand) not in used_norm:
+        return cand
+    return str(n + 17)
 
 
 def _parse_lin_eq(eq: str) -> tuple[int, int, int]:
@@ -84,23 +115,25 @@ def _line_pair_label(a1: int, b1: int, c1: int, a2: int, b2: int, c2: int) -> st
 
 
 def _shuffle_opts(correct: str, wrong: list[str], seed: str) -> tuple[list[str], int]:
-    seen = {correct.strip().lower()}
+    correct = _strip_alt(correct)
+    seen = {_norm_option(correct)}
     distractors: list[str] = []
+    used: set[str] = {correct}
     for w in wrong:
-        key = str(w).strip().lower()
-        if key in seen or key == correct.strip().lower():
+        w = _strip_alt(str(w))
+        key = _norm_option(w)
+        if key in seen:
             continue
-        distractors.append(str(w))
+        distractors.append(w)
         seen.add(key)
+        used.add(w)
         if len(distractors) >= 3:
             break
-    n = 1
     while len(distractors) < 3:
-        filler = f"{correct} (alt {n})"
-        if filler.lower() not in seen:
-            distractors.append(filler)
-            seen.add(filler.lower())
-        n += 1
+        filler = _wrong_distractor(correct, used, f"{seed}-f{len(distractors)}")
+        distractors.append(filler)
+        seen.add(_norm_option(filler))
+        used.add(filler)
     opts = [correct] + distractors[:3]
     shift = _det_int(seed, 0, 3)
     for _ in range(shift):
@@ -108,32 +141,43 @@ def _shuffle_opts(correct: str, wrong: list[str], seed: str) -> tuple[list[str],
     return opts, opts.index(correct)
 
 
-def _fix_duplicate_options(q: dict) -> bool:
-    opts = [str(o) for o in q.get("options", [])]
-    if len(opts) != 4:
+def _fix_equivalent_options(q: dict) -> bool:
+    raw = [str(o) for o in q.get("options", [])]
+    if len(raw) != 4:
         return False
     ans = q.get("answer")
     if not isinstance(ans, int) or not (0 <= ans < 4):
         return False
-    correct = opts[ans]
-    seen = {correct.strip().lower()}
-    changed = False
-    for i, o in enumerate(opts):
+    opts = [_strip_alt(o) for o in raw]
+    correct_norm = _norm_option(opts[ans])
+    changed = opts != raw
+    seen_norm: set[str] = set()
+    for i in range(4):
+        n = _norm_option(opts[i])
         if i == ans:
+            seen_norm.add(correct_norm)
             continue
-        key = o.strip().lower()
-        if key in seen:
-            repl = str(int(_det_int(f"{q.get('id')}-{i}", 2, 40)))
-            if repl == correct or repl in opts:
-                repl = str(int(repl) + 3)
-            opts[i] = repl
+        if n == correct_norm or n in seen_norm:
+            used = {opts[j] for j in range(4) if j != i}
+            opts[i] = _wrong_distractor(opts[ans], used, f"{q.get('id', '')}-{i}")
             changed = True
-            seen.add(repl)
-        else:
-            seen.add(key)
+            n = _norm_option(opts[i])
+        seen_norm.add(n)
     if changed:
         q["options"] = opts
     return changed
+
+
+def _fix_cross_mult_stem(q: dict) -> bool:
+    qu = str(q.get("question", ""))
+    if "Cross-multiplication formula" not in qu or "a₂x" in qu:
+        return False
+    q["question"] = "Cross-multiplication formula for a₁x + b₁y = c₁ and a₂x + b₂y = c₂:"
+    if not str(q.get("explanation", "")).strip():
+        q["explanation"] = (
+            "Cramer / cross-multiplication: x = (c₁b₂ − c₂b₁)/Δ, y = (a₁c₂ − a₂c₁)/Δ, Δ = a₁b₂ − a₂b₁."
+        )
+    return True
 
 
 def _fix_lines_level_a(q: dict) -> bool:
@@ -335,7 +379,7 @@ def _normalize_options(q: dict) -> None:
 
 def repair_file(path: Path) -> dict[str, int]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    stats = {k: 0 for k in ("lines_a", "subst_a", "age", "train", "ambig_b", "alt", "dedupe")}
+    stats = {k: 0 for k in ("lines_a", "subst_a", "age", "train", "ambig_b", "alt", "dedupe", "cross")}
     questions = data.get("questions", {})
     if not isinstance(questions, dict):
         return stats
@@ -360,8 +404,10 @@ def repair_file(path: Path) -> dict[str, int]:
                 stats["train"] += 1
             if _fix_ambiguous_level_b(q):
                 stats["ambig_b"] += 1
-            if _fix_duplicate_options(q):
+            if _fix_equivalent_options(q):
                 stats["dedupe"] += 1
+            if _fix_cross_mult_stem(q):
+                stats["cross"] += 1
 
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return stats
@@ -371,7 +417,7 @@ def main() -> int:
     if not UNIT03_DIR.is_dir():
         print(f"Missing {UNIT03_DIR}", file=sys.stderr)
         return 1
-    totals = {k: 0 for k in ("lines_a", "subst_a", "age", "train", "ambig_b", "alt", "dedupe")}
+    totals = {k: 0 for k in ("lines_a", "subst_a", "age", "train", "ambig_b", "alt", "dedupe", "cross")}
     for path in sorted(UNIT03_DIR.glob("topic_*.json")):
         stats = repair_file(path)
         for k in totals:

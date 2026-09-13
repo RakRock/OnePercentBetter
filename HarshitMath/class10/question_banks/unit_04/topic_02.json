@@ -599,7 +599,7 @@
           "(x + 2)x = 0",
           "(x - 2)x = 0",
           "(x + 2)² = 0",
-          "(x - 2)x = 0"
+          "45"
         ],
         "answer": 1,
         "explanation": "",
@@ -922,7 +922,7 @@
           "(x - 4)x = 0",
           "(x + 4)x = 0",
           "(x - 4)² = 0",
-          "(x + 4)x = 0"
+          "9"
         ],
         "answer": 1,
         "explanation": "",
@@ -1034,7 +1034,7 @@
         "question": "Factorised form of x² - 5x = 0:",
         "options": [
           "(x + 5)x = 0",
-          "(x - 5)x = 0",
+          "8",
           "(x + 5)² = 0",
           "(x - 5)x = 0"
         ],
@@ -1835,12 +1835,12 @@
         "id": "u4_t2_D_5902e55e",
         "question": "Factorise completely: 4x² - 64x + 256 = 0",
         "options": [
-          "4(x² - 16x + 64)",
-          "4(x² + 16x + 64)",
+          "4(x − 8)(x − 9) = 0",
           "(x² - 64x + 256)",
-          "4x(x - 16)"
+          "4(x − 8)² = 0",
+          "4(x² - 16x + 64)"
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1857,7 +1857,7 @@
           "(x² + 16x + 12)",
           "4(x + 1)(x + 3) = 0",
           "4(x² + 4x + 3)",
-          "4(x² − 4x + 3)"
+          "4x(x + 3) = 0"
         ],
         "answer": 1,
         "explanation": "",
@@ -1873,7 +1873,7 @@
         "id": "u4_t2_D_d66fbae1",
         "question": "Factorise completely: 2x² + 12x + 16 = 0",
         "options": [
-          "2(x² − 6x + 8)",
+          "2(x + 1)(x + 4) = 0",
           "(x² + 12x + 16)",
           "2(x + 2)(x + 4) = 0",
           "2(x² + 6x + 8)"
@@ -1892,12 +1892,12 @@
         "id": "u4_t2_D_1032348d",
         "question": "Factorise completely: 2x² + 10x - 28 = 0",
         "options": [
-          "2x(x + 5)",
-          "2(x² - 5x - 14)",
+          "(x² + 10x - 28)",
+          "2(x − 2)(x + 7) = 0",
           "2(x² + 5x - 14)",
-          "(x² + 10x - 28)"
+          "2(x − 3)(x + 7) = 0"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1911,12 +1911,12 @@
         "id": "u4_t2_D_a2a2193c",
         "question": "Factorise completely: 3x² - 9x + 0 = 0",
         "options": [
-          "3x(x - 3)",
+          "3(x − 3)x = 0",
           "3(x² - 3x + 0)",
-          "3(x² + 3x + 0)",
+          "3(x − 4)x = 0",
           "(x² - 9x + 0)"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1930,12 +1930,12 @@
         "id": "u4_t2_D_65c60c7b",
         "question": "Factorise completely: 2x² - 12x - 32 = 0",
         "options": [
-          "2(x² + 6x - 16)",
-          "2x(x - 6)",
+          "(x² - 12x - 32)",
+          "2(x − 8)(x + 2) = 0",
           "2(x² - 6x - 16)",
-          "(x² - 12x - 32)"
+          "2(x − 9)(x + 2) = 0"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1949,12 +1949,12 @@
         "id": "u4_t2_D_b1796979",
         "question": "Factorise completely: 2x² + 0x - 72 = 0",
         "options": [
-          "2xx",
-          "(x² + 0x - 72)",
+          "2(x − 6)(x + 6) = 0",
           "2(x² + 0x - 36)",
-          "2(x² - 0x - 36)"
+          "2(x − 7)(x + 6) = 0",
+          "(x² + 0x - 72)"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -1968,7 +1968,7 @@
         "id": "u4_t2_D_afab37fc",
         "question": "Factorise completely: 4x² + 44x + 120 = 0",
         "options": [
-          "4(x² − 11x + 30)",
+          "4(x + 4)(x + 6) = 0",
           "(x² + 44x + 120)",
           "4(x + 5)(x + 6) = 0",
           "4(x² + 11x + 30)"
@@ -1987,12 +1987,12 @@
         "id": "u4_t2_D_dc026096",
         "question": "Factorise completely: 4x² + 16x - 128 = 0",
         "options": [
+          "(x² + 16x - 128)",
+          "4(x − 4)(x + 8) = 0",
           "4(x² + 4x - 32)",
-          "4(x² - 4x - 32)",
-          "4x(x + 4)",
-          "(x² + 16x - 128)"
+          "4(x − 5)(x + 8) = 0"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2007,11 +2007,11 @@
         "question": "Factorise completely: 3x² + 12x - 63 = 0",
         "options": [
           "3(x² + 4x - 21)",
-          "3x(x + 4)",
-          "3(x² - 4x - 21)",
-          "(x² + 12x - 63)"
+          "3(x − 4)(x + 7) = 0",
+          "(x² + 12x - 63)",
+          "3(x − 3)(x + 7) = 0"
         ],
-        "answer": 0,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2025,12 +2025,12 @@
         "id": "u4_t2_D_be1eef0f",
         "question": "Factorise completely: 3x² + 18x - 21 = 0",
         "options": [
-          "3x(x + 6)",
-          "(x² + 18x - 21)",
+          "3(x − 1)(x + 7) = 0",
           "3(x² + 6x - 7)",
-          "3(x² - 6x - 7)"
+          "3(x − 2)(x + 7) = 0",
+          "(x² + 18x - 21)"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2044,12 +2044,12 @@
         "id": "u4_t2_D_fb2ad23f",
         "question": "Factorise completely: 2x² + 0x - 98 = 0",
         "options": [
-          "2xx",
           "2(x² + 0x - 49)",
-          "2(x² - 0x - 49)",
-          "(x² + 0x - 98)"
+          "2(x − 8)(x + 7) = 0",
+          "(x² + 0x - 98)",
+          "2(x − 7)(x + 7) = 0"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2064,7 +2064,7 @@
         "question": "Factorise completely: 2x² + 18x + 16 = 0",
         "options": [
           "2(x² + 9x + 8)",
-          "2(x² − 9x + 8)",
+          "2x(x + 8) = 0",
           "(x² + 18x + 16)",
           "2(x + 1)(x + 8) = 0"
         ],
@@ -2082,12 +2082,12 @@
         "id": "u4_t2_D_6b4ac2bf",
         "question": "Factorise completely: 3x² - 6x + 0 = 0",
         "options": [
-          "3x(x - 2)",
           "3(x² - 2x + 0)",
-          "3(x² + 2x + 0)",
-          "(x² - 6x + 0)"
+          "3(x − 3)x = 0",
+          "(x² - 6x + 0)",
+          "3(x − 2)x = 0"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2102,7 +2102,7 @@
         "question": "Factorise completely: 3x² + 27x + 60 = 0",
         "options": [
           "3(x² + 9x + 20)",
-          "3(x² − 9x + 20)",
+          "3(x + 3)(x + 5) = 0",
           "(x² + 27x + 60)",
           "3(x + 4)(x + 5) = 0"
         ],
@@ -2120,12 +2120,12 @@
         "id": "u4_t2_D_2c79abc4",
         "question": "Factorise completely: 4x² - 44x + 120 = 0",
         "options": [
-          "4(x² - 11x + 30)",
           "(x² - 44x + 120)",
-          "4x(x - 11)",
-          "4(x² + 11x + 30)"
+          "4(x − 6)(x − 5) = 0",
+          "4(x² - 11x + 30)",
+          "4(x − 7)(x − 5) = 0"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2139,10 +2139,10 @@
         "id": "u4_t2_D_20ae1eaa",
         "question": "Factorise completely: 4x² - 32x + 28 = 0",
         "options": [
-          "4x(x - 8)",
+          "(x² - 32x + 28)",
+          "4(x − 7)(x − 1) = 0",
           "4(x² - 8x + 7)",
-          "4(x² + 8x + 7)",
-          "(x² - 32x + 28)"
+          "4(x − 8)(x − 1) = 0"
         ],
         "answer": 1,
         "explanation": "",
@@ -2159,11 +2159,11 @@
         "question": "Factorise completely: 4x² - 24x - 64 = 0",
         "options": [
           "4(x² - 6x - 16)",
+          "4(x − 9)(x + 2) = 0",
           "(x² - 24x - 64)",
-          "4x(x - 6)",
-          "4(x² + 6x - 16)"
+          "4(x − 8)(x + 2) = 0"
         ],
-        "answer": 0,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2177,12 +2177,12 @@
         "id": "u4_t2_D_86825492",
         "question": "Factorise completely: 2x² + 8x - 24 = 0",
         "options": [
-          "2(x² - 4x - 12)",
           "2(x² + 4x - 12)",
+          "2(x − 3)(x + 6) = 0",
           "(x² + 8x - 24)",
-          "2x(x + 4)"
+          "2(x − 2)(x + 6) = 0"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2196,12 +2196,12 @@
         "id": "u4_t2_D_d00d71f1",
         "question": "Factorise completely: 2x² - 2x - 112 = 0",
         "options": [
-          "2(x² + x - 56)",
-          "2(x² - x - 56)",
-          "2x(x - 1)",
-          "(x² - 2x - 112)"
+          "2(x² - 1x - 56)",
+          "2(x − 9)(x + 7) = 0",
+          "(x² - 2x - 112)",
+          "2(x − 8)(x + 7) = 0"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2215,12 +2215,12 @@
         "id": "u4_t2_D_4954327a",
         "question": "Factorise completely: 4x² - 16x - 84 = 0",
         "options": [
-          "4x(x - 4)",
-          "4(x² + 4x - 21)",
-          "(x² - 16x - 84)",
-          "4(x² - 4x - 21)"
+          "4(x − 7)(x + 3) = 0",
+          "4(x² - 4x - 21)",
+          "4(x − 8)(x + 3) = 0",
+          "(x² - 16x - 84)"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2234,12 +2234,12 @@
         "id": "u4_t2_D_03f64be4",
         "question": "Factorise completely: 4x² + 8x - 140 = 0",
         "options": [
-          "4x(x + 2)",
-          "4(x² + 2x - 35)",
-          "4(x² - 2x - 35)",
-          "(x² + 8x - 140)"
+          "4(x − 6)(x + 7) = 0",
+          "(x² + 8x - 140)",
+          "4(x − 5)(x + 7) = 0",
+          "4(x² + 2x - 35)"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2254,7 +2254,7 @@
         "question": "Factorise completely: 4x² + 28x + 40 = 0",
         "options": [
           "4(x² + 7x + 10)",
-          "4(x² − 7x + 10)",
+          "4(x + 1)(x + 5) = 0",
           "(x² + 28x + 40)",
           "4(x + 2)(x + 5) = 0"
         ],
@@ -2273,11 +2273,11 @@
         "question": "Factorise completely: 2x² - 14x + 24 = 0",
         "options": [
           "2(x² - 7x + 12)",
-          "2(x² + 7x + 12)",
+          "2(x − 5)(x − 3) = 0",
           "(x² - 14x + 24)",
-          "2x(x - 7)"
+          "2(x − 4)(x − 3) = 0"
         ],
-        "answer": 0,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2291,12 +2291,12 @@
         "id": "u4_t2_D_f896eb8f",
         "question": "Factorise completely: 3x² + 6x - 144 = 0",
         "options": [
-          "3(x² + 2x - 48)",
-          "3x(x + 2)",
+          "3(x − 7)(x + 8) = 0",
           "(x² + 6x - 144)",
-          "3(x² - 2x - 48)"
+          "3(x − 6)(x + 8) = 0",
+          "3(x² + 2x - 48)"
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2310,10 +2310,10 @@
         "id": "u4_t2_D_59813650",
         "question": "Factorise completely: 2x² + 2x - 84 = 0",
         "options": [
-          "2x(x + 1)",
-          "2(x² + x - 42)",
-          "2(x² - x - 42)",
-          "(x² + 2x - 84)"
+          "(x² + 2x - 84)",
+          "2(x − 6)(x + 7) = 0",
+          "2(x² + 1x - 42)",
+          "2(x − 7)(x + 7) = 0"
         ],
         "answer": 1,
         "explanation": "",
@@ -2329,12 +2329,12 @@
         "id": "u4_t2_D_dfd6fcc9",
         "question": "Factorise completely: 3x² - 33x + 90 = 0",
         "options": [
-          "3x(x - 11)",
-          "3(x² - 11x + 30)",
+          "3(x − 7)(x − 5) = 0",
           "(x² - 33x + 90)",
-          "3(x² + 11x + 30)"
+          "3(x − 6)(x − 5) = 0",
+          "3(x² - 11x + 30)"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2350,7 +2350,7 @@
         "options": [
           "3(x + 7)² = 0",
           "3(x² + 14x + 49)",
-          "3(x² − 14x + 49)",
+          "3(x + 7)(x + 6) = 0",
           "(x² + 42x + 147)"
         ],
         "answer": 0,
@@ -2367,7 +2367,7 @@
         "id": "u4_t2_D_6c0b221e",
         "question": "Factorise completely: 3x² + 3x + 0 = 0",
         "options": [
-          "3(x² − 1x + 0)",
+          "3(x − 1)(x + 1) = 0",
           "(x² + 3x + 0)",
           "3x(x + 1) = 0",
           "3(x² + 1x + 0)"
@@ -2386,12 +2386,12 @@
         "id": "u4_t2_D_76db142d",
         "question": "Factorise completely: 2x² - 2x - 84 = 0",
         "options": [
-          "2(x² + x - 42)",
-          "2(x² - x - 42)",
-          "2x(x - 1)",
-          "(x² - 2x - 84)"
+          "2(x − 8)(x + 6) = 0",
+          "(x² - 2x - 84)",
+          "2(x − 7)(x + 6) = 0",
+          "2(x² - 1x - 42)"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "D",
@@ -2409,7 +2409,7 @@
         "options": [
           "x² - 6 = 0",
           "x² - 9 = 0",
-          "x² + 6 = 0",
+          "x² + 6 + 1 = 0",
           "x² + 6 = 0"
         ],
         "answer": 3,
@@ -2866,7 +2866,7 @@
           "x² + 14 = 0",
           "x² - 14 = 0",
           "x² - 16 = 0",
-          "x² + 14 = 0"
+          "x² + 14 + 1 = 0"
         ],
         "answer": 0,
         "explanation": "",
