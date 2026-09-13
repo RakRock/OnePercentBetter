@@ -281,12 +281,14 @@ def send_validation_audit_email(
     requested_count: int,
     generated_count: int,
     when: datetime | None = None,
+    recipients: list[str] | None = None,
 ) -> EmailSendResult:
     """Email a full question-by-question validation audit to configured recipients."""
     settings = load_settings()
     if not settings.enabled:
         return EmailSendResult(ok=False, skipped=True, error="Email disabled")
-    if not settings.recipients:
+    addrs = recipients or list(settings.recipients)
+    if not addrs:
         return EmailSendResult(ok=False, skipped=True, error="PRACTICE_REPORT_EMAIL_TO is not set")
 
     ready, _transport, config_err = delivery_ready(settings)
@@ -313,7 +315,7 @@ def send_validation_audit_email(
         subject=subject,
         plain=plain,
         html=html,
-        recipients=list(settings.recipients),
+        recipients=addrs,
     )
 
 

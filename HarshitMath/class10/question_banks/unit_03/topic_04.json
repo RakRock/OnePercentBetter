@@ -712,13 +712,13 @@
         "id": "u3_t4_C_92ac0817",
         "question": "Father is 3× son's age; in 12 years he will be 2× son's age. Age difference now?",
         "options": [
-          "12 years",
           "36 years",
+          "24 years (alt 1)",
           "24 years",
-          "18 years"
+          "12 years"
         ],
         "answer": 2,
-        "explanation": "Set son = x, father = 3x; solve 3x + 12 = 2(x + 12) → x = 12, difference = 24.",
+        "explanation": "3x + 12 = 2(x + 12) ⇒ x = 12; difference = 24.",
         "topic": 4,
         "level": "C",
         "unit_id": 3,
@@ -1058,7 +1058,7 @@
         "options": [
           "9",
           "18",
-          "9 (alt)",
+          "30",
           "8"
         ],
         "answer": 0,
@@ -1379,13 +1379,13 @@
         "id": "u3_t4_D_ab7cedbb",
         "question": "Father is 3× son's age; in 14 years he will be 2× son's age. Age difference now?",
         "options": [
-          "36 years",
-          "24 years",
-          "12 years",
-          "38 years"
+          "28 years (alt 1)",
+          "28 years",
+          "14 years",
+          "42 years"
         ],
         "answer": 1,
-        "explanation": "son = 12, father = 36; difference = 24.",
+        "explanation": "3x + 14 = 2(x + 14) ⇒ x = 14; difference = 28.",
         "topic": 4,
         "level": "D",
         "unit_id": 3,
@@ -1398,13 +1398,13 @@
         "id": "u3_t4_D_5f6fcb6c",
         "question": "Father is 3× son's age; in 9 years he will be 2× son's age. Age difference now?",
         "options": [
-          "12 years",
-          "36 years",
-          "24 years",
-          "33 years"
+          "18 years",
+          "9 years",
+          "27 years",
+          "18 years (alt 1)"
         ],
-        "answer": 2,
-        "explanation": "son = 12, father = 36; difference = 24.",
+        "answer": 0,
+        "explanation": "3x + 9 = 2(x + 9) ⇒ x = 9; difference = 18.",
         "topic": 4,
         "level": "D",
         "unit_id": 3,
@@ -1417,13 +1417,13 @@
         "id": "u3_t4_D_9517f61d",
         "question": "Father is 3× son's age; in 11 years he will be 2× son's age. Age difference now?",
         "options": [
-          "36 years",
-          "35 years",
-          "24 years",
-          "12 years"
+          "33 years",
+          "22 years (alt 1)",
+          "22 years",
+          "11 years"
         ],
         "answer": 2,
-        "explanation": "son = 12, father = 36; difference = 24.",
+        "explanation": "3x + 11 = 2(x + 11) ⇒ x = 11; difference = 22.",
         "topic": 4,
         "level": "D",
         "unit_id": 3,
@@ -1493,13 +1493,13 @@
         "id": "u3_t4_D_66a538c0",
         "question": "Father is 3× son's age; in 15 years he will be 2× son's age. Age difference now?",
         "options": [
-          "36 years",
-          "24 years",
-          "39 years",
-          "12 years"
+          "30 years (alt 1)",
+          "30 years",
+          "15 years",
+          "45 years"
         ],
         "answer": 1,
-        "explanation": "son = 12, father = 36; difference = 24.",
+        "explanation": "3x + 15 = 2(x + 15) ⇒ x = 15; difference = 30.",
         "topic": 4,
         "level": "D",
         "unit_id": 3,
@@ -1510,15 +1510,15 @@
       },
       {
         "id": "u3_t4_D_7465b4b7",
-        "question": "Father is 2× son's age; in 8 years he will be 1× son's age. Age difference now?",
+        "question": "Father is 3× son's age; in 15 years he will be 2× son's age. Age difference now?",
         "options": [
-          "12 years",
-          "20 years",
-          "12 years (alt)",
-          "24 years"
+          "15 years",
+          "45 years",
+          "30 years (alt 1)",
+          "30 years"
         ],
-        "answer": 0,
-        "explanation": "son = 12, father = 24; difference = 12.",
+        "answer": 3,
+        "explanation": "3x + 15 = 2(x + 15) ⇒ x = 15; difference = 30.",
         "topic": 4,
         "level": "D",
         "unit_id": 3,
@@ -1529,15 +1529,15 @@
       },
       {
         "id": "u3_t4_D_6278e8a8",
-        "question": "Father is 2× son's age; in 14 years he will be 1× son's age. Age difference now?",
+        "question": "Father is 3× son's age; in 13 years he will be 2× son's age. Age difference now?",
         "options": [
           "26 years",
-          "12 years",
-          "24 years",
-          "12 years (alt)"
+          "13 years",
+          "39 years",
+          "26 years (alt 1)"
         ],
-        "answer": 1,
-        "explanation": "son = 12, father = 24; difference = 12.",
+        "answer": 0,
+        "explanation": "3x + 13 = 2(x + 13) ⇒ x = 13; difference = 26.",
         "topic": 4,
         "level": "D",
         "unit_id": 3,
@@ -1662,14 +1662,14 @@
       },
       {
         "id": "u3_t4_D_5e93b129",
-        "question": "Father is 2 times son's age. In 14 years he will be 1 times son's age. Step 1 — form the equations (x = son, y = father):",
+        "question": "Father is 3 times son's age. In 9 years he will be 2 times son's age. Step 1 — form the equations (x = son, y = father):",
         "options": [
-          "y = 2x; y + 14 = 1(x + 14)",
-          "x = 2y; x + 14 = 1(y + 14)",
-          "y = 2x; y = x",
-          "x + y = 14; y - x = 2"
+          "x + y = 9; y − x = 3",
+          "y = 3x; y + 9 = 2(x + 9)",
+          "x = 3y; x + 9 = 2(y + 9)",
+          "y = 3x; y = 2x"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "Step 2: solve the linear pair for present ages.",
         "topic": 4,
         "level": "D",
@@ -1681,12 +1681,12 @@
       },
       {
         "id": "u3_t4_D_bb7350eb",
-        "question": "Father is 2 times son's age. In 9 years he will be 1 times son's age. Step 1 — form the equations (x = son, y = father):",
+        "question": "Father is 3 times son's age. In 13 years he will be 2 times son's age. Step 1 — form the equations (x = son, y = father):",
         "options": [
-          "y = 2x; y + 9 = 1(x + 9)",
-          "x + y = 9; y - x = 2",
-          "x = 2y; x + 9 = 1(y + 9)",
-          "y = 2x; y = x"
+          "y = 3x; y + 13 = 2(x + 13)",
+          "x = 3y; x + 13 = 2(y + 13)",
+          "y = 3x; y = 2x",
+          "x + y = 13; y − x = 3"
         ],
         "answer": 0,
         "explanation": "Step 2: solve the linear pair for present ages.",
@@ -1700,12 +1700,12 @@
       },
       {
         "id": "u3_t4_D_df7e34f9",
-        "question": "Father is 2 times son's age. In 13 years he will be 1 times son's age. Step 1 — form the equations (x = son, y = father):",
+        "question": "Father is 3 times son's age. In 14 years he will be 2 times son's age. Step 1 — form the equations (x = son, y = father):",
         "options": [
-          "y = 2x; y = x",
-          "x + y = 13; y - x = 2",
-          "y = 2x; y + 13 = 1(x + 13)",
-          "x = 2y; x + 13 = 1(y + 13)"
+          "y = 3x; y = 2x",
+          "x + y = 14; y − x = 3",
+          "y = 3x; y + 14 = 2(x + 14)",
+          "x = 3y; x + 14 = 2(y + 14)"
         ],
         "answer": 2,
         "explanation": "Step 2: solve the linear pair for present ages.",
@@ -1719,15 +1719,15 @@
       },
       {
         "id": "u3_t4_D_c4ebfa21",
-        "question": "Father is 2× son's age; in 9 years he will be 1× son's age. Step 2 — present ages are:",
+        "question": "Father is 3× son's age; in 12 years he will be 2× son's age. Step 2 — present ages are:",
         "options": [
-          "Son = 8, Father = 16",
-          "Son = 17, Father = 25",
-          "Son = 16, Father = 8",
-          "Son = 9, Father = 16"
+          "Son = 12, Father = 36",
+          "Son = 24, Father = 48",
+          "Son = 36, Father = 12",
+          "Son = 13, Father = 36"
         ],
         "answer": 0,
-        "explanation": "From y = 2x and y + 9 = 1(x + 9), son = 8, father = 16.",
+        "explanation": "From y = 3x and y + 12 = 2(x + 12), x = 12, y = 36.",
         "topic": 4,
         "level": "D",
         "unit_id": 3,
@@ -1738,15 +1738,15 @@
       },
       {
         "id": "u3_t4_D_9f2c2a31",
-        "question": "Father is 2× son's age; in 13 years he will be 1× son's age. Step 2 — present ages are:",
+        "question": "Father is 3× son's age; in 13 years he will be 2× son's age. Step 2 — present ages are:",
         "options": [
-          "Son = 14, Father = 28",
-          "Son = 28, Father = 14",
-          "Son = 27, Father = 41",
-          "Son = 15, Father = 28"
+          "Son = 14, Father = 39",
+          "Son = 13, Father = 39",
+          "Son = 26, Father = 52",
+          "Son = 39, Father = 13"
         ],
-        "answer": 0,
-        "explanation": "From y = 2x and y + 13 = 1(x + 13), son = 14, father = 28.",
+        "answer": 1,
+        "explanation": "From y = 3x and y + 13 = 2(x + 13), x = 13, y = 39.",
         "topic": 4,
         "level": "D",
         "unit_id": 3,
@@ -1759,13 +1759,13 @@
         "id": "u3_t4_D_12a45032",
         "question": "Father is 3× son's age; in 14 years he will be 2× son's age. Step 2 — present ages are:",
         "options": [
-          "Son = 26, Father = 50",
-          "Son = 13, Father = 36",
-          "Son = 12, Father = 36",
-          "Son = 36, Father = 12"
+          "Son = 15, Father = 42",
+          "Son = 14, Father = 42",
+          "Son = 28, Father = 56",
+          "Son = 42, Father = 14"
         ],
-        "answer": 2,
-        "explanation": "From y = 3x and y + 14 = 2(x + 14), son = 12, father = 36.",
+        "answer": 1,
+        "explanation": "From y = 3x and y + 14 = 2(x + 14), x = 14, y = 42.",
         "topic": 4,
         "level": "D",
         "unit_id": 3,
@@ -1856,13 +1856,13 @@
         "id": "u3_t4_E_eeefc698",
         "question": "A train covers 312 km in 5 hours. Speed = ? km/h",
         "options": [
-          "57",
+          "63",
           "62",
-          "317",
-          "72"
+          "72",
+          "57"
         ],
         "answer": 1,
-        "explanation": "Speed = distance/time = 312/5 = 62.",
+        "explanation": "Speed = distance/time = 312/5 ≈ 62 km/h (nearest whole number).",
         "topic": 4,
         "level": "E",
         "unit_id": 3,
@@ -1875,13 +1875,13 @@
         "id": "u3_t4_E_d03ef508",
         "question": "A train covers 249 km in 4 hours. Speed = ? km/h",
         "options": [
-          "253",
-          "57",
+          "62",
           "72",
-          "62"
+          "57",
+          "63"
         ],
-        "answer": 3,
-        "explanation": "Speed = distance/time = 249/4 = 62.",
+        "answer": 0,
+        "explanation": "Speed = distance/time = 249/4 ≈ 62 km/h (nearest whole number).",
         "topic": 4,
         "level": "E",
         "unit_id": 3,
@@ -1894,13 +1894,13 @@
         "id": "u3_t4_E_551dfb4e",
         "question": "A train covers 260 km in 8 hours. Speed = ? km/h",
         "options": [
-          "32",
-          "268",
           "42",
-          "27"
+          "27",
+          "33",
+          "32"
         ],
-        "answer": 0,
-        "explanation": "Speed = distance/time = 260/8 = 32.",
+        "answer": 3,
+        "explanation": "Speed = distance/time = 260/8 ≈ 32 km/h (nearest whole number).",
         "topic": 4,
         "level": "E",
         "unit_id": 3,
@@ -2027,13 +2027,13 @@
         "id": "u3_t4_E_e0983e06",
         "question": "A train covers 307 km in 7 hours. Speed = ? km/h",
         "options": [
-          "38",
-          "314",
-          "43",
-          "53"
+          "45",
+          "44",
+          "54",
+          "39"
         ],
-        "answer": 2,
-        "explanation": "Speed = distance/time = 307/7 = 43.",
+        "answer": 1,
+        "explanation": "Speed = distance/time = 307/7 ≈ 44 km/h (nearest whole number).",
         "topic": 4,
         "level": "E",
         "unit_id": 3,
@@ -2046,13 +2046,13 @@
         "id": "u3_t4_E_881214ad",
         "question": "A train covers 440 km in 3 hours. Speed = ? km/h",
         "options": [
-          "156",
-          "141",
-          "146",
-          "443"
+          "147",
+          "157",
+          "142",
+          "148"
         ],
-        "answer": 2,
-        "explanation": "Speed = distance/time = 440/3 = 146.",
+        "answer": 0,
+        "explanation": "Speed = distance/time = 440/3 ≈ 147 km/h (nearest whole number).",
         "topic": 4,
         "level": "E",
         "unit_id": 3,
@@ -2065,13 +2065,13 @@
         "id": "u3_t4_E_b11092a3",
         "question": "A train covers 205 km in 7 hours. Speed = ? km/h",
         "options": [
-          "24",
+          "30",
+          "29",
           "39",
-          "212",
-          "29"
+          "24"
         ],
-        "answer": 3,
-        "explanation": "Speed = distance/time = 205/7 = 29.",
+        "answer": 1,
+        "explanation": "Speed = distance/time = 205/7 ≈ 29 km/h (nearest whole number).",
         "topic": 4,
         "level": "E",
         "unit_id": 3,

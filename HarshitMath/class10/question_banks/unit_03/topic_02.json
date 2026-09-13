@@ -5,10 +5,10 @@
         "id": "u3_t2_A_42e92071",
         "question": "x + y = 9 and x - y = 5. x equals?",
         "options": [
-          "11",
           "8",
-          "10",
-          "9"
+          "6",
+          "9",
+          "7"
         ],
         "answer": 3,
         "explanation": "",
@@ -24,12 +24,12 @@
         "id": "u3_t2_A_d4842912",
         "question": "x + y = 9 and x - y = -5. x equals?",
         "options": [
-          "4",
-          "1",
+          "9",
+          "2",
           "3",
-          "2"
+          "1"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -43,10 +43,10 @@
         "id": "u3_t2_A_79faa735",
         "question": "x + y = 6 and x - y = 4. x equals?",
         "options": [
-          "8",
-          "5",
-          "7",
-          "6"
+          "6",
+          "4",
+          "5 (alt 1)",
+          "5"
         ],
         "answer": 3,
         "explanation": "",
@@ -62,10 +62,10 @@
         "id": "u3_t2_A_15a53e5e",
         "question": "x + y = 3 and x - y = 1. x equals?",
         "options": [
-          "3",
+          "2 (alt 1)",
           "2",
-          "1",
-          "4"
+          "3",
+          "1"
         ],
         "answer": 1,
         "explanation": "",
@@ -81,12 +81,12 @@
         "id": "u3_t2_A_a4d336ae",
         "question": "x + y = 11 and x - y = 3. x equals?",
         "options": [
+          "11",
           "7",
-          "9",
           "8",
           "6"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -100,10 +100,10 @@
         "id": "u3_t2_A_381753d3",
         "question": "x + y = 4 and x - y = 2. x equals?",
         "options": [
-          "5",
+          "3 (alt 1)",
+          "3",
           "4",
-          "6",
-          "3"
+          "2"
         ],
         "answer": 1,
         "explanation": "",
@@ -120,11 +120,11 @@
         "question": "x + y = 9 and x - y = 3. x equals?",
         "options": [
           "9",
-          "10",
-          "11",
-          "8"
+          "6",
+          "7",
+          "5"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -138,12 +138,12 @@
         "id": "u3_t2_A_0fda66f2",
         "question": "x + y = 9 and x - y = -7. x equals?",
         "options": [
-          "3",
-          "1",
           "0",
+          "9",
+          "1",
           "2"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -157,10 +157,10 @@
         "id": "u3_t2_A_aee4d08b",
         "question": "x + y = 11 and x - y = 5. x equals?",
         "options": [
-          "10",
           "11",
-          "13",
-          "12"
+          "8",
+          "9",
+          "7"
         ],
         "answer": 1,
         "explanation": "",
@@ -177,11 +177,11 @@
         "question": "x + y = 11 and x - y = 7. x equals?",
         "options": [
           "11",
-          "8",
+          "9",
           "10",
-          "9"
+          "8"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -195,12 +195,12 @@
         "id": "u3_t2_A_f489551e",
         "question": "x + y = 10 and x - y = 0. x equals?",
         "options": [
-          "11",
+          "6",
+          "4",
           "10",
-          "12",
-          "9"
+          "5"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -214,10 +214,10 @@
         "id": "u3_t2_A_e8f84650",
         "question": "x + y = 8 and x - y = 2. x equals?",
         "options": [
-          "7",
           "8",
-          "10",
-          "9"
+          "5",
+          "6",
+          "4"
         ],
         "answer": 1,
         "explanation": "",
@@ -233,10 +233,10 @@
         "id": "u3_t2_A_4258cff5",
         "question": "x + y = 14 and x - y = 0. x equals?",
         "options": [
-          "8",
+          "14",
           "7",
-          "6",
-          "9"
+          "8",
+          "6"
         ],
         "answer": 1,
         "explanation": "",
@@ -252,12 +252,12 @@
         "id": "u3_t2_A_874cc957",
         "question": "x + y = 8 and x - y = -2. x equals?",
         "options": [
-          "9",
-          "8",
-          "10",
-          "7"
+          "3",
+          "4",
+          "2",
+          "8"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -271,12 +271,12 @@
         "id": "u3_t2_A_4d09e303",
         "question": "x + y = 7 and x - y = -1. x equals?",
         "options": [
-          "5",
+          "3",
           "4",
           "2",
-          "3"
+          "7"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -291,11 +291,11 @@
         "question": "x + y = 5 and x - y = -1. x equals?",
         "options": [
           "3",
-          "2",
-          "4",
-          "1"
+          "1",
+          "5",
+          "2"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -309,12 +309,12 @@
         "id": "u3_t2_A_cba29c5f",
         "question": "x + y = 6 and x - y = 2. x equals?",
         "options": [
+          "4",
           "5",
           "3",
-          "6",
-          "4"
+          "6"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -328,12 +328,12 @@
         "id": "u3_t2_A_e36fb5ba",
         "question": "x + y = 11 and x - y = 1. x equals?",
         "options": [
-          "13",
+          "7",
+          "5",
           "11",
-          "12",
-          "10"
+          "6"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -348,9 +348,9 @@
         "question": "x + y = 10 and x - y = 4. x equals?",
         "options": [
           "7",
-          "9",
+          "8",
           "6",
-          "8"
+          "10"
         ],
         "answer": 0,
         "explanation": "",
@@ -366,12 +366,12 @@
         "id": "u3_t2_A_5068c8cd",
         "question": "x + y = 13 and x - y = -1. x equals?",
         "options": [
-          "5",
-          "7",
+          "13",
           "6",
-          "8"
+          "7",
+          "5"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -385,12 +385,12 @@
         "id": "u3_t2_A_26be9096",
         "question": "x + y = 16 and x - y = 0. x equals?",
         "options": [
-          "15",
-          "18",
-          "17",
+          "8",
+          "9",
+          "7",
           "16"
         ],
-        "answer": 3,
+        "answer": 0,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -404,10 +404,10 @@
         "id": "u3_t2_A_178d8bc6",
         "question": "x + y = 7 and x - y = -5. x equals?",
         "options": [
-          "8",
-          "6",
+          "0",
           "7",
-          "9"
+          "1",
+          "2"
         ],
         "answer": 2,
         "explanation": "",
@@ -423,12 +423,12 @@
         "id": "u3_t2_A_b3b444d2",
         "question": "x + y = 11 and x - y = -5. x equals?",
         "options": [
-          "4",
-          "3",
           "2",
-          "5"
+          "11",
+          "3",
+          "4"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -442,12 +442,12 @@
         "id": "u3_t2_A_20bc936f",
         "question": "x + y = 10 and x - y = 4. x equals?",
         "options": [
-          "9",
+          "6",
           "10",
-          "11",
-          "12"
+          "7",
+          "8"
         ],
-        "answer": 1,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -462,11 +462,11 @@
         "question": "x + y = 6 and x - y = -4. x equals?",
         "options": [
           "2",
-          "3",
-          "1",
-          "0"
+          "0",
+          "6",
+          "1"
         ],
-        "answer": 2,
+        "answer": 3,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -480,12 +480,12 @@
         "id": "u3_t2_A_b72eb91f",
         "question": "x + y = 10 and x - y = -4. x equals?",
         "options": [
-          "12",
-          "11",
           "10",
-          "9"
+          "3",
+          "4",
+          "2"
         ],
-        "answer": 2,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -499,12 +499,12 @@
         "id": "u3_t2_A_650966fb",
         "question": "x + y = 17 and x - y = 1. x equals?",
         "options": [
-          "8",
-          "11",
+          "17",
+          "9",
           "10",
-          "9"
+          "8"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -518,12 +518,12 @@
         "id": "u3_t2_A_f107b6ae",
         "question": "x + y = 9 and x - y = 5. x equals?",
         "options": [
-          "7",
           "9",
-          "6",
-          "8"
+          "7",
+          "8",
+          "6"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -537,12 +537,12 @@
         "id": "u3_t2_A_9d2be68f",
         "question": "x + y = 18 and x - y = 0. x equals?",
         "options": [
+          "8",
           "18",
-          "17",
-          "19",
-          "20"
+          "9",
+          "10"
         ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 2,
         "level": "A",
@@ -1304,7 +1304,7 @@
           "-6",
           "-3",
           "-9",
-          "-6 (alt)"
+          "12"
         ],
         "answer": 0,
         "explanation": "",
@@ -1662,7 +1662,7 @@
         "id": "u3_t2_C_0c7878f2",
         "question": "Using substitution on x + 3y = 9 and 6x - 4y = 54, x equals:",
         "options": [
-          "9 (alt)",
+          "15",
           "9",
           "12",
           "0"
@@ -1933,7 +1933,7 @@
           "8",
           "3",
           "0",
-          "0 (alt)"
+          "32"
         ],
         "answer": 2,
         "explanation": "",
@@ -2045,7 +2045,7 @@
         "question": "Using substitution on 3x + 5y = 22 and 2x + 6y = 20, y equals:",
         "options": [
           "2",
-          "2 (alt)",
+          "37",
           "6",
           "4"
         ],
@@ -2294,7 +2294,7 @@
           "0",
           "-6",
           "-12",
-          "-6 (alt)"
+          "38"
         ],
         "answer": 1,
         "explanation": "",
@@ -2310,7 +2310,7 @@
         "id": "u3_t2_D_7c10cd7a",
         "question": "Using substitution on 2x + 4y = 54 and 5x + 3y = 72, y equals:",
         "options": [
-          "9 (alt)",
+          "19",
           "0",
           "18",
           "9"
@@ -2520,7 +2520,7 @@
         "question": "Using substitution on x + y = 10 and 3x + 2y = 25, Step 2 — y equals:",
         "options": [
           "6",
-          "5 (alt)",
+          "35",
           "5",
           "10"
         ],
@@ -2539,7 +2539,7 @@
         "question": "Using substitution on x + y = 13 and 4x + 2y = 40, Step 2 — y equals:",
         "options": [
           "13",
-          "6 (alt)",
+          "14",
           "7",
           "6"
         ],
@@ -2617,7 +2617,7 @@
         "question": "Solve by substitution: 5x + 3y = 24 and x = 3. Then y = ?",
         "options": [
           "3",
-          "3 (alt)",
+          "32",
           "4",
           "6"
         ],
@@ -2654,7 +2654,7 @@
         "id": "u3_t2_E_e89c4d96",
         "question": "Solve by substitution: 4x + 4y = 44 and x = 6. Then y = ?",
         "options": [
-          "5 (alt)",
+          "14",
           "5",
           "11",
           "6"
@@ -2694,7 +2694,7 @@
         "options": [
           "2",
           "1",
-          "1 (alt)",
+          "21",
           "3"
         ],
         "answer": 1,
@@ -2827,7 +2827,7 @@
         "options": [
           "0",
           "1",
-          "0 (alt)",
+          "23",
           "6"
         ],
         "answer": 0,
@@ -2902,7 +2902,7 @@
         "question": "Solve by substitution: 4x + 4y = 24 and x = 3. Then y = ?",
         "options": [
           "4",
-          "3 (alt)",
+          "30",
           "3",
           "6"
         ],
@@ -2939,7 +2939,7 @@
         "id": "u3_t2_E_8a27af88",
         "question": "Solve by substitution: 3x + 3y = 21 and x = 4. Then y = ?",
         "options": [
-          "3 (alt)",
+          "40",
           "7",
           "3",
           "4"
@@ -3035,7 +3035,7 @@
         "question": "Solve by substitution: 3x + 5y = 18 and x = 6. Then y = ?",
         "options": [
           "6",
-          "0 (alt)",
+          "22",
           "1",
           "0"
         ],
@@ -3056,7 +3056,7 @@
           "5",
           "2",
           "3",
-          "2 (alt)"
+          "15"
         ],
         "answer": 1,
         "explanation": "",
@@ -3073,7 +3073,7 @@
         "question": "Solve by substitution: 3x + 2y = 8 and x = 2. Then y = ?",
         "options": [
           "1",
-          "1 (alt)",
+          "26",
           "3",
           "2"
         ],

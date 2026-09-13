@@ -64,15 +64,59 @@ def _parse_args() -> argparse.Namespace:
         action="store_true",
         help="Generate and print summary only; do not send email",
     )
+    parser.add_argument(
+        "--write-report",
+        metavar="DIR",
+        default=None,
+        help="Write audit plain-text and HTML reports to this directory",
+    )
+    parser.add_argument(
+        "--email-to",
+        default=None,
+        help="Override validation email recipient(s), comma-separated",
+    )
     return parser.parse_args()
+
+
+def _format_validation_audit_email():
+    """Load formatter without pulling practice_email.delivery (httpx)."""
+    import importlib.util
+
+    fmt_path = ROOT / "practice_email" / "format.py"
+    spec = importlib.util.spec_from_file_location("_practice_email_format", fmt_path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Cannot load {fmt_path}")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.format_validation_audit_email
+
+
+def _write_audit_reports(payload: dict, out_dir: Path) -> tuple[Path, Path]:
+    format_validation_audit_email = _format_validation_audit_email()
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    spec = payload["app"]
+    subject, plain, html = format_validation_audit_email(
+        student_name=payload["student_name"],
+        program_name=spec.label,
+        unit_title=payload["unit_title"],
+        unit_subtitle=payload["unit_subtitle"],
+        audit_rows=payload["audit_rows"],
+        report=payload["report"],
+        requested_count=payload["requested_count"],
+        generated_count=payload["generated_count"],
+    )
+    uid = payload["unit_id"]
+    txt_path = out_dir / f"unit_{uid:02d}_validation.txt"
+    html_path = out_dir / f"unit_{uid:02d}_validation.html"
+    txt_path.write_text(plain, encoding="utf-8")
+    html_path.write_text(html, encoding="utf-8")
+    return txt_path, html_path
 
 
 def main() -> int:
     args = _parse_args()
     from practice_validation import list_apps, run_base_seed_validation_audit, run_validation_audit
-    from practice_email.delivery import send_validation_audit_email
-    from practice_email.settings import practice_email_enabled
-    import edgenuity_practice_email as mail
 
     if args.list_apps:
         print("Available practice validation apps:\n")
@@ -134,13 +178,31 @@ def main() -> int:
     if generated < requested:
         print(f"Warning: only {generated} unique questions available; requested {requested}.")
 
+    if args.write_report:
+        txt_path, html_path = _write_audit_reports(payload, Path(args.write_report))
+        print(f"Wrote {txt_path}")
+        print(f"Wrote {html_path}")
+
     if args.dry_run or not args.email:
-        if not args.dry_run:
+        if not args.dry_run and not args.email:
             print("Email not sent (pass --email to send).")
         return 0
 
-    if not practice_email_enabled():
+    from practice_email.delivery import send_validation_audit_email
+    from practice_email.settings import delivery_ready, load_settings, parse_email_recipients
+    import edgenuity_practice_email as mail
+
+    email_recipients = parse_email_recipients(args.email_to or "")
+    settings = load_settings()
+    if not settings.enabled:
         print(f"Email not configured: {mail.email_status_message()}", file=sys.stderr)
+        return 1
+    ready, _, config_err = delivery_ready(settings)
+    if not ready:
+        print(f"Email not configured: {config_err or mail.email_status_message()}", file=sys.stderr)
+        return 1
+    if not email_recipients and not settings.recipients:
+        print("No recipients: set PRACTICE_REPORT_EMAIL_TO or pass --email-to", file=sys.stderr)
         return 1
 
     result = send_validation_audit_email(
@@ -152,6 +214,7 @@ def main() -> int:
         report=report,
         requested_count=requested,
         generated_count=generated,
+        recipients=email_recipients or None,
     )
     if result.ok:
         print(f"Audit emailed to {result.recipient}")

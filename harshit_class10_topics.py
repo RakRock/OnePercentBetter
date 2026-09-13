@@ -1627,30 +1627,37 @@ def _u3_multistep_mcq(
             f"compare a₁/a₂, b₁/b₂, c₁/c₂. The pair has:"
         )
     else:
-        mult = random.choice([2, 3])
-        years = random.randint(8, 15)
-        son = random.randint(8, 14)
+        mult, future_mult = 3, 2
+        years = random.randint(6, 18)
+        son = years
         father = mult * son
         if step == "word_ages_setup":
-            correct = f"y = {mult}x; y + {years} = {mult - 1}(x + {years})"
+            correct = f"y = {mult}x; y + {years} = {future_mult}(x + {years})"
             wrong = [
-                f"x = {mult}y; x + {years} = {mult - 1}(y + {years})",
-                f"y = {mult}x; y = {mult - 1}x",
+                f"x = {mult}y; x + {years} = {future_mult}(y + {years})",
+                f"y = {mult}x; y = {future_mult}x",
                 f"x + y = {years}; y − x = {mult}",
             ]
             qtext = (
                 f"Father is {mult} times son's age. In {years} years he will be "
-                f"{mult - 1} times son's age. Step 1 — form the equations (x = son, y = father):"
+                f"{future_mult} times son's age. Step 1 — form the equations (x = son, y = father):"
             )
             expl = "Step 2: solve the linear pair for present ages."
         else:
             correct = f"Son = {son}, Father = {father}"
-            wrong = [f"Son = {son + years}, Father = {father + years}", f"Son = {father}, Father = {son}", f"Son = {son + 1}, Father = {father}"]
+            wrong = [
+                f"Son = {son + years}, Father = {father + years}",
+                f"Son = {father}, Father = {son}",
+                f"Son = {son + 1}, Father = {father}",
+            ]
             qtext = (
-                f"Father is {mult}× son's age; in {years} years he will be {mult - 1}× son's age. "
+                f"Father is {mult}× son's age; in {years} years he will be {future_mult}× son's age. "
                 f"Step 2 — present ages are:"
             )
-            expl = f"From y = {mult}x and y + {years} = {mult - 1}(x + {years}), son = {son}, father = {father}."
+            expl = (
+                f"From y = {mult}x and y + {years} = {future_mult}(x + {years}), "
+                f"x = {son}, y = {father}."
+            )
 
     opts, ans = _shuffle_options(correct, wrong)
     return _mcq(unit_id, topic_id, level, qtext, opts, ans, expl)
@@ -2005,26 +2012,49 @@ def _nature_from_disc(d: int) -> str:
 # ── Unit 3 generators ──
 
 
+def _line_pair_label(a1: int, b1: int, c1: int, a2: int, b2: int, c2: int) -> str:
+    det = a1 * b2 - a2 * b1
+    if det != 0:
+        return "Intersecting"
+    if a1 * c2 == a2 * c1 and b1 * c2 == b2 * c1:
+        return "Coincident"
+    return "Parallel"
+
+
 def _gen_u3_t1(level: str) -> dict:
     if level == "A":
-        eq1 = _lin_eq(random.randint(1, 4), random.randint(1, 4), random.randint(3, 15))
-        eq2 = _lin_eq(random.randint(1, 4), random.randint(-4, 4), random.randint(3, 15))
-        opts, ans = _shuffle_options("Intersecting", ["Parallel", "Coincident", "Vertical only"])
-        return _mcq(3, 1, level, f"Lines {eq1} and {eq2} (different slopes) are:", opts, ans)
-    if level == "B":
-        variants = [
-            ("Exactly one solution", ["No solution", "Infinitely many", "Exactly two"]),
-            ("No solution", ["Exactly one solution", "Infinitely many", "Exactly two"]),
-            ("Infinitely many solutions", ["No solution", "Exactly one solution", "Exactly two"]),
-            ("Unique solution (consistent)", ["Inconsistent pair", "No variable", "Three solutions"]),
-        ]
-        correct, wrong = random.choice(variants)
+        if random.random() < 0.5:
+            x, y, (a1, b1, c1), (a2, b2, c2) = _random_lin_sys()
+            correct = "Intersecting"
+            note = ""
+        else:
+            (a1, b1, c1), (a2, b2, c2) = _parallel_sys()
+            correct = "Parallel"
+            note = ""
+        eq1, eq2 = _lin_eq(a1, b1, c1), _lin_eq(a2, b2, c2)
+        wrong = [x for x in ["Intersecting", "Parallel", "Coincident", "Vertical only"] if x != correct][:3]
         opts, ans = _shuffle_options(correct, wrong)
-        qtext = random.choice([
-            "A pair of linear equations in two variables can have:",
-            "Which is a possible outcome for a pair of linear equations?",
-            "Solutions of a pair of linear equations:",
-        ])
+        return _mcq(3, 1, level, f"Lines {eq1} and {eq2}{note} are:", opts, ans)
+    if level == "B":
+        scenarios = [
+            (
+                "A pair of linear equations representing parallel distinct lines has:",
+                "No solution",
+                ["Exactly one solution", "Infinitely many solutions", "Exactly two solutions"],
+            ),
+            (
+                "A pair of linear equations with intersecting lines has:",
+                "Exactly one solution",
+                ["No solution", "Infinitely many solutions", "Exactly two solutions"],
+            ),
+            (
+                "A pair of linear equations representing coincident lines has:",
+                "Infinitely many solutions",
+                ["No solution", "Exactly one solution", "Exactly two solutions"],
+            ),
+        ]
+        qtext, correct, wrong = random.choice(scenarios)
+        opts, ans = _shuffle_options(correct, wrong)
         return _mcq(3, 1, level, qtext, opts, ans)
     if level == "C":
         (a1, b1, c1), (a2, b2, c2) = _parallel_sys()
@@ -2058,11 +2088,13 @@ def _gen_u3_t2(level: str) -> dict:
     eq1, eq2 = _lin_eq(a1, b1, c1), _lin_eq(a2, b2, c2)
     if level == "A":
         sx, sy = random.randint(1, 9), random.randint(1, 9)
-        if random.random() < 0.5:
-            correct, q = str(sx + sy), f"x + y = {sx + sy} and x − y = {sx - sy}. x equals?"
-        else:
-            correct, q = str(sx), f"x + y = {sx + sy} and x − y = {sx - sy}. x equals?"
-        opts, ans = _shuffle_options(correct, [str(int(correct) + 1), str(int(correct) - 1), str(int(correct) + 2)])
+        s_sum, s_diff = sx + sy, sx - sy
+        correct = str(sx)
+        q = f"x + y = {s_sum} and x − y = {s_diff}. x equals?"
+        opts, ans = _shuffle_options(
+            correct,
+            [str(sx + 1), str(max(0, sx - 1)), str(s_sum)],
+        )
         return _mcq(3, 2, level, q, opts, ans)
     if level == "B":
         opts, ans = _shuffle_options(f"x = ({c1} − {b1}y)/{a1}", [f"y = ({c1} − {a1}x)/{b1}", f"x = {c1} − {b1}y", f"x = {c1}/{a1}"])
@@ -2150,11 +2182,20 @@ def _gen_u3_t4(level: str) -> dict:
             opts, ans,
         )
     if level == "C":
-        opts, ans = _shuffle_options("24 years", ["12 years", "36 years", "18 years"])
+        years = random.randint(6, 15)
+        diff = 2 * years
+        opts, ans = _shuffle_options(
+            f"{diff} years",
+            [f"{years} years", f"{diff + years} years", f"{3 * years} years"],
+        )
         return _mcq(
-            3, 4, level,
-            "Father is 3× son's age; in 12 years he will be 2× son's age. Age difference now?",
-            opts, ans, "Set son = x, father = 3x; solve 3x + 12 = 2(x + 12) → x = 12, difference = 24.",
+            3,
+            4,
+            level,
+            f"Father is 3× son's age; in {years} years he will be 2× son's age. Age difference now?",
+            opts,
+            ans,
+            f"Set son = x, father = 3x; 3x + {years} = 2(x + {years}) ⇒ x = {years}, difference = {diff}.",
         )
     if level == "D":
         if random.random() < 0.5:

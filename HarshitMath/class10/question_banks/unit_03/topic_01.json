@@ -3,49 +3,11 @@
     "A": [
       {
         "id": "u3_t1_A_2cb70b57",
-        "question": "Lines x + 4y = 11 and 4x = 9 (different slopes) are:",
+        "question": "Lines x + 4y = 11 and 4x = 9 are:",
         "options": [
           "Vertical only",
           "Intersecting",
-          "Coincident",
-          "Parallel"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_4f601979",
-        "question": "Lines 3x + 2y = 6 and 4x - 2y = 8 (different slopes) are:",
-        "options": [
           "Parallel",
-          "Coincident",
-          "Intersecting",
-          "Vertical only"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_6b042a1c",
-        "question": "Lines 2x + 3y = 5 and 2x + 2y = 10 (different slopes) are:",
-        "options": [
-          "Parallel",
-          "Intersecting",
-          "Vertical only",
           "Coincident"
         ],
         "answer": 1,
@@ -59,31 +21,12 @@
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       },
       {
-        "id": "u3_t1_A_9fde0e83",
-        "question": "Lines x + 2y = 8 and 4x = 13 (different slopes) are:",
+        "id": "u3_t1_A_4f601979",
+        "question": "Lines 3x + 2y = 6 and 4x - 2y = 8 are:",
         "options": [
-          "Coincident",
-          "Intersecting",
-          "Vertical only",
-          "Parallel"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_c3c340fe",
-        "question": "Lines 3x + 3y = 15 and 2x + 3y = 9 (different slopes) are:",
-        "options": [
-          "Vertical only",
-          "Coincident",
           "Parallel",
+          "Coincident",
+          "Vertical only",
           "Intersecting"
         ],
         "answer": 3,
@@ -97,12 +40,69 @@
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       },
       {
-        "id": "u3_t1_A_9b66f2e0",
-        "question": "Lines 2x + 3y = 11 and 3x - 4y = 13 (different slopes) are:",
+        "id": "u3_t1_A_6b042a1c",
+        "question": "Lines 2x + 3y = 5 and 2x + 2y = 10 are:",
         "options": [
-          "Vertical only",
+          "Intersecting",
           "Parallel",
           "Coincident",
+          "Vertical only"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_9fde0e83",
+        "question": "Lines x + 2y = 8 and 4x = 13 are:",
+        "options": [
+          "Parallel",
+          "Coincident",
+          "Vertical only",
+          "Intersecting"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_c3c340fe",
+        "question": "Lines 3x + 3y = 15 and 2x + 3y = 9 are:",
+        "options": [
+          "Intersecting",
+          "Parallel",
+          "Coincident",
+          "Vertical only"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_9b66f2e0",
+        "question": "Lines 2x + 3y = 11 and 3x - 4y = 13 are:",
+        "options": [
+          "Parallel",
+          "Coincident",
+          "Vertical only",
           "Intersecting"
         ],
         "answer": 3,
@@ -117,11 +117,49 @@
       },
       {
         "id": "u3_t1_A_9ab14871",
-        "question": "Lines x + y = 3 and x - 4y = 8 (different slopes) are:",
+        "question": "Lines x + y = 3 and x - 4y = 8 are:",
+        "options": [
+          "Parallel",
+          "Coincident",
+          "Vertical only",
+          "Intersecting"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_05964823",
+        "question": "Lines 2x + 4y = 5 and 2x - y = 8 are:",
+        "options": [
+          "Vertical only",
+          "Intersecting",
+          "Parallel",
+          "Coincident"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_c49583ac",
+        "question": "Lines 2x + 2y = 15 and 4x + 3y = 3 are:",
         "options": [
           "Intersecting",
-          "Coincident",
           "Parallel",
+          "Coincident",
           "Vertical only"
         ],
         "answer": 0,
@@ -135,53 +173,15 @@
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       },
       {
-        "id": "u3_t1_A_05964823",
-        "question": "Lines 2x + 4y = 5 and 2x - y = 8 (different slopes) are:",
-        "options": [
-          "Coincident",
-          "Parallel",
-          "Vertical only",
-          "Intersecting"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_c49583ac",
-        "question": "Lines 2x + 2y = 15 and 4x + 3y = 3 (different slopes) are:",
-        "options": [
-          "Parallel",
-          "Vertical only",
-          "Intersecting",
-          "Coincident"
-        ],
-        "answer": 2,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
         "id": "u3_t1_A_79f847f8",
-        "question": "Lines 3x + y = 9 and 3x + 2y = 14 (different slopes) are:",
+        "question": "Lines 3x + y = 9 and 3x + 2y = 14 are:",
         "options": [
-          "Vertical only",
           "Intersecting",
+          "Parallel",
           "Coincident",
-          "Parallel"
+          "Vertical only"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -193,31 +193,12 @@
       },
       {
         "id": "u3_t1_A_9641ed21",
-        "question": "Lines 2x + y = 8 and 2x + y = 9 (different slopes) are:",
+        "question": "Lines 2x + y = 8 and 2x + y = 9 are:",
         "options": [
-          "Coincident",
           "Intersecting",
-          "Parallel",
-          "Vertical only"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_7336ba64",
-        "question": "Lines 2x + y = 3 and x = 8 (different slopes) are:",
-        "options": [
-          "Parallel",
           "Coincident",
           "Vertical only",
-          "Intersecting"
+          "Parallel"
         ],
         "answer": 3,
         "explanation": "",
@@ -230,13 +211,32 @@
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       },
       {
-        "id": "u3_t1_A_f3f5f8ab",
-        "question": "Lines 4x + 4y = 14 and 4x - y = 5 (different slopes) are:",
+        "id": "u3_t1_A_7336ba64",
+        "question": "Lines 2x + y = 3 and x = 8 are:",
         "options": [
-          "Coincident",
-          "Intersecting",
           "Vertical only",
-          "Parallel"
+          "Intersecting",
+          "Parallel",
+          "Coincident"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_f3f5f8ab",
+        "question": "Lines 4x + 4y = 14 and 4x - y = 5 are:",
+        "options": [
+          "Vertical only",
+          "Intersecting",
+          "Parallel",
+          "Coincident"
         ],
         "answer": 1,
         "explanation": "",
@@ -250,14 +250,14 @@
       },
       {
         "id": "u3_t1_A_f7ce6a96",
-        "question": "Lines 2x + 4y = 3 and 2x + y = 14 (different slopes) are:",
+        "question": "Lines 2x + 4y = 3 and 2x + y = 14 are:",
         "options": [
-          "Intersecting",
           "Vertical only",
-          "Coincident",
-          "Parallel"
+          "Intersecting",
+          "Parallel",
+          "Coincident"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -269,14 +269,14 @@
       },
       {
         "id": "u3_t1_A_aa157b72",
-        "question": "Lines 3x + 2y = 10 and x + y = 8 (different slopes) are:",
+        "question": "Lines 3x + 2y = 10 and x + y = 8 are:",
         "options": [
-          "Parallel",
-          "Vertical only",
           "Intersecting",
-          "Coincident"
+          "Parallel",
+          "Coincident",
+          "Vertical only"
         ],
-        "answer": 2,
+        "answer": 0,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -288,107 +288,12 @@
       },
       {
         "id": "u3_t1_A_2523110c",
-        "question": "Lines 2x + y = 12 and 2x + 3y = 11 (different slopes) are:",
-        "options": [
-          "Coincident",
-          "Intersecting",
-          "Parallel",
-          "Vertical only"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_50fadc86",
-        "question": "Lines 2x + y = 8 and 3x - 2y = 13 (different slopes) are:",
+        "question": "Lines 2x + y = 12 and 2x + 3y = 11 are:",
         "options": [
           "Coincident",
           "Vertical only",
-          "Parallel",
-          "Intersecting"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_22b0861b",
-        "question": "Lines 4x + 2y = 12 and 2x = 10 (different slopes) are:",
-        "options": [
-          "Vertical only",
-          "Coincident",
-          "Parallel",
-          "Intersecting"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_d37b6854",
-        "question": "Lines x + 3y = 15 and 2x + 3y = 4 (different slopes) are:",
-        "options": [
-          "Parallel",
           "Intersecting",
-          "Vertical only",
-          "Coincident"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_22f15896",
-        "question": "Lines 4x + 2y = 11 and 2x - 3y = 5 (different slopes) are:",
-        "options": [
-          "Intersecting",
-          "Vertical only",
-          "Parallel",
-          "Coincident"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_296dc101",
-        "question": "Lines x + 4y = 6 and 2x - 3y = 5 (different slopes) are:",
-        "options": [
-          "Parallel",
-          "Coincident",
-          "Intersecting",
-          "Vertical only"
+          "Parallel"
         ],
         "answer": 2,
         "explanation": "",
@@ -401,32 +306,13 @@
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       },
       {
-        "id": "u3_t1_A_7c218a35",
-        "question": "Lines 4x + y = 4 and x + 3y = 13 (different slopes) are:",
+        "id": "u3_t1_A_50fadc86",
+        "question": "Lines 2x + y = 8 and 3x - 2y = 13 are:",
         "options": [
-          "Intersecting",
-          "Parallel",
           "Vertical only",
-          "Coincident"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 1,
-        "level": "A",
-        "unit_id": 3,
-        "category": "u3_t1_A",
-        "category_label": "Graph · Level A",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_A_8dc09b1e",
-        "question": "Lines 4x + 4y = 14 and x + y = 12 (different slopes) are:",
-        "options": [
-          "Coincident",
           "Intersecting",
           "Parallel",
-          "Vertical only"
+          "Coincident"
         ],
         "answer": 1,
         "explanation": "",
@@ -439,12 +325,126 @@
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       },
       {
+        "id": "u3_t1_A_22b0861b",
+        "question": "Lines 4x + 2y = 12 and 2x = 10 are:",
+        "options": [
+          "Coincident",
+          "Vertical only",
+          "Intersecting",
+          "Parallel"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_d37b6854",
+        "question": "Lines x + 3y = 15 and 2x + 3y = 4 are:",
+        "options": [
+          "Coincident",
+          "Vertical only",
+          "Intersecting",
+          "Parallel"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_22f15896",
+        "question": "Lines 4x + 2y = 11 and 2x - 3y = 5 are:",
+        "options": [
+          "Coincident",
+          "Vertical only",
+          "Intersecting",
+          "Parallel"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_296dc101",
+        "question": "Lines x + 4y = 6 and 2x - 3y = 5 are:",
+        "options": [
+          "Parallel",
+          "Coincident",
+          "Vertical only",
+          "Intersecting"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_7c218a35",
+        "question": "Lines 4x + y = 4 and x + 3y = 13 are:",
+        "options": [
+          "Parallel",
+          "Coincident",
+          "Vertical only",
+          "Intersecting"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_A_8dc09b1e",
+        "question": "Lines 4x + 4y = 14 and x + y = 12 are:",
+        "options": [
+          "Coincident",
+          "Vertical only",
+          "Parallel",
+          "Intersecting"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "A",
+        "unit_id": 3,
+        "category": "u3_t1_A",
+        "category_label": "Graph · Level A",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
         "id": "u3_t1_A_a571bcaa",
-        "question": "Lines 3x + 2y = 8 and 3x + 3y = 9 (different slopes) are:",
+        "question": "Lines 3x + 2y = 8 and 3x + 3y = 9 are:",
         "options": [
           "Intersecting",
-          "Coincident",
           "Parallel",
+          "Coincident",
           "Vertical only"
         ],
         "answer": 0,
@@ -459,14 +459,14 @@
       },
       {
         "id": "u3_t1_A_b64ea819",
-        "question": "Lines x + 4y = 5 and 4x + y = 5 (different slopes) are:",
+        "question": "Lines x + 4y = 5 and 4x + y = 5 are:",
         "options": [
           "Parallel",
-          "Intersecting",
           "Coincident",
-          "Vertical only"
+          "Vertical only",
+          "Intersecting"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -478,11 +478,11 @@
       },
       {
         "id": "u3_t1_A_3d9c4202",
-        "question": "Lines x + 3y = 11 and 3x = 7 (different slopes) are:",
+        "question": "Lines x + 3y = 11 and 3x = 7 are:",
         "options": [
           "Intersecting",
-          "Coincident",
           "Parallel",
+          "Coincident",
           "Vertical only"
         ],
         "answer": 0,
@@ -497,14 +497,14 @@
       },
       {
         "id": "u3_t1_A_53106f79",
-        "question": "Lines 4x + 2y = 5 and x + 3y = 7 (different slopes) are:",
+        "question": "Lines 4x + 2y = 5 and x + 3y = 7 are:",
         "options": [
+          "Vertical only",
           "Intersecting",
           "Parallel",
-          "Coincident",
-          "Vertical only"
+          "Coincident"
         ],
-        "answer": 0,
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -516,12 +516,12 @@
       },
       {
         "id": "u3_t1_A_97eb1bbb",
-        "question": "Lines 2x + 4y = 3 and 3x - y = 5 (different slopes) are:",
+        "question": "Lines 2x + 4y = 3 and 3x - y = 5 are:",
         "options": [
           "Coincident",
-          "Parallel",
+          "Vertical only",
           "Intersecting",
-          "Vertical only"
+          "Parallel"
         ],
         "answer": 2,
         "explanation": "",
@@ -535,14 +535,14 @@
       },
       {
         "id": "u3_t1_A_2e85db5f",
-        "question": "Lines 3x + 4y = 9 and x + 4y = 15 (different slopes) are:",
+        "question": "Lines 3x + 4y = 9 and x + 4y = 15 are:",
         "options": [
-          "Coincident",
           "Vertical only",
+          "Intersecting",
           "Parallel",
-          "Intersecting"
+          "Coincident"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -554,14 +554,14 @@
       },
       {
         "id": "u3_t1_A_555a925b",
-        "question": "Lines 3x + y = 9 and 3x - 2y = 14 (different slopes) are:",
+        "question": "Lines 3x + y = 9 and 3x - 2y = 14 are:",
         "options": [
-          "Coincident",
-          "Intersecting",
           "Parallel",
-          "Vertical only"
+          "Coincident",
+          "Vertical only",
+          "Intersecting"
         ],
-        "answer": 1,
+        "answer": 3,
         "explanation": "",
         "topic": 1,
         "level": "A",
@@ -575,10 +575,143 @@
     "B": [
       {
         "id": "u3_t1_B_02754de5",
-        "question": "A pair of linear equations can have:",
+        "question": "A pair of linear equations with intersecting lines has:",
         "options": [
-          "Exactly two",
-          "Infinitely many",
+          "Infinitely many solutions",
+          "Exactly two solutions",
+          "Exactly one solution",
+          "No solution"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t1_B",
+        "category_label": "Graph · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_B_c92d2102",
+        "question": "A pair of linear equations with intersecting lines has:",
+        "options": [
+          "No solution",
+          "Infinitely many solutions",
+          "Exactly two solutions",
+          "Exactly one solution"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t1_B",
+        "category_label": "Graph · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_B_5699985a",
+        "question": "A pair of linear equations with intersecting lines has:",
+        "options": [
+          "Exactly one solution",
+          "No solution",
+          "Infinitely many solutions",
+          "Exactly two solutions"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t1_B",
+        "category_label": "Graph · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_B_521acfda",
+        "question": "A pair of linear equations representing coincident lines has:",
+        "options": [
+          "Infinitely many solutions",
+          "No solution",
+          "Exactly one solution",
+          "Exactly two solutions"
+        ],
+        "answer": 0,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t1_B",
+        "category_label": "Graph · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_B_e6c9d2df",
+        "question": "A pair of linear equations with intersecting lines has:",
+        "options": [
+          "Exactly two solutions",
+          "Exactly one solution",
+          "No solution",
+          "Infinitely many solutions"
+        ],
+        "answer": 1,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t1_B",
+        "category_label": "Graph · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_B_62641fa5",
+        "question": "A pair of linear equations with intersecting lines has:",
+        "options": [
+          "No solution",
+          "Infinitely many solutions",
+          "Exactly two solutions",
+          "Exactly one solution"
+        ],
+        "answer": 3,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t1_B",
+        "category_label": "Graph · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_B_3231b460",
+        "question": "A pair of linear equations representing coincident lines has:",
+        "options": [
+          "Exactly one solution",
+          "Exactly two solutions",
+          "Infinitely many solutions",
+          "No solution"
+        ],
+        "answer": 2,
+        "explanation": "",
+        "topic": 1,
+        "level": "B",
+        "unit_id": 3,
+        "category": "u3_t1_B",
+        "category_label": "Graph · Level B",
+        "source": "template",
+        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
+      },
+      {
+        "id": "u3_t1_B_513018bf",
+        "question": "A pair of linear equations representing parallel distinct lines has:",
+        "options": [
+          "Infinitely many solutions",
+          "Exactly two solutions",
           "No solution",
           "Exactly one solution"
         ],
@@ -593,50 +726,12 @@
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       },
       {
-        "id": "u3_t1_B_c92d2102",
-        "question": "A pair of linear equations can have:",
-        "options": [
-          "Exactly one solution",
-          "Infinitely many solutions",
-          "Exactly two",
-          "No solution"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "B",
-        "unit_id": 3,
-        "category": "u3_t1_B",
-        "category_label": "Graph · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_B_5699985a",
-        "question": "A pair of linear equations in two variables can have:",
-        "options": [
-          "No solution",
-          "Infinitely many",
-          "Exactly two",
-          "Exactly one solution"
-        ],
-        "answer": 3,
-        "explanation": "",
-        "topic": 1,
-        "level": "B",
-        "unit_id": 3,
-        "category": "u3_t1_B",
-        "category_label": "Graph · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_B_521acfda",
-        "question": "A pair of linear equations in two variables can have:",
+        "id": "u3_t1_B_ace59d57",
+        "question": "A pair of linear equations representing coincident lines has:",
         "options": [
           "No solution",
           "Exactly one solution",
-          "Exactly two",
+          "Exactly two solutions",
           "Infinitely many solutions"
         ],
         "answer": 3,
@@ -650,110 +745,15 @@
         "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
       },
       {
-        "id": "u3_t1_B_e6c9d2df",
-        "question": "Solutions of a pair of linear equations:",
+        "id": "u3_t1_B_2659106c",
+        "question": "A pair of linear equations representing parallel distinct lines has:",
         "options": [
-          "No solution",
           "Infinitely many solutions",
-          "Exactly two",
+          "Exactly two solutions",
+          "No solution",
           "Exactly one solution"
         ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "B",
-        "unit_id": 3,
-        "category": "u3_t1_B",
-        "category_label": "Graph · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_B_62641fa5",
-        "question": "Solutions of a pair of linear equations:",
-        "options": [
-          "Exactly one solution",
-          "No solution",
-          "Exactly two",
-          "Infinitely many"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "B",
-        "unit_id": 3,
-        "category": "u3_t1_B",
-        "category_label": "Graph · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_B_3231b460",
-        "question": "A pair of linear equations in two variables can have:",
-        "options": [
-          "Unique solution (consistent)",
-          "Three solutions",
-          "No variable",
-          "Inconsistent pair"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 1,
-        "level": "B",
-        "unit_id": 3,
-        "category": "u3_t1_B",
-        "category_label": "Graph · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_B_513018bf",
-        "question": "Which is a possible outcome for a pair of linear equations?",
-        "options": [
-          "Infinitely many",
-          "No solution",
-          "Exactly one solution",
-          "Exactly two"
-        ],
-        "answer": 1,
-        "explanation": "",
-        "topic": 1,
-        "level": "B",
-        "unit_id": 3,
-        "category": "u3_t1_B",
-        "category_label": "Graph · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_B_ace59d57",
-        "question": "Which is a possible outcome for a pair of linear equations?",
-        "options": [
-          "Unique solution (consistent)",
-          "Three solutions",
-          "No variable",
-          "Inconsistent pair"
-        ],
-        "answer": 0,
-        "explanation": "",
-        "topic": 1,
-        "level": "B",
-        "unit_id": 3,
-        "category": "u3_t1_B",
-        "category_label": "Graph · Level B",
-        "source": "template",
-        "chapter_ref": "NCERT Ch 3 Pair of Linear Equations"
-      },
-      {
-        "id": "u3_t1_B_2659106c",
-        "question": "Which is a possible outcome for a pair of linear equations?",
-        "options": [
-          "Infinitely many solutions",
-          "Exactly one solution",
-          "Exactly two",
-          "No solution"
-        ],
-        "answer": 0,
+        "answer": 2,
         "explanation": "",
         "topic": 1,
         "level": "B",
@@ -765,14 +765,14 @@
       },
       {
         "id": "u3_t1_B_7aa0f1f5",
-        "question": "Solutions of a pair of linear equations:",
+        "question": "A pair of linear equations representing parallel distinct lines has:",
         "options": [
-          "Inconsistent pair",
-          "No variable",
-          "Three solutions",
-          "Unique solution (consistent)"
+          "Exactly two solutions",
+          "No solution",
+          "Exactly one solution",
+          "Infinitely many solutions"
         ],
-        "answer": 3,
+        "answer": 1,
         "explanation": "",
         "topic": 1,
         "level": "B",

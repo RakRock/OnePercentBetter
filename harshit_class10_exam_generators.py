@@ -468,17 +468,16 @@ def _gen_u3_no_solution_k() -> dict:
 
 
 def _gen_u3_word_ages() -> dict:
-    mult = random.choice([2, 3])
-    years = random.randint(8, 15)
-    son = 12
-    father = mult * son
+    years = random.randint(6, 18)
+    son = years
+    father = 3 * son
     diff = father - son
     return _exam_mcq(
         "u3_word_ages",
-        f"Father is {mult}× son's age; in {years} years he will be {mult - 1}× son's age. Age difference now?",
+        f"Father is 3× son's age; in {years} years he will be 2× son's age. Age difference now?",
         f"{diff} years",
-        [f"{diff + years} years", f"{son} years", f"{father} years"],
-        f"son = {son}, father = {father}; difference = {diff}.",
+        [f"{years} years", f"{diff + years} years", f"{father} years"],
+        f"3x + {years} = 2(x + {years}) ⇒ x = {son}; difference = {diff}.",
     )
 
 
@@ -564,13 +563,14 @@ def _gen_u3_word_income() -> dict:
 
 
 def _gen_u3_word_speed() -> dict:
-    d, t = random.randint(120, 480), random.randint(2, 8)
-    speed = d // t
+    t = random.randint(2, 8)
+    speed = random.randint(25, 90)
+    d = speed * t
     return _exam_mcq(
         "u3_word_speed",
         f"A train covers {d} km in {t} hours. Speed = ? km/h",
         str(speed),
-        [str(speed + 10), str(d + t), str(speed - 5)],
+        [str(speed + 10), str(speed - 5), str(speed + 1)],
         f"Speed = distance/time = {d}/{t} = {speed}.",
     )
 
