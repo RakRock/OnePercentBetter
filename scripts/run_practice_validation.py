@@ -6,6 +6,7 @@ Examples:
   python scripts/run_practice_validation.py --app course3 --unit 1 --count 100 --email
   python scripts/run_practice_validation.py --app course3 --unit 1 --base-seed --email
   python scripts/run_practice_validation.py --app harshit_prereq --unit 4 --count 100 --email
+  python scripts/run_practice_validation.py --app harshit_class10 --unit 4 --base-seed --email
   python scripts/run_practice_validation.py --app harshit_class10 --unit 1 --count 50 --dry-run
 """
 
@@ -45,7 +46,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--base-seed",
         action="store_true",
-        help="Audit all static + built-in seed questions (no AI bank, no random sample)",
+        help="Audit full persisted seed bank (Course 3 static+builtin, Harshit JSON banks, etc.)",
     )
     parser.add_argument(
         "--use-llm",

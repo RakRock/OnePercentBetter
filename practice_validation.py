@@ -441,6 +441,25 @@ def load_base_seed_questions(app_key: str, unit_id: int) -> list[dict]:
 
         return list(ec3p.QUESTION_BANK_BY_UNIT.get(unit_id, []))
 
+    if app_key == "harshit_class10":
+        import harshit_class10_questions as h10q
+        import harshit_class10_topics as h10t
+
+        out: list[dict] = []
+        for tid in h10t.topics_for_unit(unit_id):
+            bank = h10q.load_bank(unit_id, tid)
+            for level, bucket in bank.get("questions", {}).items():
+                if not isinstance(bucket, list):
+                    continue
+                for raw in bucket:
+                    if not isinstance(raw, dict):
+                        continue
+                    try:
+                        out.append(h10q.normalize_question(raw, unit_id, tid, str(level)))
+                    except (ValueError, TypeError, KeyError):
+                        out.append(dict(raw))
+        return out
+
     raise ValueError(f"Base-seed validation is not supported for app '{app_key}'")
 
 
@@ -448,6 +467,7 @@ def validate_question_structure(
     q: dict,
     *,
     is_pick_correct: Callable[[dict, int], bool],
+    require_explanation: bool = True,
 ) -> list[str]:
     """Return structural/key issues for one MCQ (empty list = OK)."""
     issues: list[str] = []
@@ -457,7 +477,7 @@ def validate_question_structure(
         issues.append(f"{qid}: expected 4 options, got {len(opts)}")
     if not str(q.get("question", "")).strip():
         issues.append(f"{qid}: empty question stem")
-    if not str(q.get("explanation", "")).strip():
+    if require_explanation and not str(q.get("explanation", "")).strip():
         issues.append(f"{qid}: empty explanation")
     ans = q.get("answer")
     if not isinstance(ans, int) or ans not in range(4):
@@ -485,10 +505,15 @@ def run_base_seed_validation_audit(
     spec = resolve_app(app_key)
     unit = spec.get_unit_info(unit_id)
     questions = load_base_seed_questions(app_key, unit_id)
+    require_expl = app_key not in ("harshit_class10", "harshit_prereq", "harshit_physics", "harshit_biology", "harshit_chemistry")
     structural_issues: list[str] = []
     for q in questions:
         structural_issues.extend(
-            validate_question_structure(q, is_pick_correct=spec.is_pick_correct)
+            validate_question_structure(
+                q,
+                is_pick_correct=spec.is_pick_correct,
+                require_explanation=require_expl,
+            )
         )
     answers = simulate_random_answers(
         questions, is_pick_correct=spec.is_pick_correct, seed=seed

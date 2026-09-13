@@ -1953,6 +1953,26 @@ def _coincident_sys() -> tuple[tuple[int, int, int], tuple[int, int, int]]:
     return (a, b, c), (k * a, k * b, k * c)
 
 
+def _factor_root_term(r: int) -> str:
+    if r == 0:
+        return "x"
+    if r > 0:
+        return f"(x − {r})"
+    return f"(x + {-r})"
+
+
+def _complete_factored_quad(k: int, r1: int, r2: int) -> str:
+    if r1 == r2:
+        f = _factor_root_term(r1)
+        if f == "x":
+            return f"{k}x² = 0"
+        return f"{k}{f}² = 0"
+    f1, f2 = _factor_root_term(r1), _factor_root_term(r2)
+    if k == 1:
+        return f"{f1}{f2} = 0"
+    return f"{k}{f1}{f2} = 0"
+
+
 def _quad_std(a: int, b: int, c: int) -> str:
     head = f"{a}x²" if a != 1 else "x²"
     mid = ""
@@ -2210,7 +2230,11 @@ def _gen_u4_t2(level: str) -> dict:
         opts, ans = _shuffle_options(f"{c} = {r1} × {r2}", [f"{b} = {r1} + {r2}", f"{b} = {r1} × {r2}", f"{c} = {r1} + {r2}"])
         return _mcq(4, 2, level, f"Split middle term for {eq}: constant term relation?", opts, ans)
     if level == "B":
-        correct = f"(x − {r1})(x − {r2}) = 0" if r1 != r2 else f"(x − {r1})² = 0"
+        if r1 != r2:
+            correct = f"{_factor_root_term(r1)}{_factor_root_term(r2)} = 0"
+        else:
+            f = _factor_root_term(r1)
+            correct = f"{f}² = 0" if f != "x" else "x² = 0"
         wrong = [f"(x + {r1})(x + {r2}) = 0", f"(x − {r1})(x + {r2}) = 0", f"(x + {r1})² = 0"]
         opts, ans = _shuffle_options(correct, wrong)
         return _mcq(4, 2, level, f"Factorised form of {eq}:", opts, ans)
@@ -2221,8 +2245,14 @@ def _gen_u4_t2(level: str) -> dict:
     if level == "D":
         k = random.randint(2, 4)
         b, c = k * (-(r1 + r2)), k * (r1 * r2)
-        eq = f"{k}x² + {b}x + {c} = 0"
-        opts, ans = _shuffle_options(f"{k}(x² + {b // k}x + {c // k})", [f"{k}(x² − {b // k}x + {c // k})", f"(x² + {b}x + {c})", f"{k}x(x + {b // k})"])
+        eq = _quad_std(k, b, c)
+        correct = _complete_factored_quad(k, r1, r2)
+        wrong = [
+            f"{k}(x² + {b // k}x + {c // k})",
+            f"{k}(x² − {b // k}x + {c // k})",
+            f"(x² + {b}x + {c})",
+        ]
+        opts, ans = _shuffle_options(correct, wrong)
         return _mcq(4, 2, level, f"Factorise completely: {eq}", opts, ans)
     # rearrange
     b, c = _random_quad_roots()[2:4]
@@ -2280,11 +2310,22 @@ def _gen_u4_t4(level: str) -> dict:
         opts, ans = _shuffle_options(correct, wrong)
         return _mcq(4, 4, level, f"If Δ = {d} for a quadratic, nature of roots:", opts, ans)
     if level == "C":
-        # equal roots: D=0 => k^2 - 4*1*c = 0 for x^2 + kx + c
+        # equal roots: D=0 => k^2 = 4c; restrict k > 0 so only one MCQ key is valid
         r = random.randint(2, 7)
-        k = -2 * r
-        opts, ans = _shuffle_options(str(k), [str(-k), str(r), str(r * r)])
-        return _mcq(4, 4, level, f"For x² + kx + {r * r} = 0 to have equal roots, k = ?", opts, ans, "Δ = k² − 4r² = 0.")
+        c = r * r
+        k_pos = 2 * r
+        wrong = [str(k_pos + 1), str(k_pos - 2), str(c)]
+        wrong = [w for w in wrong if w != str(k_pos)]
+        opts, ans = _shuffle_options(str(k_pos), wrong[:3])
+        return _mcq(
+            4,
+            4,
+            level,
+            f"For x² + kx + {c} = 0 to have equal roots, k = ? (k > 0)",
+            opts,
+            ans,
+            f"Δ = k² − 4({c}) = 0 ⇒ k² = {4 * c}. With k > 0, k = {k_pos}.",
+        )
     if level == "D":
         k = random.randint(-8, 8)
         c = random.randint(1, 6)
@@ -2296,10 +2337,22 @@ def _gen_u4_t4(level: str) -> dict:
             correct = "Two distinct real roots when Δ > 0"
         opts, ans = _shuffle_options(correct, ["No real roots always", "Equal roots always", "k = 0 only"])
         return _mcq(4, 4, level, f"x² + kx + {c} = 0 has distinct real roots when:", opts, ans)
-    k = random.randint(1, 8)
-    c = k * k + random.randint(1, 5)
-    opts, ans = _shuffle_options(f"|k| < {int(math.isqrt(4 * c))}" if 4 * c > 0 else "Δ < 0", ["Δ > 0", "Δ = 0", "Always real"])
-    return _mcq(4, 4, level, f"x² + {k}x + {c} = 0 has no real roots because:", opts, ans, "Check Δ = k² − 4c < 0.")
+    b = random.randint(1, 12)
+    c = random.randint(1, 25)
+    while b * b - 4 * c >= 0:
+        b = random.randint(1, 12)
+        c = random.randint(1, 25)
+    bx = f"{b}x" if b != 1 else "x"
+    opts, ans = _shuffle_options("Δ < 0", ["Δ > 0", "Δ = 0", "Always real"])
+    return _mcq(
+        4,
+        4,
+        level,
+        f"x² + {bx} + {c} = 0 has no real roots because:",
+        opts,
+        ans,
+        f"Δ = {b}² − 4({c}) = {b * b - 4 * c} < 0.",
+    )
 
 
 # ── Unit 5 generators ──

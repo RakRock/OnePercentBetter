@@ -692,15 +692,15 @@ def _gen_u4_consecutive_integers() -> dict:
 
 
 def _gen_u4_rectangle_area() -> dict:
-    l = random.randint(5, 15)
     w = random.randint(3, 10)
-    area = l * w
+    d = random.randint(2, 14)
+    area = w * (w + d)
     return _exam_mcq(
         "u4_rectangle_area",
-        f"A rectangle has length {l} m more than width. Area = {area} m². Width = ?",
+        f"A rectangle has length {d} m more than width. Area = {area} m². Width = ?",
         f"{w} m",
-        [f"{l} m", f"{w + 1} m", f"{area} m"],
-        f"Let width = x; x(x+{l}) = {area}.",
+        [f"{d} m", f"{w + 1} m", f"{area} m"],
+        f"Let width = x; x(x+{d}) = {area}.",
     )
 
 

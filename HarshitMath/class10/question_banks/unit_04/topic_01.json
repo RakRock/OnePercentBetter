@@ -43,7 +43,7 @@
         "id": "u4_t1_A_43409697",
         "question": "In x² - 25 = 0, b equals?",
         "options": [
-          "0 (alt)",
+          "0",
           "-25",
           "0",
           "1"
@@ -81,7 +81,7 @@
         "id": "u4_t1_A_c62c3251",
         "question": "In x² - 16 = 0, b equals?",
         "options": [
-          "0 (alt)",
+          "0",
           "1",
           "0",
           "-16"
@@ -120,7 +120,7 @@
         "question": "In x² + 2x - 8 = 0, a equals?",
         "options": [
           "2",
-          "1 (alt)",
+          "1",
           "1",
           "-8"
         ],
@@ -138,7 +138,7 @@
         "id": "u4_t1_A_aba615d9",
         "question": "In x² + 2x = 0, c equals?",
         "options": [
-          "0 (alt)",
+          "0",
           "1",
           "2",
           "0"
@@ -157,7 +157,7 @@
         "id": "u4_t1_A_63f2452b",
         "question": "In x² + 6x = 0, c equals?",
         "options": [
-          "0 (alt)",
+          "0",
           "1",
           "6",
           "0"
@@ -369,7 +369,7 @@
           "-1",
           "-2",
           "1",
-          "-2 (alt)"
+          "-2"
         ],
         "answer": 1,
         "explanation": "",
@@ -462,7 +462,7 @@
         "question": "In x² + x - 6 = 0, a equals?",
         "options": [
           "2",
-          "1 (alt)",
+          "1",
           "1",
           "-6"
         ],
@@ -499,7 +499,7 @@
         "id": "u4_t1_A_cad9ce0c",
         "question": "In x² - 4x - 5 = 0, c equals?",
         "options": [
-          "-5 (alt)",
+          "-5",
           "1",
           "-4",
           "-5"
@@ -538,7 +538,7 @@
         "question": "In x² + 2x = 0, a equals?",
         "options": [
           "2",
-          "1 (alt)",
+          "1",
           "1",
           "0"
         ],
@@ -1168,7 +1168,7 @@
         "id": "u4_t1_C_49aed419",
         "question": "Quadratic with roots 8 and -8:",
         "options": [
-          "x² - 64 = 0 (alt)",
+          "x² - 64 = 0",
           "x² + 64 = 0",
           "x² - 64 = 0",
           "x² + 8x - 8 = 0"
@@ -1493,7 +1493,7 @@
         "options": [
           "None of these",
           "x² + 8x = 0",
-          "x² - 8x = 0 (alt)",
+          "x² - 8x = 0",
           "x² - 8x = 0"
         ],
         "answer": 3,
@@ -1548,7 +1548,7 @@
         "id": "u4_t1_C_cef7619d",
         "question": "Quadratic with roots -3 and 0:",
         "options": [
-          "x² + 3x = 0 (alt)",
+          "x² + 3x = 0",
           "None of these",
           "x² + 3x = 0",
           "x² - 3x = 0"
@@ -1570,7 +1570,7 @@
           "x² + 6x = 0",
           "x² - 6x = 0",
           "None of these",
-          "x² + 6x = 0 (alt)"
+          "x² + 6x = 0"
         ],
         "answer": 0,
         "explanation": "Use (x - α)(x - β) = 0.",
@@ -1589,7 +1589,7 @@
           "x² - 2x = 0",
           "x² - 2 = 0",
           "x² + 2x = 0",
-          "x² + 2x = 0 (alt)"
+          "x² + 2x = 0"
         ],
         "answer": 2,
         "explanation": "Use (x - α)(x - β) = 0.",
@@ -1663,7 +1663,7 @@
         "question": "Quadratic with roots -5 and 5:",
         "options": [
           "x² + 25 = 0",
-          "x² - 25 = 0 (alt)",
+          "x² - 25 = 0",
           "x² - 25 = 0",
           "x² - 5x + 5 = 0"
         ],
@@ -1835,7 +1835,7 @@
         "options": [
           "x² + 4x = 0",
           "x² - 4x = 0",
-          "x² - 4x = 0 (alt)",
+          "x² - 4x = 0",
           "2x² - 4x = 0"
         ],
         "answer": 1,
@@ -1873,7 +1873,7 @@
         "options": [
           "x² - 2x = 0",
           "x² + 2x = 0",
-          "x² - 2x = 0 (alt)",
+          "x² - 2x = 0",
           "2x² - 2x = 0"
         ],
         "answer": 0,
@@ -2023,15 +2023,15 @@
       },
       {
         "id": "u4_t1_D_51f77fbd",
-        "question": "A rectangle has length 13 m more than width. Area = 117 m². Width = ?",
+        "question": "A rectangle has length 14 m more than width. Area = 147 m². Width = ?",
         "options": [
-          "117 m",
-          "13 m",
-          "10 m",
-          "9 m"
+          "147 m",
+          "7 m",
+          "14 m",
+          "8 m"
         ],
-        "answer": 3,
-        "explanation": "Let width = x; x(x+13) = 117.",
+        "answer": 1,
+        "explanation": "Let width = x; x(x+14) = 147 ⇒ x = 7.",
         "topic": 1,
         "level": "D",
         "unit_id": 4,
@@ -2042,15 +2042,15 @@
       },
       {
         "id": "u4_t1_D_9b9ce55a",
-        "question": "A rectangle has length 7 m more than width. Area = 35 m². Width = ?",
+        "question": "A rectangle has length 7 m more than width. Area = 98 m². Width = ?",
         "options": [
+          "98 m",
+          "10 m",
           "7 m",
-          "5 m",
-          "6 m",
-          "35 m"
+          "8 m"
         ],
-        "answer": 1,
-        "explanation": "Let width = x; x(x+7) = 35.",
+        "answer": 2,
+        "explanation": "Let width = x; x(x+7) = 98 ⇒ x = 7.",
         "topic": 1,
         "level": "D",
         "unit_id": 4,
@@ -2061,15 +2061,15 @@
       },
       {
         "id": "u4_t1_D_01b4685a",
-        "question": "A rectangle has length 11 m more than width. Area = 77 m². Width = ?",
+        "question": "A rectangle has length 2 m more than width. Area = 120 m². Width = ?",
         "options": [
-          "7 m",
+          "2 m",
           "11 m",
-          "77 m",
-          "8 m"
+          "120 m",
+          "10 m"
         ],
-        "answer": 0,
-        "explanation": "Let width = x; x(x+11) = 77.",
+        "answer": 3,
+        "explanation": "Let width = x; x(x+2) = 120 ⇒ x = 10.",
         "topic": 1,
         "level": "D",
         "unit_id": 4,
@@ -2118,15 +2118,15 @@
       },
       {
         "id": "u4_t1_D_5c85cc58",
-        "question": "A rectangle has length 7 m more than width. Area = 56 m². Width = ?",
+        "question": "A rectangle has length 13 m more than width. Area = 90 m². Width = ?",
         "options": [
-          "8 m",
-          "9 m",
-          "56 m",
-          "7 m"
+          "13 m",
+          "6 m",
+          "90 m",
+          "5 m"
         ],
-        "answer": 0,
-        "explanation": "Let width = x; x(x+7) = 56.",
+        "answer": 3,
+        "explanation": "Let width = x; x(x+13) = 90 ⇒ x = 5.",
         "topic": 1,
         "level": "D",
         "unit_id": 4,
@@ -2137,15 +2137,15 @@
       },
       {
         "id": "u4_t1_D_fb4c51cf",
-        "question": "A rectangle has length 12 m more than width. Area = 72 m². Width = ?",
+        "question": "A rectangle has length 9 m more than width. Area = 136 m². Width = ?",
         "options": [
-          "7 m",
-          "72 m",
-          "6 m",
-          "12 m"
+          "9 m",
+          "9 m",
+          "136 m",
+          "8 m"
         ],
-        "answer": 2,
-        "explanation": "Let width = x; x(x+12) = 72.",
+        "answer": 3,
+        "explanation": "Let width = x; x(x+9) = 136 ⇒ x = 8.",
         "topic": 1,
         "level": "D",
         "unit_id": 4,
@@ -2156,15 +2156,15 @@
       },
       {
         "id": "u4_t1_D_ca863a4d",
-        "question": "A rectangle has length 14 m more than width. Area = 56 m². Width = ?",
+        "question": "A rectangle has length 3 m more than width. Area = 130 m². Width = ?",
         "options": [
-          "5 m",
-          "14 m",
-          "4 m",
-          "56 m"
+          "3 m",
+          "11 m",
+          "130 m",
+          "10 m"
         ],
-        "answer": 2,
-        "explanation": "Let width = x; x(x+14) = 56.",
+        "answer": 3,
+        "explanation": "Let width = x; x(x+3) = 130 ⇒ x = 10.",
         "topic": 1,
         "level": "D",
         "unit_id": 4,
@@ -2182,7 +2182,7 @@
           "x² + 36 = 0",
           "None of these",
           "x² - 36 = 0",
-          "x² - 36 = 0 (alt)"
+          "x² - 36 = 0"
         ],
         "answer": 2,
         "explanation": "",
@@ -2466,7 +2466,7 @@
         "options": [
           "None of these",
           "x² + 4 = 0",
-          "x² - 4 = 0 (alt)",
+          "x² - 4 = 0",
           "x² - 4 = 0"
         ],
         "answer": 3,
@@ -2503,7 +2503,7 @@
         "question": "Sum of roots = 7, product = 0. The quadratic is:",
         "options": [
           "x² - 7x = 0",
-          "x² - 7x = 0 (alt)",
+          "x² - 7x = 0",
           "None of these",
           "x² + 7x = 0"
         ],
@@ -2580,7 +2580,7 @@
         "options": [
           "x² - 25 = 0",
           "x² + 25 = 0",
-          "x² - 25 = 0 (alt)",
+          "x² - 25 = 0",
           "None of these"
         ],
         "answer": 0,
@@ -2730,7 +2730,7 @@
         "id": "u4_t1_E_d1373598",
         "question": "Sum of roots = -3, product = 0. The quadratic is:",
         "options": [
-          "x² + 3x = 0 (alt)",
+          "x² + 3x = 0",
           "None of these",
           "x² - 3x = 0",
           "x² + 3x = 0"
@@ -2750,7 +2750,7 @@
         "question": "A train travels 287 km at 60 km/h, then 287 km at 70 km/h. Total time ≈ ? hours",
         "options": [
           "10 hours",
-          "8 hours (alt)",
+          "8 hours",
           "8 hours",
           "4 hours"
         ],
@@ -2768,7 +2768,7 @@
         "id": "u4_t1_E_62c40fde",
         "question": "A train travels 232 km at 60 km/h, then 232 km at 70 km/h. Total time ≈ ? hours",
         "options": [
-          "6 hours (alt)",
+          "6 hours",
           "6 hours",
           "9 hours",
           "3 hours"
@@ -2808,7 +2808,7 @@
         "options": [
           "2 hours",
           "4 hours",
-          "4 hours (alt)",
+          "4 hours",
           "6 hours"
         ],
         "answer": 1,
@@ -2828,7 +2828,7 @@
           "8 hours",
           "9 hours",
           "4 hours",
-          "8 hours (alt)"
+          "8 hours"
         ],
         "answer": 0,
         "explanation": "Form equation: distance/speed for each leg.",
@@ -2844,7 +2844,7 @@
         "id": "u4_t1_E_43089162",
         "question": "A train travels 140 km at 60 km/h, then 140 km at 70 km/h. Total time ≈ ? hours",
         "options": [
-          "4 hours (alt)",
+          "4 hours",
           "4 hours",
           "6 hours",
           "2 hours"
