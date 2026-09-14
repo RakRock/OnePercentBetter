@@ -3,14 +3,28 @@
     "unit_id": 14,
     "chapter": "Probability",
     "ncert": "Chapter 14",
-    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE SQP 2025-26", "NCERT Ch 14"]
+    "sources": [
+      "CBSE 30/1/1",
+      "CBSE 30/1/2",
+      "CBSE SQP 2025-26",
+      "NCERT Ch 14",
+      "PYQ:chapter_wise_cached",
+      "PYQ:chapter_wise_pyq",
+      "PYQ:most_repeated_pyq",
+      "PYQ:objective_pyq"
+    ]
   },
   "mcq": [
     {
       "id": "b30_prob_mcq1",
       "source_paper": "30/1/1 (board-style)",
       "question": "Probability of an impossible event is:",
-      "options": ["0", "1", "1/2", "Undefined"],
+      "options": [
+        "0",
+        "1",
+        "1/2",
+        "Undefined"
+      ],
       "answer": 0,
       "explanation": "No favourable outcomes."
     },
@@ -18,7 +32,12 @@
       "id": "b30_prob_mcq2",
       "source_paper": "30/1/2 (board-style)",
       "question": "P(not E) equals:",
-      "options": ["1 − P(E)", "P(E) − 1", "1 + P(E)", "P(E)/2"],
+      "options": [
+        "1 − P(E)",
+        "P(E) − 1",
+        "1 + P(E)",
+        "P(E)/2"
+      ],
       "answer": 0,
       "explanation": "Complementary event formula."
     },
@@ -26,9 +45,27 @@
       "id": "bsqp_prob_mcq",
       "source_paper": "CBSE SQP 2025-26 (adapted)",
       "question": "One card drawn from deck. P(king) =",
-      "options": ["1/13", "1/52", "4/52", "1/4"],
+      "options": [
+        "1/13",
+        "1/52",
+        "4/52",
+        "1/4"
+      ],
       "answer": 0,
       "explanation": "4 kings out of 52 ⇒ 4/52 = 1/13."
+    },
+    {
+      "id": "pyq_u14_mcq_a08e4dbe56",
+      "source_paper": "chapter_wise_cached",
+      "question": "In a random experiment of throwing a die, which of the following is a sure event ?",
+      "options": [
+        "Getting a number between 1 and 6",
+        "Getting an odd number < 7",
+        "Getting an even number < 7",
+        "Getting a natural number < 7"
+      ],
+      "answer": 3,
+      "explanation": ""
     }
   ],
   "assertion_reason": [
@@ -48,7 +85,10 @@
       "marks": 2,
       "question": "Find probability of getting an even number on one throw of a fair die.",
       "model_answer": "3/6 = 1/2.",
-      "rubric": ["Favourable 2,4,6", "1/2"]
+      "rubric": [
+        "Favourable 2,4,6",
+        "1/2"
+      ]
     },
     {
       "id": "b30_prob_vsa_complement",
@@ -56,7 +96,10 @@
       "marks": 2,
       "question": "If P(E) = 0.35, find P(not E).",
       "model_answer": "1 − 0.35 = 0.65.",
-      "rubric": ["1 − P(E)", "0.65"]
+      "rubric": [
+        "1 − P(E)",
+        "0.65"
+      ]
     }
   ],
   "sa": [
@@ -66,7 +109,10 @@
       "marks": 3,
       "question": "Bag has 3 red and 5 blue balls. One ball drawn at random. Find P(red) and P(blue).",
       "model_answer": "P(red) = 3/8, P(blue) = 5/8.",
-      "rubric": ["Total 8", "Both probabilities"]
+      "rubric": [
+        "Total 8",
+        "Both probabilities"
+      ]
     },
     {
       "id": "bsqp_prob_sa_dice",
@@ -74,7 +120,22 @@
       "marks": 3,
       "question": "Two dice thrown. Find probability that sum is 7.",
       "model_answer": "6 favourable pairs out of 36 ⇒ 6/36 = 1/6.",
-      "rubric": ["Sample space 36", "6 pairs sum 7", "1/6"]
+      "rubric": [
+        "Sample space 36",
+        "6 pairs sum 7",
+        "1/6"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_a5d7353625",
+      "source_paper": "chapter_wise_cached",
+      "marks": 3,
+      "question": "Assertion (A) : The probability of selecting a number at random from the",
+      "model_answer": "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
     }
   ],
   "la": [
@@ -84,7 +145,10 @@
       "marks": 5,
       "question": "One card drawn from well-shuffled deck. Find probability of (i) red king (ii) face card (iii) not an ace.",
       "model_answer": "(i) 2/52 (ii) 12/52 = 3/13 (iii) 1 − 4/52.",
-      "rubric": ["Each part correct", "Simplify fractions"]
+      "rubric": [
+        "Each part correct",
+        "Simplify fractions"
+      ]
     },
     {
       "id": "b30_prob_la_two_draws",
@@ -92,7 +156,11 @@
       "marks": 5,
       "question": "Two balls drawn without replacement from bag with 4 white and 6 black balls. Find P(both black).",
       "model_answer": "(6/10) × (5/9) = 30/90 = 1/3.",
-      "rubric": ["First draw", "Second without replacement", "1/3"]
+      "rubric": [
+        "First draw",
+        "Second without replacement",
+        "1/3"
+      ]
     },
     {
       "id": "bsqp_prob_la_mixed",
@@ -100,7 +168,11 @@
       "marks": 5,
       "question": "Three coins tossed simultaneously. Find probability of at least two heads.",
       "model_answer": "Favourable: HHT, HTH, THH, HHH — 4/8 = 1/2.",
-      "rubric": ["List outcomes", "Count favourable", "1/2"]
+      "rubric": [
+        "List outcomes",
+        "Count favourable",
+        "1/2"
+      ]
     }
   ]
 }

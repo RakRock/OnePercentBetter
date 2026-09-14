@@ -3,14 +3,28 @@
     "unit_id": 9,
     "chapter": "Some Applications of Trigonometry",
     "ncert": "Chapter 9",
-    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE SQP 2025-26", "NCERT Ch 9"]
+    "sources": [
+      "CBSE 30/1/1",
+      "CBSE 30/1/2",
+      "CBSE SQP 2025-26",
+      "NCERT Ch 9",
+      "PYQ:chapter_wise_cached",
+      "PYQ:chapter_wise_pyq",
+      "PYQ:most_repeated_pyq",
+      "PYQ:objective_pyq"
+    ]
   },
   "mcq": [
     {
       "id": "b30_apptrig_mcq1",
       "source_paper": "30/1/1 (board-style)",
       "question": "Angle of elevation of the top of a tower from a point 30 m away is 30°. Height of tower (ignore observer height):",
-      "options": ["10√3 m", "30 m", "15 m", "60 m"],
+      "options": [
+        "10√3 m",
+        "30 m",
+        "15 m",
+        "60 m"
+      ],
       "answer": 0,
       "explanation": "h = 30 tan 30° = 30/√3 = 10√3 m."
     },
@@ -18,7 +32,12 @@
       "id": "b30_apptrig_mcq2",
       "source_paper": "30/1/2 (board-style)",
       "question": "Line of sight is:",
-      "options": ["From eye to object viewed", "Horizontal ground line", "Vertical only", "Shadow of object"],
+      "options": [
+        "From eye to object viewed",
+        "Horizontal ground line",
+        "Vertical only",
+        "Shadow of object"
+      ],
       "answer": 0,
       "explanation": "NCERT 9.1 definition."
     },
@@ -26,9 +45,27 @@
       "id": "bsqp_apptrig_mcq",
       "source_paper": "CBSE SQP 2025-26 (adapted)",
       "question": "Angle of depression is measured:",
-      "options": ["Below the horizontal", "Above the horizontal", "At the vertical", "Only at 45°"],
+      "options": [
+        "Below the horizontal",
+        "Above the horizontal",
+        "At the vertical",
+        "Only at 45°"
+      ],
       "answer": 0,
       "explanation": "Depression — looking down; angle below horizontal."
+    },
+    {
+      "id": "pyq_u09_mcq_243d286a17",
+      "source_paper": "chapter_wise_cached",
+      "question": "The angle of elevation of the top of a building from the foot of the tower is 30 and the angle of elevation of the top of the tower from the foot of the building is 60. If the tower is 60 m high, find the height of the building and distance between the building and the tower. (Use √3 = 1.73) 2. A car is moving away from the base of a 30 m high tower. The angle of elevation of the top of the tower from the car at an instant, when the car is 10√3 m away from the base of the tower, is :",
+      "options": [
+        "30°",
+        "45°",
+        "90°",
+        "60°"
+      ],
+      "answer": 0,
+      "explanation": "Let AB be the tower and AC and AD are shadows."
     }
   ],
   "assertion_reason": [
@@ -48,7 +85,10 @@
       "marks": 2,
       "question": "A pole 10 m high casts a shadow 10 m long. Find the angle of elevation of the sun.",
       "model_answer": "tan θ = 10/10 = 1 ⇒ θ = 45°.",
-      "rubric": ["tan θ = h/shadow", "45°"]
+      "rubric": [
+        "tan θ = h/shadow",
+        "45°"
+      ]
     },
     {
       "id": "b30_apptrig_vsa_dist",
@@ -56,7 +96,10 @@
       "marks": 2,
       "question": "From the top of a 7 m building, angle of depression of a car is 45°. Find distance of car from building.",
       "model_answer": "tan 45° = 7/d ⇒ d = 7 m.",
-      "rubric": ["Right triangle setup", "7 m"]
+      "rubric": [
+        "Right triangle setup",
+        "7 m"
+      ]
     }
   ],
   "sa": [
@@ -66,7 +109,11 @@
       "marks": 3,
       "question": "Tower height is 50 m. Angle of elevation from a point on ground is 30°. Find distance from foot of tower.",
       "model_answer": "tan 30° = 50/d ⇒ d = 50√3 m.",
-      "rubric": ["Draw diagram", "Use tan 30°", "50√3 m"]
+      "rubric": [
+        "Draw diagram",
+        "Use tan 30°",
+        "50√3 m"
+      ]
     },
     {
       "id": "bsqp_apptrig_sa_shadow",
@@ -74,7 +121,11 @@
       "marks": 3,
       "question": "A 1.5 m boy sees a tower at 60° elevation. He walks 30 m towards the tower to a point with 30° elevation. Find tower height.",
       "model_answer": "Set up two equations with heights h and distances d, d−30; solve h = 15√3 m (standard NCERT type).",
-      "rubric": ["Two right triangles", "Equations in h and d", "Height 15√3 m"]
+      "rubric": [
+        "Two right triangles",
+        "Equations in h and d",
+        "Height 15√3 m"
+      ]
     }
   ],
   "la": [
@@ -84,7 +135,11 @@
       "marks": 5,
       "question": "Student 1.5 m tall observes minar at 30° elevation from 28.5 m away. Find minar height.",
       "model_answer": "BC = 28.5 tan 30° = 9.5 m; height = 9.5 + 1.5 = 11 m.",
-      "rubric": ["Eye level height", "tan 30° for BC", "Total 11 m"]
+      "rubric": [
+        "Eye level height",
+        "tan 30° for BC",
+        "Total 11 m"
+      ]
     },
     {
       "id": "b30_apptrig_la_cliff",
@@ -92,7 +147,11 @@
       "marks": 5,
       "question": "From top of 80 m cliff, angles of depression of two boats in same line are 30° and 45°. Find distance between boats.",
       "model_answer": "Distances 80√3 and 80 m from cliff; difference = 80(√3 − 1) m.",
-      "rubric": ["Two depressions", "Two horizontal distances", "Difference 80(√3−1) m"]
+      "rubric": [
+        "Two depressions",
+        "Two horizontal distances",
+        "Difference 80(√3−1) m"
+      ]
     },
     {
       "id": "bsqp_apptrig_la_airplane",
@@ -100,7 +159,11 @@
       "marks": 5,
       "question": "Aeroplane flying 1 km high passes overhead with 60° elevation at one instant. Find horizontal distance after 15 s if speed is 720 km/h.",
       "model_answer": "Initial distance = 1/tan 60° = 1/√3 km; displacement in 15 s = 3 km; combine as required.",
-      "rubric": ["Initial distance", "Speed conversion", "Combined distance"]
+      "rubric": [
+        "Initial distance",
+        "Speed conversion",
+        "Combined distance"
+      ]
     }
   ]
 }

@@ -599,12 +599,12 @@
         "question": "A 0.8 m tree casts a 1.3 m shadow. A pole casts 0.5 m shadow. Pole height?",
         "options": [
           "80 cm",
-          "10 cm",
-          "30 cm",
+          "31 cm",
+          "56 cm",
           "50 cm"
         ],
-        "answer": 2,
-        "explanation": "height/shadow is constant: 80/130 = h/50 ⇒ h = 30 cm.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 80/130 = h/50 ⇒ h ≈ 31 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -617,13 +617,13 @@
         "id": "u6_t4_C_89955e02",
         "question": "A 1.3 m tree casts a 1.8 m shadow. A pole casts 1.1 m shadow. Pole height?",
         "options": [
-          "109 cm",
-          "110 cm",
+          "79 cm",
           "130 cm",
-          "79 cm"
+          "134 cm",
+          "110 cm"
         ],
-        "answer": 3,
-        "explanation": "height/shadow is constant: 130/180 = h/110 ⇒ h = 79 cm.",
+        "answer": 0,
+        "explanation": "height/shadow is constant: 130/180 = h/110 ⇒ h ≈ 79 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -636,13 +636,13 @@
         "id": "u6_t4_C_dff2d87b",
         "question": "A 2.2 m tree casts a 0.9 m shadow. A pole casts 0.5 m shadow. Pole height?",
         "options": [
-          "152 cm",
-          "50 cm",
           "122 cm",
-          "220 cm"
+          "147 cm",
+          "220 cm",
+          "50 cm"
         ],
-        "answer": 2,
-        "explanation": "height/shadow is constant: 220/90 = h/50 ⇒ h = 122 cm.",
+        "answer": 0,
+        "explanation": "height/shadow is constant: 220/90 = h/50 ⇒ h ≈ 122 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -655,13 +655,13 @@
         "id": "u6_t4_C_cf9e5e29",
         "question": "A 1.5 m tree casts a 1.8 m shadow. A pole casts 0.6 m shadow. Pole height?",
         "options": [
-          "60 cm",
           "150 cm",
-          "50 cm",
-          "80 cm"
+          "60 cm",
+          "80 cm",
+          "50 cm"
         ],
-        "answer": 2,
-        "explanation": "height/shadow is constant: 150/180 = h/60 ⇒ h = 50 cm.",
+        "answer": 3,
+        "explanation": "height/shadow is constant: 150/180 = h/60 ⇒ h ≈ 50 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -674,13 +674,13 @@
         "id": "u6_t4_C_a854bd09",
         "question": "A 1.7 m tree casts a 0.8 m shadow. A pole casts 1.2 m shadow. Pole height?",
         "options": [
-          "265 cm",
-          "255 cm",
+          "315 cm",
           "120 cm",
+          "255 cm",
           "170 cm"
         ],
-        "answer": 1,
-        "explanation": "height/shadow is constant: 170/80 = h/120 ⇒ h = 255 cm.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 170/80 = h/120 ⇒ h ≈ 255 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -693,13 +693,13 @@
         "id": "u6_t4_C_f0524d8c",
         "question": "A 1 m tree casts a 1.4 m shadow. A pole casts 0.7 m shadow. Pole height?",
         "options": [
-          "100 cm",
+          "70 cm",
+          "85 cm",
           "50 cm",
-          "60 cm",
-          "80 cm"
+          "100 cm"
         ],
-        "answer": 1,
-        "explanation": "height/shadow is constant: 100/140 = h/70 ⇒ h = 50 cm.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 100/140 = h/70 ⇒ h ≈ 50 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -712,13 +712,13 @@
         "id": "u6_t4_C_e0eda5ba",
         "question": "A 2.5 m tree casts a 1.7 m shadow. A pole casts 1.1 m shadow. Pole height?",
         "options": [
-          "191 cm",
+          "217 cm",
+          "250 cm",
           "110 cm",
-          "141 cm",
-          "161 cm"
+          "162 cm"
         ],
         "answer": 3,
-        "explanation": "height/shadow is constant: 250/170 = h/110 ⇒ h = 161 cm.",
+        "explanation": "height/shadow is constant: 250/170 = h/110 ⇒ h ≈ 162 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -731,13 +731,13 @@
         "id": "u6_t4_C_69d39d8e",
         "question": "A 1.8 m tree casts a 1 m shadow. A pole casts 0.4 m shadow. Pole height?",
         "options": [
+          "40 cm",
+          "92 cm",
           "72 cm",
-          "52 cm",
-          "82 cm",
-          "40 cm"
+          "180 cm"
         ],
-        "answer": 0,
-        "explanation": "height/shadow is constant: 180/100 = h/40 ⇒ h = 72 cm.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 180/100 = h/40 ⇒ h ≈ 72 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -750,13 +750,13 @@
         "id": "u6_t4_C_d1e997eb",
         "question": "A 1.5 m tree casts a 1 m shadow. A pole casts 0.7 m shadow. Pole height?",
         "options": [
-          "150 cm",
           "105 cm",
           "70 cm",
-          "115 cm"
+          "140 cm",
+          "150 cm"
         ],
-        "answer": 1,
-        "explanation": "height/shadow is constant: 150/100 = h/70 ⇒ h = 105 cm.",
+        "answer": 0,
+        "explanation": "height/shadow is constant: 150/100 = h/70 ⇒ h ≈ 105 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -769,13 +769,13 @@
         "id": "u6_t4_C_6a63745a",
         "question": "A 2.4 m tree casts a 0.9 m shadow. A pole casts 0.5 m shadow. Pole height?",
         "options": [
+          "158 cm",
           "240 cm",
-          "163 cm",
           "133 cm",
           "50 cm"
         ],
         "answer": 2,
-        "explanation": "height/shadow is constant: 240/90 = h/50 ⇒ h = 133 cm.",
+        "explanation": "height/shadow is constant: 240/90 = h/50 ⇒ h ≈ 133 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -788,13 +788,13 @@
         "id": "u6_t4_C_1fd5990a",
         "question": "A 2.4 m tree casts a 1 m shadow. A pole casts 0.9 m shadow. Pole height?",
         "options": [
-          "196 cm",
-          "90 cm",
+          "261 cm",
+          "240 cm",
           "216 cm",
-          "240 cm"
+          "90 cm"
         ],
         "answer": 2,
-        "explanation": "height/shadow is constant: 240/100 = h/90 ⇒ h = 216 cm.",
+        "explanation": "height/shadow is constant: 240/100 = h/90 ⇒ h ≈ 216 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -807,13 +807,13 @@
         "id": "u6_t4_C_9210d4d0",
         "question": "A 0.9 m tree casts a 0.6 m shadow. A pole casts 1.1 m shadow. Pole height?",
         "options": [
-          "165 cm",
+          "220 cm",
           "90 cm",
-          "175 cm",
+          "165 cm",
           "110 cm"
         ],
-        "answer": 0,
-        "explanation": "height/shadow is constant: 90/60 = h/110 ⇒ h = 165 cm.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 90/60 = h/110 ⇒ h ≈ 165 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -826,13 +826,13 @@
         "id": "u6_t4_C_21ae408b",
         "question": "A 1.2 m tree casts a 1.6 m shadow. A pole casts 0.8 m shadow. Pole height?",
         "options": [
+          "100 cm",
           "120 cm",
           "80 cm",
-          "60 cm",
-          "90 cm"
+          "60 cm"
         ],
-        "answer": 2,
-        "explanation": "height/shadow is constant: 120/160 = h/80 ⇒ h = 60 cm.",
+        "answer": 3,
+        "explanation": "height/shadow is constant: 120/160 = h/80 ⇒ h ≈ 60 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -846,12 +846,12 @@
         "question": "A 1.7 m tree casts a 0.8 m shadow. A pole casts 0.4 m shadow. Pole height?",
         "options": [
           "170 cm",
-          "65 cm",
-          "115 cm",
-          "85 cm"
+          "105 cm",
+          "85 cm",
+          "40 cm"
         ],
-        "answer": 3,
-        "explanation": "height/shadow is constant: 170/80 = h/40 ⇒ h = 85 cm.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 170/80 = h/40 ⇒ h ≈ 85 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -864,13 +864,13 @@
         "id": "u6_t4_C_e5dd44f3",
         "question": "A 2.5 m tree casts a 1.5 m shadow. A pole casts 1.2 m shadow. Pole height?",
         "options": [
-          "210 cm",
-          "120 cm",
-          "230 cm",
-          "200 cm"
+          "260 cm",
+          "200 cm",
+          "250 cm",
+          "120 cm"
         ],
-        "answer": 3,
-        "explanation": "height/shadow is constant: 250/150 = h/120 ⇒ h = 200 cm.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 250/150 = h/120 ⇒ h ≈ 200 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -883,13 +883,13 @@
         "id": "u6_t4_C_9b5bd643",
         "question": "A 0.8 m tree casts a 1.5 m shadow. A pole casts 0.5 m shadow. Pole height?",
         "options": [
-          "26 cm",
-          "10 cm",
-          "80 cm",
-          "36 cm"
+          "50 cm",
+          "27 cm",
+          "52 cm",
+          "80 cm"
         ],
-        "answer": 0,
-        "explanation": "height/shadow is constant: 80/150 = h/50 ⇒ h = 26 cm.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 80/150 = h/50 ⇒ h ≈ 27 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -902,13 +902,13 @@
         "id": "u6_t4_C_86d952d6",
         "question": "A 0.9 m tree casts a 2 m shadow. A pole casts 1.1 m shadow. Pole height?",
         "options": [
-          "29 cm",
-          "49 cm",
           "110 cm",
-          "90 cm"
+          "50 cm",
+          "90 cm",
+          "105 cm"
         ],
         "answer": 1,
-        "explanation": "height/shadow is constant: 90/200 = h/110 ⇒ h = 49 cm.",
+        "explanation": "height/shadow is constant: 90/200 = h/110 ⇒ h ≈ 50 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -921,13 +921,13 @@
         "id": "u6_t4_C_3dfdd441",
         "question": "A 2.3 m tree casts a 0.9 m shadow. A pole casts 1 m shadow. Pole height?",
         "options": [
+          "304 cm",
+          "229 cm",
           "100 cm",
-          "230 cm",
-          "255 cm",
-          "265 cm"
+          "254 cm"
         ],
-        "answer": 2,
-        "explanation": "height/shadow is constant: 230/90 = h/100 ⇒ h = 255 cm.",
+        "answer": 3,
+        "explanation": "height/shadow is constant: 229/90 = h/100 ⇒ h ≈ 254 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -940,13 +940,13 @@
         "id": "u6_t4_C_3446c7ca",
         "question": "A 0.9 m tree casts a 1.2 m shadow. A pole casts 0.4 m shadow. Pole height?",
         "options": [
-          "60 cm",
-          "10 cm",
           "90 cm",
-          "30 cm"
+          "40 cm",
+          "30 cm",
+          "50 cm"
         ],
-        "answer": 3,
-        "explanation": "height/shadow is constant: 90/120 = h/40 ⇒ h = 30 cm.",
+        "answer": 2,
+        "explanation": "height/shadow is constant: 90/120 = h/40 ⇒ h ≈ 30 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -959,13 +959,13 @@
         "id": "u6_t4_C_c1aea87b",
         "question": "A 1.9 m tree casts a 0.7 m shadow. A pole casts 1.1 m shadow. Pole height?",
         "options": [
-          "110 cm",
-          "278 cm",
-          "298 cm",
-          "328 cm"
+          "190 cm",
+          "354 cm",
+          "299 cm",
+          "110 cm"
         ],
         "answer": 2,
-        "explanation": "height/shadow is constant: 190/70 = h/110 ⇒ h = 298 cm.",
+        "explanation": "height/shadow is constant: 190/70 = h/110 ⇒ h ≈ 299 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -978,13 +978,13 @@
         "id": "u6_t4_C_fce73ddb",
         "question": "A 2.3 m tree casts a 0.8 m shadow. A pole casts 0.7 m shadow. Pole height?",
         "options": [
-          "201 cm",
-          "231 cm",
-          "230 cm",
-          "211 cm"
+          "229 cm",
+          "235 cm",
+          "70 cm",
+          "200 cm"
         ],
-        "answer": 0,
-        "explanation": "height/shadow is constant: 230/80 = h/70 ⇒ h = 201 cm.",
+        "answer": 3,
+        "explanation": "height/shadow is constant: 229/80 = h/70 ⇒ h ≈ 200 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -997,13 +997,13 @@
         "id": "u6_t4_C_491603bc",
         "question": "A 2.5 m tree casts a 1.3 m shadow. A pole casts 0.4 m shadow. Pole height?",
         "options": [
-          "76 cm",
-          "40 cm",
-          "106 cm",
-          "250 cm"
+          "77 cm",
+          "97 cm",
+          "250 cm",
+          "40 cm"
         ],
         "answer": 0,
-        "explanation": "height/shadow is constant: 250/130 = h/40 ⇒ h = 76 cm.",
+        "explanation": "height/shadow is constant: 250/130 = h/40 ⇒ h ≈ 77 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1016,13 +1016,13 @@
         "id": "u6_t4_C_249b57e6",
         "question": "A 1.8 m tree casts a 1.3 m shadow. A pole casts 0.7 m shadow. Pole height?",
         "options": [
-          "76 cm",
-          "96 cm",
+          "70 cm",
+          "97 cm",
           "180 cm",
-          "106 cm"
+          "132 cm"
         ],
         "answer": 1,
-        "explanation": "height/shadow is constant: 180/130 = h/70 ⇒ h = 96 cm.",
+        "explanation": "height/shadow is constant: 180/130 = h/70 ⇒ h ≈ 97 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1035,13 +1035,13 @@
         "id": "u6_t4_C_65f516b2",
         "question": "A 0.9 m tree casts a 1.4 m shadow. A pole casts 0.5 m shadow. Pole height?",
         "options": [
+          "57 cm",
           "90 cm",
-          "32 cm",
-          "62 cm",
-          "50 cm"
+          "50 cm",
+          "32 cm"
         ],
-        "answer": 1,
-        "explanation": "height/shadow is constant: 90/140 = h/50 ⇒ h = 32 cm.",
+        "answer": 3,
+        "explanation": "height/shadow is constant: 90/140 = h/50 ⇒ h ≈ 32 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1054,13 +1054,13 @@
         "id": "u6_t4_C_cd4f03ed",
         "question": "A 1.5 m tree casts a 0.6 m shadow. A pole casts 0.3 m shadow. Pole height?",
         "options": [
-          "105 cm",
+          "150 cm",
           "75 cm",
-          "85 cm",
-          "150 cm"
+          "90 cm",
+          "30 cm"
         ],
         "answer": 1,
-        "explanation": "height/shadow is constant: 150/60 = h/30 ⇒ h = 75 cm.",
+        "explanation": "height/shadow is constant: 150/60 = h/30 ⇒ h ≈ 75 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1073,13 +1073,13 @@
         "id": "u6_t4_C_0be0fa20",
         "question": "A 1.3 m tree casts a 0.9 m shadow. A pole casts 0.4 m shadow. Pole height?",
         "options": [
-          "67 cm",
           "130 cm",
-          "57 cm",
-          "87 cm"
+          "58 cm",
+          "40 cm",
+          "78 cm"
         ],
-        "answer": 2,
-        "explanation": "height/shadow is constant: 130/90 = h/40 ⇒ h = 57 cm.",
+        "answer": 1,
+        "explanation": "height/shadow is constant: 130/90 = h/40 ⇒ h ≈ 58 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1092,13 +1092,13 @@
         "id": "u6_t4_C_c3510080",
         "question": "A 1.4 m tree casts a 0.6 m shadow. A pole casts 0.8 m shadow. Pole height?",
         "options": [
-          "166 cm",
+          "227 cm",
+          "140 cm",
           "80 cm",
-          "186 cm",
-          "196 cm"
+          "187 cm"
         ],
-        "answer": 2,
-        "explanation": "height/shadow is constant: 140/60 = h/80 ⇒ h = 186 cm.",
+        "answer": 3,
+        "explanation": "height/shadow is constant: 140/60 = h/80 ⇒ h ≈ 187 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1111,13 +1111,13 @@
         "id": "u6_t4_C_e09f1e12",
         "question": "A 1.7 m tree casts a 0.7 m shadow. A pole casts 0.8 m shadow. Pole height?",
         "options": [
-          "80 cm",
-          "224 cm",
           "194 cm",
-          "170 cm"
+          "170 cm",
+          "80 cm",
+          "234 cm"
         ],
-        "answer": 2,
-        "explanation": "height/shadow is constant: 170/70 = h/80 ⇒ h = 194 cm.",
+        "answer": 0,
+        "explanation": "height/shadow is constant: 170/70 = h/80 ⇒ h ≈ 194 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1130,13 +1130,13 @@
         "id": "u6_t4_C_8880c916",
         "question": "A 2.3 m tree casts a 0.9 m shadow. A pole casts 1 m shadow. Pole height?",
         "options": [
-          "230 cm",
-          "255 cm",
-          "265 cm",
-          "100 cm"
+          "254 cm",
+          "229 cm",
+          "100 cm",
+          "304 cm"
         ],
-        "answer": 1,
-        "explanation": "height/shadow is constant: 230/90 = h/100 ⇒ h = 255 cm.",
+        "answer": 0,
+        "explanation": "height/shadow is constant: 229/90 = h/100 ⇒ h ≈ 254 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1150,12 +1150,12 @@
         "question": "A 0.8 m tree casts a 1.4 m shadow. A pole casts 0.7 m shadow. Pole height?",
         "options": [
           "40 cm",
-          "70 cm",
+          "75 cm",
           "80 cm",
-          "20 cm"
+          "70 cm"
         ],
         "answer": 0,
-        "explanation": "height/shadow is constant: 80/140 = h/70 ⇒ h = 40 cm.",
+        "explanation": "height/shadow is constant: 80/140 = h/70 ⇒ h ≈ 40 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1168,13 +1168,13 @@
         "id": "u6_t4_C_24c9e52b",
         "question": "A 1.9 m tree casts a 0.7 m shadow. A pole casts 0.8 m shadow. Pole height?",
         "options": [
-          "227 cm",
-          "80 cm",
+          "257 cm",
+          "190 cm",
           "217 cm",
-          "197 cm"
+          "80 cm"
         ],
         "answer": 2,
-        "explanation": "height/shadow is constant: 190/70 = h/80 ⇒ h = 217 cm.",
+        "explanation": "height/shadow is constant: 190/70 = h/80 ⇒ h ≈ 217 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1187,13 +1187,13 @@
         "id": "u6_t4_C_d0229ceb",
         "question": "A 2.4 m tree casts a 1.4 m shadow. A pole casts 0.3 m shadow. Pole height?",
         "options": [
-          "81 cm",
-          "51 cm",
           "240 cm",
-          "31 cm"
+          "66 cm",
+          "30 cm",
+          "51 cm"
         ],
-        "answer": 1,
-        "explanation": "height/shadow is constant: 240/140 = h/30 ⇒ h = 51 cm.",
+        "answer": 3,
+        "explanation": "height/shadow is constant: 240/140 = h/30 ⇒ h ≈ 51 cm.",
         "topic": 4,
         "level": "C",
         "unit_id": 6,
@@ -1230,7 +1230,7 @@
           "2:1",
           "4:1",
           "3:1",
-          "4:1 (alt)"
+          "5:1"
         ],
         "answer": 1,
         "explanation": "Area ratio = (scale factor)².",
@@ -1285,7 +1285,7 @@
         "question": "Two similar triangles have sides in ratio 1:2. Ratio of their areas is:",
         "options": [
           "2:1",
-          "4:1 (alt)",
+          "5:1",
           "4:1",
           "3:1"
         ],
@@ -1402,7 +1402,7 @@
         "options": [
           "8 m",
           "6 m",
-          "8 m (alt)",
+          "28",
           "10 m"
         ],
         "answer": 0,
@@ -1438,7 +1438,7 @@
         "id": "u6_t4_E_8115476e",
         "question": "A ladder 10 m long rests against a wall with foot 8 m from the wall. Height reached on wall?",
         "options": [
-          "6 m (alt)",
+          "58",
           "6 m",
           "8 m",
           "10 m"

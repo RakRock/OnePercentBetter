@@ -40,6 +40,9 @@ class TestHarshitClass10WeekConfig(unittest.TestCase):
             practice_difficulty=payload.get("practice_difficulty", 3),
             use_chapter_llm=payload.get("use_chapter_llm", True),
             grok_fresh_only=payload.get("grok_fresh_only", False),
+            include_board_pyq=payload.get("include_board_pyq", True),
+            pyq_count=payload.get("pyq_count", 4),
+            pyq_written_slots=payload.get("pyq_written_slots", 2),
         )
         restored = db.get_harshit_class10_week_config(unit_id)
         self.assertEqual(restored["week_label"], payload["week_label"])
@@ -47,6 +50,9 @@ class TestHarshitClass10WeekConfig(unittest.TestCase):
         self.assertEqual(restored["practice_difficulty"], payload.get("practice_difficulty", 3))
         self.assertEqual(restored["use_chapter_llm"], payload.get("use_chapter_llm", True))
         self.assertEqual(restored["grok_fresh_only"], payload.get("grok_fresh_only", False))
+        self.assertEqual(restored["include_board_pyq"], payload.get("include_board_pyq", True))
+        self.assertEqual(restored["pyq_count"], payload.get("pyq_count", 4))
+        self.assertEqual(restored["pyq_written_slots"], payload.get("pyq_written_slots", 2))
         self.assertEqual(restored["unit_id"], unit_id)
 
     def test_default_week_config_active_units(self):

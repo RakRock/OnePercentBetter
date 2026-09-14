@@ -63,6 +63,15 @@ class TestNumericExpressionEval(unittest.TestCase):
         self.assertFalse(options_equivalent("12 × 10⁹", "1.2 × 10¹⁰"))
         self.assertTrue(options_equivalent("1.2 × 10¹⁰", "1.20 × 10¹⁰"))
 
+    def test_ratio_colon_options_not_equivalent_by_leading_term(self) -> None:
+        self.assertFalse(options_equivalent("3:11", "3:13"))
+        self.assertFalse(options_equivalent("1 : 1", "1 : 2"))
+        self.assertIsNone(option_numeric_value("3:11"))
+
+    def test_surd_literals_distinct(self) -> None:
+        self.assertFalse(options_equivalent("1/√2", "1"))
+        self.assertAlmostEqual(option_numeric_value("1/√2"), 1 / (2 ** 0.5))
+
     def test_mixed_number_parsing(self) -> None:
         from numeric_expression_eval import option_numeric_value, parse_mixed_number_value
 

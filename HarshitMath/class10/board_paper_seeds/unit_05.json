@@ -3,14 +3,28 @@
     "unit_id": 5,
     "chapter": "Arithmetic Progressions",
     "ncert": "Chapter 5",
-    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE SQP 2025-26", "NCERT Ch 5"]
+    "sources": [
+      "CBSE 30/1/1",
+      "CBSE 30/1/2",
+      "CBSE SQP 2025-26",
+      "NCERT Ch 5",
+      "PYQ:chapter_wise_cached",
+      "PYQ:chapter_wise_pyq",
+      "PYQ:most_repeated_pyq",
+      "PYQ:objective_pyq"
+    ]
   },
   "mcq": [
     {
       "id": "b30_ap_mcq1",
       "source_paper": "30/1/2 (board-style)",
       "question": "The common difference of the AP 5, 8, 11, 14, … is:",
-      "options": ["3", "5", "8", "−3"],
+      "options": [
+        "3",
+        "5",
+        "8",
+        "−3"
+      ],
       "answer": 0,
       "explanation": "d = 8 − 5 = 3."
     },
@@ -18,7 +32,12 @@
       "id": "b30_ap_mcq2",
       "source_paper": "30/1/3 (board-style)",
       "question": "The 10th term of the AP 2, 7, 12, … is:",
-      "options": ["47", "42", "52", "45"],
+      "options": [
+        "47",
+        "42",
+        "52",
+        "45"
+      ],
       "answer": 0,
       "explanation": "a = 2, d = 5; a₁₀ = 2 + 9×5 = 47."
     },
@@ -26,9 +45,53 @@
       "id": "bsqp_ap_mcq",
       "source_paper": "CBSE SQP 2025-26 (adapted)",
       "question": "Which of the following is NOT an arithmetic progression?",
-      "options": ["−3, −2, −1, 0, …", "2, 4, 8, 16, …", "100, 70, 40, 10, …", "3, 3, 3, 3, …"],
+      "options": [
+        "−3, −2, −1, 0, …",
+        "2, 4, 8, 16, …",
+        "100, 70, 40, 10, …",
+        "3, 3, 3, 3, …"
+      ],
       "answer": 1,
       "explanation": "2, 4, 8, 16, … has ratio 2, not a fixed difference."
+    },
+    {
+      "id": "pyq_u05_mcq_b05ce61e7a",
+      "source_paper": "chapter_wise_cached",
+      "question": "The graph of polynomial p(x) = k is shown here. Number of zeroes of polynomial p(x) is :",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "infinitely many"
+      ],
+      "answer": 0,
+      "explanation": "0"
+    },
+    {
+      "id": "pyq_u05_mcq_5b6aa65232",
+      "source_paper": "chapter_wise_cached",
+      "question": "The sum of first n terms of an A.P. is 50 √2. If the first and the last terms are 2 and 19 2 respectively, then the value of n is :",
+      "options": [
+        "10",
+        "5",
+        "15",
+        "20"
+      ],
+      "answer": 1,
+      "explanation": "5"
+    },
+    {
+      "id": "pyq_u05_mcq_df63e2a2d7",
+      "source_paper": "chapter_wise_cached",
+      "question": "If the sum of first m terms of an AP is 2m2 + 3m, then its second term is :",
+      "options": [
+        "10",
+        "9",
+        "12",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "– 3"
     }
   ],
   "assertion_reason": [
@@ -39,6 +102,14 @@
       "reason": "Each term is obtained by adding d to the preceding term.",
       "answer": 0,
       "explanation": "Both assertion and reason are true; reason correctly explains the pattern."
+    },
+    {
+      "id": "pyq_u05_ar_13f04392cb",
+      "source_paper": "chapter_wise_cached",
+      "assertion": "is followed by a statement of Reason (R). Select the correct option from the following options:",
+      "reason": ". Select the correct option from the following options:",
+      "answer": 0,
+      "explanation": ""
     }
   ],
   "vsa": [
@@ -48,7 +119,10 @@
       "marks": 2,
       "question": "Find the 15th term of the AP 7, 12, 17, …",
       "model_answer": "a = 7, d = 5. a₁₅ = 7 + 14×5 = 77.",
-      "rubric": ["Identify a and d", "a₁₅ = 77"]
+      "rubric": [
+        "Identify a and d",
+        "a₁₅ = 77"
+      ]
     },
     {
       "id": "b30_ap_vsa_d",
@@ -56,7 +130,10 @@
       "marks": 2,
       "question": "Write the first four terms of the AP with a = −2 and d = 4.",
       "model_answer": "−2, 2, 6, 10.",
-      "rubric": ["Four correct terms", "Common difference 4"]
+      "rubric": [
+        "Four correct terms",
+        "Common difference 4"
+      ]
     }
   ],
   "sa": [
@@ -66,7 +143,10 @@
       "marks": 3,
       "question": "Which term of the AP 21, 18, 15, … is −81? Is any term equal to 0?",
       "model_answer": "a = 21, d = −3. −81 = 21 + (n−1)(−3) ⇒ n = 35. For 0: n = 8.",
-      "rubric": ["n = 35 for −81", "8th term is 0"]
+      "rubric": [
+        "n = 35 for −81",
+        "8th term is 0"
+      ]
     },
     {
       "id": "bsqp_ap_sa_sum",
@@ -74,7 +154,10 @@
       "marks": 3,
       "question": "Find the sum of first 20 terms of the AP 3, 7, 11, …",
       "model_answer": "a = 3, d = 4. S₂₀ = 20/2[6 + 19×4] = 10 × 82 = 820.",
-      "rubric": ["Correct formula", "S₂₀ = 820"]
+      "rubric": [
+        "Correct formula",
+        "S₂₀ = 820"
+      ]
     }
   ],
   "la": [
@@ -84,7 +167,11 @@
       "marks": 5,
       "question": "In a flower bed there are 23 rose plants in the first row, 21 in the second, 19 in the third, and so on. There are 5 plants in the last row. How many rows are there?",
       "model_answer": "AP: a = 23, d = −2, aₙ = 5. 5 = 23 + (n−1)(−2) ⇒ n = 10 rows.",
-      "rubric": ["Form AP with a, d, aₙ", "Solve for n", "10 rows"]
+      "rubric": [
+        "Form AP with a, d, aₙ",
+        "Solve for n",
+        "10 rows"
+      ]
     },
     {
       "id": "b30_ap_la_mixed",
@@ -92,7 +179,11 @@
       "marks": 5,
       "question": "The 3rd term of an AP is 5 and the 7th term is 9. Find the AP and the sum of its first 10 terms.",
       "model_answer": "a + 2d = 5, a + 6d = 9 ⇒ a = 3, d = 1. AP: 3, 4, 5, … S₁₀ = 10/2[6 + 9] = 75.",
-      "rubric": ["Find a = 3, d = 1", "Write AP", "S₁₀ = 75"]
+      "rubric": [
+        "Find a = 3, d = 1",
+        "Write AP",
+        "S₁₀ = 75"
+      ]
     },
     {
       "id": "bsqp_ap_la_salary",
@@ -100,7 +191,22 @@
       "marks": 5,
       "question": "A person gets ₹8000 as starting salary with an annual increment of ₹500. Find the salary in the 10th year and the total salary received in 10 years.",
       "model_answer": "Year salary AP: a = 8000, d = 500. 10th year = 8000 + 9×500 = 12500. Total = S₁₀ = 10/2[16000 + 4500] = 102500.",
-      "rubric": ["10th year salary 12500", "Sum formula", "Total ₹102500"]
+      "rubric": [
+        "10th year salary 12500",
+        "Sum formula",
+        "Total ₹102500"
+      ]
+    },
+    {
+      "id": "pyq_u05_w_515e835de8",
+      "source_paper": "chapter_wise_cached",
+      "marks": 6,
+      "question": "In a garden, saplings of rose flowers were planted at equal intervals to form a spiral pattern. The spiral is made up of successive semicircles, with centres alternatively at A and B, starting with centre at A, of radii 50 cm, 100 cm, 150 cm, ....... as shown in the figure given below. Spiral 1 has 10 flowers, Spiral 2 has 20 flowers, Spiral 3 has 30 flowers and so on. Based on the above information, answer the following questions : (i) What is the radius of the 13th spiral ? (ii) If the radius of the nth spiral is 500 cm, find the value of n. (iii) (a) Find the total number of saplings till the 11th spiral. OR",
+      "model_answer": "(i) a13 = 650 cm (ii) an = 500 50 + (n – 1)50 = 500 n = 10 (iii) (a) a = 10, d = 10 (b) a = 10, d = 10 n2 + n – 90 = 0 n=9 (2024)",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
     }
   ]
 }

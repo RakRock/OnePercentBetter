@@ -7,7 +7,11 @@
       "CBSE 30/1/1 (2025)",
       "CBSE 30/1/2 (2025)",
       "CBSE 30/1/3 (2025)",
-      "CBSE SQP 2025-26"
+      "CBSE SQP 2025-26",
+      "PYQ:chapter_wise_cached",
+      "PYQ:chapter_wise_pyq",
+      "PYQ:most_repeated_pyq",
+      "PYQ:objective_pyq"
     ]
   },
   "mcq": [
@@ -15,7 +19,12 @@
       "id": "b30_1_1_a1",
       "source_paper": "30/1/1",
       "question": "The HCF of 960 and 432 is:",
-      "options": ["48", "54", "72", "36"],
+      "options": [
+        "48",
+        "54",
+        "72",
+        "36"
+      ],
       "answer": 0,
       "explanation": "960 = 2⁵×3×5 and 432 = 2⁴×3³. HCF = 2⁴×3 = 48."
     },
@@ -23,7 +32,12 @@
       "id": "b30_1_1_a2",
       "source_paper": "30/1/1",
       "question": "The natural number 2 is:",
-      "options": ["a prime number", "a composite number", "prime as well as composite", "neither prime nor composite"],
+      "options": [
+        "a prime number",
+        "a composite number",
+        "prime as well as composite",
+        "neither prime nor composite"
+      ],
       "answer": 0,
       "explanation": "2 has exactly two factors: 1 and 2."
     },
@@ -31,7 +45,12 @@
       "id": "b30_1_1_a3",
       "source_paper": "30/1/1",
       "question": "For any natural number n, 6ⁿ ends with the digit:",
-      "options": ["0", "6", "3", "2"],
+      "options": [
+        "0",
+        "6",
+        "3",
+        "2"
+      ],
       "answer": 1,
       "explanation": "6ⁿ always ends in 6 because 6×6 ends in 6."
     },
@@ -39,7 +58,12 @@
       "id": "bsqp_a1",
       "source_paper": "CBSE SQP 2025-26",
       "question": "If a = 2²×3ˣ, b = 2²×3×5, c = 2²×3×7 and LCM(a, b, c) = 3780, then x equals:",
-      "options": ["1", "2", "3", "0"],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
       "answer": 2,
       "explanation": "3780 = 2²×3³×5×7, so x = 3."
     },
@@ -47,9 +71,105 @@
       "id": "bsqp_a11",
       "source_paper": "CBSE SQP 2025-26",
       "question": "The sum of two numbers is 1215 and their HCF is 81. The number of possible pairs of such numbers is:",
-      "options": ["2", "3", "4", "5"],
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
       "answer": 2,
       "explanation": "1215/81 = 15 = 3×5. Coprime pairs (1,15), (3,5) give 4 ordered pairs → 4 pairs."
+    },
+    {
+      "id": "pyq_u01_mcq_c5f455b55d",
+      "source_paper": "chapter_wise_cached",
+      "question": "If HCF (850, 325) is 25, then LCM (850, 325) is :",
+      "options": [
+        "442",
+        "11050",
+        "8450",
+        "2210"
+      ],
+      "answer": 1,
+      "explanation": "11050"
+    },
+    {
+      "id": "pyq_u01_mcq_98ce36ee90",
+      "source_paper": "chapter_wise_cached",
+      "question": "7  29  23 + 1 is :",
+      "options": [
+        "a prime number.",
+        "divisible by 23.",
+        "an odd number.",
+        "a composite number."
+      ],
+      "answer": 3,
+      "explanation": "a composite number"
+    },
+    {
+      "id": "pyq_u01_mcq_02eb6ed8e3",
+      "source_paper": "chapter_wise_cached",
+      "question": "For any natural number nn, 6n6n ends with the digit:",
+      "options": [
+        "0",
+        "6",
+        "3",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "626."
+    },
+    {
+      "id": "pyq_u01_mcq_b4aaa0d6fe",
+      "source_paper": "chapter_wise_cached",
+      "question": "If the HCF of two positive integers a and b is 1, then their LCM is :",
+      "options": [
+        "a + b",
+        "a",
+        "b",
+        "ab"
+      ],
+      "answer": 1,
+      "explanation": "17  500"
+    },
+    {
+      "id": "pyq_u01_mcq_2944121952",
+      "source_paper": "chapter_wise_cached",
+      "question": "The number 3 + √2 is :",
+      "options": [
+        "a rational number",
+        "an irrational number",
+        "an integer",
+        "a natural number"
+      ],
+      "answer": 1,
+      "explanation": "an irrational number"
+    },
+    {
+      "id": "pyq_u01_mcq_776e3a2a51",
+      "source_paper": "chapter_wise_cached",
+      "question": "If ( 1)n + ( 1)8 = 0, then n is :",
+      "options": [
+        "any positive integer",
+        "any negative integer",
+        "any odd number",
+        "any even number"
+      ],
+      "answer": 2,
+      "explanation": "any odd number"
+    },
+    {
+      "id": "pyq_u01_mcq_db320e6d09",
+      "source_paper": "chapter_wise_cached",
+      "question": "Which of the following is a rational number between √3 and √5 ?",
+      "options": [
+        "1-4142387954012....",
+        "2:326",
+        "𝜋",
+        "1.857142"
+      ],
+      "answer": 3,
+      "explanation": "1.857142"
     }
   ],
   "assertion_reason": [
@@ -68,6 +188,14 @@
       "reason": "HCF uses least powers of common primes; LCM uses greatest powers.",
       "answer": 0,
       "explanation": "Standard result from prime factorisation."
+    },
+    {
+      "id": "pyq_u01_ar_e703f4e18f",
+      "source_paper": "chapter_wise_cached",
+      "assertion": "and Reason (R) are true but reason",
+      "reason": "are true but reason",
+      "answer": 0,
+      "explanation": ""
     }
   ],
   "vsa": [
@@ -77,7 +205,11 @@
       "marks": 2,
       "question": "Find the HCF and LCM of 96 and 404 by prime factorisation.",
       "model_answer": "96 = 2⁵×3, 404 = 2²×101. HCF = 4, LCM = 9696.",
-      "rubric": ["Correct factorisation", "HCF = 4", "LCM = 9696"]
+      "rubric": [
+        "Correct factorisation",
+        "HCF = 4",
+        "LCM = 9696"
+      ]
     },
     {
       "id": "bsqp_b27_style",
@@ -85,7 +217,10 @@
       "marks": 2,
       "question": "Find the greatest number that divides 70 and 126 leaving remainders 3 and 5 respectively.",
       "model_answer": "Numbers are 67 and 121. HCF(67,121) = 1. (If remainders differ, subtract first: 70−3=67, 126−5=121.)",
-      "rubric": ["Subtract remainders correctly", "HCF of resulting numbers"]
+      "rubric": [
+        "Subtract remainders correctly",
+        "HCF of resulting numbers"
+      ]
     }
   ],
   "sa": [
@@ -95,7 +230,11 @@
       "marks": 3,
       "question": "Prove that √3 is an irrational number.",
       "model_answer": "Assume √3 = p/q in lowest terms. Then 3q² = p² so 3|p² ⇒ 3|p. Write p = 3k → 3|q² ⇒ 3|q, contradicting lowest terms. Hence √3 is irrational.",
-      "rubric": ["Assume rational in lowest form", "Square and show 3 divides p and q", "State contradiction"]
+      "rubric": [
+        "Assume rational in lowest form",
+        "Square and show 3 divides p and q",
+        "State contradiction"
+      ]
     },
     {
       "id": "b30_1_2_sa26",
@@ -103,7 +242,11 @@
       "marks": 3,
       "question": "Prove that √2 is an irrational number.",
       "model_answer": "Classic proof by contradiction using 2|p² ⇒ 2|p.",
-      "rubric": ["Assume p/q in lowest terms", "Derive 2|p and 2|q", "Contradiction"]
+      "rubric": [
+        "Assume p/q in lowest terms",
+        "Derive 2|p and 2|q",
+        "Contradiction"
+      ]
     },
     {
       "id": "b30_1_3_sa30",
@@ -111,7 +254,22 @@
       "marks": 3,
       "question": "Prove that √5 is an irrational number.",
       "model_answer": "Same structure as √2 proof with prime 5.",
-      "rubric": ["Assume rational", "Show 5 divides both p and q", "Contradiction"]
+      "rubric": [
+        "Assume rational",
+        "Show 5 divides both p and q",
+        "Contradiction"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_21eba0c6b0",
+      "source_paper": "chapter_wise_cached",
+      "marks": 3,
+      "question": "Assertion (A) : For any two natural numbers a and b, the HCF of a and b is a factor",
+      "model_answer": "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
     }
   ],
   "la": [
@@ -121,7 +279,11 @@
       "marks": 5,
       "question": "Prove that 3 + 2√5 is an irrational number.",
       "model_answer": "Assume 3 + 2√5 = a/b rational. Then √5 = (a − 3b)/(2b) is rational — contradiction with √5 irrational. Hence 3 + 2√5 is irrational.",
-      "rubric": ["Assume rational and isolate √5", "Use known irrationality of √5", "Clear contradiction and conclusion"]
+      "rubric": [
+        "Assume rational and isolate √5",
+        "Use known irrationality of √5",
+        "Clear contradiction and conclusion"
+      ]
     },
     {
       "id": "bsqp_la_hcf_word",
@@ -129,7 +291,11 @@
       "marks": 5,
       "question": "In a workshop, English, Hindi and Science teachers are 36, 60 and 84 respectively. Find the minimum rooms needed so each room has the same number of teachers of one subject only.",
       "model_answer": "HCF(36,60,84) = 12. Rooms = 36/12 + 60/12 + 84/12 = 3 + 5 + 7 = 15.",
-      "rubric": ["HCF = 12", "Divide each group by 12", "Total 15 rooms"]
+      "rubric": [
+        "HCF = 12",
+        "Divide each group by 12",
+        "Total 15 rooms"
+      ]
     }
   ]
 }

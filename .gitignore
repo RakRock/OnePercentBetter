@@ -30,6 +30,13 @@ Thumbs.db
 # Unit test written-work photos (student uploads — local only)
 HarshitMath/class10/unit_test_work/
 
+# Regenerated practice validation reports (run_practice_validation.py --write-report)
+HarshitMath/class10/validation_audits/
+
+# Local PYQ PDF text extracts (ingest uses scripts/ingest_harshit_class10_pyq.py)
+.tmp_pyq_extract/
+HarshitMath/class10/pyq_import/
+
 # AI Forge
 ai-forge/.env
 ai-forge/frontend/node_modules/

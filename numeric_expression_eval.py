@@ -20,6 +20,21 @@ _BAD_EXPLANATION_RE = re.compile(
 _LINEAR_EXPR_RE = re.compile(r"(-?\d+)\s*n\s*([+-])\s*(\d+)", re.I)
 _LINEAR_OPTION_RE = re.compile(r"^(-?\d*)n([+-])(\d+)$", re.I)
 _LEADING_NUM_RE = re.compile(r"^\s*(-?\d+(?:\.\d+)?(?:/\d+)?)")
+_RATIO_COLON_RE = re.compile(r"^\s*(-?\d+)\s*:\s*(-?\d+)\s*$")
+_SURD_LITERALS: dict[str, float] = {
+    "0": 0.0,
+    "1": 1.0,
+    "1/2": 0.5,
+    "√3/2": math.sqrt(3) / 2,
+    "√2/2": math.sqrt(2) / 2,
+    "1/√2": 1 / math.sqrt(2),
+    "1/√3": 1 / math.sqrt(3),
+    "√3/3": math.sqrt(3) / 3,
+    "√2": math.sqrt(2),
+    "√3": math.sqrt(3),
+    "2": 2.0,
+    "undefined": float("nan"),
+}
 _VERBAL_CONTEXT_RE = re.compile(
     r"\b(?:more|less|per|every|each|start(?:ing)?|association|positive|negative|"
     r"cannot|both|walked|age|year|years|meter|meters|minute|minutes|fat|grams)\b",
@@ -623,8 +638,45 @@ def _format_fraction(value: float) -> str | None:
     return None
 
 
+def comma_separated_int_tuple(text: str) -> tuple[int, ...] | None:
+    parts = [p.strip() for p in str(text).split(",")]
+    if len(parts) < 2:
+        return None
+    if not all(re.fullmatch(r"-?\d+", p) for p in parts):
+        return None
+    return tuple(int(p) for p in parts)
+
+
+def ratio_pair_option(text: str) -> tuple[int, int] | None:
+    m = _RATIO_COLON_RE.match(str(text).strip())
+    if not m:
+        return None
+    return int(m.group(1)), int(m.group(2))
+
+
+def surd_literal_numeric(text: str) -> float | None:
+    compact = str(text).strip().replace(" ", "")
+    if not compact or "θ" in compact or re.search(r"[a-zA-Z]{2,}", compact):
+        return None
+    if compact in _SURD_LITERALS:
+        val = _SURD_LITERALS[compact]
+        if math.isnan(val):
+            return None
+        return val
+    return None
+
+
 def option_numeric_value(text: str) -> float | None:
     raw = _strip_thousands_separators(str(text).strip())
+    if ratio_pair_option(raw) is not None:
+        return None
+    if comma_separated_int_tuple(raw) is not None:
+        return None
+    surd_val = surd_literal_numeric(raw)
+    if surd_val is not None:
+        return surd_val
+    if "√" in raw or "/√" in raw:
+        return None
     sci = parse_scientific_notation_value(raw)
     if sci is not None:
         return sci
@@ -671,6 +723,18 @@ def _is_verbal_context_option(text: str) -> bool:
 
 
 def options_equivalent(a: str, b: str) -> bool:
+    a_ratio = ratio_pair_option(a)
+    b_ratio = ratio_pair_option(b)
+    if a_ratio is not None and b_ratio is not None:
+        return a_ratio == b_ratio
+    a_tuple = comma_separated_int_tuple(a)
+    b_tuple = comma_separated_int_tuple(b)
+    if a_tuple is not None and b_tuple is not None:
+        return a_tuple == b_tuple
+    a_surd = surd_literal_numeric(a)
+    b_surd = surd_literal_numeric(b)
+    if a_surd is not None and b_surd is not None:
+        return abs(a_surd - b_surd) <= 1e-9
     a_order = _ordering_values_from_option(a)
     b_order = _ordering_values_from_option(b)
     if a_order is not None and b_order is not None:

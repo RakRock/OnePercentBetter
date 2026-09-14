@@ -752,13 +752,13 @@
         "id": "u7_t3_D_3e648232",
         "question": "If (1, 2), (3, k), (5, 12) are collinear, then k = ?",
         "options": [
+          "k = 6",
           "k = 12",
           "k = 8",
-          "k = 13",
-          "k = 6"
+          "k = 7"
         ],
-        "answer": 0,
-        "explanation": "Equal slope gives k = 2 × middle term pattern.",
+        "answer": 3,
+        "explanation": "Equal slope ⇒ k = (12+2)/2 = 7.",
         "topic": 3,
         "level": "D",
         "unit_id": 7,
@@ -771,13 +771,13 @@
         "id": "u7_t3_D_06afeda3",
         "question": "If (1, 2), (3, k), (5, 14) are collinear, then k = ?",
         "options": [
-          "k = 7",
-          "k = 15",
+          "k = 9",
           "k = 14",
-          "k = 9"
+          "k = 8",
+          "k = 7"
         ],
         "answer": 2,
-        "explanation": "Equal slope gives k = 2 × middle term pattern.",
+        "explanation": "Equal slope ⇒ k = (14+2)/2 = 8.",
         "topic": 3,
         "level": "D",
         "unit_id": 7,
@@ -790,13 +790,13 @@
         "id": "u7_t3_D_2a643020",
         "question": "If (1, 2), (3, k), (5, 16) are collinear, then k = ?",
         "options": [
-          "k = 8",
+          "k = 10",
           "k = 16",
-          "k = 17",
-          "k = 10"
+          "k = 8",
+          "k = 9"
         ],
-        "answer": 1,
-        "explanation": "Equal slope gives k = 2 × middle term pattern.",
+        "answer": 3,
+        "explanation": "Equal slope ⇒ k = (16+2)/2 = 9.",
         "topic": 3,
         "level": "D",
         "unit_id": 7,
@@ -809,13 +809,13 @@
         "id": "u7_t3_D_7764a942",
         "question": "If (1, 2), (3, k), (5, 10) are collinear, then k = ?",
         "options": [
+          "k = 7",
+          "k = 6",
           "k = 10",
-          "k = 11",
-          "k = 5",
-          "k = 7"
+          "k = 5"
         ],
-        "answer": 0,
-        "explanation": "Equal slope gives k = 2 × middle term pattern.",
+        "answer": 1,
+        "explanation": "Equal slope ⇒ k = (10+2)/2 = 6.",
         "topic": 3,
         "level": "D",
         "unit_id": 7,
@@ -828,13 +828,13 @@
         "id": "u7_t3_D_72b67f7f",
         "question": "If (1, 2), (3, k), (5, 8) are collinear, then k = ?",
         "options": [
+          "k = 6",
+          "k = 5",
           "k = 4",
-          "k = 8",
-          "k = 9",
-          "k = 6"
+          "k = 8"
         ],
         "answer": 1,
-        "explanation": "Equal slope gives k = 2 × middle term pattern.",
+        "explanation": "Equal slope ⇒ k = (8+2)/2 = 5.",
         "topic": 3,
         "level": "D",
         "unit_id": 7,
@@ -848,12 +848,12 @@
         "question": "If (1, 2), (3, k), (5, 6) are collinear, then k = ?",
         "options": [
           "k = 3",
-          "k = 7",
-          "k = 6",
-          "k = 5"
+          "k = 5",
+          "k = 4",
+          "k = 6"
         ],
         "answer": 2,
-        "explanation": "Equal slope gives k = 2 × middle term pattern.",
+        "explanation": "Equal slope ⇒ k = (6+2)/2 = 4.",
         "topic": 3,
         "level": "D",
         "unit_id": 7,

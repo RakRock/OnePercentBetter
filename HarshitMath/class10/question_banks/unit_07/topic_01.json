@@ -653,13 +653,13 @@
         "id": "u7_t1_B_c1015120",
         "question": "Distance of (6, 4) from origin:",
         "options": [
-          "9 units",
           "10 units",
           "7 units",
-          "2 units"
+          "9 units",
+          "6 units"
         ],
-        "answer": 2,
-        "explanation": "√(6² + 4²) = 7.",
+        "answer": 1,
+        "explanation": "√(6² + 4²) ≈ 7 units (nearest whole unit).",
         "topic": 1,
         "level": "B",
         "unit_id": 7,
@@ -672,13 +672,13 @@
         "id": "u7_t1_B_a23a40c0",
         "question": "Distance of (6, 5) from origin:",
         "options": [
+          "10 units",
           "11 units",
-          "7 units",
-          "9 units",
-          "1 units"
+          "8 units",
+          "7 units"
         ],
-        "answer": 1,
-        "explanation": "√(6² + 5²) = 7.",
+        "answer": 2,
+        "explanation": "√(6² + 5²) ≈ 8 units (nearest whole unit).",
         "topic": 1,
         "level": "B",
         "unit_id": 7,
@@ -691,13 +691,13 @@
         "id": "u7_t1_B_1afd4c86",
         "question": "Distance of (3, 12) from origin:",
         "options": [
-          "15 units",
+          "11 units",
+          "14 units",
           "12 units",
-          "9 units",
-          "14 units"
+          "15 units"
         ],
-        "answer": 1,
-        "explanation": "√(3² + 12²) = 12.",
+        "answer": 2,
+        "explanation": "√(3² + 12²) ≈ 12 units (nearest whole unit).",
         "topic": 1,
         "level": "B",
         "unit_id": 7,
@@ -767,13 +767,13 @@
         "id": "u7_t1_B_172fc162",
         "question": "Distance of (10, 6) from origin:",
         "options": [
-          "4 units",
           "16 units",
-          "13 units",
-          "11 units"
+          "14 units",
+          "11 units",
+          "12 units"
         ],
         "answer": 3,
-        "explanation": "√(10² + 6²) = 11.",
+        "explanation": "√(10² + 6²) ≈ 12 units (nearest whole unit).",
         "topic": 1,
         "level": "B",
         "unit_id": 7,
@@ -786,13 +786,13 @@
         "id": "u7_t1_B_338e951c",
         "question": "Distance of (4, 8) from origin:",
         "options": [
-          "4 units",
           "8 units",
-          "10 units",
-          "12 units"
+          "12 units",
+          "11 units",
+          "9 units"
         ],
-        "answer": 1,
-        "explanation": "√(4² + 8²) = 8.",
+        "answer": 3,
+        "explanation": "√(4² + 8²) ≈ 9 units (nearest whole unit).",
         "topic": 1,
         "level": "B",
         "unit_id": 7,
@@ -805,13 +805,13 @@
         "id": "u7_t1_B_a164ea4f",
         "question": "Distance of (12, 5) from origin:",
         "options": [
+          "15 units",
           "13 units",
-          "7 units",
           "17 units",
-          "15 units"
+          "12 units"
         ],
-        "answer": 0,
-        "explanation": "√(12² + 5²) = 13.",
+        "answer": 1,
+        "explanation": "√(12² + 5²) ≈ 13 units (nearest whole unit).",
         "topic": 1,
         "level": "B",
         "unit_id": 7,
@@ -1571,7 +1571,7 @@
         "options": [
           "√(5² + 4²)",
           "(9)/2",
-          "9",
+          "0",
           "5² - 4²"
         ],
         "answer": 0,
@@ -1588,7 +1588,7 @@
         "id": "u7_t1_D_31bc9632",
         "question": "Which expression gives distance from (4, 4) to (9, 8)?",
         "options": [
-          "9",
+          "0",
           "5² - 4²",
           "(9)/2",
           "√(5² + 4²)"
@@ -1817,7 +1817,7 @@
         "question": "Which expression gives distance from (5, 4) to (11, 9)?",
         "options": [
           "√(6² + 5²)",
-          "6² - 5²",
+          "0",
           "11",
           "(11)/2"
         ],

@@ -35,6 +35,9 @@ def _clear_setup_widget_state(unit_id: int) -> None:
     st.session_state.pop(f"hm10_setup_label_{unit_id}", None)
     st.session_state.pop(f"hm10_setup_xai_{unit_id}", None)
     st.session_state.pop(f"hm10_setup_grok_mode_{unit_id}", None)
+    st.session_state.pop(f"hm10_setup_pyq_{unit_id}", None)
+    st.session_state.pop(f"hm10_setup_pyq_count_{unit_id}", None)
+    st.session_state.pop(f"hm10_setup_pyq_written_{unit_id}", None)
     for tid in h10t.topics_for_unit(unit_id):
         st.session_state.pop(f"hm10_setup_topic_{unit_id}_{tid}", None)
 
@@ -53,6 +56,9 @@ def ensure_week_config(unit_id: int) -> dict:
         practice_difficulty=int(starter.get("practice_difficulty", 3)),
         use_chapter_llm=True,
         grok_fresh_only=False,
+        include_board_pyq=bool(starter.get("include_board_pyq", True)),
+        pyq_count=int(starter.get("pyq_count", 4)),
+        pyq_written_slots=int(starter.get("pyq_written_slots", 2)),
     )
     return db.get_harshit_class10_week_config(unit_id)
 
@@ -176,8 +182,23 @@ def _render_review(unit_id: int, questions: list[dict], answers: list[dict]) -> 
         f'{q.get("category_label", "")} · Level {q.get("level", "")}</p>',
         unsafe_allow_html=True,
     )
-    hmr.render_question(q["question"])
-    _render_review_choices(q, ans)
+    if q.get("type") == "assertion_reason":
+        st.markdown(
+            f'<p style="font-weight:600;">Assertion (A):</p>'
+            f'<p>{hmr.format_math_display(q["assertion"])}</p>'
+            f'<p style="font-weight:600;">Reason (R):</p>'
+            f'<p>{hmr.format_math_display(q["reason"])}</p>',
+            unsafe_allow_html=True,
+        )
+    elif q.get("type") == "written":
+        hmr.render_question(q["question"])
+        if q.get("model_answer"):
+            st.markdown("**Model answer**")
+            hmr.render_question(q["model_answer"])
+    else:
+        hmr.render_question(q["question"])
+    if q.get("type") not in ("written",) and q.get("options"):
+        _render_review_choices(q, ans)
 
     if q.get("explanation"):
         expl = hmr.format_math_display(str(q["explanation"]))
@@ -280,6 +301,30 @@ def render_setup_panel(unit_id: int) -> None:
         current_levels[int(item["id"])] = list(item.get("levels", []))
 
     st.markdown("---")
+    st.markdown("#### Board previous-year questions (PYQ)")
+    include_board_pyq = st.toggle(
+        "Mix CBSE PYQs into each practice session",
+        value=bool(current.get("include_board_pyq", True)),
+        key=f"hm10_setup_pyq_{unit_id}",
+    )
+    if include_board_pyq:
+        st.slider(
+            "PYQ questions per session (of 15)",
+            min_value=0,
+            max_value=8,
+            value=int(current.get("pyq_count", 4)),
+            key=f"hm10_setup_pyq_count_{unit_id}",
+        )
+        st.slider(
+            "Written PYQ slots (2–5 mark style)",
+            min_value=0,
+            max_value=5,
+            value=int(current.get("pyq_written_slots", 2)),
+            key=f"hm10_setup_pyq_written_{unit_id}",
+        )
+        st.caption("Written PYQs use self-check with model answers — work on paper first.")
+
+    st.markdown("---")
     st.markdown("#### Topics & difficulty levels")
     new_topics: list[dict] = []
     for tid in sorted(topics_meta):
@@ -301,14 +346,28 @@ def render_setup_panel(unit_id: int) -> None:
             new_topics.append({"id": tid, "levels": levels})
 
     if st.button("Save weekly plan", type="primary", key=f"hm10_setup_save_{unit_id}"):
-        db.save_harshit_class10_week_config(
-            unit_id,
-            week_label.strip(),
-            new_topics,
-            practice_difficulty=int(current.get("practice_difficulty", 3)),
-            use_chapter_llm=use_xai_live,
-            grok_fresh_only=grok_fresh_only,
-        )
+    include_pyq = st.session_state.get(
+        f"hm10_setup_pyq_{unit_id}",
+        bool(current.get("include_board_pyq", True)),
+    )
+    pyq_count = int(
+        st.session_state.get(f"hm10_setup_pyq_count_{unit_id}", current.get("pyq_count", 4))
+    )
+    pyq_written = int(
+        st.session_state.get(f"hm10_setup_pyq_written_{unit_id}", current.get("pyq_written_slots", 2))
+    )
+
+    db.save_harshit_class10_week_config(
+        unit_id,
+        week_label.strip(),
+        new_topics,
+        practice_difficulty=int(current.get("practice_difficulty", 3)),
+        use_chapter_llm=use_xai_live,
+        grok_fresh_only=grok_fresh_only,
+        include_board_pyq=include_pyq,
+        pyq_count=pyq_count,
+        pyq_written_slots=pyq_written,
+    )
         _clear_setup_widget_state(unit_id)
         st.success("Weekly plan saved.")
         st.rerun()
@@ -485,6 +544,7 @@ def render_practice() -> None:
         src_label = {
             "chapter_llm": "Generated from chapter PDF",
             "template": "Practice question",
+            "board_pyq": "CBSE previous year",
         }.get(src, src)
         st.markdown(
             f'<p style="color:#6b7280;font-size:0.88rem;text-align:center;">'
@@ -492,14 +552,42 @@ def render_practice() -> None:
             f"Level {q.get('level', '')} · {src_label}</p>",
             unsafe_allow_html=True,
         )
-        hmr.render_question(q["question"])
+        q_type = q.get("type", "mcq")
+        if q_type == "assertion_reason":
+            st.markdown(
+                f'<p style="font-weight:600;margin-bottom:0.35rem;">Assertion (A):</p>'
+                f'<p style="margin-left:0.5rem;">{hmr.format_math_display(q["assertion"])}</p>'
+                f'<p style="font-weight:600;margin:0.75rem 0 0.35rem 0;">Reason (R):</p>'
+                f'<p style="margin-left:0.5rem;margin-bottom:0.75rem;">{hmr.format_math_display(q["reason"])}</p>',
+                unsafe_allow_html=True,
+            )
+        elif q_type == "written":
+            hmr.render_question(q["question"])
+            st.caption(
+                f"Board PYQ · {int(q.get('marks', 2))} marks — solve on paper, then reveal the model answer."
+            )
+        else:
+            hmr.render_question(q["question"])
 
         fb = st.session_state.get(_ss_key(unit_id, "feedback"))
         if fb and fb.get("q_index") == current:
+            if fb.get("written_done"):
+                model_disp = hmr.format_math_display(str(q.get("model_answer", "")))
+                st.markdown(
+                    f'<div class="correct-answer" style="text-align:left;padding:1rem;">'
+                    f"<strong>Model answer:</strong><br>{model_disp}</div>",
+                    unsafe_allow_html=True,
+                )
+            elif fb.get("needs_answer_key"):
+                st.markdown(
+                    '<div class="correct-answer" style="text-align:center;">'
+                    "Recorded. Compare with the answer key in your PYQ PDF.</div>",
+                    unsafe_allow_html=True,
+                )
             picked_disp = hmr.format_math_display(str(fb["picked"]))
             correct_disp = hmr.format_math_display(str(fb["correct_val"]))
             expl_disp = hmr.format_math_display(str(q.get("explanation", "")))
-            if fb["correct"]:
+            if not fb.get("written_done") and not fb.get("needs_answer_key") and fb["correct"]:
                 if str(fb["picked"]) != str(fb["correct_val"]):
                     headline = (
                         f"✅ <strong>Correct!</strong> <strong>{picked_disp}</strong> is also a valid answer."
@@ -512,7 +600,7 @@ def render_practice() -> None:
                     f'<p style="color:#065f46;font-size:0.9rem;">{expl_disp}</p></div>',
                     unsafe_allow_html=True,
                 )
-            else:
+            elif not fb.get("written_done") and not fb.get("needs_answer_key"):
                 st.markdown(
                     f'<div class="wrong-answer" style="text-align:center;">'
                     f'Not quite! You picked <strong>{picked_disp}</strong>. '
@@ -530,19 +618,53 @@ def render_practice() -> None:
                         st.session_state[_ss_key(unit_id, "current")] = total
                     st.session_state[_ss_key(unit_id, "feedback")] = None
                     st.rerun()
+        elif q_type == "written":
+            if st.button("Show model answer", key=f"hm10_written_reveal_{unit_id}_{current}", type="primary"):
+                answers.append(
+                    {
+                        "picked": "self-check",
+                        "correct_val": "model answer",
+                        "correct": True,
+                        "skipped_scoring": True,
+                        "self_checked": True,
+                    }
+                )
+                st.session_state[_ss_key(unit_id, "answers")] = answers
+                st.session_state[_ss_key(unit_id, "feedback")] = {
+                    "q_index": current,
+                    "correct": True,
+                    "picked": "attempted",
+                    "correct_val": "see model answer",
+                    "written_done": True,
+                }
+                st.rerun()
         else:
             picked = _render_choices(q, current, unit_id)
             if picked is not None:
-                is_correct = hma.is_pick_correct(q, picked)
-                picked_val = q["options"][picked]
-                correct_val = q["options"][q["answer"]]
-                answers.append({"picked": picked_val, "correct_val": correct_val, "correct": is_correct})
+                needs_key = bool(q.get("needs_answer_key"))
+                if needs_key:
+                    is_correct = True
+                    picked_val = q["options"][picked]
+                    correct_val = "See your PYQ answer key"
+                else:
+                    is_correct = hma.is_pick_correct(q, picked)
+                    picked_val = q["options"][picked]
+                    correct_val = q["options"][q["answer"]]
+                answers.append(
+                    {
+                        "picked": picked_val,
+                        "correct_val": correct_val,
+                        "correct": is_correct,
+                        "skipped_scoring": needs_key,
+                    }
+                )
                 st.session_state[_ss_key(unit_id, "answers")] = answers
                 st.session_state[_ss_key(unit_id, "feedback")] = {
                     "q_index": current,
                     "correct": is_correct,
                     "picked": picked_val,
                     "correct_val": correct_val,
+                    "needs_answer_key": needs_key,
                 }
                 st.rerun()
     else:

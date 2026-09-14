@@ -3,14 +3,28 @@
     "unit_id": 13,
     "chapter": "Statistics",
     "ncert": "Chapter 13",
-    "sources": ["CBSE 30/1/1", "CBSE 30/1/2", "CBSE SQP 2025-26", "NCERT Ch 13"]
+    "sources": [
+      "CBSE 30/1/1",
+      "CBSE 30/1/2",
+      "CBSE SQP 2025-26",
+      "NCERT Ch 13",
+      "PYQ:chapter_wise_cached",
+      "PYQ:chapter_wise_pyq",
+      "PYQ:most_repeated_pyq",
+      "PYQ:objective_pyq"
+    ]
   },
   "mcq": [
     {
       "id": "b30_stat_mcq1",
       "source_paper": "30/1/1 (board-style)",
       "question": "Class mark of interval 20–30 is:",
-      "options": ["25", "20", "30", "50"],
+      "options": [
+        "25",
+        "20",
+        "30",
+        "50"
+      ],
       "answer": 0,
       "explanation": "(20 + 30)/2 = 25."
     },
@@ -18,7 +32,12 @@
       "id": "b30_stat_mcq2",
       "source_paper": "30/1/2 (board-style)",
       "question": "Median class is the class where cumulative frequency:",
-      "options": ["First reaches n/2", "Is maximum", "Is minimum", "Equals mode"],
+      "options": [
+        "First reaches n/2",
+        "Is maximum",
+        "Is minimum",
+        "Equals mode"
+      ],
       "answer": 0,
       "explanation": "NCERT 13.4 median class definition."
     },
@@ -26,9 +45,53 @@
       "id": "bsqp_stat_mcq",
       "source_paper": "CBSE SQP 2025-26 (adapted)",
       "question": "Empirical relation between mean, median and mode is:",
-      "options": ["Mode = 3 Median − 2 Mean", "Mean = Mode + Median", "Median = 2 Mode − Mean", "Mode = Mean − Median"],
+      "options": [
+        "Mode = 3 Median − 2 Mean",
+        "Mean = Mode + Median",
+        "Median = 2 Mode − Mean",
+        "Mode = Mean − Median"
+      ],
       "answer": 0,
       "explanation": "Standard empirical formula."
+    },
+    {
+      "id": "pyq_u13_mcq_63aa425cd7",
+      "source_paper": "chapter_wise_cached",
+      "question": "If the mean and mode of a data are 12 and 21 respectively, then its median is :",
+      "options": [
+        "6",
+        "13.5",
+        "15",
+        "14"
+      ],
+      "answer": 2,
+      "explanation": "15"
+    },
+    {
+      "id": "pyq_u13_mcq_20fb2c7dab",
+      "source_paper": "chapter_wise_cached",
+      "question": "The class mark of the median class of the following data is :",
+      "options": [
+        "40",
+        "55",
+        "47·5",
+        "62·5"
+      ],
+      "answer": 3,
+      "explanation": "62·5"
+    },
+    {
+      "id": "pyq_u13_mcq_a8d45a94fc",
+      "source_paper": "chapter_wise_cached",
+      "question": "The following distribution shows the number of runs scored by some batsmen in test matches : The lower limit of the modal class is :",
+      "options": [
+        "3000",
+        "4000",
+        "5000",
+        "6000"
+      ],
+      "answer": 1,
+      "explanation": "median"
     }
   ],
   "assertion_reason": [
@@ -48,7 +111,10 @@
       "marks": 2,
       "question": "Find mean if Σfixi = 850 and Σfi = 50.",
       "model_answer": "850/50 = 17.",
-      "rubric": ["Σfixi/Σfi", "17"]
+      "rubric": [
+        "Σfixi/Σfi",
+        "17"
+      ]
     },
     {
       "id": "b30_stat_vsa_modal",
@@ -56,7 +122,10 @@
       "marks": 2,
       "question": "Which class is modal class if frequencies are 5, 12, 8, 3?",
       "model_answer": "Second class (frequency 12 is maximum).",
-      "rubric": ["Identify max fi", "Correct class"]
+      "rubric": [
+        "Identify max fi",
+        "Correct class"
+      ]
     }
   ],
   "sa": [
@@ -66,7 +135,11 @@
       "marks": 3,
       "question": "Find median from grouped data: n = 60, median class 20–30 with l = 20, f = 15, cf = 22, h = 10.",
       "model_answer": "Median = 20 + ((30 − 22)/15) × 10 = 20 + 16/3 ≈ 25.33.",
-      "rubric": ["n/2 = 30", "Apply formula", "Numerical answer"]
+      "rubric": [
+        "n/2 = 30",
+        "Apply formula",
+        "Numerical answer"
+      ]
     },
     {
       "id": "bsqp_stat_sa_mode",
@@ -74,7 +147,11 @@
       "marks": 3,
       "question": "Find mode: modal class 30–40, l = 30, f1 = 18, f0 = 12, f2 = 10, h = 10.",
       "model_answer": "Mode = 30 + ((18−12)/(2×18−12−10)) × 10.",
-      "rubric": ["Modal class", "Mode formula", "Answer"]
+      "rubric": [
+        "Modal class",
+        "Mode formula",
+        "Answer"
+      ]
     }
   ],
   "la": [
@@ -84,7 +161,11 @@
       "marks": 5,
       "question": "Find mean of grouped frequency distribution using direct method (table provided in exam).",
       "model_answer": "Compute xi, fixi columns; x̄ = Σfixi/Σfi.",
-      "rubric": ["Class marks", "Σfixi", "Mean"]
+      "rubric": [
+        "Class marks",
+        "Σfixi",
+        "Mean"
+      ]
     },
     {
       "id": "b30_stat_la_ogive",
@@ -92,7 +173,11 @@
       "marks": 5,
       "question": "Draw less-than ogive for given distribution and estimate median.",
       "model_answer": "Plot upper limits vs cf; median at cf = n/2.",
-      "rubric": ["cf table", "Correct graph", "Median read"]
+      "rubric": [
+        "cf table",
+        "Correct graph",
+        "Median read"
+      ]
     },
     {
       "id": "bsqp_stat_la_all",
@@ -100,7 +185,11 @@
       "marks": 5,
       "question": "For a grouped distribution find mean, median and mode (data in paper).",
       "model_answer": "Apply direct mean, median and mode formulae separately.",
-      "rubric": ["Mean", "Median", "Mode"]
+      "rubric": [
+        "Mean",
+        "Median",
+        "Mode"
+      ]
     }
   ]
 }

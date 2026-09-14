@@ -1918,6 +1918,9 @@ def get_harshit_class10_week_config(unit_id: int) -> dict:
             "practice_difficulty": 3,
             "use_chapter_llm": True,
             "grok_fresh_only": False,
+            "include_board_pyq": True,
+            "pyq_count": 4,
+            "pyq_written_slots": 2,
             "unit_id": unit_id,
         }
     try:
@@ -1933,12 +1936,23 @@ def get_harshit_class10_week_config(unit_id: int) -> dict:
         practice_difficulty = max(1, min(5, int(data.get("practice_difficulty", 3))))
     except (TypeError, ValueError):
         practice_difficulty = 3
+    try:
+        pyq_count = max(0, min(15, int(data.get("pyq_count", 4))))
+    except (TypeError, ValueError):
+        pyq_count = 4
+    try:
+        pyq_written_slots = max(0, min(8, int(data.get("pyq_written_slots", 2))))
+    except (TypeError, ValueError):
+        pyq_written_slots = 2
     return {
         "week_label": row["week_label"] or data.get("week_label", ""),
         "topics": topics,
         "practice_difficulty": practice_difficulty,
         "use_chapter_llm": bool(data.get("use_chapter_llm", True)),
         "grok_fresh_only": bool(data.get("grok_fresh_only", False)),
+        "include_board_pyq": bool(data.get("include_board_pyq", True)),
+        "pyq_count": pyq_count,
+        "pyq_written_slots": pyq_written_slots,
         "unit_id": unit_id,
     }
 
@@ -2124,6 +2138,9 @@ def save_harshit_class10_week_config(
     practice_difficulty: int = 3,
     use_chapter_llm: bool = True,
     grok_fresh_only: bool = False,
+    include_board_pyq: bool = True,
+    pyq_count: int = 4,
+    pyq_written_slots: int = 2,
 ) -> None:
     payload = {
         "week_label": week_label,
@@ -2131,6 +2148,9 @@ def save_harshit_class10_week_config(
         "practice_difficulty": max(1, min(5, int(practice_difficulty))),
         "use_chapter_llm": use_chapter_llm,
         "grok_fresh_only": grok_fresh_only,
+        "include_board_pyq": bool(include_board_pyq),
+        "pyq_count": max(0, min(15, int(pyq_count))),
+        "pyq_written_slots": max(0, min(8, int(pyq_written_slots))),
         "unit_id": unit_id,
     }
     with get_connection() as conn:

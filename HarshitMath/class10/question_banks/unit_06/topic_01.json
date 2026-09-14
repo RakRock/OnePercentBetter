@@ -693,15 +693,15 @@
     "D": [
       {
         "id": "u6_t1_D_14975d1a",
-        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 4 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 3:3 (smaller : larger). If the smaller side is 4 cm, the corresponding larger side is:",
         "options": [
-          "None of these",
-          "4 cm (alt)",
+          "7 cm",
+          "Option 5",
           "4 cm",
-          "6 cm"
+          "5 cm"
         ],
         "answer": 2,
-        "explanation": "",
+        "explanation": "Larger side = 4 × (3/3) = 4 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -712,15 +712,15 @@
       },
       {
         "id": "u6_t1_D_6a54c0b1",
-        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 9 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:4 (smaller : larger). If the smaller side is 9 cm, the corresponding larger side is:",
         "options": [
           "18 cm",
-          "9 cm",
-          "4 cm",
-          "20 cm"
+          "22 cm",
+          "16 cm",
+          "9 cm"
         ],
         "answer": 0,
-        "explanation": "",
+        "explanation": "Larger side = 9 × (4/2) = 18 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -731,15 +731,15 @@
       },
       {
         "id": "u6_t1_D_2e05d357",
-        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 7 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:2 (smaller : larger). If the smaller side is 7 cm, the corresponding larger side is:",
         "options": [
-          "7 cm",
-          "None of these",
           "9 cm",
-          "7 cm (alt)"
+          "7 cm",
+          "8 cm",
+          "10 cm"
         ],
-        "answer": 0,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "Larger side = 7 × (2/2) = 7 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -750,15 +750,15 @@
       },
       {
         "id": "u6_t1_D_b1567455",
-        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 9 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:3 (smaller : larger). If the smaller side is 9 cm, the corresponding larger side is:",
         "options": [
-          "15 cm",
-          "6 cm",
+          "16 cm",
+          "9 cm",
           "13 cm",
-          "9 cm"
+          "11 cm"
         ],
         "answer": 2,
-        "explanation": "",
+        "explanation": "Larger side = 9 × (3/2) = 13 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -769,15 +769,15 @@
       },
       {
         "id": "u6_t1_D_f7a0a82f",
-        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 4 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:4 (smaller : larger). If the smaller side is 4 cm, the corresponding larger side is:",
         "options": [
           "4 cm",
-          "10 cm",
-          "8 cm",
-          "2 cm"
+          "6 cm",
+          "12 cm",
+          "8 cm"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 3,
+        "explanation": "Larger side = 4 × (4/2) = 8 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -788,15 +788,15 @@
       },
       {
         "id": "u6_t1_D_1e3ab7de",
-        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 8 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:4 (smaller : larger). If the smaller side is 8 cm, the corresponding larger side is:",
         "options": [
-          "18 cm",
-          "8 cm",
-          "4 cm",
-          "16 cm"
+          "16 cm",
+          "14 cm",
+          "20 cm",
+          "8 cm"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "Larger side = 8 × (4/2) = 16 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -807,15 +807,15 @@
       },
       {
         "id": "u6_t1_D_1fd37a61",
-        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 4 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:3 (smaller : larger). If the smaller side is 4 cm, the corresponding larger side is:",
         "options": [
-          "6 cm",
+          "5 cm",
           "4 cm",
-          "2 cm",
-          "8 cm"
+          "6 cm",
+          "9 cm"
         ],
-        "answer": 0,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "Larger side = 4 × (3/2) = 6 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -826,15 +826,15 @@
       },
       {
         "id": "u6_t1_D_750e6c51",
-        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 8 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 3:3 (smaller : larger). If the smaller side is 8 cm, the corresponding larger side is:",
         "options": [
           "8 cm",
-          "8 cm (alt)",
-          "10 cm",
-          "None of these"
+          "11 cm",
+          "Option 5",
+          "9 cm"
         ],
         "answer": 0,
-        "explanation": "",
+        "explanation": "Larger side = 8 × (3/3) = 8 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -845,15 +845,15 @@
       },
       {
         "id": "u6_t1_D_fdad5259",
-        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 7 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:4 (smaller : larger). If the smaller side is 7 cm, the corresponding larger side is:",
         "options": [
-          "16 cm",
-          "14 cm",
           "7 cm",
-          "3 cm"
+          "14 cm",
+          "12 cm",
+          "18 cm"
         ],
         "answer": 1,
-        "explanation": "",
+        "explanation": "Larger side = 7 × (4/2) = 14 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -864,15 +864,15 @@
       },
       {
         "id": "u6_t1_D_c7f056b6",
-        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 6 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:3 (smaller : larger). If the smaller side is 6 cm, the corresponding larger side is:",
         "options": [
-          "4 cm",
-          "9 cm",
+          "7 cm",
           "6 cm",
-          "11 cm"
+          "9 cm",
+          "12 cm"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "Larger side = 6 × (3/2) = 9 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -883,15 +883,15 @@
       },
       {
         "id": "u6_t1_D_ecb50794",
-        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 6 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:4 (smaller : larger). If the smaller side is 6 cm, the corresponding larger side is:",
         "options": [
           "6 cm",
-          "14 cm",
           "12 cm",
-          "3 cm"
+          "10 cm",
+          "16 cm"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "Larger side = 6 × (4/2) = 12 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -902,15 +902,15 @@
       },
       {
         "id": "u6_t1_D_19b22605",
-        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 5 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:2 (smaller : larger). If the smaller side is 5 cm, the corresponding larger side is:",
         "options": [
-          "None of these",
           "5 cm",
-          "5 cm (alt)",
-          "7 cm"
+          "7 cm",
+          "8 cm",
+          "6 cm"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "Larger side = 5 × (2/2) = 5 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -921,15 +921,15 @@
       },
       {
         "id": "u6_t1_D_cf45eb18",
-        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 9 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 3:3 (smaller : larger). If the smaller side is 9 cm, the corresponding larger side is:",
         "options": [
-          "9 cm (alt)",
+          "Option 5",
+          "10 cm",
           "9 cm",
-          "None of these",
-          "11 cm"
+          "12 cm"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "Larger side = 9 × (3/3) = 9 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -940,15 +940,15 @@
       },
       {
         "id": "u6_t1_D_b160d5df",
-        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 8 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:2 (smaller : larger). If the smaller side is 8 cm, the corresponding larger side is:",
         "options": [
           "10 cm",
-          "8 cm (alt)",
-          "8 cm",
-          "None of these"
+          "9 cm",
+          "11 cm",
+          "8 cm"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 3,
+        "explanation": "Larger side = 8 × (2/2) = 8 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -959,15 +959,15 @@
       },
       {
         "id": "u6_t1_D_b93fe9bd",
-        "question": "Two similar triangles have sides in ratio 2:3. If the smaller side is 8 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:3 (smaller : larger). If the smaller side is 8 cm, the corresponding larger side is:",
         "options": [
-          "7 cm",
-          "8 cm",
-          "5 cm",
-          "12 cm"
+          "12 cm",
+          "10 cm",
+          "15 cm",
+          "8 cm"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "Larger side = 8 × (3/2) = 12 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -978,15 +978,15 @@
       },
       {
         "id": "u6_t1_D_48c232b5",
-        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 7 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 3:3 (smaller : larger). If the smaller side is 7 cm, the corresponding larger side is:",
         "options": [
-          "9 cm",
           "7 cm",
-          "7 cm (alt)",
-          "None of these"
+          "8 cm",
+          "Option 5",
+          "10 cm"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "Larger side = 7 × (3/3) = 7 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -997,15 +997,15 @@
       },
       {
         "id": "u6_t1_D_01bc92a4",
-        "question": "Two similar triangles have sides in ratio 2:3. If the smaller side is 6 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:3 (smaller : larger). If the smaller side is 6 cm, the corresponding larger side is:",
         "options": [
           "6 cm",
-          "4 cm (alt)",
-          "4 cm",
-          "9 cm"
+          "9 cm",
+          "12 cm",
+          "7 cm"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "Larger side = 6 × (3/2) = 9 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1016,15 +1016,15 @@
       },
       {
         "id": "u6_t1_D_68799853",
-        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 9 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:2 (smaller : larger). If the smaller side is 9 cm, the corresponding larger side is:",
         "options": [
-          "None of these",
-          "9 cm (alt)",
+          "9 cm",
+          "10 cm",
           "11 cm",
-          "9 cm"
+          "12 cm"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "Larger side = 9 × (2/2) = 9 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1035,15 +1035,15 @@
       },
       {
         "id": "u6_t1_D_49469562",
-        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 6 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:2 (smaller : larger). If the smaller side is 6 cm, the corresponding larger side is:",
         "options": [
+          "9 cm",
           "8 cm",
-          "None of these",
           "6 cm",
-          "6 cm (alt)"
+          "7 cm"
         ],
         "answer": 2,
-        "explanation": "",
+        "explanation": "Larger side = 6 × (2/2) = 6 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1054,15 +1054,15 @@
       },
       {
         "id": "u6_t1_D_0114d74f",
-        "question": "Two similar triangles have sides in ratio 4:2. If the smaller side is 5 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:4 (smaller : larger). If the smaller side is 5 cm, the corresponding larger side is:",
         "options": [
-          "2 cm",
+          "10 cm",
+          "8 cm",
           "5 cm",
-          "12 cm",
-          "10 cm"
+          "14 cm"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "Larger side = 5 × (4/2) = 10 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1073,15 +1073,15 @@
       },
       {
         "id": "u6_t1_D_d1c04486",
-        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 7 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:3 (smaller : larger). If the smaller side is 7 cm, the corresponding larger side is:",
         "options": [
+          "8 cm",
           "10 cm",
-          "12 cm",
-          "4 cm",
+          "13 cm",
           "7 cm"
         ],
-        "answer": 0,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "Larger side = 7 × (3/2) = 10 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1092,15 +1092,15 @@
       },
       {
         "id": "u6_t1_D_c0068a9c",
-        "question": "Two similar triangles have sides in ratio 4:3. If the smaller side is 4 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 3:4 (smaller : larger). If the smaller side is 4 cm, the corresponding larger side is:",
         "options": [
-          "4 cm",
           "5 cm",
-          "7 cm",
-          "3 cm"
+          "9 cm",
+          "8 cm",
+          "4 cm"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "Larger side = 4 × (4/3) = 5 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1111,15 +1111,15 @@
       },
       {
         "id": "u6_t1_D_56c3b45e",
-        "question": "Two similar triangles have sides in ratio 4:3. If the smaller side is 5 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 3:4 (smaller : larger). If the smaller side is 5 cm, the corresponding larger side is:",
         "options": [
-          "8 cm",
-          "6 cm",
           "5 cm",
-          "3 cm"
+          "9 cm",
+          "6 cm",
+          "10 cm"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "Larger side = 5 × (4/3) = 6 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1130,15 +1130,15 @@
       },
       {
         "id": "u6_t1_D_326567d6",
-        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 5 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:3 (smaller : larger). If the smaller side is 5 cm, the corresponding larger side is:",
         "options": [
-          "3 cm",
+          "6 cm",
           "5 cm",
-          "9 cm",
-          "7 cm"
+          "7 cm",
+          "10 cm"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "Larger side = 5 × (3/2) = 7 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1149,15 +1149,15 @@
       },
       {
         "id": "u6_t1_D_a76ef099",
-        "question": "Two similar triangles have sides in ratio 4:3. If the smaller side is 9 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 3:4 (smaller : larger). If the smaller side is 9 cm, the corresponding larger side is:",
         "options": [
+          "16 cm",
           "9 cm",
-          "12 cm",
-          "14 cm",
-          "6 cm"
+          "10 cm",
+          "12 cm"
         ],
-        "answer": 1,
-        "explanation": "",
+        "answer": 3,
+        "explanation": "Larger side = 9 × (4/3) = 12 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1168,15 +1168,15 @@
       },
       {
         "id": "u6_t1_D_efde3524",
-        "question": "Two similar triangles have sides in ratio 3:3. If the smaller side is 5 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 3:3 (smaller : larger). If the smaller side is 5 cm, the corresponding larger side is:",
         "options": [
-          "5 cm (alt)",
-          "None of these",
-          "7 cm",
-          "5 cm"
+          "6 cm",
+          "5 cm",
+          "Option 5",
+          "8 cm"
         ],
-        "answer": 3,
-        "explanation": "",
+        "answer": 1,
+        "explanation": "Larger side = 5 × (3/3) = 5 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1187,15 +1187,15 @@
       },
       {
         "id": "u6_t1_D_cc9e9590",
-        "question": "Two similar triangles have sides in ratio 2:2. If the smaller side is 4 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:2 (smaller : larger). If the smaller side is 4 cm, the corresponding larger side is:",
         "options": [
-          "4 cm (alt)",
-          "None of these",
           "4 cm",
+          "5 cm",
+          "7 cm",
           "6 cm"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 0,
+        "explanation": "Larger side = 4 × (2/2) = 4 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1206,15 +1206,15 @@
       },
       {
         "id": "u6_t1_D_de822fb1",
-        "question": "Two similar triangles have sides in ratio 2:3. If the smaller side is 9 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:3 (smaller : larger). If the smaller side is 9 cm, the corresponding larger side is:",
         "options": [
-          "6 cm",
+          "16 cm",
+          "11 cm",
           "13 cm",
-          "9 cm",
-          "8 cm"
+          "9 cm"
         ],
-        "answer": 0,
-        "explanation": "",
+        "answer": 2,
+        "explanation": "Larger side = 9 × (3/2) = 13 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1225,15 +1225,15 @@
       },
       {
         "id": "u6_t1_D_28a86b1b",
-        "question": "Two similar triangles have sides in ratio 3:2. If the smaller side is 8 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 2:3 (smaller : larger). If the smaller side is 8 cm, the corresponding larger side is:",
         "options": [
-          "14 cm",
-          "5 cm",
+          "8 cm",
+          "10 cm",
           "12 cm",
-          "8 cm"
+          "15 cm"
         ],
         "answer": 2,
-        "explanation": "",
+        "explanation": "Larger side = 8 × (3/2) = 12 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,
@@ -1244,15 +1244,15 @@
       },
       {
         "id": "u6_t1_D_8104e14e",
-        "question": "Two similar triangles have sides in ratio 4:3. If the smaller side is 7 cm, the corresponding larger side is:",
+        "question": "Two similar triangles have sides in ratio 3:4 (smaller : larger). If the smaller side is 7 cm, the corresponding larger side is:",
         "options": [
+          "13 cm",
+          "8 cm",
           "7 cm",
-          "5 cm",
-          "9 cm",
-          "11 cm"
+          "9 cm"
         ],
-        "answer": 2,
-        "explanation": "",
+        "answer": 3,
+        "explanation": "Larger side = 7 × (4/3) = 9 cm.",
         "topic": 1,
         "level": "D",
         "unit_id": 6,

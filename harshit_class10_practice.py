@@ -5,6 +5,7 @@ from __future__ import annotations
 import os
 import random
 
+import harshit_class10_practice_pyq as h10pyq
 import harshit_class10_questions as h10q
 import harshit_class10_topics as h10t
 
@@ -178,6 +179,14 @@ def build_session_set(
     if prefer_llm and api_key and fresh_only and len(questions) < count:
         return questions[:count], grok_error or f"Only {len(questions)} of {count} from Grok."
 
+    questions = h10pyq.inject_pyq_into_session(
+        unit_id,
+        questions[:count],
+        config,
+        used_ids=used_ids,
+        session_count=count,
+    )
+
     random.shuffle(questions)
     return questions[:count], grok_error if prefer_llm and api_key and not questions else ""
 
@@ -189,6 +198,8 @@ def build_session_report(questions: list[dict], answers: list[dict], *, student_
     for q, a in zip(questions, answers):
         label = q.get("category_label", q.get("category", ""))
         bucket = by_cat.setdefault(label, {"name": label, "correct": 0, "total": 0})
+        if q.get("type") == "written" and a.get("skipped_scoring"):
+            continue
         bucket["total"] += 1
         if a.get("correct"):
             bucket["correct"] += 1
