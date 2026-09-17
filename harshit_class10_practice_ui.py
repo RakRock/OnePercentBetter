@@ -346,28 +346,30 @@ def render_setup_panel(unit_id: int) -> None:
             new_topics.append({"id": tid, "levels": levels})
 
     if st.button("Save weekly plan", type="primary", key=f"hm10_setup_save_{unit_id}"):
-    include_pyq = st.session_state.get(
-        f"hm10_setup_pyq_{unit_id}",
-        bool(current.get("include_board_pyq", True)),
-    )
-    pyq_count = int(
-        st.session_state.get(f"hm10_setup_pyq_count_{unit_id}", current.get("pyq_count", 4))
-    )
-    pyq_written = int(
-        st.session_state.get(f"hm10_setup_pyq_written_{unit_id}", current.get("pyq_written_slots", 2))
-    )
+        include_pyq = st.session_state.get(
+            f"hm10_setup_pyq_{unit_id}",
+            bool(current.get("include_board_pyq", True)),
+        )
+        pyq_count = int(
+            st.session_state.get(f"hm10_setup_pyq_count_{unit_id}", current.get("pyq_count", 4))
+        )
+        pyq_written = int(
+            st.session_state.get(
+                f"hm10_setup_pyq_written_{unit_id}", current.get("pyq_written_slots", 2)
+            )
+        )
 
-    db.save_harshit_class10_week_config(
-        unit_id,
-        week_label.strip(),
-        new_topics,
-        practice_difficulty=int(current.get("practice_difficulty", 3)),
-        use_chapter_llm=use_xai_live,
-        grok_fresh_only=grok_fresh_only,
-        include_board_pyq=include_pyq,
-        pyq_count=pyq_count,
-        pyq_written_slots=pyq_written,
-    )
+        db.save_harshit_class10_week_config(
+            unit_id,
+            week_label.strip(),
+            new_topics,
+            practice_difficulty=int(current.get("practice_difficulty", 3)),
+            use_chapter_llm=use_xai_live,
+            grok_fresh_only=grok_fresh_only,
+            include_board_pyq=include_pyq,
+            pyq_count=pyq_count,
+            pyq_written_slots=pyq_written,
+        )
         _clear_setup_widget_state(unit_id)
         st.success("Weekly plan saved.")
         st.rerun()
