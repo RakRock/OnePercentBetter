@@ -25,7 +25,7 @@ from xai_client import make_xai_client
 
 XAI_MODEL = "grok-3-mini"
 _MAX_RETRIES = 3
-MAX_SEED_EXAMPLES = 3
+MAX_SEED_EXAMPLES = 4
 
 
 def _get_client(xai_api_key: str):
@@ -65,6 +65,18 @@ def _system_prompt(unit_id: int, categories: dict, revision_tips: dict, *, count
         f"- Level {lvl}: {c3lvl.LEVEL_DESCRIPTIONS[lvl]}" for lvl in c3lvl.LEVEL_ORDER
     )
 
+    school_style = ""
+    if unit_id == 1:
+        school_style = """
+SCHOOL WORKSHEET STYLE (match Arjun's Course 3 teacher packet):
+- Use the same verbs as class: "Rewrite in exponential form. Then simplify."
+  "Complete. Show work. Simplest form." "Write ___ as a percent and a fraction."
+  "Convert the repeating decimal into a fraction." "Name the rational numbers in the set."
+  "Estimate to the nearest tenth." "Place in INCREASING/DECREASING order."
+  "Was ___ correct? Explain." Nested stories: "Of the … Of those … What fraction …?"
+- Prefer these stems over generic word problems. Seed examples are from school practice — imitate them.
+"""
+
     return f"""You write Math 3 CONCEPT CHECK multiple-choice questions for an 11-year-old (Arjun).
 
 UNIT: {title}
@@ -76,7 +88,7 @@ DIFFICULTY:
 {level_lines}
 
 {c3cc.concept_check_prompt_block()}
-
+{school_style}
 RULES:
 - Return a JSON array with exactly {count} question object{"s" if count != 1 else ""}.
 - Exactly 4 options; "answer" is 0-based index of the correct option.

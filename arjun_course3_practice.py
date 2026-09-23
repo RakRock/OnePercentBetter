@@ -52,6 +52,10 @@ STRENGTH_THRESHOLD_PCT = 80
 DEFAULT_SESSION_COUNT = 15
 FOCUS_SESSION_COUNT = 8
 RECENT_SESSIONS_TO_AVOID = 2
+SCHOOL_PACKET_SOURCE = "school_packet_9_22"
+# Unit 1 daily practice: most items should look like the teacher worksheets.
+SCHOOL_SESSION_RATIO = 0.7
+SCHOOL_PACKET_SESSION_RATIO = 0.85
 
 _BASE_BANK_BY_UNIT: dict[int, list[dict]] = {
     1: UNIT1_QUESTION_BANK,
@@ -91,8 +95,12 @@ def seed_questions_for_category(
             pool = by_level
     if not pool:
         return []
-    k = min(limit, len(pool))
-    return random.sample(pool, k)
+    school = [q for q in pool if q.get("source") == SCHOOL_PACKET_SOURCE]
+    other = [q for q in pool if q.get("source") != SCHOOL_PACKET_SOURCE]
+    random.shuffle(school)
+    random.shuffle(other)
+    ranked = school + other
+    return ranked[: min(limit, len(ranked))]
 
 CATEGORIES_BY_UNIT: dict[int, dict] = {
     1: UNIT1_CATEGORIES,
@@ -274,14 +282,29 @@ def _pick_for_slots(
             )
         )
 
+    prefer_school_mix = unit_id == 1
+    school_ratio = SCHOOL_SESSION_RATIO
+    if prefer_school_mix and "school packet" in str(norm.get("week_label") or "").lower():
+        school_ratio = SCHOOL_PACKET_SESSION_RATIO
+    school_target = round(count * school_ratio) if prefer_school_mix else 0
+    school_picked = 0
+
     def _take_from_pool(pool: list[dict], *, prefer_concept_check: bool = False) -> dict | None:
+        nonlocal school_picked
+        school_pool = [q for q in pool if q.get("source") == SCHOOL_PACKET_SOURCE]
+        other_pool = [q for q in pool if q.get("source") != SCHOOL_PACKET_SOURCE]
         tiers: list[list[dict]] = []
-        if prefer_concept_check:
+        if prefer_school_mix and school_pool:
+            if school_picked < school_target:
+                tiers = [school_pool, other_pool]
+            else:
+                tiers = [other_pool, school_pool]
+        elif prefer_concept_check:
             cc_pool = [q for q in pool if is_concept_check(q)]
-            other_pool = [q for q in pool if not is_concept_check(q)]
+            leftover = [q for q in pool if not is_concept_check(q)]
             if cc_pool:
                 tiers.append(cc_pool)
-            tiers.append(other_pool)
+            tiers.append(leftover)
         else:
             tiers.append(pool)
         for tier in tiers:
@@ -290,13 +313,18 @@ def _pick_for_slots(
                     if not _question_available(q, used_ids, avoid_ids, allow_recent=allow_recent):
                         continue
                     used_ids.add(q["id"])
+                    if q.get("source") == SCHOOL_PACKET_SOURCE:
+                        school_picked += 1
                     return c3ans.finalize_question(dict(q))
         return None
 
     for cat, lvl in plan:
         if len(selected) >= count:
             break
-        want_cc = cc_picked < cc_quota
+        want_cc = (
+            (not prefer_school_mix or school_picked >= school_target)
+            and cc_picked < cc_quota
+        )
         if want_cc:
             q = pick_or_generate_concept_check(
                 unit_id,

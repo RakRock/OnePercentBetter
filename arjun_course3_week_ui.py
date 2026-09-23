@@ -174,6 +174,27 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
         if levels:
             new_topics.append({"id": cat_id, "levels": levels})
 
+    if track == "course3" and unit_id == 1:
+        school_cfg = c3w.school_packet_week_config(1)
+        st.caption(
+            "Daily practice already mixes school-worksheet questions in (about 7 of every 10). "
+            "This button turns the week plan fully to the 9/22 packet (no scientific notation)."
+        )
+        if school_cfg and st.button(
+            "Load school packet (through 9/22)",
+            key=f"{key_prefix}_setup_school_packet_{unit_id}",
+        ):
+            save_config(
+                unit_id,
+                school_cfg["week_label"],
+                school_cfg["topics"],
+                question_count=question_count,
+                use_llm=use_llm,
+            )
+            _clear_setup_widget_state(track, unit_id)
+            st.success("Weekly plan set to the teacher packet through 9/22 (no scientific notation yet).")
+            st.rerun()
+
     if st.button("Save weekly plan", type="primary", key=f"{key_prefix}_setup_save_{unit_id}"):
         if not new_topics:
             st.warning("Select at least one topic with one difficulty level.")
@@ -201,8 +222,9 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
         st.markdown("---")
         st.markdown("#### Expand question bank")
         st.caption(
-            "Generate more practice questions with Grok, using your **current bank** as style seeds "
-            "(same approach as Harshit Biology). New questions are saved to the unit AI bank."
+            "Generate more practice questions with Grok, using **school-worksheet items as the main seeds** "
+            "so new questions match class (nested of-fractions, rewrite exponents, estimate roots). "
+            "New questions are saved to the unit AI bank."
         )
         ai_counts = c3store.count_by_category(unit_id)
         if ai_counts:
@@ -215,7 +237,7 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
             "New questions per topic",
             min_value=1,
             max_value=6,
-            value=2,
+            value=4 if (track == "course3" and unit_id == 1) else 2,
             key=f"{key_prefix}_setup_expand_count_{unit_id}",
         )
         if st.button(

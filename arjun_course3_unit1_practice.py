@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from arjun_course3_unit1_school_packet import SCHOOL_PACKET_UNIT1_QUESTIONS
+
 UNIT1_CATEGORIES = {
     "patterns": {"name": "Patterns", "emoji": "🔢", "color": "#3b82f6", "weight": 1},
     "fractions": {"name": "Fractions", "emoji": "🍕", "color": "#f97316", "weight": 2},
@@ -401,4 +403,4 @@ UNIT1_QUESTION_BANK: list[dict] = [
         "answer": 0,
         "explanation": "Subtract the coefficients when the powers of 10 match.",
     },
-]
+] + list(SCHOOL_PACKET_UNIT1_QUESTIONS)

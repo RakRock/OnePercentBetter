@@ -10,9 +10,10 @@ DEFAULT_QUESTION_COUNT = c3p.DEFAULT_SESSION_COUNT
 
 WEEKLY_GUIDANCE: dict[int, str] = {
     1: (
-        "**Suggested pace (2 weeks):** Week 1 — Patterns, Fractions, Powers & Roots, Rational Numbers. "
-        "Week 2 — Irrational Numbers, Exponents, Scientific Notation, Sci Notation Ops. "
-        "Do one activity's notes, then the matching topic quiz."
+        "**School worksheets are mixed into daily practice by default** (about 7 in 10 questions). "
+        "Stems match the teacher packet: rewrite/simplify, nested “of … of …”, convert, estimate, order, "
+        "and “Was ___ correct?”. Scientific notation is off until class gets there. "
+        "Use **Load school packet (through 9/22)** to raise that mix even higher."
     ),
     2: (
         "**Suggested pace:** Mon Expressions → Tue Solving Equations → Wed Slope → "
@@ -34,6 +35,9 @@ WEEKLY_GUIDANCE: dict[int, str] = {
 
 
 def default_week_config(unit_id: int) -> dict:
+    school = school_packet_week_config(unit_id)
+    if school:
+        return school
     categories_meta = c3p.get_categories(unit_id)
     unit = c3.get_unit(unit_id)
     title = unit["title"] if unit else f"Unit {unit_id}"
@@ -56,6 +60,22 @@ def weekly_guidance(unit_id: int) -> str:
         unit_id,
         "Select topics and difficulty levels for this week, then start daily practice.",
     )
+
+
+def school_packet_week_config(unit_id: int) -> dict | None:
+    """Preset matching the teacher worksheets Arjun brought in (Course 3 through 9/22)."""
+    if unit_id != 1:
+        return None
+    from arjun_course3_unit1_school_packet import SCHOOL_PACKET_LABEL, SCHOOL_PACKET_TOPICS
+
+    return {
+        "week_label": SCHOOL_PACKET_LABEL,
+        "topics": [dict(t) for t in SCHOOL_PACKET_TOPICS],
+        "categories": [t["id"] for t in SCHOOL_PACKET_TOPICS],
+        "question_count": DEFAULT_QUESTION_COUNT,
+        "use_llm": False,
+        "unit_id": unit_id,
+    }
 
 
 def format_week_plan_summary(unit_id: int, config: dict) -> str:

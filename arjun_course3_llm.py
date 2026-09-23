@@ -91,11 +91,21 @@ def _system_prompt(
     categories: dict,
     revision_tips: dict,
     activity_blurbs: str,
+    unit_id: int = 1,
 ) -> str:
     topic_lines = []
     for cat_id, info in categories.items():
         tip = revision_tips.get(cat_id, "").strip()
         topic_lines.append(f"- **{cat_id}** ({info.get('name', cat_id)}): {tip}")
+
+    school_style = ""
+    if unit_id == 1:
+        school_style = (
+            "\nSCHOOL WORKSHEET STYLE: imitate the teacher packet — "
+            "rewrite/simplify exponents, complete in simplest form, nested 'of … of …' fraction stories, "
+            "convert fraction-decimal-percent, estimate roots, order, and 'Was ___ correct?'. "
+            "Seed examples are school practice; write NEW numbers, same verbs.\n"
+        )
 
     return f"""You are a Grade 8 math tutor creating multiple-choice practice for an 11-year-old student named Arjun.
 
@@ -103,6 +113,7 @@ UNIT: {unit_title} — {unit_subtitle}
 
 LESSON ACTIVITIES IN THIS UNIT:
 {activity_blurbs or "(see topic list below)"}
+{school_style}
 
 TOPICS — each question MUST use one of these exact category ids:
 {chr(10).join(topic_lines)}
@@ -232,7 +243,9 @@ def _build_user_message(
         name = categories.get(cat_id, {}).get("name", cat_id)
         desc = c3lvl.LEVEL_DESCRIPTIONS.get(level, level)
         archetype = c3cc.archetype_hint(cat_id, level)
-        seeds = c3p.seed_questions_for_category(unit_id, cat_id, level=level, limit=2)
+        seeds = c3p.seed_questions_for_category(
+            unit_id, cat_id, level=level, limit=4 if unit_id == 1 else 2
+        )
         seed_block = ""
         if seeds:
             seed_lines = [f"Q: {s.get('question')} | opts: {s.get('options')}" for s in seeds]
@@ -281,6 +294,7 @@ def generate_session_questions(
         categories=categories,
         revision_tips=revision_tips,
         activity_blurbs=_activity_blurbs(unit_id),
+        unit_id=unit_id,
     )
     user_msg = _build_user_message(slots, categories, seed, unit_id=unit_id)
     expected_cats = [cat for cat, _ in slots]

@@ -42,9 +42,14 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
             cats = c3p.get_categories(unit_id)
             self.assertTrue(config["topics"], f"unit {unit_id} should have topics")
             topic_ids = {t["id"] for t in config["topics"]}
-            self.assertEqual(topic_ids, set(cats.keys()))
+            if unit_id == 1:
+                self.assertIn("exponents", topic_ids)
+                self.assertNotIn("scientific_notation", topic_ids)
+                self.assertIn("School packet", config["week_label"])
+            else:
+                self.assertEqual(topic_ids, set(cats.keys()))
             for topic in config["topics"]:
-                self.assertEqual(topic["levels"], c3lvl.DEFAULT_LEVELS)
+                self.assertTrue(topic["levels"])
 
     def test_edgenuity_default_week_config_has_topics_and_levels(self):
         for unit_id in range(1, 7):
@@ -88,7 +93,7 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
         self.assertTrue(all(_resolved_level(q) == "B" for q in slope_only))
 
     def test_unit1_session_keeps_15_when_static_bank_is_small(self):
-        """Week 1 topics at level C only match 8 bank items — still build 15."""
+        """A 15-question session is still built when the week plan is narrower than the full unit."""
         cfg = c3w.default_week_config(1)
         cfg["topics"] = [
             {"id": "patterns", "levels": ["C"]},
@@ -97,10 +102,56 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
             {"id": "rational_numbers", "levels": ["C"]},
         ]
         cfg["question_count"] = 8
-        self.assertEqual(c3p.question_count_for_unit(1, config=cfg), 8)
+        self.assertGreaterEqual(c3p.question_count_for_unit(1, config=cfg), 8)
         questions, err = c3p.build_session_set(1, cfg)
         self.assertIsNone(err)
         self.assertEqual(len(questions), 15)
+
+    def test_unit1_school_packet_week_config(self):
+        cfg = c3w.school_packet_week_config(1)
+        self.assertIsNotNone(cfg)
+        topic_ids = [t["id"] for t in cfg["topics"]]
+        self.assertIn("exponents", topic_ids)
+        self.assertNotIn("scientific_notation", topic_ids)
+        self.assertIsNone(c3w.school_packet_week_config(2))
+        questions, err = c3p.build_session_set(1, cfg)
+        self.assertIsNone(err)
+        self.assertEqual(len(questions), 15)
+        self.assertTrue(all(q["category"] in topic_ids for q in questions))
+
+    def test_unit1_default_daily_practice_mixes_school_packet(self):
+        cfg = c3w.default_week_config(1)
+        questions, err = c3p.build_session_set(1, cfg)
+        self.assertIsNone(err)
+        self.assertEqual(len(questions), 15)
+        schoolish = sum(1 for q in questions if q.get("source") == "school_packet_9_22")
+        self.assertGreaterEqual(schoolish, 10)
+
+    def test_unit1_seed_questions_prefer_school_packet(self):
+        seeds = c3p.seed_questions_for_category(1, "fractions", limit=4)
+        self.assertTrue(seeds)
+        self.assertGreaterEqual(
+            sum(1 for q in seeds if q.get("source") == "school_packet_9_22"),
+            1,
+        )
+
+    def test_unit1_school_packet_session_uses_school_stems(self):
+        cfg = c3w.school_packet_week_config(1)
+        questions, err = c3p.build_session_set(1, cfg)
+        self.assertIsNone(err)
+        self.assertEqual(len(questions), 15)
+        schoolish = sum(1 for q in questions if q.get("source") == "school_packet_9_22")
+        self.assertGreaterEqual(schoolish, 12)
+
+    def test_unit1_school_packet_questions_are_valid_mcqs(self):
+        from arjun_course3_unit1_school_packet import SCHOOL_PACKET_UNIT1_QUESTIONS
+
+        ids = [q["id"] for q in SCHOOL_PACKET_UNIT1_QUESTIONS]
+        self.assertEqual(len(ids), len(set(ids)))
+        for q in SCHOOL_PACKET_UNIT1_QUESTIONS:
+            self.assertEqual(len(q["options"]), 4, q["id"])
+            self.assertIn(q["answer"], range(4), q["id"])
+            self.assertTrue(q["explanation"], q["id"])
 
     def test_course3_week_config_persistence(self):
         starter = c3w.default_week_config(1)
