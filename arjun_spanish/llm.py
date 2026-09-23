@@ -30,12 +30,14 @@ def _seed_lines(topic_id: str, count: int = MAX_SEED_EXAMPLES) -> str:
 
 
 def _system_prompt() -> str:
-    return """You write beginner Spanish vocabulary multiple-choice questions for an 11-year-old (Arjun).
+    return """You write beginner Spanish questions for an 11-year-old (Arjun).
 
-SOURCE: Realidades / Auténtico *Para empezar* — greetings, classroom, numbers, time, weather.
+SOURCE: Realidades / Auténtico *Para empezar* plus Capítulo 1A (Me gusta + infinitives) and 1B (ser + adjectives).
 
 RULES:
-- Exactly ONE clear task per question (translate a word/phrase OR pick the best response in context).
+- Exactly ONE clear task per question (translate, complete a sentence, or pick the best reply).
+- For gustar topics: test Me gusta / No me gusta + infinitive, ¿Qué te gusta hacer?, también / tampoco.
+- For personality topics: test soy / eres / es and adjective agreement (atlético / atlética).
 - Mix Spanish→English and English→Spanish across the batch.
 - Exactly 4 distinct options; "answer" is 0-based index of the correct option.
 - Keep Spanish accents (á, é, í, ó, ú, ñ, ¿, ¡) in questions and options.

@@ -9,7 +9,7 @@ from arjun_spanish import content as es
 def default_config() -> dict:
     return {
         "week_label": "",
-        "topics": es.school_topic_ids(),
+        "topics": es.school_topic_ids() + es.chapter1_topic_ids(),
         "use_llm": True,
         "grok_fresh_only": False,
         "question_count": es.DEFAULT_SESSION_COUNT,
@@ -24,6 +24,8 @@ def ensure_config() -> dict:
     topics = [t for t in saved.get("topics", []) if t in {x["id"] for x in es.TOPICS}]
     if not topics:
         topics = base["topics"]
+    elif set(topics) == set(es.school_topic_ids()):
+        topics = list(topics) + es.chapter1_topic_ids()
     return {
         "week_label": str(saved.get("week_label", "")),
         "topics": topics,

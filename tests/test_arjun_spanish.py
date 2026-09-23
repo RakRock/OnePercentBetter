@@ -102,5 +102,58 @@ class TestSpanishSession(unittest.TestCase):
         self.assertEqual(len(q["options"]), 4)
 
 
+class TestSpanishChapter1(unittest.TestCase):
+    def test_chapter1_topics_exist(self) -> None:
+        self.assertEqual(es.chapter1_topic_ids(), ["gustar", "personality"])
+        for topic_id in es.chapter1_topic_ids():
+            self.assertGreaterEqual(len(es.cards_for_topic(topic_id)), 8)
+
+    def test_likes_questions_cover_patterns(self) -> None:
+        rng = random.Random(11)
+        qs = esp.make_likes_questions(8, rng)
+        self.assertEqual(len(qs), 8)
+        kinds = {q["kind"] for q in qs}
+        self.assertTrue(kinds <= {"type", "choice", "prefer"})
+        self.assertTrue(any("¿Qué te gusta hacer?" in (q.get("spanish") or "") for q in qs))
+
+    def test_describe_questions_include_agreement(self) -> None:
+        rng = random.Random(4)
+        qs = esp.make_describe_questions(8, rng)
+        self.assertEqual(len(qs), 8)
+        self.assertTrue(any(q.get("kind") == "choice" for q in qs))
+        self.assertTrue(any("girl" in q.get("prompt", "").lower() for q in qs))
+
+    def test_sentence_prompts_and_match(self) -> None:
+        rng = random.Random(2)
+        qs = esp.make_sentence_questions("gustar", 4, rng)
+        self.assertGreaterEqual(len(qs), 3)
+        prompt = next(s for s in es.SENTENCE_PROMPTS if s["id"] == "like-swim")
+        self.assertTrue(esp.typed_sentence_matches("Me gusta nadar.", prompt))
+        self.assertTrue(esp.typed_sentence_matches("me gusta nadar", prompt))
+        self.assertFalse(esp.typed_sentence_matches("Me gusta cantar.", prompt))
+        athletic = next(s for s in es.SENTENCE_PROMPTS if s["id"] == "soy-atletico")
+        self.assertTrue(esp.typed_sentence_matches("Yo soy atlético.", athletic))
+        self.assertTrue(esp.typed_sentence_matches("soy atletico", athletic))
+
+    def test_readings_have_three_questions(self) -> None:
+        self.assertGreaterEqual(len(es.READINGS), 4)
+        for reading in es.READINGS:
+            self.assertEqual(len(reading["questions"]), 3)
+            for q in reading["questions"]:
+                self.assertEqual(len(q["options"]), 4)
+                self.assertIn(q["answer"], range(4))
+        picked = esp.pick_reading("gustar", random.Random(1))
+        self.assertIsNotNone(picked)
+        assert picked is not None
+        self.assertTrue(picked["questions"])
+
+    def test_pick_cards_prefers_learning_ids(self) -> None:
+        rng = random.Random(5)
+        prefer = ["gustar:nadar", "gustar:cantar"]
+        cards = esp.pick_cards("gustar", 4, rng, prefer_ids=prefer)
+        ids = {c["id"] for c in cards}
+        self.assertTrue(prefer[0] in ids or prefer[1] in ids)
+
+
 if __name__ == "__main__":
     unittest.main()

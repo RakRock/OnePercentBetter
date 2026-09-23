@@ -228,6 +228,15 @@ def init_db():
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
 
+            CREATE TABLE IF NOT EXISTS arjun_spanish_card_status (
+                user_id INTEGER NOT NULL,
+                card_id TEXT NOT NULL,
+                status TEXT NOT NULL,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (user_id, card_id),
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
             CREATE TABLE IF NOT EXISTS harshit_practice_sessions (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 user_id INTEGER NOT NULL,
@@ -2086,6 +2095,69 @@ def save_arjun_spanish_config(
                  updated_at = CURRENT_TIMESTAMP""",
             (week_label, json.dumps(payload)),
         )
+
+
+def upsert_spanish_card_status(user_id: int, card_id: str, status: str) -> None:
+    """Mark a vocab card known or still learning for spaced review."""
+    if not user_id or not card_id or status not in ("known", "learning"):
+        return
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO arjun_spanish_card_status (user_id, card_id, status, updated_at)
+               VALUES (?, ?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(user_id, card_id) DO UPDATE SET
+                 status = excluded.status,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (int(user_id), str(card_id), status),
+        )
+
+
+def upsert_spanish_card_statuses(
+    user_id: int,
+    known_ids: list[str] | None = None,
+    learning_ids: list[str] | None = None,
+) -> None:
+    if not user_id:
+        return
+    learning = [str(cid) for cid in (learning_ids or []) if cid]
+    known = [str(cid) for cid in (known_ids or []) if cid and cid not in set(learning)]
+    with get_connection() as conn:
+        for card_id in learning:
+            conn.execute(
+                """INSERT INTO arjun_spanish_card_status (user_id, card_id, status, updated_at)
+                   VALUES (?, ?, 'learning', CURRENT_TIMESTAMP)
+                   ON CONFLICT(user_id, card_id) DO UPDATE SET
+                     status = 'learning',
+                     updated_at = CURRENT_TIMESTAMP""",
+                (int(user_id), card_id),
+            )
+        for card_id in known:
+            conn.execute(
+                """INSERT INTO arjun_spanish_card_status (user_id, card_id, status, updated_at)
+                   VALUES (?, ?, 'known', CURRENT_TIMESTAMP)
+                   ON CONFLICT(user_id, card_id) DO UPDATE SET
+                     status = 'known',
+                     updated_at = CURRENT_TIMESTAMP""",
+                (int(user_id), card_id),
+            )
+
+
+def get_spanish_learning_card_ids(user_id: int, days: int = 3) -> list[str]:
+    if not user_id:
+        return []
+    window = f"-{max(1, int(days))} days"
+    try:
+        with get_connection() as conn:
+            rows = conn.execute(
+                """SELECT card_id FROM arjun_spanish_card_status
+                   WHERE user_id = ? AND status = 'learning'
+                     AND updated_at >= datetime('now', ?)
+                   ORDER BY updated_at DESC""",
+                (int(user_id), window),
+            ).fetchall()
+    except sqlite3.OperationalError:
+        return []
+    return [str(row["card_id"]) for row in rows]
 
 
 def get_arjun_edgenuity_course3_week_config(unit_id: int) -> dict:

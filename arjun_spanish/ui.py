@@ -16,12 +16,19 @@ from arjun_spanish import practice_ui as espu
 
 PRIMARY = "#c2410c"
 GOLD = "#d97706"
-MODES = (
+CORE_MODES = (
     ("flash", "🃏 Flash cards"),
     ("quiz", "✅ Quiz"),
     ("type", "⌨️ Type it"),
     ("match", "🔗 Match"),
 )
+NEXT_MODES = (
+    ("likes", "⭐ Me gusta"),
+    ("describe", "🪞 How I am"),
+    ("sentence", "✍️ Sentences"),
+    ("read", "📖 Read"),
+)
+MODES = CORE_MODES + NEXT_MODES
 
 _SESSION_KEYS = (
     "es_topic",
@@ -44,6 +51,8 @@ _SESSION_KEYS = (
     "es_matched",
     "es_match_misses",
     "es_type_checked",
+    "es_reading",
+    "es_pref_choice",
 )
 
 
@@ -74,21 +83,53 @@ def _topic_meta(topic_id: str) -> dict:
         return dict(es.DAILY_TOPIC)
 
 
+def _current_user_id() -> int | None:
+    name = st.session_state.get("selected_user")
+    user = db.get_user(name) if name else None
+    return int(user["id"]) if user else None
+
+
+def _prefer_ids() -> list[str]:
+    uid = _current_user_id()
+    if not uid:
+        return []
+    return db.get_spanish_learning_card_ids(uid, es.LEARNING_DAYS)
+
+
+def _mark_learning(card_id: str | None, *, known: bool = False) -> None:
+    uid = _current_user_id()
+    if not uid or not card_id:
+        return
+    db.upsert_spanish_card_status(uid, str(card_id), "known" if known else "learning")
+
+
 def _start(topic_id: str, mode: str) -> None:
     rng = random.Random()
     pool = es.cards_for_topic(topic_id)
+    prefer = _prefer_ids()
+    cards: list[dict] = []
     if mode == "flash":
         count = es.FLASH_SIZE if topic_id == "daily" else min(len(pool), 16)
-        cards = esp.pick_cards(topic_id, count, rng)
+        cards = esp.pick_cards(topic_id, count, rng, prefer_ids=prefer)
     elif mode == "quiz":
-        cards = esp.pick_cards(topic_id, es.QUIZ_SIZE, rng)
+        cards = esp.pick_cards(topic_id, es.QUIZ_SIZE, rng, prefer_ids=prefer)
         direction = rng.choice(("es_en", "en_es"))
         st.session_state.es_questions = esp.make_mc_questions(cards, direction=direction, rng=rng)
     elif mode == "type":
-        cards = esp.pick_cards(topic_id, es.TYPE_SIZE, rng)
+        cards = esp.pick_cards(topic_id, es.TYPE_SIZE, rng, prefer_ids=prefer)
         st.session_state.es_questions = esp.make_type_questions(cards, rng)
+    elif mode == "likes":
+        st.session_state.es_questions = esp.make_likes_questions(es.LIKES_SIZE, rng)
+    elif mode == "describe":
+        st.session_state.es_questions = esp.make_describe_questions(es.DESCRIBE_SIZE, rng)
+    elif mode == "sentence":
+        st.session_state.es_questions = esp.make_sentence_questions(topic_id, es.SENTENCE_SIZE, rng)
+    elif mode == "read":
+        reading = esp.pick_reading(topic_id, rng)
+        st.session_state.es_reading = reading
+        st.session_state.es_questions = list((reading or {}).get("questions") or [])
     else:
-        cards = esp.pick_cards(topic_id, max(es.MATCH_PAIRS, 6), rng)
+        cards = esp.pick_cards(topic_id, max(es.MATCH_PAIRS, 6), rng, prefer_ids=prefer)
         st.session_state.es_match = esp.make_match_round(cards, es.MATCH_PAIRS, rng)
         st.session_state.es_matched = []
         st.session_state.es_pick_left = None
@@ -109,6 +150,9 @@ def _start(topic_id: str, mode: str) -> None:
     st.session_state.es_start_time = time.time()
     st.session_state.es_saved = False
     st.session_state.es_type_checked = False
+    st.session_state.es_pref_choice = None
+    if mode != "read":
+        st.session_state.es_reading = None
     st.session_state.current_page = "arjun_spanish_practice"
 
 
@@ -148,7 +192,7 @@ def render_home() -> None:
         <div style="text-align:center;padding:0.4rem 0 0.8rem 0;">
             <h1 style="font-size:2.5rem;margin:0;">🇪🇸 { _esc(name) }'s Spanish</h1>
             <p style="color:#6b7280;font-size:1.1rem;margin:0.4rem 0 0 0;">
-                Practice a little every day — greetings, class words, and new vocabulary.
+                Practice a little every day — greetings, Capítulo 1, sentences, and short readings.
             </p>
         </div>
         """,
@@ -186,6 +230,17 @@ def render_home() -> None:
         )
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+
+    if user:
+        weak = db.get_spanish_learning_card_ids(user["id"], es.LEARNING_DAYS)
+        if weak:
+            st.info(
+                f"{len(weak)} words still need review from the last {es.LEARNING_DAYS} days. "
+                "Daily mix will show them first."
+            )
+            if st.button("🔁 Review weak words", key="es_review_weak"):
+                _start("daily", "flash")
+                st.rerun()
 
     section = st.radio(
         "Section",
@@ -225,23 +280,23 @@ def _render_study_modes() -> None:
              padding:1.2rem 1.4rem;color:white;margin-bottom:0.6rem;">
             <div style="font-size:2rem;">🔥 Study modes</div>
             <div style="opacity:0.95;margin-top:0.25rem;">
-                Flash cards, quiz, typing, and matching · {es.total_cards()} words in the bank
+                Word practice plus Capítulo 1, sentences, and reading · {es.total_cards()} words in the bank
             </div>
         </div>
         """,
         unsafe_allow_html=True,
     )
-    m1, m2, m3, m4 = st.columns(4)
-    for col, (mode, label) in zip((m1, m2, m3, m4), MODES):
-        with col:
-            if st.button(label, key=f"es_daily_{mode}", width="stretch", type="primary"):
-                _start("daily", mode)
-                st.rerun()
+    _mode_button_row(CORE_MODES, prefix="es_daily", topic_id="daily", primary=True)
+    _mode_button_row(NEXT_MODES, prefix="es_daily_next", topic_id="daily", primary=True)
 
     st.markdown("")
     st.markdown("### School packet")
     st.caption("From Arjun's first Spanish homework — *Para empezar / En la escuela*.")
     _topic_grid([t for t in es.TOPICS if t["source"] == "school"])
+
+    st.markdown("### Capítulo 1 — Mis amigos y yo")
+    st.caption("What I like (1A) and how I am (1B) — next unit after the packet.")
+    _topic_grid([t for t in es.TOPICS if t["source"] == "chapter1"])
 
     st.markdown("### Extra vocabulary")
     st.caption("New words to grow beyond the first packet.")
@@ -269,8 +324,12 @@ def _topic_grid(topics: list[dict]) -> None:
                     """,
                     unsafe_allow_html=True,
                 )
+                start_mode = {
+                    "gustar": "likes",
+                    "personality": "describe",
+                }.get(topic["id"], "flash")
                 if st.button("Practice", key=f"es_topic_{topic['id']}", width="stretch"):
-                    _start(topic["id"], "flash")
+                    _start(topic["id"], start_mode)
                     st.rerun()
 
 
@@ -291,14 +350,8 @@ def render_practice() -> None:
             unsafe_allow_html=True,
         )
 
-    mode_cols = st.columns(len(MODES))
-    for col, (mode_id, label) in zip(mode_cols, MODES):
-        with col:
-            is_on = mode_id == mode
-            if st.button(label, key=f"es_switch_{mode_id}", width="stretch", type="primary" if is_on else "secondary"):
-                if mode_id != mode:
-                    _start(topic_id, mode_id)
-                    st.rerun()
+    _mode_button_row(CORE_MODES, prefix="es_switch", topic_id=topic_id, current=mode)
+    _mode_button_row(NEXT_MODES, prefix="es_switch_next", topic_id=topic_id, current=mode)
 
     if mode == "flash":
         _render_flash()
@@ -306,8 +359,35 @@ def render_practice() -> None:
         _render_quiz()
     elif mode == "type":
         _render_type()
+    elif mode == "likes":
+        _render_mixed("¡Me gusta!", "What I like")
+    elif mode == "describe":
+        _render_mixed("Así soy", "How I am")
+    elif mode == "sentence":
+        _render_mixed("Full sentences", "Sentences")
+    elif mode == "read":
+        _render_read()
     else:
         _render_match()
+
+
+def _mode_button_row(
+    modes: tuple[tuple[str, str], ...],
+    *,
+    prefix: str,
+    topic_id: str,
+    current: str | None = None,
+    primary: bool = False,
+) -> None:
+    cols = st.columns(len(modes))
+    for col, (mode_id, label) in zip(cols, modes):
+        with col:
+            is_on = mode_id == current
+            kind = "primary" if (primary or is_on) else "secondary"
+            if st.button(label, key=f"{prefix}_{mode_id}", width="stretch", type=kind):
+                if mode_id != current:
+                    _start(topic_id, mode_id)
+                    st.rerun()
 
 
 def _progress_label(current: int, total: int) -> None:
@@ -347,6 +427,13 @@ def _render_flash() -> None:
         known = len(st.session_state.get("es_known") or [])
         learning = st.session_state.get("es_learning") or []
         topic = _topic_meta(st.session_state.es_topic)
+        uid = _current_user_id()
+        if uid:
+            db.upsert_spanish_card_statuses(
+                uid,
+                known_ids=st.session_state.get("es_known") or [],
+                learning_ids=learning,
+            )
         _save_score(
             f"{topic['title']} flash cards",
             known,
@@ -452,6 +539,8 @@ def _render_quiz() -> None:
                 st.session_state.es_feedback = "ok" if correct else "no"
                 if correct:
                     st.session_state.es_score = int(st.session_state.get("es_score") or 0) + 1
+                else:
+                    _mark_learning(q.get("card_id"))
                 st.rerun()
         return
 
@@ -505,6 +594,8 @@ def _render_type() -> None:
             st.session_state.es_feedback = "ok" if ok else "no"
             if ok:
                 st.session_state.es_score = int(st.session_state.get("es_score") or 0) + 1
+            else:
+                _mark_learning(q.get("card_id"))
             st.rerun()
         return
 
@@ -572,6 +663,200 @@ def _render_match() -> None:
         st.warning("Not a match — try another pair.")
     elif st.session_state.get("es_feedback") == "ok":
         st.success("¡Sí! Matched.")
+
+
+def _render_mixed(done_title: str, activity_name: str) -> None:
+    questions = st.session_state.get("es_questions") or []
+    index = int(st.session_state.get("es_index") or 0)
+    if not questions:
+        st.warning("No questions ready for this mode yet.")
+        return
+    if index >= len(questions):
+        score = int(st.session_state.get("es_score") or 0)
+        topic = _topic_meta(st.session_state.es_topic)
+        _save_score(
+            f"{topic['title']} {activity_name}",
+            score,
+            len(questions),
+            f"{score}/{len(questions)} correct",
+        )
+        _done_box(done_title, f"You got {score} of {len(questions)} right.", score, len(questions))
+        return
+
+    q = questions[index]
+    _progress_label(index + 1, len(questions))
+    st.markdown(
+        f"""
+        <div style="text-align:center;padding:0.8rem 0;">
+            <div style="font-size:2.4rem;">{_esc(q.get('emoji'))}</div>
+            <div style="font-size:1.5rem;font-weight:800;margin-top:0.3rem;">{_esc(q.get('prompt'))}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    kind = q.get("kind") or "type"
+    if kind == "choice":
+        _render_mixed_choice(q, index)
+        return
+    if kind == "prefer":
+        _render_mixed_prefer(q, index)
+        return
+    _render_mixed_type(q, index)
+
+
+def _finish_mixed_item(ok: bool, card_id: str | None) -> None:
+    st.session_state.es_type_checked = True
+    st.session_state.es_feedback = "ok" if ok else "no"
+    if ok:
+        st.session_state.es_score = int(st.session_state.get("es_score") or 0) + 1
+    else:
+        _mark_learning(card_id)
+
+
+def _render_mixed_choice(q: dict, index: int) -> None:
+    feedback = st.session_state.get("es_feedback")
+    if feedback is None:
+        for i, option in enumerate(q.get("options") or []):
+            if st.button(str(option), key=f"es_mix_opt_{index}_{i}", width="stretch"):
+                _finish_mixed_item(option == q.get("answer"), q.get("card_id"))
+                st.rerun()
+        return
+    if feedback == "ok":
+        st.success(f"¡Correcto! **{q.get('answer')}**")
+    else:
+        st.error(f"Almost — the answer is **{q.get('answer')}**")
+    if q.get("hint"):
+        st.caption(f"💡 {q['hint']}")
+    _mixed_next_button(index)
+
+
+def _render_mixed_prefer(q: dict, index: int) -> None:
+    pref = st.session_state.get("es_pref_choice")
+    infinitive = q.get("infinitive") or ""
+    if pref not in ("Me gusta", "No me gusta"):
+        c1, c2 = st.columns(2)
+        with c1:
+            if st.button("👍 Me gusta", key=f"es_pref_yes_{index}", width="stretch", type="primary"):
+                st.session_state.es_pref_choice = "Me gusta"
+                st.rerun()
+        with c2:
+            if st.button("👎 No me gusta", key=f"es_pref_no_{index}", width="stretch"):
+                st.session_state.es_pref_choice = "No me gusta"
+                st.rerun()
+        return
+
+    target = {"spanish": f"{pref} {infinitive}.", "variants": []}
+    st.caption(f"Now type: **{pref} {infinitive}.**")
+    if not st.session_state.get("es_type_checked"):
+        typed = st.text_input(
+            "Spanish",
+            key=f"es_mix_pref_in_{index}",
+            max_chars=esp.MAX_TYPED_LEN,
+            placeholder="escribe la frase…",
+            label_visibility="collapsed",
+        )
+        if st.button("Check", key=f"es_mix_pref_check_{index}", width="stretch", type="primary"):
+            _finish_mixed_item(esp.typed_sentence_matches(typed, target), q.get("card_id"))
+            st.rerun()
+        return
+    if st.session_state.get("es_feedback") == "ok":
+        st.success(f"¡Exacto! **{target['spanish']}**")
+    else:
+        st.error(f"Close! It's **{target['spanish']}**")
+    if q.get("hint"):
+        st.caption(f"💡 {q['hint']}")
+    _mixed_next_button(index)
+
+
+def _render_mixed_type(q: dict, index: int) -> None:
+    if not st.session_state.get("es_type_checked"):
+        typed = st.text_input(
+            "Spanish",
+            key=f"es_mix_in_{index}",
+            max_chars=esp.MAX_TYPED_LEN,
+            placeholder="escribe aquí…",
+            label_visibility="collapsed",
+        )
+        if st.button("Check", key=f"es_mix_check_{index}", width="stretch", type="primary"):
+            _finish_mixed_item(esp.typed_sentence_matches(typed, q), q.get("card_id"))
+            st.rerun()
+        return
+    if st.session_state.get("es_feedback") == "ok":
+        st.success(f"¡Exacto! **{q.get('spanish')}**")
+    else:
+        st.error(f"Close! It's **{q.get('spanish')}**")
+    if q.get("hint"):
+        st.caption(f"💡 {q['hint']}")
+    _mixed_next_button(index)
+
+
+def _mixed_next_button(index: int) -> None:
+    if st.button("Next →", key=f"es_mix_next_{index}", width="stretch", type="primary"):
+        st.session_state.es_index = index + 1
+        st.session_state.es_type_checked = False
+        st.session_state.es_feedback = None
+        st.session_state.es_pref_choice = None
+        st.rerun()
+
+
+def _render_read() -> None:
+    reading = st.session_state.get("es_reading") or {}
+    questions = st.session_state.get("es_questions") or []
+    index = int(st.session_state.get("es_index") or 0)
+    if not reading or not questions:
+        st.warning("No reading loaded for this topic yet.")
+        return
+
+    st.markdown(f"### {reading.get('title', 'Lectura')}")
+    st.markdown(
+        f"""
+        <div style="background:#fff7ed;border:2px solid {PRIMARY};border-radius:16px;
+             padding:1.1rem 1.2rem;font-size:1.15rem;line-height:1.6;color:#1f2937;">
+            {_esc(reading.get('text', '')).replace(chr(10), '<br/>')}
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.caption("Read the paragraph, then answer.")
+
+    if index >= len(questions):
+        score = int(st.session_state.get("es_score") or 0)
+        topic = _topic_meta(st.session_state.es_topic)
+        _save_score(
+            f"{topic['title']} reading",
+            score,
+            len(questions),
+            f"{score}/{len(questions)} · {reading.get('title', 'reading')}",
+        )
+        _done_box(
+            "¡Buen lector!",
+            f"{reading.get('title')}: {score} of {len(questions)} correct.",
+            score,
+            len(questions),
+        )
+        return
+
+    q = questions[index]
+    _progress_label(index + 1, len(questions))
+    st.markdown(f"**{q.get('question', '')}**")
+    feedback = st.session_state.get("es_feedback")
+    options = q.get("options") or []
+    answer_idx = int(q.get("answer", 0))
+    correct_text = options[answer_idx] if 0 <= answer_idx < len(options) else ""
+    if feedback is None:
+        for i, option in enumerate(options):
+            if st.button(str(option), key=f"es_read_opt_{index}_{i}", width="stretch"):
+                _finish_mixed_item(i == answer_idx, None)
+                st.rerun()
+        return
+    if feedback == "ok":
+        st.success(f"¡Correcto! **{correct_text}**")
+    else:
+        st.error(f"Almost — the answer is **{correct_text}**")
+    if q.get("explanation"):
+        st.caption(f"💡 {q['explanation']}")
+    _mixed_next_button(index)
 
 
 def _try_resolve_match() -> None:

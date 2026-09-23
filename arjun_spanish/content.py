@@ -12,9 +12,13 @@ QUIZ_SIZE = 8
 FLASH_SIZE = 12
 TYPE_SIZE = 8
 MATCH_PAIRS = 5
+LIKES_SIZE = 8
+DESCRIBE_SIZE = 8
+SENTENCE_SIZE = 8
 DEFAULT_SESSION_COUNT = 12
 SESSION_UNIT_OFFSET = 9100
 RECENT_SESSIONS_TO_AVOID = 4
+LEARNING_DAYS = 3
 
 TOPICS: list[dict[str, Any]] = [
     {
@@ -120,6 +124,22 @@ TOPICS: list[dict[str, Any]] = [
         "emoji": "👨‍👩‍👧",
         "color": "#db2777",
         "source": "extra",
+    },
+    {
+        "id": "gustar",
+        "title": "What I like",
+        "subtitle": "1A — Me gusta + activities",
+        "emoji": "⭐",
+        "color": "#e11d48",
+        "source": "chapter1",
+    },
+    {
+        "id": "personality",
+        "title": "How I am",
+        "subtitle": "1B — Soy, eres, es + adjectives",
+        "emoji": "🪞",
+        "color": "#9333ea",
+        "source": "chapter1",
     },
 ]
 
@@ -359,6 +379,43 @@ CARDS: list[dict[str, str]] = [
     _card("family", "la familia", "the family", emoji="👨‍👩‍👧"),
     _card("family", "el hijo", "the son", emoji="👦"),
     _card("family", "la hija", "the daughter", emoji="👧"),
+    # --- Capítulo 1A: ¿Qué te gusta hacer? ---
+    _card("gustar", "nadar", "to swim", emoji="🏊"),
+    _card("gustar", "cantar", "to sing", emoji="🎤"),
+    _card("gustar", "bailar", "to dance", emoji="💃"),
+    _card("gustar", "correr", "to run", emoji="🏃"),
+    _card("gustar", "dibujar", "to draw", emoji="✏️"),
+    _card("gustar", "leer", "to read", emoji="📖"),
+    _card("gustar", "escribir", "to write", emoji="✍️"),
+    _card("gustar", "escuchar música", "to listen to music", emoji="🎧"),
+    _card("gustar", "hablar por teléfono", "to talk on the phone", emoji="📱"),
+    _card("gustar", "montar en bicicleta", "to ride a bike", emoji="🚲"),
+    _card("gustar", "patinar", "to skate", emoji="⛸️"),
+    _card("gustar", "ver la tele", "to watch TV", emoji="📺"),
+    _card("gustar", "Me gusta…", "I like… (to do)", emoji="👍", hint="Me gusta + infinitive: Me gusta nadar."),
+    _card("gustar", "No me gusta…", "I don't like… (to do)", emoji="👎", hint="No me gusta + infinitive."),
+    _card("gustar", "¿Qué te gusta hacer?", "What do you like to do?", emoji="❓"),
+    _card("gustar", "también", "also / too", emoji="➕", hint="Use after a yes: A mí también."),
+    _card("gustar", "tampoco", "neither / either", emoji="🚫", hint="Use after a no: A mí tampoco."),
+    # --- Capítulo 1B: Y tú, ¿cómo eres? ---
+    _card("personality", "atlético", "athletic (boy)", emoji="🏅", slug="atletico-m"),
+    _card("personality", "atlética", "athletic (girl)", emoji="🏅", slug="atletico-f"),
+    _card("personality", "estudioso", "studious (boy)", emoji="📚", slug="estudioso-m"),
+    _card("personality", "estudiosa", "studious (girl)", emoji="📚", slug="estudioso-f"),
+    _card("personality", "simpático", "nice / friendly (boy)", emoji="😊", slug="simpatico-m"),
+    _card("personality", "simpática", "nice / friendly (girl)", emoji="😊", slug="simpatico-f"),
+    _card("personality", "serio", "serious (boy)", emoji="😐", slug="serio-m"),
+    _card("personality", "seria", "serious (girl)", emoji="😐", slug="serio-f"),
+    _card("personality", "ordenado", "organized (boy)", emoji="📁", slug="ordenado-m"),
+    _card("personality", "ordenada", "organized (girl)", emoji="📁", slug="ordenado-f"),
+    _card("personality", "talentoso", "talented (boy)", emoji="🌟", slug="talentoso-m"),
+    _card("personality", "talentosa", "talented (girl)", emoji="🌟", slug="talentoso-f"),
+    _card("personality", "soy", "I am", emoji="1️⃣", hint="Yo soy atlético."),
+    _card("personality", "eres", "you are (informal)", emoji="2️⃣", hint="Tú eres seria."),
+    _card("personality", "es", "he/she is", emoji="3️⃣", hint="Ella es estudiosa."),
+    _card("personality", "¿Cómo eres?", "What are you like?", emoji="❓"),
+    _card("personality", "un", "a / an (masculine)", emoji="🔷"),
+    _card("personality", "una", "a / an (feminine)", emoji="🔶"),
 ]
 
 
@@ -393,3 +450,430 @@ def total_cards() -> int:
 
 def school_topic_ids() -> list[str]:
     return [t["id"] for t in TOPICS if t["source"] == "school"]
+
+
+def chapter1_topic_ids() -> list[str]:
+    return [t["id"] for t in TOPICS if t["source"] == "chapter1"]
+
+
+GUSTAR_ACTIVITIES: list[dict[str, str]] = [
+    {"id": "nadar", "infinitive": "nadar", "english": "to swim", "emoji": "🏊"},
+    {"id": "cantar", "infinitive": "cantar", "english": "to sing", "emoji": "🎤"},
+    {"id": "bailar", "infinitive": "bailar", "english": "to dance", "emoji": "💃"},
+    {"id": "correr", "infinitive": "correr", "english": "to run", "emoji": "🏃"},
+    {"id": "dibujar", "infinitive": "dibujar", "english": "to draw", "emoji": "✏️"},
+    {"id": "leer", "infinitive": "leer", "english": "to read", "emoji": "📖"},
+    {"id": "escribir", "infinitive": "escribir", "english": "to write", "emoji": "✍️"},
+    {
+        "id": "escuchar",
+        "infinitive": "escuchar música",
+        "english": "to listen to music",
+        "emoji": "🎧",
+    },
+    {
+        "id": "telefono",
+        "infinitive": "hablar por teléfono",
+        "english": "to talk on the phone",
+        "emoji": "📱",
+    },
+    {
+        "id": "bici",
+        "infinitive": "montar en bicicleta",
+        "english": "to ride a bike",
+        "emoji": "🚲",
+    },
+    {"id": "patinar", "infinitive": "patinar", "english": "to skate", "emoji": "⛸️"},
+    {"id": "tele", "infinitive": "ver la tele", "english": "to watch TV", "emoji": "📺"},
+]
+
+
+PERSONALITY_ADJECTIVES: list[dict[str, str]] = [
+    {"id": "atletico", "m": "atlético", "f": "atlética", "english": "athletic"},
+    {"id": "estudioso", "m": "estudioso", "f": "estudiosa", "english": "studious"},
+    {"id": "simpatico", "m": "simpático", "f": "simpática", "english": "nice / friendly"},
+    {"id": "serio", "m": "serio", "f": "seria", "english": "serious"},
+    {"id": "ordenado", "m": "ordenado", "f": "ordenada", "english": "organized"},
+    {"id": "talentoso", "m": "talentoso", "f": "talentosa", "english": "talented"},
+    {"id": "reservado", "m": "reservado", "f": "reservada", "english": "reserved"},
+    {"id": "perezoso", "m": "perezoso", "f": "perezosa", "english": "lazy"},
+    {"id": "gracioso", "m": "gracioso", "f": "graciosa", "english": "funny"},
+    {"id": "trabajador", "m": "trabajador", "f": "trabajadora", "english": "hard-working"},
+]
+
+
+def _sentence(
+    sid: str,
+    english: str,
+    spanish: str,
+    *,
+    topic: str,
+    hint: str = "",
+    variants: tuple[str, ...] = (),
+    emoji: str = "",
+) -> dict[str, Any]:
+    return {
+        "id": sid,
+        "english": english,
+        "spanish": spanish,
+        "topic": topic,
+        "hint": hint,
+        "variants": list(variants),
+        "emoji": emoji,
+        "card_id": f"sentence:{sid}",
+    }
+
+
+SENTENCE_PROMPTS: list[dict[str, Any]] = [
+    _sentence(
+        "time-330",
+        "It's three-thirty in the afternoon.",
+        "Son las tres y media de la tarde.",
+        topic="time",
+        hint="Son las + y media + de la tarde.",
+        emoji="🕒",
+    ),
+    _sentence(
+        "time-115",
+        "It's a quarter past one in the morning.",
+        "Es la una y cuarto de la mañana.",
+        topic="time",
+        hint="Use Es (not Son) only for 1:00.",
+        emoji="🕐",
+    ),
+    _sentence(
+        "head",
+        "My head hurts.",
+        "Me duele la cabeza.",
+        topic="body",
+        hint="One thing → Me duele.",
+        emoji="😣",
+    ),
+    _sentence(
+        "feet",
+        "My feet hurt.",
+        "Me duelen los pies.",
+        topic="body",
+        hint="More than one → Me duelen.",
+        emoji="🦶",
+    ),
+    _sentence("cold", "It's cold.", "Hace frío.", topic="weather", emoji="🥶"),
+    _sentence(
+        "winter-cold",
+        "In the winter it's cold.",
+        "En el invierno hace frío.",
+        topic="weather",
+        emoji="❄️",
+    ),
+    _sentence(
+        "three-pencils",
+        "There are three pencils.",
+        "Hay tres lápices.",
+        topic="classroom",
+        emoji="✏️",
+    ),
+    _sentence(
+        "monday",
+        "Today is Monday.",
+        "Hoy es lunes.",
+        topic="calendar",
+        variants=("Es lunes.",),
+        emoji="📅",
+    ),
+    _sentence(
+        "sit",
+        "Sit down, please.",
+        "Siéntense, por favor.",
+        topic="commands",
+        emoji="🪑",
+    ),
+    _sentence(
+        "name",
+        "What's your name?",
+        "¿Cómo te llamas?",
+        topic="greetings",
+        emoji="🪪",
+    ),
+    _sentence(
+        "like-swim",
+        "I like to swim.",
+        "Me gusta nadar.",
+        topic="gustar",
+        hint="Me gusta + infinitive.",
+        emoji="🏊",
+    ),
+    _sentence(
+        "dislike-sing",
+        "I don't like to sing.",
+        "No me gusta cantar.",
+        topic="gustar",
+        emoji="🎤",
+    ),
+    _sentence(
+        "like-ask",
+        "What do you like to do?",
+        "¿Qué te gusta hacer?",
+        topic="gustar",
+        emoji="❓",
+    ),
+    _sentence(
+        "like-bike",
+        "I like to ride a bike.",
+        "Me gusta montar en bicicleta.",
+        topic="gustar",
+        emoji="🚲",
+    ),
+    _sentence(
+        "soy-atletico",
+        "I am athletic.",
+        "Soy atlético.",
+        topic="personality",
+        variants=("Yo soy atlético.",),
+        hint="Soy + adjective. Boy form: atlético.",
+        emoji="🏅",
+    ),
+    _sentence(
+        "ella-seria",
+        "She is serious.",
+        "Ella es seria.",
+        topic="personality",
+        variants=("Es seria.",),
+        emoji="😐",
+    ),
+    _sentence(
+        "eres-simpatica",
+        "You are nice. (talking to a girl)",
+        "Eres simpática.",
+        topic="personality",
+        variants=("Tú eres simpática.",),
+        emoji="😊",
+    ),
+    _sentence(
+        "como-eres",
+        "What are you like?",
+        "¿Cómo eres?",
+        topic="personality",
+        emoji="🪞",
+    ),
+]
+
+
+def _reading(
+    rid: str,
+    title: str,
+    text: str,
+    questions: list[dict[str, Any]],
+    *,
+    topic: str = "daily",
+) -> dict[str, Any]:
+    return {"id": rid, "title": title, "text": text, "questions": questions, "topic": topic}
+
+
+READINGS: list[dict[str, Any]] = [
+    _reading(
+        "lunes-frio",
+        "Un lunes frío",
+        "Hoy es lunes. Hace frío. Me duele la cabeza. No me gusta correr. "
+        "Me gusta leer en la sala de clases.",
+        [
+            {
+                "question": "What day is it?",
+                "options": ["Sunday", "Monday", "Friday", "Saturday"],
+                "answer": 1,
+                "explanation": "Hoy es lunes = Today is Monday.",
+            },
+            {
+                "question": "How is the weather?",
+                "options": ["It's hot.", "It's sunny.", "It's cold.", "It's raining."],
+                "answer": 2,
+                "explanation": "Hace frío = It's cold.",
+            },
+            {
+                "question": "What does the writer like to do?",
+                "options": ["Run", "Sing", "Read", "Swim"],
+                "answer": 2,
+                "explanation": "Me gusta leer = I like to read.",
+            },
+        ],
+        topic="weather",
+    ),
+    _reading(
+        "en-la-escuela",
+        "En la escuela",
+        "La profesora dice: «Siéntense, por favor.» Hay tres lápices y un cuaderno "
+        "en el pupitre. El estudiante levanta la mano. Son las ocho de la mañana.",
+        [
+            {
+                "question": "What does the teacher ask the class to do?",
+                "options": ["Stand up", "Sit down", "Open the book", "Be quiet"],
+                "answer": 1,
+                "explanation": "Siéntense = Sit down.",
+            },
+            {
+                "question": "What is on the student desk?",
+                "options": [
+                    "A backpack only",
+                    "Three pens",
+                    "Three pencils and a notebook",
+                    "A folder and a book",
+                ],
+                "answer": 2,
+                "explanation": "Hay tres lápices y un cuaderno.",
+            },
+            {
+                "question": "What time is it?",
+                "options": [
+                    "It's 8:00 in the morning.",
+                    "It's 8:00 at night.",
+                    "It's 1:00 in the afternoon.",
+                    "It's 10:00.",
+                ],
+                "answer": 0,
+                "explanation": "Son las ocho de la mañana.",
+            },
+        ],
+        topic="classroom",
+    ),
+    _reading(
+        "me-gusta-nadar",
+        "Me gusta nadar",
+        "En el verano hace calor. Me gusta nadar y montar en bicicleta. "
+        "No me gusta cantar. ¿Qué te gusta hacer?",
+        [
+            {
+                "question": "When does this happen?",
+                "options": ["In winter", "In fall", "In summer", "On Monday"],
+                "answer": 2,
+                "explanation": "En el verano = In the summer.",
+            },
+            {
+                "question": "What does the writer not like?",
+                "options": ["Swimming", "Riding a bike", "Singing", "Heat"],
+                "answer": 2,
+                "explanation": "No me gusta cantar.",
+            },
+            {
+                "question": "¿Qué te gusta hacer? means…",
+                "options": [
+                    "What is your name?",
+                    "What do you like to do?",
+                    "How are you?",
+                    "What time is it?",
+                ],
+                "answer": 1,
+                "explanation": "This is the Capítulo 1A question.",
+            },
+        ],
+        topic="gustar",
+    ),
+    _reading(
+        "soy-atletico",
+        "Soy atlético",
+        "Me llamo Arjun. Soy atlético y estudioso. Mi hermana es simpática. "
+        "Ella es seria también. ¿Cómo eres tú?",
+        [
+            {
+                "question": "How does Arjun describe himself?",
+                "options": [
+                    "Funny and lazy",
+                    "Athletic and studious",
+                    "Serious only",
+                    "Reserved and impatient",
+                ],
+                "answer": 1,
+                "explanation": "Soy atlético y estudioso.",
+            },
+            {
+                "question": "Who is simpática?",
+                "options": ["Arjun", "The teacher", "His sister", "A friend"],
+                "answer": 2,
+                "explanation": "Mi hermana es simpática. Feminine -a ending.",
+            },
+            {
+                "question": "¿Cómo eres tú? is asking…",
+                "options": [
+                    "What is your name?",
+                    "How old are you?",
+                    "What are you like?",
+                    "Where are you?",
+                ],
+                "answer": 2,
+                "explanation": "¿Cómo eres? = What are you like?",
+            },
+        ],
+        topic="personality",
+    ),
+    _reading(
+        "buenos-dias",
+        "Buenos días",
+        "— Buenos días, señor. ¿Cómo está usted?\n"
+        "— Muy bien, gracias. ¿Y usted?\n"
+        "— Regular. Me duelen los pies. Hasta luego.",
+        [
+            {
+                "question": "Why do they use usted?",
+                "options": [
+                    "They are friends",
+                    "It is informal",
+                    "One speaker is being formal with an adult",
+                    "It means good-bye",
+                ],
+                "answer": 2,
+                "explanation": "Señor + usted is the formal register.",
+            },
+            {
+                "question": "How is the second speaker feeling?",
+                "options": ["Very well", "So-so; his feet hurt", "Angry", "Hungry"],
+                "answer": 1,
+                "explanation": "Regular. Me duelen los pies.",
+            },
+            {
+                "question": "Hasta luego means…",
+                "options": ["Good morning", "See you later", "What's up?", "Please"],
+                "answer": 1,
+                "explanation": "Hasta luego = See you later.",
+            },
+        ],
+        topic="feelings",
+    ),
+    _reading(
+        "viernes",
+        "El viernes",
+        "Hoy es viernes. Son las tres de la tarde. Hace sol. "
+        "Me gusta patinar con mi hermano. Mañana es sábado.",
+        [
+            {
+                "question": "What day is tomorrow?",
+                "options": ["Friday", "Sunday", "Saturday", "Monday"],
+                "answer": 2,
+                "explanation": "Mañana es sábado.",
+            },
+            {
+                "question": "What does the writer like to do?",
+                "options": ["Skate with his brother", "Watch TV", "Draw", "Sing"],
+                "answer": 0,
+                "explanation": "Me gusta patinar con mi hermano.",
+            },
+            {
+                "question": "What is the weather like?",
+                "options": ["Cloudy", "Snowing", "Sunny", "Windy"],
+                "answer": 2,
+                "explanation": "Hace sol = It's sunny.",
+            },
+        ],
+        topic="calendar",
+    ),
+]
+
+
+def sentences_for_topic(topic_id: str) -> list[dict[str, Any]]:
+    if topic_id in ("daily", ""):
+        return list(SENTENCE_PROMPTS)
+    matched = [s for s in SENTENCE_PROMPTS if s["topic"] == topic_id]
+    return matched or list(SENTENCE_PROMPTS)
+
+
+def readings_for_topic(topic_id: str) -> list[dict[str, Any]]:
+    if topic_id in ("daily", ""):
+        return list(READINGS)
+    matched = [r for r in READINGS if r["topic"] == topic_id]
+    return matched or list(READINGS)

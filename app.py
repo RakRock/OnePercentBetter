@@ -1372,7 +1372,7 @@ def render_user_dashboard():
             <div class="score-card" style="border-top: 5px solid #c2410c;">
                 <div style="font-size: 3rem;">🇪🇸</div>
                 <h3 style="margin: 0.5rem 0;">Spanish</h3>
-                <p style="color: #6b7280;">Flash cards, quizzes & daily vocab</p>
+                <p style="color: #6b7280;">Capítulo 1, sentences, reading & daily vocab</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")

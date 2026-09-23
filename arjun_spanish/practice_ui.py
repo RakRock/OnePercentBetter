@@ -161,16 +161,24 @@ def render_setup_panel() -> None:
     )
 
     selected = set(current.get("topics", []))
-    st.markdown("#### Topics")
     new_topics: list[str] = []
-    for topic in es.TOPICS:
-        on = st.checkbox(
-            f"{topic['emoji']} {topic['title']}",
-            value=topic["id"] in selected,
-            key=f"es_setup_topic_{topic['id']}",
-        )
-        if on:
-            new_topics.append(topic["id"])
+    groups = (
+        ("School packet", "school"),
+        ("Capítulo 1", "chapter1"),
+        ("Extra vocabulary", "extra"),
+    )
+    for heading, source in groups:
+        st.markdown(f"#### {heading}")
+        for topic in es.TOPICS:
+            if topic.get("source") != source:
+                continue
+            on = st.checkbox(
+                f"{topic['emoji']} {topic['title']}",
+                value=topic["id"] in selected,
+                key=f"es_setup_topic_{topic['id']}",
+            )
+            if on:
+                new_topics.append(topic["id"])
 
     if st.button("Save practice setup", key="es_save_setup", type="primary"):
         if not new_topics:
@@ -275,6 +283,8 @@ def render_session() -> None:
 
             if picked is not None:
                 correct = picked == int(q["answer"])
+                if user and not correct and q.get("card_id"):
+                    db.upsert_spanish_card_status(user["id"], str(q["card_id"]), "learning")
                 answers.append(
                     {
                         "picked": q["options"][picked],
