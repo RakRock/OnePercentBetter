@@ -128,7 +128,8 @@ def _render_class10_tab():
 
     st.markdown(
         '<p style="color:var(--hm-text-secondary);margin-bottom:1.5rem;">'
-        "Fifteen NCERT Class X units — <strong>15 questions</strong> per session with "
+        "Fifteen NCERT Class X units — <strong>10 questions</strong> per session "
+        "(five 1-mark, four 2- or 3-mark, one 5-mark) with "
         "<strong>Week Setup</strong> (topics, levels, Grok). "
         f"Active: {ready_label}.</p>",
         unsafe_allow_html=True,

@@ -117,12 +117,24 @@ def build_session_set(
         except ValueError as exc:
             grok_error = str(exc)
 
+    def _with_pyq(qs: list[dict]) -> list[dict]:
+        from harshit.science_pyq import inject_pyq_into_session
+
+        return inject_pyq_into_session(
+            "chemistry",
+            unit_id,
+            qs,
+            used_ids=used_ids,
+            session_count=count,
+            config=config,
+        )
+
     if fresh_only and prefer_llm and api_key:
         filled = [q for q in initial if q]
         if len(filled) < count:
-            return filled[:count], grok_error or f"Only {len(filled)} of {count} from Grok."
+            return _with_pyq(filled[:count]), grok_error or f"Only {len(filled)} of {count} from Grok."
         random.shuffle(filled)
-        return filled[:count], grok_error
+        return _with_pyq(filled[:count]), grok_error
 
     try:
         questions = qa_and_assemble(
@@ -142,7 +154,7 @@ def build_session_set(
                 questions.append(q)
 
     random.shuffle(questions)
-    out = questions[:count]
+    out = _with_pyq(questions[:count])
     if prefer_llm and api_key and not out and grok_error:
         return [], grok_error
     if prefer_llm and api_key and len(out) < count and grok_error:

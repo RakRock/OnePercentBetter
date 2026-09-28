@@ -12,8 +12,12 @@ CATALOG_PATH = ROOT / "HarshitMath" / "class10" / "units" / "catalog.json"
 # Extra headings seen in third-party PYQ compilations (not always in NCERT titles).
 CHAPTER_ALIASES: dict[str, int] = {
     "quadratic equations": 4,
+    "quadratic equation": 4,
     "solution of pair of linear equations": 3,
     "pair of linear equations": 3,
+    "pair of linear equation in two variables": 3,
+    "arithmetic progression": 5,
+    "areas related to circle": 11,
 }
 
 _DEFAULT_PDF_PATHS = {

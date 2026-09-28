@@ -8,10 +8,9 @@
       "CBSE 30/1/2 (2025)",
       "CBSE 30/1/3 (2025)",
       "CBSE SQP 2025-26",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -82,7 +81,7 @@
     },
     {
       "id": "pyq_u01_mcq_c5f455b55d",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "If HCF (850, 325) is 25, then LCM (850, 325) is :",
       "options": [
         "442",
@@ -95,7 +94,7 @@
     },
     {
       "id": "pyq_u01_mcq_98ce36ee90",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "7  29  23 + 1 is :",
       "options": [
         "a prime number.",
@@ -108,7 +107,7 @@
     },
     {
       "id": "pyq_u01_mcq_02eb6ed8e3",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "For any natural number nn, 6n6n ends with the digit:",
       "options": [
         "0",
@@ -120,21 +119,8 @@
       "explanation": "626."
     },
     {
-      "id": "pyq_u01_mcq_b4aaa0d6fe",
-      "source_paper": "chapter_wise_cached",
-      "question": "If the HCF of two positive integers a and b is 1, then their LCM is :",
-      "options": [
-        "a + b",
-        "a",
-        "b",
-        "ab"
-      ],
-      "answer": 1,
-      "explanation": "17  500"
-    },
-    {
       "id": "pyq_u01_mcq_2944121952",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "The number 3 + √2 is :",
       "options": [
         "a rational number",
@@ -147,7 +133,7 @@
     },
     {
       "id": "pyq_u01_mcq_776e3a2a51",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "If ( 1)n + ( 1)8 = 0, then n is :",
       "options": [
         "any positive integer",
@@ -160,7 +146,7 @@
     },
     {
       "id": "pyq_u01_mcq_db320e6d09",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "Which of the following is a rational number between √3 and √5 ?",
       "options": [
         "1-4142387954012....",
@@ -170,6 +156,318 @@
       ],
       "answer": 3,
       "explanation": "1.857142"
+    },
+    {
+      "id": "pyq_u01_mcq_ad4a89ce03",
+      "source_paper": "math_objective_pyq",
+      "question": "The sum of exponents of prime factors in the prime- factorisation of 196 is",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "Prime factors of 196, The sum of exponents of prime factor is 2"
+    },
+    {
+      "id": "pyq_u01_mcq_c10f1b8d6d",
+      "source_paper": "math_objective_pyq",
+      "question": "The total number of factors of prime number is",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "explanation": "There are only two factors (1 and number itself) of any prime number."
+    },
+    {
+      "id": "pyq_u01_mcq_8946187a73",
+      "source_paper": "math_objective_pyq",
+      "question": "The HCF and the LCM of 12, 21, 15 respectively are",
+      "options": [
+        "3, 140",
+        "12, 420",
+        "3, 420",
+        "420, 3"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u01_mcq_db6f0e685a",
+      "source_paper": "math_objective_pyq",
+      "question": "The decimal representation of 2 5 11 3 # will",
+      "options": [
+        "terminate after 1 decimal place",
+        "terminate after 2 decimal place",
+        "terminate after 3 decimal places",
+        "not terminate"
+      ],
+      "answer": 2,
+      "explanation": "Denominator of 3# is of the form 2 m, n are non- negative integers. Hence, terminating decimal expansion. So , it will terminate after 3 decimal places."
+    },
+    {
+      "id": "pyq_u01_mcq_8fcb74c4a2",
+      "source_paper": "math_objective_pyq",
+      "question": "The LCM of smallest two digit composite number and smallest composite number is",
+      "options": [
+        "12",
+        "4",
+        "20",
+        "44"
+      ],
+      "answer": 2,
+      "explanation": "Smallest two digit composite number is 10 and smallest composite number is 4."
+    },
+    {
+      "id": "pyq_u01_mcq_3cb03cd63e",
+      "source_paper": "math_objective_pyq",
+      "question": "HCF of two numbers is 27 and their LCM is 162. If one of the numbers is 54, then the other number is",
+      "options": [
+        "36",
+        "35",
+        "9",
+        "81"
+      ],
+      "answer": 1,
+      "explanation": "Let y be the second number. Since, product of two numbers is equal to product of"
+    },
+    {
+      "id": "pyq_u01_mcq_2edab5c4a0",
+      "source_paper": "math_objective_pyq",
+      "question": "The decimal expansion of 2 5 23 5 2 # will terminate after how many places of decimal?",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "will terminate after 5 five decimal"
+    },
+    {
+      "id": "pyq_u01_mcq_1ae8e24dd0",
+      "source_paper": "math_objective_pyq",
+      "question": "The product of a non-zero rational and an irrational number is",
+      "options": [
+        "always irrational",
+        "always rational",
+        "rational or irrational",
+        "one"
+      ],
+      "answer": 0,
+      "explanation": "Product of a non-zero rational and an irrational number is always irrational i.e., which is irrational."
+    },
+    {
+      "id": "pyq_u01_mcq_52d241a045",
+      "source_paper": "math_objective_pyq",
+      "question": "For some integer m, every even integer is of the form",
+      "options": [
+        "m",
+        "m 1 +",
+        "m 2",
+        "m 2 1 +"
+      ],
+      "answer": 2,
+      "explanation": "We know that even integers are 2, 4, 6, ... So, it can be written in the form of m"
+    },
+    {
+      "id": "pyq_u01_mcq_7f17f4a8b4",
+      "source_paper": "math_objective_pyq",
+      "question": "For some integer q, every odd integer is of the form",
+      "options": [
+        "q",
+        "q 1 +",
+        "q 2",
+        "q 2 1 +"
+      ],
+      "answer": 3,
+      "explanation": "We know that odd integers are 1, 3, 5, ... So, it can be written in the form of q"
+    },
+    {
+      "id": "pyq_u01_mcq_c288cf2cc4",
+      "source_paper": "math_objective_pyq",
+      "question": "If two positive integers a and b are written as a x y 3 2 = and b xy3 = , where x , y are prime numbers, then HCF ,a b ^ h is",
+      "options": [
+        "xy",
+        "xy2",
+        "x y 3 3",
+        "x y 2 2"
+      ],
+      "answer": 1,
+      "explanation": "HCF is the product of the smallest power of each common prime factor involved in the numbers."
+    },
+    {
+      "id": "pyq_u01_mcq_fc9c9da1c4",
+      "source_paper": "math_objective_pyq",
+      "question": "The values of x and y in the given figure are",
+      "options": [
+        "7, 13",
+        "13, 7",
+        "9, 12",
+        "12, 9"
+      ],
+      "answer": 0,
+      "explanation": "Option (A) is correct."
+    },
+    {
+      "id": "pyq_u01_mcq_13a5470bf0",
+      "source_paper": "math_objective_pyq",
+      "question": "The least number that is divisible by all the numbers from 1 to 10 (both inclusive)",
+      "options": [
+        "10",
+        "100",
+        "504",
+        "2520"
+      ],
+      "answer": 3,
+      "explanation": "Option (D) is correct."
+    },
+    {
+      "id": "pyq_u01_mcq_e480649f3d",
+      "source_paper": "math_objective_pyq",
+      "question": "If p1 and p2 are two odd prime numbers such that p p > 1 2, then p p 1 2 2 2 - is",
+      "options": [
+        "an even number",
+        "an odd number",
+        "an odd prime number",
+        "a prime number"
+      ],
+      "answer": 0,
+      "explanation": "is an even number. 16 is an even number."
+    },
+    {
+      "id": "pyq_u01_mcq_d08c6f7934",
+      "source_paper": "math_objective_pyq",
+      "question": "The rational form of .0 254 is in the form of q p then p q + ^ h is",
+      "options": [
+        "14",
+        "55",
+        "69",
+        "79"
+      ],
+      "answer": 2,
+      "explanation": "Multiplying equation (1) by 100, we get Subtracting equation (1) from equation. (2), we get Comparing with q"
+    },
+    {
+      "id": "pyq_u01_mcq_0f080f5b0e",
+      "source_paper": "math_objective_pyq",
+      "question": "The rational number of the form q p , q 0 ! , p and q are positive integers, which represents .0 134 i.e., (0.1343434 ..........) is 134",
+      "options": [
+        "999 133",
+        "990 134",
+        "999",
+        "990 133"
+      ],
+      "answer": 3,
+      "explanation": "Option (D) is correct."
+    },
+    {
+      "id": "pyq_u01_mcq_870dbd67bd",
+      "source_paper": "math_objective_pyq",
+      "question": "Which of the following will have a terminating decimal expansion? 23 77",
+      "options": [
+        "210 125",
+        "30",
+        "441",
+        "8 23"
+      ],
+      "answer": 3,
+      "explanation": "For terminating decimal expansion, denominator must the form of 2 n m are non-negative Here only 2 is factor of denominator so terminating."
+    },
+    {
+      "id": "pyq_u01_mcq_392841e882",
+      "source_paper": "math_objective_pyq",
+      "question": "The number 3 3 13 10 - is divisible by",
+      "options": [
+        "2 and 3",
+        "3 and 10",
+        "2, 3 and 10",
+        "2, 3 and 13"
+      ],
+      "answer": 3,
+      "explanation": "Option (D) is correct."
+    },
+    {
+      "id": "pyq_u01_mcq_1a78b769d1",
+      "source_paper": "math_objective_pyq",
+      "question": "The H.C.F. of x and 18 is 2. What is the number x ?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "LCM # HCF = First number # second number required number"
+    },
+    {
+      "id": "pyq_u01_mcq_1030f201b5",
+      "source_paper": "math_objective_pyq",
+      "question": "The least number which is a perfect square and is divisible by each of 16, 20 and 24 is",
+      "options": [
+        "240",
+        "1600",
+        "2400",
+        "3600"
+      ],
+      "answer": 3,
+      "explanation": "The LCM of 16, 20 and 24 is 240. The least multiple of 240 that is a perfect square is 3600 and also we can easily eliminate choices (a) and (c) since they are not perfect square number. 1600 is not multiple of 240."
+    },
+    {
+      "id": "pyq_u01_mcq_7a7b4d17a3",
+      "source_paper": "math_objective_pyq",
+      "question": "n 1 2 - is divisible by 8, if n is",
+      "options": [
+        "an integer",
+        "a natural number",
+        "an odd integer",
+        "an even integer"
+      ],
+      "answer": 2,
+      "explanation": "2 - to be divisible by 8 (even number), n should be even. It means n2 should be odd i.e. n + where k is an integer which is divisible by 8. which is divisible by 8. Hence, we can conclude from above two cases, if n is 2 - is divisible by 8."
+    },
+    {
+      "id": "pyq_u01_mcq_8f7c565697",
+      "source_paper": "math_objective_pyq",
+      "question": "When 2256 is divided by 17 the remainder would be",
+      "options": [
+        "1",
+        "16",
+        "14",
+        "None of these"
+      ],
+      "answer": 0,
+      "explanation": "When 2256 is divided by 17 then, By remainder theorem when ( ) f x is divided by x the remainder is ( Hence, remainder ("
+    },
+    {
+      "id": "pyq_u01_mcq_2949d2abab",
+      "source_paper": "math_objective_pyq",
+      "question": "Ass ertion : 3125 13 is a terminating decimal fraction. Reas on : If q 2 5 m n = where , m n are non-negative integers, then q p is a terminating decimal fraction.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Since the factors of the denominator 3125 is of the form 2 13 is a terminating Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)"
+    },
+    {
+      "id": "pyq_u01_mcq_8de269abd4",
+      "source_paper": "math_objective_pyq",
+      "question": "Ass ertion : 34.12345 is a terminating decimal fraction. Reas on : Denominator of 34.12345, when expressed in the form q p , q 0 ! , is of the form 2 5 m n # , where m and n are non-negative integers.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Its denominator is of the form 2 which are non-negative Thus both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
     }
   ],
   "assertion_reason": [
@@ -191,7 +489,7 @@
     },
     {
       "id": "pyq_u01_ar_e703f4e18f",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "assertion": "and Reason (R) are true but reason",
       "reason": "are true but reason",
       "answer": 0,
@@ -220,6 +518,94 @@
       "rubric": [
         "Subtract remainders correctly",
         "HCF of resulting numbers"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_6d6ea78614",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Two tankers contain 850 litres and 680 litres of petrol respectively. Find the maximum capacity of a container which can measure the petrol of either tanker in exact number of times.",
+      "model_answer": "Maximum capacity of a container, which can measure the petrol in exact number of times.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_0de4159288",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "If HCF of 144 and 180 is expressed in the form 13m – 3, find the value of m.",
+      "model_answer": "On applying Euclid’s division algorithm, 180 = 144 x 1 + 36 144 = 36 x 4 + 0 At the last stage, the divisor is 36. ∴ HCF of 144 and 180 is 36. ∵ 36 = 13 x 3 – 3 So, m = 3",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_09bc05cb89",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Show that 9n can not end with digit 0 for any natural number n.",
+      "model_answer": "Since prime factorisation of 9n is given by 9n= (3 x 3)n = 3271. Prime factorisation of 9″ contains only prime number 3. 9 may end with the digit 0 for some natural number V if 5 must be in its prime factorisation, which is not present. So, there is no natural number N for which 9n ends with the digit zero.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_4f57ec3df5",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Determine the values otp and q so that the prime factorisation of2520 is expressible as 23 X y X q x 7.",
+      "model_answer": "Prime factorisation of 2520 is given by 2520 = 23 x 32 x 5 x 7 Given that 2520 = 23 x 3p x q x 7 On comparing both factorisation we get p = 2 and q = 5.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_7d81309df0",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Find the HCF of 255 and 867 by Euclid’s division algorithm",
+      "model_answer": "Given numbers are 255 and 867. On applying Euclid’s division algorithm, we have 867 = 255 x 3 + 102 255 = 102 x 2 + 51 102 = 51 x 2 + 0 ∵ At the last stage, the divisor is 51 ∴ The HCF of 255 and 867 is 51.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_c679ab7eb0",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Find the HCF (865, 255) using Euclid’s division lemma.",
+      "model_answer": "Given numbers are 255 and 865. On applying Euclid’s division algorithm, we have 865 = 255 x 3 + 100 255 = 100 x 2 + 55 100 = 55 x 1 + 45 55 = 45 x 1 + 10 45 = 10 x 4 + 5 10 = 5 x 2 + 0 ∵At the last stage, the divisor is 5 ∴ The HCF of 255 and 865 is 5.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_48f86bc93f",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 1,
+      "question": "Find the [HCF X LCM] for the numbers 100 and 190.",
+      "model_answer": "HCF x LCM = one number x another number = 100 x 190 = 19000",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_1baf4abea9",
+      "source_paper": "most_repeated_pyq",
+      "marks": 2,
+      "question": "Show that of the numbers n, n+2 and n+4, only one of them is divisible by 3.",
+      "model_answer": "Let n be any positive integer. Then, n=3q or 3q +1 or 3q+2. If n=3q , then n= 3q is divisible by 3, n+2 = 3q+2 is not divisible by 3 and also n+4 = 3q+4=3(q+1) is not divisible by 3. If n =3q+1, then n=3q+1 not divisible by 3, n+2=3q+1=3(q+1) is divisible by 3 and n+2=3q+1+4=3(q+1)+2 is not divisible by 3. If n=3q+2, then n=3q+2 is not divisible by 3, n+2=3q+2+2=3(q+1)+1 is not divisible by 3 and n+4 = 3q+2+4= 3(q+2) is divisible by 3. The only one, out of n, n+2 and n+4, is divisible by 3.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
       ]
     }
   ],
@@ -261,11 +647,121 @@
       ]
     },
     {
+      "id": "pyq_u01_w_ec9cd5d9ed",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Three bells toll at intervals of 12 minutes, 15 minutes and 18 minutes respectively. If they start tolling together, after what time will they next toll together?",
+      "model_answer": "LCM of 12, 15, 18 = 2²x 3² x 5 =4x9x5 = 180 So, next time the bells will ring together after 180 minutes. 2014",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_c9d04a808a",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "By using, Euclid’s algorithm, find the largest number which divides 650 and 1170.",
+      "model_answer": "Given numbers are 650 and 1170. On applying Euclid’s division algorithm, we get 1170 = 650 x 1 + 520 650 = 520 x 1 + 130 520 = 130 x 4 + 0 ∵ At the last stage, the divisor is 130. ∴ The HCF of 650 and 1170 is 130.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_08963053f7",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Find HCF of 65 and 117 and find a pair of integral values of m and n such that HCF = 65m + 117n.",
+      "model_answer": "Given numbers are 65 and 117. On applying Euclid’s division algorithm, we get 117 = 65 x 1 + 52 65 = 52 x 1 + 13 52 = 13 x 4 + 0 ∵At the last stage, the divisor is 13. ∴ The HCF of 65 and 117 is 13. The required pair of integral values of m and n is (2,-1) which satisfies the given relation HCF = 65m + 117n.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_b2a95c7e86",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "An army contingent of 1000 members is to march behind an army band of 56 members in a parade. The two groups are to march in the same number of columns. What is the maximum number of columns in which they can march?",
+      "model_answer": "1000 =2x2x2x5x5x5 56 = 2x2x2x7 HCF of 1000 and 56 = 8 Maximum number of columns = 8.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_00ff10cb1c",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Show that 5 + 3√2 is an irrational number.",
+      "model_answer": "Let us assume 5 + 3√2 is an irrational number. There exists coprime integers a and b (b≠0) 2009",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
       "id": "pyq_u01_w_21eba0c6b0",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "marks": 3,
       "question": "Assertion (A) : For any two natural numbers a and b, the HCF of a and b is a factor",
       "model_answer": "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_e601ba05ec",
+      "source_paper": "most_repeated_pyq",
+      "marks": 3,
+      "question": "Use Euclid's division lemma to show that the square of any positive integer is either of the form 3m or 3m+1 for some integer m.",
+      "model_answer": "Let α be a positive integer. Then, it can be expressed as 3q or 3q+1 or 3q+2. Now, we have to show that the square of each of these can be written in the form 3m or 3m+1. If α =3q, we have: α2 = (3q)2=3×3q2 =3m, where m=3q2. If α=3q+1, then α2=(3q+1)2=9q2++6q+1=3(3q2+2q)+1 =3m+1. Where m=3q2+2q. If α=3q+2, then α2 =(3q+2)2 =9q2 +12q+4 =3(3q2+4q+1)+1 =3m+1, where m=3q2+4q+1. Thus, α2 is either of the form 3m or 3m+1.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_bf9970051e",
+      "source_paper": "most_repeated_pyq",
+      "marks": 3,
+      "question": "Use Euclid's division lemma to show that the cube of any positive integer is of the form 9m, 9m+1 or 9m+8.",
+      "model_answer": "Let α be any positive integer. Then, it is of the form 3p, 3p+1 or 3p+2. Now we have to show that the cube of each of these can be expressed in the form 9m, 9m+1 or 9m+8. If α = 3p, then α3=(3p)3=9(3p3) = 9m, where m=3p3. If α = 3p+1, then α3 =(3p+1)3 = (3p)3+3(3p)2.1+3(3p).12+13 =27p3 + 27p2+9p+1. =9(3p3 +3p2+p)+1 =9m+1, where m=3p3+3p2+p. If α=3p+2, then α3 =(3p+2)3 =(3p)3 + 3(3p)2 .2+3(3p).22+23 =27p3 + 54p2+36p+8. =9(3p3 +6p2+4p)+8 =9m+8, where m=3p3+6p2+4p. Thus, α3 is either of the form 9m, 9m+1 or 9m+8 for some integer m.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_32cd7ccd0a",
+      "source_paper": "most_repeated_pyq",
+      "marks": 3,
+      "question": "The traffic lights at three different road crossings change after every 48 seconds 72 seconds and 108 seconds respectively. If they all change simultaneously at 8:00 hours, then at what time will they again change simultaneously?",
+      "model_answer": "48=2×2×2×2×3 72=2×2×2×3×3 108=2×2×3×3×3 So, LCM (48,72,108) = 2×2×2×2×3×3×3=432. Now, 432 seconds = 7 minutes and 12 seconds. Hence, they will again simultaneously change at 8:07:12 hours.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_b0fce6369f",
+      "source_paper": "most_repeated_pyq",
+      "marks": 3,
+      "question": "Prove that √ is an irrational number.",
+      "model_answer": "If possible , let √ be rational number. Let √ = , where a and b are co-prime and b≠0. So, 3 a2/b2 or 3b2 = a2. Also a2 is divisible by 3 ….. (1) a is divisible by 3. ……(2) Let a=3c, where c is an integer. a2=9c2 3b2=9c2 [substituting a = 3c in (1)] Or b2=3c2. b2 is divisible by 3 and hence b is divisible by 3. …….(3) From (2) and (3), we conclude that 3 is common factor of and b. But, we assumed that a and b are co-prime. Hence, a contradiction. √ is not a rational number, i.e., it is an irrational number.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_7d3ea9c62f",
+      "source_paper": "most_repeated_pyq",
+      "marks": 3,
+      "question": "Find the smallest positive rational number by which should be multiplied so that its decimal expansion terminates after 2 places of decimal.",
+      "model_answer": "We have : For terminating decimal expression , 7 should be removed from the denominator. Further, for decimal expansion to terminate after 2 places of decimal, there should be 22.52 in the denominator. So, smallest positive rational number to obtain a decimal expansion terminating after 2 decimal places is [Note that by multiplying = . will also give a decimal expansion terminating after 2 decimal places. But smallest positive rational number is ]",
       "rubric": [
         "Correct method",
         "Accurate final result"
@@ -295,6 +791,28 @@
         "HCF = 12",
         "Divide each group by 12",
         "Total 15 rooms"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_a3479b3683",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Prove that the product of any three consecutive positive integers is divisible by 6. Solution: Let three consecutive numbers are n, n + 1, n + 2",
+      "model_answer": "1st Case: If n is even This means n + 2 is also even. Hence n and n + 2 are divisible by 2 Also, product of n and (n + 2) is divisible by 2. .’. n(n + 2) is divisible by 2. This conclude n(n + 2) (n + 1) is divisible by 2 …(i) As, n, n + 1, n + 2 are three consecutive numbers. n(n + 1) (n + 2) is a multiple of 3. This shows n(n + 1) (n + 2) is divisible by 3. …(ii) By equating (i) and (ii) we can say n(n + 1) (n + 2) is divisible by 2 and 3 both. Hence, n(n + 1) (n + 2) is divisible by 6. 2nd Case: When n is odd. This show (n + 1) is even Hence (n + 1) is divisible by 2. …(iii) This conclude n(n + 1) (n + 2) is an even number and divisible by 2. Also product of three consecutive number is a multiple of 3. n(n + 1)(n + 2) is divisible by 3. …(iv) Equating (iii) and (iv) we can say n(n + 1) (n + 2) is divisible by both 2 and 3 Hence, n(n + 1)(n + 2) is divisible by 6. 2015",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u01_w_ce401c193a",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Find HCF of 378,180 and 420 by prime factorisation method. Is HCF x LCM of three numbers equal to the product of the three numbers?",
+      "model_answer": "378 = 2 x 33 x 7 180 = 22 x 32 x 5 420 = 22 x 3 x 5 x 7 ∴ HCF (378, 180, 420) = 2 x 3 = 6. No. HCF (p, q, r) x LCM (p, q, r) ≠ p x q x r. where p, q, r are positive integers. 2013",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
       ]
     }
   ]

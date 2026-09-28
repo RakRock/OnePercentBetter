@@ -5,6 +5,7 @@ from __future__ import annotations
 import unittest
 
 import harshit_class10_practice as h10p
+import harshit_class10_practice_pyq as h10pyq
 import harshit_class10_topics as h10t
 import harshit_class10_units as h10u
 
@@ -36,17 +37,23 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(h10t.DIFFICULTY_TO_LEVEL[1], "A")
         self.assertEqual(h10t.DIFFICULTY_TO_LEVEL[5], "E")
 
+    def _assert_daily_paper(self, unit_id: int) -> None:
+        config = h10t.default_week_config(unit_id)
+        qs, _ = h10p.build_session_set(unit_id, config)
+        self.assertEqual(len(qs), 10, unit_id)
+        marks = [int(q.get("marks") or 1) for q in qs]
+        self.assertEqual(marks.count(1), 5, unit_id)
+        self.assertEqual(marks.count(5), 1, unit_id)
+        n_two, n_three = h10pyq.two_three_split(unit_id)
+        self.assertEqual(marks.count(2), n_two, unit_id)
+        self.assertEqual(marks.count(3), n_three, unit_id)
+        self.assertTrue(all(q.get("source") == "board_pyq" for q in qs), unit_id)
+
     def test_build_session_fifteen_questions(self):
-        config = h10t.default_week_config(1)
-        qs, _ = h10p.build_session_set(1, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(1)
 
     def test_build_session_unit2(self):
-        config = h10t.default_week_config(2)
-        qs, _ = h10p.build_session_set(2, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(2)
 
     def test_generate_question_has_four_options(self):
         q = h10t.generate_question(1, 1, "B", templates_only=True)
@@ -72,14 +79,10 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(path.name, "jemh104.pdf")
 
     def test_build_session_unit3(self):
-        config = h10t.default_week_config(3)
-        qs, _ = h10p.build_session_set(3, config, count=15)
-        self.assertEqual(len(qs), 15)
+        self._assert_daily_paper(3)
 
     def test_build_session_unit4(self):
-        config = h10t.default_week_config(4)
-        qs, _ = h10p.build_session_set(4, config, count=15)
-        self.assertEqual(len(qs), 15)
+        self._assert_daily_paper(4)
 
     def test_unit5_pdf_exists(self):
         path = h10u.unit_pdf_path(5)
@@ -93,10 +96,7 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(unit["title"], "Arithmetic Progressions")
 
     def test_build_session_unit5(self):
-        config = h10t.default_week_config(5)
-        qs, _ = h10p.build_session_set(5, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(5)
 
     def test_generate_unit5_question(self):
         q = h10t.generate_question(5, 2, "B", templates_only=True)
@@ -116,10 +116,7 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(unit["title"], "Triangles")
 
     def test_build_session_unit6(self):
-        config = h10t.default_week_config(6)
-        qs, _ = h10p.build_session_set(6, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(6)
 
     def test_generate_unit6_question(self):
         q = h10t.generate_question(6, 2, "B", templates_only=True)
@@ -139,10 +136,7 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(unit["title"], "Coordinate Geometry")
 
     def test_build_session_unit7(self):
-        config = h10t.default_week_config(7)
-        qs, _ = h10p.build_session_set(7, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(7)
 
     def test_generate_unit7_question(self):
         q = h10t.generate_question(7, 1, "B", templates_only=True)
@@ -162,10 +156,7 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(unit["title"], "Introduction to Trigonometry")
 
     def test_build_session_unit8(self):
-        config = h10t.default_week_config(8)
-        qs, _ = h10p.build_session_set(8, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(8)
 
     def test_generate_unit8_question(self):
         q = h10t.generate_question(8, 2, "B", templates_only=True)
@@ -185,10 +176,7 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(unit["title"], "Some Applications of Trigonometry")
 
     def test_build_session_unit9(self):
-        config = h10t.default_week_config(9)
-        qs, _ = h10p.build_session_set(9, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(9)
 
     def test_generate_unit9_question(self):
         q = h10t.generate_question(9, 2, "B", templates_only=True)
@@ -208,10 +196,7 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(unit["title"], "Circles")
 
     def test_build_session_unit10(self):
-        config = h10t.default_week_config(10)
-        qs, _ = h10p.build_session_set(10, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(10)
 
     def test_generate_unit10_question(self):
         q = h10t.generate_question(10, 1, "B", templates_only=True)
@@ -231,10 +216,7 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(unit["title"], "Areas Related to Circles")
 
     def test_build_session_unit11(self):
-        config = h10t.default_week_config(11)
-        qs, _ = h10p.build_session_set(11, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(11)
 
     def test_generate_unit11_question(self):
         q = h10t.generate_question(11, 1, "B", templates_only=True)
@@ -254,10 +236,7 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(unit["title"], "Surface Areas and Volumes")
 
     def test_build_session_unit12(self):
-        config = h10t.default_week_config(12)
-        qs, _ = h10p.build_session_set(12, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(12)
 
     def test_generate_unit12_question(self):
         q = h10t.generate_question(12, 1, "B", templates_only=True)
@@ -277,10 +256,7 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(unit["title"], "Statistics")
 
     def test_build_session_unit13(self):
-        config = h10t.default_week_config(13)
-        qs, _ = h10p.build_session_set(13, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(13)
 
     def test_generate_unit13_question(self):
         q = h10t.generate_question(13, 1, "B", templates_only=True)
@@ -300,10 +276,7 @@ class TestHarshitClass10(unittest.TestCase):
         self.assertEqual(unit["title"], "Probability")
 
     def test_build_session_unit14(self):
-        config = h10t.default_week_config(14)
-        qs, _ = h10p.build_session_set(14, config, count=15)
-        self.assertEqual(len(qs), 15)
-        self.assertGreaterEqual(len({q["topic"] for q in qs}), 3)
+        self._assert_daily_paper(14)
 
     def test_generate_unit14_question(self):
         q = h10t.generate_question(14, 1, "B", templates_only=True)

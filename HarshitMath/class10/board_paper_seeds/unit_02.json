@@ -8,10 +8,9 @@
       "CBSE 30/1/2",
       "CBSE 30/1/3",
       "CBSE SQP 2025-26",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -56,7 +55,7 @@
     },
     {
       "id": "pyq_u02_mcq_00239cd0b3",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "Two polynomials are shown in the graph below. The number of distinct zeroes of both the polynomials is :",
       "options": [
         "3",
@@ -66,6 +65,227 @@
       ],
       "answer": 2,
       "explanation": "2"
+    },
+    {
+      "id": "pyq_u02_mcq_a2a99afcad",
+      "source_paper": "math_objective_pyq",
+      "question": "If one zero of a quadratic polynomial ( ) kx x k 3 2 + + is 2, then the value of k is 5",
+      "options": [
+        "6 6",
+        "6 5 -",
+        "5",
+        "5 6 -"
+      ],
+      "answer": 3,
+      "explanation": "Since, 2 is a zero of the quadratic polynomial"
+    },
+    {
+      "id": "pyq_u02_mcq_15b1746620",
+      "source_paper": "math_objective_pyq",
+      "question": "The graph of a polynomial is shown in Figure, then the number of its zeroes is",
+      "options": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ],
+      "answer": 0,
+      "explanation": "Since, the graph cuts the x -axis at 3 points, the number of zeroes of polynomial ( )"
+    },
+    {
+      "id": "pyq_u02_mcq_d1995b5a92",
+      "source_paper": "math_objective_pyq",
+      "question": "The maximum number of zeroes a cubic polynomial can have, is",
+      "options": [
+        "1",
+        "4",
+        "2",
+        "3"
+      ],
+      "answer": 3,
+      "explanation": "A cubic polynomial has maximum 3 zeroes because"
+    },
+    {
+      "id": "pyq_u02_mcq_c22e164082",
+      "source_paper": "math_objective_pyq",
+      "question": "If one zero of the quadratic polynomial x x k 3 2 + + is 2, then the value of k is",
+      "options": [
+        "10",
+        "10 -",
+        "7 -",
+        "2 -"
+      ],
+      "answer": 1,
+      "explanation": "If 2 is a zero of ( ) p x , then we have"
+    },
+    {
+      "id": "pyq_u02_mcq_0fa3a20ccb",
+      "source_paper": "math_objective_pyq",
+      "question": "The value of x , for which the polynomials x 1 2 - and x x 2 1 2 − + vanish simultaneously, is",
+      "options": [
+        "2",
+        "2 -",
+        "1 -",
+        "1"
+      ],
+      "answer": 3,
+      "explanation": "Both expression have 1 as zero. This both vanish if x"
+    },
+    {
+      "id": "pyq_u02_mcq_b10ebbfe70",
+      "source_paper": "math_objective_pyq",
+      "question": "If α and β are zeroes and the quadratic polynomial f x x x 4 2 = − − ^ h , then the value of 1 1 α β α + 15",
+      "options": [
+        "4",
+        "4 15 -",
+        "4",
+        "15"
+      ],
+      "answer": 0,
+      "explanation": "Option (A) is correct."
+    },
+    {
+      "id": "pyq_u02_mcq_36c8a80bee",
+      "source_paper": "math_objective_pyq",
+      "question": "The value of the polynomial x x x x 1 8 5 2 − + − + is",
+      "options": [
+        "positive for all the real numbers",
+        "negative for all the real numbers",
+        "0",
+        "depends on value of x"
+      ],
+      "answer": 0,
+      "explanation": "f x is always positive for all x f x is positive, thus ( ) f x is positive for all real x ."
+    },
+    {
+      "id": "pyq_u02_mcq_dca0bc1ceb",
+      "source_paper": "math_objective_pyq",
+      "question": "If the square of difference of the zeroes of the quadratic polynomial x px 45 2 + + is equal to 144, then the value of p is",
+      "options": [
+        "9 !",
+        "12 !",
+        "15 !",
+        "18 !"
+      ],
+      "answer": 0,
+      "explanation": "According to given condition, we have 14. If one of the zeroes of the quadratic polynomial - , then the value of k is If a is zero of quadratic polynomial f x"
+    },
+    {
+      "id": "pyq_u02_mcq_c9d3fe6a76",
+      "source_paper": "math_objective_pyq",
+      "question": "A quadratic polynomial, whose zeroes are 3 - and 4, is",
+      "options": [
+        "x x 12 2 − +",
+        "x x 12 2 + +",
+        "x x 2 2 6 2 - -",
+        "x x 2 2 24 2 + −"
+      ],
+      "answer": 2,
+      "explanation": "Product of zeros, So, the quadratic polynomial is"
+    },
+    {
+      "id": "pyq_u02_mcq_68221b3755",
+      "source_paper": "math_objective_pyq",
+      "question": "The zeroes of the quadratic polynomial x x 99 127 2 + + are",
+      "options": [
+        "both positive",
+        "both negative",
+        "one positive and one negative",
+        "both equal"
+      ],
+      "answer": 1,
+      "explanation": "Comparing the given polynomial with Product of zeroes Now, product is positive and the sum is negative, so both of the numbers must be negative. Alternative Method : Comparing the given polynomial with Now by discriminant rule, So, the zeroes of given polynomial, So, both zeroes are negative."
+    },
+    {
+      "id": "pyq_u02_mcq_ca52e9ce63",
+      "source_paper": "math_objective_pyq",
+      "question": "The zeroes of the quadratic polynomial x kx k 2 + + where k 0 ! ,",
+      "options": [
+        "cannot both be positive",
+        "cannot both be negative",
+        "are always unequal",
+        "are always equal"
+      ],
+      "answer": 0,
+      "explanation": "Comparing the given polynomial with α β be the zeroes of given polynomial Case 1: If k is negative, then αβ is negative. It means α and β are of opposite sign. Case 2: If k is positive, then α must be negative and αβ must be positive and α and β both negative. Hence, α and β cannot both positive."
+    },
+    {
+      "id": "pyq_u02_mcq_4fa5ca20a1",
+      "source_paper": "math_objective_pyq",
+      "question": "If the zeroes of the quadratic polynomial , ax bx c 2 + + where c 0 ! , are equal, then",
+      "options": [
+        "c and a have opposite signs",
+        "c and b have opposite signs",
+        "c and a have same sign",
+        "c and b have the same sign"
+      ],
+      "answer": 2,
+      "explanation": "Let α and β are zeroes of this polynomial , then α and β must be of same sign i.e. either both are positive or both are negative. In both Both c and a are of same sign."
+    },
+    {
+      "id": "pyq_u02_mcq_25ee4bd2d1",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : 2 3 - ^ h is one zero of the quadratic polynomial then other zero will be 2 3 + ^ h. Reas on : Irrational zeros (roots) always occurs in pairs.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "As irrational roots/zeros always occurs in pairs therefore, when one zero is 2 h then other will . So, both A and R are correct and R"
+    },
+    {
+      "id": "pyq_u02_mcq_66f96b1932",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : If one zero of poly-nominal p x k x x k 4 13 4 2 2 = + + + _ ^ i h is reciprocal of other, then k 2 = . Reas on : If x α − ^ h is a factor of p x ^ h, then p 0 α = ^ h i.e. α is a zero of p x _ i.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 1,
+      "explanation": "a a be the zeroes of p x Assertion is true Since, Reason is not correct for"
+    },
+    {
+      "id": "pyq_u02_mcq_18b3510df2",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : p x x x x x 14 2 8 7 8 3 2 4 = − + + − ^ h is a polynomial of degree 3. Reas on : The highest power of x in the polynomial p x ^ h is the degree of the polynomial.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 3,
+      "explanation": "The highest power of x in the polynomial is 4. So, A is incorrect but R is correct."
+    },
+    {
+      "id": "pyq_u02_mcq_53cae387d1",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : x x 3 + has only one real zero. Reas on : A polynomial of n th degree must have n real zeroes.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 2,
+      "explanation": "A polynomial of n th degree at most can have n real zeroes. Thus reason is not true. which has only one real zero because x Assertion (A) is true but reason (R) is false."
+    },
+    {
+      "id": "pyq_u02_mcq_6f12354e22",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : If both zeros of the quadratic polynomial x kx 2 2 2 − + are equal in magnitude but opposite in sign then value of k is ½. Reas on : Sum of zeros of a quadratic polynomial ax bx c 2 + + is a b -",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 3,
+      "explanation": "As the polynomial is x + and its zeros are equal but opposition sign, sum of zeroes must be zero. Assertion (A) is false but reason (R) is true."
     }
   ],
   "assertion_reason": [
@@ -76,22 +296,6 @@
       "reason": "A quadratic polynomial can have at most two zeroes.",
       "answer": 0,
       "explanation": "Both true; factorises as (y+1)(y+3) giving two zeroes."
-    },
-    {
-      "id": "pyq_u02_ar_83a3ba91ee",
-      "source_paper": "objective_pyq",
-      "assertion": "and reason (R) are true and",
-      "reason": "are true and",
-      "answer": 0,
-      "explanation": ""
-    },
-    {
-      "id": "pyq_u02_ar_a9b78d8646",
-      "source_paper": "objective_pyq",
-      "assertion": "and reason (R) are true and reason",
-      "reason": "are true and reason",
-      "answer": 0,
-      "explanation": ""
     }
   ],
   "vsa": [

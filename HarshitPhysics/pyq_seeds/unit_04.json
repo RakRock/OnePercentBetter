@@ -1,0 +1,804 @@
+{
+  "meta": {
+    "subject": "physics",
+    "unit_id": 4,
+    "chapter": "Magnetic Effects of Electric Current",
+    "sources": [
+      "PYQ:science_objective_pyq"
+    ]
+  },
+  "mcq": [],
+  "short_answer": [
+    {
+      "id": "pyq_phy_u04_sa_f4fa0685dc",
+      "source_paper": "science_objective_pyq",
+      "question": "Mention the shape of the magnetic field lines around a current carrying straight conductor.",
+      "model_answer": "The magnetic field lines around a current carrying straight conductor are in the form of concentric circular rings around a conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_d33ed72cdb",
+      "source_paper": "science_objective_pyq",
+      "question": "State the observation made by Oersted on the basis of his experiment with current carrying conductors.",
+      "model_answer": "A magnetic field is produced near a current carrying conductor which last so long till there is current in the conductor on reversing the current the direction of magnetic field is also reversed.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_d62edc7eb8",
+      "source_paper": "science_objective_pyq",
+      "question": "State the direction of the magnetic field inside the bar magnet.",
+      "model_answer": "In a magnet, magnetic field lines goes from S pole to N pole.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_4255f1e185",
+      "source_paper": "science_objective_pyq",
+      "question": "Identify the poles of the magnet in the given figure.",
+      "model_answer": "A1 is North Pole, B1 is South Pole because magnetic field lines goes from north pole to south pole of the magnet. CHAPTER 13 Magnetice Eﬀ ect of Electric Current",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_268b56e179",
+      "source_paper": "science_objective_pyq",
+      "question": "Mention the special feature regarding shape of magnetic field lines.",
+      "model_answer": "Magnetic field lines are continuous closed loops.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_95c90913d4",
+      "source_paper": "science_objective_pyq",
+      "question": "If field lines of a magnetic field are crossed at a point, what does it indicate?",
+      "model_answer": "If the magnetic field lines would cross each other then at the same point there would be two directions of magnetic field which is not possible.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_99e35b9ae5",
+      "source_paper": "science_objective_pyq",
+      "question": "Draw a diagram to represent a uniform magnetic field in a given region.",
+      "model_answer": "Uniform magnetic field is represented by equidistant parallel lines.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_eda17d0509",
+      "source_paper": "science_objective_pyq",
+      "question": "What type of core is used to make an electromagnet?",
+      "model_answer": "Soft iron core is used in making an electromagnet.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_327f78c494",
+      "source_paper": "science_objective_pyq",
+      "question": "Mention the voltage and frequency of current that we receive at our house.",
+      "model_answer": "In our house we get AC of voltage 220 V and frequency 50 Hz.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_e2e3e0ece0",
+      "source_paper": "science_objective_pyq",
+      "question": "Name the type of current: (a) used in household supply (b) given by a cell.",
+      "model_answer": "a. We use alternating current in our houses which changes to direction and magnitude with time. b. A cell supply direct current (DC) or unidirectional current which flows only in one direction only.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_ed5e243527",
+      "source_paper": "science_objective_pyq",
+      "question": "State the rule which you use to find the direction of induced current or state Fleming’s right hand rule.",
+      "model_answer": "Fleming’s right hand rule gives the direction of current produced in a conductor. According to Fleming’s right hand rule, if we stretch right hand thumb, forefinger and middle finger perpendicular to each other in such a way that thumb points the direction of force on a conductor and forefinger points the direction of magnetic field then middle finger will point the direction of current produced in the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_a58c199a6c",
+      "source_paper": "science_objective_pyq",
+      "question": "How can it be shown that a magnetic field exists around a wire through which a direct current is passing.",
+      "model_answer": "When we put a small magnetic compass near a current carrying conductor it gets deflected, which shows that a magnetic field is produced near a current carrying conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_20f49af019",
+      "source_paper": "science_objective_pyq",
+      "question": "How is the strength of the magnetic field at a point near a wire related to the strength of the electric current flowing in the wire?",
+      "model_answer": "The magnetic field strength at a point near a wire is directly proportional to the current strength in the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_6074351e59",
+      "source_paper": "science_objective_pyq",
+      "question": "An alternating electric current has a frequency of 50 Hz. How many times does it change its direction in one second?",
+      "model_answer": "50 Hz ac changes its direction 100 times in 1 sec.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_ada5adc37d",
+      "source_paper": "science_objective_pyq",
+      "question": "What will be the frequency of an alternating current if its direction changes after every 0.01 s?",
+      "model_answer": "The direction of ac changes every 0.01 sec. Thus time of one complete cycle = 0.02 sec i.e. in 0.02 sec no. of cycle = 1 1 2 100 50 = = in 1 sec no. of cycle = .0 02 Frequency of ac = 50 Hz",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_e51d94ffa0",
+      "source_paper": "science_objective_pyq",
+      "question": "What is short-circuiting in an electric supply?",
+      "model_answer": "When a neutral wire and live wire come in contact with each other short circuit takes place.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_1796529a1e",
+      "source_paper": "science_objective_pyq",
+      "question": "What constitutes the field of a magnet?",
+      "model_answer": "The magnetic field is created by the magnet or when a charge particle is moving with some velocity in both cases they produce a magnetic field around them. The magnetic field is due to current or magnetic material.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_2952d15b5a",
+      "source_paper": "science_objective_pyq",
+      "question": "What is the advantage of the third wire of earth connection in domestic appliances?",
+      "model_answer": "In case of any electric fault in domestic appliances, current may comes in appliance body. The third wire called earth wire transfer this current to the earth and user remains safe from any such electric shock.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_6b2a4dfb44",
+      "source_paper": "science_objective_pyq",
+      "question": "How can you show that the magnetic field produced by a given electric current in the wire decreases as the distance from the wire decreases?",
+      "model_answer": "If we bring a magnetic compass from a distance to near a current carrying conductor its deflection goes on increasing and when magnetic compass is brought away from the current carrying wire its deflection goes on decreasing which shows that magnetic field near current carrying wire is maximum and decreasing on increasing the separation.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_7395eb2ad6",
+      "source_paper": "science_objective_pyq",
+      "question": "When is the force experienced by a current carrying conductor placed in a magnetic field the maximum?",
+      "model_answer": "A current carrying conductor experience maximum force in a magnetic field when the direction of current is perpendicular to the magnetic field.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_7e28c17ec2",
+      "source_paper": "science_objective_pyq",
+      "question": "How is the induced current in a secondary coil related to current in a primary coil?",
+      "model_answer": "Induced current in a secondary coil may be more or lesser than the current in primary coil depending upon the number of turns in secondary.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_8be53cfbc7",
+      "source_paper": "science_objective_pyq",
+      "question": "What is the pattern of field fines inside a solenoid? What do they indicate?",
+      "model_answer": "The magnetic field inside a solenoid is uniform in the",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_7e996621e6",
+      "source_paper": "science_objective_pyq",
+      "question": "How is the magnetic field produced in a solenoid used?",
+      "model_answer": "Magnetic field produced in a solenoid can be used in making a soft iron piece electromagnet.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_952c202186",
+      "source_paper": "science_objective_pyq",
+      "question": "What does the direction of thumb indicate in the right-hand thumb rule?",
+      "model_answer": "Thumb points the direction of current in the conductor holding a straight conductor in right hand.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_0026b257b8",
+      "source_paper": "science_objective_pyq",
+      "question": "Mention the angle between a current carrying conductor and magnetic field for which the force experienced by this current carrying conductor placed in magnetic field is largest?",
+      "model_answer": "If the angle between a current carrying conductor and magnetic field is 90° then the force experienced by the conductor is maximum.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_04ca19f4c0",
+      "source_paper": "science_objective_pyq",
+      "question": "Suggest one way of discriminating a wire carrying current from a wire carrying no current.",
+      "model_answer": "When a magnetic compass is brought near a current carrying conductor it will be deflected. If magnetic compass remains undeflected near a conductor then there is no current in it.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_561ba367a1",
+      "source_paper": "science_objective_pyq",
+      "question": "What does the thumb indicated in Fleming’s right hand rule?",
+      "model_answer": "Thumb indicate the direction of force on conductor i.e. motion of the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_42f02c345b",
+      "source_paper": "science_objective_pyq",
+      "question": "Why are magnetic field lines closed curves?",
+      "model_answer": "By convention the magnetic field lines are the path traced by north pole which emerges from north pole and goes to the south pole and inside the magnet the direction of field lines are from south pole to north pole, forming continuous closed path.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_a49c749cbe",
+      "source_paper": "science_objective_pyq",
+      "question": "Write any one method to induce current in a coil.",
+      "model_answer": "By moving a magnet towards the coil or vice versa, current can be induced in the coil.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_0106bd7375",
+      "source_paper": "science_objective_pyq",
+      "question": "State two ways by which the strength of an electromagnet can be increased.",
+      "model_answer": "By increasing the strength of current and number of turns of the solenoid we can increase the strength of an electromagnet.",
+      "marks": 2
+    },
+    {
+      "id": "pyq_phy_u04_sa_d5e90289e8",
+      "source_paper": "science_objective_pyq",
+      "question": "Define a solenoid. How is it different from a coil?",
+      "model_answer": "A coil of many circular turns of insulated wire wrapped closely in the form of a cylinder is called a solenoid. In a current carrying solenoid magnetic field is same at all points inside it, i.e. field is uniform inside the solenoid. The magnetic field inside a coil vary.",
+      "marks": 2
+    },
+    {
+      "id": "pyq_phy_u04_sa_d0ef01029c",
+      "source_paper": "science_objective_pyq",
+      "question": "An alpha particle (+ve charged particle) enters a magnetic field at right angle to it as shown in figure. Explain with the help of a relevant rule, the direction of force acting on the alpha particle.",
+      "model_answer": "Force on a-particle will be in the upward direction as per Fleming’s left hand rule.",
+      "marks": 2
+    },
+    {
+      "id": "pyq_phy_u04_sa_23b0512fd7",
+      "source_paper": "science_objective_pyq",
+      "question": "An alternating electric current has a frequency of 50 Hz. How many times does it change its direction in one second? Give reason for your answer.",
+      "model_answer": "100 times in one second because one complete cycle involves two times change of direction.",
+      "marks": 2
+    },
+    {
+      "id": "pyq_phy_u04_sa_ea4b49a1ac",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Name the type of electric current generated by the most of the power stations in our country. (b) Why is it preferred over the other type? (c) State the frequency of the power supply generated in India.",
+      "model_answer": "(a) Alternating current (b) AC can be transmitted at high voltage using step up transformer to prevent loss in transmission. (c) 50 Hz",
+      "marks": 2
+    },
+    {
+      "id": "pyq_phy_u04_sa_64732877e9",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) A compass needle gets deflected when brought near a current carrying conductor. Why? (b) What happened to the reflection of needle when current in the conductor is increased?",
+      "model_answer": "(a) Near a current carrying conductor a magnetic field is produced which deflect the compass. (b) With the increase in strength of current in the conductor strength of magnetic field also increases so there will be more deflection in compass.",
+      "marks": 2
+    },
+    {
+      "id": "pyq_phy_u04_sa_d0cd810a09",
+      "source_paper": "science_objective_pyq",
+      "question": "Draw the patterns of magnetic field fines due to a bar magnet. The magnetic field fines are closed curves. Why?",
+      "model_answer": "Magnetic field lines emerge out from the N-pole of a bar magnet go to the S-pole and inside the magnet field lines goes from S-pole to N-pole thus form the closed curves.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_98d42af15b",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) In a pattern of magnetic field fines due to a bar magnet, how can the regions of relative strength be identified? (b) Compare the strength of field near the poles and middle of a bar magnet.",
+      "model_answer": "(a) More the density of the magnetic field lines i.e. more closer the magnetic field lines more the strength of magnetic field. (b) Near the poles magnetic field lines are closer than the middle of a bar magnet. So magnetic strength is more near poles than middle part of bar magnet.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_333c9648a3",
+      "source_paper": "science_objective_pyq",
+      "question": "Identify the type of magnetic fields represented by the magnetic field fines given below and name the type conductors which can produce them.",
+      "model_answer": "a. Magnetic field lines of a current carrying circular loop.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_be7571e801",
+      "source_paper": "science_objective_pyq",
+      "question": "A compass needle is placed near a current carrying wire. State your observation for the following cases and give reason for the same in each case: a. Magnitude of electric current in the wire is increased. b. The compass needle is displaced away from the wire.",
+      "model_answer": "a. Compass needle is deflected more because more the current, more the magnetic field near the wire. b. Magnetic field strength is inversely proportional to the distance from current carrying wire. So deflection will decrease in the compass needle when brought away from wire.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_59cef8dabd",
+      "source_paper": "science_objective_pyq",
+      "question": "What are magnetic field lines? How is the direction of magnetic field at a point determined? Mention few important properties of magnetic field lines.",
+      "model_answer": "Magnetic field lines are the path traced by north pole in a magnetic field. A tangent drawn to the magnetic field lines gives the direction of magnetic field at that point. a. Magnetic field lines emerge out from the N-pole and go to the south pole and from S-pole to N-pole inside the magnet forming the closed curve. b. They do not intersect each other.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_46a25ba4b3",
+      "source_paper": "science_objective_pyq",
+      "question": "What is the nature of magnetic field produced by a straight current carrying circular coil? Explain with the help of an experiment.",
+      "model_answer": "Bend a wire in the shape of a circular loop. Pass the coil through a cardboard. Connect the free ends of the coil to a battery and a key. Sprinkle some iron filings on the cardboard. Put on the key you will find that the iron filings arrange themselves in the form of concentric circles. The magnetic lines of forces near each segment of wire are circular and form concentric circles, whereas the lines of force near the centre of the coil are almost straight lines. The right hand thumb rule predicts the direction of this magnetic field it states “Grasp the conductor in the right hand with the thumb pointing in the direction of current, and then the direction in which the fingers curl gives the direction of the magnetic field.”",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_a342518372",
+      "source_paper": "science_objective_pyq",
+      "question": "On what factors does the force experienced by a current carrying conductor placed in a uniform magnetic field depend?",
+      "model_answer": "The force experienced by a current carrying conductor in a magnetic field depends upon— a. length of the conductor b. current in the conductor c. magnetic field in which it is kept",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_31a259eec1",
+      "source_paper": "science_objective_pyq",
+      "question": "With the help of a neat diagram, describe how you can generate induced current in a circuit.",
+      "model_answer": "Take a coil of large number of turns and connect the two ends of the coil with a galvanometer. Galvanometer is a device used to detect the presence of current. Now bring N pole of a strong magnet towards the coil. There is a momentary deflection in the galvanometer. Now bring the N pole away from the coil, again there is a deflection in the opposite direction in the galvanometer deflection in the galvanometer shows that a current is induced in the coil. The induced current can be produced by keeping magnet stationary and giving movement to the coil, or when both have a relative motion w.r.t. each other.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_d96f2ea73b",
+      "source_paper": "science_objective_pyq",
+      "question": "Why is series arrangement not used for domestic circuits?",
+      "model_answer": "In domestic circuits, all appliances are connected in parallel not in series because a. In series combination same current is passed through each appliances whereas they may need different current. b. If one appliance fails to work then circuit will be broken and all other appliances will stop to work. c. If one appliance is switched off others also will stop working i.e. all appliance will work together is divided among all appliances in proportion to their resistance. So all appliance will not get required voltage to operate efficiently.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_1ce0ad9880",
+      "source_paper": "science_objective_pyq",
+      "question": "Explain what is short-circuiting and overloading in an electric supply.",
+      "model_answer": "When live wire and neutral wire come in contact with each other short circuit takes place. This may be due to fault in electric circuit or when insulation of wire is damaged. During the short circuiting current increases abruptly due to decrease in resistance in the circuit. This short circuiting leads the spark and house may catch fire. Over loading means to draw the current by all electric appliances in the circuit more than maximum permitted value of the current, overloading also leads the heating of wires which may damage the insulation of wires.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_fd6fb793c3",
+      "source_paper": "science_objective_pyq",
+      "question": "State the characteristics of magnetic force.",
+      "model_answer": "If a charge is moving in a magnetic field then it experiences a force known as magnetic force sin F qVB q = , B is magnetic force, q is angle between B and V. This magnetic force a. acts only when charge is moving b. does not act when charge is at rest c. is maximum when charge is moving perpendicular to the magnetic field d. does not act when charge is moving in the same direction of magnetic field.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_d136a4725a",
+      "source_paper": "science_objective_pyq",
+      "question": "The flow of a current in a circular loop of a wire creates a magnetic field at its centre. How can existence of this field be detected? State the rule which helps to predict the direction of this magnetic field.",
+      "model_answer": "Take a cardboard and fix it. Now pass a thick copper wire having two holes giving the wire a circular shape. Connect the two ends of the wire with a cell and plug key. Sprinkle iron filings uniformly on the cardboard. Now plug in key and tap the cardboard gently a number of times. The iron filings arrange themselves in the pattern of concentric circles. Near each segment of wire whereas near the centre of the coil these arrange",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_0e8549d582",
+      "source_paper": "science_objective_pyq",
+      "question": "How does the strength of the magnetic field at the centre of a circular coil of wire depend on: (i) the radius of the coil (ii) the number of turns of wire in the coil (iii) the strength of the current flowing in the coil?",
+      "model_answer": "The magnetic field at the centre of a current carrying circular coil is a. inversely proportional to the radius ‘a’ of the coil B a 1 \\ b. directly proportional to the number of turns in the coil c. directly proportional to the current I in the coil B I \\ .",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_ecb17262aa",
+      "source_paper": "science_objective_pyq",
+      "question": "Draw the pattern of field lines due to a solenoid carrying electric current. Mark the north and south poles in the diagram.",
+      "model_answer": "The pattern of the magnetic field lines is as shown in figure.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_b587825a0a",
+      "source_paper": "science_objective_pyq",
+      "question": "Differentiate overloading and short- circuiting.",
+      "model_answer": "Overloading means to draw current more than the permitted maximum current in the circuit which may be due to connecting many appliances in one socket. In short circuiting, when live wire and neutral wire come in contact with each other then resistance of the circuit becomes minimum consequently the current in the circuit increases abruptly. It may be due to damage of insulation of wire.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_b841ae5bbd",
+      "source_paper": "science_objective_pyq",
+      "question": "Identify the poles of the magnet in the given figure (1) and (2). (2)",
+      "model_answer": "The figure is as shown below :",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_d1dc57b1c7",
+      "source_paper": "science_objective_pyq",
+      "question": "What are permanent magnet and electromagnet? Give two uses of each.",
+      "model_answer": "Permanent Magnet: It has constant magnetic field around it. e.g. generator, loud speaker. Electromagnet: When a soft iron is placed in a solenoid it gets magnetised till there is current in solenoid, e.g. electric bells, cranes.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_1faedf94de",
+      "source_paper": "science_objective_pyq",
+      "question": "Explain briefly different methods of producing induced emf.",
+      "model_answer": "a. By mutual induction: If we change current in one coil, a current is induced in the neighbouring coil. b. By giving a relative motion to a magnet and coil in its neighbourhood.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_ac64b0d05c",
+      "source_paper": "science_objective_pyq",
+      "question": "What is the role of fuse, used in series with any electrical appliance? Why should a fuse with defined rating not be replaced by one with a larger rating?",
+      "model_answer": "Fuse wire is safety device to prevent electrical devices due to short circuiting or overloading. The fuse wire is rated for a maximum current which has high resistance and low melting point. When there is short circuiting large current is passed in the circuit. Due to large current in fuse wire heat is produced and by melting fuse wire breaks the circuit to keep other appliances safe. If a fuse wire is replaced by an ordinary copper wire which has low resistance and high melting point it will not melt and domestic appliance may get damaged due to excessive heat due to short circuiting or overloading.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_88b20b1f94",
+      "source_paper": "science_objective_pyq",
+      "question": "A magnetic compass shows a deflection when placed near a current carrying wire. How will the deflection of the compass get affected if the current in the wire is increased? Support your answer with a reason.",
+      "model_answer": "If current is increased magnetic field around this",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_0d51d9b7ef",
+      "source_paper": "science_objective_pyq",
+      "question": "No two magnetic field lines can intersect each other. Explain.",
+      "model_answer": "If two magnetic field lines intersect each other then at the point of intersection there will be two different tangents pointing two different directions of magnetic field at a point which is not possible.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_af3b8d69ff",
+      "source_paper": "science_objective_pyq",
+      "question": "What is meant by the term magnetic field lines? List any two properties of magnetic field lines.",
+      "model_answer": "The imaginary path traced by N-pole of a magnet in a magnetic field is called magnetic field lines. Properties: a. Two magnetic field lines never intersect each other. b. Magnetic field lines are crowded near the poles and near the mid part of magnets the density of magnetic lines of force decreases.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_00af4c490f",
+      "source_paper": "science_objective_pyq",
+      "question": "Why does a current carrying Conductor experiences a force when it is placed in a magnetic field? State Fleming’s left hand rule.",
+      "model_answer": "When a current carrying conductor is placed in a magnetic field it experiences a force due to interaction between the two magnetic fields due to current carrying , conductor and given magnetic field of a magnet. If we hold our thumb, forefinger, and middle finger perpendicular to each other in such a way that forefinger points the direction of magnetic field, middle finger points the direction of charge q (direction of current in conductor), then thumb will point the direction force acting upon the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_6f5f8aa55a",
+      "source_paper": "science_objective_pyq",
+      "question": "A student performs an experiment to study the magnetic effect of current around a current carrying straight conductor with the help of a magnetic compass. He reports that: a. the degree of deflection of the magnetic compass increases when the compass is moved away from the conductor. b. the degree of deflection of the magnetic compass increases when the current through the conductor is increased. Which of the above observations of the student appears to be wrong and why?",
+      "model_answer": "The first statement is wrong because the strength of magnetic field decreases when we move away from a current carrying conductor. So deflection in the compass, instead of increasing must decrease.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_f999bae692",
+      "source_paper": "science_objective_pyq",
+      "question": "An electron enters a uniform magnetic field at right angles to it as shown in the figure below. In which direction will this electron move? State the rule applied by you in finding the direction of motion of the electron.",
+      "model_answer": "As per Fleming’s left hand rule the electron will experience a force upward. So it will move perpendicularly outward. Fleming’s left hand rule -stretch the forefinger, the middle finger and the thumb of the left hand mutually perpendicular to each other in such a way that forefinger points the direction of magnetic field, middle finger points the direction of current (opposite to the flow of electrons) then the thumb will point the direction of force on the conductor (charge).",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_ddbb439319",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) What is the direction of magnetic field lines inside a bar magnet and outside of it? (b) What does the degree of closeness of the field lines represent?",
+      "model_answer": "The direction of magnet lines of force inside a bar magnet is from S-pole to N-pole. Outside the bar magnet these emerge out from N-pole and go to the",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_8552341998",
+      "source_paper": "science_objective_pyq",
+      "question": "Draw magnetic field lines produced around a current carrying straight conductor passing through cardboard. How will the strength of the magnetic field change, when the point where magnetic field is to be determined, is moved away from the straight wire carrying constant current? Justify your answer.",
+      "model_answer": "The strength of the magnetic field decreases when the point where magnetic field is to be determined is moved away from the wire.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_f04969c5eb",
+      "source_paper": "science_objective_pyq",
+      "question": "Magnetic field lines are shown in the given diagram. A student makes a statement that magnetic field at X is stronger than at Y. Justify this statement. Also, redraw the diagram and mark the direction of magnetic field lines.",
+      "model_answer": "More the density of electric field lines more the strength of magnetic field.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_9a2190eb8b",
+      "source_paper": "science_objective_pyq",
+      "question": "How does the strength of the magnetic field at the centre of a circular coil of a wire depend on: a. radius of the coil b. number of turns in the coil.",
+      "model_answer": "Magnetic field strength at the centre of a circular coil of a wire carrying current a. r 1 \\ , i.e. magnetic field decreases with increase in radius. b. n \\ , i.e. magnetic field increases with increase in number of turns.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_3ebe9f9268",
+      "source_paper": "science_objective_pyq",
+      "question": "Name and state the rule to determine the direction of a force experienced by a current carrying straight conductor placed in a magnetic field which is perpendicular to it. Name a device that uses current carrying conductor and magnetic field.",
+      "model_answer": "Fleming’s left hand rule gives the direction of force experienced by a current carrying straight conductor placed in a magnetic field which is perpendicular to it. According to Fleming’s left hand rule if we stretch our left hand thumb, forefinger and middle finger in such a way that forefinger points the direction of magnetic field, middle finger points the direction of current then thumb will give the direction of force on the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_bfa8461b7d",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) State Fleming’s left hand rule. (b) Write the principle of working of an electric motor. (c) Explain the function of the following parts of an electric motor. (i) Armature, (ii) Brushes, (iii) Split ring",
+      "model_answer": "(a) Fleming’s left hand rule: If we stretch thumb, forefinger and middle finger of left hand perpendicular to each other in such a way that forefinger points in the direction of magnetic field, middle finger points in the direction of current then the thumb will point in the direction of motion/force on the current carrying conductor. (b) Principle of working of electric motor: A current",
+      "marks": 3
+    },
+    {
+      "id": "pyq_phy_u04_sa_4f265b7161",
+      "source_paper": "science_objective_pyq",
+      "question": "For the circular coil carrying current shown alongside, draw magnetic field lines. Decide which of its face behaves as North Pole and which face as South Pole. Give reason to justify your answer.",
+      "model_answer": "From the front face magnetic field emerges out of the coil and enters out from the back face so front face will behave as north pole and back face as south pole.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_c33fef86d0",
+      "source_paper": "science_objective_pyq",
+      "question": "A uniform magnetic field is directed vertically upwards. In which direction in this field should an a-particle (which are positively charged particles) be projected so that it is deflected south ward? Name and state the rule you have used to find the direction in this case.",
+      "model_answer": "Forefinger - direction of magnetic field (upwards). Thumb - direction of force (southwards) Middle finger gives direction of current or direction of positively charged particle (East) i.e. from west to east a particles must be projected.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_1ec28777c6",
+      "source_paper": "science_objective_pyq",
+      "question": "Define magnetic field. Describe an activity to draw magnetic field lines around a bar magnet from one pole to another pole.",
+      "model_answer": "Magnetic field is the space around a magnet or a current carrying conductor in which its magnetic force can be experience. Fix a plane white drawing sheet on a drawing board. Now take a bar magnet and a compass. Place the magnet at the middle of the paper and mark its boundary with the help of a pencil. Now place the compass near its N pole of the magnet and marks the positions of needle of the compass. Now move the compass on the drawing board. Coinciding south pole of the compass with the previous marked point of N pole of the needle and so on, move forward from one end (N pole) to the another end (S pole) of the bar magnet. Join all the marked points. You will get magnetic lines of force.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_3817a8d0ea",
+      "source_paper": "science_objective_pyq",
+      "question": "Find the minimum rating of fuse that can be safely used on a line on which two 1.1 kW, electric geysers are to run simultaneously. The supply voltage is 220 V.",
+      "model_answer": "V = V nP = I Total Power kW 220 2 1 1 # = . V V W 220 2 1 1 1000 # # = A 10 = . So a fuse wire of rating must be greater than 10 A.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_c3087befa3",
+      "source_paper": "science_objective_pyq",
+      "question": "Can a freely suspended current carrying solenoid stay in any direction? Justify your answer. What will happen when the direction of current in the solenoid is reversed? Explain.",
+      "model_answer": "No, current carrying solenoid behaves like a bar magnet and will stay only geographical N and S direction. If the direction of current is reversed then the polarity of the magnet will change and hence will rotate through an angle of 180°.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_fff04fbdf3",
+      "source_paper": "science_objective_pyq",
+      "question": "What is meant by electromagnetic induction? State the rule which helps in determining direction of induced current.",
+      "model_answer": "Electromagnetic induction is the phenomenon of production of emf (potential difference) or current in a coil due to change in magnetic field around it. Fleming right hand rule: If we stretch our right hand thumb, forefinger and middle finger perpendicular to each other in such a way that forefinger points the direction of magnetic field, and thumb points the direction of force acting on the conductor (motion of the conductor), then the middle finger points the direction of induced current in the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_aba09a4fbb",
+      "source_paper": "science_objective_pyq",
+      "question": "Horizontal component of earth’s magnetic field at a place is uniform and its direction is south to north. A high current through a horizontal power line flows at this place from west to east. Consider two points A and B at equal distances from the wire, respectively above and below it. Giving reason explain where is the field more at A or at B.",
+      "model_answer": "The direction of magnetic field due to current at A is from north to south and at B from south to north. Therefore, at A earth’s magnetic field and field due to current are in opposite direction and at B earth’s magnetic field and magnetic field due to current are in same direction.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_a4f11b87b6",
+      "source_paper": "science_objective_pyq",
+      "question": "A coil of insulated wire is connected to a galvanometer. Explain what happens if a bar magnet with its north pole towards one face of the coil is: a. moved quickly towards the coil, b. kept stationary inside the coil, and c. moved quick away from the coil?",
+      "model_answer": "When a bar magnet is moved towards the coil there is change in magnetic field in a. coil so a current is induced in the coil so galvanometer gives a deflection. b. when magnet is kept stationary in the coil then due to no change in the magnetic field no current is induced in the coil. c. when magnet is moved quickly away from the coil again there is change in magnetic field associated with the coil so again a current is induced but in the opposite direction.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_68c1dc33c4",
+      "source_paper": "science_objective_pyq",
+      "question": "How will the magnetic field produced in a current carrying circular coil changes, if we increase the: a. value of current flowing through it? b. distance of point P from the coil? c. number of turns of the coil?",
+      "model_answer": "a. Magnetic field is directly proportional to current so magnetic field increases when current increases. b. If we increase the distance of point P, magnetic field decreases. c. On increasing the number of turns magnetic field increasing.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_506d5e2f5d",
+      "source_paper": "science_objective_pyq",
+      "question": "What happens to the deflection of the compass needle placed at a point near current carrying straight conductor: a. if the current is increased? b. if the direction of current in the conductor is changed (reversed)? c. if compass is moved away from the conductor?",
+      "model_answer": "a. If the current increases deflection of compass increases. b. If the direction of current is reversed the deflection in the compass needle is also reversed. c. Deflection of the compass needle decreases when compass is moved away from the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_ff29bdae06",
+      "source_paper": "science_objective_pyq",
+      "question": "Name any three factors on which the magnitude of the magnetic field due to solenoid depends.",
+      "model_answer": "Factors on which the magnitude of the magnetic field due to solenoids a. number of turns in the solenoid b. area of cross section of the coil c. strength of current in solenoid",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_2f06f1be72",
+      "source_paper": "science_objective_pyq",
+      "question": "State the condition for electromagnetic induction to take place. A cylindrical bar magnet is kept along the axis of a circular coil as shown in the figure. Will there be a current induced in the coil if the magnet is rotated about its axis? Discuss.",
+      "model_answer": "Electromagnetic induction",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_121efad636",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Describe an activity to draw a magnetic field line outside a bar magnet from one pole to another. (b) List any two properties of magnetic field lines.",
+      "model_answer": "(a) Fix a plane white drawing sheet on a drawing board. Now take a bar magnet and a compass. Place the magnet at the middle of the paper and mark its boundary with the help of pencil. Now place compass near N-pole of bar magnet and the position of needle of the compass. Now move the compass on the drawing board coinciding S-pole of the compass with the previous marked point of N of the needle and so on move forward from one end (N-pole) to the S-pole of the bar magnet. Join all the marked points. You will get magnetic lines of force. (b) Properties of magnetic field lines. (i) Magnetic field lines do not intersect each other. (ii) Magnetic field lines emerge out at N-pole and goes to the S-pole whereas in magnet these travel from S-pole to N-pole.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_4bc5c18fe7",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Electric fuse is an important component of all domestic circuits. Why? (b) An electric oven of rating 2 kW, 220 V is operated in a domestic circuit with a current rating of 5 A. What result would you expect? Explain.",
+      "model_answer": "Electric fuse is a safety device which has high resistance and low melting point and prevents electric appliances during short circuiting and overloading. By melting itself, a fuse break the circuit.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_ab7b4f6728",
+      "source_paper": "science_objective_pyq",
+      "question": "Name two safety measures commonly used in electric circuits and appliances, what precautions should be taken to avoid the over loading of domestic electric circuits?",
+      "model_answer": "Proper earthing and using a fuse load in the electric circuit must be as per rating of the fuse and do not connect to many plugs in a single socket.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_24a1363761",
+      "source_paper": "science_objective_pyq",
+      "question": "Why does a current carrying conductor kept in a magnetic field experience force? On what factors does the direction of this force depend? Name and state the rule used for determination of direction of this force.",
+      "model_answer": "Around a current carrying conductor a magnetic field is produced. When it is placed in a magnetic field then both fields interact each other, and current carrying conductor experience a force. Fleming’s left hand rule: If we stretch right hand thumb, forefinger and middle finger perpendicular to each other in such a way that forefinger points the direction of magnetic field, middle finger points the direction of current, then thumb will point the direction of force on the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_4a7268f646",
+      "source_paper": "science_objective_pyq",
+      "question": "What does the direction of thumb indicate in the right hand thumb rule? In what way this rule is different from Fleming’s left hand rule?",
+      "model_answer": "Thumb indicate the direction of current in a straight conductor held in right hand. Fleming’s left hand rule gives the direction of force on a current carrying conductor placed in magnetic field. Fleming’s left hand rule : If we stretch right hand thumb, forefinger and middle finger perpendicular to each other in such a way that forefinger points the direction of magnetic field, middle finger points the direction of current, then thumb will point the direction of force on the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_e8723a4c5f",
+      "source_paper": "science_objective_pyq",
+      "question": "Under what condition does a current carrying conductor kept in a magnetic field experience maximum force? On what other factors does the magnitude of this force depend? Name and state the rule used for determination of direction of this force.",
+      "model_answer": "Force on a current carrying conductor in a magnetic field depends upon a. length of the conductor b. strength of the magnetic field c. strength of the current",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_bd7f05e4a7",
+      "source_paper": "science_objective_pyq",
+      "question": "A coil made of insulated copper wire is connected to a galvanometer. What will happen to the deflection of the galvanometer if this coil is moved towards a stationary bar magnet and then moved away from it? Give reason for your answer and name the phenomenon involved.",
+      "model_answer": "In both the case there is a change in magnetic field associated with the coil, an induced current is produced in the coil, but in opposite direction. This phenomenon is called electromagnetic induction (EMI).",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_2cbdba23e3",
+      "source_paper": "science_objective_pyq",
+      "question": "What is meant by overloading of an electrical circuit? Explain two possible causes due to which overloading may occur in household circuit. Explain one precaution that should be taken to avoid the overloading of domestic electric circuit.",
+      "model_answer": "Connecting large number of electric appliances in one socket whose load is more than the maximum permitted limit. The two possible cause are a. all of a sudden supply of high voltage and b. too many devices connected in a single socket. Precautions: a. use of voltage regulator, b. load of a socket must be greater than its permitted rating.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_32f3697c1e",
+      "source_paper": "science_objective_pyq",
+      "question": "Write one difference between direct current and alternating current. Which one of the two is mostly produced at power stations in our country? Name one device which provides alternating current. State one important advantage of using alternating current.",
+      "model_answer": "Direct current has constant magnitude and unidirectional current. Alternating current changes its magnitude and direction alternatively. a. Alternating current is produced in power stations in India. help of a transformers.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_efdaf6f14c",
+      "source_paper": "science_objective_pyq",
+      "question": "State one main difference between ac and dc. Why ac is preferred over dc for long range transmission of electric power? Name one source each of dc and ac.",
+      "model_answer": "The magnitude and direction of ac remains same whereas a.c. changes its magnitude and direction periodically. Low AC voltage can be increase to high voltage to prevent loss in electric energy during its long distance transmission. AC generator and DC generator/or cell.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_0252034f41",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Mention the colour code used for live, neutral and earth wire. (b) You want to connect a 2 kW electric oven in the electric circuit. In which power line would you connect it and why? What may happen if you connect it wrongly in the other power line?",
+      "model_answer": "(a) Live wire – Red Neutral wire – Black Earth wire – Green (b) 2 kW electric iron draws large current. If it is connected to a socket of 5Athen fuse will be blown. So it is connected in power socket of 15 A.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_97c022448c",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Describe an activity to show the pattern of magnetic field fines of a bar magnet, with the help of a cardboard piece and iron filings. (b) Compare the field of a bar magnet with that of a solenoid with the help of figure.",
+      "model_answer": "(a) Fix a white paper sheet on a drawing board with the help of copper pins. Keep a bar magnet in the centre of the paper and sprinkle some iron filings uniformly around the bar magnet. Tap the board gently. Iron filings arrange themselves in a pattern as shown in figure. These iron filings near the bar magnet align themselves along the magnetic field lines. (b) A current carrying solenoid behaves as a bar magnet one end of the solenoid behaves like a N pole and another end as S pole like two poles in bar magnet, so the field lines of a solenoid and bar magnet appear same in many ways: (i) Magnetic lines of force inside the body is strong and uniform. (ii) In both the cases stronger field exists at the poles compared to the middle part. Dissimilarities (i) In bar magnet, the poles are not exactly at the ends of the magnet, in solenoid poles can be considered to be lying at the edges. in solenoid it exists only till there is a current in solenoid.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_5a5ea23e31",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Describe an activity to determine the direction of magnetic field produced by a current carrying straight conductor. Also show that the direction of the magnetic field is reversed on reversing the direction of current. (b) An a -particle, (which is a positively charged particle) benters, a uniform magnetic field at right angles to it as shown below. Stating the relevant principle explain in which direction will this a-particle moves?",
+      "model_answer": "(a) Fix a cardboard and pass a straight wire through a hole in cardboard and connect the two ends of the wire with a cell through a rheostat and key with a cell. Sprinkle iron filings uniformly on the card board. Pass the current in the wire and gently tap the card board. You would find that iron filings align themselves in concentric circles around the copper wire which represents the magnetic field around the current carrying conductor. The direction of magnetic field changes on reversing the direction of current. (b) According to Fleming’s left hand rule the force on the oc-particle will be inwards perpendicular to the plane of paper, so \\-particle will move in the direction of force.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_3868047aa2",
+      "source_paper": "science_objective_pyq",
+      "question": "Explain the meanings of the words “electromagnetic” and “induction” in the term electromagnetic induction. List three factors on which the value of induced current produced in a circuit depends. Name and state the rule used to determine the direction of induced current. State one practical application of this phenomenon in everyday life.",
+      "model_answer": "The word electromagnetic means that an electric potential dipole is being produced in a coil due to change in magnetic field. The word induction means that the current has been induced. The value of induced current produced in a circuit depends on the following factors: a. number of turns in given coil b. area of each turn in coil c. rate of change of magnetic field. The rule is Fleming’s right hand rule. Stretch the thumb, forefinger and middle finger of right- hand perpendicular to each other that forefinger indicates the direction of magnetic field, thumb gives the direction of motion (or force) of the conductor, then middle finger will point the direction of induced current. Application: AC generator or DC generator.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_c76d2f32bd",
+      "source_paper": "science_objective_pyq",
+      "question": "What is a solenoid? Sketch magnetic field lines produced around a current carrying solenoid. Mark the region where field is uniform. Compare its field with that of a bar magnet.",
+      "model_answer": "A solenoid is a large number of insulated turns of the copper wire in the shape of helix (or cylinder). The patterns of the magnetic field lines around a current carrying solenoid is as given in figure. At the centre of the solenoid the magnetic field is uniform and magnetic field lines are parallel. Similarities: In both the cases of a current carrying solenoid and bar magnet the magnetic lines of forces inside the body is strong and uniform. In both the cases there exists stronger magnetic field at the poles compared to the middle parts. Dissimilarities: (i) The poles in a bar magnet do not exist at the extreme ends of the magnet whereas in solenoid the poles can be considered to be lying at the edge. (ii) In a bar magnet, magnetism is retained naturally, but in solenoid magnetism is there so long current flows through it.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_43c009af2c",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) State the function of ‘a fuse’ in an electric circuit. How is it connected in the domestic circuit? (b) An electric fuse of rating 3A is connected in a circuit in which an electric iron of power 1.5 kilo watt is connected which operates at 220 V. What would happen? Explain.",
+      "model_answer": "(a) Fuse is a safety device to prevent the damage of electrical devices from short circuit or overloading. A fuse is connected in series with the circuit. (b) Given Power . P 1 5 = kW 1500 = Watt and V 220 = Volts. 220 1500 & = = = = A The rating of fuse is 3A which is lesser the current drawn by electric iron 6.8 A. So fuse wire will be blown. P Power . P VI I 6 8 V",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_1113202e2c",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Explain any three properties of magnetic field lines. (b) Give two uses of magnetic compass.",
+      "model_answer": "(a) Properties of magnetic field lines:",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_90fdbb5d23",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) An electric current is passed in a horizontal copper wire from east to west. Explain your observations when a compass needle is placed (i) below this wire, (ii) above the wire. Draw inference from your observations. (b) List the factors on which the strength of the magnetic field due to a straight conductor carrying current depend. How should these be changed to decrease magnetic field at a point?",
+      "model_answer": "(a) The direction of deflection of a magnetic compass needle depends upon the direction of the magnetic field at that point. The direction of the magnetic field due to a current carrying wire is given by the right hand screw rule. The direction of magnetic field below and above the wire is opposite so deflection in compass needle changes as well i.e, the deflection is reverse direction. (b) The factors affecting strength of the magnetic field due to a straight wire carrying current:",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_176a5a0e4c",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Name two electrical appliances of daily use in which electric motor is used. (b) Name and state the principle on which an electric motor works.",
+      "model_answer": "(a) Drill machine, fan, grinder (b) An electric motor works on the Fleming’s left hand rule. When a current carrying coil is placed in a magnetic field it experience a torque due to which it rotates. Fleming’s left hand rule-stretch left hand, thumb, forefinger and middle finger perpendicular to each other in such a way that forefinger indicates the direction of magnetic field, middle finger indicates the direction of current in the conductor then thumb will point the direction of force on the conductor,",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_02d16d7ea1",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) What is an electromagnet? What does it consist of? (b) Name one material in each case which is used to make a : (i) permanent magnet (ii) temporary magnet. (c) Describe an activity to show how you can make an electromagnet in your school laboratory.",
+      "model_answer": "a. A soft metal core made into a magnet by the passage of electric current through a coil surrounding it. It consists a soft iron core or its alloy and a solenoid conductor coil around the core. b. (i) To make a permanent magnet alloy Alnico is used. (ii) Soft iron is used to make temporary magnet. c. Take a long nail and put it into a solenoid of insulated copper wire. Pass the strong current in the solenoid the nail inside the solenoid becomes magnetised. This is called electromagnet.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_9a1d960aaf",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Draw a schematic labelled diagram of a domestic wiring circuit which includes (i) a main fuse (ii) a power meter (iii) one light point and (iv) a power plug. (b) Why is it necessary to connect an earth wire to electric appliances having metallic covers?",
+      "model_answer": "a. b. The earth wire carry current due to any leakage or defective electric appliance to the earth keeping",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_fb92fe2714",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) What is meant by a ‘magnetic field’? (b) How is the direction of magnetic field at a point determined? (c) Describe an activity to demonstrate the direction of the magnetic field generated around a current carrying conductor. (d) What is the direction of magnetic field at the centre of a current carrying circular loop?",
+      "model_answer": "a. Magnetic field is the space around a magnet or a current carrying conductor in which its magnetic force can be experienced. b. A magnetic compass is used to demonstrate the direction of the magnetic field generated around a current carrying conductor. c. Fix a cardboard and insert a wire to pass through its centre normal to the plane of the card board. Sprinkle iron filings on card board uniformly. Pass the current in the wire. Tap the cardboard gently. You will find that iron filings align themselves in the concentric circles around the wire. These circles represents magnetic field lines around the conductor. d. At the centre of circular loop, the magnetic field lines are straight.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_211cbeab90",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) What is the function of an earth wire in electrical instruments? Why is it necessary to earth the metallic electric appliances? (b) Explain what is short-circuiting and overloading in an electric supply. (c) What is the usual capacity of the fuse wire in the line to feed: (i) lights and fans? (ii) appliances of 2 kW or more power?",
+      "model_answer": "(a) We can get an electric shock on touching a faulty appliance, caused by the leakage of current from the appliance. Earthing provides a safety measure against the electric shock caused by the leakage of current. Earth wire brings this leakage current to the ground by a earth wire and we remains safe. (b) Short circuiting takes place when a live wire and neutral wire come in contact with each other due to damage of insulation of these wires. Due to short circuiting, resistance of the circuit becomes minimum and a very high current is passed through the circuit which produces spark and heat and may lead a fire in the house. Overloading when the amount of current flowing through the circuit exceeds the rating of the protective devices it is said that circuit is overloaded. It is a situation in which many electrical appliances are connected in a single socket. It will draw more current, may lead the burst of fire in building. (c) (i) Bulbs, fans etc. – 5A, (ii) Heater – Micro-oven, Electric iron – 15A",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_cce419a8fa",
+      "source_paper": "science_objective_pyq",
+      "question": "Describe in short an activity to: a. demonstrate the pattern of magnetic field lines around a straight current carrying conductor, and b. find the direction of magnetic field produced for a given direction of current in the conductor. Name and state the rule to find the direction of magnetic field associated with a current carrying conductor. Apply this rule to determine the direction of the magnetic field inside and outside a current carrying circular loop lying horizontally on a table. Assume that the current through the loop is anticlockwise.",
+      "model_answer": "(a) Fix a cardboard and pass through its centre a thick copper wire AB connected with a cell of 12 V through a rheostat, an ammeter and plug key as shown in figure. Sprinkle the iron filings uniformly on the cardboard. Plug in the key, tap the cardboard gently a number of times. Iron filings align themselves in a pattern of concentric circles around the copper wire, which represents the magnetic field lines.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_be6f5a9356",
+      "source_paper": "science_objective_pyq",
+      "question": "In our daily life we use two types of electric current whose current-time graphs are given below: (a) (b) a. Name the type of current in two cases. b. Identify any one source for each type of current. c. What is the frequency of current in case (b) in our country? d. On the basis of these graphs list two differences between the two currents. e. Out of the two which one is used in transmitting electric power over long distances and why?",
+      "model_answer": "a. (i) DC (ii) AC b. (i) cell, (b) AC generator c. 50 c/s or 50 Hz. d. (i) Magnitude of DC is constant magnitude of AC is varying (ii) DC is unidirectional ac changes its direction after a fixed period. e. AC can be transmitted by changing it at high voltage with the help of transformer to minimise loss in transmission.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_e71ba783eb",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Describe an experiment with a diagram to show that force is exerted on a current carrying conductor when placed perpendicular in a magnetic field. (b) How will this force change if current in the conductor is increased? (c) Name a device that uses the above principle.",
+      "model_answer": "a. Take a small metal rod AB and suspend it from a stand with the help of two connected wire. Put the rod in between the horse shoe magnet in such a way that rod remains in between the two poles. Pass the current in the rod through the two wires. You would find that the rod is deflected towards the left. Now reverse the direction of current the rod is deflected in opposite direction. This shows that a force is experienced by a current carrying conductor in magnetic field. b. If the current in the conductor is increased then more force will act on the rod, and get more",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_921907b6e3",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Which effect of the electric current is utilised in the working of an electrical fuse? (b) A fuse is connected in series or in parallel in household circuit? (c) Draw a schematic labelled diagram of a domestic circuit which has a provision of a main fuse, meter, one light bulb and a switch socket.",
+      "model_answer": "a. Heating effect of current b. In series in the household circuit c.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_19d4bacdfd",
+      "source_paper": "science_objective_pyq",
+      "question": "Answer the following questions: a. What is the direction of magnetic field lines outside a bar-magnet? b. Why two magnetic field lines cannot intersect each other? c. What is indicated by crowding of magnetic field lines in a given region? d. What is the frequency of ac in India? e. State one advantage of ac over dc.",
+      "model_answer": "a. From N pole to S pole b. If two magnetic field lines would intersect each other then at the point of intersection there would be two different directions of magnetic field which is not possible. c. Magnetic field strength is more in that region. d. 50 cycles per sec (c/s) or Hz. e. AC can be step up for transmission over a longer distances with less power loss.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_3fbc1c0b71",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) A coil of insulated copper wire is connected to a galvanometer. What will happen if a bar magnet is: (i) pushed into the coil with its north pole entering first? (ii) withdrawn from inside the coil? (iii) held stationary inside the coil? (b) Name the above phenomenon and mention the name of the scientist who discovered it. State the law that relates the direction of current in the coil with the direction of motion of the magnet.",
+      "model_answer": "a. (i) Galvanometer gives a deflection (ii) Again galvanometer gives a deflection but in opposite direction. (iii) No current is induced in the coil so no deflection in the galvanometer. b. Electromagnetic induction (EMI): Faraday discovered it. Fleming’s right hand rule gives the direction of induced current in the coil. If we stretch right hand thumb, forefinger and middle finger perpendicular to each other in such a way that thumb gives the direction of motion of the conductor, forefinger gives the direction of magnetic field then middle finger will give the direction of current induced in the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_3fed5a22ac",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) When do we state that an electrical appliance is earthed? Mention the function of earth wire in electric lines. Why is it necessary to earth the electric appliances having metallic body? (b) Explain what is short circuiting and overloading in an electric supply.",
+      "model_answer": "(a) When metal body of an electric appliance is connected to a wire which is connected to a metal plate buried deep inside the earth is said to be electrically earthed. (b) If due to damaged insulation, live wire and neutral wire come in contact with each other then it is said to be short circuiting overloading. A circuit over load occurs when the amount of current flowing through the circuit exceeds the rating of the protective device. Every electric circuit in a wiring system must be protected against overloading. It happens when too many electric appliances are connected into a single socket.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_fb7bad541d",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Define electromagnetic induction. (b) Two coils P and S are wound over the same iron core. Coil P is connected to battery and key the coil S is connected to galvanometer. Draw a suitable diagram of this arrangement and write your observations when: (i) current in the coil P is started by closing the key. (ii) current continues to flow in coil P. (iii) current in coil P is stopped by removing the key. Explain the reason for such observations.",
+      "model_answer": "a. The phenomenon by producing a current in a coil by changing magnetic field associated with it or by changing a current in the neighbouring coil is called electromagnetic induction. Current so produced is called induced current.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_a666bbe10a",
+      "source_paper": "science_objective_pyq",
+      "question": "Two coils C1 and C2 are wrapped around a non- conducting cylinder. Coil C1 is connected to a battery and key and C2 with galvanometer G. On pressing the key (K), current starts flowing in the coil C1 State your observation in the galvanometer. a. What key K is pressed on. b. When current in the coil C1 is switched off. c. When the current is passed continuously through coil C1. d. Name and state the phenomenon responsible for the above observation. Write the name of the rule that is used to determine the direction of current produced in the phenomena.",
+      "model_answer": "a. Induced current in coil C2 is produced so galvanometer shows a deflection. b. Again galvanometer shows a deflection but in opposite direction to the previous one. c. There will be no deflection in galvanometer. d. This phenomenon is called electromagnetic induction. The phenomenon in which a changing magnetic field in a coil induces a current in another coil kept near it. Fleming’s right hand rule is used to find the direction of induced current.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_35e29cfde6",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) The given figure shows a domestic electric circuit. Study this circuit carefully. List any two errors in (b) Give one difference between the wires used in the element of an electric heater and in a fuse. (c) List two advantages of parallel connection over series connection.",
+      "model_answer": "(a) Errors in the circuit (i) Fuse wire is connected in neutral wire (N) where as it must be connected in live wire (L). (ii) Circuit of bulb B2 is incomplete. (b) Element of electric heater has high resistance and high melting point whereas a fuse wire has high resistance and low melting point. (c) Advantages of parallel connection over series connection. (i) In parallel combination if one appliance fails to work others keep working. (ii) Potential difference across each appliance remains same.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_e56c217026",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Write the values of the following physical quantities in connection with domestic power supply in our country: (i) potential difference between live wire and neutral wire. (ii) frequency of ac. (b) Explain the role of the following as safety measure in domestic electric appliance/circuits: (i) earth wire (ii) fuse.",
+      "model_answer": "(a) (i) 220 V, (ii) 50 Hz (b) Safety measure in electric appliance/circuits: (i) Earth wire is a safety device to protect us from electric shock due to leakage of current or faulty electric appliances. An earth wire is a thick copper wire connected to a metal plate buried deep in the earth. The metallic body of the electric appliance is connected to the earth wire, it provides a low resistance conducting path and leaked current goes to deep in the earth and human beings do not get a fatal electric shock. (ii) Fuse: It is also a safety device. It is a wire of an alloy with low melting point. If a current greater than a particular values flows in the circuit it will melt and circuit is broken and stops power supply in the circuit.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u04_sa_6a21bf59c8",
+      "source_paper": "science_objective_pyq",
+      "question": "What is a solenoid? Draw the magnetic line of forces for solenoid and a bar magnet. Compare the two and state one similarity.",
+      "model_answer": "A solenoid is a large number of turns of insulated copper wires having shape of a cylinder or helix. Magnetic field are given in following figures.",
+      "marks": 1
+    }
+  ]
+}

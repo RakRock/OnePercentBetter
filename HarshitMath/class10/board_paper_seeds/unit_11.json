@@ -8,10 +8,9 @@
       "CBSE 30/1/2",
       "CBSE SQP 2025-26",
       "NCERT Ch 11",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -56,7 +55,7 @@
     },
     {
       "id": "pyq_u11_mcq_04f4ff3256",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "The length of the arc of the sector of a circle with radius 21 cm and of central angle 60°, is :",
       "options": [
         "22 cm",
@@ -69,7 +68,7 @@
     },
     {
       "id": "pyq_u11_mcq_ddef1b0b77",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "The perimeter of the shaded region in the given figure is :",
       "options": [
         "l",
@@ -82,7 +81,7 @@
     },
     {
       "id": "pyq_u11_mcq_c9aec435da",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "The ratio of the area of a quadrant of a circle to the area of the same circle is :",
       "options": [
         "1 : 2",
@@ -95,7 +94,7 @@
     },
     {
       "id": "pyq_u11_mcq_7666d2d78a",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "A piece of wire 20 cm long is bent into the form of an arc of a circle of is :",
       "options": [
         "300",
@@ -165,6 +164,83 @@
         "Subtract semicircle areas",
         "Final answer"
       ]
+    },
+    {
+      "id": "pyq_u11_w_8027875ef6",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "In figure, ABCD is a square of side 14 cm. Semi-circles are drawn with each side of square as diameter. Find the area of the shaded region.",
+      "model_answer": "Area of the square ABCD = 14 x 14 = 196 cm² Area of semicircle AOB=1/2 x πr² =1/2×22/7x7x7 Similarly, area of semicircle DOC = 77 cm² Hence, the area of shaded region (Part W and Part Y) = Area of square -Area of two semicircles AOB and COD = 196 – 154 = 42 cm² Therefore, area of four shaded parts (i.e. X, Y, W, Z) = (2 x 42) cm² = 84 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u11_w_ee52dfc136",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "In figure, are shown two arcs PAQ and PBQ. Arc PAQ is a part of circle with centre O and radius OP while arc PBQ is a semicircle drawn on PQ as diameter with centre M. If OP = PQ = 10 cm, show that area of shaded region is 25(√3- π /6)cm²",
+      "model_answer": "OP = OQ = 10 cm PQ = 10 cm So, ΔOPQ is an equilateral triangle ∠POQ = 60° Area of segment PAQM = Area of sector OPAQ – Area of ΔOPQ =60/360 x π x 10 x 10-√3/4 x 10 x 10 =(100π/6-100√3/4)cm² Area of semicircle =1/2 x π x 5 x 5 = 25/2π cm² Area of the shaded region =25/2π-(100π/6-100√3/4)=25π/2-50π/3+25√3 =75π-100π/6+25√3=25√3-25π/6 =25(√3-π/6)cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u11_w_674ec988bb",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "In figure, O is the centre of a circle such that diameter AB = 13 cm and AC = 12 cm. BC is joined. Find the area of the shaded region.",
+      "model_answer": "Here, BC² = AB²-AC² = 169-144 = 25 BC = 5 Area of shaded region = Area of semicircle – Area of right triangle ABC =1/2 x πr²-1/2AC x BC =1/2 x 3.14(13/2)²-1/2 x 12 x 5 =66.33 – 30 = 36.33 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u11_w_3d7cd0f323",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Find the area of shaded region in figure, where a circle of radius 6 cm has been drawn with vertex O of an equilateral triangle OAB of side 12 cm",
+      "model_answer": "Area of ΔOAB=√3/4(side)²=√3/4 x (12)² =36√3=36 x 1.73 =62.28 cm² area of circle with center O =πr²=3.14 x (6)² =3.14 x 36 =113.04 cm² area of sector(OLQP)=πr² x θ/360°=3.14 x 6² x 60°/360° =3.14 x 36 x 1/6 =18.84 cm² area of shaded region=area of ΔOAB+area of circle-2 area of sector OLQP =(62.28+113.04-2 x 18.84)cm² =137.64cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u11_w_854a7d6c11",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "In figure, is a chord AB of a circle, with centre O and radius 10 cm, that subtends a right angle at the centre of the circle. Find the area of the minor segment AQBP. Hence, find the area of major segment ALBQA",
+      "model_answer": "Area of minor segment APBQ=θ/360° x πr²-r²sin45°cos45° =3.14 x 100/4-100 x 1/√2 x 1/√2 =(78.5-50)cm²=28.5 cm² Area of major segment ALBQA =πr²-area of minor segment =3.14 x (10)²-28.5 =(314-28.5)cm²=285.5 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u11_w_43d7a145a1",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "In figure, ABCD is a square of side 7 cm. DPBA and DQBC are quadrants of circles, each of radius 7 cm. Find the area of the shaded region.",
+      "model_answer": "side of square=7cm radius of circle=7cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u11_w_c0ee57e42e",
+      "source_paper": "most_repeated_pyq",
+      "marks": 3,
+      "question": "A chord of a circle of radius 10 cm subtends a right angle at the centre. Find the area of the corresponding minor segment?",
+      "model_answer": "See figure. Area of the minor segment AB  Area of sector OAB – Area of  – OAB [ [ ] ] , - ",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
     }
   ],
   "la": [
@@ -202,6 +278,50 @@
         "Square area",
         "Four quadrants",
         "Subtract"
+      ]
+    },
+    {
+      "id": "pyq_u11_w_d3b7df28d1",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Find the area of the shaded region in figure, where APD, AQB, BRC and CSD are semicircles of diameter 14 cm, 3.5 cm, 7 cm and 3.5 cm respectively",
+      "model_answer": "Area of shaded region = Area of semicircle APD + Area of semicircle BRC – 2 x Area of semicircle AQB 2015 Short Answer Type Questions II [3 Marks",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u11_w_d6a01f7ee6",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "In figure, APB and AQO are semicircle, and AO = OB. If the perimeter of the figure is 40 cm, find the area of the shaded region.",
+      "model_answer": "Let r be the radius of the semicircle APB, i.e. OB = OA = r, then r/2 is the radius of the semicircle AQO.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u11_w_bfb16aa582",
+      "source_paper": "most_repeated_pyq",
+      "marks": 4,
+      "question": "A round table cover has six equal designs as shown in the given figure. If the radius of the cover is 28 cm, find the cost of making the designs at the rate of Rs. 0.35 per cm2?",
+      "model_answer": "Designs are equal ⇒ chords are equal and equal chords subtend equal angles at the centre.  Angles at the centre  All the angles of OAB are of 60°. (Angles opposite to the equal sides are equal.)  OAB is an equilateral triangle. Area of one design = (S ) ( ) √ =, =[ - ] Area of 6 such designs = Cost of making such designs at the rate of R . = Rs.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u11_w_e92b558072",
+      "source_paper": "most_repeated_pyq",
+      "marks": 4,
+      "question": "In the given figure, ABCD is a rectangle of length 10√2 cm and breadth 5√2 cm. If APB is an isosceles triangle inscribed in the semicircle with diameter AB, find the area of the shaded region?",
+      "model_answer": "Draw P ⊥ As P P so M is the mid – point of AB SO,  P √ Therefore,  ( P ) P √ √   l P ( √ )   So, area of the shaded region =  l , - gl",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
       ]
     }
   ]

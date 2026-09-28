@@ -8,10 +8,9 @@
       "CBSE 30/1/2",
       "CBSE SQP 2025-26",
       "NCERT Ch 14",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -55,17 +54,394 @@
       "explanation": "4 kings out of 52 ⇒ 4/52 = 1/13."
     },
     {
-      "id": "pyq_u14_mcq_a08e4dbe56",
-      "source_paper": "chapter_wise_cached",
-      "question": "In a random experiment of throwing a die, which of the following is a sure event ?",
+      "id": "pyq_u14_mcq_295e0c9e23",
+      "source_paper": "math_objective_pyq",
+      "question": "The median and mode respectively of a frequency distribution are 26 and 29, Then its mean is",
       "options": [
-        "Getting a number between 1 and 6",
-        "Getting an odd number < 7",
-        "Getting an even number < 7",
-        "Getting a natural number < 7"
+        "27.5",
+        "24.5",
+        "28.4",
+        "25.8"
+      ],
+      "answer": 1,
+      "explanation": "Option (B) is correct."
+    },
+    {
+      "id": "pyq_u14_mcq_35fa5404b5",
+      "source_paper": "math_objective_pyq",
+      "question": "The cumulative frequency table is useful in determining",
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "All of these"
       ],
       "answer": 3,
-      "explanation": ""
+      "explanation": "Cumulative frequency is defined as a running total of frequencies. It is helpful in finding the mean, median and mode."
+    },
+    {
+      "id": "pyq_u14_mcq_77d61d1510",
+      "source_paper": "math_objective_pyq",
+      "question": "In a frequency distribution, the mid value of a class is 10 and the width of the class is 6. The lower limit of the class is",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "12"
+      ],
+      "answer": 1,
+      "explanation": "Let x be the upper limit and y be the lower limit. Since the mid value of the class is 10. Since width of the class is 6, Solving (1) and (2), we get y Hence, lower limit of the class is 7."
+    },
+    {
+      "id": "pyq_u14_mcq_f873a089ef",
+      "source_paper": "math_objective_pyq",
+      "question": "Consider the following frequency distribution of the heights of 60 students of a class Height (in cm) 150- 155 155- 160 160- 165 165- 170 170- 175 175- 180 Number of students 15 13 10 8 9 5 The upper limit of the median class in the given data is",
+      "options": [
+        "165",
+        "155",
+        "160",
+        "170"
+      ],
+      "answer": 0,
+      "explanation": "We prepare the following cumulative table The cumulative frequency just greater than N and the corresponding class is 160-165. Thus upper"
+    },
+    {
+      "id": "pyq_u14_mcq_a6ead36a4c",
+      "source_paper": "math_objective_pyq",
+      "question": "If the difference of mode and median of a data is 24, then the difference of median and mean is",
+      "options": [
+        "12",
+        "24",
+        "08",
+        "36"
+      ],
+      "answer": 0,
+      "explanation": "Option (A) is correct."
+    },
+    {
+      "id": "pyq_u14_mcq_66a76b90e0",
+      "source_paper": "math_objective_pyq",
+      "question": "If the mean of the numbers x 27 + , ,x 31 + x 89 + ,x x 107 156 + + is 82, then the mean of ,x 130 + ,x 126 + ,x 68 + ,x 50 + and x 1 + is",
+      "options": [
+        "75",
+        "157",
+        "82",
+        "80"
+      ],
+      "answer": 0,
+      "explanation": "Option (A) is correct."
+    },
+    {
+      "id": "pyq_u14_mcq_2e0a1ef8d7",
+      "source_paper": "math_objective_pyq",
+      "question": "5. If each of the largest 4 observation of the set is increased by 2, then the median of the new set",
+      "options": [
+        "Is increased by 2",
+        "Is decreased by 2",
+        "Is two times the original median",
+        "Remains the same as that of the original set"
+      ],
+      "answer": 3,
+      "explanation": "Now, last four observations are increased by 2, but median is 5th observation, which is remaining unchanged. Hence there will be no change in median."
+    },
+    {
+      "id": "pyq_u14_mcq_528ce3789f",
+      "source_paper": "math_objective_pyq",
+      "question": "If the coordinates of the point of intersection of less than ogive and more than ogive is (13.5,20), then the value of median is",
+      "options": [
+        "13.5",
+        "20",
+        "33.5",
+        "7.5"
+      ],
+      "answer": 0,
+      "explanation": "The abscissa of point of intersection gives the median of the data. So, median is 13.5."
+    },
+    {
+      "id": "pyq_u14_mcq_ad868a68de",
+      "source_paper": "math_objective_pyq",
+      "question": "A set of numbers consists of three 4’s, five 5’s, six 6’s, eight 8’s and seven 10’s. The mode of this set of numbers is",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "10"
+      ],
+      "answer": 2,
+      "explanation": "Mode of the data is 8 as it is repeated maximum number of times."
+    },
+    {
+      "id": "pyq_u14_mcq_8f72a562f8",
+      "source_paper": "math_objective_pyq",
+      "question": "The mean weight of 9 students is 25 kg. If one more student is joined in the group the mean is unaltered, then the weight of the 10th student is",
+      "options": [
+        "25 kg",
+        "24 kg",
+        "26 kg",
+        "23 kg"
+      ],
+      "answer": 0,
+      "explanation": "The sum of the weights of the 9 students If one more student is joined in the group, then total number of students is 10 and mean Hence, the sum of the weights of the 10th students Hence, the weight of the 10th student is 250 However we can answer this question without any calculation. If mean is not altered on adding more data, then added data must be of mean value."
+    },
+    {
+      "id": "pyq_u14_mcq_de7e79a0b4",
+      "source_paper": "math_objective_pyq",
+      "question": "The mean and median of the data a, b and c are 50 and 35 respectively, where a b c < < . If c a 55 − = , then ( ) b a - is",
+      "options": [
+        "8",
+        "7",
+        "3",
+        "5"
+      ],
+      "answer": 3,
+      "explanation": "Since, a, b and c and are in ascending order, therefore median is b i.e b Also, it is given that Subtracting equation (2) and (1), we get"
+    },
+    {
+      "id": "pyq_u14_mcq_d4197de912",
+      "source_paper": "math_objective_pyq",
+      "question": "Observations of some data are x 5 , x , x 3 , x 3 2 , x 4 , x 5 2 and x 4 3 where x > 0. If the median of the data is 4, then the value of x is",
+      "options": [
+        "5",
+        "15",
+        "9",
+        "10"
+      ],
+      "answer": 3,
+      "explanation": "where x > 0. On arranging the above observations in ascending order, we get Given observations are x Here, total number of observations are 7, which is l observation l observation"
+    },
+    {
+      "id": "pyq_u14_mcq_a19d10511a",
+      "source_paper": "math_objective_pyq",
+      "question": "Mode of the following grouped frequency distribution is Class Frequency 3-6 2 6-9 5 9-12 10 12-15 23 15-18 21 18-21 12 21-24 03",
+      "options": [
+        "13.6",
+        "15.6",
+        "14.6",
+        "16.6"
+      ],
+      "answer": 2,
+      "explanation": "We observe that the class 12-15 has maximum frequency 23. Therefore, this is the modal class."
+    },
+    {
+      "id": "pyq_u14_mcq_236ddc5b75",
+      "source_paper": "math_objective_pyq",
+      "question": "While computing the mean of grouped data, we assume that the frequencies are",
+      "options": [
+        "evenly distributed over all the classes",
+        "centred at the class marks of the classes",
+        "centred at the upper limits of the classes",
+        "centred at the lower limits of the classes"
+      ],
+      "answer": 1,
+      "explanation": "While computing mean of ground data, we assume that the frequencies distribution table."
+    },
+    {
+      "id": "pyq_u14_mcq_1574abc31d",
+      "source_paper": "math_objective_pyq",
+      "question": "If median is 137 and mean is 137.05, then the value of mode is",
+      "options": [
+        "156.90",
+        "136.90",
+        "186.90",
+        "206.90"
+      ],
+      "answer": 1,
+      "explanation": "Option (B) is correct."
+    },
+    {
+      "id": "pyq_u14_mcq_0f4de2da50",
+      "source_paper": "math_objective_pyq",
+      "question": "The following data gives the distribution of total household expenditure (in <) of manual workers in a city. Expenditure (in <) Frequency 1000-1500 24 1500-2000 40 2000-2500 33 2500-3000 28 3000-3500 30 3500-4000 22 4000-4500 16 4500-5000 07 Then, find the average expenditure which is done by the maximum number of manual workers.",
+      "options": [
+        "1747.26",
+        "1847.26",
+        "1947.26",
+        "2047.26"
+      ],
+      "answer": 1,
+      "explanation": "We observe that the class 1500-2000 has maximum frequency 40. Therefore, this is the modal class."
+    },
+    {
+      "id": "pyq_u14_mcq_7c969b0913",
+      "source_paper": "math_objective_pyq",
+      "question": "For the following distribution Marks Number of Students Marks Number of s tudents Below 10 3 Below 40 57 Below 20 12 Below 50 75 Below 30 28 Below 60 80 The modal class is",
+      "options": [
+        "0-20",
+        "20-30",
+        "30-40",
+        "50-60"
+      ],
+      "answer": 2,
+      "explanation": "Let us first construct the following frequency distribution table. Number of Students Since, the maximum frequency is 29 and the class corresponding to this frequency is 30-40. So, the modal class is 30-40."
+    },
+    {
+      "id": "pyq_u14_mcq_98e8f2197b",
+      "source_paper": "math_objective_pyq",
+      "question": "If X , M and Z are denoting mean, median and mode of a data and : : X M 9 8 = , then the ratio : M Z is",
+      "options": [
+        "3 : 4",
+        "4 : 9",
+        "4 : 3",
+        "2 : 5"
+      ],
+      "answer": 2,
+      "explanation": "Substituting the value of X in equation (1), we get"
+    },
+    {
+      "id": "pyq_u14_mcq_b566ea9e8c",
+      "source_paper": "math_objective_pyq",
+      "question": "A student noted the number of cars passing through a spot on a road for 100 periods each of 3 min and summarised in the table give below. Number of cars Frequency 0-10 7 10-20 14 20-30 13 30-40 12 40-50 20 50-60 11 60-70 15 70-80 08 Then, the mode of the data is",
+      "options": [
+        "34.7",
+        "44.7",
+        "54.7",
+        "64.7"
+      ],
+      "answer": 1,
+      "explanation": "Here, modal class is 40-50. Since, it has maximum frequency which is 20."
+    },
+    {
+      "id": "pyq_u14_mcq_1ee4d84ba7",
+      "source_paper": "math_objective_pyq",
+      "question": "In the formula x a f f d i i = + / i grouped data di’s are deviation from a of",
+      "options": [
+        "lower limits of the classes",
+        "upper limits of the classes",
+        "mid-points of the classes",
+        "frequencies of the class marks"
+      ],
+      "answer": 2,
+      "explanation": "Mid-point of the classes"
+    },
+    {
+      "id": "pyq_u14_mcq_64b9f0f712",
+      "source_paper": "math_objective_pyq",
+      "question": "While computing mean of grouped data, we assume that the frequencies are",
+      "options": [
+        "evenly distributed over all the classes",
+        "centred at the class marks of the classes",
+        "centred at the upper limits of the classes",
+        "centred at the lower limits of the classes"
+      ],
+      "answer": 1,
+      "explanation": "(b) centred at the class marks of the classes Frequencies are centred at the class-marks of the"
+    },
+    {
+      "id": "pyq_u14_mcq_00dcb6e727",
+      "source_paper": "math_objective_pyq",
+      "question": "If xi’s are the mid-points of the class intervals of grouped data, fi’s are the corresponding frequencies and x is the mean, then ( ) f x x i i - / is equal to",
+      "options": [
+        "0",
+        "1 -",
+        "1",
+        "2"
+      ],
+      "answer": 0,
+      "explanation": "Option (A) is correct."
+    },
+    {
+      "id": "pyq_u14_mcq_c3e0a2d438",
+      "source_paper": "math_objective_pyq",
+      "question": "In the formula x a h f f u i mean of grouped frequency distribution, ui is equal to",
+      "options": [
+        "h x a i +",
+        "( h x a i -",
+        "h x a i -",
+        "h a xi -"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u14_mcq_9e1d4d4c6e",
+      "source_paper": "math_objective_pyq",
+      "question": "The abscissa of the point of intersection of the less than type and of the more than type cumulative frequency curves of a grouped data gives its",
+      "options": [
+        "mean",
+        "median",
+        "mode",
+        "All of these"
+      ],
+      "answer": 1,
+      "explanation": "It gives median of the grouped-data."
+    },
+    {
+      "id": "pyq_u14_mcq_a637a09571",
+      "source_paper": "math_objective_pyq",
+      "question": "Consider the following frequency distribution Class 0-5 6-11 12-17 18-23 24-29 Frequency 13 10 15 8 11 The upper limit of the median class is",
+      "options": [
+        "17",
+        "17.5",
+        "18",
+        "18.5"
+      ],
+      "answer": 1,
+      "explanation": "Given, classes are not continuous, so we make continuous by subtracting 0.5 from lower limit and adding 0.5 to upper limit of each class. Cumulative frequency , which lies in the interval . Hence, the upper limit is 17.5."
+    },
+    {
+      "id": "pyq_u14_mcq_849d1ffb4e",
+      "source_paper": "math_objective_pyq",
+      "question": "For the following distribution: Marks Number of students Below 10 3 Below 20 12 Below 30 27 Below 40 57 Below 50 75 Below 60 80 The modal class is",
+      "options": [
+        "10-20",
+        "20-30",
+        "30-40",
+        "50-60"
+      ],
+      "answer": 2,
+      "explanation": "Number of students Class 30-40 has the maximum frequency 30, therefore this is model class."
+    },
+    {
+      "id": "pyq_u14_mcq_d8272a7d1c",
+      "source_paper": "math_objective_pyq",
+      "question": "Consider the data: Class 65- 85 85- 105 105- 125 125- 145 145- 165 165- 185 185- 205 Frequency 4 5 13 20 14 7 4 The difference of the upper limit of the median class and the lower limit of the modal class is",
+      "options": [
+        "0",
+        "19",
+        "20",
+        "38"
+      ],
+      "answer": 2,
+      "explanation": "Cumulative frequency , which lies in the interval . Hence, upper limit of median class is 145. Here, we see that the highest frequency is 20 which lies in 125-145. Hence, the lower limit of modal class Required difference = Upper limit of median class - Lower limit of modal class"
+    },
+    {
+      "id": "pyq_u14_mcq_15bc5dccb7",
+      "source_paper": "math_objective_pyq",
+      "question": "8-15 20 The number of athletes who completed the race in less than 14.6 second is :",
+      "options": [
+        "11",
+        "71",
+        "82",
+        "130"
+      ],
+      "answer": 2,
+      "explanation": "The number of athletes who completed the race in"
+    },
+    {
+      "id": "pyq_u14_mcq_2377d7aa2f",
+      "source_paper": "math_objective_pyq",
+      "question": "Consider the following distribution : Marks obtained Number of students More than or equal to 0 63 More than or equal to 10 58 More than or equal to 20 55 More than or equal to 30 51 More than or equal to 40 48 More than or equal to 50 42 the frequency of the class 30-40 is :",
+      "options": [
+        "3",
+        "4",
+        "48",
+        "51"
+      ],
+      "answer": 0,
+      "explanation": "Marks obtained Number of students Hence, frequency in the class interval 30-40 is 3."
+    },
+    {
+      "id": "pyq_u14_mcq_26059ffe04",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : If the number of runs scored by 11 players of a cricket team of India are 5, 19, 42, 11, 50, 30, 21, 0, 52, 36, 27 then median is 30. 2 1 th = + b l value, if n is odd. Reas on : Median n",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 3,
+      "explanation": "Arranging the terms in ascending order, Assertion (A) is false but reason (R) is true."
     }
   ],
   "assertion_reason": [
@@ -100,6 +476,325 @@
         "1 − P(E)",
         "0.65"
       ]
+    },
+    {
+      "id": "pyq_u14_w_9fa3fbe67d",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 1,
+      "question": "Cards marked with number 3,4,5,50 are placed in a box and mixed thoroughly. A card is drawn at random from the box. Find the probability that the selected card bears a perfect square number.",
+      "model_answer": "Total possible outcomes when one card is drawn = 48 When the number on drawn card is a perfect square, total favourable cases are 4, 9, 16, 25, 36,49, i.e. = 6",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_cbe551dd5b",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 1,
+      "question": "A card is drawn at random from a well shuffled pack of 52 playing cards. Find theprobability of getting neither a red card nor a queen.",
+      "model_answer": "Number of toal possible outcomes when one card is drawn = 52 Number of favourable outcomes when card is neither red nor queen = 28",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_16c561d724",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 1,
+      "question": "20 tickets, on which numbers 1 to 20 are written, are mixed thoroughly and then a ticket is drawn at random out of them. Find the probability that the number on the drawn ticket is a multiple of 3 or 7.",
+      "model_answer": "When one ticket is drawn, total possible cases are 20. Favourable cases when the number is a multiple of 3 or 7 are 3, 6, 9,12,15, 18, 7,14, i.e. 8 cases.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_a5f675f2c2",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 1,
+      "question": "A letter of english alphabet is chosen at random. Determine the probability that the chosen letter is a consonant.",
+      "model_answer": "Total english alphabets = 26 Number of consonants in english alphabets = 21 .’. P(Choosing a consonant) =21/26",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_e227e708b4",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 1,
+      "question": "Two different dice are tossed together. Find the probability that the product of the two numbers on the top of the dice is 6.",
+      "model_answer": "Total number of possible outcomes = 36 Let A be the event such that A = Product of the numbers on the top of the dice is 6. Favourable outcomes (1, 6), (2, 3), (3, 2), (6,1), i.e. 4.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_e016c49f2a",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 1,
+      "question": "A game of chance consists of spinning an arrow which comes to rest pointing at one of the numbers 1, 2, 3, 4, 5, 6, 7, 8 and these are equally likely outcomes. Find the probability that the arrow will point at any factor of 8.",
+      "model_answer": "Total outcomes = 8 Factors of 8 are 1, 2, 4 and 8. Required probability =4/8=1/2",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_763d480d10",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Rahim tosses two different coins simultaneously. Find the probability of getting at least one tail.",
+      "model_answer": "Total cases are {HH, HT, TH, TT}. Favourable cases are (HT, TH, TT}. .’. Required probability =3/4",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_217fe62269",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Two different dice are tossed together. Find the probability 1. that the number on each die is even. 2. that the sum of numbers appearing on the two dice is 5",
+      "model_answer": "Two different dice are tossed. Therefore, total outcomes are 36. 1. Favourable outcomes for even number on both dice = 9, [i.e. (2, 2), (2, 4), (2, 6), (4, 2), (4, 4), (4, 6), (6, 2), (6, 4), (6, 6)]. Probability of getting even number on both dice =9/36=1/4 2. Favourable outcomes that the sum of the numbers appearing on two dice is 5 are(1,4), (2, 3), (3, 2), (4,1), i.e. 4. Probability of getting sum of numbers appearing on two dice is 5 = 4/36=1/9",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_5ebb73dc21",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Two different dice are rolled simultaneously. Find the probability that the sum of numbers appearing on the two dice is 10.",
+      "model_answer": "When two different dice are rolled, then total possible outcomes = 36. Favourable outcomes for sum of the numbers appearing on two dice is 10 = 3, i.e. {(4, 6), (5, 5), (6, 4)} Probability of getting the sum of numbers appearing on two dice is 10=3/36=1/12",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_7f604e19f9",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A card is drawn at random from a well shuffled pack of 52 playing cards. Find the probability that the drawn card is neither a jack nor an ace",
+      "model_answer": "Total cards = 52 Number of jacks + Number of ace = 4 + 4 = 8 Number of cards neither a jack nor an ace = 52 – 8 = 44",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_d23632cd37",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A die is tossed once. Find the probability of getting an even number or a multiple of 3.",
+      "model_answer": "Even numbers on a die are 2,4, 6. Multiple of 3 are 3, 6. So, total favourable cases are 2, 4, 6, 3. So, required probability =4/6=2/3",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_d5e8495b0c",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A card is drawn at random from a well shuffled pack of 52 playing cards. Find the probability that the drawn card is neither a king nor a queen.",
+      "model_answer": "Total cards = 52. Number of kings + number of queen = 4 + 4 = 8 Number of cards neither a king nor a queen = 52 – 8 = 44. So, required probability =44/52=11/13",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_91aacfe1d3",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Two coins are tossed simultaneously. Find the probability of getting at least one head.",
+      "model_answer": "Possible outcomes on tossing two coins: HH, HT, TH, TT Number of total possible outcomes = 4 Favourable outcomes of getting at least one head: HT, TH, HH Number of favourable outcomes = 3 Required probability=3/4",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_e8f1b1c536",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Three coins are tossed simultaneously. Find the probability of getting Exactly two heads.",
+      "model_answer": "Possible outcomes when 3 coins are tossed are 8 (i.e. HHH, HHT, HTH, THH, TTH, TTT, THT, HTT). Favourable cases for exactly 2 heads are 3 (i.e. HHT, HTH, THH) Required probability = 3/8",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_1b358c8f49",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Two dice are thrown simultaneously. Find the probability of getting a doublet.",
+      "model_answer": "Two dice are thrown. So, total number of possible outcomes are 36. Doublet are (1,1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6) Number of favourable cases = 6 Required probability =6/36=1/6",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_113861e41e",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Three cards of spades are lost from a pack of 52 playing cards. The remaining cards were well shuffled and then a card was drawn at random from them. Find the probability that the drawn card is of black colour.",
+      "model_answer": "Number of cards left = 52 – 3 = 49 Number of cards of spade left = 13 – 3 = 10 Number of black cards left = 13 + 10 = 23 [ .’. Spade is of black colour] Total Number of ways to draw a card = 49 Number of ways to draw a black card = 23 Required probability=23/49",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_1c4b5c2f23",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "The ace, jack, queen and king of clubs are removed from a pack of 52 playing cards. Remaining cards are well shuffled and a card is drawn from them at random. Find the probability that the drawn card is of black colour.",
+      "model_answer": "Ace, jack, queen, king of clubs are removed from a deck of playing cards. Number of Remaining cards = 52 – 4 = 48 Number of black cards remain = 22 (jack, ace, queen, king of club are removed). Required Probability = 22/48=11/24",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_11bff455b4",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Out of cards numbered from 1 to 20, which are mixed thoroughly, a card is drawn at random. Find the probability that the drawn card bears a number which is a multiple of 3 or 7.",
+      "model_answer": "Number of total cards from 1 to 20 = 20 Total possible outcomes = 20 Multiple of 3 or 7 in between 1 to 20 are 3, 6, 9,12,15,18, 7,14 Number of favourable outcomes = 8 Required Probability=8/20=2/25",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_aa9369aafc",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A card is drawn at random from a well-shuffled pack of 52 playing cards. Find the probability of getting 1. a red king. 2. a queen or a jack",
+      "model_answer": "1. Total cards = 52 Number of red kings = 2 Probability (a red king) = 2/52=1/26 2. Number of queen=4 Number of jack= 4 Number of favourable cards = 8 P(a queen or a jack)=8/52=2/13",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_098d582852",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "The die is thrown once. Find the probability of getting 1. A 2. D",
+      "model_answer": "Total cases = 6 1. There are three faces marked with A. Probability of getting A = 3/6=1/2 2. There is one face marked with D. Probability of getting D =1/6",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_0752c90349",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A box contains 100 red cards, 200 yellow cards and 50 blue cards. If a card is drawn at random from the box, then find the probability that it will be 1. a blue card 2. not a yellow card 3. neither yellow nor a blue card.",
+      "model_answer": "Red cards = 100; Yellow cards = 200; Blue cards = 50 1. P(a blue card) = 50/350=1/7 2. P(not a yellow card) = 150/350=3/7 3. P(neither yellow nor blue cards) = P(only red card) =100/350=2/7",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_585cb63b04",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A coin is tossed two times. Find the probability of getting at least one head.",
+      "model_answer": "Total outcomes are 4, i.e. (HH, HT, TH, TT} Favourable outcomes are 3, i.e. {HH, HT and TH} P(at least one head)=3/4",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_98134ab7b6",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A coin is tossed two times. Find the probability of getting both heads or both tails.",
+      "model_answer": "Total number of cases while tossing a coin two times are 4, i.e. {HH, HT, TH, TT} Favourable cases of getting both heads or both tails are 2, i.e. {HH, TT}",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_cb1bf48fcb",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A coin is tossed two times. Find the probability of getting not more than one head.",
+      "model_answer": "Total number of cases while tossing a coin two times are 4, i.e. (HH, HT, TH, TT} Favourable cases of getting not more than one head are 3, i.e. {HT, TH, TT}",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_01eed850f2",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A ticket is drawn at random from a bag containing tickets numbered from 1 to 40. Find the probability that the selected ticket has a number which is a multiple of 5.",
+      "model_answer": "Total number of tickets = 40 Multiples of 5 are 5,10,15,20,25,30,35,40 Number of favourable tickets = 8 .’. P(a number which is a multiple of 5) =8/40=1/5",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_0b465dc5fa",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Two different dice are thrown at the same time. Find the probability that the sum of the two numbers appearing on the top of the dice is 7.",
+      "model_answer": "Total number of cases while throwing two dice = 36 Number of favourable cases whose sum is 7 are 6, i.e. {1, 6}, (2,5), (3, 4), (4,3), (5, 2), (6,1)",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_5073d56507",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A card is drawn at random from a well-shuffled pack of 52 playing cards. Find the probability of getting a red face card.",
+      "model_answer": "Total cases = 52 Favourable cases = 6 (red face cards, i.e. 2 kings, 2 queens, 2 jacks) Probability of getting a red face card =6/52=3/26",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_00b5b34b5d",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A die is thrown once. What is the probability of getting a number greater than 4?",
+      "model_answer": "Total cases = 6 Favourable cases for the numbers greater than 4 are 2 (i.e. 5, 6). Probability of getting a number greater than 4=2/6=1/3",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_6b551ebe5e",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A die is thrown twice. What is the probability that the same number will come up either time?",
+      "model_answer": "Total cases when die is thrown twice = 36 Favourable cases for same number either time = 6 i.e. (1,1), (2, 2), (3,3), (4,4), (5,5), (6, 6) Probability of getting same number either time =6/36=1/6",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
     }
   ],
   "sa": [
@@ -127,8 +822,316 @@
       ]
     },
     {
+      "id": "pyq_u14_w_15e5dd55b1",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "In a single throw of a pair of different dice, what is the probability of getting 1. a prime number on each dice? 2. a total of 9 or 11?",
+      "model_answer": "Total possible cases when two dice are thrown together = 6 x 6 = 36 Favourable cases when both numbers are prime are (2, 2), (2, 3), (2, 5), (3, 2), (3, 3),(3, 5), (5, 2), (5, 3), (5,5), i.e. 9 outcomes (ii) Favourable cases when sum of numbers are 9 or 11 are (3, 6), (4, 5), (5, 4), (5, 6),(6, 3), (6,5), i.e. 6 outcomes",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_4f3e7fc36a",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Two different dice are thrown together. Find the probability of: 1. getting a number greater than 3 on each die. 2. getting a total of 6 or 7 of the numbers on two dice",
+      "model_answer": "1. When two dice are thrown together total possible outcomes = 6 X 6 = 36 Favourable outcomes when both dice have number more than 3 are (4, 4), (4, 5),(4, 6), (5, 4), (5, 5), (5, 6), (6,4), (6,5), (6, 6), i.e. 9 outcomes. =9/36=1/4 2. Favourable outcomes when sum of the numbers appearing on the dice is 6 or 7 are, i.e. (1,5), (1, 6), (2,4), (2,5), (3,3), (3,4), (4, 2), (4, 3), (5,1), (5,2), (6,1), outcomes. P(a total of 6 or 7) =11/36",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_168b7efbb2",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A box consists of 100 shirts of which 88 are good, 8 have minor defects and 4 have major defects. Ramesh, a shopkeeper will buy only those shirts which are good but ‘Kewal’ another shopkeeper will not buy shirts with major defects. A shirt is taken out of the box at random. What is the probability that 1. Ramesh will buy the selected shirt? 2. ‘Kewal’ will buy the selected shirt?",
+      "model_answer": "1. When one shirt is taken out, then number of total possible outcomes = 100 Ramesh will purchase when shirt is good, Favourable outcomes = number of good shirts = 88 2. Kewal will buy shirt if a shirt is not having major defect. Number of favourable outcomes = Number of shirts without major defect = 96 P(Kewal buys a shirt) =96/100=24/25",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_f1a5110505",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Three different coins are tossed together. Find the probability of getting 1. exactly two heads 2. at least two heads 3. at least two tails.",
+      "model_answer": "Possible outcomes when three coins are tossed HHH, HHT, HTT, TTT, THH, TTH, HTH, THT 1. Number of exactly two heads are HHT, HTH and THH. P(exactly two heads) = 3/8 2. In case of at least two heads, outcomes are HHT, HTH, THH and HHH. P(at least two heads) = 4/8=1/2 3. In case of at least two tails, outcomes are TTH, THT, HTT and TTT. P(at least two tails) = 4/8=1/2",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_47d8957c7e",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "From a pack of 52 playing cards, Jacks, Queens and Kings of red colour are removed. From the remaining, a card is drawn at random. Find the probability that drawn card is: 1. a black king. 2. a card of red colour. 3. a card of black colour.",
+      "model_answer": "Removed red colour cards = 3×2 = 6 Remaining cards = 52 – 6 = 46 1. Number of black kings = 2 P(a black king) = 2/46=1/23 2. Number of red colour cards = 26 Remaining red colour cards = 26 – 6 = 20 P(a card of red colour) = 20/46=10/23 3. Number of black cards = 26 P(a black colour card) =26/46=13/23",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_b3de539ec7",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "There are 100 cards in a bag on which numbers from 1 to 100 are written. A card is taken out from the bag at random. Find the probability that the number on the selected card: 1. is divisible by 9 and is a perfect square. 2. is a prime number greater than 80.",
+      "model_answer": "Total possible cases = 100 1. Favourable cases when number is a perfect square and is divisible by 9 are 9, 36 and 81. So, number of favourable cases = 3 2. Favourable cases the prime numbers greater than 80 are 83, 89 and 97 So, number of favourable cases = 3",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_74405fca99",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A game consist of tossing a one-rupee coin 3 times and nothing the outcome each time. Ramesh will win the game if all the show the tosses same result, (i.e. either all three heads or all three tails) and loses the game otherwise. Find the probability that Ramesh will lose the game.",
+      "model_answer": "When three coins are tossed together, then total outcomes are HHH, HHT, HTT, TTT, TTH, THH, HTH, THT Total possible cases = 8 Favourable cases to win the game are HHH or TTT, i.e. two cases. Required probability = P(Ramesh will loose the game) = 1 -1/4=3/4",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_32369d65a2",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Two different dice are rolled together. Find the probability of getting: 1. the sum of numbers on two dice to be 5. 2. even numbers on both dice.",
+      "model_answer": "Total number of outcomes while rolling two dice = 36. A: the sum of numbers is 5. B: even number on both dice. 1. Number of favourable cases of event A = 4 [i.e. (1, 4), (4,1), (2,3), (3,2)] so P(A)=4/36=1/9 2. Number of favourable cases of event B = 9 [i.e. (2, 2), (2, 4), (2, 6), (4, 2), (4, 4), (4, 6), (6, 2), (6,4), (6, 6)] so P(B)=9/36=1/4",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_af86480ec4",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Three distinct coins are tossed together. Find the probability of getting: 1. at least 2 heads 2. at most 2 heads.",
+      "model_answer": "When three coins are tossed following is the sample space: {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT} 1. P(at least 2 heads) =4/8=1/2 2. P(at most 2 heads) = 7/8",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_97a57d301a",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "All red face cards art removed from a pack of playing cards. The remaining cards were well shuffled and then a card is drawn at random from them. Find the probability that the drawn card is Probability 469 1. a red card 2. a face card 3. a card of club",
+      "model_answer": "After removing all the red face cards from a pack of playing cards, total number of cards= 52-6 = 46 1. P(a red card)=20/46=10/23 2. P(a face card)=6/46=3/23 3. P(a card of club)=13/46",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_58787968e5",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "The probability of selecting a red ball at random from a jar that contains only red, blue and orange balls is 1/4. The probability of selecting a blue ball at random from the same jar is 1/3. If the jar contains 10 orange balls, find the total number of balls in the jar.",
+      "model_answer": "Let number of red balls in the jar = x number of blue balls in the jar = y Total number of balls in the jar = x + y + 10 Probability of selecting red ball =1/4",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_834213ee2b",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A bag contains, white, black and red balls only. A ball is drawn at random from the bag. If the probability of getting a white ball is 3/10 and that of a black ball is 2/5,then find the probability of getting a red ball. If the bag contains 20 black balls, then find the total number of balls in the bag.",
+      "model_answer": "Let R = getting a red ball B = getting a black ball W = getting a white ball Now, P(R) + P(B) + P(W) = 1 P(R)=+ 2/5 + 3/10 = 1 P(R)=1-2/5-3/10=10-4-3/10=3/10 Let total number of balls = x P(B)=20/x=2/5=20/x x=20X5/2 Total number of balls = 50",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_2db4f433f4",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A bag contains 18 balls out of which x balls are red. 1. If one ball is drawn at random from the bag, what is the probability that it is not red? 2. If 2 more red balls are put in the bag, the probability of drawing a red ball will be 9/8 times the probability of drawing a red ball in the first case. Find the 8 value of X.",
+      "model_answer": "1. Number of non red balls = 18 -x Probability that ball drawn is not red =18-x/18 2. Probability that ball drawn is red=x/18 When 2 more red balls are put in the bag, then number of balls in the bag is 20. Now, number of red balls = x + 2 Probability that ball drawn is red=x+2/20 According to question, x+2/20=9/8Xx/18 x + 2 /20= x/16 16x+32=20x 4x=32 x=8",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_1da0dd491d",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A game consists of tossing a one-rupee coin three times and noting its outcome each time. Find the probability of getting 1. three heads. 2. at least two tails.",
+      "model_answer": "Possible outcomes HHH, HHT, HTH, THH, TTT, TTH, THT, HTT Total number of outcomes = 8 1. A = getting three heads, 1 [i.e. HHH] P(A) =1/8 2. B = getting at least two tails, 4[i.e. TTT, TTH, THT, HTT] P(B)=4/8=1/2",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_2345029308",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A card is drawn from a well shuffled deck of 52 cards. Find the probability of getting 1. a king of red colour 2. a face card 3. the queen of diamonds.",
+      "model_answer": "Total cards = 52 1. P(a king of red colour) =2/52=1/26 2. P(a face card)=12/52=3/13 3. P(a queen of diamonds)=1/52",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_f1fac21434",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A box contains 35 blue, 25 white and 40 red marbles. If a marble is drawn at random from the box, find the probability that the drawn marble is 1. white 2. no blue 3. neither white nor blue.",
+      "model_answer": "Given: Number of blue marbles = 35; Number of white marbles = 25; Number of red marbles = 40 Total number of marbles = 100 1. P(white marble) =25/100=1/4 2. P(no blue marble) = 25+40/100=65/100=13/20 3. P(neither white nor blue) = 40/100=2/5",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_fa8a2ba0f8",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "All kings, queens and aces are removed from a pack of 52 cards. The remaining cards are well shuffled and then a card is drawn from it. Find the probability that the drawn card is 1. a black face card. 2. a red card",
+      "model_answer": "Number of kings = 4, number of queens = 4, number of aces = 4 After removing all kings, queens and aces, number of remaining cards = 52 – 12 = 40 1. Number of black face cards in the remaining cards (2 jacks) = 2 Probability of black face card = 2/40=1/20 2. Out of removed 12 cards, 6 are of red colour. Number of red coloured cards in remaining cards = 26 – 6 = 20 Probability of getting a red card =20/40=1/2",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_fb857b6e06",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Card marked with numbers 1, 3, 5, …, 101 are placed in a bag and mixed thoroughly. A card is then drawn at random from the bag. Find the probability that the number on the drawn card is 1. less than 19, 2. a prime number less than 20.",
+      "model_answer": "Total number of cards in the bag = 51 1. Number of cards bearing a number less than 19 are 9 (i.e. 1, 3, 5, 7, 9,11,13,15,17). .’. Probability that the number on the drawn card is less than 19 = 9/51=3/17 2. Number of cards bearing a prime number less than 20 are 7 (i.e. 3,5, 7,11,13,17,19). .’.Probability that the number on the drawn card is a prime number less than 20 =7/51",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_545573bd30",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A die is thrown once. Find the probability of getting the following: 1. a prime number 2. a number lying between 2 and 5.",
+      "model_answer": "The possible outcomes are = 6 (i.e. 1, 2, 3, 4, 5, 6). . 1. Prime numbers on a die = {2, 3, 5} P(getting a prime number) =3/6=1/2 2. Number lying between 2 and 5 are 2 (i.e. 3, 4). P(getting a number lying between 2 and 5) =2/6=1/3",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_d027a516b1",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A box contains 75 cards which are numbered from 1 to 75. If one card is drawn at random from the box, find the probability that the drawn card bears 1. a two-digit number. 2. a perfect square number",
+      "model_answer": "Total number of cards = 75 1. Total number of two digit numbers from 1 to 75 = 66 P (getting a two digit number) =66/75=22/25 2. Perfect square numbers from 1 to 75 are 8 (i.e. 1, 4, 9,16, 25, 36,49, 64). P(getting a perfect square number) = 8/75 2011",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_fd5028803a",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A game consists of tossing a coin 3 times and noting its outcome each time. Hanif wins if he gets three heads or three tails, and loses otherwise. Calculate the probability that Hanif will lose the game.",
+      "model_answer": "Total possible outcomes are 8, i.e. {HHH, TTT, HHT, HTH, HTT, THH, THT, TTH} There are only two outcomes at which Hanif can win, i.e. {HHH, TTT}, i.e. 2 .’. P(Hanif will lose the game)=6/8=3/4",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_92896486cd",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Two dice are rolled once. Find the probability of getting such numbers on two dice, whose product is a perfect square.",
+      "model_answer": "Total number of cases = 36 Favourable cases are (1,1), (1,4), (2,2), (3, 3), (4,1), (4,4), (5,5), (6, 6)",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_8322490eb1",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A box contains 80 discs which are numbered from 1 to 80. If one disc is drawn at random from the box, find the probability that it bears a perfect square number.",
+      "model_answer": "Total number of discs = 80 Numbers from 1 to 80 which are perfect square are 1, 4, 9,16, 25, 36, 49, 64. Favourable number of dies =8 Required probability =8/80=1/10",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_b018ff8541",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Two dice are rolled once. Find the probability of getting such numbers on the two dice, whose product is 12.",
+      "model_answer": "When two dice are rolled, total number of cases = 36 Number of favourable cases whose product is 12 are given as {(2,6), (3,4), (4,3), (6,2)}, i.e. 4",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_742e89abea",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Cards marked with numbers 5,6,7, , 74 are placed in a bag and mixed thoroughly. One card is drawn at random from the bag. Find the probability that the number on the card is a perfect square.",
+      "model_answer": "Total cards = 70 Perfect square numbers from 5 to 74 are 9,16, 25, 36, 49, 64. Number of favourable cards = 6 P(a perfect square) =6/70=3/35 2010",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_d886c9f634",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Cards bearing numbers 1,3,5,,,,35 are kept in a bag. A card is drawn at random from the bag. Find the probability of getting a card bearing a prime number less than 15. a number divisible by 3 and 5.",
+      "model_answer": "Total number of cards in a bag = 18 Prime numbers less than 15 are 3, 5, 7,11,13 Number of favourable cases = 5 P (a prime number less than 15) =5/18 The number divisible by 3 and 5 in given number is 15. Number of favourable cases = 1 P (a number divisible by 3 and 5)=1/18",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_89e70c077e",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A bag contains cards which are numbered from 2 to 90. A card is drawn at random from the bag. Find the probability that it bears a two-digit number, a number which is a perfect square.",
+      "model_answer": "Total number of cards = 89 Out of 89 cards, there are 8 single-digit numbers and 81 are two-digit numbers. Number of favourable cases = 81 P (getting a two-digit number) = 81/89 4, 9,16, 25, 36,49, 64, 81 are 8 perfect square numbers from 2 to 90. P (getting a perfect square number) =8/89",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_09144c4d8d",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "From a well-shuffled pack of playing cards, blackjacks, black kings and black aces are removed. A card is then drawn at random from the pack. Find the probability of getting a red card. not a diamond card",
+      "model_answer": "As blackjacks, black kings and black aces are removed from the pack, so, number of remaining cards in a pack = 46 Favourable cases of a red card are 26. Probability of getting a red card = 26/46=13/23 Favourable cases of not getting a diamond card are = 46 – 13 = 33 Probability of not getting a-diamond card =33/46",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
       "id": "pyq_u14_w_a5d7353625",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "marks": 3,
       "question": "Assertion (A) : The probability of selecting a number at random from the",
       "model_answer": "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct",
@@ -172,6 +1175,237 @@
         "List outcomes",
         "Count favourable",
         "1/2"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_90f8e6a643",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A game of chance consists of spinning an arrow on a circular board, divided into 8 equal parts, which comes to rest pointing at one of the numbers 1,2,3,…, 8 which are equally likely outcomes. What is the probability that the arrow will point at 1. an odd number 2. a number greater than 3 3. a number less than 9.",
+      "model_answer": "1. Total possible outcomes when the arrow points at one of the numbers are 8. Favourable outcomes when the required number is odd are 1, 3, 5, 7, i.e. 4 outcomes. 2. Favourable outcomes when the required number is more than 3 are 4,5,6,7, 8, i.e. 5 outcomes. 3. Favourable outcomes when the required number is less than 9 are 1,2,3,4,5,6,7,8 i.e 8 outcomes",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_8923f06b01",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A number JC is selected at random from the numbers 1,2,3 and 4. Another number y is selected at random from the numbers 1, 4, 9 and 16. Find the probability that product of JC and y is less than 16.",
+      "model_answer": "x can be any one of 1, 2, 3 or 4 andy can be any one of 1, 4, 9 or 16. Total number of cases of xy = 16 Number of cases when product is less than 16 are 1 x 1,1 x 4,1 x 9, 2 x 1, 2 x 4, 3 x 1, 3 x 4,4 x 1, i.e. 8 cases.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_5701e09418",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A number x is selected at random from the numbers 1,4,9,16 and another numbery is selected at random from the numbers 1, 2, 3, 4. Find the probability that the value of xy is more than 16",
+      "model_answer": "x can be 1, 4, 9 or 16 andy can be 1, 2,3 or 4. Total number of cases of Ay are 16. Number of cases when Ay is more than 16 are (9 x 2), (9 x 3), (9 x 4), (16 x 2), (16 x 3), (16 x 4), i.e. 6 cases. 63 P(value of xy more than 16) =6/16=3/8",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_d8abbed3d7",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "In figure is shown a disc on which a player spins an arrow twice. The fraction a/b is formed, where ‘a’ is the number of sector on which arrow stops on the first and b is the numberof the sector in which the arrow stops on second spin. On each spin, each sector has equal chance of selection by the arrow. Find the probability that the a/b> 1.",
+      "model_answer": "For a/b > 1, when a = 1, b can not take any value a = 2, b can take 1 value a = 3, b can take 2 value, i.e. 1 and 2 a = 4, b can take 3 value, i.e. 1, 2, 3 a = 5, b can take 4 value, i.e. 1, 2, 3,4 a = 6, b can take 5 value, i.e. 1,2,3,4,5 Total possible outcomes = 6 x 6 = 36 Favourable outcomes = 1 + 2 + 3 + 4 + 5 = 15 2015",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_531bf86678",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A bag contains 25 cards numbered from 1 to 25. A card is drawn at random from the bag. Find the probability that the number on the drawn card is: 1. divisible by 3 or 5. 2. a perfect square number.",
+      "model_answer": "1. Number from 1 to 25 which are divisible by 3 or 5 are 3, 6, 9,12,15,18, 21, 24, 5,10,20,25. P(a number divisible by 3 or 5) = 12/25 2. Number from 1 to 25 which are perfect square are 1, 4, 9,16, 25 P(a perfect square number) = ^5/25= 1/5.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_cd156987ca",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A box contains 20 cards numbered from 1 to 20. A card is drawn at random from the box. Find the probability that the number on the drawn card is 1. divisible by 2 or 3. 2. a prime number.",
+      "model_answer": "1. Numbers from 1 to 20 which are divisible by 2 or 3 are 2,4, 6,8,10,12,14,16,18, 20, 3, 9,15 P(a number divisible by 2 or 3) =13/20 2. Prime numbers from 1 to 20 are 2, 3,5, 7,11,13,17,19 P(a prime number) = 8/20=2/5",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_8b98b69651",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A card is drawn at random from a well-shuffled deck of playing cards. Find the probability that the card drawn is 1. a a card of spade or an ace. 2. a black king. 3. neither a jack nor a king 4. either a king or a queen",
+      "model_answer": "Total number of outcomes = 52 1. A = Card is spade or an ace Cards favourable to A = 13 + 3 = 16 P(A)=16/52=4/13 2. B = Card is black king Number of black kings = 2 P(B)=2/52=1/26 3. C = Card is neither a jack nor a king Number of favourable cards to C = 52-4-4 = 44 P(C) =44/52=11/13 4. D = Card is either a king or a queen Number of cards favourable to D = 4 + 4 = 8 P(D) = 8/52=2/13",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_3c273bb3b1",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A box contains cards bearing numbers from 6 to 70. If one card is drawn at random from the box, find the probability that it bears 1. a one digit number. 2. a number divisible by 5. 3. an odd number less than 30. 4. a composite number between 50 and 70.",
+      "model_answer": "Number of cards in the box = 65 1. Cards bearing one digit number are 6, 7,8, 9 (i.e. 4 cards) Probability of card bears a one digit number=4/65 2. B : Number on the cards is divisible by 5. Cards favourable to B are 10,15,20,25,30,35,40,45,50,55,60,65,70 (i.e. 13 cards). P(B)=13/65=1/5 3. C: Cards with an odd number less than 30. Cards favourable to C are 7, 9,11,13,15,17,19, 21,23, 25, 27, 29 (i.e. 12 cards). P(C)=12/65 4. D : Card with composite number between 50 and 70. Cards favourable to D are 51,52,54,55,56,57,58,60,62,63,64,65, 66,68, 69 (i.e. 15 cards). P(D) =15/65=3/13 2014",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_b9b2b3e526",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A bag. contains cards numbered from 1 to 49. A and C is drawn from the beg at random, after mixing the cards thoroughly. Find the probability that the number on the drawn card is 1. an odd number. 2. a multiple of 5. 3. a perfect square. 4. an even prime number",
+      "model_answer": "Total number of cards in a bag = 49. 1. Number of odd number cards = 25 .’.Required probability = 25/49 2. Number of multiple of 5 = 9 (i.e. 5,10,15, 20, 25, 30, 35,40, 45) .’.Required probability = 9/49 3. Number of perfect square = 7 (i.e. 1,4,9,16, 25, 36,49) .’. Required probability = 7/49=1/7 4. Number of prime number = 1 (i.e. 2) .’. Required probability = 1/49",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_d55f35f4a7",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "All the black face cards are removed from a pack of 52 playing cards. The remaining cards are well shuffled and then a card is drawn at random. Find the probability of getting a 1. face C and. 2. red card. 3. black card. 4. king",
+      "model_answer": "Total cards = 52 Total black face cards = 6 After removing black face cards from a pack of 52 cards, number of remaining cards = 52-6 = 46. 1. Number of face cards in remaining cards = 6 (i.e. 2 red kings, 2 red queens and 2 red jacks) Required probability =6/46=3/23 2. Number of red cards in remaining cards = 26 Required probability =26/46=13/23 3. Number of black cards in remaining cards = 20 Required probability=20/46=10/23 4. Number of kings in remaining cards = 2 (i.e. 2 red kings) Required probabilit=2/46=1/23",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_d4337a7b22",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Cards numbered from 11 to 60 are kept in a box. If a card is drawn at random from the box, find the probability that the number on the drawn card is 1. an odd number. 2. a perfect square number. 3. divisible by 5. 4. a prime member less than 20.",
+      "model_answer": "Total number of cards from 11 to 60 = 50. 1. Favourable cases for odd number = 25 .’. Required probability =25/50=1/2 2. Number of perfect square numbers from 11 to 60 = 4 (i.e. 16, 25, 36, 49) .’. Required probability=4/50=2/25 3. Number of multiples of 5 = 10 (i.e. 15, 20, 25, 30, 35, 40,45, 50, 55, 60) .’. Required probability =10/50=1/5 4. Number of prime numbers less than 20 = 4 (i.e. 11,13,17,19) .’. Required probability =4/50=2/25",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_4e6ae45ed4",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Red queens and blackjacks are removed from a pack of 52 playing cards. A card is drawn at random from the remaining cards, after reshuffling them. Find the probability that the drawn card is 1. a king. 2. of red colour. 3. a face card. 4. a queen.",
+      "model_answer": "Red queens and blackjacks, i.e. 2 + 2 = 4 cards are removed from a pack of 52 playing cards. Remaining cards = 52 – 4 = 48. .’. Possible outcomes of drawing one card from 48 cards is 48. 1. Favourable outcomes for drawing a king are 4. .’. Probability of drawing a queen=4/48=1/12 2. Favourable outcomes for a card of red colour are 24 as 2 red queens have been removed. .’. Probability of drawing a queen=24/48=1/2 3. Favourable outcomes for a face card (4 kings, 2 queens, 2 jacks) = 8 .’. Probability of drawing a queen=8/48=1/6 4. Favourable outcomes for drawing a queen are 2, as 2 red queens have been removed. .’. Probability of drawing a queen = 2/48=1/24",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_dbe280e58c",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "All the red face cards are removed from a pack of 52 playing cards. A card is drawn at random from the remaining cards, after reshuffling them. Find the probability that the drawn card is 1. of red colour. 2. a queen. 3. an ace. 4. a face card.",
+      "model_answer": "Face cards are taken as (4 jacks, 4 queens and 4 kings): As all the red face cards are removed .’. 6 cards (2 jacks, 2 queens and 2 kings) are removed from 52 cards. .’. Remaining cards = 52 – 6 = 46 cards .’. Total outcomes of drawing a card from 46 cards = 46 1. Favourable outcomes of drawing a red card= 20 (as 6 red cards from 26 have been removed) .’. Probability of drawing a red card = 20/46=10/23 2. Favourable outcomes of drawing a queen= 2 (as 2 red queens have been removed out of 4) .’. Probability of drawing a queen = 2/46=1/23 3. Favourable outcomes of drawing an ace = 4 .’. Probability of drawing an ace = 4/46=2/23 4. Favourable outcomes of drawing a face card= 6 (as 2 jacks, 2 queens and 2 kings have been removed) .’. Probability of drawing a face card=6/46=3/23",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_8289d765e7",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Five cards – the ten, jack, queen, king and ace of diamonds, are well shuffled with their faces downwards. One card is then picked up at random. What is the probability that the drawn card is the queen? If the queen is drawn and put aside, and a second card is drawn, find the probability that the second card is 1. an ace 2. a queen.",
+      "model_answer": "Five cards: the ten, jack, queen, king and ace of diamonds are shuffled with faces downwards. Total possibilities of selecting one card = 5 Favourable outcomes for drawing a queen = 1 Probability of drawing a queen = 1/5 When queen is kept aside, then remaining cards = 4 So, total outcomes of drawing a card = 4 1. favourable outcomes of drawing an ace is 1 Probability of drawing an ace =1/4 2. Favourable outcomes of drawing a queen = 0 (as there is no card of queen). Probability of drawing a queen=0/4,i.e.0",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_72474e1a10",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Cards numbered 1 to 30 are put in a bag. A card is drawn at random from this bag. Find the probability that the number on the drawn card is 1. not divisible by 3. 2. a prime number greater than 7. 3. not a perfect square number",
+      "model_answer": "Total possible outcomes of drawing a card from a bag out of 30 cards is 30. 1. Favourable outcomes for a card numbered not divisible by 3 = 20 (i.e. 1, 2, 4, 5, 7, 8, , 10,11,13,14,16,17,19, 20,22,23,25, 26, 28 and 29). .’. Probability of drawing a card numbered not divisible by 3 =20/30=2/3 2. Favourable outcomes for a prime numbered card greater than 7 = 6 (i.e. 11,13,17,19, 23 and 29) .’. Probability of drawing a prime numbered card greater than 7 3. Favourable outcomes for not a perfect square numbered card = 25 (leaving 1, 4, 9,16 and 25) .’. Probability of drawing a card which is not a perfect square =25/30=5/6",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_4af00e3153",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A dice is rolled twice. Find the probability that 1. 5 will not come up either time 2. 5 will come up exactly one time",
+      "model_answer": "When a die is rolled twice, total possible outcomes = 36. 1. Favourable outcomes that 5 will not come either time are 25[(1, 1), (1,2), (1, 3),(1,4), (1,6), (2,1), (2,2), (2,3), (2,4), (2,6), (3,1), (3,2), (3,3), (3,4), (3,6), (4,1), (4,2), (4, 3), (4, 4), (4, 6), (6,1), (6, 2), (6, 3), (6, 4), (6, 6)] Probability that 5 will not come either time = 25/36 2. Favourable outcomes that 5 comes up exactly once are 10[(5,1), (5, 2), (5, 3), (5,4), (5, 6), (1, 5), (2, 5), (3, 5), (4, 5), (6, 5)] Probability that 5 will come up exactly once = 10/36=5/18",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_a8f90e76e3",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A piggy bank contains hundred 50 p coins, fifty 1 coins, twenty 2 coins and ten 5 coins. If it is equally likely that one of the coins will fall out when the bank is turned upside down, find the probability that the coin which fell 1. will be a 50 p coin 2. will be of value more than 1 3. will be of value less than 5 4. will be a 1 or 2 coin",
+      "model_answer": "Total coins in piggy bank are: 50 p coins = 100; 1 coins = 50; 2 coins = 20; 5 coins = 10 Total coins = 100 + 50 + 20 + 10 = 180 Therefore, total possible outcomes that one coin will fall = 180 1. Favourable outcomes for falling a 50 p coin = 100 .’.Probability that a 50 p coin falls =100/180=5/9 2. Favourable outcomes for a coin of value more than 1 are 30 (20 + 10). .’.Probability of falling a coin of value more than 1=30/180=1/6 3. Favourable outcomes for falling a coin of value less than ? 5 are 170 (100 + 50 + 20) .’.Probability of falling a coin of value less than 5 = 170/180=17/18 4. Favourable outcomes for falling a coin of value 1 or 2 = 70(50 + 20) .’. Probability of falling a coin of value 1 or 2 =7/180=7/18 2013",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_dd824a9157",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A group consists of 12 persons, of which 3 are extremely patient, other 6 are extremely honest and rest are extremely kind. A person from the group is selected at random. Assuming that each person is equally likely to be selected, find the probability of selecting a person who is 1. extremely patient 2. extremely kind or honest. Which of the above values you prefer more?",
+      "model_answer": "Total number of persons = 12 Number of extremely patient = 3 Number of extremely honest = 6 Number of extremely kind = 12 -(6+ 3) = 3 1. Probability of selecting extremely patient = 3/12=1/4 2. Probability of selecting extremely kind or honest = 3+6/12=9/12=3/4 We prefer one should be honest first",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_6c8be16933",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A box contains cards numbered 3,5,7,9,…, 35,37. A card is drawn at random from the box. Find the probability that the number on the drawn card is a prime number.",
+      "model_answer": "Total no. of cards in the box = 18 Number of ways to draw one card = 18 Number of cards with a prime number are 11 (i.e. 3,5, 7,11,13,17,19, 23, 29, 31, 37) Number of ways to draw a card bearing a prime number = 11 Required probability =11/18",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_79783f1d2e",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A die is thrown twice. Find the probability that 1. 5 may not come either time. 2. same number may not come on the die thrown two times.",
+      "model_answer": "Total outcomes (1.1),(1,2), (1,3), (1,4),(1,5), (1,6) (2.1),(2, 2),(2,3),(2,4),(2,5),(2, 6) (3.1),(3, 2),(3, 3),(3,4),(3,5),(3, 6) (4.1),(4, 2),(4, 3),(4,4),(4, 5),(4, 6) (5.1),(5, 2),(5, 3),(5,4),(5, 5),(5, 6) (6.1),(6,2),(6, 3),(6,4), (6, 5),(6, 6) Number of total outcome = 36 1. Number of outcomes when 5 may not come either time = Outcome except (1,5), (2,5), (3,5), (4,5), (5,1), (5,2), (5,3), (5,4), (5,5), (5,6), (6,5),= 36 -11 = 25 Probability that 5 may not come either time = 25/36 2. Number of outcome when same number may not come on the dice thrown two times = Number of outcomes except (1,1), (2, 2), (3, 3), (4,4), (5, 5), (6, 6) = 36 – 6 = 30 Probability that same number may not come on the dice thrown two times = 30\\36=5/6",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u14_w_29f269ea77",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Two dice are thrown simultaneously. Determine the probability that the difference of the numbers on the two dice is 2",
+      "model_answer": "Two dice are thrown Total possible outcomes = 36 Favourable outcomes, that difference of numbers on the two dice is 2 are. (1, 3), (3,1), (2, 4), (4,2), (3, 5), (5, 3), (4, 6), (6, 4) Number of favourable outcomes = 8 Required Probability =8/36=2/9 2012",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
       ]
     }
   ]

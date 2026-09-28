@@ -1935,8 +1935,8 @@ def get_harshit_class10_week_config(unit_id: int) -> dict:
             "use_chapter_llm": True,
             "grok_fresh_only": False,
             "include_board_pyq": True,
-            "pyq_count": 4,
-            "pyq_written_slots": 2,
+            "pyq_count": 10,
+            "pyq_written_slots": 5,
             "unit_id": unit_id,
         }
     try:
@@ -1953,13 +1953,13 @@ def get_harshit_class10_week_config(unit_id: int) -> dict:
     except (TypeError, ValueError):
         practice_difficulty = 3
     try:
-        pyq_count = max(0, min(15, int(data.get("pyq_count", 4))))
+        pyq_count = max(0, min(15, int(data.get("pyq_count", 10))))
     except (TypeError, ValueError):
-        pyq_count = 4
+        pyq_count = 10
     try:
-        pyq_written_slots = max(0, min(8, int(data.get("pyq_written_slots", 2))))
+        pyq_written_slots = max(0, min(8, int(data.get("pyq_written_slots", 5))))
     except (TypeError, ValueError):
-        pyq_written_slots = 2
+        pyq_written_slots = 5
     return {
         "week_label": row["week_label"] or data.get("week_label", ""),
         "topics": topics,
@@ -2256,8 +2256,8 @@ def save_harshit_class10_week_config(
     use_chapter_llm: bool = True,
     grok_fresh_only: bool = False,
     include_board_pyq: bool = True,
-    pyq_count: int = 4,
-    pyq_written_slots: int = 2,
+    pyq_count: int = 10,
+    pyq_written_slots: int = 5,
 ) -> None:
     payload = {
         "week_label": week_label,

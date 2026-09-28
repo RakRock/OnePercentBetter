@@ -742,8 +742,8 @@ def default_week_config(unit_id: int) -> dict:
         "use_chapter_llm": True,
         "grok_fresh_only": False,
         "include_board_pyq": True,
-        "pyq_count": 4,
-        "pyq_written_slots": 2,
+        "pyq_count": 10,
+        "pyq_written_slots": 5,
         "unit_id": unit_id,
     }
 
@@ -760,13 +760,14 @@ def format_week_plan_summary(unit_id: int, config: dict) -> str:
     if config.get("use_chapter_llm"):
         mode = "all fresh from Grok" if config.get("grok_fresh_only") else "Grok + bank fallback"
         lines.append(f"  • xAI (Grok): on ({mode})")
-    if config.get("include_board_pyq", True):
-        lines.append(
-            f"  • Board PYQs: {int(config.get('pyq_count', 4))} per session "
-            f"({int(config.get('pyq_written_slots', 2))} written)"
-        )
     else:
         lines.append("  • xAI (Grok): off — templates & bank only")
+    if config.get("include_board_pyq", True):
+        import harshit_class10_practice_pyq as h10pyq
+
+        lines.append(f"  • Daily set: 10 questions — {h10pyq.pattern_summary(unit_id)}")
+    else:
+        lines.append("  • Daily set: chapter practice (previous-year paper off)")
     return "\n".join(lines) if lines else "No topics selected."
 
 

@@ -1,0 +1,769 @@
+{
+  "meta": {
+    "subject": "biology",
+    "unit_id": 4,
+    "chapter": "Heredity",
+    "sources": [
+      "PYQ:science_objective_pyq"
+    ]
+  },
+  "mcq": [],
+  "short_answer": [
+    {
+      "id": "pyq_bio_u04_sa_835e72c07b",
+      "source_paper": "science_objective_pyq",
+      "question": "A Mendelian experiment consisted of breeding pea plants bearing violet flowers with pea plants bearing white flowers. What will be the result in Fj progeny?",
+      "model_answer": "All will bear violet flowers.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_4386763906",
+      "source_paper": "science_objective_pyq",
+      "question": "In a beetle population, the number of green beetles is more than blue and red beetles. Give a reason behind this situation.",
+      "model_answer": "Variation/Natural selection.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_bfb759549b",
+      "source_paper": "science_objective_pyq",
+      "question": "What indication do we get by reappearance of dwarf plant in F2 generation?",
+      "model_answer": "After obtaining progeny in F2 generation in a dihybrid cross, Mendel concluded that when two pairs of traits are combined in a hybrid, one pair of character segregates independently of the other pair of character.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_5964728304",
+      "source_paper": "science_objective_pyq",
+      "question": "An organism which is a worm, has very simple ‘eyes’, that are really eye spots which detect light. Name that organism.",
+      "model_answer": "Planaria.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_3ddf425aef",
+      "source_paper": "science_objective_pyq",
+      "question": "Why is the progeny always tall when a tall pea plant is crossed with a short pea plant?",
+      "model_answer": "The trait which represents the tallness in a pea plant is dominant over the another trait, shortness (dwarf).",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_6b4fdc955f",
+      "source_paper": "science_objective_pyq",
+      "question": "All the variations in a species do not have equal chances of survival. Why?",
+      "model_answer": "Some variations are caused by environmental changes and they do not bring out any change in DNA. Therefore, all the variations do not have equal chances of survival.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_fbf92b4ea4",
+      "source_paper": "science_objective_pyq",
+      "question": "Why is it that asexual reproduction produces exact copies but sometimes minor variations are also seen CHAPTER Herededit and Evolution in next progeny?",
+      "model_answer": "Since no biochemical reaction is reliable, therefore, in copying of DNA, it may cause slight difference which causes these variations.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_e398a5e964",
+      "source_paper": "science_objective_pyq",
+      "question": "How can the chromosomes be identified?",
+      "model_answer": "In human beings, the individual chromosomes are identified by their lengths, position of centromere and banding pattern on staining.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_fe8ced2475",
+      "source_paper": "science_objective_pyq",
+      "question": "A normal baby girl receives her X chromosome from whom : mother, father, both mother and father or either from mother or father?",
+      "model_answer": "From both mother and father.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_1bba5404c4",
+      "source_paper": "science_objective_pyq",
+      "question": "No two individuals are absolutely alike in a population. Why?",
+      "model_answer": "All individuals have different kind of DNA. So all individuals are not alike to each other.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_d024a4756b",
+      "source_paper": "science_objective_pyq",
+      "question": "When does the process of gene flow take place?",
+      "model_answer": "Gene flow or gene migration takes place in between the populations that are partly but not completely separated.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_781e034b96",
+      "source_paper": "science_objective_pyq",
+      "question": "Mendel observed a contrasting trait in relation to position of flowers. Mention the trait.",
+      "model_answer": "Axial flower position (dominant), terminal flower position (recessive).",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_01b22ef3ff",
+      "source_paper": "science_objective_pyq",
+      "question": "Name the term used for the traits that are exhibited externally.",
+      "model_answer": "Phenotype.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_f80153bf7c",
+      "source_paper": "science_objective_pyq",
+      "question": "Give the respective scientific terms used for studying: a. the mechanism by which variations are created and inherited, and b. the development of new type of organisms from the existing ones.",
+      "model_answer": "a. Heredity b. Species",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_6724262a32",
+      "source_paper": "science_objective_pyq",
+      "question": "Give an example where sex determination is regulated by environmental factors.",
+      "model_answer": "In snail, sex is determined by environmental factors (temperature).",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_b34f156fdd",
+      "source_paper": "science_objective_pyq",
+      "question": "Define speciation.",
+      "model_answer": "Speciation means origin of new species from the existing one.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_6a570340ab",
+      "source_paper": "science_objective_pyq",
+      "question": "What is the effect of DNA copying which is not perfectly accurate on the reproduction process?",
+      "model_answer": "It will result in less variations which may further lead to less adaptation to changing environment, thus, giving less chances of survival.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_a15993e750",
+      "source_paper": "science_objective_pyq",
+      "question": "Name the plant on which Mendel performed his experiments.",
+      "model_answer": "Garden pea (Pisum sativum).",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_ab2b7e871f",
+      "source_paper": "science_objective_pyq",
+      "question": "What are the basic events in evolution?",
+      "model_answer": "The changes in DNA during reproduction are the basic events in evolution.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_77b11eefa0",
+      "source_paper": "science_objective_pyq",
+      "question": "What is genetic drift?",
+      "model_answer": "The change in the frequency of certain genes in a population over generations.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_f9ce05732f",
+      "source_paper": "science_objective_pyq",
+      "question": "What are analogous organs?",
+      "model_answer": "The organs which have similar functions but different structures are called analogous organs.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_b3e72e8c38",
+      "source_paper": "science_objective_pyq",
+      "question": "The human hand, cat paw and the horse foot, when studied in detail show the same structure of bones and point towards a common origin. a. What do you conclude from this? b. What is the term given to such structures?",
+      "model_answer": "a. They have common origin/ancestory. b. Homologous organs.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_7617664048",
+      "source_paper": "science_objective_pyq",
+      "question": "When a tall and dwarf pea plant were crossed, Fx showed only tall plants but in F2 generation, some plants were dwarf. What does it mean?",
+      "model_answer": "It means reappearance of the dwarf character, a recessive trait in B’2 generation shows that the dwarf trait/ character was present in individuals of F* but it did not express (due to the present of tallness, a dominant trait / character)",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_e1d5e9c224",
+      "source_paper": "science_objective_pyq",
+      "question": "How is the age of fossil determined?",
+      "model_answer": "The age of fossil fuels is determined through carbon- dating or time dating method.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_c96053d354",
+      "source_paper": "science_objective_pyq",
+      "question": "What is evolution?",
+      "model_answer": "Gradual unfolding of organisms from pre-existing organisms through change is called evolution.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_b57a1cb8c3",
+      "source_paper": "science_objective_pyq",
+      "question": "What are fossils? What is their significance in the study of evolution?",
+      "model_answer": "Fossils are impressions of the body/ body parts or",
+      "marks": 2
+    },
+    {
+      "id": "pyq_bio_u04_sa_4a625dcf2d",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) On what rules inheritance is based? (b) Is each trait influenced by both paternal and maternal DNA?",
+      "model_answer": "a. The rules of inheritance is based on the fact that the traits in the progeny are carried out by DNA’s of both the parents (mother and father). These rules are known s ‘Mendel’s Laws of Inheritance’. The rules are: (i) Law of dominance, (ii) Law of segregation, and (iii) Law of independent assortment. b. Yes, it is true that each trait is influenced by both paternal and maternal DNA.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_0aa424e5f5",
+      "source_paper": "science_objective_pyq",
+      "question": "a. How many gene sets should a germ cell have? b. Mention two factors causing evolution.",
+      "model_answer": "a. One gene set. b. (i) Reproduction isolation (ii) Natural selection",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_a1dd5bb058",
+      "source_paper": "science_objective_pyq",
+      "question": "What is micro evolution? Does it explain speciation?",
+      "model_answer": "a. In micro evolution, the changes are small which occurs in lower categories and change the common characteristics of a particular species. b. It does not properly explain speciation.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_ce35dc1b8d",
+      "source_paper": "science_objective_pyq",
+      "question": "In an area A, the leaf materials available to beetles were very less. What are the two consequences seen in case of beetles?",
+      "model_answer": "a. Due to poor nutrition, the average weight of adult beetles decreases. b. The number of beetles (population) decreases due to starvation.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_70429329da",
+      "source_paper": "science_objective_pyq",
+      "question": "What is F2 generation?",
+      "model_answer": "The generation produced by the offsprings of F1 generation i.e., first generation as parent is called F2",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_813923a706",
+      "source_paper": "science_objective_pyq",
+      "question": "“The chromosome number of the sexually producing parents and their offspring is the same”. Justify this statement.",
+      "model_answer": "In sexual reproduction, both the gametes (male and female) contain half the number of chromosomes (haploid or n) and by the fusion of these gametes, the zygote have full set (diploid 2n) chromosomes.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_cb224f9d0e",
+      "source_paper": "science_objective_pyq",
+      "question": "How did Mendel explain that it is possible that a trait is inherited but not expressed in an organism?",
+      "model_answer": "Yes, it is possible. Example - When pure tall pea plants are crossed with pure dwarf pea plants, only tall pea plants are obtained in F1 generation. On selfing tall plants of F1 both tall and dwarf plants are obtained in F2 generation in the ratio 3:1. Reappearance of the dwarf character, a recessive trait in F2 generation shows that the dwarf trait/ character was present in individuals of F1 but it did not express (due to the present of tallness, a dominant trait / character)",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_150b3698ab",
+      "source_paper": "science_objective_pyq",
+      "question": "What is a dominant trait with respect to height in pea plant. Give any two examples.",
+      "model_answer": "Characters/Traits like ‘T’ are called dominant trait (because it express itself) ‘t’ are recessive trait (because it remains supressed). Character Dominant Trait Recessive Trait Seed shape Round Wrinkled Pod shape Inflated Constricted Pod colour Green Yellow Height of plant Tall Dwarf",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_db91fa5894",
+      "source_paper": "science_objective_pyq",
+      "question": "Variations are important for the survival of species overtime. Justify this statement with reasons.",
+      "model_answer": "a. It causes adaptations, b. It promotes natural selection.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_7fa06aadb1",
+      "source_paper": "science_objective_pyq",
+      "question": "How can we say that change in genes can be brought about the change in DNA?",
+      "model_answer": "A gene is a segment of DNA on a chromosome occupying a specific position. a. It provides informations from one protein to",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_a3290fe380",
+      "source_paper": "science_objective_pyq",
+      "question": "Where are the genes located? What is the chemical nature of gene?",
+      "model_answer": "Genes are located on chromosomes in linear sequence and at fixed positions. Chemically, genes are acidic in nature since they are nucleic acids which constitute DNA.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_a3642a7f6b",
+      "source_paper": "science_objective_pyq",
+      "question": "State the meaning of inherited traits and acquired traits. Which of the two is not passed on to the next generation? Explain with the help of an example.",
+      "model_answer": "Acquired Trait Inherited Trait 1 Experiences of an individual during its lifetime. Genetically inherited",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_20d5c6ce63",
+      "source_paper": "science_objective_pyq",
+      "question": "Tails of some mice were amputated and they were allowed to breed. The mice that were produced also had their tails amputated and it was repeated for many generations. What is the reason of tail appearing again and again?",
+      "model_answer": "Such traits are acquired traits. Traits acquired during the life-time of an individual are not inherited as these changes are not in the genes of reproductive tissues. The changes in the non-reproductive tissues cannot be passed on to the DNA of the germ cells, hence such acquired changes are not inherited by the progeny. Example: tailless mice (if tail is removed by surgery) cannot produce tailless progeny.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_46c1118e2d",
+      "source_paper": "science_objective_pyq",
+      "question": "a. Write full form of DNA. b. Why are variations essential for the species?",
+      "model_answer": "a. Deoxyribonucleic acid b. Survival",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_fc76fda9c0",
+      "source_paper": "science_objective_pyq",
+      "question": "What is the importance of DNA copying in reproduction? Why is variation beneficial to the species but not necessary for the individual? Explain.",
+      "model_answer": "DNA copying is essential part of reproduction because it ensures that same blueprint of the body design is maintained. Variation for the species is beneficial for adaptation and better survival. It may result in new species formation.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_eef1fb73df",
+      "source_paper": "science_objective_pyq",
+      "question": "a. “Recent fossils are found closer to the earth’s surface”. Comment on the statement stating reason. b. List two factors which could lead to the rise of new species.",
+      "model_answer": "a. This statement is correct as the fossils found closer to the surface of earth are more recent and those found in deeper layers are older ones. b. Natural selection and genetic drift.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_901d06bb39",
+      "source_paper": "science_objective_pyq",
+      "question": "“Experience of an individual during its lifetime cannot be passed on its progeny and cannot direct evolution”. Justify this statement giving an example.",
+      "model_answer": "Since acquired characters are not inherited over generations. Change in non-reproductive tissues cannot be passed on to the DNA of the germ cells.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_5d016dbd88",
+      "source_paper": "science_objective_pyq",
+      "question": "What are sex chromosomes? Which sex chromosomes are found in male and female human beings? State the chromosome responsible for the development of male child in human beings?",
+      "model_answer": "Sex chromosomes are set of chromosomes present in human beings which help in sex determination. XX and XY. Y chromosome.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_c656849cf6",
+      "source_paper": "science_objective_pyq",
+      "question": "How are fossil studies important in working out evolutionary relationships. How would the age of fossils be determined?",
+      "model_answer": "Fossils are impressions of the body/ body parts or the remains of organisms living in the past, which got preserved in sediments of earth. Any remains of an organism that has been preserved in the earth’s crust. Study of fossils helps in working out evolutionary relationships. Age of fossils can be determined by time dating using isotopes of carbon (carbon dating).",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_1a074e12bd",
+      "source_paper": "science_objective_pyq",
+      "question": "A tall pea plant was crossed with a dwarf one. F1 generation was allowed to self pollinate and F2 generation was also obtained. Answer the following questions: a. What would be the phenotype of plants in F1 generation? b. What would be the phenotypic ratio in F2 generation? c. Give reason for your observation in F1 generation.",
+      "model_answer": "a. all tall b. 3:1 c. Reason: The tall trait of pea plant is dominant trait over short trait, a recessive trait.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_ed74c77513",
+      "source_paper": "science_objective_pyq",
+      "question": "a. Do eyes of octopus, insect and human show relation in their evolutionary process? b. How can we say that birds have evolved from reptiles?",
+      "model_answer": "a. No, eyes of these animals do not show any evolutionary relationship as they are analogous organs. b. The presence of feathers both in dinosaurs and birds indicate birds have evolved from reptiles. Some organs may be adapted to perform new functions during evolution, e.g., feathers which were meant for providing insulation in cold weather, slowly became adapted for flight. Hence birds are closely related to reptile as dinosaurs had feathers, though could not fly.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_c59ad17275",
+      "source_paper": "science_objective_pyq",
+      "question": "From the set of figures given below, make a pair of homologous and analogous organs each and give one reason in case of both, to justify your answer.",
+      "model_answer": "Organs: a. Bird wing and Bat wing - Analogous organs. Structures are different but functions are same. b. Human forelimb and Bird wing — Homologous organs. Structure are same but functions are different.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_e967048b18",
+      "source_paper": "science_objective_pyq",
+      "question": "Why do human beings look different from each other? What do you mean by species?",
+      "model_answer": "Human beings are sexually reproducing organisms. Genetic recombination occurs during gamete formation in the sex organs followed by union of two gametes coming from two parents with different genetic combination. Thus it ensures more diversity in characteristics in terms of colour, size, and looks. Inspite of this, they are able to reproduce among themselves to produce fertile offsprings. A species is a group of individuals which have some common characters and they are able to reproduce among",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_2c3a486fba",
+      "source_paper": "science_objective_pyq",
+      "question": "Some of the traits are acquired while others are inherited. Explain. Which of two will not be passed on to next generation?",
+      "model_answer": "Acquired traits are those features which are present in an organism due to experiences during its life time, for example, swimming and knowledge of a language in human beings. Inherited traits are those features which are transferred from one generation to the next through DNA or genes present in the cells of a reproductive tissue. For example, colour of eyes and hair in human beings. Traits acquired during the life time of an individual can not be inherited because the information of this feature is not ingrained in the DNA of individual.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_12eedd55e3",
+      "source_paper": "science_objective_pyq",
+      "question": "What is the difference between homologous and analogous organs? Give one example each.",
+      "model_answer": "a. Homologous organs: Structures in animals share a common ancestry. The structure, which has similar basic structure and developmental origin but perform different functions. For example: Fore limbs in vertebrates. Homologous organs give an evidence of common ancestory and evolutionary relationship between apparently different species. b. Analogous organs: Analogous organ are the organs in different organisms which have different basic structure but have similarity in shape and function. However, these organs do not provide an evidence in support with common ancestory, e.g., Wings of bat and bird.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_3152dbf7ad",
+      "source_paper": "science_objective_pyq",
+      "question": "Discuss the role of variations in evolution. What is natural selection and genetic drift? or Explain the following: (a) Speciation (b) Natural Selection",
+      "model_answer": "a. The members of a population have minor differences among them which is called variations. b. Two sources of variations are sexual reproduction and environmental factors. c. Sexual reproduction has greater chances of producing variation. d. Variations with some advantage has greater chances of surviving, for example, long neck of giraffe. e. Natural selection and genetic drift lead to formation of new species hence evolution. Natural Selection: Some variations may have survival advantage hence they happen to gain over others so that they can propagate more than others. Ultimately such variations are selected and propagated among all members of the population.",
+      "marks": 3
+    },
+    {
+      "id": "pyq_bio_u04_sa_a830701d70",
+      "source_paper": "science_objective_pyq",
+      "question": "Explain how gene expresses itself in a cell? Why are we somewhat similar to our parents yet not identical to them?",
+      "model_answer": "Genes are functional segments of DNA. They are units of heredity that gets passed on through reproduction from parents to progeny. It is the blue print of life. DNA expresses itself through synthesis of proteins. Proteins make structures in our body and also controls the functioning. In other words cells, tissues, organs and hence a living body expresses the traits inherited as genes/ DNA. Since we inherit the DNA, half from one and half from other parents, hence we somewhat resemble them. At the same time we show mixed traits of both so can not be identical to either of them.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_826a13443b",
+      "source_paper": "science_objective_pyq",
+      "question": "“It is a matter of chance whether a couple will have a male or a female child.” Justify this statement by drawing a flow chart.",
+      "model_answer": "Women produce only one type of ovum (carrying X chromosome) and males produce two types of sperms (carrying either X or Y chromosome) in equal proportions. So the sex of a child is a matter of chance depending upon the type of sperm fertilizing the ovum.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_1b5edefa47",
+      "source_paper": "science_objective_pyq",
+      "question": "How do Mendel’s experiments show that the a. traits may be dominant or recessive, b. traits are inherited independently?",
+      "model_answer": "a. When Mendel cross pollinated pure tall pea plants with pure dwarf pea plants, only tall plants were obtained in F1 generation. On self pollinating the F1 progeny, both tall and dwarf plants appeared in F2 generation in the ratio 3 : 1. Appearance of tall character in both the F1 and F2 shows that it is a dominant character. The absence of dwarf character in F1 generation and its reappearance in F2 shows dwarfness is the recessive character. b. When Mendel conducted a dihybrid cross having two sets of characters, he obtained only one set of parental characters in F1 generation whereas in F2 generation he obtained both the set of parental characters now recombined in the ratio of 9 : 3 : 3 : 1. The appearance of new recombinants in the F2 generation along with parental type shows that traits are inherited independently.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_a7f75cd2da",
+      "source_paper": "science_objective_pyq",
+      "question": "“Natural selection and speciation lead to evolution”. Justify the statement.",
+      "model_answer": "Natural selection: Some variations are advantageous for an organism to adapt better in the prevailing conditions of habitat. It makes it easy to obtain food and mating partner by them. In this manner they are able to propagate more, transmitting their genes to next generation and producing more individuals with similar genetic makeup and phenotype. a. It leads to change in frequency of some genes in a population which give survival advantage to a species from elimination. b. When most of the members of a population possess this variation, it is called its adaptation. c. Over a period of time large numbers of adaptations are accumulated in the various populations of a species which may be physically segregated from each other. d. Geographical barriers like mountains, rivers etc., lead to incapability to reproduce amongst themselves in the population. e. By processes like genetic drift and natural selection combined with geographical separation, when the populations of a species become incompatible/ fail to reproduce with each other, speciation - evolution of a new species from pre-existing species - occurs.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_ebe97b566b",
+      "source_paper": "science_objective_pyq",
+      "question": "With the help of one example each, distinguish between inherited traits and acquired traits. Why are the traits acquired during the life time of an individual not inherited in the next generation? Explain the reason of this fact with an example. or Distinguish between inherited traits and acquired traits in a tabular form, giving one example of each.",
+      "model_answer": "Acquired Trait Inherited Trait 1 Experiences of an individual during its lifetime. Genetically inherited",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_33951fe56a",
+      "source_paper": "science_objective_pyq",
+      "question": "What is evolution? How does it occur?",
+      "model_answer": "Organic Evolution: Gradual unfolding of organisms from pre-existing organisms through change is called evolution. a. Evolution occurs in the form of genetic drift and natural selection combined with geographical separation. b. Speciation - evolution of a new species from pre- existing species-occurs. c. Fossils are impressions of the body/body parts or the remains of organisms living in the past, which got preserved in sediments of earth. d. Study of not living species but also fossils helps in working out evolutionary relationships. e. Fossils provide one of the most acceptable evidences in support of evolution, because we can study the evolutionary past of individuals in the form of their fossils.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_434f9a2aef",
+      "source_paper": "science_objective_pyq",
+      "question": "“Two areas of study namely evolution and classification are interlinked”. Justify this statement.",
+      "model_answer": "All living things are identified and categorised on the basis of their body design in form and function. After a certain body design comes into existence, it will shape the effects of all other subsequent design changes simply because it already exists. So, characteristics which came into existence earlier are likely to be more basic than characteristics which have come into existence later. This means that the classification of life forms will be closely related to their evolution. On connecting this idea of evolution to classification, it is seen that some groups of organisms with ancient body designs have not changed very much. However, other groups of organisms have acquired their particular body designs relatively recently. Because there is a possibility that complexity in design will increase over evolutionary time, it may not be wrong to say that older organisms are simpler, while younger organisms are more complex.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_02851011b5",
+      "source_paper": "science_objective_pyq",
+      "question": "Explain Mendel’s concept of heredity, by giving three points.",
+      "model_answer": "a. Mendel worked on pea plant {Pisum sativum) and discovered the fundamental laws of inheritance. He found that traits (characteristics) are controlled by factors (which are now called genes) and each factor (gene) come in pairs. These factors (genes) are inherited as distinct units, one from each parent. formation of gametes (sperms in males and ova in females) and they again combine in the offspring (one from each parent) and appear as dominant or recessive trait. This can be worked out by making a test cross. c. Mendel proposed three laws, namely: (i) Law of segregation: Each inherited trait is defined by a pair of gene. Parental genes are randomly separated to the germ-cells so that germ contain only one pair of gene. (ii) Law of independent assortment: Genes of different traits are sorted separately from one another so that the inheritance of one trait is not dependent on the inheritance of another. (iii) Law of dominance: An organism with alternate forms of a gene will express the form that is document.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_4efe82b0a7",
+      "source_paper": "science_objective_pyq",
+      "question": "a. What function is performed by human arms, forelimbs of dog and forelimbs of whales? b. Which type of organs are these? c. Why do we call them so?",
+      "model_answer": "a. Human arm : holding things Forelimbs of dog : running Forelimbs of whales : paddles b. Homologous, c. Same origin, different functions.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_872fb8a8a2",
+      "source_paper": "science_objective_pyq",
+      "question": "If a population of red beetles, living on green bushes, is being eaten by crows. During sexual reproduction, a green beetle is found in progeny: a. What is the future of new trait? b. Will it survive in the new habitat?",
+      "model_answer": "a. Among progeny, when green beetle is found, it escaped attack of crows as it merged with green colour. Green beetles increased, red decreased. b. New trait will survive.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_386a0d8811",
+      "source_paper": "science_objective_pyq",
+      "question": "An angiosperm plant having red coloured flowers when crossed with the other having the same colour produced 40 progenies, out of which 30 plants were with red coloured flowers, 10 plants were with white coloured flowers. Find out: a. What is the possible genotype of parent plants? b. Which trait is dominant and recessive? c. What is this cross called as and what is its phenotypic ratio?",
+      "model_answer": "a. Rr and Rr. b. Red colour of flowers is the dominant trait while white colour is the recessive trait. c. Monohybrid cross, phenotypic ratio is 3 : 1.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_3de1bb5f91",
+      "source_paper": "science_objective_pyq",
+      "question": "What is DNA copying? State its importance.",
+      "model_answer": "A process where a DNA molecule produces two similar copies of itself in a reproducing cell. Importance - a. It makes possible the transmission of characters from parents to the next generation. b. It causes variation in the population.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_90756b50ab",
+      "source_paper": "science_objective_pyq",
+      "question": "“We cannot pass on to our progeny the experiences and qualifications earned during our lifetime”. Justify the statement giving reason and examples.",
+      "model_answer": "Acquiring knowledge / skill in one’s lifetime such as learning dance, music, physical fitness or any other suitable example. Reason: a. Such characters / experiences acquired during one’s lifetime do not bring any change in the DNA of the reproducing c$ll/germ cell. b. Only germ cells are responsible for passing on the characters from the parents to the progeny.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_add9524484",
+      "source_paper": "science_objective_pyq",
+      "question": "a. Insects, octopus and vertebrates all have eyes. Can we group eyes of these animals together to establish a common evolutionary origin? Justify your answer. b. “Birds have evolved from reptiles”. State evidence to prove the statement.",
+      "model_answer": "a. No, the structure of the eye in each of the organisms is different. b. Fossils of certain dinosaurs/reptiles show imprints of feathers along with their bones but they could not fly presumably using the feathers for insulation. Later they developed / evolved and adapted feathers for flight, thus becoming the ancestors of present day birds. (OR any other suitable evidence/example)",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_192700633b",
+      "source_paper": "science_objective_pyq",
+      "question": "What are chromosomes ? Explain how in sexually reproducing organisms the number of chromosomes in the progeny is maintained.",
+      "model_answer": "Chromosomes - Thread like structures made up of DNA found in the nucleus. The original number of chromosomes becomes half during gamete formation. Hence, when the gametes combine, the original number of chromosomes gets restored in the progeny. (or same thing explained in the form of a flow chart).",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_9646a0137c",
+      "source_paper": "science_objective_pyq",
+      "question": "Explain with an example for each, how the following provides evidences in favour of evolution in organisms: a. Homologous organs b. Analogous organs c. Fossils",
+      "model_answer": "a. Homologous organs - study of homologous organs suggests that the organs having same structure but performing different functions have evolved from a common ancestor. Example: forelimbs of a frog, lizard, bird and man. b. Analogous organs - show adoption of organs for common use. Example: wings of butterfly and wings of bat. c. Fossils - provide the missing links between two species. Example: - Archeopteryx / fossils of some dinosaurs with feathers.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_fa897a2783",
+      "source_paper": "science_objective_pyq",
+      "question": "A pea plant with blue colour flower denoted by BB is cross-breed with a pea plant with white flower F1 progeny? b. What will be the percentage of plants bearing white flower in F2 generation, when the flowers of F1 plants were selfed? c. State the expected ratio of the genotypes BB and Bw in the F2 progeny.",
+      "model_answer": "a. F1 generation — blue. b. 25% c. BB : Bw = 1 : 2.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_26beb0468c",
+      "source_paper": "science_objective_pyq",
+      "question": "Give reasons for the following: a. Traits acquired during lifetime of an individual are not inherited. b. All the human beings belong to a single species. c. Variations keep on accumulating during reproduction and do not disappear in next generation.",
+      "model_answer": "a. These are acquired traits that do not make any change to the DNA of an organism. b. Homo sapiens originated in Africa and spread across the globe in stages. The humans with different colours in different regions have come into being as an accident of evolution, so that they could live their lives the best they could. So all belong to the same species. c. Inheritance from the previous generation provides both a common basic body design, and subtle changes in it, for the next generation. So the changes keep on accumulating generations after generations.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_7121306766",
+      "source_paper": "science_objective_pyq",
+      "question": "In a pea plant, find the contrasting trait if: a. the position of flower is terminal. b. the flower is white in colour. c. shape of pod is constricted.",
+      "model_answer": "a. Axial position of flower. b. Purple colour of flower. c. Inflated shape.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_0d9b112920",
+      "source_paper": "science_objective_pyq",
+      "question": "a. “Chromosomes are heredity carriers.” Why do we say so? b. Which vital function is not controlled by autosomes?",
+      "model_answer": "a. Chromosomes are made-up of DNA. Genes are located on the chromosomes. It is the DNA copy which transfers from both the parents to their offspring. Therefore, chromosomes made-up of DNA and containing genes are said to be the heredity carriers. b. Sex of the child is not controlled by autosomes.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_9f0e156e58",
+      "source_paper": "science_objective_pyq",
+      "question": "Variation is useful for the useful over long time. But the variants have unequal chances of survival. Explain this statement. or Define variation in a species. How does it increases the survival chances of a species? a. Identify the organism shown in the above figure. b. Name one incipient feature selected by the nature. c. Mention any other primitive feature of birds.",
+      "model_answer": "Variation are minor differences among members of a population. They are useful for the process of evolution which take place over long time. But some of the variants find it more advantageous in the present environmental conditions to survive than others variants by virtue of the variation possessed by them hence they have unequal chances of survival. Thus some get selected and others get eliminated. Those which survive pass their genes to next generation therefore frequency of genes possessed by them increase in frequency in the population. Example - in a population of beetles, a new variation (green colour) get survival benefit/advantage to green beetles whereas other (red) perishes.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_a221a62064",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Identify the organism shown in the above figure. (b) Name one incipient feature selected by the nature. (c) Mention any other primitive feature of birds.",
+      "model_answer": "a. Planaria. b. Eyes which were there only for detecting light.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_0f3cdaf709",
+      "source_paper": "science_objective_pyq",
+      "question": "With the help of suitable examples, explain why certain traits cannot be passed on to the next generation. What are such traits called?",
+      "model_answer": "Example: Acquiring knowledge by reading/change in body weight. Reason: Because such changes do not bring any change in the DNA of the germ cells/ such changes take place only in the non-reproductive tissues. Traits: Acquired traits.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_fb7763f521",
+      "source_paper": "science_objective_pyq",
+      "question": "List three main factors responsible for the speciation and briefly describe each one of them.",
+      "model_answer": "Genetic Drift: Random change in the frequency of genes. Natural Selection: Nature selects the fittest individual in a population. Reproductive Isolation: When two individuals are geographically isolated and natural selection operates upon them differently leading to inability of the individuals to interbreed.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_75352b9904",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Which type of organs are shown in the figure below? (b) Which type of origin and structure do these organs have?",
+      "model_answer": "a. These are organs which help in flying (wings of insects and wings of birds). b. The structure and components of these wings are different. They look similar because they have a common use for flying, but their origins are not common, i.e., they are analogous.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_c2cad6648b",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) “Each organism has its own identity”. Explain. (b) What is speciation?",
+      "model_answer": "a. (i) The DNA of each organism is different from",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_2a384b3de6",
+      "source_paper": "science_objective_pyq",
+      "question": "An organ like a wing in birds are an advantage to an organism. Did they appear in different stages or were formed due to a single sudden change in them.",
+      "model_answer": "Feathers in dinosaur were long and they could not fly using feathers. It gave them protection from cold weather and warmth. Birds seem to have later adapted the feathers to flight.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_77f903c405",
+      "source_paper": "science_objective_pyq",
+      "question": "How are fossils formed? Describe, in brief, two methods of determining the age of fossils.",
+      "model_answer": "Fossils are formed when dead organisms are not completely decomposed. The organisms may get trapped in resins of tree, lava of volcanoes or hot mud which when hardens, retains the animal’s parts thus, forming fossils. Two methods of determining the age of fossils: a. Relative method: By estimating the age of the layer of earth’s crust where the fossil is found. Fossils near the surface are recent and those in the deeper layers are more ancient. b. Radio-carbon dating method: By detecting the ratios of different isotopes of carbon in the fossils. Fossils help in determining the connecting links between various groups and their origin from their primitive ones, e.g., Archaeoptyrx.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_368e0a9956",
+      "source_paper": "science_objective_pyq",
+      "question": "Explain the term homologous organ with an example.",
+      "model_answer": "The organs which have similar basic structure and mode of origin but perform different functions in different animals are called homologous organs. E.g., Forelimbs of amphibians, reptiles, birds and mammals. Homologous organs give an evidence of common ancestory and evolutionary relationship between apparently different species.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_eac229317b",
+      "source_paper": "science_objective_pyq",
+      "question": "How green beetles had colour advantage over red beetles? Explain.",
+      "model_answer": "Green beetle merge with green background of vegetation which give survival advantage to a species from elimination. a. in the population of beetles, the new variation (green colour) get survival benefit / advantage to green beetles whereas other (red) perishes. b. It is because of Natural selection — some variations are advantageous for an organism to adapt better in the prevailing conditions of habitat. It makes it easy to obtain food and mating partner by them. In this manner they are able to propagate more, transmitting their genes to next generation and producing more individuals with similar genetic",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_96ac8c7408",
+      "source_paper": "science_objective_pyq",
+      "question": "Rekha is very dark in colour. She stays very quiet at home and in her class also. She is always seeing for the beauty products which can help her to become fair. Her friend Lila talks to her about excessive use of beauty products and tells her that they are very harmful and colour comes by birth and she is not responsible for her dark colour. a. What might have caused Rekha’s colour to be dark? b. Is it possible that all the family members of Rekha’s family were dark? c. What value do you learn?",
+      "model_answer": "a. Her dark colour may be due to the genetic inheritance. b. All may not be dark, depending upon the genes inherited and the environmental conditions that each one of them living in. c. Awareness, logical thinking, scientific temperament.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_bade7300a6",
+      "source_paper": "science_objective_pyq",
+      "question": "A cross was carried out between a pure bred tall pea plant and a pure bred dwarf pea plant and F1 progeny was obtained. Later, the F1 progeny was selfed to obtain F2 progeny. Answer the following questions: a. What is the phenotype of the F1 progeny and why? b. Give the phenotypic ratio of the F2 progeny. c. Why is the F2 progeny different from the F1 progeny?”",
+      "model_answer": "a. Tall, because genes responsible for tallness are dominant over dwarf trait. b. c. Because in F2 generation, recessive genes got expressed in homozygous condition.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_8c78cb3b39",
+      "source_paper": "science_objective_pyq",
+      "question": "a. State any two factors that could lead to the rise of a new species. b. How do analogous organs provide evidence in favour of evolution?",
+      "model_answer": "a. Natural Selection, Genetic drift, Mutations, Variations. b. The organs which are similar in function but are structurally different suggest that although these two organs may look alike superficially giving an idea of common ancestory but the different in structure and origin suggests that organisms having these organs have a distant ancestor but such organs have developed during the course of evolution as an adaptation to similar mode of life.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_c854040f36",
+      "source_paper": "science_objective_pyq",
+      "question": "Pollination and Fertilization (b) What do fossils tell us about the process of evolution?",
+      "model_answer": "a. (i) Organs in different organisms with same origin with different function/ different origin, same function. (ii) Transfer of pollen from the stamen to the pistil of the flower/fusion of male and female gametes. b. Help in establishing links and act as evidence of evolution.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_16a86d25db",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Explain giving examples how artificial selection has helped in the formation of newer varieties of cauliflower. (b) List the steps involved in the formation of new species. (c) How different races of human beings belong to the same species?",
+      "model_answer": "a. Formation of newer varieties, e.g., Broccoli, cauliflower, red cabbage, etc. by man. b. Migration, gene flow, natural selection, new species. c. Capable of interbreeding among themselves.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_9cfbc47896",
+      "source_paper": "science_objective_pyq",
+      "question": "What is speciation? Discuss any two factors that lead to speciation.",
+      "model_answer": "Speciation means creation of new species from pre exiting ones. The two main factors which could lead to the formation of a new species are natural selection leading to accumulation of adaptation in geographically separated populations of a species and development of reproductive barrier among them. Complete separation of sub-populations of a spices (Genetic drift) and difference in way of Natural selection in them for many generations results in speciation i.e. formation of new species that cannot interbreed under natural conditions.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_bc6f8349c1",
+      "source_paper": "science_objective_pyq",
+      "question": "A group of grasshoppers — some green and some brown lived in a grassland having dry bushes and dry grass. a. Which one would normally be picked up by predatory birds and why? b. Population of which grasshopper will increase? c. Name this phenomenon.",
+      "model_answer": "a. Green grass hopper, because they stand out, against brown background of dry bushes. b. Brown c. Natural selection.",
+      "marks": 3
+    },
+    {
+      "id": "pyq_bio_u04_sa_0a08607328",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Explain why the wing of a bat and the wing of bird are considered to be analogous organs. (b) List two factors that lead to the formation of a new species.",
+      "model_answer": "a. Design, structure and components are different. Origins are not common. b. Genetic drift and natural selection.",
+      "marks": 3
+    },
+    {
+      "id": "pyq_bio_u04_sa_f9aa38e8d4",
+      "source_paper": "science_objective_pyq",
+      "question": "a. Name the scientist who gave the idea of evolution of species by natural selection. b. What conclusion did Mendel draw from his experiments about traits? c. Arrange the following according to evolution. Cockroach, Mango tree, Gorilla, Fish",
+      "model_answer": "a. Darwin b. Traits are inherited independently. c. Mango tree — Cockroach - Fish — Gorilla.",
+      "marks": 3
+    },
+    {
+      "id": "pyq_bio_u04_sa_974d1f7e45",
+      "source_paper": "science_objective_pyq",
+      "question": "a. What are fossils? b. Explain the importance of fossils in evolutionary relationship.",
+      "model_answer": "a. Impressions of the body parts of the organisms and preserved traces of the living organisms are called fossils. b. The presence of fossilized remains of the organism is the evidence of existence of organisms million years ago which have now become extinct. Fossils",
+      "marks": 3
+    },
+    {
+      "id": "pyq_bio_u04_sa_21aca9352f",
+      "source_paper": "science_objective_pyq",
+      "question": "What are fossils? What do they tell about the process of evolution?",
+      "model_answer": "The fossils can be defined as remains or impressions of the hard parts of the past individuals in the strata of the earth. Fossils helps in working out evolutionary relationships. Fossils provide one of the most acceptable evidences in support of evolution, because we can study the evolutionary past of individuals in the form of their fossils. By studying fossils occurring in different strata of rocks, geologists are able to reconstruct the time course of evolutionary events. Age of fossils can also be found by time dating using isotopes of carbon (carbon dating).",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_b17b4e0c28",
+      "source_paper": "science_objective_pyq",
+      "question": "“Only variations that confer an advantage of an individual organism will survive in a population”. Comment.",
+      "model_answer": "According to Theory of Natural Selection, some variations are advantageous for an organism to adapt better in the prevailing conditions of habitat. It makes it easy to obtain food and mating partner by them. In this manner they are able to propagate more, transmitting their genes to next generation and producing more individuals with similar genetic makeup and phenotype. Though according to Genetic Drift Theory, even those not having a variation that confers an advantage also get to 5 survive but only in a small population. If due to an accident most of the individual with other variation get removed, the organisms with leftover variation get to propagate and survive under such circumstances. Hence it is wrong to say that only variations that confer an advantage of an individual organism will survive in a population.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_22d487fb1d",
+      "source_paper": "science_objective_pyq",
+      "question": "Explain the manner in which sex is determined in human beings? or Explain how equal genetic contribution of male and female parents is ensured in progeny?",
+      "model_answer": "[Delhi 2012] The sex of the child is determined at the time of fertilization when male and female germ-cells (gametes) are fused to form a zygote. The sex is determined by a specific pair of chromosomes called sex-chromosomes. In female human being, this pair consists of two similar (homologous) chromosomes denoted as XX. Hence, females produce only one type of gametes (Ova/ eggs) each having an “X’ chromosome. Whereas male human being has two different types of sex chromosomes i.e., X, Y (heterologous) having different sizes and shapes. Hence male produces two different kinds of gametes (sperms). Half of them have ‘X’ chromosome and half have Y” chromosome. If a sperm with “X’ fuses with the ovum, female child is born and if a sperm with ‘Y’ chromosome fuses with the ovum, male child is born as shown below in the cross. Hence, we find that the sex of the child is actually determined by the type of sperm that fuses with ovum at the time of fertilization. In this manner we can justify that the sex of the children is determined by what they inherit from their father and not their mother.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_4d6b51ae0a",
+      "source_paper": "science_objective_pyq",
+      "question": "How do Mendel’s experiment show that traits are inherited independently?",
+      "model_answer": "Mendel carried out dihybrid crosses by crossing two pea plants differing in contrasting traits of two characters. For example, he crossed a pea plant having yellow colour and round seed characters with another pea plant bearing green colour and wrinkled seed characters. In the F2 generation, he obtained pea plants with two parental and two recombinant phenotypes as yellow round and green wrinkled (parental) and yellow wrinkled and green round (recombinant). This indicated that traits separated from their original parental combinations and got inherited independently.",
+      "marks": 5
+    },
+    {
+      "id": "pyq_bio_u04_sa_2442fcdd3f",
+      "source_paper": "science_objective_pyq",
+      "question": "Define evolution. How does it occur? Describe how fossils provide us evidences in support of evolution.",
+      "model_answer": "Evolution is the formation of more complex organisms from pre-existing simpler organisms over a certain",
+      "marks": 5
+    },
+    {
+      "id": "pyq_bio_u04_sa_ef95a3bf7b",
+      "source_paper": "science_objective_pyq",
+      "question": "Give five points to show the significance of variations.",
+      "model_answer": "a. Variations help an organism to get adapted to the changing environment. b. Variations lead to evolution through natural selection and adaptation. c. During sudden change in the environment only those variants will make the population of that particular species which can withstand such changes. d. Variations result in more genetic vigour, i.e., organism emerges as a strong species maintaining its large population. e. Variations make an organism to be resistance to diseases and environmental fluctuations.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_96a082870f",
+      "source_paper": "science_objective_pyq",
+      "question": "a. “Evolution has occurred in stages.” Justify the statement. b. Differentiate between eye and eyespots. Which animal possesses eyespots?",
+      "model_answer": "a. “Evolution has occurred in stages” it is said because the process of evolution has took place over a long period of time. The complex organs are created bit-by-bit over generations. There was increasing complexity of the organs. For example, eye was present in the earliest organism as eyespot which got developed into a more complex and evolved eye. Further there are some organs in the human body which are present in the reduced form and do not perform any function, e.g., nictitating membrane of the eye, vermiform appendix, third pair of molars etc. Similarly, during the course of evolution, some structures changed their function. So we can see that evolution has occurred in stages over a long period of time. b. Eye is a complex structure made-up of different tissues which can see image as well as light whereas eyespots are merely dot-like structure to",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_00eb3620da",
+      "source_paper": "science_objective_pyq",
+      "question": "a. What are monohybrid and dihybrid cross? b. How Mendel proved that tallness is the dominant trait and dwarfness is recessive in a pea plant?. Explain with the help of a monohybrid cross.",
+      "model_answer": "a. A monohybrid cross is the cross between two homozygous parents, which differ in only one contrasting trait in F2 generation ratio 3:1. A dihybrid cross is a cross between two heterozygous parents which differ in two contrasting traits. This type of cross yields a phenotypic ratio of 9 : 3 : 3 : 1 in F2 generation. b. Mendel took pea plants with different characteristics - a tall plant and a short plant, produced progeny from them and calculated the percentage of tall or short progeny. It was found that all plants were tall. This proves that tallness is the dominant trait while dwarfness is the recessive trait.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_82dda6eb0f",
+      "source_paper": "science_objective_pyq",
+      "question": "What are fossils? How are they formed? Describe in brief two methods of determining the age of fossils. State any one role of fossils in the study of the process of evolution.",
+      "model_answer": "Fossils are preserved remains or impressions of pre- historic organisms in the different strata of the earth’s crust. or Fossils are dead remains of animals and plants from remote past. Fossils are formed when dead organisms are not completely decomposed. The organisms may get trapped in resins of tree, lava of volcanoes or hot mud which when hardens, retains the animal’s parts thus, forming fossils. Two methods of determining the age of fossils: a. Relative method: By estimating the age of the layer of earth’s crust where the fossil is found. Fossils near the surface are recent and those in the deeper layers are more ancient. b. Radio-carbon dating method: By detecting the ratios of different isotopes of carbon in the fossils. Fossils help in determining the connecting links between various groups and their origin from their primitive ones, e.g., Archaeoptyrx.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_b0fb09d5f0",
+      "source_paper": "science_objective_pyq",
+      "question": "What is speciation? List four factors that could lead to speciation. Which of these cannot be major factors in the speciation of a self pollinating plant species? Explain.",
+      "model_answer": "Speciation - formation of new species from pre-existing ones. Factors - (1) Mutations (2) Natural selection (3) Genetic drift (4) Geographical Isolation Geographical isolation cannot be a major factor in the speciation of a self pollinating plant species. Reason - physical barrier cannot be created in self pollinating plants.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_7902f48d8b",
+      "source_paper": "science_objective_pyq",
+      "question": "a. Why do we say that homozygous plants produce pure progeny? b. Define heterozygous. c. Explain how the process of speciation take place.",
+      "model_answer": "a. Because of presence of same set of genes. b. Having different pair of genes. c. (i) Natural selection. (ii) Geographical isolation, reproductive isolation. (iii) Genetic drift. (iv) Accumulated variations causing changes in the DNA of germ cells to an extent, such as a change in the number of chromosomes. Due to this, the germ cells of the two groups cannot fuse with each other. This results in the emergence of a new species.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_d600b3da77",
+      "source_paper": "science_objective_pyq",
+      "question": "Give differences between: a. Heredity and variations. b. Dominant and recessive traits, c. Natural and artificial selection.",
+      "model_answer": "a. Heredity: It is the transmission of characters from parents to the next generation. Variations: The changes that occur in the DNA of an organism because of mutations, or by chance. b. Dominant: The trait which is able to express itself even in the presence of contrasting trait. It appears in all the progenies in Fj generation. Recessive: The trait which can express itself only in homozygous condition. It doesn’t appear in Fj generation. c. Natural selection: Is the gradual natural process by which any biological traits become either more or less common in a population. Example, red beetle eaten up by crow, leading to increase in the population of green beetle. Artificial selection: It is the artificial mechanism of selecting the breeds having desirable characters to bring about major changes in plant and animals. Example, different vegetables generated from wild variety of cabbage.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_ae0c7231a0",
+      "source_paper": "science_objective_pyq",
+      "question": "a. What is geographical isolation? b. Illustrate formation of a species with the help of an example where individuals are very different from each other and one capable of reproduction among themselves.",
+      "model_answer": "a. Geographical isolation is the isolation of population by physical barriers such as stretches of water or mountain ranges. b. There is a population of red beetles living in a mountain area covered with green bushes. Various sub-population in the large-population exists in the neighbourhood. Individuals of a sub¬population reproduce sexually among themselves and numerous variations accumulate in these sub-populations of red beetles. There may be some reproduction among these sub-populations. If a beetle from one sub- population strays into other’s area and some individuals from one sub¬population may be carried by predators to the area of other sub- population, then random reproduction takes place. It may lead to migration of genes from one sub¬population to other.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_a13d7d9a92",
+      "source_paper": "science_objective_pyq",
+      "question": "a. In which form the traits are transferred from parent to the offspring? b. Mention the two processes that essentially J occur in sexual reproduction? c. How the number of chromosomes is retained in a species?",
+      "model_answer": "a. Chromosomes - thread like structures made up of DNA found in the nucleus. b. Formation of gametes that involves reducing the chromosome number to half and genetic recombination. Fusion of gametes to maintain the chromosome number characteristic of that species. c. The original number of chromosomes becomes half during gamete formation. Hence, when the gametes combine, the original number of chromosomes gets restored in the progeny, (or same thing explained in the form of a flow chart).",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_e64af5dc55",
+      "source_paper": "science_objective_pyq",
+      "question": "Given below is the experiment carried out by Mendel to study inheritance of two traits in garden-pea. a. Fill in the boxes with appropriate answer. b. Why did Mendel carry out an experiment with two traits? c. What were his findings with respect to inheritance of traits in Fj and F2 generations? d. What do you conclude from this experiment?",
+      "model_answer": "a. Gametes - Ry, rY F1 - RrYy Ratio - 9 : 3 : 3 : 1 b. To study the independent inheritance of two traits in subsequent generation. c. F1 progeny exhibited both the dominant traits. F2 exhibited parental traits along with new mixtures/recombinants.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_bio_u04_sa_2d6c54b3c3",
+      "source_paper": "science_objective_pyq",
+      "question": "Woman are often blamed for bearing daughters. As a student with knowledge in science how will you explain it to your fellow students that the sex of the child is not determined by mother’s genetic contribution?",
+      "model_answer": "Sex of the child is not determined by mother’s genetic contribution. The sex is determined by a specific pair of 7 chromosomes called sex-chromosomes. In female, this pair consists of two similar (homologous) chromosomes denoted as XX. Hence, females produce only one type of gametes (Ova/eggs) each having an ‘X’ chromosome. Whereas male human being has two different types of sex chromosomes i.e., X, Y (heterologous) having different sizes and shapes. Hence male produces two different kinds of gametes (sperms). Half of them have “X’ chromosome and half have ‘Y’ chromosome. If a sperm with ‘X’ fuses with the ovum, female child is born and if a sperm with ‘Y’ chromosome fuses with the ovum, male child is bom as shown below in the cross. Therefore, the father’s genes is responsible for the determination of the sex of the child.",
+      "marks": 1
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import database as db
 import edgenuity_practice_email as ec3mail
 import google_sheets_sync as gss
 import harshit_class10_practice as h10p
+import harshit_class10_practice_pyq as h10pyq
 import harshit_class10_questions as h10q
 import harshit_class10_topics as h10t
 import harshit_class10_units as h10u
@@ -57,8 +58,8 @@ def ensure_week_config(unit_id: int) -> dict:
         use_chapter_llm=True,
         grok_fresh_only=False,
         include_board_pyq=bool(starter.get("include_board_pyq", True)),
-        pyq_count=int(starter.get("pyq_count", 4)),
-        pyq_written_slots=int(starter.get("pyq_written_slots", 2)),
+        pyq_count=int(starter.get("pyq_count", 10)),
+        pyq_written_slots=int(starter.get("pyq_written_slots", 5)),
     )
     return db.get_harshit_class10_week_config(unit_id)
 
@@ -71,7 +72,8 @@ def _start_practice(unit_id: int) -> None:
     config = ensure_week_config(unit_id)
     api_key = _xai_api_key()
     use_xai = bool(config.get("use_chapter_llm", True))
-    if use_xai and api_key:
+    use_pyq = bool(config.get("include_board_pyq", True))
+    if use_xai and api_key and not use_pyq:
         with st.spinner("Generating questions with Grok… (usually 15–45 sec)"):
             questions, grok_error = h10p.build_session_set(
                 unit_id, config, xai_api_key=api_key
@@ -301,28 +303,18 @@ def render_setup_panel(unit_id: int) -> None:
         current_levels[int(item["id"])] = list(item.get("levels", []))
 
     st.markdown("---")
-    st.markdown("#### Board previous-year questions (PYQ)")
+    st.markdown("#### Daily practice paper")
     include_board_pyq = st.toggle(
-        "Mix CBSE PYQs into each practice session",
+        "Use previous-year questions for the daily set",
         value=bool(current.get("include_board_pyq", True)),
         key=f"hm10_setup_pyq_{unit_id}",
     )
     if include_board_pyq:
-        st.slider(
-            "PYQ questions per session (of 15)",
-            min_value=0,
-            max_value=8,
-            value=int(current.get("pyq_count", 4)),
-            key=f"hm10_setup_pyq_count_{unit_id}",
+        st.caption(
+            f"Each session is 10 questions: {h10pyq.pattern_summary(unit_id)}. "
+            "The 2-mark and 3-mark split follows this chapter’s previous-year papers. "
+            "Written questions are self-check — work on paper, then open the model answer."
         )
-        st.slider(
-            "Written PYQ slots (2–5 mark style)",
-            min_value=0,
-            max_value=5,
-            value=int(current.get("pyq_written_slots", 2)),
-            key=f"hm10_setup_pyq_written_{unit_id}",
-        )
-        st.caption("Written PYQs use self-check with model answers — work on paper first.")
 
     st.markdown("---")
     st.markdown("#### Topics & difficulty levels")
@@ -351,11 +343,11 @@ def render_setup_panel(unit_id: int) -> None:
             bool(current.get("include_board_pyq", True)),
         )
         pyq_count = int(
-            st.session_state.get(f"hm10_setup_pyq_count_{unit_id}", current.get("pyq_count", 4))
+            st.session_state.get(f"hm10_setup_pyq_count_{unit_id}", current.get("pyq_count", 10))
         )
         pyq_written = int(
             st.session_state.get(
-                f"hm10_setup_pyq_written_{unit_id}", current.get("pyq_written_slots", 2)
+                f"hm10_setup_pyq_written_{unit_id}", current.get("pyq_written_slots", 5)
             )
         )
 
@@ -416,18 +408,18 @@ def render_practice_home(unit_id: int) -> None:
             st.markdown(f"- {line.strip().lstrip('•').strip()}")
 
     st.markdown("### Practice session")
-    xai_on = bool(config.get("use_chapter_llm", True))
-    api_key = _xai_api_key()
-    if xai_on and api_key:
-        mode = "Grok + bank fallback" if not config.get("grok_fresh_only") else "all fresh Grok"
+    if config.get("include_board_pyq", True):
         st.caption(
-            f"{h10p.DEFAULT_QUESTION_COUNT} questions · {mode} · {stats['total']} in bank"
+            f"10 previous-year questions · {h10pyq.pattern_summary(unit_id)}"
         )
     else:
-        st.caption(
-            f"{h10p.DEFAULT_QUESTION_COUNT} questions · {stats['total']} bank item(s) · "
-            "configure xAI in Week Setup"
-        )
+        xai_on = bool(config.get("use_chapter_llm", True))
+        api_key = _xai_api_key()
+        if xai_on and api_key:
+            mode = "Grok + bank fallback" if not config.get("grok_fresh_only") else "all fresh Grok"
+            st.caption(f"10 questions · {mode}")
+        else:
+            st.caption(f"10 questions · {stats['total']} bank item(s)")
 
     if st.button("Start practice", key=f"hm10_start_{unit_id}", use_container_width=True):
         _start_practice(unit_id)

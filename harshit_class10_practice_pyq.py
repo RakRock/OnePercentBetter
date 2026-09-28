@@ -10,13 +10,39 @@ import harshit_class10_unit_test as h10ut
 
 WRITTEN_BUCKETS = ("vsa", "sa", "la")
 
+# Daily practice: 5 × 1 mark, 4 × (2 or 3 mark), 1 × 5 mark.
+SESSION_SIZE = 10
+ONE_MARK_SLOTS = 5
+MID_MARK_SLOTS = 4
+FIVE_MARK_SLOTS = 1
+
 
 def pyq_defaults() -> dict[str, Any]:
     return {
         "include_board_pyq": True,
-        "pyq_count": 4,
-        "pyq_written_slots": 2,
+        "pyq_count": SESSION_SIZE,
+        "pyq_written_slots": MID_MARK_SLOTS + FIVE_MARK_SLOTS,
     }
+
+
+def two_three_split(unit_id: int) -> tuple[int, int]:
+    """Split the four middle slots using this unit's 2-mark vs 3-mark PYQ counts."""
+    seeds = h10bs.load_unit_seeds(unit_id)
+    two = len(seeds.get("vsa") or [])
+    three = len(seeds.get("sa") or [])
+    if two + three == 0:
+        return 2, 2
+    n_two = int(round(MID_MARK_SLOTS * two / (two + three)))
+    n_two = max(0, min(MID_MARK_SLOTS, n_two))
+    return n_two, MID_MARK_SLOTS - n_two
+
+
+def pattern_summary(unit_id: int) -> str:
+    n_two, n_three = two_three_split(unit_id)
+    return (
+        f"{ONE_MARK_SLOTS} × 1 mark, {n_two} × 2 mark, "
+        f"{n_three} × 3 mark, {FIVE_MARK_SLOTS} × 5 mark"
+    )
 
 
 def _wrap_mcq(raw: dict) -> dict:
@@ -115,6 +141,70 @@ def pick_pyq_questions(
 
     random.shuffle(picked)
     return picked
+
+
+def _take(unit_id: int, bucket: str, used_ids: set[str], *, marks: int | None = None) -> dict | None:
+    pool = [
+        q
+        for q in h10bs.load_unit_seeds(unit_id).get(bucket, [])
+        if q.get("id") not in used_ids and (marks is None or int(q.get("marks", marks)) == marks)
+    ]
+    if not pool and marks is not None:
+        pool = [q for q in h10bs.load_unit_seeds(unit_id).get(bucket, []) if q.get("id") not in used_ids]
+    if not pool:
+        return None
+    raw = random.choice(pool)
+    used_ids.add(str(raw["id"]))
+    return raw
+
+
+def _label_marks(question: dict, marks: int) -> dict:
+    question["marks"] = marks
+    question["category_label"] = f"Board PYQ ({marks} mark{'s' if marks != 1 else ''})"
+    return question
+
+
+def build_mark_pattern_session(unit_id: int, *, used_ids: set[str]) -> list[dict]:
+    """10 previous-year questions: five 1-mark, four 2/3-mark, one 5-mark."""
+    if not h10bs.seeds_available(unit_id):
+        return []
+
+    n_two, n_three = two_three_split(unit_id)
+    one_mark: list[dict] = []
+    seeds = h10bs.load_unit_seeds(unit_id)
+    if seeds.get("assertion_reason"):
+        raw = _take(unit_id, "assertion_reason", used_ids)
+        if raw:
+            one_mark.append(_label_marks(_wrap_ar(raw), 1))
+
+    while len(one_mark) < ONE_MARK_SLOTS:
+        raw = _take(unit_id, "mcq", used_ids)
+        if not raw:
+            break
+        one_mark.append(_label_marks(_wrap_mcq(raw), 1))
+
+    two_mark: list[dict] = []
+    for _ in range(n_two):
+        raw = _take(unit_id, "vsa", used_ids, marks=2)
+        if not raw:
+            break
+        two_mark.append(_label_marks(_wrap_written(raw, "vsa"), 2))
+
+    three_mark: list[dict] = []
+    for _ in range(n_three):
+        raw = _take(unit_id, "sa", used_ids, marks=3)
+        if not raw:
+            break
+        three_mark.append(_label_marks(_wrap_written(raw, "sa"), 3))
+
+    five_mark: list[dict] = []
+    raw = _take(unit_id, "la", used_ids, marks=5)
+    if raw:
+        five_mark.append(_label_marks(_wrap_written(raw, "la"), 5))
+
+    for group in (one_mark, two_mark, three_mark):
+        random.shuffle(group)
+    return one_mark + two_mark + three_mark + five_mark
 
 
 def inject_pyq_into_session(

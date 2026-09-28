@@ -7,10 +7,9 @@
       "CBSE 30/1/1",
       "CBSE 30/1/2",
       "CBSE SQP 2025-26",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -52,6 +51,162 @@
       ],
       "answer": 0,
       "explanation": "(x−2)(x−3)=0."
+    },
+    {
+      "id": "pyq_u04_mcq_c985f575da",
+      "source_paper": "math_objective_pyq",
+      "question": "Value(s) of k for which the quadratic equation x kx k 2 0 2 − + = has equal roots is/are",
+      "options": [
+        "0",
+        "4",
+        "8",
+        "0, 8"
+      ],
+      "answer": 3,
+      "explanation": "Comparing with ax For equal roots, the discriminant must be zero. Hence, the required values of k are 0 and 8."
+    },
+    {
+      "id": "pyq_u04_mcq_7bcc174ef1",
+      "source_paper": "math_objective_pyq",
+      "question": "The quadratic equation x x 2 5 1 0 2 − + = has",
+      "options": [
+        "two distinct real roots",
+        "two equal real roots",
+        "no real roots",
+        "more than 2 real roots"
+      ],
+      "answer": 2,
+      "explanation": "Comparing with ax Since, discriminant is negative, therefore quadratic has no real roots i.e., imaginary roots."
+    },
+    {
+      "id": "pyq_u04_mcq_2a2164fab9",
+      "source_paper": "math_objective_pyq",
+      "question": "The equation , x p x p 2 2 1 0 2 + + + = ^ h where p is real, always has roots that are",
+      "options": [
+        "Equal",
+        "Equal in magnitude but opposite in sign",
+        "Irrational",
+        "Real"
+      ],
+      "answer": 3,
+      "explanation": "Comparing with ax For any real value of p , h will always be positive as p2 cannot be negative for real p. Hence, the discriminant b will always be positive. When the discriminant is greater than 0 or is positive, then the roots of a quadratic equation are real."
+    },
+    {
+      "id": "pyq_u04_mcq_580e6c3ef7",
+      "source_paper": "math_objective_pyq",
+      "question": "The quadratic equation x x 2 3 2 0 2 4 9 − + = has",
+      "options": [
+        "two distinct real roots",
+        "two equal real roots",
+        "no real roots",
+        "more than 2 real roots"
+      ],
+      "answer": 1,
+      "explanation": "Discriminant has real and equal roots."
+    },
+    {
+      "id": "pyq_u04_mcq_9e377484cd",
+      "source_paper": "math_objective_pyq",
+      "question": "The quadratic equation x x 5 0 2 + − = has",
+      "options": [
+        "two distinct real roots",
+        "two equal real roots",
+        "no real roots",
+        "more than 2 real roots"
+      ],
+      "answer": 0,
+      "explanation": "has two distinct real roots."
+    },
+    {
+      "id": "pyq_u04_mcq_af2131b0c1",
+      "source_paper": "math_objective_pyq",
+      "question": "The quadratic equation x x 5 3 1 0 2 − + = has",
+      "options": [
+        "two distinct real roots",
+        "two equal real roots",
+        "no real roots",
+        "more than 2 real roots"
+      ],
+      "answer": 2,
+      "explanation": "Hence, roots of the equation are not real."
+    },
+    {
+      "id": "pyq_u04_mcq_412476f86e",
+      "source_paper": "math_objective_pyq",
+      "question": "The quadratic equation x x 4 3 2 0 2 − + = has",
+      "options": [
+        "two distinct real roots",
+        "two equal real roots",
+        "no real roots",
+        "more than 2 real roots"
+      ],
+      "answer": 2,
+      "explanation": "Hence, the given equation has no real roots."
+    },
+    {
+      "id": "pyq_u04_mcq_fe862bbf3d",
+      "source_paper": "math_objective_pyq",
+      "question": "The quadratic equation x x 3 4 3 4 2 + + has",
+      "options": [
+        "two distinct real roots",
+        "two equal real roots",
+        "no real roots",
+        "more than 2 real roots"
+      ],
+      "answer": 1,
+      "explanation": "Hence, the equation has real and equal roots."
+    },
+    {
+      "id": "pyq_u04_mcq_246b6a3a69",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : x x 4 12 9 0 2 − + = has repeated roots. Reas on : The quadratic equation ax bx c 0 2 + + = have repeated roots if discriminant D 0 > .",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 2,
+      "explanation": "Reason is false because if D repeated roots. Roots are repeated. Assertion (A) is true but reason (R) is false."
+    },
+    {
+      "id": "pyq_u04_mcq_2bad947c69",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : The equation x x x 3 1 2 2 2 + + = − ^ h is a quadratic equation. Reas on : Any equation of the form ax bx c 0 2 + + = where a 0 ! , is called a quadratic equation.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 3,
+      "explanation": "It is not of the form ax (d) Assertion (A) is false but reason (R) is true."
+    },
+    {
+      "id": "pyq_u04_mcq_78ba09f64b",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : The equation x kx 8 3 2 0 2 + + = has equal roots then the value of k is 3 8 ! . Reas on : The equation ax bx c 0 2 + + = has equal roots if D b ac 4 0 2 = − =",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Discriminant, For equal roots, D Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
+    },
+    {
+      "id": "pyq_u04_mcq_d0a8884aab",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : The roots of the quadratic equation x x 2 2 0 2 + + = are imaginary. Reas on : If discriminant D b ac 4 0 < 2 = − then the roots of quadratic equation ax bx c 0 2 + + = are imaginary.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Discriminant, Roots are imaginary. Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
     }
   ],
   "assertion_reason": [
@@ -62,38 +217,6 @@
       "reason": "The degree of a quadratic polynomial is 2.",
       "answer": 0,
       "explanation": "Both true; degree 2 limits zeroes to at most 2."
-    },
-    {
-      "id": "pyq_u04_ar_c7dbac4a75",
-      "source_paper": "objective_pyq",
-      "assertion": "is false but reason (R) is true. joining two points A (2, 6) and B (5, 1) in ratio 2 : 3,",
-      "reason": "is true. joining two points A (2, 6) and B (5, 1) in ratio 2 : 3,",
-      "answer": 0,
-      "explanation": ""
-    },
-    {
-      "id": "pyq_u04_ar_1846b506ed",
-      "source_paper": "objective_pyq",
-      "assertion": "and reason (R) are true but",
-      "reason": "are true but",
-      "answer": 0,
-      "explanation": ""
-    },
-    {
-      "id": "pyq_u04_ar_32e399663c",
-      "source_paper": "objective_pyq",
-      "assertion": "and reason (R) are true and reason",
-      "reason": "are true and reason",
-      "answer": 0,
-      "explanation": ""
-    },
-    {
-      "id": "pyq_u04_ar_7172f8a17d",
-      "source_paper": "objective_pyq",
-      "assertion": "and reason (R) are true but 14.6-14.8 48 reason (R) is not the correct explanation of",
-      "reason": "are true but 14.6-14.8 48 reason (R) is not the correct explanation of",
-      "answer": 0,
-      "explanation": ""
     }
   ],
   "vsa": [
@@ -141,6 +264,17 @@
       "rubric": [
         "Set Δ = 0",
         "Solve for k"
+      ]
+    },
+    {
+      "id": "pyq_u04_w_0c51999d03",
+      "source_paper": "most_repeated_pyq",
+      "marks": 3,
+      "question": "A two digit number is such that the product of the digits is 18. When 63 is subtracted from the number, the digits interchange their places. Find the number.",
+      "model_answer": "Let units digit be x. then tens digits = Number = . On interchanging the digits, the number becomes Therefore, ⇒ ⇒ ⇒ ⇒ ( ) ( ⇒( )( ) ) 0 neglecting the negative value of x as the digits is positive, Hence, the number =",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
       ]
     }
   ],

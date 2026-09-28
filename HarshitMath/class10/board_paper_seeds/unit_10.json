@@ -8,10 +8,9 @@
       "CBSE 30/1/2",
       "CBSE SQP 2025-26",
       "NCERT Ch 10",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -56,7 +55,7 @@
     },
     {
       "id": "pyq_u10_mcq_9fb39b67c2",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "In the given figure, PQ and PR are two tangents drawn to a circle with centre O. If ORQ = 25, then the measure of PQR is :",
       "options": [
         "65",
@@ -69,7 +68,7 @@
     },
     {
       "id": "pyq_u10_mcq_4bb984c948",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "In the given figure, PA is a tangent from an external point P to a circle with centre O. If <POB = 1150 , then <APO is equal to :",
       "options": [
         "25°",
@@ -79,6 +78,201 @@
       ],
       "answer": 0,
       "explanation": "25°"
+    },
+    {
+      "id": "pyq_u10_mcq_cff6260d9b",
+      "source_paper": "math_objective_pyq",
+      "question": "From an external point Q, the length of tangent to a circle is 12 cm and the distance of Q from the centre of circle is 13 cm. The radius of circle (in cm) is",
+      "options": [
+        "10",
+        "5",
+        "12",
+        "7"
+      ],
+      "answer": 1,
+      "explanation": "Let O be the centre of the circle. As per given information we have drawn the figure below. Radius is perpendicular to the tangent at the point , using Pythagoras theorem,"
+    },
+    {
+      "id": "pyq_u10_mcq_b5ed72f9dc",
+      "source_paper": "math_objective_pyq",
+      "question": "QP is a tangent to a circle with centre O at a point P on the circle. If OPQ T is isosceles, then OQR + equals.",
+      "options": [
+        "30c",
+        "45c",
+        "60c",
+        "90c"
+      ],
+      "answer": 1,
+      "explanation": "Let O be the centre of the circle. As per given information we have drawn the figure below. We know that, the radius and tangent are perpendicular at their point of contact. Now, in isosceles triangle POQ we have Equal sides subtend equal angles in isosceles triangle."
+    },
+    {
+      "id": "pyq_u10_mcq_ff6bcc7f2a",
+      "source_paper": "math_objective_pyq",
+      "question": "In figure, O is the centre of circle. PQ is a chord and PT is tangent at P which makes an angle of 50c with PQ POQ + is",
+      "options": [
+        "130c",
+        "90c",
+        "100c",
+        "75c"
+      ],
+      "answer": 2,
+      "explanation": "Due to angle between radius and tangent, Since equal opposite sides have equal opposite angles,"
+    },
+    {
+      "id": "pyq_u10_mcq_0f23f13690",
+      "source_paper": "math_objective_pyq",
+      "question": "In figure, AP , AQ and BC are tangents of the circle with centre O. If cm AB 5 = , AC 6 = cm and BC 4 = cm, then the length of AP (in cm) is",
+      "options": [
+        "15",
+        "10",
+        "9",
+        "7.5"
+      ],
+      "answer": 3,
+      "explanation": "Due to tangents from external points,"
+    },
+    {
+      "id": "pyq_u10_mcq_6e9c0f5f97",
+      "source_paper": "math_objective_pyq",
+      "question": "Two chords AB and CD of a circle intersect at E such that . cm AE 2 4 = , . cm BE 3 2 = and . cm CE 1 6 = . The length of DE is",
+      "options": [
+        "1.6 cm",
+        "3.2 cm",
+        "4.8 cm",
+        "6.4 cm"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u10_mcq_4a30ec650a",
+      "source_paper": "math_objective_pyq",
+      "question": "If a regular hexagon is inscribed in a circle of radius ,r then its perimeter is",
+      "options": [
+        "r 3",
+        "r 6",
+        "r 9",
+        "r 12"
+      ],
+      "answer": 1,
+      "explanation": "Side of the regular hexagon inscribed in a circle of radius r is also r , the perimeter is r"
+    },
+    {
+      "id": "pyq_u10_mcq_5f37e017a8",
+      "source_paper": "math_objective_pyq",
+      "question": "Two circles of radii 20 cm and 37 cm intersect in A and B. If O1 and O2 are their centres and , cm AB 24 = then the distance O O 1 2 is equal to",
+      "options": [
+        "44 cm",
+        "51 cm",
+        "40.5 cm",
+        "45 cm"
+      ],
+      "answer": 1,
+      "explanation": "Since C is the mid-point of AB,"
+    },
+    {
+      "id": "pyq_u10_mcq_b3309a0c13",
+      "source_paper": "math_objective_pyq",
+      "question": "In the adjoining figure, TP and TQ are the two tangents to a circle with centre O. If , POQ 110c + = then PTQ + is",
+      "options": [
+        "60c",
+        "70c",
+        "80c",
+        "90c"
+      ],
+      "answer": 1,
+      "explanation": "In quadrilateral OPTQ, we have"
+    },
+    {
+      "id": "pyq_u10_mcq_def9d298ec",
+      "source_paper": "math_objective_pyq",
+      "question": "In the adjoining figure, PT is a tangent at point C of the circle. O is the circumference of ABC T . If ACP 118c + = , then the measure of x + is",
+      "options": [
+        "28c",
+        "32c",
+        "42c",
+        "38c"
+      ],
+      "answer": 0,
+      "explanation": "We join OC as shown in the below figure. Here OC is the radius and PT is the tangent to circle at point C . Since O is the circumcentre, thus OA"
+    },
+    {
+      "id": "pyq_u10_mcq_058c0ba170",
+      "source_paper": "math_objective_pyq",
+      "question": "From an external point P , tangents PA and PB are drawn to a circle with centre O. If CD is the tangent to the circle at a point E and cm PA 14 = . The perimeter of PCD T is",
+      "options": [
+        "14 cm",
+        "21 cm",
+        "28 cm",
+        "35 cm"
+      ],
+      "answer": 2,
+      "explanation": "As per information given in question we have drawn Also, CD is tangent at point E on the circle. So, CA and CE are tangent to the circle from point Now, perimeter of"
+    },
+    {
+      "id": "pyq_u10_mcq_05f7066833",
+      "source_paper": "math_objective_pyq",
+      "question": "In the given figure, two tangents AB and AC are drawn to a circle with centre O such that BAC 120 + = c, then OA is equal to that",
+      "options": [
+        "AB 2",
+        "AB 3",
+        "AB 4",
+        "AB 5"
+      ],
+      "answer": 0,
+      "explanation": "So, by RHS congruence criterion,"
+    },
+    {
+      "id": "pyq_u10_mcq_5aa7ec06b0",
+      "source_paper": "math_objective_pyq",
+      "question": "If radii of two concentric circles are cm 4 and cm 5 , then the length of each of one circle which is tangent to the other circle, is",
+      "options": [
+        "cm 3",
+        "cm 6",
+        "cm 9",
+        "cm 1"
+      ],
+      "answer": 1,
+      "explanation": "Let C be the centre of two concentric circles C1 and C2, whose radii are r1 Now, we draw a chord ABof circle C2, which touches AB is tangent at P and CP is radius at P . Tangent at any point of circle is perpendicular to the radius through the point of contact. Now, in right triangle PAC By Pythagoras theorem we have So, length of chord,"
+    },
+    {
+      "id": "pyq_u10_mcq_ab89a2fb49",
+      "source_paper": "math_objective_pyq",
+      "question": "In figure, if AOB 125 + = c, then COD + is equal to",
+      "options": [
+        ". 62 5c",
+        "45c",
+        "35c",
+        "55c"
+      ],
+      "answer": 3,
+      "explanation": "We know that, a quadrilateral circumscribing a circle subtends supplementary angles at the centre of the"
+    },
+    {
+      "id": "pyq_u10_mcq_fd6118093a",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : If in a circle, the radius of the circle is 3 cm and distance of a point from the centre of a circle is 5 cm, then length of the tangent will be 4 cm. Reas on : (hypotenuse)2 = (base)2 + (height)2",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
+    },
+    {
+      "id": "pyq_u10_mcq_9a1e3b6bd5",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : The two tangents are drawn to a circle from an external point, then they subtend equal angles at the centre. Reas on : A parallelogram circumscribing a circle is a rhombus.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 1,
+      "explanation": "From an external point the two tangents drawn subtend equal angles at the centre. So assertion is true. Also, a parallelogram circumscribing a circle is a rhombus, so reason is also true but R is not correct explanation of A."
     }
   ],
   "assertion_reason": [
@@ -116,7 +310,7 @@
     },
     {
       "id": "pyq_u10_w_49061261ba",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "marks": 2,
       "question": "The coordinates of the centre of a circle are (2a, a 7). Find the value(s) of 'a' if the circle passes through the point (11, −9) and has diameter 10√2 units. 7. A person is standing at P outside a circular ground at a distance of 26 m from the centre of the ground. He found that his distances from the points A and B on the ground are 10 m (PA and PB are tangents to the circle). Find the radius of the circular ground. 8. In the given figure, O is the centre of the circle and BCD is tangent to it at C. Prove that BAC + ACD = 90 . 9. Prove that opposite sides of a quadrilateral circumscribing a circle subtend supplementary angles at the centre of the circle.",
       "model_answer": "radius = 5√2 units (2a − 11) 2 + (a − 7 + 9) 2 = 50 ⟹ a 2 − 8a + 15 = 0 ⟹ (a − 5)(a − 3) = 0 ⟹ a = 5, 3",
@@ -126,11 +320,11 @@
       ]
     },
     {
-      "id": "pyq_u10_w_e2d0e4a899",
-      "source_paper": "chapter_wise_pyq",
+      "id": "pyq_u10_w_30a2254898",
+      "source_paper": "most_repeated_pyq",
       "marks": 2,
-      "question": "(a) In the given figure, AP, AQ and BC are tangents to the circle with centre O. If AB = 6 cm, AC = 7 cm and BC = 5 cm, then what is the length of AP ? OR",
-      "model_answer": "AP = AB + BP = AB + BR,              AQ = AC + CQ = AC + CR",
+      "question": "Prove that line segment joining the points of contact of two parallel tangents to a circle is diameter of the circle. A P B R C O Q 2011/2012/2014/2015 D",
+      "model_answer": "To prove : POQ is a diameter. Construction: Through O, draw OR||BA or OR||CD as AB and CD are parallel tangents. Proof: OPA=90˚( Radius is always perpendicular to tangent) OR||BA (by construction) OPA+ POR=180˚. POR=180˚-90˚=90˚ Similarly, QOR=90˚ POR+ QOR=180˚. POQ is straight line through the center O. So, PQ is a diameter.",
       "rubric": [
         "Correct method",
         "Accurate final result"
@@ -198,6 +392,28 @@
         "TP = TQ",
         "∠OPT = 90°",
         "Angle relation proved"
+      ]
+    },
+    {
+      "id": "pyq_u10_w_ca72c75763",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "In given figure, AB is a chord of a circle, with centre O, such that AB = 16 cm and radius of circle is 10 cm. Tangents at A and B intersect each other at P. Find the length of PA",
+      "model_answer": "2015 Very Short Answer Type Questions [1 Mark",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u10_w_02cf7831aa",
+      "source_paper": "most_repeated_pyq",
+      "marks": 4,
+      "question": "Two circles with centers at O and O' touch each other externally at T as shown: R 12 cm 5 cm T P 13 cm O Q O' ' 3 cm If PR=12 CM, PO=13 cm, O'Q =5 cm and SQ=3 cm, find the length of line segment PQ.",
+      "model_answer": "Join OR and O'S In △ORP, ORP=90˚ (Radius is perpendicular to the tangent) OR2=OP2-PR2 =(13)2 - (12)2 =169-144 =25 So, OR=√ =5 cm. OT= 5 cm (Radii of the same circle) Similarly, in △O'QS, O'SQ=90˚ O'S2= O'Q2-QS2 So, =52 – 32 =16 cm. So, O'S=√ = 4 cm. O'T =4 cm (Radii of the same circle) Thus, PQ=PO+OT+O'T+O'Q (13+5+4+5) = 27 cm.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
       ]
     }
   ]

@@ -8,10 +8,9 @@
       "CBSE 30/1/2",
       "CBSE SQP 2025-26",
       "NCERT Ch 6",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -56,7 +55,7 @@
     },
     {
       "id": "pyq_u06_mcq_4ada400389",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "In the given figure, PQ || BC. If AP: AB = 3: 7 then, AQ: QC equals:",
       "options": [
         "3 : 7",
@@ -69,7 +68,7 @@
     },
     {
       "id": "pyq_u06_mcq_fec79e3eef",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "Which of the following is not the criterion for similarity of triangles ?",
       "options": [
         "AAA",
@@ -82,7 +81,7 @@
     },
     {
       "id": "pyq_u06_mcq_4c4b97c477",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "From the figures given below, which of the following is true about the measure of P ?",
       "options": [
         "<P = 60°",
@@ -94,17 +93,108 @@
       "explanation": " P = 40"
     },
     {
-      "id": "pyq_u06_mcq_0f08c68b48",
-      "source_paper": "chapter_wise_cached",
-      "question": "In the given figure, if PQ RS, then prove that POQ ~ SOR 4. 5. State \"Basic Proportionality Theorem\" and use it to prove the following: In a quadrilateral ABCD, diagonals AC and BD intersect each other at O 6. In triangles ABC and DEF, B = E, F = C and AB = 3 DE. Then, the two triangles are :",
+      "id": "pyq_u06_mcq_dc5369c9d5",
+      "source_paper": "math_objective_pyq",
+      "question": "In the given figure, DE BC z . The value of EC is",
       "options": [
-        "congruent but not similar",
-        "congruent as well as similar",
-        "neither congruent nor similar",
-        "similar but not congruent"
+        "1.5 cm",
+        "3 cm",
+        "2 cm",
+        "1 cm"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u06_mcq_d215c41417",
+      "source_paper": "math_objective_pyq",
+      "question": "In the given figure, x is",
+      "options": [
+        "a b ab +",
+        "b c ac +",
+        "b c bc +",
+        "a c ac +"
+      ],
+      "answer": 1,
+      "explanation": "is common and we have criterion of similarity,"
+    },
+    {
+      "id": "pyq_u06_mcq_46b6941b37",
+      "source_paper": "math_objective_pyq",
+      "question": "ABC T is an equilateral triangle with each side of length p 2 . If AD BC = then the value of AD is",
+      "options": [
+        "3",
+        "p 3",
+        "p 2",
+        "p 4"
+      ],
+      "answer": 1,
+      "explanation": "Option (B) is correct."
+    },
+    {
+      "id": "pyq_u06_mcq_a84b9c5d69",
+      "source_paper": "math_objective_pyq",
+      "question": "Which of the following statement is false?",
+      "options": [
+        "All isosceles triangles are similar.",
+        "All quadrilateral are similar.",
+        "All circles are similar.",
+        "None of the above"
       ],
       "answer": 0,
-      "explanation": "As PQ ∥ RS"
+      "explanation": "Isosceles triangle is a triangle in which two side of equal length. Thus two isosceles triangles may not be similar. Hence statement given in option (a) is false."
+    },
+    {
+      "id": "pyq_u06_mcq_48399c8f83",
+      "source_paper": "math_objective_pyq",
+      "question": "Two poles of height 6 m and 11 m stand vertically upright on a plane ground. If the distance between their foot is 12 m, then distance between their tops is",
+      "options": [
+        "12 m",
+        "14 m",
+        "13 m",
+        "11 m"
+      ],
+      "answer": 2,
+      "explanation": "Let AB and CD be the vertical poles as shown below. In right angled, Hence, distance between their tops is 13 m."
+    },
+    {
+      "id": "pyq_u06_mcq_20d6631e59",
+      "source_paper": "math_objective_pyq",
+      "question": "In a right angled ABC T right angled at B, if P and Q are points on the sides AB and BC respectively, then",
+      "options": [
+        "AQ CP AC PQ 2 2 2 2 2 + = + ^ h",
+        "AQ CP AC PQ 2 2 2 2 2 + = + ^ h",
+        "AQ CP AC PQ 2 2 2 2 + = +",
+        "AQ CP AC PQ 2 1 + = + ^ h"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u06_mcq_0b1fc10518",
+      "source_paper": "math_objective_pyq",
+      "question": "The area of a right angled triangle is 40 sq cm and its perimeter is 40 cm. The length of its hypotenuse is",
+      "options": [
+        "16 cm",
+        "18 cm",
+        "17 cm",
+        "data insufficient"
+      ],
+      "answer": 1,
+      "explanation": "Let c be the hypotenuse of the triangle, a and b be"
+    },
+    {
+      "id": "pyq_u06_mcq_ec7531575d",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : In the ABC 3 , cm AB 24 = , cm BC 10 = and cm AC 26 = , then ABC 3 is a right angle triangle. Reas on : If in two triangles, their corresponding angles are equal, then the triangles are similar.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 1,
+      "explanation": "and ABC is a right angled Also, two triangle are similar if their corresponding angles are equal. Both assertion (A) and reason (R) are true but reason (R) is not the correct explanation of assertion (A)."
     }
   ],
   "assertion_reason": [
@@ -142,7 +232,7 @@
     },
     {
       "id": "pyq_u06_w_8f885b9228",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "marks": 2,
       "question": "(a) If ∆ ABC ~∆PQR in which AB = 6 cm, BC = 4 cm, AC = 8 cm and PR = 6 cm, then find the length of (PQ + QR). 8. 9. (a) The diagonal BD of a parallelogram ABCD intersects the line segment AE at the point F, where E is any point on the side BC. Prove that DF× EF = FB ×FA. 10. In ∆ABC, if AD I BC and AD2 = BD ×DC, then prove that <BAC = 90 . 11. (a) The perimeter of a right triangle is 60 cm and its hypotenuse is 25 cm. Find the lengths of other two sides of the triangle",
       "model_answer": "and QR = 3 cm ∴ PQ + QR = 7.5cm",

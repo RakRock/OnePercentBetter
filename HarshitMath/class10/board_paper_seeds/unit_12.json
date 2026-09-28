@@ -8,10 +8,9 @@
       "CBSE 30/1/2",
       "CBSE SQP 2025-26",
       "NCERT Ch 12",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -56,7 +55,7 @@
     },
     {
       "id": "pyq_u12_mcq_0ce38192d6",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "Two wooden solid hemispheres of same radii r, are joined at a point, as shown in the figure. The total surface area of the object is :",
       "options": [
         "4r2",
@@ -68,17 +67,277 @@
       "explanation": "6r2"
     },
     {
-      "id": "pyq_u12_mcq_7871a8903b",
-      "source_paper": "chapter_wise_cached",
-      "question": "A cone with slant height 10 cm and radius 6 cm is surmounted on a hemisphere of same radius. The height of the toy is :",
+      "id": "pyq_u12_mcq_82d7f40833",
+      "source_paper": "math_objective_pyq",
+      "question": "The area of a circular ring formed by two concentric circles whose radii are 5.7 cm and 4.3 cm respectively is (Take .3 1416 π = )",
       "options": [
-        "12 cm",
-        "16 cm",
-        "14 cm",
-        "10 cm"
+        "44 sq. cm.",
+        "66 sq. cm.",
+        "22 sq. cm.",
+        "33 sq. cm."
       ],
       "answer": 0,
-      "explanation": "A toy is in the form of a cone surmounted on a hemisphere. The cone and"
+      "explanation": "Let the radii of the outer and inner circles be r1 and r2 respectively, we have"
+    },
+    {
+      "id": "pyq_u12_mcq_3228760362",
+      "source_paper": "math_objective_pyq",
+      "question": "In the adjoining figure, OABC is a square of side 7 cm. OAC is a quadrant of a circle with O as centre. The area of the shaded region is",
+      "options": [
+        ". cm 10 5 2",
+        ". cm 38 5 2",
+        "cm 49 2",
+        ". cm 11 5 2"
+      ],
+      "answer": 0,
+      "explanation": "Areas Related to Circles s Re lated to Circ Required area"
+    },
+    {
+      "id": "pyq_u12_mcq_c8b276843c",
+      "source_paper": "math_objective_pyq",
+      "question": "A sector is cut from a circular sheet of radius 100 cm, the angle of the sector being 240c. If another circle of the area same as the sector is formed, then radius of the new circle is",
+      "options": [
+        "79.5 cm",
+        "81.5 cm",
+        "83.4 cm",
+        "88.5 cm"
+      ],
+      "answer": 1,
+      "explanation": "Area of sector Let r be the radius of the new circle, then"
+    },
+    {
+      "id": "pyq_u12_mcq_62e239e5bb",
+      "source_paper": "math_objective_pyq",
+      "question": "If a circular grass lawn of 35 m in radius has a path 7 m wide running around it on the outside, then the area of the path is",
+      "options": [
+        "m 1450 2",
+        "m 1576 2",
+        "m 1694 2",
+        "m 3368 2"
+      ],
+      "answer": 2,
+      "explanation": "Radius of outer concentric circle,"
+    },
+    {
+      "id": "pyq_u12_mcq_92990bbe3f",
+      "source_paper": "math_objective_pyq",
+      "question": "If the area of a semi-circular field is 15400 sq m, then perimeter of the field is",
+      "options": [
+        "m 160 2",
+        "m 260 2",
+        "m 360 2",
+        "m 460 2"
+      ],
+      "answer": 2,
+      "explanation": "Let the radius of the field be r . Thus, perimeter of the field"
+    },
+    {
+      "id": "pyq_u12_mcq_87d5d46b1f",
+      "source_paper": "math_objective_pyq",
+      "question": "The area of the circle that can be inscribed in a square of side 6 cm is",
+      "options": [
+        "cm 36 2 π",
+        "1 cm 8 2 π",
+        "1 cm 2 2 π",
+        "9 cm2 π"
+      ],
+      "answer": 3,
+      "explanation": "side of square Diameter of circle is equal to the side of square. Diameter of a circle, Radius of a circle, Area of circle,"
+    },
+    {
+      "id": "pyq_u12_mcq_46f2a6b724",
+      "source_paper": "math_objective_pyq",
+      "question": "The sum of the areas of two circle, which touch each other externally, is 153 π . If the sum of their radii is 15, then the ratio of the larger to the smaller radius is",
+      "options": [
+        ": 4 1",
+        ": 2 1",
+        ": 3 1",
+        "None of these"
+      ],
+      "answer": 0,
+      "explanation": "Let the radii of the two circles be r1 and r2, then Solving, we get r1 Thus required ratio is 12 : 3 or 4 : 1."
+    },
+    {
+      "id": "pyq_u12_mcq_f96f32a3f9",
+      "source_paper": "math_objective_pyq",
+      "question": "A race track is in the form of a ring whose inner and outer circumference are 437 m and 503 m respectively. The area of the track is",
+      "options": [
+        "66 sq. cm.",
+        "4935 sq. cm.",
+        "9870 sq. cm",
+        "None of these"
+      ],
+      "answer": 1,
+      "explanation": "Option (B) is correct."
+    },
+    {
+      "id": "pyq_u12_mcq_90ccc2a7d9",
+      "source_paper": "math_objective_pyq",
+      "question": "In the given figure, OACB is a quadrant of a circle of radius 7 cm. The perimeter of the quadrant is",
+      "options": [
+        "11 cm",
+        "18 cm",
+        "25 cm",
+        "36 cm"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u12_mcq_48a021a3e6",
+      "source_paper": "math_objective_pyq",
+      "question": "If the circumference of a circle increases from 4 π to 8 π , then its area is",
+      "options": [
+        "halved",
+        "doubled",
+        "tripled",
+        "quadrupled"
+      ],
+      "answer": 3,
+      "explanation": "Thus area is quadrupled."
+    },
+    {
+      "id": "pyq_u12_mcq_0d37a2520a",
+      "source_paper": "math_objective_pyq",
+      "question": "If the radius of a circle is diminished by 10%, then its area is diminished by",
+      "options": [
+        "10%",
+        "19%",
+        "36%",
+        "20%"
+      ],
+      "answer": 1,
+      "explanation": "Let r be the radius of circle, then area When r is diminished by 10% Thus area is diminished by"
+    },
+    {
+      "id": "pyq_u12_mcq_2e19b0505b",
+      "source_paper": "math_objective_pyq",
+      "question": "If the perimeter of a semi-circular protractor is 36 cm, then its diameter is",
+      "options": [
+        "10 cm",
+        "14 cm",
+        "12 cm",
+        "16 cm"
+      ],
+      "answer": 1,
+      "explanation": "Option (B) is correct."
+    },
+    {
+      "id": "pyq_u12_mcq_71828b9b03",
+      "source_paper": "math_objective_pyq",
+      "question": "The area of a circular path of uniform width d surrounding a circular region of radius r is",
+      "options": [
+        "( ) d r d 2 π +",
+        "r d r 2 π + ^",
+        "d r r π + ^ h",
+        "d r d π + ^ h"
+      ],
+      "answer": 0,
+      "explanation": "Option (A) is correct."
+    },
+    {
+      "id": "pyq_u12_mcq_ee0e894f9c",
+      "source_paper": "math_objective_pyq",
+      "question": "It is proposed to build a single circular park equal in area to the sum of areas of two circular parks of diameters m 16 and m 12 in a locality. The radius of the new park would be",
+      "options": [
+        "m 10",
+        "m 15",
+        "m 20",
+        "m 24"
+      ],
+      "answer": 0,
+      "explanation": "Option (A) is correct."
+    },
+    {
+      "id": "pyq_u12_mcq_300aaf4607",
+      "source_paper": "math_objective_pyq",
+      "question": "The area of the square that can be inscribed in a circle of radius cm 8 is",
+      "options": [
+        "cm 256 2",
+        "cm 128 2",
+        "cm 64 2 2",
+        "cm 64 2"
+      ],
+      "answer": 1,
+      "explanation": "Radius of circle, Diameter of the circle, AC which is equal to the diagonal of a square. Let side of square be x . In right angled Area of square, Alternate Method : Radius of circle, Diameter of circle, Since, square inscribed in circle. Diagonal of square = Diameter of circle Now, Area of square"
+    },
+    {
+      "id": "pyq_u12_mcq_00f8c5f963",
+      "source_paper": "math_objective_pyq",
+      "question": "The radius of a circle whose circumference is equal to the sum of the circumferences of the two circles of diameters cm 36 and cm 20 is",
+      "options": [
+        "cm 56",
+        "cm 42",
+        "cm 28",
+        "cm 16"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u12_mcq_9e5c5595dc",
+      "source_paper": "math_objective_pyq",
+      "question": "The diameter of a circle whose area is equal to the sum of the areas of the two circles of radii cm 24 and cm 7 is",
+      "options": [
+        "cm 31",
+        "cm 25",
+        "cm 62",
+        "cm 50"
+      ],
+      "answer": 3,
+      "explanation": "Option (D) is correct."
+    },
+    {
+      "id": "pyq_u12_mcq_418d7c29c6",
+      "source_paper": "math_objective_pyq",
+      "question": "Reas on : Area of the circle with radius r is r2 π .",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 1,
+      "explanation": "Area of the sector Both assertion (A) and reason (R) are true but reason (R) is not the correct explanation of assertion (A)."
+    },
+    {
+      "id": "pyq_u12_mcq_30c7005a47",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : If the circumference of a circle is 176 cm, then its radius is 28 cm. Reas on : Circumference radius 2 # π =",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Both assertion and reason are correct. Also Reason is the correct explanation of the assertion."
+    },
+    {
+      "id": "pyq_u12_mcq_461185dc37",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : If the outer and inner diameter of a circular path is 10 m and 6 m then area of the path is m 16 2 π . Reas on : If R and r be the radius of outer and inner circular path, then area of path is R r 2 2 π − ^ h.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Area of the path Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
+    },
+    {
+      "id": "pyq_u12_mcq_af295b5d6a",
+      "source_paper": "math_objective_pyq",
+      "question": "Reas on : Circumference of the circle = length of the wire.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 3,
+      "explanation": "Area of the circle Assertion is not correct, but reason is true."
     }
   ],
   "assertion_reason": [
@@ -113,6 +372,61 @@
         "(1/3)πr²h",
         "12π cm³"
       ]
+    },
+    {
+      "id": "pyq_u12_w_fa05db320d",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 1,
+      "question": "If the total surface area of a solid hemisphere is 462 cm², find its volume.",
+      "model_answer": "Total surface area of solid hemisphere=2πr²+πr²=3πr² Now given 3πr²=462 r²=462 x 7/3 x 22 =49 r=7cm volume of hemisphere=2/3πr³=2/3 x 22/7 x (7)³=2/3 x 22/3 x 22 x 49 cm³ =718.67 cm³",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_5ceff5b943",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Two cubes, each of side 4 cm are joined end to end. Find the surface area of the resulting cuboid",
+      "model_answer": "Length of resulting cuboid, l = 4 cm + 4 cm = 8 cm Breadth, b = 4 cm, Height, h = 4 cm Surface area of cuboid = 2(lb + bh + hl) = 2 (8 x 4 + 4 x 4 + 8 x 4) = 160 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_12fc0af8d3",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "A cone of height 20 cm and radius of base 5 cm is made up of modelling clay. A child reshapes it in the form of a sphere. Find the diameter of the sphere",
+      "model_answer": "Height of the cone, H = 20 cm Radius of base, R = 5 cm Let radius of the sphere be ‘r’. A.T.Q. Volume of the cone = Volume of the sphere 1/3πR²H=4/3πr³ 5 x 5 x 20 =4xr³ =>5x5x20/4 = r³ => r³ = 5x5x5 => r = 5 cm Diameter of the sphere = 2 x 5 = 10 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_0070420c8d",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "Two cubes each of volume 27 cm3 are joined end to end to form a solid. Find the surface area of the resulting cuboid",
+      "model_answer": "Let ‘a’ be the side of each cube of volume 27 cm³ then a³ = 27 => a = 3 cm When two cubes are joined end to end to form a solid then cuboid will be formed. length of cuboid, l = 6 cm = 3 cm + 3 cm breadth of cuboid, b = 3 cm height of cuboid, h = 3 cm Total surface area of the cuboid = 2 (lb + bh + hL) = 2(6 x3 + 3×3 + 3×6) = 2(18 + 9 + 18) = 2 x 45 = 90 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_1bf1c082e2",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 2,
+      "question": "The dimensions of a metallic cuboid are 100 cm x 80 cm x 64 cm. It is melted and recast into a cube. Find the surface area of the cube",
+      "model_answer": "Dimensions of the metallic cuboid are 100 cm x 80 cm x 64 cm Metallic cuboid is recasted into a cube. Then, Volume of cuboid = Volume of cube => 100 x 80 x 64 = a³ (where a is the side of cube) =>³√100 x 80 x 64 = a ³√512000 = a > a = 80 cm Now, Surface area of the cube = 6a² = 6(80)² = 6 x 80 x 80 = 38400 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
     }
   ],
   "sa": [
@@ -140,8 +454,272 @@
       ]
     },
     {
+      "id": "pyq_u12_w_4abff4c97b",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A metal container, open from the top, is in the shape of a frustum of a cone of height 21 cm with radii of its lower and upper circular ends are as 8 cm and 20 cm respectively. Find the cost of milk which can completely fill the container at of rupees 35/litre",
+      "model_answer": "=1/3 x 22/7 x 21[400+64+160]=22 x 624/1000 liters[1 cm³=1/1000 l] cost of 1l milk=35rupees cost of milk in container=35 22 x 624/1000=480.48 rupees",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_e999f23b82",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "In figure, from a cuboidal solid metallic block of dimensions 15 cm X 10 cm X 5 cm, a cylindrical hole of diameter 7 cm is drilled out. Find the surface area of the remaining block.",
+      "model_answer": "Cuboid: Length of cuboid, l = 15 cm Breadth cuboid, b = 10 cm Height of cuboid, h = 5 cm Cylinder: Diameter of cylinder = 7 cm Radius of cylinder, r = 7/2 cm Height of cylinder, h’ = 5 cm Surface area of remaining block = Total surface area of cuboidal block + Curved Surface Area of cylinder – Area of 2 circles = 2(15 x 10 + 10 x 5 + 5 x 15) + 2 x 22/7 x 7/2 x 5- 2 x 22/7 x 7/2 x 7/2 = 2(150 + 50 + 75) + 110 – 77 = 550 + 33 = 583 cm².",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_a278cc65f2",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Due to sudden floods, some welfare associations jointly requested the government to get 100 tents fixed immediately and offered to contribute 50% of the cost. If the lower part of each tent is of the form of a cylinder of diameter 4.2 m and height 4 m with the conical upper part of same diameter but of height 2.8 m, and the canvas to be used costs 100 rupees per sq. m, find the amount, the associations will have to pay.What values are shown by these associations ?",
+      "model_answer": "Height of cylinder = 4 m Radius =2.1 m Curved surface area of cylinder = 2πrh = 2 x 22/7 x 2.1 x 4 = 52.8 m² Radius of cone = 2.1 m, height of cone = 2.8 m. Let slant height = l l = √r²+h² [ Pythagoras theorem] Slant height of cone, l = √(2.1)² + (2.8)² = 3.5 m Curved surface area of cone =πrl = 22/7 x 2.1 x 3.5 = 23.1 m² Area of canvas required for one tent = 52.8 + 23.1 = 75.9 m² Canvas required for 100 tents = 100 x 75.9 = 7590 m² Total cost = rupees (7590 x 100) = rupees 759000 Amount to be paid by association = 50/100 x 759000 = 379500 rupees Care for the society, values shown by welfare associations.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_4b27916ed7",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A hemispherical bowl of internal diameter 36 cm contains liquid. This liquid is filled into 72 cylindrical bottles of diameter 6 cm. Find the height of the each bottle, if 10% liquid is wasted in this transfer.",
+      "model_answer": "Radius of hemispherical bowl = 18 cm Volume of liquid in bowl = 2/3πr³ =2/3 x π x 18 x 18 x 18 =3888π cm³ liquid wasted=10/100 x 3888π cm³ = 3888π/10 cm³ liquid transferred into bottles =3888π-3888π/10 =34992π/10 cm³ radius of bottle=3cm let height = X cm volume of bottle =πr²h =π x 3 x 3 x X =9πX cm³ volume of 72 bottles =72 x 9πX cm³ =648πX cm³ 648πX = 34992π/10 X=34992/10 x 648 =5.4 cm Height of each bottle = 5.4 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_bdb5080be3",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A cubical block of side 10 cm is surmounted by a hemisphere. What is the largest diameter that the hemisphere can have? Find the cost of painting the total surface area of the solid so formed, at the rate of 5 rupee per 100 sq. cm",
+      "model_answer": "Largest diameter of hemisphere = 10 cm = Side of cube .’. radius = 5 cm Total surface area of the solid = Surface area of cube +Curved surface area of hemisphere – Area of base of hemisphere = 6(side)² + 2πr² – πr² = 6 x 10² + 2 x 3.14 x 5 x 5 – 3.14 x 5 x 5 = 600 + 78.5 = 678.5 cm² Total cost = 678.5 x 5 /100 = 33.92 rupees",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_7f7ddf7079",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "504 cones, each of diameter 3.5 cm and height 3 cm, are melted and recast into a metallic sphere. Find the diameter of the sphere and hence find its surface area",
+      "model_answer": "Volume of the cone =1/3 x πr²h =1/3π x 3.5/2 x 3.5/2 x 3 cm³ =12.25/4 πcm³ volume of 504 =504 x 12.25/4 πcm³ =1543.5 πcm³ volume of the sphere=1543.5 π³=volume of 504 cones 4/3πr³=1543.5π r³1543.5×3/4=1157.625 r=3√1157.625=10.5cm Diameter of sphere=21cm surface area of sphere=4πr² =4×22/7×10.5×10.5=1386cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_efeed516f6",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Two spheres of same metal weigh 1 kg and 7 kg. The radius of the smaller sphere is 3 cm. The two spheres are melted to form a single big sphere. Find the diameter of the new sphere.",
+      "model_answer": "Radius of smaller sphere = 3 cm Volume of smaller sphere =4/3πx3x3x3cm³=36π cm³ When Mass=1kg,then volume=36π cm³ When Mass = 7 kg volume=7×36π cm³=252π cm³ total value of two spheres=36π+252π =288π cm³ let the radius of sphere so formed=R cm volume of big sphere=total volume of 2 sphere 4/3πR³=288π R³=288 x 3/4=72 x 3 =216 R=6 cm Diameter =12 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_988ee72ece",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A metallic cylinder has radius 3 cm and height 5 cm. To reduce its weight, a conical hole is drilled in the cylinder. The conical hole has a radius of 3/2 cm and its depth 8/9 cm. Calculate the ratio of the volume of metal left in the cylinder to the volume of metal taken out in conical shape",
+      "model_answer": "Given, Radius of the cylinder = 3 cm Height = 5 cm Volume of cylinder = πr²h =π x 3 x 3 x 5 cm³=45π cm³ Radius of cone = 3/2 cm Height of the cone =8/9 cm Volume of the cone =1/3 πr²h =1/3π x 9/4 x 8/9 = 2π/3cm³ Volume of metal left =45π-2π/3=133π/3 cm³ Ratio=volume of metal left in cylinder/volume of the metal taken out=133π/3:2π/3=133:2",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_672fcc846c",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A solid right-circular cone of height 60 cm and radius 30 cm is dropped in a right- circular cylinder full of water of height 180 cm and radius 60 cm. Find the volume of water left in the cylinder, in cubic metres",
+      "model_answer": "Radius of cone = 30 cm height of cone = 60 cm Volume of cone = 1/3πr² h =1/3π x 30 x 30 x 60 =18000 π cm³ Radius of cylinder = 60 cm Height of cylinder = 180 cm Volume of cylinder =πr²h =π x 60 x 60 x 180 cm³ = 648000 π cm³ volume of water left=volume of cylinder-volume of cone =648000π-18000π =630000 π cm³ =630000 x 22/7 =1980000 cm³ =1.98 m³",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_5cfa98f6d7",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "The rain water from a 22 m x 20 m roof drains into a cylindrical vessel of diameter 2 m and height 3.5 m. If the rain water collected from the roof fills 4/5th of the cylindrical vessel, then find the rainfall in cm",
+      "model_answer": "Let the rainfall=x m volume of rain water=lbh =22 x 20 x X =440X m³ radius of cylindrical vessel=1 m height =3.5m volume of vessel=πr²h =22/7 x 1² x 3.5=22 x 0.5 =11 m³ now,it is given that vessel is filled upto 4/5 of the volume by rain water 4/5 x 11=440X 4×11/5×440=X X=1/50 X=1/50×100=2 cm rainfall=2cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_8a1e6d266d",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A farmer connects a pipe of internal diameter 20 cm from a canal into a cylindrical tank which is 10 m in diameter and 2 m deep. If the water flows through the pipe at the rate of 4 km per hour, in how much time will the tank be filled competely",
+      "model_answer": "Internal diameter of pipe = 20 cm So,internal radius of pipe=10cm=1/10m In 1 hour, 4 km = 4000 m length of water which flows in the tank. So, volume of water in 1 hour which flows out =πr²h=π(1/10)² x 4000=40πm³ Diameter of cylindrical tank = 10 m So, radius of cylindrical tank = 5m , Height of cylindrical tank = 2 m .’. Volume of cylinder tank =πr²h=π x 5 x 5 x 2 =50π m³ Time taken to fill the tank=volume of the tank/volume of the water in 1hr =50π/40π=5/4 hrs=1 hr 15 minutes",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_54ab58ece0",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "Water in a canal, 6 m wide and 1.5 m deep, is flowing at a speed of 4 km/h. How much area will it irrigate in 10 minutes, if 8 cm of standing water is needed for irrigation?",
+      "model_answer": "Given; canal is 6 m wide, 1.5 m deep and in 1 hour, 4 km length of water flows out. .’. Volume of water flows out in 1 hour = l x b x h = 6 x 1.5 x 4000 m³ = 36000 m³ .’. Volume of water flows out in 10 minutes=36000/60 x 10 = 6000 m³—(1) Suppose this water irrigates X m² of area and we require 8 cm of standing water. .’. Volume of water required = Area of cross-section x Length= X x 8/100 m³—-(2) from 1& 2,we get X x 8/100 =6000⇒X=6000 x 100/8 =75000 m² ∴75000 m² of area is irrigated",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_8dcd832e6b",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "In Figure, from a rectangular region ABCD with AB = 20 cm, a right triangle AED with AE = 9 cm and DE = 12 cm, is cut off. On the other end, taking BC as diameter; a semicircle is added on outside the region. Find the area of the shaded region",
+      "model_answer": "Triangle AED is right-angled at E. ∴AD²=AE²+ED² AD=√9²+12²=√81+144=√225=15 cm BC=AD=15 cm Now, Area of shaded portion = Area of rectangle + Area of Semicircle – Area of triangle AED = l x b x 1/2πr²-1/2 x base x height =[20 x 15 +1/2π(15/2)²-1/2 x 9 x 12] cm² =[300+1/2 x 3.14 x (15/2)²-54] cm² =[246 + 88.31] cm²= 334.31 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_27b233ed28",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A 5 m wide cloth is used to make a conical tent of base diameter 14 m and height 24 m.Find the cost of cloth used at the rate 25 rupees /metre.",
+      "model_answer": "Base diameter of conical tent = 14 m and height = 24 m. ∴Slant height(l)=√(7)²+(24)² m =√49+576 m =√625 m =25 m Area of the cloth required for conical tent=πrl =22/7 x 7 x 25 =550 m² Width of cloth=5 m Length of cloth required =550/5 =110 m Cost of cloth = 25 rupee x 110 =2750 rupees",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_db4d2d2e93",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A girl empties a cylindrical bucket, full of sand, of base radius 18 cm and height 32 cm, on the floor to form a conical heap of sand. If the height of this conical heap 24 cm, then find its slant height correct upto one place of decimal",
+      "model_answer": "For cylindrical bucket: Base radius = 18 cm and height = 32 cm. For cone: Height = 24 cm. Let base radius = r cm When cylinder is converted into cone, then their volumes are equal. .’. Volume of cone = Volume of cylinder =1/3πr² x 24 = π(18)² x 32 => r² = (18)² x 4 r = 18 x 2 = 36 cm Radius of the base of cone = 36 cm Slant height (l) =√(24)² + (36)²cm = √576+1296 cm [∴Using Pythagoras theorem l = √h² + r²] = √1872 cm = 43.26 cm = 43.3 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_4b08965797",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A vessel is in the form of a hemispherical bowl surmounted by a hollow cylinder of same diameter, the diameter of the hemispherical bowl is 14 cm and the total height of the vessel is 13 cm. Find the total surface area of the vessel.",
+      "model_answer": "Diameter of hemispherical bowl = 14 cm Radius of hemispherical bowl = 7 cm Height of cylinder = 13 cm – 7 cm = 6 cm Radius of cylinder = 7 cm Now, Total surface area of vessel = Curved Surface Area of hemispherical bowl + curved surface area of cylinder = 2πr² + 2πrh = 2π x 7 x 7 + 2π x 7 x 6 = 98π + 84π = 182π cm² =26 x 22 = 572 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_fd52f3d968",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A wooden toy was made by scooping out a hemispherical of same radius from each end of a solid cylinder. If the height of the cylinder is 10 cm, and its base is of radius 3.5 cm, find the volume of wood in the toy.",
+      "model_answer": "Radius of cylinder r = 3.5 cm ; Height of cylinder h = 10 cm Radius of hemisphere = 3.5 cm Remaining volume of wood in toy = Volume of cylinder – Volume of two hemispherical scoops =πr²h-2 x 2/3πr³ =π x (3.5)² x [10-4/3 x 3.5] =22/7 x 35/10 x 35/10 x 16/3 =1232/6=205.33 cm³",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_7d601a3df0",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A toy is in the form of a cone mounted on a hemisphere of same radius 7 cm. If the total height of the toy is 31 cm, find its total surface area.",
+      "model_answer": "Radius of hemisphere = height of hemisphere = 7cm Height of cone = total height – (height of hemisphere) = 31 – 7 = 24 cm Slant height of cone =l =√h²+r²=√(24)²(7)² =√576+49=√625=25 cm Curved surface area of cone = πrl =22/7 x 7 x 25 = 550 cm² Curved surface area of hemisphere = 2πr² = 2 x 22/7 x 7 x 7 = 308 cm² Total surface area = 550 + 308 = 858 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_fa3b9c8a0e",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A solid metallic sphere of diameter 8 cm is melted and drawn into a cylindrical wire of uniform width. If the length of the wire is 12 m, find its width",
+      "model_answer": "Diameter of sphere radius of sphere=8 cm Volume of sphere=4 cm Volume of sphere=4/3π(4)³=4/3π(64) cm³ Length of cylindrical wire, h=12 m=1200 cm Radius of cylindrical wire=r Volume of cylindrical wire =πr²h=π(r)² x 1200 cm³ volume of sphere= volume of cylinder 4/3π(64)=π(r)² x 1200 4 x 64/3 x 1200 =r² 64/(3 x 3) x (100)=r² r=8/3 x 10=8/30=0.26 cm Width of wire = 0.26 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_8f55cbd750",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "The total surface area of a solid cylinder is 231 cm². If the curved surface area of this solid cylinder is 2/3 of its total surface area, find its radius and height",
+      "model_answer": "Let radius of the base of cyclinder = r cm and height = h cm. Total surface area = 2πr (r + h ) = 231 cm². Curved surface area = 2πrh Curved surface area =2/3 Total surface area 2πrh=2/3 x 2πr(r+h)⇒2πrh=2/3 x 231 2πrh=154 cm²—-(1) 2πr(r+h)=231 2πr+2πrh=231 2πr²+154=231 2πr²=231-154=77 2 x 22/7 x r² =77⇒r²=77 x 7/22 x 2⇒r=7/2 cm=3.5 cm =radius From (1) 2πrh=154 2 x 22/7 x 7/2 x h =154 Height=154/22=7 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_431777466a",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A cylindrical bucket, 32 cm high and with radius of base 18 cm, is filled with sand. This bucket is emptied on the ground and a conical heap of sand is formed. If the height of the conical heap is 24 cm, then find the radius and slant height of the heap.",
+      "model_answer": "Let,Height of cylinder, H=32 cm Radius of cylinder, R=18 cm Height of cone, h =24 cm Radius of cone, r =? Volume of bucket=Volume of heap πR²H=1/3πr²h 18 x 18 x 32=1/3 x r² x 24 18 x 18 x 32/8=r² 1296=r² Radius of heap, r =√1296=36 cm slant height of heap,l=√h²+r²=√24²+36²=√576+1296=√1872=43.27 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_c595dbadb2",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A hemispherical bowl of internal radius 9 cm is full of water. Its contents are emptied in a cylindrical vessel of internal radius 6 cm. Find the height of water in the cylindrical vessel.",
+      "model_answer": "Hemispherical Bowl: Radius, R = 9 cm Cylindrical Vessel: Radius, r = 6 cm Let, height = h cm Content of hemispherical bowl is completely transferred to cylindrical vessel. So, Volume of cylindrical vessel = Volume of hemispherical bowl => πr²h = 2/3πR³ 6 x 6 x h =2/3 x 9 x 9 x 9 => h = 2 x 9 x 9 x 9/3 x 6 x 6= 13.5 cm .’. Height of water in cylindrical vessel = 13.5 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_4807a9d4e7",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "A sphere of diameter 6 cm is dropped into a cylindrical vessel, partly filled with water, whose diameter is 12 cm. If the sphere is completely submerged in water, by how much will the surface of water be raised in the cylindrical vessel?",
+      "model_answer": "Diameter of sphere is 6 cm, so radius of sphere i.e. r =6/2 = 3 cm Diameter of the cylinder is 12 cm. .’. Radius (R) =12/2 = 6 cm Let the height of cylinder is H after increasing the water level. Now, A.T.Q., Volume of sphere = Volume of cylinder 4/3πr³=πR²H 4/3 x (3)³=(6)².H H=4x3x3x3/3x6x6=1cm Water level will be raised by 1 cm.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_23803fd221",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 3,
+      "question": "From a solid cylinder of height 14 cm and base diameter 7 cm, two equal conical holes each of radius 2.1 cm and height 4 cm are cut off. Find the volume of the remaining solid",
+      "model_answer": "Cylinder: Height, H = 14 cm; Diameter = 7 cm; Radius, R = 7/2 cm Cone: height, h = 4 cm; radius, r = 2.1 cm Volume of remaining solid = Volume of cylinder – Volume of 2 cones = πR²H – 2 x 1/3πr² =22/7×7/2×7/2×14-2×1/3×22/7×2.1×2.1×4 = 539 – 36.96 = 502.04 cm³",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
       "id": "pyq_u12_w_a256ed1a53",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "marks": 3,
       "question": "A room is in the form of a cylinder surmounted by a hemispherical dome. The base radius of the hemisphere is half of the height of the cylindrical 5. A school is organizing a charity run to raise funds for a local hospital. The run is planned as a series of rounds around a track, with each round being 300 metres. To make the event more challenging and engaging, the organizers decide to increase the distance of each subsequent round by 50 metres. For example, the second round will be 350 metres, the third round will be 400 metres and so on. The total number of rounds planned is 10. Based on the information given above, answer the following questions : (i) Write the fourth, fifth and sixth term of the Arithmetic Progression so formed. (ii) Determine the distance of the 8th round. (iii) (a) Find the total distance run after completing all 10 rounds. OR (iii) (b) If a runner completes only the first 6 rounds, what is the total distance run by the runner ?",
       "model_answer": "Let r is the radius of hemisphere and cylinder and h is the height of cylinder h = 2r",
@@ -186,6 +764,193 @@
         "Cone volume",
         "Cylinder volume",
         "Add"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_ca872f5905",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A bucket open at the top is in the form of a frustum of a cone with a capacity of 12308.8 cm³. The radii of the top and bottom circular ends are 20 cm and 12 cm respectively. Find the height of the bucket and the area of metal sheet used in making the bucket, (use π=3.14)",
+      "model_answer": "Let R, r and V be the upper radius, lower radius and volume of the frustum respectively then R = 20 cm, r = 12 cm and V = 12508.8 cm³ 12308.8 = 1/3x 3.14 [400 + 144 +240]h h=12308.8 x 3/3.14 x 784 h=15 cm Now, l (slant height) =√(20-12)²+15²=√64+225=√289=17 cm² Total area of the metal sheet=curved surface area of the cone+area of the base= π(R+r)l+πr² =π(20+12)x 17+π x 12 x 12 =π x 32 x 17 +144π =688π =688 x 3.14 =2160.32 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_2b3dac0012",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A 21 m deep well with diameter 6 m is dug and the earth from digging is evenly spread to form a platform 27 m x 11 m. Find the height of the platform.",
+      "model_answer": "cylinder:Diameter of cylinder =6 m radius of cylinder,r=6/2=3 m height of cylinder,h=21 m cuboid of platform:Lenght=21m,breadth=11m,height=h according to question, volume of cuboid platform=volume of cylindrical well lbh’=πr²h 27x11xh’=22/7x3x3x21 h’=22x3x3x21/7x27x11=2m height of platform =2m",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_ebc75da010",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A well of diameter 4 m is dug 14 m deep. The earth taken out is spread evenly all around the well to form a 40 cm high embankment. Find the width of the embankment.",
+      "model_answer": "Given, Diameter of the well = 4 m Radius of the well = 2 m Depth of the well = 14 m = Height Volume of earth taken out from the well = πr2h = πx2x2x14 = 56π m3 Earth taken out from the well evenly spread to form an embankment having height 40 cm = 0.4 m Let external radius of embankment be R. Internal radius = 2 m = radius of well Volume of embankment (cylindrical)=π(R²-r²)h =π(R²-4) x 4/10 =56π R²-4=56×10/4=140 R²=140+4=144 R=12m Width of embankment=R-r=12-2=10m",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_af216c17ad",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Water is flowing at the rate of 2.52 km/h through a cylindrical pipe into a cylindrical tank, the radius of whose base is 40 cm, If the increase in the level of water in the tank, in half an hour is 3.15 m, find the internal diameter of the pipe",
+      "model_answer": "Let the radius of the pipe=r cm Speed of water=2.52 km/hr=2520 m/h Volume of the water that flows in half an hour=1/2πr²h =1/2π x r/100 x r/100 x 2520 =126πr²/1000 m³ volume of the water in cylindrical tank=π x 40/100 x 40/100 x 3.15 m³ volume of the water flowing in 1/2hr=volume of water in cylindrical tank 126πr²/1000=π x 40/100 x 40/100 x 3.15 r²=40/100 x 40/100 x 3.15 x 1000/126 r²=4⇒r=2 cm internal diameter of pipe=4cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_dd459a1306",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "From each end of a solid metal cylinder, metal was scooped out in hemispherical form of same diameter. The height of the cylinder is 10 cm and its base is of radius 4.2 cm. The rest of the cylinder is melted and converted into a cylindrical wire of 1.4 cm thickness. Find the length of the wire",
+      "model_answer": "Given, Radius of hemisphere=4.2cm Volume of hemisphere=2/3πr³=2/3π x (4.2)³ cm³=49.392π cm³ Volume of 2 hemispheres =π x 49.392π cm³ =98.784π cm³ Height of cylinder =10cm Radius =4.2cm Volume of cylinder =πr²h =π x (4.2)² x 10=176.4π Volume of metal left =176.4π-98.784π =77.616π cm³ Radius of wire =0.7 cm Let length of wire =X cm Volume of cylindrical wire=π x 0.7 x 0.7 x X =0.49πX cm³ Volume of cylindrical wire =volume of metal left from cylinder 0.49πX=77.616π X=77.616/0.49=158.4 cm Length of wire=158.4 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_f52f027b12",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A vessel full of water is in the form of an inverted cone of height 8 cm and the radius of its top, which is open, is 5 cm. 100 spherical lead balls are dropped into the vessel. One-fourth of the water flows out of the vessel. Find the radius of a spherical ball.",
+      "model_answer": "Radius of cone = 5 cm and height of cone = 8 cm .’. Volume of the cone=1/3πr²h =1/3π x 5 x 5 x 8 =200/3π cm³ Let radius of spherical lead ball =r cm Volume of lead ball=4/3πr³ cm³ A.T.Q., volume of 100 lead balls=1/4 x volume of cone 100 x 4/3πr³=1/4 x 200/3π 400r³=50 r³=50/400=1/8 r=1/2=0.5 cm Radius of spherical lead ball=0.5 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_a7402afe29",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Milk in a container, which is in the form of a frustum of a cone of height 30 cm and the radii of whose lower and upper circular ends are 20 cm and 40 cm respectively, is to be distributed in a camp for flood victims. If this milk is available at the rate of 35 rupees per litre and 880 litres of milk is needed daily for a camp, find how many such containers of milk are needed for a camp and what cost will it put on the donor agency for this. What value is indicated through this by the donor agency",
+      "model_answer": "Given, R1 = 20 cm, R2 = 40 cm, height = 30 cm, where R1 = radius of lower end, R2 = radius of bigger end at top Volume of the container open at top=1/3πh[R1²+R2²+R1R2] =1/3π x 30(20²+40²+20 x 40) =28000π=28000 x 22/7= 88000 cm³ Now, 880 liters=880 x 1000 cm³ =880000 cm³ Number of container of milk=880000/88000=10 Cost of 880 l of milk= 880 x 35 =30800 rupees The moral value depicted is kindness 2014",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_45761b511a",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "150 spherical marbles, each of diameter 1.4 cm, are dropped in a cylindrical vessel of diameter 7 cm containing some water, which are completely immersed in water. Find the rise in the level of water in the vessel.",
+      "model_answer": "Let rise in water level in cylinder be h cm when 150 spherical marbles, each of diameter 1.4 cm are dropped and fully immersed. Then volume of 150 spherical marbles=volume of water raised in cylinder 150 x 4/3π(0.7)³ = π(7/2)²h 150 x 4/3 x 7 x 7 x 7/1000 =7 x 7/4 x h h= 4 x 4 x 7/20=28/5 =5.6 cm water level rise by 5.6 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_fcc42a4eb6",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A container open at the top, is in the form of a frustum of a cone of height 24 cm with radii of its lower and upper circular ends as 8 cm and 20 cm respectively. Find the cost of milk which can completely fill the container at the rate of rupee 21 per litre. 22",
+      "model_answer": "Radius of lower end (r1) = 8 cm Radius of upper end (r2) = 20 cm Height of frustum = 24 cm Volume of the container, in form of frustum of cone, =πh/3[r1²+r2²+ r1r2] = 22/7 x 24/3[(8)2 + (20)2 + 8 x 20] =22/7 x 8 [64 + 400 + 160] =22/7 x 8 x 624 cm³= 15689.14 cm 3 = 15.68914 L .’. Cost of milk which can completely fill the container = 21 x 15.68914 = 329.47 rupees.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_eb9c991307",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A hemispherical depression is cut out from one face of a cubical block of side 7 cm, such that the diameter of the hemisphere is equal to the edge of the cube. Find the surface area of remaining solid",
+      "model_answer": "Edge of the cube=7 cm Diameter of hemisphere =7 cm Now,surface area of remaining solid=surface area of 6 faces of cube+surface area of hemisphere-surface area of circular top of diameter 7 cm 6(edge)²+2πr²-πr² =6(7)²+2πr(7/2)²-π(7/2)² =[6 x 49+22/7 x 49/4] cm² =[294 +38.5]cm² =332.5 cm²",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_9829b31fa1",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Water is flowing through a cylindrical pipe of internal diameter 2 cm, into a cylindrical tank of base radius 40 cm, at the rate of 0.4 m/s. Determine the rise in level of water in the tank in half an hour.",
+      "model_answer": "Diameter of cylindrical pipe = 2 cm Radius of cylindrical pipe, r = 2/2 = 1 cm Rate of flowing of water in 1 sec = 0.4 m/s = 40 cm/sec. So, volume of water in 1 sec = πr²h = π x 1 x 1 x 40 = 40π cm³ volume of the water in 1/2 hr=40π x 1800 =7200π cm³ Radius of cylindrical tank = 40 cm Let h’ be the rise in level of water in the tank. So, A.T.Q. Volume of tank = Volume of flowing water π x 40 x 40 x h’ = 72000π h’=72000/40 x 40=45 cm Hence, rise in level of water = 45 cm",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_44088c1ec5",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "Water running in a cylindrical pipe of inner diameter 7 cm, is collected in a container at the rate of 192.5 litres per minute. Find the rate of flow of water in the pipe in km/hr",
+      "model_answer": "Diameter of cylindrical pipe = 7 cm Radius of cylindrical pipe = 7/2 cm Volume of flowing water in 1 min = 192.5 litre = 192.5 x 1000 cm³ = 192500 cm³ Volume of flowing water in 1 hour = 192500 x 60 cm³ Let ‘h’ be the length covered by flowing water in cylindrical pipe in 1 hour Volume of water flowing through cylindrical pipe in 1 hour=πr²h=22/7(7/2)² x h 192500 x 60 x 7 x 4/22 x 49 =h h=300000 cm=300000/100000=3 km Rate of flowing water in 1hr =3km/hr",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_0641babe07",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A container open at the top and made up of metal sheet is in the form of a frustum of a cone of height 16 cm with diameters of its lower and upper ends as 16 cm and 40 cm respectively. Find the cost of metal sheet used to make the container, if it costs ? 10 per 100 cm².",
+      "model_answer": "Radius of upper end of frustum r1 = 20 cm Radius of lower end of frustum r2 = 8 cm Height of frustum = 16 cm Slant height of frustum =l = √h² + (r1 – r2)² =√(16)2+ (20-8)² = √256 +144 = √400 = 20 cm Curved surface area of frustum open at top = πt(r1 + r2)l + πr2² =22/20 (20 + 8)20 + 22/7 (8)² =22/7[28 x 20 + 64] = 22/7[560 + 64] = 22/7 x 624 cm² Total cost of metal sheet used = 10/100 x 22/7 x 624 = 196.141 rupees.",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_0f195d6b33",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A solid is in the shape of a cone surmounted on a hemisphere, the radius of each of them being 3.5 cm and the total height of solid is 9.5 cm. Find the volume of the solid",
+      "model_answer": "Let r be the common radius of each of them and h be the height of the cone. .’. r = 3.5 cm, h = 6 cm Volume of the solid = Volume of the cone +Volume of the hemisphere =1/3πr²h+2/3πr³ =1/3×22/7×3.5×3.5×6+2/3×22/7×3.5×3.5×3.5 =1/3×22/7x 3.5 x 3.5 [6 + 2 x 3.5] = 1/3 x 22 x 0.5 x 3.5 [6 + 7] =1/3x 22 x 0.5 x 3.5 x 13 = 166.83 cm³",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_572ac40ac2",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A container shaped like a right circular cylinder having base radius 6 cm and height 15 cm is full of ice-cream. The ice-cream is to be filled into cones of height 12 cm and radius 3 cm, having a hemispherical shape on the top. Find the number of such cones which can be filled with ice-cream.",
+      "model_answer": "Let radius of cylinder, R = 6 cm Height, H = 15 cm Radius of cone, r = 3 cm Height of cone, h = 12 cm Number of cones=Volume of cylinder/Volume of cone πR²H/1/3πr²h=3 x 6 x 6 x 15/3 x 3 x 12 n = 15 Number of cones filled with ice-cream = 15",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_7ddcf8770e",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "A solid is in the shape of a cone standing on a hemisphere with both their radii being equal to 7 cm and the height of the cone is equal to its diameter. Find the volume of the solid",
+      "model_answer": "Let r be the common radius of each of them and h be the height of the cone. r = 7 cm, h = 2r = 2×7 = 14cm Volume of the solid = Volume of the cone +Volume of the hemisphere =1/3πr²h+2/3πr³=1/3xπxr²[h+2r] =1/3×22/7×7[14+14] =1/3x22x7x28=1437.33 cm³",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
+      ]
+    },
+    {
+      "id": "pyq_u12_w_2afe879912",
+      "source_paper": "chapter_wise_pyq",
+      "marks": 4,
+      "question": "The radii of internal and external surface of a hollow spherical shell are 3 cm and 5 cm respectively. It is melted and recast into a solid cylinder of diameter 14 cm. Find the height of the cylinder",
+      "model_answer": "It is given that r = 3 cm and R = 5 cm, where R–>radius of external surface, r–>radius of internal surface,",
+      "rubric": [
+        "Correct method",
+        "Accurate final result"
       ]
     }
   ]

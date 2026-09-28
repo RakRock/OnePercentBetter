@@ -8,10 +8,9 @@
       "CBSE 30/1/2",
       "CBSE SQP 2025-26",
       "NCERT Ch 8",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -56,7 +55,7 @@
     },
     {
       "id": "pyq_u08_mcq_ffc881dfaa",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "value of ––u is :",
       "options": [
         "3",
@@ -68,17 +67,108 @@
       "explanation": "2.9"
     },
     {
-      "id": "pyq_u08_mcq_b4b55d85cf",
-      "source_paper": "chapter_wise_cached",
-      "question": "Which of the following statements is false ?",
+      "id": "pyq_u08_mcq_06529c36c9",
+      "source_paper": "math_objective_pyq",
+      "question": "Given that sin 2 3 α = and cos 0 β = , then the value of β α − is",
       "options": [
-        "tan 45° cot 45°",
-        "sin 90° = tan 45°",
-        "sin 30° = cos 30°",
-        "sin 45° = cos 45°"
+        "0c",
+        "90c",
+        "60c",
+        "30c"
+      ],
+      "answer": 3,
+      "explanation": "Option (D) is correct."
+    },
+    {
+      "id": "pyq_u08_mcq_b5301f5140",
+      "source_paper": "math_objective_pyq",
+      "question": "If sin cos 0 q q − = , then the value of sin cos 4 4 q q + ^ h is 3",
+      "options": [
+        "1",
+        "4 1",
+        "2",
+        "4 1"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u08_mcq_6c5b305271",
+      "source_paper": "math_objective_pyq",
+      "question": "In the adjoining figure, the length of BC is",
+      "options": [
+        "cm 2 3",
+        "cm 3 3",
+        "cm 4 3",
+        "3 cm"
+      ],
+      "answer": 3,
+      "explanation": "Option (D) is correct."
+    },
+    {
+      "id": "pyq_u08_mcq_f1a457d689",
+      "source_paper": "math_objective_pyq",
+      "question": "If sin cos sin cos x y 3 3 q q q q + = and sin cos x y q q = , than x y 2 2 + is equal to",
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "3/2"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u08_mcq_c320a695d4",
+      "source_paper": "math_objective_pyq",
+      "question": "If tan sin m q q + = and tan sin n q q − = , then m n 2 2 - is equal to",
+      "options": [
+        "mn",
+        "n m",
+        "mn 4",
+        "None of these"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u08_mcq_734a6450af",
+      "source_paper": "math_objective_pyq",
+      "question": "If 0 < < 4 θ π , then the simplest form of sin cos 1 2 q q - is",
+      "options": [
+        "sin cos q q -",
+        "cos sin q q -",
+        "cos sin q q +",
+        "sin cos q q"
       ],
       "answer": 1,
-      "explanation": ""
+      "explanation": "Here, we see that cos that’s why we take cos h instead of taking"
+    },
+    {
+      "id": "pyq_u08_mcq_f3bd5e6029",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : The value of sin 3 4 θ = is not possible. Reas on : Hypotenuse is the largest side in any right angled triangle.",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Here, perpendicular is greater than the hypotenuse which is not possible in any right triangle. Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
+    },
+    {
+      "id": "pyq_u08_mcq_be68ac77d9",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : sin cos 67 67 1 2 2 + = c c Reas on : For any value of , sin cos 1 2 2 θ θ θ + =",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
     }
   ],
   "assertion_reason": [

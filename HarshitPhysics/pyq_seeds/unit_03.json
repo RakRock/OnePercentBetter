@@ -1,0 +1,874 @@
+{
+  "meta": {
+    "subject": "physics",
+    "unit_id": 3,
+    "chapter": "Electricity",
+    "sources": [
+      "PYQ:science_objective_pyq"
+    ]
+  },
+  "mcq": [],
+  "short_answer": [
+    {
+      "id": "pyq_phy_u03_sa_4ccba964fc",
+      "source_paper": "science_objective_pyq",
+      "question": "If the charge on an electron be . C 1 6 10 19 # - charge is of 1 = electron and . C 1 6 10 19 # 1 C charge is of .1 6 10 1 19 # = - electron No. of electrons .6 25 1018 # = 2. List any two factors on which resistance of a conductor depends.",
+      "model_answer": "Resistance of a conductor: a. is directly proportional to its length R ? r ...(1) b. is inversely proportional to its area of cross section. 1 ? ...(2) R A Combining (1) and (2), we get R A ? r",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_d27952dc6d",
+      "source_paper": "science_objective_pyq",
+      "question": "What is the SI unit of electric potential?",
+      "model_answer": "Volt is the SI unit of electric potential.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_129c5f2277",
+      "source_paper": "science_objective_pyq",
+      "question": "When is potential difference between two points said to be 1 volt?",
+      "model_answer": "Potential difference betweeen two point is said to be 1 Volt if the amount of work done in bringing 1 C charge between them is 1 J.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_655a300373",
+      "source_paper": "science_objective_pyq",
+      "question": "Mention one reason why tungsten is used for making filament of electric lamp.",
+      "model_answer": "Tungsten is used for making filament because of its high melting point and low resistivity.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_f4696864e0",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Name the instrument/device used to measure CHAPTER 12 Electricity electric current in a circuit. (b) How is an ammeter connected in a circuit to measure current flowing through it?",
+      "model_answer": "a. Ammeter is used to measure electric current. b. Ammeter is connected in series in an electric circuit.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_d87255abdb",
+      "source_paper": "science_objective_pyq",
+      "question": "In an electric circuit, state the relationship between the direction of conventional current and the direction of flow of electrons.",
+      "model_answer": "Electrons flows from negative terminal to positive terminal where as current flows from +ve terminal to ve - terminal in external circuit i.e. Conventional current and electrons flow are opposite to each other.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_38c46e0fe3",
+      "source_paper": "science_objective_pyq",
+      "question": "How does the resistivity of alloys compare with those of pure metals from which they may have been formed?",
+      "model_answer": "The resistivity of pure metals is lesser than resistivity of alloys with which these alloys are made.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_fd3a7f72b1",
+      "source_paper": "science_objective_pyq",
+      "question": "State a difference between the wire used in the element of an electric heater and in a fuse wire.",
+      "model_answer": "The wire used in element of electric heater has high resistance and high melting point where as a fuse wire has a low resistance and low melting point.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_2daee6f887",
+      "source_paper": "science_objective_pyq",
+      "question": "Draw a schematic diagram of a circuit consisting of a cell of 1.5 V, 10 ohm resistor and 15 ohm resistor and a plug key all connected in series.",
+      "model_answer": "Schematic diagram is shown below.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_735baaa2e9",
+      "source_paper": "science_objective_pyq",
+      "question": "Why do we use copper and aluminium wire for transmission of electric current?",
+      "model_answer": "Copper and aluminium wires are used for electric transmission due to their low resistivity.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_10516e9a2c",
+      "source_paper": "science_objective_pyq",
+      "question": "Give an example of a metal which is the best conductor of heat.",
+      "model_answer": "Gold, Silver, Copper etc. metals are good conductor of heat.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_f15a49ba13",
+      "source_paper": "science_objective_pyq",
+      "question": "Define electric circuit. Distinguish between open and closed circuit.",
+      "model_answer": "Electric circuit is the arrangement in which electric current can flow when circuit is switched on. In open circuit there is no flow of current as the switch is off. In closed circuit a current flows in the circuit when switch is on.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_f8b1630ee2",
+      "source_paper": "science_objective_pyq",
+      "question": "What is the lowest resistance that can be obtained by combining four coils of resistances 4 W , 8 W , 12 W and 24 W ?",
+      "model_answer": "If the resistances are combined in parallel then we shall get the lowest resistance. In parallel combination: 1 R R R R 1 1 1 1 1 2 3 4 = + + + R 4 1 8 1 12 1 24 1 = + + + 24 6 3 2 1 = + + + 24 12 2 1 = = R 2 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_cd35d28ad4",
+      "source_paper": "science_objective_pyq",
+      "question": "Nichrome is used to make the element of electric heater. Why?",
+      "model_answer": "Nichrome is used to make element of electric heater because nichrome is an alloy which has high melting point and high resistances.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_aeca6f68f6",
+      "source_paper": "science_objective_pyq",
+      "question": "happens to the resistance of a conductor when the length of the conductor is reduced to half?",
+      "model_answer": "Resistance is directly proportional to the length of the conductor. If length becomes half the resistance also become half of its initial value.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_593db08c33",
+      "source_paper": "science_objective_pyq",
+      "question": "What happens to the resistance of a conductor when temperature is increased?",
+      "model_answer": "The resistance of a conductor increases with rise in temperature.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_0654d6e0ba",
+      "source_paper": "science_objective_pyq",
+      "question": "Draw a schematic diagram of an electric circuit consisting of a battery of two cells each of 1.5 V, 5 W , 10 W and 15 W resistors and a plug key, all connected in series.",
+      "model_answer": "Schematic diagram of electric circuit con¬taining cells, key and three resistances.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_a244fb2c10",
+      "source_paper": "science_objective_pyq",
+      "question": "Out of the two, a toaster of 1 kW and an electric heater of 2 kW, which has a greater resistance?",
+      "model_answer": "As R P V2 = . If V is constant. Then R P 1 ? i.e. more power, lesser be the resistance and vice versa. Toaster has lesser power (1 KW) than electric heater (2 KW) therefore resistance of toaster is more than resistances of heater.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_e5dfc97071",
+      "source_paper": "science_objective_pyq",
+      "question": "Why is tungsten metal selected for making filaments of incandescent lamps?",
+      "model_answer": "Tungsten has high resistance and high melting point.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_873df4b70e",
+      "source_paper": "science_objective_pyq",
+      "question": "A wire of resistance 5 W is bent in the form of a closed circle. What is the resistance between two points at the ends of any diameter of the circle?",
+      "model_answer": "R 5 W = It can be assumed as two semi circular elements are connected across diameter AB. Total resistances of couple wire 5 W . Resistance of two semicircular elements 2 5 W = Both the elements are connected in parallel. 1 l R R 1 1 1 2 = + 5 2 5 2 5 4 = + = R or Rl 4 5 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_e6319e9119",
+      "source_paper": "science_objective_pyq",
+      "question": "State which has a higher resistance a 50 W or a 25 W lamp bulb and how many times?",
+      "model_answer": "We have P1 W 50 = P2 W 25 = Let their resistances are R1 and R2 respectively. P R V2 = or R P V2 = 2 W = and R V 2 W = R1 V 25 2 50 R R 1 50 25 = 2 1 = 2 or R1 R 2 1 2 = 1 resistance than 25 W bulb. i.e. 50 W bulbs has 2",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_f275d3d58f",
+      "source_paper": "science_objective_pyq",
+      "question": "The amount of charge passing through a cell in four second is 12 C. Find the current supplied by cell.",
+      "model_answer": "Given: t s 4 = Q C 12 = I t Q = A 4 12 = A 3 =",
+      "marks": 2
+    },
+    {
+      "id": "pyq_phy_u03_sa_4404993fb1",
+      "source_paper": "science_objective_pyq",
+      "question": "Calculate the number of electrons that would flow per second through the cross- section of a wire when 1 A current flows in it.",
+      "model_answer": "Given: I A 1 = , s t 1 = I t Q = Q I t & # = Q A s 1 1 # = (Q 1 = coulomb) But Q ne = n e Q = . C 1 6 10 1 19 # = - .6 25 1018 # = electrons",
+      "marks": 2
+    },
+    {
+      "id": "pyq_phy_u03_sa_42a576a4ab",
+      "source_paper": "science_objective_pyq",
+      "question": "Name the device/instrument used to measure potential difference. How is it connected in an electric circuit?",
+      "model_answer": "The device which is used to measure potential difference is voltmeter. Voltmeter is connected in parallel in an electric circuit.",
+      "marks": 2
+    },
+    {
+      "id": "pyq_phy_u03_sa_d9582f95c3",
+      "source_paper": "science_objective_pyq",
+      "question": "How much current will an electric bulb of resistance 1100 W draw from a 220 V source? If a heater of resistance 100 W is connected to the same source instead of the bulb, calculate the current drawn by the heater.",
+      "model_answer": "Resistance of bulb, R 1100 W = V 220 = volt V IR = or I R V = I 1100 220 = A 5 1 = When heater is connected with the same source then I R V = 100 220 = . A 2 2 =",
+      "marks": 2
+    },
+    {
+      "id": "pyq_phy_u03_sa_925ca5ab5e",
+      "source_paper": "science_objective_pyq",
+      "question": "Give reason for the following: a. Tungsten used almost exclusively for filament of electric lamp. b. Why do we use copper and aluminium wires for transmission of electric current?",
+      "model_answer": "a. Tungsten is used in making the filament of electric lamp because it has high resistivity and high melting point. b. The copper and aluminium have low resistivity and high conductivity.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_f9bfb9e082",
+      "source_paper": "science_objective_pyq",
+      "question": "What is the resistance of an ideal voltmeter?",
+      "model_answer": "The resistance of an ideal voltmeter is infinite.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_dafa372ca7",
+      "source_paper": "science_objective_pyq",
+      "question": "State the factors on which the heat produced in a current carrying conductor depends. Give one practical application of this effect.",
+      "model_answer": "We know that H VIt = or H I Rt 2 = Heat produced in a current carrying conductor H I2 ? (Square of the current in the circuit) R ? (Resistance of the conductor) t ? (Time for which current is passed in conductor) This effect applied in electric heater.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_a9044b9838",
+      "source_paper": "science_objective_pyq",
+      "question": "List in a tabular form two differences between a voltmeter and an ammeter.",
+      "model_answer": "Voltmeter Ammeter",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_0ed48a2eed",
+      "source_paper": "science_objective_pyq",
+      "question": "Given below is a circuit showing current flowing in it. Identify each component A, B, C, D of this circuit.",
+      "model_answer": "Circuit A — Bulb (load) B — Rheostat C — Cell D — Ammeter (being in series)",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_1a8a6bfcde",
+      "source_paper": "science_objective_pyq",
+      "question": "A large number of free electrons are present in metals yet no current flows in the absence of electric potential across it. Explain the statement with reason.",
+      "model_answer": "Though there are large number of free electron present in a conductor, but their motion is random motion in the absence of potential difference. Their average velocity is zero. Hence there is no current flowing in conductor. But when a potential difference is applied across the ends of the conductor, it sets the electrons to move in a direction. The motion of charge produces an electric current in the conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_be41d35748",
+      "source_paper": "science_objective_pyq",
+      "question": "Out of the two wires X and Y shown below. Which one has greater resistance. Justify your answer.",
+      "model_answer": "If X and Y are of same material then length of wire X l = Area of cross-section A = l r = RX A l2 r = Similarly, RY A R R Y 2 = X or RY R 2 X = wire Y has two times resistance than that of wire X .",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_ff2eae1cf4",
+      "source_paper": "science_objective_pyq",
+      "question": "Elements of electric toasters and electric iron are made of an alloy rather than a pure metal. Give two reasons to justify the statement.",
+      "model_answer": "a. Alloys have higher resistivity than their constituents pure metals. b. At high temperature alloys do not oxidise.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_2d9f8a1645",
+      "source_paper": "science_objective_pyq",
+      "question": "A thick wire and a thin wire of the same material are successively connected to the same circuit to find their respective resistance. Which one will have lower resistance? Give reason.",
+      "model_answer": "1 ? i.e. more area of cross-section lesser As resistance A",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_5d933ed204",
+      "source_paper": "science_objective_pyq",
+      "question": "Mention two special features of the material to be used as element of an electric iron.",
+      "model_answer": "A material to be used as element of an electric iron must have (i) high melting point, (ii) high resistivity.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_b1785796c7",
+      "source_paper": "science_objective_pyq",
+      "question": "Why do the wires connecting an electric heater to the mains not glow while its heating element does?",
+      "model_answer": "Connecting wire has low resistivity or good conductivity, i.e. resistance of these wires is negligible hence no heat is produced while heating element is of an alloy whose resistivity is high, due to high resistance heat is produced in the element.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_5fd804e114",
+      "source_paper": "science_objective_pyq",
+      "question": "In the circuit diagram shown, the two resistance wires A and B are of same area of cross-section and same material, but A is longer than B. Which ammeter A1 or A2 will indicate higher reading for current? Give reason.",
+      "model_answer": "Length of A is greater than B. Area of cross-section of A and B is same. Therefore resistance of A 2 resistance of B R l a ? 6 @. Current in A is lesser than current in B. Hence A2 will give higher reading.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_ed06fd78d3",
+      "source_paper": "science_objective_pyq",
+      "question": "Mention the condition under which charges can move in a conductor. Name the device which is used to maintain this condition in an electric circuit.",
+      "model_answer": "When a potential difference is applied across the two ends of the conductor, charges (electrons) will move in the conductor. Potential difference is applied by a cell to maintain the charge to move.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_e30c735156",
+      "source_paper": "science_objective_pyq",
+      "question": "How would the reading of voltmeter (V) change, if it is connected between B and C? Justify your answer.",
+      "model_answer": ", , 1 3 2 W W W resistances are connected in series. R R R R 1 2 3 = + + 1 3 2 6 W = + + = I R V = 6 3 = A 2 1 = Current in each resistance is same, i.e. A 2 1 . Voltage across B & C 2 1 3 # = 2 3 = Volt. VBC 2 3 = Volt.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_3b73c7bfae",
+      "source_paper": "science_objective_pyq",
+      "question": "In the circuit diagram shown, the two resistance wires A and B are of same length and same material, but A is thicker than B. Which ammeter A1 or A2 will indicate higher reading for current? Give reason.",
+      "model_answer": "Length of A and B is same. A is thicker than B. Hence A R R R 1 < A B a ? ; E Current in A1 is more than current in A2 i.e., reading in A1 is higher than reading in A2.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_e22de9cbd8",
+      "source_paper": "science_objective_pyq",
+      "question": "Tungsten is used almost exclusively for filaments of electric bulb. List two reasons.",
+      "model_answer": "(1) high resistivity (2) high melting point and does not oxidise at very high temperature.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_9455bacbef",
+      "source_paper": "science_objective_pyq",
+      "question": "Three V-I graphs are drawn individually for two resistors and their series combination. Out of A, B, C which one represents the graph for series combination of the other two. Give reason",
+      "model_answer": "More slope of V-I graph means more resistance, slope of C is maximum. Hence its resistance is maximum. So it is for series combination of two resistors.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_b16445e17c",
+      "source_paper": "science_objective_pyq",
+      "question": "State the factors on which the resistance of a cylindrical conductor depends. How will resistance of a conductor change if it is stretched so that its length is doubled?",
+      "model_answer": "Resistance of cylindrical conductor depends upon its length and cross- sectional area. When conductor is stretched its radius decreases but the volume of the conductor in both the cases will be same. If length is stretched to twice. l2 l2 1 = As l A 1 1 l A 2 2 = l A 1 1 l A 2 1 2 = A A 1 2 = 2 l 1 r = Now, R1 A 1 l l2 2 r = A 1 r = and R2 A 2 2 R R 2 A A 2 2 1 # = 2 2 4 # = = 1 R2 R 4 1 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_7b4402e26f",
+      "source_paper": "science_objective_pyq",
+      "question": "How are ammeters and voltmeters connected in a circuit? What do they help us measure?",
+      "model_answer": "An ammeter which measure the current in a circuit is connected in series. Voltmeter is used to measure potential difference across a conductor so it is connected in parallel to it.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_70695668a2",
+      "source_paper": "science_objective_pyq",
+      "question": "The following table gives the resistivity of three samples: Sample A B C Resistivity . m 1 6 10 5 # W - . m 5 2 10 5 # W - m 100 10 4 # W - Which of them is suitable for heating elements of electrical appliances and why?",
+      "model_answer": "The resistivity of C sample is maximum so it is suitable for making heating element.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_337c27bde3",
+      "source_paper": "science_objective_pyq",
+      "question": "a. Give reason why tungsten is used for making filament of electric lamps. b. The elements of heating electrical appliances are made-up of an alloy rather than pure metal.",
+      "model_answer": "a. Due to (1) high resistivity and high melting point tungsten is used for making filaments of electric lamp. b. high resistivity, and high melting point than their constituents pure metals which do not oxidise at high temperature.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_96c5c5884a",
+      "source_paper": "science_objective_pyq",
+      "question": "B1, B2 and B3 are three identical bulbs connected as shown in the figure. When all the three bulbs glow, a current of 3 A is recorded by the ammeter A. a. What happens to the glow of the other two bulbs when the bulb B1 gets fused? b. What happens to the reading of A1 A2, A3 and A when the bulb B1 gets fused?",
+      "model_answer": "a. The other two bulbs will glow even if B1 gets fused. There is no change in glow of B2 and B3. Here V . V 4 5 = and I A 3 = RP I V = . 3 4 5 = RP .1 5 W = For parallel combination",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_c81e5dd549",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Draw a circuit diagram to show how two resistors are connected in series. (b) In a circuit, if the two resistors of 5 ohm and 10 ohm are connected in series, how does the current passing through the two resistors compare?",
+      "model_answer": "[C8SE 2006) a. b. In series combination of resistances, the current remains same.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_10652d20c7",
+      "source_paper": "science_objective_pyq",
+      "question": "A bulb is rated at 5.0 V, 100 mA. Calculate its (a) power and (b) resistance.",
+      "model_answer": "Rating of bulb, V .5 0 = Volt. I mA 100 = I A 100 10 3 # = - I . A 0 1 = a. Power of bulb V I # = P . . W 5 0 0 1 # = . W 0 5 = b. V IR = , R I V = . . 0 1 5 0 W = 50 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_bb320a7cf6",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) List the factors on which the resistance of a conductor in the shape of a wire depends. (b) Why are metals good conductors of electricity whereas glass is a bad conductor of electricity? Give reason. (c) Why are alloys commonly used in electrical heating devices? Give reason.",
+      "model_answer": "a. Factors on which resistance of a wire depends: i. Resistance is directly proportional to length. ii. Resistance is inversely proportional to area of cross-section. 1 ? R l ? , R A l ? or R A l r = R A b. Metal are good conductor due to having large number of free electrons and their low resistivity. Glass is a bad conductor because it has no free electrons and its resistivity is higher. c. Alloys are commonly used in electrical heating devices due to their high resistivity and high melting point which produces more heat.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_cc86120bf4",
+      "source_paper": "science_objective_pyq",
+      "question": "V-I graphs for two wires A and B are shown in the figure. If both the wires are made of the same material and are of equal thickness, which of the two is of more length? Give justification for your answer.",
+      "model_answer": "We know for identical wire more length more resistance and vice versa slope of wire A is more than B. Hence",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_a1175a69d6",
+      "source_paper": "science_objective_pyq",
+      "question": "What is meant by “electrical resistance” of a conductor? State how resistance of a conductor is affected when a. a low current passes through it for a short duration; b. a heavy current passes through it for about 30 seconds.",
+      "model_answer": "Electrical resistance is the property of a conductor by virtue of which it opposes the flow of current through it. It is equal to the ratio of the potential difference applied across its ends to the current flowing through it. R I V = a. When a low current is passed for a short duration, through a conductor, heat produced is almost negligible and hence no appreciable change in its resistance. b. When heavy current is passed through the conductor for 30 s. Conductor may be get heated and its resistance and resistivity change.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_b4f1fa5139",
+      "source_paper": "science_objective_pyq",
+      "question": "Name and define the SI unit of current. Calculate the number of electrons that flow through a conductor in 1 second to constitute a current of 1 ampere. (Charge on an electron .1 6 10 19 # = - coulomb)",
+      "model_answer": "SI unit of current is Ampere (A) I t q = If q 1 = C, s t 1 = then I A 1 = If 1 C charge flows in 1 s in a conductor then magnitude of current is said to be 1A. q ne = n e q = e I t # = # = - 16 100 1018 # = A s 1 6 10 1 1 19 # . .6 25 1018 # =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_216237b329",
+      "source_paper": "science_objective_pyq",
+      "question": "Electric current flows through three lamps when arranged in (a) a series (b) a parallel. If the filament of one lamp breaks. Explain what happens to the other two lamps in both the cases.",
+      "model_answer": "a. In series combination if the filament of one lamp breaks then the circuit will be broken and hence other lamps stops glowing.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_f0e976b86e",
+      "source_paper": "science_objective_pyq",
+      "question": "Study the V-I graph for a resistor as shown in the figure and prepare a table showing the values of I (in amperes) corresponding to four different values of V (in volts). Find the value of current for V 10 = volts. How can we determine the resistance of the resistor from this graph?",
+      "model_answer": "When V 10 = volt from the graph R I V T T = 4 3 8 6 W = - - 2 W = when V 10 = volt then V IR = or I R V = A 2 10 = A 5 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_01a36ad210",
+      "source_paper": "science_objective_pyq",
+      "question": "Name and define SI unit of resistance. Calculate the resistance of a resistor if the current flowing through it is 200 mA, when the applied potential difference is 0.8 V.",
+      "model_answer": "a. SI unit of resistance is ohm W ^ h 1 W A V 1 1 = b. The resistance of a conductor is said to be 1 ohm if a current of one amp flows through it when a potential differences of 1 volt is applied across it. c. R I V = . 200 10 0 8 3 # = - 4 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_600111af7a",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Explain why a conductor offers resistance to the flow of current. (b) Differentiate between conductor, resistor and resistance.",
+      "model_answer": "a. When a current is passed through a conductor, the atoms or molecule of the conductor produce an hindrance in the path of flow of electron. This hindrance in the path of flow of charge is called resistance of the conductor. b. A substance which allow to pass the charges through them easily is called a conductor. Resistor : A conductor having some value of resistance is called a resistor. Resistance : It is the property of any conductor by virtue of which it opposes the flow of charge through it.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_f702d31633",
+      "source_paper": "science_objective_pyq",
+      "question": "A piece of wire of resistance 6 W is connected to battery of 12 V. Find the amount of current flowing through it. Now, the same wire is redrawn by stretching it to double its length. Find the resistance of the new (redrawn) wire.",
+      "model_answer": "Given: R 6 W = V 12 = Volt I ? =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_261e01f7f3",
+      "source_paper": "science_objective_pyq",
+      "question": "A wire of length l and resistance R is stretched so that the length is doubled and area of cross-section is halved. How will its: a. Resistance change? b. Resistivity change?",
+      "model_answer": "a. Let initial length, area of cross-section and resistance of wire are l , A and R respectively. When length is stretched two times, let its area of cross-section becomes Al. Its initial volume of wire = final volume of the wire. Al A l2 = l or A Al 2 1 = or A A 2 = l l2 r = l ^ h A l2 2 # r = Rl A l 4r = A R 4 = b. Resistivity does not change because it is property of the material of a conductor.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_b9d011a7db",
+      "source_paper": "science_objective_pyq",
+      "question": "A nichrome wire has a resistance of 10 W Find the resistance of another nichrome wire, whose length is three times and area of cross-section four times the first wire.",
+      "model_answer": "We have R 10 W = l1 l = A1 A = l r = 10 W = R A l 10 r = or A For new wire, L2 l3 = A2 A 4 = l 4 3 r = l 4 3 r = A R2 A R2 R 4 3 = 4 3 10 # = 2 15 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_f10fa86496",
+      "source_paper": "science_objective_pyq",
+      "question": "Find the equivalent resistance of the following circuit:",
+      "model_answer": "In the given circuit , 2 2 W W resistances are in parallel. Rp 1 W = , 1 1 W W resistances also are in parallel. p Rl .0 5 W = The circuit can be reduced as, Now all resistances are in series combination. R . 3 3 1 0 5 = + + + .7 5 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_04aca26351",
+      "source_paper": "science_objective_pyq",
+      "question": "A hot plate of an electric oven connected to a 220 V line has two resistors A and B each of 22 W resistance. These resistors may be used separately, in series or in parallel. Find the current flowing in all the three cases.",
+      "model_answer": "Given, V 220 = Volt RA 22 W = RB 22 W = a. Current in resistances separately? A 22 220 = A 10 = b. Current in series combination RS 22 22 = + 44 W = IS 44 220 = A 5 = c. Current in parallel combination P 22 1 22 1 = + 22 2 W = 1 R & RP 11 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_301ba53353",
+      "source_paper": "science_objective_pyq",
+      "question": "An electric kettle of 2 kW works for 2 h daily. Calculate the (a) energy consumed in SI and commercial units (b) cost of running it in the month of June at the rate of `3.00 per unit.",
+      "model_answer": "(a) Given: P kW 2 = W 2000 = t h 2 = Electric energy, E P t # = 2 2 4 # = = kWh (b) Total energy consumed in month of June (having 30 days) Electric kettle 4 30 # = ^ h kWh kWh 120 = 120 = units. Cost of running electric kettle: ` ` 120 3 360 # = =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_920c04ab45",
+      "source_paper": "science_objective_pyq",
+      "question": "Two lamps, one is rated 100 W at 220 V, and the other 60 W at 220 V, are connected in parallel to a 220 V supply. Find the current drawn from the supply line.",
+      "model_answer": "Given: Lamp one 100 W, 220 V, Lamp 2 60 W, 220 V. Let their resistances are R1 and R2 R P V2 = R1 100 220 220 # W = 484 W = 60 220 220 # W = 3 2420 W = In circuit R1 and R2 are connected in parallel. 1 484 1 2420 3 = + R R 2 605 W = I R V = A 605 220 2 # = . A 0 727 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_e646449c56",
+      "source_paper": "science_objective_pyq",
+      "question": "Two bulbs A and B are rated as 90W–120V and 60W–120V respectively. They are connected in parallel across a 120V source. Find the current in each bulb. Which bulb will consume more energy?",
+      "model_answer": "First Bulb: 90 W–120 V 2 = 90 120 120 # = 160 W = R1 P V 1 I1 R V 1 = 160 120 = . A 0 75 = Second Bulb: 60W–120V 2 = 60 120 120 # = R2 P V 2 R2 240 W = I2 R V 2 = 240 120 = I2 . A 0 5 = Power of first bulb has more power than second bulb,",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_d7582d69fc",
+      "source_paper": "science_objective_pyq",
+      "question": "Draw the nature of V–I graph for a nichrome wire. (V -Potential difference, I -Current) A metallic wire of 625 mm length offers a 4 W resistance. If the resistivity of the metal is .4 8 10 7 # - ohm-metre, then calculate the area of cross-section of the wire.",
+      "model_answer": "V–I graph for nichrome wire Given: l 625 = mm .0 625 = m R 4 W = r .4 8 10 7 # = - Ohm-m A ? = l r = or A R l r = R A A . . 4 8 10 4 0 625 7 # # = - . m 0 75 10 7 2 # = -",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_0b8c31935f",
+      "source_paper": "science_objective_pyq",
+      "question": "Derive the relation R = R1 + R2 + R3 when three resistors R1, R2 and R3 are connected in series in an electric circuit.",
+      "model_answer": "Three resistors R1, R2 and R3 are connected in series. Therefore current in each resistor is same. Let current in the circuit is I. Applied total potential = Sum of the potentials across each resistor V V V V 1 2 3 = + + IReq IR IR IR 1 2 3 = + + Req R R R 1 2 3 = + +",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_39c6900ae9",
+      "source_paper": "science_objective_pyq",
+      "question": "State Ohm’s law. Calculate the resistance of a conductor, if the current flowing through it is 0.2 A when the applied potential difference is 0.8 V.",
+      "model_answer": "If the physical conditions of a conductor are kept same then current is directly proportional to the potential difference across the ends of the conductor V I ? . V RI = I . A 0 2 = V .0 8 = Volt. R ? = R I V = . . 0 2 0 8 W = R 4 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_6f99731b74",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Why are copper or aluminium wires generally used for electrical transmission and distribution purposes? (b) Two wires, one of copper and other of manganin, have equal lengths and equal resistances. Which wire is thicker? Given that resistivity of copper is lower than that of manganin.",
+      "model_answer": "a. Copper or aluminium wires are used for transmission and distribution of electricity due to their low resistivity and high conductivity. r A ? Thicker the wire, more the resistivity. The resistivity of manganin is more than copper. So manganin wire is thicker than copper.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_b4b12eeb16",
+      "source_paper": "science_objective_pyq",
+      "question": "Two conducting wires of same material, equal length and equal diameter are connected in series. How does the heat produced by the combination of resistance change?",
+      "model_answer": "Let the resistances of two wires are R each. Heat produced by individual resistor 2 = Hl R V t Resistance is series, RS R R = + R 2 = Heat produced by combination of resistors 2 = Hl R V t 2 H Hl 2 1 = Hl H 2 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_fc0b683192",
+      "source_paper": "science_objective_pyq",
+      "question": "Study the following circuit and answer the following questions: a. State the type of combination of the two resistors in the circuit. b. How much current would flow through: (1) 10 W resistor and (2) 15 W resistor? c. What would be the ammeter reading?",
+      "model_answer": "a. 10 W and 15 W are in parallel combination. b. Potential difference across each is 3V. I in 10 W resistor . A 10 3 0 3 = = I in 15 W resistor 15 3 = . A 0 2 = I . . . 0 3 0 2 0 5 = + = A",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_6ef9ec564a",
+      "source_paper": "science_objective_pyq",
+      "question": "Define electric current and state its SI unit. With the help of Ohm’s law explain the meaning of 1 Ohm resistance.",
+      "model_answer": "Electric current may be defined as the rate of flow of charge through a circuit. Its SI unit is Ampere. According to Ohm’s law V IR = R I V = If V 1 = Volt, A I 1 = then R 1 = ohm. A conductor has a resistance of 1 Ohm if a current of",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_13faa0d2e5",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) What is the total resistance of n resistors each of resistance ‘R’ connected in: (i) series? (ii) parallel? (b) Calculate the resultant resistance of 3 resistors , 3 4 W W and 12 W connected in parallel.",
+      "model_answer": "a. In series combination RS .... R R Rn 1 2 = + + RS ..... R R n = + times RS nR = In parallel combination: 1 P ..... R R R 1 1 1 n 1 2 = + + R ..... R R R n 1 1 1 = + + + + times n 1 1 = + + ..... times R n = 1 or R P R RP n R = b. Given: R1 3 W = R2 4 W = R3 12 W = 1 R R R 1 1 1 1 2 3 = + + R 3 1 4 1 12 1 = + + 12 4 3 1 12 8 3 2 = + + = = R 2 3 W = .1 5 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_4b8095eb34",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) State Ohm’s law. Express it mathematically. (b) Write symbols used in electric circuits to represent: (i) variable resistance. (ii) voltmeter. (c) An electric bulb is rated 220 V and 100 W. When it is operated on 110 V, what will be the power consumed?",
+      "model_answer": "a. Ohm’s Law states that if the physical conditions of a conductor are kept constant then current passing through a conductor is directly proportional to the potential difference across its ends. V I ? or V RI = b. A variable resistor c. Given rating of bulb 220 V – 100 W R = ? Power consumed = ? when V 110 = Volt R P V2 = 100 220 220 # = 484 W = Power at 110 volt P R V2 = 484 110 110 # = P W 25 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_a48bdca516",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) How is the direction of electric current related to the direction of flow of electrons in a wire? (b) Calculate the current in a circuit, if 500 C of charge passes through it in 10 minutes.",
+      "model_answer": "a. The direction of flow of electrons is opposite to the direction of conventional current. b. C Q 500 = , t 10 = mts s 10 60 600 # = = I t Q = A 600 500 = I . A 0 83 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_4f76e509a1",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Define the term ‘volt’. (b) State the relation between work, charge and potential difference for an electric circuit. Calculate the potential difference between the two terminals of a battery, if 100 joules of work is required to transfer 20 coulombs of charge from one terminal of the battery to the other.",
+      "model_answer": "a. Potential difference b/w two points in an electric field is said to be 1 volt if the amount of work done in bringing a unit positive charge from one point to another point is 1 J. b. Given: J W 100 = , Q C 20 = , ? V = As V Q W = JC V 20 100 1 & = - V JC 5 1 = - V 5 = Volt.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_0ca135b551",
+      "source_paper": "science_objective_pyq",
+      "question": "State the formula co-relating the electric current flowing in a conductor and the voltage applied across it. Also, show this relationship by drawing a graph. What would be the resistance of a conductor, if the current flowing through it is 0.35 ampere when the potential difference across it is 1.4 volt?",
+      "model_answer": "V IR = i.e., V I ? If we plot a graph b/w V and I , it is straight line. Graph b/w V and I : Given: I . A 0 35 = V .1 4 = Volt. R I V = . . 0 35 1 4 = Ohm R 4 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_d462ecf55a",
+      "source_paper": "science_objective_pyq",
+      "question": "Draw a labelled circuit diagram showing three resistors R1, R2 and R3 connected in series with a battery (E), a rheostat (Rh), a plug key (K) and an ammeter (A) using standard circuit symbols. Use this circuit to show that the same current flows through every part of the circuit. List two precautions you would observe while performing the experiment.",
+      "model_answer": "By changing the position of ammeter, measure the current in it. Every time the magnitude of current is found same i.e., in series combination the current in every part of the circuit, remains same. Precaution: a. Connect the ammeter in series with battery. b. All connection must be tight. c. Current must not be greater than the range of ammeter.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_3652768509",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Derive the formula for the calculation of work done when current flows through a resistor. (b) One electric bulb is rated 40 W and 240 V and other 25 W and 240 V. Which bulb has higher resistance and how many times?",
+      "model_answer": "a. Let R is the resistance of the resistor in which I current is passed for a time t by applying a p.d. ( V ) across the resistor. The work done in bringing a charge Q from one end to another of the conductor W QV = But t Q I = Q It = W VIt b. 40 W–240 V 25 W–240 V 1 2 = R P V 2 2 2 2 = P1 R V 1 1 2 = R 25 240 240 2 # W = R1 P V 1 R1 40 240 240 # W = R R R 8 5 1 40 25 = or R 1 = 2 2 R R < 1 2 i.e., Resistance of 25 W bulb is more than 40 W bulb.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_e4342915ba",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Name an instrument that measures electric current in a circuit. Define unit of electric current. (b) What are the following symbols mean in an electric circuit? (i) (ii) (c) Draw a closed circuit diagram consisting of 0.5 m long nichrome wire XY, an , ammeter, a voltmeter, four cells of 1.5 V and a plug key.",
+      "model_answer": "a. Ammeter. If IC charge flows in an electric circuit is 1 s then the current is said to be 1 A. b. (i) Rheostat (ii) Closed key c.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_61bc4c776b",
+      "source_paper": "science_objective_pyq",
+      "question": "What is meant by resistance of a conductor? Name and define its SI unit. List the factors on which the resistance of a conductor depends. How is the resistance of a wire affected if: a. its length is doubled, b. its radius is doubled?",
+      "model_answer": "Property of any conductor by virtue of which it opposes the flow of current in the conductor is called its resistance. SI unit of resistance is Ohm. If by applying a potential difference of 1 volt the current in the conductor is 1 A. Then the resistance of the conductor is said to be 1 ohm. Factor affecting resistances: a. If length is double then resistance also becomes doubled. b. If radius is doubled then area A r 2 2 p = ^ h becomes 4 times, then the resistance becomes 1/4.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_0ea9824d76",
+      "source_paper": "science_objective_pyq",
+      "question": "What do you mean by heating effect of electric current? Explain the production of heat in a resistor by flow of electric current through it. Name two devices based on heating effect of current.",
+      "model_answer": "When current is passed through a conductor, heat is produced. Production of heat in a conductor on passing the current is called heating effect of current. When a current is passed in a conductor by applying a potential difference, electrons get accelerated and collide with the atoms of the conductor. During the collision there is a loss of kinetic energy. This loss in K.E. appears in the form of heat energy in the conductor 1. Electric heater, 2. Bulb.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_ac3af79b82",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Name an instrument that measures potential difference between two points in a circuit. Define the unit of potential difference in terms of SI unit of charge and work. Draw the circuit symbols for (i) variable resistor, (ii) a plug key which is closed one. (b) Two electric circuits I and II are shown below “ (i) Which of the two circuits has more resistance? (ii) Through which circuit more current passes? (iii) In which circuit, the potential difference across each resistor is equal? (iv) If R1 > R2 > R3 in which circuit more heat will be produced in R1 as compared to other two resistors?",
+      "model_answer": "a. Voltmeter The amount of work done in bringing a unit positive charge from one point to another in an electric field is said to be potential difference V Q W = (i) Variable resistance (ii) Closed key. b. (i) In series combination resistance is more than parallel combination. (ii) Lesser the resistance more the current in circuit i.e., in parallel (II) current is max. (iii) In parallel combination (II) (iv) More heat in (I) across R1.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_010b048475",
+      "source_paper": "science_objective_pyq",
+      "question": "When a high resistance voltmeter is connected directly across an electric bulb, its reading is 2 V. An electric cell is sending the current of 0.4 ampere (measured by an ammeter) in the electric circuit. a. Draw the circuit. b. Find the resistance of the electric bulb, c. State the law that is applied for making these calculation. If a graph is plotted between V and I, show the nature of the graph obtained.",
+      "model_answer": "a. b. V 2 = Volt, . A I 0 4 = R I V = .0 4 2 = ohm or R 5 = ohm c. Ohm’s law: If the physical conditions of a conductor is kept constant then current in the circuit is directly proportional to the potential difference",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_6714b90f22",
+      "source_paper": "science_objective_pyq",
+      "question": "Draw a schematic diagram of an electric circuit (in the “on” position) consisting of a battery of five cells of 2 V each, a 5 W resistor, a 8 W resistor, a 12 W resistor and a plug key, all connected in series. An ammeter is put in the circuit to measure the electric current through the resistors and a voltmeter is connected so as to measure the potential difference across the 12 W resistor. Calculate the reading shown by the: (a) ammeter (b) voltmeter in the below electric circuit.",
+      "model_answer": "Resistors of 5 W , 8 W , 12 W all the connected in series. Hence, RS R R R 1 2 3 = + + 5 8 12 W = + + ^ h RS 25 W = As V IR = I R V = A 25 10 = I . A 0 4 = a. Ammeter reading is 0.4 A. b. V IR = Potential drop across 12 W resistance V .0 4 12 # = .4 8 = Volt.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_eabcf58e7b",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Explain how does a cell maintain current in a circuit. (b) In the circuit given below the resistance of the path xTy = 2 W and that of xZy = 6 W (i) Find the equivalent resistance between x and y. (ii) Find the current in the main circuit. (iii) Calculate the current that flows through the path xTy and xZy.",
+      "model_answer": "a. Potential difference b/w the two terminals of a cell is produced due to chemical reaction in the cell. This potential difference maintains a current in the circuit. b. (i) The resistance b/w XZY and XTY are in parallel combination. Their equivalent resistance. 1 xy 2 1 6 1 = + R Rxy 2 3 = .1 5 W = (ii) Net resistance of the circuit R . . 1 5 1 5 = + .3 0 W = Hence, I R V = 3 6 = I . A 2 0 = (iii) P.D. across X, Y points V IRxy = . 2 1 5 # = . V 3 0 = I in 2 W resistor . 2 3 0 = . A 1 5 = I in 6 W resistor . 6 3 0 = . A 0 5 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_ea03020f50",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) State the commercial unit of electric energy and find its relation with its SI unit. (b) The current through a resistor is made three times its initial value. Calculate how it will affect the heat produced in the resistor. (c) Find the increase in the amount of heat generated in a conductor if another conductor of double resistance is connected in the circuit keeping all other factors unchanged.",
+      "model_answer": "a. Commercial unit of electric energy = kWh 1 kWh . J 3 6 106 # = b. Initial heat generated in the resistor I Rt 2 = H1 I Rt 2 = ...(1) when current is made three times i.e. I 3 now heat generated H2 I Rt 3 2 = ^ h ...(2) H2 I Rt 9 2 = In later case, heat generated is 9 times the initial heat generated. c. If another conductor of R 2 is connected in series then total resistance R R R 2 3 = + = . Now heat generated H I R t 3 2 = ^ h H I Rt 3 2 = In this case, heat generated is three times.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_d767beaffd",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Name and state the law that gives relationship between the current through a conductor and the potential difference across its two terminals. Also, express this law mathematically. (b) Draw the V-I graph for this law. Justify your",
+      "model_answer": "wer. (c) Write the name and use of the circuit components whose symbols are given below. (i) (ii) Ans : a. The law is Ohm’s law. If the physical conditions of a conductor is kept constant then current through it is directly proportional to the potential difference applied across it. V I ? or V RI = b. Since V I ? so a graph b/w V and I is a straight line. c. (i) Symbol is of variable resistor and it is used to regulate the current. (ii) Plug key is closed. When plug key is closed current flows through the circuit.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_bcc1d356b1",
+      "source_paper": "science_objective_pyq",
+      "question": "Define resistance of a conductor. State the factors on which resistance of a conductor depends. Name the device which is often used to change the resistance without changing the voltage source in an electric circuit. Calculate the resistance of 50 m length of wire of cross-sectional area 0.01 square mm and of resistivity m 5 10 8 # W - .",
+      "model_answer": "[CASE 20131 Resistance is the opposition offered in the path of flow of current by the atoms or molecules of a conductor. Factors affecting resistances: a. length R l ? 1 ? c. nature of material. Rheostat is used to change the current in the circuit without changing the voltage source. b. area of cross-section R A Given: l 50 = m A . mm 0 01 2 = . m 0 01 10 6 2 # = - r m 5 10 8 # W = - l r = . 5 10 0 01 10 50 8 6 # # # = - As R A - R 250 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_dbb1eae1a8",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Three resistors R1, R2 and R3 are connected in parallel and the combination is connected to battery, ammeter, voltmeter and key. Draw suitable circuit diagram. Obtain an expression for the effective resistance of the combination of resistors in parallel. (b) Why are electric bulbs filled with chemically inactive nitrogen or argon? (c) What is meant by the statement that the rating of a fuse in a circuit is 5 A?",
+      "model_answer": "a. Let equivalent (effective) resistance is R then I R V = Similarly, I1 R V 1 = I2 R V 2 = and I R V 3 3 = But I I I I 1 2 3 = + + or R V R V R V R V 1 2 3 = + + b. To prevent oxidising the filament due to high temperature. c. The current in the fuse wire must not exceed 5 A otherwise it will melt.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_c3833db5c5",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) In the circuit shown connect a nichrome wire of length “L” between points X and Y and note the ammeter reading. (i) When this experiment is repeated by inserting another nichrome wire of the same thickness but twice the length (2L), what changes are observed in the ammeter reading? (ii) State the changes that are observed in the ammeter reading if we double the area of cross-section without changing the length in the above experiment. Justify your answer in both the cases. (b) “Potential difference between points A and B in an electric field is 1V”. Explain the statement.",
+      "model_answer": "a. (i) The resistance of two times long wire also becomes two times so current decreases in the circuit. (ii) If area of the nichrome wire is doubled then its resistance decreases and hence current increases in the circuit. b. Potential difference b/w A and B is 1 volt means that 1 J of work is to be done in moving a unit positive charge (+ 1C) from point A to B.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_c87aef7883",
+      "source_paper": "science_objective_pyq",
+      "question": "Draw a circuit diagram for a circuit consisting of a battery of five cells of 2 volts each, a 5 W resistor, a 10 W resistor and a 15 W resistor, an ammeter and a plug key; all connected in series. Also, connect a voltmeter to record the potential difference across the 15 W resistor and calculate: a. the electric current passing through the above circuit and b. potential difference across 5 W resistor when the key is closed.",
+      "model_answer": "a. Net effective resistance of the circuit. R 5 10 15 W + + ^ h 30 W = Current in the circuit I R ne = A 30 5 2 # = A 3 1 = I . A 0 33 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_2053522e24",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) What is an electric circuit? (b) Calculate the number of electron that flow per second to constitute a current of one ampere. Charge on an electron is . C 1 6 10 19 # - . (c) Draw an electric circuit for studying Ohm’s law. Label the circuit component used to measure electric current and potential difference.",
+      "model_answer": "a. A continuous path in which current can flow when switch i6 plugged in. b. Q It = or ne It = n e I t & $ = Given: A I 1 = , s t 1 = n .1 6 10 1 1 19 # # = - n .6 25 1018 # = electrons c. K–Plug key, (A)–Ammeter, (V)–Voltmeter, Rh– Rheostat",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_c87dd2cd63",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Define potential difference between two points in a conductor. (b) Name the instrument used to measure the potential difference in a circuit. How is it connected? (c) A current of 2 A passes through a circuit for 1 minute. If potential difference between the terminals of the circuit is 3 V, what is the work done in transferring the charges?",
+      "model_answer": "a. Electric potential is the amount of work done in bringing a unit positive charge from one point to another. b. Voltmeter. It is connected in parallel in the circuit. c. I A 2 = , t 1 = min. s 60 = , V V 3 = W VQ = V It = ^ h W J 3 2 60 # # = W J 360 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_4256cbfdd9",
+      "source_paper": "science_objective_pyq",
+      "question": "State Ohm’s law. Write the mathematical representation of Ohm’s law. Use this relationship to define 1 ohm. List two disadvantages of connecting different electrical appliances in series.",
+      "model_answer": "If the physical conditions of a conductor are kept constant then current is directly proportional to the potential difference applied across it. Mathematical representation of Ohm’s law V IR = . I V R = Volt 1 1 1 = ohm Ampere If by applying a potential difference of 1 volt across a conductor, the current is 1A then the resistance of the conductor is said to be 1 ohm. Two disadvantages of connecting electrical appliance in series. a. If one appliance fails to operate then the circuit is broken and other devices also will not operate. b. Different devices require different amount of current to operate but in series combination, same current is supplied to all electrical appliances.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_50f2547af2",
+      "source_paper": "science_objective_pyq",
+      "question": "Define power. State the difference between 1 watt and 1 watt hour. Establish the relationship between unit of electric energy and SI unit of energy. An electric heater rated 1000 W/220 V operates 2 hours daily. Calculate the cost of energy to operate for 30 days at the rate of Rs 5.00 per kWh.",
+      "model_answer": "Electric Power: P is defined as the rate at which electric energy is consumed in an electric circuit. 1 watt is the power consumed by an electric appliance that carries 1A current when a potential difference of 1 volt is applied across it. Whereas 1 Wh. is the unit of electric energy, which is consumed by an electric appliance of 1 W power in one hour. Commercial unit of electric energy is kWh. 1 kWh W s 1000 60 60 # # = 1 kWh . J 3 6 106 # = Energy consumed by heater in one month W h 1000 2 30 # # = days kWh 60 = 60 = units Total cost @`5/-kWh 5 60 # = 3 ` 00 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_4092fa640c",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Why is the series arrangement not used for domestic circuits? (b) Why is the tungsten used almost exclusively for filament of electric lamps? (c) Why are the conductors of electric heating devices such as bread toasters and electric irons made of an alloy rather than a pure metal? (d) Why are copper and aluminium wires usually employed for electricity transmission? (e) Why does the cord of an electric heater not glow while the heating element does?",
+      "model_answer": "a. In the series arrangement if any device fails to work, circuit will be broken and other devices stop working. In series combination current remains same. Where as different devices requires different current. b. Tungsten is used due to its high resistivity and high melting point. c. Alloys have higher resistivity than their pure constituent and hence produces more heat. d. Copper and aluminium are good conductors and have low values of resistivity so these are used for electric transmission. e. Cords core made up of good conductor with low resistivity where as heating elements are made up of alloys of higher resistivity to produce more heat.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_b95c0d447a",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) Name an instrument that measures electric current in a circuit. Define the unit of electric current. (b) What do the following symbols mean in circuit diagrams? (i) (ii) (c) An electric circuit consisting of a 0.5 m long nichrome wire XY, an ammeter, a voltmeter, four cells of 1.5 V each and a plug key was set up. (i) Draw a diagram of this electric circuit to study the relation between the potential difference maintained between the points X and Y and the electric current flowing through XY. (ii) Following graph was plotted between V and I values: What would be the values of V/I ratios when the potential difference is 0.8 V, 1.2 V and 1.6 V respectively? What conclusion do you draw from",
+      "model_answer": "a. Ammeter: Ampere is the unit of current. If one coulomb charge flows in a circuit in 1 s then the current in the circuit will be 1 Ampere. (A) b. (i) Variable resistor (ii) closed key c. (i) (ii) The graph b/w V and I is a straight line. R I V = . . 0 6 0 1 6 0 = - - . . 0 6 1 6 = .2 67 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_c091dccca3",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) (i) What is meant by saying that the potential difference between two points is 1 volt? (ii) How much energy is given to 5 coulomb of charge passing through a 12 V battery? (b) Describe an activity with necessary electric circuit drawn to study the factors on which the resistance of a conducting wire depends.",
+      "model_answer": "a. (i) Potential difference b/w the two points is 1 volt mean if we bring a unit positive charge (+ 1C) from one point to other point then amount of work done is 1 J, W = VQ. (ii) Given: Q =5 C, V =12 V, W =12 # 5 = 60 J b. Activity to study the factors of affecting resistance of the conductor—Take a cell, an ammeter, manganin wires of different length and different area of cross- section and key. Connect an ammeter, a manganin wire of (say) 10 cm long to a cell through a plug key. (i). Now closed the key and note the current in the circuit with the help of ammeter. (ii). Now replace the manganin wire with another manganin wire of twice the area of cross- section and again measure the current in the circuit with the help of ammeter. (iii).Now repeat the activity by taking a copper wire of same length same area of cross-section, and note down the current in each case. You will find that current in the circuit in each case is different. Which shows that resistance depends upon (1) nature of material (2) length of the conductor and (3) area of cross- section.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_d5d3514f3c",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) What do the following symbols represent in a circuit? Write the name and one function of each. (i) (ii) (b) Draw a schematic diagram of a circuit consisting of a battery of 12 V, three resistors of 5 W , 10 W and 20 W connected in parallel, an ammeter to measure the total current through the circuit, a voltmeter to measure the potential difference across the combination of resistors. (c) State any one advantage of connecting electrical devices in parallel with the mains instead of connecting them in series in a household circuit.",
+      "model_answer": "a. (i) Variable resistor used to change the current in circuit. (ii) Wires crossing each other which are not connected together. It is used when large number of connections are to be made with the help of wires out joining them.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_011625b344",
+      "source_paper": "science_objective_pyq",
+      "question": "An electric iron has a rating of 750 W; 200 V. Calculate: a. the current required. b. the resistance of its heating element, c. energy consumed by the iron in 2 hours.",
+      "model_answer": "Rating of iron is 750 W–200V. P W 750 = , V 200 = Volt. P = a. P VI = or I V I 200 750 = . A 3 75 = b. Resistance I V = .3 75 200 = . 53 3 = Volt. c. Energy consumed in 2 hr P t # = E Wh 750 2 # = Wh 1500 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_18a1f1358b",
+      "source_paper": "science_objective_pyq",
+      "question": "A piece of wire is redrawn, without change in volume so that its radius is halved. Compare the new resistance with the original resistance.",
+      "model_answer": "Let l1 l = 2 p = r2 p = A1 r1 New length l2 = 2 p = d n r 4 2 p = A2 r 2 Given: Volume is same l A 1 1 l A 2 2 = 2 p = or l l4 2 = l r2 # p l r 4 2 R1 r l 2 r p = ^ h and l p = r l 16 2 r p = 4 2 r R2 r 4 R2 R 16 1 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_7f6cb7f745",
+      "source_paper": "science_objective_pyq",
+      "question": "When two resistors of resistances R1 and R2 are connected in parallel, the net resistance is 3 W . When connected in series, its value is 16 W . Calculate the values of R1 and R2.",
+      "model_answer": "R1 and R2 are in parallel combination. 1 p R R 1 1 1 2 = + R R R R R 1 2 # + 3 = ...(1) 1 2 When R1 and R2 are in series combination. Rs R R 1 2 = + 16 W = R R 1 2 + 16 = ...(2) Solving eq. (1) and eq. (2) R R 16 48 1 2 1 - + 0 = R R 4 12 1 1 - - ^ ^h h 0 = R1 , 4 12 W W = R2 or 12 4 W W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_620cd1db7c",
+      "source_paper": "science_objective_pyq",
+      "question": "A 4 W resistance wire is doubled on itself. Calculate the new resistance of the wire.",
+      "model_answer": "Let the initial length l = Initial resistance 4 W = when it is doubled on itself, length becomes half and area becomes double (=2A) l 1 r = ...(1) R1 A 1 l r = 4 A l 2 r = ...(2) R2 A 2 l 2 r = R2 A 2 R2 A l 4 r = ...(3) Dividing (3) by eq. (1) R R l A 4 1 2 A l 1 # r r = A l l A 4 # = 1 R2 R 1 = 4 4 = 1 = 4 R2 1 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_949cc2abdf",
+      "source_paper": "science_objective_pyq",
+      "question": "An electric iron consumes energy at a rate of 840 W when heating is at the maximum rate and 360 W when the heating is at the minimum. The voltage is 220 V. What are the current and the resistance in each case?",
+      "model_answer": "P W 840 = I 220 840 = . A 3 8 = and R I V = .3 8 220 = . 57 7 W = b. When heating is at minimum rate P W 360 = I 220 360 = . A 1 64 = and, Resistance .1 64 220 = . . 1 34 15 = W",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_967cf7ceea",
+      "source_paper": "science_objective_pyq",
+      "question": "In a household, 5 tube lights of 40 W each are used for 5 hours and an electric press of 500 W for 4 hour everyday. Calculate the total energy consumed by the tube lights and press in a month of 30 days.",
+      "model_answer": "Power of 1 tube W 40 = Power of 5 tubes W 5 40 # = W 200 = Energy consumed by 5 tubes in 5 hr. per day 200 5 # = Wh 1000 = Energy consumed by electric press per day W hr 500 4 # = Wh 2000 = Total energy consumed per day Wh 1000 2000 = + ^ h Wh 3000 = 3 = kWh Total energy consumed in 30 days 3 30 # = kWh 90 = kWh",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_9390bc1469",
+      "source_paper": "science_objective_pyq",
+      "question": "In the circuit shown below, calculate: a. total resistance in arm CE, b. total current drawn from the battery, and c. current in each arm, i.e., AB and CE of the circuit.",
+      "model_answer": "a. Total resistance in arm CE 2 4 W = + ^ h 6 W = b. CE arm and AB arm in parallel. 1 6 1 6 1 = + b l effective resistance, R R 3 W = Total current in the circuit V given V 3 a = 6 @ I R V = 3 3 = A 1 = c. Resistance of CE and AB arms is same 6 W = Current in each arm 6 3 = A 2 1 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_d698ec24a9",
+      "source_paper": "science_objective_pyq",
+      "question": "An electric heater rated 1200 W operates 2 hour per day. Find the cost of the energy required to operate it for 30 days at Rs 5.00 per unit.",
+      "model_answer": "Rating of heater W 1200 = t1 2 = hr per day Total time t^ h for 30 days t 30 2 30 1 # # = = 60 = hrs Energy consumed in one month (30 days) P t # = 1200 60 # = 72000 = Wh 72 = kWh Cost of energy consumed in 30 days ` ` 72 5 360 # = =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_8117b13dfd",
+      "source_paper": "science_objective_pyq",
+      "question": "Two identical resistors, each of resistance 2 W are connected in turn: (i) in series, and (ii) in parallel to a battery of 12 V. Calculate the ratio of power consumed in the two cases.",
+      "model_answer": "Given: R1 R 2 2 W = = (i) In series RS 2 2 4 W = + = Power consumed in series: 2 = 4 12 12 # = W PS R V S PS W 36 = 1 2 1 2 1 p = + (ii) In parallel combination R RP 1 W = 2 = W 1 12 12 # = PP R V P PP W 144 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_30e46f93e7",
+      "source_paper": "science_objective_pyq",
+      "question": "In the given circuit, calculate (a) total resistance of",
+      "model_answer": "a. 3 W and 2 W resistors are in series their effective resistance 3 + 2 = 5 W is in parallel to 5 W resistance. Net resistance 2 5 = .2 5 W = b. I R V = . . 2 5 2 5 = I A 1 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_b82dfd55ae",
+      "source_paper": "science_objective_pyq",
+      "question": "An electric heater rated 600 W operates 6 hours per day. Find the cost to operate it for 30 days at Rs. 3.00 per unit.",
+      "model_answer": "Given: P W 600 = t 6 = hr per day no. of days 30 = Energy consumed by the heater P t # = hr days 600 6 30 # # = W day 108000 = Wh kWh 108 = Total cost @`3/- `108 3 # = `324 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_6ba3f42df1",
+      "source_paper": "science_objective_pyq",
+      "question": "Three resistors of , 5 10 W W, and 15 W are connected in series and the combination is connected to battery of 30 V. Ammeter and voltmeter are connected in the circuit. Draw a circuit diagram to connect all the devices in proper correct order. What is the current flowing and potential difference across 10 W resistance?",
+      "model_answer": "Effective resistance of the circuit R 5 10 15 = + + 30 W = Current in the circuit, I R V = A 30 30 = I A 1 = Current in 10 W resistor A 1 = Potential difference across 10 W resistor V IR = 1 10 # = V 10 = Volt",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_93b9d0f8e7",
+      "source_paper": "science_objective_pyq",
+      "question": "A hot plate of an electric oven, connected to a 220 V line. It has two resistance coils A and B each of the 30 W which may be used separately, in series or in parallel. Find the value of the current required in each of the three cases.",
+      "model_answer": "V Volt 220 = RA RB = 30 W = a. When both are used separately. Then current drawn by each I R V = 30 220 = . A 7 3 = b. When two coils are connected in series then total I 60 220 = . A 3 66 = c. When two coils are connected in parallel then total resistance 2 30 = A 15 = Now current, I 15 220 = . A 14 67 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_d689f15ad0",
+      "source_paper": "science_objective_pyq",
+      "question": "A piece of wire having resistance R is cut into four equal parts, a. How will the resistance of each part compare with the original resistance? b. If the four parts are placed in parallel, how will the joint resistance compare with the resistance of the original wire?",
+      "model_answer": "a. When wire is cut in equal pieces then resistance 4 = b. Effective resistance in parallel combination of on one piece R these four pieces of resistance R 4 each. 1 p R R R R 4 4 4 4 = + + + R 16 = R Rp R 16 =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_57f76a908d",
+      "source_paper": "science_objective_pyq",
+      "question": "The rating of an electric heater is 1100 W, 220 V. Calculate its resistance when it operates at 220 V. Also, calculate the energy consumed in kWh in the month of November, if the heater is used daily for four hours at the rated voltage.",
+      "model_answer": "P W 1100 = V V 220 = R P V2 = 1100 220 220 # W = 11 484 W = 44 W = Total energy consumed in the month of Nov. (i.e. 30 days) @ 4 hr per day.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_1bb2fe393e",
+      "source_paper": "science_objective_pyq",
+      "question": "(a) For the circuit shown in the diagram, calculate: (i) value of current through the 30 W resistor. (ii) total resistance of the circuit. (b) Give two advantages of connecting electrical devices in parallel with battery.",
+      "model_answer": "a. Potential across each resistor = 6 V. (i) I in 30 W resistor, R V = 30 6 = A 5 1 = . A 0 2 = (ii) All in parallel, p 30 1 10 1 5 1 = + + 30 1 3 6 = + + 1 R 30 10 = Rp 3 W = b. (i) Voltage across each appliance remains (ii) If any appliance fails to work other appliances continue to work.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_01c26cedcc",
+      "source_paper": "science_objective_pyq",
+      "question": "Three 2 W resistors, A, B and C, are connected as shown in figure. Each of them dissipates energy and can withstand a maximum power of 18 W without melting. Find the maximum current that can flow through the three resistors.",
+      "model_answer": "Given maximum power of the network P W 18 = Maximum current in 2 W resistor. from P I R 2 = or I R P 2 = I2 2 18 = 9 = I A 3 = Resistor , 2 2 W W are equal and in parallel combination so current of 3 A will be distributed equally.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_41256fe76f",
+      "source_paper": "science_objective_pyq",
+      "question": "Find out the following in the electric circuit given in figure: a. Effective resistance of two 8 W resistors in the combination. b. Current flowing through 4 W resistor. c. Potential difference across 4 W resistor. d. Power dissipated in 4 W resistor. e. Difference in ammeter readings, if any.",
+      "model_answer": "a. 8 W and 8 W resistors are in parallel Rp 8 8 8 8 # = + 4 W = b. Total resistance of the circuit 4 4 W = + ^ h 8 W = Current in 4 W resistor I 8 8 = A 1 = c. Potential difference across 4 W resistor V IR = 1 4 4 # = = Volt. d. Power dissipated in 4 W resistor P I R 2 = W 1 4 2 # = ^ h P W 4 = e. Both the ammeters are in series in the circuit so current will be same in both ammeters. Hence no difference in the reading of two ammeter.",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_ee2d7d4aa6",
+      "source_paper": "science_objective_pyq",
+      "question": "Calculate the resistance of an electric bulb which allows a 10 A current when connected to a 220 V power source.",
+      "model_answer": "I A 10 = V 220 = Volt. Resistance of bulb I V = 10 220 = 22 W =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_6bf709e9d9",
+      "source_paper": "science_objective_pyq",
+      "question": "An electric lamp is marked 100 W, 220 V. It is used for 5 hours daily. Calculate: (i) its resistance while glowing, (ii) energy consumed in kWh per day.",
+      "model_answer": "Electric Iron 100W –– 220 V Used for time, t 5 = hr. daily",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_7b94925ce8",
+      "source_paper": "science_objective_pyq",
+      "question": "A torch bulb is rated 5 V and 500 mA. Calculate its (i) power (ii) resistance and (iii) energy consumed when it is lighted for 4 hours.",
+      "model_answer": "Given: 5V––500 mA (i) Power V I # = 5 500 10 3 # # = - . W 2 5 = (ii) Resistance I V = 500 10 5 3 # = - 10 W = (iii) Energy consumed in four hrs. .2 5 4 60 60 # # # = 10 3600 # = W.s. . J 3 6 104 # =",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_38f2f0f86e",
+      "source_paper": "science_objective_pyq",
+      "question": "If a 12 V battery is connected to the arrangement of resistances given below, calculate: a. the total effective resistance of the arrangement and b. the total current flowing in the circuit.",
+      "model_answer": "a. 10 W and 20 W are in series Rs1 10 20 = + 30 W = 5 W and 25 W are in series Rs2 5 25 30 W = + = 30 W and 30 W are in parallel. 1 p 30 1 30 1 = + 30 2 = R Rp 15 W = V P = 15 12 = . A 0 8 = (ii) I R",
+      "marks": 1
+    },
+    {
+      "id": "pyq_phy_u03_sa_7718bc2989",
+      "source_paper": "science_objective_pyq",
+      "question": "An electric bulb is rated at 200 V–100 W. What is its resistance? Five such bulbs bum for 4 hours. What is the electrical energy consumed? Calculate the cost, if the rate is 50 paise unit.",
+      "model_answer": "V V 200 = P W 100 = (a) P R V2 = R 100 200 2 W = ^ h 100 40000 = 400 W = (b) Energy consumed in 4 hrs. by one bulb. .0 4 = kWh Total energy consumed by 5 similar bulb . 5 0 4 # = 2 = kWh Cost ` 0.50 per unit . `2 0 50 # = `1 =",
+      "marks": 1
+    }
+  ]
+}

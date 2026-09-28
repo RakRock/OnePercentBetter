@@ -15,6 +15,7 @@ from . import content as hpc
 from . import practice as hpp
 from . import questions as hpq
 from . import topics as hpt
+from harshit import science_pyq_ui as spyq_ui
 
 
 def _ss_key(name: str, unit_id: int | None = None) -> str:
@@ -280,9 +281,12 @@ def _render_review(questions: list[dict], answers: list[dict], unit_id: int) -> 
     st.caption(f"Review question {idx + 1} of {total} · {status}")
 
     st.markdown(f"**{q['question']}**")
-    _render_review_choices(q, ans)
-    if q.get("explanation"):
-        st.info(f"**Explanation:** {q['explanation']}")
+    if spyq_ui.is_short_answer(q):
+        spyq_ui.render_model_answer(q)
+    else:
+        _render_review_choices(q, ans)
+        if q.get("explanation"):
+            st.info(f"**Explanation:** {q['explanation']}")
 
     c1, c2 = st.columns(2)
     with c1:
@@ -338,9 +342,31 @@ def render_practice() -> None:
         src_label = {
             "chapter_llm": "Generated with Grok",
             "bank": "Practice question",
+            "board_pyq": "Board PYQ",
         }.get(src, src)
         st.caption(f"{q.get('category_label', '')} · {src_label}")
         st.markdown(f"**{q['question']}**")
+
+        if spyq_ui.is_short_answer(q):
+            verdict = spyq_ui.render_short_answer_choice(q, key=f"hb_u{unit_id}_pyq_{current}")
+            if verdict:
+                record = spyq_ui.short_answer_record(q, verdict)
+                answers.append(record)
+                st.session_state[_ss_key("answers", unit_id)] = answers
+                if user:
+                    db.save_harshit_biology_mcq_attempt(
+                        user["id"],
+                        unit_id=unit_id,
+                        day_id=int(q.get("day_id", 0)),
+                        question_id=str(q.get("id", "")),
+                        selected=record["picked"],
+                        correct=bool(record["correct"]),
+                        misconception="" if record["correct"] else q.get("category", ""),
+                        concept_reviewed=q.get("concept_id", "") if not record["correct"] else "",
+                    )
+                st.session_state[_ss_key("current", unit_id)] = current + 1
+                st.rerun()
+            return
 
         picked = None
         cols = st.columns(2)

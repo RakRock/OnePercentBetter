@@ -8,10 +8,9 @@
       "CBSE 30/1/2",
       "CBSE SQP 2025-26",
       "NCERT Ch 5",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -56,7 +55,7 @@
     },
     {
       "id": "pyq_u05_mcq_b05ce61e7a",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "The graph of polynomial p(x) = k is shown here. Number of zeroes of polynomial p(x) is :",
       "options": [
         "0",
@@ -69,7 +68,7 @@
     },
     {
       "id": "pyq_u05_mcq_5b6aa65232",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "The sum of first n terms of an A.P. is 50 √2. If the first and the last terms are 2 and 19 2 respectively, then the value of n is :",
       "options": [
         "10",
@@ -81,17 +80,316 @@
       "explanation": "5"
     },
     {
-      "id": "pyq_u05_mcq_df63e2a2d7",
-      "source_paper": "chapter_wise_cached",
-      "question": "If the sum of first m terms of an AP is 2m2 + 3m, then its second term is :",
+      "id": "pyq_u05_mcq_cb3c5605e6",
+      "source_paper": "math_objective_pyq",
+      "question": "The nth term of the AP a, a 3 , a 5 , ... is",
       "options": [
-        "10",
-        "9",
-        "12",
-        "4"
+        "na",
+        "( ) n a 2 1 -",
+        "( ) n a 2 1 +",
+        "na 2"
+      ],
+      "answer": 1,
+      "explanation": "Option (B) is correct."
+    },
+    {
+      "id": "pyq_u05_mcq_f33c8fc550",
+      "source_paper": "math_objective_pyq",
+      "question": "The common difference of the AP p 1 , p , ... is 1",
+      "options": [
+        "1",
+        "p",
+        "1 -",
+        "p 1 -"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u05_mcq_0c6c53dc92",
+      "source_paper": "math_objective_pyq",
+      "question": "The value of x for which ,( ) x x 2 10 + and ( ) x 3 2 + are the three consecutive terms of an AP, is",
+      "options": [
+        "6",
+        "6 -",
+        "18",
+        "18 -"
+      ],
+      "answer": 0,
+      "explanation": "Arithmetic Progression Arithmetic Progre ssion are in AP we obtain,"
+    },
+    {
+      "id": "pyq_u05_mcq_f0bcf803a7",
+      "source_paper": "math_objective_pyq",
+      "question": "The first term of AP is p and the common difference is q, then its 10th term is",
+      "options": [
+        "q p 9 +",
+        "p q 9 -",
+        "p q 9 +",
+        "p q 2 9 +"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u05_mcq_eaf7f9a9e9",
+      "source_paper": "math_objective_pyq",
+      "question": "In an AP, if d 4 =−, n 7 = and a 4 n = , then a is equal to",
+      "options": [
+        "6",
+        "7",
+        "20",
+        "28"
       ],
       "answer": 3,
-      "explanation": "– 3"
+      "explanation": "Option (D) is correct."
+    },
+    {
+      "id": "pyq_u05_mcq_5f053bd5c6",
+      "source_paper": "math_objective_pyq",
+      "question": "If the first term of an AP is 5 - and the common difference is 2, then the sum of the first 6 terms is",
+      "options": [
+        "0",
+        "5",
+        "6",
+        "15"
+      ],
+      "answer": 0,
+      "explanation": "Option (A) is correct."
+    },
+    {
+      "id": "pyq_u05_mcq_5305a231e5",
+      "source_paper": "math_objective_pyq",
+      "question": "The sum of first 16 terms of the AP 10, 6, 2, ..... is",
+      "options": [
+        "320 -",
+        "320",
+        "352 -",
+        "400 -"
+      ],
+      "answer": 0,
+      "explanation": "Option (A) is correct."
+    },
+    {
+      "id": "pyq_u05_mcq_63e8805622",
+      "source_paper": "math_objective_pyq",
+      "question": "In an AP, if a 1 = , a 20 n = and S 399 n = , then n is equal to",
+      "options": [
+        "19",
+        "21",
+        "38",
+        "42"
+      ],
+      "answer": 0,
+      "explanation": "16. The sum of first five multiples of 3 is The first five multiples of 3 are 3, 6, 9, 12 and 15. Here, first term, a"
+    },
+    {
+      "id": "pyq_u05_mcq_cc98b97c26",
+      "source_paper": "math_objective_pyq",
+      "question": "If the sum of the series 2 5 8 11 + + + .......... is 60100, then the number of terms are",
+      "options": [
+        "100",
+        "200",
+        "150",
+        "250"
+      ],
+      "answer": 1,
+      "explanation": "because n can not be fraction."
+    },
+    {
+      "id": "pyq_u05_mcq_3958ec4cdc",
+      "source_paper": "math_objective_pyq",
+      "question": "If the common difference of an AP is 5, then what is a a 18 13 - ?",
+      "options": [
+        "5",
+        "20",
+        "25",
+        "30"
+      ],
+      "answer": 2,
+      "explanation": "Given, the common difference of AP i.e., d"
+    },
+    {
+      "id": "pyq_u05_mcq_19cf3e124f",
+      "source_paper": "math_objective_pyq",
+      "question": "There are 60 terms is an AP of which the first term is 8 and the last term is 185. The 31st term is",
+      "options": [
+        "56",
+        "94",
+        "85",
+        "98"
+      ],
+      "answer": 3,
+      "explanation": "Let d be the common difference;"
+    },
+    {
+      "id": "pyq_u05_mcq_e73494a5d3",
+      "source_paper": "math_objective_pyq",
+      "question": "The first and last term of an AP are a and , respectively. If S is the sum of all the terms of the AP and the common difference is ( ) k a a 2 2 , , − + − , then k is equal to",
+      "options": [
+        "S",
+        "S 2",
+        "S 3",
+        "None of these"
+      ],
+      "answer": 1,
+      "explanation": "Option (B) is correct."
+    },
+    {
+      "id": "pyq_u05_mcq_e6183e4367",
+      "source_paper": "math_objective_pyq",
+      "question": "If the th n term of an AP is given by a n 5 3 n = −, then the sum of first 10 terms if",
+      "options": [
+        "225",
+        "245",
+        "255",
+        "270"
+      ],
+      "answer": 1,
+      "explanation": "Option (B) is correct."
+    },
+    {
+      "id": "pyq_u05_mcq_6428f7440c",
+      "source_paper": "math_objective_pyq",
+      "question": "Two APs have the same common difference. The first term of one of these is 1 - and that of the other is .8 - Then the difference between their 4th terms is",
+      "options": [
+        "1 -",
+        "8 -",
+        "7",
+        "9 -"
+      ],
+      "answer": 2,
+      "explanation": "4th term of first AP, and 4th term of second AP, Now, the difference between their 4th terms, Hence, the required difference is 7."
+    },
+    {
+      "id": "pyq_u05_mcq_a376bf8e5a",
+      "source_paper": "math_objective_pyq",
+      "question": "If the sum of the first n 2 terms of 2, 5, 8, .......... is equal to the sum of the first n terms of 57, 59, 61, .........., then n is equal to",
+      "options": [
+        "10",
+        "12",
+        "11",
+        "13"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u05_mcq_caaadf5b48",
+      "source_paper": "math_objective_pyq",
+      "question": "The 21th term of an AP whose first two terms are 3 - and 4, is",
+      "options": [
+        "17",
+        "137",
+        "143",
+        "143 -"
+      ],
+      "answer": 1,
+      "explanation": "Given, first two terms of an AP are"
+    },
+    {
+      "id": "pyq_u05_mcq_120e2304e6",
+      "source_paper": "math_objective_pyq",
+      "question": "The number of two digit numbers which are divisible by 3 is",
+      "options": [
+        "33",
+        "31",
+        "30",
+        "29"
+      ],
+      "answer": 2,
+      "explanation": "Two digit numbers which are divisible by 3 are 12, 15,"
+    },
+    {
+      "id": "pyq_u05_mcq_027468fa75",
+      "source_paper": "math_objective_pyq",
+      "question": "If the th n term of an AP is n 4 1 + , then the common difference is",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 1,
+      "explanation": "Given that the nth term of an AP is n Substituting n Common difference,"
+    },
+    {
+      "id": "pyq_u05_mcq_9fb3079097",
+      "source_paper": "math_objective_pyq",
+      "question": "If , , , , , a b c d e f are in AP, then e c - is equal to",
+      "options": [
+        "( ) c a 2 -",
+        "(d c 2 -",
+        "( ) f d 2 -",
+        "( ) d c -"
+      ],
+      "answer": 1,
+      "explanation": "Let x be the common difference of the AP , , , , , Using equation (1) and (2), we get"
+    },
+    {
+      "id": "pyq_u05_mcq_a0555efb75",
+      "source_paper": "math_objective_pyq",
+      "question": "Five distinct positive integers are in a arithmetic progression with a positive common difference. If their sum is 10020, then the smallest possible value of the last term is",
+      "options": [
+        "2002",
+        "2004",
+        "2006",
+        "2007"
+      ],
+      "answer": 2,
+      "explanation": "Let the five integers be a Now, as smallest possible value of d is 1. Hence, the smallest possible value of a"
+    },
+    {
+      "id": "pyq_u05_mcq_9eb0b72b31",
+      "source_paper": "math_objective_pyq",
+      "question": "If the 2nd term of an AP is 13 and 5th term is 25, what is its 7th term?",
+      "options": [
+        "30",
+        "33",
+        "37",
+        "38"
+      ],
+      "answer": 1,
+      "explanation": "Subtracting equation (1) from equation (2), we get From equation (1), a"
+    },
+    {
+      "id": "pyq_u05_mcq_a0b702fd3d",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : Common difference of the AP 5 - , 1 - , 3, 7, .......... is 4. Reas on : Common difference of the AP , , ,.......... a a d a d 2 + + is given by d a a 2 1 = −",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 3,
+      "explanation": "Assertion (A) is false but reason (R) is true."
+    },
+    {
+      "id": "pyq_u05_mcq_bf834589be",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : If nth term of an AP is n 7 4 - , then its common differences is 4 - . Reas on : Common difference of an AP is given by d a a n n 1 = − + .",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Both are correct. Reason is the correct explanation."
+    },
+    {
+      "id": "pyq_u05_mcq_e028990fc5",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : If sum of the first n terms of an AP is given by . S n n 3 4 n 2 = − Then its nth term is a n 6 7 n = −. Reas on : nth term of an AP, whose sum to n terms is Sn, is given by a S S n n n 1 = − −",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "nth term of an AP, So, both A and R are correct and R explains A."
     }
   ],
   "assertion_reason": [
@@ -105,7 +403,7 @@
     },
     {
       "id": "pyq_u05_ar_13f04392cb",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "assertion": "is followed by a statement of Reason (R). Select the correct option from the following options:",
       "reason": ". Select the correct option from the following options:",
       "answer": 0,
@@ -199,7 +497,7 @@
     },
     {
       "id": "pyq_u05_w_515e835de8",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "marks": 6,
       "question": "In a garden, saplings of rose flowers were planted at equal intervals to form a spiral pattern. The spiral is made up of successive semicircles, with centres alternatively at A and B, starting with centre at A, of radii 50 cm, 100 cm, 150 cm, ....... as shown in the figure given below. Spiral 1 has 10 flowers, Spiral 2 has 20 flowers, Spiral 3 has 30 flowers and so on. Based on the above information, answer the following questions : (i) What is the radius of the 13th spiral ? (ii) If the radius of the nth spiral is 500 cm, find the value of n. (iii) (a) Find the total number of saplings till the 11th spiral. OR",
       "model_answer": "(i) a13 = 650 cm (ii) an = 500 50 + (n – 1)50 = 500 n = 10 (iii) (a) a = 10, d = 10 (b) a = 10, d = 10 n2 + n – 90 = 0 n=9 (2024)",

@@ -9,7 +9,7 @@ import harshit_class10_practice_pyq as h10pyq
 import harshit_class10_questions as h10q
 import harshit_class10_topics as h10t
 
-DEFAULT_QUESTION_COUNT = 15
+DEFAULT_QUESTION_COUNT = h10pyq.SESSION_SIZE
 
 
 def _active_slots(unit_id: int, config: dict) -> list[tuple[int, str]]:
@@ -150,6 +150,25 @@ def build_session_set(
     used_ids: set[str] = set()
     used_keys: set[str] = set()
     questions: list[dict] = []
+
+    # Daily practice is a 10-question PYQ paper: 5×1, unit-specific 2/3, and 1×5.
+    if (
+        count == DEFAULT_QUESTION_COUNT
+        and config.get("include_board_pyq", True)
+    ):
+        questions = h10pyq.build_mark_pattern_session(unit_id, used_ids=used_ids)
+        if len(questions) < count and not (fresh_only and prefer_llm and api_key):
+            extra = _fill_from_bank(
+                unit_id,
+                config,
+                count - len(questions),
+                used_ids=used_ids,
+                used_keys=used_keys,
+            )
+            for q in extra:
+                q.setdefault("marks", 1)
+            questions.extend(extra)
+        return questions[:count], ""
 
     if prefer_llm and api_key:
         import harshit_class10_llm as h10llm

@@ -8,10 +8,9 @@
       "CBSE 30/1/2",
       "CBSE SQP 2025-26",
       "NCERT Ch 9",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -55,17 +54,134 @@
       "explanation": "Depression — looking down; angle below horizontal."
     },
     {
-      "id": "pyq_u09_mcq_243d286a17",
-      "source_paper": "chapter_wise_cached",
-      "question": "The angle of elevation of the top of a building from the foot of the tower is 30 and the angle of elevation of the top of the tower from the foot of the building is 60. If the tower is 60 m high, find the height of the building and distance between the building and the tower. (Use √3 = 1.73) 2. A car is moving away from the base of a 30 m high tower. The angle of elevation of the top of the tower from the car at an instant, when the car is 10√3 m away from the base of the tower, is :",
+      "id": "pyq_u09_mcq_2a8cd4f444",
+      "source_paper": "math_objective_pyq",
+      "question": "If the angle of depression of an object from a 75 m high tower is 30c, then the distance of the object from the tower is",
       "options": [
-        "30°",
-        "45°",
-        "90°",
-        "60°"
+        "m 25 3",
+        "m 50 3",
+        "m 75 3",
+        "150 m"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u09_mcq_b3fa76b1c8",
+      "source_paper": "math_objective_pyq",
+      "question": "A tree casts a shadow 15 m long on the level of ground, when the angle of elevation of the sun is 45c. The height of a tree is",
+      "options": [
+        "10 m",
+        "14 m",
+        "8 m",
+        "15 m"
+      ],
+      "answer": 3,
+      "explanation": "Let BC be the tree of height h meter. Let AB be the shadow of tree. Some Applications of Trigonometry Some Applications of Trigonometry"
+    },
+    {
+      "id": "pyq_u09_mcq_f6ae2f1e3d",
+      "source_paper": "math_objective_pyq",
+      "question": "The ratio of the length of a rod and its shadow is : 1 3 then the angle of elevation of the sun is",
+      "options": [
+        "90c",
+        "45c",
+        "30c",
+        "75c"
+      ],
+      "answer": 2,
+      "explanation": "Let AB be the rod of length h, BC be its shadow of , θ be the angle of elevation of the sun."
+    },
+    {
+      "id": "pyq_u09_mcq_426f3b69eb",
+      "source_paper": "math_objective_pyq",
+      "question": "In the given figure, the positions of the observer and the object are mentioned, the angle of depression is",
+      "options": [
+        "30c",
+        "90c",
+        "60c",
+        "45c"
+      ],
+      "answer": 2,
+      "explanation": "Option (C) is correct."
+    },
+    {
+      "id": "pyq_u09_mcq_1a1100d844",
+      "source_paper": "math_objective_pyq",
+      "question": "A circle artist is climbing a 20 m long rope, which is tightly stretched and tied from the top of a vertical pole to the ground, then the height of pole, if the angle made by the rope with the ground level is 30c, is",
+      "options": [
+        "5 m",
+        "10 m",
+        "15 m",
+        "20 m"
+      ],
+      "answer": 1,
+      "explanation": "Let AB be the vertical pole and CA be the 20 m long rope such that its one end A is tied from the top of the vertical pole AB and the other end C is tied to a point C on the ground. Hence, the height of the pole is 10 m."
+    },
+    {
+      "id": "pyq_u09_mcq_9eaf64c2c5",
+      "source_paper": "math_objective_pyq",
+      "question": "The length of a string between a kite and a point on the ground is 85 m. If the string makes an angle θ with level ground such that tan 8 15 θ = , then the height of kite is",
+      "options": [
+        "75 m",
+        "78.05 m",
+        "226 m",
+        "None of these"
       ],
       "answer": 0,
-      "explanation": "Let AB be the tower and AC and AD are shadows."
+      "explanation": "Length of the string of the kite, Thus height of kite is 75 m."
+    },
+    {
+      "id": "pyq_u09_mcq_b067275a5d",
+      "source_paper": "math_objective_pyq",
+      "question": "An observer, 1.5 m tall is 20.5 away from a tower m 22 high, then the angle of elevation of the top of the tower from the eye of observer is",
+      "options": [
+        "30c",
+        "45c",
+        "60c",
+        "90c"
+      ],
+      "answer": 1,
+      "explanation": "be the height of the tower and be the height of the observer. The point D be the observer’s eye. We draw DC Let θ be the angle of elevation make by observer’s eye to the top of the tower i.e."
+    },
+    {
+      "id": "pyq_u09_mcq_adccd8086d",
+      "source_paper": "math_objective_pyq",
+      "question": "From the top of a 7 m high building the angle of elevation of the top of a cable tower is 60c and the angle of depression of its foot is 45c, then the height of the tower is",
+      "options": [
+        "14.124 m",
+        "17.124 m",
+        "19.124 m",
+        "15.124 m"
+      ],
+      "answer": 2,
+      "explanation": "Let AB be the building and CD be the tower. We as shown below. Height of the tower"
+    },
+    {
+      "id": "pyq_u09_mcq_c114545f29",
+      "source_paper": "math_objective_pyq",
+      "question": "The angles of elevation of the top of a tower from the points P and Q at distance of a and b respectively from the base and in the same straight line with it, are complementary. The height of the tower is",
+      "options": [
+        "ab",
+        "ab",
+        "b a",
+        "a b"
+      ],
+      "answer": 1,
+      "explanation": "Let AB be the tower. Let C and D be two points at distance a and b respectively from the base of the From equation (1) and (2), we have"
+    },
+    {
+      "id": "pyq_u09_mcq_5094f54f65",
+      "source_paper": "math_objective_pyq",
+      "question": "A ss ertion : In the figure, if m BC 20 = , then height AB is 11.56 m. Reas on : tan base perpendicular BC AB θ = = where θ is the angle ACB + .",
+      "options": [
+        "is false but reason (R) is true.",
+        "Both assertion",
+        "Assertion",
+        "Assertion"
+      ],
+      "answer": 0,
+      "explanation": "Both the assertion and reason are correct, reason is the correct explanation of the assertion."
     }
   ],
   "assertion_reason": [

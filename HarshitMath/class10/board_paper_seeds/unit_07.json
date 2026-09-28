@@ -8,10 +8,9 @@
       "CBSE 30/1/2",
       "CBSE SQP 2025-26",
       "NCERT Ch 7",
-      "PYQ:chapter_wise_cached",
       "PYQ:chapter_wise_pyq",
       "PYQ:most_repeated_pyq",
-      "PYQ:objective_pyq"
+      "PYQ:math_objective_pyq"
     ]
   },
   "mcq": [
@@ -56,7 +55,7 @@
     },
     {
       "id": "pyq_u07_mcq_d2da056bdd",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "question": "The distance between the points (– 4, 2) and (1, 0) is :",
       "options": [
         "13 units",
@@ -68,43 +67,238 @@
       "explanation": "√29 units"
     },
     {
-      "id": "pyq_u07_mcq_2328b3570b",
-      "source_paper": "chapter_wise_cached",
-      "question": "The mid-point of the line segment joining the points (5, – 4) and (6, 4) lies on:",
+      "id": "pyq_u07_mcq_29b9e0d8bd",
+      "source_paper": "math_objective_pyq",
+      "question": "The point P on x -axis equidistant from the points ( , ) A 1 0 - and ( , ) B 5 0 is",
       "options": [
-        "x-axis",
-        "y-axis",
-        "origin",
-        "neither x-axis nor y-axis"
+        "(2, 0)",
+        "(0, 2)",
+        "(3, 0)",
+        "( , ) 3 5 -"
       ],
       "answer": 0,
-      "explanation": "𝑥-axis"
+      "explanation": "Let the position of the point P on x -axis be ( , ), Hence, the point"
     },
     {
-      "id": "pyq_u07_mcq_4ae470c1a8",
-      "source_paper": "chapter_wise_cached",
-      "question": "The mid-point of a line segment divides the line segment in the ratio :",
+      "id": "pyq_u07_mcq_4d905b8d95",
+      "source_paper": "math_objective_pyq",
+      "question": "The co-ordinates of the point which is reflection of point ( , ) 3 5 - in x -axis are",
       "options": [
-        "1 : 2",
-        "2 : 1",
-        "1 : 1",
-        "(option 4)"
+        "(3, 5)",
+        "(3, 5 - )",
+        "( , ) 3 5 - -",
+        "( , ) 3 5 -"
       ],
       "answer": 2,
-      "explanation": "(2,0)"
+      "explanation": "The reflection of point ("
     },
     {
-      "id": "pyq_u07_mcq_8386e4fcb2",
-      "source_paper": "chapter_wise_cached",
-      "question": "The mid-point of the line segment joining the points P( 4, 5) and Q(4, 6) lies on :",
+      "id": "pyq_u07_mcq_9584a2776d",
+      "source_paper": "math_objective_pyq",
+      "question": "If the point P (6, 2) divides the line segment joining ( , ) A 6 5 and ( , ) B y 4 in the ratio : 3 1 then the value of y is",
       "options": [
-        "x-axis",
-        "y-axis",
-        "origin",
-        "neither x-axis nor y-axis"
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "answer": 3,
+      "explanation": "As per given information in question we have drawn the figure below,"
+    },
+    {
+      "id": "pyq_u07_mcq_a34802bdcb",
+      "source_paper": "math_objective_pyq",
+      "question": "If the points ( , ) a 0 , ( , ) b 0 and (1, 1) are collinear, then a b 1 1 + equals",
+      "options": [
+        "1",
+        "2",
+        "0",
+        "1 -"
+      ],
+      "answer": 0,
+      "explanation": "Let the given points are A B C are collinear."
+    },
+    {
+      "id": "pyq_u07_mcq_86d51755fb",
+      "source_paper": "math_objective_pyq",
+      "question": "If the points ( , ) A 4 3 and ( , ) B x 5 are on the circle with centre ( , ) O 2 3 , then the value of x is",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "explanation": "Since, A and B lie on the circle having centre O."
+    },
+    {
+      "id": "pyq_u07_mcq_362a13f42b",
+      "source_paper": "math_objective_pyq",
+      "question": "The ratio in which the point ( , ) y 2 divides the join of ( , ) 4 3 - and (6, 3), hence the value of y is",
+      "options": [
+        ": ,y 2 3 3 =",
+        ": ,y 3 2 4 =",
+        ": ,y 3 2 3 =",
+        ": ,y 3 2 2 ="
+      ],
+      "answer": 2,
+      "explanation": "Let the required ratio be : The required ratio is :1"
+    },
+    {
+      "id": "pyq_u07_mcq_e5beec96df",
+      "source_paper": "math_objective_pyq",
+      "question": "The point on the x -axis which is equidistant from the points ( , ) A 2 3 - and ( , ) B 5 4 is",
+      "options": [
+        "(0, 2)",
+        "(2, 0)",
+        "(3, 0)",
+        "( , ) 2 0 -"
       ],
       "answer": 1,
-      "explanation": "y – axis"
+      "explanation": "P x 0 be a point on x -axis such that, Hence required point is (2, 0)."
+    },
+    {
+      "id": "pyq_u07_mcq_92eabac8ec",
+      "source_paper": "math_objective_pyq",
+      "question": "C is the mid-point of PQ, if P is ( , ) x 4 , C is ( , ) y 1 - and Q is ( , ) 2 4 - , then x and y respectively are",
+      "options": [
+        "6 - and 1",
+        "6 - and 2",
+        "6 and 1 -",
+        "6 and 2 -"
+      ],
+      "answer": 0,
+      "explanation": "Option (A) is correct."
+    },
+    {
+      "id": "pyq_u07_mcq_d9a3291a4c",
+      "source_paper": "math_objective_pyq",
+      "question": "If x y k 2 0 − + = is a median of the triangle whose vertices are at points ( , ) A 1 3 - , ( , ) B 0 4 and ( , ), C 5 2 - then the value of k is",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 3,
+      "explanation": "Coordinate of the centroid G of Since, G lies on the median, x satisfy the equation,"
+    },
+    {
+      "id": "pyq_u07_mcq_5eea771ea2",
+      "source_paper": "math_objective_pyq",
+      "question": "The centroid of the triangle whose vertices are ( , ), 3 7 - ( , ) 8 6 - and (5, 10) is",
+      "options": [
+        "(0, 9)",
+        "(0, 3)",
+        "(1, 3)",
+        "(3, 5)"
+      ],
+      "answer": 1,
+      "explanation": "Option (B) is correct."
+    },
+    {
+      "id": "pyq_u07_mcq_e89a62161c",
+      "source_paper": "math_objective_pyq",
+      "question": "The distance of the point , P 2 3 ^ h from the x -axis is",
+      "options": [
+        "2",
+        "3",
+        "1",
+        "5"
+      ],
+      "answer": 1,
+      "explanation": "We know that, if h is any point on the cartesian plane in first quadrant, then x is perpendicular distance from y-axis and y is perpendicular distance Distance of the point h from the x -axis is 3."
+    },
+    {
+      "id": "pyq_u07_mcq_10ae3f4332",
+      "source_paper": "math_objective_pyq",
+      "question": "The distance between the points , A 0 6 ^ h and , B 0 2 - ^ h is",
+      "options": [
+        "6",
+        "8",
+        "4",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "Distance between the points Distance between"
+    },
+    {
+      "id": "pyq_u07_mcq_b9971a6924",
+      "source_paper": "math_objective_pyq",
+      "question": "The distance of the point , P 6 8 - ^ h from the origin is",
+      "options": [
+        "8",
+        "2 7",
+        "10",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "Distance between the points h and origin is given Distance between h and origin is,"
+    },
+    {
+      "id": "pyq_u07_mcq_56af2dfb98",
+      "source_paper": "math_objective_pyq",
+      "question": "The distance between the points (0, 5) and ,5 0 - ^ h is",
+      "options": [
+        "5",
+        "5 2",
+        "2 5",
+        "10"
+      ],
+      "answer": 1,
+      "explanation": "Distance between the points Distance between the points (0, 5) and"
+    },
+    {
+      "id": "pyq_u07_mcq_a5f68b1cbc",
+      "source_paper": "math_objective_pyq",
+      "question": "If AOBC is a rectangle whose three vertices are , A 0 3 ^ h, , O 0 0 ^ h and , B 5 0 ^ h, then the length of its diagonal is",
+      "options": [
+        "5",
+        "3",
+        "34",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "Length of the diagonal is AB which is the distance between the points Distance between the points Distance between the points Hence, the required length of its diagonal is"
+    },
+    {
+      "id": "pyq_u07_mcq_87b3b2f79f",
+      "source_paper": "math_objective_pyq",
+      "question": "The perimeter of a triangle with vertices (0, 4), (0, 0) and (3, 0) is",
+      "options": [
+        "5",
+        "12",
+        "11",
+        "7 5 +"
+      ],
+      "answer": 1,
+      "explanation": "Now, perimeter of is the sum of the length of Hence, the required perimeter of triangle is 12. However you can calculate perimeter direct from"
+    },
+    {
+      "id": "pyq_u07_mcq_68c51b8c1c",
+      "source_paper": "math_objective_pyq",
+      "question": "If , P 4 a 3 ` j is the mid-point of the line segment joining the points , Q 6 5 - ^ h and , R 2 3 - ^ h, then the value of a is",
+      "options": [
+        "4 -",
+        "12 -",
+        "12",
+        "6 -"
+      ],
+      "answer": 1,
+      "explanation": "j is the mid-point of the points"
+    },
+    {
+      "id": "pyq_u07_mcq_e337ff9537",
+      "source_paper": "math_objective_pyq",
+      "question": "If the distance between the points , p 4 ^ h and (1, 0) is 5, then the value of p is",
+      "options": [
+        "4 only",
+        "4 !",
+        "4 - only",
+        "0"
+      ],
+      "answer": 1,
+      "explanation": "According to the question, the distance between the Squaring both the sides, we get, Hence, the required value of p is"
     }
   ],
   "assertion_reason": [
@@ -167,7 +361,7 @@
     },
     {
       "id": "pyq_u07_w_c39c26e08d",
-      "source_paper": "chapter_wise_cached",
+      "source_paper": "chapter_wise_pyq",
       "marks": 3,
       "question": "Find the ratio in which the y-axis divides the line segment joining the points (5, 6) and ( 1, 4). Also find the point of intersection.",
       "model_answer": "Let the ratio be k:1 and point on y- axis be P(0, y) (2024)",

@@ -66,15 +66,19 @@ Polynomials
         parsed = parse.parse_chapter_block(1, blocks[1][0], source_label="test")
         self.assertGreaterEqual(len(parsed["mcq"]), 1)
 
-    def test_practice_session_includes_pyq_when_enabled(self):
+    def test_practice_session_follows_mark_pattern(self):
         config = h10t.default_week_config(1)
         config["use_chapter_llm"] = False
         config["include_board_pyq"] = True
-        config["pyq_count"] = 4
-        qs, _ = h10p.build_session_set(1, config, count=15)
-        self.assertEqual(len(qs), 15)
-        pyq_hits = [q for q in qs if q.get("source") == "board_pyq"]
-        self.assertGreaterEqual(len(pyq_hits), 1)
+        qs, _ = h10p.build_session_set(1, config)
+        self.assertEqual(len(qs), 10)
+        marks = [int(q.get("marks") or 1) for q in qs]
+        self.assertEqual(marks.count(1), 5)
+        self.assertEqual(marks.count(5), 1)
+        n_two, n_three = h10pyq.two_three_split(1)
+        self.assertEqual(marks.count(2), n_two)
+        self.assertEqual(marks.count(3), n_three)
+        self.assertTrue(all(q.get("source") == "board_pyq" for q in qs))
 
     def test_pyq_disabled(self):
         config = h10t.default_week_config(1)
