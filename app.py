@@ -556,6 +556,12 @@ if "sci_last_feedback" not in st.session_state:
     st.session_state.sci_last_feedback = None
 if "sci_start_time" not in st.session_state:
     st.session_state.sci_start_time = None
+if "sci_unit_id" not in st.session_state:
+    st.session_state.sci_unit_id = 1
+if "sci_score_saved" not in st.session_state:
+    st.session_state.sci_score_saved = False
+if "sci_quiz_label" not in st.session_state:
+    st.session_state.sci_quiz_label = ""
 # Edgenuity Course 3 state
 if "ec3_unit_id" not in st.session_state:
     st.session_state.ec3_unit_id = None
@@ -1073,13 +1079,15 @@ def back_to_mental_math_home():
     st.session_state.mm_last_feedback = None
 
 
-def start_science_quiz(questions):
+def start_science_quiz(questions, label=""):
     st.session_state.current_page = "science_practice"
     st.session_state.sci_questions = questions
     st.session_state.sci_current = 0
     st.session_state.sci_answers = []
     st.session_state.sci_last_feedback = None
     st.session_state.sci_start_time = time.time()
+    st.session_state.sci_score_saved = False
+    st.session_state.sci_quiz_label = label
 
 
 def back_to_science_home():
@@ -1357,7 +1365,7 @@ def render_user_dashboard():
             <div class="score-card" style="border-top: 5px solid #06b6d4;">
                 <div style="font-size: 3rem;">🔬</div>
                 <h3 style="margin: 0.5rem 0;">Science Corner</h3>
-                <p style="color: #6b7280;">Grade 6 Inspire Science!</p>
+                <p style="color: #6b7280;">Grade 7 Science</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
@@ -4552,10 +4560,9 @@ def render_mental_math_practice():
 # PAGE: Science Corner Home
 # ──────────────────────────────────────────────
 def render_science_home():
-    import science_content as sc
+    import arjun_science7 as s7
 
-    name = st.session_state.selected_user
-    user = db.get_user(name)
+    name, user = _science_user()
 
     col_nav1, _ = st.columns([1, 6])
     with col_nav1:
@@ -4568,7 +4575,7 @@ def render_science_home():
     <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
         <h1 style="font-size: 2.5rem;">🔬 {name}'s Science Corner</h1>
         <p style="color: #6b7280; font-size: 1.1rem;">
-            Grade 6 Inspire Science — 10 questions per quiz!
+            Grade 7 Science — six units, 36 lessons
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -4606,85 +4613,181 @@ def render_science_home():
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
 
-    if today_sci:
-        best = max(s["score"] for s in today_sci)
-        st.markdown(f"""
-        <div style="text-align:center; padding:1rem; background:#ecfdf5; border-radius:16px;
-             border:2px solid #10b981; margin-bottom:1rem;">
-            <span style="font-size:2rem;">🔬</span>
-            <p style="margin:0.3rem 0; font-size:1.1rem; color:#065f46;">
-                <strong>{len(today_sci)} quiz{'zes' if len(today_sci) > 1 else ''} today!</strong>
-                &nbsp; Best score: <strong>{best}%</strong>
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
-
+    week_number = _science_week_lesson(user)
+    week_lesson = s7.lesson_by_id(week_number)
+    week_unit = s7.unit_for_lesson(week_number)
     st.markdown(f"""
-    <div style="text-align:center; padding:1.5rem;">
-        <div style="font-size: 4rem;">🔬</div>
-        <h3 style="margin: 0.5rem 0;">{"Ready for another quiz?" if today_sci else "Ready to explore science?"}</h3>
-        <p style="color: #6b7280;">
-            Life Science, Genetics, Ecosystems & Physical Science!
-        </p>
+    <div style="padding:1rem 1.2rem; background:{week_unit['color']}12; border-radius:16px;
+         border:2px solid {week_unit['color']}; margin-bottom:0.6rem;">
+        <div style="color:{week_unit['color']}; font-size:0.85rem; font-weight:700;">THIS WEEK</div>
+        <div style="font-size:1.25rem; margin-top:0.2rem;">
+            {week_unit['emoji']} Lesson {week_lesson['id']}: {week_lesson['title']}
+        </div>
+        <p style="color:#4b5563; margin:0.35rem 0 0 0;">{week_lesson['activity']}</p>
     </div>
     """, unsafe_allow_html=True)
 
-    category_choice = st.selectbox(
-        "Focus on a topic (optional)",
-        ["All Topics (Mixed)"] + [
-            f"{sc.CATEGORIES[k]['emoji']} {sc.CATEGORIES[k]['name']}"
-            for k in sc.CATEGORIES
-        ],
-        key="sci_category_filter",
-    )
-
-    selected_cat = None
-    if category_choice != "All Topics (Mixed)":
-        for k, v in sc.CATEGORIES.items():
-            if v["name"] in category_choice:
-                selected_cat = k
-                break
-
-    _, col_btn, _ = st.columns([1, 2, 1])
-    with col_btn:
-        btn_label = "🔬 New Quiz" if today_sci else "🔬 Start Quiz"
-        if st.button(btn_label, key="sci_start", width="stretch", type="primary"):
-            questions = sc.generate_quiz(num_questions=10, category=selected_cat)
-            start_science_quiz(questions)
+    b1, b2, b3 = st.columns(3)
+    with b1:
+        if st.button("← Earlier lesson", key="sci_week_prev", width="stretch", disabled=week_number <= 1):
+            _set_science_week_lesson(user, week_number - 1)
+            st.rerun()
+    with b2:
+        if st.button("Open this lesson", key="sci_open_week", width="stretch", type="primary"):
+            _open_science_unit(week_unit["id"])
+            st.rerun()
+    with b3:
+        if st.button("Next lesson →", key="sci_week_next", width="stretch", disabled=week_number >= 36):
+            _set_science_week_lesson(user, week_number + 1)
             st.rerun()
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
-    st.markdown("### 📖 Topics")
-
-    counts = sc.get_category_counts()
-    cat_cols = st.columns(2, gap="medium")
-    for idx, (cat_id, cat_info) in enumerate(sc.CATEGORIES.items()):
-        with cat_cols[idx % 2]:
+    st.markdown("### Units")
+    counts = s7.question_counts()
+    card_cols = st.columns(3, gap="medium")
+    for idx, unit in enumerate(s7.UNITS):
+        question_total = sum(counts[lesson_id] for lesson_id in unit["lesson_ids"])
+        with card_cols[idx % 3]:
             st.markdown(f"""
-            <div style="padding:1rem;border-radius:12px;border-left:4px solid {cat_info['color']};
-                 background:{cat_info['color']}10;margin-bottom:0.8rem;">
-                <span style="font-size:1.3rem;">{cat_info['emoji']}</span>
-                <strong style="color:{cat_info['color']};"> {cat_info['name']}</strong>
-                <span style="color:#9ca3af;font-size:0.85rem;"> — {counts[cat_id]} questions</span>
-                <p style="color:#6b7280;font-size:0.85rem;margin:0.3rem 0 0 0;">
-                    {cat_info['description']}
+            <div style="padding:1rem;border-radius:12px;border-top:5px solid {unit['color']};
+                 background:{unit['color']}10;min-height:9.5rem;">
+                <div style="font-size:1.8rem;">{unit['emoji']}</div>
+                <strong style="color:{unit['color']};">{unit['name']}</strong>
+                <p style="color:#6b7280;font-size:0.85rem;margin:0.35rem 0;">
+                    Lessons {unit['lesson_ids'][0]}–{unit['lesson_ids'][-1]}
+                    · {question_total} questions
                 </p>
+                <p style="color:#4b5563;font-size:0.9rem;margin:0;">{unit['blurb']}</p>
             </div>
             """, unsafe_allow_html=True)
+            if st.button("Open unit", key=f"sci_open_unit_{unit['id']}", width="stretch"):
+                _open_science_unit(unit["id"])
+                st.rerun()
 
 
-# ──────────────────────────────────────────────
+def _science_user():
+    name = st.session_state.selected_user
+    return name, db.get_user(name)
+
+
+def _science_week_lesson(user) -> int:
+    import arjun_science7 as s7
+
+    if not user:
+        return s7.clamp_lesson(st.session_state.get("sci_week_lesson") or 1)
+    return db.get_arjun_science_lesson(user["id"])
+
+
+def _set_science_week_lesson(user, lesson_number: int) -> None:
+    import arjun_science7 as s7
+
+    number = s7.clamp_lesson(lesson_number)
+    if user:
+        db.set_arjun_science_lesson(user["id"], number)
+    else:
+        st.session_state.sci_week_lesson = number
+
+
+def _open_science_unit(unit_id: int) -> None:
+    st.session_state.sci_unit_id = int(unit_id)
+    st.session_state.current_page = "science_unit"
+
+
+def render_science_unit():
+    import arjun_science7 as s7
+
+    _, user = _science_user()
+    unit = s7.unit_by_id(st.session_state.get("sci_unit_id") or 1)
+    week_number = _science_week_lesson(user)
+    counts = s7.question_counts()
+
+    col_nav1, _ = st.columns([1, 6])
+    with col_nav1:
+        if st.button("← Science Home", key="sci_unit_back"):
+            back_to_science_home()
+            st.rerun()
+
+    st.markdown(f"""
+    <div style="padding:0.4rem 0 0.8rem 0;">
+        <h1 style="font-size:2rem; margin-bottom:0.2rem;">{unit['emoji']} {unit['name']}</h1>
+        <p style="color:#6b7280; margin:0;">{unit['blurb']}</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    unit_pool = s7.questions_for_unit(unit["id"])
+    if unit_pool:
+        if st.button(
+            f"Unit mix · {min(s7.UNIT_QUIZ_SIZE, len(unit_pool))} questions",
+            key="sci_unit_mix",
+            type="primary",
+        ):
+            questions = s7.build_quiz(unit_id=unit["id"])
+            start_science_quiz(questions, label=f"{unit['name']} mix")
+            st.rerun()
+    else:
+        st.caption("Unit mix opens when this unit has practice questions.")
+
+    st.markdown("")
+    for lesson in (s7.lesson_by_id(lesson_id) for lesson_id in unit["lesson_ids"]):
+        available = counts[lesson["id"]]
+        is_current = lesson["id"] == week_number
+        border = unit["color"] if is_current else "#e5e7eb"
+        week_tag = " · This week" if is_current else ""
+        materials = (
+            f"<p style='margin:0.25rem 0 0 0;'><strong>Materials:</strong> {lesson['materials']}</p>"
+            if lesson["materials"] else ""
+        )
+        sheet = (
+            f"<p style='margin:0.25rem 0 0 0;'><strong>Sheet:</strong> {lesson['sheet']}</p>"
+            if lesson["sheet"] else ""
+        )
+        also = (
+            f"<p style='margin:0.25rem 0 0 0; color:#4b5563;'>{lesson['also']}</p>"
+            if lesson["also"] else ""
+        )
+        ixl = ", ".join(lesson["ixl"])
+        st.markdown(f"""
+        <div style="padding:0.9rem 1rem;border-radius:12px;border:2px solid {border};
+             margin-bottom:0.35rem;">
+            <strong>Lesson {lesson['id']}: {lesson['title']}</strong>
+            <span style="color:{unit['color']};">{week_tag}</span>
+            <p style="color:#4b5563;margin:0.35rem 0 0 0;">{lesson['activity']}</p>
+            {materials}
+            <p style="margin:0.35rem 0 0 0;"><strong>IXL:</strong> {ixl}</p>
+            {sheet}
+            {also}
+            <p style="color:#9ca3af;font-size:0.85rem;margin:0.35rem 0 0 0;">{available} practice questions</p>
+        </div>
+        """, unsafe_allow_html=True)
+        if available:
+            quiz_n = min(s7.LESSON_QUIZ_SIZE, available)
+            if st.button(
+                f"Practice lesson {lesson['id']} · {quiz_n} questions",
+                key=f"sci_practice_lesson_{lesson['id']}",
+                width="stretch",
+            ):
+                questions = s7.build_quiz(lesson_id=lesson["id"])
+                start_science_quiz(questions, label=f"Lesson {lesson['id']}: {lesson['title']}")
+                st.rerun()
+        else:
+            st.caption(
+                f"Lesson {lesson['id']} practice is not in the bank yet. "
+                "The live activity is the work this week."
+            )
+
+
+
 # PAGE: Science Corner Practice
 # ──────────────────────────────────────────────
 def render_science_practice():
-    import science_content as sc
+    import arjun_science7 as s7
 
     name = st.session_state.selected_user
     user = db.get_user(name)
     questions = st.session_state.sci_questions
     current = st.session_state.sci_current
     total = len(questions)
-    is_done = current >= total
+    is_done = current >= total and total > 0
 
     col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
     with col_nav1:
@@ -4714,12 +4817,18 @@ def render_science_practice():
     </div>
     """, unsafe_allow_html=True)
 
-    if not is_done:
+    if total == 0:
+        st.info("This quiz has no questions yet.")
+        if st.button("← Science Home", key="sci_empty_back"):
+            back_to_science_home()
+            st.rerun()
+    elif not is_done:
         q = questions[current]
-        cat_info = sc.CATEGORIES.get(q["category"], {})
-        cat_color = cat_info.get("color", "#06b6d4")
-        cat_emoji = cat_info.get("emoji", "🔬")
-        cat_name = cat_info.get("name", "Science")
+        lesson = s7.lesson_by_id(q["lesson"]) if q.get("lesson") else None
+        unit = s7.unit_for_lesson(q["lesson"]) if lesson else None
+        cat_color = unit["color"] if unit else "#06b6d4"
+        cat_emoji = unit["emoji"] if unit else "🔬"
+        cat_name = f"Lesson {lesson['id']}" if lesson else "Science"
 
         sci_img_name = q.get("image")
         sci_img_path = os.path.join("science_images", f"{sci_img_name}.png") if sci_img_name else None
@@ -4812,11 +4921,13 @@ def render_science_practice():
         time_spent = int(time.time() - st.session_state.sci_start_time) if st.session_state.sci_start_time else 0
         minutes, seconds = divmod(time_spent, 60)
 
-        if user:
+        if user and not st.session_state.get("sci_score_saved"):
+            label = st.session_state.get("sci_quiz_label") or "Quiz"
             db.save_activity_score(
-                user["id"], "Science", "Quiz",
+                user["id"], "Science", label,
                 score_pct, 100, f"{correct_count}/{total} correct", time_spent,
             )
+            st.session_state.sci_score_saved = True
 
         if score_pct == 100:
             res_emoji, message, res_color = "🏆", "Perfect score! You're a science superstar!", "#10b981"
@@ -4873,8 +4984,12 @@ def render_science_practice():
         st.markdown("")
         col_r1, col_r2 = st.columns(2)
         with col_r1:
-            if st.button("🔬 Quiz Again", key="sci_again_btn", width="stretch", type="primary"):
-                back_to_science_home()
+            if st.button("🔬 Back to unit", key="sci_again_btn", width="stretch", type="primary"):
+                st.session_state.current_page = "science_unit"
+                st.session_state.sci_questions = []
+                st.session_state.sci_current = 0
+                st.session_state.sci_answers = []
+                st.session_state.sci_last_feedback = None
                 st.rerun()
         with col_r2:
             if st.button("🏠 Dashboard", key="sci_dashboard", width="stretch"):
@@ -7244,6 +7359,8 @@ elif page == "mental_math_practice":
     render_mental_math_practice()
 elif page == "science_home":
     render_science_home()
+elif page == "science_unit":
+    render_science_unit()
 elif page == "science_practice":
     render_science_practice()
 elif page == "logo_id_home":

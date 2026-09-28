@@ -1,13 +1,9 @@
 """
-Science Corner — Grade 6 science quiz bank for Arjun.
+Science Corner question pool.
 
-Covers Inspire Science curriculum:
-1. Life Science (cells, body systems, organisation)
-2. Reproduction & Inheritance (heredity, genetics, variation)
-3. Ecosystems & Energy Flow (food chains, matter cycling, human impact)
-4. Matter & Physical Science (atoms, states of matter, forces, energy)
-5. Earth & Space Science (Earth layers, tectonics, rocks, weather, solar system)
-6. Waves, Light & Sound (wave properties, EM spectrum, sound, optics)
+Grade 7 lesson placement lives in arjun_science7.py. This bank started as
+Grade 6 Inspire Science; questions that do not match a Grade 7 lesson are
+left out of practice.
 """
 
 import random

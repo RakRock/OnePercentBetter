@@ -237,6 +237,13 @@ def init_db():
                 FOREIGN KEY (user_id) REFERENCES users(id)
             );
 
+            CREATE TABLE IF NOT EXISTS arjun_science_lesson (
+                user_id INTEGER PRIMARY KEY,
+                lesson_number INTEGER NOT NULL DEFAULT 1,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            );
+
             CREATE TABLE IF NOT EXISTS harshit_practice_sessions (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 user_id INTEGER NOT NULL,
@@ -2095,6 +2102,44 @@ def save_arjun_spanish_config(
                  updated_at = CURRENT_TIMESTAMP""",
             (week_label, json.dumps(payload)),
         )
+
+
+def get_arjun_science_lesson(user_id: int) -> int:
+    """Current Science 7 lesson pointer (1–36). Defaults to lesson 1."""
+    if not user_id:
+        return 1
+    try:
+        with get_connection() as conn:
+            row = conn.execute(
+                "SELECT lesson_number FROM arjun_science_lesson WHERE user_id = ?",
+                (int(user_id),),
+            ).fetchone()
+    except Exception:
+        return 1
+    if not row:
+        return 1
+    try:
+        number = int(row["lesson_number"])
+    except (TypeError, ValueError):
+        return 1
+    return max(1, min(36, number))
+
+
+def set_arjun_science_lesson(user_id: int, lesson_number: int) -> int:
+    """Store the Science 7 week pointer and return the clamped lesson number."""
+    number = max(1, min(36, int(lesson_number)))
+    if not user_id:
+        return number
+    with get_connection() as conn:
+        conn.execute(
+            """INSERT INTO arjun_science_lesson (user_id, lesson_number, updated_at)
+               VALUES (?, ?, CURRENT_TIMESTAMP)
+               ON CONFLICT(user_id) DO UPDATE SET
+                 lesson_number = excluded.lesson_number,
+                 updated_at = CURRENT_TIMESTAMP""",
+            (int(user_id), number),
+        )
+    return number
 
 
 def upsert_spanish_card_status(user_id: int, card_id: str, status: str) -> None:
