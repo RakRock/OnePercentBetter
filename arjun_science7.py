@@ -15,6 +15,28 @@ import science_content as science_bank
 
 LESSON_QUIZ_SIZE = 8
 UNIT_QUIZ_SIZE = 10
+STEM_QUIZ_SIZE = 8
+
+# Word stems for 7.E.1 and 7.E.2 (Earth's systems). Shown on Unit 1.
+UNIT_WORD_STEMS: dict[int, list[dict]] = {
+    1: [
+        {"stem": "atmo", "meaning": "vapor", "example": "atmosphere"},
+        {"stem": "cycle", "meaning": "ring, circle", "example": "water cycle"},
+        {"stem": "spher", "meaning": "ball, round", "example": "atmosphere"},
+        {"stem": "thermo", "meaning": "heat", "example": "thermosphere"},
+        {"stem": "ex", "meaning": "out of, away from", "example": "exosphere"},
+        {"stem": "meso", "meaning": "middle", "example": "mesosphere"},
+        {"stem": "strat", "meaning": "layer", "example": "stratosphere"},
+        {"stem": "trop", "meaning": "change, turn", "example": "troposphere"},
+        {"stem": "grav", "meaning": "heavy", "example": "gravity"},
+        {"stem": "baro", "meaning": "pressure", "example": "barometer"},
+        {"stem": "vectus", "meaning": "to carry", "example": "convection"},
+        {"stem": "alt", "meaning": "high", "example": "altitude"},
+        {"stem": "densus", "meaning": "thick", "example": "density"},
+        {"stem": "radi", "meaning": "ray", "example": "radiation"},
+        {"stem": "tudo", "meaning": "state or condition", "example": "altitude"},
+    ],
+}
 
 UNITS: list[dict] = [
     {
@@ -333,6 +355,48 @@ def _shuffle_question(question: dict) -> dict:
     item["options"] = options
     item["answer"] = options.index(correct)
     return item
+
+
+def word_stems_for_unit(unit_id: int) -> list[dict]:
+    return list(UNIT_WORD_STEMS.get(int(unit_id), []))
+
+
+def _stem_questions() -> list[dict]:
+    """One question per Unit 1 stem, kept out of the lesson banks."""
+    stems = {row["stem"]: row for row in UNIT_WORD_STEMS[1]}
+
+    def ask(question_id: int, stem: str, prompt: str, options: list[str], answer: int, explanation: str) -> dict:
+        row = stems[stem]
+        return _mc(question_id, 1, prompt, options, answer, explanation + f" Stem {row['stem']} means {row['meaning']}. Example: {row['example']}.")
+
+    return [
+        ask(1101, "atmo", "The stem atmo means…", ["vapor", "heat", "middle", "heavy"], 0, "Atmosphere is the vapor layer around Earth."),
+        ask(1102, "cycle", "The stem cycle means…", ["ring or circle", "a straight line", "heavy", "a ray"], 0, "The water cycle is water moving in a circle."),
+        ask(1103, "spher", "The stem spher means…", ["ball or round", "layer", "high", "thick"], 0, "Atmosphere uses spher, the round blanket of air around Earth."),
+        ask(1104, "thermo", "Which layer's name uses the stem for heat?", ["Thermosphere", "Mesosphere", "Exosphere", "Troposphere"], 0, "Thermo means heat."),
+        ask(1105, "ex", "The stem ex means…", ["out of or away from", "middle", "heavy", "a circle"], 0, "The exosphere is the outer layer, away from Earth's surface."),
+        ask(1106, "meso", "The stem meso means…", ["middle", "heat", "pressure", "vapor"], 0, "The mesosphere is the middle layer of the atmosphere."),
+        ask(1107, "strat", "The stem strat means…", ["layer", "ray", "thick", "to carry"], 0, "The stratosphere is a layer of the atmosphere."),
+        ask(1108, "trop", "The stem trop means…", ["change or turn", "high", "vapor", "ball"], 0, "Weather turns and changes in the troposphere."),
+        ask(1109, "grav", "The stem grav means…", ["heavy", "light", "middle", "out of"], 0, "Gravity is the pull that makes things feel heavy."),
+        ask(1110, "baro", "A barometer measures pressure. The stem baro means…", ["pressure", "heat", "ray", "circle"], 0, "Baro means pressure."),
+        ask(1111, "vectus", "The stem vectus means…", ["to carry", "to melt", "to measure", "to freeze"], 0, "Convection carries heat as warm air or water moves."),
+        ask(1112, "alt", "The stem alt means…", ["high", "low", "thick", "round"], 0, "Altitude is how high something is."),
+        ask(1113, "densus", "The stem densus means…", ["thick", "thin", "high", "a ray"], 0, "Density describes how thickly matter is packed."),
+        ask(1114, "radi", "The stem radi means…", ["ray", "layer", "circle", "heavy"], 0, "Radiation travels in rays, including heat from the Sun."),
+        ask(1115, "tudo", "The stem tudo means…", ["state or condition", "middle layer", "to carry", "vapor"], 0, "The ending -tude names a state or condition, as in altitude."),
+    ]
+
+
+STEM_QUESTIONS: list[dict] = _stem_questions()
+
+
+def build_stem_quiz(unit_id: int) -> list[dict]:
+    if int(unit_id) != 1:
+        return []
+    pool = STEM_QUESTIONS
+    picked = random.sample(pool, min(STEM_QUIZ_SIZE, len(pool)))
+    return [_shuffle_question(q) for q in picked]
 
 
 def build_quiz(*, lesson_id: int | None = None, unit_id: int | None = None) -> list[dict]:

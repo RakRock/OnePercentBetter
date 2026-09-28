@@ -4714,6 +4714,34 @@ def render_science_unit():
     </div>
     """, unsafe_allow_html=True)
 
+    stems = s7.word_stems_for_unit(unit["id"])
+    if stems:
+        stem_rows = "".join(
+            "<tr>"
+            f"<td style='padding:0.25rem 0.6rem 0.25rem 0;font-weight:700;'>{row['stem']}</td>"
+            f"<td style='padding:0.25rem 0.6rem;'>{row['meaning']}</td>"
+            f"<td style='padding:0.25rem 0;color:#4b5563;'>{row['example']}</td>"
+            "</tr>"
+            for row in stems
+        )
+        st.markdown(
+            "<div style='padding:0.8rem 1rem;border-radius:12px;border:1px solid #e5e7eb;margin:0 0 0.8rem 0;'>"
+            "<strong>Word stems</strong>"
+            "<p style='color:#6b7280;margin:0.2rem 0 0.5rem 0;'>7.E.1 and 7.E.2 — Earth's systems, structures, and processes</p>"
+            "<table style='border-collapse:collapse;width:100%;'>"
+            "<tr><th style='text-align:left;padding:0.2rem 0.6rem 0.2rem 0;'>Stem</th>"
+            "<th style='text-align:left;padding:0.2rem 0.6rem;'>Meaning</th>"
+            "<th style='text-align:left;padding:0.2rem 0;'>Example</th></tr>"
+            f"{stem_rows}</table></div>",
+            unsafe_allow_html=True,
+        )
+        if st.button(
+            f"Practice word stems · {min(s7.STEM_QUIZ_SIZE, len(stems))} questions",
+            key="sci_stem_quiz",
+        ):
+            start_science_quiz(s7.build_stem_quiz(unit["id"]), label=f"{unit['name']} word stems")
+            st.rerun()
+
     unit_pool = s7.questions_for_unit(unit["id"])
     if unit_pool:
         if st.button(
