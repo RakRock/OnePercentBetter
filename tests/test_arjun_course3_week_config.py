@@ -124,8 +124,10 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
         questions, err = c3p.build_session_set(1, cfg)
         self.assertIsNone(err)
         self.assertEqual(len(questions), 15)
-        schoolish = sum(1 for q in questions if q.get("source") == "school_packet_9_22")
+        schoolish = sum(1 for q in questions if c3p.is_school_like(q))
+        packet = sum(1 for q in questions if q.get("source") == "school_packet_9_22")
         self.assertGreaterEqual(schoolish, 10)
+        self.assertGreaterEqual(packet, 3)
 
     def test_unit1_seed_questions_prefer_school_packet(self):
         seeds = c3p.seed_questions_for_category(1, "fractions", limit=4)
@@ -140,8 +142,10 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
         questions, err = c3p.build_session_set(1, cfg)
         self.assertIsNone(err)
         self.assertEqual(len(questions), 15)
-        schoolish = sum(1 for q in questions if q.get("source") == "school_packet_9_22")
+        schoolish = sum(1 for q in questions if c3p.is_school_like(q))
+        packet = sum(1 for q in questions if q.get("source") == "school_packet_9_22")
         self.assertGreaterEqual(schoolish, 12)
+        self.assertGreaterEqual(packet, 4)
 
     def test_unit1_school_packet_questions_are_valid_mcqs(self):
         from arjun_course3_unit1_school_packet import SCHOOL_PACKET_UNIT1_QUESTIONS

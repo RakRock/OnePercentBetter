@@ -38,6 +38,16 @@ class TestNumericExpressionEval(unittest.TestCase):
         options = ["14", "20", "12", "10"]
         self.assertEqual(ensure_numeric_answer_key(question, options, 0), 0)
 
+    def test_order_rationals_decreasing_school_stem(self) -> None:
+        question = "Place the numbers in DECREASING order: 2/5, 0.45, 50%"
+        options = [
+            "0.45, 50%, 2/5",
+            "2/5, 0.45, 50%",
+            "50%, 2/5, 0.45",
+            "50%, 0.45, 2/5",
+        ]
+        self.assertEqual(ensure_numeric_answer_key(question, options, 0), 3)
+
     def test_order_rationals_greatest_to_least(self) -> None:
         question = "Order 3/4, 0.7, and 72% from greatest to least."
         options = [

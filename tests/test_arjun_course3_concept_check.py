@@ -24,10 +24,12 @@ class TestConceptCheckBank(unittest.TestCase):
                 qs = c3p.build_daily_set(count=15, unit_id=unit_id, week_config=cfg, use_llm=False)
                 counts.append(sum(1 for q in qs if q.get("source") == "concept_check"))
             avg = sum(counts) / len(counts)
+            # Unit 1 default week is the school packet, so most items are worksheet clones.
+            min_cc = 1 if unit_id == 1 else 5
             self.assertGreaterEqual(
                 avg,
-                5,
-                msg=f"Unit {unit_id} avg concept-check {avg:.1f}/15 — expected ≥5",
+                min_cc,
+                msg=f"Unit {unit_id} avg concept-check {avg:.1f}/15 — expected ≥{min_cc}",
             )
 
     def test_focus_practice_prefers_concept_check(self) -> None:

@@ -504,7 +504,7 @@ def compute_scientific_notation_sum(question: str) -> float | None:
     return sum(coef * (10 ** exp) for coef, exp in terms[:2])
 
 
-_RATIONAL_TOKEN_RE = re.compile(r"\d+/\d+|\d+\.\d+|\d+%")
+_RATIONAL_TOKEN_RE = re.compile(r"\d+/\d+|\d+\.\d+%|\d+%|\d+\.\d+")
 
 
 def parse_rational_token(token: str) -> float | None:
@@ -548,9 +548,11 @@ def _ordering_values_from_option(option: str) -> tuple[float, ...] | None:
 
 
 def find_ordering_option_index(question: str, options: list[str]) -> int | None:
-    """Match greatest-to-least / least-to-greatest ordering MCQs."""
+    """Match greatest-to-least / least-to-greatest / INCREASING / DECREASING MCQs."""
     lower = str(question).lower()
-    if not re.search(r"greatest to least|least to greatest", lower):
+    descending = bool(re.search(r"greatest to least|decreasing order", lower))
+    ascending = bool(re.search(r"least to greatest|increasing order", lower))
+    if not descending and not ascending:
         return None
     tokens = _extract_rational_tokens(question)
     if len(tokens) < 3:
@@ -558,7 +560,6 @@ def find_ordering_option_index(question: str, options: list[str]) -> int | None:
     pairs = [(token, parse_rational_token(token)) for token in tokens[:3]]
     if any(val is None for _, val in pairs):
         return None
-    descending = "greatest to least" in lower
     pairs.sort(key=lambda item: item[1], reverse=descending)
     expected = tuple(val for _, val in pairs)
     for i, opt in enumerate(options):
@@ -783,11 +784,14 @@ def find_matching_option_index(expected: float, options: list[str]) -> int | Non
 def _stem_requires_scientific_notation_answer(stem: str) -> bool:
     """True when the stem asks for a result written in scientific notation."""
     lower = str(stem).lower()
-    if "scientific notation" not in lower:
-        return False
     if re.search(r"(?:is|written in)\s+(?:correct\s+)?scientific notation\??", lower):
         return False
-    return bool(re.search(r"(?:in|give|write|express|using)\s+scientific notation", lower))
+    if "scientific notation" in lower:
+        return True
+    # "Add: 9.2 × 10^6 + 3.5 × 10^5 =" should still prefer 1 ≤ |a| < 10.
+    if len(_parse_scientific_notation_terms(stem)) >= 2 and re.search(r"\b(add|multiply|divide|sum)\b", lower):
+        return True
+    return False
 
 
 def find_proper_scientific_notation_index(expected: float, options: list[str]) -> int | None:

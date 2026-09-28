@@ -88,7 +88,7 @@ def add_questions(unit_id: int, questions: list[dict]) -> int:
         if key in seen or (qid and qid in seen_ids):
             continue
         item = dict(q)
-        item["source"] = "concept_check"
+        item.setdefault("source", "concept_check")
         item.setdefault("origin", "llm")
         added.append(item)
         seen.add(key)

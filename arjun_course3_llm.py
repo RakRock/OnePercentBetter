@@ -210,19 +210,21 @@ def _to_session_question(q: dict, unit_id: int, categories: dict) -> dict:
     cat = q["category"]
     info = categories.get(cat, {})
     stamp = int(time.time() * 1000) % 1_000_000
-    return c3ans.finalize_question(
-        {
-            "id": f"c3_llm_u{unit_id}_{cat}_{stamp}_{random.randint(100, 999)}",
-            "category": cat,
-            "question": q["question"],
-            "options": q["options"],
-            "answer": q["answer"],
-            "explanation": q.get("explanation", ""),
-            "source": "llm",
-            "level": q.get("level", "B"),
-            "category_label": info.get("name", cat),
-        }
-    )
+    item = {
+        "id": f"c3_llm_u{unit_id}_{cat}_{stamp}_{random.randint(100, 999)}",
+        "category": cat,
+        "question": q["question"],
+        "options": q["options"],
+        "answer": q["answer"],
+        "explanation": q.get("explanation", ""),
+        "source": "llm",
+        "level": q.get("level", "B"),
+        "category_label": info.get("name", cat),
+    }
+    if unit_id == 1:
+        item["source"] = "school_seeded"
+        item["style"] = "school_packet"
+    return c3ans.finalize_question(item)
 
 
 def _build_user_message(
@@ -244,12 +246,15 @@ def _build_user_message(
         desc = c3lvl.LEVEL_DESCRIPTIONS.get(level, level)
         archetype = c3cc.archetype_hint(cat_id, level)
         seeds = c3p.seed_questions_for_category(
-            unit_id, cat_id, level=level, limit=4 if unit_id == 1 else 2
+            unit_id, cat_id, level=level, limit=c3p.UNIT1_SEED_LIMIT if unit_id == 1 else 2
         )
         seed_block = ""
         if seeds:
-            seed_lines = [f"Q: {s.get('question')} | opts: {s.get('options')}" for s in seeds]
-            seed_block = "\n   Seed examples: " + " | ".join(seed_lines)
+            seed_lines = []
+            for s in seeds:
+                family = c3p.stem_family_for_question(s.get("question", ""))
+                seed_lines.append(f"[{family}] Q: {s.get('question')} | opts: {s.get('options')}")
+            seed_block = "\n   Seed examples (base bank, style only): " + " || ".join(seed_lines)
         lines.append(
             f"{i}. category **{cat_id}** — {name} — **Level {level}** ({desc})\n"
             f"   Concept-check style: {archetype}{seed_block}"

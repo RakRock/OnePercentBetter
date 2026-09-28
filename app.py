@@ -1303,7 +1303,7 @@ def render_user_dashboard():
             <div class="score-card" style="border-top: 5px solid #6366f1;">
                 <div style="font-size: 3rem;">📐</div>
                 <h3 style="margin: 0.5rem 0;">Course 3 Math</h3>
-                <p style="color: #6b7280;">Units 1–5 lesson notes & practice</p>
+                <p style="color: #6b7280;">Units 1–5, practice & linear equations</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")

@@ -35,21 +35,28 @@ def _get_client(xai_api_key: str):
 def _format_seed_block(seeds: list[dict]) -> str:
     if not seeds:
         return ""
-    lines = ["\nSeed examples from the current question bank (style only — write different questions):"]
+    import arjun_course3_practice as c3p
+
+    lines = [
+        "\nSeed examples from the UNIT BASE BANK (style only — write different numbers/stories):",
+        "Cover a MIX of these worksheet verbs; do not copy, and do not use the same verb for every item.",
+    ]
     for s in seeds:
         opts = s.get("options") or []
-        lines.append(f"- Q: {s.get('question', '')} | opts: {opts}")
+        family = c3p.stem_family_for_question(s.get("question", ""))
+        lines.append(f"- [{family}] Q: {s.get('question', '')} | opts: {opts}")
     return "\n".join(lines)
 
 
 def _seed_examples(unit_id: int, category: str, level: str | None = None) -> list[dict]:
     import arjun_course3_practice as c3p
 
+    limit = c3p.UNIT1_SEED_LIMIT if unit_id == 1 else MAX_SEED_EXAMPLES
     return c3p.seed_questions_for_category(
         unit_id,
         category,
         level=level,
-        limit=MAX_SEED_EXAMPLES,
+        limit=limit,
     )
 
 
@@ -97,6 +104,7 @@ RULES:
 - Wrong options = plausible mistakes from the school's concept checks.
 - Match the requested category and level exactly. Each stem must be unique.
 - Use SEED EXAMPLES as style/format guides — write NEW questions, do not copy them verbatim.
+- For Unit 1, imitate the teacher packet verbs in the seeds (rewrite/simplify, nested of-fractions, convert, estimate, order, Was ___ correct?).
 - For "simplest form" fraction answers: put ONLY the reduced fraction in options (e.g. 5/11, not 45/99).
 - Never put two options that are the same value in different forms (e.g. do not list both 45/99 and 5/11).
 {KID_NUMERIC_FORMAT_RULES}
@@ -133,19 +141,21 @@ def _normalize_item(q: dict, unit_id: int, category: str, fallback_level: str, c
     if lvl not in c3lvl.LEVEL_ORDER:
         lvl = fallback_level
     stamp = int(time.time() * 1000) % 1_000_000
-    return c3ans.finalize_question(
-        {
-            "id": f"cc_ai_u{unit_id}_{category}_{stamp}_{random.randint(100, 999)}",
-            "category": cat,
-            "level": lvl,
-            "question": question,
-            "options": options,
-            "answer": answer,
-            "explanation": explanation,
-            "source": "concept_check",
-            "origin": "llm",
-        }
-    )
+    item = {
+        "id": f"cc_ai_u{unit_id}_{category}_{stamp}_{random.randint(100, 999)}",
+        "category": cat,
+        "level": lvl,
+        "question": question,
+        "options": options,
+        "answer": answer,
+        "explanation": explanation,
+        "source": "concept_check",
+        "origin": "llm",
+    }
+    if unit_id == 1:
+        item["source"] = "school_seeded"
+        item["style"] = "school_packet"
+    return c3ans.finalize_question(item)
 
 
 def _parse_items(raw: str, unit_id: int, category: str, level: str, categories: dict) -> list[dict]:
@@ -282,6 +292,12 @@ def generate_concept_check_batch_llm(
         f"Session seed: {random.randint(1000, 9999)} — make each stem unique.\n"
         "Return ONLY a JSON array with that many objects."
     )
+    if unit_id == 1:
+        user_msg += (
+            "\nVARIETY: use several different seed verbs in this batch "
+            "(rewrite, nested of-fractions, convert, estimate, order, Was ___ correct?). "
+            "Do not write six questions of the same type."
+        )
     system = _system_prompt(unit_id, cats, tips, count=count)
     client = _get_client(xai_api_key)
     last_err: str | None = None
@@ -295,7 +311,7 @@ def generate_concept_check_batch_llm(
                     {"role": "system", "content": system},
                     {"role": "user", "content": user_msg},
                 ],
-                max_tokens=3500,
+                max_tokens=5000,
                 temperature=0.9,
             )
             raw = (resp.choices[0].message.content or "").strip()
@@ -315,6 +331,40 @@ def generate_concept_check_batch_llm(
     return []
 
 
+_EXPAND_CHUNK = 6
+
+
+def _too_close_to_seed(question: dict, seeds: list[dict]) -> bool:
+    """Drop Grok items that reuse the seed's numbers and wording."""
+    import re
+
+    def _nums(text: str) -> set[str]:
+        return set(re.findall(r"\d+\s+\d+/\d+|\d+/\d+|\d+\.\d+|\d+", text or ""))
+
+    def _toks(text: str) -> set[str]:
+        return set(re.sub(r"\s+", " ", (text or "").lower()).split())
+
+    q_text = str(question.get("question", ""))
+    q_toks, q_nums = _toks(q_text), _nums(q_text)
+    if not q_toks:
+        return False
+    cat = question.get("category")
+    for seed in seeds:
+        if seed.get("category") != cat:
+            continue
+        s_text = str(seed.get("question", ""))
+        s_toks, s_nums = _toks(s_text), _nums(s_text)
+        if not s_toks:
+            continue
+        overlap = len(q_toks & s_toks) / len(q_toks | s_toks)
+        shared_nums = q_nums & s_nums
+        if overlap >= 0.8:
+            return True
+        if overlap >= 0.55 and len(shared_nums) >= 2:
+            return True
+    return False
+
+
 def expand_unit_bank(
     xai_api_key: str,
     unit_id: int,
@@ -329,39 +379,57 @@ def expand_unit_bank(
 
     cfg = c3p._unit_practice(unit_id)
     cats = cfg["categories"]
-    cat_ids = [c for c in (categories or list(cats.keys())) if c in cats]
+    if categories is None and unit_id == 1:
+        from arjun_course3_unit1_school_packet import SCHOOL_PACKET_TOPICS
+
+        cat_ids = [item["id"] for item in SCHOOL_PACKET_TOPICS if item["id"] in cats]
+    else:
+        cat_ids = [c for c in (categories or list(cats.keys())) if c in cats]
     lvls = levels or ["B", "C", "D"]
     before = c3store.count_by_category(unit_id)
-    batch: list[dict] = []
+    seeds = list(c3p._BASE_BANK_BY_UNIT.get(unit_id) or [])
 
     for cat_id in cat_ids:
-        wanted = [lvls[i % len(lvls)] for i in range(per_category)]
-        generated = generate_concept_check_batch_llm(
-            xai_api_key,
-            unit_id,
-            cat_id,
-            wanted,
-            categories=cats,
-            revision_tips=cfg["revision_tips"],
-            persist=False,
-            verbose=verbose,
-        )
-        batch.extend(generated)
-        for lvl in wanted[len(generated) :]:
-            q = generate_concept_check_llm(
+        added_cat = 0
+        guard = 0
+        while added_cat < per_category and guard < per_category + _EXPAND_CHUNK:
+            guard += 1
+            need = min(_EXPAND_CHUNK, per_category - added_cat)
+            wanted = [lvls[(added_cat + i) % len(lvls)] for i in range(need)]
+            if verbose:
+                print(f"  … {cat_id} batch {need} ({', '.join(wanted)})", flush=True)
+            generated = generate_concept_check_batch_llm(
                 xai_api_key,
                 unit_id,
                 cat_id,
-                lvl,
+                wanted,
                 categories=cats,
                 revision_tips=cfg["revision_tips"],
                 persist=False,
                 verbose=verbose,
             )
-            if q:
-                batch.append(q)
+            chunk = list(generated)
+            for lvl in wanted[len(generated) :]:
+                q = generate_concept_check_llm(
+                    xai_api_key,
+                    unit_id,
+                    cat_id,
+                    lvl,
+                    categories=cats,
+                    revision_tips=cfg["revision_tips"],
+                    persist=False,
+                    verbose=verbose,
+                )
+                if q:
+                    chunk.append(q)
+            chunk = [q for q in chunk if not _too_close_to_seed(q, seeds)]
+            saved = c3store.add_questions(unit_id, chunk)
+            added_cat += saved
+            if verbose:
+                print(f"  + {cat_id} saved {saved} (running {added_cat}/{per_category})", flush=True)
+            if saved == 0:
+                break
 
-    c3store.add_questions(unit_id, batch)
     c3p.refresh_unit_bank(unit_id)
     after = c3store.count_by_category(unit_id)
     return {cat: after.get(cat, 0) - before.get(cat, 0) for cat in cat_ids}

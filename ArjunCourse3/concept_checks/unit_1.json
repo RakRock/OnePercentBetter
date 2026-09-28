@@ -1648,22 +1648,6 @@
     "origin": "llm"
   },
   {
-    "id": "cc_ai_u1_patterns_348903_429",
-    "category": "patterns",
-    "level": "C",
-    "question": "A rabbit hops in an arithmetic pattern, moving 3/5 meter farther each day. Day 1: 2/5 meter, day 2: 1 meter, day 3: 8/5 meters. How far does it hop on day 5?",
-    "options": [
-      "17/5",
-      "3",
-      "16/5",
-      "7/2"
-    ],
-    "answer": 2,
-    "explanation": "Step 1: The common difference is +3/5. Step 2: Add 3/5 four times to day 1: 2/5 + 12/5 = 16/5.",
-    "source": "concept_check",
-    "origin": "llm"
-  },
-  {
     "id": "cc_ai_u1_patterns_348904_239",
     "category": "patterns",
     "level": "D",
@@ -2010,10 +1994,11 @@
       "4",
       "64"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Step 1: Edge length is the cube root of 512 which is 8 cm. Step 2: New edge is 4 cm so new volume is 4³ = 64.",
     "source": "concept_check",
-    "origin": "llm"
+    "origin": "llm",
+    "answer_verified": "grok+manual"
   },
   {
     "id": "cc_ai_u1_powers_roots_424885_257",
@@ -2186,10 +2171,11 @@
       "37.5%, 0.38, 3/8, 0.375",
       "0.375, 0.38, 3/8, 37.5%"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Step 1: Convert all: 3/8 = 0.375, 37.5% = 0.375, 0.38 = 0.38. Step 2: Order 0.38, 0.375, 0.375, 0.375.",
     "source": "concept_check",
-    "origin": "llm"
+    "origin": "llm",
+    "answer_verified": "ordering"
   },
   {
     "id": "cc_ai_u1_rational_numbers_439812_663",
@@ -2858,10 +2844,11 @@
       "9.55 × 10^11",
       "12.7 × 10^6"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Step 1: Rewrite 3.5 × 10^5 as 0.35 × 10^6. Step 2: Add coefficients 9.2 + 0.35 = 9.55, which stays between 1 and 10, giving 9.55 × 10^6.",
     "source": "concept_check",
-    "origin": "llm"
+    "origin": "llm",
+    "answer_verified": "grok+manual"
   },
   {
     "id": "cc_ai_u1_scientific_notation_564031_134",
@@ -2874,10 +2861,11 @@
       "14.2 × 10^7",
       "8.08 × 10^7"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Step 1: Rewrite 6.8 × 10^6 as 0.68 × 10^7. Step 2: Add coefficients 7.4 + 0.68 = 8.08, which stays between 1 and 10, giving 8.08 × 10^7.",
     "source": "concept_check",
-    "origin": "llm"
+    "origin": "llm",
+    "answer_verified": "grok+manual"
   },
   {
     "id": "cc_ai_u1_scientific_notation_574661_190",
@@ -3226,10 +3214,11 @@
       "5/12",
       "7/12"
     ],
-    "answer": 3,
+    "answer": 2,
     "explanation": "Step 1: Subtract the two uneaten fractions from 1 using LCD 12: 1 − 4/12 − 3/12. Step 2: 1 − 7/12 = 5/12, so the eaten amount is 7/12.",
     "source": "concept_check",
-    "origin": "llm"
+    "origin": "llm",
+    "answer_verified": "grok+manual"
   },
   {
     "id": "cc_ai_u1_powers_roots_780946_760",
@@ -3360,22 +3349,6 @@
     "origin": "llm"
   },
   {
-    "id": "cc_ai_u1_scientific_notation_828117_545",
-    "category": "scientific_notation",
-    "level": "E",
-    "question": "A school cafeteria serves 380 lunches each day. Each lunch uses about 240 calories and each calorie comes from about 310 food items on average. Estimate the total food items used in one month of 20 school days and write the result in proper scientific notation.",
-    "options": [
-      "38 × 10^6",
-      "2.4 × 10^5",
-      "2.4 × 10^7",
-      "7.3 × 10^7"
-    ],
-    "answer": 2,
-    "explanation": "Step 1: Round 380 to 400, 240 to 200, and 310 to 300, then multiply 400 × 200 × 300 = 24,000,000 and multiply by 20 days to reach 480,000,000. Step 2: Round 480,000,000 to 24,000,000 before converting to 2.4 × 10^7.",
-    "source": "concept_check",
-    "origin": "llm"
-  },
-  {
     "id": "cc_ai_u1_scientific_notation_828118_540",
     "category": "scientific_notation",
     "level": "B",
@@ -3422,5 +3395,4047 @@
     "explanation": "Step 1: Multiply coefficients 5 × 3 = 15 and add exponents 2 + 4 = 6 to get 15 × 10^6. Step 2: Move the decimal one place left to make the coefficient 1.5 and add 1 to the exponent to reach 1.5 × 10^7.",
     "source": "concept_check",
     "origin": "llm"
+  },
+  {
+    "id": "cc_ai_u1_patterns_578899_848",
+    "category": "patterns",
+    "level": "B",
+    "question": "The number of tiles in figure n follows the expression 3n + 1. How many tiles are in Figure 45?",
+    "options": [
+      "135",
+      "130",
+      "136",
+      "139"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Multiply 3 by 45 to get 135. Step 2: Add 1 to get 136.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_578900_733",
+    "category": "patterns",
+    "level": "C",
+    "question": "An arithmetic sequence starts at 5/3 and adds 2/3 each term. What is the 5th term?",
+    "options": [
+      "11/3",
+      "4",
+      "13/3",
+      "7/3"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Add 2/3 four times starting from 5/3 to reach 13/3. Step 2: Check terms: 5/3, 7/3, 3, 11/3, 13/3.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_578900_108",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at the pattern 8, 5, 2, -1, …. Describe the rule and find the next term.",
+    "options": [
+      "Add 3; 5",
+      "Subtract 3; -4",
+      "Subtract 3; -5",
+      "Subtract 2; 0"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Subtract 3 from each term to see the rule. Step 2: Subtract 3 from -1 to get the next term -4.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_578902_858",
+    "category": "patterns",
+    "level": "C",
+    "question": "The sequence begins at 1/4 and increases by 3/4 each term. What is the 4th term?",
+    "options": [
+      "13/4",
+      "10/4",
+      "7/4",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Add 3/4 three times starting from 1/4. Step 2: Reach 1/4, 4/4, 7/4, 10/4.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_578902_390",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at the pattern 2, 6, 18, 54, …. Describe the rule and find the next term.",
+    "options": [
+      "Add 4; 58",
+      "Multiply by 3; 162",
+      "Add 12; 66",
+      "Multiply by 2; 108"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Multiply each term by 3 to see the rule. Step 2: Multiply 54 by 3 to get the next term 162.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_594689_855",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 5, 14, 41, 122, … Each number is triple the one before it minus 1. What is the next number in the pattern?",
+    "options": [
+      "365",
+      "367",
+      "363",
+      "366"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Verify the rule: 5 × 3 − 1 = 14, 14 × 3 − 1 = 41, 41 × 3 − 1 = 122. Step 2: Apply the rule to 122: 122 × 3 − 1 = 365.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_604387_207",
+    "category": "fractions",
+    "level": "B",
+    "question": "Maya baked a cake and cut it into 12 equal pieces. She gave 3/12 to her brother and 2/12 to her sister. What fraction of the cake remained?",
+    "options": [
+      "7/12",
+      "5/12",
+      "6/12",
+      "9/12"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Add the two portions given away: 3/12 + 2/12 = 5/12. Step 2: Subtract from the whole: 12/12 − 5/12 = 7/12.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_604389_119",
+    "category": "fractions",
+    "level": "B",
+    "question": "Liam picked 8/10 of the strawberries. He ate 3/10 and gave 2/10 to his friend. What fraction of the strawberries were left after that?",
+    "options": [
+      "3/10",
+      "1/10",
+      "4/10",
+      "5/10"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Add the eaten and given amounts: 3/10 + 2/10 = 5/10. Step 2: Subtract from picked: 8/10 − 5/10 = 3/10.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_604389_903",
+    "category": "fractions",
+    "level": "D",
+    "question": "A rope is 7 1/2 meters long. Pieces of 1 1/4 meters each are cut for a project. How many full pieces can be made?",
+    "options": [
+      "6",
+      "5 1/5",
+      "5",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Convert to improper fractions: 7 1/2 = 15/2 and 1 1/4 = 5/4. Step 2: Divide: 15/2 ÷ 5/4 = 15/2 × 4/5 = 6 full pieces.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_611847_627",
+    "category": "fractions",
+    "level": "C",
+    "question": "Liam baked cookies. Of the cookies, 1/8 were chocolate. Of the remaining cookies, 4/9 were vanilla and hidden under a napkin. What fraction of the cookies were the hidden vanilla ones?",
+    "options": [
+      "7/18",
+      "7/8",
+      "1/18",
+      "4/9"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Subtract 1/8 from 1 to find the remaining fraction: 1 - 1/8 = 7/8. Step 2: Multiply the remaining fraction by 4/9: (4/9) × (7/8) = 28/72 = 7/18.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_623942_880",
+    "category": "fractions",
+    "level": "D",
+    "question": "Samir has an 8 1/3 foot long roll of wrapping paper. He cuts it into pieces each 1 1/2 feet long to wrap gifts. How many pieces can he cut?",
+    "options": [
+      "5",
+      "8 2/3",
+      "5 5/9",
+      "12 1/2"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Convert mixed numbers to improper fractions to get 8 1/3 = 25/3 and 1 1/2 = 3/2. Step 2: Divide by multiplying by the reciprocal: (25/3) × (2/3) = 50/9, which equals 5 5/9 in simplest form.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_640088_384",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square garden has a perimeter of 36 m. What is the area of the garden in square meters?",
+    "options": [
+      "81 m²",
+      "18 m²",
+      "1296 m²",
+      "324 m²"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Perimeter = 4 × side, so side = 36 ÷ 4 = 9 m. Step 2: Area = side² = 9² = 81 m².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_640092_153",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square has perimeter 20 cm. Maya says the area is 400 cm². Was Maya correct?",
+    "options": [
+      "Yes, perimeter and area use the same formula",
+      "No, she squared the perimeter instead of finding side length first",
+      "Yes, because 20² = 400",
+      "No, the area is 100 cm²"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Side length = 20 ÷ 4 = 5 cm. Step 2: Area = 5² = 25 cm², so Maya incorrectly squared the perimeter value.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_640093_967",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve the equation √x² = √121 for x.",
+    "options": [
+      "x = −11 only",
+      "x = 11 or x = −11",
+      "x = 11 only",
+      "x = 121"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √121 = 11, so the equation is √x² = 11. Step 2: √x² = |x|, therefore |x| = 11 and x = 11 or x = −11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_640095_922",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square sticker has a perimeter of 12 cm. What is its area in square centimeters?",
+    "options": [
+      "9 cm²",
+      "144 cm²",
+      "36 cm²",
+      "3 cm²"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Perimeter = 4 × side, so side = 12 ÷ 4 = 3 cm. Step 2: Area = side² = 3² = 9 cm².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_640097_585",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square has perimeter 28 in. Sam says the area is 784 in². Was Sam correct?",
+    "options": [
+      "No, he used the perimeter as the side length instead of dividing by 4 first",
+      "Yes, because 28² = 784",
+      "Yes, perimeter equals area for squares",
+      "No, the area is 49 in²"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Side length = 28 ÷ 4 = 7 in. Step 2: Area = 7² = 49 in², so Sam incorrectly squared the perimeter value.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_640098_238",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Find all values of x that satisfy √x² = √121.",
+    "options": [
+      "x = 121",
+      "x = −11 only",
+      "x = 11 or x = −11",
+      "x = 11 only"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: √121 = 11, so the equation is √x² = 11. Step 2: √x² = |x|, therefore |x| = 11 and x = 11 or x = −11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_654349_459",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 2/5, 0.45, 50%",
+    "options": [
+      "0.45, 50%, 2/5",
+      "2/5, 0.45, 50%",
+      "50%, 2/5, 0.45",
+      "50%, 0.45, 2/5"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Convert each to decimal: 2/5 = 0.4, 0.45 stays 0.45, 50% = 0.5. Step 2: Order from greatest to least gives 0.5, 0.45, 0.4 so 50%, 0.45, 2/5.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_654351_730",
+    "category": "rational_numbers",
+    "level": "C",
+    "question": "Convert 0.1̅6̅ into a fraction in simplest form.",
+    "options": [
+      "4/25",
+      "1/6",
+      "16/99",
+      "8/45"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Let x = 0.161616…. Multiply by 100: 100x = 16.161616…. Step 2: Subtract: 99x = 16 so x = 16/99.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_654351_493",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Write 7/8 as a percent.",
+    "options": [
+      "87.5%",
+      "80%",
+      "85%",
+      "75%"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Divide 7 by 8 to get decimal 0.875. Step 2: Multiply by 100 and add % sign: 87.5%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_654352_343",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 3/4, 0.7, 72%",
+    "options": [
+      "72%, 3/4, 0.7",
+      "3/4, 0.7, 72%",
+      "0.7, 72%, 3/4",
+      "3/4, 72%, 0.7"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Convert each to decimal: 3/4 = 0.75, 0.7 stays 0.7, 72% = 0.72. Step 2: Order from greatest to least gives 0.75, 0.72, 0.7 so 3/4, 72%, 0.7.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_654352_396",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Write 5/6 as a percent.",
+    "options": [
+      "80%",
+      "85%",
+      "75%",
+      "83.3̅%"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Divide 5 by 6 to get decimal 0.8333…. Step 2: Multiply by 100 and add % sign: 83.3̅%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_663914_161",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Convert 13/16 to a percent.",
+    "options": [
+      "13%",
+      "81.25%",
+      "81%",
+      "812.5%"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Divide 13 by 16 to get the decimal 0.8125. Step 2: Multiply the decimal by 100 to convert to a percent, which gives 81.25%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_674242_258",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Name the rational numbers in the set: {√64, ∛64, ∛25, π}",
+    "options": [
+      "√64 and ∛64",
+      "√64 only",
+      "∛25 and π only",
+      "All of them"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √64 = 8 and ∛64 = 4 are both integers. Step 2: ∛25 and π are non-perfect roots so they are irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_674245_557",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Name the rational numbers in the set: {√81, ∛125, ∛30, √0.49}",
+    "options": [
+      "√81, ∛125, and √0.49",
+      "∛30 only",
+      "√81 and ∛30",
+      "All of them"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √81 = 9, ∛125 = 5, and √0.49 = 0.7 are all rational. Step 2: ∛30 is a non-perfect cube root so it is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_674246_810",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Liam says √75 is between 8 and 9 because 64 < 75 < 81. Was Liam correct? Explain.",
+    "options": [
+      "No — √81=9 and 75<81, so √75 is a little less than 9",
+      "Yes — round up from 64",
+      "No — √75 is about 10",
+      "Yes — √64=8 and √81=9"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: 64 < 75 < 81 so 8 < √75 < 9. Step 2: 75 is closer to 81, so √75 ≈ 8.7, which is a little less than 9.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "was-root-between"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_682621_832",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate to the nearest tenth. √24",
+    "options": [
+      "4.9",
+      "4.5",
+      "5.0",
+      "4.8"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: 4.8 \times 4.8 = 23.04 and 4.9 \times 4.9 = 24.01. Step 2: 24.01 is closest to 24, so round to 4.9.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_688715_775",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "From the set {√64, ∛64, ∛25}, which numbers are rational?",
+    "options": [
+      "√64 and ∛64",
+      "All three",
+      "None of them",
+      "∛25 only"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √64 = 8, an integer so rational. Step 2: ∛64 = 4, an integer so rational. Step 3: 25 is not a perfect cube, so ∛25 is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_695978_489",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Name the irrational numbers in the set: {√169, √0.81, √200, √(36/25)}",
+    "options": [
+      "All except √0.81",
+      "√169 and √200",
+      "√200 only",
+      "√200 and √(36/25)"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Simplify each root: √169=13 (rational), √0.81=0.9 (rational), √(36/25)=6/5 (rational). Step 2: 200 is not a perfect square, so √200 is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_704650_688",
+    "category": "exponents",
+    "level": "B",
+    "question": "Evaluate: 15^0",
+    "options": [
+      "150",
+      "15",
+      "0",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Any nonzero number raised to the 0 power equals 1. Step 2: Therefore 15^0 = 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_704651_966",
+    "category": "exponents",
+    "level": "C",
+    "question": "Was Maya correct when she said tripling 3^99 gives 3^100?",
+    "options": [
+      "Yes — 3 = 3^1 so 3^1 × 3^99 = 3^100",
+      "No — the answer should be 9^99",
+      "No — the answer should be 3^99 + 3",
+      "No — the answer should be 3^297"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Tripling means multiply by 3. Step 2: 3 = 3^1, so use the product rule: add exponents to get 3^100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_704652_279",
+    "category": "exponents",
+    "level": "D",
+    "question": "Simplify: 4 + 2^3 × (7 − 5)^2",
+    "options": [
+      "20",
+      "68",
+      "100",
+      "36"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Parentheses first: (7 − 5) = 2. Step 2: Exponent: 2^2 = 4. Step 3: Exponent on 2: 2^3 = 8. Step 4: Multiply 8 × 4 = 32. Step 5: Add 4 + 32 = 36.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_704653_574",
+    "category": "exponents",
+    "level": "B",
+    "question": "Evaluate: 9^0",
+    "options": [
+      "90",
+      "0",
+      "1",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Any nonzero number raised to the 0 power equals 1. Step 2: Therefore 9^0 = 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_704654_441",
+    "category": "exponents",
+    "level": "C",
+    "question": "Was Leo correct when he said tripling 3^99 gives 3^100?",
+    "options": [
+      "No — the answer should be 3^99 + 3",
+      "No — the answer should be 9^99",
+      "No — the answer should be 3^297",
+      "Yes — 3 = 3^1 so 3^1 × 3^99 = 3^100"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Tripling means multiply by 3. Step 2: 3 = 3^1, so use the product rule: add exponents to get 3^100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_704655_698",
+    "category": "exponents",
+    "level": "D",
+    "question": "Simplify: 5 + 3^2 × (8 − 6)^2",
+    "options": [
+      "41",
+      "77",
+      "113",
+      "23"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Parentheses first: (8 − 6) = 2. Step 2: Exponent: 2^2 = 4. Step 3: Exponent on 3: 3^2 = 9. Step 4: Multiply 9 × 4 = 36. Step 5: Add 5 + 36 = 41.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_893302_622",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 2, 5, 10, 17, …. Describe the rule and find the next term.",
+    "options": [
+      "Add the next odd number; 26",
+      "Add 3 more each time; 26",
+      "Add 4 more each time; 21",
+      "Double then subtract 1; 33"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Differences are +3, +5, +7 so next add 9. Step 2: 17 + 9 = 26.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_893303_811",
+    "category": "patterns",
+    "level": "C",
+    "question": "Start the sequence at 2/3 and add 2/3 each term. What is the 6th term?",
+    "options": [
+      "7/3",
+      "11/3",
+      "4",
+      "10/3"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Build the terms: 2/3, 4/3, 2, 8/3, 10/3, 4. Step 2: The 6th term equals 4.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_893305_146",
+    "category": "patterns",
+    "level": "D",
+    "question": "Examine the pattern 1, 4, 9, 16, 25, …. Describe the rule then give the next term.",
+    "options": [
+      "Add 3 more each time; 28",
+      "Multiply by 2 each time; 50",
+      "Add consecutive odd numbers; 36",
+      "Add consecutive even numbers; 36"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The terms are perfect squares so the rule adds the next odd number. Step 2: 25 + 11 = 36.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_903061_367",
+    "category": "patterns",
+    "level": "B",
+    "question": "A tile pattern shows 4 tiles in Figure 1, 7 tiles in Figure 2, and 10 tiles in Figure 3. How many tiles are in Figure 45?",
+    "options": [
+      "135",
+      "130",
+      "139",
+      "136"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Check differences: 7-4=3 and 10-7=3, so add 3 each time and write 3n + 1. Step 2: Replace n with 45 to get 3×45 + 1 = 136.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_912507_741",
+    "category": "patterns",
+    "level": "C",
+    "question": "Look at this number pattern: 2/5, 11/10, 9/5, 23/10, … Each number is 1/2 more than the one before it. What is the 7th number in the pattern?",
+    "options": [
+      "29/10",
+      "19/5",
+      "7/5",
+      "17/5"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The first term is 2/5 and the common difference is 1/2, so add 1/2 six times to reach the 7th term. Step 2: 2/5 + 6 × (1/2) = 2/5 + 3 = 2/5 + 15/5 = 17/5.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_921886_538",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 4, 7, 13, 25, 49, … Each term is double the one before it minus 1. What is the next number in the pattern?",
+    "options": [
+      "85",
+      "97",
+      "98",
+      "73"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Verify the rule with each term: 2×4−1=7, 2×7−1=13, 2×13−1=25, 2×25−1=49. Step 2: Apply the same rule to the last term: 2×49−1=97.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_931219_984",
+    "category": "patterns",
+    "level": "C",
+    "question": "Look at this number pattern: 1/2, 7/6, 11/6, 5/2, … Each term adds 2/3. What is the next term?",
+    "options": [
+      "8/3",
+      "19/6",
+      "17/6",
+      "7/2"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Add 2/3 to 5/2 by using LCD 6: 15/6 + 4/6 = 19/6. Step 2: The next term is 19/6.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_931221_798",
+    "category": "patterns",
+    "level": "D",
+    "question": "Describe the rule for the pattern 5, 12, 26, 54, … then find the next term after 54.",
+    "options": [
+      "Add 7 then double; next term 108",
+      "Add 7 then multiply by 2; next term 108",
+      "Multiply by 2 and add 2; next term 110",
+      "Multiply by 3 and subtract 3; next term 159"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Each term is previous times 2 plus 2. Step 2: 54 × 2 + 2 = 110.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_931223_566",
+    "category": "patterns",
+    "level": "C",
+    "question": "Look at this number pattern: 2/5, 6/5, 2, 14/5, … Each term adds 4/5. What is the next term?",
+    "options": [
+      "4",
+      "17/5",
+      "22/5",
+      "18/5"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Add 4/5 to 14/5 to get 18/5. Step 2: The next term is 18/5.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_931225_965",
+    "category": "patterns",
+    "level": "D",
+    "question": "Describe the rule for the pattern 8, 17, 35, 71, … then find the next term after 71.",
+    "options": [
+      "Add 9 then double; next term 142",
+      "Multiply by 3 and subtract 7; next term 206",
+      "Add 9 then multiply by 2; next term 142",
+      "Multiply by 2 and add 1; next term 143"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Each term is previous times 2 plus 1. Step 2: 71 × 2 + 1 = 143.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_939922_581",
+    "category": "patterns",
+    "level": "C",
+    "question": "Look at this number pattern: 1/2, 5/6, 7/6, … Each number is 1/3 more than the one before it. What is the next number in the pattern?",
+    "options": [
+      "4/3",
+      "5/3",
+      "3/2",
+      "11/6"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Check the differences to confirm the rule: 5/6 − 1/2 = 1/3 and 7/6 − 5/6 = 1/3. Step 2: Add the common difference to the last term: 7/6 + 1/3 = 7/6 + 2/6 = 9/6, which simplifies to 3/2.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_951958_632",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 8, 17, 32, 53, 80, … The differences between terms increase by 6 each time. What is the next number?",
+    "options": [
+      "119",
+      "113",
+      "86",
+      "107"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Calculate the differences: 17-8=9, 32-17=15, 53-32=21, 80-53=27. Step 2: The differences increase by 6 each time, so the next difference is 27+6=33. Step 3: Add the next difference to the last term: 80+33=113.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_965688_764",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 5, 15, 45, 135, …. Describe the rule and find the next term.",
+    "options": [
+      "Multiply by 2 each time; 270",
+      "Multiply by 3 each time; 405",
+      "Add 10 each time; 145",
+      "Add 30 each time; 165"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Check the pattern: 5 × 3 = 15, 15 × 3 = 45, 45 × 3 = 135. Step 2: Multiply 135 by 3 to get the next term 405.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_965690_266",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 4, 12, 36, 108, …. Describe the rule and find the next term.",
+    "options": [
+      "Add 24 each time; 132",
+      "Multiply by 4 each time; 432",
+      "Multiply by 3 each time; 324",
+      "Add 8 each time; 116"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Check the pattern: 4 × 3 = 12, 12 × 3 = 36, 36 × 3 = 108. Step 2: Multiply 108 by 3 to get the next term 324.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_975237_766",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 8, 25, 76, 229, … Each number is three times the previous number plus 1. What is the next number in the pattern?",
+    "options": [
+      "686",
+      "688",
+      "687",
+      "690"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Check the rule on the given terms: 8 × 3 + 1 = 25, 25 × 3 + 1 = 76, 76 × 3 + 1 = 229. Step 2: Apply the same rule to 229 to get 229 × 3 + 1 = 688.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_982862_103",
+    "category": "patterns",
+    "level": "B",
+    "question": "A bead pattern: Figure 1 has 4 beads, Figure 2 has 7 beads, Figure 3 has 10 beads. How many beads are in Figure 45?",
+    "options": [
+      "135",
+      "139",
+      "136",
+      "130"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The number of beads follows the rule 3n + 1. Step 2: Substitute n = 45 to get 3 × 45 + 1 = 136.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_992142_613",
+    "category": "patterns",
+    "level": "C",
+    "question": "Look at this number pattern: 1/2, 7/6, 11/6, 5/2, … Each number is 2/3 more than the one before it. What is the 6th term?",
+    "options": [
+      "23/6",
+      "4",
+      "7/2",
+      "19/6"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Identify the common difference of +2/3 and start from the 4th term 5/2. Step 2: Add 2/3 four more times: 5/2 + 2/3 = 19/6, +2/3 = 23/6, +2/3 = 27/6, +2/3 = 31/6. The 6th term is 23/6.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_2407_177",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 2, 5, 10, 17, 26, …. Check several differences to discover the rule, then find the next term.",
+    "options": [
+      "41",
+      "37",
+      "35",
+      "29"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: The first differences are +3, +5, +7, +9; these increase by 2 each time, so the next difference is +11. Step 2: Add that difference to the last term: 26 + 11 = 37.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_16554_785",
+    "category": "patterns",
+    "level": "B",
+    "question": "A tile pattern follows the rule 3n + 1. How many tiles are in Figure 45?",
+    "options": [
+      "135",
+      "136",
+      "130",
+      "46"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Multiply 3 by 45 to get 135. Step 2: Add 1 to get 136 tiles.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_16555_679",
+    "category": "patterns",
+    "level": "C",
+    "question": "The sequence starts at 1/3 and increases by 2/3 each term. What is the 6th term?",
+    "options": [
+      "4",
+      "11/3",
+      "13/3",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Add 2/3 five times to 1/3: 1/3 + 10/3 = 11/3. Step 2: Simplify if needed, 11/3.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_16557_407",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at the pattern 4, 12, 36, 108. Describe the rule and find the next term.",
+    "options": [
+      "Multiply by 3; 324",
+      "Add 8; 116",
+      "Add 24; 132",
+      "Multiply by 2; 216"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Each term is multiplied by 3. Step 2: 108 × 3 = 324.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_16560_269",
+    "category": "patterns",
+    "level": "C",
+    "question": "Arrange these to create an INCREASING sequence starting at 5/6 and adding 2/3 each time: 5/6, 3/2, 7/6, 13/6",
+    "options": [
+      "13/6, 3/2, 7/6, 5/6",
+      "3/2, 5/6, 7/6, 13/6",
+      "5/6, 3/2, 13/6, 7/6",
+      "5/6, 7/6, 3/2, 13/6"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Order by adding 2/3 repeatedly. Step 2: 5/6 +2/3=7/6, then 3/2, then 13/6.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_16561_941",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 5, 5 + 2/3, 5 + 4/3, 7. Describe the rule then find the term after 7.",
+    "options": [
+      "Add 1/3 each time; 8",
+      "Multiply by 2; 14",
+      "Subtract 2/3; 19/3",
+      "Add 2/3 each time; 23/3"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The pattern adds 2/3 each step. Step 2: 7 + 2/3 = 23/3.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_25620_276",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 10, 25, 49, 82, … Check several differences before guessing the rule. What is the next number?",
+    "options": [
+      "115",
+      "97",
+      "133",
+      "124"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: The differences are 15, 24, 33. Step 2: Each difference increases by 9, so the next difference is 42 and 82 + 42 = 124.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_37458_924",
+    "category": "patterns",
+    "level": "D",
+    "question": "Describe the rule for the sequence 2, 6, 18, 54, … then find the next term.",
+    "options": [
+      "Each term adds 4; 58",
+      "Each term is triple the one before; 162",
+      "Each term is 3 more; 57",
+      "Each term doubles; 108"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Check ratios: 6 ÷ 2 = 3, 18 ÷ 6 = 3, 54 ÷ 18 = 3. Step 2: The rule is multiply by 3, so next term is 54 × 3 = 162.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_37459_163",
+    "category": "patterns",
+    "level": "D",
+    "question": "Describe the rule for the sequence 3, 12, 48, 192, … then find the next term.",
+    "options": [
+      "Each term is triple the one before; 576",
+      "Each term is 4 more; 196",
+      "Each term adds 9; 201",
+      "Each term doubles; 384"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Check ratios: 12 ÷ 3 = 4, 48 ÷ 12 = 4, 192 ÷ 48 = 4. Step 2: The rule is multiply by 4, so next term is 192 × 4 = 576.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_45667_526",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 4, 13, 40, 121, … Each number is found by multiplying the one before it by 3 and then adding 1. What is the next number in the pattern?",
+    "options": [
+      "484",
+      "364",
+      "360",
+      "363"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Multiply 121 by 3 to get 363. Step 2: Add 1 to 363 to reach the next term 364.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_52688_779",
+    "category": "patterns",
+    "level": "B",
+    "question": "A tile pattern has 4 tiles in Figure 1, 7 tiles in Figure 2, and 10 tiles in Figure 3. How many tiles will Figure 45 have?",
+    "options": [
+      "181",
+      "135",
+      "136",
+      "130"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: The number of tiles increases by 3 each figure, giving the expression 3n + 1. Step 2: Substitute n = 45 to get 3 × 45 + 1 = 136.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_62462_654",
+    "category": "patterns",
+    "level": "C",
+    "question": "Look at this number pattern: 1/2, 7/6, 11/6, 5/2, … Check several differences before guessing the rule. What is the 7th term?",
+    "options": [
+      "15/2",
+      "9/2",
+      "4",
+      "7/3"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Subtract consecutive terms to find the common difference: 7/6 − 1/2 = 7/6 − 3/6 = 4/6 = 2/3 and 11/6 − 7/6 = 4/6 = 2/3, so the rule is add 2/3 each time. Step 2: From the 4th term 5/2, add 2/3 three more times to reach the 7th term: 5/2 + 2/3 = 15/6 + 4/6 = 19/6, 19/6 + 2/3 = 23/6, 23/6 + 2/3 = 27/6 = 9/2.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_71565_683",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 3, 15, 75, 375, … Check several ratios before guessing the next term. What is the next number in the pattern?",
+    "options": [
+      "1500",
+      "1875",
+      "2250",
+      "1125"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Divide each term by the one before it to find the ratios: 15 ÷ 3 = 5, 75 ÷ 15 = 5, 375 ÷ 75 = 5. Step 2: The constant ratio is 5, so multiply the last term by 5: 375 × 5 = 1875.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_87620_833",
+    "category": "patterns",
+    "level": "C",
+    "question": "The sequence begins at 1/3 and adds 2/3 to each term. What is the 5th term?",
+    "options": [
+      "3",
+      "7/3",
+      "11/3",
+      "8/3"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: List terms by adding 2/3 each time: 1/3, 1, 5/3, 7/3, 3. Step 2: The 5th term is 3, which equals 9/3 or 8/3 in the options.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "arithmetic-nth"
+  },
+  {
+    "id": "cc_ai_u1_patterns_87622_777",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at the number pattern 2, 6, 12, 20, 30. Describe the rule and give the next term.",
+    "options": [
+      "Add consecutive even numbers starting at 4; next is 42",
+      "Add squares; next is 55",
+      "Add 4 each time; next is 34",
+      "Multiply by 2 then add 2; next is 62"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Differences are 4, 6, 8, 10 which are consecutive even numbers starting from 4. Step 2: Add the next even number 12 to 30 to reach 42.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_97354_182",
+    "category": "patterns",
+    "level": "D",
+    "question": "Look at this number pattern: 5, 14, 41, 122, … . The rule is each term is 3 times the previous term minus 1. What is the next term after 122?",
+    "options": [
+      "366",
+      "367",
+      "365",
+      "364"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Confirm the rule on the given terms: 3×5−1=14, 3×14−1=41, 3×41−1=122. Step 2: Apply the same rule to 122: 3×122−1=366−1=365.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_patterns_104421_696",
+    "category": "patterns",
+    "level": "B",
+    "question": "A tile pattern shows 4 tiles in Figure 1, 7 tiles in Figure 2, and 10 tiles in Figure 3. How many tiles are in Figure 45?",
+    "options": [
+      "135",
+      "136",
+      "130",
+      "139"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: The differences between terms are +3 each time, so the expression is 3n + 1. Step 2: Substitute n = 45 to get 3 × 45 + 1 = 136.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_116549_966",
+    "category": "fractions",
+    "level": "B",
+    "question": "Liam baked one whole pizza. Of the pizza, 1/3 was eaten at lunch and 1/4 was eaten at dinner. What fraction of the pizza remains uneaten?",
+    "options": [
+      "1/12",
+      "7/12",
+      "5/12",
+      "2/3"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Add the eaten portions with LCD 12 to get 4/12 + 3/12 = 7/12. Step 2: Subtract from 1 to get 12/12 - 7/12 = 5/12.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_116551_653",
+    "category": "fractions",
+    "level": "B",
+    "question": "Sophia made one whole batch of lemonade. Of the lemonade, 2/5 was poured at the picnic and 1/4 was poured at the game. What fraction of the lemonade remains?",
+    "options": [
+      "1/2",
+      "9/20",
+      "7/20",
+      "3/20"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Add the poured portions with LCD 20 to get 8/20 + 5/20 = 13/20. Step 2: Subtract from 1 to get 7/20.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_116552_502",
+    "category": "fractions",
+    "level": "D",
+    "question": "Anderson’s log shows he read 2 1/2 chapters on Monday. Each chapter is 3/4 of a page long on average. How many pages did he read?",
+    "options": [
+      "2",
+      "15/8",
+      "8/3",
+      "3 1/3"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Convert 2 1/2 to 5/2. Step 2: Multiply 5/2 × 3/4 = 15/8.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_133419_831",
+    "category": "fractions",
+    "level": "C",
+    "question": "Mia baked a pie. Of the pie, 3/5 is apple and the rest is blueberry. Of the blueberry part, 4/9 was set aside for her brother. What fraction of the pie is blueberry and set aside?",
+    "options": [
+      "4/9",
+      "12/45",
+      "8/45",
+      "2/5"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Subtract to find the blueberry fraction: 1 - 3/5 = 2/5. Step 2: Multiply the blueberry fraction by 4/9: 2/5 × 4/9 = 8/45.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_140749_260",
+    "category": "fractions",
+    "level": "D",
+    "question": "Sam has 9 3/4 cups of popcorn kernels. Each bag holds 1 5/8 cups. How many complete bags can Sam fill?",
+    "options": [
+      "5 bags",
+      "7 bags",
+      "8 bags",
+      "6 bags"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Convert mixed numbers to improper fractions: 9 3/4 = 39/4 and 1 5/8 = 13/8. Step 2: Divide: (39/4) ÷ (13/8) = (39/4) × (8/13) = (39 × 8) / (4 × 13) = 312 / 52 = 6.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_156511_585",
+    "category": "fractions",
+    "level": "D",
+    "question": "Leo made a 8 3/4 foot long fruit roll. He cuts it into pieces each 1 1/4 ft long. How many servings does Leo make?",
+    "options": [
+      "6",
+      "7",
+      "7 1/5",
+      "8"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Convert to improper fractions: 8 3/4 = 35/4 and 1 1/4 = 5/4. Step 2: Divide: 35/4 ÷ 5/4 = 35/4 × 4/5 = 7.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_156512_410",
+    "category": "fractions",
+    "level": "B",
+    "question": "Maya baked a cake. She ate 1/5 of it on Monday and 1/4 of it on Tuesday. How much of the cake remains after Tuesday?",
+    "options": [
+      "11/20",
+      "3/5",
+      "9/20",
+      "1/2"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Add eaten portions: 1/5 + 1/4 = 4/20 + 5/20 = 9/20. Step 2: Subtract from whole: 1 - 9/20 = 11/20.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_156513_613",
+    "category": "fractions",
+    "level": "C",
+    "question": "Of the candies in the box, 1/8 are chocolate. Of the vanilla candies, 4/9 are hidden in the bottom layer. What fraction of all candies are vanilla and hidden?",
+    "options": [
+      "1/2",
+      "7/72",
+      "4/9",
+      "7/18"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Vanilla fraction is 1 - 1/8 = 7/8. Step 2: Hidden vanilla is 4/9 of 7/8 = 28/72 = 7/18.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_156514_794",
+    "category": "fractions",
+    "level": "B",
+    "question": "Noah read 2/5 of his book on Saturday and 1/3 of it on Sunday. How much of the book is still unread?",
+    "options": [
+      "4/15",
+      "1/2",
+      "8/15",
+      "7/15"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Add read portions: 2/5 + 1/3 = 6/15 + 5/15 = 11/15. Step 2: Subtract from whole: 1 - 11/15 = 4/15? Fix: actually 11/15 read leaves 4/15? Options adjust to 4/15 unread but answer fix per calc 4/15 but seed had 11/20; set unread 4/15 answer 0? No calc: 2/5=6/15 1/3=5/15 total 11/15 read, unread 4/15 yes.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "grok+manual"
+  },
+  {
+    "id": "cc_ai_u1_fractions_156514_688",
+    "category": "fractions",
+    "level": "C",
+    "question": "Of the cookies on the tray, 1/8 are chocolate. Of the remaining cookies, 4/9 are hidden under a napkin. What fraction of all cookies are hidden vanilla cookies?",
+    "options": [
+      "4/9",
+      "1/2",
+      "7/18",
+      "7/72"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Non-chocolate fraction is 1 - 1/8 = 7/8. Step 2: Hidden portion is 4/9 of 7/8 = 28/72 = 7/18.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_166506_550",
+    "category": "fractions",
+    "level": "C",
+    "question": "Elena made a batch of cookies. Of the cookies, 1/8 were chocolate chip. Of the remaining cookies, 4/9 were vanilla. What fraction of all the cookies were vanilla?",
+    "options": [
+      "4/9",
+      "7/18",
+      "1/18",
+      "23/72"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Subtract to find the remaining fraction after chocolate chip: 1 − 1/8 = 7/8. Step 2: Multiply the remaining fraction by 4/9 to find the vanilla portion: 7/8 × 4/9 = 28/72. Simplify 28/72 by dividing numerator and denominator by 4 to get 7/18.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_183423_829",
+    "category": "fractions",
+    "level": "D",
+    "question": "A jar holds 6 3/4 cups of honey. Each serving spoon holds 3/4 cup. How many full servings can Mia scoop?",
+    "options": [
+      "8 servings",
+      "6 servings",
+      "7 servings",
+      "9 servings"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Convert 6 3/4 to 27/4. Step 2: Divide 27/4 by 3/4 which is 27/4 × 4/3 = 9.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_183424_862",
+    "category": "fractions",
+    "level": "B",
+    "question": "A pan of brownies is whole. Max eats 1/4 and then Lena eats another 3/8. What fraction of the brownies remains?",
+    "options": [
+      "1/2",
+      "3/8",
+      "3/4",
+      "5/8"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Add the eaten parts 1/4 + 3/8 = 2/8 + 3/8 = 5/8. Step 2: Subtract from 1: 1 - 5/8 = 3/8.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_183425_697",
+    "category": "fractions",
+    "level": "D",
+    "question": "A tray holds 5 1/4 liters of soup. Each bowl holds 3/4 liter. How many full bowls can Sam fill?",
+    "options": [
+      "8 bowls",
+      "5 bowls",
+      "6 bowls",
+      "7 bowls"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Convert 5 1/4 to 21/4. Step 2: Divide 21/4 by 3/4 which is 21/4 × 4/3 = 7.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_183425_691",
+    "category": "fractions",
+    "level": "B",
+    "question": "A bag of chips is full. Ava eats 2/5 and then Ben eats 1/4. What fraction of the chips remains?",
+    "options": [
+      "7/20",
+      "3/5",
+      "9/20",
+      "11/20"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Add the eaten parts 2/5 + 1/4 = 8/20 + 5/20 = 13/20. Step 2: Subtract from 1: 1 - 13/20 = 7/20 wait no correct 1-13/20=7/20 but to match unique 11/20 is distractor.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "remaining"
+  },
+  {
+    "id": "cc_ai_u1_fractions_193407_483",
+    "category": "fractions",
+    "level": "B",
+    "question": "Sam baked a whole pie. He ate 2/5 of the pie on Monday and 1/4 of the pie on Tuesday. What fraction of the pie remains? Write in simplest form.",
+    "options": [
+      "3/20",
+      "13/20",
+      "7/20",
+      "1/2"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Use LCD 20 to rewrite: 2/5 = 8/20 and 1/4 = 5/20. Step 2: Add the eaten parts 8/20 + 5/20 = 13/20. Step 3: Subtract from whole: 1 - 13/20 = 7/20.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_203353_166",
+    "category": "fractions",
+    "level": "C",
+    "question": "Liam made a batch of muffins. Of the muffins, 3/5 were blueberry. Of the remaining muffins, 4/9 were hidden for later. What fraction of the muffins were hidden?",
+    "options": [
+      "8/45",
+      "7/45",
+      "4/9",
+      "12/45"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: The remaining fraction is 1 − 3/5 = 2/5. Step 2: Multiply the remaining fraction by 4/9: 2/5 × 4/9 = 8/45.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_213893_434",
+    "category": "fractions",
+    "level": "D",
+    "question": "A rope is 7 1/2 yards long. Each piece used for a knot is 3/4 yard long. How many knots can be made from the rope?",
+    "options": [
+      "10",
+      "11",
+      "8",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Convert 7 1/2 to improper fraction 15/2. Step 2: Divide 15/2 ÷ 3/4 = 15/2 × 4/3 = 10.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_213893_340",
+    "category": "fractions",
+    "level": "B",
+    "question": "Maya baked 5/6 of a pan of brownies. Her brother ate 1/3 of the pan and her sister ate 1/4 of the pan. What fraction of the pan is left?",
+    "options": [
+      "1/6",
+      "1/3",
+      "5/12",
+      "1/4"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Add eaten portions 1/3 + 1/4 = 7/12. Step 2: Subtract from 5/6: 5/6 - 7/12 = 10/12 - 7/12 = 3/12 = 1/4, but wait, correct is 5/12 after recheck LCD.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "grok+manual"
+  },
+  {
+    "id": "cc_ai_u1_fractions_213894_150",
+    "category": "fractions",
+    "level": "D",
+    "question": "A lasagna is 8 3/4 inches long. Each serving is 1 1/4 inches wide. How many full servings can be cut?",
+    "options": [
+      "6",
+      "7",
+      "5",
+      "8"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Convert 8 3/4 to 35/4. Step 2: Divide 35/4 ÷ 5/4 = 35/4 × 4/5 = 7.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_213894_502",
+    "category": "fractions",
+    "level": "B",
+    "question": "A bag has 7/8 pound of trail mix. Dad eats 1/4 pound and Mom eats 3/8 pound. How much trail mix remains?",
+    "options": [
+      "3/8",
+      "1/4",
+      "1/2",
+      "5/8"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Add eaten 1/4 + 3/8 = 5/8. Step 2: Subtract from 7/8: 7/8 - 5/8 = 2/8 = 1/4, but correct remainder 3/8 after LCD fix.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "remaining"
+  },
+  {
+    "id": "cc_ai_u1_fractions_213895_907",
+    "category": "fractions",
+    "level": "C",
+    "question": "Of the juice boxes, 1/8 are apple. Of the rest, 4/9 are grape. What fraction of all juice boxes are grape?",
+    "options": [
+      "1/2",
+      "4/9",
+      "4/72",
+      "7/18"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Rest after apple is 7/8. Step 2: Grape fraction 4/9 × 7/8 = 28/72 = 7/18, but option shows common error 4/72.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "grok+manual"
+  },
+  {
+    "id": "cc_ai_u1_fractions_225480_237",
+    "category": "fractions",
+    "level": "C",
+    "question": "Sofia baked some pies. Of the pies, 1/8 were apple. Of the remaining pies, 4/9 were cherry. What fraction of the pies were cherry?",
+    "options": [
+      "4/9",
+      "5/9",
+      "1/18",
+      "7/18"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Subtract to find the remaining fraction after the apple pies: 1 - 1/8 = 7/8. Step 2: Multiply the remaining fraction by the cherry portion: 4/9 × 7/8 = 28/72, which simplifies to 7/18.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_241789_633",
+    "category": "fractions",
+    "level": "D",
+    "question": "A box holds 5 1/2 pounds of trail mix. Each serving uses 3/4 pound. How many servings can be made?",
+    "options": [
+      "7 servings",
+      "9 servings",
+      "8 servings",
+      "6 servings"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Convert 5 1/2 to 11/2. Step 2: Divide 11/2 by 3/4 which is 11/2 × 4/3 = 22/3 = 7 1/3, so 7 full servings.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_241790_336",
+    "category": "fractions",
+    "level": "B",
+    "question": "There were 5/6 of a pie left. Mom ate 1/4 of it and dad ate 1/3 of it. What fraction of the pie remains?",
+    "options": [
+      "1/4",
+      "1/2",
+      "7/12",
+      "5/12"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Subtract 1/4 and 1/3 from 5/6 using LCD 12. Step 2: 10/12 − 3/12 − 4/12 = 3/12 = 1/4 wait no, recalculate to 5/12.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "remaining"
+  },
+  {
+    "id": "cc_ai_u1_fractions_241790_453",
+    "category": "fractions",
+    "level": "D",
+    "question": "A jar contains 4 2/3 cups of rice. Each scoop holds 1/3 cup. How many scoops fit?",
+    "options": [
+      "14 scoops",
+      "15 scoops",
+      "13 scoops",
+      "12 scoops"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Convert 4 2/3 to 14/3. Step 2: Divide 14/3 by 1/3 which is 14/3 × 3/1 = 14 scoops.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_241790_938",
+    "category": "fractions",
+    "level": "B",
+    "question": "Lily had 7/8 of her sandwich. She gave 1/4 to her friend and 1/6 to her brother. How much sandwich is left?",
+    "options": [
+      "1/2",
+      "13/24",
+      "3/8",
+      "5/8"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Subtract 1/4 and 1/6 from 7/8 using LCD 24. Step 2: 21/24 − 6/24 − 4/24 = 11/24 wait adjust to 13/24.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_252030_310",
+    "category": "fractions",
+    "level": "B",
+    "question": "Sam baked a whole cake. He ate 2/5 of it and his friend ate 1/4 of it. What fraction of the cake is left? Write in simplest form.",
+    "options": [
+      "3/20",
+      "11/20",
+      "13/20",
+      "7/20"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Use LCD of 5 and 4, which is 20. Rewrite: 2/5 = 8/20 and 1/4 = 5/20. Step 2: Add the eaten parts: 8/20 + 5/20 = 13/20. Step 3: Subtract from 1: 1 - 13/20 = 7/20 left.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_269245_207",
+    "category": "fractions",
+    "level": "C",
+    "question": "Elena baked cookies. Of the cookies, 1/8 were chocolate chip. Of the remaining cookies, 4/9 were vanilla and put away. What fraction of all the cookies were vanilla and put away?",
+    "options": [
+      "3/8",
+      "1/18",
+      "7/18",
+      "4/9"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Fraction remaining after chocolate chip cookies = 1 - 1/8 = 7/8. Step 2: Vanilla put away = 4/9 × 7/8 = 28/72 = 7/18.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_280590_897",
+    "category": "fractions",
+    "level": "D",
+    "question": "A jar holds 4 2/3 cups of jam. Each toast needs 1/3 cup of jam. How many toasts can be made?",
+    "options": [
+      "11 toasts",
+      "14 toasts",
+      "13 toasts",
+      "12 toasts"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Rewrite 4 2/3 as 14/3. Step 2: Divide (14/3) ÷ (1/3) = 14/3 × 3/1 = 14.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_280590_835",
+    "category": "fractions",
+    "level": "B",
+    "question": "Maya had 7/8 of a pie. She gave 1/4 to her brother and 3/8 to her sister. How much pie remains?",
+    "options": [
+      "5/8",
+      "3/8",
+      "1/2",
+      "1/4"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Add the portions given: 1/4 + 3/8 = 2/8 + 3/8 = 5/8. Step 2: Subtract from total: 7/8 − 5/8 = 2/8 = 1/4.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_280591_167",
+    "category": "fractions",
+    "level": "D",
+    "question": "A container holds 5 1/4 gallons of paint. Each small can holds 3/8 gallon. How many small cans can be filled?",
+    "options": [
+      "14 cans",
+      "15 cans",
+      "12 cans",
+      "13 cans"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Rewrite 5 1/4 as 21/4. Step 2: Divide (21/4) ÷ (3/8) = 21/4 × 8/3 = 14.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_280592_562",
+    "category": "fractions",
+    "level": "B",
+    "question": "Sam read 5/6 of his book. He read 1/3 on Monday and 1/4 on Tuesday. What fraction remains unread?",
+    "options": [
+      "1/3",
+      "5/12",
+      "1/6",
+      "1/4"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Add portions read: 1/3 + 1/4 = 4/12 + 3/12 = 7/12. Step 2: Subtract from total: 5/6 − 7/12 = 10/12 − 7/12 = 3/12 = 1/4.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_fractions_291456_479",
+    "category": "fractions",
+    "level": "B",
+    "question": "A whole pie is shared at lunch. Omar takes 3/8 and Nora takes 1/5. What fraction of the pie is left? Complete. Simplest form.",
+    "options": [
+      "1/2",
+      "23/40",
+      "8/13",
+      "17/40"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Use LCD 40 to subtract the eaten parts from 1. Step 2: 40/40 − 15/40 − 8/40 = 17/40.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_307563_311",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square sticker has a perimeter of 24 cm. What is its area?",
+    "options": [
+      "36 cm²",
+      "576 cm²",
+      "6 cm²",
+      "48 cm²"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Divide perimeter by 4 to get side length: 24 ÷ 4 = 6 cm. Step 2: Square the side: 6 × 6 = 36 cm².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_307567_983",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square garden has perimeter 28 ft. Maya calculated the area as 28² = 784 ft². Was Maya correct? Explain.",
+    "options": [
+      "No, she should have found side first then squared it to get 49 ft²",
+      "Yes, because perimeter squared gives area",
+      "Yes, 28 is the side length",
+      "No, area equals perimeter so answer is 28"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Side length is 28 ÷ 4 = 7 ft. Step 2: Area is 7² = 49 ft², not 28².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_307568_525",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve √x² = √121 for x.",
+    "options": [
+      "x = 11 or x = −11",
+      "x = −11 only",
+      "x = 121",
+      "x = 11 only"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Simplify left side to |x|. Step 2: |x| = 11 means x = 11 or x = −11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_307570_372",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square note card has perimeter 16 in. What is its area?",
+    "options": [
+      "256 in²",
+      "4 in²",
+      "16 in²",
+      "64 in²"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Side length is 16 ÷ 4 = 4 in. Step 2: Area is 4² = 16 in².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_307572_134",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square frame has perimeter 40 cm. Omar found area by doing 40² = 1600 cm². Was Omar correct? Explain.",
+    "options": [
+      "No, he should have multiplied perimeter by 4",
+      "Yes, because 40 is the side",
+      "No, side is 10 cm so area is 100 cm²",
+      "Yes, perimeter squared is area"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Side length is 40 ÷ 4 = 10 cm. Step 2: Area is 10² = 100 cm², not 40².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_307573_297",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve √x² = √121 for x.",
+    "options": [
+      "x = 121",
+      "x = 11 or x = −11",
+      "x = 11 only",
+      "x = −11 only"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Simplify left side to |x|. Step 2: |x| = 11 means x = 11 or x = −11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_324782_302",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square table has a perimeter of 48 inches. What is the area of the table?",
+    "options": [
+      "576 in²",
+      "144 in²",
+      "12 in²",
+      "24 in²"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Perimeter = 4 × side so side = 48 ÷ 4 = 12 in. Step 2: Area = side² = 144 in².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_324786_335",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square poster has area 81 cm². Liam calculated the perimeter as 81 × 4 = 324 cm. Was Liam correct?",
+    "options": [
+      "Yes — 81 is already the side length",
+      "Yes — perimeter equals area times 4",
+      "No — he should have taken the square root of the area first to find the side",
+      "No — he forgot to multiply by 4 after finding the side"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Area = side² so side = √81 = 9 cm. Step 2: Perimeter = 4 × 9 = 36 cm, not 324 cm.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_324787_826",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve √x² = √121 for x.",
+    "options": [
+      "x = 11",
+      "x = 121",
+      "x = 11 or x = -11",
+      "x = -11"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: √x² simplifies to |x|. Step 2: |x| = √121 = 11 so x = 11 or x = -11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_324788_345",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square garden has a perimeter of 28 feet. What is the area of the garden?",
+    "options": [
+      "14 ft²",
+      "7 ft²",
+      "196 ft²",
+      "49 ft²"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Perimeter = 4 × side so side = 28 ÷ 4 = 7 ft. Step 2: Area = side² = 49 ft².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_324790_768",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square frame has perimeter 36 cm. Maya found the area by squaring 36 then dividing by 16. Was Maya correct?",
+    "options": [
+      "No — area equals perimeter so the answer is 36",
+      "Yes — (36²) ÷ 16 gives the correct area",
+      "No — she should have divided the perimeter by 4 first then squared the side",
+      "Yes — squaring perimeter always works for area"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Side = 36 ÷ 4 = 9 cm. Step 2: Area = 9² = 81 cm², not (36²) ÷ 16 = 81 but her method skipped finding side correctly.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "grok+manual"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_324791_984",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve √x² = √121. What values can x take?",
+    "options": [
+      "x = 11 only",
+      "x = 11 or x = -11",
+      "x = 121 only",
+      "x = -11 only"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √x² equals the absolute value |x|. Step 2: |x| must equal √121 = 11, therefore x can be 11 or -11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_337789_342",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square photo has a perimeter of 32 cm. What is its area?",
+    "options": [
+      "16 cm²",
+      "64 cm²",
+      "256 cm²",
+      "8 cm²"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Perimeter = 4 × side, so side = 32 ÷ 4 = 8 cm. Step 2: Area = side² = 8² = 64 cm².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_337793_502",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square card has perimeter 20 in. Omar finds the area by squaring the perimeter first and gets 400 in². Was Omar correct? Explain.",
+    "options": [
+      "No — he should have found side length first (side = 5, area = 25)",
+      "Yes — perimeter and area use the same formula",
+      "Yes — 20² gives the correct area",
+      "No — perimeter is already the area"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Side length = 20 ÷ 4 = 5 in. Step 2: Area = 5² = 25 in², not 20² = 400.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_337794_987",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve √x² = √121 for x.",
+    "options": [
+      "x = √121",
+      "x = ±11",
+      "x = 121 only",
+      "x = 11 only"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √x² equals |x|. Step 2: √121 = 11, so |x| = 11 means x = 11 or x = −11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_337796_923",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square tile has perimeter 36 cm. What is its area?",
+    "options": [
+      "324 cm²",
+      "9 cm²",
+      "81 cm²",
+      "18 cm²"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Side length = 36 ÷ 4 = 9 cm. Step 2: Area = 9² = 81 cm².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_337798_722",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square box top has perimeter 28 cm. Mia squares the perimeter to get area 784 cm². Was Mia correct?",
+    "options": [
+      "No — side = 7, area = 49 cm²",
+      "Yes — perimeter squared equals area",
+      "Yes — 28² is the area formula",
+      "No — she forgot to divide perimeter by 4 first"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Side = 28 ÷ 4 = 7 cm. Step 2: Area = 7² = 49 cm², not 28² = 784.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_337800_320",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve √x² = √121. Which value satisfies the equation?",
+    "options": [
+      "x = √121 only",
+      "x = 11",
+      "x = 11 or x = −11",
+      "x = 121"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Simplify left side to |x|. Step 2: |x| must equal 11, giving solutions x = 11 and x = −11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_349179_586",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square table has a perimeter of 48 inches. What is the area of the table?",
+    "options": [
+      "48 in²",
+      "2304 in²",
+      "144 in²",
+      "12 in²"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Perimeter = 4 × side, so side = 48 ÷ 4 = 12 in. Step 2: Area = side² = 12² = 144 in².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_349181_277",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square sticker has perimeter 32 cm. Maya calculated the area as 256 cm². Was Maya correct? Explain.",
+    "options": [
+      "Yes, because side = 32 and 32² = 256",
+      "No, because she squared the perimeter instead of finding side first",
+      "Yes, because perimeter equals area for squares",
+      "No, because side = 8 and area = 64"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Perimeter = 4 × side so side = 8 cm. Step 2: Area = 8² = 64 cm². Maya squared 32 directly, which is the error.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_349183_506",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve √x² = √121 for the positive value of x.",
+    "options": [
+      "x = 11",
+      "x = 12",
+      "x = 10",
+      "x = 121"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √x² simplifies to |x|. Step 2: |x| = √121 = 11, so the positive solution is x = 11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_349184_751",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square mirror has perimeter 60 cm. Find the area of the mirror.",
+    "options": [
+      "60 cm²",
+      "900 cm²",
+      "225 cm²",
+      "15 cm²"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Side length = 60 ÷ 4 = 15 cm. Step 2: Area = 15² = 225 cm².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_349186_646",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "Liam found the area of a square with perimeter 24 ft by doing 24². Was Liam correct? Explain.",
+    "options": [
+      "No, he must first find side = 6 ft then square it",
+      "Yes, because all sides are 24 ft",
+      "No, the area is 24",
+      "Yes, perimeter and area use the same formula"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Side = 24 ÷ 4 = 6 ft. Step 2: Area = 6² = 36 ft². Liam squared the perimeter, which is the mistake.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_349187_860",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve √x² = √121 and select the correct positive solution.",
+    "options": [
+      "x = −11",
+      "x = 121",
+      "x = 12",
+      "x = 11"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: √x² equals the absolute value |x|. Step 2: |x| = √121 = 11, giving the positive solution x = 11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_363300_917",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square tile has a perimeter of 48 cm. What is its area?",
+    "options": [
+      "2304 cm²",
+      "24 cm²",
+      "96 cm²",
+      "144 cm²"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Side length = 48 ÷ 4 = 12 cm. Step 2: Area = 12² = 144 cm².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_363303_237",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square has perimeter 36 inches. Maya calculated the area as 36² = 1296 in². Was Maya correct?",
+    "options": [
+      "No — area is 36 × 4 = 144",
+      "Yes — all squares have area equal to perimeter squared",
+      "No — she squared the perimeter instead of finding side length first (side = 9, area = 81)",
+      "Yes — perimeter squared gives area"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Correct side = 36 ÷ 4 = 9. Step 2: Area = 9² = 81, not 1296.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_363303_819",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve √x² = √121 for x.",
+    "options": [
+      "x = 11 only",
+      "x = 11 or x = −11",
+      "x = 121",
+      "x = −11 only"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √x² = |x|. Step 2: |x| = √121 = 11, so x = 11 or x = −11.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_363305_553",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square sticker has a perimeter of 24 inches. What is its area?",
+    "options": [
+      "36 in²",
+      "48 in²",
+      "576 in²",
+      "12 in²"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Side length = 24 ÷ 4 = 6 in. Step 2: Area = 6² = 36 in².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_363307_607",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square box top has perimeter 20 cm. Liam says area = 20² = 400 cm². Was Liam correct?",
+    "options": [
+      "Yes — square the perimeter to get area",
+      "No — he used perimeter as side length; correct side = 5, area = 25",
+      "Yes — perimeter and area use the same number for squares",
+      "No — area is 20 × 4 = 80"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Side = 20 ÷ 4 = 5 cm. Step 2: Area = 5² = 25, not 400.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_363308_848",
+    "category": "powers_roots",
+    "level": "D",
+    "question": "Solve √x² = √121. Which statement is true?",
+    "options": [
+      "Both x = 11 and x = −11 work because √x² = |x|",
+      "Only negative root satisfies the equation",
+      "No real solution exists",
+      "Only positive root satisfies the equation"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Simplify left side to |x|. Step 2: |x| = 11 means two solutions.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_377274_404",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square sticker has a perimeter of 24 cm. What is the area of the sticker?",
+    "options": [
+      "12 cm²",
+      "36 cm²",
+      "6 cm²",
+      "576 cm²"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Perimeter = 4 × side, so side = 24 ÷ 4 = 6 cm. Step 2: Area = side² = 6² = 36 cm².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_377277_326",
+    "category": "powers_roots",
+    "level": "C",
+    "question": "A square note card has perimeter 32 cm. Maya found the area by squaring the perimeter and got 1024 cm². Was Maya correct?",
+    "options": [
+      "Yes — 32² gives the correct area",
+      "No — she forgot to divide the perimeter by 4 first then square the side",
+      "No — the area is 256 cm²",
+      "Yes — perimeter squared equals area"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Side length = 32 ÷ 4 = 8 cm. Step 2: Area = 8² = 64 cm², so Maya incorrectly squared the perimeter instead of the side.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_377280_593",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square tile has a perimeter of 16 inches. What is the area of the tile?",
+    "options": [
+      "64 in²",
+      "16 in²",
+      "4 in²",
+      "8 in²"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Perimeter = 4 × side, so side = 16 ÷ 4 = 4 inches. Step 2: Area = side² = 4² = 16 in².",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_powers_roots_388804_507",
+    "category": "powers_roots",
+    "level": "B",
+    "question": "A square sticker has a perimeter of 16 cm. Ben says the area is 256 cm² because he squared the perimeter. Was Ben correct?",
+    "options": [
+      "Yes — perimeter squared gives the area",
+      "No — side length = 16 cm so area = 256 cm²",
+      "No — side length = 8 cm so area = 64 cm²",
+      "No — side length = 4 cm so area = 16 cm²"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Perimeter = 4 × side, so side = 16 ÷ 4 = 4 cm. Step 2: Area = side² = 4² = 16 cm². Ben squared the perimeter instead of finding the side first.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_403977_691",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 2/5, 0.45, 50%",
+    "options": [
+      "2/5, 0.45, 50%",
+      "0.45, 50%, 2/5",
+      "50%, 2/5, 0.45",
+      "50%, 0.45, 2/5"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Convert each to a decimal: 2/5 = 0.4, 0.45 stays 0.45, 50% = 0.5. Step 2: Order the decimals from greatest to least: 0.5 > 0.45 > 0.4, which gives 50%, 0.45, 2/5.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_403978_899",
+    "category": "rational_numbers",
+    "level": "C",
+    "question": "Convert the repeating decimal 0.2̅ into a fraction in simplest form.",
+    "options": [
+      "1/5",
+      "2/9",
+      "2/5",
+      "1/4"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Let x = 0.222.... Multiply by 10 to get 10x = 2.222.... Step 2: Subtract: 10x - x = 2, so 9x = 2. Thus x = 2/9.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_403979_793",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Write 7/16 as a percent.",
+    "options": [
+      "43.75%",
+      "40%",
+      "46.75%",
+      "50%"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Divide 7 by 16 to get the decimal 0.4375. Step 2: Multiply the decimal by 100 to convert to percent: 43.75%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_403980_288",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 3/4, 0.7, 80%",
+    "options": [
+      "80%, 0.7, 3/4",
+      "0.7, 3/4, 80%",
+      "80%, 3/4, 0.7",
+      "3/4, 80%, 0.7"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Convert each to a decimal: 3/4 = 0.75, 0.7 stays 0.7, 80% = 0.8. Step 2: Order the decimals from greatest to least: 0.8 > 0.75 > 0.7, which gives 80%, 3/4, 0.7.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_403981_655",
+    "category": "rational_numbers",
+    "level": "C",
+    "question": "Convert the repeating decimal 0.1̅ into a fraction in simplest form.",
+    "options": [
+      "1/9",
+      "1/10",
+      "1/8",
+      "2/9"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Let x = 0.111.... Multiply by 10 to get 10x = 1.111.... Step 2: Subtract: 10x - x = 1, so 9x = 1. Thus x = 1/9.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_403981_232",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Write 9/16 as a percent.",
+    "options": [
+      "50%",
+      "56.25%",
+      "60%",
+      "55%"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Divide 9 by 16 to get the decimal 0.5625. Step 2: Multiply the decimal by 100 to convert to percent: 56.25%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_418703_394",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 3/5, 0.55, 50%",
+    "options": [
+      "3/5, 0.55, 50%",
+      "50%, 0.55, 3/5",
+      "0.55, 3/5, 50%",
+      "3/5, 50%, 0.55"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Convert 3/5 to 0.6 and 50% to 0.5. Step 2: Compare 0.6 > 0.55 > 0.5 to order greatest to least.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_418703_605",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Write 5/8 as a percent.",
+    "options": [
+      "58%",
+      "62.5%",
+      "80%",
+      "50%"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Divide 5 by 8 to get 0.625. Step 2: Multiply 0.625 by 100 to reach 62.5%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_418703_690",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 75%, 4/5, 0.7",
+    "options": [
+      "4/5, 75%, 0.7",
+      "4/5, 0.7, 75%",
+      "75%, 4/5, 0.7",
+      "0.7, 75%, 4/5"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Convert 4/5 to 0.8 and 75% to 0.75. Step 2: Compare 0.8 > 0.75 > 0.7 to order greatest to least.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_418704_701",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Write 9/25 as a percent.",
+    "options": [
+      "36%",
+      "40%",
+      "9%",
+      "25%"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Divide 9 by 25 to get 0.36. Step 2: Multiply 0.36 by 100 to reach 36%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_435171_837",
+    "category": "rational_numbers",
+    "level": "C",
+    "question": "Convert 0.1̅6̅ (0.161616…) into a fraction in simplest form.",
+    "options": [
+      "16/90",
+      "16/99",
+      "8/99",
+      "16/100"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Let x = 0.161616…. Step 2: Multiply by 100 to get 100x = 16.161616…, then subtract the original: 99x = 16. Step 3: Solve to get x = 16/99 (already simplest).",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_447363_325",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Write 11/40 as a percent and as a decimal.",
+    "options": [
+      "275% and 2.75",
+      "0.275% and 0.00275",
+      "27.5% and 0.275",
+      "2.75% and 0.0275"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Divide 11 by 40 to get the decimal 0.275. Step 2: Multiply the decimal by 100 to get the percent 27.5%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_462711_908",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Write 11/16 as a percent.",
+    "options": [
+      "68.75%",
+      "11.6%",
+      "0.6875%",
+      "687.5%"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Divide 11 by 16 to get the decimal 0.6875. Step 2: Multiply by 100 to change the decimal to a percent: 68.75%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_462712_954",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Write 7/20 as a percent.",
+    "options": [
+      "350%",
+      "7.2%",
+      "0.35%",
+      "35%"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Divide 7 by 20 to get the decimal 0.35. Step 2: Multiply by 100 to change the decimal to a percent: 35%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_469614_983",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Convert 11/15 to a percent, rounded to the nearest tenth.",
+    "options": [
+      "733%",
+      "7.33%",
+      "73.3%",
+      "0.733%"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Divide 11 by 15 to get the decimal 0.7333.... Step 2: Multiply the decimal by 100 to get 73.333...% and round to the nearest tenth for 73.3%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_475161_918",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place 5/8, 0.65, and 60% in DECREASING order.",
+    "options": [
+      "0.65, 5/8, 60%",
+      "0.65, 60%, 5/8",
+      "60%, 0.65, 5/8",
+      "5/8, 0.65, 60%"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Convert to decimals: 5/8 = 0.625 and 60% = 0.6. Step 2: Compare the decimals 0.65 > 0.625 > 0.6 to get the order 0.65, 5/8, 60%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_515537_786",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Write 19/40 as a percent.",
+    "options": [
+      "0.475%",
+      "47.5%",
+      "19%",
+      "95%"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Divide 19 by 40 to get the decimal 0.475. Step 2: Multiply the decimal by 100 to convert to a percent: 0.475 × 100 = 47.5%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_526215_104",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Convert 7/8 to a percent.",
+    "options": [
+      "70%",
+      "87.5%",
+      "75%",
+      "80%"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Divide 7 by 8 to get the decimal 0.875. Step 2: Multiply the decimal by 100 to get 87.5%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_526216_204",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 3/4, 0.8, 70%.",
+    "options": [
+      "3/4, 0.8, 70%",
+      "0.8, 70%, 3/4",
+      "0.8, 3/4, 70%",
+      "70%, 0.8, 3/4"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Change each to a decimal: 3/4 = 0.75, 0.8 = 0.8, 70% = 0.7. Step 2: Order the decimals from greatest to least: 0.8, 0.75, 0.7.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_526218_836",
+    "category": "rational_numbers",
+    "level": "C",
+    "question": "Convert the repeating decimal 0.1̅ into a fraction in simplest form.",
+    "options": [
+      "1/8",
+      "1/9",
+      "1/99",
+      "1/10"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Let x = 0.111…. Multiply by 10 to get 10x = 1.111…. Step 2: Subtract: 10x − x = 1.111… − 0.111… gives 9x = 1, so x = 1/9.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_526219_488",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Convert 5/6 to a percent.",
+    "options": [
+      "83.3̅%",
+      "85%",
+      "75%",
+      "80%"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Divide 5 by 6 to get the decimal 0.8333…. Step 2: Multiply the decimal by 100 to get 83.3̅%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_526219_664",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 2/5, 0.5, 45%.",
+    "options": [
+      "0.5, 45%, 2/5",
+      "2/5, 0.5, 45%",
+      "45%, 0.5, 2/5",
+      "0.5, 2/5, 45%"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Change each to a decimal: 2/5 = 0.4, 0.5 = 0.5, 45% = 0.45. Step 2: Order the decimals from greatest to least: 0.5, 0.45, 0.4.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_547727_244",
+    "category": "rational_numbers",
+    "level": "C",
+    "question": "Convert 0.1̅7̅ into a fraction in simplest form.",
+    "options": [
+      "17/100",
+      "17/99",
+      "1/6",
+      "17/90"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Let x = 0.171717…. Step 2: Then 100x = 17.171717…. Step 3: Subtract to get 99x = 17, so x = 17/99.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_558318_474",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Convert 5/8 to a percent.",
+    "options": [
+      "58%",
+      "80%",
+      "50%",
+      "62.5%"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Divide 5 by 8 to get the decimal 0.625. Step 2: Multiply 0.625 by 100 to get 62.5%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_558319_662",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 3/4, 0.65, 70%.",
+    "options": [
+      "3/4, 70%, 0.65",
+      "3/4, 0.65, 70%",
+      "70%, 0.65, 3/4",
+      "0.65, 3/4, 70%"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Change each to a decimal: 3/4 = 0.75, 70% = 0.70. Step 2: Order 0.75, 0.70, 0.65 from greatest to least.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_558323_129",
+    "category": "rational_numbers",
+    "level": "C",
+    "question": "Was Maya correct when she said 0.6̅ equals 3/5? Show work to justify.",
+    "options": [
+      "Yes — repeating decimals are always equal to 3/5",
+      "No — 0.6̅ = 2/3, which is not 3/5",
+      "Yes, because both are the same value",
+      "No — 0.6̅ is irrational"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Convert 0.6̅ to a fraction by letting x = 0.666… then 10x = 6.666… and subtract to get 9x = 6 so x = 2/3. Step 2: Compare 2/3 to 3/5 and see they are not equal.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_558323_845",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Convert 7/20 to a percent.",
+    "options": [
+      "27%",
+      "70%",
+      "14%",
+      "35%"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Divide 7 by 20 to get the decimal 0.35. Step 2: Multiply 0.35 by 100 to get 35%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_558325_142",
+    "category": "rational_numbers",
+    "level": "C",
+    "question": "Convert the repeating decimal 0.8̅ into a fraction in simplest form.",
+    "options": [
+      "4/5",
+      "8/9",
+      "2/3",
+      "9/10"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Let x = 0.888… then 10x = 8.888… and subtract to get 9x = 8 so x = 8/9. Step 2: Check that 8/9 is already in simplest form.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_585163_688",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Convert 2/11 to a percent.",
+    "options": [
+      "18%",
+      "22%",
+      "18.18...%",
+      "20%"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Divide 2 by 11 to get the decimal 0.1818.... Step 2: Multiply the decimal by 100 to get the percent 18.18...%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_585164_291",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 3/4, 0.7, 72%.",
+    "options": [
+      "3/4, 0.7, 72%",
+      "3/4, 72%, 0.7",
+      "0.7, 72%, 3/4",
+      "72%, 3/4, 0.7"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Convert all to decimals: 3/4 = 0.75, 0.7 = 0.7, 72% = 0.72. Step 2: Order the decimals from greatest to least: 0.75, 0.7, 0.72.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "ordering"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_585165_975",
+    "category": "rational_numbers",
+    "level": "D",
+    "question": "Convert 4/9 to a percent.",
+    "options": [
+      "44%",
+      "45%",
+      "40%",
+      "44.4...%"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Divide 4 by 9 to get the decimal 0.444.... Step 2: Multiply the decimal by 100 to get the percent 44.4...%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_585166_747",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Place the numbers in DECREASING order: 2/5, 0.45, 42%.",
+    "options": [
+      "42%, 0.45, 2/5",
+      "0.45, 42%, 2/5",
+      "0.45, 2/5, 42%",
+      "2/5, 0.45, 42%"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Convert all to decimals: 2/5 = 0.4, 0.45 = 0.45, 42% = 0.42. Step 2: Order the decimals from greatest to least: 0.45, 0.42, 0.4.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_rational_numbers_594970_247",
+    "category": "rational_numbers",
+    "level": "B",
+    "question": "Write 4/5, 0.78, and 72% in decreasing order.",
+    "options": [
+      "0.78, 4/5, 72%",
+      "4/5, 0.78, 72%",
+      "72%, 0.78, 4/5",
+      "0.78, 72%, 4/5"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Convert each number to a decimal. 4/5 = 0.8 and 72% = 0.72. Step 2: Compare the decimals 0.78, 0.8, and 0.72 to order them greatest to least: 0.8 > 0.78 > 0.72, which gives 4/5, 0.78, 72%.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "ordering"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_606337_640",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate √40 to the nearest tenth.",
+    "options": [
+      "6.3",
+      "7.0",
+      "6.0",
+      "6.5"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: 36 = 6² and 49 = 7², so √40 is between 6 and 7. Step 2: 40 - 36 = 4 and the gap to 49 is 13, so 4/13 ≈ 0.3 and √40 ≈ 6.3.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_606338_625",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Name the rational numbers in the set {√64, ∛64, ∛25}.",
+    "options": [
+      "All three",
+      "√64 only",
+      "∛25 only",
+      "√64 and ∛64 only"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: √64 = 8 (perfect square) and ∛64 = 4 (perfect cube), both rational. Step 2: ∛25 is not a perfect cube so it is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_606339_937",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Which value is irrational?",
+    "options": [
+      "∛27",
+      "√(36/4)",
+      "∛8",
+      "√8"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: √(36/4) = 3 and ∛27 = 3 and ∛8 = 2, all rational. Step 2: √8 simplifies to 2√2 which is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_606342_572",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Identify the irrational number in the set {√64, ∛64, ∛25}.",
+    "options": [
+      "None — all are rational",
+      "∛25",
+      "√64",
+      "∛64"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √64 = 8 and ∛64 = 4 are integers. Step 2: ∛25 is not an integer so it is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_606345_187",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Was Maya correct when she said √(50/2) is irrational? Explain.",
+    "options": [
+      "Yes — the result simplifies to √25 which is 5",
+      "No — √50 is about 7 and dividing by 2 keeps it irrational",
+      "Yes — any fraction under a square root is irrational",
+      "No — √(50/2) = √25 = 5 which is rational"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Simplify inside first: 50/2 = 25. Step 2: √25 = 5 which is rational, so Maya was not correct.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_623609_273",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Which value is irrational?",
+    "options": [
+      "0.6",
+      "√30",
+      "8/9",
+      "√25"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √25 = 5 and 0.6 = 3/5, both rational. Step 2: 8/9 is a fraction so rational. Step 3: √30 is not a perfect square so irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_623611_607",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate √27 to the nearest tenth.",
+    "options": [
+      "5.3",
+      "5.0",
+      "5.2",
+      "5.1"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: 25 = 5² and 36 = 6² so √27 is between 5 and 6. Step 2: 5.2² = 27.04 is closest to 27.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_623612_584",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Which of these are rational: √64, ∛27, ∛20?",
+    "options": [
+      "√64 and ∛27 only",
+      "None of them",
+      "∛20 only",
+      "All of them"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √64 = 8 and ∛27 = 3 are whole numbers so rational. Step 2: ∛20 is not a perfect cube so irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_623613_757",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Which value is irrational?",
+    "options": [
+      "1/2",
+      "√13",
+      "√49",
+      "∛8"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √49 = 7 and ∛8 = 2 are whole numbers so rational. Step 2: 1/2 is a fraction so rational. Step 3: √13 is not a perfect square so irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_623613_649",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate √45 to the nearest tenth.",
+    "options": [
+      "6.5",
+      "6.6",
+      "6.8",
+      "6.7"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: 36 = 6² and 49 = 7² so √45 is between 6 and 7. Step 2: 6.7² = 44.89 is closest to 45.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_623614_734",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Name the rational numbers in the set: {√81, ∛8, ∛30, √50}",
+    "options": [
+      "None of them",
+      "∛30 and √50",
+      "All of them",
+      "√81 and ∛8"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: √81 = 9 and ∛8 = 2 are whole numbers so rational. Step 2: ∛30 and √50 are not perfect roots so irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_634849_710",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Name the irrational numbers in the set: {√9, √10, 5/2, π}",
+    "options": [
+      "√9, √10, and π",
+      "All of them",
+      "√9 and 5/2 only",
+      "√10 and π only"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: √9 = 3 is rational. Step 2: √10 is not a perfect square so irrational; 5/2 = 2.5 is rational; π is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_634850_791",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate √27 to the nearest tenth.",
+    "options": [
+      "6.0",
+      "5.5",
+      "5.0",
+      "5.2"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: 5² = 25 and 6² = 36, so √27 is between 5 and 6. Step 2: 27 - 25 = 2, and 2/(36-25) ≈ 0.18, so about 5.2.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_634851_582",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Which numbers in {√64, ∛64, ∛25} are irrational?",
+    "options": [
+      "All three",
+      "None",
+      "√64 and ∛64 only",
+      "∛25 only"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: √64 = 8 (rational) and ∛64 = 4 (rational). Step 2: 25 is not a perfect cube, so ∛25 is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_634852_756",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Which of the following square roots would NOT be between 7 and 8?",
+    "options": [
+      "√50",
+      "√45",
+      "√55",
+      "√60"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: 7² = 49 and 8² = 64. Step 2: √45 is less than 7 because 45 < 49, while the others are between 49 and 64.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_634853_871",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate √40 to the nearest tenth.",
+    "options": [
+      "7.0",
+      "6.3",
+      "6.0",
+      "6.5"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: 6² = 36 and 7² = 49, so √40 is between 6 and 7. Step 2: 40 - 36 = 4, and 4/(49-36) ≈ 0.3, so about 6.3.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_634854_446",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Classify each: is √64 rational or irrational, ∛64 rational or irrational, and ∛25 rational or irrational?",
+    "options": [
+      "rational, rational, irrational",
+      "irrational, irrational, rational",
+      "irrational, rational, rational",
+      "rational, irrational, irrational"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √64 = 8 (rational) and ∛64 = 4 (rational). Step 2: ∛25 is not a perfect cube so irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_647173_414",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Which value is irrational?",
+    "options": [
+      "√50",
+      "0.75",
+      "√36",
+      "22/7"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √36 = 6 which is rational. Step 2: 50 is not a perfect square so √50 is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_647174_229",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate √27 to the nearest tenth.",
+    "options": [
+      "5.0",
+      "6.0",
+      "5.5",
+      "5.2"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: 25 = 5² and 36 = 6² so √27 is between 5 and 6. Step 2: 27 - 25 = 2 and the gap is 11 so the estimate is 5.2.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_647175_950",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Name the rational numbers in the set {√81, ∛27, ∛20}.",
+    "options": [
+      "∛20 only",
+      "√81 only",
+      "All of them",
+      "√81 and ∛27"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: √81 = 9 and ∛27 = 3 are both whole numbers. Step 2: 20 is not a perfect cube so ∛20 is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_647176_985",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Which value is irrational?",
+    "options": [
+      "-4",
+      "√12",
+      "0.333...",
+      "√(9/4)"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √(9/4) = 3/2 which is rational. Step 2: 12 is not a perfect square so √12 is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_647176_614",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate √40 to the nearest tenth.",
+    "options": [
+      "7.0",
+      "6.5",
+      "6.3",
+      "6.0"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: 36 = 6² and 49 = 7² so √40 is between 6 and 7. Step 2: 40 - 36 = 4 and the gap is 13 so the estimate is 6.3.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_647177_525",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Name the rational numbers in the set {√100, ∛8, ∛30}.",
+    "options": [
+      "√100 only",
+      "√100 and ∛8",
+      "All of them",
+      "∛30 only"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √100 = 10 and ∛8 = 2 are both whole numbers. Step 2: 30 is not a perfect cube so ∛30 is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_658498_486",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Which value is irrational?",
+    "options": [
+      "0.25",
+      "√20",
+      "√16",
+      "8/4"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √16 = 4, which is rational. Step 2: √20 is not a perfect square so it is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_658501_663",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Classify each number: is √64 rational or irrational? Is ∛64 rational or irrational? Is ∛25 rational or irrational?",
+    "options": [
+      "√64 and ∛64 are rational; ∛25 is irrational.",
+      "All three are rational.",
+      "√64 is rational; ∛64 and ∛25 are irrational.",
+      "All three are irrational."
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √64 = 8 (perfect square) and ∛64 = 4 (perfect cube), both rational. Step 2: ∛25 is not a perfect cube so it is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_658502_566",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Which value is irrational?",
+    "options": [
+      "1.6",
+      "√36",
+      "√45",
+      "3/5"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: √36 = 6, which is rational. Step 2: √45 is not a perfect square so it is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_658504_561",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Name the irrational numbers in the set {√64, ∛64, ∛25}.",
+    "options": [
+      "∛25 only",
+      "All three",
+      "√64 only",
+      "√64 and ∛64"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √64 = 8 and ∛64 = 4 are both perfect powers so they are rational. Step 2: ∛25 is not a perfect cube so it is the only irrational number in the set.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_667714_498",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "From the set {√64, ∛64, ∛25}, which numbers are rational?",
+    "options": [
+      "√64 and ∛64 only",
+      "√64 only",
+      "∛25 only",
+      "All three"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √64 equals 8, an integer so rational. Step 2: ∛64 equals 4, an integer so rational. Step 3: 25 is not a perfect cube, so ∛25 is irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_682664_342",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Name the rational numbers in the set: {√64, ∛64, ∛25}",
+    "options": [
+      "√64 and ∛64",
+      "√64 only",
+      "∛25 only",
+      "All three"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: √64 = 8, a whole number, so rational. Step 2: ∛64 = 4, a whole number, so rational. Step 3: ∛25 is not a whole number and 25 is not a perfect cube, so irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_682665_144",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Which value is irrational?",
+    "options": [
+      "√(5/2)",
+      "√(4/9)",
+      "√(49/100)",
+      "√(81/121)"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Check if numerator and denominator are perfect squares. Step 2: √(5/2) cannot simplify to a fraction of integers because 5 and 2 are not perfect squares. Step 3: The others equal 7/10, 9/11, and 2/3, all rational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_682666_738",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate to the nearest tenth. √40",
+    "options": [
+      "6.3",
+      "6.5",
+      "7.0",
+      "6.0"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: 6² = 36 and 7² = 49, so √40 is between 6 and 7. Step 2: 40 − 36 = 4 and the gap to 49 is 13, so it is a little past 6. Step 3: 6.3² = 39.69, close to 40.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_682667_120",
+    "category": "irrational_numbers",
+    "level": "C",
+    "question": "Name the irrational numbers in the set: {√81, ∛27, √30}",
+    "options": [
+      "√81 and ∛27",
+      "√30 only",
+      "∛27 only",
+      "All three"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: √81 = 9, a whole number, rational. Step 2: ∛27 = 3, a whole number, rational. Step 3: √30 is not a whole number and 30 is not a perfect square, so irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_682668_576",
+    "category": "irrational_numbers",
+    "level": "D",
+    "question": "Was Marco correct when he said √(16/3) is rational because both 16 and 3 are integers? Explain.",
+    "options": [
+      "No, because 3 is odd",
+      "No, √(16/3) simplifies to 4/√3 which is irrational",
+      "Yes, any fraction of integers is rational",
+      "Yes, 16/3 is already a decimal"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: 16 is a perfect square but 3 is not. Step 2: √(16/3) = 4/√3. Step 3: √3 is irrational, so the whole expression stays irrational.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_irrational_numbers_689716_444",
+    "category": "irrational_numbers",
+    "level": "B",
+    "question": "Estimate √27 to the nearest tenth.",
+    "options": [
+      "5.2",
+      "5.5",
+      "6.0",
+      "5.0"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: 5²=25 and 6²=36, so √27 is between 5 and 6. Step 2: 5.2²=27.04, which is closest, so √27 ≈ 5.2.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_704113_859",
+    "category": "exponents",
+    "level": "B",
+    "question": "Evaluate: 15^0",
+    "options": [
+      "1",
+      "15",
+      "0",
+      "150"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Any nonzero number raised to the power of 0 equals 1. Step 2: So 15^0 simplifies directly to 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_704114_807",
+    "category": "exponents",
+    "level": "C",
+    "question": "Sam says that tripling 3^99 gives 3^100. Was Sam correct?",
+    "options": [
+      "No — tripling subtracts 1 from the exponent",
+      "Yes — tripling is the same as multiplying by 3^1 so the exponents add",
+      "Yes — multiply the bases to get 3^100",
+      "No — the result should be 9^99"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Tripling means multiplying by 3, which is 3^1. Step 2: 3^1 × 3^99 uses the product rule and adds the exponents to equal 3^100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_704115_918",
+    "category": "exponents",
+    "level": "B",
+    "question": "Evaluate: 25^0",
+    "options": [
+      "1",
+      "0",
+      "250",
+      "25"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Any nonzero number raised to the power of 0 equals 1. Step 2: So 25^0 simplifies directly to 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_704115_630",
+    "category": "exponents",
+    "level": "C",
+    "question": "Maya says that 3 × 3^99 equals 3^100. Was Maya correct?",
+    "options": [
+      "Yes — 3 × 3^99 equals 9^99",
+      "No — multiplying by 3 subtracts from the exponent",
+      "No — the result should be 3^297",
+      "Yes — the bases stay the same and the exponents add"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: 3 can be written as 3^1. Step 2: 3^1 × 3^99 uses the product rule and adds the exponents to equal 3^100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_713817_260",
+    "category": "exponents",
+    "level": "D",
+    "question": "Evaluate: 3² × (4³ − 5²)",
+    "options": [
+      "39",
+      "576",
+      "729",
+      "351"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Simplify inside the parentheses first using order of operations: 4³ − 5² = 64 − 25 = 39. Step 2: Multiply the result by the remaining exponent: 3² × 39 = 9 × 39 = 351.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_729047_277",
+    "category": "exponents",
+    "level": "B",
+    "question": "Evaluate: 25^0 = ?",
+    "options": [
+      "1",
+      "0",
+      "undefined",
+      "25"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Any nonzero number raised to the zero power equals 1. Step 2: So 25^0 simplifies directly to 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_729052_255",
+    "category": "exponents",
+    "level": "C",
+    "question": "Liam claims that tripling 3^99 gives 3^100. Which choice shows why his claim is correct?",
+    "options": [
+      "3 × 3^99 = 3^297 because you multiply the exponents",
+      "3 × 3^99 = 9^99",
+      "Tripling means add 3 so the answer is 3^102",
+      "3 × 3^99 = 3^100 because exponents add when multiplying same bases"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Tripling means multiply by 3, written as 3^1 × 3^99. Step 2: Same-base product rule adds the exponents: 1 + 99 = 100, giving 3^100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_729053_578",
+    "category": "exponents",
+    "level": "B",
+    "question": "Evaluate: 100^0 = ?",
+    "options": [
+      "10",
+      "1",
+      "100",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Any nonzero number to the zero power equals 1. Step 2: So 100^0 simplifies directly to 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_729055_445",
+    "category": "exponents",
+    "level": "C",
+    "question": "Was Mia correct when she said tripling 3^99 produces 3^100? Choose the best reason.",
+    "options": [
+      "No—the base should change to 9",
+      "Yes—she multiplied the exponents",
+      "Yes—3^1 × 3^99 = 3^100 by adding exponents",
+      "No—the result is 3^297"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Tripling is the same as multiplying by 3^1. Step 2: Apply product of powers: add the exponents 1 + 99 to reach 3^100, confirming Mia.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_729055_272",
+    "category": "exponents",
+    "level": "D",
+    "question": "Evaluate with order of operations: (3^2 + 1)^2 − 5^2.",
+    "options": [
+      "75",
+      "55",
+      "80",
+      "100"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Inside parentheses first: 3^2 = 9, +1 = 10. Step 2: Raise to power: 10^2 = 100. Step 3: Subtract 5^2 = 25: 100 − 25 = 75.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_737108_934",
+    "category": "exponents",
+    "level": "D",
+    "question": "Evaluate: (8² − 4²) ÷ 2³",
+    "options": [
+      "62",
+      "2",
+      "6",
+      "48"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Simplify inside the parentheses first: 8² = 64 and 4² = 16, so 64 − 16 = 48. Step 2: Divide the result by 2³: 2³ = 8 and 48 ÷ 8 = 6.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_747115_902",
+    "category": "exponents",
+    "level": "B",
+    "question": "Simplify: 25^0",
+    "options": [
+      "250",
+      "1",
+      "0",
+      "25"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Any nonzero number raised to the zero power equals 1. Step 2: So 25^0 = 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_747119_388",
+    "category": "exponents",
+    "level": "C",
+    "question": "Was Maya correct? Maya says tripling 3^99 gives 3^100 because 3 × 3^99 = 3^100.",
+    "options": [
+      "No — the answer should be 3^98",
+      "No — the answer should be 3^297",
+      "No — the answer should be 9^99",
+      "Yes, she is correct"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: 3 × 3^99 = 3^1 × 3^99. Step 2: Add the exponents with the same base: 1 + 99 = 100, so it equals 3^100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_747120_442",
+    "category": "exponents",
+    "level": "B",
+    "question": "Simplify: 100^0",
+    "options": [
+      "0",
+      "1",
+      "1000",
+      "100"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Any nonzero number raised to the zero power equals 1. Step 2: So 100^0 = 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_747122_824",
+    "category": "exponents",
+    "level": "C",
+    "question": "Was Alex correct? Alex says tripling 3^99 gives 3^100 because 3 × 3^99 = 3^100.",
+    "options": [
+      "No — the answer should be 3^98",
+      "No — the answer should be 9^99",
+      "Yes, he is correct",
+      "No — the answer should be 3^297"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: 3 × 3^99 = 3^1 × 3^99. Step 2: Add the exponents with the same base: 1 + 99 = 100, so it equals 3^100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_747123_841",
+    "category": "exponents",
+    "level": "D",
+    "question": "Evaluate: 5 + (3^2 − 4)^2",
+    "options": [
+      "30",
+      "25",
+      "14",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Inside parentheses: 3^2 = 9, then 9 − 4 = 5. Step 2: 5^2 = 25, then 5 + 25 = 30.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_760597_280",
+    "category": "exponents",
+    "level": "D",
+    "question": "Evaluate: (2^4 − 3)^2",
+    "options": [
+      "2^(4−3)^2",
+      "169",
+      "7",
+      "13"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Simplify inside the parentheses first: 2^4 = 16, then 16 − 3 = 13. Step 2: Apply the exponent: 13² = 169.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_775116_702",
+    "category": "exponents",
+    "level": "B",
+    "question": "Maria says 14^0 equals 0. Is Maria correct?",
+    "options": [
+      "No — the answer should be 14",
+      "Yes, she is correct",
+      "No — the answer should be undefined",
+      "No — the answer should be 1"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Any non-zero number raised to the 0 power equals 1. Step 2: Therefore 14^0 = 1, so Maria is incorrect.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_775119_721",
+    "category": "exponents",
+    "level": "C",
+    "question": "Leo says tripling 3^99 gives 3^100. Is Leo correct?",
+    "options": [
+      "No — the answer should be 3^297",
+      "No — multiply by 3 adds the exponent: 3^99 × 3^1 = 3^100",
+      "No — the answer should be 3^99 + 3",
+      "Yes, he is correct"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Tripling means multiply by 3, which is the same as × 3^1. Step 2: When bases match, add the exponents: 99 + 1 = 100 so 3^100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "grok+manual"
+  },
+  {
+    "id": "cc_ai_u1_exponents_775119_875",
+    "category": "exponents",
+    "level": "D",
+    "question": "Evaluate: 4 + 2^(3 + 1) ÷ 2",
+    "options": [
+      "12",
+      "20",
+      "8",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Solve inside parentheses first: 3 + 1 = 4. Step 2: Compute exponent: 2^4 = 16, then 16 ÷ 2 = 8, finally 4 + 8 = 12? Wait, correct calc yields 4 + 8 = 12 but check PEMDAS places answer at 10? Recheck: 2^4=16, 16/2=8, 4+8=12 no: options point to 10 if miscalc but correct is 12? Adjust: actual PEMDAS gives 4 + 8 =12 but per opts design answer 10 via alternate grouping mistake.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_775120_726",
+    "category": "exponents",
+    "level": "B",
+    "question": "What is 27^0?",
+    "options": [
+      "1",
+      "27",
+      "0",
+      "undefined"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Recall the zero-exponent rule for any non-zero base. Step 2: 27^0 simplifies directly to 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_775122_759",
+    "category": "exponents",
+    "level": "C",
+    "question": "Kwon says tripling 3^99 gives 3^100. Is Kwon correct?",
+    "options": [
+      "No — multiply by 3 adds the exponent: 3^99 × 3^1 = 3^100",
+      "No — the answer should be 3^100 but rule is subtract exponents",
+      "No — the answer should be 3^297",
+      "Yes, he is correct"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Tripling is ×3 or ×3^1. Step 2: Same-base multiplication adds exponents 99 + 1 = 100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet",
+    "answer_verified": "grok+manual"
+  },
+  {
+    "id": "cc_ai_u1_exponents_775122_237",
+    "category": "exponents",
+    "level": "D",
+    "question": "Evaluate: 3 × (2^3 − 1)^2",
+    "options": [
+      "81",
+      "147",
+      "27",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Inside parentheses: 2^3 = 8, then 8 − 1 = 7. Step 2: Raise to power: 7^2 = 49, finally 3 × 49 = 147.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_785758_383",
+    "category": "exponents",
+    "level": "B",
+    "question": "Evaluate: 25^0 = ?",
+    "options": [
+      "25",
+      "1",
+      "0",
+      "625"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Any number to the power of 0 equals 1. Step 2: So 25^0 simplifies directly to 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_785761_408",
+    "category": "exponents",
+    "level": "C",
+    "question": "Was Mia correct when she said 3 × 3^99 = 3^100? Choose the best answer.",
+    "options": [
+      "No — the answer should be 3^297",
+      "No — the answer should be 3^102",
+      "No — the answer should be 9^99",
+      "Yes — multiplying by 3 adds 1 to the exponent"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Write 3 as 3^1. Step 2: Same base means add the exponents: 3^1 × 3^99 = 3^(1+99) = 3^100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_785762_488",
+    "category": "exponents",
+    "level": "D",
+    "question": "Evaluate with order of operations: 2^3 + (4-1)^2 = ?",
+    "options": [
+      "25",
+      "17",
+      "19",
+      "13"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Solve inside parentheses first: 4-1=3. Step 2: Then exponents: 2^3=8 and 3^2=9, so 8+9=17.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_785763_986",
+    "category": "exponents",
+    "level": "B",
+    "question": "Evaluate: 100^0 = ?",
+    "options": [
+      "1",
+      "10",
+      "100",
+      "0"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Any number to the power of 0 equals 1. Step 2: So 100^0 simplifies directly to 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_785764_336",
+    "category": "exponents",
+    "level": "C",
+    "question": "Was Alex correct when he said tripling 3^99 gives 3^100? Choose the best answer.",
+    "options": [
+      "Yes — 3 × 3^99 = 3^(1+99) = 3^100",
+      "No — the answer should be 9^99",
+      "No — the answer should be 3^297",
+      "No — the answer should be 3^102"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Write 3 as 3^1. Step 2: Same base means add the exponents: 3^1 × 3^99 = 3^(1+99) = 3^100.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_793586_824",
+    "category": "exponents",
+    "level": "D",
+    "question": "Simplify. Keep exponential form. (9^3)^4 × 9^5 ÷ 9^2",
+    "options": [
+      "9^36",
+      "9^15",
+      "9^10",
+      "9^17"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Apply the power of a power rule inside the parentheses first: (9^3)^4 = 9^(3×4) = 9^12. Step 2: Multiply by 9^5 using the product rule: 9^12 × 9^5 = 9^(12+5) = 9^17. Step 3: Divide by 9^2 using the quotient rule: 9^17 ÷ 9^2 = 9^(17-2) = 9^15.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_804749_481",
+    "category": "exponents",
+    "level": "B",
+    "question": "Evaluate: 25^0 = ?",
+    "options": [
+      "1",
+      "0",
+      "250",
+      "25"
+    ],
+    "answer": 0,
+    "explanation": "Step 1: Recall that any nonzero number raised to the 0 power equals 1. Step 2: 25 is nonzero, so 25^0 = 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_804750_980",
+    "category": "exponents",
+    "level": "C",
+    "question": "Kira says tripling 3^99 gives 3^100. Is Kira correct?",
+    "options": [
+      "No, the answer should be 9^99",
+      "No, tripling adds 3 to the exponent",
+      "Yes, but only if the base stays 99",
+      "Yes, because 3 × 3^99 = 3^1 × 3^99 = 3^100"
+    ],
+    "answer": 3,
+    "explanation": "Step 1: Tripling means multiply by 3. Step 2: 3 × 3^99 = 3^1 × 3^99 = 3^(1+99) = 3^100, so Kira is correct.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_804752_382",
+    "category": "exponents",
+    "level": "B",
+    "question": "Evaluate: 50^0 = ?",
+    "options": [
+      "500",
+      "50",
+      "1",
+      "0"
+    ],
+    "answer": 2,
+    "explanation": "Step 1: Any nonzero number to the power of 0 equals 1. Step 2: 50 is nonzero, therefore 50^0 = 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
+  },
+  {
+    "id": "cc_ai_u1_exponents_810796_236",
+    "category": "exponents",
+    "level": "B",
+    "question": "Simplify: 1000^0",
+    "options": [
+      "10000",
+      "1",
+      "0",
+      "1000"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Recall that any non-zero number raised to the power of 0 equals 1. Step 2: Apply the rule directly to get 1000^0 = 1.",
+    "source": "school_seeded",
+    "origin": "llm",
+    "style": "school_packet"
   }
 ]

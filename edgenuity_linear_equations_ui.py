@@ -143,8 +143,12 @@ def _render_answer_choices(q: dict, current: int) -> int | None:
     return None
 
 
+def _linear_eq_home_page() -> str:
+    return st.session_state.get("leq_return_page") or "edgenuity_course3_home"
+
+
 def _back_edgenuity_home():
-    st.session_state.current_page = "edgenuity_course3_home"
+    st.session_state.current_page = _linear_eq_home_page()
 
 
 def _start_linear_practice(*, show_spinner: bool = False):
@@ -488,7 +492,7 @@ def render_practice():
     col_nav1, col_nav_mid, _ = st.columns([1, 4, 1])
     with col_nav1:
         if st.button("← Back", key="leq_practice_back"):
-            st.session_state.current_page = "edgenuity_course3_home"
+            st.session_state.current_page = _linear_eq_home_page()
             st.session_state.leq_questions = []
             st.session_state.leq_current = 0
             st.session_state.leq_answers = []
@@ -642,7 +646,7 @@ def render_practice():
                 st.rerun()
         with c3:
             if st.button("← Back to Linear Equations", key="leq_done_back", use_container_width=True):
-                st.session_state.current_page = "edgenuity_course3_home"
+                st.session_state.current_page = _linear_eq_home_page()
                 st.session_state.leq_questions = []
                 st.session_state.leq_review_mode = False
                 st.rerun()

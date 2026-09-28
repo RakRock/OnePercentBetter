@@ -221,11 +221,18 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
 
         st.markdown("---")
         st.markdown("#### Expand question bank")
-        st.caption(
-            "Generate more practice questions with Grok, using **school-worksheet items as the main seeds** "
-            "so new questions match class (nested of-fractions, rewrite exponents, estimate roots). "
-            "New questions are saved to the unit AI bank."
-        )
+        if unit_id == 1:
+            st.caption(
+                "Generate more practice questions with Grok, using the **105 Unit 1 base questions** "
+                "(school packet + original templates) as seeds. New items keep class verbs "
+                "(nested of-fractions, rewrite exponents, estimate roots) but use fresh numbers. "
+                "Scientific notation stays off. Saved to the unit AI bank."
+            )
+        else:
+            st.caption(
+                "Generate more practice questions with Grok, using the static bank as seeds. "
+                "New questions are saved to the unit AI bank."
+            )
         ai_counts = c3store.count_by_category(unit_id)
         if ai_counts:
             parts = [f"{categories_meta.get(cid, {}).get('name', cid)}: {n}" for cid, n in sorted(ai_counts.items())]
@@ -236,21 +243,28 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
         per_topic = st.number_input(
             "New questions per topic",
             min_value=1,
-            max_value=6,
-            value=4 if (track == "course3" and unit_id == 1) else 2,
+            max_value=8,
+            value=6 if (track == "course3" and unit_id == 1) else 2,
             key=f"{key_prefix}_setup_expand_count_{unit_id}",
         )
+        expand_cats = None
+        if track == "course3" and unit_id == 1:
+            from arjun_course3_unit1_school_packet import SCHOOL_PACKET_TOPICS
+
+            expand_cats = [item["id"] for item in SCHOOL_PACKET_TOPICS if item["id"] in categories_meta]
+        cat_count = len(expand_cats or categories_meta)
         if st.button(
             "Generate more questions (Grok)",
             key=f"{key_prefix}_setup_expand_{unit_id}",
             disabled=not xai_key,
         ):
-            with st.spinner(f"Generating ~{per_topic * len(categories_meta)} questions for Unit {unit_id}…"):
+            with st.spinner(f"Generating ~{per_topic * cat_count} questions for Unit {unit_id}…"):
                 try:
                     added = c3ccllm.expand_unit_bank(
                         xai_key,
                         unit_id,
                         per_category=int(per_topic),
+                        categories=expand_cats,
                     )
                     total_added = sum(added.values())
                     refreshed = c3p.refresh_unit_bank(unit_id)

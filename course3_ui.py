@@ -224,7 +224,7 @@ def _render_session_report(report: dict, unit_id: int, unit: dict):
 
 
 def render_home():
-    """Course 3 landing — pick Unit 1 through Unit 6."""
+    """Course 3 landing — units, linear equations, and week setup."""
     name = st.session_state.selected_user
     col_nav1, _ = st.columns([1, 6])
     with col_nav1:
@@ -236,12 +236,34 @@ def render_home():
         f"""
     <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
         <h1 style="font-size: 2.5rem;">📐 {name}'s Course 3 Math</h1>
-        <p style="color: #6b7280; font-size: 1.1rem;">Units 1–5 — lesson notes, practice & Grok quizzes</p>
+        <p style="color: #6b7280; font-size: 1.1rem;">Units 1–5, daily practice, and solving linear equations</p>
     </div>
     """,
         unsafe_allow_html=True,
     )
 
+    tab_units, tab_linear, tab_setup = st.tabs([
+        "📘 Course Units",
+        "⚖️ Solving Linear Equations",
+        "📅 Week Setup",
+    ])
+
+    with tab_units:
+        _render_units_grid()
+
+    with tab_linear:
+        import edgenuity_linear_equations_ui as leq_ui
+
+        st.session_state.leq_return_page = "course3_home"
+        leq_ui.render_practice_home()
+
+    with tab_setup:
+        import edgenuity_linear_equations_ui as leq_ui
+
+        leq_ui.render_setup_panel()
+
+
+def _render_units_grid():
     row1 = st.columns(3, gap="large")
     row2 = st.columns(3, gap="large")
     for col, unit in zip(row1 + row2, c3.list_units()):

@@ -357,6 +357,7 @@ def render_home():
     with tab_linear:
         import edgenuity_linear_equations_ui as leq_ui
 
+        st.session_state.leq_return_page = "edgenuity_course3_home"
         leq_ui.render_practice_home()
 
     with tab_setup:

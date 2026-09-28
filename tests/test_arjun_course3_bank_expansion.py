@@ -29,6 +29,18 @@ class TestCourse3BankSeeding(unittest.TestCase):
         self.assertEqual(before, after)
         self.assertGreater(after, 40)
 
+    def test_unit1_seeds_come_from_base_bank_not_ai(self) -> None:
+        seeds = c3p.seed_questions_for_category(1, "fractions", limit=8)
+        self.assertGreaterEqual(len(seeds), 6)
+        for s in seeds:
+            self.assertNotEqual(s.get("source"), "concept_check", s.get("id"))
+            self.assertFalse(str(s.get("id", "")).startswith("cc_ai_"), s.get("id"))
+
+    def test_unit1_seeds_cover_multiple_stem_families(self) -> None:
+        seeds = c3p.seed_questions_for_category(1, "fractions", limit=8)
+        families = {c3p.stem_family_for_question(s.get("question", "")) for s in seeds}
+        self.assertGreaterEqual(len(families), 2)
+
     def test_unit1_merged_bank_size(self) -> None:
         self.assertGreaterEqual(len(c3p.QUESTION_BANK_BY_UNIT[1]), 100)
 

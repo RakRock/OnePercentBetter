@@ -50,6 +50,9 @@ def seed_unit(
     existing = c3store.count_by_category(unit_id)
     batch: list[dict] = []
     for cat_id in c3cc.categories_for_unit(unit_id):
+        if unit_id == 1 and cat_id in {"scientific_notation", "sci_notation_ops"}:
+            print(f"  skip {cat_id} (not in school packet yet)")
+            continue
         if cat_id not in cats:
             continue
         have = existing.get(cat_id, 0) if fill_missing else 0
