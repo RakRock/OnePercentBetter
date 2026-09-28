@@ -59,19 +59,19 @@ class TestScience7Curriculum(unittest.TestCase):
     def test_empty_lesson_quiz_is_empty(self):
         self.assertEqual(sci.build_quiz(lesson_id=36), [])
 
-    def test_unit1_includes_atmosphere_word_stems(self):
-        stems = sci.word_stems_for_unit(1)
-        words = {row["stem"] for row in stems}
+    def test_unit1_includes_atmosphere_vocabulary_foldable(self):
+        vocab = sci.vocabulary_for_unit(1)
+        words = [row["word"] for row in vocab]
         self.assertEqual(
             words,
-            {
-                "atmo", "cycle", "spher", "thermo", "ex", "meso", "strat", "trop",
-                "grav", "baro", "vectus", "alt", "densus", "radi", "tudo",
-            },
+            [
+                "Altitude", "Atmosphere", "Buoyancy", "Cycle",
+                "Density", "Matter", "Molecule", "Sea level",
+            ],
         )
-        quiz = sci.build_stem_quiz(1)
-        self.assertEqual(len(quiz), sci.STEM_QUIZ_SIZE)
-        self.assertTrue(all(q["id"] >= 1100 for q in quiz))
+        self.assertTrue(all(row["definition"] and row["picture"] for row in vocab))
+        quiz = sci.build_vocab_quiz(1)
+        self.assertEqual(len(quiz), len(vocab))
         lesson_ids = {q["id"] for q in sci.questions_for_lesson(1)}
         self.assertTrue(lesson_ids.isdisjoint({q["id"] for q in quiz}))
 

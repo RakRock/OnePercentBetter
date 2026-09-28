@@ -17,24 +17,49 @@ LESSON_QUIZ_SIZE = 8
 UNIT_QUIZ_SIZE = 10
 STEM_QUIZ_SIZE = 8
 
-# Word stems for 7.E.1 and 7.E.2 (Earth's systems). Shown on Unit 1.
-UNIT_WORD_STEMS: dict[int, list[dict]] = {
+# Atmosphere foldable for Unit 1: eight words on the front, definition and a picture inside.
+UNIT_VOCABULARY: dict[int, list[dict]] = {
     1: [
-        {"stem": "atmo", "meaning": "vapor", "example": "atmosphere"},
-        {"stem": "cycle", "meaning": "ring, circle", "example": "water cycle"},
-        {"stem": "spher", "meaning": "ball, round", "example": "atmosphere"},
-        {"stem": "thermo", "meaning": "heat", "example": "thermosphere"},
-        {"stem": "ex", "meaning": "out of, away from", "example": "exosphere"},
-        {"stem": "meso", "meaning": "middle", "example": "mesosphere"},
-        {"stem": "strat", "meaning": "layer", "example": "stratosphere"},
-        {"stem": "trop", "meaning": "change, turn", "example": "troposphere"},
-        {"stem": "grav", "meaning": "heavy", "example": "gravity"},
-        {"stem": "baro", "meaning": "pressure", "example": "barometer"},
-        {"stem": "vectus", "meaning": "to carry", "example": "convection"},
-        {"stem": "alt", "meaning": "high", "example": "altitude"},
-        {"stem": "densus", "meaning": "thick", "example": "density"},
-        {"stem": "radi", "meaning": "ray", "example": "radiation"},
-        {"stem": "tudo", "meaning": "state or condition", "example": "altitude"},
+        {
+            "word": "Altitude",
+            "definition": "How high something is above sea level. The stem alt means high.",
+            "picture": "A mountain with an arrow up from the ocean.",
+        },
+        {
+            "word": "Atmosphere",
+            "definition": "The blanket of gases around Earth. Atmo means vapor, and spher means round.",
+            "picture": "Earth wrapped in a layer of air.",
+        },
+        {
+            "word": "Buoyancy",
+            "definition": "The upward push of a liquid or gas that can make an object float.",
+            "picture": "A boat on water with an arrow pointing up.",
+        },
+        {
+            "word": "Cycle",
+            "definition": "Events that repeat in a circle, such as the water cycle. Cycle means ring or circle.",
+            "picture": "Circular arrows among clouds, rain, and a river.",
+        },
+        {
+            "word": "Density",
+            "definition": "How much mass is packed into a space. The stem densus means thick.",
+            "picture": "Two same-size boxes, one packed tight and one loosely filled.",
+        },
+        {
+            "word": "Matter",
+            "definition": "Anything that has mass and takes up space. Air, water, and rock are matter.",
+            "picture": "A rock, a glass of water, and a balloon of air.",
+        },
+        {
+            "word": "Molecule",
+            "definition": "The smallest bit of a substance that still has its properties, made of atoms joined together.",
+            "picture": "Two or three dots connected by lines.",
+        },
+        {
+            "word": "Sea level",
+            "definition": "The average height of the ocean surface. Altitude is measured upward from sea level.",
+            "picture": "An ocean horizon marked 0.",
+        },
     ],
 }
 
@@ -357,44 +382,31 @@ def _shuffle_question(question: dict) -> dict:
     return item
 
 
-def word_stems_for_unit(unit_id: int) -> list[dict]:
-    return list(UNIT_WORD_STEMS.get(int(unit_id), []))
+def vocabulary_for_unit(unit_id: int) -> list[dict]:
+    return list(UNIT_VOCABULARY.get(int(unit_id), []))
 
 
-def _stem_questions() -> list[dict]:
-    """One question per Unit 1 stem, kept out of the lesson banks."""
-    stems = {row["stem"]: row for row in UNIT_WORD_STEMS[1]}
-
-    def ask(question_id: int, stem: str, prompt: str, options: list[str], answer: int, explanation: str) -> dict:
-        row = stems[stem]
-        return _mc(question_id, 1, prompt, options, answer, explanation + f" Stem {row['stem']} means {row['meaning']}. Example: {row['example']}.")
-
+def _vocab_questions() -> list[dict]:
+    """One question per foldable word, kept out of the lesson banks."""
     return [
-        ask(1101, "atmo", "The stem atmo means…", ["vapor", "heat", "middle", "heavy"], 0, "Atmosphere is the vapor layer around Earth."),
-        ask(1102, "cycle", "The stem cycle means…", ["ring or circle", "a straight line", "heavy", "a ray"], 0, "The water cycle is water moving in a circle."),
-        ask(1103, "spher", "The stem spher means…", ["ball or round", "layer", "high", "thick"], 0, "Atmosphere uses spher, the round blanket of air around Earth."),
-        ask(1104, "thermo", "Which layer's name uses the stem for heat?", ["Thermosphere", "Mesosphere", "Exosphere", "Troposphere"], 0, "Thermo means heat."),
-        ask(1105, "ex", "The stem ex means…", ["out of or away from", "middle", "heavy", "a circle"], 0, "The exosphere is the outer layer, away from Earth's surface."),
-        ask(1106, "meso", "The stem meso means…", ["middle", "heat", "pressure", "vapor"], 0, "The mesosphere is the middle layer of the atmosphere."),
-        ask(1107, "strat", "The stem strat means…", ["layer", "ray", "thick", "to carry"], 0, "The stratosphere is a layer of the atmosphere."),
-        ask(1108, "trop", "The stem trop means…", ["change or turn", "high", "vapor", "ball"], 0, "Weather turns and changes in the troposphere."),
-        ask(1109, "grav", "The stem grav means…", ["heavy", "light", "middle", "out of"], 0, "Gravity is the pull that makes things feel heavy."),
-        ask(1110, "baro", "A barometer measures pressure. The stem baro means…", ["pressure", "heat", "ray", "circle"], 0, "Baro means pressure."),
-        ask(1111, "vectus", "The stem vectus means…", ["to carry", "to melt", "to measure", "to freeze"], 0, "Convection carries heat as warm air or water moves."),
-        ask(1112, "alt", "The stem alt means…", ["high", "low", "thick", "round"], 0, "Altitude is how high something is."),
-        ask(1113, "densus", "The stem densus means…", ["thick", "thin", "high", "a ray"], 0, "Density describes how thickly matter is packed."),
-        ask(1114, "radi", "The stem radi means…", ["ray", "layer", "circle", "heavy"], 0, "Radiation travels in rays, including heat from the Sun."),
-        ask(1115, "tudo", "The stem tudo means…", ["state or condition", "middle layer", "to carry", "vapor"], 0, "The ending -tude names a state or condition, as in altitude."),
+        _mc(1101, 1, "Altitude is…", ["How high something is above sea level", "The gas around Earth", "How tightly mass is packed", "The upward push that makes objects float"], 0, "Altitude measures height above sea level. The stem alt means high."),
+        _mc(1102, 1, "The atmosphere is…", ["The blanket of gases around Earth", "The average height of the ocean", "A repeating circle of events", "Two atoms joined together"], 0, "Atmo means vapor and spher means round: the round blanket of air."),
+        _mc(1103, 1, "Buoyancy is…", ["The upward push of a liquid or gas that can make an object float", "How high a mountain is", "Anything that has mass", "The zero line of the ocean"], 0, "Buoyancy is why some objects float."),
+        _mc(1104, 1, "A cycle is…", ["Events that repeat in a circle", "A single atom", "Height above the ocean", "How thick matter is packed"], 0, "The water cycle is one example. Cycle means ring or circle."),
+        _mc(1105, 1, "Density describes…", ["How much mass is packed into a space", "The gases around Earth", "The height of the ocean surface", "A drawing of a molecule"], 0, "Densus means thick. A denser object has more mass in the same space."),
+        _mc(1106, 1, "Matter is…", ["Anything that has mass and takes up space", "Only solid objects", "Only the air around Earth", "The upward force on a boat"], 0, "Air, water, and rock are all matter."),
+        _mc(1107, 1, "A molecule is…", ["Atoms joined together that still have the substance's properties", "The height of a mountain", "The ocean's average surface", "A repeating weather pattern"], 0, "A molecule is the smallest bit of a substance that still acts like that substance."),
+        _mc(1108, 1, "Sea level is…", ["The average height of the ocean surface", "The top of the atmosphere", "How tightly air is packed", "The upward push of water"], 0, "Altitude is measured upward from sea level."),
     ]
 
 
-STEM_QUESTIONS: list[dict] = _stem_questions()
+VOCAB_QUESTIONS: list[dict] = _vocab_questions()
 
 
-def build_stem_quiz(unit_id: int) -> list[dict]:
-    if int(unit_id) != 1:
+def build_vocab_quiz(unit_id: int) -> list[dict]:
+    if int(unit_id) not in UNIT_VOCABULARY:
         return []
-    pool = STEM_QUESTIONS
+    pool = VOCAB_QUESTIONS
     picked = random.sample(pool, min(STEM_QUIZ_SIZE, len(pool)))
     return [_shuffle_question(q) for q in picked]
 
