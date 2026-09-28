@@ -4733,32 +4733,31 @@ def render_science_unit():
         is_current = lesson["id"] == week_number
         border = unit["color"] if is_current else "#e5e7eb"
         week_tag = " · This week" if is_current else ""
-        materials = (
-            f"<p style='margin:0.25rem 0 0 0;'><strong>Materials:</strong> {lesson['materials']}</p>"
-            if lesson["materials"] else ""
-        )
-        sheet = (
-            f"<p style='margin:0.25rem 0 0 0;'><strong>Sheet:</strong> {lesson['sheet']}</p>"
-            if lesson["sheet"] else ""
-        )
-        also = (
-            f"<p style='margin:0.25rem 0 0 0; color:#4b5563;'>{lesson['also']}</p>"
-            if lesson["also"] else ""
-        )
         ixl = ", ".join(lesson["ixl"])
-        st.markdown(f"""
-        <div style="padding:0.9rem 1rem;border-radius:12px;border:2px solid {border};
-             margin-bottom:0.35rem;">
-            <strong>Lesson {lesson['id']}: {lesson['title']}</strong>
-            <span style="color:{unit['color']};">{week_tag}</span>
-            <p style="color:#4b5563;margin:0.35rem 0 0 0;">{lesson['activity']}</p>
-            {materials}
-            <p style="margin:0.35rem 0 0 0;"><strong>IXL:</strong> {ixl}</p>
-            {sheet}
-            {also}
-            <p style="color:#9ca3af;font-size:0.85rem;margin:0.35rem 0 0 0;">{available} practice questions</p>
-        </div>
-        """, unsafe_allow_html=True)
+        parts = [
+            f'<div style="padding:0.9rem 1rem;border-radius:12px;border:2px solid {border};margin-bottom:0.35rem;">',
+            f"<strong>Lesson {lesson['id']}: {lesson['title']}</strong>",
+            f'<span style="color:{unit["color"]};">{week_tag}</span>',
+            f'<p style="color:#4b5563;margin:0.35rem 0 0 0;">{lesson["activity"]}</p>',
+        ]
+        if lesson["materials"]:
+            parts.append(
+                f'<p style="margin:0.25rem 0 0 0;"><strong>Materials:</strong> {lesson["materials"]}</p>'
+            )
+        parts.append(f'<p style="margin:0.35rem 0 0 0;"><strong>IXL:</strong> {ixl}</p>')
+        if lesson["sheet"]:
+            parts.append(
+                f'<p style="margin:0.25rem 0 0 0;"><strong>Sheet:</strong> {lesson["sheet"]}</p>'
+            )
+        if lesson["also"]:
+            parts.append(
+                f'<p style="margin:0.25rem 0 0 0;color:#4b5563;">{lesson["also"]}</p>'
+            )
+        parts.append(
+            f'<p style="color:#9ca3af;font-size:0.85rem;margin:0.35rem 0 0 0;">{available} practice questions</p>'
+        )
+        parts.append("</div>")
+        st.markdown("".join(parts), unsafe_allow_html=True)
         if available:
             quiz_n = min(s7.LESSON_QUIZ_SIZE, available)
             if st.button(
