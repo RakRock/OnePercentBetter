@@ -211,33 +211,68 @@ def build_session_set(
 
 
 def build_session_report(questions: list[dict], answers: list[dict], *, student_name: str = "Student") -> dict:
-    total = len(questions)
-    correct = sum(1 for a in answers if a.get("correct"))
+    """Score marked questions only. Written items are self-check and listed with model answers."""
     by_cat: dict[str, dict] = {}
-    for q, a in zip(questions, answers):
+    written_review: list[dict] = []
+    scored_correct = 0
+    scored_total = 0
+    for idx, q in enumerate(questions):
+        ans = answers[idx] if idx < len(answers) else {}
+        if q.get("type") == "written":
+            written_review.append(
+                {
+                    "number": idx + 1,
+                    "topic": q.get("category_label", ""),
+                    "marks": int(q.get("marks") or 0),
+                    "question": str(q.get("question", "")).strip(),
+                    "model_answer": str(q.get("model_answer", "")).strip(),
+                    "explanation": str(q.get("explanation", "")).strip(),
+                    "attempted": bool(ans.get("self_checked") or ans.get("skipped_scoring")),
+                }
+            )
+            continue
         label = q.get("category_label", q.get("category", ""))
         bucket = by_cat.setdefault(label, {"name": label, "correct": 0, "total": 0})
-        if q.get("type") == "written" and a.get("skipped_scoring"):
-            continue
         bucket["total"] += 1
-        if a.get("correct"):
+        scored_total += 1
+        if ans.get("correct"):
             bucket["correct"] += 1
+            scored_correct += 1
 
     strengths = []
     needs = []
     for item in by_cat.values():
-        pct = round(100 * item["correct"] / item["total"]) if item["total"] else 0
+        if not item["total"]:
+            continue
+        pct = round(100 * item["correct"] / item["total"])
         row = {**item, "pct": pct, "emoji": "✅" if pct >= 80 else "📚"}
         if pct >= 80:
             strengths.append(row)
-        elif pct < 60:
+        else:
             needs.append(row)
+
+    score_pct = round(100 * scored_correct / scored_total) if scored_total else 0
+    first = student_name.split()[0] if student_name.strip() else "Student"
+    if written_review:
+        narrative = (
+            f"{first} completed {len(questions)} questions and scored "
+            f"{scored_correct}/{scored_total} ({score_pct}%) on the marked questions. "
+            f"{len(written_review)} written question(s) were self-check and are listed below with model answers."
+        )
+    else:
+        narrative = (
+            f"{first} completed {len(questions)} questions and scored "
+            f"{scored_correct}/{scored_total} ({score_pct}%)."
+        )
 
     return {
         "student": student_name,
-        "total": total,
-        "correct_count": correct,
-        "score_pct": round(100 * correct / total) if total else 0,
+        "total": scored_total,
+        "correct_count": scored_correct,
+        "score_pct": score_pct,
+        "questions_completed": len(questions),
+        "written_review": written_review,
+        "summary_narrative": narrative,
         "strengths": strengths,
         "needs_revision": needs,
     }
@@ -262,4 +297,13 @@ def format_report_details(report: dict) -> str:
         lines.append("Needs revision:")
         for s in report["needs_revision"]:
             lines.append(f"  • {s['name']} — {s['correct']}/{s['total']}")
+    written = report.get("written_review") or []
+    if written:
+        lines.append("Written self-check:")
+        for item in written:
+            lines.append(f"  • Q{item['number']} — {item.get('topic') or 'Written'}")
+            if item.get("question"):
+                lines.append(f"    {item['question']}")
+            if item.get("model_answer"):
+                lines.append(f"    Model answer: {item['model_answer']}")
     return "\n".join(lines)

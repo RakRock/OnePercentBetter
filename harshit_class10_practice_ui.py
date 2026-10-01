@@ -683,7 +683,7 @@ def render_practice() -> None:
         <div style="text-align:center;padding:2rem;background:{res_color}10;border-radius:20px;
              border:3px solid {res_color};margin-top:1rem;">
             <div style="font-size:5rem;">{res_emoji}</div>
-            <h2 style="color:{res_color};">{correct_count} / {report['total']} correct</h2>
+            <h2 style="color:{res_color};">{correct_count} / {report['total']} marked correct</h2>
             <p>{message}</p>
             <p style="color:#9ca3af;">⏱️ {minutes}m {seconds}s</p>
         </div>
@@ -700,11 +700,39 @@ def render_practice() -> None:
             for item in report["needs_revision"]:
                 st.markdown(f"- {item['name']} — {item['correct']}/{item['total']} ({item['pct']}%)")
 
+        written = report.get("written_review") or []
+        if written:
+            st.markdown("#### ✍️ Written questions (self-check)")
+            st.caption("Solved on paper. Compare the work with the model answer.")
+            for item in written:
+                q_disp = hmr.format_math_display(str(item.get("question", "")))
+                model_disp = hmr.format_math_display(str(item.get("model_answer", "")))
+                st.markdown(
+                    f"**Q{item['number']}** · {item.get('topic', '')}: {q_disp}",
+                    unsafe_allow_html=True,
+                )
+                if item.get("model_answer"):
+                    st.markdown(f"Model answer: {model_disp}", unsafe_allow_html=True)
+
         with st.expander("📋 Question-by-question review", expanded=False):
-            for idx, (q_item, ans) in enumerate(zip(questions, answers)):
-                css = "correct-answer" if ans.get("correct") else "wrong-answer"
+            for idx, q_item in enumerate(questions):
+                ans = answers[idx] if idx < len(answers) else {}
                 q_disp = hmr.format_math_display(str(q_item["question"]))
                 expl_disp = hmr.format_math_display(str(q_item.get("explanation", "")))
+                if q_item.get("type") == "written":
+                    model_disp = hmr.format_math_display(str(q_item.get("model_answer", "")))
+                    st.markdown(
+                        f"""
+                    <div class="correct-answer">
+                        <strong>Q{idx + 1}</strong> · {q_item.get("category_label", "")}: {q_disp}
+                        <p style="font-size:0.85rem;margin:0.3rem 0 0 0;">Self-check. Model answer: {model_disp}</p>
+                        <p style="font-size:0.85rem;margin:0.3rem 0 0 0;">{expl_disp}</p>
+                    </div>
+                    """,
+                        unsafe_allow_html=True,
+                    )
+                    continue
+                css = "correct-answer" if ans.get("correct") else "wrong-answer"
                 if ans.get("correct"):
                     mark = "✅"
                 else:

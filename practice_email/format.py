@@ -78,6 +78,57 @@ def _failed_from_report(report: dict, questions: list[dict] | None, answers: lis
     return []
 
 
+def _marked_score_line(report: dict) -> str:
+    cc = report.get("correct_count", 0)
+    tot = report.get("total", 0)
+    line = f"{cc:g}/{tot:g} ({report['score_pct']}%)"
+    written = report.get("written_review") or []
+    if written:
+        line = f"{cc:g}/{tot:g} marked ({report['score_pct']}%) · {len(written)} written self-check"
+    return line
+
+
+def _html_written(items: list[dict]) -> str:
+    if not items:
+        return ""
+    blocks = []
+    for item in items:
+        topic = (
+            f'<span style="color:#6b7280;font-size:0.85rem;"> — {html_lib.escape(item.get("topic") or "")}</span>'
+            if item.get("topic")
+            else ""
+        )
+        model = (
+            f'<p style="margin:0.35rem 0 0 0;color:#1e3a8a;"><strong>Model answer:</strong> '
+            f'{_format_math_for_email_html(item.get("model_answer", ""))}</p>'
+            if item.get("model_answer")
+            else ""
+        )
+        expl = (
+            f'<p style="margin:0.35rem 0 0 0;color:#374151;font-size:0.9rem;">'
+            f'<strong>Why:</strong> {_format_math_for_email_html(item["explanation"])}</p>'
+            if item.get("explanation")
+            else ""
+        )
+        blocks.append(
+            f"""
+            <div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:0.75rem 0.9rem;
+                 border-radius:8px;margin-bottom:0.65rem;">
+              <p style="margin:0;font-weight:700;color:#1e3a8a;">Q{item["number"]}{topic}</p>
+              <p style="margin:0.35rem 0 0 0;color:#1f2937;">{_format_math_for_email_html(item.get("question", ""))}</p>
+              {model}
+              {expl}
+            </div>
+            """
+        )
+    return (
+        '<h3 style="color:#1d4ed8;margin:1.25rem 0 0.3rem 0;">✍️ Written questions (self-check)</h3>'
+        '<p style="margin:0 0 0.5rem 0;color:#4b5563;font-size:0.9rem;">'
+        "These were solved on paper. Compare the work with the model answer.</p>"
+        + "".join(blocks)
+    )
+
+
 def format_practice_report_email(
     *,
     student_name: str,
@@ -95,9 +146,9 @@ def format_practice_report_email(
     date_str = when.strftime("%A, %B %d, %Y")
     time_str = when.strftime("%I:%M %p").lstrip("0")
     minutes, seconds = divmod(max(time_spent_seconds, 0), 60)
+    score_line = _marked_score_line(report)
     cc = report.get("correct_count", 0)
     tot = report.get("total", 0)
-    score_line = f"{cc:g}/{tot:g} ({report['score_pct']}%)"
     first_name = student_name.split()[0] if student_name.strip() else "Student"
     overall_status = report.get("overall_status", "Developing")
     narrative = report.get("summary_narrative") or (
@@ -191,6 +242,19 @@ def format_practice_report_email(
             plain_parts.append(f"Q{item['number']}{topic}: {_format_math_for_email_plain(item['question'])}")
             plain_parts.append(f"  Your answer: {_format_math_for_email_plain(item['picked'])}")
             plain_parts.append(f"  Correct: {_format_math_for_email_plain(item['correct'])}")
+            if item.get("explanation"):
+                plain_parts.append(f"  Why: {_format_math_for_email_plain(item['explanation'])}")
+            plain_parts.append("")
+
+    written = report.get("written_review") or []
+    if written:
+        plain_parts.append("WRITTEN QUESTIONS (SELF-CHECK)")
+        plain_parts.append("------------------------------")
+        for item in written:
+            topic = f" ({item['topic']})" if item.get("topic") else ""
+            plain_parts.append(f"Q{item['number']}{topic}: {_format_math_for_email_plain(item.get('question', ''))}")
+            if item.get("model_answer"):
+                plain_parts.append(f"  Model answer: {_format_math_for_email_plain(item['model_answer'])}")
             if item.get("explanation"):
                 plain_parts.append(f"  Why: {_format_math_for_email_plain(item['explanation'])}")
             plain_parts.append("")
@@ -322,6 +386,7 @@ def format_practice_report_email(
       {_html_coaching(coaching)}
       {rec_html}
       {_html_failed(missed)}
+      {_html_written(report.get("written_review") or [])}
       <p style="color:#9ca3af;font-size:0.85rem;margin-top:1.5rem;">OnePercent {html_lib.escape(program_name)}</p>
     </div>
     """
@@ -512,9 +577,7 @@ def format_harshit_student_review_email(
     when = when or datetime.now()
     date_str = when.strftime("%A, %B %d, %Y")
     minutes, seconds = divmod(max(time_spent_seconds, 0), 60)
-    cc = report.get("correct_count", 0)
-    tot = report.get("total", 0)
-    score_line = f"{cc:g}/{tot:g} ({report['score_pct']}%)"
+    score_line = _marked_score_line(report)
     first_name = student_name.split()[0] if student_name.strip() else "Student"
 
     missed = failed_questions if failed_questions is not None else _failed_from_report(report, None, None)
@@ -548,6 +611,19 @@ def format_harshit_student_review_email(
         plain_parts.append("Great session — no missed questions this time. Keep it up!")
 
     plain_parts.append("")
+    written = report.get("written_review") or []
+    if written:
+        plain_parts.append("WRITTEN QUESTIONS (SELF-CHECK)")
+        plain_parts.append("------------------------------")
+        for item in written:
+            topic = f" ({item['topic']})" if item.get("topic") else ""
+            plain_parts.append(
+                f"Q{item['number']}{topic}: {_format_math_for_email_plain(item.get('question', ''))}"
+            )
+            if item.get("model_answer"):
+                plain_parts.append(f"  Model answer: {_format_math_for_email_plain(item['model_answer'])}")
+            plain_parts.append("")
+
     plain_parts.append("— OnePercent Harshit Math")
     plain = "\n".join(plain_parts)
 
@@ -604,6 +680,7 @@ def format_harshit_student_review_email(
         <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Time</td><td>{minutes}m {seconds}s</td></tr>
       </table>
       {review_section}
+      {_html_written(report.get("written_review") or [])}
       <p style="color:#9ca3af;font-size:0.85rem;margin-top:1.5rem;">OnePercent Harshit Math</p>
     </div>
     """

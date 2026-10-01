@@ -93,6 +93,52 @@ Polynomials
         written = [q for q in batch if q.get("type") == "written"]
         self.assertGreaterEqual(len(written), 1)
 
+    def test_written_questions_are_listed_in_the_report(self):
+        from practice_email.format import format_practice_report_email
+
+        questions = [
+            {"type": "mcq", "category_label": "Board PYQ (1 mark)", "question": "sin question", "marks": 1},
+            {"type": "mcq", "category_label": "Board PYQ (1 mark)", "question": "cos question", "marks": 1},
+            {
+                "type": "written",
+                "category_label": "Board PYQ (2 marks)",
+                "question": "Find tan theta",
+                "model_answer": "tan theta = 3/4",
+                "marks": 2,
+            },
+            {
+                "type": "written",
+                "category_label": "Board PYQ (5 marks)",
+                "question": "Prove the identity",
+                "model_answer": "Start from sin squared",
+                "marks": 5,
+            },
+        ]
+        answers = [
+            {"correct": True, "picked": "4/5", "correct_val": "4/5"},
+            {"correct": False, "picked": "5/3", "correct_val": "4/5"},
+            {"correct": True, "skipped_scoring": True, "self_checked": True, "picked": "self-check"},
+            {"correct": True, "skipped_scoring": True, "self_checked": True, "picked": "self-check"},
+        ]
+        report = h10p.build_session_report(questions, answers, student_name="Harshit")
+        self.assertEqual(report["correct_count"], 1)
+        self.assertEqual(report["total"], 2)
+        self.assertEqual([item["marks"] for item in report["written_review"]], [2, 5])
+        self.assertFalse(any(row["total"] == 0 for row in report["needs_revision"] + report["strengths"]))
+        _, plain, html = format_practice_report_email(
+            student_name="Harshit Sai",
+            unit_title="Class X Unit 8",
+            unit_subtitle="Week 1",
+            report=report,
+            time_spent_seconds=55,
+            program_name="Harshit Math",
+            report_heading="Harshit Math Practice Report",
+        )
+        self.assertIn("Find tan theta", plain)
+        self.assertIn("Prove the identity", html)
+        self.assertIn("tan theta = 3/4", html)
+        self.assertNotIn("0/0", html)
+
 
 if __name__ == "__main__":
     unittest.main()
