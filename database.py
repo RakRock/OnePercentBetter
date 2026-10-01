@@ -1980,6 +1980,7 @@ def _load_arjun_week_config_row(row, unit_id: int) -> dict:
             "topics": [],
             "categories": [],
             "question_count": 15,
+            "school_packet_count": None,
             "use_llm": False,
             "unit_id": unit_id,
         }
@@ -2005,11 +2006,20 @@ def _load_arjun_week_config_row(row, unit_id: int) -> dict:
         question_count = max(5, min(30, int(data.get("question_count", 15))))
     except (TypeError, ValueError):
         question_count = 15
+    raw_school = data.get("school_packet_count")
+    if raw_school is None or raw_school == "":
+        school_packet_count = None
+    else:
+        try:
+            school_packet_count = max(0, min(question_count, int(raw_school)))
+        except (TypeError, ValueError):
+            school_packet_count = None
     return {
         "week_label": row["week_label"] or data.get("week_label", ""),
         "topics": topics,
         "categories": categories,
         "question_count": question_count,
+        "school_packet_count": school_packet_count,
         "use_llm": bool(data.get("use_llm", False)),
         "unit_id": unit_id,
     }
@@ -2021,7 +2031,10 @@ def get_arjun_course3_week_config(unit_id: int) -> dict:
             "SELECT week_label, config_json FROM arjun_course3_week_config WHERE unit_id = ?",
             (unit_id,),
         ).fetchone()
-    return _load_arjun_week_config_row(row, unit_id)
+    cfg = _load_arjun_week_config_row(row, unit_id)
+    if unit_id == 1 and cfg.get("school_packet_count") is None:
+        cfg["school_packet_count"] = 13
+    return cfg
 
 
 def save_arjun_course3_week_config(
@@ -2030,6 +2043,7 @@ def save_arjun_course3_week_config(
     topics: list[dict],
     *,
     question_count: int = 15,
+    school_packet_count: int | None = None,
     use_llm: bool = False,
 ) -> None:
     categories = [
@@ -2037,11 +2051,17 @@ def save_arjun_course3_week_config(
         for item in topics
         if isinstance(item, dict) and item.get("id")
     ]
+    qcount = max(5, min(30, int(question_count)))
+    if school_packet_count is None:
+        school_n = 13 if unit_id == 1 else 0
+    else:
+        school_n = max(0, min(qcount, int(school_packet_count)))
     payload = {
         "week_label": week_label,
         "topics": topics,
         "categories": categories,
-        "question_count": max(5, min(30, int(question_count))),
+        "question_count": qcount,
+        "school_packet_count": school_n,
         "use_llm": use_llm,
         "unit_id": unit_id,
     }

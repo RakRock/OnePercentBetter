@@ -32,7 +32,11 @@ UNIT1_REVISION_TIPS = {
     "powers_roots": "Area = side²; volume = edge³; √ undoes squaring.",
     "rational_numbers": "Divide to get decimal; ×100 for percent.",
     "irrational_numbers": "Non-perfect roots and π are irrational; √16 = 4 is rational.",
-    "exponents": "Same base: multiply → add exponents; divide → subtract.",
+    "exponents": (
+        "Same base: multiply → add, divide → subtract. "
+        "Power of a power → multiply. Zero power → 1. Negative → reciprocal. "
+        "(xy)ⁿ = xⁿ yⁿ and (x/y)ⁿ = xⁿ / yⁿ."
+    ),
     "scientific_notation": "Coefficient must satisfy 1 ≤ |a| < 10.",
     "sci_notation_ops": "Match powers of 10 before adding coefficients.",
 }

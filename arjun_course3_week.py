@@ -10,10 +10,11 @@ DEFAULT_QUESTION_COUNT = c3p.DEFAULT_SESSION_COUNT
 
 WEEKLY_GUIDANCE: dict[int, str] = {
     1: (
-        "**School worksheets are mixed into daily practice by default** (about 7 in 10 questions). "
+        "**School worksheets load by default** (13 of every 15 questions). "
         "Stems match the teacher packet: rewrite/simplify, nested “of … of …”, convert, estimate, order, "
         "and “Was ___ correct?”. Scientific notation is off until class gets there. "
-        "Use **Load school packet (through 9/22)** to raise that mix even higher."
+        "Packet III, Exponent Properties IV, and 1st-quarter BootCamp review "
+        "are in the mix. Use **Reset to school packet (through 9/30)** if the week plan was customized."
     ),
     2: (
         "**Suggested pace:** Mon Expressions → Tue Solving Equations → Wed Slope → "
@@ -63,7 +64,7 @@ def weekly_guidance(unit_id: int) -> str:
 
 
 def school_packet_week_config(unit_id: int) -> dict | None:
-    """Preset matching the teacher worksheets Arjun brought in (Course 3 through 9/22)."""
+    """Preset matching the teacher worksheets Arjun brought in (Course 3 through 9/30)."""
     if unit_id != 1:
         return None
     from arjun_course3_unit1_school_packet import SCHOOL_PACKET_LABEL, SCHOOL_PACKET_TOPICS
@@ -73,9 +74,35 @@ def school_packet_week_config(unit_id: int) -> dict | None:
         "topics": [dict(t) for t in SCHOOL_PACKET_TOPICS],
         "categories": [t["id"] for t in SCHOOL_PACKET_TOPICS],
         "question_count": DEFAULT_QUESTION_COUNT,
+        "school_packet_count": c3p.DEFAULT_SCHOOL_PACKET_COUNT,
         "use_llm": False,
         "unit_id": unit_id,
     }
+
+
+def should_refresh_unit1_school_plan(config: dict | None) -> bool:
+    """True when Unit 1 should load/replace the saved week plan with the school packet."""
+    school = school_packet_week_config(1)
+    if not school:
+        return False
+    if not config:
+        return True
+    topics = config.get("topics") or []
+    if not topics:
+        return True
+    label = str(config.get("week_label") or "")
+    if label == school["week_label"]:
+        school_ids = {str(t.get("id")) for t in school["topics"]}
+        saved_ids = {str(t.get("id")) for t in topics if isinstance(t, dict)}
+        return saved_ids != school_ids
+    if "school packet" in label.lower():
+        return True
+    topic_ids = {str(t.get("id")) for t in topics if isinstance(t, dict)}
+    if "scientific_notation" in topic_ids or "sci_notation_ops" in topic_ids:
+        return True
+    if "week 1" in label.lower() and "school packet" not in label.lower():
+        return True
+    return False
 
 
 def format_week_plan_summary(unit_id: int, config: dict) -> str:
@@ -90,7 +117,11 @@ def format_week_plan_summary(unit_id: int, config: dict) -> str:
         info = categories_meta.get(cat_id, {})
         lvls = ", ".join(item.get("levels") or [])
         lines.append(f"  • {info.get('emoji', '')} {info.get('name', cat_id)} [{lvls}]")
-    lines.append(f"  • Questions per session: {DEFAULT_QUESTION_COUNT}")
+    session_n = int(normalized.get("question_count") or DEFAULT_QUESTION_COUNT)
+    lines.append(f"  • Questions per session: {session_n}")
+    school_n = c3p.resolved_school_packet_count(normalized, count=session_n, unit_id=unit_id)
+    if school_n:
+        lines.append(f"  • School packet: {school_n} of {session_n} questions")
     if normalized.get("use_llm"):
         lines.append("  • xAI (Grok): on — fresh questions each session")
     else:

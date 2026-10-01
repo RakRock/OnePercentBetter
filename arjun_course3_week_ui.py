@@ -34,7 +34,36 @@ def ensure_week_config(track: Track, unit_id: int) -> dict:
         config = db.get_arjun_course3_week_config(unit_id)
         valid = set(c3p.get_categories(unit_id).keys())
         normalized = c3lvl.normalize_week_config(config, valid, unit_id=unit_id)
+        if unit_id == 1 and c3w.should_refresh_unit1_school_plan(normalized):
+            starter = c3w.school_packet_week_config(1) or c3w.default_week_config(1)
+            db.save_arjun_course3_week_config(
+                unit_id,
+                starter["week_label"],
+                starter["topics"],
+                question_count=int(starter.get("question_count", c3p.DEFAULT_SESSION_COUNT)),
+                school_packet_count=int(
+                    starter.get("school_packet_count", c3p.DEFAULT_SCHOOL_PACKET_COUNT)
+                ),
+                use_llm=bool(starter.get("use_llm", False)),
+            )
+            return c3lvl.normalize_week_config(
+                db.get_arjun_course3_week_config(unit_id), valid, unit_id=unit_id
+            )
         if normalized.get("topics"):
+            if unit_id == 1 and normalized.get("school_packet_count") is None:
+                db.save_arjun_course3_week_config(
+                    unit_id,
+                    normalized.get("week_label") or "",
+                    normalized["topics"],
+                    question_count=int(
+                        normalized.get("question_count", c3p.DEFAULT_SESSION_COUNT)
+                    ),
+                    school_packet_count=c3p.DEFAULT_SCHOOL_PACKET_COUNT,
+                    use_llm=bool(normalized.get("use_llm", False)),
+                )
+                normalized = c3lvl.normalize_week_config(
+                    db.get_arjun_course3_week_config(unit_id), valid, unit_id=unit_id
+                )
             return normalized
         starter = c3w.default_week_config(unit_id)
         if not starter.get("topics"):
@@ -44,6 +73,7 @@ def ensure_week_config(track: Track, unit_id: int) -> dict:
             starter["week_label"],
             starter["topics"],
             question_count=int(starter.get("question_count", c3p.DEFAULT_SESSION_COUNT)),
+            school_packet_count=int(starter.get("school_packet_count") or 0) or None,
             use_llm=bool(starter.get("use_llm", False)),
         )
         return c3lvl.normalize_week_config(
@@ -177,11 +207,12 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
     if track == "course3" and unit_id == 1:
         school_cfg = c3w.school_packet_week_config(1)
         st.caption(
-            "Daily practice already mixes school-worksheet questions in (about 7 of every 10). "
-            "This button turns the week plan fully to the 9/22 packet (no scientific notation)."
+            "The week template defaults to **13 of 15** questions from the school packet. "
+            "This button resets topics to the 9/30 packet (Packet III, exponents, "
+            "1st-quarter BootCamp; no scientific notation)."
         )
         if school_cfg and st.button(
-            "Load school packet (through 9/22)",
+            "Reset to school packet (through 9/30)",
             key=f"{key_prefix}_setup_school_packet_{unit_id}",
         ):
             save_config(
@@ -189,22 +220,32 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
                 school_cfg["week_label"],
                 school_cfg["topics"],
                 question_count=question_count,
+                school_packet_count=int(
+                    school_cfg.get("school_packet_count", c3p.DEFAULT_SCHOOL_PACKET_COUNT)
+                ),
                 use_llm=use_llm,
             )
             _clear_setup_widget_state(track, unit_id)
-            st.success("Weekly plan set to the teacher packet through 9/22 (no scientific notation yet).")
+            st.success("Weekly plan set to the teacher packet through 9/30 (no scientific notation yet).")
             st.rerun()
 
     if st.button("Save weekly plan", type="primary", key=f"{key_prefix}_setup_save_{unit_id}"):
         if not new_topics:
             st.warning("Select at least one topic with one difficulty level.")
         else:
+            save_kwargs = {
+                "question_count": question_count,
+                "use_llm": use_llm,
+            }
+            if track == "course3" and unit_id == 1:
+                save_kwargs["school_packet_count"] = int(
+                    current.get("school_packet_count") or c3p.DEFAULT_SCHOOL_PACKET_COUNT
+                )
             save_config(
                 unit_id,
                 week_label.strip(),
                 new_topics,
-                question_count=question_count,
-                use_llm=use_llm,
+                **save_kwargs,
             )
             _clear_setup_widget_state(track, unit_id)
             st.success("Weekly plan saved.")
@@ -223,7 +264,7 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
         st.markdown("#### Expand question bank")
         if unit_id == 1:
             st.caption(
-                "Generate more practice questions with Grok, using the **105 Unit 1 base questions** "
+                "Generate more practice questions with Grok, using the **Unit 1 base questions** "
                 "(school packet + original templates) as seeds. New items keep class verbs "
                 "(nested of-fractions, rewrite exponents, estimate roots) but use fresh numbers. "
                 "Scientific notation stays off. Saved to the unit AI bank."

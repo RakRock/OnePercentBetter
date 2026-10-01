@@ -54,9 +54,10 @@ FOCUS_SESSION_COUNT = 8
 RECENT_SESSIONS_TO_AVOID = 2
 SCHOOL_PACKET_SOURCE = "school_packet_9_22"
 SCHOOL_SEEDED_SOURCE = "school_seeded"
-# Unit 1 daily practice: most items should look like the teacher worksheets.
-SCHOOL_SESSION_RATIO = 0.7
-SCHOOL_PACKET_SESSION_RATIO = 0.85
+# Unit 1 template override: 13 of 15 daily items come from school worksheets.
+DEFAULT_SCHOOL_PACKET_COUNT = 13
+SCHOOL_SESSION_RATIO = DEFAULT_SCHOOL_PACKET_COUNT / DEFAULT_SESSION_COUNT
+SCHOOL_PACKET_SESSION_RATIO = SCHOOL_SESSION_RATIO
 UNIT1_SEED_LIMIT = 8
 
 _BASE_BANK_BY_UNIT: dict[int, list[dict]] = {
@@ -79,6 +80,26 @@ def refresh_unit_bank(unit_id: int) -> int:
         return 0
     QUESTION_BANK_BY_UNIT[unit_id] = extend_bank(base, unit_id)
     return len(QUESTION_BANK_BY_UNIT[unit_id])
+
+
+def resolved_school_packet_count(config: dict | None, *, count: int, unit_id: int) -> int:
+    """School-packet slots for this session. Unit 1 defaults to 13 of 15."""
+    if unit_id != 1:
+        return 0
+    total = max(1, int(count or DEFAULT_SESSION_COUNT))
+    raw = (config or {}).get("school_packet_count")
+    if raw is None or raw == "":
+        n = (
+            DEFAULT_SCHOOL_PACKET_COUNT
+            if total == DEFAULT_SESSION_COUNT
+            else round(total * DEFAULT_SCHOOL_PACKET_COUNT / DEFAULT_SESSION_COUNT)
+        )
+    else:
+        try:
+            n = int(raw)
+        except (TypeError, ValueError):
+            n = DEFAULT_SCHOOL_PACKET_COUNT
+    return max(0, min(total, n))
 
 
 def is_school_like(question: dict) -> bool:
@@ -110,6 +131,14 @@ def stem_family_for_question(question: str) -> str:
         return "pattern"
     if "product of powers" in text or "quotient of" in text:
         return "product_quotient"
+    if "zero exponent" in text or "to the 0 power" in text or "0 power" in text:
+        return "zero_exponent"
+    if "negative exponent" in text or "positive exponents" in text:
+        return "negative_exponent"
+    if "power of a power" in text or "power of powers" in text:
+        return "power_of_power"
+    if "power of a product" in text or "power of a quotient" in text:
+        return "power_product_quotient"
     if "scientific notation" in text:
         return "sci_notation"
     if "compare using" in text or "which is greater" in text:
@@ -279,7 +308,10 @@ def _top_up(
 
 def _normalized_config(unit_id: int, config: dict) -> dict:
     valid = set(get_categories(unit_id).keys())
-    return c3lvl.normalize_week_config({**config, "unit_id": unit_id}, valid, unit_id=unit_id)
+    out = c3lvl.normalize_week_config({**config, "unit_id": unit_id}, valid, unit_id=unit_id)
+    count = int(out.get("question_count") or DEFAULT_SESSION_COUNT)
+    out["school_packet_count"] = resolved_school_packet_count(out, count=count, unit_id=unit_id)
+    return out
 
 
 def _filter_bank(bank: list[dict], category_filter: list[str] | None) -> list[dict]:
@@ -347,11 +379,8 @@ def _pick_for_slots(
         )
 
     prefer_school_mix = unit_id == 1
-    school_ratio = SCHOOL_SESSION_RATIO
-    if prefer_school_mix and "school packet" in str(norm.get("week_label") or "").lower():
-        school_ratio = SCHOOL_PACKET_SESSION_RATIO
-    school_target = round(count * school_ratio) if prefer_school_mix else 0
-    packet_target = round(school_target * 0.5) if school_target else 0
+    packet_target = resolved_school_packet_count(norm, count=count, unit_id=unit_id)
+    school_target = packet_target
     school_picked = 0
     packet_picked = 0
 
