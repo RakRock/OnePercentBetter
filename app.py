@@ -4714,30 +4714,6 @@ def render_science_unit():
     </div>
     """, unsafe_allow_html=True)
 
-    vocab = s7.vocabulary_for_unit(unit["id"])
-    if vocab:
-        vocab_rows = "".join(
-            "<div style='margin:0.45rem 0 0 0;'>"
-            f"<strong>{index}. {row['word']}</strong>"
-            f"<p style='margin:0.1rem 0 0 0;color:#374151;'>{row['definition']}</p>"
-            f"<p style='margin:0.1rem 0 0 0;color:#6b7280;'>Draw: {row['picture']}</p>"
-            "</div>"
-            for index, row in enumerate(vocab, start=1)
-        )
-        st.markdown(
-            "<div style='padding:0.8rem 1rem;border-radius:12px;border:1px solid #e5e7eb;margin:0 0 0.8rem 0;'>"
-            "<strong>Atmosphere vocabulary foldable</strong>"
-            "<p style='color:#6b7280;margin:0.25rem 0 0 0;'>Fold the paper like a hotdog bun, then into 8 sections. Write each word on the front. Inside, write the definition and draw the picture.</p>"
-            f"{vocab_rows}</div>",
-            unsafe_allow_html=True,
-        )
-        if st.button(
-            f"Practice these {len(vocab)} words",
-            key="sci_vocab_quiz",
-        ):
-            start_science_quiz(s7.build_vocab_quiz(unit["id"]), label=f"{unit['name']} vocabulary")
-            st.rerun()
-
     unit_pool = s7.questions_for_unit(unit["id"])
     if unit_pool:
         if st.button(

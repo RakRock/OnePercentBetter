@@ -59,22 +59,6 @@ class TestScience7Curriculum(unittest.TestCase):
     def test_empty_lesson_quiz_is_empty(self):
         self.assertEqual(sci.build_quiz(lesson_id=36), [])
 
-    def test_unit1_includes_atmosphere_vocabulary_foldable(self):
-        vocab = sci.vocabulary_for_unit(1)
-        words = [row["word"] for row in vocab]
-        self.assertEqual(
-            words,
-            [
-                "Altitude", "Atmosphere", "Buoyancy", "Cycle",
-                "Density", "Matter", "Molecule", "Sea level",
-            ],
-        )
-        self.assertTrue(all(row["definition"] and row["picture"] for row in vocab))
-        quiz = sci.build_vocab_quiz(1)
-        self.assertEqual(len(quiz), len(vocab))
-        lesson_ids = {q["id"] for q in sci.questions_for_lesson(1)}
-        self.assertTrue(lesson_ids.isdisjoint({q["id"] for q in quiz}))
-
     def test_clamp_lesson(self):
         self.assertEqual(sci.clamp_lesson(0), 1)
         self.assertEqual(sci.clamp_lesson(36), 36)
