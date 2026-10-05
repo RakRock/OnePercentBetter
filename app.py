@@ -4642,6 +4642,23 @@ def render_science_home():
             st.rerun()
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+    import arjun_science_chapter1 as chapter1
+
+    st.markdown("### School notes · Chapter 1")
+    st.caption("Spectrum Science: Science as Inquiry. Each quiz checks a link from Arjun's packet.")
+    with st.expander("Idea map"):
+        for section in chapter1.SECTIONS:
+            lines = "\n".join(f"- {idea['link']}" for idea in chapter1.ideas_for_section(section["id"]))
+            st.markdown(f"**{section['id']} {section['title']}**\n\n{lines}")
+    if st.button(
+        f"Quiz Chapter 1 · {chapter1.QUIZ_SIZE} questions",
+        key="sci_chapter1_quiz",
+        type="primary",
+    ):
+        start_science_quiz(chapter1.build_quiz(), label="Chapter 1: Science as Inquiry")
+        st.rerun()
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
     st.markdown("### Units")
     counts = s7.question_counts()
     card_cols = st.columns(3, gap="medium")
@@ -4827,7 +4844,12 @@ def render_science_practice():
         unit = s7.unit_for_lesson(q["lesson"]) if lesson else None
         cat_color = unit["color"] if unit else "#06b6d4"
         cat_emoji = unit["emoji"] if unit else "🔬"
-        cat_name = f"Lesson {lesson['id']}" if lesson else "Science"
+        if q.get("topic"):
+            cat_name = q["topic"]
+        elif lesson:
+            cat_name = f"Lesson {lesson['id']}"
+        else:
+            cat_name = "Science"
 
         sci_img_name = q.get("image")
         sci_img_path = os.path.join("science_images", f"{sci_img_name}.png") if sci_img_name else None
