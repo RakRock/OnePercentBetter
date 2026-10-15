@@ -115,7 +115,15 @@ def _start_practice(unit_id: int) -> None:
     st.session_state[_ss_key(unit_id, "start_time")] = time.time()
     st.session_state[_ss_key(unit_id, "session_id")] = f"hm10-u{unit_id}-{time.time()}"
     st.session_state.hm10_unit_id = unit_id
+    st.session_state[_ss_key(unit_id, "practice_kind")] = "pyq"
     st.session_state.current_page = "harshit_class10_practice"
+
+
+def _start_ncert_practice(unit_id: int) -> None:
+    """NCERT exercise practice sits beside the daily paper. Questions are added per chapter."""
+    st.session_state[_ss_key(unit_id, "warn")] = (
+        "NCERT practice for this chapter is not loaded yet."
+    )
 
 
 def _picked_index(q: dict, ans: dict | None) -> int | None:
@@ -426,24 +434,30 @@ def render_practice_home(unit_id: int) -> None:
             st.markdown(f"- {line.strip().lstrip('•').strip()}")
 
     st.markdown("### Practice session")
-    if config.get("include_board_pyq", True):
-        st.caption(
-            f"10 previous-year questions · {h10pyq.pattern_summary(unit_id)}. "
-            "1-mark questions are multiple choice. For 2-, 3-, and 5-mark questions, "
-            "work on paper, then type the final answer."
-        )
-    else:
-        xai_on = bool(config.get("use_chapter_llm", True))
-        api_key = _xai_api_key()
-        if xai_on and api_key:
-            mode = "Grok + bank fallback" if not config.get("grok_fresh_only") else "all fresh Grok"
-            st.caption(f"10 questions · {mode}")
+    col_practice, col_ncert = st.columns(2)
+    with col_practice:
+        if config.get("include_board_pyq", True):
+            st.caption(
+                f"10 previous-year questions · {h10pyq.pattern_summary(unit_id)}. "
+                "1-mark questions are multiple choice. For 2-, 3-, and 5-mark questions, "
+                "work on paper, then type the final answer."
+            )
         else:
-            st.caption(f"10 questions · {stats['total']} bank item(s)")
-
-    if st.button("Start practice", key=f"hm10_start_{unit_id}", use_container_width=True):
-        _start_practice(unit_id)
-        st.rerun()
+            xai_on = bool(config.get("use_chapter_llm", True))
+            api_key = _xai_api_key()
+            if xai_on and api_key:
+                mode = "Grok + bank fallback" if not config.get("grok_fresh_only") else "all fresh Grok"
+                st.caption(f"10 questions · {mode}")
+            else:
+                st.caption(f"10 questions · {stats['total']} bank item(s)")
+        if st.button("Start practice", key=f"hm10_start_{unit_id}", use_container_width=True, type="primary"):
+            _start_practice(unit_id)
+            st.rerun()
+    with col_ncert:
+        st.caption("NCERT exercise questions for this chapter. The same set can be practiced again.")
+        if st.button("NCERT practice", key=f"hm10_ncert_{unit_id}", use_container_width=True):
+            _start_ncert_practice(unit_id)
+            st.rerun()
 
 
 def render_unit_home(unit_id: int) -> None:
