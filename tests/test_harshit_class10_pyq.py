@@ -118,14 +118,17 @@ Polynomials
         answers = [
             {"correct": True, "picked": "4/5", "correct_val": "4/5"},
             {"correct": False, "picked": "5/3", "correct_val": "4/5"},
-            {"correct": True, "skipped_scoring": True, "self_checked": True, "picked": "self-check"},
-            {"correct": True, "skipped_scoring": True, "self_checked": True, "picked": "self-check"},
+            {"picked": "3/4"},
+            {"picked": "not the proof"},
         ]
         report = h10p.build_session_report(questions, answers, student_name="Harshit")
-        self.assertEqual(report["correct_count"], 1)
-        self.assertEqual(report["total"], 2)
+        self.assertEqual(report["correct_count"], 2)
+        self.assertEqual(report["total"], 4)
+        self.assertEqual(report["marks_earned"], 3)
+        self.assertEqual(report["marks_max"], 9)
         self.assertEqual([item["marks"] for item in report["written_review"]], [2, 5])
-        self.assertFalse(report["written_graded"])
+        self.assertTrue(report["written_graded"])
+        self.assertEqual(len(report["worked_solutions"]), 4)
         self.assertFalse(any(row["total"] == 0 for row in report["needs_revision"] + report["strengths"]))
         _, plain, html = format_practice_report_email(
             student_name="Harshit Sai",
@@ -141,38 +144,43 @@ Polynomials
         self.assertIn("tan theta = 3/4", html)
         self.assertNotIn("0/0", html)
 
-    def test_uploaded_paper_scores_written_marks(self):
-        from practice_email.format import format_practice_report_email
+    def test_fill_in_scores_the_final_answer_and_emails_working(self):
+        from practice_email.format import format_harshit_student_review_email, format_practice_report_email
+
+        trig = {
+            "type": "written",
+            "q_num": 2,
+            "category_label": "Board PYQ (2 marks)",
+            "question": "Evaluate sin 60 cos 30 + sin 30 cos 60.",
+            "model_answer": "(√3/2)(√3/2) + (1/2)(1/2) = 3/4 + 1/4 = 1.",
+            "rubric": ["Substitute values", "Answer 1"],
+            "marks": 2,
+        }
+        hcf = {
+            "type": "written",
+            "question": "Find HCF and LCM",
+            "model_answer": "HCF = 4, LCM = 9696",
+            "marks": 2,
+        }
+        self.assertEqual(h10p.expected_fill_in(trig), "1")
+        self.assertTrue(h10p.fill_in_is_correct(trig, "1"))
+        self.assertFalse(h10p.fill_in_is_correct(trig, "0"))
+        self.assertGreaterEqual(len(h10p.board_working_steps(trig)), 2)
+        self.assertTrue(h10p.fill_in_is_correct(hcf, "HCF 4, LCM 9696"))
+        self.assertFalse(h10p.fill_in_is_correct(hcf, "4"))
 
         questions = [
             {"type": "mcq", "q_num": 1, "category_label": "Board PYQ (1 mark)", "question": "sin", "marks": 1},
-            {
-                "type": "written",
-                "q_num": 2,
-                "category_label": "Board PYQ (2 marks)",
-                "question": "Find tan theta",
-                "model_answer": "tan theta = 3/4",
-                "marks": 2,
-            },
+            trig,
         ]
         answers = [
             {"correct": True, "picked": "4/5", "correct_val": "4/5"},
-            {
-                "correct": False,
-                "ai_grade": {
-                    "earned": 1.5,
-                    "max": 2,
-                    "feedback": "Method mark awarded.",
-                    "corrections": "Finish the ratio.",
-                    "steps": [{"text": "Identify sides", "awarded": 1, "max": 1}],
-                },
-            },
+            {"picked": "1"},
         ]
         report = h10p.build_session_report(questions, answers, student_name="Harshit")
-        self.assertTrue(report["written_graded"])
-        self.assertEqual(report["marks_earned"], 2.5)
+        self.assertEqual(report["marks_earned"], 3)
         self.assertEqual(report["marks_max"], 3)
-        self.assertEqual(report["written_review"][0]["earned"], 1.5)
+        self.assertEqual(report["correct_count"], 2)
         _, plain, html = format_practice_report_email(
             student_name="Harshit Sai",
             unit_title="Class X Unit 8",
@@ -182,9 +190,22 @@ Polynomials
             program_name="Harshit Math",
             report_heading="Harshit Math Practice Report",
         )
-        self.assertIn("1.5/2", plain)
-        self.assertIn("Method mark awarded.", html)
-        self.assertIn("2.5/3", html)
+        self.assertIn("BOARD WORKING", plain)
+        self.assertIn("3/4 + 1/4", plain)
+        self.assertIn("Result:", plain)
+        self.assertIn("1", html)
+        self.assertNotIn("uploaded sheet", plain + html)
+        self.assertNotIn("JPEG", plain + html)
+        _, student_plain, student_html = format_harshit_student_review_email(
+            student_name="Harshit Sai",
+            unit_title="Class X Unit 8",
+            unit_subtitle="Week 1",
+            report=report,
+            time_spent_seconds=55,
+        )
+        self.assertIn("BOARD WORKING", student_plain)
+        self.assertIn("3/4 + 1/4", student_html)
+        self.assertNotIn("SELF-CHECK", student_plain)
 
 
 if __name__ == "__main__":

@@ -4,10 +4,12 @@ from __future__ import annotations
 
 import os
 import random
+import re
 
 import harshit_class10_practice_pyq as h10pyq
 import harshit_class10_questions as h10q
 import harshit_class10_topics as h10t
+import harshit_math_answers as hma
 
 DEFAULT_QUESTION_COUNT = h10pyq.SESSION_SIZE
 
@@ -218,57 +220,170 @@ def _number_session_questions(questions: list[dict]) -> list[dict]:
     return questions
 
 
+_GENERIC_STEP = re.compile(
+    r"^(correct method|accurate final result|correct complete solution.*)$",
+    re.IGNORECASE,
+)
+
+
+def _compact(text: str) -> str:
+    return re.sub(r"\s+", " ", str(text or "")).strip()
+
+
+def _norm_answer(text: str) -> str:
+    value = str(text or "").lower().replace("×", "*").replace("−", "-").replace("–", "-")
+    value = value.replace("√", "sqrt")
+    return re.sub(r"[^a-z0-9/+*=.-]", "", value)
+
+
+def _chain_steps(text: str) -> list[str]:
+    """Turn a = b = c into successive board lines that end at the result."""
+    parts = [part.strip(" .;") for part in re.split(r"\s*=\s*", text) if part.strip(" .;")]
+    if len(parts) < 3:
+        return []
+    steps = [f"{parts[0]} = {parts[1]}"]
+    for part in parts[2:]:
+        steps.append(f"= {part}")
+    return steps
+
+
+def board_working_steps(question: dict) -> list[str]:
+    """Board-style steps that arrive at the result."""
+    model = _compact(question.get("model_answer") or "")
+    explanation = _compact(question.get("explanation") or "")
+    rubric = [
+        _compact(step)
+        for step in (question.get("rubric") or [])
+        if _compact(step) and not _GENERIC_STEP.match(_compact(step))
+    ]
+    chunks = [part.strip(" ;") for part in re.split(r"(?<=[.;])\s+", model) if part.strip(" ;")] if model else []
+    chain = _chain_steps(model) if model else []
+    if len(chunks) >= 2:
+        return chunks
+    if rubric and chain:
+        return [*rubric, *chain]
+    if chain:
+        return chain
+    if rubric and model:
+        return [*rubric, model]
+    if chunks:
+        return chunks
+    if explanation:
+        parts = [part.strip() for part in re.split(r"(?<=[.;])\s+", explanation) if part.strip()]
+        return parts or [explanation]
+    if rubric:
+        return rubric
+    return ["Work in steps, then state the final result."]
+
+
+def expected_fill_in(question: dict) -> str:
+    """Short result the student should type after working on paper."""
+    model = _compact(question.get("model_answer") or "")
+    if not model:
+        return _compact(question.get("explanation") or "")
+    hcf = re.search(r"HCF\s*=\s*([0-9]+)", model, re.IGNORECASE)
+    lcm = re.search(r"LCM\s*=\s*([0-9]+)", model, re.IGNORECASE)
+    if hcf and lcm:
+        return f"HCF = {hcf.group(1)}, LCM = {lcm.group(1)}"
+    equals = re.findall(r"=\s*([^=.;]{1,48})", model)
+    if equals:
+        last = equals[-1].strip(" .)")
+        if last:
+            return last
+    sentences = [part.strip() for part in re.split(r"(?<=[.])\s+", model) if part.strip()]
+    if sentences and len(sentences[-1]) <= 90:
+        return sentences[-1].rstrip(".")
+    return model[:160]
+
+
+def _number_in_text(number: str, typed: str) -> bool:
+    number = re.sub(r"\s+", "", number)
+    if hma.answers_equivalent(typed, number):
+        return True
+    if re.fullmatch(r"-?\d+", number):
+        return re.search(rf"(?<!\d){re.escape(number)}(?!\d)", typed.replace(",", "")) is not None
+    return _norm_answer(number) in _norm_answer(typed)
+
+
+def fill_in_is_correct(question: dict, typed: str) -> bool:
+    typed_text = _compact(typed)
+    if not typed_text:
+        return False
+    expected = expected_fill_in(question)
+    if expected and hma.answers_equivalent(typed_text, expected):
+        return True
+    numbers = re.findall(r"-?\d+\s*/\s*\d+|-?\d+(?:\.\d+)?", expected)
+    if len(numbers) >= 2:
+        return all(_number_in_text(number, typed_text) for number in numbers)
+    if len(numbers) == 1 and hma.answers_equivalent(typed_text, numbers[0].replace(" ", "")):
+        return True
+    expected_norm = _norm_answer(expected)
+    typed_norm = _norm_answer(typed_text)
+    if len(typed_norm) >= 8 and expected_norm and (typed_norm in expected_norm or expected_norm in typed_norm):
+        return True
+    return False
+
+
 def build_session_report(questions: list[dict], answers: list[dict], *, student_name: str = "Student") -> dict:
-    """Score 1-mark picks, and CBSE step marks on written questions when a paper photo was graded."""
+    """Score every final answer. Written marks are full or zero from the typed result."""
     by_cat: dict[str, dict] = {}
     written_review: list[dict] = []
+    worked_solutions: list[dict] = []
     scored_correct = 0
-    scored_total = 0
-    objective_earned = 0.0
-    objective_max = 0.0
-    written_earned = 0.0
-    written_max = 0.0
-    written_graded = False
+    marks_earned = 0.0
+    marks_max = 0.0
     for idx, q in enumerate(questions):
         ans = answers[idx] if idx < len(answers) else {}
-        if q.get("type") == "written":
-            marks = float(q.get("marks") or 0)
-            grade = ans.get("ai_grade") if isinstance(ans.get("ai_grade"), dict) else {}
-            earned = None
-            if "earned" in grade:
-                try:
-                    earned = float(grade.get("earned", 0))
-                except (TypeError, ValueError):
-                    earned = 0.0
-                written_graded = True
-                written_earned += earned
-                written_max += marks
-            written_review.append(
-                {
-                    "number": int(q.get("q_num") or idx + 1),
-                    "topic": q.get("category_label", ""),
-                    "marks": marks,
-                    "earned": earned,
-                    "question": str(q.get("question", "")).strip(),
-                    "model_answer": str(q.get("model_answer", "")).strip(),
-                    "explanation": str(q.get("explanation", "")).strip(),
-                    "feedback": str(grade.get("feedback") or "").strip(),
-                    "corrections": str(grade.get("corrections") or "").strip(),
-                    "steps": list(grade.get("steps") or []),
-                    "attempted": bool(ans.get("self_checked") or ans.get("skipped_scoring") or earned is not None),
-                }
-            )
-            continue
+        marks = float(q.get("marks") or 1)
+        marks_max += marks
+        is_written = q.get("type") == "written"
+        picked = _compact(ans.get("picked") or "")
+        if is_written:
+            expected = expected_fill_in(q)
+            is_correct = fill_in_is_correct(q, picked) if picked else False
+            your_answer = picked or "Not answered"
+        else:
+            expected = _compact(ans.get("correct_val") or "")
+            is_correct = bool(ans.get("correct"))
+            your_answer = picked or "Not answered"
+        earned = marks if is_correct else 0.0
+        marks_earned += earned
+        if is_correct:
+            scored_correct += 1
         label = q.get("category_label", q.get("category", ""))
         bucket = by_cat.setdefault(label, {"name": label, "correct": 0, "total": 0})
         bucket["total"] += 1
-        scored_total += 1
-        mark_value = float(q.get("marks") or 1)
-        objective_max += mark_value
-        if ans.get("correct"):
+        if is_correct:
             bucket["correct"] += 1
-            scored_correct += 1
-            objective_earned += mark_value
+        steps = board_working_steps(q)
+        worked_solutions.append(
+            {
+                "number": int(q.get("q_num") or idx + 1),
+                "topic": label,
+                "marks": marks,
+                "question": _compact(q.get("question") or q.get("assertion") or ""),
+                "your_answer": your_answer,
+                "correct_answer": expected,
+                "correct": is_correct,
+                "steps": steps,
+            }
+        )
+        if is_written:
+            written_review.append(
+                {
+                    "number": int(q.get("q_num") or idx + 1),
+                    "topic": label,
+                    "marks": marks,
+                    "earned": earned,
+                    "question": _compact(q.get("question") or ""),
+                    "model_answer": _compact(q.get("model_answer") or ""),
+                    "explanation": _compact(q.get("explanation") or ""),
+                    "your_answer": your_answer,
+                    "correct_answer": expected,
+                    "steps": steps,
+                    "attempted": bool(picked),
+                }
+            )
 
     strengths = []
     needs = []
@@ -282,42 +397,26 @@ def build_session_report(questions: list[dict], answers: list[dict], *, student_
         else:
             needs.append(row)
 
-    score_pct = round(100 * scored_correct / scored_total) if scored_total else 0
-    marks_earned = objective_earned
-    marks_max = objective_max
-    if written_graded:
-        marks_earned += written_earned
-        marks_max += written_max
-        score_pct = round(100 * marks_earned / marks_max) if marks_max else 0
+    total = len(questions)
+    score_pct = round(100 * marks_earned / marks_max) if marks_max else 0
     first = student_name.split()[0] if student_name.strip() else "Student"
-    if written_graded:
-        narrative = (
-            f"{first} completed {len(questions)} questions and scored "
-            f"{marks_earned:g}/{marks_max:g} marks ({score_pct}%) on the CBSE paper. "
-            f"The written questions were marked from the uploaded sheet."
-        )
-    elif written_review:
-        narrative = (
-            f"{first} completed {len(questions)} questions and scored "
-            f"{scored_correct}/{scored_total} ({score_pct}%) on the marked questions. "
-            f"{len(written_review)} written question(s) are listed below."
-        )
-    else:
-        narrative = (
-            f"{first} completed {len(questions)} questions and scored "
-            f"{scored_correct}/{scored_total} ({score_pct}%)."
-        )
-
+    narrative = (
+        f"{first} completed {total} questions and scored "
+        f"{marks_earned:g}/{marks_max:g} marks ({score_pct}%). "
+        f"{scored_correct} of {total} final answers were correct. "
+        "The board working for every question is below."
+    )
     return {
         "student": student_name,
-        "total": scored_total,
+        "total": total,
         "correct_count": scored_correct,
         "score_pct": score_pct,
         "marks_earned": marks_earned,
         "marks_max": marks_max,
-        "written_graded": written_graded,
-        "questions_completed": len(questions),
+        "written_graded": any(q.get("type") == "written" for q in questions),
+        "questions_completed": total,
         "written_review": written_review,
+        "worked_solutions": worked_solutions,
         "summary_narrative": narrative,
         "strengths": strengths,
         "needs_revision": needs,
@@ -334,7 +433,13 @@ def session_meta_from_config(unit_id: int, config: dict) -> dict:
 
 
 def format_report_details(report: dict) -> str:
-    lines = [f"Score: {report['correct_count']}/{report['total']} ({report['score_pct']}%)\n"]
+    if report.get("marks_max"):
+        lines = [
+            f"Score: {float(report['marks_earned']):g}/{float(report['marks_max']):g} marks "
+            f"({report['score_pct']}%)\n"
+        ]
+    else:
+        lines = [f"Score: {report['correct_count']}/{report['total']} ({report['score_pct']}%)\n"]
     if report.get("strengths"):
         lines.append("Doing well:")
         for s in report["strengths"]:
@@ -343,17 +448,12 @@ def format_report_details(report: dict) -> str:
         lines.append("Needs revision:")
         for s in report["needs_revision"]:
             lines.append(f"  • {s['name']} — {s['correct']}/{s['total']}")
-    written = report.get("written_review") or []
-    if written:
-        lines.append("Written paper:")
-        for item in written:
-            earned = item.get("earned")
-            mark = f"{earned:g}/{float(item.get('marks') or 0):g}" if earned is not None else "not marked"
-            lines.append(f"  • Q{item['number']} — {item.get('topic') or 'Written'} — {mark}")
-            if item.get("feedback"):
-                lines.append(f"    {item['feedback']}")
-            if item.get("question"):
-                lines.append(f"    {item['question']}")
-            if item.get("model_answer"):
-                lines.append(f"    Model answer: {item['model_answer']}")
+    for item in report.get("worked_solutions") or []:
+        mark = "correct" if item.get("correct") else "incorrect"
+        lines.append(
+            f"Q{item['number']} ({item.get('marks', '')} marks) — {mark}. "
+            f"Your answer: {item.get('your_answer', '')}. Result: {item.get('correct_answer', '')}"
+        )
+        for step_i, step in enumerate(item.get("steps") or [], start=1):
+            lines.append(f"  {step_i}. {step}")
     return "\n".join(lines)

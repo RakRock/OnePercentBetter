@@ -79,18 +79,76 @@ def _failed_from_report(report: dict, questions: list[dict] | None, answers: lis
 
 
 def _marked_score_line(report: dict) -> str:
+    if report.get("marks_max"):
+        return (
+            f"{float(report.get('marks_earned', 0)):g}/{float(report.get('marks_max', 0)):g} marks "
+            f"({report['score_pct']}%) · {report.get('correct_count', 0):g}/{report.get('total', 0):g} answers"
+        )
     cc = report.get("correct_count", 0)
     tot = report.get("total", 0)
-    line = f"{cc:g}/{tot:g} ({report['score_pct']}%)"
-    if report.get("written_graded"):
-        return (
-            f"{float(report.get('marks_earned', 0)):g}/{float(report.get('marks_max', 0)):g} "
-            f"marks ({report['score_pct']}%)"
+    return f"{cc:g}/{tot:g} ({report['score_pct']}%)"
+
+
+def _plain_worked(items: list[dict]) -> list[str]:
+    if not items:
+        return []
+    lines = ["BOARD WORKING", "--------------"]
+    for item in items:
+        status = "Correct" if item.get("correct") else "Incorrect"
+        topic = f" ({item['topic']})" if item.get("topic") else ""
+        lines.append(
+            f"Q{item['number']}{topic} · {float(item.get('marks') or 0):g} marks — {status}"
         )
-    written = report.get("written_review") or []
-    if written:
-        line = f"{cc:g}/{tot:g} marked ({report['score_pct']}%) · {len(written)} written on paper"
-    return line
+        lines.append(f"  Question: {_format_math_for_email_plain(item.get('question', ''))}")
+        lines.append(f"  Your answer: {_format_math_for_email_plain(item.get('your_answer', ''))}")
+        lines.append(f"  Result: {_format_math_for_email_plain(item.get('correct_answer', ''))}")
+        lines.append("  Working:")
+        for step_i, step in enumerate(item.get("steps") or [], start=1):
+            lines.append(f"    {step_i}. {_format_math_for_email_plain(step)}")
+        lines.append("")
+    return lines
+
+
+def _html_worked(items: list[dict]) -> str:
+    if not items:
+        return ""
+    blocks = []
+    for item in items:
+        ok = bool(item.get("correct"))
+        border = "#10b981" if ok else "#ef4444"
+        bg = "#ecfdf5" if ok else "#fef2f2"
+        status = "Correct" if ok else "Review this working"
+        topic = (
+            f'<span style="color:#6b7280;font-size:0.85rem;"> — {html_lib.escape(item.get("topic") or "")}</span>'
+            if item.get("topic")
+            else ""
+        )
+        steps = "".join(
+            f"<li style=\"margin:0.2rem 0;\">{_format_math_for_email_html(step)}</li>"
+            for step in (item.get("steps") or [])
+        )
+        blocks.append(
+            f"""
+            <div style="background:{bg};border-left:4px solid {border};padding:0.75rem 0.9rem;
+                 border-radius:8px;margin-bottom:0.75rem;">
+              <p style="margin:0;font-weight:700;color:#1f2937;">
+                Q{item["number"]}{topic}
+                <span style="font-weight:500;"> · {float(item.get("marks") or 0):g} marks — {status}</span>
+              </p>
+              <p style="margin:0.35rem 0 0 0;color:#1f2937;">{_format_math_for_email_html(item.get("question", ""))}</p>
+              <p style="margin:0.35rem 0 0 0;"><strong>Your answer:</strong> {_format_math_for_email_html(item.get("your_answer", ""))}</p>
+              <p style="margin:0.15rem 0 0 0;color:#047857;"><strong>Result:</strong> {_format_math_for_email_html(item.get("correct_answer", ""))}</p>
+              <p style="margin:0.45rem 0 0.15rem 0;font-weight:700;">Working</p>
+              <ol style="margin:0 0 0 1.1rem;padding:0;color:#1f2937;">{steps}</ol>
+            </div>
+            """
+        )
+    return (
+        '<h3 style="color:#1d4ed8;margin:1.25rem 0 0.3rem 0;">📝 Board working</h3>'
+        '<p style="margin:0 0 0.5rem 0;color:#4b5563;font-size:0.9rem;">'
+        "Each question is worked in steps, the way a board solution reaches the result.</p>"
+        + "".join(blocks)
+    )
 
 
 def _html_written(items: list[dict]) -> str:
@@ -265,7 +323,7 @@ def format_practice_report_email(
         plain_parts.extend(_category_lines(strengths))
         plain_parts.append("")
 
-    if missed:
+    if missed and not report.get("worked_solutions"):
         plain_parts.append("DETAILED QUESTION REVIEW")
         plain_parts.append("-----------------------")
         for item in missed:
@@ -277,8 +335,10 @@ def format_practice_report_email(
                 plain_parts.append(f"  Why: {_format_math_for_email_plain(item['explanation'])}")
             plain_parts.append("")
 
+    plain_parts.extend(_plain_worked(report.get("worked_solutions") or []))
+
     written = report.get("written_review") or []
-    if written:
+    if written and not report.get("worked_solutions"):
         plain_parts.append("WRITTEN QUESTIONS (SELF-CHECK)")
         plain_parts.append("------------------------------")
         for item in written:
@@ -422,8 +482,8 @@ def format_practice_report_email(
       {_html_patterns(patterns)}
       {_html_coaching(coaching)}
       {rec_html}
-      {_html_failed(missed)}
-      {_html_written(report.get("written_review") or [])}
+      {_html_failed(missed) if not report.get("worked_solutions") else ""}
+      {_html_worked(report.get("worked_solutions") or [])}
       <p style="color:#9ca3af;font-size:0.85rem;margin-top:1.5rem;">OnePercent {html_lib.escape(program_name)}</p>
     </div>
     """
@@ -648,24 +708,27 @@ def format_harshit_student_review_email(
         plain_parts.append("Great session — no missed questions this time. Keep it up!")
 
     plain_parts.append("")
-    written = report.get("written_review") or []
-    if written:
-        plain_parts.append("WRITTEN QUESTIONS (SELF-CHECK)")
-        plain_parts.append("------------------------------")
-        for item in written:
-            topic = f" ({item['topic']})" if item.get("topic") else ""
-            plain_parts.append(
-                f"Q{item['number']}{topic}: {_format_math_for_email_plain(item.get('question', ''))}"
-            )
-            if item.get("earned") is not None:
+    if report.get("worked_solutions"):
+        plain_parts.extend(_plain_worked(report["worked_solutions"]))
+    else:
+        written = report.get("written_review") or []
+        if written:
+            plain_parts.append("WRITTEN QUESTIONS (SELF-CHECK)")
+            plain_parts.append("------------------------------")
+            for item in written:
+                topic = f" ({item['topic']})" if item.get("topic") else ""
                 plain_parts.append(
-                    f"  Score: {float(item['earned']):g}/{float(item.get('marks') or 0):g}"
+                    f"Q{item['number']}{topic}: {_format_math_for_email_plain(item.get('question', ''))}"
                 )
-            if item.get("feedback"):
-                plain_parts.append(f"  Examiner: {_format_math_for_email_plain(item['feedback'])}")
-            if item.get("model_answer"):
-                plain_parts.append(f"  Model answer: {_format_math_for_email_plain(item['model_answer'])}")
-            plain_parts.append("")
+                if item.get("earned") is not None:
+                    plain_parts.append(
+                        f"  Score: {float(item['earned']):g}/{float(item.get('marks') or 0):g}"
+                    )
+                if item.get("feedback"):
+                    plain_parts.append(f"  Examiner: {_format_math_for_email_plain(item['feedback'])}")
+                if item.get("model_answer"):
+                    plain_parts.append(f"  Model answer: {_format_math_for_email_plain(item['model_answer'])}")
+                plain_parts.append("")
 
     plain_parts.append("— OnePercent Harshit Math")
     plain = "\n".join(plain_parts)
@@ -723,7 +786,7 @@ def format_harshit_student_review_email(
         <tr><td style="padding:4px 12px 4px 0;color:#6b7280;">Time</td><td>{minutes}m {seconds}s</td></tr>
       </table>
       {review_section}
-      {_html_written(report.get("written_review") or [])}
+      {_html_worked(report.get("worked_solutions") or [])}
       <p style="color:#9ca3af;font-size:0.85rem;margin-top:1.5rem;">OnePercent Harshit Math</p>
     </div>
     """
