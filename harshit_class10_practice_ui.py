@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import os
 import time
+from pathlib import Path
 
 import streamlit as st
 
@@ -18,6 +19,19 @@ import harshit_class10_units as h10u
 import harshit_math_answers as hma
 import harshit_math_components as hmc_ui
 import harshit_math_render as hmr
+
+
+def _render_question_figure(q: dict) -> None:
+    rel = str(q.get("figure") or "").strip()
+    if not rel:
+        return
+    path = Path(rel)
+    if not path.is_absolute():
+        path = Path(__file__).resolve().parent / rel
+    if path.is_file():
+        _, col, _ = st.columns([1, 2, 1])
+        with col:
+            st.image(str(path), use_container_width=True)
 
 
 def _xai_api_key() -> str | None:
@@ -201,6 +215,7 @@ def _render_review(unit_id: int, questions: list[dict], answers: list[dict]) -> 
             st.markdown(f"{step_i}. {hmr.format_math_display(step)}", unsafe_allow_html=True)
     else:
         hmr.render_question(q["question"])
+    _render_question_figure(q)
     if q.get("type") not in ("written",) and q.get("options"):
         _render_review_choices(q, ans)
 
@@ -567,6 +582,7 @@ def render_practice() -> None:
             )
         else:
             hmr.render_question(q["question"])
+        _render_question_figure(q)
 
         fb = st.session_state.get(_ss_key(unit_id, "feedback"))
         if fb and fb.get("q_index") == current:

@@ -46,7 +46,7 @@ def pattern_summary(unit_id: int) -> str:
 
 
 def _wrap_mcq(raw: dict) -> dict:
-    return {
+    wrapped = {
         "id": raw["id"],
         "type": "mcq",
         "question": raw["question"],
@@ -62,6 +62,9 @@ def _wrap_mcq(raw: dict) -> dict:
         "marks": 1,
         "needs_answer_key": bool((raw.get("pyq_meta") or {}).get("needs_answer_key")),
     }
+    if raw.get("figure"):
+        wrapped["figure"] = raw["figure"]
+    return wrapped
 
 
 def _wrap_ar(raw: dict) -> dict:
@@ -84,6 +87,8 @@ def _wrap_written(raw: dict, bucket: str) -> dict:
     wrapped["topic"] = 0
     wrapped["source"] = "board_pyq"
     wrapped["self_check"] = True
+    if raw.get("figure"):
+        wrapped["figure"] = raw["figure"]
     return wrapped
 
 

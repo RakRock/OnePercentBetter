@@ -208,5 +208,34 @@ Polynomials
         self.assertNotIn("SELF-CHECK", student_plain)
 
 
+    def test_circle_tangent_question_keeps_the_figure_and_angles(self):
+        import json
+        from pathlib import Path
+
+        seed_path = Path("HarshitMath/class10/board_paper_seeds/unit_10.json")
+        data = json.loads(seed_path.read_text(encoding="utf-8"))
+        question = next(item for item in data["mcq"] if item["id"] == "pyq_u10_mcq_def9d298ec")
+        self.assertIn("∠ACP = 118°", question["question"])
+        self.assertEqual(question["options"], ["28°", "32°", "42°", "38°"])
+        self.assertEqual(question["answer"], 0)
+        figure = Path(question["figure"])
+        self.assertTrue(figure.is_file())
+        wrapped = h10pyq._wrap_mcq(question)
+        self.assertEqual(wrapped["figure"], question["figure"])
+        self.assertNotIn("118c", question["question"])
+
+
+    def test_parallel_tangent_proof_is_one_statement(self):
+        import json
+        from pathlib import Path
+
+        data = json.loads(Path("HarshitMath/class10/board_paper_seeds/unit_10.json").read_text(encoding="utf-8"))
+        question = next(item for item in data["vsa"] if item["id"] == "pyq_u10_w_30a2254898")
+        self.assertIn("PQ is a diameter", question["question"])
+        self.assertNotIn("2011", question["question"])
+        self.assertTrue(Path(question["figure"]).is_file())
+        self.assertTrue(h10p.fill_in_is_correct(question, "PQ is a diameter"))
+
+
 if __name__ == "__main__":
     unittest.main()
