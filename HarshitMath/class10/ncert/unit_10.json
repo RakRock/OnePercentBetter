@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "unit_id": 10,
+    "chapter": "Circles",
+    "source": "NCERT Class 10 Circles exercises, restated for practice"
+  },
+  "questions": [
+    {
+      "id": "ncert_u10_tangents_infinite",
+      "marks": 1,
+      "type": "mcq",
+      "question": "How many tangents can a circle have?",
+      "options": ["1", "2", "4", "Infinitely many"],
+      "answer": 3,
+      "explanation": "There is one tangent at every point of the circle, so a circle has infinitely many tangents."
+    },
+    {
+      "id": "ncert_u10_tangent_one_point",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A tangent to a circle intersects the circle in how many points?",
+      "options": ["Exactly one point", "Exactly two points", "Exactly four points", "Infinitely many points"],
+      "answer": 0,
+      "explanation": "A tangent touches the circle at exactly one point."
+    },
+    {
+      "id": "ncert_u10_point_of_contact",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The common point of a tangent and the circle is called the",
+      "options": ["centre", "chord", "point of contact", "secant"],
+      "answer": 2,
+      "explanation": "The single shared point of a tangent and the circle is the point of contact."
+    },
+    {
+      "id": "ncert_u10_tangent_sqrt119",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O at a point Q so that OQ = 12 cm. The length of PQ is",
+      "options": ["12 cm", "13 cm", "8.5 cm", "√119 cm"],
+      "answer": 3,
+      "explanation": "OP is perpendicular to the tangent, so PQ² = 12² − 5² = 144 − 25 = 119, and PQ = √119 cm."
+    },
+    {
+      "id": "ncert_u10_radius_7",
+      "marks": 1,
+      "type": "mcq",
+      "question": "From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q from the centre is 25 cm. The radius of the circle is",
+      "options": ["7 cm", "12 cm", "15 cm", "24.5 cm"],
+      "answer": 0,
+      "explanation": "The radius is perpendicular to the tangent, so r² = 25² − 24² = 625 − 576 = 49, and r = 7 cm."
+    },
+    {
+      "id": "ncert_u10_angle_ptq_70",
+      "marks": 1,
+      "type": "mcq",
+      "question": "TP and TQ are the two tangents to a circle with centre O so that ∠POQ = 110°. Then ∠PTQ is equal to",
+      "options": ["60°", "70°", "80°", "90°"],
+      "answer": 1,
+      "explanation": "OP and OQ are each perpendicular to a tangent, so the angles at P and Q in quadrilateral OPTQ are 90° each. ∠PTQ = 360° − 90° − 90° − 110° = 70°."
+    },
+    {
+      "id": "ncert_u10_angle_poa_50",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If tangents PA and PB from a point P to a circle with centre O are inclined to each other at an angle of 80°, then ∠POA is equal to",
+      "options": ["50°", "60°", "70°", "80°"],
+      "answer": 0,
+      "explanation": "OA is perpendicular to PA. The two tangents are equal, so OP bisects the 80° angle into two angles of 40°. In triangle OAP, ∠POA = 180° − 90° − 40° = 50°."
+    },
+    {
+      "id": "ncert_u10_radius_3",
+      "marks": 2,
+      "type": "written",
+      "question": "The length of the tangent from a point A at a distance 5 cm from the centre of the circle is 4 cm. Find the radius of the circle.",
+      "model_answer": "The radius to the point of contact is perpendicular to the tangent, so the radius, the tangent and the line from the centre form a right triangle. The square of the distance from the centre equals the square of the radius plus the square of the tangent. 25 equals the square of the radius plus 16. The square of the radius is 9. The radius is 3 cm.",
+      "explanation": "The radius is 3 cm."
+    },
+    {
+      "id": "ncert_u10_chord_8",
+      "marks": 2,
+      "type": "written",
+      "question": "Two concentric circles are of radii 5 cm and 3 cm. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "model_answer": "Let the chord of the larger circle touch the smaller circle at M, and let O be the common centre. The radius to the point of contact is perpendicular to the tangent, so OM is perpendicular to the chord and bisects it. In the right triangle from O to an end of the chord, the hypotenuse is 5 cm and one side is 3 cm. The half-chord is 4 cm. The chord is 8 cm.",
+      "explanation": "The chord is 8 cm."
+    },
+    {
+      "id": "ncert_u10_radius_5",
+      "marks": 2,
+      "type": "written",
+      "question": "A point is 13 cm from the centre of a circle, and the length of the tangent from that point is 12 cm. Find the radius of the circle.",
+      "model_answer": "The radius to the point of contact is perpendicular to the tangent. The square of the distance from the centre equals the square of the radius plus the square of the tangent. 169 equals the square of the radius plus 144. The square of the radius is 25. The radius is 5 cm.",
+      "explanation": "The radius is 5 cm."
+    },
+    {
+      "id": "ncert_u10_diameter_tangents_parallel",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that the tangents drawn at the ends of a diameter of a circle are parallel.",
+      "model_answer": "Let AB be a diameter, and let the tangents at A and at B be drawn. The radius is perpendicular to the tangent at the point of contact, so the tangent at A is perpendicular to OA. The tangent at B is perpendicular to OB. OA and OB lie on the same straight line, the diameter AB. Both tangents are perpendicular to the same line. The tangents are parallel.",
+      "explanation": "The tangents are parallel."
+    },
+    {
+      "id": "ncert_u10_perpendicular_through_centre",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that the perpendicular to a tangent at the point of contact passes through the centre of the circle.",
+      "model_answer": "Let the tangent touch the circle at P, and let O be the centre. The radius OP is perpendicular to the tangent at P. Only one line through P is perpendicular to that tangent. That line is OP. The perpendicular passes through the centre.",
+      "explanation": "The perpendicular passes through the centre."
+    },
+    {
+      "id": "ncert_u10_tangential_quad",
+      "marks": 3,
+      "type": "written",
+      "question": "A quadrilateral ABCD is drawn to circumscribe a circle. Prove that AB + CD = AD + BC.",
+      "model_answer": "Let the circle touch sides AB, BC, CD and DA at P, Q, R and S. Tangents drawn from the same external point are equal, so AP equals AS, BP equals BQ, CQ equals CR, and DR equals DS. Adding the tangent lengths along AB and CD gives the same total as the tangent lengths along AD and BC. AB + CD = AD + BC.",
+      "explanation": "AB + CD = AD + BC."
+    },
+    {
+      "id": "ncert_u10_tangent_angles_supplementary",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line segment joining the points of contact at the centre.",
+      "model_answer": "Let the tangents from an external point P touch the circle at A and B, and let O be the centre. The radius is perpendicular to the tangent at the point of contact, so angle OAP and angle OBP are right angles. The sum of the angles of quadrilateral OAPB is a full turn. The remaining two angles, angle AOB and angle APB, add to a straight angle. The angles are supplementary.",
+      "explanation": "The angles are supplementary."
+    },
+    {
+      "id": "ncert_u10_parallel_third_tangent",
+      "marks": 5,
+      "type": "written",
+      "figure": "HarshitMath/class10/figures/circle_xy_parallel_tangent.svg",
+      "question": "In the figure, XY and X′Y′ are two parallel tangents to a circle with centre O, touching the circle at P and Q. Another tangent AB, with point of contact C, meets XY at A and X′Y′ at B. Prove that ∠AOB = 90°.",
+      "model_answer": "The radius is perpendicular to the tangent at the point of contact, so OP and OQ are both perpendicular to the parallel tangents. P, O and Q lie on one straight line, and PQ is a diameter. Join OC. From A, the two tangents touch at P and C, so triangles OAP and OAC are congruent and angle AOP equals angle AOC. From B, the two tangents touch at Q and C, so angle BOQ equals angle BOC. Angles AOP, AOB and BOQ lie along the straight line PQ, so their sum is a straight angle. That sum is twice angle AOB. Angle AOB is 90°.",
+      "explanation": "Angle AOB is 90°."
+    },
+    {
+      "id": "ncert_u10_triangle_sides",
+      "marks": 5,
+      "type": "written",
+      "question": "A triangle ABC is drawn to circumscribe a circle of radius 4 cm such that the segments BD and DC, into which BC is divided by the point of contact D, are of lengths 8 cm and 6 cm respectively. Find the sides AB and AC.",
+      "model_answer": "The tangents from a vertex to the points of contact are equal. Let the tangent length from A be x cm. Then AB is x plus 8 cm and AC is x plus 6 cm, and BC is 14 cm. The semi-perimeter is x plus 14 cm. The area of the triangle is the inradius times the semi-perimeter, which is 4 times (x plus 14). The same area is the square root of (x plus 14) times x times 8 times 6. Equating the two expressions for the area gives x equal to 7. AB is 15 cm and AC is 13 cm.",
+      "explanation": "AB is 15 cm and AC is 13 cm."
+    },
+    {
+      "id": "ncert_u10_opposite_sides_centre",
+      "marks": 5,
+      "type": "written",
+      "question": "Prove that the opposite sides of a quadrilateral circumscribing a circle subtend supplementary angles at the centre of the circle.",
+      "model_answer": "Let ABCD circumscribe a circle with centre O, touching AB, BC, CD and DA at P, Q, R and S. Join OA, OB, OC, OD and the radii to the points of contact. Tangents from one point are equal and the radii are equal, so the pair of triangles on the two tangents from each vertex are congruent. Therefore angle AOP equals angle AOS, angle BOP equals angle BOQ, angle COQ equals angle COR, and angle DOR equals angle DOS. These eight angles around O add to a full turn. Angle AOB plus angle COD uses exactly one angle from each equal pair, so that sum is half of a full turn. Opposite sides subtend supplementary angles at the centre.",
+      "explanation": "Opposite sides subtend supplementary angles at the centre."
+    }
+  ]
+}

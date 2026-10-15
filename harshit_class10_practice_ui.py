@@ -11,6 +11,7 @@ import streamlit as st
 import database as db
 import edgenuity_practice_email as ec3mail
 import google_sheets_sync as gss
+import harshit_class10_ncert as h10ncert
 import harshit_class10_practice as h10p
 import harshit_class10_practice_pyq as h10pyq
 import harshit_class10_questions as h10q
@@ -120,10 +121,27 @@ def _start_practice(unit_id: int) -> None:
 
 
 def _start_ncert_practice(unit_id: int) -> None:
-    """NCERT exercise practice sits beside the daily paper. Questions are added per chapter."""
-    st.session_state[_ss_key(unit_id, "warn")] = (
-        "NCERT practice for this chapter is not loaded yet."
-    )
+    """Same answer flow as the daily paper, using this chapter's NCERT set."""
+    questions = h10ncert.build_session(unit_id)
+    if not questions:
+        st.session_state[_ss_key(unit_id, "warn")] = (
+            "NCERT practice for this chapter is not loaded yet."
+        )
+        return
+
+    st.session_state.pop(_ss_key(unit_id, "error"), None)
+    st.session_state[_ss_key(unit_id, "questions")] = questions
+    st.session_state[_ss_key(unit_id, "config_snapshot")] = db.get_harshit_class10_week_config(unit_id)
+    st.session_state[_ss_key(unit_id, "current")] = 0
+    st.session_state[_ss_key(unit_id, "answers")] = []
+    st.session_state[_ss_key(unit_id, "feedback")] = None
+    st.session_state[_ss_key(unit_id, "review_mode")] = False
+    st.session_state[_ss_key(unit_id, "review_index")] = 0
+    st.session_state[_ss_key(unit_id, "start_time")] = time.time()
+    st.session_state[_ss_key(unit_id, "session_id")] = f"hm10-ncert-u{unit_id}-{time.time()}"
+    st.session_state.hm10_unit_id = unit_id
+    st.session_state[_ss_key(unit_id, "practice_kind")] = "ncert"
+    st.session_state.current_page = "harshit_class10_practice"
 
 
 def _picked_index(q: dict, ans: dict | None) -> int | None:
@@ -454,10 +472,39 @@ def render_practice_home(unit_id: int) -> None:
             _start_practice(unit_id)
             st.rerun()
     with col_ncert:
-        st.caption("NCERT exercise questions for this chapter. The same set can be practiced again.")
+        summary = h10ncert.pattern_summary(unit_id)
+        if summary:
+            st.caption(
+                f"NCERT exercises · {summary}. "
+                "1-mark questions are multiple choice. For 2-, 3-, and 5-mark questions, "
+                "work on paper, then type the final answer. The same set can be practiced again."
+            )
+        else:
+            st.caption("NCERT exercise questions for this chapter. The same set can be practiced again.")
         if st.button("NCERT practice", key=f"hm10_ncert_{unit_id}", use_container_width=True):
             _start_ncert_practice(unit_id)
             st.rerun()
+
+
+def render_ncert_home(unit_id: int) -> None:
+    warn = st.session_state.pop(_ss_key(unit_id, "warn"), None)
+    if warn:
+        st.info(warn)
+
+    if not h10ncert.ncert_available(unit_id):
+        st.info("NCERT practice for this chapter is not loaded yet.")
+        return
+
+    summary = h10ncert.pattern_summary(unit_id)
+    st.markdown("### NCERT practice")
+    st.caption(
+        f"{summary}. "
+        "1-mark questions are multiple choice. For 2-, 3-, and 5-mark questions, "
+        "work on paper, then type the final answer. Starting again repeats this set."
+    )
+    if st.button("Start NCERT practice", key=f"hm10_ncert_tab_{unit_id}", type="primary"):
+        _start_ncert_practice(unit_id)
+        st.rerun()
 
 
 def render_unit_home(unit_id: int) -> None:
@@ -483,7 +530,7 @@ def render_unit_home(unit_id: int) -> None:
 
     section_key = f"hm10_unit_section_{unit_id}"
     has_guide = h10un.unit_guide_available(unit_id)
-    section_options = ["🎯 Practice", "📝 Unit Test", "📅 Week Setup"]
+    section_options = ["🎯 Practice", "📗 NCERT Practice", "📝 Unit Test", "📅 Week Setup"]
     if has_guide:
         section_options = ["📘 Notes"] + section_options
 
@@ -513,6 +560,8 @@ def render_unit_home(unit_id: int) -> None:
         h10ung_ui.render_unit_guide(unit_id)
     elif section == "🎯 Practice":
         render_practice_home(unit_id)
+    elif section == "📗 NCERT Practice":
+        render_ncert_home(unit_id)
     elif section == "📝 Unit Test":
         h10ut_ui.render_unit_test_home(unit_id)
     else:
@@ -573,6 +622,7 @@ def render_practice() -> None:
             "chapter_llm": "Generated from chapter PDF",
             "template": "Practice question",
             "board_pyq": "CBSE previous year",
+            "ncert": "NCERT exercise",
         }.get(src, src)
         st.markdown(
             f'<p style="color:#6b7280;font-size:0.88rem;text-align:center;">'

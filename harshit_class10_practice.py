@@ -315,8 +315,13 @@ def fill_in_is_correct(question: dict, typed: str) -> bool:
     numbers = re.findall(r"-?\d+\s*/\s*\d+|-?\d+(?:\.\d+)?", expected)
     if len(numbers) >= 2:
         return all(_number_in_text(number, typed_text) for number in numbers)
-    if len(numbers) == 1 and hma.answers_equivalent(typed_text, numbers[0].replace(" ", "")):
-        return True
+    if len(numbers) == 1:
+        target = numbers[0].replace(" ", "")
+        if hma.answers_equivalent(typed_text, target):
+            return True
+        typed_numbers = re.findall(r"-?\d+\s*/\s*\d+|-?\d+(?:\.\d+)?", typed_text)
+        if len(typed_numbers) == 1 and hma.answers_equivalent(typed_numbers[0].replace(" ", ""), target):
+            return True
     expected_norm = _norm_answer(expected)
     typed_norm = _norm_answer(typed_text)
     if len(typed_norm) >= 8 and expected_norm and (typed_norm in expected_norm or expected_norm in typed_norm):
