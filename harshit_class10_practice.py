@@ -168,7 +168,8 @@ def build_session_set(
             for q in extra:
                 q.setdefault("marks", 1)
             questions.extend(extra)
-        return questions[:count], ""
+        questions = _number_session_questions(questions[:count])
+        return questions, ""
 
     if prefer_llm and api_key:
         import harshit_class10_llm as h10llm
@@ -207,27 +208,54 @@ def build_session_set(
     )
 
     random.shuffle(questions)
-    return questions[:count], grok_error if prefer_llm and api_key and not questions else ""
+    questions = _number_session_questions(questions[:count])
+    return questions, grok_error if prefer_llm and api_key and not questions else ""
+
+
+def _number_session_questions(questions: list[dict]) -> list[dict]:
+    for i, q in enumerate(questions, start=1):
+        q["q_num"] = i
+    return questions
 
 
 def build_session_report(questions: list[dict], answers: list[dict], *, student_name: str = "Student") -> dict:
-    """Score marked questions only. Written items are self-check and listed with model answers."""
+    """Score 1-mark picks, and CBSE step marks on written questions when a paper photo was graded."""
     by_cat: dict[str, dict] = {}
     written_review: list[dict] = []
     scored_correct = 0
     scored_total = 0
+    objective_earned = 0.0
+    objective_max = 0.0
+    written_earned = 0.0
+    written_max = 0.0
+    written_graded = False
     for idx, q in enumerate(questions):
         ans = answers[idx] if idx < len(answers) else {}
         if q.get("type") == "written":
+            marks = float(q.get("marks") or 0)
+            grade = ans.get("ai_grade") if isinstance(ans.get("ai_grade"), dict) else {}
+            earned = None
+            if "earned" in grade:
+                try:
+                    earned = float(grade.get("earned", 0))
+                except (TypeError, ValueError):
+                    earned = 0.0
+                written_graded = True
+                written_earned += earned
+                written_max += marks
             written_review.append(
                 {
-                    "number": idx + 1,
+                    "number": int(q.get("q_num") or idx + 1),
                     "topic": q.get("category_label", ""),
-                    "marks": int(q.get("marks") or 0),
+                    "marks": marks,
+                    "earned": earned,
                     "question": str(q.get("question", "")).strip(),
                     "model_answer": str(q.get("model_answer", "")).strip(),
                     "explanation": str(q.get("explanation", "")).strip(),
-                    "attempted": bool(ans.get("self_checked") or ans.get("skipped_scoring")),
+                    "feedback": str(grade.get("feedback") or "").strip(),
+                    "corrections": str(grade.get("corrections") or "").strip(),
+                    "steps": list(grade.get("steps") or []),
+                    "attempted": bool(ans.get("self_checked") or ans.get("skipped_scoring") or earned is not None),
                 }
             )
             continue
@@ -235,9 +263,12 @@ def build_session_report(questions: list[dict], answers: list[dict], *, student_
         bucket = by_cat.setdefault(label, {"name": label, "correct": 0, "total": 0})
         bucket["total"] += 1
         scored_total += 1
+        mark_value = float(q.get("marks") or 1)
+        objective_max += mark_value
         if ans.get("correct"):
             bucket["correct"] += 1
             scored_correct += 1
+            objective_earned += mark_value
 
     strengths = []
     needs = []
@@ -252,12 +283,24 @@ def build_session_report(questions: list[dict], answers: list[dict], *, student_
             needs.append(row)
 
     score_pct = round(100 * scored_correct / scored_total) if scored_total else 0
+    marks_earned = objective_earned
+    marks_max = objective_max
+    if written_graded:
+        marks_earned += written_earned
+        marks_max += written_max
+        score_pct = round(100 * marks_earned / marks_max) if marks_max else 0
     first = student_name.split()[0] if student_name.strip() else "Student"
-    if written_review:
+    if written_graded:
+        narrative = (
+            f"{first} completed {len(questions)} questions and scored "
+            f"{marks_earned:g}/{marks_max:g} marks ({score_pct}%) on the CBSE paper. "
+            f"The written questions were marked from the uploaded sheet."
+        )
+    elif written_review:
         narrative = (
             f"{first} completed {len(questions)} questions and scored "
             f"{scored_correct}/{scored_total} ({score_pct}%) on the marked questions. "
-            f"{len(written_review)} written question(s) were self-check and are listed below with model answers."
+            f"{len(written_review)} written question(s) are listed below."
         )
     else:
         narrative = (
@@ -270,6 +313,9 @@ def build_session_report(questions: list[dict], answers: list[dict], *, student_
         "total": scored_total,
         "correct_count": scored_correct,
         "score_pct": score_pct,
+        "marks_earned": marks_earned,
+        "marks_max": marks_max,
+        "written_graded": written_graded,
         "questions_completed": len(questions),
         "written_review": written_review,
         "summary_narrative": narrative,
@@ -299,9 +345,13 @@ def format_report_details(report: dict) -> str:
             lines.append(f"  • {s['name']} — {s['correct']}/{s['total']}")
     written = report.get("written_review") or []
     if written:
-        lines.append("Written self-check:")
+        lines.append("Written paper:")
         for item in written:
-            lines.append(f"  • Q{item['number']} — {item.get('topic') or 'Written'}")
+            earned = item.get("earned")
+            mark = f"{earned:g}/{float(item.get('marks') or 0):g}" if earned is not None else "not marked"
+            lines.append(f"  • Q{item['number']} — {item.get('topic') or 'Written'} — {mark}")
+            if item.get("feedback"):
+                lines.append(f"    {item['feedback']}")
             if item.get("question"):
                 lines.append(f"    {item['question']}")
             if item.get("model_answer"):

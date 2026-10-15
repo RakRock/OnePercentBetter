@@ -82,15 +82,21 @@ def _marked_score_line(report: dict) -> str:
     cc = report.get("correct_count", 0)
     tot = report.get("total", 0)
     line = f"{cc:g}/{tot:g} ({report['score_pct']}%)"
+    if report.get("written_graded"):
+        return (
+            f"{float(report.get('marks_earned', 0)):g}/{float(report.get('marks_max', 0)):g} "
+            f"marks ({report['score_pct']}%)"
+        )
     written = report.get("written_review") or []
     if written:
-        line = f"{cc:g}/{tot:g} marked ({report['score_pct']}%) · {len(written)} written self-check"
+        line = f"{cc:g}/{tot:g} marked ({report['score_pct']}%) · {len(written)} written on paper"
     return line
 
 
 def _html_written(items: list[dict]) -> str:
     if not items:
         return ""
+    graded = any(item.get("earned") is not None for item in items)
     blocks = []
     for item in items:
         topic = (
@@ -98,33 +104,58 @@ def _html_written(items: list[dict]) -> str:
             if item.get("topic")
             else ""
         )
+        score = ""
+        if item.get("earned") is not None:
+            score = (
+                f'<span style="color:#1e3a8a;"> — '
+                f'{float(item["earned"]):g}/{float(item.get("marks") or 0):g}</span>'
+            )
         model = (
             f'<p style="margin:0.35rem 0 0 0;color:#1e3a8a;"><strong>Model answer:</strong> '
             f'{_format_math_for_email_html(item.get("model_answer", ""))}</p>'
             if item.get("model_answer")
             else ""
         )
+        feedback = (
+            f'<p style="margin:0.35rem 0 0 0;color:#1f2937;"><strong>Examiner:</strong> '
+            f'{html_lib.escape(item["feedback"])}</p>'
+            if item.get("feedback")
+            else ""
+        )
+        corrections = (
+            f'<p style="margin:0.2rem 0 0 0;color:#92400e;"><strong>Correction:</strong> '
+            f'{html_lib.escape(item["corrections"])}</p>'
+            if item.get("corrections")
+            else ""
+        )
         expl = (
             f'<p style="margin:0.35rem 0 0 0;color:#374151;font-size:0.9rem;">'
             f'<strong>Why:</strong> {_format_math_for_email_html(item["explanation"])}</p>'
-            if item.get("explanation")
+            if item.get("explanation") and not feedback
             else ""
         )
         blocks.append(
             f"""
             <div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:0.75rem 0.9rem;
                  border-radius:8px;margin-bottom:0.65rem;">
-              <p style="margin:0;font-weight:700;color:#1e3a8a;">Q{item["number"]}{topic}</p>
+              <p style="margin:0;font-weight:700;color:#1e3a8a;">Q{item["number"]}{topic}{score}</p>
               <p style="margin:0.35rem 0 0 0;color:#1f2937;">{_format_math_for_email_html(item.get("question", ""))}</p>
+              {feedback}
+              {corrections}
               {model}
               {expl}
             </div>
             """
         )
+    heading = "Written paper (CBSE marks)" if graded else "Written questions"
+    note = (
+        "Marked from the uploaded sheet using CBSE step marks."
+        if graded
+        else "These were solved on paper. Compare the work with the model answer."
+    )
     return (
-        '<h3 style="color:#1d4ed8;margin:1.25rem 0 0.3rem 0;">✍️ Written questions (self-check)</h3>'
-        '<p style="margin:0 0 0.5rem 0;color:#4b5563;font-size:0.9rem;">'
-        "These were solved on paper. Compare the work with the model answer.</p>"
+        f'<h3 style="color:#1d4ed8;margin:1.25rem 0 0.3rem 0;">✍️ {heading}</h3>'
+        f'<p style="margin:0 0 0.5rem 0;color:#4b5563;font-size:0.9rem;">{note}</p>'
         + "".join(blocks)
     )
 
@@ -253,6 +284,12 @@ def format_practice_report_email(
         for item in written:
             topic = f" ({item['topic']})" if item.get("topic") else ""
             plain_parts.append(f"Q{item['number']}{topic}: {_format_math_for_email_plain(item.get('question', ''))}")
+            if item.get("earned") is not None:
+                plain_parts.append(
+                    f"  Score: {float(item['earned']):g}/{float(item.get('marks') or 0):g}"
+                )
+            if item.get("feedback"):
+                plain_parts.append(f"  Examiner: {_format_math_for_email_plain(item['feedback'])}")
             if item.get("model_answer"):
                 plain_parts.append(f"  Model answer: {_format_math_for_email_plain(item['model_answer'])}")
             if item.get("explanation"):
@@ -620,6 +657,12 @@ def format_harshit_student_review_email(
             plain_parts.append(
                 f"Q{item['number']}{topic}: {_format_math_for_email_plain(item.get('question', ''))}"
             )
+            if item.get("earned") is not None:
+                plain_parts.append(
+                    f"  Score: {float(item['earned']):g}/{float(item.get('marks') or 0):g}"
+                )
+            if item.get("feedback"):
+                plain_parts.append(f"  Examiner: {_format_math_for_email_plain(item['feedback'])}")
             if item.get("model_answer"):
                 plain_parts.append(f"  Model answer: {_format_math_for_email_plain(item['model_answer'])}")
             plain_parts.append("")

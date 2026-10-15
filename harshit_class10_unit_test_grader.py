@@ -178,7 +178,7 @@ def normalize_question_grades(payload: dict, written: list[dict]) -> dict[int, d
     return out
 
 
-def _written_prompt(written: list[dict]) -> str:
+def _written_prompt(written: list[dict], *, paper_intro: str | None = None) -> str:
     blocks = []
     for q in written:
         scheme = marking_scheme_for_question(q)
@@ -195,9 +195,12 @@ def _written_prompt(written: list[dict]) -> str:
             f"Notes: {note_line}"
         )
     joined = "\n\n".join(blocks)
+    intro = paper_intro or (
+        "The attached photo is the student's written paper for Sections B–D of a 15-mark unit test."
+    )
     return f"""{CBSE_EXAMINER_RULES}
 
-The attached photo is the student's written paper for Sections B–D of a 15-mark unit test.
+{intro}
 Grade ONLY the written questions below.
 
 {joined}
@@ -227,6 +230,7 @@ def grade_written_paper(
     written_questions: list[dict],
     image_paths: list[str],
     api_key: str,
+    paper_intro: str | None = None,
 ) -> tuple[dict[int, dict], str | None]:
     """Mark all written questions from the paper photo(s). Returns q_num -> grade."""
     if not written_questions:
@@ -242,7 +246,9 @@ def grade_written_paper(
     if not urls:
         return {}, "Could not read the saved paper photo."
 
-    content: list[dict] = [{"type": "text", "text": _written_prompt(written_questions)}]
+    content: list[dict] = [
+        {"type": "text", "text": _written_prompt(written_questions, paper_intro=paper_intro)}
+    ]
     for url in urls:
         content.append({"type": "image_url", "image_url": {"url": url, "detail": "high"}})
 

@@ -86,6 +86,9 @@ class TestUnitTestGrader(unittest.TestCase):
         data = h10bs.load_unit_seeds(3)
         for bucket in ("vsa", "sa", "la"):
             for item in data[bucket]:
+                if str(item.get("id", "")).startswith("pyq_"):
+                    self.assertTrue(item.get("rubric") or item.get("model_answer"), item.get("id"))
+                    continue
                 self.assertTrue(item.get("marking_scheme", {}).get("steps"), item.get("id"))
 
     def test_image_data_url_rejects_outside_work_root(self) -> None:

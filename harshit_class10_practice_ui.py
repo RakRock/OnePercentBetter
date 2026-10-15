@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import os
 import time
+from pathlib import Path
 
 import streamlit as st
 
@@ -14,6 +15,8 @@ import harshit_class10_practice as h10p
 import harshit_class10_practice_pyq as h10pyq
 import harshit_class10_questions as h10q
 import harshit_class10_topics as h10t
+import harshit_class10_unit_test_grader as h10g
+import harshit_class10_unit_test_uploads as h10utu
 import harshit_class10_units as h10u
 import harshit_math_answers as hma
 import harshit_math_components as hmc_ui
@@ -100,6 +103,9 @@ def _start_practice(unit_id: int) -> None:
     st.session_state[_ss_key(unit_id, "review_index")] = 0
     st.session_state[_ss_key(unit_id, "start_time")] = time.time()
     st.session_state[_ss_key(unit_id, "session_id")] = f"hm10-u{unit_id}-{time.time()}"
+    st.session_state.pop(_ss_key(unit_id, "work_images"), None)
+    st.session_state.pop(_ss_key(unit_id, "ai_graded_for"), None)
+    st.session_state.pop(_ss_key(unit_id, "ai_grade_error"), None)
     st.session_state.hm10_unit_id = unit_id
     st.session_state.current_page = "harshit_class10_practice"
 
@@ -410,7 +416,8 @@ def render_practice_home(unit_id: int) -> None:
     st.markdown("### Practice session")
     if config.get("include_board_pyq", True):
         st.caption(
-            f"10 previous-year questions · {h10pyq.pattern_summary(unit_id)}"
+            f"10 previous-year questions · {h10pyq.pattern_summary(unit_id)}. "
+            "Write the 2-, 3-, and 5-mark questions on one sheet, then upload a JPEG."
         )
     else:
         xai_on = bool(config.get("use_chapter_llm", True))
@@ -485,6 +492,120 @@ def render_unit_home(unit_id: int) -> None:
         render_setup_panel(unit_id)
 
 
+_DAILY_PAPER_INTRO = (
+    "The attached photo is the student's written work for the 2-mark, 3-mark, and 5-mark "
+    "questions of one Class 10 daily practice paper. Each answer is labelled with its question number."
+)
+
+
+def _practice_work_images(unit_id: int) -> list[dict]:
+    return list(st.session_state.get(_ss_key(unit_id, "work_images")) or [])
+
+
+def _apply_written_grades(questions: list[dict], answers: list[dict], grades: dict) -> list[dict]:
+    padded = list(answers)
+    while len(padded) < len(questions):
+        padded.append({})
+    for i, q in enumerate(questions):
+        if q.get("type") != "written":
+            continue
+        grade = grades.get(int(q.get("q_num") or i + 1))
+        if not grade:
+            continue
+        marks = float(q.get("marks") or 0)
+        try:
+            earned = float(grade.get("earned", 0))
+        except (TypeError, ValueError):
+            earned = 0.0
+        padded[i] = {
+            **padded[i],
+            "picked": f"{earned:g}/{marks:g}",
+            "correct_val": str(q.get("model_answer") or ""),
+            "correct": marks > 0 and earned + 1e-9 >= marks,
+            "skipped_scoring": False,
+            "awaiting_paper": False,
+            "ai_grade": grade,
+            "earned": earned,
+        }
+    return padded
+
+
+def _render_practice_paper_gate(unit_id: int, questions: list[dict], answers: list[dict]) -> bool:
+    """Collect one sheet photo and mark the written questions. True when results can show."""
+    session_id = st.session_state.get(_ss_key(unit_id, "session_id"))
+    if st.session_state.get(_ss_key(unit_id, "ai_graded_for")) == session_id:
+        return True
+    if not any(q.get("type") == "written" for q in questions):
+        return True
+
+    st.markdown("### Upload your written sheet")
+    st.caption(
+        "Photograph the full sheet for the 2-mark, 3-mark, and 5-mark questions. "
+        "Label each answer with its question number. JPG or PNG, 8 MB max. "
+        "The sheet is marked with CBSE step marks."
+    )
+    images = _practice_work_images(unit_id)
+    if images:
+        st.success("Paper photo saved.")
+        for meta in images:
+            path = meta.get("path")
+            if path and Path(path).is_file():
+                st.image(path, caption=meta.get("filename", "Written paper"), use_container_width=True)
+
+    err = st.session_state.get(_ss_key(unit_id, "ai_grade_error"))
+    if err:
+        st.warning(str(err))
+
+    uploaded = st.file_uploader(
+        "Add one photo of your written sheet (JPG or PNG)",
+        type=["jpg", "jpeg", "png"],
+        accept_multiple_files=False,
+        key=f"hm10_pr_upload_paper_{unit_id}",
+        help="On a phone: tap to take a picture or choose from gallery. 8 MB max.",
+    )
+    save_label = "Replace paper photo" if images else "Save paper photo"
+    if uploaded and st.button(save_label, key=f"hm10_pr_save_paper_{unit_id}", type="primary"):
+        sid = session_id or h10utu.new_session_id(unit_id)
+        student = str(st.session_state.get("selected_user") or "Student")
+        merged, save_err = h10utu.save_session_work_images(
+            session_id=sid,
+            student_name=student,
+            unit_id=unit_id,
+            uploaded_files=uploaded,
+            existing=images,
+        )
+        st.session_state[_ss_key(unit_id, "work_images")] = merged
+        if save_err:
+            st.session_state[_ss_key(unit_id, "ai_grade_error")] = save_err
+        else:
+            st.session_state.pop(_ss_key(unit_id, "ai_grade_error"), None)
+        st.rerun()
+
+    if images and st.button("Mark my paper", key=f"hm10_pr_grade_paper_{unit_id}", type="primary"):
+        paths = [str(meta.get("path")) for meta in images if meta.get("path")]
+        written = [q for q in questions if q.get("type") == "written"]
+        with st.spinner("Examiner is marking your sheet (CBSE step marks)…"):
+            grades, grade_err = h10g.grade_written_paper(
+                written_questions=written,
+                image_paths=paths,
+                api_key=str(_xai_api_key() or ""),
+                paper_intro=_DAILY_PAPER_INTRO,
+            )
+        if grade_err:
+            st.session_state[_ss_key(unit_id, "ai_grade_error")] = grade_err
+            st.warning(grade_err)
+        else:
+            st.session_state[_ss_key(unit_id, "answers")] = _apply_written_grades(questions, answers, grades)
+            st.session_state[_ss_key(unit_id, "ai_graded_for")] = session_id
+            st.session_state.pop(_ss_key(unit_id, "ai_grade_error"), None)
+            st.rerun()
+
+    if st.button("Continue without marking", key=f"hm10_pr_skip_grade_{unit_id}"):
+        st.session_state[_ss_key(unit_id, "ai_graded_for")] = session_id
+        st.rerun()
+    return False
+
+
 def render_practice() -> None:
     hmc_ui.inject_harshit_styles()
     unit_id = st.session_state.get("hm10_unit_id", 1)
@@ -557,21 +678,26 @@ def render_practice() -> None:
             )
         elif q_type == "written":
             hmr.render_question(q["question"])
+            q_num = int(q.get("q_num") or current + 1)
             st.caption(
-                f"Board PYQ · {int(q.get('marks', 2))} marks — solve on paper, then reveal the model answer."
+                f"Q{q_num} · {int(q.get('marks', 2))} marks — write the full working on your sheet, "
+                "labelled with this question number. You will upload one JPEG of the sheet at the end."
             )
         else:
             hmr.render_question(q["question"])
 
         fb = st.session_state.get(_ss_key(unit_id, "feedback"))
         if fb and fb.get("q_index") == current:
-            if fb.get("written_done"):
+            if fb.get("written_done") and not fb.get("awaiting_paper"):
                 model_disp = hmr.format_math_display(str(q.get("model_answer", "")))
                 st.markdown(
                     f'<div class="correct-answer" style="text-align:left;padding:1rem;">'
                     f"<strong>Model answer:</strong><br>{model_disp}</div>",
                     unsafe_allow_html=True,
                 )
+            elif fb.get("awaiting_paper"):
+                q_num = int(q.get("q_num") or current + 1)
+                st.info(f"Saved on your sheet as Q{q_num}. Upload one photo of the sheet after the last question.")
             elif fb.get("needs_answer_key"):
                 st.markdown(
                     '<div class="correct-answer" style="text-align:center;">'
@@ -604,7 +730,13 @@ def render_practice() -> None:
                 )
             _, col_next, _ = st.columns([1, 2, 1])
             with col_next:
-                label = "Next ➡️" if current < total - 1 else "🎉 See Results!"
+                has_written = any(item.get("type") == "written" for item in questions)
+                if current < total - 1:
+                    label = "Next ➡️"
+                elif has_written:
+                    label = "Upload written paper"
+                else:
+                    label = "🎉 See Results!"
                 if st.button(label, key=f"hm10_next_{unit_id}", use_container_width=True, type="primary"):
                     if current < total - 1:
                         st.session_state[_ss_key(unit_id, "current")] += 1
@@ -613,23 +745,30 @@ def render_practice() -> None:
                     st.session_state[_ss_key(unit_id, "feedback")] = None
                     st.rerun()
         elif q_type == "written":
-            if st.button("Show model answer", key=f"hm10_written_reveal_{unit_id}_{current}", type="primary"):
+            q_num = int(q.get("q_num") or current + 1)
+            if st.button(
+                f"I've written Q{q_num} on paper",
+                key=f"hm10_written_reveal_{unit_id}_{current}",
+                type="primary",
+            ):
                 answers.append(
                     {
-                        "picked": "self-check",
-                        "correct_val": "model answer",
-                        "correct": True,
+                        "picked": "on paper",
+                        "correct_val": "",
+                        "correct": False,
                         "skipped_scoring": True,
-                        "self_checked": True,
+                        "self_checked": False,
+                        "awaiting_paper": True,
                     }
                 )
                 st.session_state[_ss_key(unit_id, "answers")] = answers
                 st.session_state[_ss_key(unit_id, "feedback")] = {
                     "q_index": current,
-                    "correct": True,
-                    "picked": "attempted",
-                    "correct_val": "see model answer",
+                    "correct": False,
+                    "picked": "on paper",
+                    "correct_val": "",
                     "written_done": True,
+                    "awaiting_paper": True,
                 }
                 st.rerun()
         else:
@@ -662,6 +801,9 @@ def render_practice() -> None:
                 }
                 st.rerun()
     else:
+        if not _render_practice_paper_gate(unit_id, questions, answers):
+            return
+        answers = st.session_state.get(_ss_key(unit_id, "answers"), answers)
         time_spent = int(time.time() - st.session_state.get(_ss_key(unit_id, "start_time"), time.time()))
         report = h10p.build_session_report(questions, answers, student_name=name or "Student")
         meta = h10p.session_meta_from_config(unit_id, config)
@@ -678,12 +820,16 @@ def render_practice() -> None:
             res_emoji, message, res_color = "💪", "Keep practicing — you will get there!", "#ef4444"
 
         minutes, seconds = divmod(time_spent, 60)
+        if report.get("written_graded"):
+            headline = f"{float(report['marks_earned']):g} / {float(report['marks_max']):g} marks"
+        else:
+            headline = f"{correct_count} / {report['total']} marked correct"
         st.markdown(
             f"""
         <div style="text-align:center;padding:2rem;background:{res_color}10;border-radius:20px;
              border:3px solid {res_color};margin-top:1rem;">
             <div style="font-size:5rem;">{res_emoji}</div>
-            <h2 style="color:{res_color};">{correct_count} / {report['total']} marked correct</h2>
+            <h2 style="color:{res_color};">{headline}</h2>
             <p>{message}</p>
             <p style="color:#9ca3af;">⏱️ {minutes}m {seconds}s</p>
         </div>
@@ -702,17 +848,40 @@ def render_practice() -> None:
 
         written = report.get("written_review") or []
         if written:
-            st.markdown("#### ✍️ Written questions (self-check)")
-            st.caption("Solved on paper. Compare the work with the model answer.")
+            st.markdown("#### ✍️ Written paper")
+            if report.get("written_graded"):
+                st.caption("Marked from your sheet with CBSE step marks.")
+            else:
+                st.caption("Not marked from a photo. Compare the work with the model answer.")
             for item in written:
                 q_disp = hmr.format_math_display(str(item.get("question", "")))
                 model_disp = hmr.format_math_display(str(item.get("model_answer", "")))
+                if item.get("earned") is not None:
+                    score = f"{float(item['earned']):g}/{float(item.get('marks') or 0):g}"
+                else:
+                    score = "not marked"
                 st.markdown(
-                    f"**Q{item['number']}** · {item.get('topic', '')}: {q_disp}",
+                    f"**Q{item['number']}** · {item.get('topic', '')} — **{score}**: {q_disp}",
                     unsafe_allow_html=True,
                 )
+                if item.get("feedback"):
+                    st.markdown(f"Examiner: {item['feedback']}")
+                if item.get("corrections"):
+                    st.markdown(f"Correction: {item['corrections']}")
+                for step in item.get("steps") or []:
+                    st.markdown(
+                        f"- {float(step.get('awarded', 0)):g}/{float(step.get('max', 0)):g} — {step.get('text', '')}"
+                    )
                 if item.get("model_answer"):
                     st.markdown(f"Model answer: {model_disp}", unsafe_allow_html=True)
+
+        paper_photos = _practice_work_images(unit_id)
+        if paper_photos:
+            with st.expander("📷 Submitted written sheet", expanded=False):
+                for meta in paper_photos:
+                    path = meta.get("path")
+                    if path and Path(path).is_file():
+                        st.image(path, caption=meta.get("filename"), use_container_width=True)
 
         with st.expander("📋 Question-by-question review", expanded=False):
             for idx, q_item in enumerate(questions):
@@ -721,11 +890,19 @@ def render_practice() -> None:
                 expl_disp = hmr.format_math_display(str(q_item.get("explanation", "")))
                 if q_item.get("type") == "written":
                     model_disp = hmr.format_math_display(str(q_item.get("model_answer", "")))
+                    ans_grade = ans.get("ai_grade") if isinstance(ans.get("ai_grade"), dict) else {}
+                    if "earned" in ans_grade:
+                        score_line = (
+                            f"{float(ans_grade.get('earned', 0)):g}/{float(q_item.get('marks') or 0):g} "
+                            "CBSE marks"
+                        )
+                    else:
+                        score_line = "Not marked from a photo"
                     st.markdown(
                         f"""
                     <div class="correct-answer">
                         <strong>Q{idx + 1}</strong> · {q_item.get("category_label", "")}: {q_disp}
-                        <p style="font-size:0.85rem;margin:0.3rem 0 0 0;">Self-check. Model answer: {model_disp}</p>
+                        <p style="font-size:0.85rem;margin:0.3rem 0 0 0;">{score_line}. Model answer: {model_disp}</p>
                         <p style="font-size:0.85rem;margin:0.3rem 0 0 0;">{expl_disp}</p>
                     </div>
                     """,
