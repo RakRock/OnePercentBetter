@@ -717,6 +717,16 @@ def select_activity(activity):
         st.session_state.cube_score = 0
         st.session_state.cube_total = 0
         st.session_state.cube_streak = 0
+    elif activity == "ConceptCheck":
+        st.session_state.current_page = "concept_check_home"
+        st.session_state.acc_section = None
+        st.session_state.acc_questions = []
+        st.session_state.acc_current = 0
+        st.session_state.acc_answers = []
+        st.session_state.acc_last_feedback = None
+        st.session_state.acc_saved = False
+        st.session_state.acc_used_fallback = False
+        st.session_state.acc_start_time = None
     elif activity == "EdgenuityCourse3":
         st.session_state.current_page = "edgenuity_course3_home"
         st.session_state.ec3_unit_id = None
@@ -1292,7 +1302,7 @@ def render_user_dashboard():
         st.markdown("### 📚 Choose Your Activity")
         st.markdown("")
 
-        act_row1_c1, act_row1_c2, act_row1_c3 = st.columns(3, gap="large")
+        act_row1_c1, act_row1_c2, act_row1_c3, act_row1_c4 = st.columns(4, gap="large")
         with act_row1_c1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #6366f1;">
@@ -1320,6 +1330,19 @@ def render_user_dashboard():
                 st.rerun()
 
         with act_row1_c3:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #0f766e;">
+                <div style="font-size: 3rem;">📝</div>
+                <h3 style="margin: 0.5rem 0;">Concept Check</h3>
+                <p style="color: #6b7280;">Friday I–V papers, fresh questions</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("📝 Concept Check", key="btn_concept_check", width="stretch", type="primary"):
+                select_activity("ConceptCheck")
+                st.rerun()
+
+        with act_row1_c4:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #f59e0b;">
                 <div style="font-size: 3rem;">🧠</div>
@@ -6088,6 +6111,18 @@ def render_course3_practice():
     course3_ui.render_practice()
 
 
+def render_concept_check_home():
+    import arjun_concept_check_form_ui as acc_ui
+
+    acc_ui.render_home()
+
+
+def render_concept_check_practice():
+    import arjun_concept_check_form_ui as acc_ui
+
+    acc_ui.render_practice()
+
+
 # ──────────────────────────────────────────────
 # PAGE: Arjun — Edgenuity Course 3 Math
 # ──────────────────────────────────────────────
@@ -7420,6 +7455,10 @@ elif page == "course3_notes":
     render_course3_notes()
 elif page == "course3_practice":
     render_course3_practice()
+elif page == "concept_check_home":
+    render_concept_check_home()
+elif page == "concept_check_practice":
+    render_concept_check_practice()
 elif page == "edgenuity_course3_home":
     render_edgenuity_course3_home()
 elif page == "edgenuity_course3_unit":
