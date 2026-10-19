@@ -1,7 +1,8 @@
-"""Math 3 Friday Concept Check — Unit 1 sections I–V.
+"""Math 3 Friday Concept Check — Unit 1 sections I–V and Unit 6 section VI.
 
 Seeds are the actual problems from Arjun's CC1–CC5 papers (plus Scientific
-Notation items from a later school form, because CC1–CC5 did not include V).
+Notation items from a later school form, because CC1–CC5 did not include V)
+and the Unit 6 packet VI-1 Representing Patterns.
 """
 
 from __future__ import annotations
@@ -19,6 +20,7 @@ SECTIONS: dict[str, dict] = {
         "session_count": 5,
         "emoji": "🔢",
         "color": "#2563eb",
+        "unit_id": 1,
     },
     "II": {
         "id": "II",
@@ -29,6 +31,7 @@ SECTIONS: dict[str, dict] = {
         "session_count": 5,
         "emoji": "⬜",
         "color": "#7c3aed",
+        "unit_id": 1,
     },
     "III": {
         "id": "III",
@@ -42,6 +45,7 @@ SECTIONS: dict[str, dict] = {
         "session_count": 5,
         "emoji": "√",
         "color": "#059669",
+        "unit_id": 1,
     },
     "IV": {
         "id": "IV",
@@ -52,6 +56,7 @@ SECTIONS: dict[str, dict] = {
         "session_count": 4,
         "emoji": "𝑥ⁿ",
         "color": "#d97706",
+        "unit_id": 1,
     },
     "V": {
         "id": "V",
@@ -65,6 +70,18 @@ SECTIONS: dict[str, dict] = {
         "session_count": 3,
         "emoji": "🔬",
         "color": "#db2777",
+        "unit_id": 1,
+    },
+    "VI": {
+        "id": "VI",
+        "roman": "VI",
+        "title": "Representing Patterns",
+        "short": "Tables, constant difference, expression in n",
+        "note_files": ["activity_1_representing_patterns.md"],
+        "session_count": 5,
+        "emoji": "⬛",
+        "color": "#0f766e",
+        "unit_id": 6,
     },
 }
 
@@ -482,11 +499,118 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "4×10²=0.04×10⁴. 8.4×10⁴ − 0.04×10⁴ = 8.36×10⁴ seconds.",
     ),
+    # ── VI  Representing Patterns (VI-1 packet) ──
+    _q(
+        "cc_vi_vi1_expr", "VI", "VI-1",
+        "expression_in_n",
+        "Figure 1 has 1 dot, Figure 2 has 3 dots, Figure 3 has 5 dots. "
+        "Let n be the figure number. Which expression gives the number of dots in figure n?",
+        ["2n − 1", "2n", "2n + 1", "n + 2"],
+        0,
+        "The counts are 1, 3, 5, … (odd numbers). Each step adds 2, and Figure 1 is 1, so 2n − 1.",
+    ),
+    _q(
+        "cc_vi_vi1_sub", "VI", "VI-1",
+        "substitute_n",
+        "The number of dots in figure n is 2n − 1. What value of n do you substitute to find the number of dots in the 3rd figure?",
+        ["n = 3", "n = 5", "n = 2", "n = 100"],
+        0,
+        "The 3rd figure means figure number n = 3.",
+    ),
+    _q(
+        "cc_vi_vi1_far", "VI", "VI-1",
+        "far_figure",
+        "Figure 1 has 1 dot, Figure 2 has 3 dots, Figure 3 has 5 dots. How many dots are in the 100th figure?",
+        ["199", "200", "201", "101"],
+        0,
+        "The rule is 2n − 1. For n = 100: 2(100) − 1 = 199.",
+    ),
+    _q(
+        "cc_vi_vi1_name", "VI", "VI-1",
+        "constant_difference_name",
+        "When the difference of consecutive terms is always the same, it is called:",
+        ["a constant difference", "a ratio", "a square number", "a Fibonacci sequence"],
+        0,
+        "A repeated same gap (here +2) is a constant difference.",
+    ),
+    _q(
+        "cc_vi_vi1_relate", "VI", "VI-1",
+        "difference_relates",
+        "In the dots table the difference column is 2, 2, 2, … The expression for the number of dots is 2n − 1. "
+        "How does the difference column relate to the pattern?",
+        [
+            "You add 2 dots each figure, so the coefficient of n is 2",
+            "The 100th figure has 2 dots",
+            "n is always 2",
+            "The first figure has 2 dots",
+        ],
+        0,
+        "The constant difference is how many new dots appear each figure, and it is the coefficient of n.",
+    ),
+    _q(
+        "cc_vi_vi1_table", "VI", "VI-1",
+        "fill_table",
+        "Figure 1 has 1 dot, Figure 2 has 3 dots, Figure 3 has 5 dots. How many dots are in Figure 6?",
+        ["11", "12", "9", "13"],
+        0,
+        "Add 2 each time: 1, 3, 5, 7, 9, 11. Or 2(6) − 1 = 11.",
+    ),
+    _q(
+        "cc_vi_pracA_d", "VI", "VI-1",
+        "constant_difference_value",
+        "A V of dots: Figure 1 has 3 dots, Figure 2 has 5 dots, Figure 3 has 7 dots. What is the constant difference?",
+        ["2", "3", "4", "1"],
+        0,
+        "5 − 3 = 2 and 7 − 5 = 2.",
+    ),
+    _q(
+        "cc_vi_pracA_expr", "VI", "VI-1",
+        "expression_in_n",
+        "A V of dots: Figure 1 has 3 dots, Figure 2 has 5 dots, Figure 3 has 7 dots. "
+        "Let n be the figure number. Which expression gives the number of dots in figure n?",
+        ["2n + 1", "2n − 1", "3n", "n + 3"],
+        0,
+        "Start at 3 and add 2 each time: 3 + 2(n − 1) = 2n + 1.",
+    ),
+    _q(
+        "cc_vi_pracA_51", "VI", "VI-1",
+        "far_figure",
+        "A V of dots grows as 3, 5, 7, … (constant difference 2). How many dots are in the 51st figure?",
+        ["103", "102", "101", "51"],
+        0,
+        "Expression 2n + 1. For n = 51: 2(51) + 1 = 103.",
+    ),
+    _q(
+        "cc_vi_pracB_d", "VI", "VI-1",
+        "constant_difference_value",
+        "A stair of squares: Figure 1 has 3 squares, Figure 2 has 5 squares, Figure 3 has 7 squares. "
+        "What is the constant difference?",
+        ["2", "3", "4", "1"],
+        0,
+        "5 − 3 = 2 and 7 − 5 = 2.",
+    ),
+    _q(
+        "cc_vi_pracB_expr", "VI", "VI-1",
+        "expression_in_n",
+        "A stair of squares: Figure 1 has 3 squares, Figure 2 has 5 squares, Figure 3 has 7 squares. "
+        "Let n be the figure number. Which expression gives the number of squares in figure n?",
+        ["2n + 1", "2n − 1", "n²", "3n"],
+        0,
+        "Same growth as 3, 5, 7, … so 2n + 1.",
+    ),
+    _q(
+        "cc_vi_pracB_100", "VI", "VI-1",
+        "far_figure",
+        "A stair of squares grows as 3, 5, 7, … How many squares are in the 100th figure?",
+        ["201", "199", "200", "103"],
+        0,
+        "Expression 2n + 1. For n = 100: 2(100) + 1 = 201.",
+    ),
 ]
 
 
 def list_sections() -> list[dict]:
-    return [dict(SECTIONS[key]) for key in ("I", "II", "III", "IV", "V")]
+    return [dict(SECTIONS[key]) for key in ("I", "II", "III", "IV", "V", "VI")]
 
 
 def get_section(section_id: str) -> dict | None:

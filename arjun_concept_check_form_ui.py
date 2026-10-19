@@ -88,17 +88,18 @@ def render_home():
         <p style="color:#4b5563;font-size:1.05rem;">
             Friday Math 3 paper · pick one section · new questions every time
         </p>
-        <p style="color:#6b7280;">Hi {name}. Same stems as CC1–CC5. Fresh numbers from Grok.</p>
+        <p style="color:#6b7280;">Hi {name}. Pick a section. Fresh numbers from Grok.</p>
     </div>
     """,
         unsafe_allow_html=True,
     )
     st.caption(
         "I–IV seeds are the attached CC1–CC5 papers. "
-        "V uses the scientific-notation items from a later school form, because CC1–CC5 did not include V."
+        "V uses a later school form. "
+        "VI is Unit 6 packet VI-1 Representing Patterns (tables, constant difference, expression in n)."
     )
 
-    for row in (("I", "II", "III"), ("IV", "V", None)):
+    for row in (("I", "II", "III"), ("IV", "V", "VI")):
         cols = st.columns(3, gap="large")
         for col, sid in zip(cols, row):
             with col:

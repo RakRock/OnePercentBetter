@@ -9,12 +9,12 @@ import arjun_concept_check_form_llm as ccform_llm
 
 
 class TestArjunConceptCheckForm(unittest.TestCase):
-    def test_sections_are_i_through_v(self):
+    def test_sections_are_i_through_vi(self):
         ids = [s["id"] for s in ccform.list_sections()]
-        self.assertEqual(ids, ["I", "II", "III", "IV", "V"])
+        self.assertEqual(ids, ["I", "II", "III", "IV", "V", "VI"])
 
     def test_every_section_has_seeds(self):
-        for sid in ("I", "II", "III", "IV", "V"):
+        for sid in ("I", "II", "III", "IV", "V", "VI"):
             seeds = ccform.seeds_for_section(sid)
             self.assertTrue(seeds, sid)
             self.assertEqual(len({q["id"] for q in seeds}), len(seeds), sid)
@@ -58,6 +58,16 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_v_later_4": "6 × 10⁷",
             "cc_v_later_5": "1.24 × 10¹⁹",
             "cc_v_later_6": "8.36 × 10⁴ seconds",
+            "cc_vi_vi1_expr": "2n − 1",
+            "cc_vi_vi1_sub": "n = 3",
+            "cc_vi_vi1_far": "199",
+            "cc_vi_vi1_name": "a constant difference",
+            "cc_vi_vi1_table": "11",
+            "cc_vi_pracA_d": "2",
+            "cc_vi_pracA_expr": "2n + 1",
+            "cc_vi_pracA_51": "103",
+            "cc_vi_pracB_expr": "2n + 1",
+            "cc_vi_pracB_100": "201",
         }
         for qid, expected in keyed.items():
             q = by_id[qid]
@@ -80,6 +90,19 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         papers_ii = {q["paper"] for q in ccform.seeds_for_section("II")}
         self.assertTrue({"CC1", "CC2", "CC4"} <= papers_i)
         self.assertTrue({"CC2", "CC4", "CC5"} <= papers_ii)
+
+    def test_unit6_notes_and_vi_seeds(self):
+        info = ccform.get_section("VI")
+        self.assertEqual(info["unit_id"], 6)
+        self.assertEqual(info["title"], "Representing Patterns")
+        notes = ccform_llm._notes_for_section("VI")
+        self.assertIn("constant difference", notes.lower())
+        self.assertIn("2n", notes)
+        seeds = ccform.seeds_for_section("VI")
+        self.assertGreaterEqual(len(seeds), 8)
+        self.assertTrue(all(q["paper"] == "VI-1" for q in seeds))
+        questions = ccform_llm.fallback_seed_set("VI")
+        self.assertEqual(len(questions), 5)
 
 
 if __name__ == "__main__":

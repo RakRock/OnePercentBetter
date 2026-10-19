@@ -28,26 +28,35 @@ _NOTES_CHAR_LIMIT = 3500
 
 def _notes_for_section(section_id: str) -> str:
     info = ccform.get_section(section_id)
-    unit = c3.get_unit(1)
-    if not info or not unit:
+    if not info:
         return ""
-    wanted = set(info["note_files"])
+    unit_id = int(info.get("unit_id") or 1)
+    unit = c3.get_unit(unit_id)
+    wanted = list(info.get("note_files") or [])
+    activities = {str(a.get("file")): a for a in (unit or {}).get("activities") or []}
     parts: list[str] = []
-    for activity in unit.get("activities") or []:
-        if activity.get("file") not in wanted:
-            continue
-        text = c3.load_activity_markdown(unit, activity)
+    for fname in wanted:
+        act = activities.get(fname)
+        if act and unit:
+            text = c3.load_activity_markdown(unit, act)
+            title = act.get("title", fname)
+        else:
+            path = c3.unit_notes_dir(unit_id) / fname
+            text = path.read_text(encoding="utf-8") if path.is_file() else ""
+            title = fname
         text = re.sub(r"\[KEY\]|\[/KEY\]", "", text)
         text = re.sub(r"\[DIAGRAM:[^\]]+\]", "", text)
         text = re.sub(r"\n{3,}", "\n\n", text).strip()
-        parts.append(f"# {activity.get('title', activity.get('file'))}\n{text}")
+        if text:
+            parts.append(f"# {title}\n{text}")
     joined = "\n\n".join(parts)
     return joined[:_NOTES_CHAR_LIMIT]
 
 
 def _seed_block(seeds: list[dict]) -> str:
     lines = [
-        "SEED PROBLEMS from Arjun's actual Friday Concept Check papers (CC1–CC5).",
+        "SEED PROBLEMS from Arjun's actual Friday Concept Check papers (CC1–CC5) "
+        "or the Unit 6 VI-1 Representing Patterns packet.",
         "Match these stem types. Do NOT copy the numbers, names, or stories.",
     ]
     for i, seed in enumerate(seeds, start=1):
@@ -77,6 +86,7 @@ RULES:
 - Wrong options = the slips kids make on these papers (forgot LCD, treated perimeter as area, left a negative exponent, forgot to rewrite 12.4×10¹⁸ as 1.24×10¹⁹).
 - Explanation must include Step 1 and Step 2 and land on the correct option.
 - For repeating-decimal seeds, say clearly which digits have the bar.
+- For Representing Patterns: describe figures in words (Figure 1 has __ dots). Ask for the expression in n, the constant difference, n to substitute, or a far figure (51st/100th). Do not ask the student to draw.
 {KID_NUMERIC_FORMAT_RULES}
 
 Respond with ONLY a JSON array:

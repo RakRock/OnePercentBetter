@@ -105,6 +105,18 @@ UNIT_1_ACTIVITIES = [
 ]
 
 
+UNIT_6_ACTIVITIES = [
+    {
+        "number": 1,
+        "slug": "activity_1_representing_patterns",
+        "title": "VI-1 Representing Patterns",
+        "file": "activity_1_representing_patterns.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
+]
+
+
 UNIT_2_ACTIVITIES = [
     {
         "number": 9,
@@ -512,7 +524,13 @@ UNITS = [
         activities=UNIT_5_ACTIVITIES,
         combined_notes_name="unit_5_statistics_lesson_notes.md",
     ),
-    _build_unit(6, "Unit 6", "Lesson notes coming soon"),
+    _build_unit(
+        6,
+        "Unit 6",
+        "Patterns and modeling",
+        activities=UNIT_6_ACTIVITIES,
+        combined_notes_name="unit_6_patterns_and_modeling_lesson_notes.md",
+    ),
 ]
 
 # Back-compat alias
