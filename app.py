@@ -696,6 +696,8 @@ def select_activity(activity):
         st.session_state.current_page = "mental_math_home"
     elif activity == "Science":
         st.session_state.current_page = "science_home"
+    elif activity == "History":
+        st.session_state.current_page = "history_home"
     elif activity == "MovieBuff":
         st.session_state.current_page = "movie_buff_home"
     elif activity == "LogoID":
@@ -1356,7 +1358,7 @@ def render_user_dashboard():
                 st.rerun()
 
         st.markdown("")
-        act_row2_c1, act_row2_c2, act_row2_c3 = st.columns(3, gap="large")
+        act_row2_c1, act_row2_c2, act_row2_c3, act_row2_c4 = st.columns(4, gap="large")
         with act_row2_c1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #8b5cf6;">
@@ -1394,6 +1396,19 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("🔬 Science Corner", key="btn_science", width="stretch", type="primary"):
                 select_activity("Science")
+                st.rerun()
+
+        with act_row2_c4:
+            st.markdown("""
+            <div class="score-card" style="border-top: 5px solid #b45309;">
+                <div style="font-size: 3rem;">📜</div>
+                <h3 style="margin: 0.5rem 0;">History</h3>
+                <p style="color: #6b7280;">Grade 7 · Unit 2: Rise of Islam</p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("")
+            if st.button("📜 History", key="btn_history", width="stretch", type="primary"):
+                select_activity("History")
                 st.rerun()
 
         st.markdown("")
@@ -7344,6 +7359,18 @@ def render_cube_addition():
                     st.rerun()
 
 
+def render_history_home():
+    import arjun_history7_ui
+
+    arjun_history7_ui.render_home()
+
+
+def render_history_practice():
+    import arjun_history7_ui
+
+    arjun_history7_ui.render_practice()
+
+
 def render_arjun_spanish_home():
     import arjun_spanish_ui
 
@@ -7419,6 +7446,10 @@ elif page == "science_unit":
     render_science_unit()
 elif page == "science_practice":
     render_science_practice()
+elif page == "history_home":
+    render_history_home()
+elif page == "history_practice":
+    render_history_practice()
 elif page == "logo_id_home":
     render_logo_id_home()
 elif page == "logo_id_practice":
