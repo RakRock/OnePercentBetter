@@ -91,12 +91,37 @@ class TestHistoryUnit2(unittest.TestCase):
         self.assertEqual(hist.lesson_for_topic("split")["id"], "empire")
 
 
+class TestHistoryUnit1(unittest.TestCase):
+    def test_asian_civilizations_notes_and_quiz(self):
+        import arjun_history_unit1 as unit1
+
+        self.assertEqual(unit1.UNIT["id"], 1)
+        self.assertEqual(unit1.UNIT["name"], "Medieval Asian Civilizations")
+        self.assertIs(hist.content_for(1), unit1)
+        self.assertEqual(len(unit1.LESSONS), 2)
+        self.assertEqual(len(unit1.QUESTIONS), 60)
+        by_id = {question["id"]: question for question in unit1.QUESTIONS}
+        self.assertEqual(by_id[1]["options"][0], "Tang Dynasty")
+        self.assertEqual(by_id[5]["options"][0], "Gunpowder")
+        self.assertEqual(by_id[31]["options"][0], "The Shogun")
+        self.assertEqual(by_id[35]["options"][0], "Bushido")
+        self.assertEqual(sum(1 for question in unit1.QUESTIONS if question["topic"] == "china"), 30)
+        self.assertEqual(sum(1 for question in unit1.QUESTIONS if question["topic"] == "japan"), 30)
+        text = "\n".join(unit1.load_lesson_notes(lesson["id"]) for lesson in unit1.LESSONS)
+        text += unit1.load_review_notes()
+        for phrase in ("Grand Canal", "Confucianism", "Gunpowder", "shogun", "Bushido", "Shinto"):
+            self.assertIn(phrase, text)
+        quiz = unit1.build_quiz(unit_mix=True, rng=random.Random(2))
+        self.assertEqual(len(quiz), unit1.UNIT_QUIZ_SIZE)
+        self.assertEqual({question["topic"] for question in quiz}, {"china", "japan"})
+
+
 class TestHistoryUnit3(unittest.TestCase):
     def test_unit_list_includes_west_africa(self):
         import arjun_history_unit3 as unit3
 
         units = hist.list_units()
-        self.assertEqual([unit["id"] for unit in units], [2, 3])
+        self.assertEqual([unit["id"] for unit in units], [1, 2, 3, 4])
         self.assertEqual(unit3.UNIT["name"], "The Gold and Salt Kingdoms of West Africa")
         self.assertIs(hist.content_for(3), unit3)
         self.assertEqual(len(unit3.LESSONS), 5)
@@ -125,4 +150,40 @@ class TestHistoryUnit3(unittest.TestCase):
             self.assertEqual(
                 question["options"][question["answer"]],
                 next(item["options"][0] for item in unit3.QUESTIONS if item["id"] == question["id"]),
+            )
+
+
+class TestHistoryUnit4(unittest.TestCase):
+    def test_medieval_europe_notes_and_quiz(self):
+        import arjun_history_unit4 as unit4
+
+        self.assertEqual(unit4.UNIT["name"], "Medieval Europe")
+        self.assertIs(hist.content_for(4), unit4)
+        self.assertEqual(len(unit4.LESSONS), 4)
+        self.assertEqual(len(unit4.QUESTIONS), 100)
+        by_id = {question["id"]: question for question in unit4.QUESTIONS}
+        self.assertEqual(by_id[1]["options"][0], "Feudalism")
+        self.assertEqual(by_id[2]["options"][0], "A Fief")
+        self.assertEqual(by_id[10]["options"][0], "A Page")
+        self.assertEqual(by_id[34]["options"][0], "Flying Buttresses")
+        self.assertEqual(by_id[35]["options"][0], "To teach biblical stories visually to peasants who could not read")
+        self.assertEqual(by_id[40]["options"][0], "Pope Urban II")
+        self.assertEqual(by_id[55]["options"][0], "The Magna Carta")
+        self.assertEqual(by_id[64]["options"][0], "The Great Charter")
+        self.assertEqual(by_id[90]["options"][0], "The Reconquista")
+        self.assertEqual(by_id[100]["options"][0], "Knights and town burgesses (commoners)")
+        text = "\n".join(unit4.load_lesson_notes(lesson["id"]) for lesson in unit4.LESSONS)
+        text += unit4.load_review_notes()
+        for phrase in ("fief", "excommunication", "Pope Urban II", "Magna Carta", "Runnymede"):
+            self.assertIn(phrase, text)
+        quiz = unit4.build_quiz(unit_mix=True, rng=random.Random(4))
+        self.assertEqual(len(quiz), unit4.UNIT_QUIZ_SIZE)
+        self.assertEqual(
+            {question["topic"] for question in quiz},
+            {topic["id"] for topic in unit4.TOPICS},
+        )
+        for question in quiz:
+            self.assertEqual(
+                question["options"][question["answer"]],
+                next(item["options"][0] for item in unit4.QUESTIONS if item["id"] == question["id"]),
             )

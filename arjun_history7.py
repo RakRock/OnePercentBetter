@@ -1028,10 +1028,12 @@ def load_review_notes() -> str:
 
 
 def list_units() -> list[dict]:
+    import arjun_history_unit1 as unit1
     import arjun_history_unit3 as unit3
+    import arjun_history_unit4 as unit4
 
     cards = []
-    for content in (_self(), unit3):
+    for content in (unit1, _self(), unit3, unit4):
         unit = content.UNIT
         cards.append(
             {
@@ -1047,10 +1049,16 @@ def list_units() -> list[dict]:
 
 
 def content_for(unit_id: int):
+    import arjun_history_unit1 as unit1
     import arjun_history_unit3 as unit3
+    import arjun_history_unit4 as unit4
 
+    if int(unit_id) == 1:
+        return unit1
     if int(unit_id) == 3:
         return unit3
+    if int(unit_id) == 4:
+        return unit4
     if int(unit_id) == 2:
         return _self()
     raise KeyError(unit_id)

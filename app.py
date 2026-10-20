@@ -1410,7 +1410,7 @@ def render_user_dashboard():
             <div class="score-card" style="border-top: 5px solid #b45309;">
                 <div style="font-size: 3rem;">📜</div>
                 <h3 style="margin: 0.5rem 0;">History</h3>
-                <p style="color: #6b7280;">Grade 7 · Units 2 and 3</p>
+                <p style="color: #6b7280;">Grade 7 · Units 1–4</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
