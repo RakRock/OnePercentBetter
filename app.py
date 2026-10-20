@@ -729,6 +729,7 @@ def select_activity(activity):
         st.session_state.acc_saved = False
         st.session_state.acc_used_fallback = False
         st.session_state.acc_start_time = None
+        st.session_state.acc_session_id = None
     elif activity == "EdgenuityCourse3":
         st.session_state.current_page = "edgenuity_course3_home"
         st.session_state.ec3_unit_id = None

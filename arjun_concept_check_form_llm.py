@@ -131,6 +131,7 @@ def _normalize(q: dict, section_id: str, allowed_stems: set[str]) -> dict:
         "explanation": explanation,
         "source": "concept_check_form",
         "origin": "llm",
+        "category_label": stem.replace("_", " ").title(),
     }
     return c3ans.finalize_question(item)
 
@@ -174,6 +175,7 @@ def generate_section_set(xai_api_key: str, section_id: str, *, count: int | None
     system = _system_prompt(section, n)
     client = make_xai_client(xai_api_key)
     last_err = ""
+    last_partial: list[dict] = []
     for _attempt in range(_MAX_RETRIES):
         try:
             resp = client.chat.completions.create(
@@ -187,30 +189,66 @@ def generate_section_set(xai_api_key: str, section_id: str, *, count: int | None
             )
             raw = (resp.choices[0].message.content or "").strip()
             out = _parse(raw, section["id"], allowed)
-            return out[:n]
+            if len(out) >= n:
+                return out[:n]
+            last_partial = out
+            raise ValueError(f"Got {len(out)} valid questions, need {n}")
         except (APIConnectionError, APITimeoutError, OpenAIError) as exc:
             last_err = str(exc)
             break
         except (ValueError, json.JSONDecodeError, KeyError, TypeError) as exc:
             last_err = str(exc)
-            user_msg += f"\n\nInvalid prior response ({last_err}). {NUMERIC_RETRY_HINT}"
+            user_msg += f"\n\nInvalid prior response ({last_err}). Need exactly {n} valid questions. {NUMERIC_RETRY_HINT}"
+    if last_partial:
+        return _top_up_from_seeds(section["id"], last_partial, n)
     raise RuntimeError(last_err or "Grok did not return a usable set")
+
+
+def _shuffle_seed(seed: dict) -> dict:
+    item = dict(seed)
+    opts = list(item["options"])
+    correct = opts[item["answer"]]
+    random.shuffle(opts)
+    item["options"] = opts
+    item["answer"] = opts.index(correct)
+    item["origin"] = item.get("origin") or "seed_fallback"
+    item.setdefault("category_label", str(item.get("stem", "")).replace("_", " ").title())
+    return c3ans.finalize_question(item)
+
+
+def _top_up_from_seeds(section_id: str, questions: list[dict], count: int) -> list[dict]:
+    """Fill a short set from unused paper seeds so the session always has `count` items."""
+    out = list(questions)
+    if len(out) >= count:
+        return out[:count]
+    used_ids = {str(q.get("id")) for q in out}
+    used_text = {str(q.get("question", "")).strip().lower() for q in out}
+    extras = []
+    for seed in ccform.seeds_for_section(section_id):
+        qid = str(seed.get("id"))
+        text = str(seed.get("question", "")).strip().lower()
+        if qid in used_ids or text in used_text:
+            continue
+        extras.append(_shuffle_seed(seed))
+        used_ids.add(qid)
+        used_text.add(text)
+    random.shuffle(extras)
+    out.extend(extras)
+    if len(out) < count:
+        # Recycle remaining seeds rather than return a short paper.
+        pool = [_shuffle_seed(s) for s in ccform.seeds_for_section(section_id)]
+        random.shuffle(pool)
+        i = 0
+        while len(out) < count and pool:
+            extra = dict(pool[i % len(pool)])
+            extra["id"] = f"{extra.get('id', 'seed')}_fill_{len(out)}"
+            out.append(extra)
+            i += 1
+    return out[:count]
 
 
 def fallback_seed_set(section_id: str, *, count: int | None = None) -> list[dict]:
     """Shuffled copies of the paper seeds if Grok is unavailable."""
     section = ccform.get_section(section_id)
-    seeds = ccform.seeds_for_section(section_id)
     n = int(count or (section["session_count"] if section else 5))
-    picked = random.sample(seeds, k=min(n, len(seeds)))
-    out = []
-    for seed in picked:
-        item = dict(seed)
-        opts = list(item["options"])
-        correct = opts[item["answer"]]
-        random.shuffle(opts)
-        item["options"] = opts
-        item["answer"] = opts.index(correct)
-        item["origin"] = "seed_fallback"
-        out.append(c3ans.finalize_question(item))
-    return out
+    return _top_up_from_seeds(section_id, [], n)

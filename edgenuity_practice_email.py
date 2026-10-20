@@ -181,6 +181,33 @@ def send_spanish_report_email(
     )
 
 
+def send_concept_check_report_email(
+    *,
+    student_name: str,
+    unit_title: str,
+    unit_subtitle: str,
+    report: dict,
+    time_spent_seconds: int,
+    when: datetime | None = None,
+    session_meta: dict | None = None,
+    questions: list[dict] | None = None,
+    answers: list[dict] | None = None,
+) -> EmailSendResult:
+    return send_report(
+        student_name=student_name,
+        unit_title=unit_title,
+        unit_subtitle=unit_subtitle,
+        report=report,
+        time_spent_seconds=time_spent_seconds,
+        when=when,
+        session_meta=session_meta,
+        questions=questions,
+        answers=answers,
+        program_name="Concept Check",
+        report_heading="Arjun Concept Check Report",
+    )
+
+
 def send_course3_report_email(
     *,
     student_name: str,
@@ -222,6 +249,7 @@ __all__ = [
     "render_practice_email_result",
     "send_harshit_unit_test_report_email",
     "send_spanish_report_email",
+    "send_concept_check_report_email",
     "send_course3_report_email",
     "send_harshit_report_email",
     "send_linear_equation_report_email",

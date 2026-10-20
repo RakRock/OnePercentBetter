@@ -67,7 +67,7 @@ SECTIONS: dict[str, dict] = {
             "activity_7_scientific_notation.md",
             "activity_8_operations_scientific_notation.md",
         ],
-        "session_count": 3,
+        "session_count": 5,
         "emoji": "🔬",
         "color": "#db2777",
         "unit_id": 1,
@@ -75,7 +75,7 @@ SECTIONS: dict[str, dict] = {
     "VI": {
         "id": "VI",
         "roman": "VI",
-        "title": "Representing Patterns",
+        "title": "Unit 6 — Representing Patterns",
         "short": "Tables, constant difference, expression in n",
         "note_files": ["activity_1_representing_patterns.md"],
         "session_count": 5,
@@ -106,6 +106,7 @@ def _q(
         "answer": answer,
         "explanation": explanation,
         "source": "concept_check_form",
+        "category_label": stem.replace("_", " ").title(),
     }
 
 
@@ -499,6 +500,46 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "4×10²=0.04×10⁴. 8.4×10⁴ − 0.04×10⁴ = 8.36×10⁴ seconds.",
     ),
+    _q(
+        "cc_v_est", "V", "later form",
+        "estimate_sci",
+        "Estimate 8,345,000,676,709 in scientific notation (nearest hundredth in the coefficient).",
+        ["8.35 × 10¹²", "8.34 × 10¹²", "8.35 × 10⁹", "83.5 × 10¹¹"],
+        0,
+        "Round to 8.35 and move the decimal 12 places: 8.35 × 10¹².",
+    ),
+    _q(
+        "cc_v_add", "V", "later form",
+        "add_sci",
+        "Simplify. Write the final answer in scientific notation.\n(6.5 × 10¹⁵) + (2 × 10¹³)",
+        ["6.52 × 10¹⁵", "8.5 × 10¹⁵", "6.5 × 10¹⁵", "6.52 × 10¹³"],
+        0,
+        "2 × 10¹³ = 0.02 × 10¹⁵. 6.5 + 0.02 = 6.52, so 6.52 × 10¹⁵.",
+    ),
+    _q(
+        "cc_v_div", "V", "later form",
+        "divide_sci",
+        "Simplify. Write the final answer in proper scientific notation.\n(3 × 10³²) ÷ (4 × 10⁸)",
+        ["7.5 × 10²³", "0.75 × 10²⁴", "7.5 × 10²⁴", "3/4 × 10²⁴"],
+        0,
+        "3/4 = 0.75 and 32 − 8 = 24, so 0.75 × 10²⁴ = 7.5 × 10²³.",
+    ),
+    _q(
+        "cc_v_to_standard", "V", "later form",
+        "sci_to_standard",
+        "Write 4.2 × 10⁵ in standard form.",
+        ["420,000", "42,000", "4,200,000", "0.000042"],
+        0,
+        "Move the decimal 5 places right: 420,000.",
+    ),
+    _q(
+        "cc_v_form_check", "V", "later form",
+        "rewrite_sci_form",
+        "Which is written in proper scientific notation?",
+        ["3.5 × 10⁴", "35 × 10³", "0.35 × 10⁵", "3.5 × 4¹⁰"],
+        0,
+        "The coefficient must satisfy 1 ≤ |a| < 10, and the 10 is the base.",
+    ),
     # ── VI  Representing Patterns (VI-1 packet) ──
     _q(
         "cc_vi_vi1_expr", "VI", "VI-1",
@@ -625,3 +666,49 @@ def seeds_for_section(section_id: str) -> list[dict]:
 def session_count_for_section(section_id: str) -> int:
     info = get_section(section_id)
     return int(info["session_count"]) if info else 5
+
+
+def build_session_report(questions: list[dict], answers: list[dict]) -> dict:
+    """Score + per-stem breakdown for the Concept Check results email."""
+    buckets: dict[str, dict[str, int]] = {}
+    for q, ans in zip(questions, answers):
+        name = str(q.get("category_label") or q.get("stem") or "Concept Check")
+        name = name.replace("_", " ").title() if "_" in name else name
+        stats = buckets.setdefault(name, {"correct": 0, "total": 0})
+        stats["total"] += 1
+        if ans.get("correct"):
+            stats["correct"] += 1
+    strengths: list[dict] = []
+    needs_revision: list[dict] = []
+    for name, stats in buckets.items():
+        pct = int(100 * stats["correct"] / stats["total"]) if stats["total"] else 0
+        row = {
+            "name": name,
+            "correct": stats["correct"],
+            "total": stats["total"],
+            "pct": pct,
+            "emoji": "✅" if pct >= 80 else "📝",
+        }
+        if pct >= 80:
+            strengths.append(row)
+        else:
+            needs_revision.append({**row, "tip": f"Review {name}."})
+    strengths.sort(key=lambda e: (-e["pct"], e["name"]))
+    needs_revision.sort(key=lambda e: (e["pct"], e["name"]))
+    correct_count = sum(1 for a in answers if a.get("correct"))
+    total = len(answers)
+    score_pct = int(100 * correct_count / total) if total else 0
+    if needs_revision:
+        tip = f"{needs_revision[0]['name']}: {needs_revision[0]['tip']}"
+    elif score_pct == 100:
+        tip = "Perfect Concept Check — try a fresh paper to stay sharp."
+    else:
+        tip = "Solid session. Start a fresh paper for more practice."
+    return {
+        "correct_count": correct_count,
+        "total": total,
+        "score_pct": score_pct,
+        "strengths": strengths,
+        "needs_revision": needs_revision,
+        "tip": tip,
+    }

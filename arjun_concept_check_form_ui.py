@@ -1,9 +1,10 @@
-"""Streamlit UI for Arjun's Friday Concept Check (Unit 1 sections I–V)."""
+"""Streamlit UI for Arjun's Friday Concept Check (Unit 1 I–V and Unit 6)."""
 
 from __future__ import annotations
 
 import os
 import time
+import uuid
 
 import streamlit as st
 
@@ -11,6 +12,7 @@ import arjun_concept_check_form as ccform
 import arjun_concept_check_form_llm as ccform_llm
 import arjun_course3_answers as c3ans
 import database as db
+import edgenuity_practice_email as ec3mail
 
 PRIMARY = "#0f766e"
 PRIMARY_END = "#14b8a6"
@@ -31,6 +33,7 @@ def _clear_session():
     st.session_state.acc_saved = False
     st.session_state.acc_start_time = None
     st.session_state.acc_used_fallback = False
+    st.session_state.acc_session_id = None
 
 
 def _back_dashboard():
@@ -69,6 +72,7 @@ def _start_section(section_id: str):
     st.session_state.acc_saved = False
     st.session_state.acc_used_fallback = used_fallback
     st.session_state.acc_start_time = time.time()
+    st.session_state.acc_session_id = str(uuid.uuid4())
     st.session_state.current_page = "concept_check_practice"
     st.rerun()
 
@@ -94,37 +98,54 @@ def render_home():
         unsafe_allow_html=True,
     )
     st.caption(
-        "I–IV seeds are the attached CC1–CC5 papers. "
-        "V uses a later school form. "
-        "VI is Unit 6 packet VI-1 Representing Patterns (tables, constant difference, expression in n)."
+        "Pick a course unit, then a paper section. "
+        "Unit 1 is CC1–CC5 (I–V). Unit 6 is packet VI-1 Representing Patterns."
     )
 
-    for row in (("I", "II", "III"), ("IV", "V", "VI")):
-        cols = st.columns(3, gap="large")
-        for col, sid in zip(cols, row):
-            with col:
-                if not sid:
-                    continue
-                info = ccform.get_section(sid)
-                n = len(ccform.seeds_for_section(sid))
-                st.markdown(
-                    f"""
-                <div class="score-card" style="border-top: 5px solid {info['color']};">
-                    <div style="font-size:2.2rem;">{info['emoji']}</div>
-                    <h3 style="margin:0.4rem 0;">{info['roman']}) {info['title']}</h3>
-                    <p style="color:#6b7280;">{info['short']}</p>
-                    <p style="color:#9ca3af;font-size:0.85rem;">{n} paper seeds · {info['session_count']} fresh questions</p>
-                </div>
-                """,
-                    unsafe_allow_html=True,
-                )
-                if st.button(
-                    f"Start {info['roman']}",
-                    key=f"acc_start_{sid}",
-                    width="stretch",
-                    type="primary",
-                ):
-                    _start_section(sid)
+    _render_unit_group(
+        "Unit 6 — Patterns and modeling",
+        ("VI",),
+        start_label="Start Unit 6",
+    )
+    _render_unit_group("Unit 1 — Numerical relationships", ("I", "II", "III"))
+    _render_unit_group("Unit 1 (continued)", ("IV", "V"))
+
+
+def _section_heading(info: dict) -> str:
+    title = info["title"]
+    if title.startswith("Unit "):
+        return title
+    return f"{info['roman']}) {title}"
+
+
+def _render_unit_group(heading: str, section_ids: tuple[str, ...], *, start_label: str | None = None) -> None:
+    st.markdown(f"### {heading}")
+    cols = st.columns(max(3, len(section_ids)), gap="large")
+    for col, sid in zip(cols, section_ids):
+        with col:
+            info = ccform.get_section(sid)
+            if not info:
+                continue
+            n = len(ccform.seeds_for_section(sid))
+            st.markdown(
+                f"""
+            <div class="score-card" style="border-top: 5px solid {info['color']};">
+                <div style="font-size:2.2rem;">{info['emoji']}</div>
+                <h3 style="margin:0.4rem 0;">{_section_heading(info)}</h3>
+                <p style="color:#6b7280;">{info['short']}</p>
+                <p style="color:#9ca3af;font-size:0.85rem;">{n} paper seeds · {info['session_count']} fresh questions</p>
+            </div>
+            """,
+                unsafe_allow_html=True,
+            )
+            button_label = start_label or f"Start {info['roman']}"
+            if st.button(
+                button_label,
+                key=f"acc_start_{sid}",
+                width="stretch",
+                type="primary",
+            ):
+                _start_section(sid)
 
 
 def render_practice():
@@ -146,7 +167,7 @@ def render_practice():
     with mid:
         if info:
             st.markdown(
-                f"<h3 style='text-align:center;margin:0;'>{info['roman']}) {info['title']}</h3>",
+                f"<h3 style='text-align:center;margin:0;'>{_section_heading(info)}</h3>",
                 unsafe_allow_html=True,
             )
             st.caption(
@@ -242,6 +263,8 @@ def render_practice():
     time_spent = int(time.time() - st.session_state.acc_start_time) if st.session_state.get("acc_start_time") else 0
     minutes, seconds = divmod(time_spent, 60)
     label = f"{info['roman']}) {info['title']}" if info else "Concept Check"
+    report = ccform.build_session_report(questions, answers)
+    session_id = st.session_state.get("acc_session_id")
 
     if user and not st.session_state.get("acc_saved"):
         db.save_activity_score(
@@ -276,6 +299,25 @@ def render_practice():
     """,
         unsafe_allow_html=True,
     )
+
+    if session_id and st.session_state.get("acc_email_sent_for") != session_id:
+        st.session_state.acc_email_sent_for = session_id
+        if ec3mail.practice_email_enabled():
+            mail_result = ec3mail.send_concept_check_report_email(
+                student_name=name,
+                unit_title=label,
+                unit_subtitle="Friday Concept Check",
+                report=report,
+                time_spent_seconds=time_spent,
+                session_meta={
+                    "section": section_id,
+                    "origin": "seed_fallback" if st.session_state.get("acc_used_fallback") else "grok",
+                },
+                questions=questions,
+                answers=answers,
+            )
+            ec3mail.render_practice_email_result(mail_result)
+
     c1, c2 = st.columns(2)
     with c1:
         if st.button("🔁 Fresh paper (new Grok set)", key="acc_again", width="stretch", type="primary"):
