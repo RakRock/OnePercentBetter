@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import copy
 import random
+from pathlib import Path
 
 GRADE = 7
 SUBJECT = "History"
@@ -949,3 +950,113 @@ def build_quiz(
     else:
         return []
     return [_shuffle_question(question, picker) for question in picked]
+
+
+NOTES_DIR = Path(__file__).resolve().parent / "ArjunHistory" / "notes" / "unit_2"
+
+LESSONS: list[dict] = [
+    {
+        "id": "geography",
+        "chapter": 1,
+        "title": "The Giant Sandbox",
+        "subtitle": "The geography of the Arabian Peninsula",
+        "emoji": "🐪",
+        "file": "chapter_1_geography.md",
+        "topic_ids": ["geography"],
+    },
+    {
+        "id": "muhammad",
+        "chapter": 2,
+        "title": "The Honest Merchant",
+        "subtitle": "The Prophet Muhammad",
+        "emoji": "📜",
+        "file": "chapter_2_muhammad.md",
+        "topic_ids": ["muhammad"],
+    },
+    {
+        "id": "pillars",
+        "chapter": 3,
+        "title": "The 5 Rules of the Game",
+        "subtitle": "The Five Pillars of Islam",
+        "emoji": "🖐️",
+        "file": "chapter_3_pillars.md",
+        "topic_ids": ["pillars"],
+    },
+    {
+        "id": "empire",
+        "chapter": 4,
+        "title": "The Expanding Empire and the Big Disagreement",
+        "subtitle": "Caliphs, trade, and Sunni and Shi'a",
+        "emoji": "👑",
+        "file": "chapter_4_empire.md",
+        "topic_ids": ["empire", "split"],
+    },
+    {
+        "id": "golden",
+        "chapter": 5,
+        "title": "Unlocking Achievements",
+        "subtitle": "The Islamic Golden Age",
+        "emoji": "🔬",
+        "file": "chapter_5_golden_age.md",
+        "topic_ids": ["golden"],
+    },
+]
+
+_LESSON_BY_ID = {lesson["id"]: lesson for lesson in LESSONS}
+_LESSON_BY_TOPIC = {
+    topic_id: lesson["id"]
+    for lesson in LESSONS
+    for topic_id in lesson["topic_ids"]
+}
+
+
+def lesson_by_id(lesson_id: str) -> dict:
+    return _LESSON_BY_ID[str(lesson_id)]
+
+
+def lesson_for_topic(topic_id: str) -> dict:
+    return lesson_by_id(_LESSON_BY_TOPIC[str(topic_id)])
+
+
+def load_lesson_notes(lesson_id: str) -> str:
+    lesson = lesson_by_id(lesson_id)
+    return (NOTES_DIR / lesson["file"]).read_text(encoding="utf-8")
+
+
+def load_review_notes() -> str:
+    return (NOTES_DIR / "review.md").read_text(encoding="utf-8")
+
+
+def list_units() -> list[dict]:
+    import arjun_history_unit3 as unit3
+
+    cards = []
+    for content in (_self(), unit3):
+        unit = content.UNIT
+        cards.append(
+            {
+                "id": unit["id"],
+                "name": unit["name"],
+                "emoji": unit["emoji"],
+                "color": unit["color"],
+                "blurb": unit["blurb"],
+                "questions": len(content.QUESTIONS),
+            }
+        )
+    return cards
+
+
+def content_for(unit_id: int):
+    import arjun_history_unit3 as unit3
+
+    if int(unit_id) == 3:
+        return unit3
+    if int(unit_id) == 2:
+        return _self()
+    raise KeyError(unit_id)
+
+
+def _self():
+    import sys
+
+    return sys.modules[__name__]

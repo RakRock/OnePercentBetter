@@ -698,6 +698,12 @@ def select_activity(activity):
         st.session_state.current_page = "science_home"
     elif activity == "History":
         st.session_state.current_page = "history_home"
+        st.session_state.hist_tab = "notes"
+        st.session_state.hist_unit_id = None
+        st.session_state.hist_questions = []
+        st.session_state.hist_current = 0
+        st.session_state.hist_answers = []
+        st.session_state.hist_last_feedback = None
     elif activity == "MovieBuff":
         st.session_state.current_page = "movie_buff_home"
     elif activity == "LogoID":
@@ -1404,7 +1410,7 @@ def render_user_dashboard():
             <div class="score-card" style="border-top: 5px solid #b45309;">
                 <div style="font-size: 3rem;">📜</div>
                 <h3 style="margin: 0.5rem 0;">History</h3>
-                <p style="color: #6b7280;">Grade 7 · Unit 2: Rise of Islam</p>
+                <p style="color: #6b7280;">Grade 7 · Units 2 and 3</p>
             </div>
             """, unsafe_allow_html=True)
             st.markdown("")
@@ -7372,6 +7378,12 @@ def render_history_practice():
     arjun_history7_ui.render_practice()
 
 
+def render_history_notes():
+    import arjun_history7_ui
+
+    arjun_history7_ui.render_notes()
+
+
 def render_arjun_spanish_home():
     import arjun_spanish_ui
 
@@ -7451,6 +7463,8 @@ elif page == "history_home":
     render_history_home()
 elif page == "history_practice":
     render_history_practice()
+elif page == "history_notes":
+    render_history_notes()
 elif page == "logo_id_home":
     render_logo_id_home()
 elif page == "logo_id_practice":

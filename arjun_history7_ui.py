@@ -1,4 +1,4 @@
-"""Streamlit quiz for Arjun's Grade 7 History, Unit 2."""
+"""Streamlit pages for Arjun's Grade 7 History units."""
 
 from __future__ import annotations
 
@@ -25,8 +25,7 @@ def _back_dashboard() -> None:
     st.session_state.selected_activity = None
 
 
-def _back_home() -> None:
-    st.session_state.current_page = "history_home"
+def _clear_quiz() -> None:
     st.session_state.hist_questions = []
     st.session_state.hist_current = 0
     st.session_state.hist_answers = []
@@ -34,7 +33,8 @@ def _back_home() -> None:
 
 
 def start_quiz(questions: list[dict], label: str, retry: dict) -> None:
-    st.session_state.current_page = "history_practice"
+    st.session_state.current_page = "history_home"
+    st.session_state.hist_tab = "practice"
     st.session_state.hist_questions = questions
     st.session_state.hist_current = 0
     st.session_state.hist_answers = []
@@ -45,182 +45,78 @@ def start_quiz(questions: list[dict], label: str, retry: dict) -> None:
     st.session_state.hist_retry = retry
 
 
-def render_home() -> None:
-    name, user = _user()
-    unit = hist.UNIT
-
-    col_nav, _ = st.columns([1, 6])
-    with col_nav:
-        if st.button("← Back", key="hist_back_dash"):
-            _back_dashboard()
-            st.rerun()
-
-    st.markdown(
-        f"""
-        <div style="text-align:center;padding:0.4rem 0 0.8rem 0;">
-            <h1 style="font-size:2.4rem;margin-bottom:0.2rem;">📜 {_esc(name)}'s History</h1>
-            <p style="color:#6b7280;font-size:1.1rem;margin:0;">
-                Grade {hist.GRADE} · Unit {unit['id']}: {_esc(unit['name'])}
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    today = db.get_today_scores(user["id"], activity_type=hist.ACTIVITY_TYPE) if user else []
-    total = db.get_scores_history(user["id"], activity_type=hist.ACTIVITY_TYPE, days=365) if user else []
-    best = max((row["score"] for row in today), default=None)
-
-    stat1, stat2, stat3 = st.columns(3)
-    with stat1:
-        st.markdown(
-            f'<div class="score-card"><div class="score-number">📅 {len(today)}</div>'
-            f'<div class="score-label">Quizzes Today</div></div>',
-            unsafe_allow_html=True,
-        )
-    with stat2:
-        best_label = f"{best}%" if best is not None else "—"
-        st.markdown(
-            f'<div class="score-card"><div class="score-number">🎯 {best_label}</div>'
-            f'<div class="score-label">Today\'s Best</div></div>',
-            unsafe_allow_html=True,
-        )
-    with stat3:
-        st.markdown(
-            f'<div class="score-card"><div class="score-number">⭐ {len(total)}</div>'
-            f'<div class="score-label">Total Quizzes</div></div>',
-            unsafe_allow_html=True,
-        )
-
-    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
-    st.markdown(
-        f"""
-        <div style="padding:1rem 1.2rem;background:{unit['color']}12;border-radius:16px;
-             border:2px solid {unit['color']};margin-bottom:0.8rem;">
-            <div style="color:{unit['color']};font-size:0.85rem;font-weight:700;">
-                UNIT {unit['id']}
-            </div>
-            <div style="font-size:1.35rem;margin-top:0.2rem;">
-                {unit['emoji']} {_esc(unit['name'])}
-            </div>
-            <p style="color:#4b5563;margin:0.35rem 0 0 0;">{_esc(unit['blurb'])}</p>
-            <p style="color:#6b7280;margin:0.35rem 0 0 0;">
-                {len(hist.QUESTIONS)} multiple-choice questions · {len(hist.TOPICS)} topics
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    if st.button(
-        f"Unit {unit['id']} mix · {hist.UNIT_QUIZ_SIZE} questions",
-        key="hist_unit_mix",
-        type="primary",
-    ):
-        questions = hist.build_quiz(unit_mix=True)
-        start_quiz(
-            questions,
-            f"Unit {unit['id']}: {unit['name']} mix",
-            {"unit_mix": True, "label": f"Unit {unit['id']}: {unit['name']} mix"},
-        )
-        st.rerun()
-
-    st.markdown("")
-    st.markdown("### Topics")
-    counts = hist.question_counts()
-    cards = st.columns(3, gap="medium")
-    for index, topic in enumerate(hist.TOPICS):
-        available = counts[topic["id"]]
-        with cards[index % 3]:
-            st.markdown(
-                f"""
-                <div style="padding:1rem;border-radius:12px;border-top:5px solid {topic['color']};
-                     background:{topic['color']}10;min-height:10.5rem;">
-                    <div style="font-size:1.8rem;">{topic['emoji']}</div>
-                    <strong style="color:{topic['color']};">{_esc(topic['name'])}</strong>
-                    <p style="color:#6b7280;font-size:0.85rem;margin:0.35rem 0;">
-                        {available} questions
-                    </p>
-                    <p style="color:#4b5563;font-size:0.9rem;margin:0;">{_esc(topic['blurb'])}</p>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-            practice_n = min(hist.TOPIC_QUIZ_SIZE, available)
-            if st.button(
-                f"Practice · {practice_n} questions",
-                key=f"hist_practice_{topic['id']}",
-                width="stretch",
-            ):
-                questions = hist.build_quiz(topic_id=topic["id"])
-                label = topic["name"]
-                start_quiz(
-                    questions,
-                    label,
-                    {"topic_id": topic["id"], "full_topic": False, "label": label},
-                )
-                st.rerun()
-            if st.button(
-                f"All {available} questions",
-                key=f"hist_all_{topic['id']}",
-                width="stretch",
-            ):
-                questions = hist.build_quiz(topic_id=topic["id"], full_topic=True)
-                label = f"{topic['name']} · all questions"
-                start_quiz(
-                    questions,
-                    label,
-                    {"topic_id": topic["id"], "full_topic": True, "label": label},
-                )
-                st.rerun()
+def _content():
+    unit_id = st.session_state.get("hist_unit_id")
+    if not unit_id:
+        return None
+    return hist.content_for(int(unit_id))
 
 
-def render_practice() -> None:
-    _, user = _user()
+def _open_unit(unit_id: int) -> None:
+    st.session_state.hist_unit_id = int(unit_id)
+    st.session_state.hist_tab = "notes"
+    _clear_quiz()
+
+
+def _render_lesson_notes(content) -> None:
+    st.caption(f"{len(content.LESSONS)} short chapters.")
+    for lesson in content.LESSONS:
+        st.markdown(content.load_lesson_notes(lesson["id"]))
+        st.markdown("---")
+    st.markdown(content.load_review_notes())
+
+
+def _render_practice_tab(user, content) -> None:
     questions = st.session_state.get("hist_questions") or []
     current = int(st.session_state.get("hist_current") or 0)
     total = len(questions)
     done = current >= total and total > 0
-    label = st.session_state.get("hist_quiz_label") or hist.UNIT["name"]
+    unit = content.UNIT
+    label = st.session_state.get("hist_quiz_label") or f"Unit {unit['id']}: {unit['name']}"
 
-    nav, mid, _ = st.columns([1, 4, 1])
-    with nav:
-        if st.button("← History", key="hist_back_home"):
-            _back_home()
-            st.rerun()
-    with mid:
-        if not done and total:
-            elapsed = int(time.time() - st.session_state.hist_start_time) if st.session_state.get("hist_start_time") else 0
-            st.markdown(
-                f"""
-                <div style="text-align:center;color:#6b7280;font-size:0.9rem;padding-top:0.5rem;">
-                    Question {current + 1} of {total} &nbsp;|&nbsp; ⏱️ {elapsed}s
-                </div>
-                """,
-                unsafe_allow_html=True,
+    if total == 0:
+        today = db.get_today_scores(user["id"], activity_type=hist.ACTIVITY_TYPE) if user else []
+        best = max((row["score"] for row in today), default=None)
+        best_label = f"{best}%" if best is not None else "—"
+        st.markdown(
+            f"{len(content.QUESTIONS)} multiple-choice questions. "
+            f"Each round is {content.UNIT_QUIZ_SIZE} questions. Today's best: {best_label}."
+        )
+        if st.button(
+            f"Start practice · {content.UNIT_QUIZ_SIZE} questions",
+            key="hist_start_practice",
+            type="primary",
+        ):
+            quiz_label = f"Unit {unit['id']}: {unit['name']}"
+            start_quiz(
+                content.build_quiz(unit_mix=True),
+                quiz_label,
+                {"unit_mix": True, "unit_id": unit["id"], "label": quiz_label},
             )
+            st.rerun()
+        return
 
-    st.markdown(
-        f"""
-        <div style="text-align:center;margin-bottom:0.4rem;">
-            <h1 style="color:{hist.UNIT['color']};margin:0.2rem 0;font-size:2rem;">📜 {_esc(label)}</h1>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    if not done:
+        elapsed = int(time.time() - st.session_state.hist_start_time) if st.session_state.get("hist_start_time") else 0
+        st.markdown(
+            f"""
+            <div style="text-align:center;color:#6b7280;font-size:0.9rem;padding-top:0.2rem;">
+                Question {current + 1} of {total} &nbsp;|&nbsp; ⏱️ {elapsed}s
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
     progress = (current / total) if total else 0
     st.markdown(
         f"""
-        <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0 0 1.2rem 0;">
-            <div style="width:{progress * 100:.0f}%;height:100%;background:linear-gradient(90deg,#b45309,#d97706);
+        <div style="background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden;margin:0.4rem 0 1.2rem 0;">
+            <div style="width:{progress * 100:.0f}%;height:100%;background:linear-gradient(90deg,{unit['color']},#d97706);
                  border-radius:10px;"></div>
         </div>
         """,
         unsafe_allow_html=True,
     )
-
-    if total == 0:
-        st.info("This quiz has no questions yet.")
-        return
 
     if not done:
         _render_question(questions[current], current, total)
@@ -229,15 +125,115 @@ def render_practice() -> None:
     _render_results(questions, user, total, label)
 
 
+def _render_unit_list() -> None:
+    col_nav, _ = st.columns([1, 6])
+    with col_nav:
+        if st.button("← Back", key="hist_back_dash"):
+            _back_dashboard()
+            st.rerun()
+
+    st.markdown(
+        f"""
+        <div style="padding:0.2rem 0 0.8rem 0;">
+            <h1 style="font-size:2.2rem;margin:0.15rem 0;">📜 Grade {hist.GRADE} History</h1>
+            <p style="color:#6b7280;margin:0;">Choose a unit.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    for unit in hist.list_units():
+        st.markdown(
+            f"""
+            <div style="padding:0.9rem 1rem;border-radius:12px;border-top:5px solid {unit['color']};
+                 background:{unit['color']}10;margin-bottom:0.35rem;">
+                <div style="font-size:1.5rem;">{unit['emoji']}</div>
+                <strong>Unit {unit['id']} — {_esc(unit['name'])}</strong>
+                <p style="color:#4b5563;margin:0.35rem 0 0 0;">{_esc(unit['blurb'])}</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        if st.button(f"Open Unit {unit['id']}", key=f"hist_open_unit_{unit['id']}", type="primary"):
+            _open_unit(unit["id"])
+            st.rerun()
+
+
+def render_home() -> None:
+    content = _content()
+    if content is None:
+        _render_unit_list()
+        return
+
+    _, user = _user()
+    unit = content.UNIT
+    tab = st.session_state.get("hist_tab") or "notes"
+
+    col_nav, _ = st.columns([1, 6])
+    with col_nav:
+        if st.button("← Units", key="hist_back_units"):
+            st.session_state.hist_unit_id = None
+            st.session_state.hist_tab = "notes"
+            _clear_quiz()
+            st.rerun()
+
+    st.markdown(
+        f"""
+        <div style="padding:0.2rem 0 0.6rem 0;">
+            <div style="color:{unit['color']};font-size:0.85rem;font-weight:700;">
+                GRADE {hist.GRADE} HISTORY
+            </div>
+            <h1 style="font-size:2.2rem;margin:0.15rem 0;">
+                {unit['emoji']} Unit {unit['id']} — {_esc(unit['name'])}
+            </h1>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    notes_col, practice_col = st.columns(2)
+    with notes_col:
+        if st.button(
+            "Lesson notes",
+            key="hist_tab_notes",
+            width="stretch",
+            type="primary" if tab == "notes" else "secondary",
+        ):
+            st.session_state.hist_tab = "notes"
+            st.rerun()
+    with practice_col:
+        if st.button(
+            "Practice questions",
+            key="hist_tab_practice",
+            width="stretch",
+            type="primary" if tab == "practice" else "secondary",
+        ):
+            st.session_state.hist_tab = "practice"
+            st.rerun()
+
+    st.markdown("---")
+    if tab == "practice":
+        _render_practice_tab(user, content)
+    else:
+        _render_lesson_notes(content)
+
+
+def render_notes() -> None:
+    st.session_state.hist_tab = "notes"
+    st.session_state.current_page = "history_home"
+    render_home()
+
+
+def render_practice() -> None:
+    st.session_state.hist_tab = "practice"
+    st.session_state.current_page = "history_home"
+    render_home()
+
+
 def _render_question(question: dict, current: int, total: int) -> None:
-    topic = hist.topic_by_id(question["topic"])
     st.markdown(
         f"""
         <div class="gk-question-box">
-            <span class="gk-topic-badge" style="background:{topic['color']}20;color:{topic['color']};">
-                {topic['emoji']} {_esc(topic['name'])}
-            </span>
-            <div class="gk-question-text" style="margin-top:0.8rem;font-size:1.35rem;">
+            <div class="gk-question-text" style="font-size:1.35rem;">
                 {_esc(question['question'])}
             </div>
         </div>
@@ -333,7 +329,7 @@ def _render_results(questions: list[dict], user, total: int, label: str) -> None
     elif score_pct >= 60:
         emoji, message, color = "📜", "Good work. Review the ones you missed.", "#f59e0b"
     else:
-        emoji, message, color = "💪", "Keep going. Read each explanation and try the topic again.", "#ef4444"
+        emoji, message, color = "💪", "Keep going. Read each explanation and try another round.", "#ef4444"
 
     st.markdown(
         f"""
@@ -384,14 +380,12 @@ def _render_results(questions: list[dict], user, total: int, label: str) -> None
     with again:
         if st.button("Try again", key="hist_retry_btn", width="stretch", type="primary"):
             retry = st.session_state.get("hist_retry") or {}
-            questions = hist.build_quiz(
-                topic_id=retry.get("topic_id"),
-                full_topic=bool(retry.get("full_topic")),
-                unit_mix=bool(retry.get("unit_mix")),
-            )
+            content = hist.content_for(int(retry.get("unit_id") or st.session_state.get("hist_unit_id") or 2))
+            questions = content.build_quiz(unit_mix=True)
             start_quiz(questions, retry.get("label") or label, retry)
             st.rerun()
     with home:
-        if st.button("History home", key="hist_results_home", width="stretch"):
-            _back_home()
+        if st.button("Back to start", key="hist_results_home", width="stretch"):
+            st.session_state.hist_tab = "practice"
+            _clear_quiz()
             st.rerun()
