@@ -122,6 +122,14 @@ UNIT_6_ACTIVITIES = [
         "inline_diagrams": False,
         "diagrams": [],
     },
+    {
+        "number": 3,
+        "slug": "activity_3_solving_equations_with_models",
+        "title": "VI-3 Solving Linear Equations with Models",
+        "file": "activity_3_solving_equations_with_models.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
 ]
 
 

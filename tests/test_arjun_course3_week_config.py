@@ -355,6 +355,7 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
         self.assertIn("10/19", guidance)
         self.assertIn("VI-1", guidance)
         self.assertIn("VI-2", guidance)
+        self.assertIn("VI-3", guidance)
         self.assertEqual(c3p.get_categories(6), {})
         self.assertEqual(c3p.question_count_for_unit(6), 0)
         cfg = c3w.default_week_config(6)

@@ -11,10 +11,10 @@ import arjun_concept_check_form_llm as ccform_llm
 class TestArjunConceptCheckForm(unittest.TestCase):
     def test_sections_are_i_through_vi(self):
         ids = [s["id"] for s in ccform.list_sections()]
-        self.assertEqual(ids, ["I", "II", "III", "IV", "V", "VI", "VI-2"])
+        self.assertEqual(ids, ["I", "II", "III", "IV", "V", "VI"])
 
     def test_every_section_has_seeds(self):
-        for sid in ("I", "II", "III", "IV", "V", "VI", "VI-2"):
+        for sid in ("I", "II", "III", "IV", "V", "VI"):
             seeds = ccform.seeds_for_section(sid)
             self.assertTrue(seeds, sid)
             self.assertEqual(len({q["id"] for q in seeds}), len(seeds), sid)
@@ -83,6 +83,13 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_vi2_pent_10": "32 cm",
             "cc_vi2_pent_50": "152 cm",
             "cc_vi2_oct_40": "242 m",
+            "cc_vi3_bag_count": "2",
+            "cc_vi3_bag_eq": "2x + 3 = 7",
+            "cc_vi3_three_bags": "4",
+            "cc_vi3_eq3": "3x = 12",
+            "cc_vi3_two_bags_four": "3",
+            "cc_vi3_eq4": "2x + 4 = 10",
+            "cc_vi3_solve_check": "x = 3",
         }
         for qid, expected in keyed.items():
             q = by_id[qid]
@@ -106,39 +113,34 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         self.assertTrue({"CC1", "CC2", "CC4"} <= papers_i)
         self.assertTrue({"CC2", "CC4", "CC5"} <= papers_ii)
 
-    def test_unit6_notes_and_vi_seeds(self):
+    def test_unit6_is_one_mixed_section(self):
         info = ccform.get_section("VI")
         self.assertEqual(info["unit_id"], 6)
-        self.assertEqual(info["title"], "Unit 6 — Representing Patterns")
-        self.assertIn("Unit 6", info["title"])
+        self.assertEqual(info["title"], "Unit 6 — Patterns and Modeling")
+        self.assertEqual(ccform.get_section("VI-2")["id"], "VI")
+        self.assertEqual(ccform.get_section("VI-3")["id"], "VI")
         notes = ccform_llm._notes_for_section("VI")
         self.assertIn("constant difference", notes.lower())
         self.assertIn("2n", notes)
-        seeds = ccform.seeds_for_section("VI")
-        self.assertGreaterEqual(len(seeds), 8)
-        self.assertTrue(all(q["paper"] == "VI-1" for q in seeds))
-        questions = ccform_llm.fallback_seed_set("VI")
-        self.assertEqual(len(questions), 5)
-
-    def test_unit6_vi2_notes_and_seeds(self):
-        info = ccform.get_section("VI-2")
-        self.assertEqual(info["unit_id"], 6)
-        self.assertIn("Using Patterns", info["title"])
-        notes = ccform_llm._notes_for_section("VI-2")
         self.assertIn("n²", notes)
         self.assertIn("3n + 2", notes)
-        self.assertIn("6n + 2", notes)
-        seeds = ccform.seeds_for_section("VI-2")
-        self.assertGreaterEqual(len(seeds), 8)
-        self.assertTrue(all(q["paper"] == "VI-2" for q in seeds))
-        questions = ccform_llm.fallback_seed_set("VI-2")
+        self.assertIn("2x + 3 = 7", notes)
+        seeds = ccform.seeds_for_section("VI")
+        papers = {q["paper"] for q in seeds}
+        self.assertTrue({"VI-1", "VI-2", "VI-3"} <= papers)
+        self.assertTrue(all(q["section"] == "VI" for q in seeds))
+        questions = ccform_llm.fallback_seed_set("VI")
         self.assertEqual(len(questions), 5)
         import arjun_course3_content as c3
         unit = c3.get_unit(6)
         slugs = [a["slug"] for a in unit["activities"]]
         self.assertEqual(
             slugs,
-            ["activity_1_representing_patterns", "activity_2_using_patterns_expressions"],
+            [
+                "activity_1_representing_patterns",
+                "activity_2_using_patterns_expressions",
+                "activity_3_solving_equations_with_models",
+            ],
         )
 
     def test_unit5_session_is_five_questions(self):

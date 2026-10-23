@@ -1,8 +1,9 @@
-"""Math 3 Friday Concept Check — Unit 1 sections I–V and Unit 6 packets VI-1 / VI-2.
+"""Math 3 Friday Concept Check — Unit 1 sections I–V and Unit 6 packets VI-1 / VI-2 / VI-3.
 
 Seeds are the actual problems from Arjun's CC1–CC5 papers (plus Scientific
 Notation items from a later school form, because CC1–CC5 did not include V)
-and the Unit 6 packets VI-1 Representing Patterns and VI-2 Using Patterns.
+and the Unit 6 packets VI-1 Representing Patterns, VI-2 Using Patterns, and
+VI-3 Solving Linear Equations with Models.
 """
 
 from __future__ import annotations
@@ -75,23 +76,16 @@ SECTIONS: dict[str, dict] = {
     "VI": {
         "id": "VI",
         "roman": "VI",
-        "title": "Unit 6 — Representing Patterns",
-        "short": "Tables, constant difference, expression in n",
-        "note_files": ["activity_1_representing_patterns.md"],
+        "title": "Unit 6 — Patterns and Modeling",
+        "short": "Tables, square/rect/triangle, bags and cubes",
+        "note_files": [
+            "activity_1_representing_patterns.md",
+            "activity_2_using_patterns_expressions.md",
+            "activity_3_solving_equations_with_models.md",
+        ],
         "session_count": 5,
         "emoji": "⬛",
         "color": "#0f766e",
-        "unit_id": 6,
-    },
-    "VI-2": {
-        "id": "VI-2",
-        "roman": "VI-2",
-        "title": "Using Patterns to Write Expressions",
-        "short": "Square, rectangular, triangular; polygon perimeters",
-        "note_files": ["activity_2_using_patterns_expressions.md"],
-        "session_count": 5,
-        "emoji": "▣",
-        "color": "#0e7490",
         "unit_id": 6,
     },
 }
@@ -660,7 +654,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
     ),
     # ── VI-2  Using Patterns to Write and Evaluate Expressions ──
     _q(
-        "cc_vi2_sq_next", "VI-2", "VI-2",
+        "cc_vi2_sq_next", "VI", "VI-2",
         "square_next_figures",
         "Square numbers: Figure 1 has 1 dot, Figure 2 has 4 dots, Figure 3 has 9 dots. "
         "How many dots are in the 4th, 5th, and 6th figures?",
@@ -669,7 +663,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "Each figure is an n by n square: 4²=16, 5²=25, 6²=36.",
     ),
     _q(
-        "cc_vi2_sq_const", "VI-2", "VI-2",
+        "cc_vi2_sq_const", "VI", "VI-2",
         "square_constant_diff",
         "Square numbers go 1, 4, 9, 16, …. Does this pattern have a constant difference?",
         [
@@ -682,7 +676,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "4−1=3, 9−4=5, 16−9=7. The difference is not constant.",
     ),
     _q(
-        "cc_vi2_sq_nth", "VI-2", "VI-2",
+        "cc_vi2_sq_nth", "VI", "VI-2",
         "square_nth",
         "Square numbers: Figure 1 has 1 dot, Figure 2 has 4, Figure 3 has 9. "
         "How many dots are in the nth figure?",
@@ -691,7 +685,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "Figure n is an n by n square, so n² dots.",
     ),
     _q(
-        "cc_vi2_sq_40", "VI-2", "VI-2",
+        "cc_vi2_sq_40", "VI", "VI-2",
         "square_far",
         "How many dots are in the 40th square-number figure?",
         ["1600", "40", "80", "1640"],
@@ -699,7 +693,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "n² with n = 40: 40² = 1600.",
     ),
     _q(
-        "cc_vi2_rect_nth", "VI-2", "VI-2",
+        "cc_vi2_rect_nth", "VI", "VI-2",
         "rectangular_nth",
         "Rectangular numbers: Figure 1 is 1×2 (2 dots), Figure 2 is 2×3 (6 dots), "
         "Figure 3 is 3×4 (12 dots). How many dots are in the nth figure?",
@@ -708,7 +702,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "n rows and (n + 1) columns: n(n + 1) dots.",
     ),
     _q(
-        "cc_vi2_rect_99", "VI-2", "VI-2",
+        "cc_vi2_rect_99", "VI", "VI-2",
         "rectangular_far",
         "Rectangular numbers use n(n + 1) dots. How many dots are in the 99th figure?",
         ["9900", "9801", "99", "4950"],
@@ -716,7 +710,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "99 × 100 = 9900. (99² would be 9801; that is the square pattern.)",
     ),
     _q(
-        "cc_vi2_tri_nth", "VI-2", "VI-2",
+        "cc_vi2_tri_nth", "VI", "VI-2",
         "triangular_nth",
         "Triangular numbers: Figure 1 has 1 dot, Figure 2 has 3, Figure 3 has 6. "
         "Write an expression for the number of dots in figure n.",
@@ -725,7 +719,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "Rows 1 + 2 + … + n = n(n + 1)/2. That is half of the n by (n + 1) rectangle.",
     ),
     _q(
-        "cc_vi2_classify_72", "VI-2", "VI-2",
+        "cc_vi2_classify_72", "VI", "VI-2",
         "classify_special",
         "Using the formulas from class, 72 is which of these?",
         [
@@ -739,7 +733,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "n(n+1)/2=72 → n(n+1)=144, which is not consecutive integers.",
     ),
     _q(
-        "cc_vi2_pent_10", "VI-2", "VI-2",
+        "cc_vi2_pent_10", "VI", "VI-2",
         "pentagon_far",
         "Pentagon walkway: each side is 1 cm. Figure 1 is one pentagon (perimeter 5 cm). "
         "Each new pentagon shares one full side, so the perimeter grows 5, 8, 11, 14, … cm. "
@@ -749,7 +743,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "Constant difference 3. 5 + 3(10 − 1) = 5 + 27 = 32 cm.",
     ),
     _q(
-        "cc_vi2_pent_expr", "VI-2", "VI-2",
+        "cc_vi2_pent_expr", "VI", "VI-2",
         "pentagon_expr",
         "Same pentagon walkway (first perimeter 5 cm, add 3 cm each figure). "
         "Which expression gives the perimeter of the nth figure?",
@@ -758,7 +752,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "First term 5, constant difference 3 → 5 + 3(n − 1) = 3n + 2.",
     ),
     _q(
-        "cc_vi2_pent_50", "VI-2", "VI-2",
+        "cc_vi2_pent_50", "VI", "VI-2",
         "pentagon_eval",
         "Pentagon walkway perimeter is 3n + 2 centimeters. What is the perimeter of the 50th figure?",
         ["152 cm", "150 cm", "53 cm", "250 cm"],
@@ -766,7 +760,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "3(50) + 2 = 150 + 2 = 152 cm.",
     ),
     _q(
-        "cc_vi2_oct_40", "VI-2", "VI-2",
+        "cc_vi2_oct_40", "VI", "VI-2",
         "octagon_walkway",
         "Octagon walkway: each side is 1 m. Figure 1 is one octagon (8 m). "
         "Each new octagon shares one full side, so perimeters are 8, 14, 20, … m. "
@@ -775,19 +769,97 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "Add 6 m each time: 8 + 6(40 − 1) = 6(40) + 2 = 242 m.",
     ),
+    # ── VI-3  Solving Linear Equations with Models ──
+    _q(
+        "cc_vi3_bag_count", "VI", "VI-3",
+        "scale_bag_count",
+        "A balanced scale has 2 bags and 3 cubes on the left pan and 7 cubes on the right pan. "
+        "Each bag holds the same number of cubes. How many cubes are in each bag?",
+        ["2", "3", "4", "5"],
+        0,
+        "2x + 3 = 7. Subtract 3: 2x = 4. Divide by 2: x = 2.",
+    ),
+    _q(
+        "cc_vi3_bag_eq", "VI", "VI-3",
+        "scale_to_equation",
+        "A balanced scale has 2 bags and 3 cubes on one side and 7 cubes on the other. "
+        "If a bag is x cubes, which equation matches the scale?",
+        ["2x + 3 = 7", "2x = 7", "2x + 3 = 3", "x + 3 = 7"],
+        0,
+        "Two bags and three cubes balance seven cubes: 2x + 3 = 7.",
+    ),
+    _q(
+        "cc_vi3_three_bags", "VI", "VI-3",
+        "three_bags_twelve",
+        "3 bags are on one side of a balanced scale and 12 cubes are on the other side. "
+        "How many cubes are in each bag?",
+        ["4", "3", "12", "9"],
+        0,
+        "3x = 12, so x = 4. Check: 3 bags × 4 cubes = 12 cubes.",
+    ),
+    _q(
+        "cc_vi3_eq3", "VI", "VI-3",
+        "write_equation_bags",
+        "3 bags on one side, 12 cubes on the other, scale balanced. Which equation represents the scale?",
+        ["3x = 12", "3 + x = 12", "x = 12", "3x + 12 = 0"],
+        0,
+        "Three unknown bags balance 12 cubes: 3x = 12.",
+    ),
+    _q(
+        "cc_vi3_two_bags_four", "VI", "VI-3",
+        "two_bags_loose_cubes",
+        "2 bags and 4 cubes are on one side of a balanced scale and 10 cubes are on the other side. "
+        "How many cubes are in each bag?",
+        ["3", "2", "5", "6"],
+        0,
+        "2x + 4 = 10. Subtract 4: 2x = 6. Divide by 2: x = 3.",
+    ),
+    _q(
+        "cc_vi3_eq4", "VI", "VI-3",
+        "write_equation_mixed",
+        "2 bags and 4 cubes vs 10 cubes, scale balanced. Which equation represents the scale?",
+        ["2x + 4 = 10", "2x = 10", "2x + 4 = 4", "x + 4 = 10"],
+        0,
+        "Two bags plus four cubes balance ten cubes: 2x + 4 = 10.",
+    ),
+    _q(
+        "cc_vi3_inverse_first", "VI", "VI-3",
+        "inverse_first_step",
+        "Solve 2x + 4 = 10 using inverse operations. What is the first step?",
+        [
+            "Subtract 4 from both sides",
+            "Divide both sides by 2",
+            "Subtract 2x from both sides",
+            "Add 4 to both sides",
+        ],
+        0,
+        "Undo the +4 first so the bags are alone with cubes: 2x = 6, then divide by 2.",
+    ),
+    _q(
+        "cc_vi3_solve_check", "VI", "VI-3",
+        "solve_and_check",
+        "Use inverse operations to solve 2x + 4 = 10. What is x?",
+        ["x = 3", "x = 7", "x = 5", "x = 2"],
+        0,
+        "2x + 4 − 4 = 10 − 4, so 2x = 6, x = 3. Check: 2(3) + 4 = 10.",
+    ),
 ]
 
 
 def list_sections() -> list[dict]:
-    return [dict(SECTIONS[key]) for key in ("I", "II", "III", "IV", "V", "VI", "VI-2")]
+    return [dict(SECTIONS[key]) for key in ("I", "II", "III", "IV", "V", "VI")]
 
 
 def get_section(section_id: str) -> dict | None:
-    return SECTIONS.get(str(section_id).strip().upper() or "")
+    sid = str(section_id).strip().upper() or ""
+    if sid in {"VI-1", "VI-2", "VI-3", "VI1", "VI2", "VI3"}:
+        sid = "VI"
+    return SECTIONS.get(sid)
 
 
 def seeds_for_section(section_id: str) -> list[dict]:
-    sid = str(section_id).strip().upper()
+    info = get_section(section_id)
+    sid = info["id"] if info else str(section_id).strip().upper()
     return [dict(q) for q in FORM_SEED_QUESTIONS if q["section"] == sid]
 
 

@@ -33,11 +33,11 @@ WEEKLY_GUIDANCE: dict[int, str] = {
         "Finish with a full 15-question unit review."
     ),
     6: (
-        "**Class 6 schedule (Señor Monasterio, 10/19 agenda):** "
-        "VI-1 Representing Patterns WS (class slides + solution guide). "
-        "**Next packet:** VI-2 / 9-2 Using Patterns to Write and Evaluate Expressions — "
-        "square `n²`, rectangular `n(n+1)`, triangular `n(n+1)/2`, then pentagon (`3n+2`) "
-        "and octagon (`6n+2`) walkway perimeters. Use Concept Check Unit 6 for a fresh paper."
+        "**Class 6 schedule (Señor Monasterio — Classroom topic VI) Patterns and Modeling):** "
+        "10/19 was VI-1 Representing Patterns; then VI-2 Using Patterns to Write and Evaluate Expressions "
+        "(square / rectangular / triangular, then pentagon `3n+2` and octagon `6n+2` walkways); "
+        "**VI-3 Solving Linear Equations with Models** — bags and cubes on a balance scale "
+        "(`2x+3=7`, `3x=12`, `2x+4=10`). Use Concept Check Unit 6 for a fresh paper."
     ),
 }
 

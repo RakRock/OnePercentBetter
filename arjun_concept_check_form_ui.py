@@ -99,15 +99,16 @@ def render_home():
     )
     st.caption(
         "Pick a course unit, then a paper section. "
-        "Unit 1 is CC1–CC5 (I–V). Unit 6 is packets VI-1 and VI-2 (10/19 class agenda)."
+        "Unit 1 is CC1–CC5 (I–V). Unit 6 is one mixed paper from VI-1, VI-2, and VI-3."
     )
 
-    _render_unit_group(
-        "Unit 6 — Patterns and modeling",
-        ("VI", "VI-2"),
-    )
     _render_unit_group("Unit 1 — Numerical relationships", ("I", "II", "III"))
     _render_unit_group("Unit 1 (continued)", ("IV", "V"))
+    _render_unit_group(
+        "Unit 6 — Patterns and modeling",
+        ("VI",),
+        start_label="Start Unit 6",
+    )
 
 
 def _section_heading(info: dict) -> str:

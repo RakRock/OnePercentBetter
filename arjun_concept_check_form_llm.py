@@ -23,7 +23,7 @@ from xai_client import make_xai_client
 
 XAI_MODEL = "grok-3-mini"
 _MAX_RETRIES = 3
-_NOTES_CHAR_LIMIT = 3500
+_NOTES_CHAR_LIMIT = 12000
 
 
 def _notes_for_section(section_id: str) -> str:
@@ -56,7 +56,8 @@ def _notes_for_section(section_id: str) -> str:
 def _seed_block(seeds: list[dict]) -> str:
     lines = [
         "SEED PROBLEMS from Arjun's actual Friday Concept Check papers (CC1–CC5) "
-        "or the Unit 6 packets VI-1 Representing Patterns and VI-2 Using Patterns.",
+        "or the Unit 6 packets VI-1 Representing Patterns, VI-2 Using Patterns, "
+        "and VI-3 Solving Linear Equations with Models.",
         "Match these stem types. Do NOT copy the numbers, names, or stories.",
     ]
     for i, seed in enumerate(seeds, start=1):
@@ -88,6 +89,7 @@ RULES:
 - For repeating-decimal seeds, say clearly which digits have the bar.
 - For Representing Patterns (VI-1): describe figures in words (Figure 1 has __ dots). Ask for the expression in n, the constant difference, n to substitute, or a far figure (51st/100th). Do not ask the student to draw.
 - For Using Patterns (VI-2): square n², rectangular n(n+1), triangular n(n+1)/2. Square/rect/triangle counts do NOT have a constant difference. Joined-polygon perimeters DO: pentagons add 3 (hide 2 sides), octagons add 6. Describe figures in words. Do not ask the student to draw.
+- For Solving Equations with Models (VI-3): a bag is x cubes, a cube is 1, a balanced scale is an equation. Ask for the equation, cubes per bag, or the inverse-operation steps. Describe pans in words (do not ask the student to draw).
 {KID_NUMERIC_FORMAT_RULES}
 
 Respond with ONLY a JSON array:
