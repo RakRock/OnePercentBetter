@@ -32,6 +32,13 @@ WEEKLY_GUIDANCE: dict[int, str] = {
         "**Suggested pace:** Scatter & association → Bivariate data → MAD → Two-way tables. "
         "Finish with a full 15-question unit review."
     ),
+    6: (
+        "**Class 6 schedule (Señor Monasterio, 10/19 agenda):** "
+        "VI-1 Representing Patterns WS (class slides + solution guide). "
+        "**Next packet:** VI-2 / 9-2 Using Patterns to Write and Evaluate Expressions — "
+        "square `n²`, rectangular `n(n+1)`, triangular `n(n+1)/2`, then pentagon (`3n+2`) "
+        "and octagon (`6n+2`) walkway perimeters. Use Concept Check Unit 6 for a fresh paper."
+    ),
 }
 
 

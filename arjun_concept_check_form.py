@@ -1,8 +1,8 @@
-"""Math 3 Friday Concept Check — Unit 1 sections I–V and Unit 6 section VI.
+"""Math 3 Friday Concept Check — Unit 1 sections I–V and Unit 6 packets VI-1 / VI-2.
 
 Seeds are the actual problems from Arjun's CC1–CC5 papers (plus Scientific
 Notation items from a later school form, because CC1–CC5 did not include V)
-and the Unit 6 packet VI-1 Representing Patterns.
+and the Unit 6 packets VI-1 Representing Patterns and VI-2 Using Patterns.
 """
 
 from __future__ import annotations
@@ -81,6 +81,17 @@ SECTIONS: dict[str, dict] = {
         "session_count": 5,
         "emoji": "⬛",
         "color": "#0f766e",
+        "unit_id": 6,
+    },
+    "VI-2": {
+        "id": "VI-2",
+        "roman": "VI-2",
+        "title": "Using Patterns to Write Expressions",
+        "short": "Square, rectangular, triangular; polygon perimeters",
+        "note_files": ["activity_2_using_patterns_expressions.md"],
+        "session_count": 5,
+        "emoji": "▣",
+        "color": "#0e7490",
         "unit_id": 6,
     },
 }
@@ -647,11 +658,128 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "Expression 2n + 1. For n = 100: 2(100) + 1 = 201.",
     ),
+    # ── VI-2  Using Patterns to Write and Evaluate Expressions ──
+    _q(
+        "cc_vi2_sq_next", "VI-2", "VI-2",
+        "square_next_figures",
+        "Square numbers: Figure 1 has 1 dot, Figure 2 has 4 dots, Figure 3 has 9 dots. "
+        "How many dots are in the 4th, 5th, and 6th figures?",
+        ["16, 25, 36", "8, 10, 12", "9, 16, 25", "16, 20, 24"],
+        0,
+        "Each figure is an n by n square: 4²=16, 5²=25, 6²=36.",
+    ),
+    _q(
+        "cc_vi2_sq_const", "VI-2", "VI-2",
+        "square_constant_diff",
+        "Square numbers go 1, 4, 9, 16, …. Does this pattern have a constant difference?",
+        [
+            "No — the gaps are 3, 5, 7, … and they keep growing",
+            "Yes — the difference is always 3",
+            "Yes — the difference is always 4",
+            "No — square numbers skip every other figure",
+        ],
+        0,
+        "4−1=3, 9−4=5, 16−9=7. The difference is not constant.",
+    ),
+    _q(
+        "cc_vi2_sq_nth", "VI-2", "VI-2",
+        "square_nth",
+        "Square numbers: Figure 1 has 1 dot, Figure 2 has 4, Figure 3 has 9. "
+        "How many dots are in the nth figure?",
+        ["n²", "2n − 1", "n(n + 1)", "n(n + 1) / 2"],
+        0,
+        "Figure n is an n by n square, so n² dots.",
+    ),
+    _q(
+        "cc_vi2_sq_40", "VI-2", "VI-2",
+        "square_far",
+        "How many dots are in the 40th square-number figure?",
+        ["1600", "40", "80", "1640"],
+        0,
+        "n² with n = 40: 40² = 1600.",
+    ),
+    _q(
+        "cc_vi2_rect_nth", "VI-2", "VI-2",
+        "rectangular_nth",
+        "Rectangular numbers: Figure 1 is 1×2 (2 dots), Figure 2 is 2×3 (6 dots), "
+        "Figure 3 is 3×4 (12 dots). How many dots are in the nth figure?",
+        ["n(n + 1)", "n²", "2n", "n(n + 1) / 2"],
+        0,
+        "n rows and (n + 1) columns: n(n + 1) dots.",
+    ),
+    _q(
+        "cc_vi2_rect_99", "VI-2", "VI-2",
+        "rectangular_far",
+        "Rectangular numbers use n(n + 1) dots. How many dots are in the 99th figure?",
+        ["9900", "9801", "99", "4950"],
+        0,
+        "99 × 100 = 9900. (99² would be 9801; that is the square pattern.)",
+    ),
+    _q(
+        "cc_vi2_tri_nth", "VI-2", "VI-2",
+        "triangular_nth",
+        "Triangular numbers: Figure 1 has 1 dot, Figure 2 has 3, Figure 3 has 6. "
+        "Write an expression for the number of dots in figure n.",
+        ["n(n + 1) / 2", "n²", "n(n + 1)", "2n − 1"],
+        0,
+        "Rows 1 + 2 + … + n = n(n + 1)/2. That is half of the n by (n + 1) rectangle.",
+    ),
+    _q(
+        "cc_vi2_classify_72", "VI-2", "VI-2",
+        "classify_special",
+        "Using the formulas from class, 72 is which of these?",
+        [
+            "Rectangular only (8 × 9)",
+            "Square only",
+            "Triangular only",
+            "Square and rectangular",
+        ],
+        0,
+        "n²=72 is not a whole n. n(n+1)=72 → 8×9=72, so rectangular. "
+        "n(n+1)/2=72 → n(n+1)=144, which is not consecutive integers.",
+    ),
+    _q(
+        "cc_vi2_pent_10", "VI-2", "VI-2",
+        "pentagon_far",
+        "Pentagon walkway: each side is 1 cm. Figure 1 is one pentagon (perimeter 5 cm). "
+        "Each new pentagon shares one full side, so the perimeter grows 5, 8, 11, 14, … cm. "
+        "What is the perimeter of the 10th figure?",
+        ["32 cm", "50 cm", "30 cm", "35 cm"],
+        0,
+        "Constant difference 3. 5 + 3(10 − 1) = 5 + 27 = 32 cm.",
+    ),
+    _q(
+        "cc_vi2_pent_expr", "VI-2", "VI-2",
+        "pentagon_expr",
+        "Same pentagon walkway (first perimeter 5 cm, add 3 cm each figure). "
+        "Which expression gives the perimeter of the nth figure?",
+        ["5 + 3(n − 1)  or  3n + 2", "5n", "5 + 5(n − 1)", "n + 3"],
+        0,
+        "First term 5, constant difference 3 → 5 + 3(n − 1) = 3n + 2.",
+    ),
+    _q(
+        "cc_vi2_pent_50", "VI-2", "VI-2",
+        "pentagon_eval",
+        "Pentagon walkway perimeter is 3n + 2 centimeters. What is the perimeter of the 50th figure?",
+        ["152 cm", "150 cm", "53 cm", "250 cm"],
+        0,
+        "3(50) + 2 = 150 + 2 = 152 cm.",
+    ),
+    _q(
+        "cc_vi2_oct_40", "VI-2", "VI-2",
+        "octagon_walkway",
+        "Octagon walkway: each side is 1 m. Figure 1 is one octagon (8 m). "
+        "Each new octagon shares one full side, so perimeters are 8, 14, 20, … m. "
+        "What is the perimeter of a walkway of 40 octagonal blocks?",
+        ["242 m", "240 m", "320 m", "48 m"],
+        0,
+        "Add 6 m each time: 8 + 6(40 − 1) = 6(40) + 2 = 242 m.",
+    ),
 ]
 
 
 def list_sections() -> list[dict]:
-    return [dict(SECTIONS[key]) for key in ("I", "II", "III", "IV", "V", "VI")]
+    return [dict(SECTIONS[key]) for key in ("I", "II", "III", "IV", "V", "VI", "VI-2")]
 
 
 def get_section(section_id: str) -> dict | None:

@@ -11,10 +11,10 @@ import arjun_concept_check_form_llm as ccform_llm
 class TestArjunConceptCheckForm(unittest.TestCase):
     def test_sections_are_i_through_vi(self):
         ids = [s["id"] for s in ccform.list_sections()]
-        self.assertEqual(ids, ["I", "II", "III", "IV", "V", "VI"])
+        self.assertEqual(ids, ["I", "II", "III", "IV", "V", "VI", "VI-2"])
 
     def test_every_section_has_seeds(self):
-        for sid in ("I", "II", "III", "IV", "V", "VI"):
+        for sid in ("I", "II", "III", "IV", "V", "VI", "VI-2"):
             seeds = ccform.seeds_for_section(sid)
             self.assertTrue(seeds, sid)
             self.assertEqual(len({q["id"] for q in seeds}), len(seeds), sid)
@@ -73,6 +73,16 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_vi_pracA_51": "103",
             "cc_vi_pracB_expr": "2n + 1",
             "cc_vi_pracB_100": "201",
+            "cc_vi2_sq_next": "16, 25, 36",
+            "cc_vi2_sq_nth": "n²",
+            "cc_vi2_sq_40": "1600",
+            "cc_vi2_rect_nth": "n(n + 1)",
+            "cc_vi2_rect_99": "9900",
+            "cc_vi2_tri_nth": "n(n + 1) / 2",
+            "cc_vi2_classify_72": "Rectangular only (8 × 9)",
+            "cc_vi2_pent_10": "32 cm",
+            "cc_vi2_pent_50": "152 cm",
+            "cc_vi2_oct_40": "242 m",
         }
         for qid, expected in keyed.items():
             q = by_id[qid]
@@ -109,6 +119,27 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         self.assertTrue(all(q["paper"] == "VI-1" for q in seeds))
         questions = ccform_llm.fallback_seed_set("VI")
         self.assertEqual(len(questions), 5)
+
+    def test_unit6_vi2_notes_and_seeds(self):
+        info = ccform.get_section("VI-2")
+        self.assertEqual(info["unit_id"], 6)
+        self.assertIn("Using Patterns", info["title"])
+        notes = ccform_llm._notes_for_section("VI-2")
+        self.assertIn("n²", notes)
+        self.assertIn("3n + 2", notes)
+        self.assertIn("6n + 2", notes)
+        seeds = ccform.seeds_for_section("VI-2")
+        self.assertGreaterEqual(len(seeds), 8)
+        self.assertTrue(all(q["paper"] == "VI-2" for q in seeds))
+        questions = ccform_llm.fallback_seed_set("VI-2")
+        self.assertEqual(len(questions), 5)
+        import arjun_course3_content as c3
+        unit = c3.get_unit(6)
+        slugs = [a["slug"] for a in unit["activities"]]
+        self.assertEqual(
+            slugs,
+            ["activity_1_representing_patterns", "activity_2_using_patterns_expressions"],
+        )
 
     def test_unit5_session_is_five_questions(self):
         self.assertEqual(ccform.session_count_for_section("V"), 5)

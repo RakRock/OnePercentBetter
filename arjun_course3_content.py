@@ -114,6 +114,14 @@ UNIT_6_ACTIVITIES = [
         "inline_diagrams": False,
         "diagrams": [],
     },
+    {
+        "number": 2,
+        "slug": "activity_2_using_patterns_expressions",
+        "title": "VI-2 Using Patterns to Write and Evaluate Expressions",
+        "file": "activity_2_using_patterns_expressions.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
 ]
 
 

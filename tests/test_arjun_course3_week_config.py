@@ -350,6 +350,17 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
         self.assertEqual(len(loaded["topics"]), 3)
         self.assertEqual(loaded["question_count"], 12)
 
+    def test_unit6_class_schedule_covers_vi1_and_vi2(self):
+        guidance = c3w.weekly_guidance(6)
+        self.assertIn("10/19", guidance)
+        self.assertIn("VI-1", guidance)
+        self.assertIn("VI-2", guidance)
+        self.assertEqual(c3p.get_categories(6), {})
+        self.assertEqual(c3p.question_count_for_unit(6), 0)
+        cfg = c3w.default_week_config(6)
+        self.assertEqual(cfg["topics"], [])
+        self.assertIn("Unit 6", cfg["week_label"])
+
 
 if __name__ == "__main__":
     unittest.main()

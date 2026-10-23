@@ -132,7 +132,12 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
         return
 
     if not categories_meta:
-        st.info("Practice categories for this unit are not ready yet.")
+        st.markdown("### Class schedule")
+        st.markdown(guidance)
+        st.info(
+            "Daily mixed practice for this unit is not in the bank yet. "
+            "Use the Activities tab for class notes, and Concept Check for a fresh VI-1 / VI-2 paper."
+        )
         return
 
     valid = set(categories_meta.keys())

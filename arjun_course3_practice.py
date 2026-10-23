@@ -221,7 +221,7 @@ REVISION_TIPS_BY_UNIT: dict[int, dict[str, str]] = {
 
 
 def get_categories(unit_id: int) -> dict:
-    return CATEGORIES_BY_UNIT.get(unit_id, UNIT1_CATEGORIES)
+    return CATEGORIES_BY_UNIT.get(unit_id, {})
 
 
 def get_category_activity_slug(unit_id: int, category: str) -> str | None:
@@ -230,7 +230,7 @@ def get_category_activity_slug(unit_id: int, category: str) -> str | None:
 
 def _unit_practice(unit_id: int) -> dict:
     return {
-        "bank": QUESTION_BANK_BY_UNIT.get(unit_id, UNIT1_QUESTION_BANK),
+        "bank": QUESTION_BANK_BY_UNIT.get(unit_id, []),
         "categories": get_categories(unit_id),
         "category_activity": CATEGORY_ACTIVITY_BY_UNIT.get(unit_id, {}),
         "revision_tips": REVISION_TIPS_BY_UNIT.get(unit_id, {}),
