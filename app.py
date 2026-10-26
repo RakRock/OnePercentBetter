@@ -4702,6 +4702,19 @@ def render_science_home():
                 st.rerun()
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+    import arjun_gas_lesson5 as gas_lesson
+
+    st.markdown("### Lesson 5 · Properties of gases")
+    st.caption("Bath bomb Day 2 notes and the gas-properties chart. The common-gases table stays on screen.")
+    if st.button(
+        f"Gas investigation · {len(gas_lesson.QUESTIONS)} questions",
+        key="sci_gas_lesson5",
+        type="primary",
+    ):
+        start_science_quiz(gas_lesson.build_quiz(), label=gas_lesson.TITLE)
+        st.rerun()
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
     import arjun_science_chapter1 as chapter1
 
     st.markdown("### School notes · Chapter 1")
