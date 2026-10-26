@@ -1164,13 +1164,10 @@ def render_home():
 
     users = [
         ("Arjun", "🦁", "#ff6b6b", "The fearless learner"),
-        ("Krish", "🚀", "#667eea", "Reaching for the stars"),
-        ("Sangeetha", "🌸", "#f093fb", "Blooming with knowledge"),
-        ("Rakesh", "⚡", "#ffd93d", "Lightning-fast thinker"),
         ("Harshit Sai", "📐", "#64748b", "Building number sense"),
     ]
 
-    cols = st.columns(5, gap="large")
+    cols = st.columns(2, gap="large")
     for i, (name, emoji, color, tagline) in enumerate(users):
         with cols[i]:
             user_data = db.get_user(name)
@@ -4687,6 +4684,19 @@ def render_science_home():
             st.rerun()
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
+    import arjun_chem_assessment1 as chem_assessment
+
+    st.markdown("### Chemical Reactions Assessment 1")
+    st.caption("Part 6 of the study guide. The data table stays on screen while you answer.")
+    if st.button(
+        f"Practice Investigations A and B · {len(chem_assessment.QUESTIONS)} questions",
+        key="sci_chem_assessment1",
+        type="primary",
+    ):
+        start_science_quiz(chem_assessment.build_quiz(), label=chem_assessment.TITLE)
+        st.rerun()
+
+    st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
     import arjun_science_chapter1 as chapter1
 
     st.markdown("### School notes · Chapter 1")
@@ -4895,6 +4905,12 @@ def render_science_practice():
             cat_name = f"Lesson {lesson['id']}"
         else:
             cat_name = "Science"
+
+        table = q.get("table")
+        if table:
+            st.markdown(f"**{table['title']}**")
+            st.caption(table["intro"])
+            st.table({column: [row[index] for row in table["rows"]] for index, column in enumerate(table["columns"])})
 
         sci_img_name = q.get("image")
         sci_img_path = os.path.join("science_images", f"{sci_img_name}.png") if sci_img_name else None
