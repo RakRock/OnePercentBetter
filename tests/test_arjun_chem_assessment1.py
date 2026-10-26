@@ -1,4 +1,4 @@
-"""Chemical Reactions Assessment 1 practice from the study-guide data tables."""
+"""Chemical Reactions Assessment 1 practice from the full study guide."""
 
 from __future__ import annotations
 
@@ -14,20 +14,39 @@ class TestChemicalReactionsAssessment(unittest.TestCase):
         bubbles = {row[0]: row[2] for row in guide.INVESTIGATION_B["rows"]}
         self.assertEqual(bubbles["Baking soda + citric acid + water"], "Yes")
         self.assertEqual(bubbles["Baking soda + citric acid dry"], "No")
-        self.assertEqual(bubbles["Baking soda + citric acid + oil"], "No")
+        self.assertEqual(len(guide.CHOICE_QUESTIONS), 30)
+        self.assertEqual(guide.DENSITY_COLUMN["rows"][0][1], "0.85 g/mL")
+        self.assertEqual(guide.DENSITY_COLUMN["rows"][-1][1], "1.30 g/mL")
 
-    def test_each_prompt_keeps_its_table_and_a_correct_choice(self):
-        ids = [question["id"] for question in guide.QUESTIONS]
-        self.assertEqual(ids, ["a-closed", "a-open-loss", "a-not-destroyed", "b-claim", "b-evidence", "b-oil"])
-        for question in guide.QUESTIONS:
-            self.assertEqual(len(question["options"]), 4)
-            self.assertEqual(question["answer"], 0)
-            self.assertEqual(question["table"]["columns"][0] in ("System", "Combination"), True)
+    def test_calculated_answers(self):
+        by_id = {question["id"]: question for question in guide.DATA_QUESTIONS}
+        self.assertEqual(by_id["c-volume"]["options"][0], "22.5 mL")
+        self.assertEqual(by_id["c-density"]["options"][0], "1.20 g/mL")
+        self.assertIn("24.9 kg", by_id["f-a"]["options"][0])
+        self.assertIn("26.8 kg", by_id["f-b"]["options"][0])
 
-    def test_quiz_keeps_order_and_does_not_rewrite_the_bank(self):
-        original = [list(question["options"]) for question in guide.QUESTIONS]
-        quiz = guide.build_quiz()
-        self.assertEqual([question["id"] for question in quiz], [question["id"] for question in guide.QUESTIONS])
-        for question, source in zip(quiz, guide.QUESTIONS):
-            self.assertEqual(question["options"][question["answer"]], source["options"][0])
-        self.assertEqual([list(question["options"]) for question in guide.QUESTIONS], original)
+    def test_each_part_has_one_correct_choice(self):
+        for section in ("choice", "words", "data", "cer"):
+            questions = guide.questions_for(section)
+            self.assertGreaterEqual(len(questions), 5)
+            ids = [question["id"] for question in questions]
+            self.assertEqual(len(ids), len(set(ids)))
+            for question in questions:
+                self.assertEqual(len(question["options"]), 4)
+                self.assertEqual(question["answer"], 0)
+
+    def test_choice_sample_does_not_rewrite_the_bank(self):
+        original = [list(question["options"]) for question in guide.CHOICE_QUESTIONS]
+        quiz = guide.build_quiz("choice")
+        self.assertEqual(len(quiz), guide.CHOICE_QUIZ_SIZE)
+        by_id = {question["id"]: question for question in guide.CHOICE_QUESTIONS}
+        for question in quiz:
+            self.assertEqual(question["options"][question["answer"]], by_id[question["id"]]["options"][0])
+        self.assertEqual([list(question["options"]) for question in guide.CHOICE_QUESTIONS], original)
+
+    def test_data_quiz_keeps_packet_order(self):
+        quiz = guide.build_quiz("data")
+        self.assertEqual(
+            [question["id"] for question in quiz],
+            [question["id"] for question in guide.DATA_QUESTIONS],
+        )

@@ -4687,14 +4687,19 @@ def render_science_home():
     import arjun_chem_assessment1 as chem_assessment
 
     st.markdown("### Chemical Reactions Assessment 1")
-    st.caption("Part 6 of the study guide. The data table stays on screen while you answer.")
-    if st.button(
-        f"Practice Investigations A and B · {len(chem_assessment.QUESTIONS)} questions",
-        key="sci_chem_assessment1",
-        type="primary",
-    ):
-        start_science_quiz(chem_assessment.build_quiz(), label=chem_assessment.TITLE)
-        st.rerun()
+    st.caption("The full study guide. Each part keeps the packet’s tables and diagrams on screen.")
+    chem_sets = [
+        ("choice", f"Part 4 · {chem_assessment.CHOICE_QUIZ_SIZE} multiple choice", "Assessment 1 · Part 4"),
+        ("words", f"Part 5 · Words and sorting · {len(chem_assessment.WORD_QUESTIONS)}", "Assessment 1 · Part 5"),
+        ("data", f"Part 6 · Data and models · {len(chem_assessment.DATA_QUESTIONS)}", "Assessment 1 · Part 6"),
+        ("cer", f"Part 7 · Claim, evidence, reasoning · {len(chem_assessment.CER_QUESTIONS)}", "Assessment 1 · Part 7"),
+    ]
+    chem_cols = st.columns(2, gap="medium")
+    for index, (section, label, quiz_label) in enumerate(chem_sets):
+        with chem_cols[index % 2]:
+            if st.button(label, key=f"sci_chem_{section}", width="stretch", type="primary" if section == "choice" else "secondary"):
+                start_science_quiz(chem_assessment.build_quiz(section), label=quiz_label)
+                st.rerun()
 
     st.markdown('<div class="fancy-divider"></div>', unsafe_allow_html=True)
     import arjun_science_chapter1 as chapter1
