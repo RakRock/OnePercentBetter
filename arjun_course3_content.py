@@ -133,6 +133,18 @@ UNIT_6_ACTIVITIES = [
 ]
 
 
+UNIT_7_ACTIVITIES = [
+    {
+        "number": 1,
+        "slug": "activity_1_multistep_equations",
+        "title": "VII-1 Solving Linear Equations: Multi-Step Equations",
+        "file": "activity_1_multistep_equations.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
+]
+
+
 UNIT_2_ACTIVITIES = [
     {
         "number": 9,
@@ -546,6 +558,13 @@ UNITS = [
         "Patterns and modeling",
         activities=UNIT_6_ACTIVITIES,
         combined_notes_name="unit_6_patterns_and_modeling_lesson_notes.md",
+    ),
+    _build_unit(
+        7,
+        "Unit 7",
+        "Solving linear equations",
+        activities=UNIT_7_ACTIVITIES,
+        combined_notes_name="unit_7_solving_equations_lesson_notes.md",
     ),
 ]
 

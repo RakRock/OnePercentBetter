@@ -57,7 +57,7 @@ def _seed_block(seeds: list[dict]) -> str:
     lines = [
         "SEED PROBLEMS from Arjun's actual Friday Concept Check papers (CC1–CC5) "
         "or the Unit 6 packets VI-1 Representing Patterns, VI-2 Using Patterns, "
-        "and VI-3 Solving Linear Equations with Models.",
+        "and VI-3 Solving Linear Equations with Models, or Unit 7 packet VII-1 Multi-Step Equations.",
         "Match these stem types. Do NOT copy the numbers, names, or stories.",
     ]
     for i, seed in enumerate(seeds, start=1):
@@ -90,6 +90,7 @@ RULES:
 - For Representing Patterns (VI-1): describe figures in words (Figure 1 has __ dots). Ask for the expression in n, the constant difference, n to substitute, or a far figure (51st/100th). Do not ask the student to draw.
 - For Using Patterns (VI-2): square n², rectangular n(n+1), triangular n(n+1)/2. Square/rect/triangle counts do NOT have a constant difference. Joined-polygon perimeters DO: pentagons add 3 (hide 2 sides), octagons add 6. Describe figures in words. Do not ask the student to draw.
 - For Solving Equations with Models (VI-3): a bag is x cubes, a cube is 1, a balanced scale is an equation. Ask for the equation, cubes per bag, or the inverse-operation steps. Describe pans in words (do not ask the student to draw).
+- For Multi-Step Equations (VII-1): variables on both sides. Steps: simplify/distribute, move variables, move constants, solve. Include a bags-and-cubes stem and a “too many bags → combine like terms” stem. Wrong options = dropped a distribute sign, combined unlike terms, or divided before moving the other variable. Do not ask the student to draw.
 {KID_NUMERIC_FORMAT_RULES}
 
 Respond with ONLY a JSON array:

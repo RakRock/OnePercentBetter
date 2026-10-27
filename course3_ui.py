@@ -236,7 +236,7 @@ def render_home():
         f"""
     <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
         <h1 style="font-size: 2.5rem;">📐 {name}'s Course 3 Math</h1>
-        <p style="color: #6b7280; font-size: 1.1rem;">Units 1–5, daily practice, and solving linear equations</p>
+        <p style="color: #6b7280; font-size: 1.1rem;">Units 1–7, daily practice, and solving linear equations</p>
     </div>
     """,
         unsafe_allow_html=True,
@@ -264,16 +264,17 @@ def render_home():
 
 
 def _render_units_grid():
-    row1 = st.columns(3, gap="large")
-    row2 = st.columns(3, gap="large")
-    for col, unit in zip(row1 + row2, c3.list_units()):
-        with col:
-            ready = c3.unit_notes_ready(unit)
-            has_pdf = unit["pdf"].is_file()
-            badge = "✅ Notes ready" if ready else ("📄 PDF only" if has_pdf else "🔜 Coming soon")
-            border = PRIMARY if ready else "#94a3b8"
-            st.markdown(
-                f"""
+    units = c3.list_units()
+    for i in range(0, len(units), 3):
+        cols = st.columns(3, gap="large")
+        for col, unit in zip(cols, units[i : i + 3]):
+            with col:
+                ready = c3.unit_notes_ready(unit)
+                has_pdf = unit["pdf"].is_file()
+                badge = "✅ Notes ready" if ready else ("📄 PDF only" if has_pdf else "🔜 Coming soon")
+                border = PRIMARY if ready else "#94a3b8"
+                st.markdown(
+                    f"""
                 <div class="score-card" style="border-top: 5px solid {border}; min-height: 140px;">
                     <div style="font-size: 2rem;">📘</div>
                     <h3 style="margin: 0.4rem 0;">{unit['title']}</h3>
@@ -281,11 +282,11 @@ def _render_units_grid():
                     <p style="font-size: 0.85rem; margin-top: 0.5rem;"><strong>{badge}</strong></p>
                 </div>
                 """,
-                unsafe_allow_html=True,
-            )
-            if st.button(f"Open {unit['title']}", key=f"c3_unit_{unit['id']}", width="stretch", type="primary"):
-                _open_unit(unit["id"])
-                st.rerun()
+                    unsafe_allow_html=True,
+                )
+                if st.button(f"Open {unit['title']}", key=f"c3_unit_{unit['id']}", width="stretch", type="primary"):
+                    _open_unit(unit["id"])
+                    st.rerun()
 
 
 def render_unit():

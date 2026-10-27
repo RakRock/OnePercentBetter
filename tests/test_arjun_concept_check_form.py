@@ -11,10 +11,10 @@ import arjun_concept_check_form_llm as ccform_llm
 class TestArjunConceptCheckForm(unittest.TestCase):
     def test_sections_are_i_through_vi(self):
         ids = [s["id"] for s in ccform.list_sections()]
-        self.assertEqual(ids, ["I", "II", "III", "IV", "V", "VI"])
+        self.assertEqual(ids, ["I", "II", "III", "IV", "V", "VI", "VII"])
 
     def test_every_section_has_seeds(self):
-        for sid in ("I", "II", "III", "IV", "V", "VI"):
+        for sid in ("I", "II", "III", "IV", "V", "VI", "VII"):
             seeds = ccform.seeds_for_section(sid)
             self.assertTrue(seeds, sid)
             self.assertEqual(len({q["id"] for q in seeds}), len(seeds), sid)
@@ -90,6 +90,17 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_vi3_two_bags_four": "3",
             "cc_vi3_eq4": "2x + 4 = 10",
             "cc_vi3_solve_check": "x = 3",
+            "cc_vii1_scale_eq": "5x + 2 = 3x + 4",
+            "cc_vii1_scale_x": "1",
+            "cc_vii1_ex1": "x = −2",
+            "cc_vii1_combine": "x = −5",
+            "cc_vii1_dist": "x = 2",
+            "cc_vii1_neg_dist": "x = 7",
+            "cc_vii1_both_dist": "x = −2",
+            "cc_vii1_frac": "x = −3",
+            "cc_vii1_half": "x = 1/2",
+            "cc_vii1_zero": "x = 0",
+            "cc_vii1_mixed": "x = 18/5",
         }
         for qid, expected in keyed.items():
             q = by_id[qid]
@@ -142,6 +153,23 @@ class TestArjunConceptCheckForm(unittest.TestCase):
                 "activity_3_solving_equations_with_models",
             ],
         )
+
+    def test_unit7_vii1_notes_and_seeds(self):
+        info = ccform.get_section("VII")
+        self.assertEqual(info["unit_id"], 7)
+        self.assertEqual(ccform.get_section("VII-1")["id"], "VII")
+        notes = ccform_llm._notes_for_section("VII")
+        self.assertIn("variables on both sides", notes.lower())
+        self.assertIn("x = −5", notes)
+        self.assertIn("x = 18/5", notes)
+        seeds = ccform.seeds_for_section("VII")
+        self.assertGreaterEqual(len(seeds), 8)
+        self.assertTrue(all(q["paper"] == "VII-1" for q in seeds))
+        questions = ccform_llm.fallback_seed_set("VII")
+        self.assertEqual(len(questions), 5)
+        import arjun_course3_content as c3
+        unit = c3.get_unit(7)
+        self.assertEqual(unit["activities"][0]["slug"], "activity_1_multistep_equations")
 
     def test_unit5_session_is_five_questions(self):
         self.assertEqual(ccform.session_count_for_section("V"), 5)

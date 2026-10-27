@@ -39,6 +39,11 @@ WEEKLY_GUIDANCE: dict[int, str] = {
         "**VI-3 Solving Linear Equations with Models** — bags and cubes on a balance scale "
         "(`2x+3=7`, `3x=12`, `2x+4=10`). Use Concept Check Unit 6 for a fresh paper."
     ),
+    7: (
+        "**Class packet VII-1 / Unit 7 (1):** Solving Linear Equations — Multi-Step Equations. "
+        "Bags and cubes with variables on both sides; if there are too many bags, combine like terms. "
+        "Then simplify, move variables, move constants, solve. Use Concept Check Unit 7 for a fresh paper."
+    ),
 }
 
 

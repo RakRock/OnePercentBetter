@@ -1,9 +1,10 @@
-"""Math 3 Friday Concept Check — Unit 1 sections I–V and Unit 6 packets VI-1 / VI-2 / VI-3.
+"""Math 3 Friday Concept Check — Unit 1 I–V, Unit 6 VI-1–VI-3, and Unit 7 VII-1.
 
 Seeds are the actual problems from Arjun's CC1–CC5 papers (plus Scientific
-Notation items from a later school form, because CC1–CC5 did not include V)
-and the Unit 6 packets VI-1 Representing Patterns, VI-2 Using Patterns, and
-VI-3 Solving Linear Equations with Models.
+Notation items from a later school form, because CC1–CC5 did not include V),
+the Unit 6 packets VI-1 Representing Patterns, VI-2 Using Patterns, and
+VI-3 Solving Linear Equations with Models, and Unit 7 packet VII-1
+Multi-Step Equations.
 """
 
 from __future__ import annotations
@@ -87,6 +88,17 @@ SECTIONS: dict[str, dict] = {
         "emoji": "⬛",
         "color": "#0f766e",
         "unit_id": 6,
+    },
+    "VII": {
+        "id": "VII",
+        "roman": "VII",
+        "title": "Unit 7 — Multi-Step Equations",
+        "short": "Variables on both sides, distribute, combine like terms",
+        "note_files": ["activity_1_multistep_equations.md"],
+        "session_count": 5,
+        "emoji": "⚖️",
+        "color": "#7c2d12",
+        "unit_id": 7,
     },
 }
 
@@ -843,17 +855,123 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "2x + 4 − 4 = 10 − 4, so 2x = 6, x = 3. Check: 2(3) + 4 = 10.",
     ),
+    # ── VII-1  Multi-Step Equations ──
+    _q(
+        "cc_vii1_scale_eq", "VII", "VII-1",
+        "scale_both_sides",
+        "A balanced scale has 5 bags and 2 cubes on one side and 3 bags and 4 cubes on the other. "
+        "If a bag is x cubes, which equation matches the scale?",
+        ["5x + 2 = 3x + 4", "5x + 2 = 3x + 2", "5 + 2x = 3 + 4x", "5x = 4"],
+        0,
+        "Five bags plus two cubes balance three bags plus four cubes: 5x + 2 = 3x + 4.",
+    ),
+    _q(
+        "cc_vii1_scale_x", "VII", "VII-1",
+        "scale_solve",
+        "Solve 5x + 2 = 3x + 4. How many cubes are in each bag?",
+        ["1", "2", "3", "6"],
+        0,
+        "Subtract 3x: 2x + 2 = 4. Subtract 2: 2x = 2. x = 1.",
+    ),
+    _q(
+        "cc_vii1_too_many", "VII", "VII-1",
+        "too_many_bags",
+        "A scale would have 12 bags and 5 bags on one side and 6 bags and 17 cubes on the other. "
+        "Why should you not model this with bags and cubes?",
+        [
+            "Too many bags to draw — combine like terms and write an equation instead",
+            "The scale cannot be balanced",
+            "You must always draw the bags first",
+            "There are no cubes, so there is nothing to count",
+        ],
+        0,
+        "17 bags is messy to draw. Combine: 12x + 5x = 6x + 17, then solve.",
+    ),
+    _q(
+        "cc_vii1_ex1", "VII", "VII-1",
+        "variables_both_sides",
+        "Solve. 10 − 4x = −9x",
+        ["x = −2", "x = 2", "x = −10/13", "x = 10"],
+        0,
+        "Add 4x: 10 = −5x. Divide by −5: x = −2.",
+    ),
+    _q(
+        "cc_vii1_combine", "VII", "VII-1",
+        "combine_like_then_solve",
+        "Solve. 5x + 3 − 3x = −7",
+        ["x = −5", "x = −2", "x = 5", "x = −10"],
+        0,
+        "Combine: 2x + 3 = −7. Subtract 3: 2x = −10. x = −5.",
+    ),
+    _q(
+        "cc_vii1_dist", "VII", "VII-1",
+        "distribute_one_side",
+        "Solve. 3 + 4(x + 5) = 31",
+        ["x = 2", "x = 7", "x = 8", "x = 23/4"],
+        0,
+        "3 + 4x + 20 = 31 → 4x + 23 = 31 → 4x = 8 → x = 2.",
+    ),
+    _q(
+        "cc_vii1_neg_dist", "VII", "VII-1",
+        "negative_distribute",
+        "Solve. 27 = 3 − 3(6 − 2x)",
+        ["x = 7", "x = 5", "x = −5", "x = 8"],
+        0,
+        "27 = 3 − 18 + 6x → 27 = −15 + 6x → 42 = 6x → x = 7.",
+    ),
+    _q(
+        "cc_vii1_both_dist", "VII", "VII-1",
+        "distribute_both_sides",
+        "Solve. −2(4x − 5) = 8 − 6(2x + 1)",
+        ["x = −2", "x = 2", "x = −8", "x = 1"],
+        0,
+        "−8x + 10 = 8 − 12x − 6 → −8x + 10 = 2 − 12x → 4x = −8 → x = −2.",
+    ),
+    _q(
+        "cc_vii1_frac", "VII", "VII-1",
+        "fraction_distribute",
+        "Solve. (2/3)(3x + 9) = −2(2x + 6)",
+        ["x = −3", "x = 3", "x = −6", "x = 0"],
+        0,
+        "2x + 6 = −4x − 12. Add 4x and subtract 6: 6x = −18. x = −3.",
+    ),
+    _q(
+        "cc_vii1_half", "VII", "VII-1",
+        "distribute_inner_minus",
+        "Solve. 2(4x + 2) = 4x − 12(x − 1)",
+        ["x = 1/2", "x = 2", "x = −1/2", "x = 8"],
+        0,
+        "8x + 4 = 4x − 12x + 12 → 8x + 4 = −8x + 12 → 16x = 8 → x = 1/2.",
+    ),
+    _q(
+        "cc_vii1_zero", "VII", "VII-1",
+        "distribute_subtract",
+        "Solve. 3(4x + 2) − 2(5x − 3) = 12",
+        ["x = 0", "x = 12", "x = 2", "x = −6"],
+        0,
+        "12x + 6 − 10x + 6 = 12 → 2x + 12 = 12 → 2x = 0 → x = 0.",
+    ),
+    _q(
+        "cc_vii1_mixed", "VII", "VII-1",
+        "variables_both_mixed",
+        "Solve. 7x − 12 = 6 + 2x",
+        ["x = 18/5", "x = 6", "x = 18", "x = −18/5"],
+        0,
+        "7x − 2x = 6 + 12 → 5x = 18 → x = 18/5.",
+    ),
 ]
 
 
 def list_sections() -> list[dict]:
-    return [dict(SECTIONS[key]) for key in ("I", "II", "III", "IV", "V", "VI")]
+    return [dict(SECTIONS[key]) for key in ("I", "II", "III", "IV", "V", "VI", "VII")]
 
 
 def get_section(section_id: str) -> dict | None:
     sid = str(section_id).strip().upper() or ""
     if sid in {"VI-1", "VI-2", "VI-3", "VI1", "VI2", "VI3"}:
         sid = "VI"
+    if sid in {"VII-1", "VII1", "U7"}:
+        sid = "VII"
     return SECTIONS.get(sid)
 
 

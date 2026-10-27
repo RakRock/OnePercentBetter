@@ -99,7 +99,7 @@ def render_home():
     )
     st.caption(
         "Pick a course unit, then a paper section. "
-        "Unit 1 is CC1–CC5 (I–V). Unit 6 is one mixed paper from VI-1, VI-2, and VI-3."
+        "Unit 1 is CC1–CC5 (I–V). Unit 6 is VI-1–VI-3. Unit 7 is VII-1 multi-step equations."
     )
 
     _render_unit_group("Unit 1 — Numerical relationships", ("I", "II", "III"))
@@ -108,6 +108,11 @@ def render_home():
         "Unit 6 — Patterns and modeling",
         ("VI",),
         start_label="Start Unit 6",
+    )
+    _render_unit_group(
+        "Unit 7 — Solving linear equations",
+        ("VII",),
+        start_label="Start Unit 7",
     )
 
 

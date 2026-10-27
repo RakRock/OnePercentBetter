@@ -136,7 +136,7 @@ def render_setup_panel(track: Track, unit_id: int) -> None:
         st.markdown(guidance)
         st.info(
             "Daily mixed practice for this unit is not in the bank yet. "
-            "Use the Activities tab for class notes, and Concept Check Unit 6 for a mixed VI-1 / VI-2 / VI-3 paper."
+            "Use the Activities tab for class notes, and Concept Check for a fresh paper on this unit."
         )
         return
 
