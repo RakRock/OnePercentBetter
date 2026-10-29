@@ -52,9 +52,26 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_iii_cc4_13": "11/45",
             "cc_iii_cc5_6": "8.4",
             "cc_iii_cc5_7": "2/165",
+            "cc_iii_cc6_1": "2.879458134, 1.345̅, 17/8, √64, and ∛64",
+            "cc_iii_cc6_2": "11.8",
+            "cc_iii_cc6_3": "7/90",
             "cc_iv_cc5_8": "1/8²",
             "cc_iv_cc5_9": "x³⁰ y⁸",
             "cc_iv_cc5_10": "x = 20",
+            "cc_iv_cc6_5": "x³²",
+            "cc_iv_cc6_5_slip": "x³²",
+            "cc_iv_cc6_5b": "x¹⁹",
+            "cc_iv_cc6_6": "b⁷⁰ / a²",
+            "cc_iv_cc6_6b": "n¹² / m²",
+            "cc_iv_cc6_4": "1",
+            "cc_iv_cc6_7": "3¹⁰⁰",
+            "cc_iv_cc6_8": "x = 5/3",
+            "cc_iv_cc6_8_slip": "Set 12x = 20, so x = 5/3",
+            "cc_iv_cc6_8b": "x = 3",
+            "cc_v_cc6_9": "0.0000189",
+            "cc_v_cc6_10": "No — rewrite as 9.24 × 10⁹",
+            "cc_v_cc6_11": "1.07 × 10⁴³",
+            "cc_v_cc6_12": "2.1 × 10¹⁰ burritos",
             "cc_v_later_4": "6 × 10⁷",
             "cc_v_later_5": "1.24 × 10¹⁹",
             "cc_v_later_6": "8.36 × 10⁴ seconds",
@@ -101,6 +118,18 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_vii1_half": "x = 1/2",
             "cc_vii1_zero": "x = 0",
             "cc_vii1_mixed": "x = 18/5",
+            "cc_vii2_scale_inf": "Infinite solutions — leftover cubes match, so every bag size works",
+            "cc_vii2_scale_none": "No solution — 5 cubes do not equal 2 cubes",
+            "cc_vii2_n1": "Infinite solutions (−2 = −2)",
+            "cc_vii2_n2": "No solution (−4 = −3)",
+            "cc_vii2_n4": "One solution: x = 0",
+            "cc_vii2_yt1": "No solution (6 = 0)",
+            "cc_vii2_yt2": "Infinite solutions (−2 = −2)",
+            "cc_vii2_yt5": "x = −1/2",
+            "cc_vii2_yt7": "One solution: x = 0",
+            "cc_vii2_yt10": "No solution (5 = 4)",
+            "cc_vii2_fill_inf": "12",
+            "cc_vii2_fill_none": "−7",
         }
         for qid, expected in keyed.items():
             q = by_id[qid]
@@ -154,22 +183,55 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             ],
         )
 
-    def test_unit7_vii1_notes_and_seeds(self):
+    def test_unit7_is_one_mixed_section(self):
         info = ccform.get_section("VII")
         self.assertEqual(info["unit_id"], 7)
+        self.assertEqual(info["title"], "Unit 7 — Solving Linear Equations")
         self.assertEqual(ccform.get_section("VII-1")["id"], "VII")
+        self.assertEqual(ccform.get_section("VII-2")["id"], "VII")
         notes = ccform_llm._notes_for_section("VII")
         self.assertIn("variables on both sides", notes.lower())
         self.assertIn("x = −5", notes)
         self.assertIn("x = 18/5", notes)
+        self.assertIn("infinite", notes.lower())
+        self.assertIn("no solution", notes.lower())
+        self.assertIn("x = −1/2", notes)
         seeds = ccform.seeds_for_section("VII")
-        self.assertGreaterEqual(len(seeds), 8)
-        self.assertTrue(all(q["paper"] == "VII-1" for q in seeds))
+        papers = {q["paper"] for q in seeds}
+        self.assertTrue({"VII-1", "VII-2"} <= papers)
+        self.assertTrue(all(q["section"] == "VII" for q in seeds))
         questions = ccform_llm.fallback_seed_set("VII")
         self.assertEqual(len(questions), 5)
         import arjun_course3_content as c3
         unit = c3.get_unit(7)
-        self.assertEqual(unit["activities"][0]["slug"], "activity_1_multistep_equations")
+        slugs = [a["slug"] for a in unit["activities"]]
+        self.assertEqual(
+            slugs,
+            [
+                "activity_1_multistep_equations",
+                "activity_2_infinite_no_solutions",
+            ],
+        )
+
+    def test_cc6_papers_and_iv_misses(self):
+        self.assertEqual(ccform.session_count_for_section("IV"), 5)
+        papers_iii = {q["paper"] for q in ccform.seeds_for_section("III")}
+        papers_iv = {q["paper"] for q in ccform.seeds_for_section("IV")}
+        papers_v = {q["paper"] for q in ccform.seeds_for_section("V")}
+        self.assertIn("CC6", papers_iii)
+        self.assertIn("CC6", papers_iv)
+        self.assertIn("CC6", papers_v)
+        iv_stems = {q["stem"] for q in ccform.seeds_for_section("IV")}
+        self.assertTrue(
+            {"power_of_power_product", "power_of_power_slip", "power_equation_slip"}
+            <= iv_stems
+        )
+        notes = ccform_llm._notes_for_section("IV")
+        self.assertIn("x³²", notes)
+        self.assertIn("5/3", notes)
+        questions = ccform_llm.fallback_seed_set("IV")
+        self.assertEqual(len(questions), 5)
+        self.assertTrue(all(q["section"] == "IV" for q in questions))
 
     def test_unit5_session_is_five_questions(self):
         self.assertEqual(ccform.session_count_for_section("V"), 5)

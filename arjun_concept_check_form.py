@@ -1,10 +1,12 @@
-"""Math 3 Friday Concept Check — Unit 1 I–V, Unit 6 VI-1–VI-3, and Unit 7 VII-1.
+"""Math 3 Friday Concept Check — Unit 1 I–V, Unit 6 VI-1–VI-3, and Unit 7 VII-1–VII-2.
 
-Seeds are the actual problems from Arjun's CC1–CC5 papers (plus Scientific
+Seeds are the actual problems from Arjun's CC1–CC6 papers (plus Scientific
 Notation items from a later school form, because CC1–CC5 did not include V),
 the Unit 6 packets VI-1 Representing Patterns, VI-2 Using Patterns, and
-VI-3 Solving Linear Equations with Models, and Unit 7 packet VII-1
-Multi-Step Equations.
+VI-3 Solving Linear Equations with Models, and Unit 7 packets VII-1
+Multi-Step Equations and VII-2 No / Infinite Solutions. CC6 (Oct 25) Unit IV
+is weighted: Arjun scored 2 after adding inside a power of a power and
+subtracting on (aᵐ)ˣ = aⁿ.
 """
 
 from __future__ import annotations
@@ -55,7 +57,7 @@ SECTIONS: dict[str, dict] = {
         "title": "Exponent Properties",
         "short": "Product, quotient, power rules; positive exponents",
         "note_files": ["activity_6_properties_of_exponents.md"],
-        "session_count": 4,
+        "session_count": 5,
         "emoji": "𝑥ⁿ",
         "color": "#d97706",
         "unit_id": 1,
@@ -92,9 +94,12 @@ SECTIONS: dict[str, dict] = {
     "VII": {
         "id": "VII",
         "roman": "VII",
-        "title": "Unit 7 — Multi-Step Equations",
-        "short": "Variables on both sides, distribute, combine like terms",
-        "note_files": ["activity_1_multistep_equations.md"],
+        "title": "Unit 7 — Solving Linear Equations",
+        "short": "Multi-step, then one / none / infinite solutions",
+        "note_files": [
+            "activity_1_multistep_equations.md",
+            "activity_2_infinite_no_solutions.md",
+        ],
         "session_count": 5,
         "emoji": "⚖️",
         "color": "#7c2d12",
@@ -412,6 +417,38 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "Let x=0.2444…. 10x=2.444…, 100x=24.444…. Subtract: 90x=22, x=22/90=11/45.",
     ),
     _q(
+        "cc_iii_cc6_1", "III", "CC6",
+        "identify_rational_set",
+        "Which of the following are rational? You may need more than one.\n"
+        "2.879458134,  1.345 with a bar over 345,  17/8,  √64,  ∛64,  ∛25",
+        [
+            "2.879458134, 1.345̅, 17/8, √64, and ∛64",
+            "√64 and 17/8 only",
+            "All six numbers",
+            "∛25, √64, and 17/8",
+        ],
+        0,
+        "Terminating 2.879458134, repeating 1.345̅, 17/8, √64=8, and ∛64=4 are rational. "
+        "∛25 is not a perfect cube, so it is irrational.",
+    ),
+    _q(
+        "cc_iii_cc6_2", "III", "CC6",
+        "estimate_root",
+        "Estimate √140 to the nearest tenth.",
+        ["11.8", "11.9", "12.0", "11.0"],
+        0,
+        "11.8²=139.24 and 11.9²=141.61. 140 is closer to 139.24, so √140≈11.8.",
+    ),
+    _q(
+        "cc_iii_cc6_3", "III", "CC6",
+        "repeating_to_fraction",
+        "USING THE METHOD SHOWN IN CLASS. Write 0.07 with the bar ONLY over the 7 as a fraction "
+        "in simplest form. (That is 0.0777…)",
+        ["7/90", "7/99", "7/9", "77/990"],
+        0,
+        "x=0.0777…. 10x=0.777…, 100x=7.777…. Subtract: 90x=7, x=7/90.",
+    ),
+    _q(
         "cc_iii_cc5_5", "III", "CC5",
         "identify_rational_set",
         "Which of the following are rational? You may need more than one.\n"
@@ -442,7 +479,97 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "x=0.0121212…. 100x=1.21212…, 100x−x=1.2, 99x=1.2, x=12/990=2/165.",
     ),
-    # ── IV  Exponent Properties (CC5 + later form) ──
+    # ── IV  Exponent Properties (CC6 misses first, then CC5 + later form) ──
+    _q(
+        "cc_iv_cc6_5", "IV", "CC6",
+        "power_of_power_product",
+        "Simplify. Write the final answer with only positive exponents.\n(x⁵)⁴ · x¹²",
+        ["x³²", "x²¹", "x⁹", "x¹⁶"],
+        0,
+        "Power of a power multiplies: (x⁵)⁴ = x²⁰. Then x²⁰ · x¹² = x³². "
+        "Do not add 5+4 (that wrongly gives x⁹ · x¹² = x²¹). CC6 #5 miss.",
+    ),
+    _q(
+        "cc_iv_cc6_5_slip", "IV", "CC6",
+        "power_of_power_slip",
+        "Arjun simplified (x⁵)⁴ · x¹² by adding 5+4, then 9+12, and got x²¹. "
+        "What is the correct simplification?",
+        ["x³²", "x²¹", "x⁹", "x⁶⁰"],
+        0,
+        "CC6 #5 miss: (x⁵)⁴ means 5×4=20, not 5+4. Then x²⁰ · x¹² = x³².",
+    ),
+    _q(
+        "cc_iv_cc6_5b", "IV", "CC6",
+        "power_of_power_product",
+        "Simplify. Write the final answer with only positive exponents.\n(x³)⁵ · x⁴",
+        ["x¹⁹", "x¹²", "x⁸", "x⁶⁰"],
+        0,
+        "Multiply first: (x³)⁵ = x¹⁵. Then x¹⁵ · x⁴ = x¹⁹. Adding 3+5 would wrongly give x¹².",
+    ),
+    _q(
+        "cc_iv_cc6_8", "IV", "CC6",
+        "power_of_power_solve",
+        "Solve for x.\n(10¹²)ˣ = 10²⁰",
+        ["x = 5/3", "x = 8", "x = 20", "x = 12/20"],
+        0,
+        "(10¹²)ˣ = 10¹²ˣ. So 12x = 20 and x = 20/12 = 5/3. "
+        "Do not subtract 20−12 (that wrongly gives x=8). CC6 #8 miss.",
+    ),
+    _q(
+        "cc_iv_cc6_8_slip", "IV", "CC6",
+        "power_equation_slip",
+        "Arjun solved (10¹²)ˣ = 10²⁰ by doing 20 − 12 and got x = 8. "
+        "What should he have done instead?",
+        [
+            "Set 12x = 20, so x = 5/3",
+            "Subtract: x = 20 − 12 = 8",
+            "Add: x = 20 + 12 = 32",
+            "Set 12x = 20, so x = 12/20",
+        ],
+        0,
+        "CC6 #8 miss: power of a power multiplies, so 12x = 20. x = 5/3, not 8.",
+    ),
+    _q(
+        "cc_iv_cc6_8b", "IV", "CC6",
+        "power_of_power_solve",
+        "Solve for x.\n(5⁸)ˣ = 5²⁴",
+        ["x = 3", "x = 16", "x = 24", "x = 8"],
+        0,
+        "(5⁸)ˣ = 5⁸ˣ. So 8x = 24 and x = 3. Subtracting 24−8 wrongly gives 16.",
+    ),
+    _q(
+        "cc_iv_cc6_6", "IV", "CC6",
+        "quotient_negative",
+        "Simplify. Write the final answer with only positive exponents.\n(a² b¹⁰) / (a⁴ b⁻⁶⁰)",
+        ["b⁷⁰ / a²", "b⁵⁰ / a²", "1 / (a² b⁵⁰)", "a² b⁷⁰"],
+        0,
+        "a²⁻⁴ = a⁻² and b¹⁰⁻(⁻⁶⁰) = b⁷⁰. Positive exponents: b⁷⁰ / a². "
+        "Subtracting a negative exponent adds. CC6 #6.",
+    ),
+    _q(
+        "cc_iv_cc6_6b", "IV", "CC6",
+        "quotient_negative",
+        "Simplify. Write the final answer with only positive exponents.\n(m³ n⁸) / (m⁵ n⁻⁴)",
+        ["n¹² / m²", "n⁴ / m²", "1 / (m² n⁴)", "m² n¹²"],
+        0,
+        "m³⁻⁵ = m⁻² and n⁸⁻(⁻⁴) = n¹², so n¹² / m².",
+    ),
+    _q(
+        "cc_iv_cc6_4", "IV", "CC6",
+        "zero_exponent",
+        "Simplify.\n1,456,789,874,500⁰",
+        ["1", "0", "1,456,789,874,500", "undefined"],
+        0,
+        "Any nonzero number to the 0 power is 1.",
+    ),
+    _q(
+        "cc_iv_cc6_7", "IV", "CC6",
+        "triple_same_base",
+        "If you triple 3⁹⁹, what is your result?",
+        ["3¹⁰⁰", "9⁹⁹", "3²⁹⁷", "3⁹⁶"],
+        0,
+        "Triple means multiply by 3: 3 · 3⁹⁹ = 3¹⁺⁹⁹ = 3¹⁰⁰.",
+    ),
     _q(
         "cc_iv_cc5_8", "IV", "CC5",
         "product_same_base",
@@ -491,7 +618,50 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "x⁻⁴ = 1/x⁴, so 5/(9 x⁴ y¹⁰).",
     ),
-    # ── V  Scientific Notation (later school form; not on CC1–CC5) ──
+    # ── V  Scientific Notation (CC6 + later school form) ──
+    _q(
+        "cc_v_cc6_9", "V", "CC6",
+        "sci_to_standard",
+        "Convert 1.89 × 10⁻⁵ to standard form.",
+        ["0.0000189", "0.000189", "0.00000189", "189,000"],
+        0,
+        "Negative exponent: move the decimal 5 places left: 0.0000189.",
+    ),
+    _q(
+        "cc_v_cc6_10", "V", "CC6",
+        "rewrite_sci_form",
+        "Is 92.4 × 10⁸ written in scientific notation? If not, rewrite it.",
+        [
+            "No — rewrite as 9.24 × 10⁹",
+            "Yes — it is already scientific notation",
+            "No — rewrite as 9.24 × 10¹⁰",
+            "No — rewrite as 924 × 10⁷",
+        ],
+        0,
+        "The coefficient must satisfy 1 ≤ |a| < 10. 92.4 is too big: 92.4 × 10⁸ = 9.24 × 10⁹.",
+    ),
+    _q(
+        "cc_v_cc6_11", "V", "CC6",
+        "add_sci",
+        "Simplify. Write the final answer in scientific notation.\n(9.9 × 10⁴²) + (8 × 10⁴¹)",
+        ["1.07 × 10⁴³", "17.9 × 10⁴¹", "1.07 × 10⁴²", "9.98 × 10⁴²"],
+        0,
+        "9.9 × 10⁴² = 99 × 10⁴¹. 99+8=107, so 107 × 10⁴¹ = 1.07 × 10⁴³.",
+    ),
+    _q(
+        "cc_v_cc6_12", "V", "CC6",
+        "divide_sci_word",
+        "Eziah consumed 8.4 × 10¹² burritos in 4 × 10² days. Assuming he ate the same amount "
+        "each day, how many burritos did he consume in one day? Write scientific notation.",
+        [
+            "2.1 × 10¹⁰ burritos",
+            "2.1 × 10¹⁴ burritos",
+            "12.4 × 10¹⁰ burritos",
+            "2.1 × 10⁸ burritos",
+        ],
+        0,
+        "Divide: 8.4/4=2.1 and 12−2=10, so 2.1 × 10¹⁰ burritos per day.",
+    ),
     _q(
         "cc_v_later_4", "V", "later form",
         "convert_to_sci",
@@ -959,6 +1129,151 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "7x − 2x = 6 + 12 → 5x = 18 → x = 18/5.",
     ),
+    # ── VII-2  No / Infinite / One Solution ──
+    _q(
+        "cc_vii2_scale_inf", "VII", "VII-2",
+        "scale_infinite",
+        "A balanced scale has 3 bags and 2 cubes on each side. If a bag is x cubes, "
+        "how many solutions does this scale have?",
+        [
+            "Infinite solutions — leftover cubes match, so every bag size works",
+            "No solution — leftover cubes do not match",
+            "One solution: x = 2",
+            "One solution: x = 3",
+        ],
+        0,
+        "Remove 3 bags from both pans: 2 cubes = 2 cubes, a true statement. Infinite solutions.",
+    ),
+    _q(
+        "cc_vii2_scale_none", "VII", "VII-2",
+        "scale_no_solution",
+        "A scale has 1 bag and 5 cubes on one side and 1 bag and 2 cubes on the other. "
+        "What happens when you remove the bags?",
+        [
+            "No solution — 5 cubes do not equal 2 cubes",
+            "Infinite solutions — the bags match",
+            "One solution: x = 3",
+            "One solution: x = 7",
+        ],
+        0,
+        "Same bags, different cubes: 5 ≠ 2. The scale never balances.",
+    ),
+    _q(
+        "cc_vii2_n1", "VII", "VII-2",
+        "classify_infinite",
+        "How many solutions? 8 + 5(x − 2) = 2x − 2 + 3x",
+        [
+            "Infinite solutions (−2 = −2)",
+            "No solution",
+            "One solution: x = 2",
+            "One solution: x = 0",
+        ],
+        0,
+        "8 + 5x − 10 = 5x − 2 → 5x − 2 = 5x − 2. Subtract 5x: −2 = −2, true → infinite.",
+    ),
+    _q(
+        "cc_vii2_n2", "VII", "VII-2",
+        "classify_no_solution",
+        "How many solutions? 8x − 4 − 2x = 3(2x − 1)",
+        [
+            "No solution (−4 = −3)",
+            "Infinite solutions",
+            "One solution: x = 1",
+            "One solution: x = 0",
+        ],
+        0,
+        "6x − 4 = 6x − 3. Subtract 6x: −4 = −3, false → no solution.",
+    ),
+    _q(
+        "cc_vii2_n4", "VII", "VII-2",
+        "classify_one",
+        "How many solutions? 6x + 10 = 10 − 2x + 10x",
+        [
+            "One solution: x = 0",
+            "Infinite solutions",
+            "No solution",
+            "One solution: x = 10",
+        ],
+        0,
+        "Right side is 10 + 8x. 6x + 10 = 8x + 10 → −2x = 0 → x = 0.",
+    ),
+    _q(
+        "cc_vii2_yt1", "VII", "VII-2",
+        "classify_no_solution",
+        "How many solutions? 3(5x + 2) = 15x",
+        [
+            "No solution (6 = 0)",
+            "Infinite solutions",
+            "One solution: x = 0",
+            "One solution: x = 2",
+        ],
+        0,
+        "15x + 6 = 15x. Subtract 15x: 6 = 0, false → no solution.",
+    ),
+    _q(
+        "cc_vii2_yt2", "VII", "VII-2",
+        "classify_infinite",
+        "How many solutions? −2(4x + 1) = −8x − 2",
+        [
+            "Infinite solutions (−2 = −2)",
+            "No solution",
+            "One solution: x = 1",
+            "One solution: x = 0",
+        ],
+        0,
+        "−8x − 2 = −8x − 2. Subtract −8x: −2 = −2, true → infinite.",
+    ),
+    _q(
+        "cc_vii2_yt5", "VII", "VII-2",
+        "classify_one",
+        "Solve. 10x + 7 = −3 − 10x",
+        ["x = −1/2", "no solution", "infinite solutions", "x = 1/2"],
+        0,
+        "10x + 10x = −3 − 7 → 20x = −10 → x = −1/2.",
+    ),
+    _q(
+        "cc_vii2_yt7", "VII", "VII-2",
+        "classify_one",
+        "How many solutions? 5(x + 7) = 12x + 35",
+        [
+            "One solution: x = 0",
+            "Infinite solutions (both sides have +35)",
+            "No solution",
+            "One solution: x = 7",
+        ],
+        0,
+        "5x + 35 = 12x + 35. Subtract 35: 5x = 12x → 0 = 7x → x = 0. "
+        "Matching constants are not enough if the x terms differ.",
+    ),
+    _q(
+        "cc_vii2_yt10", "VII", "VII-2",
+        "classify_no_solution",
+        "How many solutions? 5(1 + 2x) = (1/2)(8 + 20x)",
+        [
+            "No solution (5 = 4)",
+            "Infinite solutions",
+            "One solution: x = 0",
+            "One solution: x = 1",
+        ],
+        0,
+        "5 + 10x = 4 + 10x. Subtract 10x: 5 = 4, false → no solution.",
+    ),
+    _q(
+        "cc_vii2_fill_inf", "VII", "VII-2",
+        "fill_infinite",
+        "Fill the blank so the equation has infinite solutions.\n−3(2 − 4x) = −6 + ___x",
+        ["12", "4", "−6", "6"],
+        0,
+        "Left: −6 + 12x. Match the x coefficient: the blank is 12, so both sides are −6 + 12x.",
+    ),
+    _q(
+        "cc_vii2_fill_none", "VII", "VII-2",
+        "fill_no_solution",
+        "Fill the blank so the equation has no solution.\n−4x + 12 − 3x = ___x + 9",
+        ["−7", "7", "−4", "12"],
+        0,
+        "Left: −7x + 12. Match the x coefficient (−7) so the variables cancel, then 12 = 9 is false.",
+    ),
 ]
 
 
@@ -970,7 +1285,7 @@ def get_section(section_id: str) -> dict | None:
     sid = str(section_id).strip().upper() or ""
     if sid in {"VI-1", "VI-2", "VI-3", "VI1", "VI2", "VI3"}:
         sid = "VI"
-    if sid in {"VII-1", "VII1", "U7"}:
+    if sid in {"VII-1", "VII-2", "VII1", "VII2", "U7"}:
         sid = "VII"
     return SECTIONS.get(sid)
 

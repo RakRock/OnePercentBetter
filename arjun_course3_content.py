@@ -142,6 +142,14 @@ UNIT_7_ACTIVITIES = [
         "inline_diagrams": False,
         "diagrams": [],
     },
+    {
+        "number": 2,
+        "slug": "activity_2_infinite_no_solutions",
+        "title": "VII-2 Linear Equations: No / Infinite Solutions",
+        "file": "activity_2_infinite_no_solutions.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
 ]
 
 

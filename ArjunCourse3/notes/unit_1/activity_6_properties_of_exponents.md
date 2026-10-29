@@ -3,6 +3,11 @@
 [KEY]
 **Same base:** multiply → **add exponents**; divide → **subtract exponents**.  
 **Power to a power:** multiply exponents. **Negative exponent:** `a⁻ⁿ = 1/aⁿ`.
+
+**CC6 (Oct 25) slips — drill these:**
+- `(x⁵)⁴ · x¹²` is `x³²`, not `x²¹`. Power of a power **multiplies**: 5×4=20, then 20+12=32. Do not add 5+4.
+- `(10¹²)ˣ = 10²⁰` means `12x = 20`, so `x = 5/3`. Do **not** subtract 20−12 (that wrongly gives x=8).
+- Quotient: `a²b¹⁰ / a⁴b⁻⁶⁰` → `a⁻² b⁷⁰ = b⁷⁰/a²`. Subtracting a negative **adds**.
 [/KEY]
 
 ## Quick Review Notes

@@ -1,4 +1,4 @@
-"""Generate a fresh Math 3 Concept Check MCQ set from CC1–CC5 seeds + lesson notes."""
+"""Generate a fresh Math 3 Concept Check MCQ set from CC1–CC6 seeds + lesson notes."""
 
 from __future__ import annotations
 
@@ -55,9 +55,10 @@ def _notes_for_section(section_id: str) -> str:
 
 def _seed_block(seeds: list[dict]) -> str:
     lines = [
-        "SEED PROBLEMS from Arjun's actual Friday Concept Check papers (CC1–CC5) "
+        "SEED PROBLEMS from Arjun's actual Friday Concept Check papers (CC1–CC6) "
         "or the Unit 6 packets VI-1 Representing Patterns, VI-2 Using Patterns, "
-        "and VI-3 Solving Linear Equations with Models, or Unit 7 packet VII-1 Multi-Step Equations.",
+        "and VI-3 Solving Linear Equations with Models, or Unit 7 packets VII-1 Multi-Step "
+        "Equations and VII-2 No / Infinite Solutions.",
         "Match these stem types. Do NOT copy the numbers, names, or stories.",
     ]
     for i, seed in enumerate(seeds, start=1):
@@ -91,6 +92,11 @@ RULES:
 - For Using Patterns (VI-2): square n², rectangular n(n+1), triangular n(n+1)/2. Square/rect/triangle counts do NOT have a constant difference. Joined-polygon perimeters DO: pentagons add 3 (hide 2 sides), octagons add 6. Describe figures in words. Do not ask the student to draw.
 - For Solving Equations with Models (VI-3): a bag is x cubes, a cube is 1, a balanced scale is an equation. Ask for the equation, cubes per bag, or the inverse-operation steps. Describe pans in words (do not ask the student to draw).
 - For Multi-Step Equations (VII-1): variables on both sides. Steps: simplify/distribute, move variables, move constants, solve. Include a bags-and-cubes stem and a “too many bags → combine like terms” stem. Wrong options = dropped a distribute sign, combined unlike terms, or divided before moving the other variable. Do not ask the student to draw.
+- For No / Infinite Solutions (VII-2): after simplify, if variables cancel: true statement → infinite, false → none, otherwise one solution x=#. Same bags and same cubes → infinite; same bags different cubes → none. Fill-in: match the x coefficient (and the constant for infinite). Every Unit 7 set MUST include at least one VII-1 solve and one VII-2 classify (one/none/infinite). Do not ask the student to draw.
+- For Exponent Properties (IV): Arjun scored 2 on CC6 (Oct 25). Every IV set MUST include all three miss types:
+  (1) a power-of-a-power product like (x^a)^b · x^c — multiply a·b first, then add c. Trap = add a+b (his x²¹ instead of x³²);
+  (2) a solve (base^m)^x = base^n — set mx = n. Trap = subtract n−m (his x=8 instead of 5/3);
+  (3) a quotient with a negative exponent in the denominator — subtracting a negative adds; write only positive exponents.
 {KID_NUMERIC_FORMAT_RULES}
 
 Respond with ONLY a JSON array:

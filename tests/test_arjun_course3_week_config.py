@@ -362,10 +362,11 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
         self.assertEqual(cfg["topics"], [])
         self.assertIn("Unit 6", cfg["week_label"])
 
-    def test_unit7_class_schedule_covers_vii1(self):
+    def test_unit7_class_schedule_covers_vii1_and_vii2(self):
         guidance = c3w.weekly_guidance(7)
         self.assertIn("VII-1", guidance)
-        self.assertIn("Multi-Step", guidance)
+        self.assertIn("VII-2", guidance)
+        self.assertIn("infinite", guidance.lower())
         self.assertEqual(c3p.get_categories(7), {})
         cfg = c3w.default_week_config(7)
         self.assertEqual(cfg["topics"], [])

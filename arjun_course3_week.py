@@ -40,9 +40,11 @@ WEEKLY_GUIDANCE: dict[int, str] = {
         "(`2x+3=7`, `3x=12`, `2x+4=10`). Use Concept Check Unit 6 for a fresh paper."
     ),
     7: (
-        "**Class packet VII-1 / Unit 7 (1):** Solving Linear Equations — Multi-Step Equations. "
-        "Bags and cubes with variables on both sides; if there are too many bags, combine like terms. "
-        "Then simplify, move variables, move constants, solve. Use Concept Check Unit 7 for a fresh paper."
+        "**Class packets VII-1 and VII-2 / Unit 7:** Multi-step equations, then no / infinite / one solution. "
+        "VII-1: bags and cubes with variables on both sides; if there are too many bags, combine like terms. "
+        "Then simplify, move variables, move constants, solve. "
+        "VII-2: after simplifying, variables may cancel — true statement → infinite, false → none, otherwise x = #. "
+        "Classroom 10/30 flags CC 8: The OCHO (IV–VII). Use Concept Check Unit 7 for a fresh mixed paper."
     ),
 }
 
