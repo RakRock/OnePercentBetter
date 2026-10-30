@@ -437,7 +437,12 @@ def compute_expected(question: str) -> float | None:
         val = evaluate_numeric(expr)
         if val is not None:
             return val
-    return compute_fraction_of_remainder(question) or compute_linear_expression(question) or compute_scientific_notation_sum(question)
+    return (
+        compute_fraction_of_remainder(question)
+        or compute_linear_expression(question)
+        or compute_linear_equation(question)
+        or compute_scientific_notation_sum(question)
+    )
 
 
 def _parse_scientific_notation_terms(text: str) -> list[tuple[float, int]]:
@@ -588,6 +593,92 @@ def compute_linear_expression(question: str) -> float | None:
     return float(a * n + offset)
 
 
+_SKIP_LINEAR_EQ_RE = re.compile(
+    r"how many solutions|infinite|no solution|fill the blank|___|"
+    r"which equation|matches the scale|true statement|false statement|"
+    r"do not solve",
+    re.I,
+)
+_SOLVE_INTENT_RE = re.compile(
+    r"\b(solve|what is x|value of x|each bag|how many cubes)\b",
+    re.I,
+)
+_LINEAR_EQ_SIDE_RE = re.compile(
+    r"(\s*[+\-]?\s*(?:\d|\()[0-9xX().,+\-*/\s½⅓¼¾⅔]*)="
+    r"(\s*[+\-]?\s*(?:\d|\(|x)[0-9xX().,+\-*/\s½⅓¼¾⅔]*)",
+    re.I,
+)
+_UNICODE_FRACS = {
+    "½": "(1/2)",
+    "⅓": "(1/3)",
+    "¼": "(1/4)",
+    "¾": "(3/4)",
+    "⅔": "(2/3)",
+}
+
+
+def _prepare_linear_side(expr: str) -> str | None:
+    s = _sanitize_math_text(expr)
+    for glyph, repl in _UNICODE_FRACS.items():
+        s = s.replace(glyph, repl)
+    s = s.replace("×", "*").replace("÷", "/")
+    s = re.sub(r"\s+", "", s)
+    if not s or re.search(r"x\^|\^x|x\*\*|x[²³]", s, re.I):
+        return None
+    s = re.sub(r"(\d)(x)", r"\1*\2", s, flags=re.I)
+    s = re.sub(r"(\d)\(", r"\1*(", s)
+    s = re.sub(r"\)\(", r")*(", s)
+    s = re.sub(r"\)(x)", r")*\1", s, flags=re.I)
+    s = re.sub(r"(x)\(", r"\1*(", s, flags=re.I)
+    return s
+
+
+def _eval_linear_side(expr: str, x_val: float) -> float | None:
+    s = _prepare_linear_side(expr)
+    if s is None:
+        return None
+    injected = re.sub(r"(?<![a-zA-Z])x(?![a-zA-Z])", f"({x_val})", s, flags=re.I)
+    if re.search(r"[a-zA-Z]", injected):
+        return None
+    return evaluate_numeric(injected)
+
+
+def compute_linear_equation(question: str) -> float | None:
+    """Solve ax + b = cx + d from a 'Solve.' stem. None when not unique or not linear."""
+    text = str(question)
+    if _SKIP_LINEAR_EQ_RE.search(text):
+        return None
+    if not re.search(r"(?<![a-zA-Z])x(?![a-zA-Z])", text, re.I):
+        return None
+    if not _SOLVE_INTENT_RE.search(text):
+        return None
+    cleaned = re.sub(
+        r"^\s*solve(?:\s+for\s+x)?\s*[.:]?\s*",
+        "",
+        _sanitize_math_text(text),
+        flags=re.I,
+    )
+    found = list(_LINEAR_EQ_SIDE_RE.finditer(cleaned))
+    if not found:
+        return None
+    left = found[-1].group(1).strip()
+    right = found[-1].group(2).strip().rstrip("?.!")
+    if not left or not right:
+        return None
+    left0 = _eval_linear_side(left, 0.0)
+    right0 = _eval_linear_side(right, 0.0)
+    left1 = _eval_linear_side(left, 1.0)
+    right1 = _eval_linear_side(right, 1.0)
+    if None in (left0, right0, left1, right1):
+        return None
+    f0 = left0 - right0
+    f1 = left1 - right1
+    coeff = f1 - f0
+    if abs(coeff) < 1e-12:
+        return None
+    return -f0 / coeff
+
+
 def compute_fraction_of_remainder(question: str) -> float | None:
     """Fraction-of-remainder word problems: eat 1/8, then 4/9 of what's left."""
     q = str(question).lower()
@@ -669,6 +760,9 @@ def surd_literal_numeric(text: str) -> float | None:
 
 def option_numeric_value(text: str) -> float | None:
     raw = _strip_thousands_separators(str(text).strip())
+    eq_m = re.match(r"^(?:one solution:\s*)?(?:x\s*=\s*)(.+)$", raw, re.I)
+    if eq_m and eq_m.group(1).strip():
+        return option_numeric_value(eq_m.group(1).strip())
     if ratio_pair_option(raw) is not None:
         return None
     if comma_separated_int_tuple(raw) is not None:

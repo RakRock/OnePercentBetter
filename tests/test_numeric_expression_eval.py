@@ -185,6 +185,35 @@ class TestNumericExpressionEval(unittest.TestCase):
         options = ["a", "b", "c", "d"]
         self.assertEqual(ensure_numeric_answer_key(question, options, 2), 2)
 
+    def test_solve_linear_equation_fixes_wrong_key(self) -> None:
+        question = "Solve. 4 + 5(x - 2) = 29"
+        options = ["5", "3", "7", "6"]
+        self.assertAlmostEqual(compute_expected(question), 7.0)
+        self.assertEqual(ensure_numeric_answer_key(question, options, 1), 2)
+        self.assertEqual(options[2], "7")
+
+    def test_solve_linear_equation_rejects_missing_true_value(self) -> None:
+        question = "Solve. 4 + 5(x - 2) = 29"
+        options = ["5", "3", "4", "6"]
+        with self.assertRaises(ValueError):
+            ensure_numeric_answer_key(question, options, 1)
+
+    def test_solve_linear_equation_x_equals_option(self) -> None:
+        question = "Solve. 10 − 4x = −9x"
+        options = ["x = −2", "x = 2", "x = −10/13", "x = 10"]
+        self.assertEqual(ensure_numeric_answer_key(question, options, 1), 0)
+
+    def test_skips_infinite_solution_classify(self) -> None:
+        question = "How many solutions? 8 + 5(x − 2) = 2x − 2 + 3x"
+        options = [
+            "Infinite solutions (−2 = −2)",
+            "No solution",
+            "One solution: x = 2",
+            "One solution: x = 0",
+        ]
+        self.assertIsNone(compute_expected(question))
+        self.assertEqual(ensure_numeric_answer_key(question, options, 0), 0)
+
     def test_parentheses_and_caret_exponents(self) -> None:
         self.assertAlmostEqual(evaluate_numeric("(5-2)^2*3^0"), 9.0)
 
