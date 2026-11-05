@@ -68,6 +68,11 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_iv_cc6_8": "x = 5/3",
             "cc_iv_cc6_8_slip": "Set 12x = 20, so x = 5/3",
             "cc_iv_cc6_8b": "x = 3",
+            "cc_iv_cc8_1": "x¹⁰",
+            "cc_iv_cc8_2": "x³⁵",
+            "cc_iv_cc8_3": "x⁸⁴",
+            "cc_iv_cc8_4": "x¹⁶ / y²⁶",
+            "cc_iv_cc8_5": "x = 33/2",
             "cc_v_cc6_9": "0.0000189",
             "cc_v_cc6_10": "No — rewrite as 9.24 × 10⁹",
             "cc_v_cc6_11": "1.07 × 10⁴³",
@@ -107,6 +112,11 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_vi3_two_bags_four": "3",
             "cc_vi3_eq4": "2x + 4 = 10",
             "cc_vi3_solve_check": "x = 3",
+            "cc_vi_cc8_table": "6, 10, 14",
+            "cc_vi_cc8_diff": "Yes — the common difference is 4",
+            "cc_vi_cc8_expr": "6 + 4(n − 1)  or  4n + 2",
+            "cc_vi_cc8_30": "122",
+            "cc_vi_cc8_bags": "2",
             "cc_vii1_scale_eq": "5x + 2 = 3x + 4",
             "cc_vii1_scale_x": "1",
             "cc_vii1_ex1": "x = −2",
@@ -130,6 +140,25 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_vii2_yt10": "No solution (5 = 4)",
             "cc_vii2_fill_inf": "12",
             "cc_vii2_fill_none": "−7",
+            "cc_vii_cc8_14": "Infinite solutions (10 = 10)",
+            "cc_vii_cc8_15": "One solution: x = 0",
+            "cc_vii_cc8_15_slip": "x = 0 (one solution)",
+            "cc_vii_cc8_16": "x = 2",
+            "cc_vii_cc8_17": "x = −1/4",
+            "cc_vii4_walk": "100 + 10m = 270, so m = 17",
+            "cc_vii4_save": "3",
+            "cc_vii4_fence": "320 yards",
+            "cc_vii4_nfc24": "45",
+            "cc_vii4_nfc24_who": "49ers 24, Packers 21 — 49ers by 3",
+            "cc_vii4_boat": "20/3 hours",
+            "cc_vii4_churros": "50",
+            "cc_vii4_shop": "300",
+            "cc_vii4_spent": "5000 rupees",
+            "cc_vii4_profit": "1000 rupees",
+            "cc_vii4_triangle": "360 cm",
+            "cc_vii4_stream": "4",
+            "cc_vii4_nfc13": "76",
+            "cc_vii4_nfc13_who": "Packers 31, 49ers 45 — Packers lost by 14",
         }
         for qid, expected in keyed.items():
             q = by_id[qid]
@@ -189,6 +218,7 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         self.assertEqual(info["title"], "Unit 7 — Solving Linear Equations")
         self.assertEqual(ccform.get_section("VII-1")["id"], "VII")
         self.assertEqual(ccform.get_section("VII-2")["id"], "VII")
+        self.assertEqual(ccform.get_section("VII-4")["id"], "VII")
         notes = ccform_llm._notes_for_section("VII")
         self.assertIn("variables on both sides", notes.lower())
         self.assertIn("x = −5", notes)
@@ -196,9 +226,11 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         self.assertIn("infinite", notes.lower())
         self.assertIn("no solution", notes.lower())
         self.assertIn("x = −1/2", notes)
+        self.assertIn("verbal model", notes.lower())
+        self.assertIn("320", notes)
         seeds = ccform.seeds_for_section("VII")
         papers = {q["paper"] for q in seeds}
-        self.assertTrue({"VII-1", "VII-2"} <= papers)
+        self.assertTrue({"VII-1", "VII-2", "VII-4", "CC8"} <= papers)
         self.assertTrue(all(q["section"] == "VII" for q in seeds))
         questions = ccform_llm.fallback_seed_set("VII")
         self.assertEqual(len(questions), 5)
@@ -210,6 +242,7 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             [
                 "activity_1_multistep_equations",
                 "activity_2_infinite_no_solutions",
+                "activity_3_word_problems",
             ],
         )
 
@@ -221,6 +254,12 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         self.assertIn("CC6", papers_iii)
         self.assertIn("CC6", papers_iv)
         self.assertIn("CC6", papers_v)
+        self.assertIn("CC8", papers_iv)
+        papers_vi = {q["paper"] for q in ccform.seeds_for_section("VI")}
+        papers_vii = {q["paper"] for q in ccform.seeds_for_section("VII")}
+        self.assertIn("CC8", papers_v)
+        self.assertIn("CC8", papers_vi)
+        self.assertIn("CC8", papers_vii)
         iv_stems = {q["stem"] for q in ccform.seeds_for_section("IV")}
         self.assertTrue(
             {"power_of_power_product", "power_of_power_slip", "power_equation_slip"}

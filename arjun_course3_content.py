@@ -150,6 +150,14 @@ UNIT_7_ACTIVITIES = [
         "inline_diagrams": False,
         "diagrams": [],
     },
+    {
+        "number": 3,
+        "slug": "activity_3_word_problems",
+        "title": "VII-4 Solve Equations Algebraically: Word Problems",
+        "file": "activity_3_word_problems.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
 ]
 
 

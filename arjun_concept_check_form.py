@@ -1,12 +1,12 @@
-"""Math 3 Friday Concept Check — Unit 1 I–V, Unit 6 VI-1–VI-3, and Unit 7 VII-1–VII-2.
+"""Math 3 Friday Concept Check — Unit 1 I–V, Unit 6 VI-1–VI-3, and Unit 7 VII-1–VII-4.
 
-Seeds are the actual problems from Arjun's CC1–CC6 papers (plus Scientific
+Seeds are the actual problems from Arjun's CC1–CC8 papers (plus Scientific
 Notation items from a later school form, because CC1–CC5 did not include V),
 the Unit 6 packets VI-1 Representing Patterns, VI-2 Using Patterns, and
 VI-3 Solving Linear Equations with Models, and Unit 7 packets VII-1
-Multi-Step Equations and VII-2 No / Infinite Solutions. CC6 (Oct 25) Unit IV
-is weighted: Arjun scored 2 after adding inside a power of a power and
-subtracting on (aᵐ)ˣ = aⁿ.
+Multi-Step Equations, VII-2 No / Infinite Solutions, and VII-4 Word Problems.
+CC6 (Oct 25) Unit IV is weighted: Arjun scored 2 after adding inside a power
+of a power and subtracting on (aᵐ)ˣ = aⁿ. CC8 (the OCHO) covers IV–VII.
 """
 
 from __future__ import annotations
@@ -95,10 +95,11 @@ SECTIONS: dict[str, dict] = {
         "id": "VII",
         "roman": "VII",
         "title": "Unit 7 — Solving Linear Equations",
-        "short": "Multi-step, then one / none / infinite solutions",
+        "short": "Multi-step, one/none/infinite, then word problems",
         "note_files": [
             "activity_1_multistep_equations.md",
             "activity_2_infinite_no_solutions.md",
+            "activity_3_word_problems.md",
         ],
         "session_count": 5,
         "emoji": "⚖️",
@@ -618,7 +619,47 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "x⁻⁴ = 1/x⁴, so 5/(9 x⁴ y¹⁰).",
     ),
-    # ── V  Scientific Notation (CC6 + later school form) ──
+    _q(
+        "cc_iv_cc8_1", "IV", "CC8",
+        "product_same_base",
+        "Simplify. Write the final answer with only positive exponents.\n(x⁶)(x⁴)",
+        ["x¹⁰", "x²⁴", "x²", "x⁶⁺⁴x"],
+        0,
+        "Add exponents: x⁶⁺⁴ = x¹⁰.",
+    ),
+    _q(
+        "cc_iv_cc8_2", "IV", "CC8",
+        "quotient_same_base",
+        "Simplify. Write the final answer with only positive exponents.\nx⁴⁰ / x⁵",
+        ["x³⁵", "x⁸", "x⁴⁵", "1/x³⁵"],
+        0,
+        "Subtract exponents: x⁴⁰⁻⁵ = x³⁵.",
+    ),
+    _q(
+        "cc_iv_cc8_3", "IV", "CC8",
+        "power_of_power_product",
+        "Simplify. Write the final answer with only positive exponents.\n(x⁷)¹⁰ · x¹⁴",
+        ["x⁸⁴", "x³¹", "x⁷⁰", "x¹⁴⁰"],
+        0,
+        "Power of a power multiplies: (x⁷)¹⁰ = x⁷⁰. Then x⁷⁰ · x¹⁴ = x⁸⁴.",
+    ),
+    _q(
+        "cc_iv_cc8_4", "IV", "CC8",
+        "quotient_negative",
+        "Simplify. Write the final answer with only positive exponents.\n(x⁹ y⁻¹⁵) / (x⁻⁷ y¹¹)",
+        ["x¹⁶ / y²⁶", "x² / y²⁶", "x¹⁶ y⁻⁴", "x¹⁶ y²⁶"],
+        0,
+        "x⁹⁻(⁻⁷)=x¹⁶ and y⁻¹⁵⁻¹¹=y⁻²⁶, so x¹⁶ / y²⁶.",
+    ),
+    _q(
+        "cc_iv_cc8_5", "IV", "CC8",
+        "power_of_power_solve",
+        "Solve for x.\n(4²)ˣ = 4³³",
+        ["x = 33/2", "x = 31", "x = 66", "x = 2/33"],
+        0,
+        "(4²)ˣ = 4²ˣ. So 2x = 33 and x = 33/2. Do not subtract 33−2.",
+    ),
+    # ── V  Scientific Notation (CC6 + CC8) ──
     _q(
         "cc_v_cc6_9", "V", "CC6",
         "sci_to_standard",
@@ -663,7 +704,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "Divide: 8.4/4=2.1 and 12−2=10, so 2.1 × 10¹⁰ burritos per day.",
     ),
     _q(
-        "cc_v_later_4", "V", "later form",
+        "cc_v_later_4", "V", "CC8",
         "convert_to_sci",
         "Convert 60,000,000 to scientific notation.",
         ["6 × 10⁷", "6 × 10⁶", "60 × 10⁶", "6 × 10⁸"],
@@ -671,7 +712,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "6.0 with the decimal moved 7 places: 6 × 10⁷.",
     ),
     _q(
-        "cc_v_later_5", "V", "later form",
+        "cc_v_later_5", "V", "CC8",
         "multiply_sci",
         "Simplify. Write the final answer in scientific notation.\n(6.2 × 10¹⁵) · (2 × 10³)",
         ["1.24 × 10¹⁹", "12.4 × 10¹⁸", "8.2 × 10¹⁸", "1.24 × 10¹⁸"],
@@ -679,7 +720,7 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "6.2×2=12.4 and 10¹⁵×10³=10¹⁸, so 12.4×10¹⁸=1.24×10¹⁹.",
     ),
     _q(
-        "cc_v_later_6", "V", "later form",
+        "cc_v_later_6", "V", "CC8",
         "subtract_sci_word",
         "Last year, Bobissa ate her Halloween candy in 8.4 × 10⁴ seconds. This year she did it "
         "in 4 × 10² seconds. How much longer did it take her last year? Write scientific notation.",
@@ -1025,6 +1066,53 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "2x + 4 − 4 = 10 − 4, so 2x = 6, x = 3. Check: 2(3) + 4 = 10.",
     ),
+    _q(
+        "cc_vi_cc8_table", "VI", "CC8",
+        "polygon_next",
+        "Joined regular polygons (CC8 figures): Figure 1 perimeter 6, Figure 2 perimeter 10, "
+        "Figure 3 perimeter 14. What are the perimeters of figures 1, 2, and 3?",
+        ["6, 10, 14", "6, 12, 18", "10, 18, 26", "5, 8, 11"],
+        0,
+        "Each new polygon shares one full side, so the perimeter grows by 4: 6, 10, 14.",
+    ),
+    _q(
+        "cc_vi_cc8_diff", "VI", "CC8",
+        "polygon_constant_diff",
+        "Joined polygons have perimeters 6, 10, 14, …. Is there a common difference?",
+        [
+            "Yes — the common difference is 4",
+            "No — the gaps keep growing",
+            "Yes — the common difference is 6",
+            "Yes — the common difference is 8",
+        ],
+        0,
+        "10−6=4 and 14−10=4. Joined-polygon perimeters have a constant difference.",
+    ),
+    _q(
+        "cc_vi_cc8_expr", "VI", "CC8",
+        "polygon_expr",
+        "Joined polygons: first perimeter 6, add 4 each figure. "
+        "Which expression gives the perimeter of the nth figure?",
+        ["6 + 4(n − 1)  or  4n + 2", "6n", "6 + 4n", "4n − 2"],
+        0,
+        "First term 6, constant difference 4 → 6 + 4(n − 1) = 4n + 2.",
+    ),
+    _q(
+        "cc_vi_cc8_30", "VI", "CC8",
+        "polygon_far",
+        "Joined-polygon perimeter is 4n + 2. What is the perimeter of the 30th figure?",
+        ["122", "126", "120", "242"],
+        0,
+        "4(30) + 2 = 120 + 2 = 122. (6 + 4·30 = 126 forgets the n−1; 242 is the decagon 8n+2.)",
+    ),
+    _q(
+        "cc_vi_cc8_bags", "VI", "CC8",
+        "bags_and_cubes_solve",
+        "Model and solve using bags and cubes: 3x + 2 = 8. How many cubes are in each bag?",
+        ["2", "3", "10/3", "5"],
+        0,
+        "Subtract 2 cubes: 3x = 6. Split 6 cubes into 3 bags: x = 2.",
+    ),
     # ── VII-1  Multi-Step Equations ──
     _q(
         "cc_vii1_scale_eq", "VII", "VII-1",
@@ -1274,6 +1362,200 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "Left: −7x + 12. Match the x coefficient (−7) so the variables cancel, then 12 = 9 is false.",
     ),
+    # ── VII  CC8 (the OCHO) ──
+    _q(
+        "cc_vii_cc8_14", "VII", "CC8",
+        "classify_infinite",
+        "How many solutions? 2(x + 5) = 2x + 10",
+        [
+            "Infinite solutions (10 = 10)",
+            "No solution",
+            "One solution: x = 5",
+            "One solution: x = 0",
+        ],
+        0,
+        "2x + 10 = 2x + 10. Subtract 2x: 10 = 10, true → infinite.",
+    ),
+    _q(
+        "cc_vii_cc8_15", "VII", "CC8",
+        "classify_one",
+        "How many solutions? 12x + 11 = 2x + 11 + x",
+        [
+            "One solution: x = 0",
+            "No solution (variables canceled)",
+            "Infinite solutions",
+            "One solution: x = 11",
+        ],
+        0,
+        "Right: 3x + 11. 12x + 11 = 3x + 11 → 9x = 0 → x = 0. "
+        "CC8 miss: 9x = 0 is one solution, not 'no solution'. No solution is a false leftover like 6 = 0.",
+    ),
+    _q(
+        "cc_vii_cc8_15_slip", "VII", "CC8",
+        "zero_product_slip",
+        "Arjun simplified 12x + 11 = 2x + 11 + x down to 9x = 0 and wrote 'no solutions'. "
+        "What is the correct conclusion?",
+        [
+            "x = 0 (one solution)",
+            "No solution, because the x terms canceled",
+            "Infinite solutions, because 0 = 0",
+            "x = 9",
+        ],
+        0,
+        "9x = 0 means x = 0. That is one solution. No solution would be 0 = 11 or 6 = 0.",
+    ),
+    _q(
+        "cc_vii_cc8_16", "VII", "CC8",
+        "classify_one",
+        "Solve. 1 + 2(x + 1) = x + 5",
+        ["x = 2", "x = 3", "infinite solutions", "no solution"],
+        0,
+        "1 + 2x + 2 = x + 5 → 2x + 3 = x + 5 → x = 2.",
+    ),
+    _q(
+        "cc_vii_cc8_17", "VII", "CC8",
+        "distribute_both_sides",
+        "Solve. 4x + 24 = 5(x + 5) + 3x",
+        ["x = −1/4", "x = 4.75", "x = −25/4", "no solution"],
+        0,
+        "5(x + 5) = 5x + 25 (both terms). 4x + 24 = 8x + 25 → −1 = 4x → x = −1/4. "
+        "CC8 miss: 5(x + 5) = 5x + 5 wrongly gives x = 4.75.",
+    ),
+    # ── VII-4  Word Problems ──
+    _q(
+        "cc_vii4_walk", "VII", "VII-4",
+        "start_plus_rate",
+        "Aunt gives $100. Uncle gives $10 for every mile walked. The goal is $270. "
+        "Which equation, and how many miles?",
+        ["100 + 10m = 270, so m = 17", "10m = 270, so m = 27", "100 + 10m = 270, so m = 37", "100m + 10 = 270, so m = 2.6"],
+        0,
+        "Verbal: start 100 plus 10 per mile equals 270. 10m = 170, m = 17.",
+    ),
+    _q(
+        "cc_vii4_save", "VII", "VII-4",
+        "start_plus_rate",
+        "A savings account has $18,500. You save $500 each month toward $20,000. "
+        "How many months do you need?",
+        ["3", "4", "30", "1.5"],
+        0,
+        "18500 + 500t = 20000 → 500t = 1500 → t = 3.",
+    ),
+    _q(
+        "cc_vii4_fence", "VII", "VII-4",
+        "two_expressions_equal",
+        "The longest side of a park is 10 yards less than 1/2 of the perimeter, "
+        "and also 22 yards more than 2/5 of the perimeter. What is the perimeter?",
+        ["320 yards", "64 yards", "160 yards", "12 yards"],
+        0,
+        "½P − 10 = ⅖P + 22 → ½P − ⅖P = 32 → (1/10)P = 32 → P = 320.",
+    ),
+    _q(
+        "cc_vii4_nfc24", "VII", "VII-4",
+        "two_parts_make_total",
+        "49ers scored 15 more than 1/5 of the total points T. Packers scored 6 more than 1/3 of T. "
+        "Together they scored all T points. What is T?",
+        ["45", "21", "63", "36"],
+        0,
+        "T/5 + 15 + T/3 + 6 = T → 8T/15 + 21 = T → 21 = 7T/15 → T = 45.",
+    ),
+    _q(
+        "cc_vii4_nfc24_who", "VII", "VII-4",
+        "who_won",
+        "Total points T = 45. 49ers scored T/5 + 15. Packers scored T/3 + 6. Who won, and by how many?",
+        [
+            "49ers 24, Packers 21 — 49ers by 3",
+            "Packers 24, 49ers 21 — Packers by 3",
+            "Tie 22.5 to 22.5",
+            "49ers 15, Packers 6 — 49ers by 9",
+        ],
+        0,
+        "49ers: 9 + 15 = 24. Packers: 15 + 6 = 21. 49ers won by 3.",
+    ),
+    _q(
+        "cc_vii4_boat", "VII", "VII-4",
+        "start_plus_rate",
+        "A boat costs 200 rupees plus 15 rupees per hour. You have 300 rupees. "
+        "How many hours can you rent it?",
+        ["20/3 hours", "20 hours", "15 hours", "7 hours"],
+        0,
+        "200 + 15h = 300 → 15h = 100 → h = 20/3.",
+    ),
+    _q(
+        "cc_vii4_churros", "VII", "VII-4",
+        "leftover_after_fixed",
+        "Admission is $150, souvenirs are $25 each, churros are $8 each. "
+        "You have $600 and buy 2 souvenirs, then spend the rest on churros. How many churros?",
+        ["50", "56", "75", "18"],
+        0,
+        "150 + 2(25) + 8c = 600 → 200 + 8c = 600 → 8c = 400 → c = 50.",
+    ),
+    _q(
+        "cc_vii4_shop", "VII", "VII-4",
+        "start_plus_rate",
+        "A shop needs 800 rupees to open and 1400 rupees each month. There are 420,800 rupees saved. "
+        "How many months can it stay open with no extra earnings?",
+        ["300", "300.5", "420", "250"],
+        0,
+        "800 + 1400m = 420800 → 1400m = 420000 → m = 300.",
+    ),
+    _q(
+        "cc_vii4_spent", "VII", "VII-4",
+        "evaluate_after_n",
+        "Opening cost 800 rupees plus 1400 rupees each month. How much is spent after 3 months?",
+        ["5000 rupees", "4200 rupees", "2200 rupees", "1400 rupees"],
+        0,
+        "800 + 1400(3) = 800 + 4200 = 5000.",
+    ),
+    _q(
+        "cc_vii4_profit", "VII", "VII-4",
+        "profit_r_minus_c",
+        "After 3 months, costs are 5000 rupees and revenue is 6000 rupees. "
+        "Use P = R − C. What is the profit?",
+        ["1000 rupees", "11000 rupees", "0 rupees", "6000 rupees"],
+        0,
+        "P = 6000 − 5000 = 1000.",
+    ),
+    _q(
+        "cc_vii4_triangle", "VII", "VII-4",
+        "two_expressions_equal",
+        "The longest side of a triangle is 30 cm longer than 1/3 of the perimeter. "
+        "The shortest side is 1/4 of the perimeter. The longest side is 60 cm longer than the shortest. "
+        "What is the perimeter?",
+        ["360 cm", "180 cm", "240 cm", "90 cm"],
+        0,
+        "P/3 + 30 = P/4 + 60 → P/3 − P/4 = 30 → P/12 = 30 → P = 360.",
+    ),
+    _q(
+        "cc_vii4_stream", "VII", "VII-4",
+        "two_expressions_equal",
+        "Service A costs $10 a month plus a $20 sign-up fee. Service B costs $15 a month. "
+        "After how many months do they cost the same?",
+        ["4", "2", "20", "10"],
+        0,
+        "10m + 20 = 15m → 20 = 5m → m = 4.",
+    ),
+    _q(
+        "cc_vii4_nfc13", "VII", "VII-4",
+        "two_parts_make_total",
+        "49ers scored 26 more than 1/4 of the total points T. Packers scored 7 less than 1/2 of T. "
+        "Together they scored all T points. What is T?",
+        ["76", "52", "38", "116"],
+        0,
+        "T/4 + 26 + T/2 − 7 = T → (3/4)T + 19 = T → 19 = T/4 → T = 76.",
+    ),
+    _q(
+        "cc_vii4_nfc13_who", "VII", "VII-4",
+        "who_won",
+        "Total points T = 76. 49ers scored T/4 + 26. Packers scored T/2 − 7. Who lost, and by how many?",
+        [
+            "Packers 31, 49ers 45 — Packers lost by 14",
+            "49ers 31, Packers 45 — 49ers lost by 14",
+            "Packers lost by 7",
+            "Tie",
+        ],
+        0,
+        "49ers: 19 + 26 = 45. Packers: 38 − 7 = 31. Packers lost by 14.",
+    ),
 ]
 
 
@@ -1285,7 +1567,7 @@ def get_section(section_id: str) -> dict | None:
     sid = str(section_id).strip().upper() or ""
     if sid in {"VI-1", "VI-2", "VI-3", "VI1", "VI2", "VI3"}:
         sid = "VI"
-    if sid in {"VII-1", "VII-2", "VII1", "VII2", "U7"}:
+    if sid in {"VII-1", "VII-2", "VII-3", "VII-4", "VII1", "VII2", "VII3", "VII4", "U7"}:
         sid = "VII"
     return SECTIONS.get(sid)
 

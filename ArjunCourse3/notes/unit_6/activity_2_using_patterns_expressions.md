@@ -1,7 +1,7 @@
 # VI-2 Patterns and Modeling: Using Patterns to Write and Evaluate Expressions
 
 [KEY]
-**Square numbers** `n²` and **rectangular numbers** `n(n + 1)` do **not** have a constant difference (the gap grows). **Triangular numbers** are `n(n + 1) / 2` — half of the matching rectangle, and `T_n + T_{n−1} = n²`. For **joined polygons**, count the outer perimeter: the first shape has all of its sides; each new shape adds all of its sides minus the **2** sides that become internal. Pentagon walkway: `5 + 3(n − 1)` or `3n + 2`. Octagon walkway: `8 + 6(n − 1)` or `6n + 2`.
+**Square numbers** `n²` and **rectangular numbers** `n(n + 1)` do **not** have a constant difference (the gap grows). **Triangular numbers** are `n(n + 1) / 2` — half of the matching rectangle, and `T_n + T_{n−1} = n²`. For **joined polygons**, count the outer perimeter: the first shape has all of its sides; each new shape adds all of its sides minus the **2** sides that become internal. Pentagon walkway: `5 + 3(n − 1)` or `3n + 2`. Hexagon (CC8): `6 + 4(n − 1)` or `4n + 2`. Octagon walkway: `8 + 6(n − 1)` or `6n + 2`. Decagon: `10 + 8(n − 1)` or `8n + 2`.
 [/KEY]
 
 ## Quick Review Notes
