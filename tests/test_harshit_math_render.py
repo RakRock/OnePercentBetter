@@ -37,6 +37,16 @@ class TestCoeffRatioDisplay(unittest.TestCase):
         plain = hmr.format_math_plain("3x2")
         self.assertIn("²", plain)
 
+    def test_scientific_notation_negative_exponent(self) -> None:
+        html = hmr.format_math_display(r"Convert 7.8 × 10^{-4} to standard form.")
+        self.assertIn("<sup", html)
+        self.assertIn("⁻⁴", html)
+        self.assertNotIn("^{-4}", html)
+        self.assertNotIn("10^", html)
+        plain = hmr.format_math_plain(r"Convert 7.8 × 10^{-4} to standard form.")
+        self.assertIn("10⁻⁴", plain)
+        self.assertNotIn("{", plain)
+
     def test_explanation_line(self) -> None:
         html = hmr.format_math_display(
             "a₁/a₂ ≠ b₁/b₂ confirms intersecting lines at one point."

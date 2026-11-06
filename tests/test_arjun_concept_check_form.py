@@ -315,6 +315,15 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         self.assertEqual(report["total"], 3)
         self.assertEqual(report["score_pct"], 66)
 
+    def test_practice_screen_formats_scientific_notation(self):
+        from arjun_concept_check_form_ui import _math_button, _math_html
+
+        html = _math_html(r"Convert 7.8 × 10^{-4} to standard form.")
+        self.assertIn("<sup", html)
+        self.assertIn("⁻⁴", html)
+        self.assertNotIn("^{-4}", html)
+        self.assertEqual(_math_button("7.8 × 10^{-4}"), "7.8 × 10⁻⁴")
+
 
 if __name__ == "__main__":
     unittest.main()

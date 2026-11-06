@@ -13,6 +13,7 @@ import arjun_concept_check_form_llm as ccform_llm
 import arjun_course3_answers as c3ans
 import database as db
 import edgenuity_practice_email as ec3mail
+import harshit_math_render as hmr
 
 PRIMARY = "#0f766e"
 PRIMARY_END = "#14b8a6"
@@ -107,6 +108,16 @@ def _section_heading(info: dict) -> str:
     return ccform.section_card_title(info["id"])
 
 
+def _math_html(text: str) -> str:
+    """Email-quality HTML: 10^{-4} → 10<sup>⁻⁴</sup>."""
+    return hmr.format_math_display(str(text or "")).replace("\n", "<br>")
+
+
+def _math_button(text: str) -> str:
+    """Button-safe Unicode: 10^{-4} → 10⁻⁴."""
+    return hmr.format_math_plain(str(text or ""))
+
+
 def _render_sequential_grid() -> None:
     sections = ccform.list_sections()
     for row_start in range(0, len(sections), 3):
@@ -180,7 +191,8 @@ def render_practice():
 
     if not is_done:
         q = questions[current]
-        q_html = str(q.get("question", "")).replace("\n", "<br>")
+        q_html = _math_html(q.get("question", ""))
+        expl_html = _math_html(q.get("explanation", ""))
         color = info["color"] if info else PRIMARY
         badge = _section_heading(info) if info else "Concept Check"
         st.markdown(
@@ -200,7 +212,7 @@ def render_practice():
                     f"""
                 <div class="correct-answer" style="text-align:center;">
                     ✅ <strong>Correct!</strong>
-                    <p style="color:#065f46;font-size:0.9rem;margin-top:0.3rem;">{q.get('explanation', '')}</p>
+                    <p style="color:#065f46;font-size:0.9rem;margin-top:0.3rem;">{expl_html}</p>
                 </div>
                 """,
                     unsafe_allow_html=True,
@@ -209,8 +221,8 @@ def render_practice():
                 st.markdown(
                     f"""
                 <div class="wrong-answer" style="text-align:center;">
-                    Not quite! The answer is <strong>{last_feedback['correct_val']}</strong>
-                    <p style="color:#991b1b;font-size:0.9rem;margin-top:0.3rem;">{q.get('explanation', '')}</p>
+                    Not quite! The answer is <strong>{_math_html(last_feedback['correct_val'])}</strong>
+                    <p style="color:#991b1b;font-size:0.9rem;margin-top:0.3rem;">{expl_html}</p>
                 </div>
                 """,
                     unsafe_allow_html=True,
@@ -227,7 +239,7 @@ def render_practice():
             for i, opt in enumerate(q["options"]):
                 col = ans_col1 if i % 2 == 0 else ans_col2
                 with col:
-                    if st.button(str(opt), key=f"acc_opt_{current}_{i}", width="stretch", type="primary"):
+                    if st.button(_math_button(opt), key=f"acc_opt_{current}_{i}", width="stretch", type="primary"):
                         is_correct = c3ans.is_pick_correct(q, i)
                         st.session_state.acc_answers.append(
                             {
