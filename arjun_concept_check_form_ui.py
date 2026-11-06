@@ -1,4 +1,4 @@
-"""Streamlit UI for Arjun's Friday Concept Check (Unit 1 I–V and Unit 6)."""
+"""Streamlit UI for Arjun's Friday Concept Check (sections 1–7)."""
 
 from __future__ import annotations
 
@@ -54,7 +54,7 @@ def _start_section(section_id: str):
         if not api_key:
             raise RuntimeError("Add XAI_API_KEY to generate a fresh paper.")
         with st.spinner(
-            f"Writing a new {info['roman']}) {info['title']} Concept Check from the lesson notes…"
+            f"Writing a new {ccform.section_card_title(section_id)} Concept Check from the lesson notes…"
         ):
             questions = ccform_llm.generate_section_set(api_key, section_id)
     except Exception as exc:
@@ -98,59 +98,42 @@ def render_home():
         unsafe_allow_html=True,
     )
     st.caption(
-        "Pick a course unit, then a paper section. "
-        "Unit 1 is CC1–CC8 (I–V). Unit 6 is VI-1–VI-3. Unit 7 is VII-1–VII-4."
+        "Sections 1–7 follow the Friday paper. Pick one · fresh questions every time."
     )
-
-    _render_unit_group("Unit 1 — Numerical relationships", ("I", "II", "III"))
-    _render_unit_group("Unit 1 (continued)", ("IV", "V"))
-    _render_unit_group(
-        "Unit 6 — Patterns and modeling",
-        ("VI",),
-        start_label="Start Unit 6",
-    )
-    _render_unit_group(
-        "Unit 7 — Solving linear equations",
-        ("VII",),
-        start_label="Start Unit 7",
-    )
+    _render_sequential_grid()
 
 
 def _section_heading(info: dict) -> str:
-    title = info["title"]
-    if title.startswith("Unit "):
-        return title
-    return f"{info['roman']}) {title}"
+    return ccform.section_card_title(info["id"])
 
 
-def _render_unit_group(heading: str, section_ids: tuple[str, ...], *, start_label: str | None = None) -> None:
-    st.markdown(f"### {heading}")
-    cols = st.columns(max(3, len(section_ids)), gap="large")
-    for col, sid in zip(cols, section_ids):
-        with col:
-            info = ccform.get_section(sid)
-            if not info:
-                continue
-            n = len(ccform.seeds_for_section(sid))
-            st.markdown(
-                f"""
+def _render_sequential_grid() -> None:
+    sections = ccform.list_sections()
+    for row_start in range(0, len(sections), 3):
+        chunk = sections[row_start : row_start + 3]
+        cols = st.columns(3, gap="large")
+        for offset, info in enumerate(chunk):
+            with cols[offset]:
+                n_seeds = len(ccform.seeds_for_section(info["id"]))
+                paper_n = ccform.paper_number(info["id"])
+                st.markdown(
+                    f"""
             <div class="score-card" style="border-top: 5px solid {info['color']};">
                 <div style="font-size:2.2rem;">{info['emoji']}</div>
                 <h3 style="margin:0.4rem 0;">{_section_heading(info)}</h3>
                 <p style="color:#6b7280;">{info['short']}</p>
-                <p style="color:#9ca3af;font-size:0.85rem;">{n} paper seeds · {info['session_count']} fresh questions</p>
+                <p style="color:#9ca3af;font-size:0.85rem;">{n_seeds} paper seeds · {info['session_count']} fresh questions</p>
             </div>
             """,
-                unsafe_allow_html=True,
-            )
-            button_label = start_label or f"Start {info['roman']}"
-            if st.button(
-                button_label,
-                key=f"acc_start_{sid}",
-                width="stretch",
-                type="primary",
-            ):
-                _start_section(sid)
+                    unsafe_allow_html=True,
+                )
+                if st.button(
+                    f"Start {paper_n}",
+                    key=f"acc_start_{info['id']}",
+                    width="stretch",
+                    type="primary",
+                ):
+                    _start_section(info["id"])
 
 
 def render_practice():
@@ -199,7 +182,7 @@ def render_practice():
         q = questions[current]
         q_html = str(q.get("question", "")).replace("\n", "<br>")
         color = info["color"] if info else PRIMARY
-        badge = f"{info['roman']}) {info['title']}" if info else "Concept Check"
+        badge = _section_heading(info) if info else "Concept Check"
         st.markdown(
             f"""
         <div class="gk-question-box">
@@ -267,7 +250,7 @@ def render_practice():
     score_pct = int((correct_count / total) * 100) if total else 0
     time_spent = int(time.time() - st.session_state.acc_start_time) if st.session_state.get("acc_start_time") else 0
     minutes, seconds = divmod(time_spent, 60)
-    label = f"{info['roman']}) {info['title']}" if info else "Concept Check"
+    label = _section_heading(info) if info else "Concept Check"
     report = ccform.build_session_report(questions, answers)
     session_id = st.session_state.get("acc_session_id")
 

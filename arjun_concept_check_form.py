@@ -1572,6 +1572,31 @@ def get_section(section_id: str) -> dict | None:
     return SECTIONS.get(sid)
 
 
+def paper_number(section_id: str) -> int:
+    """1–7 Friday-paper order (I–VII)."""
+    info = get_section(section_id)
+    sid = info["id"] if info else str(section_id).strip().upper()
+    order = ("I", "II", "III", "IV", "V", "VI", "VII")
+    try:
+        return order.index(sid) + 1
+    except ValueError:
+        return 0
+
+
+def section_card_title(section_id: str) -> str:
+    """Home-card label: '1) Numerical Relationships' … '7) Solving Linear Equations'."""
+    info = get_section(section_id)
+    if not info:
+        return str(section_id)
+    title = str(info.get("title") or "")
+    for sep in (" — ", " – ", " - "):
+        if title.startswith("Unit ") and sep in title:
+            title = title.split(sep, 1)[1].strip()
+            break
+    n = paper_number(section_id)
+    return f"{n}) {title}" if n else title
+
+
 def seeds_for_section(section_id: str) -> list[dict]:
     info = get_section(section_id)
     sid = info["id"] if info else str(section_id).strip().upper()

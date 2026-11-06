@@ -13,6 +13,25 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         ids = [s["id"] for s in ccform.list_sections()]
         self.assertEqual(ids, ["I", "II", "III", "IV", "V", "VI", "VII"])
 
+    def test_section_cards_are_numbered_1_through_7(self):
+        titles = [ccform.section_card_title(s["id"]) for s in ccform.list_sections()]
+        self.assertEqual(
+            titles,
+            [
+                "1) Numerical Relationships",
+                "2) Powers and Roots",
+                "3) Rational and Irrational Numbers",
+                "4) Exponent Properties",
+                "5) Scientific Notation",
+                "6) Patterns and Modeling",
+                "7) Solving Linear Equations",
+            ],
+        )
+        self.assertEqual(
+            [ccform.paper_number(s["id"]) for s in ccform.list_sections()],
+            [1, 2, 3, 4, 5, 6, 7],
+        )
+
     def test_every_section_has_seeds(self):
         for sid in ("I", "II", "III", "IV", "V", "VI", "VII"):
             seeds = ccform.seeds_for_section(sid)
