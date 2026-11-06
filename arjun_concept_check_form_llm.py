@@ -55,10 +55,11 @@ def _notes_for_section(section_id: str) -> str:
 
 def _seed_block(seeds: list[dict]) -> str:
     lines = [
-        "SEED PROBLEMS from Arjun's actual Friday Concept Check papers (CC1–CC8) "
-        "or the Unit 6 packets VI-1 Representing Patterns, VI-2 Using Patterns, "
-        "and VI-3 Solving Linear Equations with Models, or Unit 7 packets VII-1 Multi-Step "
-        "Equations, VII-2 No / Infinite Solutions, and VII-4 Word Problems.",
+        "SEED PROBLEMS from Arjun's actual Friday Concept Check papers (CC1–CC8), "
+        "the Concept IV + V Review WS, the Unit 6 packets VI-1 Representing Patterns, "
+        "VI-2 Using Patterns, and VI-3 Solving Linear Equations with Models, or Unit 7 "
+        "packets VII-1 Multi-Step Equations, VII-2 No / Infinite Solutions, VII-4 Word "
+        "Problems, and VII-R Algebra Review.",
         "Match these stem types. Do NOT copy the numbers, names, or stories.",
     ]
     for i, seed in enumerate(seeds, start=1):

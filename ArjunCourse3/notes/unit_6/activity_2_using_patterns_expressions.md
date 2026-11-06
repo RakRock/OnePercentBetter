@@ -130,6 +130,15 @@ Figure 1 is **one** regular octagon. Each new octagon shares **one** full side (
 
 ---
 
+### VII-R mixed review figures (problems 19–20)
+
+Figure 1 has **2** dots, Figure 2 has **7**, Figure 3 has **12** (a growing column). Constant difference **5**.
+
+**Expression:** `2 + 5(n − 1)` or **`5n − 3`**.
+**155th figure:** `5(155) − 3 = 772` dots.
+
+---
+
 ## Common slips
 - Treating square / rectangular / triangular counts as a **constant difference** (they are not).
 - Using `n²` for rectangular numbers (`n(n + 1)` is one extra column).

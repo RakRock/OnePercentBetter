@@ -2,11 +2,12 @@
 
 Seeds are the actual problems from Arjun's CC1–CC8 papers (plus Scientific
 Notation items from a later school form, because CC1–CC5 did not include V),
-the Unit 6 packets VI-1 Representing Patterns, VI-2 Using Patterns, and
-VI-3 Solving Linear Equations with Models, and Unit 7 packets VII-1
-Multi-Step Equations, VII-2 No / Infinite Solutions, and VII-4 Word Problems.
-CC6 (Oct 25) Unit IV is weighted: Arjun scored 2 after adding inside a power
-of a power and subtracting on (aᵐ)ˣ = aⁿ. CC8 (the OCHO) covers IV–VII.
+the Concept IV + V Review WS, the Unit 6 packets VI-1 Representing Patterns,
+VI-2 Using Patterns, and VI-3 Solving Linear Equations with Models, and Unit 7
+packets VII-1 Multi-Step Equations, VII-2 No / Infinite Solutions, VII-4 Word
+Problems, and VII-R Algebra Review. CC6 (Oct 25) Unit IV is weighted: Arjun
+scored 2 after adding inside a power of a power and subtracting on (aᵐ)ˣ = aⁿ.
+CC8 (the OCHO) covers IV–VII. CC9 (11/6) is V Try 4, VI Try 3, VII Try 2.
 """
 
 from __future__ import annotations
@@ -56,7 +57,10 @@ SECTIONS: dict[str, dict] = {
         "roman": "IV",
         "title": "Exponent Properties",
         "short": "Product, quotient, power rules; positive exponents",
-        "note_files": ["activity_6_properties_of_exponents.md"],
+        "note_files": [
+            "activity_6_properties_of_exponents.md",
+            "activity_iv_v_review.md",
+        ],
         "session_count": 5,
         "emoji": "𝑥ⁿ",
         "color": "#d97706",
@@ -70,6 +74,7 @@ SECTIONS: dict[str, dict] = {
         "note_files": [
             "activity_7_scientific_notation.md",
             "activity_8_operations_scientific_notation.md",
+            "activity_iv_v_review.md",
         ],
         "session_count": 5,
         "emoji": "🔬",
@@ -100,6 +105,7 @@ SECTIONS: dict[str, dict] = {
             "activity_1_multistep_equations.md",
             "activity_2_infinite_no_solutions.md",
             "activity_3_word_problems.md",
+            "activity_4_algebra_review.md",
         ],
         "session_count": 5,
         "emoji": "⚖️",
@@ -659,6 +665,78 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "(4²)ˣ = 4²ˣ. So 2x = 33 and x = 33/2. Do not subtract 33−2.",
     ),
+    _q(
+        "cc_iv_rev_recip", "IV", "IV+V review",
+        "negative_to_reciprocal",
+        "Simplify. Write the final answer with only positive exponents.\n1 / 3⁻⁴",
+        ["81", "1/81", "−81", "1/3⁴"],
+        0,
+        "A negative exponent in the denominator flips: 1 / 3⁻⁴ = 3⁴ = 81.",
+    ),
+    _q(
+        "cc_iv_rev_mixed", "IV", "IV+V review",
+        "quotient_two_bases",
+        "Simplify. Write the final answer with only positive exponents.\n(2 · 7⁵) / (2⁸ · 7⁻¹¹)",
+        ["7¹⁶ / 2⁷", "7⁶ / 2⁷", "7⁻⁶ / 2⁷", "2⁷ / 7¹⁶"],
+        0,
+        "2¹⁻⁸ · 7⁵⁻(⁻¹¹) = 2⁻⁷ · 7¹⁶ = 7¹⁶ / 2⁷.",
+    ),
+    _q(
+        "cc_iv_rev_powmon", "IV", "IV+V review",
+        "power_of_product",
+        "Simplify. Write the final answer with only positive exponents.\n(8x⁴ y)³",
+        ["512 x¹² y³", "24 x¹² y³", "512 x⁷ y³", "8³ x⁷ y"],
+        0,
+        "Raise every factor: 8³ = 512, x¹², y³.",
+    ),
+    _q(
+        "cc_iv_rev_quot", "IV", "IV+V review",
+        "quotient_negative",
+        "Simplify. Write the final answer with only positive exponents.\n(8x⁴ y⁸) / (24 x⁻³ y⁹)",
+        ["x⁷ / (3y)", "(1/3) x⁷ y", "x¹² / (3y)", "x⁷ y / 3"],
+        0,
+        "8/24 = 1/3, x⁴⁻(⁻³) = x⁷, y⁸⁻⁹ = y⁻¹, so x⁷ / (3y).",
+    ),
+    _q(
+        "cc_iv_rev_quad", "IV", "IV+V review",
+        "quadruple_same_base",
+        "If you quadruple 4⁹, what is your result?",
+        ["4¹⁰", "16⁹", "4³⁶", "4⁵"],
+        0,
+        "Quadruple means multiply by 4: 4 · 4⁹ = 4¹⁺⁹ = 4¹⁰.",
+    ),
+    _q(
+        "cc_iv_rev_prod_eq", "IV", "IV+V review",
+        "product_then_solve",
+        "Solve for x.\n3ˣ · 3⁹ = 3⁹⁰⁰",
+        ["x = 891", "x = 900", "x = 100", "x = 8100"],
+        0,
+        "Add exponents: 3ˣ⁺⁹ = 3⁹⁰⁰, so x + 9 = 900 and x = 891. This is not (3ˣ)⁹.",
+    ),
+    _q(
+        "cc_iv_rev_pow_eq", "IV", "IV+V review",
+        "power_of_power_solve",
+        "Solve for x.\n(10ˣ)⁴ = 10³⁰",
+        ["x = 15/2", "x = 26", "x = 34", "x = 4"],
+        0,
+        "(10ˣ)⁴ = 10⁴ˣ. So 4x = 30 and x = 15/2. Subtracting 30 − 4 wrongly gives 26.",
+    ),
+    _q(
+        "cc_iv_viir_z0", "IV", "VII-R",
+        "times_zero_power",
+        "Simplify. Write the final answer with only positive exponents.\n(6x y⁹)(4x y z⁰)",
+        ["24 x² y¹⁰", "24 x² y¹⁰ z", "24 x y¹⁰", "10 x² y¹⁰"],
+        0,
+        "z⁰ = 1. 6·4=24, x·x=x², y⁹·y=y¹⁰.",
+    ),
+    _q(
+        "cc_iv_viir_negden", "IV", "VII-R",
+        "negative_to_reciprocal",
+        "Simplify. Write the final answer with only positive exponents.\n3 / (2x⁻⁹)",
+        ["(3x⁹)/2", "3 / (2x⁹)", "6x⁹", "3x⁻⁹ / 2"],
+        0,
+        "x⁻⁹ in the denominator becomes x⁹ in the numerator: 3x⁹ / 2.",
+    ),
     # ── V  Scientific Notation (CC6 + CC8) ──
     _q(
         "cc_v_cc6_9", "V", "CC6",
@@ -767,6 +845,94 @@ FORM_SEED_QUESTIONS: list[dict] = [
         ["3.5 × 10⁴", "35 × 10³", "0.35 × 10⁵", "3.5 × 4¹⁰"],
         0,
         "The coefficient must satisfy 1 ≤ |a| < 10, and the 10 is the base.",
+    ),
+    _q(
+        "cc_v_rev_14", "V", "IV+V review",
+        "convert_to_sci",
+        "Write 0.000831 in scientific notation.",
+        ["8.31 × 10⁻⁴", "8.31 × 10⁴", "83.1 × 10⁻⁵", "0.831 × 10⁻³"],
+        0,
+        "Move the decimal 4 places right: 8.31 × 10⁻⁴.",
+    ),
+    _q(
+        "cc_v_rev_15", "V", "IV+V review",
+        "convert_to_sci",
+        "Write 90,900 in scientific notation.",
+        ["9.09 × 10⁴", "9.09 × 10⁵", "90.9 × 10³", "9.09 × 10⁻⁴"],
+        0,
+        "9.09 with the decimal moved 4 places: 9.09 × 10⁴.",
+    ),
+    _q(
+        "cc_v_rev_16", "V", "IV+V review",
+        "sci_to_standard",
+        "Write 1.83 × 10⁴ in standard form.",
+        ["18,300", "1,830", "183,000", "0.000183"],
+        0,
+        "Move the decimal 4 places right: 18,300.",
+    ),
+    _q(
+        "cc_v_rev_17", "V", "IV+V review",
+        "sci_to_standard",
+        "Write 9.24 × 10⁻⁵ in standard form.",
+        ["0.0000924", "0.000924", "924,000", "0.00000924"],
+        0,
+        "Move the decimal 5 places left: 0.0000924.",
+    ),
+    _q(
+        "cc_v_rev_18", "V", "IV+V review",
+        "multiply_sci",
+        "Simplify. Write the final answer in scientific notation.\n(1.3 × 10⁴)(2 × 10⁻⁸)",
+        ["2.6 × 10⁻⁴", "2.6 × 10⁻³²", "3.3 × 10⁻⁴", "2.6 × 10⁴"],
+        0,
+        "1.3×2=2.6 and 4+(−8)=−4, so 2.6 × 10⁻⁴.",
+    ),
+    _q(
+        "cc_v_rev_19", "V", "IV+V review",
+        "add_sci",
+        "Simplify. Write the final answer in scientific notation.\n2.3 × 10⁸ + 4.3 × 10¹⁰",
+        ["4.323 × 10¹⁰", "6.6 × 10¹⁸", "4.323 × 10⁸", "6.6 × 10¹⁰"],
+        0,
+        "2.3 × 10⁸ = 0.023 × 10¹⁰. 0.023 + 4.3 = 4.323, so 4.323 × 10¹⁰.",
+    ),
+    _q(
+        "cc_v_rev_20", "V", "IV+V review",
+        "subtract_sci",
+        "Simplify. Write the final answer in scientific notation.\n(3 × 10¹⁰⁰⁰) − (1.7 × 10⁹⁹⁹)",
+        ["2.83 × 10¹⁰⁰⁰", "1.3 × 10¹", "2.83 × 10⁹⁹⁹", "1.3 × 10¹⁰⁰⁰"],
+        0,
+        "1.7 × 10⁹⁹⁹ = 0.17 × 10¹⁰⁰⁰. 3 − 0.17 = 2.83, so 2.83 × 10¹⁰⁰⁰.",
+    ),
+    _q(
+        "cc_v_rev_21", "V", "IV+V review",
+        "add_sci_mixed",
+        "Simplify. Write the final answer in scientific notation.\n(1.3 × 10⁻⁶) + 0.00019",
+        ["1.913 × 10⁻⁴", "1.319 × 10⁻⁶", "0.0001913 × 10⁻⁶", "1.913 × 10⁻⁶"],
+        0,
+        "0.00019 = 1.9 × 10⁻⁴ and 1.3 × 10⁻⁶ = 0.013 × 10⁻⁴. 1.9 + 0.013 = 1.913 × 10⁻⁴.",
+    ),
+    _q(
+        "cc_v_rev_22", "V", "IV+V review",
+        "divide_sci",
+        "Simplify. Write the final answer in proper scientific notation.\n(1.2 × 10⁻⁸) / (3 × 10¹²)",
+        ["4 × 10⁻²¹", "0.4 × 10⁻²⁰", "4 × 10⁴", "0.4 × 10⁻²¹"],
+        0,
+        "1.2/3=0.4 and −8−12=−20, so 0.4 × 10⁻²⁰ = 4 × 10⁻²¹.",
+    ),
+    _q(
+        "cc_v_viir_17", "V", "VII-R",
+        "subtract_sci",
+        "Simplify. Write the final answer in scientific notation.\n5.7 × 10¹⁰⁰ − 4 × 10⁹⁸",
+        ["5.66 × 10¹⁰⁰", "1.7 × 10²", "5.66 × 10⁹⁸", "1.7 × 10¹⁰⁰"],
+        0,
+        "4 × 10⁹⁸ = 0.04 × 10¹⁰⁰. 5.7 − 0.04 = 5.66, so 5.66 × 10¹⁰⁰.",
+    ),
+    _q(
+        "cc_v_viir_18", "V", "VII-R",
+        "multiply_sci",
+        "Simplify. Write the final answer in scientific notation.\n(5.7 × 10¹⁰⁰)(4 × 10⁹⁸)",
+        ["2.28 × 10¹⁹⁹", "22.8 × 10¹⁹⁸", "9.7 × 10¹⁹⁸", "2.28 × 10¹⁹⁸"],
+        0,
+        "5.7×4=22.8 and 100+98=198, so 22.8 × 10¹⁹⁸ = 2.28 × 10¹⁹⁹.",
     ),
     # ── VI  Representing Patterns (VI-1 packet) ──
     _q(
@@ -1112,6 +1278,23 @@ FORM_SEED_QUESTIONS: list[dict] = [
         ["2", "3", "10/3", "5"],
         0,
         "Subtract 2 cubes: 3x = 6. Split 6 cubes into 3 bags: x = 2.",
+    ),
+    _q(
+        "cc_vi_viir_expr", "VI", "VII-R",
+        "expression_in_n",
+        "Figure 1 has 2 dots, Figure 2 has 7 dots, Figure 3 has 12 dots. "
+        "Let n be the figure number. Which expression gives the number of dots in figure n?",
+        ["5n − 3", "5n + 2", "2 + 5n", "n + 5"],
+        0,
+        "Constant difference 5, and Figure 1 has 2 dots: 2 + 5(n − 1) = 5n − 3.",
+    ),
+    _q(
+        "cc_vi_viir_155", "VI", "VII-R",
+        "far_figure",
+        "A figure pattern has 2, 7, 12, … dots (expression 5n − 3). How many dots are in the 155th figure?",
+        ["772", "775", "155", "760"],
+        0,
+        "5(155) − 3 = 775 − 3 = 772.",
     ),
     # ── VII-1  Multi-Step Equations ──
     _q(
@@ -1556,6 +1739,117 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "49ers: 19 + 26 = 45. Packers: 38 − 7 = 31. Packers lost by 14.",
     ),
+    # ── VII-R  Algebra Review ──
+    _q(
+        "cc_vii_r1", "VII", "VII-R",
+        "combine_like_then_solve",
+        "Solve. 3x − 4 = 2x + 8 − 5x",
+        ["x = 2", "x = −6", "no solution", "x = 12"],
+        0,
+        "Right side is −3x + 8. Add 3x and add 4: 6x = 12. x = 2.",
+    ),
+    _q(
+        "cc_vii_r2", "VII", "VII-R",
+        "distribute_one_side",
+        "Solve. 2 − 15x = 5(3x + 2)",
+        ["x = −4/15", "x = −8/30", "x = 4/15", "no solution"],
+        0,
+        "2 − 15x = 15x + 10. Subtract 10 and add 15x: −8 = 30x. x = −4/15.",
+    ),
+    _q(
+        "cc_vii_r3", "VII", "VII-R",
+        "fraction_distribute",
+        "Solve. x − 4 = (2/3)x − 8 + (1/6)x",
+        ["x = −24", "x = 24", "x = −4", "x = 6"],
+        0,
+        "Multiply by 6: 6x − 24 = 4x − 48 + x. Then 6x − 24 = 5x − 48, so x = −24.",
+    ),
+    _q(
+        "cc_vii_r4", "VII", "VII-R",
+        "classify_no_solution",
+        "How many solutions? 8x = 4(2x + 1)",
+        [
+            "No solution (0 = 4)",
+            "Infinite solutions",
+            "One solution: x = 1",
+            "One solution: x = 0",
+        ],
+        0,
+        "8x = 8x + 4. Subtract 8x: 0 = 4, false → no solution.",
+    ),
+    _q(
+        "cc_vii_r5", "VII", "VII-R",
+        "classify_no_solution",
+        "How many solutions? 6.2x + 5 − 1.4x = 4.8x + 6",
+        [
+            "No solution (50 = 60)",
+            "Infinite solutions",
+            "One solution: x = 1",
+            "One solution: x = 0.2",
+        ],
+        0,
+        "Multiply by 10: 62x + 50 − 14x = 48x + 60 → 48x + 50 = 48x + 60 → 50 = 60, false.",
+    ),
+    _q(
+        "cc_vii_r6", "VII", "VII-R",
+        "decimal_both_sides",
+        "Solve. 5.4x + 14.6 − 10.1x = 12.8x − 3.5x − 0.6",
+        ["x = 38/35", "x = 152/140", "no solution", "x = −38/35"],
+        0,
+        "Multiply by 10: −47x + 146 = 93x − 6. Then 152 = 140x, so x = 38/35.",
+    ),
+    _q(
+        "cc_vii_r7", "VII", "VII-R",
+        "fraction_distribute",
+        "Solve. 14 − (1/4)(x − 10) = (5/6)(x + 15)",
+        ["x = 48/13", "x = 48", "x = 13/48", "x = 4"],
+        0,
+        "Multiply by 12: 168 − 3(x − 10) = 10(x + 15) → 198 − 3x = 10x + 150 → 48 = 13x.",
+    ),
+    _q(
+        "cc_vii_r8", "VII", "VII-R",
+        "classify_infinite",
+        "How many solutions? 2(3x + 2) = (1/2)(12x + 8)",
+        [
+            "Infinite solutions (8 = 8)",
+            "No solution",
+            "One solution: x = 0",
+            "One solution: x = 2",
+        ],
+        0,
+        "Multiply by 2: 4(3x + 2) = 12x + 8 → 12x + 8 = 12x + 8. True → infinite.",
+    ),
+    _q(
+        "cc_vii_r9", "VII", "VII-R",
+        "two_rates_meet",
+        "A camping group costs $45 to join. Members pay $35 a night; nonmembers pay $40 a night. "
+        "After how many nights do a member and a nonmember pay the same total?",
+        ["9", "45", "5", "1"],
+        0,
+        "45 + 35n = 40n → 45 = 5n → n = 9 nights.",
+    ),
+    _q(
+        "cc_vii_r10", "VII", "VII-R",
+        "two_parts_make_total",
+        "49ers scored 1 less than 2/3 of the total points T. Packers scored 56 less than 4/3 of T. "
+        "Together they scored all T points. What is T?",
+        ["57", "37", "20", "76"],
+        0,
+        "(2/3)T − 1 + (4/3)T − 56 = T → 2T − 57 = T → T = 57.",
+    ),
+    _q(
+        "cc_vii_r11", "VII", "VII-R",
+        "who_won",
+        "Total points T = 57. 49ers scored (2/3)T − 1. Packers scored (4/3)T − 56. Who won, and by how many?",
+        [
+            "49ers 37, Packers 20 — 49ers by 17",
+            "Packers 37, 49ers 20 — Packers by 17",
+            "49ers 38, Packers 20 — 49ers by 18",
+            "Tie 28.5 to 28.5",
+        ],
+        0,
+        "49ers: 38 − 1 = 37. Packers: 76 − 56 = 20. 49ers won by 17.",
+    ),
 ]
 
 
@@ -1567,7 +1861,10 @@ def get_section(section_id: str) -> dict | None:
     sid = str(section_id).strip().upper() or ""
     if sid in {"VI-1", "VI-2", "VI-3", "VI1", "VI2", "VI3"}:
         sid = "VI"
-    if sid in {"VII-1", "VII-2", "VII-3", "VII-4", "VII1", "VII2", "VII3", "VII4", "U7"}:
+    if sid in {
+        "VII-1", "VII-2", "VII-3", "VII-4", "VII-R",
+        "VII1", "VII2", "VII3", "VII4", "VIIR", "U7",
+    }:
         sid = "VII"
     return SECTIONS.get(sid)
 

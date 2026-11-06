@@ -158,6 +158,14 @@ UNIT_7_ACTIVITIES = [
         "inline_diagrams": False,
         "diagrams": [],
     },
+    {
+        "number": 4,
+        "slug": "activity_4_algebra_review",
+        "title": "VII-R Solve Equations Algebraically: Review",
+        "file": "activity_4_algebra_review.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
 ]
 
 
