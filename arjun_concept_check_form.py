@@ -4,8 +4,9 @@ Seeds are the actual problems from Arjun's CC1–CC8 papers (plus Scientific
 Notation items from a later school form, because CC1–CC5 did not include V),
 the Concept IV + V Review WS, the Unit 6 packets VI-1 Representing Patterns,
 VI-2 Using Patterns, and VI-3 Solving Linear Equations with Models, and Unit 7
-packets VII-1 Multi-Step Equations, VII-2 No / Infinite Solutions, VII-4 Word
-Problems, and VII-R Algebra Review. CC6 (Oct 25) Unit IV is weighted: Arjun
+packets VII-1 Multi-Step Equations, VII-2 No / Infinite Solutions, VII-3 Clear
+Decimals/Fractions, VII-4 Word Problems, VII-5 Solve for y, and VII-R Algebra
+Review. CC6 (Oct 25) Unit IV is weighted: Arjun
 scored 2 after adding inside a power of a power and subtracting on (aᵐ)ˣ = aⁿ.
 CC8 (the OCHO) covers IV–VII. CC9 (11/6) is V Try 4, VI Try 3, VII Try 2.
 """
@@ -91,7 +92,7 @@ SECTIONS: dict[str, dict] = {
             "activity_2_using_patterns_expressions.md",
             "activity_3_solving_equations_with_models.md",
         ],
-        "session_count": 5,
+        "session_count": 10,
         "emoji": "⬛",
         "color": "#0f766e",
         "unit_id": 6,
@@ -100,14 +101,16 @@ SECTIONS: dict[str, dict] = {
         "id": "VII",
         "roman": "VII",
         "title": "Unit 7 — Solving Linear Equations",
-        "short": "Multi-step, one/none/infinite, then word problems",
+        "short": "Multi-step, clear decimals, word problems, solve for y",
         "note_files": [
             "activity_1_multistep_equations.md",
             "activity_2_infinite_no_solutions.md",
+            "activity_5_clear_decimals_fractions.md",
             "activity_3_word_problems.md",
+            "activity_6_solve_for_y.md",
             "activity_4_algebra_review.md",
         ],
-        "session_count": 5,
+        "session_count": 10,
         "emoji": "⚖️",
         "color": "#7c2d12",
         "unit_id": 7,
@@ -1545,6 +1548,69 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "Left: −7x + 12. Match the x coefficient (−7) so the variables cancel, then 12 = 9 is false.",
     ),
+    # ── VII-3  Clear Decimals / Fractions ──
+    _q(
+        "cc_vii3_n1", "VII", "VII-3",
+        "clear_decimals",
+        "Solve. 0.4x − 12 = 0.8",
+        ["x = 32", "x = 32.8", "x = 3.2", "x = 11.2"],
+        0,
+        "Multiply by 10: 4x − 120 = 8. 4x = 128. x = 32.",
+    ),
+    _q(
+        "cc_vii3_n2", "VII", "VII-3",
+        "clear_decimals",
+        "Solve. 0.05x + 0.3 = 2",
+        ["x = 34", "x = 1.7", "x = 40", "x = 3.4"],
+        0,
+        "Multiply by 100 (hundredths): 5x + 30 = 200. 5x = 170. x = 34.",
+    ),
+    _q(
+        "cc_vii3_yt1", "VII", "VII-3",
+        "clear_decimals",
+        "Solve. 2.7x − 4 = 1.5x + 2",
+        ["x = 5", "x = 6", "x = 2", "no solution"],
+        0,
+        "Multiply by 10: 27x − 40 = 15x + 20. 12x = 60. x = 5.",
+    ),
+    _q(
+        "cc_vii3_yt3", "VII", "VII-3",
+        "classify_infinite",
+        "How many solutions? 6.2x + 5 − 1.4x = 4.8x + 5",
+        [
+            "Infinite solutions (50 = 50)",
+            "No solution",
+            "One solution: x = 0",
+            "One solution: x = 5",
+        ],
+        0,
+        "Multiply by 10: 48x + 50 = 48x + 50. True leftover → infinite. "
+        "VII-R #5 had +6 on the right (false leftover).",
+    ),
+    _q(
+        "cc_vii3_yt4", "VII", "VII-3",
+        "clear_decimals",
+        "Solve. 0.7x + 1.9 + 0.1x = 5.5 − 4.4x",
+        ["x = 9/13", "x = 36/52", "x = 5", "no solution"],
+        0,
+        "Multiply by 10: 8x + 19 = 55 − 44x. 52x = 36. x = 9/13.",
+    ),
+    _q(
+        "cc_vii3_yt5", "VII", "VII-3",
+        "clear_fractions",
+        "Solve. x + 3 = −x − 10 − (7/3)x",
+        ["x = −3", "x = 3", "x = −13", "x = −9"],
+        0,
+        "Multiply by 3: 3x + 9 = −3x − 30 − 7x. 3x + 9 = −10x − 30. 13x = −39. x = −3.",
+    ),
+    _q(
+        "cc_vii3_yt8", "VII", "VII-3",
+        "clear_fractions",
+        "Solve. (1/8)(5x + 64) = (1/4)(20 + 2x)",
+        ["x = −24", "x = 24", "x = −8", "x = 0"],
+        0,
+        "Multiply by 8: 5x + 64 = 2(20 + 2x) = 40 + 4x. x = −24.",
+    ),
     # ── VII  CC8 (the OCHO) ──
     _q(
         "cc_vii_cc8_14", "VII", "CC8",
@@ -1739,6 +1805,63 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "49ers: 19 + 26 = 45. Packers: 38 − 7 = 31. Packers lost by 14.",
     ),
+    # ── VII-5  Solve for y ──
+    _q(
+        "cc_vii5_n1", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. 3x + y = 12",
+        ["y = −3x + 12", "y = 3x + 12", "y = 12 − x", "y = −3x − 12"],
+        0,
+        "Subtract 3x: y = −3x + 12.",
+    ),
+    _q(
+        "cc_vii5_yt2", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. 5x + 4y = 20",
+        ["y = −(5/4)x + 5", "y = (5/4)x + 5", "y = −5x + 20", "y = 5 − 5x"],
+        0,
+        "4y = −5x + 20. Divide by 4: y = −(5/4)x + 5.",
+    ),
+    _q(
+        "cc_vii5_yt4", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. 18x − 2y = 26",
+        ["y = 9x − 13", "y = −9x + 13", "y = 9x + 13", "y = −18x + 26"],
+        0,
+        "−2y = −18x + 26. Divide by −2: y = 9x − 13.",
+    ),
+    _q(
+        "cc_vii5_n6", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. 8x − 8y = 16",
+        ["y = x − 2", "y = −x + 2", "y = x + 2", "y = 2x"],
+        0,
+        "−8y = −8x + 16. Divide by −8: y = x − 2.",
+    ),
+    _q(
+        "cc_vii5_yt8", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. 12 + (1/6)y = 13x",
+        ["y = 78x − 72", "y = 13x − 12", "y = 78x + 72", "y = (1/6)x − 12"],
+        0,
+        "Subtract 12, then multiply by 6: y = 6(13x − 12) = 78x − 72.",
+    ),
+    _q(
+        "cc_vii5_yt11", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. 14x + 9y = 2y + 7(x − 11)",
+        ["y = −x − 11", "y = −x + 11", "y = x − 11", "y = −7x − 11"],
+        0,
+        "14x + 9y = 2y + 7x − 77. 7y = −7x − 77. y = −x − 11.",
+    ),
+    _q(
+        "cc_vii5_yt12", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. −6.5x + 28 = 2 − 1.3y",
+        ["y = 5x − 20", "y = −5x + 20", "y = 5x + 20", "y = x − 20"],
+        0,
+        "Multiply by 10: −65x + 280 = 20 − 13y. 13y = 65x − 260. y = 5x − 20.",
+    ),
     # ── VII-R  Algebra Review ──
     _q(
         "cc_vii_r1", "VII", "VII-R",
@@ -1862,8 +1985,8 @@ def get_section(section_id: str) -> dict | None:
     if sid in {"VI-1", "VI-2", "VI-3", "VI1", "VI2", "VI3"}:
         sid = "VI"
     if sid in {
-        "VII-1", "VII-2", "VII-3", "VII-4", "VII-R",
-        "VII1", "VII2", "VII3", "VII4", "VIIR", "U7",
+        "VII-1", "VII-2", "VII-3", "VII-4", "VII-5", "VII-R",
+        "VII1", "VII2", "VII3", "VII4", "VII5", "VIIR", "U7",
     }:
         sid = "VII"
     return SECTIONS.get(sid)

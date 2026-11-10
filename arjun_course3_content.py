@@ -152,6 +152,14 @@ UNIT_7_ACTIVITIES = [
     },
     {
         "number": 3,
+        "slug": "activity_5_clear_decimals_fractions",
+        "title": "VII-3 Linear Equations: Clear Decimals / Fractions",
+        "file": "activity_5_clear_decimals_fractions.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
+    {
+        "number": 4,
         "slug": "activity_3_word_problems",
         "title": "VII-4 Solve Equations Algebraically: Word Problems",
         "file": "activity_3_word_problems.md",
@@ -159,7 +167,15 @@ UNIT_7_ACTIVITIES = [
         "diagrams": [],
     },
     {
-        "number": 4,
+        "number": 5,
+        "slug": "activity_6_solve_for_y",
+        "title": "VII-5 Solve for y",
+        "file": "activity_6_solve_for_y.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
+    {
+        "number": 6,
         "slug": "activity_4_algebra_review",
         "title": "VII-R Solve Equations Algebraically: Review",
         "file": "activity_4_algebra_review.md",

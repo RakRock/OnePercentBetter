@@ -178,6 +178,20 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_vii4_stream": "4",
             "cc_vii4_nfc13": "76",
             "cc_vii4_nfc13_who": "Packers 31, 49ers 45 — Packers lost by 14",
+            "cc_vii3_n1": "x = 32",
+            "cc_vii3_n2": "x = 34",
+            "cc_vii3_yt1": "x = 5",
+            "cc_vii3_yt3": "Infinite solutions (50 = 50)",
+            "cc_vii3_yt4": "x = 9/13",
+            "cc_vii3_yt5": "x = −3",
+            "cc_vii3_yt8": "x = −24",
+            "cc_vii5_n1": "y = −3x + 12",
+            "cc_vii5_yt2": "y = −(5/4)x + 5",
+            "cc_vii5_yt4": "y = 9x − 13",
+            "cc_vii5_n6": "y = x − 2",
+            "cc_vii5_yt8": "y = 78x − 72",
+            "cc_vii5_yt11": "y = −x − 11",
+            "cc_vii5_yt12": "y = 5x − 20",
             "cc_iv_rev_recip": "81",
             "cc_iv_rev_mixed": "7¹⁶ / 2⁷",
             "cc_iv_rev_powmon": "512 x¹² y³",
@@ -251,7 +265,8 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         self.assertTrue({"VI-1", "VI-2", "VI-3", "VII-R"} <= papers)
         self.assertTrue(all(q["section"] == "VI" for q in seeds))
         questions = ccform_llm.fallback_seed_set("VI")
-        self.assertEqual(len(questions), 5)
+        self.assertEqual(len(questions), 10)
+        self.assertEqual(ccform.session_count_for_section("VI"), 10)
         import arjun_course3_content as c3
         unit = c3.get_unit(6)
         slugs = [a["slug"] for a in unit["activities"]]
@@ -271,6 +286,8 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         self.assertEqual(ccform.get_section("VII-1")["id"], "VII")
         self.assertEqual(ccform.get_section("VII-2")["id"], "VII")
         self.assertEqual(ccform.get_section("VII-4")["id"], "VII")
+        self.assertEqual(ccform.get_section("VII-3")["id"], "VII")
+        self.assertEqual(ccform.get_section("VII-5")["id"], "VII")
         notes = ccform_llm._notes_for_section("VII")
         self.assertIn("variables on both sides", notes.lower())
         self.assertIn("x = −5", notes)
@@ -282,13 +299,18 @@ class TestArjunConceptCheckForm(unittest.TestCase):
         self.assertIn("320", notes)
         self.assertIn("38/35", notes)
         self.assertIn("Camping", notes)
+        self.assertIn("clear", notes.lower())
+        self.assertIn("x = 32", notes)
+        self.assertIn("y = mx + b", notes)
+        self.assertIn("78x − 72", notes)
         seeds = ccform.seeds_for_section("VII")
         papers = {q["paper"] for q in seeds}
-        self.assertTrue({"VII-1", "VII-2", "VII-4", "CC8", "VII-R"} <= papers)
+        self.assertTrue({"VII-1", "VII-2", "VII-3", "VII-4", "VII-5", "CC8", "VII-R"} <= papers)
         self.assertTrue(all(q["section"] == "VII" for q in seeds))
         self.assertEqual(ccform.get_section("VII-R")["id"], "VII")
         questions = ccform_llm.fallback_seed_set("VII")
-        self.assertEqual(len(questions), 5)
+        self.assertEqual(len(questions), 10)
+        self.assertEqual(ccform.session_count_for_section("VII"), 10)
         import arjun_course3_content as c3
         unit = c3.get_unit(7)
         slugs = [a["slug"] for a in unit["activities"]]
@@ -297,7 +319,9 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             [
                 "activity_1_multistep_equations",
                 "activity_2_infinite_no_solutions",
+                "activity_5_clear_decimals_fractions",
                 "activity_3_word_problems",
+                "activity_6_solve_for_y",
                 "activity_4_algebra_review",
             ],
         )

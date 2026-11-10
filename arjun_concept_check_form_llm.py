@@ -23,7 +23,7 @@ from xai_client import make_xai_client
 
 XAI_MODEL = "grok-3-mini"
 _MAX_RETRIES = 3
-_NOTES_CHAR_LIMIT = 16000
+_NOTES_CHAR_LIMIT = 24000
 
 
 def _notes_for_section(section_id: str) -> str:
@@ -58,8 +58,9 @@ def _seed_block(seeds: list[dict]) -> str:
         "SEED PROBLEMS from Arjun's actual Friday Concept Check papers (CC1–CC8), "
         "the Concept IV + V Review WS, the Unit 6 packets VI-1 Representing Patterns, "
         "VI-2 Using Patterns, and VI-3 Solving Linear Equations with Models, or Unit 7 "
-        "packets VII-1 Multi-Step Equations, VII-2 No / Infinite Solutions, VII-4 Word "
-        "Problems, and VII-R Algebra Review.",
+        "packets VII-1 Multi-Step Equations, VII-2 No / Infinite Solutions, VII-3 Clear "
+        "Decimals/Fractions, VII-4 Word Problems, VII-5 Solve for y, and VII-R Algebra "
+        "Review.",
         "Match these stem types. Do NOT copy the numbers, names, or stories.",
     ]
     for i, seed in enumerate(seeds, start=1):
@@ -92,9 +93,13 @@ RULES:
 - For Representing Patterns (VI-1): describe figures in words (Figure 1 has __ dots). Ask for the expression in n, the constant difference, n to substitute, or a far figure (51st/100th). Do not ask the student to draw.
 - For Using Patterns (VI-2): square n², rectangular n(n+1), triangular n(n+1)/2. Square/rect/triangle counts do NOT have a constant difference. Joined-polygon perimeters DO: pentagons add 3 (hide 2 sides), hexagons add 4, octagons add 6, decagons add 8. Describe figures in words. Do not ask the student to draw.
 - For Solving Equations with Models (VI-3): a bag is x cubes, a cube is 1, a balanced scale is an equation. Ask for the equation, cubes per bag, or the inverse-operation steps. Describe pans in words (do not ask the student to draw).
+- Every Unit 6 set MUST include at least one VI-1 table/expression-in-n stem, one VI-2 special-pattern or joined-polygon stem, and one VI-3 bags-and-cubes stem.
 - For Multi-Step Equations (VII-1): variables on both sides. Steps: simplify/distribute, move variables, move constants, solve. Include a bags-and-cubes stem and a “too many bags → combine like terms” stem. Wrong options = dropped a distribute sign, combined unlike terms, or divided before moving the other variable. Do not ask the student to draw.
 - For No / Infinite Solutions (VII-2): after simplify, if variables cancel: true statement → infinite, false → none, otherwise one solution x=#. Same bags and same cubes → infinite; same bags different cubes → none. Fill-in: match the x coefficient (and the constant for infinite). kx = 0 means x = 0 (one solution), not “no solution”.
-- For Word Problems (VII-4): verbal model → equation → solve. Types: start + rate·n = goal; two expressions for the SAME length (set equal); two scores that ADD to total T; P = R − C. Every Unit 7 set MUST include at least one VII-1 solve, one VII-2 classify (one/none/infinite), and one VII-4 word problem. Do not ask the student to draw.
+- For Word Problems (VII-4): verbal model → equation → solve. Types: start + rate·n = goal; two expressions for the SAME length (set equal); two scores that ADD to total T; P = R − C. Do not ask the student to draw.
+- For Clear Decimals/Fractions (VII-3): multiply both sides by 10, 100, or the LCD, then solve. Wrong options = multiplying only one side or treating a true leftover as no solution.
+- For Solve for y (VII-5): rearrange to y = mx + b. Watch the sign when dividing by a negative y-coefficient.
+- Every Unit 7 set MUST include at least one VII-1 solve, one VII-2 classify (one/none/infinite), one VII-3 clear-decimals/fractions solve, one VII-4 word problem, and one VII-5 solve-for-y.
 - For Exponent Properties (IV): Arjun scored 2 on CC6 (Oct 25). Every IV set MUST include all three miss types:
   (1) a power-of-a-power product like (x^a)^b · x^c — multiply a·b first, then add c. Trap = add a+b (his x²¹ instead of x³²);
   (2) a solve (base^m)^x = base^n — set mx = n. Trap = subtract n−m (his x=8 instead of 5/3);
@@ -196,7 +201,7 @@ def generate_section_set(xai_api_key: str, section_id: str, *, count: int | None
                     {"role": "system", "content": system},
                     {"role": "user", "content": user_msg},
                 ],
-                max_tokens=4500,
+                max_tokens=8000,
                 temperature=0.95,
             )
             raw = (resp.choices[0].message.content or "").strip()
