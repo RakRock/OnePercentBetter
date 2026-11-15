@@ -57,10 +57,11 @@ def _seed_block(seeds: list[dict]) -> str:
     lines = [
         "SEED PROBLEMS from Arjun's actual Friday Concept Check papers (CC1–CC8), "
         "the Concept IV + V Review WS, the Unit 6 packets VI-1 Representing Patterns, "
-        "VI-2 Using Patterns, and VI-3 Solving Linear Equations with Models, or Unit 7 "
+        "VI-2 Using Patterns, and VI-3 Solving Linear Equations with Models, Unit 7 "
         "packets VII-1 Multi-Step Equations, VII-2 No / Infinite Solutions, VII-3 Clear "
         "Decimals/Fractions, VII-4 Word Problems, VII-5 Solve for y, and VII-R Algebra "
-        "Review.",
+        "Review, or Unit 8 packets VIII-1 Graphing Linear Equations, VIII-2 Slope, and "
+        "VIII-2P Slope Practice.",
         "Match these stem types. Do NOT copy the numbers, names, or stories.",
     ]
     for i, seed in enumerate(seeds, start=1):
@@ -100,6 +101,10 @@ RULES:
 - For Clear Decimals/Fractions (VII-3): multiply both sides by 10, 100, or the LCD, then solve. Wrong options = multiplying only one side or treating a true leftover as no solution.
 - For Solve for y (VII-5): rearrange to y = mx + b. Watch the sign when dividing by a negative y-coefficient.
 - Every Unit 7 set MUST include at least one VII-1 solve, one VII-2 classify (one/none/infinite), one VII-3 clear-decimals/fractions solve, one VII-4 word problem, and one VII-5 solve-for-y.
+- For Graphing Linear Equations (VIII-1): a solution is a point on the line. Graph by a 3-row table (include x = 0). y = c is horizontal; x = c is vertical. Test a point by plugging in. Describe graphs in words (do not ask the student to draw). Wrong options = swapping horizontal/vertical or treating “close on the grid” as a solution.
+- For Slope (VIII-2): m = (y₂ − y₁)/(x₂ − x₁). Further |m| from 0 is steeper (so −8 is steeper than 5). Horizontal → 0; vertical → undefined (do not divide by 0). Slope triangles on the same line are similar. Describe graphs in words.
+- For Slope Practice (VIII-2P): same slope skill from graphs, two points, or a table. Collinear if every pair has the same m. Missing k: set (k − y₁)/(x₂ − x₁) = m. Same x-coordinates → undefined with no extra work.
+- Every Unit 8 set MUST include at least one VIII-1 graph-or-test-a-point stem, one slope-from-points or slope-from-table stem, one steepness-comparison or undefined/zero stem, and one slope-triangle or collinear/missing-k stem.
 - For Exponent Properties (IV): Arjun scored 2 on CC6 (Oct 25). Every IV set MUST include all three miss types:
   (1) a power-of-a-power product like (x^a)^b · x^c — multiply a·b first, then add c. Trap = add a+b (his x²¹ instead of x³²);
   (2) a solve (base^m)^x = base^n — set mx = n. Trap = subtract n−m (his x=8 instead of 5/3);

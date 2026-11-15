@@ -47,6 +47,15 @@ WEEKLY_GUIDANCE: dict[int, str] = {
         "VII-4 (11/3–11/4): verbal model → equation → solve (fee + rate, two descriptions of the same length, two scores that add to T). "
         "CC 8: The OCHO covers IV–VII. Use Concept Check Unit 7 for a fresh mixed paper."
     ),
+    8: (
+        "**Class packets VIII-1, VIII-2, and VIII-2P / Unit 8:** Graph linear equations, then slope. "
+        "VIII-1: a linear equation graphs as a line; solutions are points on the line. Table three x-values "
+        "(include 0), plot, connect. y = c is horizontal; x = c is vertical. Plug in to test a point. "
+        "VIII-2: m = (y₂ − y₁)/(x₂ − x₁). Further from 0 → steeper. Zero slope is horizontal; undefined is vertical. "
+        "Slope triangles on the same line are similar. "
+        "11/19 CC 10 (Thursday) is VI Try 4 and VII Try 3 only — Unit 8 is not on that paper. "
+        "Use Concept Check Unit 8 for a fresh mixed paper."
+    ),
 }
 
 

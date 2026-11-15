@@ -1,4 +1,4 @@
-"""Streamlit UI for Arjun's Friday Concept Check (sections 1–7)."""
+"""Streamlit UI for Arjun's Friday Concept Check (sections 1–8)."""
 
 from __future__ import annotations
 
@@ -99,7 +99,7 @@ def render_home():
         unsafe_allow_html=True,
     )
     st.caption(
-        "Sections 1–7 follow the Friday paper. Pick one · fresh questions every time."
+        "Sections 1–8 follow the Friday paper. Pick one · fresh questions every time."
     )
     _render_sequential_grid()
 

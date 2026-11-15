@@ -1,14 +1,16 @@
-"""Math 3 Friday Concept Check — Unit 1 I–V, Unit 6 VI-1–VI-3, and Unit 7 VII-1–VII-4.
+"""Math 3 Friday Concept Check — Unit 1 I–V, Unit 6 VI, Unit 7 VII, Unit 8 VIII.
 
 Seeds are the actual problems from Arjun's CC1–CC8 papers (plus Scientific
 Notation items from a later school form, because CC1–CC5 did not include V),
 the Concept IV + V Review WS, the Unit 6 packets VI-1 Representing Patterns,
-VI-2 Using Patterns, and VI-3 Solving Linear Equations with Models, and Unit 7
+VI-2 Using Patterns, and VI-3 Solving Linear Equations with Models, Unit 7
 packets VII-1 Multi-Step Equations, VII-2 No / Infinite Solutions, VII-3 Clear
 Decimals/Fractions, VII-4 Word Problems, VII-5 Solve for y, and VII-R Algebra
-Review. CC6 (Oct 25) Unit IV is weighted: Arjun
+Review, and Unit 8 packets VIII-1 Graphing Linear Equations, VIII-2 Slope, and
+VIII-2P Slope Practice. CC6 (Oct 25) Unit IV is weighted: Arjun
 scored 2 after adding inside a power of a power and subtracting on (aᵐ)ˣ = aⁿ.
 CC8 (the OCHO) covers IV–VII. CC9 (11/6) is V Try 4, VI Try 3, VII Try 2.
+CC10 (11/19 Thursday) is VI Try 4 and VII Try 3; Unit 8 is not on that paper.
 """
 
 from __future__ import annotations
@@ -114,6 +116,21 @@ SECTIONS: dict[str, dict] = {
         "emoji": "⚖️",
         "color": "#7c2d12",
         "unit_id": 7,
+    },
+    "VIII": {
+        "id": "VIII",
+        "roman": "VIII",
+        "title": "Unit 8 — Slope and Linear Equations",
+        "short": "Graph lines, slope from graphs/points/tables, similar triangles",
+        "note_files": [
+            "activity_1_graphing_linear_equations.md",
+            "activity_2_slope.md",
+            "activity_3_slope_practice.md",
+        ],
+        "session_count": 10,
+        "emoji": "📈",
+        "color": "#1d4ed8",
+        "unit_id": 8,
     },
 }
 
@@ -1815,6 +1832,38 @@ FORM_SEED_QUESTIONS: list[dict] = [
         "Subtract 3x: y = −3x + 12.",
     ),
     _q(
+        "cc_vii5_n2", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. 36 = 12x − 9y",
+        ["y = (4/3)x − 4", "y = (4/3)x + 4", "y = 12x − 4", "y = −(4/3)x − 4"],
+        0,
+        "Add 9y: 9y + 36 = 12x. Subtract 36: 9y = 12x − 36. Divide by 9: y = (4/3)x − 4.",
+    ),
+    _q(
+        "cc_vii5_n3", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. 4x + (1/3)y = 17",
+        ["y = −12x + 51", "y = 12x + 51", "y = −12x + 17", "y = −4x + 51"],
+        0,
+        "Multiply by 3: 12x + y = 51. Subtract 12x: y = −12x + 51.",
+    ),
+    _q(
+        "cc_vii5_n4", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. 13x − (1/4)y = 3(x + 7)",
+        ["y = 40x − 84", "y = 40x + 84", "y = −40x − 84", "y = 10x − 21"],
+        0,
+        "Right side is 3x + 21. Subtract 13x: −(1/4)y = −10x + 21. Multiply by −4: y = 40x − 84.",
+    ),
+    _q(
+        "cc_vii5_n5", "VII", "VII-5",
+        "solve_for_y",
+        "Solve for y. 12x + 10y + 13 = 6 + 7x + 4y",
+        ["y = (−5x − 7)/6", "y = (5x − 7)/6", "y = (−5x + 7)/6", "y = −5x − 7"],
+        0,
+        "Subtract 12x and 4y: 6y + 13 = 6 − 5x. Subtract 13: 6y = −5x − 7. y = (−5x − 7)/6.",
+    ),
+    _q(
         "cc_vii5_yt2", "VII", "VII-5",
         "solve_for_y",
         "Solve for y. 5x + 4y = 20",
@@ -1973,11 +2022,310 @@ FORM_SEED_QUESTIONS: list[dict] = [
         0,
         "49ers: 38 − 1 = 37. Packers: 76 − 56 = 20. 49ers won by 17.",
     ),
+    # ── VIII-1  Graphing Linear Equations ──
+    _q(
+        "cc_viii1_missing_y", "VIII", "VIII-1",
+        "point_on_line",
+        "y = x + 1. One solution is (77, ___). What is the missing y-value?",
+        ["78", "77", "76", "1"],
+        0,
+        "Plug in x = 77: y = 77 + 1 = 78. The point is (77, 78).",
+    ),
+    _q(
+        "cc_viii1_check_pt", "VIII", "VIII-1",
+        "test_point",
+        "Is (4, 9) a solution of y = 2x − 14?",
+        ["No — 2(4) − 14 = −6, not 9", "Yes — 2(4) − 14 = 9", "Yes — 4 + 9 = 13", "No — the line is vertical"],
+        0,
+        "Plug in: 2(4) − 14 = −6. −6 ≠ 9, so (4, 9) is not a point on the line.",
+    ),
+    _q(
+        "cc_viii1_yt6", "VIII", "VIII-1",
+        "test_point",
+        "Is (5, −3) a solution of y = 2x − 7?",
+        ["No — 2(5) − 7 = 3, not −3", "Yes — 2(5) − 7 = −3", "Yes — 5 − 7 = −2, close enough", "No — x cannot be 5"],
+        0,
+        "2(5) − 7 = 3. 3 ≠ −3, so the point is not on the line.",
+    ),
+    _q(
+        "cc_viii1_yt7", "VIII", "VIII-1",
+        "test_point",
+        "Is (10, 62) a solution of y = 5x + 12?",
+        ["Yes — 5(10) + 12 = 62", "No — 5(10) + 12 = 50", "No — 10 + 12 = 22", "Yes — any point with x = 10 works"],
+        0,
+        "5(10) + 12 = 50 + 12 = 62. Yes, (10, 62) is on the line.",
+    ),
+    _q(
+        "cc_viii1_horiz", "VIII", "VIII-1",
+        "horiz_vert",
+        "What kind of graph is y = 5?",
+        [
+            "A horizontal line; y is always 5",
+            "A vertical line; x is always 5",
+            "A line through the origin with slope 5",
+            "No graph — y cannot equal a number",
+        ],
+        0,
+        "y = 5 means y never changes. Plot (0, 5), (1, 5), (−1, 5) and connect horizontally.",
+    ),
+    _q(
+        "cc_viii1_vert", "VIII", "VIII-1",
+        "horiz_vert",
+        "What kind of graph is x = −3?",
+        [
+            "A vertical line; x is always −3",
+            "A horizontal line; y is always −3",
+            "A line with slope −3",
+            "A line through (−3, −3) with slope 1",
+        ],
+        0,
+        "x = −3 means x never changes. Plot (−3, 0), (−3, 5), (−3, −5) and connect vertically.",
+    ),
+    _q(
+        "cc_viii1_table", "VIII", "VIII-1",
+        "table_points",
+        "Graph y = −2x + 1. Class used x = −1, 0, and 1. Which ordered pairs belong on the table?",
+        ["(−1, 3), (0, 1), (1, −1)", "(−1, −1), (0, 1), (1, 3)", "(−1, 3), (0, 0), (1, −1)", "(1, −2), (0, 1), (−1, 2)"],
+        0,
+        "x = −1 → y = 2 + 1 = 3. x = 0 → y = 1. x = 1 → y = −2 + 1 = −1.",
+    ),
+    _q(
+        "cc_viii1_frac_x", "VIII", "VIII-1",
+        "table_points",
+        "When graphing y = (1/4)x − 5, which x-values should you pick so y comes out clean?",
+        [
+            "Multiples of 4, such as −4, 0, 4",
+            "Any integers, such as −1, 0, 1",
+            "Only positive x",
+            "Multiples of 5, such as −5, 0, 5",
+        ],
+        0,
+        "The slope is 1/4, so choose x-values that are multiples of the denominator: (−4, −6), (0, −5), (4, −4).",
+    ),
+    _q(
+        "cc_viii1_steep", "VIII", "VIII-1",
+        "steepness",
+        "Look at y = 2x + 4, y = −4x, and y = (1/7)x − 3. Which line is the steepest?",
+        ["y = −4x", "y = 2x + 4", "y = (1/7)x − 3", "They are all equally steep"],
+        0,
+        "Steepness is how far the slope is from 0. |−4| = 4 is bigger than 2 and 1/7, so y = −4x is steepest.",
+    ),
+    _q(
+        "cc_viii1_yt8", "VIII", "VIII-1",
+        "read_graph",
+        "On the VIII-1 You Try, a shallow positive line is graphed. Class key: when x = 5, what is y?",
+        ["−1", "5", "0", "−2"],
+        0,
+        "Read the y-value on that graph at x = 5. Classroom answer: y = −1.",
+    ),
+    # ── VIII-2  Slope ──
+    _q(
+        "cc_viii2_graph1", "VIII", "VIII-2",
+        "slope_from_graph",
+        "A line passes through (−4, −1) and (2, 1). What is the slope?",
+        ["1/3", "2/3", "−1/3", "2"],
+        0,
+        "m = (1 − (−1)) / (2 − (−4)) = 2/6 = 1/3. Positive: the line goes up to the right.",
+    ),
+    _q(
+        "cc_viii2_graph2", "VIII", "VIII-2",
+        "slope_from_graph",
+        "A line passes through (−2, 3) and (3, 2). What is the slope?",
+        ["−1/5", "1/5", "−5", "5"],
+        0,
+        "m = (2 − 3) / (3 − (−2)) = −1/5. Negative: the line goes down to the right.",
+    ),
+    _q(
+        "cc_viii2_zero", "VIII", "VIII-2",
+        "slope_from_points",
+        "Find the slope through (1, −2) and (7, −2).",
+        ["0", "undefined", "6", "−2"],
+        0,
+        "m = (−2 − (−2)) / (7 − 1) = 0/6 = 0. Same y-values → horizontal line.",
+    ),
+    _q(
+        "cc_viii2_eight", "VIII", "VIII-2",
+        "slope_from_points",
+        "Find the slope through (2, −4) and (3, 4).",
+        ["8", "−8", "2", "1/8"],
+        0,
+        "m = (4 − (−4)) / (3 − 2) = 8/1 = 8.",
+    ),
+    _q(
+        "cc_viii2_undef", "VIII", "VIII-2",
+        "undefined_slope",
+        "Find the slope through (1, 8) and (1, 3).",
+        ["undefined", "0", "−5", "5"],
+        0,
+        "m = (3 − 8) / (1 − 1) = −5/0. Same x-values → vertical → undefined.",
+    ),
+    _q(
+        "cc_viii2_table", "VIII", "VIII-2",
+        "slope_from_table",
+        "The table of a line is x: 1, 4, 7, 10 and y: 8, 6, 4, 2. What is the slope?",
+        ["−2/3", "2/3", "−3/2", "3"],
+        0,
+        "Use (1, 8) and (4, 6): m = (6 − 8) / (4 − 1) = −2/3.",
+    ),
+    _q(
+        "cc_viii2_steeper_a", "VIII", "VIII-2",
+        "compare_steepness",
+        "Which slope is steeper? Slope A: 7/3. Slope B: 2.",
+        ["A, because |7/3| > 2", "B, because 2 is a whole number", "A, because it is a fraction", "They are equally steep"],
+        0,
+        "Further from 0 is steeper. 7/3 ≈ 2.33 > 2, so A is steeper.",
+    ),
+    _q(
+        "cc_viii2_steeper_b", "VIII", "VIII-2",
+        "compare_steepness",
+        "Which slope is steeper? Slope A: 5. Slope B: −8.",
+        ["B, because |−8| = 8 > 5", "A, because 5 is positive", "A, because 5 is closer to 0", "Neither — negative slopes are not steep"],
+        0,
+        "Steepness uses distance from 0. |−8| = 8 is further from 0 than 5, so B is steeper.",
+    ),
+    _q(
+        "cc_viii2_tri_len", "VIII", "VIII-2",
+        "slope_triangle",
+        "On the VIII-2 graph, A is (3, 2), B is (6, 4), and C is (6, 2). What are the lengths of AC and BC?",
+        ["AC = 3, BC = 2", "AC = 2, BC = 3", "AC = 6, BC = 4", "AC = 3, BC = 4"],
+        0,
+        "AC is horizontal from x = 3 to x = 6, length 3. BC is vertical from y = 2 to y = 4, length 2.",
+    ),
+    _q(
+        "cc_viii2_similar", "VIII", "VIII-2",
+        "slope_triangle",
+        "Slope triangles ABC and DEF on the same line have AC = 3, BC = 2, DF = 6, EF = 4. What can you conclude?",
+        [
+            "The triangles are similar — both have slope 2/3",
+            "The triangles are congruent",
+            "DEF is twice as steep as ABC",
+            "The line has undefined slope",
+        ],
+        0,
+        "BC/AC = 2/3 and EF/DF = 4/6 = 2/3. Same slope, proportional sides → similar.",
+    ),
+    # ── VIII-2P  Slope Practice ──
+    _q(
+        "cc_viii2p_g1", "VIII", "VIII-2P",
+        "slope_from_graph",
+        "A line passes through (−5, −4) and (−3, 1). What is the slope?",
+        ["5/2", "2/5", "−5/2", "1"],
+        0,
+        "m = (1 − (−4)) / (−3 − (−5)) = 5/2. Positive.",
+    ),
+    _q(
+        "cc_viii2p_n5", "VIII", "VIII-2P",
+        "slope_from_points",
+        "Find the slope through (−2, 6) and (3, −8).",
+        ["−14/5", "14/5", "−5/14", "−14"],
+        0,
+        "m = (−8 − 6) / (3 − (−2)) = −14/5. Keep it improper.",
+    ),
+    _q(
+        "cc_viii2p_n6", "VIII", "VIII-2P",
+        "slope_from_points",
+        "Find the slope through (10, −4) and (−4, 15).",
+        ["−19/14", "19/14", "−14/19", "19/−6"],
+        0,
+        "m = (15 − (−4)) / (−4 − 10) = 19/(−14) = −19/14.",
+    ),
+    _q(
+        "cc_viii2p_steepest", "VIII", "VIII-2P",
+        "compare_steepness",
+        "Slopes of four lines: −2/3, 3/2, −14/5, and −19/14. Which is steepest, and which is least steep?",
+        [
+            "Steepest −14/5; least steep −2/3",
+            "Steepest 3/2; least steep −19/14",
+            "Steepest −2/3; least steep −14/5",
+            "Steepest −19/14; least steep 3/2",
+        ],
+        0,
+        "|−14/5| = 2.8 is furthest from 0 (steepest). |−2/3| ≈ 0.67 is closest to 0 (least steep).",
+    ),
+    _q(
+        "cc_viii2p_t8", "VIII", "VIII-2P",
+        "slope_from_table",
+        "A line’s table is x: −8, −2, 4, 10 and y: 8, 1, −6, −13. What is the slope?",
+        ["−7/6", "7/6", "−6/7", "−13"],
+        0,
+        "Use (4, −6) and (10, −13): m = (−13 − (−6)) / (10 − 4) = −7/6.",
+    ),
+    _q(
+        "cc_viii2p_t9", "VIII", "VIII-2P",
+        "slope_from_table",
+        "A line’s table is x: −3, 2, 7, 12 and y: 0, 2, 4, 6. What is the slope?",
+        ["2/5", "5/2", "2", "1/2"],
+        0,
+        "Use (7, 4) and (12, 6): m = (6 − 4) / (12 − 7) = 2/5.",
+    ),
+    _q(
+        "cc_viii2p_colin", "VIII", "VIII-2P",
+        "collinear",
+        "Without graphing, do A(−2, −1), B(1, 5), and C(4, 11) lie on the same line?",
+        [
+            "Yes — AB and BC both have slope 2",
+            "No — the slopes do not match",
+            "Yes — the y-values go up by 6 each time, ignoring x",
+            "Cannot tell without a graph",
+        ],
+        0,
+        "AB: (5 − (−1)) / (1 − (−2)) = 6/3 = 2. BC: (11 − 5) / (4 − 1) = 6/3 = 2. Same slope → collinear.",
+    ),
+    _q(
+        "cc_viii2p_k", "VIII", "VIII-2P",
+        "missing_k",
+        "The line through (1, 3) and (5, k) has slope 2. What is k?",
+        ["11", "8", "5", "7"],
+        0,
+        "(k − 3) / (5 − 1) = 2 → (k − 3)/4 = 2 → k − 3 = 8 → k = 11.",
+    ),
+    _q(
+        "cc_viii2p_samex", "VIII", "VIII-2P",
+        "undefined_slope",
+        "How can you tell that the line through (6, 7) and (6, 12) has undefined slope without doing any work?",
+        [
+            "The x-coordinates are the same, so the line is vertical",
+            "The y-coordinates are different, so slope is 0",
+            "12 − 7 = 5, so the slope is 5",
+            "Any two points determine a slope of 1",
+        ],
+        0,
+        "Same x, different y → vertical line → run = 0 → undefined.",
+    ),
+    _q(
+        "cc_viii2p_oct", "VIII", "VIII-2P",
+        "octagon_walkway",
+        "Regular octagons of side 1 are joined in a row (Fig 1 one octagon, Fig 2 two, …). Write an expression for the perimeter of the nth figure, then the 50th perimeter.",
+        ["6n + 2; 302", "8n; 400", "6n; 300", "8 + 6n; 308"],
+        0,
+        "Fig 1 = 8, Fig 2 = 14, Fig 3 = 20. Constant difference 6 (hide 2 sides at each join). 8 + 6(n − 1) = 6n + 2. 6(50) + 2 = 302.",
+    ),
+    _q(
+        "cc_viii2p_belda", "VIII", "VIII-2P",
+        "triangle_perimeter",
+        "Belda has an equilateral triangle. One side is 20 less than 1/2 of the perimeter. Another side is 10 more than 1/4 of the perimeter. What is the perimeter?",
+        ["120", "80", "40", "60"],
+        0,
+        "Sides equal: (1/2)P − 20 = (1/4)P + 10 → (1/4)P = 30 → P = 120.",
+    ),
+    _q(
+        "cc_viii2p_nfc", "VIII", "VIII-2P",
+        "two_parts_make_total",
+        "49ers scored 22 more than 1/3 of the total points T. Packers scored 3 more than 1/9 of T. Together they scored all T points. What is T, and what was the score?",
+        [
+            "T = 45; 49ers 37, Packers 8",
+            "T = 45; 49ers 8, Packers 37",
+            "T = 75; 49ers 47, Packers 28",
+            "T = 27; 49ers 31, Packers 6",
+        ],
+        0,
+        "(1/3)T + 22 + (1/9)T + 3 = T → 225 = 5T → T = 45. 49ers 15+22=37. Packers 5+3=8.",
+    ),
 ]
 
 
 def list_sections() -> list[dict]:
-    return [dict(SECTIONS[key]) for key in ("I", "II", "III", "IV", "V", "VI", "VII")]
+    return [dict(SECTIONS[key]) for key in ("I", "II", "III", "IV", "V", "VI", "VII", "VIII")]
 
 
 def get_section(section_id: str) -> dict | None:
@@ -1989,14 +2337,18 @@ def get_section(section_id: str) -> dict | None:
         "VII1", "VII2", "VII3", "VII4", "VII5", "VIIR", "U7",
     }:
         sid = "VII"
+    if sid in {
+        "VIII-1", "VIII-2", "VIII-2P", "VIII1", "VIII2", "VIII2P", "U8",
+    }:
+        sid = "VIII"
     return SECTIONS.get(sid)
 
 
 def paper_number(section_id: str) -> int:
-    """1–7 Friday-paper order (I–VII)."""
+    """1–8 Friday-paper order (I–VIII)."""
     info = get_section(section_id)
     sid = info["id"] if info else str(section_id).strip().upper()
-    order = ("I", "II", "III", "IV", "V", "VI", "VII")
+    order = ("I", "II", "III", "IV", "V", "VI", "VII", "VIII")
     try:
         return order.index(sid) + 1
     except ValueError:
@@ -2004,7 +2356,7 @@ def paper_number(section_id: str) -> int:
 
 
 def section_card_title(section_id: str) -> str:
-    """Home-card label: '1) Numerical Relationships' … '7) Solving Linear Equations'."""
+    """Home-card label: '1) Numerical Relationships' … '8) Slope and Linear Equations'."""
     info = get_section(section_id)
     if not info:
         return str(section_id)

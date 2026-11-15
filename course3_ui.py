@@ -236,7 +236,7 @@ def render_home():
         f"""
     <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
         <h1 style="font-size: 2.5rem;">📐 {name}'s Course 3 Math</h1>
-        <p style="color: #6b7280; font-size: 1.1rem;">Units 1–7, daily practice, and solving linear equations</p>
+        <p style="color: #6b7280; font-size: 1.1rem;">Units 1–8, daily practice, slope, and solving linear equations</p>
     </div>
     """,
         unsafe_allow_html=True,

@@ -373,6 +373,17 @@ class TestArjunCourse3WeekConfig(unittest.TestCase):
         self.assertEqual(cfg["topics"], [])
         self.assertIn("Unit 7", cfg["week_label"])
 
+    def test_unit8_class_schedule_covers_viii1_and_viii2(self):
+        guidance = c3w.weekly_guidance(8)
+        self.assertIn("VIII-1", guidance)
+        self.assertIn("VIII-2", guidance)
+        self.assertIn("slope", guidance.lower())
+        self.assertIn("CC 10", guidance)
+        self.assertEqual(c3p.get_categories(8), {})
+        cfg = c3w.default_week_config(8)
+        self.assertEqual(cfg["topics"], [])
+        self.assertIn("Unit 8", cfg["week_label"])
+
 
 if __name__ == "__main__":
     unittest.main()

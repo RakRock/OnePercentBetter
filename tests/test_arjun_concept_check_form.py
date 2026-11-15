@@ -11,7 +11,7 @@ import arjun_concept_check_form_llm as ccform_llm
 class TestArjunConceptCheckForm(unittest.TestCase):
     def test_sections_are_i_through_vi(self):
         ids = [s["id"] for s in ccform.list_sections()]
-        self.assertEqual(ids, ["I", "II", "III", "IV", "V", "VI", "VII"])
+        self.assertEqual(ids, ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"])
 
     def test_section_cards_are_numbered_1_through_7(self):
         titles = [ccform.section_card_title(s["id"]) for s in ccform.list_sections()]
@@ -25,15 +25,16 @@ class TestArjunConceptCheckForm(unittest.TestCase):
                 "5) Scientific Notation",
                 "6) Patterns and Modeling",
                 "7) Solving Linear Equations",
+                "8) Slope and Linear Equations",
             ],
         )
         self.assertEqual(
             [ccform.paper_number(s["id"]) for s in ccform.list_sections()],
-            [1, 2, 3, 4, 5, 6, 7],
+            [1, 2, 3, 4, 5, 6, 7, 8],
         )
 
     def test_every_section_has_seeds(self):
-        for sid in ("I", "II", "III", "IV", "V", "VI", "VII"):
+        for sid in ("I", "II", "III", "IV", "V", "VI", "VII", "VIII"):
             seeds = ccform.seeds_for_section(sid)
             self.assertTrue(seeds, sid)
             self.assertEqual(len({q["id"] for q in seeds}), len(seeds), sid)
@@ -186,6 +187,10 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_vii3_yt5": "x = −3",
             "cc_vii3_yt8": "x = −24",
             "cc_vii5_n1": "y = −3x + 12",
+            "cc_vii5_n2": "y = (4/3)x − 4",
+            "cc_vii5_n3": "y = −12x + 51",
+            "cc_vii5_n4": "y = 40x − 84",
+            "cc_vii5_n5": "y = (−5x − 7)/6",
             "cc_vii5_yt2": "y = −(5/4)x + 5",
             "cc_vii5_yt4": "y = 9x − 13",
             "cc_vii5_n6": "y = x − 2",
@@ -225,6 +230,38 @@ class TestArjunConceptCheckForm(unittest.TestCase):
             "cc_vii_r9": "9",
             "cc_vii_r10": "57",
             "cc_vii_r11": "49ers 37, Packers 20 — 49ers by 17",
+            "cc_viii1_missing_y": "78",
+            "cc_viii1_check_pt": "No — 2(4) − 14 = −6, not 9",
+            "cc_viii1_yt6": "No — 2(5) − 7 = 3, not −3",
+            "cc_viii1_yt7": "Yes — 5(10) + 12 = 62",
+            "cc_viii1_horiz": "A horizontal line; y is always 5",
+            "cc_viii1_vert": "A vertical line; x is always −3",
+            "cc_viii1_table": "(−1, 3), (0, 1), (1, −1)",
+            "cc_viii1_frac_x": "Multiples of 4, such as −4, 0, 4",
+            "cc_viii1_steep": "y = −4x",
+            "cc_viii1_yt8": "−1",
+            "cc_viii2_graph1": "1/3",
+            "cc_viii2_graph2": "−1/5",
+            "cc_viii2_zero": "0",
+            "cc_viii2_eight": "8",
+            "cc_viii2_undef": "undefined",
+            "cc_viii2_table": "−2/3",
+            "cc_viii2_steeper_a": "A, because |7/3| > 2",
+            "cc_viii2_steeper_b": "B, because |−8| = 8 > 5",
+            "cc_viii2_tri_len": "AC = 3, BC = 2",
+            "cc_viii2_similar": "The triangles are similar — both have slope 2/3",
+            "cc_viii2p_g1": "5/2",
+            "cc_viii2p_n5": "−14/5",
+            "cc_viii2p_n6": "−19/14",
+            "cc_viii2p_steepest": "Steepest −14/5; least steep −2/3",
+            "cc_viii2p_t8": "−7/6",
+            "cc_viii2p_t9": "2/5",
+            "cc_viii2p_colin": "Yes — AB and BC both have slope 2",
+            "cc_viii2p_k": "11",
+            "cc_viii2p_samex": "The x-coordinates are the same, so the line is vertical",
+            "cc_viii2p_oct": "6n + 2; 302",
+            "cc_viii2p_belda": "120",
+            "cc_viii2p_nfc": "T = 45; 49ers 37, Packers 8",
         }
         for qid, expected in keyed.items():
             q = by_id[qid]
@@ -323,6 +360,50 @@ class TestArjunConceptCheckForm(unittest.TestCase):
                 "activity_3_word_problems",
                 "activity_6_solve_for_y",
                 "activity_4_algebra_review",
+            ],
+        )
+
+    def test_unit8_is_one_mixed_section(self):
+        info = ccform.get_section("VIII")
+        self.assertEqual(info["unit_id"], 8)
+        self.assertEqual(info["title"], "Unit 8 — Slope and Linear Equations")
+        self.assertEqual(ccform.get_section("VIII-1")["id"], "VIII")
+        self.assertEqual(ccform.get_section("VIII-2")["id"], "VIII")
+        self.assertEqual(ccform.get_section("VIII-2P")["id"], "VIII")
+        notes = ccform_llm._notes_for_section("VIII")
+        self.assertIn("linear equation", notes.lower())
+        self.assertIn("y = x + 1", notes)
+        self.assertIn("78", notes)
+        self.assertIn("horizontal", notes.lower())
+        self.assertIn("vertical", notes.lower())
+        self.assertIn("y = 5", notes)
+        self.assertIn("x = −3", notes)
+        self.assertIn("rise/run", notes)
+        self.assertIn("−1/5", notes)
+        self.assertIn("undefined", notes.lower())
+        self.assertIn("−2/3", notes)
+        self.assertIn("similar", notes.lower())
+        self.assertIn("k = 11", notes)
+        self.assertIn("6n + 2", notes)
+        self.assertIn("302", notes)
+        self.assertIn("120", notes)
+        self.assertIn("T = 45", notes)
+        seeds = ccform.seeds_for_section("VIII")
+        papers = {q["paper"] for q in seeds}
+        self.assertTrue({"VIII-1", "VIII-2", "VIII-2P"} <= papers)
+        self.assertTrue(all(q["section"] == "VIII" for q in seeds))
+        questions = ccform_llm.fallback_seed_set("VIII")
+        self.assertEqual(len(questions), 10)
+        self.assertEqual(ccform.session_count_for_section("VIII"), 10)
+        import arjun_course3_content as c3
+        unit = c3.get_unit(8)
+        slugs = [a["slug"] for a in unit["activities"]]
+        self.assertEqual(
+            slugs,
+            [
+                "activity_1_graphing_linear_equations",
+                "activity_2_slope",
+                "activity_3_slope_practice",
             ],
         )
 

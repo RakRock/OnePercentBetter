@@ -6,7 +6,7 @@
 
 ## Quick Review Notes
 
-Class packet **VII-5 / 10-? Solve For Y** (Course 3). After solving for `x` in VII-1–VII-4, isolate **y** so the equation is ready to graph.
+Class packet **VII-5 / 10-? Solve For Y** (Course 3, Classroom 7-31). After solving for `x` in VII-1–VII-4, isolate **y** so the equation is ready to graph. Class warm-up used the same inverse idea: `30 + x = 12` → `x = −18`. Then isolate `y` the same way.
 
 ### Class method
 
@@ -24,7 +24,7 @@ Class packet **VII-5 / 10-? Solve For Y** (Course 3). After solving for `x` in V
 | 2 | `36 = 12x − 9y` | **`y = (4/3)x − 4`** |
 | 3 | `4x + (1/3)y = 17` | **`y = −12x + 51`** |
 | 4 | `13x − (1/4)y = 3(x + 7)` | **`y = 40x − 84`** |
-| 5 | `12x + 10y + 13 = 6 + 7x + 4y` | **`y = −(5/6)x − 7/6`** |
+| 5 | `12x + 10y + 13 = 6 + 7x + 4y` | **`y = (−5x − 7)/6`** (same as `−(5/6)x − 7/6`) |
 | 6 | `8x − 8y = 16` | **`y = x − 2`** |
 | 7 | `124 = 4x − 10y` | **`y = (2/5)x − 62/5`** |
 | 8 | `12 + (1/6)y = 13x` | **`y = 78x − 72`** |

@@ -185,6 +185,34 @@ UNIT_7_ACTIVITIES = [
 ]
 
 
+UNIT_8_ACTIVITIES = [
+    {
+        "number": 1,
+        "slug": "activity_1_graphing_linear_equations",
+        "title": "VIII-1 Graphing Linear Equations",
+        "file": "activity_1_graphing_linear_equations.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
+    {
+        "number": 2,
+        "slug": "activity_2_slope",
+        "title": "VIII-2 Slope",
+        "file": "activity_2_slope.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
+    {
+        "number": 3,
+        "slug": "activity_3_slope_practice",
+        "title": "VIII-2P Slope Practice",
+        "file": "activity_3_slope_practice.md",
+        "inline_diagrams": False,
+        "diagrams": [],
+    },
+]
+
+
 UNIT_2_ACTIVITIES = [
     {
         "number": 9,
@@ -605,6 +633,13 @@ UNITS = [
         "Solving linear equations",
         activities=UNIT_7_ACTIVITIES,
         combined_notes_name="unit_7_solving_equations_lesson_notes.md",
+    ),
+    _build_unit(
+        8,
+        "Unit 8",
+        "Slope / rate of change / linear equations",
+        activities=UNIT_8_ACTIVITIES,
+        combined_notes_name="unit_8_slope_linear_equations_lesson_notes.md",
     ),
 ]
 
