@@ -1,0 +1,1600 @@
+{
+  "meta": {
+    "unit_id": 2,
+    "chapter": "Polynomials",
+    "source": "NCERT Polynomials exercises and the All in One practice items that were not already in Unit 2"
+  },
+  "questions": [
+    {
+      "id": "ncert_u2_degree_7q",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The degree of 7q^6 + (3/2)q^4 + 4q^2 + q - 8 is",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "The highest power of q is 6."
+    },
+    {
+      "id": "ncert_u2_degree_x3",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The degree of x^3 - 3 is",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "The highest power of x is 3."
+    },
+    {
+      "id": "ncert_u2_degree_y5",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The degree of 7y^5 + 6y^2 - 1 is",
+      "options": [
+        "2",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": 1,
+      "explanation": "The highest power of y is 5."
+    },
+    {
+      "id": "ncert_u2_degree_divided",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The degree of (t^8 - 3t^7 + 2t^5 - 6t^2) / t^2 is",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "Dividing by t^2 lowers every power by 2, so the degree is 6."
+    },
+    {
+      "id": "ncert_u2_degree_fraction",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The degree of (y^4 + 3y^2 + y) / y is",
+      "options": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "The expression simplifies to y^3 + 3y + 1."
+    },
+    {
+      "id": "ncert_u2_degree_review",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The degree of (t^9 + 4t^6 + 7t^5) / t^5 is",
+      "options": [
+        "4",
+        "5",
+        "9",
+        "14"
+      ],
+      "answer": 0,
+      "explanation": "Dividing by t^5 gives t^4 + 4t + 7."
+    },
+    {
+      "id": "ncert_u2_type_3x2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "3x^2 + 4x + c is",
+      "options": [
+        "linear",
+        "quadratic",
+        "cubic",
+        "not a polynomial"
+      ],
+      "answer": 1,
+      "explanation": "The highest power of x is 2."
+    },
+    {
+      "id": "ncert_u2_type_cubic_y",
+      "marks": 1,
+      "type": "mcq",
+      "question": "3y^3 - 4y^2 + 2y is",
+      "options": [
+        "linear",
+        "quadratic",
+        "cubic",
+        "not a polynomial"
+      ],
+      "answer": 2,
+      "explanation": "The highest power of y is 3."
+    },
+    {
+      "id": "ncert_u2_type_sqrt_y",
+      "marks": 1,
+      "type": "mcq",
+      "question": "√3 y^2 - (3/4)y + 7 is",
+      "options": [
+        "linear",
+        "quadratic",
+        "cubic",
+        "not a polynomial"
+      ],
+      "answer": 1,
+      "explanation": "The highest power of y is 2, and the coefficients are real."
+    },
+    {
+      "id": "ncert_u2_type_linear_p",
+      "marks": 1,
+      "type": "mcq",
+      "question": "3 - p^2 + √7 p, written in p, is",
+      "options": [
+        "linear",
+        "quadratic",
+        "cubic",
+        "not a polynomial"
+      ],
+      "answer": 1,
+      "explanation": "The highest power of p is 2."
+    },
+    {
+      "id": "ncert_u2_type_not_poly",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Which expression is not a polynomial?",
+      "options": [
+        "3x + 4",
+        "x^2 + x + 3",
+        "x^3 + 1/x + 1",
+        "√2 y^3 + √3 y"
+      ],
+      "answer": 2,
+      "explanation": "1/x is a negative power of x, so the expression is not a polynomial."
+    },
+    {
+      "id": "ncert_u2_type_sqrt2_y",
+      "marks": 1,
+      "type": "mcq",
+      "question": "√2 y^3 + √3 y is",
+      "options": [
+        "linear",
+        "quadratic",
+        "cubic",
+        "not a polynomial"
+      ],
+      "answer": 2,
+      "explanation": "The powers of y are whole numbers, so this is a cubic polynomial."
+    },
+    {
+      "id": "ncert_u2_at_most_linear",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A linear polynomial has at most how many zeroes?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "explanation": "The graph of a non-constant linear polynomial crosses the x-axis once."
+    },
+    {
+      "id": "ncert_u2_at_most_quadratic",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic polynomial has at most how many zeroes?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "Its graph is a parabola, so it meets the x-axis in at most two points."
+    },
+    {
+      "id": "ncert_u2_at_most_cubic",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A cubic polynomial has at most how many zeroes?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "A polynomial of degree 3 meets the x-axis in at most 3 points."
+    },
+    {
+      "id": "ncert_u2_at_most_n",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A polynomial of degree n has at most how many zeroes?",
+      "options": [
+        "n - 1",
+        "n",
+        "n + 1",
+        "2n"
+      ],
+      "answer": 1,
+      "explanation": "The graph meets the x-axis in at most n points."
+    },
+    {
+      "id": "ncert_u2_meaning_zeroes",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of a polynomial are",
+      "options": [
+        "its coefficients",
+        "the x-intercepts of its graph",
+        "the y-intercept only",
+        "the degree"
+      ],
+      "answer": 1,
+      "explanation": "A zero is an x-coordinate where the graph meets the x-axis."
+    },
+    {
+      "id": "ncert_u2_no_intersection",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If the graph of a polynomial does not meet the x-axis, the number of zeroes is",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "equal to the degree"
+      ],
+      "answer": 0,
+      "explanation": "Every real zero is an x-intercept."
+    },
+    {
+      "id": "ncert_u2_zero_formula",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zero of ax + b, with a ≠ 0, is",
+      "options": [
+        "b/a",
+        "-b/a",
+        "a/b",
+        "-a/b"
+      ],
+      "answer": 1,
+      "explanation": "ax + b = 0 gives x = -b/a."
+    },
+    {
+      "id": "ncert_u2_zero_2x3",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zero of 2x + 3 is",
+      "options": [
+        "3/2",
+        "-3/2",
+        "2/3",
+        "-2/3"
+      ],
+      "answer": 1,
+      "explanation": "2x + 3 = 0 gives x = -3/2."
+    },
+    {
+      "id": "ncert_u2_zeroes_x2_4x_5",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of x^2 - 4x - 5 are",
+      "options": [
+        "1 and -5",
+        "-1 and 5",
+        "4 and 5",
+        "-4 and -5"
+      ],
+      "answer": 1,
+      "explanation": "(x - 5)(x + 1) = 0."
+    },
+    {
+      "id": "ncert_u2_zeroes_cubic_4x",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of x^3 - 4x are",
+      "options": [
+        "-2, 0 and 2",
+        "-4, 0 and 4",
+        "0 and 4",
+        "-2 and 2 only"
+      ],
+      "answer": 0,
+      "explanation": "x(x - 2)(x + 2) = 0."
+    },
+    {
+      "id": "ncert_u2_zeroes_cubic_9x",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of x^3 - 9x are",
+      "options": [
+        "-3, 0 and 3",
+        "-9, 0 and 9",
+        "0 and 9",
+        "3 and -9"
+      ],
+      "answer": 0,
+      "explanation": "x(x - 3)(x + 3) = 0."
+    },
+    {
+      "id": "ncert_u2_zeroes_16x2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of 16x^2 - 9 are",
+      "options": [
+        "3/4 and 4/3",
+        "3/4 and -3/4",
+        "9/16 and -9/16",
+        "4 and -4"
+      ],
+      "answer": 1,
+      "explanation": "16x^2 = 9 gives x = ±3/4."
+    },
+    {
+      "id": "ncert_u2_zeroes_x2_5x_6",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of x^2 - 5x + 6 are",
+      "options": [
+        "-5 and 1",
+        "5 and 1",
+        "2 and 3",
+        "-2 and -3"
+      ],
+      "answer": 2,
+      "explanation": "(x - 2)(x - 3) = 0."
+    },
+    {
+      "id": "ncert_u2_zeroes_x2_1",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If α and β are the zeroes of x^2 - 1, then α + β is",
+      "options": [
+        "2",
+        "1",
+        "-1",
+        "0"
+      ],
+      "answer": 3,
+      "explanation": "The coefficient of x is 0, so the sum of the zeroes is 0."
+    },
+    {
+      "id": "ncert_u2_add_2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "What should be added to x^2 - 5x + 4 so that 3 is a zero of the result?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": 1,
+      "explanation": "The value at 3 is 9 - 15 + 4 = -2, so add 2."
+    },
+    {
+      "id": "ncert_u2_factor_find_ab",
+      "marks": 1,
+      "type": "mcq",
+      "question": "x - 1 is a factor of x^3 + ax^2 + 2b, and a + b = 4. Then",
+      "options": [
+        "a = 5, b = -1",
+        "a = 7, b = -3",
+        "a = 9, b = -5",
+        "a = 3, b = 1"
+      ],
+      "answer": 2,
+      "explanation": "The value at 1 is 1 + a + 2b = 0. With a + b = 4, b = -5 and a = 9."
+    },
+    {
+      "id": "ncert_u2_through_points",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic graph passes through (-6, 0) and (6, 0). Its zeroes are",
+      "options": [
+        "-6 and 0",
+        "6 and 6",
+        "-30 and -20",
+        "-6 and 6"
+      ],
+      "answer": 3,
+      "explanation": "The x-intercepts are the zeroes."
+    },
+    {
+      "id": "ncert_u2_k_sqrt2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The sum of the zeroes of 2x^2 - k√2 x + 1 is √2. Then k is",
+      "options": [
+        "√2",
+        "2",
+        "2√2",
+        "1/2"
+      ],
+      "answer": 1,
+      "explanation": "The sum is k√2 / 2. Set that equal to √2 to get k = 2."
+    },
+    {
+      "id": "ncert_u2_ab_zeroes_2_m3",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of x^2 + (a + 1)x + b are 2 and -3. Then",
+      "options": [
+        "a = -7, b = -1",
+        "a = 5, b = -1",
+        "a = 7, b = -6",
+        "a = 0, b = -6"
+      ],
+      "answer": 3,
+      "explanation": "The sum is -1, so a + 1 = 1. The product is -6, so b = -6."
+    },
+    {
+      "id": "ncert_u2_k_half_product",
+      "marks": 1,
+      "type": "mcq",
+      "question": "For x^2 - (k + 6)x + 2(2k - 1), the sum of the zeroes is half their product. Then k is",
+      "options": [
+        "-7",
+        "7",
+        "-3",
+        "3"
+      ],
+      "answer": 1,
+      "explanation": "k + 6 = 2k - 1, so k = 7."
+    },
+    {
+      "id": "ncert_u2_product_is_2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The product of the zeroes of kx^2 - 4x - 7 is 2. Then k is",
+      "options": [
+        "-1/14",
+        "-7/2",
+        "7/2",
+        "-2/7"
+      ],
+      "answer": 1,
+      "explanation": "The product is -7/k. Set that equal to 2."
+    },
+    {
+      "id": "ncert_u2_twice_zeroes_p",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of x^2 + px + q are twice the zeroes of 4x^2 - 5x - 6. The value of p is",
+      "options": [
+        "-5/2",
+        "5/2",
+        "-5",
+        "10"
+      ],
+      "answer": 0,
+      "explanation": "The original zeroes are -3/4 and 2. Twice those are -3/2 and 4, so their sum is 5/2 and p = -5/2."
+    },
+    {
+      "id": "ncert_u2_cubic_product_others",
+      "marks": 1,
+      "type": "mcq",
+      "question": "One zero of ax^3 + bx^2 + cx + d is 0. The product of the other two zeroes is",
+      "options": [
+        "-b/a",
+        "c/a",
+        "0",
+        "-d/a"
+      ],
+      "answer": 1,
+      "explanation": "The pairwise sum is c/a, and the pairs that include 0 drop out, leaving the product of the other two."
+    },
+    {
+      "id": "ncert_u2_cubic_zero_minus1",
+      "marks": 1,
+      "type": "mcq",
+      "question": "One zero of x^3 + ax^2 + bx + c is -1. The product of the other two zeroes is",
+      "options": [
+        "1 - a + b",
+        "b - a - 1",
+        "a - b + 1",
+        "a - b - 1"
+      ],
+      "answer": 0,
+      "explanation": "The value at -1 is 0, so c = 1 - a + b. That constant is the product of the other two zeroes."
+    },
+    {
+      "id": "ncert_u2_form_25x2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic polynomial whose zeroes are 2/5 and -1/5 is",
+      "options": [
+        "25x^2 - 5x - 2",
+        "5x^2 + 2x - 1",
+        "15x^2 + 2x - 3",
+        "25x^2 + 5x - 2"
+      ],
+      "answer": 0,
+      "explanation": "The sum is 1/5 and the product is -2/25. Clearing the denominator gives 25x^2 - 5x - 2."
+    },
+    {
+      "id": "ncert_u2_how_many_same_zeroes",
+      "marks": 1,
+      "type": "mcq",
+      "question": "How many quadratic polynomials have zeroes -5 and -3?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "more than 3"
+      ],
+      "answer": 3,
+      "explanation": "Any non-zero constant multiple of x^2 + 8x + 15 has those zeroes."
+    },
+    {
+      "id": "ncert_u2_how_many_polynomials",
+      "marks": 1,
+      "type": "mcq",
+      "question": "How many polynomials have zeroes -3 and 5?",
+      "options": [
+        "only one",
+        "infinitely many",
+        "exactly two",
+        "at most two"
+      ],
+      "answer": 1,
+      "explanation": "Any non-zero multiple of (x + 3)(x - 5), including higher-degree polynomials with extra factors, can have those zeroes."
+    },
+    {
+      "id": "ncert_u2_form_8x2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic polynomial with zeroes -√(5/2) and √(5/2) is",
+      "options": [
+        "x^2 - 5√2 x + 1",
+        "8x^2 - 20",
+        "15x^2 - 6",
+        "x^2 - 2√5 x - 1"
+      ],
+      "answer": 1,
+      "explanation": "The sum is 0 and the product is -5/2, so 8(x^2 - 5/2) = 8x^2 - 20."
+    },
+    {
+      "id": "ncert_u2_form_cubic_076",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A cubic polynomial with sum of zeroes 0, sum of products of zeroes taken two at a time -7, and product of zeroes -6 is",
+      "options": [
+        "x^3 + 7x - 6",
+        "x^3 + 7x + 6",
+        "x^3 - 7x - 6",
+        "x^3 - 7x + 6"
+      ],
+      "answer": 3,
+      "explanation": "The polynomial is x^3 - (sum)x^2 + (pair sum)x - product."
+    },
+    {
+      "id": "ncert_u2_ar_zeroes_graph",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: The zeroes of x^2 - 2x - 3 are -1 and 3. Reason: The graph of y = x^2 - 2x - 3 crosses the x-axis at (-1, 0) and (3, 0).",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 0,
+      "explanation": "(x - 3)(x + 1) = x^2 - 2x - 3, so both statements are true and the intercepts are the zeroes."
+    },
+    {
+      "id": "ncert_u2_ar_two_points",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: If a graph meets the x-axis at exactly two points, the polynomial has 2 zeroes. Reason: The number of zeroes equals the number of points where the graph meets the x-axis.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 0,
+      "explanation": "Each real zero is one x-intercept, so the reason explains the assertion."
+    },
+    {
+      "id": "ncert_u2_ar_a_is_4",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: If the zeroes of x^3 - 12x^2 + px + q are a - d, a and a + d, then a = 4. Reason: The product of the zeroes of a cubic equals the constant term with its sign changed.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 1,
+      "explanation": "The sum of the zeroes is 3a = 12, so a = 4. The product rule is true, but it does not explain the value of a."
+    },
+    {
+      "id": "ncert_u2_ar_3_and_4",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: If 3 and 4 are the zeroes of a quadratic, one such polynomial is x^2 - 7x + 12. Reason: A quadratic with zeroes α and β can be written x^2 - (α + β)x + αβ.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 0,
+      "explanation": "The sum is 7 and the product is 12, so the reason produces the polynomial in the assertion."
+    },
+    {
+      "id": "ncert_u2_ncert_sum_sqrt2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The quadratic with sum of zeroes √2 and product of zeroes 1/3 is",
+      "options": [
+        "x^2 - √2 x + 1/3",
+        "3x^2 - 3√2 x + 1",
+        "x^2 + √2 x + 1/3",
+        "3x^2 + 3√2 x + 1"
+      ],
+      "answer": 1,
+      "explanation": "x^2 - (sum)x + product, then multiply by 3."
+    },
+    {
+      "id": "ncert_u2_ncert_sum_0_prod_sqrt5",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The quadratic with sum of zeroes 0 and product √5 is",
+      "options": [
+        "x^2 - √5",
+        "x^2 + √5",
+        "x^2 - √5 x",
+        "x^2 + √5 x + 1"
+      ],
+      "answer": 1,
+      "explanation": "There is no x term, and the constant term is the product."
+    },
+    {
+      "id": "ncert_u2_ncert_sum_4_prod_1",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The quadratic with sum of zeroes 4 and product 1 is",
+      "options": [
+        "x^2 - 4x + 1",
+        "x^2 + 4x + 1",
+        "x^2 - 4x - 1",
+        "4x^2 + x + 1"
+      ],
+      "answer": 0,
+      "explanation": "Subtract the sum times x and add the product."
+    },
+    {
+      "id": "ncert_u2_formed_x2_9",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of x^2 + x - 2 are α and β. A polynomial with zeroes 2α + 1 and 2β + 1 is",
+      "options": [
+        "x^2 - 9",
+        "x^2 + 9",
+        "x^2 - x - 2",
+        "x^2 + 4x - 12"
+      ],
+      "answer": 0,
+      "explanation": "The new sum is 0 and the new product is -9."
+    },
+    {
+      "id": "ncert_u2_formed_sqrt5",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic whose zeroes are 1 + √5 and 1 - √5, where ±√5 are the zeroes of x^2 - 5, is",
+      "options": [
+        "x^2 - 2x - 4",
+        "x^2 - 2x + 4",
+        "x^2 + 2x - 4",
+        "x^2 - 5"
+      ],
+      "answer": 0,
+      "explanation": "The new sum is 2 and the new product is 1 - 5 = -4."
+    },
+    {
+      "id": "ncert_u2_formed_double",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic whose zeroes are twice the zeroes of 2x^2 - 5x + 2 is",
+      "options": [
+        "x^2 - 5x + 4",
+        "x^2 - 5x + 2",
+        "2x^2 - 5x + 4",
+        "x^2 + 5x + 4"
+      ],
+      "answer": 0,
+      "explanation": "The original zeroes are 1/2 and 2. Twice those are 1 and 4."
+    },
+    {
+      "id": "ncert_u2_formed_6_m3",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic whose zeroes are 6 and -3 is",
+      "options": [
+        "x^2 - 3x - 18",
+        "x^2 + 3x - 18",
+        "x^2 - 3x + 18",
+        "x^2 + 18x - 3"
+      ],
+      "answer": 0,
+      "explanation": "The sum is 3 and the product is -18."
+    },
+    {
+      "id": "ncert_u2_formed_2sqrt7",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic whose zeroes are 2√7 and -5√7 is",
+      "options": [
+        "x^2 + 3√7 x - 70",
+        "x^2 - 3√7 x - 70",
+        "x^2 + 3√7 x + 70",
+        "x^2 - 7x - 10"
+      ],
+      "answer": 0,
+      "explanation": "The sum is -3√7 and the product is -70."
+    },
+    {
+      "id": "ncert_u2_formed_cubic_319",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A cubic whose zeroes are (2 + √5)/2, (2 - √5)/2 and 4 is",
+      "options": [
+        "4x^3 - 24x^2 + 31x + 4",
+        "4x^3 - 24x^2 + 31x - 4",
+        "x^3 - 6x^2 + 4",
+        "4x^3 + 24x^2 + 31x + 4"
+      ],
+      "answer": 0,
+      "explanation": "The sum is 6, the pair sum is 31/4 and the product is -1. Clearing the denominator gives this cubic."
+    },
+    {
+      "id": "ncert_u2_formed_cubic_roots",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A cubic whose zeroes are 3, -1 and -1/3 is",
+      "options": [
+        "3x^3 - 5x^2 - 11x - 3",
+        "3x^3 - 5x^2 + 11x - 3",
+        "x^3 - 5x^2 - 11x - 3",
+        "3x^3 + 5x^2 - 11x - 3"
+      ],
+      "answer": 0,
+      "explanation": "(x - 3)(x + 1)(3x + 1) = 3x^3 - 5x^2 - 11x - 3."
+    },
+    {
+      "id": "ncert_u2_class_polynomial",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A class has 18 average students and 7 of the best students. A quadratic whose zeroes are those two numbers is",
+      "options": [
+        "x^2 - 25x + 126",
+        "x^2 - 25x - 126",
+        "x^2 + 25x + 126",
+        "x^2 - 11x + 126"
+      ],
+      "answer": 0,
+      "explanation": "The sum is 25 and the product is 126."
+    },
+    {
+      "id": "ncert_u2_reciprocal_polynomial",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of 4x^2 + 3x - 1 are 1/4 and -1. A polynomial whose zeroes are their reciprocals is",
+      "options": [
+        "x^2 - 3x - 4",
+        "x^2 + 3x - 4",
+        "4x^2 + 3x - 1",
+        "x^2 - 3x + 4"
+      ],
+      "answer": 0,
+      "explanation": "The reciprocals are 4 and -1. Their sum is 3 and their product is -4."
+    },
+    {
+      "id": "ncert_u2_who_is_right",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Two different cubic graphs both cross the x-axis at -1, 0 and 1. Anya says they must be the same polynomial. Pranit says only two such cubics exist. Aadar says infinitely many cubics have those zeroes. Who is right?",
+      "options": [
+        "Anya",
+        "Pranit",
+        "Aadar",
+        "none of them"
+      ],
+      "answer": 2,
+      "explanation": "Every polynomial k(x + 1)x(x - 1), with k ≠ 0, has those zeroes."
+    },
+    {
+      "id": "ncert_u2_aryan",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Aryan says that the sum of the zeroes of 3x^2 - 10x + 13 is not 5. Is Aryan right?",
+      "options": [
+        "No, the sum is 5",
+        "Yes, the sum is 10/3",
+        "Yes, the sum is -10/3",
+        "No, the sum is 13/3"
+      ],
+      "answer": 1,
+      "explanation": "The sum is 10/3, so the claim that it is 5 is false."
+    },
+    {
+      "id": "ncert_u2_equal_roots_sign",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If the zeroes of ax^2 + bx + c are equal and not zero, then",
+      "options": [
+        "a and c have the same sign",
+        "a and c have opposite signs",
+        "b must be 0",
+        "c must be 0"
+      ],
+      "answer": 0,
+      "explanation": "The product of the equal zeroes is a square, and that product is c/a, so c/a is positive."
+    },
+    {
+      "id": "ncert_u2_constant_14",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic has integral zeroes whose sum is 7. Which of these cannot be its constant term?",
+      "options": [
+        "6",
+        "10",
+        "12",
+        "14"
+      ],
+      "answer": 3,
+      "explanation": "The constant term is the product of two integers that add to 7. The possible products are 0, 6, 10 and 12, not 14."
+    },
+    {
+      "id": "ncert_u2_five_not_zero",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Is 5 a zero of 5x^2 - 10?",
+      "options": [
+        "Yes",
+        "No, the value is 115",
+        "No, the value is 0",
+        "Yes, the value is 10"
+      ],
+      "answer": 1,
+      "explanation": "5(25) - 10 = 115, not 0."
+    },
+    {
+      "id": "ncert_u2_infinite_pair",
+      "marks": 1,
+      "type": "mcq",
+      "question": "How many polynomials have -2 and 5 as zeroes?",
+      "options": [
+        "none",
+        "exactly one",
+        "exactly two",
+        "infinitely many"
+      ],
+      "answer": 3,
+      "explanation": "Any non-zero multiple of (x + 2)(x - 5) has those zeroes."
+    },
+    {
+      "id": "ncert_u2_k_minus21",
+      "marks": 2,
+      "type": "written",
+      "question": "For what value of k is 3 a zero of 2x^2 + x + k?",
+      "model_answer": "Put x is 3 into the polynomial and set the value equal to 0. 2 times 9, plus 3, plus k, is 0. k is -21.",
+      "explanation": "k is -21.",
+      "accept": "-21"
+    },
+    {
+      "id": "ncert_u2_a_5_over_2",
+      "marks": 2,
+      "type": "written",
+      "question": "2 is a zero of ax^2 - 3(a - 1)x - 1. Find a.",
+      "model_answer": "The value at 2 is 0. 4a - 6(a - 1) - 1 is 0, so -2a + 5 is 0. a is 5/2.",
+      "explanation": "a is 5/2.",
+      "accept": "5/2"
+    },
+    {
+      "id": "ncert_u2_a_is_4",
+      "marks": 2,
+      "type": "written",
+      "question": "2 is a zero of 4x^2 + 2x - 5a. Find a.",
+      "model_answer": "The value at 2 is 16 + 4 - 5a. That value is 0, so 5a is 20. a is 4.",
+      "explanation": "a is 4.",
+      "accept": "4"
+    },
+    {
+      "id": "ncert_u2_a_is_2",
+      "marks": 2,
+      "type": "written",
+      "question": "x + a is a factor of 2x^2 + 2ax + 5x + 10. Find a.",
+      "model_answer": "Then x is -a is a zero. The value at -a simplifies to 10 - 5a. a is 2.",
+      "explanation": "a is 2.",
+      "accept": "2"
+    },
+    {
+      "id": "ncert_u2_k_12",
+      "marks": 2,
+      "type": "written",
+      "question": "The zeroes α and β of x^2 - 7x + k satisfy α = β - 1. Find k.",
+      "model_answer": "The sum of the zeroes is 7, so 2β - 1 is 7 and β is 4. Then α is 3, and the product is k. k is 12.",
+      "explanation": "k is 12.",
+      "accept": "12"
+    },
+    {
+      "id": "ncert_u2_k_2_over_3",
+      "marks": 2,
+      "type": "written",
+      "question": "One zero of 3x^2 - 8x + 2k + 1 is seven times the other. Find k.",
+      "model_answer": "If the zeroes are α and 7α, their sum 8α is 8/3, so α is 1/3. Their product 7/9 equals (2k + 1)/3. k is 2/3.",
+      "explanation": "k is 2/3.",
+      "accept": "2/3"
+    },
+    {
+      "id": "ncert_u2_a_from_reciprocal",
+      "marks": 2,
+      "type": "written",
+      "question": "One zero of (a^2 + 4)x^2 + 9x + 4a is the reciprocal of the other. Find a.",
+      "model_answer": "The product of a number and its reciprocal is 1, so 4a / (a^2 + 4) is 1. Then a^2 - 4a + 4 is 0. a is 2.",
+      "explanation": "a is 2.",
+      "accept": "2"
+    },
+    {
+      "id": "ncert_u2_a_is_3",
+      "marks": 2,
+      "type": "written",
+      "question": "The product of the zeroes of (a^2 + 9)x^2 + px + 6a is 1. Find a.",
+      "model_answer": "The product of the zeroes is 6a / (a^2 + 9). Set that equal to 1 to get a^2 - 6a + 9 is 0. a is 3.",
+      "explanation": "a is 3.",
+      "accept": "3"
+    },
+    {
+      "id": "ncert_u2_k_8",
+      "marks": 2,
+      "type": "written",
+      "question": "Find k so that -2 is a zero of x^3 + 4x + 2k.",
+      "model_answer": "The value at -2 is -8 - 8 + 2k. So -16 + 2k is 0. k is 8.",
+      "explanation": "k is 8.",
+      "accept": "8"
+    },
+    {
+      "id": "ncert_u2_a_from_sum",
+      "marks": 2,
+      "type": "written",
+      "question": "The sum of the zeroes of (a + 1)x^2 + (2a + 3)x + (3a + 4) is -1. Find a and the product of the zeroes.",
+      "model_answer": "The sum of the zeroes is -(2a + 3) / (a + 1). Set that equal to -1, so 2a + 3 equals a + 1, and a is -2. The constant term is then -2 and the leading coefficient is -1. a is -2 and the product is 2.",
+      "explanation": "a is -2 and the product is 2.",
+      "accept": "-2 and 2"
+    },
+    {
+      "id": "ncert_u2_km_pair",
+      "marks": 3,
+      "type": "written",
+      "question": "2 and 3 are zeroes of 3x^2 - 2kx + 2m. Find k and m.",
+      "model_answer": "The sum of the zeroes is 5, and that equals 2k / 3. The product of the zeroes is 6, and that equals 2m / 3. k is 15/2 and m is 9.",
+      "explanation": "k is 15/2 and m is 9.",
+      "accept": "15/2 and 9"
+    },
+    {
+      "id": "ncert_u2_ab_sum",
+      "marks": 2,
+      "type": "written",
+      "question": "2 and -3 are zeroes of x^2 + (a + 1)x + b. Find a + b.",
+      "model_answer": "The sum of the zeroes is -1, so a + 1 is 1 and a is 0. The product is -6, so b is -6. a + b is -6.",
+      "explanation": "a + b is -6.",
+      "accept": "-6"
+    },
+    {
+      "id": "ncert_u2_zeroes_4x12",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of x^2 + 4x - 12.",
+      "model_answer": "The expression factors as (x + 6)(x - 2). Set each factor equal to 0. The zeroes are -6 and 2.",
+      "explanation": "The zeroes are -6 and 2.",
+      "accept": "-6 and 2"
+    },
+    {
+      "id": "ncert_u2_zeroes_repeat_3",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of x^2 - 6x + 9.",
+      "model_answer": "The expression is (x - 3)^2. The parabola touches the x-axis at one point. The zeroes are 3 and 3.",
+      "explanation": "The zeroes are 3 and 3.",
+      "accept": "3 and 3"
+    },
+    {
+      "id": "ncert_u2_zeroes_y2_4",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of y^2 - 4.",
+      "model_answer": "y^2 - 4 factors as (y - 2)(y + 2). Set each factor equal to 0. The zeroes are -2 and 2.",
+      "explanation": "The zeroes are -2 and 2.",
+      "accept": "-2 and 2"
+    },
+    {
+      "id": "ncert_u2_zeroes_fraction_z",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of 3z^2 - z.",
+      "model_answer": "Factor z(3z - 1). One factor gives 0 and the other gives 1/3. The zeroes are 0 and 1/3.",
+      "explanation": "The zeroes are 0 and 1/3.",
+      "accept": "0 and 1/3"
+    },
+    {
+      "id": "ncert_u2_zeroes_half",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the zeroes of 6x^2 - 7x + 2.",
+      "model_answer": "The expression factors as (3x - 2)(2x - 1). Set each factor equal to 0. The zeroes are 1/2 and 2/3.",
+      "explanation": "The zeroes are 1/2 and 2/3.",
+      "accept": "1/2 and 2/3"
+    },
+    {
+      "id": "ncert_u2_zeroes_negative_quad",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of -x^2 + x + 6.",
+      "model_answer": "Multiply by -1 to get x^2 - x - 6. That factors as (x - 3)(x + 2). The zeroes are -2 and 3.",
+      "explanation": "The zeroes are -2 and 3.",
+      "accept": "-2 and 3"
+    },
+    {
+      "id": "ncert_u2_zeroes_end_7",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of -2x^2 + 5x + 7.",
+      "model_answer": "Multiply by -1 to get 2x^2 - 5x - 7. That factors as (2x - 7)(x + 1). The zeroes are -1 and 7/2.",
+      "explanation": "The zeroes are -1 and 7/2.",
+      "accept": "-1 and 7/2"
+    },
+    {
+      "id": "ncert_u2_linear_zeroes",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zero of -x + 3/2.",
+      "model_answer": "Set -x + 3/2 equal to 0. Then x is 3/2. The zero is 3/2.",
+      "explanation": "The zero is 3/2.",
+      "accept": "3/2"
+    },
+    {
+      "id": "ncert_u2_ncert_zeroes_i",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of x^2 - 2x - 8.",
+      "model_answer": "The expression factors as (x - 4)(x + 2). Set each factor equal to 0. The zeroes are -2 and 4.",
+      "explanation": "The zeroes are -2 and 4.",
+      "accept": "-2 and 4"
+    },
+    {
+      "id": "ncert_u2_ncert_zeroes_ii",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of 4s^2 - 4s + 1.",
+      "model_answer": "The expression is (2s - 1)^2. It has a repeated zero. The zeroes are 1/2 and 1/2.",
+      "explanation": "The zeroes are 1/2 and 1/2.",
+      "accept": "1/2 and 1/2"
+    },
+    {
+      "id": "ncert_u2_ncert_zeroes_iii",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the zeroes of 6x^2 - 7x - 3.",
+      "model_answer": "The expression factors as (3x + 1)(2x - 3). Set each factor equal to 0. The zeroes are -1/3 and 3/2.",
+      "explanation": "The zeroes are -1/3 and 3/2.",
+      "accept": "-1/3 and 3/2"
+    },
+    {
+      "id": "ncert_u2_ncert_zeroes_iv",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of 4u^2 + 8u.",
+      "model_answer": "Factor 4u(u + 2). Set each factor equal to 0. The zeroes are 0 and -2.",
+      "explanation": "The zeroes are 0 and -2.",
+      "accept": "0 and -2"
+    },
+    {
+      "id": "ncert_u2_ncert_zeroes_vi",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of 3x^2 - x - 4.",
+      "model_answer": "The expression factors as (3x - 4)(x + 1). Set each factor equal to 0. The zeroes are -1 and 4/3.",
+      "explanation": "The zeroes are -1 and 4/3.",
+      "accept": "-1 and 4/3"
+    },
+    {
+      "id": "ncert_u2_sum_product_8_12",
+      "marks": 2,
+      "type": "written",
+      "question": "The sum and product of the zeroes of a quadratic are 8 and 12. Find the zeroes.",
+      "model_answer": "The zeroes satisfy t^2 - 8t + 12 is 0. That factors as (t - 6)(t - 2). The zeroes are 2 and 6.",
+      "explanation": "The zeroes are 2 and 6.",
+      "accept": "2 and 6"
+    },
+    {
+      "id": "ncert_u2_alpha_square",
+      "marks": 3,
+      "type": "written",
+      "question": "α and β are the zeroes of 3x^2 - 5x - 2. Find α^2 + β^2.",
+      "model_answer": "The sum is 5/3 and the product is -2/3. The sum of the squares equals the square of the sum, minus twice the product. The value is 37/9.",
+      "explanation": "The value is 37/9.",
+      "accept": "37/9"
+    },
+    {
+      "id": "ncert_u2_reciprocal_sum",
+      "marks": 2,
+      "type": "written",
+      "question": "α and β are the zeroes of 4x^2 + 3x + 7. Find 1/α + 1/β.",
+      "model_answer": "1/α + 1/β equals the sum of the zeroes divided by their product. The sum is -3/4 and the product is 7/4. The value is -3/7.",
+      "explanation": "The value is -3/7.",
+      "accept": "-3/7"
+    },
+    {
+      "id": "ncert_u2_expression_minus_2_3",
+      "marks": 3,
+      "type": "written",
+      "question": "α and β are the zeroes of 6x^2 + x - 1. Find α/β + β/α + 2(1/α + 1/β) + 3αβ.",
+      "model_answer": "The sum is -1/6 and the product is -1/6. α/β + β/α is -13/6, 1/α + 1/β is 1, and 3αβ is -1/2. The value is -2/3.",
+      "explanation": "The value is -2/3.",
+      "accept": "-2/3"
+    },
+    {
+      "id": "ncert_u2_sum_plus_product",
+      "marks": 2,
+      "type": "written",
+      "question": "α and β are the zeroes of 2y^2 + 7y + 5. Find α + β + αβ.",
+      "model_answer": "The sum is -7/2 and the product is 5/2. Add those two values. The value is -1.",
+      "explanation": "The value is -1.",
+      "accept": "-1"
+    },
+    {
+      "id": "ncert_u2_expression_8",
+      "marks": 3,
+      "type": "written",
+      "question": "α and β are the zeroes of 3s^2 - 6s + 4. Find α/β + β/α + 2(1/α + 1/β) + 3αβ.",
+      "model_answer": "The sum is 2 and the product is 4/3. α/β + β/α is 1, twice the sum of the reciprocals is 3, and 3αβ is 4. The value is 8.",
+      "explanation": "The value is 8.",
+      "accept": "8"
+    },
+    {
+      "id": "ncert_u2_k_from_square",
+      "marks": 3,
+      "type": "written",
+      "question": "α and β are zeroes of 3x^2 - 8x + k, and α^2 + β^2 = 40/9. Find k.",
+      "model_answer": "The sum of the zeroes is 8/3. α^2 + β^2 is (8/3)^2 - 2k/3 is 40/9. k is 4.",
+      "explanation": "k is 4.",
+      "accept": "4"
+    },
+    {
+      "id": "ncert_u2_pq_primes",
+      "marks": 3,
+      "type": "written",
+      "question": "The zeroes of px^2 + qx + 152 are the distinct primes 2 and 19. Find p and q.",
+      "model_answer": "The product 38 equals 152 / p, so p is 4. The sum 21 equals -q / p, so q is -84. p is 4 and q is -84.",
+      "explanation": "p is 4 and q is -84.",
+      "accept": "4 and -84"
+    },
+    {
+      "id": "ncert_u2_twice_other_k",
+      "marks": 3,
+      "type": "written",
+      "question": "One zero of 2x^2 - 5x - (2k - 1) is twice the other. Find the zeroes and k.",
+      "model_answer": "If the zeroes are α and 2α, their sum 3α is 5/2, so the zeroes are 5/6 and 5/3. Their product 25/18 equals (1 - 2k) / 2. The zeroes are 5/6 and 5/3, and k is -8/9.",
+      "explanation": "The zeroes are 5/6 and 5/3, and k is -8/9.",
+      "accept": "5/6, 5/3 and -8/9"
+    },
+    {
+      "id": "ncert_u2_cubic_product_12",
+      "marks": 3,
+      "type": "written",
+      "question": "Two zeroes of x^3 - 5x^2 - 2x + 24 have product 12. Find all three zeroes.",
+      "model_answer": "The product of all three zeroes is -24, so the third zero is -2. The other two have sum 7 and product 12. The zeroes are -2, 3 and 4.",
+      "explanation": "The zeroes are -2, 3 and 4.",
+      "accept": "-2, 3 and 4"
+    },
+    {
+      "id": "ncert_u2_cubic_third",
+      "marks": 3,
+      "type": "written",
+      "question": "Two zeroes of 2x^3 + 3x^2 - 5x - 6 are -1 and -2. Find the third zero.",
+      "model_answer": "The factor (x + 1)(x + 2) divides the cubic. The quotient is 2x - 3. The third zero is 3/2.",
+      "explanation": "The third zero is 3/2.",
+      "accept": "3/2"
+    },
+    {
+      "id": "ncert_u2_other_product",
+      "marks": 2,
+      "type": "written",
+      "question": "One zero of x^3 + ax^2 + bx - 6 is -1. Find the product of the other two zeroes.",
+      "model_answer": "The product of all three zeroes is 6. Divide that product by the known zero -1. The product of the other two zeroes is -6.",
+      "explanation": "The product of the other two zeroes is -6.",
+      "accept": "-6"
+    },
+    {
+      "id": "ncert_u2_difference_squares",
+      "marks": 2,
+      "type": "written",
+      "question": "The zeroes of a quadratic are -3 and -10. Find the positive difference of their squares.",
+      "model_answer": "The squares are 9 and 100. Subtract the smaller square from the larger square. The positive difference is 91.",
+      "explanation": "The positive difference is 91.",
+      "accept": "91"
+    },
+    {
+      "id": "ncert_u2_cubic_k_18",
+      "marks": 3,
+      "type": "written",
+      "question": "The sum of two zeroes of x^3 - 2x^2 - 9x + k is 0. Find k.",
+      "model_answer": "The zeroes can be written α, -α and 2, because the sum of all three zeroes is 2. The pair products give -α^2 is -9, so α^2 is 9. k is 18.",
+      "explanation": "k is 18.",
+      "accept": "18"
+    },
+    {
+      "id": "ncert_u2_cubic_zeroes_case",
+      "marks": 3,
+      "type": "written",
+      "question": "The zeroes of x^3 - 6x^2 + 3x + 10 are a, a + b and a + 2b. Find the three zeroes.",
+      "model_answer": "Their sum is 3a + 3b is 6, so a + b is 2. Their product is -10, which forces the three values -1, 2 and 5. The zeroes are -1, 2 and 5.",
+      "explanation": "The zeroes are -1, 2 and 5.",
+      "accept": "-1, 2 and 5"
+    },
+    {
+      "id": "ncert_u2_equal_odd_k",
+      "marks": 2,
+      "type": "written",
+      "question": "Can x^2 + kx + k have equal zeroes for some odd integer k greater than 1?",
+      "model_answer": "Equal zeroes need discriminant k^2 - 4k is 0. Then k is 0 or 4. No such odd integer exists.",
+      "explanation": "No such odd integer exists.",
+      "accept": "no such odd integer"
+    },
+    {
+      "id": "ncert_u2_pq_double",
+      "marks": 3,
+      "type": "written",
+      "question": "The zeroes of x^2 + px + q are double the zeroes of 2x^2 - 5x - 3. Find p and q.",
+      "model_answer": "The original zeroes are -1/2 and 3, so the new zeroes are -1 and 6. Their sum is 5 and their product is -6. p is -5 and q is -6.",
+      "explanation": "p is -5 and q is -6.",
+      "accept": "-5 and -6"
+    },
+    {
+      "id": "ncert_u2_a_three_times",
+      "marks": 3,
+      "type": "written",
+      "question": "One zero of ax^2 - 8x + 3 is three times the other, and a is not 0. Find a, and say which way the graph opens.",
+      "model_answer": "If the zeroes are alpha and 3 alpha, their sum 4 alpha is 8/a and their product 3 alpha squared is 3/a. Then alpha is 2/a, and substituting gives a is 4. a is 4, so the graph opens upwards.",
+      "explanation": "a is 4, so the graph opens upwards.",
+      "accept": "4"
+    },
+    {
+      "id": "ncert_u2_dolphin_zeroes",
+      "marks": 3,
+      "type": "written",
+      "question": "A dolphin's height above the water, in centimetres, at time t seconds is p(t) = 20t - 16t^2. Find the zeroes of p(t).",
+      "model_answer": "Factor t(20 - 16t). One zero is the start, and the other is when it returns to the water. The zeroes are 0 and 5/4.",
+      "explanation": "The zeroes are 0 and 5/4.",
+      "accept": "0 and 5/4"
+    },
+    {
+      "id": "ncert_u2_dolphin_height",
+      "marks": 3,
+      "type": "written",
+      "question": "A dolphin's height above the water, in centimetres, is p(t) = 20t - 16t^2. Find the height at t = 3/2, and say whether it is above or below the water.",
+      "model_answer": "The value is 20 times 3/2, minus 16 times 9/4. That is 30 - 36. The height is 6 cm below the water.",
+      "explanation": "The height is 6 cm below the water.",
+      "accept": "6 cm below"
+    },
+    {
+      "id": "ncert_u2_track_zeroes",
+      "marks": 3,
+      "type": "written",
+      "question": "A parabolic track meets the x-axis at (-30, 0) and (35, 0). Find its zeroes, and find x when x^2 - 5x - 1050 = -750.",
+      "model_answer": "The intercepts give the zeroes -30 and 35. x^2 - 5x - 1050 is -750 simplifies to x^2 - 5x - 300 is 0. The zeroes are -30 and 35, and x is -15 or 20.",
+      "explanation": "The zeroes are -30 and 35, and x is -15 or 20.",
+      "accept": "-30, 35, -15 and 20"
+    },
+    {
+      "id": "ncert_u2_graph_sum",
+      "marks": 2,
+      "type": "written",
+      "question": "A parabola meets the x-axis at (-2, 0) and (3, 0). Find the sum of its zeroes.",
+      "model_answer": "The zeroes are the x-intercepts -2 and 3. Add those zeroes. The sum is 1.",
+      "explanation": "The sum is 1.",
+      "accept": "1"
+    },
+    {
+      "id": "ncert_u2_cubic_values",
+      "marks": 3,
+      "type": "written",
+      "question": "For p(x) = x^3 - 2x^2 + (3/4)x, find the values of x for which p(x) = 0.",
+      "model_answer": "Factor x times a quadratic. The quadratic factor gives x is 1/2 and x is 3/2, as well as the factor x. The values are 0, 1/2 and 3/2.",
+      "explanation": "The values are 0, 1/2 and 3/2.",
+      "accept": "0, 1/2 and 3/2"
+    },
+    {
+      "id": "ncert_u2_sum_of_roots_graph",
+      "marks": 2,
+      "type": "written",
+      "question": "A cubic graph has roots -3, 0 and 1. Find the sum of the roots.",
+      "model_answer": "Add the three roots shown by the intercepts. -3 + 0 + 1 is the sum. The sum is -2.",
+      "explanation": "The sum is -2.",
+      "accept": "-2"
+    },
+    {
+      "id": "ncert_u2_q_over_pr",
+      "marks": 5,
+      "type": "written",
+      "question": "α and β are the zeroes of px^2 + qx + r, and p, q, r are non-zero. Find 1/(pα + q) + 1/(pβ + q).",
+      "model_answer": "From pα^2 + qα + r is 0, pα + q equals -r/α. Each term 1/(pα + q) becomes -α/r. The value is q divided by pr.",
+      "explanation": "The value is q divided by pr.",
+      "accept": "q divided by pr"
+    },
+    {
+      "id": "ncert_u2_ratio_roots",
+      "marks": 5,
+      "type": "written",
+      "question": "The zeroes of ax^2 + bx + b are in the ratio m:n, with a and b non-zero. Find √(m/n) + √(n/m), taking the positive value.",
+      "model_answer": "The sum of the zeroes is -b/a and their product is b/a. Then m/n + n/m + 2 equals b/a. The positive value is the square root of b/a.",
+      "explanation": "The positive value is the square root of b/a.",
+      "accept": "square root of b/a"
+    },
+    {
+      "id": "ncert_u2_factor_common",
+      "marks": 3,
+      "type": "written",
+      "question": "If x + a is a factor of both x^2 + px + q and x^2 + mx + n, and m ≠ p, prove the value of a.",
+      "model_answer": "The value at -a is 0 for both quadratics. So a^2 - pa + q is 0 and a^2 - ma + n is 0. Subtracting gives a(m - p) is n - q. a equals (n - q) divided by (m - p).",
+      "explanation": "a equals (n - q) divided by (m - p).",
+      "accept": "a equals (n - q) divided by (m - p)"
+    },
+    {
+      "id": "ncert_u2_identity",
+      "marks": 5,
+      "type": "written",
+      "question": "α and β are the zeroes of x^2 - px + q, and q is not 0. Prove that α^2/β^2 + β^2/α^2 = p^4/q^2 - 4p^2/q + 2.",
+      "model_answer": "α^2/β^2 + β^2/α^2 equals (α/β + β/α)^2 minus 2. α/β + β/α equals (α^2 + β^2) / (αβ), and α^2 + β^2 is p^2 - 2q while αβ is q. The square of (p^2 - 2q) / q, minus 2, expands to p^4/q^2 - 4p^2/q + 2. Both sides are equal.",
+      "explanation": "Both sides are equal.",
+      "accept": "both sides are equal"
+    },
+    {
+      "id": "ncert_u2_zeroes_t2_15",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of t^2 - 15 are",
+      "options": [
+        "±15",
+        "±√15",
+        "15 and 0",
+        "√15 only"
+      ],
+      "answer": 1,
+      "explanation": "t^2 = 15, so t = ±√15."
+    },
+    {
+      "id": "ncert_u2_form_quarter",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The quadratic with sum of zeroes 1/4 and product -1 is",
+      "options": [
+        "4x^2 - x - 4",
+        "x^2 - (1/4)x - 1",
+        "4x^2 + x - 4",
+        "x^2 + (1/4)x - 1"
+      ],
+      "answer": 0,
+      "explanation": "Multiply x^2 - (1/4)x - 1 by 4."
+    },
+    {
+      "id": "ncert_u2_form_one_one",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The quadratic with sum of zeroes 1 and product 1 is",
+      "options": [
+        "x^2 - x + 1",
+        "x^2 + x + 1",
+        "x^2 - x - 1",
+        "x^2 + x - 1"
+      ],
+      "answer": 0,
+      "explanation": "Subtract the sum times x and add the product."
+    },
+    {
+      "id": "ncert_u2_form_neg_quarter",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The quadratic with sum of zeroes -1/4 and product 1/4 is",
+      "options": [
+        "4x^2 + x + 1",
+        "4x^2 - x + 1",
+        "x^2 + (1/4)x + 1/4",
+        "4x^2 + x - 1"
+      ],
+      "answer": 0,
+      "explanation": "Multiply x^2 + (1/4)x + 1/4 by 4."
+    },
+    {
+      "id": "ncert_u2_form_2_sqrt3",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic whose zeroes are 2 + √3 and 2 - √3 is",
+      "options": [
+        "x^2 - 4x + 1",
+        "x^2 - 4x - 1",
+        "x^2 + 4x + 1",
+        "x^2 - 2x + 3"
+      ],
+      "answer": 0,
+      "explanation": "The sum is 4 and the product is 4 - 3 = 1."
+    },
+    {
+      "id": "ncert_u2_form_2_m6",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A quadratic whose zeroes are 2 and -6 is",
+      "options": [
+        "x^2 + 4x - 12",
+        "x^2 - 4x - 12",
+        "x^2 + 4x + 12",
+        "x^2 - 4x + 12"
+      ],
+      "answer": 0,
+      "explanation": "The sum is -4 and the product is -12."
+    },
+    {
+      "id": "ncert_u2_zeroes_sqrt2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of x^2 - (√2 + 1)x + √2 are",
+      "options": [
+        "√2 and 1",
+        "√2 and -1",
+        "2 and 1",
+        "√2 only"
+      ],
+      "answer": 0,
+      "explanation": "(x - √2)(x - 1) = x^2 - (√2 + 1)x + √2."
+    },
+    {
+      "id": "ncert_u2_zeroes_a_recip",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of a(x^2 + 1) - x(a^2 + 1), with a ≠ 0, are",
+      "options": [
+        "a and 1/a",
+        "a and -1/a",
+        "a^2 and 1",
+        "1 and -1"
+      ],
+      "answer": 0,
+      "explanation": "The expression is a(x - a)(x - 1/a) after rearranging, so the zeroes are a and 1/a."
+    },
+    {
+      "id": "ncert_u2_zeroes_2sqrt3",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of 2√3 x^2 - 5x + √3 are",
+      "options": [
+        "√3/2 and 1/√3",
+        "√3 and 1/2",
+        "2√3 and 5",
+        "√3/2 and √3"
+      ],
+      "answer": 0,
+      "explanation": "The sum is 5/(2√3) and the product is 1/2, which matches √3/2 and 1/√3."
+    },
+    {
+      "id": "ncert_u2_type_z_cubic",
+      "marks": 1,
+      "type": "mcq",
+      "question": "(√2/5)z^3 + 1 is",
+      "options": [
+        "linear",
+        "quadratic",
+        "cubic",
+        "not a polynomial"
+      ],
+      "answer": 2,
+      "explanation": "The highest power of z is 3."
+    },
+    {
+      "id": "ncert_u2_type_divided_t",
+      "marks": 1,
+      "type": "mcq",
+      "question": "(-t + 3t^2 - 4t^3) / t, for t ≠ 0, is",
+      "options": [
+        "linear",
+        "quadratic",
+        "cubic",
+        "not a polynomial"
+      ],
+      "answer": 1,
+      "explanation": "Dividing by t gives -1 + 3t - 4t^2, a quadratic."
+    },
+    {
+      "id": "ncert_u2_zeroes_sqrt3_10",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of √3 x^2 + 10x + 7√3 are",
+      "options": [
+        "-7/√3 and -√3",
+        "7/√3 and √3",
+        "-7 and -√3",
+        "√3 and 10"
+      ],
+      "answer": 0,
+      "explanation": "(√3 x + 7)(x + √3) = 0, and the sum -10/√3 and product 7 match the coefficients."
+    },
+    {
+      "id": "ncert_u2_zeroes_4sqrt3",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The zeroes of 4√3 x^2 + 5x - 2√3 are",
+      "options": [
+        "√3/4 and -2/√3",
+        "-√3/4 and 2/√3",
+        "4√3 and -2√3",
+        "√3 and -2"
+      ],
+      "answer": 0,
+      "explanation": "(4x - √3)(√3 x + 2) = 0, and the product is -1/2, matching the coefficients."
+    },
+    {
+      "id": "ncert_u2_smaller_sum",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A parabola has zeroes -2 and 3, so their sum is 1. Which quadratic has a smaller sum of zeroes?",
+      "options": [
+        "x^2 - 5x + 6",
+        "x^2 + 3x + 2",
+        "x^2 - x - 6",
+        "x^2 - 4x + 3"
+      ],
+      "answer": 1,
+      "explanation": "The zeroes of x^2 + 3x + 2 are -1 and -2, and their sum is -3, which is less than 1."
+    },
+    {
+      "id": "ncert_u2_linear_six",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the zeroes of x + 5, -x + 3/2, 6x - 3, (-7/2)x + 7, -13x and 12x - 12.",
+      "model_answer": "Set each linear expression equal to 0. The six equations give x is -5, x is 3/2, x is 1/2, x is 2, x is 0 and x is 1. The zeroes are -5, 3/2, 1/2, 2, 0 and 1.",
+      "explanation": "The zeroes are -5, 3/2, 1/2, 2, 0 and 1.",
+      "accept": "-5, 3/2, 1/2, 2, 0 and 1"
+    },
+    {
+      "id": "ncert_u2_zeroes_5x2",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of 5x^2 - 8x - 4.",
+      "model_answer": "The expression factors as (5x + 2)(x - 2). Set each factor equal to 0. The zeroes are -2/5 and 2.",
+      "explanation": "The zeroes are -2/5 and 2.",
+      "accept": "-2/5 and 2"
+    },
+    {
+      "id": "ncert_u2_zeroes_20x",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the zeroes of x^2 - 20x + 91.",
+      "model_answer": "The expression factors as (x - 7)(x - 13). Set each factor equal to 0. The zeroes are 7 and 13.",
+      "explanation": "The zeroes are 7 and 13.",
+      "accept": "7 and 13"
+    },
+    {
+      "id": "ncert_u2_zeroes_7y",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the zeroes of 7y^2 - (11/3)y - 2/3.",
+      "model_answer": "Multiply by 3 to get 21y^2 - 11y - 2. That factors as (7y + 1)(3y - 2). The zeroes are -1/7 and 2/3.",
+      "explanation": "The zeroes are -1/7 and 2/3.",
+      "accept": "-1/7 and 2/3"
+    }
+  ]
+}

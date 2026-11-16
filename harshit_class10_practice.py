@@ -322,11 +322,33 @@ def fill_in_is_correct(question: dict, typed: str) -> bool:
         typed_numbers = re.findall(r"-?\d+\s*/\s*\d+|-?\d+(?:\.\d+)?", typed_text)
         if len(typed_numbers) == 1 and hma.answers_equivalent(typed_numbers[0].replace(" ", ""), target):
             return True
-    expected_norm = _norm_answer(expected)
-    typed_norm = _norm_answer(typed_text)
-    if len(typed_norm) >= 8 and expected_norm and (typed_norm in expected_norm or expected_norm in typed_norm):
+    if _phrase_match(typed_text, expected):
         return True
     return False
+
+
+def _tokens(text: str) -> list[str]:
+    return re.findall(r"[a-z0-9]+", str(text).lower())
+
+
+def _consecutive(needle: list[str], haystack: list[str]) -> bool:
+    width = len(needle)
+    if not needle or width > len(haystack):
+        return False
+    return any(haystack[index : index + width] == needle for index in range(len(haystack) - width + 1))
+
+
+def _phrase_match(typed: str, expected: str) -> bool:
+    """Match a typed phrase by whole words, so 'rational' does not pass for 'irrational'."""
+    typed_tokens = _tokens(typed)
+    expected_tokens = _tokens(expected)
+    if not typed_tokens or not expected_tokens:
+        return False
+    if len("".join(typed_tokens)) < 8:
+        return False
+    if len(typed_tokens) == 1:
+        return typed_tokens[0] in expected_tokens
+    return _consecutive(typed_tokens, expected_tokens) or _consecutive(expected_tokens, typed_tokens)
 
 
 def build_session_report(questions: list[dict], answers: list[dict], *, student_name: str = "Student") -> dict:

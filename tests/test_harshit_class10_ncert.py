@@ -1,7 +1,8 @@
-"""NCERT practice uses 1-, 2-, 3-, and 5-mark Circles questions."""
+"""NCERT practice uses 1-, 2-, 3-, and 5-mark chapter questions."""
 
 from __future__ import annotations
 
+import json
 import unittest
 from pathlib import Path
 
@@ -62,6 +63,77 @@ class NcertCirclesPracticeTests(unittest.TestCase):
 
         figure = ROOT / by_id["ncert_u10_parallel_third_tangent"]["figure"]
         self.assertTrue(figure.is_file())
+
+
+class NcertRealNumbersPracticeTests(unittest.TestCase):
+    def test_unit1_has_the_missing_mark_mix(self) -> None:
+        session = h10ncert.build_session(1)
+        marks = [int(q["marks"]) for q in session]
+        self.assertEqual(marks, sorted(marks))
+        self.assertEqual(set(marks), {1, 2, 3, 5})
+        self.assertGreaterEqual(len(session), 100)
+        for question in session:
+            if question["type"] == "mcq":
+                options = question["options"]
+                self.assertEqual(len(options), 4)
+                self.assertEqual(len(set(options)), 4)
+                self.assertNotIn("accept", question)
+
+    def test_unit1_written_answers_match_the_working(self) -> None:
+        raw = json.loads((ROOT / "HarshitMath/class10/ncert/unit_01.json").read_text(encoding="utf-8"))
+        by_id = {q["id"]: q for q in h10ncert.build_session(1)}
+        for question in raw["questions"]:
+            if question["type"] != "written":
+                continue
+            wrapped = by_id[question["id"]]
+            self.assertGreaterEqual(len(h10p.board_working_steps(wrapped)), 2)
+            self.assertTrue(
+                h10p.fill_in_is_correct(wrapped, question["accept"]),
+                h10p.expected_fill_in(wrapped),
+            )
+            self.assertNotIn("accept", wrapped)
+            if question["question"].lower().startswith("prove"):
+                self.assertFalse(h10p.fill_in_is_correct(wrapped, "rational"))
+
+
+class NcertPolynomialsPracticeTests(unittest.TestCase):
+    def test_unit2_has_the_missing_mark_mix(self) -> None:
+        session = h10ncert.build_session(2)
+        marks = [int(q["marks"]) for q in session]
+        self.assertEqual(marks, sorted(marks))
+        self.assertEqual(set(marks), {1, 2, 3, 5})
+        self.assertEqual(marks.count(1), 77)
+        self.assertEqual(marks.count(2), 32)
+        self.assertEqual(marks.count(3), 22)
+        self.assertEqual(marks.count(5), 3)
+        self.assertIn("5 mark", h10ncert.pattern_summary(2))
+        for question in session:
+            if question["type"] == "mcq":
+                options = question["options"]
+                self.assertEqual(len(options), 4)
+                self.assertEqual(len(set(options)), 4)
+                self.assertNotIn("accept", question)
+
+    def test_unit2_written_answers_match_the_working(self) -> None:
+        raw = json.loads((ROOT / "HarshitMath/class10/ncert/unit_02.json").read_text(encoding="utf-8"))
+        by_id = {q["id"]: q for q in h10ncert.build_session(2)}
+        accepts = {q["id"]: q.get("accept") for q in raw["questions"]}
+        self.assertEqual(accepts["ncert_u2_twice_other_k"], "5/6, 5/3 and -8/9")
+        self.assertEqual(accepts["ncert_u2_k_8"], "8")
+        cubic = by_id["ncert_u2_formed_cubic_roots"]
+        self.assertEqual(cubic["options"][cubic["answer"]], "3x^3 - 5x^2 - 11x - 3")
+        for question in raw["questions"]:
+            if question["type"] != "written":
+                continue
+            wrapped = by_id[question["id"]]
+            self.assertGreaterEqual(len(h10p.board_working_steps(wrapped)), 2)
+            self.assertTrue(
+                h10p.fill_in_is_correct(wrapped, question["accept"]),
+                h10p.expected_fill_in(wrapped),
+            )
+            self.assertNotIn("accept", wrapped)
+            if question["question"].lower().startswith("prove"):
+                self.assertFalse(h10p.fill_in_is_correct(wrapped, "rational"))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,1179 @@
+{
+  "meta": {
+    "unit_id": 1,
+    "chapter": "Real Numbers",
+    "source": "NCERT Exercises 1.1 and 1.2, plus the All in One practice items that were not already in Unit 1"
+  },
+  "questions": [
+    {
+      "id": "ncert_u1_factor_420",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 420 as a product of powers of its prime factors.",
+      "options": [
+        "2² × 3 × 5 × 7",
+        "2³ × 3 × 5 × 7",
+        "2² × 3 × 5",
+        "2² × 3 × 5 × 7 × 19"
+      ],
+      "answer": 0,
+      "explanation": "420 = 2² × 3 × 5 × 7."
+    },
+    {
+      "id": "ncert_u1_factor_468",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 468 as a product of powers of its prime factors.",
+      "options": [
+        "2² × 3² × 13",
+        "2³ × 3² × 13",
+        "2² × 3²",
+        "2² × 3² × 13 × 19"
+      ],
+      "answer": 0,
+      "explanation": "468 = 2² × 3² × 13."
+    },
+    {
+      "id": "ncert_u1_factor_308",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 308 as a product of powers of its prime factors.",
+      "options": [
+        "2² × 7 × 11",
+        "2³ × 7 × 11",
+        "2² × 7",
+        "2² × 7 × 11 × 19"
+      ],
+      "answer": 0,
+      "explanation": "308 = 2² × 7 × 11."
+    },
+    {
+      "id": "ncert_u1_factor_528",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 528 as a product of powers of its prime factors.",
+      "options": [
+        "2⁴ × 3 × 11",
+        "2⁵ × 3 × 11",
+        "2⁴ × 3",
+        "2⁴ × 3 × 11 × 19"
+      ],
+      "answer": 0,
+      "explanation": "528 = 2⁴ × 3 × 11."
+    },
+    {
+      "id": "ncert_u1_factor_9072",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 9072 as a product of powers of its prime factors.",
+      "options": [
+        "2⁴ × 3⁴ × 7",
+        "2⁵ × 3⁴ × 7",
+        "2⁴ × 3⁴",
+        "2⁴ × 3⁴ × 7 × 19"
+      ],
+      "answer": 0,
+      "explanation": "9072 = 2⁴ × 3⁴ × 7."
+    },
+    {
+      "id": "ncert_u1_factor_19530",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 19530 as a product of powers of its prime factors.",
+      "options": [
+        "2 × 3² × 5 × 7 × 31",
+        "2² × 3² × 5 × 7 × 31",
+        "2 × 3² × 5 × 7",
+        "2 × 3² × 5 × 7 × 31 × 19"
+      ],
+      "answer": 0,
+      "explanation": "19530 = 2 × 3² × 5 × 7 × 31."
+    },
+    {
+      "id": "ncert_u1_factor_945",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 945 as a product of powers of its prime factors.",
+      "options": [
+        "3³ × 5 × 7",
+        "3⁴ × 5 × 7",
+        "3³ × 5",
+        "3³ × 5 × 7 × 19"
+      ],
+      "answer": 0,
+      "explanation": "945 = 3³ × 5 × 7."
+    },
+    {
+      "id": "ncert_u1_factor_204",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 204 as a product of powers of its prime factors.",
+      "options": [
+        "2² × 3 × 17",
+        "2³ × 3 × 17",
+        "2² × 3",
+        "2² × 3 × 17 × 19"
+      ],
+      "answer": 0,
+      "explanation": "204 = 2² × 3 × 17."
+    },
+    {
+      "id": "ncert_u1_factor_660",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 660 as a product of powers of its prime factors.",
+      "options": [
+        "2² × 3 × 5 × 11",
+        "2³ × 3 × 5 × 11",
+        "2² × 3 × 5",
+        "2² × 3 × 5 × 11 × 19"
+      ],
+      "answer": 0,
+      "explanation": "660 = 2² × 3 × 5 × 11."
+    },
+    {
+      "id": "ncert_u1_factor_7325",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 7325 as a product of powers of its prime factors.",
+      "options": [
+        "5² × 293",
+        "5³ × 293",
+        "5²",
+        "5² × 293 × 19"
+      ],
+      "answer": 0,
+      "explanation": "7325 = 5² × 293."
+    },
+    {
+      "id": "ncert_u1_factor_99792",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 99792 as a product of powers of its prime factors.",
+      "options": [
+        "2⁴ × 3⁴ × 7 × 11",
+        "2⁵ × 3⁴ × 7 × 11",
+        "2⁴ × 3⁴ × 7",
+        "2⁴ × 3⁴ × 7 × 11 × 19"
+      ],
+      "answer": 0,
+      "explanation": "99792 = 2⁴ × 3⁴ × 7 × 11."
+    },
+    {
+      "id": "ncert_u1_factor_874944",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Express 874944 as a product of powers of its prime factors.",
+      "options": [
+        "2⁶ × 3² × 7² × 31",
+        "2⁷ × 3² × 7² × 31",
+        "2⁶ × 3² × 7²",
+        "2⁶ × 3² × 7² × 31 × 19"
+      ],
+      "answer": 0,
+      "explanation": "874944 = 2⁶ × 3² × 7² × 31."
+    },
+    {
+      "id": "ncert_u1_expr_11_93",
+      "marks": 1,
+      "type": "mcq",
+      "question": "7 × 11 × 13 + 2 × 11 is",
+      "options": [
+        "a prime number",
+        "a composite number",
+        "neither prime nor composite",
+        "both prime and composite"
+      ],
+      "answer": 1,
+      "explanation": "11 is a common factor: 11 × (7 × 13 + 2) = 11 × 93, so the number is composite."
+    },
+    {
+      "id": "ncert_u1_expr_13_155",
+      "marks": 1,
+      "type": "mcq",
+      "question": "7 × 11 × 26 + 13 is",
+      "options": [
+        "a prime number",
+        "a composite number",
+        "neither prime nor composite",
+        "both prime and composite"
+      ],
+      "answer": 1,
+      "explanation": "13 × (7 × 11 × 2 + 1) = 13 × 155, so the number is composite."
+    },
+    {
+      "id": "ncert_u1_expr_23_391",
+      "marks": 1,
+      "type": "mcq",
+      "question": "(3 × 5 × 13 × 46) + 23 is",
+      "options": [
+        "a prime number",
+        "a composite number",
+        "neither prime nor composite",
+        "both prime and composite"
+      ],
+      "answer": 1,
+      "explanation": "23 × (3 × 5 × 13 × 2 + 1) = 23 × 391, so the number is composite."
+    },
+    {
+      "id": "ncert_u1_expr_95",
+      "marks": 1,
+      "type": "mcq",
+      "question": "2 × 3 × 3 × 5 + 5 is",
+      "options": [
+        "a prime number",
+        "a composite number",
+        "neither prime nor composite",
+        "both prime and composite"
+      ],
+      "answer": 1,
+      "explanation": "5 × (2 × 3 × 3 + 1) = 5 × 19 = 95, so the number is composite."
+    },
+    {
+      "id": "ncert_u1_expr_730",
+      "marks": 1,
+      "type": "mcq",
+      "question": "6 × 5 × 4 × 3 × 2 × 1 + 10 is",
+      "options": [
+        "a prime number",
+        "a composite number",
+        "neither prime nor composite",
+        "both prime and composite"
+      ],
+      "answer": 1,
+      "explanation": "720 + 10 = 730 = 2 × 5 × 73, so the number is composite."
+    },
+    {
+      "id": "ncert_u1_expr_1006",
+      "marks": 1,
+      "type": "mcq",
+      "question": "7 × 11 × 13 + 5 is",
+      "options": [
+        "a prime number",
+        "a composite number",
+        "neither prime nor composite",
+        "both prime and composite"
+      ],
+      "answer": 1,
+      "explanation": "1001 + 5 = 1006 = 2 × 503, so the number is composite."
+    },
+    {
+      "id": "ncert_u1_expr_5045",
+      "marks": 1,
+      "type": "mcq",
+      "question": "(7 × 6 × 5 × 4 × 3 × 2 × 1) + 5 is",
+      "options": [
+        "a prime number",
+        "a composite number",
+        "neither prime nor composite",
+        "both prime and composite"
+      ],
+      "answer": 1,
+      "explanation": "5040 + 5 = 5045 = 5 × 1009, so the number is composite."
+    },
+    {
+      "id": "ncert_u1_12n_digit",
+      "marks": 1,
+      "type": "mcq",
+      "question": "For a natural number n, 12ⁿ can end with the digit 0 or the digit 5.",
+      "options": [
+        "It can end with 0",
+        "It can end with 5",
+        "It can end with either 0 or 5",
+        "It can end with neither 0 nor 5"
+      ],
+      "answer": 3,
+      "explanation": "12ⁿ = (2² × 3)ⁿ has no factor 5, so it cannot end in 0 or 5."
+    },
+    {
+      "id": "ncert_u1_15n_digit",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Can 15ⁿ end with the digit 0 for any natural number n?",
+      "options": [
+        "Yes, for every n",
+        "Yes, but only when n is even",
+        "No, because 15ⁿ has no factor 2",
+        "No, because 15ⁿ has no factor 5"
+      ],
+      "answer": 2,
+      "explanation": "15ⁿ = 3ⁿ × 5ⁿ. A number ending in 0 needs both 2 and 5 as factors."
+    },
+    {
+      "id": "ncert_u1_lcm_powers_xy",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If a = x³y² and b = xy³, where x and y are primes, then LCM(a, b) is",
+      "options": [
+        "x³y³",
+        "x³y²",
+        "xy³",
+        "x⁴y⁵"
+      ],
+      "answer": 0,
+      "explanation": "The LCM takes the greater power of each prime: x³ and y³."
+    },
+    {
+      "id": "ncert_u1_lcm_powers_ab",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If p = ab² and q = a³b, where a and b are primes, then LCM(p, q) is",
+      "options": [
+        "a³b²",
+        "a³b³",
+        "a⁴b²",
+        "ab²"
+      ],
+      "answer": 0,
+      "explanation": "The LCM takes the greater power of each prime: a³ and b²."
+    },
+    {
+      "id": "ncert_u1_2304",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The prime factorisation of 2304 is",
+      "options": [
+        "2⁸ × 3²",
+        "2⁷ × 3³",
+        "2⁸ × 3³",
+        "2⁷ × 3²"
+      ],
+      "answer": 0,
+      "explanation": "2304 = 2⁸ × 3²."
+    },
+    {
+      "id": "ncert_u1_sqrt_n_primes",
+      "marks": 1,
+      "type": "mcq",
+      "question": "√n is a natural number such that n > 1. Which of these can definitely be written as a product of primes? (i) √n (ii) n (iii) √n / 2",
+      "options": [
+        "only (ii)",
+        "only (i) and (ii)",
+        "all of (i), (ii) and (iii)",
+        "none of them"
+      ],
+      "answer": 0,
+      "explanation": "n is a natural number greater than 1, so it has a prime factorisation. √n and √n / 2 need not be integers."
+    },
+    {
+      "id": "ncert_u1_two_powers_end",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If n is a natural number, then 2(5ⁿ + 6ⁿ) always ends with the digit",
+      "options": [
+        "1",
+        "4",
+        "3",
+        "2"
+      ],
+      "answer": 3,
+      "explanation": "5ⁿ ends in 5 and 6ⁿ ends in 6, so the sum ends in 1. Twice that ends in 2."
+    },
+    {
+      "id": "ncert_u1_8n_cannot",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If n is a natural number, then 8ⁿ cannot end with the digit",
+      "options": [
+        "4",
+        "2",
+        "0",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "The units digits of the powers of 8 cycle through 8, 4, 2 and 6. They never include 0."
+    },
+    {
+      "id": "ncert_u1_cubes_coprime",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If a and b are coprime positive integers, then a³ and b³ are",
+      "options": [
+        "coprime",
+        "not coprime",
+        "both even",
+        "both odd"
+      ],
+      "answer": 0,
+      "explanation": "a and b share no prime factor, so neither do their cubes."
+    },
+    {
+      "id": "ncert_u1_hcf_three_powers",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The HCF of 3⁵ × 5² × 2, 3² × 5³ × 2² and 3⁴ × 5 × 2³ is",
+      "options": [
+        "450",
+        "90",
+        "180",
+        "630"
+      ],
+      "answer": 1,
+      "explanation": "The lowest powers are 3², 5¹ and 2¹, so the HCF is 90."
+    },
+    {
+      "id": "ncert_u1_hcf_132_77",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The HCF of 132 and 77 is",
+      "options": [
+        "11",
+        "77",
+        "22",
+        "44"
+      ],
+      "answer": 0,
+      "explanation": "132 = 2² × 3 × 11 and 77 = 7 × 11, so the HCF is 11."
+    },
+    {
+      "id": "ncert_u1_hcf_two_powers",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If a = 2⁷ × 3¹⁰ and b = 2³ × 3⁷, then HCF(a, b) is",
+      "options": [
+        "2⁷ × 3¹⁰",
+        "2¹⁰ × 3⁷",
+        "2³ × 3⁷",
+        "2⁷ × 3⁷"
+      ],
+      "answer": 2,
+      "explanation": "The HCF keeps the smaller power of each prime: 2³ × 3⁷."
+    },
+    {
+      "id": "ncert_u1_k_and_93",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The HCF of k and 93 is 31, and k is a natural number. Which statements can be true for some value of k? (i) k is a multiple of 31. (ii) k is a multiple of 93. (iii) k is even. (iv) k is odd.",
+      "options": [
+        "only (i) and (iii)",
+        "only (i), (ii) and (iii)",
+        "only (i), (iii) and (iv)",
+        "all of (i), (ii), (iii) and (iv)"
+      ],
+      "answer": 2,
+      "explanation": "k must be a multiple of 31. It may be even, as with 62, or odd, as with 31. It need not be a multiple of 93."
+    },
+    {
+      "id": "ncert_u1_alarms",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Three alarms ring together at 12 noon and then at intervals of 20 min, 25 min and 30 min. When do they next ring together?",
+      "options": [
+        "4:00 pm",
+        "4:30 pm",
+        "5:00 pm",
+        "5:30 pm"
+      ],
+      "answer": 2,
+      "explanation": "The LCM of 20, 25 and 30 is 300 minutes, which is 5 hours after noon."
+    },
+    {
+      "id": "ncert_u1_hcf_divides_2400",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The LCM of two numbers is 2400. Which of the following cannot be their HCF?",
+      "options": [
+        "300",
+        "400",
+        "500",
+        "600"
+      ],
+      "answer": 2,
+      "explanation": "The HCF of two numbers divides their LCM. 500 does not divide 2400."
+    },
+    {
+      "id": "ncert_u1_lcm_18_20",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If p = 18a²b⁴ and q = 20a³b², with a and b prime, then LCM(p, q) is",
+      "options": [
+        "2a²b²",
+        "180a²b²",
+        "12a²b²",
+        "180a³b⁴"
+      ],
+      "answer": 3,
+      "explanation": "18 = 2 × 3² and 20 = 2² × 5, so the coefficient in the LCM is 2² × 3² × 5 = 180. The powers are a³ and b⁴."
+    },
+    {
+      "id": "ncert_u1_product_50_20",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The product of the HCF and LCM of 50 and 20 is",
+      "options": [
+        "1000",
+        "50",
+        "100",
+        "500"
+      ],
+      "answer": 0,
+      "explanation": "For two numbers, HCF × LCM equals the product 50 × 20 = 1000."
+    },
+    {
+      "id": "ncert_u1_lcm_420_189",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If HCF(420, 189) = 21, then LCM(420, 189) is",
+      "options": [
+        "420",
+        "1890",
+        "3780",
+        "3680"
+      ],
+      "answer": 2,
+      "explanation": "LCM = 420 × 189 / 21 = 3780."
+    },
+    {
+      "id": "ncert_u1_k_2520",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The HCF of 2520 and 6600 is 120, and their LCM is 252k. The value of k is",
+      "options": [
+        "550",
+        "1650",
+        "500",
+        "165"
+      ],
+      "answer": 0,
+      "explanation": "LCM = 2520 × 6600 / 120 = 138600, so k = 138600 / 252 = 550."
+    },
+    {
+      "id": "ncert_u1_sqrt20",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The smallest irrational number by which √20 should be multiplied to give a rational number is",
+      "options": [
+        "√20",
+        "√2",
+        "5",
+        "√5"
+      ],
+      "answer": 3,
+      "explanation": "√20 = 2√5, and 2√5 × √5 = 10, which is rational."
+    },
+    {
+      "id": "ncert_u1_irrational_pair",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A pair of irrational numbers whose product is rational is",
+      "options": [
+        "(√16, √4)",
+        "(√5, √2)",
+        "(√3, √27)",
+        "(√36, √2)"
+      ],
+      "answer": 2,
+      "explanation": "√3 × √27 = √81 = 9. The other products are not a rational product of two irrationals."
+    },
+    {
+      "id": "ncert_u1_ar_difference_of_squares",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: (a + √b)(a − √b) is rational, where a and b are positive integers. Reason: The product of two irrational numbers is always rational.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 2,
+      "explanation": "The product is a² − b, an integer. The reason is false: √2 × √3 = √6 is irrational."
+    },
+    {
+      "id": "ncert_u1_ar_lcm_40",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: The HCF of two numbers is 5 and their product is 150, so their LCM is 40. Reason: For two positive integers, HCF × LCM equals the product.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 3,
+      "explanation": "The reason is the two-number relation. The LCM is 150 / 5 = 30, not 40, so the assertion is false."
+    },
+    {
+      "id": "ncert_u1_ar_two_plus_root2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: 2 + √2 is irrational. Reason: The sum of a non-zero rational number and an irrational number is irrational.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 0,
+      "explanation": "√2 is irrational and 2 is a non-zero rational, so the reason explains the assertion."
+    },
+    {
+      "id": "ncert_u1_ar_root2_times",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: √2(5 − √2) is irrational. Reason: The product of two irrational numbers is always irrational.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 2,
+      "explanation": "√2(5 − √2) = 5√2 − 2, which is irrational. The reason is false because √2 × √2 = 2."
+    },
+    {
+      "id": "ncert_u1_ar_two_is_rational",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: 2 is a rational number. Reason: The square root of every positive integer is irrational.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 2,
+      "explanation": "2 = 2/1, so the assertion is true. The reason is false because √4 = 2."
+    },
+    {
+      "id": "ncert_u1_hcf_180",
+      "marks": 2,
+      "type": "written",
+      "question": "Using prime factorisation, find the HCF of 180, 140 and 210.",
+      "model_answer": "180 is 2² × 3² × 5, 140 is 2² × 5 × 7 and 210 is 2 × 3 × 5 × 7. The only common primes are 2 and 5, each to the lowest power 1. The HCF is 10.",
+      "explanation": "The HCF is 10.",
+      "accept": "10"
+    },
+    {
+      "id": "ncert_u1_hcf_smallest",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the HCF of the smallest composite number and the smallest prime number.",
+      "model_answer": "The smallest composite number is 4, and the smallest prime number is 2. The common prime factor of lowest power is 2. The HCF is 2.",
+      "explanation": "The HCF is 2.",
+      "accept": "2"
+    },
+    {
+      "id": "ncert_u1_lcm_from_120",
+      "marks": 2,
+      "type": "written",
+      "question": "The HCF of two numbers is 2 and their product is 120. Find their LCM.",
+      "model_answer": "For two positive integers, the product of the HCF and the LCM equals the product of the numbers. So 2 times the LCM is 120. The LCM is 60.",
+      "explanation": "The LCM is 60.",
+      "accept": "60"
+    },
+    {
+      "id": "ncert_u1_lcm_35_45",
+      "marks": 2,
+      "type": "written",
+      "question": "The HCF of 35 and 45 is 5. Find the LCM of 35 and 45.",
+      "model_answer": "For two numbers, HCF times LCM equals the product. 5 times the LCM equals 35 times 45. The LCM is 315.",
+      "explanation": "The LCM is 315.",
+      "accept": "315"
+    },
+    {
+      "id": "ncert_u1_product_1000",
+      "marks": 2,
+      "type": "written",
+      "question": "The HCF of two numbers is 5 and their LCM is 200. Find the product of the two numbers.",
+      "model_answer": "For two numbers, the product equals HCF times LCM. The product is 5 times 200. The product is 1000.",
+      "explanation": "The product is 1000.",
+      "accept": "1000"
+    },
+    {
+      "id": "ncert_u1_rod_75",
+      "marks": 2,
+      "type": "written",
+      "question": "The length, breadth and height of a room are 8 m 25 cm, 6 m 75 cm and 4 m 50 cm. Find the length of the longest rod that can measure all three dimensions exactly.",
+      "model_answer": "In centimetres the dimensions are 825, 675 and 450. 825 is 3 × 5² × 11, 675 is 3³ × 5² and 450 is 2 × 3² × 5². The HCF is 3 × 5². The longest rod is 75 cm.",
+      "explanation": "The longest rod is 75 cm.",
+      "accept": "75"
+    },
+    {
+      "id": "ncert_u1_rod_35",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the greatest length that measures 7 m, 3 m 85 cm and 12 m 95 cm exactly.",
+      "model_answer": "In centimetres the lengths are 700, 385 and 1295. 700 is 2² × 5² × 7, 385 is 5 × 7 × 11 and 1295 is 5 × 7 × 37. The common prime factors give 5 × 7. The greatest length is 35 cm.",
+      "explanation": "The greatest length is 35 cm.",
+      "accept": "35"
+    },
+    {
+      "id": "ncert_u1_lcm_1_to_10",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the least number that is divisible by all the numbers from 1 to 10.",
+      "model_answer": "The required number is the LCM of the integers from 1 to 10. The highest powers are 2³, 3², 5 and 7. The least such number is 2520.",
+      "explanation": "The least such number is 2520.",
+      "accept": "2520"
+    },
+    {
+      "id": "ncert_u1_cyclists",
+      "marks": 2,
+      "type": "written",
+      "question": "A circular field has a circumference of 360 km. Three cyclists start together and can ride 48 km, 60 km and 72 km in a day. After how many days do they meet again at the starting point?",
+      "model_answer": "The times for one full round are 7.5 days, 6 days and 5 days. In half-days those times are 15, 12 and 10. The LCM of 15, 12 and 10 is 60 half-days. They meet again after 30 days.",
+      "explanation": "They meet again after 30 days.",
+      "accept": "30"
+    },
+    {
+      "id": "ncert_u1_hcf_from_182",
+      "marks": 2,
+      "type": "written",
+      "question": "The LCM of 26 and 91 is 182. Find their HCF.",
+      "model_answer": "For two numbers, HCF times LCM equals the product. The HCF equals 26 times 91, divided by 182. The HCF is 13.",
+      "explanation": "The HCF is 13.",
+      "accept": "13"
+    },
+    {
+      "id": "ncert_u1_lcm_from_50",
+      "marks": 2,
+      "type": "written",
+      "question": "The HCF of 150 and 100 is 50. Find their LCM.",
+      "model_answer": "For two numbers, the LCM equals the product divided by the HCF. The LCM equals 150 times 100, divided by 50. The LCM is 300.",
+      "explanation": "The LCM is 300.",
+      "accept": "300"
+    },
+    {
+      "id": "ncert_u1_other_7119",
+      "marks": 2,
+      "type": "written",
+      "question": "The HCF of two numbers is 113 and their LCM is 56952. One number is 904. Find the other number.",
+      "model_answer": "The other number equals HCF times LCM, divided by the known number. That is 113 times 56952, divided by 904. The other number is 7119.",
+      "explanation": "The other number is 7119.",
+      "accept": "7119"
+    },
+    {
+      "id": "ncert_u1_find_r",
+      "marks": 2,
+      "type": "written",
+      "question": "HCF(253, 440) = 11 and LCM(253, 440) = 253 × R. Find R.",
+      "model_answer": "HCF times LCM equals the product of the two numbers. 11 times 253 times R equals 253 times 440. R is 40.",
+      "explanation": "R is 40.",
+      "accept": "40"
+    },
+    {
+      "id": "ncert_u1_find_m_8",
+      "marks": 2,
+      "type": "written",
+      "question": "The LCM of 12 and 42 is 10m + 4. Find m.",
+      "model_answer": "12 is 2² × 3 and 42 is 2 × 3 × 7, so the LCM is 84. Then 10m + 4 is 84, so 10m is 80. m is 8.",
+      "explanation": "m is 8.",
+      "accept": "8"
+    },
+    {
+      "id": "ncert_u1_lcm_306",
+      "marks": 2,
+      "type": "written",
+      "question": "The HCF of 306 and 657 is 9. Find their LCM.",
+      "model_answer": "306 is 2 × 3² × 17 and 657 is 3² × 73, which checks that the HCF is 9. The LCM is the product divided by the HCF. The LCM is 22338.",
+      "explanation": "The LCM is 22338.",
+      "accept": "22338"
+    },
+    {
+      "id": "ncert_u1_sonia_ravi",
+      "marks": 2,
+      "type": "written",
+      "question": "Sonia takes 18 minutes to drive one round of a circular path. Ravi takes 12 minutes for the same path. They start together. After how many minutes do they meet again at the start?",
+      "model_answer": "They meet again after the LCM of their lap times. 18 is 2 × 3² and 12 is 2² × 3, so the LCM is 2² × 3². They meet after 36 minutes.",
+      "explanation": "They meet after 36 minutes.",
+      "accept": "36"
+    },
+    {
+      "id": "ncert_u1_no_end_5",
+      "marks": 2,
+      "type": "written",
+      "question": "For what value of the natural number n does 2ⁿ × 5ⁿ end with the digit 5?",
+      "model_answer": "2ⁿ × 5ⁿ is 10ⁿ. For every natural number n, 10ⁿ ends with the digit 0. There is no such natural number.",
+      "explanation": "There is no such natural number.",
+      "accept": "no such natural number"
+    },
+    {
+      "id": "ncert_u1_greatest_936",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the greatest three-digit number which is divisible by 18, 24 and 36.",
+      "model_answer": "The number must be a multiple of the LCM of 18, 24 and 36, and that LCM is 72. The greatest three-digit multiple of that LCM is the answer. The greatest such number is 936.",
+      "explanation": "The greatest such number is 936.",
+      "accept": "936"
+    },
+    {
+      "id": "ncert_u1_value_n_3",
+      "marks": 3,
+      "type": "written",
+      "question": "n² + 3n − 4 can be written as a product of only two prime factors, and n is a natural number. Find n for which this value is an even composite number.",
+      "model_answer": "n² + 3n − 4 is (n + 4)(n − 1). The value is an even product of two primes when one factor is 2 and the other is an odd prime. Taking n minus 1 to be 2 gives n equal to 3, and the other factor is 7. n is 3.",
+      "explanation": "n is 3.",
+      "accept": "3"
+    },
+    {
+      "id": "ncert_u1_pairs_528",
+      "marks": 3,
+      "type": "written",
+      "question": "The sum of two positive integers is 528 and their HCF is 33. How many such unordered pairs are there?",
+      "model_answer": "Write the numbers as 33a and 33b, where a and b are coprime and a + b is 16. The coprime pairs with the smaller first are (1, 15), (3, 13), (5, 11) and (7, 9). There are 4 such pairs.",
+      "explanation": "There are 4 such pairs.",
+      "accept": "4"
+    },
+    {
+      "id": "ncert_u1_find_m_3",
+      "marks": 3,
+      "type": "written",
+      "question": "The HCF of 85 and 238 can be written as 85m − 238. Find m.",
+      "model_answer": "85 is 5 × 17 and 238 is 2 × 7 × 17, so the HCF is 17. Then 85m minus 238 is 17, so 85m is 255. m is 3.",
+      "explanation": "m is 3.",
+      "accept": "3"
+    },
+    {
+      "id": "ncert_u1_lcm_1_to_5",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the least positive integer that is divisible by all the numbers from 1 to 5.",
+      "model_answer": "The required number is the LCM of 1, 2, 3, 4 and 5. The highest powers are 2², 3 and 5. The least such number is 60.",
+      "explanation": "The least such number is 60.",
+      "accept": "60"
+    },
+    {
+      "id": "ncert_u1_rooms_17",
+      "marks": 3,
+      "type": "written",
+      "question": "In a workshop the numbers of French, Hindi and English teachers are 48, 80 and 144. Each room is used for one subject, every room has the same number of teachers, and that number is as large as possible. How many rooms are needed?",
+      "model_answer": "The number of teachers in each room is the HCF of 48, 80 and 144. 48 is 2⁴ × 3, 80 is 2⁴ × 5 and 144 is 2⁴ × 3², so the HCF is 16. The numbers of rooms are 48/16, 80/16 and 144/16. 17 rooms are needed.",
+      "explanation": "17 rooms are needed.",
+      "accept": "17"
+    },
+    {
+      "id": "ncert_u1_hcf_525",
+      "marks": 3,
+      "type": "written",
+      "question": "525 and 3000 are both divisible by 3, 5, 15, 25 and 75. Find the HCF of 525 and 3000.",
+      "model_answer": "525 is 3 × 5² × 7 and 3000 is 2³ × 3 × 5³. The common primes of lowest power are 3 and 5². The HCF is 75.",
+      "explanation": "The HCF is 75.",
+      "accept": "75"
+    },
+    {
+      "id": "ncert_u1_ravi_shikha",
+      "marks": 3,
+      "type": "written",
+      "question": "Ravi takes 16 minutes to drive one round of a circular field and Shikha takes 20 minutes. They start together at the same point and ride in the same direction. After how many minutes do they meet again at the start?",
+      "model_answer": "They meet again after the LCM of 16 and 20. 16 is 2⁴ and 20 is 2² × 5, so the LCM is 2⁴ × 5. They meet after 80 minutes.",
+      "explanation": "They meet after 80 minutes.",
+      "accept": "80"
+    },
+    {
+      "id": "ncert_u1_hcf_lcm_72_120",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 72 and 120 by prime factorisation.",
+      "model_answer": "72 is 2³ × 3² and 120 is 2³ × 3 × 5. The HCF keeps the lower powers, and the LCM keeps the higher powers. The HCF is 24 and the LCM is 360.",
+      "explanation": "The HCF is 24 and the LCM is 360.",
+      "accept": "24 and 360"
+    },
+    {
+      "id": "ncert_u1_hcf_lcm_290_910",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 290 and 910.",
+      "model_answer": "290 is 2 × 5 × 29 and 910 is 2 × 5 × 7 × 13. The common primes give the HCF, and every prime goes into the LCM. The HCF is 10 and the LCM is 26390.",
+      "explanation": "The HCF is 10 and the LCM is 26390.",
+      "accept": "10 and 26390"
+    },
+    {
+      "id": "ncert_u1_hcf_lcm_96_120",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 96 and 120.",
+      "model_answer": "96 is 2⁵ × 3 and 120 is 2³ × 3 × 5. The lower powers give the HCF and the higher powers give the LCM. The HCF is 24 and the LCM is 480.",
+      "explanation": "The HCF is 24 and the LCM is 480.",
+      "accept": "24 and 480"
+    },
+    {
+      "id": "ncert_u1_hcf_lcm_26_455",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 26 and 455.",
+      "model_answer": "26 is 2 × 13 and 455 is 5 × 7 × 13. The only common prime is 13. The HCF is 13 and the LCM is 910.",
+      "explanation": "The HCF is 13 and the LCM is 910.",
+      "accept": "13 and 910"
+    },
+    {
+      "id": "ncert_u1_triple_40",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 40, 36 and 126.",
+      "model_answer": "40 is 2³ × 5, 36 is 2² × 3² and 126 is 2 × 3² × 7. The only common prime is 2, to the lowest power 1. The HCF is 2 and the LCM is 2520.",
+      "explanation": "The HCF is 2 and the LCM is 2520.",
+      "accept": "2 and 2520"
+    },
+    {
+      "id": "ncert_u1_triple_84",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 84, 90 and 120.",
+      "model_answer": "84 is 2² × 3 × 7, 90 is 2 × 3² × 5 and 120 is 2³ × 3 × 5. The common primes of lowest power are 2 and 3. The HCF is 6 and the LCM is 2520.",
+      "explanation": "The HCF is 6 and the LCM is 2520.",
+      "accept": "6 and 2520"
+    },
+    {
+      "id": "ncert_u1_triple_24",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 24, 15 and 36.",
+      "model_answer": "24 is 2³ × 3, 15 is 3 × 5 and 36 is 2² × 3². The only common prime is 3. The HCF is 3 and the LCM is 360.",
+      "explanation": "The HCF is 3 and the LCM is 360.",
+      "accept": "3 and 360"
+    },
+    {
+      "id": "ncert_u1_triple_60",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 60, 84 and 108.",
+      "model_answer": "60 is 2² × 3 × 5, 84 is 2² × 3 × 7 and 108 is 2² × 3³. The common primes of lowest power are 2² and 3. The HCF is 12 and the LCM is 3780.",
+      "explanation": "The HCF is 12 and the LCM is 3780.",
+      "accept": "12 and 3780"
+    },
+    {
+      "id": "ncert_u1_pair_26_91",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 26 and 91, and check that HCF × LCM equals the product of the two numbers.",
+      "model_answer": "26 is 2 × 13 and 91 is 7 × 13. The product of the numbers is 2366, and 13 times 182 is the same product. The HCF is 13 and the LCM is 182.",
+      "explanation": "The HCF is 13 and the LCM is 182.",
+      "accept": "13 and 182"
+    },
+    {
+      "id": "ncert_u1_pair_510_92",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 510 and 92, and check that HCF × LCM equals the product of the two numbers.",
+      "model_answer": "510 is 2 × 3 × 5 × 17 and 92 is 2² × 23. The only common prime is 2, to the power 1. The HCF is 2 and the LCM is 23460.",
+      "explanation": "The HCF is 2 and the LCM is 23460.",
+      "accept": "2 and 23460"
+    },
+    {
+      "id": "ncert_u1_pair_336_54",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 336 and 54, and check that HCF × LCM equals the product of the two numbers.",
+      "model_answer": "336 is 2⁴ × 3 × 7 and 54 is 2 × 3³. The common primes of lowest power are 2 and 3. The HCF is 6 and the LCM is 3024.",
+      "explanation": "The HCF is 6 and the LCM is 3024.",
+      "accept": "6 and 3024"
+    },
+    {
+      "id": "ncert_u1_triple_12",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 12, 15 and 21 by prime factorisation.",
+      "model_answer": "12 is 2² × 3, 15 is 3 × 5 and 21 is 3 × 7. The only common prime is 3. The HCF is 3 and the LCM is 420.",
+      "explanation": "The HCF is 3 and the LCM is 420.",
+      "accept": "3 and 420"
+    },
+    {
+      "id": "ncert_u1_triple_17",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 17, 23 and 29 by prime factorisation.",
+      "model_answer": "17, 23 and 29 are distinct primes, so they have no common prime factor. The LCM is their product. The HCF is 1 and the LCM is 11339.",
+      "explanation": "The HCF is 1 and the LCM is 11339.",
+      "accept": "1 and 11339"
+    },
+    {
+      "id": "ncert_u1_triple_8",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the HCF and LCM of 8, 9 and 25 by prime factorisation.",
+      "model_answer": "8 is 2³, 9 is 3² and 25 is 5². There is no prime common to all three, so the HCF is 1 and the LCM is the product. The HCF is 1 and the LCM is 1800.",
+      "explanation": "The HCF is 1 and the LCM is 1800.",
+      "accept": "1 and 1800"
+    },
+    {
+      "id": "ncert_u1_hcf_lcm_480",
+      "marks": 2,
+      "type": "written",
+      "question": "Find the HCF and LCM of 480 and 720 by prime factorisation.",
+      "model_answer": "480 is 2⁵ × 3 × 5 and 720 is 2⁴ × 3² × 5. The lower powers give the HCF and the higher powers give the LCM. The HCF is 240 and the LCM is 1440.",
+      "explanation": "The HCF is 240 and the LCM is 1440.",
+      "accept": "240 and 1440"
+    },
+    {
+      "id": "ncert_u1_prove_3sqrt2",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 3√2 is irrational.",
+      "model_answer": "Suppose 3√2 is rational. Then √2 is that rational number divided by 3, so √2 is rational. This contradicts the fact that √2 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_5_minus_sqrt3",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 5 − √3 is irrational.",
+      "model_answer": "Suppose 5 − √3 is rational. Then √3 is 5 minus that rational number, so √3 is rational. This contradicts the fact that √3 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_3_minus_2sqrt5",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 3 − 2√5 is irrational, given that √5 is irrational.",
+      "model_answer": "Suppose 3 − 2√5 is rational. Then √5 is 3 minus that rational number, all divided by 2, so √5 is rational. This contradicts the given fact that √5 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_3sqrt7",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 3√7 is irrational.",
+      "model_answer": "Suppose 3√7 is rational. Then √7 is that rational number divided by 3, so √7 is rational. But 7 is prime, so √7 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_2sqrt3_over_5",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 2√3 / 5 is irrational.",
+      "model_answer": "Suppose 2√3 / 5 is rational. Then √3 is that rational number times 5/2, so √3 is rational. This contradicts the fact that √3 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_5_minus_sqrt2",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 5 − √2 is irrational.",
+      "model_answer": "Suppose 5 − √2 is rational. Then √2 is 5 minus that rational number, so √2 is rational. This contradicts the fact that √2 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_2sqrt3_plus_sqrt5",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 2√3 + √5 is irrational.",
+      "model_answer": "Suppose 2√3 + √5 equals a rational number r. Rearrange to 2√3 is r − √5 and square both sides. The squared equation can be rearranged so that √5 equals a ratio of rational numbers. This contradicts the fact that √5 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_minus7",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that −7 − 2√3 is irrational, given that √3 is irrational.",
+      "model_answer": "Suppose −7 − 2√3 is rational. Then √3 is −7 minus that rational number, all divided by 2, so √3 is rational. This contradicts the given fact that √3 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_5_minus_2sqrt3",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 5 − 2√3 is irrational, given that √3 is irrational.",
+      "model_answer": "Suppose 5 − 2√3 is rational. Then √3 is 5 minus that rational number, all divided by 2, so √3 is rational. This contradicts the given fact that √3 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_one_over_sqrt2",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 1/√2 is irrational.",
+      "model_answer": "Suppose 1/√2 is rational. Then √2 is the reciprocal of that rational number, so √2 is rational. This contradicts the fact that √2 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_7sqrt5",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 7√5 is irrational.",
+      "model_answer": "Suppose 7√5 is rational. Then √5 is that rational number divided by 7, so √5 is rational. This contradicts the fact that √5 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_6_plus_sqrt2",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 6 + √2 is irrational.",
+      "model_answer": "Suppose 6 + √2 is rational. Then √2 is that rational number minus 6, so √2 is rational. This contradicts the fact that √2 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_6_minus_4sqrt5",
+      "marks": 2,
+      "type": "written",
+      "question": "Prove that 6 − 4√5 is irrational, given that √5 is irrational.",
+      "model_answer": "Suppose 6 − 4√5 is rational. Then √5 is 6 minus that rational number, all divided by 4, so √5 is rational. This contradicts the given fact that √5 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_prove_2_plus_sqrt5",
+      "marks": 3,
+      "type": "written",
+      "question": "Prove that 2 + √5 is irrational.",
+      "model_answer": "Suppose 2 + √5 is rational. Then √5 is that rational number minus 2, so √5 is rational. This contradicts the fact that √5 is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_case_173250",
+      "marks": 5,
+      "type": "written",
+      "question": "A teacher starts with 2. Each student multiplies the number they receive by one prime and passes it on. The final number is 173250. The opening 2 was given by the teacher, not by a student. Find the least prime used, the number of students, and the prime that the students used the most times.",
+      "model_answer": "173250 is 2 × 3² × 5³ × 7 × 11. The teacher supplied the opening factor 2. The students then supplied 3, 3, 5, 5, 5, 7 and 11. The least prime used is 2, there are 7 students, and 5 is used most.",
+      "explanation": "The least prime used is 2, there are 7 students, and 5 is used most.",
+      "accept": "2, 7 and 5"
+    },
+    {
+      "id": "ncert_u1_plantations",
+      "marks": 5,
+      "type": "written",
+      "question": "Two rectangular fields have the same width and different lengths. The smaller field is planted with 84 trees and the larger field with 231 trees. Both fields have the same number of rows, and that number is as large as possible. The rows in the two fields have different numbers of trees. Find the number of rows and the number of trees in each row of each field.",
+      "model_answer": "The number of rows is the HCF of 84 and 231. 84 is 2² × 3 × 7 and 231 is 3 × 7 × 11, so the HCF is 21. There are 21 rows, 4 columns in the smaller field and 11 columns in the larger field.",
+      "explanation": "There are 21 rows, 4 columns in the smaller field and 11 columns in the larger field.",
+      "accept": "21, 4 and 11"
+    },
+    {
+      "id": "ncert_u1_equal_surds",
+      "marks": 5,
+      "type": "written",
+      "question": "Let a, b, c and d be rational numbers, and let b and d be positive. Prove that if a + √b = c + √d, then either a = c and b = d, or both b and d are squares of rational numbers.",
+      "model_answer": "If a equals c, then the square roots are equal, so b equals d. If a is not equal to c, then √b − √d is the non-zero rational c − a. Squaring and rearranging makes √d equal to a ratio of rational numbers, so d is the square of a rational number. Then b is the square of that same number plus the rational difference. Either the two sides match term by term, or both square roots come from perfect squares.",
+      "explanation": "Either the two sides match term by term, or both square roots come from perfect squares.",
+      "accept": "perfect squares"
+    },
+    {
+      "id": "ncert_u1_cube_root_zero",
+      "marks": 5,
+      "type": "written",
+      "question": "Let a, b, c and p be rational numbers. Suppose p is positive and is not the cube of a rational number. If a + b∛p + c∛(p²) = 0, prove that a = b = c = 0.",
+      "model_answer": "Let t be the real cube root of p, so t³ is p and a + bt + ct² is 0. The powers 1, t and t² are linearly independent over the rational numbers when p is not the cube of a rational number. A rational relation of degree less than 3 would force t to satisfy a linear or quadratic equation, and then p would be the cube of a rational number. a, b and c are all zero.",
+      "explanation": "a, b and c are all zero.",
+      "accept": "a, b and c are all zero"
+    },
+    {
+      "id": "ncert_u1_sqrt_p_plus_q",
+      "marks": 5,
+      "type": "written",
+      "question": "Prove that √p + √q is irrational, where p and q are distinct primes.",
+      "model_answer": "Suppose √p + √q equals a rational number a. Then √q is a − √p. Square both sides and rearrange. √p equals a ratio of rational numbers, so √p is rational. This contradicts the fact that the square root of a prime is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    },
+    {
+      "id": "ncert_u1_sqrt_a_plus_b",
+      "marks": 5,
+      "type": "written",
+      "question": "If √(ab) is irrational, prove that √a + √b is irrational.",
+      "model_answer": "Suppose √a + √b equals a rational number r. Squaring gives a + b + 2√(ab) is r². Then √(ab) equals a ratio of rational numbers, so √(ab) is rational. This contradicts the given fact that √(ab) is irrational. It is irrational.",
+      "explanation": "It is irrational.",
+      "accept": "it is irrational"
+    }
+  ]
+}
