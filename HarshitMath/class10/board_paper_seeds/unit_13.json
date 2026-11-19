@@ -64,20 +64,7 @@
         "14"
       ],
       "answer": 2,
-      "explanation": "15"
-    },
-    {
-      "id": "pyq_u13_mcq_20fb2c7dab",
-      "source_paper": "chapter_wise_pyq",
-      "question": "The class mark of the median class of the following data is :",
-      "options": [
-        "40",
-        "55",
-        "47·5",
-        "62·5"
-      ],
-      "answer": 3,
-      "explanation": "62·5"
+      "explanation": "The empirical relation is mode = 3 median − 2 mean. Then 21 = 3 × median − 24, so the median is 15."
     },
     {
       "id": "pyq_u13_mcq_eb3294a0e4",
@@ -91,19 +78,6 @@
       ],
       "answer": 2,
       "explanation": "Let r be the original radius of sphere. If we increased radius by 100 %. it will be r Thus new volume is 8 times of original volume. Hence when the radius is increased by 100%, the corresponding volume becomes"
-    },
-    {
-      "id": "pyq_u13_mcq_62b1d6df84",
-      "source_paper": "math_objective_pyq",
-      "question": "A sphere is melted and half of the melted liquid is used to form 11 identical cubes, whereas the remaining half is used to form 7 identical smaller spheres. The ratio of the side of the cube to the radius of the new small sphere is 4 / 1 3 b l",
-      "options": [
-        "3",
-        "3 8 / 1 3 b l",
-        "( ) 3 / 1 3",
-        "2"
-      ],
-      "answer": 1,
-      "explanation": "As per the given conditions,"
     },
     {
       "id": "pyq_u13_mcq_3b21a48c9e",
@@ -121,15 +95,15 @@
     {
       "id": "pyq_u13_mcq_a8b3cd51a1",
       "source_paper": "math_objective_pyq",
-      "question": "If the perimeter of one face of a cube is 20 cm, then its surface area is",
+      "question": "The perimeter of one face of a cube is 20 cm. Its surface area is",
       "options": [
-        "cm 120 2",
-        "cm 150 2",
-        "5 cm 12 2",
-        "cm 400 2"
+        "120 cm²",
+        "150 cm²",
+        "125 cm²",
+        "400 cm²"
       ],
       "answer": 1,
-      "explanation": "Option (B) is correct."
+      "explanation": "Each edge is 20/4 = 5 cm. The surface area is 6 × 25 = 150 cm²."
     },
     {
       "id": "pyq_u13_mcq_c2baa6644c",
@@ -177,7 +151,7 @@
       "options": [
         "50%",
         "less than 50%",
-        "more then 50%",
+        "more than 50%",
         "100%"
       ],
       "answer": 2,
@@ -186,15 +160,15 @@
     {
       "id": "pyq_u13_mcq_012f34c87f",
       "source_paper": "math_objective_pyq",
-      "question": "Volume of a spherical shell is given by",
+      "question": "The volume of a spherical shell of outer radius R and inner radius r is",
       "options": [
-        "( ) R r 4 2 2 π −",
-        "(R r 3 3 π −",
-        "( ) R r 4 3 3 π −",
-        "(R 3 4 3 π −"
+        "(4/3)π(R^3 − r^3)",
+        "π(R^3 − r^3)",
+        "4π(R^2 − r^2)",
+        "(4/3)π(R − r)"
       ],
-      "answer": 3,
-      "explanation": "Volume of spherical shell"
+      "answer": 0,
+      "explanation": "Subtract the volume of the inner sphere from the volume of the outer sphere."
     },
     {
       "id": "pyq_u13_mcq_ed6e614e66",
@@ -212,28 +186,28 @@
     {
       "id": "pyq_u13_mcq_8239da13ff",
       "source_paper": "math_objective_pyq",
-      "question": "If two solid hemispheres of same base radius r are joined together along their bases, then curved surface area of this new solid is",
+      "question": "Two solid hemispheres of radius r are joined along their flat faces. The curved surface area of the new solid is",
       "options": [
-        "r 4 2 π",
-        "r 6 2 π",
-        "r 3 2 π",
-        "r 8 2 π"
+        "4πr^2",
+        "6πr^2",
+        "3πr^2",
+        "8πr^2"
       ],
       "answer": 0,
-      "explanation": "Because curved surface area of a hemisphere is and here, we join two solid hemispheres along their bases of radius r , from which we get a solid sphere. Hence, the curved surface area of new solid"
+      "explanation": "Joining the flat faces makes a sphere. Its curved surface area is 4πr^2."
     },
     {
       "id": "pyq_u13_mcq_30c27651c4",
       "source_paper": "math_objective_pyq",
-      "question": "A right circular cylinder of radius r and height h (where, h r 2 > ) just encloses a sphere of diameter",
+      "question": "A right circular cylinder of radius r and height h, with h > 2r, just encloses a sphere. The diameter of the sphere is",
       "options": [
         "r",
-        "r 2",
+        "2r",
         "h",
-        "h 2"
+        "h/2"
       ],
       "answer": 1,
-      "explanation": "Because the sphere encloses in the cylinder, therefore the diameter of sphere is equal to diameter of cylinder"
+      "explanation": "The sphere touches the curved wall, so its diameter is the diameter of the cylinder, 2r."
     },
     {
       "id": "pyq_u13_mcq_d86f96fbd9",
@@ -251,7 +225,7 @@
     {
       "id": "pyq_u13_mcq_4e227b55f2",
       "source_paper": "math_objective_pyq",
-      "question": "A solid piece of iron in the form of a cuboid of dimensions cm cm cm 49 33 24 # # , is moulded to form a solid sphere. The radius of the sphere is",
+      "question": "A solid iron cuboid measuring 49 cm × 33 cm × 24 cm is moulded into a sphere. The radius of the sphere is",
       "options": [
         "21 cm",
         "23 cm",
@@ -259,7 +233,7 @@
         "19 cm"
       ],
       "answer": 0,
-      "explanation": "Volume of the sphere = Volume of the cuboid"
+      "explanation": "The volume is 49 × 33 × 24 = 38808 cm³. With π = 22/7, (4/3)πr^3 = 38808 gives r^3 = 9261 and r = 21 cm."
     },
     {
       "id": "pyq_u13_mcq_e01f4499f1",
@@ -290,41 +264,41 @@
     {
       "id": "pyq_u13_mcq_7fc64ade5c",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : Total surface area of the cylinder having radius of the base 14 cm and height 30 cm is cm 3872 2 . Reas on : If r be the radius and h be the height of the cylinder, then total surface area ( ) rh r 2 2 2 π π = + .",
+      "question": "Assertion: The total surface area of a cylinder of radius 14 cm and height 30 cm is 3872 cm². Reason: The total surface area is 2πrh + 2πr^2.",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 0,
-      "explanation": "Total surface area, Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
+      "explanation": "2 × (22/7) × 14 × (30 + 14) = 3872. The reason is the formula used."
     },
     {
       "id": "pyq_u13_mcq_3e6a3bb29c",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : The slant height of the frustum of a cone is 5 cm and the difference between the radii of its two circular ends is 4 cm. Then the height of the frustum is 3 cm. Reas on : Slant height of the frustum of the cone is given by l = R r h 2 2 − + ^ h .",
+      "question": "Assertion: The slant height of a frustum is 5 cm and the difference of its two radii is 4 cm, so its height is 3 cm. Reason: The slant height is √(h^2 + (R − r)^2).",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 0,
-      "explanation": "Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
+      "explanation": "25 = h^2 + 16, so h = 3. The reason is the relation used."
     },
     {
       "id": "pyq_u13_mcq_22c392e371",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : If the height of a cone is 24 cm and diameter of the base is 14 cm, then the slant height of the cone is 15 cm. Reas on : If r be the radius and h be the slant height of the cone, then slant height h r 2 2 = + .",
+      "question": "Assertion: A cone of height 24 cm and base diameter 14 cm has slant height 15 cm. Reason: The slant height of a cone is √(h^2 + r^2), where h is the vertical height and r is the base radius.",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 3,
-      "explanation": "Assertion (A) is false but reason (R) is true."
+      "explanation": "The radius is 7 cm, so the slant height is √(576 + 49) = 25 cm, not 15 cm. The formula in the reason is true."
     }
   ],
   "assertion_reason": [
@@ -366,17 +340,6 @@
       "marks": 1,
       "question": "Find mode, using an empirical relation, when it is given that mean and median are 10.5 and 9.6 respectively.",
       "model_answer": "Mean = 10.5 and median = 9.6 Empirical relation: 3 Median = Mode + 2 Mean 3(9.6) = Mode + 2(10.5) 28.8 = Mode + 21 Mode = 28.8 – 21 = 7.8",
-      "rubric": [
-        "Correct method",
-        "Accurate final result"
-      ]
-    },
-    {
-      "id": "pyq_u13_w_d6e57365dc",
-      "source_paper": "chapter_wise_pyq",
-      "marks": 2,
-      "question": "The width of 50 leaves of a plant were measured in mm and their cumulative frequency distribution is shown in the following table. Make frequency distribution table for this",
-      "model_answer": "Frequency distribution table is as follows:",
       "rubric": [
         "Correct method",
         "Accurate final result"
@@ -455,39 +418,6 @@
         "Mean",
         "Median",
         "Mode"
-      ]
-    },
-    {
-      "id": "pyq_u13_w_6ab918efbc",
-      "source_paper": "chapter_wise_pyq",
-      "marks": 4,
-      "question": "The lengths of 50 leaves of a plant are measured correct to the nearest millimetre and the data obtained is represented in the following table Find the mean length of the leaves.",
-      "model_answer": "Given frequency distribution is not continuous. So first we have to make it continuous.",
-      "rubric": [
-        "Correct method",
-        "Accurate final result"
-      ]
-    },
-    {
-      "id": "pyq_u13_w_db5b62ba23",
-      "source_paper": "chapter_wise_pyq",
-      "marks": 4,
-      "question": "Find the value of fx from the following data, if its mode is 65. where frequency 6,8,f1, and 12 are in ascending order",
-      "model_answer": "mode=65 modal class=60-80 as its frequency is 12 l=60,f=12,f0=f1,f2=6,h=20 2011",
-      "rubric": [
-        "Correct method",
-        "Accurate final result"
-      ]
-    },
-    {
-      "id": "pyq_u13_w_377c52dfb9",
-      "source_paper": "chapter_wise_pyq",
-      "marks": 4,
-      "question": "Draw ‘less than ogive’ and ‘more than ogive’ for the following distribution and hence find its median",
-      "model_answer": "we notice both curves intersect at (60,50) median =60",
-      "rubric": [
-        "Correct method",
-        "Accurate final result"
       ]
     },
     {

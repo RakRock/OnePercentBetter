@@ -55,7 +55,7 @@
     {
       "id": "pyq_u04_mcq_c985f575da",
       "source_paper": "math_objective_pyq",
-      "question": "Value(s) of k for which the quadratic equation x kx k 2 0 2 − + = has equal roots is/are",
+      "question": "The values of k for which 2x^2 − kx + k = 0 has equal roots are",
       "options": [
         "0",
         "4",
@@ -63,12 +63,12 @@
         "0, 8"
       ],
       "answer": 3,
-      "explanation": "Comparing with ax For equal roots, the discriminant must be zero. Hence, the required values of k are 0 and 8."
+      "explanation": "The discriminant is k^2 − 8k = k(k − 8). It is 0 when k = 0 or k = 8."
     },
     {
       "id": "pyq_u04_mcq_7bcc174ef1",
       "source_paper": "math_objective_pyq",
-      "question": "The quadratic equation x x 2 5 1 0 2 − + = has",
+      "question": "The quadratic equation x^2 − 2x + 5 = 0 has",
       "options": [
         "two distinct real roots",
         "two equal real roots",
@@ -76,12 +76,12 @@
         "more than 2 real roots"
       ],
       "answer": 2,
-      "explanation": "Comparing with ax Since, discriminant is negative, therefore quadratic has no real roots i.e., imaginary roots."
+      "explanation": "The discriminant is 4 − 20 = −16, so there are no real roots."
     },
     {
       "id": "pyq_u04_mcq_2a2164fab9",
       "source_paper": "math_objective_pyq",
-      "question": "The equation , x p x p 2 2 1 0 2 + + + = ^ h where p is real, always has roots that are",
+      "question": "The equation x^2 − (p + 1)x + p = 0, where p is real, always has roots that are",
       "options": [
         "Equal",
         "Equal in magnitude but opposite in sign",
@@ -89,12 +89,12 @@
         "Real"
       ],
       "answer": 3,
-      "explanation": "Comparing with ax For any real value of p , h will always be positive as p2 cannot be negative for real p. Hence, the discriminant b will always be positive. When the discriminant is greater than 0 or is positive, then the roots of a quadratic equation are real."
+      "explanation": "The discriminant is (p + 1)^2 − 4p = (p − 1)^2, which is never negative. The roots are always real."
     },
     {
       "id": "pyq_u04_mcq_580e6c3ef7",
       "source_paper": "math_objective_pyq",
-      "question": "The quadratic equation x x 2 3 2 0 2 4 9 − + = has",
+      "question": "The quadratic equation 4x^2 − 12x + 9 = 0 has",
       "options": [
         "two distinct real roots",
         "two equal real roots",
@@ -102,12 +102,12 @@
         "more than 2 real roots"
       ],
       "answer": 1,
-      "explanation": "Discriminant has real and equal roots."
+      "explanation": "4x^2 − 12x + 9 = (2x − 3)^2, so the roots are real and equal."
     },
     {
       "id": "pyq_u04_mcq_9e377484cd",
       "source_paper": "math_objective_pyq",
-      "question": "The quadratic equation x x 5 0 2 + − = has",
+      "question": "The quadratic equation x^2 + x − 5 = 0 has",
       "options": [
         "two distinct real roots",
         "two equal real roots",
@@ -115,12 +115,12 @@
         "more than 2 real roots"
       ],
       "answer": 0,
-      "explanation": "has two distinct real roots."
+      "explanation": "The discriminant is 1 + 20 = 21, which is positive, so there are two distinct real roots."
     },
     {
       "id": "pyq_u04_mcq_af2131b0c1",
       "source_paper": "math_objective_pyq",
-      "question": "The quadratic equation x x 5 3 1 0 2 − + = has",
+      "question": "The quadratic equation 5x^2 − 3x + 1 = 0 has",
       "options": [
         "two distinct real roots",
         "two equal real roots",
@@ -128,12 +128,12 @@
         "more than 2 real roots"
       ],
       "answer": 2,
-      "explanation": "Hence, roots of the equation are not real."
+      "explanation": "The discriminant is 9 − 20 = −11, so there are no real roots."
     },
     {
       "id": "pyq_u04_mcq_412476f86e",
       "source_paper": "math_objective_pyq",
-      "question": "The quadratic equation x x 4 3 2 0 2 − + = has",
+      "question": "The quadratic equation 2x^2 − 4x + 3 = 0 has",
       "options": [
         "two distinct real roots",
         "two equal real roots",
@@ -141,12 +141,12 @@
         "more than 2 real roots"
       ],
       "answer": 2,
-      "explanation": "Hence, the given equation has no real roots."
+      "explanation": "The discriminant is 16 − 24 = −8, so there are no real roots."
     },
     {
       "id": "pyq_u04_mcq_fe862bbf3d",
       "source_paper": "math_objective_pyq",
-      "question": "The quadratic equation x x 3 4 3 4 2 + + has",
+      "question": "The quadratic equation 4x^2 + 12x + 9 = 0 has",
       "options": [
         "two distinct real roots",
         "two equal real roots",
@@ -154,59 +154,59 @@
         "more than 2 real roots"
       ],
       "answer": 1,
-      "explanation": "Hence, the equation has real and equal roots."
+      "explanation": "4x^2 + 12x + 9 = (2x + 3)^2, so the roots are real and equal."
     },
     {
       "id": "pyq_u04_mcq_246b6a3a69",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : x x 4 12 9 0 2 − + = has repeated roots. Reas on : The quadratic equation ax bx c 0 2 + + = have repeated roots if discriminant D 0 > .",
+      "question": "Assertion: 4x^2 − 12x + 9 = 0 has repeated roots. Reason: ax^2 + bx + c = 0 has repeated roots if the discriminant is greater than 0.",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 2,
-      "explanation": "Reason is false because if D repeated roots. Roots are repeated. Assertion (A) is true but reason (R) is false."
+      "explanation": "(2x − 3)^2 = 0, so the roots are repeated and the assertion is true. Repeated roots need the discriminant to be 0, so the reason is false."
     },
     {
       "id": "pyq_u04_mcq_2bad947c69",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : The equation x x x 3 1 2 2 2 + + = − ^ h is a quadratic equation. Reas on : Any equation of the form ax bx c 0 2 + + = where a 0 ! , is called a quadratic equation.",
+      "question": "Assertion: x(x + 1) + 8 = (x + 2)(x − 2) is a quadratic equation. Reason: An equation ax^2 + bx + c = 0, with a ≠ 0, is a quadratic equation.",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 3,
-      "explanation": "It is not of the form ax (d) Assertion (A) is false but reason (R) is true."
+      "explanation": "The equation simplifies to x + 12 = 0, which is linear, so the assertion is false. The reason is the definition of a quadratic equation."
     },
     {
       "id": "pyq_u04_mcq_78ba09f64b",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : The equation x kx 8 3 2 0 2 + + = has equal roots then the value of k is 3 8 ! . Reas on : The equation ax bx c 0 2 + + = has equal roots if D b ac 4 0 2 = − =",
+      "question": "Assertion: x^2 + kx + 16 = 0 has equal roots when k = 8 or k = −8. Reason: ax^2 + bx + c = 0 has equal roots when b^2 − 4ac = 0.",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 0,
-      "explanation": "Discriminant, For equal roots, D Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
+      "explanation": "k^2 − 64 = 0 gives k = ±8. The reason is the test used to find those values."
     },
     {
       "id": "pyq_u04_mcq_d0a8884aab",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : The roots of the quadratic equation x x 2 2 0 2 + + = are imaginary. Reas on : If discriminant D b ac 4 0 < 2 = − then the roots of quadratic equation ax bx c 0 2 + + = are imaginary.",
+      "question": "Assertion: The roots of x^2 + 2x + 2 = 0 are not real. Reason: If b^2 − 4ac < 0, then the roots of ax^2 + bx + c = 0 are not real.",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 0,
-      "explanation": "Discriminant, Roots are imaginary. Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
+      "explanation": "The discriminant is 4 − 8 = −4. Both statements are true and the reason explains the assertion."
     }
   ],
   "assertion_reason": [

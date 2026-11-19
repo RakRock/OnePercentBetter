@@ -56,28 +56,28 @@
     {
       "id": "pyq_u03_mcq_b7db8f8261",
       "source_paper": "math_objective_pyq",
-      "question": "The value of k for which the system of linear equations x y 2 3 + = , x ky 5 7 0 + + = is inconsistent is",
+      "question": "The value of k for which x + 2y = 3 and 5x + ky + 7 = 0 are inconsistent is",
       "options": [
-        "3 14 -",
-        "5 2",
+        "−3/14",
+        "5/2",
         "5",
         "10"
       ],
       "answer": 3,
-      "explanation": "If system is inconsistent, then From first two orders, we have"
+      "explanation": "1/5 = 2/k gives k = 10. Then 1/5 is not equal to 3/(−7), so the lines are parallel and distinct."
     },
     {
       "id": "pyq_u03_mcq_9049116b04",
       "source_paper": "math_objective_pyq",
-      "question": "The value of k for which the system of equations x y 4 0 + − = and x ky 2 3 + = , has no solution, is",
+      "question": "The value of k for which x + y − 4 = 0 and 2x + ky + 3 = 0 have no solution is",
       "options": [
-        "2 -",
-        "2 !",
+        "−2",
+        "2 or −2",
         "3",
         "2"
       ],
       "answer": 3,
-      "explanation": "Since system has no solution, we have Pair of Linear Equation in Two Variables"
+      "explanation": "1/2 = 1/k gives k = 2. Then 1/2 is not equal to 4/3, so there is no solution."
     },
     {
       "id": "pyq_u03_mcq_3fddbdc7ef",
@@ -95,7 +95,7 @@
     {
       "id": "pyq_u03_mcq_5a3c16e6c6",
       "source_paper": "math_objective_pyq",
-      "question": "If : : x y x y 3 4 2 9 4 + + = , then : x y x y 3 5 3 + − is equal to",
+      "question": "If x : y = 2 : 3, then (3x + 5y) : (3x − y) equals",
       "options": [
         "4 : 1",
         "1 : 4",
@@ -103,7 +103,7 @@
         "1 : 7"
       ],
       "answer": 2,
-      "explanation": "Substituting x in the required expression we"
+      "explanation": "Put x = 2t and y = 3t. Then (6t + 15t) : (6t − 3t) = 21t : 3t = 7 : 1."
     },
     {
       "id": "pyq_u03_mcq_8485fe03db",
@@ -134,7 +134,7 @@
     {
       "id": "pyq_u03_mcq_633528458e",
       "source_paper": "math_objective_pyq",
-      "question": "The pair of equations x y 2 5 0 + + = and x y 3 6 1 0 − − + = has",
+      "question": "The pair x + 2y + 5 = 0 and 3x + 6y + 1 = 0 has",
       "options": [
         "a unique solution",
         "exactly two solutions",
@@ -142,7 +142,7 @@
         "no solution"
       ],
       "answer": 3,
-      "explanation": "Given,equations are Now, we observe that Hence, the pair of equations has no solution."
+      "explanation": "1/3 = 2/6, but 5/1 is different, so the lines are parallel and distinct and there is no solution."
     },
     {
       "id": "pyq_u03_mcq_70597a14c9",
@@ -160,7 +160,7 @@
     {
       "id": "pyq_u03_mcq_4f6bf6d0d2",
       "source_paper": "math_objective_pyq",
-      "question": "The pair of equations y 0 = and y 7 =− has",
+      "question": "The pair of equations y = 0 and y = −7 has",
       "options": [
         "one solution",
         "two solutions",
@@ -168,7 +168,7 @@
         "no solution"
       ],
       "answer": 3,
-      "explanation": "The given pair of equations are The pair of both equations are parallel to x -axis and we know that parallel lines never intersects. So, there is no solution of these lines."
+      "explanation": "Both lines are horizontal and distinct, so they never meet and there is no solution."
     },
     {
       "id": "pyq_u03_mcq_e9a018908e",
@@ -186,80 +186,80 @@
     {
       "id": "pyq_u03_mcq_d73f30ee5a",
       "source_paper": "math_objective_pyq",
-      "question": "For what value of k , do the equations x y 3 8 0 − + = and x ky 6 16 − =− represent coincident lines ? 1",
+      "question": "For what value of k do 3x − y + 8 = 0 and 6x − ky + 16 = 0 represent coincident lines?",
       "options": [
+        "1/2",
+        "−1/2",
         "2",
-        "2 1 -",
-        "2",
-        "2 -"
+        "−2"
       ],
       "answer": 2,
-      "explanation": "Given, equations, Condition for coincident lines is From equation (1),"
+      "explanation": "3/6 = 1/k = 8/16. So k = 2."
     },
     {
       "id": "pyq_u03_mcq_92bc1710c7",
       "source_paper": "math_objective_pyq",
-      "question": "If the lines given by x ky 3 2 2 + = and x y 2 5 1 0 + + = are parallel, then the value of k is",
+      "question": "If 3x + 2ky = 2 and 2x + 5y + 1 = 0 are parallel, then k is",
       "options": [
-        "4 5 -",
-        "5 2 3 15",
-        "4",
+        "−4/5",
+        "15/2",
+        "15/4",
         "2"
       ],
       "answer": 2,
-      "explanation": "Condition for parallel lines is From equation (i), we have"
+      "explanation": "3/2 = 2k/5 gives k = 15/4. The constant terms are not in the same ratio, so the lines are parallel and not the same line."
     },
     {
       "id": "pyq_u03_mcq_1bb9ece3df",
       "source_paper": "math_objective_pyq",
-      "question": "If x a = and y b = is the solution of the equations x y 2 − = and x y 4 + = , then the values of a and b are, respectively",
+      "question": "If x = a and y = b is the solution of x − y = 2 and x + y = 4, then a and b are",
       "options": [
-        "and 3 5",
-        "and 5 3",
-        "and 3 1",
-        "and 1 3 - -"
+        "3 and 5",
+        "5 and 3",
+        "3 and 1",
+        "−1 and −3"
       ],
       "answer": 2,
-      "explanation": "is the solution of the equations , then these values will satisfy that equation Adding equations (1) and (2), we get Substituting a in equation (2),we have"
+      "explanation": "Adding the equations gives 2x = 6, so a = 3. Then b = 1."
     },
     {
       "id": "pyq_u03_mcq_3a47a73888",
       "source_paper": "math_objective_pyq",
-      "question": "Aruna has only < 1 and < 2 coins with her. If the total number of coins that she has is 50 and the amount of money with her is < 75, then the number of < 1 and < 2 coins are, respectively",
+      "question": "Aruna has only ₹1 and ₹2 coins. She has 50 coins worth ₹75. The numbers of ₹1 coins and ₹2 coins are",
       "options": [
-        "and 35 15",
-        "and 35 20",
-        "and 15 35",
-        "and 25 25"
+        "35 and 15",
+        "35 and 20",
+        "15 and 35",
+        "25 and 25"
       ],
       "answer": 3,
-      "explanation": "Now, by given conditions, Subtracting equation (1) form equation (2), we get From equation (i), x"
+      "explanation": "If x is the number of ₹1 coins, then x + 2(50 − x) = 75. So x = 25 and there are 25 coins of each kind."
     },
     {
       "id": "pyq_u03_mcq_31125a074a",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : Pair of linear equations : , x y 9 3 12 0 + + = x y 8 6 24 0 + + = have infinitely many solutions. Reas on : Pair of linear equations a x b y c 1 1 1 + + anda x b y c 0 0 2 2 2 = + + = have infinitely many solu- a b b c c 1 = = 1 1 tions, if a 2 2 2",
+      "question": "Assertion: 9x + 3y + 12 = 0 and 18x + 6y + 24 = 0 have infinitely many solutions. Reason: a1x + b1y + c1 = 0 and a2x + b2y + c2 = 0 have infinitely many solutions when a1/a2 = b1/b2 = c1/c2.",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 0,
-      "explanation": "From the given equations, we have Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
+      "explanation": "9/18 = 3/6 = 12/24 = 1/2. Both statements are true and the reason explains the assertion."
     },
     {
       "id": "pyq_u03_mcq_8e1d1742b7",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : x y 4 0 + − = and x ky 2 3 0 + − = has no solution if k 2 = . Reas on : a x b y c 0 1 1 1 + + = and a x b y c 0 2 2 2 + + = are a k k 1 1 ! . consistent if a 2 2",
+      "question": "Assertion: x + y − 4 = 0 and 2x + ky − 3 = 0 have no solution if k = 2. Reason: The pair a1x + b1y + c1 = 0 and a2x + b2y + c2 = 0 is consistent when a1/a2 ≠ b1/b2.",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 1,
-      "explanation": "For assertion, given equation has no solution if Assertion is true. Both assertion (A) and reason (R) are true but reason (R) is not the correct explanation of assertion (A)."
+      "explanation": "For k = 2, 1/2 = 1/2 but this is not equal to 4/3, so there is no solution. The reason is a true consistency test, and it does not explain this no-solution case."
     }
   ],
   "assertion_reason": [
@@ -383,22 +383,11 @@
       }
     },
     {
-      "id": "pyq_u03_w_81a90112c0",
-      "source_paper": "chapter_wise_pyq",
-      "marks": 3,
-      "question": "Assertion (A) : The value of p for which the system of equations 4x + py + 8 = 0",
-      "model_answer": "Assertion (A) is false, but Reason (R) is true.",
-      "rubric": [
-        "Correct method",
-        "Accurate final result"
-      ]
-    },
-    {
       "id": "pyq_u03_w_fb4fe875b1",
       "source_paper": "most_repeated_pyq",
       "marks": 3,
-      "question": "Find whether the lines representing the following pair of linear equations intersect at a point, are parallel or coincident: x + y = 7. x+ y=6",
-      "model_answer": "We have: a1 = , b1 = , and c1 = -7. a2 = , b2 = , and c2 = -6. = = 1; Since, ≠ = × = and = = , so lines will intersect at a point.",
+      "question": "Find whether the lines x + y = 7 and x + y = 6 intersect at a point, are parallel, or are coincident.",
+      "model_answer": "Both lines have the same coefficients of x and y, but the constant terms 7 and 6 are different. The lines are parallel.",
       "rubric": [
         "Correct method",
         "Accurate final result"
@@ -419,8 +408,8 @@
       "id": "pyq_u03_w_ff5ddce9d5",
       "source_paper": "most_repeated_pyq",
       "marks": 3,
-      "question": "A part of monthly hostel charges is fixed and the remaining depends on the number of days one has taken food in the mess. When Swati takes food for days, she has to pay Rs.3000 as hostel charges, whereas Mansi who takes food for days pays Rs. 3500 as hostel charges. Find the fixed charges and the cost of food per day.",
-      "model_answer": "Let the fixed charges be Rs. x and the cost of food per day be Rs. y. So, according to given conditions, we get x + 20y = 3000 …(1) and x + 25y = 3500 ….(2) From eqn. (1), x = 3000 – 20y. Substituting x = 3000 – 20y in eqn. (2) we get 3000 – 20y + 25y =3500 y= = 100. Putting y = 100 in eqn. (1), we get x + 20 x + 2000 = 3000 100 = 3000 x =3000 – 2000 = 1000 Thus, fixed charges are Rs.1000 and cost of food per day is Rs.100.",
+      "question": "A part of the monthly hostel charge is fixed and the rest depends on the number of days food is taken. Swati takes food for 20 days and pays Rs 3000. Mansi takes food for 25 days and pays Rs 3500. Find the fixed charge and the cost of food per day.",
+      "model_answer": "Let the fixed charge be x rupees and the cost of food per day be y rupees. Then x plus 20y is 3000, and x plus 25y is 3500. Subtracting gives 5y is 500, so y is 100. Then x is 1000. The fixed charge is Rs 1000 and the cost of food per day is Rs 100.",
       "rubric": [
         "Correct method",
         "Accurate final result"
@@ -441,8 +430,8 @@
       "id": "pyq_u03_w_1306e616dc",
       "source_paper": "most_repeated_pyq",
       "marks": 3,
-      "question": "Solve the following pair of linear equations for x and y: + = 2. ax – by = a2 – b2",
-      "model_answer": "The given system of equation is: + =2 bx + ay – 2ab = 0 and ax – by = a2 - b2 …..(1) ax – by – (a2 – b2) = 0. .…(2) By cross-multiplication, we get ( ) ( ( )( ) ) = = ( ( ) ) ( = ) = ( ) ( ( = = ) = ) ( ( ) = ) = ( ( ) ) = x = a, y = b. Hence the solution of the given system of equations is x= a, y=b",
+      "question": "Solve for x and y: bx + ay = 2ab and ax − by = a^2 − b^2.",
+      "model_answer": "Multiplying the first equation by b and the second by a, then adding, removes y and gives x(a squared plus b squared) equal to a(a squared plus b squared). So x is a. Substituting in the first equation gives y is b. The solution is x is a and y is b.",
       "rubric": [
         "Correct method",
         "Accurate final result"
@@ -452,8 +441,8 @@
       "id": "pyq_u03_w_ea8dadf8e8",
       "source_paper": "most_repeated_pyq",
       "marks": 3,
-      "question": "Solve the following pair of equations by reducing them to a pair of linear equations = 4 and = 15.",
-      "model_answer": "We have: - =5 and = 5. …(1) + = 15 = 15. …(2) Putting = u and = vin equations (1) and (2) for reducing them to linear equations, we get 7u – 2v = 5 …(2) 8u + 7v = 15…(4) Multiplying eqn. (3) by 7 and eqn. (4) by 2 and adding, we get 49u – 14v = 35 16u + 14v = 30 65u = 65 u=1 Putting u = 1 in eqn. (3), we get 7 × 1 – 2v = 5 Therefore, =u=1 v= y = 1 and = v = 1 = = 1. x = 1.",
+      "question": "Solve 7/x − 2/y = 5 and 8/x + 7/y = 15.",
+      "model_answer": "Put u for 1/x and v for 1/y. Then 7u minus 2v is 5, and 8u plus 7v is 15. Solving gives u is 1 and v is 1. Therefore x is 1 and y is 1.",
       "rubric": [
         "Correct method",
         "Accurate final result"

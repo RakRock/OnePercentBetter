@@ -56,20 +56,20 @@
     {
       "id": "pyq_u09_mcq_2a8cd4f444",
       "source_paper": "math_objective_pyq",
-      "question": "If the angle of depression of an object from a 75 m high tower is 30c, then the distance of the object from the tower is",
+      "question": "The angle of depression of an object from a 75 m high tower is 30°. The distance of the object from the foot of the tower is",
       "options": [
-        "m 25 3",
-        "m 50 3",
-        "m 75 3",
+        "25√3 m",
+        "50√3 m",
+        "75√3 m",
         "150 m"
       ],
       "answer": 2,
-      "explanation": "Option (C) is correct."
+      "explanation": "tan 30° = 75/distance = 1/√3, so the distance is 75√3 m."
     },
     {
       "id": "pyq_u09_mcq_b3fa76b1c8",
       "source_paper": "math_objective_pyq",
-      "question": "A tree casts a shadow 15 m long on the level of ground, when the angle of elevation of the sun is 45c. The height of a tree is",
+      "question": "A tree casts a shadow 15 m long on level ground when the angle of elevation of the sun is 45°. The height of the tree is",
       "options": [
         "10 m",
         "14 m",
@@ -77,38 +77,25 @@
         "15 m"
       ],
       "answer": 3,
-      "explanation": "Let BC be the tree of height h meter. Let AB be the shadow of tree. Some Applications of Trigonometry Some Applications of Trigonometry"
+      "explanation": "At 45° the height equals the shadow, so the tree is 15 m tall."
     },
     {
       "id": "pyq_u09_mcq_f6ae2f1e3d",
       "source_paper": "math_objective_pyq",
-      "question": "The ratio of the length of a rod and its shadow is : 1 3 then the angle of elevation of the sun is",
+      "question": "The length of a rod and its shadow are in the ratio 1 : √3. The angle of elevation of the sun is",
       "options": [
-        "90c",
-        "45c",
-        "30c",
-        "75c"
+        "90°",
+        "45°",
+        "30°",
+        "75°"
       ],
       "answer": 2,
-      "explanation": "Let AB be the rod of length h, BC be its shadow of , θ be the angle of elevation of the sun."
-    },
-    {
-      "id": "pyq_u09_mcq_426f3b69eb",
-      "source_paper": "math_objective_pyq",
-      "question": "In the given figure, the positions of the observer and the object are mentioned, the angle of depression is",
-      "options": [
-        "30c",
-        "90c",
-        "60c",
-        "45c"
-      ],
-      "answer": 2,
-      "explanation": "Option (C) is correct."
+      "explanation": "tan θ = 1/√3, so θ = 30°."
     },
     {
       "id": "pyq_u09_mcq_1a1100d844",
       "source_paper": "math_objective_pyq",
-      "question": "A circle artist is climbing a 20 m long rope, which is tightly stretched and tied from the top of a vertical pole to the ground, then the height of pole, if the angle made by the rope with the ground level is 30c, is",
+      "question": "A circus artist climbs a 20 m rope stretched from the top of a vertical pole to the ground. The rope makes 30° with the ground. The height of the pole is",
       "options": [
         "5 m",
         "10 m",
@@ -116,12 +103,12 @@
         "20 m"
       ],
       "answer": 1,
-      "explanation": "Let AB be the vertical pole and CA be the 20 m long rope such that its one end A is tied from the top of the vertical pole AB and the other end C is tied to a point C on the ground. Hence, the height of the pole is 10 m."
+      "explanation": "The height is 20 × sin 30° = 20 × 1/2 = 10 m."
     },
     {
       "id": "pyq_u09_mcq_9eaf64c2c5",
       "source_paper": "math_objective_pyq",
-      "question": "The length of a string between a kite and a point on the ground is 85 m. If the string makes an angle θ with level ground such that tan 8 15 θ = , then the height of kite is",
+      "question": "A kite string is 85 m long and makes an angle θ with the ground such that tan θ = 15/8. The height of the kite is",
       "options": [
         "75 m",
         "78.05 m",
@@ -129,25 +116,25 @@
         "None of these"
       ],
       "answer": 0,
-      "explanation": "Length of the string of the kite, Thus height of kite is 75 m."
+      "explanation": "The sides 8, 15 and 17 give sin θ = 15/17. The height is 85 × 15/17 = 75 m."
     },
     {
       "id": "pyq_u09_mcq_b067275a5d",
       "source_paper": "math_objective_pyq",
-      "question": "An observer, 1.5 m tall is 20.5 away from a tower m 22 high, then the angle of elevation of the top of the tower from the eye of observer is",
+      "question": "An observer 1.5 m tall stands 20.5 m from a tower 22 m high. The angle of elevation of the top of the tower from the observer's eye is",
       "options": [
-        "30c",
-        "45c",
-        "60c",
-        "90c"
+        "30°",
+        "45°",
+        "60°",
+        "90°"
       ],
       "answer": 1,
-      "explanation": "be the height of the tower and be the height of the observer. The point D be the observer’s eye. We draw DC Let θ be the angle of elevation make by observer’s eye to the top of the tower i.e."
+      "explanation": "The tower rises 20.5 m above the observer's eye, over a horizontal distance of 20.5 m, so the angle is 45°."
     },
     {
       "id": "pyq_u09_mcq_adccd8086d",
       "source_paper": "math_objective_pyq",
-      "question": "From the top of a 7 m high building the angle of elevation of the top of a cable tower is 60c and the angle of depression of its foot is 45c, then the height of the tower is",
+      "question": "From the top of a 7 m building, the angle of elevation of the top of a cable tower is 60° and the angle of depression of its foot is 45°. The height of the tower is",
       "options": [
         "14.124 m",
         "17.124 m",
@@ -155,33 +142,20 @@
         "15.124 m"
       ],
       "answer": 2,
-      "explanation": "Let AB be the building and CD be the tower. We as shown below. Height of the tower"
+      "explanation": "The 45° depression puts the tower 7 m away. The part above the building is 7√3 m, so the tower is 7(1 + √3) m, about 19.124 m."
     },
     {
       "id": "pyq_u09_mcq_c114545f29",
       "source_paper": "math_objective_pyq",
-      "question": "The angles of elevation of the top of a tower from the points P and Q at distance of a and b respectively from the base and in the same straight line with it, are complementary. The height of the tower is",
+      "question": "The angles of elevation of the top of a tower from two points at distances a and b from its foot, in the same straight line, are complementary. The height of the tower is",
       "options": [
+        "√(ab)",
         "ab",
-        "ab",
-        "b a",
-        "a b"
-      ],
-      "answer": 1,
-      "explanation": "Let AB be the tower. Let C and D be two points at distance a and b respectively from the base of the From equation (1) and (2), we have"
-    },
-    {
-      "id": "pyq_u09_mcq_5094f54f65",
-      "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : In the figure, if m BC 20 = , then height AB is 11.56 m. Reas on : tan base perpendicular BC AB θ = = where θ is the angle ACB + .",
-      "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "√(b/a)",
+        "√(a/b)"
       ],
       "answer": 0,
-      "explanation": "Both the assertion and reason are correct, reason is the correct explanation of the assertion."
+      "explanation": "tan θ = h/a and tan(90° − θ) = h/b = a/h. Multiplying gives h^2 = ab, so h = √(ab)."
     }
   ],
   "assertion_reason": [

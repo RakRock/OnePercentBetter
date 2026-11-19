@@ -67,19 +67,6 @@
       "explanation": "22 cm"
     },
     {
-      "id": "pyq_u11_mcq_ddef1b0b77",
-      "source_paper": "chapter_wise_pyq",
-      "question": "The perimeter of the shaded region in the given figure is :",
-      "options": [
-        "l",
-        "l + a",
-        "l + 2r",
-        "l + 2r + a"
-      ],
-      "answer": 2,
-      "explanation": "l + 2r"
-    },
-    {
       "id": "pyq_u11_mcq_c9aec435da",
       "source_paper": "chapter_wise_pyq",
       "question": "The ratio of the area of a quadrant of a circle to the area of the same circle is :",
@@ -95,15 +82,15 @@
     {
       "id": "pyq_u11_mcq_7666d2d78a",
       "source_paper": "chapter_wise_pyq",
-      "question": "A piece of wire 20 cm long is bent into the form of an arc of a circle of is :",
+      "question": "A piece of wire 20 cm long is bent into an arc of a circle of radius 60/π cm. The angle subtended at the centre is",
       "options": [
-        "300",
-        "600",
-        "900",
-        "500"
+        "30°",
+        "60°",
+        "90°",
+        "50°"
       ],
       "answer": 1,
-      "explanation": "60°"
+      "explanation": "Arc length 20 = (θ/360) × 2π × (60/π), so θ = 60°."
     }
   ],
   "assertion_reason": [
@@ -180,7 +167,7 @@
       "id": "pyq_u11_w_ee52dfc136",
       "source_paper": "chapter_wise_pyq",
       "marks": 3,
-      "question": "In figure, are shown two arcs PAQ and PBQ. Arc PAQ is a part of circle with centre O and radius OP while arc PBQ is a semicircle drawn on PQ as diameter with centre M. If OP = PQ = 10 cm, show that area of shaded region is 25(√3- π /6)cm²",
+      "question": "Arc PAQ is part of a circle with centre O and radius OP. Arc PBQ is a semicircle drawn on PQ as diameter, with centre M. OP = PQ = 10 cm. Show that the area of the shaded region between the two arcs is 25(√3 − π/6) cm².",
       "model_answer": "OP = OQ = 10 cm PQ = 10 cm So, ΔOPQ is an equilateral triangle ∠POQ = 60° Area of segment PAQM = Area of sector OPAQ – Area of ΔOPQ =60/360 x π x 10 x 10-√3/4 x 10 x 10 =(100π/6-100√3/4)cm² Area of semicircle =1/2 x π x 5 x 5 = 25/2π cm² Area of the shaded region =25/2π-(100π/6-100√3/4)=25π/2-50π/3+25√3 =75π-100π/6+25√3=25√3-25π/6 =25(√3-π/6)cm²",
       "rubric": [
         "Correct method",
@@ -292,37 +279,28 @@
       ]
     },
     {
-      "id": "pyq_u11_w_d6a01f7ee6",
-      "source_paper": "chapter_wise_pyq",
-      "marks": 4,
-      "question": "In figure, APB and AQO are semicircle, and AO = OB. If the perimeter of the figure is 40 cm, find the area of the shaded region.",
-      "model_answer": "Let r be the radius of the semicircle APB, i.e. OB = OA = r, then r/2 is the radius of the semicircle AQO.",
-      "rubric": [
-        "Correct method",
-        "Accurate final result"
-      ]
-    },
-    {
       "id": "pyq_u11_w_bfb16aa582",
       "source_paper": "most_repeated_pyq",
       "marks": 4,
-      "question": "A round table cover has six equal designs as shown in the given figure. If the radius of the cover is 28 cm, find the cost of making the designs at the rate of Rs. 0.35 per cm2?",
-      "model_answer": "Designs are equal ⇒ chords are equal and equal chords subtend equal angles at the centre.  Angles at the centre  All the angles of OAB are of 60°. (Angles opposite to the equal sides are equal.)  OAB is an equilateral triangle. Area of one design = (S ) ( ) √ =, =[ - ] Area of 6 such designs = Cost of making such designs at the rate of R . = Rs.",
+      "question": "A round table cover of radius 28 cm has six equal designs. Each design is the segment of the circle standing on one side of a regular hexagon. Find the cost of making the designs at Rs 0.35 per cm². Use π = 22/7.",
+      "model_answer": "Each sector has a central angle of 60°. Its area is 1232/3 cm², and the equilateral triangle inside it has area 196√3 cm². Six designs have area 2464 − 1176√3 cm². The cost is Rs (862.4 − 411.6√3).",
       "rubric": [
         "Correct method",
         "Accurate final result"
-      ]
+      ],
+      "explanation": "Each sector has a central angle of 60°. Its area is 1232/3 cm², and the equilateral triangle inside it has area 196√3 cm². Six designs have area 2464 − 1176√3 cm². The cost is Rs (862.4 − 411.6√3)."
     },
     {
       "id": "pyq_u11_w_e92b558072",
       "source_paper": "most_repeated_pyq",
       "marks": 4,
-      "question": "In the given figure, ABCD is a rectangle of length 10√2 cm and breadth 5√2 cm. If APB is an isosceles triangle inscribed in the semicircle with diameter AB, find the area of the shaded region?",
-      "model_answer": "Draw P ⊥ As P P so M is the mid – point of AB SO,  P √ Therefore,  ( P ) P √ √   l P ( √ )   So, area of the shaded region =  l , - gl",
+      "question": "ABCD is a rectangle of length 10√2 cm and breadth 5√2 cm. A semicircle is drawn on AB as diameter, and APB is the isosceles triangle inscribed in that semicircle. The shaded region is the part of the semicircle outside the triangle. Find its area.",
+      "model_answer": "The radius of the semicircle is 5√2 cm, so its area is 25π cm². The triangle has base 10√2 cm and height 5√2 cm, so its area is 50 cm². The shaded area is 25π − 50 cm².",
       "rubric": [
         "Correct method",
         "Accurate final result"
-      ]
+      ],
+      "explanation": "The radius of the semicircle is 5√2 cm, so its area is 25π cm². The triangle has base 10√2 cm and height 5√2 cm, so its area is 50 cm². The shaded area is 25π − 50 cm²."
     }
   ]
 }

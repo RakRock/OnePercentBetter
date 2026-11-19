@@ -56,15 +56,15 @@
     {
       "id": "pyq_u12_mcq_0ce38192d6",
       "source_paper": "chapter_wise_pyq",
-      "question": "Two wooden solid hemispheres of same radii r, are joined at a point, as shown in the figure. The total surface area of the object is :",
+      "question": "Two solid wooden hemispheres of radius r are joined at a single point. The total surface area of the object is",
       "options": [
-        "4r2",
-        "6r2",
-        "3 2",
-        "5r2"
+        "4πr^2",
+        "6πr^2",
+        "3πr^2",
+        "5πr^2"
       ],
       "answer": 1,
-      "explanation": "6r2"
+      "explanation": "Each hemisphere has curved area 2πr^2 and base area πr^2. Joining them at a point hides nothing, so the total is 2 × 3πr^2 = 6πr^2."
     },
     {
       "id": "pyq_u12_mcq_82d7f40833",
@@ -82,20 +82,20 @@
     {
       "id": "pyq_u12_mcq_3228760362",
       "source_paper": "math_objective_pyq",
-      "question": "In the adjoining figure, OABC is a square of side 7 cm. OAC is a quadrant of a circle with O as centre. The area of the shaded region is",
+      "question": "OABC is a square of side 7 cm. OAC is a quadrant of the circle with centre O. The area of the part of the square outside the quadrant is",
       "options": [
-        ". cm 10 5 2",
-        ". cm 38 5 2",
-        "cm 49 2",
-        ". cm 11 5 2"
+        "10.5 cm²",
+        "38.5 cm²",
+        "49 cm²",
+        "11.5 cm²"
       ],
       "answer": 0,
-      "explanation": "Areas Related to Circles s Re lated to Circ Required area"
+      "explanation": "The square has area 49 cm². The quadrant has area (1/4)×(22/7)×49 = 38.5 cm². The remaining area is 10.5 cm²."
     },
     {
       "id": "pyq_u12_mcq_c8b276843c",
       "source_paper": "math_objective_pyq",
-      "question": "A sector is cut from a circular sheet of radius 100 cm, the angle of the sector being 240c. If another circle of the area same as the sector is formed, then radius of the new circle is",
+      "question": "A sector of angle 240° is cut from a circular sheet of radius 100 cm. A new circle is formed with the same area as the sector. The radius of the new circle is",
       "options": [
         "79.5 cm",
         "81.5 cm",
@@ -103,46 +103,46 @@
         "88.5 cm"
       ],
       "answer": 1,
-      "explanation": "Area of sector Let r be the radius of the new circle, then"
+      "explanation": "The sector is 2/3 of the original circle, so πr^2 = (2/3)π × 100^2 and r is about 81.5 cm."
     },
     {
       "id": "pyq_u12_mcq_62e239e5bb",
       "source_paper": "math_objective_pyq",
-      "question": "If a circular grass lawn of 35 m in radius has a path 7 m wide running around it on the outside, then the area of the path is",
+      "question": "A circular lawn of radius 35 m has a path 7 m wide running around it on the outside. The area of the path is",
       "options": [
-        "m 1450 2",
-        "m 1576 2",
-        "m 1694 2",
-        "m 3368 2"
+        "1450 m²",
+        "1576 m²",
+        "1694 m²",
+        "3368 m²"
       ],
       "answer": 2,
-      "explanation": "Radius of outer concentric circle,"
+      "explanation": "The outer radius is 42 m. The area is π(42^2 − 35^2) = (22/7)×539 = 1694 m²."
     },
     {
       "id": "pyq_u12_mcq_92990bbe3f",
       "source_paper": "math_objective_pyq",
-      "question": "If the area of a semi-circular field is 15400 sq m, then perimeter of the field is",
+      "question": "The area of a semicircular field is 15400 m². Its perimeter is",
       "options": [
-        "m 160 2",
-        "m 260 2",
-        "m 360 2",
-        "m 460 2"
+        "160√2 m",
+        "260√2 m",
+        "360√2 m",
+        "460√2 m"
       ],
       "answer": 2,
-      "explanation": "Let the radius of the field be r . Thus, perimeter of the field"
+      "explanation": "With π = 22/7, the radius is 70√2 m. The perimeter is the curved edge plus the diameter, which is 360√2 m."
     },
     {
       "id": "pyq_u12_mcq_87d5d46b1f",
       "source_paper": "math_objective_pyq",
-      "question": "The area of the circle that can be inscribed in a square of side 6 cm is",
+      "question": "The area of the circle inscribed in a square of side 6 cm is",
       "options": [
-        "cm 36 2 π",
-        "1 cm 8 2 π",
-        "1 cm 2 2 π",
-        "9 cm2 π"
+        "36π cm²",
+        "18π cm²",
+        "12π cm²",
+        "9π cm²"
       ],
       "answer": 3,
-      "explanation": "side of square Diameter of circle is equal to the side of square. Diameter of a circle, Radius of a circle, Area of circle,"
+      "explanation": "The diameter is 6 cm, so the radius is 3 cm and the area is 9π cm²."
     },
     {
       "id": "pyq_u12_mcq_46f2a6b724",
@@ -160,20 +160,20 @@
     {
       "id": "pyq_u12_mcq_f96f32a3f9",
       "source_paper": "math_objective_pyq",
-      "question": "A race track is in the form of a ring whose inner and outer circumference are 437 m and 503 m respectively. The area of the track is",
+      "question": "A ring-shaped track has inner circumference 437 m and outer circumference 503 m. The area of the track is",
       "options": [
-        "66 sq. cm.",
-        "4935 sq. cm.",
-        "9870 sq. cm",
-        "None of these"
+        "66 m²",
+        "4935 m²",
+        "9870 m²",
+        "none of these"
       ],
       "answer": 1,
-      "explanation": "Option (B) is correct."
+      "explanation": "The area is π(R^2 − r^2) = (503^2 − 437^2)/(4π). With π = 22/7 this is 4935 m²."
     },
     {
       "id": "pyq_u12_mcq_90ccc2a7d9",
       "source_paper": "math_objective_pyq",
-      "question": "In the given figure, OACB is a quadrant of a circle of radius 7 cm. The perimeter of the quadrant is",
+      "question": "OACB is a quadrant of a circle of radius 7 cm. The perimeter of the quadrant is",
       "options": [
         "11 cm",
         "18 cm",
@@ -181,7 +181,7 @@
         "36 cm"
       ],
       "answer": 2,
-      "explanation": "Option (C) is correct."
+      "explanation": "The two radii add 14 cm and the curved part is a quarter of the circumference, 11 cm. The perimeter is 25 cm."
     },
     {
       "id": "pyq_u12_mcq_48a021a3e6",
@@ -227,117 +227,91 @@
       "source_paper": "math_objective_pyq",
       "question": "The area of a circular path of uniform width d surrounding a circular region of radius r is",
       "options": [
-        "( ) d r d 2 π +",
-        "r d r 2 π + ^",
-        "d r r π + ^ h",
-        "d r d π + ^ h"
+        "πd(2r + d)",
+        "πr(2r + d)",
+        "πd(r + d)",
+        "π(r + d)"
       ],
       "answer": 0,
-      "explanation": "Option (A) is correct."
+      "explanation": "The area is π((r + d)^2 − r^2) = πd(2r + d)."
     },
     {
       "id": "pyq_u12_mcq_ee0e894f9c",
       "source_paper": "math_objective_pyq",
-      "question": "It is proposed to build a single circular park equal in area to the sum of areas of two circular parks of diameters m 16 and m 12 in a locality. The radius of the new park would be",
+      "question": "A new circular park has area equal to the combined area of two circular parks of diameters 16 m and 12 m. The radius of the new park is",
       "options": [
-        "m 10",
-        "m 15",
-        "m 20",
-        "m 24"
+        "10 m",
+        "15 m",
+        "20 m",
+        "24 m"
       ],
       "answer": 0,
-      "explanation": "Option (A) is correct."
+      "explanation": "The areas add to π(8^2 + 6^2) = 100π, so the new radius is 10 m."
     },
     {
       "id": "pyq_u12_mcq_300aaf4607",
       "source_paper": "math_objective_pyq",
-      "question": "The area of the square that can be inscribed in a circle of radius cm 8 is",
+      "question": "The area of the square inscribed in a circle of radius 8 cm is",
       "options": [
-        "cm 256 2",
-        "cm 128 2",
-        "cm 64 2 2",
-        "cm 64 2"
+        "256 cm²",
+        "128 cm²",
+        "64√2 cm²",
+        "64 cm²"
       ],
       "answer": 1,
-      "explanation": "Radius of circle, Diameter of the circle, AC which is equal to the diagonal of a square. Let side of square be x . In right angled Area of square, Alternate Method : Radius of circle, Diameter of circle, Since, square inscribed in circle. Diagonal of square = Diameter of circle Now, Area of square"
+      "explanation": "The diagonal of the square is the diameter, 16 cm. Its area is (diagonal^2)/2 = 128 cm²."
     },
     {
       "id": "pyq_u12_mcq_00f8c5f963",
       "source_paper": "math_objective_pyq",
-      "question": "The radius of a circle whose circumference is equal to the sum of the circumferences of the two circles of diameters cm 36 and cm 20 is",
+      "question": "A circle has circumference equal to the sum of the circumferences of two circles of diameters 36 cm and 20 cm. Its radius is",
       "options": [
-        "cm 56",
-        "cm 42",
-        "cm 28",
-        "cm 16"
+        "56 cm",
+        "42 cm",
+        "28 cm",
+        "16 cm"
       ],
       "answer": 2,
-      "explanation": "Option (C) is correct."
+      "explanation": "The diameters add to 56 cm, so the new diameter is 56 cm and the radius is 28 cm."
     },
     {
       "id": "pyq_u12_mcq_9e5c5595dc",
       "source_paper": "math_objective_pyq",
-      "question": "The diameter of a circle whose area is equal to the sum of the areas of the two circles of radii cm 24 and cm 7 is",
+      "question": "A circle has area equal to the sum of the areas of two circles of radii 24 cm and 7 cm. Its diameter is",
       "options": [
-        "cm 31",
-        "cm 25",
-        "cm 62",
-        "cm 50"
+        "31 cm",
+        "25 cm",
+        "62 cm",
+        "50 cm"
       ],
       "answer": 3,
-      "explanation": "Option (D) is correct."
-    },
-    {
-      "id": "pyq_u12_mcq_418d7c29c6",
-      "source_paper": "math_objective_pyq",
-      "question": "Reas on : Area of the circle with radius r is r2 π .",
-      "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
-      ],
-      "answer": 1,
-      "explanation": "Area of the sector Both assertion (A) and reason (R) are true but reason (R) is not the correct explanation of assertion (A)."
+      "explanation": "The areas add to π(24^2 + 7^2) = 625π, so the radius is 25 cm and the diameter is 50 cm."
     },
     {
       "id": "pyq_u12_mcq_30c7005a47",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : If the circumference of a circle is 176 cm, then its radius is 28 cm. Reas on : Circumference radius 2 # π =",
+      "question": "Assertion: If the circumference of a circle is 176 cm, then its radius is 28 cm. Reason: The circumference of a circle is 2πr.",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 0,
-      "explanation": "Both assertion and reason are correct. Also Reason is the correct explanation of the assertion."
+      "explanation": "2 × (22/7) × r = 176 gives r = 28. The reason is the formula used."
     },
     {
       "id": "pyq_u12_mcq_461185dc37",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : If the outer and inner diameter of a circular path is 10 m and 6 m then area of the path is m 16 2 π . Reas on : If R and r be the radius of outer and inner circular path, then area of path is R r 2 2 π − ^ h.",
+      "question": "Assertion: A circular path has outer diameter 10 m and inner diameter 6 m, so its area is 16π m². Reason: If R and r are the outer and inner radii, the area of the path is π(R^2 − r^2).",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 0,
-      "explanation": "Area of the path Both assertion (A) and reason (R) are true and reason (R) is the correct explanation of assertion (A)."
-    },
-    {
-      "id": "pyq_u12_mcq_af295b5d6a",
-      "source_paper": "math_objective_pyq",
-      "question": "Reas on : Circumference of the circle = length of the wire.",
-      "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
-      ],
-      "answer": 3,
-      "explanation": "Area of the circle Assertion is not correct, but reason is true."
+      "explanation": "The radii are 5 m and 3 m. π(25 − 9) = 16π. The reason is the formula used."
     }
   ],
   "assertion_reason": [
@@ -712,17 +686,6 @@
       "marks": 3,
       "question": "From a solid cylinder of height 14 cm and base diameter 7 cm, two equal conical holes each of radius 2.1 cm and height 4 cm are cut off. Find the volume of the remaining solid",
       "model_answer": "Cylinder: Height, H = 14 cm; Diameter = 7 cm; Radius, R = 7/2 cm Cone: height, h = 4 cm; radius, r = 2.1 cm Volume of remaining solid = Volume of cylinder – Volume of 2 cones = πR²H – 2 x 1/3πr² =22/7×7/2×7/2×14-2×1/3×22/7×2.1×2.1×4 = 539 – 36.96 = 502.04 cm³",
-      "rubric": [
-        "Correct method",
-        "Accurate final result"
-      ]
-    },
-    {
-      "id": "pyq_u12_w_a256ed1a53",
-      "source_paper": "chapter_wise_pyq",
-      "marks": 3,
-      "question": "A room is in the form of a cylinder surmounted by a hemispherical dome. The base radius of the hemisphere is half of the height of the cylindrical 5. A school is organizing a charity run to raise funds for a local hospital. The run is planned as a series of rounds around a track, with each round being 300 metres. To make the event more challenging and engaging, the organizers decide to increase the distance of each subsequent round by 50 metres. For example, the second round will be 350 metres, the third round will be 400 metres and so on. The total number of rounds planned is 10. Based on the information given above, answer the following questions : (i) Write the fourth, fifth and sixth term of the Arithmetic Progression so formed. (ii) Determine the distance of the 8th round. (iii) (a) Find the total distance run after completing all 10 rounds. OR (iii) (b) If a runner completes only the first 6 rounds, what is the total distance run by the runner ?",
-      "model_answer": "Let r is the radius of hemisphere and cylinder and h is the height of cylinder h = 2r",
       "rubric": [
         "Correct method",
         "Accurate final result"

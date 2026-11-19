@@ -95,7 +95,7 @@
     {
       "id": "pyq_u07_mcq_9584a2776d",
       "source_paper": "math_objective_pyq",
-      "question": "If the point P (6, 2) divides the line segment joining ( , ) A 6 5 and ( , ) B y 4 in the ratio : 3 1 then the value of y is",
+      "question": "P(6, 2) divides the segment joining A(6, 5) and B(6, y) in the ratio 3:1. The value of y is",
       "options": [
         "4",
         "3",
@@ -103,25 +103,25 @@
         "1"
       ],
       "answer": 3,
-      "explanation": "As per given information in question we have drawn the figure below,"
+      "explanation": "(3y + 5)/4 = 2, so y = 1."
     },
     {
       "id": "pyq_u07_mcq_a34802bdcb",
       "source_paper": "math_objective_pyq",
-      "question": "If the points ( , ) a 0 , ( , ) b 0 and (1, 1) are collinear, then a b 1 1 + equals",
+      "question": "The points (a, 0), (0, b) and (1, 1) are collinear. Then 1/a + 1/b equals",
       "options": [
         "1",
         "2",
         "0",
-        "1 -"
+        "−1"
       ],
       "answer": 0,
-      "explanation": "Let the given points are A B C are collinear."
+      "explanation": "The line through (a, 0) and (0, b) is x/a + y/b = 1. It passes through (1, 1), so 1/a + 1/b = 1."
     },
     {
       "id": "pyq_u07_mcq_86d51755fb",
       "source_paper": "math_objective_pyq",
-      "question": "If the points ( , ) A 4 3 and ( , ) B x 5 are on the circle with centre ( , ) O 2 3 , then the value of x is",
+      "question": "A(4, 3) and B(x, 5) lie on the circle with centre O(2, 3). The value of x is",
       "options": [
         "0",
         "1",
@@ -129,7 +129,7 @@
         "3"
       ],
       "answer": 2,
-      "explanation": "Since, A and B lie on the circle having centre O."
+      "explanation": "OA = 2. Then (x − 2)^2 + (5 − 3)^2 = 4, so x = 2."
     },
     {
       "id": "pyq_u07_mcq_362a13f42b",
@@ -160,28 +160,15 @@
     {
       "id": "pyq_u07_mcq_92eabac8ec",
       "source_paper": "math_objective_pyq",
-      "question": "C is the mid-point of PQ, if P is ( , ) x 4 , C is ( , ) y 1 - and Q is ( , ) 2 4 - , then x and y respectively are",
+      "question": "C is the midpoint of PQ. P is (4, x), C is (y, −1) and Q is (−2, 4). Then x and y are",
       "options": [
-        "6 - and 1",
-        "6 - and 2",
-        "6 and 1 -",
-        "6 and 2 -"
+        "−6 and 1",
+        "−6 and 2",
+        "6 and −1",
+        "6 and −2"
       ],
       "answer": 0,
-      "explanation": "Option (A) is correct."
-    },
-    {
-      "id": "pyq_u07_mcq_d9a3291a4c",
-      "source_paper": "math_objective_pyq",
-      "question": "If x y k 2 0 − + = is a median of the triangle whose vertices are at points ( , ) A 1 3 - , ( , ) B 0 4 and ( , ), C 5 2 - then the value of k is",
-      "options": [
-        "2",
-        "4",
-        "6",
-        "8"
-      ],
-      "answer": 3,
-      "explanation": "Coordinate of the centroid G of Since, G lies on the median, x satisfy the equation,"
+      "explanation": "(x + 4)/2 = −1 gives x = −6. (4 + (−2))/2 = 1, so y = 1."
     },
     {
       "id": "pyq_u07_mcq_5eea771ea2",
@@ -199,7 +186,7 @@
     {
       "id": "pyq_u07_mcq_e89a62161c",
       "source_paper": "math_objective_pyq",
-      "question": "The distance of the point , P 2 3 ^ h from the x -axis is",
+      "question": "The distance of P(2, 3) from the x-axis is",
       "options": [
         "2",
         "3",
@@ -207,12 +194,12 @@
         "5"
       ],
       "answer": 1,
-      "explanation": "We know that, if h is any point on the cartesian plane in first quadrant, then x is perpendicular distance from y-axis and y is perpendicular distance Distance of the point h from the x -axis is 3."
+      "explanation": "The distance from the x-axis is the absolute value of the y-coordinate, which is 3."
     },
     {
       "id": "pyq_u07_mcq_10ae3f4332",
       "source_paper": "math_objective_pyq",
-      "question": "The distance between the points , A 0 6 ^ h and , B 0 2 - ^ h is",
+      "question": "The distance between A(0, 6) and B(0, −2) is",
       "options": [
         "6",
         "8",
@@ -220,46 +207,46 @@
         "2"
       ],
       "answer": 1,
-      "explanation": "Distance between the points Distance between"
+      "explanation": "The points are on the y-axis. The distance is 6 − (−2) = 8."
     },
     {
       "id": "pyq_u07_mcq_b9971a6924",
       "source_paper": "math_objective_pyq",
-      "question": "The distance of the point , P 6 8 - ^ h from the origin is",
+      "question": "The distance of P(−6, 8) from the origin is",
       "options": [
         "8",
-        "2 7",
+        "2√7",
         "10",
         "6"
       ],
       "answer": 2,
-      "explanation": "Distance between the points h and origin is given Distance between h and origin is,"
+      "explanation": "The distance is √(36 + 64) = √100 = 10."
     },
     {
       "id": "pyq_u07_mcq_56af2dfb98",
       "source_paper": "math_objective_pyq",
-      "question": "The distance between the points (0, 5) and ,5 0 - ^ h is",
+      "question": "The distance between (0, 5) and (−5, 0) is",
       "options": [
         "5",
-        "5 2",
-        "2 5",
+        "5√2",
+        "2√5",
         "10"
       ],
       "answer": 1,
-      "explanation": "Distance between the points Distance between the points (0, 5) and"
+      "explanation": "The distance is √(25 + 25) = √50 = 5√2."
     },
     {
       "id": "pyq_u07_mcq_a5f68b1cbc",
       "source_paper": "math_objective_pyq",
-      "question": "If AOBC is a rectangle whose three vertices are , A 0 3 ^ h, , O 0 0 ^ h and , B 5 0 ^ h, then the length of its diagonal is",
+      "question": "AOBC is a rectangle with A(0, 3), O(0, 0) and B(5, 0). The length of diagonal AB is",
       "options": [
         "5",
         "3",
-        "34",
+        "√34",
         "4"
       ],
       "answer": 2,
-      "explanation": "Length of the diagonal is AB which is the distance between the points Distance between the points Distance between the points Hence, the required length of its diagonal is"
+      "explanation": "AB = √(5^2 + 3^2) = √34."
     },
     {
       "id": "pyq_u07_mcq_87b3b2f79f",
@@ -269,36 +256,36 @@
         "5",
         "12",
         "11",
-        "7 5 +"
+        "7 + √5"
       ],
       "answer": 1,
-      "explanation": "Now, perimeter of is the sum of the length of Hence, the required perimeter of triangle is 12. However you can calculate perimeter direct from"
+      "explanation": "The side lengths are 4, 3 and 5. The perimeter is 12."
     },
     {
       "id": "pyq_u07_mcq_68c51b8c1c",
       "source_paper": "math_objective_pyq",
-      "question": "If , P 4 a 3 ` j is the mid-point of the line segment joining the points , Q 6 5 - ^ h and , R 2 3 - ^ h, then the value of a is",
+      "question": "P(a/3, 4) is the midpoint of Q(−6, 5) and R(−2, 3). The value of a is",
       "options": [
-        "4 -",
-        "12 -",
+        "−4",
+        "−12",
         "12",
-        "6 -"
+        "−6"
       ],
       "answer": 1,
-      "explanation": "j is the mid-point of the points"
+      "explanation": "The midpoint is (−4, 4). So a/3 = −4 and a = −12."
     },
     {
       "id": "pyq_u07_mcq_e337ff9537",
       "source_paper": "math_objective_pyq",
-      "question": "If the distance between the points , p 4 ^ h and (1, 0) is 5, then the value of p is",
+      "question": "The distance between (4, p) and (1, 0) is 5. The value of p is",
       "options": [
         "4 only",
-        "4 !",
-        "4 - only",
+        "4 or −4",
+        "−4 only",
         "0"
       ],
       "answer": 1,
-      "explanation": "According to the question, the distance between the Squaring both the sides, we get, Hence, the required value of p is"
+      "explanation": "(4 − 1)^2 + p^2 = 25 gives p^2 = 16, so p = 4 or p = −4."
     }
   ],
   "assertion_reason": [

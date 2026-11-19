@@ -64,7 +64,7 @@
         "25.8"
       ],
       "answer": 1,
-      "explanation": "Option (B) is correct."
+      "explanation": "Mode = 3 median − 2 mean. Then 29 = 3×26 − 2×mean, so the mean is 24.5."
     },
     {
       "id": "pyq_u14_mcq_35fa5404b5",
@@ -95,7 +95,7 @@
     {
       "id": "pyq_u14_mcq_f873a089ef",
       "source_paper": "math_objective_pyq",
-      "question": "Consider the following frequency distribution of the heights of 60 students of a class Height (in cm) 150- 155 155- 160 160- 165 165- 170 170- 175 175- 180 Number of students 15 13 10 8 9 5 The upper limit of the median class in the given data is",
+      "question": "The heights of 60 students are grouped as 150–155, 155–160, 160–165, 165–170, 170–175 and 175–180 cm, with frequencies 15, 13, 10, 8, 9 and 5. The upper limit of the median class is",
       "options": [
         "165",
         "155",
@@ -103,7 +103,7 @@
         "170"
       ],
       "answer": 0,
-      "explanation": "We prepare the following cumulative table The cumulative frequency just greater than N and the corresponding class is 160-165. Thus upper"
+      "explanation": "N/2 = 30. The cumulative frequencies are 15, 28, 38, so the median class is 160–165. Its upper limit is 165."
     },
     {
       "id": "pyq_u14_mcq_a6ead36a4c",
@@ -121,7 +121,7 @@
     {
       "id": "pyq_u14_mcq_66a76b90e0",
       "source_paper": "math_objective_pyq",
-      "question": "If the mean of the numbers x 27 + , ,x 31 + x 89 + ,x x 107 156 + + is 82, then the mean of ,x 130 + ,x 126 + ,x 68 + ,x 50 + and x 1 + is",
+      "question": "The mean of 27 + x, 31 + x, 89 + x, 107 + x and 156 + x is 82. The mean of 130 + x, 126 + x, 68 + x, 50 + x and 1 + x is",
       "options": [
         "75",
         "157",
@@ -129,7 +129,7 @@
         "80"
       ],
       "answer": 0,
-      "explanation": "Option (A) is correct."
+      "explanation": "The first mean is x + 82, so x = 0. The second mean is then 75."
     },
     {
       "id": "pyq_u14_mcq_2e0a1ef8d7",
@@ -186,7 +186,7 @@
     {
       "id": "pyq_u14_mcq_de7e79a0b4",
       "source_paper": "math_objective_pyq",
-      "question": "The mean and median of the data a, b and c are 50 and 35 respectively, where a b c < < . If c a 55 − = , then ( ) b a - is",
+      "question": "The mean and median of a, b and c are 50 and 35, with a < b < c. If c − a = 55, then b − a is",
       "options": [
         "8",
         "7",
@@ -194,12 +194,12 @@
         "5"
       ],
       "answer": 3,
-      "explanation": "Since, a, b and c and are in ascending order, therefore median is b i.e b Also, it is given that Subtracting equation (2) and (1), we get"
+      "explanation": "The median is b = 35, and a + c = 115. With c − a = 55, a = 30 and b − a = 5."
     },
     {
       "id": "pyq_u14_mcq_d4197de912",
       "source_paper": "math_objective_pyq",
-      "question": "Observations of some data are x 5 , x , x 3 , x 3 2 , x 4 , x 5 2 and x 4 3 where x > 0. If the median of the data is 4, then the value of x is",
+      "question": "The observations x/5, x, x/3, 2x/3, x/4, 2x/5 and 3x/4, with x > 0, have median 4. The value of x is",
       "options": [
         "5",
         "15",
@@ -207,12 +207,12 @@
         "10"
       ],
       "answer": 3,
-      "explanation": "where x > 0. On arranging the above observations in ascending order, we get Given observations are x Here, total number of observations are 7, which is l observation l observation"
+      "explanation": "In increasing order the fourth value is 2x/5. Set 2x/5 = 4 to get x = 10."
     },
     {
       "id": "pyq_u14_mcq_a19d10511a",
       "source_paper": "math_objective_pyq",
-      "question": "Mode of the following grouped frequency distribution is Class Frequency 3-6 2 6-9 5 9-12 10 12-15 23 15-18 21 18-21 12 21-24 03",
+      "question": "The classes 3–6, 6–9, 9–12, 12–15, 15–18, 18–21 and 21–24 have frequencies 2, 5, 10, 23, 21, 12 and 3. The mode is",
       "options": [
         "13.6",
         "15.6",
@@ -220,7 +220,7 @@
         "16.6"
       ],
       "answer": 2,
-      "explanation": "We observe that the class 12-15 has maximum frequency 23. Therefore, this is the modal class."
+      "explanation": "The modal class is 12–15. Mode = 12 + (23 − 10)/(46 − 10 − 21) × 3 = 14.6."
     },
     {
       "id": "pyq_u14_mcq_236ddc5b75",
@@ -290,7 +290,7 @@
     {
       "id": "pyq_u14_mcq_b566ea9e8c",
       "source_paper": "math_objective_pyq",
-      "question": "A student noted the number of cars passing through a spot on a road for 100 periods each of 3 min and summarised in the table give below. Number of cars Frequency 0-10 7 10-20 14 20-30 13 30-40 12 40-50 20 50-60 11 60-70 15 70-80 08 Then, the mode of the data is",
+      "question": "The number of cars in 100 periods of 3 minutes is grouped as 0–10, 10–20, 20–30, 30–40, 40–50, 50–60, 60–70 and 70–80, with frequencies 7, 14, 13, 12, 20, 11, 15 and 8. The mode is",
       "options": [
         "34.7",
         "44.7",
@@ -298,7 +298,7 @@
         "64.7"
       ],
       "answer": 1,
-      "explanation": "Here, modal class is 40-50. Since, it has maximum frequency which is 20."
+      "explanation": "The modal class is 40–50. Mode = 40 + (20 − 12)/(40 − 12 − 11) × 10 = 44.7."
     },
     {
       "id": "pyq_u14_mcq_1ee4d84ba7",
@@ -329,28 +329,28 @@
     {
       "id": "pyq_u14_mcq_00dcb6e727",
       "source_paper": "math_objective_pyq",
-      "question": "If xi’s are the mid-points of the class intervals of grouped data, fi’s are the corresponding frequencies and x is the mean, then ( ) f x x i i - / is equal to",
+      "question": "In grouped data, xi is a class mark, fi is its frequency and x̄ is the mean. Then the sum of fi(xi − x̄) is",
       "options": [
         "0",
-        "1 -",
+        "−1",
         "1",
         "2"
       ],
       "answer": 0,
-      "explanation": "Option (A) is correct."
+      "explanation": "The positive and negative deviations from the mean cancel, so the sum is 0."
     },
     {
       "id": "pyq_u14_mcq_c3e0a2d438",
       "source_paper": "math_objective_pyq",
-      "question": "In the formula x a h f f u i mean of grouped frequency distribution, ui is equal to",
+      "question": "In the step-deviation formula for the mean, ui equals",
       "options": [
-        "h x a i +",
-        "( h x a i -",
-        "h x a i -",
-        "h a xi -"
+        "(xi + a)/h",
+        "(a − xi)/h",
+        "(xi − a)/h",
+        "(a − h)/xi"
       ],
       "answer": 2,
-      "explanation": "Option (C) is correct."
+      "explanation": "The step-deviation of a class mark is ui = (xi − a)/h."
     },
     {
       "id": "pyq_u14_mcq_9e1d4d4c6e",
@@ -368,7 +368,7 @@
     {
       "id": "pyq_u14_mcq_a637a09571",
       "source_paper": "math_objective_pyq",
-      "question": "Consider the following frequency distribution Class 0-5 6-11 12-17 18-23 24-29 Frequency 13 10 15 8 11 The upper limit of the median class is",
+      "question": "The classes 0–5, 6–11, 12–17, 18–23 and 24–29 have frequencies 13, 10, 15, 8 and 11. After the classes are made continuous, the upper limit of the median class is",
       "options": [
         "17",
         "17.5",
@@ -376,7 +376,7 @@
         "18.5"
       ],
       "answer": 1,
-      "explanation": "Given, classes are not continuous, so we make continuous by subtracting 0.5 from lower limit and adding 0.5 to upper limit of each class. Cumulative frequency , which lies in the interval . Hence, the upper limit is 17.5."
+      "explanation": "The continuous classes end at 5.5, 11.5, 17.5, 23.5 and 29.5. N/2 = 28.5 falls in 11.5–17.5, so the upper limit is 17.5."
     },
     {
       "id": "pyq_u14_mcq_849d1ffb4e",
@@ -394,7 +394,7 @@
     {
       "id": "pyq_u14_mcq_d8272a7d1c",
       "source_paper": "math_objective_pyq",
-      "question": "Consider the data: Class 65- 85 85- 105 105- 125 125- 145 145- 165 165- 185 185- 205 Frequency 4 5 13 20 14 7 4 The difference of the upper limit of the median class and the lower limit of the modal class is",
+      "question": "The classes 65–85, 85–105, 105–125, 125–145, 145–165, 165–185 and 185–205 have frequencies 4, 5, 13, 20, 14, 7 and 4. The difference between the upper limit of the median class and the lower limit of the modal class is",
       "options": [
         "0",
         "19",
@@ -402,25 +402,12 @@
         "38"
       ],
       "answer": 2,
-      "explanation": "Cumulative frequency , which lies in the interval . Hence, upper limit of median class is 145. Here, we see that the highest frequency is 20 which lies in 125-145. Hence, the lower limit of modal class Required difference = Upper limit of median class - Lower limit of modal class"
-    },
-    {
-      "id": "pyq_u14_mcq_15bc5dccb7",
-      "source_paper": "math_objective_pyq",
-      "question": "8-15 20 The number of athletes who completed the race in less than 14.6 second is :",
-      "options": [
-        "11",
-        "71",
-        "82",
-        "130"
-      ],
-      "answer": 2,
-      "explanation": "The number of athletes who completed the race in"
+      "explanation": "N/2 falls in 125–145, and that class also has the highest frequency. The difference of its upper and lower limits is 145 − 125 = 20."
     },
     {
       "id": "pyq_u14_mcq_2377d7aa2f",
       "source_paper": "math_objective_pyq",
-      "question": "Consider the following distribution : Marks obtained Number of students More than or equal to 0 63 More than or equal to 10 58 More than or equal to 20 55 More than or equal to 30 51 More than or equal to 40 48 More than or equal to 50 42 the frequency of the class 30-40 is :",
+      "question": "The number of students with marks more than or equal to 0, 10, 20, 30, 40 and 50 are 63, 58, 55, 51, 48 and 42. The frequency of the class 30–40 is",
       "options": [
         "3",
         "4",
@@ -428,20 +415,20 @@
         "51"
       ],
       "answer": 0,
-      "explanation": "Marks obtained Number of students Hence, frequency in the class interval 30-40 is 3."
+      "explanation": "The frequency is the difference of the two cumulative counts, 51 − 48 = 3."
     },
     {
       "id": "pyq_u14_mcq_26059ffe04",
       "source_paper": "math_objective_pyq",
-      "question": "A ss ertion : If the number of runs scored by 11 players of a cricket team of India are 5, 19, 42, 11, 50, 30, 21, 0, 52, 36, 27 then median is 30. 2 1 th = + b l value, if n is odd. Reas on : Median n",
+      "question": "Assertion: The scores 5, 19, 42, 11, 50, 30, 21, 0, 52, 36, 27 have median 30. Reason: If the number of observations is odd, the median is the ((n + 1)/2)th value after arranging them in order.",
       "options": [
-        "is false but reason (R) is true.",
-        "Both assertion",
-        "Assertion",
-        "Assertion"
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
       ],
       "answer": 3,
-      "explanation": "Arranging the terms in ascending order, Assertion (A) is false but reason (R) is true."
+      "explanation": "In order, the 6th of the 11 scores is 27, not 30. The reason states the correct rule."
     }
   ],
   "assertion_reason": [
@@ -1146,7 +1133,7 @@
       "id": "b30_prob_la_cards",
       "source_paper": "30/1/1 (NCERT Ex 14.1 style)",
       "marks": 5,
-      "question": "One card drawn from well-shuffled deck. Find probability of (i) red king (ii) face card (iii) not an ace.",
+      "question": "One card is drawn from a well-shuffled deck of 52 cards. Find the probability that it is a red king, a face card, and not an ace.",
       "model_answer": "(i) 2/52 (ii) 12/52 = 3/13 (iii) 1 − 4/52.",
       "rubric": [
         "Each part correct",
@@ -1214,12 +1201,13 @@
       "id": "pyq_u14_w_d8abbed3d7",
       "source_paper": "chapter_wise_pyq",
       "marks": 4,
-      "question": "In figure is shown a disc on which a player spins an arrow twice. The fraction a/b is formed, where ‘a’ is the number of sector on which arrow stops on the first and b is the numberof the sector in which the arrow stops on second spin. On each spin, each sector has equal chance of selection by the arrow. Find the probability that the a/b> 1.",
-      "model_answer": "For a/b > 1, when a = 1, b can not take any value a = 2, b can take 1 value a = 3, b can take 2 value, i.e. 1 and 2 a = 4, b can take 3 value, i.e. 1, 2, 3 a = 5, b can take 4 value, i.e. 1, 2, 3,4 a = 6, b can take 5 value, i.e. 1,2,3,4,5 Total possible outcomes = 6 x 6 = 36 Favourable outcomes = 1 + 2 + 3 + 4 + 5 = 15 2015",
+      "question": "A disc is divided into 6 equal sectors numbered 1, 2, 3, 4, 5 and 6. A player spins an arrow twice. The fraction a/b uses the first stop as a and the second stop as b. Every sector is equally likely on each spin. Find the probability that a/b > 1.",
+      "model_answer": "There are 6 × 6 = 36 equally likely outcomes. The favourable pairs are the 1 + 2 + 3 + 4 + 5 cases in which a is greater than b. The probability is 15/36, which is 5/12.",
       "rubric": [
         "Correct method",
         "Accurate final result"
-      ]
+      ],
+      "explanation": "There are 6 × 6 = 36 equally likely outcomes. The favourable pairs are the 1 + 2 + 3 + 4 + 5 cases in which a is greater than b. The probability is 15/36, which is 5/12."
     },
     {
       "id": "pyq_u14_w_531bf86678",
