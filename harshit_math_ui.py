@@ -285,7 +285,7 @@ def _apply_pending_nav(target_key: str, pending_key: str) -> None:
 
 
 def render_home():
-    """Math landing — PreReq (Class IX), Class X, and Number Sense."""
+    """Math landing — Class X units only."""
     hmc_ui.inject_harshit_styles()
     name = st.session_state.selected_user
 
@@ -302,34 +302,16 @@ def render_home():
     {name} — Math
   </h1>
   <p style="color:var(--hm-text-secondary,#64748B);max-width:40rem;margin:0.5rem auto;">
-    PreReq foundations and Class X NCERT units.
+    Class X NCERT units.
   </p>
 </div>
 """,
         unsafe_allow_html=True,
     )
 
-    st.markdown("### Choose a track")
-    col1, col2, col3 = st.columns(3, gap="large")
-    with col1:
-        st.markdown(
-            """
-<div style="background:var(--hm-bg-surface,#fff);border:1px solid var(--hm-border-subtle,#D8DEE6);
-     border-radius:8px;padding:1.35rem;margin-bottom:0.75rem;min-height:9rem;border-top:4px solid #6366f1;">
-  <div style="font-size:1.75rem;margin-bottom:0.35rem;">📚</div>
-  <div style="font-weight:600;color:var(--hm-text-primary);">PreReq</div>
-  <div style="color:var(--hm-text-secondary);font-size:0.88rem;margin-top:0.35rem;">
-    Class IX · 6 buckets · week setup & practice
-  </div>
-</div>
-""",
-            unsafe_allow_html=True,
-        )
-        if st.button("Open PreReq", key="hm_open_prereq", use_container_width=True, type="primary"):
-            _open_class9_home()
-            st.rerun()
-
-    with col2:
+    st.markdown("### Class X")
+    _, col, _ = st.columns([1, 2, 1], gap="large")
+    with col:
         st.markdown(
             f"""
 <div style="background:var(--hm-bg-surface,#fff);border:1px solid var(--hm-border-subtle,#D8DEE6);
@@ -345,24 +327,6 @@ def render_home():
         )
         if st.button("Open Class X", key="hm_open_class10", use_container_width=True, type="primary"):
             _open_class10_home()
-            st.rerun()
-
-    with col3:
-        st.markdown(
-            """
-<div style="background:var(--hm-bg-surface,#fff);border:1px solid var(--hm-border-subtle,#D8DEE6);
-     border-radius:8px;padding:1.35rem;margin-bottom:0.75rem;min-height:9rem;border-top:4px solid #94a3b8;">
-  <div style="font-size:1.75rem;margin-bottom:0.35rem;">🔢</div>
-  <div style="font-weight:600;color:var(--hm-text-primary);">Number Sense</div>
-  <div style="color:var(--hm-text-secondary);font-size:0.88rem;margin-top:0.35rem;">
-    10-day visual bootcamp
-  </div>
-</div>
-""",
-            unsafe_allow_html=True,
-        )
-        if st.button("Open Number Sense", key="hm_open_ns", use_container_width=True):
-            _open_number_sense_home()
             st.rerun()
 
 

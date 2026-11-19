@@ -98,7 +98,7 @@ def _start_practice(unit_id: int) -> None:
 
     if not questions:
         st.session_state[_ss_key(unit_id, "error")] = grok_error or (
-            "Configure topics and difficulty in Week Setup."
+            "Could not build a practice set for this chapter."
         )
         return
 
@@ -417,14 +417,6 @@ def render_setup_panel(unit_id: int) -> None:
 
 
 def render_practice_home(unit_id: int) -> None:
-    import harshit_class10_unit_notes as h10un
-
-    if h10un.unit_guide_available(unit_id):
-        st.info(
-            "📘 **New here?** Open the **Notes** tab above first — "
-            "revision sheet and formulas for this chapter are there."
-        )
-
     config = ensure_week_config(unit_id)
     err = st.session_state.pop(_ss_key(unit_id, "error"), None)
     warn = st.session_state.pop(_ss_key(unit_id, "warn"), None)
@@ -440,7 +432,7 @@ def render_practice_home(unit_id: int) -> None:
         st.warning(h10q.bank_status_message(unit_id))
 
     if not config.get("topics"):
-        st.info("No weekly plan yet. Open **Week Setup** to choose topics, difficulty, and xAI.")
+        st.info("Practice for this chapter is not ready yet.")
         return
 
     if config.get("week_label"):
@@ -452,38 +444,23 @@ def render_practice_home(unit_id: int) -> None:
             st.markdown(f"- {line.strip().lstrip('•').strip()}")
 
     st.markdown("### Practice session")
-    col_practice, col_ncert = st.columns(2)
-    with col_practice:
-        if config.get("include_board_pyq", True):
-            st.caption(
-                f"10 previous-year questions · {h10pyq.pattern_summary(unit_id)}. "
-                "1-mark questions are multiple choice. For 2-, 3-, and 5-mark questions, "
-                "work on paper, then type the final answer."
-            )
+    if config.get("include_board_pyq", True):
+        st.caption(
+            f"10 previous-year questions · {h10pyq.pattern_summary(unit_id)}. "
+            "1-mark questions are multiple choice. For 2-, 3-, and 5-mark questions, "
+            "work on paper, then type the final answer."
+        )
+    else:
+        xai_on = bool(config.get("use_chapter_llm", True))
+        api_key = _xai_api_key()
+        if xai_on and api_key:
+            mode = "Grok + bank fallback" if not config.get("grok_fresh_only") else "all fresh Grok"
+            st.caption(f"10 questions · {mode}")
         else:
-            xai_on = bool(config.get("use_chapter_llm", True))
-            api_key = _xai_api_key()
-            if xai_on and api_key:
-                mode = "Grok + bank fallback" if not config.get("grok_fresh_only") else "all fresh Grok"
-                st.caption(f"10 questions · {mode}")
-            else:
-                st.caption(f"10 questions · {stats['total']} bank item(s)")
-        if st.button("Start practice", key=f"hm10_start_{unit_id}", use_container_width=True, type="primary"):
-            _start_practice(unit_id)
-            st.rerun()
-    with col_ncert:
-        summary = h10ncert.pattern_summary(unit_id)
-        if summary:
-            st.caption(
-                f"NCERT exercises · {summary}. "
-                "1-mark questions are multiple choice. For 2-, 3-, and 5-mark questions, "
-                "work on paper, then type the final answer. The same set can be practiced again."
-            )
-        else:
-            st.caption("NCERT exercise questions for this chapter. The same set can be practiced again.")
-        if st.button("NCERT practice", key=f"hm10_ncert_{unit_id}", use_container_width=True):
-            _start_ncert_practice(unit_id)
-            st.rerun()
+            st.caption(f"10 questions · {stats['total']} bank item(s)")
+    if st.button("Start practice", key=f"hm10_start_{unit_id}", type="primary"):
+        _start_practice(unit_id)
+        st.rerun()
 
 
 def render_ncert_home(unit_id: int) -> None:
@@ -508,10 +485,6 @@ def render_ncert_home(unit_id: int) -> None:
 
 
 def render_unit_home(unit_id: int) -> None:
-    import harshit_class10_unit_notes as h10un
-    import harshit_class10_unit_notes_ui as h10ung_ui
-    import harshit_class10_unit_test_ui as h10ut_ui
-
     hmc_ui.inject_harshit_styles()
     unit = h10u.get_unit(unit_id)
     if not unit:
@@ -527,45 +500,8 @@ def render_unit_home(unit_id: int) -> None:
             st.rerun()
 
     _render_unit_header(unit_id, unit)
-
-    section_key = f"hm10_unit_section_{unit_id}"
-    has_guide = h10un.unit_guide_available(unit_id)
-    section_options = ["🎯 Practice", "📗 NCERT Practice", "📝 Unit Test", "📅 Week Setup"]
-    if has_guide:
-        section_options = ["📘 Notes"] + section_options
-
-    guide_ver_key = f"hm10_guide_version_{unit_id}"
-    if has_guide:
-        expected_ver = h10un.guide_version(unit_id)
-        if st.session_state.get(guide_ver_key) != expected_ver:
-            st.session_state[guide_ver_key] = expected_ver
-            st.session_state[section_key] = "📘 Notes"
-
-    if section_key not in st.session_state:
-        st.session_state[section_key] = "📘 Notes" if has_guide else "🎯 Practice"
-    elif st.session_state[section_key] not in section_options:
-        st.session_state[section_key] = section_options[0]
-
-    section = st.radio(
-        "Section",
-        section_options,
-        horizontal=True,
-        key=section_key,
-        label_visibility="collapsed",
-    )
-
     st.markdown("---")
-
-    if section == "📘 Notes":
-        h10ung_ui.render_unit_guide(unit_id)
-    elif section == "🎯 Practice":
-        render_practice_home(unit_id)
-    elif section == "📗 NCERT Practice":
-        render_ncert_home(unit_id)
-    elif section == "📝 Unit Test":
-        h10ut_ui.render_unit_test_home(unit_id)
-    else:
-        render_setup_panel(unit_id)
+    render_practice_home(unit_id)
 
 
 def render_practice() -> None:
