@@ -136,5 +136,49 @@ class NcertPolynomialsPracticeTests(unittest.TestCase):
                 self.assertFalse(h10p.fill_in_is_correct(wrapped, "rational"))
 
 
+class NcertLinearEquationsPracticeTests(unittest.TestCase):
+    def test_unit3_has_the_mark_mix_and_checked_answers(self) -> None:
+        import importlib.util
+
+        session = h10ncert.build_session(3)
+        marks = [int(q["marks"]) for q in session]
+        self.assertEqual(marks, sorted(marks))
+        self.assertEqual(marks.count(1), 31)
+        self.assertEqual(marks.count(2), 38)
+        self.assertEqual(marks.count(3), 35)
+        self.assertEqual(marks.count(5), 7)
+        self.assertIn("5 mark", h10ncert.pattern_summary(3))
+        for question in session:
+            if question["type"] == "mcq":
+                options = question["options"]
+                self.assertEqual(len(options), 4)
+                self.assertEqual(len(set(options)), 4)
+                self.assertTrue(0 <= int(question["answer"]) < 4)
+            self.assertNotIn("accept", question)
+            self.assertNotIn("=", question.get("model_answer", ""))
+
+        spec = importlib.util.spec_from_file_location(
+            "gen_unit3",
+            ROOT / "scripts" / "_gen_unit3_ncert.py",
+        )
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        module.audit()
+
+        raw = json.loads((ROOT / "HarshitMath/class10/ncert/unit_03.json").read_text(encoding="utf-8"))
+        by_id = {q["id"]: q for q in session}
+        self.assertEqual({q["id"] for q in raw["questions"]}, set(by_id))
+        for question in raw["questions"]:
+            if question["type"] != "written":
+                continue
+            wrapped = by_id[question["id"]]
+            self.assertGreaterEqual(len(h10p.board_working_steps(wrapped)), 2)
+            self.assertTrue(
+                h10p.fill_in_is_correct(wrapped, question["accept"]),
+                h10p.expected_fill_in(wrapped),
+            )
+            self.assertNotIn("=", wrapped["model_answer"])
+
+
 if __name__ == "__main__":
     unittest.main()

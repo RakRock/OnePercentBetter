@@ -1,0 +1,1163 @@
+{
+  "meta": {
+    "unit_id": 3,
+    "chapter": "Pair of Linear Equations in Two Variables",
+    "source": "NCERT Chapter 3 exercises and All in One practice items that can be solved without a figure"
+  },
+  "questions": [
+    {
+      "id": "ncert_u3_lines_ab",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The lines x = a and y = b, with a and b different, are",
+      "options": [
+        "intersecting at (a, b)",
+        "intersecting at (b, a)",
+        "parallel",
+        "coincident"
+      ],
+      "answer": 0,
+      "explanation": "A vertical line and a horizontal line meet once, at (a, b)."
+    },
+    {
+      "id": "ncert_u3_two_axis_lines",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The pair 2x + 1 = 0 and 3y - 5 = 0 has",
+      "options": [
+        "a unique solution",
+        "two solutions",
+        "no solution",
+        "infinitely many solutions"
+      ],
+      "answer": 0,
+      "explanation": "Each equation fixes one variable, so the pair meets at one point."
+    },
+    {
+      "id": "ncert_u3_which_inconsistent",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Which pair is inconsistent?",
+      "options": [
+        "3x - y = 9 and x + y = 3",
+        "4x + 3y = 24 and -2x + 3y = 6",
+        "5x - y = 10 and 10x - 2y = 20",
+        "-2x + y = 3 and -4x + 2y = 10"
+      ],
+      "answer": 3,
+      "explanation": "In the last pair the x and y ratios match, but the constants do not."
+    },
+    {
+      "id": "ncert_u3_equal_coeff_ratios",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If a1/a2 = b1/b2 for a pair of linear equations, the pair has",
+      "options": [
+        "a unique solution",
+        "no solution",
+        "infinitely many solutions",
+        "no solution or infinitely many solutions"
+      ],
+      "answer": 3,
+      "explanation": "Equal x and y ratios mean the lines are parallel or the same line."
+    },
+    {
+      "id": "ncert_u3_ab_parallel",
+      "marks": 1,
+      "type": "mcq",
+      "question": "ax + 2y = 9 and 3x + by = 18 are parallel, with a and b integers, when",
+      "options": [
+        "a = b",
+        "3a = 2b",
+        "2a = 3b",
+        "ab = 6"
+      ],
+      "answer": 3,
+      "explanation": "The x and y ratios match when ab is 6, and that common ratio is not 1/2 for an integer a."
+    },
+    {
+      "id": "ncert_u3_k_minus5",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The value of k for which 3x - ky = 7 and 6x + 10y = 3 is inconsistent is",
+      "options": [
+        "-10",
+        "-5",
+        "5",
+        "7"
+      ],
+      "answer": 1,
+      "explanation": "The x ratio is 1/2, so -k/10 is 1/2 and k is -5. The constants do not match."
+    },
+    {
+      "id": "ncert_u3_k_four_fifths",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The value of k for which 5x + 2y - 7 = 0 and 2x + ky + 1 = 0 has no solution is",
+      "options": [
+        "4/5",
+        "-4/5",
+        "5/4",
+        "2"
+      ],
+      "answer": 0,
+      "explanation": "5/2 equals 2/k when k is 4/5, and that ratio is not the constant ratio."
+    },
+    {
+      "id": "ncert_u3_parallel_second",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A line parallel to 3x - 2y = 5 is",
+      "options": [
+        "9x + 8y = 7",
+        "-12x - 8y = 7",
+        "-12x + 8y = 7",
+        "12x + 8y = 7"
+      ],
+      "answer": 2,
+      "explanation": "-12x + 8y = 7 has the same slope 3/2 and a different intercept."
+    },
+    {
+      "id": "ncert_u3_k_minus6",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The value of k for which 3x - 7y = 1 and kx + 14y = 6 is inconsistent is",
+      "options": [
+        "-6",
+        "-3",
+        "6",
+        "2"
+      ],
+      "answer": 0,
+      "explanation": "The y ratio is -1/2, so 3/k is -1/2 and k is -6."
+    },
+    {
+      "id": "ncert_u3_solution_a_b",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The solution of x + y = a + b and ax - by = a^2 - b^2 is",
+      "options": [
+        "x = b, y = a",
+        "x = -a, y = b",
+        "x = a, y = b",
+        "x = a, y = -b"
+      ],
+      "answer": 2,
+      "explanation": "x is a and y is b satisfy both equations."
+    },
+    {
+      "id": "ncert_u3_32_33",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The solution of 32x + 33y = 34 and 33x + 32y = 31 is",
+      "options": [
+        "-1 and 2",
+        "-1 and 4",
+        "1 and -2",
+        "-1 and -4"
+      ],
+      "answer": 0,
+      "explanation": "Adding gives x + y is 1, and subtracting gives x - y is -3."
+    },
+    {
+      "id": "ncert_u3_two_digit_ratio",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The ratio of a two-digit number to the sum of its digits is 7 : 1. How many such numbers are there?",
+      "options": [
+        "1",
+        "4",
+        "9",
+        "infinitely many"
+      ],
+      "answer": 1,
+      "explanation": "The tens digit is twice the units digit, which gives 21, 42, 63 and 84."
+    },
+    {
+      "id": "ncert_u3_ar_parallel",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: x + 2y - 4 = 0 and 2x + 4y - 12 = 0 are parallel. Reason: If a1/a2 = b1/b2 and this is not equal to c1/c2, the lines are parallel and the pair has no solution.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 0,
+      "explanation": "Both coefficient ratios are 1/2 and the constant ratio is 1/3, so the reason explains the assertion."
+    },
+    {
+      "id": "ncert_u3_ar_not_parallel",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: 2x + y = 6 and 2x - y + 2 = 0 are parallel. Reason: When k = 1, 5x + ky = 4 and 15x + 3y = 12 have infinitely many solutions.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 3,
+      "explanation": "The y coefficients are 1 and -1, so the lines meet. The reason is a true statement about a different pair."
+    },
+    {
+      "id": "ncert_u3_ar_intersect",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: 3x + 2y = 12 and 5x - 4y = 10 intersect. Reason: The graphs intersect when a1/a2 is not equal to b1/b2.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 0,
+      "explanation": "3/5 is not equal to 2/(-4), so the reason explains the assertion."
+    },
+    {
+      "id": "ncert_u3_ar_k3_false",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: kx - y = 2 and 6x - 2y = 3 have a unique solution when k = 3. Reason: ax + by + c = 0 and dx + ey + f = 0 have a unique solution when a/d is not equal to b/e.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 3,
+      "explanation": "k = 3 makes the coefficient ratios equal and the constants unequal, so there is no solution. The reason is true."
+    },
+    {
+      "id": "ncert_u3_ar_infinite",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Assertion: 9x + 3y + 12 = 0 and 18x + 6y + 24 = 0 have infinitely many solutions. Reason: The pair has infinitely many solutions when a1/a2 = b1/b2 = c1/c2.",
+      "options": [
+        "Both Assertion and Reason are true, and Reason explains Assertion.",
+        "Both Assertion and Reason are true, and Reason does not explain Assertion.",
+        "Assertion is true and Reason is false.",
+        "Assertion is false and Reason is true."
+      ],
+      "answer": 0,
+      "explanation": "Every ratio is 1/2, so the reason explains the assertion."
+    },
+    {
+      "id": "ncert_u3_zero_solutions",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The number of solutions of x + 2y + 5 = 0 and -3x - 6y + 1 = 0 is",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "infinitely many"
+      ],
+      "answer": 0,
+      "explanation": "The coefficient ratios are both -1/3, but the constants are not in that ratio."
+    },
+    {
+      "id": "ncert_u3_class_intersect",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The lines 5x - 4y + 8 = 0 and 7x + 6y - 9 = 0",
+      "options": [
+        "intersect at one point",
+        "are parallel",
+        "are coincident",
+        "cannot be compared"
+      ],
+      "answer": 0,
+      "explanation": "5/7 is not equal to -4/6, so there is one intersection."
+    },
+    {
+      "id": "ncert_u3_class_parallel",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The lines 6x - 3y + 10 = 0 and 2x - y + 9 = 0",
+      "options": [
+        "intersect at one point",
+        "are parallel",
+        "are coincident",
+        "cannot be compared"
+      ],
+      "answer": 1,
+      "explanation": "Both coefficient ratios are 3, and 10/9 is not 3."
+    },
+    {
+      "id": "ncert_u3_class_coincident",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The lines 9x + 3y + 12 = 0 and 18x + 6y + 24 = 0",
+      "options": [
+        "intersect at one point",
+        "are parallel",
+        "are coincident",
+        "cannot be compared"
+      ],
+      "answer": 2,
+      "explanation": "The second equation is twice the first."
+    },
+    {
+      "id": "ncert_u3_x_minus_y",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If 2x + y = 13 and 4x - y = 17, then x - y is",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "8"
+      ],
+      "answer": 0,
+      "explanation": "Adding gives x is 5 and y is 3, so x - y is 2."
+    },
+    {
+      "id": "ncert_u3_a3_b1",
+      "marks": 1,
+      "type": "mcq",
+      "question": "If x = a and y = b solve x - y = 2 and x + y = 4, then a and b are",
+      "options": [
+        "3 and 1",
+        "2 and 4",
+        "4 and 2",
+        "1 and 3"
+      ],
+      "answer": 0,
+      "explanation": "Adding gives 2a is 6, so a is 3 and b is 1."
+    },
+    {
+      "id": "ncert_u3_lambda_1",
+      "marks": 1,
+      "type": "mcq",
+      "question": "5x + λy = 4 and 15x + 3y = 12 have infinitely many solutions when λ is",
+      "options": [
+        "1",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 0,
+      "explanation": "All three ratios equal 1/3 when λ is 1."
+    },
+    {
+      "id": "ncert_u3_k_is_2",
+      "marks": 1,
+      "type": "mcq",
+      "question": "3x + y = 3 and 6x + ky = 8 have no solution when k is",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "The x ratio is 1/2, so k is 2, and 3/8 is not 1/2."
+    },
+    {
+      "id": "ncert_u3_chairs_algebra",
+      "marks": 1,
+      "type": "mcq",
+      "question": "3 chairs and 4 tables cost Rs 900. 5 chairs and 3 tables cost Rs 2100. If a chair costs Rs x and a table costs Rs y, the equations are",
+      "options": [
+        "3x + 4y = 900 and 5x + 3y = 2100",
+        "3x + y = 900 and 5x + 3y = 2100",
+        "4x + 3y = 900 and 3x + 5y = 2100",
+        "3x + 4y = 2100 and 5x + 3y = 900"
+      ],
+      "answer": 0,
+      "explanation": "The chair count multiplies x and the table count multiplies y."
+    },
+    {
+      "id": "ncert_u3_fare_120",
+      "marks": 1,
+      "type": "mcq",
+      "question": "A taxi has a fixed charge of Rs 20 and then Rs 10 per km. The fare for 10 km is",
+      "options": [
+        "Rs 100",
+        "Rs 120",
+        "Rs 200",
+        "Rs 220"
+      ],
+      "answer": 1,
+      "explanation": "20 plus 10 times 10 is 120."
+    },
+    {
+      "id": "ncert_u3_paths_parallel",
+      "marks": 1,
+      "type": "mcq",
+      "question": "The paths 7x - 5y = 3 and 21x - 15y = 5",
+      "options": [
+        "cross once",
+        "do not cross",
+        "are the same path",
+        "cross twice"
+      ],
+      "answer": 1,
+      "explanation": "Both coefficient ratios are 1/3, and 3/5 is not 1/3."
+    },
+    {
+      "id": "ncert_u3_k_infinite_7",
+      "marks": 1,
+      "type": "mcq",
+      "question": "2x + 3y = 7 and (k - 1)x + (k + 2)y = 3k have infinitely many solutions when k is",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "The three ratios are equal only when k is 7."
+    },
+    {
+      "id": "ncert_u3_p_parallel",
+      "marks": 1,
+      "type": "mcq",
+      "question": "-x + py = 1 and px - y = 1 represent parallel lines when p is",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "explanation": "p is 1 makes the coefficient ratios equal to -1, which is not the constant ratio. p is -1 makes the lines the same."
+    },
+    {
+      "id": "ncert_u3_parallel_to_5_8",
+      "marks": 1,
+      "type": "mcq",
+      "question": "Which line is parallel to 5x + 8y = 20?",
+      "options": [
+        "10x + 16y = 40",
+        "10x + 16y = 1",
+        "x + y = 1",
+        "5x - 8y = 20"
+      ],
+      "answer": 1,
+      "explanation": "10x + 16y = 40 is the same line. 10x + 16y = 1 has the same slope and a different intercept."
+    },
+    {
+      "id": "ncert_u3_xy_4_1",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve 2x + y = 9 and x - 2y = 2.",
+      "model_answer": "Eliminate one variable from the pair. x is 4 and y is 1. 4 and 1.",
+      "explanation": "4 and 1.",
+      "accept": "4 and 1"
+    },
+    {
+      "id": "ncert_u3_xy_3_4",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve x - y = -1 and 2x + y = 10.",
+      "model_answer": "Eliminate one variable from the pair. x is 3 and y is 4. 3 and 4.",
+      "explanation": "3 and 4.",
+      "accept": "3 and 4"
+    },
+    {
+      "id": "ncert_u3_xy_2_2",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve x + 2y = 6 and 3x - 2y = 2.",
+      "model_answer": "Eliminate one variable from the pair. x is 2 and y is 2. 2 and 2.",
+      "explanation": "2 and 2.",
+      "accept": "2 and 2"
+    },
+    {
+      "id": "ncert_u3_xy_2_3",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve x - y + 1 = 0 and 3x + 2y - 12 = 0.",
+      "model_answer": "Eliminate one variable from the pair. x is 2 and y is 3. 2 and 3.",
+      "explanation": "2 and 3.",
+      "accept": "2 and 3"
+    },
+    {
+      "id": "ncert_u3_xy_3_4b",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve 4x - y - 8 = 0 and 2x - 3y + 6 = 0.",
+      "model_answer": "Eliminate one variable from the pair. x is 3 and y is 4. 3 and 4.",
+      "explanation": "3 and 4.",
+      "accept": "3 and 4"
+    },
+    {
+      "id": "ncert_u3_xy_0_0",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve 2x - y = 0 and x + y = 0.",
+      "model_answer": "Eliminate one variable from the pair. x is 0 and y is 0. 0 and 0.",
+      "explanation": "0 and 0.",
+      "accept": "0 and 0"
+    },
+    {
+      "id": "ncert_u3_xy_5_3",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve x + y = 8 and 2x - 3y = 1.",
+      "model_answer": "Eliminate one variable from the pair. x is 5 and y is 3. 5 and 3.",
+      "explanation": "5 and 3.",
+      "accept": "5 and 3"
+    },
+    {
+      "id": "ncert_u3_xy_28_12",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve x + y = 8 and 2x - 3y = 4.",
+      "model_answer": "Eliminate one variable from the pair. x is 28/5 and y is 12/5. 28/5 and 12/5.",
+      "explanation": "28/5 and 12/5.",
+      "accept": "28/5 and 12/5"
+    },
+    {
+      "id": "ncert_u3_xy_2_m1",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve 3x - 4y = 10 and x + y = 1.",
+      "model_answer": "Eliminate one variable from the pair. x is 2 and y is -1. 2 and -1.",
+      "explanation": "2 and -1.",
+      "accept": "2 and -1"
+    },
+    {
+      "id": "ncert_u3_xy_4_18",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve y = 3x + 6 and 2y - 4x = 20.",
+      "model_answer": "Eliminate one variable from the pair. x is 4 and y is 18. 4 and 18.",
+      "explanation": "4 and 18.",
+      "accept": "4 and 18"
+    },
+    {
+      "id": "ncert_u3_xy_2_3b",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve 0.2x + 0.3y = 1.3 and 0.4x + 0.5y = 2.3.",
+      "model_answer": "Eliminate one variable from the pair. x is 2 and y is 3. 2 and 3.",
+      "explanation": "2 and 3.",
+      "accept": "2 and 3"
+    },
+    {
+      "id": "ncert_u3_xy_m3_7",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve 8x + 5y = 11 and x + y = 4.",
+      "model_answer": "Eliminate one variable from the pair. x is -3 and y is 7. -3 and 7.",
+      "explanation": "-3 and 7.",
+      "accept": "-3 and 7"
+    },
+    {
+      "id": "ncert_u3_xy_4_1b",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve x - y = 3 and 3x - 2y = 10.",
+      "model_answer": "Eliminate one variable from the pair. x is 4 and y is 1. 4 and 1.",
+      "explanation": "4 and 1.",
+      "accept": "4 and 1"
+    },
+    {
+      "id": "ncert_u3_xy_2_1",
+      "marks": 3,
+      "type": "written",
+      "question": "Solve 62x + 43y = 167 and 43x + 62y = 148.",
+      "model_answer": "Eliminate one variable from the pair. x is 2 and y is 1. 2 and 1.",
+      "explanation": "2 and 1.",
+      "accept": "2 and 1"
+    },
+    {
+      "id": "ncert_u3_xy_1_2",
+      "marks": 3,
+      "type": "written",
+      "question": "Solve 117x + 231y = 579 and 231x + 117y = 465.",
+      "model_answer": "Eliminate one variable from the pair. x is 1 and y is 2. 1 and 2.",
+      "explanation": "1 and 2.",
+      "accept": "1 and 2"
+    },
+    {
+      "id": "ncert_u3_xy_3_m1",
+      "marks": 3,
+      "type": "written",
+      "question": "Solve 23x - 29y = 98 and 29x - 23y = 110.",
+      "model_answer": "Eliminate one variable from the pair. x is 3 and y is -1. 3 and -1.",
+      "explanation": "3 and -1.",
+      "accept": "3 and -1"
+    },
+    {
+      "id": "ncert_u3_xy_19_6",
+      "marks": 3,
+      "type": "written",
+      "question": "Solve x + y = 5 and 2x - 3y = 4.",
+      "model_answer": "Eliminate one variable from the pair. x is 19/5 and y is 6/5. 19/5 and 6/5.",
+      "explanation": "19/5 and 6/5.",
+      "accept": "19/5 and 6/5"
+    },
+    {
+      "id": "ncert_u3_xy_2_1c",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve 3x + 4y = 10 and x - y = 1.",
+      "model_answer": "Eliminate one variable from the pair. x is 2 and y is 1. 2 and 1.",
+      "explanation": "2 and 1.",
+      "accept": "2 and 1"
+    },
+    {
+      "id": "ncert_u3_xy_9_m5",
+      "marks": 3,
+      "type": "written",
+      "question": "Solve 3x - 5y = 4 and 9x - 2y = 7.",
+      "model_answer": "Eliminate one variable from the pair. x is 9/13 and y is -5/13. 9/13 and -5/13.",
+      "explanation": "9/13 and -5/13.",
+      "accept": "9/13 and -5/13"
+    },
+    {
+      "id": "ncert_u3_xy_2_m3",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve x/2 + 2y/3 = -1 and x - y/3 = 3.",
+      "model_answer": "Eliminate one variable from the pair. x is 2 and y is -3. 2 and -3.",
+      "explanation": "2 and -3.",
+      "accept": "2 and -3"
+    },
+    {
+      "id": "ncert_u3_xy_2_3c",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve 0.4x + 0.3y = 1.7 and 0.7x - 0.2y = 0.8.",
+      "model_answer": "Eliminate one variable from the pair. x is 2 and y is 3. 2 and 3.",
+      "explanation": "2 and 3.",
+      "accept": "2 and 3"
+    },
+    {
+      "id": "ncert_u3_xy_18_m1",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve x - 2y = 20 and x + y = 17.",
+      "model_answer": "Eliminate one variable from the pair. x is 18 and y is -1. 18 and -1.",
+      "explanation": "18 and -1.",
+      "accept": "18 and -1"
+    },
+    {
+      "id": "ncert_u3_xy_3_m5",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve 3x + y = 4 and 5x + 2y = 5.",
+      "model_answer": "Eliminate one variable from the pair. x is 3 and y is -5. 3 and -5.",
+      "explanation": "3 and -5.",
+      "accept": "3 and -5"
+    },
+    {
+      "id": "ncert_u3_xy_1_1",
+      "marks": 3,
+      "type": "written",
+      "question": "Solve 7x - 2y = 5 and 8x + 7y = 15.",
+      "model_answer": "Eliminate one variable from the pair. x is 1 and y is 1. 1 and 1.",
+      "explanation": "1 and 1.",
+      "accept": "1 and 1"
+    },
+    {
+      "id": "ncert_u3_xy_1_m4",
+      "marks": 2,
+      "type": "written",
+      "question": "Solve x - 2y = 3 and 3x - 3y = 5.",
+      "model_answer": "Eliminate one variable from the pair. x is 1/3 and y is -4/3. 1/3 and -4/3.",
+      "explanation": "1/3 and -4/3.",
+      "accept": "1/3 and -4/3"
+    },
+    {
+      "id": "ncert_u3_no_10_30",
+      "marks": 2,
+      "type": "written",
+      "question": "How many solutions do 3x + 2y = 10 and 12x + 8y = 30 have?",
+      "model_answer": "The second equation has x and y coefficients four times the first, but 40 is not 30. The pair has no solution.",
+      "explanation": "The pair has no solution.",
+      "accept": "The pair has no solution"
+    },
+    {
+      "id": "ncert_u3_infinite_same",
+      "marks": 2,
+      "type": "written",
+      "question": "How many solutions do 3x - y = 3 and 9x - 3y = 9 have?",
+      "model_answer": "The second equation is three times the first. The pair has infinitely many solutions.",
+      "explanation": "The pair has infinitely many solutions.",
+      "accept": "The pair has infinitely many solutions"
+    },
+    {
+      "id": "ncert_u3_inconsistent_3_5",
+      "marks": 2,
+      "type": "written",
+      "question": "Are 3x - 5y = 11 and 6x - 10y = 7 consistent?",
+      "model_answer": "Both coefficient ratios are 1/2, but 11/7 is not 1/2. No, the pair is inconsistent.",
+      "explanation": "No, the pair is inconsistent.",
+      "accept": "No, the pair is inconsistent"
+    },
+    {
+      "id": "ncert_u3_coincident_6_3",
+      "marks": 2,
+      "type": "written",
+      "question": "Are 6x - 3y = 12 and 2x - y = 4 coincident?",
+      "model_answer": "The first equation is three times the second. Yes, the lines are coincident.",
+      "explanation": "Yes, the lines are coincident.",
+      "accept": "Yes, the lines are coincident"
+    },
+    {
+      "id": "ncert_u3_k_not_unique_6",
+      "marks": 2,
+      "type": "written",
+      "question": "For which k do kx + 2y = 5 and 3x + y = 1 not have a unique solution?",
+      "model_answer": "The coefficient ratios are equal when k/3 is 2. k is 6.",
+      "explanation": "k is 6.",
+      "accept": "k is 6"
+    },
+    {
+      "id": "ncert_u3_k_none_12",
+      "marks": 2,
+      "type": "written",
+      "question": "Find k so that 4x + 5y = 17 and kx + 15y = 33 has no solution.",
+      "model_answer": "The y ratio is 1/3, so 4/k is 1/3, and the constant ratio is not 1/3. k is 12.",
+      "explanation": "k is 12.",
+      "accept": "k is 12"
+    },
+    {
+      "id": "ncert_u3_k_none_2",
+      "marks": 2,
+      "type": "written",
+      "question": "Find k so that 2x + ky = 8 and x + y = 6 has no solution.",
+      "model_answer": "The x ratio is 2, so k is 2, and 8/6 is not 2. k is 2.",
+      "explanation": "k is 2.",
+      "accept": "k is 2"
+    },
+    {
+      "id": "ncert_u3_k_none_pm4",
+      "marks": 3,
+      "type": "written",
+      "question": "Find the values of k for which kx + 2y = 5 and 8x + ky = 20 has no solution.",
+      "model_answer": "The coefficient ratios match when k squared is 16. For both 4 and -4, the constant ratio is different. k is 4 or -4.",
+      "explanation": "k is 4 or -4.",
+      "accept": "k is 4 or -4"
+    },
+    {
+      "id": "ncert_u3_k_none_pair_2",
+      "marks": 2,
+      "type": "written",
+      "question": "Find k so that 3x + y = 4 and (2k - 1)x + (k - 1)y = 2k + 1 has no solution.",
+      "model_answer": "3/(2k - 1) equals 1/(k - 1) when k is 2, and the constants are not in that ratio. k is 2.",
+      "explanation": "k is 2.",
+      "accept": "k is 2"
+    },
+    {
+      "id": "ncert_u3_k_infinite_m10",
+      "marks": 2,
+      "type": "written",
+      "question": "Find k so that 3x - y - 5 = 0 and 6x - 2y + k = 0 has infinitely many solutions.",
+      "model_answer": "The x and y ratios are already equal to 1/2, so the constant ratio -5/k must be 1/2. k is -10.",
+      "explanation": "k is -10.",
+      "accept": "k is -10"
+    },
+    {
+      "id": "ncert_u3_k_infinite_10",
+      "marks": 2,
+      "type": "written",
+      "question": "Find k so that 4x + 7y = 10 and (k + 2)x + 21y = 3k has infinitely many solutions.",
+      "model_answer": "7/21 is 1/3, so 4/(k + 2) and 10/(3k) are both 1/3. k is 10.",
+      "explanation": "k is 10.",
+      "accept": "k is 10"
+    },
+    {
+      "id": "ncert_u3_k_infinite_4",
+      "marks": 2,
+      "type": "written",
+      "question": "Find k so that x + 2y + 7 = 0 and 2x + ky + 14 = 0 has infinitely many solutions.",
+      "model_answer": "1/2, 2/k and 7/14 are equal when k is 4. k is 4.",
+      "explanation": "k is 4.",
+      "accept": "k is 4"
+    },
+    {
+      "id": "ncert_u3_k_infinite_5",
+      "marks": 2,
+      "type": "written",
+      "question": "Find k so that 2x + (k - 2)y = k and 6x + (2k - 1)y = 2k + 5 has infinitely many solutions.",
+      "model_answer": "The x ratio is 1/3, so k - 2 over 2k - 1 is 1/3 and k over 2k + 5 is 1/3. k is 5.",
+      "explanation": "k is 5.",
+      "accept": "k is 5"
+    },
+    {
+      "id": "ncert_u3_k_infinite_4b",
+      "marks": 3,
+      "type": "written",
+      "question": "Find k so that 2x + 3y = 2 and (k + 2)x + (2k + 1)y = 2(k - 1) has infinitely many solutions.",
+      "model_answer": "2/(k + 2), 3/(2k + 1) and 1/(k - 1) are equal when k is 4. k is 4.",
+      "explanation": "k is 4.",
+      "accept": "k is 4"
+    },
+    {
+      "id": "ncert_u3_k_infinite_2c",
+      "marks": 3,
+      "type": "written",
+      "question": "Find k so that x + (k + 1)y = 5 and (k + 1)x + 9y = 8k - 1 has infinitely many solutions.",
+      "model_answer": "(k + 1) squared is 9, and only k is 2 also matches the constant ratio 1/3. k is 2.",
+      "explanation": "k is 2.",
+      "accept": "k is 2"
+    },
+    {
+      "id": "ncert_u3_pq_17_11",
+      "marks": 3,
+      "type": "written",
+      "question": "Find p and q so that (2p - 1)x + 3y = 5 and 3x + (q - 1)y = 2 has infinitely many solutions.",
+      "model_answer": "Every ratio must equal 5/2. p is 17/4 and q is 11/5.",
+      "explanation": "p is 17/4 and q is 11/5.",
+      "accept": "p is 17/4 and q is 11/5"
+    },
+    {
+      "id": "ncert_u3_pq_5_1",
+      "marks": 2,
+      "type": "written",
+      "question": "Find p and q so that 2x + 3y = 7 and (p + q)x + (2p - q)y = 21 has infinitely many solutions.",
+      "model_answer": "The constant ratio is 1/3, so p + q is 6 and 2p - q is 9. p is 5 and q is 1.",
+      "explanation": "p is 5 and q is 1.",
+      "accept": "p is 5 and q is 1"
+    },
+    {
+      "id": "ncert_u3_k_parallel_m6",
+      "marks": 2,
+      "type": "written",
+      "question": "Find k so that kx + 3y = 3 and 12x + ky = 6 are parallel.",
+      "model_answer": "k/12 equals 3/k when k is 6 or -6. k is 6 makes the lines the same. k is -6.",
+      "explanation": "k is -6.",
+      "accept": "k is -6"
+    },
+    {
+      "id": "ncert_u3_k_three_cases",
+      "marks": 3,
+      "type": "written",
+      "question": "For x + 2y = 3 and 5x + ky + 7 = 0, find k for intersecting lines, for parallel lines, and say whether the lines can be coincident.",
+      "model_answer": "The lines meet whenever 1/5 is not equal to 2/k, that is whenever k is not 10. They are parallel when k is 10, because the constant ratio is not 1/5. They are never coincident, and they are parallel when k is 10.",
+      "explanation": "They are never coincident, and they are parallel when k is 10.",
+      "accept": "They are never coincident, and they are parallel when k is 10"
+    },
+    {
+      "id": "ncert_u3_boys_girls",
+      "marks": 2,
+      "type": "written",
+      "question": "10 students took part in a quiz. The number of girls is 4 more than the number of boys. How many boys and how many girls took part?",
+      "model_answer": "Let the numbers be b and g. Then b + g is 10 and g is b + 4. 2b + 4 is 10. 3 boys and 7 girls.",
+      "explanation": "3 boys and 7 girls.",
+      "accept": "3 boys and 7 girls"
+    },
+    {
+      "id": "ncert_u3_pencil_pen",
+      "marks": 3,
+      "type": "written",
+      "question": "5 pencils and 7 pens cost Rs 50. 7 pencils and 5 pens cost Rs 46. Find the cost of one pencil and one pen.",
+      "model_answer": "5p + 7n is 50 and 7p + 5n is 46. Clearing one variable gives 24p is 72. A pencil costs Rs 3 and a pen costs Rs 5.",
+      "explanation": "A pencil costs Rs 3 and a pen costs Rs 5.",
+      "accept": "A pencil costs Rs 3 and a pen costs Rs 5"
+    },
+    {
+      "id": "ncert_u3_chair_table_small",
+      "marks": 3,
+      "type": "written",
+      "question": "4 chairs and 3 tables cost Rs 210. 5 chairs and 2 tables cost Rs 175. Find the cost of one chair and one table.",
+      "model_answer": "4c + 3t is 210 and 5c + 2t is 175. Clearing t gives 7c is 105. A chair costs Rs 15 and a table costs Rs 50.",
+      "explanation": "A chair costs Rs 15 and a table costs Rs 50.",
+      "accept": "A chair costs Rs 15 and a table costs Rs 50"
+    },
+    {
+      "id": "ncert_u3_pen_box",
+      "marks": 3,
+      "type": "written",
+      "question": "4 pens and 4 pencil boxes cost Rs 100. Three times the cost of a pen is Rs 15 more than the cost of a pencil box. Find each cost.",
+      "model_answer": "The first statement gives one pen plus one box is Rs 25. Three times the pen is the box plus 15. A pen costs Rs 10 and a pencil box costs Rs 15.",
+      "explanation": "A pen costs Rs 10 and a pencil box costs Rs 15.",
+      "accept": "A pen costs Rs 10 and a pencil box costs Rs 15"
+    },
+    {
+      "id": "ncert_u3_salim_age",
+      "marks": 3,
+      "type": "written",
+      "question": "Two years ago Salim was thrice as old as his daughter. Six years later he will be 4 years older than twice her age. How old are they now?",
+      "model_answer": "Let their present ages be s and d. Then s - 2 is 3(d - 2), and s + 6 is 2(d + 6) + 4. Subtracting the two equations gives the daughter's age. Salim is 38 years old and his daughter is 14.",
+      "explanation": "Salim is 38 years old and his daughter is 14.",
+      "accept": "Salim is 38 years old and his daughter is 14"
+    },
+    {
+      "id": "ncert_u3_ratio_numbers",
+      "marks": 3,
+      "type": "written",
+      "question": "Two numbers are in the ratio 5 : 6. If 8 is subtracted from each, the ratio becomes 4 : 5. Find the numbers.",
+      "model_answer": "Let the numbers be 5k and 6k. Then 5(5k - 8) is 4(6k - 8). k is 8. The numbers are 40 and 48.",
+      "explanation": "The numbers are 40 and 48.",
+      "accept": "The numbers are 40 and 48"
+    },
+    {
+      "id": "ncert_u3_fraction_5_12",
+      "marks": 3,
+      "type": "written",
+      "question": "A fraction becomes 1/3 when 1 is subtracted from the numerator. It becomes 1/4 when 8 is added to the denominator. Find the fraction.",
+      "model_answer": "Let the fraction be n/d. Then n - 1 over d is 1/3, and n over d + 8 is 1/4. The two equations give n is 5 and d is 12. The fraction is 5/12.",
+      "explanation": "The fraction is 5/12.",
+      "accept": "The fraction is 5/12"
+    },
+    {
+      "id": "ncert_u3_digits_48",
+      "marks": 3,
+      "type": "written",
+      "question": "The sum of the digits of a two-digit number is 12. Seven times the number equals four times the number formed by reversing the digits. Find the number.",
+      "model_answer": "Let the tens digit be t and the units digit be u. Then t + u is 12 and 7(10t + u) is 4(10u + t). The second equation simplifies to u is 2t. The number is 48.",
+      "explanation": "The number is 48.",
+      "accept": "The number is 48"
+    },
+    {
+      "id": "ncert_u3_digits_63",
+      "marks": 3,
+      "type": "written",
+      "question": "The sum of a two-digit number and the number formed by reversing its digits is 99. The tens digit is 3 more than the units digit. Find the number.",
+      "model_answer": "The sum of a number and its reverse is 11 times the sum of the digits, so the digits add to 9. The tens digit is the units digit plus 3. The number is 63.",
+      "explanation": "The number is 63.",
+      "accept": "The number is 63"
+    },
+    {
+      "id": "ncert_u3_amit_baljeet",
+      "marks": 3,
+      "type": "written",
+      "question": "Five years ago Amit was thrice as old as Baljeet. Ten years from now Amit will be twice as old as Baljeet. Find their present ages.",
+      "model_answer": "Let the present ages be a and b. Then a - 5 is 3(b - 5), and a + 10 is 2(b + 10). Subtracting gives Baljeet's present age. Amit is 50 and Baljeet is 20.",
+      "explanation": "Amit is 50 and Baljeet is 20.",
+      "accept": "Amit is 50 and Baljeet is 20"
+    },
+    {
+      "id": "ncert_u3_notes_6_8",
+      "marks": 3,
+      "type": "written",
+      "question": "Sheena withdraws Rs 1000 in Rs 100 and Rs 50 notes only, and receives 14 notes. How many notes of each kind does she receive?",
+      "model_answer": "Let the counts be h and f. Then h + f is 14 and 100h + 50f is 1000. Dividing the money equation by 50 gives 2h + f is 20. 6 notes of Rs 100 and 8 notes of Rs 50.",
+      "explanation": "6 notes of Rs 100 and 8 notes of Rs 50.",
+      "accept": "6 notes of Rs 100 and 8 notes of Rs 50"
+    },
+    {
+      "id": "ncert_u3_rectangle_40_30",
+      "marks": 5,
+      "type": "written",
+      "question": "The area of a rectangle falls by 80 square units if the length is reduced by 5 and the breadth is increased by 2. The area rises by 50 square units if the length is increased by 10 and the breadth is reduced by 5. Find the length and the breadth.",
+      "model_answer": "The two changes give 2L - 5B is -70 and -5L + 10B is 100. The second equation says L is 2B - 20. Substituting gives B is 30. The length is 40 and the breadth is 30.",
+      "explanation": "The length is 40 and the breadth is 30.",
+      "accept": "The length is 40 and the breadth is 30"
+    },
+    {
+      "id": "ncert_u3_chairs_5650",
+      "marks": 3,
+      "type": "written",
+      "question": "Two chairs and three tables cost Rs 5650. Three chairs and two tables cost Rs 7100. Find the cost of one chair and one table.",
+      "model_answer": "2c + 3t is 5650 and 3c + 2t is 7100. Clearing t gives 5c is 10000. A chair costs Rs 2000 and a table costs Rs 550.",
+      "explanation": "A chair costs Rs 2000 and a table costs Rs 550.",
+      "accept": "A chair costs Rs 2000 and a table costs Rs 550"
+    },
+    {
+      "id": "ncert_u3_sum_diff",
+      "marks": 2,
+      "type": "written",
+      "question": "The sum of two numbers is 105 and their difference is 45. Find the numbers.",
+      "model_answer": "Adding the two statements gives twice the larger number. The numbers are 75 and 30.",
+      "explanation": "The numbers are 75 and 30.",
+      "accept": "The numbers are 75 and 30"
+    },
+    {
+      "id": "ncert_u3_ajay_marriage",
+      "marks": 3,
+      "type": "written",
+      "question": "At marriage Ajay was 5 years older than his wife. Sixteen years later their ages are in the ratio 9 : 8. Find their ages at the time of marriage.",
+      "model_answer": "Let the present ages be 9k and 8k. The difference is still 5, so k is 5. Subtract 16 from each present age. Ajay was 29 and his wife was 24.",
+      "explanation": "Ajay was 29 and his wife was 24.",
+      "accept": "Ajay was 29 and his wife was 24"
+    },
+    {
+      "id": "ncert_u3_father_45",
+      "marks": 3,
+      "type": "written",
+      "question": "A father's age is 3 times the sum of the ages of his two children. After 5 years his age will be twice the sum of their ages. Find the father's present age.",
+      "model_answer": "Let the children's ages add to s. Then the father is 3s, and 3s + 5 is 2(s + 10). s is 15. The father is 45 years old.",
+      "explanation": "The father is 45 years old.",
+      "accept": "The father is 45 years old"
+    },
+    {
+      "id": "ncert_u3_halls_100_80",
+      "marks": 3,
+      "type": "written",
+      "question": "Sending 10 students from hall A to hall B makes the halls equal. Sending 20 students from B to A makes A double B. How many students are in the halls now?",
+      "model_answer": "A - 10 is B + 10, and A + 20 is 2(B - 20). The first equation says A is B + 20. Substituting gives B is 80. Hall A has 100 students and hall B has 80.",
+      "explanation": "Hall A has 100 students and hall B has 80.",
+      "accept": "Hall A has 100 students and hall B has 80"
+    },
+    {
+      "id": "ncert_u3_almonds",
+      "marks": 5,
+      "type": "written",
+      "question": "2 kg of almonds and 3 kg of raisins cost Rs 1400. 3 kg of almonds and 5 kg of raisins cost Rs 2150. Find the cost of 1 kg of each, and the cost of 1.5 kg of almonds with 2.5 kg of raisins.",
+      "model_answer": "2a + 3r is 1400 and 3a + 5r is 2150. Clearing a gives r is 100 and a is 550. Almonds cost Rs 550 per kg and raisins cost Rs 100 per kg. The mix of 1.5 kg and 2.5 kg costs Rs 1075. 550, 100 and 1075.",
+      "explanation": "550, 100 and 1075.",
+      "accept": "550, 100 and 1075"
+    },
+    {
+      "id": "ncert_u3_coaching_fees",
+      "marks": 5,
+      "type": "written",
+      "question": "Batch I has 20 poor children and 5 rich children and collects Rs 9000. Batch II has 5 poor children and 25 rich children and collects Rs 26000. Find the monthly fee for a poor child and for a rich child, the difference, and the collection from a batch of 10 poor and 20 rich children.",
+      "model_answer": "20p + 5r is 9000 and 5p + 25r is 26000. Dividing gives 4p + r is 1800 and p + 5r is 5200. A poor child pays Rs 200 and a rich child pays Rs 1000, so the difference is Rs 800. The new batch collects Rs 22000. 200, 1000, 800 and 22000.",
+      "explanation": "200, 1000, 800 and 22000.",
+      "accept": "200, 1000, 800 and 22000"
+    },
+    {
+      "id": "ncert_u3_taxi_5_10",
+      "marks": 3,
+      "type": "written",
+      "question": "A taxi fare is a fixed charge plus a charge per km. A 10 km ride costs Rs 105 and a 15 km ride costs Rs 155. Find the fixed charge and the charge per km.",
+      "model_answer": "Let the fixed charge be f and the rate be r. Then f + 10r is 105 and f + 15r is 155. Subtracting gives 5r is 50. The fixed charge is Rs 5 and the charge per km is Rs 10.",
+      "explanation": "The fixed charge is Rs 5 and the charge per km is Rs 10.",
+      "accept": "The fixed charge is Rs 5 and the charge per km is Rs 10"
+    },
+    {
+      "id": "ncert_u3_popcorn",
+      "marks": 2,
+      "type": "written",
+      "question": "Two packets of popcorn and one mango drink cost Rs 330. One packet of popcorn and two mango drinks cost Rs 300. Find the cost of one packet of popcorn.",
+      "model_answer": "2p + m is 330 and p + 2m is 300. Clearing m gives 3p is 360. One packet of popcorn costs Rs 120.",
+      "explanation": "One packet of popcorn costs Rs 120.",
+      "accept": "One packet of popcorn costs Rs 120"
+    },
+    {
+      "id": "ncert_u3_simran_ticket",
+      "marks": 3,
+      "type": "written",
+      "question": "Simran spends Rs 600 on a ticket and food. The food costs one-third of the ticket. Find the cost of the ticket and the cost of the food.",
+      "model_answer": "Let the ticket cost t. Then the food is t/3 and t + t/3 is 600. 4t/3 is 600. The ticket costs Rs 450 and the food costs Rs 150.",
+      "explanation": "The ticket costs Rs 450 and the food costs Rs 150.",
+      "accept": "The ticket costs Rs 450 and the food costs Rs 150"
+    },
+    {
+      "id": "ncert_u3_passcode_94",
+      "marks": 3,
+      "type": "written",
+      "question": "A two-digit locker code satisfies two clues. Subtracting twice the ones digit from the tens digit leaves 1. Three more than the tens digit is thrice the ones digit. Find the code.",
+      "model_answer": "Let the digits be t and u. Then t - 2u is 1 and t + 3 is 3u. Substituting t is 3u - 3 gives u is 4. The code is 94.",
+      "explanation": "The code is 94.",
+      "accept": "The code is 94"
+    },
+    {
+      "id": "ncert_u3_cars_100_80",
+      "marks": 5,
+      "type": "written",
+      "question": "Places A and B are 180 km apart. Two cars start at the same time, one from each place. Travelling in the same direction they meet after 9 hours. Travelling towards each other they meet after 1 hour. Find their speeds.",
+      "model_answer": "If the speeds are x and y, with x greater than y, then x - y is 20 and x + y is 180. Adding gives twice the faster speed. The speeds are 100 km/h and 80 km/h.",
+      "explanation": "The speeds are 100 km/h and 80 km/h.",
+      "accept": "The speeds are 100 km/h and 80 km/h"
+    },
+    {
+      "id": "ncert_u3_nidhi",
+      "marks": 5,
+      "type": "written",
+      "question": "Nidhi receives Rs 1200 interest in one year from Rs x at 6% per annum and Rs y at 5% per annum. If instead x earned 3% and y earned 8%, the interest would be Rs 1260. Find x and y.",
+      "model_answer": "6x + 5y is 120000 and 3x + 8y is 126000, in rupees after clearing the percentages. Doubling the second equation and subtracting the first gives y. x is 10000 and y is 12000.",
+      "explanation": "x is 10000 and y is 12000.",
+      "accept": "x is 10000 and y is 12000"
+    },
+    {
+      "id": "ncert_u3_marbles",
+      "marks": 5,
+      "type": "written",
+      "question": "Ananya's red, blue and yellow marbles are in the ratio 4 : 5 : 3. She gives Neha all the red marbles and some blue ones, 20 marbles in all. The blue and yellow marbles left with Ananya are in the ratio 7 : 9. How many red marbles did she give?",
+      "model_answer": "Let the original counts be 4k, 5k and 3k. She gives away 4k red marbles and 20 - 4k blue marbles. Blue left over yellow left is (9k - 20) over 3k, and that ratio is 7/9. She gave 12 red marbles.",
+      "explanation": "She gave 12 red marbles.",
+      "accept": "She gave 12 red marbles"
+    },
+    {
+      "id": "ncert_u3_lines_pq",
+      "marks": 5,
+      "type": "written",
+      "question": "The lines are 5x + 3y = 2p, 35x + 21y = pq and 100x + 4qy = 240. Find q so that the first two lines coincide for a nonzero p, and say whether that second line is parallel to the third.",
+      "model_answer": "The first two lines have coefficient ratio 1/7, so 2/q is 1/7. With q at that value, the second and third lines have slopes that are not equal. q is 14, and the second line is not parallel to the third.",
+      "explanation": "q is 14, and the second line is not parallel to the third.",
+      "accept": "q is 14, and the second line is not parallel to the third"
+    },
+    {
+      "id": "ncert_u3_m_minus5",
+      "marks": 3,
+      "type": "written",
+      "question": "Solve 2x - 3y = 13 and 7x - 2y = 20. Hence find m if y = mx + 7.",
+      "model_answer": "Clearing y gives x is 2 and y is -3. -3 is 2m + 7. x is 2, y is -3 and m is -5.",
+      "explanation": "x is 2, y is -3 and m is -5.",
+      "accept": "x is 2, y is -3 and m is -5"
+    },
+    {
+      "id": "ncert_u3_m_minus1",
+      "marks": 3,
+      "type": "written",
+      "question": "Solve 5x + 4y = 10 and 3x - 2y + 16 = 0. Hence find m if y = mx + 3.",
+      "model_answer": "The second equation is 3x - 2y is -16. Clearing y gives x is -2 and y is 5. 5 is -2m + 3. x is -2, y is 5 and m is -1.",
+      "explanation": "x is -2, y is 5 and m is -1.",
+      "accept": "x is -2, y is 5 and m is -1"
+    },
+    {
+      "id": "ncert_u3_p_zero",
+      "marks": 3,
+      "type": "written",
+      "question": "Solve x + 2y = 6 and 2x + y = 6. Hence find p if y = px + 2.",
+      "model_answer": "Clearing one variable gives x is 2 and y is 2. 2 is 2p + 2. x is 2, y is 2 and p is 0.",
+      "explanation": "x is 2, y is 2 and p is 0.",
+      "accept": "x is 2, y is 2 and p is 0"
+    },
+    {
+      "id": "ncert_u3_vertices_x_axis",
+      "marks": 3,
+      "type": "written",
+      "question": "The lines x - y = -1 and 2x + y = 10 meet the x-axis and each other. Find the vertices of the triangle.",
+      "model_answer": "The lines meet at (3, 4). On the x-axis, y is 0, so the intercepts are (-1, 0) and (5, 0). The vertices are (-1, 0), (5, 0) and (3, 4).",
+      "explanation": "The vertices are (-1, 0), (5, 0) and (3, 4).",
+      "accept": "The vertices are (-1, 0), (5, 0) and (3, 4)"
+    },
+    {
+      "id": "ncert_u3_vertices_y_axis",
+      "marks": 3,
+      "type": "written",
+      "question": "The lines x + 2y = 6 and 3x - 2y = 2 meet the y-axis and each other. Find the vertices of the triangle.",
+      "model_answer": "The lines meet at (2, 2). On the y-axis, x is 0, so the intercepts are (0, 3) and (0, -1). The vertices are (2, 2), (0, 3) and (0, -1).",
+      "explanation": "The vertices are (2, 2), (0, 3) and (0, -1).",
+      "accept": "The vertices are (2, 2), (0, 3) and (0, -1)"
+    },
+    {
+      "id": "ncert_u3_vertices_y_axis_2",
+      "marks": 3,
+      "type": "written",
+      "question": "The lines x - y + 1 = 0 and 3x + 2y - 12 = 0 meet the y-axis and each other. Find the vertices of the triangle.",
+      "model_answer": "The lines meet at (2, 3). Their y-intercepts are (0, 1) and (0, 6). The vertices are (0, 1), (0, 6) and (2, 3).",
+      "explanation": "The vertices are (0, 1), (0, 6) and (2, 3).",
+      "accept": "The vertices are (0, 1), (0, 6) and (2, 3)"
+    },
+    {
+      "id": "ncert_u3_consistent_yes",
+      "marks": 2,
+      "type": "written",
+      "question": "Is 4x + y = 8 and 4x - 2y = 16 consistent? Does x = 3 and y = -3 satisfy both equations?",
+      "model_answer": "The x coefficients match and the y coefficients do not, so there is one solution and the pair is consistent. 3 + (-3) is not a check of the first equation: 4 times 3 plus -3 is 9, not 8. Yes, the pair is consistent, but x is 3 and y is -3 do not satisfy it.",
+      "explanation": "Yes, the pair is consistent, but x is 3 and y is -3 do not satisfy it.",
+      "accept": "Yes, the pair is consistent, but x is 3 and y is -3 do not satisfy it"
+    },
+    {
+      "id": "ncert_u3_paths_14",
+      "marks": 2,
+      "type": "written",
+      "question": "Do the paths 7x - 5y = 3 and 14x - 10y = 5 cross?",
+      "model_answer": "Both coefficient ratios are 1/2, and 3/5 is not 1/2. No, the paths do not cross.",
+      "explanation": "No, the paths do not cross.",
+      "accept": "No, the paths do not cross"
+    },
+    {
+      "id": "ncert_u3_k_greater_none",
+      "marks": 3,
+      "type": "written",
+      "question": "For k greater than 1, how many solutions do (k - 1)x + y = k + 1 and (k^2 - 1)x + (k + 1)y = 1 - k^2 have?",
+      "model_answer": "The second x coefficient is (k - 1)(k + 1), so the x ratio is 1/(k + 1). The y ratio is also 1/(k + 1), but the constant ratio is not, when k is greater than 1. The pair has no solution.",
+      "explanation": "The pair has no solution.",
+      "accept": "The pair has no solution"
+    }
+  ]
+}
