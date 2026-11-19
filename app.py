@@ -1533,7 +1533,7 @@ def render_user_dashboard():
         st.markdown("### 📐 Choose Your Activity")
         st.markdown("")
 
-        act_col1, act_col2, act_col3, act_col4 = st.columns(4, gap="large")
+        act_col1, _, _ = st.columns(3, gap="large")
         with act_col1:
             st.markdown("""
             <div class="score-card" style="border-top: 5px solid #64748b;">
@@ -1545,45 +1545,6 @@ def render_user_dashboard():
             st.markdown("")
             if st.button("📐 Math", key="btn_harshit_math", width="stretch", type="primary"):
                 select_activity("HarshitMath")
-                st.rerun()
-
-        with act_col2:
-            st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #6366f1;">
-                <div style="font-size: 3rem;">⚛️</div>
-                <h3 style="margin: 0.5rem 0;">Physics Confidence</h3>
-                <p style="color: #6b7280;">NCERT Class 10 Science · Physics units</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("⚛️ Physics", key="btn_harshit_physics", width="stretch", type="primary"):
-                select_activity("HarshitPhysics")
-                st.rerun()
-
-        with act_col3:
-            st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #0d9488;">
-                <div style="font-size: 3rem;">🧪</div>
-                <h3 style="margin: 0.5rem 0;">Chemistry Confidence</h3>
-                <p style="color: #6b7280;">Units 1–4 — Full Class 10 Chemistry</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("🧪 Chemistry", key="btn_harshit_chemistry", width="stretch", type="primary"):
-                select_activity("HarshitChemistry")
-                st.rerun()
-
-        with act_col4:
-            st.markdown("""
-            <div class="score-card" style="border-top: 5px solid #16a34a;">
-                <div style="font-size: 3rem;">🌱</div>
-                <h3 style="margin: 0.5rem 0;">Biology Confidence</h3>
-                <p style="color: #6b7280;">Units 1–4 — Class 10 Biology</p>
-            </div>
-            """, unsafe_allow_html=True)
-            st.markdown("")
-            if st.button("🌱 Biology", key="btn_harshit_biology", width="stretch", type="primary"):
-                select_activity("HarshitBiology")
                 st.rerun()
 
     else:
